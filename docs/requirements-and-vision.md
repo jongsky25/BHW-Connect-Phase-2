@@ -4,7 +4,7 @@
 
 BHW Connect Phase 2 is a new web application for Barangay Health Workers (BHWs) in the Philippines. This document consolidates an extensive discovery/planning conversation (11 rounds, ~44 clarifying questions) covering platform architecture, roles, admin capabilities, dashboards/reports, UI/UX design, and feature-level requirements.
 
-This is a **requirements/vision document**, not a technical implementation plan. No tech stack or architecture has been chosen yet — see "Open Items" and "Next Steps" below.
+This is a **requirements/vision document**, not a technical implementation plan. No tech stack or architecture has been chosen yet — see "Next Steps" below (Section 7 tracks how the original open items were resolved).
 
 ## 1. Platform Fundamentals
 
@@ -43,28 +43,30 @@ This is a **requirements/vision document**, not a technical implementation plan.
 - **Operations & governance**:
   - Usage monitors (activity/engagement tracking)
   - "Laymanized" system audits — audit trails presented in plain, non-technical language
-  - Automatic data backups — recommended default: daily, ~30-day rolling retention (not yet finalized as exact figures)
+  - Automatic data backups — daily backups, 30-day rolling retention (finalized) — an operational/cost tradeoff, not driven by a specific DPA compliance minimum
   - Telemetry — serves **both** product-improvement (UX friction, unused features) and BHW performance/compliance tracking equally
 
 ## 4. Dashboards & Reports
 
 - **Dashboard audience**: Not just top-level Admin — supervisory roles (nurses/doctors, RHU staff, regional offices) get roll-up dashboards for their scope, consistent with the org hierarchy.
-- **Dashboard content priorities** (as identified so far):
-  - Team activity/engagement (active BHWs, last login)
-  - Chat Guide usage insights (most-asked topics; unanswered questions signal Knowledge Base gaps)
-  - Training/certification progress (% completion, certificates issued) — relevant once e-learning ships
-  - Survey response tracking — relevant once survey tool ships
+- **Layout (resolved)**: Multi-tab dashboard — separate tabs for Activity, Chat Guide, Training, and Surveys, each with its own detailed view.
+- **Dashboard content — field-level detail (resolved)**:
+  - **Activity tab**: Aggregate summary cards (e.g., % active BHWs, average logins) **plus** a per-BHW drill-down table (name, last login, activity count, status).
+  - **Chat Guide tab**: The unanswered-question log is the prioritized field — it feeds Admin's Knowledge Base gap review directly — alongside the top-asked-topics list.
+  - **Training tab**: Training/certification progress (% completion, certificates issued) — relevant once e-learning ships.
+  - **Surveys tab**: Survey response tracking — relevant once survey tool ships.
 - **Default time range**: Rolling recent period (e.g., last 30 days), user-adjustable.
 - **Reports** (formal, distinct from live dashboards):
   - Usage pattern: both on-demand exportable snapshots (ad hoc, e.g. for a submission deadline) AND scheduled automatic reports (routine cadence).
   - Export formats: PDF, Excel, and CSV (all three).
+  - **Granularity (resolved)**: A field/column picker lets the user choose what level of detail goes into each report at export time, rather than a fixed raw-vs-mirrored rule.
 
 ## 5. UI/UX & Visual Design
 
 - **Visual tone**: Combine warm/approachable with vibrant/energetic — friendly, encouraging, community feel, with energetic/motivating elements (e.g., progress indicators, celebratory moments on completing training).
 - **Simplicity level**: Lean strongly toward simplicity — large tap targets, short labels, icon-heavy, minimal steps per task. Designed for users who may be new to app-based tools, given varying tech comfort levels and possibly older/lower-end phones.
 - **Language**: Full bilingual support — Filipino and English, **user-selectable toggle for the interface itself** (menus/buttons/labels), not just content. Knowledge Base content must also handle mixed Filipino/English (Taglish) input with typo tolerance (see Phase 1 below).
-- **Adaptive display settings** (user-facing, still to be detailed further): adaptive text/fonts, color palette options, dark mode/light mode, contrast adjustment, font size adjustment, and others.
+- **Adaptive display settings (resolved)**: Phase 1 baseline — adaptive text/fonts, color palette options (see resolved palette below), dark mode/light mode, contrast adjustment, font size adjustment. Later-phase additions, once the baseline is proven: screen reader/text-to-speech support, reduced motion (disable/minimize animations), adjustable line/letter spacing, larger tap-target mode, icon-only/simplified mode, and a dyslexia-friendly font option. All accessibility preferences save to the BHW's user profile, persisting across devices/sessions.
 - **Color palette (resolved)**: Marigold (`#E8641C` display / `#B84E12` button-safe) paired with Bayanihan Teal (`#0C7C7E`) as primary/secondary — a warm-vs-grounded complementary pairing rather than a single mono-warm hue, so the app reads energetic without tipping into visual noise. Sampaguita Yellow (`#FFC857`, paired only with dark ink text) carries celebratory/progress moments (certificates, badges, completion states) called for in the "energetic/motivating elements" brief above. Neutrals are warm-tinted (`#F6F2ED` canvas / `#2B2420` ink in light mode; `#221B16` / `#F5EDE4` in dark mode) rather than stark white/gray, avoiding a clinical-government feel. Semantic status colors (success `#1F7A45`, warning `#8F5A08`, danger `#C53A3A`, info `#2C6FA6`) are kept distinct from the brand hues so meaning never collides with decoration. Every text/background pairing was checked against WCAG 2.1 contrast minimums (4.5:1 normal text / 3:1 large text & UI) via the relative-luminance formula, not eyeballed — important since BHWs will often read this outdoors, on older phones, in direct sunlight. Full swatch reference, contrast table, and in-product component previews (Chat Guide bubble, certificate card, Admin status chips) are captured in the palette proposal artifact from this planning round; values above are the source of truth to carry into implementation.
 - **Notifications**: In-app only for the pilot (no SMS/email cost); can expand to SMS/email/push as the system scales.
 
@@ -78,7 +80,7 @@ This is a **requirements/vision document**, not a technical implementation plan.
 
 ### 6.2 Knowledge Base
 - **Structure**: Hybrid — structured topic categories with individual Q&A entries (for Chat Guide matching) AND longer-form reference articles (for deeper reading).
-- **Initial topic priority**: Maternal & child health (chosen as the focused Phase 1 starting topic; other areas like immunization, nutrition, communicable disease surveillance, family planning, first aid, and BHW admin procedures were discussed as candidates for later expansion).
+- **Topic roadmap (resolved)**: Maternal & Child Health ships as the focused Phase 1 starting topic. Immunization, Nutrition, Communicable Disease Surveillance, Family Planning, First Aid, and BHW Admin Procedures are all committed for later-phase expansion (no longer just discussed candidates), consistent with the doc's phased rollout model. Rollout order is data-driven — prioritized using the Chat Guide's unanswered-question log / dashboard gap insights (Section 4) rather than a fixed sequence set in advance.
 - **Authoring experience**: Depends on content type — simple structured forms (Question, Answer, Category, Keywords/tags, optional image) for Q&A entries; a rich document editor for longer-form content and later features (e-learning, flip-chart scripts).
 - Managed entirely through the Admin Console, updatable at any time.
 
@@ -102,7 +104,10 @@ This is a **requirements/vision document**, not a technical implementation plan.
 
 ### 6.6 BHW Profiling System Integration
 - New BHW registrants get their base profile pulled from the existing (external) BHW profiling system.
-- **Integration method**: Live database/API integration (real-time/near-real-time), not batch import — requires technical access into that existing system (details TBD — system not yet investigated).
+- **Integration method**: Live database/API integration (real-time/near-real-time), not batch import.
+- **Launch fallback (resolved)**: If live integration isn't ready in time for Phase 1, Admin manually enters a new BHW's base profile at account creation — launch is not blocked on the external system.
+- **Minimum fields (resolved)**: Identity & contact only, at minimum — full name, contact number, email, address.
+- **Auth assumption (resolved, pending confirmation)**: Assumed API-key/token-based. Full technical specifics (API docs, real auth mechanism, other data fields) are owed at a later milestone and not yet transmitted — see Next Steps.
 
 ### 6.7 Health Teaching / Health Promotion Materials Builder ("Flip Chart")
 - Admin and **Designer** roles get a content-authoring module to build patient education materials.
@@ -117,14 +122,16 @@ This is a **requirements/vision document**, not a technical implementation plan.
 - **Question types supported**: multiple choice (single answer), multiple choice (select all that apply), rating scale, and open text/comment box.
 - **Response identity**: Admin chooses per survey whether responses are anonymous or identified — flexible per use case (sensitive feedback vs. training evaluations needing follow-up).
 
-## 7. Open Items — Flagged for Future Discussion (not yet resolved)
+## 7. Open Items — Resolution Log (all resolved)
 
-- Field-level detail for dashboards and reports (exact metrics, layout/mockup level).
-- Full breadth of Knowledge Base topic categories beyond the initial "Maternal & child health" focus.
-- Technical details of the BHW Profiling System integration (API availability, data fields, authentication) — not yet investigated.
-- Exact backup frequency/retention figures (a 30-day daily-backup baseline was suggested but not formally locked in).
-- Further "adaptive display" accessibility settings beyond the list already named (dark/light mode, contrast, font size, adaptive text/fonts/palette).
-- Any additional features that may still be added — the original brainstorm may not be fully exhausted.
+All items originally flagged here have been resolved:
+
+- Field-level detail for dashboards and reports → Section 4.
+- Full breadth of Knowledge Base topic categories → Section 6.2.
+- Technical details of the BHW Profiling System integration → Section 6.6 (launch fallback, minimum fields, and auth assumption locked in; full API specifics still owed at a later milestone — see Next Steps).
+- Exact backup frequency/retention figures → Section 3.
+- Further "adaptive display" accessibility settings → Section 5.
+- Additional features not yet captured — a completeness check against Sections 1–6 found two features fully specified in the body but missing from the Section 8 summary (Dashboards & Reports, Notifications); both are now reflected there. No other undiscussed features surfaced.
 
 ## 8. Full Feature List Summary
 
@@ -133,13 +140,20 @@ This is a **requirements/vision document**, not a technical implementation plan.
 3. E-Learning Module + Assessor-graded certification with QR-verified certificates
 4. Announcement Page — feed-style, hierarchy-scoped posting
 5. Interactive Forum/Sharing Platform — categorized + tagged, post-then-moderate
-6. BHW Profiling System integration — live pull of base profile data at registration
+6. BHW Profiling System integration — live pull of base profile data at registration (manual-entry fallback at launch)
 7. Health Teaching/Health Promotion Materials Builder ("Flip Chart") — dual client/BHW views, Designer-drafted/Admin-approved
 8. Survey Tool — multi-format questions, per-survey anonymity choice
-9. Cross-cutting: adaptive display/accessibility settings, admin universal content control, feature toggles + per-feature access control (role + org unit), usage monitors, laymanized audits, auto-backups, telemetry
+9. Dashboards & Reports — hierarchy-scoped roll-up dashboards for Admin + supervisory roles (activity, Chat Guide gaps, training progress, survey tracking) plus on-demand/scheduled exports (PDF/Excel/CSV)
+10. Cross-cutting: adaptive display/accessibility settings, admin universal content control, feature toggles + per-feature access control (role + org unit), usage monitors, laymanized audits, auto-backups, telemetry, in-app notifications
+
+**Feature-completeness review (resolved)**: Cross-checked Sections 1–6 against this summary — no previously-undiscussed features surfaced from the original discovery conversation. Two gaps found were in this list itself, not in the underlying requirements: Dashboards & Reports (Section 4) and in-app Notifications (Section 5) were fully specified in the body but missing from the summary above; both are now reflected (item 9 and the cross-cutting line).
 
 ## Next Steps
 
-1. Resolve the remaining "Open Items" above (profiling-system technical investigation, dashboard field-level detail, etc.)
-2. Move into technical architecture planning (tech stack selection, data model, hosting decision) for Phase 1 specifically (Chat Guide + Knowledge Base + minimal Admin Console + Auth/roles)
-3. Begin implementation planning/coding for Phase 1
+1. Once real technical access to the BHW Profiling System is available, confirm or replace the assumed API-key/token auth method and finalize integration scope (Section 6.6).
+2. Move into technical architecture planning (tech stack selection, data model, hosting decision) for Phase 1 specifically (Chat Guide + Knowledge Base + minimal Admin Console + Auth/roles).
+3. Begin implementation planning/coding for Phase 1.
+
+## Status Note (2026-07-18)
+
+All six items previously flagged as open have been resolved — see the Resolution Log in Section 7 for where each is addressed.
