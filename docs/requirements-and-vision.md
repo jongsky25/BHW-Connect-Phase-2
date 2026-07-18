@@ -65,7 +65,7 @@ This is a **requirements/vision document**, not a technical implementation plan.
 - **Simplicity level**: Lean strongly toward simplicity — large tap targets, short labels, icon-heavy, minimal steps per task. Designed for users who may be new to app-based tools, given varying tech comfort levels and possibly older/lower-end phones.
 - **Language**: Full bilingual support — Filipino and English, **user-selectable toggle for the interface itself** (menus/buttons/labels), not just content. Knowledge Base content must also handle mixed Filipino/English (Taglish) input with typo tolerance (see Phase 1 below).
 - **Adaptive display settings** (user-facing, still to be detailed further): adaptive text/fonts, color palette options, dark mode/light mode, contrast adjustment, font size adjustment, and others.
-- **Color palette**: No existing brand constraint — starting fresh. A specific palette proposal (built around the warm+vibrant brief) is still owed as a next step, not yet finalized.
+- **Color palette (resolved)**: Marigold (`#E8641C` display / `#B84E12` button-safe) paired with Bayanihan Teal (`#0C7C7E`) as primary/secondary — a warm-vs-grounded complementary pairing rather than a single mono-warm hue, so the app reads energetic without tipping into visual noise. Sampaguita Yellow (`#FFC857`, paired only with dark ink text) carries celebratory/progress moments (certificates, badges, completion states) called for in the "energetic/motivating elements" brief above. Neutrals are warm-tinted (`#F6F2ED` canvas / `#2B2420` ink in light mode; `#221B16` / `#F5EDE4` in dark mode) rather than stark white/gray, avoiding a clinical-government feel. Semantic status colors (success `#1F7A45`, warning `#8F5A08`, danger `#C53A3A`, info `#2C6FA6`) are kept distinct from the brand hues so meaning never collides with decoration. Every text/background pairing was checked against WCAG 2.1 contrast minimums (4.5:1 normal text / 3:1 large text & UI) via the relative-luminance formula, not eyeballed — important since BHWs will often read this outdoors, on older phones, in direct sunlight. Full swatch reference, contrast table, and in-product component previews (Chat Guide bubble, certificate card, Admin status chips) are captured in the palette proposal artifact from this planning round; values above are the source of truth to carry into implementation.
 - **Notifications**: In-app only for the pilot (no SMS/email cost); can expand to SMS/email/push as the system scales.
 
 ## 6. Feature Details
@@ -119,7 +119,6 @@ This is a **requirements/vision document**, not a technical implementation plan.
 
 ## 7. Open Items — Flagged for Future Discussion (not yet resolved)
 
-- Exact color palette (hex values) — a specific proposal is owed, built around the "warm + vibrant" brief.
 - Field-level detail for dashboards and reports (exact metrics, layout/mockup level).
 - Full breadth of Knowledge Base topic categories beyond the initial "Maternal & child health" focus.
 - Technical details of the BHW Profiling System integration (API availability, data fields, authentication) — not yet investigated.
@@ -141,6 +140,6 @@ This is a **requirements/vision document**, not a technical implementation plan.
 
 ## Next Steps
 
-1. Resolve the "Open Items" above (color palette proposal, profiling-system technical investigation, etc.)
+1. Resolve the remaining "Open Items" above (profiling-system technical investigation, dashboard field-level detail, etc.)
 2. Move into technical architecture planning (tech stack selection, data model, hosting decision) for Phase 1 specifically (Chat Guide + Knowledge Base + minimal Admin Console + Auth/roles)
 3. Begin implementation planning/coding for Phase 1
