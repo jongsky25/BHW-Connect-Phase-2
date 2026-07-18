@@ -46,7 +46,7 @@ Practices pulled from private-sector SaaS, support-desk, and LMS operations, map
 - **Backend/data**: Supabase — Postgres, Supabase Auth, Row-Level Security (RLS) as the primary authorization enforcement, Storage for images/attachments.
 - **Hosting**: Vercel free tier (frontend) + Supabase free tier (data). Fits the tight-budget constraint.
 - **Portability guardrail** (gov-server fallback from the requirements doc): all business logic lives in Postgres + the Next.js app; no proprietary edge functions unless unavoidable. The whole system must remain deployable as "a Node server + a Postgres database" on a government machine.
-- **Chat Guide NLP**: entirely in Postgres — full-text search + `pg_trgm` trigram similarity + an app-side normalization/synonym layer. No external AI APIs (hard requirement).
+- **Chat Guide NLP**: baseline entirely in Postgres — full-text search + `pg_trgm` trigram similarity + an app-side normalization/synonym layer. No *paid* AI APIs (hard requirement); genuinely free AI (self-hosted embeddings, capped free tiers with auto shut-off) may be layered on top per `free-ai-leverage-plan.md` — the rule-based baseline must always work standalone.
 - **Testing**: Vitest (unit), Playwright (E2E, Chromium). The Chat Guide matcher gets a fixture-based test corpus including Taglish and misspellings.
 - **CI**: GitHub Actions — lint, typecheck, unit tests, E2E smoke, and the performance-budget check on every PR.
 
