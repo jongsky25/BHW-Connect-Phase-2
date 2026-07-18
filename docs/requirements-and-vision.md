@@ -151,8 +151,8 @@ All items originally flagged here have been resolved:
 ## Next Steps
 
 1. Once real technical access to the BHW Profiling System is available, confirm or replace the assumed API-key/token auth method and finalize integration scope (Section 6.6).
-2. Move into technical architecture planning (tech stack selection, data model, hosting decision) for Phase 1 specifically (Chat Guide + Knowledge Base + minimal Admin Console + Auth/roles).
-3. Begin implementation planning/coding for Phase 1.
+2. Move into technical architecture planning (tech stack selection, data model, hosting decision) for Phase 1 specifically (Chat Guide + Knowledge Base + minimal Admin Console + Auth/roles) — **done: see `delivery-plan.md`**.
+3. Begin implementation planning/coding for Phase 1 — **increment roadmap in `delivery-plan.md` §7**.
 
 ## Status Note (2026-07-18)
 
