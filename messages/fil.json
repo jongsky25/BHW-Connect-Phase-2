@@ -6,7 +6,8 @@
   },
   "home": {
     "heading": "Maligayang pagdating sa BHW Connect",
-    "body": "Ito ang pundasyon ng Phase 1. Unti-unti pang idadagdag ang mga tampok, isang increment sa isang pagkakataon."
+    "body": "Ito ang pundasyon ng Phase 1. Unti-unti pang idadagdag ang mga tampok, isang increment sa isang pagkakataon.",
+    "loginCta": "Mag-login"
   },
   "footer": {
     "copyright": "© {year} BHW Connect",
@@ -15,5 +16,47 @@
   "privacy": {
     "heading": "Patakaran sa Privacy",
     "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment."
+  },
+  "login": {
+    "heading": "Mag-login",
+    "body": "Ilagay ang username at password na ibinigay ng iyong admin.",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submit": "Mag-login",
+    "submitting": "Nagla-login…",
+    "invalidCredentials": "Mali ang username o password.",
+    "lockedMessage": "Naka-lock ang account na ito dahil sa maraming maling pagtatangka. Subukan muli pagkalipas ng {minutes} minuto.",
+    "inactiveMessage": "Hindi aktibo ang account na ito. Makipag-ugnayan sa iyong barangay admin.",
+    "timeoutNotice": "Na-sign out ka dahil sa matagal na hindi ginamit. Mangyaring mag-login muli.",
+    "blockedNotice": "Hindi na aktibo ang account na ito. Makipag-ugnayan sa iyong barangay admin.",
+    "genericError": "May naganap na problema. Subukan muli."
+  },
+  "changePassword": {
+    "heading": "Pumili ng bagong password",
+    "body": "Pansamantalang password ito. Magtakda ng bago para magpatuloy — hindi bababa sa 8 karakter, hindi kailangan ng simbolo o numero.",
+    "newPasswordLabel": "Bagong password",
+    "confirmPasswordLabel": "Kumpirmahin ang bagong password",
+    "submit": "I-save ang password",
+    "submitting": "Sine-save…",
+    "tooShort": "Dapat hindi bababa sa 8 karakter ang password.",
+    "tooCommon": "Napakadaling hulaan ng password na iyan. Pumili ng iba.",
+    "mismatch": "Hindi magkatugma ang mga password.",
+    "genericError": "Hindi na-save ang bagong password. Subukan muli."
+  },
+  "consent": {
+    "heading": "Patakaran sa Privacy at Pahintulot",
+    "intro": "Bago magpatuloy, pakisuri kung paano hinahawakan ng BHW Connect ang iyong datos.",
+    "bodyWhat": "Kinokolekta namin ang iyong pangalan, contact details, barangay assignment, at mga tanong sa Chat Guide para gumana ang app para sa iyo at sa iyong barangay.",
+    "bodyWhy": "Ginagamit ang datos na ito para patakbuhin ang iyong account, suportahan ang iyong gawaing pangkalusugan, at pagbutihin ang mga sagot ng Chat Guide.",
+    "bodyRetention": "Ang mga chat message at data ng paggamit ay itinatago hanggang 24 na buwan; ang mga rekord ng account at audit ay mas matagal itinatago ayon sa batas.",
+    "bodyRights": "May karapatan kang humingi sa iyong admin ng kopya ng iyong datos o magpa-deactivate at anonymize ng iyong account.",
+    "agree": "Sumasang-ayon ako",
+    "submitting": "Sine-save…",
+    "genericError": "Hindi na-record ang iyong pahintulot. Subukan muli."
+  },
+  "authHome": {
+    "heading": "Maligayang pagdating, {name}!",
+    "body": "Naka-login ka na sa BHW Connect.",
+    "signOut": "Mag-sign out"
   }
 }

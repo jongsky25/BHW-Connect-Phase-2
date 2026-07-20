@@ -8,6 +8,12 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      E2E_STABLE_BHW_PASSWORD: ${{ secrets.E2E_STABLE_BHW_PASSWORD }}
+      E2E_STABLE_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
+      E2E_OTHER_BARANGAY_BHW_PASSWORD: ${{ secrets.E2E_OTHER_BARANGAY_BHW_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
 

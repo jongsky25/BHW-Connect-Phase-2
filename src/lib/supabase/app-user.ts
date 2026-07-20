@@ -1,0 +1,30 @@
+import type { SupabaseClient } from "@supabase/supabase-js";
+
+export type AppUser = {
+  id: string;
+  auth_user_id: string;
+  username: string;
+  full_name: string;
+  role: "bhw" | "admin";
+  org_unit_id: string;
+  status: "invited" | "active" | "deactivated";
+  must_change_password: boolean;
+  consented_at: string | null;
+  language: "fil" | "en";
+};
+
+const APP_USER_COLUMNS =
+  "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language";
+
+export async function getAppUser(
+  supabase: SupabaseClient,
+  authUserId: string,
+): Promise<AppUser | null> {
+  const { data } = await supabase
+    .from("users")
+    .select(APP_USER_COLUMNS)
+    .eq("auth_user_id", authUserId)
+    .maybeSingle();
+
+  return (data as AppUser | null) ?? null;
+}

@@ -6,7 +6,8 @@
   },
   "home": {
     "heading": "Welcome to BHW Connect",
-    "body": "This is the foundation shell for Phase 1. Features roll out one increment at a time."
+    "body": "This is the foundation shell for Phase 1. Features roll out one increment at a time.",
+    "loginCta": "Log in"
   },
   "footer": {
     "copyright": "© {year} BHW Connect",
@@ -15,5 +16,47 @@
   "privacy": {
     "heading": "Privacy Notice",
     "body": "The full Data Privacy Act notice ships with the consent flow in a later increment."
+  },
+  "login": {
+    "heading": "Log in",
+    "body": "Enter the username and password your admin gave you.",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submit": "Log in",
+    "submitting": "Logging in…",
+    "invalidCredentials": "Incorrect username or password.",
+    "lockedMessage": "This account is locked after too many failed attempts. Try again in {minutes} minutes.",
+    "inactiveMessage": "This account isn't active. Contact your barangay admin.",
+    "timeoutNotice": "You were signed out after a period of inactivity. Please log in again.",
+    "blockedNotice": "This account is no longer active. Contact your barangay admin.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "changePassword": {
+    "heading": "Choose a new password",
+    "body": "This is a temporary password. Set a new one to continue — at least 8 characters, no need for symbols or numbers.",
+    "newPasswordLabel": "New password",
+    "confirmPasswordLabel": "Confirm new password",
+    "submit": "Save password",
+    "submitting": "Saving…",
+    "tooShort": "Password must be at least 8 characters.",
+    "tooCommon": "That password is too easy to guess. Please choose another.",
+    "mismatch": "Passwords don't match.",
+    "genericError": "Couldn't save your new password. Please try again."
+  },
+  "consent": {
+    "heading": "Privacy Notice & Consent",
+    "intro": "Before you continue, please review how BHW Connect handles your data.",
+    "bodyWhat": "We collect your name, contact details, barangay assignment, and your Chat Guide questions so the app can work for you and your barangay.",
+    "bodyWhy": "This data is used to run your account, support your barangay health work, and improve the Chat Guide's answers.",
+    "bodyRetention": "Chat messages and usage data are kept for up to 24 months; account and audit records are kept longer as required by law.",
+    "bodyRights": "You have the right to ask your admin for a copy of your data or to have your account deactivated and anonymized.",
+    "agree": "I agree",
+    "submitting": "Saving…",
+    "genericError": "Couldn't record your consent. Please try again."
+  },
+  "authHome": {
+    "heading": "Welcome, {name}!",
+    "body": "You're logged in to BHW Connect.",
+    "signOut": "Sign out"
   }
 }
