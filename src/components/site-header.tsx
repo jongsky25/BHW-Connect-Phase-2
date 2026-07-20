@@ -26,6 +26,9 @@ export function SiteHeader({
               <Link href="/admin/audit" className="text-ink/70 hover:text-ink">
                 {tNav("audit")}
               </Link>
+              <Link href="/admin/kb/entries" className="text-ink/70 hover:text-ink">
+                {tNav("kb")}
+              </Link>
             </nav>
           ) : null}
         </div>

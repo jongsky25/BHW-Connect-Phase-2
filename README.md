@@ -6,8 +6,8 @@ leverage plan — start there before touching code.
 
 ## Status
 
-**INC-2 — Admin console: user management & audit** (see `docs/delivery-plan.md`
-§7), on top of **INC-1 — Auth, org hierarchy & consent**.
+**INC-3 — KB authoring** (see `docs/delivery-plan.md` §7), on top of
+**INC-1 — Auth, org hierarchy & consent** and **INC-2 — Admin console**.
 
 - Username+password login (synthesized `<username>@bhw.local` auth email),
   NIST 800-63B password policy with 5-attempt/15-minute lockout, forced
@@ -18,8 +18,15 @@ leverage plan — start there before touching code.
   a last-active-admin guard per barangay. `/admin/audit` is the laymanized
   audit viewer (plain-language sentences, both languages, filterable by
   event type).
-- Schema, RLS policies, and RPCs live in `supabase/migrations/`. KB authoring
-  lands in INC-3.
+- Knowledge base authoring at `/admin/kb`: categories, bilingual Q&A entries
+  (with optional image upload to Supabase Storage), long-form bilingual
+  articles (TipTap rich-text editor), and a synonyms table. KB content is
+  national/shared, not org-scoped ("admin universal content control"); every
+  entry/article needs an owner before it can be published (DB-enforced), and
+  drafts are only visible to admins. The Chat Guide matcher (INC-4) and its
+  chat UI (INC-5) — which will actually surface this content to BHWs — come
+  next.
+- Schema, RLS policies, and RPCs live in `supabase/migrations/`.
 
 ## Getting started
 
@@ -47,15 +54,15 @@ npx supabase db push
 ### Running the live-fixture E2E tests
 
 Most of the E2E suite (`e2e/shell.spec.ts`, `e2e/rls.spec.ts`,
-`e2e/admin.spec.ts`) runs safely against any linked project —
-`e2e/admin.spec.ts` logs in as the stable `admin.stable` fixture and creates
-a uniquely-named throwaway BHW each run, so it doesn't need a reset step.
-`e2e/auth.spec.ts` is the exception: it drives the login flow against the
-`bhw.pilot` and `admin.pilot` pilot fixtures and mutates their state
-(password, lockout) — it's opt-in and skipped unless both `.env.local` is
-configured and `RUN_LIVE_AUTH_E2E=1` is set, and `bhw.pilot` needs resetting
-to a fresh temp-password state before each run (see the seed migration's
-comment for the fixture list and reset shape).
+`e2e/admin.spec.ts`, `e2e/kb.spec.ts`) runs safely against any linked
+project — they log in as stable fixtures (`admin.stable`, `bhw.stable`) and
+create uniquely-named throwaway records each run, so none of them need a
+reset step. `e2e/auth.spec.ts` is the exception: it drives the login flow
+against the `bhw.pilot` and `admin.pilot` pilot fixtures and mutates their
+state (password, lockout) — it's opt-in and skipped unless both
+`.env.local` is configured and `RUN_LIVE_AUTH_E2E=1` is set, and
+`bhw.pilot` needs resetting to a fresh temp-password state before each run
+(see the seed migration's comment for the fixture list and reset shape).
 
 ## Scripts
 
