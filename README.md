@@ -16,19 +16,33 @@ NIST 800-63B password policy + 5-attempt/15-minute lockout, forced
 password change on first login, DPA consent screen, 8-hour idle session
 timeout. Admin UI for managing users is out of scope (INC-2).
 
-**No Supabase project is provisioned for this repo yet.** The app and its CI
-run fully without one — see "Getting started" — so the parts of INC-1's
-Definition of Done that need a live database (the temp-password login E2E
-flow in `e2e/auth.live.spec.ts`, and the RLS pgTAP test in
-`supabase/tests/`) aren't exercised by CI. To turn this on for real:
+A Supabase project is provisioned (`ltzicxyefizxoqhfuuzc`) with all ten
+migrations in `supabase/migrations` applied and a pilot admin + BHW account
+seeded in Barangay Batong Malake. The DoD claims that need a live database
+were verified directly against it (RLS cross-org isolation, the 5-attempt
+lockout, consent, and forced-password-change RPCs all behave correctly —
+see commit history for the verification queries). Migrations 7–10 are
+hardening fixes that came out of that live verification: pinned
+`search_path` on every function, EXECUTE revoked from `PUBLIC`/default
+grants down to exactly the roles each function needs, a consolidated/faster
+`users` SELECT policy, and a real bug — `anon` queries against
+`org_units`/`users` were throwing a permission error instead of cleanly
+returning zero rows, because the RLS policies call helper functions that
+`anon` didn't have EXECUTE on.
 
-1. Create a Supabase project and run the migrations in `supabase/migrations`
-   against it (SQL editor, or `supabase db push` once `supabase link`'d).
-2. Fill in `.env.local` from `.env.example` (see below).
-3. Run `npm run seed` (needs `SUPABASE_SERVICE_ROLE_KEY`, project settings >
-   API) to create a pilot admin + BHW account.
-4. Run `supabase/tests/rls_org_scope.test.sql` (see `supabase/tests/README.md`)
-   and `e2e/auth.live.spec.ts` (see that file's header) against the project.
+**This repo's own CI still doesn't have Supabase secrets configured**, so
+`e2e/auth.live.spec.ts` and the pgTAP RLS test in `supabase/tests/` still
+don't run there — only manual/live verification has happened so far. To
+wire up CI (or your own local dev):
+
+1. Fill in `.env.local` from `.env.example` using the project's URL and
+   anon key (Project Settings → API).
+2. `npm run seed` (needs `SUPABASE_SERVICE_ROLE_KEY` from the same page) to
+   create another pilot admin + BHW account, or reuse the ones already
+   seeded.
+3. Run `e2e/auth.live.spec.ts` (see that file's header for the env vars it
+   needs) and `supabase/tests/rls_org_scope.test.sql` (see
+   `supabase/tests/README.md`) against the project.
 
 ## Getting started
 
