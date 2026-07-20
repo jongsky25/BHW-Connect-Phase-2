@@ -2,9 +2,9 @@ import { NextResponse, type NextRequest } from "next/server";
 import { updateSession } from "@/lib/supabase/middleware";
 
 export async function middleware(request: NextRequest) {
-  // Supabase project provisioning happens alongside INC-1 (auth). Until
-  // NEXT_PUBLIC_SUPABASE_* is configured, pass requests through untouched
-  // so the foundation shell keeps working without a project connected.
+  // Until a Supabase project is provisioned (NEXT_PUBLIC_SUPABASE_* set),
+  // pass requests through untouched so the app keeps working unauthenticated
+  // — this is what lets this repo's own CI build/test/E2E without secrets.
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
     return NextResponse.next();
   }

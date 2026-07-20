@@ -13,3 +13,10 @@ export function getSupabaseUrl(): string {
 export function getSupabaseAnonKey(): string {
   return requireEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY");
 }
+
+// The foundation shell (and this app's own CI) intentionally runs without a
+// Supabase project connected — see README "Getting started". Callers that
+// touch auth must check this first rather than let env.ts throw.
+export function isSupabaseConfigured(): boolean {
+  return Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+}

@@ -1,12 +1,11 @@
 // Performance budget gate — delivery-plan.md §5.2.
 // Mobile emulation + throttling (Lighthouse default) stands in for the
-// target "low-end mobile / Fast 3G" profile. Checked against "/" for now
-// (the only route in this increment); the Chat Guide and Login routes
-// named in §5.2 join this list once INC-1/INC-5 ship.
+// target "low-end mobile / Fast 3G" profile. Login joins the checked routes
+// in INC-1; the Chat Guide route joins once INC-5 ships.
 module.exports = {
   ci: {
     collect: {
-      url: ["http://localhost:3000/"],
+      url: ["http://localhost:3000/", "http://localhost:3000/login"],
       startServerCommand: "npm run start",
       startServerReadyPattern: "Ready in",
       startServerReadyTimeout: 30000,

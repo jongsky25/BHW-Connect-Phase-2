@@ -2,7 +2,8 @@
   "common": {
     "appName": "BHW Connect",
     "tagline": "Kasama mo sa gawaing pangkalusugan ng barangay.",
-    "languageToggleLabel": "Wika"
+    "languageToggleLabel": "Wika",
+    "signOut": "Mag-sign out"
   },
   "home": {
     "heading": "Maligayang pagdating sa BHW Connect",
@@ -15,5 +16,46 @@
   "privacy": {
     "heading": "Patakaran sa Privacy",
     "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment."
+  },
+  "login": {
+    "heading": "Mag-log in",
+    "body": "Gamitin ang username at password na ibinigay ng iyong admin.",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submit": "Mag-log in",
+    "submitting": "Nag-lo-log in…",
+    "errorMissingFields": "Pakilagay ang iyong username at password.",
+    "errorInvalidCredentials": "Maling username o password.",
+    "errorLocked": "Sobrang dami ng maling pagtatangka. Pakisubukan muli pagkalipas ng {minutes, plural, one {# minuto} other {# minuto}}.",
+    "errorDeactivated": "Naka-deactivate na ang account na ito. Makipag-ugnayan sa inyong barangay admin.",
+    "reasonTimeout": "Na-sign out ka pagkatapos ng 8 oras na hindi ginagamit. Mag-log in muli.",
+    "reasonDeactivated": "Naka-deactivate na ang account na ito. Makipag-ugnayan sa inyong barangay admin."
+  },
+  "changePassword": {
+    "heading": "Gumawa ng bagong password",
+    "body": "Ito ang unang beses mong mag-log in — pumili ng bagong password bago magpatuloy.",
+    "newPasswordLabel": "Bagong password",
+    "confirmPasswordLabel": "Kumpirmahin ang bagong password",
+    "hint": "Hindi bababa sa 8 karakter. Hindi kailangan ng simbolo o numero — okay na ang mas mahabang parirala.",
+    "submit": "I-save ang password",
+    "submitting": "Sine-save…",
+    "errorMismatch": "Hindi magkatugma ang mga password.",
+    "errorTooShort": "Dapat hindi bababa sa 8 karakter ang password.",
+    "errorTooCommon": "Masyadong madaling hulaan ang password na iyan. Pumili ng iba.",
+    "errorNotAuthenticated": "Nag-expire na ang iyong session. Mag-log in muli."
+  },
+  "consent": {
+    "heading": "Bago ka magpatuloy",
+    "intro": "Nangongolekta ang BHW Connect ng ilang impormasyon tungkol sa iyo at sa iyong trabaho para maglingkod sa inyong barangay. Pakisuri bago magpatuloy.",
+    "whatLabel": "Ano ang kinokolekta namin:",
+    "whatBody": "Ang iyong pangalan, contact details, barangay assignment, at kung paano mo ginagamit ang app (hal. mga tanong sa Chat Guide).",
+    "whyLabel": "Bakit:",
+    "whyBody": "Upang patakbuhin ang iyong account, suportahan ang iyong gawaing pangkalusugan, at pagbutihin ang app.",
+    "retentionLabel": "Gaano katagal itinatago:",
+    "retentionBody": "Ang data ng paggamit ay itinatago ng hanggang 24 na buwan; ang mga rekord ng account ay itinatago ayon sa itinatakda ng batas.",
+    "rightsLabel": "Ang iyong mga karapatan:",
+    "rightsBody": "Maaari mong hilingin sa iyong admin na ipakita ang iyong data o alisin ang iyong account, ayon sa Data Privacy Act.",
+    "readFullNotice": "Basahin ang buong Patakaran sa Privacy",
+    "agree": "Nauunawaan ko at sumasang-ayon ako"
   }
 }

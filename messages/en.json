@@ -2,7 +2,8 @@
   "common": {
     "appName": "BHW Connect",
     "tagline": "Your companion for barangay health work.",
-    "languageToggleLabel": "Language"
+    "languageToggleLabel": "Language",
+    "signOut": "Sign out"
   },
   "home": {
     "heading": "Welcome to BHW Connect",
@@ -15,5 +16,46 @@
   "privacy": {
     "heading": "Privacy Notice",
     "body": "The full Data Privacy Act notice ships with the consent flow in a later increment."
+  },
+  "login": {
+    "heading": "Log in",
+    "body": "Use the username and password your admin gave you.",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submit": "Log in",
+    "submitting": "Logging in…",
+    "errorMissingFields": "Please enter your username and password.",
+    "errorInvalidCredentials": "Incorrect username or password.",
+    "errorLocked": "Too many failed attempts. Please try again in {minutes, plural, one {# minute} other {# minutes}}.",
+    "errorDeactivated": "This account has been deactivated. Please contact your barangay admin.",
+    "reasonTimeout": "You were signed out after 8 hours of inactivity. Please log in again.",
+    "reasonDeactivated": "This account has been deactivated. Please contact your barangay admin."
+  },
+  "changePassword": {
+    "heading": "Set a new password",
+    "body": "This is your first time logging in — choose a new password before continuing.",
+    "newPasswordLabel": "New password",
+    "confirmPasswordLabel": "Confirm new password",
+    "hint": "At least 8 characters. No need for symbols or numbers — a longer phrase is fine.",
+    "submit": "Save password",
+    "submitting": "Saving…",
+    "errorMismatch": "The passwords don't match.",
+    "errorTooShort": "Password must be at least 8 characters.",
+    "errorTooCommon": "That password is too easy to guess. Please choose another one.",
+    "errorNotAuthenticated": "Your session expired. Please log in again."
+  },
+  "consent": {
+    "heading": "Before you continue",
+    "intro": "BHW Connect collects some information about you and your work so it can serve your barangay. Please review before continuing.",
+    "whatLabel": "What we collect:",
+    "whatBody": "Your name, contact details, barangay assignment, and how you use the app (e.g. questions you ask the Chat Guide).",
+    "whyLabel": "Why:",
+    "whyBody": "To run your account, support your barangay health work, and improve the app.",
+    "retentionLabel": "How long we keep it:",
+    "retentionBody": "Usage data is kept for up to 24 months; account records are kept as required by law.",
+    "rightsLabel": "Your rights:",
+    "rightsBody": "You can ask your admin to show you your data or remove your account, per the Data Privacy Act.",
+    "readFullNotice": "Read the full Privacy Notice",
+    "agree": "I understand and agree"
   }
 }
