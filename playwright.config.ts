@@ -1,5 +1,23 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import path from "node:path";
 import { defineConfig, devices } from "@playwright/test";
+
+// Playwright's test runner is a separate process from `next dev`/`next start`
+// and doesn't source .env.local the way Next.js does. Load it here so specs
+// that talk to Supabase directly (e2e/rls.spec.ts) can read
+// NEXT_PUBLIC_SUPABASE_URL/ANON_KEY; the app's own webServer process loads
+// .env.local itself regardless.
+function loadEnvLocal() {
+  const envPath = path.join(process.cwd(), ".env.local");
+  if (!existsSync(envPath)) return;
+  for (const line of readFileSync(envPath, "utf8").split("\n")) {
+    const match = line.match(/^([\w.-]+)=(.*)$/);
+    if (match && !(match[1] in process.env)) {
+      process.env[match[1]] = match[2];
+    }
+  }
+}
+loadEnvLocal();
 
 // Some sandboxes pre-install a Chromium build that predates this package's
 // expected revision and block re-downloading; use it directly when present,

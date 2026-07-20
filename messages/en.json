@@ -15,5 +15,53 @@
   "privacy": {
     "heading": "Privacy Notice",
     "body": "The full Data Privacy Act notice ships with the consent flow in a later increment."
+  },
+  "login": {
+    "heading": "Log in to BHW Connect",
+    "subheading": "Use the username and password your admin gave you.",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Log in",
+    "submitting": "Logging in…",
+    "timedOut": "You were signed out after 8 hours of inactivity. Please log in again.",
+    "errors": {
+      "missing": "Enter your username and password.",
+      "invalid": "Incorrect username or password.",
+      "deactivated": "This account has been deactivated. Contact your barangay admin.",
+      "locked": "Too many attempts. Try again after {until}."
+    }
+  },
+  "changePassword": {
+    "heading": "Set a new password",
+    "subheading": "This is a temporary password from your admin. Choose a new one to continue.",
+    "password": "New password",
+    "confirm": "Confirm new password",
+    "hint": "At least 8 characters. No need for symbols or numbers.",
+    "submit": "Save password",
+    "submitting": "Saving…",
+    "errors": {
+      "missing": "Enter and confirm your new password.",
+      "tooShort": "Password must be at least 8 characters.",
+      "mismatch": "Passwords don't match.",
+      "weak": "That password couldn't be used. Try a different one.",
+      "unknown": "Something went wrong. Please try again."
+    }
+  },
+  "consent": {
+    "heading": "Privacy Notice & Consent",
+    "intro": "Before you continue, please read how BHW Connect handles your information under the Data Privacy Act of 2012.",
+    "collectHeading": "What we collect",
+    "collectBody": "Your name, contact number, address, barangay assignment, login activity, and the questions you ask the Chat Guide.",
+    "whyHeading": "Why we collect it",
+    "whyBody": "To run your account, show you the right content for your area, and help your barangay improve its health information materials.",
+    "retentionHeading": "How long we keep it",
+    "retentionBody": "Chat messages and usage data are kept for up to 24 months. Records of account and admin actions are kept for 5 years, as required for audit purposes.",
+    "rightsHeading": "Your rights",
+    "rightsBody": "You may ask your barangay admin for a copy of your data, or to have your account deactivated and your personal details removed, at any time.",
+    "agree": "I Agree & Continue",
+    "agreeing": "Saving…"
+  },
+  "nav": {
+    "signOut": "Sign out"
   }
 }

@@ -15,5 +15,53 @@
   "privacy": {
     "heading": "Patakaran sa Privacy",
     "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment."
+  },
+  "login": {
+    "heading": "Mag-log in sa BHW Connect",
+    "subheading": "Gamitin ang username at password na ibinigay sa iyo ng iyong admin.",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Mag-log in",
+    "submitting": "Nagla-log in…",
+    "timedOut": "Na-log out ka dahil sa 8 oras na walang aktibidad. Mangyaring mag-log in ulit.",
+    "errors": {
+      "missing": "Ilagay ang iyong username at password.",
+      "invalid": "Maling username o password.",
+      "deactivated": "Na-deactivate na ang account na ito. Makipag-ugnayan sa inyong barangay admin.",
+      "locked": "Sobra na sa bilang ng pagtatangka. Subukan muli pagkatapos ng {until}."
+    }
+  },
+  "changePassword": {
+    "heading": "Gumawa ng bagong password",
+    "subheading": "Pansamantalang password ito mula sa iyong admin. Pumili ng bago upang magpatuloy.",
+    "password": "Bagong password",
+    "confirm": "Kumpirmahin ang bagong password",
+    "hint": "Hindi bababa sa 8 na karakter. Hindi kailangan ng simbolo o numero.",
+    "submit": "I-save ang password",
+    "submitting": "Sine-save…",
+    "errors": {
+      "missing": "Ilagay at kumpirmahin ang iyong bagong password.",
+      "tooShort": "Dapat hindi bababa sa 8 na karakter ang password.",
+      "mismatch": "Hindi magkatugma ang mga password.",
+      "weak": "Hindi magamit ang password na iyon. Subukan ang iba.",
+      "unknown": "May naganap na error. Pakisubukan muli."
+    }
+  },
+  "consent": {
+    "heading": "Abiso sa Privacy at Pahintulot",
+    "intro": "Bago magpatuloy, pakibasa kung paano hinahawakan ng BHW Connect ang iyong impormasyon ayon sa Data Privacy Act of 2012.",
+    "collectHeading": "Ano ang kinokolekta namin",
+    "collectBody": "Ang iyong pangalan, numero ng telepono, address, saklaw na barangay, aktibidad sa pag-login, at ang mga tanong mong itinatanong sa Chat Guide.",
+    "whyHeading": "Bakit namin ito kinokolekta",
+    "whyBody": "Upang patakbuhin ang iyong account, ipakita ang tamang content para sa iyong lugar, at tulungan ang inyong barangay na mapabuti ang mga materyales tungkol sa kalusugan.",
+    "retentionHeading": "Gaano katagal namin ito iniingatan",
+    "retentionBody": "Ang mga mensahe sa chat at data ng paggamit ay iniingatan hanggang 24 na buwan. Ang mga record ng account at aksyon ng admin ay iniingatan ng 5 taon, ayon sa hinihingi para sa audit.",
+    "rightsHeading": "Ang iyong mga karapatan",
+    "rightsBody": "Maaari kang humingi sa iyong barangay admin ng kopya ng iyong data, o magpa-deactivate ng iyong account at magpatanggal ng iyong personal na detalye, anumang oras.",
+    "agree": "Sumasang-ayon Ako at Magpatuloy",
+    "agreeing": "Sine-save…"
+  },
+  "nav": {
+    "signOut": "Mag-sign out"
   }
 }
