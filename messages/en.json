@@ -2,7 +2,8 @@
   "common": {
     "appName": "BHW Connect",
     "tagline": "Your companion for barangay health work.",
-    "languageToggleLabel": "Language"
+    "languageToggleLabel": "Language",
+    "signOut": "Log out"
   },
   "home": {
     "heading": "Welcome to BHW Connect",
@@ -15,5 +16,45 @@
   "privacy": {
     "heading": "Privacy Notice",
     "body": "The full Data Privacy Act notice ships with the consent flow in a later increment."
+  },
+  "login": {
+    "heading": "Log in",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submit": "Log in",
+    "submitting": "Logging in…",
+    "errorInvalidCredentials": "Incorrect username or password.",
+    "errorDeactivated": "This account has been deactivated. Please contact your barangay admin.",
+    "errorLockedOut": "Too many attempts. Please try again in 15 minutes.",
+    "reasonIdleTimeout": "You were signed out after 8 hours of inactivity. Please log in again.",
+    "reasonDeactivated": "This account has been deactivated. Please contact your barangay admin."
+  },
+  "changePassword": {
+    "heading": "Set a new password",
+    "body": "For your security, please set a new password before continuing.",
+    "newPasswordLabel": "New password",
+    "confirmPasswordLabel": "Confirm new password",
+    "hint": "At least 8 characters. No need for symbols or numbers.",
+    "submit": "Save and continue",
+    "submitting": "Saving…",
+    "errorMismatch": "Passwords do not match.",
+    "errorTooShort": "Password must be at least 8 characters.",
+    "errorTooCommon": "That password is too common. Please choose a different one.",
+    "errorUpdateFailed": "Something went wrong. Please try again."
+  },
+  "consent": {
+    "heading": "Data Privacy Notice",
+    "intro": "Before you continue, please review how BHW Connect handles your data.",
+    "pointCollectionHeading": "What we collect",
+    "pointCollectionBody": "Your name, contact number, address, and the questions you ask the Chat Guide.",
+    "pointPurposeHeading": "Why we collect it",
+    "pointPurposeBody": "To run your account, support your barangay health work, and improve the Knowledge Base.",
+    "pointRetentionHeading": "How long we keep it",
+    "pointRetentionBody": "Chat and usage data for up to 24 months; account records for as long as your account is active.",
+    "pointRightsHeading": "Your rights",
+    "pointRightsBody": "You may ask your admin to export or correct your data at any time, consistent with the Data Privacy Act.",
+    "fullNoticeLink": "Read the full Privacy Notice",
+    "agree": "I understand and agree",
+    "submitting": "Saving…"
   }
 }

@@ -2,7 +2,8 @@
   "common": {
     "appName": "BHW Connect",
     "tagline": "Kasama mo sa gawaing pangkalusugan ng barangay.",
-    "languageToggleLabel": "Wika"
+    "languageToggleLabel": "Wika",
+    "signOut": "Mag-log out"
   },
   "home": {
     "heading": "Maligayang pagdating sa BHW Connect",
@@ -15,5 +16,45 @@
   "privacy": {
     "heading": "Patakaran sa Privacy",
     "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment."
+  },
+  "login": {
+    "heading": "Mag-log in",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submit": "Mag-log in",
+    "submitting": "Nagla-log in…",
+    "errorInvalidCredentials": "Maling username o password.",
+    "errorDeactivated": "Naka-deactivate na ang account na ito. Makipag-ugnayan sa admin ng inyong barangay.",
+    "errorLockedOut": "Sobra na sa bilang ng pagtatangka. Subukan muli pagkalipas ng 15 minuto.",
+    "reasonIdleTimeout": "Na-log out ka dahil 8 oras ka nang hindi gumagalaw. Mag-log in ulit.",
+    "reasonDeactivated": "Naka-deactivate na ang account na ito. Makipag-ugnayan sa admin ng inyong barangay."
+  },
+  "changePassword": {
+    "heading": "Gumawa ng bagong password",
+    "body": "Para sa iyong seguridad, gumawa muna ng bagong password bago magpatuloy.",
+    "newPasswordLabel": "Bagong password",
+    "confirmPasswordLabel": "Kumpirmahin ang bagong password",
+    "hint": "Hindi bababa sa 8 karakter. Hindi kailangan ng simbolo o numero.",
+    "submit": "I-save at magpatuloy",
+    "submitting": "Sine-save…",
+    "errorMismatch": "Hindi magkatugma ang mga password.",
+    "errorTooShort": "Dapat hindi bababa sa 8 karakter ang password.",
+    "errorTooCommon": "Karaniwan masyado ang password na iyan. Pumili ng iba.",
+    "errorUpdateFailed": "May naganap na error. Subukan muli."
+  },
+  "consent": {
+    "heading": "Abiso sa Privacy ng Data",
+    "intro": "Bago magpatuloy, pakisuri kung paano hinahawakan ng BHW Connect ang iyong data.",
+    "pointCollectionHeading": "Ano ang kinokolekta namin",
+    "pointCollectionBody": "Ang iyong pangalan, numero ng contact, address, at mga tanong sa Chat Guide.",
+    "pointPurposeHeading": "Bakit namin ito kinokolekta",
+    "pointPurposeBody": "Para patakbuhin ang iyong account, suportahan ang gawaing pangkalusugan ng barangay, at pagbutihin ang Knowledge Base.",
+    "pointRetentionHeading": "Gaano katagal namin itinatago",
+    "pointRetentionBody": "Ang chat at usage data ay hanggang 24 buwan; ang account records habang aktibo ang iyong account.",
+    "pointRightsHeading": "Ang iyong mga karapatan",
+    "pointRightsBody": "Maaari mong hilingin sa iyong admin na i-export o itama ang iyong data anumang oras, ayon sa Data Privacy Act.",
+    "fullNoticeLink": "Basahin ang buong Patakaran sa Privacy",
+    "agree": "Naiintindihan ko at sumasang-ayon ako",
+    "submitting": "Sine-save…"
   }
 }

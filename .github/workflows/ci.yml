@@ -33,11 +33,24 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          # NEXT_PUBLIC_* vars are inlined at build time, so they must be
+          # set here too (not just for the E2E step below) once a Supabase
+          # project is linked. Unset by default, which keeps the app in
+          # its "no project connected" foundation-shell mode.
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
 
       - name: E2E smoke tests
         run: npm run e2e
         env:
           CI: true
+          # Unset by default -> the auth/RLS specs skip themselves (see
+          # e2e/support/service-client.ts). Add these as repo secrets once
+          # a Supabase project is linked (INC-1) to run them for real.
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
       - name: Performance budget check (Lighthouse)
         run: npx lhci autorun --config=lighthouserc.js
