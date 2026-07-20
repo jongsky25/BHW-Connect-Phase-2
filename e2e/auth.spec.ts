@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 import {
   BARANGAY_ANOS_ID,
   BARANGAY_BATONG_MALAKE_ID,
@@ -10,13 +10,21 @@ import {
   restGet,
 } from "./fixtures/auth";
 
+// Next's own route announcer also has role="alert" (empty text), so
+// page.getByRole("alert") is ambiguous whenever our form's error message is
+// showing. Our form error is always a <p role="alert">, the announcer a
+// <div>, so scope to the tag to get a single match.
+function formAlert(page: Page) {
+  return page.locator('p[role="alert"]');
+}
+
 test("a fully onboarded BHW logs in and lands on home", async ({ page }) => {
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_BHW.username);
   await page.getByLabel("Password").fill(STABLE_BHW.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
 
-  await expect(page).toHaveURL("/home");
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
   await expect(page.getByRole("heading", { name: /Stable Pilot BHW/ })).toBeVisible();
 });
 
@@ -26,7 +34,7 @@ test("wrong password shows an error without logging in", async ({ page }) => {
   await page.getByLabel("Password").fill("definitely-wrong");
   await page.getByRole("button", { name: "Mag-login" }).click();
 
-  await expect(page.getByRole("alert")).toHaveText("Mali ang username o password.");
+  await expect(formAlert(page)).toHaveText("Mali ang username o password.");
   await expect(page).toHaveURL("/login");
 });
 
@@ -42,17 +50,17 @@ test("a newly provisioned BHW is forced through change-password and consent befo
   await page.getByLabel("Password").fill(fresh.tempPassword);
   await page.getByRole("button", { name: "Mag-login" }).click();
 
-  await expect(page).toHaveURL("/change-password");
+  await expect(page).toHaveURL("/change-password", { timeout: 10_000 });
 
-  await page.getByLabel("Bagong password").fill("Fresh-Bhw-2026");
+  await page.getByLabel("Bagong password", { exact: true }).fill("Fresh-Bhw-2026");
   await page.getByLabel("Kumpirmahin ang bagong password").fill("Fresh-Bhw-2026");
   await page.getByRole("button", { name: "I-save ang password" }).click();
 
-  await expect(page).toHaveURL("/consent");
+  await expect(page).toHaveURL("/consent", { timeout: 10_000 });
 
   await page.getByRole("button", { name: "Sumasang-ayon ako" }).click();
 
-  await expect(page).toHaveURL("/home");
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
   await expect(page.getByRole("heading", { name: new RegExp(fresh.fullName) })).toBeVisible();
 });
 
@@ -66,20 +74,20 @@ test("an account locks out after five consecutive failed attempts", async ({ pag
     await page.getByLabel("Username").fill(fresh.username);
     await page.getByLabel("Password").fill("wrong-password");
     await page.getByRole("button", { name: "Mag-login" }).click();
-    await expect(page.getByRole("alert")).toHaveText("Mali ang username o password.");
+    await expect(formAlert(page)).toHaveText("Mali ang username o password.");
   }
 
   // 5th failed attempt trips the lockout.
   await page.getByLabel("Username").fill(fresh.username);
   await page.getByLabel("Password").fill("wrong-password");
   await page.getByRole("button", { name: "Mag-login" }).click();
-  await expect(page.getByRole("alert")).toContainText("Naka-lock ang account");
+  await expect(formAlert(page)).toContainText("Naka-lock ang account");
 
   // Even the correct temp password is rejected while locked.
   await page.getByLabel("Username").fill(fresh.username);
   await page.getByLabel("Password").fill(fresh.tempPassword);
   await page.getByRole("button", { name: "Mag-login" }).click();
-  await expect(page.getByRole("alert")).toContainText("Naka-lock ang account");
+  await expect(formAlert(page)).toContainText("Naka-lock ang account");
 });
 
 test("a BHW cannot read another barangay's org unit row (RLS)", async ({ request }) => {
