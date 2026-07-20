@@ -1,6 +1,14 @@
 import { existsSync } from "node:fs";
 import { defineConfig, devices } from "@playwright/test";
 
+// Next's dev/build server loads .env.local itself; the Playwright test
+// process is separate and needs it too (auth specs call the Supabase REST
+// API directly). CI sets these as real environment variables already, so
+// a missing .env.local there is expected and safe to ignore.
+if (existsSync(".env.local")) {
+  process.loadEnvFile(".env.local");
+}
+
 // Some sandboxes pre-install a Chromium build that predates this package's
 // expected revision and block re-downloading; use it directly when present,
 // otherwise fall back to Playwright's normal managed browser (e.g. in CI).
