@@ -96,5 +96,9 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/");
   }
 
+  if (pathname.startsWith("/admin") && appUser.role !== "admin") {
+    return redirectTo(request, "/");
+  }
+
   return response;
 }

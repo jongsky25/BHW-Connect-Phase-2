@@ -62,6 +62,46 @@
     "agreeing": "Saving…"
   },
   "nav": {
-    "signOut": "Sign out"
+    "signOut": "Sign out",
+    "users": "Users",
+    "audit": "Audit Log"
+  },
+  "admin": {
+    "usersHeading": "Users",
+    "createHeading": "Add a user",
+    "createSubheading": "The temp password is shown once — share it with the BHW directly.",
+    "username": "Username",
+    "fullName": "Full name",
+    "role": "Role",
+    "roleBhw": "BHW",
+    "roleAdmin": "Admin",
+    "contactNumber": "Contact number",
+    "email": "Email (optional)",
+    "address": "Address",
+    "create": "Create user",
+    "creating": "Creating…",
+    "tempPasswordLabel": "Temp password",
+    "tempPasswordHint": "Copy this now — it won't be shown again. The BHW will be asked to change it on first login.",
+    "close": "Close",
+    "status": "Status",
+    "statusActive": "Active",
+    "statusDeactivated": "Deactivated",
+    "statusInvited": "Invited",
+    "orgUnit": "Barangay",
+    "actions": "Actions",
+    "resetPassword": "Reset password",
+    "deactivate": "Deactivate",
+    "reactivate": "Reactivate",
+    "confirmDeactivate": "Deactivate this account?",
+    "noUsers": "No users in your scope yet.",
+    "errors": {
+      "usernameTaken": "That username is already taken.",
+      "lastAdmin": "This is the last active admin for this barangay — deactivate another admin first, or promote someone else.",
+      "outOfScope": "That account or barangay is outside your scope.",
+      "unknown": "Something went wrong. Please try again."
+    },
+    "auditHeading": "Audit Log",
+    "auditEmpty": "No audit events yet.",
+    "auditFilterAll": "All events"
   }
 }

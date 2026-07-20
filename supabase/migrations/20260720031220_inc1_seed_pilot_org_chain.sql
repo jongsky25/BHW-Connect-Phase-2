@@ -31,10 +31,11 @@ on conflict (id) do nothing;
 
 -- Pilot fixture accounts are provisioned via the Supabase Auth admin API,
 -- not plain SQL — auth.users passwords need GoTrue's hashing. They already
--- exist in the linked project; admin CRUD to provision further accounts
--- from the app itself lands in INC-2. Fixtures, all in Barangay Batong
--- Malake unless noted:
---   admin.pilot  — role=admin, must_change_password=true  (manual QA of the forced-change flow)
---   bhw.pilot    — role=bhw,   must_change_password=true  (consumed by e2e/auth.spec.ts's login flow; reset it before each run)
---   bhw.stable   — role=bhw,   must_change_password=false, consented — stable fixture for e2e/rls.spec.ts
---   bhw.other    — role=bhw,   Barangay Anos, must_change_password=false, consented — the "other org unit" side of the RLS test
+-- exist in the linked project (as of INC-2, rpc_admin_create_user is the
+-- supported way to add more without touching auth.users directly). All in
+-- Barangay Batong Malake unless noted:
+--   admin.pilot   — role=admin, must_change_password=true  (manual QA of the forced-change flow)
+--   admin.stable  — role=admin, must_change_password=false, consented — logs straight into /admin for e2e/admin.spec.ts
+--   bhw.pilot     — role=bhw,   must_change_password=true  (consumed by e2e/auth.spec.ts's login flow; reset it before each run)
+--   bhw.stable    — role=bhw,   must_change_password=false, consented — stable fixture for e2e/rls.spec.ts
+--   bhw.other     — role=bhw,   Barangay Anos, must_change_password=false, consented — the "other org unit" side of the RLS test

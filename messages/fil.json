@@ -62,6 +62,46 @@
     "agreeing": "Sine-save…"
   },
   "nav": {
-    "signOut": "Mag-sign out"
+    "signOut": "Mag-sign out",
+    "users": "Mga User",
+    "audit": "Audit Log"
+  },
+  "admin": {
+    "usersHeading": "Mga User",
+    "createHeading": "Magdagdag ng user",
+    "createSubheading": "Isang beses lang ipapakita ang pansamantalang password — ibigay ito nang direkta sa BHW.",
+    "username": "Username",
+    "fullName": "Buong pangalan",
+    "role": "Tungkulin",
+    "roleBhw": "BHW",
+    "roleAdmin": "Admin",
+    "contactNumber": "Numero ng telepono",
+    "email": "Email (opsyonal)",
+    "address": "Address",
+    "create": "Gumawa ng user",
+    "creating": "Ginagawa…",
+    "tempPasswordLabel": "Pansamantalang password",
+    "tempPasswordHint": "Kopyahin na ngayon — hindi na ito muling ipapakita. Hihilingin sa BHW na palitan ito sa unang pag-login.",
+    "close": "Isara",
+    "status": "Katayuan",
+    "statusActive": "Aktibo",
+    "statusDeactivated": "Na-deactivate",
+    "statusInvited": "Naimbitahan",
+    "orgUnit": "Barangay",
+    "actions": "Mga Aksyon",
+    "resetPassword": "I-reset ang password",
+    "deactivate": "I-deactivate",
+    "reactivate": "I-reactivate",
+    "confirmDeactivate": "I-deactivate ang account na ito?",
+    "noUsers": "Wala pang user sa iyong saklaw.",
+    "errors": {
+      "usernameTaken": "Nagamit na ang username na iyon.",
+      "lastAdmin": "Ito ang huling aktibong admin ng barangay na ito — mag-deactivate muna ng ibang admin, o mag-promote ng iba.",
+      "outOfScope": "Ang account o barangay na iyon ay wala sa iyong saklaw.",
+      "unknown": "May naganap na error. Pakisubukan muli."
+    },
+    "auditHeading": "Audit Log",
+    "auditEmpty": "Wala pang audit event.",
+    "auditFilterAll": "Lahat ng event"
   }
 }

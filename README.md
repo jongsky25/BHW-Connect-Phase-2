@@ -6,12 +6,20 @@ leverage plan — start there before touching code.
 
 ## Status
 
-**INC-1 — Auth, org hierarchy & consent** (see `docs/delivery-plan.md` §7).
-Username+password login (synthesized `<username>@bhw.local` auth email),
-NIST 800-63B password policy with 5-attempt/15-minute lockout, forced
-password change on first login, DPA consent gate, 8-hour idle session
-timeout, and org-unit-scoped RLS. Schema lives in `supabase/migrations/`.
-Admin UI for managing users lands in INC-2.
+**INC-2 — Admin console: user management & audit** (see `docs/delivery-plan.md`
+§7), on top of **INC-1 — Auth, org hierarchy & consent**.
+
+- Username+password login (synthesized `<username>@bhw.local` auth email),
+  NIST 800-63B password policy with 5-attempt/15-minute lockout, forced
+  password change on first login, DPA consent gate, 8-hour idle session
+  timeout, and org-unit-scoped RLS.
+- Admin console at `/admin/users`: create a BHW/admin account (temp password
+  shown once), reset password, deactivate/reactivate — all org-scoped, with
+  a last-active-admin guard per barangay. `/admin/audit` is the laymanized
+  audit viewer (plain-language sentences, both languages, filterable by
+  event type).
+- Schema, RLS policies, and RPCs live in `supabase/migrations/`. KB authoring
+  lands in INC-3.
 
 ## Getting started
 
@@ -38,9 +46,12 @@ npx supabase db push
 
 ### Running the live-fixture E2E tests
 
-Most of the E2E suite (`e2e/shell.spec.ts`, `e2e/rls.spec.ts`) runs safely
-against any linked project. `e2e/auth.spec.ts` drives the login flow against
-the `bhw.pilot` and `admin.pilot` pilot fixtures and mutates their state
+Most of the E2E suite (`e2e/shell.spec.ts`, `e2e/rls.spec.ts`,
+`e2e/admin.spec.ts`) runs safely against any linked project —
+`e2e/admin.spec.ts` logs in as the stable `admin.stable` fixture and creates
+a uniquely-named throwaway BHW each run, so it doesn't need a reset step.
+`e2e/auth.spec.ts` is the exception: it drives the login flow against the
+`bhw.pilot` and `admin.pilot` pilot fixtures and mutates their state
 (password, lockout) — it's opt-in and skipped unless both `.env.local` is
 configured and `RUN_LIVE_AUTH_E2E=1` is set, and `bhw.pilot` needs resetting
 to a fresh temp-password state before each run (see the seed migration's
