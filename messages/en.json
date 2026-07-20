@@ -57,6 +57,58 @@
   "authHome": {
     "heading": "Welcome, {name}!",
     "body": "You're logged in to BHW Connect.",
-    "signOut": "Sign out"
+    "signOut": "Sign out",
+    "adminConsoleCta": "Admin console"
+  },
+  "admin": {
+    "nav": {
+      "users": "Users",
+      "audit": "Audit log"
+    },
+    "users": {
+      "heading": "User management",
+      "createHeading": "Add a user",
+      "usernameLabel": "Username",
+      "fullNameLabel": "Full name",
+      "roleLabel": "Role",
+      "orgUnitLabel": "Barangay / scope",
+      "contactLabel": "Contact number",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "roleBhw": "BHW",
+      "roleAdmin": "Admin",
+      "createSubmit": "Create user",
+      "creating": "Creating…",
+      "tempPasswordNotice": "Temporary password for {username}: {password}. This is shown only once — copy it now.",
+      "dismiss": "Dismiss",
+      "colUsername": "Username",
+      "colFullName": "Name",
+      "colRole": "Role",
+      "colOrgUnit": "Scope",
+      "colStatus": "Status",
+      "colActions": "Actions",
+      "statusActive": "Active",
+      "statusDeactivated": "Deactivated",
+      "statusInvited": "Invited",
+      "editAction": "Edit",
+      "saveAction": "Save",
+      "cancelAction": "Cancel",
+      "resetPasswordAction": "Reset password",
+      "deactivateAction": "Deactivate",
+      "reactivateAction": "Reactivate",
+      "transferAction": "Transfer",
+      "transferSubmit": "Confirm transfer",
+      "empty": "No users yet.",
+      "lastAdminError": "You can't deactivate or transfer the last active admin for this scope.",
+      "notAuthorizedError": "You're not authorized to do that.",
+      "outOfScopeError": "That user or barangay is outside your scope.",
+      "usernameRequiredError": "A username is required.",
+      "userNotFoundError": "That user wasn't found.",
+      "genericError": "Something went wrong. Please try again."
+    },
+    "audit": {
+      "heading": "Audit log",
+      "empty": "No audit events yet."
+    }
   }
 }
