@@ -57,6 +57,58 @@
   "authHome": {
     "heading": "Maligayang pagdating, {name}!",
     "body": "Naka-login ka na sa BHW Connect.",
-    "signOut": "Mag-sign out"
+    "signOut": "Mag-sign out",
+    "adminConsoleCta": "Admin console"
+  },
+  "admin": {
+    "nav": {
+      "users": "Mga User",
+      "audit": "Audit Log"
+    },
+    "users": {
+      "heading": "Pamamahala ng User",
+      "createHeading": "Magdagdag ng User",
+      "usernameLabel": "Username",
+      "fullNameLabel": "Buong Pangalan",
+      "roleLabel": "Tungkulin",
+      "orgUnitLabel": "Barangay/Sakop",
+      "contactLabel": "Numero ng Contact",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "roleBhw": "BHW",
+      "roleAdmin": "Admin",
+      "createSubmit": "Gumawa ng User",
+      "creating": "Ginagawa…",
+      "tempPasswordNotice": "Pansamantalang password para kay {username}: {password}. Ipinapakita lang ito ngayon — kopyahin ito.",
+      "dismiss": "Isara",
+      "colUsername": "Username",
+      "colFullName": "Pangalan",
+      "colRole": "Tungkulin",
+      "colOrgUnit": "Sakop",
+      "colStatus": "Status",
+      "colActions": "Aksyon",
+      "statusActive": "Aktibo",
+      "statusDeactivated": "Deaktibo",
+      "statusInvited": "Naimbitahan",
+      "editAction": "I-edit",
+      "saveAction": "I-save",
+      "cancelAction": "Kanselahin",
+      "resetPasswordAction": "I-reset ang password",
+      "deactivateAction": "I-deactivate",
+      "reactivateAction": "I-reactivate",
+      "transferAction": "Ilipat",
+      "transferSubmit": "Kumpirmahin ang paglipat",
+      "empty": "Wala pang user.",
+      "lastAdminError": "Hindi puwedeng i-deactivate o ilipat ang huling aktibong admin ng sakop na ito.",
+      "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
+      "outOfScopeError": "Wala sa iyong sakop ang user o barangay na ito.",
+      "usernameRequiredError": "Kailangan ng username.",
+      "userNotFoundError": "Hindi nahanap ang user.",
+      "genericError": "May naganap na problema. Subukan muli."
+    },
+    "audit": {
+      "heading": "Audit Log",
+      "empty": "Wala pang audit event."
+    }
   }
 }

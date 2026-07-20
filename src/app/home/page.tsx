@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { SignOutButton } from "@/components/sign-out-button";
 import { getAppUser } from "@/lib/supabase/app-user";
@@ -28,7 +29,17 @@ export default async function HomePage() {
         {t("heading", { name: appUser.full_name })}
       </h1>
       <p className="max-w-xl text-lg text-ink/70">{t("body")}</p>
-      <SignOutButton />
+      <div className="flex flex-wrap gap-3">
+        {appUser.role === "admin" ? (
+          <Link
+            href="/admin/users"
+            className="rounded-md bg-primary px-4 py-2 font-medium text-canvas"
+          >
+            {t("adminConsoleCta")}
+          </Link>
+        ) : null}
+        <SignOutButton />
+      </div>
     </div>
   );
 }
