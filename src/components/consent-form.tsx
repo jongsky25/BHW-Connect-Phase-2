@@ -15,17 +15,22 @@ export function ConsentForm() {
     setError(null);
     setLoading(true);
 
-    const supabase = createClient();
-    const { error: rpcError } = await supabase.rpc("rpc_give_consent");
+    try {
+      const supabase = createClient();
+      const { error: rpcError } = await supabase.rpc("rpc_give_consent");
 
-    if (rpcError) {
+      if (rpcError) {
+        setError(t("genericError"));
+        return;
+      }
+
+      router.push("/home");
+      router.refresh();
+    } catch {
       setError(t("genericError"));
+    } finally {
       setLoading(false);
-      return;
     }
-
-    router.push("/home");
-    router.refresh();
   }
 
   return (

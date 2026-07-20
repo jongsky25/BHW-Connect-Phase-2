@@ -31,24 +31,29 @@ export function ChangePasswordForm() {
     }
 
     setLoading(true);
-    const supabase = createClient();
 
-    const { error: updateError } = await supabase.auth.updateUser({ password: newPassword });
-    if (updateError) {
+    try {
+      const supabase = createClient();
+
+      const { error: updateError } = await supabase.auth.updateUser({ password: newPassword });
+      if (updateError) {
+        setError(t("genericError"));
+        return;
+      }
+
+      const { error: rpcError } = await supabase.rpc("rpc_complete_password_change");
+      if (rpcError) {
+        setError(t("genericError"));
+        return;
+      }
+
+      router.push("/home");
+      router.refresh();
+    } catch {
       setError(t("genericError"));
+    } finally {
       setLoading(false);
-      return;
     }
-
-    const { error: rpcError } = await supabase.rpc("rpc_complete_password_change");
-    if (rpcError) {
-      setError(t("genericError"));
-      setLoading(false);
-      return;
-    }
-
-    router.push("/home");
-    router.refresh();
   }
 
   return (

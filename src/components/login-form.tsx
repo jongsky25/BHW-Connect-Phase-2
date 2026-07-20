@@ -42,55 +42,57 @@ export function LoginForm() {
     setError(null);
     setLoading(true);
 
-    const supabase = createClient();
-    const normalizedUsername = username.trim().toLowerCase();
+    try {
+      const supabase = createClient();
+      const normalizedUsername = username.trim().toLowerCase();
 
-    const { data: precheckRows } = await supabase.rpc("rpc_login_precheck", {
-      p_username: normalizedUsername,
-    });
-    const precheck = (precheckRows as LoginPrecheck[] | null)?.[0];
+      const { data: precheckRows } = await supabase.rpc("rpc_login_precheck", {
+        p_username: normalizedUsername,
+      });
+      const precheck = (precheckRows as LoginPrecheck[] | null)?.[0];
 
-    if (!precheck) {
-      setError(t("invalidCredentials"));
-      setLoading(false);
-      return;
-    }
-
-    if (precheck.locked) {
-      setError(t("lockedMessage", { minutes: minutesUntil(precheck.locked_until!) }));
-      setLoading(false);
-      return;
-    }
-
-    if (precheck.status !== "active") {
-      setError(t("inactiveMessage"));
-      setLoading(false);
-      return;
-    }
-
-    const { error: signInError } = await supabase.auth.signInWithPassword({
-      email: precheck.auth_email,
-      password,
-    });
-
-    const { data: attemptRows } = await supabase.rpc("rpc_record_login_attempt", {
-      p_username: normalizedUsername,
-      p_success: !signInError,
-    });
-
-    if (signInError) {
-      const attempt = (attemptRows as RecordAttemptResult[] | null)?.[0];
-      if (attempt?.locked && attempt.locked_until) {
-        setError(t("lockedMessage", { minutes: minutesUntil(attempt.locked_until) }));
-      } else {
+      if (!precheck) {
         setError(t("invalidCredentials"));
+        return;
       }
-      setLoading(false);
-      return;
-    }
 
-    router.push("/home");
-    router.refresh();
+      if (precheck.locked) {
+        setError(t("lockedMessage", { minutes: minutesUntil(precheck.locked_until!) }));
+        return;
+      }
+
+      if (precheck.status !== "active") {
+        setError(t("inactiveMessage"));
+        return;
+      }
+
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email: precheck.auth_email,
+        password,
+      });
+
+      const { data: attemptRows } = await supabase.rpc("rpc_record_login_attempt", {
+        p_username: normalizedUsername,
+        p_success: !signInError,
+      });
+
+      if (signInError) {
+        const attempt = (attemptRows as RecordAttemptResult[] | null)?.[0];
+        if (attempt?.locked && attempt.locked_until) {
+          setError(t("lockedMessage", { minutes: minutesUntil(attempt.locked_until) }));
+        } else {
+          setError(t("invalidCredentials"));
+        }
+        return;
+      }
+
+      router.push("/home");
+      router.refresh();
+    } catch {
+      setError(t("genericError"));
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
