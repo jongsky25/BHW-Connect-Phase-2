@@ -1,0 +1,50 @@
+/*
+ * BHW Connect design tokens — the ONLY file in this codebase allowed to
+ * contain hex color values. Every other file must reference a token below
+ * (Tailwind utilities like `bg-canvas` / `text-ink`, or `var(--color-*)`).
+ *
+ * Source: docs/requirements-and-vision.md §5 "Color palette (resolved)".
+ * Values were contrast-checked against WCAG 2.1 (4.5:1 normal text /
+ * 3:1 large text & UI) via the relative-luminance formula.
+ */
+
+:root {
+  /* Brand */
+  --color-primary: #b84e12; /* Marigold, button-safe */
+  --color-primary-display: #e8641c; /* Marigold, display-only (large text/decorative, not on small UI text) */
+  --color-secondary: #0c7c7e; /* Bayanihan Teal */
+
+  /* Celebratory / progress accent — pair ONLY with dark ink text, never light text */
+  --color-celebration: #ffc857; /* Sampaguita Yellow */
+  --color-celebration-ink: #2b2420;
+
+  /* Neutrals — warm-tinted, light mode */
+  --color-canvas: #f6f2ed;
+  --color-ink: #2b2420;
+
+  /* Semantic status */
+  --color-success: #1f7a45;
+  --color-warning: #8f5a08;
+  --color-danger: #c53a3a;
+  --color-info: #2c6fa6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: #221b16;
+    --color-ink: #f5ede4;
+  }
+}
+
+/* Manual override for the profile-level dark/light toggle (INC-7 UI; the
+   token plumbing ships now so the future toggle only needs to set this
+   attribute). Takes precedence over the OS-level media query above. */
+:root[data-theme="light"] {
+  --color-canvas: #f6f2ed;
+  --color-ink: #2b2420;
+}
+
+:root[data-theme="dark"] {
+  --color-canvas: #221b16;
+  --color-ink: #f5ede4;
+}
