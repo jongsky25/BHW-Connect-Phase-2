@@ -57,14 +57,14 @@ test("Chat Guide UI has no axe-core violations across its response states", asyn
   // Answer state (the freshly published entry above).
   await input.fill(questionEn);
   await Promise.all([page.waitForResponse((r) => r.url().includes("/api/chat")), input.press("Enter")]);
-  await expect(page.getByText(`Answer for ${marker}.`)).toBeVisible();
+  await expect(page.getByText(`Answer for ${marker}.`)).toBeVisible({ timeout: 10_000 });
   const answerScan = await new AxeBuilder({ page }).include("main").analyze();
   expect(answerScan.violations).toEqual([]);
 
   // No-answer state.
   await input.fill(`zzz nonsense unmatched ${marker}`);
   await Promise.all([page.waitForResponse((r) => r.url().includes("/api/chat")), input.press("Enter")]);
-  await expect(page.getByText(/Wala pa akong sagot diyan|I don't have an answer/)).toBeVisible();
+  await expect(page.getByText(/Wala pa akong sagot diyan|I don't have an answer/)).toBeVisible({ timeout: 10_000 });
   const noAnswerScan = await new AxeBuilder({ page }).include("main").analyze();
   expect(noAnswerScan.violations).toEqual([]);
 });

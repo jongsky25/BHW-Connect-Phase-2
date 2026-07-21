@@ -66,7 +66,7 @@ test("BHW asks a Taglish question in the Chat Guide UI and gets the published en
   await expect(page.getByText(answerFil)).toBeVisible({ timeout: 10_000 });
 
   // Feedback controls render for an answered question.
-  await expect(page.getByRole("button", { name: "Nakatulong" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Nakatulong", exact: true })).toBeVisible();
 
   // A nonsense question falls back gracefully and lands in the gap queue.
   const gapMarker = `qzxjklw${Date.now().toString(36)}`;
