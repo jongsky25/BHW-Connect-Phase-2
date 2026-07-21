@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { mapKbRpcError } from "@/lib/kb/error-messages";
 import type { KbCategory, KbEntry, KbStatus, OwnerOption } from "@/lib/kb/types";
@@ -14,6 +14,7 @@ type Props = {
   entry?: KbEntry;
   categories: KbCategory[];
   owners: OwnerOption[];
+  prefill?: { sourceUnmatchedQuestionId: string; text: string };
 };
 
 function defaultReviewDueOn(): string {
@@ -22,13 +23,19 @@ function defaultReviewDueOn(): string {
   return date.toISOString().slice(0, 10);
 }
 
-export function EntryForm({ mode, entry, categories, owners }: Props) {
+export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
   const t = useTranslations("admin.kbEntries");
   const router = useRouter();
+  // Read the source gap id straight from the current URL rather than only
+  // trusting the server-passed `prefill` prop: it's the more direct source
+  // of truth for what the admin actually navigated here to resolve, and
+  // avoids depending on that prop surviving unchanged through to submit.
+  const searchParams = useSearchParams();
+  const sourceUnmatchedQuestionId = searchParams.get("fromUnmatched") ?? prefill?.sourceUnmatchedQuestionId ?? null;
 
   const [categoryId, setCategoryId] = useState(entry?.category_id ?? categories[0]?.id ?? "");
-  const [questionFil, setQuestionFil] = useState(entry?.question_fil ?? "");
-  const [questionEn, setQuestionEn] = useState(entry?.question_en ?? "");
+  const [questionFil, setQuestionFil] = useState(entry?.question_fil ?? prefill?.text ?? "");
+  const [questionEn, setQuestionEn] = useState(entry?.question_en ?? prefill?.text ?? "");
   const [answerFil, setAnswerFil] = useState(entry?.answer_fil ?? "");
   const [answerEn, setAnswerEn] = useState(entry?.answer_en ?? "");
   const [keywords, setKeywords] = useState(entry?.keywords.join(", ") ?? "");
@@ -61,6 +68,7 @@ export function EntryForm({ mode, entry, categories, owners }: Props) {
           p_owner_user_id: ownerUserId || null,
           p_review_due_on: reviewDueOn || null,
           p_status: status,
+          p_source_unmatched_question_id: sourceUnmatchedQuestionId,
         });
 
         if (rpcError) {
@@ -106,6 +114,12 @@ export function EntryForm({ mode, entry, categories, owners }: Props) {
       className="flex flex-col gap-4 rounded-md border border-ink/10 p-4"
       noValidate
     >
+      {prefill ? (
+        <p className="rounded-md bg-secondary/10 px-4 py-3 text-sm text-ink">
+          {t("prefillBanner", { question: prefill.text })}
+        </p>
+      ) : null}
+
       <Field label={t("categoryLabel")} htmlFor="entry-category">
         <select
           id="entry-category"
