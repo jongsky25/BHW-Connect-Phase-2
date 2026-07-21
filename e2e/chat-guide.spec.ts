@@ -60,7 +60,11 @@ test("Chat Guide API answers a published entry, dedupes unmatched questions, and
 
   // Asking the same unanswerable question twice dedupes into one
   // unmatched_questions row with asked_count incremented, not two rows.
-  const nonsenseQuestion = `zzz nonsense unmatched query ${marker}`;
+  // Uses its own token rather than `marker` — the just-published entry's
+  // keyword is `marker`, so reusing it here would score as a keyword
+  // match against that entry instead of falling through to no-answer.
+  const gapToken = `zzzgap${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
+  const nonsenseQuestion = `nonsense unmatched query ${gapToken}`;
   await page.request.post("/api/chat", { data: { question: nonsenseQuestion } });
   await page.request.post("/api/chat", { data: { question: nonsenseQuestion } });
 

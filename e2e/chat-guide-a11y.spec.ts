@@ -54,10 +54,14 @@ test("Chat Guide UI has no axe-core violations across its response states", asyn
 
   const input = page.getByLabel(/Ang iyong tanong|Your question/);
 
-  // Answer state (the freshly published entry above).
+  // Answer state (the freshly published entry above). The UI defaults to
+  // the Filipino locale, so the rendered text is answer_fil unless the
+  // locale is toggled — accept either since this test doesn't toggle it.
   await input.fill(questionEn);
   await Promise.all([page.waitForResponse((r) => r.url().includes("/api/chat")), input.press("Enter")]);
-  await expect(page.getByText(`Answer for ${marker}.`)).toBeVisible({ timeout: 10_000 });
+  await expect(
+    page.getByText(new RegExp(`Sagot para sa ${marker}\\.|Answer for ${marker}\\.`)),
+  ).toBeVisible({ timeout: 10_000 });
   const answerScan = await new AxeBuilder({ page }).include("main").analyze();
   expect(answerScan.violations).toEqual([]);
 
