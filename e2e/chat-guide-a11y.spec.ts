@@ -65,8 +65,11 @@ test("Chat Guide UI has no axe-core violations across its response states", asyn
   const answerScan = await new AxeBuilder({ page }).include("main").analyze();
   expect(answerScan.violations).toEqual([]);
 
-  // No-answer state.
-  await input.fill(`zzz nonsense unmatched ${marker}`);
+  // No-answer state. Uses its own token rather than `marker` — the
+  // freshly published entry's keyword is `marker`, so reusing it here
+  // would score as a keyword match instead of falling through to no-answer.
+  const gapToken = `zzzgap${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
+  await input.fill(`nonsense unmatched query ${gapToken}`);
   await Promise.all([page.waitForResponse((r) => r.url().includes("/api/chat")), input.press("Enter")]);
   await expect(page.getByText(/Wala pa akong sagot diyan|I don't have an answer/)).toBeVisible({ timeout: 10_000 });
   const noAnswerScan = await new AxeBuilder({ page }).include("main").analyze();
