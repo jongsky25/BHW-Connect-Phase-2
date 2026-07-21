@@ -51,8 +51,15 @@ test("admin triages an unmatched question into a published entry from the dashbo
   page,
   request,
 }) => {
+  // The nonsense question becomes a real, permanently published KB entry
+  // (via the "create from unmatched" prefill flow) on the shared live
+  // pilot project — every token must be unique to this run. Reusing
+  // static "gibberish" words (e.g. "asdf", "nonsense") across CI runs
+  // would let published entries from earlier runs accumulate shared
+  // keyword/trigram overlap and start scoring as real matches for later
+  // runs' "nonsense" questions, breaking the no-answer assertion below.
   const marker = `dash${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
-  const nonsenseQuestion = `${marker} qzxjklw asdf nonsense`;
+  const nonsenseQuestion = `${marker} ${Math.random().toString(36).slice(2, 10)} ${Math.random().toString(36).slice(2, 10)}`;
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_BHW.username);
