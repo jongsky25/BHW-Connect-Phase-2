@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { mapKbRpcError } from "@/lib/kb/error-messages";
 import type { KbCategory, KbEntry, KbStatus, OwnerOption } from "@/lib/kb/types";
@@ -26,6 +26,12 @@ function defaultReviewDueOn(): string {
 export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
   const t = useTranslations("admin.kbEntries");
   const router = useRouter();
+  // Read the source gap id straight from the current URL rather than only
+  // trusting the server-passed `prefill` prop: it's the more direct source
+  // of truth for what the admin actually navigated here to resolve, and
+  // avoids depending on that prop surviving unchanged through to submit.
+  const searchParams = useSearchParams();
+  const sourceUnmatchedQuestionId = searchParams.get("fromUnmatched") ?? prefill?.sourceUnmatchedQuestionId ?? null;
 
   const [categoryId, setCategoryId] = useState(entry?.category_id ?? categories[0]?.id ?? "");
   const [questionFil, setQuestionFil] = useState(entry?.question_fil ?? prefill?.text ?? "");
@@ -62,7 +68,7 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
           p_owner_user_id: ownerUserId || null,
           p_review_due_on: reviewDueOn || null,
           p_status: status,
-          p_source_unmatched_question_id: prefill?.sourceUnmatchedQuestionId ?? null,
+          p_source_unmatched_question_id: sourceUnmatchedQuestionId,
         });
 
         if (rpcError) {
