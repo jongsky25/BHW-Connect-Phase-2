@@ -132,6 +132,7 @@
     "dashboard": {
       "tabActivity": "Activity",
       "tabChatGuide": "Chat Guide",
+      "tabReports": "Reports",
       "rangeLabel": "Time range",
       "range7": "Last 7 days",
       "range30": "Last 30 days",
@@ -176,6 +177,38 @@
         "notAuthorizedError": "You're not authorized to do that.",
         "gapNotFoundError": "That question wasn't found.",
         "genericError": "Something went wrong. Please try again."
+      },
+      "reports": {
+        "heading": "Reports",
+        "kpiActivation": "Activation",
+        "kpiWau": "Weekly active",
+        "kpiDeflection": "Deflection rate",
+        "kpiCsat": "Answer quality (CSAT)",
+        "exportHeading": "Export activity report",
+        "columnPickerLabel": "Columns to include",
+        "exportCsv": "Export CSV",
+        "exportExcel": "Export Excel",
+        "exportPdfSummary": "Export PDF summary",
+        "columns": {
+          "full_name": "Name",
+          "username": "Username",
+          "status": "Status",
+          "last_login_at": "Last login",
+          "questions_asked": "Questions asked"
+        },
+        "pdf": {
+          "title": "BHW Connect - Activity & KPI Summary",
+          "rangeLine": "{start} - {end}",
+          "kpiHeading": "Pilot KPIs",
+          "kpiActivation": "Activation",
+          "kpiWau": "Weekly active",
+          "kpiDeflection": "Deflection rate",
+          "kpiCsat": "Answer quality (CSAT)",
+          "activityHeading": "Activity",
+          "activityPctActive": "% active BHWs",
+          "activityAvgSessions": "Avg sessions / BHW",
+          "activityTotalQuestions": "Total questions asked"
+        }
       }
     },
     "users": {

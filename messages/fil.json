@@ -132,6 +132,7 @@
     "dashboard": {
       "tabActivity": "Aktibidad",
       "tabChatGuide": "Chat Guide",
+      "tabReports": "Mga Ulat",
       "rangeLabel": "Saklaw ng panahon",
       "range7": "Nakaraang 7 araw",
       "range30": "Nakaraang 30 araw",
@@ -176,6 +177,38 @@
         "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
         "gapNotFoundError": "Hindi nahanap ang tanong na ito.",
         "genericError": "May naganap na problema. Subukan muli."
+      },
+      "reports": {
+        "heading": "Mga Ulat",
+        "kpiActivation": "Activation",
+        "kpiWau": "Lingguhang aktibo",
+        "kpiDeflection": "Deflection rate",
+        "kpiCsat": "Kalidad ng sagot (CSAT)",
+        "exportHeading": "I-export ang ulat ng aktibidad",
+        "columnPickerLabel": "Mga column na isasama",
+        "exportCsv": "I-export bilang CSV",
+        "exportExcel": "I-export bilang Excel",
+        "exportPdfSummary": "I-export ang buod bilang PDF",
+        "columns": {
+          "full_name": "Pangalan",
+          "username": "Username",
+          "status": "Status",
+          "last_login_at": "Huling login",
+          "questions_asked": "Mga tanong na itinanong"
+        },
+        "pdf": {
+          "title": "BHW Connect - Buod ng Aktibidad at KPI",
+          "rangeLine": "{start} - {end}",
+          "kpiHeading": "Mga Pilot KPI",
+          "kpiActivation": "Activation",
+          "kpiWau": "Lingguhang aktibo",
+          "kpiDeflection": "Deflection rate",
+          "kpiCsat": "Kalidad ng sagot (CSAT)",
+          "activityHeading": "Aktibidad",
+          "activityPctActive": "% aktibong BHW",
+          "activityAvgSessions": "Average na sesyon / BHW",
+          "activityTotalQuestions": "Kabuuang tanong na itinanong"
+        }
       }
     },
     "users": {

@@ -15,6 +15,9 @@ export default async function DashboardLayout({ children }: { children: React.Re
           <Link href="/admin/dashboard/chat-guide" className="text-secondary hover:underline">
             {t("tabChatGuide")}
           </Link>
+          <Link href="/admin/dashboard/reports" className="text-secondary hover:underline">
+            {t("tabReports")}
+          </Link>
         </nav>
         <DashboardRangePicker />
       </div>
