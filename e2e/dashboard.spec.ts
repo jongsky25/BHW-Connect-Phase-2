@@ -3,7 +3,6 @@ import {
   BARANGAY_ANOS_ID,
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
-  STABLE_BHW,
   STABLE_CITY_ADMIN,
   createThrowawayBhw,
   getAccessToken,
@@ -61,10 +60,26 @@ test("admin triages an unmatched question into a published entry from the dashbo
   const marker = `dash${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
   const nonsenseQuestion = `${marker} ${Math.random().toString(36).slice(2, 10)} ${Math.random().toString(36).slice(2, 10)}`;
 
+  // A throwaway BHW, not bhw.stable: chat-guide.spec.ts's rate-limit test
+  // deliberately floods bhw.stable's /api/chat budget (25 requests against
+  // the 20/60s sliding window), and that test runs immediately before this
+  // one in the suite. Sharing the account would make this test's chat
+  // requests collide with that still-open rate-limit window.
+  const adminSetupToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const bhw = await createThrowawayBhw(request, adminSetupToken, BARANGAY_BATONG_MALAKE_ID);
+
   await page.goto("/login");
-  await page.getByLabel("Username").fill(STABLE_BHW.username);
-  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByLabel("Username").fill(bhw.username);
+  await page.getByLabel("Password").fill(bhw.tempPassword);
   await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/change-password", { timeout: 10_000 });
+
+  await page.getByLabel("Bagong password", { exact: true }).fill("Dashboard-E2e-2026");
+  await page.getByLabel("Kumpirmahin ang bagong password").fill("Dashboard-E2e-2026");
+  await page.getByRole("button", { name: "I-save ang password" }).click();
+  await expect(page).toHaveURL("/consent", { timeout: 10_000 });
+
+  await page.getByRole("button", { name: "Sumasang-ayon ako" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
   await page.goto("/chat");
@@ -127,8 +142,8 @@ test("admin triages an unmatched question into a published entry from the dashbo
   await page.getByRole("button", { name: "Mag-sign out" }).click();
   await expect(page).toHaveURL("/login", { timeout: 10_000 });
 
-  await page.getByLabel("Username").fill(STABLE_BHW.username);
-  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByLabel("Username").fill(bhw.username);
+  await page.getByLabel("Password").fill("Dashboard-E2e-2026");
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
