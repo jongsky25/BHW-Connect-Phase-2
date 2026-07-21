@@ -91,6 +91,10 @@ export async function POST(request: NextRequest) {
     result,
   );
 
+  // Best-effort: the "try the Chat Guide" onboarding step is satisfied by
+  // sending any question, matched or not. Never blocks the chat response.
+  await supabase.rpc("rpc_onboarding_complete_step", { p_step: "chat" });
+
   return NextResponse.json({
     session_id: sessionId,
     message_id: systemMessageId,

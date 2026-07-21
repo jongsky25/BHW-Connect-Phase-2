@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { EmptyState } from "@/components/empty-state";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
 import type { DashboardActivitySummary, DashboardBhwRow } from "@/lib/dashboard/types";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
@@ -36,7 +37,7 @@ export default async function AdminDashboardActivityPage({
       <div className="flex flex-col gap-3">
         <h2 className="text-lg font-semibold tracking-tight text-ink">{t("tableHeading")}</h2>
         {rows.length === 0 ? (
-          <p className="text-ink/70">{t("empty")}</p>
+          <EmptyState message={t("empty")} />
         ) : (
           <div className="overflow-x-auto rounded-md border border-ink/10">
             <table className="w-full min-w-[640px] border-collapse text-left">

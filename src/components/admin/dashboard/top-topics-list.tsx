@@ -1,4 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
+import { EmptyState } from "@/components/empty-state";
 import type { DashboardTopTopic } from "@/lib/dashboard/types";
 
 export async function TopTopicsList({ topics }: { topics: DashboardTopTopic[] }) {
@@ -6,7 +7,7 @@ export async function TopTopicsList({ topics }: { topics: DashboardTopTopic[] })
   const locale = await getLocale();
 
   if (topics.length === 0) {
-    return <p className="text-ink/70">{t("topTopicsEmpty")}</p>;
+    return <EmptyState message={t("topTopicsEmpty")} />;
   }
 
   return (

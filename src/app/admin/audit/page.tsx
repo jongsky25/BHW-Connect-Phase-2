@@ -1,4 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
+import { EmptyState } from "@/components/empty-state";
 import { createClient } from "@/lib/supabase/server";
 
 type AuditEventRow = {
@@ -26,7 +27,7 @@ export default async function AdminAuditPage() {
       <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
 
       {rows.length === 0 ? (
-        <p className="text-ink/70">{t("empty")}</p>
+        <EmptyState message={t("empty")} />
       ) : (
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
           {rows.map((event) => (

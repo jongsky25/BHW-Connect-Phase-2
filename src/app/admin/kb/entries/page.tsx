@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import { EmptyState } from "@/components/empty-state";
 import { createClient } from "@/lib/supabase/server";
 
 type EntryRow = {
@@ -39,7 +40,7 @@ export default async function AdminKbEntriesPage() {
       </div>
 
       {rows.length === 0 ? (
-        <p className="text-ink/70">{t("empty")}</p>
+        <EmptyState message={t("empty")} actionLabel={t("newAction")} actionHref="/admin/kb/entries/new" />
       ) : (
         <div className="overflow-x-auto rounded-md border border-ink/10">
           <table className="w-full min-w-[720px] border-collapse text-left">

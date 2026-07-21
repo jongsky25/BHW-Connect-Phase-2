@@ -59,7 +59,44 @@
     "body": "Naka-login ka na sa BHW Connect.",
     "signOut": "Mag-sign out",
     "adminConsoleCta": "Admin console",
-    "chatGuideCta": "Chat Guide"
+    "chatGuideCta": "Chat Guide",
+    "kbBrowseCta": "Tingnan ang Knowledge Base",
+    "settingsCta": "Mga Setting"
+  },
+  "settings": {
+    "heading": "Mga Setting",
+    "intro": "Ang mga preference na ito ay naka-save sa iyong account at gagana kahit saan ka mag-login.",
+    "languageLabel": "Wika",
+    "languageFil": "Filipino",
+    "languageEn": "English",
+    "themeLabel": "Hitsura",
+    "themeLight": "Maliwanag",
+    "themeDark": "Madilim",
+    "themeSystem": "Sundin ang device",
+    "fontScaleLabel": "Sukat ng Font",
+    "fontScaleMd": "Default",
+    "fontScaleLg": "Malaki",
+    "fontScaleXl": "Sobrang Laki",
+    "highContrastLabel": "Mataas na Contrast",
+    "saveAction": "I-save ang mga setting",
+    "saving": "Sine-save…",
+    "savedNotice": "Na-save na ang iyong mga setting.",
+    "invalidInputError": "Hindi valid ang setting na iyan. Subukan muli.",
+    "genericError": "May naganap na problema. Subukan muli."
+  },
+  "onboarding": {
+    "checklistHeading": "Magsimula sa BHW Connect",
+    "step_language": "Itakda ang iyong wika",
+    "step_chat": "Subukan ang Chat Guide",
+    "step_kb": "Tingnan ang isang kategorya sa Knowledge Base"
+  },
+  "kb": {
+    "browseHeading": "Knowledge Base",
+    "browseIntro": "Tingnan ang mga paksa tungkol sa kalusugan ng ina at bata ayon sa kategorya.",
+    "browseEmpty": "Wala pang nailathalang kategorya.",
+    "categoryEmpty": "Wala pang nailathalang nilalaman sa kategoryang ito.",
+    "tryChatCta": "Subukan na lang ang Chat Guide",
+    "backToCategories": "← Bumalik sa mga kategorya"
   },
   "chat": {
     "heading": "Chat Guide",
@@ -89,7 +126,8 @@
       "kbCategories": "Mga Kategorya",
       "kbEntries": "Mga Tanong-Sagot",
       "kbArticles": "Mga Artikulo",
-      "kbSynonyms": "Mga Kasingkahulugan"
+      "kbSynonyms": "Mga Kasingkahulugan",
+      "settings": "Mga Setting"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",

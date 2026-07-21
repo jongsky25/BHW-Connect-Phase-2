@@ -1,11 +1,12 @@
 import { getTranslations } from "next-intl/server";
+import { EmptyState } from "@/components/empty-state";
 import type { DashboardTrendPoint } from "@/lib/dashboard/types";
 
 export async function DeflectionTrendTable({ points }: { points: DashboardTrendPoint[] }) {
   const t = await getTranslations("admin.dashboard.chatGuide");
 
   if (points.length === 0) {
-    return <p className="text-ink/70">{t("deflectionTrendEmpty")}</p>;
+    return <EmptyState message={t("deflectionTrendEmpty")} />;
   }
 
   return (

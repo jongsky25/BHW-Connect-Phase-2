@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import type { KbCategory } from "@/lib/kb/types";
 import { CategoryForm } from "./category-form";
 import { CategoryRow } from "./category-row";
@@ -25,7 +26,7 @@ export function CategoriesConsole({ initialCategories }: Props) {
       />
 
       {categories.length === 0 ? (
-        <p className="text-ink/70">{t("empty")}</p>
+        <EmptyState message={t("empty")} />
       ) : (
         <div className="overflow-x-auto rounded-md border border-ink/10">
           <table className="w-full min-w-[640px] border-collapse text-left">

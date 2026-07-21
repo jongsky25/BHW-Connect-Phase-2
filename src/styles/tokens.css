@@ -48,3 +48,46 @@
   --color-canvas: #221b16;
   --color-ink: #f5ede4;
 }
+
+/* Font-size setting (INC-7): scales root rem sizing everywhere, since all
+   feature CSS is rem-based. "md" is the default 1x scale and needs no rule. */
+:root {
+  --font-scale: 1;
+}
+
+:root[data-font-scale="lg"] {
+  --font-scale: 1.125;
+}
+
+:root[data-font-scale="xl"] {
+  --font-scale: 1.25;
+}
+
+/* High-contrast setting (INC-7): widens the ink/canvas gap beyond the
+   already WCAG-passing default pair, for users who need extra separation.
+   The plain [data-contrast="high"] rule and its `prefers-color-scheme`
+   variant share specificity, so order matters: the media-query variant is
+   declared second so it wins for system/dark. The two [data-theme=...]
+   rules below have higher specificity (two attributes) and so always win
+   once a user picks an explicit theme, regardless of source order. */
+:root[data-contrast="high"] {
+  --color-canvas: #ffffff;
+  --color-ink: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-contrast="high"] {
+    --color-canvas: #000000;
+    --color-ink: #ffffff;
+  }
+}
+
+:root[data-theme="light"][data-contrast="high"] {
+  --color-canvas: #ffffff;
+  --color-ink: #000000;
+}
+
+:root[data-theme="dark"][data-contrast="high"] {
+  --color-canvas: #000000;
+  --color-ink: #ffffff;
+}
