@@ -80,9 +80,35 @@ export async function POST(request: NextRequest) {
     });
   }
 
-  const sessionId = await logConversation(supabase, appUser.id, requestSessionId(body), question, result);
+  // Checked before this turn's messages are inserted, so it doesn't count itself.
+  const isFirstAnswer = result.type === "answer" && (await isFirstEverAnswer(supabase));
 
-  return NextResponse.json({ session_id: sessionId, ...toResponseBody(result) });
+  const { sessionId, systemMessageId } = await logConversation(
+    supabase,
+    appUser.id,
+    requestSessionId(body),
+    question,
+    result,
+  );
+
+  return NextResponse.json({
+    session_id: sessionId,
+    message_id: systemMessageId,
+    is_first_answer: isFirstAnswer,
+    ...toResponseBody(result),
+  });
+}
+
+// RLS (chat_messages_owner_all) already scopes this to the caller's own
+// sessions, so no explicit user filter is needed here.
+async function isFirstEverAnswer(supabase: Awaited<ReturnType<typeof createClient>>): Promise<boolean> {
+  const { count } = await supabase
+    .from("chat_messages")
+    .select("id", { count: "exact", head: true })
+    .eq("sender", "system")
+    .not("matched_entry_id", "is", null);
+
+  return (count ?? 0) === 0;
 }
 
 function requestSessionId(body: unknown): string | null {
@@ -96,7 +122,7 @@ async function logConversation(
   requestedSessionId: string | null,
   question: string,
   result: ChatMatchResult,
-): Promise<string | null> {
+): Promise<{ sessionId: string | null; systemMessageId: string | null }> {
   let sessionId = requestedSessionId;
 
   if (sessionId) {
@@ -113,7 +139,7 @@ async function logConversation(
     sessionId = session?.id ?? null;
   }
 
-  if (!sessionId) return null;
+  if (!sessionId) return { sessionId: null, systemMessageId: null };
 
   await supabase.from("chat_messages").insert({
     session_id: sessionId,
@@ -121,15 +147,19 @@ async function logConversation(
     text: question.trim(),
   });
 
-  await supabase.from("chat_messages").insert({
-    session_id: sessionId,
-    sender: "system",
-    text: systemResponseText(result),
-    matched_entry_id: result.type === "answer" ? result.top.entry.id : null,
-    match_score: result.type === "answer" ? result.top.totalScore : null,
-  });
+  const { data: systemMessage } = await supabase
+    .from("chat_messages")
+    .insert({
+      session_id: sessionId,
+      sender: "system",
+      text: systemResponseText(result),
+      matched_entry_id: result.type === "answer" ? result.top.entry.id : null,
+      match_score: result.type === "answer" ? result.top.totalScore : null,
+    })
+    .select("id")
+    .single();
 
-  return sessionId;
+  return { sessionId, systemMessageId: systemMessage?.id ?? null };
 }
 
 function systemResponseText(result: ChatMatchResult): string {
