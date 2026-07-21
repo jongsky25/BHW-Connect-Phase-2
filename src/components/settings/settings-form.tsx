@@ -62,6 +62,14 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
   }
 
   return (
+    // This is the one screen where a user can select dark theme / high
+    // contrast, so it's also the one place its own controls get exercised
+    // against every combination. bg-ink/text-canvas is used instead of the
+    // usual bg-primary/text-canvas or text-success accents because ink and
+    // canvas are always each other's inverse in every theme + contrast
+    // state, guaranteeing AA contrast; primary and success are fixed brand
+    // colors tuned against the default palette and don't hold up once
+    // canvas swings to the dark or high-contrast extremes.
     <form onSubmit={handleSubmit} className="flex flex-col gap-6" noValidate>
       <fieldset className="flex flex-col gap-2">
         <legend className="text-sm font-medium text-ink">{t("languageLabel")}</legend>
@@ -73,7 +81,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
               aria-pressed={language === option}
               onClick={() => setLanguage(option)}
               className={`px-4 py-2 text-sm font-medium transition-colors ${
-                language === option ? "bg-primary text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
+                language === option ? "bg-ink text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
               }`}
             >
               {t(option === "fil" ? "languageFil" : "languageEn")}
@@ -92,7 +100,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
               aria-pressed={theme === option}
               onClick={() => setTheme(option)}
               className={`px-4 py-2 text-sm font-medium transition-colors ${
-                theme === option ? "bg-primary text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
+                theme === option ? "bg-ink text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
               }`}
             >
               {t(`theme${capitalize(option)}`)}
@@ -111,7 +119,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
               aria-pressed={fontScale === option}
               onClick={() => setFontScale(option)}
               className={`px-4 py-2 text-sm font-medium transition-colors ${
-                fontScale === option ? "bg-primary text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
+                fontScale === option ? "bg-ink text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
               }`}
             >
               {t(`fontScale${capitalize(option)}`)}
@@ -137,7 +145,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       ) : null}
 
       {saved && !error ? (
-        <p role="status" className="text-sm text-success">
+        <p role="status" className="text-sm font-medium text-ink">
           {t("savedNotice")}
         </p>
       ) : null}
@@ -145,7 +153,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       <button
         type="submit"
         disabled={saving}
-        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-canvas transition-opacity disabled:opacity-60"
+        className="self-start rounded-md bg-ink px-6 py-3 font-medium text-canvas transition-opacity disabled:opacity-60"
       >
         {saving ? t("saving") : t("saveAction")}
       </button>
