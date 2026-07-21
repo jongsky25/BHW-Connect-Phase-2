@@ -24,12 +24,24 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
-      <nav className="flex gap-4 border-b border-ink/10 pb-3 text-sm font-medium">
+      <nav className="flex flex-wrap gap-4 border-b border-ink/10 pb-3 text-sm font-medium">
         <Link href="/admin/users" className="text-secondary hover:underline">
           {t("nav.users")}
         </Link>
         <Link href="/admin/audit" className="text-secondary hover:underline">
           {t("nav.audit")}
+        </Link>
+        <Link href="/admin/kb/categories" className="text-secondary hover:underline">
+          {t("nav.kbCategories")}
+        </Link>
+        <Link href="/admin/kb/entries" className="text-secondary hover:underline">
+          {t("nav.kbEntries")}
+        </Link>
+        <Link href="/admin/kb/articles" className="text-secondary hover:underline">
+          {t("nav.kbArticles")}
+        </Link>
+        <Link href="/admin/kb/synonyms" className="text-secondary hover:underline">
+          {t("nav.kbSynonyms")}
         </Link>
       </nav>
       {children}
