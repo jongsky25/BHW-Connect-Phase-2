@@ -39,6 +39,16 @@ export const OTHER_BARANGAY_BHW = {
     return requireEnv("E2E_OTHER_BARANGAY_BHW_PASSWORD");
   },
 };
+// City-level (Los Baños) admin, parent of both pilot barangays — seeded by
+// the INC-6 migration (unlike the other fixtures above, which were
+// provisioned by hand on the pilot project) so the dashboard's org-unit
+// roll-up scoping is testable in CI.
+export const STABLE_CITY_ADMIN = {
+  username: "admin.city.stable",
+  get password() {
+    return requireEnv("E2E_STABLE_CITY_ADMIN_PASSWORD");
+  },
+};
 
 function supabaseUrl(): string {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
