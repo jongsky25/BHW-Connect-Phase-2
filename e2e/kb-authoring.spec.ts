@@ -35,7 +35,10 @@ test("admin authors a bilingual Q&A entry with an image, publish is blocked with
 
   const fileInput = page.locator('input[type="file"]');
   await fileInput.setInputFiles(TINY_PNG);
-  await expect(page.getByRole("img", { name: "" })).toBeVisible({ timeout: 15_000 });
+  // The uploaded preview <img> has alt="" (decorative), so it's stripped from
+  // the accessibility tree — assert on the "remove image" button instead,
+  // which only renders once the upload has set imageUrl.
+  await expect(page.getByRole("button", { name: "Alisin ang larawan" })).toBeVisible({ timeout: 15_000 });
 
   const [createResponse] = await Promise.all([
     page.waitForResponse((response) => response.url().includes("rpc_kb_entry_create")),
