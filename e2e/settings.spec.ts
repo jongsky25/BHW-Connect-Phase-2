@@ -23,12 +23,15 @@ test("settings persist across sessions and apply immediately on save", async ({ 
   // default) right up until submit triggers a refresh with the new
   // profile language — so every button clicked here except the language
   // picker itself (whose "English"/"Filipino" labels are identical in
-  // both catalogs) must be targeted by its Filipino label.
-  await page.getByRole("button", { name: "English" }).click();
-  await page.getByRole("button", { name: "Madilim" }).click();
-  await page.getByRole("button", { name: "Sobrang Laki" }).click();
-  await page.getByLabel("Mataas na Contrast").check();
-  await page.getByRole("button", { name: "I-save ang mga setting" }).click();
+  // both catalogs) must be targeted by its Filipino label. The site
+  // header's own LanguageToggle also renders an "English" button on every
+  // page, so scope to <main> to hit the settings form's copy instead.
+  const main = page.getByRole("main");
+  await main.getByRole("button", { name: "English" }).click();
+  await main.getByRole("button", { name: "Madilim" }).click();
+  await main.getByRole("button", { name: "Sobrang Laki" }).click();
+  await main.getByLabel("Mataas na Contrast").check();
+  await main.getByRole("button", { name: "I-save ang mga setting" }).click();
 
   await expect(
     page.getByText(/Na-save na ang iyong mga setting\.|Your settings have been saved\./),

@@ -65,7 +65,7 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <div>
-        <Link href="/kb" className="text-sm font-medium text-secondary hover:underline">
+        <Link href="/kb" className="text-sm font-medium text-ink underline hover:text-secondary">
           {t("backToCategories")}
         </Link>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
