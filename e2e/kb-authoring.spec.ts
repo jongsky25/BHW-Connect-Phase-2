@@ -1,9 +1,7 @@
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { expect, test } from "@playwright/test";
 import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet } from "./fixtures/auth";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TINY_PNG = path.join(__dirname, "fixtures", "tiny.png");
 
 test("admin authors a bilingual Q&A entry with an image, publish is blocked without an owner, and it stays hidden from BHWs until published", async ({
