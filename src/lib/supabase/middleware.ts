@@ -10,6 +10,10 @@ const LAST_ACTIVITY_COOKIE = "bhw_last_activity";
 
 const PUBLIC_PATHS = new Set(["/", "/privacy", "/login"]);
 
+function isApiPath(pathname: string) {
+  return pathname.startsWith("/api/");
+}
+
 function redirectTo(request: NextRequest, path: string, response: NextResponse) {
   const url = request.nextUrl.clone();
   url.pathname = path;
@@ -49,6 +53,9 @@ export async function updateSession(request: NextRequest) {
   const isPublicPath = PUBLIC_PATHS.has(pathname);
 
   if (!user) {
+    if (isApiPath(pathname)) {
+      return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+    }
     if (!isPublicPath) {
       return redirectTo(request, "/login", response);
     }
@@ -75,10 +82,16 @@ export async function updateSession(request: NextRequest) {
 
   if (!appUser || appUser.status !== "active") {
     await supabase.auth.signOut();
+    if (isApiPath(pathname)) {
+      return NextResponse.json({ error: "account inactive" }, { status: 403 });
+    }
     return redirectTo(request, "/login?blocked=1", response);
   }
 
   if (appUser.must_change_password) {
+    if (isApiPath(pathname)) {
+      return NextResponse.json({ error: "password change required" }, { status: 403 });
+    }
     if (pathname !== "/change-password") {
       return redirectTo(request, "/change-password", response);
     }
@@ -86,6 +99,9 @@ export async function updateSession(request: NextRequest) {
   }
 
   if (!appUser.consented_at) {
+    if (isApiPath(pathname)) {
+      return NextResponse.json({ error: "consent required" }, { status: 403 });
+    }
     if (pathname !== "/consent") {
       return redirectTo(request, "/consent", response);
     }
