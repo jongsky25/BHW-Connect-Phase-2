@@ -59,7 +59,44 @@
     "body": "You're logged in to BHW Connect.",
     "signOut": "Sign out",
     "adminConsoleCta": "Admin console",
-    "chatGuideCta": "Chat Guide"
+    "chatGuideCta": "Chat Guide",
+    "kbBrowseCta": "Browse Knowledge Base",
+    "settingsCta": "Settings"
+  },
+  "settings": {
+    "heading": "Settings",
+    "intro": "These preferences are saved to your account and apply everywhere you sign in.",
+    "languageLabel": "Language",
+    "languageFil": "Filipino",
+    "languageEn": "English",
+    "themeLabel": "Appearance",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "Match device",
+    "fontScaleLabel": "Font size",
+    "fontScaleMd": "Default",
+    "fontScaleLg": "Large",
+    "fontScaleXl": "Extra large",
+    "highContrastLabel": "High contrast",
+    "saveAction": "Save settings",
+    "saving": "Saving…",
+    "savedNotice": "Your settings have been saved.",
+    "invalidInputError": "That setting isn't valid. Please try again.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "onboarding": {
+    "checklistHeading": "Get started with BHW Connect",
+    "step_language": "Set your language",
+    "step_chat": "Try the Chat Guide",
+    "step_kb": "Visit a Knowledge Base category"
+  },
+  "kb": {
+    "browseHeading": "Knowledge Base",
+    "browseIntro": "Browse maternal and child health topics by category.",
+    "browseEmpty": "No categories have been published yet.",
+    "categoryEmpty": "No published content in this category yet.",
+    "tryChatCta": "Try the Chat Guide instead",
+    "backToCategories": "← Back to categories"
   },
   "chat": {
     "heading": "Chat Guide",
@@ -89,7 +126,8 @@
       "kbCategories": "Categories",
       "kbEntries": "Q&A entries",
       "kbArticles": "Articles",
-      "kbSynonyms": "Synonyms"
+      "kbSynonyms": "Synonyms",
+      "settings": "Settings"
     },
     "dashboard": {
       "tabActivity": "Activity",

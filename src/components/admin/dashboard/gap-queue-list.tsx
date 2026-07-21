@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import { mapDashboardRpcError } from "@/lib/dashboard/error-messages";
 import type { GapQueueRow } from "@/lib/dashboard/types";
 import { createClient } from "@/lib/supabase/client";
@@ -35,7 +36,7 @@ export function GapQueueList({ rows }: { rows: GapQueueRow[] }) {
   }
 
   if (rows.length === 0) {
-    return <p className="text-ink/70">{t("gapQueueEmpty")}</p>;
+    return <EmptyState message={t("gapQueueEmpty")} />;
   }
 
   return (

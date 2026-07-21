@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import type { AdminUserRow, OrgUnitOption } from "@/lib/admin/types";
 import { CreateUserForm } from "./create-user-form";
 import { UserRow } from "./user-row";
@@ -54,7 +55,7 @@ export function UsersConsole({ initialUsers, orgUnits }: Props) {
       />
 
       {initialUsers.length === 0 ? (
-        <p className="text-ink/70">{t("empty")}</p>
+        <EmptyState message={t("empty")} />
       ) : (
         <div className="overflow-x-auto rounded-md border border-ink/10">
           <table className="w-full min-w-[720px] border-collapse text-left">

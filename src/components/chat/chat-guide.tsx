@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useRef, useState, type FormEvent } from "react";
+import { EmptyState } from "@/components/empty-state";
 import { normalizeText } from "@/lib/chat/normalize";
 import { createClient } from "@/lib/supabase/client";
 
@@ -134,7 +135,7 @@ export function ChatGuide() {
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4">
       <div role="log" aria-live="polite" aria-relevant="additions" className="flex flex-1 flex-col gap-4">
-        {exchanges.length === 0 ? <p className="text-ink/70">{t("emptyState")}</p> : null}
+        {exchanges.length === 0 ? <EmptyState message={t("emptyState")} /> : null}
         {exchanges.map((exchange) => (
           <ExchangeBubbles
             key={exchange.key}

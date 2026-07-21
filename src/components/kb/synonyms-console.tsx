@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import type { Synonym } from "@/lib/kb/types";
 import { SynonymForm } from "./synonym-form";
 import { SynonymRow } from "./synonym-row";
@@ -21,7 +22,7 @@ export function SynonymsConsole({ initialSynonyms }: Props) {
       <SynonymForm onCreated={(synonym) => setSynonyms((prev) => [synonym, ...prev])} />
 
       {synonyms.length === 0 ? (
-        <p className="text-ink/70">{t("empty")}</p>
+        <EmptyState message={t("empty")} />
       ) : (
         <div className="overflow-x-auto rounded-md border border-ink/10">
           <table className="w-full min-w-[560px] border-collapse text-left">

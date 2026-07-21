@@ -1,4 +1,5 @@
-import type { APIRequestContext } from "@playwright/test";
+import type { APIRequestContext, Page } from "@playwright/test";
+import { expect } from "@playwright/test";
 
 // Fixture accounts seeded on the pilot Supabase project's org chain
 // (Department of Health -> Region IV-A -> Laguna -> Los Baños -> barangay).
@@ -122,4 +123,28 @@ export async function createThrowawayBhw(
   }
 
   return { username, tempPassword: row.temp_password, fullName };
+}
+
+// Drives a freshly provisioned BHW through the forced change-password and
+// consent screens (INC-1) so tests that only care about what comes after
+// (settings, onboarding, ...) don't have to repeat this every time.
+export async function onboardThroughLogin(
+  page: Page,
+  username: string,
+  tempPassword: string,
+  newPassword: string,
+): Promise<void> {
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(username);
+  await page.getByLabel("Password").fill(tempPassword);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+
+  await expect(page).toHaveURL("/change-password", { timeout: 10_000 });
+  await page.getByLabel("Bagong password", { exact: true }).fill(newPassword);
+  await page.getByLabel("Kumpirmahin ang bagong password").fill(newPassword);
+  await page.getByRole("button", { name: "I-save ang password" }).click();
+
+  await expect(page).toHaveURL("/consent", { timeout: 10_000 });
+  await page.getByRole("button", { name: "Sumasang-ayon ako" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
 }

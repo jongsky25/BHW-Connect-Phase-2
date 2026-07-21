@@ -17,6 +17,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  font-size: calc(1rem * var(--font-scale));
+}
+
 body {
   background: var(--color-canvas);
   color: var(--color-ink);

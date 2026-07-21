@@ -1,7 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { SignOutButton } from "@/components/sign-out-button";
+import { parseOnboardingProgress } from "@/lib/settings/types";
 import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
 
@@ -29,12 +31,29 @@ export default async function HomePage() {
         {t("heading", { name: appUser.full_name })}
       </h1>
       <p className="max-w-xl text-lg text-ink/70">{t("body")}</p>
+
+      {appUser.role === "bhw" && !appUser.onboarding_completed_at ? (
+        <OnboardingChecklist progress={parseOnboardingProgress(appUser.onboarding_progress)} />
+      ) : null}
+
       <div className="flex flex-wrap gap-3">
         <Link
           href="/chat"
           className="rounded-md bg-primary px-6 py-3 font-medium text-canvas"
         >
           {t("chatGuideCta")}
+        </Link>
+        <Link
+          href="/kb"
+          className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+        >
+          {t("kbBrowseCta")}
+        </Link>
+        <Link
+          href="/settings"
+          className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+        >
+          {t("settingsCta")}
         </Link>
         {appUser.role === "admin" ? (
           <Link
