@@ -116,5 +116,28 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
-  return response;
+  return withAppUserHeaders(response, request, appUser);
+}
+
+// The root layout and i18n config need the signed-in user's language/a11y
+// prefs on every request, but appUser is already fetched above — forward
+// it as request headers instead of making them re-fetch it a second time
+// inside the page render. That second fetch was adding an extra Supabase
+// round trip to every request (including the public "/" this middleware
+// already lets through), which was enough to blow the Lighthouse
+// performance budget.
+function withAppUserHeaders(
+  response: NextResponse,
+  request: NextRequest,
+  appUser: NonNullable<Awaited<ReturnType<typeof getAppUser>>>,
+) {
+  const forwardedHeaders = new Headers(request.headers);
+  forwardedHeaders.set("x-app-language", appUser.language);
+  forwardedHeaders.set("x-app-a11y", JSON.stringify(appUser.a11y_settings ?? {}));
+
+  const next = NextResponse.next({ request: { headers: forwardedHeaders } });
+  for (const cookie of response.cookies.getAll()) {
+    next.cookies.set(cookie);
+  }
+  return next;
 }

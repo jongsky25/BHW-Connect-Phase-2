@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import { headers } from "next/headers";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { parseA11ySettings } from "@/lib/settings/types";
-import { getAppUser } from "@/lib/supabase/app-user";
-import { createClient } from "@/lib/supabase/server";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -55,14 +54,17 @@ export default async function RootLayout({
 // Unauthenticated pages (login, privacy, etc.) render through this layout
 // too, so a signed-out visitor falls through to the CSS-only defaults
 // (OS-level prefers-color-scheme, "md" font scale, no forced contrast).
+// The signed-in case is populated by middleware (src/lib/supabase/middleware.ts),
+// which forwards it as a request header rather than this layout re-fetching
+// the profile itself on every request.
 async function getRequestA11ySettings() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const h = await headers();
+  const raw = h.get("x-app-a11y");
+  if (!raw) return parseA11ySettings(null);
 
-  if (!user) return parseA11ySettings(null);
-
-  const appUser = await getAppUser(supabase, user.id);
-  return parseA11ySettings(appUser?.a11y_settings);
+  try {
+    return parseA11ySettings(JSON.parse(raw));
+  } catch {
+    return parseA11ySettings(null);
+  }
 }
