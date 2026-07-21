@@ -83,13 +83,29 @@ export async function POST(request: NextRequest) {
   // Checked before this turn's messages are inserted, so it doesn't count itself.
   const isFirstAnswer = result.type === "answer" && (await isFirstEverAnswer(supabase));
 
-  const { sessionId, systemMessageId } = await logConversation(
+  const { sessionId, systemMessageId, isNewSession } = await logConversation(
     supabase,
     appUser.id,
     requestSessionId(body),
     question,
     result,
   );
+
+  // Best-effort analytics instrumentation (§8 taxonomy) — never blocks the
+  // chat response. A new chat_sessions row is this app's existing notion
+  // of "session" (see rpc_dashboard_activity_summary's active_bhws calc),
+  // so that's what session.started tracks. did_you_mean isn't in the
+  // taxonomy (neither a shown answer nor a miss), so only answer/no_answer
+  // fire chat.answer_shown/chat.no_answer.
+  if (isNewSession) {
+    await supabase.rpc("rpc_track_event", { p_event_name: "session.started" });
+  }
+  await supabase.rpc("rpc_track_event", { p_event_name: "chat.question_asked" });
+  if (result.type === "answer") {
+    await supabase.rpc("rpc_track_event", { p_event_name: "chat.answer_shown" });
+  } else if (result.type === "no_answer") {
+    await supabase.rpc("rpc_track_event", { p_event_name: "chat.no_answer" });
+  }
 
   // Best-effort: the "try the Chat Guide" onboarding step is satisfied by
   // sending any question, matched or not. Never blocks the chat response.
@@ -126,8 +142,9 @@ async function logConversation(
   requestedSessionId: string | null,
   question: string,
   result: ChatMatchResult,
-): Promise<{ sessionId: string | null; systemMessageId: string | null }> {
+): Promise<{ sessionId: string | null; systemMessageId: string | null; isNewSession: boolean }> {
   let sessionId = requestedSessionId;
+  let isNewSession = false;
 
   if (sessionId) {
     await supabase
@@ -141,9 +158,10 @@ async function logConversation(
       .select("id")
       .single();
     sessionId = session?.id ?? null;
+    isNewSession = sessionId !== null;
   }
 
-  if (!sessionId) return { sessionId: null, systemMessageId: null };
+  if (!sessionId) return { sessionId: null, systemMessageId: null, isNewSession: false };
 
   await supabase.from("chat_messages").insert({
     session_id: sessionId,
@@ -163,7 +181,7 @@ async function logConversation(
     .select("id")
     .single();
 
-  return { sessionId, systemMessageId: systemMessage?.id ?? null };
+  return { sessionId, systemMessageId: systemMessage?.id ?? null, isNewSession };
 }
 
 function systemResponseText(result: ChatMatchResult): string {

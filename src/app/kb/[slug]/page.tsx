@@ -60,6 +60,18 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
 
   const entryRows = entries ?? [];
   const articleRows = articles ?? [];
+
+  // Best-effort analytics: every published article shown on this category
+  // page counts as viewed (articles render collapsed but are already
+  // delivered to the client). Never blocks the page render.
+  await Promise.all(
+    articleRows.map((article) =>
+      supabase.rpc("rpc_track_event", {
+        p_event_name: "kb.article_viewed",
+        p_properties: { article_id: article.id, category_id: category.id },
+      }),
+    ),
+  );
   const isEmpty = entryRows.length === 0 && articleRows.length === 0;
 
   return (

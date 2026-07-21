@@ -122,6 +122,10 @@ export function ChatGuide() {
 
     const supabase = createClient();
     await supabase.from("chat_messages").update({ feedback: vote }).eq("id", exchange.messageId);
+    await supabase.rpc("rpc_track_event", {
+      p_event_name: "chat.feedback_given",
+      p_properties: { vote },
+    });
 
     if (vote === "down") {
       await supabase.rpc("rpc_chat_upsert_unmatched", {
