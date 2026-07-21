@@ -58,7 +58,28 @@
     "heading": "Welcome, {name}!",
     "body": "You're logged in to BHW Connect.",
     "signOut": "Sign out",
-    "adminConsoleCta": "Admin console"
+    "adminConsoleCta": "Admin console",
+    "chatGuideCta": "Chat Guide"
+  },
+  "chat": {
+    "heading": "Chat Guide",
+    "intro": "Ask a maternal and child health question in English, Filipino, or Taglish.",
+    "emptyState": "Ask me anything about maternal and child health.",
+    "inputLabel": "Your question",
+    "inputPlaceholder": "Type your question here…",
+    "send": "Send",
+    "sending": "Sending…",
+    "relatedHeading": "Related questions",
+    "didYouMeanHeading": "Did you mean…?",
+    "noAnswerMessage": "I don't have an answer for that yet. I've noted your question so our team can add it to the Chat Guide.",
+    "feedbackPrompt": "Was this helpful?",
+    "feedbackUp": "Helpful",
+    "feedbackDown": "Not helpful",
+    "feedbackThanks": "Thanks for your feedback!",
+    "celebrationMessage": "🎉 Great! You got your first answer from the Chat Guide.",
+    "rateLimitError": "You're asking questions quickly. Please wait {seconds} seconds and try again.",
+    "questionRequiredError": "Type a question first.",
+    "genericError": "Something went wrong. Please try again."
   },
   "admin": {
     "nav": {

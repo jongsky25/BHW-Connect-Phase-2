@@ -1,8 +1,11 @@
 // Performance budget gate — delivery-plan.md §5.2.
 // Mobile emulation + throttling (Lighthouse default) stands in for the
-// target "low-end mobile / Fast 3G" profile. Checked against "/" for now
-// (the only route in this increment); the Chat Guide and Login routes
-// named in §5.2 join this list once INC-1/INC-5 ship.
+// target "low-end mobile / Fast 3G" profile. Checked against "/" for now.
+// /chat is authenticated-only (middleware redirects a signed-out request
+// to /login), so an unauthenticated Lighthouse run against it would just
+// re-measure /login under a different name — adding it for real needs an
+// authenticated puppeteerScript, which is its own follow-up, not silently
+// bolted on here.
 module.exports = {
   ci: {
     collect: {
