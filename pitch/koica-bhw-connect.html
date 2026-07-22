@@ -1,0 +1,626 @@
+<title>BHW Connect — DOH × KOICA Partnership Proposal</title>
+<style>
+  :root{
+    --teal:#0C7C7E;
+    --teal-deep:#0A4A4B;
+    --teal-deeper:#083335;
+    --marigold:#E8641C;
+    --marigold-deep:#B84E12;
+    --sampaguita:#FFC857;
+    --canvas:#F6F2ED;
+    --canvas-2:#ECE3D6;
+    --ink:#241C17;
+    --ink-soft:#6A5D53;
+    --cream:#F7F1E8;
+    --cream-soft:rgba(247,241,232,.66);
+    --line-dark:rgba(247,241,232,.18);
+    --line-light:rgba(36,28,23,.14);
+
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+
+    --pad:clamp(1.6rem,5.2vw,6rem);
+    --maxw:1120px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:var(--sans);
+    background:#06282a;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow:hidden;
+  }
+
+  /* ---------- deck stage ---------- */
+  .deck{position:fixed;inset:0}
+  .slide{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:clamp(2.4rem,6vh,4.4rem) var(--pad);
+    opacity:0;visibility:hidden;
+    transform:translateY(14px);
+    transition:opacity .5s ease,transform .5s ease,visibility .5s;
+    overflow:hidden;
+  }
+  .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+  .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto}
+
+  .slide.dark{background:var(--teal-deep);color:var(--cream)}
+  .slide.darker{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
+  .slide.light{background:var(--canvas);color:var(--ink)}
+
+  /* soft decorative bloom, subtle */
+  .slide.dark::after,.slide.darker::after{
+    content:"";position:absolute;right:-12%;top:-18%;width:46vw;height:46vw;
+    background:radial-gradient(circle,rgba(232,100,28,.16),transparent 62%);
+    pointer-events:none;
+  }
+
+  /* ---------- shared type ---------- */
+  .eyebrow{
+    font-size:clamp(.66rem,1vw,.78rem);
+    font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+    display:flex;align-items:center;gap:.85rem;margin-bottom:clamp(1.1rem,2.6vh,1.9rem);
+  }
+  .eyebrow .num{color:var(--marigold)}
+  .dark .eyebrow,.darker .eyebrow{color:var(--cream-soft)}
+  .light .eyebrow{color:var(--ink-soft)}
+  .eyebrow::after{content:"";flex:0 0 46px;height:1px;background:currentColor;opacity:.4}
+
+  h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.04;text-wrap:balance}
+  h1{font-size:clamp(2.7rem,7.4vw,5.6rem)}
+  h2{font-size:clamp(1.9rem,4.4vw,3.35rem)}
+  .lead{
+    font-size:clamp(1.02rem,1.7vw,1.32rem);line-height:1.5;max-width:42ch;
+    color:inherit;
+  }
+  .dark .lead,.darker .lead{color:var(--cream-soft)}
+  .light .lead{color:var(--ink-soft)}
+  .mark{color:var(--marigold)}
+  .dark .mark,.darker .mark{color:var(--sampaguita)}
+
+  /* ---------- slide 1 title ---------- */
+  .title-kicker{font-size:clamp(.72rem,1.1vw,.85rem);font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--sampaguita);margin-bottom:1.6rem}
+  .title-sub{margin-top:1.4rem;font-size:clamp(1.05rem,1.9vw,1.5rem);color:var(--cream-soft);max-width:30ch;line-height:1.4}
+  .lockup{
+    margin-top:clamp(2.4rem,6vh,4rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:.7rem 1.1rem;
+    font-size:clamp(.82rem,1.3vw,1rem);
+  }
+  .lockup strong{font-weight:700;letter-spacing:.01em}
+  .lockup .x{color:var(--marigold);font-weight:700}
+  .lockup .muted{color:var(--cream-soft)}
+
+  /* ---------- big stat (slide 2) ---------- */
+  .stat{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
+  .stat__num{
+    font-family:var(--serif);font-weight:700;letter-spacing:-.03em;line-height:.86;
+    font-size:clamp(5rem,17vw,13rem);color:var(--marigold);
+  }
+  .stat__num small{display:block;font-family:var(--sans);font-size:clamp(.8rem,1.3vw,1rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin-top:1rem}
+  .stat__body{max-width:34ch}
+  .stat__body h2{margin-bottom:1.1rem}
+  .pull{margin-top:1.6rem;font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2vw,1.5rem);color:var(--ink);border-left:3px solid var(--marigold);padding-left:1.1rem;line-height:1.35}
+
+  /* ---------- card grid (gap) ---------- */
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .card{
+    background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:14px;
+    padding:clamp(1.1rem,2.4vw,1.7rem);display:flex;flex-direction:column;gap:.7rem;
+  }
+  .dark .card,.darker .card{background:rgba(247,241,232,.06);border-color:var(--line-dark)}
+  .card .ic{width:34px;height:34px;color:var(--marigold)}
+  .dark .card .ic,.darker .card .ic{color:var(--sampaguita)}
+  .card h3{font-size:clamp(1rem,1.5vw,1.22rem);font-weight:700;letter-spacing:-.01em}
+  .card p{font-size:clamp(.86rem,1.15vw,.98rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .card p,.darker .card p{color:var(--cream-soft)}
+
+  /* ---------- cost list ---------- */
+  .costlist{display:flex;flex-direction:column;gap:clamp(.7rem,1.8vh,1.15rem);margin-top:clamp(1.2rem,3vh,2rem);max-width:44ch}
+  .costlist li{list-style:none;display:flex;gap:1rem;align-items:flex-start;font-size:clamp(1rem,1.55vw,1.28rem);line-height:1.4}
+  .costlist li span{color:var(--marigold);font-weight:800;flex:0 0 auto}
+  .dark .costlist li span,.darker .costlist li span{color:var(--sampaguita)}
+  .kicker-line{margin-top:clamp(1.6rem,3.4vh,2.4rem);font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.1vw,1.7rem);line-height:1.35;color:var(--cream)}
+
+  /* ---------- stance ---------- */
+  .stance{max-width:20ch}
+  .stance q{
+    font-family:var(--serif);font-weight:400;font-style:italic;quotes:none;
+    font-size:clamp(2.4rem,6.6vw,5rem);line-height:1.02;letter-spacing:-.02em;display:block;
+    color:var(--cream);
+  }
+  .stance q em{color:var(--sampaguita);font-style:italic}
+  .stance .lead{margin-top:clamp(1.8rem,4vh,2.8rem);max-width:46ch}
+
+  /* ---------- approach / phone ---------- */
+  .split{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:center}
+  .checks{display:flex;flex-direction:column;gap:1.05rem;margin-top:1.6rem}
+  .checks li{list-style:none;display:flex;gap:.85rem;align-items:flex-start;font-size:clamp(.98rem,1.4vw,1.16rem);line-height:1.4}
+  .checks .tick{flex:0 0 24px;width:24px;height:24px;border-radius:50%;background:var(--marigold);color:#fff;display:grid;place-items:center;font-size:.8rem;margin-top:.1rem}
+  .phone{
+    justify-self:center;width:min(260px,72vw);aspect-ratio:9/18.5;border-radius:30px;
+    background:linear-gradient(180deg,#0d5254,#0a4143);padding:14px 12px;
+    box-shadow:0 24px 60px -22px rgba(0,0,0,.55),inset 0 0 0 1px rgba(247,241,232,.12);
+    display:flex;flex-direction:column;gap:.55rem;overflow:hidden;
+  }
+  .phone .top{display:flex;align-items:center;gap:.5rem;padding:.1rem .3rem .5rem;border-bottom:1px solid var(--line-dark)}
+  .phone .dot{width:9px;height:9px;border-radius:50%;background:var(--sampaguita)}
+  .phone .top b{color:var(--cream);font-size:.82rem;letter-spacing:.01em}
+  .bub{max-width:82%;padding:.6rem .75rem;border-radius:14px;font-size:.78rem;line-height:1.35}
+  .bub.q{align-self:flex-end;background:var(--marigold);color:#fff;border-bottom-right-radius:4px}
+  .bub.a{align-self:flex-start;background:rgba(247,241,232,.12);color:var(--cream);border-bottom-left-radius:4px}
+  .bub small{display:block;opacity:.7;font-size:.62rem;margin-top:.3rem;letter-spacing:.02em}
+
+  /* ---------- loop (engine) ---------- */
+  .loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:.5rem;margin-top:clamp(1.3rem,3vh,2rem)}
+  .node{
+    flex:1 1 0;min-width:120px;background:rgba(255,255,255,.55);border:1px solid var(--line-light);
+    border-radius:12px;padding:1rem .85rem;display:flex;flex-direction:column;gap:.45rem;position:relative;
+  }
+  .node b{font-size:clamp(.9rem,1.2vw,1.02rem);letter-spacing:-.01em}
+  .node p{font-size:.8rem;line-height:1.35;color:var(--ink-soft)}
+  .node .step{font-size:.66rem;font-weight:700;letter-spacing:.18em;color:var(--marigold)}
+  .arrow{display:grid;place-items:center;color:var(--marigold);flex:0 0 22px;font-weight:800}
+  .loopback{margin-top:1rem;display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:var(--ink-soft)}
+  .loopback svg{color:var(--marigold)}
+
+  .ladder{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.5rem;align-items:center}
+  .rung{background:rgba(12,124,126,.1);border:1px solid rgba(12,124,126,.28);color:var(--teal);
+    padding:.45rem .8rem;border-radius:999px;font-size:.8rem;font-weight:600;white-space:nowrap}
+  .rung.top{background:var(--marigold);border-color:var(--marigold);color:#fff}
+  .ladder .sep{color:var(--ink-soft);font-weight:700}
+
+  /* ---------- three pillars ---------- */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .pillar{border-top:3px solid var(--marigold);padding-top:1.1rem;display:flex;flex-direction:column;gap:.6rem}
+  .dark .pillar,.darker .pillar{border-top-color:var(--sampaguita)}
+  .pillar .ic{width:32px;height:32px;color:var(--marigold)}
+  .dark .pillar .ic,.darker .pillar .ic{color:var(--sampaguita)}
+  .pillar h3{font-size:clamp(1.02rem,1.5vw,1.25rem);font-weight:700;letter-spacing:-.01em}
+  .pillar p{font-size:clamp(.85rem,1.15vw,.98rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .pillar p,.darker .pillar p{color:var(--cream-soft)}
+  .underline-note{margin-top:clamp(1.4rem,3vh,2.2rem);padding-top:1.1rem;border-top:1px solid var(--line-light);font-size:clamp(.95rem,1.35vw,1.15rem);line-height:1.45}
+  .dark .underline-note,.darker .underline-note{border-top-color:var(--line-dark);color:var(--cream)}
+
+  /* ---------- scale path & chips ---------- */
+  .path{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;margin-top:clamp(1.3rem,3vh,2rem);font-weight:800;letter-spacing:-.01em}
+  .path .p{font-size:clamp(1.1rem,2.4vw,1.9rem)}
+  .path .p small{display:block;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:.25rem}
+  .path .to{color:var(--marigold);font-size:clamp(1.2rem,2.4vw,1.8rem)}
+  .path .p.big{color:var(--marigold)}
+  .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.4rem);margin-top:clamp(1.6rem,3.4vh,2.6rem)}
+  .chip{background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:12px;padding:1rem 1.1rem}
+  .chip b{display:block;font-size:clamp(.95rem,1.3vw,1.1rem);margin-bottom:.4rem}
+  .chip p{font-size:.83rem;line-height:1.4;color:var(--ink-soft)}
+
+  /* ---------- the ask ---------- */
+  .ask{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.8rem,1.8vw,1.3rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .ask .item{border:1px solid var(--line-dark);border-radius:14px;padding:clamp(1.1rem,2.2vw,1.6rem);display:flex;flex-direction:column;gap:.7rem;background:rgba(247,241,232,.05)}
+  .ask .item .ic{width:32px;height:32px;color:var(--sampaguita)}
+  .ask .item h3{font-size:clamp(1rem,1.4vw,1.2rem);font-weight:700}
+  .ask .item p{font-size:clamp(.82rem,1.1vw,.95rem);line-height:1.42;color:var(--cream-soft)}
+
+  /* ---------- scope table ---------- */
+  .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.2rem,2.6vh,1.9rem)}
+  .phase{border-radius:14px;border:1px solid var(--line-light);overflow:hidden;background:rgba(255,255,255,.5)}
+  .phase .h{background:var(--teal-deep);color:var(--cream);padding:.7rem 1rem;font-weight:700;font-size:.95rem;display:flex;justify-content:space-between;align-items:baseline}
+  .phase .h span{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sampaguita)}
+  .phase.active-p .h{background:var(--marigold)}
+  .phase ul{list-style:none;padding:.9rem 1rem;display:flex;flex-direction:column;gap:.5rem}
+  .phase li{font-size:.85rem;line-height:1.35;color:var(--ink-soft);padding-left:1rem;position:relative}
+  .phase li::before{content:"";position:absolute;left:0;top:.5em;width:5px;height:5px;border-radius:50%;background:var(--marigold)}
+  .beneficiaries{margin-top:clamp(1.2rem,2.6vh,1.8rem);display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+  .beneficiaries .lbl{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-right:.4rem}
+  .btag{background:var(--canvas-2);border:1px solid var(--line-light);border-radius:999px;padding:.4rem .8rem;font-size:.82rem;font-weight:600}
+  .note{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--ink-soft)}
+
+  /* ---------- close ---------- */
+  .close h2{max-width:20ch;margin-bottom:1.5rem}
+  .close .lead{max-width:44ch}
+  .close .invite{margin-top:clamp(2rem,5vh,3.2rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);font-size:clamp(1.05rem,1.8vw,1.4rem);font-weight:700}
+  .close .invite .x{color:var(--marigold)}
+
+  /* ---------- nav chrome ---------- */
+  .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+    padding:.7rem clamp(1rem,3vw,2rem);pointer-events:none}
+  .dots{display:flex;gap:7px;pointer-events:auto;flex-wrap:wrap;max-width:70vw}
+  .dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(180,160,140,.5);cursor:pointer;padding:0;transition:.25s}
+  .dots button.on{background:var(--marigold);transform:scale(1.25)}
+  .dots button:focus-visible{outline:2px solid var(--marigold);outline-offset:2px}
+  .navbtns{display:flex;align-items:center;gap:.5rem;pointer-events:auto}
+  .navbtns button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(180,160,140,.5);background:rgba(255,255,255,.7);
+    color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:.2s;backdrop-filter:blur(6px)}
+  .navbtns button:hover{background:var(--marigold);color:#fff;border-color:var(--marigold)}
+  .navbtns button:disabled{opacity:.35;cursor:default}
+  .navbtns button:focus-visible{outline:2px solid var(--marigold);outline-offset:2px}
+  .counter{position:fixed;top:clamp(1rem,3vh,1.8rem);right:clamp(1rem,3vw,2.2rem);z-index:20;
+    font-size:.78rem;font-weight:700;letter-spacing:.12em;font-variant-numeric:tabular-nums;
+    color:rgba(120,105,92,.85);mix-blend-mode:difference}
+  .brandtab{position:fixed;top:clamp(1rem,3vh,1.8rem);left:clamp(1rem,3vw,2.2rem);z-index:20;
+    font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(150,135,120,.9);mix-blend-mode:difference}
+
+  @media (max-width:760px){
+    .stat{grid-template-columns:1fr}
+    .grid2,.grid3,.chips,.ask,.phases{grid-template-columns:1fr}
+    .split{grid-template-columns:1fr}
+    .phone{order:-1}
+    .loop .node{flex:1 1 100%}
+    .arrow{transform:rotate(90deg)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .slide{transition:opacity .01s}
+    .dots button,.navbtns button{transition:none}
+  }
+</style>
+
+<div class="brandtab">BHW&nbsp;Connect</div>
+<div class="counter"><span id="cur">01</span> / 13</div>
+
+<div class="deck" id="deck">
+
+  <!-- 1 · TITLE -->
+  <section class="slide darker active">
+    <div class="slide__inner">
+      <div class="title-kicker">A Partnership Proposal · 2026</div>
+      <h1>BHW&nbsp;Connect</h1>
+      <p class="title-sub">Strengthening the frontline of Filipino community health.</p>
+      <div class="lockup">
+        <strong>Department of Health</strong>
+        <span class="muted">Republic of the Philippines</span>
+        <span class="x">×</span>
+        <strong>KOICA</strong>
+        <span class="muted">Korea International Cooperation Agency</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · THE FRONTLINE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">01</span> The Frontline</div>
+      <div class="stat">
+        <div class="stat__num">~200,000<small>Barangay Health Workers</small></div>
+        <div class="stat__body">
+          <h2>The backbone of primary care.</h2>
+          <p class="lead">In every barangay, volunteer health workers are the first — and often the only — point of care. They weigh newborns, track pregnancies, chase immunizations, and notice outbreaks before anyone else.</p>
+          <p class="pull">They carry the system on paper and memory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · THE GAP -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">02</span> The Gap</div>
+      <h2>The frontline is working blind — and so are we.</h2>
+      <div class="grid2">
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5"/><path d="M8 13h6M8 17h4"/></svg>
+          <h3>Paper that disappears</h3>
+          <p>Records live in notebooks. Data is delayed, duplicated, or lost before it ever informs a decision.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <h3>No real-time picture</h3>
+          <p>By the time community health data reaches decision-makers, the moment to act on it has already passed.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.3l5-.7z"/></svg>
+          <h3>Workers left unsupported</h3>
+          <p>Two hundred thousand volunteers hold up primary care with little training, tooling, or recognition.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.4 6H14a3 3 0 0 1 3 3v6.6"/><path d="M13 3.5 16 6l-3 2.5"/></svg>
+          <h3>Systems that don't connect</h3>
+          <p>The barangay level and the national level can't see each other. Insight never travels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · THE COST -->
+  <section class="slide dark">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">03</span> The Cost</div>
+      <h2>A blind spot has a price.</h2>
+      <ul class="costlist">
+        <li><span>—</span> Outbreaks are noticed late, not early.</li>
+        <li><span>—</span> Maternal and child risks go unseen until they become emergencies.</li>
+        <li><span>—</span> Decisions are made on data that is weeks — or months — old.</li>
+        <li><span>—</span> The effort of 200,000 people never becomes national insight.</li>
+      </ul>
+      <p class="kicker-line">The gap isn't a lack of care. It's a lack of connection.</p>
+    </div>
+  </section>
+
+  <!-- 5 · STANCE -->
+  <section class="slide darker">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">04</span> Our Stance</div>
+      <div class="stance">
+        <q>Technology is <em>not</em> the end-all.</q>
+        <p class="lead">A better app doesn't fix a health system — people do. BHW&nbsp;Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · THE APPROACH -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">05</span> The Approach</div>
+      <div class="split">
+        <div>
+          <h2>A digital assistant that meets BHWs where they are.</h2>
+          <ul class="checks">
+            <li><span class="tick">✓</span> Ask in Filipino, English, or Taglish — typos and all.</li>
+            <li><span class="tick">✓</span> Answers drawn from a trusted, expert-authored knowledge base.</li>
+            <li><span class="tick">✓</span> Built for older phones, weak signal, and reading outdoors in the sun.</li>
+          </ul>
+        </div>
+        <div class="phone" aria-label="Chat Guide preview">
+          <div class="top"><span class="dot"></span><b>Chat Guide</b></div>
+          <div class="bub q">Ilang beses dapat magpa-checkup ang buntis?</div>
+          <div class="bub a">Ayon sa DOH, hindi bababa sa <b>4 na prenatal visits</b> ang inirerekomenda sa buong pagbubuntis.<small>Source · Maternal &amp; Child Health</small></div>
+          <div class="bub q">Kung high-risk po?</div>
+          <div class="bub a">Mas madalas na check-up ang kailangan — i-refer agad sa midwife o RHU.<small>Tap to open full guide →</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · THE ENGINE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">06</span> The Engine</div>
+      <h2>Every question makes the system smarter.</h2>
+      <div class="loop">
+        <div class="node"><span class="step">01</span><b>A BHW asks</b><p>A real health question, in their own words.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">02</span><b>The base answers</b><p>Matched to expert-authored guidance.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">03</span><b>Gaps are logged</b><p>Unanswered questions surface automatically.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">04</span><b>Experts fill them</b><p>New answers are written and published.</p></div>
+      </div>
+      <div class="loopback">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg>
+        <span>…and the whole frontline benefits from the next answer. The loop repeats.</span>
+      </div>
+      <div class="ladder">
+        <span class="rung">Barangay</span><span class="sep">›</span>
+        <span class="rung">RHU</span><span class="sep">›</span>
+        <span class="rung">City / Municipal</span><span class="sep">›</span>
+        <span class="rung">Provincial</span><span class="sep">›</span>
+        <span class="rung">Regional</span><span class="sep">›</span>
+        <span class="rung top">National · DOH</span>
+      </div>
+      <p class="lead" style="margin-top:1rem">Data rolls up the hierarchy — real-time visibility, finally flowing upward.</p>
+    </div>
+  </section>
+
+  <!-- 8 · THE HUMAN SYSTEM -->
+  <section class="slide dark">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">07</span> Beyond the App</div>
+      <h2>The real intervention is human.</h2>
+      <div class="grid3">
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 5 2.5 5 2.5s5-1 5-2.5v-5"/></svg>
+          <h3>Train &amp; certify</h3>
+          <p>Standardized e-learning and in-person skills certification, verifiable by QR.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M8 12l-1 8 5-3 5 3-1-8"/></svg>
+          <h3>Recognize</h3>
+          <p>A professional identity and a permanent record of competence for every BHW.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.1a4 4 0 0 1 0 7.8"/><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M18 14a5 5 0 0 1 4 4.9V21"/></svg>
+          <h3>Support</h3>
+          <p>Supervisors can finally see, coach, and back their teams with real data.</p>
+        </div>
+      </div>
+      <p class="underline-note">Devices + connectivity + capacity — <span class="mark">that</span> is the investment. The software only makes it possible.</p>
+    </div>
+  </section>
+
+  <!-- 9 · BUILT TO SCALE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">08</span> Designed to Last</div>
+      <h2>From one barangay to the whole nation.</h2>
+      <div class="path">
+        <div class="p">One RHU<small>Pilot</small></div>
+        <div class="to">→</div>
+        <div class="p">Province<small>Expand</small></div>
+        <div class="to">→</div>
+        <div class="p big">~200,000<small>Nationwide</small></div>
+      </div>
+      <div class="chips">
+        <div class="chip"><b>Data sovereignty</b><p>Patient data never leaves Philippine infrastructure. Portable to a government server if needed.</p></div>
+        <div class="chip"><b>Privacy by design</b><p>Data Privacy Act compliant from day one — guaranteed by architecture, not by policy.</p></div>
+        <div class="chip"><b>Lean by default</b><p>Runs on free and low-cost tiers. Every peso of support stretches further.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · KOICA MANDATE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">09</span> Why KOICA</div>
+      <h2>Your mandate, made concrete.</h2>
+      <div class="grid3">
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9 11h1.5l1-2 1.5 4 1-2H15"/></svg>
+          <h3>Universal Health Coverage</h3>
+          <p><b>SDG&nbsp;3.</b> Stronger primary care reaching every community — especially the underserved.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          <h3>Digital Government</h3>
+          <p>A model of public-service transformation, drawing on Korea's world-leading e-government experience.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>
+          <h3>Leave no one behind</h3>
+          <p>Last-mile, inclusive development that reaches rural and low-income families first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · THE ASK -->
+  <section class="slide darker">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">10</span> The Ask</div>
+      <h2>What we're asking KOICA to build with us.</h2>
+      <div class="ask">
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2 0 0 1 5 0c0 2.5-5 1.5-5 4a2.5 2 0 0 0 5 0"/></svg>
+          <h3>Funding</h3>
+          <p>Grant support to develop, pilot, and scale the platform nationwide.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <h3>Equipment</h3>
+          <p>Devices and connectivity that put the tool in every BHW's hands.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 5 2.5 5 2.5s5-1 5-2.5v-5"/></svg>
+          <h3>Capacity</h3>
+          <p>Training programs that build digital and health capability on the ground.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12l-4 4 4 4"/><path d="M16 12l4-4-4-4"/><path d="M14 4l-4 16"/></svg>
+          <h3>Partnership</h3>
+          <p>Korean technical expertise and knowledge transfer, side by side.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · SCOPE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">11</span> Scope of Coverage</div>
+      <h2>What the partnership covers.</h2>
+      <div class="phases">
+        <div class="phase active-p">
+          <div class="h">Pilot <span>Phase 1</span></div>
+          <ul>
+            <li>Chat Guide + Knowledge Base</li>
+            <li>One RHU / barangay cluster</li>
+            <li>Maternal &amp; Child Health</li>
+            <li>Baseline impact measured</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <div class="h">Expand <span>Phase 2</span></div>
+          <ul>
+            <li>E-learning &amp; certification</li>
+            <li>Roll-up dashboards</li>
+            <li>Immunization, nutrition, more</li>
+            <li>Provincial rollout</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <div class="h">National <span>Phase 3</span></div>
+          <ul>
+            <li>Surveys &amp; health-promotion tools</li>
+            <li>Profiling-system integration</li>
+            <li>Offline access</li>
+            <li>Nationwide — ~200,000 BHWs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="beneficiaries">
+        <span class="lbl">Who benefits</span>
+        <span class="btag">Barangay Health Workers</span>
+        <span class="btag">Mothers &amp; children</span>
+        <span class="btag">Communities</span>
+        <span class="btag">DOH decision-makers</span>
+      </div>
+      <p class="note">Indicative phasing — scope and timeline to be refined jointly with KOICA.</p>
+    </div>
+  </section>
+
+  <!-- 13 · CLOSE -->
+  <section class="slide darker close">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">12</span> The Goal</div>
+      <h2>A connected, capable frontline — and a real-time picture of the nation's health.</h2>
+      <p class="lead">Two hundred thousand health workers, seen and supported. Millions of families, better cared for. A public-health system that finally learns from its own frontline.</p>
+      <div class="invite">Let's build it together. &nbsp;Department of Health <span class="x">×</span> KOICA.</div>
+    </div>
+  </section>
+
+</div>
+
+<div class="chrome">
+  <div class="dots" id="dots" role="tablist" aria-label="Slides"></div>
+  <div class="navbtns">
+    <button id="prev" aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button id="next" aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+    var total = slides.length;
+    var cur = 0;
+    var curEl = document.getElementById('cur');
+    var prevBtn = document.getElementById('prev');
+    var nextBtn = document.getElementById('next');
+    var dotsWrap = document.getElementById('dots');
+
+    var dots = slides.map(function(_,i){
+      var b = document.createElement('button');
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label','Go to slide '+(i+1));
+      b.addEventListener('click',function(){go(i);});
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function pad(n){return n<10?'0'+n:''+n;}
+
+    function go(i){
+      i = Math.max(0, Math.min(total-1, i));
+      slides[cur].classList.remove('active');
+      dots[cur].classList.remove('on');
+      cur = i;
+      slides[cur].classList.add('active');
+      dots[cur].classList.add('on');
+      curEl.textContent = pad(cur+1);
+      prevBtn.disabled = cur===0;
+      nextBtn.disabled = cur===total-1;
+    }
+
+    prevBtn.addEventListener('click',function(){go(cur-1);});
+    nextBtn.addEventListener('click',function(){go(cur+1);});
+
+    document.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(cur+1);}
+      else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1);}
+      else if(e.key==='Home'){go(0);}
+      else if(e.key==='End'){go(total-1);}
+    });
+
+    // touch swipe
+    var x0=null;
+    document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null)return;
+      var dx=e.changedTouches[0].clientX-x0;
+      if(Math.abs(dx)>50){go(dx<0?cur+1:cur-1);}
+      x0=null;
+    },{passive:true});
+
+    go(0);
+  })();
+</script>
