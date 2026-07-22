@@ -223,6 +223,14 @@
   .close .invite{margin-top:clamp(2rem,5vh,3.2rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);font-size:clamp(1.05rem,1.8vw,1.4rem);font-weight:700}
   .close .invite .x{color:var(--marigold)}
 
+  /* ---------- cost slide radar visual ---------- */
+  .cost-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.2rem);align-items:center}
+  .cost-visual{display:flex;flex-direction:column;align-items:center;gap:1rem;justify-self:center}
+  .cost-visual svg{width:min(320px,36vw);height:auto;display:block}
+  .cost-visual figcaption{font-size:.76rem;letter-spacing:.01em;color:var(--cream-soft);text-align:center;max-width:26ch;line-height:1.4}
+  .radar-sweep{transform-box:view-box;transform-origin:120px 120px;animation:radarspin 9s linear infinite}
+  @keyframes radarspin{to{transform:rotate(360deg)}}
+
   /* ---------- nav chrome ---------- */
   .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
     padding:.7rem clamp(1rem,3vw,2rem);pointer-events:none}
@@ -248,6 +256,8 @@
       padding-top:4.2rem;padding-bottom:5rem}
     .stat{grid-template-columns:1fr;gap:1rem}
     .grid2,.grid3,.chips,.ask,.phases{grid-template-columns:1fr;gap:.75rem}
+    .cost-grid{grid-template-columns:1fr;gap:1.3rem}
+    .cost-visual svg{width:min(240px,58vw)}
     .split{grid-template-columns:1fr;gap:1.3rem}
     .phone{order:-1;width:min(210px,62vw)}
     .loop{gap:.5rem}
@@ -272,6 +282,9 @@
     .card,.chip,.ask .item{padding:.8rem .95rem}
     .card{gap:.5rem}
     .phone{width:auto;height:min(74vh,360px)}
+    .cost-grid{gap:1.4rem}
+    .cost-visual svg{width:min(200px,25vw)}
+    .cost-visual figcaption{font-size:.7rem}
     .checks{gap:.55rem;margin-top:.9rem}
     .loop{gap:.4rem;margin-top:1rem}
     .node{padding:.7rem}
@@ -288,6 +301,7 @@
   @media (prefers-reduced-motion:reduce){
     .slide{transition:opacity .01s}
     .dots button,.navbtns button{transition:none}
+    .radar-sweep{animation:none}
   }
 </style>
 
@@ -361,14 +375,65 @@
   <section class="slide dark">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">03</span> The Cost</div>
-      <h2>A blind spot has a price.</h2>
-      <ul class="costlist">
-        <li><span>—</span> Outbreaks are noticed late, not early.</li>
-        <li><span>—</span> Maternal and child risks go unseen until they become emergencies.</li>
-        <li><span>—</span> Decisions are made on data that is weeks — or months — old.</li>
-        <li><span>—</span> The effort of 200,000 people never becomes national insight.</li>
-      </ul>
-      <p class="kicker-line">The gap isn't a lack of care. It's a lack of connection.</p>
+      <div class="cost-grid">
+        <div class="cost-text">
+          <h2>A blind spot has a price.</h2>
+          <ul class="costlist">
+            <li><span>—</span> Outbreaks are noticed late, not early.</li>
+            <li><span>—</span> Maternal and child risks go unseen until they become emergencies.</li>
+            <li><span>—</span> Decisions are made on data that is weeks — or months — old.</li>
+            <li><span>—</span> The effort of 200,000 people never becomes national insight.</li>
+          </ul>
+          <p class="kicker-line">The gap isn't a lack of care. It's a lack of connection.</p>
+        </div>
+        <figure class="cost-visual" aria-label="A radar scope with a blind sector where community health signals go undetected">
+          <svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="rGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#0d5254" stop-opacity=".85"/>
+                <stop offset="100%" stop-color="#083335" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="rSweep" x1="120" y1="120" x2="120" y2="16" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FFC857" stop-opacity=".45"/>
+                <stop offset="100%" stop-color="#FFC857" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="112" fill="url(#rGlow)"/>
+            <g stroke="rgba(247,241,232,.16)" stroke-width="1">
+              <circle cx="120" cy="120" r="104"/>
+              <circle cx="120" cy="120" r="70"/>
+              <circle cx="120" cy="120" r="36"/>
+              <line x1="120" y1="16" x2="120" y2="224"/>
+              <line x1="16" y1="120" x2="224" y2="120"/>
+            </g>
+            <!-- the blind sector -->
+            <path d="M120,120 L199.7,53.1 A104,104 0 0,1 214.2,164 Z"
+                  fill="#E8641C" fill-opacity=".14" stroke="#E8641C" stroke-opacity=".5"
+                  stroke-width="1" stroke-dasharray="3 3"/>
+            <!-- signals the scope sees -->
+            <g fill="#FFC857">
+              <circle cx="72" cy="78" r="3.6"/>
+              <circle cx="66" cy="150" r="3.2"/>
+              <circle cx="120" cy="196" r="3.2"/>
+              <circle cx="150" cy="62" r="3.2"/>
+              <circle cx="92" cy="122" r="2.8"/>
+            </g>
+            <!-- signals lost in the blind sector -->
+            <g fill="none" stroke="#E8641C" stroke-width="1.6">
+              <circle cx="189" cy="108" r="4.2"/>
+              <circle cx="174" cy="130" r="3.6"/>
+              <circle cx="197" cy="84" r="3.6"/>
+            </g>
+            <!-- rotating sweep -->
+            <g class="radar-sweep">
+              <path d="M120,120 L92,20 A104,104 0 0,1 148,20 Z" fill="url(#rSweep)"/>
+              <line x1="120" y1="120" x2="120" y2="16" stroke="#FFC857" stroke-opacity=".7" stroke-width="1.4"/>
+            </g>
+            <circle cx="120" cy="120" r="3" fill="#FFC857"/>
+          </svg>
+          <figcaption>The signals the system can't see are exactly the ones that cost lives.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
