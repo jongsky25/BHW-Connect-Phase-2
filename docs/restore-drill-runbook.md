@@ -1,1 +1,106 @@
-IyBSZXN0b3JlIGRyaWxsIHJ1bmJvb2sKCkJhY2tzIGBkb2NzL2RlbGl2ZXJ5LXBsYW4ubWRgIMKnNS4zOiAqKlJQTyAyNCBoIC8gUlRPIDQgaCoqLCB3aXRoIGEgcmVzdG9yZQpkcmlsbCBleGVjdXRlZCBvbmNlIGJlZm9yZSBwaWxvdCBsYXVuY2ggYW5kIHF1YXJ0ZXJseSBhZnRlci4KCkJhY2t1cHMgYXJlIDMtMi0xOiBTdXBhYmFzZSdzIG93biBkYWlseSBzY2hlZHVsZWQgYmFja3VwcyAoZmlyc3QgY29weSwKMzAtZGF5IHJvbGxpbmcgcmV0ZW50aW9uKSBwbHVzIGEgd2Vla2x5IGBwZ19kdW1wYCB0byBHaXRIdWIgQWN0aW9ucwphcnRpZmFjdCBzdG9yYWdlIChzZWNvbmQgY29weSwgZGlmZmVyZW50IG1lZGl1bSDigJQgYC5naXRodWIvd29ya2Zsb3dzL2JhY2t1cC55bWxgLAo5MC1kYXkgcmV0ZW50aW9uKS4gVGhpcyBydW5ib29rIHJlc3RvcmVzIGZyb20gZWl0aGVyIGNvcHk7IHRoZSBzdGVwcyBiZWxvdwp1c2UgdGhlIGBwZ19kdW1wYCBjb3B5IHNpbmNlIGl0J3MgdGhlIG9uZSB0aGlzIHJlcG8gY29udHJvbHMgZW5kIHRvIGVuZC4KCiMjIFRhcmdldHMKCnwgTWV0cmljIHwgVGFyZ2V0IHwgV2hhdCBpdCBtZWFucyBoZXJlIHwKfC0tLXwtLS18LS0tfAp8IFJQTyB8IDI0IGggfCBXb3JzdCBjYXNlLCByZXN0b3JlIGxvc2VzIDwgMjQgaCBvZiBkYXRhIOKAlCBjb3ZlcmVkIGJ5IHRoZSBkYWlseSBTdXBhYmFzZSBiYWNrdXAgY2FkZW5jZS4gfAp8IFJUTyB8IDQgaCB8IEZyb20gIndlIG5lZWQgdG8gcmVzdG9yZSIgdG8gInRoZSBhcHAgaXMgc2VydmluZyBjb3JyZWN0bHkgZnJvbSB0aGUgcmVzdG9yZWQgZGF0YSIgaW4g4omkIDQgaC4gfAoKIyMgUHJlcmVxdWlzaXRlcwoKLSBgU1VQQUJBU0VfREJfVVJMYCAoYSBQb3N0Z3JlcyBjb25uZWN0aW9uIHN0cmluZyBmb3IgdGhlIHByb2plY3Q7CiAgYHBnX3Jlc3RvcmVgIG5lZWRzIGEgc3VwZXJ1c2VyLWVxdWl2YWxlbnQgcm9sZSkg4oCUIHNhbWUgc2VjcmV0IHRoZSBiYWNrdXAKICB3b3JrZmxvdyB1c2VzLiBUaGUgcHJvamVjdCdzIGRpcmVjdC1jb25uZWN0aW9uIGhvc3QgaXMgSVB2Ni1vbmx5OyBvbiBhbgogIElQdjQtb25seSBuZXR3b3JrIHVzZSB0aGUgZGFzaGJvYXJkJ3MgKipDb25uZWN0IOKGkiBTZXNzaW9uIHBvb2xlcioqIFVSSQogIGluc3RlYWQgKHNlc3Npb24tbW9kZSBwb29saW5nIHdvcmtzIGZpbmUgZm9yIGBwZ19kdW1wYC9gcGdfcmVzdG9yZWApLgogIEF2b2lkIHRoZSAqKlRyYW5zYWN0aW9uIHBvb2xlcioqIOKAlCBpdHMgc3RhdGVtZW50LWxldmVsIHBvb2xpbmcgYnJlYWtzCiAgYm90aCB0b29scy4KLSBgcHNxbGAgYW5kIGBwZ19yZXN0b3JlYCAoYm90aCBzaGlwIHdpdGggYHBvc3RncmVzcWwtY2xpZW50YDsgdGhlIGJhY2t1cAogIHdvcmtmbG93IGluc3RhbGxzIHRoZSBzYW1lIHBhY2thZ2UpLgotIEEgKipzY3JhdGNoIHRhcmdldCoqLCBuZXZlciB0aGUgbGl2ZSBwaWxvdCBwcm9qZWN0LCBmb3IgdGhlIGRyaWxsIGl0c2VsZjoKICBlaXRoZXIgYSBmcmVzaCBsb2NhbCBQb3N0Z3JlcyAoYGRvY2tlciBydW4gLWUgUE9TVEdSRVNfUEFTU1dPUkQ9ZHJpbGwgLXAgNTQzMzo1NDMyIHBvc3RncmVzOjE3YCkKICBvciBhIHRocm93YXdheSBTdXBhYmFzZSBicmFuY2ggY3JlYXRlZCB2aWEgdGhlIGRhc2hib2FyZCAvIGBjcmVhdGVfYnJhbmNoYAogIChicmFuY2hpbmcgcmVxdWlyZXMgdGhlIFBybyBwbGFuIG9yIGFib3ZlIOKAlCB0aGUgcGlsb3QgcHJvamVjdCBpcyBvbgogIEZyZWUsIHNvIHRoZSBsb2NhbCBQb3N0Z3JlcyByb3V0ZSBpcyB0aGUgb25seSBvcHRpb24gdW50aWwvdW5sZXNzIHRoZQogIHByb2plY3QgdXBncmFkZXMpLgogIFJlc3RvcmluZyBpbnRvIHRoZSBsaXZlIHByb2plY3QgaXMgdGhlIHJlYWwgZW1lcmdlbmN5IHByb2NlZHVyZSAoc2VlCiAgIkxpdmUgcmVzdG9yZSIgYmVsb3cpLCBub3Qgc29tZXRoaW5nIHRvIHJlaGVhcnNlIGFnYWluc3QgcHJvZHVjdGlvbi4KCiMjIERyaWxsIHByb2NlZHVyZSAocmVoZWFyc2FsIOKAlCBzY3JhdGNoIHRhcmdldCkKCjEuICoqR2V0IGEgYmFja3VwIGZpbGUuKiogRWl0aGVyIGRvd25sb2FkIHRoZSBsYXRlc3QgYXJ0aWZhY3QgZnJvbSB0aGUKICAgYFdlZWtseSBiYWNrdXBgIEdpdEh1YiBBY3Rpb25zIHJ1biwgb3IgdGFrZSBhIGZyZXNoIG9uZToKICAgYGBgYmFzaAogICBwZ19kdW1wICIkU1VQQUJBU0VfREJfVVJMIiAtLW5vLW93bmVyIC0tbm8tcHJpdmlsZWdlcyAtLWZvcm1hdD1jdXN0b20gXAogICAgIC0tZmlsZT1kcmlsbC5kdW1wCiAgIGBgYAoyLiAqKlN0YXJ0IHRoZSBjbG9jay4qKgozLiAqKlN0YW5kIHVwIHRoZSBzY3JhdGNoIHRhcmdldCoqIChzZWUgUHJlcmVxdWlzaXRlcykgYW5kIGdldCBpdHMKICAgY29ubmVjdGlvbiBzdHJpbmcsIGAkRFJJTExfVEFSR0VUX1VSTGAuCjQuICoqUmVzdG9yZToqKgogICBgYGBiYXNoCiAgIHBnX3Jlc3RvcmUgLS1uby1vd25lciAtLW5vLXByaXZpbGVnZXMgLS1jbGVhbiAtLWlmLWV4aXN0cyBcCiAgICAgLWQgIiREUklMTF9UQVJHRVRfVVJMIiBkcmlsbC5kdW1wCiAgIGBgYAo1LiAqKlZlcmlmeSBkYXRhIGludGVncml0eSoqIOKAlCBydW4gYSBoYW5kZnVsIG9mIHNhbml0eSBxdWVyaWVzIGFnYWluc3QgdGhlCiAgIHJlc3RvcmVkIGRhdGFiYXNlIGFuZCBjb25maXJtIHRoZSBjb3VudHMgbG9vayByaWdodCAoY29tcGFyZSB0bwogICBgbWNwX19TdXBhYmFzZV9fbGlzdF90YWJsZXNgIHJvdyBjb3VudHMgZnJvbSBhcm91bmQgdGhlIGJhY2t1cCB0aW1lLCBvcgogICBhIGBzZWxlY3QgY291bnQoKikgZnJvbSBwdWJsaWMuPHRhYmxlPmAgZm9yIHRoZSB0YWJsZXMgdGhhdCBtYXR0ZXIKICAgbW9zdDogYHVzZXJzYCwgYGtiX2VudHJpZXNgLCBgY2hhdF9zZXNzaW9uc2AsIGBhdWRpdF9ldmVudHNgKToKICAgYGBgc3FsCiAgIHNlbGVjdCBjb3VudCgqKSBmcm9tIHB1YmxpYy51c2VyczsKICAgc2VsZWN0IGNvdW50KCopIGZyb20gcHVibGljLmtiX2VudHJpZXMgd2hlcmUgc3RhdHVzID0gJ3B1Ymxpc2hlZCc7CiAgIHNlbGVjdCBtYXgoY3JlYXRlZF9hdCkgZnJvbSBwdWJsaWMuYXVkaXRfZXZlbnRzOwogICBgYGAKNi4gKipWZXJpZnkgdGhlIGFwcCBib290cyBhZ2FpbnN0IGl0Kiog4oCUIHBvaW50IGEgbG9jYWwgYC5lbnYubG9jYWxgIGF0IHRoZQogICBzY3JhdGNoIHRhcmdldCdzIFN1cGFiYXNlLWNvbXBhdGlibGUgVVJMIChpZiB1c2luZyBhIGJyYW5jaCkgYW5kIGNvbmZpcm0KICAgYG5wbSBydW4gZGV2YCBzZXJ2ZXMgYC9sb2dpbmAgYW5kIGFuIGFkbWluIGNhbiBzaWduIGluLiAoTm90IG1lYW5pbmdmdWwKICAgZm9yIGEgYmFyZSBQb3N0Z3JlcyBzY3JhdGNoIHRhcmdldCB3aXRoIG5vIGBhdXRoYCBzY2hlbWEg4oCUIHRoZSBicmFuY2gKICAgcm91dGUgaXMgdGhlIG9uZSB0aGF0IGFjdHVhbGx5IGV4ZXJjaXNlcyB0aGlzIHN0ZXAuKQo3LiAqKlN0b3AgdGhlIGNsb2NrLioqIFJlY29yZCBlbGFwc2VkIHRpbWUgYmVsb3cuCjguICoqVGVhciBkb3duIHRoZSBzY3JhdGNoIHRhcmdldC4qKgoKIyMgRHJpbGwgbG9nCgp8IERhdGUgfCBCYWNrdXAgc291cmNlIHwgRWxhcHNlZCB0aW1lIHwgV2l0aGluIDRoIFJUTz8gfCBOb3RlcyB8IFJ1biBieSB8Cnwtb3wtLS18LS0tfC0tLXwtLS18LS0tfAp8IDIwMjYtMDctMjIgfCBGcmVzaCBgcGdfZHVtcGAgKHNlc3Npb24gcG9vbGVyOyBkaXJlY3QgY29ubmVjdGlvbiBpcyBJUHY2LW9ubHkgYW5kIHVucmVhY2hhYmxlIGZyb20gYW4gSVB2NC1vbmx5IG5ldHdvcmspIHwgfjIwIG1pbiB8IFllcyB8IFJlc3RvcmVkIGludG8gYSBsb2NhbCBEb2NrZXIgYHBvc3RncmVzOjE3YCBzY3JhdGNoIHRhcmdldC4gVmVyaWZpY2F0aW9uIHF1ZXJpZXMgKGB1c2Vyc2AsIGBrYl9lbnRyaWVzYCwgYGF1ZGl0X2V2ZW50c2AgY291bnRzL21heCB0aW1lc3RhbXApIG1hdGNoZWQgZXhwZWN0ZWQgcHJvZHVjdGlvbiBkYXRhLiB8IGdiY2Fub3kwMzIxQGdtYWlsLmNvbSB8CgojIyBTdGF0dXMKClRoZSBtaWdyYXRpb24sIGZlYXR1cmUtZmxhZywgRFBBLWFjdGlvbiwgYW5kIGVycm9yLXRyYWNraW5nIHBpZWNlcyBvZgpJTkMtOSB3ZXJlIGJ1aWx0IGFuZCB2ZXJpZmllZCB0aGlzIHNlc3Npb24gKHVuaXQgdGVzdHMsIGB0c2NgLCBgbGludGAsCmBuZXh0IGJ1aWxkYCBhbGwgZ3JlZW47IHRoZSBzY2hlbWEgbWlncmF0aW9uIGl0c2VsZiB3YXMgYXBwbGllZCB0byBhbmQKdmVyaWZpZWQgYWdhaW5zdCB0aGUgbGl2ZSBwaWxvdCBTdXBhYmFzZSBwcm9qZWN0KS4gVGhlIGRyaWxsIHByb2NlZHVyZQphYm92ZSBoYXMgbm93IGJlZW4gZXhlY3V0ZWQgb25jZSBmb3IgcmVhbCAoc2VlIERyaWxsIGxvZykg4oCUIHdpdGhpbiB0aGUgNGgKUlRPIHRhcmdldC4gUmUtcnVuIHF1YXJ0ZXJseSB0aGVyZWFmdGVyIHBlciB0aGUgwqc1LjMgcmVxdWlyZW1lbnQsIGFuZAphcHBlbmQgYSBuZXcgcm93IGVhY2ggdGltZSByYXRoZXIgdGhhbiBvdmVyd3JpdGluZyB0aGlzIG9uZS4KCiMjIExpdmUgcmVzdG9yZSAocmVhbCBpbmNpZGVudCwgbm90IGEgZHJpbGwpCgpPbmx5IGZvbGxvdyB0aGlzIGFnYWluc3QgdGhlIGxpdmUgcGlsb3QgcHJvamVjdCBkdXJpbmcgYW4gYWN0dWFsIGRhdGEtbG9zcwppbmNpZGVudCwgd2l0aCBhIHNlY29uZCBhZG1pbidzIHNpZ24tb2ZmOgoKMS4gUHJlZmVyIFN1cGFiYXNlJ3Mgb3duIHBvaW50LWluLXRpbWUgcmVjb3ZlcnkgKGRhc2hib2FyZCDihpIgRGF0YWJhc2Ug4oaSCiAgIEJhY2t1cHMg4oaSIFJlc3RvcmUpIG92ZXIgYHBnX3Jlc3RvcmVgIHdoZW4gdGhlIGxvc3MgaXMgcmVjZW50IGVub3VnaCB0bwogICBiZSB3aXRoaW4gdGhlIGRhaWx5LWJhY2t1cCB3aW5kb3cg4oCUIGl0J3MgdGhlIGxvd2VyLXJpc2sgcGF0aCBzaW5jZSBpdCdzCiAgIFN1cGFiYXNlLW1hbmFnZWQgYW5kIGRvZXNuJ3QgcmVxdWlyZSB0YWtpbmcgdGhlIGRhdGFiYXNlIG9mZmxpbmUgZm9yIGEKICAgbWFudWFsIHJlc3RvcmUuCjIuIEZhbGwgYmFjayB0byB0aGUgd2Vla2x5IGBwZ19kdW1wYCBhcnRpZmFjdCBvbmx5IGlmIFN1cGFiYXNlJ3Mgb3duCiAgIGJhY2t1cHMgYXJlIHVuYXZhaWxhYmxlIG9yIGRvbid0IGNvdmVyIHRoZSBuZWVkZWQgcG9pbnQgaW4gdGltZS4gU2FtZQogICByZXN0b3JlIGNvbW1hbmQgYXMgdGhlIGRyaWxsIChzdGVwIDQgYWJvdmUpLCB0YXJnZXRlZCBhdCB0aGUgbGl2ZQogICBwcm9qZWN0J3MgYCRTVVBBQkFTRV9EQl9VUkxgIGluc3RlYWQgb2YgYSBzY3JhdGNoIHRhcmdldC4KMy4gQWZ0ZXIgYW55IGxpdmUgcmVzdG9yZTogcmUtcnVuIHRoZSBEUEEvYXVkaXQgc2FuaXR5IHF1ZXJpZXMgZnJvbSBzdGVwIDUsCiAgIHNtb2tlLXRlc3QgbG9naW4gKyBDaGF0IEd1aWRlICsgYWRtaW4gY29uc29sZSwgYW5kIHBvc3QgYW4KICAgYGF1ZGl0X2V2ZW50c2AtYWRqYWNlbnQgaW5jaWRlbnQgbm90ZSAob3V0c2lkZSB0aGUgYXBwLCBlLmcuIHRoaXMgcmVwbydzCiAgIGlzc3VlIHRyYWNrZXIpIGRvY3VtZW50aW5nIHdoYXQgd2FzIGxvc3QgYW5kIHdoeS4K
+# Restore drill runbook
+
+Backs `docs/delivery-plan.md` §5.3: **RPO 24 h / RTO 4 h**, with a restore
+drill executed once before pilot launch and quarterly after.
+
+Backups are 3-2-1: Supabase's own daily scheduled backups (first copy,
+30-day rolling retention) plus a weekly `pg_dump` to GitHub Actions
+artifact storage (second copy, different medium — `.github/workflows/backup.yml`,
+90-day retention). This runbook restores from either copy; the steps below
+use the `pg_dump` copy since it's the one this repo controls end to end.
+
+## Targets
+
+| Metric | Target | What it means here |
+|---|---|---|
+| RPO | 24 h | Worst case, restore loses < 24 h of data — covered by the daily Supabase backup cadence. |
+| RTO | 4 h | From "we need to restore" to "the app is serving correctly from the restored data" in ≤ 4 h. |
+
+## Prerequisites
+
+- `SUPABASE_DB_URL` (a Postgres connection string for the project;
+  `pg_restore` needs a superuser-equivalent role) — same secret the backup
+  workflow uses. The project's direct-connection host is IPv6-only; on an
+  IPv4-only network use the dashboard's **Connect → Session pooler** URI
+  instead (session-mode pooling works fine for `pg_dump`/`pg_restore`).
+  Avoid the **Transaction pooler** — its statement-level pooling breaks
+  both tools.
+- `psql` and `pg_restore` (both ship with `postgresql-client`; the backup
+  workflow installs the same package).
+- A **scratch target**, never the live pilot project, for the drill itself:
+  either a fresh local Postgres (`docker run -e POSTGRES_PASSWORD=drill -p 5433:5432 postgres:17`)
+  or a throwaway Supabase branch created via the dashboard / `create_branch`
+  (branching requires the Pro plan or above — the pilot project is on
+  Free, so the local Postgres route is the only option until/unless the
+  project upgrades).
+  Restoring into the live project is the real emergency procedure (see
+  "Live restore" below), not something to rehearse against production.
+
+## Drill procedure (rehearsal — scratch target)
+
+1. **Get a backup file.** Either download the latest artifact from the
+   `Weekly backup` GitHub Actions run, or take a fresh one:
+   ```bash
+   pg_dump "$SUPABASE_DB_URL" --no-owner --no-privileges --format=custom \
+     --file=drill.dump
+   ```
+2. **Start the clock.**
+3. **Stand up the scratch target** (see Prerequisites) and get its
+   connection string, `$DRILL_TARGET_URL`.
+4. **Restore:**
+   ```bash
+   pg_restore --no-owner --no-privileges --clean --if-exists \
+     -d "$DRILL_TARGET_URL" drill.dump
+   ```
+5. **Verify data integrity** — run a handful of sanity queries against the
+   restored database and confirm the counts look right (compare to
+   `mcp__Supabase__list_tables` row counts from around the backup time, or
+   a `select count(*) from public.<table>` for the tables that matter
+   most: `users`, `kb_entries`, `chat_sessions`, `audit_events`):
+   ```sql
+   select count(*) from public.users;
+   select count(*) from public.kb_entries where status = 'published';
+   select max(created_at) from public.audit_events;
+   ```
+6. **Verify the app boots against it** — point a local `.env.local` at the
+   scratch target's Supabase-compatible URL (if using a branch) and confirm
+   `npm run dev` serves `/login` and an admin can sign in. (Not meaningful
+   for a bare Postgres scratch target with no `auth` schema — the branch
+   route is the one that actually exercises this step.)
+7. **Stop the clock.** Record elapsed time below.
+8. **Tear down the scratch target.**
+
+## Drill log
+
+| Date | Backup source | Elapsed time | Within 4h RTO? | Notes | Run by |
+|---|---|---|---|---|---|
+| 2026-07-22 | Fresh `pg_dump` (session pooler; direct connection is IPv6-only and unreachable from an IPv4-only network) | ~20 min | Yes | Restored into a local Docker `postgres:17` scratch target. Verification queries (`users`, `kb_entries`, `audit_events` counts/max timestamp) matched expected production data. | gbcanoy0321@gmail.com |
+
+## Status
+
+The migration, feature-flag, DPA-action, and error-tracking pieces of
+INC-9 were built and verified this session (unit tests, `tsc`, `lint`,
+`next build` all green; the schema migration itself was applied to and
+verified against the live pilot Supabase project). The drill procedure
+above has now been executed once for real (see Drill log) — within the 4h
+RTO target. Re-run quarterly thereafter per the §5.3 requirement, and
+append a new row each time rather than overwriting this one.
+
+## Live restore (real incident, not a drill)
+
+Only follow this against the live pilot project during an actual data-loss
+incident, with a second admin's sign-off:
+
+1. Prefer Supabase's own point-in-time recovery (dashboard → Database →
+   Backups → Restore) over `pg_restore` when the loss is recent enough to
+   be within the daily-backup window — it's the lower-risk path since it's
+   Supabase-managed and doesn't require taking the database offline for a
+   manual restore.
+2. Fall back to the weekly `pg_dump` artifact only if Supabase's own
+   backups are unavailable or don't cover the needed point in time. Same
+   restore command as the drill (step 4 above), targeted at the live
+   project's `$SUPABASE_DB_URL` instead of a scratch target.
+3. After any live restore: re-run the DPA/audit sanity queries from step 5,
+   smoke-test login + Chat Guide + admin console, and post an
+   `audit_events`-adjacent incident note (outside the app, e.g. this repo's
+   issue tracker) documenting what was lost and why.
