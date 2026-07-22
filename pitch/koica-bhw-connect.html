@@ -242,13 +242,48 @@
   .brandtab{position:fixed;top:clamp(1rem,3vh,1.8rem);left:clamp(1rem,3vw,2.2rem);z-index:20;
     font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(150,135,120,.9);mix-blend-mode:difference}
 
+  /* content taller than the viewport scrolls inside the slide instead of clipping */
   @media (max-width:760px){
-    .stat{grid-template-columns:1fr}
-    .grid2,.grid3,.chips,.ask,.phases{grid-template-columns:1fr}
-    .split{grid-template-columns:1fr}
-    .phone{order:-1}
+    .slide{justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch;
+      padding-top:4.2rem;padding-bottom:5rem}
+    .stat{grid-template-columns:1fr;gap:1rem}
+    .grid2,.grid3,.chips,.ask,.phases{grid-template-columns:1fr;gap:.75rem}
+    .split{grid-template-columns:1fr;gap:1.3rem}
+    .phone{order:-1;width:min(210px,62vw)}
+    .loop{gap:.5rem}
     .loop .node{flex:1 1 100%}
     .arrow{transform:rotate(90deg)}
+    .ladder{gap:.35rem}
+    .rung{font-size:.72rem;padding:.4rem .7rem}
+    .path{gap:.5rem}
+    .beneficiaries{gap:.4rem}
+  }
+  /* landscape phones: little height — shrink vertically and allow scroll */
+  @media (max-height:600px) and (orientation:landscape){
+    .slide{justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch;
+      padding-top:2.8rem;padding-bottom:4rem}
+    .eyebrow{margin-bottom:.8rem}
+    h1{font-size:clamp(2.2rem,7vw,3.4rem)}
+    h2{font-size:clamp(1.35rem,3.6vw,2.1rem)}
+    .lead{font-size:clamp(.9rem,1.5vw,1.05rem)}
+    .stat__num{font-size:clamp(3.2rem,11vw,6rem)}
+    .stance q{font-size:clamp(1.8rem,5vw,3.1rem)}
+    .grid2,.grid3,.chips,.ask,.phases{gap:.7rem}
+    .card,.chip,.ask .item{padding:.8rem .95rem}
+    .card{gap:.5rem}
+    .phone{width:auto;height:min(74vh,360px)}
+    .checks{gap:.55rem;margin-top:.9rem}
+    .loop{gap:.4rem;margin-top:1rem}
+    .node{padding:.7rem}
+    .ladder{margin-top:.9rem}
+    .costlist{gap:.6rem;margin-top:1rem}
+    .path{margin-top:1rem}
+    .chips{margin-top:1.2rem}
+  }
+  /* very short landscape (e.g. small phones) — tighten the phone mock further */
+  @media (max-height:430px) and (orientation:landscape){
+    .phone{height:min(80vh,300px)}
+    .bub{font-size:.72rem;padding:.5rem .6rem}
   }
   @media (prefers-reduced-motion:reduce){
     .slide{transition:opacity .01s}
