@@ -153,6 +153,21 @@
   .bub.q{align-self:flex-end;background:var(--marigold);color:#fff;border-bottom-right-radius:4px}
   .bub.a{align-self:flex-start;background:rgba(247,241,232,.12);color:var(--cream);border-bottom-left-radius:4px}
   .bub small{display:block;opacity:.7;font-size:.62rem;margin-top:.3rem;letter-spacing:.02em}
+  .chat{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:flex-end;gap:.5rem;overflow:hidden}
+  .bub.in{animation:bubIn .34s ease both}
+  @keyframes bubIn{from{opacity:0;transform:translateY(7px) scale(.985)}to{opacity:1;transform:none}}
+  .typing{align-self:flex-start;display:flex;gap:4px;padding:.6rem .72rem;border-radius:14px;border-bottom-left-radius:4px;background:rgba(247,241,232,.12)}
+  .typing i{width:5px;height:5px;border-radius:50%;background:var(--cream-soft);display:inline-block;animation:typedot 1.2s infinite ease-in-out}
+  .typing i:nth-child(2){animation-delay:.18s}
+  .typing i:nth-child(3){animation-delay:.36s}
+  @keyframes typedot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
+  .inputbar{display:none;align-items:center;gap:.45rem;background:rgba(247,241,232,.1);border:1px solid var(--line-dark);border-radius:999px;padding:.4rem .5rem .4rem .75rem;min-height:32px}
+  .inputbar.show{display:flex}
+  .inputbar .itext{font-size:.73rem;color:var(--cream);line-height:1.25;word-break:break-word}
+  .inputbar .caret{width:1.5px;height:.9rem;background:var(--sampaguita);display:inline-block;flex:0 0 auto;margin-left:1px;animation:caretblink 1s step-end infinite}
+  @keyframes caretblink{50%{opacity:0}}
+  .inputbar .send{margin-left:auto;width:22px;height:22px;border-radius:50%;background:var(--marigold);display:grid;place-items:center;flex:0 0 auto;color:#fff}
+  .inputbar .send svg{width:12px;height:12px}
 
   /* ---------- loop (engine) ---------- */
   .loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:.5rem;margin-top:clamp(1.3rem,3vh,2rem)}
@@ -320,6 +335,7 @@
     .dots button,.navbtns button{transition:none}
     .radar-sweep{animation:none}
     .human-pulse{animation:none}
+    .typing i,.inputbar .caret,.bub.in{animation:none}
   }
 </style>
 
@@ -509,7 +525,7 @@
   </section>
 
   <!-- 6 · THE APPROACH -->
-  <section class="slide light">
+  <section class="slide light" id="s-approach">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">05</span> The Approach</div>
       <div class="split">
@@ -523,10 +539,16 @@
         </div>
         <div class="phone" aria-label="Chat Guide preview">
           <div class="top"><span class="dot"></span><b>Chat Guide</b></div>
-          <div class="bub q">Ilang beses dapat magpa-checkup ang buntis?</div>
-          <div class="bub a">Ayon sa DOH, hindi bababa sa <b>4 na prenatal visits</b> ang inirerekomenda sa buong pagbubuntis.<small>Source · Maternal &amp; Child Health</small></div>
-          <div class="bub q">Kung high-risk po?</div>
-          <div class="bub a">Mas madalas na check-up ang kailangan — i-refer agad sa midwife o RHU.<small>Tap to open full guide →</small></div>
+          <div class="chat" id="chatBody" role="log">
+            <div class="bub q">Ilang beses dapat magpa-checkup ang buntis?</div>
+            <div class="bub a">Ayon sa DOH, hindi bababa sa <b>4 na prenatal visits</b> ang inirerekomenda sa buong pagbubuntis.<small>Source · Maternal &amp; Child Health</small></div>
+            <div class="bub q">Kung high-risk po?</div>
+            <div class="bub a">Mas madalas na check-up ang kailangan — i-refer agad sa midwife o RHU.<small>Tap to open full guide →</small></div>
+          </div>
+          <div class="inputbar" id="chatInput" aria-hidden="true">
+            <span class="itext" id="chatText"></span><span class="caret"></span>
+            <span class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
         </div>
       </div>
     </div>
@@ -749,6 +771,70 @@
 
     function pad(n){return n<10?'0'+n:''+n;}
 
+    /* ---- Chat Guide typing animation (slide 6) ---- */
+    var chat = (function(){
+      var body = document.getElementById('chatBody');
+      var bar = document.getElementById('chatInput');
+      var textEl = document.getElementById('chatText');
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      if(!body || !bar || !textEl || reduce) return {start:function(){},stop:function(){}};
+
+      var seq = [
+        {t:'q', text:'Ilang beses dapat magpa-checkup ang buntis?'},
+        {t:'a', html:'Ayon sa DOH, hindi bababa sa <b>4 na prenatal visits</b> ang inirerekomenda sa buong pagbubuntis.<small>Source · Maternal &amp; Child Health</small>'},
+        {t:'q', text:'Kung high-risk po?'},
+        {t:'a', html:'Mas madalas na check-up ang kailangan — i-refer agad sa midwife o RHU.<small>Tap to open full guide →</small>'}
+      ];
+      var gen = 0, timer = null;
+      function wait(ms){return new Promise(function(res){timer=setTimeout(res,ms);});}
+      function alive(g){return g===gen;}
+      function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+      function bubble(cls,html){var d=document.createElement('div');d.className='bub '+cls+' in';d.innerHTML=html;body.appendChild(d);body.scrollTop=body.scrollHeight;return d;}
+      function typing(){var d=document.createElement('div');d.className='typing';d.innerHTML='<i></i><i></i><i></i>';body.appendChild(d);body.scrollTop=body.scrollHeight;return d;}
+
+      function typeInto(str,g){
+        return new Promise(function(res){
+          var i=0; textEl.textContent='';
+          (function step(){
+            if(!alive(g)) return res();
+            if(i>=str.length) return res();
+            textEl.textContent += str.charAt(i++);
+            timer=setTimeout(step, str.charAt(i-1)===' ' ? 55 : 34);
+          })();
+        });
+      }
+
+      async function run(g){
+        body.innerHTML=''; bar.classList.remove('show'); textEl.textContent='';
+        while(alive(g)){
+          for(var i=0;i<seq.length && alive(g);i++){
+            var s=seq[i];
+            if(s.t==='q'){
+              bar.classList.add('show');
+              await typeInto(s.text,g); if(!alive(g))return;
+              await wait(420); if(!alive(g))return;
+              bar.classList.remove('show'); textEl.textContent='';
+              bubble('q', esc(s.text));
+              await wait(520);
+            } else {
+              var tp=typing();
+              await wait(1050);
+              tp.remove(); if(!alive(g))return;
+              bubble('a', s.html);
+              await wait(1500);
+            }
+          }
+          if(!alive(g))return;
+          await wait(2200); if(!alive(g))return;
+          body.innerHTML=''; await wait(500);
+        }
+      }
+      function start(){ gen++; var g=gen; run(g); }
+      function stop(){ gen++; if(timer){clearTimeout(timer);timer=null;} }
+      return {start:start, stop:stop};
+    })();
+    var APPROACH = slides.indexOf(document.getElementById('s-approach'));
+
     function go(i){
       i = Math.max(0, Math.min(total-1, i));
       slides[cur].classList.remove('active');
@@ -759,6 +845,7 @@
       curEl.textContent = pad(cur+1);
       prevBtn.disabled = cur===0;
       nextBtn.disabled = cur===total-1;
+      if(cur===APPROACH) chat.start(); else chat.stop();
     }
 
     prevBtn.addEventListener('click',function(){go(cur-1);});
