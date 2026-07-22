@@ -6,9 +6,12 @@ leverage plan — start there before touching code.
 
 ## Status
 
-**INC-0 — Scaffold & foundations** (see `docs/delivery-plan.md` §7). Next.js +
-TypeScript app, design tokens, i18n skeleton, base layout shell, Supabase
-client wiring, and CI. No feature UI yet.
+**INC-9 — Ops hardening & pilot readiness** (see `docs/delivery-plan.md` §7).
+INC-0 through INC-8 shipped auth, the admin console, KB authoring, the Chat
+Guide (engine + UI), the dashboard, settings/onboarding, and reports export.
+INC-9 adds feature flags, error tracking, backups/restore, DPA data-subject
+actions, and the retention/breach/deploy runbooks below. Next up: the pilot
+launch gate (§7).
 
 ## Getting started
 
@@ -44,3 +47,11 @@ file should contain a hex value. Tailwind consumes it via `@theme` in
 UI strings live in `messages/fil.json` and `messages/en.json` (Filipino is the
 default locale). The language toggle in the header sets a `BHW_LOCALE` cookie
 read by `src/i18n/request.ts`.
+
+## Ops & compliance
+
+- `docs/deploy-runbook.md` — deploy flow, env var/secrets checklist, rollback.
+- `docs/restore-drill-runbook.md` — backup/restore procedure and RPO 24h/RTO 4h drill log.
+- `docs/breach-playbook.md` — DPA breach response, NPC 72h notification timeline.
+- `/admin/flags` — feature flags, flippable without a deploy.
+- `.github/workflows/backup.yml` / `retention-purge.yml` — scheduled backup and data-retention jobs.
