@@ -4,6 +4,11 @@
     "tagline": "Your companion for barangay health work.",
     "languageToggleLabel": "Language"
   },
+  "errorBoundary": {
+    "heading": "Something went wrong",
+    "body": "The page ran into a problem. It's been reported — please try again.",
+    "retryAction": "Try again"
+  },
   "home": {
     "heading": "Welcome to BHW Connect",
     "body": "This is the foundation shell for Phase 1. Features roll out one increment at a time.",
@@ -127,6 +132,7 @@
       "kbEntries": "Q&A entries",
       "kbArticles": "Articles",
       "kbSynonyms": "Synonyms",
+      "flags": "Feature flags",
       "settings": "Settings"
     },
     "dashboard": {
@@ -244,6 +250,10 @@
       "reactivateAction": "Reactivate",
       "transferAction": "Transfer",
       "transferSubmit": "Confirm transfer",
+      "exportDataAction": "Export data",
+      "anonymizeAction": "Anonymize",
+      "anonymizeWarning": "This permanently deactivates the account and scrubs their name, contact number, email, and address. This can't be undone.",
+      "anonymizeConfirmAction": "Yes, anonymize",
       "empty": "No users yet.",
       "lastAdminError": "You can't deactivate or transfer the last active admin for this scope.",
       "notAuthorizedError": "You're not authorized to do that.",
@@ -255,6 +265,17 @@
     "audit": {
       "heading": "Audit log",
       "empty": "No audit events yet."
+    },
+    "flags": {
+      "heading": "Feature flags",
+      "intro": "Turn a feature on or off for everyone, instantly — no deploy needed.",
+      "empty": "No feature flags yet.",
+      "enabledLabel": "On",
+      "disabledLabel": "Off",
+      "toggleLabel": "Toggle {key}",
+      "notAuthorizedError": "You're not authorized to do that.",
+      "flagNotFoundError": "That flag wasn't found.",
+      "genericError": "Something went wrong. Please try again."
     },
     "kbCategories": {
       "heading": "KB categories",

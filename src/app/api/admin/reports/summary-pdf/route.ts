@@ -4,6 +4,7 @@ import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
 import type { DashboardActivitySummary } from "@/lib/dashboard/types";
 import type { KpiSummary } from "@/lib/reports/types";
+import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
 
@@ -20,6 +21,11 @@ export async function GET(request: NextRequest) {
   const appUser = await getAppUser(supabase, user.id);
   if (!appUser || appUser.role !== "admin") {
     return NextResponse.json({ error: "not authorized" }, { status: 403 });
+  }
+
+  const flags = await getFeatureFlags(supabase);
+  if (!flags.reports_export) {
+    return NextResponse.json({ error: "feature disabled" }, { status: 404 });
   }
 
   const searchParams = request.nextUrl.searchParams;

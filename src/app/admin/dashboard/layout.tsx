@@ -1,8 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { DashboardRangePicker } from "@/components/admin/dashboard-range-picker";
+import { getFeatureFlags } from "@/lib/flags/get-flags";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
+  const supabase = await createClient();
+  const flags = await getFeatureFlags(supabase);
   const t = await getTranslations("admin.dashboard");
 
   return (
@@ -15,9 +19,11 @@ export default async function DashboardLayout({ children }: { children: React.Re
           <Link href="/admin/dashboard/chat-guide" className="text-secondary hover:underline">
             {t("tabChatGuide")}
           </Link>
-          <Link href="/admin/dashboard/reports" className="text-secondary hover:underline">
-            {t("tabReports")}
-          </Link>
+          {flags.reports_export ? (
+            <Link href="/admin/dashboard/reports" className="text-secondary hover:underline">
+              {t("tabReports")}
+            </Link>
+          ) : null}
         </nav>
         <DashboardRangePicker />
       </div>

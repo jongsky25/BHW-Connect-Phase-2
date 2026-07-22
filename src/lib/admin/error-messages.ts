@@ -4,6 +4,7 @@ export type AdminErrorKey =
   | "outOfScopeError"
   | "usernameRequiredError"
   | "userNotFoundError"
+  | "flagNotFoundError"
   | "genericError";
 
 // rpc_admin_* functions raise plain Postgres exceptions (delivery-plan.md
@@ -17,5 +18,6 @@ export function mapAdminRpcError(message: string | undefined): AdminErrorKey {
   if (message.includes("out of scope")) return "outOfScopeError";
   if (message.includes("username is required")) return "usernameRequiredError";
   if (message.includes("user not found")) return "userNotFoundError";
+  if (message.includes("flag not found")) return "flagNotFoundError";
   return "genericError";
 }
