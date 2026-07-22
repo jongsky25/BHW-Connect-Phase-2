@@ -231,6 +231,17 @@
   .radar-sweep{transform-box:view-box;transform-origin:120px 120px;animation:radarspin 9s linear infinite}
   @keyframes radarspin{to{transform:rotate(360deg)}}
 
+  /* ---------- stance slide human-centered visual ---------- */
+  .stance-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
+  .stance-grid .stance{max-width:none}
+  .stance-grid .stance q{font-size:clamp(2.1rem,5vw,3.9rem)}
+  .stance-visual{display:flex;flex-direction:column;align-items:center;gap:1rem;justify-self:center}
+  .stance-visual svg{width:min(268px,30vw);height:auto;display:block}
+  .stance-visual figcaption{font-size:.76rem;letter-spacing:.01em;color:var(--cream-soft);text-align:center;max-width:24ch;line-height:1.4}
+  .fig-label{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.16em;fill:var(--cream-soft)}
+  .human-pulse{transform-box:view-box;transform-origin:150px 96px;animation:humanpulse 3.6s ease-in-out infinite}
+  @keyframes humanpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+
   /* ---------- nav chrome ---------- */
   .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
     padding:.7rem clamp(1rem,3vw,2rem);pointer-events:none}
@@ -258,6 +269,9 @@
     .grid2,.grid3,.chips,.ask,.phases{grid-template-columns:1fr;gap:.75rem}
     .cost-grid{grid-template-columns:1fr;gap:1.3rem}
     .cost-visual svg{width:min(240px,58vw)}
+    .stance-grid{grid-template-columns:1fr;gap:1.4rem}
+    .stance-grid .stance q{font-size:clamp(2.1rem,8vw,3.4rem)}
+    .stance-visual svg{width:min(210px,54vw)}
     .split{grid-template-columns:1fr;gap:1.3rem}
     .phone{order:-1;width:min(210px,62vw)}
     .loop{gap:.5rem}
@@ -285,6 +299,9 @@
     .cost-grid{gap:1.4rem}
     .cost-visual svg{width:min(200px,25vw)}
     .cost-visual figcaption{font-size:.7rem}
+    .stance-grid{gap:1.6rem}
+    .stance-visual svg{width:min(200px,24vw)}
+    .stance-visual figcaption{font-size:.7rem}
     .checks{gap:.55rem;margin-top:.9rem}
     .loop{gap:.4rem;margin-top:1rem}
     .node{padding:.7rem}
@@ -302,6 +319,7 @@
     .slide{transition:opacity .01s}
     .dots button,.navbtns button{transition:none}
     .radar-sweep{animation:none}
+    .human-pulse{animation:none}
   }
 </style>
 
@@ -441,9 +459,51 @@
   <section class="slide darker">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">04</span> Our Stance</div>
-      <div class="stance">
-        <q>Technology is <em>not</em> the end-all.</q>
-        <p class="lead">A better app doesn't fix a health system — people do. BHW&nbsp;Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
+      <div class="stance-grid">
+        <div class="stance">
+          <q>Technology is <em>not</em> the end-all.</q>
+          <p class="lead">A better app doesn't fix a health system — people do. BHW&nbsp;Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
+        </div>
+        <figure class="stance-visual" aria-label="A large health-worker figure at the center, with the digital tool as a small node feeding up into it">
+          <svg viewBox="0 0 260 300" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="hFill" cx="40%" cy="34%" r="78%">
+                <stop offset="0%" stop-color="#F07A34"/>
+                <stop offset="100%" stop-color="#B84E12"/>
+              </radialGradient>
+              <radialGradient id="hGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#E8641C" stop-opacity=".32"/>
+                <stop offset="100%" stop-color="#E8641C" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- the community, around the worker -->
+            <g fill="#F7F1E8" fill-opacity=".28">
+              <circle cx="58" cy="60" r="3"/>
+              <circle cx="118" cy="30" r="3"/>
+              <circle cx="182" cy="30" r="3"/>
+              <circle cx="242" cy="60" r="3"/>
+            </g>
+            <circle cx="150" cy="96" r="90" fill="url(#hGlow)"/>
+            <!-- the worker: large, central -->
+            <g class="human-pulse">
+              <circle cx="150" cy="96" r="62" fill="url(#hFill)"/>
+              <g fill="#F7F1E8">
+                <circle cx="150" cy="74" r="14"/>
+                <path d="M122,122 C122,104 134,94 150,94 C166,94 178,104 178,122 Z"/>
+              </g>
+            </g>
+            <text class="fig-label" x="150" y="180" text-anchor="middle">THE&#8194;FRONTLINE</text>
+            <!-- the tool: small, subordinate -->
+            <rect x="72" y="212" width="40" height="62" rx="9" fill="none" stroke="#F7F1E8" stroke-opacity=".85" stroke-width="2"/>
+            <rect x="80" y="222" width="24" height="9" rx="4.5" fill="#E8641C"/>
+            <rect x="80" y="236" width="18" height="6" rx="3" fill="#F7F1E8" fill-opacity=".45"/>
+            <text class="fig-label" x="92" y="290" text-anchor="middle">THE&#8194;TOOL</text>
+            <!-- the tool serves the worker -->
+            <path d="M96,210 C92,184 100,166 122,156" stroke="#FFC857" stroke-width="2" fill="none"/>
+            <path d="M122,156 L112,154 L116,164 Z" fill="#FFC857"/>
+          </svg>
+          <figcaption>Human at the center — the tool in service, never the reverse.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
