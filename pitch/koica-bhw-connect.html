@@ -46,7 +46,7 @@
     overflow:hidden;
   }
   .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
-  .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto}
+  .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto;transform-origin:center center}
 
   .slide.dark{background:var(--teal-deep);color:var(--cream)}
   .slide.darker{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
@@ -85,14 +85,15 @@
   /* ---------- slide 1 title ---------- */
   .title-kicker{font-size:clamp(.72rem,1.1vw,.85rem);font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--sampaguita);margin-bottom:1.6rem}
   .title-sub{margin-top:1.4rem;font-size:clamp(1.05rem,1.9vw,1.5rem);color:var(--cream-soft);max-width:30ch;line-height:1.4}
-  .lockup{
-    margin-top:clamp(2.4rem,6vh,4rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);
-    display:flex;flex-wrap:wrap;align-items:baseline;gap:.7rem 1.1rem;
-    font-size:clamp(.82rem,1.3vw,1rem);
+  .partners{
+    margin-top:clamp(1.8rem,5vh,3.2rem);padding-top:1.3rem;border-top:1px solid var(--line-dark);
+    display:flex;flex-direction:column;gap:1.05rem;
   }
-  .lockup strong{font-weight:700;letter-spacing:.01em}
-  .lockup .x{color:var(--marigold);font-weight:700}
-  .lockup .muted{color:var(--cream-soft)}
+  .partners-label{font-size:clamp(.7rem,1vw,.82rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sampaguita)}
+  .partners-row{display:flex;flex-wrap:wrap;gap:1.1rem 2rem}
+  .partner{display:flex;flex-direction:column;gap:.22rem;padding-left:1rem;border-left:2px solid var(--marigold);max-width:24ch}
+  .partner strong{font-weight:700;letter-spacing:.005em;font-size:clamp(.98rem,1.35vw,1.18rem);line-height:1.2}
+  .partner span{color:var(--cream-soft);font-size:clamp(.8rem,1.05vw,.94rem);line-height:1.25}
 
   /* ---------- big stat (slide 2) ---------- */
   .stat{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
@@ -235,8 +236,11 @@
   /* ---------- close ---------- */
   .close h2{max-width:20ch;margin-bottom:1.5rem}
   .close .lead{max-width:44ch}
-  .close .invite{margin-top:clamp(2rem,5vh,3.2rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);font-size:clamp(1.18rem,2vw,1.6rem);font-weight:700}
+  .close .invite{margin-top:clamp(1.8rem,4.5vh,3rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);font-size:clamp(1.18rem,2vw,1.6rem);font-weight:700}
   .close .invite .x{color:var(--marigold)}
+  .close .invite-partners{margin-top:.85rem;display:flex;flex-wrap:wrap;gap:.35rem .85rem;font-size:clamp(.88rem,1.2vw,1.05rem);font-weight:600;color:var(--cream-soft);line-height:1.4}
+  .close .invite-partners b{color:var(--cream);font-weight:700}
+  .close .invite-partners .dot{color:var(--marigold);font-weight:800}
 
   /* ---------- cost slide radar visual ---------- */
   .cost-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.2rem);align-items:center}
@@ -350,12 +354,13 @@
       <div class="title-kicker">A Partnership Proposal · 2026</div>
       <h1>BHW&nbsp;Connect</h1>
       <p class="title-sub">Strengthening the frontline of Filipino community health.</p>
-      <div class="lockup">
-        <strong>Department of Health</strong>
-        <span class="muted">Republic of the Philippines</span>
-        <span class="x">×</span>
-        <strong>KOICA</strong>
-        <span class="muted">Korea International Cooperation Agency</span>
+      <div class="partners">
+        <span class="partners-label">A partnership between</span>
+        <div class="partners-row">
+          <div class="partner"><strong>Department of Health</strong><span>Bureau of Local Health Systems Development</span></div>
+          <div class="partner"><strong>Center for Health Development</strong><span>Eastern Visayas</span></div>
+          <div class="partner"><strong>World Vision–KOICA</strong><span>Development partner</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -633,7 +638,7 @@
   <!-- 10 · KOICA MANDATE -->
   <section class="slide light">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">09</span> Why KOICA</div>
+      <div class="eyebrow"><span class="num">09</span> Why World Vision–KOICA</div>
       <h2>Your mandate, made concrete.</h2>
       <div class="grid3">
         <div class="pillar">
@@ -659,7 +664,7 @@
   <section class="slide darker">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">10</span> The Ask</div>
-      <h2>What we're asking KOICA to build with us.</h2>
+      <h2>What we're asking World Vision–KOICA to build with us.</h2>
       <div class="ask">
         <div class="item">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2 0 0 1 5 0c0 2.5-5 1.5-5 4a2.5 2 0 0 0 5 0"/></svg>
@@ -736,7 +741,14 @@
       <div class="eyebrow"><span class="num">12</span> The Goal</div>
       <h2>A connected, capable frontline — and a real-time picture of the nation's health.</h2>
       <p class="lead">Three hundred thousand health workers, seen and supported. Millions of families, better cared for. A public-health system that finally learns from its own frontline.</p>
-      <div class="invite">Let's build it together. &nbsp;Department of Health <span class="x">×</span> KOICA.</div>
+      <div class="invite">Let's build it together.</div>
+      <div class="invite-partners">
+        <b>Department of Health</b> · Bureau of Local Health Systems Development
+        <span class="dot">•</span>
+        <b>Center for Health Development</b> · Eastern Visayas
+        <span class="dot">•</span>
+        <b>World Vision–KOICA</b>
+      </div>
     </div>
   </section>
 
@@ -846,7 +858,28 @@
       prevBtn.disabled = cur===0;
       nextBtn.disabled = cur===total-1;
       if(cur===APPROACH) chat.start(); else chat.stop();
+      fit(slides[cur]);
     }
+
+    /* ---- Fit each slide's content to the largest size that fits (LED/projector) ---- */
+    function fit(s){
+      if(!s) return;
+      var inner=s.querySelector('.slide__inner');
+      if(!inner) return;
+      inner.style.transform='none';
+      var cs=getComputedStyle(s);
+      var availW=s.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      var availH=s.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      var cw=inner.scrollWidth, ch=inner.scrollHeight;
+      if(!cw||!ch||availW<=0||availH<=0) return;
+      var scale=Math.min(availW/cw, availH/ch);
+      if(scale>1.002){ inner.style.transform='scale('+Math.min(scale,2.6)+')'; }
+    }
+    function fitAll(){ for(var i=0;i<slides.length;i++) fit(slides[i]); }
+    var rafId=null;
+    function scheduleFit(){ if(rafId) cancelAnimationFrame(rafId); rafId=requestAnimationFrame(fitAll); }
+    window.addEventListener('resize',scheduleFit);
+    window.addEventListener('orientationchange',scheduleFit);
 
     prevBtn.addEventListener('click',function(){go(cur-1);});
     nextBtn.addEventListener('click',function(){go(cur+1);});
@@ -869,5 +902,7 @@
     },{passive:true});
 
     go(0);
+    fitAll();
+    if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fitAll);}
   })();
 </script>
