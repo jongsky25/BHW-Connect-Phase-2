@@ -32,7 +32,12 @@ async function callRpc(
     },
     data: body,
   });
-  return { status: response.status(), body: await response.json() };
+  // Functions declared `returns void` (rpc_flag_toggle,
+  // rpc_admin_anonymize_user) get a 204 No Content from PostgREST with no
+  // body at all — parsing that as JSON throws, so only parse when there's
+  // actually content to parse.
+  const text = await response.text();
+  return { status: response.status(), body: text.length > 0 ? JSON.parse(text) : null };
 }
 
 // INC-9 DoD: "a flag flip hides a feature without deploy." kb_articles is a
@@ -51,13 +56,13 @@ test("flipping a feature flag off hides its nav link immediately", async ({ page
   await page.goto("/admin/users");
   await expect(page.getByRole("link", { name: /Articles|Artikulo/ })).toBeVisible();
 
-  const off = await callRpc(request, adminToken, "rpc_flag_toggle", {
-    p_key: "kb_articles",
-    p_enabled: false,
-  });
-  expect(off.status).toBe(200);
-
   try {
+    const off = await callRpc(request, adminToken, "rpc_flag_toggle", {
+      p_key: "kb_articles",
+      p_enabled: false,
+    });
+    expect(off.status).toBe(204);
+
     await page.reload();
     await expect(page.getByRole("link", { name: /Articles|Artikulo/ })).not.toBeVisible();
 
@@ -68,7 +73,7 @@ test("flipping a feature flag off hides its nav link immediately", async ({ page
       p_key: "kb_articles",
       p_enabled: true,
     });
-    expect(on.status).toBe(200);
+    expect(on.status).toBe(204);
   }
 
   await page.reload();
@@ -98,7 +103,7 @@ test("admin can export and then anonymize a BHW's data", async ({ request }) => 
   const anonymized = await callRpc(request, adminToken, "rpc_admin_anonymize_user", {
     p_user_id: userId,
   });
-  expect(anonymized.status).toBe(200);
+  expect(anonymized.status).toBe(204);
 
   const after = await request.get(`${supabaseUrl()}/rest/v1/users?id=eq.${userId}&select=username,status,full_name`, {
     headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}` },
