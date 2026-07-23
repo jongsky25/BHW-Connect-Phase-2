@@ -6,12 +6,14 @@
    typecheck, unit tests, an E2E smoke pass, a production build, and the
    Lighthouse performance-budget check.
 2. If the change includes a `supabase/migrations/*.sql` file, apply it to
-   the live pilot Supabase project **before or alongside** merging — every
-   increment in this repo's history has done this via the Supabase MCP
-   `apply_migration` tool (or `supabase db push` from the CLI if working
-   locally). The app and the schema should never drift: a merged PR whose
-   migration wasn't applied means the deployed code will call RPCs that
-   don't exist yet.
+   **both** Supabase projects — the live pilot project and the dedicated
+   `bhw-connect-e2e` CI project (see "CI test project" below) — before or
+   alongside merging, via the Supabase MCP `apply_migration` tool (or
+   `supabase db push` from the CLI if working locally). The app and the
+   schema should never drift on either project: a merged PR whose migration
+   wasn't applied to the pilot project means the deployed code will call
+   RPCs that don't exist yet; not applying it to the CI project means the
+   next PR's E2E run fails on unrelated code.
 3. Merge to `main` once CI is green and the migration (if any) is applied.
 4. Vercel's GitHub integration auto-deploys `main` (per INC-0's scaffold —
    see `docs/delivery-plan.md` §3/§7). No separate deploy step in this
@@ -30,12 +32,30 @@ project settings (for the running app) and GitHub Actions repo secrets
 
 | Variable | Vercel | GitHub Actions |
 |---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required | required (CI + E2E) |
-| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job) |
+| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required for `retention-purge.yml` only (pilot project) |
+| `E2E_SUPABASE_URL` / `E2E_SUPABASE_ANON_KEY` | not needed | required (`ci.yml`'s build + E2E job — the dedicated `bhw-connect-e2e` project, never the pilot project) |
+| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job; accounts live on the `bhw-connect-e2e` project) |
 | `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN` | optional — app runs fine unset | optional (build-time only) |
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
 | `SUPABASE_DB_URL` | not needed | required for `backup.yml` |
 | `SUPABASE_SERVICE_ROLE_KEY` | not needed (never expose to the app) | required for `retention-purge.yml` |
+
+## CI test project
+
+`ci.yml`'s build + E2E + Lighthouse steps run against a dedicated,
+schema-identical Supabase project (`bhw-connect-e2e`, free tier, same org as
+the pilot project) instead of the pilot project — PR runs on every branch
+must never write test data into the database real BHWs and admins depend on.
+It's seeded with the same `org_units` chain and one `kb_categories` row the
+migrations + `e2e/fixtures/auth.ts` expect, plus the four stable fixture
+accounts (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`),
+fully onboarded so tests can log straight in. Throwaway accounts created by
+`e2e/fixtures/auth.ts`'s `createThrowawayBhw` (`e2e.<timestamp>.<random>`)
+accumulate on this project across runs the same way they used to on the
+pilot project; since it's a test-only database this is expected and
+harmless, but it's still worth an occasional purge (same pattern as the
+one-off cleanup this doc's history records for the pilot project) if it
+grows large enough to slow queries down.
 
 ## Rolling out a risky feature
 

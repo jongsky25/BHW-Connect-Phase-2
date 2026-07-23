@@ -5,7 +5,7 @@ import { STABLE_ADMIN, getAccessToken, restGet } from "./fixtures/auth";
 
 // INC-8 DoD: exported CSV/Excel columns match the field/column picker
 // selection, and every export is recorded via the report.exported audit
-// event. The pilot Supabase project is shared and ever-growing across CI
+// event. The CI Supabase project is shared and ever-growing across CI
 // runs (see dashboard.spec.ts's own marker-based approach), so this test
 // verifies column-picker fidelity and the audit trail deterministically
 // rather than hand-computing exact row counts against accumulated history.
