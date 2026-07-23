@@ -4,6 +4,11 @@
     "tagline": "Kasama mo sa gawaing pangkalusugan ng barangay.",
     "languageToggleLabel": "Wika"
   },
+  "errorBoundary": {
+    "heading": "May naganap na problema",
+    "body": "Nagkaproblema ang page na ito. Naiulat na ito — pakisubukan muli.",
+    "retryAction": "Subukan muli"
+  },
   "home": {
     "heading": "Maligayang pagdating sa BHW Connect",
     "body": "Ito ang pundasyon ng Phase 1. Unti-unti pang idadagdag ang mga tampok, isang increment sa isang pagkakataon.",
@@ -127,6 +132,7 @@
       "kbEntries": "Mga Tanong-Sagot",
       "kbArticles": "Mga Artikulo",
       "kbSynonyms": "Mga Kasingkahulugan",
+      "flags": "Mga Feature Flag",
       "settings": "Mga Setting"
     },
     "dashboard": {
@@ -244,6 +250,10 @@
       "reactivateAction": "I-reactivate",
       "transferAction": "Ilipat",
       "transferSubmit": "Kumpirmahin ang paglipat",
+      "exportDataAction": "I-export ang data",
+      "anonymizeAction": "I-anonymize",
+      "anonymizeWarning": "Permanenteng i-de-deactivate nito ang account at buburahin ang pangalan, numero ng contact, email, at address. Hindi na ito mababawi.",
+      "anonymizeConfirmAction": "Oo, i-anonymize",
       "empty": "Wala pang user.",
       "lastAdminError": "Hindi puwedeng i-deactivate o ilipat ang huling aktibong admin ng sakop na ito.",
       "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
@@ -255,6 +265,17 @@
     "audit": {
       "heading": "Audit Log",
       "empty": "Wala pang audit event."
+    },
+    "flags": {
+      "heading": "Mga Feature Flag",
+      "intro": "Buksan o isara ang isang feature para sa lahat, agad-agad — walang kailangang i-deploy.",
+      "empty": "Wala pang feature flag.",
+      "enabledLabel": "Buhay",
+      "disabledLabel": "Patay",
+      "toggleLabel": "I-toggle ang {key}",
+      "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
+      "flagNotFoundError": "Hindi nahanap ang flag na iyon.",
+      "genericError": "May naganap na problema. Subukan muli."
     },
     "kbCategories": {
       "heading": "Mga Kategorya ng KB",

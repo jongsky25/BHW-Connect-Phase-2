@@ -1,7 +1,9 @@
 import { getTranslations } from "next-intl/server";
+import { redirect } from "next/navigation";
 import { ReportExportPanel } from "@/components/admin/dashboard/report-export-panel";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
+import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { KpiSummary } from "@/lib/reports/types";
 import { createClient } from "@/lib/supabase/server";
 
@@ -14,6 +16,11 @@ export default async function AdminDashboardReportsPage({
   const { start, end } = timeRangeToDates(parseTimeRangeKey(range));
 
   const supabase = await createClient();
+  const flags = await getFeatureFlags(supabase);
+  if (!flags.reports_export) {
+    redirect("/admin/dashboard");
+  }
+
   const t = await getTranslations("admin.dashboard.reports");
 
   const { data: kpi } = await supabase

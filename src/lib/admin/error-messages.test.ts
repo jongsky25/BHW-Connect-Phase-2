@@ -17,6 +17,10 @@ describe("mapAdminRpcError", () => {
     expect(mapAdminRpcError("destination org unit out of scope")).toBe("outOfScopeError");
   });
 
+  it("maps flag-not-found", () => {
+    expect(mapAdminRpcError("flag not found")).toBe("flagNotFoundError");
+  });
+
   it("falls back to a generic error for unknown or missing messages", () => {
     expect(mapAdminRpcError("something unexpected")).toBe("genericError");
     expect(mapAdminRpcError(undefined)).toBe("genericError");

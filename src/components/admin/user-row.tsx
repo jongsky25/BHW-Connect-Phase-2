@@ -7,7 +7,7 @@ import type { AdminUserRow, OrgUnitOption } from "@/lib/admin/types";
 import { createClient } from "@/lib/supabase/client";
 import { inputClass } from "./form-field";
 
-type Mode = "view" | "edit" | "transfer";
+type Mode = "view" | "edit" | "transfer" | "anonymize-confirm";
 
 type Props = {
   user: AdminUserRow;
@@ -143,6 +143,57 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
     }
   }
 
+  async function handleExportData() {
+    setError(null);
+    setLoading(true);
+    try {
+      const supabase = createClient();
+      const { data, error: rpcError } = await supabase.rpc("rpc_admin_export_user_data", {
+        p_user_id: user.id,
+      });
+
+      if (rpcError) {
+        setError(t(mapAdminRpcError(rpcError.message)));
+        return;
+      }
+
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `${user.username}-data-export.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      setError(t("genericError"));
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleAnonymize() {
+    setError(null);
+    setLoading(true);
+    try {
+      const supabase = createClient();
+      const { error: rpcError } = await supabase.rpc("rpc_admin_anonymize_user", {
+        p_user_id: user.id,
+      });
+
+      if (rpcError) {
+        setError(t(mapAdminRpcError(rpcError.message)));
+        return;
+      }
+
+      setMode("view");
+      onChanged();
+    } catch {
+      setError(t("genericError"));
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <tr className="border-b border-ink/10 align-top">
       <td className="px-3 py-3 text-sm text-ink">{user.username}</td>
@@ -250,6 +301,31 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
                 {t("cancelAction")}
               </button>
             </>
+          ) : mode === "anonymize-confirm" ? (
+            <>
+              <p role="alert" className="w-full text-xs text-danger">
+                {t("anonymizeWarning")}
+              </p>
+              <button
+                type="button"
+                disabled={loading}
+                onClick={handleAnonymize}
+                className="rounded-md bg-danger px-2 py-1 text-xs font-medium text-canvas disabled:opacity-60"
+              >
+                {t("anonymizeConfirmAction")}
+              </button>
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => {
+                  setMode("view");
+                  setError(null);
+                }}
+                className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink"
+              >
+                {t("cancelAction")}
+              </button>
+            </>
           ) : (
             <>
               <button
@@ -297,6 +373,22 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
                   {t("transferAction")}
                 </button>
               ) : null}
+              <button
+                type="button"
+                disabled={loading}
+                onClick={handleExportData}
+                className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
+              >
+                {t("exportDataAction")}
+              </button>
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => setMode("anonymize-confirm")}
+                className="rounded-md border border-danger/40 px-2 py-1 text-xs font-medium text-danger hover:bg-danger/5"
+              >
+                {t("anonymizeAction")}
+              </button>
             </>
           )}
         </div>

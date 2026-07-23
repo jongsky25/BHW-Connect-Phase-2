@@ -1,0 +1,50 @@
+name: Retention purge
+
+# §5.3/§5.4 retention schedule: chat messages/sessions + analytics events
+# past 24 months, audit events past 5 years (rpc_retention_purge in
+# supabase/migrations/20260726000000_inc9_ops_hardening.sql). Runs as a
+# dry run (count only, no deletes) on the monthly schedule so the counts
+# stay visible in the Actions log; a human flips `dry_run` to `false` via
+# "Run workflow" once they've reviewed a few dry runs and are ready to let
+# it actually delete on schedule too.
+on:
+  schedule:
+    - cron: "0 3 1 * *" # 1st of the month, 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Count only (true) or actually delete (false)"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call rpc_retention_purge
+        env:
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DRY_RUN: ${{ inputs.dry_run || 'true' }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            exit 1
+          fi
+          curl -sS --fail-with-body -X POST \
+            "$SUPABASE_URL/rest/v1/rpc/rpc_retention_purge" \
+            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
+            -H "Content-Type: application/json" \
+            -d "{\"p_dry_run\": $DRY_RUN}" | tee purge-result.json
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: retention-purge-result-${{ github.run_id }}
+          path: purge-result.json
+          retention-days: 90

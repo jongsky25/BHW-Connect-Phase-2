@@ -50,6 +50,12 @@ test("admin triages an unmatched question into a published entry from the dashbo
   page,
   request,
 }) => {
+  // Two full login/onboarding flows plus two chat round trips plus the
+  // full KB-authoring flow, all against the live remote pilot project —
+  // every step here is a real network round trip, not a local mock, so
+  // this genuinely needs more than Playwright's 30s default.
+  test.setTimeout(60_000);
+
   // The nonsense question becomes a real, permanently published KB entry
   // (via the "create from unmatched" prefill flow) on the shared live
   // pilot project — every token must be unique to this run. Reusing

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
 
@@ -20,6 +21,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     redirect("/home");
   }
 
+  const flags = await getFeatureFlags(supabase);
   const t = await getTranslations("admin");
 
   return (
@@ -40,11 +42,16 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         <Link href="/admin/kb/entries" className="text-secondary hover:underline">
           {t("nav.kbEntries")}
         </Link>
-        <Link href="/admin/kb/articles" className="text-secondary hover:underline">
-          {t("nav.kbArticles")}
-        </Link>
+        {flags.kb_articles ? (
+          <Link href="/admin/kb/articles" className="text-secondary hover:underline">
+            {t("nav.kbArticles")}
+          </Link>
+        ) : null}
         <Link href="/admin/kb/synonyms" className="text-secondary hover:underline">
           {t("nav.kbSynonyms")}
+        </Link>
+        <Link href="/admin/flags" className="text-secondary hover:underline">
+          {t("nav.flags")}
         </Link>
         <Link href="/settings" className="text-secondary hover:underline">
           {t("nav.settings")}

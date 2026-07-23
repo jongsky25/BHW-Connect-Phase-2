@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { ArticleViewer } from "@/components/kb/article-viewer";
 import { EmptyState } from "@/components/empty-state";
+import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
 
@@ -38,6 +39,7 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
 
   const t = await getTranslations("kb");
   const locale = await getLocale();
+  const flags = await getFeatureFlags(supabase);
 
   const [{ data: entries }, { data: articles }] = await Promise.all([
     supabase
@@ -46,12 +48,14 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
       .eq("category_id", category.id)
       .eq("status", "published")
       .returns<EntryRow[]>(),
-    supabase
-      .from("kb_articles")
-      .select("id, title_fil, title_en, body_fil, body_en")
-      .eq("category_id", category.id)
-      .eq("status", "published")
-      .returns<ArticleRow[]>(),
+    flags.kb_articles
+      ? supabase
+          .from("kb_articles")
+          .select("id, title_fil, title_en, body_fil, body_en")
+          .eq("category_id", category.id)
+          .eq("status", "published")
+          .returns<ArticleRow[]>()
+      : Promise.resolve({ data: [] as ArticleRow[] }),
   ]);
 
   // Best-effort: visiting a published category satisfies the "visit a KB

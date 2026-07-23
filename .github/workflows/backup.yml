@@ -1,0 +1,38 @@
+name: Weekly backup
+
+# §5.3 3-2-1 backup: Supabase's own daily scheduled backups are the first
+# copy; this is the second copy, on a different medium (GitHub Actions
+# artifact storage, not Supabase infra). See docs/restore-drill-runbook.md
+# for the restore procedure and the RPO/RTO this backs.
+on:
+  schedule:
+    - cron: "0 2 * * 0" # Sunday 02:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install postgresql-client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Dump the database
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          if [ -z "$SUPABASE_DB_URL" ]; then
+            echo "::error::SUPABASE_DB_URL secret is not set — see .env.example and docs/restore-drill-runbook.md"
+            exit 1
+          fi
+          pg_dump "$SUPABASE_DB_URL" --no-owner --no-privileges --format=custom \
+            --file="bhw-connect-$(date -u +%Y-%m-%d).dump"
+
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bhw-connect-backup-${{ github.run_id }}
+          path: bhw-connect-*.dump
+          # Second copy is kept well past Supabase's own 30-day rolling
+          # retention so a slow-to-notice data problem still has a
+          # recoverable off-platform copy.
+          retention-days: 90
