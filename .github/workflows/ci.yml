@@ -13,8 +13,12 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      # Points at a dedicated Supabase project used only for CI/E2E, never
+      # the pilot project — see docs/deploy-runbook.md. Do NOT reuse the
+      # NEXT_PUBLIC_SUPABASE_URL/ANON_KEY secrets here; those name the pilot
+      # project and back the retention-purge workflow and production.
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.E2E_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.E2E_SUPABASE_ANON_KEY }}
       E2E_STABLE_BHW_PASSWORD: ${{ secrets.E2E_STABLE_BHW_PASSWORD }}
       E2E_STABLE_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
       E2E_OTHER_BARANGAY_BHW_PASSWORD: ${{ secrets.E2E_OTHER_BARANGAY_BHW_PASSWORD }}
