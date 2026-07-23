@@ -25,8 +25,11 @@ use the `pg_dump` copy since it's the one this repo controls end to end.
   instead (session-mode pooling works fine for `pg_dump`/`pg_restore`).
   Avoid the **Transaction pooler** — its statement-level pooling breaks
   both tools.
-- `psql` and `pg_restore` (both ship with `postgresql-client`; the backup
-  workflow installs the same package).
+- `psql` and `pg_restore`, version 17 to match the Supabase project's
+  Postgres version (`pg_dump`/`pg_restore` refuse to work against a newer
+  server than themselves) — install via the PGDG apt repo
+  (`postgresql-client-17`), not Ubuntu's default `postgresql-client`
+  (v16). The backup workflow installs the same PGDG package.
 - A **scratch target**, never the live pilot project, for the drill itself:
   either a fresh local Postgres (`docker run -e POSTGRES_PASSWORD=drill -p 5433:5432 postgres:17`)
   or a throwaway Supabase branch created via the dashboard / `create_branch`
