@@ -31,7 +31,11 @@ jobs:
             echo "::error::SUPABASE_DB_URL secret is not set — see .env.example and docs/restore-drill-runbook.md"
             exit 1
           fi
-          pg_dump "$SUPABASE_DB_URL" --no-owner --no-privileges --format=custom \
+          # postgresql-client-17 doesn't wire pg_dump into PATH via
+          # update-alternatives (only psql) — the runner's pre-installed v16
+          # pg_dump would otherwise still shadow it, and refuses to dump
+          # from a newer (v17) server. Call the versioned binary directly.
+          /usr/lib/postgresql/17/bin/pg_dump "$SUPABASE_DB_URL" --no-owner --no-privileges --format=custom \
             --file="bhw-connect-$(date -u +%Y-%m-%d).dump"
 
       - name: Upload backup artifact
