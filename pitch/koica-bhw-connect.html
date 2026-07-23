@@ -1,0 +1,908 @@
+<title>BHW Connect — DOH × KOICA Partnership Proposal</title>
+<style>
+  :root{
+    --teal:#0C7C7E;
+    --teal-deep:#0A4A4B;
+    --teal-deeper:#083335;
+    --marigold:#E8641C;
+    --marigold-deep:#B84E12;
+    --sampaguita:#FFC857;
+    --canvas:#F6F2ED;
+    --canvas-2:#ECE3D6;
+    --ink:#241C17;
+    --ink-soft:#6A5D53;
+    --cream:#F7F1E8;
+    --cream-soft:rgba(247,241,232,.66);
+    --line-dark:rgba(247,241,232,.18);
+    --line-light:rgba(36,28,23,.14);
+
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+
+    --pad:clamp(1.6rem,5.2vw,6rem);
+    --maxw:1120px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:var(--sans);
+    background:#06282a;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow:hidden;
+  }
+
+  /* ---------- deck stage ---------- */
+  .deck{position:fixed;inset:0}
+  .slide{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:clamp(2.4rem,6vh,4.4rem) var(--pad);
+    opacity:0;visibility:hidden;
+    transform:translateY(14px);
+    transition:opacity .5s ease,transform .5s ease,visibility .5s;
+    overflow:hidden;
+  }
+  .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+  .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto;transform-origin:center center}
+
+  .slide.dark{background:var(--teal-deep);color:var(--cream)}
+  .slide.darker{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
+  .slide.light{background:var(--canvas);color:var(--ink)}
+
+  /* soft decorative bloom, subtle */
+  .slide.dark::after,.slide.darker::after{
+    content:"";position:absolute;right:-12%;top:-18%;width:46vw;height:46vw;
+    background:radial-gradient(circle,rgba(232,100,28,.16),transparent 62%);
+    pointer-events:none;
+  }
+
+  /* ---------- shared type ---------- */
+  .eyebrow{
+    font-size:clamp(.74rem,1.15vw,.9rem);
+    font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+    display:flex;align-items:center;gap:.85rem;margin-bottom:clamp(1.1rem,2.6vh,1.9rem);
+  }
+  .eyebrow .num{color:var(--marigold)}
+  .dark .eyebrow,.darker .eyebrow{color:var(--cream-soft)}
+  .light .eyebrow{color:var(--ink-soft)}
+  .eyebrow::after{content:"";flex:0 0 46px;height:1px;background:currentColor;opacity:.4}
+
+  h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.04;text-wrap:balance}
+  h1{font-size:clamp(3rem,7.8vw,6.2rem)}
+  h2{font-size:clamp(2.1rem,4.8vw,3.8rem)}
+  .lead{
+    font-size:clamp(1.12rem,1.85vw,1.5rem);line-height:1.5;max-width:42ch;
+    color:inherit;
+  }
+  .dark .lead,.darker .lead{color:var(--cream-soft)}
+  .light .lead{color:var(--ink-soft)}
+  .mark{color:var(--marigold)}
+  .dark .mark,.darker .mark{color:var(--sampaguita)}
+
+  /* ---------- slide 1 title ---------- */
+  .title-kicker{font-size:clamp(.72rem,1.1vw,.85rem);font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--sampaguita);margin-bottom:1.6rem}
+  .title-sub{margin-top:1.4rem;font-size:clamp(1.05rem,1.9vw,1.5rem);color:var(--cream-soft);max-width:30ch;line-height:1.4}
+  .partners{
+    margin-top:clamp(1.8rem,5vh,3.2rem);padding-top:1.3rem;border-top:1px solid var(--line-dark);
+    display:flex;flex-direction:column;gap:1.05rem;
+  }
+  .partners-label{font-size:clamp(.7rem,1vw,.82rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sampaguita)}
+  .partners-row{display:flex;flex-wrap:wrap;gap:1.1rem 2rem}
+  .partner{display:flex;flex-direction:column;gap:.22rem;padding-left:1rem;border-left:2px solid var(--marigold);max-width:24ch}
+  .partner strong{font-weight:700;letter-spacing:.005em;font-size:clamp(.98rem,1.35vw,1.18rem);line-height:1.2}
+  .partner span{color:var(--cream-soft);font-size:clamp(.8rem,1.05vw,.94rem);line-height:1.25}
+
+  /* ---------- big stat (slide 2) ---------- */
+  .stat{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
+  .stat__num{
+    font-family:var(--serif);font-weight:700;letter-spacing:-.03em;line-height:.86;
+    font-size:clamp(5rem,15vw,11rem);color:var(--marigold);
+  }
+  .stat__num small{display:block;font-family:var(--sans);font-size:clamp(.85rem,1.3vw,1.05rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin-top:.7rem}
+  .stat__body{max-width:34ch}
+  .stat__body h2{margin-bottom:.85rem}
+  .pull{margin-top:1.1rem;font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,1.9vw,1.4rem);color:var(--ink);border-left:3px solid var(--marigold);padding-left:1.1rem;line-height:1.35}
+
+  /* ---------- card grid (gap) ---------- */
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .card{
+    background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:14px;
+    padding:clamp(1.1rem,2.4vw,1.7rem);display:flex;flex-direction:column;gap:.7rem;
+  }
+  .dark .card,.darker .card{background:rgba(247,241,232,.06);border-color:var(--line-dark)}
+  .card .ic{width:46px;height:46px;color:var(--marigold)}
+  .dark .card .ic,.darker .card .ic{color:var(--sampaguita)}
+  .card h3{font-size:clamp(1.14rem,1.7vw,1.4rem);font-weight:700;letter-spacing:-.01em}
+  .card p{font-size:clamp(.95rem,1.3vw,1.1rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .card p,.darker .card p{color:var(--cream-soft)}
+
+  /* ---------- cost list ---------- */
+  .costlist{display:flex;flex-direction:column;gap:clamp(.7rem,1.8vh,1.15rem);margin-top:clamp(1.2rem,3vh,2rem);max-width:44ch}
+  .costlist li{list-style:none;display:flex;gap:1rem;align-items:flex-start;font-size:clamp(1.12rem,1.7vw,1.45rem);line-height:1.4}
+  .costlist li span{color:var(--marigold);font-weight:800;flex:0 0 auto}
+  .dark .costlist li span,.darker .costlist li span{color:var(--sampaguita)}
+  .kicker-line{margin-top:clamp(1.6rem,3.4vh,2.4rem);font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.1vw,1.7rem);line-height:1.35;color:var(--cream)}
+
+  /* ---------- stance ---------- */
+  .stance{max-width:20ch}
+  .stance q{
+    font-family:var(--serif);font-weight:400;font-style:italic;quotes:none;
+    font-size:clamp(2.4rem,6.6vw,5rem);line-height:1.02;letter-spacing:-.02em;display:block;
+    color:var(--cream);
+  }
+  .stance q em{color:var(--sampaguita);font-style:italic}
+  .stance .lead{margin-top:clamp(1.8rem,4vh,2.8rem);max-width:46ch}
+
+  /* ---------- approach / phone ---------- */
+  .split{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:center}
+  .checks{display:flex;flex-direction:column;gap:1.05rem;margin-top:1.6rem}
+  .checks li{list-style:none;display:flex;gap:.85rem;align-items:flex-start;font-size:clamp(1.08rem,1.55vw,1.3rem);line-height:1.4}
+  .checks .tick{flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:var(--marigold);color:#fff;display:grid;place-items:center;font-size:.9rem;margin-top:.1rem}
+  .phone{
+    justify-self:center;width:min(260px,72vw);aspect-ratio:9/18.5;border-radius:30px;
+    background:linear-gradient(180deg,#0d5254,#0a4143);padding:14px 12px;
+    box-shadow:0 24px 60px -22px rgba(0,0,0,.55),inset 0 0 0 1px rgba(247,241,232,.12);
+    display:flex;flex-direction:column;gap:.55rem;overflow:hidden;
+  }
+  .phone .top{display:flex;align-items:center;gap:.5rem;padding:.1rem .3rem .5rem;border-bottom:1px solid var(--line-dark)}
+  .phone .dot{width:9px;height:9px;border-radius:50%;background:var(--sampaguita)}
+  .phone .top b{color:var(--cream);font-size:.82rem;letter-spacing:.01em}
+  .bub{max-width:82%;padding:.6rem .75rem;border-radius:14px;font-size:.78rem;line-height:1.35}
+  .bub.q{align-self:flex-end;background:var(--marigold);color:#fff;border-bottom-right-radius:4px}
+  .bub.a{align-self:flex-start;background:rgba(247,241,232,.12);color:var(--cream);border-bottom-left-radius:4px}
+  .bub small{display:block;opacity:.7;font-size:.62rem;margin-top:.3rem;letter-spacing:.02em}
+  .chat{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:flex-end;gap:.5rem;overflow:hidden}
+  .bub.in{animation:bubIn .34s ease both}
+  @keyframes bubIn{from{opacity:0;transform:translateY(7px) scale(.985)}to{opacity:1;transform:none}}
+  .typing{align-self:flex-start;display:flex;gap:4px;padding:.6rem .72rem;border-radius:14px;border-bottom-left-radius:4px;background:rgba(247,241,232,.12)}
+  .typing i{width:5px;height:5px;border-radius:50%;background:var(--cream-soft);display:inline-block;animation:typedot 1.2s infinite ease-in-out}
+  .typing i:nth-child(2){animation-delay:.18s}
+  .typing i:nth-child(3){animation-delay:.36s}
+  @keyframes typedot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
+  .inputbar{display:none;align-items:center;gap:.45rem;background:rgba(247,241,232,.1);border:1px solid var(--line-dark);border-radius:999px;padding:.4rem .5rem .4rem .75rem;min-height:32px}
+  .inputbar.show{display:flex}
+  .inputbar .itext{font-size:.73rem;color:var(--cream);line-height:1.25;word-break:break-word}
+  .inputbar .caret{width:1.5px;height:.9rem;background:var(--sampaguita);display:inline-block;flex:0 0 auto;margin-left:1px;animation:caretblink 1s step-end infinite}
+  @keyframes caretblink{50%{opacity:0}}
+  .inputbar .send{margin-left:auto;width:22px;height:22px;border-radius:50%;background:var(--marigold);display:grid;place-items:center;flex:0 0 auto;color:#fff}
+  .inputbar .send svg{width:12px;height:12px}
+
+  /* ---------- loop (engine) ---------- */
+  .loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:.5rem;margin-top:clamp(1.3rem,3vh,2rem)}
+  .node{
+    flex:1 1 0;min-width:120px;background:rgba(255,255,255,.55);border:1px solid var(--line-light);
+    border-radius:12px;padding:1rem .85rem;display:flex;flex-direction:column;gap:.45rem;position:relative;
+  }
+  .node b{font-size:clamp(1rem,1.35vw,1.16rem);letter-spacing:-.01em}
+  .node p{font-size:.92rem;line-height:1.35;color:var(--ink-soft)}
+  .node .step{font-size:.74rem;font-weight:700;letter-spacing:.18em;color:var(--marigold)}
+  .arrow{display:grid;place-items:center;color:var(--marigold);flex:0 0 22px;font-weight:800;font-size:1.2rem}
+  .loopback{margin-top:1rem;display:flex;align-items:center;gap:.6rem;font-size:1.02rem;color:var(--ink-soft)}
+  .loopback svg{color:var(--marigold)}
+
+  .ladder{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.5rem;align-items:center}
+  .rung{background:rgba(12,124,126,.1);border:1px solid rgba(12,124,126,.28);color:var(--teal);
+    padding:.5rem .9rem;border-radius:999px;font-size:.92rem;font-weight:600;white-space:nowrap}
+  .rung.top{background:var(--marigold);border-color:var(--marigold);color:#fff}
+  .ladder .sep{color:var(--ink-soft);font-weight:700}
+
+  /* ---------- three pillars ---------- */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .pillar{border-top:3px solid var(--marigold);padding-top:1.1rem;display:flex;flex-direction:column;gap:.6rem}
+  .dark .pillar,.darker .pillar{border-top-color:var(--sampaguita)}
+  .pillar .ic{width:42px;height:42px;color:var(--marigold)}
+  .dark .pillar .ic,.darker .pillar .ic{color:var(--sampaguita)}
+  .pillar h3{font-size:clamp(1.16rem,1.7vw,1.42rem);font-weight:700;letter-spacing:-.01em}
+  .pillar p{font-size:clamp(.96rem,1.3vw,1.12rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .pillar p,.darker .pillar p{color:var(--cream-soft)}
+  .underline-note{margin-top:clamp(1.4rem,3vh,2.2rem);padding-top:1.1rem;border-top:1px solid var(--line-light);font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.45}
+  .dark .underline-note,.darker .underline-note{border-top-color:var(--line-dark);color:var(--cream)}
+
+  /* ---------- scale path & chips ---------- */
+  .path{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;margin-top:clamp(1.3rem,3vh,2rem);font-weight:800;letter-spacing:-.01em}
+  .path .p{font-size:clamp(1.1rem,2.4vw,1.9rem)}
+  .path .p small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:.25rem}
+  .path .to{color:var(--marigold);font-size:clamp(1.2rem,2.4vw,1.8rem)}
+  .path .p.big{color:var(--marigold)}
+  .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.4rem);margin-top:clamp(1.6rem,3.4vh,2.6rem)}
+  .chip{background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:12px;padding:1.15rem 1.25rem}
+  .chip b{display:block;font-size:clamp(1.05rem,1.45vw,1.24rem);margin-bottom:.4rem}
+  .chip p{font-size:.96rem;line-height:1.4;color:var(--ink-soft)}
+
+  /* ---------- the ask ---------- */
+  .ask{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.8rem,1.8vw,1.3rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .ask .item{border:1px solid var(--line-dark);border-radius:14px;padding:clamp(1.1rem,2.2vw,1.6rem);display:flex;flex-direction:column;gap:.7rem;background:rgba(247,241,232,.05)}
+  .ask .item .ic{width:42px;height:42px;color:var(--sampaguita)}
+  .ask .item h3{font-size:clamp(1.14rem,1.6vw,1.36rem);font-weight:700}
+  .ask .item p{font-size:clamp(.94rem,1.25vw,1.08rem);line-height:1.42;color:var(--cream-soft)}
+
+  /* ---------- scope table ---------- */
+  .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.2rem,2.6vh,1.9rem)}
+  .phase{border-radius:14px;border:1px solid var(--line-light);overflow:hidden;background:rgba(255,255,255,.5)}
+  .phase .h{background:var(--teal-deep);color:var(--cream);padding:.75rem 1.1rem;font-weight:700;font-size:1.08rem;display:flex;justify-content:space-between;align-items:baseline}
+  .phase .h span{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sampaguita)}
+  .phase.active-p .h{background:var(--marigold)}
+  .phase ul{list-style:none;padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.55rem}
+  .phase li{font-size:.98rem;line-height:1.35;color:var(--ink-soft);padding-left:1rem;position:relative}
+  .phase li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--marigold)}
+  .beneficiaries{margin-top:clamp(1.2rem,2.6vh,1.8rem);display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+  .beneficiaries .lbl{font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-right:.4rem}
+  .btag{background:var(--canvas-2);border:1px solid var(--line-light);border-radius:999px;padding:.45rem .9rem;font-size:.95rem;font-weight:600}
+  .note{margin-top:1rem;font-size:.9rem;font-style:italic;color:var(--ink-soft)}
+
+  /* ---------- close ---------- */
+  .close h2{max-width:20ch;margin-bottom:1.5rem}
+  .close .lead{max-width:44ch}
+  .close .invite{margin-top:clamp(1.8rem,4.5vh,3rem);padding-top:1.4rem;border-top:1px solid var(--line-dark);font-size:clamp(1.18rem,2vw,1.6rem);font-weight:700}
+  .close .invite .x{color:var(--marigold)}
+  .close .invite-partners{margin-top:.85rem;display:flex;flex-wrap:wrap;gap:.35rem .85rem;font-size:clamp(.88rem,1.2vw,1.05rem);font-weight:600;color:var(--cream-soft);line-height:1.4}
+  .close .invite-partners b{color:var(--cream);font-weight:700}
+  .close .invite-partners .dot{color:var(--marigold);font-weight:800}
+
+  /* ---------- cost slide radar visual ---------- */
+  .cost-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.2rem);align-items:center}
+  .cost-visual{display:flex;flex-direction:column;align-items:center;gap:1rem;justify-self:center}
+  .cost-visual svg{width:min(320px,36vw);height:auto;display:block}
+  .cost-visual figcaption{font-size:.76rem;letter-spacing:.01em;color:var(--cream-soft);text-align:center;max-width:26ch;line-height:1.4}
+  .radar-sweep{transform-box:view-box;transform-origin:120px 120px;animation:radarspin 9s linear infinite}
+  @keyframes radarspin{to{transform:rotate(360deg)}}
+
+  /* ---------- stance slide human-centered visual ---------- */
+  .stance-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
+  .stance-grid .stance{max-width:none}
+  .stance-grid .stance q{font-size:clamp(2.1rem,5vw,3.9rem)}
+  .stance-visual{display:flex;flex-direction:column;align-items:center;gap:1rem;justify-self:center}
+  .stance-visual svg{width:min(268px,30vw);height:auto;display:block}
+  .stance-visual figcaption{font-size:.76rem;letter-spacing:.01em;color:var(--cream-soft);text-align:center;max-width:24ch;line-height:1.4}
+  .fig-label{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.16em;fill:var(--cream-soft)}
+  .human-pulse{transform-box:view-box;transform-origin:150px 96px;animation:humanpulse 3.6s ease-in-out infinite}
+  @keyframes humanpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+
+  /* ---------- nav chrome ---------- */
+  .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+    padding:.7rem clamp(1rem,3vw,2rem);pointer-events:none}
+  .dots{display:flex;gap:7px;pointer-events:auto;flex-wrap:wrap;max-width:70vw}
+  .dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(180,160,140,.5);cursor:pointer;padding:0;transition:.25s}
+  .dots button.on{background:var(--marigold);transform:scale(1.25)}
+  .dots button:focus-visible{outline:2px solid var(--marigold);outline-offset:2px}
+  .navbtns{display:flex;align-items:center;gap:.5rem;pointer-events:auto}
+  .navbtns button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(180,160,140,.5);background:rgba(255,255,255,.7);
+    color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:.2s;backdrop-filter:blur(6px)}
+  .navbtns button:hover{background:var(--marigold);color:#fff;border-color:var(--marigold)}
+  .navbtns button:disabled{opacity:.35;cursor:default}
+  .navbtns button:focus-visible{outline:2px solid var(--marigold);outline-offset:2px}
+  .counter{position:fixed;top:clamp(1rem,3vh,1.8rem);right:clamp(1rem,3vw,2.2rem);z-index:20;
+    font-size:.78rem;font-weight:700;letter-spacing:.12em;font-variant-numeric:tabular-nums;
+    color:rgba(120,105,92,.85);mix-blend-mode:difference}
+  .brandtab{position:fixed;top:clamp(1rem,3vh,1.8rem);left:clamp(1rem,3vw,2.2rem);z-index:20;
+    font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(150,135,120,.9);mix-blend-mode:difference}
+
+  /* content taller than the viewport scrolls inside the slide instead of clipping */
+  @media (max-width:760px){
+    .slide{justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch;
+      padding-top:4.2rem;padding-bottom:5rem}
+    .stat{grid-template-columns:1fr;gap:1rem}
+    .grid2,.grid3,.chips,.ask,.phases{grid-template-columns:1fr;gap:.75rem}
+    .cost-grid{grid-template-columns:1fr;gap:1.3rem}
+    .cost-visual svg{width:min(240px,58vw)}
+    .stance-grid{grid-template-columns:1fr;gap:1.4rem}
+    .stance-grid .stance q{font-size:clamp(2.1rem,8vw,3.4rem)}
+    .stance-visual svg{width:min(210px,54vw)}
+    .split{grid-template-columns:1fr;gap:1.3rem}
+    .phone{order:-1;width:min(210px,62vw)}
+    .loop{gap:.5rem}
+    .loop .node{flex:1 1 100%}
+    .arrow{transform:rotate(90deg)}
+    .ladder{gap:.35rem}
+    .rung{font-size:.72rem;padding:.4rem .7rem}
+    .path{gap:.5rem}
+    .beneficiaries{gap:.4rem}
+  }
+  /* landscape phones: little height — shrink vertically and allow scroll */
+  @media (max-height:600px) and (orientation:landscape){
+    .slide{justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch;
+      padding-top:2.8rem;padding-bottom:4rem}
+    .eyebrow{margin-bottom:.8rem}
+    h1{font-size:clamp(2.2rem,7vw,3.4rem)}
+    h2{font-size:clamp(1.35rem,3.6vw,2.1rem)}
+    .lead{font-size:clamp(.9rem,1.5vw,1.05rem)}
+    .stat__num{font-size:clamp(3.2rem,11vw,6rem)}
+    .stance q{font-size:clamp(1.8rem,5vw,3.1rem)}
+    .grid2,.grid3,.chips,.ask,.phases{gap:.7rem}
+    .card,.chip,.ask .item{padding:.8rem .95rem}
+    .card{gap:.5rem}
+    .phone{width:auto;height:min(74vh,360px)}
+    .cost-grid{gap:1.4rem}
+    .cost-visual svg{width:min(200px,25vw)}
+    .cost-visual figcaption{font-size:.7rem}
+    .stance-grid{gap:1.6rem}
+    .stance-visual svg{width:min(200px,24vw)}
+    .stance-visual figcaption{font-size:.7rem}
+    .checks{gap:.55rem;margin-top:.9rem}
+    .loop{gap:.4rem;margin-top:1rem}
+    .node{padding:.7rem}
+    .ladder{margin-top:.9rem}
+    .costlist{gap:.6rem;margin-top:1rem}
+    .path{margin-top:1rem}
+    .chips{margin-top:1.2rem}
+  }
+  /* very short landscape (e.g. small phones) — tighten the phone mock further */
+  @media (max-height:430px) and (orientation:landscape){
+    .phone{height:min(80vh,300px)}
+    .bub{font-size:.72rem;padding:.5rem .6rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .slide{transition:opacity .01s}
+    .dots button,.navbtns button{transition:none}
+    .radar-sweep{animation:none}
+    .human-pulse{animation:none}
+    .typing i,.inputbar .caret,.bub.in{animation:none}
+  }
+</style>
+
+<div class="brandtab">BHW&nbsp;Connect</div>
+<div class="counter"><span id="cur">01</span> / 13</div>
+
+<div class="deck" id="deck">
+
+  <!-- 1 · TITLE -->
+  <section class="slide darker active">
+    <div class="slide__inner">
+      <div class="title-kicker">A Partnership Proposal · 2026</div>
+      <h1>BHW&nbsp;Connect</h1>
+      <p class="title-sub">Strengthening the frontline of Filipino community health.</p>
+      <div class="partners">
+        <span class="partners-label">A partnership between</span>
+        <div class="partners-row">
+          <div class="partner"><strong>Department of Health</strong><span>Bureau of Local Health Systems Development</span></div>
+          <div class="partner"><strong>Center for Health Development</strong><span>Eastern Visayas</span></div>
+          <div class="partner"><strong>World Vision–KOICA</strong><span>Development partner</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · THE FRONTLINE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">01</span> The Frontline</div>
+      <div class="stat">
+        <div class="stat__num">~300,000<small>Barangay Health Workers</small></div>
+        <div class="stat__body">
+          <h2>The backbone of primary care.</h2>
+          <p class="lead">In every barangay, volunteer health workers are the first — and often the only — point of care. They weigh newborns, track pregnancies, chase immunizations, and notice outbreaks before anyone else.</p>
+          <p class="pull">They carry the system on paper and memory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · THE GAP -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">02</span> The Gap</div>
+      <h2>The frontline is working blind — and so are we.</h2>
+      <div class="grid2">
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3H6.5A1.5 1.5 0 0 0 5 4.5v6"/><path d="M11 3l3.4 3.4"/><path d="M19 13.5v6a1.5 1.5 0 0 1-1.5 1.5H8"/><path d="M10 6.5l1.5 2.2-2 1.4 1.7 2.4-2 1.4 1.7 2.4-1.9 1.2"/></svg>
+          <h3>Paper that disappears</h3>
+          <p>Records live in notebooks. Data is delayed, duplicated, or lost before it ever informs a decision.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12S6.5 6 12 6c1.5 0 2.8.4 4 1"/><path d="M20.5 12S17.5 18 12 18c-1.5 0-2.8-.4-4-1"/><circle cx="12" cy="12" r="2.6"/><path d="M4 4l16 16"/></svg>
+          <h3>No real-time picture</h3>
+          <p>By the time community health data reaches decision-makers, the moment to act on it has already passed.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.4v5c0 2.7-1.4 5-3.5 6.4"/><path d="M12 3L5 5.4v5c0 3.6 2.5 6.6 7 8 .8-.25 1.5-.55 2.2-.9"/><path d="M12 6.5l-1.3 4.2 2.6.3L11.7 15"/></svg>
+          <h3>Workers left unsupported</h3>
+          <p>Three hundred thousand volunteers hold up primary care with little training, tooling, or recognition.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 8.5 7.7 6.7a3.4 3.4 0 0 0-4.8 4.8l1.8 1.8"/><path d="M14.5 15.5l1.8 1.8a3.4 3.4 0 0 0 4.8-4.8l-1.8-1.8"/><path d="M9 15l1.5-1.5M14.2 9.8 12.7 11.3"/></svg>
+          <h3>Systems that don't connect</h3>
+          <p>The barangay level and the national level can't see each other. Insight never travels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · THE COST -->
+  <section class="slide dark">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">03</span> The Cost</div>
+      <div class="cost-grid">
+        <div class="cost-text">
+          <h2>A blind spot has a price.</h2>
+          <ul class="costlist">
+            <li><span>—</span> Outbreaks are noticed late, not early.</li>
+            <li><span>—</span> Maternal and child risks go unseen until they become emergencies.</li>
+            <li><span>—</span> Decisions are made on data that is weeks — or months — old.</li>
+            <li><span>—</span> The effort of 300,000 people never becomes national insight.</li>
+          </ul>
+          <p class="kicker-line">The gap isn't a lack of care. It's a lack of connection.</p>
+        </div>
+        <figure class="cost-visual" aria-label="A radar scope with a blind sector where community health signals go undetected">
+          <svg viewBox="0 0 240 240" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="rGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#0d5254" stop-opacity=".85"/>
+                <stop offset="100%" stop-color="#083335" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="rSweep" x1="120" y1="120" x2="120" y2="16" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FFC857" stop-opacity=".45"/>
+                <stop offset="100%" stop-color="#FFC857" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="112" fill="url(#rGlow)"/>
+            <g stroke="rgba(247,241,232,.16)" stroke-width="1">
+              <circle cx="120" cy="120" r="104"/>
+              <circle cx="120" cy="120" r="70"/>
+              <circle cx="120" cy="120" r="36"/>
+              <line x1="120" y1="16" x2="120" y2="224"/>
+              <line x1="16" y1="120" x2="224" y2="120"/>
+            </g>
+            <!-- the blind sector -->
+            <path d="M120,120 L199.7,53.1 A104,104 0 0,1 214.2,164 Z"
+                  fill="#E8641C" fill-opacity=".14" stroke="#E8641C" stroke-opacity=".5"
+                  stroke-width="1" stroke-dasharray="3 3"/>
+            <!-- signals the scope sees -->
+            <g fill="#FFC857">
+              <circle cx="72" cy="78" r="3.6"/>
+              <circle cx="66" cy="150" r="3.2"/>
+              <circle cx="120" cy="196" r="3.2"/>
+              <circle cx="150" cy="62" r="3.2"/>
+              <circle cx="92" cy="122" r="2.8"/>
+            </g>
+            <!-- signals lost in the blind sector -->
+            <g fill="none" stroke="#E8641C" stroke-width="1.6">
+              <circle cx="189" cy="108" r="4.2"/>
+              <circle cx="174" cy="130" r="3.6"/>
+              <circle cx="197" cy="84" r="3.6"/>
+            </g>
+            <!-- rotating sweep -->
+            <g class="radar-sweep">
+              <path d="M120,120 L92,20 A104,104 0 0,1 148,20 Z" fill="url(#rSweep)"/>
+              <line x1="120" y1="120" x2="120" y2="16" stroke="#FFC857" stroke-opacity=".7" stroke-width="1.4"/>
+            </g>
+            <circle cx="120" cy="120" r="3" fill="#FFC857"/>
+          </svg>
+          <figcaption>The signals the system can't see are exactly the ones that cost lives.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · STANCE -->
+  <section class="slide darker">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">04</span> Our Stance</div>
+      <div class="stance-grid">
+        <div class="stance">
+          <q>Technology is <em>not</em> the end-all.</q>
+          <p class="lead">A better app doesn't fix a health system — people do. BHW&nbsp;Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
+        </div>
+        <figure class="stance-visual" aria-label="A large health-worker figure at the center, with the digital tool as a small node feeding up into it">
+          <svg viewBox="0 0 260 300" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="hFill" cx="40%" cy="34%" r="78%">
+                <stop offset="0%" stop-color="#F07A34"/>
+                <stop offset="100%" stop-color="#B84E12"/>
+              </radialGradient>
+              <radialGradient id="hGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#E8641C" stop-opacity=".32"/>
+                <stop offset="100%" stop-color="#E8641C" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- the community, around the worker -->
+            <g fill="#F7F1E8" fill-opacity=".28">
+              <circle cx="58" cy="60" r="3"/>
+              <circle cx="118" cy="30" r="3"/>
+              <circle cx="182" cy="30" r="3"/>
+              <circle cx="242" cy="60" r="3"/>
+            </g>
+            <circle cx="150" cy="96" r="90" fill="url(#hGlow)"/>
+            <!-- the worker: large, central -->
+            <g class="human-pulse">
+              <circle cx="150" cy="96" r="62" fill="url(#hFill)"/>
+              <g fill="#F7F1E8">
+                <circle cx="150" cy="74" r="14"/>
+                <path d="M122,122 C122,104 134,94 150,94 C166,94 178,104 178,122 Z"/>
+              </g>
+            </g>
+            <text class="fig-label" x="150" y="180" text-anchor="middle">THE&#8194;FRONTLINE</text>
+            <!-- the tool: small, subordinate -->
+            <rect x="72" y="212" width="40" height="62" rx="9" fill="none" stroke="#F7F1E8" stroke-opacity=".85" stroke-width="2"/>
+            <rect x="80" y="222" width="24" height="9" rx="4.5" fill="#E8641C"/>
+            <rect x="80" y="236" width="18" height="6" rx="3" fill="#F7F1E8" fill-opacity=".45"/>
+            <text class="fig-label" x="92" y="290" text-anchor="middle">THE&#8194;TOOL</text>
+            <!-- the tool serves the worker -->
+            <path d="M96,210 C92,184 100,166 122,156" stroke="#FFC857" stroke-width="2" fill="none"/>
+            <path d="M122,156 L112,154 L116,164 Z" fill="#FFC857"/>
+          </svg>
+          <figcaption>Human at the center — the tool in service, never the reverse.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · THE APPROACH -->
+  <section class="slide light" id="s-approach">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">05</span> The Approach</div>
+      <div class="split">
+        <div>
+          <h2>A digital assistant that meets BHWs where they are.</h2>
+          <ul class="checks">
+            <li><span class="tick">✓</span> Ask in Filipino, English, or Taglish — typos and all.</li>
+            <li><span class="tick">✓</span> Answers drawn from a trusted, expert-authored knowledge base.</li>
+            <li><span class="tick">✓</span> Built for older phones, weak signal, and reading outdoors in the sun.</li>
+          </ul>
+        </div>
+        <div class="phone" aria-label="Chat Guide preview">
+          <div class="top"><span class="dot"></span><b>Chat Guide</b></div>
+          <div class="chat" id="chatBody" role="log">
+            <div class="bub q">Ilang beses dapat magpa-checkup ang buntis?</div>
+            <div class="bub a">Ayon sa DOH, hindi bababa sa <b>4 na prenatal visits</b> ang inirerekomenda sa buong pagbubuntis.<small>Source · Maternal &amp; Child Health</small></div>
+            <div class="bub q">Kung high-risk po?</div>
+            <div class="bub a">Mas madalas na check-up ang kailangan — i-refer agad sa midwife o RHU.<small>Tap to open full guide →</small></div>
+          </div>
+          <div class="inputbar" id="chatInput" aria-hidden="true">
+            <span class="itext" id="chatText"></span><span class="caret"></span>
+            <span class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · THE ENGINE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">06</span> The Engine</div>
+      <h2>Every question makes the system smarter.</h2>
+      <div class="loop">
+        <div class="node"><span class="step">01</span><b>A BHW asks</b><p>A real health question, in their own words.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">02</span><b>The base answers</b><p>Matched to expert-authored guidance.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">03</span><b>Gaps are logged</b><p>Unanswered questions surface automatically.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">04</span><b>Experts fill them</b><p>New answers are written and published.</p></div>
+      </div>
+      <div class="loopback">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg>
+        <span>…and the whole frontline benefits from the next answer. The loop repeats.</span>
+      </div>
+      <div class="ladder">
+        <span class="rung">Barangay</span><span class="sep">›</span>
+        <span class="rung">RHU</span><span class="sep">›</span>
+        <span class="rung">City / Municipal</span><span class="sep">›</span>
+        <span class="rung">Provincial</span><span class="sep">›</span>
+        <span class="rung">Regional</span><span class="sep">›</span>
+        <span class="rung top">National · DOH</span>
+      </div>
+      <p class="lead" style="margin-top:1rem">Data rolls up the hierarchy — real-time visibility, finally flowing upward.</p>
+    </div>
+  </section>
+
+  <!-- 8 · THE HUMAN SYSTEM -->
+  <section class="slide dark">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">07</span> Beyond the App</div>
+      <h2>The real intervention is human.</h2>
+      <div class="grid3">
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 5 2.5 5 2.5s5-1 5-2.5v-5"/></svg>
+          <h3>Train &amp; certify</h3>
+          <p>Standardized e-learning and in-person skills certification, verifiable by QR.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M8 12l-1 8 5-3 5 3-1-8"/></svg>
+          <h3>Recognize</h3>
+          <p>A professional identity and a permanent record of competence for every BHW.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.1a4 4 0 0 1 0 7.8"/><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M18 14a5 5 0 0 1 4 4.9V21"/></svg>
+          <h3>Support</h3>
+          <p>Supervisors can finally see, coach, and back their teams with real data.</p>
+        </div>
+      </div>
+      <p class="underline-note">Devices + connectivity + capacity — <span class="mark">that</span> is the investment. The software only makes it possible.</p>
+    </div>
+  </section>
+
+  <!-- 9 · BUILT TO SCALE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">08</span> Designed to Last</div>
+      <h2>From one barangay to the whole nation.</h2>
+      <div class="path">
+        <div class="p">One RHU<small>Pilot</small></div>
+        <div class="to">→</div>
+        <div class="p">Province<small>Expand</small></div>
+        <div class="to">→</div>
+        <div class="p big">~300,000<small>Nationwide</small></div>
+      </div>
+      <div class="chips">
+        <div class="chip"><b>Data sovereignty</b><p>Patient data never leaves Philippine infrastructure. Portable to a government server if needed.</p></div>
+        <div class="chip"><b>Privacy by design</b><p>Data Privacy Act compliant from day one — guaranteed by architecture, not by policy.</p></div>
+        <div class="chip"><b>Lean by default</b><p>Runs on free and low-cost tiers. Every peso of support stretches further.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · KOICA MANDATE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">09</span> Why World Vision–KOICA</div>
+      <h2>Your mandate, made concrete.</h2>
+      <div class="grid3">
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9 11h1.5l1-2 1.5 4 1-2H15"/></svg>
+          <h3>Universal Health Coverage</h3>
+          <p><b>SDG&nbsp;3.</b> Stronger primary care reaching every community — especially the underserved.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          <h3>Digital Government</h3>
+          <p>A model of public-service transformation, drawing on Korea's world-leading e-government experience.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>
+          <h3>Leave no one behind</h3>
+          <p>Last-mile, inclusive development that reaches rural and low-income families first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · THE ASK -->
+  <section class="slide darker">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">10</span> The Ask</div>
+      <h2>What we're asking World Vision–KOICA to build with us.</h2>
+      <div class="ask">
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2 0 0 1 5 0c0 2.5-5 1.5-5 4a2.5 2 0 0 0 5 0"/></svg>
+          <h3>Funding</h3>
+          <p>Grant support to develop, pilot, and scale the platform nationwide.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <h3>Equipment</h3>
+          <p>Devices and connectivity that put the tool in every BHW's hands.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 5 2.5 5 2.5s5-1 5-2.5v-5"/></svg>
+          <h3>Capacity</h3>
+          <p>Training programs that build digital and health capability on the ground.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12l-4 4 4 4"/><path d="M16 12l4-4-4-4"/><path d="M14 4l-4 16"/></svg>
+          <h3>Partnership</h3>
+          <p>Korean technical expertise and knowledge transfer, side by side.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · SCOPE -->
+  <section class="slide light">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">11</span> Scope of Coverage</div>
+      <h2>What the partnership covers.</h2>
+      <div class="phases">
+        <div class="phase active-p">
+          <div class="h">Pilot <span>Phase 1</span></div>
+          <ul>
+            <li>Chat Guide + Knowledge Base</li>
+            <li>One RHU / barangay cluster</li>
+            <li>Maternal &amp; Child Health</li>
+            <li>Baseline impact measured</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <div class="h">Expand <span>Phase 2</span></div>
+          <ul>
+            <li>E-learning &amp; certification</li>
+            <li>Roll-up dashboards</li>
+            <li>Immunization, nutrition, more</li>
+            <li>Provincial rollout</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <div class="h">National <span>Phase 3</span></div>
+          <ul>
+            <li>Surveys &amp; health-promotion tools</li>
+            <li>Profiling-system integration</li>
+            <li>Offline access</li>
+            <li>Nationwide — ~300,000 BHWs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="beneficiaries">
+        <span class="lbl">Who benefits</span>
+        <span class="btag">Barangay Health Workers</span>
+        <span class="btag">Mothers &amp; children</span>
+        <span class="btag">Communities</span>
+        <span class="btag">DOH decision-makers</span>
+      </div>
+      <p class="note">Indicative phasing — scope and timeline to be refined jointly with KOICA.</p>
+    </div>
+  </section>
+
+  <!-- 13 · CLOSE -->
+  <section class="slide darker close">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">12</span> The Goal</div>
+      <h2>A connected, capable frontline — and a real-time picture of the nation's health.</h2>
+      <p class="lead">Three hundred thousand health workers, seen and supported. Millions of families, better cared for. A public-health system that finally learns from its own frontline.</p>
+      <div class="invite">Let's build it together.</div>
+      <div class="invite-partners">
+        <b>Department of Health</b> · Bureau of Local Health Systems Development
+        <span class="dot">•</span>
+        <b>Center for Health Development</b> · Eastern Visayas
+        <span class="dot">•</span>
+        <b>World Vision–KOICA</b>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="chrome">
+  <div class="dots" id="dots" role="tablist" aria-label="Slides"></div>
+  <div class="navbtns">
+    <button id="prev" aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button id="next" aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+    var total = slides.length;
+    var cur = 0;
+    var curEl = document.getElementById('cur');
+    var prevBtn = document.getElementById('prev');
+    var nextBtn = document.getElementById('next');
+    var dotsWrap = document.getElementById('dots');
+
+    var dots = slides.map(function(_,i){
+      var b = document.createElement('button');
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label','Go to slide '+(i+1));
+      b.addEventListener('click',function(){go(i);});
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function pad(n){return n<10?'0'+n:''+n;}
+
+    /* ---- Chat Guide typing animation (slide 6) ---- */
+    var chat = (function(){
+      var body = document.getElementById('chatBody');
+      var bar = document.getElementById('chatInput');
+      var textEl = document.getElementById('chatText');
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      if(!body || !bar || !textEl || reduce) return {start:function(){},stop:function(){}};
+
+      var seq = [
+        {t:'q', text:'Ilang beses dapat magpa-checkup ang buntis?'},
+        {t:'a', html:'Ayon sa DOH, hindi bababa sa <b>4 na prenatal visits</b> ang inirerekomenda sa buong pagbubuntis.<small>Source · Maternal &amp; Child Health</small>'},
+        {t:'q', text:'Kung high-risk po?'},
+        {t:'a', html:'Mas madalas na check-up ang kailangan — i-refer agad sa midwife o RHU.<small>Tap to open full guide →</small>'}
+      ];
+      var gen = 0, timer = null;
+      function wait(ms){return new Promise(function(res){timer=setTimeout(res,ms);});}
+      function alive(g){return g===gen;}
+      function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+      function bubble(cls,html){var d=document.createElement('div');d.className='bub '+cls+' in';d.innerHTML=html;body.appendChild(d);body.scrollTop=body.scrollHeight;return d;}
+      function typing(){var d=document.createElement('div');d.className='typing';d.innerHTML='<i></i><i></i><i></i>';body.appendChild(d);body.scrollTop=body.scrollHeight;return d;}
+
+      function typeInto(str,g){
+        return new Promise(function(res){
+          var i=0; textEl.textContent='';
+          (function step(){
+            if(!alive(g)) return res();
+            if(i>=str.length) return res();
+            textEl.textContent += str.charAt(i++);
+            timer=setTimeout(step, str.charAt(i-1)===' ' ? 55 : 34);
+          })();
+        });
+      }
+
+      async function run(g){
+        body.innerHTML=''; bar.classList.remove('show'); textEl.textContent='';
+        while(alive(g)){
+          for(var i=0;i<seq.length && alive(g);i++){
+            var s=seq[i];
+            if(s.t==='q'){
+              bar.classList.add('show');
+              await typeInto(s.text,g); if(!alive(g))return;
+              await wait(420); if(!alive(g))return;
+              bar.classList.remove('show'); textEl.textContent='';
+              bubble('q', esc(s.text));
+              await wait(520);
+            } else {
+              var tp=typing();
+              await wait(1050);
+              tp.remove(); if(!alive(g))return;
+              bubble('a', s.html);
+              await wait(1500);
+            }
+          }
+          if(!alive(g))return;
+          await wait(2200); if(!alive(g))return;
+          body.innerHTML=''; await wait(500);
+        }
+      }
+      function start(){ gen++; var g=gen; run(g); }
+      function stop(){ gen++; if(timer){clearTimeout(timer);timer=null;} }
+      return {start:start, stop:stop};
+    })();
+    var APPROACH = slides.indexOf(document.getElementById('s-approach'));
+
+    function go(i){
+      i = Math.max(0, Math.min(total-1, i));
+      slides[cur].classList.remove('active');
+      dots[cur].classList.remove('on');
+      cur = i;
+      slides[cur].classList.add('active');
+      dots[cur].classList.add('on');
+      curEl.textContent = pad(cur+1);
+      prevBtn.disabled = cur===0;
+      nextBtn.disabled = cur===total-1;
+      if(cur===APPROACH) chat.start(); else chat.stop();
+      fit(slides[cur]);
+    }
+
+    /* ---- Fit each slide's content to the largest size that fits (LED/projector) ---- */
+    function fit(s){
+      if(!s) return;
+      var inner=s.querySelector('.slide__inner');
+      if(!inner) return;
+      inner.style.transform='none';
+      var cs=getComputedStyle(s);
+      var availW=s.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      var availH=s.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      var cw=inner.scrollWidth, ch=inner.scrollHeight;
+      if(!cw||!ch||availW<=0||availH<=0) return;
+      var scale=Math.min(availW/cw, availH/ch);
+      if(scale>1.002){ inner.style.transform='scale('+Math.min(scale,2.6)+')'; }
+    }
+    function fitAll(){ for(var i=0;i<slides.length;i++) fit(slides[i]); }
+    var rafId=null;
+    function scheduleFit(){ if(rafId) cancelAnimationFrame(rafId); rafId=requestAnimationFrame(fitAll); }
+    window.addEventListener('resize',scheduleFit);
+    window.addEventListener('orientationchange',scheduleFit);
+
+    prevBtn.addEventListener('click',function(){go(cur-1);});
+    nextBtn.addEventListener('click',function(){go(cur+1);});
+
+    document.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(cur+1);}
+      else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1);}
+      else if(e.key==='Home'){go(0);}
+      else if(e.key==='End'){go(total-1);}
+    });
+
+    // touch swipe
+    var x0=null;
+    document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+    document.addEventListener('touchend',function(e){
+      if(x0===null)return;
+      var dx=e.changedTouches[0].clientX-x0;
+      if(Math.abs(dx)>50){go(dx<0?cur+1:cur-1);}
+      x0=null;
+    },{passive:true});
+
+    go(0);
+    fitAll();
+    if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fitAll);}
+  })();
+</script>
