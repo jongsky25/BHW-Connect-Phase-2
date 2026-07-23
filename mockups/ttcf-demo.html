@@ -1,0 +1,963 @@
+<!--
+  BHW Connect Phase 2 — Chat Guide & Training visual mockup
+  Sample scenario: Timed & Targeted Care for Families (ttCF), Eastern Visayas.
+
+  Self-contained, no external requests (CSP-safe for publishing as an Artifact).
+  Body-only document: when published, a <!doctype>/<head>/<body> skeleton is
+  added automatically. Opens directly in any browser too.
+
+  NOTE ON CONTENT: ttCF health specifics (visit schedule, Q&A, quiz, checklist)
+  are realistic *sample* content for demonstration — not sourced from an
+  authoritative DOH / World Vision protocol. Correct exact figures before any
+  external showing.
+-->
+<style>
+  /* ---------- App design tokens (mirrors src/styles/tokens.css) ---------- */
+  :root {
+    --canvas: #f6f2ed;
+    --ink: #2b2420;
+    --primary: #b84e12;          /* Marigold, button-safe */
+    --primary-display: #e8641c;  /* Marigold, display only */
+    --secondary: #0c7c7e;        /* Bayanihan Teal */
+    --celebration: #ffc857;      /* Sampaguita Yellow */
+    --celebration-ink: #2b2420;
+    --success: #1f7a45;
+    --warning: #8f5a08;
+    --danger: #c53a3a;
+    --info: #2c6fa6;
+
+    /* opacity-mix helpers used across the app UI */
+    --ink-70: color-mix(in srgb, var(--ink) 70%, transparent);
+    --ink-20: color-mix(in srgb, var(--ink) 20%, transparent);
+    --ink-15: color-mix(in srgb, var(--ink) 15%, transparent);
+    --ink-10: color-mix(in srgb, var(--ink) 10%, transparent);
+    --ink-05: color-mix(in srgb, var(--ink) 5%, transparent);
+    --secondary-30: color-mix(in srgb, var(--secondary) 30%, transparent);
+    --secondary-10: color-mix(in srgb, var(--secondary) 10%, transparent);
+  }
+  /* App dark mode — driven by the in-demo light/dark toggle */
+  :root[data-apptheme="dark"] {
+    --canvas: #221b16;
+    --ink: #f5ede4;
+  }
+
+  /* ---------- Presentation stage (deliberately its own world) ---------- */
+  :root {
+    --stage-bg: #07302f;         /* deep Bayanihan teal */
+    --stage-bg-2: #0a3a3a;
+    --stage-fg: #eaf5f4;
+    --stage-muted: #9ec3c1;
+    --stage-line: color-mix(in srgb, #eaf5f4 16%, transparent);
+    --stage-accent: #e8641c;     /* marigold display */
+    --stage-gold: #ffc857;
+    --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --radius-frame: 22px;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--stage-fg);
+    background:
+      radial-gradient(1200px 600px at 82% -10%, rgba(232,100,28,0.18), transparent 60%),
+      radial-gradient(900px 500px at 0% 110%, rgba(255,200,87,0.10), transparent 55%),
+      linear-gradient(160deg, var(--stage-bg), var(--stage-bg-2));
+    background-attachment: fixed;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  :focus-visible { outline: 3px solid var(--stage-gold); outline-offset: 2px; border-radius: 4px; }
+
+  /* ---------- Top control bar ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 40;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    padding: 12px 20px;
+    background: color-mix(in srgb, var(--stage-bg) 82%, black);
+    border-bottom: 1px solid var(--stage-line);
+    backdrop-filter: blur(6px);
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; margin-right: auto; }
+  .brand b { color: #fff; font-size: 15px; letter-spacing: 0.2px; font-weight: 700; }
+  .brand span { color: var(--stage-muted); font-size: 12px; letter-spacing: 0.4px; }
+  .brand .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--stage-accent); display:inline-block; margin-right:2px; }
+
+  .ctl { display: flex; align-items: center; gap: 8px; }
+  .ctl > .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--stage-muted); }
+  .seg { display: inline-flex; overflow: hidden; border-radius: 999px; border: 1px solid var(--stage-line); }
+  .seg button {
+    appearance: none; border: 0; cursor: pointer; font: inherit; font-weight: 600; font-size: 13px;
+    padding: 6px 14px; background: transparent; color: var(--stage-fg); transition: background .15s, color .15s;
+  }
+  .seg button[aria-pressed="true"] { background: var(--stage-accent); color: #fff; }
+  .seg button:not([aria-pressed="true"]):hover { background: rgba(255,255,255,0.08); }
+
+  .legend { display: flex; align-items: center; gap: 14px; font-size: 11px; color: var(--stage-muted); }
+  .legend i { font-style: normal; display: inline-flex; align-items: center; gap: 6px; }
+  .tag { font-size: 10px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; }
+  .tag.live { background: color-mix(in srgb, var(--success) 26%, transparent); color: #bff0d0; border: 1px solid color-mix(in srgb, var(--success) 50%, transparent); }
+  .tag.road { background: color-mix(in srgb, var(--stage-gold) 22%, transparent); color: var(--stage-gold); border: 1px solid color-mix(in srgb, var(--stage-gold) 45%, transparent); }
+
+  /* ---------- Scene layout ---------- */
+  main { max-width: 1180px; margin: 0 auto; padding: 26px 20px 40px; }
+  .scene-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+  .scene-head .eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 1.6px; color: var(--stage-accent); font-weight: 700; }
+  .scene-head h2 { margin: 4px 0 2px; font-size: clamp(20px, 2.4vw, 28px); color: #fff; text-wrap: balance; line-height: 1.15; }
+  .scene-head p { margin: 0; color: var(--stage-muted); max-width: 62ch; line-height: 1.5; }
+  .stage { display: flex; gap: 26px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
+
+  /* device frames */
+  .phone {
+    width: 340px; max-width: 92vw; flex: 0 0 auto;
+    background: #0c0c0d; border-radius: 40px; padding: 12px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(255,255,255,0.06) inset;
+  }
+  .phone .notch { height: 22px; display: flex; justify-content: center; align-items: center; }
+  .phone .notch::before { content: ""; width: 120px; height: 6px; border-radius: 999px; background: #2a2a2c; }
+  .phone .glass {
+    background: var(--canvas); color: var(--ink);
+    border-radius: 30px; overflow: hidden; height: 660px; display: flex; flex-direction: column;
+  }
+  .laptop { width: 760px; max-width: 96vw; flex: 0 0 auto; }
+  .laptop .lid {
+    background: #0c0c0d; border-radius: 16px 16px 0 0; padding: 10px 10px 0;
+    box-shadow: 0 30px 60px -24px rgba(0,0,0,0.6);
+  }
+  .laptop .glass {
+    background: var(--canvas); color: var(--ink); border-radius: 8px 8px 0 0;
+    overflow: hidden; height: 560px; display: flex; flex-direction: column;
+  }
+  .laptop .base { height: 14px; background: linear-gradient(#161616,#0c0c0d); border-radius: 0 0 14px 14px;
+    box-shadow: 0 12px 24px -12px rgba(0,0,0,0.7); }
+  .laptop .base::after { content:""; display:block; width:90px; height:5px; margin: 3px auto 0; border-radius:0 0 8px 8px; background:#2a2a2c; }
+
+  /* ---------- Generic in-app UI (mirrors the shipped components) ---------- */
+  .app-header { display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    padding: 12px 16px; border-bottom: 1px solid var(--ink-10); background: var(--canvas); flex: 0 0 auto; }
+  .app-header .wordmark { font-weight: 700; color: var(--primary); font-size: 15px; }
+  .app-header .mini-toggle { font-size: 11px; color: var(--ink-70); display: flex; gap: 6px; align-items: center; }
+  .app-header .pill { border: 1px solid var(--ink-15); border-radius: 999px; overflow: hidden; display: inline-flex; }
+  .app-header .pill span { padding: 3px 9px; font-size: 11px; font-weight: 600; color: var(--ink); }
+  .app-header .pill span.on { background: var(--primary); color: var(--canvas); }
+
+  .app-body { flex: 1 1 auto; overflow-y: auto; padding: 16px; }
+  .app-body.chat { display: flex; flex-direction: column; }
+  .app-title { font-size: 20px; font-weight: 650; letter-spacing: -0.2px; margin: 0 0 2px; color: var(--ink); }
+  .app-sub { margin: 0 0 14px; color: var(--ink-70); font-size: 13px; line-height: 1.45; }
+
+  .log { display: flex; flex-direction: column; gap: 12px; }
+  .bubble { max-width: 85%; padding: 9px 13px; border-radius: 14px; font-size: 13.5px; line-height: 1.5; }
+  .bubble.user { margin-left: auto; background: var(--primary); color: var(--canvas); border-bottom-right-radius: 4px; }
+  .bubble.bot { background: var(--canvas); color: var(--ink); border: 1px solid var(--ink-10); border-bottom-left-radius: 4px; }
+  .bubble.bot.pending { color: var(--ink-70); }
+  .empty-state { border: 1px dashed var(--ink-20); border-radius: 10px; padding: 22px 16px; color: var(--ink-70); font-size: 13.5px; }
+  .celebrate { background: var(--celebration); color: var(--celebration-ink); border-radius: 12px; padding: 9px 13px; font-size: 12.5px; font-weight: 600; }
+  .chips { display: flex; flex-direction: column; gap: 8px; }
+  .chips .chips-h { font-size: 12px; font-weight: 600; color: var(--ink-70); }
+  .chip { text-align: left; min-height: 40px; border: 1px solid var(--ink-20); border-radius: 10px; padding: 8px 12px;
+    font-size: 12.5px; color: var(--ink); background: transparent; cursor: pointer; }
+  .chip:hover { background: var(--ink-05); }
+  .did-you-mean { border: 1px solid var(--ink-10); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .did-you-mean .h { font-weight: 600; color: var(--ink); font-size: 13px; }
+  .feedback { display: flex; align-items: center; gap: 8px; color: var(--ink-70); font-size: 12px; margin-top: 2px; }
+  .feedback button { min-width: 40px; min-height: 40px; border: 1px solid var(--ink-20); border-radius: 10px; background: transparent; cursor: pointer; font-size: 16px; }
+  .feedback button:hover { background: var(--ink-05); }
+  .logged-note { font-size: 11.5px; color: var(--ink-70); display: flex; gap: 6px; align-items: flex-start; }
+  .logged-note .k { color: var(--secondary); }
+
+  .composer { border-top: 1px solid var(--ink-10); padding: 12px 16px; flex: 0 0 auto; background: var(--canvas); }
+  .composer label { display: block; font-size: 12px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .composer .row { display: flex; gap: 8px; }
+  .composer input { flex: 1; min-height: 44px; border: 1px solid var(--ink-20); border-radius: 10px; background: var(--canvas); color: var(--ink); padding: 8px 12px; font: inherit; font-size: 13.5px; }
+  .composer input:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px var(--secondary-30); }
+  .composer button.send { min-height: 44px; min-width: 84px; border: 0; border-radius: 10px; background: var(--primary); color: var(--canvas); font-weight: 600; cursor: pointer; }
+  .typing-dots span { display:inline-block; animation: blink 1.2s infinite both; }
+  .typing-dots span:nth-child(2){ animation-delay:.2s } .typing-dots span:nth-child(3){ animation-delay:.4s }
+  @keyframes blink { 0%,80%,100%{opacity:.2} 40%{opacity:1} }
+
+  /* admin / desktop UI */
+  .admin-top { display: flex; align-items: center; justify-content: space-between; padding: 10px 18px; border-bottom: 1px solid var(--ink-10); background: var(--canvas); }
+  .admin-top .wordmark { font-weight: 700; color: var(--primary); font-size: 14px; }
+  .admin-top .who { font-size: 12px; color: var(--ink-70); }
+  .admin-tabs { display: flex; gap: 18px; padding: 10px 18px 0; font-size: 13px; font-weight: 600; border-bottom: 1px solid var(--ink-10); background: var(--canvas); }
+  .admin-tabs a { color: var(--secondary); text-decoration: none; padding-bottom: 10px; border-bottom: 2px solid transparent; cursor: pointer; }
+  .admin-tabs a.active { color: var(--ink); border-bottom-color: var(--primary); }
+  .admin-main { padding: 18px; overflow-y: auto; }
+  .range { display:inline-flex; gap:6px; align-items:center; font-size:12px; color: var(--ink-70); }
+  .range .b { border: 1px solid var(--ink-20); border-radius: 8px; padding: 4px 10px; font-size: 12px; background: transparent; color: var(--ink); }
+  .range .b.on { background: var(--ink-05); font-weight: 600; }
+
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .stat { border: 1px solid var(--ink-10); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+  .stat .l { font-size: 10.5px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: var(--ink-70); }
+  .stat .v { font-size: 24px; font-weight: 700; letter-spacing: -0.4px; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .stat .d { font-size: 11px; color: var(--success); font-weight: 600; }
+
+  h3.sec { font-size: 15px; font-weight: 650; color: var(--ink); margin: 22px 0 10px; }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--ink-10); border-radius: 10px; }
+  table.grid { width: 100%; border-collapse: collapse; min-width: 640px; }
+  table.grid th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--ink-70); font-weight: 700; padding: 9px 12px; background: var(--ink-05); }
+  table.grid td { padding: 11px 12px; font-size: 12.5px; color: var(--ink); border-top: 1px solid var(--ink-10); vertical-align: middle; }
+  table.grid tr.hot td { background: color-mix(in srgb, var(--celebration) 14%, transparent); }
+  .num { font-variant-numeric: tabular-nums; }
+  .badge { font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .badge.noans { background: color-mix(in srgb, var(--danger) 14%, transparent); color: var(--danger); }
+  .badge.badans { background: color-mix(in srgb, var(--warning) 16%, transparent); color: var(--warning); }
+  .btn { border: 0; border-radius: 8px; padding: 6px 11px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .btn.primary { background: var(--primary); color: var(--canvas); }
+  .btn.ghost { background: transparent; border: 1px solid var(--ink-20); color: var(--ink); }
+  .btn.big { padding: 9px 16px; font-size: 13px; border-radius: 9px; }
+  .btn:hover { filter: brightness(1.03); }
+
+  .ol { border: 1px solid var(--ink-10); border-radius: 10px; overflow: hidden; }
+  .ol li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 14px; font-size: 12.5px; color: var(--ink); border-top: 1px solid var(--ink-10); }
+  .ol li:first-child { border-top: 0; }
+  .ol li .m { color: var(--ink-70); font-variant-numeric: tabular-nums; }
+  .meter { display: inline-flex; align-items: center; gap: 8px; }
+  .meter .track { width: 90px; height: 8px; border-radius: 999px; background: var(--ink-10); overflow: hidden; }
+  .meter .fill { height: 8px; border-radius: 999px; background: var(--primary); }
+
+  /* KB entry form */
+  .kb-form { display: flex; flex-direction: column; gap: 14px; border: 1px solid var(--ink-10); border-radius: 10px; padding: 16px; }
+  .prefill { background: var(--secondary-10); border-radius: 8px; padding: 10px 12px; font-size: 12px; color: var(--ink); }
+  .fld { display: flex; flex-direction: column; gap: 5px; }
+  .fld label { font-size: 12px; font-weight: 600; color: var(--ink); }
+  .fld input, .fld textarea, .fld select { border: 1px solid var(--ink-20); border-radius: 8px; background: var(--canvas); color: var(--ink); padding: 8px 10px; font: inherit; font-size: 12.5px; }
+  .fld textarea { resize: vertical; min-height: 60px; }
+  .fld input:focus, .fld textarea:focus, .fld select:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px var(--secondary-30); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .form-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 2px; }
+
+  /* training */
+  .course-hero { display: flex; gap: 14px; align-items: center; padding: 14px; border-radius: 14px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--secondary) 12%, var(--canvas)), var(--canvas)); border: 1px solid var(--ink-10); }
+  .ring { --p: 58; width: 68px; height: 68px; border-radius: 999px; flex: 0 0 auto;
+    background: conic-gradient(var(--secondary) calc(var(--p)*1%), var(--ink-10) 0); display: grid; place-items: center; }
+  .ring::before { content: ""; width: 52px; height: 52px; border-radius: 999px; background: var(--canvas); grid-area: 1/1; }
+  .ring b { grid-area: 1/1; font-size: 13px; font-weight: 700; color: var(--ink); z-index: 1; font-variant-numeric: tabular-nums; }
+  .course-hero .meta h4 { margin: 0 0 3px; font-size: 15px; color: var(--ink); }
+  .course-hero .meta p { margin: 0; font-size: 12px; color: var(--ink-70); }
+  .modules { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+  .mod { display: flex; align-items: center; gap: 11px; border: 1px solid var(--ink-10); border-radius: 11px; padding: 10px 12px; }
+  .mod .n { width: 26px; height: 26px; flex: 0 0 auto; border-radius: 8px; display: grid; place-items: center; font-size: 12px; font-weight: 700; }
+  .mod .n.done { background: var(--success); color: #fff; }
+  .mod .n.now { background: var(--primary); color: #fff; }
+  .mod .n.todo { background: var(--ink-10); color: var(--ink-70); }
+  .mod .t { flex: 1; }
+  .mod .t b { display: block; font-size: 12.5px; color: var(--ink); font-weight: 600; }
+  .mod .t span { font-size: 11px; color: var(--ink-70); }
+  .mod .fmt { font-size: 10.5px; color: var(--ink-70); display: flex; gap: 5px; align-items: center; white-space: nowrap; }
+
+  .quiz { border: 1px solid var(--ink-10); border-radius: 12px; padding: 16px; }
+  .quiz .q { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 12px; }
+  .quiz .opt { display: flex; align-items: center; gap: 10px; border: 1px solid var(--ink-20); border-radius: 10px; padding: 11px 13px; margin-bottom: 8px; cursor: pointer; font-size: 13px; color: var(--ink); }
+  .quiz .opt .k { width: 20px; height: 20px; border-radius: 999px; border: 2px solid var(--ink-20); flex: 0 0 auto; }
+  .quiz .opt.correct { border-color: var(--success); background: color-mix(in srgb, var(--success) 10%, transparent); }
+  .quiz .opt.correct .k { border-color: var(--success); background: var(--success); }
+  .quiz .opt.wrong { border-color: var(--danger); background: color-mix(in srgb, var(--danger) 8%, transparent); }
+  .quiz .verdict { margin-top: 10px; font-size: 13px; font-weight: 600; }
+  .handoff { margin-top: 14px; border: 1px dashed var(--secondary); border-radius: 12px; padding: 14px; display: flex; gap: 12px; align-items: center; background: var(--secondary-10); }
+  .handoff .ic { font-size: 22px; }
+  .handoff .t b { font-size: 13px; color: var(--ink); } .handoff .t p { margin: 2px 0 0; font-size: 12px; color: var(--ink-70); }
+
+  /* assessor */
+  .check { display: flex; flex-direction: column; gap: 8px; }
+  .check .item { display: flex; align-items: center; gap: 11px; border: 1px solid var(--ink-10); border-radius: 10px; padding: 10px 12px; font-size: 12.5px; color: var(--ink); }
+  .check .item .box { width: 20px; height: 20px; border-radius: 6px; border: 2px solid var(--success); flex: 0 0 auto; display: grid; place-items: center; color: #fff; background: var(--success); font-size: 12px; }
+  .check .item.pending .box { border-color: var(--ink-20); background: transparent; }
+
+  /* certificate */
+  .cert-wrap { display: grid; place-items: center; padding: 8px; }
+  .cert {
+    width: 100%; max-width: 560px; border-radius: 16px; overflow: hidden; position: relative;
+    background: var(--canvas); border: 1px solid var(--ink-10);
+    box-shadow: 0 20px 50px -24px rgba(0,0,0,0.5);
+  }
+  .cert .band { height: 8px; background: linear-gradient(90deg, var(--primary-display), var(--celebration), var(--secondary)); }
+  .cert .inner { padding: 22px 26px; text-align: center; }
+  .cert .seal { width: 60px; height: 60px; margin: 0 auto 8px; border-radius: 999px; background: var(--celebration); color: var(--celebration-ink); display: grid; place-items: center; font-size: 26px; box-shadow: 0 0 0 6px color-mix(in srgb, var(--celebration) 30%, transparent); }
+  .cert .k { font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--ink-70); font-weight: 700; }
+  .cert h3 { margin: 6px 0 2px; font-size: 20px; color: var(--ink); }
+  .cert .name { font-size: 26px; font-weight: 750; color: var(--primary-display); margin: 12px 0 4px; letter-spacing: -0.3px; }
+  .cert .desc { font-size: 12.5px; color: var(--ink-70); max-width: 40ch; margin: 0 auto; line-height: 1.5; }
+  .cert .foot { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 18px; text-align: left; }
+  .cert .foot .sig { font-size: 11px; color: var(--ink-70); }
+  .cert .foot .sig b { display: block; color: var(--ink); font-size: 12.5px; }
+  .qr { width: 70px; height: 70px; border-radius: 8px; background: #fff; padding: 5px; }
+  .qr svg { display: block; }
+  .cert .verify { font-size: 10.5px; color: var(--secondary); text-align: right; }
+
+  /* title + recap scenes */
+  .hero { text-align: center; padding: 30px 12px 6px; }
+  .hero .kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--stage-gold); border: 1px solid color-mix(in srgb, var(--stage-gold) 40%, transparent); border-radius: 999px; padding: 5px 14px; }
+  .hero h1 { font-size: clamp(30px, 5vw, 52px); line-height: 1.05; margin: 18px auto 10px; color: #fff; max-width: 16ch; text-wrap: balance; letter-spacing: -0.5px; }
+  .hero h1 em { font-style: normal; color: var(--stage-accent); }
+  .hero p { max-width: 60ch; margin: 0 auto; color: var(--stage-muted); font-size: 16px; line-height: 1.6; }
+  .facts { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 26px auto 8px; }
+  .fact { border: 1px solid var(--stage-line); border-radius: 14px; padding: 16px 18px; min-width: 150px; background: rgba(255,255,255,0.03); }
+  .fact b { display: block; font-size: 26px; color: var(--stage-gold); font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+  .fact span { font-size: 12px; color: var(--stage-muted); }
+  .journeys { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top: 22px; }
+  .journey { border:1px solid var(--stage-line); border-radius:14px; padding:16px; width:270px; text-align:left; background: rgba(255,255,255,0.03); }
+  .journey .h { display:flex; align-items:center; gap:8px; color:#fff; font-weight:700; font-size:14px; }
+  .journey p { color: var(--stage-muted); font-size:12.5px; line-height:1.5; margin:8px 0 0; }
+
+  .loop { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 6px; }
+  .loop .step { border: 1px solid var(--stage-line); border-radius: 14px; padding: 16px; background: rgba(255,255,255,0.03); position: relative; }
+  .loop .step .n { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--stage-accent); }
+  .loop .step b { display: block; color: #fff; font-size: 14px; margin: 6px 0 4px; }
+  .loop .step p { color: var(--stage-muted); font-size: 12px; line-height: 1.5; margin: 0; }
+  .loop .step::after { content: "→"; position: absolute; right: -13px; top: 50%; transform: translateY(-50%); color: var(--stage-accent); font-size: 18px; z-index: 2; }
+  .loop .step:last-child::after { content: "↺"; right: 50%; bottom: -30px; top: auto; transform: translateX(50%); }
+
+  /* footer nav */
+  .footnav { position: sticky; bottom: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 12px 20px; background: color-mix(in srgb, var(--stage-bg) 82%, black); border-top: 1px solid var(--stage-line); backdrop-filter: blur(6px); }
+  .dots { display: flex; gap: 7px; flex-wrap: wrap; }
+  .dots button { width: 9px; height: 9px; border-radius: 999px; border: 0; padding: 0; background: rgba(255,255,255,0.22); cursor: pointer; }
+  .dots button.on { background: var(--stage-accent); transform: scale(1.25); }
+  .nav-btns { display: flex; gap: 10px; }
+  .nav-btns button { appearance: none; cursor: pointer; font: inherit; font-weight: 600; font-size: 13px; border-radius: 10px; padding: 9px 18px; border: 1px solid var(--stage-line); background: rgba(255,255,255,0.06); color: #fff; }
+  .nav-btns button.prime { background: var(--stage-accent); border-color: var(--stage-accent); }
+  .nav-btns button:disabled { opacity: 0.4; cursor: default; }
+  .stepcount { font-size: 12px; color: var(--stage-muted); font-variant-numeric: tabular-nums; }
+
+  .scene-tag { display: inline-flex; margin-left: 10px; vertical-align: middle; }
+
+  #confetti { position: fixed; inset: 0; pointer-events: none; z-index: 50; }
+
+  @media (max-width: 900px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .loop { grid-template-columns: 1fr 1fr; }
+    .loop .step::after { display: none; }
+    .grid2 { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+
+<div class="topbar">
+  <div class="brand"><span class="dot"></span><b>BHW Connect</b><span data-t="stageKicker">Product walkthrough</span></div>
+
+  <div class="ctl">
+    <span class="lbl" data-t="langLbl">Wika</span>
+    <div class="seg" id="langSeg">
+      <button data-lang="fil" aria-pressed="true">Filipino</button>
+      <button data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <div class="ctl">
+    <span class="lbl" data-t="themeLbl">App theme</span>
+    <div class="seg" id="themeSeg">
+      <button data-theme="light" aria-pressed="true" data-t="light">Light</button>
+      <button data-theme="dark" aria-pressed="false" data-t="dark">Dark</button>
+    </div>
+  </div>
+
+  <div class="legend">
+    <i><span class="tag live">LIVE</span> <span data-t="legendLive">Built in Phase 1</span></i>
+    <i><span class="tag road">ROADMAP</span> <span data-t="legendRoad">Concept</span></i>
+  </div>
+</div>
+
+<main id="stageRoot" aria-live="polite"></main>
+
+<div class="footnav">
+  <div class="dots" id="dots"></div>
+  <div class="stepcount" id="stepcount"></div>
+  <div class="nav-btns">
+    <button id="prevBtn" data-t="prev">Back</button>
+    <button id="nextBtn" class="prime" data-t="next">Next</button>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------------------------------------------------------------- i18n
+  var I = {
+    fil: {
+      stageKicker: "Product walkthrough", langLbl: "Wika", themeLbl: "Tema ng app",
+      light: "Light", dark: "Dark", legendLive: "Nasa Phase 1 na", legendRoad: "Konsepto",
+      prev: "Bumalik", next: "Susunod",
+
+      // scene 0
+      s0_kicker: "Chat Guide + Pagsasanay",
+      s0_title_a: "Isang tanong ang layo", s0_title_em: "ng tamang alaga",
+      s0_sub: "Paano tinutulungan ng BHW Connect ang mga Barangay Health Worker sa programang Timed & Targeted Care for Families (ttCF) sa Eastern Visayas — mula sa Chat Guide na sumasagot agad, hanggang sa sertipikadong pagsasanay.",
+      f1_b: "12", f1_s: "structured na home visit", f2_b: "1,000", f2_s: "unang araw ng buhay ng bata",
+      f3_b: "FIL / EN", f3_s: "bilingual + Taglish", f4_b: "₱0", f4_s: "walang bayad na AI",
+      j1_h: "Chat Guide", j1_p: "Nagtatanong ang BHW sa Taglish; sumasagot ang app mula sa Knowledge Base. Kung walang sagot, naitatala para pagandahin.",
+      j2_h: "Pagsasanay at Sertipiko", j2_p: "ttCF course na naka-angkla sa 12 home visits, may pagsusulit, in-person skills demo, at QR-verified na sertipiko.",
+      startHint: "I-click ang Susunod para simulan ang demo.",
+
+      // Chat Guide
+      appName: "BHW Connect", chatTitle: "Chat Guide",
+      chatIntro: "Magtanong tungkol sa kalusugan ng ina at bata sa English, Filipino, o Taglish.",
+      chatEmpty: "Magtanong tungkol sa kalusugan ng ina at bata.",
+      inputLabel: "Ang iyong tanong", inputPh: "I-type ang iyong tanong dito…", send: "Ipadala",
+      related: "Kaugnay na mga tanong", didYouMean: "Ito ba ang ibig mong sabihin…?",
+      feedbackPrompt: "Nakatulong ba ito?", feedbackThanks: "Salamat sa iyong feedback!",
+      firstAnswer: "🎉 Magaling! Nasagot na ang iyong unang tanong sa Chat Guide.",
+      noAnswer: "Wala pa akong sagot diyan. Naitala ko na ang iyong tanong para maidagdag ito ng aming team sa Chat Guide.",
+      loggedNote: "Naitala para sa pagsusuri ng admin — makikita ito sa gap queue.",
+      gapClosed: "🎉 Nasagot na! Idinagdag ng admin ang sagot — ito ang buong loop sa isang minuto.",
+
+      q1: "Kailan dapat ang unang home visit sa buntis?",
+      a1: "Ang unang ttCF home visit ay ginagawa sa unang trimester, sa sandaling makumpirma ang pagbubuntis (mga 0–12 linggo). Dito ie-enroll ang nanay sa antenatal care, sisimulan ang iron–folic acid, at ipaplano ang natitirang 11 bisita hanggang sa ika-2 kaarawan ng bata.",
+      q1r1: "Ilan lahat ang home visits sa ttCF?", q1r2: "Anong dala sa unang home visit?", q1r3: "Kailan ang unang prenatal checkup?",
+
+      q2typed: "anong bakuna sa new born baby?",
+      q2corrected: "Anong mga bakuna ang ibinibigay sa bagong silang na sanggol?",
+      a2: "Sa loob ng unang 24 oras pagkasilang: BCG (laban sa TB) at unang dose ng Hepatitis B. Itala ang mga ito sa Early Childhood Care card at ipaalala ang susunod na bakuna sa ika-6 na linggo.",
+      q2r1: "Kailan ang susunod na bakuna pagkatapos ng kapanganakan?", q2r2: "Ligtas ba ang bakuna sa premature na sanggol?",
+
+      q3: "Pwede bang magpasuso kung may lagnat o trangkaso ang nanay?",
+      a3: "Oo, ligtas pa ring magpasuso kahit may trangkaso o lagnat ang nanay. Magsuot ng mask, maghugas ng kamay bago magpasuso, at ipagpatuloy ang exclusive breastfeeding hanggang 6 na buwan. Kumonsulta sa RHU kung tumagal ang lagnat o may hirap sa paghinga ang sanggol.",
+
+      // scene labels
+      s1_eye: "1 · Chat Guide", s1_h: "Sumasagot agad, sa wikang gamit ng BHW",
+      s1_p: "Nag-type si Rosa, isang BHW, ng tanong sa Taglish. Sumagot ang Chat Guide mula sa Knowledge Base — may kaugnay na tanong at feedback.",
+      s2_eye: "2 · Chat Guide", s2_h: "Mali ang spelling? Taglish? Kaya pa rin.",
+      s2_p: "Rule-based na fuzzy matching — walang bayad na AI. Nauunawaan pa rin ang maling baybay at halong wika.",
+      s3_eye: "3 · Chat Guide", s3_h: "Walang sagot? Hindi ito nawawala.",
+      s3_p: "Kapag walang tugma, magalang na sasabihin ng app — at tahimik na itatala ang tanong para sa admin.",
+      s4_eye: "4 · Admin · Gap detection", s4_h: "Nakikita ng admin ang bawat hindi nasagot",
+      s4_p: "Ang tanong ni Rosa ay nasa tuktok ng gap triage queue. Isang click para gawing bagong KB entry.",
+      s5_eye: "5 · Admin · Knowledge Base", s5_h: "Sagutin nang minsanan, para sa lahat",
+      s5_p: "Naka-pre-fill na ang form mula sa hindi nasagot na tanong. I-type ang sagot, i-publish.",
+      s6_eye: "6 · Chat Guide", s6_h: "Sarado ang loop — nasagot na",
+      s6_p: "Muling itinanong ni Rosa. Ngayon may sagot na — dahil natuto ang sistema mula sa totoong tanong.",
+      s7_eye: "7 · Pagsasanay", s7_h: "ttCF course, naka-angkla sa 12 home visits",
+      s7_p: "Natututo ang BHW online — video, slides, pagsusulit — bago ang in-person skills demo.",
+      s8_eye: "8 · Pagsasanay", s8_h: "Maikling pagsusulit kada modyul",
+      s8_p: "Nakatakda ang passing at retake kada course. Pagkatapos, ipoproseso ang in-person demo.",
+      s9_eye: "9 · Assessor", s9_h: "Open queue — kukunin ng kwalipikadong assessor",
+      s9_p: "Ang nurse o doktor ay pipili mula sa pending na assessment, gagradohin ang skills demo, at sesertipikahin.",
+      s10_eye: "10 · Sertipiko", s10_h: "Awtomatikong sertipiko, may QR verification",
+      s10_p: "Pagkatapos ng skills demo, awtomatikong nabubuo ang sertipiko — nada-download na PDF, may QR para ma-verify.",
+      s11_eye: "11 · Admin · Dashboard", s11_h: "Nakikita ng superbisor ang progreso",
+      s11_p: "% completion at bilang ng sertipiko kada barangay — bahagi ng roll-up dashboard.",
+      s12_eye: "Buod", s12_h: "Isang buong loop na natututo",
+      s12_p: "Mula tanong hanggang sagot hanggang sertipikadong BHW — ito ang buong kwento ng BHW Connect.",
+
+      // admin
+      adWho: "Admin · Barangay San Isidro", tabActivity: "Activity", tabChat: "Chat Guide", tabReports: "Reports",
+      tabTraining: "Training", range30: "Huling 30 araw",
+      gapHeading: "Gap triage queue", colQ: "Tanong", colAsked: "Beses tinanong", colReason: "Dahilan", colAct: "Aksyon",
+      noans: "Walang sagot", badans: "Mahinang sagot", createKb: "Gumawa ng KB entry", dismiss: "Alisin",
+      topHeading: "Pinakamadalas itanong", matches: "tugma", deflHeading: "Deflection rate trend",
+      colDate: "Petsa", colAskedN: "Tinanong", colAnswered: "Nasagot", colRate: "Deflection rate",
+      freshHeading: "Content freshness", freshLbl: "Entry na lampas sa review-due",
+      kActivation: "Activation", kWau: "Weekly active", kDefl: "Deflection rate", kCsat: "Answer CSAT",
+
+      // KB form
+      kbHeading: "Bagong Q&A entry", prefillBanner: "Ginagawa ang entry na ito mula sa hindi nasagot na tanong:",
+      fCat: "Kategorya", fQfil: "Tanong (Filipino)", fQen: "Tanong (English)",
+      fAfil: "Sagot (Filipino)", fAen: "Sagot (English)", fKw: "Mga keyword", fKwPh: "Hiwalayin ng kuwit, hal. pagpapasuso, lagnat",
+      fOwner: "May-ari", fReview: "Review due", catMCH: "Kalusugan ng Ina at Bata",
+      ownerName: "Nurse Elena Reyes", saveDraft: "I-save ang draft", publish: "I-publish",
+      publishedToast: "Na-publish! Available na sa Chat Guide.",
+
+      // training
+      courseTitle: "Timed & Targeted Care for Families", courseSub: "Unang 1,000 Araw · 12 Home Visits",
+      progress: "7 / 12 modyul", modDone: "Tapos na", modNow: "Kasalukuyan", modTodo: "Nakatakda",
+      quizTitle: "Modyul 8 · Pagsusulit", quizTag: "Passing 80% · 2 retake",
+      quizQ: "Kailan sisimulan ang complementary feeding bukod sa gatas ng ina?",
+      qo1: "Sa 4 na buwan", qo2: "Sa 6 na buwan", qo3: "Sa 9 na buwan", qo4: "Sa 12 buwan",
+      quizPass: "✓ Tama! Sa 6 na buwan, kasabay ng patuloy na pagpapasuso.",
+      handoffB: "Kumpleto na ang online modules", handoffP: "Susunod: in-person skills demonstration sa isang assessor.",
+      goDemo: "Iproseso ang skills demo",
+      assessTitle: "Pending na assessment", assessSub: "Open queue · Barangay San Isidro RHU",
+      assessTake: "Kunin ito", assessName: "Rosa D. Mendoza · ttCF Home Visit Demo",
+      checkHeading: "Skills demonstration checklist", certifyBtn: "Sertipikahin ang BHW",
+      chk1: "Wastong pagbati at pagkuha ng pahintulot", chk2: "Ginamit ang ttCF visit booklet",
+      chk3: "Napayuhan tungkol sa danger signs", chk4: "Wastong breastfeeding positioning", chk5: "Tama ang pagtatala ng bisita",
+      certK: "Sertipiko ng Pagsasanay", certFor: "Ipinagkakaloob kay",
+      certDesc: "sa matagumpay na pagkumpleto ng Timed & Targeted Care for Families — Unang 1,000 Araw, kasama ang in-person skills demonstration.",
+      certSig: "Assessor", certSigName: "Nurse Elena Reyes, RN", certVerify: "I-scan para ma-verify",
+      certId: "Cert ID: TTCF-EV-2026-0417", certToast: "🎉 Sertipikado na si Rosa!",
+      tdCompletion: "Completion rate", tdCerts: "Sertipikong naibigay", tdActive: "BHW sa pagsasanay", tdAvg: "Katamt. araw hanggang sertipiko",
+      tdNote: "Konsepto — bahagi ng roll-up dashboard kapag na-ship na ang e-learning.",
+      loopN1: "Tanong", loopB1: "Nagtatanong ang BHW", loopP1: "Sa Taglish, sa Chat Guide.",
+      loopN2: "Gap", loopB2: "Naitala ang walang sagot", loopP2: "Diretso sa admin gap queue.",
+      loopN3: "Sagot", loopB3: "Nag-publish ang admin", loopP3: "Isang KB entry, bilingual.",
+      loopN4: "Lakas", loopB4: "Sertipikadong BHW", loopP4: "Handa sa 12 home visits.",
+    },
+    en: {
+      stageKicker: "Product walkthrough", langLbl: "Language", themeLbl: "App theme",
+      light: "Light", dark: "Dark", legendLive: "Built in Phase 1", legendRoad: "Concept",
+      prev: "Back", next: "Next",
+
+      s0_kicker: "Chat Guide + Training",
+      s0_title_a: "The right care is", s0_title_em: "one question away",
+      s0_sub: "How BHW Connect supports Barangay Health Workers running the Timed & Targeted Care for Families (ttCF) program in Eastern Visayas — from a Chat Guide that answers on the spot, to certified training.",
+      f1_b: "12", f1_s: "structured home visits", f2_b: "1,000", f2_s: "first days of a child's life",
+      f3_b: "FIL / EN", f3_s: "bilingual + Taglish", f4_b: "₱0", f4_s: "no paid AI",
+      j1_h: "Chat Guide", j1_p: "A BHW asks in Taglish; the app answers from the Knowledge Base. No match? The question is logged so content improves.",
+      j2_h: "Training & Certification", j2_p: "A ttCF course mapped to the 12 home visits, with a quiz, in-person skills demo, and a QR-verified certificate.",
+      startHint: "Click Next to start the demo.",
+
+      appName: "BHW Connect", chatTitle: "Chat Guide",
+      chatIntro: "Ask a maternal and child health question in English, Filipino, or Taglish.",
+      chatEmpty: "Ask me anything about maternal and child health.",
+      inputLabel: "Your question", inputPh: "Type your question here…", send: "Send",
+      related: "Related questions", didYouMean: "Did you mean…?",
+      feedbackPrompt: "Was this helpful?", feedbackThanks: "Thanks for your feedback!",
+      firstAnswer: "🎉 Great! You got your first answer from the Chat Guide.",
+      noAnswer: "I don't have an answer for that yet. I've noted your question so our team can add it to the Chat Guide.",
+      loggedNote: "Logged for admin review — it shows up in the gap queue.",
+      gapClosed: "🎉 Answered! The admin added the answer — that's the full loop in one minute.",
+
+      q1: "When should the first home visit for a pregnant woman happen?",
+      a1: "The first ttCF home visit happens in the first trimester, as soon as pregnancy is confirmed (about 0–12 weeks). It enrolls the mother in antenatal care, starts iron–folic acid, and plans the remaining 11 visits through the child's 2nd birthday.",
+      q1r1: "How many home visits are there in ttCF?", q1r2: "What is covered in the first home visit?", q1r3: "When is the first prenatal checkup?",
+
+      q2typed: "anong bakuna sa new born baby?",
+      q2corrected: "What vaccines are given to a newborn baby?",
+      a2: "Within the first 24 hours after birth: BCG (against TB) and the first dose of Hepatitis B. Record them on the Early Childhood Care card and remind the family of the next vaccines at 6 weeks.",
+      q2r1: "When are the next vaccines after birth?", q2r2: "Are vaccines safe for a premature baby?",
+
+      q3: "Can a mother keep breastfeeding if she has a fever or the flu?",
+      a3: "Yes, it's still safe to breastfeed with a fever or the flu. Wear a mask, wash hands before feeding, and continue exclusive breastfeeding through 6 months. Consult the RHU if the fever persists or the baby has trouble breathing.",
+
+      s1_eye: "1 · Chat Guide", s1_h: "Answers on the spot, in the BHW's own words",
+      s1_p: "Rosa, a BHW, types a question in Taglish. The Chat Guide answers from the Knowledge Base — with related questions and feedback.",
+      s2_eye: "2 · Chat Guide", s2_h: "Misspelled? Taglish? Still understood.",
+      s2_p: "Rule-based fuzzy matching — no paid AI. It still recognizes typos and mixed language.",
+      s3_eye: "3 · Chat Guide", s3_h: "No answer? Nothing is lost.",
+      s3_p: "When there's no match, the app says so gracefully — and quietly logs the question for the admin.",
+      s4_eye: "4 · Admin · Gap detection", s4_h: "The admin sees every unanswered question",
+      s4_p: "Rosa's question sits at the top of the gap triage queue. One click turns it into a new KB entry.",
+      s5_eye: "5 · Admin · Knowledge Base", s5_h: "Answer it once, for everyone",
+      s5_p: "The form is pre-filled from the unanswered question. Type the answer, publish.",
+      s6_eye: "6 · Chat Guide", s6_h: "The loop closes — now it's answered",
+      s6_p: "Rosa asks again. Now there's an answer — because the system learned from a real question.",
+      s7_eye: "7 · Training", s7_h: "A ttCF course mapped to the 12 home visits",
+      s7_p: "The BHW learns online — video, slides, quizzes — before the in-person skills demo.",
+      s8_eye: "8 · Training", s8_h: "A short quiz per module",
+      s8_p: "Passing score and retakes are set per course. Then the in-person demo is scheduled.",
+      s9_eye: "9 · Assessor", s9_h: "Open queue — any qualified assessor picks it up",
+      s9_p: "A nurse or doctor takes a pending assessment, grades the skills demo, and certifies.",
+      s10_eye: "10 · Certificate", s10_h: "Auto-generated certificate with QR verification",
+      s10_p: "After the skills demo, a certificate is generated automatically — a downloadable PDF with a QR code to verify.",
+      s11_eye: "11 · Admin · Dashboard", s11_h: "Supervisors see training progress",
+      s11_p: "% completion and certificates issued per barangay — part of the roll-up dashboard.",
+      s12_eye: "Recap", s12_h: "One loop that keeps learning",
+      s12_p: "From question to answer to certified BHW — that's the whole BHW Connect story.",
+
+      adWho: "Admin · Barangay San Isidro", tabActivity: "Activity", tabChat: "Chat Guide", tabReports: "Reports",
+      tabTraining: "Training", range30: "Last 30 days",
+      gapHeading: "Gap triage queue", colQ: "Question", colAsked: "Times asked", colReason: "Reason", colAct: "Actions",
+      noans: "No answer", badans: "Bad answer", createKb: "Create KB entry from this", dismiss: "Dismiss",
+      topHeading: "Top-asked topics", matches: "matches", deflHeading: "Deflection rate trend",
+      colDate: "Date", colAskedN: "Asked", colAnswered: "Answered", colRate: "Deflection rate",
+      freshHeading: "Content freshness", freshLbl: "Published entries past review-due",
+      kActivation: "Activation", kWau: "Weekly active", kDefl: "Deflection rate", kCsat: "Answer CSAT",
+
+      kbHeading: "New Q&A entry", prefillBanner: "Creating this entry from an unanswered question:",
+      fCat: "Category", fQfil: "Question (Filipino)", fQen: "Question (English)",
+      fAfil: "Answer (Filipino)", fAen: "Answer (English)", fKw: "Keywords", fKwPh: "Comma-separated, e.g. breastfeeding, fever",
+      fOwner: "Owner", fReview: "Review due", catMCH: "Maternal & Child Health",
+      ownerName: "Nurse Elena Reyes", saveDraft: "Save draft", publish: "Publish",
+      publishedToast: "Published! Now live in the Chat Guide.",
+
+      courseTitle: "Timed & Targeted Care for Families", courseSub: "First 1,000 Days · 12 Home Visits",
+      progress: "7 / 12 modules", modDone: "Done", modNow: "In progress", modTodo: "Locked",
+      quizTitle: "Module 8 · Quiz", quizTag: "Passing 80% · 2 retakes",
+      quizQ: "When is complementary feeding started, alongside breast milk?",
+      qo1: "At 4 months", qo2: "At 6 months", qo3: "At 9 months", qo4: "At 12 months",
+      quizPass: "✓ Correct! At 6 months, alongside continued breastfeeding.",
+      handoffB: "Online modules complete", handoffP: "Next: an in-person skills demonstration with an assessor.",
+      goDemo: "Proceed to skills demo",
+      assessTitle: "Pending assessment", assessSub: "Open queue · Barangay San Isidro RHU",
+      assessTake: "Take this", assessName: "Rosa D. Mendoza · ttCF Home Visit Demo",
+      checkHeading: "Skills demonstration checklist", certifyBtn: "Certify BHW",
+      chk1: "Correct greeting and consent", chk2: "Used the ttCF visit booklet",
+      chk3: "Counseled on danger signs", chk4: "Correct breastfeeding positioning", chk5: "Recorded the visit accurately",
+      certK: "Certificate of Completion", certFor: "Awarded to",
+      certDesc: "for successfully completing Timed & Targeted Care for Families — First 1,000 Days, including the in-person skills demonstration.",
+      certSig: "Assessor", certSigName: "Nurse Elena Reyes, RN", certVerify: "Scan to verify",
+      certId: "Cert ID: TTCF-EV-2026-0417", certToast: "🎉 Rosa is now certified!",
+      tdCompletion: "Completion rate", tdCerts: "Certificates issued", tdActive: "BHWs in training", tdAvg: "Avg days to certify",
+      tdNote: "Concept — part of the roll-up dashboard once e-learning ships.",
+      loopN1: "Question", loopB1: "A BHW asks", loopP1: "In Taglish, in the Chat Guide.",
+      loopN2: "Gap", loopB2: "The miss is logged", loopP2: "Straight to the admin gap queue.",
+      loopN3: "Answer", loopB3: "The admin publishes", loopP3: "One KB entry, bilingual.",
+      loopN4: "Capacity", loopB4: "A certified BHW", loopP4: "Ready for 12 home visits.",
+    }
+  };
+
+  var state = { locale: "fil", theme: "light", idx: 0, published: false };
+  function t(k) { return (I[state.locale] && I[state.locale][k]) || (I.en[k]) || k; }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+
+  // -------------------------------------------------------------- fragments
+  function phoneHeader() {
+    return '<div class="app-header"><span class="wordmark">'+t("appName")+'</span>'
+      + '<span class="mini-toggle">'+t("langLbl")+' <span class="pill"><span class="'+(state.locale==="fil"?"on":"")+'">FIL</span><span class="'+(state.locale==="en"?"on":"")+'">EN</span></span></span></div>';
+  }
+  function feedbackRow() {
+    return '<div class="feedback"><span>'+t("feedbackPrompt")+'</span>'
+      + '<button type="button" aria-label="Helpful">👍</button><button type="button" aria-label="Not helpful">👎</button></div>';
+  }
+  function chip(txt){ return '<button class="chip" type="button">'+esc(txt)+'</button>'; }
+  function composer(){
+    return '<div class="composer"><label>'+t("inputLabel")+'</label><div class="row">'
+      + '<input placeholder="'+esc(t("inputPh"))+'" readonly><button class="send" type="button">'+t("send")+'</button></div></div>';
+  }
+  function phone(inner){ return '<div class="phone"><div class="notch"></div><div class="glass">'+phoneHeader()+inner+composer()+'</div></div>'; }
+  function phoneNoComposer(inner){ return '<div class="phone"><div class="notch"></div><div class="glass">'+phoneHeader()+inner+'</div></div>'; }
+
+  function adminChrome(active, inner){
+    var tab = function(key, id){ return '<a class="'+(active===id?"active":"")+'">'+t(key)+'</a>'; };
+    return '<div class="laptop"><div class="lid"><div class="glass">'
+      + '<div class="admin-top"><span class="wordmark">'+t("appName")+' · Admin</span><span class="who">'+t("adWho")+'</span></div>'
+      + '<div class="admin-tabs">'+tab("tabActivity","activity")+tab("tabChat","chat")+tab("tabReports","reports")+tab("tabTraining","training")+'</div>'
+      + '<div class="admin-main">'+inner+'</div>'
+      + '</div></div><div class="base"></div></div>';
+  }
+
+  function sceneHead(eye, h, p, tag){
+    var tg = tag ? '<span class="scene-tag"><span class="tag '+(tag==="live"?"live\">LIVE":"road\">ROADMAP")+'</span></span>' : '';
+    return '<div class="scene-head"><div><div class="eyebrow">'+t(eye)+'</div>'
+      + '<h2>'+t(h)+tg+'</h2><p>'+t(p)+'</p></div></div>';
+  }
+
+  // decorative QR-like pattern (not a functional code) — deterministic
+  function qrSvg(){
+    var n=21, cells="", seed=0x9e3779b9;
+    function rnd(i){ var x=Math.sin(i*12.9898+seed)*43758.5453; return x-Math.floor(x); }
+    // three finder squares in the corners, like a real QR
+    function inFinder(x,y){
+      var a=(x<7&&y<7), b=(x>=n-7&&y<7), c=(x<7&&y>=n-7);
+      if(!(a||b||c)) return -1;
+      var lx = a? x : b? x-(n-7) : x;
+      var ly = (a||b)? y : y-(n-7);
+      var ring = (lx===0||lx===6||ly===0||ly===6);
+      var core = (lx>=2&&lx<=4&&ly>=2&&ly<=4);
+      return (ring||core) ? 1 : 0;
+    }
+    for(var y=0;y<n;y++){ for(var x=0;x<n;x++){
+      var f=inFinder(x,y);
+      var on = f>=0 ? f : (rnd(y*n+x) > 0.5 ? 1 : 0);
+      if(on) cells += '<rect x="'+x+'" y="'+y+'" width="1" height="1"/>';
+    }}
+    return '<svg viewBox="0 0 21 21" width="60" height="60" shape-rendering="crispEdges" aria-hidden="true"><g fill="#0c0c0d">'+cells+'</g></svg>';
+  }
+
+  // -------------------------------------------------------------- scenes
+  var scenes = [];
+
+  // 0 — title
+  scenes.push({ id:"intro", full:true, render:function(){
+    return '<div class="hero"><span class="kicker">'+t("s0_kicker")+'</span>'
+      + '<h1>'+t("s0_title_a")+' <em>'+t("s0_title_em")+'</em></h1>'
+      + '<p>'+t("s0_sub")+'</p>'
+      + '<div class="facts">'
+        + fact("f1_b","f1_s")+fact("f2_b","f2_s")+fact("f3_b","f3_s")+fact("f4_b","f4_s")
+      + '</div>'
+      + '<div class="journeys">'
+        + '<div class="journey"><div class="h">💬 '+t("j1_h")+' <span class="tag live scene-tag">LIVE</span></div><p>'+t("j1_p")+'</p></div>'
+        + '<div class="journey"><div class="h">🎓 '+t("j2_h")+' <span class="tag road scene-tag">ROADMAP</span></div><p>'+t("j2_p")+'</p></div>'
+      + '</div>'
+      + '<p style="margin-top:22px;font-size:13px;">'+t("startHint")+'</p></div>';
+  }});
+  function fact(b,s){ return '<div class="fact"><b>'+t(b)+'</b><span>'+t(s)+'</span></div>'; }
+
+  // 1 — chat Q1
+  scenes.push({ id:"chat1", tag:"live", render:function(){
+    var log = '<div class="log">'
+      + '<div class="bubble user">'+esc(t("q1"))+'</div>'
+      + '<div class="bubble bot">'+esc(t("a1"))+'</div>'
+      + feedbackRow()
+      + '<div class="celebrate">'+t("firstAnswer")+'</div>'
+      + '<div class="chips"><div class="chips-h">'+t("related")+'</div>'+chip(t("q1r1"))+chip(t("q1r2"))+chip(t("q1r3"))+'</div>'
+      + '</div>';
+    return sceneHead("s1_eye","s1_h","s1_p") + '<div class="stage">'
+      + phone('<div class="app-body chat"><h1 class="app-title">'+t("chatTitle")+'</h1><p class="app-sub">'+t("chatIntro")+'</p>'+log+'</div>') + '</div>';
+  }});
+
+  // 2 — chat Q2 typo -> did you mean -> answer
+  scenes.push({ id:"chat2", tag:"live", render:function(){
+    var log = '<div class="log">'
+      + '<div class="bubble user">'+esc(t("q2typed"))+'</div>'
+      + '<div class="did-you-mean"><div class="h">'+t("didYouMean")+'</div>'+chip(t("q2corrected"))+'</div>'
+      + '<div class="bubble user">'+esc(t("q2corrected"))+'</div>'
+      + '<div class="bubble bot">'+esc(t("a2"))+'</div>'
+      + feedbackRow()
+      + '<div class="chips"><div class="chips-h">'+t("related")+'</div>'+chip(t("q2r1"))+chip(t("q2r2"))+'</div>'
+      + '</div>';
+    return sceneHead("s2_eye","s2_h","s2_p") + '<div class="stage">'
+      + phone('<div class="app-body chat">'+log+'</div>') + '</div>';
+  }});
+
+  // 3 — chat Q3 unmatched
+  scenes.push({ id:"chat3", tag:"live", render:function(){
+    var log = '<div class="log">'
+      + '<div class="bubble user">'+esc(t("q3"))+'</div>'
+      + '<div class="bubble bot pending">'+esc(t("noAnswer"))+'</div>'
+      + '<div class="logged-note"><span class="k">●</span><span>'+t("loggedNote")+'</span></div>'
+      + '</div>';
+    return sceneHead("s3_eye","s3_h","s3_p") + '<div class="stage">'
+      + phone('<div class="app-body chat">'+log+'</div>') + '</div>';
+  }});
+
+  // 4 — admin gap queue
+  scenes.push({ id:"admin-gap", tag:"live", render:function(){
+    var rows = [
+      { q: t("q3"), n: 14, reason:"noans", hot:true },
+      { q: state.locale==="fil"?"Magkano ang tulong sa 4Ps para sa buntis?":"How much is the 4Ps grant for a pregnant woman?", n:9, reason:"noans" },
+      { q: state.locale==="fil"?"Bakit mahalaga ang unang 1,000 araw?":"Why do the first 1,000 days matter?", n:6, reason:"badans" }
+    ];
+    var body = rows.map(function(r){
+      return '<tr class="'+(r.hot?"hot":"")+'"><td>'+esc(r.q)+'</td><td class="num">'+r.n+'</td>'
+        + '<td><span class="badge '+(r.reason==="noans"?"noans":"badans")+'">'+(r.reason==="noans"?t("noans"):t("badans"))+'</span></td>'
+        + '<td><div style="display:flex;gap:6px"><button class="btn primary'+(r.hot?" go-create":"")+'">'+t("createKb")+'</button><button class="btn ghost">'+t("dismiss")+'</button></div></td></tr>';
+    }).join("");
+
+    var cards = '<div class="cards">'
+      + stat("kActivation","82%","+6%")+stat("kWau","91%","+3%")+stat("kDefl","7.4%","")+stat("kCsat","88%","+2%")+'</div>';
+
+    var gap = '<h3 class="sec">'+t("gapHeading")+'</h3><div class="tablewrap"><table class="grid"><thead><tr>'
+      + '<th>'+t("colQ")+'</th><th>'+t("colAsked")+'</th><th>'+t("colReason")+'</th><th>'+t("colAct")+'</th></tr></thead><tbody>'+body+'</tbody></table></div>';
+
+    var top = '<h3 class="sec">'+t("topHeading")+'</h3><ol class="ol">'
+      + topItem(t("q1"),132)+topItem(state.locale==="fil"?"Anong bakuna sa bagong silang?":"What vaccines for a newborn?",118)+topItem(state.locale==="fil"?"Ano ang exclusive breastfeeding?":"What is exclusive breastfeeding?",97)+'</ol>';
+
+    var range = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><span class="range"><span class="b on">'+t("range30")+'</span></span></div>';
+
+    return sceneHead("s4_eye","s4_h","s4_p") + '<div class="stage">'
+      + adminChrome("chat", range + cards + gap + top) + '</div>';
+  }});
+  function stat(l,v,d){ return '<div class="stat"><span class="l">'+t(l)+'</span><span class="v">'+v+'</span>'+(d?'<span class="d">'+d+'</span>':'')+'</div>'; }
+  function topItem(q,n){ return '<li><span>'+esc(q)+'</span><span class="m">'+n+' '+t("matches")+'</span></li>'; }
+
+  // 5 — KB entry form (prefilled)
+  scenes.push({ id:"admin-kb", tag:"live", render:function(){
+    var form = '<div class="kb-form">'
+      + '<div class="prefill">'+t("prefillBanner")+' <b>&ldquo;'+esc(t("q3"))+'&rdquo;</b></div>'
+      + '<div class="fld"><label>'+t("fCat")+'</label><select><option>'+t("catMCH")+'</option></select></div>'
+      + '<div class="grid2">'
+        + fld("fQfil", state.locale==="fil"?t("q3"):"Pwede bang magpasuso kung may lagnat o trangkaso ang nanay?", false)
+        + fld("fQen", "Can a mother keep breastfeeding if she has a fever or the flu?", false)
+      + '</div>'
+      + '<div class="grid2">'
+        + fldArea("fAfil", "Oo, ligtas pa ring magpasuso kahit may trangkaso… magsuot ng mask, maghugas ng kamay…")
+        + fldArea("fAen", "Yes, it's still safe to breastfeed… wear a mask, wash hands before feeding…")
+      + '</div>'
+      + '<div class="fld"><label>'+t("fKw")+'</label><input value="pagpapasuso, breastfeeding, lagnat, fever, trangkaso, flu"></div>'
+      + '<div class="grid2">'
+        + '<div class="fld"><label>'+t("fOwner")+'</label><select><option>'+t("ownerName")+'</option></select></div>'
+        + '<div class="fld"><label>'+t("fReview")+'</label><input type="date" value="2027-01-23"></div>'
+      + '</div>'
+      + '<div class="form-actions"><button class="btn big ghost">'+t("saveDraft")+'</button><button class="btn big primary go-publish">'+t("publish")+'</button></div>'
+      + '</div>';
+    return sceneHead("s5_eye","s5_h","s5_p") + '<div class="stage">'
+      + adminChrome("chat", '<h3 class="sec" style="margin-top:0">'+t("kbHeading")+'</h3>'+form) + '</div>';
+  }});
+  function fld(labelKey, val){ return '<div class="fld"><label>'+t(labelKey)+'</label><input value="'+esc(val)+'"></div>'; }
+  function fldArea(labelKey, val){ return '<div class="fld"><label>'+t(labelKey)+'</label><textarea>'+esc(val)+'</textarea></div>'; }
+
+  // 6 — chat Q3 answered (loop closed)
+  scenes.push({ id:"chat4", tag:"live", render:function(){
+    var log = '<div class="log">'
+      + '<div class="bubble user">'+esc(t("q3"))+'</div>'
+      + '<div class="bubble bot">'+esc(t("a3"))+'</div>'
+      + feedbackRow()
+      + '<div class="celebrate">'+t("gapClosed")+'</div>'
+      + '</div>';
+    return sceneHead("s6_eye","s6_h","s6_p") + '<div class="stage">'
+      + phone('<div class="app-body chat">'+log+'</div>') + '</div>';
+  }, enter:function(){ burst(); }});
+
+  // 7 — training home
+  scenes.push({ id:"train-home", tag:"road", render:function(){
+    var mods = [
+      ["Modyul 1–7","Prenatal · kapanganakan · 6 na linggo","done"],
+      ["Modyul 8","6 na buwan · complementary feeding","now"],
+      ["Modyul 9–12","9 buwan · 1 taon · 18 buwan · 2 taon","todo"]
+    ];
+    var modsEn = [
+      ["Modules 1–7","Prenatal · birth · 6 weeks","done"],
+      ["Module 8","6 months · complementary feeding","now"],
+      ["Modules 9–12","9 mo · 1 yr · 18 mo · 2 yr","todo"]
+    ];
+    var src = state.locale==="fil"?mods:modsEn;
+    var fmt = { done:"✓ "+t("modDone"), now:"▶ "+t("modNow"), todo:"🔒 "+t("modTodo") };
+    var list = src.map(function(m){
+      return '<div class="mod"><div class="n '+m[2]+'">'+(m[2]==="done"?"✓":m[2]==="now"?"8":"–")+'</div>'
+        + '<div class="t"><b>'+esc(m[0])+'</b><span>'+esc(m[1])+'</span></div><div class="fmt">'+fmt[m[2]]+'</div></div>';
+    }).join("");
+    var hero = '<div class="course-hero"><div class="ring" style="--p:58"><b>7/12</b></div>'
+      + '<div class="meta"><h4>'+t("courseTitle")+'</h4><p>'+t("courseSub")+' · '+t("progress")+'</p></div></div>';
+    return sceneHead("s7_eye","s7_h","s7_p") + '<div class="stage">'
+      + phoneNoComposer('<div class="app-body">'+hero+'<div class="modules">'+list+'</div></div>') + '</div>';
+  }});
+
+  // 8 — quiz
+  scenes.push({ id:"train-quiz", tag:"road", render:function(){
+    var opts = [["A",t("qo1"),""],["B",t("qo2"),"correct"],["C",t("qo3"),""],["D",t("qo4"),""]];
+    var oh = opts.map(function(o){ return '<div class="opt '+o[2]+'"><span class="k"></span><span>'+esc(o[1])+'</span></div>'; }).join("");
+    var quiz = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">'
+      + '<b style="font-size:14px;color:var(--ink)">'+t("quizTitle")+'</b><span style="font-size:11px;color:var(--ink-70)">'+t("quizTag")+'</span></div>'
+      + '<div class="quiz"><div class="q">'+esc(t("quizQ"))+'</div>'+oh
+      + '<div class="verdict" style="color:var(--success)">'+t("quizPass")+'</div></div>'
+      + '<div class="handoff"><div class="ic">🩺</div><div class="t"><b>'+t("handoffB")+'</b><p>'+t("handoffP")+'</p></div></div>'
+      + '<div style="margin-top:12px"><button class="btn big primary" style="width:100%">'+t("goDemo")+'</button></div>';
+    return sceneHead("s8_eye","s8_h","s8_p") + '<div class="stage">'
+      + phoneNoComposer('<div class="app-body">'+quiz+'</div>') + '</div>';
+  }});
+
+  // 9 — assessor
+  scenes.push({ id:"assessor", tag:"road", render:function(){
+    var chks = ["chk1","chk2","chk3","chk4","chk5"].map(function(k,i){
+      var pending = i===4;
+      return '<div class="item'+(pending?" pending":"")+'"><span class="box">'+(pending?"":"✓")+'</span><span>'+t(k)+'</span></div>';
+    }).join("");
+    var queue = '<div style="display:flex;justify-content:space-between;align-items:center;border:1px solid var(--ink-10);border-radius:10px;padding:12px 14px;margin-bottom:14px">'
+      + '<div><b style="font-size:13px;color:var(--ink)">'+t("assessName")+'</b><div style="font-size:11px;color:var(--ink-70)">'+t("assessSub")+'</div></div>'
+      + '<button class="btn primary">'+t("assessTake")+'</button></div>';
+    var inner = '<h3 class="sec" style="margin-top:0">'+t("assessTitle")+'</h3>'+queue
+      + '<h3 class="sec">'+t("checkHeading")+'</h3><div class="check">'+chks+'</div>'
+      + '<div style="margin-top:16px"><button class="btn big primary go-certify">'+t("certifyBtn")+'</button></div>';
+    return sceneHead("s9_eye","s9_h","s9_p") + '<div class="stage">'
+      + adminChrome("training", inner) + '</div>';
+  }});
+
+  // 10 — certificate
+  scenes.push({ id:"certificate", tag:"road", render:function(){
+    var cert = '<div class="cert-wrap"><div class="cert"><div class="band"></div><div class="inner">'
+      + '<div class="seal">🏅</div>'
+      + '<div class="k">'+t("certK")+'</div>'
+      + '<h3>'+t("courseTitle")+'</h3>'
+      + '<div style="font-size:11px;color:var(--ink-70)">'+t("certFor")+'</div>'
+      + '<div class="name">Rosa D. Mendoza</div>'
+      + '<p class="desc">'+t("certDesc")+'</p>'
+      + '<div class="foot"><div class="sig"><b>'+t("certSigName")+'</b>'+t("certSig")+' · 23 Jul 2026</div>'
+      + '<div style="text-align:right"><div class="qr">'+qrSvg()+'</div><div class="verify">'+t("certVerify")+'</div></div></div>'
+      + '<div style="font-size:10px;color:var(--ink-70);margin-top:10px;letter-spacing:0.4px">'+t("certId")+'</div>'
+      + '</div></div></div>';
+    return sceneHead("s10_eye","s10_h","s10_p") + '<div class="stage">'
+      + phoneNoComposer('<div class="app-body" style="display:grid;place-items:center">'+cert+'</div>') + '</div>';
+  }, enter:function(){ burst(); }});
+
+  // 11 — training dashboard (concept)
+  scenes.push({ id:"train-dash", tag:"road", render:function(){
+    var cards = '<div class="cards">'
+      + stat("tdCompletion","64%","+11%")+stat("tdCerts","38","")+stat("tdActive","57","")+stat("tdAvg","19","")+'</div>';
+    var note = '<p style="font-size:12px;color:var(--ink-70);margin-top:14px">'+t("tdNote")+'</p>';
+    var barrows = [["Barangay San Isidro",72],["Barangay Malinao",58],["Barangay Poblacion",41]].map(function(b){
+      return '<li><span>'+b[0]+'</span><span class="meter"><span class="track"><span class="fill" style="width:'+b[1]+'%"></span></span><span class="m">'+b[1]+'%</span></span></li>';
+    }).join("");
+    return sceneHead("s11_eye","s11_h","s11_p") + '<div class="stage">'
+      + adminChrome("training", '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><span class="range"><span class="b on">'+t("range30")+'</span></span></div>'
+        + cards + '<h3 class="sec">'+t("tdCompletion")+'</h3><ol class="ol">'+barrows+'</ol>' + note) + '</div>';
+  }});
+
+  // 12 — recap
+  scenes.push({ id:"recap", full:true, render:function(){
+    function step(n,b,p,i){ return '<div class="step"><div class="n">'+t(n)+'</div><b>'+t(b)+'</b><p>'+t(p)+'</p></div>'; }
+    return '<div style="text-align:center;max-width:760px;margin:0 auto 8px">'
+      + '<div class="eyebrow" style="color:var(--stage-accent);text-transform:uppercase;letter-spacing:1.6px;font-weight:700;font-size:12px">'+t("s12_eye")+'</div>'
+      + '<h2 style="color:#fff;font-size:clamp(22px,3vw,34px);margin:6px 0 8px;text-wrap:balance">'+t("s12_h")+'</h2>'
+      + '<p style="color:var(--stage-muted);line-height:1.6">'+t("s12_p")+'</p></div>'
+      + '<div class="loop" style="max-width:960px;margin:26px auto 0">'
+        + step("loopN1","loopB1","loopP1")+step("loopN2","loopB2","loopP2")+step("loopN3","loopB3","loopP3")+step("loopN4","loopB4","loopP4")
+      + '</div>';
+  }});
+
+  // -------------------------------------------------------------- render loop
+  var root = document.getElementById("stageRoot");
+  var dotsWrap = document.getElementById("dots");
+  var stepcount = document.getElementById("stepcount");
+  var prevBtn = document.getElementById("prevBtn");
+  var nextBtn = document.getElementById("nextBtn");
+
+  function render() {
+    var sc = scenes[state.idx];
+    root.innerHTML = sc.render();
+    // wire scripted interactions
+    var create = root.querySelector(".go-create");
+    if (create) create.addEventListener("click", function(){ go(state.idx+1); });
+    var pub = root.querySelector(".go-publish");
+    if (pub) pub.addEventListener("click", function(){ state.published = true; toast(t("publishedToast")); go(state.idx+1); });
+    var cert = root.querySelector(".go-certify");
+    if (cert) cert.addEventListener("click", function(){ toast(t("certToast")); go(state.idx+1); });
+
+    prevBtn.disabled = state.idx === 0;
+    nextBtn.disabled = state.idx === scenes.length - 1;
+    stepcount.textContent = (state.idx+1) + " / " + scenes.length;
+    renderDots();
+    if (sc.enter) sc.enter();
+    root.scrollIntoView({ block: "start", behavior: prefersReduced() ? "auto" : "smooth" });
+  }
+  function renderDots(){
+    dotsWrap.innerHTML = scenes.map(function(s,i){ return '<button data-i="'+i+'" class="'+(i===state.idx?"on":"")+'" aria-label="Scene '+(i+1)+'"></button>'; }).join("");
+  }
+  dotsWrap.addEventListener("click", function(e){ var b=e.target.closest("button"); if(b) go(+b.dataset.i); });
+  function go(i){ if(i<0||i>=scenes.length) return; state.idx=i; render(); }
+  prevBtn.addEventListener("click", function(){ go(state.idx-1); });
+  nextBtn.addEventListener("click", function(){ go(state.idx+1); });
+  document.addEventListener("keydown", function(e){
+    if (e.target && /input|textarea|select/i.test(e.target.tagName)) return;
+    if (e.key==="ArrowRight") go(state.idx+1);
+    if (e.key==="ArrowLeft") go(state.idx-1);
+  });
+
+  // -------------------------------------------------------------- toggles
+  function applyChrome(){ document.querySelectorAll("[data-t]").forEach(function(el){ el.textContent = t(el.getAttribute("data-t")); }); }
+  document.getElementById("langSeg").addEventListener("click", function(e){
+    var b=e.target.closest("button"); if(!b) return;
+    state.locale=b.dataset.lang;
+    this.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x===b?"true":"false"); });
+    applyChrome(); render();
+  });
+  document.getElementById("themeSeg").addEventListener("click", function(e){
+    var b=e.target.closest("button"); if(!b) return;
+    state.theme=b.dataset.theme;
+    document.documentElement.setAttribute("data-apptheme", state.theme);
+    this.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x===b?"true":"false"); });
+  });
+
+  // -------------------------------------------------------------- flourishes
+  function prefersReduced(){ return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  function toast(msg){
+    var el=document.createElement("div"); el.textContent=msg;
+    el.style.cssText="position:fixed;left:50%;top:70px;transform:translateX(-50%);z-index:60;background:#0c0c0d;color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;font-weight:600;box-shadow:0 10px 30px -8px rgba(0,0,0,.5);opacity:0;transition:opacity .25s";
+    document.body.appendChild(el); requestAnimationFrame(function(){ el.style.opacity="1"; });
+    setTimeout(function(){ el.style.opacity="0"; setTimeout(function(){ el.remove(); },300); }, 1900);
+  }
+  var cv=document.getElementById("confetti"), cx=cv.getContext("2d"), parts=[];
+  function sizeCanvas(){ cv.width=innerWidth; cv.height=innerHeight; }
+  sizeCanvas(); addEventListener("resize", sizeCanvas);
+  function burst(){
+    if (prefersReduced()) return;
+    var colors=["#e8641c","#ffc857","#0c7c7e","#1f7a45","#b84e12"];
+    for(var i=0;i<90;i++){ parts.push({ x:innerWidth/2+(Math.random()-0.5)*220, y:innerHeight*0.32,
+      vx:(Math.random()-0.5)*8, vy:Math.random()*-9-3, g:0.28+Math.random()*0.1,
+      s:5+Math.random()*6, c:colors[(Math.random()*colors.length)|0], r:Math.random()*6, vr:(Math.random()-0.5)*0.4, life:0 }); }
+    if(!raf) tick();
+  }
+  var raf=null;
+  function tick(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    for(var i=parts.length-1;i>=0;i--){ var p=parts[i]; p.vy+=p.g; p.x+=p.vx; p.y+=p.vy; p.r+=p.vr; p.life++;
+      cx.save(); cx.translate(p.x,p.y); cx.rotate(p.r); cx.fillStyle=p.c; cx.fillRect(-p.s/2,-p.s/2,p.s,p.s*0.6); cx.restore();
+      if(p.y>cv.height+20||p.life>200) parts.splice(i,1); }
+    if(parts.length){ raf=requestAnimationFrame(tick); } else { raf=null; cx.clearRect(0,0,cv.width,cv.height); }
+  }
+
+  // -------------------------------------------------------------- init
+  document.documentElement.setAttribute("data-apptheme","light");
+  applyChrome();
+  render();
+})();
+</script>
