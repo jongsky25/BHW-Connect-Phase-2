@@ -81,7 +81,7 @@ test("admin creates a course, a BHW completes it and passes the quiz, an assesso
 
   const claimedItem = page.getByRole("listitem").filter({ hasText: `Course en ${marker}` });
   await expect(claimedItem).toBeVisible();
-  await claimedItem.getByRole("button", { name: "Pasado" }).click();
+  await claimedItem.getByRole("button", { name: "Pasado", exact: true }).click();
 
   const notice = await page.getByRole("status").textContent();
   const verificationCode = notice?.trim();
