@@ -75,10 +75,13 @@ test("admin creates a course, a BHW completes it and passes the quiz, an assesso
   await onboardThroughLogin(page, assessor.username, assessor.tempPassword, "AssessorPw2026!");
 
   await page.goto("/assessments");
-  const queueRow = page.getByText("Stable Pilot BHW").first();
-  await expect(queueRow).toBeVisible();
-  await page.getByRole("button", { name: "Kunin" }).click();
-  await page.getByRole("button", { name: "Pasado" }).click();
+  const queueItem = page.getByRole("listitem").filter({ hasText: `Course en ${marker}` });
+  await expect(queueItem).toBeVisible();
+  await queueItem.getByRole("button", { name: "Kunin" }).click();
+
+  const claimedItem = page.getByRole("listitem").filter({ hasText: `Course en ${marker}` });
+  await expect(claimedItem).toBeVisible();
+  await claimedItem.getByRole("button", { name: "Pasado" }).click();
 
   const notice = await page.getByRole("status").textContent();
   const verificationCode = notice?.trim();
