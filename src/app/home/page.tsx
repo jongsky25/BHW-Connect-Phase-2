@@ -67,6 +67,22 @@ export default async function HomePage() {
             {t("surveysCta")}
           </Link>
         ) : null}
+        {flags.elearning ? (
+          <Link
+            href="/courses"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("coursesCta")}
+          </Link>
+        ) : null}
+        {flags.elearning && appUser.role === "assessor" ? (
+          <Link
+            href="/assessments"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("assessmentsCta")}
+          </Link>
+        ) : null}
         <Link
           href="/settings"
           className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"

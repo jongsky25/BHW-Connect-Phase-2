@@ -96,10 +96,11 @@ export async function restGet(
   return (await response.json()) as unknown[];
 }
 
-export async function createThrowawayBhw(
+async function createThrowawayUser(
   request: APIRequestContext,
   adminAccessToken: string,
   orgUnitId: string,
+  role: "bhw" | "assessor",
 ): Promise<{ username: string; tempPassword: string; fullName: string }> {
   const username = `e2e.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
   const fullName = `E2E Throwaway ${username}`;
@@ -113,7 +114,7 @@ export async function createThrowawayBhw(
     data: {
       p_username: username,
       p_full_name: fullName,
-      p_role: "bhw",
+      p_role: role,
       p_org_unit_id: orgUnitId,
     },
   });
@@ -121,10 +122,26 @@ export async function createThrowawayBhw(
   const rows = (await response.json()) as Array<{ user_id: string; temp_password: string }>;
   const row = rows[0];
   if (!row) {
-    throw new Error(`Failed to provision throwaway BHW: ${JSON.stringify(rows)}`);
+    throw new Error(`Failed to provision throwaway ${role}: ${JSON.stringify(rows)}`);
   }
 
   return { username, tempPassword: row.temp_password, fullName };
+}
+
+export async function createThrowawayBhw(
+  request: APIRequestContext,
+  adminAccessToken: string,
+  orgUnitId: string,
+): Promise<{ username: string; tempPassword: string; fullName: string }> {
+  return createThrowawayUser(request, adminAccessToken, orgUnitId, "bhw");
+}
+
+export async function createThrowawayAssessor(
+  request: APIRequestContext,
+  adminAccessToken: string,
+  orgUnitId: string,
+): Promise<{ username: string; tempPassword: string; fullName: string }> {
+  return createThrowawayUser(request, adminAccessToken, orgUnitId, "assessor");
 }
 
 // Drives a freshly provisioned BHW through the forced change-password and

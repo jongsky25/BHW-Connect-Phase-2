@@ -6,16 +6,20 @@ leverage plan — start there before touching code.
 
 ## Status
 
-**INC-11 — Surveys** (see `docs/delivery-plan.md` §7). INC-0 through INC-8
-shipped auth, the admin console, KB authoring, the Chat Guide (engine + UI),
-the dashboard, settings/onboarding, and reports export. INC-9 added feature
-flags, error tracking, backups/restore, DPA data-subject actions, and the
-retention/breach/deploy runbooks below. INC-10 shipped a hierarchy-scoped
-announcement feed (§6.4) behind the `announcements` feature flag. INC-11
-adds admin-authored surveys (multi-format questions, per-survey anonymity,
-hierarchy-scoped deployment, results tallying) — built ahead of the pilot
-launch gate, at the maintainer's direction, alongside INC-10 on an
-independent branch; it ships behind the `surveys` feature flag (default
+**INC-12 — E-Learning + Assessor Certification** (see `docs/delivery-plan.md`
+§7). INC-0 through INC-8 shipped auth, the admin console, KB authoring, the
+Chat Guide (engine + UI), the dashboard, settings/onboarding, and reports
+export. INC-9 added feature flags, error tracking, backups/restore, DPA
+data-subject actions, and the retention/breach/deploy runbooks below. INC-10
+shipped a hierarchy-scoped announcement feed behind the `announcements`
+flag. INC-11 shipped admin-authored surveys (multi-format questions,
+per-survey anonymity, hierarchy-scoped deployment, results tallying) behind
+the `surveys` flag. INC-12 adds admin-authored courses (text/video/quiz
+modules, configurable quiz passing score and retake limit), a new
+`assessor` role that grades in-person skills demonstrations via an open
+claim queue, and QR-verifiable certificates on passing — built ahead of the
+pilot launch gate, at the maintainer's direction, alongside INC-11 on an
+independent branch; it ships behind the `elearning` feature flag (default
 off) so the pilot project is unaffected until it's explicitly turned on.
 Next up: further later-phase modules (§7), and, independently, the pilot
 launch gate itself (KB content review, real user provisioning, DoD

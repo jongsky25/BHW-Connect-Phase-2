@@ -232,7 +232,9 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
           user.full_name
         )}
       </td>
-      <td className="px-3 py-3 text-sm text-ink">{t(user.role === "admin" ? "roleAdmin" : "roleBhw")}</td>
+      <td className="px-3 py-3 text-sm text-ink">
+        {t(user.role === "admin" ? "roleAdmin" : user.role === "assessor" ? "roleAssessor" : "roleBhw")}
+      </td>
       <td className="px-3 py-3 text-sm text-ink">
         {mode === "transfer" ? (
           <div className="flex flex-col gap-2">
