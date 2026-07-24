@@ -336,6 +336,19 @@ create policy certificates_admin_read on public.certificates for select
     )
   );
 
+-- users_read_self_or_admin_scope (baseline migration) only grants a user
+-- their own row or an admin's own-scope read — an assessor has neither,
+-- so the assessment queue's embedded `users:bhw_user_id(...)` join
+-- silently returned null for the BHW's name. Mirrors the admin scope-read
+-- policy, just for assessors: they legitimately need to see the identity
+-- of the BHW whose assessment they're claiming/deciding.
+drop policy if exists users_read_assessor_scope on public.users;
+create policy users_read_assessor_scope on public.users for select
+  using (
+    (select public.current_app_user()).role = 'assessor'
+    and (select public.org_unit_path(users.org_unit_id)) like (select public.current_org_path()) || '%'
+  );
+
 insert into public.feature_flags (key, enabled, description)
 values ('elearning', false, 'E-learning: courses with text/video/quiz modules, assessor-graded certification.')
 on conflict (key) do nothing;
