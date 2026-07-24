@@ -44,7 +44,7 @@ export async function SurveyResults({ questions, answersByQuestion, respondentCo
               <div className="flex flex-col gap-1">
                 {[1, 2, 3, 4, 5].map((score) => (
                   <div key={score} className="flex items-center gap-2 text-sm text-ink">
-                    <span className="w-4">{score}</span>
+                    <span className="w-4">{score}</span>{" "}
                     <span className="text-ink/70">
                       {summary.tally[score] ?? 0} {t("responsesUnit")}
                     </span>
@@ -55,7 +55,7 @@ export async function SurveyResults({ questions, answersByQuestion, respondentCo
               <div className="flex flex-col gap-1">
                 {question.options.map((option, index) => (
                   <div key={index} className="flex items-center gap-2 text-sm text-ink">
-                    <span>{locale === "en" ? option.en : option.fil}</span>
+                    <span>{locale === "en" ? option.en : option.fil}</span>{" "}
                     <span className="text-ink/70">
                       — {summary.tally[index] ?? 0} {t("responsesUnit")}
                     </span>
