@@ -51,6 +51,14 @@ export default async function HomePage() {
         >
           {t("kbBrowseCta")}
         </Link>
+        {flags.announcements ? (
+          <Link
+            href="/announcements"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("announcementsCta")}
+          </Link>
+        ) : null}
         {flags.surveys ? (
           <Link
             href="/surveys"

@@ -67,6 +67,7 @@
     "chatGuideCta": "Chat Guide",
     "kbBrowseCta": "Tingnan ang Knowledge Base",
     "settingsCta": "Mga Setting",
+    "announcementsCta": "Mga Anunsyo",
     "surveysCta": "Mga Survey"
   },
   "settings": {
@@ -135,6 +136,7 @@
       "kbSynonyms": "Mga Kasingkahulugan",
       "flags": "Mga Feature Flag",
       "settings": "Mga Setting",
+      "announcements": "Mga Anunsyo",
       "surveys": "Mga Survey"
     },
     "dashboard": {
@@ -385,6 +387,29 @@
       "empty": "Wala pang kasingkahulugan.",
       "genericError": "May naganap na problema. Subukan muli."
     },
+    "announcements": {
+      "heading": "Mga Anunsyo",
+      "postHeading": "Bagong anunsyo",
+      "orgUnitLabel": "I-post sa",
+      "bodyFilLabel": "Mensahe (Filipino)",
+      "bodyEnLabel": "Mensahe (English)",
+      "linkLabel": "Link (opsyonal)",
+      "linkPlaceholder": "https://…",
+      "imageLabel": "Larawan (opsyonal)",
+      "imageUpload": "Mag-upload ng larawan",
+      "imageUploading": "Ina-upload…",
+      "imageReplace": "Palitan ang larawan",
+      "imageRemove": "Alisin ang larawan",
+      "imageUploadError": "Hindi ma-upload ang larawan. Pakisubukang muli.",
+      "posting": "Pinopost…",
+      "postAction": "I-post",
+      "empty": "Wala pang mga anunsyo.",
+      "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+      "bodyRequiredError": "Kailangan ng mensahe sa parehong wika.",
+      "orgUnitOutOfScopeError": "Maaari ka lamang mag-post sa loob ng iyong saklaw.",
+      "announcementNotFoundError": "Hindi nahanap ang anunsyong iyon.",
+      "genericError": "May nagkamali. Pakisubukang muli."
+    },
     "surveys": {
       "heading": "Mga Survey",
       "createHeading": "Bagong survey",
@@ -440,6 +465,12 @@
       "surveyNotFoundError": "Hindi nahanap ang survey na iyon.",
       "genericError": "May nagkamali. Pakisubukang muli."
     }
+  },
+  "announcements": {
+    "heading": "Mga Anunsyo",
+    "intro": "Mga update mula sa inyong barangay, lungsod, rehiyon, at DOH.",
+    "empty": "Wala pang mga anunsyo.",
+    "deleteAction": "Tanggalin"
   },
   "surveys": {
     "heading": "Mga Survey",
