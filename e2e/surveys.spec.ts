@@ -37,7 +37,9 @@ test("a barangay admin creates and publishes a survey, a same-barangay BHW respo
   await expect(row.getByText("Nailathala")).toBeVisible();
 
   // A same-barangay BHW now sees and can respond to it.
-  await page.goto("/login");
+  await page.goto("/home");
+  await page.getByRole("button", { name: "Mag-sign out" }).click();
+  await expect(page).toHaveURL("/login", { timeout: 10_000 });
   await page.getByLabel("Username").fill(STABLE_BHW.username);
   await page.getByLabel("Password").fill(STABLE_BHW.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
@@ -49,7 +51,9 @@ test("a barangay admin creates and publishes a survey, a same-barangay BHW respo
   await expect(page.getByText("Salamat sa iyong sagot!")).toBeVisible();
 
   // Admin sees the tally in the results view.
-  await page.goto("/login");
+  await page.goto("/home");
+  await page.getByRole("button", { name: "Mag-sign out" }).click();
+  await expect(page).toHaveURL("/login", { timeout: 10_000 });
   await page.getByLabel("Username").fill(STABLE_ADMIN.username);
   await page.getByLabel("Password").fill(STABLE_ADMIN.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
