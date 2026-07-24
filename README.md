@@ -6,18 +6,22 @@ leverage plan — start there before touching code.
 
 ## Status
 
-**INC-10 — Announcements** (see `docs/delivery-plan.md` §7). INC-0 through
-INC-8 shipped auth, the admin console, KB authoring, the Chat Guide (engine +
-UI), the dashboard, settings/onboarding, and reports export. INC-9 added
-feature flags, error tracking, backups/restore, DPA data-subject actions, and
-the retention/breach/deploy runbooks below. INC-10 adds a hierarchy-scoped
-announcement feed (§6.4) — built ahead of the pilot launch gate, at the
-maintainer's direction, rather than waiting on real pilot usage data to
-prioritize it; it ships behind the `announcements` feature flag (default
-off) so the pilot project is unaffected until it's explicitly turned on.
-Next up: further later-phase modules (§7), and, independently, the pilot
-launch gate itself (KB content review, real user provisioning, DoD
-re-verification, KPI baseline).
+**INC-12 — E-Learning + Assessor Certification** (see `docs/delivery-plan.md`
+§7). INC-0 through INC-8 shipped auth, the admin console, KB authoring, the
+Chat Guide (engine + UI), the dashboard, settings/onboarding, and reports
+export. INC-9 added feature flags, error tracking, backups/restore, DPA
+data-subject actions, and the retention/breach/deploy runbooks below. INC-10
+shipped a hierarchy-scoped announcement feed behind the `announcements` flag.
+INC-12 adds admin-authored courses (text/video/quiz modules, configurable
+quiz passing score and retake limit), a new `assessor` role that grades
+in-person skills demonstrations via an open claim queue, and QR-verifiable
+certificates on passing — built ahead of the pilot launch gate, at the
+maintainer's direction, alongside INC-11 (Surveys) on an independent branch;
+it ships behind the `elearning` feature flag (default off) so the pilot
+project is unaffected until it's explicitly turned on. Next up: further
+later-phase modules (§7), and, independently, the pilot launch gate itself
+(KB content review, real user provisioning, DoD re-verification, KPI
+baseline).
 
 ## Getting started
 

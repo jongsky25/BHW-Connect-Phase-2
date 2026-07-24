@@ -17,19 +17,35 @@ describe("getFeatureFlags", () => {
         { key: "kb_articles", enabled: false },
         { key: "reports_export", enabled: true },
         { key: "announcements", enabled: true },
+        { key: "elearning", enabled: true },
       ]),
     );
-    expect(flags).toEqual({ kb_articles: false, reports_export: true, announcements: true });
+    expect(flags).toEqual({
+      kb_articles: false,
+      reports_export: true,
+      announcements: true,
+      elearning: true,
+    });
   });
 
-  it("defaults kb_articles/reports_export to enabled and announcements to disabled when the table is empty or unreachable", async () => {
-    const expected = { kb_articles: true, reports_export: true, announcements: false };
+  it("defaults kb_articles/reports_export to enabled and announcements/elearning to disabled when the table is empty or unreachable", async () => {
+    const expected = {
+      kb_articles: true,
+      reports_export: true,
+      announcements: false,
+      elearning: false,
+    };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
     expect(await getFeatureFlags(stubClient(null))).toEqual(expected);
   });
 
   it("ignores unrecognized flag keys", async () => {
     const flags = await getFeatureFlags(stubClient([{ key: "some_future_flag", enabled: false }]));
-    expect(flags).toEqual({ kb_articles: true, reports_export: true, announcements: false });
+    expect(flags).toEqual({
+      kb_articles: true,
+      reports_export: true,
+      announcements: false,
+      elearning: false,
+    });
   });
 });

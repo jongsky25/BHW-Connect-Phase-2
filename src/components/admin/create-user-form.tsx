@@ -16,7 +16,7 @@ export function CreateUserForm({ orgUnits, onCreated }: Props) {
   const t = useTranslations("admin.users");
   const [username, setUsername] = useState("");
   const [fullName, setFullName] = useState("");
-  const [role, setRole] = useState<"bhw" | "admin">("bhw");
+  const [role, setRole] = useState<"bhw" | "admin" | "assessor">("bhw");
   const [orgUnitId, setOrgUnitId] = useState(orgUnits[0]?.id ?? "");
   const [contactNumber, setContactNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -96,11 +96,12 @@ export function CreateUserForm({ orgUnits, onCreated }: Props) {
           <select
             id="new-role"
             value={role}
-            onChange={(event) => setRole(event.target.value as "bhw" | "admin")}
+            onChange={(event) => setRole(event.target.value as "bhw" | "admin" | "assessor")}
             className={inputClass}
           >
             <option value="bhw">{t("roleBhw")}</option>
             <option value="admin">{t("roleAdmin")}</option>
+            <option value="assessor">{t("roleAssessor")}</option>
           </select>
         </Field>
         <Field label={t("orgUnitLabel")} htmlFor="new-org-unit">
