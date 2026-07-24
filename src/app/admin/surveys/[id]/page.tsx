@@ -25,20 +25,26 @@ export default async function SurveyResultsPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  const [{ data: questions }, { data: answers }, { count: respondentCount }] = await Promise.all([
+  const [{ data: questions }, { data: responses }] = await Promise.all([
     supabase
       .from("survey_questions")
       .select("id, survey_id, position, type, prompt_fil, prompt_en, options")
       .eq("survey_id", id)
       .order("position")
       .returns<SurveyQuestion[]>(),
-    supabase
-      .from("survey_answers")
-      .select("question_id, value, survey_responses!inner(survey_id)")
-      .eq("survey_responses.survey_id", id)
-      .returns<AnswerRow[]>(),
-    supabase.from("survey_responses").select("id", { count: "exact", head: true }).eq("survey_id", id),
+    supabase.from("survey_responses").select("id").eq("survey_id", id).returns<{ id: string }[]>(),
   ]);
+
+  const responseIds = (responses ?? []).map((row) => row.id);
+
+  const { data: answers } =
+    responseIds.length > 0
+      ? await supabase
+          .from("survey_answers")
+          .select("question_id, value")
+          .in("response_id", responseIds)
+          .returns<AnswerRow[]>()
+      : { data: [] as AnswerRow[] };
 
   const answersByQuestion: Record<string, AnswerValue[]> = {};
   for (const row of answers ?? []) {
@@ -55,7 +61,7 @@ export default async function SurveyResultsPage({ params }: { params: Promise<{ 
       <SurveyResults
         questions={questions ?? []}
         answersByQuestion={answersByQuestion}
-        respondentCount={respondentCount ?? 0}
+        respondentCount={responseIds.length}
         isAnonymous={survey.is_anonymous}
         locale={locale}
       />
