@@ -17,6 +17,7 @@ describe("getFeatureFlags", () => {
         { key: "kb_articles", enabled: false },
         { key: "reports_export", enabled: true },
         { key: "announcements", enabled: true },
+        { key: "surveys", enabled: true },
         { key: "elearning", enabled: true },
       ]),
     );
@@ -24,15 +25,17 @@ describe("getFeatureFlags", () => {
       kb_articles: false,
       reports_export: true,
       announcements: true,
+      surveys: true,
       elearning: true,
     });
   });
 
-  it("defaults kb_articles/reports_export to enabled and announcements/elearning to disabled when the table is empty or unreachable", async () => {
+  it("defaults kb_articles/reports_export to enabled and announcements/surveys/elearning to disabled when the table is empty or unreachable", async () => {
     const expected = {
       kb_articles: true,
       reports_export: true,
       announcements: false,
+      surveys: false,
       elearning: false,
     };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
@@ -45,6 +48,7 @@ describe("getFeatureFlags", () => {
       kb_articles: true,
       reports_export: true,
       announcements: false,
+      surveys: false,
       elearning: false,
     });
   });
