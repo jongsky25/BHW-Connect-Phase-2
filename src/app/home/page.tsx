@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { SignOutButton } from "@/components/sign-out-button";
+import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { parseOnboardingProgress } from "@/lib/settings/types";
 import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
@@ -24,6 +25,7 @@ export default async function HomePage() {
   }
 
   const t = await getTranslations("authHome");
+  const flags = await getFeatureFlags(supabase);
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
@@ -49,6 +51,14 @@ export default async function HomePage() {
         >
           {t("kbBrowseCta")}
         </Link>
+        {flags.surveys ? (
+          <Link
+            href="/surveys"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("surveysCta")}
+          </Link>
+        ) : null}
         <Link
           href="/settings"
           className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"

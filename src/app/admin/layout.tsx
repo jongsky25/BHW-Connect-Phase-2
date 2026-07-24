@@ -50,6 +50,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         <Link href="/admin/kb/synonyms" className="text-secondary hover:underline">
           {t("nav.kbSynonyms")}
         </Link>
+        {flags.surveys ? (
+          <Link href="/admin/surveys" className="text-secondary hover:underline">
+            {t("nav.surveys")}
+          </Link>
+        ) : null}
         <Link href="/admin/flags" className="text-secondary hover:underline">
           {t("nav.flags")}
         </Link>

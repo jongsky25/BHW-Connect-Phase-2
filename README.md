@@ -6,12 +6,19 @@ leverage plan — start there before touching code.
 
 ## Status
 
-**INC-9 — Ops hardening & pilot readiness** (see `docs/delivery-plan.md` §7).
-INC-0 through INC-8 shipped auth, the admin console, KB authoring, the Chat
-Guide (engine + UI), the dashboard, settings/onboarding, and reports export.
-INC-9 adds feature flags, error tracking, backups/restore, DPA data-subject
-actions, and the retention/breach/deploy runbooks below. Next up: the pilot
-launch gate (§7).
+**INC-11 — Surveys** (see `docs/delivery-plan.md` §7). INC-0 through INC-8
+shipped auth, the admin console, KB authoring, the Chat Guide (engine + UI),
+the dashboard, settings/onboarding, and reports export. INC-9 added feature
+flags, error tracking, backups/restore, DPA data-subject actions, and the
+retention/breach/deploy runbooks below. INC-11 adds admin-authored surveys
+(multi-format questions, per-survey anonymity, hierarchy-scoped deployment,
+results tallying) — built ahead of the pilot launch gate, at the
+maintainer's direction, alongside INC-10 (Announcements) on an independent
+branch; it ships behind the `surveys` feature flag (default off) so the
+pilot project is unaffected until it's explicitly turned on. Next up:
+further later-phase modules (§7), and, independently, the pilot launch gate
+itself (KB content review, real user provisioning, DoD re-verification, KPI
+baseline).
 
 ## Getting started
 

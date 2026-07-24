@@ -1,4 +1,4 @@
-export type FeatureFlagKey = "kb_articles" | "reports_export";
+export type FeatureFlagKey = "kb_articles" | "reports_export" | "surveys";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 
