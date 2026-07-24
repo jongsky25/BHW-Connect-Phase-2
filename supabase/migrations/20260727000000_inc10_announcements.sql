@@ -49,33 +49,41 @@ create trigger announcements_set_updated_at
 
 alter table public.announcements enable row level security;
 
+-- org_units_read_own_scope only grants a viewer visibility into their own
+-- org unit and its descendants — never ancestors. A raw `exists (select 1
+-- from org_units o where ...)` inside another table's RLS policy runs as
+-- the querying role, so it inherits that restriction: a barangay BHW's
+-- lookup of a city-level org_units row returns nothing, silently
+-- collapsing any "does this post's org unit sit at-or-above mine" check
+-- to false regardless of the actual path logic. This helper mirrors
+-- current_org_path()'s security-definer bypass so policies can look up an
+-- arbitrary org unit's path without being subject to org_units' own RLS.
+create or replace function public.org_unit_path(p_org_unit_id uuid)
+returns text
+language sql
+stable security definer
+set search_path = public
+as $$
+  select path from public.org_units where id = p_org_unit_id;
+$$;
+
+grant execute on function public.org_unit_path(uuid) to anon, authenticated;
+
 drop policy if exists announcements_read_scope on public.announcements;
 create policy announcements_read_scope on public.announcements for select
   using (
-    exists (
-      select 1 from public.org_units o
-      where o.id = announcements.org_unit_id
-        and (select public.current_org_path()) like o.path || '%'
-    )
+    (select public.current_org_path()) like (select public.org_unit_path(announcements.org_unit_id)) || '%'
   );
 
 drop policy if exists announcements_admin_write on public.announcements;
 create policy announcements_admin_write on public.announcements for all
   using (
     (select public.current_app_user()).role = 'admin'
-    and exists (
-      select 1 from public.org_units o
-      where o.id = announcements.org_unit_id
-        and o.path like (select public.current_org_path()) || '%'
-    )
+    and (select public.org_unit_path(announcements.org_unit_id)) like (select public.current_org_path()) || '%'
   )
   with check (
     (select public.current_app_user()).role = 'admin'
-    and exists (
-      select 1 from public.org_units o
-      where o.id = announcements.org_unit_id
-        and o.path like (select public.current_org_path()) || '%'
-    )
+    and (select public.org_unit_path(announcements.org_unit_id)) like (select public.current_org_path()) || '%'
   );
 
 insert into storage.buckets (id, name, public)
