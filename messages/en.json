@@ -67,7 +67,8 @@
     "chatGuideCta": "Chat Guide",
     "kbBrowseCta": "Browse Knowledge Base",
     "settingsCta": "Settings",
-    "announcementsCta": "Announcements"
+    "announcementsCta": "Announcements",
+    "surveysCta": "Surveys"
   },
   "settings": {
     "heading": "Settings",
@@ -135,7 +136,8 @@
       "kbSynonyms": "Synonyms",
       "flags": "Feature flags",
       "settings": "Settings",
-      "announcements": "Announcements"
+      "announcements": "Announcements",
+      "surveys": "Surveys"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -407,6 +409,61 @@
       "orgUnitOutOfScopeError": "You can only post within your own scope.",
       "announcementNotFoundError": "That announcement wasn't found.",
       "genericError": "Something went wrong. Please try again."
+    },
+    "surveys": {
+      "heading": "Surveys",
+      "createHeading": "New survey",
+      "orgUnitLabel": "Deploy to",
+      "titleFilLabel": "Title (Filipino)",
+      "titleEnLabel": "Title (English)",
+      "descriptionFilLabel": "Description (Filipino, optional)",
+      "descriptionEnLabel": "Description (English, optional)",
+      "anonymousLabel": "Responses are anonymous",
+      "questionsHeading": "Questions",
+      "questionTypeLabel": "Question type",
+      "questionType": {
+        "single_choice": "Multiple choice (single answer)",
+        "multi_choice": "Multiple choice (select all that apply)",
+        "rating": "Rating scale (1-5)",
+        "text": "Open text"
+      },
+      "promptFilLabel": "Question (Filipino)",
+      "promptEnLabel": "Question (English)",
+      "optionsLabel": "Answer options",
+      "optionFilLabel": "Option {number} (Filipino)",
+      "optionEnLabel": "Option {number} (English)",
+      "addOptionAction": "+ Add option",
+      "addQuestionAction": "+ Add question",
+      "removeQuestionAction": "Remove this question",
+      "creating": "Creating…",
+      "createAction": "Create survey",
+      "empty": "No surveys yet.",
+      "colTitle": "Title",
+      "colOrgUnit": "Deployed to",
+      "colStatus": "Status",
+      "colActions": "Actions",
+      "status": {
+        "draft": "Draft",
+        "published": "Published",
+        "closed": "Closed"
+      },
+      "viewResultsAction": "View results",
+      "publishAction": "Publish",
+      "closeAction": "Close",
+      "deleteAction": "Delete",
+      "resultsHeading": "Results",
+      "respondentCount": "{count, plural, one {# response} other {# responses}}",
+      "anonymousBadge": "anonymous",
+      "noResponsesYet": "No responses yet.",
+      "responsesUnit": "responses",
+      "notAuthorizedError": "You're not authorized to do that.",
+      "titleRequiredError": "A title in both languages is required.",
+      "questionRequiredError": "At least one question is required.",
+      "invalidQuestionTypeError": "That question type isn't supported.",
+      "orgUnitOutOfScopeError": "You can only deploy within your own scope.",
+      "invalidStatusError": "That's not a valid status.",
+      "surveyNotFoundError": "That survey wasn't found.",
+      "genericError": "Something went wrong. Please try again."
     }
   },
   "announcements": {
@@ -414,5 +471,18 @@
     "intro": "Updates from your barangay, city, region, and DOH.",
     "empty": "No announcements yet.",
     "deleteAction": "Delete"
+  },
+  "surveys": {
+    "heading": "Surveys",
+    "intro": "Share your feedback with your barangay, city, region, and DOH.",
+    "empty": "No surveys available right now.",
+    "submitting": "Submitting…",
+    "submitAction": "Submit",
+    "thankYou": "Thank you for your response!",
+    "notAuthorizedError": "You're not authorized to do that.",
+    "answerRequiredError": "At least one answer is required.",
+    "invalidQuestionError": "That answer couldn't be matched to a question.",
+    "surveyNotFoundError": "That survey wasn't found.",
+    "genericError": "Something went wrong. Please try again."
   }
 }

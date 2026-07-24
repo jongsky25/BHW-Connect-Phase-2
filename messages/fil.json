@@ -67,7 +67,8 @@
     "chatGuideCta": "Chat Guide",
     "kbBrowseCta": "Tingnan ang Knowledge Base",
     "settingsCta": "Mga Setting",
-    "announcementsCta": "Mga Anunsyo"
+    "announcementsCta": "Mga Anunsyo",
+    "surveysCta": "Mga Survey"
   },
   "settings": {
     "heading": "Mga Setting",
@@ -135,7 +136,8 @@
       "kbSynonyms": "Mga Kasingkahulugan",
       "flags": "Mga Feature Flag",
       "settings": "Mga Setting",
-      "announcements": "Mga Anunsyo"
+      "announcements": "Mga Anunsyo",
+      "surveys": "Mga Survey"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -407,6 +409,61 @@
       "orgUnitOutOfScopeError": "Maaari ka lamang mag-post sa loob ng iyong saklaw.",
       "announcementNotFoundError": "Hindi nahanap ang anunsyong iyon.",
       "genericError": "May nagkamali. Pakisubukang muli."
+    },
+    "surveys": {
+      "heading": "Mga Survey",
+      "createHeading": "Bagong survey",
+      "orgUnitLabel": "I-deploy sa",
+      "titleFilLabel": "Pamagat (Filipino)",
+      "titleEnLabel": "Pamagat (English)",
+      "descriptionFilLabel": "Paglalarawan (Filipino, opsyonal)",
+      "descriptionEnLabel": "Paglalarawan (English, opsyonal)",
+      "anonymousLabel": "Anonymous ang mga sagot",
+      "questionsHeading": "Mga Tanong",
+      "questionTypeLabel": "Uri ng tanong",
+      "questionType": {
+        "single_choice": "Multiple choice (iisang sagot)",
+        "multi_choice": "Multiple choice (maaaring pumili ng marami)",
+        "rating": "Rating scale (1-5)",
+        "text": "Bukas na sagot"
+      },
+      "promptFilLabel": "Tanong (Filipino)",
+      "promptEnLabel": "Tanong (English)",
+      "optionsLabel": "Mga pagpipilian",
+      "optionFilLabel": "Pagpipilian {number} (Filipino)",
+      "optionEnLabel": "Pagpipilian {number} (English)",
+      "addOptionAction": "+ Magdagdag ng pagpipilian",
+      "addQuestionAction": "+ Magdagdag ng tanong",
+      "removeQuestionAction": "Alisin ang tanong na ito",
+      "creating": "Ginagawa…",
+      "createAction": "Gumawa ng survey",
+      "empty": "Wala pang mga survey.",
+      "colTitle": "Pamagat",
+      "colOrgUnit": "Na-deploy sa",
+      "colStatus": "Status",
+      "colActions": "Mga Aksyon",
+      "status": {
+        "draft": "Draft",
+        "published": "Nailathala",
+        "closed": "Sarado"
+      },
+      "viewResultsAction": "Tingnan ang resulta",
+      "publishAction": "Ilathala",
+      "closeAction": "Isara",
+      "deleteAction": "Tanggalin",
+      "resultsHeading": "Mga Resulta",
+      "respondentCount": "{count, plural, one {# na sagot} other {# na sagot}}",
+      "anonymousBadge": "anonymous",
+      "noResponsesYet": "Wala pang sagot.",
+      "responsesUnit": "sagot",
+      "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+      "titleRequiredError": "Kailangan ng pamagat sa parehong wika.",
+      "questionRequiredError": "Kailangan ng hindi bababa sa isang tanong.",
+      "invalidQuestionTypeError": "Hindi suportado ang uri ng tanong na iyon.",
+      "orgUnitOutOfScopeError": "Maaari ka lamang mag-deploy sa loob ng iyong saklaw.",
+      "invalidStatusError": "Hindi valid na status iyon.",
+      "surveyNotFoundError": "Hindi nahanap ang survey na iyon.",
+      "genericError": "May nagkamali. Pakisubukang muli."
     }
   },
   "announcements": {
@@ -414,5 +471,18 @@
     "intro": "Mga update mula sa inyong barangay, lungsod, rehiyon, at DOH.",
     "empty": "Wala pang mga anunsyo.",
     "deleteAction": "Tanggalin"
+  },
+  "surveys": {
+    "heading": "Mga Survey",
+    "intro": "Ibahagi ang iyong puna sa inyong barangay, lungsod, rehiyon, at DOH.",
+    "empty": "Walang available na survey sa ngayon.",
+    "submitting": "Isinusumite…",
+    "submitAction": "Isumite",
+    "thankYou": "Salamat sa iyong sagot!",
+    "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+    "answerRequiredError": "Kailangan ng hindi bababa sa isang sagot.",
+    "invalidQuestionError": "Hindi na-match ang sagot na iyon sa isang tanong.",
+    "surveyNotFoundError": "Hindi nahanap ang survey na iyon.",
+    "genericError": "May nagkamali. Pakisubukang muli."
   }
 }
