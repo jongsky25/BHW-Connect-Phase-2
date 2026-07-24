@@ -328,10 +328,18 @@
       "editAction": "I-edit",
       "empty": "Wala pang tanong-sagot.",
       "prefillBanner": "Ginagawa ang entry na ito mula sa hindi nasagot na tanong: \"{question}\"",
+      "bulkSelectedCount": "{count} ang napili",
+      "bulkSelectAll": "Piliin lahat ng entry",
+      "bulkSelectRow": "Piliin ang \"{question}\"",
+      "bulkSelectMissingOwner": "Piliin ang mga entry na walang may-ari",
+      "bulkAssignAction": "Italaga ang may-ari + petsa ng review",
+      "bulkAssignSuccess": "Na-update ang {count} na entry.",
       "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
       "ownerRequiredError": "Kailangan ng may-ari bago mailathala ang entry na ito.",
       "entryNotFoundError": "Hindi nahanap ang entry.",
       "articleNotFoundError": "Hindi nahanap ang artikulo.",
+      "noEntriesSelectedError": "Pumili muna ng kahit isang entry.",
+      "bulkOwnerRequiredError": "Pumili ng may-ari na itatalaga sa mga napiling entry.",
       "genericError": "May naganap na problema. Subukan muli."
     },
     "kbArticles": {

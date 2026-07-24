@@ -328,10 +328,18 @@
       "editAction": "Edit",
       "empty": "No Q&A entries yet.",
       "prefillBanner": "Creating this entry from an unanswered question: \"{question}\"",
+      "bulkSelectedCount": "{count} selected",
+      "bulkSelectAll": "Select all entries",
+      "bulkSelectRow": "Select \"{question}\"",
+      "bulkSelectMissingOwner": "Select entries missing an owner",
+      "bulkAssignAction": "Assign owner + review date",
+      "bulkAssignSuccess": "Updated {count} entries.",
       "notAuthorizedError": "You're not authorized to do that.",
       "ownerRequiredError": "An owner is required to publish this entry.",
       "entryNotFoundError": "That entry wasn't found.",
       "articleNotFoundError": "That article wasn't found.",
+      "noEntriesSelectedError": "Select at least one entry first.",
+      "bulkOwnerRequiredError": "Choose an owner to assign to the selected entries.",
       "genericError": "Something went wrong. Please try again."
     },
     "kbArticles": {
