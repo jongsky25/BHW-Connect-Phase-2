@@ -396,10 +396,12 @@
       "anonymousLabel": "Responses are anonymous",
       "questionsHeading": "Questions",
       "questionTypeLabel": "Question type",
-      "questionType.single_choice": "Multiple choice (single answer)",
-      "questionType.multi_choice": "Multiple choice (select all that apply)",
-      "questionType.rating": "Rating scale (1-5)",
-      "questionType.text": "Open text",
+      "questionType": {
+        "single_choice": "Multiple choice (single answer)",
+        "multi_choice": "Multiple choice (select all that apply)",
+        "rating": "Rating scale (1-5)",
+        "text": "Open text"
+      },
       "promptFilLabel": "Question (Filipino)",
       "promptEnLabel": "Question (English)",
       "optionsLabel": "Answer options",
@@ -415,9 +417,11 @@
       "colOrgUnit": "Deployed to",
       "colStatus": "Status",
       "colActions": "Actions",
-      "status.draft": "Draft",
-      "status.published": "Published",
-      "status.closed": "Closed",
+      "status": {
+        "draft": "Draft",
+        "published": "Published",
+        "closed": "Closed"
+      },
       "viewResultsAction": "View results",
       "publishAction": "Publish",
       "closeAction": "Close",

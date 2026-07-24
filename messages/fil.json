@@ -396,10 +396,12 @@
       "anonymousLabel": "Anonymous ang mga sagot",
       "questionsHeading": "Mga Tanong",
       "questionTypeLabel": "Uri ng tanong",
-      "questionType.single_choice": "Multiple choice (iisang sagot)",
-      "questionType.multi_choice": "Multiple choice (maaaring pumili ng marami)",
-      "questionType.rating": "Rating scale (1-5)",
-      "questionType.text": "Bukas na sagot",
+      "questionType": {
+        "single_choice": "Multiple choice (iisang sagot)",
+        "multi_choice": "Multiple choice (maaaring pumili ng marami)",
+        "rating": "Rating scale (1-5)",
+        "text": "Bukas na sagot"
+      },
       "promptFilLabel": "Tanong (Filipino)",
       "promptEnLabel": "Tanong (English)",
       "optionsLabel": "Mga pagpipilian",
@@ -415,9 +417,11 @@
       "colOrgUnit": "Na-deploy sa",
       "colStatus": "Status",
       "colActions": "Mga Aksyon",
-      "status.draft": "Draft",
-      "status.published": "Nailathala",
-      "status.closed": "Sarado",
+      "status": {
+        "draft": "Draft",
+        "published": "Nailathala",
+        "closed": "Sarado"
+      },
       "viewResultsAction": "Tingnan ang resulta",
       "publishAction": "Ilathala",
       "closeAction": "Isara",
