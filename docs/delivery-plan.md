@@ -103,7 +103,7 @@ Account lifecycle (closes G12): deactivation is a status change, never a row del
 - Language toggle persists to the user profile.
 
 ### 5.6 Audit event taxonomy (laymanized)
-Fixed Phase 1 list: `user.created`, `user.deactivated`, `user.reactivated`, `user.password_reset`, `user.transferred`, `user.consent_given`, `user.data_exported`, `auth.login`, `auth.login_failed`, `auth.lockout`, `kb.entry_created`, `kb.entry_published`, `kb.entry_updated`, `kb.entry_archived`, `gap.resolved`, `gap.dismissed`, `flag.toggled`, `report.exported`. Each event stores a pre-rendered plain-language sentence in both languages (e.g., *"Si Admin Maria ay nagdagdag ng bagong user na si Juan D."*) — the laymanized audit view is just a filtered list of these sentences.
+Fixed Phase 1 list: `user.created`, `user.deactivated`, `user.reactivated`, `user.password_reset`, `user.transferred`, `user.consent_given`, `user.data_exported`, `auth.login`, `auth.login_failed`, `auth.lockout`, `kb.entry_created`, `kb.entry_published`, `kb.entry_updated`, `kb.entry_archived`, `gap.resolved`, `gap.dismissed`, `flag.toggled`, `report.exported`. Each event stores a pre-rendered plain-language sentence in both languages (e.g., *"Si Admin Maria ay nagdagdag ng bagong user na si Juan D."*) — the laymanized audit view is just a filtered list of these sentences. Extended in INC-10 with `announcement.created` / `announcement.deleted`, following the same pattern.
 
 ## 6. Feature Build Specs (detail beyond the requirements doc)
 
@@ -147,9 +147,11 @@ Each increment is one focused build session: scoped, testable, and independently
 
 **INC-9 — Ops hardening & pilot readiness.** Feature-flags table + server-side gating helper wired to nav/routes; error tracking wired with source maps; weekly `pg_dump` second-copy job; **executed restore drill with written runbook**; DPA data-export + anonymize actions; breach playbook + retention-purge jobs; deploy runbook. **DoD**: a flag flip hides a feature without deploy; a thrown test error appears in the tracker; the restore drill doc shows a real timed restore within RTO; purge job dry-run verified.
 
-**Pilot launch gate** (after INC-9): ≥ 50 published MCH entries; the pilot barangay's real users provisioned; all nine increment DoDs re-verified on production; KPI baseline captured.
+**Pilot launch gate** (after INC-9): ≥ 50 published MCH entries; the pilot barangay's real users provisioned; all nine increment DoDs re-verified on production; KPI baseline captured. This gate and the later-phase increments below are independent tracks — later phases are being built ahead of pilot validation at the maintainer's explicit direction (rather than the gap-queue-driven prioritization originally planned in this section), so each ships behind a feature flag defaulted off, leaving the pilot project unaffected until the gate clears and someone deliberately turns a feature on.
 
-Later phases (unchanged from the requirements doc, now buildable the same way): Announcements → Surveys → E-learning + Assessor + certificates → Forum → Flip-chart builder → Profiling-system live integration (fallback already ships in INC-2 via manual entry) → offline/PWA.
+**INC-10 — Announcements** (§6.4). Hierarchy-scoped post feed: `announcements` table + RLS (a post is visible to a viewer if the post's org unit is an ancestor of, or equal to, the viewer's own — so a national post reaches everyone, a barangay post reaches only that barangay); admin posting UI with an org-unit picker (defaults to the poster's own unit, selectable within their scope) and image/link attachments (native video upload is out of scope — a pasted video link covers that case); BHW-facing read-only feed at `/announcements`. Ships behind the `announcements` flag (default `false`). **DoD**: a barangay-level post reaches BHWs in that barangay but not a sibling barangay; a city-or-higher-level post cascades down to every barangay beneath it; delete removes a post from every viewer's feed.
+
+Remaining later phases (unchanged from the requirements doc, now buildable the same way): Surveys → E-learning + Assessor + certificates → Forum → Flip-chart builder → Profiling-system live integration (fallback already ships in INC-2 via manual entry) → offline/PWA.
 
 ## 8. Pilot Success Metrics
 

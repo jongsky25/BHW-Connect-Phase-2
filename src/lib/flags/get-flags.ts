@@ -1,12 +1,15 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { FeatureFlagKey, FeatureFlags } from "./types";
 
-// Every flag here defaults to "on" — the behavior before this table existed
-// — so a flags-table read failure (or a flag row that hasn't been seeded
-// yet) never silently hides a feature that was already shipping.
+// kb_articles/reports_export default to "on" — the behavior before this
+// table existed — so a flags-table read failure never silently hides a
+// feature that was already shipping. announcements is a brand-new feature
+// with no such prior behavior to preserve, so it fails closed instead: a
+// flags-read failure should never expose an unreviewed feature.
 const DEFAULT_FLAGS: FeatureFlags = {
   kb_articles: true,
   reports_export: true,
+  announcements: false,
 };
 
 export async function getFeatureFlags(supabase: SupabaseClient): Promise<FeatureFlags> {

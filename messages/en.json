@@ -66,7 +66,8 @@
     "adminConsoleCta": "Admin console",
     "chatGuideCta": "Chat Guide",
     "kbBrowseCta": "Browse Knowledge Base",
-    "settingsCta": "Settings"
+    "settingsCta": "Settings",
+    "announcementsCta": "Announcements"
   },
   "settings": {
     "heading": "Settings",
@@ -133,7 +134,8 @@
       "kbArticles": "Articles",
       "kbSynonyms": "Synonyms",
       "flags": "Feature flags",
-      "settings": "Settings"
+      "settings": "Settings",
+      "announcements": "Announcements"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -382,6 +384,35 @@
       "confirmDeleteAction": "Confirm delete",
       "empty": "No synonyms yet.",
       "genericError": "Something went wrong. Please try again."
+    },
+    "announcements": {
+      "heading": "Announcements",
+      "postHeading": "New announcement",
+      "orgUnitLabel": "Post to",
+      "bodyFilLabel": "Message (Filipino)",
+      "bodyEnLabel": "Message (English)",
+      "linkLabel": "Link (optional)",
+      "linkPlaceholder": "https://…",
+      "imageLabel": "Image (optional)",
+      "imageUpload": "Upload image",
+      "imageUploading": "Uploading…",
+      "imageReplace": "Replace image",
+      "imageRemove": "Remove image",
+      "imageUploadError": "Couldn't upload that image. Please try again.",
+      "posting": "Posting…",
+      "postAction": "Post",
+      "empty": "No announcements yet.",
+      "notAuthorizedError": "You're not authorized to do that.",
+      "bodyRequiredError": "A message in both languages is required.",
+      "orgUnitOutOfScopeError": "You can only post within your own scope.",
+      "announcementNotFoundError": "That announcement wasn't found.",
+      "genericError": "Something went wrong. Please try again."
     }
+  },
+  "announcements": {
+    "heading": "Announcements",
+    "intro": "Updates from your barangay, city, region, and DOH.",
+    "empty": "No announcements yet.",
+    "deleteAction": "Delete"
   }
 }
