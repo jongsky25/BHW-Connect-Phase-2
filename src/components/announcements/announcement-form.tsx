@@ -46,7 +46,7 @@ export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Prop
         return;
       }
 
-      const row = (data as Array<{ id: string }> | null)?.[0];
+      const row = (data as Array<{ announcement_id: string }> | null)?.[0];
       if (!row) {
         setError(t("genericError"));
         return;
@@ -54,7 +54,7 @@ export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Prop
 
       const orgUnit = orgUnits.find((unit) => unit.id === orgUnitId) ?? null;
       onCreated({
-        id: row.id,
+        id: row.announcement_id,
         org_unit_id: orgUnitId,
         author_user_id: "",
         body_fil: bodyFil.trim(),

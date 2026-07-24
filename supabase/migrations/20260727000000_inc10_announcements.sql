@@ -113,7 +113,7 @@ create or replace function public.rpc_announcement_create(
   p_link_url text default null,
   p_image_url text default null
 )
-returns table (id uuid)
+returns table (announcement_id uuid)
 language plpgsql
 security definer
 set search_path = public

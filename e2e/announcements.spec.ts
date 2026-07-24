@@ -28,8 +28,8 @@ test("a barangay admin posts an announcement, it reaches BHWs in that barangay b
     page.waitForResponse((response) => response.url().includes("rpc_announcement_create")),
     page.getByRole("button", { name: "I-post" }).click(),
   ]);
-  const createBody = (await createResponse.json()) as Array<{ id: string }>;
-  const announcementId = createBody[0]?.id;
+  const createBody = (await createResponse.json()) as Array<{ announcement_id: string }>;
+  const announcementId = createBody[0]?.announcement_id;
   expect(announcementId).toBeTruthy();
 
   await expect(page.getByText(marker).first()).toBeVisible();
@@ -79,8 +79,8 @@ test("a city-level announcement cascades down to a barangay BHW's feed", async (
       },
     },
   );
-  const createBody = (await createResponse.json()) as Array<{ id: string }>;
-  const announcementId = createBody[0]?.id;
+  const createBody = (await createResponse.json()) as Array<{ announcement_id: string }>;
+  const announcementId = createBody[0]?.announcement_id;
   expect(announcementId).toBeTruthy();
 
   // Both barangays under Los Baños should see a city-level post.
