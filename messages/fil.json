@@ -70,7 +70,8 @@
     "announcementsCta": "Mga Anunsyo",
     "surveysCta": "Mga Survey",
     "coursesCta": "Mga Kurso",
-    "assessmentsCta": "Mga Pagtatasa"
+    "assessmentsCta": "Mga Pagtatasa",
+    "forumCta": "Forum"
   },
   "settings": {
     "heading": "Mga Setting",
@@ -140,7 +141,8 @@
       "settings": "Mga Setting",
       "announcements": "Mga Anunsyo",
       "surveys": "Mga Survey",
-      "courses": "Mga Kurso"
+      "courses": "Mga Kurso",
+      "forum": "Forum"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -526,6 +528,39 @@
       "courseNotFoundError": "Hindi nahanap ang kurso na iyon.",
       "courseHasProgressError": "May progreso na ang mga BHW sa kursong ito kaya hindi na ito matatanggal.",
       "genericError": "May nagkamali. Pakisubukang muli."
+    },
+    "forum": {
+      "heading": "Forum",
+      "categoriesHeading": "Mga Kategorya",
+      "createCategoryHeading": "Bagong kategorya",
+      "slugLabel": "Slug",
+      "nameFilLabel": "Pangalan (Filipino)",
+      "nameEnLabel": "Pangalan (English)",
+      "descriptionFilLabel": "Paglalarawan (Filipino, opsyonal)",
+      "descriptionEnLabel": "Paglalarawan (English, opsyonal)",
+      "creating": "Ginagawa…",
+      "createCategoryAction": "Gumawa ng kategorya",
+      "deleteCategoryAction": "Tanggalin",
+      "noCategories": "Wala pang mga kategorya.",
+      "threadsHeading": "Mga Thread",
+      "noThreads": "Wala pang mga thread.",
+      "postsHeading": "Mga Sagot",
+      "noPosts": "Wala pang mga sagot.",
+      "hideAction": "Itago",
+      "unhideAction": "Ipakita muli",
+      "status": {
+        "visible": "Nakikita",
+        "hidden": "Nakatago"
+      },
+      "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+      "slugAndNameRequiredError": "Kailangan ng slug at pangalan sa parehong wika.",
+      "categoryNotFoundError": "Hindi nahanap ang kategorya na iyon.",
+      "categoryHasThreadsError": "Hindi puwedeng tanggalin ang kategoryang may mga thread na.",
+      "titleAndBodyRequiredError": "Kailangan ng pamagat at nilalaman.",
+      "bodyRequiredError": "Kailangan ng nilalaman.",
+      "threadNotFoundError": "Hindi nahanap ang thread na iyon.",
+      "postNotFoundError": "Hindi nahanap ang sagot na iyon.",
+      "genericError": "May nagkamali. Pakisubukang muli."
     }
   },
   "announcements": {
@@ -611,6 +646,32 @@
     "downloadPdfAction": "I-download ang sertipiko (PDF)",
     "pdfHeading": "Sertipiko ng Pagkumpleto",
     "scanToVerifyLabel": "I-scan para patunayan",
+    "genericError": "May nagkamali. Pakisubukang muli."
+  },
+  "forum": {
+    "heading": "Forum",
+    "intro": "Magbahagi ng mga best practice at karanasan sa buong network.",
+    "allCategories": "Lahat",
+    "newThreadCta": "Bagong thread",
+    "newThreadHeading": "Bagong thread",
+    "empty": "Wala pang mga thread.",
+    "categoryLabel": "Kategorya",
+    "titleLabel": "Pamagat",
+    "bodyLabel": "Nilalaman",
+    "tagsLabel": "Mga Tag (hiwalay ng kuwit, opsyonal)",
+    "tagsPlaceholder": "hal. nutrisyon, bakuna",
+    "posting": "Ipinopost…",
+    "postThreadAction": "I-post ang thread",
+    "repliesHeading": "Mga Sagot",
+    "noReplies": "Wala pang sagot. Maging una!",
+    "replyLabel": "Sumagot",
+    "postReplyAction": "I-post ang sagot",
+    "threadHiddenNotice": "Itinago ng moderator ang thread na ito. Ikaw lang ang nakakakita nito.",
+    "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+    "titleAndBodyRequiredError": "Kailangan ng pamagat at nilalaman.",
+    "bodyRequiredError": "Kailangan ng nilalaman.",
+    "threadNotFoundError": "Hindi nahanap ang thread na iyon.",
+    "categoryNotFoundError": "Hindi nahanap ang kategorya na iyon.",
     "genericError": "May nagkamali. Pakisubukang muli."
   }
 }

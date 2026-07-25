@@ -1,4 +1,4 @@
-export type FeatureFlagKey = "kb_articles" | "reports_export" | "announcements" | "surveys" | "elearning";
+export type FeatureFlagKey = "kb_articles" | "reports_export" | "announcements" | "surveys" | "elearning" | "forum";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 
