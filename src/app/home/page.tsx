@@ -91,6 +91,22 @@ export default async function HomePage() {
             {t("forumCta")}
           </Link>
         ) : null}
+        {flags.flipcharts ? (
+          <Link
+            href="/flipcharts"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("flipchartsCta")}
+          </Link>
+        ) : null}
+        {flags.flipcharts && appUser.role === "designer" ? (
+          <Link
+            href="/designer/flipcharts"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("designerFlipchartsCta")}
+          </Link>
+        ) : null}
         <Link
           href="/settings"
           className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"

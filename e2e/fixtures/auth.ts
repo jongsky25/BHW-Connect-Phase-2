@@ -100,7 +100,7 @@ async function createThrowawayUser(
   request: APIRequestContext,
   adminAccessToken: string,
   orgUnitId: string,
-  role: "bhw" | "assessor",
+  role: "bhw" | "assessor" | "designer",
 ): Promise<{ username: string; tempPassword: string; fullName: string }> {
   const username = `e2e.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
   const fullName = `E2E Throwaway ${username}`;
@@ -142,6 +142,14 @@ export async function createThrowawayAssessor(
   orgUnitId: string,
 ): Promise<{ username: string; tempPassword: string; fullName: string }> {
   return createThrowawayUser(request, adminAccessToken, orgUnitId, "assessor");
+}
+
+export async function createThrowawayDesigner(
+  request: APIRequestContext,
+  adminAccessToken: string,
+  orgUnitId: string,
+): Promise<{ username: string; tempPassword: string; fullName: string }> {
+  return createThrowawayUser(request, adminAccessToken, orgUnitId, "designer");
 }
 
 // Drives a freshly provisioned BHW through the forced change-password and

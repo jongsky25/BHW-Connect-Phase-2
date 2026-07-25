@@ -5,7 +5,7 @@ export type AppUser = {
   auth_user_id: string;
   username: string;
   full_name: string;
-  role: "bhw" | "admin" | "assessor";
+  role: "bhw" | "admin" | "assessor" | "designer";
   org_unit_id: string;
   status: "invited" | "active" | "deactivated";
   must_change_password: boolean;
