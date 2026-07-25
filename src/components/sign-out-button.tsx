@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
+import { clearOfflineCache } from "@/lib/pwa/clear-offline-cache";
 import { createClient } from "@/lib/supabase/client";
 
 export function SignOutButton() {
@@ -11,6 +12,7 @@ export function SignOutButton() {
   async function handleSignOut() {
     const supabase = createClient();
     await supabase.auth.signOut();
+    await clearOfflineCache();
     router.push("/login");
     router.refresh();
   }

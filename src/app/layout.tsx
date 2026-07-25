@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { headers } from "next/headers";
+import { ServiceWorkerRegister } from "@/components/pwa/service-worker-register";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { parseA11ySettings } from "@/lib/settings/types";
@@ -18,10 +19,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "BHW Connect",
-  description: "A companion app for Barangay Health Workers.",
-};
+// generateMetadata/generateViewport (not the static `metadata`/`viewport`
+// exports) because whether the manifest link and theme-color are present
+// depends on the offline_pwa flag, which is per-request state forwarded
+// from middleware — same reason a11y below reads a header instead of a
+// static value.
+export async function generateMetadata(): Promise<Metadata> {
+  const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
+  return {
+    title: "BHW Connect",
+    description: "A companion app for Barangay Health Workers.",
+    ...(offlinePwaEnabled ? { manifest: "/manifest.webmanifest" } : {}),
+  };
+}
+
+export async function generateViewport(): Promise<Viewport> {
+  const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
+  return offlinePwaEnabled ? { themeColor: "#b84e12" } : {};
+}
 
 export default async function RootLayout({
   children,
@@ -31,6 +46,7 @@ export default async function RootLayout({
   const locale = await getLocale();
   const messages = await getMessages();
   const a11y = await getRequestA11ySettings();
+  const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
 
   return (
     <html
@@ -46,6 +62,7 @@ export default async function RootLayout({
           <main className="flex flex-1 flex-col">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
+        <ServiceWorkerRegister enabled={offlinePwaEnabled} />
       </body>
     </html>
   );
@@ -67,4 +84,9 @@ async function getRequestA11ySettings() {
   } catch {
     return parseA11ySettings(null);
   }
+}
+
+async function getRequestOfflinePwaEnabled() {
+  const h = await headers();
+  return h.get("x-app-offline-pwa") === "1";
 }

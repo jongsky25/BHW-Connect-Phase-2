@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { getAppUser } from "./app-user";
+import { getFeatureFlags } from "../flags/get-flags";
 import { getSupabaseAnonKey, getSupabaseUrl } from "./env";
 
 // A BHW's working day session: idle 8h with no requests signs them out,
@@ -8,7 +9,7 @@ import { getSupabaseAnonKey, getSupabaseUrl } from "./env";
 const IDLE_TIMEOUT_MS = 8 * 60 * 60 * 1000;
 const LAST_ACTIVITY_COOKIE = "bhw_last_activity";
 
-const PUBLIC_PATHS = new Set(["/", "/privacy", "/login"]);
+const PUBLIC_PATHS = new Set(["/", "/privacy", "/login", "/offline"]);
 
 function isApiPath(pathname: string) {
   return pathname.startsWith("/api/");
@@ -121,24 +122,28 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
-  return withAppUserHeaders(response, request, appUser);
+  const flags = await getFeatureFlags(supabase);
+
+  return withAppUserHeaders(response, request, appUser, flags.offline_pwa);
 }
 
 // The root layout and i18n config need the signed-in user's language/a11y
-// prefs on every request, but appUser is already fetched above — forward
-// it as request headers instead of making them re-fetch it a second time
-// inside the page render. That second fetch was adding an extra Supabase
-// round trip to every request (including the public "/" this middleware
-// already lets through), which was enough to blow the Lighthouse
-// performance budget.
+// prefs (and, since INC-15, whether offline_pwa is on) on every request,
+// but appUser is already fetched above — forward it as request headers
+// instead of making them re-fetch it a second time inside the page
+// render. That second fetch was adding an extra Supabase round trip to
+// every request (including the public "/" this middleware already lets
+// through), which was enough to blow the Lighthouse performance budget.
 function withAppUserHeaders(
   response: NextResponse,
   request: NextRequest,
   appUser: NonNullable<Awaited<ReturnType<typeof getAppUser>>>,
+  offlinePwaEnabled: boolean,
 ) {
   const forwardedHeaders = new Headers(request.headers);
   forwardedHeaders.set("x-app-language", appUser.language);
   forwardedHeaders.set("x-app-a11y", JSON.stringify(appUser.a11y_settings ?? {}));
+  forwardedHeaders.set("x-app-offline-pwa", offlinePwaEnabled ? "1" : "0");
 
   const next = NextResponse.next({ request: { headers: forwardedHeaders } });
   for (const cookie of response.cookies.getAll()) {

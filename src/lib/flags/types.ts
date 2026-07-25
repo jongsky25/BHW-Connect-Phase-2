@@ -1,4 +1,11 @@
-export type FeatureFlagKey = "kb_articles" | "reports_export" | "announcements" | "surveys" | "elearning" | "forum";
+export type FeatureFlagKey =
+  | "kb_articles"
+  | "reports_export"
+  | "announcements"
+  | "surveys"
+  | "elearning"
+  | "forum"
+  | "offline_pwa";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 

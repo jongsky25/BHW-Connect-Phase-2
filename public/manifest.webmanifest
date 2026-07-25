@@ -1,0 +1,24 @@
+{
+  "name": "BHW Connect",
+  "short_name": "BHW Connect",
+  "description": "A companion app for Barangay Health Workers.",
+  "start_url": "/home",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f2ed",
+  "theme_color": "#b84e12",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
