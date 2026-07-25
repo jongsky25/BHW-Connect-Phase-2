@@ -14,6 +14,12 @@ function isApiPath(pathname: string) {
   return pathname.startsWith("/api/");
 }
 
+// Certificate verification is meant to work for anyone with the code —
+// employers, program officers — without requiring a BHW Connect account.
+function isPublicPath(pathname: string) {
+  return PUBLIC_PATHS.has(pathname) || pathname.startsWith("/certificates/");
+}
+
 function redirectTo(request: NextRequest, path: string, response: NextResponse) {
   const url = request.nextUrl.clone();
   url.pathname = path;
@@ -50,13 +56,12 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const pathname = request.nextUrl.pathname;
-  const isPublicPath = PUBLIC_PATHS.has(pathname);
 
   if (!user) {
     if (isApiPath(pathname)) {
       return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     }
-    if (!isPublicPath) {
+    if (!isPublicPath(pathname)) {
       return redirectTo(request, "/login", response);
     }
     return response;
