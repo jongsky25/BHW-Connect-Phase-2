@@ -4,9 +4,9 @@ import type { FeatureFlagKey, FeatureFlags } from "./types";
 // kb_articles/reports_export default to "on" — the behavior before this
 // table existed — so a flags-table read failure never silently hides a
 // feature that was already shipping. announcements/surveys/elearning/forum
-// are brand-new features with no such prior behavior to preserve, so they
-// fail closed instead: a flags-read failure should never expose an
-// unreviewed feature.
+// /flipcharts are brand-new features with no such prior behavior to
+// preserve, so they fail closed instead: a flags-read failure should never
+// expose an unreviewed feature.
 const DEFAULT_FLAGS: FeatureFlags = {
   kb_articles: true,
   reports_export: true,
@@ -14,6 +14,7 @@ const DEFAULT_FLAGS: FeatureFlags = {
   surveys: false,
   elearning: false,
   forum: false,
+  flipcharts: false,
 };
 
 export async function getFeatureFlags(supabase: SupabaseClient): Promise<FeatureFlags> {

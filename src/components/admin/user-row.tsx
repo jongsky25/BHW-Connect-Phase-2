@@ -233,7 +233,15 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
         )}
       </td>
       <td className="px-3 py-3 text-sm text-ink">
-        {t(user.role === "admin" ? "roleAdmin" : user.role === "assessor" ? "roleAssessor" : "roleBhw")}
+        {t(
+          user.role === "admin"
+            ? "roleAdmin"
+            : user.role === "assessor"
+              ? "roleAssessor"
+              : user.role === "designer"
+                ? "roleDesigner"
+                : "roleBhw",
+        )}
       </td>
       <td className="px-3 py-3 text-sm text-ink">
         {mode === "transfer" ? (
