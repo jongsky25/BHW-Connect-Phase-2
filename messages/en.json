@@ -70,7 +70,8 @@
     "announcementsCta": "Announcements",
     "surveysCta": "Surveys",
     "coursesCta": "Courses",
-    "assessmentsCta": "Assessments"
+    "assessmentsCta": "Assessments",
+    "forumCta": "Forum"
   },
   "settings": {
     "heading": "Settings",
@@ -140,7 +141,8 @@
       "settings": "Settings",
       "announcements": "Announcements",
       "surveys": "Surveys",
-      "courses": "Courses"
+      "courses": "Courses",
+      "forum": "Forum"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -526,6 +528,39 @@
       "courseNotFoundError": "That course wasn't found.",
       "courseHasProgressError": "BHWs already have progress on this course, so it can't be deleted.",
       "genericError": "Something went wrong. Please try again."
+    },
+    "forum": {
+      "heading": "Forum",
+      "categoriesHeading": "Categories",
+      "createCategoryHeading": "New category",
+      "slugLabel": "Slug",
+      "nameFilLabel": "Name (Filipino)",
+      "nameEnLabel": "Name (English)",
+      "descriptionFilLabel": "Description (Filipino, optional)",
+      "descriptionEnLabel": "Description (English, optional)",
+      "creating": "Creating…",
+      "createCategoryAction": "Create category",
+      "deleteCategoryAction": "Delete",
+      "noCategories": "No categories yet.",
+      "threadsHeading": "Threads",
+      "noThreads": "No threads yet.",
+      "postsHeading": "Replies",
+      "noPosts": "No replies yet.",
+      "hideAction": "Hide",
+      "unhideAction": "Unhide",
+      "status": {
+        "visible": "Visible",
+        "hidden": "Hidden"
+      },
+      "notAuthorizedError": "You're not authorized to do that.",
+      "slugAndNameRequiredError": "A slug and a name in both languages are required.",
+      "categoryNotFoundError": "That category could not be found.",
+      "categoryHasThreadsError": "A category with threads can't be deleted.",
+      "titleAndBodyRequiredError": "A title and body are required.",
+      "bodyRequiredError": "Body is required.",
+      "threadNotFoundError": "That thread could not be found.",
+      "postNotFoundError": "That reply could not be found.",
+      "genericError": "Something went wrong. Please try again."
     }
   },
   "announcements": {
@@ -611,6 +646,32 @@
     "downloadPdfAction": "Download certificate (PDF)",
     "pdfHeading": "Certificate of Completion",
     "scanToVerifyLabel": "Scan to verify",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "forum": {
+    "heading": "Forum",
+    "intro": "Share best practices and experiences across the network.",
+    "allCategories": "All",
+    "newThreadCta": "New thread",
+    "newThreadHeading": "New thread",
+    "empty": "No threads yet.",
+    "categoryLabel": "Category",
+    "titleLabel": "Title",
+    "bodyLabel": "Body",
+    "tagsLabel": "Tags (comma-separated, optional)",
+    "tagsPlaceholder": "e.g. nutrition, vaccination",
+    "posting": "Posting…",
+    "postThreadAction": "Post thread",
+    "repliesHeading": "Replies",
+    "noReplies": "No replies yet. Be the first!",
+    "replyLabel": "Reply",
+    "postReplyAction": "Post reply",
+    "threadHiddenNotice": "A moderator hid this thread. Only you can see it now.",
+    "notAuthorizedError": "You're not authorized to do that.",
+    "titleAndBodyRequiredError": "A title and body are required.",
+    "bodyRequiredError": "Body is required.",
+    "threadNotFoundError": "That thread could not be found.",
+    "categoryNotFoundError": "That category could not be found.",
     "genericError": "Something went wrong. Please try again."
   }
 }
