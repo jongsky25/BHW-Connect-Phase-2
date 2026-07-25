@@ -70,6 +70,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
             {t("nav.forum")}
           </Link>
         ) : null}
+        {flags.flipcharts ? (
+          <Link href="/admin/flipcharts" className="text-secondary hover:underline">
+            {t("nav.flipcharts")}
+          </Link>
+        ) : null}
         <Link href="/admin/flags" className="text-secondary hover:underline">
           {t("nav.flags")}
         </Link>

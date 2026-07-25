@@ -5,6 +5,7 @@ export type FeatureFlagKey =
   | "surveys"
   | "elearning"
   | "forum"
+  | "flipcharts"
   | "offline_pwa";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;

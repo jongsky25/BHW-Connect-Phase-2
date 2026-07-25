@@ -76,7 +76,9 @@
     "surveysCta": "Surveys",
     "coursesCta": "Courses",
     "assessmentsCta": "Assessments",
-    "forumCta": "Forum"
+    "forumCta": "Forum",
+    "flipchartsCta": "Flip Charts",
+    "designerFlipchartsCta": "My Flip Charts"
   },
   "settings": {
     "heading": "Settings",
@@ -147,7 +149,8 @@
       "announcements": "Announcements",
       "surveys": "Surveys",
       "courses": "Courses",
-      "forum": "Forum"
+      "forum": "Forum",
+      "flipcharts": "Flip Charts"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -244,6 +247,7 @@
       "roleBhw": "BHW",
       "roleAdmin": "Admin",
       "roleAssessor": "Assessor",
+      "roleDesigner": "Designer",
       "createSubmit": "Create user",
       "creating": "Creating…",
       "tempPasswordNotice": "Temporary password for {username}: {password}. This is shown only once — copy it now.",
@@ -566,6 +570,37 @@
       "threadNotFoundError": "That thread could not be found.",
       "postNotFoundError": "That reply could not be found.",
       "genericError": "Something went wrong. Please try again."
+    },
+    "flipcharts": {
+      "heading": "Flip Charts",
+      "createHeading": "New flip chart (publishes immediately)",
+      "titleFilLabel": "Title (Filipino)",
+      "titleEnLabel": "Title (English)",
+      "creating": "Creating…",
+      "createAction": "Create and publish",
+      "reviewQueueHeading": "Pending Review",
+      "noReviewItems": "Nothing waiting for review.",
+      "rejectNoteLabel": "Note for the designer (if rejecting)",
+      "approveAction": "Approve",
+      "rejectAction": "Reject",
+      "allChartsHeading": "All Flip Charts",
+      "empty": "No flip charts yet.",
+      "deleteAction": "Delete",
+      "status": {
+        "draft": "Draft",
+        "in_review": "In Review",
+        "published": "Published"
+      },
+      "notAuthorizedError": "You're not authorized to do that.",
+      "titleRequiredError": "A title in both languages is required.",
+      "pageRequiredError": "At least one page is required.",
+      "pageImageRequiredError": "Every page needs a client-facing image.",
+      "pageScriptRequiredError": "Every page needs a script in both languages.",
+      "flipchartNotFoundError": "That flip chart could not be found.",
+      "onlyDraftSubmittableError": "Only a draft can be submitted for review.",
+      "onlyInReviewDecidableError": "Only a chart in review can be approved or rejected.",
+      "publishedNotDeletableError": "A published flip chart can't be deleted.",
+      "genericError": "Something went wrong. Please try again."
     }
   },
   "announcements": {
@@ -678,5 +713,62 @@
     "threadNotFoundError": "That thread could not be found.",
     "categoryNotFoundError": "That category could not be found.",
     "genericError": "Something went wrong. Please try again."
+  },
+  "designer": {
+    "flipcharts": {
+      "heading": "My Flip Charts",
+      "createHeading": "New flip chart (draft)",
+      "titleFilLabel": "Title (Filipino)",
+      "titleEnLabel": "Title (English)",
+      "creating": "Creating…",
+      "createAction": "Save as draft",
+      "myChartsHeading": "My Flip Charts",
+      "empty": "You don't have any flip charts yet.",
+      "submitAction": "Submit for review",
+      "deleteAction": "Delete",
+      "reviewNotePrefix": "Admin note:",
+      "status": {
+        "draft": "Draft",
+        "in_review": "In Review",
+        "published": "Published"
+      },
+      "notAuthorizedError": "You're not authorized to do that.",
+      "titleRequiredError": "A title in both languages is required.",
+      "pageRequiredError": "At least one page is required.",
+      "pageImageRequiredError": "Every page needs a client-facing image.",
+      "pageScriptRequiredError": "Every page needs a script in both languages.",
+      "flipchartNotFoundError": "That flip chart could not be found.",
+      "onlyDraftSubmittableError": "Only a draft can be submitted for review.",
+      "onlyInReviewDecidableError": "Only a chart in review can be approved or rejected.",
+      "publishedNotDeletableError": "A published flip chart can't be deleted.",
+      "genericError": "Something went wrong. Please try again."
+    }
+  },
+  "flipchartPages": {
+    "pagesHeading": "Pages",
+    "pageNumber": "Page {number}",
+    "clientImageLabel": "Client-facing image",
+    "clientCaptionFilLabel": "Caption (Filipino, optional)",
+    "clientCaptionEnLabel": "Caption (English, optional)",
+    "scriptFilLabel": "BHW script (Filipino)",
+    "scriptEnLabel": "BHW script (English)",
+    "addPageAction": "+ Add page",
+    "removePageAction": "Remove this page",
+    "imageUpload": "Upload image",
+    "imageUploading": "Uploading…",
+    "imageReplace": "Replace image",
+    "imageRemove": "Remove image",
+    "imageUploadError": "Upload failed. Please try again."
+  },
+  "flipcharts": {
+    "heading": "Flip Charts",
+    "intro": "Health teaching materials to use while presenting to the community.",
+    "empty": "No published flip charts yet.",
+    "clientViewToggle": "Client view",
+    "bhwViewToggle": "BHW script",
+    "scriptHeading": "BHW script",
+    "previousPageAction": "Previous",
+    "nextPageAction": "Next",
+    "pageIndicator": "Page {current} of {total}"
   }
 }

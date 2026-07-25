@@ -76,7 +76,9 @@
     "surveysCta": "Mga Survey",
     "coursesCta": "Mga Kurso",
     "assessmentsCta": "Mga Pagtatasa",
-    "forumCta": "Forum"
+    "forumCta": "Forum",
+    "flipchartsCta": "Mga Flip Chart",
+    "designerFlipchartsCta": "Aking mga Flip Chart"
   },
   "settings": {
     "heading": "Mga Setting",
@@ -147,7 +149,8 @@
       "announcements": "Mga Anunsyo",
       "surveys": "Mga Survey",
       "courses": "Mga Kurso",
-      "forum": "Forum"
+      "forum": "Forum",
+      "flipcharts": "Mga Flip Chart"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -244,6 +247,7 @@
       "roleBhw": "BHW",
       "roleAdmin": "Admin",
       "roleAssessor": "Assessor",
+      "roleDesigner": "Designer",
       "createSubmit": "Gumawa ng User",
       "creating": "Ginagawa…",
       "tempPasswordNotice": "Pansamantalang password para kay {username}: {password}. Ipinapakita lang ito ngayon — kopyahin ito.",
@@ -566,6 +570,37 @@
       "threadNotFoundError": "Hindi nahanap ang thread na iyon.",
       "postNotFoundError": "Hindi nahanap ang sagot na iyon.",
       "genericError": "May nagkamali. Pakisubukang muli."
+    },
+    "flipcharts": {
+      "heading": "Mga Flip Chart",
+      "createHeading": "Bagong flip chart (direktang mailalathala)",
+      "titleFilLabel": "Pamagat (Filipino)",
+      "titleEnLabel": "Pamagat (English)",
+      "creating": "Ginagawa…",
+      "createAction": "Gumawa at ilathala",
+      "reviewQueueHeading": "Mga Nakabinbing Pagsusuri",
+      "noReviewItems": "Walang naghihintay na pagsusuri.",
+      "rejectNoteLabel": "Tala para sa designer (kung tatanggihan)",
+      "approveAction": "Aprubahan",
+      "rejectAction": "Tanggihan",
+      "allChartsHeading": "Lahat ng Flip Chart",
+      "empty": "Wala pang flip chart.",
+      "deleteAction": "Tanggalin",
+      "status": {
+        "draft": "Draft",
+        "in_review": "Nasa Pagsusuri",
+        "published": "Nailathala"
+      },
+      "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+      "titleRequiredError": "Kailangan ng pamagat sa parehong wika.",
+      "pageRequiredError": "Kailangan ng hindi bababa sa isang pahina.",
+      "pageImageRequiredError": "Kailangan ng larawan para sa client sa bawat pahina.",
+      "pageScriptRequiredError": "Kailangan ng script sa parehong wika sa bawat pahina.",
+      "flipchartNotFoundError": "Hindi nahanap ang flip chart na iyon.",
+      "onlyDraftSubmittableError": "Draft lang ang puwedeng isumite para sa pagsusuri.",
+      "onlyInReviewDecidableError": "Ang nasa pagsusuri lang ang puwedeng aprubahan o tanggihan.",
+      "publishedNotDeletableError": "Hindi puwedeng tanggalin ang nailathalang flip chart.",
+      "genericError": "May nagkamali. Pakisubukang muli."
     }
   },
   "announcements": {
@@ -678,5 +713,62 @@
     "threadNotFoundError": "Hindi nahanap ang thread na iyon.",
     "categoryNotFoundError": "Hindi nahanap ang kategorya na iyon.",
     "genericError": "May nagkamali. Pakisubukang muli."
+  },
+  "designer": {
+    "flipcharts": {
+      "heading": "Aking mga Flip Chart",
+      "createHeading": "Bagong flip chart (draft)",
+      "titleFilLabel": "Pamagat (Filipino)",
+      "titleEnLabel": "Pamagat (English)",
+      "creating": "Ginagawa…",
+      "createAction": "I-save bilang draft",
+      "myChartsHeading": "Aking mga Flip Chart",
+      "empty": "Wala ka pang flip chart.",
+      "submitAction": "Isumite para sa pagsusuri",
+      "deleteAction": "Tanggalin",
+      "reviewNotePrefix": "Puna mula sa admin:",
+      "status": {
+        "draft": "Draft",
+        "in_review": "Nasa Pagsusuri",
+        "published": "Nailathala"
+      },
+      "notAuthorizedError": "Hindi ka awtorisado na gawin iyon.",
+      "titleRequiredError": "Kailangan ng pamagat sa parehong wika.",
+      "pageRequiredError": "Kailangan ng hindi bababa sa isang pahina.",
+      "pageImageRequiredError": "Kailangan ng larawan para sa client sa bawat pahina.",
+      "pageScriptRequiredError": "Kailangan ng script sa parehong wika sa bawat pahina.",
+      "flipchartNotFoundError": "Hindi nahanap ang flip chart na iyon.",
+      "onlyDraftSubmittableError": "Draft lang ang puwedeng isumite para sa pagsusuri.",
+      "onlyInReviewDecidableError": "Ang nasa pagsusuri lang ang puwedeng aprubahan o tanggihan.",
+      "publishedNotDeletableError": "Hindi puwedeng tanggalin ang nailathalang flip chart.",
+      "genericError": "May nagkamali. Pakisubukang muli."
+    }
+  },
+  "flipchartPages": {
+    "pagesHeading": "Mga Pahina",
+    "pageNumber": "Pahina {number}",
+    "clientImageLabel": "Larawan para sa client",
+    "clientCaptionFilLabel": "Caption (Filipino, opsyonal)",
+    "clientCaptionEnLabel": "Caption (English, opsyonal)",
+    "scriptFilLabel": "Script para sa BHW (Filipino)",
+    "scriptEnLabel": "Script para sa BHW (English)",
+    "addPageAction": "+ Magdagdag ng pahina",
+    "removePageAction": "Alisin ang pahinang ito",
+    "imageUpload": "Mag-upload ng larawan",
+    "imageUploading": "Ina-upload…",
+    "imageReplace": "Palitan ang larawan",
+    "imageRemove": "Alisin ang larawan",
+    "imageUploadError": "Nabigo ang pag-upload. Pakisubukang muli."
+  },
+  "flipcharts": {
+    "heading": "Mga Flip Chart",
+    "intro": "Mga health teaching material na magagamit habang nagpapresenta sa komunidad.",
+    "empty": "Wala pang nailathalang flip chart.",
+    "clientViewToggle": "Client view",
+    "bhwViewToggle": "BHW script",
+    "scriptHeading": "Script para sa BHW",
+    "previousPageAction": "Nakaraan",
+    "nextPageAction": "Susunod",
+    "pageIndicator": "Pahina {current} ng {total}"
   }
 }
