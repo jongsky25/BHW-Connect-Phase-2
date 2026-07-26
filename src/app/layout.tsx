@@ -47,6 +47,7 @@ export default async function RootLayout({
   const messages = await getMessages();
   const a11y = await getRequestA11ySettings();
   const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
+  const notifications = await getRequestNotifications();
 
   return (
     <html
@@ -58,7 +59,7 @@ export default async function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-canvas text-ink">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <SiteHeader />
+          <SiteHeader notificationsEnabled={notifications.enabled} notifUnreadCount={notifications.unreadCount} />
           <main className="flex flex-1 flex-col">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
@@ -89,4 +90,12 @@ async function getRequestA11ySettings() {
 async function getRequestOfflinePwaEnabled() {
   const h = await headers();
   return h.get("x-app-offline-pwa") === "1";
+}
+
+async function getRequestNotifications() {
+  const h = await headers();
+  return {
+    enabled: h.get("x-app-notifications") === "1",
+    unreadCount: Number(h.get("x-app-notif-unread") ?? "0"),
+  };
 }

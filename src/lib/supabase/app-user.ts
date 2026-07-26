@@ -14,10 +14,11 @@ export type AppUser = {
   a11y_settings: unknown;
   onboarding_progress: unknown;
   onboarding_completed_at: string | null;
+  notifications_last_read_at: string | null;
 };
 
 const APP_USER_COLUMNS =
-  "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language, a11y_settings, onboarding_progress, onboarding_completed_at";
+  "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language, a11y_settings, onboarding_progress, onboarding_completed_at, notifications_last_read_at";
 
 export async function getAppUser(
   supabase: SupabaseClient,
