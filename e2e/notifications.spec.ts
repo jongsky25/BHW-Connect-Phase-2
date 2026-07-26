@@ -80,7 +80,7 @@ test("a city-level survey publish cascades a notification to both barangays bene
     p_description_fil: "",
     p_description_en: "",
     p_is_anonymous: false,
-    p_questions: [{ type: "open_text", prompt_fil: "Bakit?", prompt_en: "Why?" }],
+    p_questions: [{ type: "text", prompt_fil: "Bakit?", prompt_en: "Why?" }],
   });
   const surveyId = (created.body as Array<{ survey_id: string }>)[0]?.survey_id;
   expect(surveyId).toBeTruthy();
@@ -147,10 +147,16 @@ test("a transferred user is notified, but another BHW in the destination org uni
   );
   const [{ id: userId }] = (await lookup.json()) as Array<{ id: string }>;
 
-  await callRpc(request, adminToken, "rpc_admin_transfer_user", {
+  // Batong Malake and Anos are sibling barangays under Los Baños — a
+  // barangay-level admin's scope covers only their own barangay, so
+  // transferring between siblings requires the city-level admin, not
+  // adminToken (rpc_admin_transfer_user rejects an out-of-scope destination).
+  const cityAdminToken = await getAccessToken(request, STABLE_CITY_ADMIN.username, STABLE_CITY_ADMIN.password);
+  const transfer = await callRpc(request, cityAdminToken, "rpc_admin_transfer_user", {
     p_user_id: userId,
     p_new_org_unit_id: BARANGAY_ANOS_ID,
   });
+  expect(transfer.status).toBe(204);
 
   const transferredUserToken = await getAccessToken(request, fresh.username, fresh.tempPassword);
   const otherBarangayToken = await getAccessToken(request, OTHER_BARANGAY_BHW.username, OTHER_BARANGAY_BHW.password);
@@ -162,7 +168,7 @@ test("a transferred user is notified, but another BHW in the destination org uni
   // admin who performed the transfer (not the recipient) can see it.
   expect(await restGet(request, transferredUserToken, filter)).toHaveLength(1);
   expect(await restGet(request, otherBarangayToken, filter)).toHaveLength(0);
-  expect(await restGet(request, adminToken, filter)).toHaveLength(0);
+  expect(await restGet(request, cityAdminToken, filter)).toHaveLength(0);
 });
 
 // INC-16 DoD: opening the notifications feed's "mark all as read" advances
