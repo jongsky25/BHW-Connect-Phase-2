@@ -15,6 +15,11 @@ describe("mapKbRpcError", () => {
     expect(mapKbRpcError("article not found")).toBe("articleNotFoundError");
   });
 
+  it("maps the bulk-assign guards", () => {
+    expect(mapKbRpcError("no entries selected")).toBe("noEntriesSelectedError");
+    expect(mapKbRpcError("bulk: an owner is required")).toBe("bulkOwnerRequiredError");
+  });
+
   it("falls back to a generic error for unknown or missing messages", () => {
     expect(mapKbRpcError("something unexpected")).toBe("genericError");
     expect(mapKbRpcError(undefined)).toBe("genericError");

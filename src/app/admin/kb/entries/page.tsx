@@ -1,14 +1,15 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { EmptyState } from "@/components/empty-state";
+import { EntriesTable } from "@/components/kb/entries-table";
 import { createClient } from "@/lib/supabase/server";
 
 type EntryRow = {
   id: string;
-  question_fil: string;
   question_en: string;
   status: "draft" | "published";
   review_due_on: string | null;
+  owner_user_id: string | null;
   category: { name_en: string } | null;
   owner: { full_name: string } | null;
 };
@@ -17,15 +18,26 @@ export default async function AdminKbEntriesPage() {
   const supabase = await createClient();
   const t = await getTranslations("admin.kbEntries");
 
-  const { data: entries } = await supabase
-    .from("kb_entries")
-    .select(
-      "id, question_fil, question_en, status, review_due_on, category:kb_categories(name_en), owner:users(full_name)",
-    )
-    .order("updated_at", { ascending: false })
-    .returns<EntryRow[]>();
+  const [{ data: entries }, { data: owners }] = await Promise.all([
+    supabase
+      .from("kb_entries")
+      .select(
+        "id, question_en, status, review_due_on, owner_user_id, category:kb_categories(name_en), owner:users(full_name)",
+      )
+      .order("updated_at", { ascending: false })
+      .returns<EntryRow[]>(),
+    supabase.from("users").select("id, full_name, username").eq("role", "admin").order("full_name"),
+  ]);
 
-  const rows = entries ?? [];
+  const rows = (entries ?? []).map((row) => ({
+    id: row.id,
+    question_en: row.question_en,
+    status: row.status,
+    review_due_on: row.review_due_on,
+    owner_user_id: row.owner_user_id,
+    category_name: row.category?.name_en ?? null,
+    owner_name: row.owner?.full_name ?? null,
+  }));
 
   return (
     <div className="flex flex-col gap-6">
@@ -42,53 +54,7 @@ export default async function AdminKbEntriesPage() {
       {rows.length === 0 ? (
         <EmptyState message={t("empty")} actionLabel={t("newAction")} actionHref="/admin/kb/entries/new" />
       ) : (
-        <div className="overflow-x-auto rounded-md border border-ink/10">
-          <table className="w-full min-w-[720px] border-collapse text-left">
-            <thead className="bg-ink/5">
-              <tr>
-                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
-                  {t("questionEnLabel")}
-                </th>
-                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
-                  {t("colCategory")}
-                </th>
-                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
-                  {t("colStatus")}
-                </th>
-                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
-                  {t("colOwner")}
-                </th>
-                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
-                  {t("reviewDueLabel")}
-                </th>
-                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
-                  {t("colActions")}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row) => (
-                <tr key={row.id} className="border-b border-ink/10">
-                  <td className="px-3 py-3 text-sm text-ink">{row.question_en}</td>
-                  <td className="px-3 py-3 text-sm text-ink">{row.category?.name_en ?? "—"}</td>
-                  <td className="px-3 py-3 text-sm text-ink">
-                    {t(row.status === "published" ? "statusPublished" : "statusDraft")}
-                  </td>
-                  <td className="px-3 py-3 text-sm text-ink">{row.owner?.full_name ?? "—"}</td>
-                  <td className="px-3 py-3 text-sm text-ink">{row.review_due_on ?? "—"}</td>
-                  <td className="px-3 py-3 text-sm">
-                    <Link
-                      href={`/admin/kb/entries/${row.id}`}
-                      className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
-                    >
-                      {t("editAction")}
-                    </Link>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <EntriesTable rows={rows} owners={owners ?? []} />
       )}
     </div>
   );
