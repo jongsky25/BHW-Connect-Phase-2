@@ -124,14 +124,25 @@ export async function updateSession(request: NextRequest) {
 
   const flags = await getFeatureFlags(supabase);
 
-  return withAppUserHeaders(response, request, appUser, flags.offline_pwa);
+  let notifUnreadCount = 0;
+  if (flags.notifications) {
+    const since = appUser.notifications_last_read_at ?? "1970-01-01T00:00:00Z";
+    const { count } = await supabase
+      .from("notifications")
+      .select("id", { count: "exact", head: true })
+      .gt("created_at", since);
+    notifUnreadCount = count ?? 0;
+  }
+
+  return withAppUserHeaders(response, request, appUser, flags.offline_pwa, flags.notifications, notifUnreadCount);
 }
 
 // The root layout and i18n config need the signed-in user's language/a11y
-// prefs (and, since INC-15, whether offline_pwa is on) on every request,
-// but appUser is already fetched above — forward it as request headers
-// instead of making them re-fetch it a second time inside the page
-// render. That second fetch was adding an extra Supabase round trip to
+// prefs (and, since INC-15, whether offline_pwa is on; since INC-16, the
+// notifications flag + unread count for the header bell) on every request,
+// but appUser/flags are already fetched above — forward them as request
+// headers instead of making the layout re-fetch a second time inside the
+// page render. That second fetch was adding an extra Supabase round trip to
 // every request (including the public "/" this middleware already lets
 // through), which was enough to blow the Lighthouse performance budget.
 function withAppUserHeaders(
@@ -139,11 +150,15 @@ function withAppUserHeaders(
   request: NextRequest,
   appUser: NonNullable<Awaited<ReturnType<typeof getAppUser>>>,
   offlinePwaEnabled: boolean,
+  notificationsEnabled: boolean,
+  notifUnreadCount: number,
 ) {
   const forwardedHeaders = new Headers(request.headers);
   forwardedHeaders.set("x-app-language", appUser.language);
   forwardedHeaders.set("x-app-a11y", JSON.stringify(appUser.a11y_settings ?? {}));
   forwardedHeaders.set("x-app-offline-pwa", offlinePwaEnabled ? "1" : "0");
+  forwardedHeaders.set("x-app-notifications", notificationsEnabled ? "1" : "0");
+  forwardedHeaders.set("x-app-notif-unread", String(notifUnreadCount));
 
   const next = NextResponse.next({ request: { headers: forwardedHeaders } });
   for (const cookie of response.cookies.getAll()) {

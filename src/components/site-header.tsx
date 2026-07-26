@@ -1,8 +1,14 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { LanguageToggle } from "@/components/language-toggle";
+import { NotificationBell } from "@/components/notifications/notification-bell";
 
-export function SiteHeader() {
+type Props = {
+  notificationsEnabled: boolean;
+  notifUnreadCount: number;
+};
+
+export function SiteHeader({ notificationsEnabled, notifUnreadCount }: Props) {
   const t = useTranslations("common");
 
   return (
@@ -14,7 +20,10 @@ export function SiteHeader() {
         >
           {t("appName")}
         </Link>
-        <LanguageToggle />
+        <div className="flex items-center gap-3">
+          {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
+          <LanguageToggle />
+        </div>
       </div>
     </header>
   );
