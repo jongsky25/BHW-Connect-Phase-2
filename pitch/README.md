@@ -52,15 +52,22 @@ theme** toggle flips it light/dark. Both are real product features being demonst
    reproduced faithfully — 29 criteria, 87-point maximum, 90% / 75% bands — because those are
    the DOH instrument's own. Every health string carries a validation notice.
 
-5. **Coverage arithmetic is the spine of the value argument.** From the Phase 1 registry:
-   Region VI has **23,813** BHWs; the training package's initial sites — Iloilo City (**309**)
-   and Guimaras (**705**) — hold **1,014**, or **4.3%**, leaving **22,799** unreached. Year-1
-   cost per BHW is ₱11,144 because Year 1 carries the whole build; the same platform is ₱475
-   per BHW across Region VI and ₱38 nationally. G3 and the scope slide both depend on these —
-   if any figure changes, change all of them together.
+5. **Coverage arithmetic is the spine of the value argument**, and the distinction between
+   *geography* and *delivery* is the whole point. From the Phase 1 registry, Region VI has
+   **23,813** BHWs. The training package covers Iloilo province (**10,519**), Iloilo City
+   (**309**) and Guimaras (**705**) — **11,533**, or **48.4%** — but that is the map, not the
+   delivery. Training begins only after the package's inception, development and validation
+   outputs; a contractor running sessions in the weeks that remain reaches **360–1,200**
+   people directly, i.e. **2–5%** of the region. The rest cascade, and the **12,280** in
+   Aklan, Antique and Capiz are outside the package entirely.
 
-   ⚠️ **Unverified:** the APW deck says coverage is "Iloilo (all districts)". The 309 is Iloilo
-   *City*. If "all districts" means Iloilo *province*, the 4.3% headline is wrong.
+   Year 1 covers the **whole region — 23,813 BHWs** — at **₱14.98M**, i.e. **₱629 per BHW**,
+   falling to **₱50** against the national base. G3, the scope slide, the concept note and
+   this file all carry these figures: **if one moves, they all move together.**
+
+   The delivery model (6–10 weeks, 2–3 sessions/week, 30–40 participants) is an assumption,
+   printed on-slide so it can be challenged. If the contractor's actual session count becomes
+   known, use it — a real number beats the model.
 
 6. **`[TO CONFIRM]` markers are load-bearing** and render as conspicuous `.tbc` chips so they
    cannot ship unnoticed. Two remain in the deck — the title slide's date/version/contact, and

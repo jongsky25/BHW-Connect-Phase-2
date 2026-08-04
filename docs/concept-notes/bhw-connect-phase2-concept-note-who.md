@@ -15,8 +15,13 @@
   DO NOT REINTRODUCE ttCF, Eastern Visayas or Region VIII anywhere in this document. That
   proposal is preliminary, is not settled, and is deliberately absent.
 
-  Coverage figures are from the Phase 1 registry: 23,813 BHWs in Region VI; the training
-  package's initial sites are Iloilo City (309) and Guimaras (705) = 1,014, i.e. 4.3%.
+  COVERAGE ARITHMETIC (Phase 1 registry). Region VI: 23,813 BHWs. The training package covers
+  Iloilo province 10,519 + Iloilo City 309 + Guimaras 705 = 11,533, i.e. 48.4% — but that is
+  geography, not delivery. Direct training reach is modelled at 360–1,200 over 6–10 weeks of
+  sessions, i.e. 2–5% of the region; the rest cascade, and the 12,280 in Aklan, Antique and
+  Capiz are outside entirely. Year-1 cohort here is the whole region, 23,813, at ₱14.98M =
+  ₱629/BHW, falling to ₱50/BHW nationally. If any of these move they all move together —
+  §3, §13, §15, §20 and pitch/bhw-connect-who.html.
 -->
 
 # CONCEPT NOTE
@@ -38,10 +43,10 @@ Bureau of Local Health Systems Development, Department of Health, Republic of th
 | Year 1 Flagship Module | Community-based NCD screening — the six-module HHP+ curriculum, digitized as the first DOH-approved learning module on the platform |
 | Proposed Partner | World Health Organization, Country Office for the Philippines |
 | Geographic Scope | Western Visayas (Region VI), aligned to the existing HHP+ footprint, as national proof-of-concept |
-| Initial Coverage | Iloilo City and Guimaras — matching the training package's own sites |
-| Year-1 BHW Cohort | **1,014** (Iloilo City 309 + Guimaras 705) — 4.3% of Region VI's 23,813 BHWs |
+| Training Package Footprint | Iloilo province (10,519), Iloilo City (309), Guimaras (705) = 11,533 — 48.4% of Region VI by geography; 360–1,200 reached by direct training |
+| Year-1 BHW Cohort | **23,813 — all of Western Visayas**, including the 12,280 in Aklan, Antique and Capiz the training package does not reach |
 | Duration | 12 months — Year 1 of a proposed phased programme |
-| Year-1 Contribution Sought | **₱11,300,000 (≈ US$195,000)** — built bottom-up from the workplan (see Section 13) |
+| Year-1 Contribution Sought | **₱14,980,000 (≈ US$258,000)** — built bottom-up from the workplan (see Section 13); ₱629 per BHW reached |
 | Government Counterpart | Platform ownership, the delivered Phase 1 registry, the completed Phase 2 design and architecture funded at BLHSD's own cost, hosting pathway, content approval authority, field structures, supervision and post-project sustainment |
 | Date | **[TO CONFIRM]** |
 
@@ -54,13 +59,13 @@ Bureau of Local Health Systems Development, Department of Health, Republic of th
 | | |
 |---|---|
 | What this is | Phase 2 of BHW Connect, the Department of Health's digital platform for Barangay Health Workers, owned and led by BLHSD. Phase 1 delivered the national BHW registry and profiled close to 300,000 BHWs nationwide in about a year, after roughly three decades without a complete national registry. Phase 2 turns that registry into a learning, training and certification platform. **The Phase 2 design is complete and demonstrable as mockups; this proposal funds building it, filling it with DOH-approved content, and putting it in front of a first cohort.** |
-| What is being added | (1) The platform built to the completed design. (2) The HHP+ six-module curriculum authored as DOH-approved learning content, clinically validated and formally approved. (3) Provisioning and pilot readiness. (4) Onboarding, supervision, certification and independent evaluation of 1,014 BHWs across Iloilo City and Guimaras. |
+| What is being added | (1) The platform built to the completed design. (2) The HHP+ six-module curriculum authored as DOH-approved learning content, clinically validated and formally approved. (3) Provisioning and pilot readiness. (4) Onboarding, supervision, certification and independent evaluation across all of Western Visayas — 23,813 Barangay Health Workers. |
 | First content module | Community-based NCD screening under HHP+ / PhilPEN 2025 — an evidence-based, WHO-supported curriculum with an existing 29-criterion return-demonstration assessment instrument. It becomes the first DOH-approved learning module on the platform, and the template for those that follow. |
 | Why this is low risk | The bureau has already delivered a national digital health system at scale; the users are already registered and organizationally located in the platform; and the Phase 2 design — requirements, data model, architecture, user journeys, content governance — is complete and demonstrable, so the year does not begin with discovery. What is being funded is construction against a settled design, not exploration. |
 | Why WHO | WHO has already financed the clinical substance: PhilPEN 2025 and PPSA capacity building, NCD flipcharts, job aids, monitoring tools, and a BHW training package now being contracted. That investment produces competency at a point in time. This platform is what keeps it current, measurable and national after the training contract closes. |
 | Who owns it | DOH, through BLHSD, retains ownership of the platform, its source code, its data and all published content, subject to a Memorandum of Agreement executed before implementation. |
 | Year-1 milestones | (1) Platform built, provisioned and through the pilot gate. (2) HHP+ curriculum digitized, clinically validated and DOH-approved. (3) Governance and content approval process established under MOA. (4) Certification rolled out — first cohort certified against the DOH return-demonstration standard. (5) Platform demonstrably ready to onboard the next DOH module. |
-| Timeline | M1–3 mobilization, governance and build start; M2–7 platform build and content authoring in parallel; M5–8 clinical validation and DOH approval; M7–10 onboarding across Iloilo City and Guimaras; M9–11 certification launch; M10–12 evaluation, handover and Year-2 plan. |
+| Timeline | M1–3 mobilization, governance and build start; M2–7 platform build and content authoring in parallel; M5–8 clinical validation and DOH approval; M6–11 phased onboarding across the six provinces and cities of Region VI; M9–11 certification launch; M10–12 evaluation, handover and Year-2 plan. |
 | Sustainability | Institutionalized through MOA and a departmental issuance, embedded in the BLHSD work and financial plan, hosted on government infrastructure, and staffed by trained BLHSD personnel — so continuity does not depend on the individuals or administrations in place today. |
 | Long-term value | HHP+ is the first of many DOH-approved modules. Immunization, Nutrition, Family Planning, Communicable Disease Surveillance, First Aid and BHW Administrative Procedures are already on the platform roadmap, each reusing the same engine at a fraction of Year 1's cost. |
 
@@ -90,15 +95,15 @@ The **HHP+ community NCD screening curriculum** is proposed as the Year 1 flagsh
 
 > **The Year-1 Ask**
 >
-> **₱11,300,000 (≈ US$195,000) over 12 months**, built bottom-up from the workplan: engineering to construct the platform, content authoring and clinical validation, bilingual video production, instructional design and QA, infrastructure, equipment, rollout and certification support, independent monitoring and evaluation, and governance work — itemized in Section 13.
+> **₱14,980,000 (≈ US$258,000) over 12 months**, built bottom-up from the workplan: engineering to construct the platform, content authoring and clinical validation, bilingual video production, instructional design and QA, infrastructure, equipment, region-wide rollout and certification support, independent monitoring and evaluation, and governance work — itemized in Section 13. That is **₱629 per Barangay Health Worker reached**.
 >
 > This does not include training-delivery costs, travel or per diem, or other programme implementation expenses. Those are counterpart contributions or funded separately.
 >
 > Ownership of the platform, its code, its data and its published content remains with DOH throughout, subject to a Memorandum of Agreement executed before implementation.
 
-Year 1 is deliberately scoped to be achievable, and deliberately scoped to *match the training package's own footprint*: it onboards the **1,014 Barangay Health Workers of Iloilo City (309) and Guimaras (705)** — the same sites the five-month training contract reaches — so that the two investments land on the same people and can be compared directly.
+Year 1 covers **the whole of Western Visayas — 23,813 Barangay Health Workers**, including the 12,280 in Aklan, Antique and Capiz that the training package does not reach at all. This is achievable because onboarding here is activation of a workforce already registered and organizationally located in Phase 1, not recruitment from an empty database.
 
-That cohort is 4.3% of Region VI's 23,813 BHWs. The remaining 22,799 are the point. Once the platform exists, reaching them is onboarding rather than construction, and the cost per Barangay Health Worker falls from ₱11,144 in Year 1 to roughly ₱475 across the region and ₱38 against the full national profiled base. Western Visayas is proposed as proof-of-concept for a nationwide DOH programme, not a standalone deployment.
+The comparison is stark and it is the heart of this proposal. The training package, running direct sessions in the weeks left after inception, package development and validation, reaches somewhere between **360 and 1,200 Barangay Health Workers** in person. This platform reaches **23,813** — between twenty and sixty-six times as many people — at **₱629 each**, falling to roughly **₱50 each** when the same platform is extended to the full national profiled base. Western Visayas is proposed as proof-of-concept for a nationwide DOH programme, not a standalone deployment.
 
 ---
 
@@ -118,7 +123,7 @@ A five-month training contract, executed perfectly, still leaves six things unre
 |---|---|---|
 | G1 | **Materials go stale** | Video modules are cut once. When guidance moves there is no mechanism to re-cut them and get the correction to people already trained. |
 | G2 | **Cascade decay** | Trained representatives cascade to their peers. What each BHW actually receives depends on who retold it, and nothing measures the difference. |
-| G3 | **The ceiling is arithmetic** | The package's initial sites — Iloilo City and Guimaras — hold 1,014 of Region VI's 23,813 Barangay Health Workers, or 4.3%. The other 22,799 are reached second-hand or not at all. Not a question of effort or of scoping judgement, but of how many people one contractor can physically reach in five months. |
+| G3 | **48.4% is the map; delivery is 2–5%** | The package covers Iloilo province, Iloilo City and Guimaras — 11,533 of Region VI's 23,813 Barangay Health Workers, or 48.4% *by geography*. But training begins only after inception, package development and technical validation, and a contractor running sessions in the weeks that remain reaches 360–1,200 people directly: 2–5% of the region. Everyone else inside the covered area receives a cascade; the 12,280 in Aklan, Antique and Capiz are outside the package entirely. Not a question of effort or of scoping judgement, but of how many people one contractor can physically train in the time available. |
 | G4 | **No route to national** | The contract's final output is scale-up *recommendations*. A recommendation is not a mechanism; nothing carries the package to the rest of the country's BHWs. |
 | G5 | **One competency, once** | Nothing is left standing to hold the next programme. Immunization, nutrition and MNCH each start again from zero. |
 | G6 | **Paper competence** | The 29-criterion return-demonstration checklist is hand-scored and filed locally. There is no queryable record of which BHWs are competent, and no re-certification trigger. |
@@ -193,7 +198,7 @@ To build and operationalize BHW Connect — the Department of Health's fully des
 
 ### Specific objectives
 
-- **Objective 1 — Build and provision the platform:** construct it to the completed design, clear the pilot launch gate, and onboard the 1,014 Barangay Health Workers of Iloilo City and Guimaras, establishing the playbook to reach the remaining 22,799 across Region VI.
+- **Objective 1 — Build and provision the platform:** construct it to the completed design, clear the pilot launch gate, and onboard all 23,813 Barangay Health Workers of Western Visayas — including the 12,280 in Aklan, Antique and Capiz outside the training package — establishing the playbook for national rollout.
 - **Objective 2 — Author, validate and publish the HHP+ curriculum:** the six modules as e-learning content and Knowledge Base entries, the return-demonstration instrument digitized faithfully, all routed through clinical review and formal DOH approval.
 - **Objective 3 — Launch certification:** assessor-graded skills demonstration against the DOH standard, with QR-verified certificates written to the national registry.
 - **Objective 4 — Establish governance, ownership and the content approval process:** a DOH-chaired steering structure, a documented content development and approval workflow, and an MOA defining ownership, roles and post-project stewardship.
@@ -250,7 +255,7 @@ BLHSD applies a deliberately strict test here. Nothing in this document is descr
 |---|---|---|
 | Purpose | Identify, register and profile the national BHW workforce | Support, train and certify that same workforce |
 | Core capability | National registry and profiling; hierarchy from national to barangay; profile records and roll-up reporting | Rule-based bilingual Chat Guide; Knowledge Base; content administration console; e-learning, quiz banks, assessor-graded skills demonstration and QR-verified certification |
-| Result | Close to 300,000 BHWs profiled nationwide within about one year | Nothing yet delivered to a BHW. Year 1 builds it and puts it in front of a first cohort of 1,014 |
+| Result | Close to 300,000 BHWs profiled nationwide within about one year | Nothing yet delivered to a BHW. Year 1 builds it and puts it in front of all 23,813 BHWs in Western Visayas |
 | Content | Administrative and demographic profile data | DOH-approved bilingual learning content — none yet authored or approved; this is on the critical path alongside the build |
 | Content governance | Administrative data standards | Formal content development, technical review, DOH approval and periodic update workflow (Section 10.5) — designed, not yet operating |
 | User base | Established — BHWs registered and organizationally located nationwide | Activation of already-registered users rather than recruitment from zero |
@@ -302,7 +307,7 @@ The MOA will make explicit, at minimum: DOH ownership of the platform, source co
 | WS1 — Build & Provisioning | Construct the platform to the completed design; operational hardening; pilot-gate clearance; infrastructure provisioning; performance and security | Technical lead and engineer, under BLHSD technical supervision | Platform built and accepted; pilot gate cleared; provisioning complete; backup, restore and breach playbook tested |
 | WS2 — Content & Curriculum | HHP+ Knowledge Base authoring; six e-learning modules; quiz banks; digitized return-demonstration instrument | KB Content & Training Coordinator, with WHO and contractor technical input | Published bilingual entries to the launch threshold; complete HHP+ course; DOH approval secured |
 | WS3 — Certification Rollout | Assessor mobilization, queue operation, grading and certificate issuance | Platform engineer with BLHSD | Certification operational; first cohort certified; certificate verification live |
-| WS4 — Rollout & Change Management | Onboarding across Iloilo City and Guimaras; LGU coordination; user support | BLHSD with CHD and LGU field structures | 1,014 BHWs onboarded; activation and weekly-active targets met; onboarding playbook documented |
+| WS4 — Rollout & Change Management | Phased onboarding across the six provinces and cities of Region VI; LGU coordination; user support | BLHSD with CHD and LGU field structures | 23,813 BHWs onboarded; activation and weekly-active targets met; onboarding playbook documented |
 | WS5 — Governance & Institutionalization | MOA; steering and review bodies; content approval SOP; policy instruments | BLHSD Equity in Health and Special Concerns Section | MOA executed; governance bodies convened; content approval SOP adopted; draft departmental issuance prepared |
 | WS6 — M&E and Learning | Baseline, midline, endline; independent review; evidence brief | M&E consultant, reporting to the TWG | Baseline report; midline course-correction; endline and independent review; Year-1 evidence brief |
 
@@ -382,34 +387,34 @@ Subscriptions fund developer productivity and administrative content drafting as
 >
 > Bottom-up from the Year-1 workplan at Philippine market rates, not anchored to a target or carried over from another proposal. Because Phase 2 is not yet built (Section 9.2), the envelope includes constructing the platform as well as filling it with approved content and putting it in front of a cohort. **Rates to be confirmed with BLHSD and against market before submission.**
 
-| Line item | Basis | Amount (₱) |
-|---|---|---|
-| Engineering — technical lead + full-stack engineer, 12 months | Build the platform to the completed design; harden and provision it | 2,460,000 |
-| Content & clinical — KB/Training Coordinator (12 mo) + clinical reviewer (output-based) | Author the six-module curriculum and the Knowledge Base corpus; route through validation and DOH approval | 1,500,000 |
-| Video & bilingual content production — 6 modules | Scripting, shoot, edit, graphics, Filipino and English | 1,150,000 |
-| Infrastructure & tooling | Hosting and database at cohort scale, monitoring, backups, AI and developer subscriptions | 1,080,000 |
-| IT equipment | Laptops, field and assessor tablets, satellite connectivity kits and subscription | 930,000 |
-| Monitoring & evaluation | Baseline, midline, endline and independent review | 900,000 |
-| Instructional design & QA — 6 months each | Curriculum design, accessibility, test and release QA | 780,000 |
-| Rollout & certification | Onboarding support across the two sites, assessor mobilization, certification operations | 700,000 |
-| Project management — 50% FTE, 12 months | Governance, TWG coordination, reporting | 540,000 |
-| Governance & institutionalization | MOA legal work, content approval SOP, policy drafting, administrator training | 400,000 |
-| Contingency — 8% | Standard provision for a first-year build-and-rollout | 860,000 |
-| **GRAND TOTAL (Year 1)** | | **11,300,000** |
+Lines are marked *fixed* where the cost does not change with the size of the cohort — the platform is built once and the curriculum authored once, whether ten people use it or twenty-four thousand — and *scaled* where region-wide coverage drives the cost.
 
-≈ **US$195,000** at ₱58/US$.
+| Line item | Basis | | Amount (₱) |
+|---|---|---|---|
+| Rollout & certification — region-wide | Onboarding across six provinces and cities, assessor mobilization, certification operations | scaled | 2,800,000 |
+| Engineering — technical lead + full-stack engineer, 12 months | Build the platform to the completed design; harden and provision it | fixed | 2,460,000 |
+| Content & clinical — KB/Training Coordinator (12 mo) + clinical reviewer (output-based) | Author the six-module curriculum and the Knowledge Base corpus; route through validation and DOH approval | fixed | 1,500,000 |
+| Infrastructure & tooling | Hosting and database at regional scale, monitoring, backups, AI and developer subscriptions | scaled | 1,400,000 |
+| Monitoring & evaluation | Baseline, midline, endline and independent review across a regional sample | scaled | 1,400,000 |
+| IT equipment | Laptops, field and assessor tablets across the region, satellite connectivity kits and subscription | scaled | 1,200,000 |
+| Video & bilingual content production — 6 modules | Scripting, shoot, edit, graphics, Filipino and English | fixed | 1,150,000 |
+| Instructional design & QA — 6 months each | Curriculum design, accessibility, test and release QA | fixed | 780,000 |
+| Project management — full-time, 12 months | Governance, TWG coordination, reporting | scaled | 780,000 |
+| Governance & institutionalization | MOA legal work, content approval SOP, policy drafting, administrator training | fixed | 400,000 |
+| Contingency — 8% | Standard provision for a first-year build-and-rollout | | 1,110,000 |
+| **GRAND TOTAL (Year 1)** | | | **14,980,000** |
+
+≈ **US$258,000** at ₱58/US$.
 
 ### 13.1 What a peso buys, by reach
 
-The Year-1 figure carries the entire build, so its per-head cost is the highest this platform will ever have. The argument is what happens after.
-
 | Reach | BHWs | ₱ per BHW |
 |---|---|---|
-| Year-1 cohort — Iloilo City + Guimaras, matching the training package's own sites | 1,014 | 11,144 |
-| All of Western Visayas | 23,813 | **475** |
-| Full national profiled base | ~300,000 | **38** |
+| The training package, reached by direct training over five months | 360 – 1,200 | — |
+| **This platform, Year 1 — all of Western Visayas** | **23,813** | **629** |
+| The same platform, full national profiled base | ~300,000 | **50** |
 
-Every Barangay Health Worker added after Year 1 is an onboarding cost, not a construction cost. That is the whole value proposition, and it is why the comparator that matters is the second and third rows rather than the first.
+Between twenty and sixty-six times the reach, for a price that is knowable in advance and falls as it scales. Every Barangay Health Worker added after Year 1 is an onboarding cost, not a construction cost — the build is paid once.
 
 **Excluded from this envelope**, and provided as counterpart contributions or funded separately: training-delivery costs, travel and per diem, and other programme implementation expenses. Equipment disposition at closeout, and the eligibility of capital items under the chosen instrument, to be settled in the MOA.
 
@@ -427,7 +432,7 @@ Every Barangay Health Worker added after Year 1 is an onboarding cost, not a con
 
 ## 15. Results Framework and M&E
 
-Targets reflect a Year-1 cohort of 1,014 Barangay Health Workers across Iloilo City and Guimaras, and are sex-disaggregated where applicable.
+Targets reflect a Year-1 cohort of 23,813 Barangay Health Workers across the whole of Western Visayas, and are sex-disaggregated where applicable.
 
 | Results level & indicator | Baseline | Year-1 target | Means of verification |
 |---|---|---|---|
@@ -436,8 +441,8 @@ Targets reflect a Year-1 cohort of 1,014 Barangay Health Workers across Iloilo C
 | OUTCOME 2 — BHWs obtain reliable, timely answers | Not applicable | Deflection ≥70% by end of Year 1; answer quality ≥80% | Platform analytics and user feedback |
 | OUTCOME 3 — BHW screening knowledge and confidence improve | To be set via baseline assessment | ≥25% relative pre-to-post improvement | Pre/post knowledge assessment |
 | OUTPUT 1 — Approved learning content published | 0 | ≥150 published bilingual, DOH-approved NCD screening entries; full six-module course | Admin content and approval records |
-| OUTPUT 2 — Certification operational | 0 | Module launched; ≥200 BHWs certified (20% of the 1,014 onboarded) | QR-verified certification records |
-| OUTPUT 3 — Platform built and provisioned | Nothing deployed | Platform built and pilot-gated; 1,014 BHWs onboarded across Iloilo City and Guimaras | Build acceptance records; provisioning and onboarding records |
+| OUTPUT 2 — Certification operational | 0 | Module launched; ≥4,750 BHWs certified (20% of the 23,813 onboarded) | QR-verified certification records |
+| OUTPUT 3 — Platform built and provisioned | Nothing deployed | Platform built and pilot-gated; 23,813 BHWs onboarded across all of Region VI | Build acceptance records; provisioning and onboarding records |
 | OUTPUT 4 — Government capacity strengthened | 0 | ≥15 BLHSD and LGU staff trained; runbooks delivered | Training and handover records |
 | OUTPUT 5 — Governance institutionalized | 0 | MOA executed; governance bodies convened; content approval SOP adopted | Signed MOA; minutes; adopted SOP |
 | OUTPUT 6 — Usage insights operational | 0 | Monthly Usage Insights Brief from Month 4; theme-spike alerts operational | Admin dashboard records; brief archive |
@@ -449,7 +454,7 @@ A baseline covering BHW digital readiness and NCD screening knowledge and practi
 ## 16. Value for Money
 
 - **Two expensive stages are already paid for.** The national user base exists and is profiled, and the Phase 2 design is complete — both at government cost. Financing goes to construction, content, approval, deployment and evaluation rather than to discovery, design and user acquisition.
-- **The build is paid once.** Year 1 costs ₱11,144 per BHW because it carries the whole platform. Extending the same platform to all of Region VI brings that to roughly ₱475, and to the national profiled base roughly ₱38. The rule-based Chat Guide also answers matched questions at no per-query cost; the optional AI fallback is modelled at ₱4,000–43,000 per year.
+- **The build is paid once.** Year 1 costs ₱629 per BHW across the whole region. Extending the same platform to the national profiled base brings that to roughly ₱50. The rule-based Chat Guide also answers matched questions at no per-query cost; the optional AI fallback is modelled at ₱4,000–43,000 per year.
 - **Reusable architecture.** Each subsequent learning module reuses the same engine, so the second, third and fourth modules cost a fraction of the first.
 - **No vendor lock-in.** The platform runs on a portable, open-standard Postgres core. Migration onto government infrastructure is intended and designed for, subject to a hosting agreement with DOH KMITS; it is a real project with a real cost, not a zero-effort switch.
 - **It compounds an existing investment.** The clinical content WHO has already financed becomes permanent, current and national rather than frozen at month five.
@@ -535,8 +540,8 @@ HHP+ is the first of many DOH-approved learning modules, and this is the central
 
 | Year | Status | Scale and content growth |
 |---|---|---|
-| Year 1 | This ask | SCALE: 1,014 BHWs across Iloilo City and Guimaras — 4.3% of Region VI. CONTENT: HHP+ NCD screening live as the platform's first DOH-approved module, proven end to end. |
-| Year 2 | Vision | SCALE: regional saturation across Western Visayas — the remaining 22,799 BHWs; first adjacent-region expansion. CONTENT: Immunization added. |
+| Year 1 | This ask | SCALE: all 23,813 BHWs of Western Visayas. CONTENT: HHP+ NCD screening live as the platform's first DOH-approved module, proven end to end. |
+| Year 2 | Vision | SCALE: first adjacent-region expansion, on a platform already proven at full regional scale. CONTENT: Immunization added. |
 | Year 3 | Vision | SCALE: multi-region expansion; profiling-system integration; offline access for low-connectivity barangays. CONTENT: Nutrition and Family Planning added. |
 | Year 4 | Vision | SCALE: national expansion across additional DOH regions. CONTENT: Communicable Disease Surveillance and First Aid added. |
 | Year 5 | Vision | SCALE: nationwide coverage approaching the full profiled base of nearly 300,000 BHWs; full institutional operation on a DOH budget line. CONTENT: a mature, multi-programme national curriculum and certification pipeline. |
@@ -564,7 +569,7 @@ BHW Connect has already done something hard. It identified and profiled close to
 
 What it has not done is build it. No Barangay Health Worker has used any of this, and BLHSD will not describe it as built until one has.
 
-With ₱11,300,000 (≈ US$195,000) over 12 months, WHO can fund the construction, the content authoring, the clinical validation, the DOH approval, the rollout and the independent evaluation that turn a settled design into a certified frontline — with the HHP+ community NCD screening curriculum as its first DOH-approved module, delivered to the same 1,014 Barangay Health Workers the training package reaches. In doing so, WHO converts clinical content it has already financed into a permanent government capability, and DOH gains the foundation for every module that follows — at ₱475 a head across the region, and ₱38 a head nationally.
+With ₱14,980,000 (≈ US$258,000) over 12 months, WHO can fund the construction, the content authoring, the clinical validation, the DOH approval, the rollout and the independent evaluation that turn a settled design into a certified frontline — with the HHP+ community NCD screening curriculum as its first DOH-approved module, delivered to every one of the 23,813 Barangay Health Workers in Western Visayas rather than the 360 to 1,200 a five-month training contract can reach in person. In doing so, WHO converts clinical content it has already financed into a permanent government capability, and DOH gains the foundation for every module that follows — at ₱629 a head across the region, and ₱50 a head nationally.
 
 We welcome the opportunity to develop a full proposal, detailed logical framework and itemized budget with WHO, and we invite independent technical due diligence on the platform as part of that process.
 
