@@ -1,7 +1,7 @@
 # Pitch decks
 
-Standalone, self-contained HTML decks for partner conversations. Not part of the
-Next.js app — open directly in any browser, or view the hosted Artifact link.
+Standalone, self-contained HTML decks for partner conversations. Not part of the Next.js
+app — open directly in any browser, or view the hosted Artifact link.
 
 | File | Audience | Year-1 flagship module |
 |---|---|---|
@@ -10,52 +10,72 @@ Next.js app — open directly in any browser, or view the hosted Artifact link.
 
 ## `bhw-connect-who.html`
 
-Combines the narrative pitch deck and the clickable product walkthrough
-(`mockups/ttcf-demo.html`) into one deck with a single navigation model:
-30 slides, arrows / dots / swipe / keyboard, content auto-fitted to the viewport.
+**20 slides**, built for a 15–20 minute live slot presented by the project team. Combines
+the narrative pitch and the product walkthrough into one navigation model: arrows / swipe /
+keyboard, a five-segment chapter bar, and content auto-fitted to the viewport.
 
-**Structure** — Standing (Phase 1 delivered) → The Gap (the failure mode, what HHP+
-already built, the APW on the table, six tagged gaps G1–G6) → The Answer → a 13-scene
-Phase 2 design prototype → The Ask (why WHO, APW framing, scope and cost) → every gap
-closed 1:1 against its G-tag.
+Structure — **Standing** (Phase 1 delivered · what BHW Connect is) → **The Gap** (what HHP+
+built and the package on the table · six months from now · six gaps G1–G6) → **The Answer**
+(stance · the engine · build status) → **Prototype** (five demo slides) → **The Ask** (designed
+to last · why WHO · the ask · scope and cost · every gap closed) → close.
 
-**Controls** — arrow keys / space / Home / End, the dot strip, or swipe. On demo
-slides only, a **Wika** toggle switches the prototype between Filipino and English,
-and an **App theme** toggle flips the in-app mockups between light and dark (both are
-real product features being demonstrated; the deck chrome stays constant).
+**Controls** — arrow keys / space / Home / End, the chapter bar, or swipe. On demo slides
+only, a **Wika** toggle switches the *in-app UI* between Filipino and English and an **App
+theme** toggle flips it light/dark. Both are real product features being demonstrated.
 
-### Three visual registers
+### Four things to keep straight when editing
 
-Slides carry one of three grounds, and the register is load-bearing for the argument —
-the deck's whole shape is problem stated, then problem closed, so those two must read
-as opposites at projector distance.
+1. **Deck chrome is always English; only the device content follows the Wika toggle.** The
+   toggle used to flip slide headlines too, which made eight consecutive slides unreadable to
+   a non-Filipino reviewer. Demo scene chrome is written as English literals in `demo2()`;
+   `t()` is for in-device strings only.
 
-| Register | Class | Ground | Accent | Used on |
-|---|---|---|---|---|
-| **Problem** | `darker problem` / `dark problem` | cold near-black, ember wash rising from the floor | ember `--ember` | the failure mode, the six gaps, the cost |
-| **Solution** | `light solution` | warm cream, marigold bloom top-right, lifted cards | verdant `--verdant` | what BHW Connect is, the engine, built to scale, every gap closed |
-| **Neutral** | `light` / `dark` / `darker` | existing teal palette | marigold | title, credit slides, demo chapter, the ask, close |
+2. **Build status is claimed as *built*, not *deployed*.** The defensible claim is: built and
+   tested, shipping behind feature flags defaulted off, pilot launch gate not yet cleared, no
+   BHW using it in the field. Do not overshoot into live use, and do not revert to "design
+   prototype" — the repository contradicts that. ⚠️ The concept note in `docs/concept-notes/`
+   still says Phase 2 is "conceptualized and planned"; **it needs a WHO version with corrected
+   build status before it is handed over alongside this deck.**
 
-A `problem` or `solution` slide must **also** keep its base `dark`/`darker`/`light`
-class — the register only re-grounds and re-accents; every existing text rule keys off
-the base class, and dropping it renders dark ink on a dark ground.
+3. **No clinical thresholds are asserted.** Health content is procedural and traces to the
+   BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 July 2026),
+   which contains no PhilPEN numeric cut-offs. The CBG return-demonstration checklist is
+   reproduced faithfully — 29 criteria, 87-point maximum, 90% / 75% bands — because those are
+   the DOH instrument's own. Every health string carries a validation notice.
 
-Layout carries the contrast too, not just hue: gap cards are square-cornered with a
-hard left rule and evidence pinned to a shared baseline (a defect register), while
-closure rows are rounded, elevated and demote the struck problem beneath the answer
-that replaced it. **Meaning is never carried by colour alone** — every gap card is
-marked `OPEN` and every closure row `✓`, with `6 open` / `6 closed` counters in the
-headings, so the argument survives a colourblind viewer or a bad projector.
+4. **`[TO CONFIRM]` markers are load-bearing.** The province, Year-1 BHW cohort and cost per
+   BHW on the scope slide are unfilled on purpose. The ₱6M and the old "26,000 BHWs" figure
+   were imported from the Eastern Visayas concept note and are the wrong region; filling them
+   with plausible-looking numbers is the exact failure a funder review flagged. Replace only
+   with real figures.
 
-### Two things to keep straight when editing
+### Visual registers
 
-1. **Readiness framing is deliberate.** Phase 1 (the national BHW registry and
-   profiling) is *delivered*; Phase 2 (Knowledge Base, Chat Guide, Training &
-   Certification) is *designed*. The demo chapter is labelled a design prototype, not
-   a deployed system, matching `docs/concept-notes/` and its Annex A. Don't relabel
-   these without checking the concept note first.
-2. **No clinical thresholds are asserted.** The HHP+ content shown is procedural and
-   traces to the BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under
-   HHP+" (31 July 2026), which contains no PhilPEN numeric cut-offs. The CBG return-
-   demonstration checklist is reproduced faithfully — 29 criteria, 87-point maximum,
-   90% / 75% competency bands. Every health string carries a validation notice.
+Three grounds, and the register is load-bearing — the deck's shape is problem stated, then
+problem closed, so those two must read as opposites at projector distance.
+
+| Register | Class | Ground | Accent |
+|---|---|---|---|
+| **Problem** | `darker problem` | cold near-black, ember wash from the floor | ember |
+| **Solution** | `light solution` | warm ground, full-bleed verdant rule along the top edge | verdant |
+| **Neutral** | `light` / `dark` / `darker` | existing teal palette | marigold |
+
+A `problem`/`solution` slide must **also** keep its base `dark`/`darker`/`light` class — the
+register only re-grounds and re-accents; every text rule keys off the base class, and dropping
+it renders dark ink on a dark ground. Statement slides (title, stance, close) carry `centered`;
+everything else pins to a fixed top so the eyebrow does not bounce between slides.
+
+**Meaning is never carried by colour alone** — each gap card is marked `OPEN`, each closure row
+carries `✓`, and the headings carry `6 open` / `6 closed` counters.
+
+### Regression traps
+
+- `.costlist li` must **not** be a flex container. With `display:flex` a bare text node and any
+  inline `<em>` each become separate flex items, which threw an emphasis into a phantom second
+  column. The marker is absolutely positioned so body text stays a normal inline flow.
+- `#confetti` sits at `z-index:3` (under the nav chrome) and `go()` clears it on every slide
+  change. Without the reset it rained over the ask and the budget slides.
+- `.counter` / `.brandtab` must not use `mix-blend-mode` — it rendered both invisible on
+  two-thirds of slides. They read `body[data-ground]`, set per slide in `go()`.
+- Mobile `.slide` needs `overflow-x:hidden`: the decorative `::after` bloom sits at
+  `right:-12%` and becomes real horizontal page scroll once `overflow-y` opens up.
