@@ -33,9 +33,11 @@ theme** toggle flips it light/dark. Both are real product features being demonst
 2. **Build status is claimed as *built*, not *deployed*.** The defensible claim is: built and
    tested, shipping behind feature flags defaulted off, pilot launch gate not yet cleared, no
    BHW using it in the field. Do not overshoot into live use, and do not revert to "design
-   prototype" — the repository contradicts that. ⚠️ The concept note in `docs/concept-notes/`
-   still says Phase 2 is "conceptualized and planned"; **it needs a WHO version with corrected
-   build status before it is handed over alongside this deck.**
+   prototype" — the repository contradicts that. The matching leave-behind is
+   `docs/concept-notes/bhw-connect-phase2-concept-note-who.md`, whose §9 states the same
+   thing; **the two must be changed together.** Do not hand over the KOICA edition alongside
+   this deck — it still says Phase 2 is "conceptualized and planned… funded under this
+   proposal", which directly contradicts the deck.
 
 3. **No clinical thresholds are asserted.** Health content is procedural and traces to the
    BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 July 2026),
