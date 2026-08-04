@@ -1,0 +1,1861 @@
+<!--
+  BHW Connect — DOH × WHO partnership proposal.
+
+  Combines the narrative pitch deck (formerly pitch/koica-bhw-connect.html) and the
+  clickable product walkthrough (formerly mockups/ttcf-demo.html) into one deck with a
+  single navigation model.
+
+  Audience: WHO Philippines. Year 1 flagship module = HHP+ / PhilPEN 2025 community-based
+  NCD screening, Western Visayas (Region VI).
+
+  READINESS FRAMING — deliberate, and stricter than "the code exists":
+  Phase 1 (national BHW registry and profiling) is DELIVERED. Phase 2 is DESIGNED END TO END
+  BUT NOT BUILT. The demo chapter is hand-built HTML mockups, not the running application.
+  Nothing is called "built" until a Barangay Health Worker has used it in the field. Do not
+  relabel any of this without checking docs/concept-notes/…-who.md, which must match.
+
+  DO NOT REINTRODUCE ttCF, Eastern Visayas or Region VIII anywhere. That proposal is
+  preliminary, is not settled, and is deliberately absent from this deck and its note.
+
+  COVERAGE ARITHMETIC (Phase 1 registry). Region VI: 23,813 BHWs. The training package covers
+  Iloilo province 10,519 + Iloilo City 309 + Guimaras 705 = 11,533, i.e. 48.4% — but that is
+  geography, not delivery. Direct training reach is modelled at 360-1,200 over 6-10 weeks of
+  sessions, i.e. 2-5% of the region; the rest cascade, and the 12,280 in Aklan, Antique and
+  Capiz are outside entirely. Year-1 cohort for this proposal is the whole region, 23,813, at
+  PHP 14.98M => PHP 629/BHW, falling to PHP 50/BHW against the national base. If any of these
+  move, they all move together: G3, the scope slide, the concept note and pitch/README.md.
+
+  CONTENT SAFETY: the HHP+ health specifics shown are procedural and are drawn from the
+  BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 Jul 2026).
+  No PhilPEN numeric clinical thresholds are asserted anywhere — that source contains none.
+  All health content requires DOH clinical validation and approval before BHW-facing use.
+
+  Self-contained, no external requests (CSP-safe for publishing as an Artifact).
+  Body-only document: a <!doctype>/<head>/<body> skeleton is added when published.
+-->
+<title>BHW Connect — DOH × WHO Partnership Proposal</title>
+<style>
+  :root{
+    --teal:#0C7C7E;
+    --teal-deep:#0A4A4B;
+    --teal-deeper:#083335;
+    --marigold:#E8641C;
+    --marigold-deep:#B84E12;
+    --sampaguita:#FFC857;
+    --canvas:#F6F2ED;
+    --canvas-2:#ECE3D6;
+    --ink:#241C17;
+    --ink-soft:#6A5D53;
+    --cream:#F7F1E8;
+    --cream-soft:rgba(247,241,232,.66);
+    --line-dark:rgba(247,241,232,.18);
+    --line-light:rgba(36,28,23,.14);
+
+    /* Problem register — cold ground, ember accent. Diagnostic, unresolved. */
+    --ember:#F0603C;
+    --ember-deep:#A83A22;
+    --cold-line:rgba(240,96,60,.24);
+
+    /* Solution register — warm ground, verdant accent. Resolved, open. */
+    --verdant:#1F7A45;
+    --verdant-soft:#E4F0E7;
+
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+
+    --pad:clamp(1.6rem,5.2vw,6rem);
+    --maxw:1120px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:var(--sans);
+    background:#06282a;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow:hidden;
+  }
+  :focus-visible{outline:3px solid var(--sampaguita);outline-offset:2px;border-radius:4px}
+
+  /* ---------- deck stage ---------- */
+  .deck{position:fixed;inset:0}
+  /* Content slides pin to a fixed top so the eyebrow/headline stop bouncing between
+     slides; statement slides (title, stance, close) opt back into centring via .centered.
+     Paired with transform-origin:top on .slide__inner so fit() scales downward from the
+     pinned top rather than around the middle. */
+  .slide{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:flex-start;
+    padding:clamp(4.2rem,11vh,6.4rem) var(--pad) clamp(3.4rem,7vh,4.4rem);
+    opacity:0;visibility:hidden;
+    transform:translateY(14px);
+    transition:opacity .5s ease,transform .5s ease,visibility .5s;
+    overflow:hidden;
+  }
+  .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+  .slide.centered{justify-content:center;padding-top:clamp(2.4rem,6vh,4.4rem)}
+  .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto;transform-origin:top center}
+  .slide.centered .slide__inner{transform-origin:center center}
+  .slide.wide .slide__inner{max-width:1240px}
+
+  .slide.dark{background:var(--teal-deep);color:var(--cream)}
+  .slide.darker{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
+  .slide.light{background:var(--canvas);color:var(--ink)}
+
+  .slide.dark::after,.slide.darker::after{
+    content:"";position:absolute;right:-12%;top:-18%;width:46vw;height:46vw;
+    background:radial-gradient(circle,rgba(232,100,28,.16),transparent 62%);
+    pointer-events:none;
+  }
+
+  /* ---------- PROBLEM register ----------
+     Cold, near-black, desaturated. The warm top-right bloom is replaced by a low
+     ember wash rising from the floor, so these slides read as a diagnostic panel
+     rather than a brand slide. Problem slides carry `darker problem`, so every
+     existing dark-ground text rule still applies — this only re-grounds and
+     re-accents them. Meaning is never carried by hue alone: each problem element
+     also carries an explicit OPEN marker. */
+  .slide.problem{
+    background:radial-gradient(125% 115% at 18% -8%,#0b262b 0%,#061619 52%,#030d0f 100%);
+    color:var(--cream);
+  }
+  .slide.problem::after{
+    right:auto;top:auto;left:0;bottom:-26%;width:100%;height:54vh;
+    background:radial-gradient(58% 100% at 50% 100%,rgba(240,96,60,.13),transparent 68%);
+  }
+  .slide.problem .eyebrow{color:rgba(247,241,232,.5)}
+  .slide.problem .eyebrow .num{color:var(--ember)}
+  .slide.problem .mark{color:var(--ember)}
+  .slide.problem .costlist li span{color:var(--ember)}
+  .slide.problem .kicker-line{color:var(--cream)}
+  .slide.problem .slide__inner{position:relative;z-index:1}
+
+  /* ---------- SOLUTION register ----------
+     Warm, lifted, open — the visual inverse of .problem. Light ground, marigold
+     bloom top-right, real elevation on cards. Carries `light solution`. */
+  .slide.solution{
+    background:linear-gradient(168deg,#F2F6F1 0%,#E8EFE6 100%);
+    color:var(--ink);
+  }
+  /* A full-bleed verdant rule along the top edge — legible at projector distance in a way
+     that an accent numeral and a corner bloom were not. The bloom is gone: at 34% gold it
+     clipped to a white hot spot on a low-uniformity projector and swallowed the counter. */
+  .slide.solution::after{
+    content:"";position:absolute;left:0;right:0;top:0;height:5px;width:auto;z-index:0;
+    background:linear-gradient(90deg,var(--verdant),#3FA972 60%,var(--sampaguita));
+    pointer-events:none;
+  }
+  .slide.solution .slide__inner{position:relative;z-index:1}
+  .slide.solution .eyebrow .num{color:var(--verdant)}
+  .slide.solution .card,.slide.solution .chipcard{
+    background:rgba(255,255,255,.82);
+    box-shadow:0 14px 34px -22px rgba(36,28,23,.42);
+  }
+  .slide.solution .pillar{border-top-color:var(--verdant)}
+
+  /* state chips — the counter that turns "6 OPEN" into "6 CLOSED" */
+  .statechip{
+    display:inline-flex;align-items:center;gap:.4rem;margin-left:.9rem;vertical-align:middle;
+    font-size:.64rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    padding:.26rem .68rem;border-radius:999px;white-space:nowrap;
+  }
+  .statechip.open{background:rgba(240,96,60,.16);color:var(--ember);border:1px solid var(--cold-line)}
+  .statechip.closed{background:var(--verdant-soft);color:var(--verdant);border:1px solid rgba(31,122,69,.34)}
+
+  /* ---------- shared type ---------- */
+  .eyebrow{
+    font-size:clamp(.74rem,1.15vw,.9rem);
+    font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+    display:flex;align-items:center;gap:.85rem;margin-bottom:clamp(1.1rem,2.6vh,1.9rem);
+  }
+  .eyebrow .num{color:var(--marigold)}
+  .dark .eyebrow,.darker .eyebrow{color:var(--cream-soft)}
+  .light .eyebrow{color:var(--ink-soft)}
+  .eyebrow::after{content:"";flex:0 0 46px;height:1px;background:currentColor;opacity:.4}
+
+  h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.04;text-wrap:balance}
+  h1{font-size:clamp(3rem,7.8vw,6.2rem)}
+  h2{font-size:clamp(2.1rem,4.8vw,3.8rem)}
+  h2.tight{font-size:clamp(1.8rem,3.9vw,3rem)}
+  .lead{font-size:clamp(1.12rem,1.85vw,1.5rem);line-height:1.5;max-width:42ch;color:inherit}
+  .dark .lead,.darker .lead{color:var(--cream-soft)}
+  .light .lead{color:var(--ink-soft)}
+  .mark{color:var(--marigold)}
+  .dark .mark,.darker .mark{color:var(--sampaguita)}
+  .src{margin-top:clamp(1rem,2.4vh,1.6rem);font-size:.82rem;font-style:italic;line-height:1.45;color:var(--ink-soft)}
+  .dark .src,.darker .src{color:var(--cream-soft)}
+
+  /* ---------- title ---------- */
+  .title-kicker{font-size:clamp(.72rem,1.1vw,.85rem);font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--sampaguita);margin-bottom:1.6rem}
+  .title-sub{margin-top:1.4rem;font-size:clamp(1.05rem,1.9vw,1.5rem);color:var(--cream-soft);max-width:32ch;line-height:1.4}
+  .partners{margin-top:clamp(1.8rem,5vh,3.2rem);padding-top:1.3rem;border-top:1px solid var(--line-dark);display:flex;flex-direction:column;gap:1.05rem}
+  .partners-label{font-size:clamp(.7rem,1vw,.82rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sampaguita)}
+  .partners-row{display:flex;flex-wrap:wrap;gap:1.1rem 2rem}
+  .partner{display:flex;flex-direction:column;gap:.22rem;padding-left:1rem;border-left:2px solid var(--marigold);max-width:24ch}
+  .partner strong{font-weight:700;font-size:clamp(.98rem,1.35vw,1.18rem);line-height:1.2}
+  .partner span{color:var(--cream-soft);font-size:clamp(.8rem,1.05vw,.94rem);line-height:1.25}
+
+  /* ---------- big stat ---------- */
+  .stat{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
+  .stat__num{font-family:var(--serif);font-weight:700;letter-spacing:-.03em;line-height:.86;font-size:clamp(4.4rem,13vw,9.6rem);color:var(--marigold)}
+  .dark .stat__num,.darker .stat__num{color:var(--sampaguita)}
+  .stat__num small{display:block;font-family:var(--sans);font-size:clamp(.85rem,1.3vw,1.05rem);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin-top:.7rem}
+  .dark .stat__num small,.darker .stat__num small{color:var(--cream-soft)}
+  .stat__body{max-width:36ch}
+  .stat__body h2{margin-bottom:.85rem}
+  .pull{margin-top:1.1rem;font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,1.9vw,1.4rem);border-left:3px solid var(--marigold);padding-left:1.1rem;line-height:1.35}
+
+  /* ---------- cards ---------- */
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.9rem,2vw,1.5rem);margin-top:clamp(1.4rem,3vh,2.2rem)}
+  .card{background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:14px;padding:clamp(1.1rem,2.4vw,1.7rem);display:flex;flex-direction:column;gap:.7rem}
+  .dark .card,.darker .card{background:rgba(247,241,232,.06);border-color:var(--line-dark)}
+  .card .ic{width:44px;height:44px;color:var(--marigold)}
+  .dark .card .ic,.darker .card .ic{color:var(--sampaguita)}
+  .card h3{font-size:clamp(1.1rem,1.6vw,1.34rem);font-weight:700;letter-spacing:-.01em}
+  .card p{font-size:clamp(.92rem,1.25vw,1.06rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .card p,.darker .card p{color:var(--cream-soft)}
+
+  .pillar{border-top:3px solid var(--marigold);padding-top:1.1rem;display:flex;flex-direction:column;gap:.6rem}
+  .dark .pillar,.darker .pillar{border-top-color:var(--sampaguita)}
+  .pillar .ic{width:40px;height:40px;color:var(--marigold)}
+  .dark .pillar .ic,.darker .pillar .ic{color:var(--sampaguita)}
+  .pillar h3{font-size:clamp(1.12rem,1.6vw,1.36rem);font-weight:700;letter-spacing:-.01em}
+  .pillar p{font-size:clamp(.94rem,1.25vw,1.08rem);line-height:1.45;color:var(--ink-soft)}
+  .dark .pillar p,.darker .pillar p{color:var(--cream-soft)}
+  .underline-note{margin-top:clamp(1.4rem,3vh,2.2rem);padding-top:1.1rem;border-top:1px solid var(--line-light);font-size:clamp(1.02rem,1.45vw,1.28rem);line-height:1.45}
+  .dark .underline-note,.darker .underline-note{border-top-color:var(--line-dark);color:var(--cream)}
+
+  /* ---------- cost / blunt list ---------- */
+  .costlist{display:flex;flex-direction:column;gap:clamp(.6rem,1.5vh,1rem);margin-top:clamp(1.2rem,3vh,1.9rem);max-width:52ch}
+  /* NOT a flex container: with display:flex a bare text node and any inline <em> each
+     become separate flex items, which previously threw the emphasis in bullet 3 into a
+     phantom second column. Absolute-positioned marker keeps the body text a normal
+     inline flow that arbitrary inline markup can't break. */
+  .costlist li{list-style:none;position:relative;padding-left:1.9rem;font-size:clamp(1rem,1.5vw,1.28rem);line-height:1.4}
+  .costlist li span{position:absolute;left:0;top:0;color:var(--marigold);font-weight:800}
+  .costlist li em{font-style:italic}
+  .dark .costlist li span,.darker .costlist li span{color:var(--sampaguita)}
+  .kicker-line{margin-top:clamp(1.4rem,3vh,2.1rem);font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2vw,1.6rem);line-height:1.35;color:var(--cream);max-width:46ch}
+  .light .kicker-line{color:var(--ink)}
+
+  /* ---------- stance ---------- */
+  .stance-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.6rem,4vw,3.4rem);align-items:center}
+  .stance q{font-family:var(--serif);font-weight:400;font-style:italic;quotes:none;font-size:clamp(2.1rem,5vw,3.9rem);line-height:1.02;letter-spacing:-.02em;display:block;color:var(--cream)}
+  .stance q em{color:var(--sampaguita);font-style:italic}
+  .stance .lead{margin-top:clamp(1.6rem,3.6vh,2.6rem);max-width:46ch}
+  .stance-visual{display:flex;flex-direction:column;align-items:center;gap:1rem;justify-self:center}
+  .stance-visual svg{width:min(250px,28vw);height:auto;display:block}
+  .stance-visual figcaption{font-size:.76rem;color:var(--cream-soft);text-align:center;max-width:24ch;line-height:1.4}
+  .fig-label{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.16em;fill:var(--cream-soft)}
+  .human-pulse{transform-box:view-box;transform-origin:150px 96px;animation:humanpulse 3.6s ease-in-out infinite}
+  @keyframes humanpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+
+  .cost-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.2rem);align-items:center}
+  .cost-visual{display:flex;flex-direction:column;align-items:center;gap:1rem;justify-self:center}
+  .cost-visual svg{width:min(300px,34vw);height:auto;display:block}
+  .cost-visual figcaption{font-size:.76rem;color:var(--cream-soft);text-align:center;max-width:26ch;line-height:1.4}
+  .radar-sweep{transform-box:view-box;transform-origin:120px 120px;animation:radarspin 9s linear infinite}
+  @keyframes radarspin{to{transform:rotate(360deg)}}
+
+  /* ---------- gap cards ---------- */
+  /* Gap cards read as a defect register: square corners, a hard ember rule down
+     the left edge, evidence pinned to the bottom so all six align on a baseline. */
+  .gaps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.6rem,1.35vw,.95rem);margin-top:clamp(1.05rem,2.3vh,1.6rem)}
+  .gap{
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(247,241,232,.10);
+    border-left:3px solid var(--ember);
+    border-radius:4px;
+    padding:clamp(.8rem,1.7vw,1.1rem);
+    display:flex;flex-direction:column;gap:.4rem;
+  }
+  .gap-h{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .gtag{font-size:.66rem;font-weight:800;letter-spacing:.16em;background:var(--ember);color:#2b1006;border-radius:3px;padding:.16rem .5rem}
+  .gstate{display:flex;align-items:center;gap:.34rem;font-size:.6rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ember);opacity:.9}
+  .gstate::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ember)}
+  .gap h3{font-size:clamp(1rem,1.4vw,1.18rem);font-weight:700;letter-spacing:-.01em}
+  .gap p{font-size:clamp(.85rem,1.12vw,.98rem);line-height:1.42;color:rgba(247,241,232,.68)}
+  .gap .ev{font-size:.74rem;font-style:italic;color:rgba(247,241,232,.44);margin-top:auto;padding-top:.4rem;border-top:1px solid rgba(247,241,232,.10)}
+
+  /* ---------- gap closure ---------- */
+  /* Closure rows invert the gap card on every axis: light instead of near-black,
+     rounded and lifted instead of square and flat, verdant instead of ember, and
+     the struck problem demoted beneath the answer it used to be. */
+  .closes{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.55rem,1.3vw,.9rem);margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .close-row{
+    display:grid;grid-template-columns:auto 1fr;gap:.85rem;align-items:start;
+    background:rgba(255,255,255,.86);
+    border:1px solid rgba(36,28,23,.09);
+    border-left:3px solid var(--verdant);
+    border-radius:12px;
+    padding:.8rem 1rem;
+    box-shadow:0 12px 30px -24px rgba(36,28,23,.55);
+  }
+  .close-row .gtag{background:var(--verdant);color:#fff;border-radius:3px;margin-top:.18rem}
+  .close-row s{display:block;font-size:.76rem;color:var(--ink-soft);opacity:.62;text-decoration-color:var(--ember);margin-bottom:.2rem}
+  .close-row b{display:block;font-size:clamp(.95rem,1.24vw,1.1rem);color:var(--ink);line-height:1.28}
+  .close-row b::before{content:"✓";color:var(--verdant);font-weight:900;margin-right:.42rem}
+  .close-row p{font-size:clamp(.83rem,1.06vw,.94rem);line-height:1.42;color:var(--ink-soft);margin-top:.26rem}
+
+  /* ---------- loop / engine ---------- */
+  .loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:.5rem;margin-top:clamp(1.2rem,2.8vh,1.9rem)}
+  .node{flex:1 1 0;min-width:118px;background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:12px;padding:.95rem .85rem;display:flex;flex-direction:column;gap:.4rem}
+  .node b{font-size:clamp(.98rem,1.3vw,1.14rem);letter-spacing:-.01em}
+  .node p{font-size:.9rem;line-height:1.35;color:var(--ink-soft)}
+  .node .step{font-size:.72rem;font-weight:700;letter-spacing:.18em;color:var(--marigold)}
+  .arrow{display:grid;place-items:center;color:var(--marigold);flex:0 0 22px;font-weight:800;font-size:1.2rem}
+  .loopback{margin-top:.95rem;display:flex;align-items:center;gap:.6rem;font-size:1rem;color:var(--ink-soft)}
+  .loopback svg{color:var(--marigold);flex:0 0 auto}
+  .ladder{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.3rem;align-items:center}
+  .rung{background:rgba(12,124,126,.1);border:1px solid rgba(12,124,126,.28);color:var(--teal);padding:.45rem .85rem;border-radius:999px;font-size:.9rem;font-weight:600;white-space:nowrap}
+  .rung.top{background:var(--marigold);border-color:var(--marigold);color:#fff}
+  .ladder .sep{color:var(--ink-soft);font-weight:700}
+
+  /* ---------- modules / outputs list ---------- */
+  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,3vw,2.4rem);margin-top:clamp(1.2rem,2.6vh,1.8rem)}
+  .listhead{font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--marigold);margin-bottom:.7rem}
+  .dark .listhead,.darker .listhead{color:var(--sampaguita)}
+  .numlist{display:flex;flex-direction:column;gap:.5rem}
+  .numlist li{list-style:none;display:flex;gap:.7rem;font-size:clamp(.9rem,1.2vw,1.04rem);line-height:1.38}
+  .numlist li i{font-style:normal;flex:0 0 22px;height:22px;border-radius:6px;background:var(--marigold);color:#fff;font-size:.72rem;font-weight:800;display:grid;place-items:center;margin-top:.1rem}
+  .dark .numlist li i,.darker .numlist li i{background:var(--sampaguita);color:#2b2420}
+  .meta-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:clamp(1.1rem,2.4vh,1.6rem)}
+  .mtag{background:var(--canvas-2);border:1px solid var(--line-light);border-radius:999px;padding:.42rem .85rem;font-size:.9rem;font-weight:600}
+  .dark .mtag,.darker .mtag{background:rgba(247,241,232,.08);border-color:var(--line-dark);color:var(--cream)}
+
+  /* ---------- scale path & chips ---------- */
+  .path{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;margin-top:clamp(1.2rem,2.8vh,1.9rem);font-weight:800;letter-spacing:-.01em}
+  .path .p{font-size:clamp(1.05rem,2.2vw,1.8rem)}
+  .path .p small{display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:.25rem}
+  .path .to{color:var(--marigold);font-size:clamp(1.15rem,2.2vw,1.7rem)}
+  .path .p.big{color:var(--marigold)}
+  .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.85rem,1.9vw,1.3rem);margin-top:clamp(1.4rem,3vh,2.3rem)}
+  .chipcard{background:rgba(255,255,255,.55);border:1px solid var(--line-light);border-radius:12px;padding:1.05rem 1.15rem}
+  .chipcard b{display:block;font-size:clamp(1rem,1.4vw,1.2rem);margin-bottom:.4rem}
+  .chipcard p{font-size:.94rem;line-height:1.4;color:var(--ink-soft)}
+
+  /* ---------- ask ---------- */
+  .ask{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.75rem,1.7vw,1.2rem);margin-top:clamp(1.3rem,2.8vh,2rem)}
+  .ask .item{border:1px solid var(--line-dark);border-radius:14px;padding:clamp(1rem,2vw,1.45rem);display:flex;flex-direction:column;gap:.65rem;background:rgba(247,241,232,.05)}
+  .ask .item .ic{width:40px;height:40px;color:var(--sampaguita)}
+  .ask .item h3{font-size:clamp(1.06rem,1.5vw,1.28rem);font-weight:700}
+  .ask .item p{font-size:clamp(.88rem,1.18vw,1.02rem);line-height:1.42;color:var(--cream-soft)}
+
+  /* ---------- phases & budget ---------- */
+  .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.85rem,1.9vw,1.4rem);margin-top:clamp(1.1rem,2.4vh,1.7rem)}
+  .phase{border-radius:14px;border:1px solid var(--line-light);overflow:hidden;background:rgba(255,255,255,.5)}
+  .phase .h{background:var(--teal-deep);color:var(--cream);padding:.7rem 1.05rem;font-weight:700;font-size:1.04rem;display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
+  .phase .h span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sampaguita);white-space:nowrap}
+  .phase.active-p .h{background:var(--marigold)}
+  .phase ul{list-style:none;padding:.85rem 1.05rem;display:flex;flex-direction:column;gap:.5rem}
+  .phase li{font-size:.94rem;line-height:1.35;color:var(--ink-soft);padding-left:.95rem;position:relative}
+  .phase li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--marigold)}
+  .budget{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:clamp(1.1rem,2.4vh,1.6rem);align-items:stretch}
+  .bline{flex:1 1 128px;border:1px solid var(--line-light);border-radius:10px;padding:.6rem .75rem;background:rgba(255,255,255,.5)}
+  .bline b{display:block;font-size:1.02rem;font-variant-numeric:tabular-nums}
+  .bline span{display:block;font-size:.74rem;color:var(--ink-soft);line-height:1.3;margin-top:.15rem}
+  .total{margin-top:1rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem}
+  .total .amt{font-family:var(--serif);font-size:clamp(2rem,4.4vw,3.2rem);font-weight:700;color:var(--marigold);letter-spacing:-.02em}
+  .total .usd{font-size:clamp(1rem,1.5vw,1.25rem);font-weight:700;color:var(--ink-soft)}
+
+  /* ---------- close ---------- */
+  .close h2{max-width:22ch;margin-bottom:1.4rem}
+  .close .invite{margin-top:clamp(1.6rem,4vh,2.6rem);padding-top:1.3rem;border-top:1px solid var(--line-dark);font-size:clamp(1.14rem,1.9vw,1.55rem);font-weight:700}
+  .close .invite-partners{margin-top:.8rem;display:flex;flex-wrap:wrap;gap:.35rem .85rem;font-size:clamp(.86rem,1.15vw,1rem);font-weight:600;color:var(--cream-soft);line-height:1.4}
+  .close .invite-partners b{color:var(--cream);font-weight:700}
+  .close .invite-partners .dot{color:var(--marigold);font-weight:800}
+
+  /* ================================================================
+     DEMO CHAPTER — Phase 2 design prototype
+     In-device UI lives under .app-scope so it never collides with deck styles.
+     ================================================================ */
+  .demo-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:.9rem;flex-wrap:wrap}
+  .demo-head .eyebrow{margin-bottom:.35rem}
+  .demo-head h2{font-size:clamp(1.35rem,2.5vw,2.1rem);color:var(--cream);line-height:1.12}
+  .demo-head p{margin-top:.4rem;color:var(--cream-soft);max-width:64ch;line-height:1.45;font-size:clamp(.9rem,1.2vw,1.04rem)}
+  .ptag{display:inline-block;vertical-align:middle;margin-left:.6rem;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:.18rem .55rem;border-radius:999px;
+    background:rgba(255,200,87,.18);color:var(--sampaguita);border:1px solid rgba(255,200,87,.45)}
+  .ptag.done{background:rgba(31,122,69,.26);color:#bff0d0;border-color:rgba(31,122,69,.5)}
+  .demo-stage{display:flex;gap:clamp(1rem,2.4vw,1.7rem);align-items:flex-start;justify-content:center;flex-wrap:wrap}
+  /* Two-column: narrative + numbered callouts left, device right. The left column changes
+     shape every slide while the device stays anchored, which is what breaks the monotony
+     of otherwise near-identical device-on-teal frames. */
+  .demo2{display:grid;grid-template-columns:minmax(0,38fr) minmax(0,62fr);gap:clamp(1.2rem,3vw,2.6rem);align-items:center}
+  .demo2 .col-l{display:flex;flex-direction:column;gap:.75rem;min-width:0}
+  .demo2 .col-r{display:flex;justify-content:center;min-width:0}
+  .demo2 h2{font-size:clamp(1.4rem,2.3vw,2rem);color:var(--cream);line-height:1.14;margin-bottom:.1rem}
+  .demo2 .sub{color:var(--cream-soft);line-height:1.45;font-size:clamp(.9rem,1.15vw,1.02rem)}
+  .callouts{display:flex;flex-direction:column;gap:.6rem;margin-top:.3rem}
+  .callouts li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:start;
+    font-size:clamp(.86rem,1.1vw,.98rem);line-height:1.42;color:var(--cream-soft)}
+  .callouts li i{font-style:normal;width:21px;height:21px;border-radius:50%;background:var(--sampaguita);
+    color:#2b2420;font-size:.68rem;font-weight:800;display:grid;place-items:center;margin-top:.08rem}
+  .callouts li b{color:var(--cream);font-weight:700}
+
+  /* build-status slide */
+  .status{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.7rem,1.6vw,1.1rem);margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .status .col{border:1px solid var(--line-dark);border-radius:12px;padding:clamp(.85rem,1.8vw,1.15rem);background:rgba(247,241,232,.05)}
+  .status .col h3{font-size:clamp(.98rem,1.3vw,1.14rem);font-weight:700;margin-bottom:.55rem;display:flex;align-items:center;gap:.45rem}
+  .status .col ul{list-style:none;display:flex;flex-direction:column;gap:.42rem}
+  .status .col li{font-size:clamp(.84rem,1.08vw,.95rem);line-height:1.38;color:var(--cream-soft);padding-left:.9rem;position:relative}
+  .status .col li::before{content:"";position:absolute;left:0;top:.52em;width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.55}
+  .status .done h3{color:#7BD8A4} .status .part h3{color:var(--sampaguita)} .status .todo h3{color:var(--ember)}
+  .status .col.done{border-left:3px solid #1F7A45} .status .col.part{border-left:3px solid var(--sampaguita)} .status .col.todo{border-left:3px solid var(--ember)}
+
+  /* full-breadth capability grid */
+  .feat{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.7rem,1.5vw,1.1rem);margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .fcol{background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-top:3px solid var(--verdant);
+    border-radius:10px;padding:clamp(.8rem,1.6vw,1.05rem);box-shadow:0 12px 28px -24px rgba(36,28,23,.45)}
+  .fcol h3{font-size:clamp(.92rem,1.2vw,1.06rem);font-weight:800;letter-spacing:.02em;color:var(--verdant);margin-bottom:.55rem}
+  .fcol ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+  .fcol li{font-size:clamp(.78rem,1.02vw,.9rem);line-height:1.38;color:var(--ink-soft);padding-left:.85rem;position:relative}
+  .fcol li::before{content:"";position:absolute;left:0;top:.5em;width:4px;height:4px;border-radius:50%;background:var(--verdant);opacity:.7}
+  .fcol li b{color:var(--ink);font-weight:700}
+
+  /* "already paid for" ingestion list */
+  .ingest{display:grid;grid-template-columns:1fr 1fr;gap:.5rem .9rem;margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .ingest .row{display:grid;grid-template-columns:auto auto 1fr;gap:.6rem;align-items:baseline;
+    background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-radius:9px;padding:.6rem .8rem}
+  .ingest .from{font-weight:700;font-size:clamp(.82rem,1.06vw,.94rem);color:var(--ink)}
+  .ingest .to{color:var(--verdant);font-weight:800}
+  .ingest .into{font-size:clamp(.78rem,1vw,.88rem);line-height:1.35;color:var(--ink-soft)}
+
+  /* unfilled placeholder — deliberately conspicuous so it can never ship unnoticed */
+  .tbc{display:inline-block;background:rgba(240,96,60,.16);border:1px dashed var(--ember);
+    color:var(--ember);border-radius:4px;padding:.05em .4em;font-style:normal;font-weight:700;
+    font-size:.92em;letter-spacing:.02em}
+  .light .tbc,.solution .tbc{background:rgba(184,78,18,.1);border-color:var(--marigold-deep);color:var(--marigold-deep)}
+
+  /* cost-per-BHW value ladder */
+  .ladder-v{display:flex;flex-direction:column;gap:.5rem;margin-top:.6rem}
+  .rung-v{display:grid;grid-template-columns:1fr auto auto;gap:.9rem;align-items:center;
+    background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-left:3px solid rgba(36,28,23,.18);
+    border-radius:9px;padding:.62rem .85rem}
+  .rung-v.mid{border-left-color:var(--sampaguita)}
+  .rung-v.top{border-left-color:var(--verdant);background:rgba(255,255,255,.9)}
+  .rung-v .who{font-size:clamp(.8rem,1.04vw,.92rem);line-height:1.3;color:var(--ink-soft)}
+  .rung-v .n{font-variant-numeric:tabular-nums;font-weight:700;font-size:clamp(.9rem,1.15vw,1.02rem);color:var(--ink)}
+  .rung-v .per{font-variant-numeric:tabular-nums;font-weight:800;font-size:clamp(1.05rem,1.5vw,1.35rem);color:var(--ink);text-align:right;min-width:5.2rem}
+  .rung-v.top .per{color:var(--verdant)}
+  .rung-v .per small{display:block;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* act bar replaces the unusable 30-dot strip */
+  .actbar{display:flex;gap:9px;pointer-events:auto;align-items:center;flex:1 1 auto;max-width:none;margin-right:1.5rem}
+  .actbar .seg2{flex:1 1 0;min-width:0;cursor:pointer;background:none;border:0;padding:0;display:flex;flex-direction:column;gap:5px;text-align:left;overflow:hidden}
+  .actbar .seg2 .bar{height:3px;border-radius:2px;background:rgba(180,160,140,.34);transition:background .3s}
+  .actbar .seg2 .lb{font-size:.58rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(180,160,140,.6);transition:color .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .actbar .seg2.on .bar{background:var(--marigold)}
+  .actbar .seg2.on .lb{color:var(--marigold)}
+  body[data-ground="light"] .actbar .seg2 .bar{background:rgba(36,28,23,.2)}
+  body[data-ground="light"] .actbar .seg2 .lb{color:rgba(36,28,23,.42)}
+  body[data-ground="light"] .actbar .seg2.on .bar{background:var(--marigold)}
+  body[data-ground="light"] .actbar .seg2.on .lb{color:var(--marigold-deep)}
+  .demo-note{margin-top:.75rem;font-size:.74rem;font-style:italic;color:var(--cream-soft);opacity:.85;line-height:1.4;max-width:78ch}
+
+  /* device frames */
+  .dev-phone{width:322px;flex:0 0 auto;background:#0c0c0d;border-radius:38px;padding:11px;box-shadow:0 30px 60px -20px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.06) inset}
+  .dev-phone .notch{height:20px;display:flex;justify-content:center;align-items:center}
+  .dev-phone .notch::before{content:"";width:112px;height:6px;border-radius:999px;background:#2a2a2c}
+  .dev-phone .glass{border-radius:28px;overflow:hidden;height:548px;display:flex;flex-direction:column}
+  .dev-laptop{width:788px;flex:0 0 auto}
+  .dev-laptop .lid{background:#0c0c0d;border-radius:16px 16px 0 0;padding:10px 10px 0;box-shadow:0 30px 60px -24px rgba(0,0,0,.6)}
+  .dev-laptop .glass{border-radius:8px 8px 0 0;overflow:hidden;height:500px;display:flex;flex-direction:column}
+  .dev-laptop.tall .glass{height:566px}
+  .dev-laptop .base{height:13px;background:linear-gradient(#161616,#0c0c0d);border-radius:0 0 14px 14px;box-shadow:0 12px 24px -12px rgba(0,0,0,.7)}
+  .dev-laptop .base::after{content:"";display:block;width:88px;height:5px;margin:3px auto 0;border-radius:0 0 8px 8px;background:#2a2a2c}
+
+  /* app tokens — scoped, with in-demo dark mode */
+  .app-scope{
+    --a-canvas:#f6f2ed; --a-ink:#2b2420;
+    --a-primary:#b84e12; --a-primary-display:#e8641c; --a-secondary:#0c7c7e;
+    --a-celebration:#ffc857; --a-success:#1f7a45; --a-warning:#8f5a08; --a-danger:#c53a3a;
+    --a-ink-70:color-mix(in srgb,var(--a-ink) 70%,transparent);
+    --a-ink-20:color-mix(in srgb,var(--a-ink) 20%,transparent);
+    --a-ink-15:color-mix(in srgb,var(--a-ink) 15%,transparent);
+    --a-ink-10:color-mix(in srgb,var(--a-ink) 10%,transparent);
+    --a-ink-05:color-mix(in srgb,var(--a-ink) 5%,transparent);
+    --a-sec-30:color-mix(in srgb,var(--a-secondary) 30%,transparent);
+    --a-sec-10:color-mix(in srgb,var(--a-secondary) 10%,transparent);
+    background:var(--a-canvas);color:var(--a-ink);
+    height:100%;display:flex;flex-direction:column;text-align:left;
+  }
+  [data-apptheme="dark"] .app-scope{--a-canvas:#221b16;--a-ink:#f5ede4}
+
+  .app-scope .hdr{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 15px;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
+  .app-scope .hdr .wordmark{font-weight:700;color:var(--a-primary);font-size:14px}
+  .app-scope .hdr .mini{font-size:11px;color:var(--a-ink-70);display:flex;gap:6px;align-items:center}
+  .app-scope .hdr .pill{border:1px solid var(--a-ink-15);border-radius:999px;overflow:hidden;display:inline-flex}
+  .app-scope .hdr .pill span{padding:3px 9px;font-size:11px;font-weight:600;color:var(--a-ink)}
+  .app-scope .hdr .pill span.on{background:var(--a-primary);color:var(--a-canvas)}
+  .app-scope .who{font-size:12px;color:var(--a-ink-70)}
+  .app-scope .tabs{display:flex;gap:17px;padding:9px 17px 0;font-size:12.5px;font-weight:600;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
+  .app-scope .tabs a{color:var(--a-secondary);text-decoration:none;padding-bottom:9px;border-bottom:2px solid transparent}
+  .app-scope .tabs a.on{color:var(--a-ink);border-bottom-color:var(--a-primary)}
+  .app-scope .body{flex:1 1 auto;overflow-y:auto;padding:15px;scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent 100%)}
+  .app-scope .body::-webkit-scrollbar{width:0;height:0;display:none}
+  .app-scope .body.pad{padding:16px 17px}
+  .app-scope .t1{font-size:19px;font-weight:650;letter-spacing:-.2px;margin:0 0 2px}
+  .app-scope .t2{margin:0 0 12px;color:var(--a-ink-70);font-size:12.5px;line-height:1.45}
+  .app-scope .sec{font-size:14px;font-weight:650;margin:18px 0 9px}
+  .app-scope .sec:first-child{margin-top:0}
+
+  .app-scope .log{display:flex;flex-direction:column;gap:11px}
+  .app-scope .bub{max-width:86%;padding:9px 12px;border-radius:14px;font-size:13px;line-height:1.5}
+  .app-scope .bub.u{margin-left:auto;background:var(--a-primary);color:#fff;border-bottom-right-radius:4px}
+  .app-scope .bub.b{background:var(--a-canvas);border:1px solid var(--a-ink-10);border-bottom-left-radius:4px}
+  .app-scope .bub.b.pending{color:var(--a-ink-70)}
+  .app-scope .celebrate{background:var(--a-celebration);color:#2b2420;border-radius:12px;padding:9px 12px;font-size:12px;font-weight:600;line-height:1.4}
+  .app-scope .rel{display:flex;flex-direction:column;gap:7px}
+  .app-scope .rel .h{font-size:11.5px;font-weight:600;color:var(--a-ink-70)}
+  .app-scope .relq{text-align:left;border:1px solid var(--a-ink-20);border-radius:10px;padding:8px 11px;font-size:12px;color:var(--a-ink);background:transparent}
+  .app-scope .dym{border:1px solid var(--a-ink-10);border-radius:12px;padding:11px;display:flex;flex-direction:column;gap:7px}
+  .app-scope .dym .h{font-weight:600;font-size:12.5px}
+  .app-scope .fb{display:flex;align-items:center;gap:8px;color:var(--a-ink-70);font-size:11.5px}
+  .app-scope .fb span.b{border:1px solid var(--a-ink-20);border-radius:9px;padding:4px 9px;font-size:14px;line-height:1}
+  .app-scope .logged{font-size:11px;color:var(--a-ink-70);display:flex;gap:6px;align-items:flex-start;line-height:1.4}
+  .app-scope .logged i{color:var(--a-secondary);font-style:normal}
+  .app-scope .composer{border-top:1px solid var(--a-ink-10);padding:11px 15px;flex:0 0 auto}
+  .app-scope .composer label{display:block;font-size:11.5px;font-weight:600;margin-bottom:5px}
+  .app-scope .composer .row{display:flex;gap:8px}
+  .app-scope .composer .fake{flex:1;min-height:40px;border:1px solid var(--a-ink-20);border-radius:10px;padding:10px 11px;font-size:12.5px;color:var(--a-ink-70)}
+  .app-scope .composer .snd{min-height:40px;padding:0 16px;border-radius:10px;background:var(--a-primary);color:#fff;font-weight:600;font-size:12.5px;display:grid;place-items:center}
+
+  .app-scope .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .app-scope .kpi{border:1px solid var(--a-ink-10);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:3px}
+  .app-scope .kpi .l{font-size:10px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--a-ink-70)}
+  .app-scope .kpi .v{font-size:22px;font-weight:700;letter-spacing:-.4px;font-variant-numeric:tabular-nums}
+  .app-scope .kpi .d{font-size:10.5px;color:var(--a-success);font-weight:600}
+  .app-scope .tw{overflow-x:auto;border:1px solid var(--a-ink-10);border-radius:10px}
+  .app-scope table.g{width:100%;border-collapse:collapse;min-width:600px}
+  .app-scope table.g th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--a-ink-70);font-weight:700;padding:8px 11px;background:var(--a-ink-05)}
+  .app-scope table.g td{padding:10px 11px;font-size:12px;border-top:1px solid var(--a-ink-10);vertical-align:middle}
+  .app-scope table.g tr.hot td{background:color-mix(in srgb,var(--a-celebration) 14%,transparent)}
+  .app-scope .n{font-variant-numeric:tabular-nums}
+  .app-scope .bdg{font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .app-scope .bdg.no{background:color-mix(in srgb,var(--a-danger) 14%,transparent);color:var(--a-danger)}
+  .app-scope .bdg.bad{background:color-mix(in srgb,var(--a-warning) 16%,transparent);color:var(--a-warning)}
+  .app-scope .btn{border-radius:8px;padding:6px 11px;font-size:11.5px;font-weight:600;display:inline-block}
+  .app-scope .btn.p{background:var(--a-primary);color:#fff}
+  .app-scope .btn.g{border:1px solid var(--a-ink-20);color:var(--a-ink)}
+  .app-scope .btn.big{padding:9px 16px;font-size:12.5px;border-radius:9px;text-align:center}
+  .app-scope .ol{border:1px solid var(--a-ink-10);border-radius:10px;overflow:hidden;list-style:none}
+  .app-scope .ol li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 13px;font-size:12px;border-top:1px solid var(--a-ink-10)}
+  .app-scope .ol li:first-child{border-top:0}
+  .app-scope .ol li .m{color:var(--a-ink-70);font-variant-numeric:tabular-nums}
+  .app-scope .meter{display:inline-flex;align-items:center;gap:8px}
+  .app-scope .meter .tr{width:88px;height:8px;border-radius:999px;background:var(--a-ink-10);overflow:hidden}
+  .app-scope .meter .fl{height:8px;border-radius:999px;background:var(--a-primary)}
+
+  .app-scope .form{display:flex;flex-direction:column;gap:12px;border:1px solid var(--a-ink-10);border-radius:10px;padding:15px}
+  .app-scope .prefill{background:var(--a-sec-10);border-radius:8px;padding:9px 11px;font-size:11.5px;line-height:1.45}
+  .app-scope .fld{display:flex;flex-direction:column;gap:5px}
+  .app-scope .fld label{font-size:11.5px;font-weight:600}
+  .app-scope .fld .in{border:1px solid var(--a-ink-20);border-radius:8px;padding:8px 10px;font-size:12px;line-height:1.4;color:var(--a-ink);min-height:34px}
+  .app-scope .fld .in.ta{min-height:56px}
+  .app-scope .f2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  .app-scope .acts{display:flex;gap:10px;flex-wrap:wrap}
+
+  .app-scope .chero{display:flex;gap:13px;align-items:center;padding:13px;border-radius:14px;background:linear-gradient(135deg,color-mix(in srgb,var(--a-secondary) 12%,var(--a-canvas)),var(--a-canvas));border:1px solid var(--a-ink-10)}
+  .app-scope .ring{--p:67;width:64px;height:64px;border-radius:999px;flex:0 0 auto;background:conic-gradient(var(--a-secondary) calc(var(--p)*1%),var(--a-ink-10) 0);display:grid;place-items:center}
+  .app-scope .ring::before{content:"";width:49px;height:49px;border-radius:999px;background:var(--a-canvas);grid-area:1/1}
+  .app-scope .ring b{grid-area:1/1;font-size:12.5px;font-weight:700;z-index:1;font-variant-numeric:tabular-nums}
+  .app-scope .chero h4{margin:0 0 3px;font-size:14px;line-height:1.25}
+  .app-scope .chero p{margin:0;font-size:11.5px;color:var(--a-ink-70)}
+  .app-scope .mods{display:flex;flex-direction:column;gap:7px;margin-top:12px}
+  .app-scope .mod{display:flex;align-items:center;gap:10px;border:1px solid var(--a-ink-10);border-radius:11px;padding:9px 11px}
+  .app-scope .mod .k{width:25px;height:25px;flex:0 0 auto;border-radius:8px;display:grid;place-items:center;font-size:11.5px;font-weight:700}
+  .app-scope .mod .k.done{background:var(--a-success);color:#fff}
+  .app-scope .mod .k.now{background:var(--a-primary);color:#fff}
+  .app-scope .mod .k.todo{background:var(--a-ink-10);color:var(--a-ink-70)}
+  .app-scope .mod .t{flex:1;min-width:0}
+  .app-scope .mod .t b{display:block;font-size:12px;font-weight:600;line-height:1.3}
+  .app-scope .mod .t span{font-size:10.5px;color:var(--a-ink-70);line-height:1.3}
+  .app-scope .mod .fmt{font-size:10px;color:var(--a-ink-70);white-space:nowrap}
+
+  .app-scope .quiz{border:1px solid var(--a-ink-10);border-radius:12px;padding:14px}
+  .app-scope .quiz .q{font-size:13px;font-weight:600;margin-bottom:11px;line-height:1.4}
+  .app-scope .opt{display:flex;align-items:center;gap:10px;border:1px solid var(--a-ink-20);border-radius:10px;padding:10px 12px;margin-bottom:7px;font-size:12.5px;line-height:1.35}
+  .app-scope .opt .k{width:19px;height:19px;border-radius:999px;border:2px solid var(--a-ink-20);flex:0 0 auto}
+  .app-scope .opt.ok{border-color:var(--a-success);background:color-mix(in srgb,var(--a-success) 10%,transparent)}
+  .app-scope .opt.ok .k{border-color:var(--a-success);background:var(--a-success)}
+  .app-scope .verdict{margin-top:9px;font-size:12.5px;font-weight:600;color:var(--a-success);line-height:1.4}
+  .app-scope .handoff{margin-top:12px;border:1px dashed var(--a-secondary);border-radius:12px;padding:12px;display:flex;gap:11px;align-items:center;background:var(--a-sec-10)}
+  .app-scope .handoff .ic{font-size:21px}
+  .app-scope .handoff b{font-size:12.5px} .app-scope .handoff p{margin:2px 0 0;font-size:11.5px;color:var(--a-ink-70);line-height:1.4}
+
+  /* return-demonstration checklist */
+  .app-scope .rd-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:11px}
+  .app-scope .rd-scale{display:flex;gap:12px;flex-wrap:wrap;font-size:10.5px;color:var(--a-ink-70);line-height:1.4}
+  .app-scope .rd-scale b{color:var(--a-ink)}
+  .app-scope .rd-sec{font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--a-ink-70);margin:12px 0 6px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .app-scope .rd-sec .sub{font-weight:700;color:var(--a-secondary);font-variant-numeric:tabular-nums;letter-spacing:0;text-transform:none}
+  .app-scope .rd-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;border:1px solid var(--a-ink-10);border-radius:8px;padding:5px 10px;margin-bottom:4px;font-size:11px;line-height:1.3}
+  .app-scope .rd-scores{display:flex;gap:5px;flex:0 0 auto}
+  .app-scope .rd-scores i{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--a-ink-20);display:grid;place-items:center;font-style:normal;font-size:10px;font-weight:700;color:var(--a-ink-70)}
+  .app-scope .rd-scores i.on{background:var(--a-success);border-color:var(--a-success);color:#fff}
+  .app-scope .rd-scores i.on.part{background:var(--a-warning);border-color:var(--a-warning)}
+  .app-scope .rd-fold{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--a-ink-10);border-radius:9px;padding:8px 11px;margin-bottom:5px;font-size:11.5px;color:var(--a-ink-70)}
+  .app-scope .rd-fold b{color:var(--a-ink);font-weight:600}
+  .app-scope .foot{border-top:1px solid var(--a-ink-10);padding:10px 17px 12px;flex:0 0 auto;background:var(--a-ink-05)}
+  .app-scope .rd-sum{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .app-scope .rd-sum .nums{display:flex;gap:18px;flex-wrap:wrap;font-size:11px;color:var(--a-ink-70)}
+  .app-scope .rd-sum .nums b{display:block;font-size:17px;color:var(--a-ink);font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+  .app-scope .rd-verdict{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:7px 13px;border-radius:999px;background:var(--a-success);color:#fff}
+
+  /* certificate */
+  .app-scope .cert{width:100%;max-width:520px;margin:0 auto;border-radius:15px;overflow:hidden;border:1px solid var(--a-ink-10);box-shadow:0 20px 50px -24px rgba(0,0,0,.5)}
+  .app-scope .cert .band{height:8px;background:linear-gradient(90deg,var(--a-primary-display),var(--a-celebration),var(--a-secondary))}
+  .app-scope .cert .in{padding:20px 24px;text-align:center}
+  .app-scope .cert .seal{width:54px;height:54px;margin:0 auto 8px;border-radius:999px;background:var(--a-celebration);display:grid;place-items:center;font-size:24px;box-shadow:0 0 0 6px color-mix(in srgb,var(--a-celebration) 30%,transparent)}
+  .app-scope .cert .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--a-ink-70);font-weight:700}
+  .app-scope .cert h3{margin:6px 0 2px;font-size:16px;line-height:1.25}
+  .app-scope .cert .nm{font-size:24px;font-weight:750;color:var(--a-primary-display);margin:10px 0 4px;letter-spacing:-.3px}
+  .app-scope .cert .ds{font-size:11.5px;color:var(--a-ink-70);max-width:44ch;margin:0 auto;line-height:1.5}
+  .app-scope .cert .ft{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-top:16px;text-align:left}
+  .app-scope .cert .ft .sig{font-size:10.5px;color:var(--a-ink-70)}
+  .app-scope .cert .ft .sig b{display:block;font-size:12px;color:var(--a-ink)}
+  .app-scope .qr{width:64px;height:64px;border-radius:8px;background:#fff;padding:4px}
+  .app-scope .qr svg{display:block}
+  .app-scope .vfy{font-size:10px;color:var(--a-secondary);text-align:right;margin-top:3px}
+  .app-scope .cid{font-size:9.5px;color:var(--a-ink-70);margin-top:9px;letter-spacing:.4px}
+
+  /* module catalogue */
+  .app-scope .cat{display:flex;flex-direction:column;gap:7px}
+  .app-scope .cat .row{display:flex;align-items:center;gap:10px;border:1px solid var(--a-ink-10);border-radius:10px;padding:9px 12px}
+  .app-scope .cat .row.soon{opacity:.55}
+  .app-scope .cat .row .t{flex:1;min-width:0}
+  .app-scope .cat .row .t b{display:block;font-size:12px;font-weight:600;line-height:1.3}
+  .app-scope .cat .row .t span{font-size:10.5px;color:var(--a-ink-70)}
+  .app-scope .st{font-size:9.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .app-scope .st.pub{background:color-mix(in srgb,var(--a-success) 18%,transparent);color:var(--a-success)}
+  .app-scope .st.plan{background:var(--a-ink-10);color:var(--a-ink-70)}
+
+  /* ---------- nav chrome ---------- */
+  .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.65rem clamp(1rem,3vw,2rem);pointer-events:none}
+  .dots{display:flex;gap:6px;pointer-events:auto;flex-wrap:wrap;max-width:66vw}
+  .dots button{width:8px;height:8px;border-radius:50%;border:none;background:rgba(180,160,140,.5);cursor:pointer;padding:0;transition:.25s}
+  .dots button.on{background:var(--marigold);transform:scale(1.3)}
+  .dots button.mark{box-shadow:0 0 0 2px rgba(255,200,87,.45)}
+  .navbtns{display:flex;align-items:center;gap:.5rem;pointer-events:auto}
+  .navbtns button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(180,160,140,.5);background:rgba(255,255,255,.7);color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:.2s;backdrop-filter:blur(6px)}
+  .navbtns button:hover{background:var(--marigold);color:#fff;border-color:var(--marigold)}
+  .navbtns button:disabled{opacity:.35;cursor:default}
+  .counter{position:fixed;top:clamp(.9rem,2.6vh,1.6rem);right:clamp(1rem,3vw,2.2rem);z-index:20;font-size:.76rem;font-weight:700;letter-spacing:.12em;font-variant-numeric:tabular-nums;color:rgba(247,241,232,.55);transition:color .3s}
+  .brandtab{position:fixed;top:clamp(.9rem,2.6vh,1.6rem);left:clamp(1rem,3vw,2.2rem);z-index:20;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,241,232,.55);transition:color .3s}
+  /* explicit per-register colour: difference-blending rendered both of these invisible */
+  body[data-ground="light"] .counter,body[data-ground="light"] .brandtab{color:rgba(36,28,23,.46)}
+  .brandtab .act{opacity:.62;font-weight:600}
+
+  /* demo-only toggles */
+  .democtl{position:fixed;top:clamp(.75rem,2.4vh,1.4rem);left:50%;transform:translateX(-50%);z-index:25;display:none;gap:.9rem;align-items:center;
+    background:rgba(6,40,42,.72);border:1px solid var(--line-dark);border-radius:999px;padding:.3rem .8rem;backdrop-filter:blur(8px)}
+  .democtl.show{display:flex}
+  .democtl .lbl{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-soft)}
+  .seg{display:inline-flex;overflow:hidden;border-radius:999px;border:1px solid var(--line-dark)}
+  .seg button{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:600;font-size:.72rem;padding:.25rem .7rem;background:transparent;color:var(--cream);transition:background .15s}
+  .seg button[aria-pressed="true"]{background:var(--marigold);color:#fff}
+  .seg button:not([aria-pressed="true"]):hover{background:rgba(255,255,255,.09)}
+
+  #confetti{position:fixed;inset:0;pointer-events:none;z-index:3}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .gaps,.status,.feat{grid-template-columns:1fr 1fr}
+    .ingest{grid-template-columns:1fr}
+    .demo2{grid-template-columns:1fr}
+    .closes{grid-template-columns:1fr}
+    .app-scope .kpis{grid-template-columns:1fr 1fr}
+    .app-scope .f2{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    /* overflow-x must stay clipped: the decorative ::after bloom is positioned at
+       right:-12%, which becomes real horizontal scroll once overflow-y opens up. */
+    .slide{justify-content:flex-start;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;padding-top:4rem;padding-bottom:4.6rem}
+    .stat{grid-template-columns:1fr;gap:1rem}
+    .grid2,.grid3,.chips,.ask,.phases,.gaps,.cols2,.demo2,.status,.closes,.feat,.ingest{grid-template-columns:1fr;gap:.75rem}
+    .demo2 .col-r{margin-top:.6rem}
+    .actbar .seg2 .lb{display:none}
+    .cost-grid,.stance-grid{grid-template-columns:1fr;gap:1.3rem}
+    .cost-visual svg{width:min(230px,56vw)}
+    .stance-visual svg{width:min(205px,52vw)}
+    .stance q{font-size:clamp(2rem,7.6vw,3.2rem)}
+    .loop .node{flex:1 1 100%}
+    .arrow{transform:rotate(90deg)}
+    .rung{font-size:.72rem;padding:.36rem .68rem}
+    .dev-laptop{width:100%;max-width:100%}
+    .dev-phone{width:min(322px,100%)}
+    .demo-stage{gap:.8rem}
+    .democtl{gap:.6rem;padding:.25rem .6rem}
+  }
+  @media (max-height:600px) and (orientation:landscape){
+    .slide{justify-content:flex-start;overflow-y:auto;padding-top:2.6rem;padding-bottom:3.6rem}
+    .eyebrow{margin-bottom:.7rem}
+    h1{font-size:clamp(2.2rem,7vw,3.4rem)}
+    h2{font-size:clamp(1.35rem,3.6vw,2.1rem)}
+    .lead{font-size:clamp(.9rem,1.5vw,1.05rem)}
+    .stat__num{font-size:clamp(3rem,10vw,5.4rem)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .slide{transition:opacity .01s}
+    .dots button,.navbtns button,.seg button{transition:none}
+    .radar-sweep,.human-pulse{animation:none}
+  }
+</style>
+
+<div class="brandtab">BHW&nbsp;Connect</div>
+<div class="counter"><span id="cur">01</span> / <span id="tot">00</span></div>
+
+<div class="democtl" id="democtl">
+  <span class="lbl">Wika</span>
+  <div class="seg" id="langSeg">
+    <button type="button" data-lang="fil" aria-pressed="true">Filipino</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+  <span class="lbl">App theme</span>
+  <div class="seg" id="themeSeg">
+    <button type="button" data-theme="light" aria-pressed="true">Light</button>
+    <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+  </div>
+</div>
+
+<div class="deck" id="deck">
+
+  <!-- 01 · TITLE -->
+  <section class="slide darker centered active" data-act="">
+    <div class="slide__inner">
+      <div class="title-kicker">A Partnership Proposal · 2026</div>
+      <h1>BHW&nbsp;Connect</h1>
+      <p class="title-sub">The DOH platform for its 300,000 registered health workers — answering their questions at the doorstep, training and certifying them individually, and writing competency into the national registry.</p>
+      <div class="partners">
+        <span class="partners-label">Proposed to</span>
+        <div class="partners-row">
+          <div class="partner"><strong>World Health Organization</strong><span>Country Office for the Philippines</span></div>
+          <div class="partner"><strong>Department of Health</strong><span>Bureau of Local Health Systems Development</span></div>
+          <div class="partner"><strong>Center for Health Development</strong><span>Western Visayas · Region VI</span></div>
+        </div>
+      </div>
+      <p class="src" style="color:var(--cream-soft)">Presented by BLHSD — Equity in Health and Special Concerns Section · <span class="tbc">[date · version · named contact TO CONFIRM]</span></p>
+    </div>
+  </section>
+
+  <!-- 02 · PROOF OF DELIVERY -->
+  <section class="slide dark" data-act="Standing">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">01</span> What DOH Has Already Delivered</div>
+      <div class="stat">
+        <div class="stat__num">~300,000<small>BHWs profiled in about a year</small></div>
+        <div class="stat__body">
+          <h2 class="tight">A national BHW registry, after three decades without one.</h2>
+          <p class="lead">Barangay Health Workers are the first — and often only — point of care in every barangay. Until Phase 1 there was no complete national record of who they were or where.</p>
+          <p class="pull">They carried the system on paper and memory. Now they are on it.</p>
+        </div>
+      </div>
+      <div class="grid3" style="margin-top:clamp(1rem,2.4vh,1.7rem)">
+        <div class="pillar"><h3>Proven delivery</h3><p>Not a bureau proposing its first platform. It has already taken a national digital health system from concept to nationwide adoption.</p></div>
+        <div class="pillar"><h3>The users already exist</h3><p>Phase 2 onboarding is activation of registered, organisationally located users — not recruitment from an empty database.</p></div>
+        <div class="pillar"><h3>A proven adoption pathway</h3><p>The same CHD, LGU and BHW channels that delivered nationwide profiling in a year deliver Phase 2 onboarding.</p></div>
+      </div>
+      <p class="src" style="color:var(--cream-soft)">Source: BHW Connect Phase 1 registry extract, <span class="tbc">[date · completeness · active-login rate TO CONFIRM]</span>.</p>
+    </div>
+  </section>
+
+  <!-- 03 · WHAT IT IS -->
+  <section class="slide light solution" data-act="Standing">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">02</span> What BHW Connect Is</div>
+      <h2 class="tight">Three things a training event cannot be.</h2>
+      <div class="grid3">
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-2.9-.4L4 21l1.4-4.2A8.2 8.2 0 0 1 3.6 11.5C3.6 7 7.8 3.5 12.3 3.5S21 7 21 11.5z"/><path d="M9 10h7M9 13.5h4.5"/></svg>
+          <h3>Support at the doorstep</h3>
+          <p>A bilingual Knowledge Base and Chat Guide answering a BHW's question in Filipino, English or Taglish — at the moment the question arises, not the moment the training was held.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 5 2.5 5 2.5s5-1 5-2.5v-5"/><path d="M21 8v6"/></svg>
+          <h3>Training that doesn't decay</h3>
+          <p>Every BHW takes the same modules directly — no cascade, no retelling. Assessment is per person, against the same rubric, and content updates for everyone at once.</p>
+        </div>
+        <div class="card">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9M10 20V4M16 20v-7M22 20H2"/></svg>
+          <h3>A record that can be queried</h3>
+          <p>Competency is written to the national registry. DOH can ask “which BHWs in this municipality are certified for CBG screening?” and get an answer, at any level of the hierarchy.</p>
+        </div>
+      </div>
+      <p class="underline-note">All three run on the <span class="mark">same platform</span>, on a workforce that is <span class="mark">already registered</span> in it.</p>
+    </div>
+  </section>
+
+  <!-- 04 · WHAT HHP+ BUILT + THE PLAN -->
+  <section class="slide light" data-act="The Gap">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">03</span> What HHP+ Has Already Built</div>
+      <h2 class="tight">The clinical work is done — and it is good.</h2>
+      <div class="grid3">
+        <div class="pillar"><h3>Facility capacity built</h3><p>Physicians, nurses and NCD coordinators trained under PhilPEN 2025 and PPSA across Western Visayas.</p></div>
+        <div class="pillar"><h3>Tools that work</h3><p>Clinical job aids, NCD flipcharts and monitoring tools — developed, field-tested, distributed. Instruments already in use.</p></div>
+        <div class="pillar"><h3>A defined BHW competency</h3><p>Region VI CHD already treats community screening, including CBG with return demonstration, as a BHW skill.</p></div>
+      </div>
+      <div class="meta-row">
+        <span class="mtag"><b>The package on the table:</b></span>
+        <span class="mtag">6 modules</span>
+        <span class="mtag">7 competency domains</span>
+        <span class="mtag">5 outputs</span>
+        <span class="mtag">Iloilo all districts + Guimaras</span>
+        <span class="mtag">5 months</span>
+        <span class="mtag">Contractor-delivered</span>
+      </div>
+      <p class="underline-note">This is a sound plan. Everything that follows assumes it goes ahead <span class="mark">exactly as designed</span>.</p>
+      <p class="src">Summarized from “Strengthening Barangay Health Worker Capacity under HHP+”, BLHSD alignment meeting, 31 July 2026.</p>
+    </div>
+  </section>
+
+
+
+  <!-- 06 · THE GAPS -->
+  <section class="slide darker problem wide" data-act="The Gap">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">04</span> What a Training Programme Cannot Do</div>
+      <h2 class="tight">Six gaps that survive a perfectly executed contract.<span class="statechip open">6 open</span></h2>
+      <p class="lead" style="max-width:74ch;margin-bottom:.2rem">At a doorstep in month nine, a Barangay Health Worker has a question and no one to ask. That is the shape of all six.</p>
+      <div class="gaps">
+        <div class="gap">
+          <div class="gap-h"><span class="gtag">G1</span><span class="gstate">Open</span></div>
+          <h3>Materials go stale</h3>
+          <p>Video is cut once. When guidance moves there is no mechanism to re-cut it and get the correction to people already trained.</p>
+        </div>
+        <div class="gap">
+          <div class="gap-h"><span class="gtag">G2</span><span class="gstate">Open</span></div>
+          <h3>Cascade decay</h3>
+          <p>Representatives cascade to peers. What each BHW receives depends on who retold it — and nothing measures the difference.</p>
+        </div>
+        <div class="gap">
+          <div class="gap-h"><span class="gtag">G3</span><span class="gstate">Open</span></div>
+          <h3>48.4% is the map. Delivery is 2–5%.</h3>
+          <p>Iloilo and Guimaras hold <b>11,533</b> of the region's 23,813 BHWs. But training begins only after inception, package development and validation — and a contractor running sessions for the weeks that remain reaches <b>360–1,200 people directly</b>. The rest cascade. Aklan, Antique and Capiz — <b>12,280</b> — are outside the package entirely.</p>
+          <p class="ev">Modelled at 6–10 weeks of delivery, 2–3 sessions a week, 30–40 participants each. Assumptions shown so they can be checked.</p>
+        </div>
+        <div class="gap">
+          <div class="gap-h"><span class="gtag">G4</span><span class="gstate">Open</span></div>
+          <h3>No route to national</h3>
+          <p>Output 5 delivers scale-up <em>recommendations</em>. A recommendation is not a mechanism.</p>
+        </div>
+        <div class="gap">
+          <div class="gap-h"><span class="gtag">G5</span><span class="gstate">Open</span></div>
+          <h3>One competency, once</h3>
+          <p>Nothing is left standing to hold the next programme. Immunization, nutrition, MNCH each start again from zero.</p>
+        </div>
+        <div class="gap">
+          <div class="gap-h"><span class="gtag">G6</span><span class="gstate">Open</span></div>
+          <h3>Paper competence</h3>
+          <p>The return-demonstration checklist is hand-scored and filed locally. No queryable record of who is competent, no re-certification trigger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · STANCE -->
+  <section class="slide darker centered" data-act="The Answer">
+    <div class="slide__inner">
+      <div class="stance" style="max-width:26ch;margin:0 auto;text-align:center">
+        <q>Technology is <em>not</em> the end-all.</q>
+        <p class="lead" style="max-width:52ch;margin:clamp(1.6rem,3.6vh,2.6rem) auto 0">A better app doesn't fix a health system — people do. BHW Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL BREADTH -->
+  <section class="slide light solution wide" data-act="The Answer">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">05</span> The Whole System</div>
+      <h2 class="tight">Not a chat app. A platform the whole workforce runs on.</h2>
+      <div class="feat">
+        <div class="fcol">
+          <h3>Answer</h3>
+          <ul>
+            <li><b>Knowledge Base</b> — bilingual, versioned, every entry with a named owner and review-due date</li>
+            <li><b>Chat Guide</b> — Filipino / English / Taglish, typo-tolerant, no cost per matched answer</li>
+            <li><b>Gap detection</b> — every unanswered question logged, themed and counted</li>
+            <li><b>Flip-chart builder</b> — client-facing image beside the BHW's script, approved before publish</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>Train &amp; certify</h3>
+          <ul>
+            <li><b>E-learning</b> — text, video and quizzes, with DOH-set pass marks and retake limits</li>
+            <li><b>Skills assessment</b> — assessor queue, digitized return-demonstration rubrics</li>
+            <li><b>Certification</b> — QR-verified, checkable by anyone without a login</li>
+            <li><b>Re-certification</b> — refresher pathways designed in for workforce turnover</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>Reach &amp; listen</h3>
+          <ul>
+            <li><b>Announcements</b> — cascade from national down to a single barangay</li>
+            <li><b>Surveys</b> — four question types, per-survey anonymity</li>
+            <li><b>Forum</b> — cross-cutting practice sharing, moderated after posting</li>
+            <li><b>Notifications</b> and <b>offline access</b> for low-connectivity barangays</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>See &amp; govern</h3>
+          <ul>
+            <li><b>Roll-up dashboards</b> at every tier — barangay to national</li>
+            <li><b>Reports &amp; exports</b> — CSV, Excel, PDF with a column picker</li>
+            <li><b>Plain-language audit trail</b>, bilingual, for every administrative action</li>
+            <li><b>Accessibility &amp; data privacy</b> — font scale, contrast, dark mode; consent, retention and data-rights actions</li>
+          </ul>
+        </div>
+      </div>
+      <p class="underline-note">Sixteen capabilities, <span class="mark">one platform, one login</span> — designed against a workforce that is already registered in it.</p>
+    </div>
+  </section>
+
+  <!-- 08 · THE ENGINE -->
+  <section class="slide light solution" data-act="The Answer">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">06</span> The Engine</div>
+      <h2 class="tight">Every question makes the system smarter.</h2>
+      <div class="loop">
+        <div class="node"><span class="step">01</span><b>A BHW asks</b><p>A real question, in her own words, mid-visit.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">02</span><b>The base answers</b><p>Matched to DOH-approved guidance. Rule-based — no cost per matched question.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">03</span><b>Gaps are logged</b><p>Unanswered questions surface automatically, themed and counted.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">04</span><b>A DOH reviewer fills them</b><p>Clinically reviewed by the Content Review Panel, DOH-approved, published to everyone.</p></div>
+      </div>
+      <div class="loopback">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg>
+        <span>…and the whole frontline benefits from the next answer — while DOH learns what the field doesn't yet understand.</span>
+      </div>
+      <div class="ladder">
+        <span class="rung">Barangay</span><span class="sep">›</span>
+        <span class="rung">RHU</span><span class="sep">›</span>
+        <span class="rung">City / Municipal</span><span class="sep">›</span>
+        <span class="rung">Provincial</span><span class="sep">›</span>
+        <span class="rung">Regional · CHD VI</span><span class="sep">›</span>
+        <span class="rung top">National · DOH</span>
+      </div>
+      <p class="lead" style="margin-top:.85rem">Data rolls up the hierarchy the registry already defines — real-time visibility, finally flowing upward.</p>
+    </div>
+  </section>
+
+
+
+  <!-- STATUS -->
+  <section class="slide dark" data-act="The Answer">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">07</span> Where It Stands</div>
+      <h2 class="tight">Designed end to end. Not yet built.</h2>
+      <div class="status">
+        <div class="col done">
+          <h3>✓ Complete</h3>
+          <ul>
+            <li>Requirements, data model and system architecture</li>
+            <li>User journeys for BHW, admin, assessor and designer</li>
+            <li>Content governance and DOH approval workflow</li>
+            <li>Accessibility and data-privacy approach</li>
+            <li>A staged build roadmap, costed</li>
+          </ul>
+        </div>
+        <div class="col part">
+          <h3>◐ Demonstrable today</h3>
+          <ul>
+            <li>Clickable mockups of every core journey — the next five slides</li>
+            <li>Bilingual and light/dark, as designed</li>
+            <li>Enough to review the design honestly, not a working system</li>
+          </ul>
+        </div>
+        <div class="col todo">
+          <h3>○ Not yet done</h3>
+          <ul>
+            <li>The platform itself — this is what Year 1 builds</li>
+            <li>HHP+ curriculum authored, clinically validated, DOH-approved</li>
+            <li>Provisioning, onboarding, certification and evaluation</li>
+            <li>Piloting with real Barangay Health Workers</li>
+          </ul>
+        </div>
+      </div>
+      <p class="underline-note">We will not call anything <span class="mark">built</span> until a Barangay Health Worker has used it in the field. Today the design is complete and the mockups are real; the system is not.</p>
+    </div>
+  </section>
+
+  <!-- DEMO (filled by script) -->
+  <section class="slide darker demo wide" data-act="Prototype" data-scene="chat"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Prototype" data-scene="loop"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Prototype" data-scene="modules"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Prototype" data-scene="checklist"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Prototype" data-scene="certify"><div class="slide__inner"></div></section>
+
+  <!-- DESIGNED TO LAST -->
+  <section class="slide light solution" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">08</span> Designed to Last</div>
+      <h2 class="tight">HHP+ is module one, not the boundary.</h2>
+      <div class="cols2" style="align-items:center">
+        <div>
+          <div class="listhead">One engine, many curricula</div>
+          <ul class="numlist">
+            <li><i>1</i><span><b>Community NCD screening — HHP+ / PhilPEN 2025.</b> Year 1 flagship, Region VI. Proven end to end, and the template every later module inherits.</span></li>
+            <li><i>+</i><span>Immunization · Nutrition · Family Planning · Communicable Disease Surveillance · First Aid · BHW Administrative Procedures — each on the roadmap, each a content and approval exercise.</span></li>
+          </ul>
+          <p class="src">Adding a programme is authoring and DOH approval, not a new build. The second module and the third cost a fraction of the first, because the engine, the workflow and the workforce are already there.</p>
+        </div>
+        <div class="chips" style="grid-template-columns:1fr;margin-top:0">
+          <div class="chipcard"><b>No per-question licensing</b><p>The rule-based engine answers matched questions at no marginal cost. The optional AI fallback for unmatched questions is modelled at ₱4,000–43,000 a year.</p></div>
+          <div class="chipcard"><b>Portable by design</b><p>An open, non-proprietary Postgres core intended for migration onto government infrastructure, subject to a hosting agreement with DOH KMITS.</p></div>
+          <div class="chipcard"><b>Built for turnover</b><p>BHW and local-official turnover is expected, not exceptional. Self-service onboarding, refreshers and re-certification are designed in, so a new cohort needs no new project.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREEBIES -->
+  <section class="slide light solution wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">09</span> Already Paid For</div>
+      <h2 class="tight">Everything you have already produced comes with you.</h2>
+      <p class="lead" style="max-width:70ch">The platform ingests existing material rather than recreating it. Each of these was funded once and currently lives as a printed artefact or a file on somebody's laptop; on the platform it becomes permanent, updatable and nationally distributable.</p>
+      <div class="ingest">
+        <div class="row"><span class="from">NCD flipcharts</span><span class="to">→</span><span class="into">Flip-chart module — client-facing image beside the BHW's script</span></div>
+        <div class="row"><span class="from">Clinical job aids</span><span class="to">→</span><span class="into">Knowledge Base articles, searchable at the doorstep</span></div>
+        <div class="row"><span class="from">Monitoring tools</span><span class="to">→</span><span class="into">Structured forms and surveys with roll-up reporting</span></div>
+        <div class="row"><span class="from">The 29-criterion CBG checklist</span><span class="to">→</span><span class="into">The assessment engine, auto-scored against its own bands</span></div>
+        <div class="row"><span class="from">HHP+ instructional videos</span><span class="to">→</span><span class="into">E-learning modules, re-cuttable when guidance moves</span></div>
+        <div class="row"><span class="from">PhilPEN protocols &amp; facilitator guides</span><span class="to">→</span><span class="into">Course content and Knowledge Base entries</span></div>
+      </div>
+      <p class="underline-note">No content is rebuilt and nothing is re-procured. Every peso already spent stops having a <span class="mark">shelf life</span>.</p>
+    </div>
+  </section>
+
+  <!-- WHY WHO -->
+  <section class="slide light" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">10</span> Why WHO</div>
+      <h2 class="tight">Your normative work, given a delivery system.</h2>
+      <div class="grid3">
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9 11h1.5l1-2 1.5 4 1-2H15"/></svg>
+          <h3>HEARTS and PhilPEN</h3>
+          <p>HHP+ operationalizes HEARTS through PhilPEN 2025. Community screening is the entry point to both — and the one link with no maintained competency pathway behind it.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.1a4 4 0 0 1 0 7.8"/><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M18 14a5 5 0 0 1 4 4.9V21"/></svg>
+          <h3>The 2018 CHW guideline, delivered</h3>
+          <p>Competency-based training · certification · supportive supervision · workforce data. This platform is the country mechanism for all four.</p>
+        </div>
+        <div class="pillar">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          <h3>Digital health, done properly</h3>
+          <p>A government-owned digital public good on open standards — country-led, institutionally housed, built to outlast the engagement that funds it.</p>
+        </div>
+      </div>
+      <p class="underline-note">WHO has already invested in the clinical content. This is what makes it <span class="mark">permanent, current and national</span>.</p>
+      <p class="src">WHO guideline on health policy and system support to optimize community health worker programmes, 2018.</p>
+    </div>
+  </section>
+
+  <!-- 17 · THE ASK -->
+  <section class="slide darker" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">11</span> The Ask</div>
+      <h2 class="tight">What we're asking WHO to build with us.</h2>
+      <div class="ask">
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2 0 0 1 5 0c0 2.5-5 1.5-5 4a2.5 2 0 0 0 5 0"/></svg>
+          <h3>Year-1 financing</h3>
+          <p>Structured as deliverable-based outputs with go/no-go gates, so payment follows acceptance.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3>Technical validation</h3>
+          <p>WHO review of the digitized curriculum against HEARTS and PhilPEN 2025 — the review point Output 3 already defines.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h11l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg>
+          <h3>Normative alignment</h3>
+          <p>Position the certification pathway as a country implementation of WHO's CHW competency recommendations.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12l-4 4 4 4"/><path d="M16 12l4-4-4-4"/><path d="M14 4l-4 16"/></svg>
+          <h3>Convening</h3>
+          <p>WHO's standing with DOH, BLHSD and CHD VI to carry a regional package into a national commitment.</p>
+        </div>
+      </div>
+      <p class="underline-note" style="border-top-color:var(--line-dark)"><b>Why a separate instrument, not a wider training TOR:</b> a training contract buys an <span class="mark">event</span>. This buys an <span class="mark">asset</span> that DOH owns and operates after the contract closes. Ownership of the platform, its source code, its data and all published content rests with DOH throughout and after, under an MOA executed before implementation.</p>
+    </div>
+  </section>
+
+  <!-- SCOPE, COVERAGE & COST -->
+  <section class="slide light wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">12</span> Scope, Coverage &amp; Year-1 Cost</div>
+      <h2 class="tight">Twenty to sixty-six times the reach, for a knowable price.</h2>
+      <div class="cols2" style="align-items:start">
+        <div>
+          <div class="listhead">What a peso buys, by reach</div>
+          <div class="ladder-v">
+            <div class="rung-v"><span class="who">The training package, reached directly</span><span class="n">360–1,200</span><span class="per">—<small>five months</small></span></div>
+            <div class="rung-v mid"><span class="who">This platform, Year 1 — all of Western Visayas</span><span class="n">23,813</span><span class="per">₱629<small>per BHW</small></span></div>
+            <div class="rung-v top"><span class="who">The same platform, national profiled base</span><span class="n">~300,000</span><span class="per">₱50<small>per BHW</small></span></div>
+          </div>
+          <p class="src">Year 1 covers the whole region — including the 12,280 in Aklan, Antique and Capiz the package never reaches — because onboarding is activation of an already-profiled workforce, not recruitment. The build is paid once; every BHW added afterwards is onboarding, not construction.</p>
+        </div>
+        <div>
+          <div class="listhead">Year-1 envelope — bottom-up</div>
+          <div class="budget" style="margin-top:.5rem">
+            <div class="bline"><b>₱2.80M</b><span>Rollout &amp; certification — region-wide</span></div>
+            <div class="bline"><b>₱2.46M</b><span>Engineering — build, harden, provision</span></div>
+            <div class="bline"><b>₱1.50M</b><span>Content authoring &amp; clinical validation</span></div>
+            <div class="bline"><b>₱1.40M</b><span>Infrastructure &amp; tooling</span></div>
+            <div class="bline"><b>₱1.40M</b><span>Independent M&amp;E</span></div>
+            <div class="bline"><b>₱1.20M</b><span>Equipment</span></div>
+            <div class="bline"><b>₱1.15M</b><span>Video &amp; bilingual content production</span></div>
+            <div class="bline"><b>₱0.78M</b><span>Instructional design &amp; QA</span></div>
+            <div class="bline"><b>₱0.78M</b><span>Project management</span></div>
+            <div class="bline"><b>₱0.40M</b><span>Governance &amp; institutionalization</span></div>
+            <div class="bline"><b>₱1.11M</b><span>Contingency — 8%</span></div>
+          </div>
+          <div class="total">
+            <span class="amt">₱14.98M</span>
+            <span class="usd">≈ US$258,000 · 12 months · 23,813 BHWs</span>
+          </div>
+          <p class="src">Rates to be confirmed with BLHSD before submission. Covers the build, the content and the rollout. Training delivery, travel and per diem sit outside this envelope as counterpart contributions. Results framework, risk register, timeline and data-protection annex are in the accompanying concept note.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19 · GAPS CLOSED -->
+  <section class="slide light solution wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">13</span> Every Gap, Closed</div>
+      <h2 class="tight">The contract trains them. This is what keeps them trained.<span class="statechip closed">6 closed</span></h2>
+      <div class="closes">
+        <div class="close-row"><span class="gtag">G1</span><div><s>Materials go stale</s><b>Update once, everywhere, the same day</b></div></div>
+        <div class="close-row"><span class="gtag">G2</span><div><s>Cascade decay</s><b>No retelling — every BHW gets the original</b></div></div>
+        <div class="close-row"><span class="gtag">G3</span><div><s>The ceiling is arithmetic</s><b>Onboarding, not roadshows</b></div></div>
+        <div class="close-row"><span class="gtag">G4</span><div><s>No route to national</s><b>The platform is the mechanism</b></div></div>
+        <div class="close-row"><span class="gtag">G5</span><div><s>One competency, once</s><b>A curriculum engine, not a curriculum</b></div></div>
+        <div class="close-row"><span class="gtag">G6</span><div><s>Paper competence</s><b>The same rubric, scored and queryable</b></div></div>
+      </div>
+      <p class="src">Each closure is a designed capability, verified in Year 1 against the indicators in the concept note's results framework.</p>
+    </div>
+  </section>
+
+  <!-- 20 · CLOSE -->
+  <section class="slide darker centered close" data-act="">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">14</span> The Goal</div>
+      <h2>A connected, capable frontline — and a workforce DOH can finally see.</h2>
+      <p class="lead">Three hundred thousand health workers, trained, certified and supported. Millions of families, better cared for. And the clinical work WHO has already paid for, kept current instead of frozen.</p>
+      <div class="invite">One province · twelve months · ₱6.0M (≈US$103K) · DOH owns the platform, its code and its data.</div>
+      <div class="invite-partners">
+        <b>World Health Organization</b> · Philippines
+        <span class="dot">•</span>
+        <b>Department of Health</b> · Bureau of Local Health Systems Development
+        <span class="dot">•</span>
+        <b>CHD</b> · Western Visayas
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="chrome">
+  <div class="actbar" id="actbar" role="tablist" aria-label="Chapters"></div>
+  <div class="navbtns">
+    <button id="prev" aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button id="next" aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =================================================================
+     Demo chapter i18n. Narrative slides are English-only by design;
+     the FIL/EN toggle exists because bilingual delivery IS the feature
+     being demonstrated.
+     ================================================================= */
+  var I = {
+    fil: {
+      /* ---- scene chrome ---- */
+      appName:"BHW Connect", chatTitle:"Chat Guide",
+      chatIntro:"Magtanong tungkol sa community screening sa English, Filipino, o Taglish.",
+      inputLabel:"Ang iyong tanong", inputPh:"I-type ang iyong tanong dito…", send:"Ipadala",
+      related:"Kaugnay na mga tanong", didYouMean:"Ito ba ang ibig mong sabihin…?",
+      feedbackPrompt:"Nakatulong ba ito?",
+      firstAnswer:"🎉 Magaling! Nasagot na ang iyong unang tanong sa Chat Guide.",
+      noAnswer:"Wala pa akong sagot diyan. Naitala ko na ang iyong tanong para maidagdag ito ng aming team sa Chat Guide.",
+      loggedNote:"Naitala para sa pagsusuri ng admin — makikita ito sa gap queue.",
+      gapClosed:"🎉 Nasagot na! Idinagdag ng admin ang sagot — ito ang buong loop sa isang minuto.",
+
+      /* ---- intro ---- */
+      i_kicker:"Prototype ng Phase 2",
+      i_title_a:"Ang tamang sagot ay", i_title_em:"isang tanong lang ang layo",
+      i_sub:"Ganito tinutulungan ng BHW Connect ang mga Barangay Health Worker na nagsasagawa ng community-based NCD screening sa ilalim ng HHP+ at PhilPEN 2025 — mula sa Chat Guide na sumasagot agad sa pintuan ng bahay, hanggang sa sertipikadong kakayahan.",
+      f1b:"6", f1s:"modyul ng HHP+ curriculum", f2b:"29", f2s:"pamantayan sa return demo",
+      f3b:"FIL / EN", f3s:"bilingual + Taglish", f4b:"₱0", f4s:"bawat tanong sa KB",
+      j1h:"Chat Guide at Knowledge Base", j1p:"Nagtatanong ang BHW sa Taglish; sumasagot ang app mula sa Knowledge Base na aprubado ng DOH. Kung walang sagot, naitatala ito para pagandahin.",
+      j2h:"Pagsasanay at Sertipikasyon", j2p:"Ang anim na modyul ng HHP+, may pagsusulit, digitized na return demonstration, at sertipikong may QR verification.",
+      startHint:"Pindutin ang Susunod para simulan ang walkthrough.",
+
+      /* ---- Q&A content (HHP+ / PhilPEN — procedural only) ---- */
+      q1:"Paano ang tamang pagsukat ng blood pressure sa home visit?",
+      a1:"Paupuin ang pasyente nang tahimik, may sandalan ang likod at nakalapat ang paa sa sahig, bago sukatin. Alalayan ang braso sa tapat ng puso. Piliin ang tamang sukat ng cuff para sa braso — masyadong maliit o malaki ay nagbibigay ng maling basa. Huwag mag-usap habang sinusukat. Ulitin ang pagsukat ayon sa PhilPEN community screening protocol, itala ang resulta, at sundin ang referral pathway sa NCD Flipchart kung umabot ang resulta sa threshold.",
+      q1r1:"Anong sukat ng cuff ang dapat gamitin?", q1r2:"Kailan uulitin ang pagsukat?", q1r3:"Kailan ako magre-refer sa RHU?",
+
+      q2typed:"pano mag cbg sa bhw, safe ba ang fingerstick?",
+      q2fix:"Paano ang ligtas na fingerstick para sa capillary blood glucose screening?",
+      a2:"Maghugas ng kamay at magsuot ng gloves. Piliin ang gilid ng dulo ng daliri, linisin ng alcohol, at hayaang matuyo nang lubusan bago tusukin. Bagong sterile lancet sa bawat pasyente — walang pinagsasaluhan kahit kailan. Kunin ang sapat na dugo, ilapat nang tama sa test strip, at diinan ang tinusok pagkatapos. Itapon agad ang lancet sa sharps container. Itala ang resulta at ihambing sa PhilPEN screening threshold para sa referral.",
+      q2r1:"Ano ang pagkakaiba ng fasting at random na CBG?", q2r2:"Saan itatapon ang ginamit na lancet?",
+
+      q3:"Kung tumanggi ang pasyente na magpa-screening, ano ang gagawin ko?",
+      a3:"Huwag makipagtalo. Tanungin muna kung bakit ayaw — madalas takot sa karayom, hiya, o maling akala tungkol sa resulta. Kilalanin ang nararamdaman niya, at ipaliwanag sa simpleng salita kung ano ang screening at kung ano ang hindi. Mag-alok na bumalik sa ibang araw. Itala ang pagtanggi para may follow-up sa susunod na bisita. Kailanman ay huwag pilitin ang pasyente.",
+
+      /* ---- scene heads ---- */
+      s1e:"Prototype · 1", s1h:"Sumasagot agad, sa wikang gamit ng BHW",
+      s1p:"Nag-type si Rosa, isang BHW sa Iloilo, ng tanong tungkol sa pagsukat ng BP. Sumagot ang Chat Guide mula sa Knowledge Base na aprubado ng DOH — may kaugnay na tanong at feedback.",
+      s2e:"Prototype · 2", s2h:"Mali ang baybay? Taglish? Kaya pa rin.",
+      s2p:"Rule-based na fuzzy matching, walang bayad na AI sa unang landas ng pagsagot. Nauunawaan pa rin ang maling baybay at halong wika.",
+      s3e:"Prototype · 3", s3h:"Walang sagot? Hindi ito nawawala.",
+      s3p:"Kapag walang tugma, magalang na sasabihin ng app — at tahimik na itatala ang tanong para sa admin. Walang tanong na nasasayang.",
+      s4e:"Prototype · 4 · Admin", s4h:"Nakikita ng admin ang bawat hindi nasagot",
+      s4p:"Ang tanong ni Rosa ay nasa tuktok ng gap triage queue, may bilang kung ilang beses tinanong. Isang click para gawing bagong KB entry.",
+      s5e:"Prototype · 5 · Admin", s5h:"Sagutin nang minsanan, para sa lahat",
+      s5p:"Naka-pre-fill na ang form mula sa hindi nasagot na tanong. May may-ari at petsa ng review bawat entry — dadaan pa rin sa clinical review at pag-apruba ng DOH bago mailathala.",
+      s6e:"Prototype · 6", s6h:"Sarado ang loop — nasagot na",
+      s6p:"Muling itinanong ni Rosa. Ngayon may sagot na — dahil natuto ang sistema mula sa totoong tanong sa totoong bisita.",
+      s7e:"Prototype · 7 · Pagsasanay", s7h:"Ang anim na modyul ng HHP+, nasa telepono",
+      s7p:"Ang mismong curriculum ng APW — natututo ang BHW online sa video, teksto at pagsusulit, bago ang in-person skills demonstration.",
+      s8e:"Prototype · 8 · Pagsasanay", s8h:"Maikling pagsusulit kada modyul",
+      s8p:"Nakatakda ang passing score at bilang ng retake kada course. Kapag kumpleto na ang lahat ng modyul, awtomatikong pumipila ang skills demonstration.",
+      s9e:"Prototype · 9 · Assessor", s9h:"Ang return demonstration checklist, digitized",
+      s9p:"Ang mismong 29-criteria na CBG checklist ng DOH — kaparehong 0–3 rating at 87-puntos na pamantayan — awtomatikong kinukwenta habang ginagrado ng assessor.",
+      s10e:"Prototype · 10 · Sertipiko", s10h:"Sertipiko na may QR verification",
+      s10p:"Pagkatapos ng skills demonstration, awtomatikong nabubuo ang sertipiko — nada-download, ma-ve-verify ng kahit sino sa QR, at nakatala sa national registry.",
+      s11e:"Prototype · 11 · Dashboard", s11h:"Nakikita ng CHD at LGU kung sino ang kwalipikado",
+      s11p:"Bawat antas ng hierarchy — barangay hanggang pambansa — ay may sariling roll-up: sino ang sanay, sino ang sertipikado, at saan may kulang.",
+      s12e:"Prototype · 12 · Katalogo", s12h:"Ang HHP+ ay unang modyul, hindi ang hangganan",
+      s12p:"Generic ang course at certification engine. Ang pagdagdag ng bagong programa ay pag-akda ng nilalaman at pag-apruba ng DOH — hindi muling pagbuo ng sistema.",
+
+      /* ---- admin ---- */
+      adWho:"Admin · CHD Western Visayas", tabActivity:"Activity", tabChat:"Chat Guide",
+      tabReports:"Reports", tabTraining:"Training", range30:"Huling 30 araw",
+      gapHeading:"Gap triage queue", colQ:"Tanong", colAsked:"Beses tinanong", colReason:"Dahilan", colAct:"Aksyon",
+      noans:"Walang sagot", badans:"Mahinang sagot", createKb:"Gumawa ng KB entry", dismiss:"Alisin",
+      topHeading:"Pinakamadalas itanong", matches:"tugma",
+      kActivation:"Activation", kWau:"Weekly active", kDefl:"Deflection rate", kCsat:"Answer CSAT",
+      gq2:"Ilang beses uulitin ang BP kung mataas ang unang basa?",
+      gq3:"Anong dapat ilagay sa screening register?",
+      tq1:"Paano ang tamang pagsukat ng blood pressure?",
+      tq2:"Anong sukat ng cuff ang tama?",
+      tq3:"Kailan i-refer ang mataas na resulta?",
+
+      /* ---- KB form ---- */
+      kbHeading:"Bagong Q&A entry", prefillBanner:"Ginagawa ang entry na ito mula sa hindi nasagot na tanong:",
+      fCat:"Kategorya", fQfil:"Tanong (Filipino)", fQen:"Tanong (English)",
+      fAfil:"Sagot (Filipino)", fAen:"Sagot (English)", fKw:"Mga keyword",
+      fOwner:"May-ari", fReview:"Review due", catNCD:"Community NCD Screening · HHP+",
+      ownerName:"Nurse Elena Reyes, RN", saveDraft:"I-save ang draft", publish:"I-publish para sa DOH approval",
+      kwVal:"screening, pagtanggi, refusal, motivational interviewing, referral",
+
+      /* ---- training ---- */
+      courseTitle:"Community-Based NCD Screening para sa mga BHW",
+      courseSub:"HHP+ · PhilPEN 2025 · 6 na modyul", progress:"4 / 6 modyul",
+      modDone:"Tapos na", modNow:"Kasalukuyan", modTodo:"Nakatakda",
+      m14b:"Modyul 1–4", m14s:"HHP+ at PhilPEN · NCD Flipchart · BP · CBG",
+      m5b:"Modyul 5", m5s:"Pagpapaliwanag ng resulta at pag-activate ng referral",
+      m6b:"Modyul 6", m6s:"Dokumentasyon, pag-uulat at cascade",
+      quizTitle:"Modyul 5 · Pagsusulit", quizTag:"Passing 80% · 2 retake",
+      quizQ:"Lumampas sa referral threshold ang resulta ng screening ng isang pasyente, pero sinabi niyang maayos naman ang pakiramdam niya at ayaw niyang pumunta sa health center. Ano ang una mong gagawin?",
+      qo1:"Igiit na pumunta siya agad", qo2:"Tanungin kung bakit siya ayaw, at makinig",
+      qo3:"Sabihin na malamang mali ang resulta", qo4:"Itala na lang at huwag nang magsalita",
+      quizPass:"✓ Tama! Unawain muna ang dahilan ng pagtanggi — ito ang motivational interviewing ng Modyul 5. Saka ipaliwanag ang resulta sa simpleng salita at magkasundo sa susunod na hakbang.",
+      handoffB:"Kumpleto na ang online modules", handoffP:"Susunod: in-person skills demonstration — capillary blood glucose monitoring.",
+      goDemo:"Iproseso ang skills demo",
+
+      /* ---- assessor ---- */
+      assessTitle:"Return Demonstration Assessment Checklist",
+      assessSub:"Kakayahan: Capillary Blood Glucose (CBG) Monitoring",
+      assessWho:"Rosa D. Mendoza · BHW · Barangay Balabag, Pavia, Iloilo",
+      assessBy:"Assessor: Nurse Elena Reyes, RN · 3 Ago 2026",
+      scale3:"Tama, walang tulong", scale2:"Tama, kaunting tulong",
+      scale1:"May tulong / may mali", scale0:"Hindi ginawa",
+      secI:"I. Paghahanda", secII:"II. Mismong Pamamaraan", secIII:"III. Pagkatapos ng Pamamaraan",
+      secIV:"IV. Infection Control at Kaligtasan", secV:"V. Dokumentasyon at Komunikasyon",
+      p1:"Nagsagawa ng hand hygiene at nagsuot ng gloves",
+      p2:"Pumili ng tamang tusukan (gilid ng dulo ng daliri)",
+      p3:"Nilinis ng alcohol at hinayaang matuyo",
+      p4:"Tamang paggamit ng lancet",
+      p5:"Nakakuha ng sapat na dugo",
+      p6:"Tamang paglapat ng dugo sa test strip",
+      p7:"Tamang pagpapatakbo ng glucometer",
+      p8:"Dinaganan ang tinusok pagkatapos",
+      crit:"pamantayan", pts:"puntos",
+      sumCrit:"Bilang ng pamantayan", sumMax:"Pinakamataas", sumGot:"Nakuha", sumPct:"Porsyento",
+      competent:"Kwalipikado", certifyBtn:"Sertipikahin ang BHW",
+      thr:"Pamantayan: 90–100% kwalipikado · 75–89% kailangan pang pagbutihin · Below 75% hindi kwalipikado",
+
+      /* ---- certificate ---- */
+      certK:"Sertipiko ng Kakayahan", certFor:"Ipinagkakaloob kay",
+      certTitle:"Community-Based NCD Screening para sa mga BHW",
+      certDesc:"sa matagumpay na pagkumpleto ng anim na modyul ng HHP+ community screening curriculum, at sa pagpapakita ng kakayahan sa capillary blood glucose monitoring — 93% laban sa pamantayan ng DOH return demonstration.",
+      certSig:"Assessor", certSigName:"Nurse Elena Reyes, RN", certVerify:"I-scan para ma-verify",
+      certId:"Cert ID: HHP-R6-2026-0417",
+
+      /* ---- dashboard ---- */
+      tdCompletion:"Completion rate", tdCerts:"Sertipikong naibigay",
+      tdActive:"BHW sa pagsasanay", tdAvg:"Katamt. araw hanggang sertipiko",
+      tdByBrgy:"Completion kada barangay",
+      tdNote:"Bahagi ng roll-up dashboard — makikita ng bawat antas ng hierarchy ang sarili nitong saklaw.",
+
+      /* ---- catalogue ---- */
+      /* ---- notices ---- */
+      protoNote:"Prototype ng disenyo. Ipinapakita nito ang disenyo ng Phase 2 — hindi ito naka-deploy na sistema. Ang nilalamang pangkalusugan ay halimbawa lamang at kailangan pa ng clinical validation at pag-apruba ng DOH bago gamitin ng kahit sinong BHW.",
+      tagDone:"Naihatid · Phase 1", tagDesign:"Disenyo · Phase 2"
+    },
+
+    en: {
+      appName:"BHW Connect", chatTitle:"Chat Guide",
+      chatIntro:"Ask a community screening question in English, Filipino, or Taglish.",
+      inputLabel:"Your question", inputPh:"Type your question here…", send:"Send",
+      related:"Related questions", didYouMean:"Did you mean…?",
+      feedbackPrompt:"Was this helpful?",
+      firstAnswer:"🎉 Great! You got your first answer from the Chat Guide.",
+      noAnswer:"I don't have an answer for that yet. I've noted your question so our team can add it to the Chat Guide.",
+      loggedNote:"Logged for admin review — it shows up in the gap queue.",
+      gapClosed:"🎉 Answered! The admin added the answer — that's the full loop in one minute.",
+
+      i_kicker:"Phase 2 design prototype",
+      i_title_a:"The right answer is", i_title_em:"one question away",
+      i_sub:"How BHW Connect supports Barangay Health Workers running community-based NCD screening under HHP+ and PhilPEN 2025 — from a Chat Guide that answers at the doorstep, to certified competency.",
+      f1b:"6", f1s:"HHP+ curriculum modules", f2b:"29", f2s:"return-demo criteria",
+      f3b:"FIL / EN", f3s:"bilingual + Taglish", f4b:"₱0", f4s:"per Knowledge Base answer",
+      j1h:"Chat Guide & Knowledge Base", j1p:"A BHW asks in Taglish; the app answers from a DOH-approved Knowledge Base. No match? The question is logged so the content improves.",
+      j2h:"Training & Certification", j2p:"The six HHP+ modules, with quizzes, a digitized return demonstration, and a QR-verified certificate.",
+      startHint:"Press Next to start the walkthrough.",
+
+      q1:"What's the correct way to measure blood pressure during a home visit?",
+      a1:"Seat the patient quietly with their back supported and feet flat on the floor before measuring. Support the arm at heart level. Select the correct cuff size for the arm — too small or too large gives a false reading. No talking during measurement. Repeat the measurement per the PhilPEN community screening protocol, record the result, and follow the NCD Flipchart referral pathway if the reading meets the threshold.",
+      q1r1:"Which cuff size should I use?", q1r2:"When do I repeat the measurement?", q1r3:"When do I refer to the RHU?",
+
+      q2typed:"pano mag cbg sa bhw, safe ba ang fingerstick?",
+      q2fix:"How is a safe fingerstick done for capillary blood glucose screening?",
+      a2:"Perform hand hygiene and don gloves. Select the side of the fingertip, clean it with alcohol, and let it dry completely before pricking. Use a new sterile lancet for every patient — never shared, ever. Obtain an adequate blood sample, apply it to the test strip correctly, and apply pressure to the puncture site afterwards. Dispose of the lancet in a sharps container immediately. Record the reading and compare it against the PhilPEN screening threshold for referral.",
+      q2r1:"What's the difference between fasting and random CBG?", q2r2:"Where do I dispose of a used lancet?",
+
+      q3:"What should I do if a patient refuses screening?",
+      a3:"Don't argue. Ask first why they're refusing — it's usually fear of the needle, embarrassment, or a misconception about what the result means. Acknowledge what they're feeling, and explain in plain language what the screening is and what it isn't. Offer to come back another day. Record the refusal so it's followed up on the next visit. Never pressure the patient.",
+
+      s1e:"Prototype · 1", s1h:"Answers on the spot, in the BHW's own words",
+      s1p:"Rosa, a BHW in Iloilo, types a question about BP measurement. The Chat Guide answers from the DOH-approved Knowledge Base — with related questions and feedback.",
+      s2e:"Prototype · 2", s2h:"Misspelled? Taglish? Still understood.",
+      s2p:"Rule-based fuzzy matching, with no paid AI in the first answer path. Typos and mixed language are still recognized.",
+      s3e:"Prototype · 3", s3h:"No answer? Nothing is lost.",
+      s3p:"When there's no match, the app says so gracefully — and quietly logs the question for the admin. No question is wasted.",
+      s4e:"Prototype · 4 · Admin", s4h:"The admin sees every unanswered question",
+      s4p:"Rosa's question sits at the top of the gap triage queue, with a count of how many BHWs asked it. One click turns it into a new Knowledge Base entry.",
+      s5e:"Prototype · 5 · Admin", s5h:"Answer it once, for everyone",
+      s5p:"The form is pre-filled from the unanswered question. Every entry carries an owner and a review-due date — and still routes through clinical review and DOH approval before it publishes.",
+      s6e:"Prototype · 6", s6h:"The loop closes — now it's answered",
+      s6p:"Rosa asks again. Now there's an answer — because the system learned from a real question asked on a real visit.",
+      s7e:"Prototype · 7 · Training", s7h:"The six HHP+ modules, on the phone",
+      s7p:"The APW's own curriculum — the BHW learns online through video, text and quizzes, before the in-person skills demonstration.",
+      s8e:"Prototype · 8 · Training", s8h:"A short quiz per module",
+      s8p:"Passing score and retake limits are set per course. Once every module is complete, the skills demonstration queues automatically.",
+      s9e:"Prototype · 9 · Assessor", s9h:"The return demonstration checklist, digitized",
+      s9p:"The DOH's own 29-criterion CBG checklist — the same 0–3 rating and 87-point standard — scored automatically as the assessor grades.",
+      s10e:"Prototype · 10 · Certificate", s10h:"A certificate with QR verification",
+      s10p:"After the skills demonstration the certificate generates automatically — downloadable, verifiable by anyone via QR, and written to the national registry.",
+      s11e:"Prototype · 11 · Dashboard", s11h:"CHD and LGUs can see who is competent",
+      s11p:"Every level of the hierarchy — barangay to national — gets its own roll-up: who is trained, who is certified, and where the gaps are.",
+      s12e:"Prototype · 12 · Catalogue", s12h:"HHP+ is module one, not the boundary",
+      s12p:"The course and certification engine is generic. Adding a new programme is content authoring and DOH approval — not rebuilding the system.",
+
+      adWho:"Admin · CHD Western Visayas", tabActivity:"Activity", tabChat:"Chat Guide",
+      tabReports:"Reports", tabTraining:"Training", range30:"Last 30 days",
+      gapHeading:"Gap triage queue", colQ:"Question", colAsked:"Times asked", colReason:"Reason", colAct:"Actions",
+      noans:"No answer", badans:"Bad answer", createKb:"Create KB entry from this", dismiss:"Dismiss",
+      topHeading:"Top-asked topics", matches:"matches",
+      kActivation:"Activation", kWau:"Weekly active", kDefl:"Deflection rate", kCsat:"Answer CSAT",
+      gq2:"How many times should BP be repeated if the first reading is high?",
+      gq3:"What goes in the screening register?",
+      tq1:"What's the correct way to measure blood pressure?",
+      tq2:"Which cuff size is correct?",
+      tq3:"When do I refer a high result?",
+
+      kbHeading:"New Q&A entry", prefillBanner:"Creating this entry from an unanswered question:",
+      fCat:"Category", fQfil:"Question (Filipino)", fQen:"Question (English)",
+      fAfil:"Answer (Filipino)", fAen:"Answer (English)", fKw:"Keywords",
+      fOwner:"Owner", fReview:"Review due", catNCD:"Community NCD Screening · HHP+",
+      ownerName:"Nurse Elena Reyes, RN", saveDraft:"Save draft", publish:"Submit for DOH approval",
+      kwVal:"screening, refusal, pagtanggi, motivational interviewing, referral",
+
+      courseTitle:"Community-Based NCD Screening for BHWs",
+      courseSub:"HHP+ · PhilPEN 2025 · 6 modules", progress:"4 / 6 modules",
+      modDone:"Done", modNow:"In progress", modTodo:"Locked",
+      m14b:"Modules 1–4", m14s:"HHP+ & PhilPEN · NCD Flipchart · BP · CBG",
+      m5b:"Module 5", m5s:"Communicating results and activating referral",
+      m6b:"Module 6", m6s:"Documentation, reporting and cascade",
+      quizTitle:"Module 5 · Quiz", quizTag:"Passing 80% · 2 retakes",
+      quizQ:"A patient's screening result is above the referral threshold, but she says she feels fine and doesn't want to go to the health center. What do you do first?",
+      qo1:"Insist that she goes immediately", qo2:"Ask why she doesn't want to go, and listen",
+      qo3:"Tell her the result is probably wrong", qo4:"Just record it and say nothing",
+      quizPass:"✓ Correct. Start by understanding the resistance — that's Module 5's motivational interviewing approach. Then explain the result in plain language and agree a concrete next step.",
+      handoffB:"Online modules complete", handoffP:"Next: an in-person skills demonstration — capillary blood glucose monitoring.",
+      goDemo:"Proceed to skills demo",
+
+      assessTitle:"Return Demonstration Assessment Checklist",
+      assessSub:"Skill: Capillary Blood Glucose (CBG) Monitoring",
+      assessWho:"Rosa D. Mendoza · BHW · Barangay Balabag, Pavia, Iloilo",
+      assessBy:"Assessor: Nurse Elena Reyes, RN · 3 Aug 2026",
+      scale3:"Correct, no assistance", scale2:"Correct, minimal assistance",
+      scale1:"Significant assistance / errors", scale0:"Not performed",
+      secI:"I. Preparation Phase", secII:"II. Procedure Proper", secIII:"III. Post-Procedure Care",
+      secIV:"IV. Infection Control & Safety", secV:"V. Documentation & Communication",
+      p1:"Performs hand hygiene and dons gloves",
+      p2:"Selects appropriate puncture site (side of fingertip)",
+      p3:"Cleans site with alcohol and allows to dry",
+      p4:"Uses lancet correctly",
+      p5:"Obtains adequate blood sample",
+      p6:"Applies blood to test strip properly",
+      p7:"Operates glucometer correctly",
+      p8:"Applies pressure to puncture site after",
+      crit:"criteria", pts:"pts",
+      sumCrit:"Total criteria", sumMax:"Maximum score", sumGot:"Score obtained", sumPct:"Percentage",
+      competent:"Competent", certifyBtn:"Certify BHW",
+      thr:"Standard: 90–100% competent · 75–89% needs improvement · below 75% not competent",
+
+      certK:"Certificate of Competency", certFor:"Awarded to",
+      certTitle:"Community-Based NCD Screening for BHWs",
+      certDesc:"for successfully completing the six-module HHP+ community screening curriculum, and demonstrating competency in capillary blood glucose monitoring — assessed at 93% against the DOH return-demonstration standard.",
+      certSig:"Assessor", certSigName:"Nurse Elena Reyes, RN", certVerify:"Scan to verify",
+      certId:"Cert ID: HHP-R6-2026-0417",
+
+      tdCompletion:"Completion rate", tdCerts:"Certificates issued",
+      tdActive:"BHWs in training", tdAvg:"Avg days to certify",
+      tdByBrgy:"Completion by barangay",
+      tdNote:"Part of the roll-up dashboard — every level of the hierarchy sees its own scope.",
+      protoNote:"Design prototype. It illustrates the Phase 2 design — it is not a deployed system. Health content shown is illustrative and requires clinical validation and DOH approval before any BHW-facing use.",
+      tagDone:"Delivered · Phase 1", tagDesign:"Designed · Phase 2"
+    }
+  };
+
+  var state = { locale:"fil", theme:"light" };
+  function t(k){ return (I[state.locale] && I[state.locale][k]) || I.en[k] || k; }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+
+  /* ================= shared fragments =================
+     Deck chrome (eyebrow, headline, callouts, notes) is ALWAYS English. Only the app UI
+     inside the device frame follows the Wika toggle — the toggle demonstrates a product
+     feature; it should not make the narration unreadable to a non-Filipino reviewer. */
+  function demo2(o){
+    return '<div class="demo2"><div class="col-l">'
+      + '<div class="eyebrow"><span class="num"></span> '+o.eye+'</div>'
+      + '<h2>'+o.h+' <span class="ptag">Mockup · Phase 2 design</span></h2>'
+      + '<p class="sub">'+o.p+'</p>'
+      + '<ul class="callouts">'
+      + o.c.map(function(x,i){ return '<li><i>'+(i+1)+'</i><span>'+x+'</span></li>'; }).join('')
+      + '</ul>'
+      + (o.note ? '<p class="demo-note">'+o.note+'</p>' : '')
+      + '</div><div class="col-r">'+o.dev+'</div></div>';
+  }
+  var SAMPLE = 'Health content shown is illustrative and requires DOH clinical validation and approval before any BHW-facing use.';
+
+  function phoneHdr(){
+    return '<div class="hdr"><span class="wordmark">'+t("appName")+'</span>'
+      + '<span class="mini">Wika <span class="pill"><span class="'+(state.locale==="fil"?"on":"")+'">FIL</span>'
+      + '<span class="'+(state.locale==="en"?"on":"")+'">EN</span></span></span></div>';
+  }
+  function composer(){
+    return '<div class="composer"><label>'+t("inputLabel")+'</label><div class="row">'
+      + '<div class="fake">'+esc(t("inputPh"))+'</div><div class="snd">'+t("send")+'</div></div></div>';
+  }
+  function phone(body,withComposer){
+    return '<div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">'
+      + phoneHdr() + body + (withComposer===false?'':composer()) + '</div></div></div>';
+  }
+  function laptop(activeTab,inner,footer,tall){
+    function tab(k,id){ return '<a class="'+(activeTab===id?"on":"")+'">'+t(k)+'</a>'; }
+    return '<div class="dev-laptop'+(tall?' tall':'')+'"><div class="lid"><div class="glass"><div class="app-scope">'
+      + '<div class="hdr"><span class="wordmark">'+t("appName")+' · Admin</span><span class="who">'+t("adWho")+'</span></div>'
+      + '<div class="tabs">'+tab("tabActivity","a")+tab("tabChat","c")+tab("tabReports","r")+tab("tabTraining","t")+'</div>'
+      + '<div class="body pad">'+inner+'</div>'
+      + (footer ? '<div class="foot">'+footer+'</div>' : '')
+      + '</div></div></div><div class="base"></div></div>';
+  }
+  function fb(){ return '<div class="fb"><span>'+t("feedbackPrompt")+'</span><span class="b">👍</span><span class="b">👎</span></div>'; }
+  function kpi(l,v){ return '<div class="kpi"><span class="l">'+l+'</span><span class="v">'+v+'</span></div>'; }
+
+  function qrSvg(){
+    var n=21, cells="", seed=0x9e3779b9;
+    function rnd(i){ var x=Math.sin(i*12.9898+seed)*43758.5453; return x-Math.floor(x); }
+    function finder(x,y){
+      var a=(x<7&&y<7), b=(x>=n-7&&y<7), c=(x<7&&y>=n-7);
+      if(!(a||b||c)) return -1;
+      var lx=a?x:(b?x-(n-7):x), ly=(a||b)?y:y-(n-7);
+      return ((lx===0||lx===6||ly===0||ly===6)||(lx>=2&&lx<=4&&ly>=2&&ly<=4))?1:0;
+    }
+    for(var y=0;y<n;y++){ for(var x=0;x<n;x++){
+      var f=finder(x,y), on = f>=0 ? f : (rnd(y*n+x)>0.5?1:0);
+      if(on) cells += '<rect x="'+x+'" y="'+y+'" width="1" height="1"/>';
+    }}
+    return '<svg viewBox="0 0 21 21" width="56" height="56" shape-rendering="crispEdges" aria-hidden="true"><g fill="#0c0c0d">'+cells+'</g></svg>';
+  }
+
+  /* ================= scenes ================= */
+  var SCENES = {
+    /* 12+13 merged: one screen carries both the plain question and the typo/Taglish one */
+    chat: function(){
+      var log = '<div class="log">'
+        + '<div class="bub u">'+esc(t("q1"))+'</div>'
+        + '<div class="bub b">'+esc(t("a1"))+'</div>' + fb()
+        + '<div class="bub u">'+esc(t("q2typed"))+'</div>'
+        + '<div class="dym"><div class="h">'+t("didYouMean")+'</div><div class="relq">'+esc(t("q2fix"))+'</div></div>'
+        + '<div class="bub b">'+esc(t("a2"))+'</div>'
+        + '</div>';
+      return demo2({
+        eye:'Chat Guide',
+        h:'She asks in her own words, mid-visit.',
+        p:'A BHW in Iloilo, at a household, with a question the training did not cover. The answer comes from DOH-approved content, on the phone in her hand.',
+        c:['Asked in Taglish, misspelled — <b>“pano mag cbg sa bhw, safe ba ang fingerstick?”</b>',
+           'Rule-based matching resolves it to the canonical question. <b>No paid AI in the answer path.</b>',
+           'The answer is procedure, drawn from the same PhilPEN protocol the training teaches.'],
+        note: SAMPLE,
+        dev: phone('<div class="body">'+log+'</div>')
+      });
+    },
+
+    /* 14+15+16 merged into one visible loop */
+    loop: function(){
+      var rows = [
+        [t("q3"), 14, "no", true],
+        [t("gq2"), 9, "no", false],
+        [t("gq3"), 6, "bad", false]
+      ].map(function(r){
+        return '<tr class="'+(r[3]?"hot":"")+'"><td>'+esc(r[0])+'</td><td class="n">'+r[1]+'</td>'
+          + '<td><span class="bdg '+r[2]+'">'+t(r[2]==="no"?"noans":"badans")+'</span></td>'
+          + '<td><span class="btn p">'+t("createKb")+'</span></td></tr>';
+      }).join("");
+      var inner = '<h3 class="sec">'+t("gapHeading")+'</h3><div class="tw"><table class="g"><thead><tr>'
+        + '<th>'+t("colQ")+'</th><th>'+t("colAsked")+'</th><th>'+t("colReason")+'</th><th>'+t("colAct")+'</th>'
+        + '</tr></thead><tbody>'+rows+'</tbody></table></div>'
+        + '<h3 class="sec">'+t("kbHeading")+'</h3><div class="form">'
+        + '<div class="prefill">'+t("prefillBanner")+' <b>&ldquo;'+esc(t("q3"))+'&rdquo;</b></div>'
+        + '<div class="f2">'
+          + '<div class="fld"><label>'+t("fOwner")+'</label><div class="in">'+t("ownerName")+'</div></div>'
+          + '<div class="fld"><label>'+t("fReview")+'</label><div class="in">2027-08-03</div></div>'
+        + '</div>'
+        + '<div class="acts"><span class="btn p big">'+t("publish")+'</span></div></div>';
+      return demo2({
+        eye:'The loop, closed',
+        h:'A question nobody could answer becomes approved content.',
+        p:'Every unmatched question is logged, themed and counted — so the content grows from what the field actually asks, not from what someone guessed it would ask.',
+        c:['<b>14 BHWs</b> asked what to do when a patient refuses screening. Nobody had written an answer.',
+           'One click turns the gap into a draft, with a named owner and a review-due date.',
+           'It publishes only after <b>Content Review Panel clearance and DOH approval</b> — never automatically.'],
+        note: 'Whether an AI may ever answer a BHW directly is a DOH governance decision, not a technical default; Year 1 ships the conservative path shown here. ' + SAMPLE,
+        dev: laptop("c", inner, null, true)
+      });
+    },
+
+    /* 18+19 merged */
+    modules: function(){
+      var mods = [["m14b","m14s","done","✓"],["m5b","m5s","now","5"],["m6b","m6s","todo","–"]];
+      var fmt = { done:"✓ "+t("modDone"), now:"▶ "+t("modNow"), todo:"🔒 "+t("modTodo") };
+      var list = mods.map(function(m){
+        return '<div class="mod"><div class="k '+m[2]+'">'+m[3]+'</div>'
+          + '<div class="t"><b>'+esc(t(m[0]))+'</b><span>'+esc(t(m[1]))+'</span></div>'
+          + '<div class="fmt">'+fmt[m[2]]+'</div></div>';
+      }).join("");
+      var hero = '<div class="chero"><div class="ring" style="--p:67"><b>4/6</b></div>'
+        + '<div><h4>'+t("courseTitle")+'</h4><p>'+t("courseSub")+' · '+t("progress")+'</p></div></div>';
+      var quiz = '<div class="quiz" style="margin-top:12px"><div class="q">'+esc(t("quizQ"))+'</div>'
+        + '<div class="opt"><span class="k"></span><span>'+esc(t("qo1"))+'</span></div>'
+        + '<div class="opt ok"><span class="k"></span><span>'+esc(t("qo2"))+'</span></div>'
+        + '<div class="verdict">'+t("quizPass")+'</div></div>';
+      return demo2({
+        eye:'Training',
+        h:'The six HHP+ modules, on a BHW’s phone.',
+        p:'Not a parallel curriculum. The APW’s own six modules, authored as approved content and delivered directly to every BHW rather than cascaded through a representative.',
+        c:['Module for module, <b>the same curriculum the training package defines</b>.',
+           'Each BHW completes it individually — the passing score and retake limit are DOH policy settings.',
+           'Completing every module queues an in-person skills demonstration automatically.'],
+        note: 'Quiz item and pass mark are illustrative; both are DOH assessment-policy decisions. ' + SAMPLE,
+        dev: phone('<div class="body">'+hero+'<div class="mods">'+list+'</div>'+quiz+'</div>', false)
+      });
+    },
+
+    /* 20 — unanimously the strongest slide; composition only */
+    checklist: function(){
+      function row(k,score){
+        var marks = [0,1,2,3].map(function(v){
+          var on = v===score ? ' on'+(score<3?' part':'') : '';
+          return '<i class="'+on.trim()+'">'+v+'</i>';
+        }).join("");
+        return '<div class="rd-row"><span>'+esc(t(k))+'</span><span class="rd-scores">'+marks+'</span></div>';
+      }
+      function fold(k,n,sub,max){
+        return '<div class="rd-fold"><b>'+t(k)+'</b><span>'+n+' '+t("crit")+' · '+sub+' / '+max+' '+t("pts")+'</span></div>';
+      }
+      var secII = [["p1",3],["p2",3],["p3",3],["p4",2],["p5",3],["p6",3],["p7",3],["p8",3]];
+      var inner = '<div class="rd-head"><div>'
+          + '<h3 class="sec" style="margin:0">'+t("assessTitle")+'</h3>'
+          + '<div style="font-size:11px;color:var(--a-ink-70);margin-top:3px">'+t("assessSub")+'</div>'
+          + '<div style="font-size:10.5px;color:var(--a-ink-70);margin-top:3px">'+t("assessWho")+'</div>'
+        + '</div><div class="rd-scale">'
+          + '<span><b>3</b> '+t("scale3")+'</span><span><b>2</b> '+t("scale2")+'</span>'
+          + '<span><b>1</b> '+t("scale1")+'</span><span><b>0</b> '+t("scale0")+'</span>'
+        + '</div></div>'
+        + fold("secI",8,24,24)
+        + '<div class="rd-sec">'+t("secII")+'<span class="sub">23 / 24 '+t("pts")+'</span></div>'
+        + secII.map(function(r){ return row(r[0],r[1]); }).join("")
+        + '<div style="margin-top:8px">'
+          + fold("secIII",5,15,15) + fold("secIV",4,10,12) + fold("secV",4,9,12)
+        + '</div>';
+      var footer = '<div class="rd-sum"><div class="nums">'
+          + '<span><b>29</b>'+t("sumCrit")+'</span><span><b>87</b>'+t("sumMax")+'</span>'
+          + '<span><b>81</b>'+t("sumGot")+'</span><span><b>93%</b>'+t("sumPct")+'</span>'
+        + '</div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">'
+          + '<span class="rd-verdict">'+t("competent")+'</span>'
+          + '<span class="btn p big">'+t("certifyBtn")+'</span>'
+        + '</div></div>'
+        + '<p style="font-size:10px;color:var(--a-ink-70);margin-top:8px;line-height:1.4">'+t("thr")+'</p>';
+      return demo2({
+        eye:'Assessor',
+        h:'Your own return-demonstration checklist, scored automatically.',
+        p:'The DOH instrument for capillary blood glucose monitoring, digitized exactly as written — same criteria, same rating scale, same competency bands.',
+        c:['<b>29 criteria, 87-point maximum</b> — reproduced from the DOH instrument, not reinvented.',
+           'Scored live as the assessor grades, against the same 90% / 75% bands.',
+           'The result is a record, not a form in a filing cabinet — queryable at every level of the hierarchy.'],
+        dev: laptop("t", inner, footer, true)
+      });
+    },
+
+    /* 21+22 merged: the credential and the roll-up it feeds */
+    certify: function(){
+      var c = '<div class="cert"><div class="band"></div><div class="in">'
+        + '<div class="seal">🏅</div><div class="k">'+t("certK")+'</div>'
+        + '<h3>'+t("certTitle")+'</h3>'
+        + '<div style="font-size:10.5px;color:var(--a-ink-70);margin-top:6px">'+t("certFor")+'</div>'
+        + '<div class="nm">Rosa D. Mendoza</div>'
+        + '<p class="ds">'+t("certDesc")+'</p>'
+        + '<div class="ft"><div class="sig"><b>'+t("certSigName")+'</b>'+t("certSig")+' · 3 Aug 2026</div>'
+        + '<div><div class="qr">'+qrSvg()+'</div><div class="vfy">'+t("certVerify")+'</div></div></div>'
+        + '<div class="cid">'+t("certId")+'</div></div></div>';
+      var roll = '<div class="kpis" style="grid-template-columns:1fr 1fr;margin-top:.6rem">'
+        + kpi('Certified · Pavia','38') + kpi('In training','57')
+        + kpi('Completion','64%') + kpi('Avg days to certify','19') + '</div>';
+      return demo2({
+        eye:'Certificate & roll-up',
+        h:'Competency becomes a record DOH can query.',
+        p:'A passing demonstration issues a QR-verified certificate automatically — and writes that competency into the national registry, where every tier can see it.',
+        c:['Publicly verifiable without a login, so an LGU can check a credential in seconds.',
+           'Written to the Phase 1 profile — the answer to <b>“which BHWs here are certified?”</b>',
+           'Rolls up barangay → municipality → province → region → national.'],
+        note: 'Recognition of the credential under RA 7883 and DOH issuance is a policy step we propose taking with WHO in Year 1. ' + SAMPLE,
+        dev: phone('<div class="body" style="display:grid;place-items:center">'+c+'</div>', false)
+          + '<div style="width:100%;max-width:330px">'+roll+'</div>'
+      });
+    }
+  };
+
+  /* ================= deck ================= */
+  var slides   = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var demoEls  = slides.filter(function(s){ return s.classList.contains('demo'); });
+  var total    = slides.length;
+  var cur      = 0;
+  var curEl    = document.getElementById('cur');
+  var totEl    = document.getElementById('tot');
+  var prevBtn  = document.getElementById('prev');
+  var nextBtn  = document.getElementById('next');
+  var barWrap  = document.getElementById('actbar');
+  var ctl      = document.getElementById('democtl');
+
+  function pad(n){ return n<10 ? '0'+n : ''+n; }
+
+  function renderDemo(){
+    demoEls.forEach(function(s){
+      var fn = SCENES[s.getAttribute('data-scene')];
+      if(fn) s.querySelector('.slide__inner').innerHTML = fn();
+    });
+  }
+
+  /* Chapter bar, not a dot per slide: 20+ dots communicate no position, cannot be hit
+     at 8px, and wrap unpredictably. Segments double as the narrative spine. */
+  var acts = [];
+  slides.forEach(function(s,i){
+    var a = s.getAttribute('data-act');
+    if(!a) return;
+    if(!acts.length || acts[acts.length-1].name !== a) acts.push({name:a, first:i});
+  });
+  var segs = acts.map(function(a){
+    var b = document.createElement('button');
+    b.className = 'seg2';
+    b.setAttribute('role','tab');
+    b.setAttribute('aria-label', a.name);
+    b.innerHTML = '<span class="bar"></span><span class="lb">'+a.name+'</span>';
+    b.addEventListener('click', function(){ go(a.first); });
+    barWrap.appendChild(b);
+    return b;
+  });
+  function markAct(i){
+    var a = slides[i].getAttribute('data-act');
+    segs.forEach(function(b,k){ b.classList.toggle('on', acts[k].name === a); });
+  }
+
+  /* Fit each slide's content to the viewport — scales DOWN for device mockups on
+     small screens and UP on large projectors. */
+  function fit(s){
+    if(!s) return;
+    var inner = s.querySelector('.slide__inner');
+    if(!inner) return;
+    inner.style.transform = 'none';
+    /* Below these breakpoints the stylesheet switches slides to scroll mode.
+       Scaling there fights the scroll and shrinks text to nothing — leave it alone. */
+    if(window.innerWidth <= 760 ||
+       (window.innerHeight <= 600 && window.innerWidth > window.innerHeight)) return;
+    var cs = getComputedStyle(s);
+    var availW = s.clientWidth  - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    var availH = s.clientHeight - parseFloat(cs.paddingTop)  - parseFloat(cs.paddingBottom);
+    var cw = inner.scrollWidth, ch = inner.scrollHeight;
+    if(!cw || !ch || availW<=0 || availH<=0) return;
+    var scale = Math.min(availW/cw, availH/ch);
+    if(scale < 0.42) scale = 0.42;
+    if(scale > 2.6)  scale = 2.6;
+    if(Math.abs(scale-1) > 0.004) inner.style.transform = 'scale('+scale+')';
+  }
+  function fitAll(){ for(var i=0;i<slides.length;i++) fit(slides[i]); }
+  var rafId = null;
+  function scheduleFit(){
+    if(rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(fitAll);
+  }
+
+  function go(i){
+    i = Math.max(0, Math.min(total-1, i));
+    slides[cur].classList.remove('active');
+    cur = i;
+    var s = slides[cur];
+    s.classList.add('active');
+    markAct(cur);
+    curEl.textContent = pad(cur+1);
+    prevBtn.disabled = cur===0;
+    nextBtn.disabled = cur===total-1;
+    ctl.classList.toggle('show', s.classList.contains('demo'));
+    /* chrome colour follows the slide's ground — see the .counter/.brandtab rules */
+    document.body.setAttribute('data-ground',
+      s.classList.contains('light') || s.classList.contains('solution') ? 'light' : 'dark');
+    /* Confetti is per-slide, never ambient. Without this reset it kept raining over
+       every subsequent slide — including the ask and the budget. */
+    clearConfetti();
+    fit(s);
+    if(s.getAttribute('data-scene') === 'certify') burst();
+  }
+
+  prevBtn.addEventListener('click', function(){ go(cur-1); });
+  nextBtn.addEventListener('click', function(){ go(cur+1); });
+  window.addEventListener('resize', scheduleFit);
+  window.addEventListener('orientationchange', scheduleFit);
+
+  document.addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){ e.preventDefault(); go(cur+1); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); go(cur-1); }
+    else if(e.key==='Home'){ go(0); }
+    else if(e.key==='End'){ go(total-1); }
+  });
+
+  var x0 = null;
+  document.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+  document.addEventListener('touchend', function(e){
+    if(x0===null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if(Math.abs(dx) > 50) go(dx<0 ? cur+1 : cur-1);
+    x0 = null;
+  }, {passive:true});
+
+  /* ---- demo toggles ---- */
+  document.getElementById('langSeg').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    state.locale = b.dataset.lang;
+    this.querySelectorAll('button').forEach(function(x){
+      x.setAttribute('aria-pressed', x===b ? 'true' : 'false');
+    });
+    renderDemo(); numberEyebrows(); scheduleFit();
+  });
+  document.getElementById('themeSeg').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    state.theme = b.dataset.theme;
+    document.documentElement.setAttribute('data-apptheme', state.theme);
+    this.querySelectorAll('button').forEach(function(x){
+      x.setAttribute('aria-pressed', x===b ? 'true' : 'false');
+    });
+  });
+
+  /* ---- confetti ---- */
+  function reduced(){ return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+  var cv = document.getElementById('confetti'), cx = cv.getContext('2d'), parts = [], raf = null;
+  function sizeCanvas(){ cv.width = innerWidth; cv.height = innerHeight; }
+  sizeCanvas();
+  addEventListener('resize', sizeCanvas);
+  function clearConfetti(){
+    parts.length = 0;
+    if(raf){ cancelAnimationFrame(raf); raf = null; }
+    cx.clearRect(0,0,cv.width,cv.height);
+  }
+  function burst(){
+    if(reduced()) return;
+    var colors = ['#e8641c','#ffc857','#0c7c7e','#1f7a45','#b84e12'];
+    for(var i=0;i<80;i++){
+      parts.push({ x: innerWidth/2 + (Math.random()-0.5)*220, y: innerHeight*0.3,
+        vx:(Math.random()-0.5)*8, vy:Math.random()*-9-3, g:0.28+Math.random()*0.1,
+        s:5+Math.random()*6, c:colors[(Math.random()*colors.length)|0],
+        r:Math.random()*6, vr:(Math.random()-0.5)*0.4, life:0 });
+    }
+    if(!raf) tick();
+  }
+  function tick(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    for(var i=parts.length-1;i>=0;i--){
+      var p = parts[i];
+      p.vy += p.g; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life++;
+      cx.save(); cx.translate(p.x,p.y); cx.rotate(p.r);
+      cx.fillStyle = p.c; cx.fillRect(-p.s/2,-p.s/2,p.s,p.s*0.6); cx.restore();
+      if(p.y > cv.height+20 || p.life > 200) parts.splice(i,1);
+    }
+    if(parts.length){ raf = requestAnimationFrame(tick); }
+    else { raf = null; cx.clearRect(0,0,cv.width,cv.height); }
+  }
+
+  /* Eyebrow ordinals are assigned from slide order rather than hard-coded, so cutting,
+     merging or reordering a slide can never leave a stale or duplicated number. */
+  function numberEyebrows(){
+    var k = 0;
+    slides.forEach(function(s){
+      var el = s.querySelector('.eyebrow .num');
+      if(!el) return;
+      k++;
+      el.textContent = (k < 10 ? '0' : '') + k;
+    });
+  }
+
+  /* ---- init ---- */
+  document.documentElement.setAttribute('data-apptheme','light');
+  totEl.textContent = pad(total);
+  renderDemo();
+  numberEyebrows();
+  go(0);
+  fitAll();
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+})();
+</script>
