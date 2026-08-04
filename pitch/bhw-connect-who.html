@@ -40,6 +40,15 @@
     --line-dark:rgba(247,241,232,.18);
     --line-light:rgba(36,28,23,.14);
 
+    /* Problem register — cold ground, ember accent. Diagnostic, unresolved. */
+    --ember:#F0603C;
+    --ember-deep:#A83A22;
+    --cold-line:rgba(240,96,60,.24);
+
+    /* Solution register — warm ground, verdant accent. Resolved, open. */
+    --verdant:#1F7A45;
+    --verdant-soft:#E4F0E7;
+
     --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
 
@@ -83,6 +92,59 @@
     background:radial-gradient(circle,rgba(232,100,28,.16),transparent 62%);
     pointer-events:none;
   }
+
+  /* ---------- PROBLEM register ----------
+     Cold, near-black, desaturated. The warm top-right bloom is replaced by a low
+     ember wash rising from the floor, so these slides read as a diagnostic panel
+     rather than a brand slide. Problem slides carry `darker problem`, so every
+     existing dark-ground text rule still applies — this only re-grounds and
+     re-accents them. Meaning is never carried by hue alone: each problem element
+     also carries an explicit OPEN marker. */
+  .slide.problem{
+    background:radial-gradient(125% 115% at 18% -8%,#0b262b 0%,#061619 52%,#030d0f 100%);
+    color:var(--cream);
+  }
+  .slide.problem::after{
+    right:auto;top:auto;left:0;bottom:-26%;width:100%;height:54vh;
+    background:radial-gradient(58% 100% at 50% 100%,rgba(240,96,60,.13),transparent 68%);
+  }
+  .slide.problem .eyebrow{color:rgba(247,241,232,.5)}
+  .slide.problem .eyebrow .num{color:var(--ember)}
+  .slide.problem .mark{color:var(--ember)}
+  .slide.problem .costlist li span{color:var(--ember)}
+  .slide.problem .kicker-line{color:var(--cream)}
+  .slide.problem .slide__inner{position:relative;z-index:1}
+
+  /* ---------- SOLUTION register ----------
+     Warm, lifted, open — the visual inverse of .problem. Light ground, marigold
+     bloom top-right, real elevation on cards. Carries `light solution`. */
+  .slide.solution{
+    background:
+      radial-gradient(88% 78% at 88% 4%,#FFF9EE 0%,rgba(255,249,238,0) 58%),
+      linear-gradient(168deg,var(--canvas) 0%,var(--canvas-2) 100%);
+    color:var(--ink);
+  }
+  .slide.solution::after{
+    content:"";position:absolute;right:-10%;top:-16%;width:42vw;height:42vw;z-index:0;
+    background:radial-gradient(circle,rgba(255,200,87,.34),transparent 64%);
+    pointer-events:none;
+  }
+  .slide.solution .slide__inner{position:relative;z-index:1}
+  .slide.solution .eyebrow .num{color:var(--verdant)}
+  .slide.solution .card,.slide.solution .chipcard{
+    background:rgba(255,255,255,.82);
+    box-shadow:0 14px 34px -22px rgba(36,28,23,.42);
+  }
+  .slide.solution .pillar{border-top-color:var(--verdant)}
+
+  /* state chips — the counter that turns "6 OPEN" into "6 CLOSED" */
+  .statechip{
+    display:inline-flex;align-items:center;gap:.4rem;margin-left:.9rem;vertical-align:middle;
+    font-size:.64rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    padding:.26rem .68rem;border-radius:999px;white-space:nowrap;
+  }
+  .statechip.open{background:rgba(240,96,60,.16);color:var(--ember);border:1px solid var(--cold-line)}
+  .statechip.closed{background:var(--verdant-soft);color:var(--verdant);border:1px solid rgba(31,122,69,.34)}
 
   /* ---------- shared type ---------- */
   .eyebrow{
@@ -176,23 +238,44 @@
   @keyframes radarspin{to{transform:rotate(360deg)}}
 
   /* ---------- gap cards ---------- */
-  .gaps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.7rem,1.6vw,1.15rem);margin-top:clamp(1.2rem,2.6vh,1.9rem)}
-  .gap{background:rgba(247,241,232,.06);border:1px solid var(--line-dark);border-left:3px solid var(--marigold);border-radius:12px;padding:clamp(.9rem,1.9vw,1.25rem);display:flex;flex-direction:column;gap:.45rem}
-  .light .gap{background:rgba(255,255,255,.55);border-color:var(--line-light);border-left-color:var(--marigold)}
-  .gtag{align-self:flex-start;font-size:.68rem;font-weight:800;letter-spacing:.16em;background:var(--marigold);color:#fff;border-radius:999px;padding:.2rem .55rem}
+  /* Gap cards read as a defect register: square corners, a hard ember rule down
+     the left edge, evidence pinned to the bottom so all six align on a baseline. */
+  .gaps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.6rem,1.35vw,.95rem);margin-top:clamp(1.05rem,2.3vh,1.6rem)}
+  .gap{
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(247,241,232,.10);
+    border-left:3px solid var(--ember);
+    border-radius:4px;
+    padding:clamp(.8rem,1.7vw,1.1rem);
+    display:flex;flex-direction:column;gap:.4rem;
+  }
+  .gap-h{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .gtag{font-size:.66rem;font-weight:800;letter-spacing:.16em;background:var(--ember);color:#2b1006;border-radius:3px;padding:.16rem .5rem}
+  .gstate{display:flex;align-items:center;gap:.34rem;font-size:.6rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ember);opacity:.9}
+  .gstate::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ember)}
   .gap h3{font-size:clamp(1rem,1.4vw,1.18rem);font-weight:700;letter-spacing:-.01em}
-  .gap p{font-size:clamp(.86rem,1.15vw,1rem);line-height:1.42;color:var(--cream-soft)}
-  .light .gap p{color:var(--ink-soft)}
-  .gap .ev{font-size:.76rem;font-style:italic;color:var(--cream-soft);opacity:.8;padding-top:.15rem;border-top:1px dashed var(--line-dark)}
-  .light .gap .ev{color:var(--ink-soft);border-top-color:var(--line-light)}
+  .gap p{font-size:clamp(.85rem,1.12vw,.98rem);line-height:1.42;color:rgba(247,241,232,.68)}
+  .gap .ev{font-size:.74rem;font-style:italic;color:rgba(247,241,232,.44);margin-top:auto;padding-top:.4rem;border-top:1px solid rgba(247,241,232,.10)}
 
   /* ---------- gap closure ---------- */
-  .closes{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.6rem,1.5vw,1rem);margin-top:clamp(1.1rem,2.4vh,1.7rem)}
-  .close-row{display:grid;grid-template-columns:auto 1fr;gap:.75rem;align-items:start;background:rgba(247,241,232,.05);border:1px solid var(--line-dark);border-radius:11px;padding:.75rem .9rem}
-  .close-row .gtag{background:var(--sampaguita);color:#2b2420;margin-top:.15rem}
-  .close-row b{display:block;font-size:clamp(.92rem,1.2vw,1.05rem);color:var(--cream);line-height:1.3}
-  .close-row s{display:block;font-size:.8rem;color:var(--cream-soft);opacity:.75;text-decoration-color:rgba(232,100,28,.7);margin-bottom:.22rem}
-  .close-row p{font-size:clamp(.84rem,1.1vw,.96rem);line-height:1.4;color:var(--cream-soft);margin-top:.18rem}
+  /* Closure rows invert the gap card on every axis: light instead of near-black,
+     rounded and lifted instead of square and flat, verdant instead of ember, and
+     the struck problem demoted beneath the answer it used to be. */
+  .closes{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.55rem,1.3vw,.9rem);margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .close-row{
+    display:grid;grid-template-columns:auto 1fr;gap:.85rem;align-items:start;
+    background:rgba(255,255,255,.86);
+    border:1px solid rgba(36,28,23,.09);
+    border-left:3px solid var(--verdant);
+    border-radius:12px;
+    padding:.8rem 1rem;
+    box-shadow:0 12px 30px -24px rgba(36,28,23,.55);
+  }
+  .close-row .gtag{background:var(--verdant);color:#fff;border-radius:3px;margin-top:.18rem}
+  .close-row s{display:block;font-size:.76rem;color:var(--ink-soft);opacity:.62;text-decoration-color:var(--ember);margin-bottom:.2rem}
+  .close-row b{display:block;font-size:clamp(.95rem,1.24vw,1.1rem);color:var(--ink);line-height:1.28}
+  .close-row b::before{content:"✓";color:var(--verdant);font-weight:900;margin-right:.42rem}
+  .close-row p{font-size:clamp(.83rem,1.06vw,.94rem);line-height:1.42;color:var(--ink-soft);margin-top:.26rem}
 
   /* ---------- loop / engine ---------- */
   .loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:.5rem;margin-top:clamp(1.2rem,2.8vh,1.9rem)}
@@ -584,7 +667,7 @@
   </section>
 
   <!-- ============ ACT 2 · THE FAILURE MODE ============ -->
-  <section class="slide darker" data-act="The Gap">
+  <section class="slide darker problem" data-act="The Gap">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">03</span> Six Months From Now</div>
       <h2 class="tight">The training ends. Then the system forgets.</h2>
@@ -660,43 +743,43 @@
     </div>
   </section>
 
-  <section class="slide darker wide" data-act="The Gap">
+  <section class="slide darker problem wide" data-act="The Gap">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">06</span> What a Training Programme Cannot Do</div>
-      <h2 class="tight">Six gaps that survive a perfectly executed APW.</h2>
+      <h2 class="tight">Six gaps that survive a perfectly executed APW.<span class="statechip open">6 open</span></h2>
       <div class="gaps">
         <div class="gap">
-          <span class="gtag">G1</span>
+          <div class="gap-h"><span class="gtag">G1</span><span class="gstate">Open</span></div>
           <h3>Frozen content</h3>
           <p>Video modules and printed job aids are final at month five. When PhilPEN guidance changes, every distributed copy is quietly wrong and there is no mechanism to correct it.</p>
           <p class="ev">“Review and update of instructional video modules” — a one-time act inside a five-month contract.</p>
         </div>
         <div class="gap">
-          <span class="gtag">G2</span>
+          <div class="gap-h"><span class="gtag">G2</span><span class="gstate">Open</span></div>
           <h3>Cascade decay</h3>
           <p>Representatives are trained, then cascade to peers. What each BHW actually receives depends on who retold it and how well — and nothing measures the difference.</p>
           <p class="ev">Module 6: “cascade standardized practices to their peers within the LGU.”</p>
         </div>
         <div class="gap">
-          <span class="gtag">G3</span>
+          <div class="gap-h"><span class="gtag">G3</span><span class="gstate">Open</span></div>
           <h3>Thin coverage</h3>
           <p>All Iloilo districts and a single Guimaras session, delivered by one contractor in five months. Most of the region's BHWs are reached second-hand or not at all.</p>
           <p class="ev">Coverage: “Iloilo (all districts) and Guimaras (one session).”</p>
         </div>
         <div class="gap">
-          <span class="gtag">G4</span>
+          <div class="gap-h"><span class="gtag">G4</span><span class="gstate">Open</span></div>
           <h3>No route to national</h3>
           <p>Output 5 delivers scale-up <em>recommendations</em>. A recommendation is not a mechanism. Nothing carries this package to the other ~290,000 BHWs.</p>
           <p class="ev">Output 5.2: “scale-up and adaptation recommendations.”</p>
         </div>
         <div class="gap">
-          <span class="gtag">G5</span>
+          <div class="gap-h"><span class="gtag">G5</span><span class="gstate">Open</span></div>
           <h3>One competency, once</h3>
           <p>Seven domains on NCD screening, and nothing left standing to hold the next programme. Immunization, nutrition, MNCH each start again from zero.</p>
           <p class="ev">Scope limit: “not a new national training system.”</p>
         </div>
         <div class="gap">
-          <span class="gtag">G6</span>
+          <div class="gap-h"><span class="gtag">G6</span><span class="gstate">Open</span></div>
           <h3>Paper competence</h3>
           <p>The return-demonstration checklist is a paper form, hand-scored and filed locally. There is no queryable record of which BHWs are competent, and no re-certification trigger.</p>
           <p class="ev">29 criteria, 87-point scale, evaluator signature — on paper.</p>
@@ -705,7 +788,7 @@
     </div>
   </section>
 
-  <section class="slide dark" data-act="The Gap">
+  <section class="slide dark problem" data-act="The Gap">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">07</span> The Cost</div>
       <div class="cost-grid">
@@ -797,7 +880,7 @@
     </div>
   </section>
 
-  <section class="slide light" data-act="The Answer">
+  <section class="slide light solution" data-act="The Answer">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">09</span> What BHW Connect Is</div>
       <h2 class="tight">Three things a training event cannot be.</h2>
@@ -822,7 +905,7 @@
     </div>
   </section>
 
-  <section class="slide light" data-act="The Answer">
+  <section class="slide light solution" data-act="The Answer">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">10</span> The Engine</div>
       <h2 class="tight">Every question makes the system smarter.</h2>
@@ -867,7 +950,7 @@
   <section class="slide darker demo wide" data-act="Prototype" data-scene="catalogue"><div class="slide__inner"></div></section>
 
   <!-- ============ ACT 5 · CLOSE ============ -->
-  <section class="slide light" data-act="The Ask">
+  <section class="slide light solution" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">11</span> Designed to Last</div>
       <h2 class="tight">From one province to the whole nation.</h2>
@@ -990,10 +1073,10 @@
     </div>
   </section>
 
-  <section class="slide dark wide" data-act="The Ask">
+  <section class="slide light solution wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">15</span> Every Gap, Closed</div>
-      <h2 class="tight">The APW trains them. This is what keeps them trained.</h2>
+      <h2 class="tight">The APW trains them. This is what keeps them trained.<span class="statechip closed">6 closed</span></h2>
       <div class="closes">
         <div class="close-row">
           <span class="gtag">G1</span>

@@ -24,6 +24,29 @@ slides only, a **Wika** toggle switches the prototype between Filipino and Engli
 and an **App theme** toggle flips the in-app mockups between light and dark (both are
 real product features being demonstrated; the deck chrome stays constant).
 
+### Three visual registers
+
+Slides carry one of three grounds, and the register is load-bearing for the argument —
+the deck's whole shape is problem stated, then problem closed, so those two must read
+as opposites at projector distance.
+
+| Register | Class | Ground | Accent | Used on |
+|---|---|---|---|---|
+| **Problem** | `darker problem` / `dark problem` | cold near-black, ember wash rising from the floor | ember `--ember` | the failure mode, the six gaps, the cost |
+| **Solution** | `light solution` | warm cream, marigold bloom top-right, lifted cards | verdant `--verdant` | what BHW Connect is, the engine, built to scale, every gap closed |
+| **Neutral** | `light` / `dark` / `darker` | existing teal palette | marigold | title, credit slides, demo chapter, the ask, close |
+
+A `problem` or `solution` slide must **also** keep its base `dark`/`darker`/`light`
+class — the register only re-grounds and re-accents; every existing text rule keys off
+the base class, and dropping it renders dark ink on a dark ground.
+
+Layout carries the contrast too, not just hue: gap cards are square-cornered with a
+hard left rule and evidence pinned to a shared baseline (a defect register), while
+closure rows are rounded, elevated and demote the struck problem beneath the answer
+that replaced it. **Meaning is never carried by colour alone** — every gap card is
+marked `OPEN` and every closure row `✓`, with `6 open` / `6 closed` counters in the
+headings, so the argument survives a colourblind viewer or a bad projector.
+
 ### Two things to keep straight when editing
 
 1. **Readiness framing is deliberate.** Phase 1 (the national BHW registry and
