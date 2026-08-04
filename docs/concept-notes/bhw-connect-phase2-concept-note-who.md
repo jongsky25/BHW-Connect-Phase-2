@@ -4,21 +4,19 @@
   Derived from bhw-connect-phase2-concept-note-koica.md. Three things differ materially
   and must not be silently reverted:
 
-  1. BUILD STATUS. The KOICA edition says Phase 2 is "conceptualized and planned… funded
-     under this proposal." That is no longer accurate: INC-0 through INC-16 are merged,
-     with 22 migrations and 40+ test suites. This edition says built, behind feature flags
-     defaulted off, pilot launch gate not cleared. It must stay aligned with
-     pitch/bhw-connect-who.html — a funder holding both a deck claiming working software
-     and a note asking to fund a build is worse off than with either alone.
-  2. YEAR-1 MODULE. HHP+ / PhilPEN 2025 community NCD screening in Western Visayas,
-     not ttCF in Eastern Visayas. ttCF is the designed second module.
+  1. BUILD STATUS. Phase 2 is DESIGNED END TO END BUT NOT BUILT. Clickable mockups exist;
+     the system does not. Nothing is described as "built" until a Barangay Health Worker has
+     used it in the field — a deliberately stricter test than "the code exists". This must
+     stay aligned with pitch/bhw-connect-who.html, which says the same thing.
+  2. YEAR-1 MODULE. HHP+ / PhilPEN 2025 community NCD screening in Western Visayas.
   3. PARTNER. WHO Philippines. World Vision fund-holder and KOICA financing mechanics
      are removed, not reassigned.
 
-  [TO CONFIRM] markers are load-bearing: the priority province, the Year-1 BHW cohort and
-  the cost per BHW are Region VI figures nobody has supplied yet. The ₱6,000,000 envelope
-  and the "26,000 BHWs" figure in the KOICA edition are Eastern Visayas numbers. Do not
-  fill these with plausible-looking values.
+  DO NOT REINTRODUCE ttCF, Eastern Visayas or Region VIII anywhere in this document. That
+  proposal is preliminary, is not settled, and is deliberately absent.
+
+  Coverage figures are from the Phase 1 registry: 23,813 BHWs in Region VI; the training
+  package's initial sites are Iloilo City (309) and Guimaras (705) = 1,014, i.e. 4.3%.
 -->
 
 # CONCEPT NOTE
@@ -27,24 +25,24 @@
 
 **Year 1 Flagship Learning Module: Community-Based NCD Screening under Healthy Hearts Plus (HHP+) and PhilPEN 2025, Western Visayas**
 
-*A government-owned platform, already built, seeking catalytic support from the World Health Organization to be validated, approved, provisioned and rolled out.*
+*A government-owned platform, designed end to end, seeking catalytic support from the World Health Organization to build, validate, approve and roll it out.*
 
 Bureau of Local Health Systems Development, Department of Health, Republic of the Philippines
 
 | | |
 |---|---|
 | Platform Owner | Department of Health, through the Bureau of Local Health Systems Development (BLHSD) — Equity in Health and Special Concerns Section |
-| Nature of the Proposal | Phase 2 of the DOH BHW Connect platform. The software is built; this proposal funds validation, DOH content approval, provisioning, rollout and evaluation. Not a stand-alone project. |
+| Nature of the Proposal | Phase 2 of the DOH BHW Connect platform. The design is complete; this proposal funds the build, the content, DOH approval, provisioning, rollout and evaluation. Not a stand-alone project. |
 | Phase 1 Track Record | Close to 300,000 Barangay Health Workers profiled nationwide within about one year — closing a gap that had persisted for roughly three decades |
-| Phase 2 Build Status | INC-0 to INC-16 implemented and automatically tested; every later module ships behind a feature flag defaulted off; pilot launch gate not yet cleared; no BHW using it in the field today |
+| Phase 2 Build Status | **Designed end to end, not yet built.** Requirements, data model, architecture, user journeys and content governance are complete, and clickable mockups of every core journey exist. No system is deployed and no BHW has used it. |
 | Year 1 Flagship Module | Community-based NCD screening — the six-module HHP+ curriculum, digitized as the first DOH-approved learning module on the platform |
 | Proposed Partner | World Health Organization, Country Office for the Philippines |
 | Geographic Scope | Western Visayas (Region VI), aligned to the existing HHP+ footprint, as national proof-of-concept |
-| Priority Province | **[TO CONFIRM]** |
-| Year-1 BHW Cohort | **[TO CONFIRM]** onboarded in Year 1; regional and national scale-up figures follow from the registry extract |
+| Initial Coverage | Iloilo City and Guimaras — matching the training package's own sites |
+| Year-1 BHW Cohort | **1,014** (Iloilo City 309 + Guimaras 705) — 4.3% of Region VI's 23,813 BHWs |
 | Duration | 12 months — Year 1 of a proposed phased programme |
-| Year-1 Contribution Sought | ₱6,000,000 envelope, **currently being re-costed for the Region VI scope** (see Section 13) |
-| Government Counterpart | Platform ownership, the delivered Phase 1 registry, the built Phase 2 codebase, hosting pathway, content approval authority, field structures, supervision and post-project sustainment |
+| Year-1 Contribution Sought | **₱11,300,000 (≈ US$195,000)** — built bottom-up from the workplan (see Section 13) |
+| Government Counterpart | Platform ownership, the delivered Phase 1 registry, the completed Phase 2 design and architecture funded at BLHSD's own cost, hosting pathway, content approval authority, field structures, supervision and post-project sustainment |
 | Date | **[TO CONFIRM]** |
 
 > **DRAFT — for internal review prior to submission**
@@ -55,16 +53,16 @@ Bureau of Local Health Systems Development, Department of Health, Republic of th
 
 | | |
 |---|---|
-| What this is | Phase 2 of BHW Connect, the Department of Health's digital platform for Barangay Health Workers, owned and led by BLHSD. Phase 1 delivered the national BHW registry and profiled close to 300,000 BHWs nationwide in about a year, after roughly three decades without a complete national registry. Phase 2 turns that registry into a learning, training and certification platform. **The Phase 2 software is built and automatically tested; this proposal funds what stands between built software and a certified workforce.** |
-| What is being added | (1) The HHP+ six-module curriculum authored as DOH-approved learning content. (2) Clinical validation and formal DOH approval of that content. (3) Regional provisioning, operational hardening and pilot-gate clearance. (4) Onboarding, supervision, certification and independent evaluation in one priority province of Region VI. |
+| What this is | Phase 2 of BHW Connect, the Department of Health's digital platform for Barangay Health Workers, owned and led by BLHSD. Phase 1 delivered the national BHW registry and profiled close to 300,000 BHWs nationwide in about a year, after roughly three decades without a complete national registry. Phase 2 turns that registry into a learning, training and certification platform. **The Phase 2 design is complete and demonstrable as mockups; this proposal funds building it, filling it with DOH-approved content, and putting it in front of a first cohort.** |
+| What is being added | (1) The platform built to the completed design. (2) The HHP+ six-module curriculum authored as DOH-approved learning content, clinically validated and formally approved. (3) Provisioning and pilot readiness. (4) Onboarding, supervision, certification and independent evaluation of 1,014 BHWs across Iloilo City and Guimaras. |
 | First content module | Community-based NCD screening under HHP+ / PhilPEN 2025 — an evidence-based, WHO-supported curriculum with an existing 29-criterion return-demonstration assessment instrument. It becomes the first DOH-approved learning module on the platform, and the template for those that follow. |
-| Why this is low risk | The bureau has already delivered a national digital health system at scale; the users are already registered and organizationally located in the platform; and the Phase 2 software already exists, with 22 applied database migrations and more than 40 automated test suites. What remains is validation, approval, provisioning and rollout — not discovery, design or construction. |
+| Why this is low risk | The bureau has already delivered a national digital health system at scale; the users are already registered and organizationally located in the platform; and the Phase 2 design — requirements, data model, architecture, user journeys, content governance — is complete and demonstrable, so the year does not begin with discovery. What is being funded is construction against a settled design, not exploration. |
 | Why WHO | WHO has already financed the clinical substance: PhilPEN 2025 and PPSA capacity building, NCD flipcharts, job aids, monitoring tools, and a BHW training package now being contracted. That investment produces competency at a point in time. This platform is what keeps it current, measurable and national after the training contract closes. |
 | Who owns it | DOH, through BLHSD, retains ownership of the platform, its source code, its data and all published content, subject to a Memorandum of Agreement executed before implementation. |
-| Year-1 milestones | (1) Platform hardened, provisioned and through the pilot gate. (2) HHP+ curriculum digitized, clinically validated and DOH-approved. (3) Governance and content approval process established under MOA. (4) Certification rolled out — first cohort certified against the DOH return-demonstration standard. (5) Platform demonstrably ready to onboard the next DOH module. |
-| Timeline | M1–3 mobilization, governance and hardening; M2–6 content authoring, clinical validation and DOH approval; M4–8 Wave 1 onboarding; M7–11 certification launch and Wave 2; M10–12 evaluation, handover and Year-2 plan. |
+| Year-1 milestones | (1) Platform built, provisioned and through the pilot gate. (2) HHP+ curriculum digitized, clinically validated and DOH-approved. (3) Governance and content approval process established under MOA. (4) Certification rolled out — first cohort certified against the DOH return-demonstration standard. (5) Platform demonstrably ready to onboard the next DOH module. |
+| Timeline | M1–3 mobilization, governance and build start; M2–7 platform build and content authoring in parallel; M5–8 clinical validation and DOH approval; M7–10 onboarding across Iloilo City and Guimaras; M9–11 certification launch; M10–12 evaluation, handover and Year-2 plan. |
 | Sustainability | Institutionalized through MOA and a departmental issuance, embedded in the BLHSD work and financial plan, hosted on government infrastructure, and staffed by trained BLHSD personnel — so continuity does not depend on the individuals or administrations in place today. |
-| Long-term value | HHP+ is the first of many DOH-approved modules. ttCF (first 1,000 days), Immunization, Nutrition, Family Planning, Communicable Disease Surveillance, First Aid and BHW Administrative Procedures are already on the platform roadmap, each reusing the same engine at a fraction of Year 1's cost. |
+| Long-term value | HHP+ is the first of many DOH-approved modules. Immunization, Nutrition, Family Planning, Communicable Disease Surveillance, First Aid and BHW Administrative Procedures are already on the platform roadmap, each reusing the same engine at a fraction of Year 1's cost. |
 
 ---
 
@@ -74,9 +72,11 @@ For roughly three decades, the Department of Health had no complete, current nat
 
 This concept note proposes Phase 2: an always-available bilingual (Filipino / English / Taglish) Knowledge Base and Chat Guide, and a structured training and certification pathway, for that same workforce.
 
-**Phase 2 is not a design awaiting a build.** Requirements, data model, architecture and user journeys were completed by BLHSD, and the resulting system has been implemented across sixteen increments — authentication against the existing registry, Knowledge Base authoring, the Chat Guide matching engine, admin dashboards and the gap-triage queue, e-learning with quizzes, an assessor queue, and QR-verified certification with a public verification endpoint — supported by 22 applied database migrations and more than 40 automated test suites. Every later module ships behind a feature flag defaulted off. The pilot launch gate has not been cleared, and no Barangay Health Worker is using the system in the field today.
+**Phase 2 is designed end to end, and not yet built.** Requirements, the data model, system architecture, user journeys, the content governance and DOH approval workflow, the accessibility approach and a staged build roadmap were all completed by BLHSD at its own cost, and clickable mockups of every core journey — Chat Guide, gap triage, Knowledge Base authoring, e-learning, assessor certification and the roll-up dashboard — exist and can be reviewed today.
 
-What stands between built software and a certified workforce is not engineering. It is clinical content authored to DOH standard, formal DOH approval of that content, operational hardening and regional provisioning, and the field work of onboarding, supervising, assessing and evaluating a real cohort. That is what this proposal funds.
+No system is deployed. No Barangay Health Worker has used it. BLHSD deliberately does not describe any part of this platform as *built* until it has been piloted in the field, and that has not happened.
+
+What this proposal funds is therefore the whole distance from a settled design to a certified workforce: constructing the platform, authoring the HHP+ curriculum to DOH standard, routing it through clinical validation and formal approval, provisioning it, and onboarding, supervising, assessing and evaluating a real cohort. The year does not begin with discovery, which is where most digital-health investments lose their first six months.
 
 The **HHP+ community NCD screening curriculum** is proposed as the Year 1 flagship module — the first DOH-approved curriculum to be digitized, certified and served through the platform.
 
@@ -86,17 +86,19 @@ The **HHP+ community NCD screening curriculum** is proposed as the Year 1 flagsh
 >
 > HHP+ was selected first because its curriculum is already defined, WHO-supported and about to be standardized, and because it already carries a formal assessment instrument — the fastest credible path to a fully worked, DOH-approved learning module.
 >
-> The Knowledge Base and Training & Certification architecture is generic by design. ttCF, Immunization, Nutrition, Communicable Disease Surveillance, Family Planning, First Aid and BHW Administrative Procedures are already committed on the roadmap, and require content authoring and DOH approval rather than re-engineering.
+> The Knowledge Base and Training & Certification architecture is generic by design. Immunization, Nutrition, Communicable Disease Surveillance, Family Planning, First Aid and BHW Administrative Procedures are already committed on the roadmap, and require content authoring and DOH approval rather than re-engineering.
 
 > **The Year-1 Ask**
 >
-> A ₱6,000,000 envelope over 12 months, **currently being re-costed for the Region VI scope**: a small core team, AI and developer tooling subscriptions, IT equipment, regional infrastructure, and independent monitoring and evaluation — itemized in Section 13.
+> **₱11,300,000 (≈ US$195,000) over 12 months**, built bottom-up from the workplan: engineering to construct the platform, content authoring and clinical validation, bilingual video production, instructional design and QA, infrastructure, equipment, rollout and certification support, independent monitoring and evaluation, and governance work — itemized in Section 13.
 >
 > This does not include training-delivery costs, travel or per diem, or other programme implementation expenses. Those are counterpart contributions or funded separately.
 >
 > Ownership of the platform, its code, its data and its published content remains with DOH throughout, subject to a Memorandum of Agreement executed before implementation.
 
-Year 1 is deliberately scoped to be achievable: it provisions the platform for region-wide availability and actively onboards a first cohort in one priority province of Region VI **[TO CONFIRM]**, with the field-tested playbook and government structures in place to scale regionally in Year 2. Western Visayas is proposed as proof-of-concept for a nationwide DOH programme, not a standalone deployment.
+Year 1 is deliberately scoped to be achievable, and deliberately scoped to *match the training package's own footprint*: it onboards the **1,014 Barangay Health Workers of Iloilo City (309) and Guimaras (705)** — the same sites the five-month training contract reaches — so that the two investments land on the same people and can be compared directly.
+
+That cohort is 4.3% of Region VI's 23,813 BHWs. The remaining 22,799 are the point. Once the platform exists, reaching them is onboarding rather than construction, and the cost per Barangay Health Worker falls from ₱11,144 in Year 1 to roughly ₱475 across the region and ₱38 against the full national profiled base. Western Visayas is proposed as proof-of-concept for a nationwide DOH programme, not a standalone deployment.
 
 ---
 
@@ -116,7 +118,7 @@ A five-month training contract, executed perfectly, still leaves six things unre
 |---|---|---|
 | G1 | **Materials go stale** | Video modules are cut once. When guidance moves there is no mechanism to re-cut them and get the correction to people already trained. |
 | G2 | **Cascade decay** | Trained representatives cascade to their peers. What each BHW actually receives depends on who retold it, and nothing measures the difference. |
-| G3 | **The ceiling is arithmetic** | One contractor, five months, one province. Not a question of effort or of scoping judgement — of how many people five months can physically reach. |
+| G3 | **The ceiling is arithmetic** | The package's initial sites — Iloilo City and Guimaras — hold 1,014 of Region VI's 23,813 Barangay Health Workers, or 4.3%. The other 22,799 are reached second-hand or not at all. Not a question of effort or of scoping judgement, but of how many people one contractor can physically reach in five months. |
 | G4 | **No route to national** | The contract's final output is scale-up *recommendations*. A recommendation is not a mechanism; nothing carries the package to the rest of the country's BHWs. |
 | G5 | **One competency, once** | Nothing is left standing to hold the next programme. Immunization, nutrition and MNCH each start again from zero. |
 | G6 | **Paper competence** | The 29-criterion return-demonstration checklist is hand-scored and filed locally. There is no queryable record of which BHWs are competent, and no re-certification trigger. |
@@ -187,11 +189,11 @@ The proposal operationalizes frontline delivery under the Universal Health Care 
 
 ### Goal
 
-To operationalize BHW Connect — the Department of Health's existing and already-built digital platform for Barangay Health Workers — as a national digital learning, training and certification system, launched with the HHP+ community NCD screening curriculum as its Year 1 flagship learning module in Western Visayas, as proof-of-concept for nationwide scale-up and multi-programme content expansion.
+To build and operationalize BHW Connect — the Department of Health's fully designed digital platform for Barangay Health Workers — as a national digital learning, training and certification system, launched with the HHP+ community NCD screening curriculum as its Year 1 flagship learning module in Western Visayas, as proof-of-concept for nationwide scale-up and multi-programme content expansion.
 
 ### Specific objectives
 
-- **Objective 1 — Harden and provision the existing platform:** complete operational hardening, clear the pilot launch gate, scale the Chat Guide and Knowledge Base to regional availability, and onboard a first cohort in one priority province of Region VI **[TO CONFIRM]**, establishing the playbook to reach the region.
+- **Objective 1 — Build and provision the platform:** construct it to the completed design, clear the pilot launch gate, and onboard the 1,014 Barangay Health Workers of Iloilo City and Guimaras, establishing the playbook to reach the remaining 22,799 across Region VI.
 - **Objective 2 — Author, validate and publish the HHP+ curriculum:** the six modules as e-learning content and Knowledge Base entries, the return-demonstration instrument digitized faithfully, all routed through clinical review and formal DOH approval.
 - **Objective 3 — Launch certification:** assessor-graded skills demonstration against the DOH standard, with QR-verified certificates written to the national registry.
 - **Objective 4 — Establish governance, ownership and the content approval process:** a DOH-chaired steering structure, a documented content development and approval workflow, and an MOA defining ownership, roles and post-project stewardship.
@@ -206,7 +208,7 @@ If Barangay Health Workers are given an always-available bilingual job aid and a
 
 | Results level | Description |
 |---|---|
-| Inputs | Partner financing for a core team, subscriptions, equipment, infrastructure and M&E; the delivered Phase 1 registry and its nearly 300,000 profiled BHWs; **the built Phase 2 codebase**; the HHP+ curriculum, job aids and return-demonstration instrument; BLHSD, CHD and LGU counterpart structures. |
+| Inputs | Partner financing for the build team, subscriptions, equipment, infrastructure and M&E; the delivered Phase 1 registry and its nearly 300,000 profiled BHWs; **the completed Phase 2 design**; the HHP+ curriculum, job aids and return-demonstration instrument; BLHSD, CHD and LGU counterpart structures. |
 | Activities | Harden and provision the platform; author and clinically validate HHP+ content; secure DOH content approval; clear the pilot gate; onboard BHWs; run assessor-graded certification; train BLHSD and LGU staff; establish governance under MOA. |
 | Outputs | A regionally available, pilot-gated platform; a published, DOH-approved HHP+ learning module; an operational certification pathway; a first cohort of onboarded and certified BHWs; trained government administrators; an established content approval process. |
 | Outcomes | BHWs get reliable answers at the point of care and complete structured, certified NCD screening training; BHW knowledge, confidence and consistency improve; competency becomes queryable at every tier; BLHSD operates the platform independently. |
@@ -214,9 +216,9 @@ If Barangay Health Workers are given an always-available bilingual job aid and a
 
 ---
 
-## 9. Platform Readiness: A Delivered Phase 1, a Built Phase 2
+## 9. Platform Readiness: A Delivered Phase 1, a Fully Designed Phase 2
 
-The strongest argument for this proposal is not the design of Phase 2. It is that Phase 1 was delivered and Phase 2 already exists as working software.
+The strongest argument for this proposal is not that Phase 2 is finished — it is not. It is that Phase 1 was delivered at national scale, and that Phase 2's design is settled rather than speculative.
 
 ### 9.1 What Phase 1 achieved
 
@@ -236,39 +238,31 @@ BHW Connect Phase 1 solved that. Conceptualized and delivered by BLHSD, it estab
 >
 > **A demonstrated adoption pathway.** The CHD, LGU and BHW mobilization channels that delivered nationwide profiling in a year are the same channels that deliver Phase 2 onboarding.
 
-### 9.2 What Phase 2 adds — and its true build status
+### 9.2 What Phase 2 adds — and its true status
 
-This section supersedes the corresponding section of the earlier concept note edition, which described Phase 2 as awaiting construction. That is no longer accurate.
+**Phase 2 is designed end to end and not yet built.** The following are complete: requirements; the data model; system architecture; user journeys for BHW, administrator, assessor and content designer; the content development, technical review and DOH approval workflow; the accessibility approach; the data-privacy and consent design; and a staged, costed build roadmap. Clickable mockups of every core journey exist and can be reviewed today.
 
-Phase 2 has been implemented across sixteen increments and is supported by 22 applied database migrations and more than 40 automated test suites, together with error tracking, performance budgets enforced in CI, and automated accessibility testing.
+The following do not exist: a deployed system, a published curriculum, an onboarded user, or a certified Barangay Health Worker.
 
-| Status | Capability |
-|---|---|
-| **Built and tested** | Authentication against the existing registry, org hierarchy and role-based access; DPA consent gating; admin console for user management with a laymanized audit trail; Knowledge Base authoring (bilingual, with named owners and review-due dates); the Chat Guide matching engine (normalization, synonym expansion, full-text and trigram ranking, Taglish tolerance) and its interface; admin dashboards with the gap-triage queue; reports and analytics with export; settings, accessibility and first-run onboarding; operational hardening including feature flags, error tracking, backup and tested restore, DPA data-rights actions and a breach playbook; e-learning with mixed text/video/quiz modules and configurable pass marks; an assessor role and open assessment queue; QR-verified certification with a public, unauthenticated verification endpoint; announcements, surveys, an interactive forum, a flip-chart builder, offline/PWA caching and in-app notifications. |
-| **Built, not yet switched on** | Every later module ships behind a feature flag defaulted off. The pilot launch gate — a published-content threshold, real users provisioned, all increment definitions-of-done re-verified on production, and a KPI baseline captured — has not been cleared. **No Barangay Health Worker is using the system in the field today.** |
-| **Not built, and funded here** | The HHP+ curriculum as authored, clinically validated, DOH-approved content. Regional infrastructure provisioning at cohort scale. Pilot-gate clearance. Onboarding, supervision, assessor mobilization and certification of a real cohort. Independent baseline, midline and endline evaluation. Live integration with the external profiling system, which remains blocked on technical access. |
+BLHSD applies a deliberately strict test here. Nothing in this document is described as *built* until a Barangay Health Worker has used it in the field. Design completeness is a real asset — it removes the discovery-and-design phase that normally consumes the first year of a digital-health investment — but it is not the same thing as working software, and this proposal does not present it as such.
 
-**We invite independent technical due diligence on the codebase before signature.** It is the fastest way to convert this section from a claim into a verified fact, and it is offered rather than waited for.
-
-| Dimension | Phase 1 — Delivered | Phase 2 — Built, awaiting validation and rollout |
+| Dimension | Phase 1 — Delivered | Phase 2 — Designed, not yet built |
 |---|---|---|
 | Purpose | Identify, register and profile the national BHW workforce | Support, train and certify that same workforce |
 | Core capability | National registry and profiling; hierarchy from national to barangay; profile records and roll-up reporting | Rule-based bilingual Chat Guide; Knowledge Base; content administration console; e-learning, quiz banks, assessor-graded skills demonstration and QR-verified certification |
-| Result | Close to 300,000 BHWs profiled nationwide within about one year | Those same BHWs given an always-available job aid and a certified competency pathway, beginning with HHP+ |
-| Content | Administrative and demographic profile data | DOH-approved bilingual learning content and curricula — **none yet authored or approved; this is the critical path** |
-| Content governance | Administrative data standards | Formal content development, technical review, DOH approval and periodic update workflow (Section 10.5) |
+| Result | Close to 300,000 BHWs profiled nationwide within about one year | Nothing yet delivered to a BHW. Year 1 builds it and puts it in front of a first cohort of 1,014 |
+| Content | Administrative and demographic profile data | DOH-approved bilingual learning content — none yet authored or approved; this is on the critical path alongside the build |
+| Content governance | Administrative data standards | Formal content development, technical review, DOH approval and periodic update workflow (Section 10.5) — designed, not yet operating |
 | User base | Established — BHWs registered and organizationally located nationwide | Activation of already-registered users rather than recruitment from zero |
-| Status | Delivered and operating under BLHSD | Implemented and automatically tested; behind feature flags; pilot gate not cleared |
+| Status | Delivered and operating under BLHSD | Design complete; mockups demonstrable; build funded under this proposal |
 
 ### 9.3 What this proposal funds
 
-Because the software exists, the critical path is not engineering. It is **content, approval, provisioning and field delivery** — in that order. The Year-1 personnel line is accordingly justified as content authoring, clinical coordination, operational hardening and rollout support, not as construction of a new system. Section 13 restates the budget on that basis.
+Because the design is settled, the year is spent on construction and delivery rather than on discovery. The critical path runs: **build → content → clinical validation and DOH approval → provisioning → onboarding → certification → evaluation.** Sections 10.3 and 10.4 set out the workstreams and the go/no-go gates; Section 13 costs them bottom-up.
 
 ### 9.4 Designed to hold more than HHP+
 
-Knowledge Base categories, question-and-answer entries, long-form articles and the Training & Certification module are all implemented as generic platform structures, not HHP+-specific ones. Adding a new health topic is a content-authoring and DOH-approval exercise, not a re-engineering effort. ttCF, Immunization, Nutrition, Communicable Disease Surveillance, Family Planning, First Aid and BHW Administrative Procedures are already committed on the roadmap, with sequencing driven by real Chat Guide demand rather than a fixed order set in advance.
-
-**Disclosure:** BLHSD is approaching more than one partner across this catalogue, module by module, and will state this openly in any agreement. Each module is separately scoped and separately funded; no partner is asked to fund another partner's module, and no module is represented as delivered until it is published and DOH-approved.
+Knowledge Base categories, question-and-answer entries, long-form articles and the Training & Certification module are all specified as generic platform structures, not HHP+-specific ones. Adding a new health topic is a content-authoring and DOH-approval exercise, not a re-engineering effort. Immunization, Nutrition, Communicable Disease Surveillance, Family Planning, First Aid and BHW Administrative Procedures are already committed on the roadmap, with sequencing driven by real Chat Guide demand rather than a fixed order set in advance.
 
 ---
 
@@ -305,10 +299,10 @@ The MOA will make explicit, at minimum: DOH ownership of the platform, source co
 
 | Workstream | Scope | Lead | Key Year-1 deliverables |
 |---|---|---|---|
-| WS1 — Hardening & Provisioning | Operational hardening; pilot-gate clearance; regional infrastructure provisioning; performance and security | Platform engineer, under BLHSD technical supervision | Pilot gate cleared; regional provisioning complete; backup, restore and breach playbook re-tested at cohort scale |
+| WS1 — Build & Provisioning | Construct the platform to the completed design; operational hardening; pilot-gate clearance; infrastructure provisioning; performance and security | Technical lead and engineer, under BLHSD technical supervision | Platform built and accepted; pilot gate cleared; provisioning complete; backup, restore and breach playbook tested |
 | WS2 — Content & Curriculum | HHP+ Knowledge Base authoring; six e-learning modules; quiz banks; digitized return-demonstration instrument | KB Content & Training Coordinator, with WHO and contractor technical input | Published bilingual entries to the launch threshold; complete HHP+ course; DOH approval secured |
 | WS3 — Certification Rollout | Assessor mobilization, queue operation, grading and certificate issuance | Platform engineer with BLHSD | Certification operational; first cohort certified; certificate verification live |
-| WS4 — Rollout & Change Management | Wave 1 and Wave 2 BHW onboarding; LGU coordination; user support | BLHSD with CHD and LGU field structures | Cohort onboarded **[TO CONFIRM]**; activation and weekly-active targets met; onboarding playbook documented |
+| WS4 — Rollout & Change Management | Onboarding across Iloilo City and Guimaras; LGU coordination; user support | BLHSD with CHD and LGU field structures | 1,014 BHWs onboarded; activation and weekly-active targets met; onboarding playbook documented |
 | WS5 — Governance & Institutionalization | MOA; steering and review bodies; content approval SOP; policy instruments | BLHSD Equity in Health and Special Concerns Section | MOA executed; governance bodies convened; content approval SOP adopted; draft departmental issuance prepared |
 | WS6 — M&E and Learning | Baseline, midline, endline; independent review; evidence brief | M&E consultant, reporting to the TWG | Baseline report; midline course-correction; endline and independent review; Year-1 evidence brief |
 
@@ -374,8 +368,8 @@ Subscriptions fund developer productivity and administrative content drafting as
 
 | Contribution area | WHO | DOH / BLHSD and LGUs |
 |---|---|---|
-| Financial | Year-1 envelope for content, validation, hardening, provisioning, equipment and independent M&E | The delivered Phase 1 registry and its nearly 300,000 profiled records; **the built Phase 2 codebase, funded by BLHSD at its own cost**; personnel time of BLHSD and CHD staff; office space and utilities; post-project hosting and maintenance budget from closeout onward |
-| Technical | HHP+ curriculum, job aids and the return-demonstration instrument; technical review and validation against HEARTS and PhilPEN 2025; normative positioning; M&E oversight | Platform concept, architecture, technical design and implementation; DOH clinical and programme expertise; content approval authority; data governance and DPA compliance; digital-health standards alignment |
+| Financial | Year-1 envelope for the build, content, validation, provisioning, equipment and independent M&E | The delivered Phase 1 registry and its nearly 300,000 profiled records; **the completed Phase 2 design and architecture, funded by BLHSD at its own cost**; personnel time of BLHSD and CHD staff; office space and utilities; post-project hosting and maintenance budget from closeout onward |
+| Technical | HHP+ curriculum, job aids and the return-demonstration instrument; technical review and validation against HEARTS and PhilPEN 2025; normative positioning; M&E oversight | Platform concept, architecture and technical design; DOH clinical and programme expertise; content approval authority; data governance and DPA compliance; digital-health standards alignment |
 | Human resources | Financing for the core team; technical staff time for content validation | Supervision of the funded team; BLHSD administrators and content owners; CHD and LGU field structures for BHW mobilization; assessors for skills demonstrations |
 | Institutional | Participation in the Steering Committee; reporting and accountability; catalytic positioning of the model for replication | Chairmanship of governance bodies; execution of the MOA; issuance of policy instruments; institutionalization pathway toward a departmental issuance and budget line |
 | Sustainability | Year-1 financing only; no continuing obligation assumed beyond agreed reporting | Ownership of the platform in perpetuity; hosting, maintenance, staffing and content upkeep after closeout; commitment to continue certification and module expansion |
@@ -384,32 +378,40 @@ Subscriptions fund developer productivity and administrative content drafting as
 
 ## 13. Budget Summary (Year 1)
 
-> **Status of this budget**
+> **How this figure was built**
 >
-> The ₱6,000,000 envelope below is carried from the earlier concept note edition, which was costed for a different region, a different module and a different cohort size. **It is presented as an envelope and a cost structure, not a final price.** The re-cost for Region VI depends on three figures not yet supplied — priority province, Year-1 BHW cohort, and the resulting cost per BHW reached — and BLHSD proposes agreeing those parameters with WHO before a final figure is fixed.
->
-> Section 9.3 also changes what the personnel line buys: because the platform is built, it funds content authoring, clinical coordination, hardening and rollout support, **not construction of a new system.** That should reduce rather than increase the engineering component, and the re-cost is expected to reflect it.
+> Bottom-up from the Year-1 workplan at Philippine market rates, not anchored to a target or carried over from another proposal. Because Phase 2 is not yet built (Section 9.2), the envelope includes constructing the platform as well as filling it with approved content and putting it in front of a cohort. **Rates to be confirmed with BLHSD and against market before submission.**
 
 | Line item | Basis | Amount (₱) |
 |---|---|---|
-| **1. Personnel** | | |
-| Platform / engineering support (full-time) | Hardening, provisioning, release and support — not new construction | 780,000 |
-| KB Content & Training Coordinator (full-time) | Authoring, clinical coordination, approval routing | 780,000 |
-| Senior engineer (output-based) | Deliverable-based, ~12 months | 1,000,000 |
-| M&E / Training & Certification consultant (output-based) | Deliverable-based, ~12 months | 1,000,000 |
-| *Subtotal — Personnel* | *59%* | *3,560,000* |
-| **2. AI / developer tooling subscriptions** | | 480,000 |
-| **3. IT equipment** | Laptops, tablets, satellite connectivity hardware and subscription | 590,000 |
-| **4. Infrastructure and hosting** | Regional cloud hosting, database scale-up, monitoring, backups, domain and SSL | 480,000 |
-| **5. Monitoring and evaluation** | Baseline, midline, endline and independent review | 540,000 |
-| **6. Contingency** | Standard provision for a first-year single-province rollout | 350,000 |
-| **ENVELOPE TOTAL (Year 1)** | | **6,000,000** |
+| Engineering — technical lead + full-stack engineer, 12 months | Build the platform to the completed design; harden and provision it | 2,460,000 |
+| Content & clinical — KB/Training Coordinator (12 mo) + clinical reviewer (output-based) | Author the six-module curriculum and the Knowledge Base corpus; route through validation and DOH approval | 1,500,000 |
+| Video & bilingual content production — 6 modules | Scripting, shoot, edit, graphics, Filipino and English | 1,150,000 |
+| Infrastructure & tooling | Hosting and database at cohort scale, monitoring, backups, AI and developer subscriptions | 1,080,000 |
+| IT equipment | Laptops, field and assessor tablets, satellite connectivity kits and subscription | 930,000 |
+| Monitoring & evaluation | Baseline, midline, endline and independent review | 900,000 |
+| Instructional design & QA — 6 months each | Curriculum design, accessibility, test and release QA | 780,000 |
+| Rollout & certification | Onboarding support across the two sites, assessor mobilization, certification operations | 700,000 |
+| Project management — 50% FTE, 12 months | Governance, TWG coordination, reporting | 540,000 |
+| Governance & institutionalization | MOA legal work, content approval SOP, policy drafting, administrator training | 400,000 |
+| Contingency — 8% | Standard provision for a first-year build-and-rollout | 860,000 |
+| **GRAND TOTAL (Year 1)** | | **11,300,000** |
 
-Cost per BHW reached: **[TO CONFIRM]** — computable once the Year-1 cohort is fixed, and proposed as the primary value-for-money comparator against the per-BHW cost of the training package.
+≈ **US$195,000** at ₱58/US$.
 
-Equipment disposition at closeout, and eligibility of capital items under the chosen instrument, to be settled in the MOA.
+### 13.1 What a peso buys, by reach
 
----
+The Year-1 figure carries the entire build, so its per-head cost is the highest this platform will ever have. The argument is what happens after.
+
+| Reach | BHWs | ₱ per BHW |
+|---|---|---|
+| Year-1 cohort — Iloilo City + Guimaras, matching the training package's own sites | 1,014 | 11,144 |
+| All of Western Visayas | 23,813 | **475** |
+| Full national profiled base | ~300,000 | **38** |
+
+Every Barangay Health Worker added after Year 1 is an onboarding cost, not a construction cost. That is the whole value proposition, and it is why the comparator that matters is the second and third rows rather than the first.
+
+**Excluded from this envelope**, and provided as counterpart contributions or funded separately: training-delivery costs, travel and per diem, and other programme implementation expenses. Equipment disposition at closeout, and the eligibility of capital items under the chosen instrument, to be settled in the MOA.
 
 ## 14. Year-1 Success Milestones
 
@@ -425,7 +427,7 @@ Equipment disposition at closeout, and eligibility of capital items under the ch
 
 ## 15. Results Framework and M&E
 
-Targets reflect a single-province Year 1 and are sex-disaggregated where applicable. Absolute targets marked **[TO CONFIRM]** follow from the agreed cohort size.
+Targets reflect a Year-1 cohort of 1,014 Barangay Health Workers across Iloilo City and Guimaras, and are sex-disaggregated where applicable.
 
 | Results level & indicator | Baseline | Year-1 target | Means of verification |
 |---|---|---|---|
@@ -434,8 +436,8 @@ Targets reflect a single-province Year 1 and are sex-disaggregated where applica
 | OUTCOME 2 — BHWs obtain reliable, timely answers | Not applicable | Deflection ≥70% by end of Year 1; answer quality ≥80% | Platform analytics and user feedback |
 | OUTCOME 3 — BHW screening knowledge and confidence improve | To be set via baseline assessment | ≥25% relative pre-to-post improvement | Pre/post knowledge assessment |
 | OUTPUT 1 — Approved learning content published | 0 | ≥150 published bilingual, DOH-approved NCD screening entries; full six-module course | Admin content and approval records |
-| OUTPUT 2 — Certification operational | 0 | Module launched; **[TO CONFIRM]** BHWs certified (target 20% of onboarded cohort) | QR-verified certification records |
-| OUTPUT 3 — Platform provisioned regionally | Single-site readiness | 1 priority province **[TO CONFIRM]**; cohort onboarded **[TO CONFIRM]** | Provisioning and onboarding records |
+| OUTPUT 2 — Certification operational | 0 | Module launched; ≥200 BHWs certified (20% of the 1,014 onboarded) | QR-verified certification records |
+| OUTPUT 3 — Platform built and provisioned | Nothing deployed | Platform built and pilot-gated; 1,014 BHWs onboarded across Iloilo City and Guimaras | Build acceptance records; provisioning and onboarding records |
 | OUTPUT 4 — Government capacity strengthened | 0 | ≥15 BLHSD and LGU staff trained; runbooks delivered | Training and handover records |
 | OUTPUT 5 — Governance institutionalized | 0 | MOA executed; governance bodies convened; content approval SOP adopted | Signed MOA; minutes; adopted SOP |
 | OUTPUT 6 — Usage insights operational | 0 | Monthly Usage Insights Brief from Month 4; theme-spike alerts operational | Admin dashboard records; brief archive |
@@ -446,8 +448,8 @@ A baseline covering BHW digital readiness and NCD screening knowledge and practi
 
 ## 16. Value for Money
 
-- **The most expensive stage is already paid for.** The national user base exists and is profiled, and the Phase 2 software is built — both at government cost. Financing goes to content, approval, deployment and evaluation rather than to discovery, design, construction and user acquisition.
-- **Low marginal cost at scale.** The rule-based Chat Guide answers matched questions at no per-query cost, so serving a region — and later the national base — incurs no per-query licensing. The optional AI fallback is modelled at ₱4,000–43,000 per year.
+- **Two expensive stages are already paid for.** The national user base exists and is profiled, and the Phase 2 design is complete — both at government cost. Financing goes to construction, content, approval, deployment and evaluation rather than to discovery, design and user acquisition.
+- **The build is paid once.** Year 1 costs ₱11,144 per BHW because it carries the whole platform. Extending the same platform to all of Region VI brings that to roughly ₱475, and to the national profiled base roughly ₱38. The rule-based Chat Guide also answers matched questions at no per-query cost; the optional AI fallback is modelled at ₱4,000–43,000 per year.
 - **Reusable architecture.** Each subsequent learning module reuses the same engine, so the second, third and fourth modules cost a fraction of the first.
 - **No vendor lock-in.** The platform runs on a portable, open-standard Postgres core. Migration onto government infrastructure is intended and designed for, subject to a hosting agreement with DOH KMITS; it is a real project with a real cost, not a zero-effort switch.
 - **It compounds an existing investment.** The clinical content WHO has already financed becomes permanent, current and national rather than frozen at month five.
@@ -533,8 +535,8 @@ HHP+ is the first of many DOH-approved learning modules, and this is the central
 
 | Year | Status | Scale and content growth |
 |---|---|---|
-| Year 1 | This ask | SCALE: one priority province, Region VI **[TO CONFIRM]**. CONTENT: HHP+ NCD screening live as the platform's first DOH-approved module, proven end to end. |
-| Year 2 | Vision | SCALE: regional saturation across Western Visayas; first adjacent-region expansion. CONTENT: ttCF and Immunization added. |
+| Year 1 | This ask | SCALE: 1,014 BHWs across Iloilo City and Guimaras — 4.3% of Region VI. CONTENT: HHP+ NCD screening live as the platform's first DOH-approved module, proven end to end. |
+| Year 2 | Vision | SCALE: regional saturation across Western Visayas — the remaining 22,799 BHWs; first adjacent-region expansion. CONTENT: Immunization added. |
 | Year 3 | Vision | SCALE: multi-region expansion; profiling-system integration; offline access for low-connectivity barangays. CONTENT: Nutrition and Family Planning added. |
 | Year 4 | Vision | SCALE: national expansion across additional DOH regions. CONTENT: Communicable Disease Surveillance and First Aid added. |
 | Year 5 | Vision | SCALE: nationwide coverage approaching the full profiled base of nearly 300,000 BHWs; full institutional operation on a DOH budget line. CONTENT: a mature, multi-programme national curriculum and certification pipeline. |
@@ -558,19 +560,21 @@ Section 3 set out six gaps that survive a perfectly executed five-month training
 
 ## 22. Conclusion and the Ask
 
-BHW Connect has already done two things that are hard to do. It identified and profiled close to 300,000 Barangay Health Workers nationwide within about a year, after three decades in which no complete national registry existed. And it has built — at government cost, without external financing — the learning, training and certification platform that registry was always meant to carry.
+BHW Connect has already done something hard. It identified and profiled close to 300,000 Barangay Health Workers nationwide within about a year, after three decades in which no complete national registry existed. And at its own cost, BLHSD has designed — end to end — the learning, training and certification platform that registry was always meant to carry.
 
-What it has not yet done is put approved clinical content in front of a single Barangay Health Worker. That is what this proposal is for.
+What it has not done is build it. No Barangay Health Worker has used any of this, and BLHSD will not describe it as built until one has.
 
-With a Year-1 engagement **[amount to be fixed following the Region VI re-cost]**, WHO can fund the content authoring, clinical validation, DOH approval, provisioning, rollout and independent evaluation that turn built software into a certified frontline — with the HHP+ community NCD screening curriculum as its first DOH-approved module. In doing so, WHO converts clinical content it has already financed into a permanent government capability, and DOH gains the foundation for every module that follows.
+With ₱11,300,000 (≈ US$195,000) over 12 months, WHO can fund the construction, the content authoring, the clinical validation, the DOH approval, the rollout and the independent evaluation that turn a settled design into a certified frontline — with the HHP+ community NCD screening curriculum as its first DOH-approved module, delivered to the same 1,014 Barangay Health Workers the training package reaches. In doing so, WHO converts clinical content it has already financed into a permanent government capability, and DOH gains the foundation for every module that follows — at ₱475 a head across the region, and ₱38 a head nationally.
 
 We welcome the opportunity to develop a full proposal, detailed logical framework and itemized budget with WHO, and we invite independent technical due diligence on the platform as part of that process.
 
 ---
 
-## Annex A — The Working Platform
+## Annex A — Design Mockups
 
-A running instance of the Phase 2 platform is available for demonstration on request from BLHSD, alongside the source repository and its automated test suites. The system is implemented and tested but has not cleared the pilot launch gate; later modules ship behind feature flags defaulted off, and no Barangay Health Worker is using it in the field today.
+Clickable mockups of every core journey — Chat Guide, gap triage, Knowledge Base authoring, e-learning, assessor certification against the digitized return-demonstration instrument, and the roll-up dashboard — are available for demonstration on request from BLHSD, in Filipino and English and in light and dark modes.
+
+**These are mockups, not a system.** They illustrate the completed Phase 2 design so it can be reviewed honestly before anything is built. Nothing is deployed, nothing is connected to the Phase 1 registry, and no Barangay Health Worker has used any of it.
 
 > **Sample-Content Notice**
 >
@@ -580,7 +584,7 @@ A running instance of the Phase 2 platform is available for demonstration on req
 
 ## Annex B — Data Privacy and Safeguards
 
-BHW Connect's consent and data-rights mechanics are implemented: a first-login consent screen in Filipino and English, a linked privacy notice on every screen, administrator-triggered data export and deactivate-and-anonymize actions for data-subject requests, and a defined retention schedule with chat and analytics data auto-purged after 24 months and audit events retained for five years. A breach-notification playbook aligned to the Philippine Data Privacy Act's 72-hour National Privacy Commission requirement is complete, and a backup-and-restore drill has been executed against a written runbook.
+BHW Connect's consent and data-rights mechanics are specified in the Phase 2 design: a first-login consent screen in Filipino and English, a linked privacy notice on every screen, administrator-triggered data export and deactivate-and-anonymize actions for data-subject requests, and a defined retention schedule with chat and analytics data auto-purged after 24 months and audit events retained for five years. A breach-notification playbook aligned to the Philippine Data Privacy Act's 72-hour National Privacy Commission requirement, and a tested backup-and-restore drill against a written runbook, are Year-1 deliverables under this engagement.
 
 Outstanding and to be completed as Year-1 deliverables:
 

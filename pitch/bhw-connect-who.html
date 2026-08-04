@@ -6,13 +6,16 @@
   single navigation model.
 
   Audience: WHO Philippines. Year 1 flagship module = HHP+ / PhilPEN 2025 community-based
-  NCD screening, Western Visayas (Region VI). ttCF / Eastern Visayas is shown as the
-  already-designed second module.
+  NCD screening, Western Visayas (Region VI).
 
-  READINESS FRAMING (deliberate, matches docs/concept-notes/…-koica.md):
-  Phase 1 (national BHW registry and profiling) is DELIVERED. Phase 2 (Knowledge Base,
-  Chat Guide, Training & Certification) is DESIGNED — the demo chapter is a design
-  prototype, not a deployed system. Do not relabel these without checking the concept note.
+  READINESS FRAMING — deliberate, and stricter than "the code exists":
+  Phase 1 (national BHW registry and profiling) is DELIVERED. Phase 2 is DESIGNED END TO END
+  BUT NOT BUILT. The demo chapter is hand-built HTML mockups, not the running application.
+  Nothing is called "built" until a Barangay Health Worker has used it in the field. Do not
+  relabel any of this without checking docs/concept-notes/…-who.md, which must match.
+
+  DO NOT REINTRODUCE ttCF, Eastern Visayas or Region VIII anywhere. That proposal is
+  preliminary, is not settled, and is deliberately absent from this deck and its note.
 
   CONTENT SAFETY: the HHP+ health specifics shown are procedural and are drawn from the
   BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 Jul 2026).
@@ -394,6 +397,43 @@
   .status .done h3{color:#7BD8A4} .status .part h3{color:var(--sampaguita)} .status .todo h3{color:var(--ember)}
   .status .col.done{border-left:3px solid #1F7A45} .status .col.part{border-left:3px solid var(--sampaguita)} .status .col.todo{border-left:3px solid var(--ember)}
 
+  /* full-breadth capability grid */
+  .feat{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.7rem,1.5vw,1.1rem);margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .fcol{background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-top:3px solid var(--verdant);
+    border-radius:10px;padding:clamp(.8rem,1.6vw,1.05rem);box-shadow:0 12px 28px -24px rgba(36,28,23,.45)}
+  .fcol h3{font-size:clamp(.92rem,1.2vw,1.06rem);font-weight:800;letter-spacing:.02em;color:var(--verdant);margin-bottom:.55rem}
+  .fcol ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+  .fcol li{font-size:clamp(.78rem,1.02vw,.9rem);line-height:1.38;color:var(--ink-soft);padding-left:.85rem;position:relative}
+  .fcol li::before{content:"";position:absolute;left:0;top:.5em;width:4px;height:4px;border-radius:50%;background:var(--verdant);opacity:.7}
+  .fcol li b{color:var(--ink);font-weight:700}
+
+  /* "already paid for" ingestion list */
+  .ingest{display:grid;grid-template-columns:1fr 1fr;gap:.5rem .9rem;margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .ingest .row{display:grid;grid-template-columns:auto auto 1fr;gap:.6rem;align-items:baseline;
+    background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-radius:9px;padding:.6rem .8rem}
+  .ingest .from{font-weight:700;font-size:clamp(.82rem,1.06vw,.94rem);color:var(--ink)}
+  .ingest .to{color:var(--verdant);font-weight:800}
+  .ingest .into{font-size:clamp(.78rem,1vw,.88rem);line-height:1.35;color:var(--ink-soft)}
+
+  /* unfilled placeholder — deliberately conspicuous so it can never ship unnoticed */
+  .tbc{display:inline-block;background:rgba(240,96,60,.16);border:1px dashed var(--ember);
+    color:var(--ember);border-radius:4px;padding:.05em .4em;font-style:normal;font-weight:700;
+    font-size:.92em;letter-spacing:.02em}
+  .light .tbc,.solution .tbc{background:rgba(184,78,18,.1);border-color:var(--marigold-deep);color:var(--marigold-deep)}
+
+  /* cost-per-BHW value ladder */
+  .ladder-v{display:flex;flex-direction:column;gap:.5rem;margin-top:.6rem}
+  .rung-v{display:grid;grid-template-columns:1fr auto auto;gap:.9rem;align-items:center;
+    background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-left:3px solid rgba(36,28,23,.18);
+    border-radius:9px;padding:.62rem .85rem}
+  .rung-v.mid{border-left-color:var(--sampaguita)}
+  .rung-v.top{border-left-color:var(--verdant);background:rgba(255,255,255,.9)}
+  .rung-v .who{font-size:clamp(.8rem,1.04vw,.92rem);line-height:1.3;color:var(--ink-soft)}
+  .rung-v .n{font-variant-numeric:tabular-nums;font-weight:700;font-size:clamp(.9rem,1.15vw,1.02rem);color:var(--ink)}
+  .rung-v .per{font-variant-numeric:tabular-nums;font-weight:800;font-size:clamp(1.05rem,1.5vw,1.35rem);color:var(--ink);text-align:right;min-width:5.2rem}
+  .rung-v.top .per{color:var(--verdant)}
+  .rung-v .per small{display:block;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
   /* act bar replaces the unusable 30-dot strip */
   .actbar{display:flex;gap:9px;pointer-events:auto;align-items:center;flex:1 1 auto;max-width:none;margin-right:1.5rem}
   .actbar .seg2{flex:1 1 0;min-width:0;cursor:pointer;background:none;border:0;padding:0;display:flex;flex-direction:column;gap:5px;text-align:left;overflow:hidden}
@@ -617,7 +657,8 @@
 
   /* ---------- responsive ---------- */
   @media (max-width:900px){
-    .gaps,.status{grid-template-columns:1fr 1fr}
+    .gaps,.status,.feat{grid-template-columns:1fr 1fr}
+    .ingest{grid-template-columns:1fr}
     .demo2{grid-template-columns:1fr}
     .closes{grid-template-columns:1fr}
     .app-scope .kpis{grid-template-columns:1fr 1fr}
@@ -628,7 +669,7 @@
        right:-12%, which becomes real horizontal scroll once overflow-y opens up. */
     .slide{justify-content:flex-start;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;padding-top:4rem;padding-bottom:4.6rem}
     .stat{grid-template-columns:1fr;gap:1rem}
-    .grid2,.grid3,.chips,.ask,.phases,.gaps,.cols2,.demo2,.status,.closes{grid-template-columns:1fr;gap:.75rem}
+    .grid2,.grid3,.chips,.ask,.phases,.gaps,.cols2,.demo2,.status,.closes,.feat,.ingest{grid-template-columns:1fr;gap:.75rem}
     .demo2 .col-r{margin-top:.6rem}
     .actbar .seg2 .lb{display:none}
     .cost-grid,.stance-grid{grid-template-columns:1fr;gap:1.3rem}
@@ -765,27 +806,14 @@
     </div>
   </section>
 
-  <!-- 05 · SIX MONTHS FROM NOW -->
-  <section class="slide darker problem" data-act="The Gap">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">04</span> Six Months From Now</div>
-      <h2 class="tight">The training ends. Then the system forgets.</h2>
-      <ul class="costlist">
-        <li><span>—</span> The video modules are cut once. Guidance moves; the videos don't.</li>
-        <li><span>—</span> The trained representative cascades to peers. Nobody measures what survives the retelling.</li>
-        <li><span>—</span> The return-demonstration checklists sit in a filing cabinet in Iloilo. Nobody can answer <em>which BHWs are competent?</em></li>
-        <li><span>—</span> At a doorstep in month nine, a BHW has a question and no one to ask.</li>
-        <li><span>—</span> The contractor's five months end. The capacity leaves with them.</li>
-      </ul>
-      <p class="kicker-line">None of this is a flaw in the training. It is what happens to every training that ends.</p>
-    </div>
-  </section>
+
 
   <!-- 06 · THE GAPS -->
   <section class="slide darker problem wide" data-act="The Gap">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">05</span> What a Training Programme Cannot Do</div>
+      <div class="eyebrow"><span class="num">04</span> What a Training Programme Cannot Do</div>
       <h2 class="tight">Six gaps that survive a perfectly executed contract.<span class="statechip open">6 open</span></h2>
+      <p class="lead" style="max-width:74ch;margin-bottom:.2rem">At a doorstep in month nine, a Barangay Health Worker has a question and no one to ask. That is the shape of all six.</p>
       <div class="gaps">
         <div class="gap">
           <div class="gap-h"><span class="gtag">G1</span><span class="gstate">Open</span></div>
@@ -800,7 +828,7 @@
         <div class="gap">
           <div class="gap-h"><span class="gtag">G3</span><span class="gstate">Open</span></div>
           <h3>The ceiling is arithmetic</h3>
-          <p>One contractor, five months, one province. Not a question of effort or scoping — of how many people five months can physically reach.</p>
+          <p><b>1,014 of Region VI's 23,813 BHWs — 4.3%.</b> One contractor, five months, two sites. The other 22,799 are reached second-hand or not at all. Not a question of effort — of how many people five months can physically reach.</p>
         </div>
         <div class="gap">
           <div class="gap-h"><span class="gtag">G4</span><span class="gstate">Open</span></div>
@@ -828,6 +856,53 @@
         <q>Technology is <em>not</em> the end-all.</q>
         <p class="lead" style="max-width:52ch;margin:clamp(1.6rem,3.6vh,2.6rem) auto 0">A better app doesn't fix a health system — people do. BHW Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- FULL BREADTH -->
+  <section class="slide light solution wide" data-act="The Answer">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">05</span> The Whole System</div>
+      <h2 class="tight">Not a chat app. A platform the whole workforce runs on.</h2>
+      <div class="feat">
+        <div class="fcol">
+          <h3>Answer</h3>
+          <ul>
+            <li><b>Knowledge Base</b> — bilingual, versioned, every entry with a named owner and review-due date</li>
+            <li><b>Chat Guide</b> — Filipino / English / Taglish, typo-tolerant, no cost per matched answer</li>
+            <li><b>Gap detection</b> — every unanswered question logged, themed and counted</li>
+            <li><b>Flip-chart builder</b> — client-facing image beside the BHW's script, approved before publish</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>Train &amp; certify</h3>
+          <ul>
+            <li><b>E-learning</b> — text, video and quizzes, with DOH-set pass marks and retake limits</li>
+            <li><b>Skills assessment</b> — assessor queue, digitized return-demonstration rubrics</li>
+            <li><b>Certification</b> — QR-verified, checkable by anyone without a login</li>
+            <li><b>Re-certification</b> — refresher pathways designed in for workforce turnover</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>Reach &amp; listen</h3>
+          <ul>
+            <li><b>Announcements</b> — cascade from national down to a single barangay</li>
+            <li><b>Surveys</b> — four question types, per-survey anonymity</li>
+            <li><b>Forum</b> — cross-cutting practice sharing, moderated after posting</li>
+            <li><b>Notifications</b> and <b>offline access</b> for low-connectivity barangays</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>See &amp; govern</h3>
+          <ul>
+            <li><b>Roll-up dashboards</b> at every tier — barangay to national</li>
+            <li><b>Reports &amp; exports</b> — CSV, Excel, PDF with a column picker</li>
+            <li><b>Plain-language audit trail</b>, bilingual, for every administrative action</li>
+            <li><b>Accessibility &amp; data privacy</b> — font scale, contrast, dark mode; consent, retention and data-rights actions</li>
+          </ul>
+        </div>
+      </div>
+      <p class="underline-note">Sixteen capabilities, <span class="mark">one platform, one login</span> — designed against a workforce that is already registered in it.</p>
     </div>
   </section>
 
@@ -861,79 +936,98 @@
     </div>
   </section>
 
-  <!-- 09 · BUILD STATUS -->
+
+
+  <!-- STATUS -->
   <section class="slide dark" data-act="The Answer">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">07</span> Build Status</div>
-      <h2 class="tight">This is built. We are not asking you to fund a build.</h2>
+      <div class="eyebrow"><span class="num">07</span> Where It Stands</div>
+      <h2 class="tight">Designed end to end. Not yet built.</h2>
       <div class="status">
         <div class="col done">
-          <h3>✓ Built and tested</h3>
+          <h3>✓ Complete</h3>
           <ul>
-            <li>Knowledge Base authoring, bilingual, with owners and review-due dates</li>
-            <li>Chat Guide matching engine — normalization, synonyms, Taglish tolerance</li>
-            <li>Gap-triage queue and admin dashboards</li>
-            <li>E-learning, quizzes, assessor queue, QR-verified certificates</li>
-            <li>16 increments · 22 database migrations · 40+ automated test suites</li>
+            <li>Requirements, data model and system architecture</li>
+            <li>User journeys for BHW, admin, assessor and designer</li>
+            <li>Content governance and DOH approval workflow</li>
+            <li>Accessibility and data-privacy approach</li>
+            <li>A staged build roadmap, costed</li>
           </ul>
         </div>
         <div class="col part">
-          <h3>◐ Built, not yet switched on</h3>
+          <h3>◐ Demonstrable today</h3>
           <ul>
-            <li>Every later module ships behind a feature flag, defaulted off</li>
-            <li>Pilot launch gate not yet cleared</li>
-            <li>No BHW is using it in the field today</li>
+            <li>Clickable mockups of every core journey — the next five slides</li>
+            <li>Bilingual and light/dark, as designed</li>
+            <li>Enough to review the design honestly, not a working system</li>
           </ul>
         </div>
         <div class="col todo">
-          <h3>○ What Year 1 funds</h3>
+          <h3>○ Not yet done</h3>
           <ul>
-            <li>Operational hardening and regional provisioning</li>
-            <li>Authoring the HHP+ curriculum as approved content</li>
-            <li>Clinical validation and DOH approval</li>
-            <li>Onboarding, supervision and independent evaluation</li>
+            <li>The platform itself — this is what Year 1 builds</li>
+            <li>HHP+ curriculum authored, clinically validated, DOH-approved</li>
+            <li>Provisioning, onboarding, certification and evaluation</li>
+            <li>Piloting with real Barangay Health Workers</li>
           </ul>
         </div>
       </div>
-      <p class="underline-note">We will submit the codebase to <span class="mark">independent technical due diligence</span> before signature. The next five slides are the working software, not a mockup.</p>
+      <p class="underline-note">We will not call anything <span class="mark">built</span> until a Barangay Health Worker has used it in the field. Today the design is complete and the mockups are real; the system is not.</p>
     </div>
   </section>
 
-  <!-- 10–14 · DEMO (filled by script) -->
+  <!-- DEMO (filled by script) -->
   <section class="slide darker demo wide" data-act="Prototype" data-scene="chat"><div class="slide__inner"></div></section>
   <section class="slide darker demo wide" data-act="Prototype" data-scene="loop"><div class="slide__inner"></div></section>
   <section class="slide darker demo wide" data-act="Prototype" data-scene="modules"><div class="slide__inner"></div></section>
   <section class="slide darker demo wide" data-act="Prototype" data-scene="checklist"><div class="slide__inner"></div></section>
   <section class="slide darker demo wide" data-act="Prototype" data-scene="certify"><div class="slide__inner"></div></section>
 
-  <!-- 15 · DESIGNED TO LAST -->
+  <!-- DESIGNED TO LAST -->
   <section class="slide light solution" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">08</span> Designed to Last</div>
       <h2 class="tight">HHP+ is module one, not the boundary.</h2>
       <div class="cols2" style="align-items:center">
         <div>
-          <div class="listhead">The catalogue this engine already holds</div>
+          <div class="listhead">One engine, many curricula</div>
           <ul class="numlist">
-            <li><i>1</i><span><b>Community NCD screening — HHP+ / PhilPEN.</b> Year 1 flagship, Region VI.</span></li>
-            <li><i>2</i><span><b>ttCF — first 1,000 days.</b> Designed, seeking separate funding for Region VIII.</span></li>
-            <li><i>+</i><span>Immunization · Nutrition · Family Planning · Communicable Disease Surveillance · First Aid · BHW Administrative Procedures.</span></li>
+            <li><i>1</i><span><b>Community NCD screening — HHP+ / PhilPEN 2025.</b> Year 1 flagship, Region VI. Proven end to end, and the template every later module inherits.</span></li>
+            <li><i>+</i><span>Immunization · Nutrition · Family Planning · Communicable Disease Surveillance · First Aid · BHW Administrative Procedures — each on the roadmap, each a content and approval exercise.</span></li>
           </ul>
-          <p class="src">Adding a programme is content authoring and DOH approval — not a new build. Each costs a fraction of the first. We are approaching more than one partner across this catalogue, and will say so openly in any agreement.</p>
+          <p class="src">Adding a programme is authoring and DOH approval, not a new build. The second module and the third cost a fraction of the first, because the engine, the workflow and the workforce are already there.</p>
         </div>
         <div class="chips" style="grid-template-columns:1fr;margin-top:0">
-          <div class="chipcard"><b>No per-question licensing</b><p>The rule-based engine answers matched questions at no marginal cost; the AI fallback for unmatched questions is modelled at ₱4,000–43,000/year, inside the existing tooling line.</p></div>
-          <div class="chipcard"><b>Portable by design</b><p>An open, non-proprietary Postgres core intended for migration onto government infrastructure — subject to a hosting agreement with DOH KMITS.</p></div>
-          <div class="chipcard"><b>Reusable</b><p>One engine, many curricula. The second module and the third are content and approval.</p></div>
+          <div class="chipcard"><b>No per-question licensing</b><p>The rule-based engine answers matched questions at no marginal cost. The optional AI fallback for unmatched questions is modelled at ₱4,000–43,000 a year.</p></div>
+          <div class="chipcard"><b>Portable by design</b><p>An open, non-proprietary Postgres core intended for migration onto government infrastructure, subject to a hosting agreement with DOH KMITS.</p></div>
+          <div class="chipcard"><b>Built for turnover</b><p>BHW and local-official turnover is expected, not exceptional. Self-service onboarding, refreshers and re-certification are designed in, so a new cohort needs no new project.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 16 · WHY WHO -->
+  <!-- FREEBIES -->
+  <section class="slide light solution wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">09</span> Already Paid For</div>
+      <h2 class="tight">Everything you have already produced comes with you.</h2>
+      <p class="lead" style="max-width:70ch">The platform ingests existing material rather than recreating it. Each of these was funded once and currently lives as a printed artefact or a file on somebody's laptop; on the platform it becomes permanent, updatable and nationally distributable.</p>
+      <div class="ingest">
+        <div class="row"><span class="from">NCD flipcharts</span><span class="to">→</span><span class="into">Flip-chart module — client-facing image beside the BHW's script</span></div>
+        <div class="row"><span class="from">Clinical job aids</span><span class="to">→</span><span class="into">Knowledge Base articles, searchable at the doorstep</span></div>
+        <div class="row"><span class="from">Monitoring tools</span><span class="to">→</span><span class="into">Structured forms and surveys with roll-up reporting</span></div>
+        <div class="row"><span class="from">The 29-criterion CBG checklist</span><span class="to">→</span><span class="into">The assessment engine, auto-scored against its own bands</span></div>
+        <div class="row"><span class="from">HHP+ instructional videos</span><span class="to">→</span><span class="into">E-learning modules, re-cuttable when guidance moves</span></div>
+        <div class="row"><span class="from">PhilPEN protocols &amp; facilitator guides</span><span class="to">→</span><span class="into">Course content and Knowledge Base entries</span></div>
+      </div>
+      <p class="underline-note">No content is rebuilt and nothing is re-procured. Every peso already spent stops having a <span class="mark">shelf life</span>.</p>
+    </div>
+  </section>
+
+  <!-- WHY WHO -->
   <section class="slide light" data-act="The Ask">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">09</span> Why WHO</div>
+      <div class="eyebrow"><span class="num">10</span> Why WHO</div>
       <h2 class="tight">Your normative work, given a delivery system.</h2>
       <div class="grid3">
         <div class="pillar">
@@ -960,7 +1054,7 @@
   <!-- 17 · THE ASK -->
   <section class="slide darker" data-act="The Ask">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">10</span> The Ask</div>
+      <div class="eyebrow"><span class="num">11</span> The Ask</div>
       <h2 class="tight">What we're asking WHO to build with us.</h2>
       <div class="ask">
         <div class="item">
@@ -988,35 +1082,41 @@
     </div>
   </section>
 
-  <!-- 18 · SCOPE & COST -->
-  <section class="slide light" data-act="The Ask">
+  <!-- SCOPE, COVERAGE & COST -->
+  <section class="slide light wide" data-act="The Ask">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">11</span> Scope &amp; Year-1 Cost</div>
-      <h2 class="tight">Twelve months, one priority province, one flagship module.</h2>
+      <div class="eyebrow"><span class="num">12</span> Scope, Coverage &amp; Year-1 Cost</div>
+      <h2 class="tight">The build is paid once. Everyone after that is nearly free.</h2>
       <div class="cols2" style="align-items:start">
         <div>
-          <div class="total" style="margin-top:0">
-            <span class="amt">₱6,000,000</span>
-            <span class="usd">≈ US$103,000 · 12 months</span>
+          <div class="listhead">What a peso buys, by reach</div>
+          <div class="ladder-v">
+            <div class="rung-v"><span class="who">Year-1 cohort — the training package's own two sites</span><span class="n">1,014</span><span class="per">₱11,144<small>per BHW</small></span></div>
+            <div class="rung-v mid"><span class="who">All of Western Visayas</span><span class="n">23,813</span><span class="per">₱475<small>per BHW</small></span></div>
+            <div class="rung-v top"><span class="who">The national profiled base</span><span class="n">~300,000</span><span class="per">₱38<small>per BHW</small></span></div>
           </div>
-          <div class="meta-row" style="margin-top:.9rem">
-            <span class="mtag">Province: <span class="tbc">[TO CONFIRM]</span></span>
-            <span class="mtag">Year-1 BHWs onboarded: <span class="tbc">[TO CONFIRM]</span></span>
-            <span class="mtag">Cost per BHW reached: <span class="tbc">[TO CONFIRM]</span></span>
-          </div>
-          <p class="src"><b>This figure is being re-costed for the Region VI scope</b> and is presented as an envelope, not a final price. The province and cohort above are the parameters we propose agreeing in this meeting.</p>
+          <p class="src">Year 1 carries the entire build, so its per-head figure is the highest this platform will ever have. Every BHW added afterwards is onboarding, not construction — which is the whole value argument.</p>
         </div>
         <div>
-          <div class="listhead">Where Year 1 goes</div>
+          <div class="listhead">Year-1 envelope — bottom-up</div>
           <div class="budget" style="margin-top:.5rem">
-            <div class="bline"><b>₱3.56M</b><span>Core team — 59%</span></div>
-            <div class="bline"><b>₱590K</b><span>IT equipment — 10%</span></div>
-            <div class="bline"><b>₱540K</b><span>M&amp;E — 9%</span></div>
-            <div class="bline"><b>₱480K</b><span>AI / dev tooling — 8%</span></div>
-            <div class="bline"><b>₱480K</b><span>Infrastructure — 8%</span></div>
-            <div class="bline"><b>₱350K</b><span>Contingency — 6%</span></div>
+            <div class="bline"><b>₱2.46M</b><span>Engineering — build, harden, provision</span></div>
+            <div class="bline"><b>₱1.50M</b><span>Content authoring &amp; clinical validation</span></div>
+            <div class="bline"><b>₱1.15M</b><span>Video &amp; bilingual content production</span></div>
+            <div class="bline"><b>₱1.08M</b><span>Infrastructure &amp; tooling</span></div>
+            <div class="bline"><b>₱0.93M</b><span>Equipment</span></div>
+            <div class="bline"><b>₱0.90M</b><span>Independent M&amp;E</span></div>
+            <div class="bline"><b>₱0.78M</b><span>Instructional design &amp; QA</span></div>
+            <div class="bline"><b>₱0.70M</b><span>Rollout &amp; certification</span></div>
+            <div class="bline"><b>₱0.54M</b><span>Project management</span></div>
+            <div class="bline"><b>₱0.40M</b><span>Governance &amp; institutionalization</span></div>
+            <div class="bline"><b>₱0.86M</b><span>Contingency — 8%</span></div>
           </div>
-          <p class="src">Covers platform hardening, content authoring, provisioning and maintenance. Training delivery, travel and per diem are counterpart contributions or funded separately. Full results framework, risk register, timeline and data-protection annex are in the accompanying concept note.</p>
+          <div class="total">
+            <span class="amt">₱11.3M</span>
+            <span class="usd">≈ US$195,000 · 12 months</span>
+          </div>
+          <p class="src">Rates to be confirmed with BLHSD before submission. Covers the build, the content and the rollout. Training delivery, travel and per diem sit outside this envelope as counterpart contributions. Results framework, risk register, timeline and data-protection annex are in the accompanying concept note.</p>
         </div>
       </div>
     </div>
@@ -1025,7 +1125,7 @@
   <!-- 19 · GAPS CLOSED -->
   <section class="slide light solution wide" data-act="The Ask">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">12</span> Every Gap, Closed</div>
+      <div class="eyebrow"><span class="num">13</span> Every Gap, Closed</div>
       <h2 class="tight">The contract trains them. This is what keeps them trained.<span class="statechip closed">6 closed</span></h2>
       <div class="closes">
         <div class="close-row"><span class="gtag">G1</span><div><s>Materials go stale</s><b>Update once, everywhere, the same day</b></div></div>
@@ -1042,7 +1142,7 @@
   <!-- 20 · CLOSE -->
   <section class="slide darker centered close" data-act="">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">13</span> The Goal</div>
+      <div class="eyebrow"><span class="num">14</span> The Goal</div>
       <h2>A connected, capable frontline — and a workforce DOH can finally see.</h2>
       <p class="lead">Three hundred thousand health workers, trained, certified and supported. Millions of families, better cared for. And the clinical work WHO has already paid for, kept current instead of frozen.</p>
       <div class="invite">One province · twelve months · ₱6.0M (≈US$103K) · DOH owns the platform, its code and its data.</div>
@@ -1211,14 +1311,6 @@
       tdNote:"Bahagi ng roll-up dashboard — makikita ng bawat antas ng hierarchy ang sarili nitong saklaw.",
 
       /* ---- catalogue ---- */
-      catHeading:"Katalogo ng modyul", stPub:"Nailathala", stPlan:"Nakaplano",
-      c1b:"Community-Based NCD Screening (HHP+)", c1s:"6 na modyul · Year 1 flagship · Region VI",
-      c2b:"Timed & Targeted Care for Families (ttCF)", c2s:"12 home visit · unang 1,000 araw · Region VIII",
-      c3b:"Immunization", c4b:"Nutrition", c5b:"Family Planning",
-      c6b:"Communicable Disease Surveillance", c7b:"First Aid", c8b:"BHW Administrative Procedures",
-      catSoon:"Pag-akda ng nilalaman at pag-apruba ng DOH — hindi bagong sistema",
-      catNote:"Ang parehong Knowledge Base at Training & Certification engine ang bumubuhat sa lahat ng ito. Iyon ang buong punto.",
-
       /* ---- notices ---- */
       protoNote:"Prototype ng disenyo. Ipinapakita nito ang disenyo ng Phase 2 — hindi ito naka-deploy na sistema. Ang nilalamang pangkalusugan ay halimbawa lamang at kailangan pa ng clinical validation at pag-apruba ng DOH bago gamitin ng kahit sinong BHW.",
       tagDone:"Naihatid · Phase 1", tagDesign:"Disenyo · Phase 2"
@@ -1345,15 +1437,6 @@
       tdActive:"BHWs in training", tdAvg:"Avg days to certify",
       tdByBrgy:"Completion by barangay",
       tdNote:"Part of the roll-up dashboard — every level of the hierarchy sees its own scope.",
-
-      catHeading:"Module catalogue", stPub:"Published", stPlan:"Planned",
-      c1b:"Community-Based NCD Screening (HHP+)", c1s:"6 modules · Year 1 flagship · Region VI",
-      c2b:"Timed & Targeted Care for Families (ttCF)", c2s:"12 home visits · first 1,000 days · Region VIII",
-      c3b:"Immunization", c4b:"Nutrition", c5b:"Family Planning",
-      c6b:"Communicable Disease Surveillance", c7b:"First Aid", c8b:"BHW Administrative Procedures",
-      catSoon:"Content authoring and DOH approval — not a new system",
-      catNote:"The same Knowledge Base and Training & Certification engine carries all of these. That is the entire point.",
-
       protoNote:"Design prototype. It illustrates the Phase 2 design — it is not a deployed system. Health content shown is illustrative and requires clinical validation and DOH approval before any BHW-facing use.",
       tagDone:"Delivered · Phase 1", tagDesign:"Designed · Phase 2"
     }
@@ -1369,8 +1452,8 @@
      feature; it should not make the narration unreadable to a non-Filipino reviewer. */
   function demo2(o){
     return '<div class="demo2"><div class="col-l">'
-      + '<div class="eyebrow"><span class="num">'+o.n+'</span> '+o.eye+'</div>'
-      + '<h2>'+o.h+'</h2>'
+      + '<div class="eyebrow"><span class="num"></span> '+o.eye+'</div>'
+      + '<h2>'+o.h+' <span class="ptag">Mockup · Phase 2 design</span></h2>'
       + '<p class="sub">'+o.p+'</p>'
       + '<ul class="callouts">'
       + o.c.map(function(x,i){ return '<li><i>'+(i+1)+'</i><span>'+x+'</span></li>'; }).join('')
@@ -1433,7 +1516,7 @@
         + '<div class="bub b">'+esc(t("a2"))+'</div>'
         + '</div>';
       return demo2({
-        n:'01', eye:'Chat Guide',
+        eye:'Chat Guide',
         h:'She asks in her own words, mid-visit.',
         p:'A BHW in Iloilo, at a household, with a question the training did not cover. The answer comes from DOH-approved content, on the phone in her hand.',
         c:['Asked in Taglish, misspelled — <b>“pano mag cbg sa bhw, safe ba ang fingerstick?”</b>',
@@ -1466,7 +1549,7 @@
         + '</div>'
         + '<div class="acts"><span class="btn p big">'+t("publish")+'</span></div></div>';
       return demo2({
-        n:'02', eye:'The loop, closed',
+        eye:'The loop, closed',
         h:'A question nobody could answer becomes approved content.',
         p:'Every unmatched question is logged, themed and counted — so the content grows from what the field actually asks, not from what someone guessed it would ask.',
         c:['<b>14 BHWs</b> asked what to do when a patient refuses screening. Nobody had written an answer.',
@@ -1493,7 +1576,7 @@
         + '<div class="opt ok"><span class="k"></span><span>'+esc(t("qo2"))+'</span></div>'
         + '<div class="verdict">'+t("quizPass")+'</div></div>';
       return demo2({
-        n:'03', eye:'Training',
+        eye:'Training',
         h:'The six HHP+ modules, on a BHW’s phone.',
         p:'Not a parallel curriculum. The APW’s own six modules, authored as approved content and delivered directly to every BHW rather than cascaded through a representative.',
         c:['Module for module, <b>the same curriculum the training package defines</b>.',
@@ -1540,7 +1623,7 @@
         + '</div></div>'
         + '<p style="font-size:10px;color:var(--a-ink-70);margin-top:8px;line-height:1.4">'+t("thr")+'</p>';
       return demo2({
-        n:'04', eye:'Assessor',
+        eye:'Assessor',
         h:'Your own return-demonstration checklist, scored automatically.',
         p:'The DOH instrument for capillary blood glucose monitoring, digitized exactly as written — same criteria, same rating scale, same competency bands.',
         c:['<b>29 criteria, 87-point maximum</b> — reproduced from the DOH instrument, not reinvented.',
@@ -1565,7 +1648,7 @@
         + kpi('Certified · Pavia','38') + kpi('In training','57')
         + kpi('Completion','64%') + kpi('Avg days to certify','19') + '</div>';
       return demo2({
-        n:'05', eye:'Certificate & roll-up',
+        eye:'Certificate & roll-up',
         h:'Competency becomes a record DOH can query.',
         p:'A passing demonstration issues a QR-verified certificate automatically — and writes that competency into the national registry, where every tier can see it.',
         c:['Publicly verifiable without a login, so an LGU can check a credential in seconds.',
@@ -1699,7 +1782,7 @@
     this.querySelectorAll('button').forEach(function(x){
       x.setAttribute('aria-pressed', x===b ? 'true' : 'false');
     });
-    renderDemo(); scheduleFit();
+    renderDemo(); numberEyebrows(); scheduleFit();
   });
   document.getElementById('themeSeg').addEventListener('click', function(e){
     var b = e.target.closest('button'); if(!b) return;
@@ -1745,10 +1828,23 @@
     else { raf = null; cx.clearRect(0,0,cv.width,cv.height); }
   }
 
+  /* Eyebrow ordinals are assigned from slide order rather than hard-coded, so cutting,
+     merging or reordering a slide can never leave a stale or duplicated number. */
+  function numberEyebrows(){
+    var k = 0;
+    slides.forEach(function(s){
+      var el = s.querySelector('.eyebrow .num');
+      if(!el) return;
+      k++;
+      el.textContent = (k < 10 ? '0' : '') + k;
+    });
+  }
+
   /* ---- init ---- */
   document.documentElement.setAttribute('data-apptheme','light');
   totEl.textContent = pad(total);
   renderDemo();
+  numberEyebrows();
   go(0);
   fitAll();
   if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);

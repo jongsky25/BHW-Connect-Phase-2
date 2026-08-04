@@ -10,46 +10,61 @@ app — open directly in any browser, or view the hosted Artifact link.
 
 ## `bhw-connect-who.html`
 
-**20 slides**, built for a 15–20 minute live slot presented by the project team. Combines
+**21 slides**, built for a 15–20 minute live slot presented by the project team. Combines
 the narrative pitch and the product walkthrough into one navigation model: arrows / swipe /
 keyboard, a five-segment chapter bar, and content auto-fitted to the viewport.
 
 Structure — **Standing** (Phase 1 delivered · what BHW Connect is) → **The Gap** (what HHP+
-built and the package on the table · six months from now · six gaps G1–G6) → **The Answer**
-(stance · the engine · build status) → **Prototype** (five demo slides) → **The Ask** (designed
-to last · why WHO · the ask · scope and cost · every gap closed) → close.
+built and the package on the table · six gaps G1–G6) → **The Answer** (stance · the whole
+system · the engine · where it stands) → **Prototype** (five mockup slides) → **The Ask**
+(designed to last · already paid for · why WHO · the ask · scope, coverage and cost · every
+gap closed) → close.
+
+Eyebrow ordinals are assigned at runtime from slide order (`numberEyebrows()`), so cutting,
+merging or reordering a slide can never leave a stale or duplicated number. Don't hard-code them.
 
 **Controls** — arrow keys / space / Home / End, the chapter bar, or swipe. On demo slides
 only, a **Wika** toggle switches the *in-app UI* between Filipino and English and an **App
 theme** toggle flips it light/dark. Both are real product features being demonstrated.
 
-### Four things to keep straight when editing
+### Six things to keep straight when editing
 
 1. **Deck chrome is always English; only the device content follows the Wika toggle.** The
    toggle used to flip slide headlines too, which made eight consecutive slides unreadable to
    a non-Filipino reviewer. Demo scene chrome is written as English literals in `demo2()`;
    `t()` is for in-device strings only.
 
-2. **Build status is claimed as *built*, not *deployed*.** The defensible claim is: built and
-   tested, shipping behind feature flags defaulted off, pilot launch gate not yet cleared, no
-   BHW using it in the field. Do not overshoot into live use, and do not revert to "design
-   prototype" — the repository contradicts that. The matching leave-behind is
-   `docs/concept-notes/bhw-connect-phase2-concept-note-who.md`, whose §9 states the same
-   thing; **the two must be changed together.** Do not hand over the KOICA edition alongside
-   this deck — it still says Phase 2 is "conceptualized and planned… funded under this
-   proposal", which directly contradicts the deck.
+2. **Nothing is claimed as built.** Phase 2 is *designed end to end and not yet built*; the
+   demo chapter is hand-built HTML mockups, not a running application. The standard is
+   deliberately stricter than "the code exists": **nothing is called built until a Barangay
+   Health Worker has used it in the field.** The matching leave-behind is
+   `docs/concept-notes/bhw-connect-phase2-concept-note-who.md`, whose §9 says the same thing
+   — **the two must be changed together.** Do not hand over the KOICA edition alongside this
+   deck; its Year-1 scope and framing are different.
 
-3. **No clinical thresholds are asserted.** Health content is procedural and traces to the
+3. **Never reintroduce ttCF, Eastern Visayas or Region VIII.** That proposal is preliminary
+   and unsettled, and is deliberately absent from both documents. Any first-mover exclusivity
+   between partners is a verbal point and is never written down.
+
+4. **No clinical thresholds are asserted.** Health content is procedural and traces to the
    BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 July 2026),
    which contains no PhilPEN numeric cut-offs. The CBG return-demonstration checklist is
    reproduced faithfully — 29 criteria, 87-point maximum, 90% / 75% bands — because those are
    the DOH instrument's own. Every health string carries a validation notice.
 
-4. **`[TO CONFIRM]` markers are load-bearing.** The province, Year-1 BHW cohort and cost per
-   BHW on the scope slide are unfilled on purpose. The ₱6M and the old "26,000 BHWs" figure
-   were imported from the Eastern Visayas concept note and are the wrong region; filling them
-   with plausible-looking numbers is the exact failure a funder review flagged. Replace only
-   with real figures.
+5. **Coverage arithmetic is the spine of the value argument.** From the Phase 1 registry:
+   Region VI has **23,813** BHWs; the training package's initial sites — Iloilo City (**309**)
+   and Guimaras (**705**) — hold **1,014**, or **4.3%**, leaving **22,799** unreached. Year-1
+   cost per BHW is ₱11,144 because Year 1 carries the whole build; the same platform is ₱475
+   per BHW across Region VI and ₱38 nationally. G3 and the scope slide both depend on these —
+   if any figure changes, change all of them together.
+
+   ⚠️ **Unverified:** the APW deck says coverage is "Iloilo (all districts)". The 309 is Iloilo
+   *City*. If "all districts" means Iloilo *province*, the 4.3% headline is wrong.
+
+6. **`[TO CONFIRM]` markers are load-bearing** and render as conspicuous `.tbc` chips so they
+   cannot ship unnoticed. Two remain in the deck — the title slide's date/version/contact, and
+   the Phase 1 registry-extract evidence. Replace only with real figures.
 
 ### Visual registers
 
