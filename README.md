@@ -57,6 +57,9 @@ INC-1.
 | `npm run test` / `npm run test:watch` | Vitest unit tests |
 | `npm run e2e` | Playwright E2E (builds and serves automatically) |
 | `npx lhci autorun` | Performance budget check (needs a running build; see `lighthouserc.js`) |
+| `npm run kb:load` | Load versioned KB content into a Supabase project (see `content/kb/README.md`) |
+| `npm run kb:unpublish` | Return loaded KB content to draft — the kill switch |
+| `npm run kb:check-sources` | Verify every citation URL in the KB content still resolves |
 
 ## Design tokens
 

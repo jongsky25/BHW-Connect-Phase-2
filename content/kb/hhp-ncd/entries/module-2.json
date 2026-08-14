@@ -1,0 +1,281 @@
+{
+  "$comment": "Module 2 — Community risk assessment and structured use of the NCD Flipchart (deck slide 8): correct sequencing of risk assessment questions, identifying findings that need immediate or urgent referral, keeping flipchart results consistent with the referral recommendation.",
+  "category": "hhp-m2-risk-assessment-flipchart",
+  "entries": [
+    {
+      "id": "m2-what-is-flipchart",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What is the NCD Flipchart and what is it for?",
+      "question_fil": "Ano ang NCD Flipchart at para saan ito?",
+      "answer_en": "The NCD Flipchart is the DOH–WHO job aid that carries information on noncommunicable diseases such as hypertension, diabetes, cancer and chronic lung disease. In community screening it works two ways at once: it structures the risk assessment questions you ask, and its client-facing pages let you explain the disease to the household while you assess them.",
+      "answer_fil": "Ang NCD Flipchart ay job aid ng DOH at WHO na naglalaman ng impormasyon tungkol sa mga hindi nakakahawang sakit gaya ng altapresyon, diabetes, kanser at malubhang sakit sa baga. Sa screening sa komunidad, dalawa ang silbi nito: inaayos nito ang pagkakasunod-sunod ng mga tanong sa risk assessment, at ang mga pahinang nakaharap sa kliyente ay pantulong sa pagpapaliwanag ng sakit habang sinusuri mo sila.",
+      "keywords": ["flipchart", "flip chart", "ncd flipchart", "job aid", "ano", "para saan", "gamit", "tool"],
+      "sources": ["upv-ncd-flipchart-tot", "doh-philpen"]
+    },
+    {
+      "id": "m2-why-sequence-matters",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Why does the order of the risk assessment questions matter?",
+      "question_fil": "Bakit mahalaga ang pagkakasunod-sunod ng mga tanong sa risk assessment?",
+      "answer_en": "Because the sequence is what makes results comparable between BHWs and between barangays. Asking in the printed order also puts easy, non-threatening questions first and sensitive ones later, once the client is comfortable, and it stops you from skipping an item and discovering the gap only after the household visit has ended.",
+      "answer_fil": "Dahil ang pagkakasunod-sunod ang nagpapantay ng resulta sa pagitan ng mga BHW at ng mga barangay. Ang pagtatanong ayon sa nakalimbag na pagkakasunod ay naglalagay din ng madali at hindi nakakailang na tanong sa simula at ng mga sensitibong tanong sa huli, kapag panatag na ang kliyente, at napipigilan nitong makaligtaan mo ang isang aytem at mapansin lamang ito matapos ang pagbisita.",
+      "keywords": ["sunod", "order", "sequence", "pagkakasunod", "bakit", "consistent", "pare pareho", "form"],
+      "sources": ["doh-philpen-raf", "who-pen"]
+    },
+    {
+      "id": "m2-raf-contents",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What information does the PhilPEN Risk Assessment Form collect?",
+      "question_fil": "Anong impormasyon ang kinukuha ng PhilPEN Risk Assessment Form?",
+      "answer_en": "It collects identifying details, age and sex, personal and family history of hypertension, diabetes and heart disease, behavioural risk factors such as tobacco and alcohol use, diet and physical activity, physical measurements, and symptom screening. It ends with the risk finding and the recommended action. Use the current form issued by your LGU — do not copy questions from memory.",
+      "answer_fil": "Kinukuha nito ang pagkakakilanlan, edad at kasarian, personal at pampamilyang kasaysayan ng altapresyon, diabetes at sakit sa puso, mga panganib sa pag-uugali gaya ng paninigarilyo at pag-inom ng alak, pagkain at ehersisyo, mga pisikal na sukat, at pagsusuri ng sintomas. Nagtatapos ito sa natuklasang panganib at inirerekomendang hakbang. Gamitin ang kasalukuyang form mula sa inyong LGU — huwag kopyahin ang mga tanong mula sa memorya.",
+      "keywords": ["risk assessment form", "raf", "form", "impormasyon", "laman", "contents", "philpen form", "tanong"],
+      "sources": ["doh-philpen-raf", "doh-philpen"]
+    },
+    {
+      "id": "m2-family-history",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "How do I ask about family history of hypertension or diabetes?",
+      "question_fil": "Paano ko itatanong ang kasaysayan ng altapresyon o diabetes sa pamilya?",
+      "answer_en": "Ask specifically about blood relatives — parents, brothers and sisters — not in-laws, and use plain words: 'May altapresyon o diabetes ba ang tatay, nanay, o kapatid ninyo?' If they are unsure, record it as unknown rather than guessing. A first-degree relative with the disease raises the person's own risk.",
+      "answer_fil": "Magtanong tungkol sa kadugo — magulang at kapatid — hindi sa mga hipag o bayaw, at gumamit ng simpleng salita: 'May altapresyon o diabetes ba ang tatay, nanay, o kapatid ninyo?' Kung hindi sila sigurado, itala bilang hindi alam sa halip na manghula. Ang malapit na kadugong may sakit ay nagpapataas ng panganib ng tao.",
+      "keywords": ["family history", "pamilya", "kasaysayan", "magulang", "kapatid", "kadugo", "hereditary", "namamana"],
+      "sources": ["doh-philpen-raf", "who-pen"]
+    },
+    {
+      "id": "m2-ask-smoking",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "How do I ask about smoking without offending the client?",
+      "question_fil": "Paano ko itatanong ang paninigarilyo nang hindi nasasaktan ang kliyente?",
+      "answer_en": "Ask it as a routine health question, in the same tone as any other item: 'Naninigarilyo po ba kayo ngayon, o dati?' Do not lecture at the moment of asking. Record current, former or never, and save the advice for the counselling step in Module 5, when the client is ready to hear it.",
+      "answer_fil": "Itanong ito bilang karaniwang tanong pangkalusugan, sa parehong tono ng ibang aytem: 'Naninigarilyo po ba kayo ngayon, o dati?' Huwag magsermon habang nagtatanong. Itala kung kasalukuyan, dati, o hindi kailanman, at itabi ang payo para sa hakbang na payuhan sa Modyul 5, kapag handa nang makinig ang kliyente.",
+      "keywords": ["sigarilyo", "smoking", "naninigarilyo", "tobacco", "tanong", "ask", "sensitive", "hiya"],
+      "sources": ["who-hearts", "doh-philpen-raf"]
+    },
+    {
+      "id": "m2-ask-alcohol",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "How do I ask about alcohol use?",
+      "question_fil": "Paano ko itatanong ang pag-inom ng alak?",
+      "answer_en": "Ask about frequency and usual amount in ordinary terms — how many days in a week, and how much on a typical drinking day — rather than asking whether they are a drinker, which invites a defensive no. Ask without judgement and record what they say. Heavy drinking raises blood pressure directly.",
+      "answer_fil": "Magtanong tungkol sa dalas at karaniwang dami sa simpleng salita — ilang araw sa isang linggo, at gaano karami sa karaniwang araw ng inuman — sa halip na tanungin kung mahilig sila uminom, na madalas sagutin ng hindi. Magtanong nang walang paghusga at itala ang sinabi nila. Ang labis na pag-inom ay tuwirang nagpapataas ng presyon.",
+      "keywords": ["alak", "alcohol", "inom", "drinking", "tanong", "dalas", "frequency", "inuman"],
+      "sources": ["who-hearts", "doh-philpen-raf"]
+    },
+    {
+      "id": "m2-ask-diet",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What should I ask about diet during risk assessment?",
+      "question_fil": "Ano ang dapat kong itanong tungkol sa pagkain sa risk assessment?",
+      "answer_en": "Ask about the things that matter most for blood pressure and blood sugar: salty food and instant seasonings, fried and fatty food, sweetened drinks, and how often they eat fruit and vegetables. Concrete questions — 'Ilang beses sa isang linggo kayo kumakain ng gulay?' — give more usable answers than asking whether their diet is healthy.",
+      "answer_fil": "Itanong ang pinakamahalaga para sa presyon at asukal: maalat na pagkain at instant na pampalasa, piniritong at mamantikang pagkain, matatamis na inumin, at gaano kadalas kumain ng prutas at gulay. Ang tiyak na tanong — 'Ilang beses sa isang linggo kayo kumakain ng gulay?' — ay mas mapapakinabangan kaysa sa pagtatanong kung malusog ba ang kanilang pagkain.",
+      "keywords": ["pagkain", "diet", "asin", "maalat", "salt", "gulay", "prutas", "matamis", "nutrisyon"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m2-ask-physical-activity",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "How do I assess physical activity in a farming or fishing community?",
+      "question_fil": "Paano ko susuriin ang ehersisyo sa komunidad ng magsasaka o mangingisda?",
+      "answer_en": "Count work as activity, because it is. Ask how many days a week they do work or movement that makes them breathe harder, and roughly how long each day. Someone who farms all morning may already meet the target, while a tricycle driver who sits all day may not, even though both would say they work hard.",
+      "answer_fil": "Ibilang ang trabaho bilang aktibidad, dahil aktibidad nga ito. Itanong kung ilang araw sa isang linggo silang gumagawa o gumagalaw nang husto hanggang humingal, at gaano katagal bawat araw. Ang nagsasaka buong umaga ay maaaring nakakaabot na sa target, samantalang ang tricycle driver na nakaupo buong araw ay maaaring hindi, kahit pareho silang magsasabing pagod sila sa trabaho.",
+      "keywords": ["ehersisyo", "exercise", "physical activity", "kilos", "trabaho", "magsasaka", "farming", "galaw"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m2-waist-circumference",
+      "domain": "risk-assessment",
+      "tier": "pending",
+      "question_en": "How do I measure waist circumference correctly?",
+      "question_fil": "Paano ko tama na susukatin ang bilog ng baywang?",
+      "answer_en": "Have the person stand with feet together and arms relaxed, place the tape midway between the lowest rib and the top of the hip bone directly on the skin or over light clothing, keep the tape level all the way round, and read at the end of a normal breath out — do not pull the tape tight. The cut-off values that trigger a referral must be taken from the current PhilPEN 2025 protocol.",
+      "answer_fil": "Patayuin ang tao na magkadikit ang paa at nakababa ang braso, ilagay ang tape sa pagitan ng pinakamababang tadyang at tuktok ng balakang nang direkta sa balat o sa manipis na damit, panatilihing pantay ang tape sa buong paligid, at basahin sa dulo ng normal na paghinga palabas — huwag higpitan ang tape. Ang mga hangganang halaga na nangangailangan ng referral ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol.",
+      "keywords": ["baywang", "waist", "circumference", "sukat", "tape", "bilog", "measure", "tiyan"],
+      "sources": ["who-pen", "doh-philpen-raf"]
+    },
+    {
+      "id": "m2-bmi",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Do I need to compute body mass index (BMI)?",
+      "question_fil": "Kailangan ko bang kuwentahin ang body mass index (BMI)?",
+      "answer_en": "Record accurate height and weight; whether you compute BMI yourself depends on what your LGU's form requires. If you do compute it, weight in kilograms is divided by height in metres squared, and it must be written on the form the same way every time so the facility can use it. An unreliable measurement is worse than none.",
+      "answer_fil": "Itala ang tumpak na taas at timbang; nakadepende sa form ng inyong LGU kung ikaw mismo ang kukuwenta ng BMI. Kung kukuwentahin mo, hatiin ang timbang sa kilo sa taas sa metro na iparisan, at isulat ito sa form sa parehong paraan tuwing sinusukat upang magamit ito ng pasilidad. Mas masama pa sa wala ang hindi maaasahang sukat.",
+      "keywords": ["bmi", "body mass index", "timbang", "taas", "height", "weight", "kuwenta", "compute"],
+      "sources": ["who-pen", "doh-philpen-raf"]
+    },
+    {
+      "id": "m2-symptom-screening",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Which symptoms should I screen for during the assessment?",
+      "question_fil": "Anong mga sintomas ang dapat kong suriin sa assessment?",
+      "answer_en": "Ask about chest pain or tightness, shortness of breath, swelling of the legs, sudden weakness or numbness on one side, difficulty speaking, blurred vision, severe headache, excessive thirst, frequent urination, unexplained weight loss, and wounds that will not heal. These are the findings that change the urgency of your referral.",
+      "answer_fil": "Itanong ang sakit o paninikip ng dibdib, hirap sa paghinga, pamamanas ng binti, biglaang panghihina o pamamanhid sa isang bahagi ng katawan, hirap sa pagsasalita, malabong paningin, matinding sakit ng ulo, sobrang uhaw, madalas na pag-ihi, pagbaba ng timbang nang walang dahilan, at sugat na ayaw gumaling. Ito ang mga natuklasang nagpapabago sa pagkaapurahan ng iyong referral.",
+      "keywords": ["sintomas", "symptoms", "suriin", "screen", "dibdib", "hingal", "manas", "malabo", "sugat"],
+      "sources": ["who-pen", "doh-philpen-raf"]
+    },
+    {
+      "id": "m2-red-flags-immediate",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "Which findings need immediate referral, not a scheduled one?",
+      "question_fil": "Aling mga natuklasan ang nangangailangan ng agarang referral, hindi naka-iskedyul?",
+      "answer_en": "Send the person immediately, with someone accompanying them, for chest pain or pressure, difficulty breathing at rest, one-sided weakness, numbness, facial droop or slurred speech, sudden loss of vision, seizure, confusion or fainting, or a very high reading together with symptoms. In those situations the screening form can be completed afterwards.",
+      "answer_fil": "Ipadala agad ang tao, may kasamang tao, kapag may sakit o paninikip ng dibdib, hirap huminga kahit nagpapahinga, panghihina sa isang bahagi, pamamanhid, pagkalaylay ng mukha o utal na pananalita, biglaang pagkawala ng paningin, kombulsyon, pagkalito o pagkahimatay, o napakataas na resulta na may kasamang sintomas. Sa ganitong sitwasyon, maaaring tapusin ang form pagkatapos.",
+      "keywords": ["agad", "immediate", "urgent", "red flag", "emergency", "dali", "ngayon din", "referral"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m2-consistency-result-referral",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "What if the flipchart result and my referral recommendation do not match?",
+      "question_fil": "Paano kung hindi magkatugma ang resulta sa flipchart at ang aking rekomendasyon sa referral?",
+      "answer_en": "They must match, and the protocol wins over impression. If the assessment says refer, refer — even if the person looks well. If it says no referral but you saw a warning sign, refer anyway and write down the sign you saw. Never downgrade a referral because the client asked you to.",
+      "answer_fil": "Dapat magkatugma ang mga ito, at ang protocol ang masusunod, hindi ang kutob. Kung ang assessment ay nagsasabing i-refer, i-refer — kahit mukhang malusog ang tao. Kung sinasabi nitong hindi na kailangan ngunit may nakita kang senyales ng panganib, i-refer pa rin at isulat ang senyales na nakita mo. Huwag kailanman babaan ang antas ng referral dahil lamang hiniling ito ng kliyente.",
+      "keywords": ["consistency", "magkatugma", "tugma", "resulta", "rekomendasyon", "mismatch", "protocol", "referral"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m2-client-cannot-answer",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What if the client cannot answer a question or does not know?",
+      "question_fil": "Paano kung hindi masagot ng kliyente ang tanong o hindi niya alam?",
+      "answer_en": "Write 'not known' — do not guess, and do not leave the item blank, because a blank cannot be told apart from a question you forgot to ask. If a family member present knows the answer and the client agrees, you may record it and note who gave it.",
+      "answer_fil": "Isulat ang 'hindi alam' — huwag manghula, at huwag iwang blangko, dahil hindi mo mapagkakaiba ang blangko sa tanong na nakalimutan mong itanong. Kung may kasamang kapamilya na nakakaalam at pumapayag ang kliyente, maaari mong itala ito at isulat kung sino ang nagbigay.",
+      "keywords": ["hindi alam", "unknown", "blangko", "blank", "hindi masagot", "unsure", "itala"],
+      "sources": ["doh-philpen-raf"]
+    },
+    {
+      "id": "m2-client-refuses-question",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What if the client refuses to answer a sensitive question?",
+      "question_fil": "Paano kung ayaw sagutin ng kliyente ang sensitibong tanong?",
+      "answer_en": "Respect the refusal, record it as declined, and continue with the rest of the assessment. Screening is voluntary. Pressing the person risks losing their cooperation for the measurements and the referral, which matter more than any single answer on the form.",
+      "answer_fil": "Igalang ang pagtanggi, itala ito bilang tumanggi, at ituloy ang iba pang bahagi ng assessment. Boluntaryo ang screening. Ang pagpipilit ay maaaring magpawala ng kanilang kooperasyon sa pagsukat at sa referral, na mas mahalaga kaysa sa alinmang sagot sa form.",
+      "keywords": ["ayaw sumagot", "refuse", "tumanggi", "sensitibo", "sensitive", "boluntaryo", "voluntary", "pilit"],
+      "sources": ["doh-philpen-raf", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "m2-pregnant-client",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Do I use the same NCD risk assessment on a pregnant woman?",
+      "question_fil": "Ganoon din ba ang NCD risk assessment sa isang buntis?",
+      "answer_en": "A raised blood pressure or blood sugar in pregnancy is handled through maternal care, not the routine adult NCD pathway, and it needs prompt facility assessment. Record what you measured, tell the midwife the same day, and let the facility decide — do not reassure a pregnant woman that a high reading is nothing.",
+      "answer_fil": "Ang mataas na presyon o asukal sa pagbubuntis ay hinahawakan sa pamamagitan ng maternal care, hindi ng karaniwang NCD pathway, at kailangan ito ng agarang pagsusuri sa pasilidad. Itala ang sinukat mo, sabihin sa midwife sa parehong araw, at hayaang ang pasilidad ang magpasya — huwag sabihin sa buntis na walang anuman ang mataas na resulta.",
+      "keywords": ["buntis", "pregnant", "pregnancy", "maternal", "midwife", "presyon", "asukal", "gestational"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m2-already-diagnosed",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What if the person already knows they have hypertension or diabetes?",
+      "question_fil": "Paano kung alam na ng tao na may altapresyon o diabetes siya?",
+      "answer_en": "They still need the visit, but the purpose changes from finding the disease to supporting control. Record their current medicines, ask whether they are taking them and when they last saw the doctor, measure them, and refer if the readings are uncontrolled or the medicines have run out. These are the clients where follow-up work pays off fastest.",
+      "answer_fil": "Kailangan pa rin ang pagbisita, ngunit nagbabago ang layunin mula sa paghahanap ng sakit tungo sa pagsuporta sa pagkontrol. Itala ang kasalukuyang gamot, itanong kung iniinom ba nila at kailan huling nagpatingin sa doktor, sukatin sila, at i-refer kung hindi kontrolado ang resulta o naubos na ang gamot. Dito sa mga kliyenteng ito pinakamabilis makita ang bunga ng follow-up.",
+      "keywords": ["diagnosed", "may sakit na", "alam na", "gamot", "maintenance", "kontrolado", "controlled", "dati"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m2-flipchart-teaching-use",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How do I use the flipchart to teach, not just to assess?",
+      "question_fil": "Paano ko gagamitin ang flipchart para magturo, hindi lang para sumuri?",
+      "answer_en": "Turn the chart so the picture faces the client while you read the guidance on your side. Show one page at a time, keep to the two or three points that fit that household's risk, and ask them to say back what they understood. The flipchart is a conversation aid, not a poster to read out loud.",
+      "answer_fil": "Iharap ang larawan sa kliyente habang binabasa mo ang gabay sa iyong panig. Isang pahina sa bawat sandali, manatili sa dalawa o tatlong puntong bagay sa panganib ng pamilyang iyon, at ipaulit sa kanila ang naintindihan nila. Ang flipchart ay pantulong sa usapan, hindi poster na babasahin nang malakas.",
+      "keywords": ["flipchart", "turo", "teach", "paliwanag", "explain", "larawan", "picture", "kliyente"],
+      "sources": ["upv-ncd-flipchart-tot", "who-hearts"]
+    },
+    {
+      "id": "m2-flipchart-care",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "How should I take care of the flipchart and my screening materials?",
+      "question_fil": "Paano ko aalagaan ang flipchart at ang aking mga kagamitan sa screening?",
+      "answer_en": "Keep the flipchart in its case and in page order, away from rain and direct sun, and never tear out a page. Check before each visit that you have the current version, blank forms, referral slips, a working pen, and the measuring equipment you are authorised to carry. Report damaged or missing materials rather than improvising.",
+      "answer_fil": "Itago ang flipchart sa lalagyan nito at sa tamang pagkakasunod ng pahina, layo sa ulan at tuwirang araw, at huwag punitin ang alinmang pahina. Suriin bago ang bawat pagbisita na dala mo ang kasalukuyang bersyon, blangkong form, referral slip, ballpen na gumagana, at ang kagamitang pinahihintulutan kang dalhin. Iulat ang sira o nawawalang materyales sa halip na gumawa ng panakip.",
+      "keywords": ["alaga", "care", "materyales", "materials", "kagamitan", "flipchart", "form", "supplies"],
+      "sources": ["upv-ncd-flipchart-tot"]
+    },
+    {
+      "id": "m2-common-assessment-errors",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What are the most common mistakes in community risk assessment?",
+      "question_fil": "Ano ang pinakakaraniwang pagkakamali sa risk assessment sa komunidad?",
+      "answer_en": "Skipping questions the BHW thinks are obvious, asking leading questions that suggest the answer, filling the form later from memory, softening a finding so the client will not worry, and recording a referral that was never actually explained to the client. Each one quietly damages the data the facility depends on.",
+      "answer_fil": "Paglaktaw sa mga tanong na inaakalang halata na, pagtatanong nang may pahiwatig sa sagot, pagsulat sa form mamaya mula sa memorya, pagpapagaan ng natuklasan upang hindi mag-alala ang kliyente, at pagtatala ng referral na hindi naman naipaliwanag sa kliyente. Bawat isa ay tahimik na sumisira sa datos na inaasahan ng pasilidad.",
+      "keywords": ["pagkakamali", "mistakes", "errors", "karaniwan", "common", "laktaw", "memorya", "iwasan"],
+      "sources": ["doh-philpen-raf", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "m2-record-immediately",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "When should I write down the answers — during or after the visit?",
+      "question_fil": "Kailan ko isusulat ang mga sagot — habang bumibisita o pagkatapos?",
+      "answer_en": "Write as you go. Numbers and answers written from memory after several households are the most common source of wrong data in community screening. If the household situation makes writing awkward, note the readings on the spot and complete the rest before you leave the yard, not at the end of the day.",
+      "answer_fil": "Isulat habang ginagawa. Ang mga numero at sagot na isinusulat mula sa memorya matapos ang ilang bahay ang pinakakaraniwang pinagmumulan ng maling datos sa screening sa komunidad. Kung mahirap magsulat sa loob ng bahay, itala ang mga resulta agad at tapusin ang iba bago ka umalis sa bakuran, hindi sa katapusan ng araw.",
+      "keywords": ["kailan", "isulat", "record", "write", "memorya", "memory", "form", "pagkatapos", "habang"],
+      "sources": ["doh-philpen-raf"]
+    },
+    {
+      "id": "m2-repeat-interval-assessment",
+      "domain": "risk-assessment",
+      "tier": "pending",
+      "question_en": "How often should the same person be re-assessed?",
+      "question_fil": "Gaano kadalas dapat suriing muli ang parehong tao?",
+      "answer_en": "Re-assessment intervals depend on the person's risk level and on whether they are already under treatment, and the schedule for community re-screening under HHP+ must be taken from the current PhilPEN 2025 protocol and your LGU's implementation plan. Anyone referred and not yet seen at the facility should be followed up sooner, regardless of the routine interval.",
+      "answer_fil": "Ang pagitan ng muling pagsusuri ay nakadepende sa antas ng panganib ng tao at kung nasa gamutan na siya, at ang iskedyul ng muling screening sa komunidad sa ilalim ng HHP+ ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol at sa implementation plan ng inyong LGU. Ang sinumang na-refer ngunit hindi pa nakakapunta sa pasilidad ay dapat sundan nang mas maaga, anuman ang karaniwang pagitan.",
+      "keywords": ["gaano kadalas", "how often", "ulit", "repeat", "interval", "iskedyul", "schedule", "muli"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m2-multiple-risk-factors",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "The client has several risk factors but normal readings. Do I still refer?",
+      "question_fil": "May ilang panganib ang kliyente pero normal ang resulta. Ire-refer ko pa rin ba?",
+      "answer_en": "Follow what the assessment tool says for that combination, and record every risk factor even when today's numbers are normal. Risk factors are the reason the facility may want to see someone whose readings look fine today, and they are also the basis for the lifestyle advice you give before you leave.",
+      "answer_fil": "Sundin ang sinasabi ng assessment tool para sa kombinasyong iyon, at itala ang bawat panganib kahit normal ang numero ngayon. Ang mga panganib ang dahilan kung bakit maaaring gustong makita ng pasilidad ang taong maayos ang resulta ngayon, at ito rin ang batayan ng payo sa pamumuhay bago ka umalis.",
+      "keywords": ["risk factors", "panganib", "normal", "marami", "several", "refer", "kahit", "resulta"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m2-two-way-referral-info",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "What information should go on the referral slip?",
+      "question_fil": "Anong impormasyon ang dapat nasa referral slip?",
+      "answer_en": "The client's name and address, the date, what you measured with the actual numbers, the risk findings and symptoms that prompted the referral, how urgent it is, and your name as the referring BHW. A slip that says only 'high blood pressure' forces the facility to start from zero.",
+      "answer_fil": "Pangalan at tirahan ng kliyente, petsa, ang sinukat mo kasama ang totoong numero, ang mga natuklasang panganib at sintomas na naging dahilan ng referral, gaano ito kaapurahan, at ang pangalan mo bilang nag-refer na BHW. Ang slip na nakasulat lamang ay 'mataas ang presyon' ay pinapasimula sa wala ang pasilidad.",
+      "keywords": ["referral slip", "slip", "impormasyon", "laman", "isulat", "papel", "pangalan", "numero"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m2-household-visit-manner",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How should I open a household visit for screening?",
+      "question_fil": "Paano ko sisimulan ang pagbisita sa bahay para sa screening?",
+      "answer_en": "Greet the household, introduce yourself as a BHW, say plainly why you came and how long it will take, and ask permission before starting. Explain that answering is voluntary and that the information goes to the health centre. Consent taken properly at the door prevents most of the refusals that happen halfway through.",
+      "answer_fil": "Batiin ang pamilya, ipakilala ang sarili bilang BHW, sabihin nang malinaw kung bakit ka pumunta at gaano katagal ito, at humingi ng pahintulot bago magsimula. Ipaliwanag na boluntaryo ang pagsagot at na mapupunta ang impormasyon sa health center. Ang maayos na pahintulot sa pintuan ang umiiwas sa halos lahat ng pagtanggi sa gitna ng pagsusuri.",
+      "keywords": ["pagbisita", "visit", "simula", "open", "pahintulot", "consent", "pakilala", "bahay", "household"],
+      "sources": ["who-bhw-manual-ta", "who-pen"]
+    }
+  ]
+}

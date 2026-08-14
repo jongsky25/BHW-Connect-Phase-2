@@ -1,0 +1,292 @@
+{
+  "$comment": "Module 4 — Capillary blood glucose testing in the community setting (deck slide 10): fasting vs random protocols, fingerstick technique, infection prevention and safe device handling, interpretation and referral action. Infection-prevention answers follow the WHO phlebotomy guidelines; the numeric interpretation thresholds are tier=pending.",
+  "category": "hhp-m4-blood-glucose",
+  "entries": [
+    {
+      "id": "m4-what-is-cbg",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "What is capillary blood glucose (CBG) testing?",
+      "question_fil": "Ano ang capillary blood glucose (CBG) testing?",
+      "answer_en": "It is a screening test that measures the sugar in a drop of blood taken from a fingerstick, read by a handheld glucose meter. It is quick and can be done in the household, but it is a screening result only — diabetes is diagnosed at the facility using laboratory tests.",
+      "answer_fil": "Ito ay screening test na sumusukat sa asukal sa isang patak ng dugo mula sa pagtusok sa daliri, binabasa ng hawak-kamay na glucose meter. Mabilis ito at maaaring gawin sa bahay, ngunit resulta ng screening lamang ito — sa pasilidad nadidiagnose ang diabetes gamit ang laboratory test.",
+      "keywords": ["cbg", "capillary", "blood glucose", "asukal", "glucose", "meter", "ano", "test", "dugo"],
+      "sources": ["who-phlebotomy-capillary", "who-pen"]
+    },
+    {
+      "id": "m4-fbs-vs-rbs",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "What is the difference between fasting and random blood sugar?",
+      "question_fil": "Ano ang pagkakaiba ng fasting at random blood sugar?",
+      "answer_en": "Fasting blood sugar is taken after the person has had nothing to eat or drink except water for the required number of hours, usually overnight. Random blood sugar is taken at any time regardless of meals. They are read against different values, so you must record which one you did and when the person last ate.",
+      "answer_fil": "Ang fasting blood sugar ay kinukuha matapos ang itinakdang oras na walang kinain o ininom maliban sa tubig, karaniwan ay magdamag. Ang random blood sugar ay kinukuha anumang oras anuman ang huling kain. Magkaiba ang batayang halaga ng dalawa, kaya kailangang itala mo kung alin ang ginawa at kailan huling kumain ang tao.",
+      "keywords": ["fbs", "rbs", "fasting", "random", "ayuno", "pagkakaiba", "difference", "kain", "asukal"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m4-fasting-hours",
+      "domain": "glucose-screening",
+      "tier": "pending",
+      "question_en": "How many hours of fasting are required before an FBS?",
+      "question_fil": "Ilang oras dapat ang ayuno bago ang FBS?",
+      "answer_en": "Fasting is normally an overnight period with water only, but the exact number of hours required for community FBS screening under HHP+, and whether community FBS is used at all in your LGU, must be taken from the current PhilPEN 2025 protocol. Always ask and record the actual time of the last meal rather than assuming the person fasted.",
+      "answer_fil": "Karaniwang magdamag ang ayuno na tubig lamang ang iniinom, ngunit ang eksaktong bilang ng oras na kailangan para sa FBS screening sa komunidad sa ilalim ng HHP+, at kung ginagamit man ang FBS sa komunidad sa inyong LGU, ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol. Palaging itanong at itala ang totoong oras ng huling kain sa halip na ipagpalagay na nag-ayuno ang tao.",
+      "keywords": ["ilang oras", "hours", "ayuno", "fasting", "fbs", "gutom", "bago", "kain"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m4-authorisation",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Am I allowed as a BHW to do the fingerstick blood sugar test?",
+      "question_fil": "Pinapayagan ba akong BHW na gawin ang pagtusok para sa asukal sa dugo?",
+      "answer_en": "Community blood glucose monitoring, taught with demonstration and return demonstration, is already part of the BHW skills lab in Region VI, but the authority to perform it in your barangay comes from your LGU and your supervising nurse or midwife. Anyone doing capillary sampling must be trained in infection prevention and assessed as competent first — never learn it on a live client.",
+      "answer_fil": "Ang pagsubaybay ng asukal sa dugo sa komunidad, na itinuturo nang may demonstration at return demonstration, ay bahagi na ng BHW skills lab sa Rehiyon VI, ngunit ang awtoridad na gawin ito sa inyong barangay ay nagmumula sa inyong LGU at sa nangangasiwang nars o midwife. Ang sinumang gumagawa ng capillary sampling ay dapat sanay sa pag-iwas sa impeksyon at napatunayang may kakayahan muna — huwag kailanman matuto sa totoong kliyente.",
+      "keywords": ["pinapayagan", "allowed", "pwede ba", "authority", "awtoridad", "sanay", "trained", "competent", "skills lab"],
+      "sources": ["who-phlebotomy", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "m4-hand-hygiene",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "When do I wash my hands during blood sugar testing?",
+      "question_fil": "Kailan ako maghuhugas ng kamay sa pagsusuri ng asukal sa dugo?",
+      "answer_en": "Perform hand hygiene before and after every client procedure, and both before putting gloves on and after taking them off. Gloves are not a substitute for clean hands. Carry alcohol-based hand rub for households where there is no water and soap.",
+      "answer_fil": "Maglinis ng kamay bago at pagkatapos ng bawat pamamaraan sa kliyente, at bago isuot at pagkatapos hubarin ang guwantes. Hindi kapalit ng malinis na kamay ang guwantes. Magdala ng alcohol-based hand rub para sa mga bahay na walang tubig at sabon.",
+      "keywords": ["hugas kamay", "hand hygiene", "handwashing", "sabon", "alcohol", "bago", "pagkatapos", "linis"],
+      "sources": ["who-phlebotomy", "who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-gloves",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Do I need to wear gloves for a fingerstick?",
+      "question_fil": "Kailangan ba akong magsuot ng guwantes sa pagtusok sa daliri?",
+      "answer_en": "Yes. Wear well-fitting non-sterile gloves for any procedure where you may contact blood, and change them between clients — one pair per person, never reused, never washed and reused. If gloves have run out, stop testing and report the stockout rather than proceeding without them.",
+      "answer_fil": "Oo. Magsuot ng maayos ang sukat at hindi sterile na guwantes sa anumang pamamaraan kung saan maaaring madikit sa dugo, at palitan sa bawat kliyente — isang pares kada tao, hindi kailanman ginagamit muli, hindi hinuhugasan at ginagamit ulit. Kung naubos ang guwantes, itigil ang pagsusuri at iulat ang kakulangan sa halip na ituloy nang wala nito.",
+      "keywords": ["guwantes", "gloves", "gwantes", "ppe", "suot", "kailangan", "palit", "bawat", "kliyente"],
+      "sources": ["who-phlebotomy", "who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-single-use-lancet",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Can a lancet be used more than once?",
+      "question_fil": "Pwede bang gamitin nang higit sa isang beses ang lancet?",
+      "answer_en": "Never — not on the same person, and absolutely not on a different person. Use a sterile single-use device, preferably a safety lancet that retracts automatically, which prevents both reuse and needlestick injuries. Reusing a lancet is how bloodborne infection spreads in community screening.",
+      "answer_fil": "Kailanman ay hindi — hindi sa parehong tao, at lalong hindi sa ibang tao. Gumamit ng sterile at isahang gamit na kagamitan, mas mabuti ang safety lancet na kusang pumapasok pabalik, na pumipigil sa muling paggamit at sa pagkatusok. Ang muling paggamit ng lancet ang paraan ng pagkalat ng impeksyon sa dugo sa screening sa komunidad.",
+      "keywords": ["lancet", "karayom", "ulit", "reuse", "isahan", "single use", "safety", "sterile", "bawal"],
+      "sources": ["who-phlebotomy-capillary", "who-phlebotomy"]
+    },
+    {
+      "id": "m4-site-selection",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Which finger and which part of it should I prick?",
+      "question_fil": "Aling daliri at aling bahagi nito ang tutusukin ko?",
+      "answer_en": "Use the side of the fingertip, off to one side of the centre, on the middle or ring finger. Avoid the thumb and index finger, avoid the very tip and the pad centre, and avoid a finger that is cold, swollen, infected, scarred or already sore from previous tests. Rotate fingers for people tested often.",
+      "answer_fil": "Gamitin ang gilid ng dulo ng daliri, bahagyang nasa tabi ng gitna, sa gitnang daliri o palasingsingan. Iwasan ang hinlalaki at hintuturo, iwasan ang mismong dulo at gitna ng pad, at iwasan ang daliring malamig, namamaga, may impeksyon, may peklat o masakit pa mula sa nakaraang pagsusuri. Magpalit-palit ng daliri sa mga madalas sinusuri.",
+      "keywords": ["daliri", "finger", "tudlo", "aling", "gilid", "side", "tusok", "hinlalaki", "bahagi"],
+      "sources": ["who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-warm-hand",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "The client's hands are cold and no blood comes out. What do I do?",
+      "question_fil": "Malamig ang kamay ng kliyente at walang lumalabas na dugo. Ano ang gagawin ko?",
+      "answer_en": "Warm the hand first — let them wash it in warm water or rub the hands together — and let the arm hang down for a moment before the prick. Do not squeeze the finger hard to force blood out, and do not prick repeatedly in the same spot. If you still cannot get a drop, stop and refer for testing at the facility.",
+      "answer_fil": "Painitin muna ang kamay — pahugasan sa maligamgam na tubig o pakuskusin ang mga palad — at pababain sandali ang braso bago tumusok. Huwag piliting pigain ang daliri para lumabas ang dugo, at huwag ulit-ulitin ang tusok sa parehong lugar. Kung wala pa ring patak, itigil at i-refer para sa pagsusuri sa pasilidad.",
+      "keywords": ["malamig", "cold", "walang dugo", "no blood", "init", "warm", "pigain", "hirap", "kamay"],
+      "sources": ["who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-disinfect-site",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "How do I clean the finger before pricking?",
+      "question_fil": "Paano ko lilinisin ang daliri bago tumusok?",
+      "answer_en": "Clean the site with alcohol and let it dry completely before pricking. Pricking through wet alcohol stings, and alcohol mixing with the blood drop can affect the reading. If the hand is visibly dirty, wash it with soap and water first.",
+      "answer_fil": "Linisin ang lugar gamit ang alkohol at hayaang matuyo nang lubusan bago tumusok. Nakakahapdi ang pagtusok sa basang alkohol, at ang alkohol na nahalo sa patak ng dugo ay maaaring makaapekto sa resulta. Kung halatang marumi ang kamay, hugasan muna ng sabon at tubig.",
+      "keywords": ["linis", "clean", "alkohol", "alcohol", "punasan", "tuyo", "dry", "bago", "tusok"],
+      "sources": ["who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-first-drop",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Should I use the first drop of blood?",
+      "question_fil": "Gagamitin ko ba ang unang patak ng dugo?",
+      "answer_en": "Wipe away the first drop with clean dry gauze or cotton and use the next drop for the strip. The first drop is mixed with tissue fluid and any remaining alcohol, which is a known source of inaccurate readings.",
+      "answer_fil": "Punasan ang unang patak gamit ang malinis at tuyong gauze o bulak at gamitin ang susunod na patak para sa strip. Ang unang patak ay may halong likido mula sa tisyu at natirang alkohol, na kilalang sanhi ng maling resulta.",
+      "keywords": ["unang patak", "first drop", "punas", "wipe", "pangalawa", "second", "gauze", "bulak"],
+      "sources": ["who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-no-milking",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Can I squeeze the finger to get more blood?",
+      "question_fil": "Pwede ko bang pigain ang daliri para makakuha ng mas maraming dugo?",
+      "answer_en": "Avoid hard squeezing or repeated milking of the finger. It forces tissue fluid into the sample and gives a falsely low reading, and it hurts. Gentle pressure from the base of the finger toward the tip, with the hand warm and held below heart level, is enough.",
+      "answer_fil": "Iwasan ang malakas na pagpiga o paulit-ulit na paggatas sa daliri. Napapasok nito ang likido ng tisyu sa sample at nagbibigay ng maling mababang resulta, at masakit ito. Sapat na ang banayad na diin mula sa base ng daliri patungo sa dulo, mainit ang kamay at nasa ibaba ng antas ng puso.",
+      "keywords": ["piga", "squeeze", "gatas", "milking", "dugo", "blood", "diin", "banayad", "daliri"],
+      "sources": ["who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-strip-handling",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "How should I store and handle the test strips?",
+      "question_fil": "Paano ko itatago at hahawakan ang mga test strip?",
+      "answer_en": "Keep strips in their original vial with the cap closed tightly, away from heat, direct sun and damp, take out only the strip you are about to use, and handle it by the end you do not apply blood to. Check the expiry date before each session and never use strips from a vial that has been left open.",
+      "answer_fil": "Itago ang strip sa orihinal nitong lalagyan na mahigpit ang takip, layo sa init, tuwirang araw at halumigmig, kunin lamang ang strip na gagamitin, at hawakan ito sa dulong hindi lalagyan ng dugo. Suriin ang petsa ng pagkasira bago ang bawat sesyon at huwag gumamit ng strip mula sa lalagyang naiwang bukas.",
+      "keywords": ["strip", "tago", "storage", "lalagyan", "vial", "expiry", "petsa", "sira", "init"],
+      "sources": ["who-phlebotomy-capillary", "who-pen"]
+    },
+    {
+      "id": "m4-meter-check",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "How do I know the glucose meter is working correctly?",
+      "question_fil": "Paano ko malalaman kung tama ang gana ng glucose meter?",
+      "answer_en": "Run the control solution check according to the manufacturer's instructions — routinely, after a new vial of strips, after a battery change, and any time a result does not fit the person in front of you. Record the control check. A meter that fails the check is taken out of use and reported, not used carefully.",
+      "answer_fil": "Isagawa ang control solution check ayon sa tagubilin ng gumawa — nang regular, matapos ang bagong lalagyan ng strip, matapos magpalit ng baterya, at sa tuwing hindi bagay ang resulta sa taong nasa harap mo. Itala ang control check. Ang meter na bumagsak sa pagsusuri ay hindi na ginagamit at iniuulat, hindi ginagamit nang maingat.",
+      "keywords": ["meter", "glucometer", "control solution", "tama", "gana", "check", "kalibrasyon", "sira"],
+      "sources": ["who-pen", "who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-error-code",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "The meter shows an error code or an unbelievable number. What do I do?",
+      "question_fil": "May error code o hindi kapani-paniwalang numero ang meter. Ano ang gagawin ko?",
+      "answer_en": "Do not write the number down as a result and do not tell the client a value you do not trust. Check the strip, the sample size and the expiry, repeat once with a new strip if you have one, and if it still fails, stop and refer the person to the facility for testing. Report the device.",
+      "answer_fil": "Huwag isulat ang numero bilang resulta at huwag sabihin sa kliyente ang halagang hindi mo pinagkakatiwalaan. Suriin ang strip, ang dami ng sample at ang petsa ng pagkasira, ulitin nang isang beses gamit ang bagong strip kung mayroon, at kung bumagsak pa rin, itigil at i-refer ang tao sa pasilidad para sa pagsusuri. Iulat ang aparato.",
+      "keywords": ["error", "mali", "code", "numero", "kakaiba", "meter", "hindi tama", "ulit", "sira"],
+      "sources": ["who-pen"]
+    },
+    {
+      "id": "m4-sharps-disposal",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Where do I put the used lancet?",
+      "question_fil": "Saan ko ilalagay ang nagamit na lancet?",
+      "answer_en": "Straight into a puncture-proof sharps container that is within arm's reach and clearly visible before you start — not into a pocket, a plastic bag, the household's trash, or back into its cap. Discard the whole device as one unit, do not fill the container past its line, and return it for disposal through your health centre.",
+      "answer_fil": "Diretso sa sharps container na hindi matutusok, na abot-kamay at malinaw na nakikita bago ka magsimula — hindi sa bulsa, plastik, basurahan ng pamilya, o pabalik sa takip nito. Itapon ang buong kagamitan bilang isang piraso, huwag punuin ang lalagyan lampas sa marka nito, at ibalik ito para itapon sa pamamagitan ng inyong health center.",
+      "keywords": ["lancet", "tapon", "dispose", "sharps", "container", "basura", "karayom", "saan", "ligtas"],
+      "sources": ["who-phlebotomy", "who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-needlestick",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "What do I do if I prick myself with a used lancet?",
+      "question_fil": "Ano ang gagawin ko kung natusok ko ang sarili ko ng nagamit na lancet?",
+      "answer_en": "Let the wound bleed briefly, wash it with soap and running water, do not scrub or apply bleach, cover it, and report the injury to your supervisor the same day so exposure follow-up can be started — do not wait to see whether anything happens. Record it as an incident.",
+      "answer_fil": "Hayaang dumugo sandali ang sugat, hugasan ng sabon at tubig na umaagos, huwag kuskusin o lagyan ng bleach, takpan ito, at iulat ang pinsala sa iyong superbisor sa parehong araw upang masimulan ang follow-up sa exposure — huwag hintayin kung may mangyayari pa. Itala ito bilang insidente.",
+      "keywords": ["natusok", "needlestick", "sugat", "aksidente", "injury", "sarili", "iulat", "report", "exposure"],
+      "sources": ["who-phlebotomy"]
+    },
+    {
+      "id": "m4-blood-spill",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "What if blood spills on the table or on my hands?",
+      "question_fil": "Paano kung natapon ang dugo sa mesa o sa kamay ko?",
+      "answer_en": "Treat all blood as infectious. Cover the spill, clean it with the disinfectant your programme provides while wearing gloves, dispose of the used materials as infectious waste, and perform hand hygiene afterwards. Cover any break in your own skin before you start a session.",
+      "answer_fil": "Ituring na nakakahawa ang lahat ng dugo. Takpan ang natapon, linisin ito gamit ang disinfectant na ibinigay ng programa habang may guwantes, itapon ang nagamit na materyales bilang nakakahawang basura, at maglinis ng kamay pagkatapos. Takpan ang anumang sugat sa iyong balat bago magsimula ng sesyon.",
+      "keywords": ["dugo", "blood", "tapon", "spill", "linis", "disinfect", "basura", "waste", "kamay"],
+      "sources": ["who-phlebotomy"]
+    },
+    {
+      "id": "m4-interpretation",
+      "domain": "glucose-screening",
+      "tier": "pending",
+      "question_en": "What blood sugar result means I should refer?",
+      "question_fil": "Anong resulta ng asukal sa dugo ang dapat kong i-refer?",
+      "answer_en": "The referral values for fasting and random capillary blood glucose in community screening, and the separate value that requires same-day referral, must be taken from the current PhilPEN 2025 protocol as adopted by your LGU — this entry stays unpublished until BLHSD and WHO confirm those figures. Regardless of the number, refer anyone with symptoms of very high or very low blood sugar immediately.",
+      "answer_fil": "Ang mga halaga ng referral para sa fasting at random capillary blood glucose sa screening sa komunidad, at ang hiwalay na halagang nangangailangan ng referral sa parehong araw, ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol na ginagamit ng inyong LGU — mananatiling hindi nailalathala ang aytem na ito hanggang makumpirma ng BLHSD at WHO ang mga bilang na iyon. Anuman ang numero, agad na i-refer ang sinumang may sintomas ng sobrang taas o sobrang baba ng asukal.",
+      "keywords": ["resulta", "result", "refer", "referral", "hangganan", "threshold", "asukal", "mataas", "mg dl"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m4-hypoglycemia",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "What are the signs of low blood sugar and what do I do?",
+      "question_fil": "Ano ang senyales ng mababang asukal sa dugo at ano ang gagawin ko?",
+      "answer_en": "Shakiness, sweating, hunger, dizziness, palpitations, confusion, irritability, and in severe cases fainting or seizures — most common in someone already on diabetes medicine. If the person is awake and can swallow, give sugar or a sweet drink at once, then food, and refer. If they are unconscious, give nothing by mouth and arrange emergency transport immediately.",
+      "answer_fil": "Panginginig, pagpapawis, gutom, pagkahilo, kabog ng dibdib, pagkalito, pagkairita, at sa malubhang kaso ay pagkahimatay o kombulsyon — pinakakaraniwan sa taong may gamot na sa diabetes. Kung gising ang tao at nakakalunok, bigyan agad ng asukal o matamis na inumin, saka pagkain, at i-refer. Kung walang malay, huwag bigyan ng anumang pinapainom o pinapakain at ayusin agad ang emergency transport.",
+      "keywords": ["mababa", "low", "hypoglycemia", "panginginig", "pawis", "gutom", "himatay", "asukal", "matamis"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m4-very-high-glucose",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "The blood sugar is very high and the person feels unwell. What do I do?",
+      "question_fil": "Napakataas ng asukal at masama ang pakiramdam ng tao. Ano ang gagawin ko?",
+      "answer_en": "Refer immediately, with someone accompanying them. Warning signs that make it urgent are heavy thirst with frequent urination, vomiting, deep or laboured breathing, abdominal pain, drowsiness or confusion, and a fruity smell on the breath. Do not give any medicine and do not wait for a repeat test.",
+      "answer_fil": "I-refer agad, may kasamang tao. Ang mga senyales na nagpapadali nito ay matinding uhaw na may madalas na pag-ihi, pagsusuka, malalim o mahirap na paghinga, sakit ng tiyan, antok o pagkalito, at amoy prutas ang hininga. Huwag magbigay ng anumang gamot at huwag maghintay ng muling pagsusuri.",
+      "keywords": ["napakataas", "very high", "asukal", "sintomas", "suka", "uhaw", "hininga", "agad", "emergency"],
+      "sources": ["who-pen"]
+    },
+    {
+      "id": "m4-afraid-of-prick",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "The client is afraid of the fingerstick. How do I handle it?",
+      "question_fil": "Natatakot sa pagtusok ang kliyente. Paano ko ito haharapin?",
+      "answer_en": "Explain what will happen, show the device, say honestly that it is a quick sting, and let them choose the finger. Never force or trick anyone — testing is voluntary. If they still decline, record the refusal, give the health advice anyway, and offer referral for testing at the facility.",
+      "answer_fil": "Ipaliwanag ang mangyayari, ipakita ang kagamitan, sabihing totoo na mabilis lang ang hapdi, at hayaan silang pumili ng daliri. Huwag kailanman pilitin o lokohin ang sinuman — boluntaryo ang pagsusuri. Kung tumanggi pa rin, itala ang pagtanggi, ibigay pa rin ang payong pangkalusugan, at ialok ang referral para sa pagsusuri sa pasilidad.",
+      "keywords": ["takot", "afraid", "natatakot", "tusok", "sakit", "ayaw", "pilit", "boluntaryo", "kliyente"],
+      "sources": ["who-phlebotomy", "who-hearts"]
+    },
+    {
+      "id": "m4-clean-meter",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Do I need to clean the meter between clients?",
+      "question_fil": "Kailangan ko bang linisin ang meter sa pagitan ng mga kliyente?",
+      "answer_en": "Yes. The meter is shared equipment and can be contaminated by blood. Wipe it as the manufacturer directs between clients, keep it off the surface where blood is handled, and never let a client hold the meter while you take the sample.",
+      "answer_fil": "Oo. Ang meter ay pinagsasaluhang kagamitan at maaaring madumhan ng dugo. Punasan ito ayon sa tagubilin ng gumawa sa pagitan ng mga kliyente, ilayo ito sa ibabaw na pinaghahawakan ng dugo, at huwag hayaang hawakan ng kliyente ang meter habang kumukuha ka ng sample.",
+      "keywords": ["linis", "clean", "meter", "punas", "pagitan", "between", "kliyente", "kontaminado"],
+      "sources": ["who-phlebotomy", "who-phlebotomy-capillary"]
+    },
+    {
+      "id": "m4-record-glucose",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What do I write down after a blood sugar test?",
+      "question_fil": "Ano ang isusulat ko pagkatapos ng pagsusuri ng asukal sa dugo?",
+      "answer_en": "The value with its unit, whether it was fasting or random, the time of the test and the time of the last meal, the date, and whether the person is already on diabetes medicine. A number with no context cannot be interpreted by the facility.",
+      "answer_fil": "Ang halaga kasama ang yunit nito, kung fasting o random, ang oras ng pagsusuri at oras ng huling kain, ang petsa, at kung may gamot na ba sa diabetes ang tao. Ang numerong walang konteksto ay hindi kayang bigyang-kahulugan ng pasilidad.",
+      "keywords": ["isulat", "record", "itala", "resulta", "asukal", "oras", "kain", "fasting", "random"],
+      "sources": ["doh-philpen-raf", "who-pen"]
+    },
+    {
+      "id": "m4-pregnant-or-child",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "Can I test a pregnant woman or a child with the glucometer?",
+      "question_fil": "Pwede ko bang suriin ang buntis o bata gamit ang glucometer?",
+      "answer_en": "Community NCD screening targets adults. Blood sugar concerns in pregnancy and in children are handled through maternal and child health services and need facility assessment, so refer rather than screen them under this programme unless your supervising nurse specifically instructs otherwise.",
+      "answer_fil": "Ang screening ng NCD sa komunidad ay para sa mga nasa hustong gulang. Ang alalahanin sa asukal sa dugo sa pagbubuntis at sa mga bata ay hinahawakan ng maternal at child health services at kailangan ng pagsusuri sa pasilidad, kaya i-refer sa halip na i-screen sila sa ilalim ng programang ito maliban kung tiyak na itinuro ng nangangasiwang nars.",
+      "keywords": ["buntis", "pregnant", "bata", "child", "pwede", "suriin", "glucometer", "refer"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m4-supplies-out",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "We have run out of strips or gloves. Can I still test?",
+      "question_fil": "Naubos ang strip o guwantes. Pwede pa rin ba akong sumuri?",
+      "answer_en": "No. Stop testing, report the stockout to your supervisor the same day, and refer people for testing at the facility in the meantime. Improvising with expired strips, borrowed supplies or no gloves puts you and the client at risk and produces results the facility cannot use anyway.",
+      "answer_fil": "Hindi. Itigil ang pagsusuri, iulat ang pagkaubos sa superbisor sa parehong araw, at samantala ay i-refer ang mga tao para sa pagsusuri sa pasilidad. Ang pagtitiyaga sa expired na strip, hiram na supply o walang guwantes ay naglalagay sa iyo at sa kliyente sa panganib at nagbubunga ng resultang hindi rin naman magagamit ng pasilidad.",
+      "keywords": ["ubos", "stockout", "walang", "strip", "guwantes", "supply", "kulang", "expired", "itigil"],
+      "sources": ["who-phlebotomy", "who-pen"]
+    }
+  ]
+}

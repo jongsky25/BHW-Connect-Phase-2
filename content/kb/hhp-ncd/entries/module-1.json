@@ -1,0 +1,248 @@
+{
+  "$comment": "Module 1 — HHP+ and PhilPEN 2025: community-based screening within the integrated care pathway. Learning objectives from the BLHSD alignment deck, slide 7: explain HHP+ objectives, differentiate screening from diagnosis and BHW from physician scope, describe the referral pathway. tier=pending means the answer depends on a figure or rule only the unpublished PhilPEN 2025 protocol can settle; the loader keeps those as drafts.",
+  "category": "hhp-m1-care-pathway",
+  "entries": [
+    {
+      "id": "m1-what-is-hhp",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What is the Healthy Hearts Plus (HHP+) programme?",
+      "question_fil": "Ano ang Healthy Hearts Plus (HHP+) na programa?",
+      "answer_en": "Healthy Hearts Plus is the Department of Health programme, supported by WHO, that builds hypertension and diabetes care into routine primary health services. It started as Healthy Hearts Philippines in Iloilo and now runs across Western Visayas, adding integrated diabetes care to the original hypertension focus. Your screening work in the barangay is the first step of that care pathway.",
+      "answer_fil": "Ang Healthy Hearts Plus ay programa ng Department of Health, na sinusuportahan ng WHO, na isinasama ang pangangalaga sa altapresyon at diabetes sa pang-araw-araw na primary health services. Nagsimula ito bilang Healthy Hearts Philippines sa Iloilo at ngayon ay nasa buong Kanlurang Visayas na, kasama na ang diabetes. Ang screening na ginagawa mo sa barangay ang unang hakbang ng care pathway na ito.",
+      "keywords": ["hhp", "healthy hearts", "plus", "programa", "programme", "who", "doh", "western visayas", "kanlurang visayas", "iloilo"],
+      "sources": ["who-ph-hhp-wv", "who-wpro-healthy-hearts", "who-ph-hhp-2024"]
+    },
+    {
+      "id": "m1-what-is-philpen",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What is PhilPEN and how does it relate to my work as a BHW?",
+      "question_fil": "Ano ang PhilPEN at ano ang kaugnayan nito sa trabaho ko bilang BHW?",
+      "answer_en": "PhilPEN is the Philippine Package of Essential NCD Interventions — the DOH adaptation of the WHO PEN package for the integrated management of hypertension and diabetes in primary care. It defines the risk assessment, screening and referral steps used from the barangay health station upward, so the PhilPEN protocol is the rulebook behind the screening you do.",
+      "answer_fil": "Ang PhilPEN ay ang Philippine Package of Essential NCD Interventions — ang bersyon ng DOH ng WHO PEN package para sa magkasamang pamamahala ng altapresyon at diabetes sa primary care. Dito nakasaad ang mga hakbang sa risk assessment, screening at pag-refer mula sa barangay health station pataas, kaya ang PhilPEN protocol ang batayan ng screening na ginagawa mo.",
+      "keywords": ["philpen", "package", "essential", "ncd", "interventions", "protocol", "doh", "pen", "batayan"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m1-screening-vs-diagnosis",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What is the difference between screening and diagnosis?",
+      "question_fil": "Ano ang pagkakaiba ng screening at diagnosis?",
+      "answer_en": "Screening finds people who may be at risk and need to be checked further; diagnosis is the decision that a person actually has the disease. A BHW screens. Only a physician at the facility diagnoses hypertension or diabetes, using confirmatory measurements and laboratory tests. Saying 'you have diabetes' after one community reading is the single most common mistake to avoid.",
+      "answer_fil": "Ang screening ay paghahanap ng mga taong maaaring nasa panganib at kailangang suriin pa; ang diagnosis ay ang pasya na talagang may sakit ang tao. Ang BHW ay nag-screen. Ang doktor lamang sa pasilidad ang nagbibigay ng diagnosis ng altapresyon o diabetes, gamit ang confirmatory na pagsukat at laboratory test. Ang pagsasabing 'may diabetes ka' pagkatapos ng isang pagsukat sa komunidad ang pinakakaraniwang pagkakamali na dapat iwasan.",
+      "keywords": ["screening", "diagnosis", "pagkakaiba", "difference", "confirm", "diagnose", "magdiagnose", "diabetes", "altapresyon", "hindi", "doktor"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m1-bhw-scope",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What is within my scope as a BHW and what is not?",
+      "question_fil": "Ano ang saklaw ng aking gawain bilang BHW at ano ang hindi?",
+      "answer_en": "Within scope: risk assessment using the PhilPEN form, blood pressure measurement, capillary blood glucose screening where your LGU authorises it, explaining results in plain language, referring to the health centre, supporting medicine adherence, follow-up visits and documentation. Not within scope: diagnosing, starting or changing any medicine, adjusting doses, or telling a client to stop treatment. Those decisions belong to the physician.",
+      "answer_fil": "Saklaw: risk assessment gamit ang PhilPEN form, pagsukat ng presyon, capillary blood glucose screening kung pinahihintulutan ng inyong LGU, pagpapaliwanag ng resulta sa simpleng salita, pag-refer sa health center, suporta sa pag-inom ng gamot, follow-up at dokumentasyon. Hindi saklaw: pagbibigay ng diagnosis, pagsisimula o pagpapalit ng gamot, pagbabago ng dosage, o pagsasabing itigil ang gamot. Sa doktor ang mga desisyong iyon.",
+      "keywords": ["scope", "saklaw", "trabaho", "role", "papel", "hangganan", "limits", "pwede", "hindi pwede"],
+      "sources": ["who-pen", "who-bhw-manual-ta", "ra-7883"]
+    },
+    {
+      "id": "m1-why-community-screening",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Why does community screening matter if the health centre can already check people?",
+      "question_fil": "Bakit mahalaga ang screening sa komunidad kung nakakapag-check naman ang health center?",
+      "answer_en": "Because most people with high blood pressure or high blood sugar feel nothing and never come in on their own. Community screening finds them early, before a stroke, heart attack or kidney damage. It also brings the service to households that cannot easily travel to the rural health unit.",
+      "answer_fil": "Dahil karamihan ng may mataas na presyon o mataas na asukal ay walang nararamdaman at hindi kusang pumupunta sa health center. Ang screening sa komunidad ang nakakahanap sa kanila nang maaga, bago pa magkaroon ng stroke, atake sa puso o sira sa bato. Naihahatid din nito ang serbisyo sa mga pamilyang mahirap makapunta sa rural health unit.",
+      "keywords": ["bakit", "why", "mahalaga", "komunidad", "community", "maaga", "early", "detection", "silent"],
+      "sources": ["who-hearts", "who-wpro-healthy-hearts"]
+    },
+    {
+      "id": "m1-care-pathway-steps",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "What are the steps of the care pathway from community screening to treatment?",
+      "question_fil": "Ano ang mga hakbang ng care pathway mula sa screening sa komunidad hanggang sa paggamot?",
+      "answer_en": "The pathway is: risk assessment in the community, screening measurement (blood pressure, and blood glucose where indicated), explaining the result, referral to the health facility, confirmation and diagnosis by the physician, treatment started at the facility, then adherence support and follow-up back in the barangay by the BHW. Documentation runs through every step.",
+      "answer_fil": "Ang daloy ay: risk assessment sa komunidad, pagsukat sa screening (presyon, at asukal sa dugo kung kinakailangan), pagpapaliwanag ng resulta, pag-refer sa pasilidad, pagkumpirma at diagnosis ng doktor, pagsisimula ng gamutan sa pasilidad, at pagkatapos ay suporta sa pag-inom ng gamot at follow-up sa barangay ng BHW. May dokumentasyon sa bawat hakbang.",
+      "keywords": ["care pathway", "hakbang", "steps", "daloy", "proseso", "process", "flow", "mula", "hanggang"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m1-who-to-screen",
+      "domain": "risk-assessment",
+      "tier": "pending",
+      "question_en": "Which residents should I screen for hypertension and diabetes?",
+      "question_fil": "Sino sa mga residente ang dapat kong i-screen para sa altapresyon at diabetes?",
+      "answer_en": "PhilPEN targets adults for periodic risk assessment, with priority for those who have never been screened, those with a family history, smokers, people who are overweight, and anyone already told they have high readings. The exact age band and screening interval for community screening under HHP+ must be taken from the current PhilPEN 2025 protocol.",
+      "answer_fil": "Ang PhilPEN ay nakatuon sa mga nasa hustong gulang para sa pana-panahong risk assessment, na may prayoridad sa hindi pa nasusuri, may kasaysayan sa pamilya, naninigarilyo, sobra sa timbang, at sinumang nasabihan nang mataas ang resulta. Ang eksaktong saklaw ng edad at dalas ng screening sa komunidad sa ilalim ng HHP+ ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol.",
+      "keywords": ["sino", "who", "screen", "target", "edad", "age", "kailan", "residente", "prayoridad", "priority"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m1-what-is-ncd",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What are noncommunicable diseases (NCDs)?",
+      "question_fil": "Ano ang mga noncommunicable disease (NCD)?",
+      "answer_en": "NCDs are illnesses that are not passed from person to person — hypertension, diabetes, heart disease, stroke, chronic lung disease and cancer. They build up over years and are driven by risk factors like tobacco, unhealthy diet, physical inactivity, alcohol and obesity, which is why early screening and lifestyle advice matter so much.",
+      "answer_fil": "Ang mga NCD ay sakit na hindi nakakahawa — altapresyon, diabetes, sakit sa puso, stroke, malubhang sakit sa baga at kanser. Unti-unti itong nabubuo sa loob ng maraming taon dahil sa mga panganib gaya ng paninigarilyo, hindi masustansyang pagkain, kakulangan sa ehersisyo, alak at labis na timbang — kaya napakahalaga ng maagang screening at payo sa pamumuhay.",
+      "keywords": ["ncd", "noncommunicable", "hindi nakakahawa", "sakit", "disease", "kahulugan", "meaning", "ano"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m1-hypertension-definition",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What is hypertension?",
+      "question_fil": "Ano ang altapresyon?",
+      "answer_en": "Hypertension is persistently raised pressure of the blood against the artery walls. In the Philippines it is defined by the Philippine Society of Hypertension as an office blood pressure of 140/90 mmHg or above on properly taken measurements. It usually causes no symptoms, which is why it is called the silent killer, and it is diagnosed at the facility — never from one community reading.",
+      "answer_fil": "Ang altapresyon ay ang patuloy na mataas na puwersa ng dugo laban sa dingding ng ugat. Sa Pilipinas, ayon sa Philippine Society of Hypertension, ito ay office blood pressure na 140/90 mmHg pataas sa tamang pagsukat. Kadalasan ay walang sintomas — kaya tinatawag itong silent killer — at sa pasilidad ito nadidiagnose, hindi sa isang pagsukat sa komunidad.",
+      "keywords": ["altapresyon", "hypertension", "kahulugan", "definition", "140", "90", "mmhg", "silent killer", "mataas presyon"],
+      "sources": ["psh-cpg-2020", "who-htn-guideline-2021"]
+    },
+    {
+      "id": "m1-diabetes-definition",
+      "domain": "glucose-screening",
+      "tier": "cited",
+      "question_en": "What is type 2 diabetes?",
+      "question_fil": "Ano ang type 2 diabetes?",
+      "answer_en": "Type 2 diabetes is a condition where blood sugar stays too high because the body does not use insulin properly. Common signs are frequent urination, excessive thirst, unexplained weight loss, tiredness and slow-healing wounds — but many people have none. Community blood sugar testing only screens; the facility confirms the diagnosis with laboratory tests.",
+      "answer_fil": "Ang type 2 diabetes ay kondisyon kung saan nananatiling mataas ang asukal sa dugo dahil hindi maayos na nagagamit ng katawan ang insulin. Karaniwang senyales: madalas na pag-ihi, sobrang uhaw, pagbaba ng timbang nang walang dahilan, panghihina at sugat na matagal gumaling — ngunit marami ang walang sintomas. Ang pagsusuri sa komunidad ay screening lamang; sa pasilidad kinukumpirma ang diagnosis sa pamamagitan ng laboratory test.",
+      "keywords": ["diabetes", "dyabetis", "type 2", "asukal", "insulin", "kahulugan", "definition", "sintomas", "symptoms"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m1-cvd-risk-who-estimates",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Do I compute the cardiovascular risk score myself?",
+      "question_fil": "Ako ba ang kumukuwenta ng cardiovascular risk score?",
+      "answer_en": "No. Formal cardiovascular risk estimation using the risk charts, and any decision about medicines based on it, is a facility-based task for the physician or nurse. Your job is to collect accurate risk information and measurements and pass them on, because the quality of their risk estimate depends entirely on the quality of your data.",
+      "answer_fil": "Hindi. Ang pormal na pagtataya ng cardiovascular risk gamit ang risk chart, at ang anumang desisyon sa gamot mula rito, ay gawain ng doktor o nars sa pasilidad. Ang tungkulin mo ay kumuha ng tumpak na impormasyon at sukat at ipasa ito, dahil ang husay ng kanilang pagtataya ay nakadepende sa husay ng iyong datos.",
+      "keywords": ["risk score", "cardiovascular", "kuwenta", "compute", "chart", "estimation", "sino", "gumagawa"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m1-no-medicine-decisions",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "Can I decide, start or adjust a client's medicine or its dose?",
+      "question_fil": "Pwede ba akong magpasya, magsimula o magbago ng gamot o dosis ng kliyente?",
+      "answer_en": "No. Choosing a medicine, starting it, changing the dose, stopping it, or advising on milligrams is a physician's decision, whatever the drug — metformin, amlodipine, losartan, insulin or any other. Your part is to record what they are already taking, report what you observed, and refer. If a client asks you what dose to take, say plainly that only the doctor can answer that, and help them get the consultation.",
+      "answer_fil": "Hindi. Ang pagpili ng gamot, pagsisimula nito, pagbabago ng dosis, pagpapatigil, o pagpapayo tungkol sa milligram ay pasya ng doktor, anuman ang gamot — metformin, amlodipine, losartan, insulin o alinman. Ang bahagi mo ay itala kung ano ang iniinom nila, iulat ang iyong nakita, at mag-refer. Kung tanungin ka ng kliyente kung anong dosis ang iinumin, sabihing malinaw na ang doktor lamang ang makakasagot niyan, at tulungan silang makakonsulta.",
+      "keywords": ["dosis", "dose", "dosage", "milligram", "mg", "gamot", "medicine", "metformin", "amlodipine", "losartan", "insulin", "reseta", "prescribe", "magsimula", "start", "adjust", "palit"],
+      "sources": ["who-htn-guideline-2021", "who-pen"]
+    },
+    {
+      "id": "m1-cannot-interpret-tests",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "Can I interpret laboratory results, an ECG or an x-ray for a client?",
+      "question_fil": "Pwede ko bang bigyang-kahulugan ang laboratory result, ECG o x-ray ng kliyente?",
+      "answer_en": "No. Reading laboratory results, ECG tracings and imaging is outside BHW scope, and guessing at them is how a client ends up either falsely reassured or frightened for nothing. If a client shows you results, note that they have them, encourage them to bring the papers to their consultation, and refer. The screening measurements you take yourself are the only readings you explain.",
+      "answer_fil": "Hindi. Ang pagbasa ng laboratory result, ECG at imaging ay labas sa saklaw ng BHW, at ang panghuhula rito ang dahilan kung bakit napapanatag nang mali o natatakot nang walang dahilan ang kliyente. Kung may ipinakitang resulta ang kliyente, itala na mayroon sila nito, hikayatin silang dalhin ang papel sa konsulta, at mag-refer. Ang sinukat mo mismo sa screening lamang ang resultang ipinapaliwanag mo.",
+      "keywords": ["laboratory", "lab result", "ecg", "xray", "x ray", "imaging", "basahin", "interpret", "kahulugan", "resulta", "papel", "saklaw"],
+      "sources": ["who-pen", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "m1-role-in-adherence",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "What is my role after the patient has started treatment?",
+      "question_fil": "Ano ang papel ko pagkatapos magsimula ng gamutan ang pasyente?",
+      "answer_en": "You reinforce, you do not prescribe. Remind the client of appointments, check that they are taking maintenance medicines as directed, ask what makes it hard for them, encourage lifestyle changes, and report anyone who has stopped treatment or missed follow-up back to the health centre. Continuity is where community-level work saves the most lives.",
+      "answer_fil": "Ikaw ay nagpapaalala, hindi nagrereseta. Ipaalala ang schedule ng konsulta, tiyaking iniinom ang maintenance na gamot ayon sa bilin, tanungin kung ano ang nagpapahirap sa kanila, hikayatin ang pagbabago sa pamumuhay, at iulat sa health center ang sinumang huminto sa gamot o hindi nakabalik. Dito sa pagpapatuloy pinakamalaki ang naitutulong ng gawain sa komunidad.",
+      "keywords": ["adherence", "pagkatapos", "after", "treatment", "gamutan", "maintenance", "papel", "role", "follow up"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m1-ppsa-relation",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "How does Proteksyon Para sa Altapresyon (PPSA) relate to HHP+?",
+      "question_fil": "Ano ang kaugnayan ng Proteksyon Para sa Altapresyon (PPSA) sa HHP+?",
+      "answer_en": "PPSA is the national DOH initiative to accelerate hypertension prevention and control under Universal Health Care, using early screening, treatment access, healthy lifestyle promotion and regular monitoring. HHP+ is the Western Visayas implementation that puts those same aims into primary care practice, so the two point in the same direction and use the same PhilPEN protocol.",
+      "answer_fil": "Ang PPSA ay pambansang inisyatiba ng DOH upang pabilisin ang pag-iwas at pagkontrol sa altapresyon sa ilalim ng Universal Health Care, sa pamamagitan ng maagang screening, akses sa gamutan, pagsusulong ng malusog na pamumuhay at regular na pagmamanman. Ang HHP+ ang implementasyon sa Kanlurang Visayas ng parehong layunin sa primary care, kaya iisa ang direksyon at iisa ang PhilPEN protocol na sinusunod.",
+      "keywords": ["ppsa", "proteksyon", "altapresyon", "national", "pambansa", "uhc", "kaugnayan", "relation"],
+      "sources": ["doh-philpen", "who-ph-hhp-wv"]
+    },
+    {
+      "id": "m1-region6-context",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Why is Western Visayas the focus of this programme?",
+      "question_fil": "Bakit nakatuon sa Kanlurang Visayas ang programang ito?",
+      "answer_en": "Western Visayas is where the Healthy Hearts model was demonstrated and scaled: it began in District 1 of Iloilo Province through seven rural health units, showed strong blood pressure control results, and has since expanded across the region and into integrated diabetes care. The regional office also already includes community screening skills in its BHW skills lab.",
+      "answer_fil": "Sa Kanlurang Visayas unang ipinakita at pinalawak ang modelong Healthy Hearts: nagsimula ito sa Unang Distrito ng Iloilo sa pitong rural health unit, nagpakita ng malakas na resulta sa pagkontrol ng presyon, at mula noon ay lumaganap sa buong rehiyon at sa pangangalaga sa diabetes. Kasama na rin ang community screening sa skills lab ng mga BHW sa rehiyonal na tanggapan.",
+      "keywords": ["western visayas", "kanlurang visayas", "region 6", "iloilo", "guimaras", "bakit", "focus", "rehiyon"],
+      "sources": ["iloilo-healthy-hearts-cost", "who-ph-hhp-2024", "who-wpro-healthy-hearts"]
+    },
+    {
+      "id": "m1-not-a-new-task",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Is community screening a new task being added to BHWs?",
+      "question_fil": "Bago bang gawain para sa mga BHW ang screening sa komunidad?",
+      "answer_en": "No. Community screening, including blood glucose monitoring with demonstration and return demonstration, is already treated as a BHW competency by the regional office and appears in the BHW skills lab. What this training package adds is standardisation — one common competency framework and an objective way to assess it — not a new duty.",
+      "answer_fil": "Hindi. Ang screening sa komunidad, kasama ang pagsubaybay ng asukal sa dugo na may demonstration at return demonstration, ay itinuturing nang kakayahan ng BHW ng rehiyonal na tanggapan at bahagi na ng BHW skills lab. Ang idinaragdag ng pagsasanay na ito ay pamantayan — iisang competency framework at obhetibong pagsusuri — hindi bagong tungkulin.",
+      "keywords": ["bago", "new", "task", "gawain", "competency", "skills lab", "standard", "pamantayan"],
+      "sources": ["who-bhw-manual-ta", "upv-ncd-flipchart-tot"]
+    },
+    {
+      "id": "m1-referral-destination",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "Where do I refer a client I have screened?",
+      "question_fil": "Saan ko ire-refer ang taong na-screen ko?",
+      "answer_en": "Refer to your barangay health station or rural health unit — the facility your LGU designates for PhilPEN confirmation and management. Give the client the referral slip with their readings written on it, tell them who to look for, and record the referral so you can follow up on whether they arrived.",
+      "answer_fil": "I-refer sa inyong barangay health station o rural health unit — ang pasilidad na itinalaga ng inyong LGU para sa pagkumpirma at pamamahala sa ilalim ng PhilPEN. Ibigay ang referral slip na nakasulat ang mga resulta, sabihin kung sino ang hahanapin, at itala ang referral upang masundan kung nakarating siya.",
+      "keywords": ["saan", "where", "refer", "referral", "rhu", "bhs", "health center", "pasilidad", "slip"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m1-client-refuses-referral",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "What if the client refuses to go to the health centre?",
+      "question_fil": "Paano kung ayaw pumunta sa health center ng kliyente?",
+      "answer_en": "Do not argue or frighten them. Ask what is stopping them — cost, distance, work, fear, or a bad past experience — and address that specific barrier. Leave the written referral, agree on a date you will follow up, and report the refusal to the midwife or nurse so the facility knows the person is outstanding.",
+      "answer_fil": "Huwag makipagtalo o manakot. Tanungin kung ano ang humahadlang — gastos, layo, trabaho, takot, o masamang karanasan noon — at tugunan ang tiyak na hadlang na iyon. Iwan ang nakasulat na referral, magkasundo sa petsa ng follow-up, at iulat ang pagtanggi sa midwife o nars upang malaman ng pasilidad na may nakabinbin pa.",
+      "keywords": ["ayaw", "refuse", "tumanggi", "hindi pumunta", "checkup", "konsulta", "health center", "hadlang", "barrier", "takot", "gastos"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m1-emergency-not-screening",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "When is a situation an emergency rather than a screening finding?",
+      "question_fil": "Kailan ito emergency at hindi na lamang resulta ng screening?",
+      "answer_en": "Treat it as an emergency and arrange immediate transport, not a routine referral, if the person has chest pain, difficulty breathing, sudden weakness or numbness on one side, slurred speech, sudden severe headache, confusion, fainting, or a seizure. Do not wait to finish the screening form and do not send them home to come back another day.",
+      "answer_fil": "Ituring itong emergency at ayusin ang agarang transport, hindi karaniwang referral, kung may sakit sa dibdib, hirap sa paghinga, biglaang panghihina o pamamanhid sa isang bahagi ng katawan, utal na pananalita, biglaang matinding sakit ng ulo, pagkalito, pagkahimatay, o kombulsyon. Huwag nang tapusin muna ang form at huwag siyang pauwiin para bumalik na lang sa ibang araw.",
+      "keywords": ["emergency", "agaran", "immediate", "chest pain", "dibdib", "stroke", "hingal", "himatay", "kombulsyon"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m1-confidentiality",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Can I share a resident's screening result with their family or neighbours?",
+      "question_fil": "Pwede ko bang sabihin sa pamilya o kapitbahay ang resulta ng screening ng residente?",
+      "answer_en": "No. Screening results are personal health information. Share them with the client, with the health facility you refer to, and with a family member only when the client agrees. Keep forms and registers where others cannot read them, and never discuss results in front of neighbours or in group chats.",
+      "answer_fil": "Hindi. Personal na impormasyong pangkalusugan ang resulta ng screening. Ibahagi lamang sa kliyente, sa pasilidad na pinag-refer-an, at sa kapamilya kung pumapayag ang kliyente. Itago ang mga form at talaan sa lugar na hindi nababasa ng iba, at huwag pag-usapan ang resulta sa harap ng kapitbahay o sa group chat.",
+      "keywords": ["confidential", "lihim", "pribado", "privacy", "sabihin", "share", "pamilya", "kapitbahay", "data"],
+      "sources": ["who-bhw-manual-ta", "ra-7883"]
+    },
+    {
+      "id": "m1-training-cascade-purpose",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Why am I being trained if I will just teach other BHWs afterwards?",
+      "question_fil": "Bakit ako sinasanay kung ituturo ko rin naman ito sa ibang BHW pagkatapos?",
+      "answer_en": "Because the cascade only works if the first link is accurate. You are trained to a defined competency standard and assessed against it, so that what you pass on to your peers is the standardised method and not a personal version of it. Module 6 sets out the minimum standards you must meet before certifying cascade training in your barangay.",
+      "answer_fil": "Dahil gumagana lamang ang cascade kung tumpak ang unang bahagi nito. Sinasanay ka ayon sa tiyak na pamantayan ng kakayahan at sinusuri laban dito, upang ang ipasa mo sa kapwa BHW ay ang standardisadong paraan at hindi personal na bersyon nito. Nasa Modyul 6 ang pinakamababang pamantayan bago ka makapagpatunay ng cascade training sa inyong barangay.",
+      "keywords": ["cascade", "turo", "teach", "peer", "training", "bakit", "sanay", "standard", "kapwa"],
+      "sources": ["who-bhw-manual-ta"]
+    }
+  ]
+}
