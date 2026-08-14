@@ -1,0 +1,119 @@
+{
+  "$comment": "Citation registry for the HHP+ / PhilPEN community NCD screening corpus. Only publicly resolvable sources belong here — kb_entries has no source column, so scripts/kb-load.mjs renders these into a 'Sanggunian / Source' line appended to both answer fields. Run `npm run kb:check-sources` before any demo. Sites behind a WAF (doh.gov.ph, foi.gov.ph) answer 403 to datacenter IPs and are marked wafBlocked — the checker warns instead of failing, and they must be eyeballed in a browser.",
+  "sources": {
+    "who-hearts": {
+      "label_en": "WHO HEARTS technical package for cardiovascular disease management in primary health care",
+      "label_fil": "WHO HEARTS technical package para sa pamamahala ng sakit sa puso sa primary health care",
+      "publisher": "World Health Organization",
+      "year": 2020,
+      "url": "https://www.who.int/teams/noncommunicable-diseases/hearts-technical-package"
+    },
+    "who-pen": {
+      "label_en": "WHO package of essential noncommunicable (PEN) disease interventions for primary health care",
+      "label_fil": "WHO package of essential noncommunicable disease interventions (PEN) para sa primary health care",
+      "publisher": "World Health Organization",
+      "year": 2020,
+      "url": "https://www.who.int/publications/i/item/9789240009226"
+    },
+    "paho-hearts-bp": {
+      "label_en": "HEARTS in the Americas: Blood Pressure Measurement",
+      "label_fil": "HEARTS in the Americas: Pagsukat ng Presyon ng Dugo",
+      "publisher": "Pan American Health Organization / WHO",
+      "year": 2024,
+      "url": "https://www.paho.org/en/hearts-americas/hearts-americas-blood-pressure-measurement"
+    },
+    "who-htn-guideline-2021": {
+      "label_en": "WHO guideline for the pharmacological treatment of hypertension in adults",
+      "label_fil": "Gabay ng WHO sa panggamot na paglunas ng altapresyon sa mga nasa hustong gulang",
+      "publisher": "World Health Organization",
+      "year": 2021,
+      "url": "https://www.who.int/publications/i/item/9789240033986"
+    },
+    "who-phlebotomy": {
+      "label_en": "WHO guidelines on drawing blood: best practices in phlebotomy",
+      "label_fil": "Gabay ng WHO sa pagkuha ng dugo: pinakamahusay na kasanayan sa phlebotomy",
+      "publisher": "World Health Organization",
+      "year": 2010,
+      "url": "https://www.who.int/publications/i/item/9789241599221"
+    },
+    "who-phlebotomy-capillary": {
+      "label_en": "WHO guidelines on drawing blood — Capillary sampling",
+      "label_fil": "Gabay ng WHO sa pagkuha ng dugo — Capillary sampling",
+      "publisher": "World Health Organization",
+      "year": 2010,
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK138654/"
+    },
+    "doh-philpen": {
+      "label_en": "DOH Lifestyle-Related Diseases programme (PhilPEN)",
+      "label_fil": "Programa ng DOH sa Lifestyle-Related Diseases (PhilPEN)",
+      "publisher": "Department of Health, Philippines",
+      "year": 2025,
+      "url": "https://doh.gov.ph/uhc/health-programs/lifestyle-related-diseases/",
+      "wafBlocked": true
+    },
+    "doh-philpen-raf": {
+      "label_en": "DOH PhilPEN Risk Assessment Form",
+      "label_fil": "PhilPEN Risk Assessment Form ng DOH",
+      "publisher": "Department of Health, Philippines",
+      "year": 2012,
+      "url": "https://www.foi.gov.ph/agencies/doh/philpen-risk-assessment-form/",
+      "wafBlocked": true
+    },
+    "psh-cpg-2020": {
+      "label_en": "Philippine Society of Hypertension clinical practice guidelines",
+      "label_fil": "Clinical practice guidelines ng Philippine Society of Hypertension",
+      "publisher": "Philippine Society of Hypertension",
+      "year": 2020,
+      "url": "https://www.philippinesocietyofhypertension.org.ph/"
+    },
+    "who-ph-hhp-wv": {
+      "label_en": "DOH, WHO prioritize integration of cardiovascular disease fight into UHC in Western Visayas",
+      "label_fil": "DOH at WHO, isinusulong ang integrasyon ng laban sa sakit sa puso sa UHC sa Kanlurang Visayas",
+      "publisher": "WHO Philippines",
+      "year": 2023,
+      "url": "https://www.who.int/philippines/news/detail/29-09-2023-doh--who-prioritize-integration-of-cardiovascular-disease-fight-into-uhc-in-western-visayas"
+    },
+    "who-ph-hhp-2024": {
+      "label_en": "The Healthy Hearts beat for Western Visayas",
+      "label_fil": "Ang Healthy Hearts para sa Kanlurang Visayas",
+      "publisher": "WHO Philippines",
+      "year": 2024,
+      "url": "https://www.who.int/philippines/news/detail/21-05-2024-the-healthy-hearts-beat-for-western-visayas"
+    },
+    "who-wpro-healthy-hearts": {
+      "label_en": "Stronger systems for healthy hearts in the Philippines",
+      "label_fil": "Mas matibay na sistema para sa malulusog na puso sa Pilipinas",
+      "publisher": "WHO Western Pacific Region",
+      "year": 2024,
+      "url": "https://www.who.int/westernpacific/newsroom/feature-stories/item/stronger-systems-for-healthy-hearts-in-the-philippines"
+    },
+    "upv-ncd-flipchart-tot": {
+      "label_en": "UPV, WHO and DOH Training of Trainers on the noncommunicable diseases flipchart rollout",
+      "label_fil": "Training of Trainers ng UPV, WHO at DOH sa paggamit ng NCD flipchart",
+      "publisher": "University of the Philippines Visayas",
+      "year": 2024,
+      "url": "https://www.upv.edu.ph/index.php/news/upv-who-and-doh-conduct-training-of-trainers-on-noncommunicable-diseases-flipchart-rollout"
+    },
+    "iloilo-healthy-hearts-cost": {
+      "label_en": "The Healthy Hearts program to improve primary care for hypertension in seven rural health units of Iloilo Province, Philippines: a comparative cost study",
+      "label_fil": "Pag-aaral sa gastos ng Healthy Hearts program sa pitong rural health unit sa Iloilo",
+      "publisher": "BMC Health Services Research (PMC)",
+      "year": 2025,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11929305/"
+    },
+    "who-bhw-manual-ta": {
+      "label_en": "Technical assistance for the revision of the Barangay Health Worker's Reference Manual and development of online training modules",
+      "label_fil": "Teknikal na tulong sa rebisyon ng BHW Reference Manual at pagbuo ng online training modules",
+      "publisher": "WHO Western Pacific Region",
+      "year": 2024,
+      "url": "https://www.who.int/westernpacific/articles/item/technical-assistance-for-the-revision-of-barangay-health-worker-s-(bhw)-reference-manual-and-development-of-online-training-modules"
+    },
+    "ra-7883": {
+      "label_en": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
+      "label_fil": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
+      "publisher": "Congress of the Philippines",
+      "year": 1995,
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
+    }
+  }
+}

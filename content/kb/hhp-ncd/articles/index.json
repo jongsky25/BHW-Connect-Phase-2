@@ -1,0 +1,65 @@
+{
+  "$comment": "Long-form kb_articles, one per module. Bodies are plain markdown in sibling .en.md / .fil.md files and are converted to Tiptap JSONContent at load time by scripts/lib/md-to-tiptap.mjs — only the subset @tiptap/starter-kit renders in src/components/kb/article-viewer.tsx is supported (h1-h3, paragraphs, bullet and ordered lists, bold, italic, code).",
+  "articles": [
+    {
+      "id": "a-m1-care-pathway",
+      "category": "hhp-m1-care-pathway",
+      "tier": "cited",
+      "title_en": "Module 1 reference — Where community screening fits in the HHP+ care pathway",
+      "title_fil": "Sanggunian sa Modyul 1 — Saan nakalugar ang screening sa komunidad sa HHP+ care pathway",
+      "file_en": "module-1.en.md",
+      "file_fil": "module-1.fil.md",
+      "sources": ["who-pen", "who-hearts", "doh-philpen", "who-ph-hhp-wv"]
+    },
+    {
+      "id": "a-m2-risk-assessment",
+      "category": "hhp-m2-risk-assessment-flipchart",
+      "tier": "cited",
+      "title_en": "Module 2 reference — Structured risk assessment with the NCD Flipchart",
+      "title_fil": "Sanggunian sa Modyul 2 — Maayos na risk assessment gamit ang NCD Flipchart",
+      "file_en": "module-2.en.md",
+      "file_fil": "module-2.fil.md",
+      "sources": ["doh-philpen-raf", "upv-ncd-flipchart-tot", "who-pen"]
+    },
+    {
+      "id": "a-m3-blood-pressure",
+      "category": "hhp-m3-blood-pressure",
+      "tier": "cited",
+      "title_en": "Module 3 reference — Taking a blood pressure that the facility can trust",
+      "title_fil": "Sanggunian sa Modyul 3 — Pagsukat ng presyon na mapagkakatiwalaan ng pasilidad",
+      "file_en": "module-3.en.md",
+      "file_fil": "module-3.fil.md",
+      "sources": ["paho-hearts-bp", "who-hearts", "psh-cpg-2020"]
+    },
+    {
+      "id": "a-m4-blood-glucose",
+      "category": "hhp-m4-blood-glucose",
+      "tier": "cited",
+      "title_en": "Module 4 reference — Safe capillary blood glucose testing in the household",
+      "title_fil": "Sanggunian sa Modyul 4 — Ligtas na pagsusuri ng asukal sa dugo sa sambahayan",
+      "file_en": "module-4.en.md",
+      "file_fil": "module-4.fil.md",
+      "sources": ["who-phlebotomy", "who-phlebotomy-capillary", "who-pen"]
+    },
+    {
+      "id": "a-m5-communication",
+      "category": "hhp-m5-communication-referral",
+      "tier": "cited",
+      "title_en": "Module 5 reference — Explaining results and getting the referral completed",
+      "title_fil": "Sanggunian sa Modyul 5 — Pagpapaliwanag ng resulta at pagkumpleto ng referral",
+      "file_en": "module-5.en.md",
+      "file_fil": "module-5.fil.md",
+      "sources": ["who-hearts", "who-pen", "who-htn-guideline-2021"]
+    },
+    {
+      "id": "a-m6-documentation",
+      "category": "hhp-m6-documentation-cascade",
+      "tier": "cited",
+      "title_en": "Module 6 reference — Documentation, reporting and cascading the skill",
+      "title_fil": "Sanggunian sa Modyul 6 — Dokumentasyon, pag-uulat at pagpapasa ng kasanayan",
+      "file_en": "module-6.en.md",
+      "file_fil": "module-6.fil.md",
+      "sources": ["who-bhw-manual-ta", "doh-philpen-raf", "who-hearts"]
+    }
+  ]
+}

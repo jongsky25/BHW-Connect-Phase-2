@@ -1,0 +1,292 @@
+{
+  "$comment": "Module 3 — Standardized blood pressure measurement refresher (deck slide 9): correct positioning, cuff selection and repeat measurement; identifying and correcting common measurement errors; applying community screening thresholds. Numeric cut-offs specific to the HHP+ community protocol are tier=pending.",
+  "category": "hhp-m3-blood-pressure",
+  "entries": [
+    {
+      "id": "m3-rest-before",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "How long should the person rest before I take their blood pressure?",
+      "question_fil": "Gaano katagal dapat magpahinga ang tao bago sukatin ang presyon?",
+      "answer_en": "Let them sit quietly for about five minutes before the first reading, with the back supported and both feet flat on the floor. Measuring someone who has just walked in, carried a load or climbed stairs gives a falsely high number and is one of the easiest errors to prevent.",
+      "answer_fil": "Paupuin sila nang tahimik ng humigit-kumulang limang minuto bago ang unang pagsukat, may suporta ang likod at nakalapat sa sahig ang dalawang paa. Ang pagsukat sa kararating lang, kabubuhat ng mabigat o kaakyat lang ng hagdan ay nagbibigay ng maling mataas na resulta at isa sa pinakamadaling maiwasang pagkakamali.",
+      "keywords": ["pahinga", "rest", "limang minuto", "five minutes", "bago", "before", "sukat", "presyon", "upo"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-sitting-position",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What is the correct sitting position for a blood pressure measurement?",
+      "question_fil": "Ano ang tamang posisyon sa pag-upo sa pagsukat ng presyon?",
+      "answer_en": "Seated on a chair with a back rest, back supported, legs uncrossed, both feet flat on the floor, and the arm resting on a table. Crossed legs, dangling feet, an unsupported back, or measuring someone standing or lying on a bed all change the reading.",
+      "answer_fil": "Nakaupo sa upuang may sandalan, suportado ang likod, hindi nakapangalumbaba o nakakrus ang binti, nakalapat sa sahig ang dalawang paa, at nakapatong sa mesa ang braso. Ang nakakrus na binti, nakalawit na paa, walang sandalan, o pagsukat sa nakatayo o nakahiga ay lahat nagpapabago ng resulta.",
+      "keywords": ["posisyon", "position", "upo", "sitting", "sandalan", "binti", "paa", "krus", "tama"],
+      "sources": ["paho-hearts-bp"]
+    },
+    {
+      "id": "m3-arm-at-heart-level",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "Where should the arm rest during the measurement?",
+      "question_fil": "Saan dapat nakalagay ang braso habang sinusukat?",
+      "answer_en": "Supported on a table or firm surface with the middle of the cuff at the level of the heart. An arm hanging at the side or resting on the lap gives a substantially higher reading than the same arm supported at heart level — a table for the arm is not optional equipment.",
+      "answer_fil": "Nakapatong sa mesa o matibay na patungan, at nasa taas ng puso ang gitna ng cuff. Ang brasong nakalawit sa tabi o nakapatong sa hita ay nagbibigay ng mas mataas na resulta kaysa sa parehong braso na suportado sa taas ng puso — hindi opsyonal na kagamitan ang mesang patungan ng braso.",
+      "keywords": ["braso", "arm", "puso", "heart level", "mesa", "table", "patong", "suporta", "butkon"],
+      "sources": ["paho-hearts-bp"]
+    },
+    {
+      "id": "m3-cuff-size",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "How do I know if the blood pressure cuff is the right size?",
+      "question_fil": "Paano ko malalaman kung tama ang laki ng cuff?",
+      "answer_en": "Measure the arm circumference and match it to the range printed on the cuff — most cuffs have index and range markings that show whether the fit is correct once wrapped. A cuff that is too small reads falsely high and one that is too large reads falsely low, so carrying more than one size is part of doing this properly.",
+      "answer_fil": "Sukatin ang bilog ng braso at itugma ito sa saklaw na nakalimbag sa cuff — karamihan ng cuff ay may index at range marking na nagpapakita kung tama ang pagkakabalot. Ang masyadong maliit na cuff ay nagbibigay ng maling mataas na resulta at ang masyadong malaki ay maling mababa, kaya bahagi ng tamang pagsukat ang pagdadala ng higit sa isang sukat.",
+      "keywords": ["cuff", "laki", "size", "sukat", "braso", "circumference", "index", "range", "tama"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-cuff-placement",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "How do I position the cuff on the arm?",
+      "question_fil": "Paano ko ilalagay ang cuff sa braso?",
+      "answer_en": "Wrap it snugly around the upper arm with the lower edge about two to three centimetres above the bend of the elbow, and the tubing or artery marker over the inner side of the arm where the brachial artery runs. You should be able to slip one or two fingers under the cuff; looser than that and the reading is unreliable.",
+      "answer_fil": "Ibalot ito nang hapit sa itaas na bahagi ng braso, mga dalawa hanggang tatlong sentimetro ang ibabang gilid mula sa siko, at nasa loob na bahagi ng braso ang tubo o marka ng arterya kung saan dumadaan ang brachial artery. Dapat may makasingit na isa hanggang dalawang daliri sa ilalim ng cuff; kung mas maluwag pa rito, hindi maaasahan ang resulta.",
+      "keywords": ["cuff", "lagay", "placement", "siko", "elbow", "tubo", "balot", "wrap", "arterya"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-bare-arm",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "Can I put the cuff over the sleeve?",
+      "question_fil": "Pwede bang ilagay ang cuff sa ibabaw ng manggas?",
+      "answer_en": "Use a bare arm. A thick or bunched sleeve under the cuff changes the reading, and rolling a tight sleeve up creates a band that squeezes the arm — which is worse than leaving it down. Ask the person to slip the arm out of the sleeve, and give women privacy to do so.",
+      "answer_fil": "Gamitin ang hubad na braso. Ang makapal o nakalukot na manggas sa ilalim ng cuff ay nagpapabago ng resulta, at ang paglililis ng masikip na manggas ay lumilikha ng bandang sumisikip sa braso — mas masama pa ito kaysa hayaan itong nakababa. Pakiusapan ang tao na alisin ang braso sa manggas, at bigyan ng pribasiya ang mga babae.",
+      "keywords": ["manggas", "sleeve", "damit", "clothing", "hubad", "bare", "cuff", "ibabaw"],
+      "sources": ["paho-hearts-bp"]
+    },
+    {
+      "id": "m3-no-talking",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "Can we talk while the blood pressure is being taken?",
+      "question_fil": "Pwede bang mag-usap habang sinusukat ang presyon?",
+      "answer_en": "No. Both of you stay quiet during the measurement — talking, and being talked to, raises the reading. Explain what you are about to do first, then measure in silence, then talk about the result afterwards.",
+      "answer_fil": "Hindi. Manatiling tahimik kayong dalawa habang sinusukat — ang pagsasalita, at ang pakikipag-usap sa kanya, ay nagpapataas ng resulta. Ipaliwanag muna ang gagawin mo, pagkatapos ay sumukat nang tahimik, at saka pag-usapan ang resulta.",
+      "keywords": ["usap", "talking", "salita", "tahimik", "quiet", "habang", "sukat"],
+      "sources": ["paho-hearts-bp"]
+    },
+    {
+      "id": "m3-avoid-before",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What should the person avoid before a blood pressure measurement?",
+      "question_fil": "Ano ang dapat iwasan ng tao bago sukatin ang presyon?",
+      "answer_en": "Coffee, smoking and heavy exercise in the 30 minutes before, and a full bladder at the time of measurement. Ask before you start; if any of these apply, wait or note it on the form so the facility knows the condition the reading was taken under.",
+      "answer_fil": "Kape, paninigarilyo at mabigat na ehersisyo sa loob ng 30 minuto bago sukatin, at puno ang pantog sa oras ng pagsukat. Magtanong bago magsimula; kung mayroon nito, maghintay o isulat ito sa form upang malaman ng pasilidad kung anong kalagayan kinuha ang resulta.",
+      "keywords": ["iwasan", "avoid", "kape", "coffee", "sigarilyo", "ihi", "pantog", "bladder", "ehersisyo"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-which-arm",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "Which arm should I use, the left or the right?",
+      "question_fil": "Aling braso ang gagamitin ko, kanan o kaliwa?",
+      "answer_en": "On a first assessment, measure both arms and then use the arm with the higher reading for that visit and for all later visits — write down which arm you used. Avoid an arm with an injury, a wound, a dialysis fistula, or on the side of a previous breast operation.",
+      "answer_fil": "Sa unang pagsusuri, sukatin ang dalawang braso at gamitin ang brasong mas mataas ang resulta sa pagbisitang iyon at sa mga susunod — isulat kung aling braso ang ginamit. Iwasan ang brasong may sugat, pinsala, dialysis fistula, o nasa panig ng dating operasyon sa suso.",
+      "keywords": ["aling braso", "which arm", "arm", "braso", "kanan", "kaliwa", "left", "right", "dalawa", "both", "mas mataas", "measurement", "pagsukat"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-repeat-measurement",
+      "domain": "bp-screening",
+      "tier": "pending",
+      "question_en": "How many times should I measure the blood pressure?",
+      "question_fil": "Ilang beses ko dapat sukatin ang presyon?",
+      "answer_en": "Never act on a single reading. Standard practice is to take a repeat measurement after a short interval with the person still seated and to use the pattern of readings, not the first one. The exact number of readings, the interval between them, and how they are averaged for community screening under HHP+ must be taken from the current PhilPEN 2025 protocol.",
+      "answer_fil": "Huwag kailanman magpasya batay sa isang pagsukat. Karaniwang gawi ang ulitin ang pagsukat pagkalipas ng maikling sandali habang nakaupo pa rin ang tao, at gamitin ang kabuuang larawan ng mga resulta, hindi ang una. Ang eksaktong bilang ng pagsukat, ang pagitan ng bawat isa, at kung paano ito pinag-aaverage sa screening sa komunidad sa ilalim ng HHP+ ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol.",
+      "keywords": ["ilang beses", "how many", "ulit", "repeat", "second reading", "pangalawa", "average", "pagitan"],
+      "sources": ["paho-hearts-bp", "who-hearts", "doh-philpen"]
+    },
+    {
+      "id": "m3-readings-differ",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What if the two readings are very different from each other?",
+      "question_fil": "Paano kung malayo ang pagkakaiba ng dalawang resulta?",
+      "answer_en": "Check the obvious causes first — the person moved, talked, was not rested, the cuff slipped, or the arm was unsupported. Correct what you find, rest them again briefly, and take another reading. Record all the readings you took, not just the one you like best.",
+      "answer_fil": "Suriin muna ang halatang dahilan — gumalaw ang tao, nagsalita, hindi nakapagpahinga, natanggal ang cuff, o walang suporta ang braso. Itama ang nakita mo, pagpahingahin ulit sandali, at sumukat muli. Itala ang lahat ng resultang kinuha mo, hindi lang ang gusto mong resulta.",
+      "keywords": ["magkaiba", "different", "pagkakaiba", "malayo", "resulta", "dalawa", "readings", "ulit"],
+      "sources": ["paho-hearts-bp"]
+    },
+    {
+      "id": "m3-what-numbers-mean",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What do the top and bottom numbers of the blood pressure mean?",
+      "question_fil": "Ano ang ibig sabihin ng itaas at ibabang numero ng presyon?",
+      "answer_en": "The top number, systolic, is the pressure while the heart is pushing blood out; the bottom number, diastolic, is the pressure while the heart is resting between beats. Both matter — a person can be at risk because of the top number alone, or the bottom number alone.",
+      "answer_fil": "Ang numero sa itaas, systolic, ang presyon habang itinutulak ng puso ang dugo palabas; ang numero sa ibaba, diastolic, ang presyon habang nagpapahinga ang puso sa pagitan ng tibok. Mahalaga pareho — maaaring nasa panganib ang tao dahil lamang sa itaas na numero, o dahil lamang sa ibaba.",
+      "keywords": ["systolic", "diastolic", "itaas", "ibaba", "numero", "numbers", "kahulugan", "meaning", "mmhg"],
+      "sources": ["who-htn-guideline-2021", "who-hearts"]
+    },
+    {
+      "id": "m3-ph-threshold",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What blood pressure level is considered high in the Philippines?",
+      "question_fil": "Anong antas ng presyon ang itinuturing na mataas sa Pilipinas?",
+      "answer_en": "The Philippine Society of Hypertension defines hypertension as an office blood pressure of 140/90 mmHg or above on properly taken measurements. International guidelines published since then use lower action levels, so the number your programme uses for a community referral must come from the current PhilPEN protocol and not from a guideline you read elsewhere.",
+      "answer_fil": "Ayon sa Philippine Society of Hypertension, ang altapresyon ay office blood pressure na 140/90 mmHg pataas sa tamang pagsukat. May mga pandaigdigang gabay na inilathala matapos nito na gumagamit ng mas mababang antas ng pagkilos, kaya ang bilang na gagamitin ng inyong programa para sa referral sa komunidad ay dapat mula sa kasalukuyang PhilPEN protocol at hindi sa gabay na nabasa sa ibang lugar.",
+      "keywords": ["140", "90", "mataas", "high", "antas", "level", "threshold", "hangganan", "philippines"],
+      "sources": ["psh-cpg-2020", "who-htn-guideline-2021"]
+    },
+    {
+      "id": "m3-referral-threshold",
+      "domain": "referral",
+      "tier": "pending",
+      "question_en": "At what blood pressure reading do I refer to the health centre?",
+      "question_fil": "Sa anong resulta ng presyon ako magre-refer sa health center?",
+      "answer_en": "The referral cut-off for community screening, and the separate cut-off for same-day or immediate referral, must be taken from the current PhilPEN 2025 protocol as adopted by your LGU — this entry stays unpublished until that figure is confirmed by BLHSD and WHO. What does not change: any raised reading together with chest pain, breathlessness, one-sided weakness or confusion is an immediate referral regardless of the number.",
+      "answer_fil": "Ang hangganan ng referral para sa screening sa komunidad, at ang hiwalay na hangganan para sa referral sa parehong araw o agaran, ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol na ginagamit ng inyong LGU — mananatiling hindi nailalathala ang aytem na ito hanggang makumpirma ng BLHSD at WHO ang bilang na iyon. Hindi nagbabago ito: ang anumang mataas na resulta na may kasamang sakit sa dibdib, hirap huminga, panghihina sa isang bahagi o pagkalito ay agarang referral anuman ang numero.",
+      "keywords": ["kailan refer", "referral", "threshold", "hangganan", "resulta", "reading", "cut off", "presyon"],
+      "sources": ["doh-philpen", "who-pen"]
+    },
+    {
+      "id": "m3-very-high-with-symptoms",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "The reading is very high and the person has symptoms. What do I do?",
+      "question_fil": "Napakataas ng resulta at may sintomas ang tao. Ano ang gagawin ko?",
+      "answer_en": "Treat it as an emergency. Arrange transport to the facility now, with someone accompanying them, and tell the health centre they are coming. Do not give any medicine, do not wait to repeat the measurement several more times, and do not let them travel alone.",
+      "answer_fil": "Ituring itong emergency. Ayusin ang transport patungo sa pasilidad ngayon din, may kasamang tao, at ipaalam sa health center na paparating sila. Huwag magbigay ng anumang gamot, huwag maghintay para ulit-ulitin pa ang pagsukat, at huwag hayaang mag-isang bumiyahe.",
+      "keywords": ["napakataas", "very high", "sintomas", "symptoms", "emergency", "agad", "transport", "dala"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m3-low-reading",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What if the blood pressure reading is low?",
+      "question_fil": "Paano kung mababa ang resulta ng presyon?",
+      "answer_en": "A low number in a person who feels well is usually not a problem. What matters is symptoms: dizziness on standing, weakness, cold clammy skin, confusion or fainting. With those, let them lie down, do not let them walk off alone, and refer. Also check the cuff size and position, since an oversized cuff can read falsely low.",
+      "answer_fil": "Ang mababang numero sa taong maayos ang pakiramdam ay karaniwang hindi problema. Ang mahalaga ay ang sintomas: pagkahilo sa pagtayo, panghihina, malamig at basang balat, pagkalito o pagkahimatay. Kung mayroon nito, pahigain sila, huwag hayaang umalis mag-isa, at i-refer. Suriin din ang laki at pagkakalagay ng cuff, dahil ang sobrang laking cuff ay nagbibigay ng maling mababang resulta.",
+      "keywords": ["mababa", "low", "hilo", "dizzy", "himatay", "hypotension", "panghihina", "resulta"],
+      "sources": ["who-pen", "paho-hearts-bp"]
+    },
+    {
+      "id": "m3-irregular-pulse",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What if the person's pulse is irregular?",
+      "question_fil": "Paano kung hindi regular ang pulso ng tao?",
+      "answer_en": "Automated devices are less reliable when the heartbeat is irregular, and some display a warning symbol. Note the irregularity on the form, take the readings anyway, and mention it in the referral so the facility can check the pulse themselves — an irregular pulse is itself a reason for them to see the person.",
+      "answer_fil": "Hindi gaanong maaasahan ang automated na aparato kapag hindi regular ang tibok ng puso, at may ilang nagpapakita ng babalang simbolo. Isulat ang hindi regular na pulso sa form, kunin pa rin ang resulta, at banggitin ito sa referral upang masuri mismo ng pasilidad ang pulso — ang hindi regular na pulso ay dahilan na mismo para makita nila ang tao.",
+      "keywords": ["pulso", "pulse", "irregular", "tibok", "heartbeat", "hindi regular", "babala", "aparato"],
+      "sources": ["who-hearts", "paho-hearts-bp"]
+    },
+    {
+      "id": "m3-validated-device",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What kind of blood pressure device should we use?",
+      "question_fil": "Anong klaseng aparato sa presyon ang dapat naming gamitin?",
+      "answer_en": "A validated automated upper-arm device is the standard for this kind of programme — it removes hearing and rounding errors and needs less training to use consistently. Wrist and finger devices are not suitable for screening. Use the device your programme issued, not a personal one of unknown type.",
+      "answer_fil": "Ang validated na automated na aparato para sa itaas na braso ang pamantayan sa ganitong programa — inaalis nito ang pagkakamali sa pandinig at pag-round ng numero at mas madaling gamitin nang tuloy-tuloy. Hindi angkop sa screening ang aparatong pang-pulso o pandaliri. Gamitin ang aparatong ibinigay ng programa, hindi ang personal na aparatong hindi alam ang uri.",
+      "keywords": ["aparato", "device", "automated", "digital", "validated", "wrist", "pulso", "sphygmomanometer", "anong klase"],
+      "sources": ["who-hearts", "paho-hearts-bp"]
+    },
+    {
+      "id": "m3-device-care",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "How do I take care of the blood pressure device?",
+      "question_fil": "Paano ko aalagaan ang aparato sa presyon?",
+      "answer_en": "Keep it in its case, protect it from heat, rain and falls, check the tubing and cuff for cracks and leaks before each session, replace batteries before they run low, and wipe the cuff clean. Report a device that gives odd results or error codes instead of continuing to use it — devices need periodic checking against a reference.",
+      "answer_fil": "Itago ito sa lalagyan, ilayo sa init, ulan at pagkahulog, suriin ang tubo at cuff kung may lamat o tagas bago ang bawat sesyon, palitan ang baterya bago tuluyang maubos, at punasan ang cuff. Iulat ang aparatong kakaiba ang resulta o may error code sa halip na ipagpatuloy ang paggamit — kailangang pana-panahong ihambing ang aparato sa sanggunian.",
+      "keywords": ["alaga", "care", "aparato", "device", "baterya", "battery", "tubo", "sira", "calibration"],
+      "sources": ["who-hearts", "paho-hearts-bp"]
+    },
+    {
+      "id": "m3-common-errors",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What are the most common blood pressure measurement errors?",
+      "question_fil": "Ano ang pinakakaraniwang pagkakamali sa pagsukat ng presyon?",
+      "answer_en": "No rest before measuring, arm unsupported or below heart level, wrong cuff size, cuff over a bunched sleeve, back or feet unsupported, talking during the reading, taking only one reading, and rounding the number to the nearest zero when writing it down. Every one of them pushes the reading in a predictable direction.",
+      "answer_fil": "Walang pahinga bago sumukat, walang suporta ang braso o mas mababa ito sa puso, maling laki ng cuff, cuff sa ibabaw ng nakalukot na manggas, walang suporta ang likod o paa, pag-uusap habang sumusukat, isang pagsukat lamang, at pag-round ng numero sa pinakamalapit na sero kapag isinusulat. Bawat isa ay nagtutulak sa resulta sa tiyak na direksyon.",
+      "keywords": ["pagkakamali", "errors", "mali", "mistakes", "karaniwan", "common", "iwasan", "presyon", "sukat"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-rounding",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Can I round the blood pressure reading when writing it down?",
+      "question_fil": "Pwede ko bang i-round ang resulta ng presyon kapag isinusulat?",
+      "answer_en": "No. Write the number exactly as it appears on the device — 138, not 140. Rounding to the nearest zero is a well-known habit that quietly moves people across the referral line in both directions and makes programme data useless for tracking control rates.",
+      "answer_fil": "Hindi. Isulat ang numero nang eksakto ayon sa lumalabas sa aparato — 138, hindi 140. Ang pag-round sa pinakamalapit na sero ay kilalang ugali na tahimik na naglilipat ng mga tao sa magkabilang panig ng hangganan ng referral at ginagawang walang silbi ang datos ng programa sa pagsubaybay ng control rate.",
+      "keywords": ["round", "bilog", "isulat", "write", "eksakto", "exact", "numero", "138", "140"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-recording-reading",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "How should I record the blood pressure reading?",
+      "question_fil": "Paano ko itatala ang resulta ng presyon?",
+      "answer_en": "Write systolic over diastolic in mmHg, every reading you took, which arm you used, the date and time, and anything unusual — no rest, irregular pulse, large cuff, very anxious client. The facility reads those notes as part of the number.",
+      "answer_fil": "Isulat ang systolic sa ibabaw ng diastolic sa mmHg, lahat ng resultang kinuha mo, kung aling braso ang ginamit, ang petsa at oras, at anumang hindi karaniwan — walang pahinga, hindi regular na pulso, malaking cuff, kabahang kliyente. Binabasa ng pasilidad ang mga tala na iyon bilang bahagi ng numero.",
+      "keywords": ["itala", "record", "isulat", "resulta", "reading", "form", "petsa", "oras", "braso"],
+      "sources": ["paho-hearts-bp", "doh-philpen-raf"]
+    },
+    {
+      "id": "m3-anxious-client",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "The client is nervous and their reading is high. Is it the anxiety?",
+      "question_fil": "Kabado ang kliyente at mataas ang resulta. Dahil ba ito sa kaba?",
+      "answer_en": "It might be, and it might not — you cannot tell from the community visit, and that is exactly why you refer rather than decide. Give them a few more minutes of quiet, repeat the measurement, record both, and let the facility sort out whether the raised reading persists.",
+      "answer_fil": "Maaaring oo, maaaring hindi — hindi ito matutukoy sa pagbisita sa komunidad, at iyan mismo ang dahilan kung bakit nagre-refer ka sa halip na magpasya. Bigyan sila ng ilang minuto pang katahimikan, ulitin ang pagsukat, itala pareho, at hayaang ang pasilidad ang tumukoy kung nananatili ang mataas na resulta.",
+      "keywords": ["kaba", "nervous", "kabado", "anxiety", "takot", "mataas", "white coat", "kalmado"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-noisy-place",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "How do I measure properly during a crowded barangay screening activity?",
+      "question_fil": "Paano ako makakasukat nang tama sa maraming tao sa screening sa barangay?",
+      "answer_en": "Set up one measuring station with a chair with a backrest and a table for the arm, keep a queue so each person sits for a few minutes before their turn, and keep the station away from the noisiest area. Speed is the enemy of accuracy here; a rushed session produces numbers the facility cannot trust.",
+      "answer_fil": "Maglagay ng isang istasyon ng pagsukat na may upuang may sandalan at mesang patungan ng braso, magkaroon ng pila upang makaupo muna ang bawat isa nang ilang minuto bago ang kanilang turno, at ilayo ang istasyon sa pinakamaingay na bahagi. Ang bilis ang kaaway ng katumpakan dito; ang minadaling sesyon ay nagbubunga ng numerong hindi mapagkakatiwalaan ng pasilidad.",
+      "keywords": ["maraming tao", "crowded", "aktibidad", "activity", "istasyon", "station", "pila", "queue", "barangay"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-explain-reading",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How do I tell the person their blood pressure result?",
+      "question_fil": "Paano ko sasabihin sa tao ang resulta ng presyon niya?",
+      "answer_en": "Say the numbers, say plainly whether they are above or below the level that needs checking, and say what happens next. Do not say 'you have hypertension' — say that the reading is high today and needs to be confirmed at the health centre, which is both true and less frightening.",
+      "answer_fil": "Sabihin ang mga numero, sabihin nang malinaw kung mas mataas o mas mababa ito sa antas na kailangang suriin, at sabihin kung ano ang susunod na mangyayari. Huwag sabihing 'may altapresyon ka' — sabihing mataas ang resulta ngayon at kailangang kumpirmahin sa health center, na parehong totoo at hindi nakakatakot.",
+      "keywords": ["sabihin", "tell", "resulta", "result", "paliwanag", "explain", "kliyente", "presyon"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m3-home-bp-monitor",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "The family has their own BP monitor at home. What should I tell them?",
+      "question_fil": "May sariling BP monitor ang pamilya sa bahay. Ano ang sasabihin ko?",
+      "answer_en": "Home monitoring helps if it is done properly. Teach the same rules — rest, seated with back and feet supported, arm on a table at heart level, correct cuff, no talking — and ask them to write down every reading with the date so the doctor can see the pattern. Remind them not to change any medicine on their own because of a home reading.",
+      "answer_fil": "Nakakatulong ang pagsukat sa bahay kung tama ang paggawa. Ituro ang parehong tuntunin — pahinga, nakaupo na suportado ang likod at paa, braso sa mesa sa taas ng puso, tamang cuff, walang usapan — at pakiusapan silang isulat ang bawat resulta at petsa upang makita ng doktor ang takbo nito. Ipaalala na huwag baguhin ang gamot nang mag-isa dahil sa resulta sa bahay.",
+      "keywords": ["bahay", "home", "sariling", "monitor", "sarili", "sukat", "pamilya", "record", "gamot"],
+      "sources": ["paho-hearts-bp", "who-hearts"]
+    }
+  ]
+}

@@ -10,7 +10,10 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "kb:load": "node scripts/kb-load.mjs",
+    "kb:unpublish": "node scripts/kb-unpublish.mjs",
+    "kb:check-sources": "node scripts/kb-check-sources.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.67.0",

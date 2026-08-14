@@ -1,0 +1,171 @@
+{
+  "$comment": "Module 6 — Documentation, reporting and cascade responsibilities (deck slide 12): completing screening registers and referral documentation, using standardized checklists for peer-to-peer skill transfer, and the minimum standards required before certifying cascade training in the barangay.",
+  "category": "hhp-m6-documentation-cascade",
+  "entries": [
+    {
+      "id": "m6-register-contents",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What goes into the screening register?",
+      "question_fil": "Ano ang nilalaman ng screening register?",
+      "answer_en": "Date, the client's identifying details, age and sex, the risk findings, every measurement you took with its unit, whether a referral was made and how urgent, the date of the agreed follow-up, and your name. Use the register issued for the programme rather than a personal notebook, so the entries line up with what the facility reports upward.",
+      "answer_fil": "Petsa, pagkakakilanlan ng kliyente, edad at kasarian, mga natuklasang panganib, bawat sukat na kinuha mo kasama ang yunit nito, kung may referral at gaano kaapurahan, ang petsa ng napagkasunduang follow-up, at ang pangalan mo. Gamitin ang rehistrong ibinigay para sa programa sa halip na personal na kuwaderno, upang magkatugma ang mga tala at ang iniuulat ng pasilidad pataas.",
+      "keywords": ["register", "talaan", "rehistro", "isulat", "record", "screening", "listahan", "nilalaman"],
+      "sources": ["doh-philpen-raf", "who-pen"]
+    },
+    {
+      "id": "m6-correcting-errors",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "How do I correct a mistake in the register?",
+      "question_fil": "Paano ko itatama ang mali sa talaan?",
+      "answer_en": "Draw a single line through the wrong entry so it can still be read, write the correct value beside it, and put your initials and the date next to the change. Never erase, never use correction fluid, and never write over a number — an unreadable correction looks like an alteration and makes the whole record doubtful.",
+      "answer_fil": "Guhitan ng isang linya ang maling tala upang mabasa pa rin ito, isulat ang tamang halaga sa tabi nito, at ilagay ang iyong inisyal at ang petsa sa tabi ng pagbabago. Huwag burahin, huwag gumamit ng correction fluid, at huwag sulatan ang ibabaw ng numero — ang hindi mabasang pagtatama ay mukhang panghihimasok at pinagdududahan ang buong talaan.",
+      "keywords": ["mali", "mistake", "itama", "correct", "burahin", "erase", "correction", "talaan", "inisyal"],
+      "sources": ["doh-philpen-raf"]
+    },
+    {
+      "id": "m6-why-accuracy-matters",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Why does it matter so much that my records are exact?",
+      "question_fil": "Bakit napakahalaga na eksakto ang aking mga talaan?",
+      "answer_en": "Because your numbers become the programme's numbers. Control rates, coverage figures and the case for continued funding are all built from barangay-level records, and a facility deciding on a person's treatment reads what you wrote. A number rounded or filled in from memory is not a small shortcut — it moves a real decision.",
+      "answer_fil": "Dahil ang iyong mga numero ang nagiging numero ng programa. Ang control rate, saklaw at ang batayan para sa patuloy na pondo ay galing lahat sa mga talaan sa antas ng barangay, at binabasa ng pasilidad ang isinulat mo sa pagpapasya sa gamutan ng tao. Ang numerong ni-round o isinulat mula sa memorya ay hindi maliit na pag-iikli — nagpapabago ito ng tunay na desisyon.",
+      "keywords": ["bakit", "why", "tumpak", "accurate", "eksakto", "datos", "data", "mahalaga", "desisyon"],
+      "sources": ["who-hearts", "iloilo-healthy-hearts-cost"]
+    },
+    {
+      "id": "m6-monthly-report",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What do I submit in the monthly report?",
+      "question_fil": "Ano ang isinusumite ko sa buwanang ulat?",
+      "answer_en": "Typically the number screened, how many had raised readings, how many were referred, how many actually reached the facility, and how many follow-ups were completed — in the format your RHU requires. Submit on time even when the numbers are low; a late or missing report is read as no activity at all.",
+      "answer_fil": "Karaniwan ay ang bilang ng nasuri, ilan ang may mataas na resulta, ilan ang na-refer, ilan ang talagang nakarating sa pasilidad, at ilang follow-up ang natapos — sa anyong hinihingi ng inyong RHU. Isumite sa tamang oras kahit mababa ang numero; ang huli o kulang na ulat ay binabasa bilang walang ginawang aktibidad.",
+      "keywords": ["ulat", "report", "buwanan", "monthly", "sumite", "submit", "bilang", "rhu", "datos"],
+      "sources": ["who-pen", "doh-philpen"]
+    },
+    {
+      "id": "m6-referral-feedback",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "How do I know whether the person I referred actually went?",
+      "question_fil": "Paano ko malalaman kung nakapunta talaga ang taong na-refer ko?",
+      "answer_en": "Close the loop yourself: keep a list of everyone you referred with the date, ask the midwife or nurse for the return slip or feedback, and visit or contact the client on the follow-up date you agreed. A referral without follow-up is only a piece of paper — the facility has no way to tell you who never arrived.",
+      "answer_fil": "Ikaw mismo ang magsara ng siklo: magtago ng listahan ng lahat ng na-refer mo kasama ang petsa, hingin sa midwife o nars ang return slip o feedback, at bisitahin o kontakin ang kliyente sa napagkasunduang petsa ng follow-up. Ang referral na walang follow-up ay papel lamang — walang paraan ang pasilidad upang sabihin sa iyo kung sino ang hindi dumating.",
+      "keywords": ["na refer", "referral", "nakapunta", "feedback", "return slip", "sundan", "listahan", "loop"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m6-duplicate-records",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What if the same person is screened twice?",
+      "question_fil": "Paano kung nasuri nang dalawang beses ang parehong tao?",
+      "answer_en": "Record both visits with their dates rather than overwriting the first — the second reading is useful information, not a duplicate to be deleted. Flag it clearly so the count of people screened is not inflated, and check with the midwife how repeat visits should be counted in your LGU's report.",
+      "answer_fil": "Itala ang dalawang pagbisita kasama ang petsa nito sa halip na palitan ang una — ang pangalawang resulta ay kapaki-pakinabang na impormasyon, hindi duplikadong dapat burahin. Markahan ito nang malinaw upang hindi lumobo ang bilang ng nasuring tao, at kumpirmahin sa midwife kung paano dapat bilangin ang ulit na pagbisita sa ulat ng inyong LGU.",
+      "keywords": ["dalawang beses", "twice", "duplicate", "ulit", "parehong tao", "bilang", "talaan", "count"],
+      "sources": ["doh-philpen-raf"]
+    },
+    {
+      "id": "m6-record-security",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Where should I keep the screening records?",
+      "question_fil": "Saan ko dapat itago ang mga talaan ng screening?",
+      "answer_en": "Somewhere closed and not accessible to the household or to visitors — not loose in a bag, not on a table at home, not photographed and sent through chat. Turn completed forms over to the health centre on the agreed schedule, and never keep personal health information longer than your role requires.",
+      "answer_fil": "Sa lugar na sarado at hindi maaabot ng sambahayan o ng bisita — hindi basta nakalagay sa bag, hindi nakapatong sa mesa sa bahay, hindi kinukuhanan ng litrato at ipinapadala sa chat. Isauli ang natapos na form sa health center ayon sa napagkasunduang iskedyul, at huwag itago ang personal na impormasyong pangkalusugan nang mas matagal kaysa kinakailangan ng iyong tungkulin.",
+      "keywords": ["tago", "keep", "talaan", "records", "ligtas", "secure", "pribado", "privacy", "litrato", "chat"],
+      "sources": ["who-bhw-manual-ta", "ra-7883"]
+    },
+    {
+      "id": "m6-handover",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What happens to my records if I stop being a BHW or move barangay?",
+      "question_fil": "Ano ang mangyayari sa aking mga talaan kung titigil ako bilang BHW o lilipat ng barangay?",
+      "answer_en": "Records belong to the programme, not to you. Hand over all registers, pending referrals and follow-up lists to your midwife or the BHW taking over, with a short note on who is still awaiting follow-up. The people mid-way through the pathway are the ones a bad handover loses.",
+      "answer_fil": "Sa programa ang mga talaan, hindi sa iyo. Isauli ang lahat ng rehistro, nakabinbing referral at listahan ng follow-up sa iyong midwife o sa BHW na papalit, kasama ang maikling tala kung sino ang naghihintay pa ng follow-up. Ang mga taong nasa gitna ng daloy ang nawawala kapag hindi maayos ang turnover.",
+      "keywords": ["turnover", "handover", "lipat", "titigil", "talaan", "records", "papalit", "midwife"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "m6-cascade-minimum-standards",
+      "domain": "documentation",
+      "tier": "pending",
+      "question_en": "What must be in place before I can certify cascade training in my barangay?",
+      "question_fil": "Ano ang dapat matugunan bago ko mapatunayan ang cascade training sa aming barangay?",
+      "answer_en": "At minimum you must have passed the knowledge and practical competency assessment yourself, be using the current standardised materials, run the session with demonstration and return demonstration, assess each participant against the checklist, and document who was trained and what they were assessed on. The exact passing standard and who signs the certification are set by the training package and must be confirmed with BLHSD and WHO.",
+      "answer_fil": "Sa pinakamababa, dapat ay naipasa mo mismo ang pagsusuri sa kaalaman at praktikal na kakayahan, gumagamit ng kasalukuyang standardisadong materyales, isagawa ang sesyon nang may demonstration at return demonstration, suriin ang bawat kalahok laban sa checklist, at idokumento kung sino ang nasanay at sa ano sila sinuri. Ang eksaktong pamantayan sa pagpasa at kung sino ang pumipirma sa sertipikasyon ay itinatakda ng training package at dapat kumpirmahin sa BLHSD at WHO.",
+      "keywords": ["cascade", "certify", "patunay", "pamantayan", "standard", "sanay", "turo", "checklist", "barangay"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "m6-return-demonstration",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What is return demonstration and why is it required?",
+      "question_fil": "Ano ang return demonstration at bakit ito kailangan?",
+      "answer_en": "You show the skill step by step, then the learner performs it back while you observe against a checklist. It is required because watching a video or listening to a lecture does not prove anyone can take a blood pressure correctly. It is also the method already used in the regional BHW skills lab, so the cascade matches how BHWs are assessed there.",
+      "answer_fil": "Ipinapakita mo ang kasanayan nang hakbang-hakbang, saka isasagawa ito ng natututo habang minamasdan mo laban sa checklist. Kailangan ito dahil ang panonood ng video o pakikinig sa lektyur ay hindi patunay na kaya nang sumukat ng presyon nang tama ang sinuman. Ito rin ang paraang ginagamit na sa rehiyonal na BHW skills lab, kaya tugma ang cascade sa paraan ng pagsusuri sa mga BHW doon.",
+      "keywords": ["return demonstration", "demo", "pagpapakita", "kasanayan", "checklist", "skills lab", "bakit", "sanay"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "m6-use-checklist",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "How do I use the skills checklist when assessing a peer?",
+      "question_fil": "Paano ko gagamitin ang skills checklist sa pagsusuri ng kapwa BHW?",
+      "answer_en": "Observe silently through the whole procedure, mark each step as done or not done as it happens rather than from memory afterwards, and do not coach mid-assessment. Give the feedback after: what was correct, the specific steps missed, and a date to repeat. Keep the completed checklist as the record of the assessment.",
+      "answer_fil": "Manood nang tahimik sa buong pamamaraan, markahan ang bawat hakbang bilang nagawa o hindi habang nangyayari ito sa halip na mula sa memorya pagkatapos, at huwag magturo habang nagsusuri. Ibigay ang puna pagkatapos: kung ano ang tama, ang tiyak na hakbang na nalaktawan, at ang petsa ng pag-uulit. Itago ang natapos na checklist bilang talaan ng pagsusuri.",
+      "keywords": ["checklist", "suriin", "assess", "kapwa", "peer", "hakbang", "puna", "feedback", "talaan"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "m6-what-not-to-cascade",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Is there anything I should not teach my fellow BHWs?",
+      "question_fil": "May mga bagay ba na hindi ko dapat ituro sa kapwa BHW?",
+      "answer_en": "Do not teach anything outside BHW scope — interpreting laboratory tests, deciding on medicines, or giving a diagnosis — and do not teach shortcuts you invented, however practical they seem. Teach the standardised package as issued; where the package is silent, say so and ask the RHU rather than filling the gap yourself.",
+      "answer_fil": "Huwag ituro ang anumang labas sa saklaw ng BHW — pagbibigay-kahulugan sa laboratory test, pagpapasya sa gamot, o pagbibigay ng diagnosis — at huwag ituro ang mga pinaikling paraan na ikaw ang gumawa, gaano man ito kapraktikal. Ituro ang standardisadong pakete gaya ng ibinigay; kung walang sinasabi ang pakete, sabihin ito at magtanong sa RHU sa halip na ikaw ang pumuno sa kakulangan.",
+      "keywords": ["huwag ituro", "not teach", "cascade", "saklaw", "scope", "shortcut", "standard", "rhu"],
+      "sources": ["who-bhw-manual-ta", "who-pen"]
+    },
+    {
+      "id": "m6-document-cascade",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "How do I document a cascade training session I ran?",
+      "question_fil": "Paano ko idodokumento ang cascade training na isinagawa ko?",
+      "answer_en": "Record the date and place, who facilitated, the attendance list with signatures, which modules were covered, the materials version used, the checklist results for each participant, and what follow-up was agreed for anyone who did not meet the standard. Submit it to the RHU — an undocumented session cannot be counted or verified.",
+      "answer_fil": "Itala ang petsa at lugar, kung sino ang nagpadaloy, ang listahan ng dumalo na may pirma, kung anong modyul ang natalakay, ang bersyon ng materyales na ginamit, ang resulta ng checklist ng bawat kalahok, at kung anong follow-up ang napagkasunduan para sa hindi nakaabot sa pamantayan. Isumite ito sa RHU — ang sesyong walang dokumento ay hindi maibibilang o mapapatunayan.",
+      "keywords": ["dokumento", "document", "cascade", "sesyon", "session", "attendance", "listahan", "isumite", "rhu"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "m6-where-data-goes",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "Where does the information I collect end up?",
+      "question_fil": "Saan napupunta ang impormasyong kinokolekta ko?",
+      "answer_en": "Your register feeds the health centre's records, which roll up to the city or municipal health office, the provincial and regional health offices, and the national programme. That is how coverage and blood pressure control rates are measured, and how the region shows whether the programme is working — the chain starts at your handwriting.",
+      "answer_fil": "Ang iyong rehistro ay pumapasok sa talaan ng health center, na umaakyat sa city o municipal health office, sa panlalawigan at rehiyonal na tanggapan, at sa pambansang programa. Ganito sinusukat ang saklaw at ang control rate ng presyon, at ipinapakita ng rehiyon kung umuubra ang programa — nagsisimula ang kadena sa iyong sulat-kamay.",
+      "keywords": ["saan napupunta", "data", "datos", "ulat", "report", "rhu", "provincial", "national", "control rate"],
+      "sources": ["who-hearts", "who-wpro-healthy-hearts"]
+    },
+    {
+      "id": "m6-missing-data",
+      "domain": "documentation",
+      "tier": "cited",
+      "question_en": "What if I realise later that a form is incomplete?",
+      "question_fil": "Paano kung mapansin ko mamaya na kulang ang form?",
+      "answer_en": "Do not fill the gap from memory. Mark the item as not obtained, and if the missing item matters — a measurement, a referral instruction — go back or contact the client to complete it, and note the date you did. An honest blank is usable; an invented value is not.",
+      "answer_fil": "Huwag punan mula sa memorya. Markahan ang aytem bilang hindi nakuha, at kung mahalaga ang nawawalang aytem — sukat, tagubilin sa referral — bumalik o kontakin ang kliyente upang tapusin ito, at itala ang petsa ng ginawa mo. Magagamit ang tapat na blangko; hindi ang gawa-gawang halaga.",
+      "keywords": ["kulang", "incomplete", "form", "nakalimutan", "memorya", "blangko", "punan", "itama"],
+      "sources": ["doh-philpen-raf"]
+    }
+  ]
+}

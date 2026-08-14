@@ -1,0 +1,281 @@
+{
+  "$comment": "Module 5 — Communicating screening results and activating referral (deck slide 11): explaining results in clear non-technical language, basic motivational interviewing for resistance, fear and misconceptions, reinforcing referral instructions and follow-up schedules.",
+  "category": "hhp-m5-communication-referral",
+  "entries": [
+    {
+      "id": "m5-explain-high-result",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How do I explain a high result without frightening the person?",
+      "question_fil": "Paano ko ipapaliwanag ang mataas na resulta nang hindi natatakot ang tao?",
+      "answer_en": "Give the number, say what it means in one plain sentence, and move straight to the next step: 'Ang presyon ninyo ngayon ay 158/96. Mas mataas ito sa dapat, kaya kailangan itong kumpirmahin sa health center.' Naming the action turns a frightening number into something the person can do something about.",
+      "answer_fil": "Ibigay ang numero, sabihin ang kahulugan nito sa isang simpleng pangungusap, at dumiretso sa susunod na hakbang: 'Ang presyon ninyo ngayon ay 158/96. Mas mataas ito sa dapat, kaya kailangan itong kumpirmahin sa health center.' Ang pagbanggit ng hakbang ay ginagawang bagay na may magagawa ang isang nakakatakot na numero.",
+      "keywords": ["paliwanag", "explain", "mataas", "high", "resulta", "takot", "frighten", "sabihin", "hakbang"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-explain-normal-result",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "What do I say when the result is normal?",
+      "question_fil": "Ano ang sasabihin ko kung normal ang resulta?",
+      "answer_en": "Say the reading is normal today, praise what they are already doing well, and be honest that normal today does not mean normal forever — that is why re-screening exists. Avoid 'wala kayong sakit', which people hear as permission to stop being checked.",
+      "answer_fil": "Sabihing normal ang resulta ngayon, purihin ang mga bagay na maayos na nilang ginagawa, at maging tapat na ang normal ngayon ay hindi normal habambuhay — kaya nga may muling screening. Iwasan ang 'wala kayong sakit', na naririnig ng mga tao bilang pahintulot na huwag nang magpasuri.",
+      "keywords": ["normal", "maayos", "resulta", "sabihin", "walang sakit", "muli", "screening", "purihin"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-plain-language",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "Which words should I avoid when explaining results?",
+      "question_fil": "Anong mga salita ang dapat kong iwasan sa pagpapaliwanag ng resulta?",
+      "answer_en": "Avoid systolic, diastolic, hyperglycemia, cardiovascular risk, and any word you would not use with a neighbour. Say 'presyon ng dugo', 'asukal sa dugo', 'ipatingin sa doktor'. Speak in the language the household actually uses — in Iloilo and Guimaras that is usually Hiligaynon — and check understanding by asking them to say it back.",
+      "answer_fil": "Iwasan ang systolic, diastolic, hyperglycemia, cardiovascular risk, at anumang salitang hindi mo gagamitin sa kapitbahay. Sabihin ang 'presyon ng dugo', 'asukal sa dugo', 'ipatingin sa doktor'. Magsalita sa wikang talagang ginagamit ng pamilya — sa Iloilo at Guimaras ay kadalasang Hiligaynon — at tiyakin ang pag-unawa sa pamamagitan ng pagpapaulit sa kanila.",
+      "keywords": ["salita", "words", "iwasan", "avoid", "teknikal", "simple", "wika", "language", "hiligaynon"],
+      "sources": ["who-hearts", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "m5-teach-back",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How do I check that the client understood?",
+      "question_fil": "Paano ko matitiyak na naintindihan ng kliyente?",
+      "answer_en": "Ask them to tell you back, in their own words, what they will do next — where they will go, when, and what to bring. Do not ask 'naintindihan ninyo ba?', because almost everyone says yes. If what comes back is wrong, that is not their failure; explain it a different way and check again.",
+      "answer_fil": "Pakiusapan silang sabihin sa iyo, sa sarili nilang salita, kung ano ang gagawin nila — saan pupunta, kailan, at ano ang dadalhin. Huwag itanong ang 'naintindihan ninyo ba?', dahil halos lahat ay sasagot ng oo. Kung mali ang naibalik nila, hindi ito kapalpakan nila; ipaliwanag sa ibang paraan at tiyakin muli.",
+      "keywords": ["intindi", "understood", "naintindihan", "teach back", "ulitin", "check", "tiyak", "sariling salita"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-what-is-mi",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "What is motivational interviewing?",
+      "question_fil": "Ano ang motivational interviewing?",
+      "answer_en": "It is a way of talking that helps a person find their own reasons to act, instead of being told what to do. In community screening it means asking permission before advising, listening more than lecturing, exploring what matters to that person, and letting them choose the next step — which is far more likely to be taken than one you imposed.",
+      "answer_fil": "Ito ay paraan ng pakikipag-usap na tumutulong sa tao na matagpuan ang sarili niyang dahilan para kumilos, sa halip na sabihan kung ano ang gagawin. Sa screening sa komunidad, ibig sabihin nito ay humingi ng pahintulot bago magpayo, mas makinig kaysa magsermon, alamin kung ano ang mahalaga sa taong iyon, at hayaan siyang pumili ng susunod na hakbang — mas malamang itong gawin kaysa sa ipinilit mo.",
+      "keywords": ["motivational interviewing", "mi", "usap", "pakikipag usap", "hikayat", "ano", "paraan", "payo"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-ask-permission",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How do I give advice without sounding like I am scolding?",
+      "question_fil": "Paano ako magpapayo nang hindi parang nangangaral?",
+      "answer_en": "Ask permission first — 'Pwede ko po bang ibahagi ang isang bagay tungkol sa asin?' — then give one short piece of information, then ask what they think of it. Advice that is invited is heard; advice that is announced is resisted, especially about food, drinking and smoking.",
+      "answer_fil": "Humingi muna ng pahintulot — 'Pwede ko po bang ibahagi ang isang bagay tungkol sa asin?' — pagkatapos ay magbigay ng isang maikling impormasyon, at saka itanong kung ano ang tingin nila rito. Ang payong hiniling ay naririnig; ang payong ipinahayag ay tinatanggihan, lalo na tungkol sa pagkain, inuman at paninigarilyo.",
+      "keywords": ["payo", "advice", "sermon", "pangangaral", "pahintulot", "permission", "paano", "sabihin"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-open-questions",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "What kind of questions should I ask to get people talking?",
+      "question_fil": "Anong uri ng tanong ang dapat kong itanong para magsalita sila?",
+      "answer_en": "Open ones that cannot be answered with yes or no: 'Ano ang alam ninyo tungkol sa altapresyon?', 'Ano ang mahirap sa pag-inom ng gamot araw-araw?', 'Ano ang pinakamahalaga sa inyo tungkol sa kalusugan ninyo?' Then reflect back what you heard before you add anything of your own.",
+      "answer_fil": "Bukas na tanong na hindi masasagot ng oo o hindi: 'Ano ang alam ninyo tungkol sa altapresyon?', 'Ano ang mahirap sa pag-inom ng gamot araw-araw?', 'Ano ang pinakamahalaga sa inyo tungkol sa kalusugan ninyo?' Pagkatapos, ulitin sa sarili mong salita ang narinig mo bago ka magdagdag ng sarili mong sasabihin.",
+      "keywords": ["tanong", "questions", "bukas", "open", "usap", "magsalita", "pakikinig", "listening"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-resistance",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "The client says they do not want to go and do not want medicine. What do I say?",
+      "question_fil": "Sinasabi ng kliyente na ayaw niyang pumunta at ayaw niya ng gamot. Ano ang sasabihin ko?",
+      "answer_en": "Do not push back — arguing hardens the position. Acknowledge it, then get curious: 'Naririnig ko po. Ano ang pinakamalaking hadlang para sa inyo?' Work on the real barrier, ask what would have to change for them to consider it, and leave the door open with a specific follow-up date.",
+      "answer_fil": "Huwag makipagtalo — ang pagtatalo ay lalo lamang nagpapatigas ng paninindigan. Kilalanin ito, saka magtanong nang may tunay na interes: 'Naririnig ko po. Ano ang pinakamalaking hadlang para sa inyo?' Tugunan ang tunay na hadlang, itanong kung ano ang kailangang magbago para pag-isipan nila ito, at iwang bukas ang pinto sa isang tiyak na petsa ng follow-up.",
+      "keywords": ["ayaw", "refuse", "resistance", "tumanggi", "gamot", "pumunta", "hadlang", "barrier", "talo"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-i-feel-fine",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "The client says 'I feel fine, so I don't need to be checked.' How do I answer?",
+      "question_fil": "Sabi ng kliyente, 'Wala naman akong nararamdaman, hindi na kailangan.' Paano ako sasagot?",
+      "answer_en": "Agree with the part that is true — most people with high blood pressure or high blood sugar feel nothing at all — and use that as the point: that is exactly why it is called the silent one, and exactly why checking matters. Feeling well is not evidence of a normal reading.",
+      "answer_fil": "Sumang-ayon sa bahaging totoo — karamihan ng may mataas na presyon o mataas na asukal ay walang nararamdaman — at gamitin ito bilang punto: iyan mismo ang dahilan kung bakit tinatawag itong tahimik, at kung bakit mahalaga ang pagpapasuri. Ang mabuting pakiramdam ay hindi katibayan ng normal na resulta.",
+      "keywords": ["wala nararamdaman", "feel fine", "maayos", "walang sakit", "hindi kailangan", "silent", "sagot"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-medicine-myths",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "The client believes maintenance medicine damages the kidneys or is addictive. What do I say?",
+      "question_fil": "Naniniwala ang kliyente na nakakasira ng bato o nakakalulong ang maintenance na gamot. Ano ang sasabihin ko?",
+      "answer_en": "Do not ridicule the belief. Say plainly that these medicines are not addictive, and that uncontrolled high blood pressure and high blood sugar are themselves a leading cause of kidney damage. Then say the honest limit of your role: the doctor is the one who can answer questions about their specific medicine, and you will help them get that conversation.",
+      "answer_fil": "Huwag kutyain ang paniniwala. Sabihin nang malinaw na hindi nakakalulong ang mga gamot na ito, at ang hindi kontroladong mataas na presyon at mataas na asukal mismo ang isa sa pangunahing sanhi ng sira sa bato. Pagkatapos, sabihin nang tapat ang hangganan ng iyong tungkulin: ang doktor ang makakasagot sa tanong tungkol sa tiyak nilang gamot, at tutulungan mo silang makausap siya.",
+      "keywords": ["gamot", "medicine", "bato", "kidney", "lulong", "addictive", "paniniwala", "myth", "maintenance"],
+      "sources": ["who-htn-guideline-2021", "who-hearts"]
+    },
+    {
+      "id": "m5-herbal",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "The client prefers herbal remedies instead of going to the health centre. What do I say?",
+      "question_fil": "Mas gusto ng kliyente ang halamang gamot kaysa pumunta sa health center. Ano ang sasabihin ko?",
+      "answer_en": "Do not dismiss it, and do not endorse it as a replacement. Say that whatever else they take, the reading still has to be checked at the facility, because no herbal preparation tells you what the blood pressure or blood sugar is. Ask them to tell the doctor what they are taking, since some preparations interact with prescribed medicines.",
+      "answer_fil": "Huwag ipagwalang-bahala, at huwag ding sang-ayunan bilang kapalit. Sabihing anuman ang iniinom nila, kailangan pa ring suriin ang resulta sa pasilidad, dahil walang halamang gamot na nagsasabi kung ano ang presyon o asukal sa dugo. Pakiusapan silang sabihin sa doktor kung ano ang iniinom nila, dahil may mga halaman na nakakaapekto sa inirerekomendang gamot.",
+      "keywords": ["herbal", "halamang gamot", "lunas", "alternatibo", "gamot", "sabihin", "doktor", "kapalit"],
+      "sources": ["who-hearts", "who-htn-guideline-2021"]
+    },
+    {
+      "id": "m5-fear-of-diagnosis",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "The client is afraid of finding out they have the disease. How do I respond?",
+      "question_fil": "Natatakot ang kliyente na malaman na may sakit siya. Paano ako tutugon?",
+      "answer_en": "Name the fear rather than talking past it: 'Naiintindihan ko po na nakakatakot.' Then give the two facts that reduce it — both conditions are treatable, and treatment is far easier when it starts early. Offer to go with them or arrange a companion; fear is usually about facing it alone.",
+      "answer_fil": "Kilalanin ang takot sa halip na balewalain ito: 'Naiintindihan ko po na nakakatakot.' Pagkatapos ay ibigay ang dalawang katotohanang nagpapagaan nito — magagamot ang dalawang kondisyon, at mas madali ang paggamot kapag maagang nasimulan. Ialok na samahan sila o ayusin ang kasama; ang takot ay kadalasang tungkol sa pagharap nang mag-isa.",
+      "keywords": ["takot", "fear", "afraid", "malaman", "sakit", "diagnosis", "samahan", "tugon"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-cost-barrier",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "The client says they have no money for the check-up or medicines. What can I offer?",
+      "question_fil": "Sabi ng kliyente na walang pera para sa check-up o gamot. Ano ang maiaalok ko?",
+      "answer_en": "Tell them what is actually available in your LGU — consultation and first-line maintenance medicines for hypertension and diabetes are provided free through public primary care facilities in many areas, and PhilHealth benefits may apply. Never promise something you have not confirmed; check with the health centre and come back with a real answer.",
+      "answer_fil": "Sabihin kung ano talaga ang makukuha sa inyong LGU — sa maraming lugar, libre ang konsulta at pangunahing maintenance na gamot para sa altapresyon at diabetes sa pampublikong primary care, at maaaring may benepisyo sa PhilHealth. Huwag mangako ng hindi mo pa nakukumpirma; magtanong sa health center at bumalik na may tunay na sagot.",
+      "keywords": ["pera", "money", "gastos", "libre", "free", "gamot", "philhealth", "hadlang", "barrier"],
+      "sources": ["who-hearts", "doh-philpen"]
+    },
+    {
+      "id": "m5-distance-barrier",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "The health centre is far and the client cannot travel. What do I do?",
+      "question_fil": "Malayo ang health center at hindi makabiyahe ang kliyente. Ano ang gagawin ko?",
+      "answer_en": "Find out what is realistic: a family member who can accompany them, a barangay outreach or screening day, a scheduled visit by the RHU team, or transport support from the barangay. Tell the midwife or nurse that the person is willing but cannot travel — a known barrier can be planned around, an unreported one cannot.",
+      "answer_fil": "Alamin kung ano ang kayang gawin: kapamilyang makakasama, araw ng outreach o screening sa barangay, nakatakdang pagbisita ng koponan ng RHU, o tulong sa transportasyon mula sa barangay. Sabihin sa midwife o nars na handa ang tao ngunit hindi makabiyahe — ang alam na hadlang ay may maiaayos, ang hindi naiulat ay wala.",
+      "keywords": ["malayo", "far", "biyahe", "transport", "sakay", "hadlang", "outreach", "barangay", "kasama"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-one-small-step",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "How much lifestyle advice should I give in one visit?",
+      "question_fil": "Gaano karaming payo sa pamumuhay ang ibibigay ko sa isang pagbisita?",
+      "answer_en": "One change the person chooses themselves, stated concretely — 'hindi na ako maglalagay ng patis sa kanin' beats 'bawasan ang asin'. A single agreed step that is actually taken is worth more than a full list that is nodded at and forgotten, and it gives you something specific to follow up on next visit.",
+      "answer_fil": "Isang pagbabagong sila mismo ang pumili, na tiyak ang pagkakasabi — mas mabuti ang 'hindi na ako maglalagay ng patis sa kanin' kaysa 'bawasan ang asin'. Ang isang napagkasunduang hakbang na talagang ginawa ay mas mahalaga kaysa sa mahabang listahang tinanguan lamang at nakalimutan, at may tiyak kang mababalikan sa susunod na pagbisita.",
+      "keywords": ["payo", "advice", "pagbabago", "change", "asin", "pamumuhay", "lifestyle", "isa", "hakbang"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-referral-instructions",
+      "domain": "referral",
+      "tier": "cited",
+      "question_en": "What exactly should I tell the client about the referral?",
+      "question_fil": "Ano ba talaga ang dapat kong sabihin sa kliyente tungkol sa referral?",
+      "answer_en": "Four things, concretely: where to go, when to go, who to look for, and what to bring — the referral slip, any medicines they are taking, and their PhilHealth or health record if they have one. Write the date on the slip and say it out loud; 'go to the health centre soon' is not an instruction anyone acts on.",
+      "answer_fil": "Apat na bagay, tiyakan: saan pupunta, kailan pupunta, sino ang hahanapin, at ano ang dadalhin — ang referral slip, anumang gamot na iniinom nila, at ang PhilHealth o rekord pangkalusugan kung mayroon. Isulat ang petsa sa slip at sabihin ito nang malakas; ang 'pumunta kayo sa health center' ay hindi tagubiling sinusunod ninuman.",
+      "keywords": ["referral", "sabihin", "tagubilin", "instructions", "saan", "kailan", "sino", "dala", "petsa"],
+      "sources": ["who-pen", "who-hearts"]
+    },
+    {
+      "id": "m5-follow-up-schedule",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "How do I set the follow-up with the client?",
+      "question_fil": "Paano ko itatakda ang follow-up sa kliyente?",
+      "answer_en": "Agree on a specific date before you leave, write it on both your record and their copy, and say what you will check when you come back — whether they went, what the facility said, and whether they have their medicines. A follow-up with a date is kept far more often than one that is merely promised.",
+      "answer_fil": "Magkasundo sa tiyak na petsa bago ka umalis, isulat ito sa iyong talaan at sa kopya nila, at sabihin kung ano ang titingnan mo pagbalik — kung nakapunta sila, ano ang sinabi ng pasilidad, at kung may gamot na sila. Ang follow-up na may petsa ay mas madalas natutupad kaysa sa basta ipinangako lamang.",
+      "keywords": ["follow up", "sundan", "petsa", "date", "balik", "schedule", "itakda", "kliyente"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-involve-family",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "Should I involve the family in the conversation?",
+      "question_fil": "Isasama ko ba ang pamilya sa usapan?",
+      "answer_en": "Ask the client first — it is their information. When they agree, involving the person who cooks, who buys the food, or who accompanies them to the health centre is one of the strongest things you can do for adherence, because the changes you are asking for are household changes, not individual ones.",
+      "answer_fil": "Itanong muna sa kliyente — kanya ang impormasyon. Kapag pumayag sila, ang pagsama sa taong nagluluto, namimili ng pagkain, o naghahatid sa kanila sa health center ay isa sa pinakamalakas na magagawa mo para sa pagsunod sa gamutan, dahil ang mga pagbabagong hinihingi mo ay pagbabago ng sambahayan, hindi ng isang tao lamang.",
+      "keywords": ["pamilya", "family", "kasama", "involve", "asawa", "anak", "luto", "adherence", "pahintulot"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-do-not-promise",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "What should I never promise a client?",
+      "question_fil": "Ano ang hindi ko dapat ipangako sa kliyente?",
+      "answer_en": "Never promise a cure, never promise that medicines will always be in stock, never promise there will be no cost, and never promise a specific diagnosis or that they are safe. Promising what you cannot control is the fastest way to lose the trust that makes every future visit possible.",
+      "answer_fil": "Huwag mangako ng lunas, huwag mangako na laging may stock na gamot, huwag mangako na walang gagastusin, at huwag mangako ng tiyak na diagnosis o na ligtas sila. Ang pangakong wala sa iyong kontrol ang pinakamabilis na paraan upang mawala ang tiwalang nagpapatuloy sa bawat susunod na pagbisita.",
+      "keywords": ["pangako", "promise", "lunas", "cure", "libre", "stock", "tiwala", "trust", "iwasan"],
+      "sources": ["who-bhw-manual-ta", "who-hearts"]
+    },
+    {
+      "id": "m5-low-literacy",
+      "domain": "risk-communication",
+      "tier": "cited",
+      "question_en": "How do I explain to someone who cannot read?",
+      "question_fil": "Paano ko ipapaliwanag sa taong hindi marunong magbasa?",
+      "answer_en": "Use the flipchart pictures, speak in short sentences, and anchor times to daily routine rather than clock times — 'tuwing umagang kape', not '8:00 AM'. Ask a family member to hold the written referral if the client agrees, and use teach-back to confirm the plan before you leave.",
+      "answer_fil": "Gamitin ang mga larawan sa flipchart, magsalita nang maikli, at itali ang oras sa pang-araw-araw na gawi sa halip na sa orasan — 'tuwing umagang kape', hindi '8:00 AM'. Ipahawak ang nakasulat na referral sa kapamilya kung pumapayag ang kliyente, at gamitin ang teach-back upang matiyak ang plano bago ka umalis.",
+      "keywords": ["hindi marunong magbasa", "literacy", "basa", "larawan", "picture", "flipchart", "paliwanag", "simple"],
+      "sources": ["upv-ncd-flipchart-tot", "who-hearts"]
+    },
+    {
+      "id": "m5-followup-what-to-check",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "What do I check on a follow-up visit?",
+      "question_fil": "Ano ang titingnan ko sa follow-up na pagbisita?",
+      "answer_en": "Whether they went to the facility and what was said, whether they have their medicines and are taking them, how they are managing the one lifestyle step you agreed, any new symptoms, and a repeat measurement. Write it all down — a follow-up visit with nothing recorded is indistinguishable from a visit that never happened.",
+      "answer_fil": "Kung nakapunta sila sa pasilidad at ano ang sinabi, kung may gamot sila at iniinom nila ito, kumusta ang isang hakbang sa pamumuhay na napagkasunduan ninyo, anumang bagong sintomas, at muling pagsukat. Isulat ang lahat — ang follow-up na walang naitala ay walang pinagkaiba sa pagbisitang hindi naman naganap.",
+      "keywords": ["follow up", "bisita", "visit", "titingnan", "check", "gamot", "sintomas", "sukat", "balik"],
+      "sources": ["who-hearts", "who-pen"]
+    },
+    {
+      "id": "m5-ran-out-of-medicine",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "The client has run out of maintenance medicine. What do I do?",
+      "question_fil": "Naubos ang maintenance na gamot ng kliyente. Ano ang gagawin ko?",
+      "answer_en": "Do not give them anyone else's tablets and do not tell them to halve the dose to make it last. Refer them back to the facility for a refill straight away, report the stockout to the midwife if the facility is the one that ran out, and note how many days they have been without medicine.",
+      "answer_fil": "Huwag bigyan ng gamot ng ibang tao at huwag sabihing hatiin ang dosis para tumagal. I-refer agad sila pabalik sa pasilidad para makakuha muli, iulat sa midwife ang kakulangan kung ang pasilidad ang naubusan, at itala kung ilang araw na silang walang gamot.",
+      "keywords": ["ubos", "naubos", "gamot", "medicine", "refill", "maintenance", "kulang", "stockout", "dosis"],
+      "sources": ["who-hearts", "who-htn-guideline-2021"]
+    },
+    {
+      "id": "m5-side-effects",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "The client stopped their medicine because of side effects. What do I do?",
+      "question_fil": "Tumigil sa gamot ang kliyente dahil sa side effect. Ano ang gagawin ko?",
+      "answer_en": "Take it seriously and write down exactly what they experienced and when. Do not tell them to keep taking it and do not tell them to stop — both are the doctor's call. Refer them back promptly, because a side effect that is reported can usually be solved by a change of medicine, while one that is silently endured ends the treatment.",
+      "answer_fil": "Seryosohin ito at isulat nang eksakto kung ano ang naranasan nila at kailan. Huwag sabihing ipagpatuloy at huwag sabihing itigil — pareho itong pasya ng doktor. I-refer sila agad, dahil ang side effect na naiulat ay kadalasang naaayos sa pamamagitan ng pagpapalit ng gamot, samantalang ang tahimik na tinitiis ay nagtatapos sa gamutan.",
+      "keywords": ["side effect", "epekto", "tigil", "stopped", "gamot", "medicine", "masama", "refer", "doktor"],
+      "sources": ["who-htn-guideline-2021", "who-hearts"]
+    },
+    {
+      "id": "m5-remembering-medicine",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "How can I help someone remember to take their medicine every day?",
+      "question_fil": "Paano ko matutulungan ang taong makaalala uminom ng gamot araw-araw?",
+      "answer_en": "Tie it to something they already do every day without fail — the morning coffee, the evening rice — and keep the medicine visibly beside that thing. A family member who asks once a day helps more than any reminder you can leave. At the next visit, ask how many days they missed rather than whether they are compliant; the first question gets an honest answer.",
+      "answer_fil": "Itali ito sa bagay na tiyak nilang ginagawa araw-araw — ang kape sa umaga, ang hapunan — at ilagay ang gamot sa lugar na kitang-kita sa tabi nito. Ang kapamilyang nagtatanong minsan sa isang araw ay mas malaking tulong kaysa sa anumang paalalang maiiwan mo. Sa susunod na pagbisita, itanong kung ilang araw silang nakalimot sa halip na itanong kung sumusunod sila; ang unang tanong ang nakakakuha ng tapat na sagot.",
+      "keywords": ["alala", "remember", "paalala", "reminder", "gamot", "araw araw", "daily", "ugali", "routine"],
+      "sources": ["who-hearts"]
+    },
+    {
+      "id": "m5-lost-to-followup",
+      "domain": "adherence-followup",
+      "tier": "cited",
+      "question_en": "A referred client has not gone to the facility after several weeks. What now?",
+      "question_fil": "Ilang linggo na, hindi pa rin pumupunta sa pasilidad ang na-refer na kliyente. Ano na?",
+      "answer_en": "Visit again and find out what actually happened rather than repeating the instruction. Report the person to the midwife or nurse as an outstanding referral so the facility can plan around them — an outreach day, a home visit by the RHU team. People lost between the screening and the first consultation are where this programme leaks the most.",
+      "answer_fil": "Bumisita muli at alamin kung ano talaga ang nangyari sa halip na ulitin lamang ang tagubilin. Iulat ang tao sa midwife o nars bilang nakabinbing referral upang makapagplano ang pasilidad para sa kanya — araw ng outreach, pagbisita sa bahay ng koponan ng RHU. Ang mga taong nawawala sa pagitan ng screening at ng unang konsulta ang pinakamalaking butas ng programang ito.",
+      "keywords": ["hindi pumunta", "lost", "follow up", "linggo", "nakabinbing", "outstanding", "iulat", "bisita", "referral"],
+      "sources": ["who-hearts", "who-pen"]
+    }
+  ]
+}

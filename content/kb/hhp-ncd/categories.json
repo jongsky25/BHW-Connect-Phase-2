@@ -1,0 +1,57 @@
+{
+  "$comment": "One kb_categories row per module of the proposed HHP+ BHW training package (BLHSD alignment deck, 31 July 2026, TOR Deliverable 1.2). sort_order starts at 10 so the Maternal & Child Health category authored for the pilot keeps the top of the list.",
+  "categories": [
+    {
+      "slug": "hhp-m1-care-pathway",
+      "sort_order": 10,
+      "module": 1,
+      "name_en": "Module 1 — HHP+ and PhilPEN: screening in the care pathway",
+      "name_fil": "Modyul 1 — HHP+ at PhilPEN: screening sa care pathway"
+    },
+    {
+      "slug": "hhp-m2-risk-assessment-flipchart",
+      "sort_order": 11,
+      "module": 2,
+      "name_en": "Module 2 — Community risk assessment and the NCD Flipchart",
+      "name_fil": "Modyul 2 — Risk assessment sa komunidad at ang NCD Flipchart"
+    },
+    {
+      "slug": "hhp-m3-blood-pressure",
+      "sort_order": 12,
+      "module": 3,
+      "name_en": "Module 3 — Standardized blood pressure measurement",
+      "name_fil": "Modyul 3 — Standardisadong pagsukat ng presyon ng dugo"
+    },
+    {
+      "slug": "hhp-m4-blood-glucose",
+      "sort_order": 13,
+      "module": 4,
+      "name_en": "Module 4 — Capillary blood glucose testing in the community",
+      "name_fil": "Modyul 4 — Pagsusuri ng asukal sa dugo sa komunidad"
+    },
+    {
+      "slug": "hhp-m5-communication-referral",
+      "sort_order": 14,
+      "module": 5,
+      "name_en": "Module 5 — Communicating results and activating referral",
+      "name_fil": "Modyul 5 — Pagpapaliwanag ng resulta at pag-refer"
+    },
+    {
+      "slug": "hhp-m6-documentation-cascade",
+      "sort_order": 15,
+      "module": 6,
+      "name_en": "Module 6 — Documentation, reporting and cascade",
+      "name_fil": "Modyul 6 — Dokumentasyon, pag-uulat at cascade"
+    }
+  ],
+  "domains": {
+    "$comment": "The seven competency domains from TOR Deliverable 1.2. Every entry declares one.",
+    "risk-assessment": { "en": "Risk assessment", "fil": "Pagtataya ng panganib" },
+    "bp-screening": { "en": "Blood pressure screening", "fil": "Pagsukat ng presyon" },
+    "glucose-screening": { "en": "Blood glucose screening", "fil": "Pagsusuri ng asukal sa dugo" },
+    "risk-communication": { "en": "Risk communication", "fil": "Pagpapaliwanag ng panganib" },
+    "referral": { "en": "Referral", "fil": "Pag-refer" },
+    "adherence-followup": { "en": "Adherence support and follow-up", "fil": "Suporta sa pagsunod at follow-up" },
+    "documentation": { "en": "Documentation", "fil": "Dokumentasyon" }
+  }
+}
