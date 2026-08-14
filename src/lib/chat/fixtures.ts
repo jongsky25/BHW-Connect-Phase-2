@@ -3,9 +3,14 @@ import type { ChatEntryCandidate, SynonymRow } from "./types";
 // A small Maternal & Child Health corpus standing in for INC-3-authored
 // content, used only by the matcher's own tests — not seed data for the
 // pilot (that's the 50-entry launch gate in delivery-plan.md §6.3).
+//
+// content_id is null throughout: these stand in for entries authored by hand
+// in the admin console, which have no counterpart in the versioned content
+// files. That also exercises the conversation layer's null-handling path.
 export const mockKbEntries: ChatEntryCandidate[] = [
   {
     id: "fever-infant",
+    content_id: null,
     question_en: "What should I do if my baby has a fever?",
     question_fil: "Ano ang gagawin ko kung may lagnat ang sanggol ko?",
     answer_en:
@@ -16,6 +21,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "prenatal-checkup",
+    content_id: null,
     question_en: "How many prenatal checkups should a pregnant woman have?",
     question_fil: "Ilang beses dapat magpa-prenatal checkup ang isang buntis?",
     answer_en:
@@ -26,6 +32,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "vaccination-schedule",
+    content_id: null,
     question_en: "What is the vaccination schedule for newborns?",
     question_fil: "Ano ang schedule ng bakuna para sa bagong silang na sanggol?",
     answer_en:
@@ -36,6 +43,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "breastfeeding-benefits",
+    content_id: null,
     question_en: "What are the benefits of breastfeeding for my baby?",
     question_fil: "Ano ang mga benepisyo ng pagpapasuso para sa aking sanggol?",
     answer_en:
@@ -46,6 +54,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "family-planning-methods",
+    content_id: null,
     question_en: "What family planning methods are available at the health center?",
     question_fil: "Anong mga paraan ng family planning ang available sa health center?",
     answer_en:
@@ -56,6 +65,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "danger-signs-pregnancy",
+    content_id: null,
     question_en: "What are the danger signs during pregnancy that need immediate attention?",
     question_fil:
       "Ano ang mga danger signs sa panahon ng pagbubuntis na kailangang bigyang-agad na pansin?",
@@ -67,6 +77,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "diarrhea-child",
+    content_id: null,
     question_en: "How do I treat diarrhea in a young child?",
     question_fil: "Paano gamutin ang pagtatae ng batang bata?",
     answer_en:
@@ -77,6 +88,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "malnutrition-signs",
+    content_id: null,
     question_en: "What are the signs of malnutrition in children?",
     question_fil: "Ano ang mga senyales ng malnutrisyon sa mga bata?",
     answer_en:
@@ -87,6 +99,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "cough-cold-infant",
+    content_id: null,
     question_en: "What home remedies help a baby's cough and colds?",
     question_fil: "Anong lunas sa bahay ang makakatulong sa ubo at sipon ng sanggol?",
     answer_en:
@@ -97,6 +110,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "postpartum-care",
+    content_id: null,
     question_en: "What postpartum care does a new mother need after giving birth?",
     question_fil: "Anong pangangalaga ang kailangan ng bagong panganak na ina pagkatapos manganak?",
     answer_en:
@@ -107,6 +121,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "handwashing-hygiene",
+    content_id: null,
     question_en: "Why is handwashing important for family hygiene?",
     question_fil: "Bakit mahalaga ang paghuhugas ng kamay para sa kalinisan ng pamilya?",
     answer_en:
@@ -117,6 +132,7 @@ export const mockKbEntries: ChatEntryCandidate[] = [
   },
   {
     id: "teething-baby",
+    content_id: null,
     question_en: "How do I care for a baby who is teething?",
     question_fil: "Paano alagaan ang sanggol na nagsisipngipin?",
     answer_en:

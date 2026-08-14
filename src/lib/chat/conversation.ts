@@ -81,13 +81,19 @@ export function resolveTurn(
   clarifiers: Clarifier[],
   config: ChatMatcherConfig = defaultChatMatcherConfig,
 ): ConversationResult {
-  const byId = new Map(entries.map((entry) => [entry.id, entry]));
+  // Keyed by content_id, NOT by the uuid primary key: rules live in versioned
+  // content files and name entries like "m3-very-high-with-symptoms", while
+  // `id` is a per-project uuid. Keying this on `id` makes every rule lookup
+  // miss and silently turns the whole layer into a no-op.
+  const byContentId = new Map(
+    entries.filter((entry) => entry.content_id).map((entry) => [entry.content_id as string, entry]),
+  );
 
   // 1. A clarifier selection resolves by entry id. It is a selection, not a
   // re-ask: re-scoring the option's canonical text could return a different
   // entry than the one the BHW tapped, which is the bug the old chip flow had.
   if (input.selection) {
-    return resolveSelection(input.selection, byId, clarifiers, synonyms, config);
+    return resolveSelection(input.selection, byContentId, clarifiers, synonyms, config);
   }
 
   const question = (input.question ?? "").trim();
@@ -100,7 +106,7 @@ export function resolveTurn(
   // 2. Red flags outrank everything, including a high-scoring wrong answer.
   const redFlag = findRedFlag(normalizedText, redFlags);
   if (redFlag) {
-    const entry = byId.get(redFlag.entry_id);
+    const entry = byContentId.get(redFlag.entry_id);
     if (entry) {
       return {
         type: "answer",
@@ -120,7 +126,7 @@ export function resolveTurn(
   // clarifier, or a BHW who rephrases instead of tapping an option loops.
   const clarifier = findClarifier(normalizedText, clarifiers);
   if (clarifier && input.context?.pendingClarifierId !== clarifier.id) {
-    const options = clarifier.options.filter((option) => byId.has(option.entry_id));
+    const options = clarifier.options.filter((option) => byContentId.has(option.entry_id));
     if (options.length >= 2) {
       return {
         type: "clarify",
@@ -134,7 +140,9 @@ export function resolveTurn(
 
   // 4. Carry context for a short follow-up so "eh kung buntis siya?" is
   // matched against the previous topic instead of against nothing.
-  const lastEntry = input.context?.lastEntryId ? byId.get(input.context.lastEntryId) : undefined;
+  const lastEntry = input.context?.lastContentId
+    ? byContentId.get(input.context.lastContentId)
+    : undefined;
   const isFollowUp =
     lastEntry !== undefined && contentTokenCount(normalizedText) <= MAX_FOLLOW_UP_CONTENT_TOKENS;
 
@@ -154,14 +162,14 @@ export function resolveTurn(
 
 function resolveSelection(
   selection: ClarifierSelection,
-  byId: Map<string, ChatEntryCandidate>,
+  byContentId: Map<string, ChatEntryCandidate>,
   clarifiers: Clarifier[],
   synonyms: SynonymRow[],
   config: ChatMatcherConfig,
 ): ConversationResult {
   const clarifier = clarifiers.find((item) => item.id === selection.clarifierId);
   const option = clarifier?.options[selection.optionIndex];
-  const entry = option ? byId.get(option.entry_id) : undefined;
+  const entry = option ? byContentId.get(option.entry_id) : undefined;
 
   if (!clarifier || !option || !entry) {
     return { type: "invalid_selection", route: "selection", normalizedText: "", resolvedQuery: "" };

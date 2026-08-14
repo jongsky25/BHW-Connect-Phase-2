@@ -30,11 +30,22 @@ type ContentEntry = {
 
 const modules = [module1, module2, module3, module4, module5, module6];
 
+// `id` is deliberately a synthetic uuid, NOT the content id, because that is
+// what the corpus looks like once it is in Postgres — kb_entries.id is
+// generated per project. An earlier version of this file used the content id
+// as `id`, which made the conversation layer's rule lookups pass in tests and
+// silently miss every time in production (INC-17b). Keeping the two distinct
+// here is the regression guard: any code that keys rules off `id` now fails.
+function syntheticUuid(index: number): string {
+  return `00000000-0000-4000-8000-${String(index).padStart(12, "0")}`;
+}
+
 export const ncdKbEntries: ChatEntryCandidate[] = modules
   .flatMap((file) => file.entries as ContentEntry[])
   .filter((entry) => entry.tier === "cited")
-  .map((entry) => ({
-    id: entry.id,
+  .map((entry, index) => ({
+    id: syntheticUuid(index),
+    content_id: entry.id,
     question_en: entry.question_en,
     question_fil: entry.question_fil,
     answer_en: entry.answer_en,

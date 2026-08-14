@@ -1,5 +1,12 @@
 export type ChatEntryCandidate = {
+  // Database primary key (uuid). This is what the API returns to the client
+  // and what chat_messages.matched_entry_id references.
   id: string;
+  // Stable id from the versioned content files ("m3-very-high-with-symptoms"),
+  // null for entries authored by hand in the admin console. Red-flag and
+  // clarifier rules are written against *this*, never against `id` — the uuid
+  // differs per Supabase project, so a rule keyed on it could never fire.
+  content_id: string | null;
   question_fil: string;
   question_en: string;
   answer_fil: string;
@@ -64,7 +71,9 @@ export type Clarifier = {
 // tiny: the last answered entry (for follow-up carry) and the clarifier still
 // awaiting a reply (so we never ask the same one twice in a row).
 export type ChatContext = {
-  lastEntryId?: string | null;
+  // Content id (not the uuid) of the last answered entry, so follow-up carry
+  // survives a reload into a differently-keyed project.
+  lastContentId?: string | null;
   pendingClarifierId?: string | null;
 };
 

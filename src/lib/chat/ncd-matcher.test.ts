@@ -19,7 +19,7 @@ describe("Chat Guide — HHP+ NCD corpus", () => {
     const result = matchQuestion(fixture.question, ncdKbEntries, ncdSynonyms);
     const passed =
       fixture.expected.type === "answer"
-        ? result.type === "answer" && result.top.entry.id === fixture.expected.entryId
+        ? result.type === "answer" && result.top.entry.content_id === fixture.expected.entryId
         : result.type === fixture.expected.type;
     return { fixture, result, passed };
   });
@@ -42,7 +42,7 @@ describe("Chat Guide — HHP+ NCD corpus", () => {
   });
 
   it("only expects entries that exist in the corpus", () => {
-    const ids = new Set(ncdKbEntries.map((entry) => entry.id));
+    const ids = new Set(ncdKbEntries.map((entry) => entry.content_id));
     const unknown = ncdCorpusFixtures
       .filter((f) => f.expected.type === "answer")
       .map((f) => (f.expected as { entryId: string }).entryId)
@@ -59,7 +59,7 @@ describe("Chat Guide — HHP+ NCD corpus", () => {
         (r) =>
           `${r.fixture.id} (${r.fixture.question}): expected ${JSON.stringify(r.fixture.expected)}, got ${
             r.result.type === "answer"
-              ? `answer:${r.result.top.entry.id} (${r.result.top.totalScore.toFixed(2)})`
+              ? `answer:${r.result.top.entry.content_id} (${r.result.top.totalScore.toFixed(2)})`
               : r.result.type
           }`,
       );
@@ -76,10 +76,10 @@ describe("Chat Guide — HHP+ NCD corpus", () => {
         fixture,
         result: matchQuestion(fixture.question, ncdKbEntries, ncdSynonyms),
       }))
-      .filter(({ result }) => result.type === "answer" && !allowed.has(result.top.entry.id))
+      .filter(({ result }) => result.type === "answer" && !allowed.has(result.top.entry.content_id ?? ""))
       .map(
         ({ fixture, result }) =>
-          `${fixture.id} (${fixture.question}) -> ${result.type === "answer" ? result.top.entry.id : ""}`,
+          `${fixture.id} (${fixture.question}) -> ${result.type === "answer" ? result.top.entry.content_id : ""}`,
       );
     expect(
       wrong,

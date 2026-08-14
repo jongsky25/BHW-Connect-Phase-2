@@ -50,6 +50,10 @@ export function createClient(url, anonKey, accessToken) {
     get: (path) => request("GET", path),
     insert: (table, rows) =>
       request("POST", table, { body: rows, prefer: "return=representation" }),
+    // Direct column write, for fields the RPCs don't cover. kb_entries'
+    // admin-write RLS policy is `for all`, so an admin token can PATCH it
+    // without widening any RPC signature.
+    patch: (path, body) => request("PATCH", path, { body }),
     rpc: (name, args) => request("POST", `rpc/${name}`, { body: args }),
   };
 }

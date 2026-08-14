@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
     await Promise.all([
       supabase
         .from("kb_entries")
-        .select("id, question_fil, question_en, answer_fil, answer_en, keywords")
+        .select("id, content_id, question_fil, question_en, answer_fil, answer_en, keywords")
         .eq("status", "published"),
       supabase.from("synonyms").select("term, maps_to, language"),
     ]);
@@ -238,12 +238,12 @@ function nextContext(previous: ChatContext | null, result: ConversationResult): 
   if (result.type === "clarify") {
     // Keep whatever topic was last answered; mark the question we just asked
     // so a rephrase doesn't get the same clarifier a second time.
-    return { lastEntryId: previous?.lastEntryId ?? null, pendingClarifierId: result.clarifier.id };
+    return { lastContentId: previous?.lastContentId ?? null, pendingClarifierId: result.clarifier.id };
   }
   if (result.type === "answer") {
-    return { lastEntryId: result.top.entry.id, pendingClarifierId: null };
+    return { lastContentId: result.top.entry.content_id ?? null, pendingClarifierId: null };
   }
-  return { lastEntryId: previous?.lastEntryId ?? null, pendingClarifierId: null };
+  return { lastContentId: previous?.lastContentId ?? null, pendingClarifierId: null };
 }
 
 // What to store as the user's turn when they tapped an option instead of
@@ -310,7 +310,11 @@ async function logConversation(
 
 function persistedCandidates(result: ConversationResult): unknown {
   if (result.type === "did_you_mean") {
-    return result.candidates.map((c) => ({ entry_id: c.entry.id, score: c.totalScore }));
+    return result.candidates.map((c) => ({
+      entry_id: c.entry.id,
+      content_id: c.entry.content_id,
+      score: c.totalScore,
+    }));
   }
   if (result.type === "clarify") {
     return {
@@ -328,9 +332,13 @@ function systemResponseText(result: ConversationResult): string {
   return "no_answer";
 }
 
-function entrySummary(entry: ChatEntryCandidate, score: number) {
+// content_id is exposed only in conversational mode, for the same reason
+// `route` is: with the flag off the body stays byte-for-byte what it was
+// before this increment, so an older client cannot notice the difference.
+function entrySummary(entry: ChatEntryCandidate, score: number, conversational: boolean) {
   return {
     id: entry.id,
+    ...(conversational ? { content_id: entry.content_id } : {}),
     question_fil: entry.question_fil,
     question_en: entry.question_en,
     answer_fil: entry.answer_fil,
@@ -348,15 +356,15 @@ function toResponseBody(result: ConversationResult, conversational: boolean) {
     return {
       ...route,
       type: "answer" as const,
-      answer: entrySummary(result.top.entry, result.top.totalScore),
-      related: result.related.map((r) => entrySummary(r.entry, r.totalScore)),
+      answer: entrySummary(result.top.entry, result.top.totalScore, conversational),
+      related: result.related.map((r) => entrySummary(r.entry, r.totalScore, conversational)),
     };
   }
   if (result.type === "did_you_mean") {
     return {
       ...route,
       type: "did_you_mean" as const,
-      candidates: result.candidates.map((c) => entrySummary(c.entry, c.totalScore)),
+      candidates: result.candidates.map((c) => entrySummary(c.entry, c.totalScore, conversational)),
     };
   }
   if (result.type === "clarify") {

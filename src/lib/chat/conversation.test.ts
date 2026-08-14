@@ -29,7 +29,7 @@ describe("red-flag interception", () => {
 
     for (const fixture of ncdRedFlagFixtures) {
       const result = turn(fixture.question);
-      const actual = result.type === "answer" ? result.top.entry.id : `(${result.type})`;
+      const actual = result.type === "answer" ? result.top.entry.content_id : `(${result.type})`;
       if (actual !== fixture.expectedEntryId) {
         failures.push(`${fixture.id}: "${fixture.question}" -> ${actual}, expected ${fixture.expectedEntryId}`);
       }
@@ -46,11 +46,11 @@ describe("red-flag interception", () => {
 
     const scoreOnly = matchQuestion(question, ncdKbEntries, ncdSynonyms);
     expect(scoreOnly.type).toBe("answer");
-    expect(scoreOnly.type === "answer" && scoreOnly.top.entry.id).not.toBe("m3-very-high-with-symptoms");
+    expect(scoreOnly.type === "answer" && scoreOnly.top.entry.content_id).not.toBe("m3-very-high-with-symptoms");
 
     const resolved = turn(question);
     expect(resolved.type).toBe("answer");
-    expect(resolved.type === "answer" && resolved.top.entry.id).toBe("m3-very-high-with-symptoms");
+    expect(resolved.type === "answer" && resolved.top.entry.content_id).toBe("m3-very-high-with-symptoms");
     expect(resolved.route).toBe("red_flag");
   });
 
@@ -74,7 +74,7 @@ describe("red-flag interception", () => {
     const resolved = turn(question);
     expect(resolved.type).toBe("answer");
     expect(resolved.route).toBe("red_flag");
-    expect(resolved.type === "answer" && resolved.top.entry.id).toBe("m1-emergency-not-screening");
+    expect(resolved.type === "answer" && resolved.top.entry.content_id).toBe("m1-emergency-not-screening");
   });
 
   it("names the rule that fired so the routing is auditable", () => {
@@ -89,10 +89,51 @@ describe("red-flag interception", () => {
   });
 
   it("only ever points at published entries", () => {
-    const published = new Set(ncdKbEntries.map((entry) => entry.id));
+    const published = new Set(ncdKbEntries.map((entry) => entry.content_id));
     for (const rule of ncdRedFlags) {
       expect(published.has(rule.entry_id), `${rule.id} -> ${rule.entry_id} is not published`).toBe(true);
     }
+  });
+});
+
+describe("entry identity (INC-17b regression)", () => {
+  // The bug this guards: rules name entries by content id, but the runtime
+  // corpus comes from Postgres where `id` is a per-project uuid. Keying the
+  // lookup on `id` made every rule miss, so the layer was inert in production
+  // while the tests — which used the content files, where id *is* the content
+  // id — stayed green. The fixtures now mirror production, and these two tests
+  // state the invariant outright.
+  it("keeps uuid ids and content ids distinct, as the database does", () => {
+    for (const entry of ncdKbEntries) {
+      expect(entry.id).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-/);
+      expect(entry.content_id).not.toBe(entry.id);
+      expect(entry.content_id).toBeTruthy();
+    }
+  });
+
+  it("does not fire any rule against a corpus with no content ids", () => {
+    // Exactly the shape a project loaded before INC-17b has: real rows, real
+    // text, no content_id. The layer must degrade to plain scoring rather than
+    // resolve a rule against the wrong entry.
+    const unstamped = ncdKbEntries.map((entry) => ({ ...entry, content_id: null }));
+
+    const redFlagged = resolveTurn(
+      { question: "mataas ang presyon niya at sumasakit ang dibdib niya", context: null },
+      unstamped,
+      ncdSynonyms,
+      ncdRedFlags,
+      ncdClarifiers,
+    );
+    expect(redFlagged.route).toBe("direct");
+
+    const clarified = resolveTurn(
+      { question: "mataas ang BP niya, ano gagawin ko?", context: null },
+      unstamped,
+      ncdSynonyms,
+      ncdRedFlags,
+      ncdClarifiers,
+    );
+    expect(clarified.type).not.toBe("clarify");
   });
 });
 
@@ -134,7 +175,7 @@ describe("clarifiers", () => {
   });
 
   it("only offers options that point at published entries", () => {
-    const published = new Set(ncdKbEntries.map((entry) => entry.id));
+    const published = new Set(ncdKbEntries.map((entry) => entry.content_id));
     for (const clarifier of ncdClarifiers) {
       expect(clarifier.options.length).toBeGreaterThanOrEqual(2);
       for (const option of clarifier.options) {
@@ -165,7 +206,7 @@ describe("selection", () => {
 
     expect(result.type).toBe("answer");
     expect(result.route).toBe("selection");
-    expect(result.type === "answer" && result.top.entry.id).toBe("m3-explain-reading");
+    expect(result.type === "answer" && result.top.entry.content_id).toBe("m3-explain-reading");
   });
 
   it("returns exactly the tapped entry even where re-scoring would not", () => {
@@ -180,7 +221,7 @@ describe("selection", () => {
           ncdRedFlags,
           ncdClarifiers,
         );
-        expect(result.type === "answer" && result.top.entry.id).toBe(option.entry_id);
+        expect(result.type === "answer" && result.top.entry.content_id).toBe(option.entry_id);
       }
     }
   });
@@ -199,7 +240,7 @@ describe("selection", () => {
 
 describe("follow-up context", () => {
   it("matches a short follow-up against the previous topic", () => {
-    const context: ChatContext = { lastEntryId: "m4-site-selection" };
+    const context: ChatContext = { lastContentId: "m4-site-selection" };
     const result = turn("eh kung bata?", context);
 
     expect(result.route).toBe("context_carry");
@@ -208,11 +249,11 @@ describe("follow-up context", () => {
   });
 
   it("treats a fully-formed question as a new topic, not a refinement", () => {
-    const context: ChatContext = { lastEntryId: "m4-site-selection" };
+    const context: ChatContext = { lastContentId: "m4-site-selection" };
     const result = turn("Where do I put the used lancet after the test?", context);
 
     expect(result.route).toBe("direct");
-    expect(result.type === "answer" && result.top.entry.id).toBe("m4-sharps-disposal");
+    expect(result.type === "answer" && result.top.entry.content_id).toBe("m4-sharps-disposal");
   });
 
   it("does not carry context when there is none", () => {
@@ -234,8 +275,8 @@ describe("baseline behaviour is preserved", () => {
       const baseline = matchQuestion(fixture.question, ncdKbEntries, ncdSynonyms);
       const resolved = turn(fixture.question);
 
-      const baselineId = baseline.type === "answer" ? baseline.top.entry.id : `(${baseline.type})`;
-      const resolvedId = resolved.type === "answer" ? resolved.top.entry.id : `(${resolved.type})`;
+      const baselineId = baseline.type === "answer" ? baseline.top.entry.content_id : `(${baseline.type})`;
+      const resolvedId = resolved.type === "answer" ? resolved.top.entry.content_id : `(${resolved.type})`;
 
       if (baselineId !== resolvedId) {
         divergences.push(`${fixture.id}: "${fixture.question}"\n    matcher=${baselineId} conversation=${resolvedId}`);
@@ -252,7 +293,7 @@ describe("baseline behaviour is preserved", () => {
     const passed = ncdCorpusFixtures.filter((fixture) => {
       if (fixture.expected.type !== "answer") return false;
       const result = turn(fixture.question);
-      return result.type === "answer" && result.top.entry.id === fixture.expected.entryId;
+      return result.type === "answer" && result.top.entry.content_id === fixture.expected.entryId;
     }).length;
 
     const passRate = passed / ncdCorpusFixtures.length;
@@ -274,7 +315,7 @@ describe("baseline behaviour is preserved", () => {
       expect(resolved.type).toBe(baseline.type);
       expect(resolved.route).toBe("direct");
       if (baseline.type === "answer" && resolved.type === "answer") {
-        expect(resolved.top.entry.id).toBe(baseline.top.entry.id);
+        expect(resolved.top.entry.content_id).toBe(baseline.top.entry.content_id);
       }
     }
   });
@@ -285,6 +326,6 @@ describe("baseline behaviour is preserved", () => {
 
   it("still answers a dosing question only with a scope-boundary entry", () => {
     const result = turn("What dose of metformin should I give for a blood sugar of 250?");
-    expect(result.type === "answer" && result.top.entry.id).toBe("m1-no-medicine-decisions");
+    expect(result.type === "answer" && result.top.entry.content_id).toBe("m1-no-medicine-decisions");
   });
 });

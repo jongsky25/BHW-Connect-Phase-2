@@ -47,7 +47,7 @@ type ChatBody = {
   type: string;
   route?: string;
   session_id?: string | null;
-  answer?: { id: string };
+  answer?: { id: string; content_id: string | null };
   clarifier?: { id: string; question_fil: string; options: { label_fil: string; label_en: string }[] };
 };
 
@@ -79,7 +79,7 @@ test("Chat Guide intercepts a red flag, asks the deeper question, and resolves a
     ).json()) as ChatBody;
     expect(redFlag.type).toBe("answer");
     expect(redFlag.route).toBe("red_flag");
-    expect(redFlag.answer?.id).toBe("m3-very-high-with-symptoms");
+    expect(redFlag.answer?.content_id).toBe("m3-very-high-with-symptoms");
 
     // 2. Clarifier: the same topic without the decisive detail is not guessed
     // at — the system asks which situation this is.
@@ -108,7 +108,7 @@ test("Chat Guide intercepts a red flag, asks the deeper question, and resolves a
     ).json()) as ChatBody;
     expect(selected.type).toBe("answer");
     expect(selected.route).toBe("selection");
-    expect(selected.answer?.id).toBe("m3-very-high-with-symptoms");
+    expect(selected.answer?.content_id).toBe("m3-very-high-with-symptoms");
 
     // 4. A clarifier is a narrowing step, not a content gap — it must not be
     // logged as an unmatched question the way a genuine miss is.
