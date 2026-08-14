@@ -15,10 +15,24 @@ type ChatEntrySummary = {
   score: number;
 };
 
+type ClarifierPayload = {
+  id: string;
+  question_fil: string;
+  question_en: string;
+  // Deliberately no entry_id: the client sends back the option's index and the
+  // server resolves it, so a tampered payload cannot select an arbitrary entry.
+  options: { label_fil: string; label_en: string }[];
+};
+
+// How the server decided this turn. Present only when the chat_conversation
+// flag is on; absent responses render exactly as they did before.
+type ChatRoute = "direct" | "red_flag" | "clarify" | "selection" | "context_carry";
+
 type ChatApiResult =
-  | { type: "answer"; answer: ChatEntrySummary; related: ChatEntrySummary[] }
-  | { type: "did_you_mean"; candidates: ChatEntrySummary[] }
-  | { type: "no_answer" };
+  | { type: "answer"; answer: ChatEntrySummary; related: ChatEntrySummary[]; route?: ChatRoute }
+  | { type: "did_you_mean"; candidates: ChatEntrySummary[]; route?: ChatRoute }
+  | { type: "clarify"; clarifier: ClarifierPayload; route?: ChatRoute }
+  | { type: "no_answer"; route?: ChatRoute };
 
 type ChatApiResponse = ChatApiResult & {
   session_id: string | null;
@@ -37,6 +51,8 @@ type Exchange = {
   feedback?: "up" | "down" | null;
 };
 
+type ChatRequest = { question: string } | { selection: { clarifier_id: string; option_index: number } };
+
 type ChatTranslations = ReturnType<typeof useTranslations>;
 
 function pick(locale: string, fil: string, en: string): string {
@@ -51,19 +67,22 @@ export function ChatGuide() {
   const [sending, setSending] = useState(false);
   const sessionIdRef = useRef<string | null>(null);
 
-  async function ask(questionText: string) {
-    const question = questionText.trim();
-    if (!question || sending) return;
+  // `label` is what the transcript shows for this turn; `payload` is what the
+  // server is asked. They differ for a clarifier selection, where the BHW taps
+  // an option and the server resolves it by index rather than re-matching the
+  // label text — re-asking could return a different entry than the one tapped.
+  async function send(label: string, payload: ChatRequest) {
+    if (sending) return;
 
     const key = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-    setExchanges((prev) => [...prev, { key, question, status: "loading" }]);
+    setExchanges((prev) => [...prev, { key, question: label, status: "loading" }]);
     setSending(true);
 
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question, session_id: sessionIdRef.current }),
+        body: JSON.stringify({ ...payload, session_id: sessionIdRef.current }),
       });
 
       if (!response.ok) {
@@ -107,11 +126,21 @@ export function ChatGuide() {
     }
   }
 
+  function ask(questionText: string) {
+    const question = questionText.trim();
+    if (!question) return;
+    void send(question, { question });
+  }
+
+  function selectClarifierOption(clarifierId: string, optionIndex: number, label: string) {
+    void send(label, { selection: { clarifier_id: clarifierId, option_index: optionIndex } });
+  }
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const question = input;
     setInput("");
-    void ask(question);
+    ask(question);
   }
 
   async function handleFeedback(exchange: Exchange, vote: "up" | "down") {
@@ -138,6 +167,10 @@ export function ChatGuide() {
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4">
+      <p className="rounded-md border border-ink/10 bg-ink/5 px-3 py-2 text-sm text-ink/80">
+        {t("disclaimer")}
+      </p>
+
       <div role="log" aria-live="polite" aria-relevant="additions" className="flex flex-1 flex-col gap-4">
         {exchanges.length === 0 ? <EmptyState message={t("emptyState")} /> : null}
         {exchanges.map((exchange) => (
@@ -147,6 +180,7 @@ export function ChatGuide() {
             locale={locale}
             t={t}
             onSelectQuestion={ask}
+            onSelectClarifierOption={selectClarifierOption}
             onFeedback={handleFeedback}
           />
         ))}
@@ -185,12 +219,14 @@ function ExchangeBubbles({
   locale,
   t,
   onSelectQuestion,
+  onSelectClarifierOption,
   onFeedback,
 }: {
   exchange: Exchange;
   locale: string;
   t: ChatTranslations;
   onSelectQuestion: (question: string) => void;
+  onSelectClarifierOption: (clarifierId: string, optionIndex: number, label: string) => void;
   onFeedback: (exchange: Exchange, vote: "up" | "down") => void;
 }) {
   return (
@@ -221,6 +257,7 @@ function ExchangeBubbles({
           locale={locale}
           t={t}
           onSelectQuestion={onSelectQuestion}
+          onSelectClarifierOption={onSelectClarifierOption}
           onFeedback={onFeedback}
         />
       ) : null}
@@ -234,6 +271,7 @@ function AnswerBubble({
   locale,
   t,
   onSelectQuestion,
+  onSelectClarifierOption,
   onFeedback,
 }: {
   exchange: Exchange;
@@ -241,12 +279,41 @@ function AnswerBubble({
   locale: string;
   t: ChatTranslations;
   onSelectQuestion: (question: string) => void;
+  onSelectClarifierOption: (clarifierId: string, optionIndex: number, label: string) => void;
   onFeedback: (exchange: Exchange, vote: "up" | "down") => void;
 }) {
   if (result.type === "no_answer") {
     return (
       <div className="mr-auto max-w-[85%] rounded-lg rounded-bl-none border border-ink/10 bg-canvas px-4 py-3 text-ink">
         {t("noAnswerMessage")}
+      </div>
+    );
+  }
+
+  // The system is asking the BHW a question rather than answering one. Options
+  // are resolved server-side by index, so this is a selection, not a re-ask.
+  if (result.type === "clarify") {
+    return (
+      <div className="mr-auto flex max-w-[85%] flex-col gap-2 rounded-lg rounded-bl-none border border-ink/10 bg-canvas px-4 py-3">
+        <p className="font-medium text-ink">
+          {pick(locale, result.clarifier.question_fil, result.clarifier.question_en)}
+        </p>
+        <p className="text-sm text-ink/70">{t("clarifyHint")}</p>
+        <div className="flex flex-col gap-2">
+          {result.clarifier.options.map((option, index) => {
+            const label = pick(locale, option.label_fil, option.label_en);
+            return (
+              <button
+                key={`${result.clarifier.id}-${index}`}
+                type="button"
+                onClick={() => onSelectClarifierOption(result.clarifier.id, index, label)}
+                className="min-h-[44px] rounded-md border border-ink/20 px-3 py-2 text-left text-sm text-ink hover:bg-ink/5"
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
       </div>
     );
   }
@@ -267,19 +334,37 @@ function AnswerBubble({
             </button>
           ))}
         </div>
+        <FeedbackControls exchange={exchange} t={t} onFeedback={onFeedback} />
       </div>
     );
   }
 
+  const urgent = result.route === "red_flag";
+
   return (
     <div className="mr-auto flex max-w-[85%] flex-col gap-3">
-      {exchange.isFirstAnswer ? (
+      {exchange.isFirstAnswer && !urgent ? (
         <div className="rounded-lg bg-celebration px-4 py-2 text-sm font-medium text-celebration-ink">
           {t("celebrationMessage")}
         </div>
       ) : null}
 
-      <div className="rounded-lg rounded-bl-none border border-ink/10 bg-canvas px-4 py-3 text-ink">
+      {/* An intercepted emergency is announced assertively rather than politely:
+          role="alert" so it is read immediately, and a danger-tinted border so
+          it does not look like the routine answer that scoring would have given. */}
+      {urgent ? (
+        <p role="alert" className="font-semibold text-danger">
+          {t("urgentHeading")}
+        </p>
+      ) : null}
+
+      <div
+        className={
+          urgent
+            ? "rounded-lg rounded-bl-none border-2 border-danger bg-canvas px-4 py-3 text-ink"
+            : "rounded-lg rounded-bl-none border border-ink/10 bg-canvas px-4 py-3 text-ink"
+        }
+      >
         {pick(locale, result.answer.answer_fil, result.answer.answer_en)}
       </div>
 

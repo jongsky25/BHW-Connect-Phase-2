@@ -66,6 +66,33 @@ entry's question or keywords and the test re-scores it; the gate is ≥90% of 90
 fixtures, plus the hard rule that an out-of-scope question (dosing, ECG,
 diagnosis) may only ever be answered by a scope-boundary entry.
 
+### `red-flags.json` and `clarifiers.json` (INC-17)
+
+Routing rules for the conversational Chat Guide, active only behind the
+`chat_conversation` flag. Unlike entries and articles these are **not** loaded
+into the database — they are bundled at build time from `src/lib/chat/rules.ts`,
+because they are routing logic whose review history belongs in the same pull
+request as the fixtures that prove it works.
+
+- **`red-flags.json`** forces a specific entry before scoring runs. Scoring
+  cannot see urgency: against the shipped corpus, "mataas ang presyon niya at
+  sumasakit ang dibdib niya" scores 0.749 against a *definition* of
+  hypertension, and "180 ang presyon niya, ano gagawin ko" scores 0.709 against
+  "what if blood spills on the table" — both above the 0.55 answer threshold, so
+  both were returned with no hedge. Rules are evaluated in array order, first
+  match wins, so rules with `and_any_of` are listed first.
+- **`clarifiers.json`** asks one authored question when the decisive detail is
+  missing, with each option mapped to an entry id. Options resolve server-side
+  by index, so a selection is never re-scored.
+
+Phrases are matched **whole-token** against the normalized question, so `hilo`
+does not match inside `nahihilo` — every variant a BHW might type is listed
+explicitly. That is what makes the lists reviewable by a nurse rather than by a
+programmer. `loadContent()` rejects a rule whose target is unknown or is
+`tier: pending` (an unpublished target means the rule can never fire — the worst
+way for a safety rule to fail), and rejects any phrase that is not already
+lowercase and trimmed.
+
 Loading is deliberately explicit: `--project` has no default, and `--apply` is
 required to write anything. `kb_entries` has no org scoping and no feature flag,
 so publishing here is visible to every BHW in the project.

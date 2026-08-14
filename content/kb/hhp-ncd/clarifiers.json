@@ -1,0 +1,152 @@
+{
+  "$comment": "Clarifier rules for the Chat Guide — the 'deeper question' layer. A clarifier fires when a question names a topic and asks for an action but omits the one detail that decides which answer is correct. 'Mataas ang BP niya, ano gagawin ko?' is the canonical case: without knowing whether the client has symptoms, whether the BHW wants the threshold, or whether they want the referral destination, top-1 scoring has to guess — and today it guesses m1-hypertension-definition. Asking one authored question routes it correctly instead. Clarifiers are evaluated AFTER red flags (a symptom-bearing question is an emergency; do not stop to ask more questions) and BEFORE scoring. A clarifier fires only when every topic_any_of, intent_any_of and and_any_of group has a hit and no skip_if_any_of phrase is present. Phrases match whole-token against the normalized question. Options are authored bilingually and each maps to a published entry id, so a selection resolves by id and never re-runs scoring. Clarifiers are versioned content reviewed like KB entries, not model output.",
+  "clarifiers": [
+    {
+      "id": "clr-bp-high-next-step",
+      "question_en": "Which is closest to your situation?",
+      "question_fil": "Alin ang pinakamalapit sa sitwasyon mo?",
+      "topic_any_of": [
+        "presyon",
+        "bp",
+        "blood pressure",
+        "altapresyon",
+        "alta presyon",
+        "hypertension",
+        "hypertention"
+      ],
+      "intent_any_of": [
+        "ano gagawin",
+        "anong gagawin",
+        "ano ang gagawin",
+        "ano ang dapat kong gawin",
+        "ano dapat gawin",
+        "ano na",
+        "paano na",
+        "next step",
+        "what do i do",
+        "what should i do",
+        "what now",
+        "what next"
+      ],
+      "and_any_of": [
+        "mataas",
+        "taas",
+        "mataas ang presyon",
+        "high",
+        "160",
+        "170",
+        "180",
+        "190",
+        "200",
+        "210"
+      ],
+      "skip_if_any_of": [
+        "ilang beses",
+        "how many times",
+        "cuff",
+        "braso",
+        "arm",
+        "magpahinga",
+        "rest",
+        "aparato",
+        "device",
+        "sukatin",
+        "measure"
+      ],
+      "options": [
+        {
+          "label_en": "The client has chest pain, a severe headache, blurred vision or trouble breathing right now",
+          "label_fil": "May sakit ng dibdib, matinding sakit ng ulo, malabong paningin o hirap huminga ang kliyente ngayon",
+          "entry_id": "m3-very-high-with-symptoms"
+        },
+        {
+          "label_en": "The reading is high but the client feels well — where do I send them?",
+          "label_fil": "Mataas ang resulta pero maayos ang pakiramdam ng kliyente — saan ko siya ipapadala?",
+          "entry_id": "m1-referral-destination"
+        },
+        {
+          "label_en": "I want to know which reading counts as high",
+          "label_fil": "Gusto kong malaman kung aling resulta ang itinuturing na mataas",
+          "entry_id": "m3-ph-threshold"
+        },
+        {
+          "label_en": "I want to know how to tell the client their result",
+          "label_fil": "Gusto kong malaman kung paano sasabihin sa kliyente ang resulta",
+          "entry_id": "m3-explain-reading"
+        }
+      ]
+    },
+    {
+      "id": "clr-glucose-high-next-step",
+      "question_en": "Which is closest to your situation?",
+      "question_fil": "Alin ang pinakamalapit sa sitwasyon mo?",
+      "topic_any_of": [
+        "asukal",
+        "sugar",
+        "blood sugar",
+        "glucose",
+        "cbg",
+        "dyabetis",
+        "diabetes"
+      ],
+      "intent_any_of": [
+        "ano gagawin",
+        "anong gagawin",
+        "ano ang gagawin",
+        "ano ang dapat kong gawin",
+        "ano dapat gawin",
+        "ano na",
+        "paano na",
+        "next step",
+        "what do i do",
+        "what should i do",
+        "what now",
+        "what next"
+      ],
+      "and_any_of": [
+        "mataas",
+        "taas",
+        "high",
+        "200",
+        "250",
+        "300",
+        "350",
+        "400"
+      ],
+      "skip_if_any_of": [
+        "tudlo",
+        "daliri",
+        "finger",
+        "lancet",
+        "strip",
+        "guwantes",
+        "gwantes",
+        "gloves",
+        "fasting",
+        "ayuno"
+      ],
+      "options": [
+        {
+          "label_en": "The client feels unwell — vomiting, very thirsty, drowsy or weak",
+          "label_fil": "Masama ang pakiramdam ng kliyente — nagsusuka, palaging nauuhaw, inaantok o nanghihina",
+          "entry_id": "m4-very-high-glucose"
+        },
+        {
+          "label_en": "The result is high but the client feels well — where do I send them?",
+          "label_fil": "Mataas ang resulta pero maayos ang pakiramdam ng kliyente — saan ko siya ipapadala?",
+          "entry_id": "m1-referral-destination"
+        },
+        {
+          "label_en": "I want to know what to write down after the test",
+          "label_fil": "Gusto kong malaman kung ano ang isusulat pagkatapos ng pagsusuri",
+          "entry_id": "m4-record-glucose"
+        },
+        {
+          "label_en": "The meter showed an error or a number I do not believe",
+          "label_fil": "May error o hindi kapani-paniwalang numero ang lumabas sa metro",
+          "entry_id": "m4-error-code"
+        }
+      ]
+    }
+  ]
+}
