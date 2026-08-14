@@ -167,6 +167,51 @@ Each increment is one focused build session: scoped, testable, and independently
 
 Remaining later phases: Profiling-system live integration, still blocked on real technical access to the external system (requirements-and-vision.md §7, item 1); INC-2's manual-entry fallback remains the shipped Phase 1 path until that access arrives.
 
+### 7.1 Deferred — closing the last developer dependencies in content authoring
+
+The platform's defining goal is that BLHSD can add knowledge base content and
+lectures from the front end indefinitely, with no developer in the loop — that
+independence, not feature count, is what separates this from an INGO-run
+training app on a vendor platform. An audit of the shipped console against that
+goal found it largely met: categories, Q&A entries, long-form articles,
+**synonyms** (the Chat Guide matcher's own Taglish/misspelling tuning),
+courses with ordered text/video/quiz modules, quiz thresholds and retake limits,
+flip charts, announcements, surveys, forum moderation, users and feature flags
+are all admin-authored in-app, with real browser-side image upload to Supabase
+storage. Three dependencies remain. All three are deliberately deferred until
+the build matures — recorded here rather than actioned now.
+
+1. **Video is link-only.** `course-form.tsx` takes a `video_url` text field;
+   there is no upload path for video the way there is for images (the explicit
+   call made in INC-10 and carried into INC-12). Authoring a lecture therefore
+   depends on an outside host — YouTube, Facebook, Drive — and no admin-side
+   surface reports a link that has rotted or been taken down. Revisit as a cost
+   and bandwidth decision (storage and egress against BHW data cost), not as a
+   missing feature; link-only may well remain correct.
+
+2. **Two authoring models contradict each other for HHP+ content.**
+   `content/kb/README.md` declares the versioned files the master copy — "the
+   loader always rebuilds each row from these files, so the database never
+   becomes the master copy" — while `/admin/kb` offers full in-app editing of
+   the same rows. `scripts/kb-load.mjs` keys off `locks/<ref>.json` (content id
+   → row uuid), so admin-*created* entries are never touched; but an admin's
+   console edit to a loader-managed HHP+ entry is silently overwritten the next
+   time anyone runs the loader. Needs one decision at the pilot gate, not code:
+   either the database becomes master for HHP+ content and the loader demotes to
+   seed-only, or the files stay master and those six modules are made read-only
+   in the console. Both cannot stay true.
+
+3. **No content-quality signal in the console.** The retrieval gate — ≥90% of
+   the 90 fixtures in `src/lib/chat/ncd-fixtures.ts` — runs in CI against the
+   content *files*. An admin authoring through the UI gets no equivalent check:
+   nothing warns that a new entry's keywords collide with a neighbouring entry
+   and degrade matching for both, which `content/kb/README.md` already names as
+   the matcher's main failure mode. The unanswered-question log catches *misses*
+   but not *mis-matches*, so Chat Guide accuracy can decay under front-end
+   authoring with no dashboard signal. This is the substantive risk of full
+   authoring independence and the one worth building for: a keyword-collision
+   warning at publish time, and/or a console-side run of the fixture gate.
+
 ## 8. Pilot Success Metrics
 
 Event taxonomy (fixed, versioned): `session.started`, `chat.question_asked`, `chat.answer_shown`, `chat.no_answer`, `chat.feedback_given`, `kb.article_viewed`, `onboarding.completed`, `settings.changed`, `gap.resolved`.
