@@ -9,11 +9,53 @@ import { mapDashboardRpcError } from "@/lib/dashboard/error-messages";
 import type { GapQueueRow } from "@/lib/dashboard/types";
 import { createClient } from "@/lib/supabase/client";
 
-export function GapQueueList({ rows }: { rows: GapQueueRow[] }) {
+export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueRow[]; aiDraftEnabled?: boolean }) {
   const t = useTranslations("admin.dashboard.chatGuide");
   const router = useRouter();
   const [dismissingId, setDismissingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  // The clearance step, inline. There is no modal primitive in this repo, so
+  // this is a disclosure: one row open at a time, with the question in an
+  // editable textarea. Editable is the point — what gets sent is what the
+  // admin approved after redacting, which is what makes the payload
+  // admin_cleared rather than user_generated.
+  const [clearingId, setClearingId] = useState<string | null>(null);
+  const [clearedText, setClearedText] = useState("");
+  const [draftingId, setDraftingId] = useState<string | null>(null);
+
+  function openClearance(row: GapQueueRow) {
+    setError(null);
+    setClearingId(row.id);
+    setClearedText(row.text);
+  }
+
+  async function handleDraft(id: string) {
+    setError(null);
+    setDraftingId(id);
+    try {
+      const response = await fetch("/api/admin/gap/draft", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ unmatched_question_id: id, cleared_text: clearedText }),
+      });
+
+      if (!response.ok) {
+        // Every failure here is recoverable by hand: the manual "create entry
+        // from this" link is still right there, and it is the baseline this
+        // feature accelerates rather than replaces.
+        setError(t(response.status === 503 ? "aiUnavailable" : "aiDraftFailed"));
+        return;
+      }
+
+      const { entry_id: entryId } = (await response.json()) as { entry_id: string };
+      router.push(`/admin/kb/entries/${entryId}`);
+    } catch {
+      setError(t("genericError"));
+    } finally {
+      setDraftingId(null);
+    }
+  }
 
   async function handleDismiss(id: string) {
     setError(null);
@@ -80,6 +122,16 @@ export function GapQueueList({ rows }: { rows: GapQueueRow[] }) {
                     >
                       {t("createEntryAction")}
                     </Link>
+                    {aiDraftEnabled ? (
+                      <button
+                        type="button"
+                        onClick={() => (clearingId === row.id ? setClearingId(null) : openClearance(row))}
+                        aria-expanded={clearingId === row.id}
+                        className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
+                      >
+                        {t("aiDraftAction")}
+                      </button>
+                    ) : null}
                     <button
                       type="button"
                       disabled={dismissingId === row.id}
@@ -89,6 +141,43 @@ export function GapQueueList({ rows }: { rows: GapQueueRow[] }) {
                       {dismissingId === row.id ? t("dismissing") : t("dismissAction")}
                     </button>
                   </div>
+
+                  {clearingId === row.id ? (
+                    <div className="mt-3 flex flex-col gap-2 rounded-md border border-ink/10 bg-ink/5 p-3">
+                      <label
+                        htmlFor={`gap-cleared-${row.id}`}
+                        className="text-xs font-medium text-ink"
+                      >
+                        {t("clearanceLabel")}
+                      </label>
+                      <p className="text-xs text-ink/70">{t("clearanceHint")}</p>
+                      <textarea
+                        id={`gap-cleared-${row.id}`}
+                        rows={3}
+                        value={clearedText}
+                        onChange={(event) => setClearedText(event.target.value)}
+                        className="w-full rounded-md border border-ink/20 bg-canvas px-2 py-1 text-sm text-ink"
+                      />
+                      <div className="flex flex-wrap gap-2">
+                        <button
+                          type="button"
+                          disabled={draftingId === row.id || clearedText.trim().length === 0}
+                          onClick={() => handleDraft(row.id)}
+                          className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-canvas disabled:opacity-60"
+                        >
+                          {draftingId === row.id ? t("aiDrafting") : t("aiSendAction")}
+                        </button>
+                        <button
+                          type="button"
+                          disabled={draftingId === row.id}
+                          onClick={() => setClearingId(null)}
+                          className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink disabled:opacity-60"
+                        >
+                          {t("cancelAction")}
+                        </button>
+                      </div>
+                    </div>
+                  ) : null}
                 </td>
               </tr>
             ))}

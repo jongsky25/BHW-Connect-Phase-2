@@ -35,6 +35,7 @@ export type AiFeature =
 export type AiPayload = {
   classification: DataClassification;
   prompt: string;
+  jsonSchema?: unknown;
 };
 
 // Why a call did not happen. All of these are *values*, not exceptions:
@@ -71,6 +72,11 @@ export type ProviderTransport = (input: {
   apiKey: string;
   prompt: string;
   signal: AbortSignal;
+  // When set, the provider is asked to return JSON matching this schema
+  // rather than free prose. Structured output matters here because a KB draft
+  // is six fields, and coaxing them out of prose then re-parsing is far more
+  // failure-prone than letting the provider enforce the shape.
+  jsonSchema?: unknown;
 }) => Promise<string>;
 
 export type BudgetDecision = { allowed: boolean };

@@ -21,6 +21,7 @@ const DEFAULT_FLAGS: FeatureFlags = {
   notifications: false,
   chat_conversation: false,
   ai_external: false,
+  ai_gap_draft: false,
 };
 
 export async function getFeatureFlags(supabase: SupabaseClient): Promise<FeatureFlags> {

@@ -53,7 +53,9 @@ const eslintConfig = defineConfig([
   // something that already names one.
   {
     files: ["src/**/*.{ts,tsx}", "scripts/**/*.mjs"],
-    ignores: ["src/lib/ai/adapter.ts", "src/lib/ai/providers/**"],
+    // server.ts is the composition root — the one place a transport is wired
+    // to the adapter. adapter.ts is listed because it owns the transport type.
+    ignores: ["src/lib/ai/adapter.ts", "src/lib/ai/server.ts", "src/lib/ai/providers/**"],
     rules: {
       "no-restricted-imports": [
         "error",

@@ -45,12 +45,37 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // INC-18b. free-ai-leverage-plan.md's risk table: "No LLM-generated text
+  // reaches a BHW unreviewed." rpc_kb_entry_update is what actually enforces
+  // that — a direct PostgREST publish fails the same way. This is the
+  // affordance: it tells the admin what is being asked of them and gives them
+  // the control to say yes, rather than letting Publish fail unexplained.
+  const isAiDraft = Boolean(entry?.ai_drafted_at);
+  const alreadyConfirmed = Boolean(entry?.ai_draft_confirmed_at);
+  const [reviewed, setReviewed] = useState(false);
+  const needsReview = isAiDraft && !alreadyConfirmed;
+
   async function handleSave(status: KbStatus) {
     setError(null);
     setLoading(true);
 
     try {
       const supabase = createClient();
+
+      // Confirmation is its own audited act, recorded before the publish it
+      // authorizes — so the trail cannot show an entry published ahead of the
+      // sign-off that permitted it.
+      if (status === "published" && needsReview && entry) {
+        const { error: confirmError } = await supabase.rpc("rpc_kb_entry_confirm_ai_draft", {
+          p_id: entry.id,
+        });
+
+        if (confirmError) {
+          setError(t(mapKbRpcError(confirmError.message)));
+          return;
+        }
+      }
+
       const keywordList = keywords
         .split(",")
         .map((keyword) => keyword.trim())
@@ -118,6 +143,26 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
         <p className="rounded-md bg-secondary/10 px-4 py-3 text-sm text-ink">
           {t("prefillBanner", { question: prefill.text })}
         </p>
+      ) : null}
+
+      {isAiDraft ? (
+        <div className="flex flex-col gap-2 rounded-md border border-warning/40 bg-warning/10 px-4 py-3">
+          <p className="text-sm font-medium text-ink">{t("aiDraftBanner")}</p>
+          <p className="text-sm text-ink/80">{t("aiDraftBannerDetail")}</p>
+          {needsReview ? (
+            <label className="flex items-start gap-2 text-sm text-ink">
+              <input
+                type="checkbox"
+                checked={reviewed}
+                onChange={(event) => setReviewed(event.target.checked)}
+                className="mt-1"
+              />
+              <span>{t("aiDraftConfirmLabel")}</span>
+            </label>
+          ) : (
+            <p className="text-sm text-ink/70">{t("aiDraftConfirmed")}</p>
+          )}
+        </div>
       ) : null}
 
       <Field label={t("categoryLabel")} htmlFor="entry-category">
@@ -240,7 +285,7 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
         </button>
         <button
           type="button"
-          disabled={loading}
+          disabled={loading || (needsReview && !reviewed)}
           onClick={() => handleSave("published")}
           className="rounded-md bg-primary px-4 py-2 font-medium text-canvas transition-opacity disabled:opacity-60"
         >

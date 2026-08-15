@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import { AiFlywheelPanel } from "@/components/admin/dashboard/ai-flywheel-panel";
 import { ReportExportPanel } from "@/components/admin/dashboard/report-export-panel";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
@@ -37,6 +38,8 @@ export default async function AdminDashboardReportsPage({
         <StatCard label={t("kpiDeflection")} value={`${kpi?.deflection_rate ?? 0}%`} />
         <StatCard label={t("kpiCsat")} value={`${kpi?.csat_rate ?? 0}%`} />
       </div>
+
+      {flags.ai_gap_draft ? <AiFlywheelPanel start={start} end={end} /> : null}
 
       <ReportExportPanel />
     </div>
