@@ -83,9 +83,18 @@ test("Chat Guide intercepts a red flag, asks the deeper question, and resolves a
 
     // 2. Clarifier: the same topic without the decisive detail is not guessed
     // at — the system asks which situation this is.
+    //
+    // The trailing marker makes this question unique per run. unmatched_questions
+    // dedupes globally on normalized_text and never resets, so assertion 4 below
+    // would otherwise read a row left behind by an earlier run rather than
+    // testing this one. The marker is inert to the clarifier, which matches on
+    // topic ("bp"), intent ("ano gagawin") and the high marker ("mataas")
+    // before any scoring happens.
+    const clarifyQuestion = `mataas ang BP niya, ano gagawin ko? zzz${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
+
     const clarify = (await (
       await page.request.post("/api/chat", {
-        data: { question: "mataas ang BP niya, ano gagawin ko?" },
+        data: { question: clarifyQuestion },
       })
     ).json()) as ChatBody;
     expect(clarify.type).toBe("clarify");
@@ -111,12 +120,14 @@ test("Chat Guide intercepts a red flag, asks the deeper question, and resolves a
     expect(selected.answer?.content_id).toBe("m3-very-high-with-symptoms");
 
     // 4. A clarifier is a narrowing step, not a content gap — it must not be
-    // logged as an unmatched question the way a genuine miss is.
+    // logged as an unmatched question the way a genuine miss is. Scoped to this
+    // run's marker, so it proves what this run did rather than what the table
+    // has accumulated.
     const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
     const gapRows = (await restGet(
       request,
       adminToken,
-      `unmatched_questions?text=eq.${encodeURIComponent("mataas ang BP niya, ano gagawin ko?")}&select=id`,
+      `unmatched_questions?text=eq.${encodeURIComponent(clarifyQuestion)}&select=id`,
     )) as Array<{ id: string }>;
     expect(gapRows).toHaveLength(0);
 
