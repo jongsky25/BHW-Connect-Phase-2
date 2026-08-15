@@ -210,8 +210,12 @@
         "aiSendAction": "Send and draft",
         "aiDrafting": "Drafting…",
         "cancelAction": "Cancel",
-        "aiUnavailable": "External AI is unavailable right now. You can still create the entry by hand.",
-        "aiDraftFailed": "The draft could not be produced. Please try again, or create the entry by hand."
+        "aiDraftFailed": "The draft could not be produced. Please try again, or create the entry by hand.",
+        "aiNoKey": "External AI has no API key configured, so no draft can be requested. Create the entry by hand, or ask an administrator to configure the key.",
+        "aiFlagOff": "External AI is switched off. Create the entry by hand.",
+        "aiOverCeiling": "The AI usage limit for today has been reached. Try again tomorrow, or create the entry by hand.",
+        "aiTimeout": "The AI provider took too long to answer. Try again, or create the entry by hand.",
+        "aiProviderError": "The AI provider rejected the request. This usually means it needs attention from a developer — create the entry by hand for now."
       },
       "reports": {
         "heading": "Reports",

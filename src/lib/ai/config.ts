@@ -27,6 +27,11 @@ export const AI_REQUEST_TIMEOUT_MS = 20_000;
 export const publishedFreeLimits: Record<ProviderId, { perDay: number; note: string }> = {
   gemini: {
     perDay: 1_500,
-    note: "Flash / Flash-Lite class, verified 2026-07-18. Free-tier data may be used for training — Tier B rules apply strictly.",
+    note: "Flash / Flash-Lite class, verified 2026-07-18. Free-tier data may be used for training — Tier B rules apply strictly. The pilot's key is on a paid tier, where that training clause does not apply and the real limit is higher; the ceiling above is therefore a spend guard rather than a free-tier bound, and is deliberately left where it is until someone decides what this deployment should be allowed to spend.",
   },
 };
+
+// The model is NOT configured here. It lives in the environment
+// (src/lib/ai/env.ts, GEMINI_MODEL) so that a provider retiring a model — which
+// they do on their own schedule, and which happened to this project on
+// 2026-06-01 — is an operator action rather than a code change and a deploy.

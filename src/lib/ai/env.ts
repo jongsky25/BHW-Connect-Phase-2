@@ -16,3 +16,21 @@ export function getGeminiApiKey(): string | null {
   const value = process.env.GEMINI_API_KEY;
   return value && value.length > 0 ? value : null;
 }
+
+// The model is configuration, not code.
+//
+// INC-18a pinned "gemini-2.0-flash" as a literal. Google shut that model down
+// on 2026-06-01, so the first time this feature was switched on in the pilot
+// every request 404'd — and fixing a dead model meant a code change, a review
+// and a deploy for what is a one-word setting. Providers retire models on
+// their own schedule and always will, so the model name belongs in the
+// environment where an operator can change it in a minute.
+//
+// The default tracks Google's own stated replacement for the retired model.
+// It is a default, not a pin: set GEMINI_MODEL to override without a deploy.
+export const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
+
+export function getGeminiModel(): string {
+  const value = process.env.GEMINI_MODEL;
+  return value && value.length > 0 ? value : DEFAULT_GEMINI_MODEL;
+}
