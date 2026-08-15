@@ -9,6 +9,27 @@ import { mapDashboardRpcError } from "@/lib/dashboard/error-messages";
 import type { GapQueueRow } from "@/lib/dashboard/types";
 import { createClient } from "@/lib/supabase/client";
 
+// Maps the route's failure onto the message key that tells the admin what to
+// do next. Exported so the mapping is testable on its own, following
+// mapKbRpcError / mapDashboardRpcError — the house pattern for turning a
+// backend failure into a localized string.
+export function aiErrorKey(status: number, reason: string | undefined): string {
+  if (status !== 503) return "aiDraftFailed";
+
+  switch (reason) {
+    case "no_api_key":
+      return "aiNoKey";
+    case "flag_disabled":
+      return "aiFlagOff";
+    case "over_ceiling":
+      return "aiOverCeiling";
+    case "timeout":
+      return "aiTimeout";
+    default:
+      return "aiProviderError";
+  }
+}
+
 export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueRow[]; aiDraftEnabled?: boolean }) {
   const t = useTranslations("admin.dashboard.chatGuide");
   const router = useRouter();
@@ -44,7 +65,15 @@ export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueR
         // Every failure here is recoverable by hand: the manual "create entry
         // from this" link is still right there, and it is the baseline this
         // feature accelerates rather than replaces.
-        setError(t(response.status === 503 ? "aiUnavailable" : "aiDraftFailed"));
+        //
+        // The reason is surfaced rather than collapsed into one string. A 503
+        // covers "no key configured", "daily ceiling reached" and "the
+        // provider rejected the call", and those need three different actions
+        // from whoever is reading the message — the first version of this said
+        // only "external AI is unavailable", which sent the operator looking at
+        // the API key when the real cause was a retired model.
+        const body = (await response.json().catch(() => null)) as { reason?: string } | null;
+        setError(t(aiErrorKey(response.status, body?.reason)));
         return;
       }
 

@@ -72,6 +72,22 @@ export async function callProvider(
     });
   } catch (error) {
     const aborted = error instanceof Error && error.name === "AbortError";
+
+    // Degrading silently to the caller's baseline is the required behaviour
+    // for the *user*; it was never meant to be silent for the operator. INC-18a
+    // returned this value without logging, so when the pinned model was retired
+    // the pilot produced four failed calls, an unexplained message to the
+    // admin, and nothing at all in the runtime logs — the failure was only
+    // diagnosable by querying ai_usage and reading a deprecation page. The
+    // transport's message names the status and the model; the payload is not
+    // in it (see providers/gemini.ts).
+    if (!aborted) {
+      console.error("callProvider: provider call failed", {
+        feature,
+        message: error instanceof Error ? error.message : String(error),
+      });
+    }
+
     return { ok: false, reason: aborted ? "timeout" : "provider_error" };
   } finally {
     clearTimeout(timer);

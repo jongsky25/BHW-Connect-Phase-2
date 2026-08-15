@@ -210,8 +210,12 @@
         "aiSendAction": "Ipadala at i-draft",
         "aiDrafting": "Ginagawa ang draft…",
         "cancelAction": "Kanselahin",
-        "aiUnavailable": "Hindi available ngayon ang panlabas na AI. Maaari mo pa ring gawin nang manu-mano ang entry.",
-        "aiDraftFailed": "Hindi nagawa ang draft. Subukan muli, o gawin nang manu-mano ang entry."
+        "aiDraftFailed": "Hindi nagawa ang draft. Subukan muli, o gawin nang manu-mano ang entry.",
+        "aiNoKey": "Walang nakatakdang API key ang panlabas na AI kaya walang draft na magagawa. Gawin nang manu-mano ang entry, o ipaayos sa administrator ang key.",
+        "aiFlagOff": "Nakapatay ang panlabas na AI. Gawin nang manu-mano ang entry.",
+        "aiOverCeiling": "Naabot na ang limitasyon ng paggamit ng AI ngayong araw. Subukan bukas, o gawin nang manu-mano ang entry.",
+        "aiTimeout": "Masyadong natagalan ang AI provider. Subukan muli, o gawin nang manu-mano ang entry.",
+        "aiProviderError": "Tinanggihan ng AI provider ang kahilingan. Kadalasan ay kailangan itong ayusin ng developer — gawin muna nang manu-mano ang entry."
       },
       "reports": {
         "heading": "Mga Ulat",
