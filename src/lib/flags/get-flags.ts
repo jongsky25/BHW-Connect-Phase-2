@@ -6,7 +6,9 @@ import type { FeatureFlagKey, FeatureFlags } from "./types";
 // feature that was already shipping. announcements/surveys/elearning/forum/
 // flipcharts/offline_pwa/notifications are brand-new features with no such
 // prior behavior to preserve, so they fail closed instead: a flags-read
-// failure should never expose an unreviewed feature.
+// failure should never expose an unreviewed feature. chat_conversation is
+// the same — falling closed restores the single-turn Chat Guide, which is
+// the behaviour the pilot was validated against.
 const DEFAULT_FLAGS: FeatureFlags = {
   kb_articles: true,
   reports_export: true,
@@ -17,6 +19,7 @@ const DEFAULT_FLAGS: FeatureFlags = {
   flipcharts: false,
   offline_pwa: false,
   notifications: false,
+  chat_conversation: false,
 };
 
 export async function getFeatureFlags(supabase: SupabaseClient): Promise<FeatureFlags> {

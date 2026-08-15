@@ -7,7 +7,8 @@ export type FeatureFlagKey =
   | "forum"
   | "flipcharts"
   | "offline_pwa"
-  | "notifications";
+  | "notifications"
+  | "chat_conversation";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 

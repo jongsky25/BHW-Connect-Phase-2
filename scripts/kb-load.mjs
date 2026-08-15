@@ -110,10 +110,17 @@ async function syncEntries(client, content, ctx, plan) {
   const { sources } = content;
   const { categoryIds, lock, apply, publish, ownerId, modules } = ctx;
 
-  // Fallback key for a lost lockfile: kb_entries has no natural unique column.
-  const existing = await selectAll(client, "kb_entries", "id,question_en");
+  // Identity resolution, most reliable first: content_id is the real key
+  // (INC-17b), the lockfile is the legacy mapping kept working for projects
+  // loaded before that column existed, and question_en is the last-resort
+  // fallback for a lost lockfile.
+  const existing = await selectAll(client, "kb_entries", "id,question_en,content_id");
+  const byContentId = new Map(
+    existing.filter((row) => row.content_id).map((row) => [row.content_id, row.id]),
+  );
   const byQuestion = new Map(existing.map((row) => [row.question_en, row.id]));
   const knownIds = new Set(existing.map((row) => row.id));
+  const contentIdAlreadySet = new Set(byContentId.values());
 
   for (const entry of content.entries) {
     const moduleNumber = Number(entry.file.match(/module-(\d+)/)[1]);
@@ -125,8 +132,11 @@ async function syncEntries(client, content, ctx, plan) {
     const owner = ownerId ?? null;
     if (status === "draft" && entry.tier === "pending") plan.entries.pendingDrafts += 1;
 
-    let entryId = lock.entries[entry.id];
-    if (entryId && !knownIds.has(entryId)) entryId = undefined; // lock is stale
+    let entryId = byContentId.get(entry.id);
+    if (!entryId) {
+      entryId = lock.entries[entry.id];
+      if (entryId && !knownIds.has(entryId)) entryId = undefined; // lock is stale
+    }
     if (!entryId) entryId = byQuestion.get(entry.question_en);
 
     if (entryId) {
@@ -162,6 +172,17 @@ async function syncEntries(client, content, ctx, plan) {
       });
       entryId = row.entry_id;
     }
+
+    // Stamp the content id onto the row. This is what /api/chat's conversation
+    // layer keys its red-flag and clarifier rules off — without it those rules
+    // silently never fire, since the rest of the row is identified by uuid.
+    // The RPCs don't carry this field, so it goes straight through PostgREST
+    // under kb_entries' admin-write policy.
+    if (entryId && !contentIdAlreadySet.has(entryId)) {
+      await client.patch(`kb_entries?id=eq.${entryId}`, { content_id: entry.id });
+      plan.entries.contentIdStamped += 1;
+    }
+
     if (entryId) lock.entries[entry.id] = entryId;
   }
 }
@@ -236,7 +257,7 @@ async function main() {
   const plan = {
     categories: { create: 0, skip: 0 },
     synonyms: { create: 0, skip: 0 },
-    entries: { create: 0, update: 0, pendingDrafts: 0 },
+    entries: { create: 0, update: 0, pendingDrafts: 0, contentIdStamped: 0 },
     articles: { create: 0, update: 0 },
   };
 
@@ -259,7 +280,9 @@ async function main() {
   console.log(`\n${mode} — project ${args.project}`);
   console.log(`  categories  create ${plan.categories.create}  existing ${plan.categories.skip}`);
   console.log(`  synonyms    create ${plan.synonyms.create}  existing ${plan.synonyms.skip}`);
-  console.log(`  entries     create ${plan.entries.create}  update ${plan.entries.update}`);
+  console.log(
+    `  entries     create ${plan.entries.create}  update ${plan.entries.update}  content_id stamped ${plan.entries.contentIdStamped}`,
+  );
   console.log(`  articles    create ${plan.articles.create}  update ${plan.articles.update}`);
   if (args.publish) {
     console.log(

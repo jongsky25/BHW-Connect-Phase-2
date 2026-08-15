@@ -24,6 +24,8 @@ export function loadContent() {
   const categories = categoriesFile.categories;
   const domains = categoriesFile.domains;
   const synonyms = readJson(path.join(CONTENT_DIR, "synonyms.json")).synonyms;
+  const redFlags = readJson(path.join(CONTENT_DIR, "red-flags.json")).red_flags;
+  const clarifiers = readJson(path.join(CONTENT_DIR, "clarifiers.json")).clarifiers;
   const articlesIndex = readJson(path.join(CONTENT_DIR, "articles/index.json")).articles;
 
   const entriesDir = path.join(CONTENT_DIR, "entries");
@@ -41,11 +43,11 @@ export function loadContent() {
     body_fil: readFileSync(path.join(CONTENT_DIR, "articles", article.file_fil), "utf8"),
   }));
 
-  validate({ sources, categories, domains, entries, synonyms, articles });
-  return { sources, categories, domains, entries, synonyms, articles };
+  validate({ sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers });
+  return { sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers };
 }
 
-function validate({ sources, categories, domains, entries, synonyms, articles }) {
+function validate({ sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers }) {
   const problems = [];
   const categorySlugs = new Set(categories.map((c) => c.slug));
   const sourceIds = new Set(Object.keys(sources));
@@ -84,6 +86,71 @@ function validate({ sources, categories, domains, entries, synonyms, articles })
       problems.push(`synonym ${row.term}: language must be fil|en|taglish (DB CHECK)`);
     }
     if (!row.term?.trim() || !row.maps_to?.trim()) problems.push(`synonym ${row.term}: empty term or maps_to`);
+  }
+
+  // Red flags and clarifiers may only ever point at a published entry. A rule
+  // aimed at a `pending` entry would silently never fire — the matcher only
+  // sees `status = 'published'` — which is the worst way for a safety rule to
+  // fail, so it is a load-time error rather than a runtime shrug.
+  const publishedIds = new Set(entries.filter((e) => e.tier === "cited").map((e) => e.id));
+  const allIds = new Set(entries.map((e) => e.id));
+
+  function checkTarget(where, entryId) {
+    if (!allIds.has(entryId)) problems.push(`${where}: unknown entry ${entryId}`);
+    else if (!publishedIds.has(entryId)) {
+      problems.push(`${where}: ${entryId} is tier "pending", so it is never published and the rule can never fire`);
+    }
+  }
+
+  const seenRuleIds = new Set();
+  for (const rule of redFlags) {
+    const where = `red-flags.json:${rule.id}`;
+    if (seenRuleIds.has(rule.id)) problems.push(`${where}: duplicate rule id`);
+    seenRuleIds.add(rule.id);
+    if (!rule.rationale?.trim()) problems.push(`${where}: every rule needs a rationale a clinician can review`);
+    if (!Array.isArray(rule.any_of) || rule.any_of.length === 0) problems.push(`${where}: any_of must not be empty`);
+    for (const phrase of [...(rule.any_of ?? []), ...(rule.and_any_of ?? [])]) {
+      if (phrase !== phrase.toLowerCase().trim()) {
+        problems.push(`${where}: phrase "${phrase}" must be lowercase and trimmed to match normalized text`);
+      }
+    }
+    checkTarget(where, rule.entry_id);
+  }
+
+  const seenClarifierIds = new Set();
+  for (const clarifier of clarifiers) {
+    const where = `clarifiers.json:${clarifier.id}`;
+    if (seenClarifierIds.has(clarifier.id)) problems.push(`${where}: duplicate clarifier id`);
+    seenClarifierIds.add(clarifier.id);
+    for (const field of ["question_en", "question_fil"]) {
+      if (!clarifier[field]?.trim()) problems.push(`${where}: ${field} is empty`);
+    }
+    for (const group of ["topic_any_of", "intent_any_of"]) {
+      if (!Array.isArray(clarifier[group]) || clarifier[group].length === 0) {
+        problems.push(`${where}: ${group} must not be empty`);
+      }
+    }
+    const phrases = [
+      ...(clarifier.topic_any_of ?? []),
+      ...(clarifier.intent_any_of ?? []),
+      ...(clarifier.and_any_of ?? []),
+      ...(clarifier.skip_if_any_of ?? []),
+    ];
+    for (const phrase of phrases) {
+      if (phrase !== phrase.toLowerCase().trim()) {
+        problems.push(`${where}: phrase "${phrase}" must be lowercase and trimmed to match normalized text`);
+      }
+    }
+    // Fewer than two options is not a question, it is an answer with extra steps.
+    if (!Array.isArray(clarifier.options) || clarifier.options.length < 2) {
+      problems.push(`${where}: needs at least 2 options`);
+    }
+    for (const option of clarifier.options ?? []) {
+      for (const field of ["label_en", "label_fil"]) {
+        if (!option[field]?.trim()) problems.push(`${where}: option for ${option.entry_id} has an empty ${field}`);
+      }
+      checkTarget(where, option.entry_id);
+    }
   }
 
   if (problems.length > 0) {

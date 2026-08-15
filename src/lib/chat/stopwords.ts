@@ -22,3 +22,10 @@ export function filterStopwords(tokens: string[]): string[] {
   const filtered = tokens.filter((token) => !STOPWORDS.has(token));
   return filtered.length > 0 ? filtered : tokens;
 }
+
+// filterStopwords deliberately falls back to the unfiltered list when a
+// question is nothing but function words, which makes it unusable for
+// *counting* content words. Follow-up detection needs the true count.
+export function isStopword(token: string): boolean {
+  return STOPWORDS.has(token);
+}

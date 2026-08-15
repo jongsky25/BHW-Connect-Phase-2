@@ -23,6 +23,7 @@ describe("getFeatureFlags", () => {
         { key: "flipcharts", enabled: true },
         { key: "offline_pwa", enabled: true },
         { key: "notifications", enabled: true },
+        { key: "chat_conversation", enabled: true },
       ]),
     );
     expect(flags).toEqual({
@@ -35,10 +36,11 @@ describe("getFeatureFlags", () => {
       flipcharts: true,
       offline_pwa: true,
       notifications: true,
+      chat_conversation: true,
     });
   });
 
-  it("defaults kb_articles/reports_export to enabled and announcements/surveys/elearning/forum/flipcharts/offline_pwa/notifications to disabled when the table is empty or unreachable", async () => {
+  it("defaults kb_articles/reports_export to enabled and announcements/surveys/elearning/forum/flipcharts/offline_pwa/notifications/chat_conversation to disabled when the table is empty or unreachable", async () => {
     const expected = {
       kb_articles: true,
       reports_export: true,
@@ -49,6 +51,7 @@ describe("getFeatureFlags", () => {
       flipcharts: false,
       offline_pwa: false,
       notifications: false,
+      chat_conversation: false,
     };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
     expect(await getFeatureFlags(stubClient(null))).toEqual(expected);
@@ -66,6 +69,7 @@ describe("getFeatureFlags", () => {
       flipcharts: false,
       offline_pwa: false,
       notifications: false,
+      chat_conversation: false,
     });
   });
 });

@@ -30,11 +30,22 @@ type ContentEntry = {
 
 const modules = [module1, module2, module3, module4, module5, module6];
 
+// `id` is deliberately a synthetic uuid, NOT the content id, because that is
+// what the corpus looks like once it is in Postgres — kb_entries.id is
+// generated per project. An earlier version of this file used the content id
+// as `id`, which made the conversation layer's rule lookups pass in tests and
+// silently miss every time in production (INC-17b). Keeping the two distinct
+// here is the regression guard: any code that keys rules off `id` now fails.
+function syntheticUuid(index: number): string {
+  return `00000000-0000-4000-8000-${String(index).padStart(12, "0")}`;
+}
+
 export const ncdKbEntries: ChatEntryCandidate[] = modules
   .flatMap((file) => file.entries as ContentEntry[])
   .filter((entry) => entry.tier === "cited")
-  .map((entry) => ({
-    id: entry.id,
+  .map((entry, index) => ({
+    id: syntheticUuid(index),
+    content_id: entry.id,
     question_en: entry.question_en,
     question_fil: entry.question_fil,
     answer_en: entry.answer_en,
@@ -43,6 +54,11 @@ export const ncdKbEntries: ChatEntryCandidate[] = modules
   }));
 
 export const ncdSynonyms: SynonymRow[] = synonymsFile.synonyms as SynonymRow[];
+
+// Re-exported from the runtime module so the corpus tests score against the
+// exact rules /api/chat loads, the same way ncdKbEntries mirrors the entries
+// the loader publishes.
+export { clarifierRules as ncdClarifiers, redFlagRules as ncdRedFlags } from "./rules";
 
 // 30 English / 30 Filipino / 30 Taglish-Hiligaynon-misspelled, each asserting
 // the specific entry that must win — not merely that something came back.
@@ -171,4 +187,51 @@ export const ncdOutOfScopeFixtures = [
 export const ncdUnrelatedFixtures = [
   { id: "ncd-unrelated-1", question: "How do I renew my driver's license?" },
   { id: "ncd-unrelated-2", question: "Paano magtanim ng palay sa tag-ulan?" },
+];
+
+// Questions describing a client who needs help now. Every one of these was
+// verified to be routed WRONG by score alone before the red-flag layer
+// existed — "mataas ang presyon niya at sumasakit ang dibdib niya" scored
+// 0.749 against m1-hypertension-definition (a definition of hypertension),
+// and "180 ang presyon niya, ano gagawin ko" scored 0.709 against
+// m4-blood-spill (how to clean up spilled blood). Both are above the 0.55
+// answer threshold, so they were returned confidently with no hedge. These
+// fixtures are the regression gate for that class of failure.
+export const ncdRedFlagFixtures = [
+  { id: "ncd-rf-1", question: "mataas ang presyon niya at sumasakit ang dibdib niya", expectedEntryId: "m3-very-high-with-symptoms" },
+  { id: "ncd-rf-2", question: "high blood pressure with chest pain what do I do", expectedEntryId: "m3-very-high-with-symptoms" },
+  { id: "ncd-rf-3", question: "nahihilo at masakit ang ulo, mataas ang presyon", expectedEntryId: "m3-very-high-with-symptoms" },
+  { id: "ncd-rf-4", question: "malabo ang paningin niya at mataas ang bp", expectedEntryId: "m3-very-high-with-symptoms" },
+  { id: "ncd-rf-5", question: "hirap huminga at altapresyon, ano gagawin ko", expectedEntryId: "m3-very-high-with-symptoms" },
+  { id: "ncd-rf-6", question: "the client with hypertension has blurred vision", expectedEntryId: "m3-very-high-with-symptoms" },
+  { id: "ncd-rf-7", question: "nanginginig at pinagpapawisan, mababa ang asukal", expectedEntryId: "m4-hypoglycemia" },
+  { id: "ncd-rf-8", question: "the diabetic client is shaky and sweating", expectedEntryId: "m4-hypoglycemia" },
+  { id: "ncd-rf-9", question: "mataas ang asukal at nagsusuka siya", expectedEntryId: "m4-very-high-glucose" },
+  { id: "ncd-rf-10", question: "blood sugar is high and the client is drowsy", expectedEntryId: "m4-very-high-glucose" },
+  { id: "ncd-rf-11", question: "nawalan ng malay ang kliyente", expectedEntryId: "m1-emergency-not-screening" },
+  { id: "ncd-rf-12", question: "the client is unconscious", expectedEntryId: "m1-emergency-not-screening" },
+  { id: "ncd-rf-13", question: "nangingisay siya ano gagawin ko", expectedEntryId: "m1-emergency-not-screening" },
+  { id: "ncd-rf-14", question: "hindi makapagsalita at ngiwi ang mukha", expectedEntryId: "m1-emergency-not-screening" },
+  { id: "ncd-rf-15", question: "himatay siya habang nag screening kami", expectedEntryId: "m1-emergency-not-screening" },
+];
+
+// Under-specified questions: a topic and an ask for action, but not the one
+// detail that decides which answer is correct. These must return a clarifier
+// rather than a confident guess.
+export const ncdClarifierFixtures = [
+  { id: "ncd-clr-1", question: "mataas ang BP niya, ano gagawin ko?", expectedClarifierId: "clr-bp-high-next-step" },
+  { id: "ncd-clr-2", question: "180 ang presyon niya, ano gagawin ko", expectedClarifierId: "clr-bp-high-next-step" },
+  { id: "ncd-clr-3", question: "his BP is high what do I do", expectedClarifierId: "clr-bp-high-next-step" },
+  { id: "ncd-clr-4", question: "mataas ang asukal niya ano gagawin ko", expectedClarifierId: "clr-glucose-high-next-step" },
+  { id: "ncd-clr-5", question: "the blood sugar is high what should I do", expectedClarifierId: "clr-glucose-high-next-step" },
+];
+
+// A clarifier must not hijack a question that is already specific. These name
+// the same topic but ask something the KB answers directly, so they must
+// route to an ordinary match rather than stopping to ask.
+export const ncdNoClarifierFixtures = [
+  { id: "ncd-noclr-1", question: "Gaano katagal dapat magpahinga bago sukatin ang presyon?" },
+  { id: "ncd-noclr-2", question: "What size BP cuff should I use for a large arm?" },
+  { id: "ncd-noclr-3", question: "Ilang beses ko dapat sukatin ang presyon?" },
+  { id: "ncd-noclr-4", question: "Which finger should I prick?" },
 ];

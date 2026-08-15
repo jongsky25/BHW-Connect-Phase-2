@@ -31,6 +31,11 @@ the admin is already the approver. All of these were built ahead of the
 pilot launch gate, at the maintainer's direction, each on an independent
 branch; INC-14 ships behind the `flipcharts` feature flag (default off) so
 the pilot project is unaffected until it's explicitly turned on.
+INC-17 made the Chat Guide conversational without adding a model: authored
+red-flag rules that intercept a symptomatic client before scoring runs,
+clarifying follow-up questions when the decisive detail is missing, and
+follow-up context carry across turns — all behind the `chat_conversation`
+flag (default off).
 Next up: further later-phase modules (§7), and, independently, the pilot
 launch gate itself (KB content review, real user provisioning, DoD
 re-verification, KPI baseline).
