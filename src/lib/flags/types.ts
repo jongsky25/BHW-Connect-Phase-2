@@ -9,7 +9,8 @@ export type FeatureFlagKey =
   | "offline_pwa"
   | "notifications"
   | "chat_conversation"
-  | "ai_external";
+  | "ai_external"
+  | "ai_gap_draft";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 

@@ -68,6 +68,7 @@ export async function callProvider(
       apiKey: deps.apiKey,
       prompt,
       signal: controller.signal,
+      jsonSchema: payload.jsonSchema,
     });
   } catch (error) {
     const aborted = error instanceof Error && error.name === "AbortError";

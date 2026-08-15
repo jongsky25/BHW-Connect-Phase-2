@@ -203,7 +203,15 @@
         "staleContentCount": "Nailathalang entry na lagpas na sa review-due",
         "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
         "gapNotFoundError": "Hindi nahanap ang tanong na ito.",
-        "genericError": "May naganap na problema. Subukan muli."
+        "genericError": "May naganap na problema. Subukan muli.",
+        "aiDraftAction": "I-draft gamit ang AI",
+        "clearanceLabel": "Tanong na ipapadala",
+        "clearanceHint": "I-edit ito bago ipadala. Alisin ang pangalan, tirahan, numero ng telepono at anumang makakapagpakilala sa isang tao — ang teksto lang sa ibaba ang lalabas ng sistema.",
+        "aiSendAction": "Ipadala at i-draft",
+        "aiDrafting": "Ginagawa ang draft…",
+        "cancelAction": "Kanselahin",
+        "aiUnavailable": "Hindi available ngayon ang panlabas na AI. Maaari mo pa ring gawin nang manu-mano ang entry.",
+        "aiDraftFailed": "Hindi nagawa ang draft. Subukan muli, o gawin nang manu-mano ang entry."
       },
       "reports": {
         "heading": "Mga Ulat",
@@ -244,6 +252,14 @@
         "usedThisWeek": "{used} / {ceiling} ngayong linggo",
         "paused": "Nakahinto — naabot na ang limitasyon. Babalik sa rule-based na baseline ang mga tampok.",
         "noKey": "Walang nakatakdang API key — hindi available ang panlabas na AI at walang ipinapadala."
+      },
+      "aiFlywheel": {
+        "heading": "Umiikot na AI patungong KB",
+        "intro": "Bawat AI draft na inilalathala ng admin ay nagiging permanenteng KB entry, kaya masasagot ang parehong tanong sa susunod nang walang tawag sa AI. Kung tumataas ang mga nailathala habang pantay lang ang mga tawag, sumasara ang ikot.",
+        "draftsCreated": "Mga AI draft na nagawa",
+        "draftsPublished": "Mga AI draft na nailathala",
+        "awaitingReview": "Naghihintay ng pagsusuri",
+        "callsSpent": "Mga tawag sa AI na nagamit"
       }
     },
     "users": {
@@ -371,7 +387,13 @@
       "articleNotFoundError": "Hindi nahanap ang artikulo.",
       "noEntriesSelectedError": "Pumili muna ng kahit isang entry.",
       "bulkOwnerRequiredError": "Pumili ng may-ari na itatalaga sa mga napiling entry.",
-      "genericError": "May naganap na problema. Subukan muli."
+      "genericError": "May naganap na problema. Subukan muli.",
+      "aiDraftBanner": "AI draft — kailangang suriin bago ilathala.",
+      "aiDraftBannerDetail": "Ginawa ang entry na ito ng panlabas na AI mula sa isang na-clear na tanong. Suriin ang bawat impormasyon, bawat numero, at kung nananatili ito sa saklaw ng gawain ng BHW.",
+      "aiDraftConfirmLabel": "Nabasa ko nang buo ang draft na ito at kinukumpirma kong tama ito at nasa saklaw ng gawain ng BHW.",
+      "aiDraftConfirmed": "Nasuri at nakumpirma na ang draft na ito.",
+      "aiDraftUnreviewedError": "Ginawa ng AI ang entry na ito kaya kailangan itong suriin at kumpirmahin bago mailathala.",
+      "notAiDraftError": "Hindi ginawa ng AI ang entry na ito kaya wala itong dapat kumpirmahin."
     },
     "kbArticles": {
       "heading": "Mga Artikulo",

@@ -5,6 +5,8 @@ export type KbErrorKey =
   | "articleNotFoundError"
   | "noEntriesSelectedError"
   | "bulkOwnerRequiredError"
+  | "aiDraftUnreviewedError"
+  | "notAiDraftError"
   | "genericError";
 
 // rpc_kb_* functions raise plain Postgres exceptions (same convention as
@@ -16,6 +18,8 @@ export function mapKbRpcError(message: string | undefined): KbErrorKey {
   if (message.includes("no entries selected")) return "noEntriesSelectedError";
   if (message.includes("bulk: an owner is required")) return "bulkOwnerRequiredError";
   if (message.includes("owner is required")) return "ownerRequiredError";
+  if (message.includes("ai draft must be reviewed")) return "aiDraftUnreviewedError";
+  if (message.includes("entry is not an ai draft")) return "notAiDraftError";
   if (message.includes("entry not found")) return "entryNotFoundError";
   if (message.includes("article not found")) return "articleNotFoundError";
   return "genericError";

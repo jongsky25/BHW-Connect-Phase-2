@@ -21,11 +21,19 @@ type GeminiResponse = {
  *
  * Throws on transport failure; the adapter converts that to a value.
  */
-export const geminiTransport: ProviderTransport = async ({ apiKey, prompt, signal }) => {
+export const geminiTransport: ProviderTransport = async ({ apiKey, prompt, signal, jsonSchema }) => {
   const response = await fetch(`${GEMINI_ENDPOINT}?key=${encodeURIComponent(apiKey)}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      // Gemini enforces the shape server-side when a schema is supplied, which
+      // is why the caller gets to skip prose-scraping entirely. Omitted
+      // entirely when absent so free-text callers are unaffected.
+      ...(jsonSchema
+        ? { generationConfig: { responseMimeType: "application/json", responseSchema: jsonSchema } }
+        : {}),
+    }),
     signal,
   });
 

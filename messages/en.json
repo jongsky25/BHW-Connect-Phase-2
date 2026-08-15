@@ -203,7 +203,15 @@
         "staleContentCount": "Published entries past review-due",
         "notAuthorizedError": "You're not authorized to do that.",
         "gapNotFoundError": "That question wasn't found.",
-        "genericError": "Something went wrong. Please try again."
+        "genericError": "Something went wrong. Please try again.",
+        "aiDraftAction": "Draft with AI",
+        "clearanceLabel": "Question to send",
+        "clearanceHint": "Edit this before sending. Remove names, addresses, phone numbers and anything else that could identify a person — only the text below leaves the system.",
+        "aiSendAction": "Send and draft",
+        "aiDrafting": "Drafting…",
+        "cancelAction": "Cancel",
+        "aiUnavailable": "External AI is unavailable right now. You can still create the entry by hand.",
+        "aiDraftFailed": "The draft could not be produced. Please try again, or create the entry by hand."
       },
       "reports": {
         "heading": "Reports",
@@ -244,6 +252,14 @@
         "usedThisWeek": "{used} / {ceiling} this week",
         "paused": "Paused — ceiling reached. Features fall back to their rule-based baseline.",
         "noKey": "No API key configured — external AI is unavailable and nothing is sent."
+      },
+      "aiFlywheel": {
+        "heading": "AI-to-KB flywheel",
+        "intro": "Every AI draft an admin publishes becomes a permanent KB entry, so the same question is answered without an AI call next time. If published entries keep rising while calls flatten, the loop is closing.",
+        "draftsCreated": "AI drafts created",
+        "draftsPublished": "AI drafts published",
+        "awaitingReview": "Awaiting review",
+        "callsSpent": "AI calls spent"
       }
     },
     "users": {
@@ -371,7 +387,13 @@
       "articleNotFoundError": "That article wasn't found.",
       "noEntriesSelectedError": "Select at least one entry first.",
       "bulkOwnerRequiredError": "Choose an owner to assign to the selected entries.",
-      "genericError": "Something went wrong. Please try again."
+      "genericError": "Something went wrong. Please try again.",
+      "aiDraftBanner": "AI draft — review required before publishing.",
+      "aiDraftBannerDetail": "This entry was drafted by an external AI service from a cleared gap question. Check every fact, every number, and that it stays within BHW scope of practice.",
+      "aiDraftConfirmLabel": "I have read this draft in full and confirm it is accurate and within BHW scope of practice.",
+      "aiDraftConfirmed": "This draft has already been reviewed and confirmed.",
+      "aiDraftUnreviewedError": "This entry was drafted by AI and must be reviewed and confirmed before it can be published.",
+      "notAiDraftError": "This entry was not drafted by AI, so there is nothing to confirm."
     },
     "kbArticles": {
       "heading": "Articles",
