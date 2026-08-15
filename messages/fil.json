@@ -20,7 +20,8 @@
   },
   "privacy": {
     "heading": "Patakaran sa Privacy",
-    "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment."
+    "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment.",
+    "aiClause": "Hindi kailanman ibinabahagi sa panlabas na AI ang personal na impormasyon at ang tekstong isinulat ng mga BHW. Tanging nilalamang isinulat o sadyang sinuri at pinayagan ng administrador ang pinoproseso ng panlabas na AI."
   },
   "offline": {
     "heading": "Offline ka",
@@ -235,6 +236,14 @@
           "activityAvgSessions": "Average na sesyon / BHW",
           "activityTotalQuestions": "Kabuuang tanong na itinanong"
         }
+      },
+      "ai": {
+        "heading": "Paggamit ng panlabas na AI",
+        "intro": "Paggamit kumpara sa takdang limitasyon, nakatakda sa 80% ng nakalathalang libreng limitasyon ng bawat provider. Hindi kailanman ipinapadala sa panlabas na AI ang personal na impormasyon at ang tekstong isinulat ng BHW.",
+        "usedOfCeiling": "{used} / {ceiling} ngayong araw",
+        "usedThisWeek": "{used} / {ceiling} ngayong linggo",
+        "paused": "Nakahinto — naabot na ang limitasyon. Babalik sa rule-based na baseline ang mga tampok.",
+        "noKey": "Walang nakatakdang API key — hindi available ang panlabas na AI at walang ipinapadala."
       }
     },
     "users": {

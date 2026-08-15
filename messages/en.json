@@ -20,7 +20,8 @@
   },
   "privacy": {
     "heading": "Privacy Notice",
-    "body": "The full Data Privacy Act notice ships with the consent flow in a later increment."
+    "body": "The full Data Privacy Act notice ships with the consent flow in a later increment.",
+    "aiClause": "Personal information and text typed by BHWs are never shared with external AI services. External AI processes only content that an administrator has authored or explicitly reviewed and cleared."
   },
   "offline": {
     "heading": "You're offline",
@@ -235,6 +236,14 @@
           "activityAvgSessions": "Avg sessions / BHW",
           "activityTotalQuestions": "Total questions asked"
         }
+      },
+      "ai": {
+        "heading": "External AI usage",
+        "intro": "Usage against the configured ceiling, set at 80% of each provider's published free limit. Personal information and BHW-typed text are never sent to an external AI service.",
+        "usedOfCeiling": "{used} / {ceiling} today",
+        "usedThisWeek": "{used} / {ceiling} this week",
+        "paused": "Paused — ceiling reached. Features fall back to their rule-based baseline.",
+        "noKey": "No API key configured — external AI is unavailable and nothing is sent."
       }
     },
     "users": {
