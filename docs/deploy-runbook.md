@@ -39,6 +39,7 @@ project settings (for the running app) and GitHub Actions repo secrets
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
 | `SUPABASE_DB_URL` | not needed | required for `backup.yml` |
 | `SUPABASE_SERVICE_ROLE_KEY` | not needed (never expose to the app) | required for `retention-purge.yml` |
+| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | not needed (unit tests stub the transport; no CI step calls a provider) |
 
 ## CI test project
 

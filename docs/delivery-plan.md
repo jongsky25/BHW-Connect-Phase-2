@@ -98,7 +98,7 @@ Account lifecycle (closes G12): deactivation is a status change, never a row del
 - Breach playbook documented in INC-9 (NPC notification within 72 h per DPA IRR).
 
 ### 5.5 i18n
-- UI strings in per-locale catalogs (`fil.json` / `en.json`) via `next-intl` (or equivalent); no hard-coded user-facing strings — enforced by lint rule.
+- UI strings in per-locale catalogs (`fil.json` / `en.json`) via `next-intl` (or equivalent); no hard-coded user-facing strings. **Correction (INC-18a):** this line has claimed "enforced by lint rule" since the plan was written, but no such rule exists and none ever did — `eslint.config.mjs` had no `rules` block at all until INC-18a added the AI provider-host rules. The convention is real and followed; the enforcement is not. Writing the i18n rule remains open.
 - Content (KB entries/articles) is bilingual at the field level (`*_fil` / `*_en`); the UI shows the user's language and falls back to the other with a "translation pending" tag.
 - Language toggle persists to the user profile.
 
@@ -169,6 +169,8 @@ Each increment is one focused build session: scoped, testable, and independently
 
 Remaining later phases: Profiling-system live integration, still blocked on real technical access to the external system (requirements-and-vision.md §7, item 1); INC-2's manual-entry fallback remains the shipped Phase 1 path until that access arrives.
 
+**INC-18a — AI budget guard, provider adapter and the data-classification gate.** `free-ai-leverage-plan.md` §2 specifies this module in full and INC-4 never built it, so every AI feature in the plan has been blocked on scaffolding that did not exist. This increment builds the scaffolding and nothing that uses it: an `ai_usage` table with per-provider ceilings at 80% of the published free limit (Gemini: 1,200/day), a circuit breaker that writes one `ai.provider_paused` event on the transition rather than one per rejected call, `rpc_ai_check_budget`/`rpc_ai_record_call`/`rpc_ai_usage_summary`, a redaction pass, an admin AI-status panel, and the privacy-notice clause §2 requires. The centrepiece is `src/lib/ai/adapter.ts`: the classification gate runs **before** the flag, the key and the budget, so a `user_generated` or `personal` payload throws even when AI is switched off and no provider is configured — the guarantee holds in every state of the system rather than only when AI is on. Transport is dependency-injected, which is what lets the CI test assert the transport was called **zero times** for a rejected classification; that is the actual DPA guarantee, and stronger than asserting a thrown error. Two ESLint rules — **the first project-authored lint rules in this repo** — ban provider hostnames outside `src/lib/ai/providers/` and make the transport modules unimportable from feature code, closing both routes around the gate. Ships behind `ai_external` (default `false`); the plan's dotted flag names (`ai.gap_summary`) become snake_case here because every existing flag is snake_case and `FeatureFlagKey` is a TS union. **DoD**: one test per classification, asserting zero transport calls for the two rejected ones; unconfigured/flag-off/over-ceiling all return values and never throw; a deliberate provider-host reference fails `npm run lint`; `ai.external_call` is visible in `/admin/audit`. Scope trimmed (documented, not dropped): no feature spends the quota yet — the flywheel is INC-18b; no response cache (an optimisation, and nothing calls out yet); Gemini only, the waterfall to Groq/OpenRouter is config not surgery; Mode 2 (AI answering a BHW directly) remains INC-19, gated on DOH sign-off per `concept-notes/bhw-connect-phase2-concept-note-who.md`.
+
 ### 7.1 Deferred — closing the last developer dependencies in content authoring
 
 The platform's defining goal is that BLHSD can add knowledge base content and
@@ -216,7 +218,7 @@ the build matures — recorded here rather than actioned now.
 
 ## 8. Pilot Success Metrics
 
-Event taxonomy (fixed, versioned): `session.started`, `chat.question_asked`, `chat.answer_shown`, `chat.no_answer`, `chat.feedback_given`, `kb.article_viewed`, `onboarding.completed`, `settings.changed`, `gap.resolved`, and from INC-17 `chat.clarify_shown`, `chat.clarify_answered`, `chat.red_flag_shown`. Note that `rpc_track_event` allowlists these names and raises on anything else, so a new event must be added to the function *and* to this list or it is silently dropped.
+Event taxonomy (fixed, versioned): `session.started`, `chat.question_asked`, `chat.answer_shown`, `chat.no_answer`, `chat.feedback_given`, `kb.article_viewed`, `onboarding.completed`, `settings.changed`, `gap.resolved`, and from INC-17 `chat.clarify_shown`, `chat.clarify_answered`, `chat.red_flag_shown`. INC-18a adds two *audit* events (a separate stream from these analytics events): `ai.external_call` and `ai.provider_paused`, both written with `subject_id = null` so they short-circuit `audit_events_admin_read`'s null branch rather than needing a new case in `audit_event_visible_to_admin` — see the note in §5.6. Note that `rpc_track_event` allowlists these names and raises on anything else, so a new event must be added to the function *and* to this list or it is silently dropped.
 
 | Metric | Definition | Pilot target (first 60 days) |
 |---|---|---|

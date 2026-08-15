@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { EmptyState } from "@/components/empty-state";
+import { AiStatusPanel } from "@/components/admin/dashboard/ai-status-panel";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
 import type { DashboardActivitySummary, DashboardBhwRow } from "@/lib/dashboard/types";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
@@ -33,6 +34,8 @@ export default async function AdminDashboardActivityPage({
         <StatCard label={t("cardAvgSessions")} value={summary?.avg_sessions_per_bhw ?? 0} />
         <StatCard label={t("cardTotalQuestions")} value={summary?.total_questions_asked ?? 0} />
       </div>
+
+      <AiStatusPanel />
 
       <div className="flex flex-col gap-3">
         <h2 className="text-lg font-semibold tracking-tight text-ink">{t("tableHeading")}</h2>

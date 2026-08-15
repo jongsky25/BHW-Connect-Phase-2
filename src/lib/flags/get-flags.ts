@@ -20,6 +20,7 @@ const DEFAULT_FLAGS: FeatureFlags = {
   offline_pwa: false,
   notifications: false,
   chat_conversation: false,
+  ai_external: false,
 };
 
 export async function getFeatureFlags(supabase: SupabaseClient): Promise<FeatureFlags> {
