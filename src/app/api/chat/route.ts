@@ -73,18 +73,32 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // content_id is only selected when the conversation layer is on, because it
+  // is the one column this increment adds that the query depends on. Asking
+  // PostgREST for an unknown column is a hard error, so an unconditional
+  // select would turn "migration not yet applied to this project" into a 500
+  // on every chat request — breaking the Chat Guide on a deploy that was
+  // supposed to be a no-op. Gating it here means flag-off requires no new
+  // schema at all, which is what makes the flag a genuine rollback.
+  const entryColumns = conversational
+    ? "id, content_id, question_fil, question_en, answer_fil, answer_en, keywords"
+    : "id, question_fil, question_en, answer_fil, answer_en, keywords";
+
   const [{ data: entries, error: entriesError }, { data: synonyms, error: synonymsError }] =
     await Promise.all([
-      supabase
-        .from("kb_entries")
-        .select("id, content_id, question_fil, question_en, answer_fil, answer_en, keywords")
-        .eq("status", "published"),
+      supabase.from("kb_entries").select(entryColumns).eq("status", "published"),
       supabase.from("synonyms").select("term, maps_to, language"),
     ]);
 
   if (entriesError || synonymsError) {
     return NextResponse.json({ error: "failed to load knowledge base" }, { status: 500 });
   }
+
+  // Normalised here rather than at every use site, so a row loaded without the
+  // column still satisfies ChatEntryCandidate.
+  const candidates: ChatEntryCandidate[] = ((entries ?? []) as unknown as ChatEntryCandidate[]).map(
+    (entry) => ({ ...entry, content_id: entry.content_id ?? null }),
+  );
 
   const requestedSessionId = requestSessionId(body);
   const context = conversational ? await loadContext(supabase, requestedSessionId) : null;
@@ -93,13 +107,13 @@ export async function POST(request: NextRequest) {
   const result: ConversationResult = conversational
     ? resolveTurn(
         { question: askedText, selection: selection ?? undefined, context },
-        (entries ?? []) as ChatEntryCandidate[],
+        candidates,
         (synonyms ?? []) as SynonymRow[],
         redFlagRules,
         clarifierRules,
       )
     : asConversationResult(
-        matchQuestion(askedText, (entries ?? []) as ChatEntryCandidate[], (synonyms ?? []) as SynonymRow[]),
+        matchQuestion(askedText, candidates, (synonyms ?? []) as SynonymRow[]),
         askedText,
       );
 
