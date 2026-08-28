@@ -25,6 +25,24 @@
   PHP 14.98M => PHP 629/BHW, falling to PHP 50/BHW against the national base. If any of these
   move, they all move together: G3, the scope slide, the concept note and pitch/README.md.
 
+  FUNDING TIERS (scope slide). PHP 14.98M is the full bottom-up value and does not move. What
+  moves is the funding mix, presented as three tiers of the SAME scope:
+    T1  PHP 14.98M cash            — WHO finances the whole envelope
+    T2  PHP 5.98M cash (~6.0M)     — engineering 2.46 + infrastructure 1.40 + content authoring
+                                     0.90 + instructional design/QA 0.78 + contingency 0.44;
+                                     the other 9.00 (rollout 2.80, M&E 1.40, equipment 1.20,
+                                     video 1.15, PM 0.78, clinical validation 0.60, governance
+                                     0.40, contingency 0.67) absorbed as direct support
+    T3  no new instrument          — delivered inside existing HHP+ support, longer runway
+  5.98 + 9.00 = 14.98 exactly, and the two contingency halves sum to the original 1.11. The T2
+  split is labelled an ESTIMATE on-slide and in the note because which lines direct support can
+  absorb is a negotiation, not a finding. Never present PHP 6.0M as a cheaper scope.
+
+  IMPACT SLIDE. Population figure is ~114M (PSA projections, 2024) — the whole country, because
+  every Filipino lives in a barangay. 42,000+ barangays; 300,000 / 114M => ~1 BHW per 380, which
+  is a coverage denominator and NOT a caseload. The clinical-workforce comparator is deliberately
+  a [TO CONFIRM] chip rather than a guessed headcount.
+
   CONTENT SAFETY: the HHP+ health specifics shown are procedural and are drawn from the
   BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 Jul 2026).
   No PhilPEN numeric clinical thresholds are asserted anywhere — that source contains none.
@@ -433,7 +451,7 @@
   .ladder-v{display:flex;flex-direction:column;gap:.5rem;margin-top:.6rem}
   .rung-v{display:grid;grid-template-columns:1fr auto auto;gap:.9rem;align-items:center;
     background:rgba(255,255,255,.72);border:1px solid rgba(36,28,23,.09);border-left:3px solid rgba(36,28,23,.18);
-    border-radius:9px;padding:.62rem .85rem}
+    border-radius:9px;padding:.5rem .85rem}
   .rung-v.mid{border-left-color:var(--sampaguita)}
   .rung-v.top{border-left-color:var(--verdant);background:rgba(255,255,255,.9)}
   .rung-v .who{font-size:clamp(.8rem,1.04vw,.92rem);line-height:1.3;color:var(--ink-soft)}
@@ -663,21 +681,220 @@
 
   #confetti{position:fixed;inset:0;pointer-events:none;z-index:3}
 
+  /* ================================================================
+     WIDE-SCREEN FIT — TV, monitor, PC, laptop
+     fit() scales .slide__inner uniformly, so a slide fills a 16:9 frame
+     only when its own content box is already near 16:9 (height ≈ 0.53 ×
+     width). Anything much shorter is width-limited and leaves a dead
+     band beneath it; anything much taller is height-limited and gets
+     scaled DOWN. Measured on the previous layout at 1920×1080: the
+     stance slide painted a 358px column down the middle of the frame
+     (15% of it), the title left its right third empty, the engine slide
+     left a 200px void under the ladder, and the proof slide was tall
+     enough that fit() shrank it to 0.87 on a 1440 monitor and clipped it
+     on a 1512. The rules below reshape those five slides toward the
+     target ratio. They all collapse to a single column at ≤900px, which
+     is above the 760px breakpoint where fit() switches off for scroll.
+     ================================================================ */
+
+  /* — 01 · title: statement and addressees side by side, so the second
+       half of the frame carries the partners instead of nothing. — */
+  /* minmax(0,…) because the h1 sets a wide min-content floor; without it the
+     title track refuses to shrink and the addressee column gets crushed. */
+  .title-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.8rem,4.6vw,4.2rem);align-items:stretch}
+  .title-split h1{font-size:clamp(3rem,7.8vw,7rem)}
+  .title-split .title-sub{max-width:none}
+  .title-to{border-left:1px solid var(--line-dark);padding-left:clamp(1.5rem,3.2vw,2.8rem);
+    display:flex;flex-direction:column;justify-content:center;gap:clamp(.9rem,2.2vh,1.4rem)}
+  .partners-col{display:flex;flex-direction:column;gap:clamp(.85rem,2.1vh,1.35rem)}
+  .title-to .partner{max-width:34ch}
+  .title-to .src{margin-top:.2rem}
+
+  /* — 02 · proof: the serif numeral was taking the whole grid track and
+       squeezing the prose into a four-line ribbon, which made the slide
+       tall enough to be scaled down. Cap the numeral, give the prose a
+       real measure, and the block lands near the target ratio. — */
+  .stat__body{max-width:none}
+  /* The numeral sits in an `auto` track, so its own font-size decides how much
+     room the prose gets. Uncapped it took two-thirds of the row. */
+  .slide.wide .stat__num{font-size:clamp(3.6rem,8.4vw,6.6rem)}
+  .stat-2col{display:grid;grid-template-columns:1.24fr .76fr;gap:clamp(1.2rem,3vw,2.4rem);align-items:start}
+  .stat-2col .lead{max-width:none}
+  .stat-2col .pull{margin-top:0}
+
+  /* — 06 · stance: the quote and its gloss share the frame. Previously
+       .stance capped the whole block at 26ch, which also clamped the
+       lead's own 52ch measure — one narrow column, full height. — */
+  .stance-2{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(1.8rem,5vw,4.4rem);align-items:center;text-align:left}
+  .stance-2 q{font-size:clamp(2.3rem,6vw,5.4rem);max-width:10ch}
+  .stance-2 .stance-gloss{border-left:1px solid var(--line-dark);padding-left:clamp(1.5rem,3.4vw,3rem);
+    display:flex;flex-direction:column;gap:clamp(.9rem,2.4vh,1.5rem)}
+  .stance-2 .stance-gloss .lead{max-width:34ch;margin:0;font-size:clamp(1.12rem,2vw,1.72rem)}
+  .stance-2 .stance-rule{font-size:clamp(.72rem,1.05vw,.86rem);font-weight:700;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--sampaguita)}
+  /* The three tests the quote is asserting, spelled out — and the row that
+     stops a two-element statement slide from floating in a 16:9 frame. */
+  .stance-band{grid-column:1 / -1;margin-top:clamp(1.2rem,3vh,2.2rem);padding-top:clamp(1rem,2.4vh,1.6rem);
+    border-top:1px solid var(--line-dark);display:flex;flex-wrap:wrap;gap:.7rem clamp(1.4rem,4vw,3.6rem)}
+  .stance-band span{font-size:clamp(1rem,1.8vw,1.58rem);font-weight:700;letter-spacing:-.01em;color:var(--cream)}
+  .stance-band span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;
+    background:var(--sampaguita);margin-right:.65rem;vertical-align:middle}
+
+  /* — 08 · engine: the closing line was capped at 42ch, so it wrapped in
+       the left half and left the right half and 200px of floor empty.
+       Promote it to a full-width band with a rule above it. — */
+  .rollup{margin-top:clamp(1.5rem,3.6vh,2.6rem);padding-top:clamp(1.1rem,2.6vh,1.8rem);
+    border-top:1px solid var(--line-light);display:grid;grid-template-columns:1fr auto;
+    gap:clamp(1rem,3vw,2.6rem);align-items:center}
+  .rollup p{font-size:clamp(1.05rem,1.6vw,1.42rem);line-height:1.4;max-width:44ch}
+  .rollup .rollup-k{text-align:right;font-family:var(--serif);font-style:italic;
+    font-size:clamp(1rem,1.5vw,1.32rem);line-height:1.35;color:var(--ink-soft);max-width:26ch}
+  .dark .rollup,.darker .rollup{border-top-color:var(--line-dark)}
+  .loop .node{min-height:clamp(7rem,16.5vh,11.2rem)}
+
+  /* — 21 · close: headline and lead were both capped narrow above a
+       full-width footer, which is the title slide's old problem again. — */
+  .close-2{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.6rem,4.4vw,3.8rem);align-items:center}
+  .close .close-2 h2{max-width:15ch;margin-bottom:1rem}
+  .close-2 .lead{max-width:34ch}
+  .close-aside{border-left:1px solid var(--line-dark);padding-left:clamp(1.4rem,3.2vw,2.6rem);
+    display:flex;flex-direction:column;gap:clamp(.8rem,2vh,1.2rem)}
+  .close .close-aside .invite{margin-top:0;padding-top:0;border-top:0;font-size:clamp(1.02rem,1.5vw,1.3rem)}
+  .close .close-aside .invite-partners{margin-top:.3rem;padding-top:.9rem;border-top:1px solid var(--line-dark);flex-direction:column;gap:.3rem}
+  .close-facts{display:flex;flex-direction:column;gap:.6rem}
+  .close-facts li{list-style:none;position:relative;padding-left:1.15rem;
+    font-size:clamp(.88rem,1.18vw,1.02rem);line-height:1.42;color:var(--cream-soft)}
+  .close-facts li::before{content:"";position:absolute;left:0;top:.58em;width:6px;height:6px;
+    border-radius:50%;background:var(--marigold)}
+  .close-facts li b{color:var(--cream);font-weight:700}
+
+  /* ---------- funding tiers (19) ---------- */
+  /* Three rungs, not three prices for three products: the same Year-1
+     scope at three funding mixes. The number that moves is the cash
+     instrument, never the scope — hence the identical scope line on all
+     three, and the deliberate ₱0 on the third. */
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.6rem,1.4vw,1rem);margin-top:clamp(.85rem,1.9vh,1.3rem)}
+  .tier{border:1px solid var(--line-light);border-radius:12px;padding:clamp(.75rem,1.5vw,1rem);
+    background:rgba(255,255,255,.55);display:flex;flex-direction:column;gap:.42rem;border-top:3px solid rgba(36,28,23,.2)}
+  .tier.t2{border-top-color:var(--verdant);background:rgba(255,255,255,.9);box-shadow:0 14px 34px -22px rgba(36,28,23,.5)}
+  .tier.t3{border-top-color:var(--sampaguita)}
+  .tier .lbl{font-size:.64rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+  .tier.t2 .lbl{color:var(--verdant)}
+  .tier .amt2{font-family:var(--serif);font-size:clamp(1.6rem,3.1vw,2.5rem);font-weight:700;
+    letter-spacing:-.02em;line-height:1;color:var(--ink)}
+  /* Tier 3's "amount" is a sentence, not a figure — matching the numerals'
+     size would make it shout louder than the two real prices. */
+  .tier.t3 .amt2{font-size:clamp(1.15rem,2vw,1.6rem);line-height:1.1}
+  .tier.t2 .amt2{color:var(--verdant)}
+  .tier .amt2 small{display:block;font-family:var(--sans);font-size:.6rem;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:.35rem}
+  .tier p{font-size:clamp(.82rem,1.06vw,.94rem);line-height:1.4;color:var(--ink-soft)}
+  .tier .same{margin-top:auto;padding-top:.55rem;border-top:1px solid var(--line-light);
+    font-size:.74rem;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+  .tier .same::before{content:"= ";color:var(--verdant);font-weight:900}
+  /* Two independent stacks, not one interleaved grid: a single grid with
+     two tracks fills row-wise, which would deal the cash lines and the
+     absorbed lines alternately into the wrong columns. */
+  .splitcost{display:grid;grid-template-columns:1fr 1fr;gap:.4rem clamp(.9rem,2.2vw,1.8rem);margin-top:.55rem}
+  .scol{display:flex;flex-direction:column}
+  .sc{display:grid;grid-template-columns:1fr auto;gap:.6rem;align-items:baseline;
+    font-size:clamp(.76rem,1vw,.87rem);line-height:1.35;padding:.22rem 0;
+    border-bottom:1px dotted rgba(36,28,23,.16);color:var(--ink-soft)}
+  .sc b{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink)}
+  .sc.hd{border-bottom:1px solid var(--line-light);font-weight:800;letter-spacing:.1em;
+    text-transform:uppercase;font-size:.66rem;color:var(--ink-soft)}
+  .sc.sum{border-bottom:0;border-top:1px solid var(--line-light);margin-top:.15rem;
+    padding-top:.4rem;font-weight:800;color:var(--ink)}
+  .scol.keep .sc.sum b{color:var(--verdant)}
+  .scol.drop .sc.sum b{color:var(--marigold-deep)}
+
+  /* ---------- status quo (22) ---------- */
+  /* Three bands, read left to right: what stops, what it already cost,
+     what it costs again. Problem register — the ember rule and the OPEN
+     vocabulary are the same ones slide 05 uses, so this reads as the
+     same defect register reopened, not a new complaint. */
+  .sq{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.7rem,1.6vw,1.15rem);margin-top:clamp(1rem,2.2vh,1.5rem)}
+  .sqcol{border-left:3px solid var(--ember);background:rgba(255,255,255,.035);
+    border-top:1px solid rgba(247,241,232,.10);border-right:1px solid rgba(247,241,232,.10);
+    border-bottom:1px solid rgba(247,241,232,.10);border-radius:4px;
+    padding:clamp(.85rem,1.8vw,1.15rem);display:flex;flex-direction:column;gap:.55rem}
+  .sqcol h3{font-size:clamp(.98rem,1.32vw,1.14rem);font-weight:800;letter-spacing:.01em;color:var(--ember)}
+  .sqcol .when{font-size:.62rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(247,241,232,.42)}
+  .sqcol ul{list-style:none;display:flex;flex-direction:column;gap:.46rem}
+  .sqcol li{font-size:clamp(.84rem,1.1vw,.96rem);line-height:1.4;color:rgba(247,241,232,.72);
+    padding-left:1.05rem;position:relative}
+  .sqcol li::before{content:"×";position:absolute;left:0;top:-.04em;color:var(--ember);font-weight:800}
+  .sqcol li b{color:var(--cream);font-weight:700}
+  .sqcol .foot{margin-top:auto;padding-top:.5rem;border-top:1px solid rgba(247,241,232,.10);
+    font-size:.75rem;font-style:italic;line-height:1.4;color:rgba(247,241,232,.5)}
+  .verdict{margin-top:clamp(1.1rem,2.4vh,1.7rem);padding-top:clamp(.8rem,1.8vh,1.2rem);
+    border-top:1px solid var(--cold-line);display:grid;grid-template-columns:1fr auto;
+    gap:clamp(1rem,3vw,2.6rem);align-items:center}
+  .verdict .kicker-line{margin-top:0}
+  .verdict .vnum{text-align:right;font-family:var(--serif);font-weight:700;letter-spacing:-.02em;
+    line-height:.95;font-size:clamp(2rem,4.4vw,3.4rem);color:var(--ember);white-space:nowrap}
+  .verdict .vnum small{display:block;font-family:var(--sans);font-size:.6rem;font-weight:700;
+    letter-spacing:.16em;text-transform:uppercase;color:rgba(247,241,232,.5);margin-top:.45rem;white-space:normal;max-width:22ch;margin-left:auto;line-height:1.35}
+
+  /* ---------- impact (23) ---------- */
+  /* Output → outcome. The chain across the top is the arithmetic; the
+     four cards underneath are why no other cadre can stand in for it. */
+  /* space-between so the four figures spread the full frame instead of
+     bunching against the left edge with a dead third on the right. */
+  .chain{display:grid;grid-template-columns:auto auto auto auto auto auto auto;
+    gap:clamp(.5rem,1.6vw,1.4rem);align-items:center;justify-content:space-between;
+    margin-top:clamp(1rem,2.3vh,1.7rem)}
+  .chain .cn{display:flex;flex-direction:column;gap:.28rem}
+  .chain .cn b{font-family:var(--serif);font-weight:700;letter-spacing:-.02em;line-height:.95;
+    font-size:clamp(1.7rem,4.2vw,3.4rem);color:var(--verdant)}
+  .chain .cn.out b{color:var(--marigold-deep)}
+  .chain .cn span{font-size:clamp(.63rem,.88vw,.75rem);font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-soft);line-height:1.35;max-width:16ch}
+  .chain .cx{font-size:clamp(1.1rem,2vw,1.7rem);font-weight:800;color:var(--verdant);opacity:.55;align-self:start;margin-top:.2rem}
+  .only{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.65rem,1.5vw,1.05rem);margin-top:clamp(1.1rem,2.4vh,1.7rem)}
+  .oncard{background:rgba(255,255,255,.78);border:1px solid rgba(36,28,23,.09);
+    border-top:3px solid var(--verdant);border-radius:10px;padding:clamp(.8rem,1.6vw,1.05rem);
+    display:flex;flex-direction:column;gap:.42rem;box-shadow:0 12px 28px -24px rgba(36,28,23,.45)}
+  .oncard h3{font-size:clamp(.92rem,1.22vw,1.06rem);font-weight:800;color:var(--verdant);line-height:1.22}
+  .oncard p{font-size:clamp(.8rem,1.04vw,.92rem);line-height:1.4;color:var(--ink-soft)}
+  .oncard p b{color:var(--ink);font-weight:700}
+  .oncard .vs{margin-top:auto;padding-top:.45rem;border-top:1px solid rgba(36,28,23,.1);
+    font-size:.73rem;font-style:italic;line-height:1.38;color:var(--ink-soft);opacity:.85}
+
   /* ---------- responsive ---------- */
   @media (max-width:900px){
-    .gaps,.status,.feat{grid-template-columns:1fr 1fr}
+    .gaps,.status,.feat,.only{grid-template-columns:1fr 1fr}
     .ingest{grid-template-columns:1fr}
     .demo2{grid-template-columns:1fr}
     .closes{grid-template-columns:1fr}
     .app-scope .kpis{grid-template-columns:1fr 1fr}
     .app-scope .f2{grid-template-columns:1fr}
+    /* Wide-screen fit layouts fold back to one column; the side rules
+       become top rules so the divider still reads as a divider. */
+    .title-split,.stance-2,.close-2,.stat-2col{grid-template-columns:1fr;gap:1.4rem}
+    .title-to,.stance-2 .stance-gloss,.close-aside{border-left:0;padding-left:0;
+      border-top:1px solid var(--line-dark);padding-top:1.2rem}
+    .tiers,.sq{grid-template-columns:1fr}
+    .rollup,.verdict{grid-template-columns:1fr;gap:.8rem}
+    .rollup .rollup-k,.verdict .vnum{text-align:left}
+    .verdict .vnum small{margin-left:0}
+    .chain{grid-template-columns:auto auto auto;justify-content:start}
+    .chain .cx:nth-of-type(2){display:none}
+    .splitcost{grid-template-columns:1fr}
   }
   @media (max-width:760px){
     /* overflow-x must stay clipped: the decorative ::after bloom is positioned at
        right:-12%, which becomes real horizontal scroll once overflow-y opens up. */
     .slide{justify-content:flex-start;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;padding-top:4rem;padding-bottom:4.6rem}
     .stat{grid-template-columns:1fr;gap:1rem}
-    .grid2,.grid3,.chips,.ask,.phases,.gaps,.cols2,.demo2,.status,.closes,.feat,.ingest{grid-template-columns:1fr;gap:.75rem}
+    .grid2,.grid3,.chips,.ask,.phases,.gaps,.cols2,.demo2,.status,.closes,.feat,.ingest,.only,.tiers,.sq{grid-template-columns:1fr;gap:.75rem}
+    .chain{grid-template-columns:1fr;gap:.55rem}
+    .chain .cx{display:none}
+    .chain .cn{flex-direction:row;align-items:baseline;gap:.7rem}
+    .chain .cn span{max-width:none}
+    .loop .node{min-height:0}
+    .stance-2 q{font-size:clamp(2rem,7.6vw,3.2rem);max-width:none}
     .demo2 .col-r{margin-top:.6rem}
     .actbar .seg2 .lb{display:none}
     .cost-grid,.stance-grid{grid-template-columns:1fr;gap:1.3rem}
@@ -728,31 +945,37 @@
   <!-- 01 · TITLE -->
   <section class="slide darker centered active" data-act="">
     <div class="slide__inner">
-      <div class="title-kicker">A Partnership Proposal · 2026</div>
-      <h1>BHW&nbsp;Connect</h1>
-      <p class="title-sub">The DOH platform for its 300,000 registered health workers — answering their questions at the doorstep, training and certifying them individually, and writing competency into the national registry.</p>
-      <div class="partners">
-        <span class="partners-label">Proposed to</span>
-        <div class="partners-row">
-          <div class="partner"><strong>World Health Organization</strong><span>Country Office for the Philippines</span></div>
-          <div class="partner"><strong>Department of Health</strong><span>Bureau of Local Health Systems Development</span></div>
-          <div class="partner"><strong>Center for Health Development</strong><span>Western Visayas · Region VI</span></div>
+      <div class="title-split">
+        <div>
+          <div class="title-kicker">A Partnership Proposal · 2026</div>
+          <h1>BHW Connect</h1>
+          <p class="title-sub">The DOH platform for its 300,000 registered health workers — answering their questions at the doorstep, training and certifying them individually, and writing competency into the national registry.</p>
+        </div>
+        <div class="title-to">
+          <span class="partners-label">Proposed to</span>
+          <div class="partners-col">
+            <div class="partner"><strong>World Health Organization</strong><span>Country Office for the Philippines</span></div>
+            <div class="partner"><strong>Department of Health</strong><span>Bureau of Local Health Systems Development</span></div>
+            <div class="partner"><strong>Center for Health Development</strong><span>Western Visayas · Region VI</span></div>
+          </div>
+          <p class="src" style="color:var(--cream-soft)">Presented by BLHSD — Equity in Health and Special Concerns Section · <span class="tbc">[date · version · named contact TO CONFIRM]</span></p>
         </div>
       </div>
-      <p class="src" style="color:var(--cream-soft)">Presented by BLHSD — Equity in Health and Special Concerns Section · <span class="tbc">[date · version · named contact TO CONFIRM]</span></p>
     </div>
   </section>
 
   <!-- 02 · PROOF OF DELIVERY -->
-  <section class="slide dark" data-act="Standing">
+  <section class="slide dark wide" data-act="Standing">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">01</span> What DOH Has Already Delivered</div>
       <div class="stat">
         <div class="stat__num">~300,000<small>BHWs profiled in about a year</small></div>
         <div class="stat__body">
           <h2 class="tight">A national BHW registry, after three decades without one.</h2>
-          <p class="lead">Barangay Health Workers are the first — and often only — point of care in every barangay. Until Phase 1 there was no complete national record of who they were or where.</p>
-          <p class="pull">They carried the system on paper and memory. Now they are on it.</p>
+          <div class="stat-2col">
+            <p class="lead">Barangay Health Workers are the first — and often only — point of care in every barangay. Until Phase 1 there was no complete national record of who they were or where.</p>
+            <p class="pull">They carried the system on paper and memory. Now they are on it.</p>
+          </div>
         </div>
       </div>
       <div class="grid3" style="margin-top:clamp(1rem,2.4vh,1.7rem)">
@@ -861,9 +1084,17 @@
   <!-- 07 · STANCE -->
   <section class="slide darker centered" data-act="The Answer">
     <div class="slide__inner">
-      <div class="stance" style="max-width:26ch;margin:0 auto;text-align:center">
+      <div class="stance stance-2">
         <q>Technology is <em>not</em> the end-all.</q>
-        <p class="lead" style="max-width:52ch;margin:clamp(1.6rem,3.6vh,2.6rem) auto 0">A better app doesn't fix a health system — people do. BHW Connect earns its place only by making the human frontline stronger: faster to answer, easier to train, impossible to overlook. The tool serves the worker, never the other way around.</p>
+        <div class="stance-gloss">
+          <span class="stance-rule">The standard we hold it to</span>
+          <p class="lead">A better app doesn't fix a health system — people do. BHW Connect earns its place only by making the human frontline stronger. The tool serves the worker, never the other way around.</p>
+        </div>
+        <div class="stance-band">
+          <span>Faster to answer</span>
+          <span>Easier to train</span>
+          <span>Impossible to overlook</span>
+        </div>
       </div>
     </div>
   </section>
@@ -941,7 +1172,10 @@
         <span class="rung">Regional · CHD VI</span><span class="sep">›</span>
         <span class="rung top">National · DOH</span>
       </div>
-      <p class="lead" style="margin-top:.85rem">Data rolls up the hierarchy the registry already defines — real-time visibility, finally flowing upward.</p>
+      <div class="rollup">
+        <p>Data rolls up the hierarchy the registry already defines — real-time visibility, finally flowing upward.</p>
+        <p class="rollup-k">Not a new reporting line. The one Phase 1 already drew, finally carrying something.</p>
+      </div>
     </div>
   </section>
 
@@ -1095,7 +1329,7 @@
   <section class="slide light wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num">12</span> Scope, Coverage &amp; Year-1 Cost</div>
-      <h2 class="tight">Twenty to sixty-six times the reach, for a knowable price.</h2>
+      <h2 class="tight">₱14.98M is what it is worth. What it costs you is a choice.</h2>
       <div class="cols2" style="align-items:start">
         <div>
           <div class="listhead">What a peso buys, by reach</div>
@@ -1104,30 +1338,56 @@
             <div class="rung-v mid"><span class="who">This platform, Year 1 — all of Western Visayas</span><span class="n">23,813</span><span class="per">₱629<small>per BHW</small></span></div>
             <div class="rung-v top"><span class="who">The same platform, national profiled base</span><span class="n">~300,000</span><span class="per">₱50<small>per BHW</small></span></div>
           </div>
-          <p class="src">Year 1 covers the whole region — including the 12,280 in Aklan, Antique and Capiz the package never reaches — because onboarding is activation of an already-profiled workforce, not recruitment. The build is paid once; every BHW added afterwards is onboarding, not construction.</p>
+          <p class="src">Twenty to sixty-six times the reach. Year 1 covers the whole region — including the 12,280 in Aklan, Antique and Capiz the package never reaches — because onboarding activates an already-profiled workforce. The build is paid once.</p>
         </div>
         <div>
-          <div class="listhead">Year-1 envelope — bottom-up</div>
-          <div class="budget" style="margin-top:.5rem">
-            <div class="bline"><b>₱2.80M</b><span>Rollout &amp; certification — region-wide</span></div>
-            <div class="bline"><b>₱2.46M</b><span>Engineering — build, harden, provision</span></div>
-            <div class="bline"><b>₱1.50M</b><span>Content authoring &amp; clinical validation</span></div>
-            <div class="bline"><b>₱1.40M</b><span>Infrastructure &amp; tooling</span></div>
-            <div class="bline"><b>₱1.40M</b><span>Independent M&amp;E</span></div>
-            <div class="bline"><b>₱1.20M</b><span>Equipment</span></div>
-            <div class="bline"><b>₱1.15M</b><span>Video &amp; bilingual content production</span></div>
-            <div class="bline"><b>₱0.78M</b><span>Instructional design &amp; QA</span></div>
-            <div class="bline"><b>₱0.78M</b><span>Project management</span></div>
-            <div class="bline"><b>₱0.40M</b><span>Governance &amp; institutionalization</span></div>
-            <div class="bline"><b>₱1.11M</b><span>Contingency — 8%</span></div>
+          <div class="listhead">The ₱14.98M envelope, split by who can carry it</div>
+          <div class="splitcost">
+            <div class="scol keep">
+              <div class="sc hd"><span>Only cash can buy</span><b>₱M</b></div>
+              <div class="sc"><span>Engineering — build &amp; harden</span><b>2.46</b></div>
+              <div class="sc"><span>Infrastructure &amp; tooling</span><b>1.40</b></div>
+              <div class="sc"><span>Content authoring</span><b>0.90</b></div>
+              <div class="sc"><span>Instructional design &amp; QA</span><b>0.78</b></div>
+              <div class="sc"><span>Contingency</span><b>0.44</b></div>
+              <div class="sc sum"><span>Cash instrument</span><b>5.98</b></div>
+            </div>
+            <div class="scol drop">
+              <div class="sc hd"><span>Direct support can absorb</span><b>₱M</b></div>
+              <div class="sc"><span>Rollout &amp; certification</span><b>2.80</b></div>
+              <div class="sc"><span>Independent M&amp;E</span><b>1.40</b></div>
+              <div class="sc"><span>Equipment</span><b>1.20</b></div>
+              <div class="sc"><span>Video &amp; bilingual production</span><b>1.15</b></div>
+              <div class="sc"><span>Project management</span><b>0.78</b></div>
+              <div class="sc"><span>Clinical validation</span><b>0.60</b></div>
+              <div class="sc"><span>Governance</span><b>0.40</b></div>
+              <div class="sc"><span>Contingency</span><b>0.67</b></div>
+              <div class="sc sum"><span>Absorbed</span><b>9.00</b></div>
+            </div>
           </div>
-          <div class="total">
-            <span class="amt">₱14.98M</span>
-            <span class="usd">≈ US$258,000 · 12 months · 23,813 BHWs</span>
-          </div>
-          <p class="src">Rates to be confirmed with BLHSD before submission. Covers the build, the content and the rollout. Training delivery, travel and per diem sit outside this envelope as counterpart contributions. Results framework, risk register, timeline and data-protection annex are in the accompanying concept note.</p>
         </div>
       </div>
+      <div class="tiers">
+        <div class="tier t1">
+          <span class="lbl">Tier 1 · Full value</span>
+          <span class="amt2">₱14.98M<small>≈ US$258,000 · financed</small></span>
+          <p>WHO finances the whole envelope. Nothing waits on counterpart capacity — fastest to contract, fastest to field.</p>
+          <span class="same">Same scope · 23,813 BHWs · 12 months</span>
+        </div>
+        <div class="tier t2">
+          <span class="lbl">Tier 2 · With direct support</span>
+          <span class="amt2">₱6.0M<small>estimate · ≈ US$103,000</small></span>
+          <p>WHO procures equipment, commissions the evaluation and validates clinically in-house; CHD VI, LGUs and BLHSD carry rollout and management. ₱8.98M leaves the cash instrument — <b>none of it leaves the scope</b>. The split is an estimate, and working it out with you is the conversation.</p>
+          <span class="same">Same scope · 23,813 BHWs · 12 months</span>
+        </div>
+        <div class="tier t3">
+          <span class="lbl">Tier 3 · Inside what you already provide</span>
+          <span class="amt2">No new instrument<small>longer runway</small></span>
+          <p>No separate financing. The platform is built against the support WHO already provides to HHP+, staged over more than twelve months. Slower — and still worth doing.</p>
+          <span class="same">Same scope · 23,813 BHWs · staged delivery</span>
+        </div>
+      </div>
+      <p class="src">₱14.98M is bottom-up from the workplan and is the honest full value of Year 1; rates to be confirmed with BLHSD before submission. Training delivery, travel and per diem sit outside all three tiers as counterpart contributions. Results framework, risk register, timeline and data-protection annex are in the accompanying concept note.</p>
     </div>
   </section>
 
@@ -1148,19 +1408,124 @@
     </div>
   </section>
 
-  <!-- 20 · CLOSE -->
+  <!-- 22 · THE COST OF THE STATUS QUO -->
+  <!-- Deliberately placed after "Every Gap, Closed" and before the close: the deck
+       has just shown what funding buys, so this is the same six gaps left open. It
+       reopens the problem register — ember, square corners, OPEN vocabulary — so the
+       counterweight reads at projector distance without a word being needed. -->
+  <section class="slide darker problem wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">14</span> The Cost of the Status Quo</div>
+      <h2 class="tight">Doing nothing is not free. It is paid later, and it is paid twice.<span class="statechip open">6 still open</span></h2>
+      <p class="lead" style="max-width:80ch;margin-bottom:.2rem">The package still runs — exactly as designed, exactly as costed. This is what is left standing the day it closes.</p>
+      <div class="sq">
+        <div class="sqcol">
+          <span class="when">Month 5 · the contract closes</span>
+          <h3>What stops</h3>
+          <ul>
+            <li><b>22,613–23,453</b> of Region VI's 23,813 BHWs were never trained directly. Whatever they got, they got second-hand.</li>
+            <li>The <b>12,280</b> in Aklan, Antique and Capiz were never in scope at all.</li>
+            <li>A BHW at a doorstep in month nine has a question and <b>no one to ask</b>.</li>
+            <li>Guidance moves; the video <b>cannot be re-cut</b>, and no correction reaches anyone already trained.</li>
+          </ul>
+          <p class="foot">The same six gaps as slide 05 — G1 to G6, none closed by a well-run contract.</p>
+        </div>
+        <div class="sqcol">
+          <span class="when">Already spent</span>
+          <h3>What it already cost</h3>
+          <ul>
+            <li><b>6 modules · 7 competency domains · 5 outputs</b>, authored once and unmaintainable after.</li>
+            <li>NCD flipcharts, job aids and monitoring tools — printed, distributed, <b>no update path</b>.</li>
+            <li>Videos, PhilPEN protocols, facilitator guides: <b>files on somebody's laptop</b> the week it ends.</li>
+            <li>The 29-criterion CBG checklist, hand-scored and filed locally. <b>No queryable record</b> of competence.</li>
+          </ul>
+          <p class="foot">Already sunk into content with a shelf life: <span class="tbc">[total spent TO CONFIRM]</span>.</p>
+        </div>
+        <div class="sqcol">
+          <span class="when">Year 2, and every year after</span>
+          <h3>What you buy again</h3>
+          <ul>
+            <li>Turnover is <b>expected, not exceptional</b>. Everyone who joins after month 5 needs the training that just ended.</li>
+            <li>Immunization, nutrition, MNCH, family planning — <b>each starts from zero</b>: new contract, new cascade.</li>
+            <li>Scale-up beyond Region VI is a <b>recommendation</b>, and a recommendation must be funded again to be anything.</li>
+            <li>The same competency, purchased a second and a third time, at <b>full price each time</b>.</li>
+          </ul>
+          <p class="foot">The platform is paid once. The cascade is paid every round, forever.</p>
+        </div>
+      </div>
+      <div class="verdict">
+        <p class="kicker-line" style="max-width:70ch">The choice is not between spending ₱14.98M and spending nothing. It is between building once — and buying the same five months again, and again, for as long as the programme exists.</p>
+        <span class="vnum">6 / 6<small>gaps still open the day the contract closes</small></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 23 · THE IMPACT -->
+  <section class="slide light solution wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num">15</span> The Impact</div>
+      <h2 class="tight">The output is 300,000 workers. The outcome is a country.</h2>
+      <p class="lead" style="max-width:82ch">Every Filipino lives in a barangay, and every barangay has Barangay Health Workers. No other health workforce in the country can say that — which is why this is the only training investment whose denominator is the whole population.</p>
+      <div class="chain">
+        <div class="cn out"><b>~300,000</b><span>BHWs trained &amp; certified — the output</span></div>
+        <span class="cx">→</span>
+        <div class="cn"><b>42,000+</b><span>barangays, all of them</span></div>
+        <span class="cx">→</span>
+        <div class="cn"><b>114M</b><span>Filipinos — the outcome</span></div>
+        <span class="cx">→</span>
+        <div class="cn"><b>≈380</b><span>Filipinos per BHW</span></div>
+      </div>
+      <div class="only">
+        <div class="oncard">
+          <h3>Present in every barangay</h3>
+          <p>BHWs are the one cadre with a mandated presence in all <b>42,000+</b> barangays. Physicians, nurses and midwives are posted to facilities — and facilities are not everywhere.</p>
+          <p class="vs">Universal by construction: accredited barangay by barangay under RA 7883.</p>
+        </div>
+        <div class="oncard">
+          <h3>They go to the door</h3>
+          <p>Facility care reaches the people who come. BHWs reach the people who <b>never present</b> — in the household, unprompted, before anything has become an emergency.</p>
+          <p class="vs">The only cadre whose default mode of delivery is the home visit.</p>
+        </div>
+        <div class="oncard">
+          <h3>Scale no facility network matches</h3>
+          <p>Roughly <b>300,000</b> Barangay Health Workers. The whole public clinical workforce — physicians, nurses and midwives together — is a fraction of that.</p>
+          <p class="vs">≈1 BHW per 380 Filipinos, before a peso of new hiring. Comparator headcount <span class="tbc">[TO CONFIRM]</span>.</p>
+        </div>
+        <div class="oncard">
+          <h3>The last mile, where there is no one else</h3>
+          <p>In geographically isolated and disadvantaged areas — island, upland and conflict-affected barangays — there is frequently <b>no resident clinician at all</b>.</p>
+          <p class="vs">Where the health system thins to nothing, the BHW is the health system.</p>
+        </div>
+      </div>
+      <p class="underline-note">Train the 300,000 and you have not trained 300,000 people. You have <span class="mark">raised the floor of primary care for 114 million</span> — by the only route that reaches all of them.</p>
+      <p class="src">Population ≈114M (PSA population projections, 2024). 42,000+ barangays nationwide. ~300,000 BHWs from the Phase 1 registry. BHW mandate, accreditation and barangay assignment under RA 7883 (1995). Per-BHW ratio is 300,000 ÷ 114M and is a coverage denominator, not a caseload.</p>
+    </div>
+  </section>
+
+  <!-- 24 · CLOSE -->
   <section class="slide darker centered close" data-act="">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">14</span> The Goal</div>
-      <h2>A connected, capable frontline — and a workforce DOH can finally see.</h2>
-      <p class="lead">Three hundred thousand health workers, trained, certified and supported. Millions of families, better cared for. And the clinical work WHO has already paid for, kept current instead of frozen.</p>
-      <div class="invite">One province · twelve months · ₱6.0M (≈US$103K) · DOH owns the platform, its code and its data.</div>
-      <div class="invite-partners">
-        <b>World Health Organization</b> · Philippines
-        <span class="dot">•</span>
-        <b>Department of Health</b> · Bureau of Local Health Systems Development
-        <span class="dot">•</span>
-        <b>CHD</b> · Western Visayas
+      <div class="close-2">
+        <div>
+          <div class="eyebrow"><span class="num">16</span> The Goal</div>
+          <h2>A connected, capable frontline — and a workforce DOH can finally see.</h2>
+          <p class="lead">Three hundred thousand health workers, trained, certified and supported. A hundred and fourteen million Filipinos, better cared for. And the clinical work WHO has already paid for, kept current instead of frozen.</p>
+        </div>
+        <div class="close-aside">
+          <div class="invite">One region · twelve months · 23,813 Barangay Health Workers.</div>
+          <ul class="close-facts">
+            <li><b>₱14.98M</b> in full value — <b>≈₱6.0M</b> with direct support, or delivered inside the support you already provide.</li>
+            <li><b>DOH owns</b> the platform, its source code, its data and every published word, throughout and after.</li>
+            <li><b>HHP+ is module one</b>, not the boundary. The second curriculum costs a fraction of the first.</li>
+          </ul>
+          <!-- One partner per line here, so the interpuncts that separate them on a
+               full-width footer are dropped rather than stranded on their own row. -->
+          <div class="invite-partners">
+            <span><b>World Health Organization</b> · Philippines</span>
+            <span><b>Department of Health</b> · Bureau of Local Health Systems Development</span>
+            <span><b>CHD</b> · Western Visayas</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1859,3 +2224,4 @@
   if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
 })();
 </script>
+
