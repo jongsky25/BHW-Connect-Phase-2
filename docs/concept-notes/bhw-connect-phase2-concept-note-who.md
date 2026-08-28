@@ -29,6 +29,16 @@
   the COVERAGE arithmetic above (slide 05 G3, slide 06), so that half of the sync rule stands
   unaltered. Do not "restore" a peso figure to the deck to make the two match — they already
   do, by division of labour. See pitch/README.md §7.
+
+  A SECOND, NARROWER COSTING NOW EXISTS: bhw-connect-phase2-who-costing.md (and
+  its .docx). It prices ONLY the DOH-side cash ask — three DOH-embedded hires,
+  AI tooling for Knowledge Base authoring, and twelve months of hosting up to a
+  transfer onto DOH infrastructure — at PHP 3,553,400, because rollout,
+  equipment, video production and M&E have moved to WHO's APW. §13 here is
+  untouched and still prices the whole information-system programme bottom-up
+  at PHP 14,980,000. The two are different scopes, not a contradiction, BUT
+  they are two totals aimed at the same funder: decide which is the standing
+  ask before either document is submitted.
 -->
 
 # CONCEPT NOTE
