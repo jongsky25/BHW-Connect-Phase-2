@@ -33,7 +33,7 @@
   A SECOND, NARROWER COSTING NOW EXISTS: bhw-connect-phase2-who-costing.md (and
   its .docx). It prices ONLY the DOH-side cash ask — three DOH-embedded hires,
   AI tooling for Knowledge Base authoring, and twelve months of hosting up to a
-  transfer onto DOH infrastructure — at PHP 3,553,400, because rollout,
+  transfer onto DOH infrastructure — at PHP 3,193,400, because rollout,
   equipment, video production and M&E have moved to WHO's APW. §13 here is
   untouched and still prices the whole information-system programme bottom-up
   at PHP 14,980,000. The two are different scopes, not a contradiction, BUT

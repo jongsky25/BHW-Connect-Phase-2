@@ -31,7 +31,7 @@
   Postgres core, no proprietary lock-in — and that is why the commitment can be
   made in writing.
 
-  RELATIONSHIP TO THE CONCEPT NOTE. This states PHP 3,553,400. Concept note §13
+  RELATIONSHIP TO THE CONCEPT NOTE. This states PHP 3,193,400. Concept note §13
   states PHP 14,980,000. They are NOT the same figure and neither is wrong: §13
   prices the entire information-system programme bottom-up, including rollout,
   equipment, video and M&E; this note prices only the DOH-side cash ask now
@@ -48,10 +48,21 @@
   src/lib/ai/config.ts providerCeilings, and rpc_ai_check_budget in
   supabase/migrations/20260805000000_inc18a_ai_budget_guard.sql.
 
-  Hosting rates carry the repo's own bands (PHP 25,000/mo cloud and database,
-  PHP 15,000/mo monitoring, backups, domain and SSL, supporting SaaS). Like the
-  salary bands they are [TO CONFIRM]; they are derived from the Phase 2
-  workplan, not from independent market research. FX at PHP 58/US$, per §13.
+  HOSTING IS BUILT FROM LIST PRICES, NOT FROM THE OLD BAND. The first draft of
+  this note carried the repo's KOICA-era infrastructure band (PHP 25,000/mo cloud
+  + PHP 15,000/mo monitoring = PHP 480,000/yr). That was never checked against
+  what the stack actually costs, and it does not survive the check: PHP 25,000/mo
+  is ~US$431, i.e. Supabase 2XL compute ($410), for a read-heavy app serving
+  ~14,000 weekly actives. Verified list prices 2026-08-28 — Supabase Pro $25/mo
+  (8 GB disk, 250 GB egress, daily backups, $10 compute credit; compute add-ons
+  Micro $10 / Small $15 / Medium $60 / Large $110); Vercel Pro $20/mo per seat
+  ($20 credit, 1 TB transfer); Sentry ~$26/mo, already wired via SENTRY_DSN.
+  A sensible build is ~US$131/mo. The line is set at PHP 10,000/mo (~US$172) —
+  real headroom over that, and defensible line by line if WHO asks.
+  DO NOT restore the PHP 480,000 figure for consistency with §13's infrastructure
+  line; §13 bundles AI subscriptions and region-wide scale-up into the same row
+  and is not comparable. Salary bands remain [TO CONFIRM] and are still derived
+  from the Phase 2 workplan. FX at PHP 58/US$, per §13.
 -->
 
 # BHW Connect Phase 2 — Year-1 Costing
@@ -60,7 +71,7 @@
 
 **Submitted by** Department of Health, Bureau of Local Health Systems Development — Equity in Health and Special Concerns Section
 **Submitted to** World Health Organization, Country Office for the Philippines
-**Period** 12 months · **Total** ₱3,553,400 ≈ US$61,265 at ₱58/US$
+**Period** 12 months · **Total** ₱3,193,400 ≈ US$55,058 at ₱58/US$
 **Date · version · contact** [TO CONFIRM]
 
 ---
@@ -124,11 +135,14 @@ Rates are [TO CONFIRM] with BLHSD and against market before submission. They are
 
 | Line | Basis | Amount (₱) |
 |---|---|---|
-| Cloud hosting and managed database, sized for pilot and rollout load | ₱25,000/month × 12 | 300,000 |
-| Monitoring, backups and restore drills, domain and SSL, supporting SaaS tooling | ₱15,000/month × 12 | 180,000 |
-| **Subtotal — hosting and infrastructure** | | **480,000** |
+| Managed database, application hosting and CDN | ₱6,100/month × 12 | 73,200 |
+| Monitoring, backups and restore drills, domain and SSL, supporting SaaS tooling | ₱1,700/month × 12 | 20,400 |
+| Headroom for egress and compute overage at rollout peak | ₱2,200/month × 12 | 26,400 |
+| **Subtotal — hosting and infrastructure** | | **120,000** |
 
-**This line does not recur.** It funds the runway to the transfer described in Section 6, and stops there.
+Built from published list prices rather than a carried-over band: managed Postgres with daily backups, application hosting and CDN, and error monitoring come to roughly US$131 per month at the tier this workload needs. The line is set at ₱10,000 per month — about US$172 — so the headroom is real rather than nominal. Daily backups already meet the platform's 24-hour recovery-point objective; point-in-time recovery is an optional add-on if DOH wants a tighter one.
+
+**This line does not recur.** It funds the runway to the transfer described in Section 6, and stops there — and because cutover happens before closeout, twelve months is the safe assumption rather than the expected draw.
 
 ### 5.3 AI tooling — for building the Knowledge Base
 
@@ -152,10 +166,10 @@ The ceiling is also enforced in software rather than by good intentions: the pla
 
 | | US$ ≈ | Amount (₱) |
 |---|---|---|
-| Personnel (77.7%) | 47,586 | 2,760,000 |
-| Hosting and infrastructure (13.5%) | 8,276 | 480,000 |
-| AI tooling (8.8%) | 5,403 | 313,400 |
-| **YEAR-1 TOTAL** | **61,265** | **3,553,400** |
+| Personnel (86.4%) | 47,586 | 2,760,000 |
+| Hosting and infrastructure (3.8%) | 2,069 | 120,000 |
+| AI tooling (9.8%) | 5,403 | 313,400 |
+| **YEAR-1 TOTAL** | **55,058** | **3,193,400** |
 
 No contingency line is included. Salaries, hosting and tooling are fixed and knowable, and a contingency against them would be padding. The one real exposure is foreign exchange: the AI tooling lines are denominated in US dollars, so ₱58/US$ is an assumption rather than a fact.
 
