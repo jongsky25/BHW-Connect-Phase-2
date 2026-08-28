@@ -1,18 +1,45 @@
 <!--
-  BHW Connect — DOH × WHO partnership proposal.
+  BHW Connect — DOH × WHO partnership proposal. Twelve slides plus a demo annex.
 
-  Combines the narrative pitch deck (formerly pitch/koica-bhw-connect.html) and the
-  clickable product walkthrough (formerly mockups/ttcf-demo.html) into one deck with a
-  single navigation model.
+  THE ARGUMENT, AND ITS ORDER. This deck argues a POLICY case, not a product case,
+  in three movements. Do not reorder them, and do not let a product slide drift
+  forward of the problem:
+    Direction      (02–03) — where DOH and BLHSD are already going, and the fact
+                             that Phase 1 already executed part of it.
+    The Problem    (04–06) — the traditional model: design, contract, train a
+                             select LGU, cascade, recommend, close. Run perfectly,
+                             it still ends. Six gaps survive it; starting over is
+                             what the country buys instead.
+    The Opportunity(07–10) — the shift (07) is the hinge of the whole deck: not a
+                             module for one LGU in the hope it scales, but a
+                             national standard, made mandatory by issuance,
+                             piloted in a select LGU, scaled on the registry.
+    The Ask        (11)    — four WHO roles; convening the issuance is the one a
+                             training TOR cannot buy.
+  Slide 07 is the thesis. If anything has to be cut, it is never 07.
 
-  Audience: WHO Philippines. Year 1 flagship module = HHP+ / PhilPEN 2025 community-based
-  NCD screening, Western Visayas (Region VI).
+  Audience: WHO Philippines. Pilot programme = HHP+ / PhilPEN 2025 community-based
+  NCD screening, Western Visayas (Region VI). The pilot is framed throughout as the
+  EVIDENCE THE ISSUANCE RESTS ON — never as a hope that a module will scale.
+
+  NO COST SLIDE — DELIBERATE. The scope/coverage/cost slide and the three funding
+  tiers were removed: this is a direction-and-partnership deck and the money lives
+  in docs/concept-notes/…-who.md §13, which is unchanged and still authoritative.
+  The ask survives on slide 11 as "Year-1 support", pointing at the concept note.
+  Do not reintroduce a peso figure anywhere in this deck — not on the close, not on
+  the ask — without moving §13 and pitch/README.md in the same commit.
 
   READINESS FRAMING — deliberate, and stricter than "the code exists":
   Phase 1 (national BHW registry and profiling) is DELIVERED. Phase 2 is DESIGNED END TO END
-  BUT NOT BUILT. The demo chapter is hand-built HTML mockups, not the running application.
+  BUT NOT BUILT. The annex is hand-built HTML mockups, not the running application.
   Nothing is called "built" until a Barangay Health Worker has used it in the field. Do not
   relabel any of this without checking docs/concept-notes/…-who.md, which must match.
+
+  THE ISSUANCE IS NAMED BUT NOT ASSUMED. Slide 08 names the instrument as an
+  Administrative Order or Department Memorandum and chips it [TO CONFIRM]; the
+  concept note (§18) names no instrument type at all. The recognition status of the
+  credential under RA 7883 is likewise "proposed, not assumed" (§11 Pillar 2). Never
+  upgrade either to settled language.
 
   DO NOT REINTRODUCE ttCF, Eastern Visayas or Region VIII anywhere. That proposal is
   preliminary, is not settled, and is deliberately absent from this deck and its note.
@@ -21,32 +48,22 @@
   Iloilo province 10,519 + Iloilo City 309 + Guimaras 705 = 11,533, i.e. 48.4% — but that is
   geography, not delivery. Direct training reach is modelled at 360-1,200 over 6-10 weeks of
   sessions, i.e. 2-5% of the region; the rest cascade, and the 12,280 in Aklan, Antique and
-  Capiz are outside entirely. Year-1 cohort for this proposal is the whole region, 23,813, at
-  PHP 14.98M => PHP 629/BHW, falling to PHP 50/BHW against the national base. If any of these
-  move, they all move together: G3, the scope slide, the concept note and pitch/README.md.
+  Capiz are outside entirely. These figures now live in exactly three places — G3 on slide 05,
+  the "What stops" column on slide 06, and concept note §13.1. If one moves, they all move
+  together, and pitch/README.md records where they are.
 
-  FUNDING TIERS (scope slide). PHP 14.98M is the full bottom-up value and does not move. What
-  moves is the funding mix, presented as three tiers of the SAME scope:
-    T1  PHP 14.98M cash            — WHO finances the whole envelope
-    T2  PHP 5.98M cash (~6.0M)     — engineering 2.46 + infrastructure 1.40 + content authoring
-                                     0.90 + instructional design/QA 0.78 + contingency 0.44;
-                                     the other 9.00 (rollout 2.80, M&E 1.40, equipment 1.20,
-                                     video 1.15, PM 0.78, clinical validation 0.60, governance
-                                     0.40, contingency 0.67) absorbed as direct support
-    T3  no new instrument          — delivered inside existing HHP+ support, longer runway
-  5.98 + 9.00 = 14.98 exactly, and the two contingency halves sum to the original 1.11. The T2
-  split is labelled an ESTIMATE on-slide and in the note because which lines direct support can
-  absorb is a negotiation, not a finding. Never present PHP 6.0M as a cheaper scope.
-
-  IMPACT SLIDE. Population figure is ~114M (PSA projections, 2024) — the whole country, because
-  every Filipino lives in a barangay. 42,000+ barangays; 300,000 / 114M => ~1 BHW per 380, which
-  is a coverage denominator and NOT a caseload. The clinical-workforce comparator is deliberately
-  a [TO CONFIRM] chip rather than a guessed headcount.
+  IMPACT (close slide band). Population figure is ~114M (PSA projections, 2024) — the whole
+  country, because every Filipino lives in a barangay. 42,000+ barangays; 300,000 / 114M =>
+  ~1 BHW per 380, which is a coverage denominator and NOT a caseload. The clinical-workforce
+  comparator is deliberately a [TO CONFIRM] chip rather than a guessed headcount.
 
   CONTENT SAFETY: the HHP+ health specifics shown are procedural and are drawn from the
   BLHSD/WHO deck "Strengthening Barangay Health Worker Capacity under HHP+" (31 Jul 2026).
   No PhilPEN numeric clinical thresholds are asserted anywhere — that source contains none.
   All health content requires DOH clinical validation and approval before BHW-facing use.
+
+  Eyebrow ordinals are assigned at runtime by numberEyebrows() — never hard-code them.
+  They run 01–11 across the narrative and continue 12–16 through the annex.
 
   Self-contained, no external requests (CSP-safe for publishing as an Artifact).
   Body-only document: a <!doctype>/<head>/<body> skeleton is added when published.
@@ -862,6 +879,50 @@
   .oncard .vs{margin-top:auto;padding-top:.45rem;border-top:1px solid rgba(36,28,23,.1);
     font-size:.73rem;font-style:italic;line-height:1.38;color:var(--ink-soft);opacity:.85}
 
+  /* ---------- the shift (07) ----------
+     The hinge of the deck, and the only slide that carries both registers at
+     once: the turn happens here, so the traditional column keeps the problem
+     vocabulary (square corners, ember rule, muted text) while the proposal
+     column keeps the solution vocabulary (rounded, lifted, verdant). Row-wise
+     grid fill is deliberate — each pair must sit on one grid row so it reads
+     as a single sentence with two endings. Two independent column stacks would
+     let the halves drift out of alignment as the copy wraps. */
+  .shift{display:grid;grid-template-columns:1fr 1fr;
+    gap:clamp(.4rem,.9vw,.6rem) clamp(.8rem,2vw,1.5rem);
+    margin-top:clamp(1rem,2.2vh,1.5rem);align-items:stretch}
+  .swayhd{display:flex;align-items:center;gap:.5rem;padding-bottom:.5rem;
+    font-size:.66rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+    border-bottom:1px solid var(--line-dark)}
+  .swayhd::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+  .swayhd.old{color:var(--ember)}
+  .swayhd.new{color:#7BD8A4}
+  /* The row is a flex container only so its single child can be vertically
+     centred against its paired row. The child MUST stay a single wrapping
+     <span>: a bare text node beside an inline <b> becomes two flex items and
+     the sentence breaks into columns — the same trap documented on .costlist li. */
+  .shift .r{display:flex;align-items:center;padding:.55rem .85rem;
+    font-size:clamp(.86rem,1.14vw,1.02rem);line-height:1.38}
+  .shift .r > span{display:block}
+  .shift .r.old{background:rgba(240,96,60,.05);border:1px solid rgba(247,241,232,.10);
+    border-left:3px solid var(--ember);border-radius:4px;color:rgba(247,241,232,.66)}
+  .shift .r.new{background:rgba(31,122,69,.16);border:1px solid rgba(247,241,232,.13);
+    border-left:3px solid #3FA972;border-radius:12px;color:var(--cream);
+    box-shadow:0 12px 30px -26px rgba(0,0,0,.9)}
+  .shift .r.new b{color:var(--sampaguita);font-weight:800}
+
+  /* ---------- close band (12) ----------
+     The impact arithmetic runs full width beneath the two close columns, so the
+     close carries the outcome as well as the invitation. .chain was authored for
+     a light ground; these four rules re-key it for the dark close without
+     touching the impact slide's own palette. */
+  .close-band{grid-column:1 / -1;margin-top:clamp(1rem,2.6vh,1.8rem);
+    padding-top:clamp(.9rem,2.2vh,1.4rem);border-top:1px solid var(--line-dark)}
+  .close-band .chain{margin-top:0}
+  .close-band .chain .cn b{color:var(--sampaguita)}
+  .close-band .chain .cn.out b{color:var(--marigold)}
+  .close-band .chain .cn span{color:var(--cream-soft)}
+  .close-band .chain .cx{color:var(--sampaguita)}
+
   /* ---------- responsive ---------- */
   @media (max-width:900px){
     .gaps,.status,.feat,.only{grid-template-columns:1fr 1fr}
@@ -901,6 +962,12 @@
     .cost-visual svg{width:min(230px,56vw)}
     .stance-visual svg{width:min(205px,52vw)}
     .stance q{font-size:clamp(2rem,7.6vw,3.2rem)}
+    /* .shift deliberately stays two-up: it is a row-wise grid, so collapsing it
+       to one column would interleave the two headers and break every pair. */
+    .shift{gap:.3rem .5rem}
+    .shift .r{font-size:.78rem;padding:.42rem .55rem;line-height:1.32}
+    .swayhd{font-size:.56rem;letter-spacing:.1em;gap:.35rem;padding-bottom:.35rem}
+    .swayhd::before{width:6px;height:6px}
     .loop .node{flex:1 1 100%}
     .arrow{transform:rotate(90deg)}
     .rung{font-size:.72rem;padding:.36rem .68rem}
@@ -949,7 +1016,7 @@
         <div>
           <div class="title-kicker">A Partnership Proposal · 2026</div>
           <h1>BHW Connect</h1>
-          <p class="title-sub">The DOH platform for its 300,000 registered health workers — answering their questions at the doorstep, training and certifying them individually, and writing competency into the national registry.</p>
+          <p class="title-sub">Co-developing the national competency standard for Barangay Health Worker training — the DOH issuance that makes it mandatory, and the platform that runs it for 300,000 registered health workers.</p>
         </div>
         <div class="title-to">
           <span class="partners-label">Proposed to</span>
@@ -964,10 +1031,43 @@
     </div>
   </section>
 
-  <!-- 02 · PROOF OF DELIVERY -->
-  <section class="slide dark wide" data-act="Standing">
+  <!-- 02 · THE DIRECTION -->
+  <section class="slide dark" data-act="Direction">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">01</span> What DOH Has Already Delivered</div>
+      <div class="eyebrow"><span class="num"></span> Where DOH and BLHSD Are Already Going</div>
+      <h2 class="tight">The direction is set. What is missing is the mechanism.</h2>
+      <p class="lead" style="max-width:78ch">Nothing in this proposal asks DOH to turn. Every element below is existing policy, an existing mandate or an existing bureau. The gap is not in intent — it is that no instrument currently carries the intent down to the person at the door.</p>
+      <div class="grid3">
+        <div class="pillar">
+          <h3>Care pushed to the community</h3>
+          <p>The Universal Health Care Act (RA 11223) moves the system toward primary care and toward the barangay. That mandate lands in 42,000+ barangays, and the Barangay Health Worker is who lands it.</p>
+        </div>
+        <div class="pillar">
+          <h3>A workforce with a law, without a standard</h3>
+          <p>RA 7883 gives BHWs accreditation, benefits and a barangay assignment. What it has never had behind it is a national competency standard that says what an accredited BHW is competent to do.</p>
+        </div>
+        <div class="pillar">
+          <h3>A bureau, not a parallel structure</h3>
+          <p>BLHSD owns local health systems development, and the DOH digital-health agenda is where a national workforce platform belongs. This is built inside the institution that has to run it afterwards.</p>
+        </div>
+      </div>
+      <div class="meta-row">
+        <span class="mtag"><b>Anchored in:</b></span>
+        <span class="mtag">UHC Act · RA 11223</span>
+        <span class="mtag">RA 7883 and its successor policy directions</span>
+        <span class="mtag">PhilPEN 2025 · NCD agenda</span>
+        <span class="mtag">DOH digital-health agenda</span>
+        <span class="mtag">BLHSD · Equity in Health and Special Concerns</span>
+      </div>
+      <p class="underline-note">The principle this proposal is built on, in DOH's own words: <span class="mark">institutionalize through issuance, not personality</span>.</p>
+      <p class="src" style="color:var(--cream-soft)">Strategic alignment as set out in the accompanying concept note, §6 and §17.3.</p>
+    </div>
+  </section>
+
+  <!-- 03 · THE DIRECTION, ALREADY EXECUTED -->
+  <section class="slide dark wide" data-act="Direction">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> The Direction, Already Executed</div>
       <div class="stat">
         <div class="stat__num">~300,000<small>BHWs profiled in about a year</small></div>
         <div class="stat__body">
@@ -980,51 +1080,32 @@
       </div>
       <div class="grid3" style="margin-top:clamp(1rem,2.4vh,1.7rem)">
         <div class="pillar"><h3>Proven delivery</h3><p>Not a bureau proposing its first platform. It has already taken a national digital health system from concept to nationwide adoption.</p></div>
-        <div class="pillar"><h3>The users already exist</h3><p>Phase 2 onboarding is activation of registered, organisationally located users — not recruitment from an empty database.</p></div>
-        <div class="pillar"><h3>A proven adoption pathway</h3><p>The same CHD, LGU and BHW channels that delivered nationwide profiling in a year deliver Phase 2 onboarding.</p></div>
+        <div class="pillar"><h3>The users already exist</h3><p>Onboarding is activation of registered, organisationally located users — not recruitment from an empty database.</p></div>
+        <div class="pillar"><h3>Somewhere a standard can be written</h3><p>A competency standard needs a place to live. A training report is not one. A national registry of named, located, accredited health workers is.</p></div>
       </div>
       <p class="src" style="color:var(--cream-soft)">Source: BHW Connect Phase 1 registry extract, <span class="tbc">[date · completeness · active-login rate TO CONFIRM]</span>.</p>
     </div>
   </section>
 
-  <!-- 03 · WHAT IT IS -->
-  <section class="slide light solution" data-act="Standing">
+  <!-- 04 · THE TRADITIONAL MODEL -->
+  <section class="slide light" data-act="The Problem">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">02</span> What BHW Connect Is</div>
-      <h2 class="tight">Three things a training event cannot be.</h2>
-      <div class="grid3">
-        <div class="card">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.5 9.5 0 0 1-2.9-.4L4 21l1.4-4.2A8.2 8.2 0 0 1 3.6 11.5C3.6 7 7.8 3.5 12.3 3.5S21 7 21 11.5z"/><path d="M9 10h7M9 13.5h4.5"/></svg>
-          <h3>Support at the doorstep</h3>
-          <p>A bilingual Knowledge Base and Chat Guide answering a BHW's question in Filipino, English or Taglish — at the moment the question arises, not the moment the training was held.</p>
-        </div>
-        <div class="card">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 5 2.5 5 2.5s5-1 5-2.5v-5"/><path d="M21 8v6"/></svg>
-          <h3>Training that doesn't decay</h3>
-          <p>Every BHW takes the same modules directly — no cascade, no retelling. Assessment is per person, against the same rubric, and content updates for everyone at once.</p>
-        </div>
-        <div class="card">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9M10 20V4M16 20v-7M22 20H2"/></svg>
-          <h3>A record that can be queried</h3>
-          <p>Competency is written to the national registry. DOH can ask “which BHWs in this municipality are certified for CBG screening?” and get an answer, at any level of the hierarchy.</p>
-        </div>
-      </div>
-      <p class="underline-note">All three run on the <span class="mark">same platform</span>, on a workforce that is <span class="mark">already registered</span> in it.</p>
-    </div>
-  </section>
-
-  <!-- 04 · WHAT HHP+ BUILT + THE PLAN -->
-  <section class="slide light" data-act="The Gap">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">03</span> What HHP+ Has Already Built</div>
-      <h2 class="tight">The clinical work is done — and it is good.</h2>
-      <div class="grid3">
-        <div class="pillar"><h3>Facility capacity built</h3><p>Physicians, nurses and NCD coordinators trained under PhilPEN 2025 and PPSA across Western Visayas.</p></div>
-        <div class="pillar"><h3>Tools that work</h3><p>Clinical job aids, NCD flipcharts and monitoring tools — developed, field-tested, distributed. Instruments already in use.</p></div>
-        <div class="pillar"><h3>A defined BHW competency</h3><p>Region VI CHD already treats community screening, including CBG with return demonstration, as a BHW skill.</p></div>
+      <div class="eyebrow"><span class="num"></span> How BHW Capacity Is Built Today</div>
+      <h2 class="tight">The traditional model, run perfectly, still ends.</h2>
+      <p class="lead" style="max-width:80ch">Almost every BHW training programme in the country is built the same way. HHP+ is a good one — well designed, well costed, and about to be delivered exactly as written. It is the example precisely because there is nothing wrong with it.</p>
+      <div class="loop">
+        <div class="node"><span class="step">01</span><b>Design</b><p>A curriculum and a set of job aids are authored for one programme.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">02</span><b>Contract</b><p>A provider is procured to deliver it over a fixed number of months.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">03</span><b>Train, in a select LGU</b><p>Representatives are trained in person, in the provinces the budget reaches.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">04</span><b>Cascade</b><p>Those representatives retell it to peers. Competence is scored by hand and filed locally.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">05</span><b>Recommend, and close</b><p>A final output recommends scale-up. The contract ends. Nothing carries it further.</p></div>
       </div>
       <div class="meta-row">
-        <span class="mtag"><b>The package on the table:</b></span>
+        <span class="mtag"><b>The live example — the HHP+ package:</b></span>
         <span class="mtag">6 modules</span>
         <span class="mtag">7 competency domains</span>
         <span class="mtag">5 outputs</span>
@@ -1032,17 +1113,15 @@
         <span class="mtag">5 months</span>
         <span class="mtag">Contractor-delivered</span>
       </div>
-      <p class="underline-note">This is a sound plan. Everything that follows assumes it goes ahead <span class="mark">exactly as designed</span>.</p>
-      <p class="src">Summarized from “Strengthening Barangay Health Worker Capacity under HHP+”, BLHSD alignment meeting, 31 July 2026.</p>
+      <p class="underline-note">This is a sound plan, and everything that follows assumes it goes ahead exactly as designed. These are not defects in anyone's design — they are <span class="mark">what happens to every training that ends</span>.</p>
+      <p class="src">Package summarized from “Strengthening Barangay Health Worker Capacity under HHP+”, BLHSD alignment meeting, 31 July 2026.</p>
     </div>
   </section>
 
-
-
-  <!-- 06 · THE GAPS -->
-  <section class="slide darker problem wide" data-act="The Gap">
+  <!-- 05 · THE GAPS -->
+  <section class="slide darker problem wide" data-act="The Problem">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">04</span> What a Training Programme Cannot Do</div>
+      <div class="eyebrow"><span class="num"></span> What a Training Programme Cannot Do</div>
       <h2 class="tight">Six gaps that survive a perfectly executed contract.<span class="statechip open">6 open</span></h2>
       <p class="lead" style="max-width:74ch;margin-bottom:.2rem">At a doorstep in month nine, a Barangay Health Worker has a question and no one to ask. That is the shape of all six.</p>
       <div class="gaps">
@@ -1065,12 +1144,12 @@
         <div class="gap">
           <div class="gap-h"><span class="gtag">G4</span><span class="gstate">Open</span></div>
           <h3>No route to national</h3>
-          <p>Output 5 delivers scale-up <em>recommendations</em>. A recommendation is not a mechanism.</p>
+          <p>Scale-up is an <em>output</em> of the project, never a property of it. Output 5 delivers recommendations — and a recommendation is not a mechanism. It has to be funded again to become anything.</p>
         </div>
         <div class="gap">
           <div class="gap-h"><span class="gtag">G5</span><span class="gstate">Open</span></div>
           <h3>One competency, once</h3>
-          <p>Nothing is left standing to hold the next programme. Immunization, nutrition, MNCH each start again from zero.</p>
+          <p>Nothing is left standing to hold the next programme. Immunization, nutrition, MNCH and family planning each start again from zero — new curriculum, new contract, new cascade, full price.</p>
         </div>
         <div class="gap">
           <div class="gap-h"><span class="gtag">G6</span><span class="gstate">Open</span></div>
@@ -1081,29 +1160,171 @@
     </div>
   </section>
 
-  <!-- 07 · STANCE -->
-  <section class="slide darker centered" data-act="The Answer">
+  <!-- 06 · THE COST OF STARTING OVER -->
+  <section class="slide darker problem wide" data-act="The Problem">
     <div class="slide__inner">
-      <div class="stance stance-2">
-        <q>Technology is <em>not</em> the end-all.</q>
-        <div class="stance-gloss">
-          <span class="stance-rule">The standard we hold it to</span>
-          <p class="lead">A better app doesn't fix a health system — people do. BHW Connect earns its place only by making the human frontline stronger. The tool serves the worker, never the other way around.</p>
+      <div class="eyebrow"><span class="num"></span> The Cost of Starting Over</div>
+      <h2 class="tight">Doing it the usual way is not cheaper. It is paid later, and it is paid every round.<span class="statechip open">6 still open</span></h2>
+      <p class="lead" style="max-width:80ch;margin-bottom:.2rem">The package still runs — exactly as designed, exactly as costed. This is what is left standing the day it closes.</p>
+      <div class="sq">
+        <div class="sqcol">
+          <span class="when">Month 5 · the contract closes</span>
+          <h3>What stops</h3>
+          <ul>
+            <li><b>22,613–23,453</b> of Region VI's 23,813 BHWs were never trained directly. Whatever they got, they got second-hand.</li>
+            <li>The <b>12,280</b> in Aklan, Antique and Capiz were never in scope at all.</li>
+            <li>A BHW at a doorstep in month nine has a question and <b>no one to ask</b>.</li>
+            <li>Guidance moves; the video <b>cannot be re-cut</b>, and no correction reaches anyone already trained.</li>
+          </ul>
+          <p class="foot">The same six gaps as the slide before — G1 to G6, none closed by a well-run contract.</p>
         </div>
-        <div class="stance-band">
-          <span>Faster to answer</span>
-          <span>Easier to train</span>
-          <span>Impossible to overlook</span>
+        <div class="sqcol">
+          <span class="when">Already spent</span>
+          <h3>What it already cost</h3>
+          <ul>
+            <li><b>6 modules · 7 competency domains · 5 outputs</b>, authored once and unmaintainable after.</li>
+            <li>NCD flipcharts, clinical job aids and monitoring tools — printed, distributed, <b>no update path</b>.</li>
+            <li>HHP+ videos, PhilPEN protocols and facilitator guides: <b>files on somebody's laptop</b> the week it ends.</li>
+            <li>The 29-criterion CBG checklist, hand-scored and filed locally. <b>No queryable record</b> of competence.</li>
+          </ul>
+          <p class="foot">Every artefact funded once, each with a shelf life. Total already spent: <span class="tbc">[TO CONFIRM]</span>.</p>
         </div>
+        <div class="sqcol">
+          <span class="when">Year 2, and every year after</span>
+          <h3>What you buy again</h3>
+          <ul>
+            <li>Turnover is <b>expected, not exceptional</b>. Everyone who joins after month 5 needs the training that just ended.</li>
+            <li>Immunization, nutrition, MNCH, family planning — <b>each starts from zero</b>: new contract, new cascade.</li>
+            <li>Scale-up beyond Region VI is a <b>recommendation</b>, and a recommendation must be funded again to be anything.</li>
+            <li>The same competency, purchased a second and a third time, at <b>full price each time</b>.</li>
+          </ul>
+          <p class="foot">A standard is set once. A cascade is bought every round, forever.</p>
+        </div>
+      </div>
+      <div class="verdict">
+        <p class="kicker-line" style="max-width:74ch">The choice is not between funding this and funding nothing. It is between setting the standard once — and buying the same five months again, for every programme, every region, and every year the workforce turns over.</p>
+        <span class="vnum">6 / 6<small>gaps still open the day the contract closes</small></span>
       </div>
     </div>
   </section>
 
-  <!-- FULL BREADTH -->
-  <section class="slide light solution wide" data-act="The Answer">
+  <!-- 07 · THE SHIFT — the hinge of the deck -->
+  <!-- Deliberately a neutral dark ground rather than the problem or the solution
+       register: the turn happens ON this slide, so both registers have to be
+       present at once. Left column keeps the problem vocabulary (square corners,
+       ember rule); right column keeps the solution vocabulary (rounded, lifted,
+       verdant). The grid fills row-wise so each pair aligns as one sentence with
+       two endings. -->
+  <section class="slide dark wide" data-act="The Opportunity">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">05</span> The Whole System</div>
-      <h2 class="tight">Not a chat app. A platform the whole workforce runs on.</h2>
+      <div class="eyebrow"><span class="num"></span> The Shift We Are Proposing</div>
+      <h2 class="tight">Don't fund a module and hope it scales. Co-develop the standard and make it mandatory.</h2>
+      <p class="lead" style="max-width:80ch">Same clinical content. Same first programme. Same pilot LGU. What changes is what the pilot is <em>for</em> — and what is left holding the ground after it.</p>
+      <div class="shift">
+        <div class="swayhd old">The traditional approach</div>
+        <div class="swayhd new">What we propose instead</div>
+
+        <div class="r old"><span>One module, developed for one selected LGU.</span></div>
+        <div class="r new"><span>One <b>standard</b>, binding on every BHW training in the country.</span></div>
+
+        <div class="r old"><span>Scale-up is a recommendation in a final report.</span></div>
+        <div class="r new"><span>Scale-up is a <b>DOH issuance</b> — with a national registry to run it on.</span></div>
+
+        <div class="r old"><span>Funded as a project. Ends when the contract closes.</span></div>
+        <div class="r new"><span>Adopted as <b>policy</b>. Outlives the engagement that funded it.</span></div>
+
+        <div class="r old"><span>The next programme starts again from zero.</span></div>
+        <div class="r new"><span>The next programme <b>inherits</b> the standard, the platform and the workforce.</span></div>
+
+        <div class="r old"><span>The pilot proves that a module worked, somewhere.</span></div>
+        <div class="r new"><span>The pilot is the <b>evidence the issuance rests on</b>.</span></div>
+      </div>
+      <p class="underline-note">Technology is not the end-all. A better app does not fix a health system — and a standard that people are held to is <span class="mark">not an app</span>. The platform earns its place only by making the standard enforceable.</p>
+    </div>
+  </section>
+
+  <!-- 08 · WHAT WE CO-DEVELOP -->
+  <section class="slide light solution wide" data-act="The Opportunity">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> What We Co-Develop</div>
+      <h2 class="tight">Four instruments, and DOH holds all four afterwards.</h2>
+      <div class="feat">
+        <div class="fcol">
+          <h3>1 · The standard</h3>
+          <ul>
+            <li><b>Competency domains</b> defined per BHW programme area, starting with community NCD screening</li>
+            <li><b>Assessment rubrics and pass marks</b> — the DOH return-demonstration instrument, digitized as written, not reinvented</li>
+            <li><b>Re-certification triggers</b>, because BHW turnover is expected rather than exceptional</li>
+            <li><b>Recognition under RA 7883</b> — its standing, and its relation to accreditation and incentives, proposed and not assumed</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>2 · The issuance</h3>
+          <ul>
+            <li>A <b>DOH departmental issuance</b> — Administrative Order or Department Memorandum, <span class="tbc">[instrument · route · timing TO CONFIRM]</span></li>
+            <li>Establishes the platform's and the standard's <b>mandate, ownership and nationwide applicability</b></li>
+            <li>Binds <b>all BHW training</b> — whoever funds it, whoever delivers it</li>
+            <li><b>Drafted in Year 1</b>, on the pilot's own evidence, and targeted for adoption thereafter</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>3 · The platform that runs it</h3>
+          <ul>
+            <li><b>Registry-linked</b>: a certification becomes a queryable record, not a certificate in a folder</li>
+            <li><b>One engine, many curricula</b> — adding a programme is authoring and DOH approval, not a new build</li>
+            <li>Answers at the doorstep, trains <b>without cascade</b>, assesses per person against one rubric</li>
+            <li><b>DOH-owned</b>, open Postgres core, portable onto government infrastructure</li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h3>4 · Governance &amp; QA</h3>
+          <ul>
+            <li><b>Content Review Panel</b> and DOH approval before anything reaches a Barangay Health Worker</li>
+            <li><b>Content governance SOP</b> — every entry with a named owner and a review-due date</li>
+            <li><b>Conformance</b>: how any training provider demonstrates it meets the standard</li>
+            <li><b>Data privacy and data-rights playbook</b>, consent, retention and breach response</li>
+          </ul>
+        </div>
+      </div>
+      <p class="underline-note">After Year 1, DOH holds a standard it can <span class="mark">require</span>, a platform it can run that standard on, and the evidence to make it <span class="mark">mandatory</span>.</p>
+      <p class="src">Instruments as listed in the accompanying concept note, §18 Policy Contribution. The legal standing of the credential is a policy step proposed for Year 1; it is not presumed by this deck.</p>
+    </div>
+  </section>
+
+  <!-- 09 · THE PATHWAY -->
+  <section class="slide light solution wide" data-act="The Opportunity">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> Standard → Pilot → Issuance → National</div>
+      <h2 class="tight">The pilot is not a hope that it scales. It is the evidence the issuance needs.</h2>
+      <div class="loop">
+        <div class="node"><span class="step">01</span><b>Co-develop</b><p>DOH and WHO write the competency and certification standard, validated against HEARTS, PhilPEN 2025 and the 2018 WHO CHW guideline.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">02</span><b>Pilot in a select LGU</b><p>One programme, one region: HHP+ community NCD screening in Western Visayas. Real Barangay Health Workers, measured against the standard itself.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">03</span><b>Issue</b><p>The Year-1 evidence brief goes to DOH, and the standard becomes an issuance binding on all BHW training — not a recommendation to fund again.</p></div>
+        <div class="arrow">→</div>
+        <div class="node"><span class="step">04</span><b>Scale nationally</b><p>Onboarding, not roadshows. ~300,000 already-profiled BHWs across 42,000+ barangays, on the registry Phase 1 has already built.</p></div>
+      </div>
+      <div class="ladder">
+        <span class="rung">Barangay</span><span class="sep">›</span>
+        <span class="rung">RHU</span><span class="sep">›</span>
+        <span class="rung">City / Municipal</span><span class="sep">›</span>
+        <span class="rung">Provincial</span><span class="sep">›</span>
+        <span class="rung">Regional · CHD VI</span><span class="sep">›</span>
+        <span class="rung top">National · DOH</span>
+      </div>
+      <div class="rollup">
+        <p>Every later curriculum — immunization, nutrition, MNCH, family planning, communicable disease surveillance, first aid, BHW administration — enters through the same standard and the same engine.</p>
+        <p class="rollup-k">Not a new reporting line. The one Phase 1 already drew, finally carrying something.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · THE INSTRUMENT -->
+  <section class="slide light solution wide" data-act="The Opportunity">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> The Instrument</div>
+      <h2 class="tight">What a mandatory standard has to run on.</h2>
       <div class="feat">
         <div class="fcol">
           <h3>Answer</h3>
@@ -1142,393 +1363,95 @@
           </ul>
         </div>
       </div>
-      <p class="underline-note">Sixteen capabilities, <span class="mark">one platform, one login</span> — designed against a workforce that is already registered in it.</p>
-    </div>
-  </section>
-
-  <!-- 08 · THE ENGINE -->
-  <section class="slide light solution" data-act="The Answer">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">06</span> The Engine</div>
-      <h2 class="tight">Every question makes the system smarter.</h2>
-      <div class="loop">
-        <div class="node"><span class="step">01</span><b>A BHW asks</b><p>A real question, in her own words, mid-visit.</p></div>
-        <div class="arrow">→</div>
-        <div class="node"><span class="step">02</span><b>The base answers</b><p>Matched to DOH-approved guidance. Rule-based — no cost per matched question.</p></div>
-        <div class="arrow">→</div>
-        <div class="node"><span class="step">03</span><b>Gaps are logged</b><p>Unanswered questions surface automatically, themed and counted.</p></div>
-        <div class="arrow">→</div>
-        <div class="node"><span class="step">04</span><b>A DOH reviewer fills them</b><p>Clinically reviewed by the Content Review Panel, DOH-approved, published to everyone.</p></div>
-      </div>
-      <div class="loopback">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg>
-        <span>…and the whole frontline benefits from the next answer — while DOH learns what the field doesn't yet understand.</span>
-      </div>
-      <div class="ladder">
-        <span class="rung">Barangay</span><span class="sep">›</span>
-        <span class="rung">RHU</span><span class="sep">›</span>
-        <span class="rung">City / Municipal</span><span class="sep">›</span>
-        <span class="rung">Provincial</span><span class="sep">›</span>
-        <span class="rung">Regional · CHD VI</span><span class="sep">›</span>
-        <span class="rung top">National · DOH</span>
-      </div>
-      <div class="rollup">
-        <p>Data rolls up the hierarchy the registry already defines — real-time visibility, finally flowing upward.</p>
-        <p class="rollup-k">Not a new reporting line. The one Phase 1 already drew, finally carrying something.</p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- STATUS -->
-  <section class="slide dark" data-act="The Answer">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">07</span> Where It Stands</div>
-      <h2 class="tight">Designed end to end. Not yet built.</h2>
-      <div class="status">
-        <div class="col done">
-          <h3>✓ Complete</h3>
-          <ul>
-            <li>Requirements, data model and system architecture</li>
-            <li>User journeys for BHW, admin, assessor and designer</li>
-            <li>Content governance and DOH approval workflow</li>
-            <li>Accessibility and data-privacy approach</li>
-            <li>A staged build roadmap, costed</li>
-          </ul>
-        </div>
-        <div class="col part">
-          <h3>◐ Demonstrable today</h3>
-          <ul>
-            <li>Clickable mockups of every core journey — the next five slides</li>
-            <li>Bilingual and light/dark, as designed</li>
-            <li>Enough to review the design honestly, not a working system</li>
-          </ul>
-        </div>
-        <div class="col todo">
-          <h3>○ Not yet done</h3>
-          <ul>
-            <li>The platform itself — this is what Year 1 builds</li>
-            <li>HHP+ curriculum authored, clinically validated, DOH-approved</li>
-            <li>Provisioning, onboarding, certification and evaluation</li>
-            <li>Piloting with real Barangay Health Workers</li>
-          </ul>
-        </div>
+      <div class="meta-row">
+        <span class="mtag"><b>Where it stands:</b></span>
+        <span class="mtag">Phase 1 registry — delivered</span>
+        <span class="mtag">Phase 2 — designed end to end</span>
+        <span class="mtag">Not yet built</span>
+        <span class="mtag">Clickable mockups — annex</span>
+        <span class="mtag">Open Postgres core · portable to government infrastructure</span>
       </div>
       <p class="underline-note">We will not call anything <span class="mark">built</span> until a Barangay Health Worker has used it in the field. Today the design is complete and the mockups are real; the system is not.</p>
+      <p class="src">Migration onto government infrastructure is subject to a hosting agreement with DOH KMITS. Ownership of the platform, its source code, its data and all published content rests with DOH throughout and after.</p>
     </div>
   </section>
 
-  <!-- DEMO (filled by script) -->
-  <section class="slide darker demo wide" data-act="Prototype" data-scene="chat"><div class="slide__inner"></div></section>
-  <section class="slide darker demo wide" data-act="Prototype" data-scene="loop"><div class="slide__inner"></div></section>
-  <section class="slide darker demo wide" data-act="Prototype" data-scene="modules"><div class="slide__inner"></div></section>
-  <section class="slide darker demo wide" data-act="Prototype" data-scene="checklist"><div class="slide__inner"></div></section>
-  <section class="slide darker demo wide" data-act="Prototype" data-scene="certify"><div class="slide__inner"></div></section>
-
-  <!-- DESIGNED TO LAST -->
-  <section class="slide light solution" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">08</span> Designed to Last</div>
-      <h2 class="tight">HHP+ is module one, not the boundary.</h2>
-      <div class="cols2" style="align-items:center">
-        <div>
-          <div class="listhead">One engine, many curricula</div>
-          <ul class="numlist">
-            <li><i>1</i><span><b>Community NCD screening — HHP+ / PhilPEN 2025.</b> Year 1 flagship, Region VI. Proven end to end, and the template every later module inherits.</span></li>
-            <li><i>+</i><span>Immunization · Nutrition · Family Planning · Communicable Disease Surveillance · First Aid · BHW Administrative Procedures — each on the roadmap, each a content and approval exercise.</span></li>
-          </ul>
-          <p class="src">Adding a programme is authoring and DOH approval, not a new build. The second module and the third cost a fraction of the first, because the engine, the workflow and the workforce are already there.</p>
-        </div>
-        <div class="chips" style="grid-template-columns:1fr;margin-top:0">
-          <div class="chipcard"><b>No per-question licensing</b><p>The rule-based engine answers matched questions at no marginal cost. The optional AI fallback for unmatched questions is modelled at ₱4,000–43,000 a year.</p></div>
-          <div class="chipcard"><b>Portable by design</b><p>An open, non-proprietary Postgres core intended for migration onto government infrastructure, subject to a hosting agreement with DOH KMITS.</p></div>
-          <div class="chipcard"><b>Built for turnover</b><p>BHW and local-official turnover is expected, not exceptional. Self-service onboarding, refreshers and re-certification are designed in, so a new cohort needs no new project.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FREEBIES -->
-  <section class="slide light solution wide" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">09</span> Already Paid For</div>
-      <h2 class="tight">Everything you have already produced comes with you.</h2>
-      <p class="lead" style="max-width:70ch">The platform ingests existing material rather than recreating it. Each of these was funded once and currently lives as a printed artefact or a file on somebody's laptop; on the platform it becomes permanent, updatable and nationally distributable.</p>
-      <div class="ingest">
-        <div class="row"><span class="from">NCD flipcharts</span><span class="to">→</span><span class="into">Flip-chart module — client-facing image beside the BHW's script</span></div>
-        <div class="row"><span class="from">Clinical job aids</span><span class="to">→</span><span class="into">Knowledge Base articles, searchable at the doorstep</span></div>
-        <div class="row"><span class="from">Monitoring tools</span><span class="to">→</span><span class="into">Structured forms and surveys with roll-up reporting</span></div>
-        <div class="row"><span class="from">The 29-criterion CBG checklist</span><span class="to">→</span><span class="into">The assessment engine, auto-scored against its own bands</span></div>
-        <div class="row"><span class="from">HHP+ instructional videos</span><span class="to">→</span><span class="into">E-learning modules, re-cuttable when guidance moves</span></div>
-        <div class="row"><span class="from">PhilPEN protocols &amp; facilitator guides</span><span class="to">→</span><span class="into">Course content and Knowledge Base entries</span></div>
-      </div>
-      <p class="underline-note">No content is rebuilt and nothing is re-procured. Every peso already spent stops having a <span class="mark">shelf life</span>.</p>
-    </div>
-  </section>
-
-  <!-- WHY WHO -->
-  <section class="slide light" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">10</span> Why WHO</div>
-      <h2 class="tight">Your normative work, given a delivery system.</h2>
-      <div class="grid3">
-        <div class="pillar">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9 11h1.5l1-2 1.5 4 1-2H15"/></svg>
-          <h3>HEARTS and PhilPEN</h3>
-          <p>HHP+ operationalizes HEARTS through PhilPEN 2025. Community screening is the entry point to both — and the one link with no maintained competency pathway behind it.</p>
-        </div>
-        <div class="pillar">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.1a4 4 0 0 1 0 7.8"/><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M18 14a5 5 0 0 1 4 4.9V21"/></svg>
-          <h3>The 2018 CHW guideline, delivered</h3>
-          <p>Competency-based training · certification · supportive supervision · workforce data. This platform is the country mechanism for all four.</p>
-        </div>
-        <div class="pillar">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-          <h3>Digital health, done properly</h3>
-          <p>A government-owned digital public good on open standards — country-led, institutionally housed, built to outlast the engagement that funds it.</p>
-        </div>
-      </div>
-      <p class="underline-note">WHO has already invested in the clinical content. This is what makes it <span class="mark">permanent, current and national</span>.</p>
-      <p class="src">WHO guideline on health policy and system support to optimize community health worker programmes, 2018.</p>
-    </div>
-  </section>
-
-  <!-- 17 · THE ASK -->
+  <!-- 11 · THE ASK -->
   <section class="slide darker" data-act="The Ask">
     <div class="slide__inner">
-      <div class="eyebrow"><span class="num">11</span> The Ask</div>
-      <h2 class="tight">What we're asking WHO to build with us.</h2>
+      <div class="eyebrow"><span class="num"></span> The Ask</div>
+      <h2 class="tight">Four roles — and one of them does not exist in a training contract.</h2>
       <div class="ask">
         <div class="item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2 0 0 1 5 0c0 2.5-5 1.5-5 4a2.5 2 0 0 0 5 0"/></svg>
-          <h3>Year-1 financing</h3>
-          <p>Structured as deliverable-based outputs with go/no-go gates, so payment follows acceptance.</p>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9 11h1.5l1-2 1.5 4 1-2H15"/></svg>
+          <h3>Co-develop the standard</h3>
+          <p>HHP+ operationalizes HEARTS through PhilPEN 2025, and community screening is the entry point to both — the one link with no maintained competency pathway behind it. Write that pathway with us.</p>
         </div>
         <div class="item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <h3>Technical validation</h3>
-          <p>WHO review of the digitized curriculum against HEARTS and PhilPEN 2025 — the review point Output 3 already defines.</p>
-        </div>
-        <div class="item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h11l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.1a4 4 0 0 1 0 7.8"/><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M18 14a5 5 0 0 1 4 4.9V21"/></svg>
           <h3>Normative alignment</h3>
-          <p>Position the certification pathway as a country implementation of WHO's CHW competency recommendations.</p>
+          <p>The 2018 CHW guideline asks for competency-based training, certification, supportive supervision and workforce data. The framework delivers all four — position it as the country implementation.</p>
         </div>
         <div class="item">
           <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12l-4 4 4 4"/><path d="M16 12l4-4-4-4"/><path d="M14 4l-4 16"/></svg>
-          <h3>Convening</h3>
-          <p>WHO's standing with DOH, BLHSD and CHD VI to carry a regional package into a national commitment.</p>
+          <h3>Convene the issuance</h3>
+          <p>WHO's standing with DOH, BLHSD and CHD VI to carry a piloted standard into a national commitment. This is the role a training TOR cannot buy at any price.</p>
+        </div>
+        <div class="item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3>Year-1 support</h3>
+          <p>Structured as deliverable-based outputs with go/no-go gates, so payment follows acceptance. Envelope, funding tiers, workplan and results framework are in the accompanying concept note.</p>
         </div>
       </div>
-      <p class="underline-note" style="border-top-color:var(--line-dark)"><b>Why a separate instrument, not a wider training TOR:</b> a training contract buys an <span class="mark">event</span>. This buys an <span class="mark">asset</span> that DOH owns and operates after the contract closes. Ownership of the platform, its source code, its data and all published content rests with DOH throughout and after, under an MOA executed before implementation.</p>
+      <p class="underline-note" style="border-top-color:var(--line-dark)"><b>Why a separate instrument, not a wider training TOR:</b> a training contract buys an <span class="mark">event</span>. A standard, mandated, sets the terms of <span class="mark">every training that comes after it</span> — and DOH owns the platform, its source code, its data and all published content throughout and after, under an MOA executed before implementation.</p>
     </div>
   </section>
 
-  <!-- SCOPE, COVERAGE & COST -->
-  <section class="slide light wide" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">12</span> Scope, Coverage &amp; Year-1 Cost</div>
-      <h2 class="tight">₱14.98M is what it is worth. What it costs you is a choice.</h2>
-      <div class="cols2" style="align-items:start">
-        <div>
-          <div class="listhead">What a peso buys, by reach</div>
-          <div class="ladder-v">
-            <div class="rung-v"><span class="who">The training package, reached directly</span><span class="n">360–1,200</span><span class="per">—<small>five months</small></span></div>
-            <div class="rung-v mid"><span class="who">This platform, Year 1 — all of Western Visayas</span><span class="n">23,813</span><span class="per">₱629<small>per BHW</small></span></div>
-            <div class="rung-v top"><span class="who">The same platform, national profiled base</span><span class="n">~300,000</span><span class="per">₱50<small>per BHW</small></span></div>
-          </div>
-          <p class="src">Twenty to sixty-six times the reach. Year 1 covers the whole region — including the 12,280 in Aklan, Antique and Capiz the package never reaches — because onboarding activates an already-profiled workforce. The build is paid once.</p>
-        </div>
-        <div>
-          <div class="listhead">The ₱14.98M envelope, split by who can carry it</div>
-          <div class="splitcost">
-            <div class="scol keep">
-              <div class="sc hd"><span>Only cash can buy</span><b>₱M</b></div>
-              <div class="sc"><span>Engineering — build &amp; harden</span><b>2.46</b></div>
-              <div class="sc"><span>Infrastructure &amp; tooling</span><b>1.40</b></div>
-              <div class="sc"><span>Content authoring</span><b>0.90</b></div>
-              <div class="sc"><span>Instructional design &amp; QA</span><b>0.78</b></div>
-              <div class="sc"><span>Contingency</span><b>0.44</b></div>
-              <div class="sc sum"><span>Cash instrument</span><b>5.98</b></div>
-            </div>
-            <div class="scol drop">
-              <div class="sc hd"><span>Direct support can absorb</span><b>₱M</b></div>
-              <div class="sc"><span>Rollout &amp; certification</span><b>2.80</b></div>
-              <div class="sc"><span>Independent M&amp;E</span><b>1.40</b></div>
-              <div class="sc"><span>Equipment</span><b>1.20</b></div>
-              <div class="sc"><span>Video &amp; bilingual production</span><b>1.15</b></div>
-              <div class="sc"><span>Project management</span><b>0.78</b></div>
-              <div class="sc"><span>Clinical validation</span><b>0.60</b></div>
-              <div class="sc"><span>Governance</span><b>0.40</b></div>
-              <div class="sc"><span>Contingency</span><b>0.67</b></div>
-              <div class="sc sum"><span>Absorbed</span><b>9.00</b></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tiers">
-        <div class="tier t1">
-          <span class="lbl">Tier 1 · Full value</span>
-          <span class="amt2">₱14.98M<small>≈ US$258,000 · financed</small></span>
-          <p>WHO finances the whole envelope. Nothing waits on counterpart capacity — fastest to contract, fastest to field.</p>
-          <span class="same">Same scope · 23,813 BHWs · 12 months</span>
-        </div>
-        <div class="tier t2">
-          <span class="lbl">Tier 2 · With direct support</span>
-          <span class="amt2">₱6.0M<small>estimate · ≈ US$103,000</small></span>
-          <p>WHO procures equipment, commissions the evaluation and validates clinically in-house; CHD VI, LGUs and BLHSD carry rollout and management. ₱8.98M leaves the cash instrument — <b>none of it leaves the scope</b>. The split is an estimate, and working it out with you is the conversation.</p>
-          <span class="same">Same scope · 23,813 BHWs · 12 months</span>
-        </div>
-        <div class="tier t3">
-          <span class="lbl">Tier 3 · Inside what you already provide</span>
-          <span class="amt2">No new instrument<small>longer runway</small></span>
-          <p>No separate financing. The platform is built against the support WHO already provides to HHP+, staged over more than twelve months. Slower — and still worth doing.</p>
-          <span class="same">Same scope · 23,813 BHWs · staged delivery</span>
-        </div>
-      </div>
-      <p class="src">₱14.98M is bottom-up from the workplan and is the honest full value of Year 1; rates to be confirmed with BLHSD before submission. Training delivery, travel and per diem sit outside all three tiers as counterpart contributions. Results framework, risk register, timeline and data-protection annex are in the accompanying concept note.</p>
-    </div>
-  </section>
-
-  <!-- 19 · GAPS CLOSED -->
-  <section class="slide light solution wide" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">13</span> Every Gap, Closed</div>
-      <h2 class="tight">The contract trains them. This is what keeps them trained.<span class="statechip closed">6 closed</span></h2>
-      <div class="closes">
-        <div class="close-row"><span class="gtag">G1</span><div><s>Materials go stale</s><b>Update once, everywhere, the same day</b></div></div>
-        <div class="close-row"><span class="gtag">G2</span><div><s>Cascade decay</s><b>No retelling — every BHW gets the original</b></div></div>
-        <div class="close-row"><span class="gtag">G3</span><div><s>The ceiling is arithmetic</s><b>Onboarding, not roadshows</b></div></div>
-        <div class="close-row"><span class="gtag">G4</span><div><s>No route to national</s><b>The platform is the mechanism</b></div></div>
-        <div class="close-row"><span class="gtag">G5</span><div><s>One competency, once</s><b>A curriculum engine, not a curriculum</b></div></div>
-        <div class="close-row"><span class="gtag">G6</span><div><s>Paper competence</s><b>The same rubric, scored and queryable</b></div></div>
-      </div>
-      <p class="src">Each closure is a designed capability, verified in Year 1 against the indicators in the concept note's results framework.</p>
-    </div>
-  </section>
-
-  <!-- 22 · THE COST OF THE STATUS QUO -->
-  <!-- Deliberately placed after "Every Gap, Closed" and before the close: the deck
-       has just shown what funding buys, so this is the same six gaps left open. It
-       reopens the problem register — ember, square corners, OPEN vocabulary — so the
-       counterweight reads at projector distance without a word being needed. -->
-  <section class="slide darker problem wide" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">14</span> The Cost of the Status Quo</div>
-      <h2 class="tight">Doing nothing is not free. It is paid later, and it is paid twice.<span class="statechip open">6 still open</span></h2>
-      <p class="lead" style="max-width:80ch;margin-bottom:.2rem">The package still runs — exactly as designed, exactly as costed. This is what is left standing the day it closes.</p>
-      <div class="sq">
-        <div class="sqcol">
-          <span class="when">Month 5 · the contract closes</span>
-          <h3>What stops</h3>
-          <ul>
-            <li><b>22,613–23,453</b> of Region VI's 23,813 BHWs were never trained directly. Whatever they got, they got second-hand.</li>
-            <li>The <b>12,280</b> in Aklan, Antique and Capiz were never in scope at all.</li>
-            <li>A BHW at a doorstep in month nine has a question and <b>no one to ask</b>.</li>
-            <li>Guidance moves; the video <b>cannot be re-cut</b>, and no correction reaches anyone already trained.</li>
-          </ul>
-          <p class="foot">The same six gaps as slide 05 — G1 to G6, none closed by a well-run contract.</p>
-        </div>
-        <div class="sqcol">
-          <span class="when">Already spent</span>
-          <h3>What it already cost</h3>
-          <ul>
-            <li><b>6 modules · 7 competency domains · 5 outputs</b>, authored once and unmaintainable after.</li>
-            <li>NCD flipcharts, job aids and monitoring tools — printed, distributed, <b>no update path</b>.</li>
-            <li>Videos, PhilPEN protocols, facilitator guides: <b>files on somebody's laptop</b> the week it ends.</li>
-            <li>The 29-criterion CBG checklist, hand-scored and filed locally. <b>No queryable record</b> of competence.</li>
-          </ul>
-          <p class="foot">Already sunk into content with a shelf life: <span class="tbc">[total spent TO CONFIRM]</span>.</p>
-        </div>
-        <div class="sqcol">
-          <span class="when">Year 2, and every year after</span>
-          <h3>What you buy again</h3>
-          <ul>
-            <li>Turnover is <b>expected, not exceptional</b>. Everyone who joins after month 5 needs the training that just ended.</li>
-            <li>Immunization, nutrition, MNCH, family planning — <b>each starts from zero</b>: new contract, new cascade.</li>
-            <li>Scale-up beyond Region VI is a <b>recommendation</b>, and a recommendation must be funded again to be anything.</li>
-            <li>The same competency, purchased a second and a third time, at <b>full price each time</b>.</li>
-          </ul>
-          <p class="foot">The platform is paid once. The cascade is paid every round, forever.</p>
-        </div>
-      </div>
-      <div class="verdict">
-        <p class="kicker-line" style="max-width:70ch">The choice is not between spending ₱14.98M and spending nothing. It is between building once — and buying the same five months again, and again, for as long as the programme exists.</p>
-        <span class="vnum">6 / 6<small>gaps still open the day the contract closes</small></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 23 · THE IMPACT -->
-  <section class="slide light solution wide" data-act="The Ask">
-    <div class="slide__inner">
-      <div class="eyebrow"><span class="num">15</span> The Impact</div>
-      <h2 class="tight">The output is 300,000 workers. The outcome is a country.</h2>
-      <p class="lead" style="max-width:82ch">Every Filipino lives in a barangay, and every barangay has Barangay Health Workers. No other health workforce in the country can say that — which is why this is the only training investment whose denominator is the whole population.</p>
-      <div class="chain">
-        <div class="cn out"><b>~300,000</b><span>BHWs trained &amp; certified — the output</span></div>
-        <span class="cx">→</span>
-        <div class="cn"><b>42,000+</b><span>barangays, all of them</span></div>
-        <span class="cx">→</span>
-        <div class="cn"><b>114M</b><span>Filipinos — the outcome</span></div>
-        <span class="cx">→</span>
-        <div class="cn"><b>≈380</b><span>Filipinos per BHW</span></div>
-      </div>
-      <div class="only">
-        <div class="oncard">
-          <h3>Present in every barangay</h3>
-          <p>BHWs are the one cadre with a mandated presence in all <b>42,000+</b> barangays. Physicians, nurses and midwives are posted to facilities — and facilities are not everywhere.</p>
-          <p class="vs">Universal by construction: accredited barangay by barangay under RA 7883.</p>
-        </div>
-        <div class="oncard">
-          <h3>They go to the door</h3>
-          <p>Facility care reaches the people who come. BHWs reach the people who <b>never present</b> — in the household, unprompted, before anything has become an emergency.</p>
-          <p class="vs">The only cadre whose default mode of delivery is the home visit.</p>
-        </div>
-        <div class="oncard">
-          <h3>Scale no facility network matches</h3>
-          <p>Roughly <b>300,000</b> Barangay Health Workers. The whole public clinical workforce — physicians, nurses and midwives together — is a fraction of that.</p>
-          <p class="vs">≈1 BHW per 380 Filipinos, before a peso of new hiring. Comparator headcount <span class="tbc">[TO CONFIRM]</span>.</p>
-        </div>
-        <div class="oncard">
-          <h3>The last mile, where there is no one else</h3>
-          <p>In geographically isolated and disadvantaged areas — island, upland and conflict-affected barangays — there is frequently <b>no resident clinician at all</b>.</p>
-          <p class="vs">Where the health system thins to nothing, the BHW is the health system.</p>
-        </div>
-      </div>
-      <p class="underline-note">Train the 300,000 and you have not trained 300,000 people. You have <span class="mark">raised the floor of primary care for 114 million</span> — by the only route that reaches all of them.</p>
-      <p class="src">Population ≈114M (PSA population projections, 2024). 42,000+ barangays nationwide. ~300,000 BHWs from the Phase 1 registry. BHW mandate, accreditation and barangay assignment under RA 7883 (1995). Per-BHW ratio is 300,000 ÷ 114M and is a coverage denominator, not a caseload.</p>
-    </div>
-  </section>
-
-  <!-- 24 · CLOSE -->
+  <!-- 12 · CLOSE -->
   <section class="slide darker centered close" data-act="">
     <div class="slide__inner">
       <div class="close-2">
         <div>
-          <div class="eyebrow"><span class="num">16</span> The Goal</div>
-          <h2>A connected, capable frontline — and a workforce DOH can finally see.</h2>
-          <p class="lead">Three hundred thousand health workers, trained, certified and supported. A hundred and fourteen million Filipinos, better cared for. And the clinical work WHO has already paid for, kept current instead of frozen.</p>
+          <div class="eyebrow"><span class="num"></span> The Goal</div>
+          <h2>One standard behind every BHW training.</h2>
+          <p class="lead">And a workforce DOH can finally see. BHWs are the one cadre with a mandated presence in every barangay — raise the floor of what they are certified to do, and you raise it everywhere at once.</p>
         </div>
         <div class="close-aside">
-          <div class="invite">One region · twelve months · 23,813 Barangay Health Workers.</div>
+          <div class="invite">Co-develop the standard · pilot it in one region · make it national.</div>
           <ul class="close-facts">
-            <li><b>₱14.98M</b> in full value — <b>≈₱6.0M</b> with direct support, or delivered inside the support you already provide.</li>
-            <li><b>DOH owns</b> the platform, its source code, its data and every published word, throughout and after.</li>
+            <li><b>DOH owns</b> the standard, the platform, its source code, its data and every published word — throughout and after.</li>
+            <li><b>The standard applies to all BHW training</b>, not to one programme and not to one region.</li>
             <li><b>HHP+ is module one</b>, not the boundary. The second curriculum costs a fraction of the first.</li>
           </ul>
-          <!-- One partner per line here, so the interpuncts that separate them on a
-               full-width footer are dropped rather than stranded on their own row. -->
           <div class="invite-partners">
             <span><b>World Health Organization</b> · Philippines</span>
             <span><b>Department of Health</b> · Bureau of Local Health Systems Development</span>
             <span><b>CHD</b> · Western Visayas</span>
           </div>
         </div>
+        <div class="close-band">
+          <div class="chain">
+            <div class="cn out"><b>~300,000</b><span>BHWs trained &amp; certified — the output</span></div>
+            <span class="cx">→</span>
+            <div class="cn"><b>42,000+</b><span>barangays, all of them</span></div>
+            <span class="cx">→</span>
+            <div class="cn"><b>114M</b><span>Filipinos — the outcome</span></div>
+            <span class="cx">→</span>
+            <div class="cn"><b>≈380</b><span>Filipinos per BHW</span></div>
+          </div>
+          <p class="src" style="color:var(--cream-soft)">Population ≈114M (PSA projections, 2024); 42,000+ barangays nationwide; ~300,000 BHWs from the Phase 1 registry; mandate and accreditation under RA 7883 (1995). 300,000 ÷ 114M is a coverage denominator, not a caseload. Comparator clinical-workforce headcount <span class="tbc">[TO CONFIRM]</span>.</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ANNEX · the clickable Phase 2 walkthrough, behind the close.
+       Filled by script from SCENES; data-scene keys are load-bearing. -->
+  <section class="slide darker demo wide" data-act="Annex" data-scene="chat"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Annex" data-scene="loop"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Annex" data-scene="modules"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Annex" data-scene="checklist"><div class="slide__inner"></div></section>
+  <section class="slide darker demo wide" data-act="Annex" data-scene="certify"><div class="slide__inner"></div></section>
 
 </div>
 
