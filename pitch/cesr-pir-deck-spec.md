@@ -14,11 +14,11 @@ so the deck fills 30 minutes of speaking.
 RESUs (Central Luzon, MIMAROPA, NCR); PDOHOs/PHOs; DSOs; and BHWs from Quezon City,
 Puerto Princesa, Palawan and Marinduque.
 
-**Shape.** 34 slides in five acts, one idea per slide, click-builds. Slide 2 is a ten-second
-outline. Four statement slides (1, 14, 31, 34) take about 30 seconds each; the rest average
-just under a minute. The count went from 24 to 34 deliberately: the dense slides were split
-so that no slide has to shrink to fit a screen (see *Fit without shrinking* below). The
-total content is unchanged; there are simply more clicks, and a click is one tap anywhere.
+**Shape.** 37 slides in five acts, one idea per slide, click-builds. Slide 2 is a ten-second
+outline. Four statement slides (1, 14, 34, 37) take about 30 seconds each; the rest average
+under a minute. The count went from 24 to 37 deliberately: the dense slides were split so
+that no slide has to shrink to fit a screen (see *Fit without shrinking* below). The total
+content is unchanged; there are simply more clicks, and a click is one tap anywhere.
 
 ---
 
@@ -31,15 +31,15 @@ Change these only deliberately — each one is holding something up.
 | **Tone toward CESR** | **Implicit.** No slide states a criticism. Evidence from the partner's own monitoring deck and activity reports is shown flat with a source caption, and the audience concludes. The single editorial sentence is on slide 11: *"This is not a finding about CESR. It is what the model produces, everywhere."* It points at the method, not at anyone. Do not add a second one. |
 | **7-1-7 = 0%** | Presenter notes only, never on a slide. On screen it reads as an attack on people who are in the room. |
 | **The partner is never named** | "The development partner", "partner-supported". EpiC GHS appears only inside citation captions and presenter notes, where it is the author of the source document. |
-| **Slide 31 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
-| **Slide 34 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
-| **Filipino** | Deck is English. Filipino pull-quotes at the emotional beats (slides 6, 22, 24), the seven gap statements on slide 28, and inside the chat simulations and the demo, where the language *is* the point. |
+| **Slide 34 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
+| **Slide 37 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
+| **Filipino** | Deck is English. Filipino pull-quotes at the emotional beats (slides 6, 22, 24), the seven gap statements on slides 30–31, and inside the chat simulations and the demo, where the language *is* the point. |
 | **Readiness language** | Phase 2 is described as *designed end to end and in build* — the CESR module is content and configuration on that system, not a new build. Never "deployed nationwide", never "live". |
-| **The logbook stops existing** | The operational claim the deck makes, and it must be made identically wherever it appears: slides 23–24 (the conversation, then the read-back and filing), slide 25 (the record it produces, with nobody writing it), slide 32's third demo answer (*"Hindi na po kayo mag-uulat nang mano-mano"*), and slide 20's two `Auto ✓` rows (timeliness is measured, not reconstructed). Nothing in the deck may tell a BHW to write in a log sheet or to file a report by hand. What is *not* claimed: the DSO and MESU still verify, assess and respond. Only the transcription and the chasing go. |
-| **Text density** | One headline, at most one supporting line; the build carries the rest. If a slide needs a paragraph, it is two slides — applied literally in the 24→34 split. |
+| **The logbook stops existing** | The operational claim the deck makes, and it must be made identically wherever it appears: slides 23–24 (the conversation, then the read-back and filing), slide 25 (the record it produces, with nobody writing it), slide 35's third demo answer (*"Hindi na po kayo mag-uulat nang mano-mano"*), and slide 20's two `Auto ✓` rows (timeliness is measured, not reconstructed). Nothing in the deck may tell a BHW to write in a log sheet or to file a report by hand. What is *not* claimed: the DSO and MESU still verify, assess and respond. Only the transcription and the chasing go. |
+| **Text density** | One headline, at most one supporting line; the build carries the rest. If a slide needs a paragraph, it is two slides — applied literally in the 24→37 split. |
 | **Logos** | Text-only wordmarks. No image assets anywhere. |
-| **Seven gaps, not six** | G7 *Correctable* came from the presenter: *"paano pag may mali sa materials? Papatawag ba tayo ulit?"* Slide 9 poses it, G7 registers it on slide 13, slide 16's fourth pillar and G7's closure on slide 28 answer it. That thread is the spine of the cost argument — ₱1.98 B buys one *version*, not a trained workforce. |
-| **Not a map** | Slide 26 is a schematic field of barangays, not a coastline. Two attempts at a real Philippines silhouette were discarded: one even slightly wrong is the one thing a room in Puerto Princesa would notice, and it would cost the argument. |
+| **Seven gaps, not six** | G7 *Correctable* came from the presenter: *"paano pag may mali sa materials? Papatawag ba tayo ulit?"* Slide 9 poses it, G7 registers it on slide 13, slide 16's fourth pillar and G7's closure on slide 31 answer it. That thread is the spine of the cost argument — ₱1.98 B buys one *version*, not a trained workforce. |
+| **Not a map** | Slide 27 is a schematic field of barangays, not a coastline. Two attempts at a real Philippines silhouette were discarded: one even slightly wrong is the one thing a room in Puerto Princesa would notice, and it would cost the argument. |
 
 ---
 
@@ -66,21 +66,24 @@ Change these only deliberately — each one is holding something up.
 | 17 | | The materials already exist — CESR's own guideline, decks and checklists |
 | 18 | | The cascade today, against the same materials as an approved module |
 | 19 | | Attendance is not competence — 1 of 3, what the BHW sees |
-| 20 | | 2 of 3, what the supervisor sees — the checklist, two rows measured by the system |
-| 21 | | 3 of 3, what the country sees — the registry, *who, in what, assessed by whom, when* |
+| 20 | | 2 of 3, what the supervisor sees — two rows measured by the system |
+| 21 | | 3 of 3, what the country sees — *who, in what, assessed by whom, when* |
 | 22 | | Chatbot as coach — recall support between events |
 | 23 | | Chatbot as the form — she describes it, it asks only what this signal needs |
 | 24 | | It reads back, then it files — *walang logbook* |
 | 25 | | The record it produced — *nobody wrote this, nobody filed it* |
-| 26 | | Three real signals, three separate logbooks — the field and the roll-up |
-| 27 | | Privacy — insight without exposure |
-| 28 | | One platform · `7 closed` — Filipino complaint against English answer, side by side |
-| 29 | The Ask | Three issuances committed, 2026–2027 |
-| 30 | | Three more in development, shaped with this room |
-| 31 | | You already asked for this — the "CESR Signal Application" |
-| 32 | | Live demo — tap a question; the third answer retires the logbook |
-| 33 | | What is real, and what is not — *that approval is the work, and it is yours* |
-| 34 | — | *What is your plan to align with our direction?* |
+| 26 | | Three real signals — every one found by a BHW |
+| 27 | | Three separate logbooks — the field, and none of them travelled |
+| 28 | | Privacy — consent, de-identified at capture, only aggregates travel |
+| 29 | | And what we keep, we keep briefly — retention, export, breach |
+| 30 | | One platform — G1–G4 closed |
+| 31 | | …and the last three · `7 closed` |
+| 32 | The Ask | Three issuances committed, 2026–2027 |
+| 33 | | Three more in development, shaped with this room |
+| 34 | | You already asked for this — the "CESR Signal Application" |
+| 35 | | Live demo — tap a question; the third answer retires the logbook |
+| 36 | | What is real, and what is not — *that approval is the work, and it is yours* |
+| 37 | — | *What is your plan to align with our direction?* |
 
 ---
 
@@ -139,7 +142,7 @@ quoted and what is invented is kept strictly apart:
 - **Invented, and labelled as such.** Every count — the 3/4 progress and all eight registry
   figures. These are shape, not data, and the tag and the source line both say so.
 
-### The demo (slide 32) and its status claim (slide 33)
+### The demo (slide 35) and its status claim (slide 36)
 
 The demo is an in-deck simulation of the interaction, not the deployed app. Its three
 answers are canned, drawn from the DOH guideline; the third — *"Hindi na po kayo
@@ -163,13 +166,22 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
   no reflow or scroll mode at any size — but the design goal is that it should never *need*
   to scale down. Each slide carries one idea and roughly one screen of content at natural
   size, so on a projector `fit()` scales *up* and the type gets larger, not smaller. The
-  24→34 split exists for this: cost/compare, converge/pillars, inventory/cascade, the
-  conversation/read-back/record, committed/in-development and demo/status were each one
-  dense slide; the seven gap cards became 4 + 3; the three mockup screens became one slide
-  each. All of them had shrunk to ~0.4 on a phone in landscape. Verified with nothing
-  clipped at 844×390, 1024×600, 1366×560 (a laptop with its chrome showing), 1366×768,
-  1280×720 and 1920×1080. On a portrait phone a dismissible prompt asks for landscape.
+  24→37 split exists for this: cost/compare, converge/pillars, inventory/cascade, the
+  conversation/read-back/record, the three events/the field they did not travel, privacy's
+  principles/its retention, committed/in-development and demo/status were each one dense
+  slide; the seven gap cards became 4 + 3 and their seven closures likewise; the three
+  mockup screens became one slide each. All had shrunk to ~0.4 on a phone in landscape.
+  Verified with nothing clipped at 844×390 (min 0.56), 1024×600 (0.96), 1366×560 (0.74),
+  1366×768 (1.00), 1280×720 (0.96) and 1920×1080 (1.39). On a portrait phone a dismissible prompt asks for landscape.
   Wheel and swipe-scroll are inert.
+- **No motion that blurs.** Nothing animates `transform` or `filter`, anywhere. `fit()` leaves
+  a static `scale()` on `.slide__inner`; animating a transform on the slide made Chrome
+  composite the whole subtree and rasterize it at the *unscaled* size, then magnify that
+  texture for the length of the animation — text went soft for half a second on every click
+  and snapped sharp at the end. A `filter: brightness` pulse on the newly revealed step did
+  the same thing on a smaller scale. Both are gone: slides and steps cross-fade on opacity
+  alone. If a future change adds a transform or filter transition to `.slide` or
+  `[data-step]`, the blur comes back.
 - **The stage is the control.** A tap or click on the right two-thirds of the screen
   advances (next step, then next slide); the left third goes back. Interactive elements
   inside a slide — the demo's question chips — keep their own click and never advance.
@@ -180,7 +192,7 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
   advances the slide; `←` reverses, and arriving at a slide backwards shows its build
   already finished. Stepped elements keep their layout box (`visibility`, not `display`) so
   `fit()` measures the finished slide and nothing reflows mid-build. The step just revealed
-  carries one short brightness pulse so the room's eye lands on it.
+  arrives by fade alone — see *No motion that blurs* below.
 - **Deep links.** `…#s15` opens slide 15 with its build complete. The hash tracks the current
   slide, so a link can be shared or bookmarked mid-deck. The key legend shows once on a
   fresh open at slide 1 and not on a deep link.
@@ -189,7 +201,7 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
 - **Notes.** `<aside class="notes">` per slide — the speaking line plus reserve material for
   Q&A. Never printed.
 - **Figures.** Dot positions for the scatter (slides 10 and 15) and the signal field (slide
-  26) are fixed tables, never `Math.random()` at runtime, so nothing moves between rehearsal
+  27) are fixed tables, never `Math.random()` at runtime, so nothing moves between rehearsal
   and the room. Both SVGs are width-capped by viewport height as well as by pixels, so they
   can never take more than about a third of a short screen from the headline. The converged
   targets on slide 15 are a phyllotaxis disc, not a single point. The single mockup screens
@@ -211,7 +223,10 @@ Chromium is at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
 2. **Nothing shrinks that should not** — for each slide, reveal all steps and compute the
    scale `fit()` would pick. Target: ≥ 1.0 at 1366×768 (the projector), ≥ 0.9 at 1024×600,
    ≥ 0.5 at 844×390 (a phone in landscape). Anything below 0.2 is clamped and clipped.
-3. **Print** — `--print-to-pdf` yields **34** landscape pages, one per slide.
+6. **No transform or filter is animated** — `getComputedStyle` on `.slide` and on any
+   `[data-step]` must report a `transition-property` of `opacity, visibility` and a
+   `transform` of `none`. Anything else reintroduces the blur.
+3. **Print** — `--print-to-pdf` yields **37** landscape pages, one per slide.
 4. **Reduced motion** — emulate `prefers-reduced-motion: reduce`; builds still reveal,
    nothing animates.
 5. **Controls** — a right-side tap advances one step at a time and then one slide, a
