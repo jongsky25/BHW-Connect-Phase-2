@@ -220,6 +220,31 @@ the build matures — recorded here rather than actioned now.
    authoring independence and the one worth building for: a keyword-collision
    warning at publish time, and/or a console-side run of the fixture gate.
 
+### 7.2 Candidate module — CESR (Community Event-Based Surveillance and Response)
+
+Source material from the DOH / EpiC Global Health Security CESR programme was shared into the
+project and is transcribed under `docs/source-material/cesr/`. CESR is BHW work — barangay health
+workers detecting, screening, recording and reporting community health signals — and the programme's
+June 2026 monitoring round closes with an explicit ask for a "CESR Signal Application" whose
+requirements map closely onto machinery this repo already ships (org hierarchy, RBAC, Filipino-first
+i18n, e-learning, dashboards, exports, feature flags).
+
+`docs/cesr-module.md` works that through in full: scope, a proposed data model in §4's conventions,
+six candidate increments with DoDs, open decisions, and risks.
+
+**It is not scheduled and not approved.** The rule of engagement above is unchanged — this is a
+candidate, and §7's sequence plus the still-open pilot launch gate take precedence. Two things in
+that document gate any decision to proceed and are worth naming here:
+
+- **Signal records are sensitive personal information about third parties.** They carry named
+  individuals, findable addresses, ages, symptoms, and hospitalization/death counts, plus the
+  reporter's identity. §5.4's DPA mechanics and the breach playbook were written for BHWs consenting
+  on their own behalf; the data subjects here never touch the app. That gap is a legal question to
+  settle before any build, not a checkbox at the pilot gate.
+- **The cheapest win needs no new increment.** Loading the CESR signal definitions into the KB and
+  the four training decks into INC-12 courses would address the monitoring round's measured finding
+  (BHWs could not reliably recall the signal definitions) using only shipped machinery.
+
 ## 8. Pilot Success Metrics
 
 Event taxonomy (fixed, versioned): `session.started`, `chat.question_asked`, `chat.answer_shown`, `chat.no_answer`, `chat.feedback_given`, `kb.article_viewed`, `onboarding.completed`, `settings.changed`, `gap.resolved`, and from INC-17 `chat.clarify_shown`, `chat.clarify_answered`, `chat.red_flag_shown`. INC-18a adds two *audit* events (a separate stream from these analytics events): `ai.external_call` and `ai.provider_paused`, both written with `subject_id = null` so they short-circuit `audit_events_admin_read`'s null branch rather than needing a new case in `audit_event_visible_to_admin` — see the note in §5.6. Note that `rpc_track_event` allowlists these names and raises on anything else, so a new event must be added to the function *and* to this list or it is silently dropped.

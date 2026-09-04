@@ -4,6 +4,10 @@ A web app for Barangay Health Workers (BHWs) in the Philippines. See `docs/` for
 the product vision, the increment-by-increment build contract, and the free-AI
 leverage plan — start there before touching code.
 
+Partner material the project has taken up for evaluation lives in
+`docs/source-material/`; `docs/cesr-module.md` is the current candidate module
+worked up from it (not scheduled — see `docs/delivery-plan.md` §7.2).
+
 ## Status
 
 **INC-14 — Flip-Chart Builder** (see `docs/delivery-plan.md` §7). INC-0
