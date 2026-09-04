@@ -415,6 +415,11 @@
   .sc i{width:12px;height:12px;border-radius:3px;border:1px solid rgba(36,28,23,.18);
     font-size:.48rem;display:grid;place-items:center;font-style:normal;color:var(--ink-soft)}
   .sc i.on{background:var(--verdant);border-color:var(--verdant);color:#fff}
+  /* Timeliness is measured by the system, not judged by a supervisor — the two
+     threshold rows say so rather than showing a hand-graded score. */
+  .auto{flex:0 0 auto;font-size:.52rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    background:rgba(31,122,69,.12);color:var(--verdant);border:1px solid rgba(31,122,69,.34);
+    border-radius:999px;padding:.14rem .42rem;white-space:nowrap}
   .vrd{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
     margin-top:.25rem;padding-top:.38rem;border-top:1px solid var(--line-light);font-size:.64rem}
   .vrd b{background:var(--verdant);color:#fff;border-radius:999px;padding:.18rem .5rem;
@@ -1047,9 +1052,9 @@
               <div class="crit"><span>Natukoy ang signal ayon sa apat na kahulugan</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
               <div class="crit"><span>Kumpleto ang impormasyon sa bawat signal</span><span class="sc"><i>0</i><i>1</i><i class="on">2</i><i>3</i></span></div>
               <div class="crit"><span>Naitala ang lahat ng signal, kahit hindi akma</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
-              <div class="crit"><span>Na-detect sa loob ng 7 araw</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
-              <div class="crit"><span>Naiulat sa loob ng 24 na oras</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
-              <div class="vrd"><span>14 / 15 &middot; 93%</span><b>Kwalipikado</b></div>
+              <div class="crit"><span>Na-detect sa loob ng 7 araw</span><span class="auto">Auto &#10003;</span></div>
+              <div class="crit"><span>Naiulat sa loob ng 24 na oras</span><span class="auto">Auto &#10003;</span></div>
+              <div class="vrd"><span>8 / 9 graded &middot; 2 auto-verified</span><b>Kwalipikado</b></div>
             </div>
           </div>
         </div>
@@ -1078,6 +1083,7 @@
     <aside class="notes">
       <p>Three screens, one record. Walk them left to right and say who is looking each time — the BHW, her supervisor, then the country.</p>
       <p>The criteria in the middle panel are not invented: they are lifted from the BHS Supervisory Checklist you already use, including the 7-day and 24-hour thresholds. The point is that the instrument does not change — only who can see the result.</p>
+      <p>Note the two rows marked <em>Auto</em>. Timeliness is no longer something a supervisor reconstructs from a logbook after the fact — the system already knows both timestamps, so it measures them. The supervisor's judgement is spent on the three things that actually need a human eye.</p>
       <p>Say the counts are illustrative before anyone asks. The tag on the headline says so too.</p>
       <p>For the sceptics: the skills demonstration is still in person, still graded by a human supervisor. We are not digitising judgement — only everything around it.</p>
       <p>This is the direct answer to slide 5: &ldquo;trained&rdquo; stops being a recollection and becomes a record.</p>
@@ -1133,20 +1139,21 @@
               <div class="bub u" data-step="3">opo, may ubo yung dalawa</div>
               <div class="bub skip" data-step="4">3 tanong ang nilaktawan — walang kinalaman ang hayop sa signal na ito</div>
               <div class="bub b" data-step="5">Tama po ba ito? 3 kaso &middot; Purok 2 &middot; magkakapitbahay &middot; simula 7 Set</div>
-              <div class="bub done" data-step="6">Naipadala na sa midwife at DSO. Naitala: 9 Set, 4:12 PM.</div>
+              <div class="bub done" data-step="6">Naitala at naipadala na sa midwife at DSO &mdash; 9 Set, 4:12 PM. Wala na pong isusulat sa logbook.</div>
             </div>
           </div>
         </div>
         <div>
           <div class="logsheet">
-            <div class="lh">Barangay signal log sheet</div>
+            <div class="lh">The record, written as she speaks</div>
             <div class="lrow" data-step="2"><span class="k">Signal type</span><span class="v">4 &mdash; rash and fever</span></div>
             <div class="lrow" data-step="3"><span class="k">Cases</span><span class="v">3 &middot; ages recorded</span></div>
             <div class="lrow" data-step="5"><span class="k">Onset</span><span class="v">7 September 2026</span></div>
-            <div class="lrow" data-step="6"><span class="k">Reported to</span><span class="v">Midwife &middot; DSO</span></div>
+            <div class="lrow" data-step="6"><span class="k">Reported to</span><span class="v">Midwife &middot; DSO &middot; MESU</span></div>
             <div class="lrow" data-step="6"><span class="k">Detected</span><span class="v stamp">9 Sep, 4:12 PM &mdash; 7-1-7 clock started</span></div>
           </div>
-          <p class="kicker-line fil" data-step="7">&ldquo;Ang report ay bunga na lang ng usapan.&rdquo;</p>
+          <p class="kicker-line" data-step="7">Nobody wrote this. Nobody filed it. Nobody will re-encode it.</p>
+          <p class="kicker-line fil" data-step="7" style="margin-top:.6rem">&ldquo;Ang report ay bunga na lang ng usapan.&rdquo;</p>
         </div>
       </div>
       <p class="src" data-step="6">Signal definitions and log-sheet fields from the DOH Interim Guidelines for Community-Based Surveillance, July 2024.</p>
@@ -1156,6 +1163,7 @@
       <p>One — only the relevant questions open. The animal-exposure branch never appears, so it can never be filled in wrongly. Fewer questions, better data.</p>
       <p>Two — the read-back. Accuracy is confirmed at the point of entry, by the person who was actually there, not at consolidation weeks later by someone who was not.</p>
       <p>Three — the timestamp. The 7-1-7 clock starts itself. Nobody has to remember to start it.</p>
+      <p>Then the line that matters most: <strong>the logbook stops existing.</strong> There is no paper to fill, no photograph to send, no MESU re-encoding at the other end — because describing the signal is what records and reports it. That is the same claim the demo on slide 23 makes; say it the same way in both places.</p>
       <p>This is G4 and G6 closing at the same time.</p>
     </aside>
   </section>
@@ -1336,7 +1344,7 @@
             <button type="button" class="askchip" data-a="1" aria-pressed="false">May batang may rashes at lagnat. Isusumbong ko ba ito?</button>
             <button type="button" class="askchip" data-a="2" aria-pressed="false">Kanino ko ire-report ang signal?</button>
           </div>
-          <p class="demohint">Tap a question. The answer comes from approved content — the same way it will on a BHW's phone.</p>
+          <p class="demohint">Tap a question. The answer comes from approved content — the same way it will on a BHW's phone. Ask the last one: <strong>nobody files a report, and nobody keeps a logbook.</strong></p>
         </div>
         <div>
           <div class="phone">
@@ -1354,6 +1362,8 @@
     </div>
     <aside class="notes">
       <p>Do this live. Tap one, wait for it to answer, tap another. It runs off this laptop — no wifi needed.</p>
+      <p>Save the third question for last and let the answer land: <em>&ldquo;Hindi na po kayo mag-uulat nang mano-mano.&rdquo;</em> That is the whole operational change in one line — the logbook stops existing, because describing the signal <em>is</em> recording it and reporting it. Every gap on slide 11 about paper, consolidation and timeliness dies right there.</p>
+      <p>If a DSO or MESU asks what happens to their role: nothing is taken away. They still verify, assess and respond. What goes is the transcription and the chasing.</p>
       <p>Be exact about the status line, and say it out loud rather than letting them read it: the platform is built, the CESR content is not approved. Claiming otherwise in this room would be caught inside a minute, and rightly.</p>
       <p>The last sentence is the real handover — the thing that turns this from a demo into an ask. The blocker is not engineering. It is approval, and EB owns it.</p>
       <p>If the wifi holds and someone wants to see the actual deployment, it can be opened in a browser — but do not promise that in advance.</p>
@@ -1799,12 +1809,15 @@
        + "(3) malubhang sakit ng taong nalapit sa may sakit na hayop, at (4) iisang tao na may ilang "
        + "partikular na sakit &mdash; tulad ng batang may rashes at lagnat." },
     { q: "May batang may rashes at lagnat. Isusumbong ko ba ito?",
-      a: "Kung may kasamang ubo, sipon, o namumulang mata &mdash; opo, Signal 4 po ito. Itala sa log sheet at "
-       + "i-report agad sa midwife o DSO. Kahit hindi pa sigurado, itala pa rin: lahat ng signal ay naitatala, "
-       + "kahit yung hindi naman pala kwalipikado." },
+      a: "Kung may kasamang ubo, sipon, o namumulang mata &mdash; opo, Signal 4 po ito. "
+       + "<b>Naitala ko na po ang sinabi ninyo</b>, at naipadala na sa midwife at DSO ninyo. "
+       + "Wala na pong isusulat sa logbook. Ilan po silang bata, at kailan nagsimula?",
+      tag: "Naitala &middot; 9 Set, 4:12 PM &mdash; nagsimula na ang 7-1-7" },
     { q: "Kanino ko ire-report ang signal?",
-      a: "Sa midwife o nurse ninyo, o sa Disease Surveillance Officer. Ang target po ay isang araw mula nang "
-       + "matuklasan. Sila na po ang magve-verify at magpapaabot sa MESU o CESU." }
+      a: "<b>Hindi na po kayo mag-uulat nang mano-mano.</b> Basta nakausap ninyo ako, awtomatiko nang "
+       + "naitatala at naipapadala sa midwife, sa DSO at sa MESU &mdash; kasama ang oras. "
+       + "Ang tungkulin po ninyo ay mapansin at isabi; ang pagtatala at pag-uulat ay sa sistema na.",
+      tag: "Walang logbook &middot; walang hiwalay na porma" }
   ];
 
   (function wireDemo(){
@@ -1830,7 +1843,8 @@
       var wait = reduced() ? 0 : 700;
       timer = setTimeout(function(){
         glass.innerHTML = '<div class="bub u">' + d.q + '</div>'
-                        + '<div class="bub b">' + d.a + '</div>';
+                        + '<div class="bub b">' + d.a + '</div>'
+                        + (d.tag ? '<div class="bub done">' + d.tag + '</div>' : '');
         fit(slides[cur]);
       }, wait);
     });
