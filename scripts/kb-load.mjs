@@ -1,12 +1,17 @@
 #!/usr/bin/env node
-// Loads the HHP+ / PhilPEN community NCD screening corpus into a Supabase
-// project through the same RPCs the admin console calls, so audit events and
-// the kb.entry_* trail are written exactly as if a human had authored it.
+// Loads one KB content corpus into a Supabase project through the same RPCs the
+// admin console calls, so audit events and the kb.entry_* trail are written
+// exactly as if a human had authored it.
 //
 //   npm run kb:load -- --project <ref>                       # dry run (default)
 //   npm run kb:load -- --project <ref> --apply               # write as drafts
 //   npm run kb:load -- --project <ref> --apply --publish --owner <username>
 //   npm run kb:load -- --project <ref> --modules 3,4 --apply
+//   npm run kb:load -- --project <ref> --corpus cesr --apply
+//
+// --corpus selects the content/kb/<corpus> tree and defaults to hhp-ncd, the
+// first corpus. Each corpus keeps its own locks/<ref>.json, so loading one never
+// disturbs the row mapping of another.
 //
 // Env: KB_LOADER_ANON_KEY (or NEXT_PUBLIC_SUPABASE_ANON_KEY),
 //      KB_LOADER_USERNAME, KB_LOADER_PASSWORD — an admin account on that project.
@@ -17,12 +22,12 @@
 
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import { CONTENT_DIR, loadContent, renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
+import { DEFAULT_CORPUS, contentDir, loadContent, renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
 import { markdownToTiptap } from "./lib/md-to-tiptap.mjs";
 import { createClient, projectUrl, requireEnv, selectAll, signIn } from "./lib/supabase-rest.mjs";
 
 function parseArgs(argv) {
-  const args = { modules: null, apply: false, publish: false, owner: null, project: null };
+  const args = { modules: null, apply: false, publish: false, owner: null, project: null, corpus: DEFAULT_CORPUS };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
@@ -30,6 +35,7 @@ function parseArgs(argv) {
     else if (arg === "--publish") args.publish = true;
     else if (arg === "--owner") args.owner = argv[++i];
     else if (arg === "--project") args.project = argv[++i];
+    else if (arg === "--corpus") args.corpus = argv[++i];
     else if (arg === "--modules") args.modules = argv[++i].split(",").map((m) => Number(m.trim()));
     else throw new Error(`unknown argument: ${arg}`);
   }
@@ -40,18 +46,18 @@ function parseArgs(argv) {
   return args;
 }
 
-function lockPath(ref) {
-  return path.join(CONTENT_DIR, "locks", `${ref}.json`);
+function lockPath(corpus, ref) {
+  return path.join(contentDir(corpus), "locks", `${ref}.json`);
 }
 
-function readLock(ref) {
-  const file = lockPath(ref);
+function readLock(corpus, ref) {
+  const file = lockPath(corpus, ref);
   if (!existsSync(file)) return { categories: {}, entries: {}, articles: {} };
   return JSON.parse(readFileSync(file, "utf8"));
 }
 
-function writeLock(ref, lock) {
-  const file = lockPath(ref);
+function writeLock(corpus, ref, lock) {
+  const file = lockPath(corpus, ref);
   mkdirSync(path.dirname(file), { recursive: true });
   writeFileSync(file, `${JSON.stringify(lock, null, 2)}\n`);
 }
@@ -240,7 +246,7 @@ async function syncArticles(client, content, ctx, plan) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const content = loadContent();
+  const content = loadContent(args.corpus);
 
   const url = projectUrl(args.project);
   const anonKey = process.env.KB_LOADER_ANON_KEY ?? requireEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY");
@@ -253,7 +259,7 @@ async function main() {
   const client = createClient(url, anonKey, token);
 
   const ownerId = args.owner ? await resolveOwner(client, args.owner) : null;
-  const lock = readLock(args.project);
+  const lock = readLock(args.corpus, args.project);
   const plan = {
     categories: { create: 0, skip: 0 },
     synonyms: { create: 0, skip: 0 },
@@ -274,10 +280,10 @@ async function main() {
   await syncEntries(client, content, ctx, plan);
   await syncArticles(client, content, ctx, plan);
 
-  if (args.apply) writeLock(args.project, lock);
+  if (args.apply) writeLock(args.corpus, args.project, lock);
 
   const mode = args.apply ? (args.publish ? "APPLY + PUBLISH" : "APPLY (drafts)") : "DRY RUN";
-  console.log(`\n${mode} — project ${args.project}`);
+  console.log(`\n${mode} — project ${args.project}, corpus ${args.corpus}`);
   console.log(`  categories  create ${plan.categories.create}  existing ${plan.categories.skip}`);
   console.log(`  synonyms    create ${plan.synonyms.create}  existing ${plan.synonyms.skip}`);
   console.log(

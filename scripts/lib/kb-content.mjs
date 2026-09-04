@@ -1,13 +1,42 @@
-// Reads and validates content/kb/hhp-ncd/*, and renders the citation line that
-// kb_entries has no column for. Shared by scripts/kb-load.mjs,
+// Reads and validates a content/kb/<corpus>/ tree, and renders the citation line
+// that kb_entries has no column for. Shared by scripts/kb-load.mjs,
 // scripts/kb-unpublish.mjs and scripts/kb-check-sources.mjs.
+//
+// A corpus is one self-contained body of KB content: its own categories,
+// entries, sources and matcher tuning. `hhp-ncd` was the first; `cesr` is the
+// second. Corpora are loaded independently so one can be re-loaded, unpublished
+// or rolled back without touching the other — but note they share a single
+// kb_entries table and therefore a single matcher, so keywords still compete
+// across corpora. See content/kb/README.md.
 
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-export const CONTENT_DIR = path.resolve(here, "../../content/kb/hhp-ncd");
+const KB_ROOT = path.resolve(here, "../../content/kb");
+
+export const DEFAULT_CORPUS = "hhp-ncd";
+
+/** Absolute path to one corpus directory. */
+export function contentDir(corpus = DEFAULT_CORPUS) {
+  if (!/^[a-z0-9-]+$/.test(corpus)) throw new Error(`invalid corpus name: ${corpus}`);
+  const dir = path.join(KB_ROOT, corpus);
+  if (!existsSync(dir)) {
+    throw new Error(`unknown corpus "${corpus}" — expected ${dir}. Known: ${listCorpora().join(", ")}`);
+  }
+  return dir;
+}
+
+/** Every corpus directory under content/kb, sorted. */
+export function listCorpora() {
+  return readdirSync(KB_ROOT)
+    .filter((name) => statSync(path.join(KB_ROOT, name)).isDirectory())
+    .sort();
+}
+
+/** Back-compat alias for the original single-corpus export. */
+export const CONTENT_DIR = path.join(KB_ROOT, DEFAULT_CORPUS);
 
 const PENDING_NOTE_EN =
   "⚠ Pending BLHSD–WHO technical validation — not for field use until confirmed.";
@@ -18,33 +47,41 @@ function readJson(file) {
   return JSON.parse(readFileSync(file, "utf8"));
 }
 
-export function loadContent() {
-  const sources = readJson(path.join(CONTENT_DIR, "sources.json")).sources;
-  const categoriesFile = readJson(path.join(CONTENT_DIR, "categories.json"));
+export function loadContent(corpus = DEFAULT_CORPUS) {
+  const dir = contentDir(corpus);
+
+  // sources, categories and entries are the irreducible core of a corpus.
+  // The matcher-tuning and long-form files are optional: a corpus that needs no
+  // red-flag rules should not have to carry an empty stub to prove it.
+  const readOptional = (file, key, fallback) =>
+    existsSync(path.join(dir, file)) ? readJson(path.join(dir, file))[key] : fallback;
+
+  const sources = readJson(path.join(dir, "sources.json")).sources;
+  const categoriesFile = readJson(path.join(dir, "categories.json"));
   const categories = categoriesFile.categories;
   const domains = categoriesFile.domains;
-  const synonyms = readJson(path.join(CONTENT_DIR, "synonyms.json")).synonyms;
-  const redFlags = readJson(path.join(CONTENT_DIR, "red-flags.json")).red_flags;
-  const clarifiers = readJson(path.join(CONTENT_DIR, "clarifiers.json")).clarifiers;
-  const articlesIndex = readJson(path.join(CONTENT_DIR, "articles/index.json")).articles;
+  const synonyms = readOptional("synonyms.json", "synonyms", []);
+  const redFlags = readOptional("red-flags.json", "red_flags", []);
+  const clarifiers = readOptional("clarifiers.json", "clarifiers", []);
+  const articlesIndex = readOptional("articles/index.json", "articles", []);
 
-  const entriesDir = path.join(CONTENT_DIR, "entries");
+  const entriesDir = path.join(dir, "entries");
   const entries = [];
   for (const file of readdirSync(entriesDir).filter((f) => f.endsWith(".json")).sort()) {
     const parsed = readJson(path.join(entriesDir, file));
     for (const entry of parsed.entries) {
-      entries.push({ ...entry, category: parsed.category, file });
+      entries.push({ ...entry, category: parsed.category, corpus, file });
     }
   }
 
   const articles = articlesIndex.map((article) => ({
     ...article,
-    body_en: readFileSync(path.join(CONTENT_DIR, "articles", article.file_en), "utf8"),
-    body_fil: readFileSync(path.join(CONTENT_DIR, "articles", article.file_fil), "utf8"),
+    body_en: readFileSync(path.join(dir, "articles", article.file_en), "utf8"),
+    body_fil: readFileSync(path.join(dir, "articles", article.file_fil), "utf8"),
   }));
 
   validate({ sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers });
-  return { sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers };
+  return { corpus, dir, sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers };
 }
 
 function validate({ sources, categories, domains, entries, synonyms, articles, redFlags, clarifiers }) {
