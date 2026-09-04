@@ -361,6 +361,75 @@
   .sig span{font-size:clamp(.78rem,1.02vw,.9rem);line-height:1.4;color:var(--cream-soft)}
   .light .sig span,.solution .sig span{color:var(--ink-soft)}
 
+  /* ---------- three-view mockups ----------
+     Who sees what, at each tier. Panels are illustrative screens, deliberately
+     tagged as such: the criteria and thresholds inside them are lifted verbatim
+     from the BHS Supervisory Checklist and the DOH guideline, but the counts are
+     not real figures and must never be read as any. */
+  .viewgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,1.9vw,1.5rem);
+    align-items:start;margin-top:clamp(.7rem,1.6vh,1.1rem)}
+  .viewcol{display:flex;flex-direction:column;gap:.5rem;min-width:0}
+  .viewlabel{font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--verdant)}
+  .viewlabel span{display:block;font-size:.72rem;font-weight:600;letter-spacing:0;
+    text-transform:none;color:var(--ink-soft);margin-top:.18rem;line-height:1.3}
+  .screen{background:#fff;border:1px solid var(--line-light);border-radius:10px;overflow:hidden;
+    box-shadow:0 12px 30px -24px rgba(36,28,23,.5)}
+  .screen.mob{border:5px solid #0c0c0d;border-radius:18px}
+  .scrbar{display:flex;align-items:center;gap:.28rem;padding:.34rem .55rem;
+    background:var(--canvas-2);border-bottom:1px solid var(--line-light)}
+  .scrbar i{width:6px;height:6px;border-radius:50%;background:rgba(36,28,23,.22);flex:0 0 auto}
+  .scrbar b{margin-left:.35rem;font-size:.6rem;font-weight:700;color:var(--ink-soft);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .scrbody{padding:.55rem .6rem;display:flex;flex-direction:column;gap:.4rem}
+
+  .chead{display:flex;align-items:center;gap:.5rem}
+  .ring2{--p:75;width:32px;height:32px;border-radius:50%;flex:0 0 auto;
+    background:conic-gradient(var(--verdant) calc(var(--p)*1%),rgba(36,28,23,.12) 0);
+    display:grid;place-items:center}
+  .ring2::before{content:"";width:23px;height:23px;border-radius:50%;background:#fff;grid-area:1/1}
+  .ring2 b{grid-area:1/1;font-size:.55rem;font-weight:800;z-index:1;font-variant-numeric:tabular-nums}
+  .chead div b{display:block;font-size:.72rem;line-height:1.2}
+  .chead div span{font-size:.62rem;color:var(--ink-soft)}
+
+  .mrow{display:flex;align-items:center;gap:.4rem;border:1px solid var(--line-light);
+    border-radius:6px;padding:.28rem .4rem;font-size:.66rem;line-height:1.25}
+  .mrow .k{width:15px;height:15px;border-radius:4px;display:grid;place-items:center;
+    font-size:.54rem;font-weight:800;flex:0 0 auto}
+  .mrow .k.done{background:var(--verdant);color:#fff}
+  .mrow .k.now{background:var(--marigold);color:#fff}
+  .mrow .k.todo{background:rgba(36,28,23,.1);color:var(--ink-soft)}
+
+  .qz{border:1px solid var(--line-light);border-radius:7px;padding:.42rem .45rem}
+  .qz p{font-size:.65rem;font-weight:700;margin-bottom:.32rem;line-height:1.3}
+  .opt2{display:flex;align-items:center;gap:.35rem;border:1px solid var(--line-light);
+    border-radius:5px;padding:.25rem .35rem;font-size:.62rem;margin-bottom:.2rem;line-height:1.25}
+  .opt2 .b{width:10px;height:10px;border-radius:50%;border:2px solid rgba(36,28,23,.2);flex:0 0 auto}
+  .opt2.ok{border-color:var(--verdant);background:rgba(31,122,69,.08)}
+  .opt2.ok .b{background:var(--verdant);border-color:var(--verdant)}
+
+  .crit{display:grid;grid-template-columns:1fr auto;gap:.4rem;align-items:center;
+    font-size:.64rem;line-height:1.25;padding:.24rem 0;border-top:1px solid var(--line-light)}
+  .crit:first-of-type{border-top:0}
+  .sc{display:flex;gap:2px;flex:0 0 auto}
+  .sc i{width:12px;height:12px;border-radius:3px;border:1px solid rgba(36,28,23,.18);
+    font-size:.48rem;display:grid;place-items:center;font-style:normal;color:var(--ink-soft)}
+  .sc i.on{background:var(--verdant);border-color:var(--verdant);color:#fff}
+  .vrd{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
+    margin-top:.25rem;padding-top:.38rem;border-top:1px solid var(--line-light);font-size:.64rem}
+  .vrd b{background:var(--verdant);color:#fff;border-radius:999px;padding:.18rem .5rem;
+    font-size:.56rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+
+  .rreg{display:grid;grid-template-columns:1fr auto auto;gap:.5rem;font-size:.64rem;
+    padding:.24rem 0;border-top:1px solid var(--line-light)}
+  .rreg.h{border-top:0;font-weight:800;color:var(--ink-soft);font-size:.55rem;
+    letter-spacing:.08em;text-transform:uppercase}
+  .rreg .n{font-variant-numeric:tabular-nums;text-align:right;min-width:2.6rem}
+  .illus{display:inline-block;font-size:.54rem;font-weight:800;letter-spacing:.12em;
+    text-transform:uppercase;background:rgba(232,100,28,.14);color:var(--marigold-deep);
+    border:1px solid rgba(184,78,18,.3);border-radius:999px;padding:.12rem .42rem;
+    vertical-align:middle;margin-left:.5rem}
+
   /* ---------- live demo ---------- */
   .demowrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
     gap:clamp(1.1rem,2.8vw,2.4rem);align-items:center;margin-top:clamp(.7rem,1.6vh,1.1rem)}
@@ -946,21 +1015,72 @@
   <section class="slide light solution wide" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Assessment</div>
-      <h2 class="tight">Attendance is not competence.</h2>
-      <div class="loop">
-        <div class="node" data-step="1"><span class="step">01</span><b>Module</b><p>Text, video, quiz. Pass mark and retake limit are DOH policy settings.</p></div>
-        <div class="arrow" data-step="2">&rarr;</div>
-        <div class="node" data-step="2"><span class="step">02</span><b>Skills demonstration</b><p>Graded in person by an assessor, against the DOH checklist as written.</p></div>
-        <div class="arrow" data-step="3">&rarr;</div>
-        <div class="node" data-step="3"><span class="step">03</span><b>Certificate</b><p>QR-verifiable by anyone, without a login.</p></div>
-        <div class="arrow" data-step="4">&rarr;</div>
-        <div class="node" data-step="4"><span class="step">04</span><b>Registry</b><p>Competency written to the BHW's Phase 1 profile, visible at every tier.</p></div>
+      <h2 class="tight">Attendance is not competence.<span class="illus">Illustrative screens</span></h2>
+      <div class="viewgrid">
+
+        <div class="viewcol" data-step="1">
+          <div class="viewlabel">What the BHW sees<span>On her own phone, in Filipino</span></div>
+          <div class="screen mob">
+            <div class="scrbody">
+              <div class="chead">
+                <div class="ring2" style="--p:75"><b>3/4</b></div>
+                <div><b>CESR para sa BHW</b><span>4 na modyul &middot; pasado 80%</span></div>
+              </div>
+              <div class="mrow"><span class="k done">&#10003;</span>1 &middot; Introduksyon sa CESR</div>
+              <div class="mrow"><span class="k done">&#10003;</span>2 &middot; Paghahanap ng Signal</div>
+              <div class="mrow"><span class="k done">&#10003;</span>3 &middot; Mga Hakbang ng CESR</div>
+              <div class="mrow"><span class="k now">4</span>4 &middot; Komunikasyon</div>
+              <div class="qz">
+                <p>Ilan ang kailangan bago masabing kumpol?</p>
+                <div class="opt2"><span class="b"></span>Kahit isa, basta malubha</div>
+                <div class="opt2 ok"><span class="b"></span>Dalawa o higit pa, sa loob ng isang linggo, may koneksyon</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewcol" data-step="2">
+          <div class="viewlabel">What the supervisor sees<span>The BHS checklist, scored as she grades</span></div>
+          <div class="screen">
+            <div class="scrbar"><i></i><i></i><i></i><b>Skills Demonstration &middot; Pagtatala ng Signal</b></div>
+            <div class="scrbody">
+              <div class="crit"><span>Natukoy ang signal ayon sa apat na kahulugan</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="crit"><span>Kumpleto ang impormasyon sa bawat signal</span><span class="sc"><i>0</i><i>1</i><i class="on">2</i><i>3</i></span></div>
+              <div class="crit"><span>Naitala ang lahat ng signal, kahit hindi akma</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="crit"><span>Na-detect sa loob ng 7 araw</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="crit"><span>Naiulat sa loob ng 24 na oras</span><span class="sc"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="vrd"><span>14 / 15 &middot; 93%</span><b>Kwalipikado</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewcol" data-step="3">
+          <div class="viewlabel">What the country sees<span>The registry, rolled up from the same record</span></div>
+          <div class="screen">
+            <div class="scrbar"><i></i><i></i><i></i><b>BHW Connect &middot; Registry</b></div>
+            <div class="scrbody">
+              <div>
+                <div class="rreg h"><span>Area</span><span class="n">Trained</span><span class="n">Certified</span></div>
+                <div class="rreg"><span>Marinduque</span><span class="n">412</span><span class="n">388</span></div>
+                <div class="rreg"><span>Palawan</span><span class="n">1,940</span><span class="n">1,602</span></div>
+                <div class="rreg"><span>Puerto Princesa</span><span class="n">604</span><span class="n">571</span></div>
+                <div class="rreg"><span>Quezon City</span><span class="n">2,118</span><span class="n">1,977</span></div>
+              </div>
+              <div class="vrd"><span>Barangay &rarr; national, same record</span><b>Live</b></div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <p class="kicker-line" data-step="5">&ldquo;45% trained&rdquo; becomes a number we can defend: <strong>who, in what, assessed by whom, when.</strong></p>
+      <p class="kicker-line" data-step="4">&ldquo;45% trained&rdquo; becomes a number we can defend: <strong>who, in what, assessed by whom, when.</strong></p>
+      <p class="src" data-step="4">Criteria and the 7-day / 24-hour thresholds are taken from the BHS Supervisory Checklist (Tagalog, April 2026) and the DOH Interim Guidelines. Counts shown are illustrative, not reported figures.</p>
     </div>
     <aside class="notes">
-      <p>This is the direct answer to slide 5. Under this direction, &ldquo;trained&rdquo; stops being a recollection and becomes a record.</p>
-      <p>Note for the sceptics: the skills demonstration is still in person. We are not digitising judgement — we are digitising everything around it.</p>
+      <p>Three screens, one record. Walk them left to right and say who is looking each time — the BHW, her supervisor, then the country.</p>
+      <p>The criteria in the middle panel are not invented: they are lifted from the BHS Supervisory Checklist you already use, including the 7-day and 24-hour thresholds. The point is that the instrument does not change — only who can see the result.</p>
+      <p>Say the counts are illustrative before anyone asks. The tag on the headline says so too.</p>
+      <p>For the sceptics: the skills demonstration is still in person, still graded by a human supervisor. We are not digitising judgement — only everything around it.</p>
+      <p>This is the direct answer to slide 5: &ldquo;trained&rdquo; stops being a recollection and becomes a record.</p>
     </aside>
   </section>
 

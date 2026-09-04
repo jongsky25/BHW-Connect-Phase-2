@@ -58,7 +58,7 @@ Change these only deliberately — each one is holding something up.
 | 12 | The Direction | *Not another training. A system that trains.* |
 | 13 | | One clearing house (dots converge) · tiered · any mode · any author · **corrected once** |
 | 14 | | **The materials already exist** — CESR's own decks, and the re-echo cascade that carries them |
-| 15 | | Attendance is not competence — module → demo → certificate → registry |
+| 15 | | Attendance is not competence — **three mockup screens**: the BHW's phone, the supervisor's checklist, the national registry |
 | 16 | | Chatbot as coach — recall support between events |
 | 17 | | Chatbot as the form — the report is a by-product of the conversation |
 | 18 | | **Three real signals, three separate logbooks** — the signal field and the roll-up |
@@ -107,6 +107,24 @@ here first.
 
 **Notes-only, never on a slide:** 7-1-7 at 0% (0/2) — `mss-feedback-2026-06.md:306`; M&SS coverage
 Marinduque 6/6, Palawan + PPC 21/24, Quezon City 6/6 — same, :20-24.
+
+### The mockup screens (slide 15)
+
+Three illustrative panels — the BHW's phone, the supervisor's grading view, the
+national registry — carrying an `ILLUSTRATIVE SCREENS` tag on the headline and a
+source line beneath. What is quoted and what is invented is kept strictly apart:
+
+- **Quoted, not invented.** The five assessment criteria and both thresholds come
+  from the BHS Supervisory Checklist (Tagalog, revised April 2026): *"Suriin ang
+  mga signal … HINDI AKMA sa apat na kahulugan"*, *"Ang bawat signal ba ay
+  naglalaman ng lahat ng kinakailangang impormasyon?"*, *"na-detect nang higit sa
+  7 araw"*, *"naiulat nang higit sa 24 na oras"*. The four module names are the
+  four real CESR decks. The quiz item restates the guideline's cluster definition.
+- **Invented, and labelled as such.** Every count — the 3/4 progress, the 14/15
+  score, and all eight registry figures. These are shape, not data. They are the
+  one thing on the slide that is not in the facts register, which is why the tag
+  and the source line both say so, and why the presenter notes say to volunteer it
+  aloud before anyone asks.
 
 ### The demo's status claim (slide 23)
 
