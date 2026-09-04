@@ -280,21 +280,111 @@
   .gap p{font-size:clamp(.78rem,1.02vw,.9rem);line-height:1.4;color:rgba(247,241,232,.68)}
   .gap .ev{font-size:.68rem;font-style:italic;color:rgba(247,241,232,.44);margin-top:auto;padding-top:.35rem;border-top:1px solid rgba(247,241,232,.10)}
 
-  /* ---------- gap closure ---------- */
-  .closes{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.5rem,1.2vw,.8rem);margin-top:clamp(.9rem,2vh,1.3rem)}
+  /* ---------- gap closure ----------
+     Side by side, one row per gap: the complaint as the field says it, in
+     Filipino, against the answer in the language the policy will be written
+     in. Stacked (the earlier layout) made the two halves read as one
+     paragraph; the pairing is the whole point, so it has to be a pairing. */
+  .closes{display:flex;flex-direction:column;gap:clamp(.32rem,.8vh,.5rem);margin-top:clamp(.7rem,1.6vh,1.1rem)}
   .close-row{
-    display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:start;
+    display:grid;grid-template-columns:auto minmax(0,1fr) auto minmax(0,1.02fr);
+    gap:clamp(.5rem,1.1vw,.85rem);align-items:center;
     background:rgba(255,255,255,.86);
     border:1px solid rgba(36,28,23,.09);
     border-left:3px solid var(--verdant);
-    border-radius:12px;
-    padding:.7rem .9rem;
-    box-shadow:0 12px 30px -24px rgba(36,28,23,.55);
+    border-radius:10px;
+    padding:.5rem .8rem;
+    box-shadow:0 10px 26px -22px rgba(36,28,23,.5);
   }
-  .close-row .gtag{background:var(--verdant);color:#fff;border-radius:3px;margin-top:.14rem}
-  .close-row s{display:block;font-size:.72rem;color:var(--ink-soft);opacity:.62;text-decoration-color:var(--ember);margin-bottom:.16rem}
-  .close-row b{display:block;font-size:clamp(.9rem,1.18vw,1.04rem);color:var(--ink);line-height:1.28}
-  .close-row b::before{content:"\2713";color:var(--verdant);font-weight:900;margin-right:.42rem}
+  .close-row .gtag{background:var(--verdant);color:#fff;border-radius:3px}
+  .close-row .was{
+    font-family:var(--serif);font-style:italic;line-height:1.3;
+    font-size:clamp(.8rem,1.06vw,.96rem);color:var(--ink-soft);
+  }
+  .close-row .becomes{
+    display:block;font-size:clamp(.86rem,1.12vw,1rem);color:var(--ink);
+    line-height:1.28;font-weight:700;
+  }
+  .close-row .becomes::before{content:"\2713";color:var(--verdant);font-weight:900;margin-right:.38rem}
+  .close-row .to{color:var(--verdant);font-weight:800;font-size:1.05rem}
+
+  /* ---------- CESR material inventory ---------- */
+  .mats{display:flex;flex-wrap:wrap;gap:.42rem;margin-top:clamp(.8rem,1.8vh,1.2rem)}
+  .mat{
+    display:inline-flex;align-items:center;gap:.45rem;
+    background:rgba(247,241,232,.07);border:1px solid var(--line-dark);
+    border-radius:8px;padding:.42rem .7rem;
+    font-size:clamp(.78rem,1vw,.9rem);line-height:1.25;color:var(--cream);
+  }
+  .mat::before{content:"";width:13px;height:16px;flex:0 0 auto;border-radius:2px;
+    background:var(--sampaguita);opacity:.85}
+  .light .mat,.solution .mat{background:rgba(255,255,255,.7);border-color:var(--line-light);color:var(--ink)}
+
+  /* the cascade, and its replacement */
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin-top:.55rem}
+  .flow .n{
+    background:rgba(247,241,232,.06);border:1px solid var(--line-dark);border-radius:999px;
+    padding:.34rem .8rem;font-size:clamp(.78rem,1.02vw,.92rem);font-weight:600;white-space:nowrap;
+  }
+  .flow .n.end{background:var(--ember);border-color:var(--ember);color:#2b1006}
+  .flow .n.good{background:var(--verdant);border-color:var(--verdant);color:#fff}
+  .flow .s{color:var(--ember);font-weight:800}
+  .flow.ok .s{color:var(--verdant)}
+  .flowlabel{font-size:.66rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--cream-soft);margin-top:clamp(.9rem,2vh,1.3rem)}
+  .light .flowlabel,.solution .flowlabel{color:var(--ink-soft)}
+
+  /* ---------- signal field ---------- */
+  .mapwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:clamp(1rem,2.6vw,2.2rem);align-items:center;margin-top:clamp(.7rem,1.6vh,1.1rem)}
+  .field svg{width:100%;max-width:400px;height:auto;display:block;margin:0 auto}
+  .field circle.brgy{fill:rgba(247,241,232,.2)}
+  .mapwrap .ladder{justify-content:center;margin-top:clamp(.9rem,2vh,1.4rem);gap:.28rem}
+  .mapwrap .ladder .rung{padding:.32rem .6rem;font-size:clamp(.72rem,.92vw,.84rem)}
+  .darker .rung,.dark .rung{background:rgba(247,241,232,.07);border-color:var(--line-dark);color:var(--cream)}
+  .darker .rung.top,.dark .rung.top{background:var(--sampaguita);border-color:var(--sampaguita);color:#2b2420}
+  .darker .ladder .sep,.dark .ladder .sep{color:var(--cream-soft)}
+  .hot{opacity:0;transition:opacity .5s ease}
+  .hot.on{opacity:1}
+  .hot .ping{fill:var(--ember);opacity:.22}
+  .hot .core{fill:var(--ember)}
+  .hot.on .ping{animation:ping 2.6s ease-out infinite}
+  @keyframes ping{0%{transform:scale(.5);opacity:.42}70%{transform:scale(2.1);opacity:0}100%{opacity:0}}
+  .hot .ping{transform-box:fill-box;transform-origin:center}
+  .maplist{display:flex;flex-direction:column;gap:.55rem}
+  .sig{
+    display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:start;
+    border-left:3px solid var(--ember);padding:.4rem 0 .4rem .8rem;
+  }
+  .sig .pin{width:11px;height:11px;border-radius:50%;background:var(--ember);margin-top:.3rem}
+  .sig b{display:block;font-size:clamp(.9rem,1.18vw,1.04rem);line-height:1.25}
+  .sig span{font-size:clamp(.78rem,1.02vw,.9rem);line-height:1.4;color:var(--cream-soft)}
+  .light .sig span,.solution .sig span{color:var(--ink-soft)}
+
+  /* ---------- live demo ---------- */
+  .demowrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+    gap:clamp(1.1rem,2.8vw,2.4rem);align-items:center;margin-top:clamp(.7rem,1.6vh,1.1rem)}
+  .askchips{display:flex;flex-direction:column;gap:.5rem}
+  .askchip{
+    text-align:left;font:inherit;cursor:pointer;
+    background:rgba(255,255,255,.7);border:1px solid var(--line-light);
+    border-left:3px solid var(--marigold);border-radius:10px;
+    padding:.6rem .85rem;font-size:clamp(.84rem,1.1vw,.97rem);line-height:1.35;color:var(--ink);
+    transition:background .18s,border-color .18s,transform .18s;
+  }
+  .askchip:hover{background:#fff;transform:translateX(2px)}
+  .askchip[aria-pressed="true"]{background:var(--marigold);border-color:var(--marigold);color:#fff}
+  .demohint{margin-top:.7rem;font-size:.76rem;font-style:italic;color:var(--ink-soft);line-height:1.4}
+  .typing span{display:inline-block;width:6px;height:6px;margin-right:3px;border-radius:50%;
+    background:var(--ink-soft);opacity:.5;animation:blink 1.2s infinite}
+  .typing span:nth-child(2){animation-delay:.2s}
+  .typing span:nth-child(3){animation-delay:.4s}
+  @keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:.9}}
+  .statusnote{
+    margin-top:clamp(.9rem,2vh,1.3rem);font-size:.78rem;line-height:1.45;
+    color:var(--ink-soft);border-top:1px solid var(--line-light);padding-top:.6rem;max-width:70ch;
+  }
+  .statusnote b{color:var(--verdant)}
 
   /* roll-up ladder */
   .ladder{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem;align-items:center}
@@ -777,7 +867,7 @@
     <aside class="notes">
       <p>One breath per card — do not read them out in full, the room can read.</p>
       <p>G7 is the one that came from the floor: what happens when the material changes. Land on it.</p>
-      <p>The chip says 7 OPEN. It closes on slide 18.</p>
+      <p>The chip says 7 OPEN. It closes on slide 20.</p>
     </aside>
   </section>
 
@@ -811,7 +901,48 @@
     </aside>
   </section>
 
-  <!-- 14 · HOW COMPETENCE IS ASSESSED -->
+  <!-- 14 · THE MATERIALS ALREADY EXIST -->
+  <section class="slide light solution wide" data-act="The Direction">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> The cascade, and what replaces it</div>
+      <h2 class="tight">CESR has already written everything a BHW needs.</h2>
+      <div class="mats" data-step="1">
+        <span class="mat">Interim Guidelines for Community-Based Surveillance</span>
+        <span class="mat">Deck 1 &middot; Introduction to CESR</span>
+        <span class="mat">Deck 2 &middot; Finding Signals</span>
+        <span class="mat">Deck 3 &middot; The CESR Steps</span>
+        <span class="mat">Deck 4 &middot; Communication Skills</span>
+        <span class="mat">BHS Supervisory Checklist (Tagalog)</span>
+        <span class="mat">Supportive Supervision Tool</span>
+        <span class="mat">Sensitization Package</span>
+        <span class="mat">Signal Log Sheet &middot; Annex 2</span>
+      </div>
+      <p class="flowlabel" data-step="2">How it reaches a BHW today</p>
+      <div class="flow" data-step="2">
+        <span class="n">National</span><span class="s">&rarr;</span>
+        <span class="n">Batch</span><span class="s">&rarr;</span>
+        <span class="n">Supervisor</span><span class="s">&rarr;</span>
+        <span class="n">Re-echo at the BHS</span><span class="s">&rarr;</span>
+        <span class="n end">BHW</span>
+      </div>
+      <p class="src" data-step="3">Supervisors are given the slide decks and expected to re-deliver the training at BHS level &mdash; and nobody records who was re-echoed to, or what stuck.</p>
+      <p class="flowlabel" data-step="4">How it reaches a BHW on the platform</p>
+      <div class="flow ok" data-step="4">
+        <span class="n">National</span><span class="s">&rarr;</span>
+        <span class="n">Approved module</span><span class="s">&rarr;</span>
+        <span class="n good">Every BHW &mdash; with a completion record</span>
+      </div>
+      <p class="kicker-line" data-step="5">Not one new page of content. The same materials, delivered without the cascade.</p>
+    </div>
+    <aside class="notes">
+      <p>This is the slide that costs the least and lands the hardest: we are not asking anyone to rewrite anything. Every document on that row already exists and is already approved.</p>
+      <p>Say the re-echo problem plainly and without blame — it is the scaling model the programme designed, and it is the same model the June round found decaying.</p>
+      <p>The point of the second flow is that the middle disappears, not that the supervisors do. Supervisors still supervise; they stop being the delivery mechanism.</p>
+      <p class="cites">Materials inventory: docs/source-material/cesr/. Re-echo model: refresher activity report, July 2026, via docs/cesr-module.md §5.</p>
+    </aside>
+  </section>
+
+  <!-- 15 · HOW COMPETENCE IS ASSESSED -->
   <section class="slide light solution wide" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Assessment</div>
@@ -833,7 +964,7 @@
     </aside>
   </section>
 
-  <!-- 15 · THE CHATBOT AS COACH -->
+  <!-- 16 · THE CHATBOT AS COACH -->
   <section class="slide light solution" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Reinforcement</div>
@@ -867,7 +998,7 @@
     </aside>
   </section>
 
-  <!-- 16 · THE CHATBOT AS THE FORM -->
+  <!-- 17 · THE CHATBOT AS THE FORM -->
   <section class="slide light solution wide" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Data collection</div>
@@ -909,7 +1040,62 @@
     </aside>
   </section>
 
-  <!-- 17 · PRIVACY -->
+  <!-- 18 · FROM ONE BARANGAY TO THE WHOLE COUNTRY -->
+  <section class="slide darker wide" data-act="The Direction">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> Local signal, national picture</div>
+      <h2 class="tight">Three real signals. Three separate logbooks.</h2>
+      <div class="mapwrap">
+        <div>
+          <!-- Deliberately a schematic, not a coastline. A hand-drawn Philippines
+               silhouette that is even slightly wrong is the only thing on this
+               slide a room in Puerto Princesa would notice, and it would cost the
+               argument. The field is barangays; three of them light. -->
+          <div class="field" id="signalfield"></div>
+          <div class="ladder" data-step="4">
+            <span class="rung">Barangay</span><span class="sep">&rarr;</span>
+            <span class="rung">Municipality</span><span class="sep">&rarr;</span>
+            <span class="rung">Province</span><span class="sep">&rarr;</span>
+            <span class="rung">Region</span><span class="sep">&rarr;</span>
+            <span class="rung top">National</span>
+          </div>
+        </div>
+        <div class="maplist">
+          <div class="sig" data-step="1">
+            <span class="pin"></span>
+            <div>
+              <b>Rabies &middot; Barangay Malibago, Torrijos</b>
+              <span>A stray dog bit four people, two of them Category III. Reported by the Barangay Kagawad on Health to the BHW &mdash; in under a day.</span>
+            </div>
+          </div>
+          <div class="sig" data-step="2">
+            <span class="pin"></span>
+            <div>
+              <b>Influenza-like illness &middot; Sta. Cruz</b>
+              <span>128 cases, 97% of them students. The school principal reported it to the BHW &mdash; eight days after the first cluster.</span>
+            </div>
+          </div>
+          <div class="sig" data-step="3">
+            <span class="pin"></span>
+            <div>
+              <b>Measles &middot; Tatalon, Quezon City</b>
+              <span>16 cases, 13 laboratory-confirmed. A mother reported her child to the BHW &mdash; in three days.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="kicker-line" data-step="4">Every one of these was found by a BHW. Not one of them was visible above its own municipality on the day it was found.</p>
+      <p class="src" data-step="4">CESR M&amp;SS Feedback, June 2026. Field is schematic — one dot is a barangay, not a mapped location.</p>
+    </div>
+    <aside class="notes">
+      <p>Be generous here — this slide is CESR working. A kagawad, a principal and a mother each told a BHW, and the BHW acted. That is the system doing exactly what it was designed to do.</p>
+      <p>The turn is the last line, and it is about visibility, not about performance: three real events, three separate paper logbooks, no shared picture. On one platform this is a map on the day it happens, not a finding in a review eight months later.</p>
+      <p>If asked about the timings: 1 day, 8 days, 3 days from occurrence to report — the 7-day detection target is in the DOH guideline.</p>
+      <p class="cites">Rabies/Torrijos, ILI/Sta. Cruz, measles/Tatalon — the three health-event reviews in the June 2026 M&amp;SS round.</p>
+    </aside>
+  </section>
+
+  <!-- 19 · PRIVACY -->
   <section class="slide dark" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Insight without exposure</div>
@@ -930,34 +1116,29 @@
     </aside>
   </section>
 
-  <!-- 18 · ONE PLATFORM -->
+  <!-- 20 · ONE PLATFORM -->
   <section class="slide light solution wide" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Consolidation</div>
       <h2 class="tight">What the barangay enters, the country can see.<span class="statechip open" id="chip-close">7 open</span></h2>
-      <div class="ladder" data-step="1">
-        <span class="rung">Barangay</span><span class="sep">&rarr;</span>
-        <span class="rung">Municipality</span><span class="sep">&rarr;</span>
-        <span class="rung">Province</span><span class="sep">&rarr;</span>
-        <span class="rung">Region</span><span class="sep">&rarr;</span>
-        <span class="rung top">National</span>
-      </div>
       <div class="closes">
-        <div class="close-row" data-step="2"><span class="gtag">G1</span><div><s>Affordable at scale</s><b>&#8369;50 per BHW — and every module after the first.</b></div></div>
-        <div class="close-row" data-step="3"><span class="gtag">G2</span><div><s>Light on labour</s><b>No batches. Every BHW, at once.</b></div></div>
-        <div class="close-row" data-step="4"><span class="gtag">G3</span><div><s>Carried by government alone</s><b>Owned, hosted and governed by DOH.</b></div></div>
-        <div class="close-row" data-step="5"><span class="gtag">G4</span><div><s>Visible nationally</s><b>One database. Every tier. Live.</b></div></div>
-        <div class="close-row" data-step="6"><span class="gtag">G5</span><div><s>Durable through attrition</s><b>Competency stays on the record when the person moves.</b></div></div>
-        <div class="close-row" data-step="7"><span class="gtag">G6</span><div><s>Transferable</s><b>The next programme is a module, not a cascade.</b></div></div>
-        <div class="close-row" data-step="8"><span class="gtag">G7</span><div><s>Correctable</s><b>A revision reaches every BHW the day it is approved.</b></div></div>
+        <div class="close-row" data-step="1"><span class="gtag">G1</span><span class="was">&ldquo;Masyadong mahal para maabot ang lahat.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">&#8369;50 per BHW — and every module after the first.</span></div>
+        <div class="close-row" data-step="2"><span class="gtag">G2</span><span class="was">&ldquo;Napakaraming batch, napakaraming araw.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">No batches. Every BHW, at once.</span></div>
+        <div class="close-row" data-step="3"><span class="gtag">G3</span><span class="was">&ldquo;Nakasandal sa partner ang gastos at gawain.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">Owned, hosted and governed by DOH.</span></div>
+        <div class="close-row" data-step="4"><span class="gtag">G4</span><span class="was">&ldquo;Larawan lang ang ulat — walang database.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">One database. Every tier. Live.</span></div>
+        <div class="close-row" data-step="5"><span class="gtag">G5</span><span class="was">&ldquo;Kapag umalis ang BHW, kasama nitong umalis ang training.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">Competency stays on the record when the person moves.</span></div>
+        <div class="close-row" data-step="6"><span class="gtag">G6</span><span class="was">&ldquo;Bagong programa, bagong cascade — paulit-ulit.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">The next programme is a module, not a cascade.</span></div>
+        <div class="close-row" data-step="7"><span class="gtag">G7</span><span class="was">&ldquo;Kapag may mali, hihintayin pa ang susunod na training.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">A revision reaches every BHW the day it is approved.</span></div>
       </div>
     </div>
     <aside class="notes">
-      <p>Do not read all seven. Point at two — G4 and G7 — and let the chip flip do the rest.</p>
+      <p>Do not read all seven. Read the Filipino side of two — G4 and G7 — and let the room's eye travel right on its own.</p>
+      <p>The left column is how the complaint is actually said in the barangay; the right is how it will be written in an issuance. That pairing is the argument.</p>
+      <p>The chip flips to 7 CLOSED on the last one.</p>
     </aside>
   </section>
 
-  <!-- 19 · ISSUANCES -->
+  <!-- 21 · ISSUANCES -->
   <section class="slide dark wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> What DOH will issue</div>
@@ -1008,7 +1189,7 @@
     </aside>
   </section>
 
-  <!-- 20 · YOU ALREADY ASKED FOR THIS -->
+  <!-- 22 · YOU ALREADY ASKED FOR THIS -->
   <section class="slide darker centered" data-act="The Ask">
     <div class="slide__inner">
       <p class="kicker-line" data-step="1" style="margin-top:0">In June, your own monitoring round closed with a request:</p>
@@ -1023,7 +1204,43 @@
     </aside>
   </section>
 
-  <!-- 21 · CLOSE -->
+  <!-- 23 · LIVE DEMO -->
+  <section class="slide light solution wide" data-act="The Ask">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> Not a mock-up</div>
+      <h2 class="tight">Ask it something.</h2>
+      <div class="demowrap">
+        <div>
+          <div class="askchips" id="askchips">
+            <button type="button" class="askchip" data-a="0" aria-pressed="false">Ano ulit ang apat na signal?</button>
+            <button type="button" class="askchip" data-a="1" aria-pressed="false">May batang may rashes at lagnat. Isusumbong ko ba ito?</button>
+            <button type="button" class="askchip" data-a="2" aria-pressed="false">Kanino ko ire-report ang signal?</button>
+          </div>
+          <p class="demohint">Tap a question. The answer comes from approved content — the same way it will on a BHW's phone.</p>
+        </div>
+        <div>
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="glass" id="demoglass" style="min-height:300px">
+              <div class="bub b">Magtanong po tungkol sa CESR sa English, Filipino, o Taglish.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="statusnote">
+        <b>What is real:</b> the Chat Guide, the courses, the assessor's grading, QR-verified certificates and the roll-up dashboards are built and running in BHW&nbsp;Connect. The national registry has been live since Phase&nbsp;1.
+        <b>What is not:</b> the CESR content pack shown here is candidate material, drawn from the programme's own guideline and decks. It needs DOH clinical review and approval before a single BHW sees it. That approval is the work, and it is yours.
+      </p>
+    </div>
+    <aside class="notes">
+      <p>Do this live. Tap one, wait for it to answer, tap another. It runs off this laptop — no wifi needed.</p>
+      <p>Be exact about the status line, and say it out loud rather than letting them read it: the platform is built, the CESR content is not approved. Claiming otherwise in this room would be caught inside a minute, and rightly.</p>
+      <p>The last sentence is the real handover — the thing that turns this from a demo into an ask. The blocker is not engineering. It is approval, and EB owns it.</p>
+      <p>If the wifi holds and someone wants to see the actual deployment, it can be opened in a browser — but do not promise that in advance.</p>
+    </aside>
+  </section>
+
+  <!-- 24 · CLOSE -->
   <section class="slide darker centered" data-act="">
     <div class="slide__inner">
       <q class="close-q">
@@ -1142,6 +1359,33 @@
   buildScatter(document.getElementById('scatter-a'), false);
   buildScatter(document.getElementById('scatter-b'), true);
 
+  /* Signal field: barangays as a regular field, three of which light in the
+     order the events are narrated. Ids match the order applySteps expects. */
+  (function buildField(){
+    var el = document.getElementById('signalfield');
+    if(!el) return;
+    var COLS = 16, ROWS = 7, GAP = 15, X0 = 22, Y0 = 20;
+    var marks = { 35:'hot-mdq-a', 73:'hot-mdq-b', 26:'hot-qc' };
+    var s = '<svg viewBox="0 0 280 130" role="img" aria-label="A field of barangays, three of which are reporting a signal">';
+    var i, r, c, x, y;
+    for(r=0;r<ROWS;r++){
+      for(c=0;c<COLS;c++){
+        i = r*COLS + c;
+        x = X0 + c*GAP;
+        y = Y0 + r*GAP;
+        if(marks[i]){
+          s += '<g class="hot" id="'+marks[i]+'">'
+             + '<circle class="ping" cx="'+x+'" cy="'+y+'" r="4.5"/>'
+             + '<circle class="core" cx="'+x+'" cy="'+y+'" r="4.5"/></g>';
+        } else {
+          s += '<circle class="brgy" cx="'+x+'" cy="'+y+'" r="2.6"/>';
+        }
+      }
+    }
+    s += '</svg>';
+    el.innerHTML = s;
+  })();
+
   /* Converged transform is applied via a style rule rather than per-element
      inline styles so the transition fires on class change alone. */
   var convStyle = document.createElement('style');
@@ -1180,6 +1424,16 @@
       var done = upto >= stepMax(s);
       chip.textContent = done ? '7 closed' : '7 open';
       chip.className = 'statechip ' + (done ? 'closed' : 'open');
+    }
+    /* Map hotspots light in the order the signals are narrated. They live in
+       the SVG, outside the stepped list, so they are driven explicitly. */
+    var hots = s.querySelectorAll('.hot');
+    if(hots.length){
+      var order = ['hot-mdq-a','hot-mdq-b','hot-qc'];
+      for(var h=0;h<order.length;h++){
+        var g = s.querySelector('#'+order[h]);
+        if(g) g.classList.toggle('on', upto >= h+1);
+      }
     }
   }
 
@@ -1411,6 +1665,56 @@
   }
   window.addEventListener('beforeprint', beforePrint);
   window.addEventListener('afterprint', afterPrint);
+
+  /* =================================================================
+     Live demo. Canned answers, drawn from the DOH Interim Guidelines and
+     the CESR decks — the content pack is candidate material, so nothing
+     here is presented as clinically approved. The point being demonstrated
+     is the interaction, which is real: a question in Filipino, an answer
+     from authored content, on the phone in her hand.
+     ================================================================= */
+  var DEMO = [
+    { q: "Ano ulit ang apat na signal?",
+      a: "Apat po: (1) kumpol ng malubhang sakit o pagkamatay, (2) kumpol ng malubhang sakit sa hayop, "
+       + "(3) malubhang sakit ng taong nalapit sa may sakit na hayop, at (4) iisang tao na may ilang "
+       + "partikular na sakit &mdash; tulad ng batang may rashes at lagnat." },
+    { q: "May batang may rashes at lagnat. Isusumbong ko ba ito?",
+      a: "Kung may kasamang ubo, sipon, o namumulang mata &mdash; opo, Signal 4 po ito. Itala sa log sheet at "
+       + "i-report agad sa midwife o DSO. Kahit hindi pa sigurado, itala pa rin: lahat ng signal ay naitatala, "
+       + "kahit yung hindi naman pala kwalipikado." },
+    { q: "Kanino ko ire-report ang signal?",
+      a: "Sa midwife o nurse ninyo, o sa Disease Surveillance Officer. Ang target po ay isang araw mula nang "
+       + "matuklasan. Sila na po ang magve-verify at magpapaabot sa MESU o CESU." }
+  ];
+
+  (function wireDemo(){
+    var chips = document.getElementById('askchips');
+    var glass = document.getElementById('demoglass');
+    if(!chips || !glass) return;
+    var timer = null;
+
+    chips.addEventListener('click', function(e){
+      var b = e.target.closest('.askchip');
+      if(!b) return;
+      var d = DEMO[parseInt(b.getAttribute('data-a'), 10)];
+      if(!d) return;
+
+      Array.prototype.forEach.call(chips.children, function(c){
+        c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
+      });
+
+      if(timer) clearTimeout(timer);
+      glass.innerHTML = '<div class="bub u">' + d.q + '</div>'
+                      + '<div class="bub b typing"><span></span><span></span><span></span></div>';
+
+      var wait = reduced() ? 0 : 700;
+      timer = setTimeout(function(){
+        glass.innerHTML = '<div class="bub u">' + d.q + '</div>'
+                        + '<div class="bub b">' + d.a + '</div>';
+        fit(slides[cur]);
+      }, wait);
+    });
+  })();
 
   /* ---- init ---- */
   totEl.textContent = pad(total);

@@ -14,9 +14,10 @@ so the deck fills 30 minutes of speaking.
 RESUs (Central Luzon, MIMAROPA, NCR); PDOHOs/PHOs; DSOs; and BHWs from Quezon City,
 Puerto Princesa, Palawan and Marinduque.
 
-**Shape.** 21 slides in five acts, heavy click-builds. Slide 2 is a ten-second outline of the
-five acts. Four statement slides (1, 12, 20, 21) take about 30 seconds each; the rest average
-~1.7 minutes.
+**Shape.** 24 slides in five acts, heavy click-builds. Slide 2 is a ten-second outline of the
+five acts. Four statement slides (1, 12, 23, 24) take about 30 seconds each. At 30 minutes this
+is now tight — roughly 1.2 min/slide. If the session runs long, slides 9 and 16 are the two that
+can be cut without breaking an argument.
 
 ---
 
@@ -29,9 +30,9 @@ Change these only deliberately — each one is holding something up.
 | **Tone toward CESR** | **Implicit.** No slide states a criticism. Evidence from the partner's own monitoring deck and activity reports is shown flat with a source caption, and the audience concludes. The single editorial sentence is on slide 10: *"This is not a finding about CESR. It is what the model produces, everywhere."* It points at the method, not at anyone. Do not add a second one. |
 | **7-1-7 = 0%** | Presenter notes only, never on a slide. On screen it reads as an attack on people who are in the room. |
 | **The partner is never named** | "The development partner", "partner-supported". EpiC GHS appears only inside citation captions, where it is the author of the source document. |
-| **Slide 20 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
-| **Slide 21 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
-| **Filipino** | Deck is English. Filipino pull-quotes at three emotional beats (slides 6, 15, 16) and inside the two chat simulations, where the language *is* the point. |
+| **Slide 22 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
+| **Slide 24 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
+| **Filipino** | Deck is English. Filipino pull-quotes at three emotional beats (slides 6, 16, 17), the seven gap statements on slide 20, and inside the two chat simulations, where the language *is* the point. |
 | **Readiness language** | Phase 2 is described as *designed end to end and in build* — the CESR module is content and configuration on that system, not a new build. Never "deployed nationwide", never "live". |
 | **Text density** | One headline, at most one supporting line; the build carries the rest. If a slide needs a paragraph, it is two slides. |
 | **Logos** | Text-only wordmarks. No image assets anywhere. |
@@ -56,14 +57,17 @@ Change these only deliberately — each one is holding something up.
 | 11 | | Seven things a training event cannot be · `7 open` |
 | 12 | The Direction | *Not another training. A system that trains.* |
 | 13 | | One clearing house (dots converge) · tiered · any mode · any author · **corrected once** |
-| 14 | | Attendance is not competence — module → demo → certificate → registry |
-| 15 | | Chatbot as coach — recall support between events |
-| 16 | | Chatbot as the form — the report is a by-product of the conversation |
-| 17 | | Privacy — insight without exposure |
-| 18 | | One platform · `7 closed` |
-| 19 | The Ask | Three issuances committed, three in development |
-| 20 | | You already asked for this — the "CESR Signal Application" |
-| 21 | — | *What is your plan to align with our direction?* |
+| 14 | | **The materials already exist** — CESR's own decks, and the re-echo cascade that carries them |
+| 15 | | Attendance is not competence — module → demo → certificate → registry |
+| 16 | | Chatbot as coach — recall support between events |
+| 17 | | Chatbot as the form — the report is a by-product of the conversation |
+| 18 | | **Three real signals, three separate logbooks** — the signal field and the roll-up |
+| 19 | | Privacy — insight without exposure |
+| 20 | | One platform · `7 closed` — Filipino complaint against English answer, side by side |
+| 21 | The Ask | Three issuances committed, three in development |
+| 22 | | You already asked for this — the "CESR Signal Application" |
+| 23 | | **Live demo** — tap a question, the Chat Guide answers |
+| 24 | — | *What is your plan to align with our direction?* |
 
 ---
 
@@ -95,9 +99,25 @@ here first.
 | Four signal definitions; log-sheet fields | as written | `docs/source-material/cesr/doh-interim-guidelines-cbs-2024.md` |
 | Privacy mechanics | consent FIL/EN at first login; notice on every screen; export + anonymise; 24-month purge; 5-year audit; NPC 72-hour playbook | `docs/concept-notes/…-who.md:592` |
 | De-identify at capture; aggregate, don't observe | design principle | `docs/cesr-module.md:149-155,371-378` |
+| Rabies, Barangay Malibago, Torrijos | stray dog bit 4, two Category III; reported by the Barangay Kagawad on Health; <1 day to report | `mss-feedback-2026-06.md:121,149,238`; `activity-report-mss-marinduque-2026-05.md:135` |
+| Influenza-like illness, Sta. Cruz | 128 cases; 124 (97%) students; principal reported to the BHW; 8 days to report | `mss-feedback-2026-06.md:160-163,219,238` |
+| Measles, Tatalon, Quezon City | 16 cases, 13 (81%) laboratory-confirmed; mother reported to the BHW; 3 days to report | `mss-feedback-2026-06.md:228,238` |
+| CESR material inventory (slide 14) | Interim Guidelines; Decks 1–4; BHS Supervisory Checklist (Tagalog); Supportive Supervision Tool; Sensitization Package; Signal Log Sheet Annex 2 | `docs/source-material/cesr/README.md` inventory |
+| Re-echo scaling model | supervisors are given the decks and expected to re-deliver at BHS level; no record of who was re-echoed to | refresher activity report, July 2026, via `docs/cesr-module.md` §5 |
 
 **Notes-only, never on a slide:** 7-1-7 at 0% (0/2) — `mss-feedback-2026-06.md:306`; M&SS coverage
 Marinduque 6/6, Palawan + PPC 21/24, Quezon City 6/6 — same, :20-24.
+
+### The demo's status claim (slide 23)
+
+The status line under the demo is the one place the deck makes a claim about what is
+built, so it is held to the register too. **Real:** Chat Guide (INC-8, conversational
+layer INC-17), courses and quizzes with assessor-graded skills demonstrations and
+QR-verified certificates (INC-12), roll-up dashboards, and the Phase 1 national
+registry. **Not real:** the CESR content pack — `docs/cesr-module.md` opens
+*"Status: candidate module. Not scheduled, not approved, not started."* The demo is an
+in-deck simulation of the interaction, not the deployed app, and the slide says so.
+Do not soften either half: the room contains the people who wrote the source material.
 
 ---
 
@@ -138,7 +158,7 @@ Chromium is at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
 2. **Nothing clipped** — for each slide, reveal all steps and compute the scale `fit()` would
    pick; anything below `0.42` is clamped and clipped. Last run at 1366×768 / 1280×720 /
    1920×1080: minimum **0.748** (slide 6 at 1280×720). Comfortable.
-3. **Print** — `--print-to-pdf` yields **21** landscape pages, one per slide.
+3. **Print** — `--print-to-pdf` yields **24** landscape pages, one per slide.
 4. **Reduced motion** — emulate `prefers-reduced-motion: reduce`; builds still reveal,
    nothing animates.
 5. **Keys** — step forward and back across a build boundary in both directions; `N`, `O`,
