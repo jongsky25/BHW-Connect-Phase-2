@@ -87,11 +87,15 @@
     display:flex;flex-direction:column;justify-content:flex-start;
     padding:clamp(4.2rem,11vh,6.4rem) var(--pad) clamp(3.4rem,7vh,4.4rem);
     opacity:0;visibility:hidden;
-    transform:translateY(14px);
-    transition:opacity .5s ease,transform .5s ease,visibility .5s;
+    /* Opacity only — never transform. fit() leaves a static scale() on
+       .slide__inner; animating a transform on the parent makes Chrome
+       composite the whole subtree and rasterize it at the UNSCALED size,
+       then magnify that texture for the length of the animation. Text goes
+       soft for half a second and snaps sharp at the end. That was the blur. */
+    transition:opacity .28s ease,visibility .28s;
     overflow:hidden;
   }
-  .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+  .slide.active{opacity:1;visibility:visible;z-index:2}
   .slide.centered{justify-content:center;padding-top:clamp(2.4rem,6vh,4.4rem)}
   .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto;transform-origin:top center}
   .slide.centered .slide__inner{transform-origin:center center}
@@ -356,6 +360,12 @@
   @keyframes ping{0%{transform:scale(.5);opacity:.42}70%{transform:scale(2.1);opacity:0}100%{opacity:0}}
   .hot .ping{transform-box:fill-box;transform-origin:center}
   .maplist{display:flex;flex-direction:column;gap:.55rem}
+  /* the three events on their own slide: side by side, and bigger */
+  .maplist.wide3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.4vw,2rem);
+    margin-top:clamp(1.1rem,2.6vh,1.9rem)}
+  .maplist.wide3 .sig{padding:.5rem 0 .5rem 1rem}
+  .maplist.wide3 .sig b{font-size:clamp(1rem,1.35vw,1.2rem);margin-bottom:.3rem}
+  .maplist.wide3 .sig span{font-size:clamp(.88rem,1.15vw,1rem)}
   .sig{
     display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:start;
     border-left:3px solid var(--ember);padding:.4rem 0 .4rem .8rem;
@@ -516,7 +526,7 @@
   /* ---------- chat simulation ---------- */
   .chatgrid{display:grid;grid-template-columns:minmax(0,44fr) minmax(0,56fr);gap:clamp(1.2rem,3vw,2.4rem);align-items:start;margin-top:clamp(.9rem,2vh,1.4rem)}
   /* 380 rather than a phone-true 330: bubbles wrap less, the stack runs a
-     fifth shorter, and the six-turn conversation on slide 20 stops being the
+     fifth shorter, and the conversation on slides 23-24 stops being the
      one slide that has to shrink on a projector. */
   .phone{background:#0c0c0d;border-radius:30px;padding:9px;box-shadow:0 26px 54px -22px rgba(0,0,0,.6);max-width:380px;margin:0 auto;width:100%}
   .phone .notch{height:16px;display:flex;justify-content:center;align-items:center}
@@ -570,12 +580,16 @@
      display) so fit() measures the finished slide and nothing reflows
      mid-build.
      ================================================================ */
+  /* Same reason as the slide transition: opacity only. A stepped element
+     lives inside the scaled .slide__inner, so animating its transform blurs
+     it exactly the same way. The element arriving out of nothing is cue
+     enough — it does not need to travel. */
   [data-step]{
-    opacity:0;visibility:hidden;transform:translateY(10px);
-    transition:opacity .45s ease,transform .45s ease,visibility .45s;
+    opacity:0;visibility:hidden;
+    transition:opacity .32s ease,visibility .32s;
   }
-  [data-step].shown{opacity:1;visibility:visible;transform:none}
-  .measuring [data-step]{opacity:1;visibility:visible;transform:none;transition:none}
+  [data-step].shown{opacity:1;visibility:visible}
+  .measuring [data-step]{opacity:1;visibility:visible;transition:none}
 
   /* ---------- nav chrome ---------- */
   .chrome{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;
@@ -671,12 +685,10 @@
     .actbar .seg2 .lb{display:none}
   }
 
-  /* the newly revealed step gets one short pulse so the room's eye lands on it */
-  [data-step].latest{animation:landing .7s ease-out}
-  @keyframes landing{
-    0%{filter:brightness(1.35)}
-    100%{filter:brightness(1)}
-  }
+  /* No brightness pulse on the revealed step. `filter` builds a stacking
+     context and forces the scaled subtree to re-rasterize, which was the
+     second half of the blur-and-glitch on every click. The fade-in is the
+     cue; it costs nothing to composite. */
 
   /* portrait phones: ask for landscape rather than shrinking to a stamp */
   .rotate{position:fixed;inset:0;z-index:60;display:none;place-items:center;text-align:center;
@@ -693,8 +705,7 @@
   }
   @media (prefers-reduced-motion:reduce){
     .slide{transition:opacity .01s}
-    [data-step]{transition:opacity .01s;transform:none}
-    [data-step].shown{transform:none}
+    [data-step]{transition:opacity .01s}
     .scatter circle.dot,.scatter circle.ring,.hub{transition:none}
     .navbtns button,.ovcard{transition:none}
   }
@@ -982,7 +993,7 @@
       <p class="src" data-step="4">Refresher activity report, July 2026; M&amp;SS Marinduque action points, May 2026; cost model, slide 7.</p>
     </div>
     <aside class="notes">
-      <p>One breath per card — do not read them out in full, the room can read. Four here, three on the next slide.</p>
+      <p>One breath per card — do not read them out in full, the room can read. Four here, three on slide 13.</p>
     </aside>
   </section>
 
@@ -1014,7 +1025,7 @@
       <p>One breath per card.</p>
       <p class="cites">Evidence per card, if pressed: G1 — the cost model on slide 7. G2 — eight batches at four venues over 20–24 July 2026, 390 participants (refresher report). G3 — resource persons in every batch, plus IEC reproduction, logbook redesign and the analysis template all assigned to EpiC GHS (Marinduque action points, May 2026). G4 — signals consolidated as photographs, the provincial Google Sheet at 8 entries, Quezon City the one digital site (M&amp;SS, June 2026). G5 — "no participant name list; attendance reported only as LGU coverage and per-batch counts" (refresher report). G6 — key informants in a separate notebook with a separate template (M&amp;SS). G7 — correcting one recall gap took eight batches and four venues.</p>
       <p>G7 is the one that came from the floor: what happens when the material changes. Land on it.</p>
-      <p>The chip says 7 OPEN. It closes on slide 28.</p>
+      <p>The chip says 7 OPEN. It closes on slide 31.</p>
     </aside>
   </section>
 
@@ -1296,7 +1307,7 @@
     <aside class="notes">
       <p>Two — the read-back. Accuracy is confirmed at the point of entry, by the person who was actually there, not at consolidation weeks later by someone who was not.</p>
       <p>Three — the timestamp. The 7-1-7 clock starts itself. Nobody has to remember to start it.</p>
-      <p>Then the line that matters most: <strong>the logbook stops existing.</strong> There is no paper to fill, no photograph to send, no MESU re-encoding at the other end — because describing the signal is what records and reports it. That is the same claim the demo on slide 32 makes; say it the same way in both places.</p>
+      <p>Then the line that matters most: <strong>the logbook stops existing.</strong> There is no paper to fill, no photograph to send, no MESU re-encoding at the other end — because describing the signal is what records and reports it. That is the same claim the demo on slide 35 makes; say it the same way in both places.</p>
       <p>This is G4 and G6 closing at the same time.</p>
     </aside>
   </section>
@@ -1317,7 +1328,7 @@
       <p class="src" data-step="5">Log-sheet fields from the DOH Interim Guidelines, July 2024.</p>
     </div>
     <aside class="notes">
-      <p>This is the by-product of the conversation on the previous slide, and it is the line that matters most: <strong>the logbook stops existing.</strong> No paper to fill, no photograph to send, no MESU re-encoding at the other end — because describing the signal is what records and reports it. The demo on slide 32 makes the same claim; say it the same way in both places.</p>
+      <p>This is the by-product of the conversation on the previous slide, and it is the line that matters most: <strong>the logbook stops existing.</strong> No paper to fill, no photograph to send, no MESU re-encoding at the other end — because describing the signal is what records and reports it. The demo on slide 35 makes the same claim; say it the same way in both places.</p>
       <p>This is G4 and G6 closing at the same time.</p>
     </aside>
   </section>
@@ -1326,58 +1337,66 @@
   <section class="slide darker wide" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Local signal, national picture</div>
-      <h2 class="tight">Three real signals. Three separate logbooks.</h2>
-      <div class="mapwrap">
-        <div>
-          <!-- Deliberately a schematic, not a coastline. A hand-drawn Philippines
-               silhouette that is even slightly wrong is the only thing on this
-               slide a room in Puerto Princesa would notice, and it would cost the
-               argument. The field is barangays; three of them light. -->
-          <div class="field" id="signalfield"></div>
-          <div class="ladder" data-step="4">
-            <span class="rung">Barangay</span><span class="sep">&rarr;</span>
-            <span class="rung">Municipality</span><span class="sep">&rarr;</span>
-            <span class="rung">Province</span><span class="sep">&rarr;</span>
-            <span class="rung">Region</span><span class="sep">&rarr;</span>
-            <span class="rung top">National</span>
+      <h2 class="tight">Three real signals. Every one found by a BHW.</h2>
+      <div class="maplist wide3">
+        <div class="sig" data-step="1">
+          <span class="pin"></span>
+          <div>
+            <b>Rabies &middot; Barangay Malibago, Torrijos</b>
+            <span>A stray dog bit four people. The Kagawad on Health told the BHW &mdash; in under a day.</span>
           </div>
         </div>
-        <div class="maplist">
-          <div class="sig" data-step="1">
-            <span class="pin"></span>
-            <div>
-              <b>Rabies &middot; Barangay Malibago, Torrijos</b>
-              <span>A stray dog bit four people. The Kagawad on Health told the BHW &mdash; in under a day.</span>
-            </div>
+        <div class="sig" data-step="2">
+          <span class="pin"></span>
+          <div>
+            <b>Influenza-like illness &middot; Sta. Cruz</b>
+            <span>128 cases, 97% students. The principal told the BHW &mdash; eight days on.</span>
           </div>
-          <div class="sig" data-step="2">
-            <span class="pin"></span>
-            <div>
-              <b>Influenza-like illness &middot; Sta. Cruz</b>
-              <span>128 cases, 97% students. The principal told the BHW &mdash; eight days on.</span>
-            </div>
-          </div>
-          <div class="sig" data-step="3">
-            <span class="pin"></span>
-            <div>
-              <b>Measles &middot; Tatalon, Quezon City</b>
-              <span>16 cases, 13 lab-confirmed. A mother told the BHW &mdash; in three days.</span>
-            </div>
+        </div>
+        <div class="sig" data-step="3">
+          <span class="pin"></span>
+          <div>
+            <b>Measles &middot; Tatalon, Quezon City</b>
+            <span>16 cases, 13 lab-confirmed. A mother told the BHW &mdash; in three days.</span>
           </div>
         </div>
       </div>
-      <p class="kicker-line" data-step="4">Every one found by a BHW. Not one visible above its municipality that day.</p>
-      <p class="src" data-step="4">CESR M&amp;SS Feedback, June 2026. Field is schematic &mdash; one dot is a barangay.</p>
+      <p class="src" data-step="3">CESR M&amp;SS Feedback, June 2026.</p>
     </div>
     <aside class="notes">
       <p>Be generous here — this slide is CESR working. A kagawad, a principal and a mother each told a BHW, and the BHW acted. That is the system doing exactly what it was designed to do.</p>
-      <p>The turn is the last line, and it is about visibility, not about performance: three real events, three separate paper logbooks, no shared picture. On one platform this is a map on the day it happens, not a finding in a review eight months later.</p>
       <p>If asked about the timings: 1 day, 8 days, 3 days from occurrence to report — the 7-day detection target is in the DOH guideline.</p>
+      <p>The turn comes on the next slide. Do not pre-empt it here.</p>
       <p class="cites">Rabies/Torrijos, ILI/Sta. Cruz, measles/Tatalon — the three health-event reviews in the June 2026 M&amp;SS round.</p>
     </aside>
   </section>
 
-  <!-- 27 · PRIVACY -->
+  <!-- 27 · AND NONE OF THEM TRAVELLED -->
+  <section class="slide darker" data-act="The Direction">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> Local signal, national picture</div>
+      <h2 class="tight">Three separate logbooks.</h2>
+      <!-- Deliberately a schematic, not a coastline. A hand-drawn Philippines
+           silhouette that is even slightly wrong is the only thing on this
+           slide a room in Puerto Princesa would notice, and it would cost the
+           argument. The field is barangays; three of them light. -->
+      <div class="field" id="signalfield" data-step="1"></div>
+      <div class="ladder" data-step="2">
+        <span class="rung">Barangay</span><span class="sep">&rarr;</span>
+        <span class="rung">Municipality</span><span class="sep">&rarr;</span>
+        <span class="rung">Province</span><span class="sep">&rarr;</span>
+        <span class="rung">Region</span><span class="sep">&rarr;</span>
+        <span class="rung top">National</span>
+      </div>
+      <p class="kicker-line" data-step="3">Not one of them was visible above its own municipality on the day it was found.</p>
+      <p class="src" data-step="3">Field is schematic &mdash; one dot is a barangay, not a mapped location.</p>
+    </div>
+    <aside class="notes">
+      <p>This is the turn, and it is about visibility, not performance: three real events, three separate paper logbooks, no shared picture. On one platform this is a map on the day it happens, not a finding in a review eight months later.</p>
+    </aside>
+  </section>
+
+  <!-- 28 · PRIVACY -->
   <section class="slide dark" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Insight without exposure</div>
@@ -1386,11 +1405,8 @@
         <li data-step="1"><span>01</span>Consent at first login, in Filipino and English.</li>
         <li data-step="2"><span>02</span>Community members never touch the app &mdash; their data is <strong>de-identified at capture</strong>. Counts, not names.</li>
         <li data-step="3"><span>03</span>Above the barangay, only aggregates travel.</li>
-        <li data-step="4"><span>04</span>Chat purges at 24 months; the audit trail keeps five years.</li>
-        <li data-step="5"><span>05</span>Export and anonymise on request. NPC 72-hour breach playbook, rehearsed.</li>
       </ul>
-      <p class="kicker-line" data-step="6">Insight comes from patterns across barangays &mdash; never from any one household.</p>
-      <p class="src" data-step="6">RA 10173; BHW Connect Phase 2 privacy and consent design.</p>
+      <p class="kicker-line" data-step="4">Insight comes from patterns across barangays &mdash; never from any one household.</p>
     </div>
     <aside class="notes">
       <p>Say this before anyone has to ask it. Volunteering it is what makes it credible.</p>
@@ -1398,29 +1414,59 @@
     </aside>
   </section>
 
-  <!-- 28 · ONE PLATFORM -->
+  <!-- 29 · AND WHAT WE KEEP -->
+  <section class="slide dark" data-act="The Direction">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> Insight without exposure</div>
+      <h2 class="tight">And what we keep, we keep briefly.</h2>
+      <ul class="costlist">
+        <li data-step="1"><span>04</span>Chat purges at 24 months; the audit trail keeps five years.</li>
+        <li data-step="2"><span>05</span>Export and anonymise on request, for any data subject.</li>
+        <li data-step="3"><span>06</span>NPC 72-hour breach playbook, rehearsed against a written runbook.</li>
+      </ul>
+      <p class="src" data-step="3">RA 10173; BHW Connect Phase 2 privacy and consent design.</p>
+    </div>
+    <aside class="notes">
+      <p>These three are the ones a data-privacy officer will ask about. They are already designed and written down, not aspirations.</p>
+    </aside>
+  </section>
+
+  <!-- 30 · ONE PLATFORM -->
   <section class="slide light solution wide" data-act="The Direction">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Consolidation</div>
-      <h2 class="tight">What the barangay enters, the country can see.<span class="statechip open" id="chip-close">7 open</span></h2>
+      <h2 class="tight">What the barangay enters, the country can see.<span class="statechip open">7 open</span></h2>
       <div class="closes">
         <div class="close-row" data-step="1"><span class="gtag">G1</span><span class="was">&ldquo;Masyadong mahal para maabot ang lahat.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">&#8369;50 per BHW — and every module after the first.</span></div>
         <div class="close-row" data-step="2"><span class="gtag">G2</span><span class="was">&ldquo;Napakaraming batch, napakaraming araw.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">No batches. Every BHW, at once.</span></div>
         <div class="close-row" data-step="3"><span class="gtag">G3</span><span class="was">&ldquo;Nakasandal sa partner ang gastos at gawain.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">Owned, hosted and governed by DOH.</span></div>
         <div class="close-row" data-step="4"><span class="gtag">G4</span><span class="was">&ldquo;Larawan lang ang ulat — walang database.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">One database. Every tier. Live.</span></div>
-        <div class="close-row" data-step="5"><span class="gtag">G5</span><span class="was">&ldquo;Kapag umalis ang BHW, umalis din ang training.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">Competency stays on the record when she moves.</span></div>
-        <div class="close-row" data-step="6"><span class="gtag">G6</span><span class="was">&ldquo;Bagong programa, bagong cascade — paulit-ulit.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">The next programme is a module, not a cascade.</span></div>
-        <div class="close-row" data-step="7"><span class="gtag">G7</span><span class="was">&ldquo;Kapag may mali, hihintayin pa ang susunod na training.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">A revision reaches every BHW the day it is approved.</span></div>
       </div>
     </div>
     <aside class="notes">
-      <p>Do not read all seven. Read the Filipino side of two — G4 and G7 — and let the room's eye travel right on its own.</p>
+      <p>Do not read all four. Read the Filipino side of G4 and let the room's eye travel right on its own.</p>
       <p>The left column is how the complaint is actually said in the barangay; the right is how it will be written in an issuance. That pairing is the argument.</p>
-      <p>The chip flips to 7 CLOSED on the last one.</p>
     </aside>
   </section>
 
-  <!-- 29 · ISSUANCES -->
+  <!-- 31 · AND THE LAST THREE -->
+  <section class="slide light solution wide" data-act="The Direction">
+    <div class="slide__inner">
+      <div class="eyebrow"><span class="num"></span> Consolidation</div>
+      <h2 class="tight">&hellip;and the last three.<span class="statechip open" id="chip-close">7 open</span></h2>
+      <div class="closes">
+        <div class="close-row" data-step="1"><span class="gtag">G5</span><span class="was">&ldquo;Kapag umalis ang BHW, umalis din ang training.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">Competency stays on the record when she moves.</span></div>
+        <div class="close-row" data-step="2"><span class="gtag">G6</span><span class="was">&ldquo;Bagong programa, bagong cascade — paulit-ulit.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">The next programme is a module, not a cascade.</span></div>
+        <div class="close-row" data-step="3"><span class="gtag">G7</span><span class="was">&ldquo;Kapag may mali, hihintayin pa ang susunod na training.&rdquo;</span><span class="to">&rarr;</span><span class="becomes">A revision reaches every BHW the day it is approved.</span></div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>G7 is the one that came from the floor. Land on it.</p>
+      <p>The chip flips to 7 CLOSED on the last one — that is the payoff for the whole act. Let it land before moving on.</p>
+    </aside>
+  </section>
+
+  <!-- 32 · ISSUANCES -->
   <section class="slide dark wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> What DOH will issue</div>
@@ -1448,7 +1494,7 @@
     </aside>
   </section>
 
-  <!-- 30 · IN DEVELOPMENT -->
+  <!-- 33 · IN DEVELOPMENT -->
   <section class="slide dark wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> And three being developed</div>
@@ -1478,7 +1524,7 @@
     </aside>
   </section>
 
-  <!-- 31 · YOU ALREADY ASKED FOR THIS -->
+  <!-- 34 · YOU ALREADY ASKED FOR THIS -->
   <section class="slide darker centered" data-act="The Ask">
     <div class="slide__inner">
       <p class="kicker-line" data-step="1" style="margin-top:0">In June, your own monitoring round closed with a request:</p>
@@ -1493,7 +1539,7 @@
     </aside>
   </section>
 
-  <!-- 32 · LIVE DEMO -->
+  <!-- 35 · LIVE DEMO -->
   <section class="slide light solution wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Not a mock-up</div>
@@ -1527,7 +1573,7 @@
     </aside>
   </section>
 
-  <!-- 33 · WHAT IS REAL -->
+  <!-- 36 · WHAT IS REAL -->
   <section class="slide dark wide" data-act="The Ask">
     <div class="slide__inner">
       <div class="eyebrow"><span class="num"></span> Plainly</div>
@@ -1559,7 +1605,7 @@
     </aside>
   </section>
 
-  <!-- 34 · CLOSE -->
+  <!-- 37 · CLOSE -->
   <section class="slide darker centered" data-act="">
     <div class="slide__inner">
       <q class="close-q">
@@ -1746,12 +1792,6 @@
     stepEls(s).forEach(function(el){
       var n = parseInt(el.getAttribute('data-step'), 10);
       el.classList.toggle('shown', n <= upto);
-      /* only the step just revealed carries the landing pulse */
-      el.classList.remove('latest');
-      if(n === upto && !reduced()){
-        void el.offsetWidth;            /* restart the animation if re-applied */
-        el.classList.add('latest');
-      }
     });
     /* Per-slide reactions to build progress. */
     var sc = s.querySelector('.scatter');
