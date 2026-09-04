@@ -14,11 +14,13 @@ so the deck fills 30 minutes of speaking.
 RESUs (Central Luzon, MIMAROPA, NCR); PDOHOs/PHOs; DSOs; and BHWs from Quezon City,
 Puerto Princesa, Palawan and Marinduque.
 
-**Shape.** 37 slides in five acts, one idea per slide, click-builds. Slide 2 is a ten-second
-outline. Four statement slides (1, 14, 34, 37) take about 30 seconds each; the rest average
-under a minute. The count went from 24 to 37 deliberately: the dense slides were split so
-that no slide has to shrink to fit a screen (see *Fit without shrinking* below). The total
-content is unchanged; there are simply more clicks, and a click is one tap anywhere.
+**Shape.** 34 slides in five acts, one idea per slide, one click per slide. Slide 2 is a
+ten-second outline. Four statement slides (1, 14, 31, 34) take about 30 seconds each; the
+rest average under a minute. The count went 24 → 37 → 34: the dense slides were split so
+that no slide has to shrink to fit a screen (see *Fit without shrinking* below), then three
+that repeated a neighbour were folded back. The whole deck is 57 clicks: 33 slide changes
+and 24 builds. Everything on a slide is on screen on arrival except its highlighted line,
+which is the one click (see *Builds* below).
 
 ---
 
@@ -31,15 +33,17 @@ Change these only deliberately — each one is holding something up.
 | **Tone toward CESR** | **Implicit.** No slide states a criticism. Evidence from the partner's own monitoring deck and activity reports is shown flat with a source caption, and the audience concludes. The single editorial sentence is on slide 11: *"This is not a finding about CESR. It is what the model produces, everywhere."* It points at the method, not at anyone. Do not add a second one. |
 | **7-1-7 = 0%** | Presenter notes only, never on a slide. On screen it reads as an attack on people who are in the room. |
 | **The partner is never named** | "The development partner", "partner-supported". EpiC GHS appears only inside citation captions and presenter notes, where it is the author of the source document. |
-| **Slide 34 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
-| **Slide 37 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
-| **Filipino** | Deck is English. Filipino pull-quotes at the emotional beats (slides 6, 22, 24), the seven gap statements on slides 30–31, and inside the chat simulations and the demo, where the language *is* the point. |
+| **Slide 31 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
+| **Slide 34 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
+| **Filipino** | Deck is English. Filipino pull-quotes at the emotional beats (slides 6, 21, 22), the seven gap statements on slides 27–28, and inside the chat simulations and the demo, where the language *is* the point. |
 | **Readiness language** | Phase 2 is described as *designed end to end and in build* — the CESR module is content and configuration on that system, not a new build. Never "deployed nationwide", never "live". |
-| **The logbook stops existing** | The operational claim the deck makes, and it must be made identically wherever it appears: slides 23–24 (the conversation, then the read-back and filing), slide 25 (the record it produces, with nobody writing it), slide 35's third demo answer (*"Hindi na po kayo mag-uulat nang mano-mano"*), and slide 20's two `Auto ✓` rows (timeliness is measured, not reconstructed). Nothing in the deck may tell a BHW to write in a log sheet or to file a report by hand. What is *not* claimed: the DSO and MESU still verify, assess and respond. Only the transcription and the chasing go. |
-| **Text density** | One headline, at most one supporting line; the build carries the rest. If a slide needs a paragraph, it is two slides — applied literally in the 24→37 split. |
+| **The logbook stops existing** | The operational claim the deck makes, and it must be made identically wherever it appears: slide 22 (the conversation, its read-back and its filing), slide 23 (the record it produces, with nobody writing it), slide 32's third demo answer (*"Hindi na po kayo mag-uulat nang mano-mano"*), and slide 19's two `Auto ✓` rows (timeliness is measured, not reconstructed). Nothing in the deck may tell a BHW to write in a log sheet or to file a report by hand. What is *not* claimed: the DSO and MESU still verify, assess and respond. Only the transcription and the chasing go. |
+| **Text density** | One headline, at most one supporting line, on screen on arrival. If a slide needs a paragraph, it is two slides — applied literally in the 24→37 split. The 37→34 fold went the other way: a slide that only restated its neighbour (the four pillars after the converge; the read-back after the conversation; retention after the privacy principles) was folded into that neighbour, so that each idea is said once. |
+| **One click per slide** | The presenter's rule, from the Palawan slide: *"it could have appeared along with other contents; the highlight should be the transition."* So the number, headline, pull and source are there on arrival, and the one click is the highlighted line — the Filipino quote, the kicker, the total, the chip flip, the converge. Two slides keep a second beat (7: the total, then *once*; 9: the question, then its consequence). Every card, tile, row, screen and bubble list arrives whole. Do not re-stagger them. |
+| **Slides cut, they do not fade** | See *No motion that blurs* below. A cross-fade paints two slides over each other for a few hundred milliseconds, and text over text reads as a smear whatever the rasterizer does. |
 | **Logos** | Text-only wordmarks. No image assets anywhere. |
-| **Seven gaps, not six** | G7 *Correctable* came from the presenter: *"paano pag may mali sa materials? Papatawag ba tayo ulit?"* Slide 9 poses it, G7 registers it on slide 13, slide 16's fourth pillar and G7's closure on slide 31 answer it. That thread is the spine of the cost argument — ₱1.98 B buys one *version*, not a trained workforce. |
-| **Not a map** | Slide 27 is a schematic field of barangays, not a coastline. Two attempts at a real Philippines silhouette were discarded: one even slightly wrong is the one thing a room in Puerto Princesa would notice, and it would cost the argument. |
+| **Seven gaps, not six** | G7 *Correctable* came from the presenter: *"paano pag may mali sa materials? Papatawag ba tayo ulit?"* Slide 9 poses it, G7 registers it on slide 13, the second half of slide 17's line and G7's closure on slide 28 answer it. That thread is the spine of the cost argument — ₱1.98 B buys one *version*, not a trained workforce. |
+| **Not a map** | Slide 25 is a schematic field of barangays, not a coastline. Two attempts at a real Philippines silhouette were discarded: one even slightly wrong is the one thing a room in Puerto Princesa would notice, and it would cost the argument. |
 
 ---
 
@@ -49,41 +53,38 @@ Change these only deliberately — each one is holding something up.
 |---|---|---|
 | 1 | — | Title |
 | 2 | — | Outline — the five acts, ten seconds, no build |
-| 3 | The Provocation | "Insanity…" · RA 7883, thirty years, no national picture |
-| 4 | What We Know | ~300,000 profiled in a year — *it was the method* |
-| 5 | | 7 in 10 · 45% · 2% — *the ceiling was never the BHW* |
-| 6 | | Palawan: 344 microscopists, mostly homemakers |
-| 7 | | ₱2,200 → ₱6,600 → ₱1.98 B — *and that buys one training, once* |
-| 8 | | ₱6,600 or ₱50 — the bars, and the ₱50 covers every module after the first |
-| 9 | | **When the material changes** — do we call 300,000 people back? |
-| 10 | | The scattered effort — good work, built to stay small |
-| 11 | The Ground | CESR, plainly: 3.6% · "pictures, no database" · 8 batches |
-| 12 | | Seven things a training event cannot be — G1–G4 · `7 open` |
-| 13 | | …and three more — G5–G7 |
-| 14 | The Direction | *Not another training. A system that trains.* |
-| 15 | | One clearing house — the dots converge |
-| 16 | | What it makes possible: tiered · any mode · any author · **corrected once** |
-| 17 | | The materials already exist — CESR's own guideline, decks and checklists |
-| 18 | | The cascade today, against the same materials as an approved module |
-| 19 | | Attendance is not competence — 1 of 3, what the BHW sees |
-| 20 | | 2 of 3, what the supervisor sees — two rows measured by the system |
-| 21 | | 3 of 3, what the country sees — *who, in what, assessed by whom, when* |
-| 22 | | Chatbot as coach — recall support between events |
-| 23 | | Chatbot as the form — she describes it, it asks only what this signal needs |
-| 24 | | It reads back, then it files — *walang logbook* |
-| 25 | | The record it produced — *nobody wrote this, nobody filed it* |
-| 26 | | Three real signals — every one found by a BHW |
-| 27 | | Three separate logbooks — the field, and none of them travelled |
-| 28 | | Privacy — consent, de-identified at capture, only aggregates travel |
-| 29 | | And what we keep, we keep briefly — retention, export, breach |
-| 30 | | One platform — G1–G4 closed |
-| 31 | | …and the last three · `7 closed` |
-| 32 | The Ask | Three issuances committed, 2026–2027 |
-| 33 | | Three more in development, shaped with this room |
-| 34 | | You already asked for this — the "CESR Signal Application" |
-| 35 | | Live demo — tap a question; the third answer retires the logbook |
-| 36 | | What is real, and what is not — *that approval is the work, and it is yours* |
-| 37 | — | *What is your plan to align with our direction?* |
+| 3 | The Provocation | "Insanity…" on arrival · click: RA 7883, thirty years, no national picture |
+| 4 | What We Know | ~300,000 profiled in a year — *it was the method* · click: how |
+| 5 | | 7 in 10 · 45% · 2% · click: *the ceiling was never the BHW* |
+| 6 | | Palawan: 344 microscopists, mostly homemakers · click: *"Hindi kulang ang BHW"* |
+| 7 | | ₱2,200 × 3 days on arrival · click: ₱1.98 B · click: *and that buys one training, once* |
+| 8 | | ₱6,600 or ₱50 — the bars · click: the ₱50 covers every module after the first |
+| 9 | | **When the material changes** · click: do we call 300,000 people back? · click: no second version |
+| 10 | | The scattered effort · click: good work, built to stay small (the dots dim) |
+| 11 | The Ground | CESR, plainly: 3.6% · "pictures, no database" · 8 batches · click: the one editorial line |
+| 12 | | Seven things a training event cannot be — G1–G4 · `7 open` · no build |
+| 13 | | …and three more — G5–G7 · no build |
+| 14 | The Direction | *Not another training.* · click: *A system that trains.* |
+| 15 | | One clearing house · click: the dots converge and the line appears |
+| 16 | | The materials already exist — CESR's own guideline, decks and checklists · click: *not one new page* |
+| 17 | | The cascade today · click: the same materials as an approved module, corrected once |
+| 18 | | Attendance is not competence — 1 of 3, what the BHW sees · no build |
+| 19 | | 2 of 3, what the supervisor sees — two rows measured by the system · no build |
+| 20 | | 3 of 3, what the country sees — *who, in what, assessed by whom, when* · no build |
+| 21 | | Chatbot as coach — recall support between events · click: *"Sagot agad"* |
+| 22 | | Chatbot as the form — she describes it, it asks only what this signal needs · click: it reads back, then it files — *walang logbook* |
+| 23 | | The record it produced — *nobody wrote this* · click: the timestamp, 7-1-7 clock started |
+| 24 | | Three real signals — every one found by a BHW · no build |
+| 25 | | Three separate logbooks — the field, lit on arrival · click: none of them travelled |
+| 26 | | Privacy — consent, de-identified at capture, only aggregates travel, kept briefly · click: patterns, never a household |
+| 27 | | One platform — G1–G4 closed · no build |
+| 28 | | …and the last three · click: `7 closed` (the chip flip is the whole click) |
+| 29 | The Ask | Three issuances committed, 2026–2027 · no build |
+| 30 | | Three more in development, shaped with this room · no build |
+| 31 | | You already asked for this — the "CESR Signal Application" · click: *this is that* |
+| 32 | | Live demo — tap a question; the third answer retires the logbook |
+| 33 | | What is real, and what is not · click: *that approval is the work, and it is yours* |
+| 34 | — | *What is your plan to align with our direction?* |
 
 ---
 
@@ -118,15 +119,15 @@ here first.
 | Rabies, Barangay Malibago, Torrijos | stray dog bit 4; reported by the Barangay Kagawad on Health; <1 day to report | `mss-feedback-2026-06.md:121,149,238`; `activity-report-mss-marinduque-2026-05.md:135` |
 | Influenza-like illness, Sta. Cruz | 128 cases; 124 (97%) students; principal reported to the BHW; 8 days to report | `mss-feedback-2026-06.md:160-163,219,238` |
 | Measles, Tatalon, Quezon City | 16 cases, 13 (81%) laboratory-confirmed; mother reported to the BHW; 3 days to report | `mss-feedback-2026-06.md:228,238` |
-| CESR material inventory (slide 17) | Interim Guidelines; Decks 1–4; BHS Supervisory Checklist (Tagalog); Supportive Supervision Tool; Sensitization Package; Signal Log Sheet Annex 2 | `docs/source-material/cesr/README.md` inventory |
+| CESR material inventory (slide 16) | Interim Guidelines; Decks 1–4; BHS Supervisory Checklist (Tagalog); Supportive Supervision Tool; Sensitization Package; Signal Log Sheet Annex 2 | `docs/source-material/cesr/README.md` inventory |
 | Re-echo scaling model | supervisors are given the decks and expected to re-deliver at BHS level; no record of who was re-echoed to | refresher activity report, July 2026, via `docs/cesr-module.md` §5 |
 
 **Notes-only, never on a slide:** 7-1-7 at 0% (0/2) — `mss-feedback-2026-06.md:306`; M&SS coverage
 Marinduque 6/6, Palawan + PPC 21/24, Quezon City 6/6 — same, :20-24. The per-card evidence
-for the seven gaps moved from the cards to the slide 12 notes when the cards were trimmed;
+for the seven gaps moved from the cards to the slide 13 notes when the cards were trimmed;
 a `.src` line on each gap slide names the source documents.
 
-### The mockup screens (slides 19–21)
+### The mockup screens (slides 18–20)
 
 Three illustrative screens, one per slide — the BHW's phone, the supervisor's grading view,
 the national registry — each carrying an `ILLUSTRATIVE SCREENS` tag on the headline. What is
@@ -142,7 +143,7 @@ quoted and what is invented is kept strictly apart:
 - **Invented, and labelled as such.** Every count — the 3/4 progress and all eight registry
   figures. These are shape, not data, and the tag and the source line both say so.
 
-### The demo (slide 35) and its status claim (slide 36)
+### The demo (slide 32) and its status claim (slide 33)
 
 The demo is an in-deck simulation of the interaction, not the deployed app. Its three
 answers are canned, drawn from the DOH guideline; the third — *"Hindi na po kayo
@@ -166,33 +167,42 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
   no reflow or scroll mode at any size — but the design goal is that it should never *need*
   to scale down. Each slide carries one idea and roughly one screen of content at natural
   size, so on a projector `fit()` scales *up* and the type gets larger, not smaller. The
-  24→37 split exists for this: cost/compare, converge/pillars, inventory/cascade, the
-  conversation/read-back/record, the three events/the field they did not travel, privacy's
-  principles/its retention, committed/in-development and demo/status were each one dense
-  slide; the seven gap cards became 4 + 3 and their seven closures likewise; the three
-  mockup screens became one slide each. All had shrunk to ~0.4 on a phone in landscape.
-  Verified with nothing clipped at 844×390 (min 0.56), 1024×600 (0.96), 1366×560 (0.74),
-  1366×768 (1.00), 1280×720 (0.96) and 1920×1080 (1.39). On a portrait phone a dismissible prompt asks for landscape.
-  Wheel and swipe-scroll are inert.
-- **No motion that blurs.** Nothing animates `transform` or `filter`, anywhere. `fit()` leaves
-  a static `scale()` on `.slide__inner`; animating a transform on the slide made Chrome
-  composite the whole subtree and rasterize it at the *unscaled* size, then magnify that
-  texture for the length of the animation — text went soft for half a second on every click
-  and snapped sharp at the end. A `filter: brightness` pulse on the newly revealed step did
-  the same thing on a smaller scale. Both are gone: slides and steps cross-fade on opacity
-  alone. If a future change adds a transform or filter transition to `.slide` or
-  `[data-step]`, the blur comes back.
+  24→37 split exists for this (the seven gap cards became 4 + 3 and their closures likewise;
+  the three mockup screens became one slide each; the conversation lost its log sheet to a
+  slide of its own). Verified with nothing clipped at 1366×681 (min 0.91, slide 22), 1280×633
+  (0.85), 1024×513 (0.78), 1920×993 (1.39) and 844×303 (0.39, a phone in landscape with its
+  browser bar up). On a portrait phone a dismissible prompt asks for landscape. Wheel and
+  swipe-scroll are inert.
+- **Scaling is `zoom`, not `transform`.** `fit()` measures the slide at natural size, pins
+  `.slide__inner` to the measured width and sets `zoom` to the fit ratio, then reads the
+  painted box back and backs off a fraction if rounding pushed a line over. `zoom` is a
+  layout property: the browser lays the slide out at the fitted size and paints the text at
+  that size, on the pixel grid, with hinting. A `transform: scale()` is a paint-time
+  magnification of a layer rasterized at some other size, and every route Chrome took
+  through it — a fade on the parent, a fractional scale, a `backdrop-filter` nearby — left
+  the text soft for a moment or for good. That was the blur that survived the first fix
+  (which had only stopped *animating* the transform). With zoom there is no layer and
+  nothing to magnify. Every Chromium browser, Safari and Firefox 126+ support it; a
+  transform branch remains as a fallback for anything older and is never taken on the
+  presenter's laptop.
+- **No motion that blurs.** Slides cut; they do not fade. A step fades in over 0.22 s on
+  opacity alone. Nothing inside a slide transitions or animates `transform` or `filter`
+  (the two SVG figures are the exception — the converge and the signal ping — and they are
+  vector shapes, not text). The chrome carries no `backdrop-filter`. If a future change adds
+  any of these back, so does the blur.
 - **The stage is the control.** A tap or click on the right two-thirds of the screen
   advances (next step, then next slide); the left third goes back. Interactive elements
   inside a slide — the demo's question chips — keep their own click and never advance.
   The corner arrows and keys still work, but the presenter never has to find them.
 - **Builds.** Any element with `data-step="N"`. Elements sharing an N appear together.
   Advancing walks the slide's *distinct* step values in order, so a slide whose steps are
-  1, 2, 5 never produces dead clicks between 2 and 5. `→`/Space reveals the next step, then
-  advances the slide; `←` reverses, and arriving at a slide backwards shows its build
-  already finished. Stepped elements keep their layout box (`visibility`, not `display`) so
-  `fit()` measures the finished slide and nothing reflows mid-build. The step just revealed
-  arrives by fade alone — see *No motion that blurs* below.
+  1, 2, 5 never produces dead clicks between 2 and 5; a slide may also declare
+  `data-steps="K"` on its `<section>` for clicks that reveal no element (slide 28's chip
+  flip). `→`/Space reveals the next step, then advances the slide; `←` reverses, and
+  arriving at a slide backwards shows its build already finished. Stepped elements keep
+  their layout box (`visibility`, not `display`) so `fit()` measures the finished slide and
+  nothing reflows mid-build. The rule for what gets a step is *One click per slide* in §1:
+  the highlighted line only. Twenty slides have one click, two have two, twelve have none.
 - **Deep links.** `…#s15` opens slide 15 with its build complete. The hash tracks the current
   slide, so a link can be shared or bookmarked mid-deck. The key legend shows once on a
   fresh open at slide 1 and not on a deep link.
@@ -201,12 +211,13 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
 - **Notes.** `<aside class="notes">` per slide — the speaking line plus reserve material for
   Q&A. Never printed.
 - **Figures.** Dot positions for the scatter (slides 10 and 15) and the signal field (slide
-  27) are fixed tables, never `Math.random()` at runtime, so nothing moves between rehearsal
+  25) are fixed tables, never `Math.random()` at runtime, so nothing moves between rehearsal
   and the room. Both SVGs are width-capped by viewport height as well as by pixels, so they
   can never take more than about a third of a short screen from the headline. The converged
-  targets on slide 15 are a phyllotaxis disc, not a single point. The single mockup screens
-  on slides 19–21 are enlarged with `zoom`, not `transform`, so `fit()` measures the enlarged
-  box and nothing can clip.
+  targets on slide 15 are a phyllotaxis disc, not a single point. The three lit barangays on
+  slide 25 are lit on arrival — they are the three events the previous slide just named. The
+  single mockup screens on slides 18–20 are enlarged with `zoom` for the same reason
+  `fit()` uses it.
 - **Offline.** Zero network requests. Fonts are system stacks. The venue advisory warns
   Wi-Fi is one device per participant with variable signal, so this runs from `file://`
   with the network off.
@@ -223,12 +234,16 @@ Chromium is at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
 2. **Nothing shrinks that should not** — for each slide, reveal all steps and compute the
    scale `fit()` would pick. Target: ≥ 1.0 at 1366×768 (the projector), ≥ 0.9 at 1024×600,
    ≥ 0.5 at 844×390 (a phone in landscape). Anything below 0.2 is clamped and clipped.
-6. **No transform or filter is animated** — `getComputedStyle` on `.slide` and on any
-   `[data-step]` must report a `transition-property` of `opacity, visibility` and a
-   `transform` of `none`. Anything else reintroduces the blur.
-3. **Print** — `--print-to-pdf` yields **37** landscape pages, one per slide.
-4. **Reduced motion** — emulate `prefers-reduced-motion: reduce`; builds still reveal,
+3. **Nothing can blur** — `getComputedStyle` on `.slide` must report `transition-property:
+   none`; on any `[data-step]`, `opacity, visibility` with `transform: none`; on every
+   `.slide__inner`, `transform: none` and a numeric `zoom` (`CSS.supports('zoom','2')` is
+   true). No `backdrop-filter` anywhere. Anything else reintroduces the blur.
+4. **Print** — `--print-to-pdf` yields **34** landscape pages, one per slide.
+5. **Reduced motion** — emulate `prefers-reduced-motion: reduce`; builds still reveal,
    nothing animates.
-5. **Controls** — a right-side tap advances one step at a time and then one slide, a
-   left-side tap retreats, a demo chip answers without advancing, a wheel event is
-   prevented, and `N`, `O`, `Esc`, `B` respond.
+6. **Controls** — a right-side tap advances one step at a time and then one slide, a
+   left-side tap retreats, a demo chip answers without advancing (a tap on the demo phone
+   itself is also inert, by design), a wheel event is prevented, and `N`, `O`, `Esc`, `B`
+   respond. Walking the deck from slide 1 with right-side taps takes exactly **57** clicks
+   and ends on slide 34 with *next* disabled; on slide 28 the chip reads `7 open` at step 0
+   and `7 closed` after one click.
