@@ -75,6 +75,8 @@
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
     overflow:hidden;
+    overscroll-behavior:none;
+    touch-action:manipulation;
   }
   :focus-visible{outline:3px solid var(--sampaguita);outline-offset:2px;border-radius:4px}
 
@@ -616,27 +618,47 @@
   .legend b{color:var(--sampaguita);font-variant-numeric:tabular-nums;
     display:inline-block;min-width:5.5rem}
 
-  /* ---------- responsive ---------- */
-  @media (max-width:1000px){
-    .gaps{grid-template-columns:repeat(2,1fr)}
-    .pillars{grid-template-columns:repeat(2,1fr)}
-  }
+  /* ---------- no reflow, ever ----------
+     There used to be a scroll mode here for narrow or short viewports. It is
+     gone on purpose: a laptop with a tab bar, a bookmarks bar and the artifact
+     header can drop under 600px and silently switch the deck from fit-to-screen
+     to scroll, and the presenter discovers that on stage. Every slide now scales
+     to whatever viewport it is given, always, and nothing scrolls. On a portrait
+     phone that means small type and a prompt to rotate; that is the right
+     trade for a deck whose only real surface is a projector. */
+  .slide{overscroll-behavior:none}
   @media (max-width:760px){
-    .slide{justify-content:flex-start;overflow-y:auto;overflow-x:hidden;
-      -webkit-overflow-scrolling:touch;padding-top:4rem;padding-bottom:4.6rem}
-    .stat{grid-template-columns:1fr;gap:1rem}
-    .trio,.gaps,.closes,.pillars,.changes,.chatgrid,.timeline{grid-template-columns:1fr;gap:.75rem}
     .actbar .seg2 .lb{display:none}
-    .loop .node{flex:1 1 100%}
-    .arrow{transform:rotate(90deg)}
     .notespanel{max-width:100vw}
   }
-  @media (max-height:600px) and (orientation:landscape){
-    .slide{justify-content:flex-start;overflow-y:auto;padding-top:2.6rem;padding-bottom:3.6rem}
-    .eyebrow{margin-bottom:.7rem}
-    h1{font-size:clamp(2rem,6vw,3.2rem)}
-    h2{font-size:clamp(1.35rem,3.6vw,2.1rem)}
-    .stat__num{font-size:clamp(3rem,10vw,5.4rem)}
+  /* Short viewports (a phone in landscape, a laptop with its chrome showing):
+     the fixed top/bottom padding was eating a third of the height before
+     fit() got a look at it. Give it back — this changes the room, not the mode. */
+  @media (max-height:520px){
+    .slide{padding-top:2.2rem;padding-bottom:2.4rem}
+    .slide.centered{padding-top:1.6rem}
+    .actbar .seg2 .lb{display:none}
+  }
+
+  /* the newly revealed step gets one short pulse so the room's eye lands on it */
+  [data-step].latest{animation:landing .7s ease-out}
+  @keyframes landing{
+    0%{filter:brightness(1.35)}
+    100%{filter:brightness(1)}
+  }
+
+  /* portrait phones: ask for landscape rather than shrinking to a stamp */
+  .rotate{position:fixed;inset:0;z-index:60;display:none;place-items:center;text-align:center;
+    background:rgba(4,18,20,.94);color:var(--cream);padding:2rem}
+  .rotate div{max-width:22rem}
+  .rotate .ic{font-size:2.6rem;display:block;margin-bottom:.9rem}
+  .rotate b{display:block;font-size:1.1rem;margin-bottom:.5rem}
+  .rotate p{font-size:.86rem;line-height:1.5;color:var(--cream-soft)}
+  .rotate button{margin-top:1.1rem;font:inherit;font-size:.8rem;font-weight:700;letter-spacing:.06em;
+    background:transparent;color:var(--sampaguita);border:1px solid var(--sampaguita);
+    border-radius:999px;padding:.5rem 1rem;cursor:pointer}
+  @media (orientation:portrait) and (max-width:760px){
+    .rotate:not(.dismissed){display:grid}
   }
   @media (prefers-reduced-motion:reduce){
     .slide{transition:opacity .01s}
@@ -1403,6 +1425,15 @@
 
 <div class="blank" id="blank"></div>
 
+<div class="rotate" id="rotate" role="dialog" aria-label="Rotate your phone">
+  <div>
+    <span class="ic" aria-hidden="true">&#8635;</span>
+    <b>Turn your phone sideways</b>
+    <p>This deck is built for a projector. In landscape it fits the screen exactly as it will on the day; in portrait it has to shrink.</p>
+    <button type="button">Show it anyway</button>
+  </div>
+</div>
+
 <div class="legend" id="legend">
   <div><b>&rarr; / Space</b> next step, then next slide</div>
   <div><b>&larr;</b> back</div>
@@ -1541,6 +1572,12 @@
     stepEls(s).forEach(function(el){
       var n = parseInt(el.getAttribute('data-step'), 10);
       el.classList.toggle('shown', n <= upto);
+      /* only the step just revealed carries the landing pulse */
+      el.classList.remove('latest');
+      if(n === upto && !reduced()){
+        void el.offsetWidth;            /* restart the animation if re-applied */
+        el.classList.add('latest');
+      }
     });
     /* Per-slide reactions to build progress. */
     var sc = s.querySelector('.scatter');
@@ -1599,8 +1636,6 @@
     var inner = s.querySelector('.slide__inner');
     if(!inner) return;
     inner.style.transform = 'none';
-    if(window.innerWidth <= 760 ||
-       (window.innerHeight <= 600 && window.innerWidth > window.innerHeight)) return;
     s.classList.add('measuring');
     var cs = getComputedStyle(s);
     var availW = s.clientWidth  - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
@@ -1609,8 +1644,10 @@
     s.classList.remove('measuring');
     if(!cw || !ch || availW<=0 || availH<=0) return;
     var scale = Math.min(availW/cw, availH/ch);
-    if(scale < 0.42) scale = 0.42;
-    if(scale > 2.6)  scale = 2.6;
+    /* Fit is the contract: whatever the viewport, the whole slide is on it.
+       The floor exists only so a pathological viewport cannot scale to zero. */
+    if(scale < 0.2) scale = 0.2;
+    if(scale > 2.6) scale = 2.6;
     if(Math.abs(scale-1) > 0.004) inner.style.transform = 'scale('+scale+')';
   }
   function fitAll(){ for(var i=0;i<slides.length;i++) fit(slides[i]); }
@@ -1679,6 +1716,20 @@
 
   prevBtn.addEventListener('click', retreat);
   nextBtn.addEventListener('click', advance);
+
+  /* The whole stage is a control: the right two-thirds advances, the left
+     third goes back. Anything genuinely interactive inside a slide — the
+     demo's question chips — keeps its own click. No hunting for a 38px arrow
+     in the corner while talking. */
+  document.getElementById('deck').addEventListener('click', function(e){
+    if(e.target.closest('button, a, .askchip, .phone')) return;
+    if(e.clientX < window.innerWidth * 0.3) retreat(); else advance();
+  });
+
+  /* Nothing overflows, so the wheel has nothing to scroll; a trackpad
+     flick must not nudge a fitted slide by a few pixels either. */
+  document.addEventListener('wheel', function(e){ e.preventDefault(); }, {passive:false});
+
   window.addEventListener('resize', scheduleFit);
   window.addEventListener('orientationchange', scheduleFit);
 
@@ -1854,6 +1905,19 @@
   totEl.textContent = pad(total);
   var start = fromHash();
   go(start, start > 0);
+
+  /* One glance at the controls on a fresh open, then out of the way. Not on
+     a deep link — that is a reload mid-deck, and the legend would sit on top
+     of the slide being presented. */
+  if(start === 0){
+    legend.classList.add('show');
+    legendTimer = setTimeout(function(){ legend.classList.remove('show'); }, 4500);
+  }
+
+  var rot = document.getElementById('rotate');
+  if(rot){
+    rot.querySelector('button').addEventListener('click', function(){ rot.classList.add('dismissed'); });
+  }
   window.addEventListener('hashchange', function(){
     var i = fromHash();
     if(i !== cur) go(i, true);

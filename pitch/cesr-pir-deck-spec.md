@@ -146,11 +146,24 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
 `solution`), eyebrow type, `.statechip`, `.gap`/`.close-row`, `.stat`, `.costlist`, chrome,
 `fit()`. The demo chapter and `.app-scope` block are deliberately absent.
 
+- **Fit, never scroll.** Every slide scales to whatever viewport it is given — there is
+  no reflow or scroll mode at any width or height. There used to be one for narrow or
+  short viewports, and it is gone on purpose: a laptop with a tab bar, a bookmarks bar
+  and the artifact header can drop under 600px tall and silently switch the deck from
+  fit-to-screen to scroll, and the presenter discovers that on stage. Verified fitted with
+  nothing clipped at 1366×560 and 1280×520 (short laptops) as well as the projector sizes.
+  On a portrait phone a dismissible prompt asks for landscape rather than shrinking to a
+  stamp. Wheel and swipe-scroll are inert.
+- **The stage is the control.** A tap or click on the right two-thirds of the screen
+  advances (next step, then next slide); the left third goes back. Interactive elements
+  inside a slide — the demo's question chips — keep their own click and never advance.
+  The corner arrows and keys still work, but the presenter never has to find them.
 - **Builds.** Any element with `data-step="N"`. Elements sharing an N appear together.
   `→`/Space reveals the next step, then advances the slide; `←` reverses, and arriving at a
   slide backwards shows its build already finished. Stepped elements keep their layout box
   (`visibility`, not `display`) so `fit()` measures the finished slide and nothing reflows
-  mid-build.
+  mid-build. The step just revealed carries one short brightness pulse so the room's eye
+  lands on it; older steps stay as they are.
 - **Deep links.** `…#s13` opens slide 13 with its build complete. The hash tracks the current
   slide, so a link can be shared or bookmarked mid-deck.
 - **Keys.** `→`/Space, `←`, `Home`/`End`, `N` notes, `O` overview (`Esc` closes), `B` blank,
