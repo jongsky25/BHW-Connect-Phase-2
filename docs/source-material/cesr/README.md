@@ -50,7 +50,7 @@ If you are new to CESR, three files give you the whole picture:
 | [mss-feedback-2026-06.md](./mss-feedback-2026-06.md) | `CESR M&SS Feedback_2026_06_16.pptx` | **The most product-relevant file.** March–June 2026 monitoring round. Three health-event reviews with 7-1-7 metrics (rabies/Torrijos, ILI/Sta. Cruz, measles/Tatalon), the M&E indicator set with real measured values, the key findings and recommendations, and the explicit **"CESR Signal Application"** specification plus the SHARE reporting mechanism. |
 | [activity-report-mss-marinduque-2026-05.md](./activity-report-mss-marinduque-2026-05.md) | `Revised AR - MSS District 1 MDQ -May 25-29- 2026- -1- (1).pdf` | Field-level companion to the deck. Named coverage figures (4%–64% of barangays recording signals), the failure modes in detail, and action points with owners and due dates. |
 | [implementation-dashboard-2026-07.md](./implementation-dashboard-2026-07.md) | `CESR Implementation Updates Dashboard_July2026.pdf` | Power BI export, Region IV-B. Training numbers, signal counts, timeliness ratios, and the resource gaps — posters present in ~52% of Palawan BHS, and 38% of BHS with no mobile phone provided for CESR. |
-| [activity-report-bhw-supervisor-refresher-2026-07.md](./activity-report-bhw-supervisor-refresher-2026-07.md) | `AR_CESR Refresher for BHW Supervisors_July 19-25, 2026 (Signed) (1).pdf` | ⚠️ **Low-yield.** The PDF is image-based; only the title and signature block extracted. See the file's extraction note. |
+| [activity-report-bhw-supervisor-refresher-2026-07.md](./activity-report-bhw-supervisor-refresher-2026-07.md) | `AR_CESR Refresher for BHW Supervisors_July 19-25, 2026 (Signed) (1).pdf` | The remediation for the M&SS finding that BHWs could not recall the signal definitions — aimed one level up, at the midwives and nurses who supervise them. 8 batches across Palawan and Marinduque, three modules, session-by-session learning objectives, participant feedback and action points. Recovered by visual reading of the rendered pages; the PDF is image-based and yields no extractable text. |
 
 ### Field instruments
 
@@ -96,9 +96,11 @@ scenarios and sample log sheets, and Deck 4's entire Tagalog dialogue set, are p
 
 ## Known gaps
 
-- **The BHW Supervisor refresher activity report did not extract** (image-based PDF). Its
-  substance — attendance, numbers trained, pre/post-test results, findings, action points — is not
-  captured. Needs manual transcription or an OCR re-export from the Drive original.
+- **The BHW Supervisor refresher report has an unreconciled participant count.** Its narrative says
+  390 participants across 8 batches; its own table totals 347, which is what the batch figures sum
+  to. Both are transcribed as printed and flagged in that file — don't cite either without checking
+  the source. That report also reports **no pre/post-test scores** (a pre-test was administered but
+  results were never written up) and **no participant name list**, so neither exists to recover.
 - **The Power BI export loses chart labels.** Several values in the dashboard transcription arrive
   detached from their category labels; those are flagged in that file's extraction note rather than
   guessed at.
@@ -114,6 +116,22 @@ Those were recovered by downloading the `.pptx` directly
 (`https://drive.google.com/uc?export=download&id=<fileId>`) and parsing locally with `python-pptx`,
 pulling shape text in reading order plus tables and speaker notes. Use that route for anything over
 roughly 50 MB rather than the read tool.
+
+**Image-based PDFs** need a different route again. `AR_CESR Refresher for BHW Supervisors` yields no
+text at all from the read tool — pages 1–9 are scanned or image-composed and contain zero extractable
+characters, so the tool returns only the page banner and the signature block on pages 10–11. It was
+recovered by downloading the PDF the same way, rendering each page to PNG with PyMuPDF, and reading
+the images visually:
+
+```python
+import pymupdf
+doc = pymupdf.open("file.pdf")
+for i, page in enumerate(doc):
+    page.get_pixmap(dpi=170).save(f"p{i+1:02d}.png")
+```
+
+Check `page.get_text()` per page first — a page returning 0 characters is image-based and needs this
+route, not the read tool.
 
 ## Provenance and handling
 

@@ -317,6 +317,17 @@ decks into INC-12 courses with a quiz on the signal definitions, would attack th
 ships** — no new tables, no new roles. If only one thing is done from this whole document, it should
 probably be that.
 
+The July 2026 supervisor refresher makes that case sharper than the M&SS round alone did. Its
+scaling model is explicit in its action points: *"Provision of PowerPoint presentations (Modules 1–3)
+to support the **re-echo training** in Barangay Health Stations."* Supervisors are handed slide decks
+and expected to re-deliver the training downward. That is precisely the cascade whose fidelity is
+already known to decay — the same programme measured BHWs failing to recall the four signal
+definitions — and it decays invisibly, because nobody can tell who was re-echoed to, or what stuck.
+A hosted course with a quiz replaces an unverifiable cascade with a completion record and a pass
+mark, which is a capability INC-12 already has and the paper model structurally cannot. The refresher
+also found supervisors themselves asking for *"strengthened feedback mechanisms between BHWs, BHS
+Supervisors, and MESUs/CESUs"* — the same broken loop, reported from the other end of it.
+
 ---
 
 ## 6. Open decisions
