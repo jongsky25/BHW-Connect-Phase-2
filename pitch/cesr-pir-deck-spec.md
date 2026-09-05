@@ -14,11 +14,13 @@ so the deck fills 30 minutes of speaking.
 RESUs (Central Luzon, MIMAROPA, NCR); PDOHOs/PHOs; DSOs; and BHWs from Quezon City,
 Puerto Princesa, Palawan and Marinduque.
 
-**Shape.** 37 slides in five acts, one idea per slide, click-builds. Slide 2 is a ten-second
-outline. Four statement slides (1, 14, 34, 37) take about 30 seconds each; the rest average
-under a minute. The count went from 24 to 37 deliberately: the dense slides were split so
-that no slide has to shrink to fit a screen (see *Fit without shrinking* below). The total
-content is unchanged; there are simply more clicks, and a click is one tap anywhere.
+**Shape.** 35 slides in five acts, one idea per slide, click-builds. Slide 2 is a ten-second
+outline and slide 34 is its mirror at the end. Four statement slides (1, 13, 31, 35) take
+about 30 seconds each; the rest average under a minute. The count went from 24 to 37
+deliberately — the dense slides were split so that no slide has to shrink to fit a screen
+(see *Fit without shrinking* below) — then three were cut and the closing recap added: 35.
+The total content is unchanged; there are simply more clicks, and a click is one tap
+anywhere.
 
 ---
 
@@ -28,18 +30,19 @@ Change these only deliberately — each one is holding something up.
 
 | Decision | Choice and why |
 |---|---|
-| **Tone toward CESR** | **Implicit.** No slide states a criticism. Evidence from the partner's own monitoring deck and activity reports is shown flat with a source caption, and the audience concludes. The single editorial sentence is on slide 11: *"This is not a finding about CESR. It is what the model produces, everywhere."* It points at the method, not at anyone. Do not add a second one. |
+| **Tone toward CESR** | **Implicit.** No slide states a criticism. Evidence from the partner's own monitoring deck and activity reports is shown flat with a source caption, and the audience concludes. The single editorial sentence is on slide 10: *"This is not a finding about CESR. It is what the model produces, everywhere."* It points at the method, not at anyone. Do not add a second one. |
 | **7-1-7 = 0%** | Presenter notes only, never on a slide. On screen it reads as an attack on people who are in the room. |
 | **The partner is never named** | "The development partner", "partner-supported". EpiC GHS appears only inside citation captions and presenter notes, where it is the author of the source document. |
-| **Slide 34 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
-| **Slide 37 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
-| **Filipino** | Deck is English. Filipino pull-quotes at the emotional beats (slides 6, 22, 24), the seven gap statements on slides 30–31, and inside the chat simulations and the demo, where the language *is* the point. |
+| **Slide 31 before the close** | The June M&SS closed by asking for a *"CESR Signal Application"*. Showing that they already asked for this is what makes the closing question an offer rather than a demand. Do not cut it. |
+| **Slide 34, the recap** | Tell them what you will tell them (slide 2), tell them, tell them what you told them (slide 34). Five lines, one per act, no new material and no number that has not already been on screen. It closes the frame the outline opened; the question on 35 needs a summing beat in front of it, not a running start. |
+| **Slide 35 stands alone** | The question, nothing else. No thank-you, no contact line, no Filipino translation — English only, at the presenter's direction. |
+| **Filipino** | Deck is English. Filipino pull-quotes at the emotional beats (slides 6, 21, 23), the seven gap statements on slides 27–28, and inside the chat simulations and the demo, where the language *is* the point. |
 | **Readiness language** | Phase 2 is described as *designed end to end and in build* — the CESR module is content and configuration on that system, not a new build. Never "deployed nationwide", never "live". |
-| **The logbook stops existing** | The operational claim the deck makes, and it must be made identically wherever it appears: slides 23–24 (the conversation, then the read-back and filing), slide 25 (the record it produces, with nobody writing it), slide 35's third demo answer (*"Hindi na po kayo mag-uulat nang mano-mano"*), and slide 20's two `Auto ✓` rows (timeliness is measured, not reconstructed). Nothing in the deck may tell a BHW to write in a log sheet or to file a report by hand. What is *not* claimed: the DSO and MESU still verify, assess and respond. Only the transcription and the chasing go. |
-| **Text density** | One headline, at most one supporting line; the build carries the rest. If a slide needs a paragraph, it is two slides — applied literally in the 24→37 split. |
+| **The logbook stops existing** | The operational claim the deck makes, and it must be made identically wherever it appears: slides 22–23 (the conversation, then the read-back and filing), slide 24 (the record it produces, with nobody writing it), slide 32's third demo answer (*"Hindi na po kayo mag-uulat nang mano-mano"*), and slide 19's two `Auto ✓` rows (timeliness is measured, not reconstructed). Nothing in the deck may tell a BHW to write in a log sheet or to file a report by hand. What is *not* claimed: the DSO and MESU still verify, assess and respond. Only the transcription and the chasing go. |
+| **Text density** | One headline, at most one supporting line; the build carries the rest. If a slide needs a paragraph, it is two slides — applied literally in the split. |
 | **Logos** | Text-only wordmarks. No image assets anywhere. |
-| **Seven gaps, not six** | G7 *Correctable* came from the presenter: *"paano pag may mali sa materials? Papatawag ba tayo ulit?"* Slide 9 poses it, G7 registers it on slide 13, slide 16's fourth pillar and G7's closure on slide 31 answer it. That thread is the spine of the cost argument — ₱1.98 B buys one *version*, not a trained workforce. |
-| **Not a map** | Slide 27 is a schematic field of barangays, not a coastline. Two attempts at a real Philippines silhouette were discarded: one even slightly wrong is the one thing a room in Puerto Princesa would notice, and it would cost the argument. |
+| **Seven gaps, not six** | G7 *Correctable* came from the presenter: *"paano pag may mali sa materials? Papatawag ba tayo ulit?"* Slide 8 poses it, G7 registers it on slide 12, slide 15's fourth pillar and G7's closure on slide 28 answer it. That thread is the spine of the cost argument — ₱1.98 B buys one *version*, not a trained workforce. |
+| **Not a map** | Slide 26 is a schematic field of barangays, not a coastline. Two attempts at a real Philippines silhouette were discarded: one even slightly wrong is the one thing a room in Puerto Princesa would notice, and it would cost the argument. |
 
 ---
 
@@ -54,36 +57,34 @@ Change these only deliberately — each one is holding something up.
 | 5 | | 7 in 10 · 45% · 2% — *the ceiling was never the BHW* |
 | 6 | | Palawan: 344 microscopists, mostly homemakers |
 | 7 | | ₱2,200 → ₱6,600 → ₱1.98 B — *and that buys one training, once* |
-| 8 | | ₱6,600 or ₱50 — the bars, and the ₱50 covers every module after the first |
-| 9 | | **When the material changes** — do we call 300,000 people back? |
-| 10 | | The scattered effort — good work, built to stay small |
-| 11 | The Ground | CESR, plainly: 3.6% · "pictures, no database" · 8 batches |
-| 12 | | Seven things a training event cannot be — G1–G4 · `7 open` |
-| 13 | | …and three more — G5–G7 |
-| 14 | The Direction | *Not another training. A system that trains.* |
-| 15 | | One clearing house — the dots converge |
-| 16 | | What it makes possible: tiered · any mode · any author · **corrected once** |
-| 17 | | The materials already exist — CESR's own guideline, decks and checklists |
-| 18 | | The cascade today, against the same materials as an approved module |
-| 19 | | Attendance is not competence — 1 of 3, what the BHW sees |
-| 20 | | 2 of 3, what the supervisor sees — two rows measured by the system |
-| 21 | | 3 of 3, what the country sees — *who, in what, assessed by whom, when* |
-| 22 | | Chatbot as coach — recall support between events |
-| 23 | | Chatbot as the form — she describes it, it asks only what this signal needs |
-| 24 | | It reads back, then it files — *walang logbook* |
-| 25 | | The record it produced — *nobody wrote this, nobody filed it* |
-| 26 | | Three real signals — every one found by a BHW |
-| 27 | | Three separate logbooks — the field, and none of them travelled |
-| 28 | | Privacy — consent, de-identified at capture, only aggregates travel |
-| 29 | | And what we keep, we keep briefly — retention, export, breach |
-| 30 | | One platform — G1–G4 closed |
-| 31 | | …and the last three · `7 closed` |
-| 32 | The Ask | Three issuances committed, 2026–2027 |
-| 33 | | Three more in development, shaped with this room |
-| 34 | | You already asked for this — the "CESR Signal Application" |
-| 35 | | Live demo — tap a question; the third answer retires the logbook |
-| 36 | | What is real, and what is not — *that approval is the work, and it is yours* |
-| 37 | — | *What is your plan to align with our direction?* |
+| 8 | | **When the material changes** — do we call 300,000 people back? |
+| 9 | | The scattered effort — good work, built to stay small |
+| 10 | The Ground | CESR, plainly: 3.6% · "pictures, no database" · 8 batches |
+| 11 | | Seven things a training event cannot be — G1–G4 · `7 open` |
+| 12 | | …and three more — G5–G7 |
+| 13 | The Direction | *Not another training. A system that trains.* |
+| 14 | | One clearing house — the dots converge |
+| 15 | | What it makes possible: tiered · any mode · any author · **corrected once** |
+| 16 | | The materials already exist — CESR's own guideline, decks and checklists |
+| 17 | | The cascade today, against the same materials as an approved module |
+| 18 | | Attendance is not competence — 1 of 3, what the BHW sees |
+| 19 | | 2 of 3, what the supervisor sees — two rows measured by the system |
+| 20 | | 3 of 3, what the country sees — *who, in what, assessed by whom, when* |
+| 21 | | Chatbot as coach — recall support between events |
+| 22 | | Chatbot as the form — she describes it, it asks only what this signal needs |
+| 23 | | It reads back, then it files — *walang logbook* |
+| 24 | | The record it produced — *nobody wrote this, nobody filed it* |
+| 25 | | Three real signals — every one found by a BHW |
+| 26 | | Three separate logbooks — the field, and none of them travelled |
+| 27 | | One platform — G1–G4 closed |
+| 28 | | …and the last three · `7 closed` |
+| 29 | The Ask | Three issuances committed, 2026–2027 |
+| 30 | | Three more in development, shaped with this room |
+| 31 | | You already asked for this — the "CESR Signal Application" |
+| 32 | | Live demo — tap a question; the third answer retires the logbook |
+| 33 | | What is real, and what is not — *that approval is the work, and it is yours* |
+| 34 | — | **Five acts, one change** — the recap, one line per act |
+| 35 | — | *What is your plan to align with our direction?* |
 
 ---
 
@@ -118,7 +119,7 @@ here first.
 | Rabies, Barangay Malibago, Torrijos | stray dog bit 4; reported by the Barangay Kagawad on Health; <1 day to report | `mss-feedback-2026-06.md:121,149,238`; `activity-report-mss-marinduque-2026-05.md:135` |
 | Influenza-like illness, Sta. Cruz | 128 cases; 124 (97%) students; principal reported to the BHW; 8 days to report | `mss-feedback-2026-06.md:160-163,219,238` |
 | Measles, Tatalon, Quezon City | 16 cases, 13 (81%) laboratory-confirmed; mother reported to the BHW; 3 days to report | `mss-feedback-2026-06.md:228,238` |
-| CESR material inventory (slide 17) | Interim Guidelines; Decks 1–4; BHS Supervisory Checklist (Tagalog); Supportive Supervision Tool; Sensitization Package; Signal Log Sheet Annex 2 | `docs/source-material/cesr/README.md` inventory |
+| CESR material inventory (slide 16) | Interim Guidelines; Decks 1–4; BHS Supervisory Checklist (Tagalog); Supportive Supervision Tool; Sensitization Package; Signal Log Sheet Annex 2 | `docs/source-material/cesr/README.md` inventory |
 | Re-echo scaling model | supervisors are given the decks and expected to re-deliver at BHS level; no record of who was re-echoed to | refresher activity report, July 2026, via `docs/cesr-module.md` §5 |
 
 **Notes-only, never on a slide:** 7-1-7 at 0% (0/2) — `mss-feedback-2026-06.md:306`; M&SS coverage
@@ -126,7 +127,7 @@ Marinduque 6/6, Palawan + PPC 21/24, Quezon City 6/6 — same, :20-24. The per-c
 for the seven gaps moved from the cards to the slide 12 notes when the cards were trimmed;
 a `.src` line on each gap slide names the source documents.
 
-### The mockup screens (slides 19–21)
+### The mockup screens (slides 18–20)
 
 Three illustrative screens, one per slide — the BHW's phone, the supervisor's grading view,
 the national registry — each carrying an `ILLUSTRATIVE SCREENS` tag on the headline. What is
@@ -142,7 +143,7 @@ quoted and what is invented is kept strictly apart:
 - **Invented, and labelled as such.** Every count — the 3/4 progress and all eight registry
   figures. These are shape, not data, and the tag and the source line both say so.
 
-### The demo (slide 35) and its status claim (slide 36)
+### The demo (slide 32) and its status claim (slide 33)
 
 The demo is an in-deck simulation of the interaction, not the deployed app. Its three
 answers are canned, drawn from the DOH guideline; the third — *"Hindi na po kayo
@@ -171,8 +172,8 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
   principles/its retention, committed/in-development and demo/status were each one dense
   slide; the seven gap cards became 4 + 3 and their seven closures likewise; the three
   mockup screens became one slide each. All had shrunk to ~0.4 on a phone in landscape.
-  Verified with nothing clipped at 844×390 (min 0.56), 1024×600 (0.96), 1366×560 (0.74),
-  1366×768 (1.00), 1280×720 (0.96) and 1920×1080 (1.39). On a portrait phone a dismissible prompt asks for landscape.
+  Verified with nothing clipped at 844×390 (min 0.77), 1024×600 (1.00), 1366×560 (0.83),
+  1366×768 (1.00), 1280×720 (1.00) and 1920×1080 (1.39). On a portrait phone a dismissible prompt asks for landscape.
   Wheel and swipe-scroll are inert.
 - **No motion that blurs.** Nothing animates `transform` or `filter`, anywhere. `fit()` leaves
   a static `scale()` on `.slide__inner`; animating a transform on the slide made Chrome
@@ -200,12 +201,12 @@ Inherits `pitch/bhw-connect-who.html`: tokens, registers (`dark`/`darker`/`light
   `F` fullscreen, `?` legend.
 - **Notes.** `<aside class="notes">` per slide — the speaking line plus reserve material for
   Q&A. Never printed.
-- **Figures.** Dot positions for the scatter (slides 10 and 15) and the signal field (slide
-  27) are fixed tables, never `Math.random()` at runtime, so nothing moves between rehearsal
+- **Figures.** Dot positions for the scatter (slides 9 and 14) and the signal field (slide
+  26) are fixed tables, never `Math.random()` at runtime, so nothing moves between rehearsal
   and the room. Both SVGs are width-capped by viewport height as well as by pixels, so they
   can never take more than about a third of a short screen from the headline. The converged
-  targets on slide 15 are a phyllotaxis disc, not a single point. The single mockup screens
-  on slides 19–21 are enlarged with `zoom`, not `transform`, so `fit()` measures the enlarged
+  targets on slide 14 are a phyllotaxis disc, not a single point. The single mockup screens
+  on slides 18–20 are enlarged with `zoom`, not `transform`, so `fit()` measures the enlarged
   box and nothing can clip.
 - **Offline.** Zero network requests. Fonts are system stacks. The venue advisory warns
   Wi-Fi is one device per participant with variable signal, so this runs from `file://`
@@ -226,7 +227,7 @@ Chromium is at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
 6. **No transform or filter is animated** — `getComputedStyle` on `.slide` and on any
    `[data-step]` must report a `transition-property` of `opacity, visibility` and a
    `transform` of `none`. Anything else reintroduces the blur.
-3. **Print** — `--print-to-pdf` yields **37** landscape pages, one per slide.
+3. **Print** — `--print-to-pdf` yields **35** landscape pages, one per slide.
 4. **Reduced motion** — emulate `prefers-reduced-motion: reduce`; builds still reveal,
    nothing animates.
 5. **Controls** — a right-side tap advances one step at a time and then one slide, a
