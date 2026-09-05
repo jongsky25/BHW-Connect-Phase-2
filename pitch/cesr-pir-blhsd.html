@@ -567,6 +567,24 @@
   .pcard.proposed{border-style:dashed;opacity:.78}
   .pcard.proposed .kind{background:transparent;border:1px solid var(--cream-soft);color:var(--cream-soft)}
 
+  /* ---------- closing recap ----------
+     Two columns rather than one. Stacked under the headline in the 56ch cost
+     list, every line wrapped to two and the block ran tall and narrow: half
+     the stage empty on the right, and fit() height-bound, so the type came
+     out small on a wide projector. Split, the block is roughly half as tall
+     and as wide as the stage, so fit() scales it up instead. */
+  .recapgrid{
+    display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);
+    gap:clamp(1.3rem,3.4vw,3rem);align-items:center;
+  }
+  .recapgrid .costlist{margin-top:0;max-width:none;gap:clamp(.45rem,1.4vh,.9rem)}
+  .recapgrid .costlist li{font-size:clamp(1.28rem,2.05vw,1.86rem);padding-left:2.5rem}
+  .recapgrid .costlist li span{font-size:1.06em}
+  .recapgrid .kicker-line{max-width:22ch}
+  /* No breakpoint here on purpose: the deck never reflows, and on the one
+     small screen that matters — a phone held sideways — two columns is still
+     the shorter block, so fit() gives it a larger scale than a stack would. */
+
   /* ---------- close ---------- */
   .close-q{font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4.8vw,3.7rem);
     line-height:1.12;letter-spacing:-.02em;color:var(--cream);max-width:19ch}
@@ -1542,7 +1560,32 @@
     </aside>
   </section>
 
-  <!-- 34 · CLOSE -->
+  <!-- 34 · WHAT WE JUST SAID -->
+  <section class="slide darker centered wide" data-act="">
+    <div class="slide__inner">
+      <div class="recapgrid">
+        <div>
+          <p class="title-kicker">To recap</p>
+          <h2 class="tight">Five acts,<br>one change.</h2>
+          <p class="kicker-line" data-step="6">From an event that ends, to a system that stays.</p>
+        </div>
+        <ul class="costlist">
+          <li data-step="1"><span>1</span><strong>The Provocation</strong> &mdash; thirty years of trainings, and still no national picture of who our BHWs are.</li>
+          <li data-step="2"><span>2</span><strong>What We Know</strong> &mdash; Phase 1 profiled about 300,000 of them in a year. The ceiling was never the BHW.</li>
+          <li data-step="3"><span>3</span><strong>The Ground</strong> &mdash; CESR as documented, and seven things a training event cannot be.</li>
+          <li data-step="4"><span>4</span><strong>The Direction</strong> &mdash; not another training, but a system that trains. <b class="statechip closed">7 closed</b></li>
+          <li data-step="5"><span>5</span><strong>The Ask</strong> &mdash; three issuances committed, three more shaped with this room, and one content pack waiting on your review.</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>The closing recap &mdash; say what you have just said, in five lines, then ask the question. Keep it to about twenty seconds: one breath per line, no new material, no new numbers.</p>
+      <p>Line 4 is where the chip closes for the last time. Do not re-argue any of the seven; the room has seen them twice.</p>
+      <p>Land the kicker and pause. The next slide is the question, and it needs the silence.</p>
+    </aside>
+  </section>
+
+  <!-- 35 · CLOSE -->
   <section class="slide darker centered" data-act="">
     <div class="slide__inner">
       <q class="close-q">
