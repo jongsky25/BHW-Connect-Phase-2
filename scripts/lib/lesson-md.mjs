@@ -9,6 +9,10 @@
 // "collect everything, throw once" style.
 
 const HEADING_RE = /^##\s*\[([a-z]+)\/([a-z]+)\]\s*(.+?)\s*$/;
+// Optional trailing "{id, id}" on a heading — the §C.2 coverage markers naming
+// which coverage.json concepts that section delivers. Split off the heading
+// text so the marker never reaches the rendered heading.
+const CONCEPT_MARKER_RE = /^(.*?)\s*\{([^{}]*)\}$/;
 const KINDS = new Set(["scenario", "concept", "contrast", "practice"]);
 const TIERS = new Set(["core", "standard", "deep"]);
 
@@ -122,17 +126,41 @@ export function parseLessonMarkdown(text, file) {
         current = null;
         continue;
       }
-      const [, kind, tier, heading] = match;
+      const [, kind, tier, rawHeading] = match;
       if (!KINDS.has(kind)) {
         errors.push(`${file}:${lineNo}: unknown section kind "${kind}" — must be one of ${[...KINDS].join(", ")}`);
       }
       if (!TIERS.has(tier)) {
         errors.push(`${file}:${lineNo}: unknown section tier "${tier}" — must be one of ${[...TIERS].join(", ")}`);
       }
+
+      const markerMatch = rawHeading.match(CONCEPT_MARKER_RE);
+      let heading = rawHeading;
+      let conceptIds = [];
+      if (markerMatch) {
+        heading = markerMatch[1].trim();
+        conceptIds = markerMatch[2]
+          .split(",")
+          .map((id) => id.trim())
+          .filter(Boolean);
+        if (heading === "") {
+          errors.push(`${file}:${lineNo}: section heading is only a coverage marker, with no heading text`);
+        }
+        if (conceptIds.length === 0) {
+          errors.push(`${file}:${lineNo}: section heading has an empty coverage marker "{}" — omit it instead`);
+        }
+        const seen = new Set();
+        for (const id of conceptIds) {
+          if (seen.has(id)) errors.push(`${file}:${lineNo}: coverage marker repeats concept id "${id}"`);
+          seen.add(id);
+        }
+      }
+
       current = {
         kind,
         tier,
         heading,
+        conceptIds,
         bodyLines: [],
         visualPosition: null,
         takeaway: null,
@@ -189,6 +217,7 @@ export function parseLessonMarkdown(text, file) {
     kind: s.kind,
     tier: s.tier,
     heading: s.heading,
+    conceptIds: s.conceptIds,
     body: renderBody(s.bodyLines),
     visualPosition: s.visualPosition,
     takeaway: s.takeaway,

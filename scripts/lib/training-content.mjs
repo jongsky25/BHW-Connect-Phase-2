@@ -150,9 +150,16 @@ function mergeSections(sectionsFil, sectionsEn, moduleId, file, problems) {
       problems.push(`${where}: visual_position differs between languages (${a.visualPosition} vs ${b.visualPosition})`);
     }
 
+    const idsFil = (a.conceptIds ?? []).join(",");
+    const idsEn = (b.conceptIds ?? []).join(",");
+    if (idsFil !== idsEn) {
+      problems.push(`${where}: coverage markers differ between languages ("{${idsFil}}" vs "{${idsEn}}")`);
+    }
+
     merged.push({
       kind: a.kind,
       tier: a.tier,
+      concept_ids: a.conceptIds ?? [],
       heading_fil: a.heading,
       heading_en: b.heading,
       body_fil: a.body,
@@ -242,6 +249,58 @@ function loadModule(moduleId, mDir, ctx, problems, reviewFlags) {
       );
     }
   });
+
+  // §C.2 coverage — the module declares what its sources oblige it to teach,
+  // and every concept must be delivered by a core/standard section or be
+  // explicitly excused. `deep` deliberately does not count: a concept only
+  // reachable at Detalyado density is not delivered to the BHW on Karaniwan.
+  const coveragePath = path.join(mDir, "coverage.json");
+  let coverage = [];
+  if (existsSync(coveragePath)) {
+    coverage = readJson(coveragePath).concepts ?? [];
+    const declared = new Set();
+    coverage.forEach((c, i) => {
+      const cWhere = `modules/${moduleId}: coverage.json concepts[${i}]`;
+      if (!c.id?.trim()) problems.push(`${cWhere}: missing id`);
+      else if (declared.has(c.id)) problems.push(`${cWhere}: duplicate id "${c.id}"`);
+      else declared.add(c.id);
+      if (!c.statement_en?.trim()) problems.push(`${cWhere} ("${c.id}"): missing statement_en`);
+      if (!c.source?.trim()) problems.push(`${cWhere} ("${c.id}"): missing source citation`);
+    });
+
+    const deliveredBy = new Map();
+    for (const s of mergedSections) {
+      for (const id of s.concept_ids ?? []) {
+        if (!declared.has(id)) {
+          problems.push(
+            where(`lesson section "${s.heading_fil}" marks unknown concept id "${id}" — not declared in coverage.json`),
+          );
+          continue;
+        }
+        if (!deliveredBy.has(id)) deliveredBy.set(id, []);
+        deliveredBy.get(id).push(s.tier);
+      }
+    }
+
+    for (const c of coverage) {
+      if (!c.id) continue;
+      const tiers = deliveredBy.get(c.id) ?? [];
+      const reachable = tiers.some((t) => t === "core" || t === "standard");
+      if (reachable) continue;
+      if (c.redundant_with?.trim()) continue;
+      problems.push(
+        where(
+          tiers.length > 0
+            ? `coverage concept "${c.id}" is only delivered by a deep-tier section, so a BHW at normal density never sees it — move it to core/standard or excuse it with "redundant_with"`
+            : `coverage concept "${c.id}" is not delivered by any lesson section and has no "redundant_with" note (§C.2)`,
+        ),
+      );
+    }
+  } else {
+    reviewFlags.push(
+      where("has no coverage.json — breadth against the source documents is unverifiable for this module (§C.2)"),
+    );
+  }
 
   const visualsPath = path.join(mDir, "visuals", "visuals.json");
   const visualsJson = existsSync(visualsPath) ? readJson(visualsPath) : { visuals: [] };

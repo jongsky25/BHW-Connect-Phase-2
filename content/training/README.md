@@ -14,7 +14,7 @@ from these files, and a `locks/<ref>.json` file (written by the loader,
 one per target Supabase project) maps a stable content id to the row uuid it
 became, so re-running the loader updates in place instead of duplicating.
 
-## `day1-basic-competencies/` — Day 1: Basic Competencies (8 modules, §C of `docs/training-modules-plan.md`)
+## `day1-basic-competencies/` — Day 1: Basic Competencies (9 modules, §C of `docs/training-modules-plan.md`)
 
 ```
 day1-basic-competencies/
@@ -117,6 +117,10 @@ tanong.
   omitted tier is rejected, not defaulted, because a silently-defaulted tier
   is exactly the authoring mistake that would make a "short" density session
   miss part of the module.
+- **`{id, id}` at the end of a heading** — optional coverage markers naming
+  which `coverage.json` concepts that section delivers (§C.2 of the plan).
+  The marker is stripped from the heading before it is stored, so it never
+  renders. Both language files must carry the same ids in the same order.
 - Plain paragraph lines between the heading and the next directive become
   that section's `body_*` (blank lines separate paragraphs; paragraphs are
   joined with a blank line in the stored text).
@@ -147,6 +151,54 @@ Free-form markdown, not directive-parsed — stored as-is into
 `course_module_facilitator_notes.notes_fil`/`notes_en`. See the style guide
 §5 for what belongs in here (timing, script, named misconception, discussion
 prompts, check answer key).
+
+### `coverage.json`
+
+The §C.2 breadth contract: everything this module's sources oblige it to
+teach, so "we covered the whole topic" is checkable rather than asserted.
+**Write it before the lesson prose,** by reading the module's topic across
+all three documents in `docs/source-material/day1-basic-competencies/` (that
+folder's README has a table saying where each topic sits in each).
+
+```json
+{
+  "concepts": [
+    {
+      "id": "m1.role.educator",
+      "statement_en": "The BHW as Health Educator: teaches households how to keep body and environment healthy, across every life stage.",
+      "source": "deck slide 10; reference-manual PDF 11-12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.filler.heels",
+      "statement_en": "\"Health Facts\" slide on high heels and shopping.",
+      "source": "deck slide 45",
+      "redundant_with": "Not DOH content and not connected to any competency — deliberately not delivered."
+    }
+  ]
+}
+```
+
+- `id` — stable, unique within the module, `m<N>.<area>.<thing>` by
+  convention.
+- `source` — where the obligation comes from, precise enough to check: a
+  deck slide number, or a page in one of the two manuals.
+- `redundant_with` — non-null means "deliberately not delivered, and here is
+  why". Use it for genuine redundancy and for material that is not
+  curriculum; do not use it to excuse something merely hard to author.
+
+**The loader rejects** any concept that no `core`- or `standard`-tier
+section marks. `deep` does not satisfy a concept: a BHW at the default
+Karaniwan density never sees a `deep` section, so a concept reachable only
+there is not delivered. It also rejects a marker naming an id that
+`coverage.json` does not declare, a duplicate id, or a concept with no
+`source`. A module with no `coverage.json` at all is flagged for review
+rather than rejected, so pre-coverage modules still load.
+
+Facilitator-only material — the deck's Learning Activity, Demonstration and
+Practical Application slides — does **not** belong in `coverage.json`. It
+goes to `facilitator-notes.*.md`, which is a separate track, not a coverage
+gap.
 
 ### `competency.json`
 
@@ -228,7 +280,7 @@ require every module to have.
 
 One shared bank for the whole course's pretest/posttest (§A of the plan:
 taken once before content, once after; delta = learning gain). `position` is
-the array index. As modules 2-8 are authored (INC-24/25), add questions here
+the array index. As modules 2-9 are authored (INC-24/25), add questions here
 covering their objectives too — this file grows with the course, it is not
 per-module.
 

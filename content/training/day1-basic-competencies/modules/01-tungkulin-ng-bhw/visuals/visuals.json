@@ -3,21 +3,31 @@
     {
       "position": 1,
       "primitive": "hub-spoke",
-      "file": "01-role-map.svg",
-      "caption_fil": "Apat na ugnayan ang dumadaan sa BHW — hindi ito nagtatrabaho nang mag-isa.",
-      "caption_en": "Four relationships run through the BHW — the role never works alone.",
-      "alt_text_fil": "Hub-and-spoke na dayagram: sa gitna ang BHW, apat na linyang umuusbong patungo sa Komunidad, Midwife / RHU, Barangay Officials, at Kapwa BHW.",
-      "alt_text_en": "Hub-and-spoke diagram: the BHW is at the center, with four lines radiating out to Community, Midwife / RHU, Barangay Officials, and Fellow BHWs.",
+      "file": "01-tatlong-tungkulin.svg",
+      "caption_fil": "Isang tungkulin, tatlong mukha — hindi ito pinagpipilian, sabay-sabay itong ginagampanan.",
+      "caption_en": "One role, three faces — they are not chosen between, they are carried at once.",
+      "alt_text_fil": "Hub-and-spoke na dayagram: sa gitna ang HEPO (BHW sa barangay), tatlong linyang umaabot sa Health Educator (nagtuturo bago magkasakit) sa itaas, Community Organizer (tulay at tagapagbuklod) sa kaliwang ibaba, at Health Service Provider (unang nasasalubong) sa kanang ibaba.",
+      "alt_text_en": "Hub-and-spoke diagram: HEPO (the barangay BHW) at the centre, with three lines reaching Health Educator (teaches before illness) above, Community Organizer (bridge and convener) at lower left, and Health Service Provider (first contact) at lower right.",
       "tier": "core"
     },
     {
       "position": 2,
       "primitive": "chain",
-      "file": "02-sitwasyon-lalapitan.svg",
-      "caption_fil": "Bago kumilos, tukuyin muna kung sino talaga ang dapat lapitan para sa sitwasyong ito.",
-      "caption_en": "Before acting, first work out who is actually the right person for this situation.",
-      "alt_text_fil": "Tatlong hakbang na dayagram: Unawain ang sitwasyon, tukuyin kung aling ugnayan ang bagay dito, saka lapitan ang tamang tao.",
-      "alt_text_en": "Three-step diagram: Understand the situation, identify which relationship fits it, then approach the right person.",
+      "file": "02-daloy-ng-serbisyo.svg",
+      "caption_fil": "Hindi nagtatapos sa referral ang tungkulin ng BHW — bumabalik ito sa kanya bilang pagsubaybay.",
+      "caption_en": "The BHW's role does not end at the referral — it comes back to them as monitoring.",
+      "alt_text_fil": "Dayagram ng daloy: mula sa pangangailangan sa kabahayan patungo sa BHW (unang nasasalubong, paunang serbisyo, tala), patungo sa Midwife o RHU kung kailangan, at pabalik pababa sa Pagsubaybay ng BHW kung saan nagpapatuloy ang pangangalaga.",
+      "alt_text_en": "Flow diagram: from a need in the household to the BHW (first contact, initial service, record), on to the Midwife or RHU where needed, then looping back down to BHW monitoring, where care continues.",
+      "tier": "core"
+    },
+    {
+      "position": 3,
+      "primitive": "chain",
+      "file": "03-daloy-ng-talaan.svg",
+      "caption_fil": "Ang talaan ay hindi patutunguhan — ito ang nagsasabi sa programa kung saan ito dapat pumunta.",
+      "caption_en": "A record is not a destination — it is what tells the programme where to go.",
+      "alt_text_fil": "Dayagram ng daloy: mula sa pagbisita sa kabahayan patungo sa apat na talaan (household profile, master list, registry ng serbisyo, mga form ng DOH o LGU), at mula sa apat na ito patungo sa health center at programang pangkalusugan, kung saan nagmumula ang direksyon ng tulong.",
+      "alt_text_en": "Flow diagram: from a household visit to four records (household profile, master list, service registry, DOH or LGU forms), and from those four on to the health centre and health programme, which is where the direction of help comes from.",
       "tier": "core"
     }
   ]

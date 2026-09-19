@@ -1,0 +1,40 @@
+<svg viewBox="0 0 640 400">
+  <title>Daloy ng talaan: mula sa kabahayan, sa talaan ng BHW, patungo sa direksyon ng programa</title>
+  <defs>
+    <marker id="rec-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 z" fill="currentColor" />
+    </marker>
+  </defs>
+  <g>
+    <rect x="15" y="150" width="130" height="70" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="80" y="176" text-anchor="middle" dominant-baseline="middle" font-size="12">Pagbisita sa</text>
+    <text x="80" y="196" text-anchor="middle" dominant-baseline="middle" font-size="12">kabahayan</text>
+
+    <line x1="145" y1="185" x2="190" y2="185" stroke="currentColor" stroke-width="2" marker-end="url(#rec-arrow)" />
+
+    <rect x="195" y="70" width="185" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="287" y="94" text-anchor="middle" dominant-baseline="middle" font-size="12">Household profile</text>
+
+    <rect x="195" y="128" width="185" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="287" y="152" text-anchor="middle" dominant-baseline="middle" font-size="12">Master list</text>
+
+    <rect x="195" y="186" width="185" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="287" y="210" text-anchor="middle" dominant-baseline="middle" font-size="12">Registry ng serbisyo</text>
+
+    <rect x="195" y="244" width="185" height="48" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="287" y="268" text-anchor="middle" dominant-baseline="middle" font-size="12">Mga form ng DOH/LGU</text>
+
+    <line x1="380" y1="94" x2="440" y2="150" stroke="currentColor" stroke-width="2" marker-end="url(#rec-arrow)" />
+    <line x1="380" y1="152" x2="440" y2="172" stroke="currentColor" stroke-width="2" marker-end="url(#rec-arrow)" />
+    <line x1="380" y1="210" x2="440" y2="196" stroke="currentColor" stroke-width="2" marker-end="url(#rec-arrow)" />
+    <line x1="380" y1="268" x2="440" y2="218" stroke="currentColor" stroke-width="2" marker-end="url(#rec-arrow)" />
+
+    <rect x="445" y="140" width="180" height="88" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="535" y="166" text-anchor="middle" dominant-baseline="middle" font-size="12">Health center at</text>
+    <text x="535" y="186" text-anchor="middle" dominant-baseline="middle" font-size="12">programang</text>
+    <text x="535" y="206" text-anchor="middle" dominant-baseline="middle" font-size="12">pangkalusugan</text>
+
+    <text x="535" y="252" text-anchor="middle" dominant-baseline="middle" font-size="10">dito nagmumula ang</text>
+    <text x="535" y="268" text-anchor="middle" dominant-baseline="middle" font-size="10">direksyon ng tulong</text>
+  </g>
+</svg>

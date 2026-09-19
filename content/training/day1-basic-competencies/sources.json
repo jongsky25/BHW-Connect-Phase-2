@@ -1,6 +1,13 @@
 {
-  "$comment": "Citation registry for the Day 1: Basic Competencies course — a separate registry from content/kb/hhp-ncd/sources.json (each corpus keeps its own, per content/kb/README.md's corpus model), even where the same real source is cited by both. Only publicly resolvable sources belong here. Run `npm run kb:check-sources` before any demo — it checks every corpus, and flags an entry here that no qa-entries.json cites yet. Grows as modules 2-8 are authored (RA 11223/UHC Act for Module 2, EO 51 Milk Code, RA 10028 Breastfeeding, AO 2015-0053, DC 2021-0486 — see docs/training-modules-plan.md §C) — add a source only once a module actually cites it, not ahead of authoring it.",
+  "$comment": "Citation registry for the Day 1: Basic Competencies course — a separate registry from content/kb/hhp-ncd/sources.json (each corpus keeps its own, per content/kb/README.md's corpus model), even where the same real source is cited by both. Only publicly resolvable sources belong here. Run `npm run kb:check-sources` before any demo — it checks every corpus, and flags an entry here that no qa-entries.json cites yet. Grows as modules 2-9 are authored (EO 51 Milk Code, RA 10028 Breastfeeding, AO 2015-0053, DC 2021-0486 — see docs/training-modules-plan.md §C) — add a source only once a module actually cites it, not ahead of authoring it. The three DOH source documents themselves are not listed here: they are unpublished working documents with no resolvable public URL, and are checked in as transcriptions at docs/source-material/day1-basic-competencies/ instead.",
   "sources": {
+    "ra-11223": {
+      "label_en": "Republic Act 11223 — Universal Health Care Act of 2019",
+      "label_fil": "Republic Act 11223 — Universal Health Care Act of 2019",
+      "publisher": "Congress of the Philippines",
+      "year": 2019,
+      "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html"
+    },
     "ra-7883": {
       "label_en": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
       "label_fil": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",

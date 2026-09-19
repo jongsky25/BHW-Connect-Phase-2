@@ -15,9 +15,13 @@ for this codebase.
 | INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
 | INC-21 — loader, style guide, Module 1 (2nd approval gate) | ✅ Merged — [PR #56](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/56). `--dry-run`/`--apply` were subsequently run for real against the live pilot project in the INC-22 session (see the Status note inside the INC-21 section below) — the one item its own Status note had left open. |
 | INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
-| INC-23 — facilitator UI | ⬜ Ready to start — INC-22 is merged and green. |
-| INC-24 — author modules 2-5 | ⬜ Blocked on INC-23. |
-| INC-25 — author modules 6-8, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. |
+| INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 In progress. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). See the INC-21r section below. |
+| INC-26 — slide mode | ⬜ Blocked on INC-21r. |
+| INC-27 — audio narration + read-along | ⬜ Blocked on INC-26. |
+| INC-28 — animated concept clips | ⬜ Blocked on INC-27. |
+| INC-23 — facilitator UI | ⬜ Ready to start — INC-22 is merged and green. Not blocked by, and does not block, INC-21r/26/27/28. |
+| INC-24 — author modules 2-5 | ⬜ Blocked on INC-28 (author once against a finished pipeline, per the sequencing decision). |
+| INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. Now **four** modules, not three — §C is a nine-module map. |
 
 **Before starting INC-21**, read this whole document, then read the actual
 shipped `20260729000000_inc12_elearning.sql`, `20260807000000_inc19_training_sessions.sql`
@@ -123,14 +127,23 @@ pairing (the existing "quiz" is a per-module pass/fail gate, not a
 measurement instrument).
 
 The source material (`DAY 1 - PART 1 PRESENTATION.pdf`, the DOH facilitator
-guide, the DOH reference manual) is **reference for facts only** — the user
-rejected its bulleted information-transfer style outright. The replacement
-standard is §A below: scenario-driven, visual, bookended by stated
-objectives and a retrieval-based summary, with an explicit
-competency-observation guide for the facilitator/assessor.
+guide, the DOH reference manual) is now checked in as transcriptions at
+**[`docs/source-material/day1-basic-competencies/`](./source-material/day1-basic-competencies/)**
+— read that folder's README before planning or authoring any module; it
+carries the authoritative TESDA competency-and-hours table, which §C below
+predates.
+
+The user rejected the deck's bulleted information-transfer **style**
+outright — but not its scope. The deck is the basis and starting point of
+the course, and the two manuals supplement it; the full breadth of each
+topic's learning objectives is to be delivered, minus genuine redundancy.
+The replacement standard for *how* it is delivered is §A below:
+scenario-driven, visual, bookended by stated objectives and a
+retrieval-based summary, with an explicit competency-observation guide for
+the facilitator/assessor.
 
 First use case: **Chapter 1, Basic Competencies ("Ang BHW at ang Kanilang
-Barangay")** — 8 modules (§C). "System registration" means
+Barangay")** — 9 modules (§C). "System registration" means
 **training-session enrollment**, not new self-signup: accounts stay
 admin-provisioned per existing convention. All new content must also be
 chatbot-searchable via the author-once source-files → loader pattern
@@ -146,8 +159,12 @@ implementation:**
 | Relationship to INC-12 | **Extend** it — new tables parented to `courses`/`course_modules`. Not a parallel system. |
 | Pre/post-test | **One shared question bank per course**, taken once before content and once after. Delta = learning gain. |
 | Delivery mode | **Hybrid** — a session is an optional cohort/reporting wrapper; the same course also works solo. A session is never a gate on `course_progress`. |
-| Content scope | Full Day 1 chapter, all 8 modules. |
+| Content scope | Full Day 1 chapter, all 9 modules (§C). **Chapter 1 only** — the Reference Manual's Chapters II (First Responder) and III (Primary Care / Health Promotion) are ~120 further pages and are a later phase, not this course. |
 | Content authoring | Single-authored, dual-delivered: versioned files are master, loaded into course tables **and** `kb_entries`/`kb_articles`. |
+| Source of scope | The deck is the **basis and starting point**; the Facilitator's Manual and Reference Manual supplement it. Full breadth of every learning objective is delivered, minus genuine redundancy — enforced by §C.2's `coverage.json`, not by good intentions. |
+| Module map | Nine modules, one per TESDA basic competency, weighted by the regulation's training hours (§C). |
+| Delivery modalities | Four renderings of one authored lesson: read (INC-22, shipped), slides (INC-26), audio narration with read-along (INC-27), animated concept clips (INC-28). Authored once as `LessonSection[]`; no modality gets its own content. |
+| Text-to-speech | Azure Speech `fil-PH-BlessicaNeural` primary (native Filipino voice, free word/sentence boundary events, 500K chars/month free tier — the whole nine-module course fits inside it); `edge-tts` as the zero-cost fallback on the same voice catalog. Timing JSON format identical between the two so the provider can be swapped without re-authoring. |
 
 **Rule of engagement** (from `delivery-plan.md`, unchanged): one increment
 per session, in order; do not start the next until the previous DoD is
@@ -169,7 +186,11 @@ excluded.
 | **Facilitator guide to what competency to look for** | §A.4 + INC-20 (`competency_statement_*`, `observation_indicators`) + INC-23 (observation checklist) |
 | **Facilitator-adjustable short/normal/long lesson density** | §A.6 + INC-19 (`course_sessions.lesson_density`) + INC-20 (`tier` on sections/visuals) + INC-22 (renderer filter) + INC-23 (density selector) |
 | Materials feed the knowledge-base chatbot | INC-21 loader + INC-25 (KB entries + chat fixtures) |
-| Built in phases and increments | INC-19a → INC-25, each independently shippable |
+| **Full breadth of the source delivered, not a condensed sample** | §C.2 (`coverage.json` + loader check) + INC-21r |
+| **Not just a book — concepts presented one at a time** | INC-26 (slide mode) |
+| **Audio I can play while reading** | INC-27 (pre-rendered narration + sentence read-along) |
+| **Animated clips explaining concepts** | INC-28 (animated SVG scenes; Remotion where video is genuinely needed) |
+| Built in phases and increments | INC-19a → INC-28, each independently shippable |
 
 ---
 
@@ -317,29 +338,121 @@ facilitator's density selector (INC-23).
 
 ---
 
-## §C. The 8 modules and their competencies
+## §C. The 9 modules and their competencies
 
 One module per BHS NC II competency — do **not** merge topics that map to
-different competencies, or the A.4 rubric stops being one-to-one.
+different competencies, and do not split one competency across several
+modules either, or the A.4 rubric stops being one-to-one in one direction
+or the other.
 
-| # | Folder | Module | Primary BHS NC II competency |
-|---|---|---|---|
-| 1 | `01-tungkulin-ng-bhw` | Ang mga Tungkulin ng Isang BHW | Participate in workplace communication |
-| 2 | `02-polisiya-uhc` | Ang UHC Act at ang BHW | Contribute to workplace innovation |
-| 3 | `03-polisiya-ra7883` | RA 7883: Benepisyo at Karapatan | Develop life and career decisions |
-| 4 | `04-bhw-at-barangay` | Ang BHW at ang Kanyang Barangay | Working in a team environment |
-| 5 | `05-team-work` | Team Work | Working in a team environment (applied) |
-| 6 | `06-self-management` | Self-Management | Develop life and career decisions (applied) |
-| 7 | `07-komunikasyon` | Epektibong Komunikasyon | Present relevant information |
-| 8 | `08-problema-at-osh` | Pagkilala sa Problema + Occupational Safety | Solve/address general workplace problems; Practice OSH policies |
+**Corrected against the source, 19 September 2026.** This table used to
+list 8 modules, inferred from the deck's topic list. The authoritative
+mapping is the TESDA table on p.12 of the DOH Facilitator's Manual
+(`docs/source-material/day1-basic-competencies/facilitator-guide.md`,
+PDF page 19) — it names **nine** basic competencies with required training
+hours. Four things were wrong and each moved a module boundary:
 
-Module 8 carries two competencies (problem-solving and OSH) and therefore
-two competency blocks. If authoring shows it is too dense, split it into 8
-and 9 — a documented allowance, not a silent change.
+1. **The BHS policies are their own competency**, *Practice entrepreneurial
+   skills in the workplace* (4 h) — not applied examples inside the UHC
+   module, which is where the old table folded them.
+2. **BHW-at-Barangay, Team Work and Self-Management are one competency**,
+   *Work in a team environment* (3 h) — the old table split them across
+   three modules, which breaks the one-to-one rule from the other side.
+3. **A ninth competency had no module at all** — *Exercise efficient and
+   effective sustainable practices in the workplaces* (3 h).
+4. **The hours are wildly unequal** (8 for Komunikasyon, 6 for Tungkulin,
+   3 for most others) and the old table treated all modules as peers.
 
-Other policies from the source deck (EO 51 Milk Code, RA 10028
-Breastfeeding, AO 2015-0053, DC 2021-0486) fold into Module 2 as applied
-examples rather than getting their own modules.
+| # | Folder | Module | BHS NC II competency | Hours |
+|---|---|---|---|---|
+| 1 | `01-tungkulin-ng-bhw` | Ang mga Tungkulin ng Isang BHW | Participate in workplace communication | 6 |
+| 2 | `02-uhc-act` | Ang UHC Act of 2019 | Contribute to workplace innovation | 3 |
+| 3 | `03-polisiya-bhs` | Mga Polisiya sa Barangay Health Station | Practice entrepreneurial skills in the workplace | 4 |
+| 4 | `04-ra7883` | RA 7883: Benepisyo, Karapatan, Akreditasyon | Develop life and career decisions | 3 |
+| 5 | `05-bhw-at-barangay` | Ang BHW at ang Kanyang Barangay (+ Team Work, Self-Management) | Work in a team environment | 3 |
+| 6 | `06-komunikasyon` | Epektibong Komunikasyon | Present relevant information | 8 |
+| 7 | `07-problema` | Pagkilala sa Problema at Pagpaplano ng Solusyon | Solve or address general workplace problems | 3 |
+| 8 | `08-osh` | Occupational Safety and Health | Practice occupational safety and health policies and procedures | 4 |
+| 9 | `09-sustainable-practices` | Mabisang Gawi sa Lugar ng Trabaho | Exercise efficient and effective sustainable practices in the workplaces | 3 |
+| | | | **Total** | **37** |
+
+**Hours are the weighting signal, not a schedule.** They do not become a
+field anywhere; they tell the author how much content a module is expected
+to carry. Module 6 at 8 hours is the largest topic in the chapter and
+Module 1 at 6 the second — a nine-module course where every module is the
+same size contradicts its own source. Where a module's hours exceed ~4, the
+`standard` and `deep` tiers are where the extra breadth goes, not a longer
+`core`.
+
+Modules 8 and 9 share the same source topic (Occupational Safety and Health)
+but are two distinct competencies in the TESDA table, so they are two
+modules with two competency blocks. Module 9's material — workplace best
+practices, efficient use of resources (water, electricity, supplies),
+resourcefulness, workplace productivity — comes from the Facilitator's
+Manual p.15 (PDF 22), not the deck, which does not cover it.
+
+**Known contradiction in the source, resolved:** the Facilitator's Manual
+gives Tungkulin 6 hours in the competency table and "at least 3 hours" in
+its own narrative on p.13 (PDF 20). **We use 6** — the table is the TESDA
+regulation's own summary and the narrative reads like an unrevised
+carry-over. Noted so the discrepancy is not rediscovered as a bug.
+
+---
+
+## §C.2 Coverage — "full breadth" made mechanical
+
+**Decided with the user, 19 September 2026.** §A rejects the source deck's
+*style*; it does not license dropping its *scope*. The full breadth of each
+topic's learning objectives is to be delivered, minus genuine redundancy.
+That is a promise no read-through will keep reliably across nine modules,
+so it is enforced the same way tiering and bilingual parity already are —
+by the loader.
+
+Each module folder carries a **`coverage.json`** enumerating the concepts
+its sources oblige it to teach, each with a stable id, a one-line statement,
+and a citation into `docs/source-material/day1-basic-competencies/`:
+
+```json
+{
+  "concepts": [
+    {
+      "id": "m1.role.educator",
+      "statement_en": "The BHW as Health Educator: teaches households how to keep body and environment healthy, across every life stage.",
+      "source": "deck slide 10; reference-manual PDF 11-12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.filler.heels",
+      "statement_en": "\"Health Facts\" slide on high heels and shopping.",
+      "source": "deck slide 45",
+      "redundant_with": "not DOH content; unrelated to any competency — deliberately not delivered"
+    }
+  ]
+}
+```
+
+Every `LessonSection` heading gains an optional trailing `{ids}` marker
+naming the concepts it delivers:
+
+```markdown
+## [concept/core] Tatlong tungkulin sa ilalim ng HEPO {m1.role.educator, m1.role.organizer, m1.role.provider}
+```
+
+**The loader rejects** a module where any `coverage.json` concept is neither
+delivered by a `core`/`standard` section nor explicitly excused via
+`redundant_with`. `deep` does not count — a concept only reachable at
+Detalyado density is not delivered to the BHW who gets Karaniwan. An
+unknown id in a heading marker is likewise rejected, so a typo fails loudly
+rather than silently dropping a concept from the check.
+
+This makes the coverage claim auditable: `coverage.json` is the contract,
+the markers are the evidence, and a dropped concept fails CI rather than
+being discovered by a facilitator in a room.
+
+Authoring a module therefore starts by reading its topic across all three
+source documents (the cross-reference table in that folder's README says
+where each topic sits in each) and writing `coverage.json` **first** — before
+any lesson prose.
 
 ---
 
@@ -1168,28 +1281,229 @@ is disabled (not merely ignored) once the session's status leaves
 
 ---
 
-### INC-24 — Author modules 2-5
+### INC-21r — Re-author Module 1 to its actual topic (re-opened approval gate)
 
-Modules 2-5 per §C, to the approved style guide, each with: objectives
-bookend, chunked scenario-driven sections, ≥1 purposeful visual using a §D
-primitive with takeaway caption and alt text, ≥1 inline retrieval check,
-retrieval-first summary, facilitator script, and a competency block whose
-indicators pair one-to-one with the objectives. Load via INC-21's loader.
+**Why this exists.** INC-21's Module 1 was reviewed against the source deck
+for the first time on 19 September 2026 and did not pass. The problem is not
+style — the scenario method, bookends and competency block are exactly what
+INC-19a approved. The problem is **subject**: the module teaches the four
+working relationships (community / midwife / barangay officials / fellow
+BHWs) and RA 7883 accreditation. Under §C those are Module 5's and Module
+4's material. The deck's Module 1 — *Ang mga Tungkulin ng Isang BHW* — is
+about something else entirely, and none of it is in the authored module
+(grep the content tree for "Health Educator", "Community Organizer",
+"household profile" or "UHC": zero hits outside a Module 2 category slug).
 
-**DoD**: all four modules load clean through every INC-21 validation;
-`npm run kb:check-sources` passes; a read-through confirms no sentence is
-lifted verbatim from the source PDFs and no summary merely restates its
-objectives; the pretest/posttest bank in `test-questions.json` covers these
-modules' objectives.
+**What Module 1 actually has to teach** (deck slides 5-13; Facilitator's
+Manual p.13; Reference Manual PDF 11-12):
+
+- **The UHC re-framing.** BHWs asked to name their tasks will say service
+  delivery. The UHC Act's direction is primary care and health promotion, so
+  the role is *bigger* than that. This is the module's whole point, and the
+  Facilitator's Manual makes it the trainer's opening move.
+- **HEPO is the umbrella.** Under UHC, BHWs are designated barangay-level
+  Health Education and Promotion Officers. The three roles below sit under
+  it and come from RA 7883.
+- **Health Educator** — teach households to keep body and environment
+  healthy; prepare them for illness, accidents and risk factors at every
+  life stage; reach every sector, children through elderly.
+- **Community Organizer** — maintain relationships and communication with
+  community leaders, members and city/municipal health staff; organize and
+  encourage participation; member of the barangay planning team for health;
+  contribute to the Local Investment Plan for Health (LIPH).
+- **Health Service Provider** — part of the primary care team assisting the
+  midwife; first contact / frontline; guide people where to go; deliver
+  simple initial services (interview, vital signs, recording, household
+  profile, first aid); continuous monitoring; collect and keep household
+  profiles, master lists, registries and government forms.
+- **Competency framing** — *Participate in workplace communication*: obtain
+  and convey relevant workplace information, perform duties following
+  workplace instructions, complete relevant work-related documents. The
+  documents strand is why the records material belongs here and not only in
+  Chapter III.
+
+**Scope discipline.** 6 hours (§C) — the second-largest module in the
+chapter. `core` carries the UHC shift and the three roles; `standard` carries
+the worked examples per role and the records/documents detail; `deep` carries
+the LIPH and planning-team material.
+
+**Do not discard the displaced content.** The four-relationships sections and
+the RA 7883 accreditation section are good work against the style guide.
+Carry their text forward into `05-bhw-at-barangay` and `04-ra7883` when those
+are authored (INC-24/25) rather than rewriting from scratch — the same
+instruction INC-21d was given about INC-19a's mockup text.
+
+**Also in scope:** `coverage.json` for Module 1 (§C.2) and the loader check
+that enforces it, since Module 1 is the first module authored under the
+coverage rule and a rule with no implementation is not a rule. The six
+`test-questions.json` items all test the displaced content and are rewritten
+against the new objectives.
+
+**DoD**: `coverage.json` enumerates Module 1's concepts with citations, and
+every non-excused concept is delivered by a `core`/`standard` section;
+the coverage check has a failing-fixture test alongside INC-21's other
+validations; `--dry-run` then `--apply` load clean with zero review flags;
+`npm run kb:check-sources` passes; **the user reviews Module 1 rendered in
+the real app at Detalyado density and approves** — the gate INC-21 opened and
+this increment re-opens. INC-24 stays blocked until then.
 
 ---
 
-### INC-25 — Author modules 6-8, KB entries, chat fixtures, final verification
+### INC-26 — Slide mode
 
-Modules 6-8 (per §C, splitting module 8 if it proves too dense — the
-documented allowance). Then close the chatbot loop:
+**User request, 19 September 2026:** the lesson should not only read like a
+book; it should also present concepts one at a time.
 
-- `qa-entries.json` for all 8 modules loaded into `kb_entries`/`kb_articles`.
+The section model is already the slide model — one `LessonSection` is one
+slide (heading → body → visual → takeaway → optional check), objectives
+bookend as slide 0, the retrieval-first summary as the last. Tier filtering
+applies unchanged, so density controls slide count for free.
+
+`LessonSlides` as a sibling of `LessonModule`, with a Basahin / Islide
+toggle on the module page. CSS `scroll-snap-type: x mandatory` over
+`overflow-x: auto` — native swipe and keyboard scrolling, no dependency
+(this repo has no carousel or animation library today and should not gain
+one for this). `IntersectionObserver` drives the progress dots. Reach for
+`embla-carousel-react` (~7 KB, MIT) **only** if native snap proves unreliable
+on the low-end Android WebViews in the §5.2 target, and say so in the commit
+if it does.
+
+Reuse, don't fork: the visual, check and takeaway renderers are the same
+components `LessonModule` already uses. If a section's body is too long for
+one screen, that is an authoring signal (style guide §3's "one idea per
+chunk"), not a reason to paginate inside a slide.
+
+**DoD**: both modes render the same content for the same density; the
+toggle preserves position; the inline check still persists nothing; keyboard
+and swipe navigation both work; axe-core clean at the largest `--font-scale`,
+in dark mode and in high-contrast mode; no new runtime dependency, or a
+stated reason for one.
+
+---
+
+### INC-27 — Audio narration + read-along
+
+**User request:** an audio mode — not only reading, but playable while
+reading.
+
+**Pre-rendered, never at runtime.** Content is static, so narration is
+generated at content-load time by `scripts/tts-render.mjs`, a sibling of
+`training-load.mjs` reusing its `--project` / `--dry-run` / `--apply`
+discipline and its `locks/` mechanism. Runtime TTS would put a paid API on
+the critical path of a page a BHW opens on mobile data, which is the wrong
+trade for content that changes a few times a year.
+
+- **Provider**: Azure Speech `fil-PH-BlessicaNeural`, with `edge-tts` as the
+  zero-cost fallback (locked decision, see Context). Both emit
+  WordBoundary/SentenceBoundary events; persist **sentence-level** timings,
+  which survive Tagalog affixation far better than word-level and are
+  enough for the read-along UX. Store the timing JSON in one shape
+  regardless of provider.
+- **Encoding**: Opus/WebM at 32 kbps (~240 KB/minute) with an MP3 fallback
+  for old WebViews. Audio goes to Supabase Storage, reusing the bucket and
+  `storage.objects` policy pattern at
+  `20260731000000_inc14_flipcharts.sql:111-120`. It is **not** inlined —
+  §5.2's ≤300 KB route budget is per-route and audio is fetched on demand.
+- **Schema**: audio url + timings per section. Decide at implementation time
+  between a new `course_module_audio` child table and a column on the
+  existing `lesson` jsonb; prefer the child table if facilitator-notes ever
+  need narration too.
+- **Read-along**: `<audio>` plus a `requestAnimationFrame` loop reading
+  `currentTime`, binary-searching the current sentence span and setting
+  `data-active` on pre-split `<span>`s. Roughly 40 lines; no library.
+  Works in both read and slide modes.
+- **Accessibility is not optional here**: a visible play/pause control, a
+  speed control, and highlighting that does not rely on color alone.
+  `prefers-reduced-motion` must not break playback — it is audio, not motion,
+  but auto-scrolling to follow the highlight is motion and must be
+  suppressible.
+
+**Cost check before building**: the nine-module course is well under Azure's
+500K chars/month free tier, but confirm against the real authored text
+rather than this estimate, and record the actual figure.
+
+**DoD**: narration plays in both modes, in both languages, with the correct
+sentence highlighted; a section with no generated audio degrades to text
+with no broken control; re-running the render script is idempotent and does
+not re-bill for unchanged text; the audio files are not counted against the
+route budget; axe-core clean with the player present.
+
+---
+
+### INC-28 — Animated concept clips
+
+**User request:** animated video clips explaining concepts.
+
+Two tiers, because most concepts here do not need a video file:
+
+1. **Animated SVG scenes — the default.** The §D primitives already exist as
+   SVG and the allowlist already permits `class`. Drive a build-up from React
+   step state (the hub-spoke's spokes appearing one at a time as the
+   narration names each role) rather than shipping a video. Zero additional
+   bytes, scales with `--font-scale`, correct in dark mode, and it can be
+   driven by INC-27's sentence timings so the picture assembles as the
+   narration reaches it — which a pre-rendered video cannot do bilingually
+   without two renders. Extending the allowlist to `<animate>` /
+   `<animateTransform>` is in scope; `<script>` and the rest of the reject
+   list stay rejected, and each new permitted element needs its own
+   allowlist test.
+2. **Remotion — for the few concepts that genuinely need video.** Procedural
+   sequences where showing motion *is* the teaching (the Five Whys unfolding,
+   correct sharps disposal). React-based, so the existing components and
+   tokens are reusable. Rendered in CI to 480p H.264 (~0.5-1 MB for 20 s)
+   plus a poster frame, lazy-loaded, never autoplaying on mobile data.
+   Install via the official skills (`npx skills add remotion-dev/skills`).
+
+**Licence gate — resolve before writing any Remotion code.** Remotion is
+source-available, free for individuals, non-profits and companies of three
+or fewer employees, otherwise $25/seat/month. Confirm which applies to BHW
+Connect's operating entity and record the answer here. If it does not come
+out free, tier 1 covers the pedagogy and tier 2 is dropped rather than
+quietly incurring a licence.
+
+**`prefers-reduced-motion` is a hard requirement**, not a nicety: every
+animated scene must have a static end-state that conveys the same
+information, and that is what renders when reduced motion is set.
+
+**DoD**: at least one animated scene in Module 1 driven by the narration
+timings; its static fallback conveys the same content under
+`prefers-reduced-motion`; the allowlist's new elements each have a test and
+the reject list is unchanged; no video file ships unless the licence
+question is answered in writing above; route weight stays within §5.2.
+
+---
+
+### INC-24 — Author modules 2-5
+
+Modules 2-5 per §C, to the approved style guide, each with: `coverage.json`
+written first (§C.2), objectives bookend, chunked scenario-driven sections,
+≥1 purposeful visual using a §D primitive with takeaway caption and alt
+text, ≥1 inline retrieval check, retrieval-first summary, facilitator
+script, and a competency block whose indicators pair one-to-one with the
+objectives. Size each module to its §C training hours. Load via INC-21's
+loader.
+
+Modules 4 and 5 inherit displaced text from INC-21's original Module 1 (the
+RA 7883 accreditation section, and the four-relationships sections
+respectively) — carry it forward, do not rewrite it.
+
+**DoD**: all four modules load clean through every INC-21 validation
+including the coverage check; `npm run kb:check-sources` passes; a
+read-through confirms no sentence is lifted verbatim from the source
+documents and no summary merely restates its objectives; the
+pretest/posttest bank in `test-questions.json` covers these modules'
+objectives; each module renders correctly in all four modalities
+(read, slides, audio, animation).
+
+---
+
+### INC-25 — Author modules 6-9, KB entries, chat fixtures, final verification
+
+Modules 6-9 per §C. Module 6 (Epektibong Komunikasyon) is the largest in the
+chapter at 8 hours — budget for it accordingly rather than treating it as
+one module among four. Then close the chatbot loop:
+
+- `qa-entries.json` for all 9 modules loaded into `kb_entries`/`kb_articles`.
 - Fixtures added to the Chat Guide corpus following
   `src/lib/chat/ncd-fixtures.ts`'s existing shape, so the new entries are
   **provably retrievable**, not merely present — keywords are the matcher's
@@ -1208,12 +1522,12 @@ landing in the gap queue; no existing HHP+ fixture regresses.
 1. Admin publishes the Day 1 course; `elearning` + `course_sessions` both on.
 2. An assessor creates a session at `lesson_density = 'short'` and enrolls a
    BHW in their org unit; the BHW receives the enrollment notification.
-2b. That BHW sees only `core`-tier content across all 8 modules; the
+2b. That BHW sees only `core`-tier content across all 9 modules; the
    facilitator changes the session to `long` before the BHW starts a second
    module and the BHW now sees `standard` and `deep` content too on the
    modules taken afterward — confirming the control actually reaches the
    renderer, not just the database.
-3. The BHW takes the pretest, works all 8 modules — each opening with
+3. The BHW takes the pretest, works all 9 modules — each opening with
    objectives, carrying visuals and retrieval checks, closing with the
    retrieval-first summary — then takes the posttest.
 4. The facilitator's roster shows both scores and the delta; the per-module
