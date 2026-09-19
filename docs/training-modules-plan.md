@@ -12,18 +12,18 @@ for this codebase.
 |---|---|
 | INC-19a — design mockup approval gate | ✅ Done. User approved the visual system, bookend format, and competency block via a rendered mockup artifact. |
 | INC-19 — schema: sessions, enrollment, pre/post-test | ✅ Merged to `main` — [PR #53](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/53), migration `supabase/migrations/20260807000000_inc19_training_sessions.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-19 section below for what that caught). |
-| INC-20 — schema: pedagogy layer | ⬜ Next. Not started. |
-| INC-21 — loader, style guide, Module 1 (2nd approval gate) | ⬜ Blocked on INC-20. |
+| INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
+| INC-21 — loader, style guide, Module 1 (2nd approval gate) | ⬜ Next. Not started. |
 | INC-22 — BHW UI | ⬜ Blocked on INC-21. |
 | INC-23 — facilitator UI | ⬜ Blocked on INC-22. |
 | INC-24 — author modules 2-5 | ⬜ Blocked on INC-23. |
 | INC-25 — author modules 6-8, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. |
 
-**Before starting INC-20**, read this whole document, then read the actual
-shipped `20260729000000_inc12_elearning.sql` and
-`20260807000000_inc19_training_sessions.sql` migrations — the line-number
+**Before starting INC-21**, read this whole document, then read the actual
+shipped `20260729000000_inc12_elearning.sql`, `20260807000000_inc19_training_sessions.sql`
+and `20260808000000_inc20_training_pedagogy.sql` migrations — the line-number
 references below point into those files. Also worth carrying forward
-from INC-19's build, since they are easy to re-trip:
+from INC-19/INC-20's builds, since they are easy to re-trip:
 
 - **This codebase's RLS policies encode two genuinely different
   relationships** — *ownership* (a facilitator manages the specific rows
@@ -64,10 +64,21 @@ from INC-19's build, since they are easy to re-trip:
   scenarios as impersonated `authenticated`-role users
   (`set_config('request.jwt.claim.sub', <auth_user_id>, false)` after
   `set role authenticated`). This caught three real defects in INC-19 that
-  a read-through missed entirely (detailed in that section below). Budget
-  time for this on INC-20 too — it has more surface area (a new
-  cross-referencing `course_module_visuals` + `course_module_facilitator_notes`
-  pair, plus the SVG allowlist).
+  a read-through missed entirely (detailed in that section below). The
+  `auth.users` stub needs GoTrue's real column set (`confirmation_token`,
+  `recovery_token`, etc.), not a toy `{id, email}` table — `rpc_admin_create_user`
+  and its two follow-up fix migrations insert/update those columns directly,
+  and Postgres's `crypt()`/`gen_salt()` need `search_path` to include the
+  `extensions` schema (`alter database ... set search_path = public, extensions`)
+  or every auth-touching RPC 500s on replay.
+  Nothing new turned up when this same harness was run against INC-20
+  (13/13 scenarios passed on the first attempt, no cross-table RLS
+  recursion) — but that was *confirmed by actually running it*, not
+  assumed because the two new tables' policies only look "up" toward
+  `course_modules`/`courses`. INC-19's own recursion bug looked exactly as
+  one-way-safe on a read-through, right up until Postgres rejected it. Run
+  the harness on every future schema increment (INC-24, INC-25 touch no new
+  tables, but INC-21's loader-driven inserts are still worth a real replay).
 
 ---
 
@@ -625,6 +636,51 @@ every pre-existing `course_modules` row reads correctly at the new defaults;
 instance**, per the note above, not only reviewed.
 
 *Out of scope: UI, loader, content.*
+
+**Status — done, shipped as
+[`20260808000000_inc20_training_pedagogy.sql`](../supabase/migrations/20260808000000_inc20_training_pedagogy.sql).**
+`src/lib/elearning/types.ts` got the `Lesson`/`LessonSection`/`LessonCheck`/
+`LessonTier`/`LessonDensity`/`TIERS_FOR_DENSITY` types plus
+`CourseModuleVisual`/`CourseModuleFacilitatorNotes`, and
+`src/lib/elearning/svg-allowlist.ts` ships `validateSvgMarkup`/
+`sanitizeSvgMarkup` with a failing-fixture unit test per rejected construct
+(`svg-allowlist.test.ts`, 15 cases).
+
+**Verification — actually run, not just reviewed**, same harness approach as
+INC-19: the entire migration history (baseline through INC-19) plus this
+migration was replayed against a real local Postgres 16 instance (the same
+hand-built `auth`/`storage` schema stub — GoTrue's real `auth.users` column
+set, not a toy `{id, email}` table, since `rpc_admin_create_user` and its two
+follow-up fix migrations insert/update specific GoTrue columns directly), then
+driven through 13 functional scenarios as real `authenticated`-role sessions
+with per-user `auth.uid()` impersonation, RLS fully enforced throughout. All
+13 passed on the first attempt — unlike INC-19, this migration's own
+first-draft read-through turned out to be correct: `course_module_visuals`
+and `course_module_facilitator_notes` really do only ever look "up" toward
+`course_modules`/`courses`, never at each other, so no cross-referencing
+`security definer` helper functions were needed here. That was **confirmed by
+actually running it**, not assumed from the shape looking one-way safe on a
+read-through — INC-19 looked one-way safe on a read-through too, right up
+until Postgres rejected it. Scenarios covered: a `bhw` gets zero
+`course_module_facilitator_notes` rows even after a note exists for a module
+they can otherwise see (competency columns included); an in-scope `assessor`
+can read it and an out-of-scope `assessor` (disjoint org subtree) cannot; an
+in-scope `admin` can read and update it; a `bhw` can read
+`course_module_visuals` for a visible module; a `course_module_visuals`
+insert with no `tier` given defaults to `'core'`; inserts violating the
+invalid-tier, one-of-svg/image (both null and both set), blank-alt-text, and
+invalid-primitive constraints are each rejected; a `bhw` cannot write to
+either new table (confirmed by re-reading the row afterward, unchanged); and
+a pre-existing INC-12 `course_modules` row reads correctly at the new
+column defaults (`{}` / `''` / `null`).
+
+`npm run lint`, `npx tsc --noEmit`, and `npm test` (187 tests, including the
+new 15) all pass. `e2e/elearning.spec.ts` is confirmed byte-for-byte
+unchanged (`git diff` against the pre-INC-20 tree), consistent with this
+increment touching no UI/route code — it was not re-executed against a live
+Supabase project in this session (no `bhw-connect-e2e` credentials were
+available in the environment), so it still owes an actual green CI run
+before INC-21 starts, same as any other pushed change.
 
 ---
 
