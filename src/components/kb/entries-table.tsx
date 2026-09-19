@@ -129,7 +129,7 @@ export function EntriesTable({ rows, owners }: { rows: EntryRow[]; owners: Owner
           type="button"
           disabled={loading || selectedIds.length === 0 || !bulkOwnerId}
           onClick={handleBulkAssign}
-          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas transition-opacity disabled:opacity-60"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary transition-opacity disabled:opacity-60"
         >
           {loading ? t("saving") : t("bulkAssignAction")}
         </button>

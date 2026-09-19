@@ -204,7 +204,7 @@ export function ChatGuide() {
           <button
             type="submit"
             disabled={sending || !input.trim()}
-            className="min-h-[48px] min-w-[96px] rounded-md bg-primary px-6 py-3 font-medium text-canvas transition-opacity disabled:opacity-60"
+            className="min-h-[48px] min-w-[96px] rounded-md bg-primary px-6 py-3 font-medium text-on-primary transition-opacity disabled:opacity-60"
           >
             {sending ? t("sending") : t("send")}
           </button>
@@ -231,7 +231,7 @@ function ExchangeBubbles({
 }) {
   return (
     <div className="flex flex-col gap-2">
-      <div className="ml-auto max-w-[85%] rounded-lg rounded-br-none bg-primary px-4 py-2 text-canvas">
+      <div className="ml-auto max-w-[85%] rounded-lg rounded-br-none bg-primary px-4 py-2 text-on-primary">
         {exchange.question}
       </div>
 

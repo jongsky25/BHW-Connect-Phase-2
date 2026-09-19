@@ -17,6 +17,12 @@ export type ElearningErrorKey =
   | "invalidQuestionError"
   | "assessmentNotFoundError"
   | "assessmentAlreadyClaimedError"
+  | "invalidPhaseError"
+  | "notEnrolledInSessionError"
+  | "phaseAlreadySubmittedError"
+  | "contentAlreadyStartedError"
+  | "completeModulesBeforePosttestError"
+  | "courseHasNoTestQuestionsError"
   | "genericError";
 
 // rpc_course_*/rpc_assessment_* raise plain Postgres exceptions (same
@@ -43,5 +49,11 @@ export function mapElearningRpcError(message: string | undefined): ElearningErro
   if (message.includes("invalid question")) return "invalidQuestionError";
   if (message.includes("assessment already claimed")) return "assessmentAlreadyClaimedError";
   if (message.includes("assessment not found")) return "assessmentNotFoundError";
+  if (message.includes("invalid phase")) return "invalidPhaseError";
+  if (message.includes("not enrolled in this session")) return "notEnrolledInSessionError";
+  if (message.includes("this phase has already been submitted")) return "phaseAlreadySubmittedError";
+  if (message.includes("content already started")) return "contentAlreadyStartedError";
+  if (message.includes("complete all modules before the posttest")) return "completeModulesBeforePosttestError";
+  if (message.includes("course has no test questions")) return "courseHasNoTestQuestionsError";
   return "genericError";
 }

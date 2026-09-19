@@ -35,7 +35,7 @@ export function LanguageToggle() {
             onClick={() => setLocale(option)}
             className={`px-3 py-1 font-medium transition-colors disabled:opacity-60 ${
               locale === option
-                ? "bg-primary text-canvas"
+                ? "bg-primary text-on-primary"
                 : "bg-transparent text-ink hover:bg-ink/5"
             }`}
           >

@@ -4,8 +4,19 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
+import { LessonModule } from "@/components/elearning/lesson-module";
+import { TestForm, TestScores } from "@/components/elearning/pre-post-test";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
-import type { CourseModule, CourseProgressStatus, ModuleProgress, QuizQuestion } from "@/lib/elearning/types";
+import type {
+  CourseModule,
+  CourseModuleVisual,
+  CourseProgressStatus,
+  CourseTestAttempt,
+  CourseTestQuestion,
+  LessonDensity,
+  ModuleProgress,
+  QuizQuestion,
+} from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
 
 type Props = {
@@ -13,6 +24,11 @@ type Props = {
   quizMaxAttempts: number;
   modules: CourseModule[];
   questions: QuizQuestion[];
+  visuals: CourseModuleVisual[];
+  testQuestions: CourseTestQuestion[];
+  testAttempts: CourseTestAttempt[];
+  density: LessonDensity;
+  sessionId: string | null;
   progressStatus: CourseProgressStatus | null;
   moduleProgress: ModuleProgress[];
   certificateCode: string | null;
@@ -24,18 +40,49 @@ export function CourseDetail({
   quizMaxAttempts,
   modules,
   questions,
+  visuals,
+  testQuestions,
+  testAttempts: initialTestAttempts,
+  density,
+  sessionId,
   progressStatus,
   moduleProgress,
   certificateCode,
   locale,
 }: Props) {
   const t = useTranslations("courses");
+  const tt = useTranslations("training");
   const router = useRouter();
   const [pendingModuleId, setPendingModuleId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [quizResult, setQuizResult] = useState<Record<string, { passed: boolean; score: number; attemptsLeft: number }>>(
-    {},
+  const [quizResult, setQuizResult] = useState<
+    Record<string, { passed: boolean; score: number; attemptsLeft: number }>
+  >({});
+  const [testAttempts, setTestAttempts] = useState<
+    Array<Pick<CourseTestAttempt, "phase" | "score_percent">>
+  >(
+    initialTestAttempts.map(({ phase, score_percent }) => ({
+      phase,
+      score_percent,
+    })),
   );
+
+  function handleTestSubmitted(attempt: {
+    phase: "pretest" | "posttest";
+    score_percent: number;
+  }) {
+    setTestAttempts((prev) => [
+      ...prev.filter((a) => a.phase !== attempt.phase),
+      attempt,
+    ]);
+  }
+
+  const pretestAttempt =
+    testAttempts.find((a) => a.phase === "pretest") ?? null;
+  const posttestAttempt =
+    testAttempts.find((a) => a.phase === "posttest") ?? null;
+  const hasTestBank = testQuestions.length > 0;
+  const pretestRequired = hasTestBank && !pretestAttempt;
 
   function progressFor(moduleId: string) {
     return moduleProgress.find((p) => p.module_id === moduleId) ?? null;
@@ -46,10 +93,13 @@ export function CourseDetail({
     setPendingModuleId(moduleId);
     try {
       const supabase = createClient();
-      const { error: rpcError } = await supabase.rpc("rpc_course_module_complete", {
-        p_course_id: courseId,
-        p_module_id: moduleId,
-      });
+      const { error: rpcError } = await supabase.rpc(
+        "rpc_course_module_complete",
+        {
+          p_course_id: courseId,
+          p_module_id: moduleId,
+        },
+      );
 
       if (rpcError) {
         setError(t(mapElearningRpcError(rpcError.message)));
@@ -68,10 +118,16 @@ export function CourseDetail({
         <p className="font-medium text-success">{t("status.certified")}</p>
         {certificateCode ? (
           <div className="mt-2 flex flex-wrap gap-4">
-            <Link href={`/certificates/${certificateCode}`} className="text-sm font-medium text-secondary underline">
+            <Link
+              href={`/certificates/${certificateCode}`}
+              className="text-sm font-medium text-secondary underline"
+            >
               {t("viewCertificateAction")}
             </Link>
-            <a href={`/api/certificates/${certificateCode}/pdf`} className="text-sm font-medium text-secondary underline">
+            <a
+              href={`/api/certificates/${certificateCode}/pdf`}
+              className="text-sm font-medium text-secondary underline"
+            >
               {t("downloadPdfAction")}
             </a>
           </div>
@@ -83,7 +139,9 @@ export function CourseDetail({
   if (progressStatus === "failed_assessment") {
     return (
       <div className="rounded-md border border-danger/40 bg-danger/5 p-4">
-        <p className="font-medium text-danger">{t("status.failed_assessment")}</p>
+        <p className="font-medium text-danger">
+          {t("status.failed_assessment")}
+        </p>
       </div>
     );
   }
@@ -92,7 +150,9 @@ export function CourseDetail({
     <div className="flex flex-col gap-4">
       {progressStatus === "content_completed" ? (
         <div className="rounded-md border border-info/40 bg-info/5 p-4">
-          <p className="font-medium text-info">{t("status.content_completed")}</p>
+          <p className="font-medium text-info">
+            {t("status.content_completed")}
+          </p>
         </div>
       ) : null}
 
@@ -102,67 +162,130 @@ export function CourseDetail({
         </p>
       ) : null}
 
-      {modules.map((module) => {
-        const title = locale === "en" ? module.title_en : module.title_fil;
-        const mProgress = progressFor(module.id);
-        const isDone = mProgress?.completed_at != null;
+      {hasTestBank ? (
+        <TestScores
+          pretestAttempt={pretestAttempt}
+          posttestAttempt={posttestAttempt}
+        />
+      ) : null}
 
-        return (
-          <div key={module.id} className="flex flex-col gap-3 rounded-md border border-ink/10 p-4">
-            <h2 className="font-medium text-ink">{title}</h2>
+      {pretestRequired ? (
+        <TestForm
+          courseId={courseId}
+          phase="pretest"
+          sessionId={sessionId}
+          questions={testQuestions}
+          locale={locale}
+          onSubmitted={handleTestSubmitted}
+        />
+      ) : (
+        <>
+          {modules.map((module) => {
+            const title = locale === "en" ? module.title_en : module.title_fil;
+            const mProgress = progressFor(module.id);
+            const isDone = mProgress?.completed_at != null;
 
-            {module.type === "text" ? (
-              <p className="whitespace-pre-wrap text-sm text-ink/80">
-                {locale === "en" ? module.body_en : module.body_fil}
-              </p>
-            ) : null}
-
-            {module.type === "video" && module.video_url ? (
-              <a
-                href={module.video_url}
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm font-medium text-secondary underline"
+            return (
+              <div
+                key={module.id}
+                className="flex flex-col gap-3 rounded-md border border-ink/10 p-4"
               >
-                {module.video_url}
-              </a>
-            ) : null}
+                <h2 className="font-medium text-ink">{title}</h2>
 
-            {module.type === "text" || module.type === "video" ? (
-              isDone ? (
-                <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-success">
-                  {t("completedLabel")}
-                </span>
-              ) : (
-                <button
-                  type="button"
-                  disabled={pendingModuleId === module.id}
-                  onClick={() => handleModuleComplete(module.id)}
-                  className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas disabled:opacity-60"
-                >
-                  {t("markCompleteAction")}
-                </button>
-              )
-            ) : null}
+                {module.type === "text" && module.lesson ? (
+                  <LessonModule
+                    module={module}
+                    visuals={visuals.filter((v) => v.module_id === module.id)}
+                    density={density}
+                    locale={locale}
+                    isDone={isDone}
+                    pending={pendingModuleId === module.id}
+                    onComplete={() => handleModuleComplete(module.id)}
+                    completedLabel={t("completedLabel")}
+                    markCompleteLabel={t("markCompleteAction")}
+                  />
+                ) : (
+                  <>
+                    {module.type === "text" ? (
+                      <p className="whitespace-pre-wrap text-sm text-ink/80">
+                        {locale === "en" ? module.body_en : module.body_fil}
+                      </p>
+                    ) : null}
 
-            {module.type === "quiz" ? (
-              <QuizForm
+                    {module.type === "video" && module.video_url ? (
+                      <a
+                        href={module.video_url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm font-medium text-secondary underline"
+                      >
+                        {module.video_url}
+                      </a>
+                    ) : null}
+
+                    {module.type === "text" || module.type === "video" ? (
+                      isDone ? (
+                        <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-success">
+                          {t("completedLabel")}
+                        </span>
+                      ) : (
+                        <button
+                          type="button"
+                          disabled={pendingModuleId === module.id}
+                          onClick={() => handleModuleComplete(module.id)}
+                          className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
+                        >
+                          {t("markCompleteAction")}
+                        </button>
+                      )
+                    ) : null}
+                  </>
+                )}
+
+                {module.type === "quiz" ? (
+                  <QuizForm
+                    courseId={courseId}
+                    moduleId={module.id}
+                    questions={questions.filter(
+                      (q) => q.module_id === module.id,
+                    )}
+                    locale={locale}
+                    isDone={isDone}
+                    attemptsUsed={mProgress?.quiz_attempts ?? 0}
+                    maxAttempts={quizMaxAttempts}
+                    lastScore={mProgress?.quiz_score ?? null}
+                    result={quizResult[module.id]}
+                    onResult={(result) =>
+                      setQuizResult((prev) => ({
+                        ...prev,
+                        [module.id]: result,
+                      }))
+                    }
+                    onSubmitted={() => router.refresh()}
+                  />
+                ) : null}
+              </div>
+            );
+          })}
+
+          {hasTestBank && pretestAttempt && !posttestAttempt ? (
+            progressStatus === "content_completed" ? (
+              <TestForm
                 courseId={courseId}
-                moduleId={module.id}
-                questions={questions.filter((q) => q.module_id === module.id)}
+                phase="posttest"
+                sessionId={sessionId}
+                questions={testQuestions}
                 locale={locale}
-                isDone={isDone}
-                attemptsUsed={mProgress?.quiz_attempts ?? 0}
-                maxAttempts={quizMaxAttempts}
-                lastScore={mProgress?.quiz_score ?? null}
-                result={quizResult[module.id]}
-                onResult={(result) => setQuizResult((prev) => ({ ...prev, [module.id]: result }))}
-                onSubmitted={() => router.refresh()}
+                onSubmitted={handleTestSubmitted}
               />
-            ) : null}
-          </div>
-        );
-      })}
+            ) : (
+              <p className="text-sm text-ink/70">
+                {tt("posttestLockedMessage")}
+              </p>
+            )
+          ) : null}
+        </>
+      )}
     </div>
   );
 }
@@ -177,7 +300,11 @@ type QuizFormProps = {
   maxAttempts: number;
   lastScore: number | null;
   result: { passed: boolean; score: number; attemptsLeft: number } | undefined;
-  onResult: (result: { passed: boolean; score: number; attemptsLeft: number }) => void;
+  onResult: (result: {
+    passed: boolean;
+    score: number;
+    attemptsLeft: number;
+  }) => void;
   onSubmitted: () => void;
 };
 
@@ -211,7 +338,9 @@ function QuizForm({
   }
 
   if (noAttemptsLeft) {
-    return <p className="text-sm text-danger">{t("noAttemptsRemainingMessage")}</p>;
+    return (
+      <p className="text-sm text-danger">{t("noAttemptsRemainingMessage")}</p>
+    );
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -221,26 +350,43 @@ function QuizForm({
 
     try {
       const supabase = createClient();
-      const payload = questions.map((q) => ({ question_id: q.id, selected_option_index: answers[q.id] ?? -1 }));
+      const payload = questions.map((q) => ({
+        question_id: q.id,
+        selected_option_index: answers[q.id] ?? -1,
+      }));
 
-      const { data, error: rpcError } = await supabase.rpc("rpc_course_quiz_submit", {
-        p_course_id: courseId,
-        p_module_id: moduleId,
-        p_answers: payload,
-      });
+      const { data, error: rpcError } = await supabase.rpc(
+        "rpc_course_quiz_submit",
+        {
+          p_course_id: courseId,
+          p_module_id: moduleId,
+          p_answers: payload,
+        },
+      );
 
       if (rpcError) {
         setError(t(mapElearningRpcError(rpcError.message)));
         return;
       }
 
-      const row = (data as Array<{ passed: boolean; score_percent: number; attempts_used: number; max_attempts: number }> | null)?.[0];
+      const row = (
+        data as Array<{
+          passed: boolean;
+          score_percent: number;
+          attempts_used: number;
+          max_attempts: number;
+        }> | null
+      )?.[0];
       if (!row) {
         setError(t("genericError"));
         return;
       }
 
-      onResult({ passed: row.passed, score: row.score_percent, attemptsLeft: row.max_attempts - row.attempts_used });
+      onResult({
+        passed: row.passed,
+        score: row.score_percent,
+        attemptsLeft: row.max_attempts - row.attempts_used,
+      });
       onSubmitted();
     } catch {
       setError(t("genericError"));
@@ -252,8 +398,14 @@ function QuizForm({
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
       {result ? (
-        <p className={result.passed ? "text-sm text-success" : "text-sm text-danger"}>
-          {t(result.passed ? "quizPassedMessage" : "quizFailedMessage", { score: result.score })}
+        <p
+          className={
+            result.passed ? "text-sm text-success" : "text-sm text-danger"
+          }
+        >
+          {t(result.passed ? "quizPassedMessage" : "quizFailedMessage", {
+            score: result.score,
+          })}
           {!result.passed && result.attemptsLeft > 0
             ? ` ${t("attemptsRemainingMessage", { remaining: result.attemptsLeft })}`
             : ""}
@@ -261,19 +413,25 @@ function QuizForm({
       ) : null}
 
       {questions.map((question) => {
-        const prompt = locale === "en" ? question.prompt_en : question.prompt_fil;
+        const prompt =
+          locale === "en" ? question.prompt_en : question.prompt_fil;
         return (
           <fieldset key={question.id} className="flex flex-col gap-2">
             <legend className="text-sm font-medium text-ink">{prompt}</legend>
             <div className="flex flex-col gap-1">
               {question.options.map((option, index) => (
-                <label key={index} className="flex min-h-[44px] items-center gap-2 text-sm text-ink">
+                <label
+                  key={index}
+                  className="flex min-h-[44px] items-center gap-2 text-sm text-ink"
+                >
                   <input
                     type="radio"
                     name={`quiz-${question.id}`}
                     required
                     checked={answers[question.id] === index}
-                    onChange={() => setAnswers((prev) => ({ ...prev, [question.id]: index }))}
+                    onChange={() =>
+                      setAnswers((prev) => ({ ...prev, [question.id]: index }))
+                    }
                   />
                   {locale === "en" ? option.en : option.fil}
                 </label>
@@ -292,7 +450,7 @@ function QuizForm({
       <button
         type="submit"
         disabled={loading}
-        className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas disabled:opacity-60"
+        className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("quizSubmitting") : t("quizSubmitAction")}
       </button>
