@@ -15,7 +15,7 @@ for this codebase.
 | INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
 | INC-21 — loader, style guide, Module 1 (2nd approval gate) | ✅ Merged — [PR #56](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/56). `--dry-run`/`--apply` were subsequently run for real against the live pilot project in the INC-22 session (see the Status note inside the INC-21 section below) — the one item its own Status note had left open. |
 | INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
-| INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 In progress. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). See the INC-21r section below. |
+| INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)), **approval gate still open**. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot project has **not** been re-loaded since the merge and still serves the displaced version — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | ⬜ Blocked on INC-21r. |
 | INC-27 — audio narration + read-along | ⬜ Blocked on INC-26. |
 | INC-28 — animated concept clips | ⬜ Blocked on INC-27. |
@@ -1346,6 +1346,36 @@ validations; `--dry-run` then `--apply` load clean with zero review flags;
 `npm run kb:check-sources` passes; **the user reviews Module 1 rendered in
 the real app at Detalyado density and approves** — the gate INC-21 opened and
 this increment re-opens. INC-24 stays blocked until then.
+
+**Getting the pilot to Detalyado.** Merging the code does not move the
+content, and loading the content does not by itself render it at Detalyado.
+Both were missed, and on 19 September 2026 the user opened the app and saw
+INC-21's *displaced* Module 1 — the four-relationships objectives verbatim
+from `d424bde` — because the pilot project had never been re-loaded after
+INC-21r merged. Three independent gates sit between a merged PR and a
+reviewable Detalyado render, and none of them announces itself:
+
+1. **The content.** `training:load` is a manual step with no CI equivalent.
+   Until it is re-run against `ltzicxyefizxoqhfuuzc`, the pilot serves
+   whatever the last `--apply` wrote.
+2. **The flags.** `src/app/courses/[id]/page.tsx` returns early on
+   `!flags.elearning`, and reads `course_sessions` only when that flag is on.
+   Both default to `false` (`src/lib/flags/get-flags.ts`), so with either off
+   the density is the hardcoded `'normal'` fallback.
+3. **The session.** §A.6 density is not a BHW-facing preference and INC-23's
+   selector has not shipped, so `long` exists only as an enrolled
+   `course_session`'s `lesson_density`. No session, no `deep` tier — and
+   nothing in the UI says a tier was withheld, which is exactly what makes
+   this failure mode quiet.
+
+`scripts/training-review-setup.mjs` (`npm run training:review-setup`) closes
+gates 2 and 3 in one idempotent command — see "Reviewing a module at a chosen
+density" in `content/training/README.md`. Gate 1 stays `training:load`'s job.
+Run the loader first, then the setup script, then review. At Detalyado,
+Module 1 gains exactly two sections over Karaniwan:
+`[concept/deep] Ang BHW sa pagpaplano ng barangay` and
+`[contrast/deep] Mali at tama: "Hindi ko naman trabaho 'yan"` — if those two
+are not on screen, the render is not Detalyado and the gate has not been met.
 
 ---
 

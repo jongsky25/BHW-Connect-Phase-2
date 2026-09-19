@@ -336,3 +336,36 @@ npm run training:load -- --project <ref> --org-unit "<org unit name>" --modules 
 
 Every rule above has a failing-fixture test in
 `scripts/lib/training-content.test.mjs`.
+
+## Reviewing a module at a chosen density
+
+Loading content is not enough to *see* it at Detalyado. §A.6 density is
+deliberately not a BHW-facing preference, and INC-23's facilitator density
+selector has not shipped, so `deep`-tier sections render only when the reader
+is enrolled in a `course_session` whose `lesson_density` is `long` — and only
+when the `elearning` and `course_sessions` flags are both on
+(`src/app/courses/[id]/page.tsx`). With any of those missing, the page falls
+back to `normal` and the deep sections are silently absent.
+
+```bash
+npm run training:review-setup -- --project <ref> --bhw <username>            # dry run
+npm run training:review-setup -- --project <ref> --bhw <username> --apply
+npm run training:review-setup -- --project <ref> --bhw <username> --density short --apply
+```
+
+It turns on both flags, publishes the course if the loader left it `draft`,
+creates (or re-densities) the facilitator's session for that course, and
+enrolls the named BHW. Every write goes through the INC-12/INC-19 RPCs, so the
+org-scope checks and audit events are the same ones a real facilitator's
+browser produces. Re-running is idempotent.
+
+Two accounts are required and cannot be collapsed into one — `rpc_flag_toggle`
+and `rpc_course_set_status` demand `role = 'admin'`, while
+`rpc_course_session_create` / `_enroll` / `_set_density` demand
+`role = 'assessor'`:
+
+| Env | Account |
+| --- | --- |
+| `KB_LOADER_ANON_KEY` (or `NEXT_PUBLIC_SUPABASE_ANON_KEY`) | the project's anon key |
+| `KB_LOADER_USERNAME` / `KB_LOADER_PASSWORD` | an admin (the same one `training:load` uses) |
+| `REVIEW_FACILITATOR_USERNAME` / `REVIEW_FACILITATOR_PASSWORD` | an assessor whose org unit is at or above the reviewer's |
