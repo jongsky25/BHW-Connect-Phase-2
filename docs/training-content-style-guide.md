@@ -1,7 +1,7 @@
 # Training Content Style Guide (Day 1: Basic Competencies)
 
 This is the authoring standard for `content/training/day1-basic-competencies/`,
-written for whoever is writing modules 2-8 (INC-24/INC-25) — not necessarily a
+written for whoever is writing modules 2-9 (INC-24/INC-25) — not necessarily a
 developer. It expands `docs/training-modules-plan.md` §A, which the user
 approved via the INC-19a mockup, into rules you can follow file-by-file
 without reading the schema or the loader code. If a rule here and §A ever

@@ -42,9 +42,9 @@ NC II mapping. It is an image in the original and is transcribed in
 | Exercise efficient and effective sustainable practices in the workplaces | Occupational safety and health in the barangay | 3 |
 | **Total** | | **37 (4.5–5 full days)** |
 
-**Nine competencies, not eight.** `docs/training-modules-plan.md` §C maps the chapter to 8 modules
-against 8 competencies; this table has nine. The differences are real and each one changes the
-module boundaries — they are worked through in that plan, not here.
+**Nine competencies, not eight.** `docs/training-modules-plan.md` §C originally mapped the chapter
+to 8 modules inferred from the deck's topic list. This table is what corrected it; §C now carries
+the nine-module map and records exactly which boundaries moved.
 
 **Training hours are the weighting signal.** Komunikasyon is 8 hours and Tungkulin is 6; several
 others are 3. A module map that gives all nine equal weight contradicts the source.

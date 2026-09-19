@@ -14,7 +14,7 @@ from these files, and a `locks/<ref>.json` file (written by the loader,
 one per target Supabase project) maps a stable content id to the row uuid it
 became, so re-running the loader updates in place instead of duplicating.
 
-## `day1-basic-competencies/` — Day 1: Basic Competencies (8 modules, §C of `docs/training-modules-plan.md`)
+## `day1-basic-competencies/` — Day 1: Basic Competencies (9 modules, §C of `docs/training-modules-plan.md`)
 
 ```
 day1-basic-competencies/
@@ -228,7 +228,7 @@ require every module to have.
 
 One shared bank for the whole course's pretest/posttest (§A of the plan:
 taken once before content, once after; delta = learning gain). `position` is
-the array index. As modules 2-8 are authored (INC-24/25), add questions here
+the array index. As modules 2-9 are authored (INC-24/25), add questions here
 covering their objectives too — this file grows with the course, it is not
 per-module.
 
