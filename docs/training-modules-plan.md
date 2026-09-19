@@ -1040,7 +1040,7 @@ read-through would have caught (detail at the end of this note).
   with the same credentials against the same project. **CI has no such proxy
   and ran the spec green**, so this is recorded only as a sandbox gotcha for
   the next session, not an open item.
-- **Four real defects that only CI could find**, worth recording because
+- **Five real defects that only CI could find**, worth recording because
   each was invisible to review, typecheck and lint:
   1. *Ambiguous locator.* `getByText("CoreTakeaway fil")` matched two
      elements — the section's own inline takeaway and the same takeaway
@@ -1061,6 +1061,22 @@ read-through would have caught (detail at the end of this note).
      dedicated bullet below. A genuine production bug, not a test artifact.
   4. *Unpaginated dashboard table.* Not fixed here; filed as
      [#58](https://github.com/jongsky25/BHW-Connect-Phase-2/issues/58).
+  5. *A global feature flag leaking out of a timed-out test.* Surfaced only
+     after INC-22 merged, on a later run of the same spec.
+     `training-sessions.spec.ts` turned `course_sessions` on inline and
+     reset it in a `try/finally` inside the test body — but Playwright
+     tears the context down *before* that `finally` runs when a test times
+     out, so the reset threw instead of executing and left the flag on for
+     the shared CI project. The timeout itself was legitimate: each test
+     runs course setup plus three full onboarding journeys, which does not
+     fit the 30s default. Fixed in
+     [#60](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/60) by
+     giving the describe block a 120s timeout and moving the toggle into
+     `beforeEach`/`afterEach`, which Playwright *does* run on timeout —
+     and which also makes the pair self-healing if an earlier run leaked.
+     The general lesson outlives this spec: **`finally` is not a safe place
+     to undo shared global state in a Playwright test.** `ops-hardening`'s
+     `kb_articles` toggle has the same shape and the same exposure.
 - **Unrelated production bug found and fixed while driving CI green**:
   `rpc_dashboard_bhw_table` (INC-6) resolves each BHW's `last_login_at` with
   a correlated subquery filtering `audit_events` on `subject_id`, but that
