@@ -41,7 +41,7 @@ export default async function HomePage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/chat"
-          className="rounded-md bg-primary px-6 py-3 font-medium text-canvas"
+          className="rounded-md bg-primary px-6 py-3 font-medium text-on-primary"
         >
           {t("chatGuideCta")}
         </Link>

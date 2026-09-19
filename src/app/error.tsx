@@ -18,7 +18,7 @@ export default function ErrorBoundary({ error, reset }: { error: Error & { diges
       <button
         type="button"
         onClick={reset}
-        className="min-h-[44px] rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas"
+        className="min-h-[44px] rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
       >
         {t("retryAction")}
       </button>

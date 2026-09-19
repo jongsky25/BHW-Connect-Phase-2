@@ -74,7 +74,7 @@ export default async function ForumPage({
         </div>
         <Link
           href="/forum/new"
-          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
         >
           {t("newThreadCta")}
         </Link>
@@ -84,7 +84,7 @@ export default async function ForumPage({
         <div className="flex flex-wrap gap-2 text-sm">
           <Link
             href="/forum"
-            className={`rounded-full border px-3 py-1 ${!category ? "border-primary text-primary" : "border-ink/20 text-ink/70"}`}
+            className={`rounded-full border px-3 py-1 ${!category ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
           >
             {t("allCategories")}
           </Link>
@@ -92,7 +92,7 @@ export default async function ForumPage({
             <Link
               key={c.id}
               href={`/forum?category=${c.id}`}
-              className={`rounded-full border px-3 py-1 ${category === c.id ? "border-primary text-primary" : "border-ink/20 text-ink/70"}`}
+              className={`rounded-full border px-3 py-1 ${category === c.id ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
             >
               {c.name_en}
             </Link>

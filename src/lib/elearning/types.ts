@@ -133,6 +133,30 @@ export type QuizQuestion = {
   correct_option_index: number;
 };
 
+// INC-19 course-level shared pretest/posttest bank (course_test_questions) —
+// same shape as QuizQuestion minus module_id, since this is scoped to the
+// course, not a single module.
+export type CourseTestQuestion = {
+  id: string;
+  course_id: string;
+  position: number;
+  prompt_fil: string;
+  prompt_en: string;
+  options: QuizOption[];
+  correct_option_index: number;
+};
+
+export type TestPhase = "pretest" | "posttest";
+
+export type CourseTestAttempt = {
+  id: string;
+  course_id: string;
+  session_id: string | null;
+  phase: TestPhase;
+  score_percent: number;
+  taken_at: string;
+};
+
 export type DraftQuizQuestion = {
   prompt_fil: string;
   prompt_en: string;

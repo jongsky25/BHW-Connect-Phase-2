@@ -1,0 +1,42 @@
+-- Performance fix: rpc_dashboard_bhw_table (INC-6) seq-scans audit_events
+-- once per BHW row.
+--
+-- That RPC resolves each BHW's last_login_at with a correlated subquery:
+--
+--   (select max(a.created_at) from public.audit_events a
+--     where a.subject_id = u.id and a.event_type = 'auth.login')
+--
+-- audit_events shipped with indexes on actor_user_id and created_at
+-- (baseline_captured_from_remote.sql:157-158) but never on subject_id, which
+-- is the column this subquery actually filters on. So the planner picks a
+-- sequential scan and repeats it once per row in the outer result — the cost
+-- is O(bhw_count x audit_events_count), and BOTH factors grow forever:
+-- audit_events is append-only by design, and BHW rows accumulate.
+--
+-- Found by measuring, not by reading: on the CI e2e project (1,073 BHW rows,
+-- 10,391 audit_events) EXPLAIN (ANALYZE, BUFFERS) showed
+--
+--   Seq Scan on audit_events a (actual time=0.681..0.941 rows=2 loops=927)
+--     Rows Removed by Filter: 10389
+--     Buffers: shared hit=386559
+--   Execution Time: 911.654 ms
+--
+-- i.e. ~9.6M row examinations to produce 927 rows. Adding this index turns
+-- that into an index scan and the same query drops to 17.112 ms — a ~53x
+-- improvement, and the per-row cost stops scaling with table size:
+--
+--   Index Scan using audit_events_subject_idx (actual time=0.004..0.004 rows=2 loops=927)
+--   Execution Time: 17.112 ms
+--
+-- This surfaced as e2e/dashboard.spec.ts:167 timing out waiting for a BHW row
+-- on /admin/dashboard once the shared CI project's data crossed the threshold
+-- where the render exceeded the test's wait. It is not a test-only problem:
+-- the pilot project's audit_events grows with every audited action, so the
+-- admin dashboard was on the same curve.
+--
+-- (subject_id, event_type) rather than (subject_id) alone because every
+-- caller of this shape filters on both, and the composite lets the planner
+-- satisfy the predicate entirely from the index.
+
+create index if not exists audit_events_subject_idx
+  on public.audit_events using btree (subject_id, event_type);

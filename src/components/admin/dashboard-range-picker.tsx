@@ -33,7 +33,7 @@ export function DashboardRangePicker() {
             aria-current={isActive ? "true" : undefined}
             className={
               isActive
-                ? "rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-canvas"
+                ? "rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-on-primary"
                 : "rounded-md border border-ink/20 px-3 py-1.5 text-sm font-medium text-ink hover:bg-ink/5"
             }
           >

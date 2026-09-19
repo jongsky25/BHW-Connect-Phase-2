@@ -408,7 +408,7 @@ export function CourseForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-canvas disabled:opacity-60"
+        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("creating") : t("createAction")}
       </button>

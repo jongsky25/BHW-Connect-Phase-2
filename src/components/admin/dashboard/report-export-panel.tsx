@@ -12,7 +12,7 @@ const ALL_SELECTED: Record<ActivityReportColumnKey, boolean> = Object.fromEntrie
 
 function buttonClass(enabled: boolean): string {
   return enabled
-    ? "rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas hover:opacity-90"
+    ? "rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary hover:opacity-90"
     : "cursor-not-allowed rounded-md bg-ink/20 px-4 py-2 text-sm font-medium text-ink/50";
 }
 

@@ -193,7 +193,7 @@ export function ArticleForm({ mode, article, categories, owners }: Props) {
           type="button"
           disabled={loading}
           onClick={() => handleSave("published")}
-          className="rounded-md bg-primary px-4 py-2 font-medium text-canvas transition-opacity disabled:opacity-60"
+          className="rounded-md bg-primary px-4 py-2 font-medium text-on-primary transition-opacity disabled:opacity-60"
         >
           {loading ? t("saving") : t("publishAction")}
         </button>

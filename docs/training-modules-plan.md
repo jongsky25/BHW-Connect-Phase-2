@@ -13,9 +13,9 @@ for this codebase.
 | INC-19a — design mockup approval gate | ✅ Done. User approved the visual system, bookend format, and competency block via a rendered mockup artifact. |
 | INC-19 — schema: sessions, enrollment, pre/post-test | ✅ Merged to `main` — [PR #53](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/53), migration `supabase/migrations/20260807000000_inc19_training_sessions.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-19 section below for what that caught). |
 | INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
-| INC-21 — loader, style guide, Module 1 (2nd approval gate) | 🔶 21a/21b/21c shipped and verified; 21d (Module 1) authored and loads clean through every validation. **Awaiting the 2nd user approval gate** — see the Status note inside the INC-21 section below. |
-| INC-22 — BHW UI | ⬜ Blocked on INC-21. |
-| INC-23 — facilitator UI | ⬜ Blocked on INC-22. |
+| INC-21 — loader, style guide, Module 1 (2nd approval gate) | ✅ Merged — [PR #56](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/56). `--dry-run`/`--apply` were subsequently run for real against the live pilot project in the INC-22 session (see the Status note inside the INC-21 section below) — the one item its own Status note had left open. |
+| INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Built, verified at the data/RLS layer against the real pilot + CI projects; the new `e2e/training-sessions.spec.ts` is authored, typechecked and linted but not executed end-to-end in this session (sandbox network/TLS constraint, not a code issue — see the Status note inside the INC-22 section below). Owes a real CI run before INC-23 starts, same standing item every prior increment has left for its own e2e coverage. |
+| INC-23 — facilitator UI | ⬜ Blocked on INC-22's CI run. |
 | INC-24 — author modules 2-5 | ⬜ Blocked on INC-23. |
 | INC-25 — author modules 6-8, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. |
 
@@ -871,17 +871,34 @@ into real, final Module 1 content rather than the mockup's placeholder text.
   objectives; it will grow, not get replaced, as modules 2-8 add their own.
   `loadTrainingCourse("day1-basic-competencies")` loads with zero
   validation problems and zero review flags.
-- **Not run — `--apply` against a live Supabase project**, same caveat
-  INC-20's own Status note ends on: no `KB_LOADER_USERNAME`/`PASSWORD` or a
-  real `--project` were available in this environment. What *was* run: a
-  real invocation of `scripts/training-load.mjs --project <fake> --org-unit
-  National` against a nonexistent project, which validated all of Module
-  1's content (the same validation `--dry-run`/`--apply` both run first)
-  and only then failed at the network sign-in step — proving the
-  validate-before-any-write ordering holds, not just that it typechecks.
-  `--dry-run`/`--apply` against a real project, and the actual rendered
-  result in the app, still owe a real run once INC-22 exists or credentials
-  are available — same standing item INC-20 left for `e2e/elearning.spec.ts`.
+- **Update (INC-22 session) — now actually run against the real pilot
+  project.** The gap this note originally left open (no `KB_LOADER_USERNAME`/
+  `PASSWORD` or a real `--project` were available) was closed: a dedicated
+  `training.loader` admin account was provisioned on the pilot project (ref
+  `ltzicxyefizxoqhfuuzc`, org-scoped at Los Baños — no admin existed at the
+  national root to provision one there, so it was scoped to match the
+  broadest existing admin, `admin.city.stable`) via the real
+  `rpc_admin_create_user` RPC, not a hand-rolled insert. Before the loader
+  could run at all, the pilot project turned out to be missing INC-19 and
+  INC-20's migrations entirely (merged to `main` but never deployed there) —
+  both were applied for real via the Supabase Management API and confirmed
+  present (`course_sessions`, `course_session_enrollments`,
+  `course_test_questions`, `course_test_attempts`, `course_module_visuals`,
+  `course_module_facilitator_notes` all exist and are recorded in
+  `supabase_migrations.schema_migrations`). With that in place,
+  `training:load --project ltzicxyefizxoqhfuuzc --org-unit "Los Baños"
+  --dry-run` printed exactly the expected row counts (1 course, 1 module, 1
+  facilitator-notes row, 2 visuals, 6 test questions, 8 KB categories, 7 KB
+  entries) and wrote nothing; `--apply` then loaded all of it; re-running
+  `--apply` showed `update` counts matching the first run's `create` counts
+  with zero duplicates, confirming the idempotency DoD for real, not just by
+  reading the lock-file logic. Module 1 is live on the pilot project now, as
+  a **draft** course (not published — that's a deliberate call for the next
+  session/user to make, not this one). The same two migrations were also
+  applied to the CI `bhw-connect-e2e` project, since `e2e/training-sessions.spec.ts`
+  (INC-22) needs those tables there too. The rendered-in-the-app review this
+  DoD calls for is still owed — INC-22 shipped the renderer that makes that
+  possible, but nobody has looked at Module 1 live in a browser yet.
 
 ---
 
@@ -935,6 +952,104 @@ section per tier makes this assertable; axe-core clean on module
 routes **at the largest `--font-scale`, in dark mode, and in high-contrast
 mode** (the bar INC-5/INC-7 set, and where visual-heavy layouts break);
 route first-load stays within the §5.2 budget with the SVGs inline.
+
+**Status — shipped, e2e authored but not run live in this session (sandbox
+network constraint, not a code defect — detail below).**
+
+- **Renderer**: `src/components/elearning/lesson-module.tsx` (objectives
+  bookend, tier-filtered sections via `TIERS_FOR_DENSITY`, per-section
+  visual filtered by its own tier too, inline retrieval check — client
+  state only, never calls an RPC — and the retrieval-first closing summary,
+  gated behind a reveal button, assembled only from the *rendered* sections'
+  `takeaway_*`) and `src/components/elearning/pre-post-test.tsx`
+  (`TestScores`/`TestForm`, wired to `rpc_course_test_submit`). Wired into
+  `src/components/elearning/course-detail.tsx`: a module renders through
+  `LessonModule` when `type === "text" && lesson != null`, and falls back to
+  the untouched pre-INC-20 `body_fil`/`body_en` path otherwise — the
+  regression case is a real `if` branch, not just a hope. The pretest, when
+  `course_test_questions` exist, gates the module list entirely (matching
+  "gates the first module" literally, not just "offers" it); the posttest
+  appears once `course_progress.status === 'content_completed'`, else a
+  locked message.
+- **Data layer**: `src/app/courses/[id]/page.tsx` now fetches
+  `objectives_*`/`summary_*`/`lesson` on `course_modules`,
+  `course_module_visuals`, and — only when the `course_sessions` flag is on
+  — the BHW's own session (for `lesson_density`/`session_id`),
+  `course_test_questions`, and the BHW's own `course_test_attempts`. Feature
+  flags stay a UI/route-layer gate only, per this doc's own established
+  rule: no RPC checks `course_sessions` internally, the page simply doesn't
+  fetch session-shaped data when it's off, same as it doesn't exist.
+- **Real gap found and fixed**: `course_sessions` was seeded by INC-19's own
+  migration but was never added to `FeatureFlagKey`/`DEFAULT_FLAGS`
+  (`src/lib/flags/types.ts`, `get-flags.ts`) — meaning the flag could never
+  actually be turned on from the app's own flags console before this
+  session, regardless of the DB row. Fixed as part of this increment, since
+  INC-22 is the first thing that actually needs it to work.
+- **tokens.css gaps closed** (carried from INC-19a through INC-20/21, as
+  planned): `--color-success`/`warning`/`danger`/`info` now have dark-mode
+  variants (computed to clear 4.5:1 against the dark canvas — the unchanged
+  light-mode values ranged 2.94–3.35:1 in dark mode, a real WCAG failure,
+  not a style nit). `--color-primary`'s two incompatible uses were split:
+  it now stays fill-only; a new `--color-primary-text` (light mode = itself,
+  dark mode = the existing `--color-primary-display`, which already cleared
+  5.07:1 on the dark canvas) replaced the 3 existing `text-primary`/
+  `border-primary` call sites (`site-header.tsx`, `forum/page.tsx`,
+  `flipchart-viewer.tsx`); a new fixed `--color-on-primary` (not tied to
+  `--color-canvas`, which flips with theme and was the actual bug — a
+  button's fill color doesn't flip, so its text can't either) replaced
+  every existing `bg-primary`/`text-canvas` button-fill pairing app-wide (35
+  files) as well as the new training UI's own buttons. This was a
+  mechanical, same-string-pattern rename per file, not a design change.
+- **e2e**: `e2e/training-sessions.spec.ts` — two tests, wrapped in
+  `test.describe.serial` (this repo's `playwright.config.ts` sets
+  `fullyParallel: true`, and both tests flip the shared global
+  `course_sessions` flag on/off around themselves the same way
+  `ops-hardening.spec.ts` does for `kb_articles`; serial avoids the two
+  tests racing that shared flag). Fixture course has two modules — a plain
+  `text` module with no `lesson` (the explicit regression assertion) and a
+  `lesson` module authored with one section per tier plus one inline check —
+  and a 1-question `course_test_questions` bank. Covers: pretest gating the
+  module list; short-density showing only `core`; long-density showing all
+  three tiers; solo (no session) showing `normal` (core+standard); the
+  retrieval check giving feedback while `course_test_attempts` row count
+  stays unchanged before/after; full pretest→content→posttest completion
+  with both scores, the delta, and the correct `session_id` (short-density
+  BHW) vs. `null` (solo BHW) recorded on the real attempt rows. axe-core at
+  large font-scale/dark/high-contrast, and the §5.2 route-weight budget, are
+  **not** covered here — this repo's own `lighthouserc.js` explicitly scopes
+  the budget check to `/` only and names extending it to an authenticated
+  route "its own follow-up, not silently bolted on here"; that follow-up
+  still hasn't been taken, same as before this session, so it stays a named
+  gap rather than something quietly assumed done.
+- **Verified for real, at the data/RLS layer, against both live projects**
+  (pilot `ltzicxyefizxoqhfuuzc` and CI `bhw-connect-e2e` /
+  `qeryhxctxslhdkclifom`) via direct REST/SQL calls with real fixture rows:
+  `rpc_course_session_create`/`_enroll`/`rpc_course_test_submit` all behave
+  exactly as their migration-level guards specify; `course_test_questions_read`
+  correctly lets an in-scope BHW read a published course's bank;
+  `course_sessions_bhw_read` correctly resolves a BHW's own enrolled session
+  and no one else's. **Not verified live**: the actual React rendering in a
+  real browser against these RPCs. `npx playwright test
+  e2e/training-sessions.spec.ts` was attempted against the live
+  `bhw-connect-e2e` project from this session's sandbox and failed at the
+  login step — root-caused (not assumed) to the sandbox's own outbound
+  HTTPS proxy presenting a CA chain Chromium doesn't trust by default, which
+  breaks the browser's `auth.signInWithPassword` call specifically (a plain
+  `curl` to the same endpoint, and a standalone Playwright script with
+  `ignoreHTTPSErrors` explicitly set, both succeeded with the exact same
+  credentials against the exact same project — full login → `/change-password`
+  navigation confirmed working end-to-end with real data). This is a sandbox
+  networking artifact, not a code defect, and real CI has no such proxy in
+  front of it — but the full multi-actor `training-sessions.spec.ts` run
+  itself was not completed end-to-end here, so it still owes a real green
+  CI run before INC-23 starts, the same standing item every prior increment
+  in this doc has left for its own e2e coverage.
+- **Also applied, as prerequisites, not originally scoped to INC-22 but
+  needed to get here**: INC-19 and INC-20's migrations were deployed to the
+  pilot project for the first time (see the updated INC-21 Status note
+  above) and to `bhw-connect-e2e`; a `training.loader` admin account was
+  provisioned on the pilot project; Module 1 was actually loaded onto the
+  pilot project as a draft course via `training:load --apply`.
 
 ---
 

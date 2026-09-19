@@ -141,7 +141,7 @@ export function CategoryRow({ category, onChanged, onDeleted }: Props) {
                 type="button"
                 disabled={loading}
                 onClick={handleSave}
-                className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-canvas disabled:opacity-60"
+                className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-on-primary disabled:opacity-60"
               >
                 {t("saveAction")}
               </button>

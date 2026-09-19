@@ -110,7 +110,7 @@ export function CategoryForm({ onCreated }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="self-start rounded-md bg-primary px-4 py-2 font-medium text-canvas transition-opacity disabled:opacity-60"
+        className="self-start rounded-md bg-primary px-4 py-2 font-medium text-on-primary transition-opacity disabled:opacity-60"
       >
         {loading ? t("creating") : t("createSubmit")}
       </button>
