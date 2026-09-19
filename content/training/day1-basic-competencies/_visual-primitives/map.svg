@@ -1,0 +1,23 @@
+<svg viewBox="0 0 640 400">
+  <title>Map: a relationship graph — replace node labels and edge labels, add/remove nodes as needed</title>
+  <g>
+    <line x1="320" y1="90" x2="140" y2="250" stroke="currentColor" stroke-width="1.5" />
+    <text x="200" y="160" font-size="11">saklaw</text>
+
+    <line x1="320" y1="90" x2="500" y2="250" stroke="currentColor" stroke-width="1.5" />
+    <text x="440" y="160" font-size="11">saklaw</text>
+
+    <line x1="140" y1="270" x2="500" y2="270" stroke="currentColor" stroke-width="1.5" />
+    <text x="320" y="290" text-anchor="middle" font-size="11">kaugnayan</text>
+  </g>
+  <g>
+    <circle cx="320" cy="70" r="40" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="320" y="70" text-anchor="middle" dominant-baseline="middle" font-size="12">Node A</text>
+
+    <circle cx="140" cy="290" r="40" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="140" y="290" text-anchor="middle" dominant-baseline="middle" font-size="12">Node B</text>
+
+    <circle cx="500" cy="290" r="40" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="500" y="290" text-anchor="middle" dominant-baseline="middle" font-size="12">Node C</text>
+  </g>
+</svg>

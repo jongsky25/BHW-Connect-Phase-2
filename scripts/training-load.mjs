@@ -1,0 +1,426 @@
+#!/usr/bin/env node
+// Loads a content/training/<course>/ tree into a Supabase project: courses,
+// course_modules (incl. objectives_*/summary_*/lesson), course_module_facilitator_notes,
+// course_module_visuals, course_test_questions, and the qa-entries.json rows
+// into kb_categories/kb_entries — the dual-delivery §B promise
+// (docs/training-modules-plan.md). See content/training/README.md for the
+// full CLI/validation contract.
+//
+//   npm run training:load -- --project <ref> --org-unit "<org unit name>"
+//   npm run training:load -- --project <ref> --org-unit "<org unit name>" --apply
+//   npm run training:load -- --project <ref> --org-unit "<org unit name>" --apply --publish --owner <admin-username>
+//   npm run training:load -- --project <ref> --org-unit "<org unit name>" --modules 01-tungkulin-ng-bhw --apply
+//
+// Env: KB_LOADER_ANON_KEY (or NEXT_PUBLIC_SUPABASE_ANON_KEY),
+//      KB_LOADER_USERNAME, KB_LOADER_PASSWORD — an admin account on that project
+//      (same credentials scripts/kb-load.mjs uses).
+//
+// courses/course_modules/course_module_facilitator_notes/course_module_visuals/
+// course_test_questions have no RPC that covers the INC-20/INC-21 columns
+// (rpc_course_create's p_modules jsonb predates objectives_*/summary_*/lesson,
+// and no RPC exists for the two new child tables or course_test_questions), so
+// this loader writes those five tables directly through PostgREST under the
+// admin token's own "_admin_write"/"for all" RLS policies — the same
+// direct-write path scripts/kb-load.mjs already uses for kb_entries.content_id
+// (see its own header comment). This means course creation does not go
+// through rpc_course_create and so does not write a `course.created` audit
+// event; noted here as a known gap in the audit trail for loader-created
+// courses, not something either loader hides.
+
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
+import { DEFAULT_COURSE, loadTrainingCourse } from "./lib/training-content.mjs";
+import { createClient, projectUrl, requireEnv, selectAll, signIn } from "./lib/supabase-rest.mjs";
+
+function parseArgs(argv) {
+  const args = {
+    project: null,
+    orgUnit: null,
+    apply: false,
+    publish: false,
+    owner: null,
+    course: DEFAULT_COURSE,
+    modules: null,
+  };
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    if (arg === "--apply") args.apply = true;
+    else if (arg === "--dry-run") args.apply = false;
+    else if (arg === "--publish") args.publish = true;
+    else if (arg === "--owner") args.owner = argv[++i];
+    else if (arg === "--project") args.project = argv[++i];
+    else if (arg === "--org-unit") args.orgUnit = argv[++i];
+    else if (arg === "--course") args.course = argv[++i];
+    else if (arg === "--modules") args.modules = argv[++i].split(",").map((m) => m.trim());
+    else throw new Error(`unknown argument: ${arg}`);
+  }
+  if (!args.project) throw new Error("--project <supabase-project-ref> is required");
+  if (!args.orgUnit) throw new Error('--org-unit "<org unit name>" is required — see content/training/README.md');
+  if (args.publish && !args.owner) {
+    throw new Error("--publish requires --owner <username>: kb_entries_publish_requires_owner");
+  }
+  return args;
+}
+
+function contentDir(course) {
+  return path.resolve(path.dirname(new URL(import.meta.url).pathname), "..", "content", "training", course);
+}
+
+function lockPath(course, ref) {
+  return path.join(contentDir(course), "locks", `${ref}.json`);
+}
+
+function readLock(course, ref) {
+  const file = lockPath(course, ref);
+  if (!existsSync(file)) return { course: null, modules: {} };
+  return JSON.parse(readFileSync(file, "utf8"));
+}
+
+function writeLock(course, ref, lock) {
+  const file = lockPath(course, ref);
+  mkdirSync(path.dirname(file), { recursive: true });
+  writeFileSync(file, `${JSON.stringify(lock, null, 2)}\n`);
+}
+
+async function resolveUserId(client, username, { requireAdmin = false } = {}) {
+  const rows = await client.get(`users?select=id,role,status&username=eq.${encodeURIComponent(username)}`);
+  if (rows.length === 0) throw new Error(`no user named ${username} on this project`);
+  if (requireAdmin && rows[0].role !== "admin") throw new Error(`${username} is ${rows[0].role}, not admin`);
+  return rows[0].id;
+}
+
+async function resolveOrgUnit(client, name) {
+  const rows = await client.get(`org_units?select=id,name,level&name=eq.${encodeURIComponent(name)}`);
+  if (rows.length === 0) throw new Error(`no org unit named "${name}" on this project`);
+  if (rows.length > 1) throw new Error(`more than one org unit named "${name}" — org unit names are not guaranteed unique, pass a more specific one`);
+  return rows[0].id;
+}
+
+async function syncCourse(client, course, ctx, plan) {
+  const { orgUnitId, authorUserId, lock, apply } = ctx;
+  let courseId = lock.course;
+  if (courseId) {
+    const [existing] = await client.get(`courses?select=id&id=eq.${courseId}`);
+    if (!existing) courseId = null; // lock is stale
+  }
+
+  const payload = {
+    org_unit_id: orgUnitId,
+    title_fil: course.title_fil,
+    title_en: course.title_en,
+    description_fil: course.description_fil ?? "",
+    description_en: course.description_en ?? "",
+    quiz_passing_percent: course.quiz_passing_percent ?? 80,
+    quiz_max_attempts: course.quiz_max_attempts ?? 3,
+  };
+
+  if (courseId) {
+    plan.course.update += 1;
+    if (apply) await client.patch(`courses?id=eq.${courseId}`, payload);
+  } else {
+    plan.course.create += 1;
+    if (apply) {
+      const [row] = await client.insert("courses", [{ ...payload, author_user_id: authorUserId }]);
+      courseId = row.id;
+    }
+  }
+  if (courseId) lock.course = courseId;
+  return courseId;
+}
+
+async function syncModule(client, courseId, mod, ctx, plan) {
+  const { lock, apply } = ctx;
+  let moduleId = lock.modules[mod.id];
+  if (moduleId) {
+    const [existing] = await client.get(`course_modules?select=id&id=eq.${moduleId}`);
+    if (!existing) moduleId = null;
+  }
+
+  const payload = {
+    course_id: courseId,
+    position: mod.position,
+    type: "text",
+    title_fil: mod.title_fil,
+    title_en: mod.title_en,
+    body_fil: "", // lesson (below) supersedes the INC-12 body_* path
+    body_en: "",
+    video_url: null,
+    objectives_fil: mod.objectives_fil,
+    objectives_en: mod.objectives_en,
+    summary_fil: mod.summary_fil,
+    summary_en: mod.summary_en,
+    lesson: mod.lesson,
+  };
+
+  if (moduleId) {
+    plan.modules.update += 1;
+    if (apply) await client.patch(`course_modules?id=eq.${moduleId}`, payload);
+  } else {
+    plan.modules.create += 1;
+    if (apply) {
+      const [row] = await client.insert("course_modules", [payload]);
+      moduleId = row.id;
+    }
+  }
+  if (moduleId) lock.modules[mod.id] = moduleId;
+  return moduleId;
+}
+
+async function syncFacilitatorNotes(client, moduleId, notes, plan, apply) {
+  if (!moduleId) {
+    // dry run, first-ever load: the module doesn't exist yet, so there is
+    // nothing to look up — this can only be a create.
+    plan.facilitatorNotes.create += 1;
+    return;
+  }
+  const [existing] = await client.get(`course_module_facilitator_notes?select=id&module_id=eq.${moduleId}`);
+  const payload = {
+    notes_fil: notes.notes_fil,
+    notes_en: notes.notes_en,
+    competency_statement_fil: notes.competency_statement_fil,
+    competency_statement_en: notes.competency_statement_en,
+    observation_indicators: notes.observation_indicators,
+  };
+  if (existing) {
+    plan.facilitatorNotes.update += 1;
+    if (apply) await client.patch(`course_module_facilitator_notes?id=eq.${existing.id}`, payload);
+  } else {
+    plan.facilitatorNotes.create += 1;
+    if (apply) await client.insert("course_module_facilitator_notes", [{ ...payload, module_id: moduleId }]);
+  }
+}
+
+async function syncVisuals(client, moduleId, visuals, plan, apply) {
+  if (!moduleId) {
+    plan.visuals.create += visuals.length;
+    return;
+  }
+  const existingForModule = await client.get(`course_module_visuals?select=id,position&module_id=eq.${moduleId}`);
+  const byPosition = new Map(existingForModule.map((r) => [r.position, r.id]));
+
+  for (const v of visuals) {
+    const payload = {
+      position: v.position,
+      primitive: v.primitive,
+      svg_markup: v.primitive === "image" ? null : v.svg_markup,
+      image_url: v.primitive === "image" ? v.image_url ?? null : null,
+      caption_fil: v.caption_fil,
+      caption_en: v.caption_en,
+      alt_text_fil: v.alt_text_fil,
+      alt_text_en: v.alt_text_en,
+      tier: v.tier,
+    };
+    const existingId = byPosition.get(v.position);
+    if (existingId) {
+      plan.visuals.update += 1;
+      if (apply) await client.patch(`course_module_visuals?id=eq.${existingId}`, payload);
+    } else {
+      plan.visuals.create += 1;
+      if (apply) await client.insert("course_module_visuals", [{ ...payload, module_id: moduleId }]);
+    }
+  }
+}
+
+async function syncTestQuestions(client, courseId, questions, plan, apply) {
+  const existingForCourse = await client.get(`course_test_questions?select=id,position&course_id=eq.${courseId}`);
+  const byPosition = new Map(existingForCourse.map((r) => [r.position, r.id]));
+
+  await Promise.all(
+    questions.map((q, position) => {
+      const payload = {
+        position,
+        prompt_fil: q.prompt_fil,
+        prompt_en: q.prompt_en,
+        options: q.options,
+        correct_option_index: q.correct_option_index,
+      };
+      const existingId = byPosition.get(position);
+      if (existingId) {
+        plan.testQuestions.update += 1;
+        return apply ? client.patch(`course_test_questions?id=eq.${existingId}`, payload) : null;
+      }
+      plan.testQuestions.create += 1;
+      return apply ? client.insert("course_test_questions", [{ ...payload, course_id: courseId }]) : null;
+    }),
+  );
+}
+
+async function syncCategories(client, categories, lock, plan, apply) {
+  const existing = await selectAll(client, "kb_categories", "id,slug");
+  const bySlug = new Map(existing.map((row) => [row.slug, row.id]));
+  const categoryIds = {};
+
+  for (const category of categories) {
+    const found = bySlug.get(category.slug);
+    if (found) {
+      categoryIds[category.slug] = found;
+      plan.categories.skip += 1;
+      continue;
+    }
+    plan.categories.create += 1;
+    if (!apply) continue;
+    const [row] = await client.insert("kb_categories", [
+      {
+        slug: category.slug,
+        name_en: category.name_en,
+        name_fil: category.name_fil,
+        sort_order: category.sort_order,
+      },
+    ]);
+    categoryIds[category.slug] = row.id;
+    bySlug.set(category.slug, row.id);
+  }
+  return categoryIds;
+}
+
+async function syncQaEntries(client, content, categoryIds, ctx, plan) {
+  const { sources } = content;
+  const { publish, ownerId, modules } = ctx;
+
+  const existing = await selectAll(client, "kb_entries", "id,question_en,content_id");
+  const byContentId = new Map(existing.filter((row) => row.content_id).map((row) => [row.content_id, row.id]));
+  const byQuestion = new Map(existing.map((row) => [row.question_en, row.id]));
+  const knownIds = new Set(existing.map((row) => row.id));
+  const contentIdAlreadySet = new Set(byContentId.values());
+
+  for (const entry of content.qaEntries) {
+    if (modules && !modules.includes(entry.moduleId)) continue;
+
+    const answerEn = renderAnswer(entry, sources, "en");
+    const answerFil = renderAnswer(entry, sources, "fil");
+    const status = publish && entry.tier === "cited" ? "published" : "draft";
+    if (status === "draft" && entry.tier === "pending") plan.qaEntries.pendingDrafts += 1;
+
+    let entryId = byContentId.get(entry.id);
+    if (!entryId) entryId = byQuestion.get(entry.question_en);
+    if (entryId && !knownIds.has(entryId)) entryId = undefined;
+
+    if (entryId) {
+      plan.qaEntries.update += 1;
+      if (ctx.apply) {
+        await client.rpc("rpc_kb_entry_update", {
+          p_id: entryId,
+          p_category_id: categoryIds[entry.category],
+          p_question_fil: entry.question_fil,
+          p_question_en: entry.question_en,
+          p_answer_fil: answerFil,
+          p_answer_en: answerEn,
+          p_keywords: entry.keywords,
+          p_image_url: null,
+          p_owner_user_id: ownerId,
+          p_review_due_on: reviewDueOn(entry),
+          p_status: status,
+        });
+      }
+    } else {
+      plan.qaEntries.create += 1;
+      if (ctx.apply) {
+        const [row] = await client.rpc("rpc_kb_entry_create", {
+          p_category_id: categoryIds[entry.category],
+          p_question_fil: entry.question_fil,
+          p_question_en: entry.question_en,
+          p_answer_fil: answerFil,
+          p_answer_en: answerEn,
+          p_keywords: entry.keywords,
+          p_image_url: null,
+          p_owner_user_id: ownerId,
+          p_review_due_on: reviewDueOn(entry),
+          p_status: status,
+        });
+        entryId = row.entry_id;
+      }
+    }
+
+    if (entryId && ctx.apply && !contentIdAlreadySet.has(entryId)) {
+      await client.patch(`kb_entries?id=eq.${entryId}`, { content_id: entry.id });
+      plan.qaEntries.contentIdStamped += 1;
+    }
+  }
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  const content = loadTrainingCourse(args.course);
+
+  if (content.reviewFlags.length > 0) {
+    console.log(`\n${content.reviewFlags.length} review flag(s) — not blocking, but read these before publishing:`);
+    for (const flag of content.reviewFlags) console.log(`  - ${flag}`);
+  }
+
+  const url = projectUrl(args.project);
+  const anonKey = process.env.KB_LOADER_ANON_KEY ?? requireEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY");
+  const token = await signIn(
+    url,
+    anonKey,
+    requireEnv("KB_LOADER_USERNAME", "an admin account on the target project"),
+    requireEnv("KB_LOADER_PASSWORD"),
+  );
+  const client = createClient(url, anonKey, token);
+
+  const orgUnitId = await resolveOrgUnit(client, args.orgUnit);
+  const authorUserId = await resolveUserId(client, requireEnv("KB_LOADER_USERNAME"), { requireAdmin: true });
+  const ownerId = args.owner ? await resolveUserId(client, args.owner, { requireAdmin: true }) : null;
+  const lock = readLock(args.course, args.project);
+
+  const plan = {
+    course: { create: 0, update: 0 },
+    modules: { create: 0, update: 0 },
+    facilitatorNotes: { create: 0, update: 0 },
+    visuals: { create: 0, update: 0 },
+    testQuestions: { create: 0, update: 0 },
+    categories: { create: 0, skip: 0 },
+    qaEntries: { create: 0, update: 0, pendingDrafts: 0, contentIdStamped: 0 },
+  };
+
+  const ctx = { orgUnitId, authorUserId, lock, apply: args.apply, publish: args.publish, ownerId, modules: args.modules };
+
+  const courseId = await syncCourse(client, content.course, ctx, plan);
+
+  if (args.apply && args.publish && courseId) {
+    // rpc_course_set_status is the only path that writes courses.status —
+    // going around it (a direct PATCH) would skip the course.status_changed
+    // audit event and its own org-scope check.
+    await client.rpc("rpc_course_set_status", { p_course_id: courseId, p_status: "published" });
+  }
+
+  const modulesToLoad = args.modules ? content.modules.filter((m) => args.modules.includes(m.id)) : content.modules;
+  for (const mod of modulesToLoad) {
+    const moduleId = await syncModule(client, courseId, mod, ctx, plan);
+    await syncFacilitatorNotes(client, moduleId, mod.facilitatorNotes, plan, args.apply);
+    await syncVisuals(client, moduleId, mod.visuals, plan, args.apply);
+  }
+
+  if (courseId) {
+    await syncTestQuestions(client, courseId, content.testQuestions, plan, args.apply);
+  } else {
+    plan.testQuestions.create += content.testQuestions.length; // dry run, course not yet created
+  }
+
+  const categoryIds = await syncCategories(client, content.categories, lock, plan, args.apply);
+  await syncQaEntries(client, content, categoryIds, ctx, plan);
+
+  if (args.apply) writeLock(args.course, args.project, lock);
+
+  const mode = args.apply ? (args.publish ? "APPLY + PUBLISH" : "APPLY (drafts)") : "DRY RUN";
+  console.log(`\n${mode} — project ${args.project}, course ${args.course}, org unit "${args.orgUnit}"`);
+  if (args.publish) console.log("  course status       set to published (rpc_course_set_status)");
+  console.log(`  course              create ${plan.course.create}  update ${plan.course.update}`);
+  console.log(`  modules             create ${plan.modules.create}  update ${plan.modules.update}`);
+  console.log(`  facilitator notes   create ${plan.facilitatorNotes.create}  update ${plan.facilitatorNotes.update}`);
+  console.log(`  visuals             create ${plan.visuals.create}  update ${plan.visuals.update}`);
+  console.log(`  test questions      create ${plan.testQuestions.create}  update ${plan.testQuestions.update}`);
+  console.log(`  kb categories       create ${plan.categories.create}  existing ${plan.categories.skip}`);
+  console.log(
+    `  kb entries          create ${plan.qaEntries.create}  update ${plan.qaEntries.update}  content_id stamped ${plan.qaEntries.contentIdStamped}`,
+  );
+  if (args.publish) {
+    console.log(`  ${plan.qaEntries.pendingDrafts} kb entries held as drafts pending review`);
+  }
+  if (!args.apply) console.log("\n  nothing was written — re-run with --apply\n");
+}
+
+main().catch((error) => {
+  console.error(`\ntraining:load failed — ${error.message}\n`);
+  process.exit(1);
+});

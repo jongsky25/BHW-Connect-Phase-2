@@ -1,0 +1,83 @@
+{
+  "$comment": "Module 1 — The Roles of a BHW. qa-entries.json is the dual-delivery half of the module: same facts as lesson.*.md, shaped for chat retrieval per content/kb/README.md. See content/training/README.md for the field contract.",
+  "category": "day1-m1-tungkulin",
+  "entries": [
+    {
+      "id": "d1m1-what-is-bhw",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "What is a Barangay Health Worker (BHW)?",
+      "question_fil": "Ano ang isang Barangay Health Worker (BHW)?",
+      "answer_en": "A BHW is a person who voluntarily renders primary health care services in the community, after receiving proper training and accreditation from the local health board — as defined under RA 7883. A BHW does not work alone: the role runs through four relationships — the community, the midwife/RHU, barangay officials, and fellow BHWs.",
+      "answer_fil": "Ang BHW ay taong boluntaryong nagbibigay ng primary health care services sa komunidad, matapos makatanggap ng tamang pagsasanay at akreditasyon mula sa local health board — ayon sa RA 7883. Hindi nag-iisa ang BHW: dumadaan ang gawain sa apat na ugnayan — ang komunidad, ang midwife/RHU, ang barangay officials, at ang kapwa BHW.",
+      "keywords": ["bhw", "barangay health worker", "kahulugan", "definition", "ano ang bhw", "boluntaryo", "volunteer", "frontliner"],
+      "sources": ["ra-7883"]
+    },
+    {
+      "id": "d1m1-legal-basis",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "Where does a BHW's duty come from?",
+      "question_fil": "Saan nanggagaling ang tungkulin ng isang BHW?",
+      "answer_en": "It comes from law, not just goodwill: Republic Act 7883, the Barangay Health Workers' Benefits and Incentives Act of 1995, defines the BHW role and the Primary Health Care Approach it follows. A BHW's status becomes official only after training and accreditation by the local health board — being willing to help is not, by itself, enough to begin the work.",
+      "answer_fil": "Nanggagaling ito sa batas, hindi lang sa kagustuhan: ang Republic Act 7883, ang Barangay Health Workers' Benefits and Incentives Act of 1995, ang nagtatakda ng tungkulin ng BHW at ng Primary Health Care Approach na sinusunod nito. Opisyal na katayuan lamang ang BHW matapos ang pagsasanay at akreditasyon ng local health board — ang pagkagustong tumulong lamang ay hindi sapat para simulan ang gawain.",
+      "keywords": ["ra 7883", "legal basis", "batayan", "batas", "saan nanggagaling", "where does it come from", "primary health care approach"],
+      "sources": ["ra-7883"]
+    },
+    {
+      "id": "d1m1-accreditation",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "Who accredits a BHW before they can officially start their work?",
+      "question_fil": "Sino ang nagbibigay ng akreditasyon sa isang BHW bago siya opisyal na makapagsimula sa gawain?",
+      "answer_en": "The local health board, under RA 7883, accredits a BHW after they complete proper training. Neither the midwife nor a fellow BHW has the authority to grant this accreditation on their own — it is a formal step tied to the local health board.",
+      "answer_fil": "Ang local health board, ayon sa RA 7883, ang nagbibigay ng akreditasyon sa isang BHW matapos ang tamang pagsasanay. Wala ni ang midwife o ang kapwa BHW ng awtoridad na magbigay nito nang mag-isa — pormal na hakbang ito na nakatali sa local health board.",
+      "keywords": ["akreditasyon", "accreditation", "local health board", "sino nagbibigay", "who accredits", "opisyal", "official"],
+      "sources": ["ra-7883"]
+    },
+    {
+      "id": "d1m1-four-relationships",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "What are the four core relationships of a BHW?",
+      "question_fil": "Ano ang apat na pangunahing ugnayan ng isang BHW?",
+      "answer_en": "The community they serve, the midwife or Rural Health Unit (RHU) for referrals and clinical questions, barangay officials for support and accreditation, and fellow BHWs for shared experience and correct practice. Each relationship has a different purpose, and using the right one for the situation is what keeps barangay health service fast and reliable.",
+      "answer_fil": "Ang komunidad na kanilang pinagsisilbihan, ang midwife o Rural Health Unit (RHU) para sa referral at klinikal na tanong, ang barangay officials para sa suporta at akreditasyon, at ang kapwa BHW para sa pinagsamang karanasan at tamang gawi. Magkaiba ang layunin ng bawat ugnayan, at ang paggamit ng tama para sa sitwasyon ang gumagawa sa serbisyong pangkalusugan ng barangay na mabilis at maaasahan.",
+      "keywords": ["apat na ugnayan", "four relationships", "komunidad", "midwife", "rhu", "barangay officials", "kapwa bhw", "fellow bhw"],
+      "sources": ["ra-7883", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m1-who-for-clinical",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "Who should a BHW approach first for a clinical concern, like a resident's persistent cough?",
+      "question_fil": "Sino ang unang dapat lapitan ng BHW kapag klinikal ang alalahanin, tulad ng matagal nang ubo ng isang residente?",
+      "answer_en": "The midwife or the Rural Health Unit (RHU) — they are the technical support for anything clinical, such as deciding whether a symptom needs referral. Barangay officials and fellow BHWs are not the right first stop for a clinical question; going to them first only delays the referral.",
+      "answer_fil": "Ang midwife o ang Rural Health Unit (RHU) — sila ang teknikal na susuporta para sa anumang klinikal, tulad ng pagpapasya kung kailangan bang i-refer ang isang sintomas. Hindi tamang unang lapitan ang barangay officials o kapwa BHW para sa klinikal na tanong; naaantala lamang nito ang pag-refer kung sila muna ang lalapitan.",
+      "keywords": ["klinikal", "clinical", "sino lalapitan", "who to approach", "ubo", "cough", "referral", "midwife", "rhu"],
+      "sources": ["who-bhw-manual-ta", "ra-7883"]
+    },
+    {
+      "id": "d1m1-who-for-admin-support",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "Who should a BHW approach for administrative support, like transport or supplies?",
+      "question_fil": "Sino ang dapat lapitan ng BHW para sa suportang administratibo, tulad ng transportasyon o kagamitan?",
+      "answer_en": "Barangay officials — they are the partner for accreditation, facilities like the barangay health station, and administrative support such as arranging transport to a facility. This is a different relationship from the midwife/RHU, which is for clinical matters.",
+      "answer_fil": "Ang barangay officials — sila ang kasosyo para sa akreditasyon, mga pasilidad tulad ng barangay health station, at suportang administratibo tulad ng pag-aayos ng transportasyon papunta sa pasilidad. Iba ito sa ugnayan sa midwife/RHU, na para sa mga usaping klinikal.",
+      "keywords": ["barangay officials", "suportang administratibo", "administrative support", "transportasyon", "transport", "kagamitan", "supplies"],
+      "sources": ["ra-7883", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m1-role-of-peer-bhw",
+      "domain": "roles-relationships",
+      "tier": "cited",
+      "question_en": "Why does a BHW's relationship with fellow BHWs matter?",
+      "question_fil": "Bakit mahalaga ang ugnayan ng BHW sa kapwa niya BHW?",
+      "answer_en": "Fellow BHWs are the closest source for practical, everyday know-how — like how to file a first report, or how another BHW has handled a similar situation before. Not every question needs the midwife or barangay officials; some things a fellow BHW is simply the fastest and most fitting person to ask.",
+      "answer_fil": "Ang kapwa BHW ang pinakamalapit na sanggunian para sa pang-araw-araw at praktikal na kaalaman — tulad ng kung paano mag-file ng unang ulat, o kung paano hinarap ng ibang BHW ang katulad na sitwasyon noon. Hindi lahat ng tanong ay para sa midwife o barangay officials; may mga bagay na ang kapwa BHW mismo ang pinakamabilis at pinaka-angkop na tanungin.",
+      "keywords": ["kapwa bhw", "fellow bhw", "peer", "karanasan", "experience", "cascade", "bagong bhw", "new bhw"],
+      "sources": ["who-bhw-manual-ta"]
+    }
+  ]
+}

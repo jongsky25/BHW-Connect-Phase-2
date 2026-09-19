@@ -1,0 +1,15 @@
+<svg viewBox="0 0 640 400">
+  <title>Contrast: two panels — replace "Mali" / "Tama" and the two label lines</title>
+  <g>
+    <rect x="30" y="40" width="270" height="320" rx="10" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4" />
+    <text x="165" y="80" text-anchor="middle" font-size="16" font-weight="700">Mali</text>
+    <text x="165" y="220" text-anchor="middle" font-size="13">Ilagay dito ang</text>
+    <text x="165" y="240" text-anchor="middle" font-size="13">maling paraan</text>
+  </g>
+  <g>
+    <rect x="340" y="40" width="270" height="320" rx="10" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="475" y="80" text-anchor="middle" font-size="16" font-weight="700">Tama</text>
+    <text x="475" y="220" text-anchor="middle" font-size="13">Ilagay dito ang</text>
+    <text x="475" y="240" text-anchor="middle" font-size="13">tamang paraan</text>
+  </g>
+</svg>
