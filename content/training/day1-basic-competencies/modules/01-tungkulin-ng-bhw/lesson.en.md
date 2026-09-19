@@ -1,141 +1,316 @@
-## [scenario/core] The question at Aling Nena's house
+## [scenario/core] BHW Marites' morning
 
-Aling Nena, 34 years old and a mother of three, came to BHW Marites'
-house because her eldest child had had a persistent cough. It had been
-going on for three weeks, and Aling Nena was starting to worry.
+Eight in the morning. BHW Marites is out in the purok with a dengue
+tarpaulin under her arm. Fifteen mothers are sitting in front of her.
 
-As she listened, BHW Marites realized this wasn't just a question about a
-cough. She needed to work out who she should actually talk to about
-it — and it turned out more than one person was involved.
+Ten o'clock, she is at the barangay hall, talking to the health kagawad
+about Saturday's clean-up drive — she has brought the list of households
+with standing water in their back yards.
+
+Eleven o'clock, Aling Nena knocks. Her eldest has been coughing for
+three weeks. Marites takes his temperature, writes down what she finds,
+and walks them over to the midwife.
+
+One morning. Three different kinds of work. But only one role.
 
 :::takeaway
-A simple household question usually passes through more than one
-relationship before it's resolved.
+A BHW's role is not a single task — it is three distinct roles, often
+performed within one morning.
 :::
 
-## [concept/core] Four relationships of a BHW
+## [concept/core] The role is more than service delivery {m1.uhc.shift, m1.uhc.organizing, m1.competency}
 
-A BHW's work does not revolve around just one person. Four relationships
-shape the day-to-day work:
+Ask a BHW what their work is and the answer usually comes back in terms
+of services: weighing children, immunisation, referring people to the
+health centre. All of that is true — but it is not all of it.
 
-The **community** — families like Aling Nena's, where the first step of
-care happens. The **midwife or Rural Health Unit (RHU)** — the technical
-support the BHW turns to for referrals or clinical questions. The
-**barangay officials** — the partner for support, accreditation, and
-facilities like the barangay health station. And **fellow BHWs** — the
-peers who share experience and correct practice.
+The direction of the **Universal Health Care Act of 2019** is primary
+care and health promotion. That means the BHW has a bigger part to play
+in promoting health in their community — not only carrying a service to
+someone who has already fallen ill, but teaching and organising before
+the illness arrives at all.
 
-These are four distinct relationships, but they are always present
-together in an ordinary BHW day.
+This is also where the competency TESDA looks for in a BHW is rooted:
+obtaining and conveying relevant workplace information, performing
+duties according to instructions, and completing the documents the work
+requires.
+
+:::takeaway
+Under UHC a BHW is not only a deliverer of services — their bigger part
+is teaching and organising before illness arrives.
+:::
+
+:::check
+? Why is a BHW's role said to be wider under the UHC Act?
+- Because there are more patients to attend to each day
++ Because UHC's direction is primary care and health promotion, so the
+  role now includes teaching and organising, not only delivering
+  services
+- Because a BHW must now complete two years of college
+> Correct! UHC did not add to the patient count — it changed the
+  direction: from treating illness once it appears, to preventing it
+  before it does. That is where teaching and organising come in.
+:::
+
+## [concept/core] HEPO: the umbrella over three roles {m1.hepo.umbrella, m1.hepo.knowledge}
+
+Because of UHC, BHWs are designated barangay-level **Health Education
+and Promotion Officers (HEPOs)**. That is the umbrella — the name of the
+whole role.
+
+Under that umbrella sit the three roles named in RA 7883: **Health
+Educator**, **Community Organizer**, and **Health Service Provider**.
+These are not three separate jobs to choose between; they are three
+faces of one role, and an ordinary day usually calls for all three.
+
+One thing has to be in place before any of the three can work: enough
+knowledge of the priority health programmes and health problems in the
+barangay. You cannot teach what you do not know, and you cannot argue
+for something in a meeting that you do not understand.
 
 :::visual 1
 :::takeaway
-Four relationships run through the BHW — the role never works alone.
+HEPO is the umbrella; Health Educator, Community Organizer and Health
+Service Provider are its three faces — and all three rest on knowing the
+barangay's health programmes well enough.
 :::
 
-## [concept/core] Where the BHW's duty comes from
+## [concept/core] Health Educator {m1.role.educator, m1.educator.lifestages, m1.educator.allsectors}
 
-A BHW's status as a voluntary frontliner is not simply assumed — it is
-written into law. Under Republic Act 7883, a BHW "voluntarily renders
-primary health care services" in the community after receiving proper
-training and accreditation from the local health board. This is also
-where the Primary Health Care Approach as the guiding strategy comes
-from, and why the barangay health station exists as a service hub.
+When Marites stood in front of those fifteen mothers, she was a Health
+Educator.
 
-In other words: a BHW is not a "volunteer" in the everyday sense only —
-their duty has a legal basis, and that is also why an accreditation
-process exists before the work can begin.
+The Health Educator's role is to give people the knowledge to keep both
+their bodies **and** their surroundings healthy. Not illness alone —
+water, waste, mosquitoes, and the cleanliness of the place they live in.
+
+Nor is it a one-time conversation. The teaching is continuous, and it
+prepares people for the illnesses, accidents and risks that belong to
+each stage of life: an infant's risks are not a teenager's, which are
+not a pregnant woman's, which are not an elderly person's.
+
+And it is not aimed at one group. Every sector of the community — from
+the children through to the elderly — should be reached with
+information, knowledge and training.
 
 :::takeaway
-The BHW's duty has a legal basis — it is not just goodwill, it is part
-of RA 7883.
+The Health Educator does not wait for illness — they prepare every
+sector of the community for the risks that belong to each stage of life.
 :::
 
-:::check
-? Who accredits a BHW before they can officially begin their work?
-- The midwife they work alongside at the RHU
-+ The local health board, under RA 7883
-- The fellow BHW who trained them
-> Correct! Under RA 7883, the local health board grants accreditation
-  after proper training — that is where a BHW's official status comes
-  from.
+## [concept/core] Community Organizer {m1.role.organizer, m1.organizer.participation, m1.organizer.planningteam, m1.organizer.liph}
+
+When Marites talked to the kagawad about the clean-up drive, she was a
+Community Organizer.
+
+The Community Organizer keeps good relationships and open communication
+running in two directions: downward to community leaders and members,
+and upward to the city or municipal health staff. The BHW is the bridge
+between them.
+
+Relationships alone are not enough — something has to move. It is the
+Community Organizer's work to organise community members and encourage
+them to take part rather than watch.
+
+And the BHW has a seat at the table: they are a member of the **barangay
+planning team for health**. That is where they help community leaders
+understand the barangay's own health problems — and act on them. The
+city's or province's **Local Investment Plan for Health (LIPH)** also
+recognises the barangay's contribution to planning, so the BHW's voice
+reaches that far.
+
+:::takeaway
+The Community Organizer is the bridge between the community and the
+health staff — and holds a seat on the barangay planning team for
+health, not merely a task list.
 :::
 
-## [practice/core] Who is the right person to approach?
+## [concept/core] Health Service Provider {m1.role.provider, m1.provider.firstcontact, m1.provider.guide, m1.provider.initialservices, m1.provider.monitoring}
 
-Back to BHW Marites. She now knows the four relationships — the next
-step is choosing which one actually fits Aling Nena's situation.
+When Aling Nena knocked, Marites was a Health Service Provider.
 
-Not every situation calls for the same person. The right first question
-is: "What kind of support does this need — clinical, administrative, or
-the experience of a fellow BHW?" In Aling Nena's case, a three-week
-cough is a clinical concern — so the midwife or RHU is the right first
-stop, not the barangay captain.
+The BHW is part of the city or municipal **primary care team**, and the
+barangay midwife's partner in delivering health services.
+
+They are the **first contact** a need meets — the frontline. That does
+not mean treating everything themselves; it means being the first to
+know, and guiding the person to where their need can actually be met.
+
+There are simple, initial services they provide themselves:
+interviewing, taking vital signs, recording, making the household
+profile, and first aid.
+
+And care does not end with one visit. The BHW monitors the health of the
+people around them over time — this is what keeps care continuous when
+no doctor is present.
 
 :::visual 2
 :::takeaway
-Before acting, first work out what kind of support is needed — that is
-how you know who to actually approach.
+The Health Service Provider is the first contact a need meets — guiding
+where to go, giving initial services, and monitoring health afterwards.
 :::
 
 :::check
-? A resident has had a long-standing cough and wants to know if it
-  needs a referral. Who should BHW Marites approach first?
-- The barangay captain
-+ The midwife or RHU
-- A fellow BHW
-> Correct! This is a health concern that needs assessment, so the
-  midwife or RHU is the technical support to approach first — not
-  barangay officials, whose role is administrative support.
+? A mother comes to BHW Lito's house wanting to know where to get a
+  prenatal check-up. Which role is Lito performing when he guides her to
+  the right place?
+- Community Organizer, because he is coordinating with the health centre
++ Health Service Provider, because he is the first contact the need met
+  and he is guiding her where to go
+- Health Educator, because he is telling the mother something she did
+  not know
+> Correct! Guiding someone to where their health need can be met is part
+  of being the frontline — Health Service Provider. Had he taught the
+  whole purok why prenatal check-ups matter, that would have been Health
+  Educator.
 :::
 
-## [concept/core] Why each relationship matters
+## [concept/core] The records a BHW keeps {m1.provider.records, m1.provider.documents}
 
-If BHW Marites always went to the midwife for everything, everything
-would slow down — the midwife's time would fill up with things that
-were never clinical to begin with. If she never built a relationship
-with barangay officials, she would struggle to get support when she
-needed transport or supplies. If she never connected with fellow BHWs,
-she would stay alone with experiences that should have been learned
-together.
+There is a part of being a Health Service Provider that is easy to
+dismiss: the writing.
 
-Each relationship has its own purpose — and using the right one at the
-right moment is what makes barangay service fast and reliable.
+The BHW helps collect and safeguard the data and records from the
+households in their assigned area. This is not paperwork for its own
+sake — these data are what guide health programmes on where to go and
+what to prioritise.
 
+Four kinds of record are usually in a BHW's hands:
+
+The **household profile** — a picture of each household in their area.
+The **master list** — a roll of each group in the community (infants,
+children, pregnant women, people with serious illness, the elderly).
+The **registry** — the record of who has already been given a service.
+And the **government, DOH or local government forms** the health
+centre's nurse, midwife or doctor may assign to them.
+
+The question each record has to answer is not "did I fill it in?" but
+"where does this go, and what can they do with it?"
+
+:::visual 3
 :::takeaway
-Each relationship has its own purpose — using the right one at the
-right moment is what makes service fast and reliable.
+The record written today — household profile, master list, registry,
+form — is what tells the programme tomorrow where it needs to go.
 :::
 
-## [practice/standard] Try it: one more situation
-
-Now try it yourself. A newly accredited BHW in your barangay is
-confused about how to file their first report. Who is the most
-fitting person to approach — not the midwife, not barangay officials,
-but someone with the same experience as a BHW?
-
-Think of the answer before moving on: a more experienced fellow BHW is
-the easiest person to go to for this — not because it's a lesser
-concern, but because that is exactly where the everyday, practical
-know-how of the work actually lives.
-
-:::takeaway
-Not every question is for the midwife or barangay officials — some
-things a fellow BHW is simply the closest person to answer.
+:::check
+? What is the best reason a BHW's household profile needs to be accurate
+  and up to date?
+- Because the midwife asks for it during inspections
++ Because these data are what guide health programmes on where to go and
+  what to prioritise
+- Because the BHW needs it in order to receive their honorarium
+> Correct! The household profile is not paperwork for its own sake. It
+  is what tells the health centre and the programme where the need
+  actually is — so a wrong record means help pointed in the wrong
+  direction.
 :::
 
-## [contrast/deep] Wrong versus right: approaching the right person
+## [practice/core] Which role is this?
 
-**Wrong**: BHW Marites went straight to the barangay captain about Aling
-Nena's child's cough, because "he's the one I usually talk to anyway."
-The barangay captain's time was wasted on a clinical matter outside his
-role, and the proper referral was delayed.
+Try it. For each situation below, which role is being performed —
+Health Educator, Community Organizer, or Health Service Provider?
 
-**Right**: BHW Marites first recognized the clinical nature of the
-concern, approached the midwife/RHU, and only involved barangay
-officials once transport support to the facility was actually needed.
+First: you gather the mothers in the purok to explain how to avoid
+diarrhoea during the rainy season. Second: you take an elderly man's
+blood pressure and write it into his record. Third: you talk to the
+purok leader about setting up a weekly canal clean-up.
+
+Think of your answers before reading on: the first is **Health
+Educator** — you are teaching before anyone falls ill. The second is
+**Health Service Provider** — you are giving an initial service and
+recording data. The third is **Community Organizer** — you are bringing
+people together so they can act as one.
+
+Notice: not one of these is outside a BHW's work. The question is never
+whether it is your job, but which role it needs.
 
 :::takeaway
-Approaching the wrong person doesn't just waste time — it also delays
-the service that should have been quick.
+In any situation the question is not "is this my job?" but "which of my
+three roles does this need right now?"
+:::
+
+## [concept/standard] What skills each role needs {m1.skills.crossref}
+
+The three roles do not call for the same skills, and not all of those
+skills are taught in this module.
+
+The **Health Educator** needs health-promotion skill — how to deliver a
+message that sticks and gets acted on, not merely heard. That sits in
+the course's Core Competencies.
+
+The **Community Organizer** needs community-mobilisation skill — how to
+form a group, run a meeting, and get people moving. That sits in Common
+Competencies.
+
+The **Health Service Provider** needs skill in talking to people
+properly, measuring properly, and recording properly — which is the
+heart of the Effective Communication module and of Chapter III.
+
+This module teaches **what** the three roles are. Other modules teach
+**how** to do each of them well.
+
+:::takeaway
+This module names the three roles; the skill each one takes is taught
+elsewhere in the course.
+:::
+
+## [practice/standard] In your own barangay
+
+Now your own barangay.
+
+Think of one concrete thing from the past month — not an example from
+this module, but something that actually happened to you — for each
+role. One time you were a Health Educator. One time you were a Community
+Organizer. One time you were a Health Service Provider.
+
+If one role is hard to find an example for, that is not a sign it is not
+your work. Usually it is the role least used in your barangay so far —
+and usually it is also the largest gap you are in a position to fill.
+
+:::takeaway
+The role you find hardest to find an example of is often the one with
+the biggest gap in your barangay.
+:::
+
+## [concept/deep] The BHW in barangay planning {m1.organizer.liph}
+
+There is a level of being a Community Organizer that is not always
+visible: planning.
+
+Because of the UHC Act, each city's or province's **Local Investment
+Plan for Health (LIPH)** recognises how much the barangays and
+municipalities contribute to planning health activities.
+
+That means BHWs are expected to participate and contribute to local
+health planning — not only to carry out a plan handed down from above.
+
+This is the largest change in the BHW's role under UHC: once an
+implementer, now also a voice in deciding what should be done.
+
+:::takeaway
+Under UHC and the LIPH, the BHW has a voice in planning the barangay's
+health — no longer only carrying out someone else's plan.
+:::
+
+## [contrast/deep] Wrong and right: "that's not my job"
+
+**Wrong**: BHW Ramon noticed that three households in his purok had
+uncovered water drums. He mentioned it to no one — "that's waste and
+water, that's for the sanitary inspector." A month later, three dengue
+cases came out of that same purok.
+
+**Right**: Ramon recorded the three households in his household profile
+(Health Service Provider), visited them to explain why standing water is
+dangerous (Health Educator), and brought the list to the kagawad to be
+included in the clean-up drive (Community Organizer). One observation,
+three roles.
+
+The difference is not diligence. The difference is that the second time,
+Ramon saw that something he had noticed was the business of all three of
+his roles — not of none of them.
+
+:::takeaway
+"That's not my job" is usually not laziness but too narrow a reading of
+one's own role — one thing noticed is usually the business of all three.
 :::

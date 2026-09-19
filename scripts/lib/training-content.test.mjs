@@ -60,7 +60,7 @@ function baseFiles() {
         "This training showed how the three examples connect into one overall process of helping a family and their barangay.",
     },
     [`modules/${MODULE}/lesson.fil.md`]: [
-      "## [concept/core] Isang seksyon",
+      "## [concept/core] Isang seksyon {f.base}",
       "",
       "Ito ang nilalaman ng seksyon na ito.",
       "",
@@ -71,7 +71,7 @@ function baseFiles() {
       "",
     ].join("\n"),
     [`modules/${MODULE}/lesson.en.md`]: [
-      "## [concept/core] One section",
+      "## [concept/core] One section {f.base}",
       "",
       "This is the content of this section.",
       "",
@@ -81,6 +81,9 @@ function baseFiles() {
       ":::",
       "",
     ].join("\n"),
+    [`modules/${MODULE}/coverage.json`]: {
+      concepts: [{ id: "f.base", statement_en: "The one concept the fixture section delivers.", source: "deck slide 1" }],
+    },
     [`modules/${MODULE}/facilitator-notes.fil.md`]: "# Facilitator notes\n\nTimimg, script, atbp.\n",
     [`modules/${MODULE}/facilitator-notes.en.md`]: "# Facilitator notes\n\nTiming, script, etc.\n",
     [`modules/${MODULE}/competency.json`]: {
@@ -390,6 +393,136 @@ describe("loadTrainingCourse", () => {
       m.objectives_en.push("The BHW can explain xenotransplantation.");
     });
     expect(content.reviewFlags.some((f) => f.includes("xenotransplantation"))).toBe(true);
+  });
+});
+
+describe("§C.2 coverage", () => {
+  // The fixture has one core section; these add a coverage.json to it.
+  const withCoverage = (files, concepts, headingFil, headingEn) => {
+    files[`modules/${MODULE}/coverage.json`] = { concepts };
+    files[`modules/${MODULE}/lesson.fil.md`] = files[`modules/${MODULE}/lesson.fil.md`].replace(/^## \[.*$/m, headingFil);
+    files[`modules/${MODULE}/lesson.en.md`] = files[`modules/${MODULE}/lesson.en.md`].replace(/^## \[.*$/m, headingEn);
+  };
+  const concept = (id) => ({ id, statement_en: `Statement for ${id}`, source: "deck slide 1" });
+
+  it("accepts a module whose concepts are all delivered by a core section", () => {
+    const content = loadWith((files) =>
+      withCoverage(
+        files,
+        [concept("f.one"), concept("f.two")],
+        "## [concept/core] Isang seksyon {f.one, f.two}",
+        "## [concept/core] One section {f.one, f.two}",
+      ),
+    );
+    expect(content.modules[0].lesson.sections[0].concept_ids).toEqual(["f.one", "f.two"]);
+  });
+
+  it("strips the coverage marker from the rendered heading", () => {
+    const content = loadWith((files) =>
+      withCoverage(files, [concept("f.one")], "## [concept/core] Isang seksyon {f.one}", "## [concept/core] One section {f.one}"),
+    );
+    expect(content.modules[0].lesson.sections[0].heading_fil).toBe("Isang seksyon");
+    expect(content.modules[0].lesson.sections[0].heading_en).toBe("One section");
+  });
+
+  it("rejects a concept no section delivers", () => {
+    expect(() =>
+      loadWith((files) =>
+        withCoverage(
+          files,
+          [concept("f.one"), concept("f.undelivered")],
+          "## [concept/core] Isang seksyon {f.one}",
+          "## [concept/core] One section {f.one}",
+        ),
+      ),
+    ).toThrow(/f\.undelivered.*not delivered by any lesson section/s);
+  });
+
+  it("accepts an undelivered concept that is excused with redundant_with", () => {
+    const content = loadWith((files) =>
+      withCoverage(
+        files,
+        [concept("f.one"), { ...concept("f.filler"), redundant_with: "An unrelated interstitial slide." }],
+        "## [concept/core] Isang seksyon {f.one}",
+        "## [concept/core] One section {f.one}",
+      ),
+    );
+    // The excused concept is not delivered, so it must not appear on any section.
+    expect(content.modules[0].lesson.sections[0].concept_ids).toEqual(["f.one"]);
+  });
+
+  it("rejects a concept only a deep-tier section delivers", () => {
+    expect(() =>
+      loadWith((files) =>
+        withCoverage(
+          files,
+          [concept("f.one")],
+          "## [concept/deep] Isang seksyon {f.one}",
+          "## [concept/deep] One section {f.one}",
+        ),
+      ),
+    ).toThrow(/f\.one.*only delivered by a deep-tier section/s);
+  });
+
+  it("rejects a marker naming a concept id coverage.json does not declare", () => {
+    expect(() =>
+      loadWith((files) =>
+        withCoverage(
+          files,
+          [concept("f.one")],
+          "## [concept/core] Isang seksyon {f.one, f.typo}",
+          "## [concept/core] One section {f.one, f.typo}",
+        ),
+      ),
+    ).toThrow(/marks unknown concept id "f\.typo"/);
+  });
+
+  it("rejects coverage markers that differ between languages", () => {
+    expect(() =>
+      loadWith((files) =>
+        withCoverage(
+          files,
+          [concept("f.one"), concept("f.two")],
+          "## [concept/core] Isang seksyon {f.one, f.two}",
+          "## [concept/core] One section {f.one}",
+        ),
+      ),
+    ).toThrow(/coverage markers differ between languages/);
+  });
+
+  it("rejects a duplicate concept id in coverage.json", () => {
+    expect(() =>
+      loadWith((files) =>
+        withCoverage(
+          files,
+          [concept("f.one"), concept("f.one")],
+          "## [concept/core] Isang seksyon {f.one}",
+          "## [concept/core] One section {f.one}",
+        ),
+      ),
+    ).toThrow(/duplicate id "f\.one"/);
+  });
+
+  it("rejects a concept declared without a source citation", () => {
+    expect(() =>
+      loadWith((files) =>
+        withCoverage(
+          files,
+          [{ id: "f.one", statement_en: "No citation." }],
+          "## [concept/core] Isang seksyon {f.one}",
+          "## [concept/core] One section {f.one}",
+        ),
+      ),
+    ).toThrow(/missing source citation/);
+  });
+
+  it("flags — but does not reject — a module with no coverage.json at all", () => {
+    const content = loadWith((files) => {
+      delete files[`modules/${MODULE}/coverage.json`];
+      files[`modules/${MODULE}/lesson.fil.md`] = files[`modules/${MODULE}/lesson.fil.md`].replace(" {f.base}", "");
+      files[`modules/${MODULE}/lesson.en.md`] = files[`modules/${MODULE}/lesson.en.md`].replace(" {f.base}", "");
+    });
+    expect(content.reviewFlags.some((f) => f.includes("no coverage.json"))).toBe(true);
   });
 });
 

@@ -1,5 +1,5 @@
 {
-  "$comment": "kb_categories + domains for this course's qa-entries.json, a separate corpus from content/kb/hhp-ncd/categories.json (see content/kb/README.md's corpus model). One category per module, sort_order starting at 100 to stay clear of the hhp-ncd (10-15) and cesr ranges. domains map to §C's BHS NC II competency groupings, not HHP+'s clinical domains.",
+  "$comment": "kb_categories + domains for this course's qa-entries.json, a separate corpus from content/kb/hhp-ncd/categories.json (see content/kb/README.md's corpus model). One category per module, sort_order starting at 100 to stay clear of the hhp-ncd (10-15) and cesr ranges. Nine modules, matching docs/training-modules-plan.md §C — one per TESDA basic competency. domains map to §C's competency groupings, not HHP+'s clinical domains.",
   "categories": [
     {
       "slug": "day1-m1-tungkulin",
@@ -12,50 +12,57 @@
       "slug": "day1-m2-uhc",
       "sort_order": 101,
       "module": 2,
-      "name_en": "Module 2 — The UHC Act and the BHW",
-      "name_fil": "Modyul 2 — Ang UHC Act at ang BHW"
+      "name_en": "Module 2 — The UHC Act of 2019",
+      "name_fil": "Modyul 2 — Ang UHC Act of 2019"
     },
     {
-      "slug": "day1-m3-ra7883",
+      "slug": "day1-m3-polisiya-bhs",
       "sort_order": 102,
       "module": 3,
-      "name_en": "Module 3 — RA 7883: Benefits and Rights",
-      "name_fil": "Modyul 3 — RA 7883: Benepisyo at Karapatan"
+      "name_en": "Module 3 — Policies at the Barangay Health Station",
+      "name_fil": "Modyul 3 — Mga Polisiya sa Barangay Health Station"
     },
     {
-      "slug": "day1-m4-barangay",
+      "slug": "day1-m4-ra7883",
       "sort_order": 103,
       "module": 4,
-      "name_en": "Module 4 — The BHW and Their Barangay",
-      "name_fil": "Modyul 4 — Ang BHW at ang Kanyang Barangay"
+      "name_en": "Module 4 — RA 7883: Benefits, Rights, Accreditation",
+      "name_fil": "Modyul 4 — RA 7883: Benepisyo, Karapatan, Akreditasyon"
     },
     {
-      "slug": "day1-m5-teamwork",
+      "slug": "day1-m5-barangay",
       "sort_order": 104,
       "module": 5,
-      "name_en": "Module 5 — Team Work",
-      "name_fil": "Modyul 5 — Team Work"
+      "name_en": "Module 5 — The BHW and Their Barangay",
+      "name_fil": "Modyul 5 — Ang BHW at ang Kanyang Barangay"
     },
     {
-      "slug": "day1-m6-self-management",
+      "slug": "day1-m6-komunikasyon",
       "sort_order": 105,
       "module": 6,
-      "name_en": "Module 6 — Self-Management",
-      "name_fil": "Modyul 6 — Self-Management"
+      "name_en": "Module 6 — Effective Communication",
+      "name_fil": "Modyul 6 — Epektibong Komunikasyon"
     },
     {
-      "slug": "day1-m7-komunikasyon",
+      "slug": "day1-m7-problema",
       "sort_order": 106,
       "module": 7,
-      "name_en": "Module 7 — Effective Communication",
-      "name_fil": "Modyul 7 — Epektibong Komunikasyon"
+      "name_en": "Module 7 — Identifying Problems and Planning Solutions",
+      "name_fil": "Modyul 7 — Pagkilala sa Problema at Pagpaplano ng Solusyon"
     },
     {
-      "slug": "day1-m8-problema-osh",
+      "slug": "day1-m8-osh",
       "sort_order": 107,
       "module": 8,
-      "name_en": "Module 8 — Problem Identification and OSH",
-      "name_fil": "Modyul 8 — Pagkilala sa Problema at OSH"
+      "name_en": "Module 8 — Occupational Safety and Health",
+      "name_fil": "Modyul 8 — Occupational Safety and Health"
+    },
+    {
+      "slug": "day1-m9-sustainable",
+      "sort_order": 108,
+      "module": 9,
+      "name_en": "Module 9 — Efficient and Sustainable Practices at Work",
+      "name_fil": "Modyul 9 — Mabisang Gawi sa Lugar ng Trabaho"
     }
   ],
   "domains": {

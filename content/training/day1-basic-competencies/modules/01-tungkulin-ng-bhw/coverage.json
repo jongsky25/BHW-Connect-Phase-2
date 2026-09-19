@@ -1,0 +1,143 @@
+{
+  "$comment": "§C.2 of docs/training-modules-plan.md. Every concept Module 1's sources oblige it to teach, with a citation into docs/source-material/day1-basic-competencies/. The loader rejects any concept not delivered by a core- or standard-tier lesson section unless 'redundant_with' explains why it is deliberately not delivered. Facilitator-only material (the deck's Learning Activity / Demonstration / Practical Application slides) is not listed here — it belongs to facilitator-notes.*.md, which is a separate track, not a coverage gap.",
+  "concepts": [
+    {
+      "id": "m1.competency",
+      "statement_en": "Module 1 maps to the TESDA BHS NC II competency 'Participate in workplace communication', whose outcomes are: obtain and convey relevant workplace information, perform duties following workplace instructions, and complete relevant work-related documents.",
+      "source": "deck slide 6; facilitator-guide PDF 19 (competency table), PDF 20",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.uhc.shift",
+      "statement_en": "Asked to name their tasks, BHWs answer in terms of health service delivery; the UHC Act's direction is primary care and health promotion, so the role is wider than service delivery alone.",
+      "source": "deck slides 7-8; facilitator-guide PDF 20 items 4-5",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.uhc.organizing",
+      "statement_en": "Under UHC the BHW's roles as community organizer and health educator are emphasised, not only their service-delivery role.",
+      "source": "deck slides 8, 13; facilitator-guide PDF 20 items 6, 8",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.hepo.umbrella",
+      "statement_en": "Under the UHC Act, BHWs are designated barangay-level Health Education and Promotion Officers (HEPOs); the three RA 7883 roles sit under that designation.",
+      "source": "deck slide 9; reference-manual PDF 11; facilitator-guide PDF 5",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.hepo.knowledge",
+      "statement_en": "Each BHW needs sufficient knowledge of the priority health programmes and health problems in order to share them with their barangay.",
+      "source": "deck slide 9; reference-manual PDF 11",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.role.educator",
+      "statement_en": "Health Educator: gives people the knowledge to keep their bodies and their environment healthy.",
+      "source": "deck slide 10; reference-manual PDF 11",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.educator.lifestages",
+      "statement_en": "The Health Educator keeps teaching people about their health and prepares them for illnesses, accidents and risk factors at each stage of life.",
+      "source": "deck slide 10; reference-manual PDF 11-12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.educator.allsectors",
+      "statement_en": "The Health Educator reaches every sector of the community — children through to the elderly — with information, knowledge and training.",
+      "source": "deck slide 10; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.role.organizer",
+      "statement_en": "Community Organizer: maintains good relationships and communication with community leaders and members, and with city/municipal health staff.",
+      "source": "deck slide 11; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.organizer.participation",
+      "statement_en": "The Community Organizer organises community members and encourages their participation in health activities and advocacy.",
+      "source": "deck slide 11; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.organizer.planningteam",
+      "statement_en": "The BHW is a member of the barangay planning team for health, helping community leaders understand and act on the barangay's own health problems.",
+      "source": "deck slide 11; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.organizer.liph",
+      "statement_en": "Under UHC, each city's or province's Local Investment Plan for Health (LIPH) recognises the barangay's contribution to health planning, and BHWs are expected to participate in that planning.",
+      "source": "reference-manual PDF 12 (not in the deck)",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.role.provider",
+      "statement_en": "Health Service Provider: part of the city/municipal primary care team, assisting the barangay midwife in delivering health services.",
+      "source": "deck slide 12; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.provider.firstcontact",
+      "statement_en": "BHWs are the community's first contact and frontline health workers when a health service is needed.",
+      "source": "deck slide 12; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.provider.guide",
+      "statement_en": "The Health Service Provider guides people on where to go to meet their health needs.",
+      "source": "deck slide 12; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.provider.initialservices",
+      "statement_en": "BHWs deliver simple initial services themselves: interviewing, taking vital signs, recording, making the household profile, and first aid.",
+      "source": "reference-manual PDF 12 (not in the deck)",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.provider.monitoring",
+      "statement_en": "BHWs continue care for their community by monitoring people's health over time.",
+      "source": "deck slide 13; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.provider.records",
+      "statement_en": "BHWs help collect and safeguard data and records from the households in their assigned area, and these data guide health programmes.",
+      "source": "deck slide 13; reference-manual PDF 12",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.provider.documents",
+      "statement_en": "The BHW's documentation duties: household profiles, master lists of the different groups in the community, registries of people given services, and other government/DOH/LGU forms assigned by the nurse, midwife or doctor.",
+      "source": "deck slide 13; reference-manual PDF 12; facilitator-guide PDF 20 (TESDA outcome 'complete relevant work-related documents')",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.skills.crossref",
+      "statement_en": "The skills each role needs are taught elsewhere in the curriculum: health-promotion skills under Core Competencies, community-organising skills under Community Mobilization in Common Competencies.",
+      "source": "facilitator-guide PDF 20 item 7",
+      "redundant_with": null
+    },
+    {
+      "id": "m1.outline.repeat",
+      "statement_en": "The chapter outline listing all eight Day 1 topics.",
+      "source": "deck slides 4, 14, 29, 46, 52, 56, 64, 73",
+      "redundant_with": "A navigation slide repeated eight times in the deck, carrying no teaching content. The app's own course and module navigation replaces it."
+    },
+    {
+      "id": "m1.filler.heels",
+      "statement_en": "\"Health Facts #48\" slide: wearing high heels improves shopping decisions.",
+      "source": "deck slide 45 (sourced from posthood.com / Journal of Marketing Research)",
+      "redundant_with": "Not DOH content and not connected to any BHS NC II competency — an interstitial in the live deck. Deliberately not delivered."
+    },
+    {
+      "id": "m1.filler.hydration",
+      "statement_en": "\"Health Facts #08\" slide: dehydration harms mood, memory and brain performance.",
+      "source": "deck slide 73 (sourced from healthline.com)",
+      "redundant_with": "Same as m1.filler.heels — an interstitial, not curriculum. The hydration material that does belong to this course sits in Priority Area 1 of Chapter III, which is out of Day 1's scope."
+    }
+  ]
+}

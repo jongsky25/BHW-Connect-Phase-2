@@ -17,6 +17,7 @@ Manual is the BHW's own book and holds the substance.
 | [day1-part1-presentation.md](./day1-part1-presentation.md) | `DAY 1 - PART 1 PRESENTATION.pdf` ([Drive](https://drive.google.com/file/d/1ZDIJiTltEzJVFcy-XSA0NivWNvfAKfhY/view)) | 78 slides | **The basis and starting point of the course.** This is the deck the user delivers; the course follows its topic order and scope. |
 | [facilitator-guide.md](./facilitator-guide.md) | `FACILITATOR GUIDE-Oct11 (1).pdf` — *Barangay Health Workers' Facilitator's Manual, 2022* ([Drive](https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view)) | 126 | **Normative for competency mapping and training hours.** Supplements the deck with the TESDA competency table, per-topic training recommendations, review questions, and external references. |
 | [bhw-reference-manual.md](./bhw-reference-manual.md) | `BHW REFERENCE MANUAL.pdf` — *Barangay Health Workers' Reference Manual, 2022* (DOH BLHSD with WHO) ([Drive](https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view)) | 150 | **The substance behind the deck's bullets.** Full prose for every topic, plus worked examples (Five Why's, prioritization) and the occupational hazards table. |
+| [kwento-ni-rosario.md](./kwento-ni-rosario.md) | *Leadership Journey: Learning Journal and Workbook*, Zuellig Family Foundation, pp. 48–51 | 4 of 77 | **The one Day 1 exercise that is not a DOH document.** The Facilitator's Manual sends trainees to it for social determinants and root-cause analysis. Belongs to Module 7, referenced by Module 6. That file also records two things the DOH manual gets wrong about it. |
 
 Each file is split by `## Page N` / `## Slide N` headings matching the original PDF page numbers, so
 a citation can point at an exact page.
@@ -104,10 +105,9 @@ Content the two manuals add that the 78 slides omit, and that a "full breadth" c
 - **The Facilitator's Manual contradicts itself on Tungkulin's hours** — the competency table says
   6, the narrative on its p.13 (PDF 20) says "at least 3 hours". Don't cite either without noting
   the other.
-- **"Kwento ni Rosario" is not in any of these files.** It is an external Zuellig Family Foundation
-  workbook, cited at PDF 28 of the Facilitator's Manual:
-  https://zuelligfoundation.org/wp-content/uploads/2016/07/HLMP-Module-1-Workbook.compressed.pdf —
-  it is referenced by both the Komunikasyon and Problem-solving topics.
+- **"Kwento ni Rosario" is in a fourth file**, [kwento-ni-rosario.md](./kwento-ni-rosario.md), since
+  it is not a DOH document. Note that the URL the Facilitator's Manual cites for it (on
+  `zuelligfoundation.org`) is dead; the working host is `zuelligfoundation.com` at the same path.
 - **Two "Health Facts" slides in the deck are unrelated filler** (slides 45 and 73 — high heels and
   shopping, hydration and brain function), sourced from posthood.com and healthline.com. They are
   not DOH content and are not part of any competency.

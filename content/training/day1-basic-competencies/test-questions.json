@@ -1,71 +1,104 @@
 {
-  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Grows as modules 2-8 are authored (INC-24/25) — for now it covers Module 1's four objectives only.",
+  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Grows as modules 2-9 are authored (INC-24/25) — for now it covers Module 1's four objectives only.",
   "questions": [
     {
-      "prompt_fil": "Alin sa mga sumusunod ang HINDI kabilang sa apat na pangunahing ugnayan ng isang BHW?",
-      "prompt_en": "Which of the following is NOT one of a BHW's four core relationships?",
+      "prompt_fil": "Bakit masasabing mas malawak ang tungkulin ng BHW sa ilalim ng UHC Act of 2019?",
+      "prompt_en": "Why is a BHW's role said to be wider under the UHC Act of 2019?",
       "options": [
-        { "fil": "Komunidad", "en": "Community" },
-        { "fil": "Midwife o RHU", "en": "Midwife or RHU" },
-        { "fil": "Barangay Officials", "en": "Barangay Officials" },
-        { "fil": "Punong Bayan (Mayor)", "en": "Municipal Mayor" }
-      ],
-      "correct_option_index": 3
-    },
-    {
-      "prompt_fil": "Anong batas ang nagtatakda ng tungkulin ng BHW bilang boluntaryong frontliner?",
-      "prompt_en": "Which law establishes the BHW's duty as a voluntary frontliner?",
-      "options": [
-        { "fil": "RA 7883", "en": "RA 7883" },
-        { "fil": "RA 11223", "en": "RA 11223" },
-        { "fil": "RA 9165", "en": "RA 9165" },
-        { "fil": "PD 1096", "en": "PD 1096" }
-      ],
-      "correct_option_index": 0
-    },
-    {
-      "prompt_fil": "Sino ang nagbibigay ng akreditasyon sa isang BHW bago siya opisyal na makapagsimula sa gawain?",
-      "prompt_en": "Who accredits a BHW before they can officially begin their work?",
-      "options": [
-        { "fil": "Ang midwife", "en": "The midwife" },
-        { "fil": "Ang local health board", "en": "The local health board" },
-        { "fil": "Ang punong barangay", "en": "The barangay captain" },
-        { "fil": "Ang DOH central office", "en": "The DOH central office" }
+        { "fil": "Dahil mas marami nang pasyenteng dapat asikasuhin araw-araw", "en": "Because there are more patients to attend to each day" },
+        { "fil": "Dahil ang direksyon ng UHC ay primary care at health promotion, kaya kasama na ang pagtuturo at pag-oorganisa", "en": "Because UHC's direction is primary care and health promotion, so teaching and organising are now included" },
+        { "fil": "Dahil kailangan nang makatapos ng kolehiyo ang bawat BHW", "en": "Because every BHW must now finish college" },
+        { "fil": "Dahil ang BHW na ang humahalili sa midwife sa barangay", "en": "Because the BHW now replaces the midwife in the barangay" }
       ],
       "correct_option_index": 1
     },
     {
-      "prompt_fil": "May residenteng may matagal nang ubo at gustong malaman kung dapat bang i-refer. Sino ang unang dapat lapitan?",
-      "prompt_en": "A resident has had a long-standing cough and wants to know if it needs a referral. Who should be approached first?",
+      "prompt_fil": "Ano ang ibig sabihin ng HEPO, ang itinalagang papel ng BHW sa ilalim ng UHC?",
+      "prompt_en": "What does HEPO — the BHW's designated role under UHC — stand for?",
       "options": [
-        { "fil": "Ang barangay captain", "en": "The barangay captain" },
-        { "fil": "Ang midwife o RHU", "en": "The midwife or RHU" },
-        { "fil": "Ang kapwa BHW", "en": "A fellow BHW" },
-        { "fil": "Ang DOH regional office", "en": "The DOH regional office" }
-      ],
-      "correct_option_index": 1
-    },
-    {
-      "prompt_fil": "May bagong BHW na nalilito kung paano mag-file ng unang ulat. Sino ang pinaka-angkop na lapitan?",
-      "prompt_en": "A newly accredited BHW is confused about how to file their first report. Who is the most fitting person to approach?",
-      "options": [
-        { "fil": "Ang midwife", "en": "The midwife" },
-        { "fil": "Ang barangay officials", "en": "Barangay officials" },
-        { "fil": "Ang mas matagal nang kapwa BHW", "en": "A more experienced fellow BHW" },
-        { "fil": "Ang DOH central office", "en": "The DOH central office" }
+        { "fil": "Health Emergency Preparedness Officer", "en": "Health Emergency Preparedness Officer" },
+        { "fil": "Household Enumeration and Profiling Officer", "en": "Household Enumeration and Profiling Officer" },
+        { "fil": "Health Education and Promotion Officer", "en": "Health Education and Promotion Officer" },
+        { "fil": "Health Extension and Primary-care Officer", "en": "Health Extension and Primary-care Officer" }
       ],
       "correct_option_index": 2
     },
     {
-      "prompt_fil": "Ano ang mangyayari kung palaging midwife ang lalapitan ng BHW kahit hindi klinikal ang usapin?",
-      "prompt_en": "What happens if a BHW always approaches the midwife even for non-clinical matters?",
+      "prompt_fil": "Alin sa mga sumusunod ang HINDI isa sa tatlong tungkuling nakasaad sa RA 7883?",
+      "prompt_en": "Which of the following is NOT one of the three roles named in RA 7883?",
       "options": [
-        { "fil": "Mas mabilis magiging ang serbisyo", "en": "Service becomes faster" },
-        { "fil": "Mapupuno ang oras ng midwife sa hindi dapat sa kanya", "en": "The midwife's time fills up with things that were never theirs to handle" },
-        { "fil": "Wala itong epekto", "en": "It has no effect" },
-        { "fil": "Mas maayos ang akreditasyon", "en": "Accreditation becomes smoother" }
+        { "fil": "Health Educator", "en": "Health Educator" },
+        { "fil": "Community Organizer", "en": "Community Organizer" },
+        { "fil": "Health Service Provider", "en": "Health Service Provider" },
+        { "fil": "Barangay Treasurer for Health", "en": "Barangay Treasurer for Health" }
+      ],
+      "correct_option_index": 3
+    },
+    {
+      "prompt_fil": "Tinipon ni BHW Marites ang mga nanay sa purok para ipaliwanag kung paano maiiwasan ang pagtatae ngayong tag-ulan. Anong tungkulin ang kanyang ginagampanan?",
+      "prompt_en": "BHW Marites gathers the mothers in the purok to explain how to avoid diarrhoea during the rainy season. Which role is she performing?",
+      "options": [
+        { "fil": "Health Educator", "en": "Health Educator" },
+        { "fil": "Community Organizer", "en": "Community Organizer" },
+        { "fil": "Health Service Provider", "en": "Health Service Provider" },
+        { "fil": "Wala sa tatlo — gawain ito ng midwife", "en": "None of the three — this is the midwife's work" }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Kinausap ni BHW Ramon ang purok leader at ang kagawad para magkaroon ng lingguhang paglilinis ng kanal. Anong tungkulin ang kanyang ginagampanan?",
+      "prompt_en": "BHW Ramon talks to the purok leader and the kagawad about setting up a weekly canal clean-up. Which role is he performing?",
+      "options": [
+        { "fil": "Health Educator", "en": "Health Educator" },
+        { "fil": "Community Organizer", "en": "Community Organizer" },
+        { "fil": "Health Service Provider", "en": "Health Service Provider" },
+        { "fil": "Wala sa tatlo — gawain ito ng sanitary inspector", "en": "None of the three — this is the sanitary inspector's work" }
       ],
       "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Bilang bahagi ng primary care team, sino ang karaniwang unang nasasalubong ng pangangailangang pangkalusugan sa komunidad?",
+      "prompt_en": "As part of the primary care team, who is usually the first contact a health need in the community meets?",
+      "options": [
+        { "fil": "Ang city o municipal health officer", "en": "The city or municipal health officer" },
+        { "fil": "Ang BHW, bilang frontline sa barangay", "en": "The BHW, as the barangay's frontline" },
+        { "fil": "Ang public health nurse", "en": "The public health nurse" },
+        { "fil": "Ang punong barangay", "en": "The barangay captain" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Alin sa mga sumusunod ang HINDI karaniwang talaang hawak ng isang BHW?",
+      "prompt_en": "Which of the following is NOT one of the records a BHW usually keeps?",
+      "options": [
+        { "fil": "Household profile ng mga kabahayan sa nasasakupan niya", "en": "The household profile of the households in their area" },
+        { "fil": "Master list ng mga grupo sa komunidad (sanggol, buntis, nakatatanda)", "en": "The master list of community groups (infants, pregnant women, the elderly)" },
+        { "fil": "Registry ng mga taong nabigyan ng serbisyo", "en": "The registry of people given a service" },
+        { "fil": "Talaan ng badyet at gastusin ng barangay", "en": "The barangay's budget and expenditure ledger" }
+      ],
+      "correct_option_index": 3
+    },
+    {
+      "prompt_fil": "Ano ang pinakamahusay na dahilan kung bakit kailangang tama at napapanahon ang household profile na hawak ng BHW?",
+      "prompt_en": "What is the best reason a BHW's household profile needs to be accurate and up to date?",
+      "options": [
+        { "fil": "Dahil ito ang hinahanap tuwing may inspeksyon", "en": "Because it is what gets checked during inspections" },
+        { "fil": "Dahil kailangan ito para makakuha ng honorarium", "en": "Because it is needed to receive the honorarium" },
+        { "fil": "Dahil ang mga datos na ito ang gumagabay sa programang pangkalusugan kung saan pupunta at ano ang uunahin", "en": "Because these data guide health programmes on where to go and what to prioritise" },
+        { "fil": "Dahil ipinapadala ito nang buo sa DOH central office", "en": "Because it is forwarded in full to the DOH central office" }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Bukod sa pagpapatupad ng plano, anong papel ang inaasahan sa BHW sa barangay planning team for health sa ilalim ng UHC at ng LIPH?",
+      "prompt_en": "Beyond carrying out plans, what part is a BHW expected to take in the barangay planning team for health under UHC and the LIPH?",
+      "options": [
+        { "fil": "Lumahok at mag-ambag sa lokal na pagpaplanong pangkalusugan", "en": "To participate in and contribute to local health planning" },
+        { "fil": "Aprubahan ang badyet ng barangay para sa kalusugan", "en": "To approve the barangay's health budget" },
+        { "fil": "Pumirma sa mga resolusyon ng sangguniang barangay", "en": "To sign the barangay council's resolutions" },
+        { "fil": "Palitan ang kagawad sa kalusugan kapag wala ito", "en": "To stand in for the health kagawad when absent" }
+      ],
+      "correct_option_index": 0
     }
   ]
 }

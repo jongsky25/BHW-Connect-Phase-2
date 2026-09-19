@@ -62,6 +62,11 @@ export type LessonSectionKind = "scenario" | "concept" | "contrast" | "practice"
 export type LessonSection = {
   kind: LessonSectionKind;
   tier: LessonTier; // §A.6 — core sections alone must cover every objective
+  // §C.2 — which coverage.json concepts this section delivers. Authored as a
+  // "{id, id}" marker on the heading and checked by the loader; carried into
+  // the row so a deployed lesson can still be audited against its sources.
+  // Absent on modules authored before the coverage rule.
+  concept_ids?: string[];
   heading_fil: string;
   heading_en: string;
   body_fil: string;
