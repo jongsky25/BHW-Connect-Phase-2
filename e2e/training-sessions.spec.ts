@@ -371,15 +371,21 @@ test.describe.serial("training sessions (INC-22)", () => {
         summaryItems.filter({ hasText: "DeepTakeaway fil" }),
       ).not.toBeVisible();
 
-      // Complete both modules.
+      // Complete both modules. router.refresh() after each rpc call lands
+      // asynchronously, so wait for the button count to actually drop
+      // before clicking again rather than a fixed .first()/generic locator,
+      // which can transiently still match the just-clicked module's button
+      // (it briefly re-enables once its own pending state clears, before
+      // the refreshed isDone prop arrives and replaces it with the badge).
       const completeButtons = page.getByRole("button", {
         name: "Markahan bilang tapos na",
       });
+      await expect(completeButtons).toHaveCount(2);
       await completeButtons.first().click();
-      await expect(page.getByText("Tapos na").first()).toBeVisible();
-      await page
-        .getByRole("button", { name: "Markahan bilang tapos na" })
-        .click();
+      await expect(completeButtons).toHaveCount(1, { timeout: 10_000 });
+      await completeButtons.first().click();
+      await expect(completeButtons).toHaveCount(0, { timeout: 10_000 });
+      await expect(page.getByText("Tapos na")).toHaveCount(2);
 
       // Posttest is offered once content is complete.
       await expect(page.getByRole("heading", { name: "Posttest" })).toBeVisible(
