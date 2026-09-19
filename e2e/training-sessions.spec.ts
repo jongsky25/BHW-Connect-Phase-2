@@ -354,11 +354,22 @@ test.describe.serial("training sessions (INC-22)", () => {
       );
       expect(countAfterCheck).toBe(countBeforeCheck);
 
-      // Retrieval-first summary: reveal shows only the rendered (core) takeaway.
+      // Retrieval-first summary: reveal shows only the rendered (core)
+      // takeaway. Scoped to the summary's own <li> items — the same
+      // takeaway text also renders inline right after its section (by
+      // design, the "consolidated summary" is deliberately redundant with
+      // it), so an unscoped getByText matches both and is ambiguous.
       await page.getByRole("button", { name: "Ipakita ang buod" }).click();
-      await expect(page.getByText("CoreTakeaway fil")).toBeVisible();
-      await expect(page.getByText("StandardTakeaway fil")).not.toBeVisible();
-      await expect(page.getByText("DeepTakeaway fil")).not.toBeVisible();
+      const summaryItems = page.getByRole("listitem");
+      await expect(
+        summaryItems.filter({ hasText: "CoreTakeaway fil" }),
+      ).toBeVisible();
+      await expect(
+        summaryItems.filter({ hasText: "StandardTakeaway fil" }),
+      ).not.toBeVisible();
+      await expect(
+        summaryItems.filter({ hasText: "DeepTakeaway fil" }),
+      ).not.toBeVisible();
 
       // Complete both modules.
       const completeButtons = page.getByRole("button", {
