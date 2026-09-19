@@ -226,13 +226,51 @@ async function setUpCourse(
   return courseId as string;
 }
 
-// Both tests below flip the global `course_sessions` flag on/off around
-// themselves (same caution as e2e/ops-hardening.spec.ts's kb_articles
-// toggle — this flag is shared with every other e2e spec and live traffic).
-// Unlike that spec, there are two tests here doing it, and this repo's
-// playwright.config.ts sets fullyParallel: true, so without forcing them
-// serial they could run concurrently and race each other's flag state.
+// Both tests below need the global `course_sessions` flag on (same caution as
+// e2e/ops-hardening.spec.ts's kb_articles toggle — this flag is shared with
+// every other e2e spec and live traffic). Unlike that spec there are two
+// tests here doing it, and this repo's playwright.config.ts sets
+// fullyParallel: true, so without forcing them serial they could run
+// concurrently and race each other's flag state.
 test.describe.serial("training sessions (INC-22)", () => {
+  // These are long multi-actor flows — course setup plus three separate
+  // onboarding journeys (assessor, then two BHWs), each of which is its own
+  // login + change-password + consent navigation. That does not fit
+  // Playwright's 30s default, and CI proved it: the body timed out on a
+  // slower run, which ALSO meant the flag reset never ran and left
+  // `course_sessions` on for everything downstream.
+  test.describe.configure({ timeout: 120_000 });
+
+  // Toggled in hooks rather than a try/finally inside the test body on
+  // purpose: when a test times out, Playwright tears the context down before
+  // `finally` can run, so the reset silently doesn't happen and a global flag
+  // leaks into the rest of the suite. afterEach still runs on timeout.
+  test.beforeEach(async ({ request }) => {
+    const token = await getAccessToken(
+      request,
+      STABLE_CITY_ADMIN.username,
+      STABLE_CITY_ADMIN.password,
+    );
+    const on = await callRpc(request, token, "rpc_flag_toggle", {
+      p_key: "course_sessions",
+      p_enabled: true,
+    });
+    expect(on.status).toBe(204);
+  });
+
+  test.afterEach(async ({ request }) => {
+    const token = await getAccessToken(
+      request,
+      STABLE_CITY_ADMIN.username,
+      STABLE_CITY_ADMIN.password,
+    );
+    const off = await callRpc(request, token, "rpc_flag_toggle", {
+      p_key: "course_sessions",
+      p_enabled: false,
+    });
+    expect(off.status).toBe(204);
+  });
+
   test("an enrolled BHW at short density completes pretest-gated content and posttest with a recorded session_id, sees only core-tier content, and a retrieval check never writes an attempt row", async ({
     page,
     request,
@@ -244,185 +282,167 @@ test.describe.serial("training sessions (INC-22)", () => {
       STABLE_CITY_ADMIN.password,
     );
 
-    const flagOn = await callRpc(request, cityAdminToken, "rpc_flag_toggle", {
-      p_key: "course_sessions",
-      p_enabled: true,
+    const courseId = await setUpCourse(request, cityAdminToken, marker);
+
+    const assessor = await createThrowawayAssessor(
+      request,
+      cityAdminToken,
+      LOS_BANOS_ID,
+    );
+    await onboardThroughLogin(
+      page,
+      assessor.username,
+      assessor.tempPassword,
+      "AssessorPw2026!",
+    );
+    const assessorToken = await getAccessToken(
+      request,
+      assessor.username,
+      "AssessorPw2026!",
+    );
+
+    const shortBhw = await createThrowawayBhw(
+      request,
+      cityAdminToken,
+      BARANGAY_BATONG_MALAKE_ID,
+    );
+    const shortBhwId = await userIdFor(
+      request,
+      cityAdminToken,
+      shortBhw.username,
+    );
+
+    const sessionCreate = await callRpc(
+      request,
+      assessorToken,
+      "rpc_course_session_create",
+      {
+        p_course_id: courseId,
+        p_scheduled_at: new Date().toISOString(),
+        p_location_note: "",
+        p_lesson_density: "short",
+      },
+    );
+    const sessionId = (sessionCreate.body as Array<{ session_id: string }>)[0]
+      ?.session_id;
+    expect(sessionId).toBeTruthy();
+
+    const enroll = await callRpc(
+      request,
+      assessorToken,
+      "rpc_course_session_enroll",
+      {
+        p_session_id: sessionId,
+        p_bhw_user_id: shortBhwId,
+      },
+    );
+    expect(enroll.status).toBe(204);
+
+    await page.goto("/home");
+    await page.getByRole("button", { name: "Mag-sign out" }).click();
+    await expect(page).toHaveURL("/login", { timeout: 10_000 });
+    await onboardThroughLogin(
+      page,
+      shortBhw.username,
+      shortBhw.tempPassword,
+      "ShortBhwPw2026!",
+    );
+
+    await page.goto(`/courses/${courseId}`);
+
+    // Pretest gates the first module — module content is not visible yet.
+    await expect(page.getByRole("heading", { name: "Pretest" })).toBeVisible();
+    await expect(page.getByText("PlainBodyText fil")).not.toBeVisible();
+
+    await page.getByLabel("TQ Opt A", { exact: true }).check(); // wrong -> 0%
+    await page.getByRole("button", { name: "Isumite" }).click();
+    await expect(page.getByText("Marka sa pretest: 0%.")).toBeVisible();
+
+    // Content is now unlocked; module 1 (no lesson) renders unchanged.
+    await expect(page.getByText("PlainBodyText fil")).toBeVisible();
+
+    // Module 2's lesson: short density shows only the core section.
+    await expect(page.getByText("CoreOnly Fil")).toBeVisible();
+    await expect(page.getByText("StandardOnly Fil")).not.toBeVisible();
+    await expect(page.getByText("DeepOnly Fil")).not.toBeVisible();
+
+    // Retrieval check gives feedback but writes no course_test_attempts row.
+    const countBeforeCheck = await testAttemptCount(
+      request,
+      cityAdminToken,
+      shortBhwId,
+    );
+    await page.getByLabel("Opt A", { exact: true }).check(); // wrong option
+    await page.getByRole("button", { name: "Suriin ang sagot" }).click();
+    await expect(page.getByText("Hindi tama.")).toBeVisible();
+    await expect(page.getByText("CheckFeedback fil")).toBeVisible();
+    const countAfterCheck = await testAttemptCount(
+      request,
+      cityAdminToken,
+      shortBhwId,
+    );
+    expect(countAfterCheck).toBe(countBeforeCheck);
+
+    // Retrieval-first summary: reveal shows only the rendered (core)
+    // takeaway. Scoped to the summary's own <li> items — the same
+    // takeaway text also renders inline right after its section (by
+    // design, the "consolidated summary" is deliberately redundant with
+    // it), so an unscoped getByText matches both and is ambiguous.
+    await page.getByRole("button", { name: "Ipakita ang buod" }).click();
+    const summaryItems = page.getByRole("listitem");
+    await expect(
+      summaryItems.filter({ hasText: "CoreTakeaway fil" }),
+    ).toBeVisible();
+    await expect(
+      summaryItems.filter({ hasText: "StandardTakeaway fil" }),
+    ).not.toBeVisible();
+    await expect(
+      summaryItems.filter({ hasText: "DeepTakeaway fil" }),
+    ).not.toBeVisible();
+
+    // Complete both modules. router.refresh() after each rpc call lands
+    // asynchronously, so wait for the button count to actually drop
+    // before clicking again rather than a fixed .first()/generic locator,
+    // which can transiently still match the just-clicked module's button
+    // (it briefly re-enables once its own pending state clears, before
+    // the refreshed isDone prop arrives and replaces it with the badge).
+    const completeButtons = page.getByRole("button", {
+      name: "Markahan bilang tapos na",
     });
-    expect(flagOn.status).toBe(204);
+    await expect(completeButtons).toHaveCount(2);
+    await completeButtons.first().click();
+    await expect(completeButtons).toHaveCount(1, { timeout: 10_000 });
+    await completeButtons.first().click();
+    await expect(completeButtons).toHaveCount(0, { timeout: 10_000 });
+    await expect(page.getByText("Tapos na")).toHaveCount(2);
 
-    try {
-      const courseId = await setUpCourse(request, cityAdminToken, marker);
+    // Posttest is offered once content is complete.
+    await expect(page.getByRole("heading", { name: "Posttest" })).toBeVisible({
+      timeout: 10_000,
+    });
+    await page.getByLabel("TQ Opt B", { exact: true }).check(); // correct -> 100%
+    await page.getByRole("button", { name: "Isumite" }).click();
+    await expect(page.getByText("Marka sa posttest: 100%.")).toBeVisible();
+    await expect(
+      page.getByText("Pagbabago mula pretest patungong posttest: 100%."),
+    ).toBeVisible();
 
-      const assessor = await createThrowawayAssessor(
-        request,
-        cityAdminToken,
-        LOS_BANOS_ID,
-      );
-      await onboardThroughLogin(
-        page,
-        assessor.username,
-        assessor.tempPassword,
-        "AssessorPw2026!",
-      );
-      const assessorToken = await getAccessToken(
-        request,
-        assessor.username,
-        "AssessorPw2026!",
-      );
-
-      const shortBhw = await createThrowawayBhw(
-        request,
-        cityAdminToken,
-        BARANGAY_BATONG_MALAKE_ID,
-      );
-      const shortBhwId = await userIdFor(
-        request,
-        cityAdminToken,
-        shortBhw.username,
-      );
-
-      const sessionCreate = await callRpc(
-        request,
-        assessorToken,
-        "rpc_course_session_create",
-        {
-          p_course_id: courseId,
-          p_scheduled_at: new Date().toISOString(),
-          p_location_note: "",
-          p_lesson_density: "short",
+    const attempts = await request.get(
+      `${supabaseUrl()}/rest/v1/course_test_attempts?bhw_user_id=eq.${shortBhwId}&select=phase,session_id`,
+      {
+        headers: {
+          apikey: anonKey(),
+          Authorization: `Bearer ${cityAdminToken}`,
         },
-      );
-      const sessionId = (sessionCreate.body as Array<{ session_id: string }>)[0]
-        ?.session_id;
-      expect(sessionId).toBeTruthy();
-
-      const enroll = await callRpc(
-        request,
-        assessorToken,
-        "rpc_course_session_enroll",
-        {
-          p_session_id: sessionId,
-          p_bhw_user_id: shortBhwId,
-        },
-      );
-      expect(enroll.status).toBe(204);
-
-      await page.goto("/home");
-      await page.getByRole("button", { name: "Mag-sign out" }).click();
-      await expect(page).toHaveURL("/login", { timeout: 10_000 });
-      await onboardThroughLogin(
-        page,
-        shortBhw.username,
-        shortBhw.tempPassword,
-        "ShortBhwPw2026!",
-      );
-
-      await page.goto(`/courses/${courseId}`);
-
-      // Pretest gates the first module — module content is not visible yet.
-      await expect(
-        page.getByRole("heading", { name: "Pretest" }),
-      ).toBeVisible();
-      await expect(page.getByText("PlainBodyText fil")).not.toBeVisible();
-
-      await page.getByLabel("TQ Opt A", { exact: true }).check(); // wrong -> 0%
-      await page.getByRole("button", { name: "Isumite" }).click();
-      await expect(page.getByText("Marka sa pretest: 0%.")).toBeVisible();
-
-      // Content is now unlocked; module 1 (no lesson) renders unchanged.
-      await expect(page.getByText("PlainBodyText fil")).toBeVisible();
-
-      // Module 2's lesson: short density shows only the core section.
-      await expect(page.getByText("CoreOnly Fil")).toBeVisible();
-      await expect(page.getByText("StandardOnly Fil")).not.toBeVisible();
-      await expect(page.getByText("DeepOnly Fil")).not.toBeVisible();
-
-      // Retrieval check gives feedback but writes no course_test_attempts row.
-      const countBeforeCheck = await testAttemptCount(
-        request,
-        cityAdminToken,
-        shortBhwId,
-      );
-      await page.getByLabel("Opt A", { exact: true }).check(); // wrong option
-      await page.getByRole("button", { name: "Suriin ang sagot" }).click();
-      await expect(page.getByText("Hindi tama.")).toBeVisible();
-      await expect(page.getByText("CheckFeedback fil")).toBeVisible();
-      const countAfterCheck = await testAttemptCount(
-        request,
-        cityAdminToken,
-        shortBhwId,
-      );
-      expect(countAfterCheck).toBe(countBeforeCheck);
-
-      // Retrieval-first summary: reveal shows only the rendered (core)
-      // takeaway. Scoped to the summary's own <li> items — the same
-      // takeaway text also renders inline right after its section (by
-      // design, the "consolidated summary" is deliberately redundant with
-      // it), so an unscoped getByText matches both and is ambiguous.
-      await page.getByRole("button", { name: "Ipakita ang buod" }).click();
-      const summaryItems = page.getByRole("listitem");
-      await expect(
-        summaryItems.filter({ hasText: "CoreTakeaway fil" }),
-      ).toBeVisible();
-      await expect(
-        summaryItems.filter({ hasText: "StandardTakeaway fil" }),
-      ).not.toBeVisible();
-      await expect(
-        summaryItems.filter({ hasText: "DeepTakeaway fil" }),
-      ).not.toBeVisible();
-
-      // Complete both modules. router.refresh() after each rpc call lands
-      // asynchronously, so wait for the button count to actually drop
-      // before clicking again rather than a fixed .first()/generic locator,
-      // which can transiently still match the just-clicked module's button
-      // (it briefly re-enables once its own pending state clears, before
-      // the refreshed isDone prop arrives and replaces it with the badge).
-      const completeButtons = page.getByRole("button", {
-        name: "Markahan bilang tapos na",
-      });
-      await expect(completeButtons).toHaveCount(2);
-      await completeButtons.first().click();
-      await expect(completeButtons).toHaveCount(1, { timeout: 10_000 });
-      await completeButtons.first().click();
-      await expect(completeButtons).toHaveCount(0, { timeout: 10_000 });
-      await expect(page.getByText("Tapos na")).toHaveCount(2);
-
-      // Posttest is offered once content is complete.
-      await expect(page.getByRole("heading", { name: "Posttest" })).toBeVisible(
-        { timeout: 10_000 },
-      );
-      await page.getByLabel("TQ Opt B", { exact: true }).check(); // correct -> 100%
-      await page.getByRole("button", { name: "Isumite" }).click();
-      await expect(page.getByText("Marka sa posttest: 100%.")).toBeVisible();
-      await expect(
-        page.getByText("Pagbabago mula pretest patungong posttest: 100%."),
-      ).toBeVisible();
-
-      const attempts = await request.get(
-        `${supabaseUrl()}/rest/v1/course_test_attempts?bhw_user_id=eq.${shortBhwId}&select=phase,session_id`,
-        {
-          headers: {
-            apikey: anonKey(),
-            Authorization: `Bearer ${cityAdminToken}`,
-          },
-        },
-      );
-      const rows = (await attempts.json()) as Array<{
-        phase: string;
-        session_id: string | null;
-      }>;
-      expect(rows).toHaveLength(2);
-      for (const row of rows) {
-        expect(row.session_id).toBe(sessionId);
-      }
-    } finally {
-      const flagOff = await callRpc(
-        request,
-        cityAdminToken,
-        "rpc_flag_toggle",
-        { p_key: "course_sessions", p_enabled: false },
-      );
-      expect(flagOff.status).toBe(204);
+      },
+    );
+    const rows = (await attempts.json()) as Array<{
+      phase: string;
+      session_id: string | null;
+    }>;
+    expect(rows).toHaveLength(2);
+    for (const row of rows) {
+      expect(row.session_id).toBe(sessionId);
     }
   });
 
@@ -437,139 +457,123 @@ test.describe.serial("training sessions (INC-22)", () => {
       STABLE_CITY_ADMIN.password,
     );
 
-    const flagOn = await callRpc(request, cityAdminToken, "rpc_flag_toggle", {
-      p_key: "course_sessions",
-      p_enabled: true,
-    });
-    expect(flagOn.status).toBe(204);
+    const courseId = await setUpCourse(request, cityAdminToken, marker);
 
-    try {
-      const courseId = await setUpCourse(request, cityAdminToken, marker);
+    const assessor = await createThrowawayAssessor(
+      request,
+      cityAdminToken,
+      LOS_BANOS_ID,
+    );
+    await onboardThroughLogin(
+      page,
+      assessor.username,
+      assessor.tempPassword,
+      "AssessorPw2026!",
+    );
+    const assessorToken = await getAccessToken(
+      request,
+      assessor.username,
+      "AssessorPw2026!",
+    );
 
-      const assessor = await createThrowawayAssessor(
-        request,
-        cityAdminToken,
-        LOS_BANOS_ID,
-      );
-      await onboardThroughLogin(
-        page,
-        assessor.username,
-        assessor.tempPassword,
-        "AssessorPw2026!",
-      );
-      const assessorToken = await getAccessToken(
-        request,
-        assessor.username,
-        "AssessorPw2026!",
-      );
+    const longBhw = await createThrowawayBhw(
+      request,
+      cityAdminToken,
+      BARANGAY_BATONG_MALAKE_ID,
+    );
+    const longBhwId = await userIdFor(
+      request,
+      cityAdminToken,
+      longBhw.username,
+    );
 
-      const longBhw = await createThrowawayBhw(
-        request,
-        cityAdminToken,
-        BARANGAY_BATONG_MALAKE_ID,
-      );
-      const longBhwId = await userIdFor(
-        request,
-        cityAdminToken,
-        longBhw.username,
-      );
+    const sessionCreate = await callRpc(
+      request,
+      assessorToken,
+      "rpc_course_session_create",
+      {
+        p_course_id: courseId,
+        p_scheduled_at: new Date().toISOString(),
+        p_location_note: "",
+        p_lesson_density: "long",
+      },
+    );
+    const sessionId = (sessionCreate.body as Array<{ session_id: string }>)[0]
+      ?.session_id;
 
-      const sessionCreate = await callRpc(
-        request,
-        assessorToken,
-        "rpc_course_session_create",
-        {
-          p_course_id: courseId,
-          p_scheduled_at: new Date().toISOString(),
-          p_location_note: "",
-          p_lesson_density: "long",
+    const enroll = await callRpc(
+      request,
+      assessorToken,
+      "rpc_course_session_enroll",
+      {
+        p_session_id: sessionId,
+        p_bhw_user_id: longBhwId,
+      },
+    );
+    expect(enroll.status).toBe(204);
+
+    await page.goto("/home");
+    await page.getByRole("button", { name: "Mag-sign out" }).click();
+    await expect(page).toHaveURL("/login", { timeout: 10_000 });
+    await onboardThroughLogin(
+      page,
+      longBhw.username,
+      longBhw.tempPassword,
+      "LongBhwPw2026!",
+    );
+
+    await page.goto(`/courses/${courseId}`);
+    await page.getByLabel("TQ Opt A", { exact: true }).check();
+    await page.getByRole("button", { name: "Isumite" }).click();
+    await expect(page.getByText("Marka sa pretest:")).toBeVisible();
+
+    await expect(page.getByText("CoreOnly Fil")).toBeVisible();
+    await expect(page.getByText("StandardOnly Fil")).toBeVisible();
+    await expect(page.getByText("DeepOnly Fil")).toBeVisible();
+
+    // Solo BHW: no session at all, so density defaults to normal (core + standard).
+    const soloBhw = await createThrowawayBhw(
+      request,
+      cityAdminToken,
+      BARANGAY_BATONG_MALAKE_ID,
+    );
+    const soloBhwId = await userIdFor(
+      request,
+      cityAdminToken,
+      soloBhw.username,
+    );
+
+    await page.goto("/home");
+    await page.getByRole("button", { name: "Mag-sign out" }).click();
+    await expect(page).toHaveURL("/login", { timeout: 10_000 });
+    await onboardThroughLogin(
+      page,
+      soloBhw.username,
+      soloBhw.tempPassword,
+      "SoloBhwPw2026!",
+    );
+
+    await page.goto(`/courses/${courseId}`);
+    await page.getByLabel("TQ Opt A", { exact: true }).check();
+    await page.getByRole("button", { name: "Isumite" }).click();
+    await expect(page.getByText("Marka sa pretest:")).toBeVisible();
+
+    await expect(page.getByText("CoreOnly Fil")).toBeVisible();
+    await expect(page.getByText("StandardOnly Fil")).toBeVisible();
+    await expect(page.getByText("DeepOnly Fil")).not.toBeVisible();
+
+    const soloAttempt = await request.get(
+      `${supabaseUrl()}/rest/v1/course_test_attempts?bhw_user_id=eq.${soloBhwId}&select=session_id`,
+      {
+        headers: {
+          apikey: anonKey(),
+          Authorization: `Bearer ${cityAdminToken}`,
         },
-      );
-      const sessionId = (sessionCreate.body as Array<{ session_id: string }>)[0]
-        ?.session_id;
-
-      const enroll = await callRpc(
-        request,
-        assessorToken,
-        "rpc_course_session_enroll",
-        {
-          p_session_id: sessionId,
-          p_bhw_user_id: longBhwId,
-        },
-      );
-      expect(enroll.status).toBe(204);
-
-      await page.goto("/home");
-      await page.getByRole("button", { name: "Mag-sign out" }).click();
-      await expect(page).toHaveURL("/login", { timeout: 10_000 });
-      await onboardThroughLogin(
-        page,
-        longBhw.username,
-        longBhw.tempPassword,
-        "LongBhwPw2026!",
-      );
-
-      await page.goto(`/courses/${courseId}`);
-      await page.getByLabel("TQ Opt A", { exact: true }).check();
-      await page.getByRole("button", { name: "Isumite" }).click();
-      await expect(page.getByText("Marka sa pretest:")).toBeVisible();
-
-      await expect(page.getByText("CoreOnly Fil")).toBeVisible();
-      await expect(page.getByText("StandardOnly Fil")).toBeVisible();
-      await expect(page.getByText("DeepOnly Fil")).toBeVisible();
-
-      // Solo BHW: no session at all, so density defaults to normal (core + standard).
-      const soloBhw = await createThrowawayBhw(
-        request,
-        cityAdminToken,
-        BARANGAY_BATONG_MALAKE_ID,
-      );
-      const soloBhwId = await userIdFor(
-        request,
-        cityAdminToken,
-        soloBhw.username,
-      );
-
-      await page.goto("/home");
-      await page.getByRole("button", { name: "Mag-sign out" }).click();
-      await expect(page).toHaveURL("/login", { timeout: 10_000 });
-      await onboardThroughLogin(
-        page,
-        soloBhw.username,
-        soloBhw.tempPassword,
-        "SoloBhwPw2026!",
-      );
-
-      await page.goto(`/courses/${courseId}`);
-      await page.getByLabel("TQ Opt A", { exact: true }).check();
-      await page.getByRole("button", { name: "Isumite" }).click();
-      await expect(page.getByText("Marka sa pretest:")).toBeVisible();
-
-      await expect(page.getByText("CoreOnly Fil")).toBeVisible();
-      await expect(page.getByText("StandardOnly Fil")).toBeVisible();
-      await expect(page.getByText("DeepOnly Fil")).not.toBeVisible();
-
-      const soloAttempt = await request.get(
-        `${supabaseUrl()}/rest/v1/course_test_attempts?bhw_user_id=eq.${soloBhwId}&select=session_id`,
-        {
-          headers: {
-            apikey: anonKey(),
-            Authorization: `Bearer ${cityAdminToken}`,
-          },
-        },
-      );
-      const [soloRow] = (await soloAttempt.json()) as Array<{
-        session_id: string | null;
-      }>;
-      expect(soloRow.session_id).toBeNull();
-    } finally {
-      const flagOff = await callRpc(
-        request,
-        cityAdminToken,
-        "rpc_flag_toggle",
-        { p_key: "course_sessions", p_enabled: false },
-      );
-      expect(flagOff.status).toBe(204);
-    }
+      },
+    );
+    const [soloRow] = (await soloAttempt.json()) as Array<{
+      session_id: string | null;
+    }>;
+    expect(soloRow.session_id).toBeNull();
   });
 });
