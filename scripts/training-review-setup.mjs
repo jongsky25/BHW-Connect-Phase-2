@@ -16,7 +16,19 @@
 //
 // Env: KB_LOADER_ANON_KEY (or NEXT_PUBLIC_SUPABASE_ANON_KEY),
 //      KB_LOADER_USERNAME / KB_LOADER_PASSWORD       — an admin on that project
-//      REVIEW_FACILITATOR_USERNAME / _PASSWORD       — an assessor on that project
+//      REVIEW_FACILITATOR_USERNAME / _PASSWORD       — an assessor on that project,
+//                                                      unless --create-facilitator
+//
+// --create-facilitator provisions a throwaway assessor through the real
+// rpc_admin_create_user under the admin token already required above, so a
+// project with no assessor on it needs exactly one password pasted rather than
+// two. It is created in the reviewer's own org unit, which is the one place
+// that satisfies both org-scope checks at once: rpc_course_session_create wants
+// the course's org unit to be an ancestor of the facilitator's path, and
+// rpc_course_session_enroll wants the BHW at or below the facilitator. The
+// generated temp password is printed once — nothing stores it. An existing
+// username is never taken over this way: rpc_admin_reset_password would lock
+// out whoever holds that account, so the script stops and asks instead.
 //
 // Two identities are genuinely required and cannot be collapsed into one:
 // rpc_flag_toggle and rpc_course_set_status demand role='admin', while
@@ -42,6 +54,7 @@ function parseArgs(argv) {
     bhw: null,
     course: DEFAULT_COURSE,
     density: "long",
+    createFacilitator: null,
     apply: false,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -52,6 +65,11 @@ function parseArgs(argv) {
     else if (arg === "--bhw") args.bhw = argv[++i];
     else if (arg === "--course") args.course = argv[++i];
     else if (arg === "--density") args.density = argv[++i];
+    else if (arg === "--create-facilitator") {
+      // Optional value: bare --create-facilitator takes the default username.
+      const next = argv[i + 1];
+      args.createFacilitator = next && !next.startsWith("--") ? argv[++i] : "review.facilitator";
+    }
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (!args.project) throw new Error("--project <supabase-project-ref> is required");
@@ -96,8 +114,18 @@ async function main() {
 
   const adminUser = requireEnv("KB_LOADER_USERNAME", "an admin on this project");
   const adminPassword = requireEnv("KB_LOADER_PASSWORD");
-  const facilitatorUser = requireEnv("REVIEW_FACILITATOR_USERNAME", "an assessor on this project");
-  const facilitatorPassword = requireEnv("REVIEW_FACILITATOR_PASSWORD");
+
+  // Either an assessor's own credentials, or permission to make one. Asking for
+  // both would be asking for a password the project may not have yet.
+  if (!args.createFacilitator && !process.env.REVIEW_FACILITATOR_USERNAME) {
+    throw new Error(
+      "REVIEW_FACILITATOR_USERNAME / REVIEW_FACILITATOR_PASSWORD are required — or pass --create-facilitator to provision a throwaway assessor under the admin token",
+    );
+  }
+  const facilitatorUser = args.createFacilitator ?? process.env.REVIEW_FACILITATOR_USERNAME;
+  const facilitatorPassword = args.createFacilitator
+    ? null
+    : requireEnv("REVIEW_FACILITATOR_PASSWORD");
 
   const courseId = courseIdFromLock(args.course, args.project);
 
@@ -144,7 +172,9 @@ async function main() {
     }
   }
 
-  const [reviewer] = await admin.get(`users?select=id,username,role&username=eq.${args.bhw}`);
+  const [reviewer] = await admin.get(
+    `users?select=id,username,role,org_unit_id&username=eq.${args.bhw}`,
+  );
   if (!reviewer) throw new Error(`no user "${args.bhw}" on this project`);
   if (reviewer.role !== "bhw") {
     throw new Error(
@@ -152,10 +182,41 @@ async function main() {
     );
   }
 
-  // 3. Session + enrollment, as the facilitator. Both RPCs check the actor is
+  // 3. The facilitator. Provisioned here only when asked for, and only when the
+  //    username is free — taking over an existing account would mean resetting
+  //    a password someone else may be using.
+  let password = facilitatorPassword;
+  if (args.createFacilitator) {
+    const [claimed] = await admin.get(`users?select=id,username,role&username=eq.${facilitatorUser}`);
+    if (claimed) {
+      throw new Error(
+        `"${facilitatorUser}" already exists on this project (role "${claimed.role}") — pass REVIEW_FACILITATOR_USERNAME/_PASSWORD for it instead, or give --create-facilitator a free username`,
+      );
+    }
+    plan(args.apply, `create assessor "${facilitatorUser}" in ${args.bhw}'s org unit`);
+    if (!args.apply) {
+      console.log("");
+      console.log("Dry run stops here: the remaining steps run as an assessor that does not exist yet.");
+      return;
+    }
+    const [created] = await admin.rpc("rpc_admin_create_user", {
+      p_username: facilitatorUser,
+      p_full_name: "Review Facilitator",
+      p_role: "assessor",
+      p_org_unit_id: reviewer.org_unit_id,
+    });
+    if (!created?.temp_password) {
+      throw new Error(`rpc_admin_create_user returned no password: ${JSON.stringify(created)}`);
+    }
+    password = created.temp_password;
+    console.log(`  note   temp password for ${facilitatorUser}: ${password}`);
+    console.log("         printed once and stored nowhere — keep it or delete the account when done.");
+  }
+
+  // 4. Session + enrollment, as the facilitator. Both RPCs check the actor is
   //    an assessor and that the target is at-or-below their org unit, so a
   //    mis-scoped facilitator fails here rather than silently doing nothing.
-  const facilitatorToken = await signIn(url, anonKey, facilitatorUser, facilitatorPassword);
+  const facilitatorToken = await signIn(url, anonKey, facilitatorUser, password);
   const facilitator = createClient(url, anonKey, facilitatorToken);
   const [me] = await facilitator.get("users?select=id,username,role&username=eq." + facilitatorUser);
   if (!me || me.role !== "assessor") {

@@ -351,6 +351,7 @@ back to `normal` and the deep sections are silently absent.
 npm run training:review-setup -- --project <ref> --bhw <username>            # dry run
 npm run training:review-setup -- --project <ref> --bhw <username> --apply
 npm run training:review-setup -- --project <ref> --bhw <username> --density short --apply
+npm run training:review-setup -- --project <ref> --bhw <username> --create-facilitator --apply
 ```
 
 It turns on both flags, publishes the course if the loader left it `draft`,
@@ -369,3 +370,11 @@ and `rpc_course_set_status` demand `role = 'admin'`, while
 | `KB_LOADER_ANON_KEY` (or `NEXT_PUBLIC_SUPABASE_ANON_KEY`) | the project's anon key |
 | `KB_LOADER_USERNAME` / `KB_LOADER_PASSWORD` | an admin (the same one `training:load` uses) |
 | `REVIEW_FACILITATOR_USERNAME` / `REVIEW_FACILITATOR_PASSWORD` | an assessor whose org unit is at or above the reviewer's |
+
+A project that has no assessor on it yet does not need a second password:
+`--create-facilitator [username]` provisions a throwaway one through the real
+`rpc_admin_create_user`, under the admin token the script already holds, in the
+reviewer's own org unit — the one place that satisfies both org-scope checks at
+once. Its generated temp password is printed once and stored nowhere. An
+existing username is never taken over this way, because `rpc_admin_reset_password`
+would lock out whoever holds that account; the script stops and asks instead.
