@@ -13,7 +13,7 @@ for this codebase.
 | INC-19a — design mockup approval gate | ✅ Done. User approved the visual system, bookend format, and competency block via a rendered mockup artifact. |
 | INC-19 — schema: sessions, enrollment, pre/post-test | ✅ Merged to `main` — [PR #53](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/53), migration `supabase/migrations/20260807000000_inc19_training_sessions.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-19 section below for what that caught). |
 | INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
-| INC-21 — loader, style guide, Module 1 (2nd approval gate) | ⬜ Next. Not started. |
+| INC-21 — loader, style guide, Module 1 (2nd approval gate) | 🔶 21a/21b/21c shipped and verified; 21d (Module 1) authored and loads clean through every validation. **Awaiting the 2nd user approval gate** — see the Status note inside the INC-21 section below. |
 | INC-22 — BHW UI | ⬜ Blocked on INC-21. |
 | INC-23 — facilitator UI | ⬜ Blocked on INC-22. |
 | INC-24 — author modules 2-5 | ⬜ Blocked on INC-23. |
@@ -79,6 +79,30 @@ from INC-19/INC-20's builds, since they are easy to re-trip:
   one-way-safe on a read-through, right up until Postgres rejected it. Run
   the harness on every future schema increment (INC-24, INC-25 touch no new
   tables, but INC-21's loader-driven inserts are still worth a real replay).
+- **No RPC covers the INC-20/INC-21 columns or the two new child tables.**
+  `rpc_course_create`'s `p_modules` jsonb predates
+  `objectives_*`/`summary_*`/`lesson`, and no RPC exists for
+  `course_module_facilitator_notes`, `course_module_visuals` or
+  `course_test_questions`. INC-21's loader (`scripts/training-load.mjs`)
+  writes all five tables directly through PostgREST under the admin
+  token's own `_admin_write`/`for all` RLS policies instead — the same
+  direct-write path `scripts/kb-load.mjs` already uses for
+  `kb_entries.content_id` (see that script's own header comment). One real
+  consequence: going around `rpc_course_create` means a loader-created
+  course does not get a `course.created` audit event (the loader does call
+  `rpc_course_set_status` for `--publish`, so `course.status_changed` is
+  still recorded). Worth fixing with a proper RPC surface if a future
+  increment needs the audit trail complete, not silently worked around
+  again.
+- **A `.mjs` script cannot import a `.ts` file without a build step**
+  (Node 22, this repo's target, has no stable type-stripping). The SVG
+  allowlist logic INC-20 shipped in `src/lib/elearning/svg-allowlist.ts`
+  therefore has a plain-JS port at `scripts/lib/svg-allowlist.mjs` for the
+  loader to use, kept in sync by hand — each has its own
+  rejected-construct test suite, so drift between the two shows up as a
+  difference in what each accepts, not a silent gap. Don't reach for a
+  `.ts` import from a future loader script; port the logic instead, the
+  same way.
 
 ---
 
@@ -792,6 +816,72 @@ app and approves before INC-24 authors anything further.
 *Out of scope: modules 2-8; the BHW renderer (INC-22) — review Module 1 via
 INC-22 if sequencing allows, otherwise via the INC-19a mockup plus raw row
 inspection.*
+
+**Status — 21a/21b/21c shipped, 21d authored, awaiting the 2nd user
+approval gate.** INC-22 (the BHW renderer) doesn't exist yet, so Module 1 is
+presented for review via a rendered mockup artifact, same allowance the DoD
+above names ("otherwise via the INC-19a mockup plus raw row inspection") —
+carrying INC-19a's own approved bookend format and competency block forward
+into real, final Module 1 content rather than the mockup's placeholder text.
+
+- **21a**: `docs/training-content-style-guide.md` — banned/allowed objective
+  verbs with before/after examples, the retrieval-first summary rule and
+  its restated-objectives failure mode, the §D primitive table, the
+  takeaway-caption rule, Nakikita/Hindi-pa-sapat indicator guidance, and a
+  closing per-module checklist.
+- **21b**: `content/training/README.md` + `content/training/day1-basic-competencies/`
+  — the full authoring tree (`course.json`, `sources.json`, `categories.json`,
+  `test-questions.json`, `_visual-primitives/` with all six §D SVG
+  templates) and the `lesson.*.md` directive syntax (`## [kind/tier]`,
+  `:::visual`, `:::takeaway`, `:::check`) documented field-by-field.
+- **21c**: `scripts/lib/lesson-md.mjs` (the directive parser),
+  `scripts/lib/training-content.mjs` (tree loader + every validation named
+  in the plan), `scripts/lib/svg-allowlist.mjs` (plain-JS port, see the
+  lessons section above), and `scripts/training-load.mjs` (writes
+  `courses`/`course_modules`/`course_module_facilitator_notes`/
+  `course_module_visuals`/`course_test_questions` plus
+  `kb_categories`/`kb_entries` from `qa-entries.json`, idempotent via
+  `locks/<ref>.json`, `--org-unit` required with no default for the same
+  reason `kb-load.mjs` gives for `--project`). `npm run training:load` added.
+  `scripts/lib/training-content.test.mjs` has 23 tests, one failing-fixture
+  case per validation rule (SVG allowlist, objective count/banned verb,
+  empty/restated summary, blank alt text, dangling `visual_position`,
+  fil/en section-count and kind/tier/check-option-count/check-correct-index
+  parity, missing-tier heading, no-correct-option check, zero-core-section
+  module, plus the qa-entries checks it delegates to
+  `kb-content.mjs`-equivalent rules) plus the §A.6 coverage heuristic's
+  non-fatal `reviewFlags` path. `vitest.config.ts` now also includes
+  `scripts/**/*.test.mjs`. Full suite: 210/210 passing (`npm test`),
+  `npm run lint` and `npx tsc --noEmit` both clean.
+- **21d**: Module 1 (`01-tungkulin-ng-bhw`) fully authored — 4 objectives,
+  7 tiered lesson sections (5 `core`/1 `standard`/1 `deep`, satisfying
+  §A.6's "core alone covers every objective" rule with zero review-flag
+  heuristic hits), 2 `hub-spoke`/`chain` SVG visuals, 2 inline retrieval
+  checks, a retrieval-first summary, full bilingual facilitator notes
+  (timing, script, one named misconception, discussion prompts, answer
+  key), a competency block with one paired Nakikita/Hindi-pa-sapat
+  indicator per objective, and 7 `qa-entries.json` Q&A entries grounded in
+  RA 7883 and the WHO BHW reference-manual source (both citations
+  verified live via `npm run kb:check-sources`, which was extended to also
+  check `content/training/<course>/sources.json` — it previously only
+  covered `content/kb/`). `npm run kb:check-sources` passes for this
+  corpus (the one remaining failure it reports, `hhp-ncd/upv-ncd-flipchart-tot`
+  → 503, predates this session and is unrelated to INC-21). The 6-question
+  `test-questions.json` pretest/posttest bank covers all 4 of Module 1's
+  objectives; it will grow, not get replaced, as modules 2-8 add their own.
+  `loadTrainingCourse("day1-basic-competencies")` loads with zero
+  validation problems and zero review flags.
+- **Not run — `--apply` against a live Supabase project**, same caveat
+  INC-20's own Status note ends on: no `KB_LOADER_USERNAME`/`PASSWORD` or a
+  real `--project` were available in this environment. What *was* run: a
+  real invocation of `scripts/training-load.mjs --project <fake> --org-unit
+  National` against a nonexistent project, which validated all of Module
+  1's content (the same validation `--dry-run`/`--apply` both run first)
+  and only then failed at the network sign-in step — proving the
+  validate-before-any-write ordering holds, not just that it typechecks.
+  `--dry-run`/`--apply` against a real project, and the actual rendered
+  result in the app, still owe a real run once INC-22 exists or credentials
+  are available — same standing item INC-20 left for `e2e/elearning.spec.ts`.
 
 ---
 

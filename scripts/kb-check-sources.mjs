@@ -7,6 +7,7 @@
 //   npm run kb:check-sources
 
 import { listCorpora, loadContent } from "./lib/kb-content.mjs";
+import { listCourses, loadTrainingCourse } from "./lib/training-content.mjs";
 
 const USER_AGENT =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36";
@@ -47,6 +48,19 @@ async function main() {
     }
   }
 
+  // content/training/<course>/sources.json is a separate content root from
+  // content/kb/ (see content/training/README.md) but the same "a dead
+  // citation is a defect" rule applies — checked here rather than skipped.
+  for (const course of listCourses()) {
+    const corpus = `training:${course}`;
+    const { sources, qaEntries } = loadTrainingCourse(course);
+    for (const entry of qaEntries) for (const id of entry.sources) used.add(`${corpus}/${id}`);
+    for (const [id, source] of Object.entries(sources)) {
+      declared.push(`${corpus}/${id}`);
+      pending.push({ corpus, id, source });
+    }
+  }
+
   // The same URL cited by two corpora is fetched once.
   const statusByUrl = new Map();
   await Promise.all(
@@ -80,7 +94,7 @@ async function main() {
     process.exit(1);
   }
   console.log(
-    `\n  ${results.length} sources across ${listCorpora().length} corpora checked, ` +
+    `\n  ${results.length} sources across ${listCorpora().length} kb corpora and ${listCourses().length} training course(s) checked, ` +
       `${used.size} of them cited by content\n`,
   );
 }

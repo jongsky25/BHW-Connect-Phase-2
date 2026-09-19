@@ -13,7 +13,8 @@
     "e2e": "playwright test",
     "kb:load": "node scripts/kb-load.mjs",
     "kb:unpublish": "node scripts/kb-unpublish.mjs",
-    "kb:check-sources": "node scripts/kb-check-sources.mjs"
+    "kb:check-sources": "node scripts/kb-check-sources.mjs",
+    "training:load": "node scripts/training-load.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.67.0",

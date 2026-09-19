@@ -1,0 +1,19 @@
+{
+  "$comment": "Citation registry for the Day 1: Basic Competencies course — a separate registry from content/kb/hhp-ncd/sources.json (each corpus keeps its own, per content/kb/README.md's corpus model), even where the same real source is cited by both. Only publicly resolvable sources belong here. Run `npm run kb:check-sources` before any demo — it checks every corpus, and flags an entry here that no qa-entries.json cites yet. Grows as modules 2-8 are authored (RA 11223/UHC Act for Module 2, EO 51 Milk Code, RA 10028 Breastfeeding, AO 2015-0053, DC 2021-0486 — see docs/training-modules-plan.md §C) — add a source only once a module actually cites it, not ahead of authoring it.",
+  "sources": {
+    "ra-7883": {
+      "label_en": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
+      "label_fil": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
+      "publisher": "Congress of the Philippines",
+      "year": 1995,
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
+    },
+    "who-bhw-manual-ta": {
+      "label_en": "Technical assistance for the revision of the Barangay Health Worker's Reference Manual and development of online training modules",
+      "label_fil": "Teknikal na tulong sa rebisyon ng BHW Reference Manual at pagbuo ng online training modules",
+      "publisher": "WHO Western Pacific Region",
+      "year": 2021,
+      "url": "https://www.who.int/westernpacific/articles/item/technical-assistance-for-the-revision-of-barangay-health-worker-s-(bhw)-reference-manual-and-development-of-online-training-modules"
+    }
+  }
+}
