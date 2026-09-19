@@ -14,8 +14,8 @@ for this codebase.
 | INC-19 — schema: sessions, enrollment, pre/post-test | ✅ Merged to `main` — [PR #53](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/53), migration `supabase/migrations/20260807000000_inc19_training_sessions.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-19 section below for what that caught). |
 | INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
 | INC-21 — loader, style guide, Module 1 (2nd approval gate) | ✅ Merged — [PR #56](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/56). `--dry-run`/`--apply` were subsequently run for real against the live pilot project in the INC-22 session (see the Status note inside the INC-21 section below) — the one item its own Status note had left open. |
-| INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Built, verified at the data/RLS layer against the real pilot + CI projects; the new `e2e/training-sessions.spec.ts` is authored, typechecked and linted but not executed end-to-end in this session (sandbox network/TLS constraint, not a code issue — see the Status note inside the INC-22 section below). Owes a real CI run before INC-23 starts, same standing item every prior increment has left for its own e2e coverage. |
-| INC-23 — facilitator UI | ⬜ Blocked on INC-22's CI run. |
+| INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
+| INC-23 — facilitator UI | ⬜ Ready to start — INC-22 is merged and green. |
 | INC-24 — author modules 2-5 | ⬜ Blocked on INC-23. |
 | INC-25 — author modules 6-8, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. |
 
@@ -953,8 +953,12 @@ routes **at the largest `--font-scale`, in dark mode, and in high-contrast
 mode** (the bar INC-5/INC-7 set, and where visual-heavy layouts break);
 route first-load stays within the §5.2 budget with the SVGs inline.
 
-**Status — shipped, e2e authored but not run live in this session (sandbox
-network constraint, not a code defect — detail below).**
+**Status — ✅ merged via [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57),
+CI green (44 passed, 0 failed, 0 flaky).** `e2e/training-sessions.spec.ts`
+ran for real against the live CI project — the first increment here whose
+e2e coverage was actually executed rather than left owed to a future
+session. Getting there surfaced four genuine defects, none of which a
+read-through would have caught (detail at the end of this note).
 
 - **Renderer**: `src/components/elearning/lesson-module.tsx` (objectives
   bookend, tier-filtered sections via `TIERS_FOR_DENSITY`, per-section
@@ -1028,28 +1032,76 @@ network constraint, not a code defect — detail below).**
   exactly as their migration-level guards specify; `course_test_questions_read`
   correctly lets an in-scope BHW read a published course's bank;
   `course_sessions_bhw_read` correctly resolves a BHW's own enrolled session
-  and no one else's. **Not verified live**: the actual React rendering in a
-  real browser against these RPCs. `npx playwright test
-  e2e/training-sessions.spec.ts` was attempted against the live
-  `bhw-connect-e2e` project from this session's sandbox and failed at the
-  login step — root-caused (not assumed) to the sandbox's own outbound
-  HTTPS proxy presenting a CA chain Chromium doesn't trust by default, which
-  breaks the browser's `auth.signInWithPassword` call specifically (a plain
-  `curl` to the same endpoint, and a standalone Playwright script with
-  `ignoreHTTPSErrors` explicitly set, both succeeded with the exact same
-  credentials against the exact same project — full login → `/change-password`
-  navigation confirmed working end-to-end with real data). This is a sandbox
-  networking artifact, not a code defect, and real CI has no such proxy in
-  front of it — but the full multi-actor `training-sessions.spec.ts` run
-  itself was not completed end-to-end here, so it still owes a real green
-  CI run before INC-23 starts, the same standing item every prior increment
-  in this doc has left for its own e2e coverage.
+  and no one else's. A local `npx playwright test` run from this session's
+  sandbox could not complete — root-caused (not assumed) to the sandbox's
+  outbound HTTPS proxy presenting a CA chain Chromium doesn't trust, which
+  breaks `auth.signInWithPassword` specifically; `curl` to the same endpoint
+  and a standalone Playwright script with `ignoreHTTPSErrors` both succeeded
+  with the same credentials against the same project. **CI has no such proxy
+  and ran the spec green**, so this is recorded only as a sandbox gotcha for
+  the next session, not an open item.
+- **Four real defects that only CI could find**, worth recording because
+  each was invisible to review, typecheck and lint:
+  1. *Ambiguous locator.* `getByText("CoreTakeaway fil")` matched two
+     elements — the section's own inline takeaway and the same takeaway
+     again inside the revealed summary. That duplication is by design (the
+     consolidated summary is deliberately redundant with the inline
+     takeaways), so the fix was scoping the assertion to the summary's
+     `<li>` items, not changing the renderer.
+  2. *Race against `router.refresh()`.* After completing module 1, a
+     generic button locator transiently matched both modules' complete
+     buttons: `handleModuleComplete` clears its own pending state in
+     `finally`, which re-enables the button a beat before the refreshed
+     `isDone` prop arrives and swaps it for the badge. Harmless to a human,
+     fatal to a fixed locator. Fixed by waiting on button *count* to settle.
+     Note this pending/refresh gap is pre-existing INC-12 behaviour, not
+     introduced here — it only became observable because this is the first
+     page with two complete buttons on screen at once.
+  3. *Missing index on `audit_events(subject_id, event_type)`* — see the
+     dedicated bullet below. A genuine production bug, not a test artifact.
+  4. *Unpaginated dashboard table.* Not fixed here; filed as
+     [#58](https://github.com/jongsky25/BHW-Connect-Phase-2/issues/58).
+- **Unrelated production bug found and fixed while driving CI green**:
+  `rpc_dashboard_bhw_table` (INC-6) resolves each BHW's `last_login_at` with
+  a correlated subquery filtering `audit_events` on `subject_id`, but that
+  table was only ever indexed on `actor_user_id` and `created_at`. The
+  planner therefore seq-scanned the whole audit table **once per BHW row** —
+  `EXPLAIN (ANALYZE, BUFFERS)` showed 927 loops × 10,391 rows ≈ 9.6M row
+  examinations, 386,559 buffer hits, 911ms. Cost is
+  O(bhw_count × audit_events_count) and *both factors grow forever*, so this
+  was always going to cross a threshold. Fixed in
+  `20260809000000_fix_audit_events_subject_index.sql`: same query drops to
+  17.112ms (~53×) and stops scaling with table size. This mattered beyond
+  CI — the pilot's `audit_events` is append-only, so the real admin
+  dashboard was degrading on the identical curve.
+- **CI test-project hygiene.** Even with the index, `dashboard.spec.ts` kept
+  failing: the RPC was fast (17ms, all rows returned — verified) but the page
+  renders *every* BHW in scope with no pagination, and the shared CI project
+  had accumulated **942** BHW rows in one barangay's scope from ~1000
+  historical test runs. Purged the `e2e.%`-prefixed throwaway BHWs (942 → 91)
+  after first confirming they authored nothing — zero courses, surveys,
+  announcements, flipcharts, KB entries, forum posts or certificates, only
+  per-user ephemera — deleting in FK dependency order inside a transaction,
+  with all five stable fixtures verified intact afterwards. Two things worth
+  knowing for next time: only 2 of the 22 FKs into `public.users` cascade
+  (the rest are `NO ACTION`, so a naive delete *fails* rather than silently
+  orphaning — protective, but it means any purge must unwind dependents
+  explicitly); and `ops-hardening.spec.ts`'s anonymize test leaves one
+  `anonymized-*` row per run (90 so far), which nothing purges. **The purge
+  moved the threshold, it did not remove it** — [#58](https://github.com/jongsky25/BHW-Connect-Phase-2/issues/58)
+  is the actual fix.
 - **Also applied, as prerequisites, not originally scoped to INC-22 but
   needed to get here**: INC-19 and INC-20's migrations were deployed to the
   pilot project for the first time (see the updated INC-21 Status note
   above) and to `bhw-connect-e2e`; a `training.loader` admin account was
   provisioned on the pilot project; Module 1 was actually loaded onto the
   pilot project as a draft course via `training:load --apply`.
+- **Still owed, carried into INC-23/INC-24**: axe-core on the new module
+  routes at largest font-scale / dark mode / high-contrast, and the §5.2
+  route-weight budget with SVGs inline — `lighthouserc.js` still scopes the
+  budget check to `/` only and names authenticated routes as its own
+  follow-up. And the human review of Module 1 rendered in the real app,
+  which is INC-21's approval gate and blocks INC-24's authoring, not INC-23.
 
 ---
 
