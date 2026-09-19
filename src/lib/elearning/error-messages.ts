@@ -23,6 +23,11 @@ export type ElearningErrorKey =
   | "contentAlreadyStartedError"
   | "completeModulesBeforePosttestError"
   | "courseHasNoTestQuestionsError"
+  | "invalidLessonDensityError"
+  | "sessionNotFoundError"
+  | "sessionNoLongerScheduledError"
+  | "userNotBhwError"
+  | "bhwOutOfScopeError"
   | "genericError";
 
 // rpc_course_*/rpc_assessment_* raise plain Postgres exceptions (same
@@ -55,5 +60,10 @@ export function mapElearningRpcError(message: string | undefined): ElearningErro
   if (message.includes("content already started")) return "contentAlreadyStartedError";
   if (message.includes("complete all modules before the posttest")) return "completeModulesBeforePosttestError";
   if (message.includes("course has no test questions")) return "courseHasNoTestQuestionsError";
+  if (message.includes("invalid lesson density")) return "invalidLessonDensityError";
+  if (message.includes("session is no longer scheduled")) return "sessionNoLongerScheduledError";
+  if (message.includes("session not found")) return "sessionNotFoundError";
+  if (message.includes("user is not a BHW")) return "userNotBhwError";
+  if (message.includes("BHW out of scope")) return "bhwOutOfScopeError";
   return "genericError";
 }
