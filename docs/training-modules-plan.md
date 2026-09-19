@@ -15,7 +15,7 @@ for this codebase.
 | INC-20 — schema: pedagogy layer | ✅ Merged — migration `supabase/migrations/20260808000000_inc20_training_pedagogy.sql`. Verified against a real local Postgres 16 replay of the full migration history, not just reviewed (see the Status note inside the INC-20 section below). |
 | INC-21 — loader, style guide, Module 1 (2nd approval gate) | ✅ Merged — [PR #56](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/56). `--dry-run`/`--apply` were subsequently run for real against the live pilot project in the INC-22 session (see the Status note inside the INC-21 section below) — the one item its own Status note had left open. |
 | INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
-| INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)), **approval gate still open**. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot project has **not** been re-loaded since the merge and still serves the displaced version — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
+| INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot and rendering at Detalyado since 19 Sep — **awaiting the user's yes**. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | ⬜ Blocked on INC-21r. |
 | INC-27 — audio narration + read-along | ⬜ Blocked on INC-26. |
 | INC-28 — animated concept clips | ⬜ Blocked on INC-27. |
@@ -1367,6 +1367,11 @@ reviewable Detalyado render, and none of them announces itself:
    `course_session`'s `lesson_density`. No session, no `deep` tier — and
    nothing in the UI says a tier was withheld, which is exactly what makes
    this failure mode quiet.
+
+All three were closed on the pilot on 19 September 2026: the loader was
+re-run, both flags turned on, a `long`-density session created, and
+`demo.viewer` and `review.bhw` enrolled in it. Live ids are in
+`docs/session-handoff.md`.
 
 `scripts/training-review-setup.mjs` (`npm run training:review-setup`) closes
 gates 2 and 3 in one idempotent command — see "Reviewing a module at a chosen
