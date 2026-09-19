@@ -123,11 +123,20 @@ pairing (the existing "quiz" is a per-module pass/fail gate, not a
 measurement instrument).
 
 The source material (`DAY 1 - PART 1 PRESENTATION.pdf`, the DOH facilitator
-guide, the DOH reference manual) is **reference for facts only** — the user
-rejected its bulleted information-transfer style outright. The replacement
-standard is §A below: scenario-driven, visual, bookended by stated
-objectives and a retrieval-based summary, with an explicit
-competency-observation guide for the facilitator/assessor.
+guide, the DOH reference manual) is now checked in as transcriptions at
+**[`docs/source-material/day1-basic-competencies/`](./source-material/day1-basic-competencies/)**
+— read that folder's README before planning or authoring any module; it
+carries the authoritative TESDA competency-and-hours table, which §C below
+predates.
+
+The user rejected the deck's bulleted information-transfer **style**
+outright — but not its scope. The deck is the basis and starting point of
+the course, and the two manuals supplement it; the full breadth of each
+topic's learning objectives is to be delivered, minus genuine redundancy.
+The replacement standard for *how* it is delivered is §A below:
+scenario-driven, visual, bookended by stated objectives and a
+retrieval-based summary, with an explicit competency-observation guide for
+the facilitator/assessor.
 
 First use case: **Chapter 1, Basic Competencies ("Ang BHW at ang Kanilang
 Barangay")** — 8 modules (§C). "System registration" means
