@@ -723,7 +723,15 @@
     "pretestScoreMessage": "Pretest score: {score}%.",
     "posttestScoreMessage": "Posttest score: {score}%.",
     "scoreDeltaMessage": "Change from pretest to posttest: {delta}%.",
-    "requiredFieldError": "Answer every question before submitting."
+    "requiredFieldError": "Answer every question before submitting.",
+    "readModeLabel": "Read",
+    "slideModeLabel": "Islide",
+    "islideRegionLabel": "Slide view",
+    "islideSlidePositionLabel": "{label} — slide {current} of {total}",
+    "islideProgressLabel": "Slide {current} of {total}",
+    "islidePreviousAction": "Previous slide",
+    "islideNextAction": "Next slide",
+    "islideGoToAction": "Go to slide {number}"
   },
   "assessments": {
     "heading": "Assessments",

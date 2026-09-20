@@ -4,7 +4,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { LessonModule } from "@/components/elearning/lesson-module";
+import { LessonModule, type LessonPosition } from "@/components/elearning/lesson-module";
+import { LessonSlides } from "@/components/elearning/lesson-slides";
 import { TestForm, TestScores } from "@/components/elearning/pre-post-test";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type {
@@ -55,6 +56,15 @@ export function CourseDetail({
   const router = useRouter();
   const [pendingModuleId, setPendingModuleId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  // INC-26: Basahin/Islide is a per-module toggle, not a page-level one —
+  // each module.map() row owns its own view and reading position, keyed by
+  // module id, so switching one module's renderer never touches another's.
+  const [moduleView, setModuleView] = useState<Record<string, "read" | "slides">>(
+    {},
+  );
+  const [modulePosition, setModulePosition] = useState<
+    Record<string, LessonPosition>
+  >({});
   const [quizResult, setQuizResult] = useState<
     Record<string, { passed: boolean; score: number; attemptsLeft: number }>
   >({});
@@ -86,6 +96,14 @@ export function CourseDetail({
 
   function progressFor(moduleId: string) {
     return moduleProgress.find((p) => p.module_id === moduleId) ?? null;
+  }
+
+  function setModuleViewFor(moduleId: string, view: "read" | "slides") {
+    setModuleView((prev) => ({ ...prev, [moduleId]: view }));
+  }
+
+  function setModulePositionFor(moduleId: string, position: LessonPosition) {
+    setModulePosition((prev) => ({ ...prev, [moduleId]: position }));
   }
 
   async function handleModuleComplete(moduleId: string) {
@@ -190,20 +208,64 @@ export function CourseDetail({
                 key={module.id}
                 className="flex flex-col gap-3 rounded-md border border-ink/10 p-4"
               >
-                <h2 className="font-medium text-ink">{title}</h2>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h2 className="font-medium text-ink">{title}</h2>
+
+                  {module.type === "text" && module.lesson ? (
+                    <div className="inline-flex overflow-hidden rounded-full border border-ink/15 text-sm">
+                      {(["read", "slides"] as const).map((view) => (
+                        <button
+                          key={view}
+                          type="button"
+                          aria-pressed={(moduleView[module.id] ?? "read") === view}
+                          onClick={() => setModuleViewFor(module.id, view)}
+                          className={`px-3 py-1 font-medium transition-colors ${
+                            (moduleView[module.id] ?? "read") === view
+                              ? "bg-primary text-on-primary"
+                              : "bg-transparent text-ink hover:bg-ink/5"
+                          }`}
+                        >
+                          {view === "read" ? tt("readModeLabel") : tt("slideModeLabel")}
+                        </button>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
 
                 {module.type === "text" && module.lesson ? (
-                  <LessonModule
-                    module={module}
-                    visuals={visuals.filter((v) => v.module_id === module.id)}
-                    density={density}
-                    locale={locale}
-                    isDone={isDone}
-                    pending={pendingModuleId === module.id}
-                    onComplete={() => handleModuleComplete(module.id)}
-                    completedLabel={t("completedLabel")}
-                    markCompleteLabel={t("markCompleteAction")}
-                  />
+                  (moduleView[module.id] ?? "read") === "slides" ? (
+                    <LessonSlides
+                      module={module}
+                      visuals={visuals.filter((v) => v.module_id === module.id)}
+                      density={density}
+                      locale={locale}
+                      isDone={isDone}
+                      pending={pendingModuleId === module.id}
+                      onComplete={() => handleModuleComplete(module.id)}
+                      completedLabel={t("completedLabel")}
+                      markCompleteLabel={t("markCompleteAction")}
+                      initialPosition={modulePosition[module.id]}
+                      onPositionChange={(position) =>
+                        setModulePositionFor(module.id, position)
+                      }
+                    />
+                  ) : (
+                    <LessonModule
+                      module={module}
+                      visuals={visuals.filter((v) => v.module_id === module.id)}
+                      density={density}
+                      locale={locale}
+                      isDone={isDone}
+                      pending={pendingModuleId === module.id}
+                      onComplete={() => handleModuleComplete(module.id)}
+                      completedLabel={t("completedLabel")}
+                      markCompleteLabel={t("markCompleteAction")}
+                      initialPosition={modulePosition[module.id]}
+                      onPositionChange={(position) =>
+                        setModulePositionFor(module.id, position)
+                      }
+                    />
+                  )
                 ) : (
                   <>
                     {module.type === "text" ? (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { sanitizeSvgMarkup } from "@/lib/elearning/svg-allowlist";
 import {
   TIERS_FOR_DENSITY,
@@ -11,6 +11,14 @@ import {
   type LessonDensity,
   type LessonSection,
 } from "@/lib/elearning/types";
+import { useVisiblePosition } from "./use-visible-position";
+
+// INC-26: shared position semantics between LessonModule (this file) and
+// LessonSlides (lesson-slides.tsx), so the Basahin/Islide toggle in
+// course-detail.tsx can hand the "current section" from one renderer to the
+// other. -1 = the objectives bookend, 0..sections.length-1 = that section,
+// sections.length = the closing summary / mark-complete block.
+export type LessonPosition = number;
 
 type Props = {
   module: CourseModule;
@@ -22,6 +30,10 @@ type Props = {
   onComplete: () => void;
   completedLabel: string;
   markCompleteLabel: string;
+  // INC-26 position preservation. Omit either to opt out (e.g. a first
+  // render with nothing to restore).
+  initialPosition?: LessonPosition;
+  onPositionChange?: (position: LessonPosition) => void;
 };
 
 // §A.1/§A.2/§A.5/§A.6 BHW lesson renderer: objectives bookend -> tiered
@@ -39,8 +51,9 @@ export function LessonModule({
   onComplete,
   completedLabel,
   markCompleteLabel,
+  initialPosition,
+  onPositionChange,
 }: Props) {
-  const t = useTranslations("training");
   const tiers = TIERS_FOR_DENSITY[density];
   const objectives =
     locale === "en" ? module.objectives_en : module.objectives_fil;
@@ -48,55 +61,103 @@ export function LessonModule({
     tiers.includes(section.tier),
   );
 
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const objectivesRef = useRef<HTMLDivElement | null>(null);
+  const sectionRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const summaryRef = useRef<HTMLDivElement | null>(null);
+
+  useVisiblePosition(
+    rootRef,
+    onPositionChange,
+    // A thin band near the vertical middle of the viewport, rather than
+    // "any overlap", so the reported position is "what's actually being
+    // read" and not just "what scrolled into the bottom edge".
+    { observeRoot: "viewport", rootMargin: "-40% 0px -40% 0px", threshold: 0 },
+  );
+
+  const didRestorePosition = useRef(false);
+  useEffect(() => {
+    if (didRestorePosition.current) return;
+    didRestorePosition.current = true;
+    if (initialPosition === undefined) return;
+    const target =
+      initialPosition === -1
+        ? objectivesRef.current
+        : initialPosition >= sections.length
+          ? summaryRef.current
+          : (sectionRefs.current[initialPosition] ?? null);
+    target?.scrollIntoView({ block: "start" });
+    // Restore once, on mount — a later prop change (e.g. the other renderer
+    // moved on) shouldn't yank the BHW's own scroll position out from under
+    // them.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <div className="flex flex-col gap-5">
+    <div ref={rootRef} className="flex flex-col gap-5">
       {objectives.length > 0 ? (
-        <div className="flex flex-col gap-2 rounded-md border border-primary-text/30 bg-primary/5 p-4">
-          <h3 className="font-medium text-ink">{t("objectivesHeading")}</h3>
-          <ul className="list-disc pl-5 text-sm text-ink/80">
-            {objectives.map((objective, index) => (
-              <li key={index}>{objective}</li>
-            ))}
-          </ul>
+        <div ref={objectivesRef} data-lesson-position={-1}>
+          <LessonObjectives objectives={objectives} />
         </div>
       ) : null}
 
       {sections.map((section, index) => (
-        <LessonSectionBlock
+        <div
           key={index}
-          section={section}
-          visual={
-            visuals.find(
-              (v) =>
-                v.position === section.visual_position &&
-                tiers.includes(v.tier),
-            ) ?? null
-          }
-          locale={locale}
-        />
+          ref={(el) => {
+            sectionRefs.current[index] = el;
+          }}
+          data-lesson-position={index}
+        >
+          <LessonSectionBlock
+            section={section}
+            visual={
+              visuals.find(
+                (v) =>
+                  v.position === section.visual_position &&
+                  tiers.includes(v.tier),
+              ) ?? null
+            }
+            locale={locale}
+          />
+        </div>
       ))}
 
-      <ClosingSummary sections={sections} locale={locale} />
+      <div
+        ref={summaryRef}
+        data-lesson-position={sections.length}
+        className="flex flex-col gap-5"
+      >
+        <ClosingSummary sections={sections} locale={locale} />
 
-      {isDone ? (
-        <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-success">
-          {completedLabel}
-        </span>
-      ) : (
-        <button
-          type="button"
-          disabled={pending}
-          onClick={onComplete}
-          className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
-        >
-          {markCompleteLabel}
-        </button>
-      )}
+        <LessonCompleteControl
+          isDone={isDone}
+          pending={pending}
+          onComplete={onComplete}
+          completedLabel={completedLabel}
+          markCompleteLabel={markCompleteLabel}
+        />
+      </div>
     </div>
   );
 }
 
-function LessonSectionBlock({
+export function LessonObjectives({ objectives }: { objectives: string[] }) {
+  const t = useTranslations("training");
+
+  return (
+    <div className="flex flex-col gap-2 rounded-md border border-primary-text/30 bg-primary/5 p-4">
+      <h3 className="font-medium text-ink">{t("objectivesHeading")}</h3>
+      <ul className="list-disc pl-5 text-sm text-ink/80">
+        {objectives.map((objective, index) => (
+          <li key={index}>{objective}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export function LessonSectionBlock({
   section,
   visual,
   locale,
@@ -129,7 +190,7 @@ function LessonSectionBlock({
   );
 }
 
-function LessonVisual({
+export function LessonVisual({
   visual,
   locale,
 }: {
@@ -168,7 +229,10 @@ function LessonVisual({
   );
 }
 
-function RetrievalCheck({
+// §A.5 retrieval practice: local-only. `selected`/`submitted` are plain
+// useState with no backend call anywhere in this component — nothing is
+// persisted, scored, or gated on this check, in either lesson renderer.
+export function RetrievalCheck({
   check,
   locale,
 }: {
@@ -226,7 +290,7 @@ function RetrievalCheck({
   );
 }
 
-function ClosingSummary({
+export function ClosingSummary({
   sections,
   locale,
 }: {
@@ -269,5 +333,34 @@ function ClosingSummary({
         </div>
       )}
     </div>
+  );
+}
+
+export function LessonCompleteControl({
+  isDone,
+  pending,
+  onComplete,
+  completedLabel,
+  markCompleteLabel,
+}: {
+  isDone: boolean;
+  pending: boolean;
+  onComplete: () => void;
+  completedLabel: string;
+  markCompleteLabel: string;
+}) {
+  return isDone ? (
+    <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-success">
+      {completedLabel}
+    </span>
+  ) : (
+    <button
+      type="button"
+      disabled={pending}
+      onClick={onComplete}
+      className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
+    >
+      {markCompleteLabel}
+    </button>
   );
 }
