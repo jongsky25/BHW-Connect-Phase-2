@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import {
   ClosingSummary,
+  findAudioForSection,
   LessonCompleteControl,
   LessonObjectives,
   LessonSectionBlock,
@@ -12,6 +13,7 @@ import {
 import {
   TIERS_FOR_DENSITY,
   type CourseModule,
+  type CourseModuleAudio,
   type CourseModuleVisual,
   type LessonDensity,
 } from "@/lib/elearning/types";
@@ -20,6 +22,9 @@ import { useVisiblePosition } from "./use-visible-position";
 type Props = {
   module: CourseModule;
   visuals: CourseModuleVisual[];
+  // INC-27, optional — see lesson-module.tsx's Props for the full comment;
+  // same section_index/language keying, same opt-in-by-omission.
+  audios?: CourseModuleAudio[];
   density: LessonDensity;
   locale: string;
   isDone: boolean;
@@ -52,6 +57,7 @@ type Slide = {
 export function LessonSlides({
   module,
   visuals,
+  audios,
   density,
   locale,
   isDone,
@@ -66,9 +72,11 @@ export function LessonSlides({
   const tiers = TIERS_FOR_DENSITY[density];
   const objectives =
     locale === "en" ? module.objectives_en : module.objectives_fil;
-  const sections = (module.lesson?.sections ?? []).filter((section) =>
-    tiers.includes(section.tier),
-  );
+  // originalIndex (see lesson-module.tsx's identical comment) is the
+  // authored-order key course_module_audio.section_index refers to.
+  const sections = (module.lesson?.sections ?? [])
+    .map((section, originalIndex) => ({ section, originalIndex }))
+    .filter(({ section }) => tiers.includes(section.tier));
 
   const slides: Slide[] = [];
   if (objectives.length > 0) {
@@ -79,7 +87,7 @@ export function LessonSlides({
       content: <LessonObjectives objectives={objectives} />,
     });
   }
-  sections.forEach((section, index) => {
+  sections.forEach(({ section, originalIndex }, index) => {
     const heading =
       locale === "en" ? section.heading_en : section.heading_fil;
     slides.push({
@@ -96,6 +104,7 @@ export function LessonSlides({
                 tiers.includes(v.tier),
             ) ?? null
           }
+          audio={findAudioForSection(audios, originalIndex, locale)}
           locale={locale}
         />
       ),
@@ -107,7 +116,10 @@ export function LessonSlides({
     label: t("summaryPromptHeading"),
     content: (
       <div className="flex flex-col gap-5">
-        <ClosingSummary sections={sections} locale={locale} />
+        <ClosingSummary
+          sections={sections.map(({ section }) => section)}
+          locale={locale}
+        />
         <LessonCompleteControl
           isDone={isDone}
           pending={pending}

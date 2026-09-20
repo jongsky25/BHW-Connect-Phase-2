@@ -10,6 +10,7 @@ import { TestForm, TestScores } from "@/components/elearning/pre-post-test";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type {
   CourseModule,
+  CourseModuleAudio,
   CourseModuleVisual,
   CourseProgressStatus,
   CourseTestAttempt,
@@ -26,6 +27,7 @@ type Props = {
   modules: CourseModule[];
   questions: QuizQuestion[];
   visuals: CourseModuleVisual[];
+  audios: CourseModuleAudio[];
   testQuestions: CourseTestQuestion[];
   testAttempts: CourseTestAttempt[];
   density: LessonDensity;
@@ -42,6 +44,7 @@ export function CourseDetail({
   modules,
   questions,
   visuals,
+  audios,
   testQuestions,
   testAttempts: initialTestAttempts,
   density,
@@ -237,6 +240,7 @@ export function CourseDetail({
                     <LessonSlides
                       module={module}
                       visuals={visuals.filter((v) => v.module_id === module.id)}
+                      audios={audios.filter((a) => a.module_id === module.id)}
                       density={density}
                       locale={locale}
                       isDone={isDone}
@@ -253,6 +257,7 @@ export function CourseDetail({
                     <LessonModule
                       module={module}
                       visuals={visuals.filter((v) => v.module_id === module.id)}
+                      audios={audios.filter((a) => a.module_id === module.id)}
                       density={density}
                       locale={locale}
                       isDone={isDone}
