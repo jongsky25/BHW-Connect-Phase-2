@@ -67,10 +67,37 @@ was serving Module 1 from before the re-write. A rendered page did.
 
 ## 2. Pilot project — live state
 
-Supabase project ref **`ltzicxyefizxoqhfuuzc`**, org unit **"Los Baños"**.
-Not reachable through the Supabase MCP tools in this workspace (that
-connection is scoped to a different org and returns "You do not have
-permission"). Reach it through the loader scripts over PostgREST instead.
+Supabase project ref **`ltzicxyefizxoqhfuuzc`**, org unit **"Los Baños"**,
+org `jyxsargubbcnzffevzpv` ("gibs-21's Project"). Reachable through the
+Supabase MCP tools in this workspace as of 20 Sep 2026 — see below. Also
+reachable through the loader scripts over PostgREST, independently.
+
+**History, for whoever hits this next:** earlier the same day, the Supabase
+MCP connector was authenticated as a *different* Supabase identity — one
+whose only org, `jongsky25's Org` (`rparoyuerqqrozxehztm`), holds five
+unrelated projects (`jongsky25's Project`, `bhw-connect`, `KaniManong`,
+`koica-journey-tracker`, `ofis-dev`) and not the pilot. `list_projects` didn't
+list it and `get_project` returned a permission error. That was a login
+problem, not a design constraint: the user reconnected the Supabase
+connector under the account that actually owns `ltzicxyefizxoqhfuuzc`, and
+`get_project`/`list_migrations`/`apply_migration` all work against it now.
+If a future session hits the same permission error, check which Supabase
+account the connector is authenticated as before concluding the MCP path is
+unusable — it may just be the wrong login, the same way it was here. The
+loader credential (`KB_LOADER_USERNAME`/`PASSWORD`/`ANON_KEY`) was never the
+issue — that's a PostgREST application login and was genuinely present the
+whole time; it only ever unlocked `training:load`/`training:review-setup`,
+never schema/migration access, which is by design (see `docs/credentials.md`
+§"Do not put `SUPABASE_SERVICE_ROLE_KEY` here").
+
+**INC-23's migration is now applied to the pilot**
+(`20260810000000_inc23_facilitator_progress_read.sql`, pushed via
+`apply_migration` and verified against `pg_policies` on 20 Sep 2026). Still
+owed: the same file against the CI project (`bhw-connect-e2e`, ref unknown to
+either Supabase account this session has checked), and INC-29's migration
+(`20260920000000_inc29_course_progress_reset.sql`) — confirmed missing from
+the pilot via `list_migrations` in the same session but out of scope for
+what was being fixed, not pushed yet.
 
 | Thing | Value |
 | --- | --- |
