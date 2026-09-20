@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EntryForm } from "@/components/kb/entry-form";
 import { createClient } from "@/lib/supabase/server";
 
@@ -19,5 +21,19 @@ export default async function NewKbEntryPage({
 
   const prefill = unmatched ? { sourceUnmatchedQuestionId: unmatched.id, text: unmatched.text } : undefined;
 
-  return <EntryForm mode="create" categories={categories ?? []} owners={owners ?? []} prefill={prefill} />;
+  const t = await getTranslations("admin.kbEntries");
+  const tCrumbs = await getTranslations("breadcrumbs");
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/admin/kb/entries" },
+          { label: t("newAction") },
+        ]}
+      />
+      <EntryForm mode="create" categories={categories ?? []} owners={owners ?? []} prefill={prefill} />
+    </div>
+  );
 }

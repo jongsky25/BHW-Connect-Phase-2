@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { STABLE_BHW } from "./fixtures/auth";
 
 test("home page renders the foundation shell in Filipino by default", async ({ page }) => {
   await page.goto("/");
@@ -24,4 +25,41 @@ test("privacy link navigates to the privacy placeholder page", async ({ page }) 
 
   await expect(page).toHaveURL("/privacy");
   await expect(page.getByRole("heading", { name: "Patakaran sa Privacy" })).toBeVisible();
+});
+
+test("the header app name stays on the public landing page for a signed-out visitor", async ({ page }) => {
+  await page.goto("/privacy");
+
+  await page.getByRole("link", { name: "BHW Connect" }).click();
+
+  await expect(page).toHaveURL("/");
+});
+
+test("a signed-in BHW's header app name goes to /home, not the public landing page", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+  await page.goto("/settings");
+  await page.getByRole("link", { name: "BHW Connect" }).click();
+
+  await expect(page).toHaveURL("/home");
+});
+
+test("breadcrumbs let a signed-in BHW navigate back up from a nested page", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+  await page.goto("/kb");
+  const breadcrumb = page.getByRole("navigation", { name: "Breadcrumb" });
+  await expect(breadcrumb).toBeVisible();
+
+  await breadcrumb.getByRole("link", { name: "← Home" }).click();
+
+  await expect(page).toHaveURL("/home");
 });

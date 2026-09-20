@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import { MarkAllReadButton } from "@/components/notifications/mark-all-read-button";
 import { NotificationItem } from "@/components/notifications/notification-item";
@@ -28,6 +29,7 @@ export default async function NotificationsPage() {
   }
 
   const t = await getTranslations("notifications");
+  const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
 
   const { data: notifications } = await supabase
@@ -41,6 +43,7 @@ export default async function NotificationsPage() {
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
