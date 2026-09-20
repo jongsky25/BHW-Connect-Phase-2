@@ -155,7 +155,8 @@
       "surveys": "Surveys",
       "courses": "Courses",
       "forum": "Forum",
-      "flipcharts": "Flip Charts"
+      "flipcharts": "Flip Charts",
+      "courseProgress": "Course progress"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -647,6 +648,35 @@
       "onlyDraftSubmittableError": "Only a draft can be submitted for review.",
       "onlyInReviewDecidableError": "Only a chart in review can be approved or rejected.",
       "publishedNotDeletableError": "A published flip chart can't be deleted.",
+      "genericError": "Something went wrong. Please try again."
+    },
+    "courseProgress": {
+      "heading": "Reset course progress",
+      "description": "A BHW who opens a course before a session or pretest gate exists can get stuck: content progress exists, so the pretest is correctly refused, and there's no way to clear it short of resetting from here. This clears one BHW's progress in one course so they can start over with a clean pretest.",
+      "colBhw": "BHW",
+      "colCourse": "Course",
+      "colStatus": "Status",
+      "colModules": "Modules done",
+      "colTests": "Pre/post scores",
+      "colActions": "Actions",
+      "statusInProgress": "In progress",
+      "statusContentCompleted": "Content completed",
+      "statusCertified": "Certified",
+      "statusFailedAssessment": "Failed assessment",
+      "pretestLabel": "Pretest:",
+      "posttestLabel": "Posttest:",
+      "notTaken": "not taken",
+      "resetAction": "Reset progress",
+      "resetConfirmAction": "Yes, reset",
+      "resetting": "Resetting…",
+      "cancelAction": "Cancel",
+      "resetWarning": "This permanently deletes this BHW's progress and test attempts for this course. They'll start over with a clean pretest gate. This can't be undone.",
+      "resetSuccessNotice": "Reset {username}'s progress: {modules} module(s) and {tests} test attempt(s) cleared.",
+      "dismiss": "Dismiss",
+      "empty": "No course progress recorded yet.",
+      "assessmentBlocksResetError": "Can't reset: an assessment for this BHW and course is pending, assigned, or already passed. Resolve it first.",
+      "targetNotBhwError": "That user isn't a BHW.",
+      "courseNotFoundError": "That course wasn't found.",
       "genericError": "Something went wrong. Please try again."
     }
   },

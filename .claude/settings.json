@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run doctor)",
+      "Bash(npm run doctor:*)",
+      "Bash(npm run training:load:*)",
+      "Bash(npm run training:review-setup:*)",
+      "Bash(npm run kb:check-sources:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run typecheck)",
+      "Bash(npm run test)",
+      "Bash(npm run test:*)",
+      "Bash(npm install)",
+      "Bash(npm ci)"
+    ]
+  }
+}
