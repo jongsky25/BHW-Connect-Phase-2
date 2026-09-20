@@ -16,7 +16,7 @@ for this codebase.
 | INC-21 — loader, style guide, Module 1 (2nd approval gate) | ✅ Merged — [PR #56](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/56). `--dry-run`/`--apply` were subsequently run for real against the live pilot project in the INC-22 session (see the Status note inside the INC-21 section below) — the one item its own Status note had left open. |
 | INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
 | INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot and rendering at Detalyado since 19 Sep — **awaiting the user's yes**. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
-| INC-26 — slide mode | 🔶 Code complete — [PR #65](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/65), unmerged. Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit). No carousel dependency added. |
+| INC-26 — slide mode | 🔶 Code complete — [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64), unmerged. Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit). No carousel dependency added. |
 | INC-27 — audio narration + read-along | ⬜ Blocked on INC-26. |
 | INC-28 — animated concept clips | ⬜ Blocked on INC-27. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
@@ -1438,7 +1438,7 @@ and swipe navigation both work; axe-core clean at the largest `--font-scale`,
 in dark mode and in high-contrast mode; no new runtime dependency, or a
 stated reason for one.
 
-**Status — code complete, [PR #65](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/65)
+**Status — code complete, [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64)
 open, unmerged.** `LessonSlides` (`lesson-slides.tsx`) is a same-props
 sibling of `LessonModule`, reusing `LessonSectionBlock`/`LessonVisual`/
 `RetrievalCheck`/`ClosingSummary` unchanged (exported, not forked) plus two
