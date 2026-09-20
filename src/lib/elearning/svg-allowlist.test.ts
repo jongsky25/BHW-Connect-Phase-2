@@ -97,6 +97,21 @@ describe("validateSvgMarkup", () => {
     const result = validateSvgMarkup(`<svg viewBox="0 0 640 400"><rect data-foo="bar" /></svg>`);
     expect(result.ok).toBe(false);
   });
+
+  it("accepts a data-scene-step attribute holding a positive integer", () => {
+    expect(
+      validateSvgMarkup(`<svg viewBox="0 0 640 400"><g data-scene-step="1"><circle r="1" /></g></svg>`),
+    ).toEqual({ ok: true });
+  });
+
+  it("rejects a data-scene-step value that isn't a positive integer", () => {
+    const result = validateSvgMarkup(`<svg viewBox="0 0 640 400"><g data-scene-step="0"></g></svg>`);
+    expect(result.ok).toBe(false);
+    if (!result.ok) expect(result.problems.some((p) => p.includes("data-scene-step"))).toBe(true);
+
+    const notANumber = validateSvgMarkup(`<svg viewBox="0 0 640 400"><g data-scene-step="one"></g></svg>`);
+    expect(notANumber.ok).toBe(false);
+  });
 });
 
 describe("sanitizeSvgMarkup", () => {

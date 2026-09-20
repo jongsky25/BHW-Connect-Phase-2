@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  bodyIndexFromActive,
   buildNarrationZones,
   findActiveTimingIndex,
   splitIntoSentences,
@@ -54,6 +55,30 @@ describe("buildNarrationZones", () => {
   it("omits a blank heading or takeaway rather than emitting an empty zone", () => {
     const zones = buildNarrationZones({ heading: "", body: "Isang pangungusap.", takeaway: "   " });
     expect(zones).toEqual([{ zone: "body", index: 0, text: "Isang pangungusap." }]);
+  });
+});
+
+describe("bodyIndexFromActive", () => {
+  // heading, body 0, body 1, body 2, takeaway
+  const zones = buildNarrationZones({
+    heading: "Panimula",
+    body: "Una. Pangalawa. Pangatlo.",
+    takeaway: "Tandaan ito.",
+  });
+
+  it("is -1 before the first body sentence is reached", () => {
+    expect(bodyIndexFromActive(zones, -1)).toBe(-1);
+    expect(bodyIndexFromActive(zones, 0)).toBe(-1); // still on the heading zone
+  });
+
+  it("tracks the highest body index reached so far", () => {
+    expect(bodyIndexFromActive(zones, 1)).toBe(0);
+    expect(bodyIndexFromActive(zones, 2)).toBe(1);
+    expect(bodyIndexFromActive(zones, 3)).toBe(2);
+  });
+
+  it("stays at the last body index once the takeaway zone is reached", () => {
+    expect(bodyIndexFromActive(zones, 4)).toBe(2);
   });
 });
 

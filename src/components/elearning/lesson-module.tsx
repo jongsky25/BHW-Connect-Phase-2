@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
+import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { sanitizeSvgMarkup } from "@/lib/elearning/svg-allowlist";
 import {
   TIERS_FOR_DENSITY,
@@ -12,7 +13,7 @@ import {
   type LessonDensity,
   type LessonSection,
 } from "@/lib/elearning/types";
-import { LessonNarration } from "./lesson-narration";
+import { LessonNarration, type NarrationVisualProgress } from "./lesson-narration";
 import { useVisiblePosition } from "./use-visible-position";
 
 // INC-26: shared position semantics between LessonModule (this file) and
@@ -204,8 +205,6 @@ export function LessonSectionBlock({
   const body = locale === "en" ? section.body_en : section.body_fil;
   const takeaway = locale === "en" ? section.takeaway_en : section.takeaway_fil;
 
-  const visualNode = visual ? <LessonVisual visual={visual} locale={locale} /> : null;
-
   return (
     <div className="flex flex-col gap-3">
       {audio ? (
@@ -214,14 +213,20 @@ export function LessonSectionBlock({
           heading={heading}
           body={body}
           takeaway={takeaway}
-          visual={visualNode}
+          visual={
+            visual
+              ? (progress: NarrationVisualProgress) => (
+                  <LessonVisual visual={visual} locale={locale} narrationProgress={progress} />
+                )
+              : undefined
+          }
         />
       ) : (
         <>
           <h3 className="font-medium text-ink">{heading}</h3>
           <p className="whitespace-pre-wrap text-sm text-ink/80">{body}</p>
 
-          {visualNode}
+          {visual ? <LessonVisual visual={visual} locale={locale} /> : null}
 
           {takeaway ? (
             <p className="border-l-2 border-secondary pl-3 text-sm font-medium text-ink">
@@ -238,18 +243,57 @@ export function LessonSectionBlock({
   );
 }
 
+// INC-28: whether a `data-scene-step="N"` element should be shown yet.
+// Exported for direct unit testing rather than only through the DOM effect
+// that calls it. Reduced motion, no narration progress at all (the no-audio
+// lesson path), and "not currently playing" (before the BHW presses play,
+// or after narration ends) all mean the same thing here — show the finished
+// picture, never an animation the DoD requires a static equivalent for.
+export function isSceneStepRevealed(
+  step: number,
+  progress: NarrationVisualProgress | undefined,
+  reducedMotion: boolean,
+): boolean {
+  if (!progress || reducedMotion || !progress.playing) return true;
+  return progress.bodyIndex >= step;
+}
+
 export function LessonVisual({
   visual,
   locale,
+  narrationProgress,
 }: {
   visual: CourseModuleVisual;
   locale: string;
+  // INC-28, optional: only passed by the narrated lesson path (see
+  // LessonSectionBlock), so a scene with data-scene-step markers can build
+  // up as the narration reaches each part. Absent elsewhere, which
+  // isSceneStepRevealed treats as "show everything".
+  narrationProgress?: NarrationVisualProgress;
 }) {
   const caption = locale === "en" ? visual.caption_en : visual.caption_fil;
   const altText = locale === "en" ? visual.alt_text_en : visual.alt_text_fil;
   const sanitized = visual.svg_markup
     ? sanitizeSvgMarkup(visual.svg_markup)
     : null;
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const reducedMotion = prefersReducedMotion();
+    container.querySelectorAll<HTMLElement>("[data-scene-step]").forEach((el) => {
+      const step = Number(el.getAttribute("data-scene-step"));
+      const revealed = isSceneStepRevealed(step, narrationProgress, reducedMotion);
+      el.setAttribute("data-revealed", revealed ? "true" : "false");
+    });
+    // Deliberately depends on the primitives, not `narrationProgress` itself
+    // — LessonNarration builds that object fresh every render (once per
+    // requestAnimationFrame tick while playing), so depending on the object
+    // would re-run this DOM walk 60 times a second instead of only when the
+    // reveal state actually changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sanitized, narrationProgress?.bodyIndex, narrationProgress?.playing]);
 
   if (!sanitized && !visual.image_url) {
     return null;
@@ -259,6 +303,7 @@ export function LessonVisual({
     <figure className="flex flex-col gap-2 rounded-md border border-ink/10 p-3">
       {sanitized ? (
         <div
+          ref={containerRef}
           role="img"
           aria-label={altText}
           className="text-ink"

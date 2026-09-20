@@ -65,11 +65,15 @@ const ALLOWED_ATTRS = new Set([
   "orient",
   "refX",
   "refY",
+  // INC-28: see src/lib/elearning/svg-allowlist.ts's copy of this constant.
+  "data-scene-step",
 ]);
 
 const FORBIDDEN_TAGS = ["script", "foreignObject", "image", "use"];
 
 const HEX_COLOR_RE = /#(?:[0-9a-fA-F]{3}){1,2}\b/;
+
+const SCENE_STEP_VALUE_RE = /^[1-9][0-9]*$/;
 
 const TAG_RE = /<\/?([a-zA-Z][a-zA-Z0-9]*)((?:\s+[^<>]*)?)\/?>/g;
 const ATTR_RE = /([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*"([^"]*)"|([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*'([^']*)'/g;
@@ -134,6 +138,10 @@ export function validateSvgMarkup(markup) {
 
       if (!ALLOWED_ATTRS.has(attrName)) {
         problems.push(`<${tagName}> has attribute "${attrName}" which is not in the allowlist`);
+      }
+
+      if (attrName === "data-scene-step" && !SCENE_STEP_VALUE_RE.test(attrValue)) {
+        problems.push(`<${tagName}> attribute "data-scene-step" must be a positive integer, got "${attrValue}"`);
       }
 
       if (HEX_COLOR_RE.test(attrValue)) {

@@ -1,9 +1,9 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { NextIntlClientProvider } from "next-intl";
-import { beforeAll, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeAll, describe, expect, it, vi } from "vitest";
 import enMessages from "../../../messages/en.json";
-import { LessonModule } from "./lesson-module";
+import { isSceneStepRevealed, LessonModule, LessonVisual } from "./lesson-module";
 import { LessonSlides } from "./lesson-slides";
 import type { CourseModule, CourseModuleVisual } from "@/lib/elearning/types";
 
@@ -238,5 +238,84 @@ describe("LessonModule position restore", () => {
       "Section Two",
     );
     expect(sectionTwo).toBeInTheDocument();
+  });
+});
+
+// INC-28: an animated scene builds up as narration reaches it. isSceneStepRevealed
+// is the pure decision function; LessonVisual's own tests check it's actually
+// wired up to the DOM (the querySelectorAll/setAttribute effect).
+describe("isSceneStepRevealed", () => {
+  it("shows everything with no narration progress at all (the no-audio lesson path)", () => {
+    expect(isSceneStepRevealed(3, undefined, false)).toBe(true);
+  });
+
+  it("shows everything under prefers-reduced-motion, regardless of progress", () => {
+    expect(isSceneStepRevealed(3, { bodyIndex: -1, playing: true }, true)).toBe(true);
+  });
+
+  it("shows everything when narration isn't currently playing", () => {
+    expect(isSceneStepRevealed(3, { bodyIndex: -1, playing: false }, false)).toBe(true);
+  });
+
+  it("while playing, only reveals a step once bodyIndex has reached it", () => {
+    expect(isSceneStepRevealed(3, { bodyIndex: 2, playing: true }, false)).toBe(false);
+    expect(isSceneStepRevealed(3, { bodyIndex: 3, playing: true }, false)).toBe(true);
+    expect(isSceneStepRevealed(3, { bodyIndex: 4, playing: true }, false)).toBe(true);
+  });
+});
+
+describe("LessonVisual — animated scene reveal (INC-28)", () => {
+  const sceneVisual: CourseModuleVisual = {
+    ...fixtureVisuals[0],
+    svg_markup: `<svg viewBox="0 0 640 400"><g data-scene-step="1"><circle r="1" /></g><g data-scene-step="2"><circle r="1" /></g></svg>`,
+  };
+
+  afterEach(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    delete (window as any).matchMedia;
+  });
+
+  it("marks every step revealed with no narrationProgress prop (the no-audio path)", () => {
+    render(<LessonVisual visual={sceneVisual} locale="en" />);
+    const steps = document.querySelectorAll("[data-scene-step]");
+    expect(steps).toHaveLength(2);
+    steps.forEach((el) => expect(el).toHaveAttribute("data-revealed", "true"));
+  });
+
+  it("reveals only the steps bodyIndex has reached while playing", () => {
+    render(
+      <LessonVisual
+        visual={sceneVisual}
+        locale="en"
+        narrationProgress={{ bodyIndex: 1, playing: true }}
+      />,
+    );
+    expect(
+      document.querySelector('[data-scene-step="1"]'),
+    ).toHaveAttribute("data-revealed", "true");
+    expect(
+      document.querySelector('[data-scene-step="2"]'),
+    ).toHaveAttribute("data-revealed", "false");
+  });
+
+  it("reveals every step once prefers-reduced-motion is set, regardless of bodyIndex", () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).matchMedia = vi.fn().mockImplementation((query: string) => ({
+      matches: true,
+      media: query,
+      addListener: vi.fn(),
+      removeListener: vi.fn(),
+    }));
+
+    render(
+      <LessonVisual
+        visual={sceneVisual}
+        locale="en"
+        narrationProgress={{ bodyIndex: -1, playing: true }}
+      />,
+    );
+    document
+      .querySelectorAll("[data-scene-step]")
+      .forEach((el) => expect(el).toHaveAttribute("data-revealed", "true"));
   });
 });

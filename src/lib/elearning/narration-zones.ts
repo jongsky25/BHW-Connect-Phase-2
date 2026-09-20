@@ -72,6 +72,19 @@ export function findActiveTimingIndex(
   return answer;
 }
 
+// INC-28: the highest body-sentence index playback has reached so far, -1
+// before the first body sentence starts. Renderer-only (an animated scene's
+// build-up is a display concern, not something the loader/tts-render.mjs
+// side ever needs), so unlike the rest of this file it has no scripts/lib
+// mirror.
+export function bodyIndexFromActive(zones: NarrationZone[], activeIndex: number): number {
+  let last = -1;
+  for (let i = 0; i <= activeIndex && i < zones.length; i++) {
+    if (zones[i].zone === "body") last = zones[i].index;
+  }
+  return last;
+}
+
 // True when `timings` (as persisted on a CourseModuleAudio row) is exactly
 // the narration the CURRENT section text would produce — i.e. the audio
 // was rendered from this exact text. False means the content changed

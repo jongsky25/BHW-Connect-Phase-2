@@ -113,6 +113,54 @@ describe("LessonNarration — matching audio", () => {
   });
 });
 
+describe("LessonNarration — visual as a render-prop (INC-28)", () => {
+  it("passes not-playing progress before Play is pressed, and playing progress after", async () => {
+    const user = userEvent.setup();
+    const progressLog: Array<{ bodyIndex: number; playing: boolean }> = [];
+
+    render(
+      withIntl(
+        <LessonNarration
+          audio={matchingAudio}
+          heading="Heading text"
+          body="First sentence. Second sentence."
+          takeaway="Take this away."
+          visual={(progress) => {
+            progressLog.push(progress);
+            return <div data-testid="scene" />;
+          }}
+        />,
+      ),
+    );
+
+    expect(screen.getByTestId("scene")).toBeInTheDocument();
+    expect(progressLog[0]).toEqual({ bodyIndex: -1, playing: false });
+
+    await user.click(screen.getByRole("button", { name: "Play narration" }));
+    // requestAnimationFrame is stubbed to a no-op in this suite (see
+    // beforeAll above), so activeIndex/bodyIndex never advances past its
+    // initial value here — this checks the "narration has started, nothing
+    // named yet" state, not a mid-playback one.
+    expect(progressLog[progressLog.length - 1]).toEqual({ bodyIndex: -1, playing: true });
+  });
+
+  it("renders a plain visual node (not called as a function) unchanged", () => {
+    render(
+      withIntl(
+        <LessonNarration
+          audio={matchingAudio}
+          heading="Heading text"
+          body="First sentence. Second sentence."
+          takeaway="Take this away."
+          visual={<div data-testid="static-scene" />}
+        />,
+      ),
+    );
+
+    expect(screen.getByTestId("static-scene")).toBeInTheDocument();
+  });
+});
+
 describe("LessonNarration — stale/mismatched audio", () => {
   it("degrades to the plain unhighlighted block, with no player control at all", () => {
     render(
@@ -133,5 +181,25 @@ describe("LessonNarration — stale/mismatched audio", () => {
       screen.getByText("This text changed after the audio was rendered."),
     ).toBeInTheDocument();
     expect(document.querySelector("audio")).not.toBeInTheDocument();
+  });
+
+  it("still calls a function visual, with not-playing progress", () => {
+    render(
+      withIntl(
+        <LessonNarration
+          audio={matchingAudio}
+          heading="Heading text"
+          body="This text changed after the audio was rendered."
+          takeaway="Take this away."
+          visual={(progress) => (
+            <div data-testid="scene">{JSON.stringify(progress)}</div>
+          )}
+        />,
+      ),
+    );
+
+    expect(screen.getByTestId("scene")).toHaveTextContent(
+      JSON.stringify({ bodyIndex: -1, playing: false }),
+    );
   });
 });

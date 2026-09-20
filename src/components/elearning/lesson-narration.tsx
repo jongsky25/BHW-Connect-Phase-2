@@ -3,24 +3,24 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
+  bodyIndexFromActive,
   buildNarrationZones,
   findActiveTimingIndex,
   timingsMatchSection,
 } from "@/lib/elearning/narration-zones";
+import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import type { CourseModuleAudio } from "@/lib/elearning/types";
 
 const SPEEDS = [0.75, 1, 1.25, 1.5] as const;
 
-function prefersReducedMotion(): boolean {
-  if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
-    return false;
-  }
-  try {
-    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  } catch {
-    return false;
-  }
-}
+// INC-28: how far playback has reached, for a visual that builds up as the
+// narration names each part of it (see LessonVisual's data-scene-step
+// handling). `bodyIndex` is the highest body-sentence index reached so far,
+// -1 before the first body sentence starts.
+export type NarrationVisualProgress = {
+  bodyIndex: number;
+  playing: boolean;
+};
 
 type Props = {
   audio: CourseModuleAudio;
@@ -31,7 +31,9 @@ type Props = {
   // LessonSectionBlock's no-audio path already uses — this component owns
   // the heading/body/takeaway markup (for the highlighted spans) but the
   // visual itself is unrelated to narration, so the caller still renders it.
-  visual?: ReactNode;
+  // A function receives live playback progress (INC-28's animated scenes);
+  // a plain node is rendered as-is, same as before INC-28.
+  visual?: ReactNode | ((progress: NarrationVisualProgress) => ReactNode);
 };
 
 // INC-27: pre-rendered audio (scripts/tts-render.mjs) plus a sentence-level
@@ -51,6 +53,11 @@ export function LessonNarration({ audio, heading, body, takeaway, visual }: Prop
 
   const matches = timingsMatchSection(audio.timings, { heading, body, takeaway });
   const zones = matches ? buildNarrationZones({ heading, body, takeaway }) : [];
+  const progress: NarrationVisualProgress = {
+    bodyIndex: bodyIndexFromActive(zones, activeIndex),
+    playing,
+  };
+  const visualNode = typeof visual === "function" ? visual(progress) : visual;
 
   useEffect(() => {
     return () => {
@@ -105,7 +112,7 @@ export function LessonNarration({ audio, heading, body, takeaway, visual }: Prop
       <>
         <h3 className="font-medium text-ink">{heading}</h3>
         <p className="whitespace-pre-wrap text-sm text-ink/80">{body}</p>
-        {visual}
+        {visualNode}
         {takeaway ? (
           <p className="border-l-2 border-secondary pl-3 text-sm font-medium text-ink">
             {takeaway}
@@ -180,7 +187,7 @@ export function LessonNarration({ audio, heading, body, takeaway, visual }: Prop
         })}
       </p>
 
-      {visual}
+      {visualNode}
 
       {takeaway ? (
         <p className="border-l-2 border-secondary pl-3 text-sm font-medium text-ink">
