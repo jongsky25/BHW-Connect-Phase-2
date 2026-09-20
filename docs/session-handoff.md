@@ -183,37 +183,23 @@ pretest accepted afterward.
 
 ## 3. What is next
 
-*Last verified against `origin/main` on 20 September 2026 — the state below
-had drifted from what was actually merged by the time this was last edited;
-check `git log --oneline -20` before trusting a "not started" claim here
-again.*
+*Last verified against `origin/main` (`99ef5f7`) on 20 September 2026, right
+after PR #74 merged — check `git log --oneline -20` before trusting a
+"not started" claim here again, this section has drifted before.*
 
-**Merged and done:** INC-23 (facilitator UI — sessions, enrollment, roster,
-competency checklist), INC-26 (slide mode), INC-27 (audio narration +
-read-along, code-complete — see its own owed items below), INC-29 (admin
-course-progress reset), INC-30 (breadcrumb navigation). None of these are
-"unblocked and not started" any more; an earlier version of this section
-said otherwise.
-
-**INC-28 tier 1 (animated SVG scenes) is now also code-complete** — see
-`docs/training-modules-plan.md`'s INC-28 section for what shipped
-(`data-scene-step` allowlist attribute, `NarrationVisualProgress` threaded
-through `LessonNarration`'s `visual` prop, the Module 1 hub-spoke as the
-worked example). Same "needs real narration audio to actually see it
-animate" gap as INC-27 below — nothing is broken without it, the scene just
-sits at its fully-revealed (and correctly `prefers-reduced-motion`) static
-state. Tier 2 (Remotion) is untouched; its licence question is still open.
-
-**PR #66** (`claude/what-is-next-s2hn7l`, open, draft) is not docs
-follow-up — it's the actual root-cause fix for the CI flakiness that has
-been hitting multiple PRs' e2e runs today: concurrent CI on different PRs
-races global feature flags on the one shared `bhw-connect-e2e` project.
-It splits `ci.yml` into a parallel `checks` job and a repo-wide-serialized
-`e2e` job. Validated (lint/typecheck/unit/build clean) and its own new
-`slide-mode*.spec.ts` coverage passes; the failures it's seen since are the
-very race it fixes, confirmed against a different PR hitting the identical
-three specs. Subscribed and watched — merge it once CI is green rather
-than re-deriving this fix from scratch in a future session.
+**Merged and done:** INC-23 (facilitator UI), INC-26 (slide mode), INC-27
+(audio narration + read-along, code-complete — see its own owed items
+below), INC-28 tier 1 (animated SVG scenes) and tier 2's licence gate +
+render pipeline (below), INC-29 (admin course-progress reset), INC-30
+(breadcrumb navigation), and two CI fixes for the e2e flakiness that was
+hitting multiple PRs on 20 Sep — [PR #66](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/66)
+(repo-wide e2e serialization) and [PR #73](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/73)
+(the actual root cause underneath it: a 30s test timeout disposing the
+Playwright `request` context mid-attempt, which skips the `finally` that
+resets a global feature flag and poisons the retries — fixed by setting the
+flag explicitly before asserting, raising the timeout to 60s, and moving
+CI concurrency from workflow- to job-level so `e2e` can't be cancelled
+mid-spec). None of the above are "not started" any more.
 
 **The user approved Module 1 on 20 Sep 2026.** That gate is closed, and
 **INC-24 (author modules 2-5) is now code-complete**, same day — see
@@ -240,17 +226,31 @@ recorded, can't be reset without locking out whoever holds it), so a second
 throwaway was the only option rather than taking it over. Neither new
 account's password is recorded here either — same convention.
 
-**INC-28 tier 2 (Remotion) — licence resolved, pipeline installed.** BHW
-Connect's operating entity is an individual, so Remotion's free tier
-applies (confirmed by the user 20 Sep 2026). The official skills are
+**INC-28 tier 2 (Remotion) — licence resolved, pipeline installed, 20 Sep
+2026.** BHW Connect's operating entity is an individual, so Remotion's
+free tier applies (confirmed by the user). The official skills are
 installed (`.agents/skills/`, symlinked into `.claude/skills/`) and a
-blank Remotion project lives in `remotion/` (its own npm project, excluded
-from the app's `lint`/`typecheck`). `npm run remotion:render -- <composition-id>
-[output-name]` renders 480p H.264 + poster frame and was verified working
-end to end against the scaffold's placeholder composition. No DB/UI wiring
+blank Remotion project lives in `remotion/` (its own npm project — own
+`package.json`/`tsconfig`, excluded from the app's own `lint`/`typecheck`
+via `eslint.config.mjs` and `tsconfig.json`'s `exclude`; the first attempt
+missed the `tsconfig.json` side and broke `next build`'s TypeScript check
+on Vercel — fixed same-day, see the INC-28 section for the exact failure).
+`npm run remotion:render -- <composition-id> [output-name]` renders 480p
+H.264 + poster frame and was verified working end to end. No DB/UI wiring
 and no real clip yet — nothing authored so far needs one (Module 1 is
 conceptual content, not the procedural-sequence kind tier 2 is for). Full
 detail: `docs/training-modules-plan.md`'s INC-28 section.
+
+**Issue #58 (unpaginated admin BHW table) is no longer just a scale
+concern — it is actively breaking CI.** PR #73's investigation found the
+shared `bhw-connect-e2e` project carries **1,055** `e2e.%` throwaway users
+(860 in one barangay) plus 131 `anonymized-*` rows; the org-scoped query
+returns 1,051 rows to a page with no pagination, which is why
+`admin.spec.ts` can't find its own row and `a11y-font-scale` times out in
+axe. Both PR #66 and #73 stopped short of purging it (destructive on
+shared infrastructure, flagged for a decision rather than acted on
+unilaterally) — still open, and now blocking real e2e reliability, not
+just a future scale problem.
 
 **INC-27 — audio narration** is code complete (migration +
 `course_module_audio` RLS verified against a real local Postgres 16 replay;
