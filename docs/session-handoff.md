@@ -215,10 +215,30 @@ very race it fixes, confirmed against a different PR hitting the identical
 three specs. Subscribed and watched — merge it once CI is green rather
 than re-deriving this fix from scratch in a future session.
 
-**The user approved Module 1 on 20 Sep 2026.** That gate is closed —
-INC-24 (authoring modules 2-5, then INC-25 for 6-9) is unblocked and is now
-the real next "not started" item. The pilot course was already `published`
-by the time this was checked — no action needed there.
+**The user approved Module 1 on 20 Sep 2026.** That gate is closed, and
+**INC-24 (author modules 2-5) is now code-complete**, same day — see
+`docs/training-modules-plan.md`'s INC-24 section for the full status. All
+four modules (`02-uhc-act`, `03-polisiya-bhs`, `04-ra7883`,
+`05-bhw-at-barangay`) pass every INC-21 validation including the coverage
+check, `npm run kb:check-sources`, lint/typecheck/291 vitest tests, and are
+**already loaded (as drafts) and rendered in the real app** on this pilot
+project — not just validated offline. Modules 4 and 5 carry forward the text
+INC-21r displaced from Module 1's original draft, as instructed. **Still
+owed before INC-25 builds on top of it**: a user approval pass (INC-21r's
+Module 1 had an explicit re-opened gate; these four modules haven't had one
+yet), audio/animation-modality verification (no `AZURE_SPEECH_KEY` in this
+session either — same gap INC-27/INC-28 already carry), and e2e/axe-core
+coverage was not re-run against the new content. The pilot course was
+already `published` by the time this was checked — no action needed there.
+
+**Two more throwaway pilot accounts exist now**, both `assessor`/`bhw`
+review accounts created the same way `review.facilitator` was:
+`review.facilitator2` (assessor) and `review.inc24` (bhw), used to render
+Modules 2-5 at Detalyado density for the INC-24 session. `review.facilitator`
+itself still exists but nobody in this session had its password (never
+recorded, can't be reset without locking out whoever holds it), so a second
+throwaway was the only option rather than taking it over. Neither new
+account's password is recorded here either — same convention.
 
 **INC-28 tier 2 (Remotion) — licence resolved, pipeline installed.** BHW
 Connect's operating entity is an individual, so Remotion's free tier

@@ -1,0 +1,94 @@
+{
+  "$comment": "Module 2 — The UHC Act of 2019. qa-entries.json is the dual-delivery half of the module: same facts as lesson.*.md, shaped for chat retrieval per content/kb/README.md. See content/training/README.md for the field contract.",
+  "category": "day1-m2-uhc",
+  "entries": [
+    {
+      "id": "d1m2-what-is-uhc",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What is the UHC Act of 2019?",
+      "question_fil": "Ano ang UHC Act of 2019?",
+      "answer_en": "Republic Act 11223, the Universal Health Care Act of 2019, was enacted in February 2019 to ensure every Filipino has access to affordable, quality health service whenever they need it, without being pushed into hardship by the cost. It changes the health system's direction: from waiting for someone to pay, to guaranteeing service everyone can reach.",
+      "answer_fil": "Ang Republic Act 11223, o ang Universal Health Care (UHC) Act of 2019, ay naisabatas noong Pebrero 2019 upang tiyakin na ang bawat Pilipino ay may access sa abot-kaya at dekalidad na serbisyong pangkalusugan, kailanman ito kailanganin, nang hindi kailangang maghirap dahil sa gastusin. Binabago nito ang direksyon ng sistemang pangkalusugan: mula sa umaasang may magbabayad, tungo sa nagsisiguro ng serbisyong maaabot ng lahat.",
+      "keywords": ["uhc act", "ra 11223", "universal health care", "ano ang uhc", "what is uhc", "batas", "2019"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-philhealth-automatic",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "Is everyone automatically covered by PhilHealth now?",
+      "question_fil": "Awtomatiko na bang saklaw ng PhilHealth ang lahat ngayon?",
+      "answer_en": "Yes — under the UHC Act, every Filipino is automatically covered by PhilHealth from birth. There is no need to apply or pay a premium alone to be a member.",
+      "answer_fil": "Oo — sa ilalim ng UHC Act, awtomatiko nang saklaw ng PhilHealth ang bawat Pilipino, mula sa pagsilang. Hindi na kailangang mag-apply o magbayad ng premium nang mag-isa para maging kasapi.",
+      "keywords": ["philhealth", "awtomatiko", "automatic", "saklaw", "coverage", "kasapi", "member"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-outpatient-covered",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "Does PhilHealth now cover outpatient consultations, not just hospital stays?",
+      "question_fil": "Sinasakop na ba ng PhilHealth ang outpatient consultation, hindi lang ang pagpapaospital?",
+      "answer_en": "Yes — one of UHC's concrete changes is that PhilHealth now also covers outpatient consultations, not only hospital confinement. This does not mean everything is free, but it is a major step in lightening the cost of a routine health center visit.",
+      "answer_fil": "Oo — isa sa mga konkretong pagbabago ng UHC ay sinasakop na rin ng PhilHealth ang outpatient consultation, hindi na lang ang pagpapaospital. Hindi ito ibig sabihing libre na ang lahat, pero malaking hakbang ito sa pagpapagaan ng gastusin sa ordinaryong konsulta sa health center.",
+      "keywords": ["outpatient", "konsulta", "consultation", "libre", "free", "health center", "gastusin", "cost"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-primary-care-provider",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What is a \"primary care provider\" under UHC?",
+      "question_fil": "Ano ang \"primary care provider\" sa ilalim ng UHC?",
+      "answer_en": "Under UHC, every Filipino is assigned a personal primary care provider — the first person or facility to approach for a health need, instead of whoever happens to be available. This is meant to make care more consistent and easier to follow up.",
+      "answer_fil": "Sa ilalim ng UHC, bawat Pilipino ay binibigyan ng sariling primary care provider — ang unang lalapitan para sa pangangailangang pangkalusugan, sa halip na sinuman lang na available. Layunin nito na maging mas konsistente at mas madaling subaybayan ang pangangalaga.",
+      "keywords": ["primary care provider", "unang lalapitan", "first contact", "nakatalaga", "assigned"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-referral-system",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What did UHC change about the referral system?",
+      "question_fil": "Ano ang binago ng UHC sa referral system?",
+      "answer_en": "UHC organizes a clearer, better referral system between the barangay health station, the health center, and the hospital, so a patient does not simply get lost in the middle of the process when they need a higher level of care.",
+      "answer_fil": "May mas malinaw at organisadong referral system na sa pagitan ng barangay health station, health center, at ospital, kaya hindi na basta-basta nawawala ang pasyente sa gitna ng proseso kapag kailangan niya ng mas mataas na antas ng pangangalaga.",
+      "keywords": ["referral system", "referral", "i-refer", "daloy", "pathway", "ospital", "hospital"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-program-integration",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "How did UHC change the DOH's health programmes?",
+      "question_fil": "Paano binago ng UHC ang mga programang pangkalusugan ng DOH?",
+      "answer_en": "UHC reorganized the DOH's previously separate, siloed health programmes into one integrated system, instead of each programme running on its own.",
+      "answer_fil": "Pinagsama-sama ng UHC ang dating hiwa-hiwalay na mga programang pangkalusugan ng DOH sa iisang sistema, sa halip na bawat programa ay magkakahiwalay tumakbo.",
+      "keywords": ["programang pangkalusugan", "health programmes", "integrated", "pinagsama", "doh"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-health-board-partner",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What role does the provincial or city health board play under UHC?",
+      "question_fil": "Ano ang papel ng provincial o city health board sa ilalim ng UHC?",
+      "answer_en": "The provincial or city health board is UHC's partner in organizing and managing the health system at the provincial or city level. It is also the path a BHW's suggestion or concern travels through once it is raised up from the barangay.",
+      "answer_fil": "Ang provincial o city health board ang kasosyo ng UHC sa pag-oorganisa at pamamahala ng sistemang pangkalusugan sa antas ng probinsya o lungsod. Dito rin dumadaan ang mungkahi o hinaing ng BHW kapag itinaas ito mula sa barangay.",
+      "keywords": ["health board", "provincial health board", "city health board", "mungkahi", "suggestion", "kasosyo", "partner"],
+      "sources": ["ra-11223"]
+    },
+    {
+      "id": "d1m2-bhw-part-in-uhc",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What is a BHW expected to contribute under UHC, beyond receiving the changes?",
+      "question_fil": "Ano ang inaasahang maiaambag ng BHW sa ilalim ng UHC, bukod sa pagtanggap lang ng mga pagbabago?",
+      "answer_en": "UHC expects a higher level of skill from BHWs and more intensified health promotion in communities. Beyond that, a BHW is expected to notice gaps where UHC's changes have not fully arrived, discuss a specific improvement with a fellow BHW or the midwife, and take a small concrete step toward carrying it out.",
+      "answer_fil": "Inaasahan ng UHC ang mas mataas na antas ng kasanayan mula sa mga BHW at mas pinaigting na health promotion sa komunidad. Bukod dito, inaasahang mapansin ng BHW ang mga puwang kung saan hindi pa lubos na dumating ang mga pagbabago ng UHC, pag-usapan ang isang tiyak na pagpapabuti sa kapwa BHW o midwife, at magsimula ng maliit na konkretong hakbang tungo rito.",
+      "keywords": ["ambag", "contribute", "kasanayan", "skill", "health promotion", "mungkahi", "suggestion", "innovation"],
+      "sources": ["ra-11223"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 640 400">
+  <title>Chain: apat na sunod-sunod na pagbabago sa ilalim ng UHC Act</title>
+  <defs>
+    <marker id="uhc-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 z" fill="currentColor" />
+    </marker>
+  </defs>
+  <g>
+    <rect x="20" y="170" width="120" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="80" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">PhilHealth</text>
+    <text x="80" y="210" text-anchor="middle" dominant-baseline="middle" font-size="10">awtomatikong saklaw</text>
+
+    <line x1="140" y1="200" x2="175" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#uhc-arrow)" />
+
+    <rect x="180" y="170" width="120" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="240" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Outpatient</text>
+    <text x="240" y="210" text-anchor="middle" dominant-baseline="middle" font-size="10">saklaw na rin ng PhilHealth</text>
+
+    <line x1="300" y1="200" x2="335" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#uhc-arrow)" />
+
+    <rect x="340" y="170" width="120" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="400" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Primary Care</text>
+    <text x="400" y="210" text-anchor="middle" dominant-baseline="middle" font-size="10">may nakatalagang provider</text>
+
+    <line x1="460" y1="200" x2="495" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#uhc-arrow)" />
+
+    <rect x="500" y="170" width="120" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="560" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Referral</text>
+    <text x="560" y="210" text-anchor="middle" dominant-baseline="middle" font-size="10">mas malinaw na daloy</text>
+  </g>
+</svg>

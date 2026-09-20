@@ -1,5 +1,5 @@
 {
-  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Grows as modules 2-9 are authored (INC-24/25) — for now it covers Module 1's four objectives only.",
+  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Grows as modules 2-9 are authored (INC-24/25) — now covers Modules 1-5's objectives; modules 6-9 (INC-25) still owed.",
   "questions": [
     {
       "prompt_fil": "Bakit masasabing mas malawak ang tungkulin ng BHW sa ilalim ng UHC Act of 2019?",
@@ -99,6 +99,127 @@
         { "fil": "Palitan ang kagawad sa kalusugan kapag wala ito", "en": "To stand in for the health kagawad when absent" }
       ],
       "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Nabalitaan ng isang residente na 'libre na ang konsulta' dahil sa UHC Act. Ano ang pinakatamang paliwanag dito?",
+      "prompt_en": "A resident heard that \"consultations are free now\" because of the UHC Act. What is the most accurate explanation?",
+      "options": [
+        { "fil": "Libre na ang lahat ng gamot at ospital dahil sa UHC", "en": "All medicine and hospitalization are now free because of UHC" },
+        { "fil": "Sinasakop na ng PhilHealth ang outpatient consultation, kaya walang dapat ikatakot na bayad sa health center", "en": "PhilHealth now covers outpatient consultation, so there's nothing to worry about regarding cost at the health center" },
+        { "fil": "Hindi totoo iyon, walang binago ang UHC sa pagbabayad", "en": "That's not true, UHC changed nothing about payment" },
+        { "fil": "Libre lang ito kung may PhilHealth card na dala", "en": "It's only free if you're carrying a PhilHealth card" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Ano ang ibig sabihin ng pagkakaroon ng \"primary care provider\" sa ilalim ng UHC?",
+      "prompt_en": "What does having a \"primary care provider\" mean under UHC?",
+      "options": [
+        { "fil": "Bawat Pilipino ay may nakatalagang unang lalapitan para sa pangangailangang pangkalusugan", "en": "Every Filipino has an assigned first person or facility to approach for a health need" },
+        { "fil": "Kailangang pumili ng pribadong doktor ang bawat pamilya", "en": "Every family must choose a private doctor" },
+        { "fil": "Libre na ang lahat ng gamutan sa alinmang ospital", "en": "Treatment is now free at any hospital" },
+        { "fil": "Ang midwife na lang ang tanging puwedeng lapitan", "en": "The midwife is now the only person allowed to be approached" }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Bakit hindi sapat na malaman lang ng BHW ang mga pagbabagong dulot ng UHC Act?",
+      "prompt_en": "Why isn't it enough for a BHW to just know the changes the UHC Act brings?",
+      "options": [
+        { "fil": "Dahil kailangan ding matukoy ng BHW ang pagkakataong mapabuti pa ang pagpapatupad nito sa sariling barangay, at maipaabot ang mungkahi sa tamang tao", "en": "Because the BHW also needs to spot chances to improve how it's carried out in their own barangay, and get the suggestion to the right person" },
+        { "fil": "Dahil kailangang ipasa sa health board ang lahat ng detalye ng batas", "en": "Because every detail of the law must be submitted to the health board" },
+        { "fil": "Dahil hindi ito bahagi ng kanilang tungkulin", "en": "Because it isn't part of their duty" },
+        { "fil": "Dahil ang midwife na lang ang dapat magpaliwanag nito", "en": "Because only the midwife should explain it" }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Bakit ipinagbabawal ang pagtanggap ng regalo mula sa isang kumpanya ng gatas o gamot kapalit ng pag-promote?",
+      "prompt_en": "Why is it prohibited to accept a gift from a milk or medicine company in exchange for promotion?",
+      "options": [
+        { "fil": "Dahil bawal talaga ang anumang regalo sa BHW anuman ang dahilan", "en": "Because BHWs are never allowed to accept any gift, for any reason" },
+        { "fil": "Dahil maaaring maimpluwensyahan nito ang tamang serbisyo o payo na dapat matanggap ng mga tao sa health facility", "en": "Because it could influence the proper service or advice people should receive at the health facility" },
+        { "fil": "Dahil kailangan munang mag-apply ng permit bago tumanggap ng regalo", "en": "Because a permit must first be applied for before accepting a gift" },
+        { "fil": "Dahil bawal lang ito sa mga BHW na bago pa sa serbisyo", "en": "Because it's only prohibited for BHWs who are new to the service" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Ano ang inaatas ng RA 10028 sa isang barangay health station, kaiba sa pagbabawal ng Milk Code?",
+      "prompt_en": "What does RA 10028 require of a barangay health station, unlike the Milk Code's prohibition?",
+      "options": [
+        { "fil": "Aktibong isulong ang breastfeeding at magkaroon ng lactation station", "en": "Actively promote breastfeeding and have a lactation station" },
+        { "fil": "Ihinto ang paggamit ng single-use plastics", "en": "Stop using single-use plastics" },
+        { "fil": "Ibawal ang pagpasok ng kinatawan ng kumpanya ng gamot", "en": "Ban company representatives from entering" },
+        { "fil": "Magtayo ng bagong gusali para sa BHS", "en": "Build a new BHS building" }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Sino ang nagbibigay ng akreditasyon sa isang BHW bago siya opisyal na makapagsimula sa gawain?",
+      "prompt_en": "Who accredits a BHW before they can officially begin their work?",
+      "options": [
+        { "fil": "Ang midwife na kasama niya sa RHU", "en": "The midwife they work alongside at the RHU" },
+        { "fil": "Ang local health board sa ilalim ng RA 7883", "en": "The local health board, under RA 7883" },
+        { "fil": "Ang kapwa BHW na nagturo sa kanya", "en": "The fellow BHW who trained them" },
+        { "fil": "Ang punong barangay", "en": "The punong barangay" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Alin sa mga sumusunod ang HINDI kailangan para maging eligible sa BHW Eligibility (BHWE) sa Civil Service?",
+      "prompt_en": "Which of the following is NOT required for BHW Eligibility (BHWE) in the Civil Service?",
+      "options": [
+        { "fil": "Akreditado ng local health board", "en": "Accredited by the local health board" },
+        { "fil": "Limang taon o higit pa ng tuloy-tuloy na boluntaryong serbisyo", "en": "Five years or more of continuous voluntary service" },
+        { "fil": "Nakatapos ng four-year college degree", "en": "Completed a four-year college degree" },
+        { "fil": "May satisfactory service bilang accredited BHW", "en": "A satisfactory service record as an accredited BHW" }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Ano ang pinakamahusay na hakbang kapag mabagal ang proseso ng akreditasyon o naantala ang isang benepisyong dapat matanggap?",
+      "prompt_en": "What is the best move when the accreditation process is slow, or a benefit that's owed is delayed?",
+      "options": [
+        { "fil": "Manahimik na lang hanggang matapos ito", "en": "Stay silent until it's over" },
+        { "fil": "Mag-follow-up nang kalmado at may tiyak na tanong tungkol sa status", "en": "Follow up calmly with a specific question about the status" },
+        { "fil": "Agad magreklamo sa mayor nang hindi muna dumadaan sa local health board", "en": "Immediately complain to the mayor without going through the local health board first" },
+        { "fil": "Ituloy na lang ang gawain nang wala nang akreditasyon", "en": "Just continue working without the accreditation" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "May residenteng may matagal nang ubo at gustong malaman kung dapat bang i-refer. Sino ang unang lalapitan ng BHW para dito?",
+      "prompt_en": "A resident has had a long-standing cough and wants to know if it needs a referral. Who should the BHW approach first for this?",
+      "options": [
+        { "fil": "Ang barangay captain", "en": "The barangay captain" },
+        { "fil": "Ang midwife o RHU", "en": "The midwife or RHU" },
+        { "fil": "Ang kapwa BHW", "en": "A fellow BHW" },
+        { "fil": "Ang sanitary inspector", "en": "The sanitary inspector" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Sa isang koponan ng mga BHW, ano ang pinakaunang dapat gawin kapag may personal na isyu ang isang miyembro na maaaring makaapekto sa gawain ng grupo?",
+      "prompt_en": "In a team of BHWs, what should be the very first response when a member has a personal issue that might affect the group's work?",
+      "options": [
+        { "fil": "Balewalain ito hangga't hindi pa nakakaapekto sa trabaho", "en": "Ignore it as long as it hasn't affected work yet" },
+        { "fil": "Agad itong pag-usapan bilang koponan bago pa ito lumalim", "en": "Talk about it as a team right away, before it deepens" },
+        { "fil": "Iulat agad ito sa midwife nang hindi muna kinakausap ang miyembro", "en": "Report it straight to the midwife without talking to the member first" },
+        { "fil": "Hintayin na lamang na lumipas ito", "en": "Just wait for it to pass" }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Alin sa mga sumusunod ang HINDI isa sa anim na kasanayan sa self-management na dapat taglayin ng isang BHW?",
+      "prompt_en": "Which of the following is NOT one of the six self-management skills a BHW should have?",
+      "options": [
+        { "fil": "Stress management", "en": "Stress management" },
+        { "fil": "Time management", "en": "Time management" },
+        { "fil": "Pagiging pinaka-magaling sa lahat ng BHW", "en": "Being the single best-performing BHW of all" },
+        { "fil": "Adaptability", "en": "Adaptability" }
+      ],
+      "correct_option_index": 2
     }
   ]
 }

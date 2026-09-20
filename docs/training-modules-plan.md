@@ -20,8 +20,8 @@ for this codebase.
 | INC-27 — audio narration + read-along | ✅ Merged — [PR #68](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/68), by a separate session run in parallel with this one. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in that session (same constraint `docs/session-handoff.md` §2 documents for Supabase MCP, and that this plan's own INC-23 row above hit first). See the Status note inside the INC-27 section below. |
 | INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual) and its render pipeline installed + verified 20 Sep 2026; no content queued through it yet — see the INC-28 section below for the "deliberately not built yet" list. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
-| INC-24 — author modules 2-5 | ⬜ Unblocked — INC-28 tier 1 shipped and Module 1 is approved. Not started. |
-| INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. Now **four** modules, not three — §C is a nine-module map. |
+| INC-24 — author modules 2-5 | ✅ Code-complete, 20 Sep 2026. All four modules load clean through every INC-21 validation including the coverage check; `npm run kb:check-sources` passes (adds `eo-51`, `ra-10028`, `ao-2015-0053`, `dc-2021-0486`); `test-questions.json` grew from 9 to 21 questions, covering modules 1-5; `--apply`'d to the pilot and rendered in the real app (read + slide modalities) under a throwaway review account. See the INC-24 section below for what's still owed (a user approval pass, audio/animation modalities, e2e/axe-core coverage). |
+| INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24's user approval (code is unblocked). Now **four** modules, not three — §C is a nine-module map. |
 
 **Before starting INC-21**, read this whole document, then read the actual
 shipped `20260729000000_inc12_elearning.sql`, `20260807000000_inc19_training_sessions.sql`
@@ -1743,6 +1743,99 @@ documents and no summary merely restates its objectives; the
 pretest/posttest bank in `test-questions.json` covers these modules'
 objectives; each module renders correctly in all four modalities
 (read, slides, audio, animation).
+
+**Status, 20 Sep 2026 — code-complete, not yet an approval gate.** All four
+modules (`02-uhc-act`, `03-polisiya-bhs`, `04-ra7883`, `05-bhw-at-barangay`)
+are authored against §A/§D and the style guide, each with `coverage.json`
+written first, a named scenario, `core`/`standard`/`deep` sections, at least
+one §D visual, at least one retrieval check, a retrieval-first summary, full
+facilitator notes (timing, script, named misconception, discussion prompts,
+answer key), and a one-indicator-per-objective competency block.
+
+- **Modules 4 and 5 carry the displaced INC-21r text forward as instructed**,
+  not rewritten: Module 4's "Saan nanggagaling ang tungkulin ng BHW" section
+  and its accreditation retrieval check, and Module 5's full four-relationships
+  scenario, sections, checks and both SVGs, are the same text/markup as
+  `d424bde`'s original Module 1 draft, only re-tiered and re-marked with this
+  module's own `coverage.json` ids.
+- **`loadTrainingCourse()` (the loader's own validator, no network needed —
+  `node`-run directly) passes clean** for all five modules: zero problems,
+  zero review flags.
+- **`npm run kb:check-sources` passes.** Four new citations were added to
+  `sources.json` for Module 3's policies — `eo-51` and `ra-10028` resolve
+  ok (lawphil.net), `ao-2015-0053` resolves ok (mcprinciples.apec.org, no
+  stable doh.gov.ph copy found), `dc-2021-0486` is `wafBlocked: true` (the
+  doh.gov.ph URL the Facilitator's Manual itself cites, same WAF doh.gov.ph
+  already trips elsewhere in this repo). A pre-existing, unrelated failure
+  (`hhp-ncd/upv-ncd-flipchart-tot` → 503) was already broken before this
+  session touched anything — not this increment's to fix.
+- **`test-questions.json` grew from 9 to 21 questions** — 3 each for Modules
+  2 and 4, 3 for Module 5, 2 for Module 3 (its "efficient resources" content
+  has no single citable law, so it got a lighter test footprint than a
+  qa-entries.json presence — see below), covering all four modules'
+  objectives.
+- **`course.json`'s description was still the pre-§C-correction "eight
+  modules" text** (`docs/training-modules-plan.md` corrected the count to
+  nine on 19 Sep 2026, but nobody had gone back to fix the course's own
+  loaded description) — fixed to "nine" while this session was already
+  touching the file, not a drive-by unrelated to the diff.
+- **`npm run lint`, `npx tsc --noEmit`, and `npm test` (291 vitest tests,
+  including the 33-test `training-content.test.mjs` suite) all pass.**
+- **Loaded to the pilot and rendered in the real app**, not just validated
+  offline — the session-handoff.md lesson from INC-21r ("green tests did not
+  catch that the pilot was serving stale content; a rendered page did")
+  applied here too. `training:load --apply` against `ltzicxyefizxoqhfuuzc`
+  (dry-run first) created all four modules, their facilitator notes, 5
+  visuals, and stamped 23 new / updated 6 `kb_entries` (the 6 are the
+  original displaced Module 1 draft's orphaned `d1m1-legal-basis`/
+  `d1m1-accreditation`/four-relationships rows, still on the pilot from
+  before INC-21r replaced them — the loader's by-question fallback correctly
+  retargeted them to this module's ids instead of duplicating). Loaded as
+  **drafts** (no `--publish`) — the `kb_entries` stay admin-only until
+  someone reviews and publishes them; the four `course_modules` themselves
+  have no draft state and became visible immediately under the
+  already-published course, same as every module before them.
+- **Rendered read-through**: signed in as a throwaway BHW
+  (`review.inc24`, enrolled at Detalyado via a throwaway facilitator
+  `review.facilitator2` — `review.facilitator`'s own password was never
+  recorded by an earlier session and can't be reset without locking out
+  whoever holds it, so a second throwaway was the only option; neither
+  throwaway's password is recorded here, same convention as
+  `review.facilitator`'s). All four modules' objectives bookends, scenarios,
+  checks, and closing summaries render correctly in **Basahin** (read) mode;
+  spot-checked **Islide** (slide) mode on Module 2 and it also renders
+  correctly. All 5 new SVG visuals (Module 2's `chain`, Module 3's
+  `contrast`, Module 4's `chain`, Module 5's `hub-spoke` and `stack`) render
+  correctly against `tokens.css` with no console errors. The pretest now
+  shows all 21 questions, including the 12 new ones.
+
+**Not done, and deliberately not claimed above:**
+
+- **No user approval yet.** INC-21r's Module 1 had an explicit re-opened
+  approval gate ("the user reviews Module 1 rendered in the real app... and
+  approves"); INC-24's own DoD does not name one, but given INC-21's Module 1
+  needed a full re-author after failing review on subject (not style), these
+  four modules should still get a user look before INC-25 builds on top of
+  them the same way INC-24 was told to build on an approved Module 1.
+- **Audio and animation modalities are unverified.** No `AZURE_SPEECH_KEY`
+  in this session (same gap INC-27's own status note names), so narration
+  audio was not rendered for these modules and INC-28's animated-SVG
+  build-up was not exercised end-to-end — this is the same "code-complete,
+  needs real narration audio to actually see it animate" gap INC-27/INC-28
+  already carry, now also true of modules 2-5's visuals (none of which use
+  `data-scene-step` yet — none needed the build-up effect the way Module 1's
+  hub-spoke did).
+- **No new Playwright/axe-core coverage was added or run** for these four
+  modules specifically — `e2e/elearning.spec.ts` and the a11y suite were not
+  re-run against them in this session (no reason to expect a regression,
+  since nothing about the renderer changed, only content — but not
+  positively verified either).
+- **`review.facilitator2` and `review.inc24` are throwaway pilot accounts**,
+  parallel to the existing `review.facilitator` — left in place for reuse by
+  a future review session rather than deleted, same reasoning
+  `docs/session-handoff.md` already gives for not deleting
+  `review.facilitator`. Their temp passwords were printed once during this
+  session and stored nowhere.
 
 ---
 
