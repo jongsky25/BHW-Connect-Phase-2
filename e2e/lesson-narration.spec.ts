@@ -170,6 +170,20 @@ test("a section with pre-rendered audio shows a working play control; a section 
   const newPassword = "Fresh-Narration-2026";
   await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
 
+  // A freshly onboarded BHW defaults to language='fil' (baseline migration),
+  // but the fixture's course_module_audio row and this spec's assertions
+  // are English — switch the BHW's own language so `locale` matches what
+  // findAudioForSection looks up ("en") and what's actually on screen.
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_update_settings`, {
+    headers: {
+      apikey: anonKey(),
+      Authorization: `Bearer ${userToken}`,
+      "Content-Type": "application/json",
+    },
+    data: { p_language: "en", p_theme: "light", p_font_scale: "md", p_high_contrast: false },
+  });
+
   await page.goto(`/courses/${courseId}`);
 
   // Section with narration: the player is present, and clicking it actually
