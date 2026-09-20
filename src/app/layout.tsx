@@ -48,6 +48,7 @@ export default async function RootLayout({
   const a11y = await getRequestA11ySettings();
   const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
   const notifications = await getRequestNotifications();
+  const signedIn = await getRequestSignedIn();
 
   return (
     <html
@@ -59,7 +60,11 @@ export default async function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-canvas text-ink">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <SiteHeader notificationsEnabled={notifications.enabled} notifUnreadCount={notifications.unreadCount} />
+          <SiteHeader
+            signedIn={signedIn}
+            notificationsEnabled={notifications.enabled}
+            notifUnreadCount={notifications.unreadCount}
+          />
           <main className="flex flex-1 flex-col">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
@@ -98,4 +103,9 @@ async function getRequestNotifications() {
     enabled: h.get("x-app-notifications") === "1",
     unreadCount: Number(h.get("x-app-notif-unread") ?? "0"),
   };
+}
+
+async function getRequestSignedIn() {
+  const h = await headers();
+  return h.get("x-app-signed-in") === "1";
 }

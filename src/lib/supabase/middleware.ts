@@ -159,6 +159,10 @@ function withAppUserHeaders(
   forwardedHeaders.set("x-app-offline-pwa", offlinePwaEnabled ? "1" : "0");
   forwardedHeaders.set("x-app-notifications", notificationsEnabled ? "1" : "0");
   forwardedHeaders.set("x-app-notif-unread", String(notifUnreadCount));
+  // Signed-in users landed here with a fully set-up account (active, password
+  // set, consented) — the site header's app-name link should take them back
+  // to their /home, not the signed-out "/" marketing page it defaults to.
+  forwardedHeaders.set("x-app-signed-in", "1");
 
   const next = NextResponse.next({ request: { headers: forwardedHeaders } });
   for (const cookie of response.cookies.getAll()) {

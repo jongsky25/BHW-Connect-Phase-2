@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import type { CourseSession } from "@/lib/elearning/types";
 import { TrainingSessionForm } from "./training-session-form";
@@ -20,10 +21,12 @@ type Props = {
 // scheduled/completed/cancelled sessions) plus the create form.
 export function TrainingSessionsConsole({ initialSessions, courses, locale }: Props) {
   const t = useTranslations("trainingSessions");
+  const tCrumbs = useTranslations("breadcrumbs");
   const [sessions, setSessions] = useState(initialSessions);
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-8 px-4 py-10 sm:px-6">
+      <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
 
       <TrainingSessionForm

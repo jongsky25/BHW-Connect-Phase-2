@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Field, inputClass } from "@/components/admin/form-field";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import { computeCohortSummary, type SessionTestAttempt } from "@/lib/elearning/session-summary";
@@ -49,6 +50,7 @@ export function TrainingSessionDetail({
   locale,
 }: Props) {
   const t = useTranslations("trainingSessions");
+  const tCrumbs = useTranslations("breadcrumbs");
   const [density, setDensity] = useState(session.lesson_density);
   const [status] = useState(session.status);
   const [enrollments, setEnrollments] = useState(initialEnrollments);
@@ -158,6 +160,13 @@ export function TrainingSessionDetail({
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-4 py-10 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/training-sessions" },
+          { label: courseTitle ?? "" },
+        ]}
+      />
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{courseTitle}</h1>
         <p className="mt-1 text-ink/70">

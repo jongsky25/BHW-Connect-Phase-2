@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { ArticleViewer } from "@/components/kb/article-viewer";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { getAppUser } from "@/lib/supabase/app-user";
@@ -38,6 +38,7 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   }
 
   const t = await getTranslations("kb");
+  const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
   const flags = await getFeatureFlags(supabase);
 
@@ -81,9 +82,13 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <div>
-        <Link href="/kb" className="text-sm font-medium text-ink underline hover:text-secondary">
-          {t("backToCategories")}
-        </Link>
+        <Breadcrumbs
+          items={[
+            { label: tCrumbs("home"), href: "/home" },
+            { label: t("browseHeading"), href: "/kb" },
+            { label: locale === "en" ? category.name_en : category.name_fil },
+          ]}
+        />
         <h1 className="mt-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           {locale === "en" ? category.name_en : category.name_fil}
         </h1>

@@ -50,7 +50,7 @@ test("an admin creates a category, a BHW starts a thread, a BHW in a different b
   expect(threadId).toBeTruthy();
 
   await expect(page).toHaveURL(`/forum/${threadId}`, { timeout: 10_000 });
-  await expect(page.getByText(`Thread en ${marker}`)).toBeVisible();
+  await expect(page.getByRole("heading", { name: `Thread en ${marker}` })).toBeVisible();
 
   // A BHW in a different barangay can see the thread (forum visibility is
   // global, not hierarchy-scoped) and replies to it.
@@ -63,7 +63,7 @@ test("an admin creates a category, a BHW starts a thread, a BHW in a different b
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
   await page.goto(`/forum/${threadId}`);
-  await expect(page.getByText(`Thread en ${marker}`)).toBeVisible();
+  await expect(page.getByRole("heading", { name: `Thread en ${marker}` })).toBeVisible();
   await page.getByLabel("Sumagot").fill(`Reply ${marker}`);
   await page.getByRole("button", { name: "I-post ang sagot" }).click();
   await expect(page.getByText(`Reply ${marker}`)).toBeVisible();

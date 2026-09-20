@@ -1,5 +1,6 @@
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CourseDetail } from "@/components/elearning/course-detail";
 import type {
   CourseModule,
@@ -41,6 +42,8 @@ export default async function CourseDetailPage({
   }
 
   const locale = await getLocale();
+  const tCourses = await getTranslations("courses");
+  const tCrumbs = await getTranslations("breadcrumbs");
 
   const { data: course } = await supabase
     .from("courses")
@@ -164,6 +167,13 @@ export default async function CourseDetailPage({
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: tCourses("heading"), href: "/courses" },
+          { label: locale === "en" ? course.title_en : course.title_fil },
+        ]}
+      />
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           {locale === "en" ? course.title_en : course.title_fil}

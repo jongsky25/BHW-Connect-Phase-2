@@ -89,7 +89,7 @@ test("a designer drafts a flip chart, an admin reviews and approves it, and a BH
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
   await page.goto(`/flipcharts/${flipChartId}`);
-  await expect(page.getByText(`Chart en ${marker}`)).toBeVisible();
+  await expect(page.getByRole("heading", { name: `Chart en ${marker}` })).toBeVisible();
   await page.getByRole("button", { name: "BHW script" }).click();
   await expect(page.getByText(`Script en ${marker}`)).toBeVisible();
 });
