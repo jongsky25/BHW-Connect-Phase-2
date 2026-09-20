@@ -19,7 +19,7 @@ for this codebase.
 | INC-26 — slide mode | ⬜ Blocked on INC-21r. |
 | INC-27 — audio narration + read-along | ⬜ Blocked on INC-26. |
 | INC-28 — animated concept clips | ⬜ Blocked on INC-27. |
-| INC-23 — facilitator UI | ⬜ Ready to start — INC-22 is merged and green. Not blocked by, and does not block, INC-21r/26/27/28. |
+| INC-23 — facilitator UI | 🔶 Code complete — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63), unmerged. Verified against a real local Postgres 16 replay (RLS/RPC layer), not yet clicked through in the real app — see the PR's test plan. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
 | INC-24 — author modules 2-5 | ⬜ Blocked on INC-28 (author once against a finished pipeline, per the sequencing decision). |
 | INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. Now **four** modules, not three — §C is a nine-module map. |
 
@@ -1278,6 +1278,26 @@ route directly is refused; **the density selector defaults to Karaniwan on
 create, changing it and revisiting the session shows the new value, and it
 is disabled (not merely ignored) once the session's status leaves
 `scheduled`.**
+
+**Status — code complete, [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63)
+open, unmerged.** Route: a sibling `/training-sessions`, not folded into
+`/assessments` (that page is a single flat pass/fail queue with one CTA on
+`/home`, not a crowded nav, and `rpc_assessment_decide`'s console is
+untouched here). All six scope bullets built; DoD's RLS-scoping and
+density-lock claims verified against a real local Postgres 16 replay of the
+full migration history with two facilitators seeded in sibling barangays,
+not against the live pilot (unreachable from that session). One schema gap
+found while building the roster, not assumed from a read-through: INC-12
+never granted `assessor` a read policy on `course_progress`/
+`course_module_progress` (only `bhw`-own and admin-cascade existed — INC-12
+predates the facilitator role's use of this data). Added in
+`20260810000000_inc23_facilitator_progress_read.sql`, ownership-scoped via
+the session's own enrollment, mirroring `course_test_attempts`'s
+`_facilitator_via_session` policy. Owed before merge: a real click-through
+against the pilot project (create session → set density → enroll → roster →
+module view → checklist; a `bhw` redirected off the route; a second
+facilitator in a sibling org unit sees neither the first facilitator's
+sessions nor their BHWs) — see the PR's test-plan checklist.
 
 ---
 

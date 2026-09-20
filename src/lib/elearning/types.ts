@@ -188,6 +188,45 @@ export type ModuleProgress = {
   quiz_attempts: number;
 };
 
+// INC-23 facilitator UI (docs/training-modules-plan.md). course_sessions is
+// the facilitator-owned wrapper INC-19 added around a course; status starts
+// 'scheduled' (the only status lesson_density stays editable in — see
+// rpc_course_session_set_density) and moves to 'completed'/'cancelled'.
+export type SessionStatus = "scheduled" | "completed" | "cancelled";
+
+export type CourseSession = {
+  id: string;
+  course_id: string;
+  org_unit_id: string;
+  facilitator_user_id: string;
+  scheduled_at: string;
+  location_note: string;
+  lesson_density: LessonDensity;
+  status: SessionStatus;
+  created_at: string;
+  courses: { title_fil: string; title_en: string } | null;
+};
+
+export type EnrollmentStatus = "enrolled" | "attended" | "no_show";
+
+export type CourseSessionEnrollment = {
+  id: string;
+  session_id: string;
+  bhw_user_id: string;
+  status: EnrollmentStatus;
+  enrolled_at: string;
+  users: { full_name: string; username: string } | null;
+};
+
+// Facilitator's own-scope BHW picker (mirrors AdminUserRow's shape, trimmed
+// to what the enroll picker needs).
+export type BhwOption = {
+  id: string;
+  full_name: string;
+  username: string;
+  org_units: { name: string } | null;
+};
+
 export type AssessmentStatus = "pending" | "assigned" | "passed" | "failed";
 
 export type Assessment = {
