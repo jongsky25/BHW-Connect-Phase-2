@@ -4,7 +4,7 @@ Read this before starting work on BHW Connect Phase 2. It is not a plan (that
 is `docs/training-modules-plan.md`); it is how to work, and the live state of
 the pilot project, so a new session does not re-discover either the hard way.
 
-Last updated: 19 September 2026.
+Last updated: 20 September 2026.
 
 ---
 
@@ -34,15 +34,12 @@ them and then stall.** Learned by hitting each one:
   Supabase dashboard — which means it lands on the user, so prefer adding the
   missing RPC (see "Owed" below).
 
-The user has pre-approved the training scripts in `.claude/settings.local.json`
-(gitignored), so those run without prompting:
-
-```json
-{ "permissions": { "allow": [
-  "Bash(npm run training:load:*)",
-  "Bash(npm run training:review-setup:*)"
-] } }
-```
+The training scripts, the linters, the tests and `npm run doctor` are
+pre-approved in **`.claude/settings.json`**, which is committed, so the
+approvals survive a fresh container instead of dying with the session. (They
+used to live in the gitignored `settings.local.json`, which is why every
+session started by re-asking.) `.claude/settings.local.json` is still the
+place for personal overrides.
 
 If other work needs standing approval, propose it to the user and let them
 decide — widening your own permissions without saying so is not the kind of
@@ -84,8 +81,11 @@ permission"). Reach it through the loader scripts over PostgREST instead.
 | Enrolled at Detalyado | `demo.viewer`, `review.bhw` |
 
 Two accounts do the work. Their passwords are **not** recorded here — a
-password in git survives every later rotation and reaches every clone. Ask
-the user for them; they hold both.
+password in git survives every later rotation and reaches every clone.
+**Do not ask the user for them either.** See `docs/credentials.md`: the
+loader password lives in the GitHub Actions secrets and (optionally) the
+Claude Code environment variables, so a session either has it already or
+runs the load through CI. `npm run doctor` says which.
 
 - `training.loader` — admin. Pass as `KB_LOADER_USERNAME` /
   `KB_LOADER_PASSWORD`, with `KB_LOADER_ANON_KEY` set to the project's anon
@@ -111,9 +111,14 @@ npm run training:load -- --project ltzicxyefizxoqhfuuzc --org-unit "Los Baños" 
 npm run training:review-setup -- --project ltzicxyefizxoqhfuuzc --bhw <username> --apply
 ```
 
-Both are idempotent. The loader is a **manual step with no CI equivalent** —
-merging a content PR does not move anything to the pilot. Re-run it after any
-content change, or the app keeps serving the previous load.
+Both are idempotent. Content changes still do not reach the pilot on merge —
+a load has to be triggered — but it is no longer a *manual* step: run
+
+> Actions -> **Training content load** -> Run workflow
+
+which holds the loader password as a repo secret and defaults to a dry run.
+Prefer it over the local commands above; it needs no credentials in the
+session. The local commands still work wherever `KB_LOADER_*` is set.
 
 ### Known sharp edge: the pretest gate
 
@@ -160,6 +165,9 @@ Unblocked and not started, in the order the plan argues for:
   to admins would remove a dashboard-SQL step from the user's plate
   permanently — exactly the kind of thing that should be a script, not a
   runbook line.
+- **A single register of which credential lives in which store** — done,
+  `docs/credentials.md`, backed by `npm run doctor`. Add new secrets to
+  `scripts/doctor.mjs` as they appear.
 - **Rotate before public launch, not before then**: the `service_role` key
   (exposed in the 19 Sep session transcript and never successfully used),
   `training.loader`'s password, and the `review.facilitator` throwaway.
