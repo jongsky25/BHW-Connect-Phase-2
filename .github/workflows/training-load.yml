@@ -1,0 +1,144 @@
+name: Training content load
+
+# The pilot content load, as CI instead of as a thing someone does by hand.
+#
+# scripts/training-load.mjs signs in as an admin account before it does
+# anything — a dry run included — so until now every load needed
+# training.loader's password to be present wherever the load was run from.
+# In a Claude Code web session that meant a fresh container with no
+# credentials, and a stall while someone went to find the password.
+#
+# Holding the password as a repo secret puts it in one place that outlives
+# every session, and makes the load runnable by anyone who can click "Run
+# workflow" — or by an agent with Actions access — without the password ever
+# being handed around again.
+#
+# Defaults to a DRY RUN. Nothing is written until apply is set to "true".
+#
+# Requires one secret that CI does not already have: KB_LOADER_PASSWORD.
+# NEXT_PUBLIC_SUPABASE_ANON_KEY is already set and already names the pilot
+# project (retention-purge.yml and backup.yml read its sibling URL secret).
+# KB_LOADER_USERNAME is not a secret — set it as a repository *variable* if
+# the admin account is ever renamed away from the default below.
+
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Supabase project ref"
+        required: true
+        default: "ltzicxyefizxoqhfuuzc"
+        type: string
+      org_unit:
+        description: "Org unit name"
+        required: true
+        default: "Los Baños"
+        type: string
+      apply:
+        description: "Write to the project (true) or dry run only (false)"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      publish:
+        description: "Also publish the course (requires apply=true)"
+        required: false
+        default: false
+        type: boolean
+      modules:
+        description: "Comma-separated module slugs; blank loads all"
+        required: false
+        default: ""
+        type: string
+
+concurrency:
+  # Two loads against one project would race on the same rows. Queue instead.
+  group: training-load-${{ inputs.project }}
+  cancel-in-progress: false
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check credentials
+        env:
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          if [ -z "$KB_LOADER_PASSWORD" ]; then
+            echo "::error::KB_LOADER_PASSWORD secret is not set. Settings -> Secrets and variables -> Actions. See docs/credentials.md."
+            exit 1
+          fi
+          if [ -z "$KB_LOADER_ANON_KEY" ]; then
+            echo "::error::NEXT_PUBLIC_SUPABASE_ANON_KEY secret is not set — it should already exist and name the pilot project. See docs/credentials.md."
+            exit 1
+          fi
+
+      - name: Load training content
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          args=(--project "${{ inputs.project }}" --org-unit "${{ inputs.org_unit }}")
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            args+=(--apply)
+            if [ "${{ inputs.publish }}" = "true" ]; then
+              args+=(--publish --owner "$KB_LOADER_USERNAME")
+            fi
+          else
+            args+=(--dry-run)
+            if [ "${{ inputs.publish }}" = "true" ]; then
+              echo "::warning::publish was requested but apply is false — this run writes nothing."
+            fi
+          fi
+          if [ -n "${{ inputs.modules }}" ]; then
+            args+=(--modules "${{ inputs.modules }}")
+          fi
+          npm run training:load -- "${args[@]}" 2>&1 | tee training-load.log
+
+      - name: Summarise
+        if: always()
+        run: |
+          {
+            echo "### Training content load"
+            echo ""
+            echo "| Setting | Value |"
+            echo "| --- | --- |"
+            echo "| Project | \`${{ inputs.project }}\` |"
+            echo "| Org unit | ${{ inputs.org_unit }} |"
+            echo "| Mode | ${{ inputs.apply == 'true' && 'APPLY (writes)' || 'DRY RUN (writes nothing)' }} |"
+            echo "| Publish | ${{ inputs.publish }} |"
+            echo "| Modules | ${{ inputs.modules != '' && inputs.modules || 'all' }} |"
+            echo ""
+            if [ -f training-load.log ]; then
+              echo "<details><summary>Loader output</summary>"
+              echo ""
+              echo '```'
+              cat training-load.log
+              echo '```'
+              echo ""
+              echo "</details>"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-load-${{ github.run_id }}
+          path: training-load.log
+          retention-days: 30
+          if-no-files-found: ignore

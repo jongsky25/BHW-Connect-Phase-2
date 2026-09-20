@@ -65,6 +65,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
             {t("nav.courses")}
           </Link>
         ) : null}
+        {flags.elearning ? (
+          <Link href="/admin/course-progress" className="text-secondary hover:underline">
+            {t("nav.courseProgress")}
+          </Link>
+        ) : null}
         {flags.forum ? (
           <Link href="/admin/forum" className="text-secondary hover:underline">
             {t("nav.forum")}

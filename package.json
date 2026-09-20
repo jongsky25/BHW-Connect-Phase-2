@@ -15,7 +15,8 @@
     "kb:unpublish": "node scripts/kb-unpublish.mjs",
     "kb:check-sources": "node scripts/kb-check-sources.mjs",
     "training:load": "node scripts/training-load.mjs",
-    "training:review-setup": "node scripts/training-review-setup.mjs"
+    "training:review-setup": "node scripts/training-review-setup.mjs",
+    "doctor": "node scripts/doctor.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.67.0",
