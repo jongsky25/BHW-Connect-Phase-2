@@ -38,9 +38,16 @@ export async function GET(request: NextRequest) {
   const columns = parseActivityReportColumns(searchParams.get("columns"));
   const { start, end } = timeRangeToDates(parseTimeRangeKey(searchParams.get("range") ?? undefined));
 
+  // p_limit: null is Postgres's own "no limit" (see the migration's own
+  // comment) — explicit here rather than left to the RPC's default, since
+  // an export silently truncated to a page size would be a real data loss
+  // bug, not a UI inconvenience.
   const { data: bhws, error } = await supabase.rpc("rpc_dashboard_bhw_table", {
     p_start: start,
     p_end: end,
+    p_search: null,
+    p_limit: null,
+    p_offset: 0,
   });
 
   if (error) {

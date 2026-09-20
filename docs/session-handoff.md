@@ -99,6 +99,33 @@ INC-29's migration (`20260920000000_inc29_course_progress_reset.sql`) —
 confirmed missing from the pilot via `list_migrations` in the same session
 but out of scope for what was being fixed, not pushed yet.
 
+**`list_projects` not listing the pilot/CI project is not proof the
+connector can't reach them — check with `get_project`/`list_migrations`
+against the known ref before concluding it's the wrong login.** A later
+session the same day (issue #58's fix, PR #75) saw `list_projects` return
+only `jongsky25's Org`'s five unrelated projects again and initially
+concluded, same as the paragraph above once did, that the connector was
+back on the wrong account. It wasn't: `get_project`/`list_migrations`/
+`apply_migration` against the known refs (`ltzicxyefizxoqhfuuzc`,
+`qeryhxctxslhdkclifom`) worked fine the whole time. This is the exact
+"list_projects doesn't enumerate that org's projects for this connector"
+gap "Reaching the CI project" below already documents for the CI project
+specifically — it turns out to apply to the pilot too, and to `list_projects`
+generally, not just that one endpoint. **Don't infer "unreachable" from
+`list_projects` alone — try `get_project` with the ref you already have
+recorded here first.**
+
+**`20260920010000_fix_58_dashboard_bhw_table_pagination.sql` (issue #58's
+fix) is now applied to both the pilot and the CI project** (20 Sep 2026,
+via `apply_migration`, verified against `pg_get_function_identity_arguments`
+on both — exactly one `rpc_dashboard_bhw_table` with the new 5-arg
+signature on each). It's DDL (`drop function`/`create or replace function`),
+so it couldn't go through the loader's PostgREST token the way a data
+write can; needed `apply_migration` directly. Before this was applied it
+was confirmed as the cause of two real (non-flake) `e2e` failures on
+PR #75 — see that PR's own comments for the diagnosis, now stale once CI
+re-runs green.
+
 ### Reaching the CI project
 
 `bhw-connect-e2e`'s project ref is not discoverable from a session on its
