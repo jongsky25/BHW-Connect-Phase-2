@@ -196,8 +196,17 @@ test("dashboard Activity tab scopes BHWs by org unit, with roll-up for a higher-
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
+  // INC-58: the Activity table is paginated, so a freshly created BHW
+  // among however many already exist in this shared project's org unit
+  // is not reliably on page 1 — search for it by its (unique) username
+  // instead of relying on page position.
   await page.goto("/admin/dashboard");
+  await page.getByLabel("Maghanap ayon sa pangalan o username").fill(batongMalakeBhw.username);
+  await page.getByLabel("Maghanap ayon sa pangalan o username").press("Enter");
   await expect(page.getByRole("row", { name: new RegExp(batongMalakeBhw.username) })).toBeVisible();
+
+  await page.getByLabel("Maghanap ayon sa pangalan o username").fill(anosBhw.username);
+  await page.getByLabel("Maghanap ayon sa pangalan o username").press("Enter");
   await expect(page.getByRole("row", { name: new RegExp(anosBhw.username) })).toHaveCount(0);
 
   await page.goto("/home");
@@ -210,6 +219,11 @@ test("dashboard Activity tab scopes BHWs by org unit, with roll-up for a higher-
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
   await page.goto("/admin/dashboard");
+  await page.getByLabel("Maghanap ayon sa pangalan o username").fill(batongMalakeBhw.username);
+  await page.getByLabel("Maghanap ayon sa pangalan o username").press("Enter");
   await expect(page.getByRole("row", { name: new RegExp(batongMalakeBhw.username) })).toBeVisible();
+
+  await page.getByLabel("Maghanap ayon sa pangalan o username").fill(anosBhw.username);
+  await page.getByLabel("Maghanap ayon sa pangalan o username").press("Enter");
   await expect(page.getByRole("row", { name: new RegExp(anosBhw.username) })).toBeVisible();
 });

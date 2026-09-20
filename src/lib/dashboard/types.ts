@@ -15,6 +15,9 @@ export type DashboardBhwRow = {
   status: "invited" | "active" | "deactivated";
   last_login_at: string | null;
   questions_asked: number;
+  // Total rows matching the query, before p_limit/p_offset — the same on
+  // every row (a window function), so any row's value is the page total.
+  total_count: number;
 };
 
 export type DashboardTopTopic = {
