@@ -58,6 +58,29 @@ export function createClient(url, anonKey, accessToken) {
   };
 }
 
+// Storage Object API upload — separate from createClient() above because it
+// speaks to /storage/v1/, not /rest/v1/, and uploads a binary body rather
+// than a JSON one. Used by scripts/tts-render.mjs to write pre-rendered
+// narration audio into the training-audio bucket; `upsert: true` lets a
+// re-run overwrite a section's existing file after a content edit rather
+// than accumulating orphaned objects at ever-changing paths.
+export async function uploadStorageObject(url, anonKey, accessToken, bucket, objectPath, bytes, contentType) {
+  const response = await fetch(`${url}/storage/v1/object/${bucket}/${objectPath}`, {
+    method: "POST",
+    headers: {
+      apikey: anonKey,
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": contentType,
+      "x-upsert": "true",
+    },
+    body: bytes,
+  });
+  if (!response.ok) {
+    throw new Error(`upload ${bucket}/${objectPath} -> ${response.status}: ${await response.text()}`);
+  }
+  return `${url}/storage/v1/object/public/${bucket}/${objectPath}`;
+}
+
 // PostgREST caps a plain select at 1000 rows; the corpus is smaller than that
 // today but paging keeps the scripts correct as it grows.
 export async function selectAll(client, table, columns) {

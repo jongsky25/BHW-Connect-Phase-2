@@ -153,9 +153,34 @@ Unblocked and not started, in the order the plan argues for:
   makes `training:review-setup` unnecessary. Also the assessor console and
   the read-only observation checklist.
 - **INC-26 — slide mode.** One `LessonSection` is already one slide; tier
-  filtering gives density control for free.
-- **INC-27 — audio narration**, pre-rendered at content-load time.
+  filtering gives density control for free. Code complete
+  ([PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64)),
+  unmerged.
 - **INC-28 — animation.**
+
+**INC-27 — audio narration**, pre-rendered at content-load time, is now
+**code complete** (migration + `course_module_audio` RLS verified against a
+real local Postgres 16 replay; `LessonNarration` read-along wired into both
+lesson renderers; `scripts/tts-render.mjs` loader with an Azure/edge-tts
+fallback chain). Two things are owed before it's more than
+code-complete, and both need something this session didn't have:
+
+1. **An `AZURE_SPEECH_KEY`**, to actually run `training:tts --apply`
+   against Module 1 and record the real character count against Azure's
+   500K/month free tier (the plan's own "cost check before building" line)
+   — without it, every section renders via the edge-tts fallback, whose
+   protocol is reverse-engineered and was not exercised against the live
+   service in this session either.
+2. **The migration applied to the pilot.** `KB_LOADER_USERNAME`/
+   `PASSWORD`/`KB_LOADER_ANON_KEY` were available and `tts-render.mjs`
+   really did reach `ltzicxyefizxoqhfuuzc` over PostgREST — but a migration
+   is DDL, not something a loader script's admin token can apply, and this
+   workspace's Supabase MCP connection is scoped to a different org (same
+   gap as §2 below). Someone with dashboard/CLI access to the pilot project
+   needs to run it, the same "manual step with no CI equivalent" shape
+   `training:load` already has.
+
+Full detail: `docs/training-modules-plan.md`'s INC-27 section.
 
 ### Owed, small, worth doing when nearby
 

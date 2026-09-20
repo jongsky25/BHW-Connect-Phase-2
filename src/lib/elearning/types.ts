@@ -81,6 +81,40 @@ export type Lesson = {
   sections: LessonSection[];
 };
 
+// INC-27 audio narration + read-along. Pre-rendered at content-load time
+// by scripts/tts-render.mjs, never at runtime (see that script's header).
+// `timings` is an ordered, flat list spanning the whole section's narrated
+// text in playback order (heading, then each body sentence, then
+// takeaway) — the same order src/lib/elearning/narration-zones.ts builds
+// from a section's text, which is what lets the renderer line each
+// timing up with the span it should highlight.
+export type NarrationLanguage = "fil" | "en";
+export type NarrationZoneKind = "heading" | "body" | "takeaway";
+
+export type LessonAudioTiming = {
+  zone: NarrationZoneKind;
+  // 0 for heading/takeaway (each a single unit); the sentence's index
+  // within the body for "body".
+  index: number;
+  text: string;
+  start_ms: number;
+  end_ms: number;
+};
+
+export type CourseModuleAudio = {
+  id: string;
+  module_id: string;
+  // Position in the module's FULL authored lesson.sections array — not an
+  // index into whatever subset the current lesson_density renders (§A.6).
+  section_index: number;
+  language: NarrationLanguage;
+  audio_url: string;
+  format: "opus" | "mp3";
+  duration_seconds: number;
+  content_hash: string;
+  timings: LessonAudioTiming[];
+};
+
 // §D visual primitives.
 export type VisualPrimitive = "hub-spoke" | "chain" | "contrast" | "map" | "tree" | "stack" | "image";
 

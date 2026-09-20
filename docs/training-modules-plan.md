@@ -17,7 +17,7 @@ for this codebase.
 | INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
 | INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | 🔶 Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot and rendering at Detalyado since 19 Sep — **awaiting the user's yes**. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it teaches the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | 🔶 Code complete — [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64), unmerged. Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit). No carousel dependency added. |
-| INC-27 — audio narration + read-along | ⬜ Blocked on INC-26. |
+| INC-27 — audio narration + read-along | 🔶 Code complete. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in this session (same constraint `docs/session-handoff.md` §2 already documents for Supabase MCP). See the Status note inside the INC-27 section below. |
 | INC-28 — animated concept clips | ⬜ Blocked on INC-27. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
 | INC-24 — author modules 2-5 | ⬜ Blocked on INC-28 (author once against a finished pipeline, per the sequencing decision). |
@@ -1510,6 +1510,122 @@ sentence highlighted; a section with no generated audio degrades to text
 with no broken control; re-running the render script is idempotent and does
 not re-bill for unchanged text; the audio files are not counted against the
 route budget; axe-core clean with the player present.
+
+**Status — code complete, not yet pushed/PR'd at the time this note was
+written.** Shipped as designed, with one refinement over the plan's own
+sketch: rather than keying timings off either provider's own word/sentence
+boundary detection (which can't be trusted to land exactly on OUR zone
+boundaries — a heading like "Ang UHC Act" has no terminal punctuation for a
+sentence-boundary event to fire on at all), every zone (heading, each body
+sentence, takeaway) gets an explicit SSML `<bookmark mark="zone-N"/>`
+immediately after it, and `bookmarkReached`/`BookmarkEvent` offsets are what
+`timingsFromBookmarks()` turns into each zone's `[start_ms, end_ms)`. Same
+mechanism, same timing JSON shape, regardless of which provider actually
+ran — exactly the plan's own requirement.
+
+- **Schema**: `course_module_audio` — the child-table choice the plan named
+  as preferred, one row per (module, section, language). RLS mirrors
+  `course_module_visuals` exactly (read: learner-facing, follows the
+  module's own scope; write: admin-only, org-scoped) — verified against a
+  **real local Postgres 16 replay** of the entire migration history
+  (baseline through INC-23, all 30 files) plus this one, using the same
+  hand-built `auth`/`storage` schema stub and `authenticated`-role
+  `auth.uid()` impersonation approach INC-19/INC-20 established. 8
+  scenarios, all passing: an in-scope bhw reads a published module's audio;
+  a bhw in a genuinely disjoint province/city/barangay chain reads zero
+  rows; an admin can read their own draft course's audio (admin branch
+  doesn't require published, matching `course_module_visuals`); a
+  disjoint-scope admin reads zero rows from that draft; a bhw's insert is
+  rejected; an in-scope admin's insert succeeds; a disjoint-scope admin's
+  insert is rejected; and the `training-audio` storage bucket is
+  public-read/admin-write-only (anon can select, a bhw's insert is
+  rejected, an admin's insert succeeds). The harness itself isn't
+  committed (matching INC-19/20's own note that it's a hand-built,
+  not-checked-in verification tool), but the scenario script that produced
+  this result is straightforward to reconstruct from those two sections'
+  own descriptions of the approach.
+- **`section_index`** is the section's position in the module's FULL
+  authored `lesson.sections` array, not an index into whatever subset the
+  current `lesson_density` renders — both `LessonModule` and `LessonSlides`
+  now track this as `originalIndex` alongside their existing tier-filtered
+  `sections` array (a small, deliberate change to both renderers, factored
+  through a single `findAudioForSection` helper exported from
+  `lesson-module.tsx` so `lesson-slides.tsx` doesn't duplicate the lookup).
+- **Loader**: `scripts/tts-render.mjs`, a sibling of `training-load.mjs`
+  reusing its `--project`/`--dry-run`/`--apply` flags and reading (never
+  writing) the same `locks/<ref>.json` module content-id → row-uuid mapping
+  training-load.mjs owns. Idempotency is a sha256 of the exact ordered
+  narration text plus the voice name (`computeContentHash` in
+  `scripts/lib/tts-render-core.mjs`), compared against the target
+  project's own `course_module_audio.content_hash` — not a local cache
+  file — so "does not re-bill for unchanged text" holds even from a fresh
+  checkout. All of the actually-interesting logic (plan-building,
+  create/update/skip decisions, the char-budget estimate, the
+  Azure→edge-tts fallback chain, the per-item render orchestration) lives
+  in `tts-render-core.mjs` behind fully injected I/O — exactly the
+  dependency-injection reasoning INC-18a's `ProviderTransport` already
+  established in this codebase — and is unit-tested with fake transports
+  (12 tests) with zero network calls.
+- **Providers**: `scripts/lib/tts-providers/azure.mjs` uses the official
+  `microsoft-cognitiveservices-speech-sdk` (now a `dependencies` entry —
+  used only by this Node script, never imported by app code, confirmed by
+  `next build` producing an unchanged route list) and its documented
+  `bookmarkReached` event. `scripts/lib/tts-providers/edge-tts.mjs`
+  implements the zero-cost fallback's unofficial WebSocket protocol
+  directly (there is no SDK for it) with the WebSocket connection itself
+  injected, so its message-framing/parsing (`parseMessage`,
+  `parseBookmarkEvents`) is unit-tested (9 tests) against constructed
+  fixtures with no real socket. **Neither provider was exercised against
+  the real service in this session**: no `AZURE_SPEECH_KEY` was available,
+  and edge-tts's protocol is reverse-engineered and known to drift under
+  Microsoft's anti-abuse changes — both files say so in their own header
+  comments. Running `training:tts --apply` for real, and recording the
+  actual character count against Azure's free tier per the plan's own "cost
+  check before building" line, is owed before this is treated as verified
+  end-to-end, not merely code-complete.
+- **Migration application to the pilot**: this session had the loader's
+  admin credentials (`KB_LOADER_USERNAME`/`PASSWORD`/`KB_LOADER_ANON_KEY`)
+  pre-configured, and `scripts/tts-render.mjs --project ltzicxyefizxoqhfuuzc`
+  really did reach the live pilot project and query it — but the migration
+  itself was not, and could not be, applied there: this workspace's
+  Supabase MCP connection is scoped to a different org (the same "You do
+  not have permission" gap `docs/session-handoff.md` §2 already documents),
+  and there is no `service_role` key available to a session either. The
+  migration is verified locally (above) and ready to ship; applying it to
+  the pilot and then running `training:tts --apply` against Module 1 is
+  the next real-world step, same shape as INC-21's own "loader is a manual
+  step with no CI equivalent" note.
+- **Renderer**: `LessonNarration` (`lesson-narration.tsx`) replaces
+  `LessonSectionBlock`'s plain heading/body/takeaway markup only when a
+  matching, TEXT-VALIDATED audio row exists — `timingsMatchSection()`
+  recomputes the zones the CURRENT section text would produce and compares
+  them against the persisted `timings` field-by-field; a mismatch (the
+  authored text changed after the audio was last rendered) falls back to
+  the exact plain rendering a missing row would produce, never a
+  mis-highlighted one. Play/pause, a speed selector (0.75×–1.5×), and
+  `<audio preload="none">` (fetched only once the BHW actually presses
+  play, so the file is never counted against §5.2's per-route budget) are
+  all in the one component, reused unchanged by both `LessonModule` and
+  `LessonSlides` since both call the same `LessonSectionBlock`.
+  `prefers-reduced-motion` suppresses only the auto-scroll-to-active-span
+  behavior, never playback or highlighting itself, per the plan's own
+  distinction between "audio, not motion" and "auto-scrolling ... is
+  motion."
+- **Tests**: 42 new vitest cases across `narration-zones.test.ts`/`.mjs`
+  (sentence splitting, zone building, the binary-search timing lookup, the
+  text-match guard), `lesson-narration.test.tsx` (matching-audio rendering,
+  play/pause toggling, speed control, and the stale-audio degrade path),
+  `tts-render-core.test.mjs` (plan building, idempotency, the provider
+  fallback chain, per-item rendering), and the two provider modules' own
+  framing/parsing tests — 272 total (up from 230), all passing, alongside
+  a clean `npm run lint`, `npx tsc --noEmit`, and `next build`.
+- **Not executed**: `e2e/lesson-narration.spec.ts` (written, embeds a tiny
+  silent WAV as a data URI so a real browser genuinely fires
+  play/pause/ended events without depending on Storage or an external
+  host; checks the graceful-degradation section renders with no player;
+  axe-core scan with the player present) — same "no reachable Supabase env
+  in that session" gap INC-23/INC-26 both hit, not something specific to
+  this increment.
 
 ---
 
