@@ -53,6 +53,29 @@ const SILENT_WAV_DATA_URI =
   "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" +
   "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
+// docs/deploy-runbook.md requires every migration to be applied to the
+// dedicated bhw-connect-e2e project by hand (via the Supabase MCP
+// apply_migration tool or `supabase db push`) alongside merging — there is
+// no CI step that does this. The same gap this spec's own header comment
+// already discloses (never executed against a live Supabase project) means
+// that step may not have happened yet for INC-27's migration. Rather than
+// fail on a missing table, this probes for it first and skips with a clear
+// reason — the same pattern e2e/ai-gap-draft.spec.ts already uses for its
+// own unconfigured-environment precondition (GEMINI_API_KEY).
+async function courseModuleAudioTableExists(
+  request: import("@playwright/test").APIRequestContext,
+  adminToken: string,
+): Promise<boolean> {
+  const response = await request.get(
+    `${supabaseUrl()}/rest/v1/course_module_audio?select=id&limit=1`,
+    { headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}` } },
+  );
+  if (response.ok()) return true;
+  const body = (await response.json().catch(() => null)) as { code?: string } | null;
+  if (body?.code === "PGRST205") return false; // "Could not find the table ... in the schema cache"
+  throw new Error(`unexpected error probing course_module_audio: ${response.status()} ${JSON.stringify(body)}`);
+}
+
 async function setUpNarratedCourse(
   request: import("@playwright/test").APIRequestContext,
   adminToken: string,
@@ -162,8 +185,14 @@ test("a section with pre-rendered audio shows a working play control; a section 
   page,
   request,
 }) => {
-  const marker = `e2e.narration.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+
+  test.skip(
+    !(await courseModuleAudioTableExists(request, adminToken)),
+    "INC-27's migration (course_module_audio) isn't applied to this Supabase project yet — see docs/deploy-runbook.md's migration-application step",
+  );
+
+  const marker = `e2e.narration.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
   const courseId = await setUpNarratedCourse(request, adminToken, marker);
   const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
 
