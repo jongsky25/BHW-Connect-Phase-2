@@ -18,7 +18,7 @@ for this codebase.
 | INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | ✅ Approved by the user 20 Sep 2026. Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot, rendering at Detalyado since 19 Sep, course status `published`. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it taught the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | ✅ Merged — [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64). Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit), and real touch-swipe is unverified (only a `scrollLeft` stand-in). No carousel dependency added. The PR's test-plan checklist (real click-through, real touch-swipe, e2e run) was left unchecked at merge — owed, not blocking. A follow-up axe-core run in CI (a different session's PR, [PR #66](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/66)) caught one real color-contrast bug in the Basahin/Islide toggle — fixed there, not a flake. |
 | INC-27 — audio narration + read-along | ✅ Merged — [PR #68](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/68), by a separate session run in parallel with this one. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in that session (same constraint `docs/session-handoff.md` §2 documents for Supabase MCP, and that this plan's own INC-23 row above hit first). See the Status note inside the INC-27 section below. |
-| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) untouched — **licence question below still open**, needs the user's answer before any Remotion code is written. |
+| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual) and its render pipeline installed + verified 20 Sep 2026; no content queued through it yet — see the INC-28 section below for the "deliberately not built yet" list. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
 | INC-24 — author modules 2-5 | ⬜ Unblocked — INC-28 tier 1 shipped and Module 1 is approved. Not started. |
 | INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24. Now **four** modules, not three — §C is a nine-module map. |
@@ -1666,12 +1666,11 @@ Two tiers, because most concepts here do not need a video file:
    plus a poster frame, lazy-loaded, never autoplaying on mobile data.
    Install via the official skills (`npx skills add remotion-dev/skills`).
 
-**Licence gate — resolve before writing any Remotion code.** Remotion is
-source-available, free for individuals, non-profits and companies of three
-or fewer employees, otherwise $25/seat/month. Confirm which applies to BHW
-Connect's operating entity and record the answer here. If it does not come
-out free, tier 1 covers the pedagogy and tier 2 is dropped rather than
-quietly incurring a licence.
+**Licence gate — resolved 20 Sep 2026.** Remotion is source-available, free
+for individuals, non-profits and companies of three or fewer employees,
+otherwise $25/seat/month. BHW Connect's operating entity is an individual
+— the user confirmed this directly — so Remotion's free tier applies. No
+licence to buy or track; tier 2 can proceed.
 
 **`prefers-reduced-motion` is a hard requirement**, not a nicety: every
 animated scene must have a static end-state that conveys the same
@@ -1694,7 +1693,32 @@ just has nothing to build up from yet. No e2e coverage added this round
 meaningful); covered instead by allowlist, pure-function, and
 `@testing-library/react` DOM-effect tests.
 
-Tier 2 (Remotion) is untouched — the licence question below is still open.
+**Tier 2 (Remotion) — pipeline installed and verified, 20 Sep 2026, no content queued through it yet.**
+The official skills (`npx skills add remotion-dev/skills`) are installed
+under `.agents/skills/` (symlinked into `.claude/skills/`, `skills-lock.json`
+records the source). A blank Remotion project lives in `remotion/` — its own
+npm project (own `package.json`/`tsconfig`/eslint config; excluded from the
+app's own `npm run lint`/`typecheck` via `eslint.config.mjs`'s
+`globalIgnores`, since it is not app source and does not ship in the Next.js
+bundle). `scripts/remotion-render.mjs` (`npm run remotion:render -- <composition-id>
+[output-name]`) wraps `remotion render`/`remotion still` to the tier's own
+committed format — 480p (854×480) H.264, muted (narration stays a separate
+track, exactly as tier 1's SVG scenes already work), plus a poster frame for
+lazy-loading — and warns if a render exceeds the ~0.5-1 MB/20s budget above.
+Verified end to end against the scaffold's own placeholder composition: a
+valid MP4 (H.264, muted) and an 854×480 JPEG poster, both produced without
+error.
+
+**What's deliberately not built yet:** no DB/UI wiring (`course_module_visuals`
+has no `video` primitive or `video_url` column), no CI render job, no actual
+clip. Building that now would be schema and pipeline work with nothing real
+to render against or verify with — none of Module 1's content meets tier 2's
+own bar ("the few concepts that genuinely need video"; Module 1 is HEPO/role
+conceptual content, not a procedural sequence). This is owed once INC-24/25
+authors a module with a genuinely motion-teaching concept (the plan's own
+examples: the Five Whys unfolding, correct sharps disposal) — wire the
+schema and the `LessonVisual` video case against that real concept, not
+speculatively now.
 
 ---
 

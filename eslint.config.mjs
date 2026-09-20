@@ -27,6 +27,15 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // remotion/ is its own npm project (its own package.json, tsconfig,
+    // eslint config) for INC-28 tier 2 — `npm run lint` here is this app's
+    // lint, not that sub-project's. .agents/**+.claude/skills/** are
+    // `npx skills add` output (Claude-facing SKILL.md docs and their
+    // example assets, symlinked from .claude/skills/ into .agents/skills/),
+    // not this app's source.
+    "remotion/**",
+    ".agents/**",
+    ".claude/skills/**",
   ]),
 
   // Must come after the spreads above — in flat config, later objects win.
