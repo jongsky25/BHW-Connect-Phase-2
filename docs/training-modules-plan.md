@@ -1293,15 +1293,18 @@ never granted `assessor` a read policy on `course_progress`/
 predates the facilitator role's use of this data). Added in
 `20260810000000_inc23_facilitator_progress_read.sql`, ownership-scoped via
 the session's own enrollment, mirroring `course_test_attempts`'s
-`_facilitator_via_session` policy. **Still owed, not verified before
-merge**: a real click-through against the pilot project (create session →
-set density → enroll → roster → module view → checklist; a `bhw` redirected
-off the route; a second facilitator in a sibling org unit sees neither the
-first facilitator's sessions nor their BHWs), and the migration has not
-been run against the pilot project — `training:load` doesn't touch RLS
-policies, so this needs its own `supabase db push` (or equivalent) against
-`ltzicxyefizxoqhfuuzc` before any of the above can actually be checked.
-See the PR's test-plan checklist.
+`_facilitator_via_session` policy. **Migration applied to the pilot** on
+20 Sep 2026 via `apply_migration` (see `docs/session-handoff.md` §2 for how
+the Supabase MCP connector got there) and verified live against
+`pg_policies` — both `course_progress_facilitator_via_session` and
+`course_module_progress_facilitator_via_session` exist on
+`ltzicxyefizxoqhfuuzc` now. **Still owed**: the same migration against the
+CI project (`bhw-connect-e2e`), and a real click-through against the pilot
+(create session → set density → enroll → roster → module view → checklist;
+a `bhw` redirected off the route; a second facilitator in a sibling org unit
+sees neither the first facilitator's sessions nor their BHWs) — the schema
+is live now, so this is unblocked, just not yet done. See the PR's test-plan
+checklist.
 
 ---
 

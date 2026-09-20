@@ -67,31 +67,37 @@ was serving Module 1 from before the re-write. A rendered page did.
 
 ## 2. Pilot project — live state
 
-Supabase project ref **`ltzicxyefizxoqhfuuzc`**, org unit **"Los Baños"**.
-Not reachable through the Supabase MCP tools in this workspace (that
-connection is scoped to a different org and returns "You do not have
-permission"). Reach it through the loader scripts over PostgREST instead.
+Supabase project ref **`ltzicxyefizxoqhfuuzc`**, org unit **"Los Baños"**,
+org `jyxsargubbcnzffevzpv` ("gibs-21's Project"). Reachable through the
+Supabase MCP tools in this workspace as of 20 Sep 2026 — see below. Also
+reachable through the loader scripts over PostgREST, independently.
 
-Re-verified 20 Sep 2026, in response to a session that had come to believe
-otherwise: `list_organizations`/`list_projects` via the Supabase MCP tools
-show only `jongsky25's Org`, which does not include `ltzicxyefizxoqhfuuzc`;
-`get_project` against it returns the permission error directly. Separately,
-`npm run doctor` confirms `KB_LOADER_USERNAME`/`PASSWORD`/`ANON_KEY` **are**
-genuinely present in this session's environment (that part of a
-SessionStart hook message claiming so was accurate, not injected) — but
-that credential is a PostgREST application login, not schema access, so it
-only ever unlocks `training:load`/`training:review-setup`, never a
-migration push. Net effect: **no credential reachable from a Claude Code
-session can push a `supabase/migrations/*.sql` file to the pilot project.**
-That gap is deliberate (see `docs/credentials.md` §"Do not put
-`SUPABASE_SERVICE_ROLE_KEY` here") and needs one of: the Supabase MCP
-connector re-pointed at the org that owns `ltzicxyefizxoqhfuuzc`, someone
-running `supabase db push` locally, or a new `migrate-pilot.yml` GitHub
-Actions workflow (mirroring `training-load.yml`) built with the user's
-explicit sign-off, since it would need `SUPABASE_DB_URL`/
-`SUPABASE_SERVICE_ROLE_KEY` in Actions secrets. The INC-23 migration
-(`20260810000000_inc23_facilitator_progress_read.sql`) is still owed
-against the pilot for exactly this reason.
+**History, for whoever hits this next:** earlier the same day, the Supabase
+MCP connector was authenticated as a *different* Supabase identity — one
+whose only org, `jongsky25's Org` (`rparoyuerqqrozxehztm`), holds five
+unrelated projects (`jongsky25's Project`, `bhw-connect`, `KaniManong`,
+`koica-journey-tracker`, `ofis-dev`) and not the pilot. `list_projects` didn't
+list it and `get_project` returned a permission error. That was a login
+problem, not a design constraint: the user reconnected the Supabase
+connector under the account that actually owns `ltzicxyefizxoqhfuuzc`, and
+`get_project`/`list_migrations`/`apply_migration` all work against it now.
+If a future session hits the same permission error, check which Supabase
+account the connector is authenticated as before concluding the MCP path is
+unusable — it may just be the wrong login, the same way it was here. The
+loader credential (`KB_LOADER_USERNAME`/`PASSWORD`/`ANON_KEY`) was never the
+issue — that's a PostgREST application login and was genuinely present the
+whole time; it only ever unlocked `training:load`/`training:review-setup`,
+never schema/migration access, which is by design (see `docs/credentials.md`
+§"Do not put `SUPABASE_SERVICE_ROLE_KEY` here").
+
+**INC-23's migration is now applied to the pilot**
+(`20260810000000_inc23_facilitator_progress_read.sql`, pushed via
+`apply_migration` and verified against `pg_policies` on 20 Sep 2026). Still
+owed: the same file against the CI project (`bhw-connect-e2e`, ref unknown to
+either Supabase account this session has checked), and INC-29's migration
+(`20260920000000_inc29_course_progress_reset.sql`) — confirmed missing from
+the pilot via `list_migrations` in the same session but out of scope for
+what was being fixed, not pushed yet.
 
 | Thing | Value |
 | --- | --- |
