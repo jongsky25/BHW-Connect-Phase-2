@@ -24,8 +24,17 @@ test("admin creates a BHW, resets their password, deactivates them, and every ac
   await expect(banner).toContainText(username);
   await expect(banner).toContainText(/[0-9a-f]{10}/);
 
+  // The list is paged, so find the account by search rather than by scrolling
+  // a table whose length grows with the project. The filter also survives the
+  // refresh each action below triggers, which is what keeps the row in view.
+  await page.getByLabel("Maghanap ng user").fill(username);
+  await page.getByRole("button", { name: "Hanapin" }).click();
+  await expect(page).toHaveURL(new RegExp(`/admin/users\\?q=${username}`));
+
   const row = page.getByRole("row", { name: new RegExp(username) });
   await expect(row).toBeVisible();
+  // One match, not a page of unrelated rows — the search really filtered.
+  await expect(page.getByText(/Ipinapakita ang 1–1 sa 1/)).toBeVisible();
 
   await row.getByRole("button", { name: "I-reset ang password" }).click();
   await expect(banner).toContainText(username);
