@@ -120,24 +120,24 @@ which holds the loader password as a repo secret and defaults to a dry run.
 Prefer it over the local commands above; it needs no credentials in the
 session. The local commands still work wherever `KB_LOADER_*` is set.
 
-### Known sharp edge: the pretest gate
+### Known sharp edge: the pretest gate — now self-service (INC-29)
 
 `rpc_course_test_submit` refuses a pretest when `course_module_progress` rows
 already exist, so a BHW who completed modules *before* `course_sessions` was
 turned on is deadlocked: modules gated behind a pretest the RPC will not
 accept. The guard is correct — a pretest after the content makes the
-pre/post delta meaningless — but there is no RPC to clear progress, and the
-progress tables have only `SELECT` policies, so it cannot be undone from a
-session. Clearing it needs SQL in the Supabase dashboard:
+pre/post delta meaningless.
 
-```sql
-delete from public.course_module_progress
-where course_progress_id in (
-  select id from public.course_progress where course_id = '<course-id>');
-delete from public.course_progress where course_id = '<course-id>';
-```
-
-Hit once, by `demo.viewer`. **Worth fixing properly** — see below.
+This used to need dashboard SQL, run once against `demo.viewer`. It no longer
+does: **Admin nav → Course progress** (`/admin/course-progress`) lists every
+BHW's progress in the admin's org scope — course, status, modules completed,
+pretest/posttest scores — with a **Reset progress** button per row.
+`rpc_course_progress_reset(p_course_id, p_bhw_user_id)` does the actual work,
+admin-only and org-scoped, and refuses when an assessment for the pair is
+pending, assigned, or already passed (a failed one does not block — that is
+the retry case). Verified against a real local Postgres 16 replay: the
+deadlock reproduced, refused pretest confirmed, reset via the RPC, same
+pretest accepted afterward.
 
 ---
 
@@ -159,12 +159,8 @@ Unblocked and not started, in the order the plan argues for:
 
 ### Owed, small, worth doing when nearby
 
-- **An admin path to reset a BHW's course progress.** The pretest deadlock
-  above will recur every time a pilot BHW tries the course before a session
-  exists. An `rpc_course_progress_reset(p_course_id, p_bhw_user_id)` guarded
-  to admins would remove a dashboard-SQL step from the user's plate
-  permanently — exactly the kind of thing that should be a script, not a
-  runbook line.
+- **An admin path to reset a BHW's course progress** — done (INC-29), see
+  above. `rpc_course_progress_reset` plus `/admin/course-progress`.
 - **A single register of which credential lives in which store** — done,
   `docs/credentials.md`, backed by `npm run doctor`. Add new secrets to
   `scripts/doctor.mjs` as they appear.

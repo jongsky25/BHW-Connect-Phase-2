@@ -136,12 +136,14 @@ Not credentials. The recurring trips to the Supabase dashboard's SQL editor —
 those are the ones costing real attention, and each is a small admin-guarded
 RPC plus a screen:
 
-1. **Reset a BHW's course progress.** The pretest deadlock: once
-   `course_module_progress` rows exist, `rpc_course_test_submit` refuses the
-   pretest, and the progress tables have only `SELECT` policies, so nothing
-   but dashboard SQL can undo it. This will recur for every pilot BHW who
-   opens the course before a session exists. Wants
-   `rpc_course_progress_reset(p_course_id, p_bhw_user_id)`.
+1. ~~**Reset a BHW's course progress.**~~ **Done (INC-29).** The pretest
+   deadlock — once `course_module_progress` rows exist,
+   `rpc_course_test_submit` refuses the pretest, and the progress tables
+   have only `SELECT` policies — used to need dashboard SQL. Now:
+   `rpc_course_progress_reset(p_course_id, p_bhw_user_id)`, admin-only and
+   org-scoped, refuses when an assessment for the pair is pending, assigned,
+   or already passed, and `/admin/course-progress` lists every BHW's
+   progress with a reset button per row.
 2. **Reset a user's password.** `rpc_admin_reset_password` exists but is
    refused from a session as a secret-store write — which is correct, and
    exactly why it should be a screen the user clicks rather than a thing an
@@ -150,5 +152,5 @@ RPC plus a screen:
    A button in the app would only be worth it if non-technical staff ever
    need to trigger a load.
 
-(1) is the one with a live cost today. It is already logged under "Owed" in
-`docs/session-handoff.md`.
+(2) is the next one with a live cost, whenever an account's password needs
+resetting outside a session.
