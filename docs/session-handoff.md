@@ -90,14 +90,27 @@ whole time; it only ever unlocked `training:load`/`training:review-setup`,
 never schema/migration access, which is by design (see `docs/credentials.md`
 §"Do not put `SUPABASE_SERVICE_ROLE_KEY` here").
 
-**INC-23's migration is now applied to the pilot**
+**INC-23's migration is now applied to both the pilot and the CI project**
 (`20260810000000_inc23_facilitator_progress_read.sql`, pushed via
-`apply_migration` and verified against `pg_policies` on 20 Sep 2026). Still
-owed: the same file against the CI project (`bhw-connect-e2e`, ref unknown to
-either Supabase account this session has checked), and INC-29's migration
-(`20260920000000_inc29_course_progress_reset.sql`) — confirmed missing from
-the pilot via `list_migrations` in the same session but out of scope for
-what was being fixed, not pushed yet.
+`apply_migration` and verified against `pg_policies` on 20 Sep 2026 — pilot
+first, then `bhw-connect-e2e` once the user supplied its ref,
+`qeryhxctxslhdkclifom`; see "Reaching the CI project" below). Still owed:
+INC-29's migration (`20260920000000_inc29_course_progress_reset.sql`) —
+confirmed missing from the pilot via `list_migrations` in the same session
+but out of scope for what was being fixed, not pushed yet.
+
+### Reaching the CI project
+
+`bhw-connect-e2e`'s project ref is not discoverable from a session on its
+own: it lives in the same org as the pilot (`jyxsargubbcnzffevzpv`), but
+`list_projects` doesn't enumerate that org's projects for this connector the
+same way it doesn't enumerate the pilot's — the difference is that the
+pilot's ref was already recorded here, and the CI project's never had been.
+`get_project`/`list_migrations`/`apply_migration` all work against it fine
+once you have the ref; the gap was purely "nobody wrote it down," not an
+access problem. The ref is **`qeryhxctxslhdkclifom`** (host
+`qeryhxctxslhdkclifom.supabase.co`) — recorded here now so the next session
+doesn't have to ask the user for it again.
 
 | Thing | Value |
 | --- | --- |

@@ -1298,13 +1298,16 @@ the session's own enrollment, mirroring `course_test_attempts`'s
 the Supabase MCP connector got there) and verified live against
 `pg_policies` — both `course_progress_facilitator_via_session` and
 `course_module_progress_facilitator_via_session` exist on
-`ltzicxyefizxoqhfuuzc` now. **Still owed**: the same migration against the
-CI project (`bhw-connect-e2e`), and a real click-through against the pilot
-(create session → set density → enroll → roster → module view → checklist;
-a `bhw` redirected off the route; a second facilitator in a sibling org unit
-sees neither the first facilitator's sessions nor their BHWs) — the schema
-is live now, so this is unblocked, just not yet done. See the PR's test-plan
-checklist.
+`ltzicxyefizxoqhfuuzc` now. **Applied to the CI project too**, same day: the
+user supplied `bhw-connect-e2e`'s ref (`qeryhxctxslhdkclifom`, not otherwise
+discoverable from a session — see `docs/session-handoff.md` "Reaching the CI
+project"), and both policies are verified live against its `pg_policies` as
+well. **Still owed**: a real click-through against the pilot (create session
+→ set density → enroll → roster → module view → checklist; a `bhw`
+redirected off the route; a second facilitator in a sibling org unit sees
+neither the first facilitator's sessions nor their BHWs) — the schema is
+live on both projects now, so this is unblocked, just not yet done. See the
+PR's test-plan checklist.
 
 ---
 
