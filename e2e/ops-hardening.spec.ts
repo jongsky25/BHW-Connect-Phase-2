@@ -131,3 +131,24 @@ test("retention purge dry run reports counts without deleting anything", async (
     expect(value).toBeGreaterThanOrEqual(0);
   }
 });
+
+// Issue #58 follow-up: rpc_e2e_purge_test_users dry run must never delete
+// anything either — same double-dry-run-matches shape as the retention
+// purge test above. Never exercises p_dry_run: false here: this suite's
+// own throwaway fixtures (including the one created above) are well
+// under the RPC's 24h cutoff, but a live run is destructive on shared
+// infrastructure and belongs in the scheduled workflow, not the smoke
+// suite.
+test("e2e test user purge dry run reports a count without deleting anything", async ({ request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+
+  const first = await callRpc(request, adminToken, "rpc_e2e_purge_test_users", { p_dry_run: true });
+  const second = await callRpc(request, adminToken, "rpc_e2e_purge_test_users", { p_dry_run: true });
+
+  expect(first.status).toBe(200);
+  expect(second.status).toBe(200);
+  expect(first.body).toEqual(second.body);
+
+  const [row] = first.body as Array<{ users_purged: number }>;
+  expect(row.users_purged).toBeGreaterThanOrEqual(0);
+});
