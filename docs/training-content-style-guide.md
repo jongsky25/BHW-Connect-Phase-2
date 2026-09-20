@@ -169,6 +169,21 @@ repo-wide). Keep a `<title>` element. Stay under ~12 text labels per
 diagram; past that, split the idea into two visuals or move some of it into
 prose.
 
+**Optional: build the visual up as the narration reaches it (INC-28).**
+Wrap the part of the diagram that corresponds to one body sentence in a
+group carrying `data-scene-step="N"`, where N is that sentence's position
+(1-based) in the section's `body_*` text after splitting on `. ! ?` — the
+same split `scripts/tts-render.mjs` uses, so it lines up with when that
+sentence is actually narrated. The Module 1 hub-spoke
+(`01-tatlong-tungkulin.svg`) is the worked example: the hub is undecorated
+(shown immediately), and each of the three role boxes carries
+`data-scene-step` on the sentence range that introduces the three roles.
+Steps don't need to map one-per-sentence to one-per-element exactly — matching
+the general pacing of the paragraph is enough. This only matters while a BHW
+is playing the section's narration; with no audio, or once
+`prefers-reduced-motion` is set, every step renders visible immediately —
+never author a diagram whose *only* legible state is mid-build-up.
+
 ---
 
 ## 5. Facilitator notes and the competency block (§A.4)

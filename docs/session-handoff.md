@@ -183,27 +183,49 @@ pretest accepted afterward.
 
 ## 3. What is next
 
+*Last verified against `origin/main` on 20 September 2026 — the state below
+had drifted from what was actually merged by the time this was last edited;
+check `git log --oneline -20` before trusting a "not started" claim here
+again.*
+
+**Merged and done:** INC-23 (facilitator UI — sessions, enrollment, roster,
+competency checklist), INC-26 (slide mode), INC-27 (audio narration +
+read-along, code-complete — see its own owed items below), INC-29 (admin
+course-progress reset), INC-30 (breadcrumb navigation). None of these are
+"unblocked and not started" any more; an earlier version of this section
+said otherwise.
+
+**INC-28 tier 1 (animated SVG scenes) is now also code-complete** — see
+`docs/training-modules-plan.md`'s INC-28 section for what shipped
+(`data-scene-step` allowlist attribute, `NarrationVisualProgress` threaded
+through `LessonNarration`'s `visual` prop, the Module 1 hub-spoke as the
+worked example). Same "needs real narration audio to actually see it
+animate" gap as INC-27 below — nothing is broken without it, the scene just
+sits at its fully-revealed (and correctly `prefers-reduced-motion`) static
+state. Tier 2 (Remotion) is untouched; its licence question is still open.
+
+**PR #66** (`claude/what-is-next-s2hn7l`, open, draft) is not docs
+follow-up — it's the actual root-cause fix for the CI flakiness that has
+been hitting multiple PRs' e2e runs today: concurrent CI on different PRs
+races global feature flags on the one shared `bhw-connect-e2e` project.
+It splits `ci.yml` into a parallel `checks` job and a repo-wide-serialized
+`e2e` job. Validated (lint/typecheck/unit/build clean) and its own new
+`slide-mode*.spec.ts` coverage passes; the failures it's seen since are the
+very race it fixes, confirmed against a different PR hitting the identical
+three specs. Subscribed and watched — merge it once CI is green rather
+than re-deriving this fix from scratch in a future session.
+
 **INC-24 (authoring modules 2–9) is blocked only on the user's approval of
 Module 1**, now that it renders at Detalyado in the real app. If they have
-said yes, that gate is closed and authoring starts.
+said yes, that gate is closed and authoring starts. This is the only
+remaining "not started" item besides INC-28 tier 2's licence question.
 
-Unblocked and not started, in the order the plan argues for:
-
-- **INC-23 — facilitator UI.** Includes the density selector, which is what
-  makes `training:review-setup` unnecessary. Also the assessor console and
-  the read-only observation checklist.
-- **INC-26 — slide mode.** One `LessonSection` is already one slide; tier
-  filtering gives density control for free. Code complete
-  ([PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64)),
-  unmerged.
-- **INC-28 — animation.**
-
-**INC-27 — audio narration**, pre-rendered at content-load time, is now
-**code complete** (migration + `course_module_audio` RLS verified against a
-real local Postgres 16 replay; `LessonNarration` read-along wired into both
-lesson renderers; `scripts/tts-render.mjs` loader with an Azure/edge-tts
-fallback chain). Two things are owed before it's more than
-code-complete, and both need something this session didn't have:
+**INC-27 — audio narration** is code complete (migration +
+`course_module_audio` RLS verified against a real local Postgres 16 replay;
+`LessonNarration` read-along wired into both lesson renderers;
+`scripts/tts-render.mjs` loader with an Azure/edge-tts fallback chain). Two
+things are owed before it's more than code-complete, and both need
+something this session didn't have:
 
 1. **An `AZURE_SPEECH_KEY`**, to actually run `training:tts --apply`
    against Module 1 and record the real character count against Azure's
@@ -216,9 +238,11 @@ code-complete, and both need something this session didn't have:
    really did reach `ltzicxyefizxoqhfuuzc` over PostgREST — but a migration
    is DDL, not something a loader script's admin token can apply, and this
    workspace's Supabase MCP connection is scoped to a different org (same
-   gap as §2 below). Someone with dashboard/CLI access to the pilot project
+   gap as §2 above). Someone with dashboard/CLI access to the pilot project
    needs to run it, the same "manual step with no CI equivalent" shape
-   `training:load` already has.
+   `training:load` already has. As of 20 September this is still open —
+   don't confuse it with INC-23's migration (§2 above), which is a
+   different migration and is applied to both projects.
 
 Full detail: `docs/training-modules-plan.md`'s INC-27 section.
 

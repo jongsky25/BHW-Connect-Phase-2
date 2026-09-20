@@ -1641,17 +1641,24 @@ ran — exactly the plan's own requirement.
 
 Two tiers, because most concepts here do not need a video file:
 
-1. **Animated SVG scenes — the default.** The §D primitives already exist as
-   SVG and the allowlist already permits `class`. Drive a build-up from React
-   step state (the hub-spoke's spokes appearing one at a time as the
-   narration names each role) rather than shipping a video. Zero additional
-   bytes, scales with `--font-scale`, correct in dark mode, and it can be
-   driven by INC-27's sentence timings so the picture assembles as the
-   narration reaches it — which a pre-rendered video cannot do bilingually
-   without two renders. Extending the allowlist to `<animate>` /
-   `<animateTransform>` is in scope; `<script>` and the rest of the reject
-   list stay rejected, and each new permitted element needs its own
-   allowlist test.
+1. **Animated SVG scenes — the default. Code complete, 20 September 2026.**
+   Rather than extending the allowlist to `<animate>`/`<animateTransform>`
+   (real SMIL timelines the browser runs on its own clock, which can't be
+   paused/resumed against arbitrary narration playback without JS control
+   of the SVG's own animation clock), the build-up is driven entirely from
+   React step state, exactly as this section originally proposed: content
+   authors mark a group `data-scene-step="N"` (new allowlist attribute, one
+   test per accept/reject case, in `src/lib/elearning/svg-allowlist.ts` and
+   its `scripts/lib/svg-allowlist.mjs` mirror), and `LessonVisual`
+   (`src/components/elearning/lesson-module.tsx`) toggles a `data-revealed`
+   attribute on each as `LessonNarration` reports how far playback has
+   reached (`NarrationVisualProgress`, threaded through the `visual` prop as
+   a render-prop function — see `lesson-narration.tsx`). No DB schema
+   change, no new content-authoring field beyond the SVG markup itself. The
+   worked example is Module 1's hub-spoke
+   (`01-tatlong-tungkulin.svg`, HEPO's three roles), documented for future
+   authors in `docs/training-content-style-guide.md` §4. `<script>` and the
+   rest of the reject list are unchanged.
 2. **Remotion — for the few concepts that genuinely need video.** Procedural
    sequences where showing motion *is* the teaching (the Five Whys unfolding,
    correct sharps disposal). React-based, so the existing components and
@@ -1675,6 +1682,19 @@ timings; its static fallback conveys the same content under
 `prefers-reduced-motion`; the allowlist's new elements each have a test and
 the reject list is unchanged; no video file ships unless the licence
 question is answered in writing above; route weight stays within §5.2.
+
+Tier 1's DoD is met except for seeing it actually play in the live app,
+which needs the same thing INC-27 is still owed — real narration audio
+rendered against the pilot (an `AZURE_SPEECH_KEY`, or the edge-tts
+fallback, run via `training:tts --apply`). Until then the scene renders in
+its fully-revealed static state everywhere, which is also its correct
+`prefers-reduced-motion` behaviour — nothing is broken, the build-up
+just has nothing to build up from yet. No e2e coverage added this round
+(would need real audio in the shared `bhw-connect-e2e` project to be
+meaningful); covered instead by allowlist, pure-function, and
+`@testing-library/react` DOM-effect tests.
+
+Tier 2 (Remotion) is untouched — the licence question below is still open.
 
 ---
 
