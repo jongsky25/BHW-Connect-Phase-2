@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ReplyForm } from "@/components/forum/reply-form";
 import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { ForumPost } from "@/lib/forum/types";
@@ -38,6 +39,7 @@ export default async function ForumThreadPage({ params }: { params: Promise<{ id
   }
 
   const t = await getTranslations("forum");
+  const tCrumbs = await getTranslations("breadcrumbs");
 
   const { data: thread } = await supabase
     .from("forum_threads")
@@ -61,6 +63,13 @@ export default async function ForumThreadPage({ params }: { params: Promise<{ id
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/forum" },
+          { label: thread.title },
+        ]}
+      />
       <div>
         {thread.status === "hidden" ? (
           <p role="status" className="mb-2 rounded-md bg-warning/10 px-3 py-2 text-sm text-warning">

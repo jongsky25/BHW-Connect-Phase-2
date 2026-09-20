@@ -69,7 +69,9 @@ test("a newly provisioned BHW sees the onboarding checklist and it disappears on
 
   // Step 3: visit a KB category with real published content.
   await page.goto("/kb/mch");
-  await expect(page.getByRole("link", { name: /Back to categories|Bumalik sa mga kategorya/ })).toBeVisible();
+  await expect(
+    page.getByRole("navigation", { name: "Breadcrumb" }).getByRole("link", { name: /Knowledge Base/ }),
+  ).toBeVisible();
 
   progress = await fetchProgress(request, userToken, fresh.username);
   expect(progress.onboarding_progress.kb).toBe(true);

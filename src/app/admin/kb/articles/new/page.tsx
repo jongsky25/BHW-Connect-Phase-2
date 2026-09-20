@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ArticleForm } from "@/components/kb/article-form";
 import { createClient } from "@/lib/supabase/server";
 
@@ -9,5 +11,19 @@ export default async function NewKbArticlePage() {
     supabase.from("users").select("id, full_name, username").eq("role", "admin").order("full_name"),
   ]);
 
-  return <ArticleForm mode="create" categories={categories ?? []} owners={owners ?? []} />;
+  const t = await getTranslations("admin.kbArticles");
+  const tCrumbs = await getTranslations("breadcrumbs");
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/admin/kb/articles" },
+          { label: t("newAction") },
+        ]}
+      />
+      <ArticleForm mode="create" categories={categories ?? []} owners={owners ?? []} />
+    </div>
+  );
 }

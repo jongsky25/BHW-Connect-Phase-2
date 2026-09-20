@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SettingsForm } from "@/components/settings/settings-form";
 import { parseA11ySettings } from "@/lib/settings/types";
 import { getAppUser } from "@/lib/supabase/app-user";
@@ -21,9 +22,11 @@ export default async function SettingsPage() {
   }
 
   const t = await getTranslations("settings");
+  const tCrumbs = await getTranslations("breadcrumbs");
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
         <p className="mt-1 text-ink/70">{t("intro")}</p>

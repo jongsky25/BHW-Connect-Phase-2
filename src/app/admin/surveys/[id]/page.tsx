@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SurveyResults } from "@/components/surveys/survey-results";
 import type { AnswerValue, SurveyQuestion } from "@/lib/surveys/types";
 import { createClient } from "@/lib/supabase/server";
@@ -13,6 +14,7 @@ export default async function SurveyResultsPage({ params }: { params: Promise<{ 
   const { id } = await params;
   const supabase = await createClient();
   const t = await getTranslations("admin.surveys");
+  const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
 
   const { data: survey } = await supabase
@@ -53,6 +55,13 @@ export default async function SurveyResultsPage({ params }: { params: Promise<{ 
 
   return (
     <div className="flex flex-col gap-6">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/admin/surveys" },
+          { label: locale === "en" ? survey.title_en : survey.title_fil },
+        ]}
+      />
       <h1 className="text-2xl font-semibold tracking-tight text-ink">
         {locale === "en" ? survey.title_en : survey.title_fil}
       </h1>

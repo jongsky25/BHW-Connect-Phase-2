@@ -1,4 +1,6 @@
+import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ArticleForm } from "@/components/kb/article-form";
 import { createClient } from "@/lib/supabase/server";
 
@@ -20,5 +22,19 @@ export default async function EditKbArticlePage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  return <ArticleForm mode="edit" article={article} categories={categories ?? []} owners={owners ?? []} />;
+  const t = await getTranslations("admin.kbArticles");
+  const tCrumbs = await getTranslations("breadcrumbs");
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/admin/kb/articles" },
+          { label: article.title_en },
+        ]}
+      />
+      <ArticleForm mode="edit" article={article} categories={categories ?? []} owners={owners ?? []} />
+    </div>
+  );
 }
