@@ -6,11 +6,13 @@ import { sanitizeSvgMarkup } from "@/lib/elearning/svg-allowlist";
 import {
   TIERS_FOR_DENSITY,
   type CourseModule,
+  type CourseModuleAudio,
   type CourseModuleVisual,
   type LessonCheck,
   type LessonDensity,
   type LessonSection,
 } from "@/lib/elearning/types";
+import { LessonNarration } from "./lesson-narration";
 import { useVisiblePosition } from "./use-visible-position";
 
 // INC-26: shared position semantics between LessonModule (this file) and
@@ -23,6 +25,11 @@ export type LessonPosition = number;
 type Props = {
   module: CourseModule;
   visuals: CourseModuleVisual[];
+  // INC-27, optional: narration for this module's sections, keyed by the
+  // section's index in the module's FULL authored lesson.sections array
+  // (§A.6 — independent of which tiers the current density renders) and by
+  // language. Omitted entirely by callers that haven't wired audio in yet.
+  audios?: CourseModuleAudio[];
   density: LessonDensity;
   locale: string;
   isDone: boolean;
@@ -36,6 +43,22 @@ type Props = {
   onPositionChange?: (position: LessonPosition) => void;
 };
 
+// Exported so lesson-slides.tsx (a same-props sibling renderer, per INC-26)
+// looks audio up the same way rather than duplicating this predicate.
+export function findAudioForSection(
+  audios: CourseModuleAudio[] | undefined,
+  sectionIndex: number,
+  locale: string,
+): CourseModuleAudio | null {
+  if (!audios) return null;
+  const language = locale === "en" ? "en" : "fil";
+  return (
+    audios.find(
+      (a) => a.section_index === sectionIndex && a.language === language,
+    ) ?? null
+  );
+}
+
 // §A.1/§A.2/§A.5/§A.6 BHW lesson renderer: objectives bookend -> tiered
 // sections (each with its own visual + inline retrieval check) ->
 // retrieval-first summary assembled from the *rendered* sections' takeaways
@@ -44,6 +67,7 @@ type Props = {
 export function LessonModule({
   module,
   visuals,
+  audios,
   density,
   locale,
   isDone,
@@ -57,9 +81,13 @@ export function LessonModule({
   const tiers = TIERS_FOR_DENSITY[density];
   const objectives =
     locale === "en" ? module.objectives_en : module.objectives_fil;
-  const sections = (module.lesson?.sections ?? []).filter((section) =>
-    tiers.includes(section.tier),
-  );
+  // originalIndex survives the tier filter below — it's what
+  // course_module_audio.section_index refers to (§A.6: authored order,
+  // not the density-filtered position), so it's the only correct key for
+  // looking up this section's narration.
+  const sections = (module.lesson?.sections ?? [])
+    .map((section, originalIndex) => ({ section, originalIndex }))
+    .filter(({ section }) => tiers.includes(section.tier));
 
   const rootRef = useRef<HTMLDivElement | null>(null);
   const objectivesRef = useRef<HTMLDivElement | null>(null);
@@ -101,7 +129,7 @@ export function LessonModule({
         </div>
       ) : null}
 
-      {sections.map((section, index) => (
+      {sections.map(({ section, originalIndex }, index) => (
         <div
           key={index}
           ref={(el) => {
@@ -118,6 +146,7 @@ export function LessonModule({
                   tiers.includes(v.tier),
               ) ?? null
             }
+            audio={findAudioForSection(audios, originalIndex, locale)}
             locale={locale}
           />
         </div>
@@ -128,7 +157,10 @@ export function LessonModule({
         data-lesson-position={sections.length}
         className="flex flex-col gap-5"
       >
-        <ClosingSummary sections={sections} locale={locale} />
+        <ClosingSummary
+          sections={sections.map(({ section }) => section)}
+          locale={locale}
+        />
 
         <LessonCompleteControl
           isDone={isDone}
@@ -160,28 +192,44 @@ export function LessonObjectives({ objectives }: { objectives: string[] }) {
 export function LessonSectionBlock({
   section,
   visual,
+  audio = null,
   locale,
 }: {
   section: LessonSection;
   visual: CourseModuleVisual | null;
+  audio?: CourseModuleAudio | null;
   locale: string;
 }) {
   const heading = locale === "en" ? section.heading_en : section.heading_fil;
   const body = locale === "en" ? section.body_en : section.body_fil;
   const takeaway = locale === "en" ? section.takeaway_en : section.takeaway_fil;
 
+  const visualNode = visual ? <LessonVisual visual={visual} locale={locale} /> : null;
+
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="font-medium text-ink">{heading}</h3>
-      <p className="whitespace-pre-wrap text-sm text-ink/80">{body}</p>
+      {audio ? (
+        <LessonNarration
+          audio={audio}
+          heading={heading}
+          body={body}
+          takeaway={takeaway}
+          visual={visualNode}
+        />
+      ) : (
+        <>
+          <h3 className="font-medium text-ink">{heading}</h3>
+          <p className="whitespace-pre-wrap text-sm text-ink/80">{body}</p>
 
-      {visual ? <LessonVisual visual={visual} locale={locale} /> : null}
+          {visualNode}
 
-      {takeaway ? (
-        <p className="border-l-2 border-secondary pl-3 text-sm font-medium text-ink">
-          {takeaway}
-        </p>
-      ) : null}
+          {takeaway ? (
+            <p className="border-l-2 border-secondary pl-3 text-sm font-medium text-ink">
+              {takeaway}
+            </p>
+          ) : null}
+        </>
+      )}
 
       {section.check ? (
         <RetrievalCheck check={section.check} locale={locale} />

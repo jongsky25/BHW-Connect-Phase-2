@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { CourseDetail } from "@/components/elearning/course-detail";
 import type {
   CourseModule,
+  CourseModuleAudio,
   CourseModuleVisual,
   CourseProgressStatus,
   CourseTestAttempt,
@@ -92,6 +93,17 @@ export default async function CourseDetailPage({
           .returns<CourseModuleVisual[]>()
       : { data: [] as CourseModuleVisual[] };
 
+  const { data: audios } =
+    moduleIds.length > 0
+      ? await supabase
+          .from("course_module_audio")
+          .select(
+            "id, module_id, section_index, language, audio_url, format, duration_seconds, content_hash, timings",
+          )
+          .in("module_id", moduleIds)
+          .returns<CourseModuleAudio[]>()
+      : { data: [] as CourseModuleAudio[] };
+
   // §A.6/INC-22: the BHW's own session for this course, if any — the
   // course_sessions_bhw_read RLS policy already restricts this to sessions
   // the BHW is actually enrolled in. Only queried when course_sessions is
@@ -169,6 +181,7 @@ export default async function CourseDetailPage({
         modules={modules ?? []}
         questions={questions ?? []}
         visuals={visuals ?? []}
+        audios={audios ?? []}
         testQuestions={testQuestions ?? []}
         testAttempts={testAttempts ?? []}
         density={density}

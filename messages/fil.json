@@ -155,7 +155,8 @@
       "surveys": "Mga Survey",
       "courses": "Mga Kurso",
       "forum": "Forum",
-      "flipcharts": "Mga Flip Chart"
+      "flipcharts": "Mga Flip Chart",
+      "courseProgress": "Progress ng kurso"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -648,6 +649,35 @@
       "onlyInReviewDecidableError": "Ang nasa pagsusuri lang ang puwedeng aprubahan o tanggihan.",
       "publishedNotDeletableError": "Hindi puwedeng tanggalin ang nailathalang flip chart.",
       "genericError": "May nagkamali. Pakisubukang muli."
+    },
+    "courseProgress": {
+      "heading": "I-reset ang progress ng kurso",
+      "description": "Ang isang BHW na nagbukas ng kurso bago magkaroon ng session o pretest gate ay maaaring maipit: may progress na sa nilalaman, kaya tama lang na tinatanggihan ang pretest, at walang paraan para i-clear ito maliban dito. Binubura nito ang progress ng isang BHW sa isang kurso para makapagsimula sila ulit nang may malinis na pretest.",
+      "colBhw": "BHW",
+      "colCourse": "Kurso",
+      "colStatus": "Katayuan",
+      "colModules": "Natapos na module",
+      "colTests": "Iskor sa pre/post",
+      "colActions": "Aksyon",
+      "statusInProgress": "Isinasagawa",
+      "statusContentCompleted": "Tapos na ang nilalaman",
+      "statusCertified": "Sertipikado",
+      "statusFailedAssessment": "Bumagsak sa assessment",
+      "pretestLabel": "Pretest:",
+      "posttestLabel": "Posttest:",
+      "notTaken": "hindi pa kinuha",
+      "resetAction": "I-reset ang progress",
+      "resetConfirmAction": "Oo, i-reset",
+      "resetting": "Nire-reset…",
+      "cancelAction": "Kanselahin",
+      "resetWarning": "Permanenteng bubura ito ng progress at mga pagsusulit ng BHW na ito sa kursong ito. Magsisimula sila ulit nang may malinis na pretest gate. Hindi na ito maibabalik.",
+      "resetSuccessNotice": "Na-reset ang progress ni {username}: {modules} module(s) at {tests} test attempt(s) ang nabura.",
+      "dismiss": "Isara",
+      "empty": "Wala pang naitalang progress sa kurso.",
+      "assessmentBlocksResetError": "Hindi mare-reset: may assessment para sa BHW at kursong ito na nakabinbin, naka-assign, o pumasa na. Ayusin muna ito.",
+      "targetNotBhwError": "Hindi BHW ang user na ito.",
+      "courseNotFoundError": "Hindi nahanap ang kursong iyon.",
+      "genericError": "May nangyaring mali. Pakisubukang muli."
     }
   },
   "announcements": {
@@ -731,7 +761,10 @@
     "islideProgressLabel": "Slide {current} ng {total}",
     "islidePreviousAction": "Nakaraang slide",
     "islideNextAction": "Susunod na slide",
-    "islideGoToAction": "Pumunta sa slide {number}"
+    "islideGoToAction": "Pumunta sa slide {number}",
+    "narrationPlayAction": "I-play ang naratibo",
+    "narrationPauseAction": "I-pause ang naratibo",
+    "narrationSpeedLabel": "Bilis"
   },
   "assessments": {
     "heading": "Mga Pagtatasa",
