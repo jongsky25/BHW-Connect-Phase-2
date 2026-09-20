@@ -99,6 +99,22 @@ INC-29's migration (`20260920000000_inc29_course_progress_reset.sql`) —
 confirmed missing from the pilot via `list_migrations` in the same session
 but out of scope for what was being fixed, not pushed yet.
 
+**The "reconnected, works now" claim above didn't survive to the next
+session.** A later session the same day (issue #58's fix, PR #75) hit the
+exact same permission error again — `list_projects` back to only
+`jongsky25's Org`'s five unrelated projects, neither the pilot nor
+`qeryhxctxslhdkclifom` reachable. Whatever the user did to reconnect it
+earlier apparently doesn't persist across sessions (or containers) the way
+this doc assumed. **Don't trust this doc's "reachable now" framing at face
+value — re-check `list_projects` yourself each session**, the same way you'd
+re-check `git log` before trusting a "not started" claim elsewhere in this
+file. Also newly owed for the same reason: `20260920010000_fix_58_dashboard_bhw_table_pagination.sql`
+(issue #58's fix) — DDL (`drop function`/`create or replace function`), so
+it can't go through the loader's PostgREST token the way a data write can;
+needs someone with dashboard/CLI access to `qeryhxctxslhdkclifom`, and
+eventually the pilot too. Confirmed as the cause of two real (non-flake)
+`e2e` failures on PR #75 — see that PR's own comment for the diagnosis.
+
 ### Reaching the CI project
 
 `bhw-connect-e2e`'s project ref is not discoverable from a session on its
