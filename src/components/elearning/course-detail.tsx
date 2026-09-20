@@ -219,7 +219,7 @@ export function CourseDetail({
                           type="button"
                           aria-pressed={(moduleView[module.id] ?? "read") === view}
                           onClick={() => setModuleViewFor(module.id, view)}
-                          className={`px-3 py-1 font-medium transition-colors ${
+                          className={`px-3 py-1 font-medium ${
                             (moduleView[module.id] ?? "read") === view
                               ? "bg-primary text-on-primary"
                               : "bg-transparent text-ink hover:bg-ink/5"
