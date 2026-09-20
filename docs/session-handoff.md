@@ -72,6 +72,27 @@ Not reachable through the Supabase MCP tools in this workspace (that
 connection is scoped to a different org and returns "You do not have
 permission"). Reach it through the loader scripts over PostgREST instead.
 
+Re-verified 20 Sep 2026, in response to a session that had come to believe
+otherwise: `list_organizations`/`list_projects` via the Supabase MCP tools
+show only `jongsky25's Org`, which does not include `ltzicxyefizxoqhfuuzc`;
+`get_project` against it returns the permission error directly. Separately,
+`npm run doctor` confirms `KB_LOADER_USERNAME`/`PASSWORD`/`ANON_KEY` **are**
+genuinely present in this session's environment (that part of a
+SessionStart hook message claiming so was accurate, not injected) — but
+that credential is a PostgREST application login, not schema access, so it
+only ever unlocks `training:load`/`training:review-setup`, never a
+migration push. Net effect: **no credential reachable from a Claude Code
+session can push a `supabase/migrations/*.sql` file to the pilot project.**
+That gap is deliberate (see `docs/credentials.md` §"Do not put
+`SUPABASE_SERVICE_ROLE_KEY` here") and needs one of: the Supabase MCP
+connector re-pointed at the org that owns `ltzicxyefizxoqhfuuzc`, someone
+running `supabase db push` locally, or a new `migrate-pilot.yml` GitHub
+Actions workflow (mirroring `training-load.yml`) built with the user's
+explicit sign-off, since it would need `SUPABASE_DB_URL`/
+`SUPABASE_SERVICE_ROLE_KEY` in Actions secrets. The INC-23 migration
+(`20260810000000_inc23_facilitator_progress_read.sql`) is still owed
+against the pilot for exactly this reason.
+
 | Thing | Value |
 | --- | --- |
 | Course (Araw 1) | `73e0edda-6c28-420f-9c35-05a29563abd3`, **published** |
