@@ -17,6 +17,7 @@
     "training:load": "node scripts/training-load.mjs",
     "training:review-setup": "node scripts/training-review-setup.mjs",
     "training:tts": "node scripts/tts-render.mjs",
+    "remotion:render": "node scripts/remotion-render.mjs",
     "doctor": "node scripts/doctor.mjs"
   },
   "dependencies": {

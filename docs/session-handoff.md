@@ -215,10 +215,22 @@ very race it fixes, confirmed against a different PR hitting the identical
 three specs. Subscribed and watched — merge it once CI is green rather
 than re-deriving this fix from scratch in a future session.
 
-**INC-24 (authoring modules 2–9) is blocked only on the user's approval of
-Module 1**, now that it renders at Detalyado in the real app. If they have
-said yes, that gate is closed and authoring starts. This is the only
-remaining "not started" item besides INC-28 tier 2's licence question.
+**The user approved Module 1 on 20 Sep 2026.** That gate is closed —
+INC-24 (authoring modules 2-5, then INC-25 for 6-9) is unblocked and is now
+the real next "not started" item. The pilot course was already `published`
+by the time this was checked — no action needed there.
+
+**INC-28 tier 2 (Remotion) — licence resolved, pipeline installed.** BHW
+Connect's operating entity is an individual, so Remotion's free tier
+applies (confirmed by the user 20 Sep 2026). The official skills are
+installed (`.agents/skills/`, symlinked into `.claude/skills/`) and a
+blank Remotion project lives in `remotion/` (its own npm project, excluded
+from the app's `lint`/`typecheck`). `npm run remotion:render -- <composition-id>
+[output-name]` renders 480p H.264 + poster frame and was verified working
+end to end against the scaffold's placeholder composition. No DB/UI wiring
+and no real clip yet — nothing authored so far needs one (Module 1 is
+conceptual content, not the procedural-sequence kind tier 2 is for). Full
+detail: `docs/training-modules-plan.md`'s INC-28 section.
 
 **INC-27 — audio narration** is code complete (migration +
 `course_module_audio` RLS verified against a real local Postgres 16 replay;
