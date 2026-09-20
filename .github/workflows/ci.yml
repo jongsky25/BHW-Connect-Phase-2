@@ -5,18 +5,23 @@ on:
     branches: [main]
   pull_request:
 
-# Per-PR: a new push supersedes that PR's own in-flight run. This does NOT
-# serialize different PRs against each other — see the `e2e` job's own
-# concurrency group for that, which is a separate concern.
-concurrency:
-  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+# Concurrency is deliberately per-JOB, not workflow-level. A workflow-level
+# group applies its cancel-in-progress to every job, including `e2e` — and
+# cancelling e2e mid-spec skips the `finally` that restores a global feature
+# flag, leaking a mutated flag into the next run. That is not hypothetical:
+# run #213 (the merge of PR #66) had its e2e job cancelled by the next push
+# to main, landing in the Build step. Two minutes later it would have been
+# mid-suite. So `checks` is cancellable and `e2e` is not — see each job.
 
 jobs:
   # Everything that touches nothing shared: pure local checks, so these stay
-  # fully parallel across PRs and give fast feedback.
+  # fully parallel across PRs and give fast feedback. Safe to cancel — a new
+  # push supersedes this ref's own in-flight checks and nothing is left dirty.
   checks:
     runs-on: ubuntu-latest
+    concurrency:
+      group: checks-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
 
@@ -52,7 +57,8 @@ jobs:
     # This group queues e2e repo-wide so only one run touches the project at a
     # time. `cancel-in-progress: false` matters: cancelling a run mid-spec
     # skips the `finally` that restores the flag, which would leak a mutated
-    # flag into the next run and break it deterministically.
+    # flag into the next run and break it deterministically. Because there is
+    # no workflow-level group, nothing upstream can cancel this job either.
     concurrency:
       group: e2e-shared-supabase-project
       cancel-in-progress: false
