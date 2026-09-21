@@ -268,16 +268,31 @@ and no real clip yet — nothing authored so far needs one (Module 1 is
 conceptual content, not the procedural-sequence kind tier 2 is for). Full
 detail: `docs/training-modules-plan.md`'s INC-28 section.
 
-**Issue #58 (unpaginated admin BHW table) is no longer just a scale
-concern — it is actively breaking CI.** PR #73's investigation found the
-shared `bhw-connect-e2e` project carries **1,055** `e2e.%` throwaway users
-(860 in one barangay) plus 131 `anonymized-*` rows; the org-scoped query
-returns 1,051 rows to a page with no pagination, which is why
-`admin.spec.ts` can't find its own row and `a11y-font-scale` times out in
-axe. Both PR #66 and #73 stopped short of purging it (destructive on
-shared infrastructure, flagged for a decision rather than acted on
-unilaterally) — still open, and now blocking real e2e reliability, not
-just a future scale problem.
+**Issue #58 (unpaginated admin BHW table) is fixed (PR #75), and its
+follow-up — the 1,055 `e2e.%` throwaway users themselves — now has a
+mechanism, not just a flag.** PR #73's investigation found the shared
+`bhw-connect-e2e` project carrying 1,055 `e2e.%` throwaway users (860 in
+one barangay) plus 131 `anonymized-*` rows, and stopped short of purging
+either (destructive on shared infrastructure, flagged for a decision
+rather than acted on unilaterally). `rpc_e2e_purge_test_users`
+(`20260920020000_e2e_test_user_purge.sql`) is that decision for the
+`e2e.%` half: it deletes throwaway users older than 24h along with
+everything they authored across the ~11 tables that reference `users`
+with no cascade (forum, surveys, announcements, flip charts, elearning/
+training-session rows, notifications, audit_events), verified via a real
+local Postgres 16 replay (6 scenarios, including the FK-ordering edge
+case of a real BHW's certificate graded by a throwaway assessor). The
+`anonymized-*` rows are deliberately **not** in scope — that pattern can
+also mark a genuine DPA-anonymized production account, so purging it
+needs its own decision. `.github/workflows/e2e-test-users-purge.yml`
+calls it weekly, dry-run by default (same shape as `retention-purge.yml`,
+but authenticating as `admin.stable` rather than a service-role key,
+since the CI project has no service-role secret wired in). **Still
+owed:** applying this migration to the live `bhw-connect-e2e` project —
+this workspace's Supabase MCP connection is scoped to the wrong org (see
+§2), the same gap that made INC-23/INC-27/#58's migrations manual steps
+too — and then flipping the workflow's `dry_run` off once a human has
+reviewed a couple of runs.
 
 **INC-27 — audio narration** is code complete (migration +
 `course_module_audio` RLS verified against a real local Postgres 16 replay;

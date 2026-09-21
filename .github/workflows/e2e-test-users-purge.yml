@@ -1,0 +1,73 @@
+name: E2E test user purge
+
+# Issue #58 follow-up: nothing purges the e2e.* throwaway users
+# e2e/fixtures/auth.ts mints on every CI run (1,055 accumulated by 20 Sep
+# 2026 per PR #73 — flagged for a decision rather than purged
+# unilaterally on shared infrastructure). rpc_e2e_purge_test_users
+# (supabase/migrations/20260920020000_e2e_test_user_purge.sql) is that
+# decision. Same dry-run-first shape as retention-purge.yml: runs as a
+# count-only dry run weekly so the counts stay visible in the Actions
+# log; a human flips `dry_run` to `false` via "Run workflow" once
+# they've reviewed a few dry runs and are ready to let it actually
+# delete on schedule too.
+#
+# Unlike retention-purge.yml (which authenticates with the pilot
+# project's service-role key), the shared e2e project has no
+# service-role secret wired into CI — only an anon key plus the
+# admin.stable fixture's password, the same credential e2e specs
+# already sign in with. rpc_e2e_purge_test_users accepts an admin
+# caller for exactly this reason.
+on:
+  schedule:
+    - cron: "0 4 * * 1" # every Monday, 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Count only (true) or actually delete (false)"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sign in as admin.stable and call rpc_e2e_purge_test_users
+        env:
+          SUPABASE_URL: ${{ secrets.E2E_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.E2E_SUPABASE_ANON_KEY }}
+          ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
+          DRY_RUN: ${{ inputs.dry_run || 'true' }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_ANON_KEY" ] || [ -z "$ADMIN_PASSWORD" ]; then
+            echo "::error::E2E_SUPABASE_URL / E2E_SUPABASE_ANON_KEY / E2E_STABLE_ADMIN_PASSWORD secrets are not set"
+            exit 1
+          fi
+
+          login_payload=$(jq -n --arg pw "$ADMIN_PASSWORD" '{email: "admin.stable@bhw.local", password: $pw}')
+          token=$(curl -sS --fail-with-body -X POST \
+            "$SUPABASE_URL/auth/v1/token?grant_type=password" \
+            -H "apikey: $SUPABASE_ANON_KEY" -H "Content-Type: application/json" \
+            -d "$login_payload" | jq -r '.access_token // empty')
+
+          if [ -z "$token" ]; then
+            echo "::error::Failed to sign in as admin.stable"
+            exit 1
+          fi
+
+          curl -sS --fail-with-body -X POST \
+            "$SUPABASE_URL/rest/v1/rpc/rpc_e2e_purge_test_users" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $token" \
+            -H "Content-Type: application/json" \
+            -d "{\"p_dry_run\": $DRY_RUN}" | tee purge-result.json
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-test-user-purge-result-${{ github.run_id }}
+          path: purge-result.json
+          retention-days: 90
