@@ -1,0 +1,61 @@
+{
+  "$comment": "Module 3 — Policies at the Barangay Health Station. qa-entries.json is the dual-delivery half of the module: same facts as lesson.*.md, shaped for chat retrieval per content/kb/README.md. See content/training/README.md for the field contract.",
+  "category": "day1-m3-polisiya-bhs",
+  "entries": [
+    {
+      "id": "d1m3-milk-code",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "Can a milk company promote its products inside the barangay health station?",
+      "question_fil": "Puwede bang mag-promote ang isang kumpanya ng gatas ng kanilang produkto sa loob ng barangay health station?",
+      "answer_en": "No. Under Executive Order 51, the Philippine Milk Code of 1986, advertising milk formula or milk substitutes inside health facilities is prohibited, and health workers may not accept money or gifts from milk companies in exchange for promoting their products. BHWs are expected to promote breastfeeding instead.",
+      "answer_fil": "Hindi. Ayon sa Executive Order 51, ang Philippine Milk Code of 1986, ipinagbabawal ang pag-a-advertise ng milk formula o milk substitute sa loob ng health facilities, at bawal tumanggap ang health workers ng pera o regalo mula sa kumpanya ng gatas kapalit ng pag-promote ng produkto nito. Inaasahan sa halip na isulong ng BHW ang breastfeeding.",
+      "keywords": ["milk code", "eo 51", "gatas", "milk substitute", "promosyon", "promotion", "kumpanya", "company"],
+      "sources": ["eo-51"]
+    },
+    {
+      "id": "d1m3-pharma-ban",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "Can a pharmaceutical company promote or sponsor activities inside a health facility?",
+      "question_fil": "Puwede bang mag-promote o mag-sponsor ang isang kumpanya ng gamot sa loob ng health facility?",
+      "answer_en": "No. Under DOH Administrative Order 2015-0053, promotion, sponsorship, and other marketing activities by pharmaceutical companies are prohibited inside health facilities. A health worker also may not promote any medicine or curative product themselves — this protects the health center's service from being influenced by a company's interest.",
+      "answer_fil": "Hindi. Ayon sa DOH Administrative Order 2015-0053, ipinagbabawal ang pag-promote, pag-sponsor, at iba pang marketing activities ng mga kumpanya ng gamot sa loob ng health facilities. Bawal ding mag-promote ang mismong health worker ng kahit anong gamot o produktong nakakagamot — proteksyon ito sa serbisyo ng health center laban sa impluwensya ng interes ng kumpanya.",
+      "keywords": ["ao 2015-0053", "gamot", "medicine", "pharma", "promosyon", "promotion", "sponsor", "pharmaceutical"],
+      "sources": ["ao-2015-0053"]
+    },
+    {
+      "id": "d1m3-breastfeeding-act",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What does RA 10028 require of a barangay health station?",
+      "question_fil": "Ano ang inaatas ng RA 10028 sa isang barangay health station?",
+      "answer_en": "Republic Act 10028, the Expanded Breastfeeding Promotion Act of 2009, requires all workplaces, including health centers and barangay health stations, to promote breastfeeding for infants and to have a lactation station. Unlike the Milk Code, which is a prohibition, RA 10028 is an active requirement.",
+      "answer_fil": "Ang Republic Act 10028, ang Expanded Breastfeeding Promotion Act of 2009, ay inaatasan ang lahat ng workplaces, kasama ang health center at barangay health station, na isulong ang breastfeeding sa mga sanggol at magkaroon ng lactation station. Kaiba sa Milk Code na pagbabawal, ang RA 10028 ay aktibong pag-atas.",
+      "keywords": ["ra 10028", "breastfeeding", "lactation station", "pagpapasuso", "expanded breastfeeding promotion act"],
+      "sources": ["ra-10028"]
+    },
+    {
+      "id": "d1m3-plastics-ban",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What single-use plastics are health facilities directed to stop using?",
+      "question_fil": "Anong mga single-use plastic ang inaatasang itigil sa paggamit ng mga health facility?",
+      "answer_en": "Under DOH Department Circular 2021-0486, health facilities are directed to phase out single-use plastics starting 2022, including thin plastic cups (under 0.2mm), drinking straws, coffee stirrers, plastic cutlery, and plastic bags — to reduce waste that causes pollution, illness, and disaster.",
+      "answer_fil": "Ayon sa DOH Department Circular 2021-0486, inaanyayahan ang mga health facility na itigil ang paggamit ng single-use plastics simula 2022, kasama ang manipis na plastic cups (mas manipis sa 0.2mm), plastic drinking straws, coffee stirrers, plastic na kutsara't tinidor, at plastic bags — upang mabawasan ang basurang sanhi ng polusyon, sakit, at sakuna.",
+      "keywords": ["dc 2021-0486", "single-use plastics", "plastic", "basura", "waste", "straw", "cups"],
+      "sources": ["dc-2021-0486"]
+    },
+    {
+      "id": "d1m3-decline-gift",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "How should a BHW decline a gift a company offers in exchange for promoting its product?",
+      "question_fil": "Paano dapat tumanggi ang isang BHW sa regalong inaalok ng isang kumpanya kapalit ng pag-promote ng produkto nito?",
+      "answer_en": "Acknowledge the visitor's good intention first, then explain the policy basis directly and clearly, and offer another way to cooperate that doesn't involve promotion — for example, support for the lactation station instead of promoting a product. A clear, well-reasoned refusal is stronger than an angry one, and it doesn't have to close the door on working together.",
+      "answer_fil": "Kilalanin muna ang mabuting intensyon ng bisita, saka ipaliwanag ang batayang polisiya nang direkta at malinaw, at mag-alok ng ibang paraan ng pakikipagtulungan na hindi promosyon — halimbawa, suporta sa lactation station sa halip na pag-promote ng produkto. Ang malinaw at may batayang pagtanggi ay mas malakas kaysa sa galit na pagtanggi, at hindi na rin nito kailangang isara ang pagkakataong magtulungan.",
+      "keywords": ["tumanggi", "decline", "regalo", "gift", "alok", "offer", "magalang", "respectful"],
+      "sources": ["eo-51", "ao-2015-0053"]
+    }
+  ]
+}

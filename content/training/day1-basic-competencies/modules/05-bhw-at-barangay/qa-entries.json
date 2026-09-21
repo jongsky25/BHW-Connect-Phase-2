@@ -1,0 +1,116 @@
+{
+  "$comment": "Module 5 — The BHW and Their Barangay. qa-entries.json is the dual-delivery half of the module: same facts as lesson.*.md, shaped for chat retrieval per content/kb/README.md. See content/training/README.md for the field contract. Entries d1m5-four-relationships, d1m5-who-for-clinical, d1m5-who-for-admin-support, and d1m5-role-of-peer-bhw carry forward the displaced Module 1 draft's entries (git commit d424bde) under this module's own ids.",
+  "category": "day1-m5-barangay",
+  "entries": [
+    {
+      "id": "d1m5-four-relationships",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "What are the four core relationships of a BHW?",
+      "question_fil": "Ano ang apat na pangunahing ugnayan ng isang BHW?",
+      "answer_en": "The community they serve, the midwife or Rural Health Unit (RHU) for referrals and clinical questions, barangay officials for support and accreditation, and fellow BHWs for shared experience and correct practice. Each relationship has a different purpose, and using the right one for the situation is what keeps barangay health service fast and reliable.",
+      "answer_fil": "Ang komunidad na kanilang pinagsisilbihan, ang midwife o Rural Health Unit (RHU) para sa referral at klinikal na tanong, ang barangay officials para sa suporta at akreditasyon, at ang kapwa BHW para sa pinagsamang karanasan at tamang gawi. Magkaiba ang layunin ng bawat ugnayan, at ang paggamit ng tama para sa sitwasyon ang gumagawa sa serbisyong pangkalusugan ng barangay na mabilis at maaasahan.",
+      "keywords": ["apat na ugnayan", "four relationships", "komunidad", "midwife", "rhu", "barangay officials", "kapwa bhw", "fellow bhw"],
+      "sources": ["ra-7883", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-who-for-clinical",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "Who should a BHW approach first for a clinical concern, like a resident's persistent cough?",
+      "question_fil": "Sino ang unang dapat lapitan ng BHW kapag klinikal ang alalahanin, tulad ng matagal nang ubo ng isang residente?",
+      "answer_en": "The midwife or the Rural Health Unit (RHU) — they are the technical support for anything clinical, such as deciding whether a symptom needs referral. Barangay officials and fellow BHWs are not the right first stop for a clinical question; going to them first only delays the referral.",
+      "answer_fil": "Ang midwife o ang Rural Health Unit (RHU) — sila ang teknikal na susuporta para sa anumang klinikal, tulad ng pagpapasya kung kailangan bang i-refer ang isang sintomas. Hindi tamang unang lapitan ang barangay officials o kapwa BHW para sa klinikal na tanong; naaantala lamang nito ang pag-refer kung sila muna ang lalapitan.",
+      "keywords": ["klinikal", "clinical", "sino lalapitan", "who to approach", "ubo", "cough", "referral", "midwife", "rhu"],
+      "sources": ["who-bhw-manual-ta", "ra-7883"]
+    },
+    {
+      "id": "d1m5-who-for-admin-support",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "Who should a BHW approach for administrative support, like transport or supplies?",
+      "question_fil": "Sino ang dapat lapitan ng BHW para sa suportang administratibo, tulad ng transportasyon o kagamitan?",
+      "answer_en": "Barangay officials — they are the partner for accreditation, facilities like the barangay health station, and administrative support such as arranging transport to a facility. This is a different relationship from the midwife/RHU, which is for clinical matters.",
+      "answer_fil": "Ang barangay officials — sila ang kasosyo para sa akreditasyon, mga pasilidad tulad ng barangay health station, at suportang administratibo tulad ng pag-aayos ng transportasyon papunta sa pasilidad. Iba ito sa ugnayan sa midwife/RHU, na para sa mga usaping klinikal.",
+      "keywords": ["barangay officials", "suportang administratibo", "administrative support", "transportasyon", "transport", "kagamitan", "supplies"],
+      "sources": ["ra-7883", "who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-role-of-peer-bhw",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "Why does a BHW's relationship with fellow BHWs matter?",
+      "question_fil": "Bakit mahalaga ang ugnayan ng BHW sa kapwa niya BHW?",
+      "answer_en": "Fellow BHWs are the closest source for practical, everyday know-how — like how to file a first report, or how another BHW has handled a similar situation before. Not every question needs the midwife or barangay officials; some things a fellow BHW is simply the fastest and most fitting person to ask.",
+      "answer_fil": "Ang kapwa BHW ang pinakamalapit na sanggunian para sa pang-araw-araw at praktikal na kaalaman — tulad ng kung paano mag-file ng unang ulat, o kung paano hinarap ng ibang BHW ang katulad na sitwasyon noon. Hindi lahat ng tanong ay para sa midwife o barangay officials; may mga bagay na ang kapwa BHW mismo ang pinakamabilis at pinaka-angkop na tanungin.",
+      "keywords": ["kapwa bhw", "fellow bhw", "peer", "karanasan", "experience", "cascade", "bagong bhw", "new bhw"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-punong-barangay",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "What is the punong barangay's role in relation to a BHW?",
+      "question_fil": "Ano ang papel ng punong barangay sa isang BHW?",
+      "answer_en": "The punong barangay is the BHW's partner in carrying out the barangay's mandate to provide basic health services, and oversees the BHWs. They also decide how the barangay budget is used, including BHW honoraria.",
+      "answer_fil": "Ang punong barangay ay ka-partner ng mga BHW sa pagpapatupad ng mandato ng barangay na magbigay ng basic health services, at nangangasiwa sa mga BHW. Siya rin ang nagdedesisyon kung paano gagamitin ang budget ng barangay, kasama ang honorarium para sa mga BHW.",
+      "keywords": ["punong barangay", "barangay captain", "honorarium", "budget", "nangangasiwa", "oversees"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-local-health-board-composition",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "Who sits on the city or municipal local health board?",
+      "question_fil": "Sino-sino ang bumubuo sa city o municipal local health board?",
+      "answer_en": "The mayor chairs it, the City/Municipal Health Officer is vice-chairperson, and members include the Sangguniang Panglungsod/Bayan Committee Chairperson on Health, a private-sector or NGO representative, a DOH representative, and an indigenous-peoples representative where applicable. The board gives health recommendations to the LGU and manages the health office's budget.",
+      "answer_fil": "Ang mayor ang chairperson, ang City/Municipal Health Officer ang vice-chairperson, at kabilang sa mga miyembro ang Sangguniang Panglungsod/Bayan Committee Chairperson on Health, kinatawan ng pribadong sektor o NGO, kinatawan ng DOH, at kinatawan ng mga katutubo kung mayroon. Nagbibigay ito ng rekomendasyong pangkalusugan sa LGU at namamahala sa budget ng health office.",
+      "keywords": ["local health board", "mayor", "cho", "mho", "komposisyon", "composition", "miyembro", "members"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-other-stakeholders",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "Who else does a BHW work with besides the four core relationships?",
+      "question_fil": "Sino pa ang kasama ng BHW bukod sa apat na pangunahing ugnayan?",
+      "answer_en": "The mayor (overall chief executive), the BHW President (leader of all BHWs in a city or town), the municipal social work and development officer (financial assistance for medical needs, AICS), and sanitary inspectors (cleanliness promotion, environmental sanitation) — each connected to the BHW's work in a different way.",
+      "answer_fil": "Ang mayor (pangkalahatang chief executive), ang BHW President (lider ng lahat ng BHW sa isang lungsod o bayan), ang municipal social work and development officer (financial assistance para sa medikal na pangangailangan, AICS), at ang sanitary inspector (promosyon ng kalinisan, environmental sanitation) — magkaiba ang koneksyon ng bawat isa sa gawain ng BHW.",
+      "keywords": ["mayor", "bhw president", "social work", "aics", "sanitary inspector", "kapartner", "stakeholders"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-teamwork-practices",
+      "domain": "teamwork-communication",
+      "tier": "cited",
+      "question_en": "What makes for good teamwork among BHWs?",
+      "question_fil": "Ano ang gumagawa ng mabuting teamwork sa mga BHW?",
+      "answer_en": "Five things: being clear as a team on why you volunteered, being clear on each member's role and responsibility, being open about issues — even personal ones — and addressing them promptly, being open to feedback from colleagues or the community, and building relationships with teammates outside of work too.",
+      "answer_fil": "Limang bagay: malinaw sa lahat kung bakit sila nag-volunteer, malinaw ang tungkulin ng bawat miyembro, bukas sa isyu — kahit personal — at agad itong napag-uusapan, bukas sa puna mula sa kasamahan o komunidad, at bumubuo ng ugnayan sa mga kasamahan kahit sa labas ng trabaho.",
+      "keywords": ["teamwork", "koponan", "rekomendasyon", "recommendations", "mabuting pagtatrabaho"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-self-management-skills",
+      "domain": "self-management",
+      "tier": "cited",
+      "question_en": "What self-management skills should a BHW have?",
+      "question_fil": "Anong mga kasanayan sa self-management ang dapat taglayin ng isang BHW?",
+      "answer_en": "Six: being reliable, stress management, time management, being trustworthy, adaptability, and being honest and careful. These are skills a BHW needs for their own performance, separate from the skills used to relate to others.",
+      "answer_fil": "Anim: pagiging maasahan, stress management, time management, pagiging mapagkakatiwalaan, adaptability, at pagiging matapat at maingat. Mga kasanayan itong kailangan ng BHW para sa sariling pagganap, hiwalay sa kasanayang ginagamit sa pakikitungo sa iba.",
+      "keywords": ["self-management", "kasanayan", "skills", "stress management", "time management", "adaptability", "maasahan", "reliable"],
+      "sources": ["who-bhw-manual-ta"]
+    },
+    {
+      "id": "d1m5-self-management-improve",
+      "domain": "self-management",
+      "tier": "cited",
+      "question_en": "How can a BHW improve their self-management?",
+      "question_fil": "Paano mapapabuti ng isang BHW ang kanyang self-management?",
+      "answer_en": "Practice self-care, train yourself to be patient, finish one task at a time, reflect on your own abilities, set SMART goals, plan each week's work in writing, come to meetings prepared, and think before speaking. These are habits, not a trait someone either has or lacks.",
+      "answer_fil": "Mag-alaga sa sarili, sanayin ang pagiging matiyaga, tapusin ang isang gawain sa isang pagkakataon, pagnilayan ang sariling kakayahan, magtakda ng SMART goals, magplano ng bawat linggo nang nakasulat, dumalo sa pulong nang handa, at mag-isip muna bago magsalita. Mga ugali itong pinapaunlad, hindi katangiang taglay ka na o wala.",
+      "keywords": ["pagpapaunlad", "improve", "smart goals", "pagpaplano", "planning", "patience", "matiyaga"],
+      "sources": ["who-bhw-manual-ta"]
+    }
+  ]
+}
