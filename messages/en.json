@@ -155,7 +155,8 @@
       "courses": "Courses",
       "forum": "Forum",
       "flipcharts": "Flip Charts",
-      "courseProgress": "Course progress"
+      "courseProgress": "Course progress",
+      "trainingProgress": "Training progress"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -694,6 +695,27 @@
       "targetNotBhwError": "That user isn't a BHW.",
       "courseNotFoundError": "That course wasn't found.",
       "genericError": "Something went wrong. Please try again."
+    },
+    "trainingProgress": {
+      "heading": "Training progress",
+      "description": "How far each BHW in your area has got through the training manual: overall, per chapter and per subchapter. Only published lessons count; the pretest, post-test and certificate are shown as separate steps.",
+      "programLabel": "Manual",
+      "orgLabel": "Area",
+      "allOrgs": "All areas in my scope",
+      "searchLabel": "Search by name or username",
+      "searchPlaceholder": "Name or username",
+      "apply": "Show",
+      "clear": "Clear filters",
+      "empty": "No active BHWs in this area.",
+      "emptySearch": "No BHWs match \"{query}\".",
+      "noProgram": "No training manual is published yet.",
+      "loadError": "Training progress could not be loaded. Please try again.",
+      "pageOf": "Page {page} of {totalPages}",
+      "prevPage": "Previous",
+      "nextPage": "Next",
+      "bhwCount": "{count, plural, one {# BHW} other {# BHWs}}",
+      "showDetails": "Chapters and subchapters",
+      "noLessonsNote": "Lesson \"started\" markers are only visible to the BHW, so this view counts finished lessons."
     }
   },
   "announcements": {

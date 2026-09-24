@@ -155,7 +155,8 @@
       "courses": "Mga Kurso",
       "forum": "Forum",
       "flipcharts": "Mga Flip Chart",
-      "courseProgress": "Progress ng kurso"
+      "courseProgress": "Progress ng kurso",
+      "trainingProgress": "Progreso sa pagsasanay"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -694,6 +695,27 @@
       "targetNotBhwError": "Hindi BHW ang user na ito.",
       "courseNotFoundError": "Hindi nahanap ang kursong iyon.",
       "genericError": "May nangyaring mali. Pakisubukang muli."
+    },
+    "trainingProgress": {
+      "heading": "Progreso sa pagsasanay",
+      "description": "Gaano na kalayo ang bawat BHW sa iyong lugar sa training manual: kabuuan, bawat kabanata at bawat subkabanata. Ang mga nailathalang aralin lang ang binibilang; hiwalay na hakbang ang pretest, post-test at sertipiko.",
+      "programLabel": "Manwal",
+      "orgLabel": "Lugar",
+      "allOrgs": "Lahat ng lugar na sakop ko",
+      "searchLabel": "Maghanap ayon sa pangalan o username",
+      "searchPlaceholder": "Pangalan o username",
+      "apply": "Ipakita",
+      "clear": "Alisin ang filter",
+      "empty": "Walang aktibong BHW sa lugar na ito.",
+      "emptySearch": "Walang BHW na tugma sa \"{query}\".",
+      "noProgram": "Wala pang nailathalang training manual.",
+      "loadError": "Hindi ma-load ang progreso sa pagsasanay. Pakisubukang muli.",
+      "pageOf": "Pahina {page} sa {totalPages}",
+      "prevPage": "Nakaraan",
+      "nextPage": "Susunod",
+      "bhwCount": "{count, plural, one {# BHW} other {# BHW}}",
+      "showDetails": "Mga kabanata at subkabanata",
+      "noLessonsNote": "Ang BHW lang ang nakakakita kung aling aralin ang nasimulan, kaya ang mga natapos na aralin ang binibilang dito."
     }
   },
   "announcements": {

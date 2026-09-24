@@ -1,6 +1,7 @@
 import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { summariseManualProgress, type ProgressState } from "@/lib/progress/manual-progress";
+import { BhwProgressCard } from "./bhw-progress-card";
 import { ChapterSteps } from "./chapter-steps";
 import { MyTrainingCard } from "./my-training-card";
 import { ProgressBar } from "./progress-bar";
@@ -110,5 +111,33 @@ describe("MyTrainingCard", () => {
     render(<MyTrainingCard progress={progress} locale="fil" />);
     expect(screen.getByRole("heading", { name: "Ang aking pagsasanay" })).toBeInTheDocument();
     expect(screen.getByText("1 sa 3 na aralin ang tapos")).toBeInTheDocument();
+  });
+});
+
+describe("BhwProgressCard", () => {
+  const row = { bhw: { id: "u1", username: "maria", full_name: "Maria Santos", org_unit_name: "Brgy 1" }, progress };
+
+  it("names the BHW, their area and overall state, with chapter and subchapter bars behind the summary", () => {
+    render(
+      <ul>
+        <BhwProgressCard row={row} locale="en" detailsLabel="Chapters and subchapters" />
+      </ul>,
+    );
+    expect(screen.getByText("Maria Santos")).toBeInTheDocument();
+    expect(screen.getByText("maria · Brgy 1")).toBeInTheDocument();
+    expect(screen.getByRole("progressbar", { name: "Maria Santos: 1 of 3 lessons done", hidden: true })).toHaveAttribute(
+      "aria-valuenow",
+      "33",
+    );
+    expect(
+      screen.getByRole("progressbar", { name: "Maria Santos, Chapter 1: 1 of 3 lessons done", hidden: true }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("progressbar", { name: "Maria Santos, 1.1: 1 of 2 lessons done", hidden: true })).toHaveAttribute(
+      "aria-valuenow",
+      "50",
+    );
+    expect(screen.getByText("Chapter 2: Two en")).toBeInTheDocument();
+    // Supervisors see state, not learner links.
+    expect(screen.queryByRole("link", { hidden: true })).toBeNull();
   });
 });
