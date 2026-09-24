@@ -17,21 +17,22 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
   const {programId,path=[]}=await params;
   if(path.length>3)notFound();
   const db=await createClient();
-  const flags=await getRequestFeatureFlags();
+  // Independent reads run together; checks keep their original order.
+  const [flags,{data:{user}}]=await Promise.all([getRequestFeatureFlags(),getRequestAuthUser()]);
   if(!flags.elearning)redirect('/home');
-  const {data:{user}}=await getRequestAuthUser();
   if(!user)redirect('/login');
   const actor=await getRequestAppUser(user.id);
   if(!actor || actor.status!=='active')redirect('/login');
-  const en=(await getLocale())==='en';
+  const [locale,{data:program,error:programError},{data:chapters,error:chapterError}]=await Promise.all([
+    getLocale(),
+    db.from('training_programs').select('id,content_key,title_fil,title_en').eq('id',programId).eq('status','published').maybeSingle(),
+    db.from('training_program_chapters').select('*').eq('program_id',programId).order('position').returns<TrainingProgramChapter[]>(),
+  ]);
+  const en=locale==='en';
   const text=(fil:string,eng:string)=>en?eng:fil;
   const title=(r:{title_fil:string;title_en:string})=>en?r.title_en:r.title_fil;
-  const {data:program,error:programError}=await db.from('training_programs').select('id,content_key,title_fil,title_en')
-    .eq('id',programId).eq('status','published').maybeSingle();
   if(programError)throw new Error('Unable to load training program');
   if(!program)notFound();
-  const {data:chapters,error:chapterError}=await db.from('training_program_chapters').select('*')
-    .eq('program_id',programId).order('position').returns<TrainingProgramChapter[]>();
   if(chapterError)throw new Error('Unable to load training chapters');
   const manualTitle=program.content_key==='bhw-reference-manual'?'BHW Reference Manual':title(program);
   const base=`/training/${programId}`;
@@ -60,22 +61,27 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
     crumbs.push({label:chapterTitle,...(path.length>1?{href:chapterHref}:{})});
     heading=chapterTitle;
     intro=text('Piliin ang isang subchapter. Bawat aralin ay isang maikling bahagi lamang.','Choose a subchapter. Each lesson covers one short part.');
-    const {data:course,error:courseError}=await db.from('courses').select('id').eq('id',chapter.course_id!).eq('status','published').maybeSingle();
+    const courseId=chapter.course_id!;
+    // Course, subchapters and progress all key off the chapter's course id,
+    // so they load together; lessons and completions follow in one more batch.
+    const [{data:course,error:courseError},{data:modules,error:moduleError},{data:progress,error:progressError}]=await Promise.all([
+      db.from('courses').select('id').eq('id',courseId).eq('status','published').maybeSingle(),
+      // Do not fetch or serialize old long bodies in the manual experience.
+      db.from('course_modules').select('id,course_id,position,type,title_fil,title_en').eq('course_id',courseId).order('position'),
+      db.from('course_progress').select('id,status').eq('course_id',courseId).eq('bhw_user_id',actor.id).maybeSingle(),
+    ]);
     if(courseError)throw new Error('Unable to load chapter');
     if(!course)notFound();
-    // Do not fetch or serialize old long bodies in the manual experience.
-    const {data:modules,error:moduleError}=await db.from('course_modules').select('id,course_id,position,type,title_fil,title_en')
-      .eq('course_id',course.id).order('position');
     if(moduleError)throw new Error('Unable to load subchapters');
-    const {data:lessons,error:lessonError}=modules?.length?await db.from('course_lessons').select('*')
-      .in('module_id',modules.map(m=>m.id)).not('published_revision_id','is',null).order('position').returns<CourseLesson[]>():{data:[],error:null};
-    if(lessonError)throw new Error('Unable to load lessons');
-    const {data:progress,error:progressError}=await db.from('course_progress').select('id,status')
-      .eq('course_id',course.id).eq('bhw_user_id',actor.id).maybeSingle();
     if(progressError)throw new Error('Unable to load your progress');
+    const [{data:lessons,error:lessonError},{data:completed,error:completedError}]=await Promise.all([
+      modules?.length?db.from('course_lessons').select('*')
+        .in('module_id',modules.map(m=>m.id)).not('published_revision_id','is',null).order('position').returns<CourseLesson[]>():Promise.resolve({data:[] as CourseLesson[],error:null}),
+      progress?db.from('course_lesson_progress').select('*').eq('course_progress_id',progress.id)
+        .returns<CourseLessonProgress[]>():Promise.resolve({data:[] as CourseLessonProgress[],error:null}),
+    ]);
+    if(lessonError)throw new Error('Unable to load lessons');
     const readOnly=actor.role!=='bhw';
-    const {data:completed,error:completedError}=progress?await db.from('course_lesson_progress').select('*').eq('course_progress_id',progress.id)
-      .returns<CourseLessonProgress[]>():{data:[],error:null};
     if(completedError)throw new Error('Unable to load completed lessons');
     const done=new Set(completed?.map(p=>p.lesson_id));
     const subchapter=path[1]?modules?.find(m=>m.id===path[1]):null;
@@ -117,21 +123,22 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
       else {
         // Keep the existing pretest gate. Certified learners can review without retaking tests.
         const achieved=['certified','content_completed','failed_assessment'].includes(progress?.status??'');
-        if(!readOnly && flags.course_sessions && !achieved){
-          const [bank,attempt]=await Promise.all([
-            db.from('course_test_questions').select('id').eq('course_id',course.id).limit(1),
-            db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle(),
-          ]);
+        const pretestGate=!readOnly && flags.course_sessions && !achieved;
+        // The pretest check and the lesson content are independent reads, so
+        // they share one round trip; the redirect still wins if it applies.
+        const [bank,attempt,revisionResult,resumeResult]=await Promise.all([
+          pretestGate?db.from('course_test_questions').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
+          pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
+          db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
+            .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
+          progress?db.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).eq('lesson_id',lesson.id).returns<CourseLessonResume[]>():Promise.resolve({data:[],error:null}),
+        ]);
+        if(pretestGate){
           if(bank.error||attempt.error)throw new Error('Unable to check assessment eligibility');
           if(bank.data?.length && !attempt.data)redirect(assessmentHref);
         }
         crumbs.push({label:title(lesson)});
         heading=title(lesson); intro=readOnly?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
-        const [revisionResult,resumeResult]=await Promise.all([
-          db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
-            .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
-          progress?db.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).eq('lesson_id',lesson.id).returns<CourseLessonResume[]>():Promise.resolve({data:[],error:null}),
-        ]);
         if(revisionResult.error || resumeResult.error || !revisionResult.data)throw new Error('Unable to load lesson');
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
         content=<><ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
