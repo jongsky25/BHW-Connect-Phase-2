@@ -145,6 +145,23 @@ deploy: the deployment's `regions` should read `hnd1`.
   default viewport prefetch once renders are cheap. Re-check after Phase 1–2.
 
 ### Phase 4: Database (migration, needs pilot DB access to verify with `EXPLAIN ANALYZE`)
+**Status: first pass done; RLS rewrite deferred.** With the pilot project
+connected (2026-09-24), the data turned out to be tiny: the largest table
+is `audit_events` with about 2.2k rows, and `users` has 28. The Supabase
+advisor reports no `auth_rls_initplan` issues, 31 unindexed foreign keys
+(info), 34 unused indexes (info, expected on a young pilot) and 145
+overlapping permissive policies (warn). At this size none of that affects
+latency, which confirms the slowdown was network round trips (Phases 1–3).
+- Done: `20260924120000_perf_hot_path_indexes.sql` indexes the learner and
+  chat lookups the app runs on every request: `course_progress.bhw_user_id`,
+  `certificates(bhw_user_id, course_id)`, `assessments(bhw_user_id, course_id)`,
+  `course_lessons.published_revision_id`, `course_module_progress.module_id`,
+  and a partial index on `chat_messages.matched_entry_id`.
+- Deferred until the pilot grows to hundreds of BHWs: the RLS helper
+  rewrite, consolidating overlapping policies, and the rest of the
+  unindexed foreign keys. These change security rules, so they need
+  `EXPLAIN ANALYZE` evidence at real volumes before they're worth the risk.
+
 - Rewrite the training RLS helpers so the per-user part (`current_app_user()`,
   `current_org_path()`) is evaluated once with `(select …)`, and replace the
   nested definer calls with direct `exists` joins that the planner can inline.
