@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
+      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
+      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
+      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "levels": {
+        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
+        "kaya_na_en": "Accurate explanation and action without prompting.",
+        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
+        "kailangan_practice_en": "Correct direction but needs guidance on details.",
+        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
+        "hindi_pa_en": "Explanation or action is not yet appropriate."
+      }
+    }
+  ]
+}

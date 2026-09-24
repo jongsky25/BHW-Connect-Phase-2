@@ -1,0 +1,36 @@
+[
+  {
+    "id": "slide-section-3",
+    "concept_ids": [
+      "m3.breastfeeding-act",
+      "m3.plastics-ban"
+    ],
+    "layout": "decision",
+    "heading_fil": "Pagsusulong sa breastfeeding at pagbabawal sa plastic",
+    "heading_en": "Promoting breastfeeding, and the ban on plastic",
+    "display_fil": "RA 10028: suporta sa breastfeeding at lactation facilities ayon sa tuntunin.\nDC 2021-0486: bawasan ang hindi kailangang single-use plastics.\nPanatilihin ang kinakailangang ligtas na clinical supplies.",
+    "display_en": "RA 10028: breastfeeding support and lactation facilities under its rules.\nDC 2021-0486: reduce unnecessary single-use plastics.\nRetain supplies necessary for safe clinical care.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": {
+      "prompt_fil": "Aling gawain ang angkop sa pasilidad?",
+      "prompt_en": "Which facility action is appropriate?",
+      "options": [
+        {
+          "fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya.",
+          "en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy."
+        },
+        {
+          "fil": "Alisin ang lahat ng sterile na gamit kahit kailangan sa ligtas na pangangalaga.",
+          "en": "Remove all sterile supplies even when necessary for safe care."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy. Explain why using the lesson situation."
+    },
+    "narration_fil": "Pinalalakas ng RA 10028 ang suporta sa breastfeeding, kasama ang lactation stations ayon sa mga tuntunin nito. Maaaring ituro ng BHW ang magulang sa sinanay na tagasuporta at tumulong sa magalang at suportadong kapaligiran. Tungkol ang DOH DC 2021-0486 sa phased restrictions sa hindi kailangang single-use plastics sa health facilities at DOH offices. Sundin ang gabay ng pasilidad sa ligtas na alternatibo. Huwag mag-alis nang mag-isa ng sterile o kinakailangang clinical supplies; hindi dapat makompromiso ang ligtas na pangangalaga sa pagbabawas ng basura.",
+    "narration_en": "RA 10028 strengthens breastfeeding support, including lactation stations under its requirements. A BHW can direct a parent to trained support and help maintain a respectful, supportive environment. DOH DC 2021-0486 concerns phased restrictions on unnecessary single-use plastics in health facilities and DOH offices. Follow facility guidance on safe alternatives. Do not remove sterile or otherwise necessary clinical supplies on your own; reducing unnecessary waste must not compromise safe care."
+  }
+]

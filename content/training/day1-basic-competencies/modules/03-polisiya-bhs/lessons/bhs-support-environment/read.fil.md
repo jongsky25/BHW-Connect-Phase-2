@@ -1,0 +1,3 @@
+## [section-3] Pagsusulong sa breastfeeding at pagbabawal sa plastic
+
+Pinalalakas ng RA 10028 ang suporta sa breastfeeding, kasama ang lactation stations ayon sa mga tuntunin nito. Maaaring ituro ng BHW ang magulang sa sinanay na tagasuporta at tumulong sa magalang at suportadong kapaligiran. Tungkol ang DOH DC 2021-0486 sa phased restrictions sa hindi kailangang single-use plastics sa health facilities at DOH offices. Sundin ang gabay ng pasilidad sa ligtas na alternatibo. Huwag mag-alis nang mag-isa ng sterile o kinakailangang clinical supplies; hindi dapat makompromiso ang ligtas na pangangalaga sa pagbabawas ng basura.

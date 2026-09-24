@@ -1,0 +1,82 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-eligibility",
+    "position": 2,
+    "title_fil": "Pag-unawa sa BHWE",
+    "title_en": "Understanding BHWE",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: pag-unawa sa bhwe."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: understanding bhwe."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-4",
+      "concept_ids": [
+        "m4.bhwe"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Apat na kondisyon ang kailangan sa BHWE — akreditasyon, dalawang taon sa kolehiyo, limang taon ng tuloy-tuloy na serbisyo, at satisfactory service. Kulang ang isa, hindi pa ito matutugunan.",
+      "takeaway_en": "BHWE needs four conditions — accreditation, two years of college, five years of continuous service, and a satisfactory record. Missing even one means it isn't met yet.",
+      "check": {
+        "prompt_fil": "Saan titiyakin ang BHWE requirements?",
+        "prompt_en": "Where should BHWE requirements be confirmed?",
+        "options": [
+          {
+            "fil": "Sa opisyal na CSC guidance at kaukulang tanggapan.",
+            "en": "In official CSC guidance and with the responsible office."
+          },
+          {
+            "fil": "Sa sabi-sabi lamang.",
+            "en": "Only through hearsay."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Sa opisyal na CSC guidance at kaukulang tanggapan. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "In official CSC guidance and with the responsible office. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m4.bhwe",
+      "read_ids": [
+        "section-4"
+      ],
+      "slide_ids": [
+        "slide-section-4"
+      ],
+      "source_ids": [
+        "m4.bhwe-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m4.bhwe-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

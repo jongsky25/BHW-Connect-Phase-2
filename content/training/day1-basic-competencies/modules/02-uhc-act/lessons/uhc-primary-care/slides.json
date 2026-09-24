@@ -1,0 +1,56 @@
+[
+  {
+    "id": "slide-section-3",
+    "concept_ids": [
+      "m2.outpatient",
+      "m2.primary-care-provider",
+      "m2.referral-system",
+      "m2.program-integration"
+    ],
+    "layout": "scene",
+    "heading_fil": "Apat na konkretong pagbabago",
+    "heading_en": "Four concrete changes",
+    "display_fil": "Outpatient benefits: tiyakin ang sakop.\nPrimary care: alamin ang provider at pagpaparehistro.\nReferral: sundin ang lokal na proseso.\nIntegrated system: pag-ugnayin ang mga serbisyo.",
+    "display_en": "Outpatient benefits: check what is covered.\nPrimary care: identify the provider and registration process.\nReferral: follow the local pathway.\nIntegrated systems: coordinate services.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Itinataguyod ng UHC ang primary care, kasama ang outpatient benefits, pagpaparehistro sa primary care provider, at maayos na referral sa ibang serbisyo. Tumutulong ang primary care provider sa pag-ugnay ng pangangalaga; ang BHW ay umaalalay ayon sa pagsasanay at pangangasiwa. Layunin ng province-wide at city-wide health systems na pag-ugnayin ang mga serbisyo. Huwag ipalagay na available na sa lokalidad ang bawat serbisyo o referral arrangement. Tiyakin muna ang kasalukuyang provider, benepisyo, at proseso bago magpayo sa residente.",
+    "narration_en": "UHC provides for stronger primary care, including outpatient benefits, registration with a primary care provider and coordinated referral to other services. A primary care provider helps navigate care; the BHW supports the resident within their training and supervision. Province-wide and city-wide health systems are intended to coordinate services. Do not assume every service or referral arrangement is already available locally. Check the current provider, benefit and referral procedure before advising a resident."
+  },
+  {
+    "id": "slide-section-4",
+    "concept_ids": [
+      "m2.outpatient",
+      "m2.primary-care-provider",
+      "m2.referral-system",
+      "m2.program-integration"
+    ],
+    "layout": "decision",
+    "heading_fil": "Alin dito ang nangyayari na sa amin?",
+    "heading_en": "Which of this is already happening for us?",
+    "display_fil": "Ano ang available na sa barangay?\nAno ang kailangang tiyakin sa RHU?\nIhiwalay ang layunin ng batas sa aktuwal na serbisyong available.",
+    "display_en": "What is already available locally?\nWhat must be checked with the RHU?\nDistinguish the law’s aims from services currently available.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Ano ang unang gagawin bago mangakong walang bayad ang konsulta?",
+      "prompt_en": "What should you do before promising a consultation has no charge?",
+      "options": [
+        {
+          "fil": "Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso.",
+          "en": "Check the provider, benefit and process with the RHU or PhilHealth."
+        },
+        {
+          "fil": "Ipangako agad na libre ang lahat.",
+          "en": "Promise that everything is free."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Check the provider, benefit and process with the RHU or PhilHealth. Explain why using the lesson situation."
+    },
+    "narration_fil": "Bumalik tayo kay Mang Ernesto. Sa apat na pagbabagong natutunan mo, hindi lahat ay parehong bilis dumating sa bawat barangay — may bago nang naramdaman, may hindi pa lubos.\n\nSubukan mo: isipin ang sariling barangay mo. Saklaw na ba ng PhilHealth nang awtomatiko ang lahat dito? May kilala ka bang may nakatalagang primary care provider? Kung may kailangang i-refer, malinaw ba ang proseso, o nalilito pa rin kung saan dapat pumunta?\n\nHindi kahihiyan kung \"hindi pa lubos\" ang sagot mo sa ilan dito — iyon mismo ang unang hakbang: alamin muna kung alin ang totoong nangyayari sa iyong lugar bago mo isipin kung ano ang dapat pang gawin.",
+    "narration_en": "Back to Mang Ernesto. Of the four changes you just learned, not all of them arrive at the same pace in every barangay — some are already felt, some are not yet.\n\nTry it: think about your own barangay. Is everyone there already automatically covered by PhilHealth? Do you know anyone with an assigned primary care provider? If someone needs a referral, is the process clear, or is there still confusion about where to go?\n\nIt is not a failure if your answer to some of these is \"not yet\" — that is exactly the first step: knowing what has actually arrived in your own area before deciding what should happen next."
+  }
+]

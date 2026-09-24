@@ -1,0 +1,36 @@
+[
+  {
+    "id": "slide-section-8",
+    "concept_ids": [
+      "m5.teamwork-practices",
+      "m5.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Ano ang mabuting teamwork",
+    "heading_en": "What good teamwork looks like",
+    "display_fil": "Malinaw na layunin at tungkulin.\nMaagang pagtalakay sa isyu.\nPagiging bukas sa puna.\nPagbuo ng maayos na ugnayan.",
+    "display_en": "Clear purpose and roles.\nEarly discussion of issues.\nOpenness to feedback.\nConstructive working relationships.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": {
+      "prompt_fil": "Ano ang gagawin sa isyung nakaaapekto sa team?",
+      "prompt_en": "What should you do about an issue affecting the team?",
+      "options": [
+        {
+          "fil": "Pag-usapan nang maaga at malinaw kasama ang team.",
+          "en": "Discuss it early and clearly with the team."
+        },
+        {
+          "fil": "Balewalain hanggang lumala.",
+          "en": "Ignore it until it worsens."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Pag-usapan nang maaga at malinaw kasama ang team. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Discuss it early and clearly with the team. Explain why using the lesson situation."
+    },
+    "narration_fil": "Kadalasan ay higit sa isang BHW ang isang barangay, at kailangan nilang magtrabaho bilang isang koponan. Limang rekomendasyon ang gagabay dito.\n\nUna, dapat malinaw sa lahat kung bakit sila nag-volunteer — upang mapabuti ang kalusugan sa komunidad. Pangalawa, dapat malinaw ang tungkulin ng bawat miyembro — sino ang naka-assign sa aling purok, sino ang lead sa aling programa. Pangatlo, maging bukas sa isyu, kahit personal — agad itong pag-usapan bago pa ito lumalim. Pang-apat, maging bukas sa puna at opinyon mula sa kasamahan o sa komunidad — tingnan ito bilang tulong, hindi atake. Panglima, bumuo ng ugnayan sa mga kasamahan kahit sa labas ng trabaho — nakakatulong ito sa bonding ng koponan.",
+    "narration_en": "A barangay usually has more than one BHW, and they need to work as a team. Five recommendations guide this.\n\nFirst, everyone should be clear on why they volunteered — to improve the community's health. Second, each member's role should be clear — who's assigned to which purok, who leads which programme. Third, be open about issues, even personal ones — talk about them right away before they deepen. Fourth, be open to feedback and opinions from teammates or the community — treat it as help, not an attack. Fifth, build relationships with teammates outside of work too — it helps team bonding."
+  }
+]

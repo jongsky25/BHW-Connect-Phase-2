@@ -1,0 +1,118 @@
+{
+  "manifest": {
+    "lesson_key": "uhc-coverage",
+    "position": 0,
+    "title_fil": "Layunin at saklaw ng UHC",
+    "title_en": "UHC purpose and coverage",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: layunin at saklaw ng uhc."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: uhc purpose and coverage."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "concept_ids": [
+        "m2.enactment",
+        "m2.philhealth"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Kapag hindi malinaw sa BHW ang isang batas, hindi rin ito malinaw sa taong umaasa sa kanya para dito.",
+      "takeaway_en": "When a law is not clear to the BHW, it is not clear either to the person who is counting on them for it.",
+      "check": null
+    },
+    {
+      "id": "section-2",
+      "concept_ids": [
+        "m2.enactment",
+        "m2.philhealth"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang direksyon ng UHC ay malinaw: mula sa sistemang umaasang may babayad, tungo sa sistemang nagsisiguro na may serbisyong maaabot ang lahat.",
+      "takeaway_en": "UHC's direction is clear: from a system that waits for someone to pay, to one that guarantees service everyone can reach.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipaliwanag tungkol sa PhilHealth?",
+        "prompt_en": "What should you explain about PhilHealth?",
+        "options": [
+          {
+            "fil": "Kasama ang lahat ng Pilipino, ngunit dapat alamin ang sakop na benepisyo at proseso.",
+            "en": "All Filipinos are included, but the covered benefit and process must be checked."
+          },
+          {
+            "fil": "Libre ang lahat ng serbisyo sa anumang pasilidad.",
+            "en": "Every service is free at every facility."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Kasama ang lahat ng Pilipino, ngunit dapat alamin ang sakop na benepisyo at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "All Filipinos are included, but the covered benefit and process must be checked. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m2.enactment",
+      "read_ids": [
+        "section-1",
+        "section-2"
+      ],
+      "slide_ids": [
+        "slide-section-1",
+        "slide-section-2"
+      ],
+      "source_ids": [
+        "m2.enactment-source"
+      ]
+    },
+    {
+      "id": "m2.philhealth",
+      "read_ids": [
+        "section-1",
+        "section-2"
+      ],
+      "slide_ids": [
+        "slide-section-1",
+        "slide-section-2"
+      ],
+      "source_ids": [
+        "m2.philhealth-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m2.enactment-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.philhealth-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

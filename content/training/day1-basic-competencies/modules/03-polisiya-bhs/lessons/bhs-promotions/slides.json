@@ -1,0 +1,52 @@
+[
+  {
+    "id": "slide-section-1",
+    "concept_ids": [
+      "m3.milk-code",
+      "m3.pharma-ban"
+    ],
+    "layout": "scene",
+    "heading_fil": "Ang bisita sa BHS",
+    "heading_en": "The visitor at the BHS",
+    "display_fil": "May alok na regalo kapalit ng promosyon.\nHuwag tanggapin agad.\nIdulog sa namamahala at tingnan ang polisiya.",
+    "display_en": "A gift is offered in exchange for promotion.\nDo not accept it on the spot.\nRefer it to the supervisor and check policy.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "May dumating na kinatawan ng isang kumpanya ng gatas sa barangay health station ni BHW Corazon — may dalang mga sample at tarpaulin na nagpapakita ng kanilang bagong produkto. \"Puwede po bang ilagay namin ito sa loob, at ipamigay ninyo sa mga nanay? May konting regalo din po kami para sa inyo.\"\n\nAlam ni Corazon na kailangan niyang tumanggi — pero paano niya ito gagawin nang hindi masamang loob ang bisita, at nang tama ang dahilan niya sa pagtanggi?",
+    "narration_en": "A representative from a milk company arrived at BHW Corazon's barangay health station — carrying samples and a tarpaulin showing their new product. \"Could we leave these inside, for you to give out to the mothers? We also have a small gift for you.\"\n\nCorazon knew she had to decline — but how could she do it without offending the visitor, and with the right reasoning behind her refusal?"
+  },
+  {
+    "id": "slide-section-2",
+    "concept_ids": [
+      "m3.milk-code",
+      "m3.pharma-ban"
+    ],
+    "layout": "decision",
+    "heading_fil": "Dalawang bawal sa promosyon",
+    "heading_en": "Two bans on promotion",
+    "display_fil": "Milk Code: may limitasyon sa promosyon at insentibo.\nPharmaceutical promotion: may etikang tuntunin.\nTiyakin ang saklaw; huwag mag-apruba nang mag-isa.",
+    "display_en": "Milk Code: restrictions on promotion and inducements.\nPharmaceutical promotion: ethical rules apply.\nCheck the scope; do not approve an offer alone.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Ano ang gagawin sa alok na regalo kapalit ng pagpromote?",
+      "prompt_en": "What should you do about a gift offered in exchange for promotion?",
+      "options": [
+        {
+          "fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya.",
+          "en": "Do not accept the inducement; refer it to the supervisor under facility policy."
+        },
+        {
+          "fil": "Tanggapin basta walang makaalam.",
+          "en": "Accept it as long as nobody knows."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Do not accept the inducement; refer it to the supervisor under facility policy. Explain why using the lesson situation."
+    },
+    "narration_fil": "Nililimitahan ng Milk Code (EO 51) ang promosyon ng saklaw na breastmilk substitutes sa health-care system at mga insentibo sa health workers. Huwag tumanggap ng regalo kapalit ng pagpromote ng mga produktong ito. May etikang tuntunin din sa pharmaceutical promotion: binabanggit ng pinagmulang materyal ang DOH AO 2015-0053. Huwag ituring na magkakapareho ang lahat ng pakikipag-ugnayan sa industriya o mag-apruba ng promosyon nang mag-isa. Idulog ang alok sa namamahala at tiyakin ang kasalukuyang polisiya. Kailangan pang repasuhin ang eksaktong saklaw at exceptions sa pangunahing sanggunian bago ilathala ang draft na ito.",
+    "narration_en": "The Milk Code (EO 51) restricts promotion of covered breastmilk substitutes in the health-care system and inducements to health workers. Do not accept gifts in exchange for promoting such products. Pharmaceutical promotion also has ethical rules: the source training material cites DOH AO 2015-0053. Do not treat all industry interactions as identical or independently approve a promotion. Refer the offer to the facility supervisor and check the current policy. The exact scope and exceptions of this order still require primary-source review before this draft is published."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "slide-section-6",
+    "concept_ids": [
+      "m2.competency"
+    ],
+    "layout": "scene",
+    "heading_fil": "Magmungkahi at pag-usapan muna",
+    "heading_en": "Propose it, and talk it through first",
+    "display_fil": "Pumili ng isang pagkakataong mapabuti ang gawain.\nTalakayin ang mungkahi sa kapwa BHW o midwife.\nMakinig bago baguhin ang proseso.",
+    "display_en": "Choose one opportunity to improve work.\nDiscuss it with a fellow BHW or midwife.\nListen before changing a process.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Ngayon, subukan mong ikonekta ang lahat. May napansin ka bang isang bagay sa iyong barangay na hindi pa lubos na sumusunod sa direksyon ng UHC — halimbawa, hindi pa lubos malinaw kung sino ang lalapitan bago i-refer, o may residenteng hindi pa alam na kasapi na pala sila ng PhilHealth?\n\nBago ka kumilos nang mag-isa, pag-usapan muna ito sa kapwa BHW o sa midwife. Marahil may dahilan kung bakit ganoon pa rin ang takbo, o marahil may ibang paraan na hindi mo pa naisip. Ang punto ay hindi ang agad na baguhin ang lahat — ang punto ay ang magsimulang pag-usapan ito nang bukas.",
+    "narration_en": "Now try connecting it all. Have you noticed something in your own barangay that does not yet fully follow UHC's direction — for example, it is still unclear who to approach before a referral, or a resident does not yet know they are already a PhilHealth member?\n\nBefore acting on your own, talk it through with a fellow BHW or the midwife first. There may be a reason things are still done that way, or there may be another approach you had not thought of. The point is not to immediately change everything — the point is to start the conversation openly."
+  },
+  {
+    "id": "slide-section-7",
+    "concept_ids": [
+      "m2.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Ang unang maliit na hakbang",
+    "heading_en": "The first small step",
+    "display_fil": "Isang maliit na hakbang.\nIsang taong makakatuwang.\nIsang takdang oras para balikan ang resulta.",
+    "display_en": "One small step.\nOne person to work with.\nOne agreed time to review the result.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Aling mungkahi ang maisasagawa?",
+      "prompt_en": "Which suggestion is workable?",
+      "options": [
+        {
+          "fil": "Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife.",
+          "en": "Discuss one problem and agree on a first step with the midwife."
+        },
+        {
+          "fil": "Baguhin agad ang buong sistema nang walang talakayan.",
+          "en": "Change the whole system without discussion."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Discuss one problem and agree on a first step with the midwife. Explain why using the lesson situation."
+    },
+    "narration_fil": "Isipin muli ang napansin mong pagkakataon. Sa halip na hintayin ang malaking pagbabago mula sa itaas, ano ang isang maliit, konkretong bagay na magagawa mo simula sa susunod na linggo?\n\nHalimbawa: kung napansin mong hindi pa alam ng mga residente na awtomatiko na silang saklaw ng PhilHealth, maaari kang magsimula sa isang maikling paalala sa susunod na pagbisita sa bahay-bahay — hindi kailangang buong-buong kampanya agad, kundi isang konsistenteng pagbanggit hanggang sa maging kaalaman ito ng lahat.\n\nAng malaking pagbabago sa sistema ay kadalasang nagsisimula sa maliit na pagbabago sa ugali — at ang BHW na unang gumagawa nito sa sariling saklaw ang siyang nagpapabilis dito para sa lahat.",
+    "narration_en": "Think again about the gap you noticed. Instead of waiting for a big change to come from above, what is one small, concrete thing you could do starting next week?\n\nFor example: if you noticed residents don't yet know they're automatically covered by PhilHealth, you could start with a short reminder on your next household visit — it doesn't need to be a full campaign right away, just a consistent mention until it becomes something everyone knows.\n\nBig changes in a system usually start with a small change in habit — and the BHW who makes that change first, within their own reach, is the one who speeds it up for everyone else."
+  }
+]

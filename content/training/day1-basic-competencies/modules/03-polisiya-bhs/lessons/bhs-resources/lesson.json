@@ -1,0 +1,103 @@
+{
+  "manifest": {
+    "lesson_key": "bhs-resources",
+    "position": 3,
+    "title_fil": "Polisiya at paggamit ng rekurso",
+    "title_en": "Policies and resource use",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: polisiya at paggamit ng rekurso."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: policies and resource use."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-5",
+      "concept_ids": [
+        "m3.other-topics",
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang parehong kasanayan — pagtukoy ng mas mahusay na paraan at pagpapaliwanag nito nang malinaw — ang gamit sa pagtanggi sa isang alok at sa pagmumungkahi ng pagbabago sa lugar ng trabaho.",
+      "takeaway_en": "The same skill — spotting a better way and explaining it clearly — is what's used both to decline an offer and to propose a change at the workplace.",
+      "check": {
+        "prompt_fil": "Bakit aalamin ang polisiya sa rekurso?",
+        "prompt_en": "Why learn resource-use policy?",
+        "options": [
+          {
+            "fil": "Upang makapagmungkahi ng ligtas at mas episyenteng gawain.",
+            "en": "To suggest safe and more efficient work."
+          },
+          {
+            "fil": "Upang makapagbawas ng anumang gamit nang walang pahintulot.",
+            "en": "To remove any supplies without authorization."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Upang makapagmungkahi ng ligtas at mas episyenteng gawain. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "To suggest safe and more efficient work. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m3.other-topics",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m3.other-topics-source"
+      ]
+    },
+    {
+      "id": "m3.competency",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m3.competency-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m3.other-topics-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m3.competency-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

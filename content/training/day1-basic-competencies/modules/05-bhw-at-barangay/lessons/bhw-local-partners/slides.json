@@ -1,0 +1,50 @@
+[
+  {
+    "id": "slide-section-6",
+    "concept_ids": [
+      "m5.stakeholders-city"
+    ],
+    "layout": "scene",
+    "heading_fil": "Karagdagang kakilala sa lungsod o munisipyo",
+    "heading_en": "Additional contacts at the city or municipal level",
+    "display_fil": "CHO/MHO at PHN: pamamahala at teknikal na suporta.\nMidwife: direktang katuwang sa gawain.\nHEPO: health promotion.\nLocal health board: lokal na pagpaplano at pag-ugnay.",
+    "display_en": "CHO/MHO and PHN: management and technical support.\nMidwife: a direct work partner.\nHEPO: health promotion.\nLocal health board: local planning and coordination.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Lumalabas ang barangay patungo sa mas malawak na network kapag umaabot na sa antas ng lungsod o munisipyo.\n\nAng **City o Municipal Health Officer (CHO/MHO)** ang pangkalahatang namamahala sa kalusugan ng buong lungsod o bayan, at pangkalahatang supervisor ng mga health worker kasama ang mga BHW. Ang **midwife**, na naitatalaga sa barangay health station, ang nagtatakda ng mga gawain ng BHW at kanilang technical supervisor. Ang **Public Health Nurse (PHN)** naman ang nangangasiwa sa mga midwife, at kung minsan ay itinatalagang supervisor ng lahat ng BHW sa buong lungsod.\n\nMay bagong antas ding kikilalanin: ang **HEPO sa antas ng lungsod o munisipyo** — hindi ito ang tungkuling HEPO ng BHW mismo (natutunan mo na ito sa Modyul 1), kundi ang opisinang namamahala sa pagpaplano ng health promotion sa buong lokalidad at nag-mo-monitor ng kasanayan ng mga BHW dito. At ang **local health board**, na nagbibigay ng rekomendasyong pangkalusugan sa local government at namamahala sa budget — ang mayor ang chairperson nito, ang CHO/MHO ang vice-chairperson.",
+    "narration_en": "The barangay opens up into a wider network once you reach the city or municipal level.\n\nThe **City or Municipal Health Officer (CHO/MHO)** is the overall manager of health for the whole city or town, and the general supervisor of health workers including BHWs. The **midwife**, assigned to the barangay health station, sets the BHW's tasks and is their technical supervisor. The **Public Health Nurse (PHN)** supervises the midwives, and is sometimes assigned as supervisor of all BHWs citywide.\n\nThere is a new level to meet as well: the **city or municipal-level HEPO office** — not the same as a BHW's own HEPO designation (which you already learned in Module 1), but the office that plans health promotion for the whole locality and monitors BHWs' skill at it. And the **local health board**, which gives health recommendations to the LGU and manages the budget — the mayor chairs it, the CHO/MHO is vice-chair."
+  },
+  {
+    "id": "slide-section-7",
+    "concept_ids": [
+      "m5.stakeholders-other"
+    ],
+    "layout": "decision",
+    "heading_fil": "Iba pang kapartner",
+    "heading_en": "Other partners",
+    "display_fil": "Mayor: lokal na pamumuno.\nBHW President: koordinasyon ng mga BHW.\nSocial welfare officer: angkop na tulong panlipunan.\nSanitary inspector: environmental sanitation.",
+    "display_en": "Mayor: local leadership.\nBHW President: BHW coordination.\nSocial welfare officer: appropriate social assistance.\nSanitary inspector: environmental sanitation.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Ano ang gagawin kung hindi tiyak ang lokal na referral contact?",
+      "prompt_en": "What if you are unsure of the local referral contact?",
+      "options": [
+        {
+          "fil": "Tiyakin sa midwife o RHU ang kasalukuyang contact at proseso.",
+          "en": "Confirm the current contact and procedure with the midwife or RHU."
+        },
+        {
+          "fil": "Gumawa ng sariling proseso nang walang pag-ugnay.",
+          "en": "Invent a procedure without coordination."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Tiyakin sa midwife o RHU ang kasalukuyang contact at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Confirm the current contact and procedure with the midwife or RHU. Explain why using the lesson situation."
+    },
+    "narration_fil": "Apat pang kapartner ang dapat kilalanin ni BHW Marites.\n\nAng **mayor** ang pangkalahatang chief executive ng lungsod o munisipyo at direktang supervisor ng CHO/MHO. Ang **BHW President** ay ang nahalal o itinalagang lider ng lahat ng BHW sa isang lungsod o bayan — tumutulong siya sa pag-update ng BHW registry at nagbibigay ng impormasyon tungkol sa mga oportunidad para sa kapwa BHW. Ang **municipal social work and development officer** ang namamahala sa financial assistance para sa mga nangangailangan ng tulong medikal (AICS). At ang **sanitary inspector** ang nangunguna sa promosyon ng kalinisan, at kasama ng BHW sa paghahanap ng mga kabahayang nangangailangan ng environmental sanitation intervention.",
+    "narration_en": "Four more partners round out BHW Marites' network.\n\nThe **mayor** is the overall chief executive of the city or municipality and the CHO/MHO's direct supervisor. The **BHW President** is the elected or appointed leader of all BHWs in a city or town — helping update the BHW registry and sharing opportunities with fellow BHWs. The **municipal social work and development officer** manages financial assistance for people needing medical help (AICS). And the **sanitary inspector** leads cleanliness promotion, and works with BHWs to find households needing environmental sanitation help."
+  }
+]

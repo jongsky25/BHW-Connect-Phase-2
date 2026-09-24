@@ -1,0 +1,166 @@
+{
+  "manifest": {
+    "lesson_key": "uhc-primary-care",
+    "position": 1,
+    "title_fil": "Primary care at referral",
+    "title_en": "Primary care and referral",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: primary care at referral."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: primary care and referral."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-3",
+      "concept_ids": [
+        "m2.outpatient",
+        "m2.primary-care-provider",
+        "m2.referral-system",
+        "m2.program-integration"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Apat itong pagbabago, at magkakaugnay — ang bawat isa ay may kinalaman sa kung paano dumadaan ang isang tao mula sa pangangailangan patungo sa serbisyo.",
+      "takeaway_en": "These four changes are connected — each one has to do with how a person moves from having a need to actually receiving service.",
+      "check": null
+    },
+    {
+      "id": "section-4",
+      "concept_ids": [
+        "m2.outpatient",
+        "m2.primary-care-provider",
+        "m2.referral-system",
+        "m2.program-integration"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Bago magmungkahi ng pagpapabuti, kailangan munang malinaw kung alin sa mga pagbabago ang totoong dumating na sa sariling barangay, at alin ang hindi pa.",
+      "takeaway_en": "Before proposing an improvement, first get clear on which changes have actually reached your own barangay, and which have not.",
+      "check": {
+        "prompt_fil": "Ano ang unang gagawin bago mangakong walang bayad ang konsulta?",
+        "prompt_en": "What should you do before promising a consultation has no charge?",
+        "options": [
+          {
+            "fil": "Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso.",
+            "en": "Check the provider, benefit and process with the RHU or PhilHealth."
+          },
+          {
+            "fil": "Ipangako agad na libre ang lahat.",
+            "en": "Promise that everything is free."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Check the provider, benefit and process with the RHU or PhilHealth. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m2.outpatient",
+      "read_ids": [
+        "section-3",
+        "section-4"
+      ],
+      "slide_ids": [
+        "slide-section-3",
+        "slide-section-4"
+      ],
+      "source_ids": [
+        "m2.outpatient-source"
+      ]
+    },
+    {
+      "id": "m2.primary-care-provider",
+      "read_ids": [
+        "section-3",
+        "section-4"
+      ],
+      "slide_ids": [
+        "slide-section-3",
+        "slide-section-4"
+      ],
+      "source_ids": [
+        "m2.primary-care-provider-source"
+      ]
+    },
+    {
+      "id": "m2.referral-system",
+      "read_ids": [
+        "section-3",
+        "section-4"
+      ],
+      "slide_ids": [
+        "slide-section-3",
+        "slide-section-4"
+      ],
+      "source_ids": [
+        "m2.referral-system-source"
+      ]
+    },
+    {
+      "id": "m2.program-integration",
+      "read_ids": [
+        "section-3",
+        "section-4"
+      ],
+      "slide_ids": [
+        "slide-section-3",
+        "slide-section-4"
+      ],
+      "source_ids": [
+        "m2.program-integration-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m2.outpatient-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.primary-care-provider-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.referral-system-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.program-integration-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

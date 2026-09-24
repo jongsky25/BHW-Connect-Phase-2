@@ -1,0 +1,103 @@
+{
+  "manifest": {
+    "lesson_key": "bhs-support-environment",
+    "position": 1,
+    "title_fil": "Breastfeeding at kapaligiran",
+    "title_en": "Breastfeeding and the environment",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: breastfeeding at kapaligiran."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: breastfeeding and the environment."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-3",
+      "concept_ids": [
+        "m3.breastfeeding-act",
+        "m3.plastics-ban"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang mga polisiyang ito ay hindi lang tungkol sa pagbabawal — may aktibong inaasahan din: isulong ang breastfeeding, bawasan ang plastic.",
+      "takeaway_en": "These policies aren't just about prohibition — they also expect active follow-through: promote breastfeeding, cut down on plastic.",
+      "check": {
+        "prompt_fil": "Aling gawain ang angkop sa pasilidad?",
+        "prompt_en": "Which facility action is appropriate?",
+        "options": [
+          {
+            "fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya.",
+            "en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy."
+          },
+          {
+            "fil": "Alisin ang lahat ng sterile na gamit kahit kailangan sa ligtas na pangangalaga.",
+            "en": "Remove all sterile supplies even when necessary for safe care."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m3.breastfeeding-act",
+      "read_ids": [
+        "section-3"
+      ],
+      "slide_ids": [
+        "slide-section-3"
+      ],
+      "source_ids": [
+        "m3.breastfeeding-act-source"
+      ]
+    },
+    {
+      "id": "m3.plastics-ban",
+      "read_ids": [
+        "section-3"
+      ],
+      "slide_ids": [
+        "slide-section-3"
+      ],
+      "source_ids": [
+        "m3.plastics-ban-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m3.breastfeeding-act-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        14
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m3.plastics-ban-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        14
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

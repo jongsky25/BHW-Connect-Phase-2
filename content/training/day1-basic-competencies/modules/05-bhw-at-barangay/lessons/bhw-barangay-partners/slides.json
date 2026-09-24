@@ -1,0 +1,50 @@
+[
+  {
+    "id": "slide-section-4",
+    "concept_ids": [
+      "m5.stakeholders-barangay"
+    ],
+    "layout": "scene",
+    "heading_fil": "Bakit mahalaga ang bawat ugnayan",
+    "heading_en": "Why each relationship matters",
+    "display_fil": "Magkakaiba ang tungkulin ng mga katuwang.\nPiliin ang angkop sa pangangailangan.\nMag-ugnay upang hindi maantala ang serbisyo.",
+    "display_en": "Partners have different roles.\nMatch the partner to the need.\nCoordinate to avoid delaying service.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Kung palagi na lamang lalapitan ni BHW Marites ang midwife para sa lahat ng bagay, mabagal ang lahat — mapupuno ang oras ng midwife sa mga bagay na hindi naman klinikal. Kung hindi naman siya kikilala sa barangay officials, mahihirapan siyang humingi ng suporta kapag kailangan ng transportasyon o kagamitan. Kung hindi siya nakikipag-ugnayan sa kapwa BHW, mananatili siyang mag-isa sa mga karanasang dapat sana ay napag-aaralan nang magkasama.\n\nBawat ugnayan ay may sariling layunin — at ang paggamit ng tamang ugnayan sa tamang pagkakataon ang gumagawa sa serbisyo ng barangay na mabilis at maaasahan.",
+    "narration_en": "If BHW Marites always went to the midwife for everything, everything would slow down — the midwife's time would fill up with things that were never clinical to begin with. If she never built a relationship with barangay officials, she would struggle to get support when she needed transport or supplies. If she never connected with fellow BHWs, she would stay alone with experiences that should have been learned together.\n\nEach relationship has its own purpose — and using the right one at the right moment is what makes barangay service fast and reliable."
+  },
+  {
+    "id": "slide-section-5",
+    "concept_ids": [
+      "m5.stakeholders-barangay"
+    ],
+    "layout": "decision",
+    "heading_fil": "Karagdagang kakilala sa barangay",
+    "heading_en": "Additional contacts within the barangay",
+    "display_fil": "Punong barangay: lokal na pamumuno at suporta.\nKagawad sa kalusugan: katuwang sa usaping pangkalusugan at polisiya.\nTiyakin ang lokal na proseso sa pondo at pagpapasya.",
+    "display_en": "Punong barangay: local leadership and support.\nHealth kagawad: a partner in health and policy matters.\nConfirm local funding and decision procedures.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Paano pipili ng katuwang sa barangay?",
+      "prompt_en": "How do you choose a barangay partner?",
+      "options": [
+        {
+          "fil": "Itugma ang pangangailangan sa tungkulin ng katuwang.",
+          "en": "Match the need to the partner’s role."
+        },
+        {
+          "fil": "Lahat ng problema ay sa iisang tao lamang.",
+          "en": "Send every issue to the same person."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Itugma ang pangangailangan sa tungkulin ng katuwang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Match the need to the partner’s role. Explain why using the lesson situation."
+    },
+    "narration_fil": "Bukod sa apat na ugnayan, may dalawa pang kakilala sa loob mismo ng barangay na dapat malaman ni BHW Marites.\n\nAng **punong barangay** ay ka-partner ng mga BHW sa pagpapatupad ng mandato nitong magbigay ng basic health services, at nangangasiwa sa mga BHW. Siya rin ang nagdedesisyon kung paano gagamitin ang budget ng barangay — kasama ang pagbibigay ng honorarium para sa mga BHW.\n\nAng **kagawad sa kalusugan** naman ang tagapagtaguyod sa konseho ng barangay ng mga polisiya at resolusyong pangkalusugan, at miyembro rin siya ng barangay planning team for health. Siya ang nagsusulong ng budget para sa mga gawain, pasilidad, at materyales na may kinalaman sa kalusugan.",
+    "narration_en": "Beyond the four relationships, there are two more contacts within the barangay itself that BHW Marites should know.\n\nThe **punong barangay** is the BHW's partner in carrying out the barangay's mandate to provide basic health services, and oversees the BHWs. They also decide how the barangay budget is used — including BHW honoraria.\n\nThe **Kagawad sa Kalusugan** advocates health policies and resolutions in the barangay council, and is also a member of the barangay planning team for health. They push for budget for health-related activities, facilities, and materials."
+  }
+]
