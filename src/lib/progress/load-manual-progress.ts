@@ -1,27 +1,41 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { summariseManualProgress, type ManualProgress } from "./manual-progress";
 
-// Loads every published training program's progress for one BHW. All reads
-// go through the learner's own RLS (own course_progress, own attempts, own
-// certificates), so no new policy or RPC is needed.
-export async function loadManualProgress(db: SupabaseClient, bhwUserId: string): Promise<ManualProgress[]> {
+// Loads every published training program's progress for one BHW, or only
+// `programId`'s. All reads go through the learner's own RLS (own
+// course_progress, own attempts, own certificates), so no new policy or RPC
+// is needed.
+export async function loadManualProgress(
+  db: SupabaseClient,
+  bhwUserId: string,
+  programId?: string,
+): Promise<ManualProgress[]> {
   const fail = (what: string) => {
     throw new Error(`Unable to load ${what}`);
   };
 
-  const { data: programs, error: programError } = await db
+  let programQuery = db
     .from("training_programs")
     .select("id,content_key,title_fil,title_en")
     .eq("status", "published")
     .order("created_at");
+  if (programId) programQuery = programQuery.eq("id", programId);
+  const chapterQuery = (programIds: string[]) =>
+    db
+      .from("training_program_chapters")
+      .select("id,program_id,chapter_key,position,title_fil,title_en,course_id,availability")
+      .in("program_id", programIds)
+      .order("position");
+
+  // With a known program the chapters need not wait for the program row.
+  const [{ data: programs, error: programError }, scopedChapters] = await Promise.all([
+    programQuery,
+    programId ? chapterQuery([programId]) : null,
+  ]);
   if (programError) fail("training programs");
   if (!programs?.length) return [];
 
-  const { data: chapters, error: chapterError } = await db
-    .from("training_program_chapters")
-    .select("id,program_id,chapter_key,position,title_fil,title_en,course_id,availability")
-    .in("program_id", programs.map((p) => p.id))
-    .order("position");
+  const { data: chapters, error: chapterError } = scopedChapters ?? (await chapterQuery(programs.map((p) => p.id)));
   if (chapterError) fail("training chapters");
 
   const courseIds = [...new Set((chapters ?? []).map((c) => c.course_id).filter((id): id is string => !!id))];

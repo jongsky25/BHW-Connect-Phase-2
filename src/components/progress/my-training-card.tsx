@@ -1,5 +1,6 @@
 import Link from "next/link";
-import type { ManualProgress } from "@/lib/progress/manual-progress";
+import type { ContinueTarget, ManualProgress } from "@/lib/progress/manual-progress";
+import { subchapterSegments } from "./card-progress";
 import { ProgressBar } from "./progress-bar";
 import { ProgressRing } from "./progress-ring";
 import { type Locale } from "./progress-styles";
@@ -7,6 +8,18 @@ import { StatusChip } from "./status-chip";
 
 export function manualTitle(p: Pick<ManualProgress, "contentKey" | "title_fil" | "title_en">, locale: Locale) {
   return p.contentKey === "bhw-reference-manual" ? "BHW Reference Manual" : locale === "en" ? p.title_en : p.title_fil;
+}
+
+export function ContinueLink({ to, locale }: { to: ContinueTarget; locale: Locale }) {
+  const en = locale === "en";
+  return (
+    <Link href={to.href} className="rounded-md bg-primary px-5 py-3 font-medium text-on-primary">
+      {en ? "Continue where you left off" : "Ituloy kung saan ka tumigil"}
+      <span className="block text-xs font-normal">
+        {to.subchapterNumber} · {en ? to.title_en : to.title_fil}
+      </span>
+    </Link>
+  );
 }
 
 // "My training" on /home: overall ring, one line per chapter, Continue.
@@ -69,11 +82,7 @@ export function MyTrainingCard({ progress, locale }: { progress: ManualProgress;
                   state={ch.state}
                   locale={locale}
                   label={name}
-                  segments={ch.subchapters.map((s) => ({
-                    counts: s.counts,
-                    state: s.state,
-                    label: `${s.number} ${en ? s.title_en : s.title_fil}`,
-                  }))}
+                  segments={subchapterSegments(ch, locale)}
                 />
               ) : null}
             </li>
@@ -82,14 +91,7 @@ export function MyTrainingCard({ progress, locale }: { progress: ManualProgress;
       </ul>
 
       <div className="flex flex-wrap items-center gap-3">
-        {next ? (
-          <Link href={next.href} className="rounded-md bg-primary px-5 py-3 font-medium text-on-primary">
-            {text("Ituloy kung saan ka tumigil", "Continue where you left off")}
-            <span className="block text-xs font-normal">
-              {next.subchapterNumber} · {en ? next.title_en : next.title_fil}
-            </span>
-          </Link>
-        ) : null}
+        {next ? <ContinueLink to={next} locale={locale} /> : null}
         <Link href={manualHref} className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink">
           {text("Tingnan ang buong manual", "View the whole manual")}
         </Link>

@@ -1,8 +1,15 @@
+import * as Sentry from '@sentry/nextjs';
 import Link from 'next/link';
 import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
+import {CardProgress,subchapterSegments} from '@/components/progress/card-progress';
+import {ChapterSteps} from '@/components/progress/chapter-steps';
+import {ManualSummary} from '@/components/progress/manual-summary';
+import {ProgressBar} from '@/components/progress/progress-bar';
+import {LessonStatus,StatusChip} from '@/components/progress/status-chip';
+import {loadManualProgress} from '@/lib/progress/load-manual-progress';
 import {createClient} from '@/lib/supabase/server';
 import {getRequestAppUser,getRequestAuthUser,getRequestFeatureFlags} from '@/lib/supabase/request';
 import type {CourseLesson,CourseLessonRevision,CourseLessonProgress,CourseLessonResume,CourseModule,TrainingProgramChapter} from '@/lib/elearning/types';
@@ -23,12 +30,19 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
   if(!user)redirect('/login');
   const actor=await getRequestAppUser(user.id);
   if(!actor || actor.status!=='active')redirect('/login');
+  const readOnly=actor.role!=='bhw';
+  // Personal progress is for BHWs on the manual, chapter and subchapter pages;
+  // admins get a preview. Started now so it overlaps the reads below. A
+  // failure only hides the progress view — the manual itself still renders.
+  const myProgress=!readOnly && path.length<3?loadManualProgress(db,actor.id,programId)
+    .then(all=>all[0]??null,error=>{Sentry.captureException(error);return null;}):Promise.resolve(null);
   const [locale,{data:program,error:programError},{data:chapters,error:chapterError}]=await Promise.all([
     getLocale(),
     db.from('training_programs').select('id,content_key,title_fil,title_en').eq('id',programId).eq('status','published').maybeSingle(),
     db.from('training_program_chapters').select('*').eq('program_id',programId).order('position').returns<TrainingProgramChapter[]>(),
   ]);
   const en=locale==='en';
+  const loc=en?'en':'fil';
   const text=(fil:string,eng:string)=>en?eng:fil;
   const title=(r:{title_fil:string;title_en:string})=>en?r.title_en:r.title_fil;
   if(programError)throw new Error('Unable to load training program');
@@ -44,17 +58,26 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
   let heading=manualTitle;
   let intro=text('Piliin ang kabanatang nais mong pag-aralan.','Choose a chapter to explore.');
   if(!chapter) {
-    content=<div className="grid gap-4">{chapters?.map(c=><div key={c.id}>
-      {c.availability==='available' && c.course_id ? <Link className={card} href={`${base}/${c.chapter_key}`}>
-        <span className="text-sm text-ink/70">{text('Kabanata','Chapter')} {c.position+1}</span>
-        <h2 className="mt-1 text-xl font-semibold">{title(c)}</h2>
-        <p className="mt-3 text-sm">{text('Tingnan ang mga subchapter →','Explore subchapters →')}</p>
-      </Link>:<div className="rounded-xl border border-ink/15 p-5">
-        <span className="text-sm text-ink/70">{text('Kabanata','Chapter')} {c.position+1}</span>
-        <h2 className="mt-1 text-xl font-semibold">{title(c)}</h2>
-        <p className="mt-3 text-sm">{text('Hindi pa available','Not yet available')}</p>
-      </div>}
-    </div>)}</div>;
+    const mine=await myProgress;
+    content=<>
+      {mine && mine.counts.total>0 && <ManualSummary progress={mine} title={manualTitle} locale={loc}/>}
+      <div className="grid gap-4">{chapters?.map(c=>{
+        const p=mine?.chapters.find(x=>x.id===c.id);
+        return <div key={c.id}>
+          {c.availability==='available' && c.course_id ? <Link className={card} href={`${base}/${c.chapter_key}`}>
+            <span className="text-sm text-ink/70">{text('Kabanata','Chapter')} {c.position+1}</span>
+            <h2 className="mt-1 text-xl font-semibold">{title(c)}</h2>
+            {p && <CardProgress state={p.state} counts={p.counts} locale={loc} segments={subchapterSegments(p,loc)}
+              label={text(`Progreso sa Kabanata ${c.position+1}`,`Chapter ${c.position+1} progress`)}/>}
+            <p className="mt-3 text-sm">{text('Tingnan ang mga subchapter →','Explore subchapters →')}</p>
+          </Link>:<div className="rounded-xl border border-ink/15 p-5">
+            <span className="text-sm text-ink/70">{text('Kabanata','Chapter')} {c.position+1}</span>
+            <h2 className="mt-1 text-xl font-semibold">{title(c)}</h2>
+            <div className="mt-3"><StatusChip state="unavailable" locale={loc}/></div>
+          </div>}
+        </div>;
+      })}</div>
+    </>;
   } else {
     const chapterHref=`${base}/${chapter.chapter_key}`;
     const chapterTitle=`${text('Kabanata','Chapter')} ${chapter.position+1}: ${title(chapter)}`;
@@ -81,7 +104,6 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
         .returns<CourseLessonProgress[]>():Promise.resolve({data:[] as CourseLessonProgress[],error:null}),
     ]);
     if(lessonError)throw new Error('Unable to load lessons');
-    const readOnly=actor.role!=='bhw';
     if(completedError)throw new Error('Unable to load completed lessons');
     const done=new Set(completed?.map(p=>p.lesson_id));
     const subchapter=path[1]?modules?.find(m=>m.id===path[1]):null;
@@ -91,16 +113,27 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
       const {data:certificate,error:certificateError}=progress?.status==='certified'?await db.from('certificates').select('verification_code')
         .eq('course_id',course.id).eq('bhw_user_id',actor.id).maybeSingle():{data:null,error:null};
       if(certificateError)throw new Error('Unable to load your certificate');
+      const mine=(await myProgress)?.chapters.find(x=>x.id===chapter.id);
       content=<>
+        {mine && <section className="flex flex-col gap-4 rounded-xl border border-ink/15 p-5" aria-labelledby="chapter-progress">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 id="chapter-progress" className="font-semibold">{text('Ang iyong progreso','Your progress')}</h2>
+            <StatusChip state={mine.state} locale={loc}/>
+          </div>
+          {mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} label={chapterTitle} locale={loc} segments={subchapterSegments(mine,loc)}/>}
+          <ChapterSteps steps={mine.steps} locale={loc}/>
+        </section>}
         <div className="grid gap-3">{modules?.filter(m=>m.type!=='quiz').map((m,i)=>{
           const own=lessons?.filter(l=>l.module_id===m.id)??[];
+          const sub=mine?.subchapters.find(x=>x.id===m.id);
           return <Link key={m.id} className={card} href={`${chapterHref}/${m.id}`}>
             <h2 className="text-lg font-semibold">{chapter.position+1}.{i+1} {title(m)}</h2>
-            <p className="mt-2 text-sm text-ink/70">{own.length ? `${own.length} ${text('maiikling aralin','short lessons')}${readOnly?'':` · ${own.filter(l=>done.has(l.id)).length}/${own.length} ${text('natapos','completed')}`}`:text('Inihahanda ang maiikling aralin','Short lessons are being prepared')}</p>
+            {sub && own.length ? <CardProgress state={sub.state} counts={sub.counts} locale={loc} label={text(`Progreso sa ${sub.number}`,`${sub.number} progress`)}/>:
+              <p className="mt-2 text-sm text-ink/70">{own.length ? `${own.length} ${text('maiikling aralin','short lessons')}`:text('Inihahanda ang maiikling aralin','Short lessons are being prepared')}</p>}
           </Link>;
         })}
         {program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' && [communication,problems,safety,practices].filter(m=>!modules?.some(row=>row.position===m.position)).map(m=><div key={m.id} className="rounded-xl border border-ink/15 p-5">
-          <h2 className="text-lg font-semibold">1.{m.position+1} {title(m)}</h2><p className="mt-2 text-sm text-ink/70">{text('Hindi pa available','Not yet available')}</p>
+          <h2 className="text-lg font-semibold">1.{m.position+1} {title(m)}</h2><div className="mt-2"><StatusChip state="unavailable" locale={loc}/></div>
         </div>)}</div>
         {readOnly?<p>{text('Preview lamang. Hindi binabago ang progreso ng mga mag-aaral.','Preview only. Learner progress is not changed.')}</p>:
           <section className="rounded-xl border border-ink/15 p-5" aria-label={text('Pagtatasa at sertipiko','Assessment and certificate')}>
@@ -117,10 +150,20 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
       intro=own.length?text('Piliin ang isang maikling aralin.','Choose a short lesson.'):text('Inihahanda pa ang mga aralin para sa subchapter na ito.','Lessons for this subchapter are being prepared.');
       const lesson=path[2]?own.find(l=>l.id===path[2]):null;
       if(path[2] && !lesson)notFound();
-      if(!lesson)content=<ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} href={`${moduleHref}/${l.id}`}>
-        <h2 className="font-semibold">{i+1}. {title(l)}</h2><p className="mt-2 text-sm">{text('Basahin / Slides','Read / Slides')}{done.has(l.id)?text(' · Natapos',' · Completed'):''}</p>
-      </Link></li>)}</ol>;
-      else {
+      if(!lesson) {
+        const mine=(await myProgress)?.chapters.find(x=>x.id===chapter.id)?.subchapters.find(x=>x.id===subchapter.id);
+        const started=new Map(mine?.lessons.map(l=>[l.id,l.state]));
+        content=<>
+          {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
+          <ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} href={`${moduleHref}/${l.id}`}>
+            <h2 className="font-semibold">{i+1}. {title(l)}</h2>
+            <p className="mt-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-sm">
+              <span className="text-ink/70">{text(`Aralin ${i+1} sa ${own.length}`,`Lesson ${i+1} of ${own.length}`)} · {text('Basahin / Slides','Read / Slides')}</span>
+              {!readOnly && <LessonStatus state={started.get(l.id)??(done.has(l.id)?'completed':'not_started')} locale={loc}/>}
+            </p>
+          </Link></li>)}</ol>
+        </>;
+      } else {
         // Keep the existing pretest gate. Certified learners can review without retaking tests.
         const achieved=['certified','content_completed','failed_assessment'].includes(progress?.status??'');
         const pretestGate=!readOnly && flags.course_sessions && !achieved;
