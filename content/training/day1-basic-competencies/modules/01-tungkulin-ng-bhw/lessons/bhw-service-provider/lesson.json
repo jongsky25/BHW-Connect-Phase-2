@@ -1,0 +1,274 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-service-provider",
+    "position": 3,
+    "title_fil": "Bilang Health Service Provider",
+    "title_en": "As a Health Service Provider",
+    "objectives_fil": [
+      "Matukoy ang angkop na pagtulong, paggabay, at follow-up ayon sa pagsasanay at pangangasiwa."
+    ],
+    "objectives_en": [
+      "Identify appropriate assistance, guidance, and follow-up within training and supervision."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "first-contact",
+      "concept_ids": [
+        "m1.role.provider",
+        "m1.provider.firstcontact"
+      ],
+      "asset_ids": [
+        "A01"
+      ],
+      "takeaway_fil": "Bahagi ng primary care team; katuwang ng midwife.",
+      "takeaway_en": "Part of the primary care team; a partner to the midwife.",
+      "check": null
+    },
+    {
+      "id": "guide",
+      "concept_ids": [
+        "m1.provider.guide"
+      ],
+      "asset_ids": [
+        "A05"
+      ],
+      "takeaway_fil": "Halimbawa ng koordinasyon. Sundin ang lokal na referral at emergency procedures.",
+      "takeaway_en": "A coordination example. Follow local referral and emergency procedures.",
+      "check": null
+    },
+    {
+      "id": "boundaries",
+      "concept_ids": [
+        "m1.provider.initialservices"
+      ],
+      "asset_ids": [
+        "A05"
+      ],
+      "takeaway_fil": "Mga halimbawa lamang. Gawin ayon sa pagsasanay, lokal na patakaran, at pangangasiwa.",
+      "takeaway_en": "Examples only. Work within training, local policy, and supervision.",
+      "check": null
+    },
+    {
+      "id": "follow-up",
+      "concept_ids": [
+        "m1.provider.monitoring"
+      ],
+      "asset_ids": [
+        "A05"
+      ],
+      "takeaway_fil": "Ang follow-up ay nagpapatuloy sa ugnayan ng residente at health team.",
+      "takeaway_en": "Follow-up sustains the connection between the resident and health team.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m1.role.provider",
+        "m1.provider.firstcontact",
+        "m1.provider.guide",
+        "m1.provider.initialservices",
+        "m1.provider.monitoring"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Makinig, tumulong sa loob ng saklaw, gumabay, at mag-follow-up kasama ang health team.",
+      "takeaway_en": "Listen, assist within scope, guide, and follow up with the health team.",
+      "check": {
+        "prompt_fil": "Humingi ng payong lampas sa iyong pagsasanay ang residente. Ano ang angkop?",
+        "prompt_en": "A resident asks for advice beyond your training. What is appropriate?",
+        "options": [
+          {
+            "fil": "Hulaan ang sagot para hindi siya maghintay.",
+            "en": "Guess so the resident will not wait."
+          },
+          {
+            "fil": "Humingi ng gabay sa health team at ipaliwanag ang susunod na hakbang.",
+            "en": "Seek health-team guidance and explain the next step."
+          },
+          {
+            "fil": "Sabihing tapos na ang iyong tungkulin.",
+            "en": "Say your role is finished."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang paggabay sa angkop na health worker ay pagtulong. Panatilihin ang hangganan ng pagsasanay at sundin ang lokal na tagubilin sa follow-up.",
+        "feedback_en": "Guiding someone to the appropriate health worker is assistance. Respect training boundaries and follow local follow-up instructions."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m1.role.provider",
+      "read_ids": [
+        "first-contact",
+        "check"
+      ],
+      "slide_ids": [
+        "first-contact-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.role.provider-d",
+        "m1.role.provider-r"
+      ]
+    },
+    {
+      "id": "m1.provider.firstcontact",
+      "read_ids": [
+        "first-contact",
+        "check"
+      ],
+      "slide_ids": [
+        "first-contact-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.firstcontact-d",
+        "m1.provider.firstcontact-r"
+      ]
+    },
+    {
+      "id": "m1.provider.guide",
+      "read_ids": [
+        "guide",
+        "check"
+      ],
+      "slide_ids": [
+        "guide-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.guide-d",
+        "m1.provider.guide-r"
+      ]
+    },
+    {
+      "id": "m1.provider.initialservices",
+      "read_ids": [
+        "boundaries",
+        "check"
+      ],
+      "slide_ids": [
+        "boundaries-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.initialservices-r"
+      ]
+    },
+    {
+      "id": "m1.provider.monitoring",
+      "read_ids": [
+        "follow-up",
+        "check"
+      ],
+      "slide_ids": [
+        "follow-up-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.monitoring-d",
+        "m1.provider.monitoring-r"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1.role.provider-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.role.provider-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.firstcontact-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.firstcontact-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.guide-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.guide-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.initialservices-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.monitoring-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.monitoring-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "path": "/training/bhw-1-1/A01-83aeca62b560.svg",
+      "alt_fil": "Pagtuturo, pag-uusap sa komunidad, at paggabay sa residente.",
+      "alt_en": "Teaching, community discussion, and guiding a resident.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "83aeca62b560e3cc3ad49b97cd921461deb996b174d315b7bc269dc9b027493e"
+    },
+    {
+      "id": "A05",
+      "path": "/training/bhw-1-1/A05-e058d004a5e5.svg",
+      "alt_fil": "Pangangailangan, angkop na tulong, at follow-up.",
+      "alt_en": "A need, appropriate assistance, and follow-up.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "e058d004a5e503ea9821b772a3c55148b3585f76c6e9aeaed6362fc61af4bf1c"
+    }
+  ]
+}

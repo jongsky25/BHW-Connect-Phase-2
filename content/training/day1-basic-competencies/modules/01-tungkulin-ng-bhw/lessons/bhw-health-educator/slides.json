@@ -1,0 +1,98 @@
+[
+  {
+    "id": "educator-scene-slide",
+    "concept_ids": [
+      "m1.role.educator"
+    ],
+    "layout": "scene",
+    "heading_fil": "Magsimula sa kausap",
+    "heading_en": "Start with your audience",
+    "display_fil": "Makinig sa tanong\nIpaliwanag nang malinaw\nAng pagtuturo ay pag-uusap na may layunin.",
+    "display_en": "Listen to the question\nExplain clearly\nTeaching is a purposeful conversation.",
+    "asset_ids": [
+      "A01"
+    ],
+    "check": null
+  },
+  {
+    "id": "body-environment-slide",
+    "concept_ids": [
+      "m1.role.educator"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Katawan at kapaligiran",
+    "heading_en": "Body and environment",
+    "display_fil": "Katawan · pangangalaga sa sarili\nKapaligiran · malinis na paligid\nMagkaugnay ang kalusugan ng tao at ng kanyang paligid.",
+    "display_en": "Body · personal health\nEnvironment · clean surroundings\nPeople’s health and their surroundings are connected.",
+    "asset_ids": [
+      "A03"
+    ],
+    "check": null
+  },
+  {
+    "id": "life-stages-slide",
+    "concept_ids": [
+      "m1.educator.lifestages"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Iba ang pangangailangan sa bawat yugto",
+    "heading_en": "Needs change through life",
+    "display_fil": "Sanggol at tagapag-alaga\nKabataan\nBuntis\nNakatatanda\nIangkop ang usapan tungkol sa sakit, aksidente, at panganib sa yugto ng buhay.",
+    "display_en": "Infant and caregiver\nYoung people\nPregnant residents\nOlder adults\nAdapt discussion of illness, accidents, and risks to each life stage.",
+    "asset_ids": [
+      "A03"
+    ],
+    "check": null
+  },
+  {
+    "id": "all-sectors-slide",
+    "concept_ids": [
+      "m1.educator.allsectors"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Abutin ang bawat sektor",
+    "heading_en": "Reach every community group",
+    "display_fil": "Sino ang hindi pa naaabot?\nAnong paraan ang angkop?\nImpormasyon, kaalaman, at pagsasanay para sa bawat sektor.",
+    "display_en": "Who is not yet reached?\nWhat approach will work?\nInformation, knowledge, and training for every community group.",
+    "asset_ids": [
+      "A03"
+    ],
+    "check": null
+  },
+  {
+    "id": "check-slide",
+    "concept_ids": [
+      "m1.role.educator",
+      "m1.educator.lifestages",
+      "m1.educator.allsectors"
+    ],
+    "layout": "decision",
+    "heading_fil": "Gamitin ang natutuhan",
+    "heading_en": "Apply your learning",
+    "display_fil": "Mabisang pagtuturo: tamang paksa, angkop na paraan, at pagkakataon para sa lahat.",
+    "display_en": "Effective education connects the right topic and approach with opportunities for everyone.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Puro magulang ang dumadalo. Paano mas maaabot ang kabataan?",
+      "prompt_en": "Only parents attend. How can you better reach young people?",
+      "options": [
+        {
+          "fil": "Iangkop ang oras at usapan sa tanong ng kabataan.",
+          "en": "Adapt the time and discussion to young people’s questions."
+        },
+        {
+          "fil": "Ulitin ang parehong usapan sa mga magulang lamang.",
+          "en": "Repeat the same discussion with parents only."
+        },
+        {
+          "fil": "Ipagpalagay na sapat nang alam nila.",
+          "en": "Assume they already know enough."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang pag-angkop sa kausap ay tumutulong maabot ang bawat sektor. Panatilihing aprubado at tama ang impormasyong ibinabahagi.",
+      "feedback_en": "Adapting to the audience helps reach each group. Keep the information accurate and approved."
+    }
+  }
+]
+
