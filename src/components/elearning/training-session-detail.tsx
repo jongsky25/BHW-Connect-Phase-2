@@ -13,7 +13,9 @@ import type {
   CourseModuleFacilitatorNotes,
   CourseModuleVisual,
   CourseSession,
+  CourseSessionDelivery,
   CourseSessionEnrollment,
+  EnrollmentStatus,
   LessonDensity,
 } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
@@ -28,6 +30,7 @@ type Props = {
   visuals: CourseModuleVisual[];
   facilitatorNotes: CourseModuleFacilitatorNotes[];
   initialEnrollments: CourseSessionEnrollment[];
+  initialDeliveries: CourseSessionDelivery[];
   courseProgress: ProgressRow[];
   moduleProgress: ModuleProgressRow[];
   testAttempts: SessionTestAttempt[];
@@ -36,6 +39,7 @@ type Props = {
 };
 
 const DENSITIES: LessonDensity[] = ["short", "normal", "long"];
+const ATTENDANCE: EnrollmentStatus[] = ["enrolled", "attended", "no_show"];
 
 export function TrainingSessionDetail({
   session,
@@ -43,6 +47,7 @@ export function TrainingSessionDetail({
   visuals,
   facilitatorNotes,
   initialEnrollments,
+  initialDeliveries,
   courseProgress,
   moduleProgress,
   testAttempts,
@@ -52,13 +57,23 @@ export function TrainingSessionDetail({
   const t = useTranslations("trainingSessions");
   const tCrumbs = useTranslations("breadcrumbs");
   const [density, setDensity] = useState(session.lesson_density);
-  const [status] = useState(session.status);
+  const [status, setStatus] = useState(session.status);
   const [enrollments, setEnrollments] = useState(initialEnrollments);
   const [candidates, setCandidates] = useState(initialCandidates);
   const [selectedBhwId, setSelectedBhwId] = useState(initialCandidates[0]?.id ?? "");
   const [densityPending, setDensityPending] = useState(false);
   const [enrollPending, setEnrollPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [deliveries, setDeliveries] = useState(initialDeliveries);
+  const deliverable = modules.filter((m) => m.type !== "quiz");
+  const [logModuleId, setLogModuleId] = useState(deliverable[0]?.id ?? "");
+  const [logMinutes, setLogMinutes] = useState("");
+  const [logNotes, setLogNotes] = useState("");
+  const [logPending, setLogPending] = useState(false);
+  const [logSaved, setLogSaved] = useState(false);
+  const [attendancePending, setAttendancePending] = useState<string | null>(null);
+  const [completePending, setCompletePending] = useState(false);
+  const sessionOpen = status === "scheduled";
 
   const densityLocked = status !== "scheduled";
   const courseTitle = locale === "en" ? session.courses?.title_en : session.courses?.title_fil;
@@ -158,6 +173,82 @@ export function TrainingSessionDetail({
     }
   }
 
+  async function handleAttendance(enrollment: CourseSessionEnrollment, next: EnrollmentStatus) {
+    setError(null);
+    setAttendancePending(enrollment.bhw_user_id);
+    try {
+      const { error: rpcError } = await createClient().rpc("rpc_course_session_set_attendance", {
+        p_session_id: session.id,
+        p_bhw_user_id: enrollment.bhw_user_id,
+        p_status: next,
+      });
+      if (rpcError) {
+        setError(t(mapElearningRpcError(rpcError.message)));
+        return;
+      }
+      setEnrollments((prev) => prev.map((e) => (e.bhw_user_id === enrollment.bhw_user_id ? { ...e, status: next } : e)));
+    } finally {
+      setAttendancePending(null);
+    }
+  }
+
+  async function handleLogDelivery() {
+    const minutes = Number(logMinutes);
+    if (!logModuleId || !Number.isInteger(minutes) || minutes < 1 || minutes > 600) {
+      setError(t("invalidDurationError"));
+      return;
+    }
+    setError(null);
+    setLogSaved(false);
+    setLogPending(true);
+    try {
+      const { data, error: rpcError } = await createClient().rpc("rpc_course_session_log_delivery", {
+        p_session_id: session.id,
+        p_module_id: logModuleId,
+        p_duration_minutes: minutes,
+        p_notes: logNotes,
+      });
+      if (rpcError) {
+        setError(t(mapElearningRpcError(rpcError.message)));
+        return;
+      }
+      const entry: CourseSessionDelivery = {
+        id: String(data),
+        session_id: session.id,
+        module_id: logModuleId,
+        duration_minutes: minutes,
+        notes: logNotes.trim(),
+        recorded_at: new Date().toISOString(),
+      };
+      setDeliveries((prev) => [...prev.filter((d) => d.module_id !== logModuleId), entry]);
+      setLogMinutes("");
+      setLogNotes("");
+      setLogSaved(true);
+    } finally {
+      setLogPending(false);
+    }
+  }
+
+  async function handleComplete() {
+    setError(null);
+    setCompletePending(true);
+    try {
+      const { error: rpcError } = await createClient().rpc("rpc_course_session_complete", { p_session_id: session.id });
+      if (rpcError) {
+        setError(t(mapElearningRpcError(rpcError.message)));
+        return;
+      }
+      setStatus("completed");
+    } finally {
+      setCompletePending(false);
+    }
+  }
+
+  const moduleTitle = (id: string) => {
+    const m = modules.find((x) => x.id === id);
+    return m ? (locale === "en" ? m.title_en : m.title_fil) : id;
+  };
+
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-4 py-10 sm:px-6">
       <Breadcrumbs
@@ -247,6 +338,9 @@ export function TrainingSessionDetail({
                     {t("colBhw")}
                   </th>
                   <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
+                    {t("colAttendance")}
+                  </th>
+                  <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
                     {t("colModuleProgress")}
                   </th>
                   <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
@@ -274,6 +368,21 @@ export function TrainingSessionDetail({
                         {enrollment.users?.full_name ?? enrollment.bhw_user_id}
                       </td>
                       <td className="px-3 py-3 text-sm text-ink">
+                        <select
+                          aria-label={`${t("colAttendance")}: ${enrollment.users?.full_name ?? ""}`}
+                          value={enrollment.status}
+                          disabled={!sessionOpen || attendancePending === enrollment.bhw_user_id || enrollment.id.startsWith("optimistic-")}
+                          onChange={(event) => handleAttendance(enrollment, event.target.value as EnrollmentStatus)}
+                          className={`${inputClass} min-w-[150px] disabled:opacity-60`}
+                        >
+                          {ATTENDANCE.map((option) => (
+                            <option key={option} value={option}>
+                              {t(`attendance.${option}`)}
+                            </option>
+                          ))}
+                        </select>
+                      </td>
+                      <td className="px-3 py-3 text-sm text-ink">
                         {completed}/{modules.length}
                       </td>
                       <td className="px-3 py-3 text-sm text-ink">{scores.pretest != null ? `${scores.pretest}%` : "—"}</td>
@@ -291,6 +400,65 @@ export function TrainingSessionDetail({
           </div>
         )}
       </section>
+
+      <section className="flex flex-col gap-3 rounded-md border border-ink/10 p-4" aria-labelledby="session-log-heading">
+        <h2 id="session-log-heading" className="text-lg font-semibold text-ink">{t("logHeading")}</h2>
+        <p className="text-sm text-ink/70">{t("logIntro")}</p>
+        {deliveries.length === 0 ? (
+          <p className="text-sm text-ink/60">{t("logEmpty")}</p>
+        ) : (
+          <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
+            {deliveries.map((d) => (
+              <li key={d.module_id} className="flex flex-col gap-1 p-3 text-sm">
+                <span className="font-medium text-ink">
+                  {moduleTitle(d.module_id)} · {t("logMinutes", { minutes: d.duration_minutes })}
+                </span>
+                {d.notes ? <span className="whitespace-pre-wrap text-ink/80">{d.notes}</span> : null}
+              </li>
+            ))}
+          </ul>
+        )}
+        {sessionOpen && deliverable.length > 0 ? (
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-wrap items-end gap-3">
+              <Field label={t("logModuleLabel")} htmlFor="log-module">
+                <select id="log-module" value={logModuleId} onChange={(event) => setLogModuleId(event.target.value)} className={`${inputClass} min-w-[240px]`}>
+                  {deliverable.map((m) => (
+                    <option key={m.id} value={m.id}>
+                      {moduleTitle(m.id)}
+                    </option>
+                  ))}
+                </select>
+              </Field>
+              <Field label={t("logMinutesLabel")} htmlFor="log-minutes">
+                <input id="log-minutes" type="number" inputMode="numeric" min={1} max={600} value={logMinutes}
+                  onChange={(event) => setLogMinutes(event.target.value)} className={`${inputClass} w-28`} />
+              </Field>
+            </div>
+            <Field label={t("logNotesLabel")} htmlFor="log-notes">
+              <textarea id="log-notes" rows={3} maxLength={2000} value={logNotes} onChange={(event) => setLogNotes(event.target.value)} className={inputClass} />
+            </Field>
+            <div className="flex flex-wrap items-center gap-3">
+              <button type="button" disabled={logPending} onClick={handleLogDelivery}
+                className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60">
+                {logPending ? t("logging") : t("logAction")}
+              </button>
+              {logSaved ? <p role="status" className="text-sm text-success">{t("logSaved")}</p> : null}
+            </div>
+          </div>
+        ) : null}
+      </section>
+
+      {sessionOpen ? (
+        <section className="flex flex-col gap-2 rounded-md border border-ink/10 p-4">
+          <h2 className="text-lg font-semibold text-ink">{t("completeHeading")}</h2>
+          <p className="text-sm text-ink/70">{t("completeNote")}</p>
+          <button type="button" disabled={completePending} onClick={handleComplete}
+            className="self-start rounded-md border border-ink/20 px-4 py-2 text-sm font-medium disabled:opacity-60">
+            {completePending ? t("completing") : t("completeAction")}
+          </button>
+        </section>
+      ) : null}
 
       <section className="flex flex-col gap-2 rounded-md border border-ink/10 bg-ink/5 p-4">
         <h2 className="text-lg font-semibold text-ink">{t("summaryHeading")}</h2>

@@ -8,6 +8,7 @@ import type {
   CourseModuleFacilitatorNotes,
   CourseModuleVisual,
   CourseSession,
+  CourseSessionDelivery,
   CourseSessionEnrollment,
 } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/server";
@@ -67,7 +68,7 @@ export default async function TrainingSessionDetailPage({
 
   const moduleIds = (modules ?? []).map((m) => m.id);
 
-  const [{ data: visuals }, { data: facilitatorNotes }, { data: enrollments }] = await Promise.all([
+  const [{ data: visuals }, { data: facilitatorNotes }, { data: enrollments }, { data: deliveries }] = await Promise.all([
     moduleIds.length > 0
       ? supabase
           .from("course_module_visuals")
@@ -93,6 +94,12 @@ export default async function TrainingSessionDetailPage({
       .eq("session_id", id)
       .order("enrolled_at")
       .returns<CourseSessionEnrollment[]>(),
+    supabase
+      .from("course_session_deliveries")
+      .select("id, session_id, module_id, duration_minutes, notes, recorded_at")
+      .eq("session_id", id)
+      .order("recorded_at")
+      .returns<CourseSessionDelivery[]>(),
   ]);
 
   const enrolledBhwIds = (enrollments ?? []).map((e) => e.bhw_user_id);
@@ -139,6 +146,7 @@ export default async function TrainingSessionDetailPage({
       visuals={visuals ?? []}
       facilitatorNotes={facilitatorNotes ?? []}
       initialEnrollments={enrollments ?? []}
+      initialDeliveries={deliveries ?? []}
       courseProgress={courseProgress ?? []}
       moduleProgress={moduleProgress ?? []}
       testAttempts={testAttempts ?? []}

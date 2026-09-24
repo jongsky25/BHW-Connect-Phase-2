@@ -72,6 +72,7 @@ export function FacilitatorRoster({
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState<string | null>(null);
+  const [now] = useState(() => Date.now());
 
   if (!rows.length) {
     return <p className="text-sm text-ink/70">{pick(lang, "Walang aktibong BHW sa iyong lugar.", "No active BHWs in your area.")}</p>;
@@ -83,9 +84,22 @@ export function FacilitatorRoster({
     return { ind, counts };
   });
 
-  function start(rowId: string) {
-    setOpen(open === rowId ? null : rowId);
-    setIndicator(indicators[0]?.objective_index ?? 0);
+  // Follow-up: the latest rating below Kaya na, oldest first, then BHWs who
+  // finished every lesson here but have never been observed.
+  const followUp = rows.flatMap((r) =>
+    indicators.flatMap((ind, i) => {
+      const obs = latest.get(`${r.id}:${ind.objective_index}`);
+      return obs && obs.level !== "kaya_na" ? [{ row: r, number: i + 1, index: ind.objective_index, obs }] : [];
+    }),
+  ).sort((a, b) => a.obs.observed_at.localeCompare(b.obs.observed_at));
+  const ready = indicators.length && lessonCount
+    ? rows.filter((r) => r.lessonsDone >= lessonCount && !indicators.some((ind) => latest.has(`${r.id}:${ind.objective_index}`)))
+    : [];
+  const daysAgo = (at: string) => Math.max(0, Math.floor((now - new Date(at).getTime()) / 86_400_000));
+
+  function start(rowId: string, objectiveIndex?: number) {
+    setOpen(open === rowId && objectiveIndex === undefined ? null : rowId);
+    setIndicator(objectiveIndex ?? indicators[0]?.objective_index ?? 0);
     setLevel(null); setNote(""); setError(null); setSaved(null);
   }
 
@@ -125,6 +139,34 @@ export function FacilitatorRoster({
               </p>
             </div>
           ))}
+        </div>
+      )}
+      {(followUp.length > 0 || ready.length > 0) && (
+        <div className="flex flex-col gap-3 rounded-md border border-celebration bg-celebration/20 p-4" aria-labelledby="follow-up-heading">
+          <h3 id="follow-up-heading" className="font-semibold">{pick(lang, "Kailangang balikan", "Needs follow-up")}</h3>
+          {followUp.length > 0 && (
+            <ul className="flex flex-col gap-2 text-sm">
+              {followUp.map(({ row, number, index, obs }) => (
+                <li key={`${row.id}:${index}`} className="flex flex-wrap items-center justify-between gap-2">
+                  <span>
+                    <span className="font-medium">{row.name}</span>
+                    {` · ${pick(lang, "Ind.", "Ind.")} ${number}: ${OBSERVATION_LEVEL_LABELS[obs.level][lang].split(" (")[0]} · `}
+                    {daysAgo(obs.observed_at) === 0 ? pick(lang, "ngayong araw", "today") : pick(lang, `${daysAgo(obs.observed_at)} araw na ang nakalipas`, `${daysAgo(obs.observed_at)} days ago`)}
+                    {obs.note && <span className="block text-ink/70">{obs.note}</span>}
+                  </span>
+                  <button type="button" onClick={() => start(row.id, index)} className="min-h-[44px] rounded-md border border-ink/20 px-3 py-1 font-medium">
+                    {pick(lang, "Obserbahan muli", "Re-observe")}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          {ready.length > 0 && (
+            <p className="text-sm">
+              <span className="font-medium">{pick(lang, "Tapos na sa mga aralin, hindi pa naoobserbahan: ", "Finished the lessons, not yet observed: ")}</span>
+              {ready.map((r) => r.name).join(", ")}
+            </p>
+          )}
         </div>
       )}
       {saved && <p role="status" className="text-sm text-success">{pick(lang, `Naitala ang obserbasyon para kay ${saved}.`, `Observation recorded for ${saved}.`)}</p>}

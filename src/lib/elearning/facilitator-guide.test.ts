@@ -4,6 +4,7 @@ import {
   FACILITATOR_SECTION_IDS,
   latestObservations,
   parseFacilitatorNotes,
+  summariseTestItems,
   type CompetencyObservation,
 } from "./facilitator-guide";
 
@@ -33,5 +34,26 @@ describe("facilitator guide helpers", () => {
     expect(latest.get("b1:0")?.id).toBe("b");
     expect(latest.get("b1:1")?.id).toBe("d");
     expect(latest.size).toBe(2);
+  });
+
+  it("test items use each BHW's latest attempt per phase and put the hardest first", () => {
+    const q = (id: string, position: number) => ({ id, position, prompt_fil: id, prompt_en: id, correct_option_index: 0,
+      options: [{ fil: "tama", en: "right" }, { fil: "mali A", en: "wrong A" }, { fil: "mali B", en: "wrong B" }] });
+    const a = (bhw: string, phase: "pretest" | "posttest", at: string, picks: Record<string, number>) =>
+      ({ bhw_user_id: bhw, phase, taken_at: at, answers: Object.entries(picks).map(([question_id, selected_option_index]) => ({ question_id, selected_option_index })) });
+    const [first, second] = summariseTestItems([q("easy", 0), q("hard", 1)], [
+      a("b1", "pretest", "2026-09-01", { easy: 1, hard: 1 }),
+      a("b1", "pretest", "2026-09-02", { easy: 0, hard: 2 }), // retake replaces the first pretest
+      a("b2", "pretest", "2026-09-01", { easy: 0, hard: 1 }),
+      a("b1", "posttest", "2026-09-05", { easy: 0, hard: 2 }),
+      a("b2", "posttest", "2026-09-05", { easy: 0, hard: 0 }),
+    ]);
+    expect(first.question.id).toBe("hard");
+    expect(first.pretest).toEqual({ answered: 2, correct: 0, percent: 0 });
+    expect(first.posttest).toEqual({ answered: 2, correct: 1, percent: 50 });
+    expect(first.commonWrongOption).toBe(2); // from the posttest, not the pretest's option 1
+    expect(second.pretest).toEqual({ answered: 2, correct: 2, percent: 100 });
+    expect(second.commonWrongOption).toBeNull();
+    expect(summariseTestItems([q("x", 0)], [])[0].pretest.percent).toBeNull();
   });
 });

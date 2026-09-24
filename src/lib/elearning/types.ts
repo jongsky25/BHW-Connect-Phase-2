@@ -313,6 +313,16 @@ export type CourseSessionEnrollment = {
   users: { full_name: string; username: string } | null;
 };
 
+// 20260927000000_facilitation_log.sql: one subchapter delivered in a session.
+export type CourseSessionDelivery = {
+  id: string;
+  session_id: string;
+  module_id: string;
+  duration_minutes: number;
+  notes: string;
+  recorded_at: string;
+};
+
 // Facilitator's own-scope BHW picker (mirrors AdminUserRow's shape, trimmed
 // to what the enroll picker needs).
 export type BhwOption = {

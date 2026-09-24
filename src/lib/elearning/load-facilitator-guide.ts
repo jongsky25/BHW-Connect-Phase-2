@@ -1,11 +1,17 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { RosterRow } from "@/components/elearning/facilitator-roster";
 import type { GuideLesson } from "@/components/elearning/facilitator-guide";
-import type { CompetencyObservation } from "@/lib/elearning/facilitator-guide";
+import {
+  summariseTestItems,
+  type CompetencyObservation,
+  type TestItemAttempt,
+  type TestItemQuestion,
+} from "@/lib/elearning/facilitator-guide";
 import type {
   CourseLesson,
   CourseLessonFacilitatorNotes,
   CourseModuleFacilitatorNotes,
+  CourseSessionDelivery,
   StableLessonSection,
 } from "@/lib/elearning/types";
 
@@ -33,7 +39,7 @@ export async function loadSubchapterGuide(
   },
 ) {
   const revisionIds = lessons.map((l) => l.published_revision_id).filter((id): id is string => Boolean(id));
-  const [notes, revisions, users, progress, attempts, observations] = await Promise.all([
+  const [notes, revisions, users, progress, attempts, observations, deliveries] = await Promise.all([
     db.from("course_module_facilitator_notes").select("*").eq("module_id", moduleId).maybeSingle<CourseModuleFacilitatorNotes>(),
     revisionIds.length
       ? db.from("course_lesson_revisions").select("id,read_sections").in("id", revisionIds)
@@ -48,8 +54,11 @@ export async function loadSubchapterGuide(
     db.from("competency_observations")
       .select("id,bhw_user_id,observer_user_id,module_id,objective_index,level,note,observed_at")
       .eq("module_id", moduleId).order("observed_at", { ascending: false }).returns<CompetencyObservation[]>(),
+    // Where this subchapter has been run in the viewer's area (RLS-scoped).
+    db.from("course_session_deliveries").select("id,session_id,module_id,duration_minutes,notes,recorded_at")
+      .eq("module_id", moduleId).order("recorded_at", { ascending: false }).limit(5).returns<CourseSessionDelivery[]>(),
   ]);
-  for (const result of [notes, revisions, users, progress, attempts, observations]) {
+  for (const result of [notes, revisions, users, progress, attempts, observations, deliveries]) {
     if (result.error) throw new Error("Unable to load the facilitator guide");
   }
 
@@ -90,6 +99,7 @@ export async function loadSubchapterGuide(
     roster,
     rosterTruncated: all.length > ROSTER_LIMIT,
     observations: observations.data ?? [],
+    deliveries: deliveries.data ?? [],
   };
 }
 
@@ -98,4 +108,16 @@ export async function loadLessonGuide(db: SupabaseClient, revisionId: string) {
     .eq("revision_id", revisionId).maybeSingle<CourseLessonFacilitatorNotes>();
   if (error) throw new Error("Unable to load the facilitator guide");
   return data;
+}
+
+export async function loadChapterTestItems(db: SupabaseClient, courseId: string) {
+  const [questions, attempts] = await Promise.all([
+    db.from("course_test_questions").select("id,position,prompt_fil,prompt_en,options,correct_option_index")
+      .eq("course_id", courseId).order("position").returns<TestItemQuestion[]>(),
+    db.from("course_test_attempts").select("bhw_user_id,phase,taken_at,answers").eq("course_id", courseId)
+      .returns<TestItemAttempt[]>(),
+  ]);
+  if (questions.error || attempts.error) throw new Error("Unable to load test results");
+  const bhws = new Set((attempts.data ?? []).map((a) => a.bhw_user_id));
+  return { items: summariseTestItems(questions.data ?? [], attempts.data ?? []), bhwCount: bhws.size };
 }

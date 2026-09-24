@@ -29,6 +29,37 @@ touch the guide tables.
 lesson's observation indicator), with an "As the BHW sees it" tab
 (`?view=lesson`) showing the unchanged read-only preview.
 
+## Facilitation follow-through
+
+Added by migration `20260927000000_facilitation_log.sql`:
+
+- **Attendance, the session log, and closing a session**
+  (`/training-sessions/:id`, for the facilitator who ran the session).
+  - Mark each enrolled BHW as attended or absent.
+  - Log each subchapter the session delivered, with minutes (1–600) and
+    notes for the next facilitator. Logging the same subchapter again
+    corrects the entry.
+  - Close the session. This requires at least one logged subchapter and
+    every enrolled BHW's attendance marked. After that, attendance and the
+    log can no longer change.
+  - Writes go only through `rpc_course_session_set_attendance`,
+    `rpc_course_session_log_delivery` and `rpc_course_session_complete`.
+    Each is limited to the session's own active facilitator and writes an
+    audit event.
+- **Recent runs in your area** (subchapter guide, section 3): the last five
+  logged deliveries of that subchapter by facilitators whose scope the
+  viewer covers, with their notes.
+- **Needs follow-up** (subchapter guide, section 4):
+  - every indicator whose latest rating is Kailangan pa ng practice or
+    Hindi pa, oldest first, with a "Re-observe" button that opens the form
+    on that indicator
+  - BHWs who finished every lesson but have never been observed
+- **Where BHWs in your area struggle** (chapter page, facilitators and
+  admins). For each pretest/posttest question: the percent correct in each
+  phase, from each BHW's latest attempt, and the most common wrong answer.
+  That answer comes from the posttest once any posttest exists. The
+  hardest questions are listed first.
+
 ## Standard lesson guide
 
 Every lesson's facilitator notes follow one 12-section template, enforced by
@@ -61,7 +92,7 @@ redefined to clean up the new table.
 
 ## Release steps
 
-1. Apply the migration.
+1. Apply the migrations to both Supabase projects (see `docs/deploy-runbook.md`).
 2. Review the drafted lesson guides, then re-run
    `npm run training:load -- --mode lessons ...` for each converted
    subchapter. Notes are part of the revision hash, so changed notes stage
@@ -73,6 +104,7 @@ redefined to clean up the new table.
 
 - `node scripts/tests/training-foundation-replay.mjs` (disposable PostgreSQL;
   see `docs/bhw-reference-foundation.md`) runs `facilitator-guide-scenarios.mjs`
-  after the foundation scenarios. It covers scope, rejection cases,
-  append-only history and audit.
+  and `facilitation-log-scenarios.mjs` after the foundation scenarios.
+  Together they cover scope, rejection cases, append-only history, session
+  closing rules and audit.
 - `npx vitest run src/app/training src/components/elearning src/lib/elearning scripts/tests`.

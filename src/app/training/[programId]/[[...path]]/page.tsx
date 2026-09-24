@@ -4,14 +4,14 @@ import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
-import {LessonFacilitatorGuide,SubchapterFacilitatorGuide} from '@/components/elearning/facilitator-guide';
+import {ChapterTestInsights,LessonFacilitatorGuide,SubchapterFacilitatorGuide} from '@/components/elearning/facilitator-guide';
 import {CardProgress,subchapterSegments} from '@/components/progress/card-progress';
 import {ChapterSteps} from '@/components/progress/chapter-steps';
 import {ManualSummary} from '@/components/progress/manual-summary';
 import {ProgressBar} from '@/components/progress/progress-bar';
 import {LessonStatus,StatusChip} from '@/components/progress/status-chip';
 import {loadManualProgress} from '@/lib/progress/load-manual-progress';
-import {loadLessonGuide,loadSubchapterGuide} from '@/lib/elearning/load-facilitator-guide';
+import {loadChapterTestItems,loadLessonGuide,loadSubchapterGuide} from '@/lib/elearning/load-facilitator-guide';
 import {createClient} from '@/lib/supabase/server';
 import {getRequestAppUser,getRequestAuthUser,getRequestFeatureFlags} from '@/lib/supabase/request';
 import type {CourseLesson,CourseLessonRevision,CourseLessonProgress,CourseLessonResume,CourseModule,TrainingProgramChapter} from '@/lib/elearning/types';
@@ -121,6 +121,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         .eq('course_id',course.id).eq('bhw_user_id',actor.id).maybeSingle():{data:null,error:null};
       if(certificateError)throw new Error('Unable to load your certificate');
       const mine=(await myProgress)?.chapters.find(x=>x.id===chapter.id);
+      const testItems=facilitator?await loadChapterTestItems(db,course.id):null;
       content=<>
         {mine && <section className="flex flex-col gap-4 rounded-xl border border-ink/15 p-5" aria-labelledby="chapter-progress">
           <div className="flex flex-wrap items-center justify-between gap-2">
@@ -142,6 +143,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         {program.content_key==='bhw-reference-manual' && chapter.chapter_key==='chapter-1' && [communication,problems,safety,practices].filter(m=>!modules?.some(row=>row.position===m.position)).map(m=><div key={m.id} className="rounded-xl border border-ink/15 p-5">
           <h2 className="text-lg font-semibold">1.{m.position+1} {title(m)}</h2><div className="mt-2"><StatusChip state="unavailable" locale={loc}/></div>
         </div>)}</div>
+        {testItems && <ChapterTestInsights lang={loc} {...testItems}/>}
         {readOnly?<p>{text('Preview lamang. Hindi binabago ang progreso ng mga mag-aaral.','Preview only. Learner progress is not changed.')}</p>:
           <section className="rounded-xl border border-ink/15 p-5" aria-label={text('Pagtatasa at sertipiko','Assessment and certificate')}>
             <h2 className="font-semibold">{text('Pagtatasa at sertipiko ng kabanatang ito','This chapter’s assessment and certificate')}</h2>
