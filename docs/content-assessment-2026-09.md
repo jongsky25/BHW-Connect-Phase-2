@@ -116,7 +116,7 @@ stage new draft revisions when loaded.
 | S2 | Fixed in repo; SME to confirm PhilHealth terms | "Automatically included" no longer means "free". Direct contributors still pay premiums. Primary care means *registering* with a provider of choice, not being "assigned" one. Referral is what the law "calls for", with local variation. The route from barangay to health board goes through the midwife and the municipal/city health office. |
 | S3 | Fixed; checked against RA 7883 text | The 1% cap is nationwide (§5). The subsistence allowance applies only at isolated BHS (§6b). The hazard allowance amount is set locally (§6a). "Owed" is replaced by "benefits the law provides… set locally". The three roles are attributed to the DOH BHW Reference Manual, not RA 7883, which does not name them. The BHWE "two years of college" condition is not in RA 7883 §6d; it is flagged for a CSC source. |
 | S4 | Fixed | Accreditation comes from the local health board. The punong barangay oversees BHWs *administratively*; the midwife remains the technical supervisor. |
-| S5 | **Decision needed** | See below. |
+| S5 | Live UHC item corrected; versioned bank still open | See below. |
 | S6 | Fixed for S1–S4 claims | The chatbot entries now match the lessons. A claim registry (standard §10 G1) is still needed to stop the drift recurring. |
 | S7 | Open | The claims below need a named reviewer before pilot use. |
 
@@ -129,12 +129,29 @@ at the health center"*), and still uses the old wording at positions 2
 
 `training:load --mode assessments` deliberately refuses to change a loaded
 bank ("version it before changing historical questions",
-`scripts/training-load.mjs:248`), so the repo fix cannot reach it. Two options:
-- a reviewed one-off data correction, accepting that 5 historical attempts
-  were scored on the old wording;
-- a versioned bank (per-item module tag plus active/retired items, with
-  `rpc_course_test_submit` scoring only active items on published modules).
-  This also fixes S5.
+`scripts/training-load.mjs:248`), so the repo fix cannot reach it.
+
+**One-off correction applied (24 September 2026, at the owner's request).**
+- Row `course_test_questions.id = b30cfb2f-b9c0-46c3-aca3-fd354f3daf7c`
+  (course `73e0edda-…`, position 9) had its option 1 text replaced in both
+  languages with the repo wording: *"Consultation can be covered if the
+  resident is registered with a PhilHealth primary care provider, but not
+  every service is free."*
+- The prompt, the other three options and `correct_option_index` (1) were
+  left unchanged.
+- The update was guarded on the old text and changed exactly one row.
+- The 5 historical attempts keep their stored scores. One of them had chosen
+  this option under its old wording; its meaning (the "covered" answer) is
+  the same slot.
+- The PhilHealth wording is still subject to SME confirmation (queue item 2).
+
+**Still open.**
+- Positions 2 and 16 still carry the old wording: "named in RA 7883" and "a
+  benefit that's owed". Neither changes which answer is correct.
+- The versioned bank (per-item module tag plus active/retired items, with
+  `rpc_course_test_submit` scoring only active items on published modules)
+  is still needed. It is what stops S5 on a project seeded with all 38
+  items.
 
 **SME confirmation queue (S7).**
 1. Milk Code implementing rules (AO 2006-0012): confirm that the refusal
