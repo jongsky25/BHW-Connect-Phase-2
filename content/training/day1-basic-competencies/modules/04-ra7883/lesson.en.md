@@ -5,12 +5,12 @@ BHW mention a "hazard allowance" — but she didn't know whether she too
 was entitled to it, and she was too embarrassed to ask. "I'm just a
 volunteer, maybe I'll look greedy if I ask about money," she thought.
 
-The truth is, goodwill alone is not the basis of Josie's work — it has
-a legal basis, and that same law includes things she is owed the right
-to know, not out of greed, but because it's her right to know them.
+The truth is, goodwill alone is not the basis of Josie's work — it has a
+legal basis, and that same law provides benefits she has every right to
+ask about — not out of greed, but because it's her right to know them.
 
 :::takeaway
-Asking about what you're owed isn't greed — it's part of being a
+Asking about your benefits isn't greed — it's part of being a
 responsible BHW.
 :::
 
@@ -45,15 +45,20 @@ of RA 7883.
 ## [concept/core] The benefits under RA 7883 {m4.benefits, m4.registration-requirement, m4.bhw-cap}
 
 RA 7883 names specific benefits a BHW may receive: hazard allowance,
-subsistence allowance, training and career enrichment programs, civil
-service eligibility, free legal services, and priority access to loans.
+subsistence allowance (for BHWs who serve at isolated barangay health
+stations), training and career enrichment programs, civil service
+eligibility, free legal services, and priority access to loans. The
+amounts are set locally: the hazard allowance by the local health board
+and the local peace and order council, and the subsistence allowance by
+the LGU.
 
 There is a condition before becoming eligible for these: a BHW must be
-registered with the local health board of the city or municipality
-where they render service. There is also a limit: the total number of
-BHWs in a community must not exceed one percent (1%) of its total
-population — so registration is not simply given to anyone, and getting
-it right matters.
+registered with the local health board of the city or municipality where
+they render service. There is also a limit: the total number of BHWs
+nationwide must not exceed one percent (1%) of the country's population,
+and the DOH sets the ideal number of BHWs per household — so
+registration is not simply given to anyone, and getting it right
+matters.
 
 :::visual 1
 :::takeaway
@@ -127,7 +132,7 @@ Following up calmly and with a specific question works better than a
 complaint with no specific ask.
 :::
 
-## [contrast/deep] Wrong versus right: asking for what you're owed
+## [contrast/deep] Wrong versus right: following up on a benefit
 
 **Wrong**: Josie waited six months for her accreditation but never
 asked, because "maybe I'll look impatient." She eventually found out

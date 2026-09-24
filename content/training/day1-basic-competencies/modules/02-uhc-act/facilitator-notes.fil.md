@@ -71,6 +71,4 @@ na paliwanag ay mas malakas kaysa sa alinmang pagtatama.
 ## Susi sa sagot ng retrieval check
 
 1. **"Nabalitaan ni Mang Ernesto na 'libre na ang konsulta.'..."** →
-   Sinasakop na ng PhilHealth ang outpatient consultation, kaya
-   makakapunta siya sa health center nang hindi nag-aalala sa bayad doon.
-   (Hindi libre ang lahat, at hindi rin totoong walang nabago.)
+   Maaaring sakop ang konsulta kung nakarehistro siya sa primary care provider ng PhilHealth, pero hindi libre ang lahat ng serbisyo. (Hindi totoong libre ang lahat, at hindi rin totoong walang nabago.)

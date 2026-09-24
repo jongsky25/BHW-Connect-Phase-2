@@ -21,10 +21,11 @@ enacted in February 2019. Its goal: ensure that every Filipino has access
 to affordable, quality health service whenever they need it — without
 having to suffer hardship over the cost.
 
-One of the biggest steps toward that: every Filipino is now automatically
-covered by PhilHealth. There is no longer a need to apply or pay a
-premium alone to be covered — every Filipino, from birth, is already a
-member.
+One of the biggest steps toward that: every Filipino is now
+automatically included in PhilHealth, the National Health Insurance
+Program. That does not make every service free. People with income, such
+as employees and the self-employed, still pay their premium, and some
+benefits can only be used after registering with an accredited provider.
 
 :::takeaway
 UHC's direction is clear: from a system that waits for someone to pay, to
@@ -36,13 +37,14 @@ one that guarantees service everyone can reach.
 UHC is not just a promise on paper — four things change at once in how
 an ordinary Filipino experiences asking for health help.
 
-First, PhilHealth now covers **outpatient consultation**, not only
-hospital confinement. Second, every Filipino is assigned their own
-**primary care provider** — the first person to approach, instead of
-whoever happens to be available. Third, there is a clearer, more
+First, PhilHealth benefits now include **outpatient consultation**, not
+only hospital confinement, for people registered with an accredited
+provider. Second, every Filipino is to register with a **primary care
+provider** of their choice — the first place to go, instead of whoever
+happens to be available. Third, the law calls for a clearer, more
 organized **referral system** between the barangay health station, the
-health center, and the hospital, so a patient no longer simply gets lost
-in the middle of the process. Fourth, the DOH brought its previously
+health center, and the hospital, so a patient does not get lost in the
+middle of the process. Fourth, the DOH brought its previously
 separate health programs together into one system, instead of each
 programme running on its own.
 
@@ -59,8 +61,8 @@ them arrive at the same pace in every barangay — some are already felt,
 some are not yet.
 
 Try it: think about your own barangay. Is everyone there already
-automatically covered by PhilHealth? Do you know anyone with an assigned
-primary care provider? If someone needs a referral, is the process
+automatically covered by PhilHealth? Do you know anyone registered with
+a primary care provider? If someone needs a referral, is the process
 clear, or is there still confusion about where to go?
 
 It is not a failure if your answer to some of these is "not yet" — that
@@ -76,20 +78,21 @@ actually reached your own barangay, and which have not.
 ? Mang Ernesto heard that "consultations are free now." Which of the
   following is BHW Beth's most accurate explanation?
 - All medicine and hospitalization are now free because of UHC
-+ PhilHealth now covers outpatient consultation, so he can go to the
-  health center without worrying about the cost there
++ Consultation can be covered if he is registered with a PhilHealth
+  primary care provider, but not every service is free
 - That's not true, UHC changed nothing about payment
-> Correct! UHC expands PhilHealth's coverage to include outpatient
-  consultation — that does not mean everything is free, but it is a
-  major step toward lightening the cost.
+> Correct! UHC widens PhilHealth to include outpatient consultation for
+  people registered with a primary care provider. It does not make
+  everything free, so Beth helps him check his registration instead of
+  promising a free visit.
 :::
 
 ## [concept/standard] The health board and the BHW's part in moving it forward {m2.health-board, m2.bhw-skill, m2.health-promotion, m2.hepo-designation, m2.competency}
 
 UHC also brings a new partner: the **provincial or city health board**,
 tasked with helping organize and manage the health system at the
-provincial or city level. This is also where suggestions and concerns
-from the barangay travel to, once they are raised.
+provincial or city level. Suggestions and concerns from the barangay can
+reach it, through the midwife and the municipal or city health office.
 
 Because of these changes, a higher level of skill is also expected of
 BHWs, and health promotion within communities is intensified. This is

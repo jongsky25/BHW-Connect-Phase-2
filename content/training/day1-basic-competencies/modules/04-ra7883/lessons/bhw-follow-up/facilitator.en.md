@@ -23,7 +23,7 @@ Ask the group: *"Have you ever waited a long time on a process with no follow-up
 1. **The question (Read "When the process is slow", first slide).** Read: *"You now know the whole process — but what do you do if months pass with no word?"* Ask the group what they would normally do.
 2. **Vague versus specific.** Write both questions from the lesson on manila paper: *"When will this be done?"* and *"What's the status of my application, and is there anything else I need to submit?"* Ask: *"Which one is easier for the staff to answer? Why?"*
 3. **Calm first.** Point to the slide: pause before following up, ask about status and missing documents, clarify the next step. Ask: *"What do you do to calm yourself before you walk in?"*
-4. **Wrong (Read "Wrong versus right: asking for what you're owed", second slide).** Read the Wrong story. Ask: *"What did Josie's silence cost her?"* The answer is six months, and a missing document that an earlier follow-up would have caught.
+4. **Wrong (Read "Wrong versus right: following up on a benefit", second slide).** Read the Wrong story. Ask: *"What did Josie's silence cost her?"* The answer is six months, and a missing document that an earlier follow-up would have caught.
 5. **Right.** Read the Right story. Ask: *"What did Josie do differently?"* She followed up regularly with a specific question, reminded them calmly, and resubmitted the missing document right away. Note that "every two months" is what Josie did, not a rule.
 6. **Self-check.** Give the check question (*"What is a constructive follow-up?"*). Let the group discuss before you reveal the answer.
 7. **Role-play** (see Practice activity). Show the difference between a calm question and a complaint.
@@ -54,7 +54,7 @@ The BHW has waited months with no word. They must, calmly: greet, ask about the 
 
 ## [answer-key] Self-check answer key
 
-This lesson has one check. It appears after the Read section "Wrong versus right: asking for what you're owed" and again on that section's slide. It is the same check, so it is covered once here. The first section, "When the process is slow", has no check.
+This lesson has one check. It appears after the Read section "Wrong versus right: following up on a benefit" and again on that section's slide. It is the same check, so it is covered once here. The first section, "When the process is slow", has no check.
 
 - **"What is a constructive follow-up?"** → **Calmly ask about status, missing documents and the next step.** This is what the lesson recommends: calm yourself first, then ask a specific question. It is also what saved time in Josie's "Right" story.
   - *"Become angry before checking the reason"* is wrong. The lesson says to calm yourself first before frustration takes over. A complaint with no specific ask is less likely to be answered, and the reason for a delay, such as a missing document, is often something you can fix.

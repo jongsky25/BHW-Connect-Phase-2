@@ -8,7 +8,7 @@ Habang nakikinig, naisip ni BHW Marites: hindi lang ito tanong tungkol sa ubo. K
 
 Ang gawain ng BHW ay hindi umiikot sa iisang tao lamang. Apat na ugnayan ang humuhubog sa araw-araw na trabaho:
 
-Ang **komunidad** — ang mga pamilyang tulad ni Aling Nena, kung saan naganap ang unang hakbang ng pangangalaga. Ang **midwife o Rural Health Unit (RHU)** — ang teknikal na susuportang kaakibat kapag may kailangang i-refer o may klinikal na tanong. Ang **barangay officials** — ang kasosyo sa suporta, akreditasyon, at mga pasilidad tulad ng barangay health station. At ang **kapwa BHW** — ang kasamahang pinagbabahaginan ng karanasan at tamang kaalaman.
+Ang **komunidad** — ang mga pamilyang tulad ni Aling Nena, kung saan naganap ang unang hakbang ng pangangalaga. Ang **midwife o Rural Health Unit (RHU)** — ang teknikal na susuportang kaakibat kapag may kailangang i-refer o may klinikal na tanong. Ang **barangay officials** — ang kasosyo sa suporta at mga pasilidad tulad ng barangay health station. (Ang akreditasyon mismo ay galing sa local health board ng lungsod o munisipyo, gaya ng ipinaliwanag sa Modyul 4.) At ang **kapwa BHW** — ang kasamahang pinagbabahaginan ng karanasan at tamang kaalaman.
 
 Apat itong magkaibang ugnayan, ngunit palaging magkasama sa isang karaniwang araw ng BHW.
 

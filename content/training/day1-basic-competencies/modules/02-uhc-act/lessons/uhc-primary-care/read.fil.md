@@ -6,6 +6,6 @@ Itinataguyod ng UHC ang primary care, kasama ang outpatient benefits, pagpapareh
 
 Bumalik tayo kay Mang Ernesto. Sa apat na pagbabagong natutunan mo, hindi lahat ay parehong bilis dumating sa bawat barangay — may bago nang naramdaman, may hindi pa lubos.
 
-Subukan mo: isipin ang sariling barangay mo. Saklaw na ba ng PhilHealth nang awtomatiko ang lahat dito? May kilala ka bang may nakatalagang primary care provider? Kung may kailangang i-refer, malinaw ba ang proseso, o nalilito pa rin kung saan dapat pumunta?
+Subukan mo: isipin ang sariling barangay mo. Saklaw na ba ng PhilHealth nang awtomatiko ang lahat dito? May kilala ka bang nakarehistro na sa primary care provider? Kung may kailangang i-refer, malinaw ba ang proseso, o nalilito pa rin kung saan dapat pumunta?
 
 Hindi kahihiyan kung "hindi pa lubos" ang sagot mo sa ilan dito — iyon mismo ang unang hakbang: alamin muna kung alin ang totoong nangyayari sa iyong lugar bago mo isipin kung ano ang dapat pang gawin.

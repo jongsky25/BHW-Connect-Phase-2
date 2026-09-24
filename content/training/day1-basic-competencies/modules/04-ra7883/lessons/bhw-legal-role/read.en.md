@@ -2,7 +2,7 @@
 
 BHW Josie has been volunteering for six months. She once heard another BHW mention a "hazard allowance" — but she didn't know whether she too was entitled to it, and she was too embarrassed to ask. "I'm just a volunteer, maybe I'll look greedy if I ask about money," she thought.
 
-The truth is, goodwill alone is not the basis of Josie's work — it has a legal basis, and that same law includes things she is owed the right to know, not out of greed, but because it's her right to know them.
+The truth is, goodwill alone is not the basis of Josie's work — it has a legal basis, and that same law provides benefits she has every right to ask about — not out of greed, but because it's her right to know them.
 
 ## [section-2] Where the BHW's duty comes from
 

@@ -96,9 +96,59 @@ One of those disagreements teaches a policy violation.
 | S2 | **UHC "free / no premium" contradiction.** The new lesson correctly says *"Hindi nito ibig sabihing libre ang bawat serbisyo"*. The test keys the opposite as correct, and the legacy lesson says no premium is needed. | `test-questions.json:108`; `02-uhc-act/lesson.fil.md:28`; `02-uhc-act/lessons/uhc-coverage/read.fil.md:9` | One reviewed claim. Fix the test item, the legacy lesson and the UHC chatbot entries. Hold day1-m2 chatbot entries back until then. |
 | S3 | **RA 7883 claims are overstated.** Subsistence allowance is presented as general, but applies to isolated BHS only. Benefits are "owed", but in practice depend on the LGU. The 1% cap is stated "per community", but the Act's cap is national. BHWE rests on a CSC rule that is not in `sources.json`. | `04-ra7883/lesson.en.md:48`; `04-ra7883/module.json`; `04-ra7883/coverage.json` | Use entitlement language ("may receive, subject to LGU…"). Add the IRR and CSC sources. |
 | S4 | **Module 5 contradicts Module 4 on who accredits BHWs** (barangay officials vs the local health board). Module 5 also merges administrative oversight (punong barangay) with technical supervision (midwife/PHN). | `05-bhw-at-barangay/lessons/bhw-relationships/read.en.md`; chatbot `d1m5-four-relationships` | Fix the text, and separate the two kinds of supervision. |
-| S5 | **The test covers content learners cannot open.** 18 of 38 items are on modules 06–09. The manual shows those modules as *unavailable* unless they are loaded (`src/app/training/[programId]/[[...path]]/page.tsx:143`). The pass mark is 80%. | `test-questions.json`, `course.json` | Map every item to a published lesson. Do not score items on unpublished lessons. |
+| S5 | **The test bank covers content learners cannot open.** 18 of 38 items are on modules 06–09. The manual shows those modules as *unavailable* unless they are loaded (`src/app/training/[programId]/[[...path]]/page.tsx:143`). The pre/post test has no pass mark (the 80% `quiz_passing_percent` applies only to module quizzes), but `rpc_course_test_submit` scores against every bank row. So on a project seeded with all 38, the learning-gain figure would count unopenable content as wrong. | `test-questions.json`; `supabase/migrations/20260807000000_inc19_training_sessions.sql:634` | Tag every item with its module. Score only items whose module is published, which needs a versioned bank (see §3.1). |
 | S6 | **Chatbot entries are tagged `tier: "cited"` but carry the old, uncorrected claims.** None of the lesson-level corrections reached `qa-entries.json`. | `modules/*/qa-entries.json` (e.g. `d1m1-three-roles`) | Generate chatbot entries and test items from the same reviewed claims as the lessons. |
 | S7 | **Nothing has independent SME sign-off.** All 26 lesson guides end "Draft for review". 20 of 32 lesson assets are `draft`. The 1.1 approval was by the repository owner only. | `lessons/*/facilitator.*.md` §sources-review; `docs/bhw-reference-content-approval.md` | Two-key sign-off: author plus a named MHO/PHN, and legal review for entitlements. |
+
+### 3.1 Fix status (September 2026)
+
+Content fixes for S1–S4 and S6 are made in the repository. The claims now
+match across the Read text, slides and narration, the older module lessons,
+the facilitator guides, the chatbot entries, `coverage.json` and the test
+bank. Narration for the 16 changed section-language pairs was re-rendered.
+No module 01 lesson changed, so the owner-approved subchapter 1.1 hashes
+still hold. Eleven lessons in modules 02–05 now hash differently and will
+stage new draft revisions when loaded.
+
+| # | Status | What changed |
+|---|---|---|
+| S1 | Fixed; SME to confirm wording | Corazon declines, offers the milk company nothing, promises nothing, and tells the midwife the same day. The "Right" example now cites the Milk Code, not AO 2015-0053. The chatbot's Milk Code answer bars gifts and samples outright and says any donation offer goes to the supervisor. |
+| S2 | Fixed in repo; SME to confirm PhilHealth terms | "Automatically included" no longer means "free". Direct contributors still pay premiums. Primary care means *registering* with a provider of choice, not being "assigned" one. Referral is what the law "calls for", with local variation. The route from barangay to health board goes through the midwife and the municipal/city health office. |
+| S3 | Fixed; checked against RA 7883 text | The 1% cap is nationwide (§5). The subsistence allowance applies only at isolated BHS (§6b). The hazard allowance amount is set locally (§6a). "Owed" is replaced by "benefits the law provides… set locally". The three roles are attributed to the DOH BHW Reference Manual, not RA 7883, which does not name them. The BHWE "two years of college" condition is not in RA 7883 §6d; it is flagged for a CSC source. |
+| S4 | Fixed | Accreditation comes from the local health board. The punong barangay oversees BHWs *administratively*; the midwife remains the technical supervisor. |
+| S5 | **Decision needed** | See below. |
+| S6 | Fixed for S1–S4 claims | The chatbot entries now match the lessons. A claim registry (standard §10 G1) is still needed to stop the drift recurring. |
+| S7 | Open | The claims below need a named reviewer before pilot use. |
+
+**Live pilot database (`ltzicxyefizxoqhfuuzc`), read-only check.** It holds a
+20-item bank for modules 01–05 (not the 38 in the repo) and 5 recorded
+attempts. So S5 does not occur there today. But that bank still keys the old
+UHC answer as correct (position 9: *"…nothing to worry about regarding cost
+at the health center"*), and still uses the old wording at positions 2
+(three roles "named in RA 7883") and 16 ("a benefit that's owed").
+
+`training:load --mode assessments` deliberately refuses to change a loaded
+bank ("version it before changing historical questions",
+`scripts/training-load.mjs:248`), so the repo fix cannot reach it. Two options:
+- a reviewed one-off data correction, accepting that 5 historical attempts
+  were scored on the old wording;
+- a versioned bank (per-item module tag plus active/retired items, with
+  `rpc_course_test_submit` scoring only active items on published modules).
+  This also fixes S5.
+
+**SME confirmation queue (S7).**
+1. Milk Code implementing rules (AO 2006-0012): confirm that the refusal
+   wording and "no gifts or samples; donation offers go to the supervisor"
+   match the current rule.
+2. PhilHealth: the current name and registration rules for the primary care
+   / outpatient benefit (Konsulta; reportedly renamed YAKAP in 2025), and
+   premium obligations for direct contributors.
+3. The actual route from the barangay to the provincial/city health board
+   in the pilot LGU.
+4. The CSC issuance behind the four BHWE conditions. Add it to
+   `sources.json`.
+5. The RA 7883 IRR on registration, accreditation and hazard allowance
+   procedure. Add it to `sources.json`.
 
 ## 4. Findings by perspective
 
@@ -306,7 +356,7 @@ One of those disagreements teaches a policy violation.
 - **The pre/post design is flawed.**
   - Identical forms before and after, so the retest effect is uncorrected.
   - No item analysis.
-  - The 80% cut score has no stated basis.
+  - The 80% module-quiz pass mark has no stated basis, and the pre/post test has no success threshold at all (it records a gain only).
 - **Kirkpatrick levels:**
   - **Level 1 (reaction):** absent.
   - **Level 2 (learning):** the weak test above.

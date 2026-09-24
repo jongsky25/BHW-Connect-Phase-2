@@ -20,11 +20,12 @@ ugnayan ang humuhubog sa araw-araw na trabaho:
 
 Ang **komunidad** — ang mga pamilyang tulad ni Aling Nena, kung saan
 naganap ang unang hakbang ng pangangalaga. Ang **midwife o Rural Health
-Unit (RHU)** — ang teknikal na susuportang kaakibat kapag may
-kailangang i-refer o may klinikal na tanong. Ang **barangay officials**
-— ang kasosyo sa suporta, akreditasyon, at mga pasilidad tulad ng
-barangay health station. At ang **kapwa BHW** — ang kasamahang
-pinagbabahaginan ng karanasan at tamang kaalaman.
+Unit (RHU)** — ang teknikal na susuportang kaakibat kapag may kailangang
+i-refer o may klinikal na tanong. Ang **barangay officials** — ang
+kasosyo sa suporta at mga pasilidad tulad ng barangay health station.
+(Ang akreditasyon mismo ay galing sa local health board ng lungsod o
+munisipyo, gaya ng ipinaliwanag sa Modyul 4.) At ang **kapwa BHW** — ang
+kasamahang pinagbabahaginan ng karanasan at tamang kaalaman.
 
 Apat itong magkaibang ugnayan, ngunit palaging magkasama sa isang
 karaniwang araw ng BHW.
@@ -88,9 +89,11 @@ Bukod sa apat na ugnayan, may dalawa pang kakilala sa loob mismo ng
 barangay na dapat malaman ni BHW Marites.
 
 Ang **punong barangay** ay ka-partner ng mga BHW sa pagpapatupad ng
-mandato nitong magbigay ng basic health services, at nangangasiwa sa
-mga BHW. Siya rin ang nagdedesisyon kung paano gagamitin ang budget ng
-barangay — kasama ang pagbibigay ng honorarium para sa mga BHW.
+mandato nitong magbigay ng basic health services, at administratibong
+nangangasiwa sa mga BHW — sa mismong gawaing pangkalusugan, ang midwife
+pa rin ang teknikal na supervisor ng BHW. Siya rin ang nagdedesisyon
+kung paano gagamitin ang budget ng barangay — kasama ang pagbibigay ng
+honorarium para sa mga BHW.
 
 Ang **kagawad sa kalusugan** naman ang tagapagtaguyod sa konseho ng
 barangay ng mga polisiya at resolusyong pangkalusugan, at miyembro rin

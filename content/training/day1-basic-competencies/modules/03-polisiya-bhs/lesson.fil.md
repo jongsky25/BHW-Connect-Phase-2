@@ -22,9 +22,11 @@ Corazon.
 
 Ayon sa **Executive Order 51, ang Philippine Milk Code of 1986**,
 ipinagbabawal ang pag-a-advertise ng milk formula o milk substitute sa
-loob ng health facilities. Bawal ding tumanggap ng pera o regalo mula
-sa mga kumpanya ng gatas kapalit ng pag-promote ng kanilang produkto.
-Sa halip, inaasahan na ang mga BHW ay nagpoprotekta at nagsusulong ng
+loob ng health facilities. Bawal ding tumanggap ang health worker ng
+pera, regalo, o sample mula sa kumpanya ng gatas, at hindi kailanman
+nakikipag-ayos ang BHW ng anumang donasyon o suporta mula rito —
+idinudulog sa midwife o supervisor ang ganitong alok. Sa halip,
+inaasahan na ang mga BHW ay nagpoprotekta at nagsusulong ng
 breastfeeding.
 
 Kaparehong prinsipyo ang ginagamit ng **DOH Administrative Order No.
@@ -85,15 +87,18 @@ personal na pag-atake?
 
 Ang tamang paraan: kilalanin muna ang mabuting intensyon ng bisita,
 saka ipaliwanag ang polisiya nang direkta at malinaw — hindi
-pagpapaliban, hindi pagpapanggap na hindi alam. "Naiintindihan ko po
-ang gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng
-milk substitute sa loob ng BHS, ayon sa Milk Code. Kung gusto ninyong
-tumulong, mas puwede po kaming tumanggap ng suporta para sa lactation
-station namin."
+pagpapaliban, hindi pagpapanggap na hindi alam. "Naiintindihan ko po ang
+gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng milk
+substitute sa loob ng BHS, ayon sa Milk Code. Hindi rin po kami puwedeng
+tumanggap ng sample, regalo, o iba pang alok mula sa kumpanya ng gatas.
+Sasabihin ko po sa aming midwife na dumaan kayo." Hindi nagmumungkahi si
+Corazon ng ibang paraan para tumulong ang kumpanya, at wala siyang
+ipinapangakong kapalit. Sa araw ding iyon, sinasabihan niya ang midwife
+tungkol sa pagbisita.
 
 :::takeaway
 Ang pinakamalakas na pagtanggi ay hindi galit — ito ay malinaw, may
-batayan, at nagbubukas pa ng ibang paraan ng pakikipagtulungan.
+batayan, walang kasunduan, at ipinaaalam sa midwife.
 :::
 
 ## [concept/standard] Iba pang polisiya at episyenteng paggamit ng resources {m3.other-topics, m3.competency}
@@ -140,10 +145,9 @@ kinatawan ng kumpanya ng gamot, dahil "libre naman, at baka
 magkasala pa ako kung tatanggihan ko." Ipinamigay niya ang mga sample
 sa mga pasyente nang walang paliwanag kung bakit ito ang inirekomenda.
 
-**Tama**: Magalang na tumanggi si Corazon, ipinaliwanag ang batayan
-mula sa AO 2015-0053, at inalok ang bisita ng ibang paraan ng
-pakikipagtulungan — hindi promosyon, kundi suporta sa lactation
-station.
+**Tama**: Magalang na tumanggi si Corazon, ipinaliwanag ang batayan mula
+sa Milk Code, walang pinasok na anumang kasunduan sa kumpanya, at
+sinabihan ang midwife tungkol sa pagbisita sa araw ding iyon.
 
 Ang pagkakaiba ay hindi kabaitan o kawalan nito — ang pagkakaiba ay
 kung sino ang nagpapasya kung ano ang mabuti para sa pasyente: ang

@@ -24,8 +24,8 @@
       "correct_option_index": 2
     },
     {
-      "prompt_fil": "Alin sa mga sumusunod ang HINDI isa sa tatlong tungkuling nakasaad sa RA 7883?",
-      "prompt_en": "Which of the following is NOT one of the three roles named in RA 7883?",
+      "prompt_fil": "Alin sa mga sumusunod ang HINDI isa sa tatlong tungkulin ng BHW ayon sa BHW Reference Manual ng DOH?",
+      "prompt_en": "Which of the following is NOT one of the three BHW roles in the DOH BHW Reference Manual?",
       "options": [
         { "fil": "Health Educator", "en": "Health Educator" },
         { "fil": "Community Organizer", "en": "Community Organizer" },
@@ -105,7 +105,7 @@
       "prompt_en": "A resident heard that \"consultations are free now\" because of the UHC Act. What is the most accurate explanation?",
       "options": [
         { "fil": "Libre na ang lahat ng gamot at ospital dahil sa UHC", "en": "All medicine and hospitalization are now free because of UHC" },
-        { "fil": "Sinasakop na ng PhilHealth ang outpatient consultation, kaya walang dapat ikatakot na bayad sa health center", "en": "PhilHealth now covers outpatient consultation, so there's nothing to worry about regarding cost at the health center" },
+        { "fil": "Maaaring sakop ang konsulta kung nakarehistro sa primary care provider ng PhilHealth, pero hindi libre ang lahat ng serbisyo", "en": "Consultation can be covered if the resident is registered with a PhilHealth primary care provider, but not every service is free" },
         { "fil": "Hindi totoo iyon, walang binago ang UHC sa pagbabayad", "en": "That's not true, UHC changed nothing about payment" },
         { "fil": "Libre lang ito kung may PhilHealth card na dala", "en": "It's only free if you're carrying a PhilHealth card" }
       ],
@@ -115,7 +115,7 @@
       "prompt_fil": "Ano ang ibig sabihin ng pagkakaroon ng \"primary care provider\" sa ilalim ng UHC?",
       "prompt_en": "What does having a \"primary care provider\" mean under UHC?",
       "options": [
-        { "fil": "Bawat Pilipino ay may nakatalagang unang lalapitan para sa pangangailangang pangkalusugan", "en": "Every Filipino has an assigned first person or facility to approach for a health need" },
+        { "fil": "Bawat Pilipino ay magpaparehistro sa napiling unang lalapitan para sa pangangailangang pangkalusugan", "en": "Each Filipino registers with a chosen first place to go for a health need" },
         { "fil": "Kailangang pumili ng pribadong doktor ang bawat pamilya", "en": "Every family must choose a private doctor" },
         { "fil": "Libre na ang lahat ng gamutan sa alinmang ospital", "en": "Treatment is now free at any hospital" },
         { "fil": "Ang midwife na lang ang tanging puwedeng lapitan", "en": "The midwife is now the only person allowed to be approached" }
@@ -179,7 +179,7 @@
     },
     {
       "prompt_fil": "Ano ang pinakamahusay na hakbang kapag mabagal ang proseso ng akreditasyon o naantala ang isang benepisyong dapat matanggap?",
-      "prompt_en": "What is the best move when the accreditation process is slow, or a benefit that's owed is delayed?",
+      "prompt_en": "What is the best move when the accreditation process is slow, or a benefit is delayed?",
       "options": [
         { "fil": "Manahimik na lang hanggang matapos ito", "en": "Stay silent until it's over" },
         { "fil": "Mag-follow-up nang kalmado at may tiyak na tanong tungkol sa status", "en": "Follow up calmly with a specific question about the status" },

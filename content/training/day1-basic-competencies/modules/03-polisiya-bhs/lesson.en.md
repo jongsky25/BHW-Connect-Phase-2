@@ -18,10 +18,11 @@ it, and the refusal is stronger once you know what that basis is.
 Two policies apply to the situation Corazon faced.
 
 Under **Executive Order 51, the Philippine Milk Code of 1986**,
-advertising milk formula or milk substitutes inside health facilities
-is prohibited. It is also prohibited to accept money or gifts from milk
-companies in exchange for promoting their products. Instead, BHWs are
-expected to protect and promote breastfeeding.
+advertising milk formula or milk substitutes inside health facilities is
+prohibited. Health workers also may not accept money, gifts or samples
+from milk companies, and a BHW never arranges any donation or support
+from one — any such offer goes to the midwife or supervisor. Instead,
+BHWs are expected to protect and promote breastfeeding.
 
 The same principle applies under **DOH Administrative Order No.
 2015-0053**: promotion, sponsorship, and other marketing activities by
@@ -80,13 +81,15 @@ attack?
 The right approach: first acknowledge the visitor's good intention,
 then explain the policy directly and clearly — not stalling, not
 pretending not to know. "I understand you want to help, but we're not
-allowed to promote milk substitutes inside the BHS, under the Milk
-Code. If you'd like to help, we could accept support for our lactation
-station instead."
+allowed to promote milk substitutes inside the BHS, under the Milk Code.
+We also can't take samples, gifts or other offers from milk companies.
+I'll let our midwife know you came by." Corazon does not suggest any
+other way for the company to help, and she promises nothing in return.
+That same day she tells the midwife about the visit.
 
 :::takeaway
-The strongest refusal isn't an angry one — it's clear, has a basis, and
-still opens another way to work together.
+The strongest refusal isn't an angry one — it's clear, has a basis,
+makes no deal, and is reported to the midwife.
 :::
 
 ## [concept/standard] Other policies and using resources efficiently {m3.other-topics, m3.competency}
@@ -131,9 +134,9 @@ company's representative, because "it's free anyway, and maybe it's
 rude to say no." He handed the samples out to patients with no
 explanation of why they were being recommended.
 
-**Right**: Corazon respectfully declined, explained the basis from AO
-2015-0053, and offered the visitor another way to work together — not
-promotion, but support for the lactation station.
+**Right**: Corazon respectfully declined, explained the basis in the
+Milk Code, made no deal of any kind with the company, and told the
+midwife about the visit that same day.
 
 The difference isn't kindness or its absence — the difference is who
 gets to decide what's good for the patient: the BHS, guided by policy,
