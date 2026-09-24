@@ -20,6 +20,18 @@ describe("splitIntoSentences", () => {
     ]);
   });
 
+  it("never drops text when punctuation is followed by a closing quote", () => {
+    const text =
+      'Hindi "kailan pa ba ito matatapos?" kundi "ano po ang status?" Ang malinaw na tanong ay nasasagot.';
+    const sentences = splitIntoSentences(text);
+    expect(sentences).toEqual([
+      'Hindi "kailan pa ba ito matatapos?"',
+      'kundi "ano po ang status?"',
+      "Ang malinaw na tanong ay nasasagot.",
+    ]);
+    expect(sentences.join(" ")).toBe(text);
+  });
+
   it("returns an empty array for blank input", () => {
     expect(splitIntoSentences("   ")).toEqual([]);
   });

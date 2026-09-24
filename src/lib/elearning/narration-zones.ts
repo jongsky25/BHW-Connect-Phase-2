@@ -25,7 +25,11 @@ export type NarrationZone = {
 export function splitIntoSentences(text: string): string[] {
   const normalized = text.replace(/\s+/g, " ").trim();
   if (!normalized) return [];
-  const matches = normalized.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g);
+  // Lossless: every character lands in exactly one sentence. A sentence ends
+  // at . ! or ? (plus any closing quote or bracket) before a space or the
+  // end, so `hindi "kailan?" kundi` is never dropped the way a split that
+  // required whitespace straight after the punctuation silently did.
+  const matches = normalized.match(/.+?[.!?]+["'”’)\]]*(?=\s|$)|.+$/g);
   return (matches ?? [normalized]).map((sentence) => sentence.trim()).filter(Boolean);
 }
 
