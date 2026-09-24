@@ -1,0 +1,99 @@
+[
+  {
+    "id": "organizer-scene-slide",
+    "concept_ids": [
+      "m1.role.organizer"
+    ],
+    "layout": "scene",
+    "heading_fil": "Mula obserbasyon, tungo sa usapan",
+    "heading_en": "From observation to conversation",
+    "display_fil": "Mga residente\nMga lokal na lider\nHealth staff\nUgnayan at komunikasyon ang simula ng sama-samang pagkilos.",
+    "display_en": "Residents\nLocal leaders\nHealth staff\nRelationships and communication begin collective action.",
+    "asset_ids": [
+      "A01"
+    ],
+    "check": null
+  },
+  {
+    "id": "participation-slide",
+    "concept_ids": [
+      "m1.organizer.participation"
+    ],
+    "layout": "process",
+    "heading_fil": "Anyayahang makilahok",
+    "heading_en": "Invite people to participate",
+    "display_fil": "Ano ang gagawin?\nSino ang makasasama?\nKailan tayo mag-uusap?\nMakinig sa tugon; buuin ang gawain kasama ang mga residente.",
+    "display_en": "What will we do?\nWho can join?\nWhen can we discuss it?\nListen to responses; shape the activity with residents.",
+    "asset_ids": [
+      "A04"
+    ],
+    "check": null
+  },
+  {
+    "id": "planning-team-slide",
+    "concept_ids": [
+      "m1.organizer.planningteam"
+    ],
+    "layout": "process",
+    "heading_fil": "Dalhin ang nakita sa pagpaplano",
+    "heading_en": "Bring observations into planning",
+    "display_fil": "Obserbasyon\nBarangay planning team for health\nNapagkasunduang aksyon\nIbahagi ang ebidensya, hindi ang hinalang parang tiyak na katotohanan.",
+    "display_en": "Observation\nBarangay planning team for health\nAgreed action\nShare evidence without presenting assumptions as established facts.",
+    "asset_ids": [
+      "A04"
+    ],
+    "check": null
+  },
+  {
+    "id": "liph-slide",
+    "concept_ids": [
+      "m1.organizer.liph"
+    ],
+    "layout": "process",
+    "heading_fil": "May ambag sa mas malawak na plano",
+    "heading_en": "Contribute to wider planning",
+    "display_fil": "Pangangailangan sa barangay\nLokal na pagtalakay\nLIPH · lungsod / probinsya\nLocal Investment Plan for Health: may ambag ang barangay; kumpirmahin ang lokal na proseso.",
+    "display_en": "Barangay needs\nLocal discussion\nLIPH · city / province\nLocal Investment Plan for Health: barangays contribute; confirm the local process.",
+    "asset_ids": [
+      "A04"
+    ],
+    "check": null
+  },
+  {
+    "id": "check-slide",
+    "concept_ids": [
+      "m1.role.organizer",
+      "m1.organizer.participation",
+      "m1.organizer.planningteam",
+      "m1.organizer.liph"
+    ],
+    "layout": "decision",
+    "heading_fil": "Gamitin ang natutuhan",
+    "heading_en": "Apply your learning",
+    "display_fil": "Mag-ugnay ng tao, mag-anyaya ng pagkilos, at dalhin ang obserbasyon sa pagpaplano.",
+    "display_en": "Connect people, invite action, and bring observations into planning.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Alin ang malinaw na gawaing pang-organisa?",
+      "prompt_en": "Which is a clear organizing action?",
+      "options": [
+        {
+          "fil": "I-post ang plano at huwag nang humingi ng tugon.",
+          "en": "Post the plan without inviting responses."
+        },
+        {
+          "fil": "Pangakuan ng pondo ang bawat mungkahi.",
+          "en": "Promise funding for every suggestion."
+        },
+        {
+          "fil": "Anyayahan ang residente at health staff na magplano mula sa obserbasyon.",
+          "en": "Invite residents and health staff to plan using observations."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "May ugnayan, pakikilahok, at ambag sa pagpaplano. Hindi awtomatikong paglalaan ng pondo ang LIPH link.",
+      "feedback_en": "This combines relationships, participation, and planning input. The LIPH connection does not guarantee funding."
+    }
+  }
+]
+

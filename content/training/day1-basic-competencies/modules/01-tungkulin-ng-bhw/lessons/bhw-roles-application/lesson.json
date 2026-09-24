@@ -1,0 +1,356 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-roles-application",
+    "position": 5,
+    "title_fil": "Gamitin ang mga tungkulin",
+    "title_en": "Apply the Roles",
+    "objectives_fil": [
+      "Maipaliwanag ang mga papel na kailangan sa sitwasyon at makapagbigay ng maikling handover ayon sa tagubilin."
+    ],
+    "objectives_en": [
+      "Explain the roles needed in a situation and give a short handover following an instruction."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "applied-observation",
+      "concept_ids": [
+        "m1.competency"
+      ],
+      "asset_ids": [
+        "A07"
+      ],
+      "takeaway_fil": "Obserbasyon ito; hindi diagnosis o napatunayang sanhi ng sakit.",
+      "takeaway_en": "This is an observation, not a diagnosis or a proven cause of illness.",
+      "check": null
+    },
+    {
+      "id": "applied-education",
+      "concept_ids": [
+        "m1.role.educator"
+      ],
+      "asset_ids": [
+        "A07"
+      ],
+      "takeaway_fil": "Health Educator: malinaw na usapang angkop sa pamilya.",
+      "takeaway_en": "Health Educator: a clear conversation suited to the family.",
+      "check": null
+    },
+    {
+      "id": "applied-organizing",
+      "concept_ids": [
+        "m1.role.organizer",
+        "m1.organizer.participation"
+      ],
+      "asset_ids": [
+        "A07"
+      ],
+      "takeaway_fil": "Community Organizer: anyayahan ang mga tao na magplano at kumilos.",
+      "takeaway_en": "Community Organizer: invite people to plan and act.",
+      "check": null
+    },
+    {
+      "id": "handover",
+      "concept_ids": [
+        "m1.competency",
+        "m1.provider.records",
+        "m1.provider.guide"
+      ],
+      "asset_ids": [
+        "A07"
+      ],
+      "takeaway_fil": "Ulat sa midwife: obserbasyon + ginawa + kailangan.",
+      "takeaway_en": "Report to the midwife: observation + action taken + next need.",
+      "check": null
+    },
+    {
+      "id": "next-learning",
+      "concept_ids": [
+        "m1.skills.crossref"
+      ],
+      "asset_ids": [
+        "A02"
+      ],
+      "takeaway_fil": "Mga susunod na pag-aaral. Hiwalay na obserbasyon ang praktikal na kakayahan.",
+      "takeaway_en": "Future learning. Practical competence requires separate observation.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m1.competency",
+        "m1.role.educator",
+        "m1.role.organizer",
+        "m1.organizer.participation",
+        "m1.provider.records",
+        "m1.provider.guide",
+        "m1.skills.crossref"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Maayos na pagkilos: piliin ang papel, sundin ang tagubilin, itala, at makipag-ugnayan.",
+      "takeaway_en": "Sound action: choose the role, follow instructions, record, and communicate.",
+      "check": {
+        "prompt_fil": "Aling ulat ang sumusunod sa tagubilin nang walang imbentong konklusyon?",
+        "prompt_en": "Which report follows the instruction without inventing a conclusion?",
+        "options": [
+          {
+            "fil": "May tubig sa tatlong bakuran; naitala ko; kailangan ko ng gabay sa susunod na hakbang.",
+            "en": "Water in three yards; recorded; I need guidance on the next step."
+          },
+          {
+            "fil": "Tiyak na may sakit na ang lahat doon.",
+            "en": "Everyone there is certainly ill."
+          },
+          {
+            "fil": "Wala nang kailangang gawin.",
+            "en": "Nothing else needs to be done."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Naihihiwalay nito ang obserbasyon, nagawa, at kailangan. Bigkasin ang sarili mong handover at ipaliwanag kung paano mo nasunod ang tagubilin; ang pagpili ng sagot ay hindi praktikal na assessment.",
+        "feedback_en": "It separates observation, action taken, and remaining needs. Speak your own handover and explain how you followed the instruction; selecting an answer is not a practical assessment."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m1.competency",
+      "read_ids": [
+        "applied-observation",
+        "handover",
+        "check"
+      ],
+      "slide_ids": [
+        "applied-observation-slide",
+        "handover-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.competency-d",
+        "m1.competency-f"
+      ]
+    },
+    {
+      "id": "m1.role.educator",
+      "read_ids": [
+        "applied-education",
+        "check"
+      ],
+      "slide_ids": [
+        "applied-education-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.role.educator-d",
+        "m1.role.educator-r"
+      ]
+    },
+    {
+      "id": "m1.role.organizer",
+      "read_ids": [
+        "applied-organizing",
+        "check"
+      ],
+      "slide_ids": [
+        "applied-organizing-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.role.organizer-d",
+        "m1.role.organizer-r"
+      ]
+    },
+    {
+      "id": "m1.organizer.participation",
+      "read_ids": [
+        "applied-organizing",
+        "check"
+      ],
+      "slide_ids": [
+        "applied-organizing-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.organizer.participation-d",
+        "m1.organizer.participation-r"
+      ]
+    },
+    {
+      "id": "m1.provider.records",
+      "read_ids": [
+        "handover",
+        "check"
+      ],
+      "slide_ids": [
+        "handover-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.records-d",
+        "m1.provider.records-r"
+      ]
+    },
+    {
+      "id": "m1.provider.guide",
+      "read_ids": [
+        "handover",
+        "check"
+      ],
+      "slide_ids": [
+        "handover-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.guide-d",
+        "m1.provider.guide-r"
+      ]
+    },
+    {
+      "id": "m1.skills.crossref",
+      "read_ids": [
+        "next-learning",
+        "check"
+      ],
+      "slide_ids": [
+        "next-learning-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.skills.crossref-f"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1.competency-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        5
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.competency-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        19,
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m1.role.educator-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        9
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.role.educator-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.role.organizer-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        10
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.role.organizer-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.organizer.participation-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        10
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.organizer.participation-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.records-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.records-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.guide-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.guide-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.skills.crossref-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A07",
+      "path": "/training/bhw-1-1/A07-8e889f00c7b0.svg",
+      "alt_fil": "Nakita, ginawa, at kailangan pang aksyon sa kathang-isip na sitwasyon.",
+      "alt_en": "Observation, action taken, and remaining needs in a fictional situation.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "8e889f00c7b01707b03caefefabb7070f60d79fcde64c067f7ee7ff7ad242e9d"
+    },
+    {
+      "id": "A02",
+      "path": "/training/bhw-1-1/A02-736187dad098.svg",
+      "alt_fil": "Tatlong magkakaugnay na papel sa pagsulong ng kalusugan.",
+      "alt_en": "Three connected roles in promoting health.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "736187dad098070d806d873a90f59cf871b3d03c02b52bb3001692d1ecb7ecb8"
+    }
+  ]
+}

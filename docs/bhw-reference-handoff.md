@@ -1,23 +1,44 @@
-# BHW Reference Manual redesign handoff
+# BHW Reference Manual development handoff
 
-Updated 24 September 2026. **Work packages 0–1 implemented for review; user approval pending. Do not expand, deploy, load content, or modify a live database from this handoff.**
+Updated 24 September 2026. Package 3 and the initial lesson navigation/Slides integration are implemented in [draft PR #82](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/82), stacked on [foundation PR #81](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/81), which is stacked on [prototype PR #80](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/80).
 
-- **Baseline:** real GitHub main `652b723af6a8e81426f797c1b91d53dba0b7b484`. PR #79 already merged 06–09; their content approval is still pending. Open PRs at reconciliation were unrelated #52/#42/#33. Recheck branches before future integration.
-- **Branch / PR:** `codex/bhw-reference-1-1-prototype`; [draft PR #80](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/80). Initial review commit: `b887135654f13039be51eaf84be70dae55614878`. Local isolated worktree: `work/bhw-preview` in this task workspace. Its history is a targeted source snapshot because Git clone credentials were unavailable; never push that local root over upstream. The GitHub branch is based on the real main commit.
-- **Delivered:** `prototypes/bhw-reference-1-1/` contains six Filipino/English lessons, separate Read and 31 authored Slides including six checks, A01–A07 original SVG/HTML sketches, concept-based mode/language switching, browser-local per-lesson resume/review marks, course context with unavailable Chapters II–III, sources, and separate facilitator notes.
-- **Preservation:** all production files, module IDs, locks, assessments, learner progress, schema and database remain unchanged. This folder is outside the production loader. No course load, migration, publication, deployment, or merge performed.
-- **Traceability:** `coverage-map.json` covers all 20 required 1.1 concepts in both modes; `incoming-map.json` proposes owners for all 38 incoming 06–09 concepts. `assets.json` records visual purpose, bilingual alternatives, provenance, and draft status. `docs/bhw-reference-reconciliation.md` records source corrections and boundaries. `docs/bhw-reference-implementation-plan.md` preserves the supplied plan including §§13–15; the current user request authorizes only packages 0–1 beyond that plan's earlier planning-only status.
-- **Verification:** four Node content/contract tests pass; Node syntax checks pass; 248 browser screen checks (31 screens × two modes × two languages × two widths, 1440/360) found no horizontal overflow. Fourteen axe WCAG A/AA scans found no violations; no page errors or external requests. Tested concept-preserving mode/language changes, reload, per-lesson resume, check feedback, preview review marks, keyboard focus, missing SVG, malformed/blocked storage, mobile chapter access, and 200% text. Desktop/mobile visual review and portable HTML smoke check completed. These are prototype checks, not full production-app evidence.
-- **Not run:** full-repository lint/typecheck/Vitest/Next production build from this partial checkout; database/migration/backfill/RLS tests; live learner/facilitator flows; manual screen-reader session; audio. Those remain required in later integration. Automated accessibility checks do not certify complete accessibility.
-- **CI boundary:** review commits use `[skip ci]` because the repository's automatic PR E2E job writes to a shared Supabase test project. The current task requests no database writes. No workflow was changed or dispatched. Full-app CI remains owed when integration/test-environment work is authorized.
+## Implemented
 
-## Resume quickly
+- Branch `codex/bhw-reference-content-navigation`; implementation commit `f286a307bc7fef040fe5eac7011360337bc55804`, based on genuine upstream foundation head `fcc41600105a1e0f08c91d415278174571feb922`.
+- Strict bilingual Read/Slides parser, stable section/slide IDs, bidirectional concept coverage, corrected named PDF sources, asset existence/hash/provenance/alt checks and separate private facilitator notes.
+- Explicit loader modes: hierarchy, course, content, lessons, assessments, KB. Selected lesson loads preserve existing course/module/lock identities and never synchronize unrelated course metadata, assessments, KB or progress.
+- Resumable immutable staging and complete-subchapter atomic promotion. Identical reruns make no database writes. Stale/conflicting locks fail closed. Existing assessment banks cannot be silently overwritten. Hierarchy staging creates draft/unavailable records only.
+- Six approved-prototype 1.1 lessons converted to authoring files, 31 authored Slides/checks, all 20 non-excluded legacy concepts. Seven static SVG adaptations remain draft and block promotion. Parts 6–9 remain untouched.
+- Published mapped programs use lesson navigation, Continue learning, per-mode resume, concept-based switching, explicit shared completion, practice feedback and sources. Existing Chapter I tests, assessment and certificate identities remain authoritative. Completed/certified learners can review released lessons. Chapters II–III remain unavailable; generic courses keep the legacy reader.
 
-1. Get a normal authenticated checkout of the review branch. Read the reconciliation and supplied implementation plan.
-2. Run `node prototypes/bhw-reference-1-1/serve.mjs`; review at `http://127.0.0.1:4173`. Run `node --test prototypes/bhw-reference-1-1/validate.test.mjs`.
-3. For browser QA, install/use `playwright` and `@axe-core/playwright`, run the local server, then `node prototypes/bhw-reference-1-1/browser-check.cjs`. The runner defaults to installed Chrome; set `PLAYWRIGHT_MODULE`, `AXE_MODULE`, and `QA_OUTPUT` if packages/output live elsewhere. No credentials are used. Set `AXE_MODULE` to enable axe scans; the report states the scan count.
-4. Review **pacing, Read density, slide clarity, original schematic visual treatment, and source-qualified wording** with the user. Estimates are 3–7 minutes per lesson, not approved training allocations. F19 says six hours for the role competency; F20 says at least three. Retain this discrepancy.
-5. Only after approval, proceed to additive hierarchy/revisions/progress and contract work. Keep current course/module UUID identities, historical completions/certificates, and lock mappings. Plan progress equivalence/backfill and staged, scoped loading before touching data. Maintain distinct slide copy and concept IDs; keep facilitator notes behind actual authorization.
+## Verification
 
-**Review gate:** No broad implementation or final illustration production until the user accepts the 1.1 sample. Parts 6–9 need claim-level citation corrections and subject review before conversion. Reconcile any new concurrent work first.
+- Full Vitest suite: 43 files, 345 tests passed; the reference tests now use Vitest.
+- Full lint and TypeScript passed. The production Webpack build and TypeScript phase passed again after the two contrast fixes.
+- All 35 migrations and all 15 existing preservation/access scenario groups pass on disposable loopback PostgreSQL 18.4.
+- The actual loader also passes staging/interruption/recovery/promotion/repeat-load tests through an authenticated SQL adapter, preserving complete historical row snapshots. Actual PostgREST 16.4 loading/reruns and 13 access/progress checks subsequently passed.
+- React component browser checks pass in Filipino/English at 360, 768 and 1280 pixels: mode switching, resume/reload, explanatory checks, explicit completion and next incomplete lesson selection. Six axe scans report no WCAG A/AA violations. The image-path issue found during visual inspection was corrected.
+
+- Production app: 20 browser checks passed, including assessment gates, certified review, server resume, six-lesson completion, 320px reflow and 200% CSS zoom. Three production axe scans passed after fixing the privacy link and completed badge contrast. Authentication used fixture sessions; matching Supabase and manual screen-reader testing remain outstanding.
+
+## Preview and local workspace
+
+- New isolated component preview: http://127.0.0.1:4174 — uses the actual new React component with local browser state, harness CSS and no database connection.
+- Original prototype remains unchanged at http://127.0.0.1:4173 when running.
+- Integration source snapshot: `C:/Users/Rae Jane/Documents/Codex/2026-09-24/d/work/bhw-integration`.
+- New preview harness: `C:/Users/Rae Jane/Documents/Codex/2026-09-24/d/work/ui-check`; start with `node serve.mjs` from that directory. `build.mjs` rebuilds the component bundle; `check.cjs` runs its local browser checks.
+- Offline validation from the source root: `node scripts/training-validate-reference.mjs 01-tungkulin-ng-bhw`.
+- Focused tests: `npm test -- scripts/tests/reference-content.test.mjs scripts/tests/reference-navigation.test.mjs` (Vitest).
+- See `docs/bhw-reference-content-navigation.md` and `content/training/README.md` for the authoring/loader contract.
+- Git caution: the application source was hydrated from the exact upstream tree, with dependencies installed from its lockfile; this is not an authenticated Git-history checkout. Never push synthetic local history over upstream. The remote commits were built on the genuine upstream tree through the GitHub connector.
+
+## Remaining release work
+
+1. Complete matching-platform Supabase/Auth rehearsal and manual screen-reader testing. Full application build/test and fixture-authenticated production-app/REST checks are now complete; see docs/bhw-reference-content-navigation.md for results and reproducible commands.
+2. Review final 1.1 teaching copy, bilingual private notes and the static visual adaptations. Their draft status deliberately blocks promotion. No subject/clinical approval is inferred from structural validation.
+3. Verify the concrete target lock/mapping, staging and equivalence/backfill reports before any authorized shared-project operation. Program/chapter activation is a separate reviewed release step; no automatic activation or backfill occurs.
+4. Continue reviewed 1.2–1.5 batches. Parts 6–9 still need claim-level citation corrections and subject review. Preserve existing IDs, questions, historical progress and Chapter I certificate scope.
+5. Follow-up: lesson-revision narration audio, chapter-scale lazy revision fetching (current route fetches published revision JSON together), and an archival/reset flow before enabling destructive reset for converted courses.
+
+No shared/live database changes, workflow dispatch, merge or deployment occurred. CI commits use `[skip ci]` because the existing automatic PR E2E writes to a shared Supabase project. Local platform stubs and the component harness are not full production certification.
 

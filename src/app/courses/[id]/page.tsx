@@ -2,6 +2,8 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CourseDetail } from "@/components/elearning/course-detail";
+import type { ReferenceData } from "@/components/elearning/reference-lessons";
+import type { CourseLesson, CourseLessonRevision, CourseLessonProgress, CourseLessonResume, TrainingProgramChapter } from "@/lib/elearning/types";
 import type {
   CourseModule,
   CourseModuleAudio,
@@ -165,6 +167,36 @@ export default async function CourseDetailPage({
           .maybeSingle<{ verification_code: string }>()
       : { data: null };
 
+  // Opt in only for a published mapped program. Private facilitator notes are
+  // deliberately absent from every learner query and serialized prop.
+  let reference: ReferenceData | undefined;
+  const {data: chapter, error: chapterError} = await supabase.from('training_program_chapters')
+    .select('program_id').eq('course_id',id).eq('availability','available').maybeSingle();
+  if (chapterError) throw new Error('Unable to load training hierarchy');
+  if(chapter && moduleIds.length) {
+    const {data: program,error: programError} = await supabase.from('training_programs')
+      .select('id,title_fil,title_en').eq('id',chapter.program_id).eq('status','published').maybeSingle();
+    if(programError)throw new Error('Unable to load training program');
+    if(program) {
+      const [chapterResult, lessonResult, completedResult, resumeResult] = await Promise.all([
+        supabase.from('training_program_chapters').select('*').eq('program_id',program.id).order('position').returns<TrainingProgramChapter[]>(),
+        supabase.from('course_lessons').select('*').in('module_id',moduleIds).not('published_revision_id','is',null).order('position').returns<CourseLesson[]>(),
+        progress ? supabase.from('course_lesson_progress').select('*').eq('course_progress_id',progress.id).returns<CourseLessonProgress[]>() : Promise.resolve({data:[],error:null}),
+        progress ? supabase.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).returns<CourseLessonResume[]>() : Promise.resolve({data:[],error:null}),
+      ]);
+      if([chapterResult,lessonResult,completedResult,resumeResult].some(r=>r.error))throw new Error('Unable to load lesson state');
+      const lessonRows=lessonResult.data??[];
+      if(lessonRows.length) {
+        const {data: revisions,error} = await supabase.from('course_lesson_revisions')
+          .select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
+          .in('id',lessonRows.map(l=>l.published_revision_id!)).returns<CourseLessonRevision[]>();
+        if(error || lessonRows.some(l=>!revisions?.some(r=>r.id===l.published_revision_id)))throw new Error('Unable to load published lesson revisions');
+        reference={...program,chapters:chapterResult.data??[],completed:completedResult.data??[],resumes:resumeResult.data??[],
+          lessons:modules!.flatMap(m=>lessonRows.filter(l=>l.module_id===m.id).map(l=>({...l,revision:revisions!.find(r=>r.id===l.published_revision_id)!})))};
+      }
+    }
+  }
+
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <Breadcrumbs
@@ -176,7 +208,7 @@ export default async function CourseDetailPage({
       />
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-          {locale === "en" ? course.title_en : course.title_fil}
+          {reference ? (locale === 'en' ? reference.title_en : reference.title_fil) : (locale === "en" ? course.title_en : course.title_fil)}
         </h1>
         {(locale === "en" ? course.description_en : course.description_fil) ? (
           <p className="mt-1 text-ink/70">
@@ -186,6 +218,7 @@ export default async function CourseDetailPage({
       </div>
 
       <CourseDetail
+        reference={reference}
         courseId={course.id}
         quizMaxAttempts={course.quiz_max_attempts}
         modules={modules ?? []}
