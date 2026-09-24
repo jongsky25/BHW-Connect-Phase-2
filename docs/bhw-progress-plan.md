@@ -1,10 +1,11 @@
 # BHW progress view: manual, chapters, subchapters — plan
 
-Status: Phases 1–2 implemented (24 September 2026) — summariser, fetcher,
-progress components, the `/home` "My training" card, and the manual route
+Status: Phases 1–3 implemented (24 September 2026) — summariser, fetcher,
+progress components, the `/home` "My training" card, the manual route
 (overview ring + Continue, chapter bars and step tracker, subchapter bars,
-per-lesson status). The celebration animation in §4 is not built yet.
-Phase 3 not started. Plan agreed with the owner on 24 September 2026.
+per-lesson status) and the supervisor view at `/admin/training-progress`.
+The celebration animation in §4 is not built yet. Plan agreed with the owner
+on 24 September 2026.
 
 Goal: a BHW can see at a glance how far along they are in the BHW Reference
 Manual as a whole, in each chapter and in each subchapter, and can jump
@@ -150,6 +151,18 @@ conflicts:
 - Filter by org unit, following the existing admin scope rules; check that
   RLS lets an admin read `course_lesson_progress` for BHWs in scope, and add
   a `security definer` read RPC only if it does not.
+- Done: `/admin/training-progress` (nav "Training progress", elearning flag),
+  20 active BHWs per page, filter by area (any org unit in the admin's
+  scope, subtree match on `org_units.path`) and by name/username. Each BHW
+  is a card: manual chip and bar split by chapter, and on opening each
+  chapter's chip, subchapter-segmented bar and step tracker plus one bar
+  per subchapter. No migration: `course_progress_admin_read`,
+  `course_test_attempts_admin_scope`, `certificates_admin_read` and
+  `training_progress_read` already cover the reads. `course_lesson_resume`
+  stays learner-only, so the view counts finished lessons; a chapter reads
+  as started from its `course_progress` row, a rule the learner view now
+  shares. When every lesson is done, the manual state shows a pending
+  retake or assessment instead of "Completed" (both views).
 
 ## 7. Verification
 
