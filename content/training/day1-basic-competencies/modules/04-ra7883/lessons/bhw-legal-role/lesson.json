@@ -1,0 +1,94 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-legal-role",
+    "position": 0,
+    "title_fil": "Legal na batayan ng tungkulin",
+    "title_en": "The legal basis of the role",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: legal na batayan ng tungkulin."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: the legal basis of the role."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "concept_ids": [
+        "m4.legal-basis"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang pagtatanong tungkol sa nararapat matanggap ay hindi kasakiman — ito ay bahagi ng pagiging responsableng BHW.",
+      "takeaway_en": "Asking about what you're owed isn't greed — it's part of being a responsible BHW.",
+      "check": null
+    },
+    {
+      "id": "section-2",
+      "concept_ids": [
+        "m4.legal-basis"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May legal na batayan ang tungkulin ng BHW — hindi lang ito kagustuhan, kundi bahagi ng RA 7883.",
+      "takeaway_en": "The BHW's duty has a legal basis — it is not just goodwill, it is part of RA 7883.",
+      "check": {
+        "prompt_fil": "Sino ang may papel sa akreditasyon ng BHW?",
+        "prompt_en": "Who has a role in BHW accreditation?",
+        "options": [
+          {
+            "fil": "Ang local health board sa itinakdang proseso.",
+            "en": "The local health board through the defined process."
+          },
+          {
+            "fil": "Ang BHW mismo lang.",
+            "en": "Only the BHW themself."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang local health board sa itinakdang proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "The local health board through the defined process. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m4.legal-basis",
+      "read_ids": [
+        "section-1",
+        "section-2"
+      ],
+      "slide_ids": [
+        "slide-section-1",
+        "slide-section-2"
+      ],
+      "source_ids": [
+        "m4.legal-basis-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m4.legal-basis-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

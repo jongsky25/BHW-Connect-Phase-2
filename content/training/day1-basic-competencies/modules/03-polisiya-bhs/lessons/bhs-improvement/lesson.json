@@ -1,0 +1,82 @@
+{
+  "manifest": {
+    "lesson_key": "bhs-improvement",
+    "position": 4,
+    "title_fil": "Isang mungkahing maisasagawa",
+    "title_en": "One workable suggestion",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: isang mungkahing maisasagawa."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: one workable suggestion."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-6",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang mungkahing tiyak at may dahilan ang mas malamang na paniwalaan at tuluyang maisagawa kaysa sa pangkalahatang reklamo.",
+      "takeaway_en": "A suggestion that's specific and has a reason is far more likely to be believed and actually carried out than a general complaint.",
+      "check": {
+        "prompt_fil": "Aling mungkahi ang tiyak?",
+        "prompt_en": "Which suggestion is specific?",
+        "options": [
+          {
+            "fil": "Iulat ang tumutulong gripo at magtakda ng follow-up sa pagkumpuni.",
+            "en": "Report a leaking tap and arrange a repair follow-up."
+          },
+          {
+            "fil": "Sabihing ayusin ang lahat pero walang unang hakbang.",
+            "en": "Say to fix everything without a first step."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Iulat ang tumutulong gripo at magtakda ng follow-up sa pagkumpuni. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Report a leaking tap and arrange a repair follow-up. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m3.competency",
+      "read_ids": [
+        "section-6"
+      ],
+      "slide_ids": [
+        "slide-section-6"
+      ],
+      "source_ids": [
+        "m3.competency-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m3.competency-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

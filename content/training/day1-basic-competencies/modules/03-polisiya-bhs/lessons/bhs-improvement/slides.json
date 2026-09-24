@@ -1,0 +1,35 @@
+[
+  {
+    "id": "slide-section-6",
+    "concept_ids": [
+      "m3.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Isang mungkahing episyente",
+    "heading_en": "One efficient suggestion",
+    "display_fil": "Pumili ng tiyak na problema sa tubig, kuryente, o gamit.\nSabihin ang mungkahi at dahilan.\nHumingi ng angkop na pahintulot at mag-follow-up.",
+    "display_en": "Choose a specific problem involving water, power or supplies.\nState the proposal and reason.\nSeek appropriate authorization and follow up.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": {
+      "prompt_fil": "Aling mungkahi ang tiyak?",
+      "prompt_en": "Which suggestion is specific?",
+      "options": [
+        {
+          "fil": "Iulat ang tumutulong gripo at magtakda ng follow-up sa pagkumpuni.",
+          "en": "Report a leaking tap and arrange a repair follow-up."
+        },
+        {
+          "fil": "Sabihing ayusin ang lahat pero walang unang hakbang.",
+          "en": "Say to fix everything without a first step."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Iulat ang tumutulong gripo at magtakda ng follow-up sa pagkumpuni. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Report a leaking tap and arrange a repair follow-up. Explain why using the lesson situation."
+    },
+    "narration_fil": "Subukan mo: mag-isip ng isang bagay sa iyong barangay health station na kayang gawing mas episyente — halimbawa, ang ilaw na naiiwang bukas kahit walang tao, o ang tubig na tumutulo nang hindi napapansin, o ang mga plastic na hindi na dapat ginagamit ayon sa DC 2021-0486.\n\nIsulat ang mungkahi mo sa isang pangungusap na kaya mong sabihin sa midwife o sa kapwa BHW — hindi lang \"dapat magbago,\" kundi tiyak na kung ano ang babaguhin at bakit ito makakatulong.",
+    "narration_en": "Try it: think of one thing at your own barangay health station that could be made more efficient — for example, a light left on with no one around, water dripping unnoticed, or plastics that shouldn't be used any more under DC 2021-0486.\n\nWrite your suggestion as one sentence you could actually say to the midwife or a fellow BHW — not just \"we should change,\" but exactly what to change and why it would help."
+  }
+]

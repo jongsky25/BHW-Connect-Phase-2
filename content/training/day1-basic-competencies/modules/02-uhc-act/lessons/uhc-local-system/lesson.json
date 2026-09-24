@@ -1,0 +1,145 @@
+{
+  "manifest": {
+    "lesson_key": "uhc-local-system",
+    "position": 2,
+    "title_fil": "Health board at health promotion",
+    "title_en": "Health boards and health promotion",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: health board at health promotion."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: health boards and health promotion."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-5",
+      "concept_ids": [
+        "m2.health-board",
+        "m2.bhw-skill",
+        "m2.health-promotion",
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang UHC ay hindi lang nagbabago ng sistema — inaasahan din nitong may ibahagi ang BHW: obserbasyon, mungkahi, at aksyon.",
+      "takeaway_en": "UHC does not just change the system — it also expects the BHW to contribute: observation, suggestion, and action.",
+      "check": {
+        "prompt_fil": "Paano makatutulong ang BHW sa lokal na sistema?",
+        "prompt_en": "How can the BHW help the local system?",
+        "options": [
+          {
+            "fil": "Ipaabot ang obserbasyon at mag-ugnay sa health team.",
+            "en": "Share observations and coordinate with the health team."
+          },
+          {
+            "fil": "Magpasya nang mag-isa sa lahat ng serbisyong medikal.",
+            "en": "Decide every medical service alone."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ipaabot ang obserbasyon at mag-ugnay sa health team. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Share observations and coordinate with the health team. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m2.health-board",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m2.health-board-source"
+      ]
+    },
+    {
+      "id": "m2.bhw-skill",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m2.bhw-skill-source"
+      ]
+    },
+    {
+      "id": "m2.health-promotion",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m2.health-promotion-source"
+      ]
+    },
+    {
+      "id": "m2.competency",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m2.competency-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m2.health-board-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.bhw-skill-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.health-promotion-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m2.competency-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        21
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

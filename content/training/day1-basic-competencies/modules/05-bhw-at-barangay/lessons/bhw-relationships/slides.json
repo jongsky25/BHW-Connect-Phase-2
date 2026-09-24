@@ -1,0 +1,65 @@
+[
+  {
+    "id": "slide-section-1",
+    "concept_ids": [
+      "m5.four-relationships"
+    ],
+    "layout": "scene",
+    "heading_fil": "Ang tanong sa bahay ni Aling Nena",
+    "heading_en": "The question at Aling Nena's house",
+    "display_fil": "May pamilyang humihingi ng tulong.\nAlamin kung anong uri ng suporta ang kailangan.\nIugnay sa angkop na health professional.",
+    "display_en": "A family asks for help.\nIdentify the kind of support needed.\nConnect them with the appropriate health professional.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Si Aling Nena, 34 anyos, ina ng tatlong anak, ay pumunta sa bahay ni BHW Marites dahil sa palagiang ubo ng kanyang panganay na anak. Tatlong linggo na itong nangyayari, at natatakot na si Aling Nena.\n\nHabang nakikinig, naisip ni BHW Marites: hindi lang ito tanong tungkol sa ubo. Kailangan niyang malaman kung sino ang dapat niyang kausapin tungkol dito — at hindi lang isang tao pala ang kasangkot.",
+    "narration_en": "Aling Nena, 34 years old and a mother of three, came to BHW Marites' house because her eldest child had had a persistent cough. It had been going on for three weeks, and Aling Nena was starting to worry.\n\nAs she listened, BHW Marites realized this wasn't just a question about a cough. She needed to work out who she should actually talk to about it — and it turned out more than one person was involved."
+  },
+  {
+    "id": "slide-section-2",
+    "concept_ids": [
+      "m5.four-relationships"
+    ],
+    "layout": "takeaway",
+    "heading_fil": "Apat na ugnayan ng isang BHW",
+    "heading_en": "Four relationships of a BHW",
+    "display_fil": "Komunidad: mga residente at pamilya.\nMidwife/RHU: teknikal na suporta.\nBarangay officials: lokal na koordinasyon.\nKapwa BHW: karanasan at pagtutulungan.",
+    "display_en": "Community: residents and families.\nMidwife/RHU: technical support.\nBarangay officials: local coordination.\nFellow BHWs: experience and teamwork.",
+    "asset_ids": [],
+    "check": null,
+    "narration_fil": "Ang gawain ng BHW ay hindi umiikot sa iisang tao lamang. Apat na ugnayan ang humuhubog sa araw-araw na trabaho:\n\nAng **komunidad** — ang mga pamilyang tulad ni Aling Nena, kung saan naganap ang unang hakbang ng pangangalaga. Ang **midwife o Rural Health Unit (RHU)** — ang teknikal na susuportang kaakibat kapag may kailangang i-refer o may klinikal na tanong. Ang **barangay officials** — ang kasosyo sa suporta, akreditasyon, at mga pasilidad tulad ng barangay health station. At ang **kapwa BHW** — ang kasamahang pinagbabahaginan ng karanasan at tamang kaalaman.\n\nApat itong magkaibang ugnayan, ngunit palaging magkasama sa isang karaniwang araw ng BHW.",
+    "narration_en": "A BHW's work does not revolve around just one person. Four relationships shape the day-to-day work:\n\nThe **community** — families like Aling Nena's, where the first step of care happens. The **midwife or Rural Health Unit (RHU)** — the technical support the BHW turns to for referrals or clinical questions. The **barangay officials** — the partner for support, accreditation, and facilities like the barangay health station. And **fellow BHWs** — the peers who share experience and correct practice.\n\nThese are four distinct relationships, but they are always present together in an ordinary BHW day."
+  },
+  {
+    "id": "slide-section-3",
+    "concept_ids": [
+      "m5.four-relationships"
+    ],
+    "layout": "decision",
+    "heading_fil": "Sino ang lalapitan?",
+    "heading_en": "Who is the right person to approach?",
+    "display_fil": "Klinikal na alalahanin → midwife/RHU.\nAdministratibong suporta → angkop na opisyal.\nKaraniwang gawain → kapwa BHW o supervisor.",
+    "display_en": "Clinical concern → midwife/RHU.\nAdministrative support → responsible official.\nRoutine work → fellow BHW or supervisor.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Sino ang unang lalapitan sa klinikal na alalahanin?",
+      "prompt_en": "Who should you approach first for a clinical concern?",
+      "options": [
+        {
+          "fil": "Ang midwife o ang itinalagang RHU health professional.",
+          "en": "The midwife or designated RHU health professional."
+        },
+        {
+          "fil": "Sinumang may pinakamataas na posisyon kahit walang klinikal na tungkulin.",
+          "en": "Whoever has the highest rank regardless of clinical role."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang midwife o ang itinalagang RHU health professional. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "The midwife or designated RHU health professional. Explain why using the lesson situation."
+    },
+    "narration_fil": "Bumalik tayo kay BHW Marites. Alam na niya ang apat na ugnayan — ngayon kailangan niyang piliin kung alin dito ang bagay sa sitwasyon ni Aling Nena.\n\nHindi lahat ng sitwasyon ay kailangan ng parehong tao. Ang tamang unang tanong ay: \"Anong uri ng suporta ang kailangan dito — klinikal ba, administratibo, o karanasan ng kapwa BHW?\" Sa kaso ni Aling Nena, ang tatlong-linggong ubo ay klinikal na alalahanin — kaya't ang midwife o RHU ang unang dapat lapitan, hindi ang barangay captain.",
+    "narration_en": "Back to BHW Marites. She now knows the four relationships — the next step is choosing which one actually fits Aling Nena's situation.\n\nNot every situation calls for the same person. The right first question is: \"What kind of support does this need — clinical, administrative, or the experience of a fellow BHW?\" In Aling Nena's case, a three-week cough is a clinical concern — so the midwife or RHU is the right first stop, not the barangay captain."
+  }
+]

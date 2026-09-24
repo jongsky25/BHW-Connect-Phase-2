@@ -1,0 +1,94 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-barangay-partners",
+    "position": 1,
+    "title_fil": "Mga katuwang sa barangay",
+    "title_en": "Barangay partners",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: mga katuwang sa barangay."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: barangay partners."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-4",
+      "concept_ids": [
+        "m5.stakeholders-barangay"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang bawat ugnayan ay may sariling layunin — ang paggamit ng tama sa tamang pagkakataon ang gumagawa sa serbisyo na mabilis at maaasahan.",
+      "takeaway_en": "Each relationship has its own purpose — using the right one at the right moment is what makes service fast and reliable.",
+      "check": null
+    },
+    {
+      "id": "section-5",
+      "concept_ids": [
+        "m5.stakeholders-barangay"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang punong barangay ang may hawak ng budget; ang kagawad sa kalusugan ang tagapagtaguyod ng polisiya. Magkaiba ang papel, pareho silang kailangang kakilala.",
+      "takeaway_en": "The punong barangay holds the budget; the Kagawad sa Kalusugan advocates for policy. Different roles, both worth knowing.",
+      "check": {
+        "prompt_fil": "Paano pipili ng katuwang sa barangay?",
+        "prompt_en": "How do you choose a barangay partner?",
+        "options": [
+          {
+            "fil": "Itugma ang pangangailangan sa tungkulin ng katuwang.",
+            "en": "Match the need to the partner’s role."
+          },
+          {
+            "fil": "Lahat ng problema ay sa iisang tao lamang.",
+            "en": "Send every issue to the same person."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Itugma ang pangangailangan sa tungkulin ng katuwang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Match the need to the partner’s role. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m5.stakeholders-barangay",
+      "read_ids": [
+        "section-4",
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-4",
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m5.stakeholders-barangay-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m5.stakeholders-barangay-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        15
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

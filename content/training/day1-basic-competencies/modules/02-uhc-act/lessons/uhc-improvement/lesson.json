@@ -1,0 +1,94 @@
+{
+  "manifest": {
+    "lesson_key": "uhc-improvement",
+    "position": 3,
+    "title_fil": "Maliit na hakbang sa pagpapabuti",
+    "title_en": "One practical improvement",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: maliit na hakbang sa pagpapabuti."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: one practical improvement."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-6",
+      "concept_ids": [
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang mungkahi na hindi napag-usapan ay malamang na hindi rin maisasakatuparan — kailangan munang dumaan sa talakayan bago sa aksyon.",
+      "takeaway_en": "A suggestion that was never discussed is unlikely to ever be carried out — it needs to pass through discussion before it becomes action.",
+      "check": null
+    },
+    {
+      "id": "section-7",
+      "concept_ids": [
+        "m2.competency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Hindi kailangang hintayin ang malaking pagbabago mula sa itaas — ang maliit na hakbang na sinimulan ngayon ang siyang nagpapabilis ng pagdating ng pagbabago sa barangay.",
+      "takeaway_en": "You don't need to wait for a big change from above — the small step you start today is what speeds up the change's arrival in the barangay.",
+      "check": {
+        "prompt_fil": "Aling mungkahi ang maisasagawa?",
+        "prompt_en": "Which suggestion is workable?",
+        "options": [
+          {
+            "fil": "Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife.",
+            "en": "Discuss one problem and agree on a first step with the midwife."
+          },
+          {
+            "fil": "Baguhin agad ang buong sistema nang walang talakayan.",
+            "en": "Change the whole system without discussion."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Discuss one problem and agree on a first step with the midwife. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m2.competency",
+      "read_ids": [
+        "section-6",
+        "section-7"
+      ],
+      "slide_ids": [
+        "slide-section-6",
+        "slide-section-7"
+      ],
+      "source_ids": [
+        "m2.competency-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m2.competency-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        21
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}

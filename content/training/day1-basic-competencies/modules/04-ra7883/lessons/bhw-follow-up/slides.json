@@ -1,0 +1,50 @@
+[
+  {
+    "id": "slide-section-6",
+    "concept_ids": [
+      "m4.competency"
+    ],
+    "layout": "scene",
+    "heading_fil": "Kapag mabagal ang proseso",
+    "heading_en": "When the process is slow",
+    "display_fil": "Kumalma bago mag-follow-up.\nItanong ang status at kulang na dokumento.\nLinawin ang susunod na hakbang.",
+    "display_en": "Pause before following up.\nAsk about status and missing documents.\nClarify the next step.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Alam mo na ngayon ang buong proseso — pero ano ang gagawin mo kung inabot ito ng ilang buwan nang walang balita?\n\nAng pinakamahusay na hakbang: pakalmahin muna ang sarili bago sumulpot sa galit, saka mag-follow-up nang may tiyak na tanong — hindi \"kailan pa ba ito matatapos?\" kundi \"ano pong status ng aking aplikasyon, at may kailangan pa po ba akong ibigay?\" Ang malinaw at kalmadong tanong ay mas malamang na masagot kaysa sa reklamong walang tiyak na hinihingi.",
+    "narration_en": "You now know the whole process — but what do you do if months pass with no word?\n\nThe best move: calm yourself first before frustration takes over, then follow up with a specific question — not \"when will this be done?\" but \"what's the status of my application, and is there anything else I need to submit?\" A clear, calm question is more likely to get answered than a complaint with no specific ask."
+  },
+  {
+    "id": "slide-section-7",
+    "concept_ids": [
+      "m4.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Mali kumpara sa tama: humingi ng nararapat",
+    "heading_en": "Wrong versus right: asking for what you're owed",
+    "display_fil": "Iwasan ang galit o panghuhula.\nMaghanda ng tiyak na tanong at tala.\nMag-follow-up nang magalang at may malinaw na layunin.",
+    "display_en": "Avoid anger or guesses.\nPrepare a specific question and records.\nFollow up respectfully with a clear purpose.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Ano ang maayos na follow-up?",
+      "prompt_en": "What is a constructive follow-up?",
+      "options": [
+        {
+          "fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang.",
+          "en": "Calmly ask about status, missing documents and the next step."
+        },
+        {
+          "fil": "Magalit agad bago alamin ang dahilan.",
+          "en": "Become angry before checking the reason."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Calmly ask about status, missing documents and the next step. Explain why using the lesson situation."
+    },
+    "narration_fil": "**Mali**: Anim na buwan nang naghihintay si Josie sa kanyang akreditasyon, pero hindi siya nagtanong kahit kailan dahil \"baka mukhang naiinip ako.\" Sa kalaunan, nalaman niyang nawala pala ang isa sa kanyang mga dokumento sa opisina — anim na buwang pagkaantala na naiwasan sana kung nag-follow-up siya nang maaga.\n\n**Tama**: Nag-follow-up si Josie tuwing dalawang buwan, may tiyak na tanong tungkol sa status ng aplikasyon, at kalmadong nagpaalala tuwing kailangan. Nang matuklasan ang nawawalang dokumento, agad itong naibigay muli.",
+    "narration_en": "**Wrong**: Josie waited six months for her accreditation but never asked, because \"maybe I'll look impatient.\" She eventually found out one of her documents had gone missing at the office — a six-month delay that could have been avoided with an earlier follow-up.\n\n**Right**: Josie followed up every two months, with a specific question about her application's status, and reminded them calmly whenever needed. When the missing document was discovered, it was resubmitted right away."
+  }
+]

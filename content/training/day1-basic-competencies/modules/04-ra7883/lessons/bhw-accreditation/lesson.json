@@ -1,0 +1,124 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-accreditation",
+    "position": 3,
+    "title_fil": "Proseso ng akreditasyon",
+    "title_en": "The accreditation process",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: proseso ng akreditasyon."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: the accreditation process."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-5",
+      "concept_ids": [
+        "m4.accreditation-body",
+        "m4.board-duties",
+        "m4.registration-committee"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Hindi iisang tao lang ang nagpapasya sa akreditasyon — may sistema ito, may itinalagang responsibilidad, at may talaang pinapanatili.",
+      "takeaway_en": "Accreditation isn't decided by one person alone — it runs through a system, with assigned responsibility and a registry that's kept up to date.",
+      "check": {
+        "prompt_fil": "Ano ang dapat dalhin sa follow-up sa akreditasyon?",
+        "prompt_en": "What should you bring to an accreditation follow-up?",
+        "options": [
+          {
+            "fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang.",
+            "en": "Documents and specific questions about status or missing requirements."
+          },
+          {
+            "fil": "Pangakong hindi kailangan ang proseso.",
+            "en": "A promise that no process is needed."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Documents and specific questions about status or missing requirements. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m4.accreditation-body",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m4.accreditation-body-source"
+      ]
+    },
+    {
+      "id": "m4.board-duties",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m4.board-duties-source"
+      ]
+    },
+    {
+      "id": "m4.registration-committee",
+      "read_ids": [
+        "section-5"
+      ],
+      "slide_ids": [
+        "slide-section-5"
+      ],
+      "source_ids": [
+        "m4.registration-committee-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m4.accreditation-body-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        25
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m4.board-duties-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        25
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m4.registration-committee-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        25
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "draft"
+    }
+  ]
+}
