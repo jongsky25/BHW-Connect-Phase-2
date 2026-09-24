@@ -1,6 +1,8 @@
 # BHW progress view: manual, chapters, subchapters — plan
 
-Status: planned, not started. Agreed with the owner on 24 September 2026.
+Status: Phase 1 implemented (24 September 2026) — summariser, fetcher,
+progress components and the `/home` "My training" card. Phases 2–3 not
+started. Plan agreed with the owner on 24 September 2026.
 
 Goal: a BHW can see at a glance how far along they are in the BHW Reference
 Manual as a whole, in each chapter and in each subchapter, and can jump
@@ -41,7 +43,7 @@ none.
    `Pretest → Lessons → Post-test → Certificate`, each step coloured by its
    state. Each subchapter card gets its own bar (replacing the text line) and
    a status chip.
-3. **Subchapter page** — each lesson shows a status icon (✓ done, ◐ started,
+3. **Subchapter page** — each lesson shows a status icon (✓ done, ● started,
    ○ not started), "Lesson 3 of 6", and the subchapter bar.
 4. **`/home` "My training" card** — overall ring, the current chapter's
    status chip and the Continue button. Only for `role = bhw`.
@@ -60,7 +62,7 @@ carry separate light/dark values and were contrast-checked there.
 |---|---|---|---|
 | Not yet available | neutral, dashed outline (`ink/15`) | 🔒 lock | Hindi pa available / Not yet available |
 | Not started | neutral grey track (`ink/15`) | ○ | Hindi pa nasisimulan / Not started |
-| In progress | `info` (blue) | ◐ | Kasalukuyan / In progress |
+| In progress | `info` (blue) | ● | Kasalukuyan / In progress |
 | Lessons done — take the assessment | `primary` (marigold) | → | Handa na sa pagtatasa / Ready for assessment |
 | Assessment to retake | `warning` (amber) | ↻ | Ulitin ang pagtatasa / Retake assessment |
 | Completed | `success` (green) | ✓ | Tapos na / Completed |
@@ -68,6 +70,9 @@ carry separate light/dark values and were contrast-checked there.
 
 Design rules:
 
+- **Readable chips.** Chip labels are set in `ink`; the status hue goes on
+  the chip's border, 10% tint and icon. (Hue-coloured 12px text on its own
+  tint measured 4.0–4.4:1 in axe — just under AA.)
 - **Never colour alone.** Every state has an icon and a text label; every bar
   prints its number ("4/6 · 67%"). This covers colour-blind users and
   monochrome screens (WCAG 1.4.1).
