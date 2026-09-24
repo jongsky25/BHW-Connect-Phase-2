@@ -168,7 +168,10 @@ export function summariseManualProgress(input: ManualProgressInput): ManualProgr
     const hasBank = input.questionBankCourseIds.includes(courseId);
     const pretest = input.attempts.some((a) => a.course_id === courseId && a.phase === "pretest");
     const posttest = input.attempts.some((a) => a.course_id === courseId && a.phase === "posttest");
-    const started = c.done > 0 || pretest || subchapters.some((s) => s.state === "in_progress");
+    // A course_progress row is only created once the BHW opens a lesson, so it
+    // also counts as started — the supervisor view has no resume points.
+    const started =
+      status === "in_progress" || c.done > 0 || pretest || subchapters.some((s) => s.state === "in_progress");
 
     const certified = !!certificate || status === "certified";
     const state: ProgressState = certified
@@ -242,7 +245,12 @@ export function summariseManualProgress(input: ManualProgressInput): ManualProgr
         : available.every((ch) => ch.state === "certified")
           ? "certified"
           : total.done === total.total
-            ? "completed"
+            ? // Every lesson is done, so the next step is an assessment, if any.
+              available.some((ch) => ch.state === "retake_assessment")
+              ? "retake_assessment"
+              : available.some((ch) => ch.state === "ready_for_assessment")
+                ? "ready_for_assessment"
+                : "completed"
             : available.some((ch) => ch.state !== "not_started" && ch.state !== "coming_soon")
               ? "in_progress"
               : "not_started";
