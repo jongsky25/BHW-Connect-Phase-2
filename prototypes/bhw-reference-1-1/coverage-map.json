@@ -1,0 +1,463 @@
+{
+  "status": "proposed, awaiting review",
+  "legend": "R=Reference Manual; F=Facilitator Guide; D=Day 1 presentation; one-based PDF page numbers",
+  "concepts": [
+    {
+      "id": "m1.competency",
+      "legacyStatement": "Module 1 maps to the TESDA BHS NC II competency 'Participate in workplace communication', whose outcomes are: obtain and convey relevant workplace information, perform duties following workplace instructions, and complete relevant work-related documents.",
+      "correctedSource": "D5; F19–20",
+      "locations": [
+        {
+          "lesson": "1.1.5",
+          "lessonKey": "bhw-records",
+          "read": "assigned-form",
+          "slide": "assigned-form-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "applied-observation",
+          "slide": "applied-observation-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "handover",
+          "slide": "handover-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.uhc.shift",
+      "legacyStatement": "Asked to name their tasks, BHWs answer in terms of health service delivery; the UHC Act's direction is primary care and health promotion, so the role is wider than service delivery alone.",
+      "correctedSource": "D7; F20; R11",
+      "locations": [
+        {
+          "lesson": "1.1.1",
+          "lessonKey": "bhw-roles-hepo",
+          "read": "morning",
+          "slide": "morning-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.uhc.organizing",
+      "legacyStatement": "Under UHC the BHW's roles as community organizer and health educator are emphasised, not only their service-delivery role.",
+      "correctedSource": "D7,13; F20",
+      "locations": [
+        {
+          "lesson": "1.1.1",
+          "lessonKey": "bhw-roles-hepo",
+          "read": "prevention",
+          "slide": "prevention-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.hepo.umbrella",
+      "legacyStatement": "Under the UHC Act, BHWs are designated barangay-level Health Education and Promotion Officers (HEPOs); the three RA 7883 roles sit under that designation.",
+      "correctedSource": "D8; R11; conceptual illustration D7/F20",
+      "locations": [
+        {
+          "lesson": "1.1.1",
+          "lessonKey": "bhw-roles-hepo",
+          "read": "hepo",
+          "slide": "hepo-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.hepo.knowledge",
+      "legacyStatement": "Each BHW needs sufficient knowledge of the priority health programmes and health problems in order to share them with their barangay.",
+      "correctedSource": "D8; R11",
+      "locations": [
+        {
+          "lesson": "1.1.1",
+          "lessonKey": "bhw-roles-hepo",
+          "read": "knowledge",
+          "slide": "knowledge-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.role.educator",
+      "legacyStatement": "Health Educator: gives people the knowledge to keep their bodies and their environment healthy.",
+      "correctedSource": "D9; R11–12",
+      "locations": [
+        {
+          "lesson": "1.1.2",
+          "lessonKey": "bhw-health-educator",
+          "read": "educator-scene",
+          "slide": "educator-scene-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.2",
+          "lessonKey": "bhw-health-educator",
+          "read": "body-environment",
+          "slide": "body-environment-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "applied-education",
+          "slide": "applied-education-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.educator.lifestages",
+      "legacyStatement": "The Health Educator keeps teaching people about their health and prepares them for illnesses, accidents and risk factors at each stage of life.",
+      "correctedSource": "D9; R11–12",
+      "locations": [
+        {
+          "lesson": "1.1.2",
+          "lessonKey": "bhw-health-educator",
+          "read": "life-stages",
+          "slide": "life-stages-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.educator.allsectors",
+      "legacyStatement": "The Health Educator reaches every sector of the community — children through to the elderly — with information, knowledge and training.",
+      "correctedSource": "D9; R12",
+      "locations": [
+        {
+          "lesson": "1.1.2",
+          "lessonKey": "bhw-health-educator",
+          "read": "all-sectors",
+          "slide": "all-sectors-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.role.organizer",
+      "legacyStatement": "Community Organizer: maintains good relationships and communication with community leaders and members, and with city/municipal health staff.",
+      "correctedSource": "D10; R12",
+      "locations": [
+        {
+          "lesson": "1.1.3",
+          "lessonKey": "bhw-community-organizer",
+          "read": "organizer-scene",
+          "slide": "organizer-scene-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "applied-organizing",
+          "slide": "applied-organizing-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.organizer.participation",
+      "legacyStatement": "The Community Organizer organises community members and encourages their participation in health activities and advocacy.",
+      "correctedSource": "D10; R12",
+      "locations": [
+        {
+          "lesson": "1.1.3",
+          "lessonKey": "bhw-community-organizer",
+          "read": "participation",
+          "slide": "participation-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "applied-organizing",
+          "slide": "applied-organizing-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.organizer.planningteam",
+      "legacyStatement": "The BHW is a member of the barangay planning team for health, helping community leaders understand and act on the barangay's own health problems.",
+      "correctedSource": "D10; R12",
+      "locations": [
+        {
+          "lesson": "1.1.3",
+          "lessonKey": "bhw-community-organizer",
+          "read": "planning-team",
+          "slide": "planning-team-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.organizer.liph",
+      "legacyStatement": "Under UHC, each city's or province's Local Investment Plan for Health (LIPH) recognises the barangay's contribution to health planning, and BHWs are expected to participate in that planning.",
+      "correctedSource": "R12",
+      "locations": [
+        {
+          "lesson": "1.1.3",
+          "lessonKey": "bhw-community-organizer",
+          "read": "liph",
+          "slide": "liph-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.role.provider",
+      "legacyStatement": "Health Service Provider: part of the city/municipal primary care team, assisting the barangay midwife in delivering health services.",
+      "correctedSource": "D11; R12",
+      "locations": [
+        {
+          "lesson": "1.1.4",
+          "lessonKey": "bhw-service-provider",
+          "read": "first-contact",
+          "slide": "first-contact-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.provider.firstcontact",
+      "legacyStatement": "BHWs are the community's first contact and frontline health workers when a health service is needed.",
+      "correctedSource": "D11; R12",
+      "locations": [
+        {
+          "lesson": "1.1.4",
+          "lessonKey": "bhw-service-provider",
+          "read": "first-contact",
+          "slide": "first-contact-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.provider.guide",
+      "legacyStatement": "The Health Service Provider guides people on where to go to meet their health needs.",
+      "correctedSource": "D11; R12",
+      "locations": [
+        {
+          "lesson": "1.1.4",
+          "lessonKey": "bhw-service-provider",
+          "read": "guide",
+          "slide": "guide-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "handover",
+          "slide": "handover-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.provider.initialservices",
+      "legacyStatement": "BHWs deliver simple initial services themselves: interviewing, taking vital signs, recording, making the household profile, and first aid.",
+      "correctedSource": "R12",
+      "locations": [
+        {
+          "lesson": "1.1.4",
+          "lessonKey": "bhw-service-provider",
+          "read": "boundaries",
+          "slide": "boundaries-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.provider.monitoring",
+      "legacyStatement": "BHWs continue care for their community by monitoring people's health over time.",
+      "correctedSource": "D12; R12",
+      "locations": [
+        {
+          "lesson": "1.1.4",
+          "lessonKey": "bhw-service-provider",
+          "read": "follow-up",
+          "slide": "follow-up-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.provider.records",
+      "legacyStatement": "BHWs help collect and safeguard data and records from the households in their assigned area, and these data guide health programmes.",
+      "correctedSource": "D12; R12",
+      "locations": [
+        {
+          "lesson": "1.1.5",
+          "lessonKey": "bhw-records",
+          "read": "record-purpose",
+          "slide": "record-purpose-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "handover",
+          "slide": "handover-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.provider.documents",
+      "legacyStatement": "The BHW's documentation duties: household profiles, master lists of the different groups in the community, registries of people given services, and other government/DOH/LGU forms assigned by the nurse, midwife or doctor.",
+      "correctedSource": "D12; R12; F20",
+      "locations": [
+        {
+          "lesson": "1.1.5",
+          "lessonKey": "bhw-records",
+          "read": "household-profile",
+          "slide": "household-profile-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.5",
+          "lessonKey": "bhw-records",
+          "read": "list-registry",
+          "slide": "list-registry-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        },
+        {
+          "lesson": "1.1.5",
+          "lessonKey": "bhw-records",
+          "read": "assigned-form",
+          "slide": "assigned-form-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1.skills.crossref",
+      "legacyStatement": "The skills each role needs are taught elsewhere in the curriculum: health-promotion skills under Core Competencies, community-organising skills under Community Mobilization in Common Competencies.",
+      "correctedSource": "F20 item 7",
+      "locations": [
+        {
+          "lesson": "1.1.6",
+          "lessonKey": "bhw-roles-application",
+          "read": "next-learning",
+          "slide": "next-learning-slide",
+          "languages": [
+            "fil",
+            "en"
+          ]
+        }
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "m1.outline.repeat",
+      "source": "D4,14,26,42,47,51,58,68",
+      "reason": "Replaced by course navigation"
+    },
+    {
+      "id": "m1.filler.heels",
+      "source": "D41",
+      "reason": "Unrelated interstitial"
+    },
+    {
+      "id": "m1.filler.hydration",
+      "source": "D67",
+      "reason": "Interstitial; does not exclude separately sourced OSH heat/hydration content"
+    }
+  ]
+}
