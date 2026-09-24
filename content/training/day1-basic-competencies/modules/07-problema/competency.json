@@ -1,0 +1,66 @@
+{
+  "competency_statement_fil": "Lutasin o tugunan ang karaniwang problema sa trabaho.",
+  "competency_statement_en": "Solve or address general workplace problems",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Inilalarawan ang problema sa pangyayari, bilang at pinagmulan ng detalye.",
+      "observable_en": "Describes the problem through events, counts and information sources.",
+      "not_yet_fil": "Pagkatao ang tinatatakan sa halip na tukuyin ang hadlang.",
+      "not_yet_en": "Labels character rather than identifying the barrier.",
+      "levels": {
+        "kaya_na_fil": "Naghihiwalay ng natiyak na datos at kulang pang impormasyon.",
+        "kaya_na_en": "Separates verified data and missing information.",
+        "kailangan_practice_fil": "Nawawasto ang mapanghusgang paglalarawan matapos ma-prompt.",
+        "kailangan_practice_en": "Corrects a judgmental description after a prompt.",
+        "hindi_pa_fil": "Patuloy na inilalahad ang hula bilang datos.",
+        "hindi_pa_en": "Continues to present guesses as data."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "Nakabubuo ng magkakaugnay na bakit at pinagmulan ng bawat sagot.",
+      "observable_en": "Builds connected why questions and identifies each answer’s source.",
+      "not_yet_fil": "Paulit-ulit na sinisisi ang residente o pinipilit ang iisang sanhi.",
+      "not_yet_en": "Repeatedly blames the resident or forces one cause.",
+      "levels": {
+        "kaya_na_fil": "Sinusuri ang magkakaibang sanhi kasama ang residente at health team.",
+        "kaya_na_en": "Examines different causes with residents and the health team.",
+        "kailangan_practice_fil": "Nangangailangan ng tulong upang maitakda ang susunod na bakit.",
+        "kailangan_practice_en": "Needs help framing the next why.",
+        "hindi_pa_fil": "Walang ugnayan ang mga sagot o itinuturing na katibayan ang hula.",
+        "hindi_pa_en": "Answers are disconnected or guesses are treated as evidence."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Ginagamit ang laki, kabigatan, feasibility at urgency at tamang suma.",
+      "observable_en": "Uses magnitude, severity, feasibility and urgency with correct totals.",
+      "not_yet_fil": "Pinagpapalit ang urgency at feasibility o walang paliwanag ang score.",
+      "not_yet_en": "Confuses urgency with feasibility or cannot explain scores.",
+      "levels": {
+        "kaya_na_fil": "Naipapaliwanag ang ranking at binabalikan ang tabla o sensitibong tradeoff.",
+        "kaya_na_en": "Explains ranking and reviews ties or difficult tradeoffs.",
+        "kailangan_practice_fil": "Tama ang marka matapos itama ang isang criterion o pagdaragdag.",
+        "kailangan_practice_en": "Scores correctly after a criterion or arithmetic correction.",
+        "hindi_pa_fil": "Pinipili ang paboritong solusyon bago pa suriin ang mga problema.",
+        "hindi_pa_en": "Chooses a favorite solution before assessing the problems."
+      }
+    },
+    {
+      "objective_index": 3,
+      "observable_fil": "Iniuugnay ang mungkahi sa sanhi at tinutukoy ang may-ari at review date.",
+      "observable_en": "Links a proposal to the cause and names an owner and review date.",
+      "not_yet_fil": "Pangkalahatang “mag-seminar” lang ang plano at walang sukatan.",
+      "not_yet_en": "Only proposes a generic seminar without a measure.",
+      "levels": {
+        "kaya_na_fil": "Naghahambing ng opsyon at kumukumpirma ng resources at partner bago mangako.",
+        "kaya_na_en": "Compares options and confirms resources and partners before promising.",
+        "kailangan_practice_fil": "May plano ngunit kailangang paalalahanan sa sukatan o responsibilidad.",
+        "kailangan_practice_en": "Has a plan but needs a reminder about measurement or responsibility.",
+        "hindi_pa_fil": "Hindi tumatama sa sanhi ang mungkahi o nangangako ng hindi aprubadong serbisyo.",
+        "hindi_pa_en": "Proposal misses the cause or promises an unapproved service."
+      }
+    }
+  ]
+}

@@ -1811,12 +1811,8 @@ answer key), and a one-indicator-per-objective competency block.
 
 **Not done, and deliberately not claimed above:**
 
-- **No user approval yet.** INC-21r's Module 1 had an explicit re-opened
-  approval gate ("the user reviews Module 1 rendered in the real app... and
-  approves"); INC-24's own DoD does not name one, but given INC-21's Module 1
-  needed a full re-author after failing review on subject (not style), these
-  four modules should still get a user look before INC-25 builds on top of
-  them the same way INC-24 was told to build on an approved Module 1.
+- **User approved Modules 2–5 on 24 September 2026** and authorized work
+  on Modules 6–9. The content approval gate is closed.
 - **Audio and animation modalities are unverified.** No `AZURE_SPEECH_KEY`
   in this session (same gap INC-27's own status note names), so narration
   audio was not rendered for these modules and INC-28's animated-SVG
@@ -1859,6 +1855,36 @@ landing in the gap queue; no existing HHP+ fixture regresses.
 
 ---
 
+### INC-25 authoring status — 24 September 2026
+
+Modules 6–9 are authored for review in Filipino and English: communication,
+problem solving, occupational safety and health, and sustainable workplace
+practices. Each includes a source coverage map, four observable objectives
+and matching rubric indicators, facilitator notes, retrieval checks, and
+visuals. Module 6 has 17 sections and an eight-hour facilitated practice
+plan; this preserves the source weighting without imposing eight hours of
+app reading. The four modules add five SVGs, 17 cited Chat Guide entries,
+and 18 assessment questions. The actual course file now has **38 questions**
+(the prior file had 20; the earlier INC-24 note saying 21 was inaccurate).
+
+Offline loader validation: nine modules, 54 QA entries, zero review flags.
+The targeted suite passes 89 tests; the six new Chat Guide tests enforce
+at least 90% training retrieval, the required BHW-role answer, preservation
+of every previously passing HHP+ answer, scope boundaries and gap behavior.
+No new synonyms or matcher algorithm changes were needed.
+
+Source URL checks reached six of the seven new sources. AHRQ returned HTTP
+403 to the automated checker, although its teach-back page was verified
+through web retrieval. Existing HHP+ links also returned a timeout and 502;
+therefore the whole source-check command is **not green**.
+
+**Still pending:** user review of Modules 6–9; live pilot loading and rendered
+read-through; KB publication; narration and animation verification; and the
+full end-to-end verification below. Offline retrieval fixtures simulate
+published entries and do not establish that those entries are live.
+
+---
+
 ## Verification (end-to-end, after INC-25)
 
 1. Admin publishes the Day 1 course; `elearning` + `course_sessions` both on.
@@ -1884,3 +1910,4 @@ landing in the gap queue; no existing HHP+ fixture regresses.
 9. Full suite green — `npm run lint`, `npm test`, Playwright, the Lighthouse
    budget check — with `e2e/elearning.spec.ts` unchanged from before this
    work, proving the INC-12 system it extends did not regress.
+
