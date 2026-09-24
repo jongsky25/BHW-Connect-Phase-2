@@ -1,4 +1,4 @@
-import type { ProgressState, StepKey, StepState } from "@/lib/progress/manual-progress";
+import type { LessonState, ProgressState, StepKey, StepState } from "@/lib/progress/manual-progress";
 
 export type Locale = "fil" | "en";
 export type Bilingual = { fil: string; en: string };
@@ -77,6 +77,12 @@ export const STATE_STYLES: Record<
     icon: "★",
     label: { fil: "Sertipikado", en: "Certified" },
   },
+};
+
+export const LESSON_STYLES: Record<LessonState, { icon: string; iconClass: string; label: Bilingual }> = {
+  not_started: { icon: "○", iconClass: "text-ink/60", label: { fil: "Hindi pa nasisimulan", en: "Not started" } },
+  in_progress: { icon: "●", iconClass: "text-info", label: { fil: "Nasimulan na", en: "Started" } },
+  completed: { icon: "✓", iconClass: "text-success", label: { fil: "Tapos na", en: "Completed" } },
 };
 
 export const STEP_LABELS: Record<StepKey, Bilingual> = {

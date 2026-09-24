@@ -1,8 +1,10 @@
 # BHW progress view: manual, chapters, subchapters — plan
 
-Status: Phase 1 implemented (24 September 2026) — summariser, fetcher,
-progress components and the `/home` "My training" card. Phases 2–3 not
-started. Plan agreed with the owner on 24 September 2026.
+Status: Phases 1–2 implemented (24 September 2026) — summariser, fetcher,
+progress components, the `/home` "My training" card, and the manual route
+(overview ring + Continue, chapter bars and step tracker, subchapter bars,
+per-lesson status). The celebration animation in §4 is not built yet.
+Phase 3 not started. Plan agreed with the owner on 24 September 2026.
 
 Goal: a BHW can see at a glance how far along they are in the BHW Reference
 Manual as a whole, in each chapter and in each subchapter, and can jump
@@ -134,6 +136,11 @@ conflicts:
 - One small PR that merges `main`, then replaces the text lines in the
   manual route with the Phase 1 components. Few lines in that file.
 - Browser check at 360 / 768 / 1280px, light and dark mode, axe scan.
+- Done: `loadManualProgress` takes an optional program id and runs in
+  parallel with the route's own reads, for BHWs on the manual, chapter and
+  subchapter pages only (not the lesson page; never for admins). A load
+  failure goes to Sentry and hides the progress view; the manual still
+  renders.
 
 **Phase 3 — supervisor view**
 
