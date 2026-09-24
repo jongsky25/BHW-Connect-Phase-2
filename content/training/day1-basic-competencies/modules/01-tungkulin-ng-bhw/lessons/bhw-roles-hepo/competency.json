@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Maipaliwanag kung paano nagsasama ang pagtuturo, pag-oorganisa, at pagtulong sa serbisyo sa papel ng BHW.",
+      "observable_en": "Explain how education, organizing, and service support work together in the BHW role.",
+      "not_yet_fil": "Hindi pa maipaliwanag ang sagot sa sitwasyon.",
+      "not_yet_en": "Cannot yet explain the response to the scenario.",
+      "levels": {
+        "kaya_na_fil": "Naipaliwanag nang wasto at walang gabay.",
+        "kaya_na_en": "Explains accurately without prompting.",
+        "kailangan_practice_fil": "Naipaliwanag sa tulong ng tanong.",
+        "kailangan_practice_en": "Explains with prompts.",
+        "hindi_pa_fil": "Kailangan pang ipakita at pagsanayan.",
+        "hindi_pa_en": "Needs further demonstration and practice."
+      }
+    }
+  ]
+}
