@@ -2,9 +2,8 @@ import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { TrainingSessionsConsole } from "@/components/elearning/training-sessions-console";
 import type { CourseSession } from "@/lib/elearning/types";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const SESSION_COLUMNS =
   "id, course_id, org_unit_id, facilitator_user_id, scheduled_at, location_note, lesson_density, status, created_at, courses(title_fil, title_en)";
@@ -19,7 +18,7 @@ const SESSION_COLUMNS =
 // the facilitator UI... the same way elearning already gates /courses".
 export default async function TrainingSessionsPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.elearning || !flags.course_sessions) {
     redirect("/home");
@@ -27,11 +26,11 @@ export default async function TrainingSessionsPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser || appUser.role !== "assessor") {
     redirect("/home");
   }

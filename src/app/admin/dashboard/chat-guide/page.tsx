@@ -4,9 +4,9 @@ import { GapQueueList } from "@/components/admin/dashboard/gap-queue-list";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
 import { TopTopicsList } from "@/components/admin/dashboard/top-topics-list";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { DashboardTopTopic, DashboardTrendPoint, GapQueueRow } from "@/lib/dashboard/types";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function AdminDashboardChatGuidePage({
   searchParams,
@@ -35,7 +35,7 @@ export default async function AdminDashboardChatGuidePage({
         .select("id", { count: "exact", head: true })
         .eq("status", "published")
         .lt("review_due_on", today),
-      getFeatureFlags(supabase),
+      getRequestFeatureFlags(),
     ]);
 
   const topicRows = (topics ?? []) as DashboardTopTopic[];

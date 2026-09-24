@@ -3,20 +3,18 @@ import { redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SettingsForm } from "@/components/settings/settings-form";
 import { parseA11ySettings } from "@/lib/settings/types";
-import { getAppUser } from "@/lib/supabase/app-user";
-import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser } from "@/lib/supabase/request";
 
 export default async function SettingsPage() {
-  const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
 
   if (!user) {
     redirect("/login");
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }

@@ -1,16 +1,15 @@
 import { redirect } from "next/navigation";
 import { AssessmentsConsole } from "@/components/elearning/assessments-console";
 import type { Assessment } from "@/lib/elearning/types";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const ASSESSMENT_COLUMNS =
   "id, course_id, bhw_user_id, org_unit_id, status, assessor_user_id, notes, created_at, decided_at, courses(title_fil, title_en), users:bhw_user_id(full_name, username)";
 
 export default async function AssessmentsPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.elearning) {
     redirect("/home");
@@ -18,11 +17,11 @@ export default async function AssessmentsPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser || appUser.role !== "assessor") {
     redirect("/home");
   }

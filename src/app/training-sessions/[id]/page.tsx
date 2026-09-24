@@ -10,9 +10,8 @@ import type {
   CourseSession,
   CourseSessionEnrollment,
 } from "@/lib/elearning/types";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const SESSION_COLUMNS =
   "id, course_id, org_unit_id, facilitator_user_id, scheduled_at, location_note, lesson_density, status, created_at, courses(title_fil, title_en)";
@@ -24,7 +23,7 @@ export default async function TrainingSessionDetailPage({
 }) {
   const { id } = await params;
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.elearning || !flags.course_sessions) {
     redirect("/home");
@@ -32,11 +31,11 @@ export default async function TrainingSessionDetailPage({
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   // course_sessions_facilitator_own RLS already restricts the row below to
   // sessions this facilitator scheduled — a bhw or an assessor viewing
   // someone else's session gets nothing back here, same refusal shape
