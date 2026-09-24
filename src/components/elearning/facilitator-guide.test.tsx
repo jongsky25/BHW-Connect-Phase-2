@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { NotesMarkdown } from "./notes-markdown";
 import { FacilitatorRoster } from "./facilitator-roster";
@@ -49,6 +49,31 @@ describe("FacilitatorRoster", () => {
       p_bhw_user_id: "b1", p_module_id: "m1", p_objective_index: 0, p_level: "kailangan_practice", p_note: "Needed one prompt",
     });
     expect(screen.getByRole("status")).toHaveTextContent("Observation recorded for Rosa Cruz.");
+  });
+
+  it("lists follow-ups oldest first and BHWs ready to observe, and opens the right indicator", () => {
+    const two = [...indicators, { objective_index: 1, observable: "Gives an example", levels: indicators[0].levels }];
+    const people = [
+      ...rows,
+      { id: "b2", name: "Lito Reyes", unit: null, lessonsDone: 2, pretest: null, posttest: null, certified: false },
+      { id: "b3", name: "Ana Santos", unit: null, lessonsDone: 2, pretest: null, posttest: null, certified: false },
+    ];
+    const obs = (id: string, bhw: string, index: number, level: "kaya_na" | "kailangan_practice" | "hindi_pa", at: string, note = "") =>
+      ({ id, bhw_user_id: bhw, observer_user_id: "f", module_id: "m1", objective_index: index, level, note, observed_at: at });
+    render(<FacilitatorRoster lang="en" moduleId="m1" rows={people} indicators={two} lessonCount={2} observations={[
+      obs("o1", "b1", 0, "hindi_pa", "2026-09-10T00:00:00Z"),
+      obs("o2", "b1", 0, "kaya_na", "2026-09-12T00:00:00Z"),
+      obs("o3", "b1", 1, "kailangan_practice", "2026-09-11T00:00:00Z", "Needed a prompt"),
+      obs("o4", "b2", 0, "hindi_pa", "2026-09-01T00:00:00Z"),
+    ]} />);
+    const panel = screen.getByRole("heading", { name: "Needs follow-up" }).parentElement!;
+    const items = within(panel).getAllByRole("listitem").map((li) => li.textContent);
+    expect(items).toHaveLength(2);
+    expect(items[0]).toMatch(/^Lito Reyes · Ind\. 1: Hindi pa/);
+    expect(items[1]).toMatch(/^Rosa Cruz · Ind\. 2: Kailangan pa ng practice.*Needed a prompt/);
+    expect(within(panel).getByText(/not yet observed/).parentElement).toHaveTextContent("Ana Santos");
+    fireEvent.click(within(panel).getAllByRole("button", { name: "Re-observe" })[1]);
+    expect(screen.getByRole("combobox")).toHaveValue("1");
   });
 
   it("explains a rejected recording", async () => {

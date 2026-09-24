@@ -28,6 +28,11 @@ export type ElearningErrorKey =
   | "sessionNoLongerScheduledError"
   | "userNotBhwError"
   | "bhwOutOfScopeError"
+  | "invalidAttendanceStatusError"
+  | "invalidDurationError"
+  | "notesTooLongError"
+  | "logSubchapterFirstError"
+  | "attendanceIncompleteError"
   | "genericError";
 
 // rpc_course_*/rpc_assessment_* raise plain Postgres exceptions (same
@@ -65,5 +70,10 @@ export function mapElearningRpcError(message: string | undefined): ElearningErro
   if (message.includes("session not found")) return "sessionNotFoundError";
   if (message.includes("user is not a BHW")) return "userNotBhwError";
   if (message.includes("BHW out of scope")) return "bhwOutOfScopeError";
+  if (message.includes("invalid attendance status")) return "invalidAttendanceStatusError";
+  if (message.includes("invalid duration")) return "invalidDurationError";
+  if (message.includes("notes too long")) return "notesTooLongError";
+  if (message.includes("log at least one subchapter")) return "logSubchapterFirstError";
+  if (message.includes("attendance incomplete")) return "attendanceIncompleteError";
   return "genericError";
 }

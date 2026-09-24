@@ -101,9 +101,20 @@ describe('manual navigation',()=>{
     expect(screen.getByText(/Ind\. 1: Kaya na/)).toBeInTheDocument();
     expect(screen.getAllByRole('button',{name:'Record observation'})).toHaveLength(2);
   });
+  it('facilitator chapter page shows where BHWs in the area struggle',async()=>{
+    state.role='assessor';
+    state.rows.course_test_questions=[{id:'q',course_id:'course',position:0,prompt_en:'Who accredits a BHW?',prompt_fil:'',correct_option_index:0,options:[{en:'Local health board',fil:''},{en:'The midwife',fil:''}]}];
+    state.rows.course_test_attempts=[{course_id:'course',bhw_user_id:'b1',phase:'pretest',taken_at:'2026-09-01',answers:[{question_id:'q',selected_option_index:1}]},
+      {course_id:'course',bhw_user_id:'b2',phase:'pretest',taken_at:'2026-09-01',answers:[{question_id:'q',selected_option_index:0}]}];
+    render(await page(['chapter-1']));
+    expect(screen.getByRole('heading',{name:'Where BHWs in your area struggle'})).toBeInTheDocument();
+    expect(screen.getByText(/Pretest: 50% correct \(1\/2\)/)).toBeInTheDocument();
+    expect(screen.getByText('The midwife')).toBeInTheDocument();
+  });
   it('learners and designers never load facilitator-only data',async()=>{
     for(const role of ['bhw','designer']){
       state.role=role;state.calls=[];
+      render(await page(['chapter-1']));expect(screen.queryByText('Where BHWs in your area struggle')).not.toBeInTheDocument();cleanup();
       render(await page(['chapter-1','m1']));cleanup();
       render(await page(['chapter-1','m1','l1'],'lesson'));cleanup();
       expect(state.calls.filter(c=>guideTables.includes(c.table))).toEqual([]);

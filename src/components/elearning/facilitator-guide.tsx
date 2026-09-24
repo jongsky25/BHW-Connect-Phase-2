@@ -6,8 +6,8 @@ import {
   type RosterIndicator,
   type RosterRow,
 } from "@/components/elearning/facilitator-roster";
-import { parseFacilitatorNotes, type CompetencyObservation } from "@/lib/elearning/facilitator-guide";
-import type { CourseModuleFacilitatorNotes, ObservationIndicator } from "@/lib/elearning/types";
+import { parseFacilitatorNotes, type CompetencyObservation, type TestItemStat } from "@/lib/elearning/facilitator-guide";
+import type { CourseModuleFacilitatorNotes, CourseSessionDelivery, ObservationIndicator } from "@/lib/elearning/types";
 
 // Facilitator guide for the manual's subchapter and lesson pages. Server
 // components only; rendered only for assessor/admin viewers, from notes RLS
@@ -68,6 +68,7 @@ export function SubchapterFacilitatorGuide({
   observations,
   moduleId,
   rosterTruncated,
+  deliveries = [],
 }: {
   lang: Lang;
   lessons: GuideLesson[];
@@ -77,6 +78,7 @@ export function SubchapterFacilitatorGuide({
   observations: CompetencyObservation[];
   moduleId: string;
   rosterTruncated: boolean;
+  deliveries?: CourseSessionDelivery[];
 }) {
   const indicators = notes?.observation_indicators ?? [];
   const rosterIndicators: RosterIndicator[] = indicators.map((i) => ({
@@ -149,6 +151,23 @@ export function SubchapterFacilitatorGuide({
       <Section id="guide-run" title={pick(lang, "3. Paano patakbuhin ang subchapter", "3. How to run this subchapter")}>
         {script ? <NotesMarkdown markdown={script} /> : <p className="text-sm text-ink/60">{pick(lang, "Wala pang tala ng facilitator.", "No facilitator notes authored yet.")}</p>}
         <p className="text-sm text-ink/70">{pick(lang, "May sariling hakbang-hakbang na gabay ang bawat aralin — buksan ang aralin sa itaas.", "Each lesson has its own step-by-step guide — open a lesson above.")}</p>
+        <div>
+          <p className="font-medium">{pick(lang, "Mga huling pagtuturo nito sa iyong lugar", "Recent runs in your area")}</p>
+          {deliveries.length ? (
+            <ul className="mt-2 flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10 text-sm">
+              {deliveries.map((d) => (
+                <li key={d.id} className="flex flex-col gap-1 p-3">
+                  <span className="font-medium">
+                    {new Date(d.recorded_at).toLocaleDateString(lang === "en" ? "en-PH" : "fil-PH")} · {pick(lang, `${d.duration_minutes} minuto`, `${d.duration_minutes} min`)}
+                  </span>
+                  {d.notes && <span className="whitespace-pre-wrap text-ink/80">{d.notes}</span>}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-1 text-sm text-ink/60">{pick(lang, "Wala pang naitalang pagtuturo ng subchapter na ito. Itala ito sa iyong training session.", "No logged runs of this subchapter yet. Log them from your training session.")}</p>
+          )}
+        </div>
       </Section>
 
       <Section id="guide-bhws" title={pick(lang, "4. Mga BHW sa iyong lugar", "4. BHWs in your area")} open>
@@ -200,6 +219,43 @@ export function LessonFacilitatorGuide({
             {indicators.map((ind, j) => <IndicatorCard key={j} index={j} indicator={ind} lang={lang} objective={objectives[ind.objective_index]} />)}
           </ul>
         </Section>
+      )}
+    </section>
+  );
+}
+
+export function ChapterTestInsights({ lang, items, bhwCount }: { lang: Lang; items: TestItemStat[]; bhwCount: number }) {
+  const pct = (p: number | null) => (p === null ? "—" : `${p}%`);
+  return (
+    <section aria-labelledby="test-insights" className="flex flex-col gap-3 rounded-xl border border-secondary/30 bg-secondary/5 p-5">
+      <h2 id="test-insights" className="text-lg font-semibold">{pick(lang, "Saan nahihirapan ang mga BHW sa iyong lugar", "Where BHWs in your area struggle")}</h2>
+      <p className="text-sm text-ink/70">
+        {pick(lang,
+          `Pretest at posttest ng kabanatang ito, mula sa pinakahuling sagot ng ${bhwCount} BHW. Nasa itaas ang pinakamahirap na tanong — unahin ito sa pagbabalik-aral.`,
+          `This chapter's pretest and posttest, from the latest answers of ${bhwCount} BHWs. The hardest questions are first — review these first.`)}
+      </p>
+      {items.length === 0 || bhwCount === 0 ? (
+        <p className="text-sm text-ink/60">{pick(lang, "Wala pang sumasagot sa pretest o posttest.", "No pretest or posttest answers yet.")}</p>
+      ) : (
+        <ol className="flex flex-col gap-2">
+          {items.map(({ question, pretest, posttest, commonWrongOption }) => {
+            const wrong = commonWrongOption === null ? null : question.options[commonWrongOption];
+            return (
+              <li key={question.id} className="rounded-md border border-ink/10 bg-canvas p-3 text-sm">
+                <p className="font-medium">{pick(lang, question.prompt_fil, question.prompt_en)}</p>
+                <p className="mt-1 text-ink/80">
+                  {pick(lang, "Pretest", "Pretest")}: {pct(pretest.percent)} {pick(lang, "tama", "correct")} ({pretest.correct}/{pretest.answered})
+                  {" · "}{pick(lang, "Posttest", "Posttest")}: {pct(posttest.percent)} {pick(lang, "tama", "correct")} ({posttest.correct}/{posttest.answered})
+                </p>
+                {wrong && (
+                  <p className="mt-1 text-ink/70">
+                    {pick(lang, "Karaniwang maling sagot: ", "Most common wrong answer: ")}<span className="italic">{pick(lang, wrong.fil, wrong.en)}</span>
+                  </p>
+                )}
+              </li>
+            );
+          })}
+        </ol>
       )}
     </section>
   );
