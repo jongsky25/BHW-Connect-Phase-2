@@ -55,8 +55,8 @@ course/module IDs or conflicting lesson metadata stop with a reconciliation erro
 Identical staging/publication performs zero database writes. Revisions hash the
 canonical learner content, lesson metadata, asset hashes and private notes.
 
-Run `node --test scripts/tests/reference-content.test.mjs scripts/tests/reference-navigation.test.mjs`
-with Node 22.18+; see `docs/bhw-reference-content-navigation.md` for verification
+Run `npm test -- scripts/tests/reference-content.test.mjs scripts/tests/reference-navigation.test.mjs`
+through Vitest; see `docs/bhw-reference-content-navigation.md` for verification
 limits and the extended disposable PostgreSQL rehearsal.
 
 Versioned source of truth for facilitated BHW training content, loaded into a

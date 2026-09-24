@@ -20,13 +20,13 @@ export async function seedLegacy(db){
     const id=randomUUID(),auth=randomUUID();await db.query('insert into auth.users(id) values($1)',[auth]);
     await db.query('insert into users(id,auth_user_id,username,full_name,role,org_unit_id,status) values($1,$2,$3,$4,$5,$6,$7)',[id,auth,`foundation.${name.toLowerCase()}`,name,role,scope,status]);users[name]={id,auth};
   }
-  const course=randomUUID(),module=randomUUID(),otherModule=randomUUID();
+  const course=randomUUID(),moduleId=randomUUID(),otherModule=randomUUID();
   await db.query("insert into courses(id,org_unit_id,author_user_id,title_fil,title_en,status) values($1,$2,$3,'Kabanata I','Chapter I','published')",[course,org.city,users.admin.id]);
-  for(const [id,pos] of [[module,0],[otherModule,1]])await db.query("insert into course_modules(id,course_id,position,type,title_fil,title_en,lesson) values($1,$2,$3,'text','Tungkulin','Roles',$4)",[id,course,pos,{sections:[{concept_ids:['m1.roles'],body_fil:'Orihinal',body_en:'Original'}]}]);
+  for(const [id,pos] of [[moduleId,0],[otherModule,1]])await db.query("insert into course_modules(id,course_id,position,type,title_fil,title_en,lesson) values($1,$2,$3,'text','Tungkulin','Roles',$4)",[id,course,pos,{sections:[{concept_ids:['m1.roles'],body_fil:'Orihinal',body_en:'Original'}]}]);
   const cp={};const oldTime='2026-09-01T02:00:00.000Z';
   for(const name of ['partial','complete','certified']){
     cp[name]=randomUUID();await db.query('insert into course_progress(id,course_id,bhw_user_id,status,content_completed_at) values($1,$2,$3,$4,$5)',[cp[name],course,users[name].id,name==='certified'?'certified':name==='complete'?'content_completed':'in_progress',name==='partial'?null:oldTime]);
-    await db.query('insert into course_module_progress(course_progress_id,module_id,completed_at) values($1,$2,$3)',[cp[name],module,name==='partial'?null:oldTime]);
+    await db.query('insert into course_module_progress(course_progress_id,module_id,completed_at) values($1,$2,$3)',[cp[name],moduleId,name==='partial'?null:oldTime]);
     if(name!=='partial')await db.query('insert into course_module_progress(course_progress_id,module_id,completed_at) values($1,$2,$3)',[cp[name],otherModule,oldTime]);
   }
   const assessment=randomUUID();await db.query("insert into assessments(id,course_id,bhw_user_id,org_unit_id,status,assessor_user_id) values($1,$2,$3,$4,'passed',$5)",[assessment,course,users.certified.id,org.barangay,users.facilitator.id]);
@@ -34,7 +34,7 @@ export async function seedLegacy(db){
   const session=randomUUID();await db.query("insert into course_sessions(id,course_id,org_unit_id,facilitator_user_id,scheduled_at) values($1,$2,$3,$4,now())",[session,course,org.city,users.facilitator.id]);
   for(const name of ['new','partial'])await db.query('insert into course_session_enrollments(session_id,bhw_user_id) values($1,$2)',[session,users[name].id]);
   await db.query("insert into course_test_attempts(course_id,bhw_user_id,session_id,phase,score_percent,answers) values($1,$2,$3,'pretest',50,'[]')",[course,users.partial.id,session]);
-  return {org,users,course,module,otherModule,cp,oldTime,before:await snapshot(db)};
+  return {org,users,course,module:moduleId,otherModule,cp,oldTime,before:await snapshot(db)};
 }
 
 export async function runScenarios(db,pg,config,fixture){

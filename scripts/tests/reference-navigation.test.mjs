@@ -1,5 +1,5 @@
-// Node 22.18+ native TypeScript stripping; no browser or application credentials.
-import test from "node:test";
+// @vitest-environment node
+import { test } from "vitest";
 import assert from "node:assert/strict";
 import {
   continueLesson,

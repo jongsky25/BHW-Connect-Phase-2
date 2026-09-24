@@ -371,7 +371,7 @@ export function validateReferenceLesson(
 }
 
 export function loadReferenceModule(moduleRoot, publicRoot) {
-  const module = json(moduleRoot, "module.json");
+  const moduleDefinition = json(moduleRoot, "module.json");
   const obligations = json(moduleRoot, "coverage.json")
     .concepts.filter((c) => c.redundant_with == null)
     .map((c) => c.id);
@@ -465,5 +465,5 @@ export function loadReferenceModule(moduleRoot, publicRoot) {
       canonical([...new Set(obligations)].sort()),
     "subchapter must cover exactly all non-excluded legacy concepts",
   );
-  return { module_key: module.id, lessons };
+  return { module_key: moduleDefinition.id, lessons };
 }

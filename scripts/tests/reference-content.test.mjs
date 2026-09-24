@@ -1,4 +1,5 @@
-import test from "node:test";
+// @vitest-environment node
+import { test } from "vitest";
 import assert from "node:assert/strict";
 import { randomUUID } from "node:crypto";
 import {
@@ -15,14 +16,14 @@ import {
   stageReferenceHierarchy,
 } from "../lib/reference-load.mjs";
 import { readFileSync } from "node:fs";
-const module = loadReferenceModule(
+const referenceModule = loadReferenceModule(
   "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw",
   "public",
 );
 test("six bilingual lessons, 31 distinct slides, every legacy concept covered", () => {
-  assert.equal(module.lessons.length, 6);
+  assert.equal(referenceModule.lessons.length, 6);
   assert.equal(
-    module.lessons.reduce((n, l) => n + l.revision.slides.length, 0),
+    referenceModule.lessons.reduce((n, l) => n + l.revision.slides.length, 0),
     31,
   );
 });
@@ -60,13 +61,13 @@ const corruptions = [
 ];
 for (const [name, mutate] of corruptions)
   test(name, () => {
-    const l = structuredClone(module.lessons[0]);
+    const l = structuredClone(referenceModule.lessons[0]);
     mutate(l);
     assert.throws(() => validateReferenceLesson(l));
   });
 test("missing physical assets rejected", () =>
   assert.throws(() =>
-    validateReferenceLesson(module.lessons[0], { assetExists: () => false }),
+    validateReferenceLesson(referenceModule.lessons[0], { assetExists: () => false }),
   ));
 test("stable Read syntax rejects malformed headings and duplicate IDs", () => {
   assert.throws(() => parseReferenceRead("## plain"));
@@ -76,16 +77,16 @@ test("stable Read syntax rejects malformed headings and duplicate IDs", () => {
 });
 test("canonical hashing ignores property order, includes private revisions", () => {
   assert.equal(contentHash({ b: 1, a: 2 }), contentHash({ a: 2, b: 1 }));
-  const changed = structuredClone(module.lessons[0]);
+  const changed = structuredClone(referenceModule.lessons[0]);
   changed.notes.notes_en += " changed";
-  assert.notEqual(contentHash(changed), contentHash(module.lessons[0]));
+  assert.notEqual(contentHash(changed), contentHash(referenceModule.lessons[0]));
 });
 
 function fake() {
   const course = randomUUID(),
     mod = randomUUID(),
     org = randomUUID(),
-    lock = { course, modules: { [module.module_key]: mod }, unrelated: "keep" };
+    lock = { course, modules: { [referenceModule.module_key]: mod }, unrelated: "keep" };
   const tables = {
     courses: [{ id: course, org_unit_id: org }],
     course_modules: [{ id: mod, course_id: course }],
@@ -147,13 +148,13 @@ function fake() {
 test("dry run writes nothing, stage + rerun preserve identities and unrelated locks", async () => {
   const f = fake(),
     options = { orgUnitId: f.org };
-  const p = await planReferenceLoad(f.client, [module], f.lock, options);
+  const p = await planReferenceLoad(f.client, [referenceModule], f.lock, options);
   assert.equal(f.writes.length, 0);
   assert.equal(referenceReport(p)[0].lessons.length, 6);
   await applyReferenceLoad(f.client, p, f.lock, randomUUID());
   const before = canonical(f.tables),
     count = f.writes.length;
-  const second = await planReferenceLoad(f.client, [module], f.lock, options);
+  const second = await planReferenceLoad(f.client, [referenceModule], f.lock, options);
   assert.ok(second[0].entries.every((e) => e.action === "unchanged"));
   await applyReferenceLoad(f.client, second, f.lock, randomUUID());
   assert.equal(f.writes.length, count);
@@ -163,7 +164,7 @@ test("dry run writes nothing, stage + rerun preserve identities and unrelated lo
 test("interrupted private notes recover without duplicate revisions", async () => {
   const f = fake(),
     options = { orgUnitId: f.org };
-  const p = await planReferenceLoad(f.client, [module], f.lock, options);
+  const p = await planReferenceLoad(f.client, [referenceModule], f.lock, options);
   f.interrupt();
   await assert.rejects(
     applyReferenceLoad(f.client, p, f.lock, randomUUID()),
@@ -172,7 +173,7 @@ test("interrupted private notes recover without duplicate revisions", async () =
   assert.ok(f.tables.course_lessons.every((l) => !l.published_revision_id));
   await applyReferenceLoad(
     f.client,
-    await planReferenceLoad(f.client, [module], f.lock, options),
+    await planReferenceLoad(f.client, [referenceModule], f.lock, options),
     f.lock,
     randomUUID(),
   );
@@ -184,11 +185,11 @@ test("publication rejects draft assets before writes, then promotes once", async
   const f = fake(),
     options = { orgUnitId: f.org, promote: true };
   await assert.rejects(
-    planReferenceLoad(f.client, [module], f.lock, options),
+    planReferenceLoad(f.client, [referenceModule], f.lock, options),
     /approved assets/,
   );
   assert.equal(f.writes.length, 0);
-  const approved = structuredClone(module);
+  const approved = structuredClone(referenceModule);
   approved.lessons.forEach((l) =>
     l.revision.assets.forEach((a) => (a.review_status = "approved")),
   );
@@ -209,9 +210,9 @@ test("publication rejects draft assets before writes, then promotes once", async
 });
 test("stale locks fail closed and never create replacement history", async () => {
   const f = fake();
-  f.lock.modules[module.module_key] = randomUUID();
+  f.lock.modules[referenceModule.module_key] = randomUUID();
   await assert.rejects(
-    planReferenceLoad(f.client, [module], f.lock, { orgUnitId: f.org }),
+    planReferenceLoad(f.client, [referenceModule], f.lock, { orgUnitId: f.org }),
     /Reconcile/,
   );
   assert.equal(f.writes.length, 0);

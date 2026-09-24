@@ -312,7 +312,7 @@ export function CourseDetail({
 
                     {module.type === "text" || module.type === "video" ? (
                       isDone ? (
-                        <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-success">
+                        <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-ink">
                           {t("completedLabel")}
                         </span>
                       ) : (
@@ -418,7 +418,7 @@ function QuizForm({
 
   if (isDone) {
     return (
-      <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-success">
+      <span className="self-start rounded-md bg-success/10 px-3 py-1 text-xs font-medium text-ink">
         {t("completedLabel")} {lastScore != null ? `(${lastScore}%)` : ""}
       </span>
     );

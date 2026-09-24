@@ -34,27 +34,29 @@ the current route fetches published revision JSON together for the selected cour
 
 ## Verification on 24 September 2026
 
-- 30 focused Node tests: authoring failures, source/concept/asset parity, private
-  payload separation, repeat loads, interruption recovery, promotion guards,
-  stale identities, stable positions and continue/review selection.
-- Strict TypeScript check of the new renderer, navigation helper and shared types.
-- Disposable PostgreSQL 18.4: all 35 migrations and the 15 existing preservation/
-  access scenarios pass. The actual loader also runs through an authenticated,
-  parameterized SQL adapter: staging interruption/recovery, all six published
-  revisions, zero writes on rerun and unchanged complete historical row snapshots.
-  This adapter is not a PostgREST/Supabase integration test.
-- Isolated React component browser checks: English/Filipino at 360, 768 and
-  1280 pixels; mode-specific resume/reload, practice feedback and explicit completion.
-  Six axe scans report no WCAG A/AA violations. Preview CSS is a local harness,
-  not certification of the production application stylesheet.
+- Full Vitest suite: 43 files, 345 tests passed. The two reference test files now use Vitest, matching the repository runner.
+- Full repository lint and TypeScript passed after correcting three local variable names. Targeted lint passed again for both UI contrast fixes.
+- Next.js 16.2.10 production build passed with Webpack, including TypeScript, 46 page-generation steps and build tracing. The default Turbopack build was not completed.
+- All 35 migrations and 15 preservation/access scenario groups passed on disposable PostgreSQL 18.4. The loader's SQL-adapter rehearsal preserved historical snapshots through interrupted staging, recovery and repeat loads.
+- Actual PostgREST 16.4 rehearsal: six lessons promoted in the fixture, stable identities on rerun, and 13 access/progress checks passed.
+- Production-app browser: 20 checks passed, covering mode-specific server resume/reload, Filipino/English, keyboard navigation, six-lesson completion, pretest/posttest gates, certified review with unchanged certificates, generic courses, out-of-scope access, 320px reflow and 200% CSS zoom.
+- Three production-app axe WCAG A/AA scans passed. Fixed low contrast in the privacy link and completed module badges. Six earlier isolated component scans also passed.
 
-Run focused tests with Node 22.18+. For the database test, use the existing
-`scripts/tests/training-foundation-replay.mjs` loopback-only harness and its
-`PG_TEST_MODULE` option as documented in `bhw-reference-foundation.md`.
+The full test suite preceded the two CSS-class-only contrast fixes. The corrected production build, targeted lint and browser checks were repeated afterward. No assertions were weakened.
 
-The local source checkout is a partial snapshot. Full-repository lint, typecheck,
-Vitest, Next production build, authenticated end-to-end REST testing and matching
-Supabase/PostgreSQL-version rehearsal remain release gates. No shared/live database,
-workflow dispatch, merge or deployment was performed. CI is skipped because the
-repository's automatic PR E2E uses a shared Supabase project.
+## Reproduce locally
 
+Install the locked dependencies. Run focused tests with npm test -- scripts/tests/reference-content.test.mjs scripts/tests/reference-navigation.test.mjs. On the Windows validation host the full suite used --maxWorkers=1 --pool=threads --testTimeout=30000 to accommodate resource limits.
+
+For SQL replay use scripts/tests/training-foundation-replay.mjs with PG_TEST_MODULE as documented in bhw-reference-foundation.md.
+
+For the production browser rehearsal:
+
+1. Start disposable PostgreSQL on 127.0.0.1:55432 as postgres. Set PG_TEST_MODULE to the installed pg module (or install pg locally without changing the lockfile). Set POSTGREST_TEST_BINARY to a local PostgREST executable; on Windows set POSTGREST_TEST_DLL_PATH when libpq needs an explicit DLL directory.
+2. Run node scripts/tests/reference-local-app.mjs. This creates a new uniquely named database, replays migrations, loads fixtures and starts loopback REST on port 55434. It requires Chrome for the later browser scripts. Generated fixture sessions and next.env are under ignored test-results/local-reference-app; never commit them.
+3. Load the variables from that next.env into the build/start process. Run npm run build -- --webpack, then npm run start -- -p 4175 -H 127.0.0.1.
+4. Run node scripts/tests/reference-local-rest-check.mjs, node scripts/tests/reference-app-journey.mjs, then node scripts/tests/reference-app-gates.mjs, in that order. The browser scripts reset only their named disposable learners. The journey removes the fixture question bank; the gates script recreates it. Results and screenshots go into the ignored fixture directory.
+
+Authentication uses signed fixture sessions and a fixture Auth endpoint, not real Supabase Auth. Matching-platform Supabase rehearsal and manual screen-reader testing remain release gates. Draft assets are approved only in memory for the disposable fixture; source approval and shared publication remain separate.
+
+No shared/live database changes, workflow dispatch, merge or deployment occurred. Commits use [skip ci] because the automatic PR workflow writes to a shared Supabase project.
