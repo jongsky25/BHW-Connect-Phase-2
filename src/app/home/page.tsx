@@ -5,31 +5,29 @@ import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { MyTrainingCard } from "@/components/progress/my-training-card";
 import { SignOutButton } from "@/components/sign-out-button";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { loadManualProgress } from "@/lib/progress/load-manual-progress";
 import type { ManualProgress } from "@/lib/progress/manual-progress";
 import { parseOnboardingProgress } from "@/lib/settings/types";
-import { getAppUser } from "@/lib/supabase/app-user";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
-  const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
 
   if (!user) {
     redirect("/login");
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
 
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("authHome");
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
   const locale = (await getLocale()) === "en" ? "en" : "fil";
 
   // "My training" is a convenience: if progress cannot load, the rest of
@@ -37,7 +35,7 @@ export default async function HomePage() {
   let training: ManualProgress[] = [];
   if (flags.elearning && appUser.role === "bhw") {
     try {
-      training = (await loadManualProgress(supabase, appUser.id)).filter((p) =>
+      training = (await loadManualProgress(await createClient(), appUser.id)).filter((p) =>
         p.chapters.some((ch) => ch.state !== "unavailable"),
       );
     } catch (error) {

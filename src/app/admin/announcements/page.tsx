@@ -1,14 +1,13 @@
 import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { AnnouncementsConsole } from "@/components/announcements/announcements-console";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { Announcement } from "@/lib/announcements/types";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function AdminAnnouncementsPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.announcements) {
     redirect("/admin/users");
@@ -16,11 +15,11 @@ export default async function AdminAnnouncementsPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }

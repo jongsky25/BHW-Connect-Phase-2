@@ -3,9 +3,8 @@ import { notFound, redirect } from "next/navigation";
 import { ArticleViewer } from "@/components/kb/article-viewer";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 type CategoryRow = { id: string; name_fil: string; name_en: string; slug: string };
 type EntryRow = { id: string; question_fil: string; question_en: string; answer_fil: string; answer_en: string };
@@ -16,13 +15,13 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
 
   if (!user) {
     redirect("/login");
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
@@ -40,7 +39,7 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   const t = await getTranslations("kb");
   const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   const [{ data: entries }, { data: articles }] = await Promise.all([
     supabase

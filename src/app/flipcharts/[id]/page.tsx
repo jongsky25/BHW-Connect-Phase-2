@@ -2,10 +2,9 @@ import { getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FlipchartViewer } from "@/components/flipcharts/flipchart-viewer";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { FlipChartPage } from "@/lib/flipcharts/types";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 type FlipChartRow = {
   id: string;
@@ -17,7 +16,7 @@ type FlipChartRow = {
 export default async function FlipchartDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.flipcharts) {
     redirect("/home");
@@ -25,11 +24,11 @@ export default async function FlipchartDetailPage({ params }: { params: Promise<
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }

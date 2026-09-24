@@ -8,7 +8,7 @@ const data={title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resume
 describe('route lesson viewer',()=>{
   it('admin preview never offers completion or writes resume',async()=>{
     const save=vi.fn();render(<ReferenceLessons {...data} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={save} onComplete={vi.fn()}/>);
-    fireEvent.click(screen.getByRole('button',{name:'Next',exact:true}));
+    fireEvent.click(screen.getByRole('button',{name:'Next'}));
     expect(screen.getByRole('heading',{name:'second'})).toBeInTheDocument();
     expect(screen.queryByRole('button',{name:'Mark lesson complete'})).not.toBeInTheDocument();expect(save).not.toHaveBeenCalled();
     expect(screen.getByRole('link',{name:'← Back to lessons'})).toHaveAttribute('href','/lessons');
@@ -17,7 +17,7 @@ describe('route lesson viewer',()=>{
     const save=vi.fn().mockRejectedValueOnce(new Error('offline')).mockResolvedValue(undefined);
     render(<ReferenceLessons {...data} resumes={[{lesson_id:'lesson',revision_id:'revision',course_progress_id:'mine',modality:'read',language:'en',position_key:'second',concept_id:'concept',updated_at:'2026-09-24'}]} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" onResume={save} onComplete={vi.fn()}/>);
     expect(screen.getByRole('heading',{name:'second'})).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button',{name:'Previous',exact:true}));
+    fireEvent.click(screen.getByRole('button',{name:'Previous'}));
     await screen.findByRole('alert');fireEvent.click(screen.getByRole('button',{name:'Retry saving position'}));
     await waitFor(()=>expect(screen.queryByRole('alert')).not.toBeInTheDocument());expect(save).toHaveBeenCalledTimes(2);
   });

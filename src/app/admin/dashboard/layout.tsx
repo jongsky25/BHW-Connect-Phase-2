@@ -1,12 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { DashboardRangePicker } from "@/components/admin/dashboard-range-picker";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { createClient } from "@/lib/supabase/server";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
   const t = await getTranslations("admin.dashboard");
 
   return (
