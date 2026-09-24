@@ -2,23 +2,29 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { useState, useTransition } from "react";
+import {persistLanguage} from '@/app/actions/set-language';
 import { locales, localeCookieName, type Locale } from "@/i18n/locales";
 
 function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
 }
 
-export function LanguageToggle() {
+export function LanguageToggle({signedIn=false}:{signedIn?:boolean}) {
   const locale = useLocale();
   const t = useTranslations("common");
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
+  const [error,setError]=useState(false);
 
   function setLocale(next: Locale) {
-    writeLocaleCookie(next);
-    startTransition(() => {
-      router.refresh();
+    setError(false);
+    startTransition(async () => {
+      try {
+        if(signedIn && !await persistLanguage(next)){setError(true);return;}
+        writeLocaleCookie(next);
+        router.refresh();
+      } catch {setError(true);}
     });
   }
 
@@ -43,6 +49,7 @@ export function LanguageToggle() {
           </button>
         ))}
       </div>
+      {error && <span role="alert">{locale==='en'?'Language could not be saved. Try again.':'Hindi nai-save ang wika. Subukang muli.'}</span>}
     </div>
   );
 }

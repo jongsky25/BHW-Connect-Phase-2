@@ -23,7 +23,7 @@ export function SiteHeader({ signedIn, notificationsEnabled, notifUnreadCount }:
         </Link>
         <div className="flex items-center gap-3">
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
-          <LanguageToggle />
+          <LanguageToggle signedIn={signedIn} />
         </div>
       </div>
     </header>
