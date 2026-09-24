@@ -90,7 +90,7 @@ async function main() {
       return;
     }
     const clips = [];
-    for (const zone of item.zones) clips.push(await synthesizeUtterance(spokenText(zone.text), item.voice));
+    for (const zone of item.zones) clips.push(await synthesizeUtterance(spokenText(zone.text, item.language), item.voice));
     const audio = assembleNarration(item.zones, clips);
     mkdirSync(path.dirname(publicFile(item.src)), { recursive: true });
     writeFileSync(publicFile(item.src), audio.bytes);
