@@ -1,10 +1,15 @@
-import { getTranslations } from "next-intl/server";
+import * as Sentry from "@sentry/nextjs";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
+import { MyTrainingCard } from "@/components/progress/my-training-card";
 import { SignOutButton } from "@/components/sign-out-button";
+import { loadManualProgress } from "@/lib/progress/load-manual-progress";
+import type { ManualProgress } from "@/lib/progress/manual-progress";
 import { parseOnboardingProgress } from "@/lib/settings/types";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
   const {
@@ -23,6 +28,20 @@ export default async function HomePage() {
 
   const t = await getTranslations("authHome");
   const flags = await getRequestFeatureFlags();
+  const locale = (await getLocale()) === "en" ? "en" : "fil";
+
+  // "My training" is a convenience: if progress cannot load, the rest of
+  // home still renders and the manual itself remains reachable via Courses.
+  let training: ManualProgress[] = [];
+  if (flags.elearning && appUser.role === "bhw") {
+    try {
+      training = (await loadManualProgress(await createClient(), appUser.id)).filter((p) =>
+        p.chapters.some((ch) => ch.state !== "unavailable"),
+      );
+    } catch (error) {
+      Sentry.captureException(error);
+    }
+  }
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
@@ -34,6 +53,10 @@ export default async function HomePage() {
       {appUser.role === "bhw" && !appUser.onboarding_completed_at ? (
         <OnboardingChecklist progress={parseOnboardingProgress(appUser.onboarding_progress)} />
       ) : null}
+
+      {training.map((progress) => (
+        <MyTrainingCard key={progress.programId} progress={progress} locale={locale} />
+      ))}
 
       <div className="flex flex-wrap gap-3">
         <Link
