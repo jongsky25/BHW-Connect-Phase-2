@@ -3,29 +3,26 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { SignOutButton } from "@/components/sign-out-button";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import { parseOnboardingProgress } from "@/lib/settings/types";
-import { getAppUser } from "@/lib/supabase/app-user";
-import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function HomePage() {
-  const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
 
   if (!user) {
     redirect("/login");
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
 
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("authHome");
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">

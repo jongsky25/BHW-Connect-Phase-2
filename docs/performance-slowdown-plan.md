@@ -71,6 +71,9 @@ Ordered by payoff per unit of effort. Each phase ships and is measured on its ow
   catch regressions.
 
 ### Phase 1: Co-locate compute with the DB (config only, biggest single win)
+**Status: done** — `vercel.json` pins functions to `hnd1`. Verify after
+deploy: the deployment's `regions` should read `hnd1`.
+
 - Add `vercel.json` with `{"regions": ["hnd1"]}` (Tokyo), or set it under
   Project Settings → Functions → Region.
 - Expected result: each DB round trip drops from ~160 ms to ~2–5 ms, and the
@@ -80,6 +83,20 @@ Ordered by payoff per unit of effort. Each phase ships and is measured on its ow
   Sentry) is region-restricted.
 
 ### Phase 2: Remove duplicated per-request work (small code change)
+**Status: done (first pass).**
+- `src/lib/supabase/request.ts` adds `React.cache`-memoised
+  `getRequestAuthUser`, `getRequestAppUser` and `getRequestFeatureFlags`.
+  All pages and layouts use them, so a layout and its page share one
+  lookup per request. For example, `/admin/kb/articles` used to read
+  `feature_flags` three times and now reads it once. Server actions and
+  route handlers keep their uncached reads on purpose.
+- Middleware now reads the profile and flags in parallel, and `/api/*`
+  requests skip the flags and unread-count queries.
+- Still open: `getClaims()` (needs the project's JWT signing-key type
+  confirmed), cross-request flag caching, and checking whether Edge
+  middleware should move to the Node.js runtime so it also runs in
+  `hnd1`.
+
 - Wrap `getAppUser`, `getFeatureFlags` and a `getAuthUser` helper in
   `React.cache` so a request fetches each of them once, shared across its
   layout and page. Alternatively, have pages read the `x-app-*` headers

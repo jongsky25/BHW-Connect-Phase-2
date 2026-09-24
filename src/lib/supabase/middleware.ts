@@ -84,6 +84,11 @@ export async function updateSession(request: NextRequest) {
     path: "/",
   });
 
+  // Pages need feature_flags for the layout headers below; start that read
+  // alongside the profile lookup instead of after it, so the two cost one
+  // round trip instead of two. API routes never use the flags (or the
+  // unread count), so they skip both reads entirely.
+  const flagsPromise = isApiPath(pathname) ? null : getFeatureFlags(supabase);
   const appUser = await getAppUser(supabase, user.id);
 
   if (!appUser || appUser.status !== "active") {
@@ -122,7 +127,13 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
-  const flags = await getFeatureFlags(supabase);
+  if (!flagsPromise) {
+    // API routes still read x-app-language (via next-intl) for localized
+    // exports/PDFs, so keep forwarding the profile headers.
+    return withAppUserHeaders(response, request, appUser, false, false, 0);
+  }
+
+  const flags = await flagsPromise;
 
   let notifUnreadCount = 0;
   if (flags.notifications) {
