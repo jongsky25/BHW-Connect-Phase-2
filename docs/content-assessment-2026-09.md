@@ -214,6 +214,25 @@ not exist yet.
    The runbook's sign-in-as-fixture-accounts check was not done: no
    credentials for those accounts were available.
 
+**Corrected lessons and chatbot on the pilot, 24 September 2026.**
+- **Lessons for modules 02–05.** The 20 converted lessons had never been
+  loaded on the pilot; those modules showed "lessons being prepared". They
+  were staged, then published at the owner's request after the owner
+  approved the shared placeholder diagram (`practice-map`). The
+  approval record is in `docs/bhw-reference-content-approval.md`.
+- **Published state.** All 26 lessons in modules 01–05 are published with
+  approved assets. Module 03's published text carries the corrected Milk
+  Code refusal and module 04 the nationwide 1% cap. None of the old wording
+  is in any published revision. A re-run reports every lesson unchanged.
+- **Older-format module text.** The `course_modules` text for modules
+  02–04 still contains the old wording. The loader refuses `--mode content`
+  for converted modules, and BHWs are sent to the manual, which now serves
+  the published lessons. The old text remains reachable only through views
+  that render the older format.
+- **Chatbot.** `--mode kb --apply` (no `--publish`) updated 37 Day 1 entries
+  and added 17. All 55 remain drafts, so none answers BHWs. None contains the
+  old Milk Code, premium or "assigned provider" wording.
+
 **SME confirmation queue (S7).**
 1. Milk Code implementing rules (AO 2006-0012): confirm that the refusal
    wording and "no gifts or samples; donation offers go to the supervisor"
