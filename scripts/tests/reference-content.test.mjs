@@ -184,8 +184,10 @@ test("interrupted private notes recover without duplicate revisions", async () =
 test("publication rejects draft assets before writes, then promotes once", async () => {
   const f = fake(),
     options = { orgUnitId: f.org, promote: true };
+  const draft = structuredClone(referenceModule);
+  draft.lessons[0].revision.assets[0].review_status = "draft";
   await assert.rejects(
-    planReferenceLoad(f.client, [referenceModule], f.lock, options),
+    planReferenceLoad(f.client, [draft], f.lock, options),
     /approved assets/,
   );
   assert.equal(f.writes.length, 0);
