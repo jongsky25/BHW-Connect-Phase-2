@@ -4,12 +4,14 @@ import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
+import {LessonFacilitatorGuide,SubchapterFacilitatorGuide} from '@/components/elearning/facilitator-guide';
 import {CardProgress,subchapterSegments} from '@/components/progress/card-progress';
 import {ChapterSteps} from '@/components/progress/chapter-steps';
 import {ManualSummary} from '@/components/progress/manual-summary';
 import {ProgressBar} from '@/components/progress/progress-bar';
 import {LessonStatus,StatusChip} from '@/components/progress/status-chip';
 import {loadManualProgress} from '@/lib/progress/load-manual-progress';
+import {loadLessonGuide,loadSubchapterGuide} from '@/lib/elearning/load-facilitator-guide';
 import {createClient} from '@/lib/supabase/server';
 import {getRequestAppUser,getRequestAuthUser,getRequestFeatureFlags} from '@/lib/supabase/request';
 import type {CourseLesson,CourseLessonRevision,CourseLessonProgress,CourseLessonResume,CourseModule,TrainingProgramChapter} from '@/lib/elearning/types';
@@ -20,8 +22,8 @@ import practices from '../../../../../content/training/day1-basic-competencies/m
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
-export default async function TrainingPage({params}:{params:Promise<{programId:string;path?:string[]}>}) {
-  const {programId,path=[]}=await params;
+export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string}>}) {
+  const [{programId,path=[]},{view}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined})]);
   if(path.length>3)notFound();
   const db=await createClient();
   // Independent reads run together; checks keep their original order.
@@ -31,6 +33,9 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
   const actor=await getRequestAppUser(user.id);
   if(!actor || actor.status!=='active')redirect('/login');
   const readOnly=actor.role!=='bhw';
+  // Facilitator guide: private notes, competency and the area's BHWs. RLS
+  // limits every guide read to these two roles; designers keep the preview.
+  const facilitator=actor.role==='assessor'||actor.role==='admin';
   // Personal progress is for BHWs on the manual, chapter and subchapter pages;
   // admins get a preview. Started now so it overlaps the reads below. A
   // failure only hides the progress view — the manual itself still renders.
@@ -90,7 +95,7 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
     const [{data:course,error:courseError},{data:modules,error:moduleError},{data:progress,error:progressError}]=await Promise.all([
       db.from('courses').select('id').eq('id',courseId).eq('status','published').maybeSingle(),
       // Do not fetch or serialize old long bodies in the manual experience.
-      db.from('course_modules').select('id,course_id,position,type,title_fil,title_en').eq('course_id',courseId).order('position'),
+      db.from('course_modules').select('id,course_id,position,type,title_fil,title_en,objectives_fil,objectives_en').eq('course_id',courseId).order('position'),
       db.from('course_progress').select('id,status').eq('course_id',courseId).eq('bhw_user_id',actor.id).maybeSingle(),
     ]);
     if(courseError)throw new Error('Unable to load chapter');
@@ -153,6 +158,7 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
       if(!lesson) {
         const mine=(await myProgress)?.chapters.find(x=>x.id===chapter.id)?.subchapters.find(x=>x.id===subchapter.id);
         const started=new Map(mine?.lessons.map(l=>[l.id,l.state]));
+        const guide=facilitator?await loadSubchapterGuide(db,{courseId:course.id,moduleId:subchapter.id,lessons:own,lang:loc,lessonHref:id=>`${moduleHref}/${id}`}):null;
         content=<>
           {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
           <ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} href={`${moduleHref}/${l.id}`}>
@@ -162,30 +168,40 @@ export default async function TrainingPage({params}:{params:Promise<{programId:s
               {!readOnly && <LessonStatus state={started.get(l.id)??(done.has(l.id)?'completed':'not_started')} locale={loc}/>}
             </p>
           </Link></li>)}</ol>
+          {guide && <SubchapterFacilitatorGuide lang={loc} moduleId={subchapter.id} objectives={en?subchapter.objectives_en??[]:subchapter.objectives_fil??[]} {...guide}/>}
         </>;
       } else {
         // Keep the existing pretest gate. Certified learners can review without retaking tests.
         const achieved=['certified','content_completed','failed_assessment'].includes(progress?.status??'');
         const pretestGate=!readOnly && flags.course_sessions && !achieved;
+        const showGuide=facilitator && view!=='lesson';
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
-        const [bank,attempt,revisionResult,resumeResult]=await Promise.all([
+        const [bank,attempt,revisionResult,resumeResult,notes]=await Promise.all([
           pretestGate?db.from('course_test_questions').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
           pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
           db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
             .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
           progress?db.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).eq('lesson_id',lesson.id).returns<CourseLessonResume[]>():Promise.resolve({data:[],error:null}),
+          facilitator?loadLessonGuide(db,lesson.published_revision_id!):Promise.resolve(null),
         ]);
         if(pretestGate){
           if(bank.error||attempt.error)throw new Error('Unable to check assessment eligibility');
           if(bank.data?.length && !attempt.data)redirect(assessmentHref);
         }
         crumbs.push({label:title(lesson)});
-        heading=title(lesson); intro=readOnly?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
+        heading=title(lesson); intro=readOnly&&!showGuide?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
         if(revisionResult.error || resumeResult.error || !revisionResult.data)throw new Error('Unable to load lesson');
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
-        content=<><ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
-          modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}/>
+        const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
+        content=<>
+          {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
+            <Link className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
+            <Link className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
+          </nav>}
+          {showGuide ? <LessonFacilitatorGuide lang={loc} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
+            indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
+          modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex-1].id}`}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
             {own[lessonIndex+1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex+1].id}`}>{text('Susunod na aralin →','Next lesson →')}</Link>}

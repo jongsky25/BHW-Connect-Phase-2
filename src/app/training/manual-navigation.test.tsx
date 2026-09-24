@@ -37,7 +37,8 @@ beforeEach(()=>{
   };
 });
 afterEach(cleanup);
-const page=(path:string[]=[])=>TrainingPage({params:Promise.resolve({programId:'manual',path})});
+const page=(path:string[]=[],view?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view})});
+const guideTables=['course_lesson_facilitator_notes','course_module_facilitator_notes','competency_observations','users'];
 describe('manual navigation',()=>{
   it('catalog replaces only the mapped course with the manual',async()=>{
     render(await Catalog());expect(screen.getByRole('link',{name:/BHW Reference Manual/})).toHaveAttribute('href','/training/manual');
@@ -63,8 +64,51 @@ describe('manual navigation',()=>{
     expect(state.calls.some(c=>c.table==='course_lesson_facilitator_notes')).toBe(false);
   });
   it('admin sees preview and never someone else’s certificate',async()=>{
-    state.role='admin';render(await page(['chapter-1','m1','l1']));expect(screen.getByText('Admin preview')).toBeInTheDocument();
+    state.role='admin';render(await page(['chapter-1','m1','l1'],'lesson'));expect(screen.getByText('Admin preview')).toBeInTheDocument();
     expect(state.calls.find(c=>c.table==='course_progress')?.filters).toContainEqual(['bhw_user_id','self']);
+  });
+  it('facilitator lesson opens on the guide, with a tab for the BHW view',async()=>{
+    state.role='assessor';
+    state.rows.course_lesson_facilitator_notes=[{revision_id:'r1',notes_en:'## [purpose] Purpose\n\nTeach **HEPO**.\n\n## [steps] Steps\n\n1. Ask first.\n2. Then explain.',notes_fil:'',
+      observation_indicators:[{objective_index:0,observable_fil:'',observable_en:'Explains HEPO',not_yet_fil:'',not_yet_en:'Cannot yet explain',
+        levels:{kaya_na_fil:'',kaya_na_en:'Unprompted',kailangan_practice_fil:'',kailangan_practice_en:'With prompts',hindi_pa_fil:'',hindi_pa_en:'Needs demo'}}]}];
+    render(await page(['chapter-1','m1','l1']));
+    expect(screen.getByRole('heading',{name:'Facilitator guide for this lesson'})).toBeInTheDocument();
+    expect(screen.getByText('HEPO',{selector:'strong'})).toBeInTheDocument();
+    expect(screen.getByText('Ask first.')).toBeInTheDocument();
+    expect(screen.getByText(/Explains HEPO/)).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'As the BHW sees it'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l1?view=lesson');
+    expect(screen.queryByText('Admin preview')).not.toBeInTheDocument();
+  });
+  it('facilitator subchapter shows what BHWs learn, the competency and every BHW with progress',async()=>{
+    state.role='assessor';
+    state.rows.course_modules[0].objectives_en=['Explain the three roles'];
+    state.rows.course_lesson_revisions=[{id:'r1',read_sections:[{takeaway_en:'HEPO is the umbrella',takeaway_fil:''}]}];
+    state.rows.course_module_facilitator_notes=[{module_id:'m1',notes_en:'| Part | Time |\n|---|---|\n| Opening | 30 min |',notes_fil:'',competency_statement_en:'Participate in workplace communication',competency_statement_fil:'',
+      observation_indicators:[{objective_index:0,observable_fil:'',observable_en:'Names all three roles',not_yet_fil:'',not_yet_en:'Lists only services',
+        levels:{kaya_na_fil:'',kaya_na_en:'a',kailangan_practice_fil:'',kailangan_practice_en:'b',hindi_pa_fil:'',hindi_pa_en:'c'}}]}];
+    state.rows.users=[{id:'b1',full_name:'Rosa Cruz',role:'bhw',status:'active',org_units:{name:'Barangay Uno'}},{id:'b2',full_name:'Lito Reyes',role:'bhw',status:'active',org_units:null}];
+    state.rows.course_progress=[{id:'p1',course_id:'course',bhw_user_id:'b1',status:'in_progress',course_lesson_progress:[{lesson_id:'l1'}]}];
+    state.rows.course_test_attempts=[{course_id:'course',bhw_user_id:'b1',phase:'pretest',score_percent:60,taken_at:'2026-09-01'}];
+    state.rows.competency_observations=[{id:'o1',bhw_user_id:'b1',observer_user_id:'self',module_id:'m1',objective_index:0,level:'kaya_na',note:'',observed_at:'2026-09-02T00:00:00Z'}];
+    render(await page(['chapter-1','m1']));
+    expect(screen.getByRole('heading',{name:'Facilitator guide'})).toBeInTheDocument();
+    expect(screen.getByText('HEPO is the umbrella')).toBeInTheDocument();
+    expect(screen.getByText('Participate in workplace communication')).toBeInTheDocument();
+    expect(screen.getByRole('cell',{name:'30 min'})).toBeInTheDocument();
+    expect(screen.getByText('Rosa Cruz')).toBeInTheDocument();expect(screen.getByText('Lito Reyes')).toBeInTheDocument();
+    expect(screen.getByText(/Lessons: 1\/2 · Pretest: 60%/)).toBeInTheDocument();
+    expect(screen.getByText(/Ind\. 1: Kaya na/)).toBeInTheDocument();
+    expect(screen.getAllByRole('button',{name:'Record observation'})).toHaveLength(2);
+  });
+  it('learners and designers never load facilitator-only data',async()=>{
+    for(const role of ['bhw','designer']){
+      state.role=role;state.calls=[];
+      render(await page(['chapter-1','m1']));cleanup();
+      render(await page(['chapter-1','m1','l1'],'lesson'));cleanup();
+      expect(state.calls.filter(c=>guideTables.includes(c.table))).toEqual([]);
+      expect(screen.queryByText('Facilitator guide')).not.toBeInTheDocument();
+    }
   });
   it('new learners must complete pretest before entering a lesson',async()=>{
     state.rows.course_progress=[];await expect(page(['chapter-1','m1','l1'])).rejects.toThrow('REDIRECT /courses/course?assessment=1');

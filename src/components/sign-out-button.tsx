@@ -11,12 +11,20 @@ export function SignOutButton() {
   const router = useRouter();
 
   async function handleSignOut() {
-    const supabase = createClient();
-    await supabase.auth.signOut();
-    await clearSuperAdminCookies();
-    await clearOfflineCache();
-    router.push("/login");
-    router.refresh();
+    try {
+      // Clear the parked super admin cookies while still signed in: the
+      // server action posts to the current (protected) page, and once the
+      // session is gone the middleware redirects that post to /login,
+      // which makes the action call throw. A failure here is not fatal —
+      // the cookies expire, and the return cookie is only honoured for
+      // that super admin's own personas.
+      await clearSuperAdminCookies().catch(() => undefined);
+      await createClient().auth.signOut();
+      await clearOfflineCache();
+    } finally {
+      router.push("/login");
+      router.refresh();
+    }
   }
 
   return (

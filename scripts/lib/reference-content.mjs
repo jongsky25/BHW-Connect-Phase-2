@@ -17,6 +17,24 @@ function sort(v) {
 export const contentHash = (value) =>
   createHash("sha256").update(canonical(value)).digest("hex");
 const key = /^[a-z0-9][a-z0-9-]*$/;
+// Every lesson's private facilitator notes follow one fixed outline, in this
+// order and with these stable IDs in both languages, so each subchapter is
+// facilitated the same way and the app can place sections by ID. Mirrored in
+// src/lib/elearning/facilitator-guide.ts (a test keeps the two in step).
+export const FACILITATOR_SECTION_IDS = [
+  "purpose",
+  "time-materials",
+  "prepare",
+  "opening",
+  "steps",
+  "expected-answers",
+  "misconception",
+  "practice",
+  "answer-key",
+  "observe",
+  "support",
+  "sources-review",
+];
 const layouts = new Set([
   "scene",
   "annotated-illustration",
@@ -327,6 +345,15 @@ export function validateReferenceLesson(
     "private notes",
   );
   bilingual(n, ["notes"]);
+  for (const lang of ["fil", "en"]) {
+    const sections = parseReferenceRead(n[`notes_${lang}`]);
+    assert(
+      canonical(sections.map((s) => s.id)) ===
+        canonical(FACILITATOR_SECTION_IDS),
+      `facilitator notes (${lang}) must use the template sections in order: ${FACILITATOR_SECTION_IDS.join(", ")}`,
+    );
+    sections.forEach((s) => text(s.body, `facilitator notes (${lang}) ${s.id}`));
+  }
   array(
     n.observation_indicators,
     "observation indicators",

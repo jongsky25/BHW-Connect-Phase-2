@@ -1,7 +1,80 @@
-# Pribadong draft: Magalang na pagtanggi
+## [purpose] Layunin
 
-Ipakuwento ang sitwasyon sa sariling salita. Ipatukoy ang pangunahing punto, unang hakbang, at kailangang tiyakin sa midwife o RHU. Gamitin ang rubric sa competency.json. Ihiwalay ang online completion sa aktuwal na demonstrasyon.
+Sa pagtatapos ng maikling araling ito, kaya ng BHW na tanggihan nang malakas ang alok ng kumpanya, nang magalang at may batayan. Kinikilala niya ang intensyon ng bisita, ipinapaliwanag nang malinaw ang polisiya, walang ipinapangakong kapalit, at idinudulog sa namamahala ang susunod na hakbang. Nasasabi rin niya kung bakit ang pagtanggap dahil "libre naman" ay nagbibigay sa kumpanya ng pagpapasya tungkol sa pasyente.
 
-Panatilihin ang orihinal na kabuuang oras ng competency sa facilitator-notes.fil.md ng subchapter; huwag idagdag muli ang buong oras sa bawat maikling aralin. Ang hating ito ay para sa self-study, hindi bagong training-hour allocation.
+## [time-materials] Oras at kagamitan
 
-Draft pa: repasuhin ang kasalukuyang legal/policy wording, bilingual parity, at observation indicator bago ilathala.
+- **Oras:** mga 60 minuto sa harapang sesyon: ang 60 minuto ng module para sa "Role-playing: paano ipaliwanag ang bawat polisiya sa komunidad", ayon sa talahanayan ng oras sa gabay ng subchapter. Inilalagay ng script ng module ang role-play na ito pagkatapos mismo ng "Paano tumanggi nang magalang". Mga 5 minuto ang sariling pag-aaral ng aralin (dalawang maikling seksyon at isang self-check).
+- **Kagamitan:** manila paper at marker; ang slides ng aralin ("Paano tumanggi nang magalang" at "Mali kumpara sa tama: ang alok ng kumpanya"); ang apat na linya ng unang slide na nakasulat nang malaki sa manila paper; mga offer card (kumpanya ng gatas at kumpanya ng gamot, bawat isa may sample at konting regalo); isang observer checklist para sa bawat grupo ng tatlo, may apat na linya mula sa slide.
+
+## [prepare] Paghahanda
+
+- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
+- Sanayin mo mismo nang isang beses nang malakas ang script ni Corazon, para natural mo itong maipakita at hindi binabasa: *"Naiintindihan ko po ang gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng milk substitute sa loob ng BHS, ayon sa Milk Code. Kung gusto ninyong tumulong, mas puwede po kaming tumanggap ng suporta para sa lactation station namin."*
+- Alamin kung sino ang namamahala sa BHS ng mga kalahok (kadalasan ang midwife o taga-RHU).
+- Ang araling ito ay tungkol sa **kung paano tumanggi**. Naituro na ang mismong mga polisiya sa "Pagkilala sa alok ng kumpanya" at "Breastfeeding at kapaligiran". Huwag nang magdagdag ng bagong detalye ng polisiya dito. Kung mag-alok ang BHW ng alternatibo gaya ng suporta sa lactation station, ituring itong desisyon ng namamahala, hindi pangako ng BHW.
+
+## [opening] Pambungad
+
+Itanong sa grupo: *"Kinailangan na ba ninyong tumanggi sa taong mabait naman sa inyo? Ano ang nagpahirap dito?"* Kumuha ng dalawa o tatlong sagot. Saka sabihin: *"Ngayon, magsasanay tayong tumanggi sa paraang napapanatili ang paggalang at ang polisiya."*
+
+## [steps] Mga hakbang
+
+1. **Balik kay Corazon (Read "Paano tumanggi nang magalang", unang slide).** Ipaalala ang bisita mula sa kumpanya ng gatas. Itanong: *"Ngayong alam na ni Corazon ang batayan, paano niya ito sasabihin nang hindi nagmumukhang personal na pag-atake?"*
+2. **Ang apat na linya.** Ipakita ang slide: kilalanin ang alok; ipaliwanag ang polisiya; huwag mangako ng kapalit; idulog sa namamahala ang susunod na hakbang. Ipakita mo mismo nang malakas ang script ni Corazon. Itanong: *"Aling bahagi ng sinabi ko ang tugma sa bawat linya?"* Ituro ang binabalaan ng aralin: ang pagpapaliban, at ang pagpapanggap na hindi alam.
+3. **Role-play (ang gawaing pagsasanay sa ibaba).** Gaya ng sinasabi ng script ng module, hayaan silang magsanay sa aktwal na pananalita, hindi lang basahin ang script.
+4. **Mali kumpara sa tama (Read "Mali kumpara sa tama: ang alok ng kumpanya", ikalawang slide).** Ikuwento si Danilo: tinanggap niya ang mga sample at regalo mula sa kumpanya ng gamot dahil "libre naman, at baka magkasala pa ako kung tatanggihan ko", at ipinamigay ang mga sample nang walang paliwanag. Saka si Corazon: magalang siyang tumanggi, ipinaliwanag ang batayan, at nag-alok ng ibang paraan ng pakikipagtulungan. Itanong: *"Ano talaga ang pagkakaiba nina Danilo at Corazon?"* Gabayan sila sa sagot ng aralin: hindi kabaitan. Ito ay kung sino ang nagpapasya kung ano ang mabuti para sa pasyente, ang BHS batay sa polisiya o ang kumpanya batay sa benepisyo nito.
+5. **Self-check.** Basahin nang malakas ang tanong ng check at hayaang mag-usap ang grupo bago ibigay ang sagot. Kung Detalyado ang sesyon, mungkahi ng script ng module na gamitin ang Mali/Tama na seksyon bilang pangwakas na role-play: dalawang boluntaryo ang gaganap kay Danilo, saka kay Corazon.
+
+Tala para sa hakbang 4: sa halimbawang "Tama", sinasabi ng aralin na ipinaliwanag ni Corazon ang batayan mula sa AO 2015-0053 (ang tuntunin sa pharmaceutical promotion), pero kumpanya ng gatas ang bisita niya sa seksyon 1 at ang Milk Code ang binabanggit ng script niya. Kung mapansin ito ng BHW, pasalamatan siya. Sabihing ang Milk Code ay para sa milk substitute at ang AO 2015-0053 ay para sa gamot, gaya ng itinuro sa "Pagkilala sa alok ng kumpanya", at naitala na ang puntong ito para repasuhin.
+
+## [expected-answers] Inaasahang sagot at paano tumugon
+
+- **"Sasabihin ko lang, 'Pasensya na, bawal po,' tapos aalis na ako."** Pagtanggi ito, at mabuti iyon. Itanong: *"Ano kaya ang mararamdaman ng bisita? Ano ang puwede mong idagdag para magalang pa rin?"* Gabayan sila sa pagkilala muna sa intensyon at sa pagbibigay ng batayan.
+- **"Sasabihin kong itatanong ko muna sa midwife at babalitaan ko sila."** Tama ang pagdulog sa namamahala. Pero tiyaking hindi ito pagpapaliban: naipapaliwanag din ba ng BHW ang polisiya ngayon, sa halip na paghintayin ang bisita ng "oo"?
+- **"Tatanggapin ko, pero hindi ko ipapamigay."** Kilalanin na gusto nilang iwasan ang eksena. Saka itanong: *"Kapag tinanggap mo, sino na ang nagpasya kung ano ang mangyayari sa loob ng BHS?"* Pagtanggap pa rin ang pagtanggap.
+- **"Kung tutulungan nila ang lactation station namin, ididikit namin ang poster nila."** Pangakong may kapalit ito. Ituro ang ikatlong linya: huwag mangako ng kapalit. Ang anumang suporta ay desisyon ng namamahala, hindi ipinagpapalit sa promosyon.
+
+## [misconception] Karaniwang maling akala
+
+**"Libre naman, at baka masaktan pa ang loob niya kung tatanggihan ko."** Ito ang naipangalanang maling akala ng module. Karaniwang dahilan ito kung bakit tumatanggap ng regalo ang BHW kahit alam nilang bawal. Hindi ito kawalan ng paggalang sa polisiya kundi pag-iwas sa awkward na sitwasyon. Huwag itong itama sa pagsasabing "dapat mahigpit kayo." Sa halip, ipakita ang script ni Corazon bilang paraan para maiwasan pareho ang awkward na sitwasyon at ang paglabag sa polisiya. Hindi kailangang pumili sa pagitan ng dalawa.
+
+## [practice] Gawaing pagsasanay
+
+Grupo ng tatlo: isang **bisita**, isang **BHW**, at isang **observer**. Bigyan ang bisita ng offer card (kumpanya ng gatas o gamot). Iaalok ng bisita ang alok nang magiliw at magpupumilit nang isang beses (*"Maliit na bagay lang po ito, walang magagalit"*). Tatanggi nang malakas ang BHW sa sariling salita, saka sasabihin sa observer sa isang pangungusap kung ano ang iuulat niya sa namamahala. Lalagyan ng tsek ng observer ang apat na linya sa checklist: kinilala ang alok, ipinaliwanag ang polisiya, walang ipinangakong kapalit, idinulog sa namamahala ang susunod na hakbang. Magpalitan ng papel para makaganap na BHW ang bawat isa nang isang beses, iba ang card bawat ikot. Umikot at makinig. Dito ka mag-oobserba.
+
+## [answer-key] Susi sa self-check
+
+Isa ang check ng aralin. Lumalabas ito sa seksyong "Mali kumpara sa tama: ang alok ng kumpanya" sa Read at muli sa slide na "Mali kumpara sa tama: ang alok ng kumpanya", pareho ang tanong at pagpipilian, kaya minsan lang ito tinatalakay dito.
+
+- **"Paano tatanggi nang magalang?"** → **Ipaliwanag ang polisiya at idulog ang alok sa namamahala.** Kapag ipinaliwanag ang polisiya, may batayan ang pagtanggi, kaya hindi ito personal. Kapag idinulog sa namamahala, hindi nagpapasya o nangangako nang mag-isa ang BHW.
+  - **"Pumayag muna para hindi mapahiya ang bisita"** ay mali. Ang pagpayag ay pagtanggap sa alok. Ito ang dinaanan ni Danilo, at hinahayaan nitong ang kumpanya ang magpasya kung ano ang mangyayari sa pasyente. Ipinapakita ng script ni Corazon na mapoprotektahan ang damdamin ng bisita sa pagkilala sa intensyon niya, nang hindi pumapayag.
+
+Hinihiling ng feedback na ipaliwanag ng BHW ang dahilan gamit ang sitwasyon sa aralin. Ipahambing sa kanila sina Danilo at Corazon.
+
+## [observe] Ano ang oobserbahan
+
+Gamitin ang observation indicator ng aralin habang ginagawa ang role-play: naipapaliwanag ng BHW ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa namamahala.
+
+- **Kaya na:** nang walang untag, kinikilala ng BHW ang intensyon ng bisita, malinaw na sinasabi ang batayang polisiya (Milk Code para sa gatas, tuntunin sa pharmaceutical promotion para sa gamot), walang ipinapangako, at idinudulog sa namamahala ang susunod na hakbang. Ganito pa rin kahit magpumilit ang bisita.
+- **Kailangan pa ng practice:** tumatanggi ang BHW sa tamang direksiyon pero kailangan pa ng untag mo para sa detalye. Halimbawa, nakakalimutan niyang banggitin ang polisiya, nagpapaliban ("pag-iisipan ko po"), o hindi nababanggit ang pagdulog sa namamahala hangga't hindi mo itinatanong.
+- **Hindi pa:** tinatanggap ng BHW ang alok, tumatanggi nang walang sinasabing dahilan, o nangangako ng kapalit (halimbawa, poster kapalit ng suporta) nang hindi tinitiyak sa namamahala.
+
+Hiwalay ang pag-obserba nito sa role-play sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+
+## [support] Kung kailangan ng dagdag na suporta
+
+- Ipanood muna sa kanila ang BHW na **Kaya na** na gumagawa ng parehong card, saka nila subukan habang hawak ang checklist ng observer.
+- Paliitin ang gawain: hindi muna magpupumilit ang bisita sa unang subok. Idagdag ang pagpupumilit kapag maayos na nilang nagagawa ang apat na linya.
+- Obserbahan muli sa susunod na sesyon gamit ang parehong offer card, hindi bago. Mabilis na pangalawang pagkakataon din ang pangwakas na role-play ng Mali/Tama.
+
+## [sources-review] Sanggunian at tala sa pagrepaso
+
+- Sanggunian ng aralin: Facilitator Guide PDF 22. Minanang page reference ito; nakabinbin pa ang huling audit. Dagdag na batayan: Day 1 presentation slide 25, na nagrerekomenda ng "role playing on how to explain the following policies to the community members"; ang gabay ng subchapter (hakbang 3 at 6 ng script, at ang naipangalanang maling akala).
+- Sa "Mali kumpara sa tama: ang alok ng kumpanya", AO 2015-0053 ang binabanggit sa halimbawang "Tama" ni Corazon, pero kumpanya ng gatas ang bisita niya sa "Ang bisita sa BHS" at Milk Code ang binabanggit ng script niya sa "Paano tumanggi nang magalang". Repasuhin para magkatugma.
+- Idinadagdag ng unang slide ng aralin ang "Huwag mangako ng kapalit" at "Idulog sa namamahala ang susunod na hakbang", na wala sa Read sa parehong pananalita; nag-aalok naman ang script ni Corazon ng suporta sa lactation station bilang alternatibo. Itinuturing ng gabay na ito ang alternatibong iyon bilang desisyon ng namamahala. Repasuhin.
+- Oras: sinasabi ng Facilitator Guide PDF 22 na hindi bababa sa 4 na oras ang kailangan ng competency na ito. Hinahati ito ng talahanayan ng oras sa gabay ng subchapter sa mga bahaging umaabot sa 200 minuto. Panatilihin ang orihinal na kabuuang oras ng competency sa gabay ng subchapter. Huwag idagdag muli ang buong oras sa bawat maikling aralin. Ang 60 minuto sa itaas ay bahagi ng araling ito sa plano ng module, at para sa self-study ang hating ito; hindi ito bagong training-hour allocation. Tantiya lamang ang 5 minutong self-study, hindi galing sa sanggunian.
+- Pangkalahatan ang observation indicator ng araling ito; pareho ang pananalita sa limang aralin ng module. Mas tiyak ang indicator ng module para sa pagtanggi (pagkilala, batayan, alternatibo). Repasuhin kung iyon ang dapat gamitin dito.
+- Repasuhin pa bago ilathala: ang kasalukuyang legal at policy wording, bilingual parity, at ang observation indicator.
+
+Draft para sa pagrepaso
