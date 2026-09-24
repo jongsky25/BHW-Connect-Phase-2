@@ -4,7 +4,7 @@ Read this before starting work on BHW Connect Phase 2. It is not a plan (that
 is `docs/training-modules-plan.md`); it is how to work, and the live state of
 the pilot project, so a new session does not re-discover either the hard way.
 
-Last updated: 20 September 2026.
+Last updated: 24 September 2026.
 
 ---
 
@@ -236,12 +236,9 @@ four modules (`02-uhc-act`, `03-polisiya-bhs`, `04-ra7883`,
 check, `npm run kb:check-sources`, lint/typecheck/291 vitest tests, and are
 **already loaded (as drafts) and rendered in the real app** on this pilot
 project — not just validated offline. Modules 4 and 5 carry forward the text
-INC-21r displaced from Module 1's original draft, as instructed. **Still
-owed before INC-25 builds on top of it**: a user approval pass (INC-21r's
-Module 1 had an explicit re-opened gate; these four modules haven't had one
-yet), audio/animation-modality verification (no `AZURE_SPEECH_KEY` in this
-session either — same gap INC-27/INC-28 already carry), and e2e/axe-core
-coverage was not re-run against the new content. The pilot course was
+INC-21r displaced from Module 1's original draft, as instructed. **The user approved Modules 2–5 on 24 September 2026** and authorized
+Modules 6–9. Audio/animation verification and e2e/axe-core verification
+remain owed independently of content approval. The pilot course was
 already `published` by the time this was checked — no action needed there.
 
 **Two more throwaway pilot accounts exist now**, both `assessor`/`bhw`
@@ -340,3 +337,21 @@ Full detail: `docs/training-modules-plan.md`'s INC-27 section.
 the run occasionally fail at login (three did on 19 Sep, green on re-run with
 no code change). Before assuming a failure is yours: check whether `main` is
 green, and re-run once. Do not "fix" it by touching tests.
+
+
+
+## INC-25 authoring update — 24 September 2026
+
+Modules 6–9 are authored in both languages with coverage maps, facilitator
+notes, matching competency rubrics, five visuals, 17 QA entries and 18 new
+assessment questions. The nine-module loader reports 38 questions, 54 QA
+entries and no review flags. Chat Guide fixtures cover all nine modules and
+preserve previously passing HHP+ answers. See the INC-25 status in
+`docs/training-modules-plan.md` for checks and limitations.
+
+This is an authoring increment, not evidence of a live pilot load. No pilot
+data, flags, migrations or user accounts were changed in this session.
+Modules 6–9 still need user review, live loading/rendering and narration;
+the final course/session accessibility flow remains unverified. The current
+connector cannot dispatch the training-load workflow, and no authenticated
+pilot database connection is available in this session.

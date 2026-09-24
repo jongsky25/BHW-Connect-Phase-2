@@ -1,5 +1,5 @@
 {
-  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Grows as modules 2-9 are authored (INC-24/25) — now covers Modules 1-5's objectives; modules 6-9 (INC-25) still owed.",
+  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Covers all nine modules (INC-25); 38 questions, including 18 added for Modules 6-9.",
   "questions": [
     {
       "prompt_fil": "Bakit masasabing mas malawak ang tungkulin ng BHW sa ilalim ng UHC Act of 2019?",
@@ -220,6 +220,348 @@
         { "fil": "Adaptability", "en": "Adaptability" }
       ],
       "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Tahimik ang residente habang katabi ang kapitbahay. Ano ang magandang simula ng interview?",
+      "prompt_en": "A resident is quiet beside a neighbor. How should the interview begin?",
+      "options": [
+        {
+          "fil": "Hulaan ang sagot mula sa sinabi ng kapitbahay.",
+          "en": "Guess answers from the neighbor’s account."
+        },
+        {
+          "fil": "Tanungin kung nais niyang lumipat sa mas pribadong lugar.",
+          "en": "Ask whether the resident would prefer a more private place."
+        },
+        {
+          "fil": "Bilisan upang matapos agad ang form.",
+          "en": "Rush to complete the form."
+        }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Alin ang bukas na tanong tungkol sa hindi pagdalo?",
+      "prompt_en": "Which is an open question about a missed visit?",
+      "options": [
+        {
+          "fil": "“Ano ang naging hadlang sa pagpunta?”",
+          "en": "“What got in the way of attending?”"
+        },
+        {
+          "fil": "“Hindi ka ba pumunta?”",
+          "en": "“Did you miss the visit?”"
+        },
+        {
+          "fil": "“Ayaw mo talagang pumunta, tama?”",
+          "en": "“You really do not want to attend, right?”"
+        }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Sabi ng residente ay dumalo siya, ngunit wala ang card. Paano itatala?",
+      "prompt_en": "A resident says they attended but has no card. How should this be recorded?",
+      "options": [
+        {
+          "fil": "Italang hindi dumalo dahil walang card.",
+          "en": "Record nonattendance because the card is missing."
+        },
+        {
+          "fil": "Tanggalin ang buong interview.",
+          "en": "Discard the whole interview."
+        },
+        {
+          "fil": "Itala ang sinabi niya at markahang kailangan pang kumpirmahin ang rekord.",
+          "en": "Record the account and mark the record as needing confirmation."
+        }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Aling ulat ang makakatulong sa midwife?",
+      "prompt_en": "Which report is useful to the midwife?",
+      "options": [
+        {
+          "fil": "“Mahirap kausap ang pamilya.”",
+          "en": "“The household is difficult.”"
+        },
+        {
+          "fil": "“Ayon sa residente, kulang ang childcare; humihingi ng tulong sa schedule.”",
+          "en": "“The resident reports a childcare barrier and requests help with scheduling.”"
+        },
+        {
+          "fil": "“Wala silang disiplina.”",
+          "en": "“They lack discipline.”"
+        }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Paano malalaman kung malinaw ang napagkasunduang plano?",
+      "prompt_en": "How can the clarity of the agreed plan be checked?",
+      "options": [
+        {
+          "fil": "Anyayahang ipaliwanag ng residente ang susunod na hakbang sa sariling salita.",
+          "en": "Invite the resident to describe the next step in their own words."
+        },
+        {
+          "fil": "Tanungin lamang kung naintindihan at tanggapin ang oo.",
+          "en": "Only ask whether they understood and accept yes."
+        },
+        {
+          "fil": "Magbigay pa ng limang bagong mensahe.",
+          "en": "Give five more new messages."
+        }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "May takot ang kliyente sa family planning. Ano ang tamang papel ng BHW?",
+      "prompt_en": "A client is worried about family planning. What is the BHW’s role?",
+      "options": [
+        {
+          "fil": "Piliin ang paraan para sa kliyente.",
+          "en": "Choose the method for the client."
+        },
+        {
+          "fil": "Ikuwento sa kapitbahay upang kumbinsihin siya.",
+          "en": "Tell neighbors so they can persuade the client."
+        },
+        {
+          "fil": "Pakinggan ang concern at ikonekta sa pribadong counseling ng midwife.",
+          "en": "Listen to the concern and connect the client to private midwife counseling."
+        }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Alin ang maayos na paglalarawan ng problemang pag-aaralan?",
+      "prompt_en": "Which is a useful description of a problem to investigate?",
+      "options": [
+        {
+          "fil": "Tamad ang lahat ng pamilya rito.",
+          "en": "Every household here is lazy."
+        },
+        {
+          "fil": "Tatlong inimbitahang kabahayan ang hindi nakadalo; kailangan pang alamin ang dahilan.",
+          "en": "Three invited households missed the visit; reasons still need investigation."
+        },
+        {
+          "fil": "Siguradong poster ang solusyon.",
+          "en": "A poster is definitely the solution."
+        }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Magkaiba ang dahilan ng dalawang pamilya sa hindi pagdalo. Ano ang gagawin sa Five Whys?",
+      "prompt_en": "Two households report different reasons for nonattendance. What should happen in Five Whys?",
+      "options": [
+        {
+          "fil": "Piliin ang mas simpleng kuwento.",
+          "en": "Choose the simpler account."
+        },
+        {
+          "fil": "Itigil dahil kailangan iisa ang ugat.",
+          "en": "Stop because there must be only one root cause."
+        },
+        {
+          "fil": "Sundan ang magkahiwalay na sanhi at beripikahin kasama ang mga apektado.",
+          "en": "Follow separate causal branches and verify with those affected."
+        }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Ang scores ay laki 3, kabigatan 4, feasibility 5, urgency 2. Ano ang kabuuan?",
+      "prompt_en": "Scores are magnitude 3, severity 4, feasibility 5, urgency 2. What is the total?",
+      "options": [
+        {
+          "fil": "14",
+          "en": "14"
+        },
+        {
+          "fil": "12",
+          "en": "12"
+        },
+        {
+          "fil": "20",
+          "en": "20"
+        }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Aling rekomendasyon ang maaari nang talakayin bilang action plan?",
+      "prompt_en": "Which recommendation is ready for discussion as an action plan?",
+      "options": [
+        {
+          "fil": "“Ayusin natin lahat.”",
+          "en": "“Let us fix everything.”"
+        },
+        {
+          "fil": "“Kausapin ni BHW Rosa ang limang pamilya ngayong linggo; i-review kasama ang midwife ang attendance sa susunod na session.”",
+          "en": "“BHW Rosa will consult five households this week; review attendance at the next session with the midwife.”"
+        },
+        {
+          "fil": "“Magmeeting kung may oras.”",
+          "en": "“Meet if there is time.”"
+        }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Walang tamang sharps container para sa nakaplanong gawain. Ano ang dapat gawin?",
+      "prompt_en": "There is no proper sharps container for a planned task. What should happen?",
+      "options": [
+        {
+          "fil": "Gumamit muna ng ordinaryong plastic bag.",
+          "en": "Use an ordinary plastic bag temporarily."
+        },
+        {
+          "fil": "Ilapag ang sharps sa mesa.",
+          "en": "Leave sharps on the table."
+        },
+        {
+          "fil": "Ipaalam sa supervisor at huwag simulan ang hindi ligtas na gawain.",
+          "en": "Tell the supervisor and do not begin the unsafe task."
+        }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Pagkatapos ng needlestick, ano ang dapat gawin kahit walang sintomas?",
+      "prompt_en": "After a needlestick, what is needed even without symptoms?",
+      "options": [
+        {
+          "fil": "Hugasan ng sabon at tubig, iulat at magpa-medical evaluation kaagad.",
+          "en": "Wash with soap and water, report and obtain immediate medical evaluation."
+        },
+        {
+          "fil": "Hintaying mamula bago magreport.",
+          "en": "Wait for redness before reporting."
+        },
+        {
+          "fil": "Maghintay hanggang matapos ang duty.",
+          "en": "Wait until the shift ends."
+        }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "May gloves ang BHW. Alin ang tama tungkol sa hand hygiene?",
+      "prompt_en": "A BHW has gloves. Which statement about hand hygiene is correct?",
+      "options": [
+        {
+          "fil": "Hindi na kailangang sundin ang hand hygiene.",
+          "en": "Hand hygiene is no longer needed."
+        },
+        {
+          "fil": "Hindi kapalit ng hand hygiene ang gloves; sundin pa rin ang protocol.",
+          "en": "Gloves do not replace hand hygiene; continue following the protocol."
+        },
+        {
+          "fil": "Kailangan lamang kapag marumi sa paningin.",
+          "en": "It is needed only when hands look dirty."
+        }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "Pagod na ang BHW at mapanganib ang gabing ruta. Ano ang tamang tugon?",
+      "prompt_en": "The BHW is exhausted and the night route is unsafe. What is appropriate?",
+      "options": [
+        {
+          "fil": "Ituloy para walang madismaya.",
+          "en": "Proceed so nobody is disappointed."
+        },
+        {
+          "fil": "Itago ang problema at huwag bumalik.",
+          "en": "Hide the problem and stop returning."
+        },
+        {
+          "fil": "Iulat ang panganib at kapasidad; humingi ng ligtas na alternatibo o reassignment.",
+          "en": "Report the risk and capacity limits; request a safer alternative or reassignment."
+        }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Alin ang halimbawa ng ligtas na pagbawas-aksaya?",
+      "prompt_en": "Which is safe waste reduction?",
+      "options": [
+        {
+          "fil": "Ayusin ang tumutulong gripo habang may sapat na tubig para sa hand hygiene.",
+          "en": "Fix a leaking tap while keeping adequate hand-hygiene water."
+        },
+        {
+          "fil": "Patayin ang vaccine refrigerator.",
+          "en": "Turn off the vaccine refrigerator."
+        },
+        {
+          "fil": "Gamitin muli ang lancet.",
+          "en": "Reuse a lancet."
+        }
+      ],
+      "correct_option_index": 0
+    },
+    {
+      "prompt_fil": "Bago humingi ng dagdag na supplies, ano ang kapaki-pakinabang na routine?",
+      "prompt_en": "Before requesting more supplies, what routine is useful?",
+      "options": [
+        {
+          "fil": "Umorder nang doble para sigurado.",
+          "en": "Order double to be safe."
+        },
+        {
+          "fil": "Bilangin ang stock, suriin ang expiry at sundin ang aprubadong inventory procedure.",
+          "en": "Count stock, check expiry and follow the approved inventory procedure."
+        },
+        {
+          "fil": "Ipamigay ang expired items para maubos.",
+          "en": "Distribute expired items to use them up."
+        }
+      ],
+      "correct_option_index": 1
+    },
+    {
+      "prompt_fil": "May bagong checklist pero walang nakatalagang susunod dito. Ano ang kulang?",
+      "prompt_en": "A new checklist has nobody assigned to follow it. What is missing?",
+      "options": [
+        {
+          "fil": "Mas maraming printout ng checklist lamang.",
+          "en": "Only more copies of the checklist."
+        },
+        {
+          "fil": "Mas maliit na font.",
+          "en": "A smaller font."
+        },
+        {
+          "fil": "Napagkasunduang owner, kapalit at review date.",
+          "en": "An agreed owner, replacement and review date."
+        }
+      ],
+      "correct_option_index": 2
+    },
+    {
+      "prompt_fil": "Bumaba ang papel ngunit bumaba rin ang bilang ng sessions. Ano ang dapat suriin?",
+      "prompt_en": "Paper use fell but so did session numbers. What should be checked?",
+      "options": [
+        {
+          "fil": "Konsumo kada maihahambing na session at kalidad ng naihatid na serbisyo.",
+          "en": "Use per comparable session and the quality of service delivered."
+        },
+        {
+          "fil": "Kabuuang papel lamang.",
+          "en": "Only total paper use."
+        },
+        {
+          "fil": "Kung sino ang puwedeng sisihin.",
+          "en": "Who can be blamed."
+        }
+      ],
+      "correct_option_index": 0
     }
   ]
 }

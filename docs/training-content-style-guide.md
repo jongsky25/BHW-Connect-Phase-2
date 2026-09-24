@@ -281,8 +281,8 @@ each other one more time.
 ## 8. One competency per module
 
 §C of the plan maps each module to one primary BHS NC II competency
-(module 8 carries two, and may split into two modules if authoring shows
-it's too dense — a documented allowance). Do not fold a second competency's
+(Module 8 covers occupational safety and health; Module 9 covers
+sustainable workplace practices). Do not fold a second competency's
 material into a module "because it's related" — that breaks the
 one-to-one mapping the A.4 rubric depends on, and makes the competency
 statement in `competency.json` describe only part of what the module
@@ -314,3 +314,4 @@ actually covers.
       (see `content/kb/README.md`) so the module is chatbot-searchable
 - [ ] Run the loader in `--dry-run` and read every validation warning before
       moving to the next module
+
