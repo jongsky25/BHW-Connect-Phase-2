@@ -16,6 +16,8 @@ import {
   lessonPosition,
   type PublishedLesson,
 } from "@/lib/elearning/reference-navigation";
+import type { LessonNarration } from "@/lib/elearning/reference-narration";
+import { ReferenceReadSection } from "./reference-read-section";
 
 export type ReferenceData = {
   title_fil: string;
@@ -32,6 +34,8 @@ type Props = ReferenceData & {
   readOnly?: boolean;
   lessonNumber?: number;
   lessonCount?: number;
+  // Lesson ID -> Read-mode narration in the current language (optional).
+  narration?: Record<string, LessonNarration>;
   locale: string;
   onResume: (
     resume: Omit<CourseLessonResume, "course_progress_id" | "updated_at">,
@@ -103,6 +107,29 @@ export function ReferenceLessons(props: Props) {
   const required = lessons.filter((l) => l.required);
   const nextLesson = continueLesson(lessons, completed, resumes);
   const siblings = lessons.filter((l) => l.module_id === lesson?.module_id);
+  const figures =
+    lesson && item
+      ? item.asset_ids.map((id) => {
+          const a = lesson.revision.assets.find((a) => a.id === id);
+          return a ? (
+            <figure key={a.id} className="my-4">
+              {/* Public static assets; text alternatives remain visible if an image fails. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={a.path}
+                width={720}
+                height={360}
+                loading="lazy"
+                alt={en ? a.alt_en : a.alt_fil}
+                className="h-auto w-full rounded-lg"
+              />
+              <figcaption className="text-sm">
+                {en ? a.caption_en : a.caption_fil}
+              </figcaption>
+            </figure>
+          ) : null;
+        })
+      : null;
 
   function save(
     l: PublishedLesson,
@@ -327,60 +354,46 @@ export function ReferenceLessons(props: Props) {
               className="rounded-xl border border-ink/15 p-4 sm:p-6"
               data-layout={"layout" in item ? item.layout : "read"}
             >
-              <h2 tabIndex={-1} ref={heading} className="text-xl font-semibold">
-                {en ? item.heading_en : item.heading_fil}
-              </h2>
               {"display_fil" in item ? (
-                <div
-                  className={
-                    ["comparison", "relationship-map", "scene"].includes(
-                      item.layout,
-                    )
-                      ? "my-5 grid gap-3 sm:grid-cols-2"
-                      : "my-5 flex flex-col gap-3"
-                  }
-                >
-                  {(en ? item.display_en : item.display_fil)
-                    .split("\n")
-                    .filter(Boolean)
-                    .map((line, i) => (
-                      <p key={i} className="rounded-lg bg-ink/5 p-4 text-lg">
-                        {item.layout === "process" ? (
-                          <span aria-hidden="true">{i + 1}. </span>
-                        ) : null}
-                        {line}
-                      </p>
-                    ))}
-                </div>
+                <>
+                  <h2 tabIndex={-1} ref={heading} className="text-xl font-semibold">
+                    {en ? item.heading_en : item.heading_fil}
+                  </h2>
+                  <div
+                    className={
+                      ["comparison", "relationship-map", "scene"].includes(
+                        item.layout,
+                      )
+                        ? "my-5 grid gap-3 sm:grid-cols-2"
+                        : "my-5 flex flex-col gap-3"
+                    }
+                  >
+                    {(en ? item.display_en : item.display_fil)
+                      .split("\n")
+                      .filter(Boolean)
+                      .map((line, i) => (
+                        <p key={i} className="rounded-lg bg-ink/5 p-4 text-lg">
+                          {item.layout === "process" ? (
+                            <span aria-hidden="true">{i + 1}. </span>
+                          ) : null}
+                          {line}
+                        </p>
+                      ))}
+                  </div>
+                  {figures}
+                </>
               ) : (
-                <p className="my-5 whitespace-pre-wrap leading-relaxed">
-                  {en ? item.body_en : item.body_fil}
-                </p>
-              )}
-              {item.asset_ids.map((id) => {
-                const a = lesson.revision.assets.find((a) => a.id === id);
-                return a ? (
-                  <figure key={a.id} className="my-4">
-                    {/* Public static assets; text alternatives remain visible if an image fails. */}
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={a.path}
-                      width={720}
-                      height={360}
-                      loading="lazy"
-                      alt={en ? a.alt_en : a.alt_fil}
-                      className="h-auto w-full rounded-lg"
-                    />
-                    <figcaption className="text-sm">
-                      {en ? a.caption_en : a.caption_fil}
-                    </figcaption>
-                  </figure>
-                ) : null;
-              })}
-              {"takeaway_fil" in item && (
-                <p className="border-l-4 border-primary pl-3">
-                  {en ? item.takeaway_en : item.takeaway_fil}
-                </p>
+                <ReferenceReadSection
+                  key={lesson.id + item.id + props.locale}
+                  heading={en ? item.heading_en : item.heading_fil}
+                  body={en ? item.body_en : item.body_fil}
+                  takeaway={(en ? item.takeaway_en : item.takeaway_fil) ?? ""}
+                  narration={props.narration?.[lesson.id]?.[item.id]}
+                  en={en}
+                  headingRef={heading}
+                >
+                  {figures}
+                </ReferenceReadSection>
               )}
               {item.check && (
                 <Practice

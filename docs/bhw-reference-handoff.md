@@ -38,7 +38,7 @@ Updated 24 September 2026. Package 3 and the initial lesson navigation/Slides in
 2. Review final 1.1 teaching copy, bilingual private notes and the static visual adaptations. Their draft status deliberately blocks promotion. No subject/clinical approval is inferred from structural validation.
 3. Verify the concrete target lock/mapping, staging and equivalence/backfill reports before any authorized shared-project operation. Program/chapter activation is a separate reviewed release step; no automatic activation or backfill occurs.
 4. Continue reviewed 1.2–1.5 batches. Parts 6–9 still need claim-level citation corrections and subject review. Preserve existing IDs, questions, historical progress and Chapter I certificate scope.
-5. Follow-up: lesson-revision narration audio, chapter-scale lazy revision fetching (current route fetches published revision JSON together), and an archival/reset flow before enabling destructive reset for converted courses.
+5. Follow-up: Slides-mode narration (Read-mode narration for 1.1–1.5 is committed; see `content/training/README.md`), chapter-scale lazy revision fetching (current route fetches published revision JSON together), and an archival/reset flow before enabling destructive reset for converted courses.
 
 No shared/live database changes, workflow dispatch, merge or deployment occurred. CI commits use `[skip ci]` because the existing automatic PR E2E writes to a shared Supabase project. Local platform stubs and the component harness are not full production certification.
 

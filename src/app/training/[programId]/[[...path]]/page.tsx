@@ -19,6 +19,8 @@ import communication from '../../../../../content/training/day1-basic-competenci
 import problems from '../../../../../content/training/day1-basic-competencies/modules/07-problema/module.json';
 import safety from '../../../../../content/training/day1-basic-competencies/modules/08-osh/module.json';
 import practices from '../../../../../content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json';
+import narrationManifest from '../../../../../content/training/day1-basic-competencies/narration.json';
+import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
@@ -201,7 +203,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           </nav>}
           {showGuide ? <LessonFacilitatorGuide lang={loc} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
             indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
-          modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}/>}
+          modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
+          narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex-1].id}`}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
             {own[lessonIndex+1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex+1].id}`}>{text('Susunod na aralin →','Next lesson →')}</Link>}

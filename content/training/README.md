@@ -65,6 +65,31 @@ Run `npm test -- scripts/tests/reference-content.test.mjs scripts/tests/referenc
 through Vitest; see `docs/bhw-reference-content-navigation.md` for verification
 limits and the extended disposable PostgreSQL rehearsal.
 
+### Read-mode narration for converted subchapters
+
+`npm run training:narrate` (dry run) / `-- --apply` pre-renders one MP3 per Read
+section and language for every subchapter with a `lessons/` folder (or
+`--modules a,b`). Output is committed: `public/training/audio/<module>/<lesson>/
+<section>.<lang>.<hash12>.mp3` plus `day1-basic-competencies/narration.json`.
+No Supabase write, no migration, and lesson revisions (and their approval
+hashes) are unchanged: audio is keyed by lesson key + section ID + language +
+a hash of the exact narrated text and voice.
+
+- Voices: `fil-PH-BlessicaNeural` and `en-PH-RosaNeural`, via the keyless Edge
+  Read Aloud service (honours `HTTPS_PROXY`). Each sentence is synthesized
+  separately and the MP3 frames are joined, so read-along timings are exact.
+- `**bold**` markers are stripped from speech; the Read view renders them bold.
+- Re-runs only render changed sections and delete superseded files of the
+  processed subchapters.
+- The lesson page shows a player only when the recorded sentences equal the
+  published revision's text. `scripts/tests/reference-narration.test.mjs`
+  fails when lesson text changes without re-rendering.
+- Slides mode has no audio yet: 1.1 slides have no narration script and
+  slide display text differs from the Read text, so Read timings are never
+  reused there.
+- Machine speech: a listening review (pronunciation of acronyms such as BHW,
+  RHU, RA 7883, and Filipino/English code-switching) is still owed.
+
 Versioned source of truth for facilitated BHW training content, loaded into a
 Supabase project by `scripts/training-load.mjs`. This is the format
 reference — what each file must contain so the loader can parse it. For how

@@ -17,6 +17,7 @@
     "training:load": "node scripts/training-load.mjs",
     "training:review-setup": "node scripts/training-review-setup.mjs",
     "training:tts": "node scripts/tts-render.mjs",
+    "training:narrate": "node scripts/training-narrate.mjs",
     "remotion:render": "node scripts/remotion-render.mjs",
     "doctor": "node scripts/doctor.mjs"
   },
@@ -51,9 +52,11 @@
     "@vitejs/plugin-react": "^6.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "https-proxy-agent": "^7.0.6",
     "jsdom": "^29.1.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "ws": "^7.5.13"
   }
 }
