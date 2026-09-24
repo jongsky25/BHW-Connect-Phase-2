@@ -26,20 +26,21 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
     redirect("/login");
   }
 
-  const { data: category } = await supabase
-    .from("kb_categories")
-    .select("id, name_fil, name_en, slug")
-    .eq("slug", slug)
-    .maybeSingle<CategoryRow>();
+  const [{ data: category }, t, tCrumbs, locale, flags] = await Promise.all([
+    supabase
+      .from("kb_categories")
+      .select("id, name_fil, name_en, slug")
+      .eq("slug", slug)
+      .maybeSingle<CategoryRow>(),
+    getTranslations("kb"),
+    getTranslations("breadcrumbs"),
+    getLocale(),
+    getRequestFeatureFlags(),
+  ]);
 
   if (!category) {
     notFound();
   }
-
-  const t = await getTranslations("kb");
-  const tCrumbs = await getTranslations("breadcrumbs");
-  const locale = await getLocale();
-  const flags = await getRequestFeatureFlags();
 
   const [{ data: entries }, { data: articles }] = await Promise.all([
     supabase
@@ -56,11 +57,11 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
           .eq("status", "published")
           .returns<ArticleRow[]>()
       : Promise.resolve({ data: [] as ArticleRow[] }),
+    // Best-effort: visiting a published category satisfies the "visit a KB
+    // category" onboarding step. Runs alongside the reads above so it adds
+    // no extra round trip to the render.
+    supabase.rpc("rpc_onboarding_complete_step", { p_step: "kb" }),
   ]);
-
-  // Best-effort: visiting a published category satisfies the "visit a KB
-  // category" onboarding step. Never blocks the page render.
-  await supabase.rpc("rpc_onboarding_complete_step", { p_step: "kb" });
 
   const entryRows = entries ?? [];
   const articleRows = articles ?? [];

@@ -1,4 +1,4 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { after, NextResponse, type NextRequest } from "next/server";
 import { resolveTurn } from "@/lib/chat/conversation";
 import { matchQuestion } from "@/lib/chat/matcher";
 import { clarifierRules, redFlagRules } from "@/lib/chat/rules";
@@ -28,19 +28,21 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  // Profile, request body and flags are independent — load them together.
+  // The 401 still takes precedence over a malformed body.
+  const invalidBody = Symbol("invalid body");
+  const [appUser, body, flags] = await Promise.all([
+    getAppUser(supabase, user.id),
+    request.json().catch((): typeof invalidBody => invalidBody) as Promise<unknown>,
+    getFeatureFlags(supabase),
+  ]);
   if (!appUser) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
-
-  let body: unknown;
-  try {
-    body = await request.json();
-  } catch {
+  if (body === invalidBody) {
     return NextResponse.json({ error: "invalid request body" }, { status: 400 });
   }
 
-  const flags = await getFeatureFlags(supabase);
   const conversational = flags.chat_conversation;
 
   // A selection is only meaningful when the conversation layer is on; with the
@@ -84,10 +86,12 @@ export async function POST(request: NextRequest) {
     ? "id, content_id, question_fil, question_en, answer_fil, answer_en, keywords"
     : "id, question_fil, question_en, answer_fil, answer_en, keywords";
 
-  const [{ data: entries, error: entriesError }, { data: synonyms, error: synonymsError }] =
+  const requestedSessionId = requestSessionId(body);
+  const [{ data: entries, error: entriesError }, { data: synonyms, error: synonymsError }, context] =
     await Promise.all([
       supabase.from("kb_entries").select(entryColumns).eq("status", "published"),
       supabase.from("synonyms").select("term, maps_to, language"),
+      conversational ? loadContext(supabase, requestedSessionId) : Promise.resolve(null),
     ]);
 
   if (entriesError || synonymsError) {
@@ -100,8 +104,6 @@ export async function POST(request: NextRequest) {
     (entry) => ({ ...entry, content_id: entry.content_id ?? null }),
   );
 
-  const requestedSessionId = requestSessionId(body);
-  const context = conversational ? await loadContext(supabase, requestedSessionId) : null;
   const askedText = typeof question === "string" ? question.trim() : "";
 
   const result: ConversationResult = conversational
@@ -123,15 +125,17 @@ export async function POST(request: NextRequest) {
 
   // A clarifier is not a miss — the system knows the topic and is narrowing
   // it — so it must not be logged as a content gap the way no_answer is.
-  if (result.type === "no_answer") {
-    await supabase.rpc("rpc_chat_upsert_unmatched", {
-      p_text: askedText,
-      p_normalized_text: result.normalizedText,
-    });
-  }
-
-  // Checked before this turn's messages are inserted, so it doesn't count itself.
-  const isFirstAnswer = result.type === "answer" && (await isFirstEverAnswer(supabase));
+  // Checked before this turn's messages are inserted, so it doesn't count
+  // itself. The gap-log upsert is independent, so it shares the round trip.
+  const [isFirstAnswer] = await Promise.all([
+    result.type === "answer" ? isFirstEverAnswer(supabase) : Promise.resolve(false),
+    result.type === "no_answer"
+      ? supabase.rpc("rpc_chat_upsert_unmatched", {
+          p_text: askedText,
+          p_normalized_text: result.normalizedText,
+        })
+      : Promise.resolve(null),
+  ]);
 
   const { sessionId, systemMessageId, isNewSession } = await logConversation(
     supabase,
@@ -143,43 +147,39 @@ export async function POST(request: NextRequest) {
   );
 
   // Best-effort analytics instrumentation (§8 taxonomy) — never blocks the
-  // chat response. A new chat_sessions row is this app's existing notion
-  // of "session" (see rpc_dashboard_activity_summary's active_bhws calc),
-  // so that's what session.started tracks. did_you_mean isn't in the
-  // taxonomy (neither a shown answer nor a miss), so only answer/no_answer
-  // fire chat.answer_shown/chat.no_answer.
-  if (isNewSession) {
-    await supabase.rpc("rpc_track_event", { p_event_name: "session.started" });
-  }
-  await supabase.rpc("rpc_track_event", { p_event_name: "chat.question_asked" });
+  // chat response: after() runs these once the response has been sent. A new
+  // chat_sessions row is this app's existing notion of "session" (see
+  // rpc_dashboard_activity_summary's active_bhws calc), so that's what
+  // session.started tracks. did_you_mean isn't in the taxonomy (neither a
+  // shown answer nor a miss), so only answer/no_answer fire
+  // chat.answer_shown/chat.no_answer.
+  const events: Array<{ p_event_name: string; p_properties?: Record<string, unknown> }> = [];
+  if (isNewSession) events.push({ p_event_name: "session.started" });
+  events.push({ p_event_name: "chat.question_asked" });
   if (result.type === "answer") {
-    await supabase.rpc("rpc_track_event", { p_event_name: "chat.answer_shown" });
+    events.push({ p_event_name: "chat.answer_shown" });
     // Tracked separately so the dashboard can show how often the Chat Guide
     // is intercepting an emergency rather than answering a routine question.
     if (result.route === "red_flag") {
-      await supabase.rpc("rpc_track_event", {
-        p_event_name: "chat.red_flag_shown",
-        p_properties: { rule: result.redFlagId ?? null },
-      });
+      events.push({ p_event_name: "chat.red_flag_shown", p_properties: { rule: result.redFlagId ?? null } });
     }
     if (result.route === "selection") {
-      await supabase.rpc("rpc_track_event", {
-        p_event_name: "chat.clarify_answered",
-        p_properties: { clarifier: result.clarifierId ?? null },
-      });
+      events.push({ p_event_name: "chat.clarify_answered", p_properties: { clarifier: result.clarifierId ?? null } });
     }
   } else if (result.type === "no_answer") {
-    await supabase.rpc("rpc_track_event", { p_event_name: "chat.no_answer" });
+    events.push({ p_event_name: "chat.no_answer" });
   } else if (result.type === "clarify") {
-    await supabase.rpc("rpc_track_event", {
-      p_event_name: "chat.clarify_shown",
-      p_properties: { clarifier: result.clarifier.id },
-    });
+    events.push({ p_event_name: "chat.clarify_shown", p_properties: { clarifier: result.clarifier.id } });
   }
 
-  // Best-effort: the "try the Chat Guide" onboarding step is satisfied by
-  // sending any question, matched or not. Never blocks the chat response.
-  await supabase.rpc("rpc_onboarding_complete_step", { p_step: "chat" });
+  after(async () => {
+    await Promise.all([
+      ...events.map((event) => supabase.rpc("rpc_track_event", event)),
+      // Best-effort: the "try the Chat Guide" onboarding step is satisfied by
+      // sending any question, matched or not.
+      supabase.rpc("rpc_onboarding_complete_step", { p_step: "chat" }),
+    ]);
+  });
 
   return NextResponse.json({
     session_id: sessionId,
@@ -280,8 +280,11 @@ async function logConversation(
   const sessionPatch: Record<string, unknown> = { last_message_at: new Date().toISOString() };
   if (context) sessionPatch.context = context;
 
+  // An existing session's bookkeeping update doesn't depend on the message
+  // inserts, so it runs alongside the user-message insert below.
+  let sessionUpdate: PromiseLike<unknown> = Promise.resolve();
   if (sessionId) {
-    await supabase.from("chat_sessions").update(sessionPatch).eq("id", sessionId);
+    sessionUpdate = supabase.from("chat_sessions").update(sessionPatch).eq("id", sessionId);
   } else {
     const { data: session } = await supabase
       .from("chat_sessions")
@@ -294,12 +297,15 @@ async function logConversation(
 
   if (!sessionId) return { sessionId: null, systemMessageId: null, isNewSession: false };
 
-  await supabase.from("chat_messages").insert({
-    session_id: sessionId,
-    sender: "user",
-    text: userText,
-    kind: "question",
-  });
+  await Promise.all([
+    sessionUpdate,
+    supabase.from("chat_messages").insert({
+      session_id: sessionId,
+      sender: "user",
+      text: userText,
+      kind: "question",
+    }),
+  ]);
 
   const { data: systemMessage } = await supabase
     .from("chat_messages")

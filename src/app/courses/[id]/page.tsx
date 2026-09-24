@@ -27,15 +27,15 @@ export default async function CourseDetailPage({
   const { id } = await params;
   const assessment = (await searchParams).assessment === "1";
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  // Flags and the auth user are independent; fetch them together, then keep
+  // the original redirect order (feature gate first, then sign-in).
+  const [flags, {
+    data: { user },
+  }] = await Promise.all([getRequestFeatureFlags(), getRequestAuthUser()]);
 
   if (!flags.elearning) {
     redirect("/home");
   }
-
-  const {
-    data: { user },
-  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
@@ -44,46 +44,134 @@ export default async function CourseDetailPage({
     redirect("/login");
   }
 
-  const {data: mapping,error: mappingError}=await supabase.from('training_program_chapters')
-    .select('program_id,chapter_key').eq('course_id',id).eq('availability','available').maybeSingle();
-  if(mappingError)throw new Error('Unable to load training hierarchy');
-  const {data: mappedProgram}=mapping?await supabase.from('training_programs').select('id').eq('id',mapping.program_id).eq('status','published').maybeSingle():{data:null};
-  const manualHref=mapping&&mappedProgram?`/training/${mapping.program_id}/${mapping.chapter_key}`:null;
-  if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(manualHref);
-  const locale = await getLocale();
-  const tCourses = await getTranslations("courses");
-  const tCrumbs = await getTranslations("breadcrumbs");
+  // Everything below keys off the course id or the signed-in BHW only, so it
+  // is fetched in a few parallel batches instead of ~20 sequential round
+  // trips. The chapter mapping and its published program are read once here
+  // and reused for both the manual redirect and the reference-lesson data.
+  const [
+    { mapping, program },
+    { data: course },
+    { data: modules },
+    { data: session },
+    { data: testQuestions },
+    { data: testAttempts },
+    { data: progress },
+    locale,
+    tCourses,
+    tCrumbs,
+  ] = await Promise.all([
+    supabase.from('training_program_chapters')
+      .select('program_id,chapter_key').eq('course_id',id).eq('availability','available').maybeSingle()
+      .then(async ({data: mapping, error: mappingError}) => {
+        if(mappingError)throw new Error('Unable to load training hierarchy');
+        if(!mapping)return {mapping: null, program: null};
+        const {data: program, error: programError} = await supabase.from('training_programs')
+          .select('id,title_fil,title_en').eq('id',mapping.program_id).eq('status','published').maybeSingle();
+        if(programError)throw new Error('Unable to load training program');
+        return {mapping, program};
+      }),
+    supabase
+      .from("courses")
+      .select(
+        "id, title_fil, title_en, description_fil, description_en, quiz_max_attempts, status",
+      )
+      .eq("id", id)
+      .eq("status", "published")
+      .maybeSingle(),
+    supabase
+      .from("course_modules")
+      .select(
+        "id, course_id, position, type, title_fil, title_en, body_fil, body_en, video_url, objectives_fil, objectives_en, summary_fil, summary_en, lesson",
+      )
+      .eq("course_id", id)
+      .order("position")
+      .returns<CourseModule[]>(),
+    // §A.6/INC-22: the BHW's own session for this course, if any — the
+    // course_sessions_bhw_read RLS policy already restricts this to sessions
+    // the BHW is actually enrolled in. Only queried when course_sessions is
+    // on; feature flags gate the UI/route layer only, never an RPC, so the
+    // schema itself has no such gate (docs/training-modules-plan.md).
+    flags.course_sessions
+      ? supabase
+          .from("course_sessions")
+          .select("id, lesson_density")
+          .eq("course_id", id)
+          .maybeSingle<{ id: string; lesson_density: LessonDensity }>()
+      : Promise.resolve({ data: null }),
+    flags.course_sessions
+      ? supabase
+          .from("course_test_questions")
+          .select(
+            "id, course_id, position, prompt_fil, prompt_en, options, correct_option_index",
+          )
+          .eq("course_id", id)
+          .order("position")
+          .returns<CourseTestQuestion[]>()
+      : Promise.resolve({ data: [] as CourseTestQuestion[] }),
+    flags.course_sessions
+      ? supabase
+          .from("course_test_attempts")
+          .select("id, course_id, session_id, phase, score_percent, taken_at")
+          .eq("course_id", id)
+          .returns<CourseTestAttempt[]>()
+      : Promise.resolve({ data: [] as CourseTestAttempt[] }),
+    supabase
+      .from("course_progress")
+      .select("id, status")
+      .eq("course_id", id)
+      .eq("bhw_user_id",appUser.id)
+      .maybeSingle<{ id: string; status: CourseProgressStatus }>(),
+    getLocale(),
+    getTranslations("courses"),
+    getTranslations("breadcrumbs"),
+  ]);
 
-  const { data: course } = await supabase
-    .from("courses")
-    .select(
-      "id, title_fil, title_en, description_fil, description_en, quiz_max_attempts, status",
-    )
-    .eq("id", id)
-    .eq("status", "published")
-    .maybeSingle();
+  const manualHref=mapping&&program?`/training/${mapping.program_id}/${mapping.chapter_key}`:null;
+  if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(manualHref);
 
   if (!course) {
     notFound();
   }
-
-  const { data: modules } = await supabase
-    .from("course_modules")
-    .select(
-      "id, course_id, position, type, title_fil, title_en, body_fil, body_en, video_url, objectives_fil, objectives_en, summary_fil, summary_en, lesson",
-    )
-    .eq("course_id", id)
-    .order("position")
-    .returns<CourseModule[]>();
 
   const quizModuleIds = (modules ?? [])
     .filter((m) => m.type === "quiz")
     .map((m) => m.id);
   const moduleIds = (modules ?? []).map((m) => m.id);
 
-  const { data: questions } =
+  const density: LessonDensity = session?.lesson_density ?? "normal";
+  const sessionId = session?.id ?? null;
+
+  // Opt in only for a published mapped program. Private facilitator notes are
+  // deliberately absent from every learner query and serialized prop.
+  const loadReference = async (): Promise<ReferenceData | undefined> => {
+    if(!program || !moduleIds.length)return undefined;
+    const [chapterResult, lessonResult, completedResult, resumeResult] = await Promise.all([
+      supabase.from('training_program_chapters').select('*').eq('program_id',program.id).order('position').returns<TrainingProgramChapter[]>(),
+      supabase.from('course_lessons').select('*').in('module_id',moduleIds).not('published_revision_id','is',null).order('position').returns<CourseLesson[]>(),
+      progress ? supabase.from('course_lesson_progress').select('*').eq('course_progress_id',progress.id).returns<CourseLessonProgress[]>() : Promise.resolve({data:[],error:null}),
+      progress ? supabase.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).returns<CourseLessonResume[]>() : Promise.resolve({data:[],error:null}),
+    ]);
+    if([chapterResult,lessonResult,completedResult,resumeResult].some(r=>r.error))throw new Error('Unable to load lesson state');
+    const lessonRows=lessonResult.data??[];
+    if(!lessonRows.length)return undefined;
+    const {data: revisions,error} = await supabase.from('course_lesson_revisions')
+      .select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
+      .in('id',lessonRows.map(l=>l.published_revision_id!)).returns<CourseLessonRevision[]>();
+    if(error || lessonRows.some(l=>!revisions?.some(r=>r.id===l.published_revision_id)))throw new Error('Unable to load published lesson revisions');
+    return {...program,chapters:chapterResult.data??[],completed:completedResult.data??[],resumes:resumeResult.data??[],
+      lessons:modules!.flatMap(m=>lessonRows.filter(l=>l.module_id===m.id).map(l=>({...l,revision:revisions!.find(r=>r.id===l.published_revision_id)!})))};
+  };
+
+  const [
+    { data: questions },
+    { data: visuals },
+    { data: audios },
+    { data: moduleProgress },
+    { data: certificate },
+    reference,
+  ] = await Promise.all([
     quizModuleIds.length > 0
-      ? await supabase
+      ? supabase
           .from("course_quiz_questions")
           .select(
             "id, module_id, position, prompt_fil, prompt_en, options, correct_option_index",
@@ -91,11 +179,9 @@ export default async function CourseDetailPage({
           .in("module_id", quizModuleIds)
           .order("position")
           .returns<QuizQuestion[]>()
-      : { data: [] as QuizQuestion[] };
-
-  const { data: visuals } =
+      : Promise.resolve({ data: [] as QuizQuestion[] }),
     moduleIds.length > 0
-      ? await supabase
+      ? supabase
           .from("course_module_visuals")
           .select(
             "id, module_id, position, primitive, svg_markup, image_url, caption_fil, caption_en, alt_text_fil, alt_text_en, tier",
@@ -103,108 +189,33 @@ export default async function CourseDetailPage({
           .in("module_id", moduleIds)
           .order("position")
           .returns<CourseModuleVisual[]>()
-      : { data: [] as CourseModuleVisual[] };
-
-  const { data: audios } =
+      : Promise.resolve({ data: [] as CourseModuleVisual[] }),
     moduleIds.length > 0
-      ? await supabase
+      ? supabase
           .from("course_module_audio")
           .select(
             "id, module_id, section_index, language, audio_url, format, duration_seconds, content_hash, timings",
           )
           .in("module_id", moduleIds)
           .returns<CourseModuleAudio[]>()
-      : { data: [] as CourseModuleAudio[] };
-
-  // §A.6/INC-22: the BHW's own session for this course, if any — the
-  // course_sessions_bhw_read RLS policy already restricts this to sessions
-  // the BHW is actually enrolled in. Only queried when course_sessions is
-  // on; feature flags gate the UI/route layer only, never an RPC, so the
-  // schema itself has no such gate (docs/training-modules-plan.md).
-  const { data: session } = flags.course_sessions
-    ? await supabase
-        .from("course_sessions")
-        .select("id, lesson_density")
-        .eq("course_id", id)
-        .maybeSingle<{ id: string; lesson_density: LessonDensity }>()
-    : { data: null };
-
-  const density: LessonDensity = session?.lesson_density ?? "normal";
-  const sessionId = session?.id ?? null;
-
-  const { data: testQuestions } = flags.course_sessions
-    ? await supabase
-        .from("course_test_questions")
-        .select(
-          "id, course_id, position, prompt_fil, prompt_en, options, correct_option_index",
-        )
-        .eq("course_id", id)
-        .order("position")
-        .returns<CourseTestQuestion[]>()
-    : { data: [] as CourseTestQuestion[] };
-
-  const { data: testAttempts } = flags.course_sessions
-    ? await supabase
-        .from("course_test_attempts")
-        .select("id, course_id, session_id, phase, score_percent, taken_at")
-        .eq("course_id", id)
-        .returns<CourseTestAttempt[]>()
-    : { data: [] as CourseTestAttempt[] };
-
-  const { data: progress } = await supabase
-    .from("course_progress")
-    .select("id, status")
-    .eq("course_id", id)
-    .eq("bhw_user_id",appUser.id)
-    .maybeSingle<{ id: string; status: CourseProgressStatus }>();
-
-  const { data: moduleProgress } = progress
-    ? await supabase
-        .from("course_module_progress")
-        .select("module_id, completed_at, quiz_score, quiz_attempts")
-        .eq("course_progress_id", progress.id)
-        .returns<ModuleProgress[]>()
-    : { data: [] as ModuleProgress[] };
-
-  const { data: certificate } =
+      : Promise.resolve({ data: [] as CourseModuleAudio[] }),
+    progress
+      ? supabase
+          .from("course_module_progress")
+          .select("module_id, completed_at, quiz_score, quiz_attempts")
+          .eq("course_progress_id", progress.id)
+          .returns<ModuleProgress[]>()
+      : Promise.resolve({ data: [] as ModuleProgress[] }),
     progress?.status === "certified"
-      ? await supabase
+      ? supabase
           .from("certificates")
           .select("verification_code")
           .eq("course_id", id)
           .eq("bhw_user_id",appUser.id)
           .maybeSingle<{ verification_code: string }>()
-      : { data: null };
-
-  // Opt in only for a published mapped program. Private facilitator notes are
-  // deliberately absent from every learner query and serialized prop.
-  let reference: ReferenceData | undefined;
-  const {data: chapter, error: chapterError} = await supabase.from('training_program_chapters')
-    .select('program_id').eq('course_id',id).eq('availability','available').maybeSingle();
-  if (chapterError) throw new Error('Unable to load training hierarchy');
-  if(chapter && moduleIds.length) {
-    const {data: program,error: programError} = await supabase.from('training_programs')
-      .select('id,title_fil,title_en').eq('id',chapter.program_id).eq('status','published').maybeSingle();
-    if(programError)throw new Error('Unable to load training program');
-    if(program) {
-      const [chapterResult, lessonResult, completedResult, resumeResult] = await Promise.all([
-        supabase.from('training_program_chapters').select('*').eq('program_id',program.id).order('position').returns<TrainingProgramChapter[]>(),
-        supabase.from('course_lessons').select('*').in('module_id',moduleIds).not('published_revision_id','is',null).order('position').returns<CourseLesson[]>(),
-        progress ? supabase.from('course_lesson_progress').select('*').eq('course_progress_id',progress.id).returns<CourseLessonProgress[]>() : Promise.resolve({data:[],error:null}),
-        progress ? supabase.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).returns<CourseLessonResume[]>() : Promise.resolve({data:[],error:null}),
-      ]);
-      if([chapterResult,lessonResult,completedResult,resumeResult].some(r=>r.error))throw new Error('Unable to load lesson state');
-      const lessonRows=lessonResult.data??[];
-      if(lessonRows.length) {
-        const {data: revisions,error} = await supabase.from('course_lesson_revisions')
-          .select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
-          .in('id',lessonRows.map(l=>l.published_revision_id!)).returns<CourseLessonRevision[]>();
-        if(error || lessonRows.some(l=>!revisions?.some(r=>r.id===l.published_revision_id)))throw new Error('Unable to load published lesson revisions');
-        reference={...program,chapters:chapterResult.data??[],completed:completedResult.data??[],resumes:resumeResult.data??[],
-          lessons:modules!.flatMap(m=>lessonRows.filter(l=>l.module_id===m.id).map(l=>({...l,revision:revisions!.find(r=>r.id===l.published_revision_id)!})))};
-      }
-    }
-  }
+      : Promise.resolve({ data: null }),
+    loadReference(),
+  ]);
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">

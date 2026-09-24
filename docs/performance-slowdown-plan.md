@@ -109,6 +109,27 @@ deploy: the deployment's `regions` should read `hnd1`.
   `"use cache"` plus a tag that the admin flags page revalidates.
 
 ### Phase 3: Parallelise the heavy routes
+**Status: done (first pass).** Sequential reads before and after:
+
+| Route | Before | After |
+|---|---|---|
+| `courses/[id]` | ~20 | ~5 (flags+auth, profile, one batch, one batch, revisions) |
+| training lesson page | ~12 | ~6 (flags+auth, profile, program+chapters, course+modules+progress, lessons+completed, lesson+resume+pretest) |
+| `api/chat` | ~15–18 | ~7 on the response path |
+
+- `courses/[id]` also drops the duplicate chapter and program reads.
+- `api/chat`: analytics and onboarding RPCs move to `after()`, the
+  existing-session update runs alongside the user-message insert, and the
+  unmatched-question upsert runs alongside the first-answer check.
+- `kb/[slug]`: the onboarding RPC runs alongside the page's reads. It stays
+  awaited rather than moving to `after()`, because a Server Component can't
+  use request cookies after the response.
+- The rate-limit check in `api/chat` intentionally stays ahead of the
+  knowledge-base load so rejected requests stay cheap.
+- Not done yet: caching `kb_entries`/`synonyms` across requests, and
+  `prefetch={false}`. With functions now in `hnd1`, re-measure before
+  deciding whether either is still worth it.
+
 - `training/[programId]/[[...path]]`: run program + chapters, then
   course + modules + progress, as `Promise.all` batches. That gets it to about
   3–4 dependent steps.
