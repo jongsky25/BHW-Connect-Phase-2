@@ -79,6 +79,12 @@ a hash of the exact narrated text and voice.
   Read Aloud service (honours `HTTPS_PROXY`). Each sentence is synthesized
   separately and the MP3 frames are joined, so read-along timings are exact.
 - `**bold**` markers are stripped from speech; the Read view renders them bold.
+- Any run of two or more capitals is an acronym and is spoken letter by
+  letter: `B H W` for the English voice, English letter names spelled for the
+  Filipino voice (`bi-eych-dobolyu`), since that voice otherwise reads BHW as
+  a word or with Spanish letter names. Plural/possessive `s` stays attached,
+  a slash between words is read as "or"/"o", and II/III are read as numbers.
+  Changing these rules requires bumping `SPEECH_RULES` so audio re-renders.
 - Re-runs only render changed sections and delete superseded files of the
   processed subchapters.
 - The lesson page shows a player only when the recorded sentences equal the
@@ -87,8 +93,8 @@ a hash of the exact narrated text and voice.
 - Slides mode has no audio yet: 1.1 slides have no narration script and
   slide display text differs from the Read text, so Read timings are never
   reused there.
-- Machine speech: a listening review (pronunciation of acronyms such as BHW,
-  RHU, RA 7883, and Filipino/English code-switching) is still owed.
+- Machine speech: a listening review (acronym spelling checked by
+  transcription only; Filipino/English code-switching and numbers) is still owed.
 
 Versioned source of truth for facilitated BHW training content, loaded into a
 Supabase project by `scripts/training-load.mjs`. This is the format

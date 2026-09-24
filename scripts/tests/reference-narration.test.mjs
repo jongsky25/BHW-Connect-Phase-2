@@ -57,7 +57,7 @@ test("assembled narration timings are exact frame arithmetic in zone order", () 
 });
 
 test("speech drops emphasis markers; SSML escapes text", () => {
-  assert.equal(spokenText("**Mali**: Hindi  tama."), "Mali: Hindi tama.");
+  assert.equal(spokenText("**Mali**: Hindi  tama.", "fil"), "Mali: Hindi tama.");
   assert.match(buildUtteranceSsml(`A & B <"x">`, "en-PH-RosaNeural"), /xml:lang='en-PH'.*A &amp; B &lt;&quot;x&quot;&gt;/);
 });
 
@@ -69,6 +69,19 @@ test("read-aloud token matches the reference implementation and rotates every 5 
   const header = "X-RequestId:1\r\nPath:audio";
   const framed = Buffer.concat([Buffer.from([0, header.length]), Buffer.from(header), Buffer.from([7, 8])]);
   assert.deepEqual([...audioPayload(framed)], [7, 8]);
+});
+
+test("all-caps acronyms are spoken letter by letter in both languages", () => {
+  assert.equal(spokenText("Ang **BHW** ay kasama ng RHU sa UHC.", "fil"), "Ang bi-eych-dobolyu ay kasama ng ar-eych-yu sa yu-eych-si.");
+  assert.equal(spokenText("The BHW works with the RHU under UHC.", "en"), "The B H W works with the R H U under U H C.");
+  assert.equal(spokenText("HEPO, SMART at LIPH", "fil"), "eych-i-pi-o, es-em-ey-ar-ti at el-ay-pi-eych");
+  assert.equal(spokenText("Many BHWs; the BHW’s duty; BHWs' skill; HEPOs.", "en"), "Many B H W's; the B H W's duty; B H W's skill; H E P O's.");
+  assert.equal(spokenText("Maraming BHWs.", "fil"), "Maraming bi-eych-dobolyus.");
+  assert.equal(spokenText("RA 7883 IRR at HH-014", "fil"), "ar-ey 7883 ay-ar-ar at eych-eych-014");
+  assert.equal(spokenText("the CHO/MHO and midwife/RHU", "en"), "the C H O or M H O and midwife or R H U");
+  assert.equal(spokenText("ang CHO/MHO", "fil"), "ang si-eych-o o em-eych-o");
+  assert.equal(spokenText("Chapters II at III", "fil"), "Chapters 2 at 3", "Roman numerals are numbers, not acronyms");
+  assert.equal(spokenText("PhilHealth, Barangay, A at I", "en"), "PhilHealth, Barangay, A at I", "single capitals and mixed case are untouched");
 });
 
 const lesson = (body) => ({

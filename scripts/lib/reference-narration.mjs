@@ -17,12 +17,41 @@ import { computeContentHash } from "./tts-render-core.mjs";
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
 export const AUDIO_ROOT = "/training/audio";
 // Bump when spokenText changes so existing audio is re-rendered.
-export const SPEECH_RULES = "speech-v1";
+export const SPEECH_RULES = "speech-v2";
+
+// English letter names spelled for the Filipino voice. Given "BHW" or
+// "B H W" it reads a word or Spanish-style letters; these spellings make it
+// say "bee-aitch-double-u" like the English voice (checked by transcribing
+// the synthesized audio).
+const FILIPINO_LETTER_NAMES = {
+  A: "ey", B: "bi", C: "si", D: "di", E: "i", F: "ef", G: "dyi", H: "eych", I: "ay",
+  J: "dyey", K: "key", L: "el", M: "em", N: "en", O: "o", P: "pi", Q: "kyu", R: "ar",
+  S: "es", T: "ti", U: "yu", V: "vi", W: "dobolyu", X: "eks", Y: "way", Z: "zi",
+};
+const ROMAN_NUMERALS = { II: "2", III: "3" };
+
+// Any run of two or more capitals is an acronym and is spelled letter by
+// letter in both languages (BHW -> B H W, HEPO -> H E P O). A trailing
+// plural or possessive s (BHWs, BHW's, BHWs') stays attached.
+export function spellAcronyms(text, language) {
+  return text.replace(/(?<![A-Za-z])([A-Z]{2,})(s['’]?|['’]s)?(?![A-Za-z])/g, (whole, letters, suffix) => {
+    if (!suffix && ROMAN_NUMERALS[letters]) return ROMAN_NUMERALS[letters];
+    if (language === "fil") return [...letters].map((c) => FILIPINO_LETTER_NAMES[c]).join("-") + (suffix ? "s" : "");
+    return [...letters].join(" ") + (suffix ? "'s" : "");
+  });
+}
 
 // What the voice reads for a zone. Zones keep the displayed text (the browser
-// rebuilds them from the revision to align highlighting); only markdown
-// emphasis markers are removed so they are never read aloud.
-export const spokenText = (text) => text.replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
+// rebuilds them from the revision to align highlighting); markdown emphasis
+// markers are removed, a slash between words (CHO/MHO, midwife/RHU) is read
+// as "or", and acronyms are spelled out.
+export const spokenText = (text, language) =>
+  spellAcronyms(
+    text.replace(/\*\*/g, "").replace(/(?<=[A-Za-z])\/(?=[A-Za-z])/g, language === "fil" ? " o " : " or "),
+    language,
+  )
+    .replace(/\s+/g, " ")
+    .trim();
 
 const L3_BITRATES = {
   1: [0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320],
