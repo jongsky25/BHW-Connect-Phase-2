@@ -58,6 +58,26 @@ const corruptions = [
     (l) => (l.notes.observation_indicators[0].objective_index = 8),
   ],
   ["narration parity", (l) => (l.revision.slides[0].narration_fil = "script")],
+  [
+    "facilitator notes off-template",
+    (l) => (l.notes.notes_en = "Free-form notes without the template."),
+  ],
+  [
+    "facilitator notes missing a section",
+    (l) =>
+      (l.notes.notes_fil = l.notes.notes_fil.replace(
+        /## \[misconception\][\s\S]*?(?=## \[)/,
+        "",
+      )),
+  ],
+  [
+    "facilitator notes empty section",
+    (l) =>
+      (l.notes.notes_en = l.notes.notes_en.replace(
+        /(## \[practice\][^\n]*\n)[\s\S]*?(?=## \[)/,
+        "$1\n",
+      )),
+  ],
 ];
 for (const [name, mutate] of corruptions)
   test(name, () => {

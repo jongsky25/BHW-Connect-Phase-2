@@ -149,9 +149,11 @@ export async function runScenarios(db,pg,config,fixture){
     assert.equal((await db.query('select * from assessments where bhw_user_id=$1 and course_id=$2',[users.new.id,course])).rowCount,1);
     assert.equal((await db.query('select * from certificates where bhw_user_id=$1',[users.new.id])).rowCount,0);
   });
-  await check('reporting inherits scoped admins and session-owner facilitator access',async()=>{
-    assert.equal((await q(users.facilitator,'select * from course_lesson_progress')).rowCount,2);
-    assert.equal((await q(users.otherFacilitator,'select * from course_lesson_progress')).rowCount,0);
+  // Facilitators read every BHW in their org subtree since the facilitator
+  // guide migration (20260926000000), not only their own session's cohort.
+  await check('reporting inherits scoped admins and org-scoped facilitator access',async()=>{
+    assert.equal((await q(users.facilitator,'select * from course_lesson_progress')).rowCount,6);
+    assert.equal((await q(users.otherFacilitator,'select * from course_lesson_progress')).rowCount,6);
     assert.equal((await q(users.outsideAdmin,'select * from course_lesson_progress')).rowCount,0);
     assert.equal((await q(users.root,'select * from course_lesson_progress')).rowCount,6);
     assert.equal((await q(users.certified,'select * from course_lesson_progress')).rowCount,2);

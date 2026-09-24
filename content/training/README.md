@@ -23,6 +23,12 @@ Add `lessons/<stable-lesson-key>/` containing:
   paste Read bodies into Slides.
 - `facilitator.fil.md`, `facilitator.en.md`, `competency.json`: private notes
   and one observation indicator per objective; never included in learner props.
+  Both notes files must follow the fixed facilitator-guide template: exactly
+  these `## [id] Heading` sections, in this order, each non-empty (headings are
+  translated; IDs are not): `purpose`, `time-materials`, `prepare`, `opening`,
+  `steps`, `expected-answers`, `misconception`, `practice`, `answer-key`,
+  `observe`, `support`, `sources-review`. The loader rejects anything else.
+  What goes in each section: `docs/training-content-style-guide.md` §5.1.
 
 Coverage must match both directions: every position's concepts and every concept's
 position references agree. The selected subchapter must cover exactly its existing

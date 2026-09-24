@@ -235,6 +235,37 @@ objective.
 
 ---
 
+### 5.1 Lesson facilitator guide template (`lessons/*/facilitator.*.md`)
+
+The module's `facilitator-notes.*.md` above stays the subchapter-level plan
+(total timing, the whole-module script). Each short lesson under
+`lessons/<key>/` also has its own `facilitator.fil.md` and
+`facilitator.en.md`, shown to facilitators next to that lesson. So that every
+facilitator in every barangay runs a lesson the same way, both files use one
+fixed outline. The loader rejects a lesson whose notes miss, reorder, rename
+or leave empty any section. Headings are translated; the `[id]` is not.
+
+| ID | English heading | Filipino heading | What goes in it |
+|---|---|---|---|
+| `purpose` | Purpose | Layunin | One or two sentences: what the BHW can do by the end, in observable terms. |
+| `time-materials` | Time and materials | Oras at kagamitan | Minutes for a face-to-face session (this lesson's share of the module allocation, never a new allocation) and self-study minutes; the exact materials to bring. |
+| `prepare` | Prepare | Paghahanda | What the facilitator reads or checks first, local facts to have ready, and the lesson's scope limits (what not to teach here). |
+| `opening` | Opening | Pambungad | One opening question or activity, word for word. |
+| `steps` | Steps | Mga hakbang | Numbered steps in the lesson's section order, each naming the Read section / slide it goes with and the question to ask. |
+| `expected-answers` | Expected answers and how to respond | Inaasahang sagot at paano tumugon | The answers BHWs usually give and a respectful response to each. |
+| `misconception` | Common misconception | Karaniwang maling akala | One named misconception and how to correct it without embarrassing anyone. |
+| `practice` | Practice activity | Gawaing pagsasanay | A short activity where the facilitator can watch the skill (this is where observation happens). |
+| `answer-key` | Self-check answer key | Susi sa self-check | Every check in the lesson: the correct option and why each other option is wrong. |
+| `observe` | What to observe | Ano ang oobserbahan | How the lesson's `competency.json` indicator looks during the practice activity at Kaya na / Kailangan pa ng practice / Hindi pa, and a reminder that a correct self-check is not evidence of the skill. |
+| `support` | If a BHW needs more support | Kung kailangan ng dagdag na suporta | Concrete next steps for a BHW rated Kailangan pa or Hindi pa, including how and when to re-observe. |
+| `sources-review` | Sources and review notes | Sanggunian at tala sa pagrepaso | Source pages, timing discrepancies, and review status (say plainly if it is still a draft). |
+
+Write for a facilitator who has never taught the lesson and reads this five
+minutes before the session: short sentences, the actual words to say in
+italics, no clinical advice beyond what the lesson itself teaches.
+`modules/01-tungkulin-ng-bhw/lessons/bhw-health-educator/` is the worked
+example.
+
 ## 6. Retrieval checks: how many, and where
 
 Retrieval checks (`:::check` blocks — see `content/training/README.md` for
