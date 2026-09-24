@@ -1,6 +1,66 @@
 export type CourseStatus = "draft" | "published" | "archived";
 export type ModuleType = "text" | "video" | "quiz";
 
+// Reference Manual additive hierarchy. Legacy Course/Module/Lesson types below
+// remain unchanged until an explicitly mapped, published experience is enabled.
+export type TrainingProgram = {
+  id: string; content_key: string; org_unit_id: string; author_user_id: string;
+  title_fil: string; title_en: string; description_fil: string; description_en: string;
+  status: CourseStatus; created_at: string; updated_at: string;
+};
+export type TrainingProgramChapter = {
+  id: string; program_id: string; chapter_key: string; position: number;
+  title_fil: string; title_en: string; course_id: string | null;
+  availability: "unavailable" | "available";
+};
+export type CourseLesson = {
+  id: string; module_id: string; lesson_key: string; position: number;
+  title_fil: string; title_en: string; objectives_fil: string[]; objectives_en: string[];
+  required: boolean; published_revision_id: string | null; created_at: string;
+};
+export type LessonModality = "read" | "slides";
+export type StableLessonSection = {
+  id: string; concept_ids: string[]; heading_fil: string; heading_en: string;
+  body_fil: string; body_en: string; asset_ids: string[];
+  takeaway_fil: string; takeaway_en: string; check: LessonCheck | null;
+};
+export type AuthoredLessonSlide = {
+  id: string; concept_ids: string[];
+  layout: "scene" | "annotated-illustration" | "comparison" | "process" | "relationship-map" | "decision" | "takeaway";
+  heading_fil: string; heading_en: string; display_fil: string; display_en: string;
+  asset_ids: string[]; check: LessonCheck | null;
+  narration_fil?: string; narration_en?: string;
+};
+export type LessonSource = { id: string; title: string; pdf_pages: number[]; url?: string };
+export type LessonAsset = {
+  id: string; path: string; alt_fil: string; alt_en: string;
+  caption_fil: string; caption_en: string; provenance: string;
+  review_status: "draft" | "approved";
+};
+export type LessonConceptCoverage = { id: string; read_ids: string[]; slide_ids: string[]; source_ids: string[] };
+export type CourseLessonRevision = {
+  id: string; lesson_id: string; revision_key: string; content_hash: string;
+  read_sections: StableLessonSection[]; slides: AuthoredLessonSlide[];
+  coverage: LessonConceptCoverage[]; sources: LessonSource[]; assets: LessonAsset[];
+  created_by: string; created_at: string;
+};
+export type CourseLessonProgress = {
+  course_progress_id: string; lesson_id: string; revision_id: string; completed_at: string;
+} & (
+  | { completion_basis: "learner"; legacy_module_id: null; migration_batch: null }
+  | { completion_basis: "legacy_equivalence"; legacy_module_id: string; migration_batch: string }
+);
+export type CourseLessonResume = {
+  course_progress_id: string; lesson_id: string; revision_id: string;
+  modality: LessonModality; language: "fil" | "en";
+  position_key: string; concept_id: string; updated_at: string;
+};
+// Fetch only on an assessor/admin path. Never nest in CourseLessonRevision.
+export type CourseLessonFacilitatorNotes = {
+  revision_id: string; notes_fil: string; notes_en: string;
+  observation_indicators: ObservationIndicator[];
+};
+
 export type QuizOption = { fil: string; en: string };
 
 export type Course = {
