@@ -182,7 +182,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
         const [bank,attempt,revisionResult,resumeResult,notes]=await Promise.all([
-          pretestGate?db.from('course_test_questions').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
+          pretestGate?db.from('course_test_questions_current').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
           pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
           db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
             .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),

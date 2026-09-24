@@ -80,7 +80,7 @@ export async function loadSupervisorProgress(
       courseIds.length
         ? db.from("course_modules").select("id,course_id,position,type,title_fil,title_en").in("course_id", courseIds)
         : none,
-      courseIds.length ? db.from("course_test_questions").select("course_id").in("course_id", courseIds) : none,
+      courseIds.length ? db.from("course_test_questions_current").select("course_id").in("course_id", courseIds) : none,
     ]);
     if (courses.error) fail("chapter courses");
     if (modules.error) fail("subchapters");

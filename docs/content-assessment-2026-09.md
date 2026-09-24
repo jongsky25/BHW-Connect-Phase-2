@@ -116,7 +116,7 @@ stage new draft revisions when loaded.
 | S2 | Fixed in repo; SME to confirm PhilHealth terms | "Automatically included" no longer means "free". Direct contributors still pay premiums. Primary care means *registering* with a provider of choice, not being "assigned" one. Referral is what the law "calls for", with local variation. The route from barangay to health board goes through the midwife and the municipal/city health office. |
 | S3 | Fixed; checked against RA 7883 text | The 1% cap is nationwide (§5). The subsistence allowance applies only at isolated BHS (§6b). The hazard allowance amount is set locally (§6a). "Owed" is replaced by "benefits the law provides… set locally". The three roles are attributed to the DOH BHW Reference Manual, not RA 7883, which does not name them. The BHWE "two years of college" condition is not in RA 7883 §6d; it is flagged for a CSC source. |
 | S4 | Fixed | Accreditation comes from the local health board. The punong barangay oversees BHWs *administratively*; the midwife remains the technical supervisor. |
-| S5 | Live UHC item corrected; versioned bank still open | See below. |
+| S5 | Fixed in repo (versioned bank); migration not yet deployed | See below. |
 | S6 | Fixed for S1–S4 claims | The chatbot entries now match the lessons. A claim registry (standard §10 G1) is still needed to stop the drift recurring. |
 | S7 | Open | The claims below need a named reviewer before pilot use. |
 
@@ -157,11 +157,36 @@ the old text.
 The live bank now matches the repo wording for all three items the review
 flagged.
 
-**Still open.**
-- The versioned bank (per-item module tag plus active/retired items, with
-  `rpc_course_test_submit` scoring only active items on published modules)
-  is still needed. It is what stops S5 on a project seeded with all 38
-  items.
+**Versioned test bank (built; not yet deployed).**
+
+What changed:
+- Migration `20260928000000_versioned_test_bank.sql` adds `module_position`
+  and `retired_at` to `course_test_questions`.
+- It allows one active question per position, and adds the
+  `course_test_questions_current` view: active questions that are either
+  course-wide or on a module the course contains.
+- `rpc_course_test_submit` scores only that set and counts each question once.
+- Every question in `test-questions.json` now names its module.
+- `--mode assessments` retires and replaces a changed question instead of
+  refusing. See `content/training/README.md`.
+
+A read-only dry run against the pilot project shows the plan for its current
+20-question bank:
+- tag 19 questions with their module in place;
+- retire question 11 and insert its corrected version (primary care provider
+  "registers with a chosen" rather than "assigned");
+- insert the 18 questions for modules 06–09.
+
+Those 18 will not be served or scored until modules 06–09 are loaded.
+
+Release steps, in order:
+1. Apply the migration to both Supabase projects (`docs/deploy-runbook.md`).
+2. Deploy the app. It reads questions through the new view.
+3. Run `npm run training:load -- --mode assessments --project <ref>
+   --org-unit "<course org unit>"`, read the dry run, then add `--apply`.
+
+The app must not be deployed before the migration: the view it reads would
+not exist yet.
 
 **SME confirmation queue (S7).**
 1. Milk Code implementing rules (AO 2006-0012): confirm that the refusal

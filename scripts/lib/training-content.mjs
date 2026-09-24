@@ -439,7 +439,14 @@ export function loadTrainingCourse(course = DEFAULT_COURSE, options = {}) {
 
   const modules = moduleIds.map((moduleId) => loadModule(moduleId, path.join(modulesDir, moduleId), ctx, problems, reviewFlags));
 
+  // A question's optional `module` names the module folder it tests. The bank
+  // stores that module's position, and only questions on modules the course
+  // contains are served and scored (versioned test bank migration).
+  const modulePositions = new Map(modules.map((m) => [m.id, m.position]));
   testQuestions.forEach((q, i) => {
+    if (q.module !== undefined && !modulePositions.has(q.module)) {
+      problems.push(`test-questions.json[${i}]: module "${q.module}" is not a module folder`);
+    }
     for (const field of ["prompt_fil", "prompt_en"]) {
       if (!q[field]?.trim()) problems.push(`test-questions.json[${i}]: ${field} is empty`);
     }
@@ -461,7 +468,10 @@ export function loadTrainingCourse(course = DEFAULT_COURSE, options = {}) {
     sources,
     categories,
     domains,
-    testQuestions,
+    testQuestions: testQuestions.map((q) => ({
+      ...q,
+      module_position: q.module === undefined ? null : modulePositions.get(q.module),
+    })),
     modules,
     qaEntries,
     reviewFlags,

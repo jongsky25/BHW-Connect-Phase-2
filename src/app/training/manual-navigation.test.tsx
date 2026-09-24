@@ -33,7 +33,7 @@ beforeEach(()=>{
     course_lessons:[{id:'l1',module_id:'m1',position:0,required:true,title_en:'HEPO',title_fil:'HEPO',published_revision_id:'r1'},{id:'l2',module_id:'m1',position:1,required:true,title_en:'Educator',title_fil:'Tagapagturo',published_revision_id:'r2'}],
     course_progress:[{id:'someone',course_id:'course',bhw_user_id:'other',status:'certified'},{id:'mine',course_id:'course',bhw_user_id:'self',status:'certified'}],
     certificates:[{course_id:'course',bhw_user_id:'other',verification_code:'NOT-MINE'},{course_id:'course',bhw_user_id:'self',verification_code:'MY-CERT'}],
-    course_lesson_progress:[],course_lesson_resume:[],course_lesson_revisions:[{id:'r1'}],course_test_questions:[{id:'q',course_id:'course'}],course_test_attempts:[],
+    course_lesson_progress:[],course_lesson_resume:[],course_lesson_revisions:[{id:'r1'}],course_test_questions_current:[{id:'q',course_id:'course'}],course_test_attempts:[],
   };
 });
 afterEach(cleanup);
@@ -103,7 +103,7 @@ describe('manual navigation',()=>{
   });
   it('facilitator chapter page shows where BHWs in the area struggle',async()=>{
     state.role='assessor';
-    state.rows.course_test_questions=[{id:'q',course_id:'course',position:0,prompt_en:'Who accredits a BHW?',prompt_fil:'',correct_option_index:0,options:[{en:'Local health board',fil:''},{en:'The midwife',fil:''}]}];
+    state.rows.course_test_questions_current=[{id:'q',course_id:'course',position:0,prompt_en:'Who accredits a BHW?',prompt_fil:'',correct_option_index:0,options:[{en:'Local health board',fil:''},{en:'The midwife',fil:''}]}];
     state.rows.course_test_attempts=[{course_id:'course',bhw_user_id:'b1',phase:'pretest',taken_at:'2026-09-01',answers:[{question_id:'q',selected_option_index:1}]},
       {course_id:'course',bhw_user_id:'b2',phase:'pretest',taken_at:'2026-09-01',answers:[{question_id:'q',selected_option_index:0}]}];
     render(await page(['chapter-1']));

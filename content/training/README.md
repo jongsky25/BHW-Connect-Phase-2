@@ -5,9 +5,8 @@
 The loader now requires an explicit `--mode`: `hierarchy` (stage a draft program
 and unavailable chapters), `course` (course metadata only), `content` (selected
 legacy modules only), `lessons` (selected converted subchapters), `assessments`
-(seed an empty bank or verify an identical bank), or `kb` (KB only). Old commands
-without a mode fail before sign-in. A changed existing assessment bank is rejected:
-historical questions must be versioned before replacement.
+(sync the versioned pretest/posttest bank — see `test-questions.json` below), or
+`kb` (KB only). Old commands without a mode fail before sign-in.
 
 For a converted subchapter, keep the existing module folder and project lock.
 Add `lessons/<stable-lesson-key>/` containing:
@@ -366,6 +365,7 @@ require every module to have.
 {
   "questions": [
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "...", "prompt_en": "...",
       "options": [{ "fil": "...", "en": "..." }, ...],
       "correct_option_index": 0
@@ -379,6 +379,37 @@ taken once before content, once after; delta = learning gain). `position` is
 the array index. As modules 2-9 are authored (INC-24/25), add questions here
 covering their objectives too — this file grows with the course, it is not
 per-module.
+
+**`module`** names the module folder the question tests. The loader stores
+that module's `position`, and a question is served and scored only when the
+course has a module at that position. A bank can therefore cover modules
+that are not loaded yet: their questions wait until the module arrives,
+instead of scoring BHWs on content they cannot open. Omit `module` for a
+course-wide question (always scored). The loader rejects a tag that names no
+module folder.
+
+**The bank is versioned** (migration `20260928000000_versioned_test_bank.sql`).
+Past attempts store answers by question id, so `--mode assessments` never
+edits a question's wording, options or key in place. For each position it
+compares the file with the course's active row:
+
+| File vs active row | What the loader does |
+|---|---|
+| no active row | inserts the question |
+| same content and tag | nothing |
+| same content, different `module` tag | updates the tag in place |
+| different content | retires the old row (`retired_at`) and inserts the new one |
+| active row past the end of the file | retires it |
+
+The dry run lists each retirement and tag change. Retired rows are kept, so
+past attempts keep their meaning. Stored scores are never recomputed. The app
+reads questions through `course_test_questions_current` (active and on a
+module the course contains), and `rpc_course_test_submit` scores against the
+same set, counting each question once.
+
+A BHW who took the pretest before a module arrived is scored on the larger
+set at the posttest. Compare pre/post gain only between BHWs who were
+scored on the same set of modules.
 
 ## Loading
 

@@ -1,7 +1,8 @@
 {
-  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Covers all nine modules (INC-25); 38 questions, including 18 added for Modules 6-9.",
+  "$comment": "Shared pretest/posttest bank for the whole course (docs/training-modules-plan.md §A: taken once before content, once after; delta = learning gain). Covers all nine modules (INC-25); 38 questions, including 18 added for Modules 6-9. Each question's `module` names the module it tests: only questions on modules the course contains are served and scored, and a changed question is retired and replaced rather than edited (content/training/README.md, test-questions.json).",
   "questions": [
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Bakit masasabing mas malawak ang tungkulin ng BHW sa ilalim ng UHC Act of 2019?",
       "prompt_en": "Why is a BHW's role said to be wider under the UHC Act of 2019?",
       "options": [
@@ -13,6 +14,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Ano ang ibig sabihin ng HEPO, ang itinalagang papel ng BHW sa ilalim ng UHC?",
       "prompt_en": "What does HEPO — the BHW's designated role under UHC — stand for?",
       "options": [
@@ -24,6 +26,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Alin sa mga sumusunod ang HINDI isa sa tatlong tungkulin ng BHW ayon sa BHW Reference Manual ng DOH?",
       "prompt_en": "Which of the following is NOT one of the three BHW roles in the DOH BHW Reference Manual?",
       "options": [
@@ -35,6 +38,7 @@
       "correct_option_index": 3
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Tinipon ni BHW Marites ang mga nanay sa purok para ipaliwanag kung paano maiiwasan ang pagtatae ngayong tag-ulan. Anong tungkulin ang kanyang ginagampanan?",
       "prompt_en": "BHW Marites gathers the mothers in the purok to explain how to avoid diarrhoea during the rainy season. Which role is she performing?",
       "options": [
@@ -46,6 +50,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Kinausap ni BHW Ramon ang purok leader at ang kagawad para magkaroon ng lingguhang paglilinis ng kanal. Anong tungkulin ang kanyang ginagampanan?",
       "prompt_en": "BHW Ramon talks to the purok leader and the kagawad about setting up a weekly canal clean-up. Which role is he performing?",
       "options": [
@@ -57,6 +62,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Bilang bahagi ng primary care team, sino ang karaniwang unang nasasalubong ng pangangailangang pangkalusugan sa komunidad?",
       "prompt_en": "As part of the primary care team, who is usually the first contact a health need in the community meets?",
       "options": [
@@ -68,6 +74,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Alin sa mga sumusunod ang HINDI karaniwang talaang hawak ng isang BHW?",
       "prompt_en": "Which of the following is NOT one of the records a BHW usually keeps?",
       "options": [
@@ -79,6 +86,7 @@
       "correct_option_index": 3
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Ano ang pinakamahusay na dahilan kung bakit kailangang tama at napapanahon ang household profile na hawak ng BHW?",
       "prompt_en": "What is the best reason a BHW's household profile needs to be accurate and up to date?",
       "options": [
@@ -90,6 +98,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "01-tungkulin-ng-bhw",
       "prompt_fil": "Bukod sa pagpapatupad ng plano, anong papel ang inaasahan sa BHW sa barangay planning team for health sa ilalim ng UHC at ng LIPH?",
       "prompt_en": "Beyond carrying out plans, what part is a BHW expected to take in the barangay planning team for health under UHC and the LIPH?",
       "options": [
@@ -101,6 +110,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "02-uhc-act",
       "prompt_fil": "Nabalitaan ng isang residente na 'libre na ang konsulta' dahil sa UHC Act. Ano ang pinakatamang paliwanag dito?",
       "prompt_en": "A resident heard that \"consultations are free now\" because of the UHC Act. What is the most accurate explanation?",
       "options": [
@@ -112,6 +122,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "02-uhc-act",
       "prompt_fil": "Ano ang ibig sabihin ng pagkakaroon ng \"primary care provider\" sa ilalim ng UHC?",
       "prompt_en": "What does having a \"primary care provider\" mean under UHC?",
       "options": [
@@ -123,6 +134,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "02-uhc-act",
       "prompt_fil": "Bakit hindi sapat na malaman lang ng BHW ang mga pagbabagong dulot ng UHC Act?",
       "prompt_en": "Why isn't it enough for a BHW to just know the changes the UHC Act brings?",
       "options": [
@@ -134,6 +146,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "03-polisiya-bhs",
       "prompt_fil": "Bakit ipinagbabawal ang pagtanggap ng regalo mula sa isang kumpanya ng gatas o gamot kapalit ng pag-promote?",
       "prompt_en": "Why is it prohibited to accept a gift from a milk or medicine company in exchange for promotion?",
       "options": [
@@ -145,6 +158,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "03-polisiya-bhs",
       "prompt_fil": "Ano ang inaatas ng RA 10028 sa isang barangay health station, kaiba sa pagbabawal ng Milk Code?",
       "prompt_en": "What does RA 10028 require of a barangay health station, unlike the Milk Code's prohibition?",
       "options": [
@@ -156,6 +170,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "04-ra7883",
       "prompt_fil": "Sino ang nagbibigay ng akreditasyon sa isang BHW bago siya opisyal na makapagsimula sa gawain?",
       "prompt_en": "Who accredits a BHW before they can officially begin their work?",
       "options": [
@@ -167,6 +182,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "04-ra7883",
       "prompt_fil": "Alin sa mga sumusunod ang HINDI kailangan para maging eligible sa BHW Eligibility (BHWE) sa Civil Service?",
       "prompt_en": "Which of the following is NOT required for BHW Eligibility (BHWE) in the Civil Service?",
       "options": [
@@ -178,6 +194,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "04-ra7883",
       "prompt_fil": "Ano ang pinakamahusay na hakbang kapag mabagal ang proseso ng akreditasyon o naantala ang isang benepisyong dapat matanggap?",
       "prompt_en": "What is the best move when the accreditation process is slow, or a benefit is delayed?",
       "options": [
@@ -189,6 +206,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "05-bhw-at-barangay",
       "prompt_fil": "May residenteng may matagal nang ubo at gustong malaman kung dapat bang i-refer. Sino ang unang lalapitan ng BHW para dito?",
       "prompt_en": "A resident has had a long-standing cough and wants to know if it needs a referral. Who should the BHW approach first for this?",
       "options": [
@@ -200,6 +218,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "05-bhw-at-barangay",
       "prompt_fil": "Sa isang koponan ng mga BHW, ano ang pinakaunang dapat gawin kapag may personal na isyu ang isang miyembro na maaaring makaapekto sa gawain ng grupo?",
       "prompt_en": "In a team of BHWs, what should be the very first response when a member has a personal issue that might affect the group's work?",
       "options": [
@@ -211,6 +230,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "05-bhw-at-barangay",
       "prompt_fil": "Alin sa mga sumusunod ang HINDI isa sa anim na kasanayan sa self-management na dapat taglayin ng isang BHW?",
       "prompt_en": "Which of the following is NOT one of the six self-management skills a BHW should have?",
       "options": [
@@ -222,6 +242,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "06-komunikasyon",
       "prompt_fil": "Tahimik ang residente habang katabi ang kapitbahay. Ano ang magandang simula ng interview?",
       "prompt_en": "A resident is quiet beside a neighbor. How should the interview begin?",
       "options": [
@@ -241,6 +262,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "06-komunikasyon",
       "prompt_fil": "Alin ang bukas na tanong tungkol sa hindi pagdalo?",
       "prompt_en": "Which is an open question about a missed visit?",
       "options": [
@@ -260,6 +282,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "06-komunikasyon",
       "prompt_fil": "Sabi ng residente ay dumalo siya, ngunit wala ang card. Paano itatala?",
       "prompt_en": "A resident says they attended but has no card. How should this be recorded?",
       "options": [
@@ -279,6 +302,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "06-komunikasyon",
       "prompt_fil": "Aling ulat ang makakatulong sa midwife?",
       "prompt_en": "Which report is useful to the midwife?",
       "options": [
@@ -298,6 +322,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "06-komunikasyon",
       "prompt_fil": "Paano malalaman kung malinaw ang napagkasunduang plano?",
       "prompt_en": "How can the clarity of the agreed plan be checked?",
       "options": [
@@ -317,6 +342,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "06-komunikasyon",
       "prompt_fil": "May takot ang kliyente sa family planning. Ano ang tamang papel ng BHW?",
       "prompt_en": "A client is worried about family planning. What is the BHW’s role?",
       "options": [
@@ -336,6 +362,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "07-problema",
       "prompt_fil": "Alin ang maayos na paglalarawan ng problemang pag-aaralan?",
       "prompt_en": "Which is a useful description of a problem to investigate?",
       "options": [
@@ -355,6 +382,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "07-problema",
       "prompt_fil": "Magkaiba ang dahilan ng dalawang pamilya sa hindi pagdalo. Ano ang gagawin sa Five Whys?",
       "prompt_en": "Two households report different reasons for nonattendance. What should happen in Five Whys?",
       "options": [
@@ -374,6 +402,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "07-problema",
       "prompt_fil": "Ang scores ay laki 3, kabigatan 4, feasibility 5, urgency 2. Ano ang kabuuan?",
       "prompt_en": "Scores are magnitude 3, severity 4, feasibility 5, urgency 2. What is the total?",
       "options": [
@@ -393,6 +422,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "07-problema",
       "prompt_fil": "Aling rekomendasyon ang maaari nang talakayin bilang action plan?",
       "prompt_en": "Which recommendation is ready for discussion as an action plan?",
       "options": [
@@ -412,6 +442,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "08-osh",
       "prompt_fil": "Walang tamang sharps container para sa nakaplanong gawain. Ano ang dapat gawin?",
       "prompt_en": "There is no proper sharps container for a planned task. What should happen?",
       "options": [
@@ -431,6 +462,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "08-osh",
       "prompt_fil": "Pagkatapos ng needlestick, ano ang dapat gawin kahit walang sintomas?",
       "prompt_en": "After a needlestick, what is needed even without symptoms?",
       "options": [
@@ -450,6 +482,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "08-osh",
       "prompt_fil": "May gloves ang BHW. Alin ang tama tungkol sa hand hygiene?",
       "prompt_en": "A BHW has gloves. Which statement about hand hygiene is correct?",
       "options": [
@@ -469,6 +502,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "08-osh",
       "prompt_fil": "Pagod na ang BHW at mapanganib ang gabing ruta. Ano ang tamang tugon?",
       "prompt_en": "The BHW is exhausted and the night route is unsafe. What is appropriate?",
       "options": [
@@ -488,6 +522,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "09-sustainable-practices",
       "prompt_fil": "Alin ang halimbawa ng ligtas na pagbawas-aksaya?",
       "prompt_en": "Which is safe waste reduction?",
       "options": [
@@ -507,6 +542,7 @@
       "correct_option_index": 0
     },
     {
+      "module": "09-sustainable-practices",
       "prompt_fil": "Bago humingi ng dagdag na supplies, ano ang kapaki-pakinabang na routine?",
       "prompt_en": "Before requesting more supplies, what routine is useful?",
       "options": [
@@ -526,6 +562,7 @@
       "correct_option_index": 1
     },
     {
+      "module": "09-sustainable-practices",
       "prompt_fil": "May bagong checklist pero walang nakatalagang susunod dito. Ano ang kulang?",
       "prompt_en": "A new checklist has nobody assigned to follow it. What is missing?",
       "options": [
@@ -545,6 +582,7 @@
       "correct_option_index": 2
     },
     {
+      "module": "09-sustainable-practices",
       "prompt_fil": "Bumaba ang papel ngunit bumaba rin ang bilang ng sessions. Ano ang dapat suriin?",
       "prompt_en": "Paper use fell but so did session numbers. What should be checked?",
       "options": [

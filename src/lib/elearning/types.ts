@@ -233,9 +233,10 @@ export type QuizQuestion = {
   correct_option_index: number;
 };
 
-// INC-19 course-level shared pretest/posttest bank (course_test_questions) —
-// same shape as QuizQuestion minus module_id, since this is scoped to the
-// course, not a single module.
+// INC-19 course-level shared pretest/posttest bank — same shape as
+// QuizQuestion minus module_id, since this is scoped to the course, not a
+// single module. Read from course_test_questions_current, which serves only
+// active questions on modules the course contains (versioned bank migration).
 export type CourseTestQuestion = {
   id: string;
   course_id: string;
