@@ -4,6 +4,10 @@ A web app for Barangay Health Workers (BHWs) in the Philippines. See `docs/` for
 the product vision, the increment-by-increment build contract, and the free-AI
 leverage plan — start there before touching code.
 
+Training content quality: `docs/content-assessment-2026-09.md` (multi-perspective
+review of the Day 1 package) and `docs/capacity-building-content-standard.md`
+(the proposed standard for all future training materials).
+
 Partner material the project has taken up for evaluation lives in
 `docs/source-material/`; `docs/cesr-module.md` is the current candidate module
 worked up from it (not scheduled — see `docs/delivery-plan.md` §7.2).
