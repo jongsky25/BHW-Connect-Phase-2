@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const {
@@ -18,7 +19,14 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     redirect("/home");
   }
 
-  const flags = await getRequestFeatureFlags();
+  // Tolerant of the RPC failing (e.g. the super admin migration not yet
+  // applied): the link just doesn't show.
+  const [flags, { data: superAdminContext }] = await Promise.all([
+    getRequestFeatureFlags(),
+    (await createClient()).rpc("rpc_super_admin_context"),
+  ]);
+  const isSuperAdmin =
+    ((superAdminContext as { is_super_admin: boolean }[] | null) ?? [])[0]?.is_super_admin === true;
   const t = await getTranslations("admin");
 
   return (
@@ -83,6 +91,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         <Link href="/settings" className="text-secondary hover:underline">
           {t("nav.settings")}
         </Link>
+        {isSuperAdmin ? (
+          <Link href="/super-admin" className="font-semibold text-secondary hover:underline">
+            {t("nav.superAdmin")}
+          </Link>
+        ) : null}
       </nav>
       {children}
     </div>

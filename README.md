@@ -88,4 +88,5 @@ read by `src/i18n/request.ts`.
 - `docs/restore-drill-runbook.md` — backup/restore procedure and RPO 24h/RTO 4h drill log.
 - `docs/breach-playbook.md` — DPA breach response, NPC 72h notification timeline.
 - `/admin/flags` — feature flags, flippable without a deploy.
+- `/super-admin` — (rcventura only) linked test accounts for every role: switch between them from one login and reset their progress. Granted in `supabase/migrations/20260925000000_super_admin_personas.sql`.
 - `.github/workflows/backup.yml` / `retention-purge.yml` — scheduled backup and data-retention jobs.

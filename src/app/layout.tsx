@@ -2,10 +2,13 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { headers } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { ServiceWorkerRegister } from "@/components/pwa/service-worker-register";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { PersonaBar } from "@/components/super-admin/persona-bar";
+import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
+import { parsePersonaSnapshot } from "@/lib/super-admin/types";
 import { parseA11ySettings } from "@/lib/settings/types";
 import "./globals.css";
 
@@ -49,6 +52,7 @@ export default async function RootLayout({
   const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
   const notifications = await getRequestNotifications();
   const signedIn = await getRequestSignedIn();
+  const persona = signedIn ? await getRequestPersona() : null;
 
   return (
     <html
@@ -65,6 +69,7 @@ export default async function RootLayout({
             notificationsEnabled={notifications.enabled}
             notifUnreadCount={notifications.unreadCount}
           />
+          {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
           <main className="flex flex-1 flex-col">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
@@ -108,4 +113,16 @@ async function getRequestNotifications() {
 async function getRequestSignedIn() {
   const h = await headers();
   return h.get("x-app-signed-in") === "1";
+}
+
+// The super admin's persona bar: only while the signed-in user is one of the
+// personas in the snapshot cookie, so a stale cookie shows nothing to anyone
+// else. Both inputs are already on the request; no extra lookup.
+async function getRequestPersona() {
+  const h = await headers();
+  const userId = h.get("x-app-user-id");
+  if (!userId) return null;
+  const snapshot = parsePersonaSnapshot((await cookies()).get(SUPER_ADMIN_PERSONAS_COOKIE)?.value);
+  if (!snapshot || !snapshot.personas.some((p) => p.id === userId)) return null;
+  return { userId, snapshot };
 }

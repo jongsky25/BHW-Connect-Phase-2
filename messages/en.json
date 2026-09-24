@@ -155,7 +155,8 @@
       "courses": "Courses",
       "forum": "Forum",
       "flipcharts": "Flip Charts",
-      "courseProgress": "Course progress"
+      "courseProgress": "Course progress",
+      "superAdmin": "Test accounts"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -978,5 +979,51 @@
   },
   "breadcrumbs": {
     "home": "Home"
+  },
+  "superAdmin": {
+    "barLabel": "Super admin test mode",
+    "barSignedInAs": "Test mode: signed in as {username} ({role}).",
+    "switchToLabel": "Switch to another test account",
+    "switchAction": "Switch",
+    "returnAction": "Back to {username}",
+    "heading": "Super admin: test accounts",
+    "description": "Linked test accounts let you use every role from this one login. Each one is a real account, so everything it does — completing a course, grading an assessment, submitting a flip chart — reaches the other roles exactly as it would for a real user. Switch into one, then use the bar at the top of the page to move to another or come back here. Reset a test account to start its progress over.",
+    "personasHeading": "Your test accounts",
+    "empty": "No test accounts yet. Create one per role below.",
+    "stats": "Courses: {courses} · Tests: {tests} · Assessments: {assessments} · Certificates: {certificates} · Surveys: {surveys}",
+    "onboardingDone": "onboarding done",
+    "onboardingNotDone": "onboarding not done",
+    "inactive": "deactivated",
+    "switchToAction": "Switch to this account",
+    "switching": "Switching…",
+    "resetAction": "Reset progress",
+    "resetConfirmAction": "Yes, reset",
+    "resetting": "Resetting…",
+    "cancelAction": "Cancel",
+    "resetWarning": "This permanently clears this test account's course progress, pre/post tests, assessments, certificates, session enrollments, survey responses, notifications and onboarding, and hands back any assessments it had claimed. Content it authored stays.",
+    "resetNotice": "Reset {username}: {courses} course(s), {tests} test attempt(s), {assessments} assessment(s), {certificates} certificate(s), {enrollments} enrollment(s), {surveys} survey response(s), {notifications} notification(s) cleared; {released} claimed assessment(s) returned to the queue.",
+    "dismiss": "Dismiss",
+    "createHeading": "Add a test account",
+    "createDescription": "Pick the role and where it sits in the hierarchy. Put a BHW and the facilitator/assessor who should grade it in the same barangay — an assessor can only claim assessments from its own unit or below. An admin sees everything below its own unit. The username is generated from yours (e.g. rcventura.bhw).",
+    "roleLabel": "Role",
+    "orgUnitLabel": "Org unit",
+    "fullNameLabel": "Display name (optional)",
+    "fullNamePlaceholder": "e.g. Test BHW – Brgy 1",
+    "createAction": "Create test account",
+    "creating": "Creating…",
+    "createdNotice": "Created {username}. Switch to it from the list above.",
+    "role": {
+      "bhw": "BHW",
+      "assessor": "Facilitator / Assessor",
+      "designer": "Designer",
+      "admin": "Admin"
+    },
+    "notAuthorizedError": "Only the super admin can do that.",
+    "sessionExpiredError": "Your super admin session has expired. Sign out and sign back in as the super admin.",
+    "personaNotFoundError": "That test account wasn't found.",
+    "personaInactiveError": "That test account is deactivated.",
+    "outOfScopeError": "That org unit is outside your scope.",
+    "invalidRoleError": "That role isn't available.",
+    "genericError": "Something went wrong. Please try again."
   }
 }
