@@ -1,0 +1,281 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-roles-hepo",
+    "position": 0,
+    "title_fil": "Ang BHW at ang HEPO",
+    "title_en": "The BHW and HEPO",
+    "objectives_fil": [
+      "Maipaliwanag kung paano nagsasama ang pagtuturo, pag-oorganisa, at pagtulong sa serbisyo sa papel ng BHW."
+    ],
+    "objectives_en": [
+      "Explain how education, organizing, and service support work together in the BHW role."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "morning",
+      "concept_ids": [
+        "m1.uhc.shift"
+      ],
+      "asset_ids": [
+        "A01"
+      ],
+      "takeaway_fil": "Primary care + health promotion: higit sa pagtulong sa serbisyo.",
+      "takeaway_en": "Primary care + health promotion: a role beyond service support.",
+      "check": null
+    },
+    {
+      "id": "prevention",
+      "concept_ids": [
+        "m1.uhc.organizing"
+      ],
+      "asset_ids": [
+        "A04"
+      ],
+      "takeaway_fil": "Kasama ang pagtuturo at pag-oorganisa sa pagsulong ng kalusugan.",
+      "takeaway_en": "Education and organizing contribute to health promotion.",
+      "check": null
+    },
+    {
+      "id": "hepo",
+      "concept_ids": [
+        "m1.hepo.umbrella"
+      ],
+      "asset_ids": [
+        "A02"
+      ],
+      "takeaway_fil": "HEPO = Health Education and Promotion Officer. Magkakaugnay na gawain, hindi reporting hierarchy.",
+      "takeaway_en": "HEPO = Health Education and Promotion Officer. Connected tasks, not a reporting hierarchy.",
+      "check": null
+    },
+    {
+      "id": "knowledge",
+      "concept_ids": [
+        "m1.hepo.knowledge"
+      ],
+      "asset_ids": [
+        "A02"
+      ],
+      "takeaway_fil": "Sapat na kaalaman ang pundasyon ng tatlong tungkulin.",
+      "takeaway_en": "Adequate knowledge supports all three roles.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m1.uhc.shift",
+        "m1.uhc.organizing",
+        "m1.hepo.umbrella",
+        "m1.hepo.knowledge"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Isang BHW, tatlong magkakaugnay na papel, iisang layuning isulong ang kalusugan.",
+      "takeaway_en": "One BHW, three connected roles, one aim: promoting health.",
+      "check": {
+        "prompt_fil": "Nakipagplano si Marites sa mga residente para sa clean-up drive. Aling papel ang pinakakitang-kita?",
+        "prompt_en": "Marites plans a clean-up drive with residents. Which role is most visible?",
+        "options": [
+          {
+            "fil": "Health Service Provider",
+            "en": "Health Service Provider"
+          },
+          {
+            "fil": "Community Organizer",
+            "en": "Community Organizer"
+          },
+          {
+            "fil": "Health Educator lamang",
+            "en": "Health Educator only"
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Community Organizer: nag-uugnay siya ng mga tao at humihikayat ng pagkilos. Maaari ring may pagtuturo sa parehong gawain; hindi eksklusibo ang mga papel.",
+        "feedback_en": "Community Organizer: she connects people and encourages action. Education can also occur in the same activity; the roles are not exclusive."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m1.uhc.shift",
+      "read_ids": [
+        "morning",
+        "check"
+      ],
+      "slide_ids": [
+        "morning-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.uhc.shift-d",
+        "m1.uhc.shift-f",
+        "m1.uhc.shift-r"
+      ]
+    },
+    {
+      "id": "m1.uhc.organizing",
+      "read_ids": [
+        "prevention",
+        "check"
+      ],
+      "slide_ids": [
+        "prevention-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.uhc.organizing-d",
+        "m1.uhc.organizing-f"
+      ]
+    },
+    {
+      "id": "m1.hepo.umbrella",
+      "read_ids": [
+        "hepo",
+        "check"
+      ],
+      "slide_ids": [
+        "hepo-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.hepo.umbrella-d",
+        "m1.hepo.umbrella-r",
+        "m1.hepo.umbrella-f"
+      ]
+    },
+    {
+      "id": "m1.hepo.knowledge",
+      "read_ids": [
+        "knowledge",
+        "check"
+      ],
+      "slide_ids": [
+        "knowledge-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.hepo.knowledge-d",
+        "m1.hepo.knowledge-r"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1.uhc.shift-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        7
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.uhc.shift-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m1.uhc.shift-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.uhc.organizing-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        7,
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.uhc.organizing-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m1.hepo.umbrella-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.hepo.umbrella-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.hepo.umbrella-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m1.hepo.knowledge-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        8
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.hepo.knowledge-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        11
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "path": "/training/bhw-1-1/A01-83aeca62b560.svg",
+      "alt_fil": "Pagtuturo, pag-uusap sa komunidad, at paggabay sa residente.",
+      "alt_en": "Teaching, community discussion, and guiding a resident.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "83aeca62b560e3cc3ad49b97cd921461deb996b174d315b7bc269dc9b027493e"
+    },
+    {
+      "id": "A04",
+      "path": "/training/bhw-1-1/A04-b4c8ec2f1411.svg",
+      "alt_fil": "Obserbasyon, pakikilahok, at ambag sa pagpaplano.",
+      "alt_en": "Observation, participation, and planning contributions.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "b4c8ec2f14110700a21b0ead42866f5ae29ed818936673af8f26880cc00a8723"
+    },
+    {
+      "id": "A02",
+      "path": "/training/bhw-1-1/A02-736187dad098.svg",
+      "alt_fil": "Tatlong magkakaugnay na papel sa pagsulong ng kalusugan.",
+      "alt_en": "Three connected roles in promoting health.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "draft",
+      "content_hash": "736187dad098070d806d873a90f59cf871b3d03c02b52bb3001692d1ecb7ecb8"
+    }
+  ]
+}

@@ -20,8 +20,10 @@ import type {
   QuizQuestion,
 } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
+import { ReferenceLessons, type ReferenceData } from './reference-lessons';
 
 type Props = {
+  reference?: ReferenceData;
   courseId: string;
   quizMaxAttempts: number;
   modules: CourseModule[];
@@ -39,6 +41,7 @@ type Props = {
 };
 
 export function CourseDetail({
+  reference,
   courseId,
   quizMaxAttempts,
   modules,
@@ -95,7 +98,8 @@ export function CourseDetail({
   const posttestAttempt =
     testAttempts.find((a) => a.phase === "posttest") ?? null;
   const hasTestBank = testQuestions.length > 0;
-  const pretestRequired = hasTestBank && !pretestAttempt;
+  const priorAchievement = reference && ['certified','content_completed','failed_assessment'].includes(progressStatus ?? '');
+  const pretestRequired = hasTestBank && !pretestAttempt && !priorAchievement;
 
   function progressFor(moduleId: string) {
     return moduleProgress.find((p) => p.module_id === moduleId) ?? null;
@@ -133,7 +137,7 @@ export function CourseDetail({
     }
   }
 
-  if (progressStatus === "certified") {
+  if (progressStatus === "certified" && !reference) {
     return (
       <div className="rounded-md border border-success/40 bg-success/5 p-4">
         <p className="font-medium text-success">{t("status.certified")}</p>
@@ -157,7 +161,7 @@ export function CourseDetail({
     );
   }
 
-  if (progressStatus === "failed_assessment") {
+  if (progressStatus === "failed_assessment" && !reference) {
     return (
       <div className="rounded-md border border-danger/40 bg-danger/5 p-4">
         <p className="font-medium text-danger">
@@ -169,6 +173,9 @@ export function CourseDetail({
 
   return (
     <div className="flex flex-col gap-4">
+      {reference && <p>{locale==='en'?'Chapter I assessment and certificate':'Pagtatasa at sertipiko ng Kabanata I'}: {progressStatus ? t(`status.${progressStatus}`) : '—'}
+        {certificateCode && <Link className="ml-2 underline" href={`/certificates/${certificateCode}`}>{t('viewCertificateAction')}</Link>}
+      </p>}
       {progressStatus === "content_completed" ? (
         <div className="rounded-md border border-info/40 bg-info/5 p-4">
           <p className="font-medium text-info">
@@ -201,7 +208,20 @@ export function CourseDetail({
         />
       ) : (
         <>
+          {reference && <ReferenceLessons {...reference} modules={modules} locale={locale}
+            onResume={async value=>{
+              const {error}=await createClient().rpc('rpc_course_lesson_resume',{
+                p_lesson_id:value.lesson_id,p_revision_id:value.revision_id,p_modality:value.modality,
+                p_language:value.language,p_position_key:value.position_key,p_concept_id:value.concept_id,
+              }); if(error)throw error;
+            }}
+            onComplete={async lesson=>{
+              const {error}=await createClient().rpc('rpc_course_lesson_complete',{p_lesson_id:lesson.id,p_revision_id:lesson.revision.id});
+              if(error)throw error; router.refresh();
+            }}
+          />}
           {modules.map((module) => {
+            if(reference?.lessons.some(l=>l.module_id===module.id))return null;
             const title = locale === "en" ? module.title_en : module.title_fil;
             const mProgress = progressFor(module.id);
             const isDone = mProgress?.completed_at != null;

@@ -1,5 +1,64 @@
 # Training content
 
+## Reference Manual lesson authoring (packages 3–5)
+
+The loader now requires an explicit `--mode`: `hierarchy` (stage a draft program
+and unavailable chapters), `course` (course metadata only), `content` (selected
+legacy modules only), `lessons` (selected converted subchapters), `assessments`
+(seed an empty bank or verify an identical bank), or `kb` (KB only). Old commands
+without a mode fail before sign-in. A changed existing assessment bank is rejected:
+historical questions must be versioned before replacement.
+
+For a converted subchapter, keep the existing module folder and project lock.
+Add `lessons/<stable-lesson-key>/` containing:
+
+- `lesson.json`: `manifest` (key, zero-based position, bilingual titles and one
+  or two objectives, explicit requiredness), `sections` (stable IDs, concepts,
+  asset IDs, bilingual takeaways and check), `coverage`, `sources`, `assets`.
+- `read.fil.md`, `read.en.md`: `## [stable-section-id] Heading` followed by
+  plain paragraphs. Position IDs and order must match the manifest and language.
+- `slides.json`: independently authored bilingual headings and display text,
+  stable IDs, concept IDs, asset references, layout, nullable check and optional
+  bilingual narration. Maximum 600 display characters per language. Do not
+  paste Read bodies into Slides.
+- `facilitator.fil.md`, `facilitator.en.md`, `competency.json`: private notes
+  and one observation indicator per objective; never included in learner props.
+
+Coverage must match both directions: every position's concepts and every concept's
+position references agree. The selected subchapter must cover exactly its existing
+non-excluded concept set. References use named sources and positive one-based PDF
+pages, with corrected citations from the approved prototype crosswalk.
+
+Assets live under `public/training/`, use bilingual alt/caption text and provenance,
+and have a SHA-256 `content_hash`. Their filename includes its first 12 characters.
+The loader verifies bytes and rejects root escapes/symlinks outside the public root.
+New media gets a new path; retain historical assets. Draft media can stage but
+cannot promote. The converted 1.1 fallback media remains draft pending visual review.
+
+Example (future authorized target, not a release instruction):
+
+```sh
+npm run training:load -- --mode hierarchy --project <ref> --org-unit "<name>"
+npm run training:load -- --mode lessons --modules 01-tungkulin-ng-bhw --project <ref> --org-unit "<name>"
+```
+
+No writes occur without `--apply`. In lessons mode, `--apply` stages immutable
+revisions and separate private notes; `--apply --publish` additionally calls
+the complete-subchapter atomic publication RPC. It does not activate the program
+or chapter, publish the delivery course, change tests/KB, or migrate progress.
+Hierarchy staging never activates a program. Activation remains a reviewed release step.
+
+The full selected subchapter is the promotion unit. Natural lesson keys recover
+interrupted inserts. Project locks gain `lessons[moduleKey][lessonKey]` mappings;
+existing entries are retained and writes use atomic replacement. Missing/stale
+course/module IDs or conflicting lesson metadata stop with a reconciliation error.
+Identical staging/publication performs zero database writes. Revisions hash the
+canonical learner content, lesson metadata, asset hashes and private notes.
+
+Run `node --test scripts/tests/reference-content.test.mjs scripts/tests/reference-navigation.test.mjs`
+with Node 22.18+; see `docs/bhw-reference-content-navigation.md` for verification
+limits and the extended disposable PostgreSQL rehearsal.
+
 Versioned source of truth for facilitated BHW training content, loaded into a
 Supabase project by `scripts/training-load.mjs`. This is the format
 reference — what each file must contain so the loader can parse it. For how

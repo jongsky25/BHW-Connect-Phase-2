@@ -33,6 +33,7 @@ export type AuthoredLessonSlide = {
 };
 export type LessonSource = { id: string; title: string; pdf_pages: number[]; url?: string };
 export type LessonAsset = {
+  content_hash: string;
   id: string; path: string; alt_fil: string; alt_en: string;
   caption_fil: string; caption_en: string; provenance: string;
   review_status: "draft" | "approved";

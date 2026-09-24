@@ -27,8 +27,12 @@
 // event; noted here as a known gap in the audit trail for loader-created
 // courses, not something either loader hides.
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync, renameSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { loadReferenceModule } from "./lib/reference-content.mjs";
+import { planReferenceLoad, applyReferenceLoad, referenceReport, stageReferenceHierarchy } from "./lib/reference-load.mjs";
+import { canonical } from "./lib/reference-content.mjs";
 import { renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
 import { DEFAULT_COURSE, loadTrainingCourse } from "./lib/training-content.mjs";
 import { createClient, projectUrl, requireEnv, selectAll, signIn } from "./lib/supabase-rest.mjs";
@@ -42,6 +46,7 @@ function parseArgs(argv) {
     owner: null,
     course: DEFAULT_COURSE,
     modules: null,
+    mode: null,
   };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -52,19 +57,26 @@ function parseArgs(argv) {
     else if (arg === "--project") args.project = argv[++i];
     else if (arg === "--org-unit") args.orgUnit = argv[++i];
     else if (arg === "--course") args.course = argv[++i];
+    else if (arg === "--mode") args.mode = argv[++i];
     else if (arg === "--modules") args.modules = argv[++i].split(",").map((m) => m.trim());
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (!args.project) throw new Error("--project <supabase-project-ref> is required");
+  if (!['hierarchy','course','content','lessons','assessments','kb'].includes(args.mode)) throw new Error('--mode hierarchy|course|content|lessons|assessments|kb is required');
+  if (!/^[a-z0-9-]+$/.test(args.course) || !/^[a-z0-9-]+$/.test(args.project)) throw new Error('invalid course/project key');
+  if (args.modules?.some(m => !/^[a-z0-9-]+$/.test(m))) throw new Error('invalid module key');
+  if (args.modules && new Set(args.modules).size!==args.modules.length)throw new Error('duplicate selected module');
+  if (['content','lessons'].includes(args.mode) && !args.modules?.length) throw new Error('selected content requires --modules');
+  if (args.publish && !['course','lessons','kb'].includes(args.mode)) throw new Error('publication is not supported for this mode');
   if (!args.orgUnit) throw new Error('--org-unit "<org unit name>" is required — see content/training/README.md');
-  if (args.publish && !args.owner) {
+  if (args.publish && args.mode === 'kb' && !args.owner) {
     throw new Error("--publish requires --owner <username>: kb_entries_publish_requires_owner");
   }
   return args;
 }
 
 function contentDir(course) {
-  return path.resolve(path.dirname(new URL(import.meta.url).pathname), "..", "content", "training", course);
+  return path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "content", "training", course);
 }
 
 function lockPath(course, ref) {
@@ -80,7 +92,9 @@ function readLock(course, ref) {
 function writeLock(course, ref, lock) {
   const file = lockPath(course, ref);
   mkdirSync(path.dirname(file), { recursive: true });
-  writeFileSync(file, `${JSON.stringify(lock, null, 2)}\n`);
+  const temporary = file + '.tmp-' + process.pid;
+  writeFileSync(temporary, `${JSON.stringify(lock, null, 2)}\n`);
+  renameSync(temporary,file);
 }
 
 async function resolveUserId(client, username, { requireAdmin = false } = {}) {
@@ -102,7 +116,7 @@ async function syncCourse(client, course, ctx, plan) {
   let courseId = lock.course;
   if (courseId) {
     const [existing] = await client.get(`courses?select=id&id=eq.${courseId}`);
-    if (!existing) courseId = null; // lock is stale
+    if (!existing) throw new Error("Reconcile stale course lock; refusing replacement");
   }
 
   const payload = {
@@ -133,8 +147,8 @@ async function syncModule(client, courseId, mod, ctx, plan) {
   const { lock, apply } = ctx;
   let moduleId = lock.modules[mod.id];
   if (moduleId) {
-    const [existing] = await client.get(`course_modules?select=id&id=eq.${moduleId}`);
-    if (!existing) moduleId = null;
+    const [existing] = await client.get(`course_modules?select=id,course_id&id=eq.${moduleId}`);
+    if (!existing || existing.course_id !== courseId) throw new Error("Reconcile stale/wrong-course module lock");
   }
 
   const payload = {
@@ -223,7 +237,17 @@ async function syncVisuals(client, moduleId, visuals, plan, apply) {
 }
 
 async function syncTestQuestions(client, courseId, questions, plan, apply) {
-  const existingForCourse = await client.get(`course_test_questions?select=id,position&course_id=eq.${courseId}`);
+  const existingForCourse = await client.get(`course_test_questions?select=*&course_id=eq.${courseId}`);
+  // Published question identities have historical attempts. This mode seeds an
+  // empty bank or verifies an identical one; revisions need a versioned design.
+  if(existingForCourse.length) {
+    const keys=['prompt_fil','prompt_en','options','correct_option_index'];
+    if(existingForCourse.length!==questions.length || questions.some((q,i)=>{
+      const row=existingForCourse.find(r=>r.position===i);
+      return !row || keys.some(k=>canonical(row[k])!==canonical(q[k]));
+    }))throw new Error('Assessment bank differs: version it before changing historical questions');
+    return;
+  }
   const byPosition = new Map(existingForCourse.map((r) => [r.position, r.id]));
 
   await Promise.all(
@@ -341,7 +365,11 @@ async function syncQaEntries(client, content, categoryIds, ctx, plan) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const content = loadTrainingCourse(args.course);
+  const referenceModules = args.mode === 'lessons' ? args.modules.map(id =>
+    loadReferenceModule(path.join(contentDir(args.course),'modules',id),path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../public'))) : null;
+  const content = referenceModules || args.mode === 'hierarchy' ? {reviewFlags:[]} : loadTrainingCourse(args.course);
+  const hierarchy = args.mode === 'hierarchy' ? JSON.parse(readFileSync(path.join(contentDir(args.course),'program.json'),'utf8')) : null;
+  if (!referenceModules && !hierarchy && args.modules?.some(id => !content.modules.some(m => m.id === id))) throw new Error('unknown selected module');
 
   if (content.reviewFlags.length > 0) {
     console.log(`\n${content.reviewFlags.length} review flag(s) — not blocking, but read these before publishing:`);
@@ -362,6 +390,29 @@ async function main() {
   const authorUserId = await resolveUserId(client, requireEnv("KB_LOADER_USERNAME"), { requireAdmin: true });
   const ownerId = args.owner ? await resolveUserId(client, args.owner, { requireAdmin: true }) : null;
   const lock = readLock(args.course, args.project);
+  if(hierarchy) {
+    console.log(JSON.stringify(await stageReferenceHierarchy(client,hierarchy,lock,{orgUnitId,authorUserId,apply:args.apply}),null,2));
+    if(args.apply)writeLock(args.course,args.project,lock);
+    return;
+  }
+  if (referenceModules) {
+    const referencePlan = await planReferenceLoad(client,referenceModules,lock,{orgUnitId,promote:args.publish});
+    console.log(JSON.stringify(referenceReport(referencePlan),null,2));
+    if(args.apply) await applyReferenceLoad(client,referencePlan,lock,authorUserId,()=>writeLock(args.course,args.project,lock));
+    return;
+  }
+  if(args.mode !== 'course') {
+    if(!lock.course) throw new Error('Reconcile lock: existing course required for scoped operations');
+    const [existing] = await client.get(`courses?select=id,org_unit_id&id=eq.${lock.course}`);
+    if(!existing || existing.org_unit_id !== orgUnitId) throw new Error('Reconcile course identity/org scope');
+    if(args.mode === 'content') for(const id of args.modules) {
+      if(!lock.modules[id])throw new Error('Reconcile lock: existing module required');
+      const [mod] = await client.get(`course_modules?select=id,course_id&id=eq.${lock.modules[id]}`);
+      if(!mod || mod.course_id!==lock.course)throw new Error('Reconcile module identity');
+      const converted=await client.get(`course_lessons?select=id&module_id=eq.${mod.id}&limit=1`);
+      if(converted.length)throw new Error('Use lessons mode for converted subchapters');
+    }
+  }
 
   const plan = {
     course: { create: 0, update: 0 },
@@ -375,9 +426,9 @@ async function main() {
 
   const ctx = { orgUnitId, authorUserId, lock, apply: args.apply, publish: args.publish, ownerId, modules: args.modules };
 
-  const courseId = await syncCourse(client, content.course, ctx, plan);
+  const courseId = args.mode === 'course' ? await syncCourse(client, content.course, ctx, plan) : lock.course;
 
-  if (args.apply && args.publish && courseId) {
+  if (args.mode === 'course' && args.apply && args.publish && courseId) {
     // rpc_course_set_status is the only path that writes courses.status —
     // going around it (a direct PATCH) would skip the course.status_changed
     // audit event and its own org-scope check.
@@ -385,20 +436,22 @@ async function main() {
   }
 
   const modulesToLoad = args.modules ? content.modules.filter((m) => args.modules.includes(m.id)) : content.modules;
-  for (const mod of modulesToLoad) {
+  for (const mod of args.mode === 'content' ? modulesToLoad : []) {
     const moduleId = await syncModule(client, courseId, mod, ctx, plan);
     await syncFacilitatorNotes(client, moduleId, mod.facilitatorNotes, plan, args.apply);
     await syncVisuals(client, moduleId, mod.visuals, plan, args.apply);
   }
 
-  if (courseId) {
+  if (args.mode === 'assessments' && courseId) {
     await syncTestQuestions(client, courseId, content.testQuestions, plan, args.apply);
-  } else {
+  } else if (args.mode === 'assessments') {
     plan.testQuestions.create += content.testQuestions.length; // dry run, course not yet created
   }
 
-  const categoryIds = await syncCategories(client, content.categories, lock, plan, args.apply);
-  await syncQaEntries(client, content, categoryIds, ctx, plan);
+  if (args.mode === 'kb') {
+    const categoryIds = await syncCategories(client, content.categories, lock, plan, args.apply);
+    await syncQaEntries(client, content, categoryIds, ctx, plan);
+  }
 
   if (args.apply) writeLock(args.course, args.project, lock);
 

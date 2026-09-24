@@ -30,7 +30,9 @@ try {
   }
   console.log(`Replayed ${files.length} migrations on ${(await db.query('select version()')).rows[0].version}`);
   const results=await runScenarios(db,pg,{...config,database},fixture);
-  const report={database,migrations:files.length,postgres:(await db.query('select version()')).rows[0].version,...results};
+  const {runReferenceLoader}=await import('./reference-loader-postgres.mjs');
+  const loader=await runReferenceLoader(db,fixture);
+  const report={database,migrations:files.length,postgres:(await db.query('select version()')).rows[0].version,...results,loader};
   if(process.env.PG_TEST_REPORT)await writeFile(process.env.PG_TEST_REPORT,JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));assert.equal(results.failures,0);
 } finally {await db.end();}
