@@ -181,6 +181,23 @@ describe("loadTrainingCourse", () => {
     expect(content.reviewFlags).toEqual([]);
   });
 
+  it("resolves a test question's module tag to that module's position; untagged is course-wide", () => {
+    const content = loadWith((files) => {
+      const [first] = files["test-questions.json"].questions;
+      files["test-questions.json"].questions = [{ ...first, module: MODULE }, first];
+      files[`modules/${MODULE}/module.json`].position = 4;
+    });
+    expect(content.testQuestions.map((q) => q.module_position)).toEqual([4, null]);
+  });
+
+  it("rejects a test question tagged to a module folder that does not exist", () => {
+    expect(() =>
+      loadWith((files) => {
+        files["test-questions.json"].questions[0].module = "99-missing";
+      }),
+    ).toThrow(/module "99-missing" is not a module folder/);
+  });
+
   it("rejects an SVG that fails the allowlist (script tag)", () => {
     expect(() =>
       loadWith((files) => {

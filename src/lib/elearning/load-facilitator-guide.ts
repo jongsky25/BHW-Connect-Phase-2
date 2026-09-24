@@ -112,7 +112,7 @@ export async function loadLessonGuide(db: SupabaseClient, revisionId: string) {
 
 export async function loadChapterTestItems(db: SupabaseClient, courseId: string) {
   const [questions, attempts] = await Promise.all([
-    db.from("course_test_questions").select("id,position,prompt_fil,prompt_en,options,correct_option_index")
+    db.from("course_test_questions_current").select("id,position,prompt_fil,prompt_en,options,correct_option_index")
       .eq("course_id", courseId).order("position").returns<TestItemQuestion[]>(),
     db.from("course_test_attempts").select("bhw_user_id,phase,taken_at,answers").eq("course_id", courseId)
       .returns<TestItemAttempt[]>(),

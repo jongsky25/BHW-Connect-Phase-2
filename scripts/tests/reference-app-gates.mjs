@@ -48,7 +48,7 @@ const base = "http://127.0.0.1:4175",
     ).rows,
   );
   await db.query(
-    `insert into course_test_questions(course_id,position,prompt_fil,prompt_en,options,correct_option_index) values($1,0,'Tanong sa lokal na pagsubok','Local fixture question',$2,0) on conflict(course_id,position) do nothing`,
+    `insert into course_test_questions(course_id,position,prompt_fil,prompt_en,options,correct_option_index) values($1,0,'Tanong sa lokal na pagsubok','Local fixture question',$2,0) on conflict(course_id,position) where retired_at is null do nothing`,
     [
       f.fixture.course,
       JSON.stringify([

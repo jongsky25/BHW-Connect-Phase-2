@@ -10,9 +10,9 @@ By the end of this short lesson the BHW can decline a company's offer out loud, 
 ## [prepare] Prepare
 
 - Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Practise Corazon's script out loud yourself once, so you can model it naturally and not read it: *"I understand you want to help, but we're not allowed to promote milk substitutes inside the BHS, under the Milk Code. If you'd like to help, we could accept support for our lactation station instead."*
+- Practise Corazon's script out loud yourself once, so you can model it naturally and not read it: *"I understand you want to help, but we're not allowed to promote milk substitutes inside the BHS, under the Milk Code. We also can't take samples, gifts or other offers from milk companies. I'll let our midwife know you came by."*
 - Know who the supervisor is at the participants' BHS (usually the midwife or RHU staff).
-- This lesson is about **how to say no**. The policies themselves were taught in "Recognizing a company offer" and "Breastfeeding and the environment". Do not add new policy details here. If a BHW offers an alternative such as support for a lactation station, treat it as something the supervisor decides, not a promise the BHW makes.
+- This lesson is about **how to say no**. The policies themselves were taught in "Recognizing a company offer" and "Breastfeeding and the environment". Do not add new policy details here. If a BHW suggests the company could help some other way (for example, support for the lactation station), correct it gently: a BHW never arranges donations or support from a milk company. The offer is reported to the midwife or supervisor, and that is where it ends for the BHW.
 
 ## [opening] Opening
 
@@ -23,17 +23,17 @@ Ask the group: *"Have you ever needed to say no to someone who was being kind to
 1. **Back to Corazon (Read "How to decline respectfully", first slide).** Remind them of the milk company visitor. Ask: *"Now that Corazon knows the basis, how can she say it without it sounding like a personal attack?"*
 2. **The four lines.** Show the slide: acknowledge the offer; explain the policy; do not promise an exchange; refer the next step to the supervisor. Model Corazon's script yourself, out loud. Ask: *"Which part of what I said matches each line?"* Point out what the lesson warns against: stalling, and pretending not to know.
 3. **Role-play (the practice activity below).** As the module script says, let them practise the actual wording, not just read the script.
-4. **Wrong versus right (Read "Wrong versus right: the company's offer", second slide).** Tell Danilo's story: he accepted samples and gifts from a medicine company "because it's free anyway, and maybe it's rude to say no", and handed out the samples with no explanation. Then Corazon's: she declined respectfully, explained the basis, and offered another way to work together. Ask: *"What is the real difference between Danilo and Corazon?"* Guide them to the lesson's answer: it is not kindness. It is who decides what is good for the patient, the BHS guided by policy or the company guided by its own benefit.
+4. **Wrong versus right (Read "Wrong versus right: the company's offer", second slide).** Tell Danilo's story: he accepted samples and gifts from a medicine company "because it's free anyway, and maybe it's rude to say no", and handed out the samples with no explanation. Then Corazon's: she declined respectfully, explained the basis in the Milk Code, made no deal with the company, and told the midwife the same day. Ask: *"What is the real difference between Danilo and Corazon?"* Guide them to the lesson's answer: it is not kindness. It is who decides what is good for the patient, the BHS guided by policy or the company guided by its own benefit.
 5. **Self-check.** Read the check question aloud and let the group discuss before you reveal the answer. If the session is running long, the module script suggests using the Wrong/Right section as a closing role-play: two volunteers act out Danilo, then Corazon.
 
-Note for step 4: in the "Right" example the lesson says Corazon explained the basis from AO 2015-0053 (the rules on pharmaceutical promotion), while her own visitor in section 1 was from a milk company and her script cites the Milk Code. If a BHW notices, thank them. Say that the Milk Code covers milk substitutes and AO 2015-0053 covers medicine, as taught in "Recognizing a company offer", and that this point has been noted for review.
+Note for step 4: Corazon's visitor is from a milk company, so her basis is the Milk Code. Danilo's visitor is from a medicine company, where AO 2015-0053 applies. If a BHW mixes the two up, point back to "Recognizing a company offer".
 
 ## [expected-answers] Expected answers and how to respond
 
 - **"I'd just say 'Sorry, bawal po' and walk away."** It is a refusal, which is good. Ask: *"How might the visitor feel? What could you add so that it is still respectful?"* Guide them to acknowledging the intention first and giving the basis.
 - **"I'd say I'll ask the midwife and tell them later."** Referring to the supervisor is right. But check that this is not stalling: does the BHW also explain the policy now, instead of leaving the visitor waiting for a yes?
 - **"I'd accept it and just not give it out."** Acknowledge that they want to avoid a scene. Then ask: *"If you accept, who has now decided what happens inside the BHS?"* Accepting is still accepting.
-- **"If they help our lactation station, we'll put up their poster."** This is a promised exchange. Point to the third line: do not promise an exchange. Any support is for the supervisor to decide, not something traded for promotion.
+- **"If they help our lactation station, we'll put up their poster."** This is a promised exchange. Point to the third line: do not promise an exchange. A BHW never arranges support from a milk company, with or without a poster. Report the offer to the midwife or supervisor.
 
 ## [misconception] Common misconception
 
@@ -58,7 +58,7 @@ Use the lesson's observation indicator during the role-play: the BHW explains th
 
 - **Kaya na:** without prompting, the BHW acknowledges the visitor's intention, states the policy basis clearly (the Milk Code for milk, the rules on pharmaceutical promotion for medicine), makes no promise, and refers the next step to the supervisor. This still holds when the visitor insists.
 - **Kailangan pa ng practice:** the BHW declines in the right direction but needs your prompts for the details. For example, they forget to name the policy, stall ("I'll think about it"), or leave out referring to the supervisor until you ask.
-- **Hindi pa:** the BHW accepts the offer, declines with no reason given, or promises something in exchange (for example, a poster in return for support) without checking with the supervisor.
+- **Hindi pa:** the BHW accepts the offer, declines with no reason given, promises something in exchange (for example, a poster in return for support), or does not report the offer to the midwife or supervisor.
 
 Observing this in the role-play is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
 
@@ -71,8 +71,8 @@ Observing this in the role-play is separate from the BHW finishing the online se
 ## [sources-review] Sources and review notes
 
 - Lesson source: Facilitator Guide PDF 22. This is an inherited page reference; the final audit is pending. Background: Day 1 presentation slide 25, which recommends "role playing on how to explain the following policies to the community members"; the subchapter guide (script steps 3 and 6, and the named misconception).
-- In "Wrong versus right: the company's offer", Corazon's "Right" example cites AO 2015-0053, but her visitor in "The visitor at the BHS" is from a milk company and her script in "How to decline respectfully" cites the Milk Code. Review for consistency.
-- The lesson's first slide adds "Do not promise an exchange" and "Refer the next step to the supervisor", which the Read text does not state in the same words; Corazon's script offers support for the lactation station as an alternative. This guide treats that alternative as the supervisor's decision. Review.
+- September 2026 safety correction: Corazon's script and "Right" example no longer offer the milk company a way to support the lactation station, and the "Right" example now cites the Milk Code, matching her milk-company visitor. The exact rule on milk-company donations still needs SME confirmation against the Milk Code's implementing rules (docs/content-assessment-2026-09.md, S1).
+- The lesson's first slide says "Do not promise an exchange" and "Refer the next step to the supervisor"; the Read text now states both.
 - Timing: Facilitator Guide PDF 22 says this competency needs at least 4 hours. The timing table in the subchapter guide splits it into parts that add up to 200 minutes. Keep the original total competency time in the subchapter guide. Do not repeat that whole allocation for each short lesson. The 60 minutes above is this lesson's share of the module plan, and this split supports self-study; it does not create a new training-hour allocation. The 5-minute self-study figure is an estimate, not a source figure.
 - This lesson's observation indicator is generic; the same wording is used by all five lessons in this module. The module-level indicator for declining (acknowledgment, basis, alternative) is more specific. Review whether it should be used here.
 - Still to review before publication: the current legal and policy wording, bilingual parity, and the observation indicator.

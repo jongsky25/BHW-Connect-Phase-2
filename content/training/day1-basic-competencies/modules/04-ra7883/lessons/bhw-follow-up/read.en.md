@@ -4,7 +4,7 @@ You now know the whole process — but what do you do if months pass with no wor
 
 The best move: calm yourself first before frustration takes over, then follow up with a specific question — not "when will this be done?" but "what's the status of my application, and is there anything else I need to submit?" A clear, calm question is more likely to get answered than a complaint with no specific ask.
 
-## [section-7] Wrong versus right: asking for what you're owed
+## [section-7] Wrong versus right: following up on a benefit
 
 **Wrong**: Josie waited six months for her accreditation but never asked, because "maybe I'll look impatient." She eventually found out one of her documents had gone missing at the office — a six-month delay that could have been avoided with an earlier follow-up.
 

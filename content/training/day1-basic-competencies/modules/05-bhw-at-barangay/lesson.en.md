@@ -19,11 +19,12 @@ A BHW's work does not revolve around just one person. Four
 relationships shape the day-to-day work:
 
 The **community** — families like Aling Nena's, where the first step of
-care happens. The **midwife or Rural Health Unit (RHU)** — the
-technical support the BHW turns to for referrals or clinical questions.
-The **barangay officials** — the partner for support, accreditation,
-and facilities like the barangay health station. And **fellow BHWs** —
-the peers who share experience and correct practice.
+care happens. The **midwife or Rural Health Unit (RHU)** — the technical
+support the BHW turns to for referrals or clinical questions. The
+**barangay officials** — the partner for support and facilities like the
+barangay health station. (Accreditation itself comes from the local
+health board of the city or municipality, as Module 4 explains.) And
+**fellow BHWs** — the peers who share experience and correct practice.
 
 These are four distinct relationships, but they are always present
 together in an ordinary BHW day.
@@ -84,9 +85,10 @@ Beyond the four relationships, there are two more contacts within the
 barangay itself that BHW Marites should know.
 
 The **punong barangay** is the BHW's partner in carrying out the
-barangay's mandate to provide basic health services, and oversees the
-BHWs. They also decide how the barangay budget is used — including
-BHW honoraria.
+barangay's mandate to provide basic health services, and oversees BHWs
+administratively — for the health work itself, the midwife remains the
+BHW's technical supervisor. They also decide how the barangay budget is
+used — including BHW honoraria.
 
 The **Kagawad sa Kalusugan** advocates health policies and resolutions
 in the barangay council, and is also a member of the barangay planning

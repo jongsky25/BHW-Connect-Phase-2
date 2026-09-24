@@ -34,9 +34,11 @@ try {
   const facilitatorGuide=await runFacilitatorGuideScenarios(db,fixture);
   const {runFacilitationLogScenarios}=await import('./facilitation-log-scenarios.mjs');
   const facilitationLog=await runFacilitationLogScenarios(db,fixture);
+  const {runVersionedTestBankScenarios}=await import('./versioned-test-bank-scenarios.mjs');
+  const versionedTestBank=await runVersionedTestBankScenarios(db,fixture);
   const {runReferenceLoader}=await import('./reference-loader-postgres.mjs');
   const loader=await runReferenceLoader(db,fixture);
-  const report={database,migrations:files.length,postgres:(await db.query('select version()')).rows[0].version,...results,facilitatorGuide,facilitationLog,loader};
+  const report={database,migrations:files.length,postgres:(await db.query('select version()')).rows[0].version,...results,facilitatorGuide,facilitationLog,versionedTestBank,loader};
   if(process.env.PG_TEST_REPORT)await writeFile(process.env.PG_TEST_REPORT,JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));assert.equal(results.failures,0);
 } finally {await db.end();}

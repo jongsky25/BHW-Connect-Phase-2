@@ -23,10 +23,12 @@ Pilipino ay may access sa abot-kaya at dekalidad na serbisyong pangkalusugan,
 kailanman ito kailanganin — nang hindi na kailangang maghirap dahil sa
 gastusin.
 
-Isa sa mga pinakamalaking hakbang tungo rito: awtomatiko nang saklaw ng
-PhilHealth ang lahat ng Pilipino. Hindi na kailangang mag-apply o
-magbayad ng premium nang mag-isa para masakop — bawat Pilipino, sa
-pagsilang pa lang, ay kasapi na.
+Isa sa mga pinakamalaking hakbang tungo rito: awtomatiko nang kasama sa
+PhilHealth, ang National Health Insurance Program, ang lahat ng
+Pilipino. Pero hindi nito ginagawang libre ang bawat serbisyo.
+Nagbabayad pa rin ng premium ang mga may kita, gaya ng empleyado at
+self-employed, at may mga benepisyong magagamit lang kapag nakarehistro
+sa accredited na provider.
 
 :::takeaway
 Ang direksyon ng UHC ay malinaw: mula sa sistemang umaasang may
@@ -39,12 +41,14 @@ lahat.
 Hindi lang pangako sa papel ang UHC — apat itong sabay na nagbabago sa
 karanasan ng ordinaryong Pilipino kapag humingi ng tulong pangkalusugan.
 
-Una, sinasakop na ng PhilHealth ang **outpatient consultation**, hindi na
-lang ang pagpapaospital. Pangalawa, bawat Pilipino ay bibigyan ng sariling
-**primary care provider** — ang unang lalapitan sa halip na sinuman lang na
-available. Pangatlo, may mas malinaw at organisadong **referral system**
-sa pagitan ng barangay health station, health center, at ospital, kaya
-hindi na basta-basta nawawala ang pasyente sa gitna ng proseso. Pang-apat,
+Una, kasama na sa benepisyo ng PhilHealth ang **outpatient
+consultation**, hindi na lang ang pagpapaospital, para sa mga
+nakarehistro sa accredited na provider. Pangalawa, bawat Pilipino ay
+magpaparehistro sa **primary care provider** na pinili niya — ang unang
+lalapitan sa halip na sinuman lang na available. Pangatlo, itinatakda ng
+batas ang mas malinaw at organisadong **referral system** sa pagitan ng
+barangay health station, health center, at ospital, para hindi
+basta-basta mawala ang pasyente sa gitna ng proseso. Pang-apat,
 pinagsama-sama ng DOH ang dating hiwa-hiwalay na mga programang
 pangkalusugan sa iisang sistema, sa halip na bawat programa ay
 magkakahiwalay tumakbo.
@@ -63,7 +67,7 @@ hindi lahat ay parehong bilis dumating sa bawat barangay — may bago nang
 naramdaman, may hindi pa lubos.
 
 Subukan mo: isipin ang sariling barangay mo. Saklaw na ba ng PhilHealth
-nang awtomatiko ang lahat dito? May kilala ka bang may nakatalagang
+nang awtomatiko ang lahat dito? May kilala ka bang nakarehistro na sa
 primary care provider? Kung may kailangang i-refer, malinaw ba ang
 proseso, o nalilito pa rin kung saan dapat pumunta?
 
@@ -81,20 +85,23 @@ hindi pa.
 ? Nabalitaan ni Mang Ernesto na "libre na ang konsulta." Alin sa mga
   sumusunod ang pinakatamang paliwanag ni BHW Beth?
 - Libre na ang lahat ng gamot at ospital dahil sa UHC
-+ Sinasakop na ng PhilHealth ang outpatient consultation, kaya
-  makakapunta siya sa health center nang hindi nag-aalala sa bayad doon
++ Maaaring sakop ang konsulta kung nakarehistro siya sa primary care
+  provider ng PhilHealth, pero hindi libre ang lahat ng serbisyo
 - Hindi totoo iyon, walang binago ang UHC sa pagbabayad
-> Tama! Ang UHC ay nagpapalawak ng saklaw ng PhilHealth kasama na ang
-  outpatient consultation — hindi ito nangangahulugang libre ang lahat,
-  pero malaking hakbang ito sa pagpapagaan ng gastusin.
+> Tama! Pinalalawak ng UHC ang PhilHealth para isama ang outpatient
+  consultation ng mga nakarehistro sa primary care provider. Hindi nito
+  ginagawang libre ang lahat, kaya tinutulungan ni Beth si Mang Ernesto
+  na tingnan ang rehistro niya sa halip na mangakong libre ang
+  pagbisita.
 :::
 
 ## [concept/standard] Ang health board at ang papel ng BHW sa pagsulong {m2.health-board, m2.bhw-skill, m2.health-promotion, m2.hepo-designation, m2.competency}
 
 May bagong kasosyo rin ang UHC: ang **provincial o city health board**,
 na naatasang tumulong mag-organisa at mamahala sa sistemang
-pangkalusugan sa antas ng probinsya o lungsod. Dito rin dumadaan ang
-mga mungkahi at hinaing mula sa barangay, kapag itinaas ito.
+pangkalusugan sa antas ng probinsya o lungsod. Maaaring umabot dito ang
+mga mungkahi at hinaing mula sa barangay, sa pamamagitan ng midwife at
+ng municipal o city health office.
 
 Dahil sa mga pagbabagong ito, inaasahan din ang mas mataas na antas ng
 kasanayan mula sa mga BHW, at mas pinaigting na health promotion sa

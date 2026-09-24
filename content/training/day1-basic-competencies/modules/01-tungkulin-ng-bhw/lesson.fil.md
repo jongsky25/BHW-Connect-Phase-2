@@ -60,11 +60,11 @@ Dahil sa UHC, ang mga BHW ay itinalaga bilang **Health Education and
 Promotion Officer (HEPO)** sa antas ng barangay. Ito ang payong — ang
 pangalan ng buong papel.
 
-Sa ilalim ng payong na iyon ay tatlong tungkuling nakasaad sa RA 7883:
-**Health Educator**, **Community Organizer**, at **Health Service
-Provider**. Hindi ito tatlong magkahiwalay na trabaho na pinagpipilian;
-tatlong mukha ito ng iisang tungkulin, at sa isang ordinaryong araw ay
-madalas gamitin ang tatlo.
+Sa ilalim ng payong na iyon ay tatlong tungkuling inilalarawan ng BHW
+Reference Manual ng DOH: **Health Educator**, **Community Organizer**,
+at **Health Service Provider**. Hindi ito tatlong magkahiwalay na
+trabaho na pinagpipilian; tatlong mukha ito ng iisang tungkulin, at sa
+isang ordinaryong araw ay madalas gamitin ang tatlo.
 
 Isang bagay ang kailangan bago pa magsimula ang tatlo: sapat na kaalaman
 sa mga prayoridad na programa at problemang pangkalusugan sa barangay.

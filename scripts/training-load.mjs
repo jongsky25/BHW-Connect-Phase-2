@@ -32,9 +32,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadReferenceModule } from "./lib/reference-content.mjs";
 import { planReferenceLoad, applyReferenceLoad, referenceReport, stageReferenceHierarchy } from "./lib/reference-load.mjs";
-import { canonical } from "./lib/reference-content.mjs";
 import { renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
 import { DEFAULT_COURSE, loadTrainingCourse } from "./lib/training-content.mjs";
+import { planTestBankSync } from "./lib/test-bank.mjs";
 import { createClient, projectUrl, requireEnv, selectAll, signIn } from "./lib/supabase-rest.mjs";
 
 function parseArgs(argv) {
@@ -237,37 +237,21 @@ async function syncVisuals(client, moduleId, visuals, plan, apply) {
 }
 
 async function syncTestQuestions(client, courseId, questions, plan, apply) {
-  const existingForCourse = await client.get(`course_test_questions?select=*&course_id=eq.${courseId}`);
-  // Published question identities have historical attempts. This mode seeds an
-  // empty bank or verifies an identical one; revisions need a versioned design.
-  if(existingForCourse.length) {
-    const keys=['prompt_fil','prompt_en','options','correct_option_index'];
-    if(existingForCourse.length!==questions.length || questions.some((q,i)=>{
-      const row=existingForCourse.find(r=>r.position===i);
-      return !row || keys.some(k=>canonical(row[k])!==canonical(q[k]));
-    }))throw new Error('Assessment bank differs: version it before changing historical questions');
-    return;
-  }
-  const byPosition = new Map(existingForCourse.map((r) => [r.position, r.id]));
-
-  await Promise.all(
-    questions.map((q, position) => {
-      const payload = {
-        position,
-        prompt_fil: q.prompt_fil,
-        prompt_en: q.prompt_en,
-        options: q.options,
-        correct_option_index: q.correct_option_index,
-      };
-      const existingId = byPosition.get(position);
-      if (existingId) {
-        plan.testQuestions.update += 1;
-        return apply ? client.patch(`course_test_questions?id=eq.${existingId}`, payload) : null;
-      }
-      plan.testQuestions.create += 1;
-      return apply ? client.insert("course_test_questions", [{ ...payload, course_id: courseId }]) : null;
-    }),
-  );
+  // Versioned: a changed question is retired and replaced, never edited in
+  // place, because past attempts point at question ids. See scripts/lib/test-bank.mjs.
+  const existing = await client.get(`course_test_questions?select=*&course_id=eq.${courseId}`);
+  const sync = planTestBankSync(existing, questions);
+  plan.testQuestions.create += sync.insert.length;
+  plan.testQuestions.retire += sync.retire.length;
+  plan.testQuestions.tag += sync.tag.length;
+  plan.testQuestions.keep += sync.keep;
+  for (const r of sync.retire) console.log(`  test question ${r.position + 1}: retire ${r.id}`);
+  for (const t of sync.tag) console.log(`  test question ${t.position + 1}: tag module position ${t.module_position}`);
+  if (!apply) return;
+  const retiredAt = new Date().toISOString();
+  for (const r of sync.retire) await client.patch(`course_test_questions?id=eq.${r.id}&retired_at=is.null`, { retired_at: retiredAt });
+  for (const t of sync.tag) await client.patch(`course_test_questions?id=eq.${t.id}`, { module_position: t.module_position });
+  if (sync.insert.length) await client.insert("course_test_questions", sync.insert.map((p) => ({ ...p, course_id: courseId })));
 }
 
 async function syncCategories(client, categories, lock, plan, apply) {
@@ -419,7 +403,7 @@ async function main() {
     modules: { create: 0, update: 0 },
     facilitatorNotes: { create: 0, update: 0 },
     visuals: { create: 0, update: 0 },
-    testQuestions: { create: 0, update: 0 },
+    testQuestions: { create: 0, retire: 0, tag: 0, keep: 0 },
     categories: { create: 0, skip: 0 },
     qaEntries: { create: 0, update: 0, pendingDrafts: 0, contentIdStamped: 0 },
   };
@@ -462,7 +446,7 @@ async function main() {
   console.log(`  modules             create ${plan.modules.create}  update ${plan.modules.update}`);
   console.log(`  facilitator notes   create ${plan.facilitatorNotes.create}  update ${plan.facilitatorNotes.update}`);
   console.log(`  visuals             create ${plan.visuals.create}  update ${plan.visuals.update}`);
-  console.log(`  test questions      create ${plan.testQuestions.create}  update ${plan.testQuestions.update}`);
+  console.log(`  test questions      create ${plan.testQuestions.create}  retire ${plan.testQuestions.retire}  tag ${plan.testQuestions.tag}  unchanged ${plan.testQuestions.keep}`);
   console.log(`  kb categories       create ${plan.categories.create}  existing ${plan.categories.skip}`);
   console.log(
     `  kb entries          create ${plan.qaEntries.create}  update ${plan.qaEntries.update}  content_id stamped ${plan.qaEntries.contentIdStamped}`,

@@ -58,10 +58,11 @@ Because of UHC, BHWs are designated barangay-level **Health Education
 and Promotion Officers (HEPOs)**. That is the umbrella — the name of the
 whole role.
 
-Under that umbrella sit the three roles named in RA 7883: **Health
-Educator**, **Community Organizer**, and **Health Service Provider**.
-These are not three separate jobs to choose between; they are three
-faces of one role, and an ordinary day usually calls for all three.
+Under that umbrella sit the three roles the DOH BHW Reference Manual
+describes: **Health Educator**, **Community Organizer**, and **Health
+Service Provider**. These are not three separate jobs to choose between;
+they are three faces of one role, and an ordinary day usually calls for
+all three.
 
 One thing has to be in place before any of the three can work: enough
 knowledge of the priority health programmes and health problems in the

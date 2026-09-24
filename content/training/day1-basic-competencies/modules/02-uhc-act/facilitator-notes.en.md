@@ -37,8 +37,7 @@ content — the rest is discussion and practice.
    by barangay, and that is where the module's most important part
    surfaces.
 5. **On the health board part,** remind them it isn't just an abstract
-   agency — it's the path a BHW's suggestion travels through once it's
-   raised.
+   agency — a BHW's suggestion can reach it, through the midwife and the municipal or city health office.
 6. **On the closing exercise,** give each participant time to discuss
    what they noticed with a partner before asking them for one concrete
    first step — don't let it stay theoretical.
@@ -67,6 +66,4 @@ persuasive than any correction.
 ## Answer key to the retrieval check
 
 1. **"Mang Ernesto heard that 'consultations are free now.'..."** →
-   PhilHealth now covers outpatient consultation, so he can go to the
-   health center without worrying about the cost there. (Not everything
-   is free, and it isn't true that nothing changed either.)
+   Consultation can be covered if he is registered with a PhilHealth primary care provider, but not every service is free. (It isn't true that everything is free, and it isn't true that nothing changed either.)

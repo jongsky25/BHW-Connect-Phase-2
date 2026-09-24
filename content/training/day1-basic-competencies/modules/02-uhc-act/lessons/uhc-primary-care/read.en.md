@@ -6,6 +6,6 @@ UHC provides for stronger primary care, including outpatient benefits, registrat
 
 Back to Mang Ernesto. Of the four changes you just learned, not all of them arrive at the same pace in every barangay — some are already felt, some are not yet.
 
-Try it: think about your own barangay. Is everyone there already automatically covered by PhilHealth? Do you know anyone with an assigned primary care provider? If someone needs a referral, is the process clear, or is there still confusion about where to go?
+Try it: think about your own barangay. Is everyone there already automatically covered by PhilHealth? Do you know anyone registered with a primary care provider? If someone needs a referral, is the process clear, or is there still confusion about where to go?
 
 It is not a failure if your answer to some of these is "not yet" — that is exactly the first step: knowing what has actually arrived in your own area before deciding what should happen next.

@@ -1,5 +1,12 @@
 # Training Content Style Guide (Day 1: Basic Competencies)
 
+> **See also — proposed Capacity-Building Content Standard.**
+> [`capacity-building-content-standard.md`](./capacity-building-content-standard.md)
+> (from the multi-perspective review in
+> [`content-assessment-2026-09.md`](./content-assessment-2026-09.md)) sets the
+> design process, sign-off gates and checkable rules for all new packages and
+> the Day 1 rework. Once adopted, it wins where it conflicts with this guide.
+
 This is the authoring standard for `content/training/day1-basic-competencies/`,
 written for whoever is writing modules 2-9 (INC-24/INC-25) — not necessarily a
 developer. It expands `docs/training-modules-plan.md` §A, which the user

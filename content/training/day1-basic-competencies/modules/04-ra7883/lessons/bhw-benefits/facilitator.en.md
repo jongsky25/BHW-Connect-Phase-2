@@ -11,7 +11,7 @@ By the end of this short lesson the BHW can name the benefits RA 7883 lists and 
 
 - Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
 - Ask your RHU, LGU or local health board which of these benefits BHWs in your city or municipality currently receive and how. Ask what registration papers they need and whether any allowance is funded locally. Write down only what you have confirmed. If you could not confirm something, say so in the session.
-- Know the six benefits exactly as the lesson names them: hazard allowance, subsistence allowance, training and career enrichment programs, civil service eligibility, free legal services, and priority access to loans.
+- Know the six benefits exactly as the lesson names them: hazard allowance, subsistence allowance (only for BHWs serving at isolated barangay health stations), training and career enrichment programs, civil service eligibility, free legal services, and priority access to loans.
 - This lesson covers **what the benefits are and the conditions attached to them**. Do not give amounts, schedules or payment rules. The lesson states none, and the Facilitator Guide says the details are in the RA 7883 IRR. Do not work out how many BHW slots a barangay has from the 1% limit. The local health board applies that limit. BHWE conditions come in the next lesson.
 
 ## [opening] Opening
@@ -22,7 +22,7 @@ Point to the list of six benefits and ask: *"Before we read anything, put a chec
 
 1. **The list (Read "The benefits under RA 7883", first paragraph; the slide).** Read the list slowly. After each benefit ask: *"Did you already know this? Have you received it?"* Do not assume they already know all of it. Mark the "Received it?" column only for BHWs who want to answer.
 2. **The condition.** Read: a BHW must be registered with the local health board of the city or municipality where they render service. Ask: *"Where are you registered? Is it the same city or municipality where you serve?"*
-3. **The limit.** Read: the total number of BHWs in a community must not exceed one percent (1%) of its total population. Ask: *"What does this limit mean for registration?"* Listen for the lesson's point: registration is not simply given to anyone, so getting it right matters.
+3. **The limit.** Read: the total number of BHWs nationwide must not exceed one percent (1%) of the country's population, and the DOH sets the ideal number of BHWs per household. Ask: *"What does this limit mean for registration?"* Listen for the lesson's point: registration is not simply given to anyone, so getting it right matters.
 4. **Conditions and procedures.** Read the last two sentences of the section exactly. Ask: *"A new BHW asks you, 'How much is the hazard allowance?' What do you say?"* Guide them towards: benefits have specific conditions and procedures, confirm with the local health board, and do not promise.
 5. **The slide's wording.** The slide also says *"Registration and active service are important conditions."* If a BHW asks about "active service", say you will confirm the exact rule with the local health board. The Read text for this lesson names registration as the condition.
 6. **Self-check.** Give the check question (*"How should a benefit be explained?"*). Let the group discuss before you reveal the answer.
@@ -73,7 +73,7 @@ For more detail you can also look at the subchapter's competency indicators, obj
 
 ## [sources-review] Sources and review notes
 
-- Lesson sources: BHW Reference Manual PDF 13 for the benefits list, the registration requirement and the 1% limit (inherited page references; final audit pending).
+- Lesson sources: BHW Reference Manual PDF 13 for the benefits list, the registration requirement and the 1% limit (inherited page references; final audit pending). September 2026: checked against RA 7883 §§4–7 — the 1% limit is nationwide (§5), the subsistence allowance applies only to service at isolated barangay health stations (§6b), and the hazard allowance amount is set by the local health board and the local peace and order council (§6a). The lesson now says so.
 - Background: the Facilitator Guide PDF 23 notes that many BHWs are not aware of what the law provides. It says the IRR (Rule VII, Parts 1 to 6, Benefits and Incentives) has more detail on how benefits are implemented, and that copies can be given to BHWs. PDF 24 lists a DOH FAQ on the benefits under the IRR. PDF 25 says the local health board reviews and approves every benefit that uses local funds.
 - The slide says "Registration and active service are important conditions." The Read text for this lesson names registration only. "Active service" appears in the BHWE conditions. Check this wording during review.
 - Timing: TESDA Training Regulations set 3 hours for *Develop Life and Career Decisions* (Facilitator Guide PDF 23). The 30 minutes above is this lesson's share of the module table. Keep the total competency time in the subchapter guide. Do not repeat that full allocation for each short lesson. This split supports self-study and does not create a new training-hour allocation.

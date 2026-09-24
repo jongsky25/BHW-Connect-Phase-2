@@ -35,7 +35,7 @@ Ask the group: *"If you noticed something in your barangay that could work bette
 
 ## [misconception] Common misconception
 
-**"The health board is a distant office that has nothing to do with the BHW."** Many BHWs have never seen a health board meeting, so it feels far away. Correct it without embarrassing anyone by using the group's own path on the manila paper: *"Look where your suggestion starts — with you. The health board is the end of this same path."* As the subchapter guide says, it is not an abstract agency; it is the path a BHW's suggestion travels through once it is raised.
+**"The health board is a distant office that has nothing to do with the BHW."** Many BHWs have never seen a health board meeting, so it feels far away. Correct it without embarrassing anyone by using the group's own path on the manila paper: *"Look where your suggestion starts — with you. The health board is the end of this same path."* It is not an abstract agency: a BHW's suggestion can reach it, through the midwife and the municipal or city health office.
 
 ## [practice] Practice activity
 
@@ -70,7 +70,7 @@ Observing this in the room is separate from the BHW finishing the online self-ch
 
 - BHW Reference Manual p. 5 (PDF 13): "pagtatalaga ng provincial at city health board bilang isang kaagapay sa pag-aayos at pamamahala ng health system sa probinsya", "pagpapataas ng antas ng kasanayan ng mga BHW" and "mas pinaigting na health promotion sa mga komunidad" — listed in the lesson's source list as an inherited page reference; final audit pending. Reference Manual p. 3 (PDF 11): the HEPO role under UHC. Facilitator Guide p. 14 (PDF 21): the competency and its learning outcomes (inherited reference; final audit pending). Day 1 presentation slides 17–18.
 - Timing: the module's 3 hours come from Facilitator Guide PDF 19 (PDF 21 says "at least 3 hours"). Keep the original total in the subchapter guide; do not repeat that whole allocation for each short lesson. The 20 minutes above is the module table's own row for this part. This split supports self-study and does not create a new training-hour allocation.
-- The deck (slide 18) says "provincial health board" only; the Reference Manual says "provincial at city health board"; the lesson says "provincial or city health board". The lesson line that barangay suggestions "travel to" the health board is not stated in these source pages — review it.
+- The deck (slide 18) says "provincial health board" only; the Reference Manual says "provincial at city health board"; the lesson says "provincial or city health board". September 2026: the unsourced line that barangay suggestions "travel to" the health board was softened to "can reach it, through the midwife and the municipal or city health office". The exact local route still needs SME confirmation.
 - Still to review: current legal/policy wording, bilingual parity and the observation indicator (the same generic indicator is used in all four lessons). Keep online completion separate from demonstrated competence.
 
 Draft for review.

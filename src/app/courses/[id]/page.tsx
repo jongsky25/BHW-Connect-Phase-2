@@ -100,7 +100,7 @@ export default async function CourseDetailPage({
       : Promise.resolve({ data: null }),
     flags.course_sessions
       ? supabase
-          .from("course_test_questions")
+          .from("course_test_questions_current")
           .select(
             "id, course_id, position, prompt_fil, prompt_en, options, correct_option_index",
           )

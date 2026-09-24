@@ -8,6 +8,6 @@ Each relationship has its own purpose — and using the right one at the right m
 
 Beyond the four relationships, there are two more contacts within the barangay itself that BHW Marites should know.
 
-The **punong barangay** is the BHW's partner in carrying out the barangay's mandate to provide basic health services, and oversees the BHWs. They also decide how the barangay budget is used — including BHW honoraria.
+The **punong barangay** is the BHW's partner in carrying out the barangay's mandate to provide basic health services, and oversees BHWs administratively — for the health work itself, the midwife remains the BHW's technical supervisor. They also decide how the barangay budget is used — including BHW honoraria.
 
 The **Kagawad sa Kalusugan** advocates health policies and resolutions in the barangay council, and is also a member of the barangay planning team for health. They push for budget for health-related activities, facilities, and materials.

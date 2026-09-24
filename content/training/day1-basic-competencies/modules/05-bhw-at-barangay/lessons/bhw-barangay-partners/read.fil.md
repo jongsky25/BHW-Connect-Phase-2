@@ -8,6 +8,6 @@ Bawat ugnayan ay may sariling layunin — at ang paggamit ng tamang ugnayan sa t
 
 Bukod sa apat na ugnayan, may dalawa pang kakilala sa loob mismo ng barangay na dapat malaman ni BHW Marites.
 
-Ang **punong barangay** ay ka-partner ng mga BHW sa pagpapatupad ng mandato nitong magbigay ng basic health services, at nangangasiwa sa mga BHW. Siya rin ang nagdedesisyon kung paano gagamitin ang budget ng barangay — kasama ang pagbibigay ng honorarium para sa mga BHW.
+Ang **punong barangay** ay ka-partner ng mga BHW sa pagpapatupad ng mandato nitong magbigay ng basic health services, at administratibong nangangasiwa sa mga BHW — sa mismong gawaing pangkalusugan, ang midwife pa rin ang teknikal na supervisor ng BHW. Siya rin ang nagdedesisyon kung paano gagamitin ang budget ng barangay — kasama ang pagbibigay ng honorarium para sa mga BHW.
 
 Ang **kagawad sa kalusugan** naman ang tagapagtaguyod sa konseho ng barangay ng mga polisiya at resolusyong pangkalusugan, at miyembro rin siya ng barangay planning team for health. Siya ang nagsusulong ng budget para sa mga gawain, pasilidad, at materyales na may kinalaman sa kalusugan.

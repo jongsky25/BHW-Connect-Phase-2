@@ -55,7 +55,7 @@ export async function loadManualProgress(
     courseIds.length
       ? db.from("certificates").select("course_id,verification_code").eq("bhw_user_id", bhwUserId).in("course_id", courseIds)
       : none,
-    courseIds.length ? db.from("course_test_questions").select("course_id").in("course_id", courseIds) : none,
+    courseIds.length ? db.from("course_test_questions_current").select("course_id").in("course_id", courseIds) : none,
   ]);
   if (courses.error) fail("chapter courses");
   if (modules.error) fail("subchapters");

@@ -1,6 +1,6 @@
 ## [section-5] The health board and the BHW's part in moving it forward
 
-UHC also brings a new partner: the **provincial or city health board**, tasked with helping organize and manage the health system at the provincial or city level. This is also where suggestions and concerns from the barangay travel to, once they are raised.
+UHC also brings a new partner: the **provincial or city health board**, tasked with helping organize and manage the health system at the provincial or city level. Suggestions and concerns from the barangay can reach it, through the midwife and the municipal or city health office.
 
 Because of these changes, a higher level of skill is also expected of BHWs, and health promotion within communities is intensified. This is also why BHWs were designated HEPOs — you already learned this in detail in Module 1.
 

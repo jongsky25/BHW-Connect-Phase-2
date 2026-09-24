@@ -49,16 +49,20 @@ kundi bahagi ng RA 7883.
 ## [concept/core] Ang mga benepisyo sa ilalim ng RA 7883 {m4.benefits, m4.registration-requirement, m4.bhw-cap}
 
 Kasama sa RA 7883 ang mga partikular na benepisyong maaaring matanggap
-ng isang BHW: hazard allowance, subsistence allowance, mga programa sa
-pagsasanay at career enrichment, civil service eligibility, libreng
-legal services, at priority access sa mga loan o pautang.
+ng isang BHW: hazard allowance, subsistence allowance (para sa BHW na
+naglilingkod sa isolated o liblib na barangay health station), mga
+programa sa pagsasanay at career enrichment, civil service eligibility,
+libreng legal services, at priority access sa mga loan o pautang. Lokal
+na itinatakda ang halaga: ang hazard allowance ng local health board at
+ng local peace and order council, at ang subsistence allowance ng LGU.
 
 May kondisyon bago maging eligible dito: kailangang rehistrado ang BHW
 sa local health board ng lungsod o munisipyo kung saan siya nagbibigay
-ng serbisyo. May limitasyon din: ang kabuuang bilang ng mga BHW sa
-isang komunidad ay hindi dapat lumampas sa isang porsiyento (1%) ng
-kabuuang populasyon nito — kaya't hindi basta-basta tinatanggap ang
-lahat, at mahalaga ang tamang rehistrasyon.
+ng serbisyo. May limitasyon din: ang kabuuang bilang ng mga BHW sa buong
+bansa ay hindi dapat lumampas sa isang porsiyento (1%) ng populasyon ng
+bansa, at ang DOH ang nagtatakda ng angkop na bilang ng BHW kada dami ng
+sambahayan — kaya't hindi basta-basta tinatanggap ang lahat, at mahalaga
+ang tamang rehistrasyon.
 
 :::visual 1
 :::takeaway
