@@ -24,6 +24,7 @@ import { ReferenceLessons, type ReferenceData } from './reference-lessons';
 
 type Props = {
   reference?: ReferenceData;
+  assessmentOnly?: boolean;
   courseId: string;
   quizMaxAttempts: number;
   modules: CourseModule[];
@@ -41,7 +42,7 @@ type Props = {
 };
 
 export function CourseDetail({
-  reference,
+  reference, assessmentOnly=false,
   courseId,
   quizMaxAttempts,
   modules,
@@ -208,7 +209,7 @@ export function CourseDetail({
         />
       ) : (
         <>
-          {reference && <ReferenceLessons {...reference} modules={modules} locale={locale}
+          {reference && !assessmentOnly && <ReferenceLessons {...reference} modules={modules} locale={locale}
             onResume={async value=>{
               const {error}=await createClient().rpc('rpc_course_lesson_resume',{
                 p_lesson_id:value.lesson_id,p_revision_id:value.revision_id,p_modality:value.modality,
@@ -220,7 +221,7 @@ export function CourseDetail({
               if(error)throw error; router.refresh();
             }}
           />}
-          {modules.map((module) => {
+          {(!reference && !assessmentOnly ? modules : []).map((module) => {
             if(reference?.lessons.some(l=>l.module_id===module.id))return null;
             const title = locale === "en" ? module.title_en : module.title_fil;
             const mProgress = progressFor(module.id);
@@ -355,7 +356,7 @@ export function CourseDetail({
             );
           })}
 
-          {hasTestBank && pretestAttempt && !posttestAttempt ? (
+          {hasTestBank && pretestAttempt && !posttestAttempt && !["certified","failed_assessment"].includes(progressStatus??"") ? (
             progressStatus === "content_completed" ? (
               <TestForm
                 courseId={courseId}

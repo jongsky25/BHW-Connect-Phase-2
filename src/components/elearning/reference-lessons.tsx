@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
+import {useRouter} from "next/navigation";
 import type {
   CourseModule,
   CourseLessonProgress,
@@ -25,6 +27,11 @@ export type ReferenceData = {
 };
 type Props = ReferenceData & {
   modules: CourseModule[];
+  initialLessonId?: string;
+  lessonBaseHref?: string;
+  readOnly?: boolean;
+  lessonNumber?: number;
+  lessonCount?: number;
   locale: string;
   onResume: (
     resume: Omit<CourseLessonResume, "course_progress_id" | "updated_at">,
@@ -72,11 +79,14 @@ export function ReferenceLessons(props: Props) {
   const { lessons, modules, onResume, onComplete } = props,
     en = props.locale === "en";
   const ui = (fil: string, eng: string) => (en ? eng : fil);
-  const [selected, setSelected] = useState<string | null>(null);
-  const [mode, setMode] = useState<LessonModality>("read");
+  const router=useRouter();
+  const initial=lessons.find(l=>l.id===props.initialLessonId);
+  const initialResume=props.resumes.filter(r=>r.lesson_id===initial?.id).sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];
+  const [selected, setSelected] = useState<string | null>(props.initialLessonId??null);
+  const [mode, setMode] = useState<LessonModality>(initialResume?.modality??"read");
   const [resumes, setResumes] = useState(props.resumes);
   const [completed, setCompleted] = useState(props.completed);
-  const [position, setPosition] = useState<string | null>(null);
+  const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,initialResume?.modality??"read",initialResume).id:null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
@@ -99,6 +109,7 @@ export function ReferenceLessons(props: Props) {
     m: LessonModality,
     p: { id: string; concept_ids: string[] },
   ) {
+    if(props.readOnly)return;
     const value = {
       lesson_id: l.id,
       revision_id: l.revision.id,
@@ -117,7 +128,7 @@ export function ReferenceLessons(props: Props) {
     ]);
     // Serialize rapid navigation so a slower request cannot overwrite newer state.
     writes.current = writes.current
-      .then(() => onResume(value))
+      .then(async () => {await onResume(value);setError(null);})
       .catch(() =>
         setError(
           ui(
@@ -128,6 +139,7 @@ export function ReferenceLessons(props: Props) {
       );
   }
   function open(l: PublishedLesson) {
+    if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}
     const latest = resumes
       .filter((r) => r.lesson_id === l.id)
       .sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];
@@ -152,7 +164,7 @@ export function ReferenceLessons(props: Props) {
     requestAnimationFrame(() => heading.current?.focus());
   }
   async function complete() {
-    if (!lesson) return;
+    if (!lesson || props.readOnly) return;
     setPending(true);
     setError(null);
     try {
@@ -190,19 +202,19 @@ export function ReferenceLessons(props: Props) {
       className="flex flex-col gap-4"
       aria-label={ui("Mga aralin sa Kabanata I", "Chapter I lessons")}
     >
-      <p>
+      {!props.lessonBaseHref && <p>
         {required.filter((l) => done.has(l.id)).length} / {required.length}{" "}
         {ui(
           "natapos na kinakailangang araling inilabas sa Kabanata I",
           "released required Chapter I lessons completed",
         )}
-      </p>
-      <p className="text-sm">
+      </p>}
+      {!props.lessonBaseHref && <p className="text-sm">
         {ui(
           "Available ang Kabanata I. Hindi pa available ang Kabanata II–III.",
           "Chapter I is available. Chapters II–III are not yet available.",
         )}
-      </p>
+      </p>}
       {!lesson &&
         props.chapters
           .filter((c) => c.availability === "unavailable")
@@ -260,7 +272,7 @@ export function ReferenceLessons(props: Props) {
       ) : (
         item && (
           <>
-            <button
+            {props.lessonBaseHref ? <Link className="self-start underline" href={props.lessonBaseHref}>{ui("← Bumalik sa mga aralin","← Back to lessons")}</Link> : <button
               type="button"
               className="self-start underline"
               onClick={() => {
@@ -269,11 +281,11 @@ export function ReferenceLessons(props: Props) {
               }}
             >
               {ui("← Bumalik sa mga subchapter", "← Back to subchapters")}
-            </button>
+            </button>}
             <p>
               {ui("Aralin", "Lesson")}{" "}
-              {siblings.findIndex((l) => l.id === lesson.id) + 1} /{" "}
-              {siblings.length} · {en ? lesson.title_en : lesson.title_fil}
+              {props.lessonNumber ?? siblings.findIndex((l) => l.id === lesson.id) + 1} /{" "}
+              {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
               {ui(
@@ -402,7 +414,7 @@ export function ReferenceLessons(props: Props) {
                 {ui("Susunod", "Next")}
               </button>
             </nav>
-            <button
+            {!props.readOnly && <button
               type="button"
               className="rounded bg-primary p-3 text-on-primary disabled:opacity-50"
               disabled={pending || done.has(lesson.id)}
@@ -411,7 +423,7 @@ export function ReferenceLessons(props: Props) {
               {done.has(lesson.id)
                 ? ui("Natapos", "Completed")
                 : ui("Markahang tapos ang aralin", "Mark lesson complete")}
-            </button>
+            </button>}
             <nav
               className="flex flex-wrap justify-between gap-2"
               aria-label={ui("Mga aralin sa subchapter", "Subchapter lessons")}
@@ -464,7 +476,7 @@ export function ReferenceLessons(props: Props) {
           </>
         )
       )}
-      {error && <p role="alert">{error}</p>}
+      {error && <div role="alert"><p>{error}</p>{lesson && item && <button className="mt-2 underline" onClick={()=>save(lesson,mode,item)}>{ui('Subukang i-save muli','Retry saving position')}</button>}</div>}
     </section>
   );
 }
