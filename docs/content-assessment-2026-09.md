@@ -145,9 +145,19 @@ bank ("version it before changing historical questions",
   the same slot.
 - The PhilHealth wording is still subject to SME confirmation (queue item 2).
 
+**Also corrected the same day, at the owner's request.** Only the prompt text
+changed; options and answer keys are untouched. Both updates were guarded on
+the old text.
+- Position 2 (`2f79477f-…`): the prompt now says "the three BHW roles in the
+  DOH BHW Reference Manual" instead of "named in RA 7883", in both languages.
+- Position 16 (`d4bcbe36-…`): the English prompt now says "a benefit is
+  delayed" instead of "a benefit that's owed is delayed". The Filipino prompt
+  already matched the repo.
+
+The live bank now matches the repo wording for all three items the review
+flagged.
+
 **Still open.**
-- Positions 2 and 16 still carry the old wording: "named in RA 7883" and "a
-  benefit that's owed". Neither changes which answer is correct.
 - The versioned bank (per-item module tag plus active/retired items, with
   `rpc_course_test_submit` scoring only active items on published modules)
   is still needed. It is what stops S5 on a project seeded with all 38
