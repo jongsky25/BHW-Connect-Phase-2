@@ -20,11 +20,13 @@ import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function CourseDetailPage({
-  params,
+  params, searchParams,
 }: {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ assessment?: string }>;
 }) {
   const { id } = await params;
+  const assessment = (await searchParams).assessment === "1";
   const supabase = await createClient();
   const flags = await getFeatureFlags(supabase);
 
@@ -43,6 +45,12 @@ export default async function CourseDetailPage({
     redirect("/login");
   }
 
+  const {data: mapping,error: mappingError}=await supabase.from('training_program_chapters')
+    .select('program_id,chapter_key').eq('course_id',id).eq('availability','available').maybeSingle();
+  if(mappingError)throw new Error('Unable to load training hierarchy');
+  const {data: mappedProgram}=mapping?await supabase.from('training_programs').select('id').eq('id',mapping.program_id).eq('status','published').maybeSingle():{data:null};
+  const manualHref=mapping&&mappedProgram?`/training/${mapping.program_id}/${mapping.chapter_key}`:null;
+  if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(manualHref);
   const locale = await getLocale();
   const tCourses = await getTranslations("courses");
   const tCrumbs = await getTranslations("breadcrumbs");
@@ -148,6 +156,7 @@ export default async function CourseDetailPage({
     .from("course_progress")
     .select("id, status")
     .eq("course_id", id)
+    .eq("bhw_user_id",appUser.id)
     .maybeSingle<{ id: string; status: CourseProgressStatus }>();
 
   const { data: moduleProgress } = progress
@@ -164,6 +173,7 @@ export default async function CourseDetailPage({
           .from("certificates")
           .select("verification_code")
           .eq("course_id", id)
+          .eq("bhw_user_id",appUser.id)
           .maybeSingle<{ verification_code: string }>()
       : { data: null };
 
@@ -203,14 +213,14 @@ export default async function CourseDetailPage({
         items={[
           { label: tCrumbs("home"), href: "/home" },
           { label: tCourses("heading"), href: "/courses" },
-          { label: locale === "en" ? course.title_en : course.title_fil },
+          ...(manualHref ? [{label: locale === "en" ? "Chapter I" : "Kabanata I", href:manualHref},{label:locale === "en" ? "Assessment" : "Pagtatasa"}] : [{ label: locale === "en" ? course.title_en : course.title_fil }]),
         ]}
       />
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-          {reference ? (locale === 'en' ? reference.title_en : reference.title_fil) : (locale === "en" ? course.title_en : course.title_fil)}
+          {manualHref ? (locale==='en'?'Chapter I assessment':'Pagtatasa sa Kabanata I') : (locale === 'en' ? course.title_en : course.title_fil)}
         </h1>
-        {(locale === "en" ? course.description_en : course.description_fil) ? (
+        {!manualHref && (locale === "en" ? course.description_en : course.description_fil) ? (
           <p className="mt-1 text-ink/70">
             {locale === "en" ? course.description_en : course.description_fil}
           </p>
@@ -219,6 +229,7 @@ export default async function CourseDetailPage({
 
       <CourseDetail
         reference={reference}
+        assessmentOnly={Boolean(manualHref)}
         courseId={course.id}
         quizMaxAttempts={course.quiz_max_attempts}
         modules={modules ?? []}
