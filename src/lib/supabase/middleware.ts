@@ -174,6 +174,9 @@ function withAppUserHeaders(
   // set, consented) — the site header's app-name link should take them back
   // to their /home, not the signed-out "/" marketing page it defaults to.
   forwardedHeaders.set("x-app-signed-in", "1");
+  // Lets the root layout tell whether the signed-in user is one of the
+  // super admin's test personas (the persona bar) without another lookup.
+  forwardedHeaders.set("x-app-user-id", appUser.id);
 
   const next = NextResponse.next({ request: { headers: forwardedHeaders } });
   for (const cookie of response.cookies.getAll()) {

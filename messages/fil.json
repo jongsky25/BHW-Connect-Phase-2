@@ -156,7 +156,8 @@
       "forum": "Forum",
       "flipcharts": "Mga Flip Chart",
       "courseProgress": "Progress ng kurso",
-      "trainingProgress": "Progreso sa pagsasanay"
+      "trainingProgress": "Progreso sa pagsasanay",
+      "superAdmin": "Mga test account"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -1000,5 +1001,51 @@
   },
   "breadcrumbs": {
     "home": "Home"
+  },
+  "superAdmin": {
+    "barLabel": "Test mode ng super admin",
+    "barSignedInAs": "Test mode: naka-sign in bilang {username} ({role}).",
+    "switchToLabel": "Lumipat sa ibang test account",
+    "switchAction": "Lumipat",
+    "returnAction": "Bumalik kay {username}",
+    "heading": "Super admin: mga test account",
+    "description": "Sa mga naka-link na test account, magagamit mo ang bawat role mula sa iisang login. Totoong account ang bawat isa, kaya lahat ng ginagawa nito — pagtatapos ng kurso, pag-grade ng assessment, pagpasa ng flip chart — ay umaabot sa ibang role gaya ng sa totoong user. Lumipat sa isa, saka gamitin ang bar sa itaas ng pahina para lumipat sa iba o bumalik dito. I-reset ang test account para magsimula ulit ang progress nito.",
+    "personasHeading": "Ang iyong mga test account",
+    "empty": "Wala pang test account. Gumawa ng isa bawat role sa ibaba.",
+    "stats": "Kurso: {courses} · Test: {tests} · Assessment: {assessments} · Sertipiko: {certificates} · Survey: {surveys}",
+    "onboardingDone": "tapos na ang onboarding",
+    "onboardingNotDone": "hindi pa tapos ang onboarding",
+    "inactive": "naka-deactivate",
+    "switchToAction": "Lumipat sa account na ito",
+    "switching": "Lumilipat…",
+    "resetAction": "I-reset ang progress",
+    "resetConfirmAction": "Oo, i-reset",
+    "resetting": "Nire-reset…",
+    "cancelAction": "Kanselahin",
+    "resetWarning": "Permanenteng buburahin nito ang progress sa kurso, pre/post test, assessment, sertipiko, enrollment sa session, sagot sa survey, notification at onboarding ng test account na ito, at ibabalik ang mga assessment na kinuha nito. Mananatili ang mga content na ginawa nito.",
+    "resetNotice": "Na-reset si {username}: {courses} kurso, {tests} test attempt, {assessments} assessment, {certificates} sertipiko, {enrollments} enrollment, {surveys} sagot sa survey, {notifications} notification ang nabura; {released} kinuhang assessment ang naibalik sa pila.",
+    "dismiss": "Isara",
+    "createHeading": "Magdagdag ng test account",
+    "createDescription": "Piliin ang role at kung saan ito nasa hierarchy. Ilagay sa iisang barangay ang BHW at ang facilitator/assessor na magga-grade dito — makakakuha lang ang assessor ng assessment mula sa sarili nitong unit o sa ilalim nito. Nakikita ng admin ang lahat sa ilalim ng sarili nitong unit. Awtomatikong gagawin ang username mula sa iyo (hal. rcventura.bhw).",
+    "roleLabel": "Role",
+    "orgUnitLabel": "Org unit",
+    "fullNameLabel": "Pangalang ipapakita (opsyonal)",
+    "fullNamePlaceholder": "hal. Test BHW – Brgy 1",
+    "createAction": "Gumawa ng test account",
+    "creating": "Ginagawa…",
+    "createdNotice": "Nagawa na si {username}. Lumipat dito mula sa listahan sa itaas.",
+    "role": {
+      "bhw": "BHW",
+      "assessor": "Facilitator / Assessor",
+      "designer": "Designer",
+      "admin": "Admin"
+    },
+    "notAuthorizedError": "Ang super admin lang ang makakagawa nito.",
+    "sessionExpiredError": "Nag-expire na ang session ng super admin. Mag-sign out at mag-sign in ulit bilang super admin.",
+    "personaNotFoundError": "Hindi nahanap ang test account na iyon.",
+    "personaInactiveError": "Naka-deactivate ang test account na iyon.",
+    "outOfScopeError": "Labas sa iyong saklaw ang org unit na iyon.",
+    "invalidRoleError": "Hindi available ang role na iyon.",
+    "genericError": "May nangyaring mali. Pakisubukang muli."
   }
 }
