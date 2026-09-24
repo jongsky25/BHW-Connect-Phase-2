@@ -118,7 +118,7 @@ stage new draft revisions when loaded.
 | S4 | Fixed | Accreditation comes from the local health board. The punong barangay oversees BHWs *administratively*; the midwife remains the technical supervisor. |
 | S5 | Fixed in repo (versioned bank); migration not yet deployed | See below. |
 | S6 | Fixed for S1–S4 claims | The chatbot entries now match the lessons. A claim registry (standard §10 G1) is still needed to stop the drift recurring. |
-| S7 | Open | The claims below need a named reviewer before pilot use. |
+| S7 | Signed off by the project owner, 24 Sep 2026 | The five claims below are accepted for pilot use. Independent clinical/legal review is not recorded; see the note under the queue. |
 
 **Live pilot database (`ltzicxyefizxoqhfuuzc`), read-only check.** It holds a
 20-item bank for modules 01–05 (not the 38 in the repo) and 5 recorded
@@ -201,6 +201,15 @@ not exist yet.
    `sources.json`.
 5. The RA 7883 IRR on registration, accreditation and hazard allowance
    procedure. Add it to `sources.json`.
+
+**Sign-off.** On 24 September 2026 the project owner signed off all five
+items for pilot use, in this session.
+- Recorded as the owner's acceptance. The standard's two-key rule
+  (`capacity-building-content-standard.md` §4, G6) still asks for a named
+  MHO/PHN and a legal reviewer before content is marked final. Record them
+  here if and when they review.
+- Items 4 and 5 also ask for the CSC issuance and the RA 7883 IRR to be added
+  to `sources.json`. That is still to do.
 
 ## 4. Findings by perspective
 
