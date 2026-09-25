@@ -20,6 +20,8 @@ Read the situation. Model one attempt against the Observe checklist. Run the pra
 
 ## [expected-answers] Expected answers
 
+For the utilities check, keep the vaccine refrigerator running and investigate unnecessary lights under the facility procedure. Turning off cold-chain equipment or required ventilation is unsafe.
+
 The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used.
 
 ## [misconception] Common misconception
@@ -31,6 +33,8 @@ Proposes reusing clinical single-use items, stopping critical equipment or delay
 Compare “repair the leak” with “reduce handwashing.” List savings, potential harm and safeguards. Choose and explain to a partner. Repeat with a reusable visual versus reusing a clinical single-use item. Alone, write the rejected option and reason. Before trying a workplace change, confirm policy and safety checks with the supervisor.
 
 ## [answer-key] Answer key
+
+Utilities check: 1. Keep the refrigerator running; check unnecessary lights under facility procedure.
 
 3. Check the approved version and use an approved reusable visual where suitable.
 
@@ -55,3 +59,4 @@ Makes a safe choice but cannot explain the safeguard; use the three practice que
 ## [sources-review] Sources and review notes
 
 Draft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35; WHO — Climate-resilient and environmentally sustainable health care facilities (https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities). This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.
+
