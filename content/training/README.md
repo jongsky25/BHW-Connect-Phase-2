@@ -68,8 +68,15 @@ limits and the extended disposable PostgreSQL rehearsal.
 
 `npm run training:narrate` (dry run) / `-- --apply` pre-renders one MP3 per Read
 section and language for every subchapter with a `lessons/` folder (or
-`--modules a,b`). Output is committed: `public/training/audio/<module>/<lesson>/
-<section>.<lang>.<hash12>.mp3` plus `day1-basic-competencies/narration.json`.
+`--modules a,b`). Sources are listed in `scripts/lib/narration-sources.mjs`:
+Chapter 1 `day1-basic-competencies/modules/*` and the Chapter 2 package
+`chapter2-common-competencies/drafts/*` (module keys `chapter2/<subchapter>`,
+e.g. `--modules chapter2/04-first-aid`). Chapter 2's drafts are the frozen
+text its published revisions derive from, so re-render only if both change.
+Output is committed: `public/training/audio/<module>/<lesson>/
+<section>.<lang>.<hash12>.mp3` plus one shared manifest,
+`day1-basic-competencies/narration.json` (the lesson page looks narration up
+by lesson key, which must stay unique across chapters).
 No Supabase write, no migration, and lesson revisions (and their approval
 hashes) are unchanged: audio is keyed by lesson key + section ID + language +
 a hash of the exact narrated text and voice.

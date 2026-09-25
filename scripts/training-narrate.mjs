@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Pre-renders Read-mode narration for converted Reference Manual lessons and
-// commits it as static files (public/training/audio/...) plus a manifest
+// Pre-renders Read-mode narration for converted Reference Manual lessons
+// (Chapter 1 subchapters and the Chapter 2 package; see
+// scripts/lib/narration-sources.mjs) and commits it as static files
+// (public/training/audio/...) plus one manifest
 // (content/training/day1-basic-competencies/narration.json). Nothing is
 // written to Supabase and lesson revisions are untouched: the lesson page
 // reads the manifest and shows a player only when the recorded sentence
@@ -8,6 +10,7 @@
 //
 //   npm run training:narrate                          # dry run, every converted subchapter
 //   npm run training:narrate -- --modules 02-uhc-act  # dry run, one subchapter
+//   npm run training:narrate -- --modules chapter2/04-first-aid
 //   npm run training:narrate -- --apply               # render missing/stale audio
 //
 // Voices: fil-PH-BlessicaNeural (Filipino), en-PH-RosaNeural (Philippine
@@ -19,6 +22,7 @@
 import { existsSync, readdirSync, readFileSync, rmSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { NARRATION_MANIFEST, narratedModules } from "./lib/narration-sources.mjs";
 import { loadReferenceModule } from "./lib/reference-content.mjs";
 import {
   AUDIO_ROOT,
@@ -32,10 +36,8 @@ import {
 import { synthesizeUtterance } from "./lib/tts-providers/edge-read-aloud.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const courseRoot = path.join(root, "content/training/day1-basic-competencies");
-const modulesRoot = path.join(courseRoot, "modules");
 const publicRoot = path.join(root, "public");
-const manifestPath = path.join(courseRoot, "narration.json");
+const manifestPath = path.join(root, NARRATION_MANIFEST);
 
 function parseArgs(argv) {
   const args = { apply: false, modules: null, concurrency: 3 };
@@ -64,12 +66,12 @@ async function pool(items, size, work) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const converted = readdirSync(modulesRoot).filter((m) => existsSync(path.join(modulesRoot, m, "lessons")));
-  const keys = args.modules ?? converted;
+  const converted = new Map(narratedModules(root).map((m) => [m.key, m.dir]));
+  const keys = args.modules ?? [...converted.keys()];
   for (const key of keys) {
-    if (!converted.includes(key)) throw new Error(`${key} is not a converted subchapter (no lessons/ folder)`);
+    if (!converted.has(key)) throw new Error(`${key} is not a converted subchapter (no lessons/ folder)`);
   }
-  const modules = keys.map((key) => ({ key, lessons: loadReferenceModule(path.join(modulesRoot, key), publicRoot).lessons }));
+  const modules = keys.map((key) => ({ key, lessons: loadReferenceModule(path.join(root, converted.get(key)), publicRoot).lessons }));
   const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, "utf8")) : { lessons: {} };
   const items = planReferenceNarration(modules, manifest, fileHash);
   const toRender = items.filter((i) => i.action === "render");
