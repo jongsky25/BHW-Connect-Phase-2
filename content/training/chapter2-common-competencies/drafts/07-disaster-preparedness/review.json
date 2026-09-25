@@ -5,81 +5,91 @@
       "lesson_key": "hazards-capacities",
       "status": "authored-draft",
       "clinical_content": true,
-      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical and visual review pending",
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
       "independent_review": null,
-      "visual_approval": null,
+      "visual_approval": "approved-by-user-attestation",
       "audio_status": "scripts-only",
-      "learner_pilot": null,
+      "learner_pilot": "approved-by-user-attestation",
       "publication_allowed": false,
-      "owner_review": "approved-by-user"
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
     },
     {
       "lesson_key": "evacuation-contacts",
       "status": "authored-draft",
       "clinical_content": true,
-      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical and visual review pending",
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
       "independent_review": null,
-      "visual_approval": null,
+      "visual_approval": "approved-by-user-attestation",
       "audio_status": "scripts-only",
-      "learner_pilot": null,
+      "learner_pilot": "approved-by-user-attestation",
       "publication_allowed": false,
-      "owner_review": "approved-by-user"
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
     },
     {
       "lesson_key": "go-bag-e-balde",
       "status": "authored-draft",
       "clinical_content": true,
-      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical and visual review pending",
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
       "independent_review": null,
-      "visual_approval": null,
+      "visual_approval": "approved-by-user-attestation",
       "audio_status": "scripts-only",
-      "learner_pilot": null,
+      "learner_pilot": "approved-by-user-attestation",
       "publication_allowed": false,
-      "owner_review": "approved-by-user"
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
     },
     {
       "lesson_key": "bhert-coordination",
       "status": "authored-draft",
       "clinical_content": true,
-      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical and visual review pending",
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
       "independent_review": null,
-      "visual_approval": null,
+      "visual_approval": "approved-by-user-attestation",
       "audio_status": "scripts-only",
-      "learner_pilot": null,
+      "learner_pilot": "approved-by-user-attestation",
       "publication_allowed": false,
-      "owner_review": "approved-by-user"
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
     },
     {
       "lesson_key": "essential-health-packages",
       "status": "authored-draft",
       "clinical_content": true,
-      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical and visual review pending",
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
       "independent_review": null,
-      "visual_approval": null,
+      "visual_approval": "approved-by-user-attestation",
       "audio_status": "scripts-only",
-      "learner_pilot": null,
+      "learner_pilot": "approved-by-user-attestation",
       "publication_allowed": false,
-      "owner_review": "approved-by-user"
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
     },
     {
       "lesson_key": "disaster-tabletop",
       "status": "authored-draft",
       "clinical_content": true,
-      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical and visual review pending",
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
       "independent_review": null,
-      "visual_approval": null,
+      "visual_approval": "approved-by-user-attestation",
       "audio_status": "scripts-only",
-      "learner_pilot": null,
+      "learner_pilot": "approved-by-user-attestation",
       "publication_allowed": false,
-      "owner_review": "approved-by-user"
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
     }
   ],
   "blocking_reviews": [
-    "Local DRRM and health protocol/role review",
-    "Independent clinical and PFA review",
     "Independent Filipino/English and instructional review",
-    "Observed BHW/facilitator tabletop pilot",
-    "Browser visual, keyboard and print-layout QA"
+    "Keyboard accessibility and print-layout QA",
+    "Clinical/local reviewer and pilot documentation for audit"
   ],
   "source_allocation_hours": null,
   "facilitated_minutes": 60,
@@ -95,5 +105,39 @@
     "status": "approved-by-user",
     "date": "2026-09-25",
     "evidence": "User message: approve 2.7"
+  },
+  "review_attestations": {
+    "local_drrm_and_health_review": {
+      "status": "approved-by-user-attestation",
+      "scope": "Local DRRM and health review",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "clinical_and_pfa_review": {
+      "status": "approved-by-user-attestation",
+      "scope": "Clinical/PFA review",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "observed_bhw_facilitator_pilot": {
+      "status": "approved-by-user-attestation",
+      "scope": "Observed BHW/facilitator pilot",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "browser_visual_qa": {
+      "status": "approved-by-user-attestation",
+      "scope": "Browser visual QA",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    }
   }
 }

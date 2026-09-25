@@ -1,8 +1,15 @@
 {
-  "status": "author-source-check-complete; independent clinical and local DRRM review pending",
+  "status": "author-source-check-complete; local DRRM and clinical/PFA review approved by user attestation; reviewer documentation not supplied",
   "checked_on": "2026-09-25",
   "independent_clinical_reviewer": null,
-  "clinical_signoff": null,
+  "clinical_signoff": {
+    "status": "approved-by-user-attestation",
+    "date": "2026-09-25",
+    "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+    "reviewer_name": null,
+    "signoff_artifact": null,
+    "scope": "Chapter 2.7 clinical/PFA review only"
+  },
   "publication_allowed": false,
   "sources": [
     {
@@ -118,5 +125,39 @@
     "BHW and response-team role",
     "medical/public health, nutrition, WASH and MHPSS referral contacts",
     "medicine continuity and responder relief"
-  ]
+  ],
+  "review_attestations": {
+    "local_drrm_and_health_review": {
+      "status": "approved-by-user-attestation",
+      "scope": "Local DRRM and health review",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "clinical_and_pfa_review": {
+      "status": "approved-by-user-attestation",
+      "scope": "Clinical/PFA review",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "observed_bhw_facilitator_pilot": {
+      "status": "approved-by-user-attestation",
+      "scope": "Observed BHW/facilitator pilot",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "browser_visual_qa": {
+      "status": "approved-by-user-attestation",
+      "scope": "Browser visual QA",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    }
+  }
 }

@@ -29,8 +29,21 @@ test('six DRRM lessons spend only the proposed 60-minute shared allocation',()=>
 });
 test('all six clinical and safety lessons have dated source decisions and closed release gates',()=>{
  validateClinicalEvidence(chapter,evidence());
- assert.equal(evidence().clinical_signoff,null);assert.equal(evidence().publication_allowed,false);
+ assert.equal(evidence().clinical_signoff.status,'approved-by-user-attestation');
+ assert.equal(evidence().clinical_signoff.reviewer_name,null);
+ assert.equal(evidence().clinical_signoff.signoff_artifact,null);
+ assert.equal(evidence().publication_allowed,false);
  assert.ok(json(path.join(dir,'review.json')).lessons.every(x=>x.clinical_content&&!x.publication_allowed));
+});
+test('user confirmation records local, clinical, pilot and visual QA without inventing methods',()=>{
+ const review=json(path.join(dir,'review.json'));
+ for(const key of ['local_drrm_and_health_review','clinical_and_pfa_review','observed_bhw_facilitator_pilot','browser_visual_qa']){
+  assert.equal(review.review_attestations[key].status,'approved-by-user-attestation');
+  assert.equal(review.review_attestations[key].reviewer_name,null);
+  assert.equal(review.review_attestations[key].method_or_artifact,null);
+ }
+ assert.ok(review.lessons.every(x=>x.visual_approval==='approved-by-user-attestation'&&x.learner_pilot==='approved-by-user-attestation'));
+ assert.ok(review.blocking_reviews.some(x=>/Keyboard accessibility and print-layout/.test(x)));
 });
 test('mapping and evacuation require local verification rather than invented operational detail',()=>{
  assert.match(prose('hazards-capacities'),/not an official hazard map/);

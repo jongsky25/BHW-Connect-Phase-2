@@ -1,3 +1,9 @@
+# Current update: Chapter 2.7 review and QA attestation — 25 September 2026
+
+The user confirmed local DRRM and clinical review, an observed pilot and browser visual QA were done and approved. These are recorded as user-attested approvals without invented reviewer identities or artifacts. Independent language/instructional review, keyboard and print-layout QA and publication authorization are not established by that message. Chapter 2 remains unavailable.
+
+Earlier updates below describe their then-current status.
+
 # Current update: Chapter 2.7 owner approval — 25 September 2026
 
 The user approved all six Chapter 2.7 DRRM authoring drafts. Chapter 2.1–2.7 now have owner approval as drafts. Local DRRM and clinical/PFA sign-off, language review, observed pilot, browser visual QA and publication authorization remain pending; Chapter 2 is still unavailable.

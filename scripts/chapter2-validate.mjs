@@ -121,7 +121,9 @@ export function validatePackage() {
 }
 
 export function validateClinicalEvidence(chapterModule,evidence) {
-  assert(evidence.publication_allowed===false && evidence.clinical_signoff===null && evidence.independent_clinical_reviewer===null,'Clinical drafts must not invent clinical sign-off');
+  const signoff=evidence.clinical_signoff;
+  const userAttested=signoff && typeof signoff==='object' && signoff.status==='approved-by-user-attestation' && /^\d{4}-\d{2}-\d{2}$/.test(signoff.date) && /User message:/.test(signoff.evidence) && signoff.reviewer_name===null && signoff.signoff_artifact===null;
+  assert(evidence.publication_allowed===false && evidence.independent_clinical_reviewer===null && (signoff===null || userAttested),'Clinical drafts must not invent clinical sign-off');
   assert(/^\d{4}-\d{2}-\d{2}$/.test(evidence.checked_on),'Clinical evidence needs a check date');
   const ids=evidence.sources.map(s=>s.id);
   assert(new Set(ids).size===ids.length && evidence.sources.every(s=>s.url?.startsWith('https://')&&s.accessed_on),'Clinical sources need unique identities, URLs and access dates');
