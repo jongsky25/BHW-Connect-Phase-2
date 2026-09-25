@@ -1,6 +1,6 @@
 # Chapter 2 lesson and activity crosswalk
 
-55 planned lessons; 49 authored drafts in 2.1, 2.2, 2.3, 2.4, 2.5 and 2.6. The other 6 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
+55 planned lessons; all 55 authored as drafts in 2.1–2.7. Chapter 2.7 awaits owner, local DRRM and clinical/PFA review; authored status is not publication approval. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
 
 | Lesson | English / Filipino | Intended task | Practice | Status |
 |---|---|---|---|---|
@@ -53,9 +53,9 @@
 | 2.6.2 | Invite people and address barriers / Mag-imbita at tugunan ang hadlang | Create an inclusive stakeholder invitation plan addressing participation barriers | stakeholder map | authored-draft |
 | 2.6.3 | Build trust and a core group / Bumuo ng tiwala at pangunahing grupo | Facilitate a participatory meeting that invites contributions and agrees group responsibilities | community meeting role-play | authored-draft |
 | 2.6.4 | Agree actions and review results / Magkasundo sa aksyon at suriin ang resulta | Make an action plan with owners, resources, follow-up and a review measure | community action plan | authored-draft |
-| 2.7.1 | Map hazards and capacities / Tukuyin ang panganib at kakayahan | Use a fictional barangay map to identify hazards, households needing support and available capacities | risk map exercise | outline |
-| 2.7.2 | Confirm evacuation and warning arrangements / Kumpirmahin ang evacuation at babala | Explain locally verified warning, evacuation and contact arrangements using a directory | evacuation communication drill | outline |
-| 2.7.3 | Prepare a go-bag or e-balde / Maghanda ng go-bag o e-balde | Assemble and explain a go-bag/e-balde using reviewed local guidance and household needs | go-bag demonstration | outline |
-| 2.7.4 | Coordinate the BHW/BHERT role / Iugnay ang gawain ng BHW at BHERT | Explain the locally confirmed role and appropriate response-team handover | response-team coordination | outline |
-| 2.7.5 | Connect people to essential services / Iugnay ang tao sa mahalagang serbisyo | Match disaster needs to medical/public health, nutrition, WASH and psychosocial support | EHSP sorting exercise | outline |
-| 2.7.6 | Practise coordinated disaster response / Magsanay ng magkakaugnay na pagtugon | Complete a tabletop with referral, service continuity, follow-up and responder support | disaster tabletop | outline |
+| 2.7.1 | Map hazards and capacities / Tukuyin ang panganib at kakayahan | Use a fictional barangay map to identify hazards, households needing support and available capacities | risk map exercise | authored-draft |
+| 2.7.2 | Confirm evacuation and warning arrangements / Kumpirmahin ang evacuation at babala | Explain locally verified warning, evacuation and contact arrangements using a directory | evacuation communication drill | authored-draft |
+| 2.7.3 | Prepare a go-bag or e-balde / Maghanda ng go-bag o e-balde | Assemble and explain a go-bag/e-balde using reviewed local guidance and household needs | go-bag demonstration | authored-draft |
+| 2.7.4 | Coordinate the BHW/BHERT role / Iugnay ang gawain ng BHW at BHERT | Explain the locally confirmed role and appropriate response-team handover | response-team coordination | authored-draft |
+| 2.7.5 | Connect people to essential services / Iugnay ang tao sa mahalagang serbisyo | Match disaster needs to medical/public health, nutrition, WASH and psychosocial support | EHSP sorting exercise | authored-draft |
+| 2.7.6 | Practise coordinated disaster response / Magsanay ng magkakaugnay na pagtugon | Complete a tabletop with referral, service continuity, follow-up and responder support | disaster tabletop | authored-draft |

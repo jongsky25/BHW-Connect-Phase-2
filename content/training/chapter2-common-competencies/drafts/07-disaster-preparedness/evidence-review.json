@@ -1,0 +1,122 @@
+{
+  "status": "author-source-check-complete; independent clinical and local DRRM review pending",
+  "checked_on": "2026-09-25",
+  "independent_clinical_reviewer": null,
+  "clinical_signoff": null,
+  "publication_allowed": false,
+  "sources": [
+    {
+      "id": "who-edrm",
+      "title": "WHO Health Emergency and Disaster Risk Management fact sheets",
+      "url": "https://www.who.int/publications/m/item/health-emergency-and-disaster-risk-management-%28edrm%29-fact-sheets",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary public-health, meteorological or disaster-risk source; local operational details not inferred"
+    },
+    {
+      "id": "who-wash",
+      "title": "WHO IPC and WASH in health emergencies",
+      "url": "https://www.who.int/emergencies/operations/ipc-wash",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary public-health, meteorological or disaster-risk source; local operational details not inferred"
+    },
+    {
+      "id": "who-pfa",
+      "title": "WHO Psychological first aid: Guide for field workers",
+      "url": "https://www.who.int/publications/i/item/9789241548205",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary public-health, meteorological or disaster-risk source; local operational details not inferred"
+    },
+    {
+      "id": "doh-gobag",
+      "title": "DOH Caraga: Ihanda ang laman ng Go Bag",
+      "url": "https://caraga.doh.gov.ph/ihanda-ang-laman-ng-go-bag-para-sa-mabilis-na-pag-likas/",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary public-health, meteorological or disaster-risk source; local operational details not inferred"
+    },
+    {
+      "id": "doh-weather",
+      "title": "DOH CAR: Tropical cyclone and monsoon health advisory",
+      "url": "https://caro.doh.gov.ph/cordillera-health-situational-summary-report-for-the-combined-effects-of-recent-tropical-cyclones-and-the-southwest-monsoon-habagat-as-of-400-pm-of-july-31-2025/",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary public-health, meteorological or disaster-risk source; local operational details not inferred"
+    },
+    {
+      "id": "pagasa-services",
+      "title": "PAGASA warning and flood advisory services",
+      "url": "https://www.pagasa.dost.gov.ph/products-and-services",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary public-health, meteorological or disaster-risk source; local operational details not inferred"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "risk-map-and-warnings",
+      "lessons": [
+        "hazards-capacities",
+        "evacuation-contacts"
+      ],
+      "source_issue": "R54 and P97–102 emphasize risk maps, warnings, evacuation and local contacts; a fictional route, shelter or old directory is not operational authority.",
+      "decision": "Use a fictional map and verification fields. Treat PAGASA warnings and local DRRM orders as distinct. Confirm current accessible route, shelter, contact and timestamp before relaying instructions.",
+      "sources": [
+        "who-edrm",
+        "pagasa-services",
+        "doh-weather"
+      ],
+      "remaining": "Barangay DRRM and health leads must review actual maps, warning channels, accessible shelters, routes and contacts."
+    },
+    {
+      "id": "go-bag",
+      "lessons": [
+        "go-bag-e-balde"
+      ],
+      "source_issue": "R54–55 and P102–104 recommend a go-bag/e-balde; a generic list may overlook a household’s medicines, infants or portability.",
+      "decision": "Use the current DOH advisory as a starting checklist, then tailor the example to household needs and review expiry. Do not dispense or prescribe.",
+      "sources": [
+        "doh-gobag"
+      ],
+      "remaining": "Confirm local hazard-specific contents, medicine continuity, supply access and emergency transport with local staff."
+    },
+    {
+      "id": "bhert-legacy",
+      "lessons": [
+        "bhert-coordination"
+      ],
+      "source_issue": "R55 and P104–107 describe a pandemic-era BHERT arrangement that cannot establish today’s fixed team composition or authority.",
+      "decision": "Teach confirmation of current response lead, BHW role, reporting channel and minimum-necessary handover. Exclude fixed team size, contact-tracing/isolation mandates and clinical or enforcement duties.",
+      "sources": [
+        "who-edrm"
+      ],
+      "remaining": "Local DRRM and health authorities must confirm current team roster, BHW scope, privacy practice and handover protocol."
+    },
+    {
+      "id": "essential-services-and-pfa",
+      "lessons": [
+        "essential-health-packages",
+        "disaster-tabletop"
+      ],
+      "source_issue": "R56–57 and P107–112 list EHSP domains, but include fixed targets and broad PFA effects that should not become universal BHW promises.",
+      "decision": "Keep medical/public health, nutrition, WASH and MHPSS as referral domains. Use safe, consent-based practical support and referral for distress; do not prescribe, declare water safe, deliver therapy or promise recovery. Avoid fixed 24-hour targets.",
+      "sources": [
+        "who-edrm",
+        "who-wash",
+        "who-pfa"
+      ],
+      "remaining": "Qualified local clinical, WASH, nutrition and MHPSS leads must validate service pathways, referral urgency and responder support."
+    }
+  ],
+  "excluded_legacy_claims": [
+    "Fixed BHERT pandemic-era team composition, isolation and contact-tracing mandates",
+    "Unverified hotline, evacuation route or shelter",
+    "Fixed 24-hour nutrition or latrine targets",
+    "BHW prescribing, medication dispensing, water-safety declaration or psychological therapy",
+    "PFA guaranteed to speed recovery"
+  ],
+  "local_confirmation_fields": [
+    "current warning source and issue time",
+    "evacuation order, route and accessible shelter",
+    "barangay DRRM and health lead plus backup",
+    "BHW and response-team role",
+    "medical/public health, nutrition, WASH and MHPSS referral contacts",
+    "medicine continuity and responder relief"
+  ]
+}

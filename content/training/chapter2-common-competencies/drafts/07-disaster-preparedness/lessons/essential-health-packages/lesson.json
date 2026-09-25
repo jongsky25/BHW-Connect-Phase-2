@@ -1,0 +1,272 @@
+{
+  "manifest": {
+    "lesson_key": "essential-health-packages",
+    "position": 4,
+    "title_fil": "Iugnay ang tao sa mahalagang serbisyo",
+    "title_en": "Connect people to essential services",
+    "objectives_fil": [
+      "Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up."
+    ],
+    "objectives_en": [
+      "In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.risk",
+        "c2.drrm.essential-health-packages.action",
+        "c2.drrm.essential-health-packages.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: essential health packages",
+      "takeaway_en": "Case: essential health packages",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.risk",
+        "c2.drrm.essential-health-packages.action",
+        "c2.drrm.essential-health-packages.boundary"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.",
+      "takeaway_en": "Match four fictional needs to the appropriate service and state referral and follow-up.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
+      "takeaway_en": "This ties action to a verified plan and scope.",
+      "check": {
+        "prompt_fil": "Ano ang unang ligtas na hakbang?",
+        "prompt_en": "What is the first safe step?",
+        "options": [
+          {
+            "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
+            "en": "Assume the old information is still correct and immediately relay it to everyone."
+          },
+          {
+            "fil": "Iugnay ang apat na domain sa itinalagang staff; itala ang naputol na serbisyo.",
+            "en": "Link all four domains to assigned staff; record interrupted services."
+          },
+          {
+            "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
+            "en": "Decide alone without local confirmation or an official warning."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
+        "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.risk",
+        "c2.drrm.essential-health-packages.action",
+        "c2.drrm.essential-health-packages.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.",
+      "takeaway_en": "In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.action",
+        "c2.drrm.essential-health-packages.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.action",
+        "c2.drrm.essential-health-packages.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+      "takeaway_en": "This establishes clear ownership and next action.",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Tratuhin ang lahat bilang isang medical case at magbigay ng sariling therapy. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Treat every need as a single medical case and provide therapy independently. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.drrm.essential-health-packages.risk",
+        "c2.drrm.essential-health-packages.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.drrm.essential-health-packages.risk",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-edrm",
+        "who-wash",
+        "who-pfa"
+      ]
+    },
+    {
+      "id": "c2.drrm.essential-health-packages.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-edrm",
+        "who-wash",
+        "who-pfa"
+      ]
+    },
+    {
+      "id": "c2.drrm.essential-health-packages.boundary",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-edrm",
+        "who-wash",
+        "who-pfa"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        56,
+        57
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: topic sequence; legacy BHERT and fixed-time claims require local review",
+      "pdf_pages": [
+        107,
+        110
+      ]
+    },
+    {
+      "id": "who-edrm",
+      "title": "WHO Health Emergency and Disaster Risk Management fact sheets",
+      "url": "https://www.who.int/publications/m/item/health-emergency-and-disaster-risk-management-%28edrm%29-fact-sheets"
+    },
+    {
+      "id": "who-wash",
+      "title": "WHO IPC and WASH in health emergencies",
+      "url": "https://www.who.int/emergencies/operations/ipc-wash"
+    },
+    {
+      "id": "who-pfa",
+      "title": "WHO Psychological first aid: Guide for field workers",
+      "url": "https://www.who.int/publications/i/item/9789241548205"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/essential-health-packages-81b0a345488e.svg",
+      "content_hash": "81b0a345488e70e890ac150e5dd5ae69d76ae21abcf376a080ec677a2f102d69",
+      "alt_fil": "Tatlong kahon: Suriin, Iugnay, Balikan.",
+      "alt_en": "Three boxes: Assess, Link, Follow up.",
+      "caption_fil": "Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.",
+      "caption_en": "In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

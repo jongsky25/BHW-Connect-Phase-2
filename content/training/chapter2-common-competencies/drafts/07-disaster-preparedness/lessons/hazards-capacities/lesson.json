@@ -1,0 +1,255 @@
+{
+  "manifest": {
+    "lesson_key": "hazards-capacities",
+    "position": 0,
+    "title_fil": "Tukuyin ang panganib at kakayahan",
+    "title_en": "Map hazards and capacities",
+    "objectives_fil": [
+      "Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin."
+    ],
+    "objectives_en": [
+      "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.risk",
+        "c2.drrm.hazards-capacities.action",
+        "c2.drrm.hazards-capacities.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: hazards capacities",
+      "takeaway_en": "Case: hazards capacities",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.risk",
+        "c2.drrm.hazards-capacities.action",
+        "c2.drrm.hazards-capacities.boundary"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
+      "takeaway_en": "On the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
+      "takeaway_en": "This ties action to a verified plan and scope.",
+      "check": {
+        "prompt_fil": "Ano ang unang ligtas na hakbang?",
+        "prompt_en": "What is the first safe step?",
+        "options": [
+          {
+            "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
+            "en": "Assume the old information is still correct and immediately relay it to everyone."
+          },
+          {
+            "fil": "Ihiwalay ang hazard, suporta at kapasidad; ipa-verify ang ruta at shelter.",
+            "en": "Separate hazard, support need and capacity; verify route and shelter."
+          },
+          {
+            "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
+            "en": "Decide alone without local confirmation or an official warning."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
+        "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.risk",
+        "c2.drrm.hazards-capacities.action",
+        "c2.drrm.hazards-capacities.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
+      "takeaway_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.action",
+        "c2.drrm.hazards-capacities.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.action",
+        "c2.drrm.hazards-capacities.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+      "takeaway_en": "This establishes clear ownership and next action.",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Sabihing bukas ang paaralan kahit hindi pa nasuri. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Say the school is open without checking. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.drrm.hazards-capacities.risk",
+        "c2.drrm.hazards-capacities.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.drrm.hazards-capacities.risk",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-edrm"
+      ]
+    },
+    {
+      "id": "c2.drrm.hazards-capacities.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-edrm"
+      ]
+    },
+    {
+      "id": "c2.drrm.hazards-capacities.boundary",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-edrm"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        54
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: topic sequence; legacy BHERT and fixed-time claims require local review",
+      "pdf_pages": [
+        97,
+        99
+      ]
+    },
+    {
+      "id": "who-edrm",
+      "title": "WHO Health Emergency and Disaster Risk Management fact sheets",
+      "url": "https://www.who.int/publications/m/item/health-emergency-and-disaster-risk-management-%28edrm%29-fact-sheets"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/hazards-capacities-b3fefebb2987.svg",
+      "content_hash": "b3fefebb2987f9c5550524050e5d4e89cc1c04ee13c10185e00201b4d9a89bd0",
+      "alt_fil": "Tatlong kahon: Panganib, Pangangailangan, Kakayahan.",
+      "alt_en": "Three boxes: Hazard, Needs, Capacity.",
+      "caption_fil": "Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
+      "caption_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

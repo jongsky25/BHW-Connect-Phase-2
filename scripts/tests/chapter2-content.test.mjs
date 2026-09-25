@@ -6,9 +6,10 @@ import {json,packageRoot,root,validateBlueprint,validateDraftModule,validatePack
 import {loadReferenceModule} from '../lib/reference-content.mjs';
 const dir=path.join(packageRoot,'drafts/01-difficult-situations');
 const fixture=()=>({module:structuredClone(loadReferenceModule(dir,path.join(root,'public'))),review:json(path.join(dir,'review.json')),activities:json(path.join(dir,'activities.json')).activities});
-test('55 scoped lessons and forty-nine authored bilingual lessons meet the chapter contract',()=>{
- const report=validatePackage();assert.equal(report.status,'passed');assert.equal(report.lessons,49);
- assert.deepEqual(report.modules.map(m=>m.code),['2.1','2.2','2.3','2.4','2.5','2.6']);assert.equal(report.checks,98);
+test('55 scoped and authored bilingual lessons meet the chapter contract',()=>{
+ const report=validatePackage();assert.equal(report.status,'passed');assert.equal(report.lessons,55);
+ assert.deepEqual(report.modules.map(m=>m.code),['2.1','2.2','2.3','2.4','2.5','2.6','2.7']);assert.equal(report.checks,110);
+ assert.equal(report.read_sections,385);assert.equal(report.slides,385);
 });
 test('reject duplicate lesson identities',()=>{const b=json(path.join(packageRoot,'chapter-blueprint.json'));b.modules[1].lessons[0].lesson_key=b.modules[0].lessons[0].lesson_key;assert.throws(()=>validateBlueprint(b),/Duplicate lesson_key/);});
 test('reject accidental chapter activation',()=>{const b=json(path.join(packageRoot,'chapter-blueprint.json'));b.availability='available';assert.throws(()=>validateBlueprint(b),/must not activate/);});

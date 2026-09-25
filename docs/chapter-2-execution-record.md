@@ -1,3 +1,9 @@
+# Current update: Chapter 2.7 Disaster Preparedness and Response — 25 September 2026
+
+Chapter 2.5 owner approval recorded without clinical sign-off. Six DRRM drafts added; 55/55 lessons authored. F38 combined Community Mobilization/DRRM allocation reconciles to a proposed 60+60 minute split. WHO, DOH and PAGASA source decisions recorded; local and clinical review pending. Chapter remains unpublished. See chapter-2-drrm-review.md.
+
+Earlier updates below describe their then-current counts.
+
 # Current update: Chapter 2.5 Medicinal Plants — 25 September 2026
 
 Chapter 2.3 IPC owner approval recorded. Twelve botanical-reference and consultation drafts added for Chapter 2.5; 49/55 lessons authored. The F38 two-hour plant allocation reconciles to 120 minutes. PITAHC and WHO source decisions documented; independent clinical/botanical and local review pending. Chapter 2.7 remains outline. See chapter-2-plants-review.md.

@@ -5,7 +5,7 @@
   "availability": "unavailable",
   "publication_allowed": false,
   "planned_lesson_count": 55,
-  "authored_lesson_count": 49,
+  "authored_lesson_count": 55,
   "competency_groups": [
     {
       "id": "behavior",
@@ -1597,7 +1597,7 @@
           112
         ]
       },
-      "status": "mapped-not-authored",
+      "status": "draft-authored",
       "lessons": [
         {
           "code": "2.7.1",
@@ -1609,23 +1609,24 @@
           "task_fil": "Gamitin ang fictional barangay map sa panganib, pamilyang nangangailangan at kapasidad",
           "practice_id": "activity-hazards-capacities",
           "practice_en": "risk map exercise",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
           "source_pages": {
             "R": [
-              54,
-              57
+              54
             ],
             "F": [
+              38,
               42,
               43
             ],
             "P": [
               97,
-              112
+              99
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
         },
         {
           "code": "2.7.2",
@@ -1637,23 +1638,24 @@
           "task_fil": "Ipaliwanag ang kumpirmadong babala, evacuation at contact gamit ang directory",
           "practice_id": "activity-evacuation-contacts",
           "practice_en": "evacuation communication drill",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.",
           "source_pages": {
             "R": [
-              54,
-              57
+              54
             ],
             "F": [
+              38,
               42,
               43
             ],
             "P": [
-              97,
-              112
+              99,
+              102
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
         },
         {
           "code": "2.7.3",
@@ -1665,23 +1667,25 @@
           "task_fil": "Buuin at ipaliwanag ang go-bag/e-balde ayon sa nasuring gabay at pangangailangan",
           "practice_id": "activity-go-bag-e-balde",
           "practice_en": "go-bag demonstration",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a fictional case, select items for the fictional family, explain why, and set a date to recheck.",
           "source_pages": {
             "R": [
               54,
-              57
+              55
             ],
             "F": [
+              38,
               42,
               43
             ],
             "P": [
-              97,
-              112
+              102,
+              104
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
         },
         {
           "code": "2.7.4",
@@ -1693,23 +1697,24 @@
           "task_fil": "Ipaliwanag ang kumpirmadong tungkulin at handover sa response team",
           "practice_id": "activity-bhert-coordination",
           "practice_en": "response-team coordination",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.",
           "source_pages": {
             "R": [
-              54,
-              57
+              55
             ],
             "F": [
+              38,
               42,
               43
             ],
             "P": [
-              97,
-              112
+              104,
+              107
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
         },
         {
           "code": "2.7.5",
@@ -1721,23 +1726,25 @@
           "task_fil": "Itugma ang pangangailangan sa medical/public health, nutrisyon, WASH at psychosocial support",
           "practice_id": "activity-essential-health-packages",
           "practice_en": "EHSP sorting exercise",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up.",
           "source_pages": {
             "R": [
-              54,
+              56,
               57
             ],
             "F": [
+              38,
               42,
               43
             ],
             "P": [
-              97,
-              112
+              107,
+              110
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
         },
         {
           "code": "2.7.6",
@@ -1749,13 +1756,16 @@
           "task_fil": "Kumpletuhin ang tabletop na may referral, tuloy na serbisyo, follow-up at suporta sa responder",
           "practice_id": "activity-disaster-tabletop",
           "practice_en": "disaster tabletop",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.",
           "source_pages": {
             "R": [
               54,
+              55,
+              56,
               57
             ],
             "F": [
+              38,
               42,
               43
             ],
@@ -1764,8 +1774,9 @@
               112
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
         }
       ]
     }

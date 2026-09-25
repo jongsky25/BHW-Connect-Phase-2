@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-go-bag-e-balde",
+  "objective_id": "go-bag-e-balde.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring luma o mali ang impormasyon.",
+          "en": "Information may be old or wrong."
+        },
+        {
+          "fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
+          "en": "This ties action to a verified plan and scope."
+        },
+        {
+          "fil": "Kailangan ang tamang awtoridad at lokal na konteksto.",
+          "en": "The correct authority and local context are needed."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring makapinsala o maantala ang tulong.",
+          "en": "This may harm or delay help."
+        },
+        {
+          "fil": "Nawawala ang accountability at continuity.",
+          "en": "Accountability and continuity are lost."
+        },
+        {
+          "fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+          "en": "This establishes clear ownership and next action."
+        }
+      ]
+    }
+  ]
+}
