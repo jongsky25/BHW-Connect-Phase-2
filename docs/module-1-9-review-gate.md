@@ -62,6 +62,10 @@ The facilitator and Filipino-language reviewer should discuss where instructions
 | Visuals | Requester approval noted 2026-09-25; asset hashes verified; visual review notes pending | Approve final bilingual resource-audit, safe-change and normalized-tracker diagrams and their alt text; check mobile and print legibility. The approved SVGs are attached to the production-authoring lessons; visual review notes remain pending. |
 | Learner timing | Requester approval noted 2026-09-25; pilot date and actual minutes pending | Run all three lessons with a real learner group. Log per-segment start/end, group size, completion, questions, retries, quality failures and deviations. Revise until each lesson can be facilitated within its tested allocation without rushing observation. |
 
+## Pilot publication exception (25 September 2026)
+
+The requester explicitly authorized **pilot publication before the facilitator and Filipino-language findings, local safety and visual review record, and actual learner timing are complete**. This exception permits promotion of the three already staged Module 1.9 lesson revisions for a limited pilot. It does not convert the proposed 180 minutes into measured results or claim that named reviewers completed the checks. Keep those evidence fields pending and capture findings during the pilot. Resolve any safety or service-quality issue before wider release. Keep participation separate from individual competency observations.
+
 ## Staging record (25 September 2026)
 
 The established content loader created 1.9 from the complete authored module after a successful dry run. Module ID `586f0588-2776-42b0-be1c-bc88c4ef825f` is recorded in the course lock. The established lesson loader then passed a dry run and staged all three authored lessons without promotion. Returned lesson IDs are `resources-audit`: `73e5e389-0f41-4ef5-aadf-aa368da6a863`; `resources-safe-change`: `98605646-c56d-4dec-b440-eb016c44e6cf`; `resources-monitor`: `59cea10b-f0e8-4fa9-837f-77b8504f4e77`. These IDs are recorded in the same lock. The module's facilitator notes contain all three optional practice cards. Each lesson has one immutable revision and a null `published_revision_id`.
@@ -73,7 +77,7 @@ The printable six-page bilingual packet is `public/training/module-1-9/practice-
 1. Record names, dates, findings and approved final revisions above. Resolve every safety and language issue; replace proposed minutes with measured results.
 2. Reconcile the final human decisions against the production-authored lessons, cards, visuals, narration and printable packet. Keep the draft as review history until the team decides its retention.
 3. Rerun the established parser/validator and scoped loader dry runs if reviewed content changes. Compare the immutable revisions with the signed decisions.
-4. Review the staged revisions and use the established publish flow only after the pilot timing and safety/service checks are documented. Verify signed-in learner Read/Slides/practice and facilitator guide, activities, observation and print views; verify a historical certified learner remains unaffected.
+4. For this pilot only, promote the reviewed staged revisions under the explicit requester exception above. Verify signed-in learner Read/Slides/practice and facilitator guide, activities, observation and print views; verify a historical certified learner remains unaffected. Complete the pending review and timing record before wider release.
 
 Module and lesson staging and course-lock updates are complete. No lesson publication or authenticated learner/facilitator view test is claimed.
 
