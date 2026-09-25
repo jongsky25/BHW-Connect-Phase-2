@@ -4,7 +4,7 @@ Pumili ng resource-saving action na nagpapanatili ng infection prevention, criti
 
 ## [time-materials] Oras at kagamitan
 
-60 minuto para sa pinadali na pagsasanay. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.
+60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.
 
 ## [prepare] Ihanda
 
@@ -20,6 +20,8 @@ Basahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserb
 
 ## [expected-answers] Inaasahang sagot
 
+Sa utilities check, panatilihing gumagana ang vaccine refrigerator at suriin ang hindi kailangang ilaw ayon sa facility procedure. Di-ligtas na patayin ang cold-chain equipment o kinakailangang bentilasyon.
+
 Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.
 
 ## [misconception] Karaniwang pagkakamali
@@ -31,6 +33,8 @@ Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pa
 Ihambing ang “ayusin ang leak” at “bawasan ang handwashing.” Ilista ang matitipid, posibleng pinsala at safeguard. Pumili at ipaliwanag sa kapareha. Ulitin gamit ang reusable visual laban sa clinical single-use reuse. Kung mag-isa, isulat ang tinanggihang opsyon at dahilan. Bago subukan ang pagbabago sa trabaho, kumpirmahin sa supervisor ang policy at safety check.
 
 ## [answer-key] Susi sa sagot
+
+Utilities check: 1. Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw ayon sa facility procedure.
 
 3. Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.
 
@@ -55,3 +59,4 @@ Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong t
 ## [sources-review] Sanggunian at tala sa pagsusuri
 
 Draft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35; WHO — Climate-resilient and environmentally sustainable health care facilities (https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities). Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.
+
