@@ -18,7 +18,7 @@ Ipakita ang mapa; basahin ang eksena. Itanong: *"Ano ang alam na natin dito, at 
 
 ## [steps] Mga hakbang
 
-Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
+Sumusunod ang hakbang sa pamagat ng Read at slide.
 
 1. **Ang sitwasyon.** Itanong: *"Alin ang panganib, ang pangangailangan, ang posibleng kakayahan?"*
 2. **Gawin at sabihin.** Itanong: *"Saan natin isusulat ang hindi pa tiyak?"*
@@ -44,16 +44,16 @@ Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (unang ligtas na hakbang).** Tama: **"Ihiwalay ang hazard, suporta at kapasidad; ipa-verify ang ruta at shelter"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
-- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Sabihing bukas ang paaralan kahit hindi pa nasuri…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
+- **Check 1.** Tama: **"Ihiwalay ang hazard, suporta at kapasidad; ipa-verify ang ruta at shelter"**. "Markahan ang paaralan bilang…": hindi pa kumpirmado ang paaralan; "Isulat sa mapa ang…": pangangailangan ang nasa mapa, hindi pangalan.
+- **Check 2.** Tama: **"Ipasuri sa DRRM office at health team ang mapa bago gamitin"**. "Sabihing bukas ang paaralan…": maaaring makapinsala o maantala ang tulong; "Ipaskil ang mapa ng…": hindi opisyal na hazard map o evacuation order ang mapa ng pagsasanay.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.
 
-- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
-- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+- **Kaya na:** Namamarkahan ang panganib, pangangailangan at kakayahan, nasasabi kung sino ang magpapatunay sa kakayahan, at walang totoong lokasyon, nang walang paalala.
+- **Kailangan pa ng practice:** Namamarkahan ang tatlong layer ngunit kailangan ng paalala sa magpapatunay o sa pag-alis ng lokasyon ng sambahayan.
+- **Hindi pa:** Itinuturing na kumpirmadong silungan ang paaralan o minamarkahan ang totoong sambahayan sa mapa.
 
 Hanapin: may magpapatunay sa tabi ng kakayahan; walang totoong lokasyon. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
@@ -61,7 +61,7 @@ Hanapin: may magpapatunay sa tabi ng kakayahan; walang totoong lokasyon. Hindi p
 
 - **Kailangan pa:** ipakitang muli ang column ng pagpapatunay at umulit ngayon gamit ang ruta.
 - **Hindi pa:** ipakitang muli ang halimbawang sagot; isang panganib, isang pangangailangan, isang kakayahan lang; ipares sa kasamang Kaya na.
-- Obserbahang muli sa susunod na supervised practice o transfer task, na iba ang mapa. Practice ang peer feedback, hindi rating ng staff.
+- Obserbahang muli sa susunod na supervised practice o transfer task, na iba ang mapa. Hindi rating ng staff ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

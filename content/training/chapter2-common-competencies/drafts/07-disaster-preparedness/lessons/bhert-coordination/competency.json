@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Sa fictional na kaso, sa mock team change, tukuyin ang dapat kumpirmahin at magbigay ng maikling handover nang walang personal na detalye.",
       "observable_en": "In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Umaasa sa lumang roster, o may pangalan o detalye ng kalusugan sa handover.",
+      "not_yet_en": "Relies on the old roster, or includes names or health details in the handover.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Kinukumpirma ang kasalukuyang team, lead at channel, saka nagbibigay ng maikling handover na may oras at walang pangalan o diagnosis, nang walang paalala.",
+        "kaya_na_en": "Confirms the current team, lead and channel, then gives a short handover with the time and no name or diagnosis, without prompts.",
+        "kailangan_practice_fil": "Nakapagbibigay ng handover ngunit kailangan ng paalala na kumpirmahin muna ang lead o itala ang oras.",
+        "kailangan_practice_en": "Gives the handover but needs a prompt to confirm the current lead first or to record the time.",
+        "hindi_pa_fil": "Umaasa sa lumang roster, o may pangalan o detalye ng kalusugan sa handover.",
+        "hindi_pa_en": "Relies on the old roster, or includes names or health details in the handover."
       }
     }
   ]

@@ -1,4 +1,4 @@
-# 2.7.3 — Practice: go bag e balde
+# 2.7.3 — Practice: Prepare a go-bag or e-balde
 
 Use fictional details only.
 

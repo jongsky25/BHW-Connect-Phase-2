@@ -18,7 +18,7 @@ Lay the four need cards face up and read the scene. Ask: *"Which service takes e
 
 ## [steps] Steps
 
-Each step matches the Read section and slide of the same name.
+Steps follow the Read and slide headings.
 
 1. **The situation.** Ask: *"Which need worries you most, and why?"*
 2. **What to do and say.** Name the four domains. Ask: *"Which card goes where?"*
@@ -44,16 +44,16 @@ Each step matches the Read section and slide of the same name.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (first safe step).** Correct: **"Link all four domains to assigned staff; record interrupted services"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
-- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Treat every need as a single medical case…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
+- **Check 1.** Correct: **"Link all four domains to assigned staff; record interrupted services"**. "Handle all four needs…": water, food and distress need WASH, nutrition and MHPSS staff, not only medical care; "Ask the distressed person…": check safety first.
+- **Check 2.** Correct: **"Hand each need to its focal person and confirm how feedback returns"**. "Treat every need as…": this may harm or delay help; "Tell families the water…": only WASH staff can say the water is safe.
 
 ## [observe] What to observe
 
 Indicator: In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up.
 
-- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
-- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
-- **Hindi pa:** Uses an unverified plan or exceeds the role.
+- **Kaya na:** Matches all four needs to the right domain, names the focal person slot and says how feedback returns, without prompts.
+- **Kailangan pa ng practice:** Matches the domains but needs a prompt for the follow-up or for checking the distressed person's safety first.
+- **Hindi pa:** Prescribes, sets rations, declares water safe, gives therapy or demands the distressed person's story.
 
 Look for four correct domains and no prescribing, rations, water declaration or therapy. A correct self-check is not evidence of the skill.
 
@@ -61,7 +61,7 @@ Look for four correct domains and no prescribing, rations, water declaration or 
 
 - **Kailangan pa:** re-model the follow-up sentence; retry now with the cards shuffled.
 - **Hindi pa:** replay the worked example; start with two cards, then add the rest; pair with a peer rated Kaya na.
-- Re-observe at the next supervised practice or transfer task with new need cards. Peer feedback is practice, not a staff rating.
+- Re-observe at the next supervised practice or transfer task with new need cards. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

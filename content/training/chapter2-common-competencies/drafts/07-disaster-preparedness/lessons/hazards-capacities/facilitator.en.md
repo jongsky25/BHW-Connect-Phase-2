@@ -18,7 +18,7 @@ Show the map and read the scene. Ask: *"What do we know here, and what must some
 
 ## [steps] Steps
 
-Each step matches the Read section and slide of the same name.
+Steps follow the Read and slide headings.
 
 1. **The situation.** Ask: *"Which is the hazard, the need, the possible capacity?"*
 2. **What to do and say.** Ask: *"Where do we write what we are unsure of?"*
@@ -44,16 +44,16 @@ Each step matches the Read section and slide of the same name.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (first safe step).** Correct: **"Separate hazard, support need and capacity; verify route and shelter"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
-- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Say the school is open without checking…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
+- **Check 1.** Correct: **"Separate hazard, support need and capacity; verify route and shelter"**. "Mark the school as…": the school is not confirmed; "Write the family's name…": the map shows the need, not the name.
+- **Check 2.** Correct: **"Ask the DRRM office and health team to verify the map before use"**. "Say the school is…": this may harm or delay help; "Post the practice map…": the practice map is not an official hazard map or evacuation order.
 
 ## [observe] What to observe
 
 Indicator: In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.
 
-- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
-- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
-- **Hindi pa:** Uses an unverified plan or exceeds the role.
+- **Kaya na:** Marks a hazard, a support need and a capacity, names who will verify the capacity, and shows no real location, without prompts.
+- **Kailangan pa ng practice:** Marks the three layers but needs a prompt to name who will verify or to leave out the household's location.
+- **Hindi pa:** Treats the school as a confirmed shelter or marks a real household on the map.
 
 Look for a named verifier beside the capacity and no real location. A correct self-check is not evidence of the skill.
 
@@ -61,7 +61,7 @@ Look for a named verifier beside the capacity and no real location. A correct se
 
 - **Kailangan pa:** re-model the verify column and retry now using the route.
 - **Hindi pa:** re-model the worked example; give one hazard, one need, one capacity; pair with a peer rated Kaya na.
-- Re-observe at the next supervised practice or transfer task with a changed map. Peer feedback is practice, not a staff rating.
+- Re-observe at the next supervised practice or transfer task with a changed map. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

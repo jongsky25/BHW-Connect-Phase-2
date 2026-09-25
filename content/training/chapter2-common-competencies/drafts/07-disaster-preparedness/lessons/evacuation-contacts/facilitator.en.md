@@ -18,7 +18,7 @@ Hold up the old directory. Ask: *"Nena's family asks when and where to go. What 
 
 ## [steps] Steps
 
-Each step matches the Read section and slide of the same name.
+Steps follow the Read and slide headings.
 
 1. **The situation.** Ask: *"What do we know about this directory?"*
 2. **What to do and say.** Show the mock advisory. Ask: *"Where did this come from, and when?"*
@@ -44,16 +44,16 @@ Each step matches the Read section and slide of the same name.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (first safe step).** Correct: **"Check the official update and local route before advising"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
-- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Treat an old directory as current…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
+- **Check 1.** Correct: **"Check the official update and local route before advising"**. "Read them the hotline…": the directory is old; "Tell them to go…": last year's site may not be confirmed now.
+- **Check 2.** Correct: **"Say what is confirmed, its source and time, and what is pending"**. "Treat the old directory…": old information may be wrong, and wrong information can delay help; "Announce an evacuation order…": do not invent an evacuation order.
 
 ## [observe] What to observe
 
 Indicator: In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.
 
-- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
-- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
-- **Hindi pa:** Uses an unverified plan or exceeds the role.
+- **Kaya na:** States the advisory source and time, keeps confirmed apart from pending, and names the contact to verify, without prompts.
+- **Kailangan pa ng practice:** Gives the confirmed action but needs a prompt to state the source and time or the contact to verify.
+- **Hindi pa:** Relays the old directory, an unconfirmed route or a self-made evacuation order as fact.
 
 Look for source and time said aloud, and confirmed kept apart from still waiting. A correct self-check is not evidence of the skill.
 
@@ -61,7 +61,7 @@ Look for source and time said aloud, and confirmed kept apart from still waiting
 
 - **Kailangan pa:** re-model only the "confirmed / still waiting" sentence; retry now with the partner asking about the route.
 - **Hindi pa:** replay the worked example; give one question only ("When do we go?"); pair with a peer rated Kaya na.
-- Re-observe at the next supervised practice or transfer task with a changed advisory. Peer feedback is practice, not a staff rating.
+- Re-observe at the next supervised practice or transfer task with a changed advisory. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

@@ -18,7 +18,7 @@ Show the old roster and read the scene. Ask: *"How do we know this is still the 
 
 ## [steps] Steps
 
-Each step matches the Read section and slide of the same name.
+Steps follow the Read and slide headings.
 
 1. **The situation.** Ask: *"What is the BHW asked to do, and what is unclear?"*
 2. **What to do and say.** Ask: *"What is the least a handover must say?"* List them on the board.
@@ -44,16 +44,16 @@ Each step matches the Read section and slide of the same name.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (first safe step).** Correct: **"Confirm current lead and channel, then hand over"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
-- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Use an old roster and assume its former mandate…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
+- **Check 1.** Correct: **"Confirm current lead and channel, then hand over"**. "Call the person listed…": that person may no longer be the lead; "Send the resident's name…": the list may be old, and names and health details must stay private.
+- **Check 2.** Correct: **"Report location, need and action taken; record the time"**. "Use an old roster…": this may harm or delay help; "Hand over without checking…": without acknowledgement, no one knows the need was received.
 
 ## [observe] What to observe
 
 Indicator: In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.
 
-- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
-- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
-- **Hindi pa:** Uses an unverified plan or exceeds the role.
+- **Kaya na:** Confirms the current team, lead and channel, then gives a short handover with the time and no name or diagnosis, without prompts.
+- **Kailangan pa ng practice:** Gives the handover but needs a prompt to confirm the current lead first or to record the time.
+- **Hindi pa:** Relies on the old roster, or includes names or health details in the handover.
 
 Look for confirmation before handover, the time recorded, and no name or diagnosis. A correct self-check is not evidence of the skill.
 
@@ -61,7 +61,7 @@ Look for confirmation before handover, the time recorded, and no name or diagnos
 
 - **Kailangan pa:** re-model the handover in worksheet order; retry now with a different need.
 - **Hindi pa:** replay the worked example; practise only "what to confirm" first, then add the handover; pair with a peer rated Kaya na.
-- Re-observe at the next supervised practice or transfer task with a changed team note. Peer feedback is practice, not a staff rating.
+- Re-observe at the next supervised practice or transfer task with a changed team note. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

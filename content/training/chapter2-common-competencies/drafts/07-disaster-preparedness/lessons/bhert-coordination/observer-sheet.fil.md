@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala. |
-| Kailangan practice | Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up. |
-| Hindi pa | Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin. |
+| Kaya na | Kinukumpirma ang kasalukuyang team, lead at channel, saka nagbibigay ng maikling handover na may oras at walang pangalan o diagnosis, nang walang paalala. |
+| Kailangan pa ng practice | Nakapagbibigay ng handover ngunit kailangan ng paalala na kumpirmahin muna ang lead o itala ang oras. |
+| Hindi pa | Umaasa sa lumang roster, o may pangalan o detalye ng kalusugan sa handover. |
 
 Aktuwal na nakita/narinig: ____
 

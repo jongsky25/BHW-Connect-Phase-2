@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes action, boundary, handover and follow-up without prompts. |
-| Kailangan practice | Chooses the first action but needs a prompt for verification or follow-up. |
-| Hindi pa | Uses an unverified plan or exceeds the role. |
+| Kaya na | Marks a hazard, a support need and a capacity, names who will verify the capacity, and shows no real location, without prompts. |
+| Kailangan pa ng practice | Marks the three layers but needs a prompt to name who will verify or to leave out the household's location. |
+| Hindi pa | Treats the school as a confirmed shelter or marks a real household on the map. |
 
 Evidence observed: ____
 

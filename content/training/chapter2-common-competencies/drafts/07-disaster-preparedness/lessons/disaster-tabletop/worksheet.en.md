@@ -1,4 +1,4 @@
-# 2.7.6 — Practice: disaster tabletop
+# 2.7.6 — Practice: Practise coordinated disaster response
 
 Use fictional details only.
 

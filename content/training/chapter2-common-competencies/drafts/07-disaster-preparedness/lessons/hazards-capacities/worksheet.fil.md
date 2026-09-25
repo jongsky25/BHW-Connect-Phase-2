@@ -1,4 +1,4 @@
-# 2.7.1 — Pagsasanay: hazards capacities
+# 2.7.1 — Pagsasanay: Tukuyin ang panganib at kakayahan
 
 Kathang-isip na detalye lamang.
 

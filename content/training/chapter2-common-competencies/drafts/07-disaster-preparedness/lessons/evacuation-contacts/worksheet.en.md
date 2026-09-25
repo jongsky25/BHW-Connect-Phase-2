@@ -1,4 +1,4 @@
-# 2.7.2 — Practice: evacuation contacts
+# 2.7.2 — Practice: Confirm evacuation and warning arrangements
 
 Use fictional details only.
 

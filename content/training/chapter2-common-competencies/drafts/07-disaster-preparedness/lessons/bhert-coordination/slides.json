@@ -10,10 +10,10 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: bhert coordination",
-    "display_en": "Case: bhert coordination",
+    "display_fil": "Pagkatapos ng baha, itinatala ng BHW ang alalahanin\nat naghahatid ng impormasyon sa response team.\nAktibo pa ba ang lumang BHERT roster?",
+    "display_en": "After flooding, the BHW records concerns\nand relays information to a response team.\nIs the old BHERT roster still active?",
     "check": null,
-    "narration_fil": "Pagkatapos ng pagbaha, hinihiling sa BHW na maglista ng sintomas at maghatid ng impormasyon sa response team. Hindi malinaw kung aktibo ang lumang BHERT roster.",
+    "narration_fil": "Pagkatapos ng pagbaha, hinihiling sa BHW na itala ang mga alalahanin at maghatid ng impormasyon sa response team. Hindi malinaw kung aktibo ang lumang BHERT roster.",
     "narration_en": "After flooding, a BHW is asked to record concerns and relay information to a response team. It is unclear whether an old BHERT roster is active."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Ano ang unang ligtas na hakbang?",
-      "prompt_en": "What is the first safe step?",
+      "prompt_fil": "Maaaring nagbago na ang response team. Ano ang una mong gagawin?",
+      "prompt_en": "The response team may have changed. What do you do first?",
       "options": [
         {
-          "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
-          "en": "Assume the old information is still correct and immediately relay it to everyone."
+          "fil": "Tawagan ang nakalistang lead sa lumang roster.",
+          "en": "Call the person listed as lead on the old roster."
         },
         {
           "fil": "Kumpirmahin ang kasalukuyang lider at channel, saka mag-handover.",
           "en": "Confirm current lead and channel, then hand over."
         },
         {
-          "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
-          "en": "Decide alone without local confirmation or an official warning."
+          "fil": "Ipadala sa lahat ng nasa lumang listahan ang pangalan at sakit ng residente.",
+          "en": "Send the resident's name and illness to everyone on the old list."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
-      "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+      "feedback_fil": "1: Maaaring hindi na siya ang lead; kumpirmahin muna. 2: Kapag kumpirmado ang team at channel, makararating ang pangangailangan sa may pananagutan. 3: Maaaring luma ang listahan, at dapat pribado ang pangalan at detalye ng kalusugan.",
+      "feedback_en": "1: That person may no longer be the lead; confirm first. 2: A confirmed team and channel mean the need reaches someone responsible. 3: The list may be old, and names and health details must stay private."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,8 +81,8 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Suriin ang opisyal na plano.\nKumpirmahin ang lokal na contact.",
-    "display_en": "Check the official plan.\nConfirm the local contact.",
+    "display_fil": "Huwag ipalagay na aktibo ang BHERT.\nKumpirmahin ang kasalukuyang focal person.\nMag-handover sa tamang channel.",
+    "display_en": "Do not assume an active BHERT.\nVerify the current response focal person.\nHand over through the approved channel.",
     "check": null,
     "narration_fil": "Hindi ipinagpalagay ng BHW na may aktibong BHERT. Kinumpirma niya ang kasalukuyang response focal person at ipinasa ang pangangailangan sa tamang channel.",
     "narration_en": "The BHW does not assume an active BHERT. They verify the current response focal person and hand the need over through the approved channel."
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag manghula.\nIgalang ang tungkulin at privacy.",
-    "display_en": "Do not guess.\nRespect role and privacy.",
+    "display_fil": "Hindi team ngayon ang lumang BHERT slide.\nWalang klinikal o enforcement na papel.\nPanatilihing pribado ang sensitibong detalye.",
+    "display_en": "The old BHERT slide is not today's team.\nNo clinical or enforcement duties.\nProtect sensitive details.",
     "check": null,
     "narration_fil": "Ang lumang pandemic-era BHERT slide ay hindi patunay ng kasalukuyang team composition, isolation o contact-tracing mandate. Huwag magtalaga ng klinikal o enforcement na papel sa BHW.",
     "narration_en": "The old pandemic-era BHERT slide does not establish today’s team composition, isolation or contact-tracing mandate. Do not assign clinical or enforcement duties to a BHW."
@@ -116,25 +116,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-      "prompt_en": "What is the safe next step?",
+      "prompt_fil": "Kumpirmado na ang kasalukuyang lead. Ano ang ligtas na susunod na hakbang?",
+      "prompt_en": "You have confirmed the current lead. What is the safe next step?",
       "options": [
         {
-          "fil": "Gamitin ang lumang roster at ipalagay ang dating mandato. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-          "en": "Use an old roster and assume its former mandate. Do not ask the authority or the affected person."
+          "fil": "Gamitin ang lumang roster at ipalagay ang dating mandato.",
+          "en": "Use an old roster and assume its former mandate."
         },
         {
-          "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-          "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          "fil": "Iulat ang lugar, pangangailangan at ginawa; itala ang oras.",
+          "en": "Report location, need and action taken; record the time."
         },
         {
-          "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-          "en": "Inform the lead, record handover, and follow up."
+          "fil": "Mag-handover nang hindi inaalam kung natanggap ito ng team.",
+          "en": "Hand over without checking that the lead or team received it."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-      "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: hindi lumang roster ang batayan ng team ngayon. 2: Sa maikling handover na may oras, masusundan ang pangangailangan. 3: Kung walang pagtanggap, walang nakaaalam kung natanggap ang pangangailangan.",
+      "feedback_en": "1: This may harm or delay help: an old roster does not set today's team. 2: A short handover with the time recorded keeps the need traceable. 3: Without acknowledgement, no one knows the need was received."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes: ipa-verify ang card.\nItala ang petsa at follow-up.",
-    "display_en": "On Monday: verify the card.\nRecord date and follow-up.",
+    "display_fil": "Sa Lunes: ipa-update sa supervisor ang\nrole-and-handover card: posisyon, backup,\nchannel at petsa ng kumpirmasyon.",
+    "display_en": "On Monday: the supervisor updates the\nrole-and-handover card: position, backup,\nchannel and verification date.",
     "check": null,
     "narration_fil": "Sa Lunes, ipa-update sa supervisor ang role-and-handover card: pangalan ng posisyon, alternatibong contact, channel at petsa ng kumpirmasyon.",
     "narration_en": "On Monday, ask the supervisor to update a role-and-handover card: position, backup contact, channel and verification date."

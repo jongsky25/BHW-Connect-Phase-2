@@ -18,7 +18,7 @@ Itaas ang directory. Itanong: *"Tinatanong ng pamilya ni Nena kung kailan at saa
 
 ## [steps] Mga hakbang
 
-Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
+Sumusunod ang hakbang sa pamagat ng Read at slide.
 
 1. **Ang sitwasyon.** Itanong: *"Ano ang problema sa directory na ito?"*
 2. **Gawin at sabihin.** Ipakita ang mock advisory. Itanong: *"Saan ito galing, at kailan?"*
@@ -44,16 +44,16 @@ Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (unang ligtas na hakbang).** Tama: **"Suriin ang opisyal na update at lokal na ruta bago magpayo"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
-- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Gamitin ang lumang directory bilang tiyak na kasalukuyan…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
+- **Check 1.** Tama: **"Suriin ang opisyal na update at lokal na ruta bago magpayo"**. "Basahin sa kanila ang…": luma ang directory; "Sabihing pumunta agad sa…": maaaring hindi na kumpirmado ang dating site.
+- **Check 2.** Tama: **"Sabihin ang kumpirmado, ang source at oras nito, at ang hinihintay pa"**. "Ituring na kasalukuyan ang…": maaaring mali ang lumang impormasyon, at maaaring maantala nito ang tulong; "Magpahayag ng sariling evacuation…": huwag gumawa ng sariling evacuation order.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.
 
-- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
-- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+- **Kaya na:** Nasasabi ang source at oras ng advisory, inihihiwalay ang kumpirmado sa hinihintay pa, at nasasabi ang contact na kukumpirmahin, nang walang paalala.
+- **Kailangan pa ng practice:** Nasasabi ang kumpirmadong aksiyon ngunit kailangan ng paalala sa source at oras o sa contact na kukumpirmahin.
+- **Hindi pa:** Ipinapasa bilang totoo ang lumang directory, di-kumpirmadong ruta o sariling evacuation order.
 
 Hanapin: nasabi ang source at oras; hiwalay ang kumpirmado sa hinihintay pa. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
@@ -61,7 +61,7 @@ Hanapin: nasabi ang source at oras; hiwalay ang kumpirmado sa hinihintay pa. Hin
 
 - **Kailangan pa:** ipakitang muli ang pangungusap na "kumpirmado / hinihintay pa"; umulit ngayon, ruta naman ang tanong ng kapareha.
 - **Hindi pa:** ulitin ang halimbawang sagot; isang tanong lang ("Kailan kami aalis?"); ipares sa kasamang Kaya na.
-- Obserbahang muli sa susunod na supervised practice o transfer task, na iba ang advisory. Practice ang peer feedback, hindi rating ng staff.
+- Obserbahang muli sa susunod na supervised practice o transfer task, na iba ang advisory. Hindi rating ng staff ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

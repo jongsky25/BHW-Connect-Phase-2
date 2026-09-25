@@ -18,12 +18,12 @@ Read the case and the mock advisory. Say it is a tabletop only. Ask: *"What come
 
 ## [steps] Steps
 
-Each step matches the Read section and slide of the same name.
+Steps follow the Read and slide headings.
 
 1. **The situation.** Ask: *"Which of the four issues is most urgent for safety?"*
 2. **What to do and say.** Ask: *"Which contacts must be confirmed before we act?"*
 3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
-4. **Worked example.** Model it: safe evacuation and urgent referral first; medicine and water to the right staff; acknowledgement recorded; follow-up and relief for the volunteer. Run the practice.
+4. **Worked example.** Model the four numbered lines on the slide. Run the practice.
 5. **Scope and support.** Ask: *"What can a tabletop not replace?"*
 6. **Apply it to the situation.** Self-check 2 — let pairs answer before revealing.
 7. **On Monday, try this.** Ask: *"Which gap will you bring to the DRRM and health leads?"*
@@ -44,16 +44,16 @@ Each step matches the Read section and slide of the same name.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (first safe step).** Correct: **"Prioritize safety; link services, confirm handover and follow-up"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
-- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Leave the exhausted responder without relief…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
+- **Check 1.** Correct: **"Prioritize safety; link services, confirm handover and follow-up"**. "Start with the medicine,…": it matters, but first ask who is in danger right now; "Tell the exhausted volunteer…": a responder should rest and seek support when it is unsafe to continue.
+- **Check 2.** Correct: **"Record each acknowledgement, set follow-up and relieve the volunteer"**. "Leave the exhausted responder…": this may harm or delay help; "Use any contact you…": verify every contact and route before use.
 
 ## [observe] What to observe
 
 Indicator: In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.
 
-- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
-- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
-- **Hindi pa:** Uses an unverified plan or exceeds the role.
+- **Kaya na:** Puts safe evacuation first, gives each issue a first safe action, confirmed lead and follow-up, and arranges relief for the volunteer, without prompts.
+- **Kailangan pa ng practice:** Orders the issues but needs a prompt to record acknowledgement, set follow-up or relieve the volunteer.
+- **Hindi pa:** Uses unconfirmed contacts, skips follow-up or leaves the exhausted volunteer without relief.
 
 Look for acknowledgement recorded, only confirmed contacts, and relief for the volunteer. A correct self-check is not evidence of the skill.
 
@@ -61,7 +61,7 @@ Look for acknowledgement recorded, only confirmed contacts, and relief for the v
 
 - **Kailangan pa:** re-model the handover and acknowledgement for one card; retry the weakest item now.
 - **Hindi pa:** replay the worked example; start with two cards; pair with a peer rated Kaya na.
-- Re-observe at the next supervised practice or transfer task with a changed case. Peer feedback is practice, not a staff rating.
+- Re-observe at the next supervised practice or transfer task with a changed case. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

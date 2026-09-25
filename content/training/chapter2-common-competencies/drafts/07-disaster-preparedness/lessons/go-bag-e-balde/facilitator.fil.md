@@ -18,7 +18,7 @@ Itaas ang bag at basahin ang eksena. Itanong: *"May sanggol, may regular na gamo
 
 ## [steps] Mga hakbang
 
-Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
+Sumusunod ang hakbang sa pamagat ng Read at slide.
 
 1. **Ang sitwasyon.** Itanong: *"Ano ang naiiba sa pamilyang ito?"*
 2. **Gawin at sabihin.** Itanong: *"Ano ang uunahin? Saan ang sanggol at gamot?"*
@@ -44,16 +44,16 @@ Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (unang ligtas na hakbang).** Tama: **"Iangkop ang laman sa pamilya at suriin muli ang gamot at expiration"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
-- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Kopyahin ang listahan…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
+- **Check 1.** Tama: **"Iangkop ang laman sa pamilya at suriin muli ang gamot at expiration"**. "Sabihing bilhin lahat ng…": halimbawa lang ang listahan; "Mag-alok na ikaw mismo…": hindi pahintulot magbigay ng gamot ang listahan.
+- **Check 2.** Tama: **"Lagyan ng petsa ang susunod na check at itanong ang access sa gamot"**. "Kopyahin ang listahan nang…": maaaring makapinsala o maantala ang tulong; "Ihanda ang bag nang…": nag-e-expire ang gamit at nagbabago ang pangangailangan.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Sa fictional na kaso, pumili ng gamit para sa fictional pamilya, ipaliwanag ang dahilan at petsa ng susunod na pag-check.
 
-- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
-- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+- **Kaya na:** May dahilan sa bawat piniling gamit, itinatanong ang access sa regular na gamot at nagtatakda ng petsa ng pag-check, nang walang paalala.
+- **Kailangan pa ng practice:** Angkop ang piniling gamit ngunit kailangan ng paalala sa dahilan, sa access sa gamot o sa petsa ng pag-check.
+- **Hindi pa:** Kinokopya ang listahan nang walang pangangailangan ng sanggol o gamot, o nag-aalok na magbigay ng gamot.
 
 Hanapin: may dahilan bawat item, may petsa ng check, walang alok ng gamot. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
@@ -61,7 +61,7 @@ Hanapin: may dahilan bawat item, may petsa ng check, walang alok ng gamot. Hindi
 
 - **Kailangan pa:** ipakitang muli ang tanong sa gamot at ang petsa; umulit ngayon sa pamilyang may nakatatanda.
 - **Hindi pa:** ulitin ang halimbawang sagot; tatlong item card lang; ipares sa kasamang Kaya na.
-- Obserbahang muli sa susunod na supervised practice o transfer task, ibang pamilya. Practice ang peer feedback, hindi rating ng staff.
+- Obserbahang muli sa susunod na supervised practice o transfer task, ibang pamilya. Hindi rating ng staff ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

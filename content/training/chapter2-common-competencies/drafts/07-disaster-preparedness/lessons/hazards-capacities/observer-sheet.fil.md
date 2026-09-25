@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala. |
-| Kailangan practice | Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up. |
-| Hindi pa | Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin. |
+| Kaya na | Namamarkahan ang panganib, pangangailangan at kakayahan, nasasabi kung sino ang magpapatunay sa kakayahan, at walang totoong lokasyon, nang walang paalala. |
+| Kailangan pa ng practice | Namamarkahan ang tatlong layer ngunit kailangan ng paalala sa magpapatunay o sa pag-alis ng lokasyon ng sambahayan. |
+| Hindi pa | Itinuturing na kumpirmadong silungan ang paaralan o minamarkahan ang totoong sambahayan sa mapa. |
 
 Aktuwal na nakita/narinig: ____
 

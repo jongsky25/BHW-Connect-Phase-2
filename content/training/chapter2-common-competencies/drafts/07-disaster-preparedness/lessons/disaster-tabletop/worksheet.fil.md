@@ -1,4 +1,4 @@
-# 2.7.6 — Pagsasanay: disaster tabletop
+# 2.7.6 — Pagsasanay: Magsanay ng magkakaugnay na pagtugon
 
 Kathang-isip na detalye lamang.
 

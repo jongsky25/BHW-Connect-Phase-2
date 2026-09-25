@@ -18,7 +18,7 @@ Ilatag ang need cards; basahin ang eksena. Itanong: *"Aling serbisyo ang hahawak
 
 ## [steps] Mga hakbang
 
-Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
+Sumusunod ang hakbang sa pamagat ng Read at slide.
 
 1. **Ang sitwasyon.** Itanong: *"Aling pangangailangan ang pinakanag-aalala sa iyo?"*
 2. **Gawin at sabihin.** Banggitin ang apat na larangan. Itanong: *"Saan mapupunta ang bawat card?"*
@@ -44,16 +44,16 @@ Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (unang ligtas na hakbang).** Tama: **"Iugnay ang apat na domain sa itinalagang staff; itala ang naputol na serbisyo"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
-- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Tratuhin ang lahat bilang isang medical case…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
+- **Check 1.** Tama: **"Iugnay ang apat na domain sa itinalagang staff; itala ang naputol na serbisyo"**. "Ikaw na ang humawak…": kailangan ng WASH, nutrition at MHPSS staff ang tubig, pagkain at pagkabagabag, hindi lang medikal; "Pakuwentuhin muna nang buo…": suriin muna ang kaligtasan.
+- **Check 2.** Tama: **"Ipasa ang bawat pangangailangan sa focal person at alamin ang feedback"**. "Tratuhin ang lahat bilang…": maaaring makapinsala o maantala ang tulong; "Sabihin sa mga pamilya…": wASH staff lang ang makapagsasabing ligtas ang tubig.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.
 
-- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
-- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+- **Kaya na:** Naitutugma ang apat na pangangailangan sa tamang domain, nasasabi ang puwang ng focal person at kung paano babalik ang feedback, nang walang paalala.
+- **Kailangan pa ng practice:** Naitutugma ang domain ngunit kailangan ng paalala sa follow-up o sa pagsuri muna ng kaligtasan ng nababagabag.
+- **Hindi pa:** Nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig, nagbibigay ng therapy o pinipilit ang salaysay ng nababagabag.
 
 Hanapin: tama ang apat na larangan; walang reseta, ration, deklarasyon sa tubig o therapy. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
@@ -61,7 +61,7 @@ Hanapin: tama ang apat na larangan; walang reseta, ration, deklarasyon sa tubig 
 
 - **Kailangan pa:** ipakitang muli ang pangungusap ng follow-up; umulit ngayon, binalasang card.
 - **Hindi pa:** ulitin ang halimbawang sagot; dalawang card muna, saka ang iba; ipares sa kasamang Kaya na.
-- Obserbahang muli sa susunod na supervised practice o transfer task, bagong need card. Practice ang peer feedback, hindi rating ng staff.
+- Obserbahang muli sa susunod na supervised practice o transfer task, bagong need card. Hindi rating ng staff ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

@@ -18,7 +18,7 @@ Ipakita ang lumang roster; basahin ang eksena. Itanong: *"Paano natin malalaman 
 
 ## [steps] Mga hakbang
 
-Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
+Sumusunod ang hakbang sa pamagat ng Read at slide.
 
 1. **Ang sitwasyon.** Itanong: *"Ano ang hinihiling sa BHW, at ano ang hindi malinaw?"*
 2. **Gawin at sabihin.** Itanong: *"Ano ang pinakamaikling dapat sabihin sa handover?"* Ilista sa pisara.
@@ -44,16 +44,16 @@ Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (unang ligtas na hakbang).** Tama: **"Kumpirmahin ang kasalukuyang lider at channel, saka mag-handover"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
-- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Gamitin ang lumang roster…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
+- **Check 1.** Tama: **"Kumpirmahin ang kasalukuyang lider at channel, saka mag-handover"**. "Tawagan ang nakalistang lead…": maaaring hindi na siya ang lead; "Ipadala sa lahat ng…": maaaring luma ang listahan, at dapat pribado ang pangalan at detalye ng kalusugan.
+- **Check 2.** Tama: **"Iulat ang lugar, pangangailangan at ginawa; itala ang oras"**. "Gamitin ang lumang roster…": maaaring makapinsala o maantala ang tulong; "Mag-handover nang hindi inaalam…": kung walang pagtanggap, walang nakaaalam kung natanggap ang pangangailangan.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Sa fictional na kaso, sa mock team change, tukuyin ang dapat kumpirmahin at magbigay ng maikling handover nang walang personal na detalye.
 
-- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
-- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+- **Kaya na:** Kinukumpirma ang kasalukuyang team, lead at channel, saka nagbibigay ng maikling handover na may oras at walang pangalan o diagnosis, nang walang paalala.
+- **Kailangan pa ng practice:** Nakapagbibigay ng handover ngunit kailangan ng paalala na kumpirmahin muna ang lead o itala ang oras.
+- **Hindi pa:** Umaasa sa lumang roster, o may pangalan o detalye ng kalusugan sa handover.
 
 Hanapin: nagkumpirma bago mag-handover, naitala ang oras, walang pangalan o diagnosis. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
@@ -61,7 +61,7 @@ Hanapin: nagkumpirma bago mag-handover, naitala ang oras, walang pangalan o diag
 
 - **Kailangan pa:** ipakitang muli ang handover ayon sa ayos ng worksheet; umulit ngayon, ibang pangangailangan.
 - **Hindi pa:** ulitin ang halimbawang sagot; "ano ang kukumpirmahin" muna, saka idagdag ang handover; ipares sa kasamang Kaya na.
-- Obserbahang muli sa susunod na supervised practice o transfer task, ibang abiso ng team. Practice ang peer feedback, hindi rating ng staff.
+- Obserbahang muli sa susunod na supervised practice o transfer task, ibang abiso ng team. Hindi rating ng staff ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

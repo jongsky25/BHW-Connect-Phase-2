@@ -18,12 +18,12 @@ Basahin ang kaso at mock advisory. Sabihing tabletop lamang ito. Itanong: *"Ano 
 
 ## [steps] Mga hakbang
 
-Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
+Sumusunod ang hakbang sa pamagat ng Read at slide.
 
 1. **Ang sitwasyon.** Itanong: *"Alin ang pinakaapurahan para sa kaligtasan?"*
 2. **Gawin at sabihin.** Itanong: *"Aling contact ang dapat kumpirmahin bago kumilos?"*
 3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapares.
-4. **Halimbawang sagot.** Imodelo: unahin ang ligtas na paglikas at agarang referral; gamot at tubig sa tamang staff; itala ang pagtanggap; follow-up at kapalit sa volunteer. Patakbuhin ang practice.
+4. **Halimbawang sagot.** Imodelo ang apat na linya sa slide. Patakbuhin ang practice.
 5. **Saklaw at paghingi ng tulong.** Itanong: *"Ano ang hindi kayang palitan ng tabletop?"*
 6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
 7. **Sa Lunes, gawin ito.** Itanong: *"Aling puwang ang dadalhin mo sa DRRM at health leads?"*
@@ -44,16 +44,16 @@ Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (unang ligtas na hakbang).** Tama: **"Unahin ang kaligtasan; iugnay ang serbisyo, kumpirmahin ang handover at follow-up"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
-- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Iwanang walang kapalit ang pagod na responder…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
+- **Check 1.** Tama: **"Unahin ang kaligtasan; iugnay ang serbisyo, kumpirmahin ang handover at follow-up"**. "Unahin ang gamot, dahil…": mahalaga ito, pero unahin kung sino ang nasa panganib ngayon; "Sabihan ang pagod na…": dapat magpahinga at humingi ng suporta ang responder kung hindi ligtas magpatuloy.
+- **Check 2.** Tama: **"Itala ang bawat pagtanggap, magtakda ng follow-up at kapalit ng volunteer"**. "Iwanang walang kapalit ang…": maaaring makapinsala o maantala ang tulong; "Gamitin ang anumang contact…": kumpirmahin ang lahat ng contact at ruta bago gamitin.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Sa fictional na kaso, sa 10 minutong tabletop, ayusin ang prayoridad, handover, continuity, follow-up at suporta sa responder.
 
-- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
-- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+- **Kaya na:** Inuuna ang ligtas na paglikas, may unang ligtas na aksiyon, kumpirmadong lead at follow-up ang bawat isyu, at may kapalit ang volunteer, nang walang paalala.
+- **Kailangan pa ng practice:** Naaayos ang mga isyu ngunit kailangan ng paalala sa pagtatala ng pagtanggap, follow-up o kapalit ng volunteer.
+- **Hindi pa:** Gumagamit ng di-kumpirmadong contact, walang follow-up o iniiwang walang kapalit ang pagod na volunteer.
 
 Hanapin: naitala ang pagtanggap, kumpirmadong contact lang, may kapalit ang volunteer. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
@@ -61,7 +61,7 @@ Hanapin: naitala ang pagtanggap, kumpirmadong contact lang, may kapalit ang volu
 
 - **Kailangan pa:** ipakitang muli ang handover at pagtanggap; ulitin ngayon ang pinakamahinang bahagi.
 - **Hindi pa:** ulitin ang halimbawang sagot; dalawang card muna; ipares sa kasamang Kaya na.
-- Obserbahang muli sa susunod na supervised practice o transfer task, ibang kaso. Practice ang peer feedback, hindi rating ng staff.
+- Obserbahang muli sa susunod na supervised practice o transfer task, ibang kaso. Hindi rating ng staff ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala. |
-| Kailangan practice | Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up. |
-| Hindi pa | Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin. |
+| Kaya na | Nasasabi ang source at oras ng advisory, inihihiwalay ang kumpirmado sa hinihintay pa, at nasasabi ang contact na kukumpirmahin, nang walang paalala. |
+| Kailangan pa ng practice | Nasasabi ang kumpirmadong aksiyon ngunit kailangan ng paalala sa source at oras o sa contact na kukumpirmahin. |
+| Hindi pa | Ipinapasa bilang totoo ang lumang directory, di-kumpirmadong ruta o sariling evacuation order. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -21,8 +21,8 @@
         "c2.drrm.go-bag-e-balde.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: go bag e balde",
-      "takeaway_en": "Case: go bag e balde",
+      "takeaway_fil": "Pamilya ni Pio: may sanggol, regular na gamot, maliit na badyet at magaan na lalagyan.",
+      "takeaway_en": "Pio's family: an infant, regular medicine, a small budget and a light container.",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.drrm.go-bag-e-balde.risk"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
-      "takeaway_en": "This ties action to a verified plan and scope.",
+      "takeaway_fil": "Iayon ang bag sa pamilyang ito at suriin ang gamot at expiration.",
+      "takeaway_en": "Tailor the bag to this family and check medicines and expiry.",
       "check": {
-        "prompt_fil": "Ano ang unang ligtas na hakbang?",
-        "prompt_en": "What is the first safe step?",
+        "prompt_fil": "Tanong ng pamilya ni Pio kung ano ang ilalagay. Ano ang una mong gagawin?",
+        "prompt_en": "Pio's family asks what to pack. What do you do first?",
         "options": [
           {
-            "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
-            "en": "Assume the old information is still correct and immediately relay it to everyone."
+            "fil": "Sabihing bilhin lahat ng nasa naka-print na listahan, anuman ang gastos.",
+            "en": "Tell them to buy everything on a printed list, whatever the cost."
           },
           {
             "fil": "Iangkop ang laman sa pamilya at suriin muli ang gamot at expiration.",
             "en": "Tailor contents to the family and recheck medicines and expiry."
           },
           {
-            "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
-            "en": "Decide alone without local confirmation or an official warning."
+            "fil": "Mag-alok na ikaw mismo ang magbibigay ng dagdag na gamot para sa bag.",
+            "en": "Offer to supply extra medicine for the bag yourself."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
-        "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+        "feedback_fil": "1: Halimbawa lang ang listahan; mahalaga ang badyet at ang kaya nilang dalhin. 2: Dahil sa sanggol, regular na gamot at expiration, iba ang bag ng pamilyang ito. 3: Hindi pahintulot magbigay ng gamot ang listahan; itanong kung kailangan nila ng tulong sa pagkuha nito.",
+        "feedback_en": "1: A list is an example; their budget and what they can carry matter. 2: The infant, the regular medicine and expiry make this family's bag different. 3: The list is not permission to dispense medicine; ask if they need help getting it."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.drrm.go-bag-e-balde.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sa fictional na kaso, pumili ng gamit para sa fictional pamilya, ipaliwanag ang dahilan at petsa ng susunod na pag-check.",
-      "takeaway_en": "In a fictional case, select items for the fictional family, explain why, and set a date to recheck.",
+      "takeaway_fil": "Unahin ang mahalaga, lagyan ng petsa ang susunod na check, at itanong ang access sa gamot.",
+      "takeaway_en": "Prioritize essentials, date the next check, and ask about access to medicine.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.drrm.go-bag-e-balde.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Iayon ang halimbawa sa pamilya; huwag magbigay ng gamot.",
+      "takeaway_en": "Adapt the examples to the family; do not dispense medicine.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.drrm.go-bag-e-balde.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-      "takeaway_en": "This establishes clear ownership and next action.",
+      "takeaway_fil": "Lagyan ng petsa ang susunod na check at itanong ang access sa regular na gamot.",
+      "takeaway_en": "Date the next check and ask about access to regular medicine.",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Nakapili na ng gamit ang pamilya. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "The family has chosen items. What is the safe next step?",
         "options": [
           {
-            "fil": "Kopyahin ang listahan nang hindi isinasaalang-alang ang sanggol o regular na gamot. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Copy a list without considering the infant or regular medicine. Do not ask the authority or the affected person."
+            "fil": "Kopyahin ang listahan nang hindi isinasaalang-alang ang sanggol o regular na gamot.",
+            "en": "Copy a list without considering the infant or regular medicine."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Lagyan ng petsa ang susunod na check at itanong ang access sa gamot.",
+            "en": "Date the next check and ask about access to regular medicine."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Ihanda ang bag nang isang beses at huwag na itong suriin muli.",
+            "en": "Pack the bag once and never check it again after that."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: hindi saklaw ng kinopyang listahan ang kailangan ng pamilyang ito. 2: Pinananatiling handa ng petsa ng check ang bag, at nagbubukas ng tulong ang tanong. 3: Nag-e-expire ang gamit at nagbabago ang pangangailangan; kailangan ng petsa ng pag-check.",
+        "feedback_en": "1: This may harm or delay help: a copied list misses what this family needs. 2: A dated recheck keeps the bag current, and the question opens the way to help. 3: Items expire and needs change; the bag needs a set recheck date."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.drrm.go-bag-e-balde.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Ipasuri ang mock bag checklist; itanong ang accessibility at resupply.",
+      "takeaway_en": "Review a mock bag checklist; ask about accessibility and resupply.",
       "check": null
     }
   ],

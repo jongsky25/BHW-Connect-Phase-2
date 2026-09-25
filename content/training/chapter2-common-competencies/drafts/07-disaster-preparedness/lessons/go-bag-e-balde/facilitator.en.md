@@ -18,7 +18,7 @@ Hold up the bag and read the scene. Ask: *"An infant, regular medicine, a small 
 
 ## [steps] Steps
 
-Each step matches the Read section and slide of the same name.
+Steps follow the Read and slide headings.
 
 1. **The situation.** Ask: *"What makes this family different?"*
 2. **What to do and say.** Ask: *"Which basics come first, and where do the infant and the medicine fit?"*
@@ -44,16 +44,16 @@ Each step matches the Read section and slide of the same name.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (first safe step).** Correct: **"Tailor contents to the family and recheck medicines and expiry"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
-- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Copy a list…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
+- **Check 1.** Correct: **"Tailor contents to the family and recheck medicines and expiry"**. "Tell them to buy…": a list is an example; "Offer to supply extra…": the list is not permission to dispense medicine.
+- **Check 2.** Correct: **"Date the next check and ask about access to regular medicine"**. "Copy a list without…": this may harm or delay help; "Pack the bag once…": items expire and needs change.
 
 ## [observe] What to observe
 
 Indicator: In a fictional case, select items for the fictional family, explain why, and set a date to recheck.
 
-- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
-- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
-- **Hindi pa:** Uses an unverified plan or exceeds the role.
+- **Kaya na:** Gives a reason for each chosen item, asks about access to regular medicine and sets a recheck date, without prompts.
+- **Kailangan pa ng practice:** Chooses suitable items but needs a prompt to give reasons, ask about medicine access or set a recheck date.
+- **Hindi pa:** Copies a list without the infant's or medicine needs, or offers to supply medicine.
 
 Look for a reason per item, a recheck date, no offer of medicine. A correct self-check is not evidence of the skill.
 
@@ -61,7 +61,7 @@ Look for a reason per item, a recheck date, no offer of medicine. A correct self
 
 - **Kailangan pa:** re-model the medicine-access question and the recheck date; retry now with a family that has an older adult.
 - **Hindi pa:** replay the worked example; limit to three item cards; pair with a peer rated Kaya na.
-- Re-observe at the next supervised practice or transfer task with a changed family. Peer feedback is practice, not a staff rating.
+- Re-observe at the next supervised practice or transfer task with a changed family. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

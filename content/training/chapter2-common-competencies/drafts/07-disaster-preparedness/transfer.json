@@ -18,145 +18,145 @@
     {
       "lesson_key": "hazards-capacities",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Tapos na ang mapa ng pagsasanay. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "The practice map is done. What is the safe next step?",
         "options": [
           {
-            "fil": "Sabihing bukas ang paaralan kahit hindi pa nasuri. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Say the school is open without checking. Do not ask the authority or the affected person."
+            "fil": "Sabihing bukas ang paaralan kahit hindi pa nasuri ng sinuman.",
+            "en": "Say the school is open without checking with anyone."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Ipasuri sa DRRM office at health team ang mapa bago gamitin.",
+            "en": "Ask the DRRM office and health team to verify the map before use."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Ipaskil ang mapa ng pagsasanay bilang opisyal na evacuation order ng barangay.",
+            "en": "Post the practice map as the barangay's official evacuation order."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: hindi pa kumpirmado ang paaralan. 2: Beripikadong mapa lang ang dapat gumabay sa tao; itala kung sino at kailan nagpatunay. 3: Hindi opisyal na hazard map o evacuation order ang mapa ng pagsasanay.",
+        "feedback_en": "1: This may harm or delay help: the school is still not confirmed. 2: Only a verified map should guide people; record who verified it and when. 3: The practice map is not an official hazard map or evacuation order."
       }
     },
     {
       "lesson_key": "evacuation-contacts",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Bahagi pa lang ng advisory ang kumpirmado. Ano ang sasabihin mo sa pamilya ni Nena?",
+        "prompt_en": "Only part of the advisory is confirmed. What do you tell Nena's family?",
         "options": [
           {
-            "fil": "Gamitin ang lumang directory bilang tiyak na kasalukuyan. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Treat an old directory as current. Do not ask the authority or the affected person."
+            "fil": "Ituring na kasalukuyan ang lumang directory at ibigay ang mga numero nito.",
+            "en": "Treat the old directory as current and give them its numbers."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Sabihin ang kumpirmado, ang source at oras nito, at ang hinihintay pa.",
+            "en": "Say what is confirmed, its source and time, and what is pending."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Magpahayag ng sariling evacuation order para maaga silang umalis.",
+            "en": "Announce an evacuation order yourself so that they leave early."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring mali ang lumang impormasyon, at maaaring maantala nito ang tulong. 2: Ipaabot lamang ang beripikadong mensahe, kasama ang oras at source. 3: Huwag gumawa ng sariling evacuation order; sundin ang lokal na awtoridad.",
+        "feedback_en": "1: Old information may be wrong, and wrong information can delay help. 2: Relay only the verified message, with its time and source. 3: Do not invent an evacuation order; follow the local authority."
       }
     },
     {
       "lesson_key": "go-bag-e-balde",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Nakapili na ng gamit ang pamilya. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "The family has chosen items. What is the safe next step?",
         "options": [
           {
-            "fil": "Kopyahin ang listahan nang hindi isinasaalang-alang ang sanggol o regular na gamot. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Copy a list without considering the infant or regular medicine. Do not ask the authority or the affected person."
+            "fil": "Kopyahin ang listahan nang hindi isinasaalang-alang ang sanggol o regular na gamot.",
+            "en": "Copy a list without considering the infant or regular medicine."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Lagyan ng petsa ang susunod na check at itanong ang access sa gamot.",
+            "en": "Date the next check and ask about access to regular medicine."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Ihanda ang bag nang isang beses at huwag na itong suriin muli.",
+            "en": "Pack the bag once and never check it again after that."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: hindi saklaw ng kinopyang listahan ang kailangan ng pamilyang ito. 2: Pinananatiling handa ng petsa ng check ang bag, at nagbubukas ng tulong ang tanong. 3: Nag-e-expire ang gamit at nagbabago ang pangangailangan; kailangan ng petsa ng pag-check.",
+        "feedback_en": "1: This may harm or delay help: a copied list misses what this family needs. 2: A dated recheck keeps the bag current, and the question opens the way to help. 3: Items expire and needs change; the bag needs a set recheck date."
       }
     },
     {
       "lesson_key": "bhert-coordination",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Kumpirmado na ang kasalukuyang lead. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "You have confirmed the current lead. What is the safe next step?",
         "options": [
           {
-            "fil": "Gamitin ang lumang roster at ipalagay ang dating mandato. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Use an old roster and assume its former mandate. Do not ask the authority or the affected person."
+            "fil": "Gamitin ang lumang roster at ipalagay ang dating mandato.",
+            "en": "Use an old roster and assume its former mandate."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Iulat ang lugar, pangangailangan at ginawa; itala ang oras.",
+            "en": "Report location, need and action taken; record the time."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Mag-handover nang hindi inaalam kung natanggap ito ng team.",
+            "en": "Hand over without checking that the lead or team received it."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: hindi lumang roster ang batayan ng team ngayon. 2: Sa maikling handover na may oras, masusundan ang pangangailangan. 3: Kung walang pagtanggap, walang nakaaalam kung natanggap ang pangangailangan.",
+        "feedback_en": "1: This may harm or delay help: an old roster does not set today's team. 2: A short handover with the time recorded keeps the need traceable. 3: Without acknowledgement, no one knows the need was received."
       }
     },
     {
       "lesson_key": "essential-health-packages",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Naipangkat mo na ang mga pangangailangan. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "You have sorted the needs. What is the safe next step?",
         "options": [
           {
-            "fil": "Tratuhin ang lahat bilang isang medical case at magbigay ng sariling therapy. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Treat every need as a single medical case and provide therapy independently. Do not ask the authority or the affected person."
+            "fil": "Tratuhin ang lahat bilang isang medical case at magbigay ng sariling therapy.",
+            "en": "Treat every need as a single medical case and give therapy yourself."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Ipasa ang bawat pangangailangan sa focal person at alamin ang feedback.",
+            "en": "Hand each need to its focal person and confirm how feedback returns."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Sabihin sa mga pamilya na ayos ang tubig para hindi na sila mag-alala.",
+            "en": "Tell families the water is fine so that they stop worrying."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: labas sa tungkulin ng BHW ang therapy at pagrereseta. 2: Sa referral na may daan ng feedback, posible ang follow-up. 3: WASH staff lang ang makapagsasabing ligtas ang tubig; iulat sa kanila ang alalahanin.",
+        "feedback_en": "1: This may harm or delay help: therapy and prescribing are outside the BHW role. 2: Referral with a feedback route makes follow-up possible. 3: Only WASH staff can say the water is safe; report the concern to them."
       }
     },
     {
       "lesson_key": "disaster-tabletop",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "May lead na ang bawat isyu. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "Each issue now has a lead. What is the safe next step?",
         "options": [
           {
-            "fil": "Iwanang walang kapalit ang pagod na responder at walang follow-up ang referral. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Leave the exhausted responder without relief and the referral without follow-up. Do not ask the authority or the affected person."
+            "fil": "Iwanang walang kapalit ang pagod na responder at walang follow-up ang referral.",
+            "en": "Leave the exhausted responder without relief and the referral without follow-up."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Itala ang bawat pagtanggap, magtakda ng follow-up at kapalit ng volunteer.",
+            "en": "Record each acknowledgement, set follow-up and relieve the volunteer."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Gamitin ang anumang contact na naaalala mo kahit hindi ito kumpirmado.",
+            "en": "Use any contact you remember, even if it is not confirmed."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: kailangan ng follow-up ang volunteer at ang referral. 2: Sa naitalang pagtanggap at follow-up, may may-ari ang bawat isyu, kasama ang pag-aalaga sa responder. 3: Kumpirmahin ang lahat ng contact at ruta bago gamitin.",
+        "feedback_en": "1: This may harm or delay help: the volunteer and the referral both need follow-up. 2: Recorded acknowledgement and follow-up keep every issue owned, including responder care. 3: Verify every contact and route before use."
       }
     }
   ],

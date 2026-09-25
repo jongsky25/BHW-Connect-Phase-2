@@ -1,4 +1,4 @@
-# 2.7.1 — Practice: hazards capacities
+# 2.7.1 — Practice: Map hazards and capacities
 
 Use fictional details only.
 

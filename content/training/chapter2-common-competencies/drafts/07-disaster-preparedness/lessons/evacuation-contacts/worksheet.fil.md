@@ -1,4 +1,4 @@
-# 2.7.2 — Pagsasanay: evacuation contacts
+# 2.7.2 — Pagsasanay: Kumpirmahin ang evacuation at babala
 
 Kathang-isip na detalye lamang.
 
