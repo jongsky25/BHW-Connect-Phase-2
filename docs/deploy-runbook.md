@@ -92,7 +92,7 @@ sibling RPCs.
 | Project | `inc29_course_progress_reset` | `inc29_revoke_anon_execute` |
 |---|---|---|
 | `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925001959` | applied as `20260925002056` |
-| pilot (`ltzicxyefizxoqhfuuzc`) | **pending owner confirmation** | **pending owner confirmation** |
+| pilot (`ltzicxyefizxoqhfuuzc`) | applied as `20260925002450` (owner-confirmed) | applied as `20260925002458` |
 
 Verification query (run on each project after applying):
 
@@ -119,6 +119,14 @@ after both migrations: `anon_security_definer_function_executable` 26 → 26,
 `authenticated_security_definer_function_executable` 91 → 92 (the new admin
 RPC, intended; its own role check gates it like the other 91). All other
 lints unchanged.
+
+Result on the pilot, after the owner confirmed: the same values matched, and
+`migration_rows = 20260925002450:inc29_course_progress_reset,
+20260925002458:inc29_revoke_anon_execute`. Security advisor before, then
+after: anon lint 27 → 27, authenticated lint 97 → 98 (the same intended
+RPC). All other lints unchanged. The pilot's baseline counts differ from the
+CI project's (27/97 vs 26/91). That drift predates this change and was not
+investigated here.
 
 Separately, `20260811000000_inc27_training_audio.sql` is also absent by name
 from both histories. It was not investigated here and needs the same check.
