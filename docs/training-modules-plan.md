@@ -1589,6 +1589,19 @@ ran — exactly the plan's own requirement.
   actual character count against Azure's free tier per the plan's own "cost
   check before building" line, is owed before this is treated as verified
   end-to-end, not merely code-complete.
+- **Gemini option (25 Sep 2026)**: `training:tts -- --provider gemini`
+  (`scripts/lib/tts-providers/gemini.mjs`, `GEMINI_API_KEY`) renders via
+  Gemini TTS (`gemini-3.8-flash-tts`, voice Kore; Filipino is a listed
+  language), added because Azure signup was blocked. Gemini returns no
+  timings, so each zone is its own request and the clips are joined with a
+  300ms gap — timings are measured clip lengths — then encoded to 48 kbps
+  MP3. No fallback in this mode (one module, one voice); a re-run resumes.
+  The voice id in `content_hash` includes the model, so switching provider
+  re-renders. Module 1 is 225 requests. `--sample out.mp3` writes one
+  Filipino section locally to audition the voice first. Sends only
+  published lesson text (`admin_authored`, Tier B permitted by
+  `free-ai-leverage-plan.md`) directly rather than via `callProvider()`,
+  with a scoped lint exception saying so. Not yet run against the live API.
 - **Migration application to the pilot**: this session had the loader's
   admin credentials (`KB_LOADER_USERNAME`/`PASSWORD`/`KB_LOADER_ANON_KEY`)
   pre-configured, and `scripts/tts-render.mjs --project ltzicxyefizxoqhfuuzc`
@@ -1688,10 +1701,14 @@ rendered against the pilot (an `AZURE_SPEECH_KEY`, or the edge-tts
 fallback, run via `training:tts --apply`). Until then the scene renders in
 its fully-revealed static state everywhere, which is also its correct
 `prefers-reduced-motion` behaviour — nothing is broken, the build-up
-just has nothing to build up from yet. No e2e coverage added this round
-(would need real audio in the shared `bhw-connect-e2e` project to be
-meaningful); covered instead by allowlist, pure-function, and
-`@testing-library/react` DOM-effect tests.
+just has nothing to build up from yet. Beyond the allowlist, pure-function,
+and `@testing-library/react` DOM-effect tests, `e2e/lesson-narration.spec.ts`
+(25 Sep 2026) covers the build-up in a real browser: a fixture course with a
+three-step SVG and a runtime-generated 6s silent WAV whose timings walk
+heading → three body sentences, asserting each step reveals on its sentence
+and that `prefers-reduced-motion` keeps all steps shown during playback.
+Status on 25 Sep 2026: the pilot already has `course_module_audio` (0 rows);
+a dry run for Module 1 plans 24 sections / 21,485 chars.
 
 **Tier 2 (Remotion) — pipeline installed and verified, 20 Sep 2026, no content queued through it yet.**
 The official skills (`npx skills add remotion-dev/skills`) are installed

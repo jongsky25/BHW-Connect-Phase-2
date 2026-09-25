@@ -298,6 +298,21 @@ describe("LessonVisual — animated scene reveal (INC-28)", () => {
     ).toHaveAttribute("data-revealed", "false");
   });
 
+  // React 19 re-assigns innerHTML whenever the dangerouslySetInnerHTML
+  // object's identity changes, which would wipe data-revealed on any parent
+  // re-render while the effect (keyed on bodyIndex/playing) never re-runs.
+  it("keeps step reveal state across a re-render with unchanged progress", () => {
+    const progress = { bodyIndex: 1, playing: true };
+    const { rerender } = render(
+      <LessonVisual visual={sceneVisual} locale="en" narrationProgress={progress} />,
+    );
+    rerender(
+      <LessonVisual visual={{ ...sceneVisual }} locale="en" narrationProgress={{ ...progress }} />,
+    );
+    expect(document.querySelector('[data-scene-step="1"]')).toHaveAttribute("data-revealed", "true");
+    expect(document.querySelector('[data-scene-step="2"]')).toHaveAttribute("data-revealed", "false");
+  });
+
   it("reveals every step once prefers-reduced-motion is set, regardless of bodyIndex", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).matchMedia = vi.fn().mockImplementation((query: string) => ({

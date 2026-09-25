@@ -181,6 +181,177 @@ async function setUpNarratedCourse(
   return courseId;
 }
 
+// A silent 8kHz 8-bit mono WAV of the given length, built at runtime: the
+// scene tests need playback long enough to observe each build-up stage,
+// which a hand-inlined literal like SILENT_WAV_DATA_URI would make huge.
+function silentWavDataUri(seconds: number): string {
+  const sampleRate = 8000;
+  const dataSize = Math.round(sampleRate * seconds);
+  const wav = Buffer.alloc(44 + dataSize, 128);
+  wav.write("RIFF", 0, "ascii");
+  wav.writeUInt32LE(36 + dataSize, 4);
+  wav.write("WAVEfmt ", 8, "ascii");
+  wav.writeUInt32LE(16, 16);
+  wav.writeUInt16LE(1, 20);
+  wav.writeUInt16LE(1, 22);
+  wav.writeUInt32LE(sampleRate, 24);
+  wav.writeUInt32LE(sampleRate, 28);
+  wav.writeUInt16LE(1, 32);
+  wav.writeUInt16LE(8, 34);
+  wav.write("data", 36, "ascii");
+  wav.writeUInt32LE(dataSize, 40);
+  return `data:audio/wav;base64,${wav.toString("base64")}`;
+}
+
+const SCENE_SVG = `<svg viewBox="0 0 300 100">
+  <title>Three-step scene</title>
+  <g data-scene-step="1"><rect x="10" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="50" y="55" text-anchor="middle">One</text></g>
+  <g data-scene-step="2"><rect x="110" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="150" y="55" text-anchor="middle">Two</text></g>
+  <g data-scene-step="3"><rect x="210" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="250" y="55" text-anchor="middle">Three</text></g>
+</svg>`;
+
+// INC-28: one section with four body sentences and a three-step SVG. Step
+// N reveals once body sentence N (0-based) starts, and step numbers must be
+// >= 1 (svg-allowlist rejects the whole SVG otherwise), so sentence 0 shows
+// nothing and sentences 1-3 unlock steps 1-3. Each zone gets 1.5s of the
+// silent clip so every build-up stage is on screen long enough to observe.
+async function setUpSceneCourse(
+  request: import("@playwright/test").APIRequestContext,
+  adminToken: string,
+  marker: string,
+): Promise<string> {
+  const headers = {
+    apikey: anonKey(),
+    Authorization: `Bearer ${adminToken}`,
+    "Content-Type": "application/json",
+  };
+
+  const createResponse = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_course_create`, {
+    headers,
+    data: {
+      p_org_unit_id: BARANGAY_BATONG_MALAKE_ID,
+      p_title_fil: `Kurso eksena ${marker}`,
+      p_title_en: `Scene course ${marker}`,
+      p_description_fil: "",
+      p_description_en: "",
+      p_quiz_passing_percent: 80,
+      p_quiz_max_attempts: 3,
+      p_modules: [
+        {
+          type: "text",
+          title_fil: `Modyul ${marker}`,
+          title_en: `Module ${marker}`,
+          body_fil: "",
+          body_en: "",
+        },
+      ],
+    },
+  });
+  const [{ course_id: courseId }] = (await createResponse.json()) as Array<{ course_id: string }>;
+
+  const modulesResponse = await request.get(
+    `${supabaseUrl()}/rest/v1/course_modules?course_id=eq.${courseId}&select=id`,
+    { headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}` } },
+  );
+  const [{ id: moduleId }] = (await modulesResponse.json()) as Array<{ id: string }>;
+
+  await request.patch(`${supabaseUrl()}/rest/v1/course_modules?id=eq.${moduleId}`, {
+    headers,
+    data: {
+      objectives_fil: ["Unang layunin"],
+      objectives_en: ["First objective"],
+      lesson: {
+        sections: [
+          {
+            kind: "concept",
+            tier: "core",
+            heading_fil: "Eksena",
+            heading_en: "Scene",
+            body_fil: "Simula. Una. Pangalawa. Pangatlo.",
+            body_en: "Intro. First part. Second part. Third part.",
+            visual_position: 0,
+            takeaway_fil: "",
+            takeaway_en: "",
+            check: null,
+          },
+        ],
+      },
+    },
+  });
+
+  const visualResponse = await request.post(`${supabaseUrl()}/rest/v1/course_module_visuals`, {
+    headers,
+    data: {
+      module_id: moduleId,
+      position: 0,
+      primitive: "chain",
+      svg_markup: SCENE_SVG,
+      caption_fil: "Tatlong hakbang.",
+      caption_en: "Three steps.",
+      alt_text_fil: "Tatlong kahon na magkakasunod.",
+      alt_text_en: "Three boxes in a row.",
+    },
+  });
+  expect(visualResponse.ok(), await visualResponse.text()).toBe(true);
+
+  await request.post(`${supabaseUrl()}/rest/v1/course_module_audio`, {
+    headers,
+    data: {
+      module_id: moduleId,
+      section_index: 0,
+      language: "en",
+      audio_url: silentWavDataUri(7.5),
+      format: "mp3",
+      duration_seconds: 7.5,
+      content_hash: "e2e-scene-fixture",
+      timings: [
+        { zone: "heading", index: 0, text: "Scene", start_ms: 0, end_ms: 1500 },
+        { zone: "body", index: 0, text: "Intro.", start_ms: 1500, end_ms: 3000 },
+        { zone: "body", index: 1, text: "First part.", start_ms: 3000, end_ms: 4500 },
+        { zone: "body", index: 2, text: "Second part.", start_ms: 4500, end_ms: 6000 },
+        { zone: "body", index: 3, text: "Third part.", start_ms: 6000, end_ms: 7500 },
+      ],
+    },
+  });
+
+  await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_course_set_status`, {
+    headers,
+    data: { p_course_id: courseId, p_status: "published" },
+  });
+
+  return courseId;
+}
+
+// A freshly onboarded BHW defaults to language='fil' (baseline migration),
+// but the fixtures' course_module_audio rows and these assertions are
+// English — switch the BHW's own language so `locale` matches what
+// findAudioForSection looks up ("en") and what's actually on screen.
+async function onboardEnglishBhw(
+  page: import("@playwright/test").Page,
+  request: import("@playwright/test").APIRequestContext,
+  adminToken: string,
+): Promise<void> {
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  const newPassword = "Fresh-Narration-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_update_settings`, {
+    headers: {
+      apikey: anonKey(),
+      Authorization: `Bearer ${userToken}`,
+      "Content-Type": "application/json",
+    },
+    data: { p_language: "en", p_theme: "light", p_font_scale: "md", p_high_contrast: false },
+  });
+}
+
+async function sceneStepStates(page: import("@playwright/test").Page): Promise<Array<string | null>> {
+  return page
+    .locator("[data-scene-step]")
+    .evaluateAll((els) => els.map((el) => el.getAttribute("data-revealed")));
+}
+
 test("a section with pre-rendered audio shows a working play control; a section without one renders plainly", async ({
   page,
   request,
@@ -194,24 +365,7 @@ test("a section with pre-rendered audio shows a working play control; a section 
 
   const marker = `e2e.narration.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
   const courseId = await setUpNarratedCourse(request, adminToken, marker);
-  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
-
-  const newPassword = "Fresh-Narration-2026";
-  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
-
-  // A freshly onboarded BHW defaults to language='fil' (baseline migration),
-  // but the fixture's course_module_audio row and this spec's assertions
-  // are English — switch the BHW's own language so `locale` matches what
-  // findAudioForSection looks up ("en") and what's actually on screen.
-  const userToken = await getAccessToken(request, fresh.username, newPassword);
-  await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_update_settings`, {
-    headers: {
-      apikey: anonKey(),
-      Authorization: `Bearer ${userToken}`,
-      "Content-Type": "application/json",
-    },
-    data: { p_language: "en", p_theme: "light", p_font_scale: "md", p_high_contrast: false },
-  });
+  await onboardEnglishBhw(page, request, adminToken);
 
   await page.goto(`/courses/${courseId}`);
 
@@ -233,4 +387,71 @@ test("a section with pre-rendered audio shows a working play control; a section 
 
   const scan = await new AxeBuilder({ page }).include("main").analyze();
   expect(scan.violations, "axe violations with the narration player present").toEqual([]);
+});
+
+test("an animated scene builds up step by step as the narration reaches each sentence", async ({
+  page,
+  request,
+}) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+
+  test.skip(
+    !(await courseModuleAudioTableExists(request, adminToken)),
+    "INC-27's migration (course_module_audio) isn't applied to this Supabase project yet — see docs/deploy-runbook.md's migration-application step",
+  );
+
+  const marker = `e2e.scene.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
+  const courseId = await setUpSceneCourse(request, adminToken, marker);
+  await onboardEnglishBhw(page, request, adminToken);
+
+  await page.goto(`/courses/${courseId}`);
+  await expect(page.locator("[data-scene-step]")).toHaveCount(3);
+
+  // Before play the finished picture shows, never a half-built one.
+  await expect.poll(() => sceneStepStates(page)).toEqual(["true", "true", "true"]);
+
+  await page.getByRole("button", { name: "Play narration" }).click();
+
+  // Heading and the intro sentence show nothing yet; then each later body
+  // sentence unlocks the step with the matching number.
+  await expect.poll(() => sceneStepStates(page)).toEqual(["false", "false", "false"]);
+  await expect.poll(() => sceneStepStates(page)).toEqual(["true", "false", "false"]);
+  await expect.poll(() => sceneStepStates(page)).toEqual(["true", "true", "false"]);
+
+  // Once narration ends the picture is complete again.
+  await expect(page.getByRole("button", { name: "Play narration" })).toBeVisible({ timeout: 10_000 });
+  await expect.poll(() => sceneStepStates(page)).toEqual(["true", "true", "true"]);
+
+  const scan = await new AxeBuilder({ page }).include("main").analyze();
+  expect(scan.violations, "axe violations with an animated scene present").toEqual([]);
+});
+
+test("with reduced motion, an animated scene stays fully shown while narration plays", async ({
+  page,
+  request,
+}) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+
+  test.skip(
+    !(await courseModuleAudioTableExists(request, adminToken)),
+    "INC-27's migration (course_module_audio) isn't applied to this Supabase project yet — see docs/deploy-runbook.md's migration-application step",
+  );
+
+  const marker = `e2e.scene-rm.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
+  const courseId = await setUpSceneCourse(request, adminToken, marker);
+  await onboardEnglishBhw(page, request, adminToken);
+
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto(`/courses/${courseId}`);
+  await expect(page.locator("[data-scene-step]")).toHaveCount(3);
+
+  await page.getByRole("button", { name: "Play narration" }).click();
+  await expect(page.getByRole("button", { name: "Pause narration" })).toBeVisible();
+
+  // Sampled across the heading and intro sentence — the stretch where the
+  // animated path would be hiding every step.
+  for (let i = 0; i < 4; i += 1) {
+    expect(await sceneStepStates(page)).toEqual(["true", "true", "true"]);
+    await page.waitForTimeout(750);
+  }
 });

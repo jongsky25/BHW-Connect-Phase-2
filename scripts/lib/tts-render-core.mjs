@@ -27,7 +27,7 @@ export function computeContentHash(zones, voice) {
  * @param {Map<string, {id: string, content_hash: string}>} existingAudioByKey
  *   keyed by `${moduleContentId}:${sectionIndex}:${language}`
  */
-export function buildRenderPlan(modules, existingAudioByKey) {
+export function buildRenderPlan(modules, existingAudioByKey, voices = VOICES) {
   const items = [];
   for (const mod of modules) {
     const sections = mod.lesson?.sections ?? [];
@@ -39,7 +39,7 @@ export function buildRenderPlan(modules, existingAudioByKey) {
         const zones = buildNarrationZones({ heading, body, takeaway });
         if (zones.length === 0) continue; // nothing to narrate for this section/language
 
-        const voice = VOICES[language];
+        const voice = voices[language];
         const contentHash = computeContentHash(zones, voice);
         const key = `${mod.id}:${sectionIndex}:${language}`;
         const existing = existingAudioByKey.get(key);

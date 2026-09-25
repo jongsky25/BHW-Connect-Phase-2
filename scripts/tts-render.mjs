@@ -30,13 +30,22 @@
 //      section renders via the free edge-tts fallback instead (see
 //      scripts/lib/tts-providers/edge-tts.mjs's header for that provider's
 //      own caveats).
+//      GEMINI_API_KEY — only with --provider gemini, which renders every
+//      section via Gemini TTS and never falls back (a module narrated in two
+//      different voices would be worse than a stopped run; re-running
+//      resumes, since finished sections are skipped).
+//
+//   npm run training:tts -- --provider gemini --sample sample.mp3
+//      renders the first Filipino section to a local file only (no Supabase
+//      access, no --project needed) so the voice can be checked first.
 
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { DEFAULT_COURSE, loadTrainingCourse } from "./lib/training-content.mjs";
 import { createClient, projectUrl, requireEnv, signIn, uploadStorageObject } from "./lib/supabase-rest.mjs";
 import { synthesizeWithAzure } from "./lib/tts-providers/azure.mjs";
 import { synthesizeWithEdgeTts } from "./lib/tts-providers/edge-tts.mjs";
+import { geminiVoiceId, synthesizeWithGemini } from "./lib/tts-providers/gemini.mjs";
 import {
   buildRenderPlan,
   createProviderChain,
@@ -51,7 +60,7 @@ import {
 const AZURE_FREE_TIER_CHARS_PER_MONTH = 500_000;
 
 function parseArgs(argv) {
-  const args = { project: null, apply: false, course: DEFAULT_COURSE, modules: null };
+  const args = { project: null, apply: false, course: DEFAULT_COURSE, modules: null, provider: "auto", sample: null };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
@@ -59,9 +68,13 @@ function parseArgs(argv) {
     else if (arg === "--project") args.project = argv[++i];
     else if (arg === "--course") args.course = argv[++i];
     else if (arg === "--modules") args.modules = argv[++i].split(",").map((m) => m.trim());
+    else if (arg === "--provider") args.provider = argv[++i];
+    else if (arg === "--sample") args.sample = argv[++i];
     else throw new Error(`unknown argument: ${arg}`);
   }
-  if (!args.project) throw new Error("--project <supabase-project-ref> is required");
+  if (!["auto", "gemini"].includes(args.provider)) throw new Error(`--provider must be auto or gemini, got ${args.provider}`);
+  if (args.sample && args.provider !== "gemini") throw new Error("--sample is only supported with --provider gemini");
+  if (!args.project && !args.sample) throw new Error("--project <supabase-project-ref> is required");
   return args;
 }
 
@@ -96,10 +109,31 @@ async function fetchExistingAudio(client, moduleRowIds) {
   return byKey;
 }
 
+const GEMINI_VOICES = { fil: geminiVoiceId(), en: geminiVoiceId() };
+
+function synthesizeViaGemini(zones, language) {
+  return synthesizeWithGemini(zones, language, { apiKey: requireEnv("GEMINI_API_KEY") });
+}
+
+async function writeSample(modules, file) {
+  const [item] = buildRenderPlan(modules, new Map(), GEMINI_VOICES).filter((i) => i.language === "fil");
+  if (!item) throw new Error("no Filipino section to sample in the selected modules");
+  const result = await synthesizeViaGemini(item.zones, item.language);
+  writeFileSync(file, result.audioBytes);
+  console.log(`\n  wrote ${file} — ${item.moduleContentId} section ${item.sectionIndex} (fil), ${result.durationSeconds.toFixed(1)}s`);
+  for (const t of result.timings) console.log(`    ${t.start_ms}-${t.end_ms}ms  ${t.zone}[${t.index}]  ${t.text.slice(0, 60)}`);
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const content = loadTrainingCourse(args.course);
   const modules = args.modules ? content.modules.filter((m) => args.modules.includes(m.id)) : content.modules;
+  const useGemini = args.provider === "gemini";
+
+  if (args.sample) {
+    await writeSample(modules, args.sample);
+    return;
+  }
 
   const url = projectUrl(args.project);
   const anonKey = process.env.KB_LOADER_ANON_KEY ?? requireEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY");
@@ -113,15 +147,20 @@ async function main() {
 
   const moduleRowIds = readModuleRowIds(args.course, args.project);
   const existingAudioByKey = await fetchExistingAudio(client, moduleRowIds);
-  const items = buildRenderPlan(modules, existingAudioByKey);
+  const items = buildRenderPlan(modules, existingAudioByKey, useGemini ? GEMINI_VOICES : undefined);
   const plannedBudget = estimateCharBudget(items);
 
   console.log(`\n${args.apply ? "APPLY" : "DRY RUN"} — project ${args.project}, course ${args.course}`);
   console.log(`  sections to render  ${JSON.stringify(summarizePlan(items))}`);
-  console.log(
-    `  estimated chars (create+update, Azure-priced)  ${plannedBudget} / ${AZURE_FREE_TIER_CHARS_PER_MONTH} free-tier monthly allowance`,
-  );
-  if (plannedBudget > AZURE_FREE_TIER_CHARS_PER_MONTH) {
+  if (useGemini) {
+    const requests = items.filter((i) => i.action !== "skip").reduce((sum, i) => sum + i.zones.length, 0);
+    console.log(`  provider  gemini — ${requests} requests (one per sentence), ${plannedBudget} chars`);
+  } else {
+    console.log(
+      `  estimated chars (create+update, Azure-priced)  ${plannedBudget} / ${AZURE_FREE_TIER_CHARS_PER_MONTH} free-tier monthly allowance`,
+    );
+  }
+  if (!useGemini && plannedBudget > AZURE_FREE_TIER_CHARS_PER_MONTH) {
     console.log("  ⚠ this run alone would exceed the Azure free tier — re-check content scope before --apply");
   }
 
@@ -130,12 +169,13 @@ async function main() {
     return;
   }
 
+  if (useGemini) requireEnv("GEMINI_API_KEY", "a Gemini API key");
   const azureConfigured = Boolean(process.env.AZURE_SPEECH_KEY && process.env.AZURE_SPEECH_REGION);
-  if (!azureConfigured) {
+  if (!useGemini && !azureConfigured) {
     console.log("  AZURE_SPEECH_KEY/AZURE_SPEECH_REGION not set — every section will render via the edge-tts fallback");
   }
 
-  const synthesize = createProviderChain({
+  const synthesize = useGemini ? synthesizeViaGemini : createProviderChain({
     synthesizeAzure: (zones, language) =>
       synthesizeWithAzure(zones, language, {
         key: process.env.AZURE_SPEECH_KEY,
@@ -169,6 +209,7 @@ async function main() {
 
   let azureChars = 0;
   let edgeTtsCount = 0;
+  let geminiCount = 0;
   let notLoaded = 0;
 
   for (const item of items) {
@@ -180,12 +221,14 @@ async function main() {
     }
     if (result.outcome === "skipped") continue;
     if (result.provider === "azure") azureChars += result.charCount ?? 0;
+    else if (result.provider === "gemini") geminiCount += 1;
     else edgeTtsCount += 1;
     console.log(`  ✓ ${item.moduleContentId} section ${item.sectionIndex} (${item.language}) — ${result.outcome} via ${result.provider}`);
   }
 
   console.log(`\n  Azure characters spent this run: ${azureChars}`);
   console.log(`  sections rendered via edge-tts fallback: ${edgeTtsCount}`);
+  if (geminiCount > 0) console.log(`  sections rendered via Gemini: ${geminiCount}`);
   if (notLoaded > 0) console.log(`  sections skipped, module not loaded: ${notLoaded}`);
 }
 
