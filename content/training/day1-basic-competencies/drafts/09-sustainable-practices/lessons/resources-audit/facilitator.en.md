@@ -20,6 +20,8 @@ Read the situation. Model one attempt against the Observe checklist. Run the pra
 
 ## [expected-answers] Expected answers
 
+For the inventory check, set aside outdated handouts, verify the approved master and request current copies. Relabeling or distributing an old version would sacrifice correct information.
+
 The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version.
 
 ## [misconception] Common misconception
@@ -31,6 +33,8 @@ Orders from guesses or uses expired or incorrect material simply to save resourc
 Make an audit with resource, observed waste, evidence and a safe next step. Use Elena’s three examples; do not invent bills or quantities. Show a partner how labels and stock counts prevent duplicate orders. Alone, check a fictional teaching kit. At the next duty, observe one resource and discuss findings with the supervisor.
 
 ## [answer-key] Answer key
+
+Inventory check: 3. Set aside the old copies, verify the approved master and request current copies.
 
 2. Check labeled storage, approved version and stock count.
 
@@ -55,3 +59,4 @@ Identifies waste but gives no evidence or routine owner; complete the audit row 
 ## [sources-review] Sources and review notes
 
 Draft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.
+
