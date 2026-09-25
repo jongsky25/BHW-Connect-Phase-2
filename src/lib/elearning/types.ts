@@ -31,7 +31,7 @@ export type AuthoredLessonSlide = {
   asset_ids: string[]; check: LessonCheck | null;
   narration_fil?: string; narration_en?: string;
 };
-export type LessonSource = { id: string; title: string; pdf_pages: number[]; url?: string };
+export type LessonSource = { id: string; title: string; pdf_pages?: number[]; url?: string };
 export type LessonAsset = {
   content_hash: string;
   id: string; path: string; alt_fil: string; alt_en: string;

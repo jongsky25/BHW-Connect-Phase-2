@@ -482,7 +482,7 @@ export function ReferenceLessons(props: Props) {
                   ) : (
                     s.title
                   )}
-                  : PDF {s.pdf_pages.join(", ")}
+                  {s.pdf_pages?.length ? `: PDF ${s.pdf_pages.join(", ")}` : null}
                 </p>
               ))}
             </details>
