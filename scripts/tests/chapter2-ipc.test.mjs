@@ -80,6 +80,17 @@ test('IPC private kit contains every canonical rubric and selects one print lang
  const lang=doc.getElementById('language');lang.value='en';lang.dispatchEvent(new dom.window.Event('change'));assert.ok(doc.querySelector('[data-language="fil"]').classList.contains('hidden'));dom.window.close();
 });
 
+test('IPC learner preview renders the handrub clip as video, not an SVG-mistyped image',()=>{
+ const {dom,doc}=preview();
+ const choice=doc.getElementById('lesson');choice.value='2';choice.dispatchEvent(new dom.window.Event('change'));// hand-hygiene
+ for(let i=0;i<3;i++)doc.getElementById('next').click();// scene, action, check-start -> example
+ const video=doc.querySelector('#content video');assert.ok(video,'expected a <video> for the handrub clip');
+ assert.ok(video.getAttribute('poster').startsWith('data:image/jpeg;base64,'));
+ assert.ok(doc.querySelector('#content video source').getAttribute('src').startsWith('data:video/mp4;base64,'));
+ assert.equal(video.hasAttribute('autoplay'),false);assert.ok(video.hasAttribute('muted'));assert.ok(video.hasAttribute('controls'));
+ assert.match(doc.querySelector('#content details p').textContent,/Maglagay ng sapat na handrub/);
+ dom.window.close();
+});
 test('handrub clip: hashed, draft, and its text version names every on-screen step',async()=>{
  const {HANDRUB_STEPS}=await import('../../remotion/src/hand-hygiene/steps.ts');
  const l=chapterModule.lessons.find(l=>l.manifest.lesson_key==='hand-hygiene');
