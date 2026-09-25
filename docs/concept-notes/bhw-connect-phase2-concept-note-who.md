@@ -22,6 +22,23 @@
   Capiz are outside entirely. Year-1 cohort here is the whole region, 23,813, at ₱14.98M =
   ₱629/BHW, falling to ₱50/BHW nationally. If any of these move they all move together —
   §3, §13, §15, §20 and pitch/bhw-connect-who.html.
+
+  WHERE THE MONEY LIVES. The deck was reframed as a policy case and NO LONGER CARRIES A COST
+  SLIDE: §13 of this note is now the only place the Year-1 envelope appears, and the deck's
+  ask points here for it. Nothing in §13 changed when that happened. The deck still carries
+  the COVERAGE arithmetic above (slide 05 G3, slide 06), so that half of the sync rule stands
+  unaltered. Do not "restore" a peso figure to the deck to make the two match — they already
+  do, by division of labour. See pitch/README.md §7.
+
+  A SECOND, NARROWER COSTING NOW EXISTS: bhw-connect-phase2-who-costing.md (and
+  its .docx). It prices ONLY the DOH-side cash ask — three DOH-embedded hires,
+  AI tooling for Knowledge Base authoring, and twelve months of hosting up to a
+  transfer onto DOH infrastructure — at PHP 3,193,400, because rollout,
+  equipment, video production and M&E have moved to WHO's APW. §13 here is
+  untouched and still prices the whole information-system programme bottom-up
+  at PHP 14,980,000. The two are different scopes, not a contradiction, BUT
+  they are two totals aimed at the same funder: decide which is the standing
+  ask before either document is submitted.
 -->
 
 # CONCEPT NOTE
