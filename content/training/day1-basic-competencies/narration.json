@@ -1,7 +1,7 @@
 {
   "format": "mp3",
   "voices": {
-    "fil": "fil-PH-BlessicaNeural",
+    "fil": "fil-PH-BlessicaNeural, gemini:gemini-3.8-flash-tts:Kore",
     "en": "en-PH-RosaNeural"
   },
   "lessons": {
@@ -9186,39 +9186,39 @@
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/check.fil.ab18d200ca69.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "ab18d200ca69747ce6310437957bcc86f053219f67c1fce554e8046dba613994",
-            "sha256": "99c8a76228cab6e8b23e2de8de93f39331806321983b957dff2cf64cd2699097",
-            "duration_seconds": 15.96,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/check.fil.5dfa9c220eb9.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "5dfa9c220eb984a39d06917cab727e1b4b2b36dd69e3b397855992e06a594f07",
+            "sha256": "b59095709b23ae9b8621e3fa527e61d22e503557de8c93d9c8624f99a3f3caf1",
+            "duration_seconds": 19.174,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Gamitin ang natutuhan",
                 "start_ms": 0,
-                "end_ms": 2352
+                "end_ms": 2000
               },
               {
                 "zone": "body",
                 "index": 0,
                 "text": "Nakipagplano si Marites sa mga residente para sa clean-up drive.",
-                "start_ms": 2352,
-                "end_ms": 6744
+                "start_ms": 2300,
+                "end_ms": 7180
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Aling papel ang pinakakitang-kita?",
-                "start_ms": 6744,
-                "end_ms": 9600
+                "start_ms": 7480,
+                "end_ms": 10840
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Isang BHW, tatlong magkakaugnay na papel, iisang layuning isulong ang kalusugan.",
-                "start_ms": 9600,
-                "end_ms": 15960
+                "start_ms": 11140,
+                "end_ms": 19100
               }
             ]
           }
@@ -9276,53 +9276,53 @@
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/hepo.fil.fdcc0e27f6b7.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "fdcc0e27f6b799fb3fc592a66733e936dfa7fc6ed9a4ef5ef45951299aa0ec7d",
-            "sha256": "0518b913f1823c9f814dfe978d214308cb726fbf3a5f6bf4575ff5a980502fc1",
-            "duration_seconds": 40.176,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/hepo.fil.c9b794f37102.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "c9b794f37102c61c212a1c23c46799e29849bb1c18a0eeaa018d718b98bdb8cd",
+            "sha256": "6be2be3685a886c2f666e75871183c7698a7d27e68af0ef00aee32c79ff66b54",
+            "duration_seconds": 51.122,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "HEPO: pagsusulong ng kalusugan",
                 "start_ms": 0,
-                "end_ms": 3240
+                "end_ms": 4560
               },
               {
                 "zone": "body",
                 "index": 0,
                 "text": "Ginagamit ng Reference Manual ang katawagang barangay-level Health Education and Promotion Officer o HEPO.",
-                "start_ms": 3240,
-                "end_ms": 10296
+                "start_ms": 4860,
+                "end_ms": 14980
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Inilalarawan nito ang papel ng BHW sa pagbabahagi ng impormasyong pangkalusugan.",
-                "start_ms": 10296,
-                "end_ms": 16488
+                "start_ms": 15280,
+                "end_ms": 22080
               },
               {
                 "zone": "body",
                 "index": 2,
                 "text": "Makikita ang papel na ito sa pagiging Health Educator, Community Organizer, at Health Service Provider.",
-                "start_ms": 16488,
-                "end_ms": 23424
+                "start_ms": 22380,
+                "end_ms": 30260
               },
               {
                 "zone": "body",
                 "index": 3,
                 "text": "Ang ugnayan sa larawan ay paliwanag ng magkakaugnay na gawain; hindi ito opisyal na organizational chart o patunay ng appointment.",
-                "start_ms": 23424,
-                "end_ms": 31752
+                "start_ms": 30560,
+                "end_ms": 40920
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "HEPO = Health Education and Promotion Officer. Magkakaugnay na gawain, hindi reporting hierarchy.",
-                "start_ms": 31752,
-                "end_ms": 40176
+                "start_ms": 41220,
+                "end_ms": 51060
               }
             ]
           }
@@ -9380,53 +9380,53 @@
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/knowledge.fil.363ef5ad7e7f.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "363ef5ad7e7ff139c4e2e7bcfcdb416cb4265a24f3b953bdee16966f9f866c7f",
-            "sha256": "cc0e3b9a27ddeefae4c15cacce8887c73fa45e1d5de4ed858cf7b6d644a04b41",
-            "duration_seconds": 29.712,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/knowledge.fil.fb698b865049.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "fb698b86504961026dd9a1cbbd3494c57cb2488fd8d92d15612e19ec53d0cdbb",
+            "sha256": "e2f728f90953470cf4492d0d75d47eb0ac7f230d517ff50dc4687fe82057008d",
+            "duration_seconds": 35.84,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Bago magbahagi, maghanda",
                 "start_ms": 0,
-                "end_ms": 2592
+                "end_ms": 2920
               },
               {
                 "zone": "body",
                 "index": 0,
                 "text": "Kailangan ni Marites ng sapat na kaalaman sa mga prayoridad na programa at problemang pangkalusugan sa barangay.",
-                "start_ms": 2592,
-                "end_ms": 9504
+                "start_ms": 3220,
+                "end_ms": 11380
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Bago magturo, sinisiguro niyang malinaw sa kanya ang impormasyong ibabahagi.",
-                "start_ms": 9504,
-                "end_ms": 14784
+                "start_ms": 11680,
+                "end_ms": 18000
               },
               {
                 "zone": "body",
                 "index": 2,
                 "text": "Kapag may detalyeng hindi tiyak, kinukumpirma niya ito sa kaukulang health worker at ginagamit ang aprubadong materyal.",
-                "start_ms": 14784,
-                "end_ms": 22344
+                "start_ms": 18300,
+                "end_ms": 26980
               },
               {
                 "zone": "body",
                 "index": 3,
                 "text": "Hindi kailangang hulaan ang sagot para makatulong.",
-                "start_ms": 22344,
-                "end_ms": 26016
+                "start_ms": 27280,
+                "end_ms": 30880
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Sapat na kaalaman ang pundasyon ng tatlong tungkulin.",
-                "start_ms": 26016,
-                "end_ms": 29712
+                "start_ms": 31180,
+                "end_ms": 35780
               }
             ]
           }
@@ -9491,60 +9491,60 @@
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/morning.fil.3ffc48ed9bae.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "3ffc48ed9baee70f4493d14422140356624bc5adf8aa5701742ae0be809611b4",
-            "sha256": "341f6b2f0d595ade6eeb9330d31a93489695d2f3fb09f243e553869560c715b6",
-            "duration_seconds": 38.832,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/morning.fil.4137b7891bb4.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "4137b7891bb4e35177e4b64405c2f3e9eea5fbf2974d7a4b10a3add7f25682ba",
+            "sha256": "b80d3c4d0a962025919c7d098c44a8f719d537412161cce5a44ff6ae7967a233",
+            "duration_seconds": 45.714,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Isang umaga, maraming gawain",
                 "start_ms": 0,
-                "end_ms": 2904
+                "end_ms": 3360
               },
               {
                 "zone": "body",
                 "index": 0,
                 "text": "Alas-otso, may talakayang pangkalusugan si BHW Marites sa purok.",
-                "start_ms": 2904,
-                "end_ms": 8016
+                "start_ms": 3660,
+                "end_ms": 9540
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Alas-diyes, kausap niya ang kagawad tungkol sa clean-up drive.",
-                "start_ms": 8016,
-                "end_ms": 12528
+                "start_ms": 9840,
+                "end_ms": 14440
               },
               {
                 "zone": "body",
                 "index": 2,
                 "text": "Alas-onse, tinutulungan niya si Aling Nena na makausap ang midwife tungkol sa pangangailangan ng anak nito.",
-                "start_ms": 12528,
-                "end_ms": 19800
+                "start_ms": 14740,
+                "end_ms": 22500
               },
               {
                 "zone": "body",
                 "index": 3,
                 "text": "Iisang BHW ang gumagawa ng tatlo.",
-                "start_ms": 19800,
-                "end_ms": 23328
+                "start_ms": 22800,
+                "end_ms": 26960
               },
               {
                 "zone": "body",
                 "index": 4,
                 "text": "Sa curriculum, ang direksyon ng UHC ay mas matibay na primary care at health promotion; kaya mas malawak ang papel kaysa pagtulong sa serbisyo lamang.",
-                "start_ms": 23328,
-                "end_ms": 33264
+                "start_ms": 27260,
+                "end_ms": 39820
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Primary care + health promotion: higit sa pagtulong sa serbisyo.",
-                "start_ms": 33264,
-                "end_ms": 38832
+                "start_ms": 40120,
+                "end_ms": 45640
               }
             ]
           }
@@ -9602,53 +9602,53 @@
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/prevention.fil.0e0925da7f9a.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "0e0925da7f9a4d9338e332590cbbd91602f5c7ace9255057fbeba648994d5310",
-            "sha256": "da34122f897a523af25d1baa48a7b3cef26ab3c83edbff182cba1c07a4301625",
-            "duration_seconds": 29.76,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/prevention.fil.d6d2f5e4b35a.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "d6d2f5e4b35aad5b46eb207d796d702870ca51f61ee994814316a09be6ea61e5",
+            "sha256": "9494708d3a5ef6a54d0b8fbcce97ebf5adcc988ead837f63a48eeb6a0332e703",
+            "duration_seconds": 38.322,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Kumilos kasama ang komunidad",
                 "start_ms": 0,
-                "end_ms": 2496
+                "end_ms": 3360
               },
               {
                 "zone": "body",
                 "index": 0,
                 "text": "Mahalaga ang serbisyo kapag kailangan ito.",
-                "start_ms": 2496,
-                "end_ms": 5616
+                "start_ms": 3660,
+                "end_ms": 7020
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Kasabay nito, nagtuturo ang BHW at hinihikayat ang mga tao na makilahok sa mga gawaing pangkalusugan.",
-                "start_ms": 5616,
-                "end_ms": 13104
+                "start_ms": 7320,
+                "end_ms": 17520
               },
               {
                 "zone": "body",
                 "index": 2,
                 "text": "Sa clean-up drive ni Marites, may kaalamang ibinabahagi at may mga residenteng kasamang nagpaplano at kumikilos.",
-                "start_ms": 13104,
-                "end_ms": 20496
+                "start_ms": 17820,
+                "end_ms": 26860
               },
               {
                 "zone": "body",
                 "index": 3,
                 "text": "Magkaugnay ang edukasyon, pakikilahok, at paglapit sa serbisyo.",
-                "start_ms": 20496,
-                "end_ms": 25128
+                "start_ms": 27160,
+                "end_ms": 32600
               },
               {
                 "zone": "takeaway",
                 "index": 0,
                 "text": "Kasama ang pagtuturo at pag-oorganisa sa pagsulong ng kalusugan.",
-                "start_ms": 25128,
-                "end_ms": 29760
+                "start_ms": 32900,
+                "end_ms": 38260
               }
             ]
           }
