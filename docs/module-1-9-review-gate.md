@@ -15,6 +15,8 @@ Status: **review-ready draft; human review and learner timing pending** (25 Sept
 
 The draft's Elena scenario, 20/100-to-5/100 figures, trial checklist, and three optional practice cards are authored examples. They are **not** observed BHS data, verbatim DOH activities, or TESDA assessment instruments. The legacy 1.9 source has no activity cards. The cards' source-page field points to the background competency and time pages, not to an original card.
 
+The review candidate adds formative checks at inventory, utility safety, normalized comparison and colleague communication. The three lessons now have 2, 2 and 3 checks respectively in both Read and Slides. Each three-option check explains the rejected choices; facilitator answer keys include the additions. The existing `loadReferenceModule` parser/validator passes locally for all three 1.9 lessons. The three optional cards pass `validateActivities`; the three candidate SVGs pass `validateSvgMarkup`. A full repository build and authenticated preview remain pending.
+
 ## Protected boundaries
 
 - Do not reduce water or supplies needed for hand hygiene. Repair leaks and follow local procedures.
