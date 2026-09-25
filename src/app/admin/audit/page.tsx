@@ -12,11 +12,17 @@ type AuditEventRow = {
 
 export default async function AdminAuditPage() {
   const supabase = await createClient();
-  const { data: events } = await supabase
+  const { data: events, error } = await supabase
     .from("audit_events")
     .select("id, event_type, plain_summary_fil, plain_summary_en, created_at")
     .order("created_at", { ascending: false })
     .limit(100);
+
+  // A timeout or permission failure is not an empty audit trail. Let the
+  // existing error boundary report the failure and offer a retry.
+  if (error) {
+    throw new Error("Failed to load audit events", { cause: error });
+  }
 
   const locale = await getLocale();
   const t = await getTranslations("admin.audit");
