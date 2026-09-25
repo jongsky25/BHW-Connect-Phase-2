@@ -44,16 +44,16 @@ Scene assessment station (*Mga station sa sitwasyon, pagbagsak at handover*). Ta
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang unang tugon?"** **"Tingnan ang trapiko at tumawag."** — una ang kaligtasan at agarang tulong. "Gawin muna ang shortcut…": panganib sa trapiko, naantalang tawag o hinulaang numero. "Maghintay muna…": naaantala ang assessment.
-2. **"Ano ang dapat ipakita sa practice?"** **"Ibigay ang lokasyon at nakita."** — ang gawa at tamang referral. "Magbigay ng diagnosis…": hindi batayan ang kuwento. "Ulitin ang shortcut…": hindi ligtas.
+1. **"…Ano ang uuna?"** **"Tingnan ang trapiko, saka patawagin ang saksi."** — panganib muna, saka agarang tawag. "Lumapit agad sa sakay…": papasok sa trapiko. "Itanong muna… ang nangyari…": naaantala ang tawag.
+2. **"…Ano ang dapat sabihin ni Lea?"** **"Ang lokasyon at kung tumutugon at humihinga ang sakay."** "Ang hula niya sa pinsala…": hula, hindi obserbasyon. "…national number…": gamitin ang lokal na kumpirmadong contact.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.
 
-- **Kaya na:** Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.
+- **Kaya na:** Humihinto sa gilid ng kalsada, itinatalaga kung sino ang tatawag sa kumpirmadong contact, at iniuulat ang tugon, paghinga at lokasyon nang walang paalala.
+- **Kailangan pa ng practice:** Ligtas at may itinalagang tatawag, pero kailangan ng paalala na gamitin ang kumpirmadong contact o ibigay ang lokasyon.
+- **Hindi pa:** Pumapasok sa kunwaring trapiko, inaalam muna ang buong kuwento bago tumawag, o tumatawag sa hindi kumpirmadong numero.
 
 Hanapin ang paghinto sa guhit ng kalsada at ang pagbanggit sa contact, hindi "kahit sino". Hindi patunay ng kasanayan ang tamang self-check.
 

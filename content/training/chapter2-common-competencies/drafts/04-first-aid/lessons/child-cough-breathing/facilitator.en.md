@@ -44,16 +44,16 @@ Breathing case station (*Sick-child case stations*). Triads: learner as BHW, par
 
 ## [answer-key] Self-check answer key
 
-1. **"What comes first?"** **"Arrange prompt breathing assessment."** — safety and timely help. "Wait without notifying…": delays assessment. "Use the shortcut…": an old temperature or breathing threshold alone, or promising she can wait, can cause harm.
-2. **"What should the practice show?"** **"Report breathing difficulty."** — the task and appropriate referral. "Diagnose from the story…": no grounds for independent diagnosis. "Repeat the shortcut…": unsafe.
+1. **"…What comes first?"** **"Arrange prompt assessment of her breathing."** — breathing difficulty needs prompt assessment. "Tell the family tomorrow is fine…": a promise she can wait. "Count her breaths…": an old number alone is not a referral rule.
+2. **"…What should the report include?"** **"What the breathing looks like and the danger-sign answers."** — observations only. "…probably has pneumonia…": a diagnosis. "Only her temperature…": a single number, and it leaves out the breathing.
 
 ## [observe] What to observe
 
 Indicator: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.
 
-- **Kaya na:** Completes the task without prompting: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait.
+- **Kaya na:** Describes Aya's breathing plainly, asks about danger signs and uses the confirmed urgent route without promising the family she can wait, without prompting.
+- **Kailangan pa ng practice:** Refers promptly but needs a prompt to ask about danger signs or to answer the family's request to wait.
+- **Hindi pa:** Agrees to wait until tomorrow, decides from an old breathing or temperature number, or names a diagnosis.
 
 Listen for how the learner answers "can it wait?" without a promise. A correct self-check is not evidence of the skill.
 

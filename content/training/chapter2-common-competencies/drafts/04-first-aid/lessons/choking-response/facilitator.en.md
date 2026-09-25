@@ -46,22 +46,22 @@ Each Read heading is also its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Call for age-specific help."** It prioritizes safety and timely help.
-  - "Wait without notifying the responsible staff": assessment may be delayed.
-  - "Use the shortcut before confirming the facts": can cause harm (adult thrusts on an infant, finger sweeps).
-- **Check 2: "What should the practice show?"** Correct: **"Infant manikin, not adult maneuver."** That is what you observe.
-  - "Diagnose from the story…": the story is not grounds for a diagnosis.
-  - "Repeat the shortcut…": the shortcut is unsafe.
+- **Check 1: "What comes first?"** Correct: **"Call for help and check the age."**
+  - "Sweep the mouth with a finger first": no blind finger sweeps.
+  - "Wait and see if coughing clears it": this is not a mild cough; call now.
+- **Check 2: "What should your practice show?"** Correct: **"Switch to the infant manikin and pathway."**
+  - "Adult abdominal thrusts on the infant manikin": not for infants.
+  - "Thrusts on your partner, gently, to practise": manikins only, always.
 
 ## [observe] What to observe
 
 The trainer watches for: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
 
-- **Kaya na:** Completes the task without prompting: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.
+- **Kaya na:** Tells cough from severe obstruction, calls for help, and shows the trainer-approved response on the correct manikin for each age, without prompting.
+- **Kailangan pa ng practice:** Calls for help and shows one age pathway, but needs the trainer's prompt to classify the cough or to switch manikins.
+- **Hindi pa:** Uses adult thrusts on the infant manikin, uses a blind finger sweep, rehearses on a live partner, or skips the call for help.
 
-Look for the call before any technique and the manikin switch. A correct self-check is not evidence of the skill; this is not a certificate.
+A correct self-check is not evidence of the skill; this is not a certificate.
 
 ## [support] If a BHW needs more support
 

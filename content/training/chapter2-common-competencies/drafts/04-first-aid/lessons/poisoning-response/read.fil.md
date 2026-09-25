@@ -4,7 +4,7 @@ Maaaring nakalunok ng panlinis ang isang bata. Nasa tabi ang lalagyan ngunit may
 
 ## [action] Gawin at sabihin
 
-Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Ibigay ang label, oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin.
+Iwasan ang exposure, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Basahin lamang ang label kung walang exposure, gaya ng lalagyang malayo na sa spill o hawak ng iba. Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Ibigay ang label, oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin. Iniiwasan ni Lea ang shortcut.
+Inilalayo ni Lea ang pamilya sa matapang na amoy at tinatawagan ang kumpirmadong poison adviser. Hindi niya kinukuha ang lalagyan sa loob ng amoy. Ibinibigay niya ang label kung mababasa nang walang exposure, ang tinatayang oras, paraan ng exposure, sintomas at edad ng bata. Nang gustong pasukahin ng kamag-anak ang bata, tumanggi siya. Sinusunod niya ang tagubilin ng adviser.
 
 ## [scope] Saklaw at paghingi ng tulong
 

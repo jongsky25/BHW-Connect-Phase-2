@@ -1,4 +1,4 @@
-# 2.4.17 — First-aid practice: first aid kit
+# 2.4.17 — Check first-aid kit readiness
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,12 +6,12 @@ The BHS kit has an old inventory sheet, an expired item and an unsealed packet. 
 
 ## Learner card
 
-Complete every row of a simulated local kit inventory and name a replenishment owner.
+You are the BHW. Check the mock kit against the current local list. Fill every row, set aside expired or unsealed items unused, and name who replaces them.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play a co-worker at the BHS. Hand over the old inventory sheet and say: "Just copy this, it is already filled in." Later say: "The open packet is still fine. Let's keep it." Accept a clear answer. Bring no real medicines, and do not add items that are not in the mock kit.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Check for no blank cells and a named replacement owner. Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.

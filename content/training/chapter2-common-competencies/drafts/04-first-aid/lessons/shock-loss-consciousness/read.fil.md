@@ -12,11 +12,11 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Suriin ang paligid, tugon at normal na paghinga. Humingi agad ng emergency help at sanay na assessor. Kung hindi normal ang paghinga, sundin ang natutunang CPR/AED; kung humihinga, bantayan hanggang dumating ang tulong. Iniiwasan ni Lea ang shortcut.
+Tiniyak ng BHW na ligtas ang waiting area, saka nagtanong: "Naririnig n'yo po ba ako?" Walang sagot. Nagpatawag siya sa kumpirmadong contact at sinuri ang normal na paghinga. Sinabi niya sa kamag-anak: "Walang ipaiinom habang hindi siya tumutugon." Kung hindi normal ang paghinga, susundin niya ang natutunang CPR/AED. Kung normal, babantayan niya hanggang dumating ang tulong.
 
 ## [scope] Saklaw at paghingi ng tulong
 
-Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.
+Huwag bigyan ng pagkain, kendi o tubig ang taong hindi tumutugon. Huwag hulaan ang sanhi ng pagbagsak mula sa iisang palatandaan, at huwag ipagpaliban ang pagtawag.
 
 ## [check-transfer] Subukan sa sitwasyon
 

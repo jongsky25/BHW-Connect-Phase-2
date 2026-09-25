@@ -45,22 +45,22 @@ Each Read heading is also its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Keep the person still."** It prioritizes safety and timely help.
-  - "Use the shortcut before confirming the facts": can cause harm (tourniquet, cutting, sucking, ice, chasing, walking).
-  - "Wait without notifying the responsible staff": assessment may be delayed.
-- **Check 2: "What should the practice show?"** Correct: **"Arrange rapid transport."** That is what you observe.
-  - "Diagnose from the story…": the story is not grounds for a diagnosis.
-  - "Repeat the shortcut…": the shortcut is unsafe.
+- **Check 1: "What comes first?"** Correct: **"Keep him calm and still."**
+  - "Let the friends tie the cord first": a tight cord is a tourniquet, listed as harmful.
+  - "Help him walk to the road": he should not walk; transport comes to him.
+- **Check 2: "In the practice, what should your call for transport include?"** Correct: **"The time of the bite and what you see."**
+  - "The type of snake, once the friends catch it": do not chase the snake.
+  - "That ice is already on the bite": ice is a harmful shortcut.
 
 ## [observe] What to observe
 
 Watch for: Reject the cord and walking plan, keep the person still and call for transport.
 
-- **Kaya na:** Completes the task without prompting: Reject the cord and walking plan, keep the person still and call for transport.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily.
+- **Kaya na:** Declines the cord and the walk kindly, keeps the person calm and still, and calls for transport with the bite time, without prompting.
+- **Kailangan pa ng practice:** Keeps the person still and calls for transport, but needs a prompt to decline the cord or to report the bite time.
+- **Hindi pa:** Allows the cord, cutting, sucking or ice, or has the person walk instead of calling for transport.
 
-Listen for a kind refusal of the cord and the bite time in the call. A correct self-check is not evidence of the skill.
+A correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 

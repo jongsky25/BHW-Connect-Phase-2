@@ -44,16 +44,16 @@ Urgent response simulation (*Mga station sa sitwasyon, pagbagsak at handover*). 
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang unang tugon?"** **"Tawag at suriin ang paghinga."** — kaligtasan at agarang tulong. "Maghintay muna…": naaantala ang assessment. "Gawin muna ang shortcut…": nakapipinsala ang pagpapakain o pagpapainom sa walang malay, panghuhula ng sanhi o naantalang tawag.
-2. **"Ano ang dapat ipakita sa practice?"** **"Huwag magpainom sa walang malay."** — ang gawa at tamang referral. "Magbigay ng diagnosis…": hindi batayan ang kuwento. "Ulitin ang shortcut…": hindi ligtas.
+1. **"…Ano ang uuna?"** **"Humingi ng tulong at suriin ang paghinga."** — tumawag at suriin ang tugon at paghinga. "Painumin ng matamis na inumin…": walang ipaiinom, at hindi masasabi ng iisang palatandaan ang sanhi. "Hayaan munang magpahinga…": naaantala ang tawag.
+2. **"…Mapilit ang kamag-anak sa inumin…"** **"Tanggihan ang inumin at magbantay hanggang dumating ang tulong."** "Payagan ang isang higop…": hindi pa rin tumutugon. "Sabihin sa tulong na mababang asukal…": hula, hindi obserbasyon.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.
 
-- **Kaya na:** Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.
+- **Kaya na:** Sinusuri ang paligid, tugon at paghinga, humihingi ng tulong, tinatanggihan ang inumin at iniuulat ang nakita nang walang paalala.
+- **Kailangan pa ng practice:** Humihingi ng tulong at tinatanggihan ang inumin, pero kailangan ng paalala na suriin ang paghinga o mag-handover nang factual.
+- **Hindi pa:** Pinapayagan ang matamis na inumin, hinuhulaan ang sanhi, o naghihintay kung magigising bago tumawag.
 
 Tingnan kung nauuna ang tawag bago ang usapan tungkol sa sanhi. Hindi patunay ng kasanayan ang tamang self-check.
 

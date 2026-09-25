@@ -1,4 +1,4 @@
-# 2.4.6 — First-aid practice: shock loss consciousness
+# 2.4.6 — Kilalanin ang shock at pagkawala ng malay
 
 Kathang-isip na detalye lamang.
 

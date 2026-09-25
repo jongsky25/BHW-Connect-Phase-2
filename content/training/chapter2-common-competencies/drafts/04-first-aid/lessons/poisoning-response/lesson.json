@@ -45,28 +45,28 @@
         "c2.firstaid.poisoning.response.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Lumayo sa amoy at unahing tawagan ang kumpirmadong adviser.",
+      "takeaway_en": "Move away from the smell and call the verified advice route first.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "May matapang na amoy ng kemikal kung nasaan ang lalagyan. Ano ang una mong gagawin?",
+        "prompt_en": "A sharp chemical smell comes from where the container is. What do you do first?",
         "options": [
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Kunin ang lalagyan para basahin nang malapitan ang label.",
+            "en": "Pick up the container to read the label closely."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Painumin ang bata ng maraming tubig para lumabnaw ang panlinis.",
+            "en": "Give the child a large drink of water to dilute the cleaner."
           },
           {
-            "fil": "Lumayo at tumawag ng payo.",
-            "en": "Move away and call for advice."
+            "fil": "Ilayo ang lahat at tawagan ang kumpirmadong adviser.",
+            "en": "Move everyone away and call the verified advice route."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill. 3: Unahin ang kaligtasan at agarang tulong.",
-        "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe. 3: Prioritize safety and timely help."
+        "feedback_fil": "1: Malalantad ka kung papasok sa amoy. Basahin lamang ang label kung walang exposure. 2: Huwag rutinang painumin nang marami. Sundin ang tagubilin ng poison adviser. 3: Tama. Iwasan ang exposure, ilayo ang iba at unahing tawagan ang kumpirmadong emergency o poison adviser.",
+        "feedback_en": "1: Reaching into the smell exposes you. Read the label only if you can do so without exposure. 2: Do not give a routine large drink. Follow the instructions of the poison-advice responder. 3: Correct. Avoid exposure, move others away and activate the verified emergency or poison-advice route first."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.poisoning.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
-      "takeaway_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+      "takeaway_fil": "Umiiwas si Lea sa amoy, tumatawag at iniuulat lamang ang ligtas na nalalaman.",
+      "takeaway_en": "Lea stays clear of the smell, calls and reports only what she can safely know.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.poisoning.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang pagpapasuka, rutinang pagpapainom o inimbentong panlunas.",
+      "takeaway_en": "No induced vomiting, routine large drink or improvised antidote.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.poisoning.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Iulat ang label kung ligtas mabasa, oras, paraan, sintomas at edad.",
+      "takeaway_en": "Report the label if safely read, time, route, symptoms and age.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sumagot ang adviser sa tawag mo. Ano ang iuulat mo?",
+        "prompt_en": "The adviser answers your call. What do you report?",
         "options": [
           {
-            "fil": "Iulat ang label at oras.",
-            "en": "Report the label and time."
+            "fil": "Label kung ligtas mabasa, oras, paraan, sintomas at edad.",
+            "en": "The label if safely read, time, route, symptoms and age."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ang hula mo kung anong lason at ang panlunas na ibibigay mo.",
+            "en": "Your guess of the poison and the antidote you plan to give."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Na may nalunok lang ang bata; sila na ang magtatanong.",
+            "en": "Only that a child swallowed something; they will ask the rest."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+        "feedback_fil": "1: Tama. Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad, saka sundin ang tagubilin. 2: Huwag manghula o mag-imbento ng panlunas. Iulat ang facts at sundin ang responder. 3: Ibigay ang lahat ng ligtas na nakuhang facts: label, oras, paraan, sintomas at edad.",
+        "feedback_en": "1: Correct. Give the label, estimated time, exposure route, symptoms and age, then follow their instructions. 2: Do not guess or improvise an antidote. Report the facts and follow the responder. 3: Give all the facts you have safely gathered: label, time, route, symptoms and age."
       }
     },
     {

@@ -45,22 +45,22 @@ Katugmang slide ang bawat heading ng Read.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Ihambing sa lokal na listahan."** Inuuna nito ang kaligtasan at agarang tulong.
-  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
-  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (lumang listahan bilang reseta, expired stock, akalang may pahintulot).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Itala ang expired na gamit."** Ito ang inoobserbahan.
-  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
-  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Ihambing ang kit sa lokal na listahan."**
+  - "I-update ang lumang sheet at ituloy itong gamitin": hindi ito ang kasalukuyang listahan.
+  - "Itapon agad ang expired item": itala, ihiwalay at iulat.
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Itala ang kondisyon; iulat nang hindi ginagamit."**
+  - "Gamitin na ngayon dahil mukhang malinis ang loob": huwag gamitin ang sirang gamit.
+  - "Iwanang blangko muna ang hanay ng selyo nito": dapat kumpleto ang bawat hanay.
 
 ## [observe] Ano ang oobserbahan
 
 Bantayan ang: Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.
 
-- **Kaya na:** Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.
+- **Kaya na:** Napupunan ang bawat hanay ayon sa kasalukuyang lokal na listahan, inihihiwalay at iniuulat nang hindi ginagamit ang expired at bukas na gamit, at tinutukoy ang responsable sa pagpapalit, nang walang paalala.
+- **Kailangan pa ng practice:** Napupunan ang karamihan ng hanay, pero kailangan ng paalala para punan ang blangko o tukuyin ang responsable sa pagpapalit.
+- **Hindi pa:** Ginagamit ang lumang sheet, itinatabi para gamitin ang expired o bukas na gamit, o itinuturing na pahintulot magbigay ang pagkakaroon ng gamit.
 
-Tingnan kung walang blangko at may pangalan ng tao. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 

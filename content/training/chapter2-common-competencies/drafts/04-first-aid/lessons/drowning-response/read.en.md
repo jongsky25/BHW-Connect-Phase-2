@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Call trained rescuers and keep yourself out of the water. Use an available reach or throw aid only when safe. Once rescued by trained personnel, arrange urgent medical assessment and follow the current drowning resuscitation protocol. Lea avoids the shortcut.
+Lea stays on dry ground at the flooded canal and does not enter the water. She calls trained rescuers and gives the location. When a bystander urges her to jump in, she says no and uses a reach or throw aid only if it is safe. She states that the person will need urgent medical assessment once rescued.
 
 ## [scope] Scope and support
 

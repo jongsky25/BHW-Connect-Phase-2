@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow. |
+| Kaya na | Names Niko's danger signs, refers urgently even when the caregiver asks to wait, and hands over the exact signs without an illness label, without prompting. |
+| Kailangan pa ng practice | Refers urgently but needs a prompt to state the exact signs in the handover or to hold firm when asked to wait. |
+| Hindi pa | Agrees to wait for more signs, names an illness instead of the signs, or offers the child something by mouth. |
 
 Evidence observed: ____
 

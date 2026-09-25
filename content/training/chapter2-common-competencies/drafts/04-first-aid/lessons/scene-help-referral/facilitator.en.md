@@ -44,16 +44,16 @@ Scene assessment station (*Scene, collapse and handover stations*). Triads: lear
 
 ## [answer-key] Self-check answer key
 
-1. **"What comes first?"** **"Check traffic and call."** — safety and timely help first. "Use the shortcut…": risks traffic, a delayed call or an unverified number. "Wait without notifying…": delays assessment.
-2. **"What should the practice show?"** **"Give the location and observations."** — the task and appropriate referral. "Diagnose from the story…": no grounds for independent diagnosis. "Repeat the shortcut…": unsafe.
+1. **"Lea reaches the roadside… What comes first?"** **"Check the traffic, then have the bystander call."** — hazards first, then a call without delay. "Walk straight to the rider…": steps into moving traffic. "Ask the rider and driver…": a full history delays the call.
+2. **"…What should Lea tell them?"** **"The location and whether the rider responds and breathes."** — observed facts. "Her guess about the rider's injury…": a guess, not an observation. "…try the national number…": use the locally verified contact.
 
 ## [observe] What to observe
 
 Indicator: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
 
-- **Kaya na:** Completes the task without prompting: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact.
+- **Kaya na:** Stops at the road edge, names who calls the confirmed contact, and reports response, breathing and location without prompting.
+- **Kailangan pa ng practice:** Stays safe and assigns the call but needs a prompt to use the confirmed contact or to give the location.
+- **Hindi pa:** Steps into the simulated traffic, asks for the full story before any call, or calls an unverified number.
 
 Look for a stop at the road line and a named contact, not "someone". A correct self-check is not evidence of the skill.
 

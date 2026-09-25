@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha. |
+| Kaya na | Naihihiwalay ang ubo sa malubhang bara, humihingi ng tulong, at naipapakita ang aprubadong tugon sa tamang manikin para sa bawat edad, nang walang paalala. |
+| Kailangan pa ng practice | Humihingi ng tulong at naipapakita ang isang pathway, pero kailangan ng paalala ng trainer para iuri ang ubo o lumipat ng manikin. |
+| Hindi pa | Gumagamit ng adult thrust sa infant manikin o ng bulag na paghugot sa bibig, nagsasanay sa totoong kapareha, o hindi humihingi ng tulong. |
 
 Aktuwal na nakita/narinig: ____
 

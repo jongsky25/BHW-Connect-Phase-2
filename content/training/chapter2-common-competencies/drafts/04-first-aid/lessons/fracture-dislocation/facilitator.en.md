@@ -44,20 +44,20 @@ Each step matches the slide with the same heading.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Support in the position found."** Safety and timely help come first.
-  - "Wait without notifying…": assessment may be delayed.
-  - "Use the shortcut…": can cause harm (straightening, massage, an unpadded improvised splint, moving a possible spinal injury).
-- **Check 2: "What should the practice show?"** Correct: **"Do not straighten the arm."** Observe the task and referral.
-  - "Repeat the shortcut…": unsafe, as in Check 1.
-  - "Diagnose from the story…": the story is not grounds for diagnosis.
+- **Check 1:** Correct: **"Support the arm in the position you found it."**
+  - "Pull the arm straight…": Do not straighten a deformity, even if the person asks.
+  - "Massage the arm to…": Do not massage it.
+- **Check 2:** Correct: **"Check for other urgent concerns and make the call."**
+  - "Tie a stick to…": Do not use an unpadded improvised splint without training.
+  - "Tell her it is…": A BHW does not diagnose the injury.
 
 ## [observe] What to observe
 
 Watch for: Use a prop to show support in place, explain when movement is unsafe and make the referral call.
 
-- **Kaya na:** Completes the task without prompting: Use a prop to show support in place, explain when movement is unsafe and make the referral call.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it.
+- **Kaya na:** Without prompting, supports the arm as found, explains without blame why it will not be straightened, checks for other urgent concerns and calls the confirmed contact.
+- **Kailangan pa ng practice:** Supports the arm as found, but needs a prompt to explain why it is not straightened, to check other concerns or to make the call.
+- **Hindi pa:** Straightens, massages or splints the arm without training, or does not call for assessment.
 
 Look for: the arm stays where it was found, and the learner explains without blaming the cyclist. A correct self-check is not evidence of the skill.
 

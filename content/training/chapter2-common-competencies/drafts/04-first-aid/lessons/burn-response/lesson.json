@@ -45,28 +45,28 @@
         "c2.firstaid.burn.response.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Palamigin ang paso sa malamig na dumadaloy na tubig, hindi sa yelo.",
+      "takeaway_en": "Cool the burn with cool running water, not ice.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "May nag-abot ng yelo para sa braso ng kusinero. Ano ang unang tugon?",
+        "prompt_en": "Someone hands you ice for the cook's arm. What comes first?",
         "options": [
           {
-            "fil": "Palamigin sa dumadaloy na tubig.",
-            "en": "Cool with running water."
+            "fil": "Palamigin sa malamig na dumadaloy na tubig.",
+            "en": "Cool it under cool running water."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Ilagay ang yelo sa napasong braso ng kusinero.",
+            "en": "Hold the ice on the burned forearm."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Hilahin ang dumikit na manggas para makita ang balat.",
+            "en": "Peel off the sleeve to see the skin."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso.",
-        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment."
+        "feedback_fil": "1: Tama. Pagkalayo sa init, palamigin ang paso sa malamig na dumadaloy na tubig, ayon sa kasalukuyang gabay. 2: Huwag lagyan ng yelo. Mapanganib na shortcut ito ayon sa aralin; pasalamatan ang tumutulong at gumamit ng malamig na dumadaloy na tubig. 3: Huwag hilahin ang dumikit na tela. Iwan ang manggas sa lugar nito.",
+        "feedback_en": "1: Correct. After moving away from the heat, cool the burn with cool running water, as current guidance says. 2: Do not apply ice. The lesson lists it as a harmful shortcut; thank the helper and use cool running water. 3: Do not pull off stuck fabric. Leave the sleeve in place."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.burn.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral.",
-      "takeaway_en": "In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.",
+      "takeaway_fil": "Tinatanggihan ni Lea ang yelo, iniiwan ang manggas at sinasabi kung bakit maaaring kailangang ipasuri ang paso.",
+      "takeaway_en": "Lea declines the ice, leaves the sleeve in place and names why the burn may need assessment.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.burn.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang yelo, hindi pinuputok ang paltos, hindi hinihila ang dumikit na tela, at hindi lahat ng mapulang paso ay ligtas sa bahay.",
+      "takeaway_en": "No ice, no bursting blisters, no pulling stuck fabric, and not every red burn is safe for home treatment.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.burn.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Sabihin ang hangganan sa dumikit na damit at ang dahilan ng pagpapasuri.",
+      "takeaway_en": "Name the stuck-clothing boundary and a reason for assessment.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sabi ng kusinero, pula lang ang paso. Sa tabletop practice, ano ang dapat mong sabihin?",
+        "prompt_en": "The cook says the burn is only red. In the tabletop practice, what should you say?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Pula lang ito, kaya ligtas nang gamutin sa bahay.",
+            "en": "It is only red, so it is safe to treat at home."
           },
           {
-            "fil": "Iwan ang dumikit na damit.",
-            "en": "Leave stuck clothing in place."
+            "fil": "Iwan ang manggas; maaaring kailangang ipasuri.",
+            "en": "Leave the sleeve; assessment may be needed."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Putukin ang paltos, saka takpan ang braso.",
+            "en": "Burst any blisters, then cover the arm."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Hindi lahat ng mapulang paso ay ligtas sa bahay. Ipasuri kung malawak o delikado ang lokasyon. 2: Tama. Nasabi mo ang hangganan sa dumikit na damit at ang dahilan ng pagpapasuri, na inoobserbahan sa practice. 3: Huwag putukin ang paltos. Kasama ito sa mapanganib na shortcut sa aralin.",
+        "feedback_en": "1: Not every red burn is safe for home treatment. Seek assessment if the extent or location is concerning. 2: Correct. You name the stuck-clothing boundary and a reason for assessment, which the practice observes. 3: Do not burst blisters. It is on the lesson's list of harmful shortcuts."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.burn.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang dry tabletop na kaso: pagpapalamig, naiwang manggas, dahilan ng referral.",
+      "takeaway_en": "Practise the dry tabletop case: cooling, sleeve left on, referral concern.",
       "check": null
     }
   ],

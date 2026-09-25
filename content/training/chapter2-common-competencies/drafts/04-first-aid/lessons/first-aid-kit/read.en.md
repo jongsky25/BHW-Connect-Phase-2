@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Compare the kit with the current local list. Record quantity, package integrity, expiry, storage and replenishment owner. Escalate missing or damaged items without using them. Separate availability from authorization to use medicines or devices. Lea avoids the shortcut.
+Lea sets the old inventory sheet aside and works from the current local list. For each item, she records quantity, seal, expiry and storage. She marks the expired item and the unsealed packet, sets both aside unused, and reports them to the named replacement owner. Having them in the kit does not mean she may use them.
 
 ## [scope] Scope and support
 

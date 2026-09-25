@@ -45,20 +45,20 @@ Each step matches the slide with the same heading.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Call and request an AED."** Safety and timely help come first.
-  - "Use the shortcut…": can cause harm (pulse-only gate, compressions on a live person, CAB paragraph as certification).
-  - "Wait without notifying…": assessment may be delayed.
-- **Check 2: "What should the practice show?"** Correct: **"Practise only on a manikin."** Observe the task and referral.
-  - "Diagnose from the story…": the story is not grounds for diagnosis.
-  - "Repeat the shortcut…": unsafe, as in Check 1.
+- **Check 1:** Correct: **"Call for help and ask for the AED."**
+  - "Check the pulse first…": A pulse check should not be the only gate for an untrained rescuer.
+  - "Start the old CAB…": The old CAB paragraph is not certification.
+- **Check 2:** Correct: **"No, compressions are practised only on the manikin."**
+  - "Yes, a live partner…": Compressions are not practised on a live person.
+  - "Skip the station; reading…": Reading the old CAB paragraph is not certification.
 
 ## [observe] What to observe
 
 The trainer rates: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
 
-- **Kaya na:** Completes the task without prompting: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification.
+- **Kaya na:** Without prompting, calls for help with the location and asks for the AED before touching the manikin, then follows the trainer's adult sequence.
+- **Kailangan pa ng practice:** Calls for help and the AED, but needs a prompt for the location, the AED request or a step of the trainer's sequence.
+- **Hindi pa:** Starts with a pulse check or the old CAB steps, does not call for help, or practises on a live person.
 
 Look for: help and AED requested before hands touch the manikin. A correct self-check is not evidence of the skill.
 

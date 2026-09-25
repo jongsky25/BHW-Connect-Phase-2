@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Clear nearby hazards, cushion the head if possible and note the start time. Seek urgent help for a child and monitor breathing after the episode. Give the responding clinician a factual description. Lea avoids the shortcut.
+The BHW kindly tells the neighbor not to hold the child down or put a spoon in the mouth. She moves nearby hazards, cushions the head and says the start time aloud. She has someone call the confirmed contact and watches breathing after the shaking stops. The clinician gets a factual description: the start time and what was seen.
 
 ## [scope] Scope and support
 

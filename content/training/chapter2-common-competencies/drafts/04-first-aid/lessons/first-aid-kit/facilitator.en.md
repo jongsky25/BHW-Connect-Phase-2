@@ -45,22 +45,22 @@ Each Read heading is also its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Compare with the local list."** It prioritizes safety and timely help.
-  - "Wait without notifying the responsible staff": assessment may be delayed.
-  - "Use the shortcut before confirming the facts": can cause harm (old drug list as prescription, expired stock, assuming authority).
-- **Check 2: "What should the practice show?"** Correct: **"Record expired stock."** That is what you observe.
-  - "Repeat the shortcut…": the shortcut is unsafe.
-  - "Diagnose from the story…": the story is not grounds for a diagnosis.
+- **Check 1: "What comes first?"** Correct: **"Compare the kit with the local list."**
+  - "Update the old sheet and keep using it": it is not the current list.
+  - "Throw out the expired item right away": record it, set it aside, report it.
+- **Check 2: "What should your practice show?"** Correct: **"Record its condition; report it unused."**
+  - "Use it today, since the inside looks clean": escalate damaged items unused.
+  - "Leave its seal column blank until later": every row must be complete.
 
 ## [observe] What to observe
 
 Watch for: Complete every row of a simulated local kit inventory and name a replenishment owner.
 
-- **Kaya na:** Completes the task without prompting: Complete every row of a simulated local kit inventory and name a replenishment owner.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.
+- **Kaya na:** Completes every row against the current local list, sets aside and reports the expired and unsealed items unused, and names a replenishment owner, without prompting.
+- **Kailangan pa ng practice:** Completes most rows, but needs a prompt to fill a blank cell or to name the replenishment owner.
+- **Hindi pa:** Works from the old sheet, keeps expired or unsealed items for use, or treats a kit item as permission to give it.
 
-Look for no blank cells and a named person. A correct self-check is not evidence of the skill.
+A correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 

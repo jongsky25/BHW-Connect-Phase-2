@@ -44,16 +44,16 @@ Convulsion scenario (*Pagsasanay sa pagtawag at transport*). Tatluhan: learner, 
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang unang tugon?"** **"Alisin ang panganib sa paligid."** — kaligtasan at agarang tulong. "Maghintay muna…": naaantala ang assessment. "Gawin muna ang shortcut…": nakapipinsala ang pagpigil, kutsara, maagang pagpapainom o pagpupunas.
-2. **"Ano ang dapat ipakita sa practice?"** **"Itala ang oras ng kombulsyon."** — ang gawa at tamang referral. "Ulitin ang shortcut…": hindi ligtas. "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+1. **"…Ano ang uuna?"** **"Alisin ang panganib at sapinan ang ulo."** — unang hakbang. "Ilagay ang kutsara…": walang anuman sa bibig. "Hawakan nang mahigpit…": walang pagpigil.
+2. **"…nag-alok ng tubig ang lola…"** **"Huwag munang painumin; bantayan ang paghinga."** — walang inumin bago lubos na magkamalay. "Painumin nang paunti-unti…": masyadong maaga. "Punasan ng malamig na tubig…": hindi kapalit ng agarang tawag.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.
 
-- **Kaya na:** Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.
+- **Kaya na:** Nililinis ang paligid, sinasabi ang oras ng simula, humihingi ng tulong at mahinahong tinatanggihan ang pagpigil at kutsara nang walang paalala.
+- **Kailangan pa ng practice:** Ligtas ang paligid at tinatanggihan ang kutsara, pero kailangan ng paalala na tandaan ang oras ng simula o humingi ng tulong.
+- **Hindi pa:** Pinapayagan ang pagpigil o kutsara, nagpapainom bago lubos na magkamalay, o umaasa sa pagpupunas ng malamig na tubig sa halip na tumawag.
 
 Pakinggan kung sinasabi nang malakas ang oras ng simula at kung magalang ang pagtanggi. Hindi patunay ng kasanayan ang tamang self-check.
 

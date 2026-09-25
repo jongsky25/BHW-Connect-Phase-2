@@ -1,4 +1,4 @@
-# 2.4.18 — First-aid practice: incident handover
+# 2.4.18 — Hand over an incident
 
 Use fictional details only.
 

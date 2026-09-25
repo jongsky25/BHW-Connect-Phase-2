@@ -47,22 +47,22 @@ Each Read heading is also its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"State the situation and time."** It prioritizes safety and timely help.
-  - "Wait without notifying the responsible staff": assessment may be delayed.
-  - "Use the shortcut before confirming the facts": can cause harm (guessed diagnosis, missing times or actions, sharing details).
-- **Check 2: "What should the practice show?"** Correct: **"Report observations and actions."** That is what you observe.
-  - "Diagnose from the story…": the story is not grounds for a diagnosis.
-  - "Repeat the shortcut…": the shortcut is unsafe.
+- **Check 1: "What do you say first?"** Correct: **"The situation and the time."**
+  - "Your guess about what is broken": no guessed diagnosis.
+  - "The whole story from the beginning": urgent facts first, in job aid order.
+- **Check 2: "How should your practice handover end?"** Correct: **"By asking the receiver to confirm the next step."**
+  - "By telling the bystanders everything you just reported": no details outside the handover.
+  - "With your own guess about what caused the fall": a guess is not a fact.
 
 ## [observe] What to observe
 
 Watch for: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.
 
-- **Kaya na:** Completes the task without prompting: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.
+- **Kaya na:** Hands over in the job aid order with times, observed facts and actions, gives no guessed diagnosis, and asks the receiver to confirm the next action, without prompting.
+- **Kailangan pa ng practice:** Gives the facts, but needs a prompt to include the times or to ask the receiver to confirm the next action.
+- **Hindi pa:** Adds a guessed diagnosis, leaves out the time or actions, or shares identifiable details outside the care handover.
 
-Listen for times and the question to the receiver. A correct self-check is not evidence of the skill.
+A correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 

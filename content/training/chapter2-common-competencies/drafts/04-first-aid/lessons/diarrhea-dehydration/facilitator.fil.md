@@ -21,8 +21,8 @@ Itaas ang sachet: *"May malabnaw na dumi si baby Mina at sumususo pa. Hawak ito 
 
 1. **Ang sitwasyon (Read at unang slide).** *"Ano ang mayroon na ang pamilya na nakatutulong?"*
 2. **Gawin at sabihin (katapat na slide).** *"Anong apat na bagay ang itatanong mo?"*
-3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
-4. **Halimbawang sagot.** Basahin nang malakas ang sachet habang itinuturo: *"Nakasulat dito ang dami ng ligtas na tubig at paano titimplahin. Ituloy ang pagpapasuso. Kapag may danger sign, aalis tayo agad."* *"May dami ba akong sinabi mula sa alaala?"*
+3. **Piliin ang unang tugon.** Self-check 1 — magkapareha muna bago ibunyag.
+4. **Halimbawang sagot.** Basahin ang sachet habang itinuturo: *"Nakasulat dito ang dami ng ligtas na tubig at paano titimplahin. Ituloy ang pagpapasuso. Kapag may danger sign, aalis tayo agad."* *"May dami ba akong sinabi mula sa alaala?"*
 5. **Saklaw at paghingi ng tulong.** *"May kapitbahay na nagtuturo ng homemade na timpla. Ano ang isasagot mo?"*
 6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
 7. **Sa Lunes, gawin ito.** *"Aling sachet ang babasahin mo kasama ng susunod na pamilya?"*
@@ -44,16 +44,16 @@ ORS education station (*Mga station sa batang may sakit*), tuyo. Tatluhan: learn
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang unang tugon?"** **"Basahin ang ORS sachet."** — kaligtasan at agarang tulong. "Gawin muna ang shortcut…": nakapipinsala ang iisang timpla o dami para sa lahat, o pilit na pagpapainom. "Maghintay muna…": naaantala ang assessment.
-2. **"Ano ang dapat ipakita sa practice?"** **"Ipagpatuloy ang pagpapasuso kung kaya."** — ang gawa at tamang referral. "Magbigay ng diagnosis…": hindi batayan ang kuwento. "Ulitin ang shortcut…": hindi ligtas.
+1. **"…Ano ang uuna?"** **"Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan."** — unang hakbang. "Ituro ang homemade na timpla…": maaaring mali. "Itigil muna ang pagpapasuso…": ituloy kung kaya ng bata.
+2. **"…Ano ang gagawin ng BHW?"** **"Basahin ang dami ng ligtas na tubig sa label ng sachet na ito."** "Sabihing isang baso…" at "Ibigay ang dami mula sa lumang training…": maaaring hindi akma.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.
 
-- **Kaya na:** Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.
+- **Kaya na:** Itinatanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan, binabasa ang dami sa label ng sachet, ipinapaliwanag ang ligtas na tubig at pagpapasuso, at sinasabi ang referral trigger nang walang paalala.
+- **Kailangan pa ng practice:** Nagpapaliwanag mula sa label, pero kailangan ng paalala na itanong ang mga unang tanong, banggitin ang pagpapasuso o sabihin ang referral trigger.
+- **Hindi pa:** Nagbibigay ng dami o homemade na timpla mula sa alaala, pinatitigil ang pagpapasuso, o pinipilit painumin kahit hindi ligtas lumunok.
 
 Tingnan kung binabasa muna ang label bago magbanggit ng dami. Hindi patunay ng kasanayan ang tamang self-check.
 

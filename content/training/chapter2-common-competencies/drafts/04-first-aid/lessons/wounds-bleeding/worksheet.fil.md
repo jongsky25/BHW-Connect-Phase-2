@@ -1,4 +1,4 @@
-# 2.4.10 — First-aid practice: wounds bleeding
+# 2.4.10 — Tumugon sa sugat at pagdurugo
 
 Kathang-isip na detalye lamang.
 

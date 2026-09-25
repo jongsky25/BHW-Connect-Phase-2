@@ -4,7 +4,7 @@ May malabnaw na dumi si sanggol Mina at sumususo pa. May ORS sachet ang tagapag-
 
 ## [action] Gawin at sabihin
 
-Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign.
+Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Hikayatin ang patuloy na pagpapasuso kung kayang sumuso ng bata. Ipaliwanag na ligtas na tubig at eksaktong panuto ng sachet ang gamit sa ORS. I-refer agad kung may danger sign o alalahanin sa dehydration.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign. Iniiwasan ni Lea ang shortcut.
+Unang itinatanong ng BHW kung nakaiinom si Mina, kung sumusuka, kung may dugo sa dumi at kung alerto siya. Sumususo pa si Mina, kaya hinihikayat ng BHW na ituloy ito. Hawak ang sachet, binabasa niya nang malakas ang panuto at ipinapaliwanag na kailangan ng ligtas na tubig. Sinasabi rin niya kung kailan agad pupunta: kapag may danger sign o alalahanin sa dehydration.
 
 ## [scope] Saklaw at paghingi ng tulong
 

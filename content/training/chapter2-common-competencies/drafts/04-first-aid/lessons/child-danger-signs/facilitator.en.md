@@ -44,16 +44,16 @@ Childhood case cards (*Sick-child case stations*). Triads: learner as BHW, partn
 
 ## [answer-key] Self-check answer key
 
-1. **"What comes first?"** **"Refer Niko urgently."** — safety and timely help. "Wait without notifying…": delays assessment. "Use the shortcut…": labelling, waiting for every sign or giving by mouth can cause harm.
-2. **"What should the practice show?"** **"Report inability to drink."** — the task and appropriate referral. "Repeat the shortcut…": unsafe. "Diagnose from the story…": no grounds for independent diagnosis.
+1. **"…What comes first?"** **"Arrange urgent facility assessment for Niko."** — one sign is enough. "Watch him at home…": waiting delays care. "Give him small sips…": nothing by mouth when swallowing is unsafe.
+2. **"…What should the handover say?"** **"He cannot drink, vomits everything and is hard to wake."** — the exact signs. "…severe dehydration": an illness label. "Only that he vomited…": hides the urgency.
 
 ## [observe] What to observe
 
 Indicator: Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.
 
-- **Kaya na:** Completes the task without prompting: Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow.
+- **Kaya na:** Names Niko's danger signs, refers urgently even when the caregiver asks to wait, and hands over the exact signs without an illness label, without prompting.
+- **Kailangan pa ng practice:** Refers urgently but needs a prompt to state the exact signs in the handover or to hold firm when asked to wait.
+- **Hindi pa:** Agrees to wait for more signs, names an illness instead of the signs, or offers the child something by mouth.
 
 Listen for the exact observation in the handover, not a label. A correct self-check is not evidence of the skill.
 

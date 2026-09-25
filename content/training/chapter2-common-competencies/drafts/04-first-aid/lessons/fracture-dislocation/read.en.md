@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Avoid unnecessary movement. Support the injured part in the position found and arrange prompt assessment. Check for other urgent concerns and follow trained/local instructions for immobilization and transfer. Lea avoids the shortcut.
+Lea asks the cyclist to keep still and supports the forearm in the position she found it. When the cyclist asks her to pull it straight, Lea explains that she will not straighten it and will avoid unnecessary movement. She checks for other urgent concerns. Then she calls the confirmed contact for prompt assessment.
 
 ## [scope] Scope and support
 

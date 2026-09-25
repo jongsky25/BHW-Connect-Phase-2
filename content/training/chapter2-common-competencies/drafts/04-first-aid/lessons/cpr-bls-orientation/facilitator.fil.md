@@ -45,20 +45,20 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Tumawag at humingi ng AED."** Unahin ang kaligtasan at agarang tulong.
-  - "Gawin muna ang shortcut…": makapipinsala (pulso lamang, compression sa totoong tao, CAB talata bilang sertipikasyon).
-  - "Maghintay muna…": maaantala ang assessment.
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Magsanay lamang sa manikin."** Obserbahan ang gawa at referral.
-  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
-  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
+- **Check 1:** Tama: **"Tumawag ng tulong at humingi ng AED."**
+  - "Kapain muna ang pulso…": Hindi dapat pulso lamang ang batayan kung hindi sanay.
+  - "Simulan ang lumang CAB…": Hindi sertipikasyon ang lumang CAB talata.
+- **Check 2:** Tama: **"Hindi, sa manikin lamang sinasanay ang compression."**
+  - "Sige, mas makatotohanan ang…": Hindi nagko-compression sa totoong tao.
+  - "Laktawan ang station; sapat…": Hindi sertipikasyon ang pagbasa ng lumang CAB talata.
 
 ## [observe] Ano ang oobserbahan
 
 Ang trainer ang magra-rate: Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.
 
-- **Kaya na:** Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.
+- **Kaya na:** Walang paalala, tumatawag ng tulong kasama ang lokasyon at humihingi ng AED bago hawakan ang manikin, saka sinusunod ang adult sequence ng trainer.
+- **Kailangan pa ng practice:** Tumatawag ng tulong at AED, pero kailangan ng paalala sa lokasyon, sa AED o sa isang hakbang ng sequence ng trainer.
+- **Hindi pa:** Nagsisimula sa pulso o sa lumang CAB na hakbang, hindi tumatawag ng tulong, o nagsasanay sa totoong tao.
 
 Tingnan: humingi ba ng tulong at AED bago humawak sa manikin? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 

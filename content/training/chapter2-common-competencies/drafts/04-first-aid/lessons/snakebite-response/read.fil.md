@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Lumayo sa ahas. Pakalmahin ang tao at panatilihing hindi gumagalaw. Alisin ang masisikip na bagay kung ligtas. Ayusin ang mabilis na transport. Iulat ang oras at nakita. Iniiwasan ni Lea ang shortcut.
+Inilalayo ni Lea sa ahas ang manggagawa. Pinakakalma niya ito at pinananatiling hindi gumagalaw. Magalang niyang sinasabi sa mga kasama: "Walang tali, at hindi siya maglalakad. Ang transport ang pupunta sa kanya." Inaalis niya ang masisikip na bagay kung ligtas. Saka siya tumatawag ng transport at iniuulat ang oras ng kagat at ang nakita.
 
 ## [scope] Saklaw at paghingi ng tulong
 

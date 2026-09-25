@@ -46,22 +46,22 @@ Katugmang slide ang bawat heading ng Read.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Humingi ng tulong ayon sa edad."** Inuuna nito ang kaligtasan at agarang tulong.
-  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
-  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (adult thrust sa sanggol, paghugot sa bibig).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Infant manikin, hindi adult maneuver."** Ito ang inoobserbahan.
-  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
-  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Humingi ng tulong at tingnan ang edad."**
+  - "Hugutin muna ng daliri ang nasa loob ng bibig": walang bulag na paghugot.
+  - "Hintayin kung maaalis ito sa pag-ubo": hindi ito mabisang ubo; tumawag na.
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Lumipat sa infant manikin at infant pathway."**
+  - "Adult abdominal thrust sa infant manikin": hindi para sa sanggol.
+  - "Thrust sa kapareha, nang marahan, para magsanay": manikin lamang, palagi.
 
 ## [observe] Ano ang oobserbahan
 
 Babantayan ng trainer ang: Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.
 
-- **Kaya na:** Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.
+- **Kaya na:** Naihihiwalay ang ubo sa malubhang bara, humihingi ng tulong, at naipapakita ang aprubadong tugon sa tamang manikin para sa bawat edad, nang walang paalala.
+- **Kailangan pa ng practice:** Humihingi ng tulong at naipapakita ang isang pathway, pero kailangan ng paalala ng trainer para iuri ang ubo o lumipat ng manikin.
+- **Hindi pa:** Gumagamit ng adult thrust sa infant manikin o ng bulag na paghugot sa bibig, nagsasanay sa totoong kapareha, o hindi humihingi ng tulong.
 
-Tingnan ang pagtawag bago ang technique at ang paglipat ng manikin. Hindi patunay ng kasanayan ang tamang sagot sa self-check; hindi rin ito certificate.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check; hindi rin ito certificate.
 
 ## [support] Kung kailangan ng dagdag na suporta
 

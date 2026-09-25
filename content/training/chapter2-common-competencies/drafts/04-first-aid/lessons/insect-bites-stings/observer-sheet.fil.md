@@ -1,14 +1,14 @@
 # 2.4.12 — Talaan ng obserbasyon
 
-Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.
+Kilalanin ang agarang senyales sa kaso (pantal sa buong katawan, hirap sa paghinga), humingi ng emergency help at ilahad ang saklaw ng gamot.
 
 Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training. |
+| Kaya na | Walang paalala, tinutukoy na agarang senyales ang pantal at hirap sa paghinga, tumatawag muna ng emergency help, binabantayan ang paghinga at sinasabing ang gamot ay ayon sa plan ng tao at protocol. |
+| Kailangan pa ng practice | Tumatawag ng emergency help, pero kailangan ng paalala sa agarang senyales, sa paghinga o sa saklaw ng gamot. |
+| Hindi pa | Itinuturing na karaniwang tusok, naaantala sa home remedy, o nag-aalok o tumatanggap ng gamot nang walang training at pahintulot. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Ask about ability to drink, vomiting, blood in stool and alertness. Encourage continued breastfeeding when the child can feed. Explain that packaged ORS uses safe water and the exact packet directions. Refer urgently for danger signs or dehydration concerns. Lea avoids the shortcut.
+The BHW first asks whether Mina can drink, is vomiting, has blood in her stool and is alert. Mina is still breastfeeding, so the BHW encourages the caregiver to continue. Holding the sachet, the BHW reads its directions aloud and explains that it needs safe water. She also names when to go urgently: any danger sign or dehydration concern.
 
 ## [scope] Scope and support
 

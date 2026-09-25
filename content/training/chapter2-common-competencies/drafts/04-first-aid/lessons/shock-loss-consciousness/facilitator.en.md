@@ -44,16 +44,16 @@ Urgent response simulation (*Scene, collapse and handover stations*). Triads: le
 
 ## [answer-key] Self-check answer key
 
-1. **"What comes first?"** **"Call and check breathing."** — safety and timely help. "Wait without notifying…": delays assessment. "Use the shortcut…": food, candy or water to an unresponsive person, guessing the cause, or a delayed call can cause harm.
-2. **"What should the practice show?"** **"Give no drink to an unresponsive person."** — the task and appropriate referral. "Diagnose from the story…": no grounds for independent diagnosis. "Repeat the shortcut…": unsafe.
+1. **"…What comes first?"** **"Activate help and check her breathing."** — call and check response and breathing. "Help her sip the sweet drink…": nothing by mouth, and one clue cannot tell the cause. "Let her rest…": delays the call.
+2. **"…The relative insists on the drink…"** **"Decline the drink and keep watching until help arrives."** "Allow one small sip…": still unresponsive, so nothing by mouth. "Tell help the cause is low sugar…": a guess, not an observation.
 
 ## [observe] What to observe
 
 Indicator: Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.
 
-- **Kaya na:** Completes the task without prompting: Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation.
+- **Kaya na:** Checks the scene, response and breathing, activates help, declines the drink and hands over what was seen, without prompting.
+- **Kailangan pa ng practice:** Activates help and declines the drink but needs a prompt to check breathing or to give a factual handover.
+- **Hindi pa:** Allows the sweet drink, guesses the cause, or waits to see if the person wakes before calling.
 
 Watch whether the call happens before any talk of causes. A correct self-check is not evidence of the skill.
 

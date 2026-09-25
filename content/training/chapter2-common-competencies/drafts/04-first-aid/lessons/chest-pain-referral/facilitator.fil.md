@@ -45,22 +45,22 @@ Katugmang slide ang bawat heading ng Read.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Tumawag agad ng medikal na tulong."** Inuuna nito ang kaligtasan at agarang tulong.
-  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (aspirin schedule, gamot ng iba, naantalang tawag).
-  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iulat ang simula ng pananakit."** Ito ang inoobserbahan, kasama ang referral.
-  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
-  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Tumawag agad ng medikal na tulong."**
+  - "Ibigay ang isang tablet ng kapitbahay": walang gamot ng iba; ayon sa protocol ang gamot.
+  - "Maghanap muna ng aspirin, saka tumawag": huwag ipagpaliban ang tawag.
+- **Check 2: "Sa practice na tawag, ano ang dapat mong iulat?"** Tama: **"Kailan nagsimula ang paninikip, at ang sintomas."**
+  - "Ang sarili mong hula kung ano ang sanhi ng sakit": iulat ang nakikita.
+  - "Ang dosis ng aspirin na balak mong ibigay": hindi nagrereseta ang BHW.
 
 ## [observe] Ano ang oobserbahan
 
 Bantayan ang: Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.
 
-- **Kaya na:** Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.
+- **Kaya na:** Agad tumatawag sa emergency contact, iniuulat ang simula, sintomas at alam na gamot o allergy, at tinatanggihan ang tablet, nang walang paalala.
+- **Kailangan pa ng practice:** Tumatawag ng tulong at tinatanggihan ang tablet, pero kailangan ng paalala para iulat ang simula o alam na gamot at allergy.
+- **Hindi pa:** Nagbibigay o nagmumungkahi ng tablet o aspirin schedule, o ipinagpapaliban ang tawag para maghanap ng gamot.
 
-Pakinggan ang oras ng simula sa tawag. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 

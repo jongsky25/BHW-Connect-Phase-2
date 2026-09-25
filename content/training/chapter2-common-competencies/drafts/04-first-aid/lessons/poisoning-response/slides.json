@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: Maaaring nakalunok ng panlinis ang isang bata",
-    "display_en": "Case: A child may have swallowed an unknown household cleaner",
+    "display_fil": "Maaaring nakalunok ng panlinis ang isang bata\nNasa tabi ang lalagyan\nMay matapang na amoy ng kemikal",
+    "display_en": "A child may have swallowed an unknown household cleaner\nThe container is nearby\nA sharp chemical smell is present",
     "check": null,
     "narration_fil": "Maaaring nakalunok ng panlinis ang isang bata. Nasa tabi ang lalagyan ngunit may matapang na amoy ng kemikal.",
     "narration_en": "A child may have swallowed an unknown household cleaner. The container is nearby, but a sharp chemical smell is present."
@@ -29,11 +29,11 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong…\nIbigay ang label, oras, paraan ng exposure, sintomas at edad\nSundin ang kanilang tagubilin",
-    "display_en": "Avoid exposure, move others away and activate the verified…\nGive the product label, estimated time, exposure route, symptoms…\nFollow their instructions",
+    "display_fil": "Iwasan ang exposure; ilayo ang iba\nTawagan ang kumpirmadong emergency o poison adviser\nBasahin lamang ang label kung walang exposure\nIulat ang label, oras, paraan, sintomas, edad; sumunod",
+    "display_en": "Avoid exposure; move others away\nCall the verified emergency or poison-advice route\nRead the label only if you can do so without exposure\nReport label, time, route, symptoms, age; follow instructions",
     "check": null,
-    "narration_fil": "Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Ibigay ang label, oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin.",
-    "narration_en": "Avoid exposure, move others away and activate the verified emergency or poison-advice route. Give the product label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions."
+    "narration_fil": "Iwasan ang exposure, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Basahin lamang ang label kung walang exposure, gaya ng lalagyang malayo na sa spill o hawak ng iba. Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin.",
+    "narration_en": "Avoid exposure, move others away and activate the verified emergency or poison-advice route. Read the product label only if you can do so without exposure, such as from a container already away from the spill or held by someone else. Give the label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions."
   },
   {
     "id": "slide-check-start",
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "May matapang na amoy ng kemikal kung nasaan ang lalagyan. Ano ang una mong gagawin?",
+      "prompt_en": "A sharp chemical smell comes from where the container is. What do you do first?",
       "options": [
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Kunin ang lalagyan para basahin nang malapitan ang label.",
+          "en": "Pick up the container to read the label closely."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Painumin ang bata ng maraming tubig para lumabnaw ang panlinis.",
+          "en": "Give the child a large drink of water to dilute the cleaner."
         },
         {
-          "fil": "Lumayo at tumawag ng payo.",
-          "en": "Move away and call for advice."
+          "fil": "Ilayo ang lahat at tawagan ang kumpirmadong adviser.",
+          "en": "Move everyone away and call the verified advice route."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill. 3: Unahin ang kaligtasan at agarang tulong.",
-      "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe. 3: Prioritize safety and timely help."
+      "feedback_fil": "1: Malalantad ka kung papasok sa amoy. Basahin lamang ang label kung walang exposure. 2: Huwag rutinang painumin nang marami. Sundin ang tagubilin ng poison adviser. 3: Tama. Iwasan ang exposure, ilayo ang iba at unahing tawagan ang kumpirmadong emergency o poison adviser.",
+      "feedback_en": "1: Reaching into the smell exposes you. Read the label only if you can do so without exposure. 2: Do not give a routine large drink. Follow the instructions of the poison-advice responder. 3: Correct. Avoid exposure, move others away and activate the verified emergency or poison-advice route first."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Ibigay ang label, oras, paraan ng exposure, sintomas at edad\nSundin ang kanilang tagubilin",
-    "display_en": "Give the product label, estimated time, exposure route, symptoms…\nFollow their instructions",
+    "display_fil": "Inilalayo ni Lea ang pamilya sa amoy at tumatawag\nHindi niya kinukuha ang lalagyan sa loob ng amoy\nIniuulat niya ang ligtas na nalalaman\nTumatanggi siyang pasukahin ang bata",
+    "display_en": "Lea moves the family away from the smell and calls\nShe does not reach into the smell for the container\nShe reports what she can safely know\nShe says no to making the child vomit",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Ibigay ang label, oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Avoid exposure, move others away and activate the verified emergency or poison-advice route. Give the product label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions. Lea avoids the shortcut."
+    "narration_fil": "Inilalayo ni Lea ang pamilya sa matapang na amoy at tinatawagan ang kumpirmadong poison adviser. Hindi niya kinukuha ang lalagyan sa loob ng amoy. Ibinibigay niya ang label kung mababasa nang walang exposure, ang tinatayang oras, paraan ng exposure, sintomas at edad ng bata. Nang gustong pasukahin ng kamag-anak ang bata, tumanggi siya. Sinusunod niya ang tagubilin ng adviser.",
+    "narration_en": "Lea moves the family away from the sharp smell and calls the verified poison-advice contact. She does not reach into the smell for the container. She gives what she can safely know: the label if it can be read without exposure, the estimated time, exposure route, symptoms and the child's age. When a relative wants to make the child vomit, she says no and follows the adviser's instructions."
   },
   {
     "id": "slide-scope",
@@ -98,8 +98,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng…",
-    "display_en": "Do not induce vomiting, give a routine large drink, improvise an…",
+    "display_fil": "Huwag pasukahin o rutinang painumin nang marami\nHuwag mag-imbento ng panlunas\nWalang nakatakdang distansya na ligtas sa chemical spill",
+    "display_en": "Do not induce vomiting or give a routine large drink\nDo not improvise an antidote\nNo fixed distance makes a chemical spill safe",
     "check": null,
     "narration_fil": "Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
     "narration_en": "Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Sumagot ang adviser sa tawag mo. Ano ang iuulat mo?",
+      "prompt_en": "The adviser answers your call. What do you report?",
       "options": [
         {
-          "fil": "Iulat ang label at oras.",
-          "en": "Report the label and time."
+          "fil": "Label kung ligtas mabasa, oras, paraan, sintomas at edad.",
+          "en": "The label if safely read, time, route, symptoms and age."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Ang hula mo kung anong lason at ang panlunas na ibibigay mo.",
+          "en": "Your guess of the poison and the antidote you plan to give."
         },
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Na may nalunok lang ang bata; sila na ang magtatanong.",
+          "en": "Only that a child swallowed something; they will ask the rest."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
-      "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+      "feedback_fil": "1: Tama. Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad, saka sundin ang tagubilin. 2: Huwag manghula o mag-imbento ng panlunas. Iulat ang facts at sundin ang responder. 3: Ibigay ang lahat ng ligtas na nakuhang facts: label, oras, paraan, sintomas at edad.",
+      "feedback_en": "1: Correct. Give the label, estimated time, exposure route, symptoms and age, then follow their instructions. 2: Do not guess or improvise an antidote. Report the facts and follow the responder. 3: Give all the facts you have safely gathered: label, time, route, symptoms and age."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nSanayin ang tawag gamit ang kathang-isip na label habang…",
-    "display_en": "On Monday:\nRehearse the information call from a fictional label while…",
+    "display_fil": "Sa Lunes:\nSanayin ang tawag gamit ang kathang-isip na label\nIwasan ang simulated exposure",
+    "display_en": "On Monday:\nRehearse the information call from a fictional label\nKeep the simulated scene clear of exposure",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure."

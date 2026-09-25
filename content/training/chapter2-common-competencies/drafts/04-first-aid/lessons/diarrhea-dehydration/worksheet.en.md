@@ -1,4 +1,4 @@
-# 2.4.4 — First-aid practice: diarrhea dehydration
+# 2.4.4 — Respond to diarrhea and dehydration concerns
 
 Use fictional details only.
 

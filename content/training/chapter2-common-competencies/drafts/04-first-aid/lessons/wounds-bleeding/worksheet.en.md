@@ -1,4 +1,4 @@
-# 2.4.10 — First-aid practice: wounds bleeding
+# 2.4.10 — Respond to wounds and bleeding
 
 Use fictional details only.
 

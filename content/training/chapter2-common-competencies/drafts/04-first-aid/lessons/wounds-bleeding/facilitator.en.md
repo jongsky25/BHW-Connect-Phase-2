@@ -44,20 +44,20 @@ Each step matches the slide with the same heading.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Apply direct pressure."** Safety and timely help come first.
-  - "Use the shortcut…": can cause harm (removing an embedded object, gentle pressure, herbal wash, iodine, a tetanus deadline without advice).
-  - "Wait without notifying…": assessment may be delayed.
-- **Check 2: "What should the practice show?"** Correct: **"Maintain pressure and call."** Observe the task and referral.
-  - "Diagnose from the story…": the story is not grounds for diagnosis.
-  - "Repeat the shortcut…": unsafe, as in Check 1.
+- **Check 1:** Correct: **"Protect your hands and press firmly with clean cloth."**
+  - "Lift the cloth to…": Lifting the cloth interrupts pressure.
+  - "Wash the cut with…": Routine herbal wash is not used, and a loose cover is not firm pressure.
+- **Check 2:** Correct: **"Add cloth on top, keep pressing, send for help."**
+  - "Remove the soaked cloth…": Removing the first cloth interrupts pressure.
+  - "Press more gently now…": Do not rely on gentle pressure for severe bleeding.
 
 ## [observe] What to observe
 
 Watch for: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.
 
-- **Kaya na:** Completes the task without prompting: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice.
+- **Kaya na:** Without prompting, puts on gloves, presses firmly, adds cloth without lifting the first, sends for help and reports where, what was done and the time.
+- **Kailangan pa ng practice:** Keeps pressure on, but needs a prompt to add cloth without lifting, to send for help or to complete the report.
+- **Hindi pa:** Lifts or removes the cloth, stops pressing, presses only gently, or does not send for help.
 
 Look for: pressure never stops while cloth is added or the call is made. A correct self-check is not evidence of the skill.
 

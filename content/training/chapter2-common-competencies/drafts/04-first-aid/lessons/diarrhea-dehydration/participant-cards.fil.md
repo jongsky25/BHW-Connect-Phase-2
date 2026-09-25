@@ -1,4 +1,4 @@
-# 2.4.4 — First-aid practice: diarrhea dehydration
+# 2.4.4 — Tumugon sa pagtatae at dehydration
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,12 +6,12 @@ May malabnaw na dumi si sanggol Mina at sumususo pa. May ORS sachet ang tagapag-
 
 ## Card ng kalahok
 
-Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.
+Ikaw ang BHW. Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Hikayatin ang patuloy na pagpapasuso. Basahin nang malakas sa label ng sachet ang dami ng tubig at paraan ng pagtimpla; huwag magtimpla. Tapusin sa pagsabi kung kailan agad magpa-refer.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang tagapag-alaga ni Mina, hawak ang walang lamang sachet. Itanong: "Gaano karaming tubig ang gagamitin ko?" Pagkatapos, sabihin: "Sabi ng kapitbahay, itigil ko raw ang pagpapasuso." Sagutin lamang ang itinatanong ng BHW. Huwag magdagdag ng bagong senyales o clinical na detalye.
 
 ## Card ng tagamasid
 
-Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+Punan ang worksheet mula sa aktuwal na sinabi ng BHW: ang pagbasa ng label, ligtas na tubig, pagpapasuso at referral trigger. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.

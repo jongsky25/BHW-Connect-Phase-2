@@ -44,16 +44,16 @@ Childhood case cards (*Mga station sa batang may sakit*). Tatluhan: learner bila
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang unang tugon?"** **"I-refer agad si Niko."** — kaligtasan at agarang tulong. "Maghintay muna…": naaantala ang assessment. "Gawin muna ang shortcut…": nakapipinsala ang diagnosis, paghihintay sa lahat ng senyales o pagpapainom.
-2. **"Ano ang dapat ipakita sa practice?"** **"Iulat na hindi makainom."** — ang gawa at tamang referral. "Ulitin ang shortcut…": hindi ligtas. "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+1. **"…Ano ang uuna?"** **"Agad ipasuri si Niko sa pasilidad."** — sapat ang isang danger sign. "Bantayan muna sa bahay…": naaantala ang lunas. "Painumin muna siya…": huwag painumin ang batang hindi ligtas lumunok.
+2. **"…Ano ang sasabihin sa handover?"** **"Hindi siya makainom, isinusuka ang lahat at mahirap gisingin."** — eksaktong senyales. "…malubhang dehydration…": diagnosis. "Na sumuka lang siya…": natatago ang pagka-urgent.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.
 
-- **Kaya na:** Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.
+- **Kaya na:** Natutukoy ang danger signs ni Niko, agad nagre-refer kahit hilingin ng tagapag-alaga na maghintay, at iniuulat ang eksaktong senyales nang walang diagnosis at walang paalala.
+- **Kailangan pa ng practice:** Agad nagre-refer, pero kailangan ng paalala na sabihin ang eksaktong senyales sa handover o manindigan kapag hiniling na maghintay.
+- **Hindi pa:** Pumapayag maghintay ng dagdag na senyales, nagbibigay ng diagnosis sa halip na senyales, o nag-aalok na painumin ang bata.
 
 Pakinggan kung eksaktong nakita ang nasa handover, hindi pangalan ng sakit. Hindi patunay ng kasanayan ang tamang self-check.
 

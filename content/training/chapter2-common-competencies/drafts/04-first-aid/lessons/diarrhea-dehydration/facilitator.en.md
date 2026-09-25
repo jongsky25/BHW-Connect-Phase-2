@@ -44,16 +44,16 @@ ORS education station (*Sick-child case stations*), dry. Triads: learner as BHW,
 
 ## [answer-key] Self-check answer key
 
-1. **"What comes first?"** **"Read the ORS packet."** — safety and timely help. "Use the shortcut…": one recipe or dose for all, or forced fluids, can cause harm. "Wait without notifying…": delays assessment.
-2. **"What should the practice show?"** **"Continue breastfeeding when safe."** — the task and appropriate referral. "Diagnose from the story…": no grounds for independent diagnosis. "Repeat the shortcut…": unsafe.
+1. **"…What comes first?"** **"Ask about drinking, vomiting, blood in stool and alertness."** — the first step. "Share the homemade ORS recipe…": one recipe can be wrong. "Stop breastfeeding…": continue when the child can feed.
+2. **"…What should the BHW do?"** **"Read the amount of safe water from this packet's label."** "Say one glass…" and "Give the amount from your old training…": may not fit this packet or age.
 
 ## [observe] What to observe
 
 Indicator: Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.
 
-- **Kaya na:** Completes the task without prompting: Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe.
+- **Kaya na:** Asks about drinking, vomiting, blood in stool and alertness, reads the amount from the packet label, explains safe water and continued breastfeeding, and names a referral trigger without prompting.
+- **Kailangan pa ng practice:** Explains from the label but needs a prompt to ask the opening questions, mention continued breastfeeding or name a referral trigger.
+- **Hindi pa:** Gives an amount or homemade recipe from memory, advises stopping breastfeeding, or urges fluids when swallowing is unsafe.
 
 Watch whether the learner reads the label before giving any amount. A correct self-check is not evidence of the skill.
 

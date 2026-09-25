@@ -41,24 +41,24 @@ Each step matches the slide with the same heading.
 
 ## [practice] Practice activity
 
-**Poisoning call rehearsal** (card: *Call-and-transport rehearsals*), triads. Mark a "spill" area. The learner moves others away, then calls the confirmed contact (the observer plays the adviser) with all five items. The partner plays the relative pushing vomiting or a drink. The observer fills the worksheet rows (exposure, label, advice, confirmed contact, time and handover). Two rounds, one strength and one retry action, rotate. Staff rate. Low-resource: read aloud; observe later.
+**Poisoning call rehearsal** (card: *Call-and-transport rehearsals*), triads. Mark a "spill" area. The learner moves others away, then calls the confirmed contact (the observer plays the adviser) with all five items. The partner plays the relative pushing vomiting or a drink and holds the label card outside the spill. The observer fills the worksheet rows (exposure, label, advice, confirmed contact, time and handover). Two rounds, one strength and one retry action, rotate. Staff rate. Low-resource: read aloud; observe later.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Move away and call for advice."** Safety and timely help come first.
-  - "Wait without notifying…": assessment may be delayed.
-  - "Use the shortcut…": can cause harm (vomiting, a routine large drink, an improvised antidote, a fixed spill distance).
-- **Check 2: "What should the practice show?"** Correct: **"Report the label and time."** Observe the task and referral.
-  - "Diagnose from the story…": the story is not grounds for diagnosis.
-  - "Repeat the shortcut…": unsafe, as in Check 1.
+- **Check 1:** Correct: **"Move everyone away and call the verified advice route."**
+  - "Pick up the container…": Reaching into the smell exposes you.
+  - "Give the child a…": Do not give a routine large drink.
+- **Check 2:** Correct: **"The label if safely read, time, route, symptoms and age."**
+  - "Your guess of the…": Do not guess or improvise an antidote.
+  - "Only that a child…": Give all the facts you have safely gathered: label, time, route, symptoms and age.
 
 ## [observe] What to observe
 
 Watch for: Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.
 
-- **Kaya na:** Completes the task without prompting: Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe.
+- **Kaya na:** Without prompting, clears the spill area, calls the confirmed contact, gives all five facts without entering the area and follows the adviser's instructions.
+- **Kailangan pa ng practice:** Keeps clear of the spill and calls, but needs a prompt for one of the five facts or to follow the adviser rather than the relative.
+- **Hindi pa:** Enters the spill area for the label, or agrees to vomiting, a routine large drink or an improvised antidote.
 
 Look for: all five call items, and nobody left in the spill area. A correct self-check is not evidence of the skill.
 

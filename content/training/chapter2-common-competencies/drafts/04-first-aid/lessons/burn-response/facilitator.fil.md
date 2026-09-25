@@ -45,22 +45,22 @@ Katugmang slide ang bawat heading ng Read.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Palamigin sa dumadaloy na tubig."** Inuuna nito ang kaligtasan at agarang tulong.
-  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
-  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (yelo, paltos, paghila ng tela).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iwan ang dumikit na damit."** Ito ang inoobserbahan, kasama ang referral.
-  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
-  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Palamigin sa malamig na dumadaloy na tubig."**
+  - "Ilagay ang yelo sa napasong braso ng kusinero": mapanganib na shortcut ang yelo.
+  - "Hilahin ang dumikit na manggas para makita ang balat": hindi inaalis ang dumikit na tela.
+- **Check 2: "Sa tabletop practice, ano ang dapat mong sabihin?"** Tama: **"Iwan ang manggas; maaaring kailangang ipasuri."**
+  - "Pula lang ito, kaya ligtas nang gamutin sa bahay": hindi lahat ng mapulang paso.
+  - "Putukin ang paltos, saka takpan ang braso": huwag putukin ang paltos.
 
 ## [observe] Ano ang oobserbahan
 
 Bantayan ang: Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral.
 
-- **Kaya na:** Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso.
+- **Kaya na:** Sa dry tabletop na kaso, sinasabi ang pagpapalamig sa malamig na dumadaloy na tubig, iniiwan ang dumikit na manggas at nagbibigay ng dahilan ng pagpapasuri, nang walang paalala.
+- **Kailangan pa ng practice:** Nasasabi ang pagpapalamig at iniiwan ang manggas, pero kailangan ng paalala para sa dahilan ng pagpapasuri.
+- **Hindi pa:** Tinatanggap ang yelo, hinihila ang manggas, pinuputok ang paltos o sinasabing ligtas sa bahay ang paso.
 
-Pakinggan ang tatlo: pagpapalamig, naiwang manggas, at dahilan ng pagpapasuri. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 

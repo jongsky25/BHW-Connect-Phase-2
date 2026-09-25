@@ -45,22 +45,22 @@ Each Read heading is also its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Cool with running water."** It prioritizes safety and timely help.
-  - "Wait without notifying the responsible staff": assessment may be delayed.
-  - "Use the shortcut before confirming the facts": can cause harm (ice, blisters, pulling fabric).
-- **Check 2: "What should the practice show?"** Correct: **"Leave stuck clothing in place."** That is what you observe, with referral.
-  - "Repeat the shortcut…": the shortcut is unsafe.
-  - "Diagnose from the story…": the story is not grounds for a diagnosis.
+- **Check 1: "What comes first?"** Correct: **"Cool it under cool running water."**
+  - "Hold the ice on the burned forearm": ice is a harmful shortcut.
+  - "Peel off the sleeve to see the skin": stuck fabric stays in place.
+- **Check 2: "In the tabletop practice, what should you say?"** Correct: **"Leave the sleeve; assessment may be needed."**
+  - "It is only red, so it is safe to treat at home": not every red burn is.
+  - "Burst any blisters, then cover the arm": do not burst blisters.
 
 ## [observe] What to observe
 
 Watch for: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
 
-- **Kaya na:** Completes the task without prompting: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment.
+- **Kaya na:** In the dry tabletop case, names cooling with cool running water, leaves the stuck sleeve in place and gives a reason for assessment, without prompting.
+- **Kailangan pa ng practice:** Names cooling and leaves the sleeve in place, but needs a prompt to give a reason for assessment.
+- **Hindi pa:** Accepts the ice, pulls off the sleeve, bursts blisters or calls the burn safe for home treatment.
 
-Listen for all three: cooling, sleeve left on, a reason for assessment. A correct self-check is not evidence of the skill.
+A correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 

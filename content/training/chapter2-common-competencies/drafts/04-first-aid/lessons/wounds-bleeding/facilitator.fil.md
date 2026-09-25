@@ -44,20 +44,20 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Idiin ang malinis na tela."** Unahin ang kaligtasan at agarang tulong.
-  - "Gawin muna ang shortcut…": makapipinsala (pagbunot ng nakabaong bagay, mahinang diin, herbal wash, iodine, tetanus deadline nang walang payo).
-  - "Maghintay muna…": maaantala ang assessment.
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Magpatuloy ng pressure at tumawag."** Obserbahan ang gawa at referral.
-  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
-  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
+- **Check 1:** Tama: **"Protektahan ang kamay at idiin nang matatag ang tela."**
+  - "Iangat ang tela para…": Napuputol ang pressure kapag inangat ang tela.
+  - "Hugasan ng herbal wash…": Hindi ginagamit ang rutinang herbal wash, at hindi matatag na pressure ang maluwag na takip.
+- **Check 2:** Tama: **"Magpatong ng tela, idiin pa rin, magpatawag ng tulong."**
+  - "Tanggalin ang basang tela…": Naaantala ang pressure kapag tinanggal ang unang tela.
+  - "Diinan nang mas mahina…": Huwag umasa sa mahinang pressure sa malubhang pagdurugo.
 
 ## [observe] Ano ang oobserbahan
 
 Tingnan kung: Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat.
 
-- **Kaya na:** Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.
+- **Kaya na:** Walang paalala, nagsusuot ng gloves, dumidiin nang matatag, nagpapatong ng tela nang hindi inaangat ang una, nagpapatawag ng tulong at iniuulat kung saan, ano ang ginawa at ang oras.
+- **Kailangan pa ng practice:** Tuloy ang diin, pero kailangan ng paalala sa pagpapatong ng tela, sa pagpapatawag ng tulong o sa pagkumpleto ng ulat.
+- **Hindi pa:** Inaangat o tinatanggal ang tela, tumitigil sa pagdiin, mahina lang ang diin, o hindi nagpapatawag ng tulong.
 
 Tingnan: hindi ba tumitigil ang diin habang nagdadagdag ng tela o tumatawag? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 

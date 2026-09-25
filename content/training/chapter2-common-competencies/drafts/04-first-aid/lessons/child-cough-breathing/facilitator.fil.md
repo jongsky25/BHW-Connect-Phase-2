@@ -44,16 +44,16 @@ Breathing case station (*Mga station sa batang may sakit*). Tatluhan: learner bi
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang unang tugon?"** **"Ipasuri agad ang paghinga."** — kaligtasan at agarang tulong. "Maghintay muna…": naaantala ang assessment. "Gawin muna ang shortcut…": nakapipinsala ang pag-asa sa lumang bilang ng temperatura o paghinga, o ang pangakong makapaghihintay.
-2. **"Ano ang dapat ipakita sa practice?"** **"Iulat ang hirap sa paghinga."** — ang gawa at tamang referral. "Magbigay ng diagnosis…": hindi batayan ang kuwento. "Ulitin ang shortcut…": hindi ligtas.
+1. **"…Ano ang uuna?"** **"Ipasuri agad ang kanyang paghinga."** — kailangang agad masuri. "Sabihing puwede na bukas…": pangakong puwedeng maghintay. "Bilangin ang hinga…": hindi tanging batayan ang lumang bilang.
+2. **"…Ano ang dapat iulat?"** **"Ang itsura ng paghinga at ang sagot sa danger signs."** — ang nakita lamang. "…malamang pulmonya…": diagnosis. "Ang temperatura lang…": iisang bilang, at naiiwan ang paghinga.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.
 
-- **Kaya na:** Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.
+- **Kaya na:** Inilalarawan ang paghinga ni Aya sa simpleng salita, itinatanong ang danger signs at ginagamit ang kumpirmadong daan sa agarang pagsusuri nang hindi nangangakong puwedeng maghintay, nang walang paalala.
+- **Kailangan pa ng practice:** Agad nagre-refer, pero kailangan ng paalala na itanong ang danger signs o sagutin ang hiling ng pamilyang maghintay.
+- **Hindi pa:** Pumapayag maghintay hanggang bukas, nagpapasya batay sa lumang bilang ng paghinga o temperatura, o nagbibigay ng diagnosis.
 
 Pakinggan kung paano sinasagot ang "puwede bang bukas?" nang walang pangako. Hindi patunay ng kasanayan ang tamang self-check.
 

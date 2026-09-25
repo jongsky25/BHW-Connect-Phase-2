@@ -45,22 +45,22 @@ Katugmang slide ang bawat heading ng Read.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Panatilihing hindi gumagalaw."** Inuuna nito ang kaligtasan at agarang tulong.
-  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (tourniquet, paghiwa, pagsipsip, yelo, paghabol, paglalakad).
-  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Ayusin ang mabilis na transport."** Ito ang inoobserbahan.
-  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
-  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Panatilihin siyang kalmado at hindi gumagalaw."**
+  - "Hayaang itali muna ng mga kasama ang tali sa binti": nakapipinsalang tourniquet ito.
+  - "Alalayan siyang maglakad papunta sa kalsada": ang transport ang pupunta sa kanya.
+- **Check 2: "Sa practice, ano ang dapat kasama sa tawag mo para sa transport?"** Tama: **"Ang oras ng kagat at ang nakikita mo."**
+  - "Ang uri ng ahas, kapag nahuli na ng mga kasama": huwag habulin ang ahas.
+  - "Na nilagyan na ng yelo ang kagat": mapanganib na shortcut ang yelo.
 
 ## [observe] Ano ang oobserbahan
 
 Bantayan ang: Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.
 
-- **Kaya na:** Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan.
+- **Kaya na:** Magalang na tinatanggihan ang tali at paglalakad, pinananatiling kalmado at hindi gumagalaw ang tao, at tumatawag ng transport kasama ang oras ng kagat, nang walang paalala.
+- **Kailangan pa ng practice:** Pinananatiling hindi gumagalaw ang tao at tumatawag ng transport, pero kailangan ng paalala para tanggihan ang tali o iulat ang oras ng kagat.
+- **Hindi pa:** Pinapayagan ang tali, paghiwa, pagsipsip o yelo, o pinalalakad ang tao sa halip na tumawag ng transport.
 
-Pakinggan ang magalang na pagtanggi sa tali at ang oras ng kagat sa tawag. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 

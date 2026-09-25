@@ -1,4 +1,4 @@
-# 2.4.5 — First-aid practice: convulsion response
+# 2.4.5 — Respond to convulsions
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,12 +6,12 @@ A child begins shaking on the floor. A neighbor wants to hold the child down and
 
 ## Learner card
 
-Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
+You are the BHW. A bag stands in for the child. Kindly stop the neighbor from holding the child or using the spoon. Clear the space, cushion the head, say the start time aloud and have someone call the confirmed contact. Tell the clinician what you saw.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the neighbor. Say, "Hold her down and put this spoon in her mouth so she won't bite her tongue!" Push once more if the BHW hesitates. When asked, help move things or make the call. Do not act out shaking or add clinical details.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Record the actual words and actions: the space cleared, the start time, the call and the refusal words. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.

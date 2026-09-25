@@ -1,6 +1,6 @@
 ## [purpose] Layunin
 
-Ihihiwalay ng BHW ang lokal na tusok sa agarang senyales, hihingi ng emergency help sa hirap sa paghinga at sasabihin ang hangganan sa gamot.
+Kikilalanin ng BHW ang agarang senyales (pantal sa buong katawan, hirap sa paghinga), hihingi ng emergency help at sasabihin ang hangganan sa gamot.
 
 ## [time-materials] Oras at kagamitan
 
@@ -31,7 +31,7 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
 - **"Lagyan ng suka o toothpaste."** Itanong: *"Makatutulong ba iyan sa paghinga niya?"* Huwag maantala sa home remedy.
-- **"Bigyan ng allergy tablet mula sa kit."** Mabuti ang intensyon. Sabi ng aralin, walang gamot nang walang training at pahintulot.
+- **"Bigyan ng allergy tablet mula sa kit."** Sabi ng aralin, walang gamot nang walang training at pahintulot.
 - **"Tumawag agad ng emergency help at bantayan ang paghinga."** Tama. Itanong kung ano ang iuulat.
 
 ## [misconception] Karaniwang maling akala
@@ -40,31 +40,31 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
 ## [practice] Gawaing pagsasanay
 
-**Bite and sting cards** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Round 1: ihihiwalay ng kalahok sa worksheet ang lokal at agarang senyales. Round 2: tatawag siya, iuulat at babantayan ang paghinga, at sasabihin kung aling gamot ang hindi niya maibibigay. Ang kapareha ang kaibigang nag-aalok ng lunas o tablet. Pupunan ng tagamasid ang worksheet. Isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas.
+**Bite and sting cards** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Round 1: itatala ng kalahok sa worksheet ang agarang senyales sa kaso. Round 2: tatawag siya, iuulat at babantayan ang paghinga, at sasabihin kung aling gamot ang hindi niya maibibigay. Ang kapareha ang kaibigang nag-aalok ng lunas o tablet. Pupunan ng tagamasid ang worksheet. Isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Humingi agad ng emergency help."** Unahin ang kaligtasan at agarang tulong.
-  - "Maghintay muna…": maaantala ang assessment.
-  - "Gawin muna ang shortcut…": makapipinsala (pagturing sa hirap sa paghinga na karaniwang tusok, pagkaantala sa home remedy, gamot nang walang training).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iulat ang hirap sa paghinga."** Obserbahan ang gawa at referral.
-  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
-  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
+- **Check 1:** Tama: **"Humingi agad ng emergency help sa posibleng malubhang allergy."**
+  - "Subukan muna ang home…": Huwag maantala sa home remedy kapag hirap sa paghinga.
+  - "Ituring na karaniwang tusok…": Hindi karaniwang tusok ang hirap sa paghinga.
+- **Check 2:** Tama: **"Ang gamot ay ayon sa sariling reseta at protocol niya."**
+  - "Ibigay na; mas mabuti…": Huwag magbigay ng gamot nang walang training at pahintulot.
+  - "Ako na ang pipili…": Hindi pahintulot ang pagkakaroon ng gamot sa kit.
 
 ## [observe] Ano ang oobserbahan
 
-Tingnan kung: Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.
+Tingnan kung: Kilalanin ang agarang senyales sa kaso (pantal sa buong katawan, hirap sa paghinga), humingi ng emergency help at ilahad ang saklaw ng gamot.
 
-- **Kaya na:** Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.
+- **Kaya na:** Walang paalala, tinutukoy na agarang senyales ang pantal at hirap sa paghinga, tumatawag muna ng emergency help, binabantayan ang paghinga at sinasabing ang gamot ay ayon sa plan ng tao at protocol.
+- **Kailangan pa ng practice:** Tumatawag ng emergency help, pero kailangan ng paalala sa agarang senyales, sa paghinga o sa saklaw ng gamot.
+- **Hindi pa:** Itinuturing na karaniwang tusok, naaantala sa home remedy, o nag-aalok o tumatanggap ng gamot nang walang training at pahintulot.
 
 Tingnan: nauuna ba ang tawag bago ang anumang usapan tungkol sa lunas? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 
 - **Kailangan pa:** nakalimutan ang hangganan sa gamot. Retry action: *"Sabihin sa kaibigan kung sino ang magpapasya sa gamot."* Obserbahan muli ngayon.
-- **Hindi pa:** sabay na ihiwalay muli ang mga senyales; ulitin ang tawag sa susunod na round, una sa tahimik na kapareha. Hindi staff rating ang peer feedback.
+- **Hindi pa:** sabay na tukuyin muli ang agarang senyales; ulitin ang tawag sa susunod na round, una sa tahimik na kapareha. Hindi staff rating ang peer feedback.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 

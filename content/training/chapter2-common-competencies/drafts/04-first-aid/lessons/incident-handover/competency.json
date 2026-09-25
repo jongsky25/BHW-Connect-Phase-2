@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.",
+      "observable_fil": "Magbigay ng factual na handover na may oras at hilinging kumpirmahin ng tatanggap ang susunod na hakbang.",
       "observable_en": "Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
-      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
-      "not_yet_en": "Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.",
+      "not_yet_fil": "Nagdadagdag ng hinulaang diagnosis, kinakaligtaan ang oras o ginawa, o ibinabahagi ang detalye sa labas ng handover.",
+      "not_yet_en": "Adds a guessed diagnosis, leaves out the time or actions, or shares identifiable details outside the care handover.",
       "levels": {
-        "kaya_na_fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang. Nagawa nang walang paalala.",
-        "kaya_na_en": "Completes the task without prompting: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
-        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
-        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
-        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
-        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover."
+        "kaya_na_fil": "Nagha-handover ayon sa ayos ng job aid, may oras, nakita at ginawa, walang hinulaang diagnosis, at hinihiling sa tatanggap na kumpirmahin ang susunod na hakbang, nang walang paalala.",
+        "kaya_na_en": "Hands over in the job aid order with times, observed facts and actions, gives no guessed diagnosis, and asks the receiver to confirm the next action, without prompting.",
+        "kailangan_practice_fil": "Naibibigay ang facts, pero kailangan ng paalala para isama ang oras o hilinging kumpirmahin ang susunod na hakbang.",
+        "kailangan_practice_en": "Gives the facts, but needs a prompt to include the times or to ask the receiver to confirm the next action.",
+        "hindi_pa_fil": "Nagdadagdag ng hinulaang diagnosis, kinakaligtaan ang oras o ginawa, o ibinabahagi ang detalye sa labas ng handover.",
+        "hindi_pa_en": "Adds a guessed diagnosis, leaves out the time or actions, or shares identifiable details outside the care handover."
       }
     }
   ]

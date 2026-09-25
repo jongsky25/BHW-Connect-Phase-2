@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.",
       "observable_en": "At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
-      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.",
-      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification.",
+      "not_yet_fil": "Nagsisimula sa pulso o sa lumang CAB na hakbang, hindi tumatawag ng tulong, o nagsasanay sa totoong tao.",
+      "not_yet_en": "Starts with a pulse check or the old CAB steps, does not call for help, or practises on a live person.",
       "levels": {
-        "kaya_na_fil": "Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Nagawa nang walang paalala.",
-        "kaya_na_en": "Completes the task without prompting: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
-        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
-        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
-        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.",
-        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification."
+        "kaya_na_fil": "Walang paalala, tumatawag ng tulong kasama ang lokasyon at humihingi ng AED bago hawakan ang manikin, saka sinusunod ang adult sequence ng trainer.",
+        "kaya_na_en": "Without prompting, calls for help with the location and asks for the AED before touching the manikin, then follows the trainer's adult sequence.",
+        "kailangan_practice_fil": "Tumatawag ng tulong at AED, pero kailangan ng paalala sa lokasyon, sa AED o sa isang hakbang ng sequence ng trainer.",
+        "kailangan_practice_en": "Calls for help and the AED, but needs a prompt for the location, the AED request or a step of the trainer's sequence.",
+        "hindi_pa_fil": "Nagsisimula sa pulso o sa lumang CAB na hakbang, hindi tumatawag ng tulong, o nagsasanay sa totoong tao.",
+        "hindi_pa_en": "Starts with a pulse check or the old CAB steps, does not call for help, or practises on a live person."
       }
     }
   ]

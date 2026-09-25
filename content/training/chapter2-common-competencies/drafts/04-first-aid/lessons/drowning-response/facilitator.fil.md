@@ -44,20 +44,20 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Tawagin ang water rescuers."** Unahin ang kaligtasan at agarang tulong.
-  - "Maghintay muna…": maaantala ang assessment.
-  - "Gawin muna ang shortcut…": makapipinsala (paglusong sa mapanganib na tubig, pagbaligtad, pag-aakalang sapat ang compression-only CPR).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Manatili sa ligtas na pampang."** Obserbahan ang gawa at referral.
-  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
-  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+- **Check 1:** Tama: **"Tawagin ang sanay na rescuer at huwag lumusong."**
+  - "Lumusong at hilahin mo…": Mapanganib din sa iyo ang paglusong nang walang rescue training.
+  - "Maghintay sa pampang kung…": Naaantala ang rescue kung maghihintay.
+- **Check 2:** Tama: **"Hindi; ayusin agad ang medikal na pagsusuri."**
+  - "Sige, makatutulong sa paghinga…": Huwag baligtarin ang tao para patuluin ang tubig.
+  - "Hindi na kailangang tumawag…": Hindi pa tapos ang pangangailangan sa tulong dahil lang nakaahon na.
 
 ## [observe] Ano ang oobserbahan
 
 Tingnan kung: Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.
 
-- **Kaya na:** Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.
+- **Kaya na:** Walang paalala, nananatili sa ligtas na pampang, tumatawag ng sanay na rescuer kasama ang lokasyon, tumatangging lumusong at sinasabing kailangan ng medikal na pagsusuri.
+- **Kailangan pa ng practice:** Nasa pampang at tumatawag ng rescuer, pero kailangan ng paalala sa lokasyon o sa pangangailangan sa medikal na pagsusuri.
+- **Hindi pa:** Lumulusong o pumapayag lumusong, nagmumungkahing baligtarin ang tao, o hindi tumatawag ng sanay na rescuer.
 
 Tingnan: nananatili ba sa tape ang kalahok kahit itinutulak ng kapareha? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 

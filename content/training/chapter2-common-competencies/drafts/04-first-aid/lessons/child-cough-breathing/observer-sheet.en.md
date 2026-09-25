@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait. |
+| Kaya na | Describes Aya's breathing plainly, asks about danger signs and uses the confirmed urgent route without promising the family she can wait, without prompting. |
+| Kailangan pa ng practice | Refers promptly but needs a prompt to ask about danger signs or to answer the family's request to wait. |
+| Hindi pa | Agrees to wait until tomorrow, decides from an old breathing or temperature number, or names a diagnosis. |
 
 Evidence observed: ____
 

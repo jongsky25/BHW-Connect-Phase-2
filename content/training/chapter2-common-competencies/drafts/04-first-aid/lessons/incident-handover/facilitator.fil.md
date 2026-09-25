@@ -15,7 +15,7 @@ Pagdating ng health worker, nagbibigay ang BHW ng maikli at factual na handover 
 
 ## [opening] Pambungad
 
-Basahin ang kaso: pagkatapos ng pagkadapa, dumating ang health worker, at hawak ni Lea ang facts. Itanong: *"Ano ang dapat nilang unang marinig?"*
+Basahin ang kaso: pagkatapos ng pagkahulog, dumating ang health worker, at hawak ni Lea ang facts. Itanong: *"Ano ang dapat nilang unang marinig?"*
 
 ## [steps] Mga hakbang
 
@@ -47,22 +47,22 @@ Katugmang slide ang bawat heading ng Read.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Ibigay ang sitwasyon at oras."** Inuuna nito ang kaligtasan at agarang tulong.
-  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
-  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (hinulaang diagnosis, nakaligtaang oras o ginawa, pagbabahagi ng detalye).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iulat ang nakita at ginawa."** Ito ang inoobserbahan.
-  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
-  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
+- **Check 1: "Ano ang una mong sasabihin?"** Tama: **"Ang sitwasyon at ang oras."**
+  - "Ang hula mo kung ano ang nabali": walang hinulaang diagnosis.
+  - "Ang buong kuwento mula sa simula": agarang facts muna, ayon sa job aid.
+- **Check 2: "Paano dapat tapusin ang handover mo sa practice?"** Tama: **"Hilinging kumpirmahin ng tatanggap ang susunod na hakbang."**
+  - "Ikuwento rin sa mga nakikiusyoso sa paligid ang lahat ng iniulat": walang detalye sa labas ng handover.
+  - "Sabihin ang sarili mong hula kung bakit siya nahulog": hindi fact ang hula.
 
 ## [observe] Ano ang oobserbahan
 
-Bantayan ang: Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.
+Bantayan ang: Magbigay ng factual na handover na may oras at hilinging kumpirmahin ng tatanggap ang susunod na hakbang.
 
-- **Kaya na:** Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.
+- **Kaya na:** Nagha-handover ayon sa ayos ng job aid, may oras, nakita at ginawa, walang hinulaang diagnosis, at hinihiling sa tatanggap na kumpirmahin ang susunod na hakbang, nang walang paalala.
+- **Kailangan pa ng practice:** Naibibigay ang facts, pero kailangan ng paalala para isama ang oras o hilinging kumpirmahin ang susunod na hakbang.
+- **Hindi pa:** Nagdadagdag ng hinulaang diagnosis, kinakaligtaan ang oras o ginawa, o ibinabahagi ang detalye sa labas ng handover.
 
-Pakinggan ang mga oras at ang tanong sa tatanggap. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet. |
+| Kaya na | Agad tumatawag sa emergency contact, iniuulat ang simula, sintomas at alam na gamot o allergy, at tinatanggihan ang tablet, nang walang paalala. |
+| Kailangan pa ng practice | Tumatawag ng tulong at tinatanggihan ang tablet, pero kailangan ng paalala para iulat ang simula o alam na gamot at allergy. |
+| Hindi pa | Nagbibigay o nagmumungkahi ng tablet o aspirin schedule, o ipinagpapaliban ang tawag para maghanap ng gamot. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -44,16 +44,16 @@ Convulsion scenario (*Call-and-transport rehearsals*). Triads: learner, partner 
 
 ## [answer-key] Self-check answer key
 
-1. **"What comes first?"** **"Clear nearby hazards."** — safety and timely help. "Wait without notifying…": delays assessment. "Use the shortcut…": restraint, the spoon, early drinks or cold-water wiping can cause harm.
-2. **"What should the practice show?"** **"Record seizure timing."** — the task and appropriate referral. "Repeat the shortcut…": unsafe. "Diagnose from the story…": no grounds for independent diagnosis.
+1. **"…What comes first?"** **"Clear nearby hazards and cushion the head."** — the first step. "Put the spoon between the teeth…": nothing in the mouth. "Hold the arms and legs still…": no restraint.
+2. **"…the grandmother offers water…"** **"Nothing by mouth yet; keep watching breathing."** — no drink before full alertness. "Give small sips…": too early. "Wipe the child with cold water…": wiping does not replace the urgent call.
 
 ## [observe] What to observe
 
 Indicator: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
 
-- **Kaya na:** Completes the task without prompting: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure.
+- **Kaya na:** Clears the space, states the start time, calls for help and kindly declines restraint and the spoon, without prompting.
+- **Kailangan pa ng practice:** Keeps the space safe and declines the spoon but needs a prompt to note the start time or to call for help.
+- **Hindi pa:** Allows restraint or the spoon, gives a drink before full alertness, or relies on cold-water wiping instead of calling.
 
 Listen for a start time said aloud and a kind refusal. A correct self-check is not evidence of the skill.
 

@@ -1,4 +1,4 @@
-# 2.4.17 — First-aid practice: first aid kit
+# 2.4.17 — Check first-aid kit readiness
 
 Use fictional details only.
 

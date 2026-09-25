@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. State the situation, observed response and breathing, key timeline, actions taken, changes and support needed. Confirm the receiver heard the urgent concern and document only factual, necessary details. Lea avoids the shortcut.
+When the health worker arrives, Lea says what happened and when. She reports the response and breathing she observed, what she has done, the help already called, any changes, and the support needed. She gives no guess about the injury. She asks the receiver to confirm the urgent concern and the next action, and records only the facts needed.
 
 ## [scope] Scope and support
 

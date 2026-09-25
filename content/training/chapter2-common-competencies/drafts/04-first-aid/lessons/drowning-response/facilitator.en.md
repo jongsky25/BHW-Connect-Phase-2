@@ -44,20 +44,20 @@ Each step matches the slide with the same heading.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Call trained water rescuers."** Safety and timely help come first.
-  - "Wait without notifying…": assessment may be delayed.
-  - "Use the shortcut…": can cause harm (entering unsafe water, inverting the person, assuming compression-only CPR covers drowning).
-- **Check 2: "What should the practice show?"** Correct: **"Remain on a safe shore."** Observe the task and referral.
-  - "Repeat the shortcut…": unsafe, as in Check 1.
-  - "Diagnose from the story…": the story is not grounds for diagnosis.
+- **Check 1:** Correct: **"Call trained rescuers and stay out of the water."**
+  - "Jump in and pull…": Entering unsafe water without rescue training puts you at risk too.
+  - "Wait on the bank…": Waiting delays rescue.
+- **Check 2:** Correct: **"No; arrange urgent medical assessment now."**
+  - "Yes, draining the water…": Do not invert the person to drain water.
+  - "No need to call…": Being out of the water does not end the need for care.
 
 ## [observe] What to observe
 
 Watch for: Choose a safe shore response, activate trained rescue and state the need for medical assessment.
 
-- **Kaya na:** Completes the task without prompting: Choose a safe shore response, activate trained rescue and state the need for medical assessment.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs.
+- **Kaya na:** Without prompting, stays on the safe shore, calls trained rescue with the location, refuses to enter the water and states the need for medical assessment.
+- **Kailangan pa ng practice:** Stays on the shore and calls rescue, but needs a prompt to give the location or to state the need for medical assessment.
+- **Hindi pa:** Enters or agrees to enter the water, suggests inverting the person, or does not call trained rescue.
 
 Look for: the learner holds the line when the partner pushes. A correct self-check is not evidence of the skill.
 

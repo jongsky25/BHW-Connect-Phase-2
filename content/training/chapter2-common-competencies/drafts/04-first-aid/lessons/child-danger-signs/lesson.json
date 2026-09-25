@@ -21,8 +21,8 @@
         "c2.firstaid.child.danger.signs.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: Sabi ng tagapag-alaga, hindi makainom si Niko, tatlong…",
-      "takeaway_en": "Case: A caregiver says three-year-old Niko cannot drink and…",
+      "takeaway_fil": "Kaso: Si Niko, tatlong taon, hindi makainom, isinusuka ang lahat at mahirap gisingin.",
+      "takeaway_en": "Case: Niko, three, cannot drink, vomits everything and is hard to wake.",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.firstaid.child.danger.signs.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Kahit isang danger sign, agad ipasuri sa pasilidad.",
+      "takeaway_en": "Any one danger sign means urgent facility assessment.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Hindi makainom si Niko, isinusuka ang lahat at mahirap gisingin. Ano ang uuna?",
+        "prompt_en": "Niko cannot drink, vomits everything and is hard to wake. What comes first?",
         "options": [
           {
-            "fil": "I-refer agad si Niko.",
-            "en": "Refer Niko urgently."
+            "fil": "Agad ipasuri si Niko sa pasilidad.",
+            "en": "Arrange urgent facility assessment for Niko."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Bantayan muna sa bahay at i-refer kung may dumagdag na senyales.",
+            "en": "Watch him at home and refer if more signs appear."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Painumin muna siya nang paunti-unti bago magpasya.",
+            "en": "Give him small sips of water before deciding."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
-        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow."
+        "feedback_fil": "1: Tama. Kailangang agad ipasuri sa pasilidad kahit isang danger sign lang, at higit sa isa na ang kay Niko. 2: Naaantala ang lunas kapag hinintay ang lahat ng senyales. Sapat ang isang danger sign para agad mag-refer. 3: Hindi makainom si Niko at isinusuka ang lahat. Huwag painumin ang batang hindi ligtas lumunok.",
+        "feedback_en": "1: Right. Any one general danger sign needs urgent facility assessment, and Niko already has more than one. 2: Waiting for every sign delays care. One danger sign is enough to refer urgently. 3: Niko cannot drink and vomits everything. Do not give anything by mouth to a child who cannot safely swallow."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.child.danger.signs.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
-      "takeaway_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+      "takeaway_fil": "Sapat ang isang danger sign: agad i-refer at iulat ang eksaktong nakita.",
+      "takeaway_en": "One danger sign is enough: refer urgently and report the exact signs.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.child.danger.signs.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang diagnosis, walang paghihintay, walang ipaiinom kung hindi ligtas lumunok.",
+      "takeaway_en": "No illness label, no waiting, nothing by mouth when swallowing is unsafe.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.child.danger.signs.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Iulat ang eksaktong senyales, hindi diagnosis.",
+      "takeaway_en": "Hand over the exact signs, not an illness label.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Tinanong ng pasilidad kung ano ang nangyari kay Niko. Ano ang sasabihin sa handover?",
+        "prompt_en": "The facility asks what is wrong with Niko. What should the handover say?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Na mukhang malubhang dehydration ito.",
+            "en": "That it looks like severe dehydration."
           },
           {
-            "fil": "Iulat na hindi makainom.",
-            "en": "Report inability to drink."
+            "fil": "Hindi siya makainom, isinusuka ang lahat at mahirap gisingin.",
+            "en": "He cannot drink, vomits everything and is hard to wake."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Na sumuka lang siya ngayon, dahil baka mawala rin ang ibang senyales.",
+            "en": "Only that he vomited today, since the other signs may pass."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Huwag magbigay ng diagnosis. Ang pasilidad ang magpapasya; ang nakita ang iuulat mo. 2: Tama. Inuulit ng factual na handover ang eksaktong danger signs na iniulat at nakita. 3: Kapag may inalis na senyales, natatago ang pagka-urgent. Sabihin ang eksaktong nakita.",
+        "feedback_en": "1: Do not label the illness. The facility decides; your handover gives what was observed. 2: Right. A factual handover repeats the exact danger signs reported and observed. 3: Leaving out signs hides how urgent this is. State the exact signs you found."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.child.danger.signs.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang pagtukoy ng danger sign at factual na handover sa bagong kaso.",
+      "takeaway_en": "Practise naming a danger sign and a factual handover with a new case.",
       "check": null
     }
   ],

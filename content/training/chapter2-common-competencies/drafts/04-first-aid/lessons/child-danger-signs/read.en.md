@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Ask about drinking, vomiting and convulsions. Observe alertness and current convulsions. Any general danger sign needs urgent facility assessment; communicate the exact sign and arrange safe transfer. Lea avoids the shortcut.
+Niko cannot drink, vomits everything and is unusually hard to wake. The BHW knows one danger sign is enough, so she does not wait for more signs or name an illness. She arranges urgent facility assessment and safe transfer. In the handover she states the exact signs: cannot drink, vomits everything, hard to wake.
 
 ## [scope] Scope and support
 

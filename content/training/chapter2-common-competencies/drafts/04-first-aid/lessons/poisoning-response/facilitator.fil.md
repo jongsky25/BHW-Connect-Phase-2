@@ -41,24 +41,24 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
 ## [practice] Gawaing pagsasanay
 
-**Poisoning call rehearsal** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Markahan ang lugar ng "spill." Ilalayo ng kalahok ang iba, saka tatawag sa kumpirmadong contact (ang tagamasid ang adviser) at ibibigay ang limang impormasyon. Ang kapareha ang kamag-anak na nagpipilit magpasuka o magpainom. Pupunan ng tagamasid ang worksheet (exposure, label, payo, kumpirmadong contact, oras at handover). Dalawang round, isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas; obserbahan pagkatapos.
+**Poisoning call rehearsal** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Markahan ang lugar ng "spill." Ilalayo ng kalahok ang iba, saka tatawag sa kumpirmadong contact (ang tagamasid ang adviser) at ibibigay ang limang impormasyon. Ang kapareha ang kamag-anak na nagpipilit magpasuka o magpainom at may hawak ng label card sa labas ng spill. Pupunan ng tagamasid ang worksheet (exposure, label, payo, kumpirmadong contact, oras at handover). Dalawang round, isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas; obserbahan pagkatapos.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Lumayo at tumawag ng payo."** Unahin ang kaligtasan at agarang tulong.
-  - "Maghintay muna…": maaantala ang assessment.
-  - "Gawin muna ang shortcut…": makapipinsala (pagpapasuka, rutinang pagpapainom, inimbentong panlunas, nakatakdang distansya sa spill).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iulat ang label at oras."** Obserbahan ang gawa at referral.
-  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
-  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
+- **Check 1:** Tama: **"Ilayo ang lahat at tawagan ang kumpirmadong adviser."**
+  - "Kunin ang lalagyan para…": Malalantad ka kung papasok sa amoy.
+  - "Painumin ang bata ng…": Huwag rutinang painumin nang marami.
+- **Check 2:** Tama: **"Label kung ligtas mabasa, oras, paraan, sintomas at edad."**
+  - "Ang hula mo kung…": Huwag manghula o mag-imbento ng panlunas.
+  - "Na may nalunok lang…": Ibigay ang lahat ng ligtas na nakuhang facts: label, oras, paraan, sintomas at edad.
 
 ## [observe] Ano ang oobserbahan
 
 Tingnan kung: Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.
 
-- **Kaya na:** Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.
+- **Kaya na:** Walang paalala, inilalayo ang lahat sa spill, tumatawag sa kumpirmadong contact, ibinibigay ang limang impormasyon nang hindi pumapasok sa spill at sinusunod ang adviser.
+- **Kailangan pa ng practice:** Umiiwas sa spill at tumatawag, pero kailangan ng paalala sa isa sa limang impormasyon o na ang adviser ang susundin, hindi ang kamag-anak.
+- **Hindi pa:** Pumapasok sa spill para sa label, o pumapayag sa pagpapasuka, rutinang pagpapainom o inimbentong panlunas.
 
 Tingnan: kumpleto ba ang limang impormasyon, at walang naiwan sa spill? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 

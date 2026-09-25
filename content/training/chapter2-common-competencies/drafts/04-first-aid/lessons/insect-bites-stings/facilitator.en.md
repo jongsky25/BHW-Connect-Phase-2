@@ -1,6 +1,6 @@
 ## [purpose] Purpose
 
-The BHW tells a local sting apart from urgent signs, calls emergency help for breathing difficulty and says which medicines are outside their role.
+The BHW recognizes the urgent signs in the case (widespread hives, breathing difficulty), calls emergency help and says which medicines are outside their role.
 
 ## [time-materials] Time and materials
 
@@ -40,31 +40,31 @@ Each step matches the slide with the same heading.
 
 ## [practice] Practice activity
 
-**Bite and sting cards** (card: *Call-and-transport rehearsals*), triads. Round 1: the learner sorts the case signs into local or urgent on the worksheet. Round 2: the learner calls, reports and watches breathing, and says which medicine is not theirs to give. The partner plays the friend offering a remedy or a tablet. The observer fills the worksheet rows. One strength and one retry action, rotate. Staff rate. Low-resource: read aloud.
+**Bite and sting cards** (card: *Call-and-transport rehearsals*), triads. Round 1: the learner names the urgent signs in the case on the worksheet. Round 2: the learner calls, reports and watches breathing, and says which medicine is not theirs to give. The partner plays the friend offering a remedy or a tablet. The observer fills the worksheet rows. One strength and one retry action, rotate. Staff rate. Low-resource: read aloud.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Call for emergency help."** Safety and timely help come first.
-  - "Wait without notifying…": assessment may be delayed.
-  - "Use the shortcut…": can cause harm (treating breathing difficulty as a local sting, delaying for home remedies, giving a drug outside training).
-- **Check 2: "What should the practice show?"** Correct: **"Report breathing difficulty."** Observe the task and referral.
-  - "Diagnose from the story…": the story is not grounds for diagnosis.
-  - "Repeat the shortcut…": unsafe, as in Check 1.
+- **Check 1:** Correct: **"Call emergency help now for a possible severe allergy."**
+  - "Try a home remedy…": Do not delay referral for home remedies when breathing is difficult.
+  - "Treat it as a…": Breathing difficulty is not a routine local sting.
+- **Check 2:** Correct: **"Medicine follows the person's own plan and protocol."**
+  - "Give it now; any…": Do not give a drug outside training and authorization.
+  - "Let me choose a…": Having a medicine in the kit is not authorization to give it.
 
 ## [observe] What to observe
 
-Watch for: Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+Watch for: Recognize the urgent signs in the case (widespread hives, breathing difficulty), activate emergency help and state medication boundaries.
 
-- **Kaya na:** Completes the task without prompting: Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization.
+- **Kaya na:** Without prompting, names hives and breathing difficulty as urgent, calls emergency help first, watches breathing and says medicine follows the person's plan and protocol.
+- **Kailangan pa ng practice:** Calls emergency help, but needs a prompt to name the urgent signs, watch breathing or state the medication boundary.
+- **Hindi pa:** Treats the case as a routine sting, delays for a home remedy, or offers or accepts a drug outside training and authorization.
 
 Look for: the call comes before any remedy talk. A correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 
 - **Kailangan pa:** usually forgot the medicine boundary. Retry action: *"Tell the friend who decides about medicine."* Re-observe now.
-- **Hindi pa:** re-sort the signs together; retry the call in a later round, first with a quiet partner. Peer feedback is not a staff rating.
+- **Hindi pa:** name the urgent signs together; retry the call in a later round, first with a quiet partner. Peer feedback is not a staff rating.
 
 ## [sources-review] Sources and review notes
 

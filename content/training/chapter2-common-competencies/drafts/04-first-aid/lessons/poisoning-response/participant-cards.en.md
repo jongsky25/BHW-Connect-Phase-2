@@ -1,4 +1,4 @@
-# 2.4.9 — First-aid practice: poisoning response
+# 2.4.9 — Gather information in suspected poisoning
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,11 +6,11 @@ A child may have swallowed an unknown household cleaner. The container is nearby
 
 ## Learner card
 
-Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.
+Move everyone out of the marked spill area. Call the confirmed contact (the observer plays the adviser). Give the label, estimated time, exposure route, symptoms and age. Read the label only where there is no exposure. Follow the adviser's instructions.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You are the child's relative. You hold the label card outside the spill area. Push the learner once or twice to make the child vomit or drink water. Hand over the label card if asked. Do not add symptoms beyond the case.
 
 ## Observer card
 

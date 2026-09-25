@@ -45,22 +45,22 @@ Each Read heading is also its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What comes first?"** Correct: **"Call for urgent medical help."** It prioritizes safety and timely help.
-  - "Use the shortcut before confirming the facts": can cause harm (aspirin schedule, others' tablets, delaying the call).
-  - "Wait without notifying the responsible staff": assessment may be delayed.
-- **Check 2: "What should the practice show?"** Correct: **"Report pain onset."** That is what you observe, with the referral.
-  - "Diagnose from the story…": the story is not grounds for a diagnosis.
-  - "Repeat the shortcut…": the shortcut is unsafe.
+- **Check 1: "What comes first?"** Correct: **"Call for urgent medical help."**
+  - "Give one of the neighbor's tablets": no one else's tablets; medicine follows protocol.
+  - "Look for aspirin, then call": do not delay the call.
+- **Check 2: "On the practice call, what should you report?"** Correct: **"When the pressure began, and the symptoms."**
+  - "Your own guess about what is causing it": report what you see.
+  - "The aspirin dose that you are planning to give": the BHW does not prescribe.
 
 ## [observe] What to observe
 
 Watch for: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.
 
-- **Kaya na:** Completes the task without prompting: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.
-- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
-- **Hindi pa:** Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication.
+- **Kaya na:** Calls the urgent contact at once, reports onset, symptoms and known medicines or allergies, and declines the tablets, without prompting.
+- **Kailangan pa ng practice:** Calls for help and declines the tablets, but needs a prompt to report onset or known medicines and allergies.
+- **Hindi pa:** Gives or suggests tablets or an aspirin schedule, or delays the call to look for medicine.
 
-Listen for the time of onset in the call. A correct self-check is not evidence of the skill.
+A correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 

@@ -21,7 +21,7 @@
         "c2.firstaid.fracture.dislocation.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: Nadapa ang siklista at masakit at deformed ang braso",
+      "takeaway_fil": "Kaso: Natumba ang siklista at masakit at deformed ang braso",
       "takeaway_en": "Case: A cyclist fell and now has a painful, deformed forearm",
       "check": null
     },
@@ -45,28 +45,28 @@
         "c2.firstaid.fracture.dislocation.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Suportahan ang braso sa posisyong nakita; huwag ituwid o imasahe.",
+      "takeaway_en": "Support the arm as found; do not straighten or massage it.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Masakit at deformed ang braso ng siklista. Ano ang una mong gagawin?",
+        "prompt_en": "The cyclist's forearm is painful and deformed. What do you do first?",
         "options": [
           {
-            "fil": "Suportahan sa kasalukuyang posisyon.",
-            "en": "Support in the position found."
+            "fil": "Suportahan ang braso sa posisyong nakita.",
+            "en": "Support the arm in the position you found it."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Hilahin nang dahan-dahan ang braso gaya ng hiling niya.",
+            "en": "Pull the arm straight gently, as the cyclist asks."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Masahihin ang braso para gumaan bago tumawag.",
+            "en": "Massage the arm to ease the pain before calling."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
-        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+        "feedback_fil": "1: Tama. Iwasan ang hindi kailangang galaw at suportahan ang braso sa posisyong nakita. 2: Huwag ituwid ang deformity kahit hilingin ng tao. Suportahan ito sa posisyong nakita. 3: Huwag itong masahihin. Suportahan sa posisyon at ayusin ang agarang pagsusuri.",
+        "feedback_en": "1: Correct. Avoid unnecessary movement and support the injured part in the position found. 2: Do not straighten a deformity, even if the person asks. Support it as found. 3: Do not massage it. Support it in place and arrange prompt assessment."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.fracture.dislocation.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
-      "takeaway_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+      "takeaway_fil": "Sinusuportahan ni Lea ang braso, nagpapaliwanag, tumitingin sa iba pang problema at tumatawag.",
+      "takeaway_en": "Lea supports the arm as found, explains why, checks other concerns and calls.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.fracture.dislocation.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Huwag ituwid, imasahe o lagyan ng improvised na splint na walang padding.",
+      "takeaway_en": "Do not straighten, massage or use an unpadded improvised splint.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.fracture.dislocation.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Tingnan ang iba pang agarang problema at ayusin ang agarang pagsusuri.",
+      "takeaway_en": "Check for other urgent concerns and arrange prompt assessment.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Suportado na ang braso. Ano pa ang gagawin mo bago dumating ang tulong?",
+        "prompt_en": "The arm is supported. What else do you do before help arrives?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Itali ang patpat bilang splint at pauwiin siyang nakabisikleta.",
+            "en": "Tie a stick to the arm as a splint and let her ride home."
           },
           {
-            "fil": "Huwag ituwid ang braso.",
-            "en": "Do not straighten the arm."
+            "fil": "Tingnan ang iba pang agarang problema at tumawag.",
+            "en": "Check for other urgent concerns and make the call."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Sabihing bugbog lang iyon at puwede na siyang umuwi.",
+            "en": "Tell her it is only a bruise and she can go home."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Huwag gumamit ng improvised na splint na walang padding kung hindi sanay; kailangan pa rin niya ng agarang pagsusuri. 2: Tama. Tingnan ang iba pang agarang problema at ayusin ang agarang pagsusuri. Sanay o lokal na tagubilin ang susundin sa immobilization at paglipat. 3: Hindi nagdi-diagnose ang BHW ng pinsala. Ayusin ang agarang pagsusuri.",
+        "feedback_en": "1: Do not use an unpadded improvised splint without training; she still needs prompt assessment. 2: Correct. Check for other urgent concerns and arrange prompt assessment; trained/local instructions guide immobilization and transfer. 3: A BHW does not diagnose the injury. Arrange prompt assessment."
       }
     },
     {

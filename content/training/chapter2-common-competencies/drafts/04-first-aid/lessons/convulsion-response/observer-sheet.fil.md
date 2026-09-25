@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon. |
+| Kaya na | Nililinis ang paligid, sinasabi ang oras ng simula, humihingi ng tulong at mahinahong tinatanggihan ang pagpigil at kutsara nang walang paalala. |
+| Kailangan pa ng practice | Ligtas ang paligid at tinatanggihan ang kutsara, pero kailangan ng paalala na tandaan ang oras ng simula o humingi ng tulong. |
+| Hindi pa | Pinapayagan ang pagpigil o kutsara, nagpapainom bago lubos na magkamalay, o umaasa sa pagpupunas ng malamig na tubig sa halip na tumawag. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -44,20 +44,20 @@ Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Ano ang unang tugon?"** Tama: **"Suportahan sa kasalukuyang posisyon."** Unahin ang kaligtasan at agarang tulong.
-  - "Maghintay muna…": maaantala ang assessment.
-  - "Gawin muna ang shortcut…": makapipinsala (pagtutuwid, masahe, di-angkop na splint, paglipat ng posibleng may spinal injury).
-- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Huwag ituwid ang braso."** Obserbahan ang gawa at referral.
-  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
-  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+- **Check 1:** Tama: **"Suportahan ang braso sa posisyong nakita."**
+  - "Hilahin nang dahan-dahan ang…": Huwag ituwid ang deformity kahit hilingin ng tao.
+  - "Masahihin ang braso para…": Huwag itong masahihin.
+- **Check 2:** Tama: **"Tingnan ang iba pang agarang problema at tumawag."**
+  - "Itali ang patpat bilang…": Huwag gumamit ng improvised na splint na walang padding kung hindi sanay.
+  - "Sabihing bugbog lang iyon…": Hindi nagdi-diagnose ang BHW ng pinsala.
 
 ## [observe] Ano ang oobserbahan
 
 Tingnan kung: Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.
 
-- **Kaya na:** Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag. Nagawa nang walang paalala.
-- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
-- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.
+- **Kaya na:** Walang paalala, sinusuportahan ang braso sa posisyong nakita, ipinapaliwanag nang hindi naninisi kung bakit hindi ito itutuwid, tinitingnan ang iba pang agarang problema at tumatawag sa kumpirmadong contact.
+- **Kailangan pa ng practice:** Sinusuportahan ang braso sa posisyong nakita, pero kailangan ng paalala sa pagpapaliwanag, sa pagtingin sa iba pang problema o sa pagtawag.
+- **Hindi pa:** Itinutuwid, minamasahe o sini-splint ang braso nang walang training, o hindi tumatawag para sa pagsusuri.
 
 Tingnan: nananatili ba ang braso kung saan ito nakita, at nagpapaliwanag ba ang kalahok nang hindi sinisisi ang siklista? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 

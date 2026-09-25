@@ -4,7 +4,7 @@ May hiwa ang hardinero na patuloy na dumudugo sa malinis na tela. Gustong tangga
 
 ## [action] Gawin at sabihin
 
-Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Magdagdag ng tela kung nabasa habang nagpapatuloy ang pressure.
+Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Kung mabasa ang tela, magdagdag ng tela habang tuloy ang pressure. Tanungin ang sanay na staff tungkol sa iba pang hakbang at follow-up ng sugat.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,11 +12,11 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Magdagdag ng tela kung nabasa habang nagpapatuloy ang pressure. Iniiwasan ni Lea ang shortcut.
+Nagsuot ng gloves si Lea at idiniin nang matatag ang malinis na tela sa hiwa. Nabasa ang tela at gusto itong tanggalin ng saksi. Hindi inalis ni Lea ang unang tela; nagpatong siya ng isa pa nang hindi tumitigil sa pagdiin. Dahil tuloy ang pagdurugo, nag-utos siyang tumawag ng agarang tulong. Iniulat niya kung saan ang sugat, ano ang ginawa at ang oras.
 
 ## [scope] Saklaw at paghingi ng tulong
 
-Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.
+Huwag bunutin ang nakabaong bagay o umasa sa mahinang pressure sa malubhang pagdurugo. Huwag gumamit ng rutinang herbal wash o iodine sa loob ng sugat. Huwag magtakda ng tetanus deadline nang walang clinical na payo.
 
 ## [check-transfer] Subukan sa sitwasyon
 
