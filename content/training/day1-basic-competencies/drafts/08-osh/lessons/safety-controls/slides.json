@@ -1,0 +1,111 @@
+[
+  {
+    "id": "slide-sharps",
+    "concept_ids": [
+      "m8.sharps"
+    ],
+    "layout": "process",
+    "heading_fil": "Ang karayom ay hindi ordinaryong basura",
+    "heading_en": "A needle is not ordinary waste",
+    "display_fil": "Trained user → tamang sharps box sa point of use. Walang recapping, bending o hand-passing. Sundin ang fill line; huwag siksikin. Sa loose sharps, ilayo ang iba at humingi ng trained assistance.",
+    "display_en": "Trained user → correct sharps container at point of use. No recapping, bending or hand-passing. Respect the fill line; never compress contents. For loose sharps, keep others away and get trained assistance.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-infection",
+    "concept_ids": [
+      "m8.infection",
+      "m8.vectors"
+    ],
+    "layout": "process",
+    "heading_fil": "Piliin ang kontrol ayon sa panganib",
+    "heading_en": "Choose controls for the hazard",
+    "display_fil": "Hand hygiene, respiratory hygiene, bentilasyon at PPE ayon sa gawain. Hindi kapalit ng hand hygiene ang gloves. Sa lamok: iwas-kagat at breeding sites. Sundin ang label at facility instruction sa cleaning chemicals.",
+    "display_en": "Use hand and respiratory hygiene, ventilation and task-specific PPE. Gloves do not replace hand hygiene. For mosquitoes, prevent bites and address breeding sites. Follow labels and facility instructions for cleaning chemicals.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-body",
+    "concept_ids": [
+      "m8.ergonomics"
+    ],
+    "layout": "process",
+    "heading_fil": "Alagaan ang katawan habang nagtatrabaho",
+    "heading_en": "Protect the body during work",
+    "display_fil": "Ayusin ang upuan at gamit; bawasan ang paulit-ulit na pagyuko at mabigat na dala. Magpahinga at magpalit ng posisyon. Humingi ng tulong sa pagbubuhat at iulat ang pananakit.",
+    "display_en": "Arrange seating and supplies to reduce repeated bending and heavy carrying. Take breaks and change position. Ask for lifting assistance and report pain.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-workload",
+    "concept_ids": [
+      "m8.stress"
+    ],
+    "layout": "process",
+    "heading_fil": "May hangganan ang oras at kapasidad",
+    "heading_en": "Time and capacity have limits",
+    "display_fil": "Pagod na si Ana ngunit may dagdag na evening visit. Sabihin ang kaya sa napagkasunduang oras; hilingin ang reassignment at pahinga. Ang limitasyon sa trabaho ay proteksyon din.",
+    "display_en": "Ana is exhausted but receives an extra evening visit. Explain capacity within agreed hours; request reassignment and rest. Workload limits are protection too.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m8.sharps",
+      "m8.infection",
+      "m8.vectors",
+      "m8.ergonomics",
+      "m8.stress",
+      "m8.accidents"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Ipares ang limang hazard sa kontrol. Isama ang ligtas na ruta para sa aksidente. Kapag kulang ang mahalagang proteksyon, ihinto at humingi ng tulong.",
+    "display_en": "Match five hazards to controls, including a safe route for accidents. If essential protection is missing, pause and seek assistance.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m8.sharps",
+      "m8.infection",
+      "m8.vectors",
+      "m8.ergonomics",
+      "m8.stress",
+      "m8.accidents"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Piliin ang kontrol ayon sa panganib; hindi kayang palitan ng PPE ang lahat ng pag-aayos sa gawain.",
+    "display_en": "Choose controls for the hazard; PPE cannot replace every change needed in the work.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Halos puno ang sharps box. Ano ang dapat ayusin bago magpatuloy?",
+      "prompt_en": "The sharps box is nearly full. What should be arranged before continuing?",
+      "options": [
+        {
+          "fil": "Siksikin ang laman gamit ang anumang matigas na bagay.",
+          "en": "Compress the contents with a rigid object."
+        },
+        {
+          "fil": "Maglagay muna ng karayom sa ordinaryong basurahan.",
+          "en": "Temporarily put needles in an ordinary bin."
+        },
+        {
+          "fil": "Palitan ayon sa fill line at lokal na protocol bago umapaw.",
+          "en": "Replace it according to the fill line and local protocol before overfilling."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ay nagpapanatili ng tamang lalagyan. Ang pagsiksik at ordinaryong basurahan ay naglalagay sa susunod na handler sa panganib. Hindi solusyon ang dagdag na ingat lamang.",
+      "feedback_en": "The third response maintains proper containment. Compression and ordinary bins endanger the next handler. Extra caution alone is not a solution."
+    }
+  }
+]

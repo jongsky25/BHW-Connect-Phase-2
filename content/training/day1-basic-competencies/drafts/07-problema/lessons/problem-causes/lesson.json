@@ -1,0 +1,173 @@
+{
+  "manifest": {
+    "lesson_key": "problem-causes",
+    "position": 1,
+    "title_fil": "Hanapin ang mga sanhi",
+    "title_en": "Investigate causes",
+    "objectives_fil": [
+      "Gumawa ng cause map na may dalawang posibleng sangay at paraan ng pagberipika, nang hindi itinuturing na patunay ang limang tanong lamang."
+    ],
+    "objectives_en": [
+      "Build a cause map with two possible branches and verification steps, without treating five questions alone as proof."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "whys",
+      "concept_ids": [
+        "m7.whys"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang Five Whys ay paghanap ng nasusuring sanhi kasama ang iba, hindi paulit-ulit na paninisi.",
+      "takeaway_en": "Five Whys investigates evidence-based causes with others instead of repeating blame.",
+      "check": null
+    },
+    {
+      "id": "manual-example",
+      "concept_ids": [
+        "m7.diarrhoea-example"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang worked example ay paraan ng pagsusuri; ang totoong prayoridad ay manggagaling sa lokal na ebidensya.",
+      "takeaway_en": "A worked example teaches a method; real priorities come from local evidence.",
+      "check": null
+    },
+    {
+      "id": "rosario",
+      "concept_ids": [
+        "m7.determinants"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang sakit ay may konteksto: ang tubig, kita, impormasyon at access sa serbisyo ay magkakaugnay.",
+      "takeaway_en": "Illness has a context: water, income, information and access to services interact.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.whys",
+        "m7.diarrhoea-example",
+        "m7.determinants"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+      "takeaway_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.whys",
+        "m7.diarrhoea-example",
+        "m7.determinants"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+      "takeaway_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+      "check": {
+        "prompt_fil": "Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?",
+        "prompt_en": "At the fifth “why,” the group says the mother lacks knowledge. What next?",
+        "options": [
+          {
+            "fil": "Itigil ang usapan dahil lima na ang tanong.",
+            "en": "Stop because five questions have been asked."
+          },
+          {
+            "fil": "Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team.",
+            "en": "Check the evidence and other barriers with the family and health team."
+          },
+          {
+            "fil": "Magplano agad ng lecture para sa lahat ng ina.",
+            "en": "Immediately plan a lecture for every mother."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
+        "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.whys",
+      "read_ids": [
+        "whys",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-whys",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "zff-rosario"
+      ]
+    },
+    {
+      "id": "m7.diarrhoea-example",
+      "read_ids": [
+        "manual-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-manual-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "zff-rosario"
+      ]
+    },
+    {
+      "id": "m7.determinants",
+      "read_ids": [
+        "rosario",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-rosario",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "zff-rosario"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        29
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "zff-rosario",
+      "title": "ZFF Rosario case — repository transcription with provenance and printed workbook pages 48–51",
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/kwento-ni-rosario.md"
+    }
+  ],
+  "assets": []
+}

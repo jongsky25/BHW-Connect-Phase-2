@@ -1,0 +1,87 @@
+[
+  {
+    "id": "slide-handoff",
+    "concept_ids": [
+      "m6.record"
+    ],
+    "layout": "process",
+    "heading_fil": "Iulat ang kailangan para makakilos",
+    "heading_en": "Report enough for action",
+    "display_fil": "Aprubadong form: petsa → concern at pinagmulan → ginawa → follow-up. Sa tamang health team member lamang, gamit ang awtorisadong channel. Kumpirmahin ang pagtanggap at susunod na kikilos.",
+    "display_en": "Approved form: date → concern and source → action taken → follow-up. Send to the appropriate health team member using an authorized channel. Confirm receipt and the next owner.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-audience",
+    "concept_ids": [
+      "m6.record"
+    ],
+    "layout": "process",
+    "heading_fil": "Iangkop ang mensahe sa tatanggap",
+    "heading_en": "Adapt the message to the audience",
+    "display_fil": "Kay Liza: hakbang at contact. Sa midwife: concern, ebidensya at tulong na hinihingi. Sa pulong: pinagsamang pattern na walang pangalan. Iangkop ang detalye sa layunin at tatanggap.",
+    "display_en": "For Liza: step and contact. For the midwife: concern, evidence and requested help. For a meeting: an aggregated pattern without names. Match detail to purpose and recipient.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-meeting",
+    "concept_ids": [
+      "m6.record"
+    ],
+    "layout": "process",
+    "heading_fil": "Ipaliwanag sa pulong nang walang pangalan",
+    "heading_en": "Present at a meeting without names",
+    "display_fil": "Halimbawa: tatlong pamilya ang may childcare barrier. Iulat ang pattern at kulang na impormasyon, saka magtanong tungkol sa posibleng pagbabago. Walang pangalan at walang pangakong aprubado na ang mungkahi.",
+    "display_en": "Example: three households report childcare barriers. Present the pattern and missing information, then ask about a possible change. Include no names and make no promise that a proposal is approved.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m6.record"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Concern → natiyak at kulang → hinihinging tulong. Suriin ang channel, pagtanggap at may-ari ng follow-up.",
+    "display_en": "Concern → verified details and gaps → requested help. Check the channel, receipt and follow-up owner.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m6.record"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.",
+    "display_en": "A handoff gives the right person enough to act while protecting private details.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Humihingi ang barangay meeting ng paliwanag sa missed visits. Ano ang ibabahagi?",
+      "prompt_en": "A barangay meeting asks about missed visits. What should be shared?",
+      "options": [
+        {
+          "fil": "Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul.",
+          "en": "The aggregated childcare barrier and a question about scheduling."
+        },
+        {
+          "fil": "Mga larawan ng household forms para kumpleto.",
+          "en": "Photos of household forms for completeness."
+        },
+        {
+          "fil": "Pangalan ng bawat pamilya at opinyon ng kapitbahay.",
+          "en": "Each family’s name and the neighbor’s opinion."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay angkop sa pagpaplano. Ang forms at pangalan ay naglalantad ng hindi kailangang personal na detalye; ang opinyon ay hindi ebidensya ng dahilan. Ang indibidwal na follow-up ay sa tamang health team member.",
+      "feedback_en": "The first response fits planning. Forms and names expose unnecessary personal details; an opinion is not evidence of the cause. Individual follow-up goes to the appropriate health team member."
+    }
+  }
+]

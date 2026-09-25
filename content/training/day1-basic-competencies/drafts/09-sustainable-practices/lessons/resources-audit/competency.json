@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon.",
+      "observable_en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions.",
+      "not_yet_fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+      "not_yet_en": "Orders from guesses or uses expired or incorrect material simply to save resources.",
+      "levels": {
+        "kaya_na_fil": "May tatlong obserbasyong may kaugnay na resource at ebidensya; nagpapakita ng label, count at return routine; hindi ginagamit ang expired o maling bersyon. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Records three observations with resources and evidence, demonstrates a label-count-return routine and does not use expired items or incorrect versions. Completes this without prompting.",
+        "kailangan_practice_fil": "Nakikita ang waste ngunit walang ebidensya o routine owner; ipapunan ang audit row at ulitin.",
+        "kailangan_practice_en": "Identifies waste but gives no evidence or routine owner; complete the audit row and repeat.",
+        "hindi_pa_fil": "Nag-oorder sa hula o ginagamit ang expired o maling materyal para lang makatipid.",
+        "hindi_pa_en": "Orders from guesses or uses expired or incorrect material simply to save resources."
+      }
+    }
+  ]
+}

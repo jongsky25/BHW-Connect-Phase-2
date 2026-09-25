@@ -1,0 +1,131 @@
+{
+  "manifest": {
+    "lesson_key": "communication-handoff",
+    "position": 4,
+    "title_fil": "Ibahagi ang mahalagang impormasyon",
+    "title_en": "Share relevant information",
+    "objectives_fil": [
+      "Gumawa ng maikling ulat para sa midwife na may concern, pinagmulan at hindi pa tiyak na detalye, hinihinging aksyon at ligtas na paraan ng pagpapadala."
+    ],
+    "objectives_en": [
+      "Prepare a short handoff for the midwife containing the concern, sources and uncertainty, requested action and a secure delivery method."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "handoff",
+      "concept_ids": [
+        "m6.record"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pagtatala at paglalahad ng impormasyon ay dapat malinaw, may susunod na hakbang at para lamang sa tamang tatanggap.",
+      "takeaway_en": "Recording and presenting information requires clarity, a next step and the appropriate recipient.",
+      "check": null
+    },
+    {
+      "id": "audience",
+      "concept_ids": [
+        "m6.record"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang parehong concern ay maaaring ilahad nang magkaiba ayon sa layunin at tamang tatanggap.",
+      "takeaway_en": "The same concern can be presented differently for the purpose and appropriate recipient.",
+      "check": null
+    },
+    {
+      "id": "meeting",
+      "concept_ids": [
+        "m6.record"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang paglalahad sa pulong ay humihingi ng konkretong desisyon habang pinangangalagaan ang pribadong kuwento.",
+      "takeaway_en": "A meeting presentation asks for a concrete decision while protecting private stories.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m6.record"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.",
+      "takeaway_en": "A handoff gives the right person enough to act while protecting private details.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m6.record"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang ulat ay sapat para makakilos ang tamang tao, habang protektado ang pribadong detalye.",
+      "takeaway_en": "A handoff gives the right person enough to act while protecting private details.",
+      "check": {
+        "prompt_fil": "Humihingi ang barangay meeting ng paliwanag sa missed visits. Ano ang ibabahagi?",
+        "prompt_en": "A barangay meeting asks about missed visits. What should be shared?",
+        "options": [
+          {
+            "fil": "Ang pinagsamang childcare barrier at tanong tungkol sa iskedyul.",
+            "en": "The aggregated childcare barrier and a question about scheduling."
+          },
+          {
+            "fil": "Mga larawan ng household forms para kumpleto.",
+            "en": "Photos of household forms for completeness."
+          },
+          {
+            "fil": "Pangalan ng bawat pamilya at opinyon ng kapitbahay.",
+            "en": "Each family’s name and the neighbor’s opinion."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay angkop sa pagpaplano. Ang forms at pangalan ay naglalantad ng hindi kailangang personal na detalye; ang opinyon ay hindi ebidensya ng dahilan. Ang indibidwal na follow-up ay sa tamang health team member.",
+        "feedback_en": "The first response fits planning. Forms and names expose unnecessary personal details; an opinion is not evidence of the cause. Individual follow-up goes to the appropriate health team member."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m6.record",
+      "read_ids": [
+        "handoff",
+        "audience",
+        "meeting",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-handoff",
+        "slide-audience",
+        "slide-meeting",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        28
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        18,
+        19,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

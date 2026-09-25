@@ -1,0 +1,181 @@
+{
+  "manifest": {
+    "lesson_key": "resources-audit",
+    "position": 0,
+    "title_fil": "Saan nasasayang ang resources?",
+    "title_en": "Where are resources wasted?",
+    "objectives_fil": [
+      "Sa halimbawang BHS, itala ang tatlong pag-aaksaya, ang ebidensya at isang ligtas na routine na makababawas sa paghahanap o dobleng pag-order."
+    ],
+    "objectives_en": [
+      "In a sample BHS, record three sources of waste, their evidence and a safe routine that reduces searching or duplicate ordering."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "elena",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tukuyin muna ang nasasayang na resources bago pumili ng pagtitipid.",
+      "takeaway_en": "Identify wasted resources before choosing a saving measure.",
+      "check": null
+    },
+    {
+      "id": "inventory",
+      "concept_ids": [
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources.",
+      "takeaway_en": "Orderly storage supports safe use and accurate resource requests.",
+      "check": null
+    },
+    {
+      "id": "seven-s",
+      "concept_ids": [
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang kaayusan ay pinananatili ng simpleng routine at pananagutan.",
+      "takeaway_en": "A simple routine and clear responsibility sustain order.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources",
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
+      "takeaway_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.competency",
+        "m9.resources",
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
+      "takeaway_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+      "check": {
+        "prompt_fil": "Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?",
+        "prompt_en": "Handouts cannot be found, so someone wants to reorder. What first?",
+        "options": [
+          {
+            "fil": "Mag-order agad ng doble para sigurado.",
+            "en": "Order twice as many immediately."
+          },
+          {
+            "fil": "Suriin ang labeled storage, approved version at bilang ng stock.",
+            "en": "Check labeled storage, approved version and stock count."
+          },
+          {
+            "fil": "Gamitin ang anumang lumang handout na makita.",
+            "en": "Use any old handout that can be found."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.",
+        "feedback_en": "The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.competency",
+      "read_ids": [
+        "elena",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-elena",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.resources",
+      "read_ids": [
+        "elena",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-elena",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.organize",
+      "read_ids": [
+        "inventory",
+        "seven-s",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-inventory",
+        "slide-seven-s",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        19,
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        14,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "tesda-400311217",
+      "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+      "pdf_pages": [
+        33,
+        34,
+        35
+      ],
+      "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover.",
+      "observable_en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover.",
+      "not_yet_fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+      "not_yet_en": "Declares lower totals a success despite reduced or canceled services.",
+      "levels": {
+        "kaya_na_fil": "May owner, baseline, quality measure at review date ang trial; tama ang 20% tungong 5% na paghahambing; isinasaalang-alang ang workload at handover. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Specifies owner, baseline, quality measure and review date; correctly compares 20% with 5%; accounts for workload and handover. Completes this without prompting.",
+        "kailangan_practice_fil": "Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat session o bawat 100 pahina.",
+        "kailangan_practice_en": "Completes the plan but compares raw totals only; prompt for per-session or per-100-page measures.",
+        "hindi_pa_fil": "Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang serbisyo.",
+        "hindi_pa_en": "Declares lower totals a success despite reduced or canceled services."
+      }
+    }
+  ]
+}
