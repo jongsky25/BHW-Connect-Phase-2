@@ -301,9 +301,13 @@ The original questions, for the record:
 
 ## 8. Handoff: finish Chapter I in one run (written 25 Sep 2026, 16:30 UTC)
 
-For the next session. Read `docs/session-handoff.md` §1 first. Work on
-branch **`claude/narrate-gemini-chapter1`**, which is draft PR **#124**. Do
-not cut a new branch.
+For the next session. Read `docs/session-handoff.md` §1 first.
+
+**PR #124 was merged on 25 Sep 2026 with day 1 done**, at the owner's
+request. Production therefore plays Chapter I in mixed voices (Gemini for
+182 recordings, Edge for 108) until this run is merged. Cut a **new branch
+from `main`** and open a new draft PR for the remaining audio. Merging that
+PR is the release.
 
 ### Owner decision: no ceiling for this run
 
@@ -321,7 +325,7 @@ Pass `--max-requests 5000` so the script never stops on its own budget.
   Commit `8c4de53`.
 - **Left:** 108 recordings, about 711 Gemini requests. They still play the
   Edge voice, and the player uses each section's own voice meanwhile.
-- **CI** is green on `8c4de53`.
+- **CI** was green on `8c4de53` before the merge.
 - **Requests used on 25 Sep:** 1,197 in total (both renders, the 1.1.1
   re-render and two probes). Gemini never returned `429` or any error. The
   key's real quota is unknown; the owner can see it in Google AI Studio.
@@ -369,8 +373,8 @@ Pass `--max-requests 5000` so the script never stops on its own budget.
    and the deleted superseded Edge MP3s: `git add -A` on
    `content/training/day1-basic-competencies/narration.json` and
    `public/training/audio`.
-9. **Update PR #124.**
-   - Tick A4 and add the final per-lesson sizes.
+9. **Open the new draft PR.**
+   - Say that it completes A4 of PR #124 and give the final per-lesson sizes.
    - Record that the owner waived the ceiling for this run.
    - Keep the release note: **merging is the release**, because deploy
      serves `public/`.
