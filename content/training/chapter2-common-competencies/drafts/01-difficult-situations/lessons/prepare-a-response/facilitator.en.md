@@ -1,59 +1,75 @@
 ## [purpose] Purpose
 
-120 minutes: opening 10; model 15; triad practice 55; feedback/retry 20; debrief 10; workplace plan 10. Use Slides 1–7, role cards, paper and the observation sheet. Ask: What was the concern? Which words helped? What should happen next? Ready: Includes all four elements and adapts the time to Rosa’s reply without prompting.
-
-Given Rosa’s situation, prepare a response plan with permission, an open question and an appropriate way to seek support.
+The BHW plans Rosa's visit (purpose, permission, open question, support contact) and changes the time when Rosa asks, without guessing her motive.
 
 ## [time-materials] Time and materials
 
-This session is part of the 10-hour behavior competency. Digital reading time is separate. Use the participant cards, observer sheet and job aid. Paper and spoken instructions replace the projector and internet.
+- **120 minutes** face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model and Self-check 1 25, practice 55, feedback and retry 20, Self-check 2 and close 10. App Read: 5–10 minutes, separate.
+- **Materials:** 2.1.1 participant cards, 2.1.1 observation sheet, job aid *A respectful conversation*, blank paper, manila paper.
 
 ## [prepare] Prepare
 
-One week before: confirm the local supervisor and emergency contacts. Print one card set per triad. For 30 participants, form 10 triads; rotate BHW, resident and observer over three rounds. Staff observe each learner before assigning a staff rating; use extra rounds when necessary.
+- Confirm with the midwife the support contact, emergency service and reporting channel; write them into the job aid.
+- Do not teach filling in the household form, forcing entry, or promising services. No medical emergencies in role-play. Immediate danger: get help safely through the local emergency service; confirm with the midwife, RHU or local protocol.
 
 ## [opening] Opening
 
-BHW Amina arrives at Rosa’s home in Cotabato. “Why do you need our names again?” Rosa asks. Neighbors are outside. Amina has a schedule, but she does not yet know Rosa’s concern.
+Ask: *"Amina has her schedule and her form. What does she not know yet?"* List answers in two columns: "Rosa said" and "We guess."
 
 ## [steps] Steps
 
-Read the case and model the dialogue. Ask the first check before revealing feedback. Run the activity below, then the second check. Give a specific strength and one next action. Repeat the part needing improvement, with changed wording from the resident.
+1. **The situation (Read section = matching slide).** Ask: *"What did Rosa actually say? What is only our guess?"*
+2. **What to do and say.** Model it with a co-facilitator. Ask: *"Where did Amina ask permission?"*
+3. **Choose the first response.** Self-check 1; pairs answer before revealing.
+4. **Worked example.** Ask: *"What did Amina learn, and what did she not write?"*
+5. **Scope and support.** Ask: *"When does Amina ask someone else?"* Then run the practice.
+6. **Apply it to the situation.** Self-check 2; pairs answer first.
+7. **On Monday, try this.** Ask: *"When will you show your blank plan to the midwife?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-Amina: “May I explain the visit?” Rosa: “The neighbors can hear.” Amina: “Would you prefer another time?” Rosa chooses the afternoon. Amina does not write “uncooperative.” What she has learned is a concern about privacy.
+- **"Explain the list first."** Partly right. Ask: *"Before explaining, what does Amina need from Rosa?"*
+- **"Rosa won't cooperate."** Understandable. Ask: *"Did Rosa say that?"*
+- **"Finish before the neighbors notice."** Thank them for protecting Rosa. Ask: *"Does rushing answer her concern?"*
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Plans to finish the form before permission, or labels Rosa as unwilling to cooperate.
+**"The visit is about finishing the form."** It is honest: forms get checked. Discuss the check, not the person. Read *"Could I finish my form first?"* and its feedback. Ask: *"If Rosa talks this afternoon, is the form lost?"*
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Write the purpose, opening question, permission request and support contact for Rosa’s situation.
+**Plan card: Rosa's visit.** Triads: Amina, Rosa, observer. Three rounds of 18 minutes; all play Amina once.
 
-Suggested activity; suitable for observation. Use the supplied cards. Residents may decline; do not reward forced agreement. Alone: record a fictional response and self-check, then arrange staff observation. Participation alone is not competence.
+- 5 min: write the four plan elements.
+- 5 min: try it; Rosa may ask for another time.
+- 3 min: observer gives one strength, one action.
+- 5 min: repeat the weak part with new wording.
 
-## [answer-key] Check explanations
+The observer records Amina's exact words. Fictional details only. Alone: say the plan to a colleague or record it, then arrange staff observation.
 
-1: This assumes Rosa’s reason. Find out the concern first. / 2: The open question gives Rosa room to explain. / 3: This puts the form ahead of permission and the concern.
+## [answer-key] Self-check answer key
 
-1: This respects the agreement and gives a clear next step. / 2: This does not address the privacy concern. / 3: That is not what Rosa said; she requested another time.
+1. **What should Amina ask first?** Correct: *"What would you like to clarify about the visit?"*: it gives Rosa room to explain. *"Do you not want to follow the schedule?"* assumes her reason. *"Could I finish my form first?"* puts the form ahead of permission and the concern.
+2. **Which plan fits an afternoon return?** Correct: "Confirm the time and concern to revisit": it respects the agreement. "Finish the questions in front of the neighbors" ignores the privacy concern. "Record that she refused all visits" is not what she said.
 
-## [observe] Observe
+## [observe] What to observe
 
-Shows four plan elements: purpose, permission, an open question and a support route, without guessing Rosa’s motive.
+Staff rate during the practice: Shows four plan elements: purpose, permission, an open question and a support route, without guessing Rosa’s motive.
 
-Ready: Includes all four elements and adapts the time to Rosa’s reply without prompting.
+- **Kaya na:** Includes all four elements and adapts the time to Rosa’s reply without prompting.
+- **Kailangan pa ng practice:** Has an open question and contact but needs a reminder to ask permission first.
+- **Hindi pa:** Plans to finish the form before permission, or labels Rosa as unwilling to cooperate.
 
-Needs practice: Has an open question and contact but needs a reminder to ask permission first.
+Look for permission before any mention of the form. A correct self-check is not evidence of the skill.
 
-Not yet: Plans to finish the form before permission, or labels Rosa as unwilling to cooperate.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** say *"Ask permission before explaining the form,"* then repeat the first minute now.
+- **Hindi pa:** re-model steps 2 and 4. Shorter case: Rosa says *"Not now, I'm busy."* Plan only permission and a return time.
+- Pair with a Kaya na BHW; peer feedback is practice, not a staff rating. Re-observe the same day or at the midwife follow-up within 2–4 weeks.
 
-Allow a spoken or written response and the learner’s preferred language. Ask what helped, what was missed and what to try again. Record only performances you observed. Peer observations support practice and do not become staff ratings.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the listening/planning job aid, blank observation sheet and approved local contact directory. Confirm the reporting channel with the midwife. Keep these cards available for the follow-up practice session.
+- Reference Manual PDF p. 29; Facilitator Guide PDF p. 33; Day 1 Part 2 presentation PDF pp. 19–27.
+- The 120 minutes are an authoring distribution of the 10-hour source allocation.
+- Owner approved and published 25 Sep 2026; no clinical sign-off needed; reviewer names not recorded. Local protocol overrides.

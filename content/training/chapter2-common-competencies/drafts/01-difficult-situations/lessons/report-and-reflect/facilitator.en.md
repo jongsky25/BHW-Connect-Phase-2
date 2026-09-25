@@ -1,59 +1,76 @@
 ## [purpose] Purpose
 
-120 minutes: opening 10; model 15; triad practice 55; feedback/retry 20; debrief 10; workplace plan 10. Use Slides 1–7, role cards, paper and the observation sheet. Ask: What was the concern? Which words helped? What should happen next? Ready: Includes the factual concern, action and follow-up without labels; links the improvement to their own response without prompting.
-
-Given Elena’s situation, make a brief handover with the report, action and next step, then choose one improvement.
+The BHW hands over Elena's concern to the right colleague in three factual lines (what she said, what was done, next step) and names one change to their own response.
 
 ## [time-materials] Time and materials
 
-This session is part of the 10-hour behavior competency. Digital reading time is separate. Use the participant cards, observer sheet and job aid. Paper and spoken instructions replace the projector and internet.
+- **120 minutes** face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model and Self-check 1 25, practice 55, feedback and retry 20, Self-check 2 and close 10. App Read: 5–10 minutes, separate.
+- **Materials:** 2.1.4 participant cards and observation sheet, job aid *A respectful conversation*, blank handover sheets, manila paper.
 
 ## [prepare] Prepare
 
-One week before: confirm the local supervisor and emergency contacts. Print one card set per triad. For 30 participants, form 10 triads; rotate BHW, resident and observer over three rounds. Staff observe each learner before assigning a staff rating; use extra rounds when necessary.
+- Confirm with the midwife the authorized reporting channel and who receives handovers.
+- The resident card holds the model handover; that player acts as the midwife.
+- Not in scope: other record formats. No public chats. Immediate danger: emergency contact first, then the report; confirm with the midwife, RHU or local protocol.
 
 ## [opening] Opening
 
-BHW Datu listened to Elena. Elena asked who could see her household form. She agreed to talk again with the midwife. Datu needs to hand over the concern without telling the whole barangay.
+Ask: *"Elena asked who could see her household form. Who needs to know that? Who does not?"* List answers.
 
 ## [steps] Steps
 
-Read the case and model the dialogue. Ask the first check before revealing feedback. Run the activity below, then the second check. Give a specific strength and one next action. Repeat the part needing improvement, with changed wording from the resident.
+1. **The situation (Read section = matching slide).** *"What exactly did Elena ask?"*
+2. **What to do and say.** Model a three-line handover with no label. *"Which words are Elena's, and which are guesses?"*
+3. **Choose the first response.** Self-check 1; pairs answer before revealing.
+4. **Worked example.** *"What did the handover leave out, and why?"*
+5. **Scope and support.** *"Where should this handover never go?"* Then practise.
+6. **Apply it to the situation.** Self-check 2; pairs answer first.
+7. **On Monday, try this.** *"When will the midwife review your blank handover?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-Handover: “Elena asked who can see the household form. I explained the visit’s purpose. She agreed to speak with the midwife tomorrow. Please confirm the time.” It does not label her “difficult.” Datu’s reflection: offer a private place earlier.
+- **"Elena is difficult."** Understandable. *"What did she actually ask?"*
+- **"She is hiding something."** *"Did she say that, or is it our guess?"*
+- **"Post it in the group chat."** Well meant. *"Who really needs to know?"*
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Adds assumptions or labels to the handover, or shares the story with people who do not need it.
+**"Elena is just a difficult resident."** It is honest when tired; do not correct the speaker. Show the model handover: it does not call her "difficult." Ask: *"What is her concern, and what can I do about it?"*
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Write a three-line handover about Elena. Ask a partner to check for assumptions or unnecessary details. Identify one change for next time.
+**Handover and reflection: Elena.** Triads: Datu, midwife, observer. Three 18-minute rounds; everyone plays Datu once.
 
-Suggested activity; suitable for observation. Use the supplied cards. Residents may decline; do not reward forced agreement. Alone: record a fictional response and self-check, then arrange staff observation. Participation alone is not competence.
+- 5 min: write three lines: what she said, what was done, next step.
+- 3 min: partner checks for guesses, labels or unneeded details.
+- 5 min: hand over aloud to the "midwife."
+- 5 min: name one change; observer feedback.
 
-## [answer-key] Check explanations
+Output: one handover and one improvement per learner. Fictional details only. Alone: write both, then read them to the midwife at the 2–4 week follow-up.
 
-1: This labels the person rather than describing the concern. / 2: This is what she asked and is relevant to the next conversation. / 3: This guesses Elena’s motive rather than reporting confirmed information.
+## [answer-key] Self-check answer key
 
-1: This is a specific change he can try and review. / 2: This does not improve his response or access to service. / 3: This does not examine what happened or what needs to change.
+1. **Which detail belongs in Elena's handover?** Correct: *"She asked who can see the form."* It is what she asked and matters for the next conversation. *"Elena is difficult and asks many questions."* labels the person. *"She does not want anyone to know her real life."* guesses her motive.
+2. **Which reflection is useful?** Correct: "Offer a private place earlier next time." It is a specific change he can try and review. "Avoid all residents who ask many questions" does not improve his response or access to service. "Say everything went well despite not fully listening" does not examine what happened.
 
-## [observe] Observe
+## [observe] What to observe
 
-Separates Elena’s question from assumptions, names the appropriate recipient, records the agreement and chooses one specific improvement.
+Staff rate during the practice: Separates Elena’s question from assumptions, names the appropriate recipient, records the agreement and chooses one specific improvement.
 
-Ready: Includes the factual concern, action and follow-up without labels; links the improvement to their own response without prompting.
+- **Kaya na:** Includes the factual concern, action and follow-up without labels; links the improvement to their own response without prompting.
+- **Kailangan pa ng practice:** The report is factual but the next step is unclear; clarifies it after being asked who will act.
+- **Hindi pa:** Adds assumptions or labels to the handover, or shares the story with people who do not need it.
 
-Needs practice: The report is factual but the next step is unclear; clarifies it after being asked who will act.
+Look for an improvement about the BHW's own words. A correct self-check is not evidence of the skill.
 
-Not yet: Adds assumptions or labels to the handover, or shares the story with people who do not need it.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** *"Who will act, and when?"* Rewrite line three now.
+- **Hindi pa:** re-model steps 2 and 4. Shorter case: a resident asks for an after-work visit; write two lines only.
+- Pair with a Kaya na BHW; peer feedback is practice, not a staff rating. Re-observe the same day or at the midwife follow-up within 2–4 weeks.
 
-Allow a spoken or written response and the learner’s preferred language. Ask what helped, what was missed and what to try again. Record only performances you observed. Peer observations support practice and do not become staff ratings.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the listening/planning job aid, blank observation sheet and approved local contact directory. Confirm the reporting channel with the midwife. Keep these cards available for the follow-up practice session.
+- Reference Manual PDF p. 29; Facilitator Guide PDF p. 33; Day 1 Part 2 presentation PDF pp. 19–27.
+- The 120 minutes are an authoring distribution of the 10-hour source allocation.
+- Owner approved and published 25 Sep 2026; no clinical sign-off needed; reviewer names not recorded. Local protocol overrides.
