@@ -205,14 +205,16 @@ function silentWavDataUri(seconds: number): string {
 
 const SCENE_SVG = `<svg viewBox="0 0 300 100">
   <title>Three-step scene</title>
-  <g data-scene-step="0"><rect x="10" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="50" y="55" text-anchor="middle">One</text></g>
-  <g data-scene-step="1"><rect x="110" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="150" y="55" text-anchor="middle">Two</text></g>
-  <g data-scene-step="2"><rect x="210" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="250" y="55" text-anchor="middle">Three</text></g>
+  <g data-scene-step="1"><rect x="10" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="50" y="55" text-anchor="middle">One</text></g>
+  <g data-scene-step="2"><rect x="110" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="150" y="55" text-anchor="middle">Two</text></g>
+  <g data-scene-step="3"><rect x="210" y="30" width="80" height="40" fill="none" stroke="currentColor" /><text x="250" y="55" text-anchor="middle">Three</text></g>
 </svg>`;
 
-// INC-28: one section whose three body sentences each unlock one
-// data-scene-step of an attached SVG. Each zone gets 1.5s of the silent
-// clip so every build-up stage is on screen long enough to observe.
+// INC-28: one section with four body sentences and a three-step SVG. Step
+// N reveals once body sentence N (0-based) starts, and step numbers must be
+// >= 1 (svg-allowlist rejects the whole SVG otherwise), so sentence 0 shows
+// nothing and sentences 1-3 unlock steps 1-3. Each zone gets 1.5s of the
+// silent clip so every build-up stage is on screen long enough to observe.
 async function setUpSceneCourse(
   request: import("@playwright/test").APIRequestContext,
   adminToken: string,
@@ -265,8 +267,8 @@ async function setUpSceneCourse(
             tier: "core",
             heading_fil: "Eksena",
             heading_en: "Scene",
-            body_fil: "Una. Pangalawa. Pangatlo.",
-            body_en: "First part. Second part. Third part.",
+            body_fil: "Simula. Una. Pangalawa. Pangatlo.",
+            body_en: "Intro. First part. Second part. Third part.",
             visual_position: 0,
             takeaway_fil: "",
             takeaway_en: "",
@@ -277,7 +279,7 @@ async function setUpSceneCourse(
     },
   });
 
-  await request.post(`${supabaseUrl()}/rest/v1/course_module_visuals`, {
+  const visualResponse = await request.post(`${supabaseUrl()}/rest/v1/course_module_visuals`, {
     headers,
     data: {
       module_id: moduleId,
@@ -290,6 +292,7 @@ async function setUpSceneCourse(
       alt_text_en: "Three boxes in a row.",
     },
   });
+  expect(visualResponse.ok(), await visualResponse.text()).toBe(true);
 
   await request.post(`${supabaseUrl()}/rest/v1/course_module_audio`, {
     headers,
@@ -297,15 +300,16 @@ async function setUpSceneCourse(
       module_id: moduleId,
       section_index: 0,
       language: "en",
-      audio_url: silentWavDataUri(6),
+      audio_url: silentWavDataUri(7.5),
       format: "mp3",
-      duration_seconds: 6,
+      duration_seconds: 7.5,
       content_hash: "e2e-scene-fixture",
       timings: [
         { zone: "heading", index: 0, text: "Scene", start_ms: 0, end_ms: 1500 },
-        { zone: "body", index: 0, text: "First part.", start_ms: 1500, end_ms: 3000 },
-        { zone: "body", index: 1, text: "Second part.", start_ms: 3000, end_ms: 4500 },
-        { zone: "body", index: 2, text: "Third part.", start_ms: 4500, end_ms: 6000 },
+        { zone: "body", index: 0, text: "Intro.", start_ms: 1500, end_ms: 3000 },
+        { zone: "body", index: 1, text: "First part.", start_ms: 3000, end_ms: 4500 },
+        { zone: "body", index: 2, text: "Second part.", start_ms: 4500, end_ms: 6000 },
+        { zone: "body", index: 3, text: "Third part.", start_ms: 6000, end_ms: 7500 },
       ],
     },
   });
@@ -408,8 +412,8 @@ test("an animated scene builds up step by step as the narration reaches each sen
 
   await page.getByRole("button", { name: "Play narration" }).click();
 
-  // Heading plays first: no body sentence reached, so nothing is shown yet;
-  // then each body sentence unlocks the step with the matching number.
+  // Heading and the intro sentence show nothing yet; then each later body
+  // sentence unlocks the step with the matching number.
   await expect.poll(() => sceneStepStates(page)).toEqual(["false", "false", "false"]);
   await expect.poll(() => sceneStepStates(page)).toEqual(["true", "false", "false"]);
   await expect.poll(() => sceneStepStates(page)).toEqual(["true", "true", "false"]);
@@ -444,8 +448,8 @@ test("with reduced motion, an animated scene stays fully shown while narration p
   await page.getByRole("button", { name: "Play narration" }).click();
   await expect(page.getByRole("button", { name: "Pause narration" })).toBeVisible();
 
-  // Sampled across the heading and first body sentences — the stretch where
-  // the animated path would be hiding steps.
+  // Sampled across the heading and intro sentence — the stretch where the
+  // animated path would be hiding every step.
   for (let i = 0; i < 4; i += 1) {
     expect(await sceneStepStates(page)).toEqual(["true", "true", "true"]);
     await page.waitForTimeout(750);
