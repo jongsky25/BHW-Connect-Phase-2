@@ -1,5 +1,5 @@
 {
-  "status": "author-source-check-complete; local DRRM and clinical/PFA review approved by user attestation; reviewer documentation not supplied",
+  "status": "author-source-check-complete; local DRRM and clinical review approved by user attestation; reviewer documentation not supplied",
   "checked_on": "2026-09-25",
   "independent_clinical_reviewer": null,
   "clinical_signoff": {
@@ -8,7 +8,7 @@
     "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
     "reviewer_name": null,
     "signoff_artifact": null,
-    "scope": "Chapter 2.7 clinical/PFA review only"
+    "scope": "Chapter 2.7 clinical review; reviewer and PFA-specific coverage not supplied"
   },
   "publication_allowed": false,
   "sources": [
@@ -135,9 +135,9 @@
       "reviewer_name": null,
       "method_or_artifact": null
     },
-    "clinical_and_pfa_review": {
+    "clinical_review": {
       "status": "approved-by-user-attestation",
-      "scope": "Clinical/PFA review",
+      "scope": "Clinical review",
       "date": "2026-09-25",
       "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
       "reviewer_name": null,

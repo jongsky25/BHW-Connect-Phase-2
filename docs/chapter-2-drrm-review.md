@@ -2,7 +2,7 @@
 
 On 25 September 2026, the owner confirmed that local DRRM and clinical review, an observed pilot, and browser visual QA were completed and approved. This is recorded as the owner’s attestation; reviewer names, methods and artifacts were not supplied. Keyboard and print-layout QA and independent Filipino/English instructional review were not included in that confirmation.
 
-Owner approval recorded on 25 September 2026 for all six Chapter 2.7 authoring drafts. Local DRRM, clinical/PFA, language, observed pilot, browser visual QA and publication reviews remain separate.
+Owner approval recorded on 25 September 2026 for all six Chapter 2.7 authoring drafts. Local DRRM, clinical, language, observed pilot, browser visual QA and publication reviews remain separate.
 
 The owner approved Chapter 2.5 (“approve 2.5. do 2.7”). That approval is recorded in the source package and does not constitute medicinal-plant clinical or publication sign-off. Six bilingual Chapter 2.7 DRRM lessons are now authored, bringing the chapter to 55 of 55 planned lessons. Chapter 2 remains isolated from live delivery and unavailable for publication.
 
@@ -18,4 +18,4 @@ The legacy BHERT team makeup and pandemic-era mandates are not presented as curr
 
 ## Verification and remaining review
 
-The chapter validator passes for 55 lessons, 385 Read sections, 385 Slides and 110 checks. The focused suite passes 99 tests across eight files, and ESLint passes for the changed JavaScript files. In-memory DOM simulation exercises the six-lesson preview, check progression and the separation of learner material from private facilitator answers. The in-memory DOM simulation was the authoring check; the owner separately attested completion and approval of browser visual QA, local DRRM/clinical review and an observed pilot. Reviewer identities and artifacts were not supplied. Independent Filipino/English instructional review and keyboard/print-layout QA remain unrecorded. Chapter 2.7 remains an unpublished draft.
+The chapter validator passes for 55 lessons, 385 Read sections, 385 Slides and 110 checks. The focused suite passes 99 tests across eight files, and ESLint passes for the changed JavaScript files. In-memory DOM simulation exercises the six-lesson preview, check progression and separation of learner material from private facilitator answers. The owner separately attested completion and approval of browser visual QA, local DRRM/clinical review and an observed pilot. Reviewer identities, PFA-specific coverage and artifacts were not supplied. Independent Filipino/English instructional review and keyboard/print-layout QA remain unrecorded. Chapter 2.7 remains an unpublished draft.
