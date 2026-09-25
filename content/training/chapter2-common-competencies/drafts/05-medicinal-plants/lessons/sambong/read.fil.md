@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Sambong at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri agad ang matinding sakit at pagbabago sa pag-ihi sa health facility.
+Narinig ng BHW na matindi ang sakit sa tagiliran ni Paolo at kaunti ang ihi. Itinuro niya ang Blumea balsamifera at "Bahagi: dahon" sa card. Hindi niya sinabing kidney stone ito. Itinanong niya ang kasalukuyang gamot ni Paolo. Ipinasuri niya agad sa health facility ang matinding sakit at pagbabago sa pag-ihi.
 
 ## [scope] Saklaw at paghingi ng tulong
 

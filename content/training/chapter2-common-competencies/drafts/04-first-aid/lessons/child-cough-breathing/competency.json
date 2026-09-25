@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.",
       "observable_en": "Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
-      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
-      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait.",
+      "not_yet_fil": "Pumapayag maghintay hanggang bukas, nagpapasya batay sa lumang bilang ng paghinga o temperatura, o nagbibigay ng diagnosis.",
+      "not_yet_en": "Agrees to wait until tomorrow, decides from an old breathing or temperature number, or names a diagnosis.",
       "levels": {
-        "kaya_na_fil": "Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Nagawa nang walang paalala.",
-        "kaya_na_en": "Completes the task without prompting: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
-        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
-        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
-        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
-        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait."
+        "kaya_na_fil": "Inilalarawan ang paghinga ni Aya sa simpleng salita, itinatanong ang danger signs at ginagamit ang kumpirmadong daan sa agarang pagsusuri nang hindi nangangakong puwedeng maghintay, nang walang paalala.",
+        "kaya_na_en": "Describes Aya's breathing plainly, asks about danger signs and uses the confirmed urgent route without promising the family she can wait, without prompting.",
+        "kailangan_practice_fil": "Agad nagre-refer, pero kailangan ng paalala na itanong ang danger signs o sagutin ang hiling ng pamilyang maghintay.",
+        "kailangan_practice_en": "Refers promptly but needs a prompt to ask about danger signs or to answer the family's request to wait.",
+        "hindi_pa_fil": "Pumapayag maghintay hanggang bukas, nagpapasya batay sa lumang bilang ng paghinga o temperatura, o nagbibigay ng diagnosis.",
+        "hindi_pa_en": "Agrees to wait until tomorrow, decides from an old breathing or temperature number, or names a diagnosis."
       }
     }
   ]

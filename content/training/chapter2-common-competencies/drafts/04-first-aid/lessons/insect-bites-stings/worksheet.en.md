@@ -1,10 +1,10 @@
-# 2.4.12 — First-aid practice: insect bites stings
+# 2.4.12 — Respond to bites and stings
 
 Use fictional details only.
 
 | Element | Observed evidence | Next action |
 |---|---|---|
-| Sting | ____ | ____ |
+| Urgent signs seen | ____ | ____ |
 | Breathing | ____ | ____ |
 | Help | ____ | ____ |
 | Confirmed contact | ____ | ____ |

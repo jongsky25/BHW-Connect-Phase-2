@@ -1,57 +1,73 @@
 ## [purpose] Purpose
 
-20 minutes: opening 3; model 3; supervised case practice 8; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Use a prop to show support in place, explain when movement is unsafe and make the referral call.
+With a simple prop, the BHW supports an injured arm in the position found, explains why it should not be moved or straightened, and makes the referral call.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 20 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2, model 3, practice 10, feedback 3, checks 2. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.11 participant cards, worksheet, observation sheet; *First aid and referral* job aid; a simple prop to show support in place (a folded towel or rolled newspaper).
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm the referral facility, transport and emergency contact. Write them on the job aid.
+- **Scope:** support in place only. Do not teach splinting, straightening, massage or moving a possible spinal injury. Immobilization and transfer follow trained or local instructions: *"Confirm with the RHU or local protocol."*
 
 ## [opening] Opening
 
-A cyclist fell and now has a painful, deformed forearm. She can speak and wants the arm pulled straight.
+Say: *"A cyclist fell. Her forearm is painful and bent. She can talk, and she begs you, 'Pull it straight!' What do you say to her?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step matches the slide with the same heading.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"Why might she want it pulled straight?"*
+2. **"What to do and say."** Ask: *"What does 'support in the position found' look like?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model Lea supporting the arm on the prop. Ask: *"What else did Lea check for?"* (Other urgent concerns.)
+5. **"Scope and support."** Ask: *"Which of these have you seen done?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"Which facility takes injuries?"*
 
-This is the safe response in the case. Avoid unnecessary movement. Support the injured part in the position found and arrange prompt assessment. Check for other urgent concerns and follow trained/local instructions for immobilization and transfer. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Pull it straight, it will hurt less."** Understandable; she is in pain. Point to the scope slide: do not straighten a deformity.
+- **"Call the hilot to massage it."** Respect the tradition. The lesson says no massage; the facility assesses.
+- **"Support it as it is and call."** Confirm. Ask how they explain *why* to the cyclist.
 
-Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"A bent bone should be set right away."** Many families have seen bones set at home. The lesson says avoid movement and arrange prompt assessment. Ask: *"Who in the lesson decides how to immobilize?"* Let the group answer: trained staff, by local instructions.
 
-Use a prop to show support in place, explain when movement is unsafe and make the referral call. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Injury support station** (card: *Injury stations with props*), triads. The partner plays the cyclist asking for the arm to be pulled straight. The learner supports the arm on the prop as found, explains why not to move or straighten it, and calls the confirmed contact. The observer fills the worksheet rows. Two rounds, one strength and one retry action, rotate. Staff rate. Low-resource: rolled newspaper as the prop.
 
-1: Prioritize safety and timely help. / 2: Necessary assessment may be delayed. / 3: The shortcut can cause harm: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it.
+## [answer-key] Self-check answer key
 
-1: The shortcut is unsafe: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it. / 2: Observe the task and appropriate referral. / 3: The story is not grounds for an independent diagnosis.
+- **Check 1:** Correct: **"Support the arm in the position you found it."**
+  - "Pull the arm straight…": Do not straighten a deformity, even if the person asks.
+  - "Massage the arm to…": Do not massage it.
+- **Check 2:** Correct: **"Check for other urgent concerns and make the call."**
+  - "Tie a stick to…": Do not use an unpadded improvised splint without training.
+  - "Tell her it is…": A BHW does not diagnose the injury.
 
-## [observe] Observe
+## [observe] What to observe
 
-Use a prop to show support in place, explain when movement is unsafe and make the referral call.
+Watch for: Use a prop to show support in place, explain when movement is unsafe and make the referral call.
 
-Ready: Completes the task without prompting: Use a prop to show support in place, explain when movement is unsafe and make the referral call.
+- **Kaya na:** Without prompting, supports the arm as found, explains without blame why it will not be straightened, checks for other urgent concerns and calls the confirmed contact.
+- **Kailangan pa ng practice:** Supports the arm as found, but needs a prompt to explain why it is not straightened, to check other concerns or to make the call.
+- **Hindi pa:** Straightens, massages or splints the arm without training, or does not call for assessment.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for: the arm stays where it was found, and the learner explains without blaming the cyclist. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** usually supported but did not call. Retry action: *"Call while you hold."* Re-observe now.
+- **Hindi pa:** re-model support in place; retry in a later round with a calm partner first. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 45; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- 20 minutes is an authoring share of F38's 8 hours.
+- Program owner attested clinical sign-off, 25 Sep 2026; reviewers not named. Local protocol overrides.

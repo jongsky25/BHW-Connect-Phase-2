@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok. |
+| Kaya na | Natutukoy ang danger signs ni Niko, agad nagre-refer kahit hilingin ng tagapag-alaga na maghintay, at iniuulat ang eksaktong senyales nang walang diagnosis at walang paalala. |
+| Kailangan pa ng practice | Agad nagre-refer, pero kailangan ng paalala na sabihin ang eksaktong senyales sa handover o manindigan kapag hiniling na maghintay. |
+| Hindi pa | Pumapayag maghintay ng dagdag na senyales, nagbibigay ng diagnosis sa halip na senyales, o nag-aalok na painumin ang bata. |
 
 Aktuwal na nakita/narinig: ____
 

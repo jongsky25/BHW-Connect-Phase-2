@@ -1,17 +1,17 @@
-# 2.4.18 — First-aid practice: incident handover
+# 2.4.18 — Iparating ang detalye ng insidente
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
-Pagkatapos ng pagkadapa, dumating ang health worker. Hawak ni BHW Lea ang lugar, oras, nakita at natawag na tulong.
+Pagkatapos ng pagkahulog, dumating ang isa pang health worker. Hawak ni BHW Lea ang facts sa lugar, oras, nakitang kondisyon at natawag na tulong.
 
 ## Card ng kalahok
 
-Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.
+Ikaw si BHW Lea. Mag-handover ayon sa ayos ng job aid: sitwasyon at oras, tugon at paghinga, ginawa at natawag na tulong, pagbabago, kailangang tulong. Tapusin sa paghiling sa tatanggap na kumpirmahin ang susunod na hakbang.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang health worker na kararating lang. Sabihin: "Nandito na ako. Ano ang nangyari?" Makinig nang hindi sumisingit. Kung walang oras na nabanggit, itanong nang isang beses: "Kailan ito nangyari?" Kapag hiniling na kumpirmahin, ulitin ang agarang alalahanin at ang susunod na hakbang. Huwag magdagdag ng bagong sugat o diagnosis.
 
 ## Card ng tagamasid
 
-Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+Pakinggan ang mga oras at ang tanong sa tatanggap. Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.

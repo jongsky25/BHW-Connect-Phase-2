@@ -1,4 +1,4 @@
-# 2.7.5 — Practice: essential health packages
+# 2.7.5 — Practice: Connect people to essential services
 
 Use fictional details only.
 

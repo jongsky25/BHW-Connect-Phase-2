@@ -1,6 +1,6 @@
 ## [scene] Ang sitwasyon
 
-Pagkatapos ng pagbaha, hinihiling sa BHW na maglista ng sintomas at maghatid ng impormasyon sa response team. Hindi malinaw kung aktibo ang lumang BHERT roster.
+Pagkatapos ng pagbaha, hinihiling sa BHW na itala ang mga alalahanin at maghatid ng impormasyon sa response team. Hindi malinaw kung aktibo ang lumang BHERT roster.
 
 ## [action] Gawin at sabihin
 

@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Ulasimang bato / pansit-pansitan and its botanical name on the card. The yard plant is not assumed to be identified. Ask the health center to assess the pain and current medicines.
+The BHW hears the neighbor's gout claim and does not call Carlo's joint pain gout. The BHW points to Peperomia pellucida and "Part: leafy tops" on the card. The BHW asks about Carlo's current medicine, says not to stop it, and asks the health center to assess the pain and his medicines.
 
 ## [scope] Scope and support
 

@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.",
-      "observable_en": "Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.",
-      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
-      "not_yet_en": "Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization.",
+      "observable_fil": "Kilalanin ang agarang senyales sa kaso (pantal sa buong katawan, hirap sa paghinga), humingi ng emergency help at ilahad ang saklaw ng gamot.",
+      "observable_en": "Recognize the urgent signs in the case (widespread hives, breathing difficulty), activate emergency help and state medication boundaries.",
+      "not_yet_fil": "Itinuturing na karaniwang tusok, naaantala sa home remedy, o nag-aalok o tumatanggap ng gamot nang walang training at pahintulot.",
+      "not_yet_en": "Treats the case as a routine sting, delays for a home remedy, or offers or accepts a drug outside training and authorization.",
       "levels": {
-        "kaya_na_fil": "Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Nagawa nang walang paalala.",
-        "kaya_na_en": "Completes the task without prompting: Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.",
-        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
-        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
-        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
-        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization."
+        "kaya_na_fil": "Walang paalala, tinutukoy na agarang senyales ang pantal at hirap sa paghinga, tumatawag muna ng emergency help, binabantayan ang paghinga at sinasabing ang gamot ay ayon sa plan ng tao at protocol.",
+        "kaya_na_en": "Without prompting, names hives and breathing difficulty as urgent, calls emergency help first, watches breathing and says medicine follows the person's plan and protocol.",
+        "kailangan_practice_fil": "Tumatawag ng emergency help, pero kailangan ng paalala sa agarang senyales, sa paghinga o sa saklaw ng gamot.",
+        "kailangan_practice_en": "Calls emergency help, but needs a prompt to name the urgent signs, watch breathing or state the medication boundary.",
+        "hindi_pa_fil": "Itinuturing na karaniwang tusok, naaantala sa home remedy, o nag-aalok o tumatanggap ng gamot nang walang training at pahintulot.",
+        "hindi_pa_en": "Treats the case as a routine sting, delays for a home remedy, or offers or accepts a drug outside training and authorization."
       }
     }
   ]

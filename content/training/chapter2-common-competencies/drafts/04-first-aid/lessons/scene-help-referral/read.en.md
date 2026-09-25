@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Look for hazards before approaching. Direct the bystander to activate the locally confirmed emergency route. Check response and normal breathing from a safe position; share location and observed facts. Wait for trained help and follow the local referral plan. Lea avoids the shortcut.
+Lea stops at the roadside and watches the traffic before stepping closer. She asks the bystander to call the confirmed contact and says the location aloud. From a safe position, she checks whether the rider responds and breathes normally, then reports what she saw. She does not ask for the full story first, and she waits for trained help.
 
 ## [scope] Scope and support
 

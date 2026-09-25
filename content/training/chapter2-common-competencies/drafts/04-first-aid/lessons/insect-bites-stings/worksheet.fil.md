@@ -1,10 +1,10 @@
-# 2.4.12 — First-aid practice: insect bites stings
+# 2.4.12 — Tumugon sa kagat at tusok ng insekto
 
 Kathang-isip na detalye lamang.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
-| Tusok | ____ | ____ |
+| Agarang senyales | ____ | ____ |
 | Paghinga | ____ | ____ |
 | Tulong | ____ | ____ |
 | Kumpirmadong contact | ____ | ____ |

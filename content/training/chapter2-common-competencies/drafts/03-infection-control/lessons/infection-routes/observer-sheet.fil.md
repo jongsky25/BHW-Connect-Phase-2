@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Tama ang walong pag-uugnay; walang bansag o diagnosis at may angkop na kontrol nang walang paalala. |
-| Kailangan practice | Karamihan ay tama pero kailangang linawin ang contact at paglanghap; naitatama matapos ang feedback. |
+| Kailangan pa ng practice | Karamihan ay tama pero kailangang linawin ang contact at paglanghap; naitatama matapos ang feedback. |
 | Hindi pa | Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan. |
 
 Aktuwal na nakita/narinig: ____

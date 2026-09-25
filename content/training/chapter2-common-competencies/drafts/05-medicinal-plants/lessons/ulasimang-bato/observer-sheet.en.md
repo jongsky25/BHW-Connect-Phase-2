@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Ulasimang bato / pansit-pansitan, Peperomia pellucida, leafy tops, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Peperomia pellucida and leafy tops, does not call it gout, keeps medicine unchanged and asks the health center to assess Carlo without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to question the gout claim or to refer Carlo. |
+| Hindi pa | Calls it gout, promises a cure or tells Carlo to stop his medicine. |
 
 Evidence observed: ____
 

@@ -1,4 +1,4 @@
-# 2.4.8 — First-aid practice: drowning response
+# 2.4.8 — Ligtas na tumugon sa pagkalunod
 
 Kathang-isip na detalye lamang.
 

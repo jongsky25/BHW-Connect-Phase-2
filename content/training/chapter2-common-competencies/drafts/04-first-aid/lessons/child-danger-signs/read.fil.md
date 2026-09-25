@@ -4,7 +4,7 @@ Sabi ng tagapag-alaga, hindi makainom si Niko, tatlong taong gulang, at isinusuk
 
 ## [action] Gawin at sabihin
 
-Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at kasalukuyang kombulsyon. Kung may danger sign, agad ipasuri sa pasilidad at ilahad ang nakita.
+Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at kasalukuyang kombulsyon. Kung may kahit isang danger sign, agad ipasuri sa pasilidad. Sabihin ang eksaktong nakita at ayusin ang ligtas na paglipat.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at kasalukuyang kombulsyon. Kung may danger sign, agad ipasuri sa pasilidad at ilahad ang nakita. Iniiwasan ni Lea ang shortcut.
+Hindi makainom si Niko, isinusuka ang lahat at mahirap gisingin. Alam ng BHW na sapat ang kahit isang danger sign. Hindi siya naghihintay ng iba pang senyales at hindi nagbibigay ng diagnosis. Agad niyang ipinasusuri si Niko sa pasilidad at inaayos ang ligtas na paglipat. Sa handover, sinasabi niya ang eksaktong nakita: hindi makainom, isinusuka ang lahat, mahirap gisingin.
 
 ## [scope] Saklaw at paghingi ng tulong
 

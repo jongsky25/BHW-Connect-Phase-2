@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Sambong and its botanical name on the card. The yard plant is not assumed to be identified. Seek prompt facility assessment for severe pain and changed urination.
+The BHW hears that Paolo's side pain is severe and he has little urine. The BHW points to Blumea balsamifera and "Part: leaves" on the card, and does not call it a kidney stone. The BHW asks about his current medicine and seeks prompt facility assessment for the severe pain and changed urination.
 
 ## [scope] Scope and support
 

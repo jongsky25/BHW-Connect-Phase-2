@@ -52,21 +52,21 @@
         "prompt_en": "Which Yerba buena part is listed on the card?",
         "options": [
           {
-            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Yerba buena.",
-            "en": "Any part of a yard plant even when its identity as Yerba buena is unconfirmed."
-          },
-          {
             "fil": "Dahon ng kumpirmadong Mentha cordifolia.",
             "en": "Leaves of confirmed Mentha cordifolia."
           },
           {
-            "fil": "Hindi kailangang malaman ang botanical name.",
-            "en": "The botanical name need not be checked."
+            "fil": "Anumang dahong tinatawag ni Eva na Yerba buena, nang hindi sinusuri.",
+            "en": "Any leaves Eva calls Yerba buena, unchecked."
+          },
+          {
+            "fil": "Dahon ng anumang halamang sinasabing pampaginhawa sa sakit ng ngipin.",
+            "en": "Leaves of any plant said to ease tooth pain."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama: dahon ng Mentha cordifolia ang nakalista sa card. Hindi ito dose para kay Eva. 2: Hindi patunay ng halaman ang local name; tingnan ang botanical name. 3: Kailangan ng dental assessment ang sakit ng ngipin; itugma ang botanical name, hindi ang reklamo.",
+        "feedback_en": "1: Correct: the card lists leaves of Mentha cordifolia. This is not a dose for Eva. 2: A local name does not confirm the plant; check the botanical name. 3: Tooth pain needs dental assessment; match the botanical name, not the complaint."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.yerba-buena.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
-      "takeaway_en": "For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "takeaway_fil": "Iugnay agad ang pamamaga ni Eva at huwag magmungkahi ng paghahanda.",
+      "takeaway_en": "Refer Eva's swelling promptly and suggest no preparation.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.yerba-buena.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi kapalit ng dental care ni Eva ang halaman.",
+      "takeaway_en": "A plant does not replace dental care for Eva.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.yerba-buena.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
-      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "takeaway_fil": "Iugnay agad ang pamamaga sa dental o health professional.",
+      "takeaway_en": "Refer the swelling promptly to a dental or health professional.",
       "check": {
-        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Yerba buena?",
-        "prompt_en": "What is the safe response in the Yerba buena case?",
+        "prompt_fil": "May masakit na ngipin at namamagang pisngi si Eva. Ano ang ligtas na tugon?",
+        "prompt_en": "Eva has tooth pain and a swollen cheek. What is the safe response?",
         "options": [
           {
-            "fil": "Ipalit agad sa niresetang gamot.",
-            "en": "Replace prescribed treatment now."
+            "fil": "Imungkahi ang paghahanda ng Yerba buena na iinumin o ipapahid.",
+            "en": "Suggest a Yerba buena preparation to drink or apply now."
           },
           {
-            "fil": "Kumonsulta muna sa clinician.",
-            "en": "Consult a clinician first."
+            "fil": "Iugnay agad si Eva sa dental o health professional.",
+            "en": "Refer her promptly to a dental or health professional."
           },
           {
-            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-            "en": "Copy an old recipe without assessment."
+            "fil": "Sabihing puwedeng ipalit ang halaman sa pagpapatingin sa dentista.",
+            "en": "Tell her the plant can take the place of a dental visit."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+        "feedback_fil": "1: Huwag magtakda ng iniinom o ipinapahid na paghahanda; walang awtorisado sa lesson na ito. 2: Tama: kailangang iugnay agad ang pamamaga; iulat din ang mga sintomas. 3: Hindi kapalit ng dental care ang halaman, kahit malayo ang dentista.",
+        "feedback_en": "1: Do not prescribe an oral or topical preparation; this lesson authorizes none. 2: Correct: the swelling needs prompt referral; report her symptoms too. 3: A plant does not replace dental care, even when the dentist is far."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.yerba-buena.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ihambing ang dalawang Yerba buena card kasama ang supervisor.",
+      "takeaway_en": "On Monday, compare two Yerba buena cards with a supervisor.",
       "check": null
     }
   ],

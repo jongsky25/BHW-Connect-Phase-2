@@ -1,4 +1,4 @@
-# 2.4.7 — First-aid practice: cpr bls orientation
+# 2.4.7 — Maghanda sa supervised CPR/BLS practice
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,11 +6,11 @@ Ang training manikin ay adult na hindi tumutugon at hindi normal ang paghinga. M
 
 ## Card ng kalahok
 
-Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.
+Ikaw ang unang nasa manikin. Bago ito hawakan, tumawag ng tulong, sabihin ang lokasyon at humingi ng AED. Saka sundin ang kasalukuyang adult sequence ng trainer. Sa manikin lamang ang compression.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Ikaw ang saksing uutusang humingi ng tulong. Hintayin ang utos ng kalahok. Ulitin ang lokasyon, saka sabihing hihingi ka ng tulong at AED. Huwag magmungkahi ng hakbang o magdagdag ng clinical na detalye.
 
 ## Card ng tagamasid
 

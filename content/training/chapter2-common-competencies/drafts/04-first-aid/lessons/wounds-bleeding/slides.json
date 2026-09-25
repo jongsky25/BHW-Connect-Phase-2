@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: May hiwa ang hardinero na patuloy na dumudugo sa malinis…",
-    "display_en": "Case: A gardener has a cut that continues to bleed through a…",
+    "display_fil": "Patuloy na dumudugo ang hiwa ng hardinero sa malinis na tela\nGustong tanggalin ng saksi ang unang dressing",
+    "display_en": "A gardener's cut keeps bleeding through a clean cloth\nA bystander suggests wiping away the first dressing",
     "check": null,
     "narration_fil": "May hiwa ang hardinero na patuloy na dumudugo sa malinis na tela. Gustong tanggalin ng saksi ang unang dressing.",
     "narration_en": "A gardener has a cut that continues to bleed through a clean cloth. A bystander suggests wiping away the first dressing."
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Protektahan ang kamay at idiin nang matatag ang malinis na tela\nHumingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo\nMagdagdag ng tela kung nabasa habang nagpapatuloy ang pressure",
-    "display_en": "Protect your hands and apply firm direct pressure with clean…\nActivate urgent help for severe or persistent bleeding\nAdd material if soaked while maintaining pressure; ask trained…",
+    "display_fil": "Protektahan ang kamay; idiin nang matatag ang malinis na tela\nMalubha o tuloy-tuloy na pagdurugo: humingi agad ng tulong\nKung basa, magdagdag ng tela habang tuloy ang pressure\nTanungin ang sanay na staff sa iba pang hakbang at follow-up",
+    "display_en": "Protect your hands; press firmly with clean material\nSevere or persistent bleeding: activate urgent help\nIf soaked, add material while keeping pressure\nAsk trained staff about further measures and follow-up",
     "check": null,
-    "narration_fil": "Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Magdagdag ng tela kung nabasa habang nagpapatuloy ang pressure.",
+    "narration_fil": "Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Kung mabasa ang tela, magdagdag ng tela habang tuloy ang pressure. Tanungin ang sanay na staff tungkol sa iba pang hakbang at follow-up ng sugat.",
     "narration_en": "Protect your hands and apply firm direct pressure with clean material. Activate urgent help for severe or persistent bleeding. Add material if soaked while maintaining pressure; ask trained staff about further measures and wound follow-up."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Patuloy na dumudugo ang hiwa sa malinis na tela. Ano ang una mong gagawin?",
+      "prompt_en": "The cut keeps bleeding through the clean cloth. What do you do first?",
       "options": [
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Iangat ang tela para makita kung gaano kalalim ang hiwa.",
+          "en": "Lift the cloth to see how deep the cut is."
         },
         {
-          "fil": "Idiin ang malinis na tela.",
-          "en": "Apply direct pressure."
+          "fil": "Protektahan ang kamay at idiin nang matatag ang tela.",
+          "en": "Protect your hands and press firmly with clean cloth."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Hugasan ng herbal wash ang hiwa, saka takpan nang maluwag.",
+          "en": "Wash the cut with an herbal rinse, then cover it loosely."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
-      "feedback_en": "1: The shortcut can cause harm: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+      "feedback_fil": "1: Napuputol ang pressure kapag inangat ang tela. Iwan ang unang tela at idiin nang matatag. 2: Tama. Protektahan ang kamay, saka idiin nang matatag ang malinis na tela. 3: Hindi ginagamit ang rutinang herbal wash, at hindi matatag na pressure ang maluwag na takip.",
+      "feedback_en": "1: Lifting the cloth interrupts pressure. Keep the first cloth in place and press firmly. 2: Correct. Protect your hands, then apply firm direct pressure with clean material. 3: Routine herbal wash is not used, and a loose cover is not firm pressure."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo\nMagdagdag ng tela kung nabasa habang nagpapatuloy ang pressure",
-    "display_en": "Activate urgent help for severe or persistent bleeding\nAdd material if soaked while maintaining pressure; ask trained…",
+    "display_fil": "Naka-gloves si Lea at idinidiin ang malinis na tela\nHindi tinanggal ang basang tela; nagpatong siya ng isa pa\nHindi tumigil ang diin; may tumawag ng agarang tulong\nIniulat niya kung saan, ano ang ginawa at ang oras",
+    "display_en": "Lea wears gloves and presses firmly with clean cloth\nThe soaked cloth stays; she adds another on top\nPressure never stops; someone calls urgent help\nShe reports where, what was done and the time",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Magdagdag ng tela kung nabasa habang nagpapatuloy ang pressure. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Protect your hands and apply firm direct pressure with clean material. Activate urgent help for severe or persistent bleeding. Add material if soaked while maintaining pressure; ask trained staff about further measures and wound follow-up. Lea avoids the shortcut."
+    "narration_fil": "Nagsuot ng gloves si Lea at idiniin nang matatag ang malinis na tela sa hiwa. Nabasa ang tela at gusto itong tanggalin ng saksi. Hindi inalis ni Lea ang unang tela; nagpatong siya ng isa pa nang hindi tumitigil sa pagdiin. Dahil tuloy ang pagdurugo, nag-utos siyang tumawag ng agarang tulong. Iniulat niya kung saan ang sugat, ano ang ginawa at ang oras.",
+    "narration_en": "Lea puts on gloves and presses firmly on the cut with a clean cloth. The cloth soaks through and a bystander wants to wipe it away; Lea keeps the first cloth in place and adds another on top without stopping the pressure. Because the bleeding persists, she has someone call urgent help. She then reports where the cut is, what was done and the time."
   },
   {
     "id": "slide-scope",
@@ -98,10 +98,10 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure…\nHuwag magtakda ng herbal wash, iodine o tetanus deadline nang…",
-    "display_en": "Do not remove an embedded object, rely on gentle pressure for…",
+    "display_fil": "Huwag bunutin ang nakabaong bagay\nHuwag umasa sa mahinang pressure sa malubhang pagdurugo\nWalang rutinang herbal wash o iodine sa loob ng sugat\nWalang tetanus deadline nang walang clinical na payo",
+    "display_en": "Do not remove an embedded object\nDo not rely on gentle pressure for severe bleeding\nNo routine herbal wash or iodine inside the wound\nNo fixed tetanus deadline without clinical advice",
     "check": null,
-    "narration_fil": "Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.",
+    "narration_fil": "Huwag bunutin ang nakabaong bagay o umasa sa mahinang pressure sa malubhang pagdurugo. Huwag gumamit ng rutinang herbal wash o iodine sa loob ng sugat. Huwag magtakda ng tetanus deadline nang walang clinical na payo.",
     "narration_en": "Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice."
   },
   {
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Basa na ang tela at gusto itong tanggalin ng saksi. Ano ang gagawin mo?",
+      "prompt_en": "The cloth is soaked and the bystander wants to wipe it away. What do you do?",
       "options": [
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Tanggalin ang basang tela at magsimula muli sa bagong tela.",
+          "en": "Remove the soaked cloth and start again with a fresh one."
         },
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Diinan nang mas mahina para hindi magalaw ang sugat.",
+          "en": "Press more gently now so the cut is not disturbed."
         },
         {
-          "fil": "Magpatuloy ng pressure at tumawag.",
-          "en": "Maintain pressure and call."
+          "fil": "Magpatong ng tela, idiin pa rin, magpatawag ng tulong.",
+          "en": "Add cloth on top, keep pressing, send for help."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo. 3: Obserbahan ang gawa at ang tamang referral.",
-      "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice. 3: Observe the task and appropriate referral."
+      "feedback_fil": "1: Naaantala ang pressure kapag tinanggal ang unang tela. Magpatong na lamang ng tela. 2: Huwag umasa sa mahinang pressure sa malubhang pagdurugo. Idiin pa rin nang matatag. 3: Tama. Magdagdag ng tela habang tuloy ang pressure, at humingi ng agarang tulong sa tuloy-tuloy na pagdurugo.",
+      "feedback_en": "1: Removing the first cloth interrupts pressure. Add material on top instead. 2: Do not rely on gentle pressure for severe bleeding. Keep pressing firmly. 3: Correct. Add material while maintaining pressure, and activate urgent help for persistent bleeding."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nSa malinis na props, ipakita ang proteksiyon sa kamay,…",
-    "display_en": "On Monday:\nOn clean props, show hand protection, continuous direct pressure,…",
+    "display_fil": "Sa Lunes, sa malinis na props, ipakita:\nProteksiyon sa kamay at tuloy-tuloy na direct pressure\nAgarang referral at malinaw na ulat",
+    "display_en": "On Monday, on clean props, show:\nHand protection and continuous direct pressure\nUrgent escalation and a factual wound report",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report."

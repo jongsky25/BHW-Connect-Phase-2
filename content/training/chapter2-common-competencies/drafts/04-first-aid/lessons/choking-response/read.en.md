@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Call for help and follow current age-specific choking training. Distinguish mild cough from severe obstruction. Practise the trainer-approved adult and infant pathways only on appropriate manikins. Lea avoids the shortcut.
+Lea sees that the adult cannot speak or cough effectively. This is not a mild cough, so she calls for help at once. On the adult manikin, she follows the pathway the trainer approved. For the infant card, she switches to the infant manikin and the infant pathway, with no adult thrusts and no blind finger sweeps.
 
 ## [scope] Scope and support
 

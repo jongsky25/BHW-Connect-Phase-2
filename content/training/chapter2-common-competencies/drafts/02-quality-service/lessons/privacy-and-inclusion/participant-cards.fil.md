@@ -6,11 +6,11 @@ Sa pila, sinabi ni Alex kay BHW Lorna na nahihirapan siyang basahin ang form. Ma
 
 ## Card ng kalahok
 
-Gumanap bilang Lorna, Alex at tagamasid. Mag-alok ng pribadong usapan, itanong ang gustong tulong at ipaliwanag ang susunod na hakbang.
+Ikaw si BHW Lorna. Huwag sagutin ang tanong ng pila tungkol sa kondisyon ni Alex. Mag-alok ng pribadong usapan, itanong kay Alex ang gustong tulong, magtanong muna bago magsama ng iba, at ipaliwanag ang susunod na hakbang nang walang panghuhusga.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Alex, ang residente sa pila. Sabihing nahihirapan kang basahin ang form at ayaw mong marinig ng iba. Kapag tinanong ni Lorna kung anong tulong ang gusto mo, sabihin: "Pakibasa po nang dahan-dahan." Sa pag-ulit, sabihing gusto mong may kasamang tutulong. Huwag magbanggit o mag-imbento ng kondisyon.
 
 ## Card ng tagamasid
 

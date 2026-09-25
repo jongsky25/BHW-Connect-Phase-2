@@ -1,4 +1,4 @@
-# 2.4.13 — First-aid practice: snakebite response
+# 2.4.13 — Respond to snakebite
 
 Use fictional details only.
 

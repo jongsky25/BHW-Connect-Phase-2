@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
       "observable_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Itinuturing na kumpirmadong silungan ang paaralan o minamarkahan ang totoong sambahayan sa mapa.",
+      "not_yet_en": "Treats the school as a confirmed shelter or marks a real household on the map.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Namamarkahan ang panganib, pangangailangan at kakayahan, nasasabi kung sino ang magpapatunay sa kakayahan, at walang totoong lokasyon, nang walang paalala.",
+        "kaya_na_en": "Marks a hazard, a support need and a capacity, names who will verify the capacity, and shows no real location, without prompts.",
+        "kailangan_practice_fil": "Namamarkahan ang tatlong layer ngunit kailangan ng paalala sa magpapatunay o sa pag-alis ng lokasyon ng sambahayan.",
+        "kailangan_practice_en": "Marks the three layers but needs a prompt to name who will verify or to leave out the household's location.",
+        "hindi_pa_fil": "Itinuturing na kumpirmadong silungan ang paaralan o minamarkahan ang totoong sambahayan sa mapa.",
+        "hindi_pa_en": "Treats the school as a confirmed shelter or marks a real household on the map."
       }
     }
   ]

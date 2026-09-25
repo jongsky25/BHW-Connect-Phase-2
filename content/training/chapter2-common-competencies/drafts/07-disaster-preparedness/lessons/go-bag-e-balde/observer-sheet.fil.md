@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala. |
-| Kailangan practice | Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up. |
-| Hindi pa | Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin. |
+| Kaya na | May dahilan sa bawat piniling gamit, itinatanong ang access sa regular na gamot at nagtatakda ng petsa ng pag-check, nang walang paalala. |
+| Kailangan pa ng practice | Angkop ang piniling gamit ngunit kailangan ng paalala sa dahilan, sa access sa gamot o sa petsa ng pag-check. |
+| Hindi pa | Kinokopya ang listahan nang walang pangangailangan ng sanggol o gamot, o nag-aalok na magbigay ng gamot. |
 
 Aktuwal na nakita/narinig: ____
 

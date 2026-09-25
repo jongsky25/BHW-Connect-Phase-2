@@ -10,8 +10,16 @@ Gumawa ng improvement card para sa kulang na sabon. Itala ang pansamantalang kaa
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang kasama ni Aya sa practice inspection. Sabihin: "Okay na tayo dahil lahat ay dumalo." Mamaya, puwede mong idagdag: "May nangakong magre-refill, kaya tapos na." Sa follow-up, iabot sa learner ang slip na naayos, saka ang slip na hindi pa naayos. Huwag magdagdag ng tunay na pangalan o bagong problema sa station.
 
 ## Card ng tagamasid
 
 Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+
+## Mga follow-up slip
+
+Gupitin ang dalawang slip. Sa follow-up, iaabot ito ng kapareha sa learner, isa-isa. Itala ang bawat resulta sa improvement card.
+
+**Slip A — Naayos.** Follow-up sa Station A, petsa ____: may sabon na at gumagana ang tubig.
+
+**Slip B — Hindi pa naayos.** Follow-up sa Station A, petsa ____: wala pa ring sabon. May nangakong magre-refill pero hindi pa dumarating.

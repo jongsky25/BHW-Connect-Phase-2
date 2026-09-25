@@ -1,57 +1,75 @@
 ## [purpose] Purpose
 
-20 minutes: opening 3; model 3; supervised case practice 8; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.
+In a fictional chest-pain case, the BHW calls for urgent assessment, reports onset and symptoms, and leaves medicine decisions to local protocol.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 20 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2; model 4; practice 9; feedback 3; checks 2. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.16 participant cards, worksheet and observation sheet per triad; the job aid; a phone or prop for the call.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Confirm with the RHU the emergency contact and who decides about chest-pain medicines. Write it on the job aid.
+- **Scope:** no real tablets. Do not teach aspirin doses or schedules, or name medicines. Otherwise: *"Confirm with the midwife, RHU or local protocol."*
 
 ## [opening] Opening
 
-An adult has new chest pressure and looks pale. A neighbor offers tablets from the old presentation.
+Read the case: an adult has new chest pressure and looks pale; a neighbor offers tablets. Ask: *"The neighbor wants to help. Who decides about medicine?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each Read heading is also its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation".** Ask: *"What do you see, and what is being offered?"*
+2. **"What to do and say".** Ask: *"What three things do you report?"*
+3. **"Choose the first response".** Self-check 1 — pairs answer first.
+4. **"Worked example".** Model Lea's call; a volunteer offers tablets. Ask: *"What did Lea say about the tablets?"*
+5. **"Scope and support".** Ask: *"Why not search for tablets before calling?"*
+6. **"Apply it to the situation".** Self-check 2 — pairs answer first.
+7. **"On Monday, try this".** Each names their emergency contact, then practise.
 
-This is the safe response in the case. Activate urgent medical assessment and keep the person at rest while following responder directions. Report onset, symptoms and known medicines or allergies. Medication decisions follow the current local protocol and qualified advice. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Give him the neighbor's tablet."** Ask: *"Whose tablets are these, and who decides?"*
+- **"Find aspirin first, then call."** The lesson says: do not delay the call.
+- **"Let him rest and see."** Rest is right, but waiting delays assessment. Ask: *"When do you call?"*
 
-Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"Chest pain first aid means giving aspirin."** The old presentation taught an aspirin schedule, and households keep tablets. The lesson omits it: medicine follows local protocol. Correct the case, not the person: *"The neighbor thought so too. What does Lea do?"*
 
-Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Emergency referral rehearsal.** Triads, three 3-minute rounds; everyone is learner once. Partner: the neighbor offering tablets. Learner: calls, reports, declines the tablets. Observer: fills the worksheet; one strength and one retry action. Fictional details only. Alone: say the call aloud, complete the worksheet, arrange staff observation later.
 
-1: The shortcut can cause harm: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication. / 2: Prioritize safety and timely help. / 3: Necessary assessment may be delayed.
+## [answer-key] Self-check answer key
 
-1: The story is not grounds for an independent diagnosis. / 2: The shortcut is unsafe: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication. / 3: Observe the task and appropriate referral.
+- **Check 1: "What comes first?"** Correct: **"Call for urgent medical help."**
+  - "Give one of the neighbor's tablets": no one else's tablets; medicine follows protocol.
+  - "Look for aspirin, then call": do not delay the call.
+- **Check 2: "On the practice call, what should you report?"** Correct: **"When the pressure began, and the symptoms."**
+  - "Your own guess about what is causing it": report what you see.
+  - "The aspirin dose that you are planning to give": the BHW does not prescribe.
 
-## [observe] Observe
+## [observe] What to observe
 
-Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.
+Watch for: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.
 
-Ready: Completes the task without prompting: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.
+- **Kaya na:** Calls the urgent contact at once, reports onset, symptoms and known medicines or allergies, and declines the tablets, without prompting.
+- **Kailangan pa ng practice:** Calls for help and declines the tablets, but needs a prompt to report onset or known medicines and allergies.
+- **Hindi pa:** Gives or suggests tablets or an aspirin schedule, or delays the call to look for medicine.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** one retry action, e.g. *"Start the call with when the pain began."* Re-observe this session with a relative offering tablets.
+- **Hindi pa:** re-model Lea's call, then retry with a Kaya na partner. Re-observe in a later round.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 48; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 68.
+- The 20 minutes is drawn from F38's 8 hours, which do not time each case.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

@@ -1,10 +1,10 @@
 ## [scene] Ang sitwasyon
 
-May taong nahihirapan sa tubig sa kanal. Nasa tuyong lupa ang BHW at walang water-rescue training.
+May taong nahihirapan sa tubig, lampas sa gilid ng binahang kanal. Nasa tuyong lupa ang BHW at walang water-rescue training.
 
 ## [action] Gawin at sabihin
 
-Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng ligtas na abot o hagis na tulong. Kapag nailigtas, ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol.
+Tawagin ang sanay na rescuer at huwag lumusong sa tubig. Gumamit ng abot o hagis na tulong kung mayroon, at kung ligtas lamang. Kapag nailigtas na ng sanay na rescuer, ayusin ang agarang medikal na pagsusuri. Sundin ang kasalukuyang drowning resuscitation protocol.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,11 +12,11 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng ligtas na abot o hagis na tulong. Kapag nailigtas, ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol. Iniiwasan ni Lea ang shortcut.
+Nananatili si Lea sa tuyong lupa sa tabi ng binahang kanal at hindi lumulusong. Tinatawagan niya ang sanay na rescuer at sinasabi ang lokasyon. Nang udyukan siya ng saksi na lumusong, tumanggi siya. Gumagamit lamang siya ng abot o hagis na tulong kung ligtas. Sinasabi niyang kailangan ng agarang medikal na pagsusuri kapag nailigtas na ang tao.
 
 ## [scope] Saklaw at paghingi ng tulong
 
-Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.
+Huwag lumusong sa mapanganib na tubig o baligtarin ang tao para patuluin ang tubig. Huwag ipagpalagay na sapat ang karaniwang compression-only CPR sa pangangailangan sa bentilasyon ng nalunod.
 
 ## [check-transfer] Subukan sa sitwasyon
 

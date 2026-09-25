@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Nakapag-alok ng pribadong tulong ayon sa hiling ni Alex nang walang bansag o sapilitang pagsama ng ibang tao. |
-| Kailangan practice | Nag-alok ng pribadong lugar pero kailangang paalalahanang itanong ang gustong tulong. |
+| Kailangan pa ng practice | Nag-alok ng pribadong lugar pero kailangang paalalahanang itanong ang gustong tulong. |
 | Hindi pa | Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex. |
 
 Aktuwal na nakita/narinig: ____

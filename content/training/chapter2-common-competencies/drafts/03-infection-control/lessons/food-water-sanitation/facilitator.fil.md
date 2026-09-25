@@ -1,57 +1,80 @@
 ## [purpose] Layunin
 
-90 minuto: pambungad 5; modelo 10; practice 50; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Sa household scene, tukuyin ang panganib sa pagkain, tubig at sanitasyon at magkasundo sa ligtas na pagbabago at dapat ipakumpirma.
+Sa role-play sa bahay, natutukoy ng BHW ang panganib sa pagkain, tubig at sanitasyon, nagkakasundo sila ng residente sa ligtas na pagbabago, at nasasabi kung sino ang magkukumpirma sa tubig.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 90 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 10, role-play 45, feedback at pag-ulit 15, check at debrief 15. Mga 5 minuto ang Read sa app.
+- **Kagamitan:** kunwaring sulok ng bahay o larawan ng bahay ni Mila; mga card, worksheet at talaan ng obserbasyon ng *2.3.5*; job aid.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Isulat sa job aid ang kasalukuyang water advisory o contact at ang sanitary inspector, o "kumpirmahin sa midwife / RHU / lokal na protocol".
+- **Hangganan:** walang dami ng chlorine, oras ng pagpapakulo, layo ng septic tank, mainit na tubig o kemikal. Huwag mangakong ligtas ang tubig.
 
 ## [opening] Pambungad
 
-Sa kathang-isip na bahay ni Mila, magkatabi ang hilaw na manok at lutong pagkain. Bukas ang lalagyan ng tubig at isinasawsaw ang baso. “Malinaw naman ang tubig,” sabi niya. Walang sabon sa tabi ng palikuran. Hihingi ng pahintulot ang BHW bago talakayin ang mga napansin.
+Basahin ang kaso ni Mila, saka itanong: *"'Malinaw naman ang tubig,' sabi ni Mila. Ano ang sasabihin natin?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Ano ang ginagawa ng BHW bago magsalita?"*
+2. **Gawin at sabihin.** *"Aling hakbang sa pagkain ang kaya ni Mila ngayon?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** *"Sino ang pumili ng pagbabago — ang BHW o si Mila?"*
+5. **Saklaw at paghingi ng tulong.** *"Gaano karaming chlorine, tanong ni Mila. Ano ang sagot?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Kailan dapat maghugas ng kamay ang pamilya?"*
 
-Pinili ni Mila na paghiwalayin ang hilaw at luto. Tatakpan niya ang lalagyan ng tubig at iiwasang maisawsaw ang kamay o baso. Hindi patunay ng kaligtasan ang linaw ng tubig. Kukumpirmahin nila ang ligtas na pinagkukunan sa health o water staff. Gagamit ng palikuran at maghahanda ng sabon at tubig para sa paghuhugas.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Pakuluan" o "lagyan ng bleach."** Walang dami o oras sa aralin; sundin ang kumpirmadong lokal na payo.
+- **"Ligtas ang malinaw na tubig."** Hindi nakikita ang lahat ng kontaminasyon.
+- **"Sabihing marumi ang bahay niya."** Humingi ng pahintulot; si Mila ang pipili.
+- **"Takpan nang sabay ang hilaw at luto."** Hindi sapat ang iisang takip. Ihiwalay.
 
-Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kapag malinaw ang tubig, ligtas itong inumin."** Karaniwang mukhang ayos ang malinaw na tubig. Itanong: *"Nakikita ba natin ang bawat mikrobyo?"* Saka ituro kung sino ang magkukumpirma, hindi ang taong nagsabi.
 
-Markahan ang panganib sa kuwento ng bahay. Punan ang pagkain, tubig at sanitasyon na hanay; magdagdag ng contact para sa hindi tiyak. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Pagsusuri sa pagkain, tubig at sanitasyon ng bahay**, triad (BHW, Mila, observer), umiikot, 45 minuto at feedback.
 
-1: Kailangan ng tamang batayan at tagubilin, hindi hitsura lamang. / 2: Hindi nakikita ang lahat ng maaaring kontaminasyon. / 3: Maaaring mapanganib ang maling produkto o dami.
+- **BHW:** humihingi ng pahintulot; binabanggit ang panganib sa pagkain, tubig at palikuran; nakikipagkasundo sa isang pagbabago bawat bahagi; isinusulat ang magkukumpirma sa tubig.
+- **Mila:** residente; puwedeng sabihing "malinaw naman ang tubig".
+- **Observer:** tinitingnan ang pahintulot at anumang hulang dami, oras o pangako.
+- Pigilan ang hula; magbigay ng isang uulitin. Kathang-isip na bahay lamang. Kulang sa gamit: naka-print na kuwento. Mag-isa: ipasuri sa supervisor.
 
-1: Hindi pinipigilan ng iisang takip ang kontaminasyon sa pagitan nila. / 2: Nababawasan ang paglipat mula sa hilaw na pagkain. / 3: Hindi ligtas o maaasahang pagsusuri ang pagtikim.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1 (malinaw na tubig):** **"Kumpirmahin ang kaligtasan sa staff."** Kailangan ng tamang batayan at tagubilin, hindi hitsura lamang.
+  - "Sabihing ligtas dahil walang kulay o amoy": hindi nakikita ang lahat ng maaaring kontaminasyon.
+  - "Magdagdag ng kahit anong dami ng kemikal na nasa bahay": maaaring mapanganib ang maling produkto o dami.
+- **Check 2 (hilaw na manok):** **"Ihiwalay ang hilaw sa luto."** Nababawasan ang paglipat mula sa hilaw na pagkain.
+  - "Hayaan lamang basta takpan nang sabay sa iisang lalagyan": hindi pinipigilan ng iisang takip ang kontaminasyon sa pagitan nila.
+  - "Tikman ang luto upang malaman kung may mikrobyo": hindi ligtas o maaasahang pagsusuri ang pagtikim.
 
-May angkop na pagbabago sa pagkain, tubig at sanitasyon; walang hinulaang treatment o garantiya mula sa hitsura.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Kumpleto ang tatlong hanay at malinaw ang ipapakumpirma sa health o water staff nang walang paalala.
+Indicator: May angkop na pagbabago sa pagkain, tubig at sanitasyon; walang hinulaang treatment o garantiya mula sa hitsura.
 
-Kailangan practice: May angkop na pagbabago pero kailangan ng paalala sa pagprotekta ng tubig o contact para sa treatment.
+- **Kaya na:** Kumpleto ang tatlong hanay at malinaw ang ipapakumpirma sa health o water staff nang walang paalala.
+- **Kailangan pa ng practice:** May angkop na pagbabago pero kailangan ng paalala sa pagprotekta ng tubig o contact para sa treatment.
+- **Hindi pa:** Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.
 
-Hindi pa: Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.
+Hanapin ang pagbabagong si Mila mismo ang pumili. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** itanong *"Sino ang magkukumpirma sa tubig?"*; ulitin ang hanay ng tubig.
+- **Hindi pa:** i-model muli ang paghingi ng pahintulot at ang hanay ng tubig; isang bahagi bawat ulit. Obserbahan muli sa ikalawang araw.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 36; Facilitator Guide PDF p. 36; presentation PDF pp. 57–59. Inalis ng evidence review ang oras ng pagpapakulo at layo ng septic tank.
+- Hatian ng 600-minutong source allocation ang 90 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.

@@ -24,7 +24,7 @@ Tukuyin ang apektadong residente, lokal na lider at iba pang makatutulong. Tanun
 | Sari | ____ | ____ | ____ | ____ |
 | Eva | ____ | ____ | ____ | ____ |
 
-Ibang paraan ng mungkahi: ____
+Ibang paraan ng pag-ambag: ____
 
 ## Bumuo ng tiwala at pangunahing grupo
 

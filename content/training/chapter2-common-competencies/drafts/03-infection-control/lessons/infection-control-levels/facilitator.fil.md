@@ -1,57 +1,80 @@
 ## [purpose] Layunin
 
-60 minuto: pambungad 5; modelo 10; practice 20; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Sa sitwasyon ng BHS, magmungkahi ng kontrol sa pinagmulan, kapaligiran, gawain at PPE na may tamang responsable.
+Para sa siksik na pila sa BHS, nagmumungkahi ang BHW ng kontrol sa pinagmulan, kapaligiran, gawain at PPE, may responsable o kukumpirma ang bawat isa.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 60 minutong harapan (bahagi ng 600-minutong plano): pambungad 5, model 10, practice 25, feedback at pag-ulit 10, check at debrief 10. Mga 5 minuto ang Read sa app.
+- **Kagamitan:** mga card at worksheet ng *2.3.2 Mapa ng magkakaugnay na kontrol*, talaan ng obserbasyon; job aid; manila paper.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin kung sino sa BHS ang responsable sa pag-uulat ng sintomas, bentilasyon, waiting area at PPE; isulat sa job aid, o "kumpirmahin sa midwife / RHU / lokal na protocol".
+- **Hangganan:** walang pagbabago sa bentilasyon o isolation, walang pag-fit ng respirator, pagpili ng mask o diagnosis.
 
 ## [opening] Pambungad
 
-Sa simulated na BHS, may umuubo sa siksik na pila. Sarado ang bintana at hindi alam ng BHW kung sino ang dapat sabihan. May mask sa kahon, pero walang malinaw na proseso. Hindi sapat ang pamimigay ng isang gamit para ayusin ang lahat.
+Basahin ang kaso ng siksik na pila. Itanong: *"Kung mask lang ang ipamimigay natin, anong problema ang maiiwan?"* Ilista ang lahat ng sagot sa manila paper.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Sino ang dapat sabihan ng BHW?"*
+2. **Gawin at sabihin.** *"Aling problema sa listahan ang tinutugunan ng bawat uri ng kontrol?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** *"Kanino nagsabi ang BHW, at ano ang hindi niya pinagpasyahan?"*
+5. **Saklaw at paghingi ng tulong.** *"Sarado ang bintana. Puwede ba nating buksan o ilipat ang lahat sa ibang silid?"* Pakinggan ang "ipaalam sa responsable".
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Aling hanay ang sa inyo sa BHS ninyo?"*
 
-Ipinaalam ng BHW ang pag-ubo sa nakatalagang staff. Itinuro ng staff ang napiling waiting area at angkop na mask ayon sa protocol. Ipinasa sa responsable ang concern sa bentilasyon. Nilinaw ang contact para sa susunod na pagdating. Hindi nagpasya ang BHW ng diagnosis o treatment.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Bigyan ng mask ang lahat."** *"Kahit naka-mask, ano pa ang hindi ligtas?"*
+- **"Buksan ang bintana o ilipat sila."** Napansin ang hangin. Baka hindi angkop ang bagong silid; ipaalam sa responsable.
+- **"Sabihan ang midwife."** Tama. *"Aling hanay iyon? Sino ang responsable sa ibang hanay?"*
+- **"Lahat" ang nakasulat na responsable.** *"Sino ang kukumpirma kung tatanungin mo?"*
 
-Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Basta naka-mask ako at may alcohol, protektado na ako."** Ito ang pinakamalakas na mensahe nitong mga nakaraang taon, at nakakatulong naman. Kapag PPE lang ang may laman, itanong *"Ano pa ang hindi ligtas?"* Hayaang sila ang makakita ng saradong bintana at kulang na ruta ng pag-uulat. Itama ang ideya, hindi ang tao.
 
-Punan ang apat na hanay: pinagmulan, kapaligiran, gawain at PPE. Isulat ang mungkahi at taong dapat magkumpirma. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Mapa ng magkakaugnay na kontrol**, umiikot na triad, 25 minuto at feedback.
 
-1: Kailangan ang magkakaugnay na kontrol. / 2: Kailangan pa rin ang napagkasunduang pag-uulat. / 3: Hindi inaalis ng isang gamit ang lahat ng panganib.
+- **Learner:** pinupunan ang apat na hanay: uri / mungkahi / responsable o kukumpirma.
+- **Partner:** kasamahang nagsasabing "Ipamigay na lang ang mask"; nagtatanong: "Sino ang magkukumpirma?"
+- **Observer:** may responsable ba ang bawat hanay; isang kalakasan at isang uulitin.
+- Pigilan ang hanay na nagbabago ng bentilasyon, isolation o pag-aalaga. Kathang-isip na BHS lamang. Mag-isa: ipasuri ang mapa sa supervisor.
 
-1: Maaaring hindi angkop ang bagong lugar. / 2: May tamang pagsusuri at pag-aayos ng facility. / 3: Walang sapat na batayan ang katiyakan.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1 (may mask sa kahon):** **"Suriin din ang lugar at proseso."** Hindi naaayos ng mask ang saradong bintana at malabong proseso; suriin din ang mga ito.
+  - "Hindi na kailangang ipaalam ang sintomas sa clinical staff": kailangan pa rin ang napagkasunduang pag-uulat.
+  - "Wala nang panganib dahil may mask na magagamit": hindi inaalis ng isang gamit ang lahat ng panganib.
+- **Check 2 (concern sa bentilasyon):** **"Ipaalam at ipasuri sa responsable."** May tamang pagsusuri at pag-aayos ng facility.
+  - "Ilipat agad ang lahat sa silid na hindi pa nasusuri": maaaring hindi angkop ang bagong lugar.
+  - "Sabihing ligtas ang silid kahit walang anumang pagsusuri": walang sapat na batayan ang katiyakan.
 
-May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Magkakaugnay ang apat na kontrol at malinaw ang dapat ipasuri nang walang paalala.
+Indicator: May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.
 
-Kailangan practice: May maraming kontrol pero kailangang paalalahanang magtalaga ng responsable.
+- **Kaya na:** Magkakaugnay ang apat na kontrol at malinaw ang dapat ipasuri nang walang paalala.
+- **Kailangan pa ng practice:** May maraming kontrol pero kailangang paalalahanang magtalaga ng responsable.
+- **Hindi pa:** Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.
 
-Hindi pa: Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.
+Hanay ng PPE: "ayon sa gawain, panganib at training", hindi uri ng mask. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** itanong ang *"Sino ang kukumpirma?"* sa bawat hanay; obserbahan muli na may binagong detalye (walang laman ang kahon ng mask).
+- **Hindi pa:** i-model ang dalawang hanay, gabayan sa dalawa pa; obserbahan muli sa ikalawang araw.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 33; Facilitator Guide PDF pp. 35–36; presentation PDF p. 53.
+- Hatian ng 600-minutong source allocation ang 60 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.

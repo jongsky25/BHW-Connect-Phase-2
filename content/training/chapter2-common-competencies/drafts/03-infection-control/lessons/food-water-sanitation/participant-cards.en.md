@@ -6,11 +6,11 @@ In Mila’s fictional home, raw chicken sits beside cooked food. Drinking water 
 
 ## Learner card
 
-Mark risks in the household story. Complete the food, water and sanitation rows and add a contact for uncertainties.
+As the BHW, ask Mila's permission first. Then mark risks in the household story, complete the food, water and sanitation rows and add a contact for uncertainties.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You play Mila, the resident, in your fictional home. Wait until the BHW asks permission before discussing anything. Say once: "The water looks clear." You may ask: "How much chlorine should I add?" You choose which changes you agree to. Do not add illnesses, symptoms or details outside the story.
 
 ## Observer card
 

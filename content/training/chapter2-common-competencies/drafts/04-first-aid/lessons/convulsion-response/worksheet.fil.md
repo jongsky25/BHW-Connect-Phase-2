@@ -1,4 +1,4 @@
-# 2.4.5 — First-aid practice: convulsion response
+# 2.4.5 — Tumugon sa kombulsyon
 
 Kathang-isip na detalye lamang.
 

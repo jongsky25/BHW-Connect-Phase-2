@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala. |
-| Kailangan practice | Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up. |
-| Hindi pa | Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin. |
+| Kaya na | Naitutugma ang apat na pangangailangan sa tamang domain, nasasabi ang puwang ng focal person at kung paano babalik ang feedback, nang walang paalala. |
+| Kailangan pa ng practice | Naitutugma ang domain ngunit kailangan ng paalala sa follow-up o sa pagsuri muna ng kaligtasan ng nababagabag. |
+| Hindi pa | Nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig, nagbibigay ng therapy o pinipilit ang salaysay ng nababagabag. |
 
 Aktuwal na nakita/narinig: ____
 

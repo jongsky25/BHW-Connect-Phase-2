@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Choose a safe shore response, activate trained rescue and state the need for medical assessment. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs. |
+| Kaya na | Without prompting, stays on the safe shore, calls trained rescue with the location, refuses to enter the water and states the need for medical assessment. |
+| Kailangan pa ng practice | Stays on the shore and calls rescue, but needs a prompt to give the location or to state the need for medical assessment. |
+| Hindi pa | Enters or agrees to enter the water, suggests inverting the person, or does not call trained rescue. |
 
 Evidence observed: ____
 

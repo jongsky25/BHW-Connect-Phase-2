@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: Masakit ang tiyan ni Rosa at lumalala ang sakit",
-    "display_en": "Case: Rosa has worsening stomach pain and wants to drink Tsaang…",
+    "display_fil": "Kaso: Lumalala ang sakit ng tiyan ni Rosa.\nGusto niyang uminom ng Tsaang gubat.",
+    "display_en": "Case: Rosa has worsening stomach pain\nand wants to drink Tsaang gubat.",
     "check": null,
     "narration_fil": "Masakit ang tiyan ni Rosa at lumalala ang sakit. Gusto niyang uminom ng Tsaang gubat.",
     "narration_en": "Rosa has worsening stomach pain and wants to drink Tsaang gubat."
@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nakalista sa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part is listed on the card?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Tsaang gubat ang nakalista sa card?",
       "prompt_en": "Which Tsaang gubat part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Tsaang gubat.",
-          "en": "Any part of a yard plant even when its identity as Tsaang gubat is unconfirmed."
+          "fil": "Anumang dahong tinatawag ni Rosa na Tsaang gubat, nang hindi sinusuri.",
+          "en": "Any leaves Rosa calls Tsaang gubat, unchecked."
+        },
+        {
+          "fil": "Dahon ng anumang halamang sinasabing pampaginhawa sa sakit ng tiyan.",
+          "en": "Leaves of any plant said to ease stomach pain."
         },
         {
           "fil": "Dahon ng kumpirmadong Carmona retusa.",
           "en": "Leaves of confirmed Carmona retusa."
-        },
-        {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
         }
       ],
-      "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi patunay ng local name na tama ang dahon ni Rosa; tingnan ang botanical name. 2: Iba-iba ang sanhi ng sakit ng tiyan; itugma ang botanical name, hindi ang reklamo. 3: Tama: dahon ng Carmona retusa ang nakalista sa card. Hindi ito dose para kay Rosa.",
+      "feedback_en": "1: A local name does not confirm Rosa's leaves; check the botanical name. 2: Stomach pain has many causes; match the botanical name, not the complaint. 3: Correct: the card lists leaves of Carmona retusa. This is not a dose for Rosa."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: pananakit ng tiyan na kailangang suriin\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: stomach pain requiring assessment\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Lumalala ang sakit ni Rosa.\nCard: Carmona retusa, dahon.\nWalang dami mula sa lumang table.\nIugnay siya sa health professional.",
+    "display_en": "Rosa's pain is getting worse.\nCard: Carmona retusa, leaves.\nNo amount from the old table.\nRefer her to a health professional.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Tsaang gubat at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay ang lumalalang sakit sa health professional; huwag magbigay ng dose mula sa lumang table.",
-    "narration_en": "The BHW points to Tsaang gubat and its botanical name on the card. The yard plant is not assumed to be identified. Refer worsening pain to a health professional; do not copy a dose from the old table."
+    "narration_fil": "Napansin ng BHW na lumalala ang sakit ng tiyan ni Rosa. Itinuro niya ang Carmona retusa at \"Bahagi: dahon\" sa card. Wala siyang binanggit na dami. Itinanong niya ang kasalukuyang gamot ni Rosa. Iniugnay niya sa health professional ang lumalalang sakit.",
+    "narration_en": "The BHW notices that Rosa's stomach pain is getting worse. The BHW points to Carmona retusa and \"Part: leaves\" on the card and names no amount. The BHW asks about her current medicine and refers the worsening pain to a health professional."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
-    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "display_fil": "Iba-iba ang sanhi ng sakit ng tiyan.\nHindi patunay ng pangalan na ligtas itong inumin.\nWalang paghahanda o dose.",
+    "display_en": "Stomach pain has many causes.\nA plant name does not mean it is safe to drink.\nNo preparation or dose.",
     "check": null,
     "narration_fil": "Iba-iba ang sanhi ng sakit ng tiyan. Hindi sapat ang pangalan ng halamang gamot para masabing ligtas itong inumin. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
     "narration_en": "Stomach pain has many causes. A plant name does not establish that it is safe to drink. This lesson does not authorize preparation or dosing of an herbal remedy."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Lumalala ang sakit ng tiyan ni Rosa.\nAno ang ligtas na tugon?",
+    "display_en": "Rosa's pain is getting worse.\nWhat is the safe response?",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Tsaang gubat?",
-      "prompt_en": "What is the safe response in the Tsaang gubat case?",
+      "prompt_fil": "Lumalala ang sakit ng tiyan ni Rosa. Ano ang ligtas na tugon?",
+      "prompt_en": "Rosa's stomach pain is getting worse. What is the safe response?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Iugnay sa health professional ang lumalala niyang sakit.",
+          "en": "Refer her worsening pain to a health professional."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Kopyahin ang dose mula sa lumang table para mainom niya ito.",
+          "en": "Copy a dose from the old table so she can drink it."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Sabihing ligtas inumin ang Tsaang gubat dahil nakalista ito.",
+          "en": "Tell her Tsaang gubat is safe to drink since it is listed."
         }
       ],
-      "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tama: kailangan ng health professional ang lumalalang sakit; iba-iba ang sanhi ng sakit ng tiyan. 2: Huwag kopyahin ang dose mula sa lumang table; walang dose na awtorisado sa lesson na ito. 3: Hindi sapat ang pangalan o pagkakalista ng halaman para masabing ligtas itong inumin.",
+      "feedback_en": "1: Correct: worsening pain needs a health professional; stomach pain has many causes. 2: Do not copy a dose from the old table; this lesson authorizes no dose. 3: A plant name or listing does not establish that it is safe to drink."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

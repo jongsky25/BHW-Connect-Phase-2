@@ -10,7 +10,7 @@ Mime tissue and elbow methods. Show disposal and hand hygiene; explain reporting
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You play Mang Lito in the waiting area. You are about to sneeze and have no tissue in your pocket. Mime the sneeze only; never cough, sneeze or spit toward anyone. You may say you feel embarrassed, or ask where to put the used tissue. Do not name an illness or add symptoms beyond the sneeze.
 
 ## Observer card
 

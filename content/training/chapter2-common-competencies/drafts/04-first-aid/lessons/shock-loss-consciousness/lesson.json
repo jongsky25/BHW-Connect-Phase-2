@@ -21,8 +21,8 @@
         "c2.firstaid.shock.loss.consciousness.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: Bumagsak ang isang nasa hustong gulang sa waiting area at…",
-      "takeaway_en": "Case: An adult collapses at the waiting area and does not…",
+      "takeaway_fil": "Kaso: Bumagsak at hindi tumutugon ang adult; nag-alok ng matamis na inumin ang kamag-anak.",
+      "takeaway_en": "Case: An adult collapses and does not respond; a relative offers a sweet drink.",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.firstaid.shock.loss.consciousness.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Humingi ng tulong at suriin ang tugon at paghinga bago ang lahat.",
+      "takeaway_en": "Activate help and check response and breathing before anything else.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Hindi tumutugon ang adult at may dalang matamis na inumin ang kamag-anak. Ano ang uuna?",
+        "prompt_en": "The adult does not respond and the relative brings a sweet drink. What comes first?",
         "options": [
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Painumin ng matamis na inumin baka mababa ang asukal niya.",
+            "en": "Help her sip the sweet drink in case her sugar is low."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Humingi ng tulong at suriin ang paghinga.",
+            "en": "Activate help and check her breathing."
           },
           {
-            "fil": "Tawag at suriin ang paghinga.",
-            "en": "Call and check breathing."
+            "fil": "Hayaan munang magpahinga at tingnan kung magigising.",
+            "en": "Let her rest a few minutes to see if she wakes up."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag. 3: Unahin ang kaligtasan at agarang tulong.",
-        "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation. 3: Prioritize safety and timely help."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Huwag bigyan ng pagkain, kendi o tubig ang hindi tumutugon, at hindi masasabi ng iisang palatandaan ang sanhi. 2: Tama. Kapag ligtas ang paligid, humingi ng emergency help at suriin ang tugon at normal na paghinga. 3: Naaantala ang pagtawag kapag naghintay. Tumawag na at patuloy na magbantay.",
+        "feedback_en": "1: Do not give food, candy or water to an unresponsive person, and one clue cannot tell the cause. 2: Right. Once the scene is safe, activate emergency help and check response and normal breathing. 3: Waiting delays emergency activation. Call now and keep watching."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.shock.loss.consciousness.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.",
-      "takeaway_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+      "takeaway_fil": "Suriin, tumawag, bantayan ang paghinga, at tanggihan ang matamis na inumin.",
+      "takeaway_en": "Check, call, watch breathing, and decline the sweet drink.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.shock.loss.consciousness.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang ipaiinom, walang panghuhula ng sanhi, walang pagpapaliban ng tawag.",
+      "takeaway_en": "Nothing by mouth, no guessing the cause, no delay in calling.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.shock.loss.consciousness.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Walang ipaiinom sa hindi tumutugon; patuloy na magbantay.",
+      "takeaway_en": "Nothing by mouth for an unresponsive person; keep watching.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Parating na ang tulong at humihinga siya. Mapilit ang kamag-anak sa inumin. Ano ang gagawin ng BHW?",
+        "prompt_en": "Help is on the way and she is breathing. The relative insists on the drink. What should the BHW do?",
         "options": [
           {
-            "fil": "Huwag magpainom sa walang malay.",
-            "en": "Give no drink to an unresponsive person."
+            "fil": "Tanggihan ang inumin at magbantay hanggang dumating ang tulong.",
+            "en": "Decline the drink and keep watching until help arrives."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Payagan ang isang higop, dahil kusa naman siyang humihinga ngayon.",
+            "en": "Allow one small sip, since she is breathing on her own now."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Sabihin sa tulong na mababang asukal ang sanhi para magdala ng kendi.",
+            "en": "Tell help the cause is low sugar, so they bring candy."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation."
+        "feedback_fil": "1: Tama. Hindi pa rin siya tumutugon kaya walang ipaiinom; habang humihinga, bantayan hanggang dumating ang tulong. 2: Humihinga siya pero hindi pa rin tumutugon. Huwag bigyan ng pagkain, kendi o tubig. 3: Huwag hulaan ang sanhi mula sa iisang palatandaan. Iulat ang nakita.",
+        "feedback_en": "1: Right. She still cannot respond, so nothing by mouth; while she breathes, keep watching until help arrives. 2: She is breathing but still unresponsive. Do not give food, candy or water. 3: Do not infer the cause from a single clue. Hand over what you observed."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.shock.loss.consciousness.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang tawag, pagsuri sa paghinga at pagtanggi sa pagpapainom sa bagong kaso.",
+      "takeaway_en": "Practise the call, breathing check and refusal of oral intake with a new case.",
       "check": null
     }
   ],

@@ -1,4 +1,4 @@
-# 2.4.12 — First-aid practice: insect bites stings
+# 2.4.12 — Tumugon sa kagat at tusok ng insekto
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,11 +6,11 @@ Pagkatapos matusok ng bubuyog, nagkaroon ng pantal sa buong katawan ang tao at h
 
 ## Card ng kalahok
 
-Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.
+Sabihin ang agarang senyales na nakikita at naririnig mo. Humingi ng emergency help at iulat ang mga ito. Bantayan ang paghinga. Sabihin kung aling gamot ang hindi mo maibibigay at kaninong plan ang susundin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Ikaw ang kaibigan ng tao. Mag-alok ng home remedy sa tusok, saka ng tablet mula sa iyong bag. Mag-alok muli nang isang beses kung tumanggi ang kalahok. Huwag magdagdag ng bagong sintomas na wala sa kaso.
 
 ## Card ng tagamasid
 

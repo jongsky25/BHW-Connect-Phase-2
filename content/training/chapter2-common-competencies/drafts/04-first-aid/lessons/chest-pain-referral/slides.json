@@ -13,8 +13,8 @@
     "display_fil": "Kaso: May bagong paninikip ng dibdib at namumutla ang adult",
     "display_en": "Case: An adult has new chest pressure and looks pale",
     "check": null,
-    "narration_fil": "May bagong paninikip ng dibdib at namumutla ang adult. Nag-alok ang kapitbahay ng tablet mula sa lumang presentation.",
-    "narration_en": "An adult has new chest pressure and looks pale. A neighbor offers tablets from the old presentation."
+    "narration_fil": "May bagong paninikip ng dibdib at namumutla ang adult. Nag-aalok ang kapitbahay ng sarili niyang tablet.",
+    "narration_en": "An adult has new chest pressure and looks pale. A neighbor offers some of her own tablets."
   },
   {
     "id": "slide-action",
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Humingi agad ng medikal na tulong at pagpahingahin ang tao habang…\nIulat ang simula, sintomas at alam na gamot o allergy\nAng gamot ay ayon sa kasalukuyang lokal na protocol",
-    "display_en": "Activate urgent medical assessment and keep the person at rest…\nReport onset, symptoms and known medicines or allergies\nMedication decisions follow the current local protocol and…",
+    "display_fil": "Humingi agad ng medikal na tulong\nPagpahingahin ang tao; sundin ang tagubilin\nIulat ang simula, sintomas, alam na gamot o allergy\nGamot: ayon sa lokal na protocol at kwalipikadong payo",
+    "display_en": "Activate urgent medical assessment\nKeep the person at rest; follow responder directions\nReport onset, symptoms, known medicines or allergies\nMedicines: local protocol and qualified advice",
     "check": null,
-    "narration_fil": "Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol.",
+    "narration_fil": "Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol at kwalipikadong payo.",
     "narration_en": "Activate urgent medical assessment and keep the person at rest while following responder directions. Report onset, symptoms and known medicines or allergies. Medication decisions follow the current local protocol and qualified advice."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Iniaabot ng kapitbahay ang tablet niya. Ano ang unang tugon?",
+      "prompt_en": "The neighbor holds out her tablets. What comes first?",
       "options": [
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Ibigay ang isang tablet ng kapitbahay.",
+          "en": "Give one of the neighbor's tablets."
         },
         {
           "fil": "Tumawag agad ng medikal na tulong.",
           "en": "Call for urgent medical help."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Maghanap muna ng aspirin, saka tumawag.",
+          "en": "Look for aspirin, then call."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
-      "feedback_en": "1: The shortcut can cause harm: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+      "feedback_fil": "1: Huwag magbigay ng gamot ng iba. Ayon sa lokal na protocol at kwalipikadong payo ang gamot. 2: Tama. Humingi muna ng agarang medikal na tulong at pagpahingahin ang tao. 3: Huwag ipagpaliban ang tawag para maghanap ng gamot. Tumawag muna.",
+      "feedback_en": "1: Do not give another person's tablets. Medicine follows local protocol and qualified advice. 2: Correct. Activate urgent assessment first and keep the person at rest. 3: Do not delay the call to find medication. Call first."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Iulat ang simula, sintomas at alam na gamot o allergy\nAng gamot ay ayon sa kasalukuyang lokal na protocol",
-    "display_en": "Report onset, symptoms and known medicines or allergies\nMedication decisions follow the current local protocol and…",
+    "display_fil": "Pinagpapahinga ni Lea ang tao at agad tumatawag\nIniuulat ang simula, sintomas, gamot at allergy\nTablet ng kapitbahay: magalang na tinanggihan\nSinusunod ang tagubilin ng responder",
+    "display_en": "Lea helps the adult rest and calls at once\nShe reports onset, symptoms, medicines, allergies\nNeighbor's tablets: declined politely\nShe follows the responders' directions",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Activate urgent medical assessment and keep the person at rest while following responder directions. Report onset, symptoms and known medicines or allergies. Medication decisions follow the current local protocol and qualified advice. Lea avoids the shortcut."
+    "narration_fil": "Pinagpapahinga ni Lea ang tao at agad tumatawag sa emergency contact. Iniuulat niya kung kailan nagsimula ang paninikip, ang nakikitang sintomas, at alam na gamot o allergy. Nag-alok ng tablet ang kapitbahay. Sabi ni Lea: \"Salamat po, pero ayon sa lokal na protocol at kwalipikadong payo ang gamot.\" Sinusunod niya ang tagubilin ng responder.",
+    "narration_en": "Lea helps the adult rest and calls the urgent contact at once. She reports when the pressure began, the symptoms she sees, and any medicines or allergies the person knows of. When the neighbor offers her tablets, Lea says, \"Thank you, but medicine follows local protocol and qualified advice.\" She follows the responders' directions."
   },
   {
     "id": "slide-scope",
@@ -98,8 +98,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang…",
-    "display_en": "Do not use the source manual’s repeated aspirin schedule, give…",
+    "display_fil": "Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual\nHuwag magbigay ng gamot ng iba\nHuwag ipagpaliban ang tawag para maghanap ng tablet",
+    "display_en": "Do not use the source manual’s repeated aspirin schedule\nDo not give another person’s tablets\nDo not delay the call to find medication",
     "check": null,
     "narration_fil": "Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.",
     "narration_en": "Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Sa practice na tawag, ano ang dapat mong iulat?",
+      "prompt_en": "On the practice call, what should you report?",
       "options": [
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Kailan nagsimula ang paninikip, at ang sintomas.",
+          "en": "When the pressure began, and the symptoms."
         },
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Ang sarili mong hula kung ano ang sanhi ng sakit.",
+          "en": "Your own guess about what is causing it."
         },
         {
-          "fil": "Iulat ang simula ng pananakit.",
-          "en": "Report pain onset."
+          "fil": "Ang dosis ng aspirin na balak mong ibigay.",
+          "en": "The aspirin dose that you are planning to give."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet. 3: Obserbahan ang gawa at ang tamang referral.",
-      "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication. 3: Observe the task and appropriate referral."
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tama. Iulat ang simula, sintomas at alam na gamot o allergy. 2: Iulat ang nakikita, hindi ang hula sa sanhi. Hindi batayan ng diagnosis ang kuwento. 3: Huwag magreseta ng aspirin. Ayon sa lokal na protocol at kwalipikadong payo ang gamot.",
+      "feedback_en": "1: Correct. Report onset, symptoms and known medicines or allergies. 2: Report what you see, not a guessed cause. The story is not grounds for a diagnosis. 3: Do not prescribe aspirin. Medicine follows local protocol and qualified advice."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nGamitin ang agarang referral at iulat ang simula at sintomas nang…",
-    "display_en": "On Monday:\nActivate the urgent pathway and hand over onset and symptoms…",
+    "display_fil": "Sa Lunes:\nGamitin ang agarang referral\nIulat ang simula at sintomas\nHuwag magreseta ng aspirin",
+    "display_en": "On Monday:\nActivate the urgent pathway\nHand over onset and symptoms\nDo not prescribe aspirin",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin."

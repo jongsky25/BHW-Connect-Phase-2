@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nasa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part does the card list?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Bawang ang nakalista sa card?",
       "prompt_en": "Which Bawang part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Bawang.",
-          "en": "Any part of a yard plant even when its identity as Bawang is unconfirmed."
+          "fil": "Anumang bahagi ng bawang, dahil karaniwang pagkain ito.",
+          "en": "Any part of the garlic plant, since it is ordinary food."
         },
         {
           "fil": "Butil ng kumpirmadong Allium sativum.",
           "en": "Bulb of confirmed Allium sativum."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Ang bahaging kinakain na ni Liza, nang hindi binabasa ang card.",
+          "en": "The part Liza already eats, without reading the card."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "feedback_fil": "1: Hindi sinasabi ng pagiging pagkain ang nakalistang bahagi; butil ang nasa card. 2: Butil ng Allium sativum ang nasa card; hindi ito dami o dose. 3: Basahin ang botanical name at bahagi sa card; hindi batayan ang nakasanayan ni Liza.",
+      "feedback_en": "1: Everyday food use does not tell you the listed part; the card lists bulb. 2: The card lists the bulb of Allium sativum; this is not an amount. 3: Read the botanical name and part on the card; Liza’s habit is not the check."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: pagkontrol ng cholesterol sa payo ng clinician\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: cholesterol management under clinical advice\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Card: Allium sativum, butil.\nBawang sa pagkain: hindi pahintulot na baguhin ang gamot.\nWalang itinakdang dami ng bawang.\nDesisyon: clinician ni Liza.",
+    "display_en": "Card: Allium sativum, bulb.\nFood garlic: no medication change.\nNo amount of garlic as medicine.\nDecision: Liza’s clinician.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Bawang at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ibalik ang desisyon sa clinician; huwag magtakda ng dami ng bawang bilang gamot.",
-    "narration_en": "The BHW points to Bawang and its botanical name on the card. The yard plant is not assumed to be identified. Return the decision to the clinician; do not prescribe an amount of garlic as medicine."
+    "narration_fil": "Ipinakita ng BHW kay Liza ang card: Allium sativum ang Bawang, butil, para sa pagkontrol ng cholesterol sa payo ng clinician. Sinabi ng BHW na hindi pahintulot ang bawang sa pagkain para baguhin ang gamot. Wala siyang itinakdang dami. Itinanong niya ang iba pang gamot at posibleng epekto, saka ibinalik ang desisyon sa clinician ni Liza.",
+    "narration_en": "The BHW shows Liza the card: Bawang is Allium sativum, bulb, for cholesterol management under clinical advice. The BHW says garlic as food does not authorize a medication change and names no amount. The BHW asks about her other medicines and possible effects, then returns the decision to her clinician."
   },
   {
     "id": "slide-scope",
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Ano ang ligtas na hakbang para kay Liza?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the safe step for Liza?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Bawang?",
-      "prompt_en": "What is the safe response in the Bawang case?",
+      "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Liza?",
+      "prompt_en": "What is the safe response in Liza’s case?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Sabihing puwede na niyang itigil ang gamot dahil kumakain siya ng bawang.",
+          "en": "Tell Liza she may stop her medicine because she eats garlic daily."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Itanong ang iba pa niyang gamot; ibalik ang desisyon sa clinician.",
+          "en": "Ask about her other medicines; return the decision to her clinician."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Sabihin kung ilang butil ng bawang ang kakainin kapalit ng gamot.",
+          "en": "Tell her how many cloves of garlic to eat instead of the medicine."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "feedback_fil": "1: Hindi pahintulot ang bawang sa pagkain para baguhin ang gamot; clinician ang magpapasya. 2: Clinician ang magpapasya; mahalaga rito ang iba pang gamot at posibleng epekto. 3: Hindi nagtatakda ang BHW ng dami ng bawang bilang gamot.",
+      "feedback_en": "1: Garlic as food does not authorize a medication change; the clinician decides. 2: Her clinician decides; other medicines and possible effects inform that. 3: The BHW does not prescribe an amount of garlic as medicine."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

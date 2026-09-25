@@ -6,11 +6,11 @@ Mara has a red wound with pus. She wants to use boiled Bayabas leaves.
 
 ## Learner card
 
-Match two Bayabas cards; choose Psidium guajava, leafy tops, use and safe next step.
+Fill the worksheet from two Bayabas cards: botanical name, part and listed use. Tell Mara what is known and unknown, ask about her medicines and symptoms, and seek prompt assessment of her wound.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Mara. Say your wound is red with pus and you want to use boiled Bayabas leaves. Ask: “Can I just wash it with Bayabas?” Answer questions briefly. Do not add symptoms, medicines or personal details beyond the case. No liquids at the table.
 
 ## Observer card
 

@@ -1,57 +1,73 @@
 ## [purpose] Purpose
 
-30 minutes: opening 3; model 3; supervised case practice 18; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.
+On clean props, the BHW protects their hands, keeps firm direct pressure, calls urgent help and reports facts.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 30 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 3, model 4, practice 16, feedback 4, checks 3. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.10 participant cards, worksheet, observation sheet; *First aid and referral* job aid; clean cloths and gloves for each triad.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm the emergency contact and who gives wound follow-up (midwife or RHU). Write both on the job aid.
+- **Scope:** no real wounds or fake blood. Do not teach removing an embedded object, herbal washes, iodine in the wound or a tetanus deadline. Further measures come from trained staff.
 
 ## [opening] Opening
 
-A gardener has a cut that continues to bleed through a clean cloth. A bystander suggests wiping away the first dressing.
+Press a cloth on your own forearm: *"This gardener's cut is bleeding through the cloth. A neighbor says, 'Take that off and wipe it so we can see.' Do you?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step matches the slide with the same heading.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"Why does the neighbor want to look?"*
+2. **"What to do and say."** Ask: *"What do you do when the cloth is soaked?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model Lea with gloves and a second cloth on top. Ask: *"When did Lea stop pressing?"*
+5. **"Scope and support."** Ask: *"Which home remedies for cuts have you seen?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"Where are gloves and clean cloth at your BHS?"*
 
-This is the safe response in the case. Protect your hands and apply firm direct pressure with clean material. Activate urgent help for severe or persistent bleeding. Add material if soaked while maintaining pressure; ask trained staff about further measures and wound follow-up. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Replace the soaked cloth."** A caring instinct. Show the worked example: add on top, keep pressing.
+- **"Press gently so it doesn't hurt."** Kind. The lesson says firm pressure; gentle pressure is not enough for severe bleeding.
+- **"Use a herbal wash."** Respect the tradition. The lesson says no routine herbal wash; plants are in 2.5.
 
-Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"You need to see the wound to help."** People want to see how bad it is. The lesson says keep pressing and add cloth. Ask: *"If Lea lifts the cloth to look, what happens to the pressure?"*
 
-On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Wound and bleeding station** (card: *Injury stations with props*), triads. The partner plays the neighbor who wants to wipe the cloth away. The learner puts on gloves, presses a cloth on a prop arm, adds a second cloth without lifting the first, sends someone to call and gives a factual report (where, what was done, time). The observer fills the worksheet rows. Two rounds, one strength and one retry action, rotate. Staff rate. Low-resource: folded paper as the cloth.
 
-1: The shortcut can cause harm: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice. / 2: Prioritize safety and timely help. / 3: Necessary assessment may be delayed.
+## [answer-key] Self-check answer key
 
-1: The story is not grounds for an independent diagnosis. / 2: The shortcut is unsafe: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice. / 3: Observe the task and appropriate referral.
+- **Check 1:** Correct: **"Protect your hands and press firmly with clean cloth."**
+  - "Lift the cloth to…": Lifting the cloth interrupts pressure.
+  - "Wash the cut with…": Routine herbal wash is not used, and a loose cover is not firm pressure.
+- **Check 2:** Correct: **"Add cloth on top, keep pressing, send for help."**
+  - "Remove the soaked cloth…": Removing the first cloth interrupts pressure.
+  - "Press more gently now…": Do not rely on gentle pressure for severe bleeding.
 
-## [observe] Observe
+## [observe] What to observe
 
-On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.
+Watch for: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.
 
-Ready: Completes the task without prompting: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.
+- **Kaya na:** Without prompting, puts on gloves, presses firmly, adds cloth without lifting the first, sends for help and reports where, what was done and the time.
+- **Kailangan pa ng practice:** Keeps pressure on, but needs a prompt to add cloth without lifting, to send for help or to complete the report.
+- **Hindi pa:** Lifts or removes the cloth, stops pressing, presses only gently, or does not send for help.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for: pressure never stops while cloth is added or the call is made. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** usually forgot to call. Retry action: *"Send someone to call while you press."* Re-observe now.
+- **Hindi pa:** re-model the soaked-cloth moment; retry in a later round, first with a quiet partner. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 43; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- 30 minutes is an authoring share of F38's 8 hours.
+- Program owner attested clinical sign-off, 25 Sep 2026; reviewers not named. Local protocol overrides.

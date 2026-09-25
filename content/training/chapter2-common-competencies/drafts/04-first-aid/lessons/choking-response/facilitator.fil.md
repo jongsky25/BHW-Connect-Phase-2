@@ -1,57 +1,76 @@
 ## [purpose] Layunin
 
-40 minuto: pambungad 3; modelo 3; supervised case practice 28; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.
+Sa adult at infant manikin, inihihiwalay ng BHW ang mabisang ubo sa malubhang bara, humihingi ng tulong, at ipinapakita ang aprubadong tugon ng trainer ayon sa edad.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 40 minuto sa harapang sesyon (bahagi ng araling ito sa 480 minutong plano ng subchapter): pambungad 3; demonstrasyon ng trainer 8; pagsasanay sa manikin 20; feedback 5; checks 4. Mga 3 minuto ang Read sa app.
+- **Kagamitan:** adult at infant training manikin; AED trainer kung mayroon; panlinis na itinakda ng trainer; cards, worksheet at observation sheet ng 2.4.15; ang job aid.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at dalawang check.
+- Tiyaking darating ang qualified trainer. Kung wala, ipagpaliban; huwag palitan.
+- **Hangganan:** ang trainer ang magpapakita ng kasalukuyang sequence; huwag itong ituro mula sa lumang manual. Huwag kailanman magsanay ng thrust sa totoong tao. Sa iba pa: *"Ikumpirma natin sa trainer o lokal na protocol."*
 
 ## [opening] Pambungad
 
-Sa tanghalian, hindi makapagsalita o makaubo nang mabisa ang adult. May hiwalay na case card ng sanggol.
+Basahin ang kaso: sa tanghalian, hindi makapagsalita o makaubo nang mabisa ang adult. Itaas ang case card ng sanggol. Itanong: *"Nakaka-ubo o nakapagsasalita ba siya? Ano ang iba para sa sanggol?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katugmang slide ang bawat heading ng Read.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon".** Itanong: *"Ano ang nagsasabing malubha ito?"*
+2. **"Gawin at sabihin".** Itanong: *"Ano ang nauuna bago ang anumang technique?"*
+3. **"Piliin ang unang tugon".** Self-check 1 — magkapares muna ang sasagot.
+4. **"Halimbawang sagot".** Ipapakita ng trainer ang dalawang pathway sa manikin. Itanong: *"Aling manikin para sa aling card?"*
+5. **"Saklaw at paghingi ng tulong".** Itanong: *"Bakit hindi kailanman sa kapareha?"*
+6. **"Subukan sa sitwasyon".** Self-check 2 — magkapares muna ang sasagot.
+7. **"Sa Lunes, gawin ito".** Ipasabi ang emergency contact ng bawat isa, saka pumunta sa manikin.
 
-Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at sundin ang kasalukuyang choking training ayon sa edad. Ihiwalay ang mabisang ubo sa malubhang bara. Magsanay sa adult at infant manikin sa gabay ng trainer. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Heimlich agad."** Igalang ang kagustuhang kumilos. Itanong: *"Nakaka-ubo ba siya? Sino ang tinawagan mo?"*
+- **"Hugutin ng daliri ang nasa bibig."** Sinasabi ng aralin: walang bulag na paghugot sa bibig.
+- **"Susubukan ko sa kapareha ko."** Manikin lamang, palagi.
+- **"Humingi ng tulong, tingnan ang edad."** Purihin.
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Iisang technique sa pagkabulon para sa lahat."** Iisang paraan ang itinuro ng lumang manual. Sinasabi ng aralin na hindi para sa sanggol ang adult abdominal thrust. Itama ang kaso, hindi ang tao: *"Bakit may card ng sanggol? Ano ang nagbabago?"*
 
-Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Choking skills station.** Maliit na grupo sa bawat manikin; ang trainer ang nagra-rate. Sa dalawang round, ihihiwalay ng bawat kalahok ang ubo sa malubhang bara mula sa card, hihingi ng tulong at sasabihin ang lokasyon, at ipapakita ang aprubadong tugon sa tamang manikin. Pupunan ng tagamasid ang worksheet; uulitin ang nalaktawan. Walang trainer o manikin: ang tawag lamang bilang tabletop, walang rating, at mag-iskedyul ng supervised practice.
 
-1: Maaaring maantala ang kinakailangang assessment. / 2: Maaaring makapinsala ang shortcut: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha. / 3: Unahin ang kaligtasan at agarang tulong.
+## [answer-key] Susi sa self-check
 
-1: Obserbahan ang gawa at ang tamang referral. / 2: Hindi batayan ang kuwento para sa sariling diagnosis. / 3: Ang shortcut ay hindi ligtas: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Humingi ng tulong at tingnan ang edad."**
+  - "Hugutin muna ng daliri ang nasa loob ng bibig": walang bulag na paghugot.
+  - "Hintayin kung maaalis ito sa pag-ubo": hindi ito mabisang ubo; tumawag na.
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Lumipat sa infant manikin at infant pathway."**
+  - "Adult abdominal thrust sa infant manikin": hindi para sa sanggol.
+  - "Thrust sa kapareha, nang marahan, para magsanay": manikin lamang, palagi.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.
+Babantayan ng trainer ang: Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.
 
-Kaya na: Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad. Nagawa nang walang paalala.
+- **Kaya na:** Naihihiwalay ang ubo sa malubhang bara, humihingi ng tulong, at naipapakita ang aprubadong tugon sa tamang manikin para sa bawat edad, nang walang paalala.
+- **Kailangan pa ng practice:** Humihingi ng tulong at naipapakita ang isang pathway, pero kailangan ng paalala ng trainer para iuri ang ubo o lumipat ng manikin.
+- **Hindi pa:** Gumagamit ng adult thrust sa infant manikin o ng bulag na paghugot sa bibig, nagsasanay sa totoong kapareha, o hindi humihingi ng tulong.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check; hindi rin ito certificate.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** sasabihin ng trainer ang nalaktawang kilos; ulitin ngayong sesyon.
+- **Hindi pa:** imomodelo muli ng trainer ang isang pathway; ulitin iyon, saka ang isa pa. Obserbahan muli sa susunod na supervised session.
+- Practice ang peer feedback, hindi rating ng staff.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 47; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 68.
+- Hinati ang 40 minuto mula sa 8 oras ng F38, na walang oras bawat kaso.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

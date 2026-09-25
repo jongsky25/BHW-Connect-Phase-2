@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Lagundi at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay agad si Ben sa health professional at iulat ang hirap sa paghinga.
+Ipinakita ng BHW ang card: Vitex negundo ang Lagundi, dahon, para sa pagpapagaan ng ubo sa payo ng clinician. Napansin ng BHW na hirap ding huminga si Ben. Hindi dapat maantala ng herbal na inumin ang pagsusuri. Hindi ibinigay ng BHW ang pinagpakuluan; iniugnay niya agad si Ben sa health professional at iniulat ang hirap sa paghinga.
 
 ## [scope] Saklaw at paghingi ng tulong
 

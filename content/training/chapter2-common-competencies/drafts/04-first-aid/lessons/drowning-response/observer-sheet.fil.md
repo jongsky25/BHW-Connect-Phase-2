@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod. |
+| Kaya na | Walang paalala, nananatili sa ligtas na pampang, tumatawag ng sanay na rescuer kasama ang lokasyon, tumatangging lumusong at sinasabing kailangan ng medikal na pagsusuri. |
+| Kailangan pa ng practice | Nasa pampang at tumatawag ng rescuer, pero kailangan ng paalala sa lokasyon o sa pangangailangan sa medikal na pagsusuri. |
+| Hindi pa | Lumulusong o pumapayag lumusong, nagmumungkahing baligtarin ang tao, o hindi tumatawag ng sanay na rescuer. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-20 minuto: pambungad 3; modelo 3; supervised case practice 8; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.
+Kapag bumagsak at hindi tumutugon ang adult, humihingi ng tulong ang BHW, sinusuri ang tugon at paghinga, tinatanggihan ang pagpapainom at iniuulat ang nakita.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **20 minuto** harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 3, modelo 3, pagsasanay 9, feedback 3, self-check 2. Mga 5 minuto ang Read sa app.
+- Participant cards, worksheet at talaan ng obserbasyon ng 2.4.6; job aid na may kumpirmadong emergency contact.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at ang bahaging *Kilalanin ang shock at pagkawala ng malay* sa job aid.
+- Kumpirmahin sa RHU ang emergency contact at kung may AED sa malapit. Upuan ang gaganap na bumagsak.
+- Saklaw: walang senyales o lunas sa shock ang aralin; huwag magdagdag. Sa supervised na station ng 2.4.7 lamang ang CPR at AED, hindi sa tao.
 
 ## [opening] Pambungad
 
-Bumagsak ang isang nasa hustong gulang sa waiting area at hindi tumutugon. Nag-alok ng matamis na inumin ang kamag-anak.
+*"Bumagsak ang isang adult sa waiting area at hindi sumasagot. May dalang matamis na inumin ang kamag-anak. Ano ang susuriin mo, at ano ang hindi mo ibibigay?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon (Read at unang slide).** *"Ano ang alam natin, at ano ang hula lamang?"*
+2. **Gawin at sabihin (katapat na slide).** *"Anong dalawang bagay ang susuriin mo, at sino ang tatawagan?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** Ipakita: *"Ma'am, naririnig n'yo po ba ako?"* Walang sagot. *"Kuya, tawagan ang [kumpirmadong contact]: may bumagsak na adult sa waiting area, hindi tumutugon. Sinusuri ko ang paghinga."* Sa kamag-anak: *"Huwag muna natin siyang painumin habang hindi siya tumutugon."*
+5. **Saklaw at paghingi ng tulong.** *"Kung hindi normal ang paghinga, ano ang sabi ng aralin? Saan natin ito sinasanay?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
+7. **Sa Lunes, gawin ito.** *"Sino ang kumpirmadong contact para sa waiting area ng inyong BHS?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Ganito ang ligtas na tugon sa kaso. Suriin ang paligid, tugon at normal na paghinga. Humingi agad ng emergency help at sanay na assessor. Kung hindi normal ang paghinga, sundin ang natutunang CPR/AED; kung humihinga, bantayan hanggang dumating ang tulong. Iniiwasan ni Lea ang shortcut.
+- **"Painumin; mababa ang asukal niya."** *"Malalaman ba ang sanhi sa iisang palatandaan? Kaya ba niyang lumunok?"*
+- **"Pagpahingahin muna at hintaying magising."** *"Ano ang mangyayari sa tulong kung maghihintay tayo?"*
+- **"Mag-CPR agad."** *"Suriin muna ang tugon at normal na paghinga, saka sundin ang lokal na natutunan."*
+- **"Tumawag, suriin ang paghinga, magbantay."** Kumpirmahin.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.
+**"Magigising siya sa matamis na inumin."** May nakita nang nanghina na umayos pagkainom. Pero sa taong hindi tumutugon, hindi ito ligtas at naaantala ang tawag. Itama ang kaso: *"Ganyan din ang paniniwala ng kamag-anak sa kuwento. Ano ang sabi ng aralin?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+Urgent response simulation (*Mga station sa sitwasyon, pagbagsak at handover*). Tatluhan: learner, partner bilang kamag-anak na nag-aalok ng matamis na inumin, observer. Dalawang round, may isang lakas at isang retry action sa pagitan, saka magpalit. Itatala ng observer ang tugon, paghinga, tawag, tinanggihang inumin at handover. Kathang-isip lamang. Kung mag-isa: isalaysay gamit ang job aid; magpaobserba mamaya.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Maaaring maantala ang kinakailangang assessment. / 2: Maaaring makapinsala ang shortcut: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag. / 3: Unahin ang kaligtasan at agarang tulong.
+1. **"…Ano ang uuna?"** **"Humingi ng tulong at suriin ang paghinga."** — tumawag at suriin ang tugon at paghinga. "Painumin ng matamis na inumin…": walang ipaiinom, at hindi masasabi ng iisang palatandaan ang sanhi. "Hayaan munang magpahinga…": naaantala ang tawag.
+2. **"…Mapilit ang kamag-anak sa inumin…"** **"Tanggihan ang inumin at magbantay hanggang dumating ang tulong."** "Payagan ang isang higop…": hindi pa rin tumutugon. "Sabihin sa tulong na mababang asukal…": hula, hindi obserbasyon.
 
-1: Obserbahan ang gawa at ang tamang referral. / 2: Hindi batayan ang kuwento para sa sariling diagnosis. / 3: Ang shortcut ay hindi ligtas: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.
 
-Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.
+- **Kaya na:** Sinusuri ang paligid, tugon at paghinga, humihingi ng tulong, tinatanggihan ang inumin at iniuulat ang nakita nang walang paalala.
+- **Kailangan pa ng practice:** Humihingi ng tulong at tinatanggihan ang inumin, pero kailangan ng paalala na suriin ang paghinga o mag-handover nang factual.
+- **Hindi pa:** Pinapayagan ang matamis na inumin, hinuhulaan ang sanhi, o naghihintay kung magigising bago tumawag.
 
-Kaya na: Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom. Nagawa nang walang paalala.
+Tingnan kung nauuna ang tawag bago ang usapan tungkol sa sanhi. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.
+- **Kailangan pa:** sanayin ang isang pagtanggi sa inumin; ulitin.
+- **Hindi pa:** isa-isahin ang job aid (tugon, hinga, tawag) nang magkasama; ulitin kasama ang partner na Kaya na.
+- Obserbahang muli ngayon o sa susunod na sesyon, bagong kaso. Practice ang peer feedback, hindi rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 41; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 83–85.
+- Walong oras ang 2.4 sa F38; mungkahi ng authoring ang 20 minutong ito.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Ang lokal na protocol ang masusunod.

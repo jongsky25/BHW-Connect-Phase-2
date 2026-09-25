@@ -10,8 +10,8 @@ Make an issue card: reported concern, affected people, missing voices and the ne
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the leader who says, “They just refuse to follow,” or one of the three residents who learned the new time late. Answer the learner’s questions in one or two sentences. Do not invent new facts or add personal or clinical details.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Listen for whether the learner separates the three reports from the leader’s assumption and names the missing voices. Note the exact words. Give one strength and one next action, then the learner retries. Staff rate with the separate observation sheet.

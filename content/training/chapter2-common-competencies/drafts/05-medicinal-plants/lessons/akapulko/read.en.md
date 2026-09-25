@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Akapulko and its botanical name on the card. The yard plant is not assumed to be identified. Seek health-center assessment if the rash worsens, spreads, looks infected or the diagnosis is uncertain.
+The BHW shows Ana the card: Akapulko is Senna alata, and the listed part is leaves. The BHW says the yard plant is not yet confirmed and the rash is not yet diagnosed. The BHW asks about her medicines and symptoms. Because the diagnosis is uncertain, the BHW asks Ana to have the rash assessed at the health center.
 
 ## [scope] Scope and support
 

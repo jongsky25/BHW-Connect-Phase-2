@@ -10,8 +10,8 @@ Punan ang action plan ng grupo. Magdagdag ng panukat sa napapanahong balita at t
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang kasapi ng pangunahing grupo. Pagkatapos punan ng kalahok ang plano, sabihing hindi naihatid ang ilan sa iyong paanyaya. Kung tanungin, magbigay ng praktikal na dahilan sa isang pangungusap. Huwag magdagdag ng personal o clinical na detalye o mangako ng resources.
 
 ## Card ng tagamasid
 
-Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+Itala kung may gagawin, tao, kumpirmadong resources, petsa at panukat sa napapanahong balita ang plano, at kung paano tumugon ang kalahok sa hindi natapos na gawain. Magbigay ng isang lakas at isang susunod na hakbang, saka uulit ang kalahok. Staff ang magre-rate gamit ang hiwalay na observation sheet.

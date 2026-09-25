@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nasa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part does the card list?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Lagundi ang nakalista sa card?",
       "prompt_en": "Which Lagundi part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Lagundi.",
-          "en": "Any part of a yard plant even when its identity as Lagundi is unconfirmed."
+          "fil": "Anumang bahagi ng halaman, dahil kilala ang Lagundi sa ubo.",
+          "en": "Any part of the plant, since Lagundi is well known for cough."
         },
         {
           "fil": "Dahon ng kumpirmadong Vitex negundo.",
           "en": "Leaves of confirmed Vitex negundo."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Ang pinagpakuluan at dose mula sa lumang slide.",
+          "en": "The decoction and dose shown on the old slide."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "feedback_fil": "1: Hindi sinasabi ng pagiging kilala ang nakalistang bahagi; dahon ang nasa card. 2: Dahon ng Vitex negundo ang nasa card; hindi ito dose. 3: Bahagi ang nasa card, hindi pinagpakuluan; huwag gayahin ang dose ng lumang slide.",
+      "feedback_en": "1: Being well known does not tell you the listed part; the card lists leaves. 2: The card lists leaves of Vitex negundo; this is not a dose. 3: The card lists a part, not a decoction; do not copy the old slide’s dose."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: pagpapagaan ng ubo sa payo ng clinician\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: cough relief under clinical advice\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Card: Vitex negundo, dahon.\nHirap ding huminga si Ben.\nWalang pinagpakuluan; huwag antalahin.\nIugnay agad si Ben at iulat.",
+    "display_en": "Card: Vitex negundo, leaves.\nBen also has difficulty breathing.\nNo decoction; do not delay.\nConnect Ben promptly and report.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Lagundi at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay agad si Ben sa health professional at iulat ang hirap sa paghinga.",
-    "narration_en": "The BHW points to Lagundi and its botanical name on the card. The yard plant is not assumed to be identified. Connect Ben promptly to a health professional and report the breathing difficulty."
+    "narration_fil": "Ipinakita ng BHW ang card: Vitex negundo ang Lagundi, dahon, para sa pagpapagaan ng ubo sa payo ng clinician. Napansin ng BHW na hirap ding huminga si Ben. Hindi dapat maantala ng herbal na inumin ang pagsusuri. Hindi ibinigay ng BHW ang pinagpakuluan; iniugnay niya agad si Ben sa health professional at iniulat ang hirap sa paghinga.",
+    "narration_en": "The BHW shows the card: Lagundi is Vitex negundo, leaves, for cough relief under clinical advice. The BHW notes that Ben also has difficulty breathing, so an herbal drink must not delay assessment. The BHW does not give the decoction, connects Ben promptly to a health professional and reports the breathing difficulty."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
-    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "display_fil": "Huwag antalahin ng inumin ang pagsusuri.\nHuwag gayahin ang dose ng lumang slide.\nWalang paghahanda o dose.",
+    "display_en": "A drink must not delay assessment.\nDo not copy the old slide’s dose.\nNo preparation or dosing.",
     "check": null,
     "narration_fil": "Huwag hayaang maantala ng herbal na inumin ang pagsusuri sa hirap sa paghinga. Huwag magtakda ng dose ayon sa lumang slide. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
     "narration_en": "An herbal drink must not delay assessment of breathing difficulty. Do not copy the old slide’s dose. This lesson does not authorize preparation or dosing of an herbal remedy."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Ano ang ligtas na hakbang para kay Ben?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the safe step for Ben?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Lagundi?",
-      "prompt_en": "What is the safe response in the Lagundi case?",
+      "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Ben?",
+      "prompt_en": "What is the safe response in Ben’s case?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Painumin si Ben ng Lagundi na pinagpakuluan habang naghihintay.",
+          "en": "Let Ben drink the Lagundi decoction while you wait."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Iugnay agad si Ben sa health professional; iulat ang hirap huminga.",
+          "en": "Connect Ben promptly and report his breathing difficulty."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Subukan muna ang Lagundi at iugnay lamang kung hindi gumaan ang ubo.",
+          "en": "Try Lagundi first and refer only if the cough does not ease."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "feedback_fil": "1: Hindi dapat makaantala ng pagsusuri ang herbal na inumin; hindi ito ibinibigay ng BHW. 2: Hindi makapaghihintay ang hirap sa paghinga; iugnay agad si Ben at iulat ito. 3: Hindi lang ito ubo; naaantala ang pagsusuri sa paghinga kapag Lagundi muna.",
+      "feedback_en": "1: An herbal drink must not delay assessment; the BHW does not give it. 2: Difficulty breathing cannot wait; connect Ben promptly and report it. 3: This is not only a cough; trying Lagundi first delays assessment of his breathing."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

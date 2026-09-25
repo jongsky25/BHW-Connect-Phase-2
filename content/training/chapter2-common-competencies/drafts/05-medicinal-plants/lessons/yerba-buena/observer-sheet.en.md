@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Yerba buena, Mentha cordifolia, leaves, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Mentha cordifolia and leaves, suggests no preparation and refers Eva's swelling promptly without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to refer the swelling promptly when the dentist is far. |
+| Hindi pa | Suggests a plant preparation or lets the plant replace Eva's dental care. |
 
 Evidence observed: ____
 

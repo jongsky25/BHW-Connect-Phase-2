@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Recognize possible severe allergic reaction and activate emergency help immediately. Follow the person's prescribed emergency plan and trained/local protocol. Continue to observe breathing while help is coming. Lea avoids the shortcut.
+Lea sees widespread hives and hears the adult say breathing is difficult after the bee sting. She treats this as a possible severe allergic reaction and calls emergency help right away. When a friend offers a remedy and a tablet, she says medicine follows the person's prescribed emergency plan and trained/local protocol. She keeps watching breathing until help arrives.
 
 ## [scope] Scope and support
 
@@ -24,4 +24,4 @@ Return to the story. Choose an appropriate next step.
 
 ## [next-step] On Monday, try this
 
-On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Recognize the urgent signs in the case, activate help for breathing difficulty and state medication boundaries.

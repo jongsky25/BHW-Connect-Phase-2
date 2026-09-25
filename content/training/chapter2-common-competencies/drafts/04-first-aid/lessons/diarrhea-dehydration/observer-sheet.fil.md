@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. |
+| Kaya na | Itinatanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan, binabasa ang dami sa label ng sachet, ipinapaliwanag ang ligtas na tubig at pagpapasuso, at sinasabi ang referral trigger nang walang paalala. |
+| Kailangan pa ng practice | Nagpapaliwanag mula sa label, pero kailangan ng paalala na itanong ang mga unang tanong, banggitin ang pagpapasuso o sabihin ang referral trigger. |
+| Hindi pa | Nagbibigay ng dami o homemade na timpla mula sa alaala, pinatitigil ang pagpapasuso, o pinipilit painumin kahit hindi ligtas lumunok. |
 
 Aktuwal na nakita/narinig: ____
 

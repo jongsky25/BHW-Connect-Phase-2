@@ -1,6 +1,6 @@
 ## [scene] Ang sitwasyon
 
-Sa silungan, may batang kulang sa pagkain at mahaba ang pila sa tubig. May residenteng nangangailangan ng gamot; ang isa ay nababagabag.
+Sa pansamantalang silungan, maaaring kulang sa pagkain ang isang bata at limitado ang ligtas na tubig. May residenteng nangangailangan ng regular na gamot; ang isa ay nababagabag.
 
 ## [action] Gawin at sabihin
 

@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Yerba buena and its botanical name on the card. The yard plant is not assumed to be identified. Refer the swelling promptly to a dental or health professional and report symptoms.
+The BHW notices the swollen cheek, not only the tooth pain. The BHW points to Mentha cordifolia and "Part: leaves" on the card and suggests no preparation. The BHW asks about Eva's current medicine, refers the swelling promptly to a dental or health professional and reports her symptoms.
 
 ## [scope] Scope and support
 

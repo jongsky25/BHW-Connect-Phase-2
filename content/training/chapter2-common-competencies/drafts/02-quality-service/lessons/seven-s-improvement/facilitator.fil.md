@@ -1,57 +1,76 @@
 ## [purpose] Layunin
 
-120 minuto: pambungad 10; modelo 15; practice 55; feedback/pag-ulit 20; talakayan 10; plano sa trabaho 10. Gamitin ang pitong Slides, cards, worksheet at observer sheet. Magpalit ng papel at umulit gamit ang isang binagong detalye.
-
-Suriin ang kathang-isip na work area gamit ang lahat ng 7S at magtakda ng pagbabago, responsable at petsa ng pagsusuri.
+Sa simulated na mesa, nasusuri ng BHW ang pitong kategorya at nakapagtatalaga ng ligtas at awtorisadong pagbabago na may responsable, petsa ng pagsusuri at ebidensiya.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang apat na session sa kalidad ng serbisyo. Hiwalay ito sa digital na pagbabasa. Gumamit ng paghahambing, practice at feedback; hindi patunay ng kakayahan ang oras lamang. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 120 minutong harapan (bahagi ng aralin sa 600 minutong plano ng subchapter): pambungad 10, modelo 10, inspeksyon 55, feedback at pag-ulit 20, mga check, talakayan at pagsasara ng subchapter 25. Pagbasa sa app: mga 5 minuto.
+- **Kagamitan:** cards na *2.2.4 Inspeksyon gamit ang 7S* (isang set bawat tatluhan), worksheet, talaan ng obserbasyon, job aid na *Mataas na kalidad ng serbisyo*. Simulated na mesa: lumang poster, halo-halong blangkong form, walang-label na bakanteng lalagyan, bakanteng kahong nakaharang sa daan.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Sagutan muna ang dalawang check sa app.
+- Kumpirmahin kung sino ang nagpapahintulot mag-alis ng gamit, at ang paraan ng pag-uulat ng panganib.
+- **Saklaw:** ligtas na props lamang. Walang totoong rekord, gamot o kagamitan; walang itatapon. Walang matutulis o kontaminadong bagay; nasa 2.3 iyon.
 
 ## [opening] Pambungad
 
-Sinusuri ni BHW Tess ang kathang-isip na mesa. May lumang poster, halo-halong blangkong form at alikabok. Walang label sa lalagyan. May kahon sa daan. Walang nakatalagang tagasuri o petsa ng pagbalik. Kailangan ng kaayusan na magpapatuloy matapos ang isang paglilinis.
+Ituro ang mesa at itanong: *"Kung lilinisin natin ito ngayon, maayos pa rin ba pagkalipas ng isang buwan? Bakit?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bahagi ng Read at katugmang slide ang bawat hakbang.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Ano ang nakikita ninyo sa mesa?"*
+2. **"Gawin at sabihin."** Itanong: *"Sa apat na ito, alin ang kailangan munang ipahintulot?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapareha.
+4. **"Halimbawang sagot."** Itanong: *"Paano nagkakaiba ang standardize, self-discipline at sustain dito?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Sino ang magpapahintulot bago alisin ang gamit?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapareha.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Ano ang magpapakita sa Biyernes na nagawa ang pagbabago?"* Isara ang subchapter: isang katangian, isang hakbang sa privacy, isang kategorya ng 7S; isang mungkahi sa job aid.
 
-Safety: iulat ang kahong nakaharang at ipaayos ang daan. Self-discipline: gampanan ang nakatalagang pagsusuri nang hindi laging inuutusan. Sustain: ulitin at balikan ang routine. Napagkasunduan ni Tess at staff ang araw-araw na checklist at pagsusuri sa Biyernes. Kumpleto ang pitong kategorya; hindi lang pagwawalis.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Itapon ang lumang poster at form."** Sort: tukuyin muna, saka humingi ng awtorisasyon bago alisin.
+- **"Walisin at punasan."** Oo, iyan ang Sweep. Itanong: *"E ang anim pa?"*
+- **"Lagyan ng label ang lalagyan."** Mahusay, Standardize iyan. Itanong: *"Sino ang magkakasundo sa label?"*
+- **"Suriin tuwing Biyernes."** Sustain iyan. Itanong: *"Sino, at ano ang ebidensiya?"*
 
-Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Ang 7S ay malaking araw ng paglilinis."** Pamilyar sa atin ang general cleaning, kaya natural ito. Pero walang nakatalagang tagasuri sa mesa ni Tess. Itanong: *"Aling tatlong S ang magpapanatiling maayos pagkatapos ngayon?"* Hayaang sila ang makakita.
 
-Gamit ang ligtas na props, suriin ang lahat ng 7S sa mesa ni Tess. Magtalaga ng isang pagbabago, responsable, petsa at ebidensiya. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Inspeksyon gamit ang 7S sa simulated na mesa.** Tatluhang nagpapalitan sa mga mesa (tatlong round, mga 18 minuto bawat isa). Pupunan ng kalahok ang pitong hanay, saka tutukuyin ang isang pagbabago, responsable, petsa at ebidensiya. Kapareha (staff): itatanong ang *"Sino ang susuri nito?"* Itatala ng tagamasid ang aktuwal na salita. Umulit nang may binagong detalye (ibang gamit ang inilipat). Kathang-isip na detalye lamang. Mag-isa: drawing ng mesa ni Tess; obserbasyon ng staff pagkatapos.
 
-1: Inaayos ang kailangang gamit ayon sa paggamit. / 2: Salungat ito sa self-discipline at hindi pag-aayos ng gamit. / 3: Kailangan ng napagkasunduang standard, hindi pabago-bagong label.
+## [answer-key] Susi sa self-check
 
-1: Nawawala ang gabay sa pagpapanatili. / 2: May pananagutan at pagbalik sa resulta, hindi minsanang paglilinis. / 3: Hindi nito sinusuri kung napapanatili ang pitong kategorya.
+- **Check 1 (alin ang Systematize):** **"Ayusin ang forms ayon sa gamit."** Inaayos ang kailangang gamit ayon sa paggamit.
+  - "Maghintay ng utos": salungat ito sa self-discipline at hindi pag-aayos ng gamit.
+  - "Magkakaibang label araw-araw": kailangan ng napagkasunduang standard, hindi pabago-bagong label.
+- **Check 2 (pagpapatuloy ng 7S):** **"Itakda ang tao, routine at review."** May pananagutan at pagbalik sa resulta, hindi minsanang paglilinis.
+  - "Alisin ang checklist": nawawala ang gabay sa pagpapanatili.
+  - "Sabihing tapos na ang lahat": hindi nito sinusuri kung napapanatili ang pitong kategorya.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Nasusuri ang lahat ng pitong kategorya at may ligtas, awtorisadong pagbabago na may responsable at petsa ng pagbalik.
+Indicator: Nasusuri ang lahat ng pitong kategorya at may ligtas, awtorisadong pagbabago na may responsable at petsa ng pagbalik.
 
-Kaya na: Kumpleto ang pitong hanay; naihihiwalay ang standardize, self-discipline at sustain; may malinaw na follow-up nang walang paalala.
+- **Kaya na:** Kumpleto ang pitong hanay; naihihiwalay ang standardize, self-discipline at sustain; may malinaw na follow-up nang walang paalala.
+- **Kailangan pa ng practice:** May ligtas na pagbabago pero kailangang paalalahanang idagdag ang isang kategorya o petsa ng pagsusuri.
+- **Hindi pa:** Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.
 
-Kailangan practice: May ligtas na pagbabago pero kailangang paalalahanang idagdag ang isang kategorya o petsa ng pagsusuri.
+Bantayan: iniulat ang kahon, hindi lang inilipat. Ang tamang self-check ay hindi ebidensiya ng kakayahan.
 
-Hindi pa: Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** itanong *"Aling hanay ang blangko?"* o *"Kailan ninyo susuriin muli?"*; obserbahang muli sa parehong sesyon.
+- **Hindi pa:** ipakitang muli ang huling tatlong hanay; ulitin ang tatlong iyon lamang, saka ang pito. Ipares sa BHW na Kaya na. Obserbahan muli sa susunod na round o follow-up.
+- Practice ang peer feedback, hindi staff rating.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 30; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF p. 36.
+- Oras: hati ng mga sumulat sa 600 minutong alokasyon ng source.
+- Inaprubahan at inilathala ng owner, 25 Set 2026; walang nakatalang pangalan ng reviewer. Sundin ang lokal na protocol kung iba.

@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. |
+| Kaya na | Without prompting, calls for help with the location and asks for the AED before touching the manikin, then follows the trainer's adult sequence. |
+| Kailangan pa ng practice | Calls for help and the AED, but needs a prompt for the location, the AED request or a step of the trainer's sequence. |
+| Hindi pa | Starts with a pulse check or the old CAB steps, does not call for help, or practises on a live person. |
 
 Evidence observed: ____
 

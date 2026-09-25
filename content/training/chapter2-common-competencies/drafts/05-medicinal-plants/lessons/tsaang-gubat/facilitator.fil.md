@@ -1,57 +1,77 @@
 ## [purpose] Layunin
 
-8 minuto: pambungad 1; modelo 1; supervised reference-card practice 4; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Para sa Tsaang gubat, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+Itinutugma ng BHW ang card sa Carmona retusa at dahon, sinasabing kailangang suriin ang sakit ng tiyan, at iniuugnay ang lumalalang sakit ni Rosa sa health professional.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **8 minutong harapan** (sa 120-minutong plano): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
+- **Bawat tatluhan:** cards at worksheet na *2.5.9 — Reference-card practice: Tsaang gubat*; *2.5.9 — Talaan ng obserbasyon*; job aid; dalawang Tsaang gubat card. Tuyong props lamang.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa midwife o RHU kung sino ang titingin sa lumalalang sakit ng tiyan.
+- **Hangganan:** card check at referral lamang. Walang dose mula sa lumang table: *"Tanong iyan para sa midwife o RHU."*
 
 ## [opening] Pambungad
 
-Masakit ang tiyan ni Rosa at lumalala ang sakit. Gusto niyang uminom ng Tsaang gubat.
+Basahin nang malakas ang kaso. Itanong: *"Gustong uminom ni Rosa ng Tsaang gubat. Ano ang gagawin mo sa lumalalang sakit?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon.** *"Aling salita sa kuwento ni Rosa ang pinakanakababahala?"* (Lumalala.)
+2. **Gawin at sabihin.** Ituro ang botanical name at "Bahagi: dahon". *"Ano ang ibig sabihin ng 'kailangang suriin' para kay Rosa?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapares.
+4. **Halimbawang sagot.** Ipakita ang pagbasa ng card; balikan ang dalawang "tsaang gubat" sa bakuran mula sa 2.5.1. *"Alin ang nasa card?"*
+5. **Saklaw at paghingi ng tulong.** *"Sinasabi ba ng pangalan na ligtas itong inumin?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
+7. **Sa Lunes, gawin ito.** Simulan ang practice.
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Itinuro ng BHW ang Tsaang gubat at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay ang lumalalang sakit sa health professional; huwag magbigay ng dose mula sa lumang table.
+- **"Tsaa lang iyan, kaya ayos lang."** *"Napapatunayan ba iyan ng pangalan?"*
+- **"Hintayin muna natin."** Itanong: *"Lumalala na ang sakit. Sino ang dapat tumingin sa kanya?"*
+- **"Iugnay na siya sa health professional."** Tama; itanong ang iuulat: sintomas at kasalukuyang gamot.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+**"Tsaa ang tawag, kaya ligtas inumin."** Magaan pakinggan ang pangalan. Sa grupo itanong, hindi sa nagsabi: *"Aling halaman, at ano ang sanhi ng sakit?"* Hindi sapat ang pangalan para masabing ligtas itong inumin, at iba-iba ang sanhi ng sakit ng tiyan.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Itugma ang dalawang Tsaang gubat card; piliin ang Carmona retusa, dahon, gamit at ligtas na susunod na hakbang. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Reference-card practice: Tsaang gubat** (rotation B), tatluhan, isang 4-minutong round.
 
-## [answer-key] Paliwanag sa checks
+- **Kalahok:** ihambing ang cards, punan ang worksheet, sabihin kay Rosa ang alam, hindi alam at sino ang kokonsultahin.
+- **Kapareha:** gumanap na Rosa; sabihing may dahon na siya sa bahay.
+- **Tagamasid:** itala ang aktuwal na salita; isang lakas, isang susunod na hakbang.
 
-1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. / 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. / 3: Magkapareho ang tawag sa ilang magkakaibang halaman.
+Kathang-isip na detalye lamang. Kung mag-isa: worksheet ngayon, obserbasyon ng staff pagkatapos.
 
-1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. / 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. / 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1: "Aling bahagi ng Tsaang gubat ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Carmona retusa."** Tugma ang bahagi sa card; hindi ito dose.
+  - "Anumang dahong tinatawag ni Rosa na Tsaang gubat, nang hindi sinusuri." Hindi patunay ng identity ang local name.
+  - "Dahon ng anumang halamang sinasabing pampaginhawa sa sakit ng tiyan." Itugma ang botanical name, hindi ang reklamo.
+- **Check 2: "Lumalala ang sakit ng tiyan ni Rosa. Ano ang ligtas na tugon?"** Tama: **"Iugnay sa health professional ang lumalala niyang sakit."** Kailangan ng health professional ang lumalalang sakit.
+  - "Kopyahin ang dose mula sa lumang table para mainom niya ito." Walang dose mula sa lumang table.
+  - "Sabihing ligtas inumin ang Tsaang gubat dahil nakalista ito." Hindi patunay ng pangalan na ligtas itong inumin.
 
-Para sa Tsaang gubat, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Tama ang Tsaang gubat, Carmona retusa, dahon, gamit at referral nang walang paalala.
+Staff lamang. Indicator: Para sa Tsaang gubat, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-Kailangan practice: Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+- **Kaya na:** Itinutugma ang Carmona retusa at dahon, walang binabanggit na dami at iniuugnay sa health professional ang lumalalang sakit ni Rosa nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang card ngunit kailangan ng paalala para kumilos sa lumalalang sakit ni Rosa.
+- **Hindi pa:** Kinokopya ang dose mula sa lumang table o sinasabing ligtas inumin ni Rosa ang Tsaang gubat.
 
-Hindi pa: Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+Hanapin: kumikilos sa "lumalala" nang walang paalala; walang binabanggit na dami. Hindi ebidensya ng kasanayan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** sabihin ang kulang na hakbang; ulitin agad ang parehong card.
+- **Hindi pa:** ulitin ang hangganan, ipakitang muli ang hakbang 4, ulitin kasama ang kaparehang Kaya na.
+- Obserbahan muli sa susunod na sesyon na may isang binagong detalye (ang anak ni Rosa ang nagtanong). Hindi staff rating ang peer feedback.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 14 (hindi isinama ang paghahanda at dose).
+- Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

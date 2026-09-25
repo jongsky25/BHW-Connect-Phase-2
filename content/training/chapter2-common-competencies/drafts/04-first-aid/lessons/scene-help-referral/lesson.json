@@ -21,8 +21,8 @@
         "c2.firstaid.scene.help.referral.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: Huminto ang traysikel sa tabi ng nadapang sakay habang may…",
-      "takeaway_en": "Case: A tricycle has stopped beside a fallen rider while traffic…",
+      "takeaway_fil": "Kaso: May nadapang sakay sa tabi ng dumaraang sasakyan.",
+      "takeaway_en": "Case: A rider has fallen beside moving traffic.",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.firstaid.scene.help.referral.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Tingnan ang panganib bago lumapit; agad tatawag ang saksi.",
+      "takeaway_en": "Check hazards before approaching; the bystander calls at once.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Dumating si Lea sa gilid ng kalsada kasama ang saksi. Ano ang uuna?",
+        "prompt_en": "Lea reaches the roadside with a bystander. What comes first?",
         "options": [
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Lumapit agad sa sakay para makita kung gaano kalala ang pinsala.",
+            "en": "Walk straight to the rider to see how badly he is hurt."
           },
           {
-            "fil": "Tingnan ang trapiko at tumawag.",
-            "en": "Check traffic and call."
+            "fil": "Tingnan ang trapiko, saka patawagin ang saksi.",
+            "en": "Check the traffic, then have the bystander call."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Itanong muna sa sakay at drayber ang nangyari bago tumawag.",
+            "en": "Ask the rider and driver what happened before calling."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
-        "feedback_en": "1: The shortcut can cause harm: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+        "feedback_fil": "1: Gumagalaw pa ang trapiko. Malalagay rin sa panganib si Lea; tingnan muna ang panganib bago lumapit. 2: Tama. Inuuna ni Lea ang panganib, at agad tatawag ang saksi sa kumpirmadong emergency contact. 3: Naaantala ng mahabang history ang tawag. Iulat ang nakikita ngayon; makapaghihintay ang kuwento.",
+        "feedback_en": "1: Traffic is still moving. Stepping in first puts Lea at risk too; look for hazards before approaching. 2: Right. Lea looks for hazards first, and the bystander activates the confirmed emergency route without delay. 3: A full history delays the call. Report what you can see now; the story can wait."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.scene.help.referral.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
-      "takeaway_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+      "takeaway_fil": "Tiningnan ni Lea ang trapiko, pinatawag ang saksi sa kumpirmadong contact, at iniulat ang nakita.",
+      "takeaway_en": "Lea checks traffic, has the bystander call the confirmed contact, and reports what she saw.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.scene.help.referral.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Umiwas sa trapiko, tumawag agad, at gamitin ang lokal na kumpirmadong contact.",
+      "takeaway_en": "Stay out of traffic, call without delay, and use the locally verified contact.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.scene.help.referral.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Iulat ang lokasyon at nakitang tugon at paghinga, hindi hula.",
+      "takeaway_en": "Report location and observed response and breathing, not guesses.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Kausap na ng saksi ang kumpirmadong contact. Ano ang dapat sabihin ni Lea?",
+        "prompt_en": "The bystander is on the phone with the confirmed contact. What should Lea tell them?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ang lokasyon at kung tumutugon at humihinga ang sakay.",
+            "en": "The location and whether the rider responds and breathes."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Ang hula niya sa pinsala ng sakay para alam nila ang dadalhin.",
+            "en": "Her guess about the rider's injury, so they know what to bring."
           },
           {
-            "fil": "Ibigay ang lokasyon at nakita.",
-            "en": "Give the location and observations."
+            "fil": "Na lumipat sa national number dahil puwede ang kahit anong numero.",
+            "en": "To hang up and try the national number, since any number works."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. 3: Observe the task and appropriate referral."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama. Ang lokasyon at ang nakitang tugon at paghinga ang maikling ulat na kailangan ng sanay na tulong. 2: Iulat ang nakita, hindi ang hula. Ang sanay na tulong ang susuri. 3: Gamitin ang lokal na kumpirmadong contact. Huwag itong palitan ng national number.",
+        "feedback_en": "1: Right. Location plus the observed response and breathing is the concise report trained help needs. 2: Report observed facts, not guesses. Trained help does the assessment. 3: Use the locally verified contact. Do not assume a national number replaces it."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.scene.help.referral.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang Lugar, Tawag at Ulat sa bagong kathang-isip na kaso.",
+      "takeaway_en": "Practise the scene, call and report steps with a new fictional case.",
       "check": null
     }
   ],

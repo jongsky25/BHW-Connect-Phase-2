@@ -45,28 +45,28 @@
         "c2.firstaid.diarrhea.dehydration.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Unahin ang tanong sa pag-inom, pagsusuka, dugo sa dumi at kamalayan.",
+      "takeaway_en": "Ask about drinking, vomiting, blood in stool and alertness first.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Ipinakita ng tagapag-alaga ang ORS sachet. Ano ang uuna?",
+        "prompt_en": "Mina's caregiver shows you the ORS sachet. What comes first?",
         "options": [
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan.",
+            "en": "Ask about drinking, vomiting, blood in stool and alertness."
           },
           {
-            "fil": "Basahin ang ORS sachet.",
-            "en": "Read the ORS packet."
+            "fil": "Ituro ang homemade na timplang natutunan mo, hindi ang sa sachet.",
+            "en": "Share the homemade ORS recipe you learned, not the packet's."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Itigil muna ang pagpapasuso hanggang tumigil ang pagtatae.",
+            "en": "Stop breastfeeding until the loose stools stop."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
-        "feedback_en": "1: The shortcut can cause harm: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama. Ito ang unang itinatanong, dahil kailangang agad i-refer kapag may danger sign o alalahanin sa dehydration. 2: Huwag magbigay ng iisang homemade na timpla. Magkakaiba ang sachet; gamitin ang ligtas na tubig at eksaktong panuto nito. 3: Sumususo pa si Mina. Hikayatin ang patuloy na pagpapasuso kung kaya ng bata.",
+        "feedback_en": "1: Right. The lesson starts with these questions, because a danger sign or dehydration concern means urgent referral. 2: Do not give a fixed homemade recipe. Packets differ; use safe water and the exact packet directions. 3: Mina is still breastfeeding. Encourage continued breastfeeding when the child can feed."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.diarrhea.dehydration.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
-      "takeaway_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+      "takeaway_fil": "Magtanong muna, ituloy ang pagpapasuso, basahin ang sachet, at sabihin kung kailan magre-refer.",
+      "takeaway_en": "Ask first, keep breastfeeding, read the packet, and name when to refer.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.diarrhea.dehydration.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Sachet ang gamitin, hindi iisang timpla; huwag piliting painumin kung hindi ligtas lumunok.",
+      "takeaway_en": "Use the packet, not a universal recipe; never force fluids when swallowing is unsafe.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.diarrhea.dehydration.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Basahin sa sachet ang dami at pagtimpla, hindi mula sa alaala.",
+      "takeaway_en": "Read the amount and mixing from the packet, not from memory.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa dry simulation, tinanong ng tagapag-alaga kung gaano karaming tubig. Ano ang gagawin ng BHW?",
+        "prompt_en": "In the dry simulation, the caregiver asks how much water to use. What should the BHW do?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Sabihing isang baso bawat sachet dahil puwede iyon sa lahat ng sachet.",
+            "en": "Say one glass per sachet, since that works for any packet."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Basahin ang dami ng ligtas na tubig sa label ng sachet na ito.",
+            "en": "Read the amount of safe water from this packet's label."
           },
           {
-            "fil": "Ipagpatuloy ang pagpapasuso kung kaya.",
-            "en": "Continue breastfeeding when safe."
+            "fil": "Ibigay ang dami mula sa lumang training para siguradong pakinggan.",
+            "en": "Give the amount from your old training so it sounds certain."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 3: Observe the task and appropriate referral."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Magkakaiba ang sachet. Maaaring mali ang iisang dami para sa lahat; basahin ang label na ito. 2: Tama. Ligtas na tubig at eksaktong panuto ng mismong sachet ang gamit sa ORS. 3: Maaaring hindi akma sa sachet o sa edad ng bata ang dami mula sa alaala. Gamitin ang label.",
+        "feedback_en": "1: Packets differ. One amount for every packet size can be wrong; read this label. 2: Right. Packaged ORS uses safe water and the exact directions printed on that packet. 3: An amount from memory may not fit this packet or this child's age. Use the label."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.diarrhea.dehydration.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang dry na paliwanag ng ORS mula sa tunay na label ng sachet.",
+      "takeaway_en": "Practise a dry ORS explanation from a real packet label.",
       "check": null
     }
   ],

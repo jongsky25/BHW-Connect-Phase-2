@@ -1,4 +1,4 @@
-# 2.4.1 — First-aid practice: scene help referral
+# 2.4.1 — Suriin ang sitwasyon at humingi ng tulong
 
 Kathang-isip na detalye lamang.
 

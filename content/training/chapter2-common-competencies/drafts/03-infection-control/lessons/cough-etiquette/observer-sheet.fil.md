@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Kumpleto ang dalawang paraan at follow-through nang walang palad, exposure sa kapareha o paalala. |
-| Kailangan practice | Tama ang pagtakip pero kailangan ng paalala sa hand hygiene o pag-uulat. |
+| Kailangan pa ng practice | Tama ang pagtakip pero kailangan ng paalala sa hand hygiene o pag-uulat. |
 | Hindi pa | Sa palad o kapareha umuubo, ginagamit muli ang tissue o nilalaktawan ang hand hygiene. |
 
 Aktuwal na nakita/narinig: ____

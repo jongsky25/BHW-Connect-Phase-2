@@ -1,4 +1,4 @@
-# 2.4.3 — First-aid practice: child cough breathing
+# 2.4.3 — Respond to cough and breathing concerns
 
 Use fictional details only.
 

@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Bayabas and its botanical name on the card. The yard plant is not assumed to be identified. Seek prompt assessment for spreading redness, pus, fever or other infection concerns.
+The BHW shows Mara the card: Bayabas is Psidium guajava, leafy tops, with skin uses listed in the legacy manual. The BHW says a herbal wash does not replace assessment and wound care, and asks about her medicines and symptoms. Because the wound is red with pus, the BHW seeks prompt assessment.
 
 ## [scope] Scope and support
 

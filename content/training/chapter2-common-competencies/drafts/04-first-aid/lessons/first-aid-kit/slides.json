@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: May lumang inventory sheet, expired item at bukas na…",
-    "display_en": "Case: The BHS kit has an old inventory sheet, an expired item…",
+    "display_fil": "Kaso: Lumang inventory sheet, expired item, bukas na pakete\nMay aprubadong lokal na listahan",
+    "display_en": "Case: Old inventory sheet, expired item, unsealed packet\nThe local approved list is available",
     "check": null,
     "narration_fil": "May lumang inventory sheet, expired item at bukas na pakete sa BHS kit. May aprubadong lokal na listahan.",
     "narration_en": "The BHS kit has an old inventory sheet, an expired item and an unsealed packet. The local approved list is available."
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Ihambing ang kit sa kasalukuyang lokal na listahan\nItala ang dami, selyo, expiry, imbakan at responsable sa palit\nIulat ang kulang o sirang gamit",
-    "display_en": "Compare the kit with the current local list\nRecord quantity, package integrity, expiry, storage and…\nEscalate missing or damaged items without using them",
+    "display_fil": "Ihambing ang kit sa kasalukuyang lokal na listahan\nItala ang dami, selyo, expiry, imbakan at responsable sa palit\nIulat ang kulang o sirang gamit; huwag gamitin\nHindi pahintulot gumamit ang pagkakaroon ng gamit",
+    "display_en": "Compare the kit with the current local list\nRecord quantity, seal, expiry, storage and owner\nEscalate missing or damaged items; do not use them\nHaving an item is not permission to use it",
     "check": null,
-    "narration_fil": "Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit. Ihiwalay ang laman sa pahintulot gumamit.",
+    "narration_fil": "Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit nang hindi ito ginagamit. Ihiwalay ang laman sa pahintulot gumamit ng gamot o device.",
     "narration_en": "Compare the kit with the current local list. Record quantity, package integrity, expiry, storage and replenishment owner. Escalate missing or damaged items without using them. Separate availability from authorization to use medicines or devices."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Binuksan mo ang kit at nakita ang lumang inventory sheet. Ano ang unang tugon?",
+      "prompt_en": "You open the kit and find the old inventory sheet. What comes first?",
       "options": [
         {
-          "fil": "Ihambing sa lokal na listahan.",
-          "en": "Compare with the local list."
+          "fil": "I-update ang lumang sheet at ituloy itong gamitin.",
+          "en": "Update the old sheet and keep using it."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Itapon agad ang expired item.",
+          "en": "Throw out the expired item right away."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Ihambing ang kit sa lokal na listahan.",
+          "en": "Compare the kit with the local list."
         }
       ],
-      "correct_option_index": 0,
-      "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
-      "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it."
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi kasalukuyang listahan ang lumang sheet. Gamitin ang aprubadong lokal na listahan. 2: Itala ito, ihiwalay nang hindi ginagamit at iulat sa responsable sa palit. 3: Tama. Ang kasalukuyang lokal na listahan ang batayan ng bawat hanay na itatala mo.",
+      "feedback_en": "1: The old sheet is not the current list. Work from the approved local list. 2: Record it, set it aside unused and report it to the replacement owner. 3: Correct. The current local list is the basis for every row you record."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Itala ang dami, selyo, expiry, imbakan at responsable sa palit\nIulat ang kulang o sirang gamit\nIhiwalay ang laman sa pahintulot gumamit",
-    "display_en": "Record quantity, package integrity, expiry, storage and…\nEscalate missing or damaged items without using them\nSeparate availability from authorization to use medicines or…",
+    "display_fil": "Kasalukuyang listahan ang gamit ni Lea, hindi ang luma\nBawat hanay: dami, selyo, expiry, imbakan\nExpired at bukas na pakete: inihiwalay, hindi ginamit\nIniulat sa responsable sa palit",
+    "display_en": "Lea uses the current list, not the old sheet\nEach row: quantity, seal, expiry, storage\nExpired item and open packet: set aside, unused\nReported to the named replacement owner",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit. Ihiwalay ang laman sa pahintulot gumamit. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Compare the kit with the current local list. Record quantity, package integrity, expiry, storage and replenishment owner. Escalate missing or damaged items without using them. Separate availability from authorization to use medicines or devices. Lea avoids the shortcut."
+    "narration_fil": "Isinasantabi ni Lea ang lumang inventory sheet at ginagamit ang kasalukuyang lokal na listahan. Sa bawat gamit, itinatala niya ang dami, selyo, expiry at imbakan. Minamarkahan niya ang expired item at ang bukas na pakete. Inihihiwalay niya ang dalawa nang hindi ginagamit at iniuulat sa responsable sa palit. Hindi pahintulot gumamit ang pagkakaroon nito sa kit.",
+    "narration_en": "Lea sets the old inventory sheet aside and works from the current local list. For each item, she records quantity, seal, expiry and storage. She marks the expired item and the unsealed packet, sets both aside unused, and reports them to the named replacement owner. Having them in the kit does not mean she may use them."
   },
   {
     "id": "slide-scope",
@@ -98,8 +98,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang…",
-    "display_en": "Do not copy the old manual’s drug list as a standing…",
+    "display_fil": "Huwag gawing reseta ang lumang listahan ng gamot\nHuwag gamitin ang expired stock\nHindi pahintulot ang pagkakaroon ng gamit",
+    "display_en": "Do not copy the old drug list as a standing prescription\nDo not use expired stock\nA kit item does not certify you to administer it",
     "check": null,
     "narration_fil": "Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
     "narration_en": "Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Sabi ng katrabaho, puwede pang gamitin ang bukas na pakete. Ano ang dapat ipakita sa practice?",
+      "prompt_en": "A co-worker says the unsealed packet is still fine to use. What should your practice show?",
       "options": [
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Gamitin na ngayon dahil mukhang malinis ang loob.",
+          "en": "Use it today, since the inside looks clean."
         },
         {
-          "fil": "Itala ang expired na gamit.",
-          "en": "Record expired stock."
+          "fil": "Itala ang kondisyon; iulat nang hindi ginagamit.",
+          "en": "Record its condition; report it unused."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Iwanang blangko muna ang hanay ng selyo nito.",
+          "en": "Leave its seal column blank until later."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-      "feedback_en": "1: The shortcut is unsafe: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      "feedback_fil": "1: Iulat ang sirang gamit nang hindi ginagamit. Hindi sapat na mukhang malinis. 2: Tama. Itinatala ang selyo, at iniuulat ang gamit nang hindi ginagamit. 3: Dapat kumpleto ang bawat hanay. Naitatago ng blangkong selyo ang problema.",
+      "feedback_en": "1: Escalate damaged items without using them. Looking clean is not the check. 2: Correct. Package integrity goes on the sheet, and the item is escalated unused. 3: Every row must be complete. A blank seal cell hides the problem."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nPunan ang bawat hanay ng simulated kit inventory at tukuyin ang…",
-    "display_en": "On Monday:\nComplete every row of a simulated local kit inventory and name a…",
+    "display_fil": "Sa Lunes:\nPunan ang bawat hanay ng simulated kit inventory\nTukuyin ang responsable sa pagpapalit",
+    "display_en": "On Monday:\nComplete every row of a simulated kit inventory\nName a replenishment owner",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Complete every row of a simulated local kit inventory and name a replenishment owner."

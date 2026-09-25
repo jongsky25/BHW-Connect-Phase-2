@@ -1,59 +1,75 @@
 ## [purpose] Layunin
 
-180 minuto: pambungad 10; modelo 15; tatluhang practice 115; feedback/pag-ulit 20; talakayan 10; plano sa trabaho 10. Gamitin ang Slides 1–7, role cards, papel at observation sheet. Itanong: Ano ang alalahanin? Aling salita ang nakatulong? Ano ang susunod na hakbang? Kaya na: Natukoy ang dalawang pagbisita at hindi malinaw na contact; kinumpirma kay Liza nang walang hula o paalala.
-
-Sa role-play ni Liza, magtanong nang bukas, ibuod ang alalahanin at humingi ng pagwawasto nang walang panghuhusga.
+Sa role-play ni Liza, gumagamit ang BHW ng mahinahong boses at bukas na tanong, hinahayaan siyang matapos, nagbubuod at humihingi ng pagwawasto, nang walang panghuhusga o pangako.
 
 ## [time-materials] Oras at kagamitan
 
-Bahagi ito ng 10 oras para sa pagtugon sa mahirap na sitwasyon. Hiwalay ang oras ng digital na pagbabasa. Gamitin ang participant cards, observer sheet at job aid. Papel at pasalitang tagubilin ang kapalit ng projector at internet.
+- **180 minutong** harapan (bahagi ng araling ito sa 600 minutong plano ng subchapter): pambungad 10, modelo at Self-check 1 30, practice 90, feedback at pag-ulit 30, Self-check 2 at pagsasara 20. Read sa app: 5–10 minuto, hiwalay.
+- **Kagamitan:** participant cards at observation sheet ng 2.1.2, job aid na *Magalang na pakikipag-usap*, manila paper.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Isang linggo bago: kumpirmahin ang lokal na supervisor at emergency contacts. Mag-print ng card set bawat tatluhan. Para sa 30 kalahok, bumuo ng 10 tatluhan. Magpalit ng BHW, residente at tagamasid sa tatlong round. Obserbahan ang bawat kalahok bago bigyan ng staff rating; magdagdag ng round kung kailangan.
+- Kumpirmahin sa midwife kung sinong staff ang lalapitan ng tulad ni Liza.
+- Panatilihin ng gaganap na Liza ang alalahanin (dalawang punta, walang malinaw na contact); walang medical emergency.
+- Hindi saklaw: pangako ng resulta. Hindi ligtas: midwife o supervisor. Agarang panganib: lokal na emergency service mula sa ligtas na lugar; kumpirmahin sa midwife, RHU o lokal na protocol.
 
 ## [opening] Pambungad
 
-Sa barangay sa Iloilo, sinalubong ni Liza si BHW Jun. “Paulit-ulit kayo. Wala namang nangyayari!” Malakas ang boses niya. May mga taong nakikinig sa pila. Kailangang alamin ni Jun ang nangyari nang hindi nakikipagtalo.
+Ipasabi nang malakas sa isang boluntaryo: *"Paulit-ulit kayo. Wala namang nangyayari!"* Itanong: *"Ano ang gusto ninyong isagot?"* Isulat sa manila paper; huwag munang iwasto.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso at ipakita ang usapan. Ibigay ang unang check bago ang paliwanag. Ipagawa ang activity, saka ang ikalawang check. Magbigay ng tiyak na lakas at isang susunod na hakbang. Ipaulit ang kailangang ayusin gamit ang ibang pananalita ng residente.
+1. **Ang sitwasyon (seksyon ng Read = katugmang slide).** *"May nakikinig sa pila. Ano ang kailangang alamin ni Jun?"*
+2. **Gawin at sabihin.** Imodelo, may alok ng mas pribadong lugar. *"Ano ang ginawa ni Jun bago magtanong?"*
+3. **Piliin ang unang tugon.** Self-check 1; sasagot muna ang magkapares.
+4. **Halimbawa ng usapan.** *"Ano ang nalaman ni Jun pagkatapos lamang magbuod?"*
+5. **Saklaw at paghingi ng tulong.** *"Pangako ba ang pakikinig?"* Saka ang practice.
+6. **Subukan sa sitwasyon.** Self-check 2; sasagot muna ang magkapares.
+7. **Sa Lunes, gawin ito.** *"Kailan ninyo ito sasanayin kasama ang midwife?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Liza: “Dalawang beses akong pumunta. Hindi ko alam kung sino ang kakausapin.” Jun: “Dalawang punta na po, pero hindi pa malinaw kung sino ang tutulong. Tama po ba?” Liza: “Oo, iyon ang problema.” Nalinaw ang alalahanin bago nagbigay ng mungkahi si Jun.
+- **"Pakalmahin muna siya."** Nauunawaan. *"Makatutulong ba iyon para marinig ang nangyari?"*
+- **"Ipaliwanag ang takbo ng pila."** *"Alam na ba ni Liza na narinig siya ni Jun?"*
+- **"Ipangakong maaayos ngayong araw."** Mabuting hangarin. *"Sino ang makapagkukumpirma niyon?"*
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Sumasabat, sinisisi si Liza o nagbibigay ng pangako bago marinig ang alalahanin.
+**"Para kumalma ang galit na residente, mangakong maaayos ito."** Mabuti ang intensyon, at may presyon ng pila. Magkuwento muna ng sariling halimbawa, saka itanong: *"Nakapangako na ba kayo ng hindi pala kaya?"* Ituro ang Read: ang mahinahong pakikinig ay hindi pangako.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Sa tatluhan, gumanap bilang Jun, Liza at tagamasid. Itanong ang alalahanin, makinig, ibuod at ipasuri ang pagkaintindi.
+**Listening role-play: Liza.** Tatluhan: Jun, Liza, tagamasid. Tatlong round na tig-30 minuto; lahat gaganap bilang Jun.
 
-Iminungkahing activity; maaaring gamitin sa obserbasyon. Gamitin ang kalakip na cards. Maaaring tumanggi ang residente; huwag gantimpalaan ang sapilitang pagsang-ayon. Kung mag-isa: gumawa ng kathang-isip na tugon, suriin at magpaobserba sa staff. Hindi sapat ang pakikilahok bilang patunay ng kakayahan.
+- 10 min: magtanong, makinig, magbuod, itanong *"Tama po ba ang pagkaintindi ko?"*
+- 5 min: kalakasan at isang susunod na gagawin.
+- 15 min: ulitin ang mahinang bahagi sa ibang salita; magpalit.
 
-## [answer-key] Paliwanag sa checks
+Isusulat ng tagamasid nang eksakto ang buod ni Jun. Kathang-isip na detalye lamang. Kung kaunti ang staff: isang fishbowl demonstration, saka pares; isa-isang ire-rate at iiskedyul ang iba sa follow-up.
 
-1: Isinasara nito ang usapan bago malinawan ang problema. / 2: Nakatuon ito sa pagpigil sa damdamin sa harap ng iba, hindi sa pakikinig. / 3: Inaanyayahan nitong magpaliwanag si Liza nang walang panghuhusga.
+## [answer-key] Susi sa self-check
 
-1: Nagdadagdag ito ng motibo na hindi sinabi ni Liza. / 2: Ibinubuod nito ang narinig at humihingi ng pagwawasto. / 3: Nangangako ito ng resulta bago makumpirma ang magagawa ng staff.
+1. **Aling sagot ang makatutulong sa pagsisimula?** Tama: *"Pakinggan ko po ang alalahanin ninyo."* Inaanyayahan nitong magpaliwanag si Liza nang walang panghuhusga. *"Ganito po talaga. Maghintay na lang kayo."* Isinasara ang usapan bago malinawan ang problema. *"Huwag po kayong magalit sa harap nila."* Nakatuon sa pagpigil sa damdamin, hindi sa pakikinig.
+2. **Ano ang susunod na sasabihin ni Jun?** Tama: *"Hindi pa malinaw ang contact. Tama po ba?"* Ibinubuod ang narinig at humihingi ng pagwawasto. *"Ayaw po ba ninyong bumalik dahil matagal?"* Nagdadagdag ng motibong hindi sinabi ni Liza. *"Sigurado po akong matatapos ito ngayong araw."* Nangangako bago makumpirma ang magagawa ng staff.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Sa usapan kay Liza, gumamit ng mahinahong boses at bukas na tanong; hinayaang matapos ang sagot; ibinuod ito at humingi ng pagwawasto.
+Rating ng staff sa practice: Sa usapan kay Liza, gumamit ng mahinahong boses at bukas na tanong; hinayaang matapos ang sagot; ibinuod ito at humingi ng pagwawasto.
 
-Kaya na: Natukoy ang dalawang pagbisita at hindi malinaw na contact; kinumpirma kay Liza nang walang hula o paalala.
+- **Kaya na:** Natukoy ang dalawang pagbisita at hindi malinaw na contact; kinumpirma kay Liza nang walang hula o paalala.
+- **Kailangan pa ng practice:** Nakinig nang mahinahon pero hindi ipinasuri ang buod; naidagdag ito matapos ang isang paalala.
+- **Hindi pa:** Sumasabat, sinisisi si Liza o nagbibigay ng pangako bago marinig ang alalahanin.
 
-Kailangan practice: Nakinig nang mahinahon pero hindi ipinasuri ang buod; naidagdag ito matapos ang isang paalala.
+Tingnan kung hinihintay matapos si Liza. Ang tamang sagot sa self-check ay hindi ebidensya ng kakayahan.
 
-Hindi pa: Sumasabat, sinisisi si Liza o nagbibigay ng pangako bago marinig ang alalahanin.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** *"Pagkatapos ng buod, ipasuri kay Liza."* Ulitin agad.
+- **Hindi pa:** imodelo muli ang hakbang 2 at 4. Mas maikling kaso: *"Buong umaga akong naghintay."* Isang tanong, isang buod, isang pagsusuri.
+- Ipares sa BHW na Kaya na; practice ang puna ng kapwa, hindi rating. Obserbahang muli sa araw ding iyon o sa follow-up sa midwife (2–4 na linggo).
 
-Payagan ang pasalita o nakasulat na tugon at wikang komportable ang kalahok. Itanong ang nakatulong, nakaligtaan at susubukang muli. Itala lamang ang aktuwal na naobserbahan. Ang peer observation ay tulong sa practice, hindi staff rating.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong observation sheet at aprubadong lokal na contact directory. Kumpirmahin sa midwife ang paraan ng pag-uulat. Ihanda muli ang cards para sa susunod na practice.
+- Reference Manual PDF p. 29; Facilitator Guide PDF p. 33; Day 1 Part 2 presentation PDF pp. 19–27.
+- Hati ng mga may-akda ang 180 minuto mula sa 10 oras ng sanggunian.
+- Inaprubahan at inilathala ng program owner, 25 Set 2026; walang kailangang clinical sign-off; walang naitalang reviewer. Lokal na protocol ang masusunod.

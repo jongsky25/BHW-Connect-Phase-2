@@ -21,8 +21,8 @@
         "c2.drrm.hazards-capacities.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: hazards capacities",
-      "takeaway_en": "Case: hazards capacities",
+      "takeaway_fil": "Baha sa Maligaya: may pamilyang kailangan ng tulong at hindi pa kumpirmado ang paaralan bilang silungan.",
+      "takeaway_en": "Flooding in Maligaya: a household needs help and the school shelter is not confirmed.",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.drrm.hazards-capacities.risk"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
-      "takeaway_en": "This ties action to a verified plan and scope.",
+      "takeaway_fil": "Ihiwalay ang panganib, pangangailangan at kakayahan; markahan ang kailangang suriin.",
+      "takeaway_en": "Separate hazard, need and capacity, and mark what still needs verifying.",
       "check": {
-        "prompt_fil": "Ano ang unang ligtas na hakbang?",
-        "prompt_en": "What is the first safe step?",
+        "prompt_fil": "Sa mapa ng Maligaya, ano ang una mong gagawin?",
+        "prompt_en": "On the Maligaya map, what do you do first?",
         "options": [
           {
-            "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
-            "en": "Assume the old information is still correct and immediately relay it to everyone."
+            "fil": "Markahan ang paaralan bilang silungan dahil ginamit ito noong nakaraan.",
+            "en": "Mark the school as the shelter because it was used last time."
           },
           {
             "fil": "Ihiwalay ang hazard, suporta at kapasidad; ipa-verify ang ruta at shelter.",
             "en": "Separate hazard, support need and capacity; verify route and shelter."
           },
           {
-            "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
-            "en": "Decide alone without local confirmation or an official warning."
+            "fil": "Isulat sa mapa ang pangalan at bahay ng pamilya para madali silang mahanap.",
+            "en": "Write the family's name and house on the map so responders can find them."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
-        "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+        "feedback_fil": "1: Hindi pa kumpirmado ang paaralan; markahan itong \"kailangang kumpirmahin\" hanggang masuri. 2: Sa hiwalay na tatlong layer, kita ang alam na at ang kailangan pang suriin. 3: Pangangailangan ang nasa mapa, hindi pangalan; igalang ang privacy ng sambahayan.",
+        "feedback_en": "1: The school is not confirmed; mark it \"verify locally\" until it is checked. 2: Keeping the three layers apart shows what is known and what still needs checking. 3: The map shows the need, not the name; protect household privacy."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.drrm.hazards-capacities.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
-      "takeaway_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
+      "takeaway_fil": "Tatlong layer, \"kailangang kumpirmahin\" ang paaralan, at walang lokasyon ng residente.",
+      "takeaway_en": "Three layers, the school marked \"verify locally\", and no resident's location.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.drrm.hazards-capacities.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi opisyal na mapa o order ang mapa ng pagsasanay; igalang ang privacy ng sambahayan.",
+      "takeaway_en": "A practice map is not an official map or order; protect household privacy.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.drrm.hazards-capacities.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-      "takeaway_en": "This establishes clear ownership and next action.",
+      "takeaway_fil": "Ipasuri muna ang mapa bago ito gamitin ng sinuman.",
+      "takeaway_en": "Have the map verified before anyone uses it.",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Tapos na ang mapa ng pagsasanay. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "The practice map is done. What is the safe next step?",
         "options": [
           {
-            "fil": "Sabihing bukas ang paaralan kahit hindi pa nasuri. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Say the school is open without checking. Do not ask the authority or the affected person."
+            "fil": "Sabihing bukas ang paaralan kahit hindi pa nasuri ng sinuman.",
+            "en": "Say the school is open without checking with anyone."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Ipasuri sa DRRM office at health team ang mapa bago gamitin.",
+            "en": "Ask the DRRM office and health team to verify the map before use."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Ipaskil ang mapa ng pagsasanay bilang opisyal na evacuation order ng barangay.",
+            "en": "Post the practice map as the barangay's official evacuation order."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: hindi pa kumpirmado ang paaralan. 2: Beripikadong mapa lang ang dapat gumabay sa tao; itala kung sino at kailan nagpatunay. 3: Hindi opisyal na hazard map o evacuation order ang mapa ng pagsasanay.",
+        "feedback_en": "1: This may harm or delay help: the school is still not confirmed. 2: Only a verified map should guide people; record who verified it and when. 3: The practice map is not an official hazard map or evacuation order."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.drrm.hazards-capacities.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Ipasuri ang risk-map checklist at itala ang huling update nito.",
+      "takeaway_en": "Have the risk-map checklist reviewed and record its last update.",
       "check": null
     }
   ],

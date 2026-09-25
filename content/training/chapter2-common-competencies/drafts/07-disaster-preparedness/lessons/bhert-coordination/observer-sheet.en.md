@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes action, boundary, handover and follow-up without prompts. |
-| Kailangan practice | Chooses the first action but needs a prompt for verification or follow-up. |
-| Hindi pa | Uses an unverified plan or exceeds the role. |
+| Kaya na | Confirms the current team, lead and channel, then gives a short handover with the time and no name or diagnosis, without prompts. |
+| Kailangan pa ng practice | Gives the handover but needs a prompt to confirm the current lead first or to record the time. |
+| Hindi pa | Relies on the old roster, or includes names or health details in the handover. |
 
 Evidence observed: ____
 

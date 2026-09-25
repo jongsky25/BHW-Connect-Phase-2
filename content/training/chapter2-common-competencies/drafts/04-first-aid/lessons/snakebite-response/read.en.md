@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Move away from the snake, keep the person calm and as still as possible, remove tight items if safe, and arrange rapid transport to a health facility. Report time and observations. Lea avoids the shortcut.
+Lea helps the worker move away from the snake and keeps him calm and as still as possible. She tells the friends kindly, "No cord, and he should not walk. Transport will come to him." She removes tight items if it is safe, calls for transport, and reports the time of the bite and what she sees.
 
 ## [scope] Scope and support
 

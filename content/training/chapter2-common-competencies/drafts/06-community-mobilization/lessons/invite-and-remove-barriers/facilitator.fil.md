@@ -1,57 +1,69 @@
 ## [purpose] Layunin
 
-15 minuto: pambungad 1; modelo 2; practice 6; feedback/pag-ulit 3; talakayan 2; susunod na hakbang 1. Magpalit sa tatlong maikling round. Panimula ito; maglaan ng dagdag na obserbasyon kung kailangan.
-
-Bumuo ng invitation plan na may apektadong grupo, pinagkakatiwalaang tagapag-imbita, hadlang at napagkasunduang paraan ng pakikilahok.
+Nakabubuo ang BHW ng invitation plan para kina Ruben, Sari at Eva: hadlang ng bawat isa, pinagkakatiwalaang tagapag-imbita, paraan, follow-up at kusang-loob na paraan ng pag-ambag.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 60 minuto ang apat na panimulang gawain mula sa pinagsamang 120 minuto ng mobilization at DRRM. Nakalaan sa DRRM ang natitirang 60 minuto. Mungkahing hati ito, hindi hiwalay na oras sa gabay o patunay ng kakayahan. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 15 minutong harapan (bahagi ng araling ito sa 60-minutong plano ng subchapter): pambungad 1, modelo 2, practice 6, feedback at pag-ulit 3, talakayan 2, susunod na hakbang 1. Pagbasa sa app: mga 5 minuto, hiwalay.
+- **Kagamitan:** *Participant cards* at *Worksheet 2.6.2 Mapa ng paanyaya* bawat tatluhan; *Talaan ng obserbasyon 2.6.2* (staff lamang); job aid; name tag para kina Ruben, Sari at Eva; manila paper, marker.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa organizer ang madaling puntahang lugar ng pulong at ang suporta sa pakikilahok na pinapayagan ng lokal na patakaran.
+- Saklaw: walang pangako ng pera, gantimpala o sasakyan; hindi kailanman kondisyon sa serbisyo ang pagdalo. Walang totoong residente; walang payong pangkalusugan.
 
 ## [opening] Pambungad
 
-Magpapatawag ng usapan si Ina tungkol sa huling balita sa iskedyul. May lider na kilala ng mga residente. Si Ruben ay nagtatrabaho sa araw. Si Sari ay walang cellphone. Si Eva ay kinakabahang magsalita sa malaking grupo. Hindi sapat ang isang chat invitation.
+Basahin nang malakas ang sitwasyon. Itanong: *"Walang cellphone si Sari. Ano ang unang dapat gawin ni Ina?"* Kumuha ng dalawang sagot.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **"Ang sitwasyon"** (Read at slide). Itanong: *"Bakit hindi sapat dito ang iisang chat invitation?"*
+2. **"Gawin at sabihin."** Itanong: *"Ano ang hadlang ng bawat isa, at sino ang pinagkakatiwalaan nila?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang pares bago ibunyag.
+4. **"Halimbawang sagot."** Imodelo. Itanong: *"Sino ang pumili ng paraan, si Ina o ang residente?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Hindi makadadalo si Ruben. Ano ang hindi dapat sabihin ni Ina?"* Saka patakbuhin ang practice.
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang pares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Ugnay: *"Dumating sila. Ngayon, kailangang gumana ang pulong para sa lahat."*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Kasama ang lider, tinanong ni Ina si Ruben tungkol sa oras. Personal na paanyaya ang pinili ni Sari. Mas nais ni Eva ang maliit na usapan. Itinala nila kung sino ang mag-iimbita at kailan magbabalita. Nilinaw na kusang-loob ang pagsali at puwedeng magbigay ng mungkahi sa ibang paraan.
+- **"Ipadala ulit sa chat."** Magpasalamat. Itanong: *"Nakikita ba ni Sari ang chat?"*
+- **"Ang lider na ang magsasabi sa lahat."** Itanong: *"Kinakatawan ba ng lider sina Ruben, Sari at Eva?"*
+- **"Bigyan ng meryenda o allowance para dumalo."** Itanong: *"Sino ang nagkumpirma niyan?"* Walang ipinapangako hangga't hindi kinukumpirma ng organizer.
+- **"Puntahan si Sari at itanong kung paano siya mababalitaan."** Purihin.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Chat lamang ang plano para sa lahat o ginagawang kondisyon sa serbisyo ang pagdalo.
+**"Kung hindi siya sumagot online, wala siyang interes."** Pagkatapos ng maraming mensahe, parang "ayaw" ang katahimikan. Pero walang cellphone si Sari; hindi niya ito nakita. Huwag itama ang nagsalita; itanong sa grupo: *"Ano pa ang puwedeng dahilan ng walang sagot?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Gumawa ng tatlong hanay para kina Ruben, Sari at Eva. Ilagay ang hadlang, tagapag-imbita, paraan at petsa ng pagbalik. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Mapa ng paanyaya.** Tatluhan: kalahok, kapareha (residenteng nagtatanong kung paano tinutugunan ng plano ang kailangan niya), tagamasid. Tatlong round, mga 2 minuto; pupunan ng bawat kalahok ang isang hanay at ibang paraan ng pag-ambag. Itatala ng tagamasid ang hadlang, tagapag-imbita at follow-up, saka isang lakas at isang susunod na hakbang; uulit ang kalahok. Staff ang magre-rate. Kathang-isip lamang. Kulang sa gamit: manila paper. Mag-isa: sagutan; magpaobserba pagkatapos.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Hindi nito binabago ang hadlang sa pag-access. / 2: Kasama si Sari sa pagpili ng magagamit na paraan. / 3: Hula sa interes ang kawalan ng sagot, hindi ebidensiya.
+1. **"Walang cellphone si Sari. Ano ang pinakamainam na simula?"** Tama: **"Itanong ang angkop na paanyaya"** — kasama si Sari sa pagpili ng magagamit na paraan. "Ipadala muli sa parehong chat…": hindi nito binabago ang hadlang sa pag-access. "Sabihing wala siyang interes…": hula sa interes ang kawalan ng sagot, hindi ebidensiya.
+2. **"Hindi makadalo si Ruben. Ano ang angkop na sagot?"** Tama: **"Mag-alok ng ibang paraan ng pag-ambag"** — nirerespeto ang hadlang habang binubuksan ang pakikilahok. "Ipagpaliban ang serbisyo niya…": hindi dapat nakatali ang serbisyo sa pagdalo. "Mangako ng pera…": hindi dapat mangako ng hindi kumpirmadong gantimpala.
 
-1: Hindi dapat nakatali ang serbisyo sa pagdalo. / 2: Hindi dapat mangako ng hindi kumpirmadong gantimpala. / 3: Nirerespeto ang hadlang habang binubuksan ang pakikilahok.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: May plano para sa tatlong hadlang, malinaw na tagapag-imbita at kusang-loob na paraan ng pakikilahok.
 
-May plano para sa tatlong hadlang, malinaw na tagapag-imbita at kusang-loob na paraan ng pakikilahok.
+- **Kaya na:** Magkakaiba at angkop ang tatlong paraan; may follow-up at walang pamimilit o pangako ng gantimpala.
+- **Kailangan pa ng practice:** May angkop na paanyaya pero kailangang paalalahanang maglagay ng follow-up o ibang paraan ng pag-ambag.
+- **Hindi pa:** Chat lamang ang plano para sa lahat o ginagawang kondisyon sa serbisyo ang pagdalo.
 
-Kaya na: Magkakaiba at angkop ang tatlong paraan; may follow-up at walang pamimilit o pangako ng gantimpala.
+Hanapin kung tinatanong ng kalahok ang residente. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: May angkop na paanyaya pero kailangang paalalahanang maglagay ng follow-up o alternatibong mungkahi.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Chat lamang ang plano para sa lahat o ginagawang kondisyon sa serbisyo ang pagdalo.
+- **Kailangan pa:** isang susunod na hakbang, *"Idagdag kung kailan ka magbabalita,"* saka ulitin agad ang hanay.
+- **Hindi pa:** mahinahong sabihin ang nakita, imodelo ang hanay ni Sari, saka umulit kasama ang kaparehang Kaya na.
+- Obserbahan muli sa 2–4 na linggong follow-up gamit ang binagong kathang-isip na hadlang. Practice ang feedback ng tatluhan, hindi rating ng staff.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 52–53; Facilitator Guide PDF p. 41; presentation PDF pp. 93–94.
+- Kahati ng mobilization ang Subchapter 2.7 sa 2 oras (F38); pamamahagi ng mga sumulat ang 15 minuto.
+- Inaprubahan ng program owner at hiniling ang paglalathala, 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na gawi ang susundin.

@@ -1,4 +1,4 @@
-# 2.4.9 — First-aid practice: poisoning response
+# 2.4.9 — Gather information in suspected poisoning
 
 Use fictional details only.
 

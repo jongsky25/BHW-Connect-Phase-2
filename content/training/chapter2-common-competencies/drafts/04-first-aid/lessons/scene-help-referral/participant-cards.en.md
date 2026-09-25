@@ -1,4 +1,4 @@
-# 2.4.1 — First-aid practice: scene help referral
+# 2.4.1 — Assess the situation and get help
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,12 +6,12 @@ A tricycle has stopped beside a fallen rider while traffic still moves. BHW Lea 
 
 ## Learner card
 
-Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
+You are BHW Lea. Stop at the road edge and look for hazards. Ask the bystander to call the confirmed contact. From a safe spot, say whether the rider responds and breathes normally, and give the location in one sentence.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the bystander who arrived with Lea. At first, start to cross toward the rider and ask, "Shouldn't we find out what happened first?" Make the call only when Lea asks you, and repeat back the contact and location she gives. Do not add injuries or other clinical details.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Record the actual words and actions: the stop before the road, who called which contact, the words about response and breathing, and the location given. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.

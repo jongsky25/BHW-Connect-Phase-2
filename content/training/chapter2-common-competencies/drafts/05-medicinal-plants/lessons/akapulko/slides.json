@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nasa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part does the card list?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Akapulko ang nakalista sa card?",
       "prompt_en": "Which Akapulko part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Akapulko.",
-          "en": "Any part of a yard plant even when its identity as Akapulko is unconfirmed."
+          "fil": "Anumang bahagi ng halaman sa bakuran ni Ana, kahit hindi pa kumpirmadong Akapulko.",
+          "en": "Any part of Ana’s yard plant, even before it is confirmed as Akapulko."
         },
         {
           "fil": "Dahon ng kumpirmadong Senna alata.",
           "en": "Leaves of confirmed Senna alata."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Ang bahaging laging ginagamit ng pamilya, nang hindi tinitingnan ang card.",
+          "en": "The part her family always used, without checking the card."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "feedback_fil": "1: Hindi pa kumpirmadong Senna alata ang halaman ni Ana, kaya walang bahaging maitutugma. 2: Dahon ng Senna alata ang nasa card; hindi ito dose. 3: Hindi patunay ng halaman o bahagi ang nakasanayan ng pamilya; tingnan ang botanical name.",
+      "feedback_en": "1: Ana’s yard plant is not yet confirmed as Senna alata, so no part can be matched. 2: The card lists leaves of Senna alata; this is not a dose. 3: Family habit does not confirm the plant or part; check the botanical name."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: buni o ibang fungal na problema sa balat\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: ringworm or another fungal skin concern\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Card: Senna alata, dahon.\nHalaman sa bakuran: hindi pa kumpirmado.\nPantal: hindi dinidiyagnos ng BHW.\nSusunod: ipasuri sa health center.",
+    "display_en": "Card: Senna alata, leaves.\nYard plant: not yet confirmed.\nRash: not diagnosed by the BHW.\nNext: health-center assessment.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Akapulko at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Kung lumalala, kumakalat, may impeksiyon o hindi tiyak ang diagnosis, ipasuri sa health center.",
-    "narration_en": "The BHW points to Akapulko and its botanical name on the card. The yard plant is not assumed to be identified. Seek health-center assessment if the rash worsens, spreads, looks infected or the diagnosis is uncertain."
+    "narration_fil": "Ipinakita ng BHW kay Ana ang card: Senna alata ang Akapulko, at dahon ang nakalistang bahagi. Sinabi ng BHW na hindi pa kumpirmado ang halaman sa bakuran at hindi pa tiyak kung ano ang pantal. Itinanong niya ang gamot at sintomas ni Ana. Dahil hindi tiyak ang diagnosis, ipinasuri niya ang pantal sa health center.",
+    "narration_en": "The BHW shows Ana the card: Akapulko is Senna alata, and the listed part is leaves. The BHW says the yard plant is not yet confirmed and the rash is not yet diagnosed. The BHW asks about her medicines and symptoms. Because the diagnosis is uncertain, the BHW asks Ana to have the rash assessed at the health center."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
-    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "display_fil": "Pangalan o larawan: hindi patunay.\nHuwag ipahid ang hindi kumpirmadong katas.\nWalang paghahanda o dose.",
+    "display_en": "Name or picture: not proof.\nDo not apply an unverified extract.\nNo preparation or dosing.",
     "check": null,
     "narration_fil": "Hindi sapat ang lokal na pangalan o larawan para sa tiyak na pagkilala. Huwag ipahid ang hindi nakumpirmang katas. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
     "narration_en": "A local name or picture alone cannot confirm identity. Do not apply an unverified extract. This lesson does not authorize preparation or dosing of an herbal remedy."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Ano ang ligtas na hakbang para kay Ana?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the safe step for Ana?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Akapulko?",
-      "prompt_en": "What is the safe response in the Akapulko case?",
+      "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Ana?",
+      "prompt_en": "What is the safe response in Ana’s case?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Sabihing buni ito at ipahid kay Ana ang dahon ng halaman sa bakuran.",
+          "en": "Tell Ana it is ringworm and have her apply leaves from the yard plant."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Sabihin ang hindi pa alam at ipasuri ang pantal sa health center.",
+          "en": "Say what is unknown and have the health center assess the rash."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Ituro ang timpla ng inyong pamilya para hindi na siya magpatingin.",
+          "en": "Show her how your family prepared Akapulko, to save her a trip."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "feedback_fil": "1: Hindi nagdidiyagnos ang BHW, at hindi kumpirmado ang halaman; huwag itong ipahid. 2: Hindi tiyak ang diagnosis, kaya sa health center ipasusuri ang pantal. 3: Walang pahintulot ang lesson na maghanda, at hindi masusuri ng timpla ang pantal.",
+      "feedback_en": "1: The BHW does not diagnose, and the yard plant is unverified; do not apply it. 2: The diagnosis is uncertain, so the health center assesses the rash. 3: This lesson does not authorize preparation, and a recipe cannot assess her rash."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

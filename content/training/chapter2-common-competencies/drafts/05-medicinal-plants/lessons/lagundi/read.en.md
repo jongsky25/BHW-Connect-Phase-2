@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Lagundi and its botanical name on the card. The yard plant is not assumed to be identified. Connect Ben promptly to a health professional and report the breathing difficulty.
+The BHW shows the card: Lagundi is Vitex negundo, leaves, for cough relief under clinical advice. The BHW notes that Ben also has difficulty breathing, so an herbal drink must not delay assessment. The BHW does not give the decoction, connects Ben promptly to a health professional and reports the breathing difficulty.
 
 ## [scope] Scope and support
 

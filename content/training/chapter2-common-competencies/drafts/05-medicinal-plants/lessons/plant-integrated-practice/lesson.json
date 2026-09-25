@@ -21,8 +21,8 @@
         "c2.plants.plant-integrated-practice.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tatlong residente ang nagtatanong tungkol sa Lagundi, Ampala",
-      "takeaway_en": "Three residents ask about Lagundi, Ampalaya and Bayabas. The",
+      "takeaway_fil": "Kaso: Nagtanong sina Ben, Joel at Mara tungkol sa Lagundi, Ampalaya at Bayabas",
+      "takeaway_en": "Case: Ben, Joel and Mara ask about Lagundi, Ampalaya and Bayabas",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.plants.plant-integrated-practice.identity"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Magandang simula ang kumpirmadong reference.",
-      "takeaway_en": "A verified reference is the proper start.",
+      "takeaway_fil": "Ang kumpirmadong card ang tamang simula.",
+      "takeaway_en": "A verified card is the proper start.",
       "check": {
-        "prompt_fil": "Alin ang unang ligtas na hakbang?",
-        "prompt_en": "What is the first safe step?",
+        "prompt_fil": "Ano ang una mong gagawin para sa tatlong residente?",
+        "prompt_en": "What do you do first for the three residents?",
         "options": [
           {
-            "fil": "Manghula mula sa pangalan o larawan.",
-            "en": "Guess from a name or picture."
+            "fil": "Kumpirmahin sa kasalukuyang card ang identity ng bawat halaman.",
+            "en": "Confirm each plant's identity on its current card."
           },
           {
-            "fil": "Kumpirmahin ang identity at source.",
-            "en": "Confirm identity and source."
+            "fil": "Hulaan ang bawat halaman mula lamang sa local name o sa isang larawan.",
+            "en": "Guess each plant from its local name or from a picture."
           },
           {
-            "fil": "Ibigay agad ang lumang dose.",
-            "en": "Give the old dose immediately."
+            "fil": "Sabihin sa bawat residente kung gaano karami ang gagamitin.",
+            "en": "Tell each resident how much of the plant to use."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring magkamali sa halaman. 2: Magandang simula ang kumpirmadong reference. 3: Wala pang clinical at lokal na pahintulot.",
-        "feedback_en": "1: The plant may be misidentified. 2: A verified reference is the proper start. 3: Clinical and local authorization are missing."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama: ang kumpirmadong card ang tamang simula sa tatlong kaso. 2: Maaaring magturo sa maling halaman ang pangalan o larawan. 3: Walang dose sa practice; kulang pa ang clinical at lokal na awtorisasyon.",
+        "feedback_en": "1: Correct: a verified card is the proper start for all three cases. 2: A name or picture can point to the wrong plant. 3: No dose is given in practice; clinical and local authorization are missing."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.plant-integrated-practice.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.",
-      "takeaway_en": "For three case cards, record identity, use, concern, referral and missing local authorization.",
+      "takeaway_fil": "I-refer agad sina Ben at Mara, huwag palitan ang gamot ni Joel at markahang kulang ang awtorisasyon.",
+      "takeaway_en": "Escalate Ben and Mara, keep Joel's medicine unchanged and mark authorization missing.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.plant-integrated-practice.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi clinical sign-off ang pagdalo sa station; walang ibibigay na produkto.",
+      "takeaway_en": "Station attendance is not clinical sign-off; no product is dispensed.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.plant-integrated-practice.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Mahalaga ang clinical advice bago maghanda o gumamit.",
-      "takeaway_en": "Clinical advice matters before preparation or use.",
+      "takeaway_fil": "I-refer agad sina Ben at Mara; ang clinician ni Joel ang magpapasya sa gamot niya.",
+      "takeaway_en": "Escalate Ben and Mara; Joel's clinician decides about his medicine.",
       "check": {
-        "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
-        "prompt_en": "What follows the card check?",
+        "prompt_fil": "Pagkatapos ng card check, ano ang ligtas na tugon?",
+        "prompt_en": "After the card check, what is the safe response?",
         "options": [
           {
-            "fil": "Baguhin ang gamot ng residente.",
-            "en": "Change the resident’s medicine."
+            "fil": "Sabihin kay Joel na puwedeng ipalit ang Ampalaya sa diabetes medicine niya.",
+            "en": "Tell Joel he can use Ampalaya in place of his diabetes medicine."
           },
           {
-            "fil": "Itago ang ibang sintomas sa staff.",
-            "en": "Withhold other symptoms from staff."
+            "fil": "Imungkahi ang Lagundi kay Ben at Bayabas kay Mara bago mag-refer.",
+            "en": "Suggest Lagundi for Ben and Bayabas for Mara before any referral."
           },
           {
-            "fil": "Kumonsulta sa clinician.",
-            "en": "Consult a clinician."
+            "fil": "I-refer agad sina Ben at Mara; dalhin sa clinician ni Joel ang tanong niya.",
+            "en": "Escalate Ben and Mara; take Joel's question to his clinician."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
-        "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+        "feedback_fil": "1: Huwag palitan ang diabetes medicine; hindi awtorisado ang pagpapalit ng gamot. 2: Kailangang i-refer muna ang hirap sa paghinga at infected wound, hindi halaman. 3: Tama: i-refer agad ang agarang senyales; ang clinician ni Joel ang magpapasya sa gamot niya.",
+        "feedback_en": "1: Do not replace diabetes medicine; changing treatment is not authorized. 2: Breathing difficulty and an infected wound need escalation first, not a plant. 3: Correct: escalate the urgent signs; Joel's clinician decides about his medicine."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.plant-integrated-practice.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ipasuri ang card sa supervisor at markahan ang dapat kumpirmahin.",
+      "takeaway_en": "On Monday, review the card with a supervisor and mark what needs confirmation.",
       "check": null
     }
   ],

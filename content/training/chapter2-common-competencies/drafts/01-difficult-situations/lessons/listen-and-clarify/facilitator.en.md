@@ -1,59 +1,75 @@
 ## [purpose] Purpose
 
-180 minutes: opening 10; model 15; triad practice 115; feedback/retry 20; debrief 10; workplace plan 10. Use Slides 1–7, role cards, paper and the observation sheet. Ask: What was the concern? Which words helped? What should happen next? Ready: Identifies the two visits and unclear contact, and confirms these with Liza without assumptions or prompts.
-
-In Liza’s role-play, ask an open question, summarize the concern and invite correction without judgment.
+In Liza's role-play, the BHW uses a calm voice and an open question, lets her finish, summarizes and invites correction, without judging or promising.
 
 ## [time-materials] Time and materials
 
-This session is part of the 10-hour behavior competency. Digital reading time is separate. Use the participant cards, observer sheet and job aid. Paper and spoken instructions replace the projector and internet.
+- **180 minutes** face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model and Self-check 1 30, practice 90, feedback and retry 30, Self-check 2 and close 20. App Read: 5–10 minutes, separate.
+- **Materials:** 2.1.2 participant cards and observation sheet, job aid *A respectful conversation*, manila paper.
 
 ## [prepare] Prepare
 
-One week before: confirm the local supervisor and emergency contacts. Print one card set per triad. For 30 participants, form 10 triads; rotate BHW, resident and observer over three rounds. Staff observe each learner before assigning a staff rating; use extra rounds when necessary.
+- Confirm with the midwife which staff member a resident like Liza should approach.
+- Liza players keep her concern (two visits, no clear contact); no medical emergency.
+- Not in scope: promising outcomes. Unsafe: ask the midwife or supervisor. Immediate danger: local emergency service from a safe place; confirm with the midwife, RHU or local protocol.
 
 ## [opening] Opening
 
-At a barangay in Iloilo, Liza meets BHW Jun. “You keep coming back. Nothing happens!” Her voice is raised. People in the queue are listening. Jun needs to find out what happened without arguing.
+A volunteer says loudly: *"You keep coming back. Nothing happens!"* Ask the group: *"What do you feel like saying back?"* Write replies on manila paper; do not correct yet.
 
 ## [steps] Steps
 
-Read the case and model the dialogue. Ask the first check before revealing feedback. Run the activity below, then the second check. Give a specific strength and one next action. Repeat the part needing improvement, with changed wording from the resident.
+1. **The situation (Read section = matching slide).** *"People are listening. What does Jun need to find out?"*
+2. **What to do and say.** Model it, offering a more private place. *"What did Jun do before his question?"*
+3. **Choose the first response.** Self-check 1; pairs answer before revealing.
+4. **Worked example.** *"What did Jun learn only after summarizing?"*
+5. **Scope and support.** *"Does listening mean promising?"* Then run the practice.
+6. **Apply it to the situation.** Self-check 2; pairs answer first.
+7. **On Monday, try this.** *"When will you practise this with the midwife?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-Liza: “I went twice. I don’t know whom to speak to.” Jun: “You have been twice, but it is still unclear who can help. Is that right?” Liza: “Yes, that is the problem.” Jun clarifies the concern before suggesting a step.
+- **"Tell her to calm down."** Understandable. *"Does that help Jun hear what happened?"*
+- **"Explain how the queue works."** *"Does Liza know yet that Jun heard her?"*
+- **"Promise it will be fixed today."** A kind wish. *"Who can confirm that?"*
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Interrupts, blames Liza or promises an outcome before hearing the concern.
+**"To calm an angry resident, promise it will be fixed."** People mean well, and the queue adds pressure. Share your own example first, then ask: *"Have you ever promised something you could not deliver?"* Point to the Read: calm listening is not a promise.
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-In triads, play Jun, Liza and observer. Ask about the concern, listen, summarize and check understanding.
+**Listening role-play: Liza.** Triads: Jun, Liza, observer. Three 30-minute rounds; everyone plays Jun once.
 
-Suggested activity; suitable for observation. Use the supplied cards. Residents may decline; do not reward forced agreement. Alone: record a fictional response and self-check, then arrange staff observation. Participation alone is not competence.
+- 10 min: ask, listen, summarize, ask *"Have I understood correctly?"*
+- 5 min: observer gives one strength, one next action.
+- 15 min: repeat the weak part with new wording; rotate.
 
-## [answer-key] Check explanations
+The observer writes Jun's summary word for word. Fictional details only. Few staff: one fishbowl demonstration, then pairs; rate one learner at a time and schedule the rest at follow-up.
 
-1: This closes the conversation before the problem is clear. / 2: This focuses on controlling emotion in public rather than listening. / 3: This invites Liza to explain without judgment.
+## [answer-key] Self-check answer key
 
-1: This adds a motive Liza did not state. / 2: This summarizes what was heard and invites correction. / 3: This promises an outcome before staff availability is confirmed.
+1. **Which reply helps Jun begin?** Correct: *"I would like to hear your concern."* It invites Liza to explain without judgment. *"This is how it works. Just wait."* closes the conversation before the problem is clear. *"Please don’t get angry in front of them."* focuses on controlling emotion rather than listening.
+2. **What should Jun say next?** Correct: *"The contact is still unclear. Is that right?"* It summarizes and invites correction. *"Do you refuse to return because it takes too long?"* adds a motive Liza did not state. *"I am sure this will be finished today."* promises before staff availability is confirmed.
 
-## [observe] Observe
+## [observe] What to observe
 
-In the conversation with Liza, uses a calm voice and open question, lets her finish, summarizes her reply and invites correction.
+Staff rate during the practice: In the conversation with Liza, uses a calm voice and open question, lets her finish, summarizes her reply and invites correction.
 
-Ready: Identifies the two visits and unclear contact, and confirms these with Liza without assumptions or prompts.
+- **Kaya na:** Identifies the two visits and unclear contact, and confirms these with Liza without assumptions or prompts.
+- **Kailangan pa ng practice:** Listens calmly but does not check the summary; adds the confirmation after a prompt.
+- **Hindi pa:** Interrupts, blames Liza or promises an outcome before hearing the concern.
 
-Needs practice: Listens calmly but does not check the summary; adds the confirmation after a prompt.
+Look for silence until Liza stops. A correct self-check is not evidence of the skill.
 
-Not yet: Interrupts, blames Liza or promises an outcome before hearing the concern.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** *"After your summary, check it with Liza."* Repeat now.
+- **Hindi pa:** re-model steps 2 and 4. Shorter case: Liza says *"I waited all morning."* One question, one summary, one check.
+- Pair with a Kaya na BHW; peer feedback is practice, not a staff rating. Re-observe the same day or at the midwife follow-up within 2–4 weeks.
 
-Allow a spoken or written response and the learner’s preferred language. Ask what helped, what was missed and what to try again. Record only performances you observed. Peer observations support practice and do not become staff ratings.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the listening/planning job aid, blank observation sheet and approved local contact directory. Confirm the reporting channel with the midwife. Keep these cards available for the follow-up practice session.
+- Reference Manual PDF p. 29; Facilitator Guide PDF p. 33; Day 1 Part 2 presentation PDF pp. 19–27.
+- The 180 minutes are an authoring distribution of the 10-hour source allocation.
+- Owner approved and published 25 Sep 2026; no clinical sign-off needed; reviewer names not recorded. Local protocol overrides.

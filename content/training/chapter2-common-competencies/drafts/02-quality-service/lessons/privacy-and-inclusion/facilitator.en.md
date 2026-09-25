@@ -1,57 +1,76 @@
 ## [purpose] Purpose
 
-180 minutes: opening 10; model 15; triad practice 115; feedback/retry 20; debrief 10; workplace plan 10. Use seven Slides, cards, worksheet and observer sheet. Rotate roles and retry with one changed detail.
-
-In a conversation with Alex, protect private details and offer help with understanding without judgment.
+Playing Lorna, the BHW does not disclose Alex's condition, agrees the setting and support, and explains the next step without judgment.
 
 ## [time-materials] Time and materials
 
-The four quality-service sessions total 600 minutes. This is facilitated training, separate from digital reading. Use repeated comparisons, practice and feedback; time alone does not establish competence. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 180 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model 15, role-play rounds 115, feedback and retry 25, checks and debrief 15. Read in the app: about 5 minutes.
+- **Materials:** *2.2.2 Private and equitable conversation* cards (one set per triad), worksheet, observation sheet, a blank form, *Quality service* job aid, chairs.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Take both checks in the app first.
+- Confirm the local information-sharing process, the supervisor to ask, and a private spot at your BHS.
+- **Scope:** never name or invent Alex's condition. Do not teach promising absolute secrecy. Blank forms only; no photos of forms.
 
 ## [opening] Opening
 
-In the queue, Alex tells BHW Lorna that the form is difficult to read. Someone loudly asks about Alex’s condition. Alex does not want others to hear. Help is needed without embarrassment.
+Seat volunteers in the "queue". Read Alex's case, then ask: *"Everyone heard that question. What would you say first to Alex, and where?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step is a Read section and its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"How might Alex feel right now?"*
+2. **"What to do and say."** Ask: *"Which of these can you do without the queue hearing?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer first.
+4. **"Worked example."** Say Lorna's lines: *"Would you like to speak over there? What help would you prefer with the form?"*
+5. **"Scope and support."** Ask: *"Unsure who may know? Who do you ask?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer first.
+7. **"On Monday, try this."** Ask: *"Where at our BHS can you offer a private talk?"*
 
-Lorna: “Would you like to speak over there? What help would you prefer with the form?” Alex: “Please read it slowly.” Lorna follows the agreement. She does not disclose the condition to the queue. She asks whether Alex wants a support person before involving anyone else.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Tell them to mind their own business."** Scolding draws attention. Just do not answer; offer privacy.
+- **"Read the form to Alex right there."** Kind and fast. Ask: *"Who else hears it?"*
+- **"Alex's neighbor can help."** Only if Alex agrees. Ask Alex first.
+- **"Talk over there and ask what help Alex wants."** Exactly. Have them say it.
 
-Discloses the condition to the queue or refuses support because Alex finds reading difficult.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"A neighbor can help; they already know Alex."** Help from a kakilala feels normal and kind. But another person is not automatically authorized to see the form. Ask: *"Who decides who helps Alex?"* Let them answer "Alex."
 
-Play Lorna, Alex and observer. Offer privacy, ask about preferred support and explain the next step. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Private and equitable conversation.** Triads play Lorna, Alex and observer; rotate so everyone plays Lorna (three rounds, about 35 minutes each). Retry with one changed detail (Alex wants a support person). The observer writes Lorna's actual words for the four worksheet rows. Fictional details only. Alone: practise Lorna's words with a family member; staff observe later.
 
-1: This exposes information others do not need. / 2: This involves others without first asking Alex. / 3: This addresses the concern without disclosing the condition.
+## [answer-key] Self-check answer key
 
-1: This respects the requested support and privacy. / 2: This creates a barrier instead of support. / 3: Another person is not automatically authorized to see the form.
+- **Check 1 (the queue's question):** **"Offer a private conversation."** It addresses the concern without disclosing the condition.
+  - "Read the form so the queue can hear": exposes information others do not need.
+  - "Ask a neighbor": involves others without first asking Alex.
+- **Check 2 (Alex asks for a slow reading):** **"Read it in the agreed setting."** It respects the requested support and privacy.
+  - "Return only when able to read it alone": creates a barrier instead of support.
+  - "Hand it to the first acquaintance": another person is not automatically authorized to see the form.
 
-## [observe] Observe
+## [observe] What to observe
 
-Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.
+Indicator: Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.
 
-Ready: Offers private support matched to Alex’s request without labels or imposing another person’s involvement.
+- **Kaya na:** Offers private support matched to Alex’s request without labels or imposing another person’s involvement.
+- **Kailangan pa ng practice:** Offers privacy but needs a prompt to ask what support is preferred.
+- **Hindi pa:** Discloses the condition to the queue or refuses support because Alex finds reading difficult.
 
-Needs practice: Offers privacy but needs a prompt to ask what support is preferred.
+Look for: asking Alex before inviting anyone. A correct self-check is not evidence of the skill.
 
-Not yet: Discloses the condition to the queue or refuses support because Alex finds reading difficult.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** give the missing line (*"Ask Alex what help is preferred"*); re-observe in the same session.
+- **Hindi pa:** re-model Lorna's two lines; retry only the first minute. Pair with a Kaya na BHW as Alex. Re-observe next round or at follow-up.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 30; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF pp. 30, 33, 34, 35.
+- Timing: an authoring distribution of the source's 600-minute allocation.
+- Owner approved and published 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

@@ -1,57 +1,69 @@
 ## [purpose] Purpose
 
-15 minutes: opening 1; model 2; triad practice 6; feedback/retry 3; debrief 2; next step 1. Rotate roles in three short rounds. This is an introduction; arrange extra observed practice when needed.
-
-Build an invitation plan identifying affected groups, trusted inviters, barriers and agreed participation options.
+The BHW builds an invitation plan for Ruben, Sari and Eva: each barrier, a trusted inviter, a method, follow-up and a voluntary way to contribute.
 
 ## [time-materials] Time and materials
 
-These four introductory activities total 60 minutes of the shared 120-minute mobilization/DRRM allocation. The other 60 minutes remain reserved for DRRM. This is a proposed split, not a separate source requirement or proof of competence. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 15 minutes face-to-face (this lesson's share of the 60-minute subchapter plan): opening 1, model 2, practice 6, feedback and retry 3, debrief 2, next step 1. App Read: about 5 minutes, separate.
+- **Materials:** *Participant cards* and *Worksheet 2.6.2 Invitation map* per triad; *Observation sheet 2.6.2* (staff only); job aid; name tags for Ruben, Sari and Eva; manila paper, markers.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm with the organizer an accessible meeting place and what participation support local policy allows.
+- Scope: no promises of money, rewards or transport; attendance is never a condition for services. No real residents; no health advice.
 
 ## [opening] Opening
 
-Ina will convene a discussion about late schedule updates. A local leader is trusted by residents. Ruben works during the day. Sari has no phone. Eva feels nervous speaking in a large group. One chat invitation is not enough.
+Read the scene aloud. Ask: *"Sari has no phone. What should Ina do first?"* Take two answers.
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **"The situation"** (Read and slide). Ask: *"Why is one chat invitation not enough here?"*
+2. **"What to do and say."** Ask: *"What is each person's barrier, and who do they trust?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model it. Ask: *"Who chose each method, Ina or the resident?"*
+5. **"Scope and support."** Ask: *"Ruben says he cannot come. What must Ina not say?"* Then run the practice.
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Link: *"They came. Now the meeting must work for everyone."*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-With the leader, Ina asks Ruben about timing. Sari chooses a personal invitation. Eva prefers a small conversation. They record who will invite each group and when to report back. Participation is voluntary, with another way to offer suggestions.
+- **"Send it again in the chat."** Thank them. Ask: *"Can Sari see the chat?"*
+- **"The leader can tell everyone."** Ask: *"Does the leader speak for Ruben, Sari and Eva?"*
+- **"Give snacks or an allowance so they come."** Ask: *"Who confirmed that?"* Nothing is promised until the organizer confirms.
+- **"Visit Sari and ask how she wants to hear."** Praise it.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Uses only chat for everyone or conditions service access on attendance.
+**"If she did not reply online, she is not interested."** After many messages, silence feels like a no. But Sari has no phone; she never saw it. Do not correct the speaker; ask the group: *"What else could explain no reply?"*
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Create rows for Ruben, Sari and Eva. Add each barrier, inviter, invitation method and follow-up date. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+**Invitation map.** Triads: learner, partner (the resident, asking how the plan meets their need), observer. Three rounds, about 2 minutes; each learner fills one row and an alternative way to contribute. The observer notes barrier, inviter and follow-up, then one strength and one next action; the learner retries. Staff rate. Fictional only. Low resource: manila paper. Solo: complete it; arrange observation later.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: This does not address the access barrier. / 2: Sari helps choose a method she can use. / 3: No online reply is not evidence of disinterest.
+1. **"Sari has no phone. What is the best starting step?"** Correct: **"Ask what invitation method works"** — Sari helps choose a method she can use. "Send the invitation to the same chat again": this does not address the access barrier. "Assume she is uninterested…": no online reply is not evidence of disinterest.
+2. **"Ruben cannot attend. Which response is appropriate?"** Correct: **"Offer another way to contribute"** — this respects the barrier while allowing participation. "Delay his services until he attends": access to services should not depend on attendance. "Promise money without the organizer's authorization": unconfirmed rewards should not be promised.
 
-1: Access to services should not depend on attendance. / 2: Unconfirmed rewards should not be promised. / 3: This respects the barrier while allowing participation.
+## [observe] What to observe
 
-## [observe] Observe
+Indicator: Plans for all three barriers with clear inviters and voluntary participation options.
 
-Plans for all three barriers with clear inviters and voluntary participation options.
+- **Kaya na:** Uses three appropriate options with follow-up and no coercion or promised rewards.
+- **Kailangan pa ng practice:** Uses suitable invitations but needs a prompt to include follow-up or another way to contribute.
+- **Hindi pa:** Uses only chat for everyone or conditions service access on attendance.
 
-Ready: Uses three appropriate options with follow-up and no coercion or promised rewards.
+Look for the learner asking the resident. A correct self-check is not evidence of the skill.
 
-Needs practice: Uses suitable invitations but needs a prompt to include follow-up or another way to contribute.
+## [support] If a BHW needs more support
 
-Not yet: Uses only chat for everyone or conditions service access on attendance.
+- **Kailangan pa:** one next action, *"Add when you will report back,"* then retry that row now.
+- **Hindi pa:** name what you saw calmly, re-model Sari's row, then retry with a Kaya na partner.
+- Re-observe at the 2–4-week follow-up with a changed fictional barrier. Triad feedback is practice, not a staff rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF pp. 52–53; Facilitator Guide PDF p. 41; presentation PDF pp. 93–94.
+- Mobilization shares 2 hours with Subchapter 2.7 (F38); 15 minutes is an authoring distribution.
+- Program owner approved and requested publication, 25 Sep 2026; reviewer names not recorded. Local practice applies.

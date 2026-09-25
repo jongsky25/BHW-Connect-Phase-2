@@ -1,57 +1,77 @@
 ## [purpose] Purpose
 
-25 minutes: opening 3; model 3; supervised case practice 13; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Deliver a timed, factual handover and invite the receiving worker to confirm the next action.
+When a health worker arrives, the BHW gives a short, factual handover in the job aid order and asks the receiver to confirm the next action.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 25 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2; model 4; practice 10; feedback and checks 4; subchapter closing 5. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.18 participant cards, worksheet and observation sheet per triad; the job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Confirm with the midwife or RHU who receives handovers and the reporting channel. Write them on the job aid.
+- **Scope:** teach the handover order only, not assessment or diagnosis. No real names. Otherwise: *"Confirm with the midwife, RHU or local protocol."*
 
 ## [opening] Opening
 
-After a fall, another health worker arrives. BHW Lea has the scene facts, timeline, observed condition and help already called.
+Read the case: after a fall, a health worker arrives, and Lea has the facts. Ask: *"What must they hear first?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each Read heading is also its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation".** Ask: *"What does Lea already know?"*
+2. **"What to do and say".** Ask: *"Which part do you usually forget?"*
+3. **"Choose the first response".** Self-check 1 — pairs answer first.
+4. **"Worked example".** Model Lea's handover; a volunteer receives it. Ask: *"How did Lea check she was heard?"*
+5. **"Scope and support".** Ask: *"Who else may hear these details?"*
+6. **"Apply it to the situation".** Self-check 2 — pairs answer first.
+7. **"On Monday, try this".** Each names who receives their handovers, then practise.
 
-This is the safe response in the case. State the situation, observed response and breathing, key timeline, actions taken, changes and support needed. Confirm the receiver heard the urgent concern and document only factual, necessary details. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"He probably broke his hip."** Respect the observation. Ask: *"What did you see? Say that instead."*
+- **"I tell everything from the start."** Ask: *"What does the receiver need first?"*
+- **"I forgot when it happened."** Point to the job aid timeline row.
 
-Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"A good handover says what is wrong with the person."** BHWs want to sound helpful. The lesson says no guessed diagnosis: report what you saw, when, and what you did. Correct the case, not the person: *"That is a guess. What did Lea actually see?"*
 
-Deliver a timed, factual handover and invite the receiving worker to confirm the next action. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Integrated handover station.** Triads, three 3-minute rounds; everyone is learner once. Partner: the arriving health worker. Learner: hands over in the job aid order and asks the receiver to confirm the next action. Observer: fills the worksheet; one strength and one retry action. Fictional details only. Alone: say it aloud, complete the worksheet, arrange staff observation later.
 
-1: Necessary assessment may be delayed. / 2: The shortcut can cause harm: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover. / 3: Prioritize safety and timely help.
+**Closing:** each BHW states, without notes, one case, the sign seen, who they called and one shortcut they refused.
 
-1: Observe the task and appropriate referral. / 2: The story is not grounds for an independent diagnosis. / 3: The shortcut is unsafe: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.
+## [answer-key] Self-check answer key
 
-## [observe] Observe
+- **Check 1: "What do you say first?"** Correct: **"The situation and the time."**
+  - "Your guess about what is broken": no guessed diagnosis.
+  - "The whole story from the beginning": urgent facts first, in job aid order.
+- **Check 2: "How should your practice handover end?"** Correct: **"By asking the receiver to confirm the next step."**
+  - "By telling the bystanders everything you just reported": no details outside the handover.
+  - "With your own guess about what caused the fall": a guess is not a fact.
 
-Deliver a timed, factual handover and invite the receiving worker to confirm the next action.
+## [observe] What to observe
 
-Ready: Completes the task without prompting: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.
+Watch for: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+- **Kaya na:** Hands over in the job aid order with times, observed facts and actions, gives no guessed diagnosis, and asks the receiver to confirm the next action, without prompting.
+- **Kailangan pa ng practice:** Gives the facts, but needs a prompt to include the times or to ask the receiver to confirm the next action.
+- **Hindi pa:** Adds a guessed diagnosis, leaves out the time or actions, or shares identifiable details outside the care handover.
 
-Not yet: Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.
+A correct self-check is not evidence of the skill.
 
-## [support] Support and debrief
+## [support] If a BHW needs more support
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+- **Kailangan pa:** one retry action, e.g. *"End by asking what happens next."* Re-observe this session with a changed detail.
+- **Hindi pa:** re-model Lea's handover; retry with the job aid and a Kaya na partner. Re-observe in a later round.
+- Peer feedback is practice, not a staff rating.
 
-## [sources-review] Local resources
+## [sources-review] Sources and review notes
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 38; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 74.
+- The 25 minutes is drawn from F38's 8 hours, which do not time each case.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

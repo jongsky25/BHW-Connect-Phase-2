@@ -1,57 +1,78 @@
 ## [purpose] Purpose
 
-120 minutes: opening 10; model 15; triad practice 55; feedback/retry 20; debrief 10; workplace plan 10. Use seven Slides, cards, worksheet and observer sheet. Rotate roles and retry with one changed detail.
-
-Compare two visits and propose improvements in effectiveness, safety and responsiveness to the resident’s needs.
+The BHW compares Mila's two encounters with Nena, names the evidence for effective, safe and people-centered service, and proposes one improvement per dimension.
 
 ## [time-materials] Time and materials
 
-The four quality-service sessions total 600 minutes. This is facilitated training, separate from digital reading. Use repeated comparisons, practice and feedback; time alone does not establish competence. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 120 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model 15, practice 55, feedback and retry 25, checks and debrief 15. Read in the app: about 5 minutes.
+- **Materials:** *2.2.1 Service comparison* cards (one set per triad), worksheet, observation sheet, *Quality service* job aid, manila paper, an empty box.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Take both checks in the app first.
+- Confirm who answers schedule questions (midwife or designated staff) and the hazard reporting channel.
+- **Scope:** give no real clinic times. Do not teach diagnosis or changing a clinician's advice. "Safe" here means noticing and reporting a hazard; infection control (IPC) is 2.3.
 
 ## [opening] Opening
 
-At a fictional BHS, Nena asks about the schedule. In the first encounter, BHW Mila reads an old message. A box blocks the walkway. Nobody asks when Nena can return. The conversation is fast, but is it good service?
+Put the box in the walkway. Read Nena's case, then ask: *"Mila answered in under a minute, and politely. Was it good service?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step is a Read section and its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"What would you notice first?"*
+2. **"What to do and say."** Ask: *"Where are the confirmation, the danger and Nena's voice?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer first.
+4. **"Worked example."** Model encounter two. Ask: *"What changed in each dimension?"*
+5. **"Scope and support."** Ask: *"Unsure of the schedule, what do you tell Nena?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer first.
+7. **"On Monday, try this."** All repeat: *"Is the basis reliable? Is it safe? Have we considered the person?"*
 
-In the second encounter, Mila confirms the schedule with staff. She asks for the box to be removed from the walkway. She asks what time Nena can manage and explains the confirmed options. Information is reliable, the path is safer and Nena participates in the decision.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"It was fine, she was fast."** Agree speed matters. Ask: *"Was the time correct? Was the walkway safe?"*
+- **"The message was wrong."** We do not know. Ask: *"What would make it reliable?"*
+- **"Mila should move the box herself."** Accept the concern; the lesson says ask for it to be moved.
+- **"Ask Nena what time works."** Praise it; most people miss this.
 
-Judges only speed or uses the old message without confirmation.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"Good service means fast and friendly."** Residents complain about waiting and quick, kind BHWs get praised, so this is natural. Ask: *"Mila was fast and polite. What was still missing?"* Let the group find the gaps. Credit whoever said "fast": *"That's part of it."*
 
-Compare the two encounters. For each dimension, record the evidence and one improvement. Explain the difference to a partner. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Service comparison: three quality dimensions.** Triads, 55 minutes; rotate roles.
 
-1: This establishes a reliable basis before giving a schedule. / 2: The time may be wrong; speed is not enough. / 3: A forwarded message does not replace confirmation.
+Learner fills in evidence and one improvement per dimension, then explains the difference. Partner plays Nena. Observer writes the actual words, one strength, one next action. Retry with one changed detail (Nena works mornings). Fictional details only. Alone: worksheet on paper, staff observation later.
 
-1: This addresses neither the risk nor participation. / 2: Safety and responsiveness to needs also matter. / 3: Only one dimension has been checked; two remain.
+## [answer-key] Self-check answer key
 
-## [observe] Observe
+- **Check 1 (old message):** **"Confirm with staff."** It establishes a reliable basis before giving a schedule.
+  - "Promise the old time": the time may be wrong; speed is not enough.
+  - "Treat it as correct": a forwarded message does not replace confirmation.
+- **Check 2 (blocked path, Nena not heard):** **"Address the obstacle and listen to Nena."** Safety and responsiveness to needs also matter.
+  - "Repeat the schedule faster": addresses neither the risk nor participation.
+  - "Declare the service complete": only one dimension checked; two remain.
 
-Identifies evidence for all three dimensions and proposes an appropriate improvement for each.
+## [observe] What to observe
 
-Ready: Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions without prompting.
+Indicator: Identifies evidence for all three dimensions and proposes an appropriate improvement for each.
 
-Needs practice: Identifies two dimensions and adds listening to the resident after a prompt.
+- **Kaya na:** Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions and proposes one improvement for each without prompting.
+- **Kailangan pa ng practice:** Identifies two dimensions and adds listening to the resident after a prompt.
+- **Hindi pa:** Judges only speed or uses the old message without confirmation.
 
-Not yet: Judges only speed or uses the old message without confirmation.
+Look for: who confirms the schedule; an improvement that comes from Nena. A correct self-check is not evidence of the skill.
 
-## [support] Support and debrief
+## [support] If a BHW needs more support
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+- **Kailangan pa:** give the missing element (*"Ask Nena what time she can manage"*); re-observe the same session.
+- **Hindi pa:** re-model encounter two; retry one dimension at a time, with a Kaya na partner. Re-observe next round or at follow-up.
+- Peer feedback is practice, not a staff rating.
 
-## [sources-review] Local resources
+## [sources-review] Sources and review notes
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 29; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF pp. 29, 31, 32, 37.
+- Timing: an authoring distribution of the source's 600-minute allocation.
+- Owner approved and published 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

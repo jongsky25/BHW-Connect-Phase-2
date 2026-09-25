@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Bawang at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ibalik ang desisyon sa clinician; huwag magtakda ng dami ng bawang bilang gamot.
+Ipinakita ng BHW kay Liza ang card: Allium sativum ang Bawang, butil, para sa pagkontrol ng cholesterol sa payo ng clinician. Sinabi ng BHW na hindi pahintulot ang bawang sa pagkain para baguhin ang gamot. Wala siyang itinakdang dami. Itinanong niya ang iba pang gamot at posibleng epekto, saka ibinalik ang desisyon sa clinician ni Liza.
 
 ## [scope] Saklaw at paghingi ng tulong
 
