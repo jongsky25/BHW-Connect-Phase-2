@@ -1,4 +1,4 @@
-# 2.4.8 — First-aid practice: drowning response
+# 2.4.8 — Respond safely to drowning
 
 Use fictional details only.
 

@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes identity, part, scope and referral without prompts. |
-| Kailangan practice | Mostly correct, but needs a prompt for source or referral. |
-| Hindi pa | Guesses identity, dose or authorization. |
+| Kaya na | Completes all three cards, escalates Ben and Mara, keeps Joel's medicine unchanged and marks authorization missing, without prompts. |
+| Kailangan pa ng practice | Completes the cards but needs a prompt on a referral or on authorization. |
+| Hindi pa | Guesses identity, gives a dose, changes Joel's medicine or treats attendance as authorization. |
 
 Evidence observed: ____
 

@@ -2,15 +2,15 @@
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
-Magkahawig ang dalawang halamang tinatawag na “tsaang gubat” sa isang bakuran. Nagtanong ang residente kung alin ang gagamitin.
+Dalawang halaman sa isang bakuran ang parehong tinatawag na “tsaang gubat.” Nagtanong ang residente kung alin ang gagamitin.
 
 ## Card ng kalahok
 
-Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.
+Punan ang worksheet mula sa dalawang card. Sabihin sa residente kung ano ang hindi napapatunayan ng iisang pangalan, markahan ang dapat kumpirmahin, itanong ang sintomas at gamot, at sabihin kung sino ang kokonsultahin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang residente. Ituro ang dalawang card at itanong: “Parehong tsaang gubat ito. Alin ang gagamitin ko? Ito ang ginamit ng lola ko.” Sumagot nang maikli. Huwag magdagdag ng sintomas, gamot o personal na detalye na wala sa kaso.
 
 ## Card ng tagamasid
 

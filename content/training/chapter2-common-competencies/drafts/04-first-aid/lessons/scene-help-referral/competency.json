@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
       "observable_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
-      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.",
-      "not_yet_en": "Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact.",
+      "not_yet_fil": "Pumapasok sa kunwaring trapiko, inaalam muna ang buong kuwento bago tumawag, o tumatawag sa hindi kumpirmadong numero.",
+      "not_yet_en": "Steps into the simulated traffic, asks for the full story before any call, or calls an unverified number.",
       "levels": {
-        "kaya_na_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala.",
-        "kaya_na_en": "Completes the task without prompting: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
-        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
-        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
-        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.",
-        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact."
+        "kaya_na_fil": "Humihinto sa gilid ng kalsada, itinatalaga kung sino ang tatawag sa kumpirmadong contact, at iniuulat ang tugon, paghinga at lokasyon nang walang paalala.",
+        "kaya_na_en": "Stops at the road edge, names who calls the confirmed contact, and reports response, breathing and location without prompting.",
+        "kailangan_practice_fil": "Ligtas at may itinalagang tatawag, pero kailangan ng paalala na gamitin ang kumpirmadong contact o ibigay ang lokasyon.",
+        "kailangan_practice_en": "Stays safe and assigns the call but needs a prompt to use the confirmed contact or to give the location.",
+        "hindi_pa_fil": "Pumapasok sa kunwaring trapiko, inaalam muna ang buong kuwento bago tumawag, o tumatawag sa hindi kumpirmadong numero.",
+        "hindi_pa_en": "Steps into the simulated traffic, asks for the full story before any call, or calls an unverified number."
       }
     }
   ]

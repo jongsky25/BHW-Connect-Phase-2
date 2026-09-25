@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case. Lea avoids the shortcut.
+Lea is first at the manikin station. Before touching the manikin, she tells a partner to call for help, give the location and bring the AED. She then follows the current adult sequence the trainer demonstrated, while the observer records each action. She does not use a pulse check as her only gate or recite the old CAB paragraph.
 
 ## [scope] Scope and support
 

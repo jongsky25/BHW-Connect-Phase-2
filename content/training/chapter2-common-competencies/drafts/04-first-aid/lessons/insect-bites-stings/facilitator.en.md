@@ -1,57 +1,73 @@
 ## [purpose] Purpose
 
-15 minutes: opening 3; model 3; supervised case practice 3; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+The BHW recognizes the urgent signs in the case (widespread hives, breathing difficulty), calls emergency help and says which medicines are outside their role.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 15 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2, model 2, practice 7, feedback 2, checks 2. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.12 participant cards, worksheet, observation sheet; *First aid and referral* job aid with the confirmed emergency contact.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm the emergency contact and what your RHU's protocol says for severe allergic reactions. Write the contact on the job aid.
+- **Scope:** do not teach drug names, doses or how to give an emergency medicine. The person's own prescribed plan and trained or local protocol decide.
 
 ## [opening] Opening
 
-After a bee sting, an adult develops widespread hives and says breathing is difficult.
+Say: *"A bee stung an adult. Now he has hives all over and says it is hard to breathe. His friend says, 'It's just a sting.' Is it?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step matches the slide with the same heading.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"Which two signs tell you this is more than the sting spot?"*
+2. **"What to do and say."** Ask: *"While help is coming, what do you keep watching?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model Lea's call. Ask: *"Whose plan does Lea follow for medicine?"*
+5. **"Scope and support."** Ask: *"Which home remedies for stings do people use here?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"Who confirms the local protocol for severe allergy?"*
 
-This is the safe response in the case. Recognize possible severe allergic reaction and activate emergency help immediately. Follow the person's prescribed emergency plan and trained/local protocol. Continue to observe breathing while help is coming. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Put vinegar or toothpaste on it."** Ask: *"Does that help his breathing?"* No delay for home remedies.
+- **"Give him an allergy tablet from the kit."** Kind intent. The lesson says no drug outside training and authorization.
+- **"Call emergency help now and watch his breathing."** Confirm. Ask what they will report.
 
-Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"A sting is always a small, local problem."** Most stings we remember were minor. But widespread hives and breathing difficulty are not a routine local sting. Ask: *"What changed between a sting on the arm and this case?"*
 
-Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Bite and sting cards** (card: *Call-and-transport rehearsals*), triads. Round 1: the learner names the urgent signs in the case on the worksheet. Round 2: the learner calls, reports and watches breathing, and says which medicine is not theirs to give. The partner plays the friend offering a remedy or a tablet. The observer fills the worksheet rows. One strength and one retry action, rotate. Staff rate. Low-resource: read aloud.
 
-1: Necessary assessment may be delayed. / 2: The shortcut can cause harm: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization. / 3: Prioritize safety and timely help.
+## [answer-key] Self-check answer key
 
-1: Observe the task and appropriate referral. / 2: The story is not grounds for an independent diagnosis. / 3: The shortcut is unsafe: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization.
+- **Check 1:** Correct: **"Call emergency help now for a possible severe allergy."**
+  - "Try a home remedy…": Do not delay referral for home remedies when breathing is difficult.
+  - "Treat it as a…": Breathing difficulty is not a routine local sting.
+- **Check 2:** Correct: **"Medicine follows the person's own plan and protocol."**
+  - "Give it now; any…": Do not give a drug outside training and authorization.
+  - "Let me choose a…": Having a medicine in the kit is not authorization to give it.
 
-## [observe] Observe
+## [observe] What to observe
 
-Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+Watch for: Recognize the urgent signs in the case (widespread hives, breathing difficulty), activate emergency help and state medication boundaries.
 
-Ready: Completes the task without prompting: Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+- **Kaya na:** Without prompting, names hives and breathing difficulty as urgent, calls emergency help first, watches breathing and says medicine follows the person's plan and protocol.
+- **Kailangan pa ng practice:** Calls emergency help, but needs a prompt to name the urgent signs, watch breathing or state the medication boundary.
+- **Hindi pa:** Treats the case as a routine sting, delays for a home remedy, or offers or accepts a drug outside training and authorization.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for: the call comes before any remedy talk. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** usually forgot the medicine boundary. Retry action: *"Tell the friend who decides about medicine."* Re-observe now.
+- **Hindi pa:** name the urgent signs together; retry the call in a later round, first with a quiet partner. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 46; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- 15 minutes is an authoring share of F38's 8 hours.
+- Program owner attested clinical sign-off, 25 Sep 2026; reviewers not named. Local protocol overrides.

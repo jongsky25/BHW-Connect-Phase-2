@@ -1,57 +1,81 @@
 ## [purpose] Purpose
 
-60 minutes: opening 5; model 10; guided practice 20; feedback/retry 10; debrief 5; next step 10. Rotate learner, partner and observer. Use every worksheet row and repeat missed actions.
-
-Complete a BHS policy and training checklist with location, version, owner, role and training gaps.
+The BHW completes a sample BHS policy and training checklist with location, version, owner, role and training gaps.
 
 ## [time-materials] Time and materials
 
-The seven IPC sessions total 600 minutes. This adapted split includes policy and improvement practice. Use clean props only. Hand hygiene needs running water, soap, single-use towels, suitable handrub and a timer. No live sharps, body fluids, hot-water or chemical demonstrations. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 60 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 5, model 10, practice 25, feedback and retry 10, checks and debrief 10. The Read takes about 5 minutes in the app.
+- **Materials:** a sample IPC folder with some old pages; *2.3.6* policy and training checklists (worksheet) and observation sheet; job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Fictional folder: some old dates, a sterilization page, an injection page, no exposure contact.
+- Confirm your IPC contact and the exposure contact and process; write them on the job aid, or "confirm with the midwife / RHU / local protocol".
+- **Scope:** do not teach sterilization, injections or post-exposure medicines. Do not say BHWs need no IPC training.
 
 ## [opening] Opening
 
-BHW Nilo finds an IPC folder with some old pages and no exposure-reporting contact. It includes injection and sterilization documents. Finding them does not authorize him to perform those procedures. He needs the applicable guidance and his own role.
+Read Nilo's case. Ask: *"He found the sterilization policy. May he now sterilize equipment?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step is a Read section and its matching slide.
 
-## [expected-answers] Expected response
+1. **The situation.** *"What is missing from Nilo's folder?"*
+2. **What to do and say.** *"For each policy, what do we record?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model the hand-hygiene row. *"Why did Nilo not write 'trained'?"*
+5. **Scope and support.** *"A BHW gets a needlestick. What happens first?"*
+6. **Apply it to the situation.** Self-check 2 — let pairs answer before revealing.
+7. **On Monday, try this.** *"Is your own hand-hygiene training found, confirmed, started or observed?"*
 
-For hand hygiene, Nilo records the location and confirms the version with the nurse. He records the return demonstration still needed. For sterilization, he identifies specialist staff. For exposure, he obtains the contact and immediate reporting process. He does not mark unfinished training as completed.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Yes, if he follows it step by step."** Reading is not authorization. *"Who does this task at the BHS?"*
+- **"BHWs don't need IPC training."** *"Which rows fit your role?"*
+- **Marks "trained" after a seminar.** *"What evidence shows you can do it?"* Attendance is not observed practice.
+- **"Follow the newest-looking page."** Confirm the version with the IPC contact.
 
-Treats reading a policy as authorization or marks unobserved training as completed.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"If I have read the policy, I'm allowed to do it."** A written procedure looks like permission. Ask: *"Who trained and authorized you for this?"* Tasks need instruction, training and permission. Praise the finding; the next step is confirming.
 
-Complete the sample policy and training checklist. Identify old guidance, a missing contact and two tasks requiring specialist staff. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Policy and training inventory**, rotating triads, 25 minutes plus feedback.
 
-1: Finding a document does not grant authorization. / 2: It is not equivalent to practice or observed competence. / 3: The responsible person and prerequisites must be clear.
+- **Learner:** completes both checklists; marks the old guidance, the missing exposure contact and two specialist tasks.
+- **Partner:** plays the nurse or IPC contact Nilo asks.
+- **Observer:** checks that no training is marked complete without evidence; gives one strength and one retry.
+- Fictional folder only. Alone: have the supervisor review it before any real use.
 
-1: This clarifies the applicable guidance. / 2: The selected instruction may be inappropriate or unsafe. / 3: This conceals the actual gap.
+## [answer-key] Self-check answer key
 
-## [observe] Observe
+- **Check 1 (Nilo finds a sterilization policy):** **"Confirm his role and training."** Finding the policy is a first step; confirm who does sterilization and what training it needs.
+  - "He may sterilize equipment without training": finding a document does not grant authorization.
+  - "All his IPC training is automatically complete": it is not equivalent to practice or observed competence.
+- **Check 2 (poster and instruction conflict):** **"Confirm with the IPC contact."** This clarifies the applicable guidance.
+  - "Choose whichever is easier despite the uncertainty": the selected instruction may be inappropriate or unsafe.
+  - "Mark the checklist complete to avoid asking": this conceals the actual gap.
 
-Records location, version, contact and training gaps without inventing training or authorization.
+## [observe] What to observe
 
-Ready: Completes the rows, names who confirms them and distinguishes specialist tasks without prompting.
+Indicator: Records location, version, contact and training gaps without inventing training or authorization.
 
-Needs practice: Records location and contact but adds version or training gaps only after prompting.
+- **Kaya na:** Completes the rows, names who confirms them and distinguishes specialist tasks without prompting.
+- **Kailangan pa ng practice:** Records location and contact but adds version or training gaps only after prompting.
+- **Hindi pa:** Treats reading a policy as authorization or marks unobserved training as completed.
 
-Not yet: Treats reading a policy as authorization or marks unobserved training as completed.
+Look for the exposure-contact line: filled, or marked "to confirm". A correct self-check is not evidence of the skill.
 
-## [support] Support and debrief
+## [support] If a BHW needs more support
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+- **Kailangan pa:** prompt *"Which version? What training is still needed?"*; retry two rows.
+- **Hindi pa:** re-model the hand-hygiene and sterilization rows side by side; re-observe on day two.
+- Peer feedback is practice, not a staff rating.
 
-## [sources-review] Local resources
+## [sources-review] Sources and review notes
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF pp. 36–37; Facilitator Guide PDF p. 35; presentation PDF pp. 60–61. Evidence review: the ten-policy list matches DOH 2021; confirm local adoption.
+- The 60 minutes distributes the 600-minute source allocation.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol applies where it differs.

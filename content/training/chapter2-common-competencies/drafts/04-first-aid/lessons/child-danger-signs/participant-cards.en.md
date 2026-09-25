@@ -1,4 +1,4 @@
-# 2.4.2 — First-aid practice: child danger signs
+# 2.4.2 — Recognize childhood danger signs
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,12 +6,12 @@ A caregiver says three-year-old Niko cannot drink and vomits everything. He is u
 
 ## Learner card
 
-Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.
+You are the BHW. Ask about drinking, vomiting and convulsions, and note how alert Niko is. Tell the caregiver why Niko needs the facility now, then give a handover that repeats the exact signs. Do not name an illness.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Niko's caregiver. Say that Niko cannot drink, vomits everything and is very hard to wake. When the BHW talks about referral, ask: "Can we wait until tomorrow?" Agree only after the BHW explains why not. Do not add new signs or clinical details.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Record the actual words and actions: the danger sign named, the referral step and the handover words. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.

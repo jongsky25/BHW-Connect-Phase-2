@@ -6,11 +6,11 @@ May masakit na ngipin at namamagang pisngi si Eva. Nagtanong siya tungkol sa Yer
 
 ## Card ng kalahok
 
-Itugma ang dalawang Yerba buena card; piliin ang Mentha cordifolia, dahon, gamit at ligtas na susunod na hakbang.
+Ihambing ang dalawang Yerba buena card at punan ang worksheet. Sabihin kay Eva ang alam, ang hindi alam at kung sino ang kokonsultahin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang si Eva. Sabihing masakit ang ngipin mo at namamaga ang pisngi, magtanong tungkol sa Yerba buena, at sabihing malayo ang dentista. Huwag magdagdag ng sintomas, gamot o ibang detalye.
 
 ## Card ng tagamasid
 

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Niyog-niyogan, Quisqualis indica, buto, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Itinutugma ang Quisqualis indica at buto, sinasabing hindi pa kumpirmado ang bulate at ipinapasuri ang bata sa health center nang walang paalala. |
+| Kailangan pa ng practice | Tama ang card ngunit kailangan ng paalala para sabihing hindi pa kumpirmado ang bulate o para ipasuri ang bata. |
+| Hindi pa | Itinuturing na Niyog-niyogan ang halaman ng kapitbahay o nagbabanggit ng dami ng buto para sa bata. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Names a specific barrier and usable measure, seeks review and preserves required processes without prompting. |
-| Kailangan practice | Identifies the barrier and proposal but needs a prompt to name an owner or measure. |
+| Kailangan pa ng practice | Identifies the barrier and proposal but needs a prompt to name an owner or measure. |
 | Hindi pa | Promises all services or removes necessary checks merely to increase speed. |
 
 Evidence observed: ____

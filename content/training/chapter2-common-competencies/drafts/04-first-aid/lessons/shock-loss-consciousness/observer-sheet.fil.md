@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag. |
+| Kaya na | Sinusuri ang paligid, tugon at paghinga, humihingi ng tulong, tinatanggihan ang inumin at iniuulat ang nakita nang walang paalala. |
+| Kailangan pa ng practice | Humihingi ng tulong at tinatanggihan ang inumin, pero kailangan ng paalala na suriin ang paghinga o mag-handover nang factual. |
+| Hindi pa | Pinapayagan ang matamis na inumin, hinuhulaan ang sanhi, o naghihintay kung magigising bago tumawag. |
 
 Aktuwal na nakita/narinig: ____
 

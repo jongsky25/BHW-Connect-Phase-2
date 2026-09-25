@@ -1,57 +1,69 @@
 ## [purpose] Layunin
 
-15 minuto: pambungad 1; modelo 2; practice 6; feedback/pag-ulit 3; talakayan 2; susunod na hakbang 1. Magpalit sa tatlong maikling round. Panimula ito; maglaan ng dagdag na obserbasyon kung kailangan.
-
-Bumuo ng pahayag ng isyu na may iniulat na ebidensiya, pananaw ng apektadong residente at tanong na kailangan pang linawin.
+Nakasusulat ang BHW ng pahayag ng isyu para sa kathang-isip na Purok Maligaya: tiyak na ulat, sino ang apektado, sino ang hindi pa naririnig at tanong na lilinawin, nang walang bansag.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 60 minuto ang apat na panimulang gawain mula sa pinagsamang 120 minuto ng mobilization at DRRM. Nakalaan sa DRRM ang natitirang 60 minuto. Mungkahing hati ito, hindi hiwalay na oras sa gabay o patunay ng kakayahan. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 15 minutong harapan (bahagi ng araling ito sa 60-minutong plano ng subchapter): pambungad 1, modelo 2, practice 6, feedback at pag-ulit 3, talakayan 2, susunod na hakbang 1. Pagbasa sa app: mga 5 minuto, hiwalay.
+- **Kagamitan:** *Participant cards* at *Worksheet 2.6.1 Issue card ng komunidad* bawat tatluhan; *Talaan ng obserbasyon 2.6.1* (staff lamang); job aid; manila paper, marker.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin nang lokal kung sino ang sumusuri ng plano at ang paraan ng pag-uulat.
+- Saklaw: pagtukoy lang ng isyu; huwag pang pumili ng paraan ng pagpapabalita. Walang totoong residente, walang payong pangkalusugan. Kagamitan sa pagsasanay ang issue card, hindi opisyal na form.
 
 ## [opening] Pambungad
 
-Sa kathang-isip na Purok Maligaya, tatlong residente ang nagsabing huli nilang nalaman ang pagbabago ng oras sa BHS. Sabi ng isang lider, “Ayaw lang nilang sumunod.” Hindi pa naririnig ni BHW Ina ang mga walang cellphone at nagtatrabaho sa araw. Ano ang tunay na isyu?
+Basahin nang malakas ang sitwasyon. Itanong: *"Ano ba talaga ang alam natin, at sino pa ang hindi naririnig?"* Gumuhit ng dalawang hanay sa manila paper: *Iniulat* at *Hula*.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **"Ang sitwasyon"** (Read at slide). Itanong: *"Ulat ba o hula ang 'ayaw lang nilang sumunod'?"*
+2. **"Gawin at sabihin."** Itanong: *"Sino pa ang hindi naririnig ni Ina?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang pares bago ibunyag.
+4. **"Halimbawang sagot."** Imodelo ang pahayag. Itanong: *"Alin ang ebidensiya, at alin ang hindi pa alam?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Kung sensitibo ang isyu, ano ang maiaalok ni Ina?"* Saka patakbuhin ang practice.
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang pares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Alam na natin kung sino ang hindi naaabot. Paano natin sila aabutin?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Isinulat ng grupo: “Tatlong residente ang nag-ulat na huli nilang nalaman ang bagong oras. Hindi pa natin alam kung paano naaabot ang walang cellphone.” Itatanong nila sa mga apektado kung aling paraan ang magagamit. Hindi nila tinawag na tamad ang mga hindi nakarating.
+- **"Tamad lang sila."** Huwag makipagtalo. Itanong: *"May residente bang nagsabi niyan?"* Ilipat sa *Hula*.
+- **"I-post sa group chat."** Magpasalamat. Itanong: *"Paano ito makikita ng walang cellphone?"*
+- **"Tatlo ang huling nakaalam."** Iyan ang ebidensiya. Itanong: *"Ano pa ang hindi natin alam?"*
+- **May binanggit na totoong kapitbahay.** Magpasalamat; bumalik sa kathang-isip na kaso.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagawang katotohanan ang bansag na tamad o ipinipili ang solusyon nang walang pakikinig.
+**"Kapag sinabi ng lider na ayaw sumunod ng tao, iyon na ang isyu."** Kilala ng lider ang purok, at parang bastos na kuwestiyunin siya. Pero huling balita ang iniulat, hindi pagtanggi. Hayaang ang grupo mismo ang maglagay ng sinabi ng lider sa tamang hanay.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Gumawa ng issue card: ano ang naiulat, sino ang apektado, sino ang hindi pa naririnig at ano ang itatanong. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Issue card ng komunidad.** Tatluhan: kalahok, kapareha (lider o apektadong residente), tagamasid. Tatlong round, mga 2 minuto; kalahok ang bawat isa nang minsan. Pupunan ng kalahok nang malakas ang limang kahon. Itatala ng tagamasid ang eksaktong salita, saka isang lakas at isang susunod na hakbang; uulit ang kalahok. Staff ang magre-rate. Kathang-isip lamang. Kulang sa gamit: worksheet sa manila paper. Mag-isa: sagutan; magpaobserba pagkatapos.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Bansag ito; hindi ito napatunayan ng mga ulat. / 2: Hindi pa naririnig ang kanilang pananaw. / 3: Ito ang tiyak na naiulat; kailangan pang linawin ang lawak at dahilan.
+1. **"Alin ang ebidensiyang mayroon ang grupo?"** Tama: **"Tatlong ulat ng huling balita"** — tiyak na naiulat ito; kailangan pang linawin ang lawak at dahilan. "Tamad ang lahat…": bansag, hindi napatunayan ng mga ulat. "Tiyak na ayaw ng walang cellphone…": hindi pa naririnig ang kanilang pananaw.
+2. **"Ano ang dapat gawin bago pumili ng paraan ng pagpapabalita?"** Tama: **"Tanungin ang mga hindi naaabot"** — kasama ang apektado sa pagtukoy ng magagamit na solusyon. "Piliin agad ang chat…": maaaring patuloy na hindi maabot ang walang cellphone. "Ilista ang personal na kondisyon…": hindi kailangan para linawin ang daan ng balita.
 
-1: Kasama ang apektado sa pagtukoy ng magagamit na solusyon. / 2: Maaaring patuloy na hindi maabot ang walang cellphone. / 3: Hindi kailangan ang personal na kondisyon para linawin ang daan ng balita.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: May tiyak na ulat, apektadong grupo, nawawalang pananaw at tanong; walang bansag o personal na detalye.
 
-May tiyak na ulat, apektadong grupo, nawawalang pananaw at tanong; walang bansag o personal na detalye.
+- **Kaya na:** Naihihiwalay ang tatlong ulat sa hula ng lider at may tanong sa hindi pa naririnig nang walang paalala.
+- **Kailangan pa ng practice:** Malinaw ang ulat pero kailangang paalalahanang idagdag ang hindi pa naririnig.
+- **Hindi pa:** Ginagawang katotohanan ang bansag na tamad o ipinipili ang solusyon nang walang pakikinig.
 
-Kaya na: Naihihiwalay ang tatlong ulat sa hula ng lider at may tanong sa hindi pa naririnig nang walang paalala.
+Hanapin ang tanong para sa residente, hindi handang solusyon. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Malinaw ang ulat pero kailangang paalalahanang idagdag ang hindi pa naririnig.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagawang katotohanan ang bansag na tamad o ipinipili ang solusyon nang walang pakikinig.
+- **Kailangan pa:** isang susunod na hakbang, *"Idagdag ang hindi pa naririnig,"* saka umulit agad.
+- **Hindi pa:** mahinahong sabihin ang nakita, imodelo muli ang hakbang 4, umulit kasama ang kaparehang Kaya na.
+- Obserbahan muli sa 2–4 na linggong follow-up gamit ang binagong kathang-isip na kaso. Practice ang feedback ng tatluhan, hindi rating ng staff.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 52–53; Facilitator Guide PDF p. 41; presentation PDF pp. 93–94.
+- Kahati ng mobilization ang Subchapter 2.7 sa 2 oras (F38); pamamahagi ng mga sumulat ang 15 minuto.
+- Inaprubahan ng program owner at hiniling ang paglalathala, 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na gawi ang susundin.

@@ -10,10 +10,10 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: Pagkatapos matusok ng bubuyog, nagkaroon ng pantal sa…",
-    "display_en": "Case: After a bee sting, an adult develops widespread hives and…",
+    "display_fil": "Matapos matusok ng bubuyog, may pantal sa buong katawan\nSinasabi ng adult na hirap siyang huminga",
+    "display_en": "After a bee sting, an adult has widespread hives\nThe person says breathing is difficult",
     "check": null,
-    "narration_fil": "Pagkatapos matusok ng bubuyog, nagkaroon ng pantal sa buong katawan ang tao at hirap siyang huminga.",
+    "narration_fil": "Pagkatapos matusok ng bubuyog, nagkaroon ng pantal sa buong katawan ang isang adult at sinasabi niyang hirap siyang huminga.",
     "narration_en": "After a bee sting, an adult develops widespread hives and says breathing is difficult."
   },
   {
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Kilalanin ang posibleng malubhang allergy at humingi agad ng…\nSundin ang reseta at sanay na lokal na protocol\nBantayan ang paghinga habang naghihintay",
-    "display_en": "Recognize possible severe allergic reaction and activate…\nFollow the person's prescribed emergency plan and trained/local…\nContinue to observe breathing while help is coming",
+    "display_fil": "Kilalanin ang posibleng malubhang allergy\nHumingi agad ng emergency help\nSundin ang iniresetang plan at sanay/lokal na protocol\nBantayan ang paghinga habang paparating ang tulong",
+    "display_en": "Recognize a possible severe allergic reaction\nActivate emergency help immediately\nFollow the prescribed emergency plan and trained/local protocol\nKeep observing breathing while help is coming",
     "check": null,
-    "narration_fil": "Kilalanin ang posibleng malubhang allergy at humingi agad ng emergency help. Sundin ang reseta at sanay na lokal na protocol. Bantayan ang paghinga habang naghihintay.",
+    "narration_fil": "Kilalanin ang posibleng malubhang allergy at humingi agad ng emergency help. Sundin ang iniresetang emergency plan ng tao at ang sanay/lokal na protocol. Bantayan ang paghinga habang paparating ang tulong.",
     "narration_en": "Recognize possible severe allergic reaction and activate emergency help immediately. Follow the person's prescribed emergency plan and trained/local protocol. Continue to observe breathing while help is coming."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Matapos ang tusok, may pantal sa buong katawan ang adult at hirap siyang huminga. Ano ang una mong gagawin?",
+      "prompt_en": "After the sting, the adult has widespread hives and says breathing is difficult. What do you do first?",
       "options": [
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Subukan muna ang home remedy sa tusok at tingnan kung gagaling.",
+          "en": "Try a home remedy on the sting first and see if it settles."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Humingi agad ng emergency help sa posibleng malubhang allergy.",
+          "en": "Call emergency help now for a possible severe allergy."
         },
         {
-          "fil": "Humingi agad ng emergency help.",
-          "en": "Call for emergency help."
+          "fil": "Ituring na karaniwang tusok at pakalmahin lang ang tao.",
+          "en": "Treat it as a routine local sting and reassure the person."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training. 3: Unahin ang kaligtasan at agarang tulong.",
-      "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization. 3: Prioritize safety and timely help."
+      "correct_option_index": 1,
+      "feedback_fil": "1: Huwag maantala sa home remedy kapag hirap sa paghinga. 2: Tama. Maaaring malubhang allergy ang pantal na may hirap sa paghinga; humingi agad ng emergency help. 3: Hindi karaniwang tusok ang hirap sa paghinga. Humingi agad ng emergency help.",
+      "feedback_en": "1: Do not delay referral for home remedies when breathing is difficult. 2: Correct. Hives with breathing difficulty may be a severe allergic reaction; activate emergency help immediately. 3: Breathing difficulty is not a routine local sting. Call emergency help now."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Sundin ang reseta at sanay na lokal na protocol\nBantayan ang paghinga habang naghihintay",
-    "display_en": "Follow the person's prescribed emergency plan and trained/local…\nContinue to observe breathing while help is coming",
+    "display_fil": "Nakita ni Lea ang pantal; hirap huminga ang adult\nAgad siyang humingi ng emergency help\nAng gamot ay ayon sa plan ng tao at lokal na protocol\nBinabantayan niya ang paghinga hanggang dumating ang tulong",
+    "display_en": "Lea sees hives and hears that breathing is difficult\nShe calls emergency help right away\nMedicine follows the person's plan and local protocol\nShe keeps watching breathing until help arrives",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Kilalanin ang posibleng malubhang allergy at humingi agad ng emergency help. Sundin ang reseta at sanay na lokal na protocol. Bantayan ang paghinga habang naghihintay. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Recognize possible severe allergic reaction and activate emergency help immediately. Follow the person's prescribed emergency plan and trained/local protocol. Continue to observe breathing while help is coming. Lea avoids the shortcut."
+    "narration_fil": "Nakita ni Lea ang pantal sa buong katawan at narinig na hirap huminga ang adult matapos matusok ng bubuyog. Itinuring niya itong posibleng malubhang allergy at agad humingi ng emergency help. Nag-alok ang kaibigan ng lunas at tablet. Sinabi ni Lea na ang gamot ay ayon sa iniresetang emergency plan ng tao at sa sanay/lokal na protocol. Binabantayan niya ang paghinga hanggang dumating ang tulong.",
+    "narration_en": "Lea sees widespread hives and hears the adult say breathing is difficult after the bee sting. She treats this as a possible severe allergic reaction and calls emergency help right away. When a friend offers a remedy and a tablet, she says medicine follows the person's prescribed emergency plan and trained/local protocol. She keeps watching breathing until help arrives."
   },
   {
     "id": "slide-scope",
@@ -98,8 +98,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala…",
-    "display_en": "Do not treat breathing difficulty as a routine local sting, delay…",
+    "display_fil": "Hindi karaniwang tusok ang hirap sa paghinga\nHuwag maantala sa home remedy\nWalang gamot nang walang training at pahintulot",
+    "display_en": "Breathing difficulty is not a routine local sting\nDo not delay referral for home remedies\nNo drug outside training and authorization",
     "check": null,
     "narration_fil": "Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
     "narration_en": "Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Habang naghihintay, nag-alok ang kaibigan ng tablet mula sa kanyang bag. Ano ang sasabihin mo?",
+      "prompt_en": "While you wait, a friend offers the person a tablet from a bag. What do you say?",
       "options": [
         {
-          "fil": "Iulat ang hirap sa paghinga.",
-          "en": "Report breathing difficulty."
+          "fil": "Ibigay na; mas mabuti ang anumang allergy tablet kaysa maghintay.",
+          "en": "Give it now; any allergy tablet is better than waiting."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Ako na ang pipili ng mas matapang na gamot sa kit.",
+          "en": "Let me choose a stronger one from the kit instead."
         },
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Ang gamot ay ayon sa sariling reseta at protocol niya.",
+          "en": "Medicine follows the person's own plan and protocol."
         }
       ],
-      "correct_option_index": 0,
-      "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
-      "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization."
+      "correct_option_index": 2,
+      "feedback_fil": "1: Huwag magbigay ng gamot nang walang training at pahintulot. Bantayan ang paghinga habang paparating ang tulong. 2: Hindi pahintulot ang pagkakaroon ng gamot sa kit. Manatili sa training at protocol. 3: Tama. Sundin ang iniresetang emergency plan ng tao at ang sanay/lokal na protocol, at bantayan ang paghinga.",
+      "feedback_en": "1: Do not give a drug outside training and authorization. Keep watching breathing while help comes. 2: Having a medicine in the kit is not authorization to give it. Stay within training and protocol. 3: Correct. Follow the person's prescribed emergency plan and trained/local protocol, and keep watching breathing."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,10 +149,10 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nIhiwalay ang lokal at agarang senyales, humingi ng tulong sa…",
-    "display_en": "On Monday:\nSort local versus urgent signs, activate help for breathing…",
+    "display_fil": "Sa Lunes:\nKilalanin ang agarang senyales sa kaso\nHumingi ng tulong sa hirap sa paghinga\nIlahad ang saklaw ng gamot",
+    "display_en": "On Monday:\nRecognize the urgent signs in a case\nActivate help for breathing difficulty\nState medication boundaries",
     "check": null,
-    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.",
-    "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries."
+    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Kilalanin ang agarang senyales sa kaso, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.",
+    "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Recognize the urgent signs in the case, activate help for breathing difficulty and state medication boundaries."
   }
 ]

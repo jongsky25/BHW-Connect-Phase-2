@@ -4,16 +4,20 @@ Kathang-isip na kaso para sa pagsasanay.
 
 Dumating si BHW Amina sa bahay ni Rosa sa Cotabato. “Bakit pangalan na naman namin?” tanong ni Rosa. Nasa labas ang mga kapitbahay. May iskedyul si Amina, pero hindi pa niya alam ang alalahanin ni Rosa.
 
-## Card ng BHW
+## Card ng BHW (Amina)
 
-Isulat ang layunin, unang tanong, pahintulot na hihingin at contact para sa tulong sa sitwasyon ni Rosa.
+Isulat ang layunin, unang tanong, pahintulot na hihingin at contact para sa tulong sa sitwasyon ni Rosa. Pagkatapos, subukan ang plano kay Rosa. Pakinggan ang sagot niya bago magpaliwanag. Kung hindi angkop ang oras o lugar, mag-alok ng ibang pagkakataon.
 
-## Card ng residente
+## Card ni Rosa
 
-Amina: “Puwede po bang ipaliwanag ko ang pagbisita?” Rosa: “Naririnig ng kapitbahay.” Amina: “Mas gusto po ba ninyong mag-usap sa ibang oras?” Pinili ni Rosa ang hapon. Hindi isinulat ni Amina na “ayaw makipagtulungan.” Ang nalaman niya ay alalahanin sa pribadong usapan.
+Ikaw si Rosa. Dumating si BHW Amina sa bahay ninyo, dala ang kanyang iskedyul. Nasa labas ang mga kapitbahay at naririnig kayo. Pribadong usapan ang alalahanin mo; hindi mo tinatanggihan ang pagbisita.
 
-Panatilihin ang alalahanin pero gumamit ng sariling salita. Tumugon sa aktuwal na sinabi ng BHW. Maaaring magtanong o tumanggi sa inialok. Huwag magdagdag ng medical emergency sa pagsasanay.
+- Simulan sa: “Bakit pangalan na naman namin?”
+- Kung itanong ni Amina kung ano ang gusto mong linawin, sabihin: “Naririnig ng kapitbahay.”
+- Kung mag-alok siya ng ibang oras, puwede mong piliin ang hapon.
+- Tumugon lamang sa aktuwal na sinabi ni Amina. Maaaring magtanong o tumanggi sa inialok.
+- Huwag magdagdag ng medical emergency sa pagsasanay.
 
-## Tagamasid
+## Card ng tagamasid
 
-Magbigay ng isang tiyak na lakas at isang susubukang muli. Magpalit ng papel.
+Panoorin si Amina. Isulat ang eksaktong sinabi niya. Tingnan kung humingi siya ng pahintulot bago banggitin ang form. Magbigay ng isang tiyak na lakas at isang susubukang muli. Magpalit ng papel.

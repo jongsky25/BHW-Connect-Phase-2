@@ -1,57 +1,73 @@
 ## [purpose] Layunin
 
-20 minuto: pambungad 3; modelo 3; supervised case practice 8; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.
+Gamit ang simpleng prop, susuportahan ng BHW ang nasaktang braso sa kasalukuyang posisyon, ipapaliwanag kung bakit hindi ito gagalawin o itutuwid, at tatawag para sa referral.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 20 minutong harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 2, modelo 3, practice 10, feedback 3, checks 2. Mga 3 minuto ang pagbasa sa app.
+- **Kagamitan:** participant cards, worksheet at observation sheet ng 2.4.11; job aid na *Paunang lunas at tamang referral*; simpleng prop para sa suporta sa posisyon (tiniklop na tuwalya o binilot na diyaryo).
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin ang referral facility, transport at emergency contact. Isulat sa job aid.
+- **Hangganan:** suporta sa posisyon lamang. Huwag ituro ang splint, pagtutuwid, masahe o paglipat ng posibleng may spinal injury. Sa sanay o lokal na tagubilin ang immobilization at transport: *"Ikumpirma natin sa RHU o lokal na protocol."*
 
 ## [opening] Pambungad
 
-Nadapa ang siklista at masakit at deformed ang braso. Nakapagsasalita siya at gustong hilahin ang braso para maituwid.
+Sabihin: *"Nadapa ang siklista. Masakit at baluktot ang braso niya. Nakapagsasalita siya at nakikiusap, 'Hilahin mo para maituwid!' Ano ang sasabihin mo?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Bakit kaya gusto niyang ituwid?"*
+2. **"Gawin at sabihin."** Itanong: *"Ano ang itsura ng 'suporta sa kasalukuyang posisyon'?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapares bago ibunyag.
+4. **"Halimbawang sagot."** Ipakita si Lea na sinusuportahan ang braso sa prop. Itanong: *"Ano pa ang tiningnan ni Lea?"* (Iba pang agarang problema.)
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Alin dito ang nakita na ninyong ginagawa?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Aling pasilidad ang tumatanggap ng pinsala?"*
 
-Ganito ang ligtas na tugon sa kaso. Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa kasalukuyang posisyon at ayusin ang agarang pagsusuri. Sundin ang sanay na tagubilin sa immobilization at transport. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Hilahin para hindi na masakit."** Naiintindihan; masakit ang nararamdaman niya. Ituro ang scope slide: huwag ituwid ang deformity.
+- **"Ipahilot."** Igalang ang tradisyon. Sabi ng aralin, walang masahe; ang pasilidad ang susuri.
+- **"Suportahan kung nasaan at tumawag."** Tama. Itanong kung paano ipapaliwanag sa siklista ang *dahilan*.
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Dapat ayusin agad ang baluktot na buto."** Maraming pamilya ang nakakita na ng buto na inayos sa bahay. Sabi ng aralin, iwasan ang paggalaw at ayusin ang agarang pagsusuri. Itanong: *"Sa aralin, sino ang magpapasya sa immobilization?"* Hayaang sumagot ang grupo: sanay na staff, ayon sa lokal na tagubilin.
 
-Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Injury support station** (card: *Mga station sa pinsala gamit ang props*), tatluhan. Ang kapareha ang siklistang nakikiusap na hilahin ang braso. Susuportahan ng kalahok ang braso sa prop sa kasalukuyang posisyon, ipapaliwanag kung bakit hindi ito gagalawin o itutuwid, at tatawag sa kumpirmadong contact. Pupunan ng tagamasid ang worksheet. Dalawang round, isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: binilot na diyaryo bilang prop.
 
-1: Unahin ang kaligtasan at agarang tulong. / 2: Maaaring maantala ang kinakailangang assessment. / 3: Maaaring makapinsala ang shortcut: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.
+## [answer-key] Susi sa self-check
 
-1: Ang shortcut ay hindi ligtas: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan. / 2: Obserbahan ang gawa at ang tamang referral. / 3: Hindi batayan ang kuwento para sa sariling diagnosis.
+- **Check 1:** Tama: **"Suportahan ang braso sa posisyong nakita."**
+  - "Hilahin nang dahan-dahan ang…": Huwag ituwid ang deformity kahit hilingin ng tao.
+  - "Masahihin ang braso para…": Huwag itong masahihin.
+- **Check 2:** Tama: **"Tingnan ang iba pang agarang problema at tumawag."**
+  - "Itali ang patpat bilang…": Huwag gumamit ng improvised na splint na walang padding kung hindi sanay.
+  - "Sabihing bugbog lang iyon…": Hindi nagdi-diagnose ang BHW ng pinsala.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.
+Tingnan kung: Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.
 
-Kaya na: Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag. Nagawa nang walang paalala.
+- **Kaya na:** Walang paalala, sinusuportahan ang braso sa posisyong nakita, ipinapaliwanag nang hindi naninisi kung bakit hindi ito itutuwid, tinitingnan ang iba pang agarang problema at tumatawag sa kumpirmadong contact.
+- **Kailangan pa ng practice:** Sinusuportahan ang braso sa posisyong nakita, pero kailangan ng paalala sa pagpapaliwanag, sa pagtingin sa iba pang problema o sa pagtawag.
+- **Hindi pa:** Itinutuwid, minamasahe o sini-splint ang braso nang walang training, o hindi tumatawag para sa pagsusuri.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Tingnan: nananatili ba ang braso kung saan ito nakita, at nagpapaliwanag ba ang kalahok nang hindi sinisisi ang siklista? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** kadalasang sumuporta pero hindi tumawag. Retry action: *"Tumawag habang hawak mo."* Obserbahan muli ngayon.
+- **Hindi pa:** ipakita muli ang suporta sa posisyon; ulitin sa susunod na round, una sa mahinahong kapareha. Hindi staff rating ang peer feedback.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 45; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- Mungkahing hati ng authoring ang 20 minuto mula sa 8 oras ng F38.
+- Inatesta ng program owner ang clinical sign-off, 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

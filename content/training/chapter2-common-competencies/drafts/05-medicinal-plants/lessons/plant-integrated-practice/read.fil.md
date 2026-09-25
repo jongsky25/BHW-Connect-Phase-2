@@ -1,10 +1,10 @@
 ## [scene] Ang sitwasyon
 
-Tatlong residente ang nagtatanong tungkol sa Lagundi, Ampalaya at Bayabas. May ubo na may hirap sa paghinga, diabetes medicine at sugat na may nana sa tatlong card.
+Tatlong residente ang nagtatanong tungkol sa halaman. Nagtanong si Ben tungkol sa Lagundi at hirap siyang huminga. Nagtanong si Joel tungkol sa Ampalaya at umiinom siya ng diabetes medicine. Nagtanong si Mara tungkol sa Bayabas at may sugat siyang may nana.
 
 ## [action] Gawin at sabihin
 
-Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.
+Itugma ang bawat halaman sa botanical name at nakalistang gamit. Agad i-refer ang hirap sa paghinga at ang infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, pagkilala lamang ang ipakita, gamit ang dry props; walang ibibigay na produkto.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.
+Binasa ng BHW ang bawat kasalukuyang card at pinakinggan ang bawat residente. Inuna niyang i-refer ang hirap sa paghinga ni Ben at ang sugat ni Mara na may nana. Kay Joel, sinabi niyang hindi ipapalit ang Ampalaya sa diabetes medicine. Dinala niya ang tanong ni Joel sa clinician nito. Sa bawat worksheet, minarkahan niyang kulang ang local authorization.
 
 ## [scope] Saklaw at paghingi ng tulong
 

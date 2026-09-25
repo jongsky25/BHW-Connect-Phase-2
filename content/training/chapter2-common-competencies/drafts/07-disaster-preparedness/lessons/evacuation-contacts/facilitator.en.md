@@ -1,57 +1,70 @@
 ## [purpose] Purpose
 
-10 minutes: opening 1; model 1; triad/tabletop practice 4; feedback and retry 2; debrief 1; next step 1. This is an orientation station, not a full field drill or proof of competence. Arrange additional supervised practice.
-
-In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.
+Using a mock advisory, the BHW tells a family the warning's source and time, what action is confirmed, and which contact they will verify.
 
 ## [time-materials] Time and materials
 
-Six 10-minute introductory DRRM stations total 60 minutes. This is a proposed share of F38’s combined two hours for Community Mobilization and DRRM; the other proposed 60 minutes are in Chapter 2.6. F42–43 describe DRRM content but do not prescribe separate minutes. Use locally verified contacts, routes, roles and plans. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **10 minutes face-to-face** (share of the 60-minute subchapter plan): opening 1, model 1, practice 4, feedback and retry 2, debrief 1, next step 1. Read in the app: about 3 minutes.
+- **Materials:** 2.7.2 cards, worksheet and observation sheet per triad; job aid; mock advisory (PRACTICE, with source and time); old directory prop.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm for debrief: the current official warning source, who issues evacuation orders, the route and accessible shelter, and the barangay DRRM focal person and backup.
+- Scope: never invent an order, hotline or route; the mock advisory is practice only.
 
 ## [opening] Opening
 
-Heavy rain is forecast. Nena’s family asks when and where to evacuate, but the printed directory is old.
+Hold up the old directory. Ask: *"Nena's family asks when and where to go. What do we say?"* Take two answers first.
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Steps follow the Read and slide headings.
 
-## [expected-answers] Expected response
+1. **The situation.** Ask: *"What do we know about this directory?"*
+2. **What to do and say.** Show the mock advisory. Ask: *"Where did this come from, and when?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model it: check the advisory date, call the official contact, say what is confirmed and what is waiting. Run the practice.
+5. **Scope and support.** Ask: *"What three things must a BHW never make up?"*
+6. **Apply it to the situation.** Self-check 2 — let pairs answer before revealing.
+7. **On Monday, try this.** Ask: *"Who will confirm your directory, and when?"*
 
-The BHW checks the advisory date and calls the official contact. They state what is confirmed and what still awaits an answer.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Go to the covered court, like last year."** Ask: *"Is that confirmed now? Who can tell us?"*
+- **They read out the old hotline.** Say: *"The number may have changed. Let us mark it 'to verify'."*
+- **"I will confirm and come back to you."** Praise this. It is part of the skill.
 
-Uses an unverified plan or exceeds the role.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"In an emergency any information is better than none."** It comes from care: BHWs are asked first and want to help fast. Do not correct the person; return to Nena: *"Her directory is old. What if the number is wrong, or the route is flooded?"* The check feedback says old information may be wrong.
 
-Using a mock advisory, state source/time, confirmed action and contact to verify. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Evacuation communication drill.** Triads: learner, partner (Nena's family asking when and where), observer. In 4 minutes the learner states the source and time, what is confirmed, and the contact to verify, and fills the worksheet. Observer notes: actual words, one strength, one next action. Retry 2 minutes; rotate roles. Fictional details only. Low resource: read the advisory aloud. Solo: worksheet now, staff observation later.
 
-1: Information may be old or wrong. / 2: This ties action to a verified plan and scope. / 3: The correct authority and local context are needed.
+## [answer-key] Self-check answer key
 
-1: This may harm or delay help. / 2: Accountability and continuity are lost. / 3: This establishes clear ownership and next action.
+- **Check 1.** Correct: **"Check the official update and local route before advising"**. "Read them the hotline…": the directory is old; "Tell them to go…": last year's site may not be confirmed now.
+- **Check 2.** Correct: **"Say what is confirmed, its source and time, and what is pending"**. "Treat the old directory…": old information may be wrong, and wrong information can delay help; "Announce an evacuation order…": do not invent an evacuation order.
 
-## [observe] Observe
+## [observe] What to observe
 
-In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.
+Indicator: In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.
 
-Ready: Completes action, boundary, handover and follow-up without prompts.
+- **Kaya na:** States the advisory source and time, keeps confirmed apart from pending, and names the contact to verify, without prompts.
+- **Kailangan pa ng practice:** Gives the confirmed action but needs a prompt to state the source and time or the contact to verify.
+- **Hindi pa:** Relays the old directory, an unconfirmed route or a self-made evacuation order as fact.
 
-Needs practice: Chooses the first action but needs a prompt for verification or follow-up.
+Look for source and time said aloud, and confirmed kept apart from still waiting. A correct self-check is not evidence of the skill.
 
-Not yet: Uses an unverified plan or exceeds the role.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** re-model only the "confirmed / still waiting" sentence; retry now with the partner asking about the route.
+- **Hindi pa:** replay the worked example; give one question only ("When do we go?"); pair with a peer rated Kaya na.
+- Re-observe at the next supervised practice or transfer task with a changed advisory. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 54; Facilitator Guide PDF pp. 38, 42–43; Day 1 Part 2 presentation PDF pp. 99–102.
+- F38 gives two hours shared with 2.6; these 10 minutes are an authoring distribution, not source hours.
+- Local DRRM and clinical review approved by program-owner attestation, 25 Sep 2026; no reviewer names recorded. Local protocol wins.

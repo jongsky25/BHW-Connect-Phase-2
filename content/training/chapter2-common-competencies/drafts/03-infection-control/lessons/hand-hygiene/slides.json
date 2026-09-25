@@ -40,8 +40,8 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "May nakikitang dumi sa kamay ni Lea.\nAling paraan ang angkop?",
+    "display_en": "Lea's hands are visibly dirty.\nWhich method fits?",
     "check": {
       "prompt_fil": "May nakikitang dumi sa kamay. Alin ang angkop?",
       "prompt_en": "Hands are visibly dirty. Which option fits?",
@@ -55,8 +55,8 @@
           "en": "A quick rinse with water alone."
         },
         {
-          "fil": "Sabon at tubig.",
-          "en": "Soap and water."
+          "fil": "Sabon at tubig, saka patuyuin.",
+          "en": "Wash with soap and water, then dry."
         }
       ],
       "correct_option_index": 2,
@@ -109,8 +109,8 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "May handrub na; basa pa ang kamay.\nAno ang kasunod?",
+    "display_en": "Handrub applied; hands still wet.\nWhat comes next?",
     "check": {
       "prompt_fil": "Natatapos ang handrub pero basa pa. Ano ang gagawin?",
       "prompt_en": "Handrub has been applied but hands are still wet. What next?",

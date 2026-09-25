@@ -1,4 +1,4 @@
-# 2.7.5 — Pagsasanay: essential health packages
+# 2.7.5 — Pagsasanay: Iugnay ang tao sa mahalagang serbisyo
 
 Kathang-isip na detalye lamang.
 

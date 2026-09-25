@@ -10,7 +10,7 @@ Complete four rows: source, environment, work practices and PPE. Add a proposal 
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You play a co-worker at the crowded BHS queue. Start by saying: "Let's just hand out the masks." As the learner fills each row, ask: "Who confirms this?" You may disagree once if a row has no owner. Do not decide ventilation, isolation or care changes yourself, and do not add symptoms or diagnoses.
 
 ## Observer card
 

@@ -1,10 +1,10 @@
 ## [scene] Ang sitwasyon
 
-May bagong paninikip ng dibdib at namumutla ang adult. Nag-alok ang kapitbahay ng tablet mula sa lumang presentation.
+May bagong paninikip ng dibdib at namumutla ang adult. Nag-aalok ang kapitbahay ng sarili niyang tablet.
 
 ## [action] Gawin at sabihin
 
-Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol.
+Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol at kwalipikadong payo.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol. Iniiwasan ni Lea ang shortcut.
+Pinagpapahinga ni Lea ang tao at agad tumatawag sa emergency contact. Iniuulat niya kung kailan nagsimula ang paninikip, ang nakikitang sintomas, at alam na gamot o allergy. Nag-alok ng tablet ang kapitbahay. Sabi ni Lea: "Salamat po, pero ayon sa lokal na protocol at kwalipikadong payo ang gamot." Sinusunod niya ang tagubilin ng responder.
 
 ## [scope] Saklaw at paghingi ng tulong
 

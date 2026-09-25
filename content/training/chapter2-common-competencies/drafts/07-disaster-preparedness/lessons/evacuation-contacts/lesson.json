@@ -21,8 +21,8 @@
         "c2.drrm.evacuation-contacts.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: evacuation contacts",
-      "takeaway_en": "Case: evacuation contacts",
+      "takeaway_fil": "Paparating ang malakas na ulan, nagtatanong ang pamilya ni Nena, at luma ang directory.",
+      "takeaway_en": "Heavy rain is coming, Nena's family asks when and where, and the directory is old.",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.drrm.evacuation-contacts.risk"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
-      "takeaway_en": "This ties action to a verified plan and scope.",
+      "takeaway_fil": "Suriin ang kasalukuyang opisyal na update at ruta bago magpayo.",
+      "takeaway_en": "Check the current official update and route before advising.",
       "check": {
-        "prompt_fil": "Ano ang unang ligtas na hakbang?",
-        "prompt_en": "What is the first safe step?",
+        "prompt_fil": "Tanong ng pamilya ni Nena kung kailan at saan lilikas. Ano ang una mong gagawin?",
+        "prompt_en": "Nena's family asks when and where to evacuate. What do you do first?",
         "options": [
           {
-            "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
-            "en": "Assume the old information is still correct and immediately relay it to everyone."
+            "fil": "Basahin sa kanila ang hotline na nasa lumang directory ng barangay.",
+            "en": "Read them the hotline printed in the old barangay directory."
           },
           {
             "fil": "Suriin ang opisyal na update at lokal na ruta bago magpayo.",
             "en": "Check the official update and local route before advising."
           },
           {
-            "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
-            "en": "Decide alone without local confirmation or an official warning."
+            "fil": "Sabihing pumunta agad sa evacuation site na ginamit noong nakaraang taon.",
+            "en": "Tell them to go to last year's evacuation site right away."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
-        "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+        "feedback_fil": "1: Luma ang directory; maaaring nagbago na ang numero. 2: Dapat nakabatay ang payo sa kasalukuyang opisyal na babala at kumpirmadong ruta. 3: Maaaring hindi na kumpirmado ang dating site; itanong sa DRRM focal person.",
+        "feedback_en": "1: The directory is old; the number may have changed. 2: Advice should rest on the current official warning and a confirmed route. 3: Last year's site may not be confirmed now; ask the DRRM focal person."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.drrm.evacuation-contacts.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.",
-      "takeaway_en": "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.",
+      "takeaway_fil": "Suriin ang petsa ng advisory, tawagan ang opisyal na contact, at sabihin ang kumpirmado at hinihintay pa.",
+      "takeaway_en": "Check the advisory date, call the official contact, and say what is confirmed and pending.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.drrm.evacuation-contacts.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Huwag gumawa ng sariling order, hotline o ruta; sundin ang lokal na awtoridad.",
+      "takeaway_en": "Do not invent an order, hotline or route; follow local authority.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.drrm.evacuation-contacts.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-      "takeaway_en": "This establishes clear ownership and next action.",
+      "takeaway_fil": "Ipaabot lamang ang beripikado, kasama ang source at oras.",
+      "takeaway_en": "Relay only what is verified, with its source and time.",
       "check": {
-        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-        "prompt_en": "What is the safe next step?",
+        "prompt_fil": "Bahagi pa lang ng advisory ang kumpirmado. Ano ang sasabihin mo sa pamilya ni Nena?",
+        "prompt_en": "Only part of the advisory is confirmed. What do you tell Nena's family?",
         "options": [
           {
-            "fil": "Gamitin ang lumang directory bilang tiyak na kasalukuyan. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-            "en": "Treat an old directory as current. Do not ask the authority or the affected person."
+            "fil": "Ituring na kasalukuyan ang lumang directory at ibigay ang mga numero nito.",
+            "en": "Treat the old directory as current and give them its numbers."
           },
           {
-            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+            "fil": "Sabihin ang kumpirmado, ang source at oras nito, at ang hinihintay pa.",
+            "en": "Say what is confirmed, its source and time, and what is pending."
           },
           {
-            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-            "en": "Inform the lead, record handover, and follow up."
+            "fil": "Magpahayag ng sariling evacuation order para maaga silang umalis.",
+            "en": "Announce an evacuation order yourself so that they leave early."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring mali ang lumang impormasyon, at maaaring maantala nito ang tulong. 2: Ipaabot lamang ang beripikadong mensahe, kasama ang oras at source. 3: Huwag gumawa ng sariling evacuation order; sundin ang lokal na awtoridad.",
+        "feedback_en": "1: Old information may be wrong, and wrong information can delay help. 2: Relay only the verified message, with its time and source. 3: Do not invent an evacuation order; follow the local authority."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.drrm.evacuation-contacts.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Ipa-verify ang directory, warning source at ruta; itala ang petsa at nagkumpirma.",
+      "takeaway_en": "Verify the directory, warning source and route; record date and confirmer.",
       "check": null
     }
   ],

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga. |
+| Kaya na | Inilalarawan ang paghinga ni Aya sa simpleng salita, itinatanong ang danger signs at ginagamit ang kumpirmadong daan sa agarang pagsusuri nang hindi nangangakong puwedeng maghintay, nang walang paalala. |
+| Kailangan pa ng practice | Agad nagre-refer, pero kailangan ng paalala na itanong ang danger signs o sagutin ang hiling ng pamilyang maghintay. |
+| Hindi pa | Pumapayag maghintay hanggang bukas, nagpapasya batay sa lumang bilang ng paghinga o temperatura, o nagbibigay ng diagnosis. |
 
 Aktuwal na nakita/narinig: ____
 

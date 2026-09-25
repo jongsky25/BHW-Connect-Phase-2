@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Kumpleto ang mga hanay, malinaw ang kukumpirma at naihihiwalay ang specialist na gawain nang walang paalala. |
-| Kailangan practice | May lokasyon at contact pero kailangang idagdag ang bersiyon o training gap matapos ang paalala. |
+| Kailangan pa ng practice | May lokasyon at contact pero kailangang idagdag ang bersiyon o training gap matapos ang paalala. |
 | Hindi pa | Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan. |
 
 Aktuwal na nakita/narinig: ____

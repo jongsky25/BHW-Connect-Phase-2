@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure. |
+| Kaya na | Clears the space, states the start time, calls for help and kindly declines restraint and the spoon, without prompting. |
+| Kailangan pa ng practice | Keeps the space safe and declines the spoon but needs a prompt to note the start time or to call for help. |
+| Hindi pa | Allows restraint or the spoon, gives a drink before full alertness, or relies on cold-water wiping instead of calling. |
 
 Evidence observed: ____
 

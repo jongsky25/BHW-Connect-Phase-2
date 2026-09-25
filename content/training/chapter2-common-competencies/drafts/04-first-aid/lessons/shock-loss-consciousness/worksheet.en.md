@@ -1,4 +1,4 @@
-# 2.4.6 — First-aid practice: shock loss consciousness
+# 2.4.6 — Recognize shock and loss of consciousness
 
 Use fictional details only.
 

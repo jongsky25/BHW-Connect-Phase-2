@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Observe breathing difficulty and ask about general danger signs. Arrange prompt clinical assessment when breathing is difficult. A trained assessor uses the current age-specific chart for respiratory rate; report observations without choosing a diagnosis. Lea avoids the shortcut.
+Aya appears to struggle for breath, and her family asks to wait until tomorrow. The BHW describes the breathing in plain words and asks about danger signs. She tells the family she cannot promise it can wait and arranges prompt assessment. She reports what she saw and leaves the rate chart and diagnosis to the trained assessor.
 
 ## [scope] Scope and support
 

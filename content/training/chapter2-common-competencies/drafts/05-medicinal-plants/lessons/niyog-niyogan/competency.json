@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Para sa Niyog-niyogan, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
       "observable_en": "For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
-      "not_yet_fil": "Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.",
-      "not_yet_en": "Guesses identity, prescribes a dose or replaces treatment.",
+      "not_yet_fil": "Itinuturing na Niyog-niyogan ang halaman ng kapitbahay o nagbabanggit ng dami ng buto para sa bata.",
+      "not_yet_en": "Treats the neighbor's plant as Niyog-niyogan or names a seed amount for the child.",
       "levels": {
-        "kaya_na_fil": "Tama ang Niyog-niyogan, Quisqualis indica, buto, gamit at referral nang walang paalala.",
-        "kaya_na_en": "Correctly identifies Niyog-niyogan, Quisqualis indica, seeds, use and referral without prompts.",
-        "kailangan_practice_fil": "Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.",
-        "kailangan_practice_en": "Identifies the plant but needs a prompt about limits or referral.",
-        "hindi_pa_fil": "Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.",
-        "hindi_pa_en": "Guesses identity, prescribes a dose or replaces treatment."
+        "kaya_na_fil": "Itinutugma ang Quisqualis indica at buto, sinasabing hindi pa kumpirmado ang bulate at ipinapasuri ang bata sa health center nang walang paalala.",
+        "kaya_na_en": "Matches Quisqualis indica and seeds, says worms are unconfirmed and refers the child to the health center without prompts.",
+        "kailangan_practice_fil": "Tama ang card ngunit kailangan ng paalala para sabihing hindi pa kumpirmado ang bulate o para ipasuri ang bata.",
+        "kailangan_practice_en": "Matches the card but needs a prompt to say worms are unconfirmed or to refer the child.",
+        "hindi_pa_fil": "Itinuturing na Niyog-niyogan ang halaman ng kapitbahay o nagbabanggit ng dami ng buto para sa bata.",
+        "hindi_pa_en": "Treats the neighbor's plant as Niyog-niyogan or names a seed amount for the child."
       }
     }
   ]

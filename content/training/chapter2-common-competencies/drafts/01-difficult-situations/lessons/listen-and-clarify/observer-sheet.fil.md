@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____  Lugar: role-play
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Natukoy ang dalawang pagbisita at hindi malinaw na contact; kinumpirma kay Liza nang walang hula o paalala. |
-| Kailangan practice | Nakinig nang mahinahon pero hindi ipinasuri ang buod; naidagdag ito matapos ang isang paalala. |
+| Kailangan pa ng practice | Nakinig nang mahinahon pero hindi ipinasuri ang buod; naidagdag ito matapos ang isang paalala. |
 | Hindi pa | Sumasabat, sinisisi si Liza o nagbibigay ng pangako bago marinig ang alalahanin. |
 
 Aktuwal na nakita/narinig: ____

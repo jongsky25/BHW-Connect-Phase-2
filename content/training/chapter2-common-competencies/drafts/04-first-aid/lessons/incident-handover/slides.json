@@ -10,10 +10,10 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: Pagkatapos ng pagkadapa, dumating ang health worker",
+    "display_fil": "Kaso: Pagkatapos ng pagkahulog, dumating ang health worker",
     "display_en": "Case: After a fall, another health worker arrives",
     "check": null,
-    "narration_fil": "Pagkatapos ng pagkadapa, dumating ang health worker. Hawak ni BHW Lea ang lugar, oras, nakita at natawag na tulong.",
+    "narration_fil": "Pagkatapos ng pagkahulog, dumating ang isa pang health worker. Hawak ni BHW Lea ang facts sa lugar, oras, nakitang kondisyon at natawag na tulong.",
     "narration_en": "After a fall, another health worker arrives. BHW Lea has the scene facts, timeline, observed condition and help already called."
   },
   {
@@ -29,8 +29,8 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Sabihin ang sitwasyon, tugon at paghinga, oras, ginawa, pagbabago…\nKumpirmahing narinig ang agarang alalahanin at itala lamang ang…",
-    "display_en": "State the situation, observed response and breathing, key…\nConfirm the receiver heard the urgent concern and document only…",
+    "display_fil": "Sitwasyon, nakitang tugon at paghinga\nOras, ginawa, pagbabago at kailangang tulong\nKumpirmahing narinig ang agarang alalahanin\nItala lamang ang kinakailangang facts",
+    "display_en": "Situation, observed response and breathing\nKey timeline, actions taken, changes, support needed\nConfirm the receiver heard the urgent concern\nDocument only factual, necessary details",
     "check": null,
     "narration_fil": "Sabihin ang sitwasyon, tugon at paghinga, oras, ginawa, pagbabago at kailangang tulong. Kumpirmahing narinig ang agarang alalahanin at itala lamang ang kinakailangang facts.",
     "narration_en": "State the situation, observed response and breathing, key timeline, actions taken, changes and support needed. Confirm the receiver heard the urgent concern and document only factual, necessary details."
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Kararating lang ng health worker. Ano ang una mong sasabihin?",
+      "prompt_en": "The health worker has just arrived. What do you say first?",
       "options": [
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Ang sitwasyon at ang oras.",
+          "en": "The situation and the time."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Ang hula mo kung ano ang nabali.",
+          "en": "Your guess about what is broken."
         },
         {
-          "fil": "Ibigay ang sitwasyon at oras.",
-          "en": "State the situation and time."
+          "fil": "Ang buong kuwento mula sa simula.",
+          "en": "The whole story from the beginning."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover. 3: Unahin ang kaligtasan at agarang tulong.",
-      "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover. 3: Prioritize safety and timely help."
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tama. Unahin ang sitwasyon at oras, saka ang tugon, paghinga at ginawa. 2: Huwag magdagdag ng hinulaang diagnosis. Iulat ang nakita mo. 3: Kailangan muna ng tatanggap ang agarang facts ayon sa ayos ng job aid, hindi ang buong kuwento.",
+      "feedback_en": "1: Correct. Start with the situation and the time, then the response, breathing and actions. 2: Do not add a guessed diagnosis. Report what you saw. 3: The receiver needs the urgent facts first, in the job aid order, not the whole story."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Kumpirmahing narinig ang agarang alalahanin at itala lamang ang…",
-    "display_en": "Confirm the receiver heard the urgent concern and document only…",
+    "display_fil": "Ano ang nangyari, at kailan\nNakitang tugon at paghinga; ginawa; natawag na tulong\nWalang hinulaang diagnosis\nPinakukumpirma ni Lea ang susunod na hakbang",
+    "display_en": "What happened, and when\nResponse and breathing seen; actions; help called\nNo guessed diagnosis\nLea asks the receiver to confirm the next action",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Sabihin ang sitwasyon, tugon at paghinga, oras, ginawa, pagbabago at kailangang tulong. Kumpirmahing narinig ang agarang alalahanin at itala lamang ang kinakailangang facts. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. State the situation, observed response and breathing, key timeline, actions taken, changes and support needed. Confirm the receiver heard the urgent concern and document only factual, necessary details. Lea avoids the shortcut."
+    "narration_fil": "Pagdating ng health worker, sinasabi ni Lea ang nangyari at kailan. Iniuulat niya ang nakitang tugon at paghinga, ang ginawa, at ang natawag na tulong. Sinasabi rin niya ang pagbabago at kailangang tulong. Hindi siya nanghuhula ng diagnosis. Hinihiling niyang kumpirmahin ng tatanggap ang agarang alalahanin at susunod na hakbang. Itinatala lamang niya ang kinakailangang facts.",
+    "narration_en": "When the health worker arrives, Lea says what happened and when. She reports the response and breathing she observed, what she has done, the help already called, any changes, and the support needed. She gives no guess about the injury. She asks the receiver to confirm the urgent concern and the next action, and records only the facts needed."
   },
   {
     "id": "slide-scope",
@@ -98,8 +98,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o…",
-    "display_en": "Do not add a guessed diagnosis, omit the time or actions, or…",
+    "display_fil": "Huwag magdagdag ng hinulaang diagnosis\nHuwag kaligtaan ang oras o ginawa\nHuwag ibahagi ang detalye sa labas ng handover",
+    "display_en": "Do not add a guessed diagnosis\nDo not omit the time or actions\nDo not share identifiable details outside the care handover",
     "check": null,
     "narration_fil": "Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
     "narration_en": "Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Paano dapat tapusin ang handover mo sa practice?",
+      "prompt_en": "How should your practice handover end?",
       "options": [
         {
-          "fil": "Iulat ang nakita at ginawa.",
-          "en": "Report observations and actions."
+          "fil": "Ikuwento rin sa mga nakikiusyoso sa paligid ang lahat ng iniulat.",
+          "en": "By telling the bystanders everything you just reported."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Sabihin ang sarili mong hula kung bakit siya nahulog.",
+          "en": "With your own guess about what caused the fall."
         },
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Hilinging kumpirmahin ng tatanggap ang susunod na hakbang.",
+          "en": "By asking the receiver to confirm the next step."
         }
       ],
-      "correct_option_index": 0,
-      "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
-      "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover."
+      "correct_option_index": 2,
+      "feedback_fil": "1: Huwag ibahagi ang detalye sa labas ng handover. 2: Hindi fact ang hula sa sanhi. Iulat lamang ang nakita at ginawa mo. 3: Tama. Tinatapos ang handover sa paghiling na kumpirmahin ng tatanggap ang susunod na hakbang.",
+      "feedback_en": "1: Do not share identifiable details outside the care handover. 2: A guessed cause is not a fact. Report only what you saw and did. 3: Correct. Inviting the receiver to confirm the next action closes the handover."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,10 +149,10 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nMagbigay ng maikling factual na handover at hilinging kumpirmahin…",
-    "display_en": "On Monday:\nDeliver a timed, factual handover and invite the receiving worker…",
+    "display_fil": "Sa Lunes:\nMagbigay ng factual na handover na may oras\nHilinging kumpirmahin ng tatanggap ang susunod na hakbang",
+    "display_en": "On Monday:\nGive a timed, factual handover\nAsk the receiver to confirm the next action",
     "check": null,
-    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.",
+    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Magbigay ng factual na handover na may oras at hilinging kumpirmahin ng tatanggap ang susunod na hakbang.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Deliver a timed, factual handover and invite the receiving worker to confirm the next action."
   }
 ]

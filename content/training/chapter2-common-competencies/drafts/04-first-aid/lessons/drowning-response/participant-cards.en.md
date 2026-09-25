@@ -1,4 +1,4 @@
-# 2.4.8 — First-aid practice: drowning response
+# 2.4.8 — Respond safely to drowning
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,11 +6,11 @@ A person is struggling beyond the edge of a flooded canal. The BHW is on dry gro
 
 ## Learner card
 
-Choose a safe shore response, activate trained rescue and state the need for medical assessment.
+Stay behind the tape line (the canal edge). Call trained rescue, give the location and say the person will need medical assessment. Do not enter the water.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You are a bystander at the canal. Urge the learner to jump in: "Hurry, go in and get them!" Push once more if they refuse. Do not add injuries or other clinical details.
 
 ## Observer card
 

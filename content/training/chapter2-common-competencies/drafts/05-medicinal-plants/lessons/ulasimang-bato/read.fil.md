@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Ulasimang bato / pansit-pansitan at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri ang dahilan ng sakit at ang kasalukuyang gamot sa health center.
+Narinig ng BHW ang sinabi ng kapitbahay tungkol sa gout. Hindi niya tinawag na gout ang sakit sa kasukasuan ni Carlo. Itinuro niya ang Peperomia pellucida at "Bahagi: talbos" sa card. Itinanong niya ang kasalukuyang gamot ni Carlo at sinabing huwag itong itigil. Ipinasuri niya sa health center ang sakit at ang gamot.
 
 ## [scope] Saklaw at paghingi ng tulong
 

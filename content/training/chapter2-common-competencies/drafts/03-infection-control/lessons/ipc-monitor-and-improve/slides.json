@@ -42,8 +42,8 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Nagtatala si Aya ng observation.\nAling entry ang wasto?",
+    "display_en": "Aya writes an observation.\nWhich entry is appropriate?",
     "check": {
       "prompt_fil": "Alin ang wastong observation entry?",
       "prompt_en": "Which observation entry is appropriate?",
@@ -110,8 +110,8 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Follow-up: wala pa ring sabon.\nAno ang itatala ni Aya?",
+    "display_en": "Follow-up: still no soap.\nWhat should Aya record?",
     "check": {
       "prompt_fil": "Hindi pa na-refill ang sabon sa follow-up. Ano ang dapat itala?",
       "prompt_en": "Soap has not been refilled at follow-up. What should be recorded?",
@@ -125,8 +125,8 @@
           "en": "There is no problem because everyone received training."
         },
         {
-          "fil": "Hindi pa naayos; muling ipaalam.",
-          "en": "Unresolved; report it again."
+          "fil": "Itala na hindi pa naayos at muling ipaalam.",
+          "en": "Record it as unresolved and report it again."
         }
       ],
       "correct_option_index": 2,

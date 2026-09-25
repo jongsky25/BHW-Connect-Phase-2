@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Lagundi, Vitex negundo, dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Naitutugma ang Vitex negundo, dahon at nakalistang gamit, at iniuugnay agad si Ben at iniuulat ang hirap sa paghinga nang walang paalala. |
+| Kailangan pa ng practice | Naitutugma ang card ngunit kailangan ng paalala na hindi makapaghihintay ang hirap sa paghinga o na dapat itong iulat. |
+| Hindi pa | Hinahayaang uminom muna si Ben ng pinagpakuluan, o nagbibigay ng dose mula sa lumang slide. |
 
 Aktuwal na nakita/narinig: ____
 

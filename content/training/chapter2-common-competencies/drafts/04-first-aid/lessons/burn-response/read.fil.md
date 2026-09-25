@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Lumayo sa init nang ligtas. Palamigin ang paso sa malamig na dumadaloy na tubig ayon sa kasalukuyang gabay. Protektahan sa dumi. Ipasuri kung malawak o delikado ang lokasyon. Huwag alisin ang dumikit na damit. Iniiwasan ni Lea ang shortcut.
+Inilalayo ni Lea sa init ang kusinero nang ligtas. Sabi niya: "Salamat po, pero walang yelo. Malamig na dumadaloy na tubig ang gagamitin, ayon sa kasalukuyang gabay." Iniiwan niya ang dumikit na manggas at pinoprotektahan ang paso sa dumi. Hindi niya sinasabing ligtas ito sa bahay. Ipinasusuri niya kung malawak o delikado ang lokasyon.
 
 ## [scope] Saklaw at paghingi ng tulong
 

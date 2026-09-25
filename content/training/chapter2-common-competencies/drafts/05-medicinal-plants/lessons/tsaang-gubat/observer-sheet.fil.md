@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Tsaang gubat, Carmona retusa, dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Itinutugma ang Carmona retusa at dahon, walang binabanggit na dami at iniuugnay sa health professional ang lumalalang sakit ni Rosa nang walang paalala. |
+| Kailangan pa ng practice | Tama ang card ngunit kailangan ng paalala para kumilos sa lumalalang sakit ni Rosa. |
+| Hindi pa | Kinokopya ang dose mula sa lumang table o sinasabing ligtas inumin ni Rosa ang Tsaang gubat. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Protect your hands and apply firm direct pressure with clean material. Activate urgent help for severe or persistent bleeding. Add material if soaked while maintaining pressure; ask trained staff about further measures and wound follow-up. Lea avoids the shortcut.
+Lea puts on gloves and presses firmly on the cut with a clean cloth. The cloth soaks through and a bystander wants to wipe it away; Lea keeps the first cloth in place and adds another on top without stopping the pressure. Because the bleeding persists, she has someone call urgent help. She then reports where the cut is, what was done and the time.
 
 ## [scope] Scope and support
 

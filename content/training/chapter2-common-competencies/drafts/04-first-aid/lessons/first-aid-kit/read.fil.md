@@ -4,7 +4,7 @@ May lumang inventory sheet, expired item at bukas na pakete sa BHS kit. May apru
 
 ## [action] Gawin at sabihin
 
-Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit. Ihiwalay ang laman sa pahintulot gumamit.
+Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit nang hindi ito ginagamit. Ihiwalay ang laman sa pahintulot gumamit ng gamot o device.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit. Ihiwalay ang laman sa pahintulot gumamit. Iniiwasan ni Lea ang shortcut.
+Isinasantabi ni Lea ang lumang inventory sheet at ginagamit ang kasalukuyang lokal na listahan. Sa bawat gamit, itinatala niya ang dami, selyo, expiry at imbakan. Minamarkahan niya ang expired item at ang bukas na pakete. Inihihiwalay niya ang dalawa nang hindi ginagamit at iniuulat sa responsable sa palit. Hindi pahintulot gumamit ang pagkakaroon nito sa kit.
 
 ## [scope] Saklaw at paghingi ng tulong
 

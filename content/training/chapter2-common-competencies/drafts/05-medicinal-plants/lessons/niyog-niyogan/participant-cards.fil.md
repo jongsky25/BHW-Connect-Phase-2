@@ -2,15 +2,15 @@
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
-May batang nangangati at pinaghihinalaang may bulate. Gustong pumitas ng buto ng Niyog-niyogan ang kapitbahay.
+May batang pinaghihinalaang may bulate. Gustong pumitas ng buto ng Niyog-niyogan ang kapitbahay.
 
 ## Card ng kalahok
 
-Itugma ang dalawang Niyog-niyogan card; piliin ang Quisqualis indica, buto, gamit at ligtas na susunod na hakbang.
+Ihambing ang dalawang Niyog-niyogan card at punan ang worksheet. Sabihin sa magulang ang alam, ang hindi alam at kung sino ang kokonsultahin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang magulang ng bata. Sabihing gustong pumitas ngayon ng kapitbahay ng buto ng Niyog-niyogan, at itanong kung puwede ang kaunting buto. Huwag magdagdag ng sintomas, dami o ibang detalye.
 
 ## Card ng tagamasid
 

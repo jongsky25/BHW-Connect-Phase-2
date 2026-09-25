@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Niyog-niyogan, Quisqualis indica, seeds, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Quisqualis indica and seeds, says worms are unconfirmed and refers the child to the health center without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to say worms are unconfirmed or to refer the child. |
+| Hindi pa | Treats the neighbor's plant as Niyog-niyogan or names a seed amount for the child. |
 
 Evidence observed: ____
 

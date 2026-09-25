@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Move away from the heat source safely. Cool the burn with cool running water according to current guidance, protect from contamination and seek assessment for concerning extent or location. Leave stuck clothing in place. Lea avoids the shortcut.
+Lea moves the cook safely away from the heat. She says, "Thank you, but no ice. We cool it with cool running water, as current guidance says." She leaves the stuck sleeve in place and protects the burn from dirt. She does not call it safe for home treatment, and she seeks assessment if its extent or location is concerning.
 
 ## [scope] Scope and support
 

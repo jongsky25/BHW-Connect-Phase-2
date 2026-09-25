@@ -6,11 +6,11 @@ Liza has high cholesterol. She eats garlic and wants to stop her prescribed medi
 
 ## Learner card
 
-Match two Bawang cards; choose Allium sativum, bulb, use and safe next step.
+Fill the worksheet from two Bawang cards: botanical name, part and listed use. Tell Liza what is known and unknown, ask about her other medicines and symptoms, and return the medicine decision to her clinician.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Liza. Say you have high cholesterol, eat garlic and want to stop your prescribed medicine. Ask: “How much garlic should I eat instead?” Answer questions briefly. Do not add symptoms, medicines or personal details beyond the case.
 
 ## Observer card
 

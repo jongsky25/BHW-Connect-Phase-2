@@ -1,57 +1,77 @@
 ## [purpose] Purpose
 
-8 minutes: opening 1; model 1; supervised reference-card practice 4; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+The BHW matches the card to Quisqualis indica and seeds, says the worms need confirmation, and refers the child to the health center.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **8 minutes face-to-face** (of the 120-minute plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **Per triad:** *2.5.7 — Reference-card practice: Niyog-niyogan* cards and worksheet; *2.5.7 — Observation sheet*; job aid; two Niyog-niyogan cards. Dry props only.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm with the midwife or RHU who confirms worms and plans deworming locally.
+- **Scope:** card check and referral only. No seed counts, preparation or dose: *"That is a question for the midwife or RHU."*
 
 ## [opening] Opening
 
-A child is suspected of having worms. A neighbor wants to pick Niyog-niyogan seeds.
+Read the case aloud. Ask: *"The neighbour is already reaching for the seeds. Who confirms worms and plans deworming for this child?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation.** *"Is it confirmed that the child has worms?"*
+2. **What to do and say.** Point to the botanical name and "Part: seeds". *"What does 'requiring confirmation' tell us?"*
+3. **Choose the first response.** Self-check 1 — pairs answer before revealing.
+4. **Worked example.** Model reading the card without assuming the neighbour's plant is Niyog-niyogan. *"What did I refuse to guess?"*
+5. **Scope and support.** *"Why can a wrong plant or wrong seed amount harm a child?"*
+6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
+7. **On Monday, try this.** Start the practice.
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-The BHW points to Niyog-niyogan and its botanical name on the card. The yard plant is not assumed to be identified. Refer the child to the health center for diagnosis and an appropriate deworming plan.
+- **"My lola gave us the seeds; we were fine."** Thank them. *"Who checked the plant and the amount?"*
+- **"Just give a few seeds."** Do not discuss numbers. Use the scope line.
+- **"Take the child to the health center."** Correct; ask what to report: symptoms and any current medicine.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Guesses identity, prescribes a dose or replaces treatment.
+**"The neighbour knows the plant, so the seeds are fine for the child."** Neighbours often know yard plants. Ask the group, not the speaker: *"What if it is another plant, or the wrong amount?"* A local name is not identity; diagnosis and deworming belong to the health center.
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Match two Niyog-niyogan cards; choose Quisqualis indica, seeds, use and safe next step. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+**Reference-card practice: Niyog-niyogan** (rotation B), triads, one 4-minute round.
 
-## [answer-key] Check explanations
+- **Learner:** compares the cards, fills the worksheet, tells the parent what is known, unknown and who to consult.
+- **Partner:** plays the parent; says the neighbour is picking seeds now.
+- **Observer:** records the learner's words; one strength, one next action.
 
-1: Unconfirmed part and identity are unsafe. / 2: Match the part to the written source; this is not a dose. / 3: Common names may cover different plants.
+Fictional details only. Alone: worksheet now, staff observation later.
 
-1: Necessary care may be displaced or delayed. / 2: Confirm identity, symptoms and scope before advice. / 3: An old recipe does not replace current clinical guidance.
+## [answer-key] Self-check answer key
 
-## [observe] Observe
+- **Check 1: "Which Niyog-niyogan part is listed on the card?"** Correct: **"Seeds of confirmed Quisqualis indica."** Part matched to the card; not a dose.
+  - "Whatever part the neighbor picks from the yard plant." Unconfirmed plant; only seeds are listed.
+  - "Seeds of any plant the neighbor calls Niyog-niyogan." A local name is not identity.
+- **Check 2: "The neighbor wants to pick seeds for the child. What is the safe response?"** Correct: **"Refer the child to the health center for diagnosis."** Worms need diagnosis first.
+  - "Let the neighbor pick seeds and give the child a few." Unconfirmed plant; seeds can harm a child.
+  - "Give the child seeds using the old manual's table." No dose from the old table.
 
-For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+## [observe] What to observe
 
-Ready: Correctly identifies Niyog-niyogan, Quisqualis indica, seeds, use and referral without prompts.
+Staff only. Indicator: For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-Needs practice: Identifies the plant but needs a prompt about limits or referral.
+- **Kaya na:** Matches Quisqualis indica and seeds, says worms are unconfirmed and refers the child to the health center without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to say worms are unconfirmed or to refer the child.
+- **Hindi pa:** Treats the neighbor's plant as Niyog-niyogan or names a seed amount for the child.
 
-Not yet: Guesses identity, prescribes a dose or replaces treatment.
+Look for: says the worms are not yet confirmed; names no seed amount. A correct self-check is not evidence of the skill.
 
-## [support] Support and debrief
+## [support] If a BHW needs more support
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+- **Kailangan pa:** name the missing step; retry the same card now.
+- **Hindi pa:** restate the scope line, re-model step 4, retry with a Kaya na partner.
+- Re-observe next session with one changed detail (the grandmother asks). Peer feedback is not a staff rating.
 
-## [sources-review] Local resources
+## [sources-review] Sources and review notes
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 50; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 12 (preparation and dose content excluded).
+- Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

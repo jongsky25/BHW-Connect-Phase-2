@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Bawang, Allium sativum, butil, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Naitutugma ang Allium sativum, butil at nakalistang gamit, itinatanong ang iba pang gamot, at ibinabalik ang desisyon sa clinician ni Liza nang walang paalala. |
+| Kailangan pa ng practice | Naitutugma ang card ngunit kailangan ng paalala na itanong ang iba pang gamot o kung sino ang magpapasya. |
+| Hindi pa | Sumasang-ayong itigil ni Liza ang gamot, o nagsasabi ng dami ng bawang. |
 
 Aktuwal na nakita/narinig: ____
 

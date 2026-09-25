@@ -1,57 +1,69 @@
 ## [purpose] Purpose
 
-10 minutes: opening 1; model 1; triad/tabletop practice 4; feedback and retry 2; debrief 1; next step 1. This is an orientation station, not a full field drill or proof of competence. Arrange additional supervised practice.
-
-In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.
+In a mock team change, the BHW names what to confirm (current team, lead, BHW role, channel) and gives a short handover without personal details.
 
 ## [time-materials] Time and materials
 
-Six 10-minute introductory DRRM stations total 60 minutes. This is a proposed share of F38’s combined two hours for Community Mobilization and DRRM; the other proposed 60 minutes are in Chapter 2.6. F42–43 describe DRRM content but do not prescribe separate minutes. Use locally verified contacts, routes, roles and plans. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **10 minutes face-to-face** (share of the 60-minute subchapter plan): opening 1, model 1, practice 4, feedback and retry 2, debrief 1, next step 1. Read in the app: about 3 minutes.
+- **Materials:** 2.7.4 cards, worksheet and observation sheet per triad; job aid; an old fictional roster card and a mock team-change note.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm with the barangay and health supervisor: the current response team and lead, the BHW role, the approved reporting channel and backup.
+- Scope: do not teach fixed BHERT membership, contact tracing, isolation, or clinical or enforcement duties for BHWs.
 
 ## [opening] Opening
 
-After flooding, a BHW is asked to record concerns and relay information to a response team. It is unclear whether an old BHERT roster is active.
+Show the old roster and read the scene. Ask: *"How do we know this is still the team in charge?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Steps follow the Read and slide headings.
 
-## [expected-answers] Expected response
+1. **The situation.** Ask: *"What is the BHW asked to do, and what is unclear?"*
+2. **What to do and say.** Ask: *"What is the least a handover must say?"* List them on the board.
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model it: do not assume an active BHERT; confirm the current focal person; hand over through the approved channel. Run the practice.
+5. **Scope and support.** Ask: *"Which old duties do we not take on?"*
+6. **Apply it to the situation.** Self-check 2 — let pairs answer before revealing.
+7. **On Monday, try this.** Ask: *"Who will update your role-and-handover card?"*
 
-The BHW does not assume an active BHERT. They verify the current response focal person and hand the need over through the approved channel.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Call the person on the roster."** Ask: *"Is that person still the lead? Who can confirm?"*
+- **The handover names the resident and their illness.** Say: *"The team needs the location and need. Keep names and details private."*
+- **"Location, hazard, urgent need, what I did, next contact, time."** Correct. Ask how they will know it was received.
 
-Uses an unverified plan or exceeds the role.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"The team on the old BHERT roster is still in charge."** Old slides list members as if they never change. Do not single anyone out. Read the option "Use an old roster and assume its former mandate…" and its feedback: this may harm or delay help. Ask who confirmed the roster this year.
 
-In a mock team change, identify what to confirm and give a short handover without personal details. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Response-team coordination.** Triads: learner, partner (team lead), observer. In 4 minutes the learner states what to confirm, then gives the handover using the worksheet rows. Observer notes: actual words, anything personal said, one strength, one next action. Retry 2 minutes; rotate roles. Fictional details only. Solo: worksheet now, say the handover aloud to staff later.
 
-1: Information may be old or wrong. / 2: This ties action to a verified plan and scope. / 3: The correct authority and local context are needed.
+## [answer-key] Self-check answer key
 
-1: This may harm or delay help. / 2: Accountability and continuity are lost. / 3: This establishes clear ownership and next action.
+- **Check 1.** Correct: **"Confirm current lead and channel, then hand over"**. "Call the person listed…": that person may no longer be the lead; "Send the resident's name…": the list may be old, and names and health details must stay private.
+- **Check 2.** Correct: **"Report location, need and action taken; record the time"**. "Use an old roster…": this may harm or delay help; "Hand over without checking…": without acknowledgement, no one knows the need was received.
 
-## [observe] Observe
+## [observe] What to observe
 
-In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.
+Indicator: In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.
 
-Ready: Completes action, boundary, handover and follow-up without prompts.
+- **Kaya na:** Confirms the current team, lead and channel, then gives a short handover with the time and no name or diagnosis, without prompts.
+- **Kailangan pa ng practice:** Gives the handover but needs a prompt to confirm the current lead first or to record the time.
+- **Hindi pa:** Relies on the old roster, or includes names or health details in the handover.
 
-Needs practice: Chooses the first action but needs a prompt for verification or follow-up.
+Look for confirmation before handover, the time recorded, and no name or diagnosis. A correct self-check is not evidence of the skill.
 
-Not yet: Uses an unverified plan or exceeds the role.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** re-model the handover in worksheet order; retry now with a different need.
+- **Hindi pa:** replay the worked example; practise only "what to confirm" first, then add the handover; pair with a peer rated Kaya na.
+- Re-observe at the next supervised practice or transfer task with a changed team note. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 55; Facilitator Guide PDF pp. 38, 42–43; Day 1 Part 2 presentation PDF pp. 104–107.
+- The 10 minutes are an authoring distribution of F38's two hours shared with 2.6, not source hours. Local DRRM and clinical review approved by program-owner attestation, 25 Sep 2026; no reviewer names recorded. Local protocol wins.

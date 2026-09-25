@@ -21,8 +21,8 @@
         "c2.firstaid.first.aid.kit.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: May lumang inventory sheet, expired item at bukas na…",
-      "takeaway_en": "Case: The BHS kit has an old inventory sheet, an expired item…",
+      "takeaway_fil": "Kaso: May lumang sheet, expired item at bukas na pakete ang BHS kit",
+      "takeaway_en": "Case: The BHS kit has an old sheet, an expired item and an unsealed packet",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.firstaid.first.aid.kit.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Magsimula sa kasalukuyang lokal na listahan, hindi sa lumang sheet.",
+      "takeaway_en": "Start from the current local list, not the old sheet.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Binuksan mo ang kit at nakita ang lumang inventory sheet. Ano ang unang tugon?",
+        "prompt_en": "You open the kit and find the old inventory sheet. What comes first?",
         "options": [
           {
-            "fil": "Ihambing sa lokal na listahan.",
-            "en": "Compare with the local list."
+            "fil": "I-update ang lumang sheet at ituloy itong gamitin.",
+            "en": "Update the old sheet and keep using it."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Itapon agad ang expired item.",
+            "en": "Throw out the expired item right away."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Ihambing ang kit sa lokal na listahan.",
+            "en": "Compare the kit with the local list."
           }
         ],
-        "correct_option_index": 0,
-        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
-        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it."
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi kasalukuyang listahan ang lumang sheet. Gamitin ang aprubadong lokal na listahan. 2: Itala ito, ihiwalay nang hindi ginagamit at iulat sa responsable sa palit. 3: Tama. Ang kasalukuyang lokal na listahan ang batayan ng bawat hanay na itatala mo.",
+        "feedback_en": "1: The old sheet is not the current list. Work from the approved local list. 2: Record it, set it aside unused and report it to the replacement owner. 3: Correct. The current local list is the basis for every row you record."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.first.aid.kit.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
-      "takeaway_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+      "takeaway_fil": "Pinupunan ni Lea ang bawat hanay, inihihiwalay nang hindi ginagamit ang expired at bukas na gamit, at iniuulat sa responsable.",
+      "takeaway_en": "Lea fills every row, sets aside the expired and unsealed items unused, and reports them to the owner.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.first.aid.kit.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi reseta o pahintulot gumamit ang gamit na nasa kit.",
+      "takeaway_en": "An item in the kit is not a prescription or permission to use it.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.first.aid.kit.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Itala ang kondisyon at iulat ang sirang gamit nang hindi ginagamit.",
+      "takeaway_en": "Record the condition and escalate damaged items unused.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sabi ng katrabaho, puwede pang gamitin ang bukas na pakete. Ano ang dapat ipakita sa practice?",
+        "prompt_en": "A co-worker says the unsealed packet is still fine to use. What should your practice show?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Gamitin na ngayon dahil mukhang malinis ang loob.",
+            "en": "Use it today, since the inside looks clean."
           },
           {
-            "fil": "Itala ang expired na gamit.",
-            "en": "Record expired stock."
+            "fil": "Itala ang kondisyon; iulat nang hindi ginagamit.",
+            "en": "Record its condition; report it unused."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Iwanang blangko muna ang hanay ng selyo nito.",
+            "en": "Leave its seal column blank until later."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Iulat ang sirang gamit nang hindi ginagamit. Hindi sapat na mukhang malinis. 2: Tama. Itinatala ang selyo, at iniuulat ang gamit nang hindi ginagamit. 3: Dapat kumpleto ang bawat hanay. Naitatago ng blangkong selyo ang problema.",
+        "feedback_en": "1: Escalate damaged items without using them. Looking clean is not the check. 2: Correct. Package integrity goes on the sheet, and the item is escalated unused. 3: Every row must be complete. A blank seal cell hides the problem."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.first.aid.kit.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang kumpletong kit inventory na may responsable sa palit.",
+      "takeaway_en": "Practise a complete kit inventory with a named replacement owner.",
       "check": null
     }
   ],

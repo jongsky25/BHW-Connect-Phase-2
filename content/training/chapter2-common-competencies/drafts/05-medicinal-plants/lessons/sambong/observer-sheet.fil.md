@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Sambong, Blumea balsamifera, dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Itinutugma ang Blumea balsamifera at dahon, hindi sinasabing kidney stone ito at ipinapasuri agad si Paolo sa health facility nang walang paalala. |
+| Kailangan pa ng practice | Tama ang card ngunit kailangan ng paalala para ipasuri agad ang sakit at pagbabago sa pag-ihi ni Paolo. |
+| Hindi pa | Sinasabing kidney stone ito, ipinapasubok muna ang Sambong o ipinagpapaliban ang pagsusuri kay Paolo. |
 
 Aktuwal na nakita/narinig: ____
 

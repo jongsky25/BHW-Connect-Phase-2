@@ -1,57 +1,72 @@
 ## [purpose] Purpose
 
-8 minutes: opening 1; model 1; supervised reference-card practice 4; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+The BHW matches Psidium guajava, leafy tops and the listed use on the Bayabas card, and seeks prompt assessment of Mara's wound.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 8 minutes face-to-face (this lesson's share of the 120-minute subchapter plan, rotation A): opening 1, model 1, practice 4, feedback 1, check 1. Read: about 3 minutes in the app.
+- **At the table:** participant cards *2.5.5 — Reference-card practice: Bayabas*, worksheet, staff observation sheet; job aid *Ten medicinal plants*; two printed Bayabas cards.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and checks. Write the urgent referral route for wounds (midwife / RHU) on the job aid.
+- **Scope:** no wash, boiling, hot liquid, amount or wound treatment. If asked: *"That is a question for the midwife or RHU. Today we practise the card check."*
 
 ## [opening] Opening
 
-Mara has a red wound with pus. She wants to use boiled Bayabas leaves.
+Read the case. Ask: *"What in Mara's wound means assessment comes first?"* Return to it at step 4.
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **"The situation" (first slide).** *"What does Mara want to do?"*
+2. **"What to do and say" (matching slide).** Point to Psidium guajava and leafy tops: *"Does the card tell us anything about Mara's wound?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model: point to the card; seek prompt assessment. *"Which signs need prompt assessment?"* (Spreading redness, pus, fever, other infection concerns.)
+5. **"Scope and support."** *"What does a herbal wash not replace?"* Run the practice.
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** *"What will you mark on two Bayabas cards?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-The BHW points to Bayabas and its botanical name on the card. The yard plant is not assumed to be identified. Seek prompt assessment for spreading redness, pus, fever or other infection concerns.
+- **"Boil the leaves and wash it."** Kindly say the scope line. *"What does the pus tell us?"*
+- **"Clean it and wait a few days."** *"Pus is on the list. Can it wait?"* Escalate infected wounds as taught in 2.4.
+- **"Send her promptly for assessment and report it."** Praise it.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Guesses identity, prescribes a dose or replaces treatment.
+**"A Bayabas wash is enough for a wound with pus."** The old manual listed skin uses; families trust them. Ask the group, not the person: *"If it does not work, what have we lost?"* A herbal wash does not replace assessment and appropriate wound care.
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Match two Bayabas cards; choose Psidium guajava, leafy tops, use and safe next step. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+**Reference-card practice: Bayabas** (*Reference-card stations, rotation A*): two triads per table; learner, partner (Mara), observer; one 4-minute round, 1 minute feedback; rotate at the next table. The learner fills the worksheet, states what is known and unknown, asks about medicine and symptoms, and seeks prompt assessment. The observer records the learner's words, then gives one strength and one next action. Fictional details only; no liquids. Low-resource: one card set for the whole group.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: Unconfirmed part and identity are unsafe. / 2: Match the part to the written source; this is not a dose. / 3: Common names may cover different plants.
+- **"Which Bayabas part is listed on the card?"** Correct: **"Leafy tops of confirmed Psidium guajava."**
+  - "Any part of a guava tree, since the old manual lists skin uses." The card lists leafy tops.
+  - "Boiled leaves for Mara’s wound, as she already plans." A part, not a wash.
+- **"What is the safe response in Mara’s case?"** Correct: **"Seek prompt assessment, since the wound is red with pus."**
+  - "Help Mara boil the leaves and wash the wound with it first." A wash does not replace assessment.
+  - "Clean the wound and wait a few days to see if it heals." Waiting delays needed care.
 
-1: Necessary care may be displaced or delayed. / 2: Confirm identity, symptoms and scope before advice. / 3: An old recipe does not replace current clinical guidance.
+## [observe] What to observe
 
-## [observe] Observe
+Watch for: For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+- **Kaya na:** Matches Psidium guajava, leafy tops and listed use, and seeks prompt assessment of Mara’s wound without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt that pus or spreading redness needs prompt assessment.
+- **Hindi pa:** Suggests boiling the leaves or a wash, or waiting before assessment.
 
-Ready: Correctly identifies Bayabas, Psidium guajava, leafy tops, use and referral without prompts.
+Look for: the pus is named as the reason for prompt assessment. A correct self-check is not evidence of the skill.
 
-Needs practice: Identifies the plant but needs a prompt about limits or referral.
+## [support] If a BHW needs more support
 
-Not yet: Guesses identity, prescribes a dose or replaces treatment.
+- **Kailangan pa ng practice:** name the missing step; retry the same card.
+- **Hindi pa:** re-model step 4; retry with three items only (botanical name, part, referral signs), paired with a Kaya na BHW.
+- Re-observe next session (a neighbour offers to boil the leaves). Peer feedback is practice, not a staff rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 49; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 10.
+- Timing: an authoring split of F38's 2-hour plant allocation.
+- Status: program owner's attested clinical sign-off, 25 Sep 2026; reviewer names not recorded. Local protocol overrides this guide.

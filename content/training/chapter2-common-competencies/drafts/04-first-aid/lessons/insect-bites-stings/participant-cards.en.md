@@ -1,4 +1,4 @@
-# 2.4.12 — First-aid practice: insect bites stings
+# 2.4.12 — Respond to bites and stings
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,11 +6,11 @@ After a bee sting, an adult develops widespread hives and says breathing is diff
 
 ## Learner card
 
-Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+Name the urgent signs you see and hear. Call emergency help and report them. Keep watching breathing. Say which medicine is not yours to give and whose plan it follows.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You are the person's friend. Offer a home remedy for the sting, then a tablet from your bag. Offer each once more if the learner says no. Do not add new symptoms beyond the case.
 
 ## Observer card
 

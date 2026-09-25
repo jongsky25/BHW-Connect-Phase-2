@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala. |
-| Kailangan practice | Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up. |
-| Hindi pa | Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin. |
+| Kaya na | Inuuna ang ligtas na paglikas, may unang ligtas na aksiyon, kumpirmadong lead at follow-up ang bawat isyu, at may kapalit ang volunteer, nang walang paalala. |
+| Kailangan pa ng practice | Naaayos ang mga isyu ngunit kailangan ng paalala sa pagtatala ng pagtanggap, follow-up o kapalit ng volunteer. |
+| Hindi pa | Gumagamit ng di-kumpirmadong contact, walang follow-up o iniiwang walang kapalit ang pagod na volunteer. |
 
 Aktuwal na nakita/narinig: ____
 

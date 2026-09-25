@@ -4,7 +4,7 @@ Ang training manikin ay adult na hindi tumutugon at hindi normal ang paghinga. M
 
 ## [action] Gawin at sabihin
 
-Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod.
+Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm na ipinakita ng kwalipikadong trainer. Sanayin ang compressions at AED prompts sa aprubadong kagamitan. Bago ang kaso ng bata o sa tubig, ihiwalay ang algorithm para sa bata at sa pagkalunod.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod. Iniiwasan ni Lea ang shortcut.
+Si Lea ang unang nasa manikin station. Bago hawakan ang manikin, inuutusan niya ang kapareha na tumawag ng tulong, sabihin ang lokasyon at kunin ang AED. Pagkatapos, sinusunod niya ang kasalukuyang adult sequence na ipinakita ng trainer. Itinatala ng tagamasid ang bawat kilos. Hindi siya umaasa lamang sa pulso at hindi niya ginagamit ang lumang CAB talata.
 
 ## [scope] Saklaw at paghingi ng tulong
 

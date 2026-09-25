@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Bawang, Allium sativum, bulb, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Allium sativum, bulb and listed use, asks about other medicines, and returns the decision to Liza’s clinician without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to ask about other medicines or to name who decides. |
+| Hindi pa | Agrees that Liza can stop her medicine, or names an amount of garlic. |
 
 Evidence observed: ____
 

@@ -1,57 +1,75 @@
 ## [purpose] Purpose
 
-15 minutes: opening 3; model 3; supervised case practice 3; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Reject the cord and walking plan, keep the person still and call for transport.
+In a fictional snakebite case, the BHW declines the cord and walking plan, keeps the person calm and still, and calls for transport, reporting time and observations.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 15 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2; model 3; practice 6; feedback 2; checks 2. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.13 participant cards, worksheet and observation sheet per triad; the *First aid and referral* job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Confirm with the midwife or RHU who arranges transport and which facility receives snakebite cases. Write it on the job aid.
+- **Scope:** do not act out tying, cutting, sucking or ice. Do not teach snake identification or medicines. Otherwise: *"Confirm with the midwife, RHU or local protocol."*
 
 ## [opening] Opening
 
-A farm worker reports a snakebite to the ankle. Friends want to tie a tight cord and walk him to the road.
+Read the case: a farm worker was bitten on the ankle; friends want to tie a tight cord and walk him to the road. Ask: *"His friends want to help. How does he reach the facility?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each Read heading is also its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation".** Ask: *"What do the friends want to do?"*
+2. **"What to do and say".** Ask: *"Why keep him still instead of walking?"*
+3. **"Choose the first response".** Self-check 1 — pairs answer first.
+4. **"Worked example".** Model Lea's response; a volunteer is the friend. Ask: *"What did Lea report?"*
+5. **"Scope and support".** Ask: *"Which have you seen?"*
+6. **"Apply it to the situation".** Self-check 2 — pairs answer first.
+7. **"On Monday, try this".** Each names their transport contact, then practise.
 
-This is the safe response in the case. Move away from the snake, keep the person calm and as still as possible, remove tight items if safe, and arrange rapid transport to a health facility. Report time and observations. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Tie it first, then call."** Ask: *"What does the scope slide say about a tourniquet?"*
+- **"Walk him to the road, it is faster."** Accept the worry about time. Ask: *"How can transport come to him?"*
+- **"Keep him still and call."** Praise it. Ask: *"What time will you report?"*
 
-Uses the shortcut or fails to activate help: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"A tight cord stops the poison spreading."** It comes from elders or old manuals, and it feels like action. The lesson lists the tourniquet as harmful. Correct the case, not the person: *"The friends wanted that too. What does Lea do instead?"*
 
-Reject the cord and walking plan, keep the person still and call for transport. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Snakebite decision exercise.** Triads, three 2-minute rounds; everyone is learner once. Partner: the friend pushing the cord. Observer: fills the worksheet; one strength and one retry action. Fictional details only. Low resource or alone: read the case, complete the worksheet, arrange staff observation later.
 
-1: The shortcut can cause harm: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. / 2: Prioritize safety and timely help. / 3: Necessary assessment may be delayed.
+## [answer-key] Self-check answer key
 
-1: The story is not grounds for an independent diagnosis. / 2: The shortcut is unsafe: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. / 3: Observe the task and appropriate referral.
+- **Check 1: "What comes first?"** Correct: **"Keep him calm and still."**
+  - "Let the friends tie the cord first": a tight cord is a tourniquet, listed as harmful.
+  - "Help him walk to the road": he should not walk; transport comes to him.
+- **Check 2: "In the practice, what should your call for transport include?"** Correct: **"The time of the bite and what you see."**
+  - "The type of snake, once the friends catch it": do not chase the snake.
+  - "That ice is already on the bite": ice is a harmful shortcut.
 
-## [observe] Observe
+## [observe] What to observe
 
-Reject the cord and walking plan, keep the person still and call for transport.
+Watch for: Reject the cord and walking plan, keep the person still and call for transport.
 
-Ready: Completes the task without prompting: Reject the cord and walking plan, keep the person still and call for transport.
+- **Kaya na:** Declines the cord and the walk kindly, keeps the person calm and still, and calls for transport with the bite time, without prompting.
+- **Kailangan pa ng practice:** Keeps the person still and calls for transport, but needs a prompt to decline the cord or to report the bite time.
+- **Hindi pa:** Allows the cord, cutting, sucking or ice, or has the person walk instead of calling for transport.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** one retry action, e.g. *"Say the call aloud, with the time."* Re-observe this session with ice offered instead of a cord.
+- **Hindi pa:** re-model Lea's words, then retry with a Kaya na partner. Re-observe in a later round.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 46; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 68.
+- The 15 minutes is drawn from F38's 8 hours, which do not time each case.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

@@ -1,4 +1,4 @@
-# 2.4.1 — First-aid practice: scene help referral
+# 2.4.1 — Assess the situation and get help
 
 Use fictional details only.
 

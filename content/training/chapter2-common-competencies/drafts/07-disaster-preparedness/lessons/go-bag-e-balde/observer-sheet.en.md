@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes action, boundary, handover and follow-up without prompts. |
-| Kailangan practice | Chooses the first action but needs a prompt for verification or follow-up. |
-| Hindi pa | Uses an unverified plan or exceeds the role. |
+| Kaya na | Gives a reason for each chosen item, asks about access to regular medicine and sets a recheck date, without prompts. |
+| Kailangan pa ng practice | Chooses suitable items but needs a prompt to give reasons, ask about medicine access or set a recheck date. |
+| Hindi pa | Copies a list without the infant's or medicine needs, or offers to supply medicine. |
 
 Evidence observed: ____
 

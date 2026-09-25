@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Kumpleto ang plano; sinusuri ang natanggap na balita, hindi pagdalo lamang; may pag-aangkop sa hadlang nang walang paalala. |
-| Kailangan practice | May tao at petsa pero kailangang paalalahanang kumpirmahin ang resources o magdagdag ng panukat. |
+| Kailangan pa ng practice | May tao at petsa pero kailangang paalalahanang kumpirmahin ang resources o magdagdag ng panukat. |
 | Hindi pa | Hindi kumpirmadong resources ang ipinapangako o ipinapahiya ang hindi nakatapos. |
 
 Aktuwal na nakita/narinig: ____

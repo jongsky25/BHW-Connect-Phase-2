@@ -1,4 +1,4 @@
-# 2.4.1 — First-aid practice: scene help referral
+# 2.4.1 — Suriin ang sitwasyon at humingi ng tulong
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,12 +6,12 @@ Huminto ang traysikel sa tabi ng nadapang sakay habang may dumaraang sasakyan. D
 
 ## Card ng kalahok
 
-Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.
+Ikaw si BHW Lea. Huminto sa gilid ng kalsada at tingnan ang panganib. Pakiusapan ang saksi na tawagan ang kumpirmadong contact. Mula sa ligtas na puwesto, sabihin kung tumutugon at normal na humihinga ang sakay, at ibigay ang lokasyon sa isang pangungusap.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang saksing kasama ni Lea. Sa simula, akmang tumawid papunta sa sakay at itanong: "Hindi ba dapat alamin muna natin ang nangyari?" Tumawag lamang kapag inutusan ka ni Lea, at ulitin ang contact at lokasyong ibinigay niya. Huwag magdagdag ng pinsala o ibang clinical na detalye.
 
 ## Card ng tagamasid
 
-Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+Itala ang aktuwal na salita at kilos: ang paghinto bago ang kalsada, sino ang tumawag at saang contact, ang sinabi tungkol sa tugon at paghinga, at ang ibinigay na lokasyon. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.

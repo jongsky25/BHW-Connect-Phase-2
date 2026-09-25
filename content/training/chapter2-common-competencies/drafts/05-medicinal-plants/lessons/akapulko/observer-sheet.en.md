@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Akapulko, Senna alata, leaves, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Senna alata, leaves and listed use, and names when Ana’s rash needs health-center assessment, without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt that the yard plant is unconfirmed or that the rash needs assessment. |
+| Hindi pa | Calls the rash ringworm, treats the yard plant as Akapulko, or explains a preparation. |
 
 Evidence observed: ____
 

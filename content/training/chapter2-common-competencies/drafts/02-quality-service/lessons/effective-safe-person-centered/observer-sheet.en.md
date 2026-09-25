@@ -6,8 +6,8 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions without prompting. |
-| Kailangan practice | Identifies two dimensions and adds listening to the resident after a prompt. |
+| Kaya na | Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions and proposes one improvement for each without prompting. |
+| Kailangan pa ng practice | Identifies two dimensions and adds listening to the resident after a prompt. |
 | Hindi pa | Judges only speed or uses the old message without confirmation. |
 
 Evidence observed: ____

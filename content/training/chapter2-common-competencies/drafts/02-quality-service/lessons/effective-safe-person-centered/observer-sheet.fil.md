@@ -6,8 +6,8 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Naikakabit ang kumpirmadong gabay, ligtas na daan at piniling oras sa tamang katangian nang walang paalala. |
-| Kailangan practice | Natukoy ang dalawang katangian; naidagdag ang pakikinig sa residente matapos ang paalala. |
+| Kaya na | Naikakabit ang kumpirmadong gabay, ligtas na daan at piniling oras sa tamang katangian at nagmumungkahi ng isang pagbabago sa bawat isa nang walang paalala. |
+| Kailangan pa ng practice | Natukoy ang dalawang katangian; naidagdag ang pakikinig sa residente matapos ang paalala. |
 | Hindi pa | Bilis lamang ang batayan o ginagamit ang lumang mensahe kahit hindi pa kumpirmado. |
 
 Aktuwal na nakita/narinig: ____

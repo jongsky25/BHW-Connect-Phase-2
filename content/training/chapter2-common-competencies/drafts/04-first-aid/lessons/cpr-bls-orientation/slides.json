@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: Ang training manikin ay adult na hindi tumutugon at hindi…",
-    "display_en": "Case: A training manikin represents an adult who is unresponsive…",
+    "display_fil": "Adult na training manikin: hindi tumutugon\nHindi normal ang paghinga\nMay AED trainer sa tabi",
+    "display_en": "Adult training manikin: unresponsive\nNot breathing normally\nAn AED trainer is nearby",
     "check": null,
     "narration_fil": "Ang training manikin ay adult na hindi tumutugon at hindi normal ang paghinga. May AED trainer sa tabi.",
     "narration_en": "A training manikin represents an adult who is unresponsive and not breathing normally. An AED trainer is nearby."
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Humingi ng tulong at AED\nSundin ang kasalukuyang adult BLS algorithm ng kwalipikadong…\nMagsanay sa manikin at AED trainer; ihiwalay ang algorithm para…",
-    "display_en": "Activate help and request an AED\nFollow the current adult BLS algorithm demonstrated by a…\nPractise compressions and AED prompts on approved equipment;…",
+    "display_fil": "Humingi ng tulong at AED\nSundin ang kasalukuyang adult BLS sequence ng trainer\nSanayin ang compressions at AED prompts sa aprubadong kagamitan\nIhiwalay ang algorithm sa bata at pagkalunod bago ang mga iyon",
+    "display_en": "Activate help and request an AED\nFollow the current adult BLS sequence from a qualified trainer\nPractise compressions and AED prompts on approved equipment\nDistinguish child and drowning pathways before those cases",
     "check": null,
-    "narration_fil": "Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod.",
+    "narration_fil": "Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm na ipinakita ng kwalipikadong trainer. Sanayin ang compressions at AED prompts sa aprubadong kagamitan. Bago ang kaso ng bata o sa tubig, ihiwalay ang algorithm para sa bata at sa pagkalunod.",
     "narration_en": "Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Hindi tumutugon at hindi normal ang paghinga ng manikin. Ano ang una mong gagawin?",
+      "prompt_en": "The manikin does not respond and is not breathing normally. What do you do first?",
       "options": [
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Kapain muna ang pulso bago magpasyang tumawag.",
+          "en": "Check the pulse first, then decide whether to call."
         },
         {
-          "fil": "Tumawag at humingi ng AED.",
-          "en": "Call and request an AED."
+          "fil": "Tumawag ng tulong at humingi ng AED.",
+          "en": "Call for help and ask for the AED."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Simulan ang lumang CAB na hakbang mula sa manual.",
+          "en": "Start the old CAB steps printed in the manual."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
-      "feedback_en": "1: The shortcut can cause harm: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+      "feedback_fil": "1: Hindi dapat pulso lamang ang batayan kung hindi sanay. Tumawag muna ng tulong at AED. 2: Tama. Humingi muna ng tulong at AED bago hawakan ang manikin; saka sundin ang sequence ng trainer. 3: Hindi sertipikasyon ang lumang CAB talata. Sundin ang kasalukuyang sequence na ipinakita ng trainer.",
+      "feedback_en": "1: A pulse check should not be the only gate for an untrained rescuer. Call for help and the AED first. 2: Correct. Help and the AED are requested before hands touch the manikin; then follow the trainer's sequence. 3: The old CAB paragraph is not certification. Follow the current sequence the qualified trainer demonstrates."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong…\nMagsanay sa manikin at AED trainer; ihiwalay ang algorithm para…",
-    "display_en": "Follow the current adult BLS algorithm demonstrated by a…\nPractise compressions and AED prompts on approved equipment;…",
+    "display_fil": "Inuutusan ni Lea ang kapareha: tulong, lokasyon, AED\nGinagawa niya ito bago hawakan ang manikin\nSaka niya sinusunod ang adult sequence ng trainer\nHindi pulso lamang, hindi ang lumang CAB talata",
+    "display_en": "Lea sends a partner for help, location and the AED\nShe does this before touching the manikin\nThen she follows the trainer's adult sequence\nNo pulse-only gate, no old CAB paragraph",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case. Lea avoids the shortcut."
+    "narration_fil": "Si Lea ang unang nasa manikin station. Bago hawakan ang manikin, inuutusan niya ang kapareha na tumawag ng tulong, sabihin ang lokasyon at kunin ang AED. Pagkatapos, sinusunod niya ang kasalukuyang adult sequence na ipinakita ng trainer. Itinatala ng tagamasid ang bawat kilos. Hindi siya umaasa lamang sa pulso at hindi niya ginagamit ang lumang CAB talata.",
+    "narration_en": "Lea is first at the manikin station. Before touching the manikin, she tells a partner to call for help, give the location and bring the AED. She then follows the current adult sequence the trainer demonstrated, while the observer records each action. She does not use a pulse check as her only gate or recite the old CAB paragraph."
   },
   {
     "id": "slide-scope",
@@ -99,7 +99,7 @@
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
     "display_fil": "Huwag umasa lamang sa pulso kung hindi sanay\nHuwag mag-compression sa totoong tao\nHindi sertipikasyon ang lumang CAB talata",
-    "display_en": "Do not use a pulse check as the only gate for an untrained…",
+    "display_en": "No pulse check as the only gate for an untrained rescuer\nNo compressions on a live person\nThe old CAB paragraph is not certification",
     "check": null,
     "narration_fil": "Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.",
     "narration_en": "Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Nag-alok ang kaklase na humiga para sa kanya ka magsanay ng compression. Ano ang sasabihin mo?",
+      "prompt_en": "A classmate offers to lie down so you can practise compressions on him. What do you say?",
       "options": [
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Sige, mas makatotohanan ang totoong tao kaysa manikin.",
+          "en": "Yes, a live partner feels more realistic than a manikin."
         },
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Laktawan ang station; sapat nang basahin ang hakbang.",
+          "en": "Skip the station; reading the steps is enough."
         },
         {
-          "fil": "Magsanay lamang sa manikin.",
-          "en": "Practise only on a manikin."
+          "fil": "Hindi, sa manikin lamang sinasanay ang compression.",
+          "en": "No, compressions are practised only on the manikin."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. 3: Obserbahan ang gawa at ang tamang referral.",
-      "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. 3: Observe the task and appropriate referral."
+      "feedback_fil": "1: Hindi nagko-compression sa totoong tao. Gamitin ang aprubadong manikin. 2: Hindi sertipikasyon ang pagbasa ng lumang CAB talata; sinasanay ito kasama ang kwalipikadong trainer. 3: Tama. Sinasanay ang compression at AED prompts sa aprubadong kagamitan habang nanonood ang trainer.",
+      "feedback_en": "1: Compressions are not practised on a live person. Use the approved manikin. 2: Reading the old CAB paragraph is not certification; the skill is practised with a qualified trainer. 3: Correct. Compressions and AED prompts are practised on approved equipment with the trainer watching."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nSa supervised manikin, ipakita ang pagtawag, paghingi ng AED at…",
-    "display_en": "On Monday:\nAt a supervised manikin station, show help activation, AED…",
+    "display_fil": "Sa Lunes:\nSa supervised manikin, ipakita ang pagtawag,\npaghingi ng AED at aprubadong adult sequence\nItala ang naobserbahan",
+    "display_en": "On Monday:\nAt a supervised manikin station, show help activation,\nAED request and the trainer-approved adult sequence\nRecord each observed action",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action."

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Kumpleto ang identity, bahagi, hangganan at referral nang walang paalala. |
-| Kailangan practice | May tama ngunit kailangan ng paalala sa source o referral. |
-| Hindi pa | Nanghuhula ng identity, dose o awtorisasyon. |
+| Kaya na | Kumpleto ang tatlong card, ini-refer agad sina Ben at Mara, hindi pinapalitan ang gamot ni Joel at minamarkahang kulang ang awtorisasyon nang walang paalala. |
+| Kailangan pa ng practice | Kumpleto ang cards ngunit kailangan ng paalala sa referral o sa awtorisasyon. |
+| Hindi pa | Nanghuhula ng identity, nagbibigay ng dose, pinapalitan ang gamot ni Joel o itinuturing na awtorisasyon ang pagdalo. |
 
 Aktuwal na nakita/narinig: ____
 

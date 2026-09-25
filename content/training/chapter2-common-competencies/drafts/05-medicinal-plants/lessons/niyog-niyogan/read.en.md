@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Niyog-niyogan and its botanical name on the card. The yard plant is not assumed to be identified. Refer the child to the health center for diagnosis and an appropriate deworming plan.
+The BHW tells the parent that worms are not yet confirmed. The BHW points to Quisqualis indica and "Part: seeds" on the card, and does not assume the neighbor's plant is Niyog-niyogan. The BHW asks about the child's symptoms and current medicine, then refers the child to the health center for diagnosis and an appropriate deworming plan.
 
 ## [scope] Scope and support
 

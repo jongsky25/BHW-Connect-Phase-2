@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: evacuation contacts",
-    "display_en": "Case: evacuation contacts",
+    "display_fil": "May ulat ng malakas na ulan.\nTanong ng pamilya ni Nena: kailan at saan?\nLuma ang naka-print na directory.",
+    "display_en": "Heavy rain is forecast.\nNena's family asks when and where to go.\nThe printed directory is old.",
     "check": null,
     "narration_fil": "May ulat ng paparating na malakas na ulan. Humihingi ang pamilya ni Nena ng tiyak na oras at lugar ng paglikas, ngunit luma ang naka-print na directory.",
     "narration_en": "Heavy rain is forecast. Nena’s family asks when and where to evacuate, but the printed directory is old."
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Ano ang unang ligtas na hakbang?",
-      "prompt_en": "What is the first safe step?",
+      "prompt_fil": "Tanong ng pamilya ni Nena kung kailan at saan lilikas. Ano ang una mong gagawin?",
+      "prompt_en": "Nena's family asks when and where to evacuate. What do you do first?",
       "options": [
         {
-          "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
-          "en": "Assume the old information is still correct and immediately relay it to everyone."
+          "fil": "Basahin sa kanila ang hotline na nasa lumang directory ng barangay.",
+          "en": "Read them the hotline printed in the old barangay directory."
         },
         {
           "fil": "Suriin ang opisyal na update at lokal na ruta bago magpayo.",
           "en": "Check the official update and local route before advising."
         },
         {
-          "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
-          "en": "Decide alone without local confirmation or an official warning."
+          "fil": "Sabihing pumunta agad sa evacuation site na ginamit noong nakaraang taon.",
+          "en": "Tell them to go to last year's evacuation site right away."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
-      "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+      "feedback_fil": "1: Luma ang directory; maaaring nagbago na ang numero. 2: Dapat nakabatay ang payo sa kasalukuyang opisyal na babala at kumpirmadong ruta. 3: Maaaring hindi na kumpirmado ang dating site; itanong sa DRRM focal person.",
+      "feedback_en": "1: The directory is old; the number may have changed. 2: Advice should rest on the current official warning and a confirmed route. 3: Last year's site may not be confirmed now; ask the DRRM focal person."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,8 +81,8 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Suriin ang opisyal na plano.\nKumpirmahin ang lokal na contact.",
-    "display_en": "Check the official plan.\nConfirm the local contact.",
+    "display_fil": "Suriin ang petsa ng advisory.\nTawagan ang opisyal na contact.\nSabihin ang kumpirmado at ang hinihintay pa.",
+    "display_en": "Check the advisory date.\nCall the official contact.\nSay what is confirmed and what is pending.",
     "check": null,
     "narration_fil": "Sinuri ng BHW ang petsa ng advisory at tumawag sa opisyal na contact. Sinabi niya kung ano ang kumpirmado at kung ano ang naghihintay pa ng sagot.",
     "narration_en": "The BHW checks the advisory date and calls the official contact. They state what is confirmed and what still awaits an answer."
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag manghula.\nIgalang ang tungkulin at privacy.",
-    "display_en": "Do not guess.\nRespect role and privacy.",
+    "display_fil": "Walang sariling evacuation order.\nWalang di-beripikadong hotline o ruta.\nSundin ang lokal na awtoridad at update.",
+    "display_en": "No self-made evacuation order.\nNo unverified hotline or route.\nFollow local authority and updates.",
     "check": null,
     "narration_fil": "Huwag gumawa ng sariling evacuation order, magbigay ng di-beripikadong hotline o magpadaan sa hindi kumpirmadong ruta. Sundin ang lokal na awtoridad at update.",
     "narration_en": "Do not invent an evacuation order, give an unverified hotline or direct people along an unconfirmed route. Follow local authority and updates."
@@ -116,25 +116,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-      "prompt_en": "What is the safe next step?",
+      "prompt_fil": "Bahagi pa lang ng advisory ang kumpirmado. Ano ang sasabihin mo sa pamilya ni Nena?",
+      "prompt_en": "Only part of the advisory is confirmed. What do you tell Nena's family?",
       "options": [
         {
-          "fil": "Gamitin ang lumang directory bilang tiyak na kasalukuyan. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-          "en": "Treat an old directory as current. Do not ask the authority or the affected person."
+          "fil": "Ituring na kasalukuyan ang lumang directory at ibigay ang mga numero nito.",
+          "en": "Treat the old directory as current and give them its numbers."
         },
         {
-          "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-          "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          "fil": "Sabihin ang kumpirmado, ang source at oras nito, at ang hinihintay pa.",
+          "en": "Say what is confirmed, its source and time, and what is pending."
         },
         {
-          "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-          "en": "Inform the lead, record handover, and follow up."
+          "fil": "Magpahayag ng sariling evacuation order para maaga silang umalis.",
+          "en": "Announce an evacuation order yourself so that they leave early."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-      "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring mali ang lumang impormasyon, at maaaring maantala nito ang tulong. 2: Ipaabot lamang ang beripikadong mensahe, kasama ang oras at source. 3: Huwag gumawa ng sariling evacuation order; sundin ang lokal na awtoridad.",
+      "feedback_en": "1: Old information may be wrong, and wrong information can delay help. 2: Relay only the verified message, with its time and source. 3: Do not invent an evacuation order; follow the local authority."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes: ipa-verify ang card.\nItala ang petsa at follow-up.",
-    "display_en": "On Monday: verify the card.\nRecord date and follow-up.",
+    "display_fil": "Sa Lunes: ipa-verify ang directory, warning source,\nruta at accessible shelter.\nItala ang petsa at ang nagkumpirma.",
+    "display_en": "On Monday: verify the directory, warning source,\nroute and accessible shelter.\nRecord the date and who confirmed.",
     "check": null,
     "narration_fil": "Sa Lunes, ipa-verify ang contact directory, warning source, ruta at accessible shelter; lagyan ng petsa at taong nagkumpirma.",
     "narration_en": "On Monday, verify the contact directory, warning source, route and accessible shelter; record date and confirmer."

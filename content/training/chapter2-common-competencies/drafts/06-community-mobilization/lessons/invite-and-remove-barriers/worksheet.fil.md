@@ -8,4 +8,4 @@ Kathang-isip na detalye lamang.
 | Sari | ____ | ____ | ____ | ____ |
 | Eva | ____ | ____ | ____ | ____ |
 
-Ibang paraan ng mungkahi: ____
+Ibang paraan ng pag-ambag: ____

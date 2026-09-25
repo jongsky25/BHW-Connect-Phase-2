@@ -6,11 +6,11 @@ In the queue, Alex tells BHW Lorna that the form is difficult to read. Someone l
 
 ## Learner card
 
-Play Lorna, Alex and observer. Offer privacy, ask about preferred support and explain the next step.
+You are BHW Lorna. Do not answer the queue's question about Alex's condition. Offer a private conversation, ask Alex what help is preferred, ask before involving anyone else, and explain the next step without judgment.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Alex, the resident in the queue. Say the form is difficult to read and that you do not want others to hear. When Lorna asks what help you want, say: "Please read it slowly." On the retry, say you would like a support person. Do not name or invent a condition.
 
 ## Observer card
 

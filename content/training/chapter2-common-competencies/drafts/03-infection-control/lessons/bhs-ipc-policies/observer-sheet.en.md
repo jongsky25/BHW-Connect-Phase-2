@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Completes the rows, names who confirms them and distinguishes specialist tasks without prompting. |
-| Kailangan practice | Records location and contact but adds version or training gaps only after prompting. |
+| Kailangan pa ng practice | Records location and contact but adds version or training gaps only after prompting. |
 | Hindi pa | Treats reading a policy as authorization or marks unobserved training as completed. |
 
 Evidence observed: ____

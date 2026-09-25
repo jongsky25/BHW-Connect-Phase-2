@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Completes all three rows and identifies what health or water staff must confirm without prompting. |
-| Kailangan practice | Suggests appropriate changes but needs a prompt on water protection or the treatment contact. |
+| Kailangan pa ng practice | Suggests appropriate changes but needs a prompt on water protection or the treatment contact. |
 | Hindi pa | Guarantees that clear water is safe or guesses chemical amounts. |
 
 Evidence observed: ____

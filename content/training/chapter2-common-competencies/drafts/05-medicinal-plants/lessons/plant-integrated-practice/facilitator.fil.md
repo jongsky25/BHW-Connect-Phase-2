@@ -1,57 +1,77 @@
 ## [purpose] Layunin
 
-30 minuto: pambungad 1; modelo 1; supervised reference-card practice 26; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.
+Sa tatlong case card, itinatala ng BHW ang identity, gamit, panganib, referral at kulang na awtorisasyon, ine-escalate ang hirap sa paghinga at sugat, at hindi binabago ang diabetes medicine.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **30 minutong harapan** (sa 120-minutong plano): pambungad 2, modelo 3, practice 18 (tatlong 6-minutong round), feedback 4, checks at pagsasara 3. Mga 4 na minuto ang Read.
+- **Bawat tatluhan:** cards na *2.5.12 — Konsultasyon gamit ang plant cards*, tatlong worksheet, talaan ng obserbasyon, job aid, current cards ng tatlong halaman. Tuyong props lamang.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa midwife o RHU ang agarang referral route at sino ang nagpapahintulot sa plant products.
+- **Hangganan:** may binabanggit ang Read na station ng awtorisadong trainer; wala nito ngayon. Walang paghahanda, mainit na tubig, pag-inom, dose o produkto: *"Tanong iyan para sa midwife o RHU."*
 
 ## [opening] Pambungad
 
-Tatlong residente ang nagtatanong tungkol sa Lagundi, Ampalaya at Bayabas. May ubo na may hirap sa paghinga, diabetes medicine at sugat na may nana sa tatlong card.
+Basahin nang malakas ang kaso. Itanong: *"Alin sa tatlo ang uunahin mong i-escalate, at ano ang itatala mo?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon.** *"Aling senyales ang hindi puwedeng maghintay?"*
+2. **Gawin at sabihin.** *"Saan makikita ang botanical name, bahagi at nakalistang gamit?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapares.
+4. **Halimbawang sagot.** Ipakita ang isang kaso: basahin ang card, ihiwalay ang gamit sa reseta, itanong ang sintomas at gamot.
+5. **Saklaw at paghingi ng tulong.** *"Puwede na ba tayong maghanda ng halaman dahil dumalo tayo?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
+7. **Sa Lunes, gawin ito.** Pagsasara: bawat isa, ano ang dadalhin sa supervisor sa Lunes?
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.
+- **"Ampalaya na lang sa halip na gamot ni Joel."** *"Sino ang nagpapasya sa gamot niya?"*
+- **"Bayabas para sa sugat ni Mara."** *"Ano ang sinasabi ng nana?"*
+- **"I-escalate sina Ben at Mara; dalhin sa clinician ang tanong ni Joel."** Tama; ano ang ilalagay sa hanay ng awtorisasyon?
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Nanghuhula ng identity, dose o awtorisasyon.
+**"Natural kaya ligtas. Nakalista sa lumang manual ang mga halamang ito, kaya puwede ko nang sabihing gamitin."** Igalang ito; huwag itama sa harap ng grupo. Itanong: *"Kahit gumagana ang halaman, ano pa ang puwedeng magkamali dito?"* Hayaan silang makita: naantalang pangangalaga kina Ben at Mara, natigil na gamot ni Joel.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Tatlong residente, tatlong card**, tatluhan, tatlong 6-minutong round; bawat isa'y nangunguna sa isang kaso.
 
-## [answer-key] Paliwanag sa checks
+- **Kalahok:** itugma ang card, itanong ang sintomas at gamot, mag-refer, sagutan ang worksheet.
+- **Residente:** sundin ang case card.
+- **Tagamasid:** itala ang salita sa referral at awtorisasyon; isang lakas at susunod na hakbang.
 
-1: Maaaring magkamali sa halaman. / 2: Magandang simula ang kumpirmadong reference. / 3: Wala pang clinical at lokal na pahintulot.
+Kathang-isip na detalye lamang. Kung kulang ang gamit: facilitator ang residente. Mag-isa: tatlong worksheet, obserbasyon ng staff pagkatapos.
 
-1: Hindi awtorisado ang pagpapalit ng gamot. / 2: Kailangan ang kumpletong impormasyon. / 3: Mahalaga ang clinical advice bago maghanda o gumamit.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1: "Ano ang una mong gagawin para sa tatlong residente?"** Tama: **"Kumpirmahin sa kasalukuyang card ang identity ng bawat halaman."** Ang kumpirmadong card ang tamang simula.
+  - "Hulaan ang bawat halaman mula lamang sa local name o sa isang larawan." Nakalilinlang ang pangalan o larawan.
+  - "Sabihin sa bawat residente kung gaano karami ang gagamitin." Walang dose; kulang ang awtorisasyon.
+- **Check 2: "Pagkatapos ng card check, ano ang ligtas na tugon?"** Tama: **"I-refer agad sina Ben at Mara; dalhin sa clinician ni Joel ang tanong niya."** Agarang senyales muna.
+  - "Sabihin kay Joel na puwedeng ipalit ang Ampalaya sa diabetes medicine niya." Hindi awtorisado ang pagpapalit ng gamot.
+  - "Imungkahi ang Lagundi kay Ben at Bayabas kay Mara bago mag-refer." Naaantala ang agarang referral.
 
-Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Kumpleto ang identity, bahagi, hangganan at referral nang walang paalala.
+Staff lamang. Indicator: Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.
 
-Kailangan practice: May tama ngunit kailangan ng paalala sa source o referral.
+- **Kaya na:** Kumpleto ang tatlong card, ini-refer agad sina Ben at Mara, hindi pinapalitan ang gamot ni Joel at minamarkahang kulang ang awtorisasyon nang walang paalala.
+- **Kailangan pa ng practice:** Kumpleto ang cards ngunit kailangan ng paalala sa referral o sa awtorisasyon.
+- **Hindi pa:** Nanghuhula ng identity, nagbibigay ng dose, pinapalitan ang gamot ni Joel o itinuturing na awtorisasyon ang pagdalo.
 
-Hindi pa: Nanghuhula ng identity, dose o awtorisasyon.
+Hindi clinical sign-off ang pagdalo, at hindi ebidensya ng kasanayan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** sabihin ang kulang na hakbang; ulitin agad ang parehong kaso.
+- **Hindi pa:** ulitin ang hangganan, ipakitang muli ang hakbang 4, ulitin ang kaso ni Ben kasama ang kaparehang Kaya na.
+- Obserbahan muli sa susunod na sesyon, ibang case card. Hindi staff rating ang peer feedback.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 48–51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 6, 16 (hindi isinama ang paghahanda at dose).
+- Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

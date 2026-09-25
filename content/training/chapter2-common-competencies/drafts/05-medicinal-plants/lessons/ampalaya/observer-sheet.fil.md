@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Ampalaya, Momordica charantia, dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Naitutugma ang Momordica charantia, dahon at nakalistang gamit, hindi binabago ang gamot ni Joel, at iniuugnay siya sa clinician nang walang paalala. |
+| Kailangan pa ng practice | Naitutugma ang card ngunit kailangan ng paalala na huwag baguhin ang gamot o kung sino ang magpapasya. |
+| Hindi pa | Sinasabing puwedeng ipalit ang ampalaya o bawasan ang gamot ni Joel, o nagmumungkahi ng dami. |
 
 Aktuwal na nakita/narinig: ____
 

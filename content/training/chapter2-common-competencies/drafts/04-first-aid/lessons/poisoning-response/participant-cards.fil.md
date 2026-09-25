@@ -1,4 +1,4 @@
-# 2.4.9 — First-aid practice: poisoning response
+# 2.4.9 — Mangolekta ng impormasyon sa posibleng pagkalason
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,11 +6,11 @@ Maaaring nakalunok ng panlinis ang isang bata. Nasa tabi ang lalagyan ngunit may
 
 ## Card ng kalahok
 
-Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.
+Ilayo ang lahat sa minarkahang spill. Tawagan ang kumpirmadong contact (ang tagamasid ang adviser). Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad. Basahin lamang ang label kung walang exposure. Sundin ang adviser.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Ikaw ang kamag-anak ng bata. Hawak mo ang label card sa labas ng spill. Pilitin ang kalahok nang isa o dalawang beses na pasukahin o painumin ang bata. Iabot ang label card kung hingin. Huwag magdagdag ng sintomas na wala sa kaso.
 
 ## Card ng tagamasid
 

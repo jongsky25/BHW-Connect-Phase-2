@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. |
+| Kaya na | Asks about drinking, vomiting, blood in stool and alertness, reads the amount from the packet label, explains safe water and continued breastfeeding, and names a referral trigger without prompting. |
+| Kailangan pa ng practice | Explains from the label but needs a prompt to ask the opening questions, mention continued breastfeeding or name a referral trigger. |
+| Hindi pa | Gives an amount or homemade recipe from memory, advises stopping breastfeeding, or urges fluids when swallowing is unsafe. |
 
 Evidence observed: ____
 

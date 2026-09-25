@@ -21,7 +21,7 @@
         "c2.plants.niyog-niyogan.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: May batang nangangati at pinaghihinalaang may bulate",
+      "takeaway_fil": "Kaso: May batang pinaghihinalaang may bulate",
       "takeaway_en": "Case: A child is suspected of having worms",
       "check": null
     },
@@ -52,21 +52,21 @@
         "prompt_en": "Which Niyog-niyogan part is listed on the card?",
         "options": [
           {
-            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Niyog-niyogan.",
-            "en": "Any part of a yard plant even when its identity as Niyog-niyogan is unconfirmed."
+            "fil": "Anumang bahaging pipitasin ng kapitbahay sa halaman sa bakuran.",
+            "en": "Whatever part the neighbor picks from the yard plant."
           },
           {
             "fil": "Buto ng kumpirmadong Quisqualis indica.",
             "en": "Seeds of confirmed Quisqualis indica."
           },
           {
-            "fil": "Hindi kailangang malaman ang botanical name.",
-            "en": "The botanical name need not be checked."
+            "fil": "Buto ng anumang halamang tinatawag ng kapitbahay na Niyog-niyogan.",
+            "en": "Seeds of any plant the neighbor calls Niyog-niyogan."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+        "feedback_fil": "1: Hindi kumpirmado ang halaman sa bakuran, at buto ang nakalista sa card, hindi anumang bahagi. 2: Tama: buto ng Quisqualis indica ang nakalista sa card. Hindi ito dose para sa bata. 3: Hindi patunay ng halaman ang local name; tingnan ang botanical name sa card.",
+        "feedback_en": "1: The yard plant is not confirmed, and the card lists seeds, not any part. 2: Correct: the card lists seeds of Quisqualis indica. This is not a dose for the child. 3: A local name does not confirm the plant; check the botanical name on the card."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.niyog-niyogan.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Para sa Niyog-niyogan, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
-      "takeaway_en": "For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "takeaway_fil": "Sabihing hindi pa kumpirmado ang bulate, suriin ang card at ipasuri ang bata.",
+      "takeaway_en": "Say worms are unconfirmed, check the card and refer the child.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.niyog-niyogan.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang buto para sa bata; makapipinsala ang maling halaman o dami.",
+      "takeaway_en": "No seeds for the child; a wrong plant or amount can harm.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.niyog-niyogan.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
-      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "takeaway_fil": "Ipasuri ang bata sa health center para sa diagnosis.",
+      "takeaway_en": "Refer the child to the health center for diagnosis.",
       "check": {
-        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Niyog-niyogan?",
-        "prompt_en": "What is the safe response in the Niyog-niyogan case?",
+        "prompt_fil": "Gustong pumitas ng buto ng kapitbahay para sa bata. Ano ang ligtas na tugon?",
+        "prompt_en": "The neighbor wants to pick seeds for the child. What is the safe response?",
         "options": [
           {
-            "fil": "Ipalit agad sa niresetang gamot.",
-            "en": "Replace prescribed treatment now."
+            "fil": "Hayaang pumitas ang kapitbahay at bigyan ang bata ng kaunting buto.",
+            "en": "Let the neighbor pick seeds and give the child a few."
           },
           {
-            "fil": "Kumonsulta muna sa clinician.",
-            "en": "Consult a clinician first."
+            "fil": "Bigyan ng buto ang bata batay sa table sa lumang manual.",
+            "en": "Give the child seeds using the old manual's table."
           },
           {
-            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-            "en": "Copy an old recipe without assessment."
+            "fil": "Ipasuri ang bata sa health center para sa diagnosis.",
+            "en": "Refer the child to the health center for diagnosis."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi kumpirmado ang halaman, at makapipinsala sa bata ang maling halaman o dami ng buto. 2: Huwag magbigay ng buto sa bata batay sa lumang table; walang dose na awtorisado sa lesson na ito. 3: Tama: hindi pa kumpirmado ang bulate. Sa health center ang diagnosis at deworming plan.",
+        "feedback_en": "1: The yard plant is not confirmed, and a wrong plant or seed amount can harm a child. 2: Do not give seeds to a child from the old manual's table; this lesson authorizes no dose. 3: Correct: worms are not yet confirmed. The health center diagnoses and plans deworming."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.niyog-niyogan.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ihambing ang dalawang Niyog-niyogan card kasama ang supervisor.",
+      "takeaway_en": "On Monday, compare two Niyog-niyogan cards with a supervisor.",
       "check": null
     }
   ],

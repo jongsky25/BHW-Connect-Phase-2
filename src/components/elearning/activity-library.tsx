@@ -45,7 +45,7 @@ function ActivityRunner({ activity:a, lang, close }: {activity:FacilitatorActivi
       <h3 className="font-semibold">{text("Practice worksheet — fictional details only","Practice worksheet — kathang detalye lamang")}</h3>
       {a.worksheet.map((v,i)=><div key={i} className="mt-3"><p>{v[lang]}</p><div className="h-20 border-b border-ink/30"/></div>)}
     </section>
-    <p className="mt-5 text-xs">{text("Adapted from Chapter 1 PDF pages","Inangkop mula sa Chapter 1 PDF pages")} {a.source_pages.join(", ")}. {text("Steps, timing and worksheet are facilitation adaptations.","Inangkop para sa facilitation ang hakbang, oras at worksheet.")} v{a.version}.</p>
+    <p className="mt-5 text-xs">{text("Adapted from source PDF pages","Inangkop mula sa source PDF pages")} {a.source_pages.join(", ")}. {text("Steps, timing and worksheet are facilitation adaptations.","Inangkop para sa facilitation ang hakbang, oras at worksheet.")} v{a.version}.</p>
     <style>{`@media print { body { display: block !important; min-height: 0 !important; height: auto !important; } body > *:not(.activity-runner) { display: none !important; } .activity-runner { position: static !important; display: block !important; width: 100% !important; max-width: none !important; max-height: none !important; height: auto !important; overflow: visible !important; border: 0 !important; box-shadow: none !important; margin: 0 !important; padding: 0 !important; } .activity-runner::backdrop { display: none; } }`}</style>
   </dialog>,document.body);
 }

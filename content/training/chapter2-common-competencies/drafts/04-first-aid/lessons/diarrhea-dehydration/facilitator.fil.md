@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-30 minuto: pambungad 3; modelo 3; supervised case practice 18; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.
+Sa tuyong simulation, ipinapaliwanag ng BHW ang ORS ayon sa label ng sachet, ang ligtas na tubig at patuloy na pagpapasuso, at ang referral trigger.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **30 minuto** harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 3, modelo 5, pagsasanay 15, feedback 4, self-check 3. Mga 5 minuto ang Read sa app.
+- Participant cards, ORS worksheet at talaan ng obserbasyon ng 2.4.4; job aid; isang walang-lamang ORS sachet na may label bawat tatluhan (tuyo, walang pagtitimpla).
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at ang bahaging *Tumugon sa pagtatae at dehydration* sa job aid.
+- Kumpirmahin sa midwife o RHU ang lokal na ORS sachet at ang referral para sa batang nagtatae.
+- Saklaw: walang tubig, pagtitimpla, homemade na timpla, dami mula sa alaala o gamot. Huwag piliting painumin kung hindi ligtas lumunok.
 
 ## [opening] Pambungad
 
-May malabnaw na dumi si sanggol Mina at sumususo pa. May ORS sachet ang tagapag-alaga na may sariling panuto.
+Itaas ang sachet: *"May malabnaw na dumi si baby Mina at sumususo pa. Hawak ito ng tagapag-alaga. Saan manggagaling ang panuto sa pagtimpla?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon (Read at unang slide).** *"Ano ang mayroon na ang pamilya na nakatutulong?"*
+2. **Gawin at sabihin (katapat na slide).** *"Anong apat na bagay ang itatanong mo?"*
+3. **Piliin ang unang tugon.** Self-check 1 — magkapareha muna bago ibunyag.
+4. **Halimbawang sagot.** Basahin ang sachet habang itinuturo: *"Nakasulat dito ang dami ng ligtas na tubig at paano titimplahin. Ituloy ang pagpapasuso. Kapag may danger sign, aalis tayo agad."* *"May dami ba akong sinabi mula sa alaala?"*
+5. **Saklaw at paghingi ng tulong.** *"May kapitbahay na nagtuturo ng homemade na timpla. Ano ang isasagot mo?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
+7. **Sa Lunes, gawin ito.** *"Aling sachet ang babasahin mo kasama ng susunod na pamilya?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign. Iniiwasan ni Lea ang shortcut.
+- **"Isang baso ng tubig bawat sachet."** *"Totoo ba iyan sa bawat sachet? Basahin natin ang label na ito."*
+- **"Itigil muna ang pagpapasuso."** *"Ano ang sabi ng aralin sa pagpapasuso kung kaya ng bata?"*
+- **"Painumin kahit isinusuka ang lahat."** *"Ano ang sabi ng aralin kung hindi ligtas lumunok?"*
+- **"Basahin ang label, ituloy ang pagpapasuso, i-refer kapag may danger sign."** Kumpirmahin.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.
+**"Alam naman ng lahat ang timpla ng ORS; hindi na kailangan ang sachet."** Marami ang natuto ng homemade na timpla at gustong ibahagi ito. Pero iba-iba ang sachet, at maaaring mali ang iisang timpla para sa lahat ng edad. Itama ang kaso: *"Kaninong panuto ang nakalimbag dito?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+ORS education station (*Mga station sa batang may sakit*), tuyo. Tatluhan: learner bilang BHW, partner bilang tagapag-alaga, observer. Dalawang round, may isang lakas at isang retry action sa pagitan, saka magpalit. Pupunan ng observer ang worksheet ayon sa aktuwal na sinabi. Kathang-isip lamang. Walang sachet: iguhit ang label ng lokal na pakete. Mag-isa: sagutan ang worksheet; magpaobserba mamaya.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Maaaring makapinsala ang shortcut: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. / 2: Unahin ang kaligtasan at agarang tulong. / 3: Maaaring maantala ang kinakailangang assessment.
+1. **"…Ano ang uuna?"** **"Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan."** — unang hakbang. "Ituro ang homemade na timpla…": maaaring mali. "Itigil muna ang pagpapasuso…": ituloy kung kaya ng bata.
+2. **"…Ano ang gagawin ng BHW?"** **"Basahin ang dami ng ligtas na tubig sa label ng sachet na ito."** "Sabihing isang baso…" at "Ibigay ang dami mula sa lumang training…": maaaring hindi akma.
 
-1: Hindi batayan ang kuwento para sa sariling diagnosis. / 2: Ang shortcut ay hindi ligtas: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. / 3: Obserbahan ang gawa at ang tamang referral.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.
 
-Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.
+- **Kaya na:** Itinatanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan, binabasa ang dami sa label ng sachet, ipinapaliwanag ang ligtas na tubig at pagpapasuso, at sinasabi ang referral trigger nang walang paalala.
+- **Kailangan pa ng practice:** Nagpapaliwanag mula sa label, pero kailangan ng paalala na itanong ang mga unang tanong, banggitin ang pagpapasuso o sabihin ang referral trigger.
+- **Hindi pa:** Nagbibigay ng dami o homemade na timpla mula sa alaala, pinatitigil ang pagpapasuso, o pinipilit painumin kahit hindi ligtas lumunok.
 
-Kaya na: Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger. Nagawa nang walang paalala.
+Tingnan kung binabasa muna ang label bago magbanggit ng dami. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.
+- **Kailangan pa:** ulitin lamang ang pangwakas na referral; subukan sa ibang sachet.
+- **Hindi pa:** basahin nang magkasama ang isang label, linya-linya; ulitin kasama ang partner na Kaya na.
+- Obserbahang muli ngayon o sa susunod na sesyon. Practice ang peer feedback, hindi rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 40; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 79–81.
+- Walong oras ang 2.4 sa F38; mungkahi ng authoring ang 30 minutong ito.
+- Sadyang inalis ang homemade na timpla ng source. Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Ang lokal na protocol ang masusunod.

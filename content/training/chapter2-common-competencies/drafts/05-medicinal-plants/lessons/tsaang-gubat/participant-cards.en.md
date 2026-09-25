@@ -6,11 +6,11 @@ Rosa has worsening stomach pain and wants to drink Tsaang gubat.
 
 ## Learner card
 
-Match two Tsaang gubat cards; choose Carmona retusa, leaves, use and safe next step.
+Compare the two Tsaang gubat cards and fill the worksheet. Tell Rosa what is known, what is unknown and who to consult.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Rosa. Say your stomach pain is getting worse, you want to drink Tsaang gubat and you already have leaves at home. Do not add symptoms, medicines or other details.
 
 ## Observer card
 

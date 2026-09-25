@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Check scene safety, response and normal breathing. Activate emergency help and request trained assessment. If not breathing normally, follow the locally trained CPR/AED response; if breathing, keep watching until help arrives. Lea avoids the shortcut.
+The BHW checks that the waiting area is safe, then asks, "Can you hear me?" There is no answer. She has someone call the confirmed contact and checks for normal breathing. To the relative she says, "Nothing by mouth while she cannot respond." If breathing is not normal, she follows her local CPR/AED training; if it is, she keeps watching until help arrives.
 
 ## [scope] Scope and support
 

@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-20 minuto: pambungad 3; modelo 3; supervised case practice 8; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.
+Sa simulation ng kombulsyon, nililinis ng BHW ang paligid, humihingi ng tulong, sinasabi ang oras at nakita, at magalang na tinatanggihan ang pagpigil at kutsara.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **20 minuto** harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 3, modelo 3, pagsasanay 9, feedback 3, self-check 2. Mga 5 minuto ang Read sa app.
+- Participant cards, worksheet at talaan ng obserbasyon ng 2.4.5; job aid na may kumpirmadong emergency contact; relo.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at ang bahaging *Tumugon sa kombulsyon* sa job aid.
+- Kumpirmahin sa midwife o RHU ang agarang referral para sa bata. Bag ang gaganap na bata; walang gagaya ng pangingisay.
+- Saklaw: walang pagpigil, paglalagay sa bibig, pagpapainom bago lubos na magkamalay, pagpupunas o gamot. Sa tagal: *"Kumpirmahin sa midwife o RHU."*
 
 ## [opening] Pambungad
 
-Nangingisay ang isang bata sa sahig. Gustong pigilan siya ng kapitbahay at lagyan ng kutsara ang bibig.
+*"Nangingisay ang bata sa sahig. Gustong pigilan siya ng kapitbahay at lagyan ng kutsara ang bibig. Ano ang sasabihin mo sa kapitbahay?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon (Read at unang slide).** *"Ano ang gustong gawin ng kapitbahay, at bakit?"*
+2. **Gawin at sabihin (katapat na slide).** *"Anong tatlong bagay ang gagawin mo habang nangyayari ito?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** Ipakita: *"Huwag po natin siyang pigilan o lagyan ng kahit ano ang bibig. Tulungan n'yo akong ilayo ang upuan. Nagsimula ng 3:10. Ate, tawagan ang [kumpirmadong contact]."* *"Ano ang sasabihin ko sa clinician?"*
+5. **Saklaw at paghingi ng tulong.** *"Tumigil ang pangingisay at nag-alok ng tubig ang lola. Ano ang sasabihin mo?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
+7. **Sa Lunes, gawin ito.** *"Ano ang gagamitin mo para itala ang oras ng simula?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Ganito ang ligtas na tugon sa kaso. Alisin ang panganib sa paligid, sapinan ang ulo kung kaya at tandaan ang simula. Humingi agad ng tulong para sa bata at obserbahan ang paghinga pagkatapos. Iulat ang nakita. Iniiwasan ni Lea ang shortcut.
+- **"Hawakan para hindi masaktan."** *"Gusto mo siyang protektahan. Ano ang ginagawa ng aralin?"*
+- **"Punasan ng malamig na tubig para tumigil."** *"Sinasabi ba ng aralin na napapatigil ito ng pagpupunas? Sino ang tatawagan?"*
+- **"Painumin kapag dumilat na."** *"Lubos na ba siyang may malay? Ano ang sabi ng aralin?"*
+- **"Linisin ang paligid, itala ang oras, humingi ng tulong."** Kumpirmahin.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.
+**"Lagyan ng kutsara ang bibig para hindi makagat ang dila."** Ginagawa ito ng pamilya dahil sa pagmamahal, pero maaari itong makasakit sa bata. Itama ang kaso: *"Ganyan din ang paniniwala ng kapitbahay sa kuwento. Ano ang sabi ng aralin?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+Convulsion scenario (*Pagsasanay sa pagtawag at transport*). Tatluhan: learner, partner bilang kapitbahay na nagpupumilit sa kutsara, observer. Dalawang round, may isang lakas at isang retry action sa pagitan, saka magpalit. Itatala ng observer ang paligid, oras, tawag at salita ng pagtanggi. Kathang-isip lamang. Kulang sa gamit: sabay-sabay sabihin ng grupo ang ligtas na salita; obserbahan ang bawat isa mamaya.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Unahin ang kaligtasan at agarang tulong. / 2: Maaaring maantala ang kinakailangang assessment. / 3: Maaaring makapinsala ang shortcut: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.
+1. **"…Ano ang uuna?"** **"Alisin ang panganib at sapinan ang ulo."** — unang hakbang. "Ilagay ang kutsara…": walang anuman sa bibig. "Hawakan nang mahigpit…": walang pagpigil.
+2. **"…nag-alok ng tubig ang lola…"** **"Huwag munang painumin; bantayan ang paghinga."** — walang inumin bago lubos na magkamalay. "Painumin nang paunti-unti…": masyadong maaga. "Punasan ng malamig na tubig…": hindi kapalit ng agarang tawag.
 
-1: Ang shortcut ay hindi ligtas: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon. / 2: Obserbahan ang gawa at ang tamang referral. / 3: Hindi batayan ang kuwento para sa sariling diagnosis.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.
 
-Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.
+- **Kaya na:** Nililinis ang paligid, sinasabi ang oras ng simula, humihingi ng tulong at mahinahong tinatanggihan ang pagpigil at kutsara nang walang paalala.
+- **Kailangan pa ng practice:** Ligtas ang paligid at tinatanggihan ang kutsara, pero kailangan ng paalala na tandaan ang oras ng simula o humingi ng tulong.
+- **Hindi pa:** Pinapayagan ang pagpigil o kutsara, nagpapainom bago lubos na magkamalay, o umaasa sa pagpupunas ng malamig na tubig sa halip na tumawag.
 
-Kaya na: Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara. Nagawa nang walang paalala.
+Pakinggan kung sinasabi nang malakas ang oras ng simula at kung magalang ang pagtanggi. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.
+- **Kailangan pa:** sanayin ang isang pangungusap ng pagtanggi; ulitin.
+- **Hindi pa:** isa-isahin nang magkasama ang worksheet; ulitin kasama ang partner na Kaya na.
+- Obserbahang muli ngayon o sa susunod na sesyon, bagong kaso. Practice ang peer feedback, hindi rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 41; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 82.
+- Walong oras ang 2.4 sa F38; mungkahi ng authoring ang 20 minutong ito.
+- Inalis ang lumang pagpupunas sa lagnat. Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Ang lokal na protocol ang masusunod.

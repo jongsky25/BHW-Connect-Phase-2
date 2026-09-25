@@ -4,16 +4,36 @@ Fictional practice case.
 
 BHW Datu listened to Elena. Elena asked who could see her household form. She agreed to talk again with the midwife. Datu needs to hand over the concern without telling the whole barangay.
 
-## BHW card
+## BHW card (Datu)
 
-Write a three-line handover about Elena. Ask a partner to check for assumptions or unnecessary details. Identify one change for next time.
+Write a three-line handover about Elena: what she said, what was done, and the next step. Ask a partner to check for assumptions or unnecessary details. Hand it over aloud to the midwife. Then identify one change to your own response for next time.
 
-## Resident card
+## Midwife card
 
-Handover: “Elena asked who can see the household form. I explained the visit’s purpose. She agreed to speak with the midwife tomorrow. Please confirm the time.” It does not label her “difficult.” Datu’s reflection: offer a private place earlier.
+You are the midwife receiving Datu’s handover.
 
-Keep the same concern but use your own words. Respond to what the BHW actually says. You may ask for clarification or decline an offered option. Do not introduce a medical emergency in this exercise.
+- Listen to the whole handover before asking questions.
+- If a line sounds like a label or a guess, ask: “Did Elena say that?”
+- If the next step is unclear, ask: “Who will act, and when?”
+- Do not ask for details the next step does not need.
+- If the handover asks you to confirm the time with Elena, agree to do it.
 
-## Observer
+## Observer card
 
-Give one specific strength and one action to try again. Rotate roles.
+Watch Datu. Note which words are Elena’s and which are guesses, who receives the handover, and the agreed next step. Check that his change is about his own response. Give one specific strength and one action to try again. Rotate roles.
+
+## Blank handover checklist
+
+What the resident said (her words, no labels): ____
+
+What was done: ____
+
+Next step (who will act, and when): ____
+
+Given only to (authorized colleague): ____
+
+- [ ] Only the resident’s words; no assumptions or labels.
+- [ ] Only necessary information.
+- [ ] Sent through the authorized reporting channel, not a public chat.
+
+One thing I will change next time: ____

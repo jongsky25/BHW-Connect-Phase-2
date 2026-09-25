@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner. |
+| Kaya na | Tells cough from severe obstruction, calls for help, and shows the trainer-approved response on the correct manikin for each age, without prompting. |
+| Kailangan pa ng practice | Calls for help and shows one age pathway, but needs the trainer's prompt to classify the cough or to switch manikins. |
+| Hindi pa | Uses adult thrusts on the infant manikin, uses a blind finger sweep, rehearses on a live partner, or skips the call for help. |
 
 Evidence observed: ____
 

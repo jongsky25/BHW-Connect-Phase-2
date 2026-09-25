@@ -1,4 +1,4 @@
-# 2.4.7 — First-aid practice: cpr bls orientation
+# 2.4.7 — Prepare for supervised CPR/BLS practice
 
 Use fictional details only.
 

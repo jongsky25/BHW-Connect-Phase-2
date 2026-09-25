@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
       "observable_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
-      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
-      "not_yet_en": "Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.",
+      "not_yet_fil": "Gumagamit ng adult thrust sa infant manikin o ng bulag na paghugot sa bibig, nagsasanay sa totoong kapareha, o hindi humihingi ng tulong.",
+      "not_yet_en": "Uses adult thrusts on the infant manikin, uses a blind finger sweep, rehearses on a live partner, or skips the call for help.",
       "levels": {
-        "kaya_na_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad. Nagawa nang walang paalala.",
-        "kaya_na_en": "Completes the task without prompting: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
-        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
-        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
-        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
-        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+        "kaya_na_fil": "Naihihiwalay ang ubo sa malubhang bara, humihingi ng tulong, at naipapakita ang aprubadong tugon sa tamang manikin para sa bawat edad, nang walang paalala.",
+        "kaya_na_en": "Tells cough from severe obstruction, calls for help, and shows the trainer-approved response on the correct manikin for each age, without prompting.",
+        "kailangan_practice_fil": "Humihingi ng tulong at naipapakita ang isang pathway, pero kailangan ng paalala ng trainer para iuri ang ubo o lumipat ng manikin.",
+        "kailangan_practice_en": "Calls for help and shows one age pathway, but needs the trainer's prompt to classify the cough or to switch manikins.",
+        "hindi_pa_fil": "Gumagamit ng adult thrust sa infant manikin o ng bulag na paghugot sa bibig, nagsasanay sa totoong kapareha, o hindi humihingi ng tulong.",
+        "hindi_pa_en": "Uses adult thrusts on the infant manikin, uses a blind finger sweep, rehearses on a live partner, or skips the call for help."
       }
     }
   ]

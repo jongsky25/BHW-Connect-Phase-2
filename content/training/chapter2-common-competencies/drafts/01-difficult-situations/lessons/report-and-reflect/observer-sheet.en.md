@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____  Setting: role-play
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Includes the factual concern, action and follow-up without labels; links the improvement to their own response without prompting. |
-| Kailangan practice | The report is factual but the next step is unclear; clarifies it after being asked who will act. |
+| Kailangan pa ng practice | The report is factual but the next step is unclear; clarifies it after being asked who will act. |
 | Hindi pa | Adds assumptions or labels to the handover, or shares the story with people who do not need it. |
 
 Evidence observed: ____

@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ina: “Narinig natin ang chat. Sari, gusto mo bang ibahagi ang ibang paraan?” Nagmungkahi si Sari ng personal na paanyaya. Piniling makipagtulungan ng grupo sa umiiral na samahan. Pumayag ang lider na tumanggap ng kumpirmadong balita, at si Sari na magmungkahi ng paraan para sa walang phone. Hindi hinirang ang tahimik na si Eva nang walang pahintulot.
+Ina: “Narinig natin ang chat. Sari, gusto mo bang ibahagi ang ibang paraan?” Nagmungkahi si Sari ng personal na paanyaya. Piniling makipagtulungan ng grupo sa umiiral na samahan. Pumayag ang lider na tumanggap ng kumpirmadong balita, at si Sari na magmungkahi ng paraan para sa walang cellphone. Hindi hinirang ang tahimik na si Eva nang walang pahintulot.
 
 ## [scope] Saklaw at paghingi ng tulong
 

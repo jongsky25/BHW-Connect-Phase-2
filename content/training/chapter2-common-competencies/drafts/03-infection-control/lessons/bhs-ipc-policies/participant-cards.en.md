@@ -10,7 +10,7 @@ Complete the sample policy and training checklist. Identify old guidance, a miss
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You play the nurse or IPC contact Nilo asks. Answer only what the learner asks: which version is in use, who does sterilization (specialist staff), and the exposure contact and reporting process (as written on the job aid, or "confirm with the midwife / RHU"). If the learner marks training complete after only reading, ask: "What evidence shows you can do it?" Do not authorize any task or give clinical instructions.
 
 ## Observer card
 

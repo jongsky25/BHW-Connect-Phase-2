@@ -10,8 +10,8 @@ Complete the group’s action plan. Add a timely-update measure and a response t
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play a core-group member. After the learner completes the plan, report that some of your invitations were not delivered. If asked, give a practical reason in one sentence. Do not add personal or clinical details or promise resources.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Note whether the plan names an action, owner, confirmed resources, date and a timely-update measure, and how the learner responds to the unfinished task. Give one strength and one next action, then the learner retries. Staff rate with the separate observation sheet.

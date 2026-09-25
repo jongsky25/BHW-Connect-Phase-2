@@ -1,57 +1,75 @@
 ## [purpose] Layunin
 
-20 minuto: pambungad 3; modelo 3; supervised case practice 8; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.
+Sa kathang-isip na kaso ng pananakit ng dibdib, humihingi ang BHW ng agarang medikal na tulong, iniuulat ang simula at sintomas, at ipinauubaya ang pasya sa gamot sa lokal na protocol.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 20 minuto sa harapang sesyon (bahagi ng araling ito sa 480 minutong plano ng subchapter): pambungad 2; modelo 4; pagsasanay 9; feedback 3; checks 2. Mga 3 minuto ang Read sa app.
+- **Kagamitan:** participant cards, worksheet at observation sheet ng 2.4.16 bawat tatluhan; ang job aid; telepono o prop para sa tawag.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at dalawang check.
+- Kumpirmahin sa RHU ang emergency contact at kung sino ang nagpapasya sa gamot sa pananakit ng dibdib. Isulat sa job aid.
+- **Hangganan:** walang totoong tablet. Huwag magturo ng dosis o schedule ng aspirin, o magbanggit ng gamot. Sa iba pa: *"Ikumpirma natin sa midwife, RHU o lokal na protocol."*
 
 ## [opening] Pambungad
 
-May bagong paninikip ng dibdib at namumutla ang adult. Nag-alok ang kapitbahay ng tablet mula sa lumang presentation.
+Basahin ang kaso: may bagong paninikip ng dibdib at namumutla ang adult; nag-alok ng tablet ang kapitbahay. Itanong: *"Gustong tumulong ng kapitbahay. Sino ang magpapasya tungkol sa gamot?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katugmang slide ang bawat heading ng Read.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon".** Itanong: *"Ano ang nakikita mo, at ano ang iniaalok?"*
+2. **"Gawin at sabihin".** Itanong: *"Anong tatlong bagay ang iuulat mo?"*
+3. **"Piliin ang unang tugon".** Self-check 1 — magkapares muna ang sasagot.
+4. **"Halimbawang sagot".** Imodelo ang tawag ni Lea; may mag-aalok ng tablet. Itanong: *"Ano ang sinabi ni Lea tungkol sa tablet?"*
+5. **"Saklaw at paghingi ng tulong".** Itanong: *"Bakit hindi muna maghanap ng tablet bago tumawag?"*
+6. **"Subukan sa sitwasyon".** Self-check 2 — magkapares muna ang sasagot.
+7. **"Sa Lunes, gawin ito".** Ipasabi ang emergency contact ng bawat isa, saka magsanay.
 
-Ganito ang ligtas na tugon sa kaso. Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Ibigay ang tablet ng kapitbahay."** Itanong: *"Kanino ang tablet, at sino ang magpapasya?"*
+- **"Maghanap muna ng aspirin, saka tumawag."** Sabi ng aralin: huwag ipagpaliban ang tawag.
+- **"Pagpahingahin muna at tingnan."** Tama ang pahinga, pero naaantala ang assessment. Itanong: *"Kailan ka tatawag?"*
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Aspirin ang first aid sa pananakit ng dibdib."** May aspirin schedule sa lumang presentation, at may tablet sa bahay. Hindi ito isinama ng aralin: ayon sa lokal na protocol ang gamot. Itama ang kaso, hindi ang tao: *"Ganyan din ang akala ng kapitbahay. Ano ang ginawa ni Lea?"*
 
-Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Emergency referral rehearsal.** Tatluhan, tatlong round na tig-3 minuto; kalahok ang bawat isa minsan. Kapareha: ang kapitbahay na nag-aalok ng tablet. Kalahok: tumatawag, nag-uulat, tumatanggi sa tablet. Tagamasid: pinupunan ang worksheet; isang lakas at isang retry action. Kathang-isip na detalye lamang. Mag-isa: sabihin nang malakas ang tawag, punan ang worksheet, at magpaobserba sa staff sa ibang araw.
 
-1: Maaaring makapinsala ang shortcut: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet. / 2: Unahin ang kaligtasan at agarang tulong. / 3: Maaaring maantala ang kinakailangang assessment.
+## [answer-key] Susi sa self-check
 
-1: Hindi batayan ang kuwento para sa sariling diagnosis. / 2: Ang shortcut ay hindi ligtas: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet. / 3: Obserbahan ang gawa at ang tamang referral.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Tumawag agad ng medikal na tulong."**
+  - "Ibigay ang isang tablet ng kapitbahay": walang gamot ng iba; ayon sa protocol ang gamot.
+  - "Maghanap muna ng aspirin, saka tumawag": huwag ipagpaliban ang tawag.
+- **Check 2: "Sa practice na tawag, ano ang dapat mong iulat?"** Tama: **"Kailan nagsimula ang paninikip, at ang sintomas."**
+  - "Ang sarili mong hula kung ano ang sanhi ng sakit": iulat ang nakikita.
+  - "Ang dosis ng aspirin na balak mong ibigay": hindi nagrereseta ang BHW.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.
+Bantayan ang: Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.
 
-Kaya na: Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin. Nagawa nang walang paalala.
+- **Kaya na:** Agad tumatawag sa emergency contact, iniuulat ang simula, sintomas at alam na gamot o allergy, at tinatanggihan ang tablet, nang walang paalala.
+- **Kailangan pa ng practice:** Tumatawag ng tulong at tinatanggihan ang tablet, pero kailangan ng paalala para iulat ang simula o alam na gamot at allergy.
+- **Hindi pa:** Nagbibigay o nagmumungkahi ng tablet o aspirin schedule, o ipinagpapaliban ang tawag para maghanap ng gamot.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** isang retry action, hal. *"Unahin sa tawag kung kailan nagsimula ang sakit."* Obserbahan muli ngayong sesyon; kamag-anak ang mag-aalok ng tablet.
+- **Hindi pa:** imodelo muli ang tawag ni Lea, saka ulitin kasama ang kaparehang Kaya na. Obserbahan muli sa susunod na round.
+- Practice ang peer feedback, hindi rating ng staff.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 48; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 68.
+- Hinati ang 20 minuto mula sa 8 oras ng F38, na walang oras bawat kaso.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

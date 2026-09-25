@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes action, boundary, handover and follow-up without prompts. |
-| Kailangan practice | Chooses the first action but needs a prompt for verification or follow-up. |
-| Hindi pa | Uses an unverified plan or exceeds the role. |
+| Kaya na | States the advisory source and time, keeps confirmed apart from pending, and names the contact to verify, without prompts. |
+| Kailangan pa ng practice | Gives the confirmed action but needs a prompt to state the source and time or the contact to verify. |
+| Hindi pa | Relays the old directory, an unconfirmed route or a self-made evacuation order as fact. |
 
 Evidence observed: ____
 
