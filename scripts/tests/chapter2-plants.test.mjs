@@ -50,7 +50,8 @@ test('urgent concerns in Lagundi, Bayabas and Sambong cases go to clinical asses
 test('learner instructions exclude numeric plant doses and actual preparation',()=>{
  const text=chapterModule.lessons.flatMap(l=>l.revision.read_sections.map(s=>s.body_en)).join(' ');
  assert.ok(!/\b(?:cups?|tablespoons?|teaspoons?|seeds?)\s*(?:twice|thrice|3 times)|\b[½⅓]|\b\d+\s*(?:cups?|tablespoons?|teaspoons?)\b/i.test(text));
- assert.match(prose('plant-integrated-practice'),/dry props only/);
+ assert.match(prose('plant-integrated-practice'),/identification only, with dry props/);
+ assert.doesNotMatch(prose('plant-integrated-practice'),/preparation planning/);
  assert.match(prose('plant-integrated-practice'),/No hot water/);
 });
 test('Chapter 2.3 owner approval is recorded without clinical sign-off',()=>{

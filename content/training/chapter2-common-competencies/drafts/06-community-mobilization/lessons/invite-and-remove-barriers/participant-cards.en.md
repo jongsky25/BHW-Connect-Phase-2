@@ -10,8 +10,8 @@ Create rows for Ruben, Sari and Eva. Add each barrier, inviter, invitation metho
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Ruben, Sari or Eva, whichever row the learner is filling. State your barrier: daytime work, no phone, or nervousness in a large group. Ask how the invitation and follow-up will work for you. Do not add personal or clinical details.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Note the barrier, inviter and follow-up the learner names, and whether another way to contribute is offered. Give one strength and one next action, then the learner retries. Staff rate with the separate observation sheet.

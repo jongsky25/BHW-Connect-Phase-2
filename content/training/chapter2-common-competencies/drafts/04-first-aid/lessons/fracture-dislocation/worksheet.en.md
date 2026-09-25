@@ -1,4 +1,4 @@
-# 2.4.11 — First-aid practice: fracture dislocation
+# 2.4.11 — Respond to suspected fractures
 
 Use fictional details only.
 

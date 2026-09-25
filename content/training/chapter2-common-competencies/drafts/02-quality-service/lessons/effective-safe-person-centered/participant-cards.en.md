@@ -10,7 +10,7 @@ Compare the two encounters. For each dimension, record the evidence and one impr
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Nena, the resident asking about the schedule. Ask when you can return and say what time you can manage. If Mila answers from the old message, ask: "Is that time confirmed?" On the retry, say you work mornings. Do not add personal or clinical details.
 
 ## Observer card
 

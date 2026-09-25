@@ -45,28 +45,28 @@
         "c2.firstaid.snakebite.response.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Panatilihing kalmado at hindi gumagalaw; tanggihan ang tali at paglalakad.",
+      "takeaway_en": "Keep him calm and still; decline the cord and the walk.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Hawak ng mga kasama ang tali. Ano ang unang tugon?",
+        "prompt_en": "The friends are holding a cord. What comes first?",
         "options": [
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Hayaang itali muna ng mga kasama ang tali sa binti.",
+            "en": "Let the friends tie the cord first."
           },
           {
-            "fil": "Panatilihing hindi gumagalaw.",
-            "en": "Keep the person still."
+            "fil": "Panatilihin siyang kalmado at hindi gumagalaw.",
+            "en": "Keep him calm and still."
           },
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Alalayan siyang maglakad papunta sa kalsada.",
+            "en": "Help him walk to the road."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
-        "feedback_en": "1: The shortcut can cause harm: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+        "feedback_fil": "1: Tourniquet ang mahigpit na tali, at nakapipinsala ito ayon sa aralin. Tanggihan ito nang magalang. 2: Tama. Panatilihin siyang kalmado at hindi gumagalaw, saka ayusin ang transport. 3: Hindi siya dapat maglakad. Panatilihin siyang hindi gumagalaw at hayaang ang transport ang pumunta sa kanya.",
+        "feedback_en": "1: A tight cord is a tourniquet, which the lesson lists as harmful. Decline it kindly. 2: Correct. Keep him calm and as still as possible, then arrange transport. 3: He should not walk. Keep him still and let transport come to him."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.snakebite.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.",
-      "takeaway_en": "Reject the cord and walking plan, keep the person still and call for transport.",
+      "takeaway_fil": "Tinatanggihan ni Lea ang tali at paglalakad, pinananatili siyang hindi gumagalaw at tumatawag ng transport kasama ang oras ng kagat.",
+      "takeaway_en": "Lea declines the cord and the walk, keeps him still and calls transport with the bite time.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.snakebite.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang tourniquet, paghiwa, pagsipsip, yelo, paghabol sa ahas o hindi kailangang paglalakad.",
+      "takeaway_en": "No tourniquet, cutting, sucking, ice, chasing the snake or needless walking.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.snakebite.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Tumawag ng transport kasama ang oras ng kagat at ang nakita.",
+      "takeaway_en": "Call for transport with the bite time and what you see.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa practice, ano ang dapat kasama sa tawag mo para sa transport?",
+        "prompt_en": "In the practice, what should your call for transport include?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ang uri ng ahas, kapag nahuli na ng mga kasama.",
+            "en": "The type of snake, once the friends catch it."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Na nilagyan na ng yelo ang kagat.",
+            "en": "That ice is already on the bite."
           },
           {
-            "fil": "Ayusin ang mabilis na transport.",
-            "en": "Arrange rapid transport."
+            "fil": "Ang oras ng kagat at ang nakikita mo.",
+            "en": "The time of the bite and what you see."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. 3: Observe the task and appropriate referral."
+        "feedback_fil": "1: Huwag habulin ang ahas. Ang oras at ang nakita ang iulat. 2: Huwag lagyan ng yelo. Kasama ito sa mapanganib na shortcut sa aralin. 3: Tama. Iulat ang oras ng kagat at ang nakita habang inaayos ang transport.",
+        "feedback_en": "1: Do not chase the snake. Report the time and what you see instead. 2: Do not apply ice. It is on the lesson's list of harmful shortcuts. 3: Correct. Report the bite time and your observations while transport is arranged."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.snakebite.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang pagtanggi sa tali at ang pagtawag ng transport.",
+      "takeaway_en": "Practise declining the cord and calling for transport.",
       "check": null
     }
   ],

@@ -1,4 +1,4 @@
-# 2.4.8 — First-aid practice: drowning response
+# 2.4.8 — Ligtas na tumugon sa pagkalunod
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,11 +6,11 @@ May taong nahihirapan sa tubig sa kanal. Nasa tuyong lupa ang BHW at walang wate
 
 ## Card ng kalahok
 
-Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.
+Manatili sa likod ng tape (gilid ng kanal). Tawagin ang sanay na rescuer, sabihin ang lokasyon at sabihing kailangan ng medikal na pagsusuri. Huwag lumusong.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Ikaw ang saksi sa kanal. Udyukan ang kalahok na lumusong: "Bilis, lumusong ka at kunin mo siya!" Umulit nang isang beses kung tumanggi siya. Huwag magdagdag ng pinsala o ibang clinical na detalye.
 
 ## Card ng tagamasid
 

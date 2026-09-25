@@ -1,4 +1,4 @@
-# 2.4.16 — First-aid practice: chest pain referral
+# 2.4.16 — Iugnay sa agarang tulong ang may pananakit ng dibdib
 
 Kathang-isip na detalye lamang.
 

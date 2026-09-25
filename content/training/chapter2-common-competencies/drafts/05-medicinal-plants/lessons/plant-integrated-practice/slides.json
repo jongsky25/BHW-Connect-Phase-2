@@ -10,11 +10,11 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Tatlong residente ang nagtatanong tungkol sa Lagundi, Ampala",
-    "display_en": "Three residents ask about Lagundi, Ampalaya and Bayabas. The",
+    "display_fil": "Ben: Lagundi, hirap sa paghinga\nJoel: Ampalaya, diabetes medicine\nMara: Bayabas, sugat na may nana",
+    "display_en": "Ben: Lagundi, breathing difficulty\nJoel: Ampalaya, diabetes medicine\nMara: Bayabas, wound with pus",
     "check": null,
-    "narration_fil": "Tatlong residente ang nagtatanong tungkol sa Lagundi, Ampalaya at Bayabas. May ubo na may hirap sa paghinga, diabetes medicine at sugat na may nana sa tatlong card.",
-    "narration_en": "Three residents ask about Lagundi, Ampalaya and Bayabas. Their cards include breathing difficulty, diabetes medicine and a wound with pus."
+    "narration_fil": "Tatlong residente ang nagtatanong tungkol sa halaman. Nagtanong si Ben tungkol sa Lagundi at hirap siyang huminga. Nagtanong si Joel tungkol sa Ampalaya at umiinom siya ng diabetes medicine. Nagtanong si Mara tungkol sa Bayabas at may sugat siyang may nana.",
+    "narration_en": "Three residents ask about plants. Ben asks about Lagundi and has breathing difficulty. Joel asks about Ampalaya and takes diabetes medicine. Mara asks about Bayabas and has a wound with pus."
   },
   {
     "id": "slide-action",
@@ -29,11 +29,11 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Kumpirmahin ang halaman.\nBasahin ang botanical name.\nTingnan ang bahagi.",
-    "display_en": "Confirm the plant.\nRead the botanical name.\nCheck the part.",
+    "display_fil": "Itugma ang halaman, botanical name at gamit.\nAgad i-refer ang hirap sa paghinga at sugat.\nHuwag palitan ang diabetes medicine.\nDry props lamang; walang produkto.",
+    "display_en": "Match plant, botanical name and listed use.\nEscalate breathing difficulty and the wound.\nKeep diabetes medicine unchanged.\nDry props only; no product.",
     "check": null,
-    "narration_fil": "Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.",
-    "narration_en": "Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product."
+    "narration_fil": "Itugma ang bawat halaman sa botanical name at nakalistang gamit. Agad i-refer ang hirap sa paghinga at ang infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, pagkilala lamang ang ipakita, gamit ang dry props; walang ibibigay na produkto.",
+    "narration_en": "Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification only, with dry props; dispense no product."
   },
   {
     "id": "slide-check-start",
@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Tatlong residente, tatlong halaman.\nAno ang una mong gagawin?",
+    "display_en": "Three residents, three plants.\nWhat do you do first?",
     "check": {
-      "prompt_fil": "Alin ang unang ligtas na hakbang?",
-      "prompt_en": "What is the first safe step?",
+      "prompt_fil": "Ano ang una mong gagawin para sa tatlong residente?",
+      "prompt_en": "What do you do first for the three residents?",
       "options": [
         {
-          "fil": "Manghula mula sa pangalan o larawan.",
-          "en": "Guess from a name or picture."
+          "fil": "Kumpirmahin sa kasalukuyang card ang identity ng bawat halaman.",
+          "en": "Confirm each plant's identity on its current card."
         },
         {
-          "fil": "Kumpirmahin ang identity at source.",
-          "en": "Confirm identity and source."
+          "fil": "Hulaan ang bawat halaman mula lamang sa local name o sa isang larawan.",
+          "en": "Guess each plant from its local name or from a picture."
         },
         {
-          "fil": "Ibigay agad ang lumang dose.",
-          "en": "Give the old dose immediately."
+          "fil": "Sabihin sa bawat residente kung gaano karami ang gagamitin.",
+          "en": "Tell each resident how much of the plant to use."
         }
       ],
-      "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring magkamali sa halaman. 2: Magandang simula ang kumpirmadong reference. 3: Wala pang clinical at lokal na pahintulot.",
-      "feedback_en": "1: The plant may be misidentified. 2: A verified reference is the proper start. 3: Clinical and local authorization are missing."
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tama: ang kumpirmadong card ang tamang simula sa tatlong kaso. 2: Maaaring magturo sa maling halaman ang pangalan o larawan. 3: Walang dose sa practice; kulang pa ang clinical at lokal na awtorisasyon.",
+      "feedback_en": "1: Correct: a verified card is the proper start for all three cases. 2: A name or picture can point to the wrong plant. 3: No dose is given in practice; clinical and local authorization are missing."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Ihiwalay ang gamit sa reseta.\nItanong ang sintomas at gamot.",
-    "display_en": "Separate listed use from a prescription.\nAsk about symptoms and medicine.",
+    "display_fil": "Ben at Mara: i-refer muna.\nJoel: walang palit na gamot; sa clinician niya.\nBawat worksheet: kulang ang awtorisasyon.",
+    "display_en": "Ben and Mara: escalate first.\nJoel: medicine unchanged; ask his clinician.\nEach worksheet: authorization missing.",
     "check": null,
-    "narration_fil": "Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.",
-    "narration_en": "The BHW reads the current card and listens to the resident. Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product."
+    "narration_fil": "Binasa ng BHW ang bawat kasalukuyang card at pinakinggan ang bawat residente. Inuna niyang i-refer ang hirap sa paghinga ni Ben at ang sugat ni Mara na may nana. Kay Joel, sinabi niyang hindi ipapalit ang Ampalaya sa diabetes medicine. Dinala niya ang tanong ni Joel sa clinician nito. Sa bawat worksheet, minarkahan niyang kulang ang local authorization.",
+    "narration_en": "The BHW reads each current card and listens to each resident. Ben's breathing difficulty and Mara's wound with pus are escalated first. For Joel, the BHW says Ampalaya does not replace his diabetes medicine and takes his question to his clinician. On each worksheet, the BHW marks local authorization as missing."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Walang sariling dose.\nWalang tunay na pagtimpla.\nKumpirmahin ang trainer.",
-    "display_en": "No independent dose.\nNo real preparation.\nConfirm the trainer.",
+    "display_fil": "Hindi clinical sign-off ang pagdalo sa station.\nWalang mainit na tubig, ingestion o dose.\nWalang ibibigay na produkto.",
+    "display_en": "Station attendance is not clinical sign-off.\nNo hot water, ingestion or dose.\nNo product is dispensed.",
     "check": null,
     "narration_fil": "Ang pagdalo sa station ay hindi clinical sign-off. Walang mainit na tubig, aktuwal na ingestion, dosage o pagbibigay ng halamang gamot sa practice.",
     "narration_en": "Attendance at the station is not clinical sign-off. No hot water, ingestion, dose or dispensing occurs in practice."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Na-check na ang cards.\nAno ang ligtas na tugon sa bawat residente?",
+    "display_en": "The cards are checked.\nWhat is the safe response for each resident?",
     "check": {
-      "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
-      "prompt_en": "What follows the card check?",
+      "prompt_fil": "Pagkatapos ng card check, ano ang ligtas na tugon?",
+      "prompt_en": "After the card check, what is the safe response?",
       "options": [
         {
-          "fil": "Baguhin ang gamot ng residente.",
-          "en": "Change the resident’s medicine."
+          "fil": "Sabihin kay Joel na puwedeng ipalit ang Ampalaya sa diabetes medicine niya.",
+          "en": "Tell Joel he can use Ampalaya in place of his diabetes medicine."
         },
         {
-          "fil": "Itago ang ibang sintomas sa staff.",
-          "en": "Withhold other symptoms from staff."
+          "fil": "Imungkahi ang Lagundi kay Ben at Bayabas kay Mara bago mag-refer.",
+          "en": "Suggest Lagundi for Ben and Bayabas for Mara before any referral."
         },
         {
-          "fil": "Kumonsulta sa clinician.",
-          "en": "Consult a clinician."
+          "fil": "I-refer agad sina Ben at Mara; dalhin sa clinician ni Joel ang tanong niya.",
+          "en": "Escalate Ben and Mara; take Joel's question to his clinician."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
-      "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+      "feedback_fil": "1: Huwag palitan ang diabetes medicine; hindi awtorisado ang pagpapalit ng gamot. 2: Kailangang i-refer muna ang hirap sa paghinga at infected wound, hindi halaman. 3: Tama: i-refer agad ang agarang senyales; ang clinician ni Joel ang magpapasya sa gamot niya.",
+      "feedback_en": "1: Do not replace diabetes medicine; changing treatment is not authorized. 2: Breathing difficulty and an infected wound need escalation first, not a plant. 3: Correct: escalate the urgent signs; Joel's clinician decides about his medicine."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

@@ -1,4 +1,4 @@
-# 2.4.7 — First-aid practice: cpr bls orientation
+# 2.4.7 — Maghanda sa supervised CPR/BLS practice
 
 Kathang-isip na detalye lamang.
 

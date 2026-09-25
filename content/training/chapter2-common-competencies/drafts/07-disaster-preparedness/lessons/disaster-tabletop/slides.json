@@ -10,8 +10,8 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: disaster tabletop",
-    "display_en": "Case: disaster tabletop",
+    "display_fil": "Sabay ang baha at evacuation advisory.\nMay pamilyang kailangan ng tulong sa paglikas.\nNauubos ang gamot; hindi tiyak ang tubig.\nPagod ang volunteer.",
+    "display_en": "Flooding and an evacuation advisory coincide.\nA family needs help leaving; medicine runs low.\nShelter water is uncertain.\nA volunteer is exhausted.",
     "check": null,
     "narration_fil": "Sa fictional tabletop, may baha at evacuation advisory. May pamilyang kailangan ng tulong sa paglikas. Nauubos ang gamot ng residente. Hindi tiyak ang tubig; pagod ang volunteer.",
     "narration_en": "In a fictional tabletop, flooding and an evacuation advisory coincide. A family needs help leaving, a resident’s medicine is running low, shelter water is uncertain and a volunteer is exhausted."
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Ano ang unang ligtas na hakbang?",
-      "prompt_en": "What is the first safe step?",
+      "prompt_fil": "Sabay-sabay ang apat na isyu. Saan magsisimula ang grupo?",
+      "prompt_en": "Four issues arrive together. Where does the group start?",
       "options": [
         {
-          "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
-          "en": "Assume the old information is still correct and immediately relay it to everyone."
+          "fil": "Unahin ang gamot, dahil nauubos na ito.",
+          "en": "Start with the medicine, because it is running out."
         },
         {
           "fil": "Unahin ang kaligtasan; iugnay ang serbisyo, kumpirmahin ang handover at follow-up.",
           "en": "Prioritize safety; link services, confirm handover and follow-up."
         },
         {
-          "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
-          "en": "Decide alone without local confirmation or an official warning."
+          "fil": "Sabihan ang pagod na volunteer na magpatuloy hanggang matapos ang pagtugon.",
+          "en": "Tell the exhausted volunteer to keep going until the response is over."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
-      "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+      "feedback_fil": "1: Mahalaga ito, pero unahin kung sino ang nasa panganib ngayon. 2: Una ang ligtas na paglikas; saka ipapasa ang bawat isyu sa kumpirmadong lead na may follow-up. 3: Dapat magpahinga at humingi ng suporta ang responder kung hindi ligtas magpatuloy.",
+      "feedback_en": "1: It matters, but first ask who is in danger right now. 2: Safe evacuation comes first; then each issue goes to a confirmed lead with follow-up. 3: A responder should rest and seek support when it is unsafe to continue."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,8 +81,8 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Suriin ang opisyal na plano.\nKumpirmahin ang lokal na contact.",
-    "display_en": "Check the official plan.\nConfirm the local contact.",
+    "display_fil": "1. Ligtas na paglikas at agarang referral.\n2. Gamot at tubig sa tamang staff.\n3. Itala ang pagtanggap.\n4. Follow-up at kapalit sa pagod na volunteer.",
+    "display_en": "1. Safe evacuation and urgent referral.\n2. Medicine and water to the right staff.\n3. Record acknowledgement.\n4. Follow-up and relief for the volunteer.",
     "check": null,
     "narration_fil": "Inuna ng grupo ang ligtas na paglilikas at agarang referral. Ipinasa ang gamot at tubig sa tamang staff at itinala ang pagtanggap. Nagtakda sila ng follow-up at kapalit sa pagod na volunteer.",
     "narration_en": "The group prioritizes safe evacuation and urgent referral. It routes medicine and water to the appropriate staff, records acknowledgement, and arranges follow-up and relief for the exhausted volunteer."
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag manghula.\nIgalang ang tungkulin at privacy.",
-    "display_en": "Do not guess.\nRespect role and privacy.",
+    "display_fil": "Tabletop lamang: hindi incident command,\nclinical assessment, tubig testing o live drill.\nKumpirmahin ang lahat ng contact at ruta.",
+    "display_en": "Tabletop only: not incident command,\nclinical assessment, water testing or a live drill.\nVerify every contact and route.",
     "check": null,
     "narration_fil": "Tabletop lamang ito. Hindi kapalit ng opisyal na incident command, clinical assessment, tubig testing o live drill. Kumpirmahin ang lahat ng contact at ruta bago gamitin.",
     "narration_en": "This is a tabletop only. It does not replace official incident command, clinical assessment, water testing or a live drill. Verify every contact and route before use."
@@ -116,25 +116,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
-      "prompt_en": "What is the safe next step?",
+      "prompt_fil": "May lead na ang bawat isyu. Ano ang ligtas na susunod na hakbang?",
+      "prompt_en": "Each issue now has a lead. What is the safe next step?",
       "options": [
         {
-          "fil": "Iwanang walang kapalit ang pagod na responder at walang follow-up ang referral. Huwag nang tanungin ang awtoridad o ang taong apektado.",
-          "en": "Leave the exhausted responder without relief and the referral without follow-up. Do not ask the authority or the affected person."
+          "fil": "Iwanang walang kapalit ang pagod na responder at walang follow-up ang referral.",
+          "en": "Leave the exhausted responder without relief and the referral without follow-up."
         },
         {
-          "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
-          "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          "fil": "Itala ang bawat pagtanggap, magtakda ng follow-up at kapalit ng volunteer.",
+          "en": "Record each acknowledgement, set follow-up and relieve the volunteer."
         },
         {
-          "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
-          "en": "Inform the lead, record handover, and follow up."
+          "fil": "Gamitin ang anumang contact na naaalala mo kahit hindi ito kumpirmado.",
+          "en": "Use any contact you remember, even if it is not confirmed."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
-      "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong: kailangan ng follow-up ang volunteer at ang referral. 2: Sa naitalang pagtanggap at follow-up, may may-ari ang bawat isyu, kasama ang pag-aalaga sa responder. 3: Kumpirmahin ang lahat ng contact at ruta bago gamitin.",
+      "feedback_en": "1: This may harm or delay help: the volunteer and the referral both need follow-up. 2: Recorded acknowledgement and follow-up keep every issue owned, including responder care. 3: Verify every contact and route before use."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes: ipa-verify ang card.\nItala ang petsa at follow-up.",
-    "display_en": "On Monday: verify the card.\nRecord date and follow-up.",
+    "display_fil": "Sa Lunes: ipa-review ang tabletop record\nsa DRRM at health leads. Itala ang puwang\nsa plano at petsa ng susunod na pagsasanay.",
+    "display_en": "On Monday: DRRM and health leads review\nthe tabletop record. Add gaps to the plan;\ndate the next exercise.",
     "check": null,
     "narration_fil": "Sa Lunes, ipa-review ang tabletop record sa DRRM at health leads. Itala ang puwang sa lokal na plano at petsa ng muling pagsasanay.",
     "narration_en": "On Monday, ask DRRM and health leads to review the tabletop record; add identified gaps to the local plan and date the next exercise."

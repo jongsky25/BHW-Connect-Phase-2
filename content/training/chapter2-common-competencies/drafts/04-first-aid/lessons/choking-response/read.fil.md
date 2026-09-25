@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at sundin ang kasalukuyang choking training ayon sa edad. Ihiwalay ang mabisang ubo sa malubhang bara. Magsanay sa adult at infant manikin sa gabay ng trainer. Iniiwasan ni Lea ang shortcut.
+Nakita ni Lea na hindi makapagsalita o makaubo nang mabisa ang adult. Hindi ito mabisang ubo, kaya humihingi agad siya ng tulong. Sa adult manikin, sinusunod niya ang pathway na aprubado ng trainer. Sa card ng sanggol, lumilipat siya sa infant manikin at infant pathway. Walang adult thrust at walang bulag na paghugot sa bibig.
 
 ## [scope] Saklaw at paghingi ng tulong
 

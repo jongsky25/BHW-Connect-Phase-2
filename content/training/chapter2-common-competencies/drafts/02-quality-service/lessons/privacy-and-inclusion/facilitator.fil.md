@@ -1,57 +1,76 @@
 ## [purpose] Layunin
 
-180 minuto: pambungad 10; modelo 15; practice 115; feedback/pag-ulit 20; talakayan 10; plano sa trabaho 10. Gamitin ang pitong Slides, cards, worksheet at observer sheet. Magpalit ng papel at umulit gamit ang isang binagong detalye.
-
-Sa usapan kay Alex, protektahan ang pribadong detalye at mag-alok ng tulong sa pag-unawa nang walang panghuhusga.
+Bilang Lorna, hindi inilalantad ng BHW ang kondisyon ni Alex, nakikipagkasundo sa lugar at tulong, at ipinaliliwanag ang susunod na hakbang nang walang panghuhusga.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang apat na session sa kalidad ng serbisyo. Hiwalay ito sa digital na pagbabasa. Gumamit ng paghahambing, practice at feedback; hindi patunay ng kakayahan ang oras lamang. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 180 minutong harapan (bahagi ng aralin sa 600 minutong plano ng subchapter): pambungad 10, modelo 15, role-play 115, feedback at pag-ulit 25, mga check at talakayan 15. Pagbasa sa app: mga 5 minuto.
+- **Kagamitan:** cards na *2.2.2 Pribado at pantay na usapan* (isang set bawat tatluhan), worksheet, talaan ng obserbasyon, blangkong form, job aid na *Mataas na kalidad ng serbisyo*, mga upuan.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Sagutan muna ang dalawang check sa app.
+- Kumpirmahin ang lokal na proseso sa pagbabahagi ng impormasyon, ang supervisor, at ang pribadong lugar sa BHS.
+- **Saklaw:** huwag pangalanan o imbentuhin ang kondisyon ni Alex. Huwag ituro ang pangako ng ganap na lihim. Blangkong form lamang; walang litrato ng form.
 
 ## [opening] Pambungad
 
-Sa pila, sinabi ni Alex kay BHW Lorna na nahihirapan siyang basahin ang form. May taong nagtanong nang malakas kung ano ang kondisyon niya. Ayaw ni Alex na marinig ng iba ang sagot. Kailangan niya ng tulong nang hindi napapahiya.
+Paupuin ang mga boluntaryo bilang "pila." Basahin ang kaso ni Alex, saka itanong: *"Narinig ng lahat ang tanong. Ano ang una ninyong sasabihin kay Alex, at saan?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bahagi ng Read at katugmang slide ang bawat hakbang.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Ano kaya ang nararamdaman ni Alex?"*
+2. **"Gawin at sabihin."** Itanong: *"Alin dito ang magagawa nang hindi naririnig ng pila?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapareha.
+4. **"Halimbawang sagot."** Sabihin ang linya ni Lorna: *"Doon po ba tayo mag-usap? Anong tulong ang gusto ninyo sa form?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Hindi sigurado kung sino ang dapat makaalam? Kanino magtatanong?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapareha.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Saan sa BHS natin puwedeng mag-alok ng pribadong usapan?"*
 
-Lorna: “Doon po ba tayo mag-usap? Anong tulong ang gusto ninyo sa form?” Alex: “Pakibasa po nang dahan-dahan.” Sinunod ni Lorna ang napagkasunduan. Hindi niya sinabi sa pila ang kondisyon ni Alex. Tinanong niya kung nais nitong may kasamang tumulong, bago mag-imbita ng iba.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Sasabihan kong huwag makialam."** Nakakatawag-pansin ang pagsaway. Huwag sagutin; mag-alok ng pribadong usapan.
+- **"Babasahin ko na ang form doon mismo."** Mabait at mabilis. Itanong: *"Sino pa ang makaririnig?"*
+- **"Puwedeng tumulong ang kapitbahay ni Alex."** Kung papayag si Alex; tanungin muna siya.
+- **"Mag-usap sa tabi at itanong ang gustong tulong."** Tama. Ipasabi ito.
 
-Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Puwedeng tumulong ang kapitbahay; kilala naman nila si Alex."** Natural at mabait ang tulong ng kakilala. Pero hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form. Itanong: *"Sino ang magpapasya kung sino ang tutulong?"* Hayaang sila ang sumagot: "si Alex."
 
-Gumanap bilang Lorna, Alex at tagamasid. Mag-alok ng pribadong usapan, itanong ang gustong tulong at ipaliwanag ang susunod na hakbang. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Pribado at pantay na usapan.** Tatluhan bilang Lorna, Alex at tagamasid; magpalitan hanggang lahat ay naging Lorna (tatlong round, mga 35 minuto bawat isa). Umulit nang may binagong detalye (gusto ni Alex ng kasamang tumulong). Isusulat ng tagamasid ang aktuwal na salita ni Lorna sa apat na hanay ng worksheet. Kathang-isip na detalye lamang. Mag-isa: sanayin ang linya ni Lorna kasama ang kapamilya; obserbasyon ng staff pagkatapos.
 
-1: Inilalantad nito ang impormasyong hindi kailangang marinig ng iba. / 2: Dinadagdagan nito ang pagbabahagi nang hindi muna tinatanong si Alex. / 3: Tinutugunan nito ang alalahanin nang hindi inilalantad ang kondisyon.
+## [answer-key] Susi sa self-check
 
-1: Tumutugon ito sa hiniling na tulong at pribadong usapan. / 2: Gumagawa ito ng hadlang sa halip na magbigay ng tulong. / 3: Hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form.
+- **Check 1 (tanong ng pila):** **"Mag-alok ng pribadong usapan."** Tinutugunan nito ang alalahanin nang hindi inilalantad ang kondisyon.
+  - "Basahin para marinig ng pila": inilalantad ang impormasyong hindi kailangang marinig ng iba.
+  - "Tanungin ang kapitbahay": nagsasama ng iba nang hindi muna tinatanong si Alex.
+- **Check 2 (dahan-dahang pagbasa):** **"Basahin sa napagkasunduang lugar."** Tumutugon ito sa hiniling na tulong at pribadong usapan.
+  - "Bumalik kapag kaya nang mag-isa": gumagawa ng hadlang sa halip na tumulong.
+  - "Ipasa sa unang kakilala": hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Hindi inilalantad ang kondisyon; humihingi ng pahintulot sa lugar at tulong; nagbibigay ng paliwanag nang walang panghuhusga.
+Indicator: Hindi inilalantad ang kondisyon; humihingi ng pahintulot sa lugar at tulong; nagbibigay ng paliwanag nang walang panghuhusga.
 
-Kaya na: Nakapag-alok ng pribadong tulong ayon sa hiling ni Alex nang walang bansag o sapilitang pagsama ng ibang tao.
+- **Kaya na:** Nakapag-alok ng pribadong tulong ayon sa hiling ni Alex nang walang bansag o sapilitang pagsama ng ibang tao.
+- **Kailangan pa ng practice:** Nag-alok ng pribadong lugar pero kailangang paalalahanang itanong ang gustong tulong.
+- **Hindi pa:** Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.
 
-Kailangan practice: Nag-alok ng pribadong lugar pero kailangang paalalahanang itanong ang gustong tulong.
+Bantayan: tinatanong ba muna si Alex bago magsama ng iba? Ang tamang self-check ay hindi ebidensiya ng kakayahan.
 
-Hindi pa: Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** ibigay ang kulang na linya (*"Itanong kay Alex ang gustong tulong"*); obserbahang muli sa parehong sesyon.
+- **Hindi pa:** ipakitang muli ang dalawang linya ni Lorna; ulitin ang unang minuto lamang. Ipares sa BHW na Kaya na bilang Alex. Obserbahan muli sa susunod na round o follow-up.
+- Practice ang peer feedback, hindi staff rating.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 30; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF pp. 30, 33, 34, 35.
+- Oras: hati ng mga sumulat sa 600 minutong alokasyon ng source.
+- Inaprubahan at inilathala ng owner, 25 Set 2026; walang nakatalang pangalan ng reviewer. Sundin ang lokal na protocol kung iba.

@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Magkakaugnay ang apat na kontrol at malinaw ang dapat ipasuri nang walang paalala. |
-| Kailangan practice | May maraming kontrol pero kailangang paalalahanang magtalaga ng responsable. |
+| Kailangan pa ng practice | May maraming kontrol pero kailangang paalalahanang magtalaga ng responsable. |
 | Hindi pa | Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay. |
 
 Aktuwal na nakita/narinig: ____

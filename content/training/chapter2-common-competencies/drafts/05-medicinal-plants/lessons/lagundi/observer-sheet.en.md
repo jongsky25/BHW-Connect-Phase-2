@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Lagundi, Vitex negundo, leaves, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Vitex negundo, leaves and listed use, and connects Ben promptly and reports his breathing difficulty without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt that the breathing difficulty cannot wait or must be reported. |
+| Hindi pa | Lets Ben take the decoction first, or gives a dose from the old slide. |
 
 Evidence observed: ____
 

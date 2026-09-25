@@ -43,8 +43,8 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Mesa, saka bibig.\nAnong daan ang inilalarawan?",
+    "display_en": "Desk, then mouth.\nWhich route is illustrated?",
     "check": {
       "prompt_fil": "Hinawakan ang kontaminadong mesa, saka ang bibig. Anong daan ang inilalarawan?",
       "prompt_en": "A person touches a contaminated desk and then their mouth. Which route is illustrated?",
@@ -109,8 +109,8 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Saradong silid; may umuubo.\nAno ang angkop?",
+    "display_en": "Enclosed room; someone coughs.\nWhat is appropriate?",
     "check": {
       "prompt_fil": "Sa saradong silid, maaaring malanghap ang particles mula sa umuubo. Ano ang angkop?",
       "prompt_en": "In an enclosed room, particles from a cough may be inhaled. What is appropriate?",
@@ -124,13 +124,13 @@
           "en": "Immediately name the illness and tell the entire queue."
         },
         {
-          "fil": "Iugnay sa respiratory controls ng BHS.",
-          "en": "Use the BHS respiratory-control process."
+          "fil": "Sundin ang proseso ng BHS para sa respiratory controls.",
+          "en": "Follow the BHS process for respiratory controls."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Hindi nito natutugunan ang posibleng paglanghap. 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. 3: Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.",
-      "feedback_en": "1: This does not address possible inhalation. 2: This guesses a diagnosis and discloses information inappropriately. 3: Use the agreed arrangements for space, reporting and protection."
+      "feedback_fil": "1: Hindi nito natutugunan ang posibleng paglanghap. 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. 3: Sa posibleng paglanghap, sundin ang napagkasunduang ayos ng lugar, pag-uulat at proteksiyon ng BHS.",
+      "feedback_en": "1: This does not address possible inhalation. 2: This guesses a diagnosis and discloses information inappropriately. 3: Possible inhalation calls for the BHS's agreed arrangements for space, reporting and protection."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

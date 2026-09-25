@@ -1,4 +1,4 @@
-# 2.4.14 — First-aid practice: burn response
+# 2.4.14 — Tumugon sa paso
 
 Kathang-isip na detalye lamang.
 

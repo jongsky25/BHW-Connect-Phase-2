@@ -1,4 +1,4 @@
-# 2.4.11 — First-aid practice: fracture dislocation
+# 2.4.11 — Tumugon sa posibleng bali
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,11 +6,11 @@ Nadapa ang siklista at masakit at deformed ang braso. Nakapagsasalita siya at gu
 
 ## Card ng kalahok
 
-Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.
+Suportahan ang braso sa prop sa posisyong nakita. Ipaliwanag, nang hindi sinisisi ang siklista, kung bakit hindi mo ito itutuwid o gagalawin. Tingnan ang iba pang agarang problema at tawagan ang kumpirmadong contact.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Ikaw ang siklista. Hawakan ang braso at makiusap: "Pakihila na para tumuwid, masakit." Makiusap muli nang isang beses kung tumanggi ang kalahok. Huwag magdagdag ng bagong pinsala o sintomas na wala sa kaso.
 
 ## Card ng tagamasid
 

@@ -40,8 +40,6 @@ Observe breathing difficulty and ask about general danger signs. Arrange prompt 
 
 Ask about ability to drink, vomiting, blood in stool and alertness. Encourage continued breastfeeding when the child can feed. Explain that packaged ORS uses safe water and the exact packet directions. Refer urgently for danger signs or dehydration concerns.
 
-This is the safe response in the case. Ask about ability to drink, vomiting, blood in stool and alertness. Encourage continued breastfeeding when the child can feed. Explain that packaged ORS uses safe water and the exact packet directions. Refer urgently for danger signs or dehydration concerns. Lea avoids the shortcut.
-
 | ORS sachet | Actual packet instruction | Shown / retry |
 |---|---|---|
 | Safe-water volume | ____ | ____ |
@@ -77,14 +75,12 @@ Check scene safety, response and normal breathing. Activate emergency help and r
 
 Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case.
 
-This is the safe response in the case. Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case. Lea avoids the shortcut.
-
 | Supervised station | Observed action | Retry / not observed |
 |---|---|---|
 | Call and location | ____ | ____ |
 | Correct manikin and age | ____ | ____ |
 | Trainer-approved current sequence | ____ | ____ |
-| AED or next help | ____ | ____ |
+| Next help called | ____ | ____ |
 | No maneuver on a live person | ____ | ____ |
 
 ## Respond safely to drowning
@@ -101,7 +97,7 @@ Call trained rescuers and keep yourself out of the water. Use an available reach
 
 ## Gather information in suspected poisoning
 
-Avoid exposure, move others away and activate the verified emergency or poison-advice route. Give the product label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions.
+Avoid exposure, move others away and activate the verified emergency or poison-advice route. Read the product label only if you can do so without exposure, such as from a container already away from the spill or held by someone else. Give the label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions.
 
 | Element | Observed evidence | Next action |
 |---|---|---|
@@ -114,8 +110,6 @@ Avoid exposure, move others away and activate the verified emergency or poison-a
 ## Respond to wounds and bleeding
 
 Protect your hands and apply firm direct pressure with clean material. Activate urgent help for severe or persistent bleeding. Add material if soaked while maintaining pressure; ask trained staff about further measures and wound follow-up.
-
-This is the safe response in the case. Protect your hands and apply firm direct pressure with clean material. Activate urgent help for severe or persistent bleeding. Add material if soaked while maintaining pressure; ask trained staff about further measures and wound follow-up. Lea avoids the shortcut.
 
 | Element | Observed evidence | Next action |
 |---|---|---|
@@ -143,7 +137,7 @@ Recognize possible severe allergic reaction and activate emergency help immediat
 
 | Element | Observed evidence | Next action |
 |---|---|---|
-| Sting | ____ | ____ |
+| Urgent signs seen | ____ | ____ |
 | Breathing | ____ | ____ |
 | Help | ____ | ____ |
 | Confirmed contact | ____ | ____ |
@@ -177,14 +171,12 @@ Move away from the heat source safely. Cool the burn with cool running water acc
 
 Call for help and follow current age-specific choking training. Distinguish mild cough from severe obstruction. Practise the trainer-approved adult and infant pathways only on appropriate manikins.
 
-This is the safe response in the case. Call for help and follow current age-specific choking training. Distinguish mild cough from severe obstruction. Practise the trainer-approved adult and infant pathways only on appropriate manikins. Lea avoids the shortcut.
-
 | Supervised station | Observed action | Retry / not observed |
 |---|---|---|
 | Call and location | ____ | ____ |
 | Correct manikin and age | ____ | ____ |
 | Trainer-approved current sequence | ____ | ____ |
-| AED or next help | ____ | ____ |
+| Next help called | ____ | ____ |
 | No maneuver on a live person | ____ | ____ |
 
 ## Arrange urgent chest-pain referral

@@ -1,57 +1,72 @@
 ## [purpose] Purpose
 
-8 minutes: opening 1; model 1; supervised reference-card practice 4; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-For Ampalaya, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+The BHW matches Momordica charantia, leaves and the listed use on the Ampalaya card, and returns Joel's question to his clinician.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 8 minutes face-to-face (this lesson's share of the 120-minute subchapter plan, rotation A): opening 1, model 1, practice 4, feedback 1, check 1. Read: about 3 minutes in the app.
+- **At the table:** participant cards *2.5.3 — Reference-card practice: Ampalaya*, worksheet, staff observation sheet; job aid *Ten medicinal plants*; two printed Ampalaya cards.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and checks. Write on the job aid who monitors diabetes care (midwife / RHU).
+- **Scope:** no advice to stop, reduce or change medicine. No preparation, amount or tasting. If asked: *"That is a question for the midwife or RHU. Today we practise the card check."*
 
 ## [opening] Opening
 
-Joel has diabetes and takes prescribed medicine. He asks whether Ampalaya can replace it.
+Read the case. Ask: *"Who decides about Joel's medicine?"* Return to it at step 4.
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **"The situation" (first slide).** *"What is Joel really asking?"*
+2. **"What to do and say" (matching slide).** Point to Momordica charantia and leaves: *"What does 'under clinical advice' mean?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model: point to the card; refer to the clinician monitoring Joel's blood sugar and medicines. Ask: *"Who is that?"*
+5. **"Scope and support."** Ask: *"Is food an automatic substitute for a diabetes plan?"* Run the practice.
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** *"What will you mark on two Ampalaya cards?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-The BHW points to Ampalaya and its botanical name on the card. The yard plant is not assumed to be identified. Refer the question to the clinician monitoring Joel’s blood sugar and other medicines.
+- **"Yes, ampalaya lowers sugar."** Do not affirm. *"The card says 'under clinical advice.' Whose advice?"*
+- **"Tell him to use both."** Keeping his medicine is right; the clinician decides about Ampalaya.
+- **"Keep the medicine; I'll help him ask his clinician."** Praise it; it respects Joel's wish.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Guesses identity, prescribes a dose or replaces treatment.
+**"Ampalaya is a vegetable, so it can replace the medicine."** It is familiar food, so it feels safe. Ask the group, not the person: *"If Joel stops his medicine, what could go wrong?"* Let them find it: necessary care is displaced or delayed.
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Match two Ampalaya cards; choose Momordica charantia, leaves, use and safe next step. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+**Reference-card practice: Ampalaya** (*Reference-card stations, rotation A*): two triads per table; learner, partner (Joel), observer; one 4-minute round, 1 minute feedback; rotate at the next table. The learner fills the worksheet, states what is known and unknown, asks about medicine and symptoms, and names the clinician. The observer records the learner's words, then gives one strength and one next action. Fictional details only. Low-resource: one card set for the whole group.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: Unconfirmed part and identity are unsafe. / 2: Match the part to the written source; this is not a dose. / 3: Common names may cover different plants.
+- **"Which Ampalaya part is listed on the card?"** Correct: **"Leaves of confirmed Momordica charantia."**
+  - "Any part, since Ampalaya is a familiar vegetable." Familiar food is not the listed part.
+  - "Whatever part Joel names, without checking the botanical name." Check the card, not only Joel’s words.
+- **"What is the safe response in Joel’s case?"** Correct: **"Do not change his medicine; refer the question to his clinician."**
+  - "Tell Joel Ampalaya can replace his medicine because it is a vegetable." Not an automatic substitute.
+  - "Suggest he take less medicine and add Ampalaya alongside it." Taking less is a medication change.
 
-1: Necessary care may be displaced or delayed. / 2: Confirm identity, symptoms and scope before advice. / 3: An old recipe does not replace current clinical guidance.
+## [observe] What to observe
 
-## [observe] Observe
+Watch for: For Ampalaya, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-For Ampalaya, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+- **Kaya na:** Matches Momordica charantia, leaves and listed use, keeps Joel’s medicine unchanged, and refers him to his clinician without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to keep the medicine unchanged or to name who decides.
+- **Hindi pa:** Says Ampalaya can replace or reduce Joel’s medicine, or suggests an amount.
 
-Ready: Correctly identifies Ampalaya, Momordica charantia, leaves, use and referral without prompts.
+Look for: no suggestion to stop or reduce medicine. A correct self-check is not evidence of the skill.
 
-Needs practice: Identifies the plant but needs a prompt about limits or referral.
+## [support] If a BHW needs more support
 
-Not yet: Guesses identity, prescribes a dose or replaces treatment.
+- **Kailangan pa ng practice:** name the missing step; retry the same card.
+- **Hindi pa:** re-model step 4; retry with three items only (botanical name, part, who decides), paired with a Kaya na BHW.
+- Re-observe next session (Joel wants to take less medicine). Peer feedback is practice, not a staff rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 49; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 8.
+- Timing: an authoring split of F38's 2-hour plant allocation.
+- Status: program owner's attested clinical sign-off, 25 Sep 2026; reviewer names not recorded. Local protocol overrides this guide.

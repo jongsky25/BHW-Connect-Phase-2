@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Ampalaya, Momordica charantia, leaves, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Momordica charantia, leaves and listed use, keeps Joel’s medicine unchanged, and refers him to his clinician without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to keep the medicine unchanged or to name who decides. |
+| Hindi pa | Says Ampalaya can replace or reduce Joel’s medicine, or suggests an amount. |
 
 Evidence observed: ____
 

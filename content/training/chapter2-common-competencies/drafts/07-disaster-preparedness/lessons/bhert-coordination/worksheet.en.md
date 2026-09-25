@@ -1,4 +1,4 @@
-# 2.7.4 — Practice: bhert coordination
+# 2.7.4 — Practice: Coordinate the BHW/BHERT role
 
 Use fictional details only.
 

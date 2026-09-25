@@ -1,4 +1,4 @@
-# 2.4.16 — First-aid practice: chest pain referral
+# 2.4.16 — Arrange urgent chest-pain referral
 
 Use fictional details only.
 

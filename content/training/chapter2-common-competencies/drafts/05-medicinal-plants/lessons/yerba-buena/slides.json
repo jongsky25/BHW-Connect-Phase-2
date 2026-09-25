@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nakalista sa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part is listed on the card?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Yerba buena ang nakalista sa card?",
       "prompt_en": "Which Yerba buena part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Yerba buena.",
-          "en": "Any part of a yard plant even when its identity as Yerba buena is unconfirmed."
-        },
-        {
           "fil": "Dahon ng kumpirmadong Mentha cordifolia.",
           "en": "Leaves of confirmed Mentha cordifolia."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Anumang dahong tinatawag ni Eva na Yerba buena, nang hindi sinusuri.",
+          "en": "Any leaves Eva calls Yerba buena, unchecked."
+        },
+        {
+          "fil": "Dahon ng anumang halamang sinasabing pampaginhawa sa sakit ng ngipin.",
+          "en": "Leaves of any plant said to ease tooth pain."
         }
       ],
-      "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tama: dahon ng Mentha cordifolia ang nakalista sa card. Hindi ito dose para kay Eva. 2: Hindi patunay ng halaman ang local name; tingnan ang botanical name. 3: Kailangan ng dental assessment ang sakit ng ngipin; itugma ang botanical name, hindi ang reklamo.",
+      "feedback_en": "1: Correct: the card lists leaves of Mentha cordifolia. This is not a dose for Eva. 2: A local name does not confirm the plant; check the botanical name. 3: Tooth pain needs dental assessment; match the botanical name, not the complaint."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: sakit ng ngipin na kailangang dental assessment\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: tooth pain requiring dental assessment\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Namamagang pisngi: iugnay agad.\nCard: Mentha cordifolia, dahon.\nWalang iminumungkahing paghahanda.\nIulat ang mga sintomas ni Eva.",
+    "display_en": "Swollen cheek: refer promptly.\nCard: Mentha cordifolia, leaves.\nNo preparation suggested.\nReport Eva's symptoms.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Yerba buena at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay agad ang pamamaga sa dental o health professional at iulat ang mga sintomas.",
-    "narration_en": "The BHW points to Yerba buena and its botanical name on the card. The yard plant is not assumed to be identified. Refer the swelling promptly to a dental or health professional and report symptoms."
+    "narration_fil": "Napansin ng BHW ang namamagang pisngi, hindi lamang ang sakit ng ngipin. Itinuro niya ang Mentha cordifolia at \"Bahagi: dahon\" sa card. Wala siyang iminungkahing paghahanda. Itinanong niya ang kasalukuyang gamot ni Eva. Iniugnay niya agad ang pamamaga sa dental o health professional at iniulat ang mga sintomas.",
+    "narration_en": "The BHW notices the swollen cheek, not only the tooth pain. The BHW points to Mentha cordifolia and \"Part: leaves\" on the card and suggests no preparation. The BHW asks about Eva's current medicine, refers the swelling promptly to a dental or health professional and reports her symptoms."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
-    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "display_fil": "Hindi kapalit ng dental care ang halaman.\nWalang iniinom o ipinapahid na paghahanda.\nWalang dose.",
+    "display_en": "A plant does not replace dental care.\nNo oral or topical preparation.\nNo dose.",
     "check": null,
     "narration_fil": "Hindi kapalit ng dental care ang halamang gamot. Huwag magtakda ng iniinom o ipahid na paghahanda. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
     "narration_en": "A plant does not replace dental care. Do not prescribe an oral or topical preparation. This lesson does not authorize preparation or dosing of an herbal remedy."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Namamaga ang pisngi ni Eva.\nAno ang ligtas na tugon?",
+    "display_en": "Eva's cheek is swollen.\nWhat is the safe response?",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Yerba buena?",
-      "prompt_en": "What is the safe response in the Yerba buena case?",
+      "prompt_fil": "May masakit na ngipin at namamagang pisngi si Eva. Ano ang ligtas na tugon?",
+      "prompt_en": "Eva has tooth pain and a swollen cheek. What is the safe response?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Imungkahi ang paghahanda ng Yerba buena na iinumin o ipapahid.",
+          "en": "Suggest a Yerba buena preparation to drink or apply now."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Iugnay agad si Eva sa dental o health professional.",
+          "en": "Refer her promptly to a dental or health professional."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Sabihing puwedeng ipalit ang halaman sa pagpapatingin sa dentista.",
+          "en": "Tell her the plant can take the place of a dental visit."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "feedback_fil": "1: Huwag magtakda ng iniinom o ipinapahid na paghahanda; walang awtorisado sa lesson na ito. 2: Tama: kailangang iugnay agad ang pamamaga; iulat din ang mga sintomas. 3: Hindi kapalit ng dental care ang halaman, kahit malayo ang dentista.",
+      "feedback_en": "1: Do not prescribe an oral or topical preparation; this lesson authorizes none. 2: Correct: the swelling needs prompt referral; report her symptoms too. 3: A plant does not replace dental care, even when the dentist is far."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

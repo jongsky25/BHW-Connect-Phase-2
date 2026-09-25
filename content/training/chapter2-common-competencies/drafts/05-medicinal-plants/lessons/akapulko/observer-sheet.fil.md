@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Akapulko, Senna alata, dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Naitutugma ang Senna alata, dahon at nakalistang gamit, at nasasabi kung kailan ipasusuri ang pantal ni Ana, nang walang paalala. |
+| Kailangan pa ng practice | Naitutugma ang card ngunit kailangan ng paalala na hindi kumpirmado ang halaman o na dapat ipasuri ang pantal. |
+| Hindi pa | Sinasabing buni ang pantal, itinuturing na Akapulko ang halaman sa bakuran, o nagtuturo ng paghahanda. |
 
 Aktuwal na nakita/narinig: ____
 

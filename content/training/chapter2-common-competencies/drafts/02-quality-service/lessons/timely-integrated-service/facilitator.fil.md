@@ -1,57 +1,76 @@
 ## [purpose] Layunin
 
-180 minuto: pambungad 10; modelo 15; practice 115; feedback/pag-ulit 20; talakayan 10; plano sa trabaho 10. Gamitin ang pitong Slides, cards, worksheet at observer sheet. Magpalit ng papel at umulit gamit ang isang binagong detalye.
-
-Gumuhit ng paglapit ni Pilar sa serbisyo at magmungkahi ng pagbabago na may responsable, kumpirmasyon at panukat.
+Naiguguhit ng BHW ang pagbisita ni Pilar, namamarkahan ang hadlang, at nagmumungkahi ng pagbabagong may responsable, kumpirmasyon, petsa at panukat, nang hindi inaalis ang kailangang pagsusuri.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang apat na session sa kalidad ng serbisyo. Hiwalay ito sa digital na pagbabasa. Gumamit ng paghahambing, practice at feedback; hindi patunay ng kakayahan ang oras lamang. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 180 minutong harapan (bahagi ng aralin sa 600 minutong plano ng subchapter): pambungad 10, modelo 20, practice 110, feedback at pag-ulit 25, mga check at talakayan 15. Pagbasa sa app: mga 5 minuto.
+- **Kagamitan:** cards na *2.2.3 Mapa ng paglapit sa serbisyo* (isang set bawat tatluhan), worksheet, talaan ng obserbasyon, job aid na *Mataas na kalidad ng serbisyo* na may lokal na contact, papel at marker.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Sagutan muna ang dalawang check sa app.
+- Kumpirmahin ang tamang staff na contact at ang supervisor na susuri sa mungkahi.
+- **Saklaw:** pasya ng staff kung magagamit ang naunang tala. Huwag ituro ang pag-aalis ng form o pagsusuri, o pagbabago ng pila o prayoridad nang walang awtorisasyon. Hindi gagawin ng BHW ang lahat ng serbisyo.
 
 ## [opening] Pambungad
 
-Dalawang beses nang bumalik si Pilar sa BHS. Sa unang punta, hindi malinaw kung aling staff ang lalapitan. Sa ikalawa, pinasulat muli ang parehong detalye. May trabaho siya sa hapon. Gustong tumulong ni BHW Arnel nang hindi nangangakong matatapos ang lahat sa isang araw.
+Basahin ang kaso ni Pilar, saka itanong: *"Dalawang beses nang bumalik si Pilar. Saan eksaktong naubos ang oras niya?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bahagi ng Read at katugmang slide ang bawat hakbang.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Ano ang nangyari sa bawat punta?"*
+2. **"Gawin at sabihin."** Itanong: *"Alin ang pagkaantala, alin ang hadlang, alin ang dobleng gawain?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapareha.
+4. **"Halimbawang sagot."** Iguhit: pagdating → pagtatanong → pagpuno muli → paghihintay. Idagdag ang contact card. Itanong: *"Sino ang magkukumpirma? Ano ang bibilangin?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Alin ang kailangang aprubahan muna ng staff?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapareha.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Paano natin malalaman kung nakatulong?"*
 
-Mapa: pagdating → pagtatanong → pagpuno muli → paghihintay. Iminungkahi ni Arnel ang malinaw na contact card. Kukumpirmahin ng staff kung kailan puwedeng gamitin ang naunang tala. Sa susunod na linggo, bibilangin nila ang pagbalik dahil sa maling contact. Hindi pa nila sinasabing bumuti ang serbisyo hangga’t walang resulta.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Huwag nang pasulatin si Pilar."** Itanong: *"Sino ang magpapasya kung magagamit ang naunang tala?"*
+- **"Sabihing matatapos lahat ngayon."** Mabait, pero hindi hawak ng BHW ang oras; kumpirmahin ang susunod na hakbang.
+- **"Mabagal ang staff."** Ilipat sa hakbang: *"Aling hakbang, at ano ang ebidensiya?"*
+- **"Contact card, at bilangin ang pagbalik."** Tama. Itanong: *"Sino ang responsable?"*
 
-Nangangako ng lahat ng serbisyo o basta nag-aalis ng kailangang pagsusuri upang bumilis.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Para bumilis, alisin ang paulit-ulit na hakbang."** Mabuti ang layuning iwasan ang sayang na punta. Pero maaaring kailangan pa ang form o pagsusuri; staff ang magpapasya. Itanong: *"Paano babawasan ang ulit nang hindi inaalis ang kailangan?"* Hintayin ang "ipasuri sa staff."
 
-Iguhit ang apat na hakbang sa kuwento. Markahan ang isang hadlang. Gumawa ng mungkahi na may responsable, kumpirmasyon, petsa at panukat. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Mapa ng paglapit sa serbisyo.** Tatluhan; magpalitan ng papel (tatlong round, mga 35 minuto bawat isa). Kalahok: apat na hakbang, hadlang na may ebidensiya, pagbabago, responsable, kukumpirmang staff, petsa, panukat. Kapareha (Pilar): itatanong kung babagay ito sa trabaho niya sa hapon. Tagamasid: itatala ang aktuwal na salita. Umulit nang may binagong detalye; kathang-isip na detalye lamang. Mag-isa: iguhit sa papel; ipasuri sa staff.
 
-1: Inuulit nito ang hadlang sa halip na linawin ang daan. / 2: May malinaw na pupuntahan bago magbigay ng tagubilin. / 3: Hindi hawak ng BHW ang lahat ng oras at serbisyo.
+## [answer-key] Susi sa self-check
 
-1: Maaaring kailangan pa ang mga tala; hindi ito pasya ng BHW lamang. / 2: Maaaring mawala ang mahalagang pagsusuri. / 3: Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.
+- **Check 1 (hindi alam ang contact):** **"Kumpirmahin ang contact sa staff."** May malinaw na pupuntahan bago magbigay ng tagubilin.
+  - "Umikot muli": inuulit ang hadlang sa halip na linawin ang daan.
+  - "Mangakong tapos bago magtanghali": hindi hawak ng BHW ang lahat ng oras at serbisyo.
+- **Check 2 (dobleng form):** **"Ipasuri ang paggamit ng naunang tala."** Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.
+  - "Itapon ang lumang form": maaaring kailangan pa ang mga tala; hindi ito pasya ng BHW lamang.
+  - "Laktawan ang lahat ng tanong": maaaring mawala ang mahalagang pagsusuri.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Naiguguhit ang daloy, natutukoy ang hadlang at naitatala ang pagbabago, responsable, kumpirmasyon at panukat nang hindi lumalampas sa tungkulin.
+Indicator: Naiguguhit ang daloy, natutukoy ang hadlang at naitatala ang pagbabago, responsable, kumpirmasyon at panukat nang hindi lumalampas sa tungkulin.
 
-Kaya na: May tiyak na hadlang at magagamit na panukat; ipinapasuri ang pagbabago at pinananatili ang kailangang proseso nang walang paalala.
+- **Kaya na:** May tiyak na hadlang at magagamit na panukat; ipinapasuri ang pagbabago at pinananatili ang kailangang proseso nang walang paalala.
+- **Kailangan pa ng practice:** Malinaw ang hadlang at mungkahi pero kailangang paalalahanang tukuyin ang responsable o panukat.
+- **Hindi pa:** Nangangako ng lahat ng serbisyo o basta nag-aalis ng kailangang pagsusuri upang bumilis.
 
-Kailangan practice: Malinaw ang hadlang at mungkahi pero kailangang paalalahanang tukuyin ang responsable o panukat.
+Bantayan: panukat na kayang bilangin. Ang tamang self-check ay hindi ebidensiya ng kakayahan.
 
-Hindi pa: Nangangako ng lahat ng serbisyo o basta nag-aalis ng kailangang pagsusuri upang bumilis.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** ipaalala *"Tukuyin ang responsable at panukat"*; obserbahang muli sa parehong sesyon.
+- **Hindi pa:** ipakitang muli ang contact card; ulitin gamit lamang ang hadlang, pagbabago at magkukumpirma. Ipares sa BHW na Kaya na bilang Pilar. Obserbahan muli sa susunod na round o follow-up.
+- Practice ang peer feedback, hindi staff rating.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 30; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF pp. 33, 37.
+- Oras: hati ng mga sumulat sa 600 minutong alokasyon ng source.
+- Inaprubahan at inilathala ng owner, 25 Set 2026; walang nakatalang pangalan ng reviewer. Sundin ang lokal na protocol kung iba.

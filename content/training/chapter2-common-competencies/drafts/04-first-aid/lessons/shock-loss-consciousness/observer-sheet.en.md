@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation. |
+| Kaya na | Checks the scene, response and breathing, activates help, declines the drink and hands over what was seen, without prompting. |
+| Kailangan pa ng practice | Activates help and declines the drink but needs a prompt to check breathing or to give a factual handover. |
+| Hindi pa | Allows the sweet drink, guesses the cause, or waits to see if the person wakes before calling. |
 
 Evidence observed: ____
 

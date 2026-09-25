@@ -10,10 +10,10 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: Nadapa ang siklista at masakit at deformed ang braso",
-    "display_en": "Case: A cyclist fell and now has a painful, deformed forearm",
+    "display_fil": "Natumba ang siklista; masakit at deformed ang braso\nNakapagsasalita siya at gustong ituwid ang braso",
+    "display_en": "A cyclist fell; her forearm is painful and deformed\nShe can speak and wants the arm pulled straight",
     "check": null,
-    "narration_fil": "Nadapa ang siklista at masakit at deformed ang braso. Nakapagsasalita siya at gustong hilahin ang braso para maituwid.",
+    "narration_fil": "Natumba ang siklista at masakit at deformed ang kanyang braso. Nakapagsasalita siya at gustong hilahin ang braso para maituwid.",
     "narration_en": "A cyclist fell and now has a painful, deformed forearm. She can speak and wants the arm pulled straight."
   },
   {
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Iwasan ang hindi kailangang galaw\nSuportahan ang bahaging nasugatan sa kasalukuyang posisyon at…\nSundin ang sanay na tagubilin sa immobilization at transport",
-    "display_en": "Avoid unnecessary movement\nSupport the injured part in the position found and arrange prompt…\nCheck for other urgent concerns and follow trained/local…",
+    "display_fil": "Iwasan ang hindi kailangang galaw\nSuportahan ang bahaging nasugatan sa posisyong nakita\nAyusin ang pagsusuri; tingnan ang iba pang agarang problema\nSundin ang sanay/lokal na tagubilin sa immobilization at paglipat",
+    "display_en": "Avoid unnecessary movement\nSupport the injured part in the position found\nArrange prompt assessment; check for other urgent concerns\nFollow trained/local instructions for immobilization and transfer",
     "check": null,
-    "narration_fil": "Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa kasalukuyang posisyon at ayusin ang agarang pagsusuri. Sundin ang sanay na tagubilin sa immobilization at transport.",
+    "narration_fil": "Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa posisyong nakita at ayusin ang agarang pagsusuri. Tingnan kung may iba pang agarang problema. Sundin ang sanay o lokal na tagubilin sa immobilization at paglipat.",
     "narration_en": "Avoid unnecessary movement. Support the injured part in the position found and arrange prompt assessment. Check for other urgent concerns and follow trained/local instructions for immobilization and transfer."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Masakit at deformed ang braso ng siklista. Ano ang una mong gagawin?",
+      "prompt_en": "The cyclist's forearm is painful and deformed. What do you do first?",
       "options": [
         {
-          "fil": "Suportahan sa kasalukuyang posisyon.",
-          "en": "Support in the position found."
+          "fil": "Suportahan ang braso sa posisyong nakita.",
+          "en": "Support the arm in the position you found it."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Hilahin nang dahan-dahan ang braso gaya ng hiling niya.",
+          "en": "Pull the arm straight gently, as the cyclist asks."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Masahihin ang braso para gumaan bago tumawag.",
+          "en": "Massage the arm to ease the pain before calling."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
-      "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+      "feedback_fil": "1: Tama. Iwasan ang hindi kailangang galaw at suportahan ang braso sa posisyong nakita. 2: Huwag ituwid ang deformity kahit hilingin ng tao. Suportahan ito sa posisyong nakita. 3: Huwag itong masahihin. Suportahan sa posisyon at ayusin ang agarang pagsusuri.",
+      "feedback_en": "1: Correct. Avoid unnecessary movement and support the injured part in the position found. 2: Do not straighten a deformity, even if the person asks. Support it as found. 3: Do not massage it. Support it in place and arrange prompt assessment."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Suportahan ang bahaging nasugatan sa kasalukuyang posisyon at…\nSundin ang sanay na tagubilin sa immobilization at transport",
-    "display_en": "Support the injured part in the position found and arrange prompt…\nCheck for other urgent concerns and follow trained/local…",
+    "display_fil": "Sinusuportahan ni Lea ang braso sa posisyong nakita\nIpinaliliwanag niya kung bakit hindi ito itutuwid\nTinitingnan niya ang iba pang agarang problema\nTumatawag siya sa kumpirmadong contact",
+    "display_en": "Lea supports the forearm where she found it\nShe explains why she will not pull it straight\nShe checks for other urgent concerns\nShe calls the confirmed contact for assessment",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa kasalukuyang posisyon at ayusin ang agarang pagsusuri. Sundin ang sanay na tagubilin sa immobilization at transport. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Avoid unnecessary movement. Support the injured part in the position found and arrange prompt assessment. Check for other urgent concerns and follow trained/local instructions for immobilization and transfer. Lea avoids the shortcut."
+    "narration_fil": "Pinapanatili ni Lea na hindi gumagalaw ang siklista at sinusuportahan ang braso sa posisyong nakita. Nakiusap ang siklista na hilahin ito para maituwid. Ipinaliwanag ni Lea na hindi niya ito itutuwid at iiwasan ang hindi kailangang galaw. Tiningnan niya kung may iba pang agarang problema. Saka niya tinawagan ang kumpirmadong contact para sa agarang pagsusuri.",
+    "narration_en": "Lea asks the cyclist to keep still and supports the forearm in the position she found it. When the cyclist asks her to pull it straight, Lea explains that she will not straighten it and will avoid unnecessary movement. She checks for other urgent concerns. Then she calls the confirmed contact for prompt assessment."
   },
   {
     "id": "slide-scope",
@@ -98,10 +98,10 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat…",
-    "display_en": "Do not straighten a deformity, massage it, use an unpadded…",
+    "display_fil": "Huwag ituwid o imasahe ang deformity\nWalang improvised na splint na walang padding kung hindi sanay\nHuwag ilipat ang posibleng may spinal injury, maliban sa kaligtasan",
+    "display_en": "Do not straighten a deformity or massage it\nNo unpadded improvised splint without training\nDo not move a possible spinal injury unless safety demands it",
     "check": null,
-    "narration_fil": "Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+    "narration_fil": "Huwag ituwid o imasahe ang deformity. Huwag gumamit ng improvised na splint na walang padding kung hindi sanay. Huwag ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
     "narration_en": "Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
   },
   {
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Suportado na ang braso. Ano pa ang gagawin mo bago dumating ang tulong?",
+      "prompt_en": "The arm is supported. What else do you do before help arrives?",
       "options": [
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Itali ang patpat bilang splint at pauwiin siyang nakabisikleta.",
+          "en": "Tie a stick to the arm as a splint and let her ride home."
         },
         {
-          "fil": "Huwag ituwid ang braso.",
-          "en": "Do not straighten the arm."
+          "fil": "Tingnan ang iba pang agarang problema at tumawag.",
+          "en": "Check for other urgent concerns and make the call."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Sabihing bugbog lang iyon at puwede na siyang umuwi.",
+          "en": "Tell her it is only a bruise and she can go home."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-      "feedback_en": "1: The shortcut is unsafe: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      "feedback_fil": "1: Huwag gumamit ng improvised na splint na walang padding kung hindi sanay; kailangan pa rin niya ng agarang pagsusuri. 2: Tama. Tingnan ang iba pang agarang problema at ayusin ang agarang pagsusuri. Sanay o lokal na tagubilin ang susundin sa immobilization at paglipat. 3: Hindi nagdi-diagnose ang BHW ng pinsala. Ayusin ang agarang pagsusuri.",
+      "feedback_en": "1: Do not use an unpadded improvised splint without training; she still needs prompt assessment. 2: Correct. Check for other urgent concerns and arrange prompt assessment; trained/local instructions guide immobilization and transfer. 3: A BHW does not diagnose the injury. Arrange prompt assessment."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nGumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag…",
-    "display_en": "On Monday:\nUse a prop to show support in place, explain when movement is…",
+    "display_fil": "Sa Lunes:\nGumamit ng props para ipakita ang suporta sa posisyon\nIpaliwanag ang panganib ng paggalaw\nTumawag para sa referral",
+    "display_en": "On Monday:\nUse a prop to show support in place\nExplain when movement is unsafe\nMake the referral call",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Use a prop to show support in place, explain when movement is unsafe and make the referral call."

@@ -1,4 +1,4 @@
-# 2.4.11 — First-aid practice: fracture dislocation
+# 2.4.11 — Respond to suspected fractures
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,11 +6,11 @@ A cyclist fell and now has a painful, deformed forearm. She can speak and wants 
 
 ## Learner card
 
-Use a prop to show support in place, explain when movement is unsafe and make the referral call.
+Support the arm on the prop in the position found. Explain, without blaming the cyclist, why you will not straighten or move it. Check for other urgent concerns and call the confirmed contact.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You are the cyclist. Hold your arm and ask: "Please pull it straight, it hurts." Ask once more if the learner says no. Do not add new injuries or symptoms beyond the case.
 
 ## Observer card
 

@@ -1,14 +1,14 @@
 # 2.4.12 — Observation sheet
 
-Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.
+Recognize the urgent signs in the case (widespread hives, breathing difficulty), activate emergency help and state medication boundaries.
 
 Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization. |
+| Kaya na | Without prompting, names hives and breathing difficulty as urgent, calls emergency help first, watches breathing and says medicine follows the person's plan and protocol. |
+| Kailangan pa ng practice | Calls emergency help, but needs a prompt to name the urgent signs, watch breathing or state the medication boundary. |
+| Hindi pa | Treats the case as a routine sting, delays for a home remedy, or offers or accepts a drug outside training and authorization. |
 
 Evidence observed: ____
 

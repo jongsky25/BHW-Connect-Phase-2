@@ -1,57 +1,72 @@
 ## [purpose] Layunin
 
-8 minuto: pambungad 1; modelo 1; supervised reference-card practice 4; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Para sa Bawang, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+Itinutugma ng BHW ang Allium sativum, butil at nakalistang gamit sa Bawang card, at ibinabalik sa clinician ang desisyon sa gamot ni Liza.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 8 minutong harapan (bahagi ng 120 minutong plano, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
+- **Sa mesa:** participant cards na *2.5.4 — Reference-card practice: Bawang*, worksheet, staff observation sheet; job aid na *Sampung halamang gamot*; dalawang printed Bawang card.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang lesson at mga check. Isulat sa job aid kung sino ang sumusubaybay sa cholesterol care (midwife / RHU).
+- **Hangganan:** walang payong ihinto o baguhin ang gamot; walang dami ng bawang. Walang paghahanda o pagtikim. Kung itanong: *"Tanong iyan para sa midwife o RHU. Ngayon, ang card check ang pag-aaralan natin."*
 
 ## [opening] Pambungad
 
-May mataas na cholesterol si Liza. Kumakain siya ng bawang at nais itigil ang niresetang gamot.
+Basahin ang kaso. Itanong: *"Ano ang sasabihin mo kay Liza, at sino ang magpapasya?"* Balikan ito sa hakbang 4.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **"Ang sitwasyon" (unang slide).** *"Ano ang gustong baguhin ni Liza?"*
+2. **"Gawin at sabihin" (katugmang slide).** Ituro ang Allium sativum at butil: *"Ano ang ibig sabihin ng 'sa payo ng clinician'?"*
+3. **"Piliin ang unang tugon."** Self-check 1: magkapareha muna ang sasagot, saka ibunyag.
+4. **"Halimbawang sagot."** Ipakita: ituro ang card; ibalik ang desisyon sa clinician; walang dami. *"Bakit walang dami?"*
+5. **"Saklaw at paghingi ng tulong."** *"Ano pa ang dapat itanong kay Liza?"* (Iba pang iniinom at posibleng epekto.) Simulan ang practice.
+6. **"Subukan sa sitwasyon."** Self-check 2: magkapareha muna ang sasagot, saka ibunyag.
+7. **"Sa Lunes, gawin ito."** *"Ano ang mamarkahan mo sa dalawang Bawang card?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Itinuro ng BHW ang Bawang at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ibalik ang desisyon sa clinician; huwag magtakda ng dami ng bawang bilang gamot.
+- **"Sabihin kung ilang butil bawat araw."** Mahinahon: walang dami rito; ulitin ang linya sa hangganan.
+- **"Puwede na siyang tumigil kung may bawang araw-araw."** *"Sino ang nagreseta? Sino ang magpapasyang itigil?"*
+- **"Ituloy ang gamot; itanong sa clinician."** Purihin ito.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+**"Pagkain lang ang bawang, kaya puwedeng ipalit sa gamot."** Nasa bawat kusina ito, kaya parang ligtas. Itanong sa grupo, hindi sa tao: *"Kung ihinto ni Liza ang gamot, sino ang makakapansin ng pagbabago?"* Ang bawang sa pagkain ay hindi pahintulot na baguhin ang gamot.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Itugma ang dalawang Bawang card; piliin ang Allium sativum, butil, gamit at ligtas na susunod na hakbang. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Reference-card practice: Bawang** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (Liza), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang iba pang gamot at sintomas, at ibinabalik ang desisyon sa clinician. Itinatala ng tagamasid ang aktuwal na salita; nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye lamang. Kung kulang ang gamit: isang card set para sa buong grupo.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. / 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. / 3: Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **"Aling bahagi ng Bawang ang nakalista sa card?"** Tama: **"Butil ng kumpirmadong Allium sativum."**
+  - "Anumang bahagi ng bawang, dahil karaniwang pagkain ito." Hindi batayan ang pagiging pagkain.
+  - "Ang bahaging kinakain na ni Liza, nang hindi binabasa ang card." Hindi batayan ang nakasanayan ni Liza.
+- **"Ano ang ligtas na tugon sa kaso ni Liza?"** Tama: **"Itanong ang iba pa niyang gamot; ibalik ang desisyon sa clinician."**
+  - "Sabihing puwede na niyang itigil ang gamot dahil kumakain siya ng bawang." Hindi pahintulot ang bawang sa pagkain.
+  - "Sabihin kung ilang butil ng bawang ang kakainin kapalit ng gamot." Walang itinakdang dami ng bawang.
 
-1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. / 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. / 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Bantayan: Para sa Bawang, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-Para sa Bawang, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+- **Kaya na:** Naitutugma ang Allium sativum, butil at nakalistang gamit, itinatanong ang iba pang gamot, at ibinabalik ang desisyon sa clinician ni Liza nang walang paalala.
+- **Kailangan pa ng practice:** Naitutugma ang card ngunit kailangan ng paalala na itanong ang iba pang gamot o kung sino ang magpapasya.
+- **Hindi pa:** Sumasang-ayong itigil ni Liza ang gamot, o nagsasabi ng dami ng bawang.
 
-Kaya na: Tama ang Bawang, Allium sativum, butil, gamit at referral nang walang paalala.
+Tingnan: walang dami; naitanong ang iba pang gamot. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-Kailangan practice: Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kailangan pa ng practice:** sabihin ang kulang na hakbang; ulitin sa parehong card.
+- **Hindi pa:** ipakitang muli ang hakbang 4; ulitin sa tatlong bagay lamang (botanical name, bahagi, sino ang magpapasya), kapares ang BHW na Kaya na.
+- Obserbahang muli sa susunod na sesyon (itinigil na ni Liza ang gamot). Practice ang peer feedback, hindi staff rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 49; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 9.
+- Oras: hati sa 2 oras ng F38 para sa halaman.
+- Katayuan: attested clinical sign-off ng program owner, 25 Set 2026; walang naitalang pangalan ng reviewer. Lokal na protocol ang masusunod.

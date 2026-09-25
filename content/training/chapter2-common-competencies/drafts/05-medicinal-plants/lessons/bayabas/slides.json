@@ -32,7 +32,7 @@
     "display_fil": "Bayabas\nPsidium guajava\nBahagi: talbos/dahon",
     "display_en": "Bayabas\nPsidium guajava\nPart: leafy tops",
     "check": null,
-    "narration_fil": "Sa reference card, hanapin ang Psidium guajava. Ang nakalistang bahagi ay talbos/dahon; ang paksang gamit ay mga gamit sa balat na nakalista sa lumang manual. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri agad ang lumalalang pamumula, nana, lagnat o ibang senyales ng impeksiyon.",
+    "narration_fil": "Sa reference card, hanapin ang Psidium guajava. Ang nakalistang bahagi ay talbos/dahon; ang paksang gamit ay mga gamit sa balat na nakalista sa lumang manual. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri agad ang kumakalat na pamumula, nana, lagnat o ibang senyales ng impeksiyon.",
     "narration_en": "Find Psidium guajava on the reference card. The listed part is leafy tops; the use topic is skin uses listed in the legacy manual. State what is known and unknown. Ask about current medicine and symptoms. Seek prompt assessment for spreading redness, pus, fever or other infection concerns."
   },
   {
@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nasa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part does the card list?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Bayabas ang nakalista sa card?",
       "prompt_en": "Which Bayabas part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Bayabas.",
-          "en": "Any part of a yard plant even when its identity as Bayabas is unconfirmed."
+          "fil": "Anumang bahagi ng bayabas, dahil may gamit sa balat sa lumang manual.",
+          "en": "Any part of a guava tree, since the old manual lists skin uses."
         },
         {
           "fil": "Talbos/dahon ng kumpirmadong Psidium guajava.",
           "en": "Leafy tops of confirmed Psidium guajava."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Pinakuluang dahon para sa sugat ni Mara, gaya ng plano niya.",
+          "en": "Boiled leaves for Mara’s wound, as she already plans."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "feedback_fil": "1: Hindi saklaw ng gamit sa balat ang lahat ng bahagi; talbos/dahon ang nasa card. 2: Talbos/dahon ng Psidium guajava ang nasa card; hindi ito paghahanda. 3: Bahagi ang nasa card, hindi panghugas sa sugat; walang pahintulot na maghanda.",
+      "feedback_en": "1: A listed skin use does not cover every part; the card lists leafy tops. 2: The card lists leafy tops of Psidium guajava; this is not a preparation. 3: The card names a part, not a wash for a wound; no preparation is authorized."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: mga gamit sa balat na nakalista sa lumang manual\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: skin uses listed in the legacy manual\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Card: Psidium guajava, talbos/dahon.\nHindi kapalit ng pagsusuri ang herbal wash.\nSugat na namumula at may nana: ipasuri agad.",
+    "display_en": "Card: Psidium guajava, leafy tops.\nA wash does not replace assessment.\nRed wound with pus: prompt assessment.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Bayabas at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri agad ang lumalalang pamumula, nana, lagnat o ibang senyales ng impeksiyon.",
-    "narration_en": "The BHW points to Bayabas and its botanical name on the card. The yard plant is not assumed to be identified. Seek prompt assessment for spreading redness, pus, fever or other infection concerns."
+    "narration_fil": "Ipinakita ng BHW kay Mara ang card: Psidium guajava ang Bayabas, talbos/dahon, na may gamit sa balat sa lumang manual. Sinabi ng BHW na hindi kapalit ng pagsusuri at wound care ang herbal wash. Itinanong niya ang gamot at sintomas ni Mara. Dahil namumula ang sugat at may nana, ipinasuri niya ito agad.",
+    "narration_en": "The BHW shows Mara the card: Bayabas is Psidium guajava, leafy tops, with skin uses listed in the legacy manual. The BHW says a herbal wash does not replace assessment and wound care, and asks about her medicines and symptoms. Because the wound is red with pus, the BHW seeks prompt assessment."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
-    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "display_fil": "Walang wash o mainit na likido sa practice.\nHindi kapalit ng wound care ang herbal wash.\nWalang paghahanda o dose.",
+    "display_en": "No wash or hot liquid in practice.\nA wash does not replace wound care.\nNo preparation or dosing.",
     "check": null,
     "narration_fil": "Hindi kapalit ng pagsusuri at angkop na wound care ang herbal wash. Huwag subukan ang mainit na likido sa practice. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
     "narration_en": "A herbal wash does not replace assessment and appropriate wound care. Use no hot liquid in practice. This lesson does not authorize preparation or dosing of an herbal remedy."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Ano ang ligtas na hakbang para kay Mara?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the safe step for Mara?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Bayabas?",
-      "prompt_en": "What is the safe response in the Bayabas case?",
+      "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Mara?",
+      "prompt_en": "What is the safe response in Mara’s case?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Tulungan si Mara na pakuluan ang dahon at hugasan muna ang sugat.",
+          "en": "Help Mara boil the leaves and wash the wound with it first."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Ipasuri agad ang sugat dahil namumula ito at may nana.",
+          "en": "Seek prompt assessment, since the wound is red with pus."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Linisin ang sugat at maghintay ng ilang araw kung gagaling.",
+          "en": "Clean the wound and wait a few days to see if it heals."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "feedback_fil": "1: Hindi kapalit ng pagsusuri at angkop na wound care ang herbal wash. 2: Senyales ng impeksiyon ang nana; kailangang maipasuri agad si Mara. 3: Dapat ipasuri agad ang nana; naaantala ang pangangalaga kapag naghintay.",
+      "feedback_en": "1: A herbal wash does not replace assessment and appropriate wound care. 2: Pus is an infection concern; Mara needs prompt assessment. 3: Pus needs prompt assessment; waiting delays needed care."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

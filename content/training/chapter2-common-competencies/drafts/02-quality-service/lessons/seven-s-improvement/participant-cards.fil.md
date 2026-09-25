@@ -10,7 +10,7 @@ Gamit ang ligtas na props, suriin ang lahat ng 7S sa mesa ni Tess. Magtalaga ng 
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang staff ng BHS na dapat magpahintulot bago mag-alis ng gamit. Kapag gustong alisin ng kalahok ang lumang poster o form, itanong: "Humingi ka na ba ng pahintulot sa akin?" Kapag may mungkahing pagbabago, itanong: "Sino ang magsusuri nito, at kailan?" Huwag magdagdag ng tunay na rekord, gamot o ibang bagay sa mesa.
 
 ## Card ng tagamasid
 

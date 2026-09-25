@@ -1,57 +1,82 @@
 ## [purpose] Layunin
 
-60 minuto: pambungad 5; modelo 10; practice 20; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Itala ang isang IPC gap, agarang pag-uulat, responsable, petsa at ebidensiya ng follow-up nang walang imbentong resulta.
+Naitatala ng BHW ang isang tiyak na IPC gap, ulat, responsable, petsa at ebidensiya ng follow-up, nang walang imbentong resulta.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 60 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 10, practice 20, feedback at pag-ulit 5, check at debrief 10, pagsasara ng subchapter 10. Mga 5 minuto ang Read sa app.
+- **Kagamitan:** blangkong *2.3.7 IPC improvement card* (worksheet) at talaan ng obserbasyon; job aid para sa lahat; ang dalawang follow-up slip (naayos, hindi pa naayos) sa participant cards.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin kung sino ang nagre-refill at paano iniuulat ang kakulangan; isulat sa job aid, o "kumpirmahin sa midwife / RHU / lokal na protocol".
+- **Hangganan:** hindi nagsasagawa ang BHW ng clinical audit o imbestigasyon ng outbreak. Iniuulat agad ang exposure at agarang panganib. Walang totoong pangalan ng kasama sa card.
 
 ## [opening] Pambungad
 
-Sa practice inspection, walang sabon sa handwashing station. May kumpletong attendance sheet ng training. Sabi ng kasama, “Okay na tayo dahil lahat ay dumalo.” Nakita ni BHW Aya na magkaiba ang attendance, supply at aktuwal na gawain. Ano ang dapat niyang itala?
+Basahin ang kaso ni Aya. Itanong: *"'Okay na tayo dahil lahat ay dumalo.' Totoo ba?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Attendance, supply, gawain: alin ang nakita ni Aya?"*
+2. **Gawin at sabihin.** *"Ano ang titingnan natin para malamang naayos na?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** *"Ano ang isusulat niya kung wala pa ring sabon?"*
+5. **Saklaw at paghingi ng tulong.** *"May agarang panganib. Hihintayin ba ang follow-up?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Sa card ni Aya, ano ang alam, nakita at kailangan pang suriin?"*
 
-Tala ni Aya: “Station A, alas-nuwebe: walang sabon.” Ipinaalam sa nurse, na nagtakda ng refill at pansamantalang station. Sa pagbalik, may sabon na at gumagana ang tubig. Isinulat ang petsa at ebidensiya. Kung hindi pa naayos, “hindi pa naayos” ang ilalagay at muling ipaaalam.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Tamad ang staff."** *"Ano mismo ang nakita mo, saan at kailan?"*
+- **"May nangakong magre-refill, tapos na."** Hindi ebidensiya ang pangako.
+- **"Minsan walang sabon."** Itanong ang lugar at oras.
+- **"Na-train naman ang lahat."** Hindi pinapalitan ng training ang kailangang supply.
 
-Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Dumalo ang lahat sa training, kaya ayos ang gawain natin."** Madaling bilangin ang attendance. Itanong: *"Sinasabi ba ng sheet na may sabon sa station?"* Ang nakitang gawain at supply lamang ang makapagpapakita niyan.
 
-Gumawa ng improvement card para sa kulang na sabon. Itala ang pansamantalang kaayusan at resulta ng dalawang posibleng follow-up. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**IPC improvement card**, umiikot na triad, 20 minuto at feedback.
 
-1: Bansag ito at hindi tiyak na observation. / 2: Malinaw ang nakita, lugar at oras. / 3: Hindi sapat ang attendance para malaman ang aktuwal na practice.
+- **Learner:** pinupunan ang bawat linya ng card, saka tapat na itinatala ang dalawang follow-up slip, may susunod na hakbang kung hindi pa naayos.
+- **Partner:** ang kasamang nagsasabing "lahat ay dumalo"; nag-aabot ng mga slip.
+- **Observer:** hinahanap ang pangakong isinulat bilang resulta; isang kalakasan at isang uulitin.
+- Kathang-isip na station lamang. Mag-isa: punan ang card kasama ang supervisor.
 
-1: Pangako ay hindi ebidensiya ng resulta. / 2: Hindi pinapalitan ng training ang kailangang supply. / 3: Tapat ang tala at may susunod na aksyon.
+**Isara ang subchapter (10 minuto):** bawat isa ay magsasabi ng isang daan, isang kontrol at isang taong pag-uulatan. Ibigay ang job aid at ipaliwanag ang transfer task.
 
-## [observe] Obserbahan
+## [answer-key] Susi sa self-check
 
-May tiyak na gap, pag-uulat, responsable, petsa at ebidensiya; naihihiwalay ang pangako sa naobserbahang resulta.
+- **Check 1 (observation entry):** **"Station A, alas-nuwebe: walang sabon."** Malinaw ang nakita, lugar at oras.
+  - "Tamad ang lahat kaya tiyak na mali ang kanilang gawain": bansag ito at hindi tiyak na observation.
+  - "Lahat ay mahusay dahil may pirma sa attendance sheet": hindi sapat ang attendance para malaman ang aktuwal na practice.
+- **Check 2 (hindi pa na-refill sa follow-up):** **"Itala na hindi pa naayos at muling ipaalam."** Tapat ang tala at may susunod na aksyon.
+  - "Tapos na ang gawain dahil may nangakong magre-refill": pangako ay hindi ebidensiya ng resulta.
+  - "Walang problema dahil may naunang training ang lahat": hindi pinapalitan ng training ang kailangang supply.
 
-Kaya na: Kumpleto ang card, tapat ang resolved at unresolved na resulta, at may susunod na aksyon nang walang paalala.
+## [observe] Ano ang oobserbahan
 
-Kailangan practice: Malinaw ang gap pero kailangang paalalahanang magtakda ng follow-up o ebidensiya.
+Indicator: May tiyak na gap, pag-uulat, responsable, petsa at ebidensiya; naihihiwalay ang pangako sa naobserbahang resulta.
 
-Hindi pa: Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.
+- **Kaya na:** Kumpleto ang card, tapat ang resolved at unresolved na resulta, at may susunod na aksyon nang walang paalala.
+- **Kailangan pa ng practice:** Malinaw ang gap pero kailangang paalalahanang magtakda ng follow-up o ebidensiya.
+- **Hindi pa:** Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.
 
-## [support] Suporta at talakayan
+Hanapin ang panukat na nakikita, gaya ng may sabon. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [sources-review] Lokal na kagamitan
+- **Kailangan pa:** itanong *"Paano mo malalamang naayos na?"*; ulitin ang mga hanay ng follow-up.
+- **Hindi pa:** i-model muli ang card ni Aya; ulitin gamit lamang ang slip na hindi pa naayos. Obserbahan muli sa transfer task.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+## [sources-review] Sanggunian at tala sa pagrepaso
+
+- Reference Manual PDF pp. 36–37; Facilitator Guide PDF p. 35; presentation PDF pp. 60–62. Evidence review: gumamit ng panukat sa nakitang proseso at supply.
+- Hatian ng 600-minutong source allocation ang 60 minuto, kasama ang pagsasara.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.

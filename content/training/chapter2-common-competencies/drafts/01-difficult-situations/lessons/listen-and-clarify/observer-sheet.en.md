@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____  Setting: role-play
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Identifies the two visits and unclear contact, and confirms these with Liza without assumptions or prompts. |
-| Kailangan practice | Listens calmly but does not check the summary; adds the confirmation after a prompt. |
+| Kailangan pa ng practice | Listens calmly but does not check the summary; adds the confirmation after a prompt. |
 | Hindi pa | Interrupts, blames Liza or promises an outcome before hearing the concern. |
 
 Evidence observed: ____

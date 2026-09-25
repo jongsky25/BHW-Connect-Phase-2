@@ -1,57 +1,73 @@
 ## [purpose] Purpose
 
-10 minutes: opening 1; model 1; supervised reference-card practice 6; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-Compare two cards and identify what needs confirmation before any use.
+The BHW compares two cards for plants sharing one local name and marks what needs confirmation before any use.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 10 minutes face-to-face (this lesson's share of the 120-minute subchapter plan): opening 2, model 1, practice 5, feedback 1, check 1. The Read takes about 3 minutes in the app.
+- **Per triad:** participant cards *2.5.1 — Plant-card consultation*, worksheet and staff observation sheet; job aid *Ten medicinal plants*; the current PITAHC card plus a second card with the same local name.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Write on the job aid: midwife / RHU contact, urgent referral route, reporting channel, and who authorizes plant products.
+- **Scope:** the card check only. No preparation, amounts, doses, tasting or hot water. If asked: *"That is a question for the midwife or RHU. Today we practise the card check."*
 
 ## [opening] Opening
 
-Two yard plants share the local name “tsaang gubat.” A resident asks which one to use.
+Ask: *"What do residents already ask you about plants?"* Do not write down recipes. Read the case: two yard plants are both called "tsaang gubat." Ask: *"Which one is it — and how would you know?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **"The situation" (first slide).** Hold up both cards: *"Same name. Same plant?"*
+2. **"What to do and say" (matching slide).** Point to botanical name and part: *"If identity is uncertain, what do you do?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model reading the card, listening, asking symptoms and medicines: *"What did I check first?"*
+5. **"Scope and support."** Ask: *"Does 'natural' mean safe?"* Run the practice.
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"What will you mark with your supervisor?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-The BHW reads the current card and listens to the resident. Find the botanical name and listed part in a current PITAHC card. If identity is uncertain, do not prepare or provide it. Ask about symptoms and medicines; consult a clinician.
+- **"The one my lola used."** Respect it: *"What on the card would confirm it?"*
+- **"Give the old manual's dose."** Kindly: no clinical or local authorization; say the scope line.
+- **"Check the card, ask symptoms and medicines, consult the clinician."** Praise the full sequence.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Guesses identity, dose or authorization.
+**"If people call it tsaang gubat, it is tsaang gubat."** Local names served families for years. Use the case, not the person: *"Both plants have that name. Can both be the plant on the card?"* A local name, picture or "natural" label alone does not establish identity, efficacy or safety.
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Compare two cards and identify what needs confirmation before any use. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+**Two cards, one local name** (*Plant-card consultation*): triads of learner, partner (resident), observer; one 5-minute round, 1 minute feedback. The learner fills the worksheet and marks what needs confirmation. The observer notes actual words, then gives one strength and one next action. Fictional details only. Alone: worksheet on paper, then staff observation later.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: The plant may be misidentified. / 2: A verified reference is the proper start. / 3: Clinical and local authorization are missing.
+- **"What is the first safe step?"** Correct: **"Read the botanical name and part on a current card."**
+  - "Choose the plant the resident’s family has always used." Family use does not confirm identity.
+  - "Pick the plant that looks most like the picture." A picture is not proof.
+- **"What follows the card check?"** Correct: **"Ask about symptoms and medicines; consult a clinician."**
+  - "Tell the resident to use the plant whose name matches." A shared name is not proof.
+  - "Give the old manual’s dose for tsaang gubat." No clinical or local authorization.
 
-1: Changing treatment is not authorized. / 2: Complete information is needed. / 3: Clinical advice matters before preparation or use.
+## [observe] What to observe
 
-## [observe] Observe
+Staff watch for: Compare two cards and identify what needs confirmation before any use.
 
-Compare two cards and identify what needs confirmation before any use.
+- **Kaya na:** Marks the botanical name, part and what needs confirmation on both cards, and who to consult, without prompts.
+- **Kailangan pa ng practice:** Compares the cards but needs a prompt on the shared name or on who to consult.
+- **Hindi pa:** Picks a plant by name, picture or family use, or gives a dose.
 
-Ready: Completes identity, part, scope and referral without prompts.
+Look for: the botanical name comes from the card, not the plant's look. A correct self-check is not evidence of the skill.
 
-Needs practice: Mostly correct, but needs a prompt for source or referral.
+## [support] If a BHW needs more support
 
-Not yet: Guesses identity, dose or authorization.
+- **Kailangan pa ng practice:** name the missing step; retry the same cards at once.
+- **Hindi pa:** re-model step 4; retry with three rows only (plant, part, who to consult), paired with a Kaya na BHW.
+- Re-observe next session or in 2.5.12. Peer feedback is practice, not a staff rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF pp. 48–51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 6, 16.
+- Timing: an authoring split of F38's 2-hour plant allocation, not a new allocation.
+- Status: program owner's attested clinical sign-off for 2.5, 25 Sep 2026; reviewer names not recorded. The local health center confirms specimens and products; local protocol overrides this guide.

@@ -1,4 +1,4 @@
-# 2.4.4 — First-aid practice: diarrhea dehydration
+# 2.4.4 — Respond to diarrhea and dehydration concerns
 
 Fictional practice. Rotate learner, partner and observer.
 
@@ -6,12 +6,12 @@ Baby Mina has loose stools and is still breastfeeding. Her caregiver has an ORS 
 
 ## Learner card
 
-Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.
+You are the BHW. Ask about drinking, vomiting, blood in stool and alertness. Encourage continued breastfeeding. Read the water amount and mixing steps from the sachet label aloud; do not mix anything. End by naming when to go for urgent referral.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Mina's caregiver, holding the empty sachet. Ask, "How much water do I use?" Later say, "My neighbor says to stop breastfeeding." Answer only what the BHW asks. Do not add new signs or clinical details.
 
 ## Observer card
 
-Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+Fill the worksheet from what the BHW actually says: the label reading, safe water, breastfeeding and the referral trigger. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.

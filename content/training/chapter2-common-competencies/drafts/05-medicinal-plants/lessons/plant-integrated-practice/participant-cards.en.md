@@ -2,15 +2,15 @@
 
 Fictional practice. Rotate learner, partner and observer.
 
-Three residents ask about Lagundi, Ampalaya and Bayabas. Their cards include breathing difficulty, diabetes medicine and a wound with pus.
+Three residents ask about plants. Ben asks about Lagundi and has breathing difficulty. Joel asks about Ampalaya and takes diabetes medicine. Mara asks about Bayabas and has a wound with pus.
 
 ## Learner card
 
-For three case cards, record identity, use, concern, referral and missing local authorization.
+Lead one case. Match the card, ask about symptoms and medicines, refer, and fill the worksheet: identity, use, concern, referral and missing local authorization.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the resident on the current case card: Ben, Joel or Mara. Ask about your plant and say only what your card states. Do not add symptoms, medicines or other details.
 
 ## Observer card
 

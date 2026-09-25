@@ -21,7 +21,7 @@
         "c2.firstaid.choking.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kaso: Sa tanghalian, hindi makapagsalita o makaubo nang mabisa…",
+      "takeaway_fil": "Kaso: Hindi makapagsalita o makaubo nang mabisa ang adult",
       "takeaway_en": "Case: At lunch, an adult cannot speak or cough effectively",
       "check": null
     },
@@ -45,28 +45,28 @@
         "c2.firstaid.choking.response.hazard"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
-      "takeaway_en": "Prioritize safety and timely help.",
+      "takeaway_fil": "Humingi ng tulong, saka sundin ang training ayon sa edad.",
+      "takeaway_en": "Call for help, then follow training for the person's age.",
       "check": {
-        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-        "prompt_en": "In this case, what comes first?",
+        "prompt_fil": "Hindi makapagsalita o makaubo nang mabisa ang adult. Ano ang unang tugon?",
+        "prompt_en": "The adult cannot speak or cough effectively. What comes first?",
         "options": [
           {
-            "fil": "Maghintay muna at huwag ipaalam sa staff.",
-            "en": "Wait without notifying the responsible staff."
+            "fil": "Hugutin muna ng daliri ang nasa loob ng bibig.",
+            "en": "Sweep the mouth with a finger first."
           },
           {
-            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-            "en": "Use the shortcut before confirming the facts."
+            "fil": "Hintayin kung maaalis ito sa pag-ubo.",
+            "en": "Wait and see if coughing clears it."
           },
           {
-            "fil": "Humingi ng tulong ayon sa edad.",
-            "en": "Call for age-specific help."
+            "fil": "Humingi ng tulong at tingnan ang edad.",
+            "en": "Call for help and check the age."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha. 3: Unahin ang kaligtasan at agarang tulong.",
-        "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner. 3: Prioritize safety and timely help."
+        "feedback_fil": "1: Huwag gumawa ng bulag na paghugot sa bibig. Humingi muna ng tulong. 2: Hindi ito mabisang ubo: hindi siya makapagsalita o makaubo nang mabisa. Humingi agad ng tulong. 3: Tama. Humingi ng tulong, saka sundin ang kasalukuyang training ayon sa edad.",
+        "feedback_en": "1: Do not use blind finger sweeps. Call for help first. 2: This is not a mild cough: the adult cannot speak or cough effectively. Call for help now. 3: Correct. Call for help, then follow current training for the person's age."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.firstaid.choking.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
-      "takeaway_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+      "takeaway_fil": "Humihingi ng tulong si Lea, saka ginagamit ang tamang manikin at pathway sa bawat edad.",
+      "takeaway_en": "Lea calls for help, then uses the right manikin and pathway for each age.",
       "check": null
     },
     {
@@ -89,8 +89,8 @@
         "c2.firstaid.choking.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang adult thrust sa sanggol, walang bulag na paghugot sa bibig, walang thrust sa totoong kapareha.",
+      "takeaway_en": "No adult thrusts on an infant, no blind finger sweeps, no thrusts on a live partner.",
       "check": null
     },
     {
@@ -100,28 +100,28 @@
         "c2.firstaid.choking.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
-      "takeaway_en": "Observe the task and appropriate referral.",
+      "takeaway_fil": "Infant manikin at infant pathway ang para sa card ng sanggol.",
+      "takeaway_en": "The infant card needs the infant manikin and pathway.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa station, hawak mo ang case card ng sanggol. Ano ang dapat ipakita sa practice?",
+        "prompt_en": "At the station, you pick up the infant case card. What should your practice show?",
         "options": [
           {
-            "fil": "Infant manikin, hindi adult maneuver.",
-            "en": "Infant manikin, not adult maneuver."
+            "fil": "Lumipat sa infant manikin at infant pathway.",
+            "en": "Switch to the infant manikin and pathway."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Adult abdominal thrust sa infant manikin.",
+            "en": "Adult abdominal thrusts on the infant manikin."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Thrust sa kapareha, nang marahan, para magsanay.",
+            "en": "Thrusts on your partner, gently, to practise."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+        "feedback_fil": "1: Tama. Infant manikin at infant pathway na aprubado ng trainer ang para sa card ng sanggol. 2: Hindi para sa sanggol ang adult abdominal thrust. Lumipat sa infant pathway. 3: Huwag kailanman magsanay ng thrust sa totoong kapareha, kahit marahan. Manikin lamang.",
+        "feedback_en": "1: Correct. The infant card needs the infant manikin and the trainer-approved infant pathway. 2: Adult abdominal thrusts are not for infants. Switch to the infant pathway. 3: Never rehearse thrusts on a live partner, even gently. Use manikins only."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.firstaid.choking.response.escalation"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sanayin ang dalawang pathway sa manikin kasama ang trainer.",
+      "takeaway_en": "Practise both age pathways on manikins with a trainer.",
       "check": null
     }
   ],

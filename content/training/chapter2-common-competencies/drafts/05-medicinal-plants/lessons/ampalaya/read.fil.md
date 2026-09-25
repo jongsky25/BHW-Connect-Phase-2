@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Ampalaya at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay ang tanong sa clinician na sumusubaybay sa blood sugar at iba pang gamot ni Joel.
+Ipinakita ng BHW kay Joel ang card: Momordica charantia ang Ampalaya, dahon, para sa pagkontrol ng blood sugar sa payo ng clinician. Sinabi ng BHW na hindi awtomatikong kapalit ng diabetes plan ang ampalaya. Itinanong niya ang gamot at sintomas ni Joel. Sinabi niyang huwag ihinto o baguhin ang gamot, at iniugnay ang tanong sa clinician na sumusubaybay sa blood sugar ni Joel.
 
 ## [scope] Saklaw at paghingi ng tulong
 

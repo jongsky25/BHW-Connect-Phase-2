@@ -6,11 +6,11 @@ Masakit ang tiyan ni Rosa at lumalala ang sakit. Gusto niyang uminom ng Tsaang g
 
 ## Card ng kalahok
 
-Itugma ang dalawang Tsaang gubat card; piliin ang Carmona retusa, dahon, gamit at ligtas na susunod na hakbang.
+Ihambing ang dalawang Tsaang gubat card at punan ang worksheet. Sabihin kay Rosa ang alam, ang hindi alam at kung sino ang kokonsultahin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang si Rosa. Sabihing lumalala ang sakit ng tiyan mo, gusto mong uminom ng Tsaang gubat at may dahon ka na sa bahay. Huwag magdagdag ng sintomas, gamot o ibang detalye.
 
 ## Card ng tagamasid
 

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. |
+| Kaya na | Humihinto sa gilid ng kalsada, itinatalaga kung sino ang tatawag sa kumpirmadong contact, at iniuulat ang tugon, paghinga at lokasyon nang walang paalala. |
+| Kailangan pa ng practice | Ligtas at may itinalagang tatawag, pero kailangan ng paalala na gamitin ang kumpirmadong contact o ibigay ang lokasyon. |
+| Hindi pa | Pumapasok sa kunwaring trapiko, inaalam muna ang buong kuwento bago tumawag, o tumatawag sa hindi kumpirmadong numero. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Kumpleto ang identity, bahagi, hangganan at referral nang walang paalala. |
-| Kailangan practice | May tama ngunit kailangan ng paalala sa source o referral. |
-| Hindi pa | Nanghuhula ng identity, dose o awtorisasyon. |
+| Kaya na | Namamarkahan ang botanical name, bahagi at dapat kumpirmahin sa dalawang card, at ang kokonsultahin, nang walang paalala. |
+| Kailangan pa ng practice | Naihahambing ang card ngunit kailangan ng paalala sa iisang pangalan o sa kokonsultahin. |
+| Hindi pa | Pumipili ng halaman ayon sa pangalan, larawan o gamit ng pamilya, o nagbibigay ng dose. |
 
 Aktuwal na nakita/narinig: ____
 

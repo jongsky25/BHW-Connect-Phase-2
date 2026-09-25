@@ -1,57 +1,70 @@
 ## [purpose] Purpose
 
-40 minutes: opening 3; model 3; supervised case practice 28; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
+At a simulated roadside fall, the BHW marks hazards before approaching, has a bystander call the confirmed contact, and reports response, breathing and location.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **40 minutes** face-to-face (this lesson's share of the 480-minute subchapter plan): opening 4, model 6, practice 22, feedback 5, self-check 3. The Read takes about 5 minutes in the app.
+- 2.4.1 participant cards, worksheet and observation sheet; job aid with the confirmed contact; tape or chalk for a pretend road.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and the job aid section *Assess the situation and get help*.
+- Confirm with the midwife or RHU the emergency contact that answers, the reporting channel and the referral facility. Write the contact on every job aid.
+- Scope: safety, calling and reporting only. No pulse-first sequence, injury care or CPR here.
 
 ## [opening] Opening
 
-A tricycle has stopped beside a fallen rider while traffic still moves. BHW Lea arrives with a bystander.
+At the taped road: *"A tricycle stopped beside a fallen rider. Cars still pass. You arrive with a neighbor. Before one step closer, what do you look at?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation (Read and first slide).** *"Who is in danger now — only the rider?"*
+2. **What to do and say (matching slide).** Walk Scene, Call, Report. *"Why does the bystander make the call?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model it: check the road, point, *"Please call [confirmed contact]: fallen rider beside the road near the store, not answering."* *"What did I report, and what did I not guess?"*
+5. **Scope and support.** *"Someone says 'call any number'. What do you answer?"*
+6. **Apply it to the situation.** Self-check 2 — pairs first.
+7. **On Monday, try this.** *"Where will you keep the confirmed contact?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-This is the safe response in the case. Look for hazards before approaching. Direct the bystander to activate the locally confirmed emergency route. Check response and normal breathing from a safe position; share location and observed facts. Wait for trained help and follow the local referral plan. Lea avoids the shortcut.
+- **"I run to the rider."** *"Kind. But who helps the rider if a car hits you?"*
+- **"I ask what happened, then call."** *"The call needs what you see now; the story can wait."*
+- **"I call the national number."** *"Which number did your barangay confirm?"*
+- **"The bystander calls; I watch from the side."** Confirm; ask for the location sentence aloud.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact.
+**"Get the whole story first, then call."** People want to report accurately, and old manuals asked for history early. Beside traffic this delays help. Correct the case, not the person: *"Many of us learned that. What does the lesson put first?"*
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Mark hazards, assign the call, state response and breathing observations, and give a concise location report. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+Scene assessment station (*Scene, collapse and handover stations*). Triads: learner, partner as a bystander who wants to cross, observer. Two short rounds with one strength and one retry action between, then rotate. The observer records hazards, who called which contact, response and breathing words, and the location. Fictional details only. Solo: talk it through with the job aid; arrange staff observation later.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: The shortcut can cause harm: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. / 2: Prioritize safety and timely help. / 3: Necessary assessment may be delayed.
+1. **"Lea reaches the roadside… What comes first?"** **"Check the traffic, then have the bystander call."** — hazards first, then a call without delay. "Walk straight to the rider…": steps into moving traffic. "Ask the rider and driver…": a full history delays the call.
+2. **"…What should Lea tell them?"** **"The location and whether the rider responds and breathes."** — observed facts. "Her guess about the rider's injury…": a guess, not an observation. "…try the national number…": use the locally verified contact.
 
-1: The story is not grounds for an independent diagnosis. / 2: The shortcut is unsafe: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. / 3: Observe the task and appropriate referral.
+## [observe] What to observe
 
-## [observe] Observe
+Indicator: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
 
-Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
+- **Kaya na:** Stops at the road edge, names who calls the confirmed contact, and reports response, breathing and location without prompting.
+- **Kailangan pa ng practice:** Stays safe and assigns the call but needs a prompt to use the confirmed contact or to give the location.
+- **Hindi pa:** Steps into the simulated traffic, asks for the full story before any call, or calls an unverified number.
 
-Ready: Completes the task without prompting: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.
+Look for a stop at the road line and a named contact, not "someone". A correct self-check is not evidence of the skill.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+## [support] If a BHW needs more support
 
-Not yet: Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact.
+- **Kailangan pa:** re-model the call sentence; retry at a market corner instead.
+- **Hindi pa:** walk Scene, Call, Report together; retry a fall in a quiet lane with a Kaya na partner.
+- Re-observe this session or next, new case. Peer feedback is practice, not a rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 38; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 71–74.
+- F38 gives 2.4 eight hours; these 40 minutes are an authoring distribution.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides this guide.

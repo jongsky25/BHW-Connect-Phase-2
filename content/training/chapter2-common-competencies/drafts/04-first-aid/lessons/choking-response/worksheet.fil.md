@@ -1,4 +1,4 @@
-# 2.4.15 — First-aid practice: choking response
+# 2.4.15 — Tumugon sa pagkabulon
 
 Kathang-isip na detalye lamang.
 
@@ -7,5 +7,5 @@ Kathang-isip na detalye lamang.
 | Tawag at lokasyon | ____ | ____ |
 | Tamang manikin at edad | ____ | ____ |
 | Kasalukuyang sequence ng trainer | ____ | ____ |
-| AED o susunod na tulong | ____ | ____ |
+| Tinawag na susunod na tulong | ____ | ____ |
 | Walang maneuver sa tao | ____ | ____ |

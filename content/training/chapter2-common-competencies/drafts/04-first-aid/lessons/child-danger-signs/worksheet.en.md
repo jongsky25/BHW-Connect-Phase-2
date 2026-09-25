@@ -1,4 +1,4 @@
-# 2.4.2 — First-aid practice: child danger signs
+# 2.4.2 — Recognize childhood danger signs
 
 Use fictional details only.
 

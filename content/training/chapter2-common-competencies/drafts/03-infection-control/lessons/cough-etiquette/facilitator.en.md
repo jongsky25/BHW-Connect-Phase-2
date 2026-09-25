@@ -1,57 +1,80 @@
 ## [purpose] Purpose
 
-90 minutes: opening 5; model 10; guided practice 50; feedback/retry 10; debrief 5; next step 10. Rotate learner, partner and observer. Use every worksheet row and repeat missed actions.
-
-Demonstrate cough covering, disposal and hand hygiene, then explain respectful symptom reporting at the BHS.
+The BHW mimes covering a cough with a tissue and with the elbow, discards the tissue, cleans hands, and explains how to report symptoms to staff respectfully.
 
 ## [time-materials] Time and materials
 
-The seven IPC sessions total 600 minutes. This adapted split includes policy and improvement practice. Use clean props only. Hand hygiene needs running water, soap, single-use towels, suitable handrub and a timer. No live sharps, body fluids, hot-water or chemical demonstrations. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 90 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 5, model 10, practice 45, feedback and retry 15, checks and debrief 15. The Read takes about 5 minutes in the app.
+- **Materials:** tissues and a bin; handrub or a handwashing station; *2.3.4* cards, worksheet and observation sheet; job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm with IPC staff the symptom-reporting route, waiting area and mask arrangement; write them on the job aid, or "confirm with the midwife / RHU / local protocol".
+- **Scope:** mime only; nobody coughs or spits toward a partner. Nobody handles another person's used tissue. Do not teach covering your own mouth as protection. No diagnosis.
 
 ## [opening] Opening
 
-In a role-play, Mang Lito is about to sneeze in the waiting area. He has no tissue in his pocket. Tissues and a bin are available at the station. BHW Rina will help without embarrassing him or asking him to cough toward anyone.
+Read Mang Lito's case. Ask: *"How does Rina help him without embarrassing him?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step is a Read section and its matching slide.
 
-## [expected-answers] Expected response
+1. **The situation.** *"What might make Mang Lito feel ashamed here?"*
+2. **What to do and say.** *"Why the elbow and not the palm?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** *"What did Rina not say about Mang Lito?"*
+5. **Scope and support.** *"Someone coughs near you. Is covering your own mouth enough?"*
+6. **Apply it to the situation.** Self-check 2 — let pairs answer before revealing.
+7. **On Monday, try this.** *"What words will you use at your BHS?"*
 
-Rina: “Tissues are available here. If none are available, sneeze into your elbow.” She points out the bin and hand-hygiene station. She reports symptoms and asks staff about the waiting area. Follow the facility protocol and staff assistance for a recommended mask. She does not diagnose Mang Lito.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Tell him to cover with his hand."** *"Where can he cover, other than his hand?"*
+- **"He probably has flu; send him home."** Kind intent. Rina reports to staff and names no illness.
+- **"Give him a mask."** Maybe, if the facility protocol says so. Staff decide.
+- **"I'd cover my own mouth."** It does not replace respiratory controls; report to staff.
 
-Coughs into hands or toward a partner, reuses tissue or omits hand hygiene.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"When someone coughs near me, covering my own mouth protects me."** Many learned it from an older mnemonic. Ask: *"Who needs to cover — the one coughing or the one nearby?"* Then return to tissue, elbow, bin, hand hygiene and reporting.
 
-Mime tissue and elbow methods. Show disposal and hand hygiene; explain reporting to staff. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Cough-etiquette demonstration**, rotating triads, 45 minutes plus feedback.
 
-1: Hands may transfer secretions to objects. / 2: This covers nose and mouth without using hands. / 3: Mime the action without exposing the partner.
+- **Learner:** mimes tissue and elbow methods, discards the tissue, cleans hands, then says as Rina how to report symptoms.
+- **Partner:** plays Mang Lito, with no real coughing.
+- **Observer:** marks each worksheet row observed, retry or not observed; gives one strength and one retry.
+- Fictional details only. Alone: rehearse first; demonstrate to the supervisor later.
 
-1: Hands may still be contaminated. / 2: Used tissues should not be shared or reused. / 3: Hand hygiene is part of the complete sequence.
+## [answer-key] Self-check answer key
 
-## [observe] Observe
+- **Check 1 (no tissue — where to sneeze?):** **"Into his bent elbow."** This covers nose and mouth without using hands.
+  - "Into his hand, then immediately touch the desk": hands may transfer secretions to objects.
+  - "Directly toward the partner to show the demonstration": mime the action without exposing the partner.
+- **Check 2 (tissue discarded, secretions touched):** **"Clean hands before touching anything else."** Hand hygiene is part of the complete sequence.
+  - "Immediately touch someone else because the tissue is gone": hands may still be contaminated.
+  - "Keep the used tissue to give to the next person": used tissues should not be shared or reused.
 
-Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.
+## [observe] What to observe
 
-Ready: Completes both methods and follow-through without using hands to cover, exposing a partner or needing prompts.
+Indicator: Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.
 
-Needs practice: Covers correctly but needs a prompt for hand hygiene or reporting.
+- **Kaya na:** Completes both methods and follow-through without using hands to cover, exposing a partner or needing prompts.
+- **Kailangan pa ng practice:** Covers correctly but needs a prompt for hand hygiene or reporting.
+- **Hindi pa:** Coughs into hands or toward a partner, reuses tissue or omits hand hygiene.
 
-Not yet: Coughs into hands or toward a partner, reuses tissue or omits hand hygiene.
+Listen for reporting words that name no illness. A correct self-check is not evidence of the skill.
 
-## [support] Support and debrief
+## [support] If a BHW needs more support
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+- **Kailangan pa:** name the missed step (usually hand hygiene); repeat the whole sequence now.
+- **Hindi pa:** model again; guide step by step. Re-observe on day two.
+- Peer feedback is practice, not a staff rating.
 
-## [sources-review] Local resources
+## [sources-review] Sources and review notes
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 35; Facilitator Guide PDF pp. 35–36; presentation PDF p. 56. Evidence review removed the source mnemonic's own-mouth covering.
+- The 90 minutes distributes the 600-minute source allocation.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol applies where it differs.

@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes the task without prompting: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report. |
-| Kailangan practice | Performs the response but needs a prompt about referral or scope. |
-| Hindi pa | Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice. |
+| Kaya na | Without prompting, puts on gloves, presses firmly, adds cloth without lifting the first, sends for help and reports where, what was done and the time. |
+| Kailangan pa ng practice | Keeps pressure on, but needs a prompt to add cloth without lifting, to send for help or to complete the report. |
+| Hindi pa | Lifts or removes the cloth, stops pressing, presses only gently, or does not send for help. |
 
 Evidence observed: ____
 

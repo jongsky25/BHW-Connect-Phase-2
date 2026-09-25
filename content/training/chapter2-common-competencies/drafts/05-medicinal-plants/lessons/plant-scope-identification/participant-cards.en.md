@@ -6,11 +6,11 @@ Two yard plants share the local name “tsaang gubat.” A resident asks which o
 
 ## Learner card
 
-Compare two cards and identify what needs confirmation before any use.
+Fill the worksheet from the two cards. Tell the resident what the shared name cannot confirm, mark what needs confirmation, ask about symptoms and medicines, and name who to consult.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the resident. Point to the two cards and ask: “Both are tsaang gubat. Which one should I use? My lola used this one.” Answer questions briefly. Do not add symptoms, medicines or personal details beyond the case.
 
 ## Observer card
 

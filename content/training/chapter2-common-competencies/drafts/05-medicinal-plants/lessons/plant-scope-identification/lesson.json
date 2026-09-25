@@ -21,8 +21,8 @@
         "c2.plants.plant-scope-identification.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Magkahawig ang dalawang halamang tinatawag na “tsaang gubat”",
-      "takeaway_en": "Two yard plants share the local name “tsaang gubat.” A resid",
+      "takeaway_fil": "Kaso: dalawang halaman sa bakuran ang tinatawag na “tsaang gubat”",
+      "takeaway_en": "Case: two yard plants are both called “tsaang gubat”",
       "check": null
     },
     {
@@ -45,28 +45,28 @@
         "c2.plants.plant-scope-identification.identity"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Magandang simula ang kumpirmadong reference.",
-      "takeaway_en": "A verified reference is the proper start.",
+      "takeaway_fil": "Magsimula sa botanical name at bahagi sa current card.",
+      "takeaway_en": "Start from the botanical name and part on a current card.",
       "check": {
         "prompt_fil": "Alin ang unang ligtas na hakbang?",
         "prompt_en": "What is the first safe step?",
         "options": [
           {
-            "fil": "Manghula mula sa pangalan o larawan.",
-            "en": "Guess from a name or picture."
+            "fil": "Piliin ang halamang laging ginagamit ng pamilya ng residente.",
+            "en": "Choose the plant the resident’s family has always used."
           },
           {
-            "fil": "Kumpirmahin ang identity at source.",
-            "en": "Confirm identity and source."
+            "fil": "Basahin ang botanical name at bahagi sa current card.",
+            "en": "Read the botanical name and part on a current card."
           },
           {
-            "fil": "Ibigay agad ang lumang dose.",
-            "en": "Give the old dose immediately."
+            "fil": "Piliin ang halamang pinakakamukha ng larawan.",
+            "en": "Pick the plant that looks most like the picture."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring magkamali sa halaman. 2: Magandang simula ang kumpirmadong reference. 3: Wala pang clinical at lokal na pahintulot.",
-        "feedback_en": "1: The plant may be misidentified. 2: A verified reference is the proper start. 3: Clinical and local authorization are missing."
+        "feedback_fil": "1: Iginagalang ang gamit ng pamilya, pero hindi nito ipinapakita kung aling halaman ang nasa card. 2: Ang current card na may botanical name ang tamang simula. 3: Hindi sapat na patunay ng identity ang larawan.",
+        "feedback_en": "1: Family use is respected, but it does not show which plant is on the card. 2: A current card with the botanical name is the proper start. 3: A picture alone does not establish identity."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.plant-scope-identification.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.",
-      "takeaway_en": "Compare two cards and identify what needs confirmation before any use.",
+      "takeaway_fil": "Dalawang halaman, iisang pangalan: ang card, hindi ang pangalan, ang batayan.",
+      "takeaway_en": "Two plants, one name: the card, not the name, guides the check.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.plant-scope-identification.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi patunay ng identity o kaligtasan ang pangalan, larawan o “natural” na label.",
+      "takeaway_en": "A name, picture or “natural” label is not proof of identity or safety.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.plant-scope-identification.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Mahalaga ang clinical advice bago maghanda o gumamit.",
-      "takeaway_en": "Clinical advice matters before preparation or use.",
+      "takeaway_fil": "Pagkatapos ng card check, itanong ang sintomas at gamot; iugnay sa clinician.",
+      "takeaway_en": "After the card check, ask about symptoms and medicines; consult a clinician.",
       "check": {
         "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
         "prompt_en": "What follows the card check?",
         "options": [
           {
-            "fil": "Baguhin ang gamot ng residente.",
-            "en": "Change the resident’s medicine."
+            "fil": "Sabihing gamitin ang halamang tugma ang pangalan.",
+            "en": "Tell the resident to use the plant whose name matches."
           },
           {
-            "fil": "Itago ang ibang sintomas sa staff.",
-            "en": "Withhold other symptoms from staff."
+            "fil": "Ibigay ang dose ng lumang manual para sa tsaang gubat.",
+            "en": "Give the old manual’s dose for tsaang gubat."
           },
           {
-            "fil": "Kumonsulta sa clinician.",
-            "en": "Consult a clinician."
+            "fil": "Itanong ang sintomas at gamot; iugnay sa clinician.",
+            "en": "Ask about symptoms and medicines; consult a clinician."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
-        "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+        "feedback_fil": "1: Parehong may ganoong pangalan ang dalawa; hindi patunay ng identity ang pangalan. 2: Walang clinical o lokal na pahintulot ang lumang dose. 3: Mauuna ang clinical advice bago ang anumang paghahanda o paggamit.",
+        "feedback_en": "1: Both plants share the name; a name alone does not confirm identity. 2: The old dose has no clinical or local authorization. 3: Clinical advice comes before any preparation or use."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.plant-scope-identification.consult"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, markahan kasama ang supervisor ang dapat kumpirmahin.",
+      "takeaway_en": "On Monday, mark with a supervisor what needs confirmation.",
       "check": null
     }
   ],

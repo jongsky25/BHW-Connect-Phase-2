@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Tsaang gubat and its botanical name on the card. The yard plant is not assumed to be identified. Refer worsening pain to a health professional; do not copy a dose from the old table.
+The BHW notices that Rosa's stomach pain is getting worse. The BHW points to Carmona retusa and "Part: leaves" on the card and names no amount. The BHW asks about her current medicine and refers the worsening pain to a health professional.
 
 ## [scope] Scope and support
 

@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Magkakaiba at angkop ang tatlong paraan; may follow-up at walang pamimilit o pangako ng gantimpala. |
-| Kailangan practice | May angkop na paanyaya pero kailangang paalalahanang maglagay ng follow-up o alternatibong mungkahi. |
+| Kailangan pa ng practice | May angkop na paanyaya pero kailangang paalalahanang maglagay ng follow-up o ibang paraan ng pag-ambag. |
 | Hindi pa | Chat lamang ang plano para sa lahat o ginagawang kondisyon sa serbisyo ang pagdalo. |
 
 Aktuwal na nakita/narinig: ____

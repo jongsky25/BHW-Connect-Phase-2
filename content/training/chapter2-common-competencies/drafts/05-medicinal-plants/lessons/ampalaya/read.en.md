@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Ampalaya and its botanical name on the card. The yard plant is not assumed to be identified. Refer the question to the clinician monitoring Joel’s blood sugar and other medicines.
+The BHW shows Joel the card: Ampalaya is Momordica charantia, leaves, for blood-sugar management under clinical advice. The BHW says Ampalaya is not an automatic substitute for his diabetes plan and asks about his medicines and symptoms. The BHW tells Joel not to stop or change his medicine and refers his question to the clinician monitoring his blood sugar.
 
 ## [scope] Scope and support
 

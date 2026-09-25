@@ -1,4 +1,4 @@
-# 2.4.9 — First-aid practice: poisoning response
+# 2.4.9 — Mangolekta ng impormasyon sa posibleng pagkalason
 
 Kathang-isip na detalye lamang.
 

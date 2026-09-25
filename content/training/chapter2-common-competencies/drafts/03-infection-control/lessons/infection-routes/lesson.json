@@ -74,8 +74,8 @@
         "c2.ipc.other-routes"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Naipapaliwanag ang walong card, naihihiwalay ang exposure sa diagnosis at naiuugnay ang pag-iwas sa tamang daan.",
-      "takeaway_en": "Explains all eight cards, distinguishes exposure from diagnosis and links prevention to the route.",
+      "takeaway_fil": "Iba pang daan: fecal-oral, vector-borne, dugo, at ilan mula ina sa sanggol.",
+      "takeaway_en": "Other routes: fecal-oral, vector-borne, blood, and some from mother to child.",
       "check": null
     },
     {
@@ -85,8 +85,8 @@
         "c2.ipc.other-routes"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Posibleng daan ang sabihin, hindi diagnosis; clinical staff ang nagpapasya sa pagsusuri at paggamot.",
+      "takeaway_en": "Name a possible route, never a diagnosis; clinical staff decide testing and treatment.",
       "check": null
     },
     {
@@ -95,8 +95,8 @@
         "c2.ipc.respiratory"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.",
-      "takeaway_en": "Use the agreed arrangements for space, reporting and protection.",
+      "takeaway_fil": "Sa posibleng paglanghap, sundin ang napagkasunduang ayos ng lugar, pag-uulat at proteksiyon ng BHS.",
+      "takeaway_en": "Possible inhalation: follow the BHS's agreed arrangements for space, reporting and protection.",
       "check": {
         "prompt_fil": "Sa saradong silid, maaaring malanghap ang particles mula sa umuubo. Ano ang angkop?",
         "prompt_en": "In an enclosed room, particles from a cough may be inhaled. What is appropriate?",
@@ -110,13 +110,13 @@
             "en": "Immediately name the illness and tell the entire queue."
           },
           {
-            "fil": "Iugnay sa respiratory controls ng BHS.",
-            "en": "Use the BHS respiratory-control process."
+            "fil": "Sundin ang proseso ng BHS para sa respiratory controls.",
+            "en": "Follow the BHS process for respiratory controls."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi nito natutugunan ang posibleng paglanghap. 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. 3: Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.",
-        "feedback_en": "1: This does not address possible inhalation. 2: This guesses a diagnosis and discloses information inappropriately. 3: Use the agreed arrangements for space, reporting and protection."
+        "feedback_fil": "1: Hindi nito natutugunan ang posibleng paglanghap. 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. 3: Sa posibleng paglanghap, sundin ang napagkasunduang ayos ng lugar, pag-uulat at proteksiyon ng BHS.",
+        "feedback_en": "1: This does not address possible inhalation. 2: This guesses a diagnosis and discloses information inappropriately. 3: Possible inhalation calls for the BHS's agreed arrangements for space, reporting and protection."
       }
     },
     {
@@ -128,8 +128,8 @@
         "c2.ipc.other-routes"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Ayusin ang walong card kasama ang kapareha; ipasuri sa supervisor ang pag-uugnay.",
+      "takeaway_en": "Sort the eight cards with a partner; ask the supervisor to review the matches.",
       "check": null
     }
   ],

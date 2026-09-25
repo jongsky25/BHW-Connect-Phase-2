@@ -1,57 +1,70 @@
 ## [purpose] Purpose
 
-25 minutes: opening 3; model 3; supervised case practice 13; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.
+For a child who struggles to breathe, the BHW describes the breathing plainly, asks about danger signs and uses the confirmed urgent assessment route, even when the family wants to wait.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **25 minutes** face-to-face (this lesson's share of the 480-minute subchapter plan): opening 3, model 4, practice 12, feedback 3, self-check 3. The Read takes about 5 minutes in the app.
+- 2.4.3 participant cards, worksheet and observation sheet; job aid with the confirmed contact and referral facility.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and the job aid section *Respond to cough and breathing concerns*.
+- Confirm with the midwife or RHU who urgently assesses a child's breathing, and how to reach them.
+- Scope: BHWs describe and refer. Do not teach breath counting, a breathing-rate or temperature cut-off, a diagnosis or medicines; the trained assessor uses the current age-specific chart.
 
 ## [opening] Opening
 
-Four-year-old Aya coughs and appears to struggle for breath. The family asks whether she can wait until tomorrow.
+*"Aya, four, coughs and seems to struggle for breath. Her family asks, 'Can it wait until tomorrow?' What do you answer?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation (Read and first slide).** *"How would you describe Aya's breathing in plain words?"*
+2. **What to do and say (matching slide).** *"Who judges her breathing — you, or the trained assessor?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model to the family: *"She is working hard to breathe. I cannot promise this can wait. Let us bring her now; I will tell them what we saw."* *"Did I name a disease or a number?"*
+5. **Scope and support.** *"Old training gave a breathing number. Why not use it alone here?"*
+6. **Apply it to the situation.** Self-check 2 — pairs first.
+7. **On Monday, try this.** *"Which route will you use for a child like Aya?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-This is the safe response in the case. Observe breathing difficulty and ask about general danger signs. Arrange prompt clinical assessment when breathing is difficult. A trained assessor uses the current age-specific chart for respiratory rate; report observations without choosing a diagnosis. Lea avoids the shortcut.
+- **"I count her breaths, then decide."** *"The trained assessor uses the current chart for her age. What can you describe now?"*
+- **"It's probably pneumonia."** *"The assessor decides. What did you see?"*
+- **"Tomorrow at the health center is fine."** *"Can we promise that? What does the lesson say?"*
+- **"We go now, and I report her breathing."** Confirm; ask for the exact words.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait.
+**"If I know the breathing number, I can decide whether she can wait."** Older trainings taught fixed numbers, so it feels careful, but one old threshold can be misapplied by age. Correct the case: *"Who holds the current chart? What is your part?"*
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+Breathing case station (*Sick-child case stations*). Triads: learner as BHW, partner as a family member who wants to wait, observer. Two short rounds with one strength and one retry action between, then rotate. The observer records the breathing words, the danger-sign questions and the route used. Fictional cases only. Solo: do the worksheet; staff observe later.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: Necessary assessment may be delayed. / 2: The shortcut can cause harm: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait. / 3: Prioritize safety and timely help.
+1. **"…What comes first?"** **"Arrange prompt assessment of her breathing."** — breathing difficulty needs prompt assessment. "Tell the family tomorrow is fine…": a promise she can wait. "Count her breaths…": an old number alone is not a referral rule.
+2. **"…What should the report include?"** **"What the breathing looks like and the danger-sign answers."** — observations only. "…probably has pneumonia…": a diagnosis. "Only her temperature…": a single number, and it leaves out the breathing.
 
-1: Observe the task and appropriate referral. / 2: The story is not grounds for an independent diagnosis. / 3: The shortcut is unsafe: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait.
+## [observe] What to observe
 
-## [observe] Observe
+Indicator: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.
 
-Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.
+- **Kaya na:** Describes Aya's breathing plainly, asks about danger signs and uses the confirmed urgent route without promising the family she can wait, without prompting.
+- **Kailangan pa ng practice:** Refers promptly but needs a prompt to ask about danger signs or to answer the family's request to wait.
+- **Hindi pa:** Agrees to wait until tomorrow, decides from an old breathing or temperature number, or names a diagnosis.
 
-Ready: Completes the task without prompting: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.
+Listen for how the learner answers "can it wait?" without a promise. A correct self-check is not evidence of the skill.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+## [support] If a BHW needs more support
 
-Not yet: Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait.
+- **Kailangan pa:** replay only the family's request to wait; retry with a new fictional child.
+- **Hindi pa:** practise one plain breathing sentence from the job aid; retry with a Kaya na partner.
+- Re-observe this session or next, new case. Peer feedback is practice, not a rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 39; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 77–78.
+- F38 gives 2.4 eight hours; these 25 minutes are an authoring distribution.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides this guide.

@@ -6,11 +6,11 @@ Carlo has joint pain. A neighbor says Pansit-pansitan alone will treat gout.
 
 ## Learner card
 
-Match two Ulasimang bato / pansit-pansitan cards; choose Peperomia pellucida, leafy tops, use and safe next step.
+Compare the two Ulasimang bato / pansit-pansitan cards and fill the worksheet. Tell Carlo what is known, what is unknown and who to consult.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Carlo. Say your joints hurt, and repeat the neighbor's claim that Pansit-pansitan alone will treat gout. Do not add symptoms, medicines or other details.
 
 ## Observer card
 

@@ -10,7 +10,7 @@ Ihambing ang dalawang usapan. Sa bawat katangian, itala ang ebidensiya at isang 
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Nena, ang residenteng nagtatanong tungkol sa iskedyul. Itanong kung kailan ka makakabalik at sabihin kung anong oras ang kaya mo. Kung ang lumang mensahe ang batayan ni Mila, itanong: "Kumpirmado na po ba ang oras na iyan?" Sa pag-ulit, sabihing may trabaho ka sa umaga. Huwag magdagdag ng personal o clinical na detalye.
 
 ## Card ng tagamasid
 

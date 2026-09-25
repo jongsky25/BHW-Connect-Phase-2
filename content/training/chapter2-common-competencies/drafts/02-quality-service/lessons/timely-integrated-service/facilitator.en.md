@@ -1,57 +1,76 @@
 ## [purpose] Purpose
 
-180 minutes: opening 10; model 15; triad practice 115; feedback/retry 20; debrief 10; workplace plan 10. Use seven Slides, cards, worksheet and observer sheet. Rotate roles and retry with one changed detail.
-
-Map Pilar’s service pathway and propose an improvement with an owner, confirmation and a review measure.
+The BHW maps Pilar's visit, marks one barrier and proposes a change with an owner, confirmation, date and measure, keeping required checks.
 
 ## [time-materials] Time and materials
 
-The four quality-service sessions total 600 minutes. This is facilitated training, separate from digital reading. Use repeated comparisons, practice and feedback; time alone does not establish competence. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 180 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model 20, practice 110, feedback and retry 25, checks and debrief 15. Read in the app: about 5 minutes.
+- **Materials:** *2.2.3 Service pathway map* cards (one set per triad), worksheet, observation sheet, *Quality service* job aid with the local contact, paper and markers.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Take both checks in the app first.
+- Confirm the right staff contact and the supervisor who reviews proposals.
+- **Scope:** reusing an earlier record is a staff decision. Do not teach removing forms or checks, or changing queue priority without authorization. The BHW does not deliver every service.
 
 ## [opening] Opening
 
-Pilar has returned to the BHS twice. On the first visit, the staff contact was unclear. On the second, she was asked to write the same details again. She works in the afternoon. BHW Arnel wants to help without promising that everything will finish in one day.
+Read Pilar's case, then ask: *"Pilar has come back twice. Where exactly did she lose time?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step is a Read section and its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"What happened on each visit?"*
+2. **"What to do and say."** Ask: *"Which was a delay, which a barrier, which repeated work?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer first.
+4. **"Worked example."** Draw: arrival → asking around → repeating the form → waiting. Add the contact card. Ask: *"Who confirms it? What will they count?"*
+5. **"Scope and support."** Ask: *"Which proposals need staff approval first?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer first.
+7. **"On Monday, try this."** Ask: *"How will we know whether it helped?"*
 
-Map: arrival → asking around → repeating the form → waiting. Arnel proposes a clear contact card. Staff will confirm when the earlier record can be used. Next week they will count return visits caused by an incorrect contact. They will not claim improvement before reviewing results.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Let Pilar skip the form."** Ask: *"Who decides if the earlier record can be used?"*
+- **"Tell her it will all be done today."** Kind, but timings are not the BHW's to control; confirm the next step.
+- **"The staff are slow."** Move to the step: *"Which step, and what is the evidence?"*
+- **"A contact card, and count return visits."** Yes. Ask: *"Who owns it?"*
 
-Promises all services or removes necessary checks merely to increase speed.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"To speed things up, cut the repeated step."** Sparing residents a wasted trip is a good aim. But a form or check may still be required; staff decide. Ask: *"How can we reduce repeats and keep what staff need?"* Wait for "staff review."
 
-Draw the four steps in the story. Mark one barrier. Propose a change with an owner, confirmation, date and measure. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Service pathway map.** Triads; rotate roles (three rounds, about 35 minutes each). Learner: four steps, a barrier with evidence, change, owner, confirming staff, date, measure. Partner, as Pilar, asks how it fits her afternoon work. Observer records actual words. Retry with one changed detail; fictional details only. Alone: map on paper; take the proposal to staff.
 
-1: This repeats the barrier rather than clarifying the pathway. / 2: This establishes a clear destination before giving directions. / 3: The BHW does not control all timings and services.
+## [answer-key] Self-check answer key
 
-1: Records may still be required; this is not the BHW’s decision alone. / 2: Necessary checks could be lost. / 3: This explores less duplication while preserving required processes.
+- **Check 1 (unknown contact):** **"Confirm the contact with staff."** This establishes a clear destination before giving directions.
+  - "Keep asking around": repeats the barrier rather than clarifying the pathway.
+  - "Promise every service before noon": the BHW does not control all timings and services.
+- **Check 2 (duplicate forms):** **"Ask staff to review use of the earlier record."** This explores less duplication while preserving required processes.
+  - "Discard all old forms": records may still be required; not the BHW's decision alone.
+  - "Skip every question": necessary checks could be lost.
 
-## [observe] Observe
+## [observe] What to observe
 
-Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.
+Indicator: Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.
 
-Ready: Names a specific barrier and usable measure, seeks review and preserves required processes without prompting.
+- **Kaya na:** Names a specific barrier and usable measure, seeks review and preserves required processes without prompting.
+- **Kailangan pa ng practice:** Identifies the barrier and proposal but needs a prompt to name an owner or measure.
+- **Hindi pa:** Promises all services or removes necessary checks merely to increase speed.
 
-Needs practice: Identifies the barrier and proposal but needs a prompt to name an owner or measure.
+Look for: a measure someone can count. A correct self-check is not evidence of the skill.
 
-Not yet: Promises all services or removes necessary checks merely to increase speed.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** prompt *"Name the owner and the measure"*; re-observe in the same session.
+- **Hindi pa:** re-model the contact card; retry with only barrier, change and who confirms. Pair with a Kaya na BHW as Pilar. Re-observe next round or at follow-up.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 30; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF pp. 33, 37.
+- Timing: an authoring distribution of the source's 600-minute allocation.
+- Owner approved and published 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

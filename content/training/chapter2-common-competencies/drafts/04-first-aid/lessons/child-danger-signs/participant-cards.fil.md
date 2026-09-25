@@ -1,4 +1,4 @@
-# 2.4.2 — First-aid practice: child danger signs
+# 2.4.2 — Kilalanin ang panganib sa batang may sakit
 
 Kathang-isip na pagsasanay. Magpalit bilang kalahok, kapareha at tagamasid.
 
@@ -6,12 +6,12 @@ Sabi ng tagapag-alaga, hindi makainom si Niko, tatlong taong gulang, at isinusuk
 
 ## Card ng kalahok
 
-Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.
+Ikaw ang BHW. Itanong ang pag-inom, pagsusuka at kombulsyon, at tingnan kung gaano kagising si Niko. Sabihin sa tagapag-alaga kung bakit kailangan na si Niko sa pasilidad, saka mag-handover na inuulit ang eksaktong senyales. Huwag magbigay ng diagnosis.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang tagapag-alaga ni Niko. Sabihing hindi makainom si Niko, isinusuka ang lahat at napakahirap gisingin. Kapag binanggit ng BHW ang referral, itanong: "Puwede bang bukas na lang?" Pumayag lamang kapag naipaliwanag ng BHW kung bakit hindi. Huwag magdagdag ng bagong senyales o clinical na detalye.
 
 ## Card ng tagamasid
 
-Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+Itala ang aktuwal na salita at kilos: ang danger sign na binanggit, ang hakbang sa referral at ang mga salita sa handover. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.

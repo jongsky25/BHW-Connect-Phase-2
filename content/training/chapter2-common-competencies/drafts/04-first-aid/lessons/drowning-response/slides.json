@@ -10,10 +10,10 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Kaso: May taong nahihirapan sa tubig sa kanal",
-    "display_en": "Case: A person is struggling beyond the edge of a flooded canal",
+    "display_fil": "May taong nahihirapan lampas sa gilid ng binahang kanal\nNasa tuyong lupa ang BHW\nWalang water-rescue training",
+    "display_en": "A person is struggling beyond the edge of a flooded canal\nThe BHW is on dry ground\nNo water-rescue training",
     "check": null,
-    "narration_fil": "May taong nahihirapan sa tubig sa kanal. Nasa tuyong lupa ang BHW at walang water-rescue training.",
+    "narration_fil": "May taong nahihirapan sa tubig, lampas sa gilid ng binahang kanal. Nasa tuyong lupa ang BHW at walang water-rescue training.",
     "narration_en": "A person is struggling beyond the edge of a flooded canal. The BHW is on dry ground without water-rescue training."
   },
   {
@@ -29,10 +29,10 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Tawagin ang sanay na rescuer at manatili sa ligtas na lupa\nGumamit lamang ng ligtas na abot o hagis na tulong\nKapag nailigtas, ayusin ang agarang pagsusuri at sundin ang…",
-    "display_en": "Call trained rescuers and keep yourself out of the water\nUse an available reach or throw aid only when safe\nOnce rescued by trained personnel, arrange urgent medical…",
+    "display_fil": "Tawagin ang sanay na rescuer; huwag lumusong sa tubig\nAbot o hagis na tulong lamang kung ligtas\nKapag nailigtas: agarang medikal na pagsusuri\nSundin ang kasalukuyang drowning resuscitation protocol",
+    "display_en": "Call trained rescuers; keep yourself out of the water\nUse a reach or throw aid only when safe\nOnce rescued: urgent medical assessment\nFollow the current drowning resuscitation protocol",
     "check": null,
-    "narration_fil": "Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng ligtas na abot o hagis na tulong. Kapag nailigtas, ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol.",
+    "narration_fil": "Tawagin ang sanay na rescuer at huwag lumusong sa tubig. Gumamit ng abot o hagis na tulong kung mayroon, at kung ligtas lamang. Kapag nailigtas na ng sanay na rescuer, ayusin ang agarang medikal na pagsusuri. Sundin ang kasalukuyang drowning resuscitation protocol.",
     "narration_en": "Call trained rescuers and keep yourself out of the water. Use an available reach or throw aid only when safe. Once rescued by trained personnel, arrange urgent medical assessment and follow the current drowning resuscitation protocol."
   },
   {
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "Nahihirapan ang tao lampas sa gilid ng binahang kanal. Ano ang una mong gagawin?",
+      "prompt_en": "The person is struggling beyond the edge of the flooded canal. What do you do first?",
       "options": [
         {
-          "fil": "Tawagin ang water rescuers.",
-          "en": "Call trained water rescuers."
+          "fil": "Tawagin ang sanay na rescuer at huwag lumusong.",
+          "en": "Call trained rescuers and stay out of the water."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Lumusong at hilahin mo mismo ang tao sa gilid.",
+          "en": "Jump in and pull the person to the edge yourself."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Maghintay sa pampang kung makaaahon ang tao nang mag-isa.",
+          "en": "Wait on the bank to see whether the person gets out."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.",
-      "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs."
+      "feedback_fil": "1: Tama. Wala kang water-rescue training, kaya manatili sa tuyong lupa at tawagin ang sanay na rescuer. 2: Mapanganib din sa iyo ang paglusong nang walang rescue training. Tawagin ang sanay na rescuer. 3: Naaantala ang rescue kung maghihintay. Tawagin na ngayon ang sanay na rescuer mula sa tuyong lupa.",
+      "feedback_en": "1: Correct. You have no water-rescue training, so you stay on dry ground and call trained rescuers. 2: Entering unsafe water without rescue training puts you at risk too. Call trained rescuers instead. 3: Waiting delays rescue. Call trained rescuers now, from dry ground."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Gumamit lamang ng ligtas na abot o hagis na tulong\nKapag nailigtas, ayusin ang agarang pagsusuri at sundin ang…",
-    "display_en": "Use an available reach or throw aid only when safe\nOnce rescued by trained personnel, arrange urgent medical…",
+    "display_fil": "Nasa tuyong lupa si Lea at tumatawag ng sanay na rescuer\nTumatanggi siya nang udyukang lumusong\nAbot o hagis na tulong lamang kung ligtas\nSinasabi niyang kailangan ng agarang pagsusuri",
+    "display_en": "Lea stays on dry ground and calls trained rescuers\nShe says no when urged to jump in\nReach or throw aid only if safe\nShe states the need for urgent medical assessment",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng ligtas na abot o hagis na tulong. Kapag nailigtas, ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Call trained rescuers and keep yourself out of the water. Use an available reach or throw aid only when safe. Once rescued by trained personnel, arrange urgent medical assessment and follow the current drowning resuscitation protocol. Lea avoids the shortcut."
+    "narration_fil": "Nananatili si Lea sa tuyong lupa sa tabi ng binahang kanal at hindi lumulusong. Tinatawagan niya ang sanay na rescuer at sinasabi ang lokasyon. Nang udyukan siya ng saksi na lumusong, tumanggi siya. Gumagamit lamang siya ng abot o hagis na tulong kung ligtas. Sinasabi niyang kailangan ng agarang medikal na pagsusuri kapag nailigtas na ang tao.",
+    "narration_en": "Lea stays on dry ground at the flooded canal and does not enter the water. She calls trained rescuers and gives the location. When a bystander urges her to jump in, she says no and uses a reach or throw aid only if it is safe. She states that the person will need urgent medical assessment once rescued."
   },
   {
     "id": "slide-scope",
@@ -98,10 +98,10 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin…",
-    "display_en": "Do not enter unsafe water, invert the person to drain water, or…",
+    "display_fil": "Huwag lumusong sa mapanganib na tubig\nHuwag baligtarin ang tao para patuluin ang tubig\nHindi sapat ang compression-only CPR sa bentilasyon ng nalunod",
+    "display_en": "Do not enter unsafe water\nDo not invert the person to drain water\nCompression-only CPR does not cover drowning ventilation needs",
     "check": null,
-    "narration_fil": "Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.",
+    "narration_fil": "Huwag lumusong sa mapanganib na tubig o baligtarin ang tao para patuluin ang tubig. Huwag ipagpalagay na sapat ang karaniwang compression-only CPR sa pangangailangan sa bentilasyon ng nalunod.",
     "narration_en": "Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs."
   },
   {
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Naiahon na ng rescuer ang tao. Gusto ng saksi na baligtarin siya para patuluin ang tubig. Ano ang sasabihin mo?",
+      "prompt_en": "Rescuers bring the person out. A bystander wants to hold them upside down to drain water. What do you say?",
       "options": [
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Sige, makatutulong sa paghinga ang pagpapatulo ng tubig.",
+          "en": "Yes, draining the water first will help breathing."
         },
         {
-          "fil": "Manatili sa ligtas na pampang.",
-          "en": "Remain on a safe shore."
+          "fil": "Hindi; ayusin agad ang medikal na pagsusuri.",
+          "en": "No; arrange urgent medical assessment now."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Hindi na kailangang tumawag dahil nakaahon na siya.",
+          "en": "No need to call anyone now that the person is out."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-      "feedback_en": "1: The shortcut is unsafe: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      "feedback_fil": "1: Huwag baligtarin ang tao para patuluin ang tubig. Ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol. 2: Tama. Kapag nailigtas, kailangan ng agarang medikal na pagsusuri ayon sa kasalukuyang drowning resuscitation protocol. 3: Hindi pa tapos ang pangangailangan sa tulong dahil lang nakaahon na. Ayusin ang agarang medikal na pagsusuri.",
+      "feedback_en": "1: Do not invert the person to drain water. Arrange urgent medical assessment and follow the current drowning protocol. 2: Correct. Once rescued, the person needs urgent medical assessment under the current drowning resuscitation protocol. 3: Being out of the water does not end the need for care. Arrange urgent medical assessment."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nPiliin ang ligtas na tugon sa pampang, tawagin ang sanay na…",
-    "display_en": "On Monday:\nChoose a safe shore response, activate trained rescue and state…",
+    "display_fil": "Sa Lunes:\nPiliin ang ligtas na tugon sa pampang\nTawagin ang sanay na rescuer\nIpaliwanag ang pangangailangan sa pagsusuri",
+    "display_en": "On Monday:\nChoose a safe shore response\nActivate trained rescue\nState the need for medical assessment",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Choose a safe shore response, activate trained rescue and state the need for medical assessment."

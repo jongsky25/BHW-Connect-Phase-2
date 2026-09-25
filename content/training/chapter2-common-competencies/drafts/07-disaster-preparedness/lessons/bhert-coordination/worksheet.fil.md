@@ -1,4 +1,4 @@
-# 2.7.4 — Pagsasanay: bhert coordination
+# 2.7.4 — Pagsasanay: Iugnay ang gawain ng BHW at BHERT
 
 Kathang-isip na detalye lamang.
 

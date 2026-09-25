@@ -6,11 +6,11 @@ Umuubo si Ben at hirap huminga. May nag-alok ng Lagundi na pinagpakuluan.
 
 ## Card ng kalahok
 
-Itugma ang dalawang Lagundi card; piliin ang Vitex negundo, dahon, gamit at ligtas na susunod na hakbang.
+Punan ang worksheet mula sa dalawang Lagundi card: botanical name, bahagi at nakalistang gamit. Sabihin sa kamag-anak ni Ben ang alam at hindi alam, itanong ang gamot at sintomas, iugnay agad si Ben sa health professional at iulat ang hirap sa paghinga.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang kamag-anak ni Ben. Sabihing umuubo si Ben at hirap huminga, at mag-alok ng Lagundi na pinagpakuluan: “Painumin muna natin siya nito.” Sumagot nang maikli. Huwag magdagdag ng sintomas, gamot o personal na detalye na wala sa kaso. Walang likido sa mesa.
 
 ## Card ng tagamasid
 

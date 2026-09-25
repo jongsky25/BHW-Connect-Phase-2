@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Bayabas, Psidium guajava, leafy tops, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Psidium guajava, leafy tops and listed use, and seeks prompt assessment of Mara’s wound without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt that pus or spreading redness needs prompt assessment. |
+| Hindi pa | Suggests boiling the leaves or a wash, or waiting before assessment. |
 
 Evidence observed: ____
 

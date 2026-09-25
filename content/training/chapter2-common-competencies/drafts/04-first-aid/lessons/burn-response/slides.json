@@ -29,8 +29,8 @@
     "layout": "process",
     "heading_fil": "Gawin at sabihin",
     "heading_en": "What to do and say",
-    "display_fil": "Lumayo sa init nang ligtas\nPalamigin ang paso sa malamig na dumadaloy na tubig ayon sa…\nProtektahan sa dumi",
-    "display_en": "Move away from the heat source safely\nCool the burn with cool running water according to current…\nLeave stuck clothing in place",
+    "display_fil": "Lumayo sa init nang ligtas\nPalamigin sa malamig na dumadaloy na tubig, ayon sa gabay\nProtektahan sa dumi; huwag alisin ang dumikit na damit\nIpasuri kung malawak o delikado ang lokasyon",
+    "display_en": "Move away from the heat source safely\nCool with cool running water, per current guidance\nProtect from contamination; leave stuck clothing on\nSeek assessment for concerning extent or location",
     "check": null,
     "narration_fil": "Lumayo sa init nang ligtas. Palamigin ang paso sa malamig na dumadaloy na tubig ayon sa kasalukuyang gabay. Protektahan sa dumi. Ipasuri kung malawak o delikado ang lokasyon. Huwag alisin ang dumikit na damit.",
     "narration_en": "Move away from the heat source safely. Cool the burn with cool running water according to current guidance, protect from contamination and seek assessment for concerning extent or location. Leave stuck clothing in place."
@@ -47,25 +47,25 @@
     "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
     "display_en": "What is the first response?\nChoose before reading the explanation.",
     "check": {
-      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
-      "prompt_en": "In this case, what comes first?",
+      "prompt_fil": "May nag-abot ng yelo para sa braso ng kusinero. Ano ang unang tugon?",
+      "prompt_en": "Someone hands you ice for the cook's arm. What comes first?",
       "options": [
         {
-          "fil": "Palamigin sa dumadaloy na tubig.",
-          "en": "Cool with running water."
+          "fil": "Palamigin sa malamig na dumadaloy na tubig.",
+          "en": "Cool it under cool running water."
         },
         {
-          "fil": "Maghintay muna at huwag ipaalam sa staff.",
-          "en": "Wait without notifying the responsible staff."
+          "fil": "Ilagay ang yelo sa napasong braso ng kusinero.",
+          "en": "Hold the ice on the burned forearm."
         },
         {
-          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
-          "en": "Use the shortcut before confirming the facts."
+          "fil": "Hilahin ang dumikit na manggas para makita ang balat.",
+          "en": "Peel off the sleeve to see the skin."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso.",
-      "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment."
+      "feedback_fil": "1: Tama. Pagkalayo sa init, palamigin ang paso sa malamig na dumadaloy na tubig, ayon sa kasalukuyang gabay. 2: Huwag lagyan ng yelo. Mapanganib na shortcut ito ayon sa aralin; pasalamatan ang tumutulong at gumamit ng malamig na dumadaloy na tubig. 3: Huwag hilahin ang dumikit na tela. Iwan ang manggas sa lugar nito.",
+      "feedback_en": "1: Correct. After moving away from the heat, cool the burn with cool running water, as current guidance says. 2: Do not apply ice. The lesson lists it as a harmful shortcut; thank the helper and use cool running water. 3: Do not pull off stuck fabric. Leave the sleeve in place."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Palamigin ang paso sa malamig na dumadaloy na tubig ayon sa…\nProtektahan sa dumi\nIpasuri kung malawak o delikado ang lokasyon",
-    "display_en": "Cool the burn with cool running water according to current…\nLeave stuck clothing in place",
+    "display_fil": "Inilalayo ni Lea sa init ang kusinero\n\"Walang yelo\": malamig na dumadaloy na tubig, ayon sa gabay\nHindi inaalis ang dumikit na manggas\nIpasuri kung malawak o delikado ang lokasyon",
+    "display_en": "Lea moves the cook away from the heat\n\"No ice\": cool running water, per current guidance\nThe stuck sleeve stays in place\nAssessment if extent or location is concerning",
     "check": null,
-    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Lumayo sa init nang ligtas. Palamigin ang paso sa malamig na dumadaloy na tubig ayon sa kasalukuyang gabay. Protektahan sa dumi. Ipasuri kung malawak o delikado ang lokasyon. Huwag alisin ang dumikit na damit. Iniiwasan ni Lea ang shortcut.",
-    "narration_en": "This is the safe response in the case. Move away from the heat source safely. Cool the burn with cool running water according to current guidance, protect from contamination and seek assessment for concerning extent or location. Leave stuck clothing in place. Lea avoids the shortcut."
+    "narration_fil": "Inilalayo ni Lea sa init ang kusinero nang ligtas. Sabi niya: \"Salamat po, pero walang yelo. Malamig na dumadaloy na tubig ang gagamitin, ayon sa kasalukuyang gabay.\" Iniiwan niya ang dumikit na manggas at pinoprotektahan ang paso sa dumi. Hindi niya sinasabing ligtas ito sa bahay. Ipinasusuri niya kung malawak o delikado ang lokasyon.",
+    "narration_en": "Lea moves the cook safely away from the heat. She says, \"Thank you, but no ice. We cool it with cool running water, as current guidance says.\" She leaves the stuck sleeve in place and protects the burn from dirt. She does not call it safe for home treatment, and she seeks assessment if its extent or location is concerning."
   },
   {
     "id": "slide-scope",
@@ -98,8 +98,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na…",
-    "display_en": "Do not apply ice, burst blisters, pull off stuck fabric, or…",
+    "display_fil": "Huwag lagyan ng yelo\nHuwag putukin ang paltos o hilahin ang dumikit na damit\nHuwag sabihing ligtas sa bahay ang lahat ng mapulang paso",
+    "display_en": "Do not apply ice\nDo not burst blisters or pull off stuck fabric\nDo not call every red burn safe for home treatment",
     "check": null,
     "narration_fil": "Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso.",
     "narration_en": "Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment."
@@ -117,25 +117,25 @@
     "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
     "display_en": "What is the next step?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang dapat ipakita sa practice?",
-      "prompt_en": "What should the practice show?",
+      "prompt_fil": "Sabi ng kusinero, pula lang ang paso. Sa tabletop practice, ano ang dapat mong sabihin?",
+      "prompt_en": "The cook says the burn is only red. In the tabletop practice, what should you say?",
       "options": [
         {
-          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          "fil": "Pula lang ito, kaya ligtas nang gamutin sa bahay.",
+          "en": "It is only red, so it is safe to treat at home."
         },
         {
-          "fil": "Iwan ang dumikit na damit.",
-          "en": "Leave stuck clothing in place."
+          "fil": "Iwan ang manggas; maaaring kailangang ipasuri.",
+          "en": "Leave the sleeve; assessment may be needed."
         },
         {
-          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-          "en": "Diagnose from the story and promise it is enough for the person."
+          "fil": "Putukin ang paltos, saka takpan ang braso.",
+          "en": "Burst any blisters, then cover the arm."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-      "feedback_en": "1: The shortcut is unsafe: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      "feedback_fil": "1: Hindi lahat ng mapulang paso ay ligtas sa bahay. Ipasuri kung malawak o delikado ang lokasyon. 2: Tama. Nasabi mo ang hangganan sa dumikit na damit at ang dahilan ng pagpapasuri, na inoobserbahan sa practice. 3: Huwag putukin ang paltos. Kasama ito sa mapanganib na shortcut sa aralin.",
+      "feedback_en": "1: Not every red burn is safe for home treatment. Seek assessment if the extent or location is concerning. 2: Correct. You name the stuck-clothing boundary and a reason for assessment, which the practice observes. 3: Do not burst blisters. It is on the lesson's list of harmful shortcuts."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."
@@ -149,8 +149,8 @@
     "layout": "process",
     "heading_fil": "Sa Lunes, gawin ito",
     "heading_en": "On Monday, try this",
-    "display_fil": "Sa Lunes:\nSa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan…",
-    "display_en": "On Monday:\nIn a dry tabletop simulation, identify cooling, stuck-clothing…",
+    "display_fil": "Sa Lunes, sa dry tabletop na kaso:\nSabihin ang pagpapalamig\nIwan ang dumikit na damit\nSabihin ang dahilan ng referral",
+    "display_en": "On Monday, in a dry tabletop case:\nName the cooling step\nLeave stuck clothing in place\nName the referral concern",
     "check": null,
     "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral.",
     "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns."

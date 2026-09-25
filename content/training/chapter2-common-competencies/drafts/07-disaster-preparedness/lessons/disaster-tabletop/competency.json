@@ -4,15 +4,15 @@
       "objective_index": 0,
       "observable_fil": "Sa fictional na kaso, sa 10 minutong tabletop, ayusin ang prayoridad, handover, continuity, follow-up at suporta sa responder.",
       "observable_en": "In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Gumagamit ng di-kumpirmadong contact, walang follow-up o iniiwang walang kapalit ang pagod na volunteer.",
+      "not_yet_en": "Uses unconfirmed contacts, skips follow-up or leaves the exhausted volunteer without relief.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Inuuna ang ligtas na paglikas, may unang ligtas na aksiyon, kumpirmadong lead at follow-up ang bawat isyu, at may kapalit ang volunteer, nang walang paalala.",
+        "kaya_na_en": "Puts safe evacuation first, gives each issue a first safe action, confirmed lead and follow-up, and arranges relief for the volunteer, without prompts.",
+        "kailangan_practice_fil": "Naaayos ang mga isyu ngunit kailangan ng paalala sa pagtatala ng pagtanggap, follow-up o kapalit ng volunteer.",
+        "kailangan_practice_en": "Orders the issues but needs a prompt to record acknowledgement, set follow-up or relieve the volunteer.",
+        "hindi_pa_fil": "Gumagamit ng di-kumpirmadong contact, walang follow-up o iniiwang walang kapalit ang pagod na volunteer.",
+        "hindi_pa_en": "Uses unconfirmed contacts, skips follow-up or leaves the exhausted volunteer without relief."
       }
     }
   ]

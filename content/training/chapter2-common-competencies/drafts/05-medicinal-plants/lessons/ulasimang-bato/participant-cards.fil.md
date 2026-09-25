@@ -6,11 +6,11 @@ Masakit ang kasukasuan ni Carlo. Sinabi ng kapitbahay na sapat na ang Pansit-pan
 
 ## Card ng kalahok
 
-Itugma ang dalawang Ulasimang bato / pansit-pansitan card; piliin ang Peperomia pellucida, talbos, gamit at ligtas na susunod na hakbang.
+Ihambing ang dalawang Ulasimang bato / pansit-pansitan card at punan ang worksheet. Sabihin kay Carlo ang alam, ang hindi alam at kung sino ang kokonsultahin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang si Carlo. Sabihing masakit ang kasukasuan mo, at ulitin ang sinabi ng kapitbahay na sapat na ang Pansit-pansitan para sa gout. Huwag magdagdag ng sintomas, gamot o ibang detalye.
 
 ## Card ng tagamasid
 

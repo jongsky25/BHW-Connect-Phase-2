@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____  Lugar: role-play
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | May factual na tanong, ginawa at follow-up; walang bansag; ang pagpapabuti ay nakaugnay sa sariling tugon nang walang paalala. |
-| Kailangan practice | Factual ang ulat ngunit malabo ang susunod na hakbang; nililinaw matapos itanong kung sino ang kikilos. |
+| Kailangan pa ng practice | Factual ang ulat ngunit malabo ang susunod na hakbang; nililinaw matapos itanong kung sino ang kikilos. |
 | Hindi pa | Naglalagay ng hula o bansag sa handover, o ibinabahagi ang kuwento sa hindi kailangang makaalam. |
 
 Aktuwal na nakita/narinig: ____

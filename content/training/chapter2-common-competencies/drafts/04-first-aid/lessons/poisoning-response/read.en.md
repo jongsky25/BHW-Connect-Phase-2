@@ -4,7 +4,7 @@ A child may have swallowed an unknown household cleaner. The container is nearby
 
 ## [action] What to do and say
 
-Avoid exposure, move others away and activate the verified emergency or poison-advice route. Give the product label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions.
+Avoid exposure, move others away and activate the verified emergency or poison-advice route. Read the product label only if you can do so without exposure, such as from a container already away from the spill or held by someone else. Give the label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions.
 
 ## [check-start] Choose the first response
 
@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-This is the safe response in the case. Avoid exposure, move others away and activate the verified emergency or poison-advice route. Give the product label, estimated time, exposure route, symptoms and age to the responder. Follow their instructions. Lea avoids the shortcut.
+Lea moves the family away from the sharp smell and calls the verified poison-advice contact. She does not reach into the smell for the container. She gives what she can safely know: the label if it can be read without exposure, the estimated time, exposure route, symptoms and the child's age. When a relative wants to make the child vomit, she says no and follows the adviser's instructions.
 
 ## [scope] Scope and support
 

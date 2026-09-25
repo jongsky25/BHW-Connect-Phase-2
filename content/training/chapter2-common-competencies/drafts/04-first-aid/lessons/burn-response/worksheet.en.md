@@ -1,4 +1,4 @@
-# 2.4.14 — First-aid practice: burn response
+# 2.4.14 — Respond to burns
 
 Use fictional details only.
 

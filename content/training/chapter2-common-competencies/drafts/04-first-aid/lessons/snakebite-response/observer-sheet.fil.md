@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan. |
+| Kaya na | Magalang na tinatanggihan ang tali at paglalakad, pinananatiling kalmado at hindi gumagalaw ang tao, at tumatawag ng transport kasama ang oras ng kagat, nang walang paalala. |
+| Kailangan pa ng practice | Pinananatiling hindi gumagalaw ang tao at tumatawag ng transport, pero kailangan ng paalala para tanggihan ang tali o iulat ang oras ng kagat. |
+| Hindi pa | Pinapayagan ang tali, paghiwa, pagsipsip o yelo, o pinalalakad ang tao sa halip na tumawag ng transport. |
 
 Aktuwal na nakita/narinig: ____
 

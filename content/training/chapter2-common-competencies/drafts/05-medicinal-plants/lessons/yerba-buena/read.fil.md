@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Yerba buena at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay agad ang pamamaga sa dental o health professional at iulat ang mga sintomas.
+Napansin ng BHW ang namamagang pisngi, hindi lamang ang sakit ng ngipin. Itinuro niya ang Mentha cordifolia at "Bahagi: dahon" sa card. Wala siyang iminungkahing paghahanda. Itinanong niya ang kasalukuyang gamot ni Eva. Iniugnay niya agad ang pamamaga sa dental o health professional at iniulat ang mga sintomas.
 
 ## [scope] Saklaw at paghingi ng tulong
 

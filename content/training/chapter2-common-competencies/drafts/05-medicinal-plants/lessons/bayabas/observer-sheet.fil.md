@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Bayabas, Psidium guajava, talbos/dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Naitutugma ang Psidium guajava, talbos/dahon at nakalistang gamit, at ipinasusuri agad ang sugat ni Mara nang walang paalala. |
+| Kailangan pa ng practice | Naitutugma ang card ngunit kailangan ng paalala na dapat ipasuri agad ang nana o kumakalat na pamumula. |
+| Hindi pa | Nagmumungkahing pakuluan ang dahon o gumamit ng wash, o maghintay bago ipasuri. |
 
 Aktuwal na nakita/narinig: ____
 

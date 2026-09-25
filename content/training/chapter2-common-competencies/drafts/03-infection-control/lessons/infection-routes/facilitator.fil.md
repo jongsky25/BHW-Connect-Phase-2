@@ -1,57 +1,81 @@
 ## [purpose] Layunin
 
-120 minuto: pambungad 5; modelo 10; practice 80; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Itugma ang walong kathang-isip na exposure sa posibleng paraan ng pagkalat at magmungkahi ng kontrol nang walang diagnosis.
+Naaayos ng BHW ang walong kathang-isip na exposure card, nasasabi ang posibleng daan at isang kontrol o contact sa bawat isa, at walang dina-diagnose.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 120 minutong harapan (bahagi ng 600-minutong plano): pambungad ng subchapter 10, pambungad 5, model 10, practice 70, feedback 10, check at debrief 15. Mga 5 minuto ang Read sa app.
+- **Kagamitan:** *2.3.1 Mga card ng posibleng exposure* (walo kada triad), worksheet, talaan ng obserbasyon; job aid; manila paper.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin ang IPC contact at proseso para sa may sintomas sa paghinga; isulat sa job aid, o "kumpirmahin sa midwife / RHU / lokal na protocol".
+- Larawan lang ang card ng karayom.
+- **Hangganan:** daan, hindi sakit. Huwag magpangalan ng sakit o magturo ng pagsusuri, gamutan o dagdag na precautions.
 
 ## [opening] Pambungad
 
-May tatlong card si BHW Jo: kamay na may kontaminasyon, ginamit na bagay, at saradong silid na may umuubo. Hindi pa alam ang sakit ng sinuman. Ang impeksyon ay pagpasok at pagdami ng mikrobyo sa katawan. Maaaring walang kapansin-pansing sintomas. Kailangang tukuyin ang posibleng daan ng mikrobyo, hindi pangalanan ang sakit.
+Pagkatapos ng pambungad ng subchapter, itaas ang tatlong card ni Jo: *"Paano puwedeng dumaan ang mikrobyo rito — nang hindi pinapangalanan ang sakit ninuman?"* Ilista ang sagot sa "daan" o "hula sa sakit".
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Hindi alam ang sakit. Ano pa rin ang masasabi natin?"*
+2. **Gawin at sabihin.** *"Aling card ang direct, indirect, paglanghap, o tumatama sa mukha?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** Mag-model ng isang card: daan, saka kontrol. *"Bakit hindi ito naipapaliwanag ng ordinaryong pakikisalamuha?"*
+5. **Saklaw at paghingi ng tulong.** Ituro ang listang "hula": *"Sino ang nagpapasya sa pagsusuri at gamutan?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Ano ang ipasusuri ninyo sa supervisor?"*
 
-May iba pang card: dumi sa pagkain o tubig — fecal-oral; kagat ng lamok na may dalang mikrobyo — vector-borne. Kontaminadong karayom — posibleng pagkalantad sa dugo. May ilang impeksyong naipapasa sa sanggol sa pagbubuntis, panganganak o pagpapasuso. Hindi ito naipapaliwanag ng ordinaryong pakikisalamuha lamang. Iugnay ang bawat card sa angkop na pag-iwas.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"May TB ang umuubo."** *"Ano ang ipinapakita ng card, at ano ang hindi?"*
+- **"Punasan ang mesa, ayos na."** Tama sa bagay. *"Paano ang hangin sa saradong silid?"*
+- **"Direct ang mesa–kamay–bibig."** Ituro ang mesa: may bagay sa gitna kaya indirect.
+- **"Contact ang kagat ng lamok."** *"Ano ang nagdala ng mikrobyo?"*
 
-Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kapag umuubo, alam ko na ang sakit niya."** Natututo tayong kumilala ng sakit sa karanasan. Pero hindi patunay ng impeksyon ang ubo lamang. Itanong *"Ano mismo ang nasa card?"* at iyon lang ang isulat. Pasalamatan ang nakapansin sa ubo.
 
-Ayusin ang walong exposure card. Para sa bawat isa, sabihin ang posibleng daan at isang kontrol o taong lalapitan. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Pag-aayos ng exposure card**, umiikot na triad, 70 minuto.
 
-1: Walang pagbubuntis o panganganak sa sitwasyon. / 2: Dumaraan sa bagay at kamay ang posibleng mikrobyo. / 3: Hindi maaaring malaman ang sakit mula sa card na ito.
+- **Learner:** inaayos ang walong card; pinupunan ang card / daan / kontrol o contact.
+- **Partner:** binabasa ang bawat card; minsang sumasalungat ("May TB ang umuubo").
+- **Observer:** isinusulat ang aktuwal na salita at anumang bansag; isang kalakasan at isang uulitin.
+- Staff ang nagre-rate. Kathang-isip na detalye lamang. Mag-isa: worksheet muna; obserbahan sa ibang araw.
 
-1: Hindi nito natutugunan ang posibleng paglanghap. / 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. / 3: Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1 (mesa, saka bibig):** **"Indirect contact."** Dumaraan sa bagay at kamay ang posibleng mikrobyo.
+  - "Paglipat sa ina at sanggol lamang": walang pagbubuntis o panganganak sa sitwasyon.
+  - "Patunay na may tuberculosis ang humawak": hindi maaaring malaman ang sakit mula sa card na ito.
+- **Check 2 (saradong silid, ubo):** **"Sundin ang proseso ng BHS para sa respiratory controls."** Sa posibleng paglanghap, sundin ang napagkasunduang ayos ng lugar, pag-uulat at proteksiyon ng BHS.
+  - "Sabihing sapat na ang pagpunas sa mesa para sa lahat ng panganib": hindi nito natutugunan ang posibleng paglanghap.
+  - "Pangalanan agad ang sakit at ipaalam sa buong pila": hula ito at hindi angkop na pagbabahagi ng impormasyon.
 
-Naipapaliwanag ang walong card, naihihiwalay ang exposure sa diagnosis at naiuugnay ang pag-iwas sa tamang daan.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Tama ang walong pag-uugnay; walang bansag o diagnosis at may angkop na kontrol nang walang paalala.
+Indicator: Naipapaliwanag ang walong card, naihihiwalay ang exposure sa diagnosis at naiuugnay ang pag-iwas sa tamang daan.
 
-Kailangan practice: Karamihan ay tama pero kailangang linawin ang contact at paglanghap; naitatama matapos ang feedback.
+- **Kaya na:** Tama ang walong pag-uugnay; walang bansag o diagnosis at may angkop na kontrol nang walang paalala.
+- **Kailangan pa ng practice:** Karamihan ay tama pero kailangang linawin ang contact at paglanghap; naitatama matapos ang feedback.
+- **Hindi pa:** Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.
 
-Hindi pa: Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.
+Pakinggan ang "posible", hindi "may sakit". Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** i-model muli ang card ng contact at paglanghap; obserbahan muli sa retry time.
+- **Hindi pa:** pangalanan ang isang babaguhin (*"Sabihin ang daan, hindi ang sakit"*); gabayan sa apat na card, saka walo; obserbahan muli sa ikalawang araw.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 31–32; Facilitator Guide PDF pp. 35–37; presentation PDF pp. 46–52. Itinama sa evidence review ang mga label ng daan.
+- Hatian ng 600-minutong source allocation ang 120 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.

@@ -42,8 +42,8 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Walang tissue sa kamay.\nSaan dapat bumahing si Mang Lito?",
+    "display_en": "No tissue in hand.\nWhere should Mang Lito sneeze?",
     "check": {
       "prompt_fil": "Walang tissue sa kamay ni Mang Lito. Saan dapat bumahing?",
       "prompt_en": "Mang Lito has no tissue in hand. Where should he sneeze?",
@@ -110,8 +110,8 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Naitapon ang tissue; nahawakan ang secretions.\nAno ang kasunod?",
+    "display_en": "Tissue discarded; secretions touched.\nWhat comes next?",
     "check": {
       "prompt_fil": "Naitapon na ang tissue, pero nahawakan ang secretions. Ano ang kasunod?",
       "prompt_en": "The tissue has been discarded, but the person touched secretions. What next?",
@@ -125,8 +125,8 @@
           "en": "Keep the used tissue to give to the next person."
         },
         {
-          "fil": "Linisin ang kamay.",
-          "en": "Perform hand hygiene."
+          "fil": "Linisin ang kamay bago humawak ng iba.",
+          "en": "Clean hands before touching anything else."
         }
       ],
       "correct_option_index": 2,

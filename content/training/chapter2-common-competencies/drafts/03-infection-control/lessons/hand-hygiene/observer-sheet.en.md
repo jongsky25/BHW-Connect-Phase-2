@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Completes both demonstrations and every checklist step without prompting. |
-| Kailangan practice | Chooses the correct method but misses a surface or step; corrects it in a repeat demonstration. |
+| Kailangan pa ng practice | Chooses the correct method but misses a surface or step; corrects it in a repeat demonstration. |
 | Hindi pa | Uses handrub on visibly dirty hands, misses essential surfaces or wipes off wet handrub. |
 
 Evidence observed: ____

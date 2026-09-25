@@ -10,7 +10,7 @@ Gayahin ang tissue at elbow methods. Ipakita ang pagtatapon at hand hygiene; ipa
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Mang Lito sa waiting area. Babahing ka at walang tissue sa bulsa mo. Gayahin lamang ang pagbahing; huwag talagang umubo, bumahing o dumura sa sinuman. Puwede mong sabihing nahihiya ka, o itanong kung saan itatapon ang ginamit na tissue. Huwag magbanggit ng sakit o magdagdag ng sintomas bukod sa pagbahing.
 
 ## Card ng tagamasid
 

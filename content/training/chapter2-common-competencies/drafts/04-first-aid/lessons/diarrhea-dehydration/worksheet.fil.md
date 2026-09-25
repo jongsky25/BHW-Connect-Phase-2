@@ -1,4 +1,4 @@
-# 2.4.4 — First-aid practice: diarrhea dehydration
+# 2.4.4 — Tumugon sa pagtatae at dehydration
 
 Kathang-isip na detalye lamang.
 

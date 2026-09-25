@@ -10,10 +10,10 @@
     "layout": "scene",
     "heading_fil": "Ang sitwasyon",
     "heading_en": "The situation",
-    "display_fil": "Magkahawig ang dalawang halamang tinatawag na “tsaang gubat”",
-    "display_en": "Two yard plants share the local name “tsaang gubat.” A resid",
+    "display_fil": "Dalawang halaman ang tinatawag na “tsaang gubat.”\nNagtanong ang residente kung alin ang gagamitin.",
+    "display_en": "Two yard plants share the local name “tsaang gubat.”\nA resident asks which one to use.",
     "check": null,
-    "narration_fil": "Magkahawig ang dalawang halamang tinatawag na “tsaang gubat” sa isang bakuran. Nagtanong ang residente kung alin ang gagamitin.",
+    "narration_fil": "Dalawang halaman sa isang bakuran ang parehong tinatawag na “tsaang gubat.” Nagtanong ang residente kung alin ang gagamitin.",
     "narration_en": "Two yard plants share the local name “tsaang gubat.” A resident asks which one to use."
   },
   {
@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Ano ang unang ligtas na hakbang?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first safe step?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Alin ang unang ligtas na hakbang?",
       "prompt_en": "What is the first safe step?",
       "options": [
         {
-          "fil": "Manghula mula sa pangalan o larawan.",
-          "en": "Guess from a name or picture."
+          "fil": "Piliin ang halamang laging ginagamit ng pamilya ng residente.",
+          "en": "Choose the plant the resident’s family has always used."
         },
         {
-          "fil": "Kumpirmahin ang identity at source.",
-          "en": "Confirm identity and source."
+          "fil": "Basahin ang botanical name at bahagi sa current card.",
+          "en": "Read the botanical name and part on a current card."
         },
         {
-          "fil": "Ibigay agad ang lumang dose.",
-          "en": "Give the old dose immediately."
+          "fil": "Piliin ang halamang pinakakamukha ng larawan.",
+          "en": "Pick the plant that looks most like the picture."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring magkamali sa halaman. 2: Magandang simula ang kumpirmadong reference. 3: Wala pang clinical at lokal na pahintulot.",
-      "feedback_en": "1: The plant may be misidentified. 2: A verified reference is the proper start. 3: Clinical and local authorization are missing."
+      "feedback_fil": "1: Iginagalang ang gamit ng pamilya, pero hindi nito ipinapakita kung aling halaman ang nasa card. 2: Ang current card na may botanical name ang tamang simula. 3: Hindi sapat na patunay ng identity ang larawan.",
+      "feedback_en": "1: Family use is respected, but it does not show which plant is on the card. 2: A current card with the botanical name is the proper start. 3: A picture alone does not establish identity."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Ihiwalay ang gamit sa reseta.\nItanong ang sintomas at gamot.",
-    "display_en": "Separate listed use from a prescription.\nAsk about symptoms and medicine.",
+    "display_fil": "Iisang lokal na pangalan: hindi patunay.\nCard: botanical name at bahagi.\nHindi tiyak ang identity: huwag magbigay.\nItanong ang sintomas at gamot; iugnay sa clinician.",
+    "display_en": "Same local name: not proof.\nCard: botanical name and part.\nIdentity uncertain: do not provide.\nAsk symptoms and medicines; consult.",
     "check": null,
-    "narration_fil": "Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Hanapin ang botanical name at nakalistang bahagi sa current PITAHC card. Kung hindi tiyak ang identity, huwag maghanda o magbigay. Tanungin ang sintomas at gamot; iugnay sa clinician.",
-    "narration_en": "The BHW reads the current card and listens to the resident. Find the botanical name and listed part in a current PITAHC card. If identity is uncertain, do not prepare or provide it. Ask about symptoms and medicines; consult a clinician."
+    "narration_fil": "Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Parehong tinatawag na “tsaang gubat” ang dalawang halaman, pero iisang botanical name at bahagi ang nasa card. Hindi tiyak ang identity ng mga halaman, kaya hindi naghanda o nagbigay ang BHW. Itinanong niya ang sintomas at gamot, at iniugnay ang residente sa clinician.",
+    "narration_en": "The BHW reads the current card and listens to the resident. Both plants are called “tsaang gubat,” but the card lists one botanical name and part. The identity of the yard plants is uncertain, so the BHW does not prepare or provide either one. The BHW asks about symptoms and medicines and consults a clinician."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Walang sariling dose.\nWalang tunay na pagtimpla.\nKumpirmahin ang trainer.",
-    "display_en": "No independent dose.\nNo real preparation.\nConfirm the trainer.",
+    "display_fil": "Pangalan, larawan o “natural”: hindi patunay.\nWalang dose o paghahanda.\nKumonsulta sa clinician.",
+    "display_en": "Name, picture or “natural”: not proof.\nNo dose or preparation.\nConsult a clinician.",
     "check": null,
     "narration_fil": "Ang local name, larawan at “natural” na label ay hindi sapat na patunay ng identity, bisa o kaligtasan.",
     "narration_en": "A local name, picture or “natural” label alone does not establish identity, efficacy or safety."
@@ -120,21 +120,21 @@
       "prompt_en": "What follows the card check?",
       "options": [
         {
-          "fil": "Baguhin ang gamot ng residente.",
-          "en": "Change the resident’s medicine."
+          "fil": "Sabihing gamitin ang halamang tugma ang pangalan.",
+          "en": "Tell the resident to use the plant whose name matches."
         },
         {
-          "fil": "Itago ang ibang sintomas sa staff.",
-          "en": "Withhold other symptoms from staff."
+          "fil": "Ibigay ang dose ng lumang manual para sa tsaang gubat.",
+          "en": "Give the old manual’s dose for tsaang gubat."
         },
         {
-          "fil": "Kumonsulta sa clinician.",
-          "en": "Consult a clinician."
+          "fil": "Itanong ang sintomas at gamot; iugnay sa clinician.",
+          "en": "Ask about symptoms and medicines; consult a clinician."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
-      "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+      "feedback_fil": "1: Parehong may ganoong pangalan ang dalawa; hindi patunay ng identity ang pangalan. 2: Walang clinical o lokal na pahintulot ang lumang dose. 3: Mauuna ang clinical advice bago ang anumang paghahanda o paggamit.",
+      "feedback_en": "1: Both plants share the name; a name alone does not confirm identity. 2: The old dose has no clinical or local authorization. 3: Clinical advice comes before any preparation or use."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

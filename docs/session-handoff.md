@@ -11,6 +11,11 @@ Last updated: 25 September 2026.
 built for the legacy module view, and that document redirects them to the
 chapter route.
 
+**Narration / voice / animation work:** read
+`docs/narration-visuals-realignment-handoff.md` first. INC-27/INC-28 were
+built for the legacy module view, and that document redirects them to the
+chapter route.
+
 ---
 
 ## 1. How to work here (the part that matters most)

@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Nagawa nang walang paalala. |
-| Kailangan practice | Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin. |
-| Hindi pa | Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. |
+| Kaya na | Walang paalala, tumatawag ng tulong kasama ang lokasyon at humihingi ng AED bago hawakan ang manikin, saka sinusunod ang adult sequence ng trainer. |
+| Kailangan pa ng practice | Tumatawag ng tulong at AED, pero kailangan ng paalala sa lokasyon, sa AED o sa isang hakbang ng sequence ng trainer. |
+| Hindi pa | Nagsisimula sa pulso o sa lumang CAB na hakbang, hindi tumatawag ng tulong, o nagsasanay sa totoong tao. |
 
 Aktuwal na nakita/narinig: ____
 

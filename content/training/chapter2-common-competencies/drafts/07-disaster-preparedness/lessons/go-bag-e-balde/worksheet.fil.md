@@ -1,4 +1,4 @@
-# 2.7.3 — Pagsasanay: go bag e balde
+# 2.7.3 — Pagsasanay: Maghanda ng go-bag o e-balde
 
 Kathang-isip na detalye lamang.
 

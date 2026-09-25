@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW points to Bawang and its botanical name on the card. The yard plant is not assumed to be identified. Return the decision to the clinician; do not prescribe an amount of garlic as medicine.
+The BHW shows Liza the card: Bawang is Allium sativum, bulb, for cholesterol management under clinical advice. The BHW says garlic as food does not authorize a medication change and names no amount. The BHW asks about her other medicines and possible effects, then returns the decision to her clinician.
 
 ## [scope] Scope and support
 

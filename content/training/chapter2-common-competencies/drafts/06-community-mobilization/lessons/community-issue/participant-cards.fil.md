@@ -10,8 +10,8 @@ Gumawa ng issue card: ano ang naiulat, sino ang apektado, sino ang hindi pa nari
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang lider na nagsasabing “Ayaw lang nilang sumunod,” o isa sa tatlong residenteng huling nakaalam ng bagong oras. Sagutin ang tanong ng kalahok sa isa o dalawang pangungusap. Huwag mag-imbento ng bagong impormasyon o magdagdag ng personal o clinical na detalye.
 
 ## Card ng tagamasid
 
-Pansinin ang aktuwal na salita at kilos. Magbigay ng isang lakas at susunod na hakbang, saka umulit. Gamitin ang hiwalay na observation sheet kasama ang facilitator.
+Pakinggan kung inihihiwalay ng kalahok ang tatlong ulat sa hula ng lider at kung binabanggit ang hindi pa naririnig. Itala ang eksaktong salita. Magbigay ng isang lakas at isang susunod na hakbang, saka uulit ang kalahok. Staff ang magre-rate gamit ang hiwalay na observation sheet.

@@ -52,21 +52,21 @@
         "prompt_en": "Which Sambong part is listed on the card?",
         "options": [
           {
-            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Sambong.",
-            "en": "Any part of a yard plant even when its identity as Sambong is unconfirmed."
-          },
-          {
             "fil": "Dahon ng kumpirmadong Blumea balsamifera.",
             "en": "Leaves of confirmed Blumea balsamifera."
           },
           {
-            "fil": "Hindi kailangang malaman ang botanical name.",
-            "en": "The botanical name need not be checked."
+            "fil": "Dahon ng anumang halamang tinatawag ni Paolo na Sambong.",
+            "en": "Leaves of any plant Paolo calls Sambong."
+          },
+          {
+            "fil": "Anumang bahagi, basta tugma ang local name.",
+            "en": "Any part, once the local name matches."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama: dahon ng Blumea balsamifera ang nakalista sa card. Hindi ito dose para kay Paolo. 2: Hindi patunay ng halaman ang local name; tingnan ang botanical name. 3: Dahon lamang ang nakalista sa card, at hindi patunay ng halaman ang tugmang local name.",
+        "feedback_en": "1: Correct: the card lists leaves of Blumea balsamifera. This is not a dose for Paolo. 2: A local name does not confirm the plant; check the botanical name. 3: The card lists leaves only, and a matching local name does not confirm the plant."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.sambong.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Para sa Sambong, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
-      "takeaway_en": "For Sambong, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "takeaway_fil": "Huwag sabihing kidney stone ito; ipasuri agad si Paolo sa health facility.",
+      "takeaway_en": "Do not call it a kidney stone; seek prompt facility assessment for Paolo.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.sambong.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Huwag ipagpaliban ang pagsusuri kay Paolo para sa pinagpakuluan.",
+      "takeaway_en": "Do not delay Paolo's assessment for a decoction.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.sambong.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
-      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "takeaway_fil": "Kailangang ipasuri agad ang matinding sakit at kaunting ihi.",
+      "takeaway_en": "Severe pain and little urine need prompt facility assessment.",
       "check": {
-        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Sambong?",
-        "prompt_en": "What is the safe response in the Sambong case?",
+        "prompt_fil": "Matindi ang sakit sa tagiliran ni Paolo at kaunti ang ihi. Ano ang ligtas na tugon?",
+        "prompt_en": "Paolo has severe side pain and little urine. What is the safe response?",
         "options": [
           {
-            "fil": "Ipalit agad sa niresetang gamot.",
-            "en": "Replace prescribed treatment now."
+            "fil": "Sabihing kidney stone ito at makatutulong ang Sambong.",
+            "en": "Tell Paolo it is a kidney stone that Sambong can help."
           },
           {
-            "fil": "Kumonsulta muna sa clinician.",
-            "en": "Consult a clinician first."
+            "fil": "Ipasuri agad si Paolo sa health facility.",
+            "en": "Seek prompt facility assessment for Paolo."
           },
           {
-            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-            "en": "Copy an old recipe without assessment."
+            "fil": "Pasubukan muna ang Sambong at saka magpasuri.",
+            "en": "Have him try Sambong first and seek assessment later."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+        "feedback_fil": "1: Hindi mapatutunayan ng sintomas lamang na kidney stone ito, at walang awtorisadong remedyo sa lesson na ito. 2: Tama: kailangang ipasuri agad sa health facility ang matinding sakit at pagbabago sa pag-ihi. 3: Huwag ipagpaliban ang pagsusuri para sa pinagpakuluan; kailangang ipasuri agad ang matinding sakit.",
+        "feedback_en": "1: Symptoms alone do not establish a kidney stone, and this lesson authorizes no remedy. 2: Correct: severe pain and changed urination need prompt facility assessment. 3: Do not delay assessment for a decoction; severe pain needs prompt assessment."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.sambong.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ihambing ang dalawang Sambong card kasama ang supervisor.",
+      "takeaway_en": "On Monday, compare two Sambong cards with a supervisor.",
       "check": null
     }
   ],
