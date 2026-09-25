@@ -44,7 +44,7 @@ export default async function HomePage() {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
+    <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
       <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
         {t("heading", { name: appUser.full_name })}
       </h1>
