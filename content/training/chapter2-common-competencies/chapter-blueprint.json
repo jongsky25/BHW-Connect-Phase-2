@@ -5,7 +5,7 @@
   "availability": "unavailable",
   "publication_allowed": false,
   "planned_lesson_count": 55,
-  "authored_lesson_count": 12,
+  "authored_lesson_count": 19,
   "competency_groups": [
     {
       "id": "behavior",
@@ -323,7 +323,7 @@
           63
         ]
       },
-      "status": "mapped-not-authored",
+      "status": "draft-authored",
       "lessons": [
         {
           "code": "2.3.1",
@@ -335,23 +335,30 @@
           "task_fil": "Itugma ang exposure sa bahay o BHS sa nasuring paraan ng pagkalat",
           "practice_id": "activity-infection-routes",
           "practice_en": "transmission card sort",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Explains all eight cards, distinguishes exposure from diagnosis and links prevention to the route.",
           "source_pages": {
             "R": [
               31,
-              37
+              32
             ],
             "F": [
               35,
+              36,
               37
             ],
             "P": [
-              41,
-              63
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         },
         {
           "code": "2.3.2",
@@ -363,23 +370,22 @@
           "task_fil": "Pumili ng kontrol sa pinagmulan, kapaligiran, gawain at proteksiyon sa BHS",
           "practice_id": "activity-infection-control-levels",
           "practice_en": "control-level map",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
           "source_pages": {
             "R": [
-              31,
-              37
+              33
             ],
             "F": [
               35,
-              37
+              36
             ],
             "P": [
-              41,
-              63
+              53
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         },
         {
           "code": "2.3.3",
@@ -391,23 +397,23 @@
           "task_fil": "Ipakita ang bawat hakbang ng nasuring paglilinis ng kamay",
           "practice_id": "activity-hand-hygiene",
           "practice_en": "handwashing return demonstration",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Appropriate method; all surfaces of both hands; complete timing and drying; no recontamination.",
           "source_pages": {
             "R": [
-              31,
-              37
+              34
             ],
             "F": [
               35,
-              37
+              36
             ],
             "P": [
-              41,
-              63
+              54,
+              55
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         },
         {
           "code": "2.3.4",
@@ -419,23 +425,22 @@
           "task_fil": "Ipakita at ipaliwanag sa residente ang nasuring paraan ng pag-ubo",
           "practice_id": "activity-cough-etiquette",
           "practice_en": "cough-etiquette return demonstration",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.",
           "source_pages": {
             "R": [
-              31,
-              37
+              35
             ],
             "F": [
               35,
-              37
+              36
             ],
             "P": [
-              41,
-              63
+              56
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         },
         {
           "code": "2.3.5",
@@ -447,23 +452,23 @@
           "task_fil": "Gamit ang nasuring gabay, tukuyin ang pagbabago sa pagkain, tubig at sanitasyon",
           "practice_id": "activity-food-water-sanitation",
           "practice_en": "household safety review",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Proposes appropriate food, water and sanitation changes without guessed treatment or appearance-based guarantees.",
           "source_pages": {
             "R": [
-              31,
-              37
+              36
             ],
             "F": [
-              35,
-              37
+              36
             ],
             "P": [
-              41,
-              63
+              57,
+              58,
+              59
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         },
         {
           "code": "2.3.6",
@@ -475,23 +480,23 @@
           "task_fil": "Hanapin ang lokal na patakaran at ihiwalay ang suporta ng BHW sa espesyal na procedure",
           "practice_id": "activity-bhs-ipc-policies",
           "practice_en": "policy and training checklist",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Records location, version, contact and training gaps without inventing training or authorization.",
           "source_pages": {
             "R": [
-              31,
+              36,
               37
             ],
             "F": [
-              35,
-              37
+              35
             ],
             "P": [
-              41,
-              63
+              60,
+              61
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         },
         {
           "code": "2.3.7",
@@ -503,23 +508,24 @@
           "task_fil": "Itala ang isang kakulangan kasama ang responsable, hakbang at petsa ng follow-up",
           "practice_id": "activity-ipc-monitor-and-improve",
           "practice_en": "IPC improvement plan",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Records a specific gap, report, owner, date and evidence; distinguishes promises from observed results.",
           "source_pages": {
             "R": [
-              31,
+              36,
               37
             ],
             "F": [
-              35,
-              37
+              35
             ],
             "P": [
-              41,
-              63
+              60,
+              61,
+              62
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
         }
       ]
     },

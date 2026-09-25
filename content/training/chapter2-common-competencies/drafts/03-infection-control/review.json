@@ -1,0 +1,100 @@
+{
+  "status": "draft",
+  "lessons": [
+    {
+      "lesson_key": "infection-routes",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    },
+    {
+      "lesson_key": "infection-control-levels",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    },
+    {
+      "lesson_key": "hand-hygiene",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    },
+    {
+      "lesson_key": "cough-etiquette",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    },
+    {
+      "lesson_key": "food-water-sanitation",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    },
+    {
+      "lesson_key": "bhs-ipc-policies",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    },
+    {
+      "lesson_key": "ipc-monitor-and-improve",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
+      "independent_review": null,
+      "visual_approval": null,
+      "audio_status": "scripts-only",
+      "learner_pilot": null,
+      "publication_allowed": false
+    }
+  ],
+  "blocking_reviews": [
+    "Qualified IPC/clinical review of all seven lessons and demonstrations",
+    "Local IPC policy, training and water-advisory confirmation",
+    "Independent Filipino/English and instructional review",
+    "BHW/facilitator usability pilot",
+    "Browser visual, keyboard and print-layout QA"
+  ],
+  "source_allocation_hours": 10,
+  "facilitated_minutes": 600,
+  "timing_basis": "Proposed 120+60+120+90+90+60+60 = 600 minutes. This redistributes the F35–36 topic suggestions to make room for policy and monitoring practice; it preserves only the overall ten-hour allocation.",
+  "source_adaptations": [
+    "See evidence-review.json for source corrections and unresolved local requirements.",
+    "Web evidence was checked by the author, not signed off by an independent clinician.",
+    "Handwashing uses the full healthcare 40–60 second procedure and distinguishes 20–30 second handrub.",
+    "No chlorine recipes, boiling-time prescriptions or fixed septic setback guarantees are taught.",
+    "The ten-policy inventory is traced to the 2021 DOH manual and must be confirmed against current local requirements."
+  ],
+  "self_study_time": "Not a replacement for facilitated training; additional observed practice may be required."
+}

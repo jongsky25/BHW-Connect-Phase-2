@@ -1,0 +1,156 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.cough-cover"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Babahing si Mang Lito; walang tissue sa bulsa.\nMay station na may tissue at basurahan.\nPaano tutulong nang may respeto?",
+    "display_en": "Mang Lito will sneeze; no tissue in his pocket.\nA station has tissues and a bin.\nHow can you help respectfully?",
+    "check": null,
+    "narration_fil": "Sa role-play, babahing si Mang Lito sa waiting area. Wala siyang tissue sa bulsa. May tissue at basurahan sa station. Tutulong si BHW Rina nang hindi siya pinapahiya o hinihiling na umubo sa ibang tao.",
+    "narration_en": "In a role-play, Mang Lito is about to sneeze in the waiting area. He has no tissue in his pocket. Tissues and a bin are available at the station. BHW Rina will help without embarrassing him or asking him to cough toward anyone."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.cough-cover",
+      "c2.ipc.cough-disposal",
+      "c2.ipc.cough-report"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Tissue sa ilong at bibig.\nWalang tissue: loob ng siko, hindi palad.\nItapon sa itinalagang basurahan.\nLinisin ang kamay matapos ang secretions.",
+    "display_en": "Tissue over nose and mouth.\nNo tissue: bent elbow, not hands.\nDiscard in the designated bin.\nClean hands after contact with secretions.",
+    "check": null,
+    "narration_fil": "Takpan ang ilong at bibig gamit ang tissue kapag umuubo o bumabahing. Kung walang tissue, gamitin ang loob ng nakabaluktot na siko, hindi ang palad. Itapon ang ginamit na tissue sa itinalagang basurahan. Linisin ang kamay matapos mahawakan ang sipon o laway. Ipaalam ang sintomas sa staff at sundin ang kanilang tagubilin.",
+    "narration_en": "Cover nose and mouth with a tissue when coughing or sneezing. Without tissue, use the inside of a bent elbow rather than hands. Discard used tissue in the designated bin. Clean hands after contact with respiratory secretions. Report symptoms to staff and follow their instructions."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.cough-cover"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Walang tissue sa kamay ni Mang Lito. Saan dapat bumahing?",
+      "prompt_en": "Mang Lito has no tissue in hand. Where should he sneeze?",
+      "options": [
+        {
+          "fil": "Sa palad na ihahawak agad sa mesa.",
+          "en": "Into his hand, then immediately touch the desk."
+        },
+        {
+          "fil": "Sa loob ng nakabaluktot na siko.",
+          "en": "Into his bent elbow."
+        },
+        {
+          "fil": "Direkta sa kapareha upang makita ang demonstration.",
+          "en": "Directly toward the partner to show the demonstration."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring mailipat ng kamay ang secretions sa gamit. 2: Natatakpan ang ilong at bibig nang hindi ginagamit ang palad. 3: Dapat gayahin lamang ang kilos at hindi ilantad ang kapareha.",
+      "feedback_en": "1: Hands may transfer secretions to objects. 2: This covers nose and mouth without using hands. 3: Mime the action without exposing the partner."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.cough-cover",
+      "c2.ipc.cough-disposal",
+      "c2.ipc.cough-report"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Ituro ang tissue, bin at hand hygiene.\nIpaalam sa staff ang sintomas.\nSundin ang waiting-area at mask protocol.\nWalang diagnosis o pamamahiya.",
+    "display_en": "Point out tissues, bin and hand hygiene.\nReport symptoms to staff.\nFollow waiting-area and mask protocols.\nDo not diagnose or shame.",
+    "check": null,
+    "narration_fil": "Rina: “May tissue po rito. Kung wala, sa siko po tayo bumahing.” Itinuro niya ang basurahan at hand-hygiene station. Ipinaalam niya sa staff ang sintomas at tinanong ang waiting area. Kung may inirerekomendang mask, sundin ang facility protocol at tulong ng staff. Hindi niya pinangalanan ang sakit ni Mang Lito.",
+    "narration_en": "Rina: “Tissues are available here. If none are available, sneeze into your elbow.” She points out the bin and hand-hygiene station. She reports symptoms and asks staff about the waiting area. Follow the facility protocol and staff assistance for a recommended mask. She does not diagnose Mang Lito."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.cough-disposal",
+      "c2.ipc.cough-report"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Gayahin lamang; walang tunay na ubo sa iba.\nMalinis na props lamang.\nHuwag hawakan ang ginamit na tissue ng iba.\nIgalang ang pribadong usapan.",
+    "display_en": "Mime only; do not cough toward others.\nUse clean props.\nDo not handle another person’s used tissue.\nProtect privacy.",
+    "check": null,
+    "narration_fil": "Gayahin lamang ang kilos sa practice; huwag talagang umubo o dumura sa kapareha. Huwag hawakan ang ginamit na tissue ng iba nang walang angkop na pamamaraan. Ang pagtakip ng sariling bibig kapag may umuubo ay hindi kapalit ng respiratory controls. Igalang ang pribadong impormasyon habang nag-uulat.",
+    "narration_en": "Mime the actions; do not actually cough or spit toward a partner. Do not handle someone else’s used tissue outside the appropriate procedure. Covering your own mouth when another person coughs does not replace respiratory controls. Protect privacy when reporting."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.cough-disposal"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Naitapon na ang tissue, pero nahawakan ang secretions. Ano ang kasunod?",
+      "prompt_en": "The tissue has been discarded, but the person touched secretions. What next?",
+      "options": [
+        {
+          "fil": "Humawak agad sa ibang tao dahil wala na ang tissue.",
+          "en": "Immediately touch someone else because the tissue is gone."
+        },
+        {
+          "fil": "Itago ang ginamit na tissue para ipasa sa susunod.",
+          "en": "Keep the used tissue to give to the next person."
+        },
+        {
+          "fil": "Linisin ang kamay.",
+          "en": "Perform hand hygiene."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Maaaring may kontaminasyon pa sa kamay. 2: Hindi dapat ibahagi o gamitin muli ang ginamit na tissue. 3: Bahagi ng kumpletong sequence ang hand hygiene.",
+      "feedback_en": "1: Hands may still be contaminated. 2: Used tissues should not be shared or reused. 3: Hand hygiene is part of the complete sequence."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.cough-cover",
+      "c2.ipc.cough-disposal",
+      "c2.ipc.cough-report"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Tissue o siko → itapon → hand hygiene.\nSa Lunes: ipakita ang dalawang paraan.\nIsama ang magalang na pag-uulat.",
+    "display_en": "Tissue or elbow → dispose → hand hygiene.\nOn Monday: demonstrate both methods.\nInclude respectful reporting.",
+    "check": null,
+    "narration_fil": "Naipakita ni Rina ang tissue at siko, pagtatapon at hand hygiene. Sa Lunes, magpaobserba ng dalawang paraan gamit ang malinis na props. Salita: cough etiquette — kilos na nagpapababa ng pagkalat ng respiratory secretions. Isama ang magalang na paliwanag at pag-uulat.",
+    "narration_en": "Rina demonstrates both tissue and elbow methods, disposal and hand hygiene. On Monday, practise both methods with clean props under observation. Word: cough etiquette — actions that reduce spread of respiratory secretions. Include respectful explanation and reporting."
+  }
+]

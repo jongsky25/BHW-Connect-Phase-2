@@ -1,0 +1,155 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.food-safety",
+      "c2.ipc.safe-water",
+      "c2.ipc.sanitation"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Hilaw katabi ng luto.\nBukas na tubig; sinasawsaw ang baso.\nWalang sabon sa tabi ng palikuran.",
+    "display_en": "Raw food beside cooked food.\nUncovered water; a cup is dipped inside.\nNo soap near the toilet.",
+    "check": null,
+    "narration_fil": "Sa kathang-isip na bahay ni Mila, magkatabi ang hilaw na manok at lutong pagkain. Bukas ang lalagyan ng tubig at isinasawsaw ang baso. “Malinaw naman ang tubig,” sabi niya. Walang sabon sa tabi ng palikuran. Hihingi ng pahintulot ang BHW bago talakayin ang mga napansin.",
+    "narration_en": "In Mila’s fictional home, raw chicken sits beside cooked food. Drinking water is uncovered and a cup is dipped into it. “The water looks clear,” she says. There is no soap near the toilet. The BHW asks permission before discussing these observations."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.food-safety"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Malinis na kamay, kagamitan at lugar.\nHilaw at luto: magkahiwalay; lutuing mabuti.\nLigtas na temperatura ng pagkain.\nLigtas na tubig at sangkap.",
+    "display_en": "Clean hands, utensils and surfaces.\nSeparate raw and cooked; cook thoroughly.\nKeep food at safe temperatures.\nUse safe water and ingredients.",
+    "check": null,
+    "narration_fil": "Sa pagkain: panatilihing malinis ang kamay, kagamitan at lugar. Ihiwalay ang hilaw sa luto. Lutuing mabuti. Panatilihin sa ligtas na temperatura ang pagkain; huwag basta iwang nakabuyangyang. Gumamit ng ligtas na tubig at sangkap. Hugasan ang prutas at gulay gamit ang ligtas na tubig. Takpan laban sa insekto at daga.",
+    "narration_en": "For food: keep hands, utensils and surfaces clean. Separate raw and cooked food. Cook thoroughly. Keep food at safe temperatures instead of leaving it exposed. Use safe water and ingredients. Wash produce with safe water. Protect food from insects and rodents."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.safe-water"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Malinaw ang tubig pero hindi alam ang pinagmulan. Ano ang angkop?",
+      "prompt_en": "Water is clear but its source is unknown. What is appropriate?",
+      "options": [
+        {
+          "fil": "Kumpirmahin ang kaligtasan sa staff.",
+          "en": "Confirm safety with the appropriate staff."
+        },
+        {
+          "fil": "Sabihing ligtas dahil walang kulay o amoy.",
+          "en": "Declare it safe because it has no color or smell."
+        },
+        {
+          "fil": "Magdagdag ng kahit anong dami ng kemikal na nasa bahay.",
+          "en": "Add any amount of a household chemical."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Kailangan ng tamang batayan at tagubilin, hindi hitsura lamang. 2: Hindi nakikita ang lahat ng maaaring kontaminasyon. 3: Maaaring mapanganib ang maling produkto o dami.",
+      "feedback_en": "1: A reliable basis and instructions are needed, not appearance alone. 2: Not all contamination is visible. 3: The wrong product or amount may be dangerous."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.safe-water",
+      "c2.ipc.sanitation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Takpan ang tubig; huwag isawsaw ang baso.\nMalinaw ay hindi awtomatikong ligtas.\nKumpirmahin ang pinagkukunan.\nPalikuran + sabon at tubig.",
+    "display_en": "Cover water; avoid dipping cups.\nClear does not automatically mean safe.\nConfirm the source.\nToilet + soap and water.",
+    "check": null,
+    "narration_fil": "Pinili ni Mila na paghiwalayin ang hilaw at luto. Tatakpan niya ang lalagyan ng tubig at iiwasang maisawsaw ang kamay o baso. Hindi patunay ng kaligtasan ang linaw ng tubig. Kukumpirmahin nila ang ligtas na pinagkukunan sa health o water staff. Gagamit ng palikuran at maghahanda ng sabon at tubig para sa paghuhugas.",
+    "narration_en": "Mila chooses to separate raw and cooked food. She will cover stored water and avoid dipping hands or cups into it. Clear appearance does not establish safety. They will confirm a safe source with health or water staff. The household will use a toilet and provide soap and water for washing."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.safe-water",
+      "c2.ipc.sanitation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Treatment: kumpirmadong lokal na tagubilin.\nHuwag manghula ng chlorine o boiling time.\nSanitary inspector: lokasyon ng palikuran.\nPractice: larawan at ligtas na props lamang.",
+    "display_en": "Treatment: confirmed local instructions.\nDo not guess chlorine doses or boiling times.\nSanitary inspector: toilet siting.\nPractice: pictures and safe props only.",
+    "check": null,
+    "narration_fil": "Kung hindi tiyak ang tubig, sundin ang kasalukuyang lokal na advisory at kumpirmadong paraan ng treatment. Huwag manghula ng dami ng chlorine o tagal ng pagpapakulo. Ipasuri sa sanitary inspector ang lokasyon ng palikuran at septic tank. Hindi ginagarantiya ng isang distansya ang ligtas na tubig. Walang mainit na tubig o kemikal sa practice.",
+    "narration_en": "When water safety is uncertain, use current local advice and a confirmed treatment method. Do not guess chlorine amounts or boiling instructions. Ask the sanitary inspector to assess toilet and septic-tank location. One distance alone cannot guarantee water safety. Use no hot water or chemicals in this exercise."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.food-safety"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Hilaw na manok ang katabi ng lutong pagkain. Ano ang pagbabago?",
+      "prompt_en": "Raw chicken is beside cooked food. What should change?",
+      "options": [
+        {
+          "fil": "Hayaan lamang basta takpan nang sabay sa iisang lalagyan.",
+          "en": "Leave them together under one cover in the same container."
+        },
+        {
+          "fil": "Ihiwalay ang hilaw sa luto.",
+          "en": "Separate raw and cooked food."
+        },
+        {
+          "fil": "Tikman ang luto upang malaman kung may mikrobyo.",
+          "en": "Taste the cooked food to determine whether germs are present."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi pinipigilan ng iisang takip ang kontaminasyon sa pagitan nila. 2: Nababawasan ang paglipat mula sa hilaw na pagkain. 3: Hindi ligtas o maaasahang pagsusuri ang pagtikim.",
+      "feedback_en": "1: One cover does not prevent contamination between them. 2: This reduces transfer from raw food. 3: Tasting is neither a safe nor reliable test."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.food-safety",
+      "c2.ipc.safe-water",
+      "c2.ipc.sanitation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Pagkain + tubig + sanitasyon.\nKamay: bago pagkain; pagkatapos ng toilet.\nSa Lunes: ipasuri ang household checklist.",
+    "display_en": "Food + water + sanitation.\nHands: before food; after toilet use.\nOn Monday: review the household checklist.",
+    "check": null,
+    "narration_fil": "May tatlong hakbang: ayusin ang pagkain, protektahan ang tubig at maghanda ng handwashing station. Sa Lunes, ipasuri ang household checklist sa supervisor. Maghugas bago humawak ng pagkain at kumain, at matapos gumamit ng palikuran. Salita: sanitasyon — ligtas na pamamahala ng dumi upang hindi makontamina ang kapaligiran.",
+    "narration_en": "The plan covers food handling, protected water and a handwashing station. On Monday, review the household checklist with the supervisor. Wash before preparing food or eating and after using the toilet. Word: sanitation — safe management of excreta to prevent environmental contamination."
+  }
+]

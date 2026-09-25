@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-infection-routes",
+  "objective_id": "infection-routes.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Walang pagbubuntis o panganganak sa sitwasyon.",
+          "en": "Pregnancy or birth is not involved in this scene."
+        },
+        {
+          "fil": "Dumaraan sa bagay at kamay ang posibleng mikrobyo.",
+          "en": "The possible transfer is through an object and hands."
+        },
+        {
+          "fil": "Hindi maaaring malaman ang sakit mula sa card na ito.",
+          "en": "This card cannot establish a diagnosis."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi nito natutugunan ang posibleng paglanghap.",
+          "en": "This does not address possible inhalation."
+        },
+        {
+          "fil": "Hula ito at hindi angkop na pagbabahagi ng impormasyon.",
+          "en": "This guesses a diagnosis and discloses information inappropriately."
+        },
+        {
+          "fil": "Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.",
+          "en": "Use the agreed arrangements for space, reporting and protection."
+        }
+      ]
+    }
+  ]
+}

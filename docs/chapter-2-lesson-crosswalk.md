@@ -1,6 +1,6 @@
 # Chapter 2 lesson and activity crosswalk
 
-55 planned lessons; 12 authored drafts in 2.1, 2.2 and 2.6. The other 43 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
+55 planned lessons; 19 authored drafts in 2.1, 2.2, 2.3 and 2.6. The other 36 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
 
 | Lesson | English / Filipino | Intended task | Practice | Status |
 |---|---|---|---|---|
@@ -12,13 +12,13 @@
 | 2.2.2 | Protect privacy and include everyone / Panatilihin ang pribadong usapan at pantay na serbisyo | Respond to a privacy concern without exposing or judging the resident | privacy role-play | authored-draft |
 | 2.2.3 | Improve the service pathway / Ayusin ang paglapit sa serbisyo | Identify one delay, access barrier or duplicated step and propose a feasible improvement | service pathway worksheet | authored-draft |
 | 2.2.4 | Use 7S to improve the work area / Gamitin ang 7S sa lugar ng trabaho | Inspect a simulated work area using all seven categories and assign one improvement | 7S inspection | authored-draft |
-| 2.3.1 | Recognize routes of transmission / Kilalanin ang paraan ng pagkalat | Match household/BHS exposure scenes to reviewed transmission routes | transmission card sort | outline |
-| 2.3.2 | Choose controls at several levels / Pumili ng mga paraan ng pagkontrol | Select source, environmental, work-practice and protective measures in a BHS scene | control-level map | outline |
-| 2.3.3 | Demonstrate hand hygiene / Ipakita ang wastong paglilinis ng kamay | Demonstrate every step of the clinically reviewed hand-hygiene sequence | handwashing return demonstration | outline |
-| 2.3.4 | Demonstrate cough etiquette / Ipakita ang wastong pag-ubo | Demonstrate the reviewed cough-etiquette sequence and explain it to a resident | cough-etiquette return demonstration | outline |
-| 2.3.5 | Prevent diarrhea through safer surroundings / Iwasan ang pagtatae sa mas ligtas na kapaligiran | Use reviewed guidance to identify food, water and sanitation changes in a household scene | household safety review | outline |
-| 2.3.6 | Find BHS IPC policies / Hanapin ang patakaran sa IPC ng BHS | Locate required local policies and distinguish BHW support from specialist procedures | policy and training checklist | outline |
-| 2.3.7 | Monitor and improve IPC practice / Subaybayan at pagbutihin ang IPC | Document one checklist gap with owner, action and follow-up date | IPC improvement plan | outline |
+| 2.3.1 | Recognize routes of transmission / Kilalanin ang paraan ng pagkalat | Match household/BHS exposure scenes to reviewed transmission routes | transmission card sort | authored-draft |
+| 2.3.2 | Choose controls at several levels / Pumili ng mga paraan ng pagkontrol | Select source, environmental, work-practice and protective measures in a BHS scene | control-level map | authored-draft |
+| 2.3.3 | Demonstrate hand hygiene / Ipakita ang wastong paglilinis ng kamay | Demonstrate every step of the clinically reviewed hand-hygiene sequence | handwashing return demonstration | authored-draft |
+| 2.3.4 | Demonstrate cough etiquette / Ipakita ang wastong pag-ubo | Demonstrate the reviewed cough-etiquette sequence and explain it to a resident | cough-etiquette return demonstration | authored-draft |
+| 2.3.5 | Prevent diarrhea through safer surroundings / Iwasan ang pagtatae sa mas ligtas na kapaligiran | Use reviewed guidance to identify food, water and sanitation changes in a household scene | household safety review | authored-draft |
+| 2.3.6 | Find BHS IPC policies / Hanapin ang patakaran sa IPC ng BHS | Locate required local policies and distinguish BHW support from specialist procedures | policy and training checklist | authored-draft |
+| 2.3.7 | Monitor and improve IPC practice / Subaybayan at pagbutihin ang IPC | Document one checklist gap with owner, action and follow-up date | IPC improvement plan | authored-draft |
 | 2.4.1 | Assess the situation and get help / Suriin ang sitwasyon at humingi ng tulong | Apply the reviewed scene-safety and help-activation sequence in a simulation | scene assessment station | outline |
 | 2.4.2 | Recognize childhood danger signs / Kilalanin ang panganib sa batang may sakit | Identify reviewed danger signs in a case and communicate urgency | childhood case cards | outline |
 | 2.4.3 | Respond to cough and breathing concerns / Tumugon sa ubo at hirap sa paghinga | Use a clinically reviewed age-specific case to decide escalation | breathing case station | outline |

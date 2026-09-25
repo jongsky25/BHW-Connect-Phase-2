@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-cough-etiquette",
+  "objective_id": "cough-etiquette.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring mailipat ng kamay ang secretions sa gamit.",
+          "en": "Hands may transfer secretions to objects."
+        },
+        {
+          "fil": "Natatakpan ang ilong at bibig nang hindi ginagamit ang palad.",
+          "en": "This covers nose and mouth without using hands."
+        },
+        {
+          "fil": "Dapat gayahin lamang ang kilos at hindi ilantad ang kapareha.",
+          "en": "Mime the action without exposing the partner."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring may kontaminasyon pa sa kamay.",
+          "en": "Hands may still be contaminated."
+        },
+        {
+          "fil": "Hindi dapat ibahagi o gamitin muli ang ginamit na tissue.",
+          "en": "Used tissues should not be shared or reused."
+        },
+        {
+          "fil": "Bahagi ng kumpletong sequence ang hand hygiene.",
+          "en": "Hand hygiene is part of the complete sequence."
+        }
+      ]
+    }
+  ]
+}

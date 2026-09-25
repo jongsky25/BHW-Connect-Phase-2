@@ -1,3 +1,9 @@
+# Current update: Chapter 2.3 IPC — 25 September 2026
+
+Owner approval of 2.2/2.6 recorded separately. Seven IPC drafts added, bringing Chapter 2 to 19/55; 70 focused tests passed. Source evidence documented; independent clinical/local approval and browser visual QA pending. Chapter remains unavailable. See chapter-2-ipc-review.md.
+
+The entries below describe earlier milestones and their then-current counts.
+
 # Chapter 2 execution record
 
 ## Batch 2 update — 25 September 2026

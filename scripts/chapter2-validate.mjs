@@ -44,6 +44,7 @@ export function validateDraftModule(module, moduleDir, review, activities) {
   const keys=module.lessons.map(l=>l.manifest.lesson_key);
   assert(sameKeys(keys,planned.lessons.map(l=>l.lesson_key)), 'Draft must contain exactly its planned lessons');
   assert(sameKeys(keys,review.lessons.map(l=>l.lesson_key)) && sameKeys(keys,activities.map(a=>a.lesson_key)), 'Review and activities must match every lesson exactly once');
+  if(review.lessons.some(l=>l.clinical_content)) validateClinicalEvidence(module,json(path.join(moduleDir,'evidence-review.json')));
   const expectedMinutes=planned.source_allocation_hours!==null?planned.source_allocation_hours*60:blueprint.shared_allocations.find(a=>a.subchapters.includes(planned.code))?.proposed_minutes?.[planned.code];
   assert(expectedMinutes>0 && review.facilitated_minutes===expectedMinutes && activities.every(a=>Number.isInteger(a.minutes)&&a.minutes>0) && activities.reduce((n,a)=>n+a.minutes,0)===expectedMinutes, 'Session allocation must reconcile to source or proposed shared minutes');
   const diagnostics = [];
@@ -117,5 +118,24 @@ export function validatePackage() {
   assert(chapter.delivery_course===null && chapter.availability==='unavailable','Chapter 2 must remain isolated from live delivery mapping');
   assert(!existsSync(path.join(packageRoot,'course.json'))&&!existsSync(path.join(packageRoot,'locks')),'Draft package must not acquire live delivery configuration');
   return {status:'passed',scope:'source and authoring validation; not clinical approval or live application testing',planned_lessons:55,lessons:reports.reduce((n,r)=>n+r.lessons,0),read_sections:reports.reduce((n,r)=>n+r.read_sections,0),slides:reports.reduce((n,r)=>n+r.slides,0),checks:reports.reduce((n,r)=>n+r.checks,0),modules:reports};
+}
+
+export function validateClinicalEvidence(chapterModule,evidence) {
+  assert(evidence.publication_allowed===false && evidence.clinical_signoff===null && evidence.independent_clinical_reviewer===null,'Clinical drafts must not invent clinical sign-off');
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(evidence.checked_on),'Clinical evidence needs a check date');
+  const ids=evidence.sources.map(s=>s.id);
+  assert(new Set(ids).size===ids.length && evidence.sources.every(s=>s.url?.startsWith('https://')&&s.accessed_on),'Clinical sources need unique identities, URLs and access dates');
+  const keys=new Set(chapterModule.lessons.map(l=>l.manifest.lesson_key));
+  const covered=new Set();
+  for(const decision of evidence.decisions){
+    assert(decision.source_issue&&decision.decision&&decision.remaining,'Clinical decision must retain source issue, disposition and remaining review');
+    assert(decision.sources.length&&decision.sources.every(s=>ids.includes(s)),'Clinical decision references an unknown source');
+    for(const key of decision.lessons){assert(keys.has(key),'Clinical decision references an unknown lesson');covered.add(key);}
+  }
+  assert([...keys].every(k=>covered.has(k)),'Every clinical lesson needs a source decision');
+  for(const lesson of chapterModule.lessons){
+    const cited=new Set(lesson.revision.sources.filter(s=>s.url).map(s=>s.id));
+    assert(evidence.decisions.filter(d=>d.lessons.includes(lesson.manifest.lesson_key)).some(d=>d.sources.some(id=>cited.has(id))),'Clinical lesson must cite its verification evidence');
+  }
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) console.log(JSON.stringify(validatePackage(),null,2));

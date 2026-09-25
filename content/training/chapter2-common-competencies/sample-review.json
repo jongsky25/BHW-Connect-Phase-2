@@ -9,5 +9,21 @@
     "browser visual/accessibility QA",
     "publication approval",
     "approval of newly authored 2.2 or 2.6"
+  ],
+  "subsequent_owner_approvals": [
+    {
+      "modules": [
+        "2.2",
+        "2.6"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: approve then do next",
+      "scope": "Owner approval of the 2.2/2.6 authoring batch; continue next batch",
+      "not_equivalent_to": [
+        "clinical sign-off",
+        "browser QA",
+        "production publication"
+      ]
+    }
   ]
 }

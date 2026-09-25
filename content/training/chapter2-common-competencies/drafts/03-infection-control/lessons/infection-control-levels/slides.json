@@ -1,0 +1,159 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.source-controls",
+      "c2.ipc.environment-work",
+      "c2.ipc.ppe-risk"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Umuubo sa siksik na pila.\nHindi malinaw ang contact at waiting area.\nMay mask, pero kulang ang proseso.",
+    "display_en": "Coughing in a crowded queue.\nContact and waiting area are unclear.\nMasks are available; the process is incomplete.",
+    "check": null,
+    "narration_fil": "Sa simulated na BHS, may umuubo sa siksik na pila. Sarado ang bintana at hindi alam ng BHW kung sino ang dapat sabihan. May mask sa kahon, pero walang malinaw na proseso. Hindi sapat ang pamimigay ng isang gamit para ayusin ang lahat.",
+    "narration_en": "At a simulated BHS, someone is coughing in a crowded queue. A window is closed and the BHW does not know whom to notify. Masks are available, but the process is unclear. Distributing one item will not address every problem."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.source-controls",
+      "c2.ipc.environment-work",
+      "c2.ipc.ppe-risk"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Pinagmulan: sintomas at source control.\nLugar: bentilasyon at ayos.\nGawain: contact at waiting area.\nPPE: ayon sa panganib at training.",
+    "display_en": "Source: symptoms and source control.\nPlace: ventilation and layout.\nPractice: contact and waiting area.\nPPE: risk and training guide its use.",
+    "check": null,
+    "narration_fil": "Pinagmulan: ipaalam ang sintomas at sundin ang source-control protocol. Kapaligiran: ipasuri ang bentilasyon at ayos ng lugar. Gawain: kumpirmahin ang ruta ng pag-uulat at waiting area. PPE: gamitin ang itinakda ayon sa gawain, panganib at training. Magkakasamang kailangan ang mga kontrol.",
+    "narration_en": "Source: report symptoms and follow the source-control protocol. Environment: have ventilation and layout reviewed. Work practices: confirm the reporting route and waiting area. PPE: use what the task, risk and training require. These controls work together."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.ppe-risk"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "May mask na sa kahon. Ano ang dapat isipin ng BHW?",
+      "prompt_en": "Masks are available. What should the BHW consider?",
+      "options": [
+        {
+          "fil": "Suriin din ang lugar at proseso.",
+          "en": "Check the setting and process too."
+        },
+        {
+          "fil": "Hindi na kailangang ipaalam ang sintomas sa clinical staff.",
+          "en": "Symptoms no longer need reporting to clinical staff."
+        },
+        {
+          "fil": "Wala nang panganib dahil may mask na magagamit.",
+          "en": "There is no remaining risk because masks are available."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Kailangan ang magkakaugnay na kontrol. 2: Kailangan pa rin ang napagkasunduang pag-uulat. 3: Hindi inaalis ng isang gamit ang lahat ng panganib.",
+      "feedback_en": "1: Complementary controls are needed. 2: The agreed reporting process still applies. 3: One item does not remove every risk."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.source-controls",
+      "c2.ipc.environment-work",
+      "c2.ipc.ppe-risk"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Ipaalam sa staff ang sintomas.\nSundin ang itinurong waiting area.\nIpasuri ang concern sa bentilasyon.\nLinawin ang contact para sa susunod.",
+    "display_en": "Report symptoms to staff.\nUse the designated waiting area.\nRequest review of the ventilation concern.\nConfirm the contact for the next arrival.",
+    "check": null,
+    "narration_fil": "Ipinaalam ng BHW ang pag-ubo sa nakatalagang staff. Itinuro ng staff ang napiling waiting area at angkop na mask ayon sa protocol. Ipinasa sa responsable ang concern sa bentilasyon. Nilinaw ang contact para sa susunod na pagdating. Hindi nagpasya ang BHW ng diagnosis o treatment.",
+    "narration_en": "The BHW informs designated staff about the cough. Staff identify the waiting area and appropriate mask under the protocol. A ventilation concern goes to the responsible person. The contact for future arrivals is clarified. The BHW does not decide diagnosis or treatment."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.environment-work",
+      "c2.ipc.ppe-risk"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Walang sariling diagnosis o treatment.\nHuwag baguhin ang isolation setup mag-isa.\nRespirator: angkop na training at fit.\nKulang ang proteksiyon: humingi ng gabay.",
+    "display_en": "Do not diagnose or prescribe treatment.\nDo not alter isolation arrangements alone.\nRespirators require appropriate training and fit.\nInadequate protection: seek guidance.",
+    "check": null,
+    "narration_fil": "Huwag baguhin ang bentilasyon o isolation area nang walang gabay ng facility. Huwag ituring na sapat ang mask para sa lahat ng exposure. Iba ang gamit at fit requirements ng respirator; kailangan ang angkop na training. Kung kulang ang proteksiyon para sa gawain, humingi muna ng gabay at ligtas na suporta.",
+    "narration_en": "Do not alter ventilation or isolation arrangements without facility guidance. A mask is not sufficient for every exposure. Respirators have different use and fit requirements and need appropriate training. If protection is inadequate for a task, seek guidance and safe support first."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.source-controls",
+      "c2.ipc.environment-work"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "May concern sa bentilasyon. Ano ang tamang susunod na hakbang?",
+      "prompt_en": "There is a ventilation concern. What is the appropriate next step?",
+      "options": [
+        {
+          "fil": "Ilipat agad ang lahat sa silid na hindi pa nasusuri.",
+          "en": "Immediately move everyone to a room that has not been assessed."
+        },
+        {
+          "fil": "Ipaalam at ipasuri sa responsable.",
+          "en": "Report it to the responsible person."
+        },
+        {
+          "fil": "Sabihing ligtas ang silid kahit walang anumang pagsusuri.",
+          "en": "Declare the room safe without any assessment."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring hindi angkop ang bagong lugar. 2: May tamang pagsusuri at pag-aayos ng facility. 3: Walang sapat na batayan ang katiyakan.",
+      "feedback_en": "1: The new location may be unsuitable. 2: This enables appropriate facility review and action. 3: The reassurance lacks a basis."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.source-controls",
+      "c2.ipc.environment-work",
+      "c2.ipc.ppe-risk"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Apat na uri; may responsable sa bawat isa.\nSa Lunes: gumawa ng control map.\nPPE ay isang bahagi ng pag-iwas.",
+    "display_en": "Four types, each with an owner.\nOn Monday: make a control map.\nPPE is one part of prevention.",
+    "check": null,
+    "narration_fil": "May responsable na sa bawat kontrol. Sa Lunes, gumawa ng mapa ng apat na uri gamit ang fictional BHS. Salita: layered controls — magkakaugnay na paraan ng pag-iwas. Hindi pinapalitan ng PPE ang maayos na lugar at gawain.",
+    "narration_en": "Each control now has an owner. On Monday, map the four types for a fictional BHS. Word: layered controls — complementary ways to prevent exposure. PPE does not replace safer environments and work practices."
+  }
+]

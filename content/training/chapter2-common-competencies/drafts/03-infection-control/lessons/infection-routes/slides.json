@@ -1,0 +1,156 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.infection",
+      "c2.ipc.contact",
+      "c2.ipc.respiratory"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kamay, gamit, saradong silid.\nHindi pa alam ang sakit.\nAno ang posibleng daan ng mikrobyo?",
+    "display_en": "Hands, objects, an enclosed room.\nThe illness is unknown.\nWhat is a possible route for germs?",
+    "check": null,
+    "narration_fil": "May tatlong card si BHW Jo: kamay na may kontaminasyon, ginamit na bagay, at saradong silid na may umuubo. Hindi pa alam ang sakit ng sinuman. Ang impeksyon ay pagpasok at pagdami ng mikrobyo sa katawan. Maaaring walang kapansin-pansing sintomas. Kailangang tukuyin ang posibleng daan ng mikrobyo, hindi pangalanan ang sakit.",
+    "narration_en": "BHW Jo has three cards: contaminated hands, a used object and an enclosed room with someone coughing. Nobody’s illness is known. Infection involves germs entering and multiplying in the body. Symptoms may not be obvious. Identify a possible route, rather than naming a disease."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.contact",
+      "c2.ipc.respiratory"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Direct: tuwirang pagdikit.\nIndirect: kontaminadong bagay o kamay.\nHangin: paglanghap ng particles.\nKalapit: particles sa mata, ilong o bibig.",
+    "display_en": "Direct: direct touch.\nIndirect: contaminated objects or hands.\nInhalation: breathing in particles.\nDeposition: particles reach eyes, nose or mouth.",
+    "check": null,
+    "narration_fil": "Direct contact: tuwirang paglipat sa pagdikit. Indirect contact: dumaraan sa kontaminadong bagay o kamay. Sa hangin, maaaring malanghap ang nakahahawang respiratory particles. Maaari ring direktang tumama ang mga ito sa mata, ilong o bibig ng kalapit na tao. Hindi lahat ng pagdikit o pag-ubo ay patunay ng impeksyon.",
+    "narration_en": "Direct contact involves transfer through direct touch. Indirect contact involves a contaminated object or hands. Infectious respiratory particles may be inhaled or land directly on a nearby person’s eyes, nose or mouth. A touch or cough alone does not prove infection."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.contact"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Hinawakan ang kontaminadong mesa, saka ang bibig. Anong daan ang inilalarawan?",
+      "prompt_en": "A person touches a contaminated desk and then their mouth. Which route is illustrated?",
+      "options": [
+        {
+          "fil": "Paglipat sa ina at sanggol lamang.",
+          "en": "Mother-to-child transmission only."
+        },
+        {
+          "fil": "Indirect contact.",
+          "en": "Indirect contact."
+        },
+        {
+          "fil": "Patunay na may tuberculosis ang humawak.",
+          "en": "Proof that the person has tuberculosis."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Walang pagbubuntis o panganganak sa sitwasyon. 2: Dumaraan sa bagay at kamay ang posibleng mikrobyo. 3: Hindi maaaring malaman ang sakit mula sa card na ito.",
+      "feedback_en": "1: Pregnancy or birth is not involved in this scene. 2: The possible transfer is through an object and hands. 3: This card cannot establish a diagnosis."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.other-routes"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Fecal-oral: dumi sa pagkain o tubig.\nVector: kagat na may dalang mikrobyo.\nDugo: kontaminadong karayom.\nIlang impeksyon: mula ina sa sanggol.",
+    "display_en": "Fecal-oral: feces contaminate food or water.\nVector: a bite carries a pathogen.\nBlood: a contaminated needle.\nSome infections: mother-to-child transmission.",
+    "check": null,
+    "narration_fil": "May iba pang card: dumi sa pagkain o tubig — fecal-oral; kagat ng lamok na may dalang mikrobyo — vector-borne. Kontaminadong karayom — posibleng pagkalantad sa dugo. May ilang impeksyong naipapasa sa sanggol sa pagbubuntis, panganganak o pagpapasuso. Hindi ito naipapaliwanag ng ordinaryong pakikisalamuha lamang. Iugnay ang bawat card sa angkop na pag-iwas.",
+    "narration_en": "Other cards show fecal contamination of food or water: fecal-oral spread; an infected mosquito bite: vector-borne spread; a contaminated needle: possible blood exposure. Some infections pass to a baby during pregnancy, birth or breastfeeding. Ordinary social contact alone does not explain these routes. Match each card with an appropriate preventive action."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.infection",
+      "c2.ipc.other-routes"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Maaaring higit sa isang daan.\nWalang diagnosis batay sa card o hitsura.\nStandard precautions para sa lahat.\nKarayom: larawan lamang sa practice.",
+    "display_en": "More than one route may apply.\nDo not diagnose from cards or appearance.\nStandard precautions apply to everyone.\nUse pictures, never needles, in practice.",
+    "check": null,
+    "narration_fil": "Maaaring higit sa isang daan ang mikrobyo. Huwag magdiagnose o magbansag batay sa card o hitsura. Sundin ang karaniwang pag-iingat sa lahat ng pasyente. Ang desisyon tungkol sa pagsusuri, paggamot at dagdag na precautions ay sa nakatalagang clinical staff. Huwag humawak ng karayom sa practice.",
+    "narration_en": "A germ may spread by more than one route. Do not diagnose or label people from a card or appearance. Apply standard precautions to all patients. Designated clinical staff decide testing, treatment and additional precautions. Do not handle needles during practice."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.respiratory"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Sa saradong silid, maaaring malanghap ang particles mula sa umuubo. Ano ang angkop?",
+      "prompt_en": "In an enclosed room, particles from a cough may be inhaled. What is appropriate?",
+      "options": [
+        {
+          "fil": "Sabihing sapat na ang pagpunas sa mesa para sa lahat ng panganib.",
+          "en": "Say wiping the desk alone addresses every risk."
+        },
+        {
+          "fil": "Pangalanan agad ang sakit at ipaalam sa buong pila.",
+          "en": "Immediately name the illness and tell the entire queue."
+        },
+        {
+          "fil": "Iugnay sa respiratory controls ng BHS.",
+          "en": "Use the BHS respiratory-control process."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi nito natutugunan ang posibleng paglanghap. 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. 3: Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.",
+      "feedback_en": "1: This does not address possible inhalation. 2: This guesses a diagnosis and discloses information inappropriately. 3: Use the agreed arrangements for space, reporting and protection."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.infection",
+      "c2.ipc.contact",
+      "c2.ipc.respiratory",
+      "c2.ipc.other-routes"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Daan + kontrol, hindi bansag.\nSa Lunes: ipasuri ang walong card.\nTransmission: paglipat ng mikrobyo.",
+    "display_en": "Route + control, not labels.\nOn Monday: review all eight cards.\nTransmission: how germs move.",
+    "check": null,
+    "narration_fil": "Naipaliwanag ni Jo ang posibleng daan nang walang bansag sa tao. Sa Lunes, gamitin ang walong card sa kapareha at ipasuri ang pag-uugnay sa supervisor. Salita: transmission — paraan ng paglipat ng mikrobyo. Ang tamang kontrol ay nakabatay sa gawain at panganib, hindi sa hula.",
+    "narration_en": "Jo explains possible routes without labeling people. On Monday, sort the eight cards with a partner and ask the supervisor to review the matches. Word: transmission — how germs move. Controls depend on tasks and risks rather than guesses."
+  }
+]

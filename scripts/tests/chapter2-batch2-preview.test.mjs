@@ -57,5 +57,5 @@ for(const code of codes){
  });
 }
 test('outline-only modules cannot generate a misleading learner preview',()=>{
- assert.throws(()=>execFileSync(process.execPath,['scripts/chapter2-preview.mjs','--module','2.3','--output',path.join(root,'.preview/unwritten')],{cwd:root,stdio:'pipe'}),/Select an authored draft/);
+ assert.throws(()=>execFileSync(process.execPath,['scripts/chapter2-preview.mjs','--module','2.4','--output',path.join(root,'.preview/unwritten')],{cwd:root,stdio:'pipe'}),/Select an authored draft/);
 });
