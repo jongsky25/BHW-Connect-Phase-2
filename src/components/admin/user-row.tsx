@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { mapAdminRpcError } from "@/lib/admin/error-messages";
-import type { AdminUserRow, OrgUnitOption } from "@/lib/admin/types";
+import { orgUnitName, type AdminUserRow, type OrgUnitOption } from "@/lib/admin/types";
 import { createClient } from "@/lib/supabase/client";
 import { inputClass } from "./form-field";
 
@@ -260,7 +260,7 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
             </select>
           </div>
         ) : (
-          (user.org_units?.[0]?.name ?? "—")
+          (orgUnitName(user.org_units) ?? "—")
         )}
       </td>
       <td className="px-3 py-3 text-sm text-ink">{t(STATUS_KEY[user.status])}</td>
@@ -377,7 +377,10 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
                 <button
                   type="button"
                   disabled={loading}
-                  onClick={() => setMode("transfer")}
+                  onClick={() => {
+                    setTransferTarget(transferTargets[0]?.id ?? "");
+                    setMode("transfer");
+                  }}
                   className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                 >
                   {t("transferAction")}

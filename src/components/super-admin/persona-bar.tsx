@@ -44,7 +44,7 @@ export function PersonaBar({ currentUserId, snapshot }: Props) {
 
   return (
     <div role="region" aria-label={t("barLabel")} className="border-b border-warning/40 bg-warning/10">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2 text-sm sm:px-6">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2 text-sm sm:px-6">
         <p className="text-ink">
           {t("barSignedInAs", { username: current.username, role: t(`role.${current.role}`) })}
         </p>
