@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation.",
+      "observable_en": "Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation.",
+      "not_yet_fil": "Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.",
+      "not_yet_en": "Uses real used sharps in practice, misses a critical safety step or delays medical evaluation.",
+      "levels": {
+        "kaya_na_fil": "Nasusunod ang bawat critical step ng lokal na demo checklist; tama ang placement at replacement ng dummy box; agad ang report at medical evaluation sa simulation. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Follows each critical step of the local demonstration checklist, places and replaces the dummy box correctly, and reports and obtains evaluation immediately in simulation. Completes this without prompting.",
+        "kailangan_practice_fil": "Ligtas ang sequence ngunit nangangailangan ng prompt sa reporting contact; ipaulit hanggang malinaw ang contact at pathway.",
+        "kailangan_practice_en": "Follows a safe sequence but needs a prompt for the reporting contact; repeat until contact and pathway are clear.",
+        "hindi_pa_fil": "Humahawak ng tunay na used sharps sa practice, lumalaktaw sa critical safety step o nagpapaliban ng medical evaluation.",
+        "hindi_pa_en": "Uses real used sharps in practice, misses a critical safety step or delays medical evaluation."
+      }
+    }
+  ]
+}

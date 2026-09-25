@@ -1,0 +1,92 @@
+[
+  {
+    "id": "slide-exposure",
+    "concept_ids": [
+      "m8.exposure"
+    ],
+    "layout": "process",
+    "heading_fil": "Kung natusok, kumilos agad",
+    "heading_en": "If stuck, act immediately",
+    "display_fil": "Simulated needlestick: hugasan ng sabon at tubig → iulat agad → agarang medical evaluation. Huwag hintayin ang sintomas o uwian. Qualified clinician ang magpapasya sa assessment at post-exposure treatment.",
+    "display_en": "Simulated needlestick: wash with soap and water → report immediately → immediate medical evaluation. Do not wait for symptoms or shift end. A qualified clinician decides assessment and post-exposure treatment.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-return-demo",
+    "concept_ids": [
+      "m8.practice",
+      "m8.prepare"
+    ],
+    "layout": "process",
+    "heading_fil": "Return demonstration na ligtas",
+    "heading_en": "A safe return demonstration",
+    "display_fil": "Dummy equipment lamang. Ipakita ang lokasyon at fill line ng sharps box. Sundin ang trainer-approved hand hygiene at PPE checklist. Ayusin ang upuan at bag; walang masakit na stretching.",
+    "display_en": "Dummy equipment only. Show the sharps container’s location and fill line. Follow the trainer-approved hand-hygiene and PPE checklist. Adjust chair and bag; no painful stretching.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-near-miss",
+    "concept_ids": [
+      "m8.practice"
+    ],
+    "layout": "process",
+    "heading_fil": "Iulat kahit muntik lamang",
+    "heading_en": "Report a near miss too",
+    "display_fil": "Halos nadulas ngunit walang injury? Iulat ang lugar, oras, hazard at kontrol. Sa incident, hindi dapat maantala ng paperwork ang urgent care. Tiyakin sa coordinator ang angkop na insurance at benefits.",
+    "display_en": "A slip was narrowly avoided without injury? Report place, time, hazard and control. Incident paperwork must not delay urgent care. Confirm applicable insurance and benefits with the coordinator.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m8.exposure",
+      "m8.practice",
+      "m8.prepare"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Dummy demo → trainer checklist → simulated report → agarang evaluation. Itama at ulitin ang unsafe step.",
+    "display_en": "Dummy demonstration → trainer checklist → simulated report → immediate evaluation. Correct and repeat an unsafe step.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m8.exposure",
+      "m8.practice",
+      "m8.prepare"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+    "display_en": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?",
+      "prompt_en": "Ana has a used-needle injury but no symptoms. What should she do?",
+      "options": [
+        {
+          "fil": "Hugasan, iulat agad at magpa-medical evaluation kaagad.",
+          "en": "Wash, report immediately and obtain immediate medical evaluation."
+        },
+        {
+          "fil": "Hugasan at maghintay hanggang matapos ang visits.",
+          "en": "Wash and wait until the visits are finished."
+        },
+        {
+          "fil": "Pumili ng gamot mula sa available supplies.",
+          "en": "Choose medication from available supplies."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.",
+      "feedback_en": "The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment."
+    }
+  }
+]

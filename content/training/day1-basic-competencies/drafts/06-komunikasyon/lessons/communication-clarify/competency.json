@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Nagtatanong nang bukas at walang paratang; gumagamit ng isang tiyak na follow-up; ibinubuod ang sagot at humihingi ng pagwawasto.",
+      "observable_en": "Uses a neutral open question, one focused follow-up and a summary that invites correction.",
+      "not_yet_fil": "Naglalagay ng motibo sa tanong o nagtatala ng kahulugang hindi kinumpirma.",
+      "not_yet_en": "Embeds a motive in the question or records an interpretation that was not checked.",
+      "levels": {
+        "kaya_na_fil": "Nagtatanong nang bukas at walang paratang; gumagamit ng isang tiyak na follow-up; ibinubuod ang sagot at humihingi ng pagwawasto. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Uses a neutral open question, one focused follow-up and a summary that invites correction. Completes this without prompting.",
+        "kailangan_practice_fil": "Maayos ang bukas na tanong ngunit malabo pa ang follow-up; ipaulit gamit ang “Ano ang ibig mong sabihin sa…?”",
+        "kailangan_practice_en": "Uses an open question but the follow-up remains unclear; repeat using “What do you mean by…?”",
+        "hindi_pa_fil": "Naglalagay ng motibo sa tanong o nagtatala ng kahulugang hindi kinumpirma.",
+        "hindi_pa_en": "Embeds a motive in the question or records an interpretation that was not checked."
+      }
+    }
+  ]
+}

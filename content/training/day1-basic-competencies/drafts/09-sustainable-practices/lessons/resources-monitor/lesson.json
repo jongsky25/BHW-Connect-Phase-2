@@ -1,0 +1,208 @@
+{
+  "manifest": {
+    "lesson_key": "resources-monitor",
+    "position": 2,
+    "title_fil": "Subukan at subaybayan",
+    "title_en": "Try and monitor",
+    "objectives_fil": [
+      "Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo."
+    ],
+    "objectives_en": [
+      "Propose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "trial",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.",
+      "takeaway_en": "A sustainable practice has an owner, measured results and regular review.",
+      "check": null
+    },
+    {
+      "id": "compare",
+      "concept_ids": [
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.",
+      "takeaway_en": "Compare resources across similar work and check quality too.",
+      "check": null
+    },
+    {
+      "id": "communicate",
+      "concept_ids": [
+        "m9.communicate"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.",
+      "takeaway_en": "A change lasts when colleagues understand it and can carry it out.",
+      "check": null
+    },
+    {
+      "id": "workload",
+      "concept_ids": [
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.",
+      "takeaway_en": "A fair comparison accounts for the amount of work performed.",
+      "check": null
+    },
+    {
+      "id": "handover",
+      "concept_ids": [
+        "m9.organize",
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.",
+      "takeaway_en": "A routine that colleagues can inherit lasts longer than an individual workaround.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+      "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+      "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+      "check": {
+        "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
+        "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
+        "options": [
+          {
+            "fil": "Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.",
+            "en": "This does not yet show improvement; compare use per session and services delivered."
+          },
+          {
+            "fil": "Tagumpay na dahil mas mababa ang bill.",
+            "en": "It is a success because the bill is lower."
+          },
+          {
+            "fil": "Wala nang kailangang review dahil nabawasan ang papel.",
+            "en": "No review is needed because less paper was used."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
+        "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.communicate",
+      "read_ids": [
+        "trial",
+        "communicate",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-trial",
+        "slide-communicate",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.review",
+      "read_ids": [
+        "trial",
+        "compare",
+        "workload",
+        "handover",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-trial",
+        "slide-compare",
+        "slide-workload",
+        "slide-handover",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.organize",
+      "read_ids": [
+        "handover",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-handover",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        19,
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        14,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "tesda-400311217",
+      "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+      "pdf_pages": [
+        33,
+        34,
+        35
+      ],
+      "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    }
+  ],
+  "assets": []
+}

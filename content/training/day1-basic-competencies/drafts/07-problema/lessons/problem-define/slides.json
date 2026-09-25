@@ -1,0 +1,74 @@
+[
+  {
+    "id": "slide-missed-visits",
+    "concept_ids": [
+      "m7.define"
+    ],
+    "layout": "scene",
+    "heading_fil": "Tatlong balik, parehong hadlang",
+    "heading_en": "Three visits, the same barrier",
+    "display_fil": "Si Nestor, 41, ay bumalik sa tatlong pamilyang hindi nakapunta sa health center. Itala ang petsa at sinabi nilang dahilan. Problema: hindi makarating sa takdang araw. Hindi pa tiyak ang lahat ng sanhi.",
+    "display_en": "Nestor, 41, revisits three households that missed health-center visits. Record dates and reported reasons. Problem: difficulty reaching the service on the agreed day. Causes still need checking.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-worked-example",
+    "concept_ids": [
+      "m7.define"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Ihiwalay ang problema sa hula",
+    "heading_en": "Separate the problem from a guess",
+    "display_fil": "Pangyayari: hindi nakapunta. Hula: ayaw pumunta. Solusyon: bagong poster. Simulan sa pangyayari, saka alamin ang dahilan.",
+    "display_en": "Event: missed visits. Guess: unwilling to attend. Solution: new poster. Start with the event, then investigate causes.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m7.define"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Problem statement: ano ang nangyari? Kaninong impormasyon? Ano ang kulang? Alisin ang tatak sa pagkatao.",
+    "display_en": "Problem statement: what happened? Whose information? What is missing? Remove labels about character.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m7.define"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+    "display_en": "Describe the event and evidence before choosing a cause or solution.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Aling pahayag ang magandang simula ng pagsisiyasat?",
+      "prompt_en": "Which statement is a useful starting point for investigation?",
+      "options": [
+        {
+          "fil": "“Kailangan ng bagong poster ang lahat.”",
+          "en": "“Everyone needs a new poster.”"
+        },
+        {
+          "fil": "“Ayaw talaga nilang gumaling.”",
+          "en": "“They do not want to get well.”"
+        },
+        {
+          "fil": "“Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”",
+          "en": "“Three households missed visits; check each household’s barrier.”"
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.",
+      "feedback_en": "The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation."
+    }
+  }
+]

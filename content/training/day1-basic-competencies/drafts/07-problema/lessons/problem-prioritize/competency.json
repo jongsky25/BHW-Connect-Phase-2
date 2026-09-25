@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care.",
+      "observable_en": "Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care.",
+      "not_yet_fil": "Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.",
+      "not_yet_en": "Reverses feasibility or treats ranking as permission to delay urgent care.",
+      "levels": {
+        "kaya_na_fil": "Tama ang tatlong total; naipapaliwanag ang apat na pamantayan at direksyon ng feasibility; humihingi ng lokal na ebidensya at hindi ipinagpapaliban ang urgent care. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Calculates all three totals correctly, explains the four criteria and feasibility direction, requests local evidence and does not delay urgent care. Completes this without prompting.",
+        "kailangan_practice_fil": "Tama ang pamantayan ngunit may mali sa pagdaragdag; gumamit ng row-by-row na tally at ipaulit.",
+        "kailangan_practice_en": "Uses the right criteria but makes an addition error; use a row-by-row tally and repeat.",
+        "hindi_pa_fil": "Mali ang direksyon ng feasibility o itinuturing na pahintulot ang ranking na ipagpaliban ang agarang pangangalaga.",
+        "hindi_pa_en": "Reverses feasibility or treats ranking as permission to delay urgent care."
+      }
+    }
+  ]
+}

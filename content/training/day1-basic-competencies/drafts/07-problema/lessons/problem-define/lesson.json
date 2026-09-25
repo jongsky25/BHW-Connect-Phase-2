@@ -1,0 +1,119 @@
+{
+  "manifest": {
+    "lesson_key": "problem-define",
+    "position": 0,
+    "title_fil": "Linawin ang problema",
+    "title_en": "Define the problem",
+    "objectives_fil": [
+      "Mula sa missed-visit case, isulat ang problemang may tiyak na pangyayari, pinagmulan at impormasyong kulang, nang walang paninisi."
+    ],
+    "objectives_en": [
+      "Given the missed-visit case, write a problem statement with a specific event, source and information gap, without blame."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "missed-visits",
+      "concept_ids": [
+        "m7.define"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tukuyin ang problema gamit ang pangyayari at ebidensya, hindi husga sa tao.",
+      "takeaway_en": "Define the problem using events and evidence rather than judgments about people.",
+      "check": null
+    },
+    {
+      "id": "worked-example",
+      "concept_ids": [
+        "m7.define"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+      "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.define"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+      "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.define"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ilarawan muna ang pangyayari at ebidensya bago pumili ng dahilan o solusyon.",
+      "takeaway_en": "Describe the event and evidence before choosing a cause or solution.",
+      "check": {
+        "prompt_fil": "Aling pahayag ang magandang simula ng pagsisiyasat?",
+        "prompt_en": "Which statement is a useful starting point for investigation?",
+        "options": [
+          {
+            "fil": "“Kailangan ng bagong poster ang lahat.”",
+            "en": "“Everyone needs a new poster.”"
+          },
+          {
+            "fil": "“Ayaw talaga nilang gumaling.”",
+            "en": "“They do not want to get well.”"
+          },
+          {
+            "fil": "“Tatlong pamilya ang hindi nakapunta; alamin ang hadlang sa bawat isa.”",
+            "en": "“Three households missed visits; check each household’s barrier.”"
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "Ang ikatlong sagot ay tiyak at bukas sa ebidensya. Ang poster ay solusyong hindi pa nasusuri; ang pahayag tungkol sa kagustuhan ay husga, hindi obserbasyon.",
+        "feedback_en": "The third statement is specific and open to evidence. A poster is an untested solution; the claim about motivation is a judgment, not an observation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.define",
+      "read_ids": [
+        "missed-visits",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-missed-visits",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        29
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}
