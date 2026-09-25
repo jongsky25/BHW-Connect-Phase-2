@@ -12,6 +12,7 @@ The authored lesson files are copied without teaching-text changes from the revi
 
 These 13 lessons are required learner lessons. They add to the 26 existing published short lessons only after the `lessons` loader publishes each complete selected subchapter. The loader creates immutable revisions and uses `rpc_course_lessons_publish`; course/session enrollment, facilitator activity logs, attendance, assessment results, historical progress, and certificate rules are unchanged. No equivalence or progress backfill is requested.
 
-The 13 lessons have no draft image assets. They publish as text and independently authored slides. Visuals, narration, real-group timing, manual screen-reader checks, and review of 1.8 by a local qualified clinical trainer remain follow-up work. Training activity participation remains separate from learner lesson completion and competency assessment.
+The 13 lessons have no draft image assets. They publish as text and independently authored slides. Matching Filipino and English Read narration was generated for all 126 section/language pairs and the narration dry run now reports zero stale files. Lesson-specific visuals, a human listening review of the narration, real-group timing, manual screen-reader checks, and review of 1.8 by a local qualified clinical trainer remain follow-up work. Training activity participation remains separate from learner lesson completion and competency assessment.
 
 Release evidence: record the selected-module dry run, apply run, resulting lock IDs, published revision counts, and authenticated learner view in the task or PR before declaring the live result verified.
+
