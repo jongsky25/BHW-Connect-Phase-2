@@ -116,7 +116,7 @@ stage new draft revisions when loaded.
 | S2 | Fixed in repo; SME to confirm PhilHealth terms | "Automatically included" no longer means "free". Direct contributors still pay premiums. Primary care means *registering* with a provider of choice, not being "assigned" one. Referral is what the law "calls for", with local variation. The route from barangay to health board goes through the midwife and the municipal/city health office. |
 | S3 | Fixed; checked against RA 7883 text | The 1% cap is nationwide (§5). The subsistence allowance applies only at isolated BHS (§6b). The hazard allowance amount is set locally (§6a). "Owed" is replaced by "benefits the law provides… set locally". The three roles are attributed to the DOH BHW Reference Manual, not RA 7883, which does not name them. The BHWE "two years of college" condition is not in RA 7883 §6d; it is flagged for a CSC source. |
 | S4 | Fixed | Accreditation comes from the local health board. The punong barangay oversees BHWs *administratively*; the midwife remains the technical supervisor. |
-| S5 | Fixed in repo (versioned bank); migration not yet deployed | See below. |
+| S5 | Fixed and deployed, 24 Sep 2026 | See below. |
 | S6 | Fixed for S1–S4 claims | The chatbot entries now match the lessons. A claim registry (standard §10 G1) is still needed to stop the drift recurring. |
 | S7 | Signed off by the project owner, 24 Sep 2026 | The five claims below are accepted for pilot use. Independent clinical/legal review is not recorded; see the note under the queue. |
 
@@ -157,7 +157,7 @@ the old text.
 The live bank now matches the repo wording for all three items the review
 flagged.
 
-**Versioned test bank (built; not yet deployed).**
+**Versioned test bank (deployed 24 September 2026).**
 
 What changed:
 - Migration `20260928000000_versioned_test_bank.sql` adds `module_position`
@@ -187,6 +187,51 @@ Release steps, in order:
 
 The app must not be deployed before the migration: the view it reads would
 not exist yet.
+
+**Deployment record, 24 September 2026.**
+1. The migration was applied to `bhw-connect-e2e` and to the pilot
+   (`ltzicxyefizxoqhfuuzc`), and the schema was checked on both. The
+   Supabase security advisor flagged nothing new.
+2. PR #99 was merged as `349e6c5` after CI passed. Vercel production
+   deployment `dpl_wkvCwS7WuTckuATvqSodK661e9S7` became `READY` and serves
+   `bhw-connect-phase-2.vercel.app`.
+3. The loader ran with `--apply` on the pilot only after the new app was
+   live, so the old app never saw untagged or retired rows. It tagged 19
+   questions, retired 1 (the old question 11) and inserted 19.
+4. State of the pilot Day 1 bank afterwards:
+   - 39 rows: 1 retired and 38 active, all tagged.
+   - 20 served, on modules 1–5, including the corrected question 11.
+   - The 18 questions for modules 06–09 are waiting for those modules.
+   - All 5 recorded attempts are unchanged.
+   - A second dry run plans no changes.
+5. Smoke check:
+   - Public pages return 200.
+   - Signed-in pages redirect to login.
+   - No runtime errors since the deploy.
+   - Signed in through the API as the loader admin, the view returns the
+     20 served questions and refuses writes.
+
+   The runbook's sign-in-as-fixture-accounts check was not done: no
+   credentials for those accounts were available.
+
+**Corrected lessons and chatbot on the pilot, 24 September 2026.**
+- **Lessons for modules 02–05.** The 20 converted lessons had never been
+  loaded on the pilot; those modules showed "lessons being prepared". They
+  were staged, then published at the owner's request after the owner
+  approved the shared placeholder diagram (`practice-map`). The
+  approval record is in `docs/bhw-reference-content-approval.md`.
+- **Published state.** All 26 lessons in modules 01–05 are published with
+  approved assets. Module 03's published text carries the corrected Milk
+  Code refusal and module 04 the nationwide 1% cap. None of the old wording
+  is in any published revision. A re-run reports every lesson unchanged.
+- **Older-format module text.** The `course_modules` text for modules
+  02–04 still contains the old wording. The loader refuses `--mode content`
+  for converted modules, and BHWs are sent to the manual, which now serves
+  the published lessons. The old text remains reachable only through views
+  that render the older format.
+- **Chatbot.** `--mode kb --apply` (no `--publish`) updated 37 Day 1 entries
+  and added 17. All 55 remain drafts, so none answers BHWs. None contains the
+  old Milk Code, premium or "assigned provider" wording.
 
 **SME confirmation queue (S7).**
 1. Milk Code implementing rules (AO 2006-0012): confirm that the refusal
