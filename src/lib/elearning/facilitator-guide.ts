@@ -55,6 +55,7 @@ export const OBSERVATION_LEVEL_LABELS: Record<ObservationLevel, { fil: string; e
 };
 
 export type CompetencyObservation = {
+  activity_snapshot?: import("./activities").FacilitatorActivity | null;
   id: string;
   bhw_user_id: string;
   observer_user_id: string;

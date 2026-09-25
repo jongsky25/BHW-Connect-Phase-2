@@ -1,5 +1,6 @@
 "use client";
 
+import { observationActivities, type FacilitatorActivity } from "@/lib/elearning/activities";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import {
@@ -55,6 +56,7 @@ export function FacilitatorRoster({
   indicators,
   observations,
   lessonCount,
+  activities = [],
 }: {
   lang: Lang;
   moduleId: string;
@@ -62,6 +64,7 @@ export function FacilitatorRoster({
   indicators: RosterIndicator[];
   observations: CompetencyObservation[];
   lessonCount: number;
+  activities?: FacilitatorActivity[];
 }) {
   const router = useRouter();
   const latest = latestObservations(observations);
@@ -69,6 +72,7 @@ export function FacilitatorRoster({
   const [indicator, setIndicator] = useState<number>(indicators[0]?.objective_index ?? 0);
   const [level, setLevel] = useState<ObservationLevel | null>(null);
   const [note, setNote] = useState("");
+  const [activityId, setActivityId] = useState("");
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState<string | null>(null);
@@ -100,14 +104,15 @@ export function FacilitatorRoster({
   function start(rowId: string, objectiveIndex?: number) {
     setOpen(open === rowId && objectiveIndex === undefined ? null : rowId);
     setIndicator(objectiveIndex ?? indicators[0]?.objective_index ?? 0);
-    setLevel(null); setNote(""); setError(null); setSaved(null);
+    setActivityId(""); setLevel(null); setNote(""); setError(null); setSaved(null);
   }
 
   async function save(row: RosterRow) {
     if (!level) return;
     setSaving(true); setError(null);
     try {
-      const { error: rpcError } = await createClient().rpc("rpc_competency_observation_record", {
+      const { error: rpcError } = await createClient().rpc(activityId ? "rpc_competency_observation_record_activity" : "rpc_competency_observation_record", {
+        ...(activityId ? {p_activity_id: activityId, p_activity_version: activities.find(a=>a.id===activityId)?.version} : {}),
         p_bhw_user_id: row.id,
         p_module_id: moduleId,
         p_objective_index: indicator,
@@ -197,6 +202,7 @@ export function FacilitatorRoster({
                     <li key={ind.objective_index} className={`rounded-full px-3 py-1 ${obs ? LEVEL_TONE[obs.level] : "bg-ink/5 text-ink/70"}`}
                       title={obs?.note || undefined}>
                       {pick(lang, "Ind.", "Ind.")} {i + 1}: {obs ? OBSERVATION_LEVEL_LABELS[obs.level][lang].split(" (")[0] : pick(lang, "wala pang obserbasyon", "not observed")}
+                      {obs?.activity_snapshot && ` · ${obs.activity_snapshot.title[lang]}`}
                       {obs && ` · ${new Date(obs.observed_at).toLocaleDateString(lang === "en" ? "en-PH" : "fil-PH")}`}
                     </li>
                   );
@@ -212,10 +218,19 @@ export function FacilitatorRoster({
                     <label className="flex flex-col gap-1 text-sm font-medium">
                       {pick(lang, "Indicator", "Indicator")}
                       <select className="min-h-[44px] rounded-md border border-ink/20 bg-canvas px-2" value={indicator}
-                        onChange={(e) => { setIndicator(Number(e.target.value)); setLevel(null); }}>
+                        onChange={(e) => { setIndicator(Number(e.target.value)); setActivityId(""); setLevel(null); }}>
                         {indicators.map((ind, i) => <option key={ind.objective_index} value={ind.objective_index}>{i + 1}. {ind.observable}</option>)}
                       </select>
                     </label>
+                    <label className="grid gap-1 text-sm font-medium">
+                      {pick(lang, "Gawaing naobserbahan (opsyonal)", "Activity observed (optional)")}
+                      <select className="min-h-[44px] rounded-md border bg-canvas p-2" value={activityId} onChange={e=>setActivityId(e.target.value)}>
+                        <option value="">{pick(lang,"Ibang ebidensiya / walang napili","Other evidence / none selected")}</option>
+                        {observationActivities(activities,indicator).map(a=><option key={a.id} value={a.id}>{a.title[lang]}</option>)}
+                      </select>
+                    </label>
+                    {activityId && <ul className="list-disc pl-5 text-sm">{activities.find(a=>a.id===activityId)?.observe.map((o,i)=><li key={i}>{o[lang]}</li>)}</ul>}
+                    <p className="text-sm">{pick(lang,"Itala lamang ang direktang nakita. Ilarawan sa tala ang lakas, dapat sanayin at susunod na practice.","Record only what you directly observed. Use the note for a strength, improvement and next practice.")}</p>
                     <fieldset className="flex flex-col gap-2">
                       <legend className="text-sm font-medium">{pick(lang, "Antas", "Level")}</legend>
                       {OBSERVATION_LEVELS.map((l) => (

@@ -2,6 +2,8 @@ import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-li
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { NotesMarkdown } from "./notes-markdown";
 import { FacilitatorRoster } from "./facilitator-roster";
+import activityCards from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json";
+import type { FacilitatorActivity } from "@/lib/elearning/activities";
 
 const state = vi.hoisted(() => ({ rpc: vi.fn(), refresh: vi.fn() }));
 vi.mock("next/navigation", () => ({ useRouter: () => ({ refresh: state.refresh }) }));
@@ -33,6 +35,18 @@ describe("NotesMarkdown", () => {
 describe("FacilitatorRoster", () => {
   const indicators = [{ objective_index: 0, observable: "Names the three roles", levels: { kaya_na: "Unprompted", kailangan_practice: "With prompts", hindi_pa: "Needs a demo" } }];
   const rows = [{ id: "b1", name: "Rosa Cruz", unit: "Barangay Uno", lessonsDone: 1, pretest: 60, posttest: null, certified: false }];
+
+  it("links a selected eligible activity to the observation RPC", async () => {
+    state.rpc.mockResolvedValue({error:null});
+    const card=activityCards[0] as FacilitatorActivity;
+    render(<FacilitatorRoster lang="en" moduleId="m1" rows={rows} indicators={indicators} observations={[]} lessonCount={2} activities={[card,{...card,id:'unrelated',title:{en:'Unrelated',fil:'Iba'},objective_indices:[2]}]}/>);
+    fireEvent.click(screen.getByRole('button',{name:'Record observation'}));
+    expect(screen.queryByRole('option',{name:'Unrelated'})).not.toBeInTheDocument();
+    fireEvent.change(screen.getByRole('combobox',{name:'Activity observed (optional)'}),{target:{value:card.id}});
+    fireEvent.click(screen.getByRole('radio',{name:/Kailangan pa ng practice/}));
+    fireEvent.click(screen.getByRole('button',{name:'Save'}));
+    await waitFor(()=>expect(state.rpc).toHaveBeenCalledWith('rpc_competency_observation_record_activity',expect.objectContaining({p_activity_id:card.id,p_activity_version:1,p_objective_index:0})));
+  });
 
   it("records an observation through the RPC and refreshes", async () => {
     state.rpc.mockResolvedValue({ error: null });
@@ -73,7 +87,7 @@ describe("FacilitatorRoster", () => {
     expect(items[1]).toMatch(/^Rosa Cruz · Ind\. 2: Kailangan pa ng practice.*Needed a prompt/);
     expect(within(panel).getByText(/not yet observed/).parentElement).toHaveTextContent("Ana Santos");
     fireEvent.click(within(panel).getAllByRole("button", { name: "Re-observe" })[1]);
-    expect(screen.getByRole("combobox")).toHaveValue("1");
+    expect(screen.getByRole("combobox", {name:"Indicator"})).toHaveValue("1");
   });
 
   it("explains a rejected recording", async () => {

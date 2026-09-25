@@ -52,7 +52,7 @@ export async function loadSubchapterGuide(
     db.from("course_test_attempts").select("bhw_user_id,phase,score_percent,taken_at").eq("course_id", courseId)
       .returns<AttemptRow[]>(),
     db.from("competency_observations")
-      .select("id,bhw_user_id,observer_user_id,module_id,objective_index,level,note,observed_at")
+      .select("id,bhw_user_id,observer_user_id,module_id,objective_index,level,note,observed_at,activity_snapshot")
       .eq("module_id", moduleId).order("observed_at", { ascending: false }).returns<CompetencyObservation[]>(),
     // Where this subchapter has been run in the viewer's area (RLS-scoped).
     db.from("course_session_deliveries").select("id,session_id,module_id,duration_minutes,notes,recorded_at")

@@ -34,6 +34,7 @@ import { loadReferenceModule } from "./lib/reference-content.mjs";
 import { planReferenceLoad, applyReferenceLoad, referenceReport, stageReferenceHierarchy } from "./lib/reference-load.mjs";
 import { renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
 import { DEFAULT_COURSE, loadTrainingCourse } from "./lib/training-content.mjs";
+import { syncActivities } from "./lib/training-activities.mjs";
 import { planTestBankSync } from "./lib/test-bank.mjs";
 import { createClient, projectUrl, requireEnv, selectAll, signIn } from "./lib/supabase-rest.mjs";
 
@@ -62,11 +63,11 @@ function parseArgs(argv) {
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (!args.project) throw new Error("--project <supabase-project-ref> is required");
-  if (!['hierarchy','course','content','lessons','assessments','kb'].includes(args.mode)) throw new Error('--mode hierarchy|course|content|lessons|assessments|kb is required');
+  if (!['hierarchy','course','content','lessons','activities','assessments','kb'].includes(args.mode)) throw new Error('--mode hierarchy|course|content|lessons|activities|assessments|kb is required');
   if (!/^[a-z0-9-]+$/.test(args.course) || !/^[a-z0-9-]+$/.test(args.project)) throw new Error('invalid course/project key');
   if (args.modules?.some(m => !/^[a-z0-9-]+$/.test(m))) throw new Error('invalid module key');
   if (args.modules && new Set(args.modules).size!==args.modules.length)throw new Error('duplicate selected module');
-  if (['content','lessons'].includes(args.mode) && !args.modules?.length) throw new Error('selected content requires --modules');
+  if (['content','lessons','activities'].includes(args.mode) && !args.modules?.length) throw new Error('selected content requires --modules');
   if (args.publish && !['course','lessons','kb'].includes(args.mode)) throw new Error('publication is not supported for this mode');
   if (!args.orgUnit) throw new Error('--org-unit "<org unit name>" is required — see content/training/README.md');
   if (args.publish && args.mode === 'kb' && !args.owner) {
@@ -195,6 +196,7 @@ async function syncFacilitatorNotes(client, moduleId, notes, plan, apply) {
     competency_statement_fil: notes.competency_statement_fil,
     competency_statement_en: notes.competency_statement_en,
     observation_indicators: notes.observation_indicators,
+    activities: notes.activities,
   };
   if (existing) {
     plan.facilitatorNotes.update += 1;
@@ -398,6 +400,11 @@ async function main() {
     }
   }
 
+  if (args.mode === 'activities') {
+    console.log(JSON.stringify(await syncActivities(client, content.modules.filter(m => args.modules.includes(m.id)), lock, args.apply), null, 2));
+    if (!args.apply) console.log('Dry run: no writes. Use --apply after reviewing the selection.');
+    return;
+  }
   const plan = {
     course: { create: 0, update: 0 },
     modules: { create: 0, update: 0 },

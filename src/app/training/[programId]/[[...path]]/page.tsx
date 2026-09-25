@@ -1,5 +1,7 @@
 import * as Sentry from '@sentry/nextjs';
 import Link from 'next/link';
+import { lessonActivities } from '@/lib/elearning/activities';
+import type { CourseModuleFacilitatorNotes } from '@/lib/elearning/types';
 import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
@@ -181,14 +183,16 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const showGuide=facilitator && view!=='lesson';
         // The pretest check and the lesson content are independent reads, so
         // they share one round trip; the redirect still wins if it applies.
-        const [bank,attempt,revisionResult,resumeResult,notes]=await Promise.all([
+        const [bank,attempt,revisionResult,resumeResult,notes,activityNotes]=await Promise.all([
           pretestGate?db.from('course_test_questions_current').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
           pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
           db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
             .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
           progress?db.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).eq('lesson_id',lesson.id).returns<CourseLessonResume[]>():Promise.resolve({data:[],error:null}),
           facilitator?loadLessonGuide(db,lesson.published_revision_id!):Promise.resolve(null),
+          showGuide?db.from('course_module_facilitator_notes').select('activities').eq('module_id',subchapter.id).maybeSingle<Pick<CourseModuleFacilitatorNotes,'activities'>>():Promise.resolve({data:null,error:null}),
         ]);
+        if(activityNotes.error)throw new Error('Unable to load activities');
         if(pretestGate){
           if(bank.error||attempt.error)throw new Error('Unable to check assessment eligibility');
           if(bank.data?.length && !attempt.data)redirect(assessmentHref);
@@ -203,7 +207,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             <Link className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
             <Link className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
           </nav>}
-          {showGuide ? <LessonFacilitatorGuide lang={loc} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
+          {showGuide ? <LessonFacilitatorGuide lang={loc} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
             indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
           nextLessonHref={own[lessonIndex+1]?`${moduleHref}/${own[lessonIndex+1].id}`:undefined}
