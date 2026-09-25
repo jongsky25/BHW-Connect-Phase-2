@@ -296,3 +296,109 @@ The original questions, for the record:
    path.
 5. **Track B.** Wanted at all? If yes, approve rewriting 1.1.1's `hepo`
    section so each duty gets its own sentence.
+
+---
+
+## 8. Handoff: finish Chapter I in one run (written 25 Sep 2026, 16:30 UTC)
+
+For the next session. Read `docs/session-handoff.md` §1 first.
+
+**PR #124 was merged on 25 Sep 2026 with day 1 done**, at the owner's
+request. Production therefore plays Chapter I in mixed voices (Gemini for
+182 recordings, Edge for 108) until this run is merged. Cut a **new branch
+from `main`** and open a new draft PR for the remaining audio. Merging that
+PR is the release.
+
+### Owner decision: no ceiling for this run
+
+On 25 Sep 2026 the owner said to **disregard the 1,200/day Gemini ceiling
+for this one run** and finish all remaining Chapter I narration. It applies
+to this run only. Other runs still follow `free-ai-leverage-plan.md` §2.
+Pass `--max-requests 5000` so the script never stops on its own budget.
+
+### State at handoff
+
+- **Done:** A1, A2, A3 and A5, Track C, and day 1 of A4. The owner approved
+  the 1.1.1 Filipino sample after the silent-file fix.
+- **Rendered in Gemini:** 182 of Chapter I's 290 section × language
+  recordings. That is 177 from day 1 plus the 5 sections of 1.1.1 (fil).
+  Commit `8c4de53`.
+- **Left:** 108 recordings, about 711 Gemini requests. They still play the
+  Edge voice, and the player uses each section's own voice meanwhile.
+- **CI** was green on `8c4de53` before the merge.
+- **Requests used on 25 Sep:** 1,197 in total (both renders, the 1.1.1
+  re-render and two probes). Gemini never returned `429` or any error. The
+  key's real quota is unknown; the owner can see it in Google AI Studio.
+
+### Steps
+
+1. **Check the environment.** `GEMINI_API_KEY` must be visible. Check that
+   `git status` is clean.
+2. **Dry run.** Expect about 108 sections to render and about 711 Gemini
+   requests.
+   `npm run training:narrate -- --chapter 1 --provider gemini`
+3. **Hide in-progress MP3s from the stop hook.** The manifest is written
+   only when the run ends, so do not commit mid-run.
+   `printf 'public/training/audio/**/*.mp3\n' >> .git/info/exclude`
+4. **Render in the background with a log.** It takes about 45–60 minutes
+   and outlasts one tool timeout, so watch the log with Monitor for `✓ [N/`,
+   `✗`, `failed` and `manifest:`.
+   `nohup npm run training:narrate -- --chapter 1 --provider gemini --max-requests 5000 --apply > <scratchpad>/ch1-run2.log 2>&1 &`
+   - `--concurrency 3` is the default, and it saw no rate limits. You may
+     try 5.
+   - If Google starts refusing (`429` after 6 retries, or a quota error),
+     the run stops cleanly: finished sections are kept, the rest keep
+     their Edge audio, and the manifest is still written. Commit what
+     rendered and re-run after 07:00 UTC, when the quota resets.
+5. **Remove the exclude line** you added in step 3.
+6. **Check for silence (required).** The unit tests cannot hear, and on
+   25 Sep a lamejs bug shipped silent 32 kbps files. Decode every Gemini
+   file in Chromium (Playwright with
+   `executablePath: '/opt/pw-browsers/chromium'`):
+   - `OfflineAudioContext.decodeAudioData`, then the peak of
+     `getChannelData(0)`.
+   - Any file with a peak below 0.05 is silent: stop and investigate.
+   - Also add up MP3 bytes per lesson per language from `narration.json`
+     (Chapter I lessons are those whose `module` has no `chapter2/`
+     prefix). The cap is 1 MB per lesson per language. After day 1, the
+     only Gemini lesson over was `communication-explain` (fil, 1.08 MB).
+7. **Verify.**
+   - `npx vitest run scripts/tests/reference-narration.test.mjs scripts/tests/reference-narration-gemini.test.mjs scripts/lib/tts-providers/`
+     (the committed-narration guard must pass)
+   - `npm run lint`
+   - `npm run typecheck`
+   - Confirm every Chapter I entry in `narration.json` now has a
+     `gemini:` voice.
+8. **Commit and push.** One commit holds the new MP3s, `narration.json`
+   and the deleted superseded Edge MP3s: `git add -A` on
+   `content/training/day1-basic-competencies/narration.json` and
+   `public/training/audio`.
+9. **Open the new draft PR.**
+   - Say that it completes A4 of PR #124 and give the final per-lesson sizes.
+   - Record that the owner waived the ceiling for this run.
+   - Keep the release note: **merging is the release**, because deploy
+     serves `public/`.
+   - Subscribe to the PR's activity and drive CI to green.
+10. **A6: verify in a browser** on the chapter route. See §6 for the local
+    recipe. It needs an app account on the pilot that the owner has not
+    supplied yet; ask for it once, at the end.
+11. **Tell the owner Chapter I is done.** Chapter II stays on Edge until
+    they decide (§7, decision 2).
+
+### Traps already hit
+
+- **Silent MP3s.** At 32 kbps, lamejs's own 24 kHz → 22.05 kHz conversion
+  outputs silence. `encodeMp3` in `scripts/lib/tts-providers/gemini.mjs`
+  now resamples first and throws if the header rate differs. Do not
+  bypass this.
+- **Display text vs spoken text.** Timings must keep the displayed text
+  and only the synthesized text is `spokenText`. `renderNarration` in
+  `scripts/lib/reference-narration.mjs` does this; keep it that way.
+- **Re-runs without `--provider`** keep each section's current voice, so a
+  plain `training:narrate --apply` after a text edit will not revert
+  Chapter I to Edge.
+- **Vercel preview failures** saying "Deployment rate limited — retry in
+  24 hours" come from the account's 100 deploys/day. They are not this
+  PR's fault.
+- **Cancelled e2e jobs.** e2e runs in a repo-wide concurrency group, and a
+  newer queued run cancels a pending one. Re-run it once.

@@ -6,8 +6,9 @@
 // request and the clips are joined with a short pause: the timings then
 // come from the measured length of each clip, not from an estimate.
 //
-// Output is 24 kHz 16-bit mono PCM, re-encoded here to MP3 so a section
-// costs ~6 KB/s on a BHW's mobile data instead of ~48 KB/s.
+// Output is 24 kHz 16-bit mono PCM, re-encoded here to MP3 (48 kbps by
+// default; training:narrate asks for 32 kbps, the content standard's cap)
+// so a section costs a few KB/s on a BHW's mobile data.
 //
 // fetch and sleep are injected so the request/retry/assembly logic is
 // testable without a network call (gemini.test.mjs).
@@ -23,7 +24,7 @@ export const GEMINI_VOICE = "Kore";
 const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const DEFAULT_SAMPLE_RATE = 24000;
 const GAP_MS = 300;
-const MP3_KBPS = 48;
+const DEFAULT_MP3_KBPS = 48;
 const MAX_ATTEMPTS = 6;
 
 const STYLES = {
@@ -79,17 +80,56 @@ function toInt16(buf) {
   return new Int16Array(copy.buffer, copy.byteOffset, copy.length / 2);
 }
 
-function encodeMp3(samples, sampleRate) {
-  const encoder = new Mp3Encoder(1, sampleRate, MP3_KBPS);
+// LAME only allows some sample rates at each bitrate (at 32 kbps mono, 24 kHz
+// becomes 22.05 kHz). lamejs's own conversion is broken: it wrote silent
+// files from real speech. So we pick the rate LAME would pick, convert
+// ourselves (windowed-sinc low-pass), and give the encoder matching rates.
+const LAME_RATE_FOR_KBPS = (kbps, rate) => (kbps <= 32 && rate === 24000 ? 22050 : rate);
+
+export function resample(samples, from, to) {
+  if (from === to) return samples;
+  const ratio = from / to;
+  const cutoff = Math.min(1, to / from) * 0.95; // below the new Nyquist
+  const half = 16; // taps each side
+  const out = new Int16Array(Math.floor((samples.length * to) / from));
+  for (let n = 0; n < out.length; n += 1) {
+    const t = n * ratio;
+    const base = Math.floor(t);
+    let acc = 0;
+    let norm = 0;
+    for (let k = base - half + 1; k <= base + half; k += 1) {
+      const x = t - k;
+      const w = 0.5 + 0.5 * Math.cos((Math.PI * x) / half); // Hann
+      const h = x === 0 ? cutoff : Math.sin(Math.PI * cutoff * x) / (Math.PI * x);
+      const tap = h * w;
+      norm += tap;
+      if (k >= 0 && k < samples.length) acc += samples[k] * tap;
+    }
+    out[n] = Math.max(-32768, Math.min(32767, Math.round(acc / norm)));
+  }
+  return out;
+}
+
+export function encodeMp3(samples, sampleRate, kbps) {
+  const rate = LAME_RATE_FOR_KBPS(kbps, sampleRate);
+  const pcm = resample(samples, sampleRate, rate);
+  const encoder = new Mp3Encoder(1, rate, kbps);
   const chunks = [];
   const block = 1152;
-  for (let i = 0; i < samples.length; i += block) {
-    const out = encoder.encodeBuffer(samples.subarray(i, i + block));
+  for (let i = 0; i < pcm.length; i += block) {
+    const out = encoder.encodeBuffer(pcm.subarray(i, i + block));
     if (out.length) chunks.push(Buffer.from(out));
   }
   const tail = encoder.flush();
   if (tail.length) chunks.push(Buffer.from(tail));
-  return Buffer.concat(chunks);
+  const bytes = Buffer.concat(chunks);
+  // Guard: if LAME still changed the rate, it converted internally (the
+  // silent-output path). Fail instead of writing a silent file.
+  const version = (bytes[1] >> 3) & 3;
+  const table = { 3: [44100, 48000, 32000], 2: [22050, 24000, 16000], 0: [11025, 12000, 8000] }[version];
+  const headerRate = table?.[(bytes[2] >> 2) & 3];
+  if (bytes.length && headerRate !== rate) throw new Error(`gemini: encoder wrote ${headerRate} Hz for ${rate} Hz input`);
+  return bytes;
 }
 
 async function synthesizeZoneText(text, language, { apiKey, model, voice, fetchImpl, sleep }) {
@@ -140,6 +180,10 @@ export async function synthesizeWithGemini(zones, language, options) {
     apiKey,
     model = GEMINI_TTS_MODEL,
     voice = GEMINI_VOICE,
+    kbps = DEFAULT_MP3_KBPS,
+    // What is sent for a zone. Timings always keep zone.text (the displayed
+    // words), which is what the renderer matches against the revision.
+    speak = (zone) => zone.text,
     fetchImpl = fetch,
     sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
   } = options;
@@ -147,7 +191,7 @@ export async function synthesizeWithGemini(zones, language, options) {
 
   const clips = [];
   for (const zone of zones) {
-    clips.push(await synthesizeZoneText(zone.text, language, { apiKey, model, voice, fetchImpl, sleep }));
+    clips.push(await synthesizeZoneText(speak(zone), language, { apiKey, model, voice, fetchImpl, sleep }));
   }
 
   const sampleRate = clips[0]?.sampleRate ?? DEFAULT_SAMPLE_RATE;
@@ -176,7 +220,7 @@ export async function synthesizeWithGemini(zones, language, options) {
 
   return {
     provider: "gemini",
-    audioBytes: encodeMp3(joined, sampleRate),
+    audioBytes: encodeMp3(joined, sampleRate, kbps),
     format: "mp3",
     durationSeconds: total / sampleRate,
     timings,

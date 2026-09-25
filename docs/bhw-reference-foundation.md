@@ -1,6 +1,6 @@
 # Reference Manual foundation — work package 2
 
-This additive migration supplies a parent training program, ordered chapters mapped to existing delivery courses, lessons under existing modules, immutable content revisions and private facilitator notes. The learner-facing program can be one Reference Manual course with three chapters while the existing Chapter I course UUID continues to own assessments and certificates. Chapters II–III can remain unavailable with no delivery course.
+This additive migration supplies a parent training program, ordered chapters mapped to existing delivery courses, lessons under existing modules, immutable content revisions and private facilitator notes. The learner-facing program can be one Reference Manual course with three chapters while the existing Chapter I course UUID continues to own assessments and certificates. Chapters II–III can remain unavailable with no delivery course. (As of 25 Sep 2026 Chapter II is published with its own delivery course; Chapter III is unavailable.)
 
 No rows are seeded, no old UUIDs change, and no historical progress is rewritten. Authenticated administrators author within their organization scope. Learners see only currently published content in available chapters of published programs/courses. Facilitator notes are stored in a separate table, unreadable by learners. Progress reporting inherits existing administrator/session-owner policies; resume records are private to the learner.
 

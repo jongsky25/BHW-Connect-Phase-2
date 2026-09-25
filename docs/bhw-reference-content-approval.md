@@ -40,7 +40,7 @@ Canonical revision hashes include asset review status, so approval changes each 
 - Matching-platform Supabase/Auth rehearsal: OUTSTANDING; fixture-authenticated PostgreSQL/PostgREST results remain prior evidence only.
 - Manual screen-reader testing: OUTSTANDING; automated axe and keyboard checks do not establish this result.
 - Target mapping, migration state, staged/publication state, preservation/equivalence and activation: verify against the actual authorized target before writing. Approval does not automatically backfill historical work or replace assessments.
-- Parts 1.2–1.5 and 1.6–1.9 are outside this content approval. Chapters II–III remain unavailable; Chapter I assessment/certificate scope is unchanged.
+- Parts 1.2–1.5 and 1.6–1.9 are outside this content approval (they were approved and published separately later). At the time, Chapters II–III remained unavailable (Chapter II was published 25 Sep 2026); Chapter I assessment/certificate scope is unchanged.
 
 No technical test is marked passed by owner authorization. Do not describe the whole release as fully validated while the remaining evidence is missing.
 

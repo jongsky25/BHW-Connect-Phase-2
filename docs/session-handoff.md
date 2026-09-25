@@ -4,7 +4,12 @@ Read this before starting work on BHW Connect Phase 2. It is not a plan (that
 is `docs/training-modules-plan.md`); it is how to work, and the live state of
 the pilot project, so a new session does not re-discover either the hard way.
 
-Last updated: 24 September 2026.
+Last updated: 25 September 2026.
+
+**Narration / voice / animation work:** read
+`docs/narration-visuals-realignment-handoff.md` first. INC-27/INC-28 were
+built for the legacy module view, and that document redirects them to the
+chapter route.
 
 **Narration / voice / animation work:** read
 `docs/narration-visuals-realignment-handoff.md` first. INC-27/INC-28 were
@@ -143,6 +148,13 @@ once you have the ref; the gap was purely "nobody wrote it down," not an
 access problem. The ref is **`qeryhxctxslhdkclifom`** (host
 `qeryhxctxslhdkclifom.supabase.co`) — recorded here now so the next session
 doesn't have to ask the user for it again.
+
+These are the **legacy** Araw 1 / Module 1 identities. They still own the
+Chapter I assessments and certificate, but learners now reach the content
+through the chapter route (`/training/:program/:chapter/:subchapter/:lesson`);
+the current module and lesson IDs are in
+`content/training/day1-basic-competencies/locks/ltzicxyefizxoqhfuuzc.json`.
+Chapter I (1.1–1.9) and Chapter II are published as of 25 Sep 2026.
 
 | Thing | Value |
 | --- | --- |
@@ -307,6 +319,12 @@ reviewed a couple of runs.
 `scripts/tts-render.mjs` loader with an Azure/edge-tts fallback chain). Two
 things are owed before it's more than code-complete, and both need
 something this session didn't have:
+
+*Superseded 25 Sep 2026:* Azure is no longer needed. Narration learners hear
+is rendered by `training:narrate` (Edge, and Gemini for Chapter I), and
+`training:tts` is frozen as legacy. See
+`docs/narration-visuals-realignment-handoff.md`. The two items below are kept
+for the record.
 
 1. **An `AZURE_SPEECH_KEY`**, to actually run `training:tts --apply`
    against Module 1 and record the real character count against Azure's

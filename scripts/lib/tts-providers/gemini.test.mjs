@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { decodePcm, geminiVoiceId, synthesizeWithGemini } from "./gemini.mjs";
+import { decodePcm, encodeMp3, geminiVoiceId, resample, synthesizeWithGemini } from "./gemini.mjs";
 
 function wav(seconds, sampleRate = 24000) {
   const dataSize = Math.round(sampleRate * seconds) * 2;
@@ -107,5 +107,27 @@ describe("synthesizeWithGemini", () => {
 describe("geminiVoiceId", () => {
   it("includes the model so switching provider or model re-renders sections", () => {
     expect(geminiVoiceId()).toBe("gemini:gemini-3.8-flash-tts:Kore");
+  });
+});
+
+describe("32 kbps encoding", () => {
+  const tone = (rate, seconds, hz = 440) =>
+    Int16Array.from({ length: rate * seconds }, (_, i) => Math.round(10000 * Math.sin((2 * Math.PI * hz * i) / rate)));
+
+  it("resamples 24 kHz to 22.05 kHz without losing a speech-band tone", () => {
+    const out = resample(tone(24000, 1), 24000, 22050);
+    expect(out.length).toBe(22050);
+    const peak = out.slice(100, -100).reduce((m, x) => Math.max(m, Math.abs(x)), 0);
+    expect(peak).toBeGreaterThan(9500);
+    expect(peak).toBeLessThan(10500);
+  });
+
+  // lamejs's own 24 -> 22.05 kHz conversion wrote silent MP3s from real
+  // speech (25 Sep 2026). encodeMp3 must hand LAME matching rates.
+  it("encodes 24 kHz input at 32 kbps as native 22.05 kHz frames", () => {
+    const bytes = encodeMp3(tone(24000, 1), 24000, 32);
+    expect(bytes[0]).toBe(0xff);
+    expect((bytes[2] >> 4) & 0xf).toBe(4); // 32 kbps
+    expect((bytes[2] >> 2) & 3).toBe(0); // MPEG-2 rate index 0 = 22050 Hz
   });
 });
