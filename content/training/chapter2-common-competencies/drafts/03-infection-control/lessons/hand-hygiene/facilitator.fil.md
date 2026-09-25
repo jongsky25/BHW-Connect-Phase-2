@@ -44,13 +44,13 @@ Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 **Return demonstration ng hand hygiene**, triad sa station, 70 minuto at feedback.
 
 - **Learner:** bumubunot ng card, sinasabi ang paraan at nagde-demonstrate; saka ang kabilang card.
-- **Partner:** hawak ang timer.
+- **Partner:** tagabantay ng oras; hawak ang mga method card.
 - **Observer:** minamarkahan ang bawat hanay ng checklist: naobserbahan, ulitin o hindi naobserbahan.
 - Kapag may nakaligtaan, uulitin ng learner ang buong procedure. Walang umaagos na tubig: handrub muna, handwash sa supervisor sa ibang araw.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (may nakikitang dumi):** **"Sabon at tubig."** Gawin ang buong paghuhugas at tamang pagpapatuyo.
+- **Check 1 (may nakikitang dumi):** **"Sabon at tubig, saka patuyuin."** Gawin ang buong paghuhugas at tamang pagpapatuyo.
   - "Handrub lamang kahit may nakikitang dumi": kailangan ang sabon at tubig para sa nakikitang dumi.
   - "Tubig lamang na mabilis na ipapadaan sa kamay": kulang ang sabon, pagkuskos sa lahat ng bahagi at pagpapatuyo.
 - **Check 2 (basa pa pagkatapos ng handrub):** **"Kuskusin hanggang matuyo."** Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi.

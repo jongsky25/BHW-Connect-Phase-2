@@ -53,7 +53,7 @@ Each step is a Read section and its matching slide.
 - **Check 1 (no tissue — where to sneeze?):** **"Into his bent elbow."** This covers nose and mouth without using hands.
   - "Into his hand, then immediately touch the desk": hands may transfer secretions to objects.
   - "Directly toward the partner to show the demonstration": mime the action without exposing the partner.
-- **Check 2 (tissue discarded, secretions touched):** **"Perform hand hygiene."** Hand hygiene is part of the complete sequence.
+- **Check 2 (tissue discarded, secretions touched):** **"Clean hands before touching anything else."** Hand hygiene is part of the complete sequence.
   - "Immediately touch someone else because the tissue is gone": hands may still be contaminated.
   - "Keep the used tissue to give to the next person": used tissues should not be shared or reused.
 

@@ -4,7 +4,7 @@ For a crowded BHS queue, the BHW proposes source, environment, work-practice and
 
 ## [time-materials] Time and materials
 
-- **Time:** 60 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 5, model 10, practice 25, feedback and retry 10, checks and debrief 10. The Read takes about 5 minutes in the app.
+- **Time:** 60 minutes face-to-face (share of the 600-minute plan): opening 5, model 10, practice 25, feedback and retry 10, checks and debrief 10. The Read takes about 5 minutes in the app.
 - **Materials:** *2.3.2 Layered control map* cards and worksheet, observation sheet; job aid; manila paper.
 
 ## [prepare] Prepare
@@ -44,15 +44,16 @@ Each step is a Read section and its matching slide.
 **Layered control map**, rotating triads, 25 minutes plus feedback.
 
 - **Learner:** completes all four rows: type / proposal / owner or confirming person.
-- **Partner/observer:** one voices the case; one checks each row has an owner and gives one strength and one retry.
+- **Partner:** a co-worker who says "Let's just hand out the masks"; asks "Who confirms?" at each row.
+- **Observer:** checks each row has an owner; gives one strength and one retry.
 - Stop any row that changes ventilation, isolation or care. Fictional BHS only. Alone: review the map with the supervisor.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (masks are available):** **"Check the setting and process too."** Complementary controls are needed.
+- **Check 1 (masks are available):** **"Check the setting and process too."** Masks alone leave the closed window and unclear process; check those too.
   - "Symptoms no longer need reporting to clinical staff": the agreed reporting process still applies.
   - "There is no remaining risk because masks are available": one item does not remove every risk.
-- **Check 2 (ventilation concern):** **"Report it to the responsible person."** This enables appropriate facility review and action.
+- **Check 2 (ventilation concern):** **"Report it and have the responsible person review it."** This enables appropriate facility review and action.
   - "Immediately move everyone to a room that has not been assessed": the new location may be unsuitable.
   - "Declare the room safe without any assessment": the reassurance lacks a basis.
 

@@ -5,7 +5,7 @@ Naitatala ng BHW ang isang tiyak na IPC gap, ulat, responsable, petsa at ebidens
 ## [time-materials] Oras at kagamitan
 
 - **Oras:** 60 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 10, practice 20, feedback at pag-ulit 5, check at debrief 10, pagsasara ng subchapter 10. Mga 5 minuto ang Read sa app.
-- **Kagamitan:** blangkong *2.3.7 IPC improvement card* (worksheet) at talaan ng obserbasyon; job aid para sa lahat; dalawang follow-up slip na nakasulat na: naayos at hindi pa naayos.
+- **Kagamitan:** blangkong *2.3.7 IPC improvement card* (worksheet) at talaan ng obserbasyon; job aid para sa lahat; ang dalawang follow-up slip (naayos, hindi pa naayos) sa participant cards.
 
 ## [prepare] Paghahanda
 
@@ -44,7 +44,7 @@ Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 **IPC improvement card**, umiikot na triad, 20 minuto at feedback.
 
 - **Learner:** pinupunan ang bawat linya ng card, saka tapat na itinatala ang dalawang follow-up slip, may susunod na hakbang kung hindi pa naayos.
-- **Partner:** ang kasamang nagsasabing "lahat ay dumalo".
+- **Partner:** ang kasamang nagsasabing "lahat ay dumalo"; nag-aabot ng mga slip.
 - **Observer:** hinahanap ang pangakong isinulat bilang resulta; isang kalakasan at isang uulitin.
 - Kathang-isip na station lamang. Mag-isa: punan ang card kasama ang supervisor.
 
@@ -55,7 +55,7 @@ Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 - **Check 1 (observation entry):** **"Station A, alas-nuwebe: walang sabon."** Malinaw ang nakita, lugar at oras.
   - "Tamad ang lahat kaya tiyak na mali ang kanilang gawain": bansag ito at hindi tiyak na observation.
   - "Lahat ay mahusay dahil may pirma sa attendance sheet": hindi sapat ang attendance para malaman ang aktuwal na practice.
-- **Check 2 (hindi pa na-refill sa follow-up):** **"Hindi pa naayos; muling ipaalam."** Tapat ang tala at may susunod na aksyon.
+- **Check 2 (hindi pa na-refill sa follow-up):** **"Itala na hindi pa naayos at muling ipaalam."** Tapat ang tala at may susunod na aksyon.
   - "Tapos na ang gawain dahil may nangakong magre-refill": pangako ay hindi ebidensiya ng resulta.
   - "Walang problema dahil may naunang training ang lahat": hindi pinapalitan ng training ang kailangang supply.
 

@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Kumpleto ang tatlong hanay at malinaw ang ipapakumpirma sa health o water staff nang walang paalala. |
-| Kailangan practice | May angkop na pagbabago pero kailangan ng paalala sa pagprotekta ng tubig o contact para sa treatment. |
+| Kailangan pa ng practice | May angkop na pagbabago pero kailangan ng paalala sa pagprotekta ng tubig o contact para sa treatment. |
 | Hindi pa | Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal. |
 
 Aktuwal na nakita/narinig: ____

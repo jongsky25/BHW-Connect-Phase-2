@@ -51,7 +51,7 @@ Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (nakita ang sterilization policy):** **"Kumpirmahin ang tungkulin at training."** Dapat malinaw kung sino ang gagawa at ano ang kailangan.
+- **Check 1 (nakita ang sterilization policy):** **"Kumpirmahin ang tungkulin at training."** Unang hakbang ang pagkakita; kumpirmahin kung sino ang gumagawa ng sterilization at anong training ang kailangan.
   - "Puwede na siyang mag-sterilize kahit walang training": hindi nagbibigay ng awtorisasyon ang pagkakita sa papel.
   - "Kumpleto na agad ang lahat ng IPC training niya": hindi ito katumbas ng practice o observed competence.
 - **Check 2 (magkaibang poster at instruction):** **"Kumpirmahin sa IPC contact."** Nililinaw ang kasalukuyang naaangkop na gabay.

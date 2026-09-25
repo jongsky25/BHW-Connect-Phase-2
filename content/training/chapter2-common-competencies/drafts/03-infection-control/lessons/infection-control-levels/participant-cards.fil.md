@@ -10,7 +10,7 @@ Punan ang apat na hanay: pinagmulan, kapaligiran, gawain at PPE. Isulat ang mung
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang kasamahan sa siksik na pila ng BHS. Simulan sa: "Ipamigay na lang natin ang mask." Habang pinupunan ng learner ang bawat hanay, itanong: "Sino ang magkukumpirma nito?" Puwedeng tumutol nang isang beses kung walang responsable ang hanay. Huwag magpasya sa bentilasyon, isolation o pag-aalaga, at huwag magdagdag ng sintomas o diagnosis.
 
 ## Card ng tagamasid
 

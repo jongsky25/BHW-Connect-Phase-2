@@ -53,7 +53,7 @@ Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 - **Check 1 (walang tissue — saan babahing?):** **"Sa loob ng nakabaluktot na siko."** Natatakpan ang ilong at bibig nang hindi ginagamit ang palad.
   - "Sa palad na ihahawak agad sa mesa": maaaring mailipat ng kamay ang secretions sa gamit.
   - "Direkta sa kapareha upang makita ang demonstration": dapat gayahin lamang ang kilos at hindi ilantad ang kapareha.
-- **Check 2 (naitapon ang tissue, nahawakan ang secretions):** **"Linisin ang kamay."** Bahagi ng kumpletong sequence ang hand hygiene.
+- **Check 2 (naitapon ang tissue, nahawakan ang secretions):** **"Linisin ang kamay bago humawak ng iba."** Bahagi ng kumpletong sequence ang hand hygiene.
   - "Humawak agad sa ibang tao dahil wala na ang tissue": maaaring may kontaminasyon pa sa kamay.
   - "Itago ang ginamit na tissue para ipasa sa susunod": hindi dapat ibahagi o gamitin muli ang ginamit na tissue.
 

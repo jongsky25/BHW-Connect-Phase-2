@@ -65,8 +65,8 @@
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Kailangan ang magkakaugnay na kontrol. 2: Kailangan pa rin ang napagkasunduang pag-uulat. 3: Hindi inaalis ng isang gamit ang lahat ng panganib.",
-        "feedback_en": "1: Complementary controls are needed. 2: The agreed reporting process still applies. 3: One item does not remove every risk."
+        "feedback_fil": "1: Hindi naaayos ng mask ang saradong bintana at malabong proseso; suriin din ang mga ito. 2: Kailangan pa rin ang napagkasunduang pag-uulat. 3: Hindi inaalis ng isang gamit ang lahat ng panganib.",
+        "feedback_en": "1: Masks alone leave the closed window and unclear process; check those too. 2: The agreed reporting process still applies. 3: One item does not remove every risk."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.ipc.ppe-risk"
       ],
       "asset_ids": [],
-      "takeaway_fil": "May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.",
-      "takeaway_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
+      "takeaway_fil": "Staff ang nagtuturo ng waiting area at mask; sa responsable ang concern sa bentilasyon.",
+      "takeaway_en": "Staff set the waiting area and mask; the ventilation concern goes to the responsible person.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.ipc.ppe-risk"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Huwag baguhin mag-isa ang bentilasyon o isolation; hindi sapat ang mask sa lahat ng exposure.",
+      "takeaway_en": "Do not change ventilation or isolation alone; a mask is not enough for every exposure.",
       "check": null
     },
     {
@@ -111,7 +111,7 @@
           },
           {
             "fil": "Ipaalam at ipasuri sa responsable.",
-            "en": "Report it to the responsible person."
+            "en": "Report it and have the responsible person review it."
           },
           {
             "fil": "Sabihing ligtas ang silid kahit walang anumang pagsusuri.",
@@ -131,8 +131,8 @@
         "c2.ipc.ppe-risk"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Gumawa ng mapa ng apat na uri ng kontrol para sa fictional na BHS, may responsable ang bawat isa.",
+      "takeaway_en": "Map the four control types for a fictional BHS, each with an owner.",
       "check": null
     }
   ],

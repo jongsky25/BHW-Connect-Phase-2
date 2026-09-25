@@ -5,7 +5,7 @@ The BHW records one specific IPC gap, the report, an owner, a date and follow-up
 ## [time-materials] Time and materials
 
 - **Time:** 60 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 5, model 10, practice 20, feedback and retry 5, checks and debrief 10, subchapter close 10. The Read takes about 5 minutes in the app.
-- **Materials:** blank *2.3.7 IPC improvement card* (worksheet) and observation sheet; job aid for everyone; two follow-up slips written in advance: resolved and unresolved.
+- **Materials:** blank *2.3.7 IPC improvement card* (worksheet) and observation sheet; job aid for everyone; the two follow-up slips (resolved, unresolved) on the participant cards.
 
 ## [prepare] Prepare
 
@@ -44,7 +44,7 @@ Each step is a Read section and its matching slide.
 **IPC improvement card**, rotating triads, 20 minutes plus feedback.
 
 - **Learner:** completes every card line, then records both follow-up slips honestly, with a next action if unresolved.
-- **Partner:** the colleague who says "everyone attended".
+- **Partner:** the colleague who says "everyone attended"; hands over the slips.
 - **Observer:** checks for promises written as results; gives one strength and one retry.
 - Fictional station only. Alone: complete a card with the supervisor.
 
@@ -55,7 +55,7 @@ Each step is a Read section and its matching slide.
 - **Check 1 (observation entry):** **"Station A, nine o'clock: no soap."** This identifies what was seen, where and when.
   - "Everyone is lazy, so their practice is certainly wrong": this is a label rather than a specific observation.
   - "Everyone is competent because the attendance sheet is signed": attendance cannot establish actual practice.
-- **Check 2 (soap not refilled at follow-up):** **"Unresolved; report it again."** The record is accurate and prompts further action.
+- **Check 2 (soap not refilled at follow-up):** **"Record it as unresolved and report it again."** The record is accurate and prompts further action.
   - "The task is complete because someone promised a refill": a promise is not evidence of completion.
   - "There is no problem because everyone received training": training does not replace the needed supply.
 

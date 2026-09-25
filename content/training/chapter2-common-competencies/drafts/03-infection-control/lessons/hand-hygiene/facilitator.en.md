@@ -44,13 +44,13 @@ Each step is a Read section and its matching slide.
 **Hand-hygiene return demonstration**, triads at stations, 70 minutes plus feedback.
 
 - **Learner:** draws a card, names the method, demonstrates; then does the other card.
-- **Partner:** runs the timer.
+- **Partner:** timer-keeper; holds the method cards and times each procedure.
 - **Observer:** marks every checklist row observed, retry or not observed.
 - If anything is missed, the learner repeats the whole procedure. No running water: practise handrub now, handwashing later with the supervisor.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (visibly dirty hands):** **"Soap and water."** Complete washing and appropriate drying.
+- **Check 1 (visibly dirty hands):** **"Wash with soap and water, then dry."** Complete washing and appropriate drying.
   - "Handrub alone despite the visible dirt": visible dirt calls for soap and water.
   - "A quick rinse with water alone": soap, all-surface rubbing and drying are missing.
 - **Check 2 (handrub applied, hands still wet):** **"Continue rubbing until dry."** Let hands dry while completing rubbing across all surfaces.

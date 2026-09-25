@@ -6,11 +6,11 @@ Sa kathang-isip na bahay ni Mila, magkatabi ang hilaw na manok at lutong pagkain
 
 ## Card ng kalahok
 
-Markahan ang panganib sa kuwento ng bahay. Punan ang pagkain, tubig at sanitasyon na hanay; magdagdag ng contact para sa hindi tiyak.
+Bilang BHW, humingi muna ng pahintulot kay Mila. Saka markahan ang panganib sa kuwento ng bahay, punan ang hanay ng pagkain, tubig at sanitasyon, at magdagdag ng contact para sa hindi tiyak.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Mila, ang residente, sa kathang-isip mong bahay. Hintaying humingi ng pahintulot ang BHW bago pag-usapan ang anuman. Sabihin nang isang beses: "Malinaw naman ang tubig." Puwede mong itanong: "Gaano karaming chlorine ang ilalagay ko?" Ikaw ang pipili kung aling pagbabago ang papayagan mo. Huwag magdagdag ng sakit, sintomas o detalyeng wala sa kuwento.
 
 ## Card ng tagamasid
 

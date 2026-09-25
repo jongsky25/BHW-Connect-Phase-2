@@ -10,8 +10,18 @@ Choose a method for two cards: visibly dirty and not visibly dirty. Demonstrate 
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You are the timer-keeper. Hold the two method cards face down and let the learner draw one. Start the timer when the learner begins and stop it when the hands are dry; say the time aloud. Then repeat with the other card. Do not name the method, coach steps or hurry the learner; the observer gives the feedback.
 
 ## Observer card
 
 Notice the actual words and actions. Give one strength and one next action, then retry. Use the separate observation sheet with your facilitator.
+
+## Method cards
+
+Cut out both cards. The partner holds them face down. The learner draws one, names the method, then demonstrates the complete procedure. Then do the other card.
+
+**Card 1 — Visibly dirty.** You are about to give simulated care. Your hands are visibly dirty. Which method? Name it, then show it.
+
+**Card 2 — Not visibly dirty.** You are about to give simulated care. Your hands are not visibly dirty. Which method? Name it, then show it.
+
+Key for the observer: visibly dirty — soap and water, rinse, single-use towel, towel to close a manual tap. Not visibly dirty — handrub where appropriate, rubbing all surfaces until dry, with no wiping or rinsing.

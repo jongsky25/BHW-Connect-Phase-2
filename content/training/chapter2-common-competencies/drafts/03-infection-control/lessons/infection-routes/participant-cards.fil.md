@@ -10,7 +10,7 @@ Ayusin ang walong exposure card. Para sa bawat isa, sabihin ang posibleng daan a
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Hawak mo ang walong exposure card. Basahin nang malakas ang bawat card, isa-isa, at hintayin ang daan at kontrol na sasabihin ng learner. Pagkatapos ng bawat sagot, itanong: "Ano ang ipinapakita ng card, at ano ang hindi?" Minsan, sumalungat gamit ang karaniwang hula, gaya ng "May TB ang umuubo" o "Ayos na kapag pinunasan ang mesa." Huwag magdagdag ng pangalan ng sakit, sintomas o detalyeng wala sa card.
 
 ## Card ng tagamasid
 

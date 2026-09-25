@@ -4,7 +4,7 @@ The BHW sorts eight fictional exposure cards, names a possible route and one con
 
 ## [time-materials] Time and materials
 
-- **Time:** 120 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): subchapter opener 10, opening 5, model 10, practice 70, feedback 10, checks and debrief 15. The Read takes about 5 minutes in the app.
+- **Time:** 120 minutes face-to-face (share of the 600-minute plan): subchapter opener 10, opening 5, model 10, practice 70, feedback 10, checks and debrief 15. The Read takes about 5 minutes in the app.
 - **Materials:** *2.3.1 Possible exposure cards* (eight per triad), worksheet, observation sheet; job aid; manila paper.
 
 ## [prepare] Prepare
@@ -45,7 +45,7 @@ Each step is a Read section and its matching slide.
 **Transmission card sort**, rotating triads, 70 minutes.
 
 - **Learner:** sorts all eight cards; fills card / route / control or contact.
-- **Partner:** the other voice in the case; may disagree.
+- **Partner:** reads each card aloud; once, pushes back with a guess ("The one coughing has TB").
 - **Observer:** notes actual words and any label; gives one strength and one retry.
 - Staff rate. Fictional details only. Alone: worksheet first; observe later.
 
@@ -54,7 +54,7 @@ Each step is a Read section and its matching slide.
 - **Check 1 (desk, then mouth):** **"Indirect contact."** The possible transfer is through an object and hands.
   - "Mother-to-child transmission only": pregnancy or birth is not involved in this scene.
   - "Proof that the person has tuberculosis": this card cannot establish a diagnosis.
-- **Check 2 (enclosed room, cough):** **"Use the BHS respiratory-control process."** Use the agreed arrangements for space, reporting and protection.
+- **Check 2 (enclosed room, cough):** **"Follow the BHS process for respiratory controls."** Possible inhalation calls for the BHS's agreed arrangements for space, reporting and protection.
   - "Say wiping the desk alone addresses every risk": this does not address possible inhalation.
   - "Immediately name the illness and tell the entire queue": this guesses a diagnosis and discloses information inappropriately.
 

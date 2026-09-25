@@ -44,8 +44,8 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "May mask sa kahon.\nAno pa ang dapat isipin ng BHW?",
+    "display_en": "Masks are in the box.\nWhat else should the BHW consider?",
     "check": {
       "prompt_fil": "May mask na sa kahon. Ano ang dapat isipin ng BHW?",
       "prompt_en": "Masks are available. What should the BHW consider?",
@@ -64,8 +64,8 @@
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "1: Kailangan ang magkakaugnay na kontrol. 2: Kailangan pa rin ang napagkasunduang pag-uulat. 3: Hindi inaalis ng isang gamit ang lahat ng panganib.",
-      "feedback_en": "1: Complementary controls are needed. 2: The agreed reporting process still applies. 3: One item does not remove every risk."
+      "feedback_fil": "1: Hindi naaayos ng mask ang saradong bintana at malabong proseso; suriin din ang mga ito. 2: Kailangan pa rin ang napagkasunduang pag-uulat. 3: Hindi inaalis ng isang gamit ang lahat ng panganib.",
+      "feedback_en": "1: Masks alone leave the closed window and unclear process; check those too. 2: The agreed reporting process still applies. 3: One item does not remove every risk."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -113,8 +113,8 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "May concern sa bentilasyon.\nSino ang dapat magsuri?",
+    "display_en": "A ventilation concern.\nWho should review it?",
     "check": {
       "prompt_fil": "May concern sa bentilasyon. Ano ang tamang susunod na hakbang?",
       "prompt_en": "There is a ventilation concern. What is the appropriate next step?",
@@ -125,7 +125,7 @@
         },
         {
           "fil": "Ipaalam at ipasuri sa responsable.",
-          "en": "Report it to the responsible person."
+          "en": "Report it and have the responsible person review it."
         },
         {
           "fil": "Sabihing ligtas ang silid kahit walang anumang pagsusuri.",

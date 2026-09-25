@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Kumpleto ang card, tapat ang resolved at unresolved na resulta, at may susunod na aksyon nang walang paalala. |
-| Kailangan practice | Malinaw ang gap pero kailangang paalalahanang magtakda ng follow-up o ebidensiya. |
+| Kailangan pa ng practice | Malinaw ang gap pero kailangang paalalahanang magtakda ng follow-up o ebidensiya. |
 | Hindi pa | Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance. |
 
 Aktuwal na nakita/narinig: ____

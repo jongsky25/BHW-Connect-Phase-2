@@ -4,7 +4,7 @@ Para sa siksik na pila sa BHS, nagmumungkahi ang BHW ng kontrol sa pinagmulan, k
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** 60 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 10, practice 25, feedback at pag-ulit 10, check at debrief 10. Mga 5 minuto ang Read sa app.
+- **Oras:** 60 minutong harapan (bahagi ng 600-minutong plano): pambungad 5, model 10, practice 25, feedback at pag-ulit 10, check at debrief 10. Mga 5 minuto ang Read sa app.
 - **Kagamitan:** mga card at worksheet ng *2.3.2 Mapa ng magkakaugnay na kontrol*, talaan ng obserbasyon; job aid; manila paper.
 
 ## [prepare] Paghahanda
@@ -44,12 +44,13 @@ Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 **Mapa ng magkakaugnay na kontrol**, umiikot na triad, 25 minuto at feedback.
 
 - **Learner:** pinupunan ang apat na hanay: uri / mungkahi / responsable o kukumpirma.
-- **Partner/observer:** kausap sa kaso ang isa; tinitingnan ng isa kung may responsable ang bawat hanay, saka isang kalakasan at isang uulitin.
+- **Partner:** kasamahang nagsasabing "Ipamigay na lang ang mask"; nagtatanong: "Sino ang magkukumpirma?"
+- **Observer:** may responsable ba ang bawat hanay; isang kalakasan at isang uulitin.
 - Pigilan ang hanay na nagbabago ng bentilasyon, isolation o pag-aalaga. Kathang-isip na BHS lamang. Mag-isa: ipasuri ang mapa sa supervisor.
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1 (may mask sa kahon):** **"Suriin din ang lugar at proseso."** Kailangan ang magkakaugnay na kontrol.
+- **Check 1 (may mask sa kahon):** **"Suriin din ang lugar at proseso."** Hindi naaayos ng mask ang saradong bintana at malabong proseso; suriin din ang mga ito.
   - "Hindi na kailangang ipaalam ang sintomas sa clinical staff": kailangan pa rin ang napagkasunduang pag-uulat.
   - "Wala nang panganib dahil may mask na magagamit": hindi inaalis ng isang gamit ang lahat ng panganib.
 - **Check 2 (concern sa bentilasyon):** **"Ipaalam at ipasuri sa responsable."** May tamang pagsusuri at pag-aayos ng facility.

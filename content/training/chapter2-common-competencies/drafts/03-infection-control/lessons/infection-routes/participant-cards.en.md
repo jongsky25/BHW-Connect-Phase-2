@@ -10,7 +10,7 @@ Sort eight exposure cards. For each, state a possible route and one control or p
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+You hold the eight exposure cards. Read each card aloud, one at a time, and wait for the learner's route and control. After each answer, ask: "What does the card show, and what does it not show?" Once, push back with a common guess, such as "The one coughing has TB" or "Wiping the desk fixes everything." Do not add illness names, symptoms or details that are not on the cards.
 
 ## Observer card
 

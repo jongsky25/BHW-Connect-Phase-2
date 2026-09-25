@@ -51,7 +51,7 @@ Each step is a Read section and its matching slide.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1 (Nilo finds a sterilization policy):** **"Confirm his role and training."** The responsible person and prerequisites must be clear.
+- **Check 1 (Nilo finds a sterilization policy):** **"Confirm his role and training."** Finding the policy is a first step; confirm who does sterilization and what training it needs.
   - "He may sterilize equipment without training": finding a document does not grant authorization.
   - "All his IPC training is automatically complete": it is not equivalent to practice or observed competence.
 - **Check 2 (poster and instruction conflict):** **"Confirm with the IPC contact."** This clarifies the applicable guidance.

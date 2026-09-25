@@ -43,8 +43,8 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Nakita ni Nilo ang sterilization policy.\nAno ang ibig sabihin nito sa kanya?",
+    "display_en": "Nilo finds a sterilization policy.\nWhat does that mean for him?",
     "check": {
       "prompt_fil": "Nakita ni Nilo ang sterilization policy. Ano ang ibig sabihin nito?",
       "prompt_en": "Nilo finds a sterilization policy. What does that mean?",
@@ -63,8 +63,8 @@
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "1: Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel. 2: Hindi ito katumbas ng practice o observed competence. 3: Dapat malinaw kung sino ang gagawa at ano ang kailangan.",
-      "feedback_en": "1: Finding a document does not grant authorization. 2: It is not equivalent to practice or observed competence. 3: The responsible person and prerequisites must be clear."
+      "feedback_fil": "1: Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel. 2: Hindi ito katumbas ng practice o observed competence. 3: Unang hakbang ang pagkakita; kumpirmahin kung sino ang gumagawa ng sterilization at anong training ang kailangan.",
+      "feedback_en": "1: Finding a document does not grant authorization. 2: It is not equivalent to practice or observed competence. 3: Finding the policy is a first step; confirm who does sterilization and what training it needs."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -110,8 +110,8 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Magkaiba ang lumang poster at bagong instruction.\nAno ang gagawin?",
+    "display_en": "An old poster conflicts with a newer instruction.\nWhat should happen?",
     "check": {
       "prompt_fil": "Magkaiba ang lumang poster at bagong instruction. Ano ang gagawin?",
       "prompt_en": "An old poster conflicts with a newer instruction. What should happen?",

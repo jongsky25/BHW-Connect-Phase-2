@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Links all four controls and identifies what needs review without prompting. |
-| Kailangan practice | Suggests several controls but needs a prompt to assign owners. |
+| Kailangan pa ng practice | Suggests several controls but needs a prompt to assign owners. |
 | Hindi pa | Relies only on a mask or changes isolation arrangements without guidance. |
 
 Evidence observed: ____

@@ -44,8 +44,8 @@
         "c2.ipc.role-training"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Dapat malinaw kung sino ang gagawa at ano ang kailangan.",
-      "takeaway_en": "The responsible person and prerequisites must be clear.",
+      "takeaway_fil": "Unang hakbang ang pagkakita; kumpirmahin kung sino ang gumagawa ng sterilization at anong training ang kailangan.",
+      "takeaway_en": "Finding the policy is a first step; confirm who does sterilization and what training it needs.",
       "check": {
         "prompt_fil": "Nakita ni Nilo ang sterilization policy. Ano ang ibig sabihin nito?",
         "prompt_en": "Nilo finds a sterilization policy. What does that mean?",
@@ -64,8 +64,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel. 2: Hindi ito katumbas ng practice o observed competence. 3: Dapat malinaw kung sino ang gagawa at ano ang kailangan.",
-        "feedback_en": "1: Finding a document does not grant authorization. 2: It is not equivalent to practice or observed competence. 3: The responsible person and prerequisites must be clear."
+        "feedback_fil": "1: Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel. 2: Hindi ito katumbas ng practice o observed competence. 3: Unang hakbang ang pagkakita; kumpirmahin kung sino ang gumagawa ng sterilization at anong training ang kailangan.",
+        "feedback_en": "1: Finding a document does not grant authorization. 2: It is not equivalent to practice or observed competence. 3: Finding the policy is a first step; confirm who does sterilization and what training it needs."
       }
     },
     {
@@ -75,8 +75,8 @@
         "c2.ipc.role-training"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Naipapakita ang lokasyon, bersiyon, contact at training gaps nang walang imbentong training o awtorisasyon.",
-      "takeaway_en": "Records location, version, contact and training gaps without inventing training or authorization.",
+      "takeaway_fil": "Itala ang nakita at nakumpirma; huwag markahang tapos ang training na hindi pa nagagawa.",
+      "takeaway_en": "Record what is found and confirmed; never mark unfinished training as done.",
       "check": null
     },
     {
@@ -86,8 +86,8 @@
         "c2.ipc.exposure-report"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi awtorisasyon ang pagbabasa o attendance; iulat agad ang exposure.",
+      "takeaway_en": "Reading or attendance is not authorization; report exposures promptly.",
       "check": null
     },
     {
@@ -128,8 +128,8 @@
         "c2.ipc.exposure-report"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Ipasuri sa supervisor ang checklist bago gamitin sa BHS.",
+      "takeaway_en": "Have the supervisor review the checklist before using it at the BHS.",
       "check": null
     }
   ],

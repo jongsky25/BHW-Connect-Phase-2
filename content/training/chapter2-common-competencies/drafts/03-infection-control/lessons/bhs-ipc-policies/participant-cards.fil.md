@@ -10,7 +10,7 @@ Punan ang sample policy at training checklist. Tukuyin ang lumang gabay, kulang 
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang nurse o IPC contact na tatanungin ni Nilo. Sagutin lamang ang itatanong ng learner: aling bersiyon ang ginagamit, sino ang gumagawa ng sterilization (specialist staff), at ang exposure contact at proseso ng pag-uulat (ayon sa job aid, o "kumpirmahin sa midwife / RHU"). Kung markahan ng learner na tapos ang training dahil nabasa lang, itanong: "Anong ebidensiya na kaya mo ito?" Huwag magbigay ng awtorisasyon sa anumang gawain o ng clinical na instruction.
 
 ## Card ng tagamasid
 
