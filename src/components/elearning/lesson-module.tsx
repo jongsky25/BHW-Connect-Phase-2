@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { sanitizeSvgMarkup } from "@/lib/elearning/svg-allowlist";
 import {
@@ -273,9 +273,13 @@ export function LessonVisual({
 }) {
   const caption = locale === "en" ? visual.caption_en : visual.caption_fil;
   const altText = locale === "en" ? visual.alt_text_en : visual.alt_text_fil;
-  const sanitized = visual.svg_markup
-    ? sanitizeSvgMarkup(visual.svg_markup)
-    : null;
+  const sanitized = useMemo(
+    () => (visual.svg_markup ? sanitizeSvgMarkup(visual.svg_markup) : null),
+    [visual.svg_markup],
+  );
+  // React 19 re-assigns innerHTML whenever this object's identity changes,
+  // which would wipe the data-revealed attributes the effect below sets.
+  const innerHtml = useMemo(() => (sanitized ? { __html: sanitized } : undefined), [sanitized]);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -307,7 +311,7 @@ export function LessonVisual({
           role="img"
           aria-label={altText}
           className="text-ink"
-          dangerouslySetInnerHTML={{ __html: sanitized }}
+          dangerouslySetInnerHTML={innerHtml}
         />
       ) : visual.image_url ? (
         // eslint-disable-next-line @next/next/no-img-element
