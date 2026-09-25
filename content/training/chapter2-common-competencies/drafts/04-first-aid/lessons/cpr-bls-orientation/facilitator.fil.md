@@ -1,57 +1,74 @@
 ## [purpose] Layunin
 
-40 minuto: pambungad 3; modelo 3; supervised case practice 28; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.
+Sa manikin, habang nanonood ang qualified trainer, hihingi ng tulong ang BHW, hihingi ng AED at susundin ang kasalukuyang adult sequence ng trainer.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 40 minutong harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 3, demo ng trainer 7, practice 22, feedback 5, checks 3. Mga 3 minuto ang pagbasa sa app.
+- **Kagamitan:** participant cards, worksheet at observation sheet ng 2.4.7; job aid na *Paunang lunas at tamang referral*; adult manikin; AED trainer kung mayroon.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Tiyaking may qualified trainer. Kung wala, ipagpaliban ang manikin; huwag siyang palitan.
+- Kumpirmahin ang emergency contact at pinakamalapit na AED, kung mayroon. Isulat sa job aid.
+- **Hangganan:** ang trainer ang nagtuturo ng sequence. Walang compression sa totoong kapareha. Huwag ituro ang lumang CAB talata o pulse check. Hindi rito sinasanay ang pathway ng bata at pagkalunod.
 
 ## [opening] Pambungad
 
-Ang training manikin ay adult na hindi tumutugon at hindi normal ang paghinga. May AED trainer sa tabi.
+Ituro ang manikin: *"Hindi tumutugon at hindi normal ang paghinga ng adult na ito. Ikaw ang unang dumating. Ano ang unang dalawang sasabihin mo?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Sino pa ang narito, at ano ang iuutos mo?"*
+2. **"Gawin at sabihin."** Itanong: *"Sino ang magpapakita ng kasalukuyang sequence?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapares bago ibunyag.
+4. **"Halimbawang sagot."** Ipapakita ng trainer ang tugon ni Lea. Itanong: *"Ano ang ginawa ni Lea bago hawakan ang manikin?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Bakit sa manikin lamang?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Nasaan ang AED na pinakamalapit sa BHS?"*
 
-Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Kapain muna ang pulso."** Marami ang natuto nito. Itanong: *"Saan nagsisimula ang sequence ng trainer?"*
+- **"Tumawag ng tulong at humingi ng AED."** Tama. Itanong kung anong lokasyon ang ibibigay.
+- **"Wala kaming AED."** Tanggapin: *"Tatawag pa rin tayo ng tulong. Ang iba, ikukumpirma sa RHU."*
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kapag nabasa ko ang hakbang, kaya ko nang mag-CPR."** May CAB talata sa lumang manual, kaya parang sapat na. Itanong: *"Nasa libro ang talata. Ano ang sinasabi ng aralin na hindi ito?"* Hayaang sumagot ang grupo: hindi ito sertipikasyon.
 
-Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**CPR training station**, tatluhan sa bawat manikin kasama ang trainer. Tatawag ng tulong ang kalahok, sasabihin ang lokasyon, hihingi ng AED at susundin ang sequence ng trainer. Ang kapareha ang saksing inutusang humingi ng tulong. Pupunan ng tagamasid ang worksheet. Dalawang round, isang lakas at isang retry action, saka magpalit. Ang trainer ang magra-rate. Kung walang trainer o manikin: tabletop ng tawag at AED lamang; walang rating.
 
-1: Maaaring makapinsala ang shortcut: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. / 2: Unahin ang kaligtasan at agarang tulong. / 3: Maaaring maantala ang kinakailangang assessment.
+## [answer-key] Susi sa self-check
 
-1: Hindi batayan ang kuwento para sa sariling diagnosis. / 2: Ang shortcut ay hindi ligtas: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. / 3: Obserbahan ang gawa at ang tamang referral.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Tumawag at humingi ng AED."** Unahin ang kaligtasan at agarang tulong.
+  - "Gawin muna ang shortcut…": makapipinsala (pulso lamang, compression sa totoong tao, CAB talata bilang sertipikasyon).
+  - "Maghintay muna…": maaantala ang assessment.
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Magsanay lamang sa manikin."** Obserbahan ang gawa at referral.
+  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.
+Ang trainer ang magra-rate: Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.
 
-Kaya na: Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Nagawa nang walang paalala.
+- **Kaya na:** Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Tingnan: humingi ba ng tulong at AED bago humawak sa manikin? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** isang retry action, hal. *"Sabihin ang lokasyon."* Obserbahan muli ngayon.
+- **Hindi pa:** ipapakita muli ng trainer ang pagtawag; ulitin ito, saka ang buong sequence sa susunod na sesyon ng trainer. Hindi staff rating ang peer feedback.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 42; Facilitator Guide PDF pp. 38–40; presentation PDF pp. 89–92.
+- Mungkahing hati ng authoring ang 40 minuto mula sa 8 oras ng F38.
+- Inatesta ng program owner ang clinical sign-off, 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

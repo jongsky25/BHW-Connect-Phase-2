@@ -1,57 +1,74 @@
 ## [purpose] Purpose
 
-40 minutes: opening 3; model 3; supervised case practice 28; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
+On a manikin, with a qualified trainer watching, the BHW calls help, asks for the AED and follows the trainer's current adult sequence.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 40 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 3, trainer demonstration 7, practice 22, feedback 5, checks 3. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.7 participant cards, worksheet, observation sheet; *First aid and referral* job aid; adult manikin; AED trainer if available.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm the qualified trainer. No trainer: postpone the manikin part; do not substitute.
+- Confirm the emergency contact and the nearest AED, if any. Write them on the job aid.
+- **Scope:** the trainer teaches the sequence. No compressions on a live partner. Do not teach the old CAB paragraph or a pulse check. Child and drowning pathways are not practised here.
 
 ## [opening] Opening
 
-A training manikin represents an adult who is unresponsive and not breathing normally. An AED trainer is nearby.
+Point to the manikin: *"This adult does not respond and is not breathing normally. You are first here. What are the first two things you say?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step matches the slide with the same heading.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"Who else is here, and what job can you give them?"*
+2. **"What to do and say."** Ask: *"Who shows you the current sequence?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** The trainer demonstrates Lea's response. Ask: *"What did Lea do before touching the manikin?"*
+5. **"Scope and support."** Ask: *"Why only the manikin?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"Where is the AED nearest your BHS?"*
 
-This is the safe response in the case. Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Check the pulse first."** Many learned this. Ask: *"What does the trainer's sequence start with?"*
+- **"Call help and ask for the AED."** Confirm. Ask what location they give.
+- **"We have no AED."** Accept it: *"We still call help. The rest, we confirm with the RHU."*
 
-Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"If I read the steps, I can do CPR."** The old manual printed a CAB paragraph, so it felt complete. Ask: *"The paragraph was in the book. What does the lesson say it is not?"* Let the group answer: not certification.
 
-At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**CPR training station**, triads at each manikin with the trainer. The learner calls help with the location, asks for the AED and follows the trainer's sequence. The partner is the bystander sent for help. The observer fills the worksheet rows. Two rounds, one strength and one retry action, rotate. The trainer rates. No trainer or manikin: tabletop the call and AED request only; leave unrated.
 
-1: The shortcut can cause harm: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. / 2: Prioritize safety and timely help. / 3: Necessary assessment may be delayed.
+## [answer-key] Self-check answer key
 
-1: The story is not grounds for an independent diagnosis. / 2: The shortcut is unsafe: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. / 3: Observe the task and appropriate referral.
+- **Check 1: "What comes first?"** Correct: **"Call and request an AED."** Safety and timely help come first.
+  - "Use the shortcut…": can cause harm (pulse-only gate, compressions on a live person, CAB paragraph as certification).
+  - "Wait without notifying…": assessment may be delayed.
+- **Check 2: "What should the practice show?"** Correct: **"Practise only on a manikin."** Observe the task and referral.
+  - "Diagnose from the story…": the story is not grounds for diagnosis.
+  - "Repeat the shortcut…": unsafe, as in Check 1.
 
-## [observe] Observe
+## [observe] What to observe
 
-At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
+The trainer rates: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
 
-Ready: Completes the task without prompting: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
+- **Kaya na:** Completes the task without prompting: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.
+- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
+- **Hindi pa:** Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for: help and AED requested before hands touch the manikin. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** one retry action, e.g. *"Say the location."* Re-observe now.
+- **Hindi pa:** the trainer re-models the call; retry it alone, then the full sequence at the next trainer session. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 42; Facilitator Guide PDF pp. 38–40; presentation PDF pp. 89–92.
+- 40 minutes is an authoring share of F38's 8 hours.
+- Program owner attested clinical sign-off, 25 Sep 2026; reviewers not named. Local protocol overrides.

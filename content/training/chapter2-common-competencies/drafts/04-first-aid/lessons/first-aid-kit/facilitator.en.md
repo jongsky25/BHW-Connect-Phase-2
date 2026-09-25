@@ -1,57 +1,75 @@
 ## [purpose] Purpose
 
-60 minutes: opening 3; model 3; supervised case practice 48; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Complete every row of a simulated local kit inventory and name a replenishment owner.
+The BHW checks a simulated kit against the local list, completes every row, sets aside expired or damaged items unused, and names who replaces them.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 60 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 5; model 10; practice 30; feedback 10; checks 5. The Read takes about 3 minutes in the app.
+- **Materials:** the current local kit list; one mock kit per triad (old inventory sheet, expired item, unsealed packet); 2.4.17 participant cards, kit worksheet and observation sheet; the job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Get the current kit list from the midwife or RHU. Confirm who replaces items and which need an authorized person.
+- **Scope:** no real medicines. Do not teach use of any kit medicine or device, or the old manual's drug list. Otherwise: *"Confirm with the midwife, RHU or local protocol."*
 
 ## [opening] Opening
 
-The BHS kit has an old inventory sheet, an expired item and an unsealed packet. The local approved list is available.
+Hold up the unsealed packet and read the case. Ask: *"Does having an item mean you may use it?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each Read heading is also its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation".** Ask: *"What three problems do you see?"*
+2. **"What to do and say".** Ask: *"Which column catches the unsealed packet?"*
+3. **"Choose the first response".** Self-check 1 — pairs answer first.
+4. **"Worked example".** Model one row with the expired item. Ask: *"Whom did Lea tell?"*
+5. **"Scope and support".** Ask: *"Who may use what here?"*
+6. **"Apply it to the situation".** Self-check 2 — pairs answer first.
+7. **"On Monday, try this".** Each names their kit's replacement owner, then practise.
 
-This is the safe response in the case. Compare the kit with the current local list. Record quantity, package integrity, expiry, storage and replenishment owner. Escalate missing or damaged items without using them. Separate availability from authorization to use medicines or devices. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Just use the old sheet, it is filled in."** Ask: *"Which list is current?"*
+- **"The open packet is fine."** Record the condition and escalate; do not use it.
+- **"Throw the expired item away."** The lesson says: set it aside and report it to the owner.
 
-Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"If it is in the kit, a BHW may give it."** Old lists put medicines in kits, so possession felt like permission. The lesson separates availability from authorization. Correct the case, not the person: *"The old sheet listed it. Who decides who uses it?"*
 
-Complete every row of a simulated local kit inventory and name a replenishment owner. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Kit inspection.** Triads, one kit per triad; three 10-minute rounds, rotating. Learner: fills every row and names a replacement owner. Partner: a co-worker who suggests using the old sheet or the open packet. Observer: checks for blank rows; one strength and one retry action. Staff review each sheet with the learner. No kit: use empty labelled boxes; inspect the real kit later with the supervisor.
 
-1: Prioritize safety and timely help. / 2: Necessary assessment may be delayed. / 3: The shortcut can cause harm: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.
+## [answer-key] Self-check answer key
 
-1: The shortcut is unsafe: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it. / 2: Observe the task and appropriate referral. / 3: The story is not grounds for an independent diagnosis.
+- **Check 1: "What comes first?"** Correct: **"Compare with the local list."** It prioritizes safety and timely help.
+  - "Wait without notifying the responsible staff": assessment may be delayed.
+  - "Use the shortcut before confirming the facts": can cause harm (old drug list as prescription, expired stock, assuming authority).
+- **Check 2: "What should the practice show?"** Correct: **"Record expired stock."** That is what you observe.
+  - "Repeat the shortcut…": the shortcut is unsafe.
+  - "Diagnose from the story…": the story is not grounds for a diagnosis.
 
-## [observe] Observe
+## [observe] What to observe
 
-Complete every row of a simulated local kit inventory and name a replenishment owner.
+Watch for: Complete every row of a simulated local kit inventory and name a replenishment owner.
 
-Ready: Completes the task without prompting: Complete every row of a simulated local kit inventory and name a replenishment owner.
+- **Kaya na:** Completes the task without prompting: Complete every row of a simulated local kit inventory and name a replenishment owner.
+- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
+- **Hindi pa:** Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for no blank cells and a named person. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** point to the blank row; the learner completes it. Re-observe this session with a second kit.
+- **Hindi pa:** re-model one row, then retry three with a Kaya na partner. Re-observe in a later round.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 48; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 69.
+- F38 gives one hour to the kit; the 60 minutes follows it.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

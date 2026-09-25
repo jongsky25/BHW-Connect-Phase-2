@@ -1,57 +1,76 @@
 ## [purpose] Purpose
 
-40 minutes: opening 3; model 3; supervised case practice 28; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
+On adult and infant manikins, the BHW tells effective cough from severe obstruction, calls for help, and shows the trainer-approved response for the right age.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 40 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 3; trainer demonstration 8; manikin practice 20; feedback 5; checks 4. The Read takes about 3 minutes in the app.
+- **Materials:** adult and infant training manikins; AED trainer if available; cleaning supplies the trainer names; 2.4.15 cards, worksheet and observation sheet; the job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Confirm a qualified trainer will attend. If not, postpone; do not substitute.
+- **Scope:** the trainer demonstrates the current sequence; do not teach it from the old manual. Never practise thrusts on a live person. Otherwise: *"Confirm with the trainer or local protocol."*
 
 ## [opening] Opening
 
-At lunch, an adult cannot speak or cough effectively. A nearby infant case card shows a different age pathway.
+Read the case: at lunch, an adult cannot speak or cough effectively. Hold up the infant case card. Ask: *"Can the person cough or speak? What changes for the baby?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each Read heading is also its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation".** Ask: *"What tells you this is serious?"*
+2. **"What to do and say".** Ask: *"What comes before any technique?"*
+3. **"Choose the first response".** Self-check 1 — pairs answer first.
+4. **"Worked example".** The trainer demonstrates both pathways on the manikins. Ask: *"Which manikin fits which card?"*
+5. **"Scope and support".** Ask: *"Why never on a partner?"*
+6. **"Apply it to the situation".** Self-check 2 — pairs answer first.
+7. **"On Monday, try this".** Each names their emergency contact, then goes to a manikin.
 
-This is the safe response in the case. Call for help and follow current age-specific choking training. Distinguish mild cough from severe obstruction. Practise the trainer-approved adult and infant pathways only on appropriate manikins. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Do the Heimlich right away."** Respect the urge. Ask: *"Can the person cough? Who did you call?"*
+- **"Sweep the mouth with a finger."** The lesson says no blind finger sweeps.
+- **"Let me try on my partner."** Manikins only, always.
+- **"Call for help, check the age."** Praise it.
 
-Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"One choking technique works for everyone."** Older manuals taught one generic method. The lesson says adult abdominal thrusts are not for infants. Correct the case, not the person: *"Why is there an infant card? What changes?"*
 
-With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Choking skills station.** Small groups at each manikin; the trainer rates. In two rounds, each learner decides cough or severe obstruction from the card, calls for help with the location, and shows the trainer-approved response on the correct manikin. The observer fills the worksheet; retry what was missed. No trainer or manikins: run only the call as a tabletop, leave the indicator unrated, schedule supervised practice.
 
-1: Necessary assessment may be delayed. / 2: The shortcut can cause harm: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner. / 3: Prioritize safety and timely help.
+## [answer-key] Self-check answer key
 
-1: Observe the task and appropriate referral. / 2: The story is not grounds for an independent diagnosis. / 3: The shortcut is unsafe: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.
+- **Check 1: "What comes first?"** Correct: **"Call for age-specific help."** It prioritizes safety and timely help.
+  - "Wait without notifying the responsible staff": assessment may be delayed.
+  - "Use the shortcut before confirming the facts": can cause harm (adult thrusts on an infant, finger sweeps).
+- **Check 2: "What should the practice show?"** Correct: **"Infant manikin, not adult maneuver."** That is what you observe.
+  - "Diagnose from the story…": the story is not grounds for a diagnosis.
+  - "Repeat the shortcut…": the shortcut is unsafe.
 
-## [observe] Observe
+## [observe] What to observe
 
-With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
+The trainer watches for: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
 
-Ready: Completes the task without prompting: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
+- **Kaya na:** Completes the task without prompting: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.
+- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
+- **Hindi pa:** Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for the call before any technique and the manikin switch. A correct self-check is not evidence of the skill; this is not a certificate.
 
-Not yet: Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** the trainer names the missed action; retry this session.
+- **Hindi pa:** the trainer re-models one age pathway; retry it, then the other. Re-observe at the next supervised session.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 47; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 68.
+- The 40 minutes is drawn from F38's 8 hours, which do not time each case.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

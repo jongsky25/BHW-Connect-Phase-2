@@ -1,57 +1,74 @@
 ## [purpose] Layunin
 
-20 minuto: pambungad 3; modelo 3; supervised case practice 8; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.
+Ilalayo ng BHW ang iba sa simulated exposure at tatawag sa kumpirmadong poison-advice route, gamit ang kathang-isip na label.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 20 minutong harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 2, modelo 3, practice 10, feedback 3, checks 2. Mga 3 minuto ang pagbasa sa app.
+- **Kagamitan:** participant cards, worksheet at observation sheet ng 2.4.9; job aid na *Paunang lunas at tamang referral*; card ng kathang-isip na label ng produkto. Walang totoong kemikal o lalagyan.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa RHU ang poison-advice route at emergency contact. Isulat sa job aid.
+- Gumawa ng card ng kathang-isip na label.
+- **Hangganan:** huwag ituro ang pagpapasuka, rutinang pagpapainom nang marami, panlunas sa bahay, o nakatakdang ligtas na distansya sa spill. Ang adviser ang magpapasya sa lunas.
 
 ## [opening] Pambungad
 
-Maaaring nakalunok ng panlinis ang isang bata. Nasa tabi ang lalagyan ngunit may matapang na amoy ng kemikal.
+Itaas ang label card: *"Maaaring nakalunok ng panlinis na ito ang bata. Matapang ang amoy. Sumigaw ang kapitbahay, 'Pasukahin mo!' Ano ang una mong gagawin?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Ano ang nagsasabing maaaring delikado ang lugar mismo?"*
+2. **"Gawin at sabihin."** Isulat ang limang ibibigay sa tawag: label, oras, paraan ng exposure, sintomas, edad. Itanong: *"Alin ang madalas makalimutan ng pamilya?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapares bago ibunyag.
+4. **"Halimbawang sagot."** Ipakita ang tawag ni Lea gamit ang label card. Itanong: *"Sino ang magpapasya sa susunod na gagawin?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Alin dito ang nakita na ninyong ginagawa ng kapitbahay?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Nakasulat na ba ang poison-advice contact ninyo?"*
 
-Ganito ang ligtas na tugon sa kaso. Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Ibigay ang label, oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Pasukahin ang bata."** Gusto lang tumulong. Ituro ang scope slide: huwag pasukahin.
+- **"Painumin ng maraming tubig o gatas."** Mabuti ang intensyon. Sabi ng aralin, walang rutinang pagpapainom nang marami; ang adviser ang magpapasya.
+- **"Tumawag at basahin ang label."** Tama. Itanong: *"Ano pa ang kailangan nila bukod sa pangalan ng produkto?"*
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kailangang may ibigay agad para mailabas ang lason."** Itinuro ito ng lumang manual. Sabi ng aralin: lumayo, tumawag at sundin ang adviser. Itanong: *"Sa aralin, sino ang magsasabi kay Lea kung may ibibigay?"*
 
-Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Poisoning call rehearsal** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Markahan ang lugar ng "spill." Ilalayo ng kalahok ang iba, saka tatawag sa kumpirmadong contact (ang tagamasid ang adviser) at ibibigay ang limang impormasyon. Ang kapareha ang kamag-anak na nagpipilit magpasuka o magpainom. Pupunan ng tagamasid ang worksheet (exposure, label, payo, kumpirmadong contact, oras at handover). Dalawang round, isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas; obserbahan pagkatapos.
 
-1: Maaaring maantala ang kinakailangang assessment. / 2: Maaaring makapinsala ang shortcut: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill. / 3: Unahin ang kaligtasan at agarang tulong.
+## [answer-key] Susi sa self-check
 
-1: Obserbahan ang gawa at ang tamang referral. / 2: Hindi batayan ang kuwento para sa sariling diagnosis. / 3: Ang shortcut ay hindi ligtas: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Lumayo at tumawag ng payo."** Unahin ang kaligtasan at agarang tulong.
+  - "Maghintay muna…": maaantala ang assessment.
+  - "Gawin muna ang shortcut…": makapipinsala (pagpapasuka, rutinang pagpapainom, inimbentong panlunas, nakatakdang distansya sa spill).
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iulat ang label at oras."** Obserbahan ang gawa at referral.
+  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.
+Tingnan kung: Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.
 
-Kaya na: Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure. Nagawa nang walang paalala.
+- **Kaya na:** Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Tingnan: kumpleto ba ang limang impormasyon, at walang naiwan sa spill? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** gawing retry action ang nakalimutan, hal. *"Sabihin ang oras."* Obserbahan muli ngayon.
+- **Hindi pa:** ipakita muli ang paglalayo at tawag; ulitin sa mahinahong kapareha, saka sa mapilit, sa susunod na round. Hindi staff rating ang peer feedback.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 43; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- Mungkahing hati ng authoring ang 20 minuto mula sa 8 oras ng F38.
+- Inatesta ng program owner ang clinical sign-off, 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

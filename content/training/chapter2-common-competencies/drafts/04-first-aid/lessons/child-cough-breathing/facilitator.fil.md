@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-25 minuto: pambungad 3; modelo 3; supervised case practice 13; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.
+Sa batang hirap huminga, inilalarawan ng BHW ang paghinga, itinatanong ang danger signs at ginagamit ang kumpirmadong daan sa agarang pagsusuri, kahit gustong maghintay ng pamilya.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **25 minuto** harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 3, modelo 4, pagsasanay 12, feedback 3, self-check 3. Mga 5 minuto ang Read sa app.
+- Participant cards, worksheet at talaan ng obserbasyon ng 2.4.3; job aid na may kumpirmadong contact at referral facility.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at ang bahaging *Tumugon sa ubo at hirap sa paghinga* sa job aid.
+- Kumpirmahin sa midwife o RHU kung sino ang agarang susuri sa paghinga ng bata at paano sila maaabot.
+- Saklaw: naglalarawan at nagre-refer ang BHW. Huwag ituro ang pagbilang ng hinga, cut-off ng paghinga o temperatura, diagnosis o gamot; ang sanay na assessor ang gagamit ng kasalukuyang chart ayon sa edad.
 
 ## [opening] Pambungad
 
-Umuubo at tila hirap huminga si Aya, apat na taong gulang. Nagtanong ang pamilya kung puwedeng bukas na magpatingin.
+*"Umuubo si Aya, apat na taon, at tila hirap huminga. Tanong ng pamilya, 'Puwede bang bukas na?' Ano ang isasagot mo?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon (Read at unang slide).** *"Paano mo ilalarawan ang paghinga ni Aya sa simpleng salita?"*
+2. **Gawin at sabihin (katapat na slide).** *"Sino ang huhusga sa paghinga — ikaw, o ang sanay na assessor?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** Sabihin sa pamilya: *"Hirap na hirap siyang huminga. Hindi ko maipapangakong makapaghihintay ito. Dalhin na natin siya; sasabihin ko ang nakita natin."* *"May binanggit ba akong sakit o numero?"*
+5. **Saklaw at paghingi ng tulong.** *"May numero ng paghinga sa lumang training. Bakit hindi ito gagamitin nang mag-isa?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
+7. **Sa Lunes, gawin ito.** *"Aling daan ang gagamitin mo para sa batang tulad ni Aya?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Ganito ang ligtas na tugon sa kaso. Obserbahan ang hirap sa paghinga at itanong ang danger signs. Iugnay agad sa klinikal na pagsusuri. Ang sanay na assessor ang gagamit ng kasalukuyang chart ayon sa edad; iulat ang nakita. Iniiwasan ni Lea ang shortcut.
+- **"Bibilangin ko ang hinga, saka magpapasya."** *"Ang sanay na assessor ang gagamit ng chart ayon sa edad. Ano ang mailalarawan mo ngayon?"*
+- **"Baka pulmonya iyan."** *"Ang assessor ang magpapasya. Ano ang nakita mo?"*
+- **"Puwede na bukas sa health center."** *"Maipapangako ba natin iyan? Ano ang sabi ng aralin?"*
+- **"Aalis na kami, at iuulat ko ang paghinga."** Kumpirmahin; ipasabi ang eksaktong salita.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.
+**"Kapag alam ko ang bilang ng hinga, ako na ang magpapasya kung makapaghihintay."** Nagturo ng takdang numero ang lumang training kaya parang maingat ito, pero maaaring mali ang gamit nito ayon sa edad. Itama ang kaso: *"Sino ang may kasalukuyang chart? Ano ang bahagi mo?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+Breathing case station (*Mga station sa batang may sakit*). Tatluhan: learner bilang BHW, partner bilang kapamilyang gustong maghintay, observer. Dalawang maikling round, may isang lakas at isang retry action sa pagitan, saka magpalit. Itatala ng observer ang paglalarawan sa paghinga, tanong sa danger signs at daang ginamit. Kathang-isip lamang. Kung mag-isa: sagutan ang worksheet; magpaobserba mamaya.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Maaaring maantala ang kinakailangang assessment. / 2: Maaaring makapinsala ang shortcut: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga. / 3: Unahin ang kaligtasan at agarang tulong.
+1. **"Ano ang unang tugon?"** **"Ipasuri agad ang paghinga."** — kaligtasan at agarang tulong. "Maghintay muna…": naaantala ang assessment. "Gawin muna ang shortcut…": nakapipinsala ang pag-asa sa lumang bilang ng temperatura o paghinga, o ang pangakong makapaghihintay.
+2. **"Ano ang dapat ipakita sa practice?"** **"Iulat ang hirap sa paghinga."** — ang gawa at tamang referral. "Magbigay ng diagnosis…": hindi batayan ang kuwento. "Ulitin ang shortcut…": hindi ligtas.
 
-1: Obserbahan ang gawa at ang tamang referral. / 2: Hindi batayan ang kuwento para sa sariling diagnosis. / 3: Ang shortcut ay hindi ligtas: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.
 
-Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.
+- **Kaya na:** Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.
 
-Kaya na: Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Nagawa nang walang paalala.
+Pakinggan kung paano sinasagot ang "puwede bang bukas?" nang walang pangako. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.
+- **Kailangan pa:** ulitin lamang ang hiling ng pamilyang maghintay; subukan sa bagong bata.
+- **Hindi pa:** sanayin mula sa job aid ang isang simpleng pangungusap tungkol sa paghinga; ulitin kasama ang partner na Kaya na.
+- Obserbahang muli ngayon o sa susunod na sesyon, bagong kaso. Practice ang peer feedback, hindi rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 39; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 77–78.
+- Walong oras ang 2.4 sa F38; mungkahi ng authoring ang 25 minutong ito.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Ang lokal na protocol ang masusunod.

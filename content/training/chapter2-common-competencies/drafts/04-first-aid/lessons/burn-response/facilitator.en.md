@@ -1,57 +1,75 @@
 ## [purpose] Purpose
 
-20 minutes: opening 3; model 3; supervised case practice 8; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
+In a dry tabletop burn case, the BHW states cooling, leaves stuck clothing in place, declines ice and names why assessment is needed.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 20 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2; model 4; practice 9; feedback 3; checks 2. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.14 participant cards, worksheet and observation sheet per triad; the *First aid and referral* job aid.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and both checks.
+- Confirm with the midwife or RHU which burns to refer, where, and the current cooling guidance. Write the contact on the job aid.
+- **Scope:** dry station, no water or ice. Do not teach cooling times, burn grading, creams or home remedies. Otherwise: *"Confirm with the midwife, RHU or local protocol."*
 
 ## [opening] Opening
 
-A cook spills hot liquid on a forearm. A sleeve is stuck to part of the skin and someone offers ice.
+Read the case: hot liquid spilled on a cook's forearm; a sleeve is stuck and someone offers ice. Ask: *"What do you leave in place?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each Read heading is also its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation".** Ask: *"What could make this worse?"*
+2. **"What to do and say".** Ask: *"What cools it, and what stays on?"*
+3. **"Choose the first response".** Self-check 1 — pairs answer first.
+4. **"Worked example".** Model Lea's words; a volunteer offers ice. Ask: *"How did Lea decline?"*
+5. **"Scope and support".** Ask: *"Which of these is common at home here?"*
+6. **"Apply it to the situation".** Self-check 2 — pairs answer first.
+7. **"On Monday, try this".** Each names who assesses burns locally, then practise.
 
-This is the safe response in the case. Move away from the heat source safely. Cool the burn with cool running water according to current guidance, protect from contamination and seek assessment for concerning extent or location. Leave stuck clothing in place. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Use ice, it is colder."** Thank them for wanting to cool it. Ask: *"What does the lesson say about ice?"*
+- **"Pull off the sleeve to see."** Accept the wish to look; stuck clothing stays in place.
+- **"It is only red, treat it at home."** Ask: *"Who decides that?"* Not every red burn is safe for home care.
 
-Uses the shortcut or fails to activate help: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"Ice is the best way to cool a burn."** It seems logical and ice is at hand. The lesson lists ice as a harmful shortcut. Correct the case, not the person: *"Someone in the case offered ice too. What does Lea use?"*
 
-In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Burn scenario station, dry.** Triads, three 3-minute rounds; everyone is learner once. Partner: the bystander offering ice and urging removal of the sleeve. Observer: fills the worksheet; one strength and one retry action. Fictional details only. Low resource or alone: talk the case through, complete the worksheet, arrange staff observation later.
 
-1: Prioritize safety and timely help. / 2: Necessary assessment may be delayed. / 3: The shortcut can cause harm: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment.
+## [answer-key] Self-check answer key
 
-1: The shortcut is unsafe: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment. / 2: Observe the task and appropriate referral. / 3: The story is not grounds for an independent diagnosis.
+- **Check 1: "What comes first?"** Correct: **"Cool with running water."** It prioritizes safety and timely help.
+  - "Wait without notifying the responsible staff": assessment may be delayed.
+  - "Use the shortcut before confirming the facts": can cause harm (ice, blisters, pulling fabric).
+- **Check 2: "What should the practice show?"** Correct: **"Leave stuck clothing in place."** That is what you observe, with referral.
+  - "Repeat the shortcut…": the shortcut is unsafe.
+  - "Diagnose from the story…": the story is not grounds for a diagnosis.
 
-## [observe] Observe
+## [observe] What to observe
 
-In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
+Watch for: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
 
-Ready: Completes the task without prompting: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
+- **Kaya na:** Completes the task without prompting: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.
+- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
+- **Hindi pa:** Uses the shortcut or fails to activate help: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Listen for all three: cooling, sleeve left on, a reason for assessment. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** one retry action, e.g. *"Say who assesses this burn."* Re-observe this session with a blister instead of a sleeve.
+- **Hindi pa:** re-model Lea's words, then retry with a Kaya na partner. Re-observe in a later round.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 46; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 68.
+- The 20 minutes is drawn from F38's 8 hours, which do not time each case.
+- Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides.

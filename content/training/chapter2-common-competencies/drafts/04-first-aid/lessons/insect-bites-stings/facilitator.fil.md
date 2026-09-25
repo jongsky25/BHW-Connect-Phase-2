@@ -1,57 +1,73 @@
 ## [purpose] Layunin
 
-15 minuto: pambungad 3; modelo 3; supervised case practice 3; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.
+Ihihiwalay ng BHW ang lokal na tusok sa agarang senyales, hihingi ng emergency help sa hirap sa paghinga at sasabihin ang hangganan sa gamot.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 15 minutong harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 2, modelo 2, practice 7, feedback 2, checks 2. Mga 3 minuto ang pagbasa sa app.
+- **Kagamitan:** participant cards, worksheet at observation sheet ng 2.4.12; job aid na *Paunang lunas at tamang referral* na may kumpirmadong emergency contact.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin ang emergency contact at ang protocol ng RHU sa malubhang allergy. Isulat sa job aid.
+- **Hangganan:** huwag magturo ng pangalan ng gamot, dosis o paraan ng pagbibigay ng emergency na gamot. Ang sariling resetang plano ng tao at ang sanay o lokal na protocol ang masusunod.
 
 ## [opening] Pambungad
 
-Pagkatapos matusok ng bubuyog, nagkaroon ng pantal sa buong katawan ang tao at hirap siyang huminga.
+Sabihin: *"Natusok ng bubuyog ang isang lalaki. Ngayon, may pantal siya sa buong katawan at hirap daw siyang huminga. Sabi ng kaibigan, 'Tusok lang 'yan.' Tama ba?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Aling dalawang senyales ang nagsasabing higit ito sa tusok?"*
+2. **"Gawin at sabihin."** Itanong: *"Habang parating ang tulong, ano ang binabantayan mo?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapares bago ibunyag.
+4. **"Halimbawang sagot."** Ipakita ang tawag ni Lea. Itanong: *"Kaninong plano ang sinusunod ni Lea sa gamot?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Anong home remedy sa tusok ang gamit dito?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Sino ang magkukumpirma ng lokal na protocol sa malubhang allergy?"*
 
-Ganito ang ligtas na tugon sa kaso. Kilalanin ang posibleng malubhang allergy at humingi agad ng emergency help. Sundin ang reseta at sanay na lokal na protocol. Bantayan ang paghinga habang naghihintay. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Lagyan ng suka o toothpaste."** Itanong: *"Makatutulong ba iyan sa paghinga niya?"* Huwag maantala sa home remedy.
+- **"Bigyan ng allergy tablet mula sa kit."** Mabuti ang intensyon. Sabi ng aralin, walang gamot nang walang training at pahintulot.
+- **"Tumawag agad ng emergency help at bantayan ang paghinga."** Tama. Itanong kung ano ang iuulat.
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Laging maliit at lokal na problema ang tusok."** Maliit ang karamihan ng tusok na naaalala natin. Pero hindi karaniwang tusok ang pantal sa buong katawan at hirap sa paghinga. Itanong: *"Ano ang nagbago mula sa tusok sa braso hanggang sa kasong ito?"*
 
-Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Bite and sting cards** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Round 1: ihihiwalay ng kalahok sa worksheet ang lokal at agarang senyales. Round 2: tatawag siya, iuulat at babantayan ang paghinga, at sasabihin kung aling gamot ang hindi niya maibibigay. Ang kapareha ang kaibigang nag-aalok ng lunas o tablet. Pupunan ng tagamasid ang worksheet. Isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas.
 
-1: Maaaring maantala ang kinakailangang assessment. / 2: Maaaring makapinsala ang shortcut: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training. / 3: Unahin ang kaligtasan at agarang tulong.
+## [answer-key] Susi sa self-check
 
-1: Obserbahan ang gawa at ang tamang referral. / 2: Hindi batayan ang kuwento para sa sariling diagnosis. / 3: Ang shortcut ay hindi ligtas: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Humingi agad ng emergency help."** Unahin ang kaligtasan at agarang tulong.
+  - "Maghintay muna…": maaantala ang assessment.
+  - "Gawin muna ang shortcut…": makapipinsala (pagturing sa hirap sa paghinga na karaniwang tusok, pagkaantala sa home remedy, gamot nang walang training).
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Iulat ang hirap sa paghinga."** Obserbahan ang gawa at referral.
+  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
+  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.
+Tingnan kung: Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.
 
-Kaya na: Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Nagawa nang walang paalala.
+- **Kaya na:** Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Tingnan: nauuna ba ang tawag bago ang anumang usapan tungkol sa lunas? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** nakalimutan ang hangganan sa gamot. Retry action: *"Sabihin sa kaibigan kung sino ang magpapasya sa gamot."* Obserbahan muli ngayon.
+- **Hindi pa:** sabay na ihiwalay muli ang mga senyales; ulitin ang tawag sa susunod na round, una sa tahimik na kapareha. Hindi staff rating ang peer feedback.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 46; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- Mungkahing hati ng authoring ang 15 minuto mula sa 8 oras ng F38.
+- Inatesta ng program owner ang clinical sign-off, 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

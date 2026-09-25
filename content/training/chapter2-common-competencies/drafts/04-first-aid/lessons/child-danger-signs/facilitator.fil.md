@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-25 minuto: pambungad 3; modelo 3; supervised case practice 13; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.
+Sa kaso ng batang may sakit, tinutukoy ng BHW ang kahit isang danger sign, nagpapa-agarang referral at inuulit ang eksaktong nakita sa handover, nang hindi nagbibigay ng diagnosis.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **25 minuto** harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 3, modelo 4, pagsasanay 12, feedback 3, self-check 3. Mga 5 minuto ang Read sa app.
+- Participant cards, worksheet at talaan ng obserbasyon ng 2.4.2; job aid na may kumpirmadong contact at referral facility.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at ang bahaging *Kilalanin ang panganib sa batang may sakit* sa job aid.
+- Kumpirmahin sa midwife o RHU ang referral facility, transport at kung sino ang tatanggap agad sa bata.
+- Saklaw: senyales lamang sa aralin — hindi makainom, isinusuka ang lahat, kombulsyon, mahirap gisingin. Walang diagnosis, cut-off ng temperatura o gamot; huwag painumin ang batang hindi ligtas lumunok.
 
 ## [opening] Pambungad
 
-Sabi ng tagapag-alaga, hindi makainom si Niko, tatlong taong gulang, at isinusuka ang lahat. Mahirap siyang gisingin.
+*"Sabi ng tagapag-alaga: si Niko, tatlong taon, hindi makainom, isinusuka ang lahat at mahirap gisingin. Ilang senyales ang kailangan bago ka mag-refer?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon (Read at unang slide).** *"Ano mismo ang sinabi ng tagapag-alaga? Ulitin nang eksakto."*
+2. **Gawin at sabihin (katapat na slide).** *"Aling senyales ang itatanong, at alin ang makikita mo mismo?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** Ipakita ang handover: *"Si Niko, tatlong taon. Hindi makainom, isinusuka ang lahat, mahirap gisingin mula kaninang umaga. Dadalhin na namin siya."* *"May binanggit ba akong sakit?"*
+5. **Saklaw at paghingi ng tulong.** *"Gustong painumin muna ng lola. Ano ang sasabihin mo?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
+7. **Sa Lunes, gawin ito.** *"Sino ang una mong tatawagan para sa batang tulad ni Niko?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at kasalukuyang kombulsyon. Kung may danger sign, agad ipasuri sa pasilidad at ilahad ang nakita. Iniiwasan ni Lea ang shortcut.
+- **"Hintayin muna kung lumala."** *"Sapat ang isang danger sign. Ilan ang kay Niko?"*
+- **"Parang dehydration iyan."** *"Baka nga; ang pasilidad ang magpapasya. Ano ang nakita mo?"*
+- **"Painumin muna ng ORS."** *"Isinusuka niya ang lahat at mahirap gisingin. Ano ang sabi ng aralin sa pagpapainom?"*
+- **"I-refer ngayon at sabihing mahirap gisingin."** Kumpirmahin; ipasabi ang handover.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.
+**"Mag-refer lang kapag marami nang senyales."** Takot ang pamilya sa sayang na biyahe, at ayaw ng BHW na mag-alala sila. Pero naaantala ang lunas kapag hinintay ang lahat ng senyales. Itama ang kaso: *"Sabi ng aralin, kahit isang danger sign. Alin ang una mong iuulat?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+Childhood case cards (*Mga station sa batang may sakit*). Tatluhan: learner bilang BHW, partner bilang tagapag-alaga, observer. Dalawang maikling round; hihiling ang tagapag-alaga na bukas na lang. Isang lakas at isang retry action sa pagitan, saka magpalit. Itinatala ng observer ang senyales, ang referral at ang salita sa handover. Kathang-isip lamang. Kung mag-isa: sagutan nang malakas ang worksheet; magpaobserba mamaya.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Unahin ang kaligtasan at agarang tulong. / 2: Maaaring maantala ang kinakailangang assessment. / 3: Maaaring makapinsala ang shortcut: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.
+1. **"Ano ang unang tugon?"** **"I-refer agad si Niko."** — kaligtasan at agarang tulong. "Maghintay muna…": naaantala ang assessment. "Gawin muna ang shortcut…": nakapipinsala ang diagnosis, paghihintay sa lahat ng senyales o pagpapainom.
+2. **"Ano ang dapat ipakita sa practice?"** **"Iulat na hindi makainom."** — ang gawa at tamang referral. "Ulitin ang shortcut…": hindi ligtas. "Magbigay ng diagnosis…": hindi batayan ang kuwento.
 
-1: Ang shortcut ay hindi ligtas: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok. / 2: Obserbahan ang gawa at ang tamang referral. / 3: Hindi batayan ang kuwento para sa sariling diagnosis.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.
 
-Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.
+- **Kaya na:** Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.
 
-Kaya na: Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Nagawa nang walang paalala.
+Pakinggan kung eksaktong nakita ang nasa handover, hindi pangalan ng sakit. Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.
+- **Kailangan pa:** ulitin lamang ang hiling ng tagapag-alagang maghintay; subukan sa bagong bata.
+- **Hindi pa:** basahin nang magkasama ang job aid, bilugan ang isang danger sign, ulitin ang handover kasama ang partner na Kaya na.
+- Obserbahang muli ngayon o sa susunod na sesyon, bagong kaso. Practice ang peer feedback, hindi rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 39; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 75–76.
+- Walong oras ang 2.4 sa F38; mungkahi ng authoring ang 25 minutong ito.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Ang lokal na protocol ang masusunod.

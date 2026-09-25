@@ -1,57 +1,70 @@
 ## [purpose] Purpose
 
-20 minutes: opening 3; model 3; supervised case practice 8; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
+In a simulated convulsion, the BHW clears the space, calls for help, states the start time and observations, and kindly declines restraint and the spoon.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **20 minutes** face-to-face (this lesson's share of the 480-minute subchapter plan): opening 3, model 3, practice 9, feedback 3, self-check 2. The Read takes about 5 minutes in the app.
+- 2.4.5 participant cards, worksheet and observation sheet; job aid with the confirmed emergency contact; a watch.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Read the lesson and the job aid section *Respond to convulsions*.
+- Confirm with the midwife or RHU the urgent route for a child. A bag stands in for the child; nobody acts out shaking.
+- Scope: no restraint, mouth insertion, oral intake before full alertness, cold-water wiping or medicines. On time limits: *"Confirm with the midwife or RHU."*
 
 ## [opening] Opening
 
-A child begins shaking on the floor. A neighbor wants to hold the child down and put a spoon in the mouth.
+*"A child is shaking on the floor. A neighbor wants to hold her down and put a spoon in her mouth. What do you tell the neighbor?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation (Read and first slide).** *"What is the neighbor trying to do, and why?"*
+2. **What to do and say (matching slide).** *"What three things do you do while it is happening?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model it: *"Please don't hold her or put anything in her mouth. Help me move these chairs. It started at 3:10. Ate, call [confirmed contact]."* *"What will I tell the clinician?"*
+5. **Scope and support.** *"The shaking stops and the grandmother offers water. What do you say?"*
+6. **Apply it to the situation.** Self-check 2 — pairs first.
+7. **On Monday, try this.** *"What will you use to note the start time?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-This is the safe response in the case. Clear nearby hazards, cushion the head if possible and note the start time. Seek urgent help for a child and monitor breathing after the episode. Give the responding clinician a factual description. Lea avoids the shortcut.
+- **"Hold her still so she won't get hurt."** *"You want to protect her. What does the lesson do instead?"*
+- **"Wipe her with cold water to stop it."** *"Does the lesson say wiping stops a seizure? Who do we call?"*
+- **"Give water once she opens her eyes."** *"Is she fully alert yet? What does the lesson say?"*
+- **"Clear the space, note the time, call for help."** Confirm.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure.
+**"Put a spoon in the mouth so the child won't bite her tongue."** Families do this out of love, but it can hurt the child. Correct the case: *"The neighbor in the story believes that too. What does the lesson say?"*
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+Convulsion scenario (*Call-and-transport rehearsals*). Triads: learner, partner as the neighbor pushing the spoon, observer. Two short rounds with one strength and one retry action between, then rotate. The observer records space, time, call and the refusal words. Fictional cases only. Low-resource: the group calls out the safe words together; observe individuals later.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: Prioritize safety and timely help. / 2: Necessary assessment may be delayed. / 3: The shortcut can cause harm: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure.
+1. **"What comes first?"** **"Clear nearby hazards."** — safety and timely help. "Wait without notifying…": delays assessment. "Use the shortcut…": restraint, the spoon, early drinks or cold-water wiping can cause harm.
+2. **"What should the practice show?"** **"Record seizure timing."** — the task and appropriate referral. "Repeat the shortcut…": unsafe. "Diagnose from the story…": no grounds for independent diagnosis.
 
-1: The shortcut is unsafe: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure. / 2: Observe the task and appropriate referral. / 3: The story is not grounds for an independent diagnosis.
+## [observe] What to observe
 
-## [observe] Observe
+Indicator: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
 
-Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
+- **Kaya na:** Completes the task without prompting: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
+- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
+- **Hindi pa:** Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure.
 
-Ready: Completes the task without prompting: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.
+Listen for a start time said aloud and a kind refusal. A correct self-check is not evidence of the skill.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+## [support] If a BHW needs more support
 
-Not yet: Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure.
+- **Kailangan pa:** practise one refusal sentence; retry.
+- **Hindi pa:** walk the worksheet together; retry with a Kaya na partner.
+- Re-observe this session or next, new case. Peer feedback is practice, not a rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 41; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 82.
+- F38 gives 2.4 eight hours; these 20 minutes are an authoring distribution.
+- Legacy fever-wiping is omitted. Clinical sign-off attested by the program owner, 25 Sep 2026; reviewer names not recorded. Local protocol overrides this guide.

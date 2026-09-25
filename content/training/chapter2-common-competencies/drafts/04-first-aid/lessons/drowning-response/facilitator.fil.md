@@ -1,57 +1,73 @@
 ## [purpose] Layunin
 
-15 minuto: pambungad 3; modelo 3; supervised case practice 3; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.
+Sa tabletop na kaso, mananatili sa pampang ang BHW, tatawagin ang sanay na water rescuer at sasabihing kailangan ng agarang pagsusuri ang nailigtas.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 15 minutong harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 2, modelo 2, practice 7, feedback 2, checks 2. Mga 3 minuto ang pagbasa sa app.
+- **Kagamitan:** participant cards, worksheet at observation sheet ng 2.4.8; job aid na *Paunang lunas at tamang referral*; tape o tisa para markahan ang gilid ng kanal.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin kung sino ang lokal na water rescue (BHERT, bumbero o rescue unit) at ang numero nila. Isulat sa job aid.
+- **Hangganan:** tabletop ito; walang tubig. Huwag ituro ang paglangoy para sumagip, ang pagbaligtad para patuluin ang tubig, o anumang hakbang ng resuscitation. Sa sanay na responder ang drowning protocol; sa 2.4.7 ang supervised CPR.
 
 ## [opening] Pambungad
 
-May taong nahihirapan sa tubig sa kanal. Nasa tuyong lupa ang BHW at walang water-rescue training.
+Maglagay ng tape sa sahig: *"Ito ang gilid ng binahang kanal. May nahihirapan sa tubig sa kabila nito. Hindi ka sanay sumagip sa tubig. Saan ka tatayo, at ano ang una mong isisigaw?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katapat ng bawat hakbang ang slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon."** Itanong: *"Bakit mahalagang walang water-rescue training ang BHW?"*
+2. **"Gawin at sabihin."** Itanong: *"Kailan ligtas ang abot o hagis na tulong?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — pasagutin muna ang magkapares bago ibunyag.
+4. **"Halimbawang sagot."** Ipakita ang tawag ni Lea mula sa tape. Itanong: *"Ano ang sinabi niya tungkol sa pagsusuri?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Aling lumang payo rito ang makapipinsala?"*
+6. **"Subukan sa sitwasyon."** Self-check 2 — pasagutin muna ang magkapares bago ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Sino ang kumpirmadong water-rescue contact ninyo?"*
 
-Ganito ang ligtas na tugon sa kaso. Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng ligtas na abot o hagis na tulong. Kapag nailigtas, ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Hintayin munang makaahon siya."** Mahinahong itanong: *"Habang naghihintay, sino ang tumatawag sa rescuer?"*
+- **"Tatawag ng rescuer at mananatili sa lupa."** Tama. Itanong kung ano ang sasabihin tungkol sa pagsusuri.
+- **"Baligtarin para lumabas ang tubig."** Marami ang nakakita nito. Ituro ang scope slide: sinasabi ng aralin na huwag.
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Dapat lumusong ang marunong lumangoy."** Galing ito sa tapang. Sabi ng aralin, mananatili sa labas ng tubig ang BHW. Itanong: *"Kung malunod ka rin, sino ang tatawag?"* Kilalanin ang mga marunong lumangoy: *"Ang trabaho natin ngayon ay ang pampang at ang tawag."*
 
-Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Drowning tabletop** (card: *Pagsasanay sa pagtawag at transport*), tatluhan. Nasa tape ang kalahok, tatawag ng sanay na rescuer at sasabihing kailangan ng pagsusuri. Ang kapareha ang saksing nag-uudyok na lumusong. Pupunan ng tagamasid ang worksheet (pampang, rescue, suriin, kumpirmadong contact, oras at handover). Dalawang round, isang lakas at isang retry action, saka magpalit. Staff ang magra-rate. Kung kulang sa gamit: basahin nang malakas; obserbahan pagkatapos.
 
-1: Unahin ang kaligtasan at agarang tulong. / 2: Maaaring maantala ang kinakailangang assessment. / 3: Maaaring makapinsala ang shortcut: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.
+## [answer-key] Susi sa self-check
 
-1: Ang shortcut ay hindi ligtas: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod. / 2: Obserbahan ang gawa at ang tamang referral. / 3: Hindi batayan ang kuwento para sa sariling diagnosis.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Tawagin ang water rescuers."** Unahin ang kaligtasan at agarang tulong.
+  - "Maghintay muna…": maaantala ang assessment.
+  - "Gawin muna ang shortcut…": makapipinsala (paglusong sa mapanganib na tubig, pagbaligtad, pag-aakalang sapat ang compression-only CPR).
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Manatili sa ligtas na pampang."** Obserbahan ang gawa at referral.
+  - "Ulitin ang shortcut…": hindi ligtas, gaya sa Check 1.
+  - "Magbigay ng diagnosis…": hindi batayan ang kuwento.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.
+Tingnan kung: Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.
 
-Kaya na: Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri. Nagawa nang walang paalala.
+- **Kaya na:** Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Tingnan: nananatili ba sa tape ang kalahok kahit itinutulak ng kapareha? Hindi ebidensya ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** kadalasang nakalimutan ang pagsusuri. Retry action: *"Sabihin kung sino ang susuri pagkatapos masagip."* Obserbahan muli ngayon.
+- **Hindi pa:** ipakita muli ang tawag mula sa tape; ulitin sa mahinahong kapareha, saka sa mapilit, sa susunod na round. Hindi staff rating ang peer feedback.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 43; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- Mungkahing hati ng authoring ang 15 minuto mula sa 8 oras ng F38.
+- Inatesta ng program owner ang clinical sign-off, 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

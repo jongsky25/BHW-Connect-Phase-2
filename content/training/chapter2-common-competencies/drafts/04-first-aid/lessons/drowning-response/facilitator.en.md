@@ -1,57 +1,73 @@
 ## [purpose] Purpose
 
-15 minutes: opening 3; model 3; supervised case practice 3; feedback 3; next step 3. The station introduces the decision and observation; use additional qualified skills training before any independent clinical role.
-
-Choose a safe shore response, activate trained rescue and state the need for medical assessment.
+In a tabletop case, the BHW stays on the shore, calls trained water rescuers and says the rescued person needs urgent medical assessment.
 
 ## [time-materials] Time and materials
 
-Eighteen proposed stations total 480 minutes: 420 minutes across emergency cases and 60 for the kit, matching F38. Facilitators must verify the local emergency contact, equipment, role authorization and current clinical protocol before practice. High-risk procedures use manikins or tabletop props only. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 15 minutes face-to-face (this lesson's share of the 480-minute subchapter plan): opening 2, model 2, practice 7, feedback 2, checks 2. The Read takes about 3 minutes in the app.
+- **Materials:** 2.4.8 participant cards, worksheet, observation sheet; *First aid and referral* job aid; tape or chalk to mark the canal edge.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm who does water rescue locally (BHERT, fire or rescue unit) and their number. Write it on the job aid.
+- **Scope:** this is a tabletop; no water. Do not teach swimming rescue, inverting to drain water or any resuscitation steps. The drowning protocol belongs to trained responders; CPR is supervised in 2.4.7.
 
 ## [opening] Opening
 
-A person is struggling beyond the edge of a flooded canal. The BHW is on dry ground without water-rescue training.
+Tape a line on the floor: *"This is the edge of a flooded canal. Someone is struggling past it. You cannot swim-rescue. Where do you stand, and what do you shout first?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step matches the slide with the same heading.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"Why does it matter that the BHW has no water-rescue training?"*
+2. **"What to do and say."** Ask: *"When is a reach or throw aid safe?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model Lea's call from the tape line. Ask: *"What does she say about assessment?"*
+5. **"Scope and support."** Ask: *"Which old advice here could cause harm?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"Who is your confirmed water-rescue contact?"*
 
-This is the safe response in the case. Call trained rescuers and keep yourself out of the water. Use an available reach or throw aid only when safe. Once rescued by trained personnel, arrange urgent medical assessment and follow the current drowning resuscitation protocol. Lea avoids the shortcut.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Wait and see if they get out."** Gently: *"While we wait, who is calling the rescuers?"*
+- **"Call the rescuers and stay on land."** Confirm, then ask what they will say about assessment.
+- **"Turn them upside down to drain the water."** Many saw this done. Point to the scope slide: the lesson says not to.
 
-Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"A good swimmer should go in."** It comes from courage. The lesson says the BHW stays out of the water. Ask: *"If you go under too, who is left to call?"* Credit the swimmers: *"Your job today is the shore and the call."*
 
-Choose a safe shore response, activate trained rescue and state the need for medical assessment. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Drowning tabletop** (card: *Call-and-transport rehearsals*), triads. The learner stands at the tape line, calls trained rescue and states the need for assessment. The partner plays a bystander urging the learner to jump in. The observer fills the worksheet rows (shore, rescue, assess, confirmed contact, time and handover). Two rounds with one strength and one retry action, then rotate. Staff rate. Low-resource: read aloud; observe later.
 
-1: Prioritize safety and timely help. / 2: Necessary assessment may be delayed. / 3: The shortcut can cause harm: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs.
+## [answer-key] Self-check answer key
 
-1: The shortcut is unsafe: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs. / 2: Observe the task and appropriate referral. / 3: The story is not grounds for an independent diagnosis.
+- **Check 1: "What comes first?"** Correct: **"Call trained water rescuers."** Safety and timely help come first.
+  - "Wait without notifying…": assessment may be delayed.
+  - "Use the shortcut…": can cause harm (entering unsafe water, inverting the person, assuming compression-only CPR covers drowning).
+- **Check 2: "What should the practice show?"** Correct: **"Remain on a safe shore."** Observe the task and referral.
+  - "Repeat the shortcut…": unsafe, as in Check 1.
+  - "Diagnose from the story…": the story is not grounds for diagnosis.
 
-## [observe] Observe
+## [observe] What to observe
 
-Choose a safe shore response, activate trained rescue and state the need for medical assessment.
+Watch for: Choose a safe shore response, activate trained rescue and state the need for medical assessment.
 
-Ready: Completes the task without prompting: Choose a safe shore response, activate trained rescue and state the need for medical assessment.
+- **Kaya na:** Completes the task without prompting: Choose a safe shore response, activate trained rescue and state the need for medical assessment.
+- **Kailangan pa ng practice:** Performs the response but needs a prompt about referral or scope.
+- **Hindi pa:** Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs.
 
-Needs practice: Performs the response but needs a prompt about referral or scope.
+Look for: the learner holds the line when the partner pushes. A correct self-check is not evidence of the skill.
 
-Not yet: Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** usually forgot assessment. Retry action: *"Say who checks the person after the rescue."* Re-observe now.
+- **Hindi pa:** re-model the call from the tape line; retry with a calmer partner, then the pushy one, in a later round. Peer feedback is not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 43; Facilitator Guide PDF pp. 38–40; presentation PDF p. 68.
+- 15 minutes is an authoring share of F38's 8 hours.
+- Program owner attested clinical sign-off, 25 Sep 2026; reviewers not named. Local protocol overrides.

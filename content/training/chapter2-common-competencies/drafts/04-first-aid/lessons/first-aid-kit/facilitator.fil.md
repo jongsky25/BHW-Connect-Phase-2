@@ -1,57 +1,75 @@
 ## [purpose] Layunin
 
-60 minuto: pambungad 3; modelo 3; supervised case practice 48; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.
+Inihahambing ng BHW ang simulated kit sa lokal na listahan, pinupunan ang bawat hanay, inihihiwalay nang hindi ginagamit ang expired o sirang gamit, at tinutukoy ang responsable sa palit.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 60 minuto sa harapang sesyon (bahagi ng araling ito sa 480 minutong plano ng subchapter): pambungad 5; modelo 10; pagsasanay 30; feedback 10; checks 5. Mga 3 minuto ang Read sa app.
+- **Kagamitan:** kasalukuyang lokal na listahan ng kit; isang mock kit bawat tatluhan (lumang inventory sheet, expired item, bukas na pakete); participant cards, kit worksheet at observation sheet ng 2.4.17; ang job aid.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at dalawang check.
+- Kunin sa midwife o RHU ang kasalukuyang listahan ng kit. Kumpirmahin kung sino ang nagpapalit at alin ang kailangan ng awtorisadong tao.
+- **Hangganan:** walang totoong gamot. Huwag ituro ang paggamit ng gamot o device sa kit, o ang listahan ng gamot sa lumang manual. Sa iba pa: *"Ikumpirma natin sa midwife, RHU o lokal na protocol."*
 
 ## [opening] Pambungad
 
-May lumang inventory sheet, expired item at bukas na pakete sa BHS kit. May aprubadong lokal na listahan.
+Itaas ang bukas na pakete at basahin ang kaso. Itanong: *"Kapag may gamit, ibig bang sabihin puwede mo nang gamitin?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katugmang slide ang bawat heading ng Read.
 
-## [expected-answers] Inaasahang tugon
+1. **"Ang sitwasyon".** Itanong: *"Anong tatlong problema ang nakikita mo?"*
+2. **"Gawin at sabihin".** Itanong: *"Aling hanay ang huhuli sa bukas na pakete?"*
+3. **"Piliin ang unang tugon".** Self-check 1 — magkapares muna ang sasagot.
+4. **"Halimbawang sagot".** Imodelo ang isang hanay gamit ang expired item. Itanong: *"Kanino nag-ulat si Lea?"*
+5. **"Saklaw at paghingi ng tulong".** Itanong: *"Sino ang puwedeng gumamit ng ano rito?"*
+6. **"Subukan sa sitwasyon".** Self-check 2 — magkapares muna ang sasagot.
+7. **"Sa Lunes, gawin ito".** Ipasabi ang responsable sa palit ng kanilang kit, saka magsanay.
 
-Ganito ang ligtas na tugon sa kaso. Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit. Ihiwalay ang laman sa pahintulot gumamit. Iniiwasan ni Lea ang shortcut.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Gamitin na lang ang lumang sheet, puno na."** Itanong: *"Alin ang kasalukuyang listahan?"*
+- **"Ayos pa ang bukas na pakete."** Itala ang kondisyon at iulat; huwag gamitin.
+- **"Itapon ang expired."** Sabi ng aralin: ihiwalay at iulat sa responsable.
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kapag nasa kit, puwedeng ibigay ng BHW."** May gamot sa kit mula sa lumang listahan, kaya parang pahintulot na. Inihihiwalay ng aralin ang laman sa pahintulot gumamit. Itama ang kaso, hindi ang tao: *"Nasa lumang sheet ito. Sino ang nagpapasya kung sino ang gagamit?"*
 
-Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Kit inspection.** Tatluhan, isang kit bawat grupo; tatlong round na tig-10 minuto, nagpapalitan. Kalahok: pinupunan ang bawat hanay at tinutukoy ang responsable sa palit. Kapareha: katrabahong nagmumungkahing gamitin ang lumang sheet o bukas na pakete. Tagamasid: hinahanap ang blangkong hanay; isang lakas at isang retry action. Susuriin ng staff ang sheet kasama ang kalahok. Walang kit: walang-lamang kahon na may label; suriin ang totoong kit kasama ang supervisor sa ibang araw.
 
-1: Unahin ang kaligtasan at agarang tulong. / 2: Maaaring maantala ang kinakailangang assessment. / 3: Maaaring makapinsala ang shortcut: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.
+## [answer-key] Susi sa self-check
 
-1: Ang shortcut ay hindi ligtas: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit. / 2: Obserbahan ang gawa at ang tamang referral. / 3: Hindi batayan ang kuwento para sa sariling diagnosis.
+- **Check 1: "Ano ang unang tugon?"** Tama: **"Ihambing sa lokal na listahan."** Inuuna nito ang kaligtasan at agarang tulong.
+  - "Maghintay muna at huwag ipaalam sa staff": maaaring maantala ang assessment.
+  - "Gawin muna ang shortcut kahit walang kumpirmasyon": maaaring makapinsala (lumang listahan bilang reseta, expired stock, akalang may pahintulot).
+- **Check 2: "Ano ang dapat ipakita sa practice?"** Tama: **"Itala ang expired na gamit."** Ito ang inoobserbahan.
+  - "Ulitin ang shortcut…": hindi ligtas ang shortcut.
+  - "Magbigay ng diagnosis mula sa kuwento…": hindi batayan ang kuwento para sa diagnosis.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.
+Bantayan ang: Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.
 
-Kaya na: Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit. Nagawa nang walang paalala.
+- **Kaya na:** Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+Tingnan kung walang blangko at may pangalan ng tao. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** ituro ang blangkong hanay; pupunan ito ng kalahok. Obserbahan muli ngayong sesyon gamit ang ibang kit.
+- **Hindi pa:** imodelo muli ang isang hanay, saka ulitin ang tatlo kasama ang kaparehang Kaya na. Obserbahan muli sa susunod na round.
+- Practice ang peer feedback, hindi rating ng staff.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 48; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 69.
+- Isang oras ang ibinigay ng F38 sa kit; sinusunod ito ng 60 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang mga reviewer. Masusunod ang lokal na protocol.

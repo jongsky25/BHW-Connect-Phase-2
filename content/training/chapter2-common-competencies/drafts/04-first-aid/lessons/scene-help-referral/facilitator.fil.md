@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-40 minuto: pambungad 3; modelo 3; supervised case practice 28; feedback 3; susunod 3. Panimula ang station; kailangan ng dagdag na qualified skills training bago ang independent clinical role.
-
-Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.
+Sa simulation ng nadapang sakay, tinutukoy ng BHW ang panganib bago lumapit, pinatatawag ang saksi sa kumpirmadong contact, at iniuulat ang tugon, paghinga at lokasyon.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 480 minuto ang 18 mungkahing station: 420 para sa emergency cases at 60 para sa kit, ayon sa F38. Kumpirmahin ang emergency contact, kagamitan, pahintulot sa tungkulin at kasalukuyang protocol. Manikin o tabletop props lamang sa high-risk procedures. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **40 minuto** harapan (bahagi ng aralin sa 480-minutong plano ng subchapter): pambungad 4, modelo 6, pagsasanay 22, feedback 5, self-check 3. Mga 5 minuto ang Read sa app.
+- Participant cards, worksheet at talaan ng obserbasyon ng 2.4.1; job aid na may kumpirmadong contact; tape o tisa para sa kunwaring kalsada.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang aralin at ang bahaging *Suriin ang sitwasyon at humingi ng tulong* sa job aid.
+- Kumpirmahin sa midwife o RHU ang emergency contact na sumasagot, ang paraan ng pag-uulat at ang referral facility. Isulat ang contact sa bawat job aid.
+- Saklaw: kaligtasan, pagtawag at pag-uulat lamang. Walang pulse-first na sequence, lunas sa sugat o CPR dito.
 
 ## [opening] Pambungad
 
-Huminto ang traysikel sa tabi ng nadapang sakay habang may dumaraang sasakyan. Dumating si BHW Lea kasama ang isang saksi.
+Sa tabi ng kalsadang may tape: *"Huminto ang traysikel sa tabi ng nadapang sakay. May dumaraan pang sasakyan. Dumating ka kasama ang kapitbahay. Bago humakbang palapit, ano ang titingnan mo?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon (Read at unang slide).** *"Sino ang nasa panganib ngayon — ang sakay lang ba?"*
+2. **Gawin at sabihin (katapat na slide).** Isa-isahin ang Lugar, Tawag, Ulat. *"Bakit ang saksi ang tatawag?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** Ipakita: tingnan ang kalsada, ituro ang saksi, *"Pakitawagan ang [kumpirmadong contact]: may nadapang sakay sa tabi ng kalsada malapit sa tindahan, hindi sumasagot."* *"Ano ang iniulat ko, at ano ang hindi ko hinulaan?"*
+5. **Saklaw at paghingi ng tulong.** *"May nagsabing 'kahit anong numero na lang'. Ano ang isasagot mo?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — magkapareha muna.
+7. **Sa Lunes, gawin ito.** *"Saan mo ilalagay ang kumpirmadong contact?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Ganito ang ligtas na tugon sa kaso. Tingnan muna ang panganib bago lumapit. Pakiusapan ang saksi na tumawag sa kumpirmadong emergency contact. Suriin ang tugon at normal na paghinga kung ligtas. Ibigay ang lokasyon at nakita. Sundin ang lokal na referral. Iniiwasan ni Lea ang shortcut.
+- **"Tatakbo ako sa sakay."** *"Mabait. Pero sino ang tutulong sa sakay kung ikaw ang mabangga?"*
+- **"Itatanong ko muna ang nangyari."** *"Ang kailangan sa tawag ay ang nakikita mo ngayon; makapaghihintay ang kuwento."*
+- **"Tatawag ako sa national number."** *"Aling numero ang kinumpirma ng barangay?"*
+- **"Tatawag ang saksi; babantay ako sa gilid."** Kumpirmahin; ipasabi nang malakas ang lokasyon.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.
+**"Alamin muna ang buong kuwento bago tumawag."** Gusto nating tumpak ang ulat, at humingi ng mahabang history ang lumang manual. Sa tabi ng trapiko, naaantala nito ang tulong. Itama ang kaso, hindi ang tao: *"Ganyan ang natutunan ng marami. Ano ang inuuna ng aralin?"*
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+Scene assessment station (*Mga station sa sitwasyon, pagbagsak at handover*). Tatluhan: learner, partner bilang saksing gustong tumawid, observer. Dalawang maikling round, may isang lakas at isang retry action sa pagitan, saka magpalit. Itinatala ng observer ang panganib, sino ang tumawag at saang contact, ang sinabi sa tugon at paghinga, at ang lokasyon. Kathang-isip lamang. Kung mag-isa: isalaysay gamit ang job aid; magpaobserba sa staff mamaya.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Maaaring makapinsala ang shortcut: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. / 2: Unahin ang kaligtasan at agarang tulong. / 3: Maaaring maantala ang kinakailangang assessment.
+1. **"Ano ang unang tugon?"** **"Tingnan ang trapiko at tumawag."** — una ang kaligtasan at agarang tulong. "Gawin muna ang shortcut…": panganib sa trapiko, naantalang tawag o hinulaang numero. "Maghintay muna…": naaantala ang assessment.
+2. **"Ano ang dapat ipakita sa practice?"** **"Ibigay ang lokasyon at nakita."** — ang gawa at tamang referral. "Magbigay ng diagnosis…": hindi batayan ang kuwento. "Ulitin ang shortcut…": hindi ligtas.
 
-1: Hindi batayan ang kuwento para sa sariling diagnosis. / 2: Ang shortcut ay hindi ligtas: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. / 3: Obserbahan ang gawa at ang tamang referral.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Indicator: Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.
 
-Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.
+- **Kaya na:** Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala.
+- **Kailangan pa ng practice:** Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+- **Hindi pa:** Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.
 
-Kaya na: Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala.
+Hanapin ang paghinto sa guhit ng kalsada at ang pagbanggit sa contact, hindi "kahit sino". Hindi patunay ng kasanayan ang tamang self-check.
 
-Kailangan practice: Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.
+- **Kailangan pa:** ipakitang muli ang pangungusap sa tawag; ulitin sa kanto ng palengke.
+- **Hindi pa:** isa-isahin nang magkasama ang Lugar, Tawag, Ulat; ulitin sa tahimik na eskinita kasama ang partner na Kaya na.
+- Obserbahang muli ngayon o sa susunod na sesyon, bagong kaso. Practice ang peer feedback, hindi rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 38; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 71–74.
+- Walong oras ang 2.4 sa F38; mungkahi ng authoring ang 40 minutong ito.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Ang lokal na protocol ang masusunod.
