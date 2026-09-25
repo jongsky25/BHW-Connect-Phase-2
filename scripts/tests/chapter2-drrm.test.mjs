@@ -60,6 +60,15 @@ test('2.5 owner approval stays separate from clinical and publication signoff',(
  assert.equal(plants.owner_review.status,'approved-by-user');
  assert.ok(plants.lessons.every(x=>x.owner_review==='approved-by-user'&&!x.publication_allowed));
 });
+test('2.7 owner approval covers six drafts without releasing the chapter',()=>{
+ const approvals=json(path.join(packageRoot,'sample-review.json')).subsequent_owner_approvals;
+ assert.ok(approvals.some(a=>a.modules.join(',')==='2.7'));
+ const review=json(path.join(dir,'review.json'));
+ assert.equal(review.owner_review.status,'approved-by-user');
+ assert.ok(review.lessons.every(x=>x.owner_review==='approved-by-user'&&!x.publication_allowed));
+ const blueprint=json(path.join(packageRoot,'chapter-blueprint.json'));
+ assert.equal(blueprint.availability,'unavailable');assert.equal(blueprint.publication_allowed,false);
+});
 test('2.7 preview exposes all six lessons and keeps staff material private',()=>{
  const learner=preview();assert.match(learner.doc.getElementById('intro').textContent,/2.7.1/);
  assert.equal(learner.doc.querySelectorAll('#lesson option').length,6);

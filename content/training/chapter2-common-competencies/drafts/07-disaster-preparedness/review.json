@@ -10,7 +10,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "evacuation-contacts",
@@ -21,7 +22,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "go-bag-e-balde",
@@ -32,7 +34,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "bhert-coordination",
@@ -43,7 +46,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "essential-health-packages",
@@ -54,7 +58,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "disaster-tabletop",
@@ -65,7 +70,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     }
   ],
   "blocking_reviews": [
@@ -84,5 +90,10 @@
     "Official warnings, routes, shelter, contacts, team roles and service pathways must be verified locally before use.",
     "PFA is humane support and referral, not diagnosis or therapy."
   ],
-  "self_study_time": "Not a replacement for facilitated training; additional observed practice may be required."
+  "self_study_time": "Not a replacement for facilitated training; additional observed practice may be required.",
+  "owner_review": {
+    "status": "approved-by-user",
+    "date": "2026-09-25",
+    "evidence": "User message: approve 2.7"
+  }
 }

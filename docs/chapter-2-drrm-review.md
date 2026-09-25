@@ -1,5 +1,7 @@
 # Chapter 2.7 Disaster Preparedness and Response review package
 
+Owner approval recorded on 25 September 2026 for all six Chapter 2.7 authoring drafts. Local DRRM, clinical/PFA, language, observed pilot, browser visual QA and publication reviews remain separate.
+
 The owner approved Chapter 2.5 (“approve 2.5. do 2.7”). That approval is recorded in the source package and does not constitute medicinal-plant clinical or publication sign-off. Six bilingual Chapter 2.7 DRRM lessons are now authored, bringing the chapter to 55 of 55 planned lessons. Chapter 2 remains isolated from live delivery and unavailable for publication.
 
 The six lessons cover risk and capacity mapping; warnings, evacuation and contacts; a household go-bag/e-balde; BHW and response-team handover; medical/public health, nutrition, WASH and MHPSS service links; and an integrated tabletop with continuity, follow-up and responder support. Each follows the Chapter 1 teaching pattern: seven bilingual Read sections, seven separately authored Slides, two checks with per-option feedback, a diagram, learner cards and worksheet, a private facilitator guide, an observation rubric, job aid and transfer prompt. All examples use fictional residents and cannot substitute for a live barangay plan.
@@ -14,4 +16,4 @@ The legacy BHERT team makeup and pandemic-era mandates are not presented as curr
 
 ## Verification and remaining review
 
-The chapter validator passes for 55 lessons, 385 Read sections, 385 Slides and 110 checks. The focused suite passes 97 tests across eight files, and ESLint passes for the changed JavaScript files. In-memory DOM simulation exercises the six-lesson preview, check progression and the separation of learner material from private facilitator answers. This is not browser visual, keyboard or print-layout QA. Independent Filipino/English, clinical/PFA, local DRRM and service review, plus an observed BHW/facilitator pilot, remain pending. Chapter 2.7 is a draft for owner review and is not published.
+The chapter validator passes for 55 lessons, 385 Read sections, 385 Slides and 110 checks. The focused suite passes 97 tests across eight files, and ESLint passes for the changed JavaScript files. In-memory DOM simulation exercises the six-lesson preview, check progression and the separation of learner material from private facilitator answers. This is not browser visual, keyboard or print-layout QA. Independent Filipino/English, clinical/PFA, local DRRM and service review, plus an observed BHW/facilitator pilot, remain pending. Chapter 2.7 is owner-approved as an authoring draft and is not published.

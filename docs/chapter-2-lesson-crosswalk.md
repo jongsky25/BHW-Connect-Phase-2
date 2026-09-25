@@ -1,6 +1,6 @@
 # Chapter 2 lesson and activity crosswalk
 
-55 planned lessons; all 55 authored as drafts in 2.1–2.7. Chapter 2.7 awaits owner, local DRRM and clinical/PFA review; authored status is not publication approval. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
+55 planned lessons; all 55 authored as drafts in 2.1–2.7. Chapter 2.7 has owner approval; local DRRM and clinical/PFA review remain pending. Authored and owner-approved status is not publication approval. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
 
 | Lesson | English / Filipino | Intended task | Practice | Status |
 |---|---|---|---|---|

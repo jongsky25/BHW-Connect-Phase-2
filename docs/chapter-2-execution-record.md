@@ -1,3 +1,9 @@
+# Current update: Chapter 2.7 owner approval — 25 September 2026
+
+The user approved all six Chapter 2.7 DRRM authoring drafts. Chapter 2.1–2.7 now have owner approval as drafts. Local DRRM and clinical/PFA sign-off, language review, observed pilot, browser visual QA and publication authorization remain pending; Chapter 2 is still unavailable.
+
+Earlier updates below describe their then-current counts.
+
 # Current update: Chapter 2.7 Disaster Preparedness and Response — 25 September 2026
 
 Chapter 2.5 owner approval recorded without clinical sign-off. Six DRRM drafts added; 55/55 lessons authored. F38 combined Community Mobilization/DRRM allocation reconciles to a proposed 60+60 minute split. WHO, DOH and PAGASA source decisions recorded; local and clinical review pending. Chapter remains unpublished. See chapter-2-drrm-review.md.

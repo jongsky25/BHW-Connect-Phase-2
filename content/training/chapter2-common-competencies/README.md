@@ -1,6 +1,6 @@
 # Chapter 2 authoring package
 
-This package contains the source map, approved Chapter 2.1 sample and the approved Chapter 2.2/2.6 expansion and seven Chapter 2.3 IPC drafts. All 55 planned lessons are authored drafts. It is deliberately outside the live `day1-basic-competencies/modules` tree. Do not treat it as a loadable or published Chapter 2 delivery course.
+This package contains the source map and all 55 planned lessons as owner-approved authoring drafts across Chapters 2.1–2.7. It is deliberately outside the live `day1-basic-competencies/modules` tree. Do not treat it as a loadable or published Chapter 2 delivery course.
 
 - `chapter-blueprint.json`: seven subchapters / 55 lesson boundaries, task and practice IDs, source crosswalk and shared hours.
 - `drafts/01-difficult-situations`: four complete bilingual lesson drafts using the existing reference lesson contract; 12 concepts, 28 Read sections, 28 separately authored Slides, eight checks, private guides, four activity kits, four original diagrams and a transfer package.
@@ -9,7 +9,7 @@ This package contains the source map, approved Chapter 2.1 sample and the approv
 - `drafts/04-first-aid`: 18 bilingual first-aid training drafts, 126 Read sections, 126 Slides, 36 checks, distinct diagrams, worksheets, private guides, job aids and dated clinical evidence map.
 - `drafts/05-medicinal-plants`: 12 bilingual source-card and consultation drafts, 84 Read sections, 84 Slides, 24 checks, ten botanical crosswalk entries, original diagrams and dated evidence decisions.
 - `drafts/07-disaster-preparedness`: six bilingual DRRM drafts, 42 Read sections, 42 Slides, 12 checks, original diagrams and dated evidence decisions.
-- `sample-review.json`: records the user’s approval of the 2.1 sample, 2.2/2.6 expansion and 2.4 First Aid, separately from independent review and publication gates.
+- `sample-review.json`: records the user’s approvals of the authoring drafts in Chapters 2.1–2.7, separately from independent review and publication gates.
 - `claim-review-queue.json`: clinical/policy questions that must be resolved during later authoring; no claims have been clinically signed off.
 - `standards-status.json`: implemented content versus platform work still needed.
 - Source text and hashes: `docs/source-material/chapter2-common-competencies/`.
@@ -20,4 +20,4 @@ Run `node scripts/chapter2-preview.mjs --module 2.2 --output <review-directory>`
 
 The source allocation for behavior is 10 hours; the four session outlines total 600 minutes. For large groups, plan enough observed rounds/staff; the timetable does not prove competence or replace extra practice. Quality Services also preserves its ten-hour allocation. The remaining source competency allocations are in the blueprint. Community mobilization and DRRM share two hours within the guide's 12-hour first-aid group. Proposed 60-minute introductory shares are authored for each module; the 2.7 share comprises six 10-minute stations. Further supervised practice is needed. This split is an authoring proposal, not separately prescribed source hours.
 
-The user approved the authoring drafts in 2.1–2.6, including the 2.4 First Aid owner QA attestation whose method was not specified. Chapter 2.7 is newly drafted for review. Source checking is separate from pending clinical and local approval. See `docs/chapter-2-ipc-review.md`, `docs/chapter-2-firstaid-review.md`, `docs/chapter-2-plants-review.md` and `docs/chapter-2-drrm-review.md`. This is not an independent content approval, clinical endorsement, formal certification or production release. No Chapter I content, questions, IDs, historical progress, certificates or database state changes.
+The user approved the authoring drafts in 2.1–2.7, including the 2.4 First Aid owner QA attestation whose method was not specified. Source checking is separate from pending clinical and local approval. See `docs/chapter-2-ipc-review.md`, `docs/chapter-2-firstaid-review.md`, `docs/chapter-2-plants-review.md` and `docs/chapter-2-drrm-review.md`. This is not an independent content approval, clinical endorsement, formal certification or production release. No Chapter I content, questions, IDs, historical progress, certificates or database state changes.
