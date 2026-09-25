@@ -20,6 +20,10 @@ Read the situation. Model one attempt against the Observe checklist. Run the pra
 
 ## [expected-answers] Expected answers
 
+For the comparison check, reprints fell by 15 per 100 pages; confirm that workload and correct materials remained comparable. This rate does not prove a 75% reduction in cost.
+
+For the communication check, address the no-internet barrier with a controlled paper master, version verification and colleague feedback. Do not substitute an unapproved old copy.
+
 The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved.
 
 ## [misconception] Common misconception
@@ -31,6 +35,10 @@ Declares lower totals a success despite reduced or canceled services. Lower cons
 Fill a trial card: problem, change, owner, baseline, quality measure, review date. Use 20/100 and 5/100 for a fair comparison. In pairs, one colleague has no internet; explain the controlled paper master and handover. Alone, write the replacement colleague’s routine. Ask the team to review the trial before starting and set a review date.
 
 ## [answer-key] Answer key
+
+Comparison check: 1. Fifteen fewer reprints per 100 pages; check comparable workload and correct materials.
+
+Communication check: 2. Prepare a controlled paper master, verify its version and ask for feedback.
 
 1. This does not yet show improvement; compare use per session and services delivered.
 
@@ -55,3 +63,4 @@ Completes the plan but compares raw totals only; prompt for per-session or per-1
 ## [sources-review] Sources and review notes
 
 Draft for review. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. This expands the ninth competency rather than a standalone manual chapter. The draft TESDA 400311217 crosswalk is in the review report; assessor review and local work procedures remain pending. Outstanding visual, audio, source and pilot checks are in the separate review report. No new certification rule.
+
