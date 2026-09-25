@@ -1,57 +1,80 @@
 ## [purpose] Layunin
 
-90 minuto: pambungad 5; modelo 10; practice 50; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Ipakita ang pagtakip ng ubo, tamang pagtatapon at hand hygiene, saka ipaliwanag ang pag-uulat sa BHS nang may respeto.
+Naipapakita ng BHW, kunwari lang, ang pagtakip ng ubo gamit ang tissue at siko, pagtatapon ng tissue at paglilinis ng kamay, at naipapaliwanag ang magalang na pag-uulat sa staff.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 90 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 10, practice 45, feedback at pag-ulit 15, check at debrief 15. Mga 5 minuto ang Read sa app.
+- **Kagamitan:** tissue at basurahan; handrub o handwashing station; mga card, worksheet at talaan ng obserbasyon ng *2.3.4*; job aid.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa IPC staff ang ruta ng pag-uulat ng sintomas, waiting area at kaayusan sa mask; isulat sa job aid, o "kumpirmahin sa midwife / RHU / lokal na protocol".
+- **Hangganan:** kunwari lang; walang uubo o dudura sa kapareha. Walang hahawak sa ginamit na tissue ng iba. Huwag ituro ang pagtakip ng sariling bibig bilang proteksiyon. Walang diagnosis.
 
 ## [opening] Pambungad
 
-Sa role-play, babahing si Mang Lito sa waiting area. Wala siyang tissue sa bulsa. May tissue at basurahan sa station. Tutulong si BHW Rina nang hindi siya pinapahiya o hinihiling na umubo sa ibang tao.
+Basahin ang kaso ni Mang Lito. Itanong: *"Paano siya tutulungan ni Rina nang hindi napapahiya?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Ano ang puwedeng ikahiya ni Mang Lito rito?"*
+2. **Gawin at sabihin.** *"Bakit siko at hindi palad?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** *"Ano ang hindi sinabi ni Rina tungkol kay Mang Lito?"*
+5. **Saklaw at paghingi ng tulong.** *"May umubo malapit sa inyo. Sapat na bang takpan ang sariling bibig?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Anong salita ang gagamitin ninyo sa BHS?"*
 
-Rina: “May tissue po rito. Kung wala, sa siko po tayo bumahing.” Itinuro niya ang basurahan at hand-hygiene station. Ipinaalam niya sa staff ang sintomas at tinanong ang waiting area. Kung may inirerekomendang mask, sundin ang facility protocol at tulong ng staff. Hindi niya pinangalanan ang sakit ni Mang Lito.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Takpan niya ng kamay."** *"Saan pa puwedeng tumakip, maliban sa kamay?"*
+- **"Baka trangkaso; pauwiin na."** Mabuti ang intensiyon. Iniuulat ni Rina sa staff; wala siyang pinapangalanang sakit.
+- **"Bigyan ng mask."** Puwede, kung iyon ang facility protocol. Staff ang magpapasya.
+- **"Tatakpan ko ang sarili kong bibig."** Hindi nito napapalitan ang respiratory controls; iulat sa staff.
 
-Sa palad o kapareha umuubo, ginagamit muli ang tissue o nilalaktawan ang hand hygiene.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kapag may umubo malapit sa akin, protektado ako kung tatakpan ko ang sariling bibig."** Natutunan ito ng marami sa lumang mnemonic. Itanong: *"Sino ang dapat tumakip — ang umuubo o ang katabi?"* Saka balikan ang tissue, siko, basurahan, hand hygiene at pag-uulat.
 
-Gayahin ang tissue at elbow methods. Ipakita ang pagtatapon at hand hygiene; ipaliwanag ang pag-uulat sa staff. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Demonstration ng cough etiquette**, umiikot na triad, 45 minuto at feedback.
 
-1: Maaaring mailipat ng kamay ang secretions sa gamit. / 2: Natatakpan ang ilong at bibig nang hindi ginagamit ang palad. / 3: Dapat gayahin lamang ang kilos at hindi ilantad ang kapareha.
+- **Learner:** ipinapakita ang tissue at siko, itinatapon ang tissue, nililinis ang kamay, saka sinasabi bilang si Rina kung paano iuulat ang sintomas.
+- **Partner:** gumaganap na Mang Lito, walang totoong ubo.
+- **Observer:** minamarkahan ang bawat hanay ng worksheet: naobserbahan, ulitin o hindi nakita; isang kalakasan at isang uulitin.
+- Kathang-isip na detalye lamang. Mag-isa: sanayin muna; ipakita sa supervisor sa ibang araw.
 
-1: Maaaring may kontaminasyon pa sa kamay. / 2: Hindi dapat ibahagi o gamitin muli ang ginamit na tissue. / 3: Bahagi ng kumpletong sequence ang hand hygiene.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1 (walang tissue — saan babahing?):** **"Sa loob ng nakabaluktot na siko."** Natatakpan ang ilong at bibig nang hindi ginagamit ang palad.
+  - "Sa palad na ihahawak agad sa mesa": maaaring mailipat ng kamay ang secretions sa gamit.
+  - "Direkta sa kapareha upang makita ang demonstration": dapat gayahin lamang ang kilos at hindi ilantad ang kapareha.
+- **Check 2 (naitapon ang tissue, nahawakan ang secretions):** **"Linisin ang kamay."** Bahagi ng kumpletong sequence ang hand hygiene.
+  - "Humawak agad sa ibang tao dahil wala na ang tissue": maaaring may kontaminasyon pa sa kamay.
+  - "Itago ang ginamit na tissue para ipasa sa susunod": hindi dapat ibahagi o gamitin muli ang ginamit na tissue.
 
-Natatakpan ang ilong at bibig, naitatapon ang tissue, nalilinis ang kamay at naipapaliwanag ang magalang na pag-uulat.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Kumpleto ang dalawang paraan at follow-through nang walang palad, exposure sa kapareha o paalala.
+Indicator: Natatakpan ang ilong at bibig, naitatapon ang tissue, nalilinis ang kamay at naipapaliwanag ang magalang na pag-uulat.
 
-Kailangan practice: Tama ang pagtakip pero kailangan ng paalala sa hand hygiene o pag-uulat.
+- **Kaya na:** Kumpleto ang dalawang paraan at follow-through nang walang palad, exposure sa kapareha o paalala.
+- **Kailangan pa ng practice:** Tama ang pagtakip pero kailangan ng paalala sa hand hygiene o pag-uulat.
+- **Hindi pa:** Sa palad o kapareha umuubo, ginagamit muli ang tissue o nilalaktawan ang hand hygiene.
 
-Hindi pa: Sa palad o kapareha umuubo, ginagamit muli ang tissue o nilalaktawan ang hand hygiene.
+Pakinggan kung walang pinapangalanang sakit sa pag-uulat. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** pangalanan ang nalaktawang hakbang (kadalasan hand hygiene); ulitin agad ang buong sequence.
+- **Hindi pa:** mag-model muli; gabayan bawat hakbang. Obserbahan muli sa ikalawang araw.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 35; Facilitator Guide PDF pp. 35–36; presentation PDF p. 56. Inalis ng evidence review ang pagtakip ng sariling bibig mula sa mnemonic ng source.
+- Hatian ng 600-minutong source allocation ang 90 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.

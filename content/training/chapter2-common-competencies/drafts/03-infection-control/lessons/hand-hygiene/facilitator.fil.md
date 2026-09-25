@@ -1,57 +1,80 @@
 ## [purpose] Layunin
 
-120 minuto: pambungad 5; modelo 10; practice 80; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Sa return demonstration, piliin ang angkop na paraan at ipakita ang kumpletong paglilinis ng magkabilang kamay kasama ang tamang pagpapatuyo.
+Sa return demonstration, napipili ng BHW ang tamang paraan para sa bawat card at nalilinis ang lahat ng bahagi ng dalawang kamay, kasama ang pagpapatuyo.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 120 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 15, practice sa station 70, feedback at pag-ulit 20, check at debrief 10. Mga 5 minuto ang Read sa app.
+- **Kagamitan bawat station:** umaagos na tubig, sabon, single-use towel, alcohol-based handrub, timer, basurahan; mga card ng *2.3.3* (may nakikitang dumi / walang nakikitang dumi), checklist at talaan ng obserbasyon; job aid.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Subukan ang bawat station; isang staff observer bawat isa. Itanong sa IPC contact ang lokal na tagubilin para sa partikular na impeksyon.
+- **Hangganan:** hindi ito surgical hand preparation. Walang mainit na tubig o kemikal. Sundin ang oras sa aralin, hindi mas maikling bilang.
 
 ## [opening] Pambungad
 
-Maghahanda si BHW Lea sa simulated na pag-aalaga. May nakikitang dumi sa kamay niya. May sabon, tubig, single-use towel at alcohol-based handrub sa station. Hindi sapat ang mabilis na pagdaan sa tubig. Piliin muna ang angkop na paraan.
+Basahin ang kaso ni Lea: *"May nakikitang dumi sa kamay ni Lea. Anong paraan muna — at bakit?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Bakit hindi sapat ang mabilis na pagdaan sa tubig?"*
+2. **Gawin at sabihin.** *"Aling bahagi ang madalas ninyong malaktawan?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** I-model ang buong paghuhugas gamit ang timer, saka ang buong handrub. *"Ano ang ginawa sa towel pagkatapos magpatuyo?"*
+5. **Saklaw at paghingi ng tulong.** *"Naka-gloves kayo. Maglilinis pa rin ba ng kamay?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Alin sa limang pagkakataon ang nangyayari sa trabaho ninyo?"*
 
-Banlawan at patuyuin gamit ang single-use towel. Gamitin ang towel sa pagsara ng manwal na gripo. Sa healthcare demonstration, 40–60 segundo ang buong paghuhugas. Kung angkop ang handrub at walang nakikitang dumi, gumamit ng sapat para sa lahat ng bahagi. Kuskusin ang parehong mga bahagi hanggang matuyo: 20–30 segundo ang buong handrub. Huwag banlawan o punasan ang handrub.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Alcohol, mas mabilis."** Puwede kung walang nakikitang dumi. May dumi kay Lea: sabon at tubig.
+- **"Dalawampung segundo."** 40–60 segundo ang buong healthcare na paghuhugas.
+- **Ipinupunas sa damit ang basang handrub.** *"Hanggang kailan kukuskusin?"*
+- **"Naka-gloves naman ako."** Hindi kapalit ng hand hygiene ang gloves; maglinis pagkatapos alisin ang mga ito.
 
-Handrub ang ginagamit sa may dumi, iniiwan ang mahahalagang bahagi o pinupunasan ang basang handrub.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Nalilinis ng handrub ang kahit anong kamay, kahit marumi."** Mabilis ang handrub at nasa lahat ng lugar nitong mga nakaraang taon. *"May nakikitang dumi ba? Kung gayon, anong paraan?"* Kailangan ang sabon at tubig sa nakikitang dumi. Itama ang ideya, hindi ang tao.
 
-Pumili ng paraan para sa dalawang card: may dumi at walang dumi. Ipakita ang handwash at handrub sa supervisor. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Return demonstration ng hand hygiene**, triad sa station, 70 minuto at feedback.
 
-1: Kailangan ang sabon at tubig para sa nakikitang dumi. / 2: Kulang ang sabon, pagkuskos sa lahat ng bahagi at pagpapatuyo. / 3: Gawin ang buong paghuhugas at tamang pagpapatuyo.
+- **Learner:** bumubunot ng card, sinasabi ang paraan at nagde-demonstrate; saka ang kabilang card.
+- **Partner:** hawak ang timer.
+- **Observer:** minamarkahan ang bawat hanay ng checklist: naobserbahan, ulitin o hindi naobserbahan.
+- Kapag may nakaligtaan, uulitin ng learner ang buong procedure. Walang umaagos na tubig: handrub muna, handwash sa supervisor sa ibang araw.
 
-1: Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi. / 2: Hindi dapat punasan ang handrub at maaaring makontamina muli. / 3: Hindi bahagi ng handrub ang pagbanlaw nito.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1 (may nakikitang dumi):** **"Sabon at tubig."** Gawin ang buong paghuhugas at tamang pagpapatuyo.
+  - "Handrub lamang kahit may nakikitang dumi": kailangan ang sabon at tubig para sa nakikitang dumi.
+  - "Tubig lamang na mabilis na ipapadaan sa kamay": kulang ang sabon, pagkuskos sa lahat ng bahagi at pagpapatuyo.
+- **Check 2 (basa pa pagkatapos ng handrub):** **"Kuskusin hanggang matuyo."** Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi.
+  - "Punasan agad sa suot na damit para makabalik sa gawain": hindi dapat punasan ang handrub at maaaring makontamina muli.
+  - "Banlawan sa tubig kahit wala pang buong handrub procedure": hindi bahagi ng handrub ang pagbanlaw nito.
 
-Tamang paraan; lahat ng bahagi ng magkabilang kamay; kumpletong oras at pagpapatuyo; walang muling kontaminasyon.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Kumpleto ang dalawang demonstration at lahat ng hakbang sa checklist nang walang paalala.
+Indicator: Tamang paraan; lahat ng bahagi ng magkabilang kamay; kumpletong oras at pagpapatuyo; walang muling kontaminasyon.
 
-Kailangan practice: Tama ang paraan pero may nakaligtaang bahagi o hakbang; naitatama sa muling demonstration.
+- **Kaya na:** Kumpleto ang dalawang demonstration at lahat ng hakbang sa checklist nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang paraan pero may nakaligtaang bahagi o hakbang; naitatama sa muling demonstration.
+- **Hindi pa:** Handrub ang ginagamit sa may dumi, iniiwan ang mahahalagang bahagi o pinupunasan ang basang handrub.
 
-Hindi pa: Handrub ang ginagamit sa may dumi, iniiwan ang mahahalagang bahagi o pinupunasan ang basang handrub.
+Bantayan ang hinlalaki, dulo ng daliri at gripo. Isulat ang kilos (*"nakaligtaan ang kaliwang hinlalaki"*), hindi *"pabaya"*. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** pangalanan ang nakaligtaang bahagi; ulitin agad ang buong procedure.
+- **Hindi pa:** i-model muli ang pagpili ng paraan; saka isang paraan bawat ulit habang binabasa ng partner ang checklist. Obserbahan muli sa ikalawang araw.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 34; Facilitator Guide PDF pp. 35–36; presentation PDF pp. 54–55. Pinalitan ng evidence review ang 20-segundong paghuhugas ng source.
+- Hatian ng 600-minutong source allocation ang 120 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.

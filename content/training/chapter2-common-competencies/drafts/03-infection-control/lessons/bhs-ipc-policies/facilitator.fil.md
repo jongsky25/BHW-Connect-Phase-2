@@ -1,57 +1,81 @@
 ## [purpose] Layunin
 
-60 minuto: pambungad 5; modelo 10; practice 20; feedback/pag-ulit 10; talakayan 5; susunod na hakbang 10. Magpalit ng kalahok, kapareha at tagamasid. Gamitin ang bawat hanay ng worksheet at ulitin ang nakaligtaan.
-
-Punan ang policy at training checklist ng BHS: lokasyon, bersiyon, responsable, tungkulin at kulang na training.
+Napupunan ng BHW ang sample na policy at training checklist ng BHS: lokasyon, bersiyon, responsable, tungkulin at kulang na training.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 600 minuto ang pitong IPC session. Kasama sa mungkahing hati ang policy at improvement practice. Malinis na props lamang. Sa hand hygiene: tubig, sabon, single-use towel, angkop na handrub at timer. Walang tunay na karayom, body fluids, mainit na tubig o kemikal na demonstration. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 60 minutong harapan (bahagi ng araling ito sa 600-minutong plano ng subchapter): pambungad 5, model 10, practice 25, feedback at pag-ulit 10, check at debrief 10. Mga 5 minuto ang Read sa app.
+- **Kagamitan:** sample na IPC folder na may lumang pahina; policy at training checklist ng *2.3.6* (worksheet) at talaan ng obserbasyon; job aid.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kathang-isip na folder: may lumang petsa, may pahina sa sterilization at injection, walang exposure contact.
+- Kumpirmahin ang IPC contact at ang exposure contact at proseso; isulat sa job aid, o "kumpirmahin sa midwife / RHU / lokal na protocol".
+- **Hangganan:** huwag magturo ng sterilization, injection o gamot matapos ang exposure. Huwag sabihing hindi kailangan ng BHW ang IPC training.
 
 ## [opening] Pambungad
 
-May folder ng IPC si BHW Nilo, pero luma ang ilang pahina at walang contact sa exposure reporting. Nakakita siya ng dokumento tungkol sa injection at sterilization. Hindi ibig sabihin na maaari na niyang gawin ang mga ito. Kailangan niyang malaman ang tamang gabay at sariling tungkulin.
+Basahin ang kaso ni Nilo. Itanong: *"Nakita niya ang sterilization policy. Puwede na ba siyang mag-sterilize?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Bawat hakbang ay isang seksiyon ng Read at katugmang slide.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** *"Ano ang kulang sa folder ni Nilo?"*
+2. **Gawin at sabihin.** *"Sa bawat policy, ano ang itatala natin?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapareha bago ibunyag.
+4. **Halimbawang sagot.** I-model ang hanay ng hand hygiene. *"Bakit hindi isinulat ni Nilo ang 'trained'?"*
+5. **Saklaw at paghingi ng tulong.** *"Natusok ng karayom ang isang BHW. Ano ang unang gagawin?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapareha bago ibunyag.
+7. **Sa Lunes, gawin ito.** *"Ang hand-hygiene training ninyo: nakita, nakumpirma, nasimulan o naobserbahan?"*
 
-Sa hand hygiene row, isinulat ni Nilo ang lokasyon at kinumpirma ang bersiyon sa nurse. Itinala niya ang kailangan pang return demonstration. Sa sterilization row, isinulat niyang specialist staff ang gagawa. Sa exposure row, hiningi niya ang contact at paraan ng agarang pag-uulat. Hindi niya nilagyan ng “trained” ang hindi pa niya nagawa.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Oo, basta susundin niya nang maayos."** Hindi awtorisasyon ang pagbasa. *"Sino ang gumagawa nito sa BHS?"*
+- **"Hindi kailangan ng BHW ang IPC training."** *"Aling hanay ang para sa tungkulin ninyo?"*
+- **Minamarkahang "trained" dahil dumalo sa seminar.** *"Anong ebidensiya na kaya mo ito?"* Hindi naobserbahang practice ang attendance.
+- **"Sundin ang mukhang pinakabagong pahina."** Kumpirmahin ang bersiyon sa IPC contact.
 
-Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Kapag nabasa ko ang policy, puwede ko na itong gawin."** Mukhang pahintulot ang nakasulat na procedure. Itanong: *"Sino ang nag-train at nagpahintulot sa iyo rito?"* Kailangan ang gabay, training at pahintulot. Purihin ang pagkakita; pagkumpirma ang susunod.
 
-Punan ang sample policy at training checklist. Tukuyin ang lumang gabay, kulang na contact at dalawang gawain na kailangan ng specialist staff. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Policy at training inventory**, umiikot na triad, 25 minuto at feedback.
 
-1: Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel. / 2: Hindi ito katumbas ng practice o observed competence. / 3: Dapat malinaw kung sino ang gagawa at ano ang kailangan.
+- **Learner:** pinupunan ang dalawang checklist; minamarkahan ang lumang gabay, kulang na exposure contact at dalawang gawain ng specialist staff.
+- **Partner:** gumaganap na nurse o IPC contact na tinatanong ni Nilo.
+- **Observer:** tinitiyak na walang training na minarkahang tapos nang walang ebidensiya; isang kalakasan at isang uulitin.
+- Kathang-isip na folder lamang. Mag-isa: ipasuri sa supervisor bago gamitin nang totoo.
 
-1: Nililinaw ang kasalukuyang naaangkop na gabay. / 2: Maaaring hindi angkop o ligtas ang napiling instruction. / 3: Itinatago nito ang tunay na kakulangan.
+## [answer-key] Susi sa self-check
 
-## [observe] Obserbahan
+- **Check 1 (nakita ang sterilization policy):** **"Kumpirmahin ang tungkulin at training."** Dapat malinaw kung sino ang gagawa at ano ang kailangan.
+  - "Puwede na siyang mag-sterilize kahit walang training": hindi nagbibigay ng awtorisasyon ang pagkakita sa papel.
+  - "Kumpleto na agad ang lahat ng IPC training niya": hindi ito katumbas ng practice o observed competence.
+- **Check 2 (magkaibang poster at instruction):** **"Kumpirmahin sa IPC contact."** Nililinaw ang kasalukuyang naaangkop na gabay.
+  - "Piliin ang mas madaling sundin kahit hindi pa malinaw": maaaring hindi angkop o ligtas ang napiling instruction.
+  - "Markahang kumpleto ang checklist upang hindi na magtanong": itinatago nito ang tunay na kakulangan.
 
-Naipapakita ang lokasyon, bersiyon, contact at training gaps nang walang imbentong training o awtorisasyon.
+## [observe] Ano ang oobserbahan
 
-Kaya na: Kumpleto ang mga hanay, malinaw ang kukumpirma at naihihiwalay ang specialist na gawain nang walang paalala.
+Indicator: Naipapakita ang lokasyon, bersiyon, contact at training gaps nang walang imbentong training o awtorisasyon.
 
-Kailangan practice: May lokasyon at contact pero kailangang idagdag ang bersiyon o training gap matapos ang paalala.
+- **Kaya na:** Kumpleto ang mga hanay, malinaw ang kukumpirma at naihihiwalay ang specialist na gawain nang walang paalala.
+- **Kailangan pa ng practice:** May lokasyon at contact pero kailangang idagdag ang bersiyon o training gap matapos ang paalala.
+- **Hindi pa:** Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.
 
-Hindi pa: Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.
+Tingnan ang linya ng exposure contact: may laman, o may markang "kukumpirmahin". Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-## [support] Suporta at talakayan
+## [support] Kung kailangan ng dagdag na suporta
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+- **Kailangan pa:** itanong *"Aling bersiyon? Anong training ang kulang pa?"*; ulitin ang dalawang hanay.
+- **Hindi pa:** i-model nang magkatabi ang hanay ng hand hygiene at sterilization; obserbahan muli sa ikalawang araw.
+- Practice ang feedback ng kapwa, hindi rating ng staff.
 
-## [sources-review] Lokal na kagamitan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 36–37; Facilitator Guide PDF p. 35; presentation PDF pp. 60–61. Evidence review: tugma sa DOH 2021 ang sampung policy; kumpirmahin ang lokal na pagpapatupad.
+- Hatian ng 600-minutong source allocation ang 60 minuto.
+- Inatesta ng program owner ang clinical sign-off noong 25 Set 2026; hindi naitala ang pangalan ng reviewer. Lokal na protocol ang susundin kapag iba.
