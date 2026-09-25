@@ -26,7 +26,7 @@ export const PROVIDER_VOICES = {
 };
 export const providerOfVoice = (voice) => (voice?.startsWith("gemini:") ? "gemini" : "edge");
 const hashVoice = (provider, voice) =>
-  provider === "gemini" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k` : `${voice}|${SPEECH_RULES}`;
+  provider === "gemini" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k-resampled` : `${voice}|${SPEECH_RULES}`;
 export const AUDIO_ROOT = "/training/audio";
 // Bump when spokenText changes so existing audio is re-rendered.
 export const SPEECH_RULES = "speech-v2";
