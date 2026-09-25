@@ -128,8 +128,206 @@ RPC). All other lints unchanged. The pilot's baseline counts differ from the
 CI project's (27/97 vs 26/91). That drift predates this change and was not
 investigated here.
 
-Separately, `20260811000000_inc27_training_audio.sql` is also absent by name
-from both histories. It was not investigated here and needs the same check.
+`20260811000000_inc27_training_audio.sql` was also absent by name from both
+histories. See the next section.
+
+### INC-27 (`20260811000000_inc27_training_audio.sql`) — applied late, 2026-09-25
+
+Same symptom as INC-29, same result: **it had never been applied to either
+project, under any name**.
+
+What the file creates (no functions, so no SECURITY DEFINER RPC and nothing
+to revoke; no explicit grants):
+
+- table `public.course_module_audio`, 11 columns (`id`, `module_id` →
+  `course_modules` on delete cascade, `section_index`, `language` check
+  `fil|en`, `audio_url`, `format` check `opus|mp3` default `opus`,
+  `duration_seconds` check `>= 0`, `content_hash`, `timings` jsonb,
+  `created_at`, `updated_at`), unique `(module_id, section_index, language)`,
+  index `course_module_audio_module_id_idx`, trigger
+  `course_module_audio_set_updated_at` (uses `public.set_updated_at()`), RLS on
+- policies `course_module_audio_read` (select) and
+  `course_module_audio_admin_write` (all), copies of the
+  `course_module_visuals_*` pair
+- public storage bucket `training-audio`, with `storage.objects` policies
+  `training_audio_public_read` (select) and `training_audio_admin_write`,
+  `training_audio_admin_update` and `training_audio_admin_delete`
+  (insert, update and delete)
+
+Checks before applying, read-only, on both projects: `to_regclass('public.course_module_audio')`
+null; no public table named `%audio%`; no `training-audio` bucket; no
+`training_audio%` storage policy; no `schema_migrations.statements` entry
+matching `course_module_audio`, `training-audio` or `training_audio`; no
+function body mentioning either. So it was not folded into another migration.
+Its dependencies (`set_updated_at()`, `current_app_user()`,
+`current_org_path()`, `org_unit_path(uuid)`, `course_modules`,
+`courses.status/org_unit_id`) were present on both. The course page
+(`src/app/courses/[id]/page.tsx`) ignores the error from its
+`course_module_audio` query, so narration was silently absent rather than
+failing. `scripts/tts-render.mjs` could not have written anywhere.
+
+| Project | `inc27_training_audio` |
+|---|---|
+| `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925003607` |
+| pilot (`ltzicxyefizxoqhfuuzc`) | applied as `20260925004759` (owner-confirmed) |
+
+Applied verbatim from the file via `apply_migration`. Verification query (run on
+each project after applying):
+
+```sql
+select
+ (select string_agg(version||':'||name, ', ') from supabase_migrations.schema_migrations where name like 'inc27%') as migration_rows,
+ (select count(*) from information_schema.columns where table_schema='public' and table_name='course_module_audio') as n_cols,
+ (select string_agg(pg_get_constraintdef(oid), ' | ' order by contype, conname) from pg_constraint where conrelid='public.course_module_audio'::regclass) as cons,
+ (select string_agg(indexname, ',' order by indexname) from pg_indexes where schemaname='public' and tablename='course_module_audio') as idx,
+ (select string_agg(tgname, ',') from pg_trigger where tgrelid='public.course_module_audio'::regclass and not tgisinternal) as trg,
+ (select relrowsecurity from pg_class where oid='public.course_module_audio'::regclass) as rls,
+ (select string_agg(policyname||':'||cmd, ',' order by policyname) from pg_policies where schemaname='public' and tablename='course_module_audio') as tbl_policies,
+ (select bool_and(md5(replace(coalesce(a.qual,'')||'|'||coalesce(a.with_check,''),'course_module_audio','X'))
+                = md5(replace(coalesce(v.qual,'')||'|'||coalesce(v.with_check,''),'course_module_visuals','X')))
+    from pg_policies a join pg_policies v on v.tablename='course_module_visuals'
+     and replace(v.policyname,'course_module_visuals','X') = replace(a.policyname,'course_module_audio','X')
+   where a.tablename='course_module_audio') as policies_match_visuals,
+ (select string_agg(id||':public='||public::text, ',') from storage.buckets where id='training-audio') as bucket,
+ (select string_agg(policyname||':'||cmd, ',' order by policyname) from pg_policies where schemaname='storage' and tablename='objects' and policyname like 'training_audio%') as storage_policies;
+```
+
+Result, identical on both projects apart from `migration_rows`: `n_cols = 11`,
+with the types and not-null flags matching the file. `cons` = the three
+checks, the FK `ON DELETE CASCADE`, the PK and the unique key.
+`idx = course_module_audio_module_id_idx,
+course_module_audio_module_id_section_index_language_key,
+course_module_audio_pkey`. `trg = course_module_audio_set_updated_at`,
+`rls = true`, `tbl_policies = course_module_audio_admin_write:ALL,
+course_module_audio_read:SELECT`, `policies_match_visuals = true`,
+`bucket = training-audio:public=true`, `storage_policies =
+training_audio_admin_delete:DELETE, training_audio_admin_update:UPDATE,
+training_audio_admin_write:INSERT, training_audio_public_read:SELECT`.
+`anon`/`authenticated` get the table privileges from schema default privileges,
+as the file's closing comment says. RLS is what enforces access.
+
+Security advisor, before → after, per finding (not just counts): no finding
+added or removed on either project. CI: anon 26, authenticated 92, 5
+`rls_enabled_no_policy`, 1 `function_search_path_mutable`, 1
+`auth_leaked_password_protection`, unchanged. Pilot: anon 27, authenticated 98,
+the same other lints, unchanged.
+
+### Security-advisor drift between the projects (checked 2026-09-25)
+
+The pilot shows 27 anon / 98 authenticated `*_security_definer_function_executable`
+findings, CI 26 / 92 (27/97 vs 26/91 before INC-29 added one authenticated
+finding to each). Diffing the flagged functions by name gives 3 + 2 anon and 6
+authenticated differences, which account for both gaps exactly:
+
+| Function | Flagged on | Cause |
+|---|---|---|
+| `rpc_kb_entry_mark_ai_drafted(uuid)`, `rpc_kb_entry_confirm_ai_draft(uuid)`, `rpc_dashboard_ai_flywheel(timestamptz, timestamptz)` | pilot only (authenticated) | **Missing migration on CI**: `20260806000000_inc18b_ai_gap_draft.sql` was never applied to CI. The three RPCs, the `kb_entries.ai_drafted_at`/`ai_draft_confirmed_at` columns and the `ai_gap_draft` flag are absent there, and CI's `rpc_kb_entry_update` is still the inc8 body (md5 `61dabe40…`), without the AI-draft publish gate. On the pilot all four bodies match the file (md5 `feda1ce0…`, `cf322a16…`, `1b3ee38a…`, `ee621499…`). There is no history row mentioning them, so it was applied outside the migration tool. These findings are intended: authenticated-only, anon revoked. |
+| `survey_org_unit_path(uuid)`, `survey_response_org_unit_path(uuid)`, `survey_status(uuid)` | pilot only (anon + authenticated) | **Pilot-only migration that is not in the repo.** The pilot's `fix_surveys_org_unit_rls_composability` (`20260726082227`) is a different version from CI's (`20260724065425`). It creates these three SECURITY DEFINER helpers, `grant … to anon, authenticated`, and the pilot's `survey_questions_read`, `survey_questions_admin_write`, `survey_responses_admin_read` and `survey_answers_admin_read` policies call them. No file in `supabase/migrations/` defines them, and CI has none of them. It has a history row, so it went through the migration tool rather than a dashboard SQL edit, but its SQL was never committed. |
+| `rpc_give_consent()`, `rpc_complete_password_change()` | CI only (anon) | **Pilot-only hardening that never reached the repo.** The pilot's history has `harden_function_grants` and `harden_function_grants_v2` (`20260720031328`/`…31501`), which revoke PUBLIC/anon execute on these. The committed baseline (`20260720000000_baseline_captured_from_remote.sql`) only `grant … to authenticated` and never revokes PUBLIC, so CI, built from the repo, still has `=X/postgres, anon=X/postgres` on both. Bodies are identical on both projects. |
+
+Also not listed by name in either history, but present and matching the file
+on both: inc17 (`rpc_track_event` md5 `ea09baeb…`, `chat_conversation` flag),
+inc17b (`kb_entries.content_id`) and inc18a (`rpc_ai_check_budget`,
+`rpc_ai_record_call`, `rpc_ai_usage_summary`, all bodies matching). So they
+were applied without a history row. They cause no drift.
+
+**Update: inc18b applied to CI on 2026-09-25**, as `20260925012108:inc18b_ai_gap_draft`,
+verbatim from the file. Beforehand, CI had every dependency (`kb_entries`
+columns, `unmatched_questions.resolved_entry_id/text`, the `ai_usage` and
+`analytics_events` columns, `feature_flags`) and none of the file's objects.
+No migration after inc18b redefines `rpc_kb_entry_update`, so replacing the
+inc8 body loses nothing. Verification (same shape as the INC-29 query above,
+over the four functions):
+
+| Function | `body_md5` | security definer | `search_path=public` | anon exec | authenticated exec |
+|---|---|---|---|---|---|
+| `rpc_kb_entry_update(…11 args)` | `ee621499e697a5f00efc52a16e899a28` | yes | yes | true (unchanged; same on the pilot, not revoked by the file) | true |
+| `rpc_kb_entry_mark_ai_drafted(uuid)` | `feda1ce03a44bb704d7ac0ffa9479482` | yes | yes | false | true |
+| `rpc_kb_entry_confirm_ai_draft(uuid)` | `cf322a16b6fdf7db97f8f7134a3d6c69` | yes | yes | false | true |
+| `rpc_dashboard_ai_flywheel(timestamptz, timestamptz)` | `1b3ee38aecc7038143dab52219c71d4c` | yes | yes | false | true |
+
+All four match the md5 of the file's `$$` bodies and the pilot. Also present:
+`kb_entries.ai_drafted_at` and `ai_draft_confirmed_at` (timestamptz), the partial
+index `kb_entries_ai_drafted_at_idx … WHERE (ai_drafted_at IS NOT NULL)`, and
+`ai_gap_draft=false`. Security advisor, before → after: anon 26 → 26,
+authenticated 92 → 95. The three added findings are exactly the three new RPCs.
+They are intended and are the same findings the pilot has. Nothing else
+changed. The two projects now differ only by the survey helpers
+(pilot-only, 3 anon + 3 authenticated) and the consent/password grants
+(CI-only, 2 anon): pilot 27/98, CI 26/95.
+
+**Update: consent/password revoke applied to CI on 2026-09-25.** The corrective
+migration `20260930000000_revoke_anon_consent_password_rpcs.sql` revokes
+`public, anon` execute on `rpc_give_consent()` and
+`rpc_complete_password_change()` and re-grants `authenticated`. Both functions
+act only on the caller's row via `auth.uid()`, and their only callers
+(`consent-form.tsx`, `change-password-form.tsx`) run signed in, so the only
+behaviour change is that anon gets a permission error instead of a no-op.
+
+| Project | `revoke_anon_consent_password_rpcs` |
+|---|---|
+| `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925012507` |
+| pilot (`ltzicxyefizxoqhfuuzc`) | not applied, by owner decision. Its July `harden_function_grants` rows already give the same grants, so applying it would only add a history row |
+
+Verification on CI:
+
+```sql
+select p.oid::regprocedure::text sig, p.proacl::text acl,
+  has_function_privilege('anon', p.oid, 'execute') anon_x,
+  has_function_privilege('authenticated', p.oid, 'execute') auth_x
+from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+where n.nspname = 'public' and p.proname in ('rpc_give_consent', 'rpc_complete_password_change');
+```
+
+Result: both `acl = {postgres=X/postgres,authenticated=X/postgres,service_role=X/postgres}`,
+`anon_x = false`, `auth_x = true`. This is the same ACL the pilot has, and
+the bodies are unchanged. Security advisor, before → after: anon 26 → 24 (the
+two findings for these functions removed), authenticated 95 → 95, nothing
+added. The only remaining difference is the pilot's survey helpers: pilot
+27/98, CI 24/95.
+
+**Update: survey-helper drift fixed on 2026-09-25.** The repo's shape was
+kept, not the pilot's. The migration
+`20261001000000_survey_policies_repo_shape.sql` re-creates the four child-table
+policies verbatim from `20260728000000_inc11_surveys.sql` (policies first,
+because the pilot's depended on the helpers), then drops `survey_status(uuid)`,
+`survey_org_unit_path(uuid)` and `survey_response_org_unit_path(uuid)`.
+
+Why the repo's shape rather than the pilot's: the two admit the same rows.
+The pilot's helpers read `surveys`/`survey_responses` as definer, while the
+repo's `exists (…)` reads them through their own RLS. Those RLS policies
+restate exactly the conditions the helper checks test, so the result is the
+same. CI and e2e already run the repo's shape. The pilot's helpers were also
+callable directly via `/rest/v1/rpc`, so anon could read any survey's status
+and org path, drafts included. No app code, script or e2e test calls them.
+
+| Project | `survey_policies_repo_shape` |
+|---|---|
+| `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925020459`. No change: the policy md5s were identical before and after, and there were no helpers to drop |
+| pilot (`ltzicxyefizxoqhfuuzc`) | applied as `20260925020632` (owner-confirmed) |
+
+Verification query (run on each project):
+
+```sql
+select string_agg(policyname||'='||md5(cmd||'|'||coalesce(qual,'')||'|'||coalesce(with_check,'')), ', ' order by policyname) policies,
+  (select count(*) from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public' and p.proname in ('survey_org_unit_path','survey_response_org_unit_path','survey_status')) helper_count
+from pg_policies where schemaname = 'public' and tablename like 'survey%';
+```
+
+Result, identical on both projects: `helper_count = 0` and
+`survey_answers_admin_read=9c59f2b2…, survey_questions_admin_write=6002989c…,
+survey_questions_read=25ae7b24…, survey_responses_admin_read=8f9f4e91…,
+surveys_admin_write=af5ef86f…, surveys_read_scope=4374cc21…`.
+
+Security advisor, before → after: CI 24/95 → 24/95, nothing added or
+removed. Pilot 27/98 → 24/95: the six survey-helper findings (3 anon, 3
+authenticated) were removed and nothing was added. **The two projects' security
+advisor findings are now identical, finding for finding.** The only remaining
+history difference is that the pilot has no
+`revoke_anon_consent_password_rpcs` row (owner decision; its July rows already
+give the same grants), and inc17/17b/18a still have no history row on either
+project.
 
 ## Rolling out a risky feature
 
