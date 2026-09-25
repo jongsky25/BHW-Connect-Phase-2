@@ -10,7 +10,7 @@ The BHW hands over Elena's concern to the right colleague in three factual lines
 ## [prepare] Prepare
 
 - Confirm with the midwife the authorized reporting channel and who receives handovers.
-- The resident card holds the model handover; that player acts as the midwife.
+- The midwife card tells that player how to receive the handover and question labels or guesses.
 - Not in scope: other record formats. No public chats. Immediate danger: emergency contact first, then the report; confirm with the midwife, RHU or local protocol.
 
 ## [opening] Opening

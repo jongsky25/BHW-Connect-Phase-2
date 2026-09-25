@@ -10,7 +10,7 @@ Iniuulat ng BHW sa tamang katrabaho ang alalahanin ni Elena sa tatlong factual n
 ## [prepare] Paghahanda
 
 - Kumpirmahin sa midwife ang awtorisadong paraan ng pag-uulat at ang tatanggap ng handover.
-- Nasa card ng residente ang modelong handover; ang gaganap dito ang magiging midwife.
+- Nasa card ng midwife kung paano tatanggapin ang handover at itatanong ang bansag o hula.
 - Hindi saklaw: ibang anyo ng record. Bawal ang pampublikong chat. Agarang panganib: emergency contact muna, saka ang ulat; kumpirmahin sa midwife, RHU o lokal na protocol.
 
 ## [opening] Pambungad

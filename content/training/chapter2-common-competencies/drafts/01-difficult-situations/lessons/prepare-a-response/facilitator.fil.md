@@ -50,7 +50,7 @@ Itatala ng tagamasid ang salita ni Amina. Kathang-isip na detalye lamang. Mag-is
 ## [answer-key] Susi sa self-check
 
 1. **Ano ang unang itatanong ni Amina?** Tama: *"Ano po ang gusto ninyong linawin?"*: may pagkakataong magpaliwanag si Rosa. *"Ayaw po ba ninyong sumunod sa iskedyul?"*: ipinapalagay ang dahilan niya. *"Puwede po bang matapos muna ang form ko?"*: inuuna ang form bago ang pahintulot at alalahanin.
-2. **Pagbalik sa hapon: aling plano?** Tama: "Kumpirmahin ang oras at alalahanin": sinusunod ang napagkasunduan. "Tapusin ang tanong sa harap ng kapitbahay": hindi tinutugunan ang alalahanin sa pribadong usapan. "Itala na tumanggi sa lahat ng pagbisita": hindi iyon ang sinabi ni Rosa.
+2. **Pagbalik sa hapon: aling plano?** Tama: "Kumpirmahin ang oras at babalikang alalahanin": sinusunod ang napagkasunduan. "Tapusin ang mga tanong sa harap ng mga kapitbahay": hindi tinutugunan ang alalahanin sa pribadong usapan. "Itala na tumanggi sa lahat ng pagbisita": hindi iyon ang sinabi ni Rosa.
 
 ## [observe] Ano ang oobserbahan
 
@@ -60,7 +60,7 @@ Rating ng staff sa practice: Ipinapakita ang apat na bahagi ng plano: layunin, p
 - **Kailangan pa ng practice:** May bukas na tanong at contact, pero kailangang paalalahanang humingi muna ng pahintulot.
 - **Hindi pa:** Nagpaplanong tapusin ang form kahit wala pang pahintulot, o tinatawag si Rosa na ayaw sumunod.
 
-Tingnan kung may pahintulot bago banggitin ang form. Ang tamang sagot sa self-check ay hindi ebidensya ng kakayahan.
+Hanapin ang pahintulot bago banggitin ang form. Hindi ebidensya ng kakayahan ang tamang sagot sa self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 
