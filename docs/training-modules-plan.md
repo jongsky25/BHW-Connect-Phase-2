@@ -1778,6 +1778,22 @@ with draft assets. The Los Baños production course still serves the
 showing the clip there needs the asset approved and a new revision staged
 and published through the normal reviewed release step.
 
+**Owner visual QA, 25 Sep 2026 — recorded, not promoted.** The user reviewed
+a frame-by-frame walkthrough of the clip's full timeline (title card, all
+8 steps, closing summary) and approved it ("I approve it"). That is
+recorded as an asset-scoped attestation in
+`content/training/chapter2-common-competencies/drafts/03-infection-control/review.json`
+(`asset_visual_approvals` on the `hand-hygiene` entry) and in the package's
+`sample-review.json`. The clip's `review_status` in `lesson.json` stays
+`"draft"` — `chapter2-validate.mjs` enforces that every asset in this
+still-authoring package stays `draft` until the whole package clears its
+`blocking_reviews` (clinical/IPC review, independent Filipino/English
+review, a usability pilot, browser QA), since `training:load` treats
+`review_status: "approved"` as an all-or-nothing signal that a lesson's
+entire revision is ready to promote, not a per-asset checkbox. So: the
+clip itself has real owner sign-off now, but promoting it still waits on
+the rest of the package, same as every other Chapter 2.3 asset.
+
 ---
 
 ### INC-24 — Author modules 2-5
