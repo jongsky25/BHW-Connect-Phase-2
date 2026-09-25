@@ -85,9 +85,22 @@ No Supabase write, no migration, and lesson revisions (and their approval
 hashes) are unchanged: audio is keyed by lesson key + section ID + language +
 a hash of the exact narrated text and voice.
 
-- Voices: `fil-PH-BlessicaNeural` and `en-PH-RosaNeural`, via the keyless Edge
-  Read Aloud service (honours `HTTPS_PROXY`). Each sentence is synthesized
-  separately and the MP3 frames are joined, so read-along timings are exact.
+- Providers (`--provider edge|gemini`). Without the flag, each section keeps
+  the provider its current audio uses (new sections get Edge), so a re-run
+  after a text edit never swaps a re-voiced chapter back.
+  - Edge: `fil-PH-BlessicaNeural` and `en-PH-RosaNeural`, via the keyless
+    Edge Read Aloud service (honours `HTTPS_PROXY`). Each sentence is
+    synthesized separately and the MP3 frames are joined, so read-along
+    timings are exact.
+  - Gemini: `gemini-3.8-flash-tts`, voice Kore, `GEMINI_API_KEY`. One request
+    per sentence; clips are joined with a 300 ms pause and encoded once at
+    32 kbps mono (22.05 kHz), so timings are measured clip lengths. Approved
+    by the owner as a direct script-only call (`docs/free-ai-leverage-plan.md`
+    §2). `--max-requests` (default 1,200, the daily ceiling) stops a run
+    early; sections not rendered keep their old audio and the next run
+    resumes. `--chapter 1|2`, `--lessons` and `--languages` narrow a run.
+  - As of 25 Sep 2026 Chapter I is being re-voiced with Gemini; Chapter II
+    stays on Edge until the owner has listened to Chapter I.
 - `**bold**` markers are stripped from speech; the Read view renders them bold.
 - Any run of two or more capitals is an acronym and is spoken letter by
   letter: `B H W` for the English voice, English letter names spelled for the
@@ -105,6 +118,14 @@ a hash of the exact narrated text and voice.
   reused there.
 - Machine speech: a listening review (acronym spelling checked by
   transcription only; Filipino/English code-switching and numbers) is still owed.
+
+**Legacy: `npm run training:tts` / `course_module_audio`.** That script
+narrates the old one-page module view (`/courses/:id`, `lesson.{fil,en}.md`)
+into Supabase. Chapter I and II learners no longer reach that view, so it is
+frozen: do not render new audio with it. The code stays because the rollback
+plan (`docs/bhw-reference-implementation-plan.md`) switches a program back to
+the legacy reader. The 24 Module 1 rows written to the pilot on 25 Sep 2026
+are left in place and unused.
 
 Versioned source of truth for facilitated BHW training content, loaded into a
 Supabase project by `scripts/training-load.mjs`. This is the format

@@ -17,8 +17,8 @@ for this codebase.
 | INC-22 — BHW UI: bookends, lesson renderer, visuals, pre/post-test | ✅ Merged — [PR #57](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/57). CI green including `e2e/training-sessions.spec.ts` (44 passed, 0 failed, 0 flaky) — the first increment in this plan whose e2e coverage was actually executed against a live project rather than left owed. See the Status note inside the INC-22 section below. |
 | INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | ✅ Approved by the user 20 Sep 2026. Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot, rendering at Detalyado since 19 Sep, course status `published`. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it taught the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | ✅ Merged — [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64). Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit), and real touch-swipe is unverified (only a `scrollLeft` stand-in). No carousel dependency added. The PR's test-plan checklist (real click-through, real touch-swipe, e2e run) was left unchecked at merge — owed, not blocking. A follow-up axe-core run in CI (a different session's PR, [PR #66](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/66)) caught one real color-contrast bug in the Basahin/Islide toggle — fixed there, not a flake. |
-| INC-27 — audio narration + read-along | ✅ Merged — [PR #68](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/68), by a separate session run in parallel with this one. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in that session (same constraint `docs/session-handoff.md` §2 documents for Supabase MCP, and that this plan's own INC-23 row above hit first). See the Status note inside the INC-27 section below. |
-| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual), pipeline verified 20 Sep 2026; first clip (Chapter 2.3 handrub steps) rendered and wired into reference lessons 25 Sep 2026 as a draft asset, pending review before a new revision is published — see the INC-28 section below. |
+| INC-27 — audio narration + read-along | **Legacy view only** — chapter-route narration is `training:narrate` (see the INC-27 section). ✅ Merged — [PR #68](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/68), by a separate session run in parallel with this one. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in that session (same constraint `docs/session-handoff.md` §2 documents for Supabase MCP, and that this plan's own INC-23 row above hit first). See the Status note inside the INC-27 section below. |
+| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete **for the legacy view only**; the chapter-route version (Track B of `narration-visuals-realignment-handoff.md`) is deferred — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual), pipeline verified 20 Sep 2026; first clip (Chapter 2.3 handrub steps) rendered and wired into reference lessons 25 Sep 2026 as a draft asset, pending review before a new revision is published — see the INC-28 section below. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
 | INC-24 — author modules 2-5 | ✅ Code-complete, 20 Sep 2026. All four modules load clean through every INC-21 validation including the coverage check; `npm run kb:check-sources` passes (adds `eo-51`, `ra-10028`, `ao-2015-0053`, `dc-2021-0486`); `test-questions.json` grew from 9 to 21 questions, covering modules 1-5; `--apply`'d to the pilot and rendered in the real app (read + slide modalities) under a throwaway review account. See the INC-24 section below for what's still owed (a user approval pass, audio/animation modalities, e2e/axe-core coverage). |
 | INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24's user approval (code is unblocked). Now **four** modules, not three — §C is a nine-module map. |
@@ -1472,6 +1472,14 @@ swipe lines as closed.
 
 ### INC-27 — Audio narration + read-along
 
+> **Legacy (25 Sep 2026).** Everything below targets the old one-page
+> module view (`/courses/:id`) and `training:tts` → `course_module_audio`.
+> Chapter I and II learners use the chapter route, whose Read-mode narration
+> comes from `npm run training:narrate` (committed MP3s + `narration.json`;
+> Edge or Gemini, see `content/training/README.md`). `training:tts` is frozen
+> but kept for the rollback reader. See
+> `docs/narration-visuals-realignment-handoff.md`.
+
 **User request:** an audio mode — not only reading, but playable while
 reading.
 
@@ -1649,6 +1657,14 @@ ran — exactly the plan's own requirement.
 ---
 
 ### INC-28 — Animated concept clips
+
+> **Legacy (25 Sep 2026).** Tier 1 below (scene build-up) targets the old one-page
+> module view (`/courses/:id`) and `training:tts` → `course_module_audio`.
+> Chapter I and II learners use the chapter route, whose Read-mode narration
+> comes from `npm run training:narrate` (committed MP3s + `narration.json`;
+> Edge or Gemini, see `content/training/README.md`). `training:tts` is frozen
+> but kept for the rollback reader. See
+> `docs/narration-visuals-realignment-handoff.md`.
 
 **User request:** animated video clips explaining concepts.
 
