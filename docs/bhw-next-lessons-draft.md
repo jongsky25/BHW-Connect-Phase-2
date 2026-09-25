@@ -1,6 +1,8 @@
 # Subchapters 1.2–1.5: conversion draft for review
 
-Not published. The September 24 owner approval covered the original six lessons and seven assets in subchapter 1.1. It is not recorded as approval of these newly converted lessons.
+**Update:** 1.2–1.5 were approved and published on the pilot (`0eb273d`). The text below is the original draft record.
+
+Not published at the time of writing. The September 24 owner approval covered the original six lessons and seven assets in subchapter 1.1. It is not recorded as approval of these newly converted lessons.
 
 This first conversion contains 20 bilingual short lessons: four for UHC, five for BHS policies, five for RA 7883, and six for the BHW/barangay relationships topic. There are 33 Read sections and 33 separately written slide summaries. Each lesson has an explanatory check, private facilitator prompts and an observation rubric. All 33 non-excluded inherited concept IDs remain represented. Existing module definitions, question banks and historical progress are unchanged.
 

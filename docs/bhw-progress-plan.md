@@ -17,7 +17,7 @@ colour.
 
 | # | Question | Decision |
 |---|---|---|
-| 1 | Does content not yet published count in the percentage? | **No.** Only published, required lessons count. Unpublished subchapters (currently 1.6–1.9) and unavailable chapters (2–3) are shown as "Coming soon" / "Not yet available", never as 0%. |
+| 1 | Does content not yet published count in the percentage? | **No.** Only published, required lessons count. Unpublished subchapters and unavailable chapters are shown as "Coming soon" / "Not yet available", never as 0%. (Since 25 Sep 2026 all of 1.1–1.9 and Chapter II are published; only Chapter III is unavailable.) |
 | 2 | Do the assessment and certificate count in the chapter percentage? | **No — separate steps.** The percentage measures lessons. Pretest, post-test and certificate appear as a step tracker next to it. |
 | 3 | A "My training" card on `/home`? | **Yes.** |
 | 4 | Supervisor (admin / facilitator) view of each BHW's progress? | **Yes**, as Phase 3. |

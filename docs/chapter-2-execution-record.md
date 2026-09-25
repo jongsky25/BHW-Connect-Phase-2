@@ -1,4 +1,8 @@
-# Current update: Chapter 2.7 review and QA attestation — 25 September 2026
+# Current update: Chapter 2 published — 25 September 2026
+
+Chapter 2 was published on the Los Baños pilot on 25 September 2026 (`content/training/chapter2-common-competencies/release/los-banos-2026-09-25.json`). Statements below that Chapter 2 "remains unavailable" describe the state before publication.
+
+# Earlier update: Chapter 2.7 review and QA attestation — 25 September 2026
 
 The user confirmed local DRRM and clinical review, an observed pilot and browser visual QA were done and approved. These are recorded as user-attested approvals without invented reviewer identities or artifacts. Independent language/instructional review, keyboard and print-layout QA and publication authorization are not established by that message. Chapter 2 remains unavailable.
 
