@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Itinatala ang piniling hakbang, taong kikilos at oras; kinukumpirma ang pagpili ni Ben at hindi tinatawag na appointment ang update.",
+      "observable_en": "Records the chosen action, responsible person and time; confirms Ben’s choice without presenting an update as an appointment.",
+      "not_yet_fil": "Nangangako ng appointment na hindi pa kumpirmado o ipinipilit ang pagpiling ayaw ni Ben.",
+      "not_yet_en": "Promises an unconfirmed appointment or insists on an option Ben has declined.",
+      "levels": {
+        "kaya_na_fil": "Malinaw ang tatlong bahagi at hindi pa tiyak na iskedyul; kayang ulitin ni Ben ang kasunduan nang walang paalala.",
+        "kaya_na_en": "States all three elements and the unconfirmed schedule; Ben can restate the agreement without prompting.",
+        "kailangan_practice_fil": "May hakbang at responsable pero walang oras; naidaragdag matapos itanong kung kailan magbabalitaan.",
+        "kailangan_practice_en": "Has an action and owner but no time; adds it after being asked when the update will happen.",
+        "hindi_pa_fil": "Nangangako ng appointment na hindi pa kumpirmado o ipinipilit ang pagpiling ayaw ni Ben.",
+        "hindi_pa_en": "Promises an unconfirmed appointment or insists on an option Ben has declined."
+      }
+    }
+  ]
+}

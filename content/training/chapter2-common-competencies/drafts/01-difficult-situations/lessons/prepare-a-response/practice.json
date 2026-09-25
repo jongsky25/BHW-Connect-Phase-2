@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-prepare-a-response",
+  "objective_id": "prepare-a-response.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Ipinapalagay nito ang dahilan ni Rosa. Alamin muna ang alalahanin.",
+          "en": "This assumes Rosa’s reason. Find out the concern first."
+        },
+        {
+          "fil": "Bukas ang tanong at nagbibigay ng pagkakataong magpaliwanag si Rosa.",
+          "en": "The open question gives Rosa room to explain."
+        },
+        {
+          "fil": "Inuuna nito ang form bago ang pahintulot at alalahanin.",
+          "en": "This puts the form ahead of permission and the concern."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Sinusunod nito ang napagkasunduan at may malinaw na susunod na hakbang.",
+          "en": "This respects the agreement and gives a clear next step."
+        },
+        {
+          "fil": "Hindi nito tinutugunan ang alalahanin sa pribadong usapan.",
+          "en": "This does not address the privacy concern."
+        },
+        {
+          "fil": "Hindi ito ang sinabi ni Rosa; ibang oras ang hiniling niya.",
+          "en": "That is not what Rosa said; she requested another time."
+        }
+      ]
+    }
+  ]
+}
