@@ -6,6 +6,11 @@ the pilot project, so a new session does not re-discover either the hard way.
 
 Last updated: 24 September 2026.
 
+**Narration / voice / animation work:** read
+`docs/narration-visuals-realignment-handoff.md` first. INC-27/INC-28 were
+built for the legacy module view, and that document redirects them to the
+chapter route.
+
 ---
 
 ## 1. How to work here (the part that matters most)
