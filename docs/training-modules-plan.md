@@ -1688,10 +1688,14 @@ rendered against the pilot (an `AZURE_SPEECH_KEY`, or the edge-tts
 fallback, run via `training:tts --apply`). Until then the scene renders in
 its fully-revealed static state everywhere, which is also its correct
 `prefers-reduced-motion` behaviour — nothing is broken, the build-up
-just has nothing to build up from yet. No e2e coverage added this round
-(would need real audio in the shared `bhw-connect-e2e` project to be
-meaningful); covered instead by allowlist, pure-function, and
-`@testing-library/react` DOM-effect tests.
+just has nothing to build up from yet. Beyond the allowlist, pure-function,
+and `@testing-library/react` DOM-effect tests, `e2e/lesson-narration.spec.ts`
+(25 Sep 2026) covers the build-up in a real browser: a fixture course with a
+three-step SVG and a runtime-generated 6s silent WAV whose timings walk
+heading → three body sentences, asserting each step reveals on its sentence
+and that `prefers-reduced-motion` keeps all steps shown during playback.
+Status on 25 Sep 2026: the pilot already has `course_module_audio` (0 rows);
+a dry run for Module 1 plans 24 sections / 21,485 chars.
 
 **Tier 2 (Remotion) — pipeline installed and verified, 20 Sep 2026, no content queued through it yet.**
 The official skills (`npx skills add remotion-dev/skills`) are installed
