@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Para sa Sambong, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
+      "observable_en": "For Sambong, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "not_yet_fil": "Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.",
+      "not_yet_en": "Guesses identity, prescribes a dose or replaces treatment.",
+      "levels": {
+        "kaya_na_fil": "Tama ang Sambong, Blumea balsamifera, dahon, gamit at referral nang walang paalala.",
+        "kaya_na_en": "Correctly identifies Sambong, Blumea balsamifera, leaves, use and referral without prompts.",
+        "kailangan_practice_fil": "Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.",
+        "kailangan_practice_en": "Identifies the plant but needs a prompt about limits or referral.",
+        "hindi_pa_fil": "Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.",
+        "hindi_pa_en": "Guesses identity, prescribes a dose or replaces treatment."
+      }
+    }
+  ]
+}

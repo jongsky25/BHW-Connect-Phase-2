@@ -38,6 +38,20 @@
         "local emergency protocol confirmation",
         "production publication"
       ]
+    },
+    {
+      "modules": [
+        "2.3"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: mark approved chapter 2.3. move to 2.5",
+      "scope": "Owner approval of the Chapter 2.3 IPC authoring draft and authorization to draft Chapter 2.5",
+      "not_equivalent_to": [
+        "independent clinical sign-off",
+        "local IPC procedure confirmation",
+        "browser visual/accessibility QA",
+        "production publication"
+      ]
     }
   ]
 }

@@ -1,3 +1,9 @@
+# Current update: Chapter 2.5 Medicinal Plants — 25 September 2026
+
+Chapter 2.3 IPC owner approval recorded. Twelve botanical-reference and consultation drafts added for Chapter 2.5; 49/55 lessons authored. The F38 two-hour plant allocation reconciles to 120 minutes. PITAHC and WHO source decisions documented; independent clinical/botanical and local review pending. Chapter 2.7 remains outline. See chapter-2-plants-review.md.
+
+Earlier updates below describe their then-current counts.
+
 # Owner review update — 25 September 2026
 
 The user approved the Chapter 2.4 First Aid authoring batch and stated it was reviewed and QA'd. This is recorded as an owner review and QA attestation; the method was not specified. The documented technical checks are 80 focused tests, authoring validation and DOM simulation. Independent clinical/local approval and browser visual QA remain unverified.

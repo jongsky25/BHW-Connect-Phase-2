@@ -5,7 +5,7 @@
   "availability": "unavailable",
   "publication_allowed": false,
   "planned_lesson_count": 55,
-  "authored_lesson_count": 37,
+  "authored_lesson_count": 49,
   "competency_groups": [
     {
       "id": "behavior",
@@ -1091,7 +1091,7 @@
           16
         ]
       },
-      "status": "mapped-not-authored",
+      "status": "draft-authored",
       "lessons": [
         {
           "code": "2.5.1",
@@ -1103,14 +1103,17 @@
           "task_fil": "Gamitin ang kumpirmadong reference sa pagkilala, aprubadong gamit at konsultasyon",
           "practice_id": "activity-plant-scope-identification",
           "practice_en": "plant identification practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Compare two cards and identify what needs confirmation before any use.",
           "source_pages": {
             "R": [
               48,
+              49,
+              50,
               51
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
@@ -1118,8 +1121,9 @@
               16
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.2",
@@ -1131,23 +1135,23 @@
           "task_fil": "Para sa Akapulko, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-akapulko",
           "practice_en": "akapulko reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Akapulko, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              48
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              7
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.3",
@@ -1159,23 +1163,23 @@
           "task_fil": "Para sa Ampalaya, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-ampalaya",
           "practice_en": "ampalaya reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Ampalaya, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              49
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              8
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.4",
@@ -1187,23 +1191,23 @@
           "task_fil": "Para sa Bawang, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-bawang",
           "practice_en": "bawang reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Bawang, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              49
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              9
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.5",
@@ -1215,23 +1219,23 @@
           "task_fil": "Para sa Bayabas, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-bayabas",
           "practice_en": "bayabas reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              49
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              10
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.6",
@@ -1243,23 +1247,23 @@
           "task_fil": "Para sa Lagundi, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-lagundi",
           "practice_en": "lagundi reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Lagundi, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              49
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              11
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.7",
@@ -1271,23 +1275,23 @@
           "task_fil": "Para sa Niyog-niyogan, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-niyog-niyogan",
           "practice_en": "niyog-niyogan reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              50
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              12
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.8",
@@ -1299,23 +1303,23 @@
           "task_fil": "Para sa Sambong, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-sambong",
           "practice_en": "sambong reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Sambong, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
-              51
+              50
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              13
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.9",
@@ -1327,23 +1331,23 @@
           "task_fil": "Para sa Tsaang gubat, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-tsaang-gubat",
           "practice_en": "tsaang-gubat reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Tsaang gubat, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
               51
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              14
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.10",
@@ -1355,23 +1359,23 @@
           "task_fil": "Para sa Ulasimang bato / pansit-pansitan, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-ulasimang-bato",
           "practice_en": "ulasimang-bato reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Ulasimang bato / pansit-pansitan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
               51
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
-              16
+              15
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.11",
@@ -1383,23 +1387,23 @@
           "task_fil": "Para sa Yerba buena, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
           "practice_id": "activity-yerba-buena",
           "practice_en": "yerba-buena reference-card practice",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
           "source_pages": {
             "R": [
-              48,
               51
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              6,
               16
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         },
         {
           "code": "2.5.12",
@@ -1411,14 +1415,17 @@
           "task_fil": "Gamitin ang aprubadong cards sa consultation scenario at supervised demonstration kung awtorisado",
           "practice_id": "activity-plant-integrated-practice",
           "practice_en": "plant consultation and demonstration",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "For three case cards, record identity, use, concern, referral and missing local authorization.",
           "source_pages": {
             "R": [
               48,
+              49,
+              50,
               51
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
@@ -1426,8 +1433,9 @@
               16
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
         }
       ]
     },

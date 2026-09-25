@@ -1,6 +1,6 @@
 # Chapter 2 lesson and activity crosswalk
 
-55 planned lessons; 37 authored drafts in 2.1, 2.2, 2.3, 2.4 and 2.6. The other 18 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
+55 planned lessons; 49 authored drafts in 2.1, 2.2, 2.3, 2.4, 2.5 and 2.6. The other 6 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
 
 | Lesson | English / Filipino | Intended task | Practice | Status |
 |---|---|---|---|---|
@@ -37,18 +37,18 @@
 | 2.4.16 | Arrange urgent chest-pain referral / Iugnay sa agarang tulong ang may pananakit ng dibdib | Activate the reviewed referral route and communicate relevant facts in a chest-pain case | emergency referral rehearsal | authored-draft |
 | 2.4.17 | Check first-aid kit readiness / Suriin ang first-aid kit | Inspect an approved kit list for completeness, condition, storage and replenishment needs | kit inspection | authored-draft |
 | 2.4.18 | Hand over an incident / Iparating ang detalye ng insidente | Deliver a concise factual handover of situation, actions and support needed | integrated handover station | authored-draft |
-| 2.5.1 | Check scope and plant identity / Suriin ang saklaw at pagkakakilanlan | Use verified references to distinguish identification, approved use and consultation needs | plant identification practice | outline |
-| 2.5.2 | Akapulko / Akapulko | For Akapulko, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | akapulko reference-card practice | outline |
-| 2.5.3 | Ampalaya / Ampalaya | For Ampalaya, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | ampalaya reference-card practice | outline |
-| 2.5.4 | Bawang / Bawang | For Bawang, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | bawang reference-card practice | outline |
-| 2.5.5 | Bayabas / Bayabas | For Bayabas, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | bayabas reference-card practice | outline |
-| 2.5.6 | Lagundi / Lagundi | For Lagundi, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | lagundi reference-card practice | outline |
-| 2.5.7 | Niyog-niyogan / Niyog-niyogan | For Niyog-niyogan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | niyog-niyogan reference-card practice | outline |
-| 2.5.8 | Sambong / Sambong | For Sambong, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | sambong reference-card practice | outline |
-| 2.5.9 | Tsaang gubat / Tsaang gubat | For Tsaang gubat, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | tsaang-gubat reference-card practice | outline |
-| 2.5.10 | Ulasimang bato / pansit-pansitan / Ulasimang bato / pansit-pansitan | For Ulasimang bato / pansit-pansitan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | ulasimang-bato reference-card practice | outline |
-| 2.5.11 | Yerba buena / Yerba buena | For Yerba buena, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | yerba-buena reference-card practice | outline |
-| 2.5.12 | Use the plant references responsibly / Gamitin nang maingat ang plant references | Use the approved cards in a consultation scenario and a supervised preparation demonstration where authorized | plant consultation and demonstration | outline |
+| 2.5.1 | Check scope and plant identity / Suriin ang saklaw at pagkakakilanlan | Use verified references to distinguish identification, approved use and consultation needs | plant identification practice | authored-draft |
+| 2.5.2 | Akapulko / Akapulko | For Akapulko, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | akapulko reference-card practice | authored-draft |
+| 2.5.3 | Ampalaya / Ampalaya | For Ampalaya, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | ampalaya reference-card practice | authored-draft |
+| 2.5.4 | Bawang / Bawang | For Bawang, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | bawang reference-card practice | authored-draft |
+| 2.5.5 | Bayabas / Bayabas | For Bayabas, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | bayabas reference-card practice | authored-draft |
+| 2.5.6 | Lagundi / Lagundi | For Lagundi, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | lagundi reference-card practice | authored-draft |
+| 2.5.7 | Niyog-niyogan / Niyog-niyogan | For Niyog-niyogan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | niyog-niyogan reference-card practice | authored-draft |
+| 2.5.8 | Sambong / Sambong | For Sambong, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | sambong reference-card practice | authored-draft |
+| 2.5.9 | Tsaang gubat / Tsaang gubat | For Tsaang gubat, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | tsaang-gubat reference-card practice | authored-draft |
+| 2.5.10 | Ulasimang bato / pansit-pansitan / Ulasimang bato / pansit-pansitan | For Ulasimang bato / pansit-pansitan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | ulasimang-bato reference-card practice | authored-draft |
+| 2.5.11 | Yerba buena / Yerba buena | For Yerba buena, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | yerba-buena reference-card practice | authored-draft |
+| 2.5.12 | Use the plant references responsibly / Gamitin nang maingat ang plant references | Use the approved cards in a consultation scenario and a supervised preparation demonstration where authorized | plant consultation and demonstration | authored-draft |
 | 2.6.1 | Identify the issue with the community / Tukuyin ang isyu kasama ang komunidad | State an issue with evidence and the perspectives of affected residents | community issue worksheet | authored-draft |
 | 2.6.2 | Invite people and address barriers / Mag-imbita at tugunan ang hadlang | Create an inclusive stakeholder invitation plan addressing participation barriers | stakeholder map | authored-draft |
 | 2.6.3 | Build trust and a core group / Bumuo ng tiwala at pangunahing grupo | Facilitate a participatory meeting that invites contributions and agrees group responsibilities | community meeting role-play | authored-draft |

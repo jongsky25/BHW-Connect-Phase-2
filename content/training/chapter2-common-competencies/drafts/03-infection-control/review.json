@@ -10,7 +10,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "infection-control-levels",
@@ -21,7 +22,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "hand-hygiene",
@@ -32,7 +34,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "cough-etiquette",
@@ -43,7 +46,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "food-water-sanitation",
@@ -54,7 +58,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "bhs-ipc-policies",
@@ -65,7 +70,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     },
     {
       "lesson_key": "ipc-monitor-and-improve",
@@ -76,7 +82,8 @@
       "visual_approval": null,
       "audio_status": "scripts-only",
       "learner_pilot": null,
-      "publication_allowed": false
+      "publication_allowed": false,
+      "owner_review": "approved-by-user"
     }
   ],
   "blocking_reviews": [
@@ -96,5 +103,10 @@
     "No chlorine recipes, boiling-time prescriptions or fixed septic setback guarantees are taught.",
     "The ten-policy inventory is traced to the 2021 DOH manual and must be confirmed against current local requirements."
   ],
-  "self_study_time": "Not a replacement for facilitated training; additional observed practice may be required."
+  "self_study_time": "Not a replacement for facilitated training; additional observed practice may be required.",
+  "owner_review": {
+    "status": "approved-by-user",
+    "date": "2026-09-25",
+    "evidence": "User message: mark approved chapter 2.3. move to 2.5"
+  }
 }

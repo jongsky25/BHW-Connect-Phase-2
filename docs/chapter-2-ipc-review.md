@@ -1,5 +1,7 @@
 # Chapter 2.3 IPC review package
 
+Owner approval recorded on 25 September 2026 for the Chapter 2.3 IPC authoring draft. Independent clinical/local review, browser visual QA and publication approval remain separate.
+
 Seven bilingual lesson drafts bring Chapter 2 to 19 of 55 lessons; 36 remain outlines. The owner approved Chapters 2.2 and 2.6 with “approve then do next.” Their content remains unchanged. Chapter 2.3 is now ready for review, not approved for publication.
 
 | Lesson | Focus | Minutes |
