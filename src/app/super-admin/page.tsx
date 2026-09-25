@@ -1,7 +1,8 @@
 import { redirect } from "next/navigation";
 import { SuperAdminConsole } from "@/components/super-admin/super-admin-console";
 import type { SuperAdminPersona } from "@/lib/super-admin/types";
-import { getRequestAuthUser } from "@/lib/supabase/request";
+import { loadOrgUnit } from "@/lib/org-units";
+import { getRequestAppUser, getRequestAuthUser } from "@/lib/supabase/request";
 import { createClient } from "@/lib/supabase/server";
 
 // Not under /admin: middleware sends non-admins away from /admin, and while
@@ -22,16 +23,24 @@ export default async function SuperAdminPage() {
     redirect("/home");
   }
 
-  const [{ data: personas }, { data: orgUnits }] = await Promise.all([
+  const appUser = await getRequestAppUser(user.id);
+  if (!appUser) {
+    redirect("/login");
+  }
+
+  const [{ data: personas }, rootOrgUnit] = await Promise.all([
     supabase.rpc("rpc_super_admin_personas"),
-    supabase.from("org_units").select("id, name, level").order("name"),
+    loadOrgUnit(supabase, appUser.org_unit_id),
   ]);
+  if (!rootOrgUnit) {
+    redirect("/login");
+  }
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <SuperAdminConsole
         personas={(personas as SuperAdminPersona[] | null) ?? []}
-        orgUnits={(orgUnits as { id: string; name: string; level: string }[] | null) ?? []}
+        rootOrgUnit={rootOrgUnit}
       />
     </div>
   );

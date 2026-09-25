@@ -127,7 +127,24 @@ export async function updateSession(request: NextRequest) {
     return response;
   }
 
-  if (pathname === "/login" || pathname === "/change-password" || pathname === "/consent") {
+  // A BHW provisioned at their city/municipality chooses their PSGC barangay
+  // before anything else (rpc_bhw_select_barangay).
+  if (appUser.role === "bhw" && appUser.org_unit_level && appUser.org_unit_level !== "barangay") {
+    if (isApiPath(pathname)) {
+      return NextResponse.json({ error: "barangay selection required" }, { status: 403 });
+    }
+    if (pathname !== "/select-barangay") {
+      return redirectTo(request, "/select-barangay", response);
+    }
+    return response;
+  }
+
+  if (
+    pathname === "/login" ||
+    pathname === "/change-password" ||
+    pathname === "/consent" ||
+    pathname === "/select-barangay"
+  ) {
     return redirectTo(request, "/home", response);
   }
 

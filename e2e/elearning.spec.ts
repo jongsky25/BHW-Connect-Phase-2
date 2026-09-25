@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/test";
 import {
-  BARANGAY_BATONG_MALAKE_ID,
   OTHER_BARANGAY_BHW,
   STABLE_ADMIN,
   STABLE_BHW,
@@ -11,14 +10,22 @@ import {
   restGet,
 } from "./fixtures/auth";
 
+const LOS_BANOS_ID = "00000000-0000-0000-0000-000000000004";
+
 test("admin creates a course, a BHW completes it and passes the quiz, an assessor certifies them, and the certificate verifies publicly", async ({
   page,
   request,
 }) => {
   const marker = `e2e.course.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
 
-  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
-  const assessor = await createThrowawayAssessor(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  // An assessor holds a catchment (region / province / city-municipality),
+  // never a single barangay, so only the city admin can provision one here.
+  const cityAdminTokenForAssessor = await getAccessToken(
+    request,
+    STABLE_CITY_ADMIN.username,
+    STABLE_CITY_ADMIN.password,
+  );
+  const assessor = await createThrowawayAssessor(request, cityAdminTokenForAssessor, LOS_BANOS_ID);
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_ADMIN.username);

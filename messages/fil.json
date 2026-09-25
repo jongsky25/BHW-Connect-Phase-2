@@ -290,7 +290,7 @@
       "usernameLabel": "Username",
       "fullNameLabel": "Buong Pangalan",
       "roleLabel": "Tungkulin",
-      "orgUnitLabel": "Barangay/Sakop",
+      "orgUnitLabel": "Lokasyon (PSGC)",
       "contactLabel": "Numero ng Contact",
       "emailLabel": "Email",
       "addressLabel": "Address",
@@ -338,7 +338,15 @@
       "outOfScopeError": "Wala sa iyong sakop ang user o barangay na ito.",
       "usernameRequiredError": "Kailangan ng username.",
       "userNotFoundError": "Hindi nahanap ang user.",
-      "genericError": "May naganap na problema. Subukan muli."
+      "genericError": "May naganap na problema. Subukan muli.",
+      "assessorLevelError": "Ang catchment ng assessor ay dapat buong rehiyon, lalawigan, o lungsod/munisipyo — hindi barangay.",
+      "bhwLevelError": "Ang BHW ay dapat nakalagay sa isang barangay, o sa lungsod/munisipyo para siya mismo ang pumili ng barangay sa unang pag-sign in.",
+      "catchmentLabel": "Catchment (PSGC)",
+      "bhwPlacementHint": "Piliin ang barangay ng BHW. Kung hanggang lungsod/munisipyo lang ang pipiliin, ang BHW ang pipili ng kanyang barangay sa unang pag-sign in.",
+      "assessorCatchmentHint": "Makikita ng assessor ang lahat ng BHW, kurso at pagtatasa sa loob ng rehiyon, lalawigan o lungsod/munisipyong ito.",
+      "placementNeedsLevel": "Pumili man lang ng lungsod/munisipyo.",
+      "catchmentNeedsLevel": "Pumili ng rehiyon, lalawigan o lungsod/munisipyo.",
+      "pendingBarangay": "{name} · wala pang napiling barangay"
     },
     "audit": {
       "heading": "Audit Log",
@@ -1080,6 +1088,27 @@
     "personaInactiveError": "Naka-deactivate ang test account na iyon.",
     "outOfScopeError": "Labas sa iyong saklaw ang org unit na iyon.",
     "invalidRoleError": "Hindi available ang role na iyon.",
-    "genericError": "May nangyaring mali. Pakisubukang muli."
+    "genericError": "May nangyaring mali. Pakisubukang muli.",
+    "placementLevelError": "Ang assessor ay kailangan ng rehiyon, lalawigan o lungsod/munisipyo; ang BHW ay kailangan ng barangay o lungsod/munisipyo."
+  },
+  "orgPicker": {
+    "within": "Sakop ng {name}",
+    "allOf": "Buong {name}",
+    "choose": "Pumili…",
+    "loading": "Naglo-load…",
+    "loadError": "Hindi ma-load ang listahan ng mga lugar. Paki-refresh at subukang muli.",
+    "levelNational": "Pambansa",
+    "levelRegional": "Rehiyon",
+    "levelProvincial": "Lalawigan",
+    "levelCityMunicipal": "Lungsod / munisipyo",
+    "levelBarangay": "Barangay"
+  },
+  "selectBarangay": {
+    "heading": "Saang barangay ka naglilingkod?",
+    "intro": "Piliin ang barangay kung saan ka nagtatrabaho bilang Barangay Health Worker. Dito nakabatay ang iyong mga kurso, anunsyo at pagtatasa. Isang beses lang ito maitatakda; makipag-ugnayan sa iyong admin kung kailangang baguhin.",
+    "confirm": "Pinipili mo ang {name}.",
+    "submit": "I-save ang aking barangay",
+    "submitting": "Sine-save…",
+    "genericError": "May nagkamali. Pakisubukang muli."
   }
 }

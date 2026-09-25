@@ -14,11 +14,19 @@ export type AdminUserRow = {
   org_units: OrgUnitEmbed;
 };
 
-export type OrgUnitEmbed = { name: string } | { name: string }[] | null;
+export type OrgUnitEmbed =
+  | { name: string; level?: string }
+  | { name: string; level?: string }[]
+  | null;
 
 export function orgUnitName(embed: OrgUnitEmbed | undefined): string | null {
   const unit = Array.isArray(embed) ? embed[0] : embed;
   return unit?.name ?? null;
+}
+
+export function orgUnitLevel(embed: OrgUnitEmbed | undefined): string | null {
+  const unit = Array.isArray(embed) ? embed[0] : embed;
+  return unit?.level ?? null;
 }
 
 export type OrgUnitOption = {

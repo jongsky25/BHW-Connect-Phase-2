@@ -50,7 +50,8 @@ export type SuperAdminErrorKey =
   | "personaInactiveError"
   | "outOfScopeError"
   | "invalidRoleError"
-  | "genericError";
+  | "genericError"
+  | "placementLevelError";
 
 export type SuperAdminActionResult<T = null> =
   | { ok: true; data: T }
@@ -63,6 +64,8 @@ export function mapSuperAdminRpcError(message: string | undefined): SuperAdminEr
   if (message.includes("persona is not active")) return "personaInactiveError";
   if (message.includes("out of scope")) return "outOfScopeError";
   if (message.includes("invalid role")) return "invalidRoleError";
+  if (message.includes("assessor catchment") || message.includes("bhw must belong to a barangay"))
+    return "placementLevelError";
   return "genericError";
 }
 

@@ -5,21 +5,22 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { EmptyState } from "@/components/empty-state";
-import type { AdminUserRow, OrgUnitOption } from "@/lib/admin/types";
+import type { AdminUserRow } from "@/lib/admin/types";
+import type { OrgUnitNode } from "@/lib/org-units";
 import { pageCount, userListHref } from "@/lib/admin/user-list";
 import { CreateUserForm } from "./create-user-form";
 import { UserRow } from "./user-row";
 
 type Props = {
   initialUsers: AdminUserRow[];
-  orgUnits: OrgUnitOption[];
+  rootOrgUnit: OrgUnitNode;
   query: string;
   page: number;
   totalCount: number;
   pageSize: number;
 };
 
-export function UsersConsole({ initialUsers, orgUnits, query, page, totalCount, pageSize }: Props) {
+export function UsersConsole({ initialUsers, rootOrgUnit, query, page, totalCount, pageSize }: Props) {
   const t = useTranslations("admin.users");
   const router = useRouter();
   const [tempPassword, setTempPassword] = useState<{ username: string; tempPassword: string } | null>(
@@ -57,7 +58,7 @@ export function UsersConsole({ initialUsers, orgUnits, query, page, totalCount, 
       ) : null}
 
       <CreateUserForm
-        orgUnits={orgUnits}
+        rootOrgUnit={rootOrgUnit}
         onCreated={(result) => {
           setTempPassword(result);
           // A new user is the newest row, so send the admin back to the
@@ -133,7 +134,7 @@ export function UsersConsole({ initialUsers, orgUnits, query, page, totalCount, 
                   <UserRow
                     key={user.id}
                     user={user}
-                    orgUnits={orgUnits}
+                    rootOrgUnit={rootOrgUnit}
                     onChanged={handleChanged}
                     onTempPassword={setTempPassword}
                   />

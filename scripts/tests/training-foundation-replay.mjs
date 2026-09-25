@@ -38,7 +38,9 @@ try {
   const versionedTestBank=await runVersionedTestBankScenarios(db,fixture);
   const {runReferenceLoader}=await import('./reference-loader-postgres.mjs');
   const loader=await runReferenceLoader(db,fixture);
-  const report={database,migrations:files.length,postgres:(await db.query('select version()')).rows[0].version,...results,facilitatorGuide,facilitationLog,versionedTestBank,loader};
+  const {runPsgcCatchmentScenarios}=await import('./psgc-catchment-scenarios.mjs');
+  const psgcCatchment=await runPsgcCatchmentScenarios(db,fixture);
+  const report={database,migrations:files.length,postgres:(await db.query('select version()')).rows[0].version,...results,facilitatorGuide,facilitationLog,versionedTestBank,loader,psgcCatchment};
   if(process.env.PG_TEST_REPORT)await writeFile(process.env.PG_TEST_REPORT,JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));assert.equal(results.failures,0);
 } finally {await db.end();}
