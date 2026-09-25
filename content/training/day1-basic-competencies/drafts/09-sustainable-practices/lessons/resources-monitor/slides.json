@@ -24,7 +24,27 @@
     "display_fil": "Halimbawa: reprints 20/100 noon → 5/100 ngayon. Bawas na 15 bawat 100 pahina, mula 20% tungong 5%. Suriin kung magkatulad ang session at tama pa rin ang materyal. Walang patient names na kailangan.",
     "display_en": "Example: reprints 20/100 before → 5/100 after. A reduction of 15 per 100 pages, from 20% to 5%. Check comparable sessions and correct materials. No patient names are needed.",
     "asset_ids": [],
-    "check": null
+    "check": {
+      "prompt_fil": "Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?",
+      "prompt_en": "Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?",
+      "options": [
+        {
+          "fil": "Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal.",
+          "en": "Fifteen fewer per 100 pages; also check comparable workload and correct materials."
+        },
+        {
+          "fil": "Siguradong 75% na mas mababa ang gastos.",
+          "en": "Costs are certainly 75% lower."
+        },
+        {
+          "fil": "Hindi kailangan ng bilang ng session o kalidad.",
+          "en": "Session counts and quality do not matter."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
+      "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered."
+    }
   },
   {
     "id": "slide-communicate",
@@ -37,7 +57,27 @@
     "display_fil": "“Dalawang bersyon sa drawer ang sanhi ng reprinting.” Ibigay ang mungkahi, owner at review date. Itanong ang hadlang gaya ng walang internet; maaaring kailangan ang controlled paper master.",
     "display_en": "“Two versions in the drawer cause reprinting.” Explain the proposal, owner and review date. Ask about barriers such as no internet; a controlled paper master may be needed.",
     "asset_ids": [],
-    "check": null
+    "check": {
+      "prompt_fil": "Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?",
+      "prompt_en": "A colleague who prints handouts has no internet. What should the trial include?",
+      "options": [
+        {
+          "fil": "Sabihing mag-download na lang kahit walang internet.",
+          "en": "Tell the colleague to download it anyway."
+        },
+        {
+          "fil": "Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama.",
+          "en": "Prepare a controlled paper master, verify its version and ask for the colleague’s feedback."
+        },
+        {
+          "fil": "Gamitin ang anumang lumang kopya sa drawer.",
+          "en": "Use any old copy in the drawer."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
+      "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it."
+    }
   },
   {
     "id": "slide-workload",
@@ -117,3 +157,4 @@
     }
   }
 ]
+
