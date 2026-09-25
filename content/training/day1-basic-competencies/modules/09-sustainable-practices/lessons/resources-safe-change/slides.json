@@ -1,0 +1,133 @@
+[
+  {
+    "id": "slide-utilities",
+    "concept_ids": [
+      "m9.resources",
+      "m9.safe-savings"
+    ],
+    "layout": "process",
+    "heading_fil": "Tubig at kuryente na may pag-iingat",
+    "heading_en": "Water and electricity with safeguards",
+    "display_fil": "Ayusin ang leak at patayin ang hindi kailangang ilaw ayon sa facility instruction. Panatilihin ang cold chain, kinakailangang bentilasyon at handwashing water. Ang kritikal na serbisyo ay hindi dapat isakripisyo.",
+    "display_en": "Repair leaks and switch off unnecessary lights according to facility instructions. Preserve cold chain, required ventilation and handwashing water. Essential service safeguards must remain.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
+      "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
+      "options": [
+        {
+          "fil": "Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.",
+          "en": "Keep the refrigerator running; check unnecessary lights under facility procedure."
+        },
+        {
+          "fil": "Patayin ang refrigerator sa gabi.",
+          "en": "Switch the refrigerator off overnight."
+        },
+        {
+          "fil": "Patayin pati ang kinakailangang bentilasyon.",
+          "en": "Switch off required ventilation too."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.",
+      "feedback_en": "The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service."
+    }
+  },
+  {
+    "id": "slide-materials",
+    "concept_ids": [
+      "m9.plastics",
+      "m9.safe-savings"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Bawasan ang hindi kailangan, panatilihin ang ligtas",
+    "heading_en": "Reduce unnecessary use, preserve safety",
+    "display_fil": "Reusable teaching visual: maaaring makatipid. Single-use clinical item: hindi gawing reusable. Sundin ang BHS policy at segregation. Kapag hindi tiyak, itanong sa supervisor ang aprubadong paraan.",
+    "display_en": "A reusable teaching visual can reduce waste. Clinical single-use items must stay single-use. Follow BHS policy and segregation. If uncertain, ask the supervisor for the approved approach.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-workflow",
+    "concept_ids": [
+      "m9.productivity"
+    ],
+    "layout": "process",
+    "heading_fil": "Ayusin ang daloy, hindi bilisan lang",
+    "heading_en": "Improve the flow, not just the speed",
+    "display_fil": "Suriin ang approved version bago mag-print; ihanda nang magkakasama ang gamit. Maaaring pagsabayin ang delivery sa ligtas na ruta, ngunit hindi ipagpaliban ang urgent referral. Sukatin ang kalidad at oras, hindi bilis lang.",
+    "display_en": "Check the approved version before printing and assemble materials together. Combine deliveries on a safe route when suitable, but never delay urgent referral. Measure quality and time, not speed alone.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-worked-example",
+    "concept_ids": [
+      "m9.resources",
+      "m9.safe-savings",
+      "m9.plastics",
+      "m9.productivity"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Alamin kung bakit nasasayang",
+    "heading_en": "Check why waste occurs",
+    "display_fil": "Posibleng sanhi: lumang kopya o maling pagpili. Suriin ang printout at master; kausapin ang nag-print. Beripikahin sa supervisor bago baguhin ang routine.",
+    "display_en": "Possible causes: old copy or wrong selection. Check printouts against the master and consult the printer. Verify with the supervisor before changing the routine.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m9.resources",
+      "m9.safe-savings",
+      "m9.plastics",
+      "m9.productivity"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Matitipid? Posibleng pinsala? Safeguard? Piliin ang pagbabawas ng waste na nagpapanatili ng ligtas at napapanahong serbisyo.",
+    "display_en": "Savings? Potential harm? Safeguard? Choose waste reduction that preserves safe, timely services.",
+    "asset_ids": [
+      "safe-change"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m9.resources",
+      "m9.safe-savings",
+      "m9.plastics",
+      "m9.productivity"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+    "display_en": "Reduce waste and rework while preserving essential protection and services.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?",
+      "prompt_en": "The team wants to reduce paper in health teaching. Which proposal fits?",
+      "options": [
+        {
+          "fil": "Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina.",
+          "en": "Omit needed instructions to reduce pages."
+        },
+        {
+          "fil": "Gamitin ang lumang bersyon hanggang maubos.",
+          "en": "Use the old version until it runs out."
+        },
+        {
+          "fil": "Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.",
+          "en": "Check the approved version and use an approved reusable visual where suitable."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.",
+      "feedback_en": "The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used."
+    }
+  }
+]

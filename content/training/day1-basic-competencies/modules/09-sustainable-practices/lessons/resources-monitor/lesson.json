@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "lesson_key": "resources-monitor",
+    "position": 2,
+    "title_fil": "Subukan at subaybayan",
+    "title_en": "Try and monitor",
+    "objectives_fil": [
+      "Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang resource use sa magkatulad na workload kasama ang kalidad ng serbisyo."
+    ],
+    "objectives_en": [
+      "Propose a small trial with an owner and review date, and compare resource use at comparable workloads alongside service quality."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "trial",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang sustainable na gawi ay may responsable, sinusukat na resulta at regular na review.",
+      "takeaway_en": "A sustainable practice has an owner, measured results and regular review.",
+      "check": null
+    },
+    {
+      "id": "compare",
+      "concept_ids": [
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ihambing ang resources sa magkatulad na gawain at tingnan din ang kalidad.",
+      "takeaway_en": "Compare resources across similar work and check quality too.",
+      "check": {
+        "prompt_fil": "Bumaba ang maling-bersyong reprint mula 20/100 tungong 5/100 pahina. Ano ang tamang ulat?",
+        "prompt_en": "Wrong-version reprints fell from 20/100 to 5/100 pages. What is the sound report?",
+        "options": [
+          {
+            "fil": "Bawas na 15 bawat 100 pahina; suriin din kung magkatulad ang workload at tama ang materyal.",
+            "en": "Fifteen fewer per 100 pages; also check comparable workload and correct materials."
+          },
+          {
+            "fil": "Siguradong 75% na mas mababa ang gastos.",
+            "en": "Costs are certainly 75% lower."
+          },
+          {
+            "fil": "Hindi kailangan ng bilang ng session o kalidad.",
+            "en": "Session counts and quality do not matter."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay tama sa sukat at sinusuri ang kalidad. Hindi katumbas ng reprint rate ang kabuuang gastos; kailangan ang workload at serbisyo upang maunawaan ang resulta.",
+        "feedback_en": "The first response uses the correct rate and checks quality. A reprint rate is not total cost; workload and service must also be considered."
+      }
+    },
+    {
+      "id": "communicate",
+      "concept_ids": [
+        "m9.communicate"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mas napapanatili ang pagbabago kapag naiintindihan at kayang gawin ng kasama.",
+      "takeaway_en": "A change lasts when colleagues understand it and can carry it out.",
+      "check": {
+        "prompt_fil": "Walang internet ang kasamang magpi-print ng handout. Ano ang dapat isama sa trial?",
+        "prompt_en": "A colleague who prints handouts has no internet. What should the trial include?",
+        "options": [
+          {
+            "fil": "Sabihing mag-download na lang kahit walang internet.",
+            "en": "Tell the colleague to download it anyway."
+          },
+          {
+            "fil": "Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna ng kasama.",
+            "en": "Prepare a controlled paper master, verify its version and ask for the colleague’s feedback."
+          },
+          {
+            "fil": "Gamitin ang anumang lumang kopya sa drawer.",
+            "en": "Use any old copy in the drawer."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang sagot ay umaangkop sa hadlang habang kontrolado ang bersyon at may puna mula sa kasama. Hindi solusyon ang hindi magawang download o hindi aprubadong lumang kopya.",
+        "feedback_en": "The second response addresses the barrier while controlling the version and seeking feedback. An impossible download or unapproved old copy does not solve it."
+      }
+    },
+    {
+      "id": "workload",
+      "concept_ids": [
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang patas na paghahambing ay isinasaalang-alang ang dami ng trabahong ginawa.",
+      "takeaway_en": "A fair comparison accounts for the amount of work performed.",
+      "check": null
+    },
+    {
+      "id": "handover",
+      "concept_ids": [
+        "m9.organize",
+        "m9.review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang routine na naipapasa sa kasama ay mas tumatagal kaysa personal na diskarte lamang.",
+      "takeaway_en": "A routine that colleagues can inherit lasts longer than an individual workaround.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ],
+      "asset_ids": [
+        "resource-monitor"
+      ],
+      "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+      "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.communicate",
+        "m9.review",
+        "m9.organize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang mas mababang konsumo ay tagumpay lamang kung naibibigay pa rin ang tama at ligtas na serbisyo.",
+      "takeaway_en": "Lower consumption is a success only when correct, safe service is still delivered.",
+      "check": {
+        "prompt_fil": "Kalahati ang nabawas sa papel dahil kalahati rin ang nakanselang sessions. Ano ang masasabi?",
+        "prompt_en": "Paper use halved because half the sessions were canceled. What can be concluded?",
+        "options": [
+          {
+            "fil": "Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.",
+            "en": "This does not yet show improvement; compare use per session and services delivered."
+          },
+          {
+            "fil": "Tagumpay na dahil mas mababa ang bill.",
+            "en": "It is a success because the bill is lower."
+          },
+          {
+            "fil": "Wala nang kailangang review dahil nabawasan ang papel.",
+            "en": "No review is needed because less paper was used."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.",
+        "feedback_en": "The first response accounts for workload and quality. Total bills or paper can fall because service was lost, not because the process improved."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.communicate",
+      "read_ids": [
+        "trial",
+        "communicate",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-trial",
+        "slide-communicate",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.review",
+      "read_ids": [
+        "trial",
+        "compare",
+        "workload",
+        "handover",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-trial",
+        "slide-compare",
+        "slide-workload",
+        "slide-handover",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    },
+    {
+      "id": "m9.organize",
+      "read_ids": [
+        "handover",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-handover",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        19,
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        14,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "tesda-400311217",
+      "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+      "pdf_pages": [
+        33,
+        34,
+        35
+      ],
+      "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    }
+  ],
+  "assets": [
+    {
+      "id": "resource-monitor",
+      "path": "/training/module-1-9/monitor-c5d2eff5ad98.svg",
+      "content_hash": "c5d2eff5ad98b21709e3da13cd770cddb33b8c4ff86920ddec30578d742a42b6",
+      "alt_fil": "Subaybayan ang resources at kalidad bago at pagkatapos ng pagbabago, saka magpasya kung itutuloy o ihihinto.",
+      "alt_en": "Track resources and quality before and after a change, then decide whether to continue or stop.",
+      "caption_fil": "Ihambing ang resulta at kalidad bago panatilihin ang pagbabago.",
+      "caption_en": "Compare results and quality before keeping a change.",
+      "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
+      "review_status": "approved"
+    }
+  ]
+}

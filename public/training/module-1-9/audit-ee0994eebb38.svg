@@ -1,0 +1,21 @@
+<svg viewBox="0 0 640 400">
+  <title>Resource audit: observe, check, act</title>
+  <defs>
+    <marker id="chain-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 z" fill="currentColor"/>
+    </marker>
+  </defs>
+  <g fill="currentColor" text-anchor="middle">
+    <rect x="20" y="170" width="130" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="85" y="193" font-size="13">Observe waste</text>
+    <text x="85" y="212" font-size="12">Obserbahan</text>
+    <line x1="150" y1="200" x2="250" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#chain-arrow)"/>
+    <rect x="255" y="170" width="130" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="320" y="193" font-size="13">Check evidence</text>
+    <text x="320" y="212" font-size="12">Suriin</text>
+    <line x1="385" y1="200" x2="485" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#chain-arrow)"/>
+    <rect x="490" y="170" width="130" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="555" y="193" font-size="13">Safe action</text>
+    <text x="555" y="212" font-size="12">Ligtas na hakbang</text>
+  </g>
+</svg>

@@ -32,7 +32,27 @@
       "asset_ids": [],
       "takeaway_fil": "Ang maayos na imbakan ay tumutulong sa ligtas na paggamit at tumpak na paghingi ng resources.",
       "takeaway_en": "Orderly storage supports safe use and accurate resource requests.",
-      "check": null
+      "check": {
+        "prompt_fil": "May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?",
+        "prompt_en": "The kit has four outdated handouts and no current version. What is the safe next step?",
+        "options": [
+          {
+            "fil": "Ipamahagi ang luma para hindi masayang.",
+            "en": "Distribute the old copies so they are not wasted."
+          },
+          {
+            "fil": "Palitan ang label at ituring na aprubado ang luma.",
+            "en": "Relabel the old copies as approved."
+          },
+          {
+            "fil": "Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.",
+            "en": "Set aside the old copies, verify the approved master and request current copies."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.",
+        "feedback_en": "The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed."
+      }
     },
     {
       "id": "seven-s",
@@ -179,3 +199,4 @@
   ],
   "assets": []
 }
+

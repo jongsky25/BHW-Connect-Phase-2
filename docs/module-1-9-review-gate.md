@@ -1,0 +1,83 @@
+# Module 1.9 review and release gate
+
+Status: **requester-approved review materials; detailed reviewer and pilot evidence pending** (25 September 2026). This record supplements [the first-pass review](chapter-1-6-1-9-draft-review.md). The requester approved the facilitator, Filipino-language, local safety, visual and learner-timing categories in this task on 25 September 2026. Reviewer identities, role-specific findings, pilot date and measured minutes were not supplied, so this record does not assert those observations occurred.
+
+## Source reconciliation
+
+| Claim used in the draft | Checked source | Decision for review |
+|---|---|---|
+| Unit 400311217 covers measuring, recording and comparing resource use; listing and validating causes; and reporting, discussing and clarifying feedback. | [TESDA Barangay Health Services NC II, unit 400311217, PDF pp. 33-35](https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf) | The three lessons follow these elements. Local workplace procedures and observed performance are still required. |
+| Three facilitated hours are proposed for this subchapter. | DOH Facilitator Guide, repository transcription, PDF p. 19 | 180 minutes is a planning budget, not a measured duration or an online completion rule. |
+| Efficient resource use and 7S are suitable teaching context. | DOH Facilitator Guide, PDF pp. 22 and 34; BHW Reference Manual, PDF p. 30 | Keep 7S tied to order, safety and service quality. The manual's 7S is under high-standard client service; 1.9 is an instructional grouping, not a claim of a separately printed chapter. |
+| Resource savings must protect essential service. | [WHO climate-resilient and environmentally sustainable health-care facilities](https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities) | WHO supports optimizing water and energy and sound waste management while protecting health facilities and communities. Specific local clinical rules need local approval. |
+| Hand hygiene and clinical single-use rules are protected. | [WHO hand-hygiene guidelines](https://www.who.int/publications-detail-redirect/9789241597906); [CDC injection safety guidance](https://www.cdc.gov/injection-safety/hcp/clinical-safety/index.html); [CDC lancet guidance](https://www.cdc.gov/injection-safety/hcp/infection-control/) | Do not frame reduced hand hygiene or reuse of single-use needles/lancets as conservation. A local clinical trainer must confirm the exact facility procedure. |
+| Vaccine cold-chain power must not be treated as discretionary use. | [CDC vaccine storage and handling guidance](https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-5-vaccine-storage-and-handling.html) | Keep vaccine storage equipment powered and monitored under the local program protocol. |
+
+The draft's Elena scenario, 20/100-to-5/100 figures, trial checklist, and three optional practice cards are authored examples. They are **not** observed BHS data, verbatim DOH activities, or TESDA assessment instruments. The legacy 1.9 source has no activity cards. The cards' source-page field points to the background competency and time pages, not to an original card.
+
+The review candidate adds formative checks at inventory, utility safety, normalized comparison and colleague communication. The three lessons now have 2, 2 and 3 checks respectively in both Read and Slides. Each three-option check explains the rejected choices; facilitator answer keys include the additions. The existing `loadReferenceModule` parser/validator passes locally for all three 1.9 lessons. The three optional cards pass `validateActivities`; the three candidate SVGs pass `validateSvgMarkup`. The complete module, three bilingual lessons, approved SVGs, optional cards, narration and printable practice packet are in the production authoring path on the draft PR. Full CI and authenticated learner/facilitator view checks remain pending.
+
+## Protected boundaries
+
+- Do not reduce water or supplies needed for hand hygiene. Repair leaks and follow local procedures.
+- Never make needles, lancets or other clinical single-use items reusable. Confirm product instructions and local infection-control policy.
+- Do not switch off cold-chain equipment, required ventilation or other critical systems for a saving target.
+- Do not delay an urgent referral or accept incorrect or late teaching materials to lower a cost or workload measure.
+- Do not use expired stock or an unapproved handout version. Do not include patient names in a resource trial.
+- If a proposed saving conflicts with a service or safety requirement, stop the trial and take it to the supervisor.
+
+## Proposed facilitated run sheet - to test, not yet validated
+
+| Lesson | Segment | Minutes |
+|---|---|---:|
+| resources-audit | Elena case and evidence demonstration | 15 |
+| | Individual audit card, pair comparison, feedback and retry | 25 + 10 + 10 |
+| resources-safe-change | Safe/unsafe options and local policy check | 15 |
+| | Individual decision card, role-play, feedback and retry | 25 + 10 + 10 |
+| resources-monitor | Normalized measures and quality check | 10 |
+| | Individual trial card, colleague feedback, review and retry | 30 + 10 + 10 |
+| **Total** | | **180** |
+
+The three proposed card durations (25, 25, 30 minutes) sit inside these lesson budgets. A card is optional practice. Attendance or participation never creates a competency rating. A facilitator records each learner's observed action, feedback and retry separately using the approved indicator and local procedure.
+
+### Learner timing log to complete at the pilot
+
+Record the date, location, facilitator, language used, number of learners, prior experience, and any accessibility adaptations. For each lesson, write actual start/end times for the explanation, individual card, discussion, feedback and retry; note interruptions separately rather than hiding them in the lesson duration. Count how many learners completed an individual attempt and how many needed a retry. Record any skipped safeguard or rushed observation as a quality failure, even if the clock target was met.
+
+| Lesson | Planned | Actual active minutes | Individual attempts / learners | Retries | Safety or service concern | Revision decision |
+|---|---:|---:|---|---|---|---|
+| resources-audit | 60 | Pending | Pending | Pending | Pending | Pending |
+| resources-safe-change | 60 | Pending | Pending | Pending | Pending | Pending |
+| resources-monitor | 60 | Pending | Pending | Pending | Pending | Pending |
+
+The facilitator and Filipino-language reviewer should discuss where instructions or terms caused delay. Keep the 180-minute plan only if a real group can complete the tasks, feedback and individual observations without omitting safety or service-quality checks. Otherwise revise the sequence or propose a documented time change before release.
+
+## Human review fields
+
+| Gate | Reviewer, role and date | Evidence and required decision |
+|---|---|---|
+| Facilitator | Requester approval noted 2026-09-25; reviewer identity and findings pending | Read, Slides, guides, questions, cards, printed worksheets, 60-minute lesson plans and individual observation cues; approve or request changes. |
+| Filipino-language | Requester approval noted 2026-09-25; reviewer identity and findings pending | Natural Filipino, clear BHS terms, parity with English, pronunciation for later narration; approve or request changes. |
+| Clinical/local policy | Requester approval noted 2026-09-25; local protocol evidence pending | Hand hygiene, single-use, cold chain, waste segregation, urgent referral and document control against local protocol; approve or request changes. |
+| Visuals | Requester approval noted 2026-09-25; asset hashes verified; visual review notes pending | Approve final bilingual resource-audit, safe-change and normalized-tracker diagrams and their alt text; check mobile and print legibility. The approved SVGs are attached to the production-authoring lessons; visual review notes remain pending. |
+| Learner timing | Requester approval noted 2026-09-25; pilot date and actual minutes pending | Run all three lessons with a real learner group. Log per-segment start/end, group size, completion, questions, retries, quality failures and deviations. Revise until each lesson can be facilitated within its tested allocation without rushing observation. |
+
+## Pilot publication exception (25 September 2026)
+
+The requester explicitly authorized **pilot publication before the facilitator and Filipino-language findings, local safety and visual review record, and actual learner timing are complete**. This exception permits promotion of the three already staged Module 1.9 lesson revisions for a limited pilot. It does not convert the proposed 180 minutes into measured results or claim that named reviewers completed the checks. Keep those evidence fields pending and capture findings during the pilot. Resolve any safety or service-quality issue before wider release. Keep participation separate from individual competency observations.
+
+## Staging record (25 September 2026)
+
+The established content loader created 1.9 from the complete authored module after a successful dry run. Module ID `586f0588-2776-42b0-be1c-bc88c4ef825f` is recorded in the course lock. The established lesson loader then passed a dry run and staged all three authored lessons without promotion. Returned lesson IDs are `resources-audit`: `73e5e389-0f41-4ef5-aadf-aa368da6a863`; `resources-safe-change`: `98605646-c56d-4dec-b440-eb016c44e6cf`; `resources-monitor`: `59cea10b-f0e8-4fa9-837f-77b8504f4e77`. These IDs are recorded in the same lock. The module's facilitator notes contain all three optional practice cards. Each lesson has one immutable revision and a null `published_revision_id`.
+
+The printable six-page bilingual packet is `public/training/module-1-9/practice-1cd24cf309ea.pdf`. Three hash-named SVGs are attached to the lesson Read and Slide practice sections. Narration assets and their manifest entries are committed for both languages. These materials are review assets; no completed learner timing log has been supplied. Learner publication and authenticated view checks remain pending.
+
+## Release check after signoff
+
+1. Record names, dates, findings and approved final revisions above. Resolve every safety and language issue; replace proposed minutes with measured results.
+2. Reconcile the final human decisions against the production-authored lessons, cards, visuals, narration and printable packet. Keep the draft as review history until the team decides its retention.
+3. Rerun the established parser/validator and scoped loader dry runs if reviewed content changes. Compare the immutable revisions with the signed decisions.
+4. For this pilot only, promote the reviewed staged revisions under the explicit requester exception above. Verify signed-in learner Read/Slides/practice and facilitator guide, activities, observation and print views; verify a historical certified learner remains unaffected. Complete the pending review and timing record before wider release.
+
+Module and lesson staging and course-lock updates are complete. No lesson publication or authenticated learner/facilitator view test is claimed.
+
