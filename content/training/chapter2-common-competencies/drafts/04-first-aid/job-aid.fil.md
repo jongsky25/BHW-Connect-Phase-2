@@ -14,7 +14,7 @@ Tingnan muna ang panganib bago lumapit. Pakiusapan ang saksi na tumawag sa kumpi
 
 ## Kilalanin ang panganib sa batang may sakit
 
-Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at kasalukuyang kombulsyon. Kung may danger sign, agad ipasuri sa pasilidad at ilahad ang nakita.
+Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at kasalukuyang kombulsyon. Kung may kahit isang danger sign, agad ipasuri sa pasilidad. Sabihin ang eksaktong nakita at ayusin ang ligtas na paglipat.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -26,7 +26,7 @@ Itanong ang pag-inom, pagsusuka at kombulsyon. Tingnan ang antas ng kamalayan at
 
 ## Tumugon sa ubo at hirap sa paghinga
 
-Obserbahan ang hirap sa paghinga at itanong ang danger signs. Iugnay agad sa klinikal na pagsusuri. Ang sanay na assessor ang gagamit ng kasalukuyang chart ayon sa edad; iulat ang nakita.
+Obserbahan ang hirap sa paghinga at itanong ang danger signs. Kapag hirap huminga, iugnay agad sa klinikal na pagsusuri. Ang sanay na assessor ang gagamit ng kasalukuyang chart ayon sa edad para sa bilis ng paghinga. Iulat ang nakita nang hindi pumipili ng diagnosis.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -38,9 +38,7 @@ Obserbahan ang hirap sa paghinga at itanong ang danger signs. Iugnay agad sa kli
 
 ## Tumugon sa pagtatae at dehydration
 
-Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign.
-
-Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign. Iniiwasan ni Lea ang shortcut.
+Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Hikayatin ang patuloy na pagpapasuso kung kayang sumuso ng bata. Ipaliwanag na ligtas na tubig at eksaktong panuto ng sachet ang gamit sa ORS. I-refer agad kung may danger sign o alalahanin sa dehydration.
 
 | ORS sachet | Nakasulat sa packet | Ipinakita / ulitin |
 |---|---|---|
@@ -51,7 +49,7 @@ Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka, dugo sa dum
 
 ## Tumugon sa kombulsyon
 
-Alisin ang panganib sa paligid, sapinan ang ulo kung kaya at tandaan ang simula. Humingi agad ng tulong para sa bata at obserbahan ang paghinga pagkatapos. Iulat ang nakita.
+Alisin ang panganib sa paligid, sapinan ang ulo kung kaya at tandaan ang oras ng simula. Humingi agad ng tulong para sa bata at bantayan ang paghinga pagkatapos. Ibigay sa rumespondeng clinician ang factual na paglalarawan ng nakita.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -75,21 +73,19 @@ Suriin ang paligid, tugon at normal na paghinga. Humingi agad ng emergency help 
 
 ## Maghanda sa supervised CPR/BLS practice
 
-Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod.
-
-Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod. Iniiwasan ni Lea ang shortcut.
+Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm na ipinakita ng kwalipikadong trainer. Sanayin ang compressions at AED prompts sa aprubadong kagamitan. Bago ang kaso ng bata o sa tubig, ihiwalay ang algorithm para sa bata at sa pagkalunod.
 
 | Supervised station | Nakitang kilos | Ulitin / hindi nakita |
 |---|---|---|
 | Tawag at lokasyon | ____ | ____ |
 | Tamang manikin at edad | ____ | ____ |
 | Kasalukuyang sequence ng trainer | ____ | ____ |
-| AED o susunod na tulong | ____ | ____ |
+| Tinawag na susunod na tulong | ____ | ____ |
 | Walang maneuver sa tao | ____ | ____ |
 
 ## Ligtas na tumugon sa pagkalunod
 
-Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng ligtas na abot o hagis na tulong. Kapag nailigtas, ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol.
+Tawagin ang sanay na rescuer at huwag lumusong sa tubig. Gumamit ng abot o hagis na tulong kung mayroon, at kung ligtas lamang. Kapag nailigtas na ng sanay na rescuer, ayusin ang agarang medikal na pagsusuri. Sundin ang kasalukuyang drowning resuscitation protocol.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -101,7 +97,7 @@ Tawagin ang sanay na rescuer at manatili sa ligtas na lupa. Gumamit lamang ng li
 
 ## Mangolekta ng impormasyon sa posibleng pagkalason
 
-Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Ibigay ang label, oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin.
+Iwasan ang exposure, ilayo ang iba at tawagan ang kumpirmadong emergency o poison adviser. Basahin lamang ang label kung walang exposure, gaya ng lalagyang malayo na sa spill o hawak ng iba. Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad. Sundin ang kanilang tagubilin.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -113,9 +109,7 @@ Iwasan ang kemikal, ilayo ang iba at tawagan ang kumpirmadong emergency o poison
 
 ## Tumugon sa sugat at pagdurugo
 
-Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Magdagdag ng tela kung nabasa habang nagpapatuloy ang pressure.
-
-Ganito ang ligtas na tugon sa kaso. Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Magdagdag ng tela kung nabasa habang nagpapatuloy ang pressure. Iniiwasan ni Lea ang shortcut.
+Protektahan ang kamay at idiin nang matatag ang malinis na tela. Humingi agad ng tulong kung malubha o tuloy-tuloy ang pagdurugo. Kung mabasa ang tela, magdagdag ng tela habang tuloy ang pressure. Tanungin ang sanay na staff tungkol sa iba pang hakbang at follow-up ng sugat.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -127,7 +121,7 @@ Ganito ang ligtas na tugon sa kaso. Protektahan ang kamay at idiin nang matatag 
 
 ## Tumugon sa posibleng bali
 
-Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa kasalukuyang posisyon at ayusin ang agarang pagsusuri. Sundin ang sanay na tagubilin sa immobilization at transport.
+Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa posisyong nakita at ayusin ang agarang pagsusuri. Tingnan kung may iba pang agarang problema. Sundin ang sanay o lokal na tagubilin sa immobilization at paglipat.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -139,11 +133,11 @@ Iwasan ang hindi kailangang galaw. Suportahan ang bahaging nasugatan sa kasaluku
 
 ## Tumugon sa kagat at tusok ng insekto
 
-Kilalanin ang posibleng malubhang allergy at humingi agad ng emergency help. Sundin ang reseta at sanay na lokal na protocol. Bantayan ang paghinga habang naghihintay.
+Kilalanin ang posibleng malubhang allergy at humingi agad ng emergency help. Sundin ang iniresetang emergency plan ng tao at ang sanay/lokal na protocol. Bantayan ang paghinga habang paparating ang tulong.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
-| Tusok | ____ | ____ |
+| Agarang senyales | ____ | ____ |
 | Paghinga | ____ | ____ |
 | Tulong | ____ | ____ |
 | Kumpirmadong contact | ____ | ____ |
@@ -177,19 +171,17 @@ Lumayo sa init nang ligtas. Palamigin ang paso sa malamig na dumadaloy na tubig 
 
 Humingi ng tulong at sundin ang kasalukuyang choking training ayon sa edad. Ihiwalay ang mabisang ubo sa malubhang bara. Magsanay sa adult at infant manikin sa gabay ng trainer.
 
-Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at sundin ang kasalukuyang choking training ayon sa edad. Ihiwalay ang mabisang ubo sa malubhang bara. Magsanay sa adult at infant manikin sa gabay ng trainer. Iniiwasan ni Lea ang shortcut.
-
 | Supervised station | Nakitang kilos | Ulitin / hindi nakita |
 |---|---|---|
 | Tawag at lokasyon | ____ | ____ |
 | Tamang manikin at edad | ____ | ____ |
 | Kasalukuyang sequence ng trainer | ____ | ____ |
-| AED o susunod na tulong | ____ | ____ |
+| Tinawag na susunod na tulong | ____ | ____ |
 | Walang maneuver sa tao | ____ | ____ |
 
 ## Iugnay sa agarang tulong ang may pananakit ng dibdib
 
-Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol.
+Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang tagubilin. Iulat ang simula, sintomas at alam na gamot o allergy. Ang gamot ay ayon sa kasalukuyang lokal na protocol at kwalipikadong payo.
 
 | Elemento | Nakitang ebidensiya | Susunod |
 |---|---|---|
@@ -201,9 +193,9 @@ Humingi agad ng medikal na tulong at pagpahingahin ang tao habang sinusunod ang 
 
 ## Suriin ang first-aid kit
 
-Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit. Ihiwalay ang laman sa pahintulot gumamit.
+Ihambing ang kit sa kasalukuyang lokal na listahan. Itala ang dami, selyo, expiry, imbakan at responsable sa palit. Iulat ang kulang o sirang gamit nang hindi ito ginagamit. Ihiwalay ang laman sa pahintulot gumamit ng gamot o device.
 
-| Gamit sa lokal na listahan | Dami | Selyo/kondisyon | Expiry | Palit at responsable |
+| Gamit sa lokal na listahan | Dami | Selyo/kondisyon | Expiry | Responsable sa palit |
 |---|---|---|---|---|
 | ____ | ____ | ____ | ____ | ____ |
 | ____ | ____ | ____ | ____ | ____ |

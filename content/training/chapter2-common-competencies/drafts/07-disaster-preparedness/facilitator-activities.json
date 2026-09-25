@@ -1,16 +1,28 @@
 [
   {
     "id": "c2-7-before-disaster-stations",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Before a disaster: map, warning and go-bag stations",
       "fil": "Bago ang sakuna: stations ng mapa, babala at go-bag"
     },
-    "lesson_keys": ["hazards-capacities", "evacuation-contacts", "go-bag-e-balde"],
-    "source_pages": [38, 42, 43],
+    "lesson_keys": [
+      "hazards-capacities",
+      "evacuation-contacts",
+      "go-bag-e-balde"
+    ],
+    "source_pages": [
+      38,
+      42,
+      43
+    ],
     "kind": "practical",
     "minutes": 30,
-    "objective_indices": [0, 1, 2],
+    "objective_indices": [
+      0,
+      1,
+      2
+    ],
     "optional": true,
     "choice_group": null,
     "purpose": {
@@ -22,27 +34,72 @@
       "fil": "Tatluhan (kalahok, kapareha, tagamasid) na umiikot sa tatlong 10-minutong station; magpalit ng papel bawat station."
     },
     "materials": [
-      { "en": "Participant cards, worksheets and observation sheets for 2.7.1, 2.7.2 and 2.7.3 (one set per triad)", "fil": "Participant cards, worksheet at talaan ng obserbasyon para sa 2.7.1, 2.7.2 at 2.7.3 (isang set bawat tatluhan)" },
-      { "en": "Hand-drawn fictional map of Barangay Maligaya with the school marked \"not confirmed\"", "fil": "Iginuhit na kathang-isip na mapa ng Barangay Maligaya na may paaralang may markang \"hindi pa kumpirmado\"" },
-      { "en": "Mock advisory labelled PRACTICE with a source and time, and an old printed directory prop", "fil": "Mock advisory na may tatak na PRACTICE, may source at oras, at lumang naka-print na directory bilang prop" },
-      { "en": "Light bag or bucket with picture cards for items (no real medicines)", "fil": "Magaang bag o balde na may larawan ng mga gamit (walang totoong gamot)" },
-      { "en": "Job aid: Disaster preparedness and response", "fil": "Job aid: Paghahanda at pagtugon sa sakuna" }
+      {
+        "en": "Participant cards, worksheets and observation sheets for 2.7.1, 2.7.2 and 2.7.3 (one set per triad)",
+        "fil": "Participant cards, worksheet at talaan ng obserbasyon para sa 2.7.1, 2.7.2 at 2.7.3 (isang set bawat tatluhan)"
+      },
+      {
+        "en": "Hand-drawn fictional map of Barangay Maligaya with the school marked \"not confirmed\"",
+        "fil": "Iginuhit na kathang-isip na mapa ng Barangay Maligaya na may paaralang may markang \"hindi pa kumpirmado\""
+      },
+      {
+        "en": "Mock advisory labelled PRACTICE with a source and time, and an old printed directory prop",
+        "fil": "Mock advisory na may tatak na PRACTICE, may source at oras, at lumang naka-print na directory bilang prop"
+      },
+      {
+        "en": "Light bag or bucket with picture cards for items (no real medicines)",
+        "fil": "Magaang bag o balde na may larawan ng mga gamit (walang totoong gamot)"
+      },
+      {
+        "en": "Job aid: Disaster preparedness and response",
+        "fil": "Job aid: Paghahanda at pagtugon sa sakuna"
+      }
     ],
     "steps": [
-      { "en": "Set up three stations. Each station follows the lesson guide rhythm: opening 1, model 1, practice 4, feedback and retry 2, debrief 1, next step 1.", "fil": "Mag-ayos ng tatlong station. Sundin sa bawat isa ang takbo ng lesson guide: pambungad 1, modelo 1, practice 4, feedback at pag-ulit 2, talakayan 1, susunod na hakbang 1." },
-      { "en": "Map station: the learner marks a hazard, a support need and one capacity to confirm, and writes who will verify. No real household locations.", "fil": "Station ng mapa: markahan ng kalahok ang isang panganib, isang pangangailangan at isang kakayahang kukumpirmahin, at isulat kung sino ang magpapatunay. Walang totoong lokasyon ng sambahayan." },
-      { "en": "Warning station: the partner plays Nena's family asking when and where to go; the learner states source and time, what is confirmed, and which contact they will verify.", "fil": "Station ng babala: gumanap ang kapareha bilang pamilya ni Nena na nagtatanong kung kailan at saan pupunta; sabihin ng kalahok ang source at oras, ano ang kumpirmado, at aling contact ang kukumpirmahin." },
-      { "en": "Go-bag station: the learner helps Pio's family choose items, explains why, asks about access to regular medicine, and sets a recheck date.", "fil": "Station ng go-bag: tulungan ng kalahok ang pamilya ni Pio na pumili ng gamit, ipaliwanag kung bakit, itanong kung may tulong na kailangan sa regular na gamot, at magtakda ng petsa ng pag-check." },
-      { "en": "After each round, the peer observer gives one strength and one retry action; a staff observer rates only what they saw.", "fil": "Pagkatapos ng bawat round, magbigay ang kapwa tagamasid ng isang lakas at isang susubukang muli; ang staff observer lang ang magre-rate batay sa aktuwal na nakita." }
+      {
+        "en": "Set up three stations. Each station follows the lesson guide rhythm: opening 1, model 1, practice 4, feedback and retry 2, debrief 1, next step 1.",
+        "fil": "Mag-ayos ng tatlong station. Sundin sa bawat isa ang takbo ng lesson guide: pambungad 1, modelo 1, practice 4, feedback at pag-ulit 2, talakayan 1, susunod na hakbang 1."
+      },
+      {
+        "en": "Map station: the learner marks a hazard, a support need and one capacity to confirm, and writes who will verify. No real household locations.",
+        "fil": "Station ng mapa: markahan ng kalahok ang isang panganib, isang pangangailangan at isang kakayahang kukumpirmahin, at isulat kung sino ang magpapatunay. Walang totoong lokasyon ng sambahayan."
+      },
+      {
+        "en": "Warning station: the partner plays Nena's family asking when and where to go; the learner states source and time, what is confirmed, and which contact they will verify.",
+        "fil": "Station ng babala: gumanap ang kapareha bilang pamilya ni Nena na nagtatanong kung kailan at saan pupunta; sabihin ng kalahok ang source at oras, ano ang kumpirmado, at aling contact ang kukumpirmahin."
+      },
+      {
+        "en": "Go-bag station: the learner helps Pio's family choose items, explains why, asks about access to regular medicine, and sets a recheck date.",
+        "fil": "Station ng go-bag: tulungan ng kalahok ang pamilya ni Pio na pumili ng gamit, ipaliwanag kung bakit, itanong kung may tulong na kailangan sa regular na gamot, at magtakda ng petsa ng pag-check."
+      },
+      {
+        "en": "After each round, the peer observer gives one strength and one retry action; a staff observer rates only what they saw.",
+        "fil": "Pagkatapos ng bawat round, magbigay ang kapwa tagamasid ng isang lakas at isang susubukang muli; ang staff observer lang ang magre-rate batay sa aktuwal na nakita."
+      }
     ],
     "debrief": [
-      { "en": "Which item on your map or advisory did you mark \"to confirm\", and who will confirm it?", "fil": "Aling bahagi ng mapa o advisory ang minarkahan mong \"kukumpirmahin\", at sino ang magkukumpirma?" },
-      { "en": "What did Pio's family need that a copied list would have missed?", "fil": "Ano ang kailangan ng pamilya ni Pio na makaliligtaan ng kinopyang listahan?" }
+      {
+        "en": "Which item on your map or advisory did you mark \"to confirm\", and who will confirm it?",
+        "fil": "Aling bahagi ng mapa o advisory ang minarkahan mong \"kukumpirmahin\", at sino ang magkukumpirma?"
+      },
+      {
+        "en": "What did Pio's family need that a copied list would have missed?",
+        "fil": "Ano ang kailangan ng pamilya ni Pio na makaliligtaan ng kinopyang listahan?"
+      }
     ],
     "observe": [
-      { "en": "2.7.1: identifies a hazard, a support need and one capacity needing confirmation on the fictional map.", "fil": "2.7.1: natutukoy sa fictional map ang panganib, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin." },
-      { "en": "2.7.2: states the advisory source and time, the confirmed action and the contact to verify; does not invent an order, hotline or route.", "fil": "2.7.2: nasasabi ang source at oras ng advisory, ang kumpirmadong aksiyon at ang contact na kukumpirmahin; hindi gumagawa ng sariling order, hotline o ruta." },
-      { "en": "2.7.3: selects items for the family, explains why and sets a recheck date; does not offer to dispense medicine.", "fil": "2.7.3: nakapipili ng gamit para sa pamilya, naipapaliwanag kung bakit at nakapagtatakda ng petsa ng pag-check; hindi nag-aalok na magbigay ng gamot." }
+      {
+        "en": "2.7.1: In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
+        "fil": "2.7.1: Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin."
+      },
+      {
+        "en": "2.7.2: In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify. Does not invent an order, hotline or route.",
+        "fil": "2.7.2: Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin. Hindi gumagawa ng sariling order, hotline o ruta."
+      },
+      {
+        "en": "2.7.3: In a fictional case, select items for the fictional family, explain why, and set a date to recheck. Does not offer to dispense medicine.",
+        "fil": "2.7.3: Sa fictional na kaso, pumili ng gamit para sa fictional pamilya, ipaliwanag ang dahilan at petsa ng susunod na pag-check. Hindi nag-aalok na magbigay ng gamot."
+      }
     ],
     "output": {
       "en": "Three completed fictional worksheets per triad (map table, warning table, go-bag table) with a \"who will verify\" entry on each.",
@@ -53,23 +110,42 @@
       "fil": "Kung kulang ang gamit: iguhit ang mapa sa pisara at basahin nang malakas ang advisory. Kung mag-isa: sagutan ang tatlong worksheet at magpaobserba sa staff pagkatapos."
     },
     "worksheet": [
-      { "en": "Map: Place / Hazard / Support need / Possible capacity / Who/when will verify", "fil": "Mapa: Lugar / Panganib / Kailangan ng suporta / Posibleng kapasidad / Sino/kailan magpapatunay" },
-      { "en": "Warning: Warning/source/time / Evacuation order / Route and accessible shelter / Contact/verification date / Still uncertain", "fil": "Babala: Babala/source/oras / Evacuation order / Ruta at accessible na silungan / Contact/verification date / Hindi pa tiyak" },
-      { "en": "Go-bag: Need / Pack / Available / Obtain / Next check", "fil": "Go-bag: Pangangailangan / Ilalagay / Meron na / Kailangan kunin / Susunod na check" }
+      {
+        "en": "Map: Place / Hazard / Support need / Possible capacity / Who/when will verify",
+        "fil": "Mapa: Lugar / Panganib / Kailangan ng suporta / Posibleng kapasidad / Sino/kailan magpapatunay"
+      },
+      {
+        "en": "Warning: Warning/source/time / Evacuation order / Route and accessible shelter / Contact/verification date / Still uncertain",
+        "fil": "Babala: Babala/source/oras / Evacuation order / Ruta at accessible na silungan / Contact/verification date / Hindi pa tiyak"
+      },
+      {
+        "en": "Go-bag: Need / Pack / Available / Obtain / Next check",
+        "fil": "Go-bag: Pangangailangan / Ilalagay / Meron na / Kailangan kunin / Susunod na check"
+      }
     ]
   },
   {
     "id": "c2-7-handover-services-stations",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "During and after: team handover and service-linking stations",
       "fil": "Habang at pagkatapos: stations ng handover sa team at pag-uugnay sa serbisyo"
     },
-    "lesson_keys": ["bhert-coordination", "essential-health-packages"],
-    "source_pages": [38, 42, 43],
+    "lesson_keys": [
+      "bhert-coordination",
+      "essential-health-packages"
+    ],
+    "source_pages": [
+      38,
+      42,
+      43
+    ],
     "kind": "role-play",
     "minutes": 20,
-    "objective_indices": [3, 4],
+    "objective_indices": [
+      3,
+      4
+    ],
     "optional": true,
     "choice_group": null,
     "purpose": {
@@ -81,25 +157,64 @@
       "fil": "Tatluhan na umiikot sa dalawang 10-minutong station; gumaganap ang kapareha bilang team lead o residente sa silungan."
     },
     "materials": [
-      { "en": "Participant cards, worksheets and observation sheets for 2.7.4 and 2.7.5 (one set per triad)", "fil": "Participant cards, worksheet at talaan ng obserbasyon para sa 2.7.4 at 2.7.5 (isang set bawat tatluhan)" },
-      { "en": "Old fictional roster card and a mock team-change note", "fil": "Lumang kathang-isip na roster card at mock na abiso ng pagpapalit ng team" },
-      { "en": "Four need cards: food for a child, limited water, regular medicine, a distressed person", "fil": "Apat na need card: pagkain para sa bata, limitadong tubig, regular na gamot, taong nababagabag" },
-      { "en": "Job aid: Disaster preparedness and response", "fil": "Job aid: Paghahanda at pagtugon sa sakuna" }
+      {
+        "en": "Participant cards, worksheets and observation sheets for 2.7.4 and 2.7.5 (one set per triad)",
+        "fil": "Participant cards, worksheet at talaan ng obserbasyon para sa 2.7.4 at 2.7.5 (isang set bawat tatluhan)"
+      },
+      {
+        "en": "Old fictional roster card and a mock team-change note",
+        "fil": "Lumang kathang-isip na roster card at mock na abiso ng pagpapalit ng team"
+      },
+      {
+        "en": "Four need cards: food for a child, limited water, regular medicine, a distressed person",
+        "fil": "Apat na need card: pagkain para sa bata, limitadong tubig, regular na gamot, taong nababagabag"
+      },
+      {
+        "en": "Job aid: Disaster preparedness and response",
+        "fil": "Job aid: Paghahanda at pagtugon sa sakuna"
+      }
     ],
     "steps": [
-      { "en": "Run each station with the lesson guide rhythm (1-1-4-2-1-1 minutes).", "fil": "Patakbuhin ang bawat station ayon sa takbo ng lesson guide (1-1-4-2-1-1 minuto)." },
-      { "en": "Handover station: show the old roster. The learner states what to confirm (current team, lead, BHW role, channel) and gives a short handover: location, hazard, urgent need, action taken, next contact, time. No personal details.", "fil": "Station ng handover: ipakita ang lumang roster. Sabihin ng kalahok ang kukumpirmahin (kasalukuyang team, lead, papel ng BHW, channel) at magbigay ng maikling handover: lugar, panganib, agarang pangangailangan, ginawa, susunod na contact, oras. Walang personal na detalye." },
-      { "en": "Services station: the learner sorts the four need cards into medical/public health, nutrition, WASH and MHPSS, names the confirmed focal person slot, and says how feedback will come back.", "fil": "Station ng serbisyo: ipangkat ng kalahok ang apat na need card sa medical/public health, nutrisyon, WASH at MHPSS, sabihin ang puwang para sa kumpirmadong focal person, at kung paano babalik ang feedback." },
-      { "en": "For the distressed person, the partner stays calm and quiet; the learner checks safety, listens with consent without demanding the story, and offers referral.", "fil": "Para sa taong nababagabag, mahinahon at tahimik ang kapareha; suriin ng kalahok ang kaligtasan, makinig nang may pahintulot nang hindi pinipilit ang salaysay, at mag-alok ng referral." },
-      { "en": "Peer gives one strength and one retry action; learner retries; staff observer rates only observed behaviour.", "fil": "Magbigay ang kapwa ng isang lakas at isang susubukang muli; umulit ang kalahok; ang staff observer lang ang magre-rate batay sa aktuwal na kilos." }
+      {
+        "en": "Run each station with the lesson guide rhythm (1-1-4-2-1-1 minutes).",
+        "fil": "Patakbuhin ang bawat station ayon sa takbo ng lesson guide (1-1-4-2-1-1 minuto)."
+      },
+      {
+        "en": "Handover station: show the old roster. The learner states what to confirm (current team, lead, BHW role, channel) and gives a short handover: location, hazard, urgent need, action taken, next contact, time. No personal details.",
+        "fil": "Station ng handover: ipakita ang lumang roster. Sabihin ng kalahok ang kukumpirmahin (kasalukuyang team, lead, papel ng BHW, channel) at magbigay ng maikling handover: lugar, panganib, agarang pangangailangan, ginawa, susunod na contact, oras. Walang personal na detalye."
+      },
+      {
+        "en": "Services station: the learner sorts the four need cards into medical/public health, nutrition, WASH and MHPSS, names the confirmed focal person slot, and says how feedback will come back.",
+        "fil": "Station ng serbisyo: ipangkat ng kalahok ang apat na need card sa medical/public health, nutrisyon, WASH at MHPSS, sabihin ang puwang para sa kumpirmadong focal person, at kung paano babalik ang feedback."
+      },
+      {
+        "en": "For the distressed person, the partner stays calm and quiet; the learner checks safety, listens with consent without demanding the story, and offers referral.",
+        "fil": "Para sa taong nababagabag, mahinahon at tahimik ang kapareha; suriin ng kalahok ang kaligtasan, makinig nang may pahintulot nang hindi pinipilit ang salaysay, at mag-alok ng referral."
+      },
+      {
+        "en": "Peer gives one strength and one retry action; learner retries; staff observer rates only observed behaviour.",
+        "fil": "Magbigay ang kapwa ng isang lakas at isang susubukang muli; umulit ang kalahok; ang staff observer lang ang magre-rate batay sa aktuwal na kilos."
+      }
     ],
     "debrief": [
-      { "en": "What did you leave out of the handover, and why was that right?", "fil": "Ano ang hindi mo isinama sa handover, at bakit iyon ang tama?" },
-      { "en": "Which need could a BHW be tempted to solve alone, and who should take it instead?", "fil": "Aling pangangailangan ang maaaring subukang lutasin ng BHW nang mag-isa, at sino dapat ang humawak nito?" }
+      {
+        "en": "What did you leave out of the handover, and why was that right?",
+        "fil": "Ano ang hindi mo isinama sa handover, at bakit iyon ang tama?"
+      },
+      {
+        "en": "Which need could a BHW be tempted to solve alone, and who should take it instead?",
+        "fil": "Aling pangangailangan ang maaaring subukang lutasin ng BHW nang mag-isa, at sino dapat ang humawak nito?"
+      }
     ],
     "observe": [
-      { "en": "2.7.4: identifies what to confirm in the team change and gives a short handover without personal details.", "fil": "2.7.4: natutukoy ang dapat kumpirmahin sa pagpapalit ng team at nakapagbibigay ng maikling handover nang walang personal na detalye." },
-      { "en": "2.7.5: matches four needs to the appropriate service and states referral and follow-up; does not prescribe, set rations, declare water safe or give therapy.", "fil": "2.7.5: naitutugma ang apat na pangangailangan sa tamang serbisyo at nasasabi ang referral at follow-up; hindi nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig o nagbibigay ng therapy." }
+      {
+        "en": "2.7.4: In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.",
+        "fil": "2.7.4: Sa fictional na kaso, sa mock team change, tukuyin ang dapat kumpirmahin at magbigay ng maikling handover nang walang personal na detalye."
+      },
+      {
+        "en": "2.7.5: In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up. Does not prescribe, set rations, declare water safe or give therapy.",
+        "fil": "2.7.5: Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up. Hindi nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig o nagbibigay ng therapy."
+      }
     ],
     "output": {
       "en": "One fictional role-and-handover worksheet and one four-domain referral worksheet per triad.",
@@ -110,22 +225,36 @@
       "fil": "Kung kulang ang gamit: basahin nang malakas ang need cards at ipangkat sa pisara. Kung mag-isa: sagutan ang dalawang worksheet at sabihin nang malakas ang handover sa isang staff pagkatapos."
     },
     "worksheet": [
-      { "en": "Handover: Current team/lead / BHW role and limit / Need/location / Channel and backup / Time and acknowledgement", "fil": "Handover: Kasalukuyang team/lead / BHW role at limitasyon / Pangangailangan/lugar / Channel at backup / Oras at pagtanggap" },
-      { "en": "Services: Need / Domain / Confirmed focal person / Referral/feedback", "fil": "Serbisyo: Pangangailangan / Domain / Kumpirmadong focal person / Referral/feedback" }
+      {
+        "en": "Handover: Current team/lead / BHW role and limit / Need/location / Channel and backup / Time and acknowledgement",
+        "fil": "Handover: Kasalukuyang team/lead / BHW role at limitasyon / Pangangailangan/lugar / Channel at backup / Oras at pagtanggap"
+      },
+      {
+        "en": "Services: Need / Domain / Confirmed focal person / Referral/feedback",
+        "fil": "Serbisyo: Pangangailangan / Domain / Kumpirmadong focal person / Referral/feedback"
+      }
     ]
   },
   {
     "id": "c2-7-coordinated-tabletop",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Coordinated disaster tabletop",
       "fil": "Tabletop ng magkakaugnay na pagtugon sa sakuna"
     },
-    "lesson_keys": ["disaster-tabletop"],
-    "source_pages": [38, 42, 43],
+    "lesson_keys": [
+      "disaster-tabletop"
+    ],
+    "source_pages": [
+      38,
+      42,
+      43
+    ],
     "kind": "practical",
     "minutes": 10,
-    "objective_indices": [5],
+    "objective_indices": [
+      5
+    ],
     "optional": true,
     "choice_group": null,
     "purpose": {
@@ -137,22 +266,52 @@
       "fil": "Tatluhan sa isang mesa; ang kalahok ang mangunguna, gaganap ang kapareha bilang mga team lead, susubaybayan ng tagamasid ang pagkakasunod."
     },
     "materials": [
-      { "en": "Participant card, worksheet and observation sheet for 2.7.6 (one set per triad)", "fil": "Participant card, worksheet at talaan ng obserbasyon para sa 2.7.6 (isang set bawat tatluhan)" },
-      { "en": "Four issue cards: family needs help leaving, medicine running low, shelter water uncertain, exhausted volunteer", "fil": "Apat na issue card: pamilyang kailangan ng tulong sa paglikas, nauubos na gamot, hindi tiyak na tubig sa silungan, pagod na volunteer" },
-      { "en": "Mock advisory labelled PRACTICE and the job aid", "fil": "Mock advisory na may tatak na PRACTICE at ang job aid" }
+      {
+        "en": "Participant card, worksheet and observation sheet for 2.7.6 (one set per triad)",
+        "fil": "Participant card, worksheet at talaan ng obserbasyon para sa 2.7.6 (isang set bawat tatluhan)"
+      },
+      {
+        "en": "Four issue cards: family needs help leaving, medicine running low, shelter water uncertain, exhausted volunteer",
+        "fil": "Apat na issue card: pamilyang kailangan ng tulong sa paglikas, nauubos na gamot, hindi tiyak na tubig sa silungan, pagod na volunteer"
+      },
+      {
+        "en": "Mock advisory labelled PRACTICE and the job aid",
+        "fil": "Mock advisory na may tatak na PRACTICE at ang job aid"
+      }
     ],
     "steps": [
-      { "en": "Read the case and the mock advisory aloud; remind everyone it is a tabletop, not a live drill or incident command.", "fil": "Basahin nang malakas ang kaso at mock advisory; ipaalala na tabletop ito, hindi live drill o incident command." },
-      { "en": "Give the learner the four issue cards. In 4 minutes they place them in order and, for each, say the first safe action, the confirmed lead to hand to, and the follow-up.", "fil": "Ibigay sa kalahok ang apat na issue card. Sa loob ng 4 na minuto, ayusin ang pagkakasunod at sabihin sa bawat isa ang unang ligtas na aksiyon, ang kumpirmadong lead na pagpapasahan, at ang follow-up." },
-      { "en": "Check that the exhausted volunteer gets relief and support, not only the residents.", "fil": "Tiyaking may kapalit at suporta ang pagod na volunteer, hindi lang ang mga residente." },
-      { "en": "Peer gives one strength and one retry action; learner retries the weakest item; staff observer rates only what they saw.", "fil": "Magbigay ang kapwa ng isang lakas at isang susubukang muli; ulitin ng kalahok ang pinakamahinang bahagi; ang staff observer lang ang magre-rate batay sa aktuwal na nakita." }
+      {
+        "en": "Read the case and the mock advisory aloud; remind everyone it is a tabletop, not a live drill or incident command.",
+        "fil": "Basahin nang malakas ang kaso at mock advisory; ipaalala na tabletop ito, hindi live drill o incident command."
+      },
+      {
+        "en": "Give the learner the four issue cards. In 4 minutes they place them in order and, for each, say the first safe action, the confirmed lead to hand to, and the follow-up.",
+        "fil": "Ibigay sa kalahok ang apat na issue card. Sa loob ng 4 na minuto, ayusin ang pagkakasunod at sabihin sa bawat isa ang unang ligtas na aksiyon, ang kumpirmadong lead na pagpapasahan, at ang follow-up."
+      },
+      {
+        "en": "Check that the exhausted volunteer gets relief and support, not only the residents.",
+        "fil": "Tiyaking may kapalit at suporta ang pagod na volunteer, hindi lang ang mga residente."
+      },
+      {
+        "en": "Peer gives one strength and one retry action; learner retries the weakest item; staff observer rates only what they saw.",
+        "fil": "Magbigay ang kapwa ng isang lakas at isang susubukang muli; ulitin ng kalahok ang pinakamahinang bahagi; ang staff observer lang ang magre-rate batay sa aktuwal na nakita."
+      }
     ],
     "debrief": [
-      { "en": "What did you do first, and what evidence told you it came first?", "fil": "Ano ang una mong ginawa, at ano ang batayan kung bakit iyon ang nauna?" },
-      { "en": "Which gap would you bring to the DRRM and health leads on Monday?", "fil": "Aling puwang ang dadalhin mo sa DRRM at health leads sa Lunes?" }
+      {
+        "en": "What did you do first, and what evidence told you it came first?",
+        "fil": "Ano ang una mong ginawa, at ano ang batayan kung bakit iyon ang nauna?"
+      },
+      {
+        "en": "Which gap would you bring to the DRRM and health leads on Monday?",
+        "fil": "Aling puwang ang dadalhin mo sa DRRM at health leads sa Lunes?"
+      }
     ],
     "observe": [
-      { "en": "2.7.6: sequences priorities, handover, continuity, follow-up and responder support; records acknowledgement and uses only confirmed contacts.", "fil": "2.7.6: naaayos ang prayoridad, handover, continuity, follow-up at suporta sa responder; naitatala ang pagtanggap at kumpirmadong contact lang ang ginagamit." }
+      {
+        "en": "2.7.6: In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support. Records acknowledgement and uses only confirmed contacts.",
+        "fil": "2.7.6: Sa fictional na kaso, sa 10 minutong tabletop, ayusin ang prayoridad, handover, continuity, follow-up at suporta sa responder. Naitatala ang pagtanggap at kumpirmadong contact lang ang ginagamit."
+      }
     ],
     "output": {
       "en": "One fictional tabletop record per triad with an order, lead, handover time and follow-up for each issue.",
@@ -163,7 +322,10 @@
       "fil": "Kung kulang ang gamit: isulat sa pisara ang apat na isyu at patakbuhin bilang isang grupo na nagpapalitan ng lider. Kung mag-isa: sagutan ang tabletop worksheet at ipaliwanag ito sa staff observer pagkatapos."
     },
     "worksheet": [
-      { "en": "Issue / First safe action / Confirmed lead / Handover/time / Follow-up", "fil": "Isyu / Unang ligtas na aksiyon / Kumpirmadong lead / Handover/oras / Follow-up" }
+      {
+        "en": "Issue / First safe action / Confirmed lead / Handover/time / Follow-up",
+        "fil": "Isyu / Unang ligtas na aksiyon / Kumpirmadong lead / Handover/oras / Follow-up"
+      }
     ]
   }
 ]

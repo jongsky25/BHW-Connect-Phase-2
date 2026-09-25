@@ -1,7 +1,7 @@
 [
   {
     "id": "c2-4-scene-collapse-handover",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Scene, collapse and handover stations",
       "fil": "Mga station sa sitwasyon, pagbagsak at handover"
@@ -58,7 +58,7 @@
       },
       {
         "en": "2.4.18 (25 min): a health worker arrives. The learner gives a timed, factual handover (situation, response and breathing, timeline, actions, needs) and asks the receiver to confirm the next action.",
-        "fil": "2.4.18 (25 min): dumating ang health worker. Magbibigay ang learner ng maikling factual na handover (sitwasyon, tugon at paghinga, oras, ginawa, kailangan) at hihilinging kumpirmahin ang susunod na hakbang."
+        "fil": "2.4.18 (25 min): dumating ang health worker. Magbibigay ang learner ng factual na handover na may oras (sitwasyon, tugon at paghinga, oras, ginawa, kailangan) at hihilinging kumpirmahin ang susunod na hakbang."
       },
       {
         "en": "After each round, the observer gives one strength and one retry action; the learner retries, then roles rotate.",
@@ -77,16 +77,16 @@
     ],
     "observe": [
       {
-        "en": "2.4.1: marks hazards, assigns the call, states response and breathing, gives a concise location.",
-        "fil": "2.4.1: tinutukoy ang panganib, nagtatalaga ng tatawag, sinasabi ang tugon at paghinga, ibinibigay ang lokasyon."
+        "en": "2.4.1: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+        "fil": "2.4.1: Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon."
       },
       {
-        "en": "2.4.6: safe activation, response/breathing observation and handover without oral intake.",
-        "fil": "2.4.6: ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom."
+        "en": "2.4.6: Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+        "fil": "2.4.6: Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom."
       },
       {
-        "en": "2.4.18: timed, factual handover; invites the receiver to confirm the next action.",
-        "fil": "2.4.18: maikli at factual na handover; hinihiling sa tatanggap na kumpirmahin ang susunod na hakbang."
+        "en": "2.4.18: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
+        "fil": "2.4.18: Magbigay ng factual na handover na may oras at hilinging kumpirmahin ng tatanggap ang susunod na hakbang."
       }
     ],
     "output": {
@@ -106,7 +106,7 @@
   },
   {
     "id": "c2-4-sick-child-cases",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Sick-child case stations",
       "fil": "Mga station sa batang may sakit"
@@ -182,16 +182,16 @@
     ],
     "observe": [
       {
-        "en": "2.4.2: identifies at least one danger sign, activates urgent referral, repeats the observation factually.",
-        "fil": "2.4.2: tinutukoy ang kahit isang danger sign, nagpapa-agarang referral, inuulit ang nakita nang factual."
+        "en": "2.4.2: Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+        "fil": "2.4.2: Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover."
       },
       {
-        "en": "2.4.3: describes breathing, asks about danger signs, activates the confirmed urgent assessment route.",
-        "fil": "2.4.3: inilalarawan ang paghinga, itinatanong ang danger signs, ginagamit ang kumpirmadong daan sa agarang pagsusuri."
+        "en": "2.4.3: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
+        "fil": "2.4.3: Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri."
       },
       {
-        "en": "2.4.4: uses the packet label, explains safe water and continued feeding, identifies a referral trigger.",
-        "fil": "2.4.4: ginagamit ang label ng sachet, ipinapaliwanag ang ligtas na tubig at pagpapasuso, tinutukoy ang referral trigger."
+        "en": "2.4.4: Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+        "fil": "2.4.4: Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger."
       }
     ],
     "output": {
@@ -215,7 +215,7 @@
   },
   {
     "id": "c2-4-manikin-skills",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Supervised manikin stations: CPR/BLS and choking",
       "fil": "Supervised manikin stations: CPR/BLS at pagkabulon"
@@ -289,12 +289,12 @@
     ],
     "observe": [
       {
-        "en": "2.4.7: help activation, AED request and trainer-approved adult sequence on the manikin, each action recorded.",
-        "fil": "2.4.7: pagtawag, paghingi ng AED at aprubadong adult sequence sa manikin, bawat kilos ay naitala."
+        "en": "2.4.7: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
+        "fil": "2.4.7: Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan."
       },
       {
-        "en": "2.4.15: classifies cough versus severe obstruction and shows the supervised age-specific response on the correct manikin.",
-        "fil": "2.4.15: inihihiwalay ang ubo sa malubhang bara at ipinapakita ang supervised na tugon ayon sa edad sa tamang manikin."
+        "en": "2.4.15: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+        "fil": "2.4.15: Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad."
       }
     ],
     "output": {
@@ -307,14 +307,14 @@
     },
     "worksheet": [
       {
-        "en": "Supervised station / observed action / retry or not observed (call and location, correct manikin and age, trainer-approved sequence, AED or next help, no maneuver on a live person)",
-        "fil": "Supervised station / naobserbahang kilos / uulitin o hindi naobserbahan (tawag at lokasyon, tamang manikin at edad, aprubadong sequence, AED o susunod na tulong, walang maneuver sa totoong tao)"
+        "en": "Supervised station / observed action / retry or not observed (call and location, correct manikin and age, trainer-approved sequence, next help called, no maneuver on a live person)",
+        "fil": "Supervised station / naobserbahang kilos / uulitin o hindi naobserbahan (tawag at lokasyon, tamang manikin at edad, aprubadong sequence, tinawag na susunod na tulong, walang maneuver sa totoong tao)"
       }
     ]
   },
   {
     "id": "c2-4-injury-props",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Injury stations with props: bleeding, fracture, burn",
       "fil": "Mga station sa pinsala gamit ang props: pagdurugo, bali, paso"
@@ -390,16 +390,16 @@
     ],
     "observe": [
       {
-        "en": "2.4.10: hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
-        "fil": "2.4.10: proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat."
+        "en": "2.4.10: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
+        "fil": "2.4.10: Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat."
       },
       {
-        "en": "2.4.11: support in place, explains when movement is unsafe, makes the referral call.",
-        "fil": "2.4.11: suporta sa posisyon, ipinapaliwanag ang panganib ng paggalaw, tumatawag para sa referral."
+        "en": "2.4.11: Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+        "fil": "2.4.11: Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag."
       },
       {
-        "en": "2.4.14: identifies cooling, stuck-clothing boundary and referral concerns.",
-        "fil": "2.4.14: tinutukoy ang pagpapalamig, hangganan sa dumikit na damit at dahilan ng referral."
+        "en": "2.4.14: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.",
+        "fil": "2.4.14: Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral."
       }
     ],
     "output": {
@@ -419,7 +419,7 @@
   },
   {
     "id": "c2-4-call-and-transport",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "Call-and-transport rehearsals",
       "fil": "Pagsasanay sa pagtawag at transport"
@@ -481,8 +481,8 @@
         "fil": "2.4.8 pagkalunod (15 min) at 2.4.9 pagkalason (20 min): manatili sa pampang, tawagin ang sanay na rescuer at sabihing kailangan ng pagsusuri; iwasan ang exposure at basahin ang kathang-isip na label sa tawag."
       },
       {
-        "en": "2.4.12 sting (15 min) and 2.4.13 snakebite (15 min): sort local from urgent signs and call help for breathing difficulty, stating medicine limits; decline the cord and walking, keep the person still and call transport.",
-        "fil": "2.4.12 tusok (15 min) at 2.4.13 ahas (15 min): ihiwalay ang lokal sa agarang senyales at tumawag para sa hirap sa paghinga, sabihin ang hangganan sa gamot; tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw at tumawag ng transport."
+        "en": "2.4.12 sting (15 min) and 2.4.13 snakebite (15 min): recognize the urgent signs (widespread hives, breathing difficulty), activate emergency help and state medication boundaries; decline the cord and walking, keep the person still and call transport.",
+        "fil": "2.4.12 tusok (15 min) at 2.4.13 ahas (15 min): kilalanin ang agarang senyales (pantal sa buong katawan, hirap sa paghinga), humingi ng emergency help at ilahad ang saklaw ng gamot; tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw at tumawag ng transport."
       },
       {
         "en": "2.4.16 chest pain (20 min): activate the urgent pathway, hand over onset and symptoms, and leave medicine decisions to local protocol and qualified advice.",
@@ -505,28 +505,28 @@
     ],
     "observe": [
       {
-        "en": "2.4.5: clears space, calls help, states time and observations, rejects restraint and mouth insertion.",
-        "fil": "2.4.5: nililinis ang paligid, humihingi ng tulong, sinasabi ang oras at nakita, tinatanggihan ang pagpigil at kutsara."
+        "en": "2.4.5: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.",
+        "fil": "2.4.5: Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara."
       },
       {
-        "en": "2.4.8: safe shore response, activates trained rescue, states need for medical assessment.",
-        "fil": "2.4.8: ligtas na tugon sa pampang, tinatawag ang sanay na rescuer, sinasabing kailangan ng pagsusuri."
+        "en": "2.4.8: Choose a safe shore response, activate trained rescue and state the need for medical assessment.",
+        "fil": "2.4.8: Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri."
       },
       {
-        "en": "2.4.9: information call from the fictional label while keeping the scene clear of exposure.",
-        "fil": "2.4.9: tawag gamit ang kathang-isip na label habang iniiwasan ang exposure."
+        "en": "2.4.9: Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+        "fil": "2.4.9: Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure."
       },
       {
-        "en": "2.4.12: sorts local versus urgent signs, activates help for breathing difficulty, states medication boundaries.",
-        "fil": "2.4.12: inihihiwalay ang lokal at agarang senyales, humihingi ng tulong sa hirap sa paghinga, sinasabi ang saklaw ng gamot."
+        "en": "2.4.12: Recognize the urgent signs in the case (widespread hives, breathing difficulty), activate emergency help and state medication boundaries.",
+        "fil": "2.4.12: Kilalanin ang agarang senyales sa kaso (pantal sa buong katawan, hirap sa paghinga), humingi ng emergency help at ilahad ang saklaw ng gamot."
       },
       {
-        "en": "2.4.13: rejects the cord and walking, keeps the person still, calls for transport.",
-        "fil": "2.4.13: tinatanggihan ang tali at paglalakad, pinananatiling hindi gumagalaw, tumatawag ng transport."
+        "en": "2.4.13: Reject the cord and walking plan, keep the person still and call for transport.",
+        "fil": "2.4.13: Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport."
       },
       {
-        "en": "2.4.16: activates the urgent pathway, hands over onset and symptoms, does not prescribe aspirin.",
-        "fil": "2.4.16: gumagamit ng agarang referral, iniuulat ang simula at sintomas, hindi nagrereseta ng aspirin."
+        "en": "2.4.16: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
+        "fil": "2.4.16: Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin."
       }
     ],
     "output": {
@@ -546,7 +546,7 @@
   },
   {
     "id": "c2-4-kit-inspection",
-    "version": 1,
+    "version": 2,
     "title": {
       "en": "First-aid kit inspection",
       "fil": "Pagsusuri ng first-aid kit"
@@ -618,8 +618,8 @@
     ],
     "observe": [
       {
-        "en": "2.4.17: completes every row of the simulated local kit inventory and names a replenishment owner.",
-        "fil": "2.4.17: napupunan ang bawat hanay ng simulated kit inventory at natutukoy ang responsable sa pagpapalit."
+        "en": "2.4.17: Complete every row of a simulated local kit inventory and name a replenishment owner.",
+        "fil": "2.4.17: Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit."
       }
     ],
     "output": {

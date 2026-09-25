@@ -4,8 +4,6 @@
 
 Find the botanical name and listed part in a current PITAHC card. If identity is uncertain, do not prepare or provide it. Ask about symptoms and medicines; consult a clinician.
 
-The BHW reads the current card and listens to the resident. Find the botanical name and listed part in a current PITAHC card. If identity is uncertain, do not prepare or provide it. Ask about symptoms and medicines; consult a clinician.
-
 | Question | Answer from card | Needs confirmation |
 |---|---|---|
 | Correct plant and botanical name | ____ | ____ |
@@ -136,9 +134,7 @@ Find Mentha cordifolia on the reference card. The listed part is leaves; the use
 
 ## Use the plant references responsibly
 
-Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product.
-
-The BHW reads the current card and listens to the resident. Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product.
+Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification only, with dry props; dispense no product.
 
 | Question | Answer from card | Needs confirmation |
 |---|---|---|

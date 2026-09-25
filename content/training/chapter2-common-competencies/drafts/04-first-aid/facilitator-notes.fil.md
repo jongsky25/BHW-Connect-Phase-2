@@ -56,7 +56,7 @@ Hatiin sa dalawang sesyon: 2.4.1–2.4.9 (235 min) at 2.4.10–2.4.18 (245 min);
 16. **Tumugon sa pagkabulon.** Adult at infant manikin. *"Nakaka-ubo o nakapagsasalita ba siya?"* Choking skills station, kasama ang qualified trainer.
 17. **Iugnay sa agarang tulong ang may pananakit ng dibdib.** Nag-alok ng tablet ang kapitbahay. *"Sino ang magpapasya tungkol sa gamot?"* Emergency referral rehearsal.
 18. **Suriin ang first-aid kit.** May expired at bukas na item. *"Kapag may gamit, ibig bang sabihin puwede mo nang gamitin?"* Kit inspection.
-19. **Iparating ang detalye ng insidente.** Dumating ang health worker pagkatapos ng pagkadapa. *"Ano ang dapat nilang unang marinig?"* Integrated handover station.
+19. **Iparating ang detalye ng insidente.** Dumating ang health worker pagkatapos ng pagkahulog. *"Ano ang dapat nilang unang marinig?"* Integrated handover station.
 20. **Pagsasara (sa loob ng 2.4.18).** Bawat isa, nang walang tinitingnan, ay magsasabi ng isang kaso, ang nakitang senyales, sino ang tinawagan, at isang shortcut na tinanggihan.
 
 Para sa checks, sagot at minuto-bawat-hakbang, gamitin ang lesson guide ng bawat aralin.
@@ -92,7 +92,7 @@ May isang indicator bawat aralin sa Competency tab; nakasulat sa bawat activity 
 - **2.3 Pag-iwas at pagkontrol sa impeksyon:** proteksiyon sa kamay.
 - **2.5 Sampung halamang gamot:** doon itinuturo ang paggamit ng halaman, hindi sa first aid.
 - **2.6 at 2.7:** dala-dala ang kit, kumpirmadong contact at panganib ng baha.
-- **Transfer task:** sa loob ng 2–4 linggo, ipasuri sa supervisor ang isang mungkahing pagpapabuti gamit ang job aid; parehong indicator ang gagamitin ng supervisor (obserbahan, feedback, ulitin). Nakaplano ang recall items sa ika-2, ika-14 at ika-60 araw; walang naka-schedule na paalala.
+- **Transfer task:** sa loob ng 2–4 na linggo, kukumpirmahin ng bawat BHW sa midwife o RHU ang lokal na emergency contacts sa job aid at magsasanay ng isang kathang-isip na handover kasama sila; parehong indicator ang gagamitin ng supervisor (obserbahan, feedback, ulitin). Nakaplano ang recall items sa ika-2, ika-14 at ika-60 araw; walang naka-schedule na paalala.
 
 ## Sanggunian at katayuan ng pagrepaso
 

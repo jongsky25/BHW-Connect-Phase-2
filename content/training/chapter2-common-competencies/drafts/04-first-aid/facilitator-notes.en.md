@@ -92,7 +92,7 @@ The Competency tab has one indicator per lesson; each activity card names the on
 - **2.3 Infection prevention and control:** hand protection.
 - **2.5 Ten medicinal plants:** plant use belongs there, not in first aid.
 - **2.6 and 2.7:** the kit, confirmed contacts and flood hazards carry over.
-- **Transfer task:** within 2–4 weeks, review one improvement proposal with the supervisor using the job aid; the supervisor uses the same indicator (observe, feedback, retry). Recall items at days 2, 14 and 60 are planned; no reminders are scheduled.
+- **Transfer task:** within 2–4 weeks, each BHW confirms the local emergency contacts on the job aid with the midwife or RHU and rehearses one fictional handover with them; the supervisor uses the same indicator (observe, feedback, retry). Recall items at days 2, 14 and 60 are planned; no reminders are scheduled.
 
 ## Sources and review status
 

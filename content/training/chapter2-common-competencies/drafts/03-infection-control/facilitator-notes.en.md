@@ -70,7 +70,7 @@ People hold this for good reason: masks and alcohol were the loudest messages of
 - **2.2 Quality service** — safe care is one of the quality dimensions, and tidy stations support hand hygiene.
 - **2.4 First aid and referral** — ask participants to use the 2.3.3 hand-hygiene steps at every first-aid station.
 - **Job aid:** *Infection prevention and control*, one section per lesson, local contacts filled in.
-- **Transfer task:** within 2–4 weeks, each BHW reviews one improvement proposal with the supervisor using the job aid. The supervisor uses the same indicator: observe, feedback, retry. Recall checks are planned for days 2, 14 and 60 (no reminders are scheduled).
+- **Transfer task:** within 2–4 weeks, the supervisor observes each BHW's hand hygiene once at the BHS using the job-aid checklist. The supervisor uses the same indicator: observe, feedback, retry. Recall checks are planned for days 2, 14 and 60 (no reminders are scheduled).
 
 ## Sources and review status
 

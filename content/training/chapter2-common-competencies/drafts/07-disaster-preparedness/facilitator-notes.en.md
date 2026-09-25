@@ -19,7 +19,7 @@ Each station: opening 1, model 1, triad practice 4, feedback and retry 2, debrie
 ## Before the session
 
 - **Confirm local facts** on one sheet (use them in debrief only): current official warning source and issue time; who issues evacuation orders; route and accessible shelter; barangay DRRM focal person and backup; current response team, lead and BHW role; approved reporting channel; referral contacts for medical/public health, nutrition, WASH and MHPSS; who handles medicine continuity and responder relief.
-- **Print one set per triad** for 2.7.1–2.7.6: participant cards ("Practice: …"), worksheet and observation sheet. Print the job aid *Disaster preparedness and response* for everyone.
+- **Print one set per triad** for 2.7.1–2.7.6: participant cards ("Practice: [lesson title]"), worksheet and observation sheet. Print the job aid *Disaster preparedness and response* for everyone.
 - **Props:** a hand-drawn fictional map of Barangay Maligaya (river, riverside homes, school marked "not confirmed"); a mock advisory labelled PRACTICE with source and time; an old "directory"; a bag or bucket with item picture cards (no real medicines); an old fictional roster; four need cards.
 - **Staffing:** one facilitator per 2–3 stations plus staff observers. F42 suggests inviting the city/municipal DRRM officer, local government operations officer and social welfare officer.
 - **Do not teach here:** an official hazard map or evacuation order; fixed BHERT membership, contact tracing or isolation duties; prescribing or dispensing, setting rations, declaring water safe, or therapy; fixed 24-hour targets. Psychological first aid is calm, consent-based support and referral. First-aid techniques belong to 2.4.
@@ -72,7 +72,7 @@ A correct app check or quiz score is not evidence of the skill.
 - **2.4 First aid**: F42 allows a first-aid review; send technique questions there.
 - **Chapter 1, Module 6 (Effective communication)**: short, factual handovers.
 - **Job aid**: one table per lesson plus confirmed contact, reporting channel and "confirmed with/date".
-- **Transfer task:** within 2–4 weeks, each BHW reviews one improvement proposal with the supervisor using the job aid; the supervisor uses the same indicator. Recall items exist for days 2, 14 and 60, but no reminders are scheduled; plan your own follow-up.
+- **Transfer task:** within 2–4 weeks, each BHW verifies the job aid's contact and evacuation information with the BHERT or barangay DRRM focal person and records who confirmed it and when; the supervisor uses the same indicator. Recall items exist for days 2, 14 and 60, but no reminders are scheduled; plan your own follow-up.
 
 ## Sources and review status
 

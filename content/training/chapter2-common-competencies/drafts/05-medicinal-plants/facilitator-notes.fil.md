@@ -84,7 +84,7 @@ Gamitin ang 12 indicator sa Competency tab (isa bawat lesson) kasama ang activit
 
 - **2.4 Paunang lunas at tamang referral:** parehong F38 group (kasama ang 2.6 at 2.7); i-escalate ang hirap sa paghinga at infected wound ayon sa itinuro doon.
 - **Chapter 1, Modyul 1 (Ang mga Tungkulin ng Isang BHW)** at **Modyul 6 (Epektibong Komunikasyon):** referral bilang serbisyo, at malinaw na pag-uulat sa midwife.
-- **Transfer task:** sa loob ng 2–4 linggo, ipasuri ang isang mungkahing pagpapabuti sa supervisor gamit ang job aid na *Sampung halamang gamot*; parehong indicator ang gagamitin ng supervisor, may feedback at pag-uulit. May recall checks sa ika-2, 14 at 60 araw (content lamang; walang naka-schedule na paalala).
+- **Transfer task:** sa loob ng 2–4 na linggo, susuriin ng bawat BHW kasama ang midwife ang isang plant card mula sa job aid na *Sampung halamang gamot* laban sa kasalukuyang PITAHC card at lokal na awtorisasyon, at sasabihin ang referral route para sa agarang kaso, nang walang paghahanda o produkto; parehong indicator ang gagamitin ng supervisor, may feedback at pag-uulit. May recall checks sa ika-2, 14 at 60 araw (content lamang; walang naka-schedule na paalala).
 
 ## Sanggunian at katayuan ng pagrepaso
 

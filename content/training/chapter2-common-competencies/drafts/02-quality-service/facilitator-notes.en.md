@@ -66,7 +66,7 @@ The Competency tab has one indicator per lesson objective (four). Each activity 
 - **2.1 Responding to difficult situations:** listening, moving to a private setting and agreeing next steps.
 - **2.3 Infection prevention and control:** the 7S safety and sweep rows lead into IPC controls. Handling sharps and contaminated items is taught there, not here.
 - **Chapter 1, Module 6 (Effective communication):** open questions, teach-back and factual reporting.
-- **Transfer task:** within 2–4 weeks, each BHW reviews one improvement proposal with the supervisor using the job aid. The supervisor uses the same indicator: observe, give feedback, retry. Recall checks follow at 2, 14 and 60 days.
+- **Transfer task:** within 2–4 weeks, each BHW writes one service-improvement proposal (a 7S or service-pathway change) on the job aid and reviews it with the supervisor before any change is made. The supervisor uses the same indicator: observe, give feedback, retry. Recall checks follow at 2, 14 and 60 days.
 
 ## Sources and review status
 

@@ -19,7 +19,7 @@ Bawat station: pambungad 1, modelo 1, practice ng tatluhan 4, feedback at pag-ul
 ## Bago ang sesyon
 
 - **Kumpirmahin ang lokal na impormasyon** sa isang papel (gamitin lang sa talakayan): kasalukuyang opisyal na pinagmumulan ng babala at oras ng paglabas; sino ang naglalabas ng evacuation order; ruta at accessible na silungan; barangay DRRM focal person at kapalit; kasalukuyang response team, lead at papel ng BHW; aprubadong reporting channel; referral contact para sa medical/public health, nutrisyon, WASH at MHPSS; sino ang bahala sa tuloy na gamot at pahinga ng responder.
-- **Mag-print ng isang set bawat tatluhan** para sa 2.7.1–2.7.6: participant cards ("Pagsasanay: …"), worksheet at talaan ng obserbasyon. I-print ang job aid na *Paghahanda at pagtugon sa sakuna* para sa lahat.
+- **Mag-print ng isang set bawat tatluhan** para sa 2.7.1–2.7.6: participant cards ("Pagsasanay: [pamagat ng aralin]"), worksheet at talaan ng obserbasyon. I-print ang job aid na *Paghahanda at pagtugon sa sakuna* para sa lahat.
 - **Props:** iginuhit na kathang-isip na mapa ng Barangay Maligaya (ilog, bahay sa tabing-ilog, paaralang may markang "hindi pa kumpirmado"); mock advisory na may tatak na PRACTICE, may source at oras; lumang "directory"; bag o balde na may larawan ng mga gamit (walang totoong gamot); lumang kathang-isip na roster; apat na need card.
 - **Staff:** isang facilitator bawat 2–3 station, dagdag ang staff observers. Iminumungkahi ng F42 na imbitahan ang city/municipal DRRM officer, local government operations officer at social welfare officer.
 - **Huwag ituro dito:** opisyal na hazard map o evacuation order; nakapirming kasapi ng BHERT, contact tracing o isolation; pagreseta o pagbibigay ng gamot, pagtatakda ng ration, pagdeklarang ligtas ang tubig, o therapy; nakapirming 24-oras na target. Ang psychological first aid ay mahinahon at may-pahintulot na suporta at referral. Nasa 2.4 ang first-aid technique.
@@ -72,7 +72,7 @@ Hindi ebidensya ng kasanayan ang tamang sagot sa check ng app o ang quiz score.
 - **2.4 First aid** — pinapayagan ng F42 ang review ng first aid; doon ipunta ang tanong sa technique.
 - **Chapter 1, Module 6 (Epektibong komunikasyon)** — maikli at factual na handover.
 - **Job aid**: isang table bawat aralin, at linya para sa kumpirmadong contact, paraan ng pag-uulat at "kinumpirma kay/petsa".
-- **Transfer task:** sa loob ng 2–4 linggo, ipasuri ng bawat BHW sa supervisor ang isang mungkahing pagpapabuti gamit ang job aid; parehong indicator ang gagamitin ng supervisor. May recall items para sa ika-2, ika-14 at ika-60 araw, pero walang nakatakdang paalala; magplano ng sariling follow-up.
+- **Transfer task:** sa loob ng 2–4 na linggo, beberipikahin ng bawat BHW sa BHERT o sa barangay DRRM focal person ang contact at evacuation information sa job aid at itatala kung sino ang nagkumpirma at kailan; parehong indicator ang gagamitin ng supervisor. May recall items para sa ika-2, ika-14 at ika-60 araw, pero walang nakatakdang paalala; magplano ng sariling follow-up.
 
 ## Sanggunian at katayuan ng pagrepaso
 

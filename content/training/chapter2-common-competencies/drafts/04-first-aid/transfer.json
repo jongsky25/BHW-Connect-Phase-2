@@ -1,8 +1,8 @@
 {
   "job_aid": "job-aid.{language}.md",
   "workplace_task": {
-    "fil": "Sa loob ng 2–4 linggo, ipasuri ang isang mungkahing pagpapabuti sa supervisor gamit ang job aid.",
-    "en": "Within 2–4 weeks, review one improvement proposal with the supervisor using the job aid."
+    "fil": "Sa loob ng 2–4 na linggo, kumpirmahin sa midwife o RHU ang lokal na emergency contacts sa job aid, at magsanay ng isang kathang-isip na handover kasama sila.",
+    "en": "Within 2–4 weeks, confirm the local emergency contacts on the job aid with the midwife or RHU, and rehearse one fictional handover with them."
   },
   "supervision": {
     "fil": "Gamitin ang parehong indicator; obserbahan, magbigay ng feedback at umulit.",
@@ -18,433 +18,433 @@
     {
       "lesson_key": "scene-help-referral",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Kausap na ng saksi ang kumpirmadong contact. Ano ang dapat sabihin ni Lea?",
+        "prompt_en": "The bystander is on the phone with the confirmed contact. What should Lea tell them?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ang lokasyon at kung tumutugon at humihinga ang sakay.",
+            "en": "The location and whether the rider responds and breathes."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Ang hula niya sa pinsala ng sakay para alam nila ang dadalhin.",
+            "en": "Her guess about the rider's injury, so they know what to bring."
           },
           {
-            "fil": "Ibigay ang lokasyon at nakita.",
-            "en": "Give the location and observations."
+            "fil": "Na lumipat sa national number dahil puwede ang kahit anong numero.",
+            "en": "To hang up and try the national number, since any number works."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. 3: Observe the task and appropriate referral."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama. Ang lokasyon at ang nakitang tugon at paghinga ang maikling ulat na kailangan ng sanay na tulong. 2: Iulat ang nakita, hindi ang hula. Ang sanay na tulong ang susuri. 3: Gamitin ang lokal na kumpirmadong contact. Huwag itong palitan ng national number.",
+        "feedback_en": "1: Right. Location plus the observed response and breathing is the concise report trained help needs. 2: Report observed facts, not guesses. Trained help does the assessment. 3: Use the locally verified contact. Do not assume a national number replaces it."
       }
     },
     {
       "lesson_key": "child-danger-signs",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Tinanong ng pasilidad kung ano ang nangyari kay Niko. Ano ang sasabihin sa handover?",
+        "prompt_en": "The facility asks what is wrong with Niko. What should the handover say?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Na mukhang malubhang dehydration ito.",
+            "en": "That it looks like severe dehydration."
           },
           {
-            "fil": "Iulat na hindi makainom.",
-            "en": "Report inability to drink."
+            "fil": "Hindi siya makainom, isinusuka ang lahat at mahirap gisingin.",
+            "en": "He cannot drink, vomits everything and is hard to wake."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Na sumuka lang siya ngayon, dahil baka mawala rin ang ibang senyales.",
+            "en": "Only that he vomited today, since the other signs may pass."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Huwag magbigay ng diagnosis. Ang pasilidad ang magpapasya; ang nakita ang iuulat mo. 2: Tama. Inuulit ng factual na handover ang eksaktong danger signs na iniulat at nakita. 3: Kapag may inalis na senyales, natatago ang pagka-urgent. Sabihin ang eksaktong nakita.",
+        "feedback_en": "1: Do not label the illness. The facility decides; your handover gives what was observed. 2: Right. A factual handover repeats the exact danger signs reported and observed. 3: Leaving out signs hides how urgent this is. State the exact signs you found."
       }
     },
     {
       "lesson_key": "child-cough-breathing",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Tumawag ang BHW sa kumpirmadong contact tungkol kay Aya. Ano ang dapat iulat?",
+        "prompt_en": "The BHW calls the confirmed contact about Aya. What should the report include?",
         "options": [
           {
-            "fil": "Iulat ang hirap sa paghinga.",
-            "en": "Report breathing difficulty."
+            "fil": "Ang itsura ng paghinga at ang sagot sa danger signs.",
+            "en": "What the breathing looks like and the danger-sign answers."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Na malamang pulmonya ang sakit ni Aya at kailangan agad ng gamot.",
+            "en": "That Aya probably has pneumonia and needs medicine right away."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Ang temperatura lang, dahil lagnat ang magpapasya kung puwedeng maghintay.",
+            "en": "Only her temperature, since fever decides whether she can wait."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait."
+        "feedback_fil": "1: Tama. Iulat ang nakita at ang sagot sa danger signs; ang sanay na assessor ang magpapasya sa iba. 2: Iulat ang nakita nang hindi pumipili ng diagnosis. Ang sanay na assessor ang magpapasya. 3: Hindi tanging batayan ang isang temperatura, at naiiwan pa ang hirap sa paghinga.",
+        "feedback_en": "1: Right. Report observations and danger-sign answers; the trained assessor decides the rest. 2: Report observations without choosing a diagnosis. The trained assessor decides. 3: A single temperature is not a stand-alone rule, and it leaves out the breathing difficulty."
       }
     },
     {
       "lesson_key": "diarrhea-dehydration",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa dry simulation, tinanong ng tagapag-alaga kung gaano karaming tubig. Ano ang gagawin ng BHW?",
+        "prompt_en": "In the dry simulation, the caregiver asks how much water to use. What should the BHW do?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Sabihing isang baso bawat sachet dahil puwede iyon sa lahat ng sachet.",
+            "en": "Say one glass per sachet, since that works for any packet."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Basahin ang dami ng ligtas na tubig sa label ng sachet na ito.",
+            "en": "Read the amount of safe water from this packet's label."
           },
           {
-            "fil": "Ipagpatuloy ang pagpapasuso kung kaya.",
-            "en": "Continue breastfeeding when safe."
+            "fil": "Ibigay ang dami mula sa lumang training para siguradong pakinggan.",
+            "en": "Give the amount from your old training so it sounds certain."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 3: Observe the task and appropriate referral."
+        "correct_option_index": 1,
+        "feedback_fil": "1: Magkakaiba ang sachet. Maaaring mali ang iisang dami para sa lahat; basahin ang label na ito. 2: Tama. Ligtas na tubig at eksaktong panuto ng mismong sachet ang gamit sa ORS. 3: Maaaring hindi akma sa sachet o sa edad ng bata ang dami mula sa alaala. Gamitin ang label.",
+        "feedback_en": "1: Packets differ. One amount for every packet size can be wrong; read this label. 2: Right. Packaged ORS uses safe water and the exact directions printed on that packet. 3: An amount from memory may not fit this packet or this child's age. Use the label."
       }
     },
     {
       "lesson_key": "convulsion-response",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Tumigil ang pangingisay at nag-alok ng tubig ang lola. Ano ang gagawin ng BHW?",
+        "prompt_en": "The shaking stops and the grandmother offers water. What should the BHW do?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Painumin nang paunti-unti para hindi manghina ang bata.",
+            "en": "Give small sips of water so the child does not get weak."
           },
           {
-            "fil": "Itala ang oras ng kombulsyon.",
-            "en": "Record seizure timing."
+            "fil": "Punasan ng malamig na tubig, saka kanselahin ang tawag.",
+            "en": "Wipe the child with cold water, then cancel the call."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Huwag munang painumin; bantayan ang paghinga.",
+            "en": "Nothing by mouth yet; keep watching breathing."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "correct_option_index": 2,
+        "feedback_fil": "1: Huwag magpakain o magpainom bago lubos na magkamalay ang bata. 2: Huwag umasa sa pagpupunas ng malamig na tubig, at ituloy ang agarang tawag para sa bata. 3: Tama. Walang pagkain o inumin bago lubos na magkamalay; bantayan ang paghinga pagkatapos at hintayin ang tulong.",
+        "feedback_en": "1: Do not give food or drink before the child is fully alert. 2: Do not rely on cold-water wiping, and keep the urgent call going: a child needs urgent help. 3: Right. No food or drink before full alertness; monitor breathing after the episode and wait for help."
       }
     },
     {
       "lesson_key": "shock-loss-consciousness",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Parating na ang tulong at humihinga siya. Mapilit ang kamag-anak sa inumin. Ano ang gagawin ng BHW?",
+        "prompt_en": "Help is on the way and she is breathing. The relative insists on the drink. What should the BHW do?",
         "options": [
           {
-            "fil": "Huwag magpainom sa walang malay.",
-            "en": "Give no drink to an unresponsive person."
+            "fil": "Tanggihan ang inumin at magbantay hanggang dumating ang tulong.",
+            "en": "Decline the drink and keep watching until help arrives."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Payagan ang isang higop, dahil kusa naman siyang humihinga ngayon.",
+            "en": "Allow one small sip, since she is breathing on her own now."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Sabihin sa tulong na mababang asukal ang sanhi para magdala ng kendi.",
+            "en": "Tell help the cause is low sugar, so they bring candy."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation."
+        "feedback_fil": "1: Tama. Hindi pa rin siya tumutugon kaya walang ipaiinom; habang humihinga, bantayan hanggang dumating ang tulong. 2: Humihinga siya pero hindi pa rin tumutugon. Huwag bigyan ng pagkain, kendi o tubig. 3: Huwag hulaan ang sanhi mula sa iisang palatandaan. Iulat ang nakita.",
+        "feedback_en": "1: Right. She still cannot respond, so nothing by mouth; while she breathes, keep watching until help arrives. 2: She is breathing but still unresponsive. Do not give food, candy or water. 3: Do not infer the cause from a single clue. Hand over what you observed."
       }
     },
     {
       "lesson_key": "cpr-bls-orientation",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Nag-alok ang kaklase na humiga para sa kanya ka magsanay ng compression. Ano ang sasabihin mo?",
+        "prompt_en": "A classmate offers to lie down so you can practise compressions on him. What do you say?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Sige, mas makatotohanan ang totoong tao kaysa manikin.",
+            "en": "Yes, a live partner feels more realistic than a manikin."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Laktawan ang station; sapat nang basahin ang hakbang.",
+            "en": "Skip the station; reading the steps is enough."
           },
           {
-            "fil": "Magsanay lamang sa manikin.",
-            "en": "Practise only on a manikin."
+            "fil": "Hindi, sa manikin lamang sinasanay ang compression.",
+            "en": "No, compressions are practised only on the manikin."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. 3: Observe the task and appropriate referral."
+        "feedback_fil": "1: Hindi nagko-compression sa totoong tao. Gamitin ang aprubadong manikin. 2: Hindi sertipikasyon ang pagbasa ng lumang CAB talata; sinasanay ito kasama ang kwalipikadong trainer. 3: Tama. Sinasanay ang compression at AED prompts sa aprubadong kagamitan habang nanonood ang trainer.",
+        "feedback_en": "1: Compressions are not practised on a live person. Use the approved manikin. 2: Reading the old CAB paragraph is not certification; the skill is practised with a qualified trainer. 3: Correct. Compressions and AED prompts are practised on approved equipment with the trainer watching."
       }
     },
     {
       "lesson_key": "drowning-response",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Naiahon na ng rescuer ang tao. Gusto ng saksi na baligtarin siya para patuluin ang tubig. Ano ang sasabihin mo?",
+        "prompt_en": "Rescuers bring the person out. A bystander wants to hold them upside down to drain water. What do you say?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Sige, makatutulong sa paghinga ang pagpapatulo ng tubig.",
+            "en": "Yes, draining the water first will help breathing."
           },
           {
-            "fil": "Manatili sa ligtas na pampang.",
-            "en": "Remain on a safe shore."
+            "fil": "Hindi; ayusin agad ang medikal na pagsusuri.",
+            "en": "No; arrange urgent medical assessment now."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Hindi na kailangang tumawag dahil nakaahon na siya.",
+            "en": "No need to call anyone now that the person is out."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Huwag baligtarin ang tao para patuluin ang tubig. Ayusin ang agarang pagsusuri at sundin ang kasalukuyang drowning protocol. 2: Tama. Kapag nailigtas, kailangan ng agarang medikal na pagsusuri ayon sa kasalukuyang drowning resuscitation protocol. 3: Hindi pa tapos ang pangangailangan sa tulong dahil lang nakaahon na. Ayusin ang agarang medikal na pagsusuri.",
+        "feedback_en": "1: Do not invert the person to drain water. Arrange urgent medical assessment and follow the current drowning protocol. 2: Correct. Once rescued, the person needs urgent medical assessment under the current drowning resuscitation protocol. 3: Being out of the water does not end the need for care. Arrange urgent medical assessment."
       }
     },
     {
       "lesson_key": "poisoning-response",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sumagot ang adviser sa tawag mo. Ano ang iuulat mo?",
+        "prompt_en": "The adviser answers your call. What do you report?",
         "options": [
           {
-            "fil": "Iulat ang label at oras.",
-            "en": "Report the label and time."
+            "fil": "Label kung ligtas mabasa, oras, paraan, sintomas at edad.",
+            "en": "The label if safely read, time, route, symptoms and age."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ang hula mo kung anong lason at ang panlunas na ibibigay mo.",
+            "en": "Your guess of the poison and the antidote you plan to give."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Na may nalunok lang ang bata; sila na ang magtatanong.",
+            "en": "Only that a child swallowed something; they will ask the rest."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+        "feedback_fil": "1: Tama. Ibigay ang label, tinatayang oras, paraan ng exposure, sintomas at edad, saka sundin ang tagubilin. 2: Huwag manghula o mag-imbento ng panlunas. Iulat ang facts at sundin ang responder. 3: Ibigay ang lahat ng ligtas na nakuhang facts: label, oras, paraan, sintomas at edad.",
+        "feedback_en": "1: Correct. Give the label, estimated time, exposure route, symptoms and age, then follow their instructions. 2: Do not guess or improvise an antidote. Report the facts and follow the responder. 3: Give all the facts you have safely gathered: label, time, route, symptoms and age."
       }
     },
     {
       "lesson_key": "wounds-bleeding",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Basa na ang tela at gusto itong tanggalin ng saksi. Ano ang gagawin mo?",
+        "prompt_en": "The cloth is soaked and the bystander wants to wipe it away. What do you do?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Tanggalin ang basang tela at magsimula muli sa bagong tela.",
+            "en": "Remove the soaked cloth and start again with a fresh one."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Diinan nang mas mahina para hindi magalaw ang sugat.",
+            "en": "Press more gently now so the cut is not disturbed."
           },
           {
-            "fil": "Magpatuloy ng pressure at tumawag.",
-            "en": "Maintain pressure and call."
+            "fil": "Magpatong ng tela, idiin pa rin, magpatawag ng tulong.",
+            "en": "Add cloth on top, keep pressing, send for help."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice. 3: Observe the task and appropriate referral."
+        "feedback_fil": "1: Naaantala ang pressure kapag tinanggal ang unang tela. Magpatong na lamang ng tela. 2: Huwag umasa sa mahinang pressure sa malubhang pagdurugo. Idiin pa rin nang matatag. 3: Tama. Magdagdag ng tela habang tuloy ang pressure, at humingi ng agarang tulong sa tuloy-tuloy na pagdurugo.",
+        "feedback_en": "1: Removing the first cloth interrupts pressure. Add material on top instead. 2: Do not rely on gentle pressure for severe bleeding. Keep pressing firmly. 3: Correct. Add material while maintaining pressure, and activate urgent help for persistent bleeding."
       }
     },
     {
       "lesson_key": "fracture-dislocation",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Suportado na ang braso. Ano pa ang gagawin mo bago dumating ang tulong?",
+        "prompt_en": "The arm is supported. What else do you do before help arrives?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Itali ang patpat bilang splint at pauwiin siyang nakabisikleta.",
+            "en": "Tie a stick to the arm as a splint and let her ride home."
           },
           {
-            "fil": "Huwag ituwid ang braso.",
-            "en": "Do not straighten the arm."
+            "fil": "Tingnan ang iba pang agarang problema at tumawag.",
+            "en": "Check for other urgent concerns and make the call."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Sabihing bugbog lang iyon at puwede na siyang umuwi.",
+            "en": "Tell her it is only a bruise and she can go home."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Huwag gumamit ng improvised na splint na walang padding kung hindi sanay; kailangan pa rin niya ng agarang pagsusuri. 2: Tama. Tingnan ang iba pang agarang problema at ayusin ang agarang pagsusuri. Sanay o lokal na tagubilin ang susundin sa immobilization at paglipat. 3: Hindi nagdi-diagnose ang BHW ng pinsala. Ayusin ang agarang pagsusuri.",
+        "feedback_en": "1: Do not use an unpadded improvised splint without training; she still needs prompt assessment. 2: Correct. Check for other urgent concerns and arrange prompt assessment; trained/local instructions guide immobilization and transfer. 3: A BHW does not diagnose the injury. Arrange prompt assessment."
       }
     },
     {
       "lesson_key": "insect-bites-stings",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Habang naghihintay, nag-alok ang kaibigan ng tablet mula sa kanyang bag. Ano ang sasabihin mo?",
+        "prompt_en": "While you wait, a friend offers the person a tablet from a bag. What do you say?",
         "options": [
           {
-            "fil": "Iulat ang hirap sa paghinga.",
-            "en": "Report breathing difficulty."
+            "fil": "Ibigay na; mas mabuti ang anumang allergy tablet kaysa maghintay.",
+            "en": "Give it now; any allergy tablet is better than waiting."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ako na ang pipili ng mas matapang na gamot sa kit.",
+            "en": "Let me choose a stronger one from the kit instead."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Ang gamot ay ayon sa sariling reseta at protocol niya.",
+            "en": "Medicine follows the person's own plan and protocol."
           }
         ],
-        "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization."
+        "correct_option_index": 2,
+        "feedback_fil": "1: Huwag magbigay ng gamot nang walang training at pahintulot. Bantayan ang paghinga habang paparating ang tulong. 2: Hindi pahintulot ang pagkakaroon ng gamot sa kit. Manatili sa training at protocol. 3: Tama. Sundin ang iniresetang emergency plan ng tao at ang sanay/lokal na protocol, at bantayan ang paghinga.",
+        "feedback_en": "1: Do not give a drug outside training and authorization. Keep watching breathing while help comes. 2: Having a medicine in the kit is not authorization to give it. Stay within training and protocol. 3: Correct. Follow the person's prescribed emergency plan and trained/local protocol, and keep watching breathing."
       }
     },
     {
       "lesson_key": "snakebite-response",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa practice, ano ang dapat kasama sa tawag mo para sa transport?",
+        "prompt_en": "In the practice, what should your call for transport include?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Ang uri ng ahas, kapag nahuli na ng mga kasama.",
+            "en": "The type of snake, once the friends catch it."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Na nilagyan na ng yelo ang kagat.",
+            "en": "That ice is already on the bite."
           },
           {
-            "fil": "Ayusin ang mabilis na transport.",
-            "en": "Arrange rapid transport."
+            "fil": "Ang oras ng kagat at ang nakikita mo.",
+            "en": "The time of the bite and what you see."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. 3: Observe the task and appropriate referral."
+        "feedback_fil": "1: Huwag habulin ang ahas. Ang oras at ang nakita ang iulat. 2: Huwag lagyan ng yelo. Kasama ito sa mapanganib na shortcut sa aralin. 3: Tama. Iulat ang oras ng kagat at ang nakita habang inaayos ang transport.",
+        "feedback_en": "1: Do not chase the snake. Report the time and what you see instead. 2: Do not apply ice. It is on the lesson's list of harmful shortcuts. 3: Correct. Report the bite time and your observations while transport is arranged."
       }
     },
     {
       "lesson_key": "burn-response",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sabi ng kusinero, pula lang ang paso. Sa tabletop practice, ano ang dapat mong sabihin?",
+        "prompt_en": "The cook says the burn is only red. In the tabletop practice, what should you say?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Pula lang ito, kaya ligtas nang gamutin sa bahay.",
+            "en": "It is only red, so it is safe to treat at home."
           },
           {
-            "fil": "Iwan ang dumikit na damit.",
-            "en": "Leave stuck clothing in place."
+            "fil": "Iwan ang manggas; maaaring kailangang ipasuri.",
+            "en": "Leave the sleeve; assessment may be needed."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Putukin ang paltos, saka takpan ang braso.",
+            "en": "Burst any blisters, then cover the arm."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Hindi lahat ng mapulang paso ay ligtas sa bahay. Ipasuri kung malawak o delikado ang lokasyon. 2: Tama. Nasabi mo ang hangganan sa dumikit na damit at ang dahilan ng pagpapasuri, na inoobserbahan sa practice. 3: Huwag putukin ang paltos. Kasama ito sa mapanganib na shortcut sa aralin.",
+        "feedback_en": "1: Not every red burn is safe for home treatment. Seek assessment if the extent or location is concerning. 2: Correct. You name the stuck-clothing boundary and a reason for assessment, which the practice observes. 3: Do not burst blisters. It is on the lesson's list of harmful shortcuts."
       }
     },
     {
       "lesson_key": "choking-response",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa station, hawak mo ang case card ng sanggol. Ano ang dapat ipakita sa practice?",
+        "prompt_en": "At the station, you pick up the infant case card. What should your practice show?",
         "options": [
           {
-            "fil": "Infant manikin, hindi adult maneuver.",
-            "en": "Infant manikin, not adult maneuver."
+            "fil": "Lumipat sa infant manikin at infant pathway.",
+            "en": "Switch to the infant manikin and pathway."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Adult abdominal thrust sa infant manikin.",
+            "en": "Adult abdominal thrusts on the infant manikin."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Thrust sa kapareha, nang marahan, para magsanay.",
+            "en": "Thrusts on your partner, gently, to practise."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+        "feedback_fil": "1: Tama. Infant manikin at infant pathway na aprubado ng trainer ang para sa card ng sanggol. 2: Hindi para sa sanggol ang adult abdominal thrust. Lumipat sa infant pathway. 3: Huwag kailanman magsanay ng thrust sa totoong kapareha, kahit marahan. Manikin lamang.",
+        "feedback_en": "1: Correct. The infant card needs the infant manikin and the trainer-approved infant pathway. 2: Adult abdominal thrusts are not for infants. Switch to the infant pathway. 3: Never rehearse thrusts on a live partner, even gently. Use manikins only."
       }
     },
     {
       "lesson_key": "chest-pain-referral",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sa practice na tawag, ano ang dapat mong iulat?",
+        "prompt_en": "On the practice call, what should you report?",
         "options": [
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Kailan nagsimula ang paninikip, at ang sintomas.",
+            "en": "When the pressure began, and the symptoms."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Ang sarili mong hula kung ano ang sanhi ng sakit.",
+            "en": "Your own guess about what is causing it."
           },
           {
-            "fil": "Iulat ang simula ng pananakit.",
-            "en": "Report pain onset."
+            "fil": "Ang dosis ng aspirin na balak mong ibigay.",
+            "en": "The aspirin dose that you are planning to give."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet. 3: Obserbahan ang gawa at ang tamang referral.",
-        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication. 3: Observe the task and appropriate referral."
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tama. Iulat ang simula, sintomas at alam na gamot o allergy. 2: Iulat ang nakikita, hindi ang hula sa sanhi. Hindi batayan ng diagnosis ang kuwento. 3: Huwag magreseta ng aspirin. Ayon sa lokal na protocol at kwalipikadong payo ang gamot.",
+        "feedback_en": "1: Correct. Report onset, symptoms and known medicines or allergies. 2: Report what you see, not a guessed cause. The story is not grounds for a diagnosis. 3: Do not prescribe aspirin. Medicine follows local protocol and qualified advice."
       }
     },
     {
       "lesson_key": "first-aid-kit",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Sabi ng katrabaho, puwede pang gamitin ang bukas na pakete. Ano ang dapat ipakita sa practice?",
+        "prompt_en": "A co-worker says the unsealed packet is still fine to use. What should your practice show?",
         "options": [
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Gamitin na ngayon dahil mukhang malinis ang loob.",
+            "en": "Use it today, since the inside looks clean."
           },
           {
-            "fil": "Itala ang expired na gamit.",
-            "en": "Record expired stock."
+            "fil": "Itala ang kondisyon; iulat nang hindi ginagamit.",
+            "en": "Record its condition; report it unused."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Iwanang blangko muna ang hanay ng selyo nito.",
+            "en": "Leave its seal column blank until later."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
-        "feedback_en": "1: The shortcut is unsafe: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+        "feedback_fil": "1: Iulat ang sirang gamit nang hindi ginagamit. Hindi sapat na mukhang malinis. 2: Tama. Itinatala ang selyo, at iniuulat ang gamit nang hindi ginagamit. 3: Dapat kumpleto ang bawat hanay. Naitatago ng blangkong selyo ang problema.",
+        "feedback_en": "1: Escalate damaged items without using them. Looking clean is not the check. 2: Correct. Package integrity goes on the sheet, and the item is escalated unused. 3: Every row must be complete. A blank seal cell hides the problem."
       }
     },
     {
       "lesson_key": "incident-handover",
       "check": {
-        "prompt_fil": "Ano ang dapat ipakita sa practice?",
-        "prompt_en": "What should the practice show?",
+        "prompt_fil": "Paano dapat tapusin ang handover mo sa practice?",
+        "prompt_en": "How should your practice handover end?",
         "options": [
           {
-            "fil": "Iulat ang nakita at ginawa.",
-            "en": "Report observations and actions."
+            "fil": "Ikuwento rin sa mga nakikiusyoso sa paligid ang lahat ng iniulat.",
+            "en": "By telling the bystanders everything you just reported."
           },
           {
-            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
-            "en": "Diagnose from the story and promise it is enough for the person."
+            "fil": "Sabihin ang sarili mong hula kung bakit siya nahulog.",
+            "en": "With your own guess about what caused the fall."
           },
           {
-            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
-            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+            "fil": "Hilinging kumpirmahin ng tatanggap ang susunod na hakbang.",
+            "en": "By asking the receiver to confirm the next step."
           }
         ],
-        "correct_option_index": 0,
-        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
-        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover."
+        "correct_option_index": 2,
+        "feedback_fil": "1: Huwag ibahagi ang detalye sa labas ng handover. 2: Hindi fact ang hula sa sanhi. Iulat lamang ang nakita at ginawa mo. 3: Tama. Tinatapos ang handover sa paghiling na kumpirmahin ng tatanggap ang susunod na hakbang.",
+        "feedback_en": "1: Do not share identifiable details outside the care handover. 2: A guessed cause is not a fact. Report only what you saw and did. 3: Correct. Inviting the receiver to confirm the next action closes the handover."
       }
     }
   ],

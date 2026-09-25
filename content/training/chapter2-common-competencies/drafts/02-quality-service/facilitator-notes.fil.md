@@ -66,7 +66,7 @@ May isang indicator bawat layunin ng aralin sa Competency tab (apat). Nakasulat 
 - **2.1 Maayos na pagtugon sa mahirap na sitwasyon:** pakikinig, paglipat sa pribadong lugar at pagkakasundo sa susunod na hakbang.
 - **2.3 Pag-iwas at pagkontrol sa impeksyon:** ang hanay na safety at sweep ng 7S ay tumutuloy sa IPC controls. Doon itinuturo ang paghawak ng matutulis at kontaminadong bagay, hindi dito.
 - **Chapter 1, Modyul 6 (Epektibong Komunikasyon):** bukas na tanong, teach-back at factual na pag-uulat.
-- **Transfer task:** sa loob ng 2–4 na linggo, ipasusuri ng bawat BHW sa supervisor ang isang mungkahing pagpapabuti gamit ang job aid. Parehong indicator ang gagamitin ng supervisor: obserbahan, magbigay ng feedback, umulit. May recall check sa ika-2, ika-14 at ika-60 araw.
+- **Transfer task:** sa loob ng 2–4 na linggo, isusulat ng bawat BHW sa job aid ang isang mungkahing pagpapabuti ng serbisyo (7S o daloy ng serbisyo) at ipasusuri ito sa supervisor bago gumawa ng anumang pagbabago. Parehong indicator ang gagamitin ng supervisor: obserbahan, magbigay ng feedback, umulit. May recall check sa ika-2, ika-14 at ika-60 araw.
 
 ## Sanggunian at katayuan ng pagrepaso
 

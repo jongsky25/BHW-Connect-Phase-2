@@ -84,7 +84,7 @@ Use the Competency tab's 12 indicators (one per lesson) with the activity cards.
 
 - **2.4 First aid and referral:** same F38 competency group; escalate breathing difficulty and infected wounds as taught there. 2.6 and 2.7 complete the group.
 - **Chapter 1, Module 1 (The Roles of a BHW)** and **Module 6 (Effective Communication):** referral as service, and clear reporting to the midwife.
-- **Transfer task:** within 2–4 weeks, review one improvement proposal with the supervisor using the job aid *Ten medicinal plants*; the supervisor uses the same indicator, gives feedback and has the BHW retry. Recall checks are specified for day 2, 14 and 60 (content only; no reminders are scheduled).
+- **Transfer task:** within 2–4 weeks, each BHW checks one plant card from the job aid *Ten medicinal plants* with the midwife against the current PITAHC card and local authorization, and names the referral route for urgent cases, with no preparation or product; the supervisor uses the same indicator, gives feedback and has the BHW retry. Recall checks are specified for day 2, 14 and 60 (content only; no reminders are scheduled).
 
 ## Sources and review status
 

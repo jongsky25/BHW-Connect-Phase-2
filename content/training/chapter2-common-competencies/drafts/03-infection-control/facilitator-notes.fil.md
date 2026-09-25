@@ -70,7 +70,7 @@ May dahilan kung bakit ito ang paniniwala: mask at alcohol ang pinakamalakas na 
 - **2.2 Mataas na kalidad ng serbisyo** — isa sa mga dimensyon ng kalidad ang ligtas na serbisyo, at nakakatulong sa hand hygiene ang maayos na station.
 - **2.4 Paunang lunas at tamang referral** — ipagamit sa mga kalahok ang hand-hygiene steps ng 2.3.3 sa bawat first-aid station.
 - **Job aid:** *Pag-iwas at pagkontrol sa impeksyon*, isang bahagi bawat aralin, may nakasulat na lokal na contact.
-- **Transfer task:** sa loob ng 2–4 na linggo, ipasusuri ng bawat BHW sa supervisor ang isang mungkahing pagpapabuti gamit ang job aid. Parehong indicator ang gagamitin ng supervisor: obserbahan, magbigay ng feedback, ulitin. Nakaplano ang recall checks sa ika-2, ika-14 at ika-60 na araw (walang naka-schedule na paalala).
+- **Transfer task:** sa loob ng 2–4 na linggo, oobserbahan ng supervisor nang isang beses sa BHS ang paglilinis ng kamay ng bawat BHW gamit ang checklist ng job aid. Parehong indicator ang gagamitin ng supervisor: obserbahan, magbigay ng feedback, ulitin. Nakaplano ang recall checks sa ika-2, ika-14 at ika-60 na araw (walang naka-schedule na paalala).
 
 ## Sanggunian at katayuan ng pagrepaso
 

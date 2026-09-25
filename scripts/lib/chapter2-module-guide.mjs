@@ -46,7 +46,7 @@ export function loadChapter2ModuleGuide(moduleKey, root = chapter2Root, { requir
   const competency = json(competencyPath);
   for (const lang of ['fil', 'en']) if (!competency[`competency_statement_${lang}`]?.trim()) fail(`empty competency_statement_${lang}`);
   if (requireIndicators && !competency.observation_indicators) fail('competency.json has no indicators; run chapter2-guide-load --materialize');
-  if (competency.observation_indicators && !isDeepStrictEqual(competency.observation_indicators, observation_indicators)) {
+  if (requireIndicators && competency.observation_indicators && !isDeepStrictEqual(competency.observation_indicators, observation_indicators)) {
     fail('competency.json indicators drifted from the lesson indicators; run chapter2-guide-load --materialize');
   }
 

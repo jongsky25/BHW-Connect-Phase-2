@@ -4,8 +4,6 @@
 
 Hanapin ang botanical name at nakalistang bahagi sa current PITAHC card. Kung hindi tiyak ang identity, huwag maghanda o magbigay. Tanungin ang sintomas at gamot; iugnay sa clinician.
 
-Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Hanapin ang botanical name at nakalistang bahagi sa current PITAHC card. Kung hindi tiyak ang identity, huwag maghanda o magbigay. Tanungin ang sintomas at gamot; iugnay sa clinician.
-
 | Tanong | Sagot mula sa card | Kailangan kumpirmahin |
 |---|---|---|
 | Tamang halaman at botanical name | ____ | ____ |
@@ -52,7 +50,7 @@ Sa reference card, hanapin ang Allium sativum. Ang nakalistang bahagi ay butil; 
 
 ## Bayabas
 
-Sa reference card, hanapin ang Psidium guajava. Ang nakalistang bahagi ay talbos/dahon; ang paksang gamit ay mga gamit sa balat na nakalista sa lumang manual. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri agad ang lumalalang pamumula, nana, lagnat o ibang senyales ng impeksiyon.
+Sa reference card, hanapin ang Psidium guajava. Ang nakalistang bahagi ay talbos/dahon; ang paksang gamit ay mga gamit sa balat na nakalista sa lumang manual. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri agad ang kumakalat na pamumula, nana, lagnat o ibang senyales ng impeksiyon.
 
 | Card: Bayabas | Nakita sa source | Kailangan kumpirmahin |
 |---|---|---|
@@ -136,9 +134,7 @@ Sa reference card, hanapin ang Mentha cordifolia. Ang nakalistang bahagi ay daho
 
 ## Gamitin nang maingat ang plant references
 
-Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.
-
-Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Itugma ang bawat halaman sa botanical name at nakalistang gamit. Kilalanin ang agarang referral para sa hirap sa paghinga at infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, sa dry props lamang ipakita ang pagkilala at paghahanda ng station; walang ibibigay na produkto.
+Itugma ang bawat halaman sa botanical name at nakalistang gamit. Agad i-refer ang hirap sa paghinga at ang infected wound. Huwag palitan ang diabetes medicine. Kung may awtorisadong trainer, pagkilala lamang ang ipakita, gamit ang dry props; walang ibibigay na produkto.
 
 | Tanong | Sagot mula sa card | Kailangan kumpirmahin |
 |---|---|---|

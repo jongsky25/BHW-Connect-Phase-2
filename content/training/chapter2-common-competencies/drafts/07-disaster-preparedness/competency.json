@@ -6,90 +6,90 @@
       "objective_index": 0,
       "observable_fil": "Sa fictional na kaso, sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
       "observable_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Itinuturing na kumpirmadong silungan ang paaralan o minamarkahan ang totoong sambahayan sa mapa.",
+      "not_yet_en": "Treats the school as a confirmed shelter or marks a real household on the map.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Namamarkahan ang panganib, pangangailangan at kakayahan, nasasabi kung sino ang magpapatunay sa kakayahan, at walang totoong lokasyon, nang walang paalala.",
+        "kaya_na_en": "Marks a hazard, a support need and a capacity, names who will verify the capacity, and shows no real location, without prompts.",
+        "kailangan_practice_fil": "Namamarkahan ang tatlong layer ngunit kailangan ng paalala sa magpapatunay o sa pag-alis ng lokasyon ng sambahayan.",
+        "kailangan_practice_en": "Marks the three layers but needs a prompt to name who will verify or to leave out the household's location.",
+        "hindi_pa_fil": "Itinuturing na kumpirmadong silungan ang paaralan o minamarkahan ang totoong sambahayan sa mapa.",
+        "hindi_pa_en": "Treats the school as a confirmed shelter or marks a real household on the map."
       }
     },
     {
       "objective_index": 1,
       "observable_fil": "Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.",
       "observable_en": "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Ipinapasa bilang totoo ang lumang directory, di-kumpirmadong ruta o sariling evacuation order.",
+      "not_yet_en": "Relays the old directory, an unconfirmed route or a self-made evacuation order as fact.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Nasasabi ang source at oras ng advisory, inihihiwalay ang kumpirmado sa hinihintay pa, at nasasabi ang contact na kukumpirmahin, nang walang paalala.",
+        "kaya_na_en": "States the advisory source and time, keeps confirmed apart from pending, and names the contact to verify, without prompts.",
+        "kailangan_practice_fil": "Nasasabi ang kumpirmadong aksiyon ngunit kailangan ng paalala sa source at oras o sa contact na kukumpirmahin.",
+        "kailangan_practice_en": "Gives the confirmed action but needs a prompt to state the source and time or the contact to verify.",
+        "hindi_pa_fil": "Ipinapasa bilang totoo ang lumang directory, di-kumpirmadong ruta o sariling evacuation order.",
+        "hindi_pa_en": "Relays the old directory, an unconfirmed route or a self-made evacuation order as fact."
       }
     },
     {
       "objective_index": 2,
       "observable_fil": "Sa fictional na kaso, pumili ng gamit para sa fictional pamilya, ipaliwanag ang dahilan at petsa ng susunod na pag-check.",
       "observable_en": "In a fictional case, select items for the fictional family, explain why, and set a date to recheck.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Kinokopya ang listahan nang walang pangangailangan ng sanggol o gamot, o nag-aalok na magbigay ng gamot.",
+      "not_yet_en": "Copies a list without the infant's or medicine needs, or offers to supply medicine.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "May dahilan sa bawat piniling gamit, itinatanong ang access sa regular na gamot at nagtatakda ng petsa ng pag-check, nang walang paalala.",
+        "kaya_na_en": "Gives a reason for each chosen item, asks about access to regular medicine and sets a recheck date, without prompts.",
+        "kailangan_practice_fil": "Angkop ang piniling gamit ngunit kailangan ng paalala sa dahilan, sa access sa gamot o sa petsa ng pag-check.",
+        "kailangan_practice_en": "Chooses suitable items but needs a prompt to give reasons, ask about medicine access or set a recheck date.",
+        "hindi_pa_fil": "Kinokopya ang listahan nang walang pangangailangan ng sanggol o gamot, o nag-aalok na magbigay ng gamot.",
+        "hindi_pa_en": "Copies a list without the infant's or medicine needs, or offers to supply medicine."
       }
     },
     {
       "objective_index": 3,
       "observable_fil": "Sa fictional na kaso, sa mock team change, tukuyin ang dapat kumpirmahin at magbigay ng maikling handover nang walang personal na detalye.",
       "observable_en": "In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Umaasa sa lumang roster, o may pangalan o detalye ng kalusugan sa handover.",
+      "not_yet_en": "Relies on the old roster, or includes names or health details in the handover.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Kinukumpirma ang kasalukuyang team, lead at channel, saka nagbibigay ng maikling handover na may oras at walang pangalan o diagnosis, nang walang paalala.",
+        "kaya_na_en": "Confirms the current team, lead and channel, then gives a short handover with the time and no name or diagnosis, without prompts.",
+        "kailangan_practice_fil": "Nakapagbibigay ng handover ngunit kailangan ng paalala na kumpirmahin muna ang lead o itala ang oras.",
+        "kailangan_practice_en": "Gives the handover but needs a prompt to confirm the current lead first or to record the time.",
+        "hindi_pa_fil": "Umaasa sa lumang roster, o may pangalan o detalye ng kalusugan sa handover.",
+        "hindi_pa_en": "Relies on the old roster, or includes names or health details in the handover."
       }
     },
     {
       "objective_index": 4,
       "observable_fil": "Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.",
       "observable_en": "In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig, nagbibigay ng therapy o pinipilit ang salaysay ng nababagabag.",
+      "not_yet_en": "Prescribes, sets rations, declares water safe, gives therapy or demands the distressed person's story.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Naitutugma ang apat na pangangailangan sa tamang domain, nasasabi ang puwang ng focal person at kung paano babalik ang feedback, nang walang paalala.",
+        "kaya_na_en": "Matches all four needs to the right domain, names the focal person slot and says how feedback returns, without prompts.",
+        "kailangan_practice_fil": "Naitutugma ang domain ngunit kailangan ng paalala sa follow-up o sa pagsuri muna ng kaligtasan ng nababagabag.",
+        "kailangan_practice_en": "Matches the domains but needs a prompt for the follow-up or for checking the distressed person's safety first.",
+        "hindi_pa_fil": "Nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig, nagbibigay ng therapy o pinipilit ang salaysay ng nababagabag.",
+        "hindi_pa_en": "Prescribes, sets rations, declares water safe, gives therapy or demands the distressed person's story."
       }
     },
     {
       "objective_index": 5,
       "observable_fil": "Sa fictional na kaso, sa 10 minutong tabletop, ayusin ang prayoridad, handover, continuity, follow-up at suporta sa responder.",
       "observable_en": "In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.",
-      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "not_yet_fil": "Gumagamit ng di-kumpirmadong contact, walang follow-up o iniiwang walang kapalit ang pagod na volunteer.",
+      "not_yet_en": "Uses unconfirmed contacts, skips follow-up or leaves the exhausted volunteer without relief.",
       "levels": {
-        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
-        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
-        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
-        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
-        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
-        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+        "kaya_na_fil": "Inuuna ang ligtas na paglikas, may unang ligtas na aksiyon, kumpirmadong lead at follow-up ang bawat isyu, at may kapalit ang volunteer, nang walang paalala.",
+        "kaya_na_en": "Puts safe evacuation first, gives each issue a first safe action, confirmed lead and follow-up, and arranges relief for the volunteer, without prompts.",
+        "kailangan_practice_fil": "Naaayos ang mga isyu ngunit kailangan ng paalala sa pagtatala ng pagtanggap, follow-up o kapalit ng volunteer.",
+        "kailangan_practice_en": "Orders the issues but needs a prompt to record acknowledgement, set follow-up or relieve the volunteer.",
+        "hindi_pa_fil": "Gumagamit ng di-kumpirmadong contact, walang follow-up o iniiwang walang kapalit ang pagod na volunteer.",
+        "hindi_pa_en": "Uses unconfirmed contacts, skips follow-up or leaves the exhausted volunteer without relief."
       }
     }
   ]
