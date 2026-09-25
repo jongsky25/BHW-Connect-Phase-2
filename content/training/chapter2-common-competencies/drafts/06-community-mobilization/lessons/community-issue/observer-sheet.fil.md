@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Naihihiwalay ang tatlong ulat sa hula ng lider at may tanong sa hindi pa naririnig nang walang paalala. |
-| Kailangan practice | Malinaw ang ulat pero kailangang paalalahanang idagdag ang hindi pa naririnig. |
+| Kailangan pa ng practice | Malinaw ang ulat pero kailangang paalalahanang idagdag ang hindi pa naririnig. |
 | Hindi pa | Ginagawang katotohanan ang bansag na tamad o ipinipili ang solusyon nang walang pakikinig. |
 
 Aktuwal na nakita/narinig: ____

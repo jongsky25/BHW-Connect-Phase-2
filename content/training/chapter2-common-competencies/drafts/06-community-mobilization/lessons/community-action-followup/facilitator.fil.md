@@ -43,7 +43,7 @@ Basahin nang malakas ang sitwasyon. Itanong: *"Patunay ba ng punong pulong na na
 
 ## [answer-key] Susi sa self-check
 
-1. **"Ano ang kulang sa 'Magpapabalita ang grupo balang araw'?"** Tama: **"Tao, resources, petsa at panukat"** — ginagawang malinaw at masusuri ang napagkasunduan. "Listahan ng personal na kondisyon…": hindi kailangan ang ganitong detalye. "Pangakong may sasakyan…": nagdadagdag ito ng hindi kumpirmadong pangako.
+1. **"Ano ang kulang sa 'Magpapabalita ang grupo balang araw'?"** Tama: **"Tao, resources, petsa at panukat"** — ginagawang malinaw at masusuri ang napagkasunduan. "Listahan ng personal na kondisyon…": hindi kailangan sa pagpapabalita. "Pangakong may sasakyan…": nagdadagdag ito ng hindi kumpirmadong pangako.
 2. **"Hindi naihatid ang ilang paanyaya. Ano ang gagawin sa follow-up?"** Tama: **"Alamin ang hadlang at baguhin ang plano"** — pinananatili ang pananagutan habang inaayos ang aktuwal na problema. "Ipahiya sa pulong ang kasapi…": maaaring masira ang tiwala at hindi matukoy ang dahilan. "Sabihing matagumpay pa rin…": hindi patunay ng nakarating na balita ang dami ng dumalo sa pulong.
 
 ## [observe] Ano ang oobserbahan

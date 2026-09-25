@@ -43,7 +43,7 @@ Read the scene aloud. Ask: *"Does a full meeting prove the update reached people
 
 ## [answer-key] Self-check answer key
 
-1. **"What is missing from 'The group will send updates someday'?"** Correct: **"Owner, resources, date and measure"** — this makes the agreement specific and reviewable. "A list of every resident's personal health conditions…": these details are unnecessary. "A promise of transport…": this adds an unconfirmed promise.
+1. **"What is missing from 'The group will send updates someday'?"** Correct: **"Owner, resources, date and measure"** — this makes the agreement specific and reviewable. "A list of every resident's personal health conditions…": unnecessary for an update plan. "A promise of transport…": this adds an unconfirmed promise.
 2. **"Some invitations were not delivered. What should happen at follow-up?"** Correct: **"Discuss the barrier and adjust the plan"** — this maintains accountability while addressing the actual problem. "Shame the member…": this can damage trust without clarifying the reason. "Declare success…": meeting attendance does not prove that updates reached people.
 
 ## [observe] What to observe

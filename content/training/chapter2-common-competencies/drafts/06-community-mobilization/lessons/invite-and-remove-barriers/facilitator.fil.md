@@ -44,14 +44,14 @@ Basahin nang malakas ang sitwasyon. Itanong: *"Walang cellphone si Sari. Ano ang
 ## [answer-key] Susi sa self-check
 
 1. **"Walang cellphone si Sari. Ano ang pinakamainam na simula?"** Tama: **"Itanong ang angkop na paanyaya"** — kasama si Sari sa pagpili ng magagamit na paraan. "Ipadala muli sa parehong chat…": hindi nito binabago ang hadlang sa pag-access. "Sabihing wala siyang interes…": hula sa interes ang kawalan ng sagot, hindi ebidensiya.
-2. **"Hindi makadalo si Ruben. Ano ang angkop na sagot?"** Tama: **"Mag-alok ng ibang paraan ng mungkahi"** — nirerespeto ang hadlang habang binubuksan ang pakikilahok. "Ipagpaliban ang serbisyo niya…": hindi dapat nakatali ang serbisyo sa pagdalo. "Mangako ng pera…": hindi dapat mangako ng hindi kumpirmadong gantimpala.
+2. **"Hindi makadalo si Ruben. Ano ang angkop na sagot?"** Tama: **"Mag-alok ng ibang paraan ng pag-ambag"** — nirerespeto ang hadlang habang binubuksan ang pakikilahok. "Ipagpaliban ang serbisyo niya…": hindi dapat nakatali ang serbisyo sa pagdalo. "Mangako ng pera…": hindi dapat mangako ng hindi kumpirmadong gantimpala.
 
 ## [observe] Ano ang oobserbahan
 
 Indicator: May plano para sa tatlong hadlang, malinaw na tagapag-imbita at kusang-loob na paraan ng pakikilahok.
 
 - **Kaya na:** Magkakaiba at angkop ang tatlong paraan; may follow-up at walang pamimilit o pangako ng gantimpala.
-- **Kailangan pa ng practice:** May angkop na paanyaya pero kailangang paalalahanang maglagay ng follow-up o alternatibong mungkahi.
+- **Kailangan pa ng practice:** May angkop na paanyaya pero kailangang paalalahanang maglagay ng follow-up o ibang paraan ng pag-ambag.
 - **Hindi pa:** Chat lamang ang plano para sa lahat o ginagawang kondisyon sa serbisyo ang pagdalo.
 
 Hanapin kung tinatanong ng kalahok ang residente. Hindi patunay ng kasanayan ang tamang self-check.

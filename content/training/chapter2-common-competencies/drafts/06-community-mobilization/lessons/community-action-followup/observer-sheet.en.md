@@ -7,7 +7,7 @@ Learner code: ____  Observer: ____  Date: ____
 | Rating | Specific behavior |
 |---|---|
 | Kaya na | Completes the plan, measures receipt of updates beyond attendance and adapts to barriers without prompting. |
-| Kailangan practice | Names an owner and date but needs a prompt to confirm resources or add a measure. |
+| Kailangan pa ng practice | Names an owner and date but needs a prompt to confirm resources or add a measure. |
 | Hindi pa | Promises unconfirmed resources or shames someone who did not finish. |
 
 Evidence observed: ____
