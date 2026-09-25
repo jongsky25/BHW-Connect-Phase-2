@@ -17,8 +17,12 @@ The BHW Reference Manual R38–48 and Facilitator Guide F38–40 establish scope
 - [AHA/Red Cross first-aid guidance](https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines) and [IFRC guidance](https://www.ifrc.org/document/ifrc-international-first-aid-resuscitation-and-education-guidelines-2025) inform bleeding, fractures, burns, bites and referral boundaries. [WHO snakebite guidance](https://www.who.int/health-topics/snakebite/snakebite) supports minimal movement and prompt transport.
 - Poisoning and chest-pain cases exclude the source's routine large drink, fixed chemical-spill distance and repeated aspirin schedule. The kit lesson treats its medicines as inventory requiring current local authority, not a standing prescription.
 
+The owner approved the First Aid authoring batch and stated it was reviewed and QA'd on 25 September 2026. The owner did not specify the QA method. The documented technical QA comprises 80 focused tests, authoring validation and DOM simulation. Browser visual/accessibility QA remains undocumented under the existing restriction.
+
+The owner approved the First Aid authoring batch and stated it was reviewed and QA'd on 25 September 2026. The owner did not specify the QA method. The documented technical QA comprises 80 focused tests, authoring validation and DOM simulation. Browser visual/accessibility QA remains undocumented under the existing restriction.
+
 Independent clinical review, local emergency contacts, current protocol adoption, trainer qualification and equipment remain pending. Author source verification is not clinical sign-off or publication approval.
 
 ## Verification and next work
 
-The chapter validator passes for 37 lessons, 259 Read sections, 259 Slides and 74 checks. Focused tests and lint are recorded with this review package after completion. DOM simulation checks the learner, workbook and private kit; visual browser QA remains unperformed under the existing security restriction. Chapter 2 stays unavailable and unpublished. The remaining outline modules are 2.5 Medicinal Plants and 2.7 DRRM.
+The chapter validator passes for 37 lessons, 259 Read sections, 259 Slides and 74 checks. 80 focused tests across six files and ESLint passed. DOM simulation checks the learner, workbook and private kit; visual browser QA remains unperformed under the existing security restriction. Chapter 2 stays unavailable and unpublished. The remaining outline modules are 2.5 Medicinal Plants and 2.7 DRRM.

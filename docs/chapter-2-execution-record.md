@@ -1,3 +1,7 @@
+# Owner review update — 25 September 2026
+
+The user approved the Chapter 2.4 First Aid authoring batch and stated it was reviewed and QA'd. This is recorded as an owner review and QA attestation; the method was not specified. The documented technical checks are 80 focused tests, authoring validation and DOM simulation. Independent clinical/local approval and browser visual QA remain unverified.
+
 # Current update: Chapter 2.4 First Aid — 25 September 2026
 
 Eighteen bilingual training drafts added; 37/55 lessons authored. The F38 seven-hour cases plus one-hour kit allocation reconciles to 480 minutes. Current-source evidence documented; independent clinical/local review and browser visual QA pending. See chapter-2-firstaid-review.md.

@@ -24,6 +24,20 @@
         "browser QA",
         "production publication"
       ]
+    },
+    {
+      "modules": [
+        "2.4"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: approve first aid mark as reviewed and qa'd. what is next?",
+      "scope": "Owner accepts the authored First Aid module and attests it has been reviewed and QA'd. The QA method was not specified by the user.",
+      "not_equivalent_to": [
+        "independent clinical sign-off",
+        "documented browser visual/accessibility QA",
+        "local emergency protocol confirmation",
+        "production publication"
+      ]
     }
   ]
 }
