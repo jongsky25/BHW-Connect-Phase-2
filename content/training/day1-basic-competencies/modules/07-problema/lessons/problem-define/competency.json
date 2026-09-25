@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Isinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi.",
+      "observable_en": "States the event and scope, identifies the source, names one information gap and avoids blame.",
+      "not_yet_fil": "Husga sa pamilya o napiling solusyon ang ipinapalit sa problema.",
+      "not_yet_en": "Substitutes a judgment about families or a chosen solution for the problem.",
+      "levels": {
+        "kaya_na_fil": "Isinusulat ang tiyak na pangyayari at saklaw; tinutukoy ang pinagmulan; pinapangalanan ang isang kulang na impormasyon; walang paninisi. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "States the event and scope, identifies the source, names one information gap and avoids blame. Completes this without prompting.",
+        "kailangan_practice_fil": "May pangyayari ngunit walang pinagmulan o kulang; ipatanong kung sino ang nagsabi at ano pa ang dapat alamin.",
+        "kailangan_practice_en": "Names an event but not its source or gap; ask who reported it and what still needs checking.",
+        "hindi_pa_fil": "Husga sa pamilya o napiling solusyon ang ipinapalit sa problema.",
+        "hindi_pa_en": "Substitutes a judgment about families or a chosen solution for the problem."
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "manifest": {
+    "lesson_key": "problem-prioritize",
+    "position": 2,
+    "title_fil": "Piliin ang uunahin",
+    "title_en": "Choose a priority",
+    "objectives_fil": [
+      "Gamit ang apat na pamantayan, kwentahin at ipaliwanag ang halimbawa ng ranking at sabihin kung bakit hindi nito pinapalitan ang agarang referral."
+    ],
+    "objectives_en": [
+      "Using the four criteria, calculate and explain the example ranking and state why it does not replace urgent referral."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "criteria",
+      "concept_ids": [
+        "m7.prioritize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang prayoridad ay may malinaw na batayan at lokal na paghatol; hindi nito pinapalitan ang agarang referral.",
+      "takeaway_en": "Priorities require explicit criteria and local judgment; they do not replace immediate referral.",
+      "check": null
+    },
+    {
+      "id": "worked-scores",
+      "concept_ids": [
+        "m7.prioritize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ipaliwanag ang marka bago pagkatiwalaan ang kabuuan.",
+      "takeaway_en": "Explain the scores before trusting the total.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.prioritize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
+      "takeaway_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.prioritize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
+      "takeaway_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+      "check": {
+        "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
+        "prompt_en": "Two problems both score 17. What should the group do?",
+        "options": [
+          {
+            "fil": "Balikan ang ebidensya, urgency at resources bago magkasundo.",
+            "en": "Revisit evidence, urgency and resources before agreeing."
+          },
+          {
+            "fil": "Unahin ang unang nakasulat para mabilis.",
+            "en": "Choose the first listed to save time."
+          },
+          {
+            "fil": "Dagdagan ng isa ang gusto ng lider kahit walang bagong ebidensya.",
+            "en": "Add one point to the leader’s preference without new evidence."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
+        "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.prioritize",
+      "read_ids": [
+        "criteria",
+        "worked-scores",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-criteria",
+        "slide-worked-scores",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        29
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

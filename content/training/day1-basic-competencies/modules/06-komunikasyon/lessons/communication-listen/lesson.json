@@ -1,0 +1,165 @@
+{
+  "manifest": {
+    "lesson_key": "communication-listen",
+    "position": 0,
+    "title_fil": "Makinig nang may respeto",
+    "title_en": "Listen with respect",
+    "objectives_fil": [
+      "Sa kunwaring household interview, humingi ng pahintulot, pumili ng komportableng lugar at ibuod ang concern nang walang paratang."
+    ],
+    "objectives_en": [
+      "In a simulated household interview, ask permission, establish a comfortable setting and summarize the concern without blame."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "liza",
+      "concept_ids": [
+        "m6.gather"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang maayos na pangangalap ng impormasyon ay nagsisimula sa komportableng lugar at malinaw na layunin.",
+      "takeaway_en": "Gathering information begins with a comfortable setting and a clear purpose.",
+      "check": null
+    },
+    {
+      "id": "listen",
+      "concept_ids": [
+        "m6.empathy"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pakikinig na may respeto ay nagbibigay ng pagkakataong mailahad ang tunay na concern.",
+      "takeaway_en": "Respectful listening gives the person room to describe the real concern.",
+      "check": null
+    },
+    {
+      "id": "profile",
+      "concept_ids": [
+        "m6.profile"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang profile ay may malinaw na gamit, tumpak na sagot at paggalang sa kausap.",
+      "takeaway_en": "A profile needs a clear purpose, accurate answers and respect for the person.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m6.gather",
+        "m6.empathy",
+        "m6.profile"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mas malinaw ang concern kapag may pahintulot, privacy at oras ang kausap.",
+      "takeaway_en": "Permission, privacy and time help the person explain the concern.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m6.gather",
+        "m6.empathy",
+        "m6.profile"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mas malinaw ang concern kapag may pahintulot, privacy at oras ang kausap.",
+      "takeaway_en": "Permission, privacy and time help the person explain the concern.",
+      "check": {
+        "prompt_fil": "Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Mila?",
+        "prompt_en": "A neighbor answers for Liza. What should Mila do first?",
+        "options": [
+          {
+            "fil": "Ituloy ang form gamit ang sagot ng kapitbahay.",
+            "en": "Complete the form using the neighbor’s answers."
+          },
+          {
+            "fil": "Tanungin si Liza kung saan at paano siya komportableng makikipag-usap.",
+            "en": "Ask Liza where and how she would be comfortable talking."
+          },
+          {
+            "fil": "Sabihin muna ang payo bago magtanong ulit.",
+            "en": "Give advice before asking again."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang sagot ay nagbibigay kay Liza ng boses at pagpili. Ang sagot ng kapitbahay ay hindi awtomatikong sagot niya; ang agarang payo ay maaaring mauna sa tunay na concern.",
+        "feedback_en": "The second response gives Liza a voice and a choice. Her neighbor’s answer is not automatically hers; immediate advice may miss her actual concern."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m6.gather",
+      "read_ids": [
+        "liza",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-liza",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m6.empathy",
+      "read_ids": [
+        "listen",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-listen",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m6.profile",
+      "read_ids": [
+        "profile",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-profile",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        28
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        18,
+        19,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

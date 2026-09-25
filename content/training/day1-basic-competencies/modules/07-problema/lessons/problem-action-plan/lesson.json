@@ -1,0 +1,180 @@
+{
+  "manifest": {
+    "lesson_key": "problem-action-plan",
+    "position": 3,
+    "title_fil": "Magplano ng aksyon",
+    "title_en": "Plan an action",
+    "objectives_fil": [
+      "Magmungkahi ng isang trial na tumutugon sa natiyak na sanhi, may owner, resources, deadline, sukatan at petsa ng review, na may pagsang-ayon ng katuwang."
+    ],
+    "objectives_en": [
+      "Recommend a trial addressing a verified cause, with an owner, resources, deadline, measure and review date, subject to partner agreement."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "compare-solutions",
+      "concept_ids": [
+        "m7.solutions"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Paghambingin ang solusyon ayon sa sanhi at resources, hindi sa dali lamang ng paggawa.",
+      "takeaway_en": "Compare solutions against the cause and resources, not convenience alone.",
+      "check": null
+    },
+    {
+      "id": "plan",
+      "concept_ids": [
+        "m7.recommend",
+        "m7.mobilize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang rekomendasyon ay nagiging plano kapag may responsable, resources, petsa at sukatan ng resulta.",
+      "takeaway_en": "A recommendation becomes a plan when it names an owner, resources, date and outcome measure.",
+      "check": null
+    },
+    {
+      "id": "partners",
+      "concept_ids": [
+        "m7.mobilize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang solusyon ay may may-ari at kasosyo; hindi lahat ng gawain ay ibinabagsak sa BHW.",
+      "takeaway_en": "Solutions need owners and partners; not every task belongs to the BHW.",
+      "check": null
+    },
+    {
+      "id": "review",
+      "concept_ids": [
+        "m7.recommend"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang review ay pagkakataong baguhin ang palagay at plano gamit ang resulta.",
+      "takeaway_en": "Review uses results to revise assumptions and the plan.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m7.solutions",
+        "m7.recommend",
+        "m7.mobilize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+      "takeaway_en": "A plan names who acts and how to tell whether the barrier decreased.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m7.solutions",
+        "m7.recommend",
+        "m7.mobilize"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+      "takeaway_en": "A plan names who acts and how to tell whether the barrier decreased.",
+      "check": {
+        "prompt_fil": "Nagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?",
+        "prompt_en": "The meeting happened but attendance did not improve. What review is useful?",
+        "options": [
+          {
+            "fil": "Ituring na tagumpay dahil natapos ang meeting.",
+            "en": "Declare success because the meeting finished."
+          },
+          {
+            "fil": "Ulitin ang parehong plano nang walang bagong tanong.",
+            "en": "Repeat the same plan without new questions."
+          },
+          {
+            "fil": "Balikan ang hadlang at ihambing ang invitations at attendance bago magbago.",
+            "en": "Recheck barriers and compare invitations with attendance before revising."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "Ang ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.",
+        "feedback_en": "The third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m7.solutions",
+      "read_ids": [
+        "compare-solutions",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-compare-solutions",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m7.recommend",
+      "read_ids": [
+        "plan",
+        "review",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-plan",
+        "slide-review",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m7.mobilize",
+      "read_ids": [
+        "plan",
+        "partners",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-plan",
+        "slide-partners",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        29
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

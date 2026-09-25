@@ -1,0 +1,91 @@
+[
+  {
+    "id": "slide-liza",
+    "concept_ids": [
+      "m6.gather"
+    ],
+    "layout": "scene",
+    "heading_fil": "Bakit tahimik si Liza?",
+    "heading_en": "Why is Liza quiet?",
+    "display_fil": "Si Liza, 29, ay tahimik habang katabi ang kapitbahay. Ipaliwanag ang layunin ng profile. Itanong ang gustong wika at kung nais niyang lumipat sa mas pribadong lugar.",
+    "display_en": "Liza, 29, is quiet beside a neighbor. Explain the profile’s purpose. Ask her preferred language and whether she would like a more private place.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-listen",
+    "concept_ids": [
+      "m6.empathy"
+    ],
+    "layout": "process",
+    "heading_fil": "Makinig bago magpayo",
+    "heading_en": "Listen before giving advice",
+    "display_fil": "Itabi ang telepono. Hayaang matapos ang kuwento. “Mukhang mahirap pagsabayin ang pag-aalaga at pagpunta roon.” Gumamit ng mahinahong boses; huwag pilitin ang eye contact.",
+    "display_en": "Put the phone away. Let the story finish. “It sounds difficult to manage caregiving and getting there.” Use a calm voice; do not force eye contact.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-profile",
+    "concept_ids": [
+      "m6.profile"
+    ],
+    "layout": "process",
+    "heading_fil": "Household profile na may layunin",
+    "heading_en": "Household profiling with a purpose",
+    "display_fil": "Sabihin kung sino ang gagamit ng form. Isa-isahin ang tanong; igalang ang ayaw munang sagutin. Ibalik kay Liza ang pagkakataong sumagot. Ibuod upang maitama niya ang tala.",
+    "display_en": "Explain who uses the form. Ask one question at a time; respect a wish not to answer yet. Let Liza speak for herself. Summarize so she can correct the record.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m6.gather",
+      "m6.empathy",
+      "m6.profile"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Pahintulot → lugar at wika → makinig → ibuod. Kapareha: tukuyin ang isang helpful na linya. Ulitin ang bahaging minadali.",
+    "display_en": "Permission → place and language → listen → summarize. Partner: identify one helpful phrase. Repeat the rushed part.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m6.gather",
+      "m6.empathy",
+      "m6.profile"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Mas malinaw ang concern kapag may pahintulot, privacy at oras ang kausap.",
+    "display_en": "Permission, privacy and time help the person explain the concern.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Sumasagot ang kapitbahay para kay Liza. Ano ang unang gagawin ni Mila?",
+      "prompt_en": "A neighbor answers for Liza. What should Mila do first?",
+      "options": [
+        {
+          "fil": "Ituloy ang form gamit ang sagot ng kapitbahay.",
+          "en": "Complete the form using the neighbor’s answers."
+        },
+        {
+          "fil": "Tanungin si Liza kung saan at paano siya komportableng makikipag-usap.",
+          "en": "Ask Liza where and how she would be comfortable talking."
+        },
+        {
+          "fil": "Sabihin muna ang payo bago magtanong ulit.",
+          "en": "Give advice before asking again."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay nagbibigay kay Liza ng boses at pagpili. Ang sagot ng kapitbahay ay hindi awtomatikong sagot niya; ang agarang payo ay maaaring mauna sa tunay na concern.",
+      "feedback_en": "The second response gives Liza a voice and a choice. Her neighbor’s answer is not automatically hers; immediate advice may miss her actual concern."
+    }
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "manifest": {
+    "lesson_key": "communication-record",
+    "position": 3,
+    "title_fil": "Suriin at itala ang impormasyon",
+    "title_en": "Assess and record information",
+    "objectives_fil": [
+      "Mula sa dalawang magkaibang kuwento, gumawa ng tala na hiwalay ang sinabi, nakita at hindi pa natiyak, at tukuyin kung paano beripikahin ang kulang."
+    ],
+    "objectives_en": [
+      "From conflicting accounts, produce a record separating reports, observations and unconfirmed details, with a way to verify the gap."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "sources",
+      "concept_ids": [
+        "m6.assess"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa pagsusuri ng impormasyon, ihiwalay ang sinabi, nakita at kailangan pang beripikahin.",
+      "takeaway_en": "When assessing information, distinguish reports, observations and details still requiring verification.",
+      "check": null
+    },
+    {
+      "id": "conflicting-accounts",
+      "concept_ids": [
+        "m6.assess"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kapag magkaiba ang kuwento, maglinaw at magberipika bago magpasya.",
+      "takeaway_en": "When accounts differ, clarify and verify before deciding.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m6.assess"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+      "takeaway_en": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m6.assess"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+      "takeaway_en": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+      "check": {
+        "prompt_fil": "Wala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?",
+        "prompt_en": "The card is missing and Liza’s account differs from her neighbor’s. Which record fits?",
+        "options": [
+          {
+            "fil": "“Hindi interesado si Liza; ayon sa kapitbahay.”",
+            "en": "“Liza is not interested, according to the neighbor.”"
+          },
+          {
+            "fil": "“Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”",
+            "en": "“Liza reports a canceled schedule; date to be verified in the record.”"
+          },
+          {
+            "fil": "“Kinansela ng health center ang lahat ng appointment.”",
+            "en": "“The health center canceled every appointment.”"
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.",
+        "feedback_en": "The second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m6.assess",
+      "read_ids": [
+        "sources",
+        "conflicting-accounts",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-sources",
+        "slide-conflicting-accounts",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        28
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        18,
+        19,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

@@ -1,4 +1,4 @@
-// Offline checks for the 1.6–1.9 authoring drafts. No client or database access.
+// Offline checks for the 1.6–1.9 authored lessons and release snapshots.
 import assert from 'node:assert/strict';
 import {readFileSync, existsSync} from 'node:fs';
 import path from 'node:path';
@@ -8,6 +8,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const base=path.join(root,'content/training/day1-basic-competencies');
 const inventory=JSON.parse(readFileSync(path.join(base,'drafts/inventory.json'),'utf8'));
 const expected={'06-komunikasyon':[5,480],'07-problema':[4,180],'08-osh':[4,240],'09-sustainable-practices':[3,180]};
+const released=new Set(['06-komunikasyon','07-problema','08-osh']);
 const json=(p)=>JSON.parse(readFileSync(p,'utf8'));
 const totals={lessons:0,readSections:0,slides:0,checks:0,concepts:0,answerPositions:[0,0,0],writes:0};
 const keys=new Set(),objectives=new Set(),observables=new Set();
@@ -22,7 +23,9 @@ for(const [key,[count,minutes]] of Object.entries(expected)){
  for(const l of loaded.lessons){
   const m=l.manifest,r=l.revision;
   assert(!keys.has(m.lesson_key),'duplicate lesson key');keys.add(m.lesson_key);
-  assert(!existsSync(path.join(legacy,'lessons',m.lesson_key)),'draft key already released: reconcile before editing');
+  if(released.has(key)){
+   assert(existsSync(path.join(legacy,'lessons',m.lesson_key)),'released lesson missing');
+  }else assert(!existsSync(path.join(legacy,'lessons',m.lesson_key)),'draft key already released: reconcile before editing');
   assert(r.slides.length>=4&&r.slides.length<=7,'draft slide target: 4–7');
   assert(!objectives.has(m.objectives_en[0]),'duplicate objective');objectives.add(m.objectives_en[0]);
   assert(!observables.has(l.notes.observation_indicators[0].observable_en),'duplicate observable');observables.add(l.notes.observation_indicators[0].observable_en);
@@ -33,6 +36,7 @@ for(const [key,[count,minutes]] of Object.entries(expected)){
   r.coverage.forEach(c=>concepts.add(c.id));totals.lessons++;totals.readSections+=r.read_sections.length;totals.slides+=r.slides.length;
  }
  totals.concepts+=concepts.size;
+ if(released.has(key))assert.equal(contentHash(loadReferenceModule(legacy,path.join(root,'public'))),contentHash(loaded),'released source differs from reviewed snapshot');
  console.log(JSON.stringify({module:key,lessons:count,concepts:concepts.size,facilitatedMinutes:minutes,hash:contentHash(loaded)}));
 }
 assert.equal(totals.lessons,16);assert.equal(inventory.lessons.length,16);
