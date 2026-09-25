@@ -59,6 +59,70 @@ harmless, but it's still worth an occasional purge (same pattern as the
 one-off cleanup this doc's history records for the pilot project) if it
 grows large enough to slow queries down.
 
+## Migration history notes
+
+### INC-29 (`20260920000000_inc29_course_progress_reset.sql`) — applied late, 2026-09-25
+
+Noticed 2026-09-24 while deploying the versioned test bank: neither project's
+applied-migration history had an `inc29*` entry, although both had later
+ones (`facilitation_log`, `versioned_test_bank`). Checked with read-only
+queries on 2026-09-25. **It had never been applied to either project, under
+any name**:
+
+- `public.rpc_course_progress_reset(uuid, uuid)`, the migration's only object
+  (plus its `grant execute … to authenticated`; no tables, columns or
+  policies), was absent from `pg_proc` on both.
+- No `supabase_migrations.schema_migrations.statements` entry mentioned
+  `course_progress_reset`, and no function body emitted the
+  `course_progress.reset` audit event. So it was not folded into another
+  migration.
+- Its dependencies were all present on both (`current_app_user()`,
+  `current_org_path()`, the `courses`/`assessments`/`course_test_attempts`/
+  `audit_events` columns it reads or writes, and the `ON DELETE CASCADE` from
+  `course_module_progress` to `course_progress`). `/admin/course-progress`
+  had therefore been calling a missing RPC on both projects.
+
+Applying it as-is added one new security-advisor WARN
+(`anon_security_definer_function_executable`): the file grants to
+`authenticated` but never revokes the default PUBLIC execute. The function's
+admin check still refused anon calls. The corrective migration
+`20260929000000_inc29_revoke_anon_execute.sql` brings it in line with its
+sibling RPCs.
+
+| Project | `inc29_course_progress_reset` | `inc29_revoke_anon_execute` |
+|---|---|---|
+| `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925001959` | applied as `20260925002056` |
+| pilot (`ltzicxyefizxoqhfuuzc`) | **pending owner confirmation** | **pending owner confirmation** |
+
+Verification query (run on each project after applying):
+
+```sql
+select p.oid::regprocedure::text as sig, p.prosecdef as security_definer,
+  p.proconfig::text as config, md5(p.prosrc) as body_md5,
+  has_function_privilege('authenticated', p.oid, 'execute') as authenticated_exec,
+  has_function_privilege('anon', p.oid, 'execute') as anon_exec,
+  (select string_agg(version||':'||name, ', ' order by version)
+     from supabase_migrations.schema_migrations where name like 'inc29%') as migration_rows
+from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+where n.nspname = 'public' and p.proname = 'rpc_course_progress_reset';
+```
+
+Expected: `body_md5 = 07fc882bbce0b6499d5f18cd2fe182b8` (the md5 of the text
+between the file's `$$` delimiters), `security_definer = true`,
+`config = {search_path=public}`, `authenticated_exec = true`,
+`anon_exec = false`.
+
+Result on `bhw-connect-e2e`: all expected values matched, and
+`migration_rows = 20260925001959:inc29_course_progress_reset,
+20260925002056:inc29_revoke_anon_execute`. Security advisor before, then
+after both migrations: `anon_security_definer_function_executable` 26 → 26,
+`authenticated_security_definer_function_executable` 91 → 92 (the new admin
+RPC, intended; its own role check gates it like the other 91). All other
+lints unchanged.
+
+Separately, `20260811000000_inc27_training_audio.sql` is also absent by name
+from both histories. It was not investigated here and needs the same check.
+
 ## Rolling out a risky feature
 
 Prefer a feature flag (`/admin/flags`, `rpc_flag_toggle`) over a
