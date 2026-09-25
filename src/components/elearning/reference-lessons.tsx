@@ -34,6 +34,7 @@ type Props = ReferenceData & {
   readOnly?: boolean;
   lessonNumber?: number;
   lessonCount?: number;
+  nextLessonHref?: string;
   // Lesson ID -> Read-mode narration in the current language (optional).
   narration?: Record<string, LessonNarration>;
   locale: string;
@@ -43,8 +44,7 @@ type Props = ReferenceData & {
   onComplete: (lesson: PublishedLesson) => Promise<void>;
 };
 
-function Practice({ check, en }: { check: LessonCheck; en: boolean }) {
-  const [answer, setAnswer] = useState<number | null>(null);
+function Practice({ check, en, answer, onAnswer }: { check: LessonCheck; en: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {
   return (
     <fieldset className="mt-5 rounded-lg border border-ink/20 p-4">
       <legend className="font-semibold">
@@ -57,13 +57,13 @@ function Practice({ check, en }: { check: LessonCheck; en: boolean }) {
             className="rounded border border-ink/20 p-3 text-left"
             aria-pressed={answer === i}
             key={i}
-            onClick={() => setAnswer(i)}
+            onClick={() => onAnswer(i)}
           >
             {en ? o.en : o.fil}
           </button>
         ))}
       </div>
-      {answer !== null && (
+      {answer !== undefined && (
         <p role="status" className="mt-3">
           {answer === check.correct_option_index
             ? en
@@ -93,6 +93,9 @@ export function ReferenceLessons(props: Props) {
   const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,initialResume?.modality??"read",initialResume).id:null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
+  // Practice is formative, not a scored assessment. Keep attempts across
+  // section/mode changes, but never carry them into a different revision.
+  const [answers, setAnswers] = useState<Record<string, number>>({});
   const heading = useRef<HTMLHeadingElement>(null);
   const writes = useRef(Promise.resolve());
   const lesson = lessons.find((l) => l.id === selected);
@@ -107,6 +110,13 @@ export function ReferenceLessons(props: Props) {
   const required = lessons.filter((l) => l.required);
   const nextLesson = continueLesson(lessons, completed, resumes);
   const siblings = lessons.filter((l) => l.module_id === lesson?.module_id);
+  const answerKey = (id: string) => `${lesson?.id}:${lesson?.revision.id}:${mode}:${id}`;
+  const answer = item ? answers[answerKey(item.id)] : undefined;
+  const checksAnswered = items.every(p => !p.check || answers[answerKey(p.id)] !== undefined);
+  const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
+  const revealSummary = !item?.check || answer !== undefined;
+  const practice = item?.check ? <Practice check={item.check} en={en} answer={answer}
+    onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/> : null;
   const figures =
     lesson && item
       ? item.asset_ids.map((id) => {
@@ -191,7 +201,7 @@ export function ReferenceLessons(props: Props) {
     requestAnimationFrame(() => heading.current?.focus());
   }
   async function complete() {
-    if (!lesson || props.readOnly) return;
+    if (!lesson || props.readOnly || pending || done.has(lesson.id) || !canComplete) return;
     setPending(true);
     setError(null);
     try {
@@ -359,7 +369,8 @@ export function ReferenceLessons(props: Props) {
                   <h2 tabIndex={-1} ref={heading} className="text-xl font-semibold">
                     {en ? item.heading_en : item.heading_fil}
                   </h2>
-                  <div
+                  {practice}
+                  {revealSummary && <div
                     className={
                       ["comparison", "relationship-map", "scene"].includes(
                         item.layout,
@@ -379,28 +390,25 @@ export function ReferenceLessons(props: Props) {
                           {line}
                         </p>
                       ))}
-                  </div>
-                  {figures}
+                  </div>}
+                  {revealSummary && figures}
                 </>
               ) : (
                 <ReferenceReadSection
                   key={lesson.id + item.id + props.locale}
                   heading={en ? item.heading_en : item.heading_fil}
                   body={en ? item.body_en : item.body_fil}
-                  takeaway={(en ? item.takeaway_en : item.takeaway_fil) ?? ""}
-                  narration={props.narration?.[lesson.id]?.[item.id]}
+                  takeaway={revealSummary ? ((en ? item.takeaway_en : item.takeaway_fil) ?? "") : ""}
+                  narration={revealSummary ? props.narration?.[lesson.id]?.[item.id] : undefined}
                   en={en}
                   headingRef={heading}
                 >
                   {figures}
+                  {practice}
+                  {!revealSummary && props.narration?.[lesson.id]?.[item.id] && <p className="mt-3 text-sm">
+                    {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}
+                  </p>}
                 </ReferenceReadSection>
-              )}
-              {item.check && (
-                <Practice
-                  key={lesson.id + mode + item.id + props.locale}
-                  check={item.check}
-                  en={en}
-                />
               )}
             </article>
             <nav
@@ -427,16 +435,34 @@ export function ReferenceLessons(props: Props) {
                 {ui("Susunod", "Next")}
               </button>
             </nav>
-            {!props.readOnly && <button
+            {!props.readOnly && <>
+            {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
+              {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
+                ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
+                  "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
+            </p>}
+            <button
               type="button"
               className="rounded bg-primary p-3 text-on-primary disabled:opacity-50"
-              disabled={pending || done.has(lesson.id)}
+              disabled={pending || done.has(lesson.id) || !canComplete}
+              aria-describedby={!done.has(lesson.id) ? "lesson-completion-help" : undefined}
               onClick={complete}
             >
               {done.has(lesson.id)
                 ? ui("Natapos", "Completed")
                 : ui("Markahang tapos ang aralin", "Mark lesson complete")}
-            </button>}
+            </button>
+            {done.has(lesson.id) && <div role="status" className="rounded-lg border border-ink/20 p-4">
+              <p>{ui("Natapos ang aralin. Naka-save ang iyong progreso.", "Lesson complete. Your progress is saved.")}</p>
+              {props.nextLessonHref ? <Link className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
+                {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
+              </Link> : props.lessonBaseHref ? <Link className="mt-3 inline-block underline" href={props.lessonBaseHref}>
+                {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
+              </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
+                {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
+              </button>}
+            </div>}
+            </>}
             <nav
               className="flex flex-wrap justify-between gap-2"
               aria-label={ui("Mga aralin sa subchapter", "Subchapter lessons")}

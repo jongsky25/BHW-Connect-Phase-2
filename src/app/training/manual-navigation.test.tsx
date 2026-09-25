@@ -8,7 +8,7 @@ vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIREC
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
 vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true})}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'})}));
-vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly}:{readOnly:boolean})=><div>{readOnly?'Admin preview':'Learner lesson'}</div>}));
+vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,nextLessonHref}:{readOnly:boolean;nextLessonHref?:string})=><div data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
 vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}})},from:(table:string)=>{
   const call={table,columns:'',filters:[] as Array<[string,unknown]>};state.calls.push(call);
@@ -61,6 +61,7 @@ describe('manual navigation',()=>{
   it('lesson has a stable URL, sibling link, and excludes other subchapter bodies',async()=>{
     render(await page(['chapter-1','m1','l1']));expect(screen.getByText('Learner lesson')).toBeInTheDocument();
     expect(screen.getByRole('link',{name:'Next lesson →'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l2');
+    expect(screen.getByText('Learner lesson')).toHaveAttribute('data-next-lesson','/training/manual/chapter-1/m1/l2');
     expect(state.calls.some(c=>c.table==='course_lesson_facilitator_notes')).toBe(false);
   });
   it('admin sees preview and never someone else’s certificate',async()=>{

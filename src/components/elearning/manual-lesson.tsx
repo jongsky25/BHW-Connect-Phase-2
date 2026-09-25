@@ -6,13 +6,14 @@ import type {CourseModule} from '@/lib/elearning/types';
 import type {LessonNarration} from '@/lib/elearning/reference-narration';
 import {createClient} from '@/lib/supabase/client';
 
-export function ManualLesson({data,modules,lessonId,baseHref,locale,readOnly,lessonNumber,lessonCount,narration}:{
+export function ManualLesson({data,modules,lessonId,baseHref,locale,readOnly,lessonNumber,lessonCount,narration,nextLessonHref}:{
   data:ReferenceData; modules:CourseModule[]; lessonId:string; baseHref:string; locale:string; readOnly:boolean;
-  lessonNumber:number; lessonCount:number; narration?:LessonNarration;
+  lessonNumber:number; lessonCount:number; narration?:LessonNarration; nextLessonHref?:string;
 }) {
   const router=useRouter();
   return <ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
     lessonBaseHref={baseHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount}
+    nextLessonHref={nextLessonHref}
     narration={narration?{[lessonId]:narration}:undefined}
     onResume={async value=>{
       if(readOnly)return;

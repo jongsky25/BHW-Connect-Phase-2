@@ -206,6 +206,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {showGuide ? <LessonFacilitatorGuide lang={loc} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
             indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
+          nextLessonHref={own[lessonIndex+1]?`${moduleHref}/${own[lessonIndex+1].id}`:undefined}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex-1].id}`}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
