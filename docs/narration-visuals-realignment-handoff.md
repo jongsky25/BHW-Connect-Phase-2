@@ -265,7 +265,18 @@ These are stale against the current state:
 
 ## 7. Decisions for the owner
 
-Ask these together, once:
+**Decided 25 September 2026: the owner accepted every recommendation
+below.** In short:
+
+1. Do Track A now.
+2. Re-voice Chapter I first. The owner listens before Chapter II is decided.
+3. The direct Gemini call is approved and recorded in
+   `free-ai-leverage-plan.md` §2.
+4. Leave the 24 legacy rows.
+5. Track B is deferred until after the owner has listened to the re-voiced
+   Chapter I. The rewrite of 1.1.1's `hepo` section is **not** approved yet.
+
+The original questions, for the record:
 
 1. **Priority.** Voice upgrade (Track A) now, or content-capacity Phase 1
    first (`content-assessment-2026-09.md:505-553`)? Recommendation: Track A

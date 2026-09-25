@@ -51,6 +51,15 @@ A small server-side module every external AI call must pass through. No direct p
 - **Privacy notice** (delivery plan §5.4) gains a clause stating plainly: personal information and BHW-typed text are never shared with external AI services; external AI processes only admin-authored or admin-reviewed content.
 - **Response cache**: keyed on normalized input per feature — repeated questions and re-translations cost zero quota. With a few dozen pilot BHWs asking overlapping questions, cache hit-rate compounds the free allowance substantially.
 
+**Owner-approved exception: offline narration rendering (25 September 2026).** The Gemini text-to-speech provider (`scripts/lib/tts-providers/gemini.mjs`) calls the Gemini API directly. It does not go through the adapter, writes no `ai.external_call` audit event, and does not count against `ai_usage`. The owner approved this on 25 Sep 2026, under these conditions:
+
+- It runs only from authoring scripts (`training:narrate`, and legacy `training:tts`) on a developer machine or session. It is never part of `src/` or any request path.
+- It sends only published, `admin_authored` lesson text. That means no learner data, no names beyond the fictional characters in the lessons, and nothing `user_generated` or `personal`.
+- The lint exception stays scoped to that one provider file.
+- Bulk runs stay under the 1,200/day Gemini ceiling above. Re-runs resume, so a render may take several days.
+
+Anything else that wants to call Gemini still goes through the adapter.
+
 ## 3. Phase-by-Phase AI Leverage
 
 **Phase 1 at a glance — yes, AI ships in the initial phase.** Five integrations, none of which ever sees personal or unreviewed user data:
