@@ -2,7 +2,14 @@
   "common": {
     "appName": "BHW Connect",
     "tagline": "Your companion for barangay health work.",
-    "languageToggleLabel": "Language"
+    "languageToggleLabel": "Language",
+    "signedInAs": "Signed in as {username}, role: {role}",
+    "role": {
+      "bhw": "BHW",
+      "assessor": "Facilitator / Assessor",
+      "designer": "Designer",
+      "admin": "Admin"
+    }
   },
   "errorBoundary": {
     "heading": "Something went wrong",

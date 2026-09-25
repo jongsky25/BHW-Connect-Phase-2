@@ -2,7 +2,14 @@
   "common": {
     "appName": "BHW Connect",
     "tagline": "Kasama mo sa gawaing pangkalusugan ng barangay.",
-    "languageToggleLabel": "Wika"
+    "languageToggleLabel": "Wika",
+    "signedInAs": "Naka-login bilang {username}, tungkulin: {role}",
+    "role": {
+      "bhw": "BHW",
+      "assessor": "Facilitator / Assessor",
+      "designer": "Designer",
+      "admin": "Admin"
+    }
   },
   "errorBoundary": {
     "heading": "May naganap na problema",

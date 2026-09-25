@@ -10,6 +10,7 @@ import { PersonaBar } from "@/components/super-admin/persona-bar";
 import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
 import { parsePersonaSnapshot } from "@/lib/super-admin/types";
 import { parseA11ySettings } from "@/lib/settings/types";
+import type { AppUser } from "@/lib/supabase/app-user";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -52,6 +53,7 @@ export default async function RootLayout({
   const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
   const notifications = await getRequestNotifications();
   const signedIn = await getRequestSignedIn();
+  const account = signedIn ? await getRequestAccount() : null;
   const persona = signedIn ? await getRequestPersona() : null;
 
   return (
@@ -66,6 +68,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SiteHeader
             signedIn={signedIn}
+            account={account}
             notificationsEnabled={notifications.enabled}
             notifUnreadCount={notifications.unreadCount}
           />
@@ -113,6 +116,16 @@ async function getRequestNotifications() {
 async function getRequestSignedIn() {
   const h = await headers();
   return h.get("x-app-signed-in") === "1";
+}
+
+async function getRequestAccount(): Promise<{ username: string; role: AppUser["role"] } | null> {
+  const h = await headers();
+  const username = h.get("x-app-username");
+  const role = h.get("x-app-role");
+  if (!username || (role !== "bhw" && role !== "assessor" && role !== "designer" && role !== "admin")) {
+    return null;
+  }
+  return { username, role };
 }
 
 // The super admin's persona bar: only while the signed-in user is one of the
