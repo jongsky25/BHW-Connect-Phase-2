@@ -1,0 +1,276 @@
+{
+  "competency_statement_fil": "TESDA BHS NC II common competency — Apply basic first aid (Paunang-lunas o First Aid, F38: assess the situation, apply first aid techniques, communicate details of the incident): sinusuri ng BHW ang panganib at humihingi agad ng tulong sa kumpirmadong lokal na contact, tumutugon sa 18 emergency case sa simulation, manikin o props ayon lamang sa kanyang training at lokal na protocol, sinusuri ang first-aid kit ayon sa lokal na listahan, at nagbibigay ng maikli at factual na handover.",
+  "competency_statement_en": "TESDA BHS NC II common competency — Apply basic first aid (Paunang-lunas o First Aid, F38: assess the situation, apply first aid techniques, communicate details of the incident): the BHW checks for hazards and activates help through the locally confirmed contact, responds to 18 emergency cases in simulation, on manikins or with props strictly within their training and local protocol, checks the first-aid kit against the local list, and gives a brief, factual handover.",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
+      "observable_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact.",
+      "levels": {
+        "kaya_na_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
+      "observable_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow.",
+      "levels": {
+        "kaya_na_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.",
+      "observable_en": "Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait.",
+      "levels": {
+        "kaya_na_fil": "Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait."
+      }
+    },
+    {
+      "objective_index": 3,
+      "observable_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+      "observable_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe.",
+      "levels": {
+        "kaya_na_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe."
+      }
+    },
+    {
+      "objective_index": 4,
+      "observable_fil": "Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.",
+      "observable_en": "Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure.",
+      "levels": {
+        "kaya_na_fil": "Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure."
+      }
+    },
+    {
+      "objective_index": 5,
+      "observable_fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.",
+      "observable_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation.",
+      "levels": {
+        "kaya_na_fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation."
+      }
+    },
+    {
+      "objective_index": 6,
+      "observable_fil": "Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.",
+      "observable_en": "At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification.",
+      "levels": {
+        "kaya_na_fil": "Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification."
+      }
+    },
+    {
+      "objective_index": 7,
+      "observable_fil": "Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.",
+      "observable_en": "Choose a safe shore response, activate trained rescue and state the need for medical assessment.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs.",
+      "levels": {
+        "kaya_na_fil": "Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Choose a safe shore response, activate trained rescue and state the need for medical assessment.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs."
+      }
+    },
+    {
+      "objective_index": 8,
+      "observable_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
+      "observable_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe.",
+      "levels": {
+        "kaya_na_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+      }
+    },
+    {
+      "objective_index": 9,
+      "observable_fil": "Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat.",
+      "observable_en": "On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice.",
+      "levels": {
+        "kaya_na_fil": "Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice."
+      }
+    },
+    {
+      "objective_index": 10,
+      "observable_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
+      "observable_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it.",
+      "levels": {
+        "kaya_na_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+      }
+    },
+    {
+      "objective_index": 11,
+      "observable_fil": "Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.",
+      "observable_en": "Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization.",
+      "levels": {
+        "kaya_na_fil": "Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituring na karaniwang tusok ang hirap sa paghinga, maantala sa home remedy, o magbigay ng gamot nang walang pahintulot at training.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not treat breathing difficulty as a routine local sting, delay referral for home remedies, or administer a drug outside training and authorization."
+      }
+    },
+    {
+      "objective_index": 12,
+      "observable_fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.",
+      "observable_en": "Reject the cord and walking plan, keep the person still and call for transport.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily.",
+      "levels": {
+        "kaya_na_fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Reject the cord and walking plan, keep the person still and call for transport.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily."
+      }
+    },
+    {
+      "objective_index": 13,
+      "observable_fil": "Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral.",
+      "observable_en": "In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment.",
+      "levels": {
+        "kaya_na_fil": "Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag lagyan ng yelo, putukin ang paltos, hilahin ang dumikit na damit, o sabihing ligtas sa bahay ang lahat ng mapulang paso.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not apply ice, burst blisters, pull off stuck fabric, or classify every red burn as safe for home treatment."
+      }
+    },
+    {
+      "objective_index": 14,
+      "observable_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
+      "observable_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner.",
+      "levels": {
+        "kaya_na_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+      }
+    },
+    {
+      "objective_index": 15,
+      "observable_fil": "Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.",
+      "observable_en": "Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication.",
+      "levels": {
+        "kaya_na_fil": "Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication."
+      }
+    },
+    {
+      "objective_index": 16,
+      "observable_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
+      "observable_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.",
+      "levels": {
+        "kaya_na_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Complete every row of a simulated local kit inventory and name a replenishment owner.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it."
+      }
+    },
+    {
+      "objective_index": 17,
+      "observable_fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.",
+      "observable_en": "Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.",
+      "levels": {
+        "kaya_na_fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover."
+      }
+    }
+  ]
+}

@@ -1,4 +1,66 @@
 {
   "competency_statement_fil": "TESDA BHS NC II common competency — Maintain high standard of patient/client services: sinusuri ng BHW ang serbisyo ayon sa pagiging epektibo, ligtas at nakatuon sa tao, pinapanatili ang pribadong usapan at tumutulong nang walang panghuhusga, at nagmumungkahi ng awtorisadong pagpapabuti sa daloy ng serbisyo at sa lugar ng trabaho (7S) na may responsable, kumpirmasyon at petsa ng pagsusuri.",
-  "competency_statement_en": "TESDA BHS NC II common competency — Maintain high standard of patient/client services: the BHW checks service for effectiveness, safety and people-centeredness, protects private conversations and offers help without judgment, and proposes authorized improvements to the service pathway and the work area (7S) with an owner, confirmation and review date."
+  "competency_statement_en": "TESDA BHS NC II common competency — Maintain high standard of patient/client services: the BHW checks service for effectiveness, safety and people-centeredness, protects private conversations and offers help without judgment, and proposes authorized improvements to the service pathway and the work area (7S) with an owner, confirmation and review date.",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Tinutukoy ang ebidensiya para sa tatlong katangian at nagmumungkahi ng isang angkop na pagbabago sa bawat isa.",
+      "observable_en": "Identifies evidence for all three dimensions and proposes an appropriate improvement for each.",
+      "not_yet_fil": "Bilis lamang ang batayan o ginagamit ang lumang mensahe kahit hindi pa kumpirmado.",
+      "not_yet_en": "Judges only speed or uses the old message without confirmation.",
+      "levels": {
+        "kaya_na_fil": "Naikakabit ang kumpirmadong gabay, ligtas na daan at piniling oras sa tamang katangian nang walang paalala.",
+        "kaya_na_en": "Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions without prompting.",
+        "kailangan_practice_fil": "Natukoy ang dalawang katangian; naidagdag ang pakikinig sa residente matapos ang paalala.",
+        "kailangan_practice_en": "Identifies two dimensions and adds listening to the resident after a prompt.",
+        "hindi_pa_fil": "Bilis lamang ang batayan o ginagamit ang lumang mensahe kahit hindi pa kumpirmado.",
+        "hindi_pa_en": "Judges only speed or uses the old message without confirmation."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "Hindi inilalantad ang kondisyon; humihingi ng pahintulot sa lugar at tulong; nagbibigay ng paliwanag nang walang panghuhusga.",
+      "observable_en": "Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.",
+      "not_yet_fil": "Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.",
+      "not_yet_en": "Discloses the condition to the queue or refuses support because Alex finds reading difficult.",
+      "levels": {
+        "kaya_na_fil": "Nakapag-alok ng pribadong tulong ayon sa hiling ni Alex nang walang bansag o sapilitang pagsama ng ibang tao.",
+        "kaya_na_en": "Offers private support matched to Alex’s request without labels or imposing another person’s involvement.",
+        "kailangan_practice_fil": "Nag-alok ng pribadong lugar pero kailangang paalalahanang itanong ang gustong tulong.",
+        "kailangan_practice_en": "Offers privacy but needs a prompt to ask what support is preferred.",
+        "hindi_pa_fil": "Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.",
+        "hindi_pa_en": "Discloses the condition to the queue or refuses support because Alex finds reading difficult."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Naiguguhit ang daloy, natutukoy ang hadlang at naitatala ang pagbabago, responsable, kumpirmasyon at panukat nang hindi lumalampas sa tungkulin.",
+      "observable_en": "Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.",
+      "not_yet_fil": "Nangangako ng lahat ng serbisyo o basta nag-aalis ng kailangang pagsusuri upang bumilis.",
+      "not_yet_en": "Promises all services or removes necessary checks merely to increase speed.",
+      "levels": {
+        "kaya_na_fil": "May tiyak na hadlang at magagamit na panukat; ipinapasuri ang pagbabago at pinananatili ang kailangang proseso nang walang paalala.",
+        "kaya_na_en": "Names a specific barrier and usable measure, seeks review and preserves required processes without prompting.",
+        "kailangan_practice_fil": "Malinaw ang hadlang at mungkahi pero kailangang paalalahanang tukuyin ang responsable o panukat.",
+        "kailangan_practice_en": "Identifies the barrier and proposal but needs a prompt to name an owner or measure.",
+        "hindi_pa_fil": "Nangangako ng lahat ng serbisyo o basta nag-aalis ng kailangang pagsusuri upang bumilis.",
+        "hindi_pa_en": "Promises all services or removes necessary checks merely to increase speed."
+      }
+    },
+    {
+      "objective_index": 3,
+      "observable_fil": "Nasusuri ang lahat ng pitong kategorya at may ligtas, awtorisadong pagbabago na may responsable at petsa ng pagbalik.",
+      "observable_en": "Checks all seven categories and proposes a safe, authorized improvement with an owner and review date.",
+      "not_yet_fil": "Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.",
+      "not_yet_en": "Checks only sweeping or discards records and medicines without authorization.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang pitong hanay; naihihiwalay ang standardize, self-discipline at sustain; may malinaw na follow-up nang walang paalala.",
+        "kaya_na_en": "Completes all seven rows, distinguishes standardize, self-discipline and sustain, and specifies follow-up without prompting.",
+        "kailangan_practice_fil": "May ligtas na pagbabago pero kailangang paalalahanang idagdag ang isang kategorya o petsa ng pagsusuri.",
+        "kailangan_practice_en": "Proposes a safe change but needs a prompt to add a category or review date.",
+        "hindi_pa_fil": "Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.",
+        "hindi_pa_en": "Checks only sweeping or discards records and medicines without authorization."
+      }
+    }
+  ]
 }

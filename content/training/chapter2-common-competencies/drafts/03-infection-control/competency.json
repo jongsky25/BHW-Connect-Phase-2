@@ -1,4 +1,111 @@
 {
   "competency_statement_fil": "TESDA BHS NC II common competency — Implement and monitor infection control policies and procedures: natutukoy ng BHW ang posibleng daan ng pagkalat nang walang diagnosis, nakapagmumungkahi ng magkakaugnay na kontrol na may tamang responsable, naipapakita ang wastong paglilinis ng kamay at pag-ubo, natutulungan ang pamilya sa mas ligtas na pagkain, tubig at sanitasyon, at naitatala ang patakaran, training gap at IPC gap ng BHS hanggang sa may ebidensiya ng follow-up.",
-  "competency_statement_en": "TESDA BHS NC II common competency — Implement and monitor infection control policies and procedures: the BHW identifies possible transmission routes without diagnosing anyone, proposes layered controls with appropriate owners, demonstrates correct hand hygiene and cough etiquette, helps a household toward safer food, water and sanitation, and records BHS policies, training gaps and IPC gaps through to follow-up evidence."
+  "competency_statement_en": "TESDA BHS NC II common competency — Implement and monitor infection control policies and procedures: the BHW identifies possible transmission routes without diagnosing anyone, proposes layered controls with appropriate owners, demonstrates correct hand hygiene and cough etiquette, helps a household toward safer food, water and sanitation, and records BHS policies, training gaps and IPC gaps through to follow-up evidence.",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Naipapaliwanag ang walong card, naihihiwalay ang exposure sa diagnosis at naiuugnay ang pag-iwas sa tamang daan.",
+      "observable_en": "Explains all eight cards, distinguishes exposure from diagnosis and links prevention to the route.",
+      "not_yet_fil": "Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.",
+      "not_yet_en": "Diagnoses from appearance or assumes every germ spreads in the same way.",
+      "levels": {
+        "kaya_na_fil": "Tama ang walong pag-uugnay; walang bansag o diagnosis at may angkop na kontrol nang walang paalala.",
+        "kaya_na_en": "Matches all eight cards appropriately, without labels or diagnosis, and suggests suitable controls without prompting.",
+        "kailangan_practice_fil": "Karamihan ay tama pero kailangang linawin ang contact at paglanghap; naitatama matapos ang feedback.",
+        "kailangan_practice_en": "Most matches are appropriate, but contact and inhalation need clarification; corrects them after feedback.",
+        "hindi_pa_fil": "Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.",
+        "hindi_pa_en": "Diagnoses from appearance or assumes every germ spreads in the same way."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.",
+      "observable_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
+      "not_yet_fil": "Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.",
+      "not_yet_en": "Relies only on a mask or changes isolation arrangements without guidance.",
+      "levels": {
+        "kaya_na_fil": "Magkakaugnay ang apat na kontrol at malinaw ang dapat ipasuri nang walang paalala.",
+        "kaya_na_en": "Links all four controls and identifies what needs review without prompting.",
+        "kailangan_practice_fil": "May maraming kontrol pero kailangang paalalahanang magtalaga ng responsable.",
+        "kailangan_practice_en": "Suggests several controls but needs a prompt to assign owners.",
+        "hindi_pa_fil": "Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.",
+        "hindi_pa_en": "Relies only on a mask or changes isolation arrangements without guidance."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Tamang paraan; lahat ng bahagi ng magkabilang kamay; kumpletong oras at pagpapatuyo; walang muling kontaminasyon.",
+      "observable_en": "Appropriate method; all surfaces of both hands; complete timing and drying; no recontamination.",
+      "not_yet_fil": "Handrub ang ginagamit sa may dumi, iniiwan ang mahahalagang bahagi o pinupunasan ang basang handrub.",
+      "not_yet_en": "Uses handrub on visibly dirty hands, misses essential surfaces or wipes off wet handrub.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang dalawang demonstration at lahat ng hakbang sa checklist nang walang paalala.",
+        "kaya_na_en": "Completes both demonstrations and every checklist step without prompting.",
+        "kailangan_practice_fil": "Tama ang paraan pero may nakaligtaang bahagi o hakbang; naitatama sa muling demonstration.",
+        "kailangan_practice_en": "Chooses the correct method but misses a surface or step; corrects it in a repeat demonstration.",
+        "hindi_pa_fil": "Handrub ang ginagamit sa may dumi, iniiwan ang mahahalagang bahagi o pinupunasan ang basang handrub.",
+        "hindi_pa_en": "Uses handrub on visibly dirty hands, misses essential surfaces or wipes off wet handrub."
+      }
+    },
+    {
+      "objective_index": 3,
+      "observable_fil": "Natatakpan ang ilong at bibig, naitatapon ang tissue, nalilinis ang kamay at naipapaliwanag ang magalang na pag-uulat.",
+      "observable_en": "Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.",
+      "not_yet_fil": "Sa palad o kapareha umuubo, ginagamit muli ang tissue o nilalaktawan ang hand hygiene.",
+      "not_yet_en": "Coughs into hands or toward a partner, reuses tissue or omits hand hygiene.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang dalawang paraan at follow-through nang walang palad, exposure sa kapareha o paalala.",
+        "kaya_na_en": "Completes both methods and follow-through without using hands to cover, exposing a partner or needing prompts.",
+        "kailangan_practice_fil": "Tama ang pagtakip pero kailangan ng paalala sa hand hygiene o pag-uulat.",
+        "kailangan_practice_en": "Covers correctly but needs a prompt for hand hygiene or reporting.",
+        "hindi_pa_fil": "Sa palad o kapareha umuubo, ginagamit muli ang tissue o nilalaktawan ang hand hygiene.",
+        "hindi_pa_en": "Coughs into hands or toward a partner, reuses tissue or omits hand hygiene."
+      }
+    },
+    {
+      "objective_index": 4,
+      "observable_fil": "May angkop na pagbabago sa pagkain, tubig at sanitasyon; walang hinulaang treatment o garantiya mula sa hitsura.",
+      "observable_en": "Proposes appropriate food, water and sanitation changes without guessed treatment or appearance-based guarantees.",
+      "not_yet_fil": "Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.",
+      "not_yet_en": "Guarantees that clear water is safe or guesses chemical amounts.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang tatlong hanay at malinaw ang ipapakumpirma sa health o water staff nang walang paalala.",
+        "kaya_na_en": "Completes all three rows and identifies what health or water staff must confirm without prompting.",
+        "kailangan_practice_fil": "May angkop na pagbabago pero kailangan ng paalala sa pagprotekta ng tubig o contact para sa treatment.",
+        "kailangan_practice_en": "Suggests appropriate changes but needs a prompt on water protection or the treatment contact.",
+        "hindi_pa_fil": "Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.",
+        "hindi_pa_en": "Guarantees that clear water is safe or guesses chemical amounts."
+      }
+    },
+    {
+      "objective_index": 5,
+      "observable_fil": "Naipapakita ang lokasyon, bersiyon, contact at training gaps nang walang imbentong training o awtorisasyon.",
+      "observable_en": "Records location, version, contact and training gaps without inventing training or authorization.",
+      "not_yet_fil": "Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.",
+      "not_yet_en": "Treats reading a policy as authorization or marks unobserved training as completed.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang mga hanay, malinaw ang kukumpirma at naihihiwalay ang specialist na gawain nang walang paalala.",
+        "kaya_na_en": "Completes the rows, names who confirms them and distinguishes specialist tasks without prompting.",
+        "kailangan_practice_fil": "May lokasyon at contact pero kailangang idagdag ang bersiyon o training gap matapos ang paalala.",
+        "kailangan_practice_en": "Records location and contact but adds version or training gaps only after prompting.",
+        "hindi_pa_fil": "Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.",
+        "hindi_pa_en": "Treats reading a policy as authorization or marks unobserved training as completed."
+      }
+    },
+    {
+      "objective_index": 6,
+      "observable_fil": "May tiyak na gap, pag-uulat, responsable, petsa at ebidensiya; naihihiwalay ang pangako sa naobserbahang resulta.",
+      "observable_en": "Records a specific gap, report, owner, date and evidence; distinguishes promises from observed results.",
+      "not_yet_fil": "Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.",
+      "not_yet_en": "Marks unresolved work complete or assumes everyone is competent from attendance.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang card, tapat ang resolved at unresolved na resulta, at may susunod na aksyon nang walang paalala.",
+        "kaya_na_en": "Completes the card with accurate resolved and unresolved outcomes and next actions without prompting.",
+        "kailangan_practice_fil": "Malinaw ang gap pero kailangang paalalahanang magtakda ng follow-up o ebidensiya.",
+        "kailangan_practice_en": "States the gap clearly but needs a prompt to set follow-up or evidence.",
+        "hindi_pa_fil": "Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.",
+        "hindi_pa_en": "Marks unresolved work complete or assumes everyone is competent from attendance."
+      }
+    }
+  ]
 }
