@@ -231,8 +231,32 @@ inc17b (`kb_entries.content_id`) and inc18a (`rpc_ai_check_budget`,
 `rpc_ai_record_call`, `rpc_ai_usage_summary`, all bodies matching). So they
 were applied without a history row. They cause no drift.
 
-Not fixed here (follow-ups): apply inc18b to CI. Commit the pilot's
-survey-helper version of `fix_surveys_org_unit_rls_composability` as a
+**Update: inc18b applied to CI on 2026-09-25**, as `20260925012108:inc18b_ai_gap_draft`,
+verbatim from the file. Beforehand, CI had every dependency (`kb_entries`
+columns, `unmatched_questions.resolved_entry_id/text`, the `ai_usage` and
+`analytics_events` columns, `feature_flags`) and none of the file's objects.
+No migration after inc18b redefines `rpc_kb_entry_update`, so replacing the
+inc8 body loses nothing. Verification (same shape as the INC-29 query above,
+over the four functions):
+
+| Function | `body_md5` | security definer | `search_path=public` | anon exec | authenticated exec |
+|---|---|---|---|---|---|
+| `rpc_kb_entry_update(…11 args)` | `ee621499e697a5f00efc52a16e899a28` | yes | yes | true (unchanged; same on the pilot, not revoked by the file) | true |
+| `rpc_kb_entry_mark_ai_drafted(uuid)` | `feda1ce03a44bb704d7ac0ffa9479482` | yes | yes | false | true |
+| `rpc_kb_entry_confirm_ai_draft(uuid)` | `cf322a16b6fdf7db97f8f7134a3d6c69` | yes | yes | false | true |
+| `rpc_dashboard_ai_flywheel(timestamptz, timestamptz)` | `1b3ee38aecc7038143dab52219c71d4c` | yes | yes | false | true |
+
+All four match the md5 of the file's `$$` bodies and the pilot. Also present:
+`kb_entries.ai_drafted_at` and `ai_draft_confirmed_at` (timestamptz), the partial
+index `kb_entries_ai_drafted_at_idx … WHERE (ai_drafted_at IS NOT NULL)`, and
+`ai_gap_draft=false`. Security advisor, before → after: anon 26 → 26,
+authenticated 92 → 95. The three added findings are exactly the three new RPCs.
+They are intended and are the same findings the pilot has. Nothing else
+changed. The two projects now differ only by the survey helpers
+(pilot-only, 3 anon + 3 authenticated) and the consent/password grants
+(CI-only, 2 anon): pilot 27/98, CI 26/95.
+
+Not fixed here (follow-ups): commit the pilot's survey-helper version of `fix_surveys_org_unit_rls_composability` as a
 migration, or bring the pilot's survey policies back to the repo's shape. Add
 a corrective migration revoking `public, anon` execute on `rpc_give_consent()`
 and `rpc_complete_password_change()` so the repo, and therefore CI, matches
