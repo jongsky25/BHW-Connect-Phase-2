@@ -40,6 +40,18 @@ The review candidate adds formative checks at inventory, utility safety, normali
 
 The three proposed card durations (25, 25, 30 minutes) sit inside these lesson budgets. A card is optional practice. Attendance or participation never creates a competency rating. A facilitator records each learner's observed action, feedback and retry separately using the approved indicator and local procedure.
 
+### Learner timing log to complete at the pilot
+
+Record the date, location, facilitator, language used, number of learners, prior experience, and any accessibility adaptations. For each lesson, write actual start/end times for the explanation, individual card, discussion, feedback and retry; note interruptions separately rather than hiding them in the lesson duration. Count how many learners completed an individual attempt and how many needed a retry. Record any skipped safeguard or rushed observation as a quality failure, even if the clock target was met.
+
+| Lesson | Planned | Actual active minutes | Individual attempts / learners | Retries | Safety or service concern | Revision decision |
+|---|---:|---:|---|---|---|---|
+| resources-audit | 60 | Pending | Pending | Pending | Pending | Pending |
+| resources-safe-change | 60 | Pending | Pending | Pending | Pending | Pending |
+| resources-monitor | 60 | Pending | Pending | Pending | Pending | Pending |
+
+The facilitator and Filipino-language reviewer should discuss where instructions or terms caused delay. Keep the 180-minute plan only if a real group can complete the tasks, feedback and individual observations without omitting safety or service-quality checks. Otherwise revise the sequence or propose a documented time change before release.
+
 ## Human review fields
 
 | Gate | Reviewer, role and date | Evidence and required decision |
