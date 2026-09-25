@@ -1,57 +1,69 @@
 ## [purpose] Purpose
 
-15 minutes: opening 1; model 2; triad practice 6; feedback/retry 3; debrief 2; next step 1. Rotate roles in three short rounds. This is an introduction; arrange extra observed practice when needed.
-
-Write an issue statement with reported evidence, affected residents’ perspectives and a question still to clarify.
+The BHW writes an issue statement for the fictional Purok Maligaya case: specific report, who is affected, whose voice is missing and a question to clarify, without labels.
 
 ## [time-materials] Time and materials
 
-These four introductory activities total 60 minutes of the shared 120-minute mobilization/DRRM allocation. The other 60 minutes remain reserved for DRRM. This is a proposed split, not a separate source requirement or proof of competence. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 15 minutes face-to-face (this lesson's share of the 60-minute subchapter plan): opening 1, model 2, practice 6, feedback and retry 3, debrief 2, next step 1. App Read: about 5 minutes, separate.
+- **Materials:** *Participant cards* and *Worksheet 2.6.1 Community issue card* per triad; *Observation sheet 2.6.1* (staff only); job aid; manila paper, markers.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm locally who reviews community plans and the reporting channel.
+- Scope: frame the issue only; do not choose an update channel yet. No real residents, no health advice. The issue card is a training tool, not an official form.
 
 ## [opening] Opening
 
-In fictional Purok Maligaya, three residents say they learned about a BHS schedule change too late. A leader says, “They just refuse to follow.” BHW Ina has not heard from people without phones or those working during the day. What is the actual issue?
+Read the scene aloud. Ask: *"What do we actually know, and whose voice is missing?"* Draw two columns on manila paper: *Reported* and *Assumed*.
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **"The situation"** (Read and slide). Ask: *"Is 'they refuse to follow' a report or a guess?"*
+2. **"What to do and say."** Ask: *"Who has Ina not heard from yet?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer before revealing.
+4. **"Worked example."** Model the statement. Ask: *"Which part is evidence, and which is unknown?"*
+5. **"Scope and support."** Ask: *"If a concern is sensitive, what can Ina offer?"* Then run the practice.
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer before revealing.
+7. **"On Monday, try this."** Ask: *"Now we know who is missing. How do we reach them?"*
 
-## [expected-answers] Expected response
+## [expected-answers] Expected answers and how to respond
 
-The group writes: “Three residents report learning the new time late. We do not yet know how people without phones receive updates.” They will ask affected residents which channels they can use. They do not label people who missed the visit as lazy.
+- **"They are just lazy."** Do not argue. Ask: *"Did any resident say that?"* Move it to *Assumed*.
+- **"Post it in the group chat."** Thank them. Ask: *"How would people without phones see it?"*
+- **"Three learned late."** That is the evidence. Ask: *"What do we still not know?"*
+- **A real neighbour is named.** Thank them; return to the fictional case.
 
-## [misconception] Common error
+## [misconception] Common misconception
 
-Treats the label lazy as fact or imposes a solution without listening.
+**"If the leader says people refuse, that is the issue."** Leaders know the purok, and questioning them feels disrespectful. But the reports say the update came late, not that anyone refused. Let the group sort the leader's words into the columns themselves.
 
-## [practice] Activity you can run
+## [practice] Practice activity
 
-Make an issue card: reported concern, affected people, missing voices and the next question. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+**Community issue card.** Triads: learner, partner (the leader or an affected resident), observer. Three rounds, about 2 minutes; everyone is learner once. The learner fills the five boxes aloud. The observer notes exact words, then one strength and one next action; the learner retries. Staff rate. Fictional only. Low resource: worksheet on manila paper. Solo: complete it; arrange observation later.
 
-## [answer-key] Check explanations
+## [answer-key] Self-check answer key
 
-1: This is a label, not something established by the reports. / 2: Their perspectives have not yet been heard. / 3: This is the specific report; its extent and causes still need clarification.
+1. **"What evidence does the group currently have?"** Correct: **"Three reports of late updates"** — the specific report; extent and causes still need clarification. "Everyone… is lazy": a label, not established by the reports. "People without phones definitely refuse…": their perspectives have not yet been heard.
+2. **"What should happen before choosing an update channel?"** Correct: **"Ask people who miss updates"** — affected people help identify a workable solution. "Choose chat immediately…": people without phones may still be excluded. "List everyone's personal health conditions…": unnecessary for clarifying update channels.
 
-1: Affected people help identify a workable solution. / 2: People without phones may still be excluded. / 3: Personal conditions are unnecessary for clarifying update channels.
+## [observe] What to observe
 
-## [observe] Observe
+Indicator: Includes a specific report, affected group, missing perspective and question without labels or personal details.
 
-Includes a specific report, affected group, missing perspective and question without labels or personal details.
+- **Kaya na:** Separates the three reports from the leader’s assumption and asks about missing voices without prompting.
+- **Kailangan pa ng practice:** States the report clearly but needs a prompt to include missing voices.
+- **Hindi pa:** Treats the label lazy as fact or imposes a solution without listening.
 
-Ready: Separates the three reports from the leader’s assumption and asks about missing voices without prompting.
+Look for a question for residents, not a ready solution. A correct self-check is not evidence of the skill.
 
-Needs practice: States the report clearly but needs a prompt to include missing voices.
+## [support] If a BHW needs more support
 
-Not yet: Treats the label lazy as fact or imposes a solution without listening.
+- **Kailangan pa:** one next action, *"Add the missing voices,"* then retry now.
+- **Hindi pa:** name what you saw calmly, re-model step 4, retry with a Kaya na partner.
+- Re-observe at the 2–4-week follow-up with a changed fictional case. Triad feedback is practice, not a staff rating.
 
-## [support] Support and debrief
+## [sources-review] Sources and review notes
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
-
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF pp. 52–53; Facilitator Guide PDF p. 41; presentation PDF pp. 93–94.
+- Mobilization shares 2 hours with Subchapter 2.7 (F38); 15 minutes is an authoring distribution.
+- Program owner approved and requested publication, 25 Sep 2026; reviewer names not recorded. Local practice applies.
