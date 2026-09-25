@@ -4,10 +4,10 @@ import { validateActivities, syncActivities } from '../lib/training-activities.m
 
 describe('facilitator activity content', () => {
   const course = loadTrainingCourse('day1-basic-competencies');
-  it('validates all 24 bilingual cards and their lesson/indicator mappings', () => {
+  it('validates all 27 bilingual cards and their lesson/indicator mappings', () => {
     const cards=course.modules.flatMap(m=>m.facilitatorNotes.activities);
-    expect(cards).toHaveLength(24);
-    expect(new Set(cards.map(c=>c.id)).size).toBe(24);
+    expect(cards).toHaveLength(27);
+    expect(new Set(cards.map(c=>c.id)).size).toBe(27);
     expect(cards.filter(c=>c.kind==='game').every(c=>!c.objective_indices.length)).toBe(true);
   });
   it('rejects missing translations, unknown indicators and unknown lessons', () => {
