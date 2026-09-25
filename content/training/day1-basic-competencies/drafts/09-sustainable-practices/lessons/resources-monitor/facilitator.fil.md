@@ -4,7 +4,7 @@ Magmungkahi ng maliit na trial na may owner at review date, at ihambing ang reso
 
 ## [time-materials] Oras at kagamitan
 
-60 minuto para sa pinadali na pagsasanay. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.
+60 minuto para sa pagsasanay na pinamumunuan ng facilitator. Bahagi ito ng 3 oras ng subchapter; ang maikling Read ay hindi kapalit ng buong pagsasanay. Gamitin ang sitwasyon at checklist sa ibaba, papel at panulat. Walang tunay na personal na rekord sa pagsasanay.
 
 ## [prepare] Ihanda
 
@@ -20,6 +20,10 @@ Basahin ang sitwasyon. Ipakita ang isang halimbawa gamit ang checklist sa Obserb
 
 ## [expected-answers] Inaasahang sagot
 
+Sa comparison check, bumaba ang reprint ng 15 bawat 100 pahina; tiyaking maihahambing ang workload at tama pa rin ang materyal. Hindi patunay ang rate na ito na 75% ang nabawas sa gastos.
+
+Sa communication check, tugunan ang kawalan ng internet sa pamamagitan ng kontroladong papel na master, pagtitiyak sa bersyon at paghingi ng puna ng kasama. Huwag gumamit ng hindi aprubadong lumang kopya.
+
 Ang unang sagot ay isinasaalang-alang ang workload at kalidad. Ang kabuuang bill o papel lamang ay maaaring bumaba dahil nawala ang serbisyo, hindi dahil bumuti ang proseso.
 
 ## [misconception] Karaniwang pagkakamali
@@ -31,6 +35,10 @@ Ipinapahayag na tagumpay ang mas mababang total kahit bumaba o nakansela ang ser
 Punan ang trial card: problema, pagbabago, owner, baseline, sukatan ng kalidad, review date. Gamitin ang 20/100 at 5/100 para sa patas na paghahambing. Magpares: isa ang kasamahang walang internet; ipaliwanag ang controlled paper master at handover. Kung mag-isa, isulat ang magiging routine ng kapalit. Sa team meeting, ipasuri ang trial bago simulan at magtakda ng review.
 
 ## [answer-key] Susi sa sagot
+
+Comparison check: 1. Bawas na 15 reprint bawat 100 pahina; suriin ang workload at tamang materyal.
+
+Communication check: 2. Maghanda ng kontroladong papel na master, tiyakin ang bersyon at hingin ang puna.
 
 1. Hindi pa patunay ng improvement; ihambing ang gamit bawat session at naibigay na serbisyo.
 
@@ -55,3 +63,4 @@ Kumpleto ang plano ngunit raw total lang ang comparison; ipagamit ang bawat sess
 ## [sources-review] Sanggunian at tala sa pagsusuri
 
 Draft para sa pagsusuri. DOH Facilitator Guide: PDF 19, 22; BHW Reference Manual: PDF 14, 30; TESDA BHS NC II Revision 01 (2019), unit 400311217: PDF 33, 34, 35. Instructional expansion ito ng ikasiyam na competency, hindi hiwalay na manual chapter. Ang draft crosswalk sa TESDA 400311217 ay nasa review report; kailangan pa ng assessor review at lokal na work procedures. Nasa hiwalay na review report ang natitirang visual, audio, source at pilot checks. Walang bagong tuntunin sa sertipikasyon.
+
