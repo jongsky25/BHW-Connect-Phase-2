@@ -1,0 +1,264 @@
+{
+  "manifest": {
+    "lesson_key": "diarrhea-dehydration",
+    "position": 3,
+    "title_fil": "Tumugon sa pagtatae at dehydration",
+    "title_en": "Respond to diarrhea and dehydration concerns",
+    "objectives_fil": [
+      "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger."
+    ],
+    "objectives_en": [
+      "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.hazard",
+        "c2.firstaid.diarrhea.dehydration.action",
+        "c2.firstaid.diarrhea.dehydration.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: May malabnaw na dumi si sanggol Mina at sumususo pa",
+      "takeaway_en": "Case: Baby Mina has loose stools and is still breastfeeding",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.hazard",
+        "c2.firstaid.diarrhea.dehydration.action",
+        "c2.firstaid.diarrhea.dehydration.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+      "takeaway_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          },
+          {
+            "fil": "Basahin ang ORS sachet.",
+            "en": "Read the ORS packet."
+          },
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
+        "feedback_en": "1: The shortcut can cause harm: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.hazard",
+        "c2.firstaid.diarrhea.dehydration.action",
+        "c2.firstaid.diarrhea.dehydration.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+      "takeaway_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.hazard",
+        "c2.firstaid.diarrhea.dehydration.action",
+        "c2.firstaid.diarrhea.dehydration.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.action",
+        "c2.firstaid.diarrhea.dehydration.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          },
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          },
+          {
+            "fil": "Ipagpatuloy ang pagpapasuso kung kaya.",
+            "en": "Continue breastfeeding when safe."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 3: Obserbahan ang gawa at ang tamang referral.",
+        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 3: Observe the task and appropriate referral."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.diarrhea.dehydration.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.diarrhea.dehydration.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-imci",
+        "who-diarrhea"
+      ]
+    },
+    {
+      "id": "c2.firstaid.diarrhea.dehydration.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-imci",
+        "who-diarrhea"
+      ]
+    },
+    {
+      "id": "c2.firstaid.diarrhea.dehydration.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-imci",
+        "who-diarrhea"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        40
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "id": "who-imci",
+      "title": "WHO IMCI Chart Booklet, danger signs, cough and diarrhoea",
+      "url": "https://www.who.int/publications/m/item/integrated-management-of-childhood-illness---chart-booklet-%28march-2014%29"
+    },
+    {
+      "id": "who-diarrhea",
+      "title": "WHO Diarrhoeal Disease guidance",
+      "url": "https://www.who.int/health-topics/diarrhoea"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/diarrhea-dehydration-e0d8661063c2.svg",
+      "content_hash": "e0d8661063c2ce0732e91c0a0d2f9cdff9fbe2de96d58b851c9eb5baf183e740",
+      "alt_fil": "Tatlong kahon: Dumi, ORS, Referral.",
+      "alt_en": "Three boxes: Stool, ORS, Referral.",
+      "caption_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+      "caption_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

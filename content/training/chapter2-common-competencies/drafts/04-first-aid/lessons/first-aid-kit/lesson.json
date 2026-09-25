@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "lesson_key": "first-aid-kit",
+    "position": 16,
+    "title_fil": "Suriin ang first-aid kit",
+    "title_en": "Check first-aid kit readiness",
+    "objectives_fil": [
+      "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit."
+    ],
+    "objectives_en": [
+      "Complete every row of a simulated local kit inventory and name a replenishment owner."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.hazard",
+        "c2.firstaid.first.aid.kit.action",
+        "c2.firstaid.first.aid.kit.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: May lumang inventory sheet, expired item at bukas na…",
+      "takeaway_en": "Case: The BHS kit has an old inventory sheet, an expired item…",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.hazard",
+        "c2.firstaid.first.aid.kit.action",
+        "c2.firstaid.first.aid.kit.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
+      "takeaway_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Ihambing sa lokal na listahan.",
+            "en": "Compare with the local list."
+          },
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          },
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
+        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.hazard",
+        "c2.firstaid.first.aid.kit.action",
+        "c2.firstaid.first.aid.kit.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
+      "takeaway_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.hazard",
+        "c2.firstaid.first.aid.kit.action",
+        "c2.firstaid.first.aid.kit.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.action",
+        "c2.firstaid.first.aid.kit.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          },
+          {
+            "fil": "Itala ang expired na gamit.",
+            "en": "Record expired stock."
+          },
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
+        "feedback_en": "1: The shortcut is unsafe: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.first.aid.kit.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.first.aid.kit.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-community",
+        "ifrc-2025"
+      ]
+    },
+    {
+      "id": "c2.firstaid.first.aid.kit.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-community",
+        "ifrc-2025"
+      ]
+    },
+    {
+      "id": "c2.firstaid.first.aid.kit.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-community",
+        "ifrc-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        48
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        69
+      ]
+    },
+    {
+      "id": "who-community",
+      "title": "WHO Community-Based Care and First Aid Responders",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/community-based-care"
+    },
+    {
+      "id": "ifrc-2025",
+      "title": "IFRC International First Aid, Resuscitation and Education Guidelines 2025",
+      "url": "https://www.ifrc.org/document/ifrc-international-first-aid-resuscitation-and-education-guidelines-2025"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/first-aid-kit-52d45526890e.svg",
+      "content_hash": "52d45526890e22bcfbbfc10aa093c5752c7bfd6aaa18d6d741070be2a0b14a18",
+      "alt_fil": "Tatlong kahon: Listahan, Kondisyon, Palitan.",
+      "alt_en": "Three boxes: List, Condition, Restock.",
+      "caption_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
+      "caption_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

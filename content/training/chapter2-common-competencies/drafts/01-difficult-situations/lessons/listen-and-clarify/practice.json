@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-listen-and-clarify",
+  "objective_id": "listen-and-clarify.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Isinasara nito ang usapan bago malinawan ang problema.",
+          "en": "This closes the conversation before the problem is clear."
+        },
+        {
+          "fil": "Nakatuon ito sa pagpigil sa damdamin sa harap ng iba, hindi sa pakikinig.",
+          "en": "This focuses on controlling emotion in public rather than listening."
+        },
+        {
+          "fil": "Inaanyayahan nitong magpaliwanag si Liza nang walang panghuhusga.",
+          "en": "This invites Liza to explain without judgment."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Nagdadagdag ito ng motibo na hindi sinabi ni Liza.",
+          "en": "This adds a motive Liza did not state."
+        },
+        {
+          "fil": "Ibinubuod nito ang narinig at humihingi ng pagwawasto.",
+          "en": "This summarizes what was heard and invites correction."
+        },
+        {
+          "fil": "Nangangako ito ng resulta bago makumpirma ang magagawa ng staff.",
+          "en": "This promises an outcome before staff availability is confirmed."
+        }
+      ]
+    }
+  ]
+}

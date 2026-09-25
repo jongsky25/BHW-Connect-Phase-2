@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Humihingi ng pahintulot; tinatanong ang gustong wika at lugar; hindi sumasabat; ibinabalik ang concern sa sariling salita at tinatanong kung tama.",
+      "observable_en": "Asks permission; checks language and setting; allows the person to finish; paraphrases the concern and asks whether it is accurate.",
+      "not_yet_fil": "Kinukumpleto ang profile mula sa hula o sagot ng iba nang hindi kinakausap si Liza.",
+      "not_yet_en": "Completes the profile from guesses or another person’s answers without consulting Liza.",
+      "levels": {
+        "kaya_na_fil": "Humihingi ng pahintulot; tinatanong ang gustong wika at lugar; hindi sumasabat; ibinabalik ang concern sa sariling salita at tinatanong kung tama. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Asks permission; checks language and setting; allows the person to finish; paraphrases the concern and asks whether it is accurate. Completes this without prompting.",
+        "kailangan_practice_fil": "Nakikinig ngunit nalilimutan ang pahintulot o pagtiyak sa buod; ipakita ang apat na hakbang at ipaulit.",
+        "kailangan_practice_en": "Listens but misses permission or checking the summary; show the four steps and repeat.",
+        "hindi_pa_fil": "Kinukumpleto ang profile mula sa hula o sagot ng iba nang hindi kinakausap si Liza.",
+        "hindi_pa_en": "Completes the profile from guesses or another person’s answers without consulting Liza."
+      }
+    }
+  ]
+}

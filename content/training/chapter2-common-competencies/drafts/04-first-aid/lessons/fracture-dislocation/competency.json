@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
+      "observable_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it.",
+      "levels": {
+        "kaya_na_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+      }
+    }
+  ]
+}

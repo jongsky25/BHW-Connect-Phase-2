@@ -30,7 +30,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   const t = await getTranslations("admin");
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <nav className="flex flex-wrap gap-4 border-b border-ink/10 pb-3 text-sm font-medium">
         <Link href="/admin/dashboard" className="text-secondary hover:underline">
           {t("nav.dashboard")}

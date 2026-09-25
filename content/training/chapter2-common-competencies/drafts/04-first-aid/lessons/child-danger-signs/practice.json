@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-child-danger-signs",
+  "objective_id": "child-danger-signs.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        },
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        },
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+          "en": "The shortcut can cause harm: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+          "en": "The shortcut is unsafe: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow."
+        },
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        },
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        }
+      ]
+    }
+  ]
+}

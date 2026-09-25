@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.hazard",
+      "c2.firstaid.convulsion.response.action",
+      "c2.firstaid.convulsion.response.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: Nangingisay ang isang bata sa sahig",
+    "display_en": "Case: A child begins shaking on the floor",
+    "check": null,
+    "narration_fil": "Nangingisay ang isang bata sa sahig. Gustong pigilan siya ng kapitbahay at lagyan ng kutsara ang bibig.",
+    "narration_en": "A child begins shaking on the floor. A neighbor wants to hold the child down and put a spoon in the mouth."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.hazard",
+      "c2.firstaid.convulsion.response.action",
+      "c2.firstaid.convulsion.response.escalation"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Alisin ang panganib sa paligid, sapinan ang ulo kung kaya at…\nHumingi agad ng tulong para sa bata at obserbahan ang paghinga…\nIulat ang nakita",
+    "display_en": "Clear nearby hazards, cushion the head if possible and note the…\nSeek urgent help for a child and monitor breathing after the…\nGive the responding clinician a factual description",
+    "check": null,
+    "narration_fil": "Alisin ang panganib sa paligid, sapinan ang ulo kung kaya at tandaan ang simula. Humingi agad ng tulong para sa bata at obserbahan ang paghinga pagkatapos. Iulat ang nakita.",
+    "narration_en": "Clear nearby hazards, cushion the head if possible and note the start time. Seek urgent help for a child and monitor breathing after the episode. Give the responding clinician a factual description."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.hazard"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+      "prompt_en": "In this case, what comes first?",
+      "options": [
+        {
+          "fil": "Alisin ang panganib sa paligid.",
+          "en": "Clear nearby hazards."
+        },
+        {
+          "fil": "Maghintay muna at huwag ipaalam sa staff.",
+          "en": "Wait without notifying the responsible staff."
+        },
+        {
+          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+          "en": "Use the shortcut before confirming the facts."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.",
+      "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.hazard",
+      "c2.firstaid.convulsion.response.action",
+      "c2.firstaid.convulsion.response.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Humingi agad ng tulong para sa bata at obserbahan ang paghinga…\nIulat ang nakita",
+    "display_en": "Seek urgent help for a child and monitor breathing after the…\nGive the responding clinician a factual description",
+    "check": null,
+    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Alisin ang panganib sa paligid, sapinan ang ulo kung kaya at tandaan ang simula. Humingi agad ng tulong para sa bata at obserbahan ang paghinga pagkatapos. Iulat ang nakita. Iniiwasan ni Lea ang shortcut.",
+    "narration_en": "This is the safe response in the case. Clear nearby hazards, cushion the head if possible and note the start time. Seek urgent help for a child and monitor breathing after the episode. Give the responding clinician a factual description. Lea avoids the shortcut."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.hazard",
+      "c2.firstaid.convulsion.response.action",
+      "c2.firstaid.convulsion.response.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos…",
+    "display_en": "Do not restrain, put anything in the mouth, give food or drink…",
+    "check": null,
+    "narration_fil": "Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon.",
+    "narration_en": "Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.action",
+      "c2.firstaid.convulsion.response.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang dapat ipakita sa practice?",
+      "prompt_en": "What should the practice show?",
+      "options": [
+        {
+          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+        },
+        {
+          "fil": "Itala ang oras ng kombulsyon.",
+          "en": "Record seizure timing."
+        },
+        {
+          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+          "en": "Diagnose from the story and promise it is enough for the person."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag pigilan, maglagay ng bagay sa bibig, magpainom bago lubos na magkamalay, o umasa sa pagpupunas para mapatigil ang kombulsyon. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
+      "feedback_en": "1: The shortcut is unsafe: Do not restrain, put anything in the mouth, give food or drink before full alertness, or rely on wiping with cold water to stop a seizure. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.firstaid.convulsion.response.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes:\nLinisin ang paligid sa simulation, humingi ng tulong, sabihin ang…",
+    "display_en": "On Monday:\nClear a simulated space, call for help, state time and…",
+    "check": null,
+    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.",
+    "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion."
+  }
+]

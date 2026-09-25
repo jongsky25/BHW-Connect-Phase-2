@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-timely-integrated-service",
+  "objective_id": "timely-integrated-service.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Inuulit nito ang hadlang sa halip na linawin ang daan.",
+          "en": "This repeats the barrier rather than clarifying the pathway."
+        },
+        {
+          "fil": "May malinaw na pupuntahan bago magbigay ng tagubilin.",
+          "en": "This establishes a clear destination before giving directions."
+        },
+        {
+          "fil": "Hindi hawak ng BHW ang lahat ng oras at serbisyo.",
+          "en": "The BHW does not control all timings and services."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring kailangan pa ang mga tala; hindi ito pasya ng BHW lamang.",
+          "en": "Records may still be required; this is not the BHW’s decision alone."
+        },
+        {
+          "fil": "Maaaring mawala ang mahalagang pagsusuri.",
+          "en": "Necessary checks could be lost."
+        },
+        {
+          "fil": "Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.",
+          "en": "This explores less duplication while preserving required processes."
+        }
+      ]
+    }
+  ]
+}

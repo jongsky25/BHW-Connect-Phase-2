@@ -1,0 +1,263 @@
+{
+  "manifest": {
+    "lesson_key": "evacuation-contacts",
+    "position": 1,
+    "title_fil": "Kumpirmahin ang evacuation at babala",
+    "title_en": "Confirm evacuation and warning arrangements",
+    "objectives_fil": [
+      "Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin."
+    ],
+    "objectives_en": [
+      "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.risk",
+        "c2.drrm.evacuation-contacts.action",
+        "c2.drrm.evacuation-contacts.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: evacuation contacts",
+      "takeaway_en": "Case: evacuation contacts",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.risk",
+        "c2.drrm.evacuation-contacts.action",
+        "c2.drrm.evacuation-contacts.boundary"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.",
+      "takeaway_en": "Using a mock advisory, state source/time, confirmed action and contact to verify.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw.",
+      "takeaway_en": "This ties action to a verified plan and scope.",
+      "check": {
+        "prompt_fil": "Ano ang unang ligtas na hakbang?",
+        "prompt_en": "What is the first safe step?",
+        "options": [
+          {
+            "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
+            "en": "Assume the old information is still correct and immediately relay it to everyone."
+          },
+          {
+            "fil": "Suriin ang opisyal na update at lokal na ruta bago magpayo.",
+            "en": "Check the official update and local route before advising."
+          },
+          {
+            "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
+            "en": "Decide alone without local confirmation or an official warning."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
+        "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.risk",
+        "c2.drrm.evacuation-contacts.action",
+        "c2.drrm.evacuation-contacts.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.",
+      "takeaway_en": "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.action",
+        "c2.drrm.evacuation-contacts.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.action",
+        "c2.drrm.evacuation-contacts.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+      "takeaway_en": "This establishes clear ownership and next action.",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Gamitin ang lumang directory bilang tiyak na kasalukuyan. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Treat an old directory as current. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.drrm.evacuation-contacts.risk",
+        "c2.drrm.evacuation-contacts.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.drrm.evacuation-contacts.risk",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pagasa-services",
+        "doh-weather"
+      ]
+    },
+    {
+      "id": "c2.drrm.evacuation-contacts.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pagasa-services",
+        "doh-weather"
+      ]
+    },
+    {
+      "id": "c2.drrm.evacuation-contacts.boundary",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pagasa-services",
+        "doh-weather"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        54
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: topic sequence; legacy BHERT and fixed-time claims require local review",
+      "pdf_pages": [
+        99,
+        102
+      ]
+    },
+    {
+      "id": "pagasa-services",
+      "title": "PAGASA warning and flood advisory services",
+      "url": "https://www.pagasa.dost.gov.ph/products-and-services"
+    },
+    {
+      "id": "doh-weather",
+      "title": "DOH CAR: Tropical cyclone and monsoon health advisory",
+      "url": "https://caro.doh.gov.ph/cordillera-health-situational-summary-report-for-the-combined-effects-of-recent-tropical-cyclones-and-the-southwest-monsoon-habagat-as-of-400-pm-of-july-31-2025/"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/evacuation-contacts-f0c5a1176fab.svg",
+      "content_hash": "f0c5a1176fab7a9bb3e292d04db8a0c54478c866ab05388aab7619733edba5d8",
+      "alt_fil": "Tatlong kahon: Babala, Ruta, Contact.",
+      "alt_en": "Three boxes: Warning, Route, Contact.",
+      "caption_fil": "Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.",
+      "caption_en": "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

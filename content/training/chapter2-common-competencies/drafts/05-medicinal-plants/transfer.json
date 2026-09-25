@@ -1,0 +1,313 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Sa loob ng 2–4 linggo, ipasuri ang isang mungkahing pagpapabuti sa supervisor gamit ang job aid.",
+    "en": "Within 2–4 weeks, review one improvement proposal with the supervisor using the job aid."
+  },
+  "supervision": {
+    "fil": "Gamitin ang parehong indicator; obserbahan, magbigay ng feedback at umulit.",
+    "en": "Use the same indicator; observe, give feedback and retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "plant-scope-identification",
+      "check": {
+        "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
+        "prompt_en": "What follows the card check?",
+        "options": [
+          {
+            "fil": "Baguhin ang gamot ng residente.",
+            "en": "Change the resident’s medicine."
+          },
+          {
+            "fil": "Itago ang ibang sintomas sa staff.",
+            "en": "Withhold other symptoms from staff."
+          },
+          {
+            "fil": "Kumonsulta sa clinician.",
+            "en": "Consult a clinician."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
+        "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+      }
+    },
+    {
+      "lesson_key": "akapulko",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Akapulko?",
+        "prompt_en": "What is the safe response in the Akapulko case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "ampalaya",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Ampalaya?",
+        "prompt_en": "What is the safe response in the Ampalaya case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "bawang",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Bawang?",
+        "prompt_en": "What is the safe response in the Bawang case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "bayabas",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Bayabas?",
+        "prompt_en": "What is the safe response in the Bayabas case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "lagundi",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Lagundi?",
+        "prompt_en": "What is the safe response in the Lagundi case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "niyog-niyogan",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Niyog-niyogan?",
+        "prompt_en": "What is the safe response in the Niyog-niyogan case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "sambong",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Sambong?",
+        "prompt_en": "What is the safe response in the Sambong case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "tsaang-gubat",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Tsaang gubat?",
+        "prompt_en": "What is the safe response in the Tsaang gubat case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "ulasimang-bato",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Ulasimang bato / pansit-pansitan?",
+        "prompt_en": "What is the safe response in the Ulasimang bato / pansit-pansitan case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "yerba-buena",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Yerba buena?",
+        "prompt_en": "What is the safe response in the Yerba buena case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "lesson_key": "plant-integrated-practice",
+      "check": {
+        "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
+        "prompt_en": "What follows the card check?",
+        "options": [
+          {
+            "fil": "Baguhin ang gamot ng residente.",
+            "en": "Change the resident’s medicine."
+          },
+          {
+            "fil": "Itago ang ibang sintomas sa staff.",
+            "en": "Withhold other symptoms from staff."
+          },
+          {
+            "fil": "Kumonsulta sa clinician.",
+            "en": "Consult a clinician."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
+        "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+      }
+    }
+  ],
+  "localization_slots": [
+    "supervisor_or_organizer",
+    "authorized_reporting_channel",
+    "accessible_meeting_place",
+    "confirmed_resource_contact"
+  ]
+}

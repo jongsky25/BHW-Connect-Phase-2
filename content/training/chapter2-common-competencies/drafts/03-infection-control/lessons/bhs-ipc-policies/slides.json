@@ -1,0 +1,156 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.policy-access",
+      "c2.ipc.role-training"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "May IPC folder pero may lumang pahina.\nWalang contact sa exposure reporting.\nDokumento ay hindi awtorisasyon.",
+    "display_en": "An IPC folder has old pages.\nThere is no exposure-reporting contact.\nA document is not authorization.",
+    "check": null,
+    "narration_fil": "May folder ng IPC si BHW Nilo, pero luma ang ilang pahina at walang contact sa exposure reporting. Nakakita siya ng dokumento tungkol sa injection at sterilization. Hindi ibig sabihin na maaari na niyang gawin ang mga ito. Kailangan niyang malaman ang tamang gabay at sariling tungkulin.",
+    "narration_en": "BHW Nilo finds an IPC folder with some old pages and no exposure-reporting contact. It includes injection and sterilization documents. Finding them does not authorize him to perform those procedures. He needs the applicable guidance and his own role."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.policy-access",
+      "c2.ipc.role-training",
+      "c2.ipc.exposure-report"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Lokasyon + petsa o bersiyon.\nKumpirmahin sa IPC contact.\nTungkulin + kailangan pang training.\nKulang o magkasalungat: ipaalam.",
+    "display_en": "Location + date or version.\nConfirm with the IPC contact.\nRole + training still needed.\nMissing or conflicting guidance: report it.",
+    "check": null,
+    "narration_fil": "Hanapin ang patakaran at petsa o bersiyon. Kumpirmahin sa IPC contact kung iyon ang ginagamit. Itala ang responsable, naaangkop na tungkulin at training na kailangan. Isama ang hand hygiene, precautions, triage, paglilinis, basura, injection safety at worker protection sa checklist. Kung kulang o magkasalungat ang gabay, ipaalam; huwag gumawa ng sariling procedure.",
+    "narration_en": "Locate each policy and its date or version. Confirm with the IPC contact that it is in use. Record the owner, relevant role and training needed. Include hand hygiene, precautions, triage, cleaning, waste, injection safety and worker protection. Report missing or conflicting guidance rather than inventing a procedure."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.role-training"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Nakita ni Nilo ang sterilization policy. Ano ang ibig sabihin nito?",
+      "prompt_en": "Nilo finds a sterilization policy. What does that mean?",
+      "options": [
+        {
+          "fil": "Puwede na siyang mag-sterilize kahit walang training.",
+          "en": "He may sterilize equipment without training."
+        },
+        {
+          "fil": "Kumpleto na agad ang lahat ng IPC training niya.",
+          "en": "All his IPC training is automatically complete."
+        },
+        {
+          "fil": "Kumpirmahin ang tungkulin at training.",
+          "en": "Confirm his role and training."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel. 2: Hindi ito katumbas ng practice o observed competence. 3: Dapat malinaw kung sino ang gagawa at ano ang kailangan.",
+      "feedback_en": "1: Finding a document does not grant authorization. 2: It is not equivalent to practice or observed competence. 3: The responsible person and prerequisites must be clear."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.policy-access",
+      "c2.ipc.role-training"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Hand hygiene: bersiyon at demonstration.\nSterilization: specialist staff.\nExposure: agarang contact at assessment.\nWalang imbentong training record.",
+    "display_en": "Hand hygiene: version and demonstration.\nSterilization: specialist staff.\nExposure: prompt contact and assessment.\nNo invented training record.",
+    "check": null,
+    "narration_fil": "Sa hand hygiene row, isinulat ni Nilo ang lokasyon at kinumpirma ang bersiyon sa nurse. Itinala niya ang kailangan pang return demonstration. Sa sterilization row, isinulat niyang specialist staff ang gagawa. Sa exposure row, hiningi niya ang contact at paraan ng agarang pag-uulat. Hindi niya nilagyan ng “trained” ang hindi pa niya nagawa.",
+    "narration_en": "For hand hygiene, Nilo records the location and confirms the version with the nurse. He records the return demonstration still needed. For sterilization, he identifies specialist staff. For exposure, he obtains the contact and immediate reporting process. He does not mark unfinished training as completed."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.role-training",
+      "c2.ipc.exposure-report"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Reading o attendance ay hindi awtorisasyon.\nExposure: iulat agad ayon sa proseso.\nWalang self-prescribed na gamot.\nKumpirmahin ang task-specific training.",
+    "display_en": "Reading or attendance is not authorization.\nExposure: report promptly through the process.\nDo not self-prescribe medicines.\nConfirm task-specific training.",
+    "check": null,
+    "narration_fil": "Hindi awtorisasyon ang pagbabasa o attendance lamang. Kailangan ang gabay, training at pahintulot ayon sa gawain. Kung may tusok o body-fluid exposure, gamitin agad ang lokal na reporting at clinical assessment process. Huwag magreseta o magsimula ng gamot mula sa checklist. Huwag sabihing hindi kailangan ng BHW ang anumang IPC training.",
+    "narration_en": "Reading or attendance alone is not authorization. Tasks require appropriate instruction, training and permission. For a sharps or body-fluid exposure, promptly use the local reporting and clinical-assessment process. Do not prescribe or start medicines from this checklist. Do not assume BHWs need no IPC training."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.policy-access"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Magkaiba ang lumang poster at bagong instruction. Ano ang gagawin?",
+      "prompt_en": "An old poster conflicts with a newer instruction. What should happen?",
+      "options": [
+        {
+          "fil": "Kumpirmahin sa IPC contact.",
+          "en": "Confirm with the IPC contact."
+        },
+        {
+          "fil": "Piliin ang mas madaling sundin kahit hindi pa malinaw.",
+          "en": "Choose whichever is easier despite the uncertainty."
+        },
+        {
+          "fil": "Markahang kumpleto ang checklist upang hindi na magtanong.",
+          "en": "Mark the checklist complete to avoid asking."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Nililinaw ang kasalukuyang naaangkop na gabay. 2: Maaaring hindi angkop o ligtas ang napiling instruction. 3: Itinatago nito ang tunay na kakulangan.",
+      "feedback_en": "1: This clarifies the applicable guidance. 2: The selected instruction may be inappropriate or unsafe. 3: This conceals the actual gap."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.policy-access",
+      "c2.ipc.role-training",
+      "c2.ipc.exposure-report"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Nakita ≠ nakumpirma ≠ naobserbahan.\nSa Lunes: ipasuri ang policy checklist.\nPolicy: gabay ng facility.",
+    "display_en": "Found ≠ confirmed ≠ observed.\nOn Monday: review the policy checklist.\nPolicy: facility guidance.",
+    "check": null,
+    "narration_fil": "May contact, bersiyon at plano sa kulang na training si Nilo. Sa Lunes, ipasuri sa supervisor ang blangkong checklist bago punan sa tunay na BHS. Salita: policy — napagkasunduang gabay ng facility. Ihiwalay ang “nakita,” “nakumpirma,” “nasimulan” at “naobserbahan.”",
+    "narration_en": "Nilo now has contacts, versions and a plan for missing training. On Monday, have the supervisor review the blank checklist before using it in the actual BHS. Word: policy — the facility’s agreed guidance. Distinguish found, confirmed, started and observed."
+  }
+]

@@ -2,6 +2,7 @@ import * as Sentry from "@sentry/nextjs";
 import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { EmptyState } from "@/components/empty-state";
+import { OrgUnitPicker } from "@/components/org-unit-picker";
 import { BhwProgressCard } from "@/components/progress/bhw-progress-card";
 import { pageCount, pageRange, parseUserPage, sanitizeUserSearch, userSearchFilter } from "@/lib/admin/user-list";
 import {
@@ -10,6 +11,7 @@ import {
   type SupervisorProgram,
   type SupervisorRow,
 } from "@/lib/progress/load-supervisor-progress";
+import { loadOrgChain, loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -49,17 +51,23 @@ export default async function AdminTrainingProgressPage({
   const locale = (await getLocale()) === "en" ? "en" : "fil";
   const supabase = await createClient();
 
-  const [{ data: programs }, { data: orgUnits }] = await Promise.all([
+  const [{ data: programs }, rootOrgUnit, { data: selectedOrg }] = await Promise.all([
     supabase
       .from("training_programs")
       .select("id,content_key,title_fil,title_en")
       .eq("status", "published")
       .order("created_at")
       .returns<SupervisorProgram[]>(),
-    supabase.from("org_units").select("id,name,level,path").order("path").returns<OrgUnit[]>(),
+    loadOrgUnit(supabase, appUser.org_unit_id),
+    params.org
+      ? supabase.from("org_units").select("id,name,level,path").eq("id", params.org).maybeSingle<OrgUnit>()
+      : Promise.resolve({ data: null }),
   ]);
+  if (!rootOrgUnit) redirect("/home");
   const program = programs?.find((p) => p.id === params.program) ?? programs?.[0] ?? null;
-  const org = orgUnits?.find((o) => o.id === params.org) ?? null;
+  // Picking the admin's own unit is the same as no area filter.
+  const org = selectedOrg && selectedOrg.id !== rootOrgUnit.id ? selectedOrg : null;
+  const orgChain = await loadOrgChain(supabase, rootOrgUnit.id, org?.id);
 
   const { from, to } = pageRange(page, PAGE_SIZE);
   let usersQuery = supabase
@@ -133,17 +141,10 @@ export default async function AdminTrainingProgressPage({
                 </select>
               </label>
             ) : null}
-            <label className="flex flex-col gap-1 text-sm font-medium text-ink">
+            <div className="flex flex-col gap-1 text-sm font-medium text-ink">
               {t("orgLabel")}
-              <select name="org" defaultValue={org?.id ?? ""} className={selectClass}>
-                <option value="">{t("allOrgs")}</option>
-                {(orgUnits ?? []).map((o) => (
-                  <option key={o.id} value={o.id}>
-                    {o.name}
-                  </option>
-                ))}
-              </select>
-            </label>
+              <OrgUnitPicker name="org" root={rootOrgUnit} initialChain={orgChain} maxLevel="barangay" />
+            </div>
             <label className="flex flex-col gap-1 text-sm font-medium text-ink">
               {t("searchLabel")}
               <input

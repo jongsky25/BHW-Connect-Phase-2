@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-effective-safe-person-centered",
+  "objective_id": "effective-safe-person-centered.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "May mapagkakatiwalaang batayan bago magbigay ng iskedyul.",
+          "en": "This establishes a reliable basis before giving a schedule."
+        },
+        {
+          "fil": "Maaaring mali na ang oras; hindi sapat ang bilis.",
+          "en": "The time may be wrong; speed is not enough."
+        },
+        {
+          "fil": "Hindi kapalit ng kumpirmasyon ang pagkakapasa ng mensahe.",
+          "en": "A forwarded message does not replace confirmation."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi nito naaayos ang panganib o pakikilahok.",
+          "en": "This addresses neither the risk nor participation."
+        },
+        {
+          "fil": "Kailangan din ang kaligtasan at pagtugon sa pangangailangan.",
+          "en": "Safety and responsiveness to needs also matter."
+        },
+        {
+          "fil": "Isang katangian lamang ang nasuri; kulang ang dalawa.",
+          "en": "Only one dimension has been checked; two remain."
+        }
+      ]
+    }
+  ]
+}

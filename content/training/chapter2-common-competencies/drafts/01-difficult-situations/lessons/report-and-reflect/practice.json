@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-report-and-reflect",
+  "objective_id": "report-and-reflect.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Bansag ito sa tao at hindi malinaw na paglalarawan ng alalahanin.",
+          "en": "This labels the person rather than describing the concern."
+        },
+        {
+          "fil": "Ito ang tanong na sinabi niya at mahalaga sa susunod na usapan.",
+          "en": "This is what she asked and is relevant to the next conversation."
+        },
+        {
+          "fil": "Hula ito sa motibo ni Elena, hindi nakumpirmang impormasyon.",
+          "en": "This guesses Elena’s motive rather than reporting confirmed information."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Tiyak itong pagbabago na maaari niyang subukan at suriin.",
+          "en": "This is a specific change he can try and review."
+        },
+        {
+          "fil": "Hindi nito pinabubuti ang sariling pakikitungo o access sa serbisyo.",
+          "en": "This does not improve his response or access to service."
+        },
+        {
+          "fil": "Hindi nito sinusuri ang aktuwal na nangyari o kailangang baguhin.",
+          "en": "This does not examine what happened or what needs to change."
+        }
+      ]
+    }
+  ]
+}

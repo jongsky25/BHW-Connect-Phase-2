@@ -1,0 +1,255 @@
+{
+  "manifest": {
+    "lesson_key": "child-danger-signs",
+    "position": 1,
+    "title_fil": "Kilalanin ang panganib sa batang may sakit",
+    "title_en": "Recognize childhood danger signs",
+    "objectives_fil": [
+      "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover."
+    ],
+    "objectives_en": [
+      "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.hazard",
+        "c2.firstaid.child.danger.signs.action",
+        "c2.firstaid.child.danger.signs.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Sabi ng tagapag-alaga, hindi makainom si Niko, tatlong…",
+      "takeaway_en": "Case: A caregiver says three-year-old Niko cannot drink and…",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.hazard",
+        "c2.firstaid.child.danger.signs.action",
+        "c2.firstaid.child.danger.signs.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
+      "takeaway_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "I-refer agad si Niko.",
+            "en": "Refer Niko urgently."
+          },
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          },
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.hazard",
+        "c2.firstaid.child.danger.signs.action",
+        "c2.firstaid.child.danger.signs.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
+      "takeaway_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.hazard",
+        "c2.firstaid.child.danger.signs.action",
+        "c2.firstaid.child.danger.signs.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.action",
+        "c2.firstaid.child.danger.signs.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          },
+          {
+            "fil": "Iulat na hindi makainom.",
+            "en": "Report inability to drink."
+          },
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
+        "feedback_en": "1: The shortcut is unsafe: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.child.danger.signs.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.child.danger.signs.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-imci"
+      ]
+    },
+    {
+      "id": "c2.firstaid.child.danger.signs.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-imci"
+      ]
+    },
+    {
+      "id": "c2.firstaid.child.danger.signs.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-imci"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        39
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        75,
+        76
+      ]
+    },
+    {
+      "id": "who-imci",
+      "title": "WHO IMCI Chart Booklet, danger signs, cough and diarrhoea",
+      "url": "https://www.who.int/publications/m/item/integrated-management-of-childhood-illness---chart-booklet-%28march-2014%29"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/child-danger-signs-5aed4144a543.svg",
+      "content_hash": "5aed4144a543170bcf4179fcc8b13db87419e2d7085378bd49eb1efa9ff36c1a",
+      "alt_fil": "Tatlong kahon: Inom, Malay, Referral.",
+      "alt_en": "Three boxes: Drinking, Alertness, Referral.",
+      "caption_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
+      "caption_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

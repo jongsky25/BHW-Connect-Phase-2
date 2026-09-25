@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-community-action-followup",
+  "objective_id": "community-action-followup.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi kailangan ang ganitong detalye para sa plano ng paanyaya.",
+          "en": "These details are unnecessary for an invitation plan."
+        },
+        {
+          "fil": "Nagdadagdag ito ng hindi kumpirmadong pangako.",
+          "en": "This adds an unconfirmed promise."
+        },
+        {
+          "fil": "Ginagawang malinaw at masusuri ang napagkasunduan.",
+          "en": "This makes the agreement specific and reviewable."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Pinananatili ang pananagutan habang inaayos ang aktuwal na problema.",
+          "en": "This maintains accountability while addressing the actual problem."
+        },
+        {
+          "fil": "Maaaring masira ang tiwala at hindi matukoy ang dahilan.",
+          "en": "This can damage trust without clarifying the reason."
+        },
+        {
+          "fil": "Hindi patunay ng nakarating na balita ang dami ng dumalo sa pulong.",
+          "en": "Meeting attendance does not prove that updates reached people."
+        }
+      ]
+    }
+  ]
+}

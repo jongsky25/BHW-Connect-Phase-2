@@ -1,0 +1,153 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.behavior.prepare",
+      "c2.behavior.perspective"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Rosa: “Bakit pangalan na naman namin?”\nMay mga kapitbahay sa labas.\nAno muna ang kailangang alamin?",
+    "display_en": "Rosa: “Why our names again?”\nNeighbors are outside.\nWhat do you need to find out first?",
+    "check": null,
+    "narration_fil": "Dumating si BHW Amina sa bahay ni Rosa sa Cotabato. “Bakit pangalan na naman namin?” tanong ni Rosa. Nasa labas ang mga kapitbahay. May iskedyul si Amina, pero hindi pa niya alam ang alalahanin ni Rosa.",
+    "narration_en": "BHW Amina arrives at Rosa’s home in Cotabato. “Why do you need our names again?” Rosa asks. Neighbors are outside. Amina has a schedule, but she does not yet know Rosa’s concern."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.behavior.prepare",
+      "c2.behavior.perspective"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Ipakilala ang sarili at layunin.\nHumingi ng pahintulot.\nMagtanong nang bukas.\nMagplano ayon sa sagot.",
+    "display_en": "Introduce yourself and the purpose.\nAsk permission.\nUse an open question.\nPlan around the answer.",
+    "check": null,
+    "narration_fil": "Huminto muna at pansinin ang lugar. Ipakilala ang sarili at layunin. Itanong kung puwedeng makipag-usap. Sabihin: “Ano po ang gusto ninyong linawin tungkol sa pagbisita?” Pakinggan ang sagot bago magpaliwanag. Kung hindi angkop ang oras o lugar, mag-alok ng ibang pagkakataon.",
+    "narration_en": "Pause and notice the setting. Introduce yourself and the purpose. Ask permission to talk. Say, “What would you like to clarify about the visit?” Listen before explaining. If the time or place is unsuitable, offer another opportunity."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.behavior.perspective"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Sinabi ni Rosa, “Bakit pangalan na naman namin?” Ano ang unang itatanong ni Amina?",
+      "prompt_en": "Rosa asks, “Why our names again?” What should Amina ask first?",
+      "options": [
+        {
+          "fil": "“Ayaw po ba ninyong sumunod sa iskedyul?”",
+          "en": "“Do you not want to follow the schedule?”"
+        },
+        {
+          "fil": "“Ano po ang gusto ninyong linawin?”",
+          "en": "“What would you like to clarify about the visit?”"
+        },
+        {
+          "fil": "“Puwede po bang matapos muna ang form ko?”",
+          "en": "“Could I finish my form first?”"
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Ipinapalagay nito ang dahilan ni Rosa. Alamin muna ang alalahanin. 2: Bukas ang tanong at nagbibigay ng pagkakataong magpaliwanag si Rosa. 3: Inuuna nito ang form bago ang pahintulot at alalahanin.",
+      "feedback_en": "1: This assumes Rosa’s reason. Find out the concern first. 2: The open question gives Rosa room to explain. 3: This puts the form ahead of permission and the concern."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag para sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read why each choice helps or does not help."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.behavior.prepare",
+      "c2.behavior.perspective"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa ng usapan",
+    "heading_en": "Worked example",
+    "display_fil": "Alalahanin: naririnig ng kapitbahay.\nNapiling hakbang: bumalik sa hapon.\nItala ang napagkasunduan.",
+    "display_en": "Concern: neighbors can hear.\nChosen step: return in the afternoon.\nRecord the agreement.",
+    "check": null,
+    "narration_fil": "Amina: “Puwede po bang ipaliwanag ko ang pagbisita?” Rosa: “Naririnig ng kapitbahay.” Amina: “Mas gusto po ba ninyong mag-usap sa ibang oras?” Pinili ni Rosa ang hapon. Hindi isinulat ni Amina na “ayaw makipagtulungan.” Ang nalaman niya ay alalahanin sa pribadong usapan.",
+    "narration_en": "Amina: “May I explain the visit?” Rosa: “The neighbors can hear.” Amina: “Would you prefer another time?” Rosa chooses the afternoon. Amina does not write “uncooperative.” What she has learned is a concern about privacy."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.behavior.support"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Makinig at magpaliwanag.\nIgalang ang pahintulot.\nHumingi ng gabay sa supervisor.\nAgarang panganib: emergency help.",
+    "display_en": "Listen and explain.\nRespect permission.\nAsk the supervisor for guidance.\nImmediate danger: emergency help.",
+    "check": null,
+    "narration_fil": "Maaaring makinig, magpaliwanag at magplano ng pagbalik ang BHW. Hindi niya kailangang pilitin ang pagpasok o mangako ng serbisyong hindi niya hawak. Humingi ng gabay sa midwife o nakatalagang supervisor kapag hindi malinaw ang susunod na hakbang. Kung may agarang panganib, unahin ang ligtas na paghingi ng tulong sa lokal na emergency service.",
+    "narration_en": "The BHW can listen, explain and plan a return visit. Do not force entry or promise services outside your control. Ask the midwife or assigned supervisor when the next step is unclear. If there is immediate danger, prioritize getting help safely through the local emergency service."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.behavior.prepare"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Gusto ni Rosa na bumalik si Amina sa hapon. Ano ang pinakamainam na plano?",
+      "prompt_en": "Rosa wants Amina to return in the afternoon. Which plan fits?",
+      "options": [
+        {
+          "fil": "Kumpirmahin ang oras at alalahanin.",
+          "en": "Confirm the time and concern to revisit."
+        },
+        {
+          "fil": "Tapusin ang tanong sa harap ng kapitbahay.",
+          "en": "Finish the questions in front of the neighbors."
+        },
+        {
+          "fil": "Itala na tumanggi sa lahat ng pagbisita.",
+          "en": "Record that she refused all visits."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Sinusunod nito ang napagkasunduan at may malinaw na susunod na hakbang. 2: Hindi nito tinutugunan ang alalahanin sa pribadong usapan. 3: Hindi ito ang sinabi ni Rosa; ibang oras ang hiniling niya.",
+      "feedback_en": "1: This respects the agreement and gives a clear next step. 2: This does not address the privacy concern. 3: That is not what Rosa said; she requested another time."
+    },
+    "narration_fil": "Balikan ang nangyari sa kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose the appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.behavior.prepare",
+      "c2.behavior.support"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "May napagkasunduang oras ng pagbalik.\nSa Lunes: kumpirmahin ang support contact.\nPahintulot: pagsang-ayon sa usapan.",
+    "display_en": "A return time is agreed.\nOn Monday: confirm the support contact.\nPermission: agreement to talk.",
+    "check": null,
+    "narration_fil": "Nagkasundo sina Amina at Rosa na mag-usap sa hapon. Isinulat ni Amina ang oras ng pagbalik at alalahaning kailangang linawin. Sa Lunes, dalhin ang blangkong plano sa midwife. Kumpirmahin ang contact na tatawagan kung kailangan ng tulong. Salita: pahintulot — pagsang-ayon sa hinihinging pakikipag-usap.",
+    "narration_en": "Amina and Rosa agree to talk that afternoon. Amina records the return time and the concern to clarify. On Monday, bring the blank plan to the midwife. Confirm whom to contact for support. Word: permission — agreement to the requested conversation."
+  }
+]

@@ -61,6 +61,8 @@ export type GuideLesson = {
   takeaways: string[];
 };
 
+export type SubchapterGuideView = "learning" | "competency" | "activities" | "run" | "bhws" | "slides";
+
 export function SubchapterFacilitatorGuide({
   lang,
   lessons,
@@ -71,6 +73,9 @@ export function SubchapterFacilitatorGuide({
   moduleId,
   rosterTruncated,
   deliveries = [],
+  view,
+  href,
+  slidesContent,
 }: {
   lang: Lang;
   lessons: GuideLesson[];
@@ -81,6 +86,9 @@ export function SubchapterFacilitatorGuide({
   moduleId: string;
   rosterTruncated: boolean;
   deliveries?: CourseSessionDelivery[];
+  view: SubchapterGuideView;
+  href: string;
+  slidesContent: ReactNode;
 }) {
   const indicators = notes?.observation_indicators ?? [];
   const rosterIndicators: RosterIndicator[] = indicators.map((i) => ({
@@ -94,6 +102,14 @@ export function SubchapterFacilitatorGuide({
   }));
   const script = notes ? pick(lang, notes.notes_fil, notes.notes_en) : "";
   const statement = notes ? pick(lang, notes.competency_statement_fil, notes.competency_statement_en) : "";
+  const choices: Array<{ key: SubchapterGuideView; fil: string; en: string }> = [
+    { key: "learning", fil: "Ano ang natututuhan", en: "What BHWs learn" },
+    { key: "competency", fil: "Kakayahang hahanapin", en: "Competency" },
+    ...(notes?.activities?.length ? [{ key: "activities" as const, fil: "Mga gawain", en: "Activities" }] : []),
+    { key: "run", fil: "Paano patakbuhin", en: "How to run it" },
+    { key: "bhws", fil: "Mga BHW", en: "BHWs" },
+    { key: "slides", fil: "BHW Slides", en: "BHW Slides" },
+  ];
 
   return (
     <section aria-labelledby="facilitator-guide" className="flex flex-col gap-4">
@@ -104,15 +120,18 @@ export function SubchapterFacilitatorGuide({
             "Para lamang sa facilitator at admin. Hindi ito nakikita ng BHW.",
             "For facilitators and admins only. BHWs never see this.")}
         </p>
-        <nav className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm" aria-label={pick(lang, "Mga bahagi ng gabay", "Guide sections")}>
-          <a className="underline" href="#guide-learning">{pick(lang, "Ano ang natututuhan", "What BHWs learn")}</a>
-          <a className="underline" href="#guide-competency">{pick(lang, "Kakayahang hahanapin", "Competency")}</a>
-          <a className="underline" href="#guide-run">{pick(lang, "Paano patakbuhin", "How to run it")}</a>
-          <a className="underline" href="#guide-bhws">{pick(lang, "Mga BHW", "BHWs")}</a>
+        <nav className="mt-4 grid gap-2 sm:grid-cols-2" aria-label={pick(lang, "Mga bahagi ng gabay", "Guide sections")}>
+          {choices.map(({ key, fil, en }) => (
+            <Link key={key} href={key === "learning" ? href : `${href}?view=${key}`}
+              aria-current={view === key ? "page" : undefined}
+              className={`flex min-h-[48px] items-center justify-between rounded-lg border px-4 py-3 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary ${view === key ? "border-primary bg-primary text-on-primary" : "border-ink/20 bg-canvas text-ink hover:bg-ink/5"}`}>
+              <span>{pick(lang, fil, en)}</span><span aria-hidden="true">›</span>
+            </Link>
+          ))}
         </nav>
       </div>
 
-      <Section id="guide-learning" title={pick(lang, "1. Ano ang natututuhan ng BHW dito", "1. What the BHW is learning here")} open>
+      {view === "learning" && <Section id="guide-learning" title={pick(lang, "1. Ano ang natututuhan ng BHW dito", "1. What the BHW is learning here")} open>
         {objectives.length > 0 && (
           <div>
             <p className="font-medium">{pick(lang, "Mga layunin ng subchapter", "Subchapter objectives")}</p>
@@ -132,9 +151,9 @@ export function SubchapterFacilitatorGuide({
             </li>
           ))}
         </ol>
-      </Section>
+      </Section>}
 
-      <Section id="guide-competency" title={pick(lang, "2. Kakayahang hahanapin sa BHW", "2. Competency to look for")}>
+      {view === "competency" && <Section id="guide-competency" title={pick(lang, "2. Kakayahang hahanapin sa BHW", "2. Competency to look for")} open>
         {statement && (
           <p className="rounded-md border border-secondary/30 bg-secondary/5 p-3">
             <span className="text-sm font-semibold uppercase tracking-wide text-secondary">{pick(lang, "Pahayag ng kakayahan", "Competency statement")}</span>
@@ -148,10 +167,10 @@ export function SubchapterFacilitatorGuide({
         ) : (
           <p className="text-sm text-ink/60">{pick(lang, "Wala pang indicator para sa subchapter na ito.", "No indicators authored for this subchapter yet.")}</p>
         )}
-      </Section>
+      </Section>}
 
-      <ActivityLibrary activities={notes?.activities ?? []} lang={lang}/>
-      <Section id="guide-run" title={pick(lang, "3. Paano patakbuhin ang subchapter", "3. How to run this subchapter")}>
+      {view === "activities" && <ActivityLibrary activities={notes?.activities ?? []} lang={lang}/>}
+      {view === "run" && <Section id="guide-run" title={pick(lang, "3. Paano patakbuhin ang subchapter", "3. How to run this subchapter")} open>
         {script ? <NotesMarkdown markdown={script} /> : <p className="text-sm text-ink/60">{pick(lang, "Wala pang tala ng facilitator.", "No facilitator notes authored yet.")}</p>}
         <p className="text-sm text-ink/70">{pick(lang, "May sariling hakbang-hakbang na gabay ang bawat aralin — buksan ang aralin sa itaas.", "Each lesson has its own step-by-step guide — open a lesson above.")}</p>
         <div>
@@ -171,12 +190,17 @@ export function SubchapterFacilitatorGuide({
             <p className="mt-1 text-sm text-ink/60">{pick(lang, "Wala pang naitalang pagtuturo ng subchapter na ito. Itala ito sa iyong training session.", "No logged runs of this subchapter yet. Log them from your training session.")}</p>
           )}
         </div>
-      </Section>
+      </Section>}
 
-      <Section id="guide-bhws" title={pick(lang, "4. Mga BHW sa iyong lugar", "4. BHWs in your area")} open>
+      {view === "bhws" && <Section id="guide-bhws" title={pick(lang, "4. Mga BHW sa iyong lugar", "4. BHWs in your area")} open>
         <FacilitatorRoster lang={lang} moduleId={moduleId} rows={roster} indicators={rosterIndicators} observations={observations} lessonCount={lessons.length} activities={notes?.activities ?? []} />
         {rosterTruncated && <p className="text-sm text-ink/70">{pick(lang, "Unang 500 BHW lamang ang ipinapakita.", "Showing the first 500 BHWs only.")}</p>}
-      </Section>
+      </Section>}
+      {view === "slides" && <section aria-labelledby="guide-slides" className="rounded-xl border border-ink/15 p-5">
+        <h3 id="guide-slides" className="text-lg font-semibold">BHW Slides</h3>
+        <p className="mt-1 mb-4 text-sm text-ink/70">{pick(lang, "Pumili ng aralin para makita ang nilalaman at slides na ipinapakita sa BHW.", "Choose a lesson to see the content and slides shown to BHWs.")}</p>
+        {slidesContent}
+      </section>}
     </section>
   );
 }

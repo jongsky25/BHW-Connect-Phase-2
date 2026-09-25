@@ -1,0 +1,254 @@
+{
+  "manifest": {
+    "lesson_key": "ipc-monitor-and-improve",
+    "position": 6,
+    "title_fil": "Subaybayan at pagbutihin ang IPC",
+    "title_en": "Monitor and improve IPC practice",
+    "objectives_fil": [
+      "Itala ang isang IPC gap, agarang pag-uulat, responsable, petsa at ebidensiya ng follow-up nang walang imbentong resulta."
+    ],
+    "objectives_en": [
+      "Record one IPC gap, prompt reporting, an owner, date and follow-up evidence without inventing results."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.ipc.observe-gap"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Attendance ay hindi patunay ng supply o practice.",
+      "takeaway_en": "Attendance does not prove supplies or practice.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.ipc.observe-gap",
+        "c2.ipc.improvement-owner",
+        "c2.ipc.verify-result"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gumawa ng improvement card para sa kulang na sabon. Itala ang pansamantalang kaayusan at resulta ng dalawang posibleng follow-up.",
+      "takeaway_en": "Make an improvement card for missing soap. Record the interim arrangement and two possible follow-up outcomes.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.ipc.observe-gap"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Malinaw ang nakita, lugar at oras.",
+      "takeaway_en": "This identifies what was seen, where and when.",
+      "check": {
+        "prompt_fil": "Alin ang wastong observation entry?",
+        "prompt_en": "Which observation entry is appropriate?",
+        "options": [
+          {
+            "fil": "Tamad ang lahat kaya tiyak na mali ang kanilang gawain.",
+            "en": "Everyone is lazy, so their practice is certainly wrong."
+          },
+          {
+            "fil": "Station A, alas-nuwebe: walang sabon.",
+            "en": "Station A, nine o’clock: no soap."
+          },
+          {
+            "fil": "Lahat ay mahusay dahil may pirma sa attendance sheet.",
+            "en": "Everyone is competent because the attendance sheet is signed."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Bansag ito at hindi tiyak na observation. 2: Malinaw ang nakita, lugar at oras. 3: Hindi sapat ang attendance para malaman ang aktuwal na practice.",
+        "feedback_en": "1: This is a label rather than a specific observation. 2: This identifies what was seen, where and when. 3: Attendance cannot establish actual practice."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.ipc.observe-gap",
+        "c2.ipc.improvement-owner",
+        "c2.ipc.verify-result"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May tiyak na gap, pag-uulat, responsable, petsa at ebidensiya; naihihiwalay ang pangako sa naobserbahang resulta.",
+      "takeaway_en": "Records a specific gap, report, owner, date and evidence; distinguishes promises from observed results.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.ipc.observe-gap",
+        "c2.ipc.improvement-owner"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.ipc.verify-result"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tapat ang tala at may susunod na aksyon.",
+      "takeaway_en": "The record is accurate and prompts further action.",
+      "check": {
+        "prompt_fil": "Hindi pa na-refill ang sabon sa follow-up. Ano ang dapat itala?",
+        "prompt_en": "Soap has not been refilled at follow-up. What should be recorded?",
+        "options": [
+          {
+            "fil": "Tapos na ang gawain dahil may nangakong magre-refill.",
+            "en": "The task is complete because someone promised a refill."
+          },
+          {
+            "fil": "Walang problema dahil may naunang training ang lahat.",
+            "en": "There is no problem because everyone received training."
+          },
+          {
+            "fil": "Hindi pa naayos; muling ipaalam.",
+            "en": "Unresolved; report it again."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Pangako ay hindi ebidensiya ng resulta. 2: Hindi pinapalitan ng training ang kailangang supply. 3: Tapat ang tala at may susunod na aksyon.",
+        "feedback_en": "1: A promise is not evidence of completion. 2: Training does not replace the needed supply. 3: The record is accurate and prompts further action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.ipc.improvement-owner",
+        "c2.ipc.verify-result"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.ipc.observe-gap",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "doh-ipc-2021",
+        "cdc-core"
+      ]
+    },
+    {
+      "id": "c2.ipc.improvement-owner",
+      "read_ids": [
+        "action",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "doh-ipc-2021",
+        "cdc-core"
+      ]
+    },
+    {
+      "id": "c2.ipc.verify-result",
+      "read_ids": [
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "doh-ipc-2021",
+        "cdc-core"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        36,
+        37
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        35
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy teaching source, qualified by evidence review",
+      "pdf_pages": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "id": "doh-ipc-2021",
+      "title": "DOH: National Standards in IPC for Health Facilities, third edition (2021), WASH in HCF-hosted primary document",
+      "url": "https://washinhcf.org/wp-content/uploads/2021/10/NATIONAL-STANDARDS-IN-INFECTION-PREVENTION-AND-CONTROL-FOR-HEALTH-FACILITIES-THIRD-EDITION.pdf"
+    },
+    {
+      "id": "cdc-core",
+      "title": "CDC: Core IPC practices in all healthcare settings (2024)",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/ipc-monitor-and-improve-1e1aed3eb4e9.svg",
+      "content_hash": "1e1aed3eb4e914e72486bd4d78a10cf871ebb94740bb1a3cc09724996b93be2b",
+      "alt_fil": "Tatlong kahon: Obserbahan, Ipaayos, Balikan.",
+      "alt_en": "Three boxes: Observe, Arrange action, Verify.",
+      "caption_fil": "May tiyak na gap, pag-uulat, responsable, petsa at ebidensiya; naihihiwalay ang pangako sa naobserbahang resulta.",
+      "caption_en": "Records a specific gap, report, owner, date and evidence; distinguishes promises from observed results.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

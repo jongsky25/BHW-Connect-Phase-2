@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { CoursesConsole } from "@/components/elearning/courses-console";
 import type { Course } from "@/lib/elearning/types";
+import { loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -23,7 +24,7 @@ export default async function AdminCoursesPage() {
     redirect("/login");
   }
 
-  const [{ data: courses }, { data: orgUnits }] = await Promise.all([
+  const [{ data: courses }, rootOrgUnit] = await Promise.all([
     supabase
       .from("courses")
       .select(
@@ -31,14 +32,15 @@ export default async function AdminCoursesPage() {
       )
       .order("created_at", { ascending: false })
       .returns<Course[]>(),
-    supabase.from("org_units").select("id, name, level").order("name"),
+    loadOrgUnit(supabase, appUser.org_unit_id),
   ]);
+
+  if (!rootOrgUnit) redirect("/login");
 
   return (
     <CoursesConsole
       initialCourses={courses ?? []}
-      orgUnits={orgUnits ?? []}
-      defaultOrgUnitId={appUser.org_unit_id}
+      rootOrgUnit={rootOrgUnit}
     />
   );
 }

@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "lesson_key": "fracture-dislocation",
+    "position": 10,
+    "title_fil": "Tumugon sa posibleng bali",
+    "title_en": "Respond to suspected fractures",
+    "objectives_fil": [
+      "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag."
+    ],
+    "objectives_en": [
+      "Use a prop to show support in place, explain when movement is unsafe and make the referral call."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.hazard",
+        "c2.firstaid.fracture.dislocation.action",
+        "c2.firstaid.fracture.dislocation.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Nadapa ang siklista at masakit at deformed ang braso",
+      "takeaway_en": "Case: A cyclist fell and now has a painful, deformed forearm",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.hazard",
+        "c2.firstaid.fracture.dislocation.action",
+        "c2.firstaid.fracture.dislocation.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
+      "takeaway_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Suportahan sa kasalukuyang posisyon.",
+            "en": "Support in the position found."
+          },
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          },
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Unahin ang kaligtasan at agarang tulong. 2: Maaaring maantala ang kinakailangang assessment. 3: Maaaring makapinsala ang shortcut: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+        "feedback_en": "1: Prioritize safety and timely help. 2: Necessary assessment may be delayed. 3: The shortcut can cause harm: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.hazard",
+        "c2.firstaid.fracture.dislocation.action",
+        "c2.firstaid.fracture.dislocation.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
+      "takeaway_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.hazard",
+        "c2.firstaid.fracture.dislocation.action",
+        "c2.firstaid.fracture.dislocation.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.action",
+        "c2.firstaid.fracture.dislocation.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          },
+          {
+            "fil": "Huwag ituwid ang braso.",
+            "en": "Do not straighten the arm."
+          },
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Ang shortcut ay hindi ligtas: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan. 2: Obserbahan ang gawa at ang tamang referral. 3: Hindi batayan ang kuwento para sa sariling diagnosis.",
+        "feedback_en": "1: The shortcut is unsafe: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it. 2: Observe the task and appropriate referral. 3: The story is not grounds for an independent diagnosis."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.fracture.dislocation.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.fracture.dislocation.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "aha-firstaid",
+        "ifrc-2025"
+      ]
+    },
+    {
+      "id": "c2.firstaid.fracture.dislocation.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "aha-firstaid",
+        "ifrc-2025"
+      ]
+    },
+    {
+      "id": "c2.firstaid.fracture.dislocation.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "aha-firstaid",
+        "ifrc-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        45
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        68
+      ]
+    },
+    {
+      "id": "aha-firstaid",
+      "title": "AHA/American Red Cross Guidelines for First Aid 2024",
+      "url": "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines"
+    },
+    {
+      "id": "ifrc-2025",
+      "title": "IFRC International First Aid, Resuscitation and Education Guidelines 2025",
+      "url": "https://www.ifrc.org/document/ifrc-international-first-aid-resuscitation-and-education-guidelines-2025"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/fracture-dislocation-f08d5dfd331f.svg",
+      "content_hash": "f08d5dfd331fe32155b38a9e83b871627f0369129eb05afcbb8ba95760341332",
+      "alt_fil": "Tatlong kahon: Suporta, Huwag galaw, Referral.",
+      "alt_en": "Three boxes: Support, Keep still, Referral.",
+      "caption_fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
+      "caption_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

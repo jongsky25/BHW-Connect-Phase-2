@@ -15,10 +15,12 @@ export type AppUser = {
   onboarding_progress: unknown;
   onboarding_completed_at: string | null;
   notifications_last_read_at: string | null;
+  /** Level of the user's org unit; a BHW not yet at "barangay" must pick one. */
+  org_unit_level: string | null;
 };
 
 const APP_USER_COLUMNS =
-  "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language, a11y_settings, onboarding_progress, onboarding_completed_at, notifications_last_read_at";
+  "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language, a11y_settings, onboarding_progress, onboarding_completed_at, notifications_last_read_at, org_units(level)";
 
 export async function getAppUser(
   supabase: SupabaseClient,
@@ -39,5 +41,10 @@ export async function getAppUser(
     return null;
   }
 
-  return (data as AppUser | null) ?? null;
+  if (!data) return null;
+  const { org_units: orgUnit, ...row } = data as Omit<AppUser, "org_unit_level"> & {
+    org_units: { level: string } | { level: string }[] | null;
+  };
+  const unit = Array.isArray(orgUnit) ? orgUnit[0] : orgUnit;
+  return { ...row, org_unit_level: unit?.level ?? null };
 }

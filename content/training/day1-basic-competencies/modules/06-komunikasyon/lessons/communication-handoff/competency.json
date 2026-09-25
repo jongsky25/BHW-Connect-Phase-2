@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May concern, pinagmulan, hindi pa tiyak at hinihinging aksyon ang ulat; pinipili ang tamang tatanggap at channel; tinutukoy kung paano kukumpirmahin ang follow-up.",
+      "observable_en": "Includes concern, source, uncertainty and requested action; selects the right recipient and channel; specifies how follow-up will be confirmed.",
+      "not_yet_fil": "Ibinabahagi sa pampublikong grupo ang personal na form o walang malinaw na hinihinging aksyon.",
+      "not_yet_en": "Shares a personal form publicly or omits a clear requested action.",
+      "levels": {
+        "kaya_na_fil": "May concern, pinagmulan, hindi pa tiyak at hinihinging aksyon ang ulat; pinipili ang tamang tatanggap at channel; tinutukoy kung paano kukumpirmahin ang follow-up. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Includes concern, source, uncertainty and requested action; selects the right recipient and channel; specifies how follow-up will be confirmed. Completes this without prompting.",
+        "kailangan_practice_fil": "Tumpak ang ulat ngunit walang follow-up owner; ipatukoy kung sino ang sasagot at paano malalaman kung natanggap.",
+        "kailangan_practice_en": "Gives an accurate report but no follow-up owner; ask who should respond and how receipt will be confirmed.",
+        "hindi_pa_fil": "Ibinabahagi sa pampublikong grupo ang personal na form o walang malinaw na hinihinging aksyon.",
+        "hindi_pa_en": "Shares a personal form publicly or omits a clear requested action."
+      }
+    }
+  ]
+}

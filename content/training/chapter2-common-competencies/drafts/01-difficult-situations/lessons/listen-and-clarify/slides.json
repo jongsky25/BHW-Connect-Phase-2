@@ -1,0 +1,153 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.behavior.calm",
+      "c2.behavior.setting"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Liza: “Wala namang nangyayari!”\nMay nakikinig sa pila.\nPaano sisimulan ni Jun ang usapan?",
+    "display_en": "Liza: “Nothing happens!”\nPeople in the queue are listening.\nHow can Jun start the conversation?",
+    "check": null,
+    "narration_fil": "Sa barangay sa Iloilo, sinalubong ni Liza si BHW Jun. “Paulit-ulit kayo. Wala namang nangyayari!” Malakas ang boses niya. May mga taong nakikinig sa pila. Kailangang alamin ni Jun ang nangyari nang hindi nakikipagtalo.",
+    "narration_en": "At a barangay in Iloilo, Liza meets BHW Jun. “You keep coming back. Nothing happens!” Her voice is raised. People in the queue are listening. Jun needs to find out what happened without arguing."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.behavior.calm",
+      "c2.behavior.setting",
+      "c2.behavior.listen"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "“Ano po ang pinaka-inaalala ninyo?”\nMakinig nang hindi sumasabat.\nIbuod ang narinig.\n“Tama po ba ang pagkaintindi ko?”",
+    "display_en": "“What concerns you most?”\nListen without interrupting.\nSummarize what you heard.\n“Have I understood correctly?”",
+    "check": null,
+    "narration_fil": "Magsalita sa mahinahong boses. Sabihin: “Gusto ko pong marinig ang nangyari.” Mag-alok ng lugar na mas pribado at ligtas kung nais niya. Magtanong: “Ano po ang pinaka-inaalala ninyo?” Makinig nang hindi sumasabat. Ibuod ang sinabi, saka itanong: “Tama po ba ang pagkaintindi ko?”",
+    "narration_en": "Use a calm voice. Say, “I would like to hear what happened.” Offer a more private, safe place if she wants. Ask, “What concerns you most?” Listen without interrupting. Summarize what she said, then ask, “Have I understood correctly?”"
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.behavior.calm"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Malakas ang boses ni Liza. Aling sagot ni Jun ang makatutulong sa pagsisimula?",
+      "prompt_en": "Liza raises her voice. Which reply helps Jun begin?",
+      "options": [
+        {
+          "fil": "“Ganito po talaga. Maghintay na lang kayo.”",
+          "en": "“This is how it works. Just wait.”"
+        },
+        {
+          "fil": "“Huwag po kayong magalit sa harap nila.”",
+          "en": "“Please don’t get angry in front of them.”"
+        },
+        {
+          "fil": "“Pakinggan ko po ang alalahanin ninyo.”",
+          "en": "“I would like to hear your concern.”"
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Isinasara nito ang usapan bago malinawan ang problema. 2: Nakatuon ito sa pagpigil sa damdamin sa harap ng iba, hindi sa pakikinig. 3: Inaanyayahan nitong magpaliwanag si Liza nang walang panghuhusga.",
+      "feedback_en": "1: This closes the conversation before the problem is clear. 2: This focuses on controlling emotion in public rather than listening. 3: This invites Liza to explain without judgment."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag para sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read why each choice helps or does not help."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.behavior.listen"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa ng usapan",
+    "heading_en": "Worked example",
+    "display_fil": "Dalawang punta; walang malinaw na contact.\nInulit ni Jun ang alalahanin.\nKinumpirma ito ni Liza.",
+    "display_en": "Two visits; no clear contact.\nJun restates the concern.\nLiza confirms it.",
+    "check": null,
+    "narration_fil": "Liza: “Dalawang beses akong pumunta. Hindi ko alam kung sino ang kakausapin.” Jun: “Dalawang punta na po, pero hindi pa malinaw kung sino ang tutulong. Tama po ba?” Liza: “Oo, iyon ang problema.” Nalinaw ang alalahanin bago nagbigay ng mungkahi si Jun.",
+    "narration_en": "Liza: “I went twice. I don’t know whom to speak to.” Jun: “You have been twice, but it is still unclear who can help. Is that right?” Liza: “Yes, that is the problem.” Jun clarifies the concern before suggesting a step."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.behavior.setting"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Pakikinig, hindi pangako ng lahat.\nIugnay sa tamang staff.\nHindi ligtas: humingi ng tulong.\nAgarang panganib: emergency service.",
+    "display_en": "Listening does not promise every request.\nConnect with the appropriate staff.\nUnsafe situation: seek support.\nImmediate danger: emergency service.",
+    "check": null,
+    "narration_fil": "Ang mahinahong pakikinig ay hindi pangakong matutupad ang lahat ng hinihingi. Maaaring maglinaw at ikonekta ang residente sa tamang staff. Humingi ng tulong sa midwife o supervisor kung hindi na ligtas o hindi kayang lutasin ang sitwasyon. Kung may agarang panganib, gamitin ang lokal na emergency service mula sa ligtas na lugar.",
+    "narration_en": "Calm listening is not a promise to grant every request. Clarify and connect the resident with the appropriate staff. Ask the midwife or supervisor for support when the situation is unsafe or beyond your role. If there is immediate danger, use the local emergency service from a safe place."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.behavior.listen"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Sinabi ni Liza na hindi niya alam kung sino ang kakausapin. Ano ang susunod na sasabihin ni Jun?",
+      "prompt_en": "Liza says she does not know whom to approach. What should Jun say next?",
+      "options": [
+        {
+          "fil": "“Ayaw po ba ninyong bumalik dahil matagal?”",
+          "en": "“Do you refuse to return because it takes too long?”"
+        },
+        {
+          "fil": "“Hindi pa malinaw ang contact. Tama po ba?”",
+          "en": "“The contact is still unclear. Is that right?”"
+        },
+        {
+          "fil": "“Sigurado po akong matatapos ito ngayong araw.”",
+          "en": "“I am sure this will be finished today.”"
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Nagdadagdag ito ng motibo na hindi sinabi ni Liza. 2: Ibinubuod nito ang narinig at humihingi ng pagwawasto. 3: Nangangako ito ng resulta bago makumpirma ang magagawa ng staff.",
+      "feedback_en": "1: This adds a motive Liza did not state. 2: This summarizes what was heard and invites correction. 3: This promises an outcome before staff availability is confirmed."
+    },
+    "narration_fil": "Balikan ang nangyari sa kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose the appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.behavior.setting",
+      "c2.behavior.listen"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Malinaw na kung ano ang problema.\nSa Lunes: gamitin ang listening checklist.\nBuod: pangunahing sinabi ng kausap.",
+    "display_en": "The concern is now clear.\nOn Monday: use the listening checklist.\nSummary: the person’s main message.",
+    "check": null,
+    "narration_fil": "Pinili ni Liza na makipag-usap sa mas pribadong lugar. Kinumpirma ni Jun ang alalahanin. Handa na silang alamin kung sinong staff ang dapat lapitan. Sa Lunes, gamitin ang pakikinig na checklist sa pagsasanay kasama ang midwife. Salita: buod — maikling pagsasabi muli ng pangunahing sinabi ng kausap.",
+    "narration_en": "Liza chooses a more private place. Jun confirms the concern. They are ready to find out which staff member to approach. On Monday, use the listening checklist in practice with the midwife. Word: summary — a brief restatement of the person’s main message."
+  }
+]

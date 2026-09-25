@@ -1,0 +1,157 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.mobilization.action-plan",
+      "c2.mobilization.accountability"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Marami ang dumalo sa pulong.\nNakarating ba sa oras ang balita?\nKailangan ng plano at panukat ng resulta.",
+    "display_en": "Many people attended the meeting.\nDid the update reach people in time?\nAn action plan and result measure are needed.",
+    "check": null,
+    "narration_fil": "Napagkasunduan ng grupo ang personal na paanyaya para sa walang cellphone. May gustong magsabing matagumpay na dahil marami ang dumalo sa pulong. Hindi pa alam kung nakarating sa oras ang balita. Kailangan ng grupo ng malinaw na gagawin at paraan ng pagsusuri.",
+    "narration_en": "The group agrees on personal invitations for people without phones. Someone calls the effort successful because many attended the meeting. It is not yet known whether updates reached people in time. The group needs clear actions and a way to review results."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.mobilization.action-plan",
+      "c2.mobilization.accountability",
+      "c2.mobilization.results-review"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Gagawin + tao + resources + petsa.\nKumpirmahin ang resources.\nItakda ang follow-up at panukat.\nSuriin kasama ang residente.",
+    "display_en": "Action + owner + resources + date.\nConfirm resources.\nSet follow-up and a measure.\nReview with residents.",
+    "check": null,
+    "narration_fil": "Itala ang gagawin, responsable, kailangan at petsa. Kumpirmahin muna ang resources; huwag ipalagay na mayroon. Magkasundo sa follow-up at simpleng panukat ng resulta. Tanungin ang residente kung nakatulong ang paraan. Kung may hindi nagawa, alamin ang hadlang nang magalang at baguhin ang plano kasama nila.",
+    "narration_en": "Record the action, owner, resources and date. Confirm resources instead of assuming they exist. Agree on follow-up and a simple result measure. Ask residents whether the method helped. When a commitment is missed, discuss the barrier respectfully and adjust the plan together."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.mobilization.action-plan"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang kulang sa “Magpapabalita ang grupo balang araw”?",
+      "prompt_en": "What is missing from “The group will send updates someday”?",
+      "options": [
+        {
+          "fil": "Listahan ng personal na kondisyon ng lahat ng residente.",
+          "en": "A list of every resident’s personal health conditions."
+        },
+        {
+          "fil": "Pangakong may sasakyan kahit hindi pa ito naitatanong.",
+          "en": "A promise of transport even though nobody has confirmed it."
+        },
+        {
+          "fil": "Tao, resources, petsa at panukat.",
+          "en": "Owner, resources, date and measure."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi kailangan ang ganitong detalye para sa plano ng paanyaya. 2: Nagdadagdag ito ng hindi kumpirmadong pangako. 3: Ginagawang malinaw at masusuri ang napagkasunduan.",
+      "feedback_en": "1: These details are unnecessary for an invitation plan. 2: This adds an unconfirmed promise. 3: This makes the agreement specific and reviewable."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.mobilization.action-plan",
+      "c2.mobilization.accountability",
+      "c2.mobilization.results-review"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Ina: kumpirmahin ang oras.\nGrupo: ihatid ang paanyaya.\nPanukat: natanggap at naunawaan sa oras?\nHadlang: magalang na alamin at ayusin.",
+    "display_en": "Ina: confirm the time.\nGroup: deliver invitations.\nMeasure: received and understood in time?\nBarrier: discuss respectfully and adjust.",
+    "check": null,
+    "narration_fil": "Plano: kukumpirmahin ni Ina ang oras sa BHS. Ihahatid ng boluntaryong grupo ang paanyaya bago ang napiling araw. Sa follow-up, itatanong kung natanggap at naunawaan ang balita bago ang pagbisita. Kulang ang papel? Kumpirmahin muna ang ibang paraan. Hindi ipapahiya ang kasaping hindi nakatapos.",
+    "narration_en": "Plan: Ina confirms the time with the BHS. Volunteers deliver invitations before the agreed day. At follow-up, they ask whether residents received and understood the update before the visit. Short of paper? Confirm another method first. A member who could not finish is not shamed."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.mobilization.action-plan",
+      "c2.mobilization.accountability"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Walang pangako ng hindi kumpirmadong pondo.\nPinagsamang bilang; walang personal na dahilan.\nPanukat para sa pagpapabuti, hindi parusa.",
+    "display_en": "Do not promise unconfirmed funds.\nCombined counts; no personal reasons disclosed.\nMeasure for improvement, not punishment.",
+    "check": null,
+    "narration_fil": "Huwag mangako ng pondo, sasakyan o serbisyo na hindi pa kumpirmado. Gumamit ng pinagsamang bilang at iwasang ilathala ang personal na dahilan ng hindi pagdalo. Ang panukat ay dapat makatulong sa pagpapabuti, hindi sa pagparusa. Ipasuri sa organizer ang kailangang pahintulot at paraan ng pag-uulat.",
+    "narration_en": "Do not promise unconfirmed funds, transport or services. Use combined counts and avoid publishing personal reasons for nonattendance. Measures should support improvement, not punishment. Ask the organizer to confirm required permissions and reporting arrangements."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.mobilization.accountability",
+      "c2.mobilization.results-review"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Hindi naihatid ang ilang paanyaya. Ano ang gagawin sa follow-up?",
+      "prompt_en": "Some invitations were not delivered. What should happen at follow-up?",
+      "options": [
+        {
+          "fil": "Alamin ang hadlang at baguhin ang plano.",
+          "en": "Discuss the barrier and adjust the plan."
+        },
+        {
+          "fil": "Ipahiya sa pulong ang kasaping hindi nakatapos ng gawain.",
+          "en": "Shame the member who did not finish in the meeting."
+        },
+        {
+          "fil": "Sabihing matagumpay pa rin dahil marami ang dumalo noon.",
+          "en": "Declare success because many people attended the earlier meeting."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Pinananatili ang pananagutan habang inaayos ang aktuwal na problema. 2: Maaaring masira ang tiwala at hindi matukoy ang dahilan. 3: Hindi patunay ng nakarating na balita ang dami ng dumalo sa pulong.",
+      "feedback_en": "1: This maintains accountability while addressing the actual problem. 2: This can damage trust without clarifying the reason. 3: Meeting attendance does not prove that updates reached people."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.mobilization.accountability",
+      "c2.mobilization.results-review"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "May plano at pagsusuri kasama ang apektado.\nSa Lunes: ipasuri ang fictional action plan.\nPananagutan: tuparin at balikan ang kasunduan.",
+    "display_en": "A plan and review with affected people.\nOn Monday: review the fictional action plan.\nAccountability: fulfill and follow up agreements.",
+    "check": null,
+    "narration_fil": "May gagawin, responsable, petsa at panukat na ang grupo. Sa Lunes, ipasuri sa katrabaho ang action plan para sa kathang-isip na kaso. Salita: pananagutan — pagtupad at magalang na pagbalik sa napagkasunduang tungkulin. Kapag kulang ang resulta, magplano muli kasama ang apektado.",
+    "narration_en": "The group has actions, owners, dates and a measure. On Monday, ask a colleague to review the fictional action plan. Word: accountability — fulfilling and respectfully following up agreed responsibilities. If results fall short, plan again with affected people."
+  }
+]

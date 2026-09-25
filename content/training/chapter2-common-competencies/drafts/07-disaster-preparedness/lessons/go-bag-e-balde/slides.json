@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.risk",
+      "c2.drrm.go-bag-e-balde.action",
+      "c2.drrm.go-bag-e-balde.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: go bag e balde",
+    "display_en": "Case: go bag e balde",
+    "check": null,
+    "narration_fil": "Gagawa ng go-bag o e-balde ang pamilya ni Pio. May batang sanggol at kasapi na umiinom ng regular na gamot; maliit ang badyet at kailangan ng magaan na lalagyan.",
+    "narration_en": "Pio’s family is making a go-bag or e-balde. They have an infant and a member taking regular medicine; money is limited and the container must be easy to carry."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.risk",
+      "c2.drrm.go-bag-e-balde.action",
+      "c2.drrm.go-bag-e-balde.boundary"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Tao\nGamit\nSuri",
+    "display_en": "People\nSupplies\nReview",
+    "check": null,
+    "narration_fil": "Gumamit ng kasalukuyang DOH at lokal na checklist. Unahin ang ligtas na tubig, pagkain, ilaw, komunikasyon, pangunahing hygiene, dokumentong protektado sa tubig, at first-aid supplies. Isama ang personal na gamot at pangangailangan ng sanggol ayon sa sariling care plan; suriin ang expiration at daling dalhin.",
+    "narration_en": "Use a current DOH and local checklist. Prioritize safe water, food, light, communication, basic hygiene, water-protected documents and first-aid supplies. Include personal medicines and infant needs under the family’s care plan; check expiry and portability."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.risk"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang unang ligtas na hakbang?",
+      "prompt_en": "What is the first safe step?",
+      "options": [
+        {
+          "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
+          "en": "Assume the old information is still correct and immediately relay it to everyone."
+        },
+        {
+          "fil": "Iangkop ang laman sa pamilya at suriin muli ang gamot at expiration.",
+          "en": "Tailor contents to the family and recheck medicines and expiry."
+        },
+        {
+          "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
+          "en": "Decide alone without local confirmation or an official warning."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
+      "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.risk",
+      "c2.drrm.go-bag-e-balde.action",
+      "c2.drrm.go-bag-e-balde.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Suriin ang opisyal na plano.\nKumpirmahin ang lokal na contact.",
+    "display_en": "Check the official plan.\nConfirm the local contact.",
+    "check": null,
+    "narration_fil": "Pinapili ng BHW ang pamilya ng mahahalagang bagay at nilagyan ng petsa ang susunod na pag-check. Tinanong niya kung may kailangan pang tulong sa pagkuha ng gamot.",
+    "narration_en": "The BHW helps the family prioritize essentials and dates the next check. They ask whether help is needed to access regular medicine."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.action",
+      "c2.drrm.go-bag-e-balde.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag manghula.\nIgalang ang tungkulin at privacy.",
+    "display_en": "Do not guess.\nRespect role and privacy.",
+    "check": null,
+    "narration_fil": "Halimbawa ang mga item, hindi iisang sapilitang listahan o pahintulot magbigay ng gamot. Iayon sa local hazard, pamilya at planong medikal.",
+    "narration_en": "Items are examples, not a mandatory universal list or permission to dispense medicines. Adapt to local hazards, household needs and medical plans."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.action",
+      "c2.drrm.go-bag-e-balde.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+      "prompt_en": "What is the safe next step?",
+      "options": [
+        {
+          "fil": "Kopyahin ang listahan nang hindi isinasaalang-alang ang sanggol o regular na gamot. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+          "en": "Copy a list without considering the infant or regular medicine. Do not ask the authority or the affected person."
+        },
+        {
+          "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+          "en": "Nothing needs recording or follow-up even without team acknowledgement."
+        },
+        {
+          "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+          "en": "Inform the lead, record handover, and follow up."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+      "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.drrm.go-bag-e-balde.risk",
+      "c2.drrm.go-bag-e-balde.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes: ipa-verify ang card.\nItala ang petsa at follow-up.",
+    "display_en": "On Monday: verify the card.\nRecord date and follow-up.",
+    "check": null,
+    "narration_fil": "Sa Lunes, ipakita ang mock bag checklist sa lokal na DRRM/health focal person at itanong ang accessibility at resupply.",
+    "narration_en": "On Monday, review a mock bag checklist with the local DRRM/health focal person and ask about accessibility and resupply."
+  }
+]

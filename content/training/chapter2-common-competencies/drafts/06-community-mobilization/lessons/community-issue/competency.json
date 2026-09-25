@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May tiyak na ulat, apektadong grupo, nawawalang pananaw at tanong; walang bansag o personal na detalye.",
+      "observable_en": "Includes a specific report, affected group, missing perspective and question without labels or personal details.",
+      "not_yet_fil": "Ginagawang katotohanan ang bansag na tamad o ipinipili ang solusyon nang walang pakikinig.",
+      "not_yet_en": "Treats the label lazy as fact or imposes a solution without listening.",
+      "levels": {
+        "kaya_na_fil": "Naihihiwalay ang tatlong ulat sa hula ng lider at may tanong sa hindi pa naririnig nang walang paalala.",
+        "kaya_na_en": "Separates the three reports from the leader’s assumption and asks about missing voices without prompting.",
+        "kailangan_practice_fil": "Malinaw ang ulat pero kailangang paalalahanang idagdag ang hindi pa naririnig.",
+        "kailangan_practice_en": "States the report clearly but needs a prompt to include missing voices.",
+        "hindi_pa_fil": "Ginagawang katotohanan ang bansag na tamad o ipinipili ang solusyon nang walang pakikinig.",
+        "hindi_pa_en": "Treats the label lazy as fact or imposes a solution without listening."
+      }
+    }
+  ]
+}

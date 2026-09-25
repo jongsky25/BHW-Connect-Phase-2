@@ -90,7 +90,7 @@ describe('manual navigation',()=>{
     expect(screen.getByRole('link',{name:'As the BHW sees it'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l1?view=lesson');
     expect(screen.queryByText('Admin preview')).not.toBeInTheDocument();
   });
-  it('facilitator subchapter shows what BHWs learn, the competency and every BHW with progress',async()=>{
+  it('facilitator subchapter opens one guide view at a time and loads the roster only on Mga BHW',async()=>{
     state.role='assessor';
     state.rows.course_modules[0].objectives_en=['Explain the three roles'];
     state.rows.course_lesson_revisions=[{id:'r1',read_sections:[{takeaway_en:'HEPO is the umbrella',takeaway_fil:''}]}];
@@ -104,12 +104,23 @@ describe('manual navigation',()=>{
     render(await page(['chapter-1','m1']));
     expect(screen.getByRole('heading',{name:'Facilitator guide'})).toBeInTheDocument();
     expect(screen.getByText('HEPO is the umbrella')).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:/BHW Slides/})).toHaveAttribute('href','/training/manual/chapter-1/m1?view=slides');
+    expect(state.calls.some(c=>['users','competency_observations'].includes(c.table))).toBe(false);
+    expect(screen.queryByText('Rosa Cruz')).not.toBeInTheDocument();
+    cleanup();state.calls=[];
+    render(await page(['chapter-1','m1'],'competency'));
     expect(screen.getByText('Participate in workplace communication')).toBeInTheDocument();
+    expect(screen.queryByText('HEPO is the umbrella')).not.toBeInTheDocument();
+    cleanup();state.calls=[];
+    render(await page(['chapter-1','m1'],'run'));
     expect(screen.getByRole('cell',{name:'30 min'})).toBeInTheDocument();
+    cleanup();state.calls=[];
+    render(await page(['chapter-1','m1'],'bhws'));
     expect(screen.getByText('Rosa Cruz')).toBeInTheDocument();expect(screen.getByText('Lito Reyes')).toBeInTheDocument();
     expect(screen.getByText(/Lessons: 1\/2 · Pretest: 60%/)).toBeInTheDocument();
     expect(screen.getByText(/Ind\. 1: Kaya na/)).toBeInTheDocument();
     expect(screen.getAllByRole('button',{name:'Record observation'})).toHaveLength(2);
+    expect(state.calls.some(c=>c.table==='users')).toBe(true);
   });
   it('facilitator chapter page shows where BHWs in the area struggle',async()=>{
     state.role='assessor';

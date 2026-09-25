@@ -1,0 +1,74 @@
+[
+  {
+    "id": "slide-sources",
+    "concept_ids": [
+      "m6.assess"
+    ],
+    "layout": "process",
+    "heading_fil": "Sinabi, nakita, at hindi pa tiyak",
+    "heading_en": "Reported, observed, and unconfirmed",
+    "display_fil": "Sinabi: walang magbabantay sa anak. Nakita: walang card na maipakita. Hindi pa tiyak: petsa ng huling pagpunta. Ang nawawalang card ay hindi patunay ng hindi pagpunta.",
+    "display_en": "Reported: no childcare. Observed: no card available. Unconfirmed: last attendance date. A missing card does not prove nonattendance.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-conflicting-accounts",
+    "concept_ids": [
+      "m6.assess"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Kapag may magkaibang kuwento",
+    "heading_en": "When accounts differ",
+    "display_fil": "Sabi ni Liza: kinansela ang schedule. Sabi ng kapitbahay: ayaw niyang pumunta. Itala ang pinagmulan; tanungin si Liza at suriin ang awtorisadong rekord. Iulat kung hindi pa malinaw.",
+    "display_en": "Liza says the visit was canceled. A neighbor says she did not want to go. Record the sources; ask Liza and check the authorized record. Report any remaining uncertainty.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m6.assess"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Tatlong kahon: sinabi / nakita / hindi pa tiyak. Idagdag kung sino at aling rekord ang makapagpapatunay.",
+    "display_en": "Three boxes: reported / observed / unconfirmed. Add who and which record can verify the gap.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m6.assess"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Malinaw na pinagmulan at tapat na pagmarka sa kulang ang pumipigil sa hula na maging opisyal na tala.",
+    "display_en": "Clear sources and explicit gaps prevent a guess becoming an official record.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Wala ang card, at hindi magkatugma ang kuwento ni Liza at ng kapitbahay. Aling tala ang angkop?",
+      "prompt_en": "The card is missing and Liza’s account differs from her neighbor’s. Which record fits?",
+      "options": [
+        {
+          "fil": "“Hindi interesado si Liza; ayon sa kapitbahay.”",
+          "en": "“Liza is not interested, according to the neighbor.”"
+        },
+        {
+          "fil": "“Ayon kay Liza, kinansela ang schedule; petsa ay ibeberipika sa rekord.”",
+          "en": "“Liza reports a canceled schedule; date to be verified in the record.”"
+        },
+        {
+          "fil": "“Kinansela ng health center ang lahat ng appointment.”",
+          "en": "“The health center canceled every appointment.”"
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang tala ay may pinagmulan at malinaw na puwang sa impormasyon. Ang una ay inuuna ang husga; ang ikatlo ay nagpapalawak ng hindi pa natiyak na pahayag.",
+      "feedback_en": "The second record identifies the source and the information gap. The first prioritizes a judgment; the third expands an unverified claim."
+    }
+  }
+]

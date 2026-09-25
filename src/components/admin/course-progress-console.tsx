@@ -10,6 +10,7 @@ import type {
   AdminModuleProgressCount,
   AdminTestAttemptRow,
 } from "@/lib/admin/types";
+import { orgUnitName } from "@/lib/admin/types";
 import { createClient } from "@/lib/supabase/client";
 
 type Props = {
@@ -165,7 +166,7 @@ export function CourseProgressConsole({
                     <td className="px-3 py-3 text-sm text-ink">
                       <div className="font-medium">{row.users?.full_name}</div>
                       <div className="text-xs text-ink/60">
-                        {row.users?.username} · {row.users?.org_units?.[0]?.name ?? "—"}
+                        {row.users?.username} · {orgUnitName(row.users?.org_units) ?? "—"}
                       </div>
                     </td>
                     <td className="px-3 py-3 text-sm text-ink">{courseTitle ?? "—"}</td>

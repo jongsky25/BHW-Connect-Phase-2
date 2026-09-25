@@ -3,7 +3,9 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { mapAdminRpcError } from "@/lib/admin/error-messages";
-import type { AdminUserRow, OrgUnitOption } from "@/lib/admin/types";
+import { orgUnitLevel, orgUnitName, type AdminUserRow } from "@/lib/admin/types";
+import { OrgUnitPicker } from "@/components/org-unit-picker";
+import { ROLE_LEVELS, type OrgUnitNode } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/client";
 import { inputClass } from "./form-field";
 
@@ -11,7 +13,7 @@ type Mode = "view" | "edit" | "transfer" | "anonymize-confirm";
 
 type Props = {
   user: AdminUserRow;
-  orgUnits: OrgUnitOption[];
+  rootOrgUnit: OrgUnitNode;
   onChanged: () => void;
   onTempPassword: (result: { username: string; tempPassword: string }) => void;
 };
@@ -22,7 +24,7 @@ const STATUS_KEY: Record<AdminUserRow["status"], string> = {
   invited: "statusInvited",
 };
 
-export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
+export function UserRow({ user, rootOrgUnit, onChanged, onTempPassword }: Props) {
   const t = useTranslations("admin.users");
   const [mode, setMode] = useState<Mode>("view");
   const [loading, setLoading] = useState(false);
@@ -33,8 +35,11 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
   const [email, setEmail] = useState(user.email ?? "");
   const [address, setAddress] = useState(user.address ?? "");
 
-  const transferTargets = orgUnits.filter((unit) => unit.id !== user.org_unit_id);
-  const [transferTarget, setTransferTarget] = useState(transferTargets[0]?.id ?? "");
+  const [transferTarget, setTransferTarget] = useState<OrgUnitNode | null>(null);
+  const transferValid =
+    transferTarget !== null &&
+    transferTarget.id !== user.org_unit_id &&
+    ROLE_LEVELS[user.role].includes(transferTarget.level);
 
   function resetEditFields() {
     setFullName(user.full_name);
@@ -119,14 +124,14 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
   }
 
   async function handleTransfer() {
-    if (!transferTarget) return;
+    if (!transferValid || !transferTarget) return;
     setError(null);
     setLoading(true);
     try {
       const supabase = createClient();
       const { error: rpcError } = await supabase.rpc("rpc_admin_transfer_user", {
         p_user_id: user.id,
-        p_new_org_unit_id: transferTarget,
+        p_new_org_unit_id: transferTarget.id,
       });
 
       if (rpcError) {
@@ -246,21 +251,18 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
       <td className="px-3 py-3 text-sm text-ink">
         {mode === "transfer" ? (
           <div className="flex flex-col gap-2">
-            <select
-              value={transferTarget}
-              onChange={(event) => setTransferTarget(event.target.value)}
-              className={inputClass}
-              aria-label={t("orgUnitLabel")}
-            >
-              {transferTargets.map((unit) => (
-                <option key={unit.id} value={unit.id}>
-                  {unit.name}
-                </option>
-              ))}
-            </select>
+            <OrgUnitPicker
+              root={rootOrgUnit}
+              maxLevel={user.role === "assessor" ? "city_municipal" : "barangay"}
+              onChange={setTransferTarget}
+            />
           </div>
         ) : (
-          (user.org_units?.[0]?.name ?? "—")
+          (() => {
+            const name = orgUnitName(user.org_units) ?? "—";
+            const level = orgUnitLevel(user.org_units);
+            return user.role === "bhw" && level && level !== "barangay" ? t("pendingBarangay", { name }) : name;
+          })()
         )}
       </td>
       <td className="px-3 py-3 text-sm text-ink">{t(STATUS_KEY[user.status])}</td>
@@ -293,7 +295,7 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
             <>
               <button
                 type="button"
-                disabled={loading || !transferTarget}
+                disabled={loading || !transferValid}
                 onClick={handleTransfer}
                 className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-on-primary disabled:opacity-60"
               >
@@ -373,11 +375,14 @@ export function UserRow({ user, orgUnits, onChanged, onTempPassword }: Props) {
                   {t("reactivateAction")}
                 </button>
               )}
-              {transferTargets.length > 0 ? (
+              {rootOrgUnit.level !== "barangay" ? (
                 <button
                   type="button"
                   disabled={loading}
-                  onClick={() => setMode("transfer")}
+                  onClick={() => {
+                    setTransferTarget(null);
+                    setMode("transfer");
+                  }}
                   className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                 >
                   {t("transferAction")}

@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+      "observable_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe.",
+      "levels": {
+        "kaya_na_fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe."
+      }
+    }
+  ]
+}

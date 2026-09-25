@@ -254,7 +254,7 @@ export function TrainingSessionDetail({
   };
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-4 py-10 sm:px-6">
       <Breadcrumbs
         items={[
           { label: tCrumbs("home"), href: "/home" },

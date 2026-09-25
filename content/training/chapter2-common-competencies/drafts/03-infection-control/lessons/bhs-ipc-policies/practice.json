@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-bhs-ipc-policies",
+  "objective_id": "bhs-ipc-policies.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi nagbibigay ng awtorisasyon ang pagkakita sa papel.",
+          "en": "Finding a document does not grant authorization."
+        },
+        {
+          "fil": "Hindi ito katumbas ng practice o observed competence.",
+          "en": "It is not equivalent to practice or observed competence."
+        },
+        {
+          "fil": "Dapat malinaw kung sino ang gagawa at ano ang kailangan.",
+          "en": "The responsible person and prerequisites must be clear."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Nililinaw ang kasalukuyang naaangkop na gabay.",
+          "en": "This clarifies the applicable guidance."
+        },
+        {
+          "fil": "Maaaring hindi angkop o ligtas ang napiling instruction.",
+          "en": "The selected instruction may be inappropriate or unsafe."
+        },
+        {
+          "fil": "Itinatago nito ang tunay na kakulangan.",
+          "en": "This conceals the actual gap."
+        }
+      ]
+    }
+  ]
+}

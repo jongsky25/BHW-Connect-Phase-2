@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-food-water-sanitation",
+  "objective_id": "food-water-sanitation.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Kailangan ng tamang batayan at tagubilin, hindi hitsura lamang.",
+          "en": "A reliable basis and instructions are needed, not appearance alone."
+        },
+        {
+          "fil": "Hindi nakikita ang lahat ng maaaring kontaminasyon.",
+          "en": "Not all contamination is visible."
+        },
+        {
+          "fil": "Maaaring mapanganib ang maling produkto o dami.",
+          "en": "The wrong product or amount may be dangerous."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi pinipigilan ng iisang takip ang kontaminasyon sa pagitan nila.",
+          "en": "One cover does not prevent contamination between them."
+        },
+        {
+          "fil": "Nababawasan ang paglipat mula sa hilaw na pagkain.",
+          "en": "This reduces transfer from raw food."
+        },
+        {
+          "fil": "Hindi ligtas o maaasahang pagsusuri ang pagtikim.",
+          "en": "Tasting is neither a safe nor reliable test."
+        }
+      ]
+    }
+  ]
+}

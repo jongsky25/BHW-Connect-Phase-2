@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.",
+      "observable_en": "Compare two cards and identify what needs confirmation before any use.",
+      "not_yet_fil": "Nanghuhula ng identity, dose o awtorisasyon.",
+      "not_yet_en": "Guesses identity, dose or authorization.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang identity, bahagi, hangganan at referral nang walang paalala.",
+        "kaya_na_en": "Completes identity, part, scope and referral without prompts.",
+        "kailangan_practice_fil": "May tama ngunit kailangan ng paalala sa source o referral.",
+        "kailangan_practice_en": "Mostly correct, but needs a prompt for source or referral.",
+        "hindi_pa_fil": "Nanghuhula ng identity, dose o awtorisasyon.",
+        "hindi_pa_en": "Guesses identity, dose or authorization."
+      }
+    }
+  ]
+}

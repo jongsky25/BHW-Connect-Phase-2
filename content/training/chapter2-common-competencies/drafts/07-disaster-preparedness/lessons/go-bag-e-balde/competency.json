@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Sa fictional na kaso, pumili ng gamit para sa fictional pamilya, ipaliwanag ang dahilan at petsa ng susunod na pag-check.",
+      "observable_en": "In a fictional case, select items for the fictional family, explain why, and set a date to recheck.",
+      "not_yet_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
+      "not_yet_en": "Uses an unverified plan or exceeds the role.",
+      "levels": {
+        "kaya_na_fil": "Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.",
+        "kaya_na_en": "Completes action, boundary, handover and follow-up without prompts.",
+        "kailangan_practice_fil": "Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.",
+        "kailangan_practice_en": "Chooses the first action but needs a prompt for verification or follow-up.",
+        "hindi_pa_fil": "Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.",
+        "hindi_pa_en": "Uses an unverified plan or exceeds the role."
+      }
+    }
+  ]
+}
