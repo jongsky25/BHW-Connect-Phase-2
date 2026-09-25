@@ -37,6 +37,14 @@ const corruptions = [
     (l) => (l.revision.coverage[0].read_ids = []),
   ],
   ["unknown asset", (l) => (l.revision.slides[0].asset_ids = ["missing"])],
+  [
+    "offline source without PDF pages",
+    (l) => {
+      delete l.revision.sources[0].pdf_pages;
+      delete l.revision.sources[0].url;
+    },
+  ],
+  ["empty PDF pages", (l) => (l.revision.sources[0].pdf_pages = [])],
   ["missing alt", (l) => (l.revision.assets[0].alt_en = "")],
   [
     "unsafe path",
@@ -85,6 +93,15 @@ for (const [name, mutate] of corruptions)
     mutate(l);
     assert.throws(() => validateReferenceLesson(l));
   });
+test("a web source may omit PDF pages", () => {
+  const l = structuredClone(referenceModule.lessons[0]);
+  l.revision.sources.push({
+    id: "web-source",
+    title: "A statute page",
+    url: "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html",
+  });
+  validateReferenceLesson(l);
+});
 test("missing physical assets rejected", () =>
   assert.throws(() =>
     validateReferenceLesson(referenceModule.lessons[0], { assetExists: () => false }),

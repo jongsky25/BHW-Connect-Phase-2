@@ -207,9 +207,12 @@ export function validateReferenceLesson(
     fields(s, ["id", "title", "pdf_pages", "url"], "source");
     text(s.id, "source id");
     text(s.title, "source title");
-    array(s.pdf_pages, "PDF pages", 1).forEach((p) =>
-      assert(Number.isInteger(p) && p > 0, "positive PDF page required"),
-    );
+    // A web source (a statute page, an agency page) has no PDF pages; a
+    // source without a URL must name the pages it cites.
+    if (s.pdf_pages !== undefined || !s.url)
+      array(s.pdf_pages, "PDF pages", 1).forEach((p) =>
+        assert(Number.isInteger(p) && p > 0, "positive PDF page required"),
+      );
     if (s.url) assert(/^https:\/\//.test(s.url), "source URL requires HTTPS");
   });
   r.assets.forEach((a) => {
