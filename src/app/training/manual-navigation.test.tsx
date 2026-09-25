@@ -2,6 +2,7 @@ import {cleanup,render,screen} from '@testing-library/react';
 import {afterEach,beforeEach,describe,expect,it,vi} from 'vitest';
 import TrainingPage from './[programId]/[[...path]]/page';
 import Catalog from '../courses/page';
+import activityCards from '../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json';
 
 const state=vi.hoisted(()=>({failing:'',role:'bhw',status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
@@ -40,6 +41,14 @@ afterEach(cleanup);
 const page=(path:string[]=[],view?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view})});
 const guideTables=['course_lesson_facilitator_notes','course_module_facilitator_notes','competency_observations','users'];
 describe('manual navigation',()=>{
+  it('facilitator lesson shows only activity cards mapped to its lesson key',async()=>{
+    state.role='assessor';
+    state.rows.course_lessons[0].lesson_key='bhw-roles-application';
+    state.rows.course_module_facilitator_notes=[{module_id:'m1',activities:[activityCards[0],{...activityCards[0],id:'other',title:{en:'Other activity',fil:'Iba'},lesson_keys:['different-lesson']}]}];
+    render(await page(['chapter-1','m1','l1']));
+    expect(screen.getByRole('heading',{name:activityCards[0].title.en})).toBeInTheDocument();
+    expect(screen.queryByRole('heading',{name:'Other activity'})).not.toBeInTheDocument();
+  });
   it('catalog replaces only the mapped course with the manual',async()=>{
     render(await Catalog());expect(screen.getByRole('link',{name:/BHW Reference Manual/})).toHaveAttribute('href','/training/manual');
     expect(screen.queryByText('Old Araw 1')).not.toBeInTheDocument();expect(screen.getByText('Other course')).toBeInTheDocument();

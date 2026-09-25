@@ -1,3 +1,4 @@
+import type { ActivityRun } from "@/lib/elearning/activities";
 import { getLocale } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 import { TrainingSessionDetail } from "@/components/elearning/training-session-detail";
@@ -83,7 +84,7 @@ export default async function TrainingSessionDetailPage({
       ? supabase
           .from("course_module_facilitator_notes")
           .select(
-            "id, module_id, notes_fil, notes_en, competency_statement_fil, competency_statement_en, observation_indicators",
+            "id, module_id, notes_fil, notes_en, activities, competency_statement_fil, competency_statement_en, observation_indicators",
           )
           .in("module_id", moduleIds)
           .returns<CourseModuleFacilitatorNotes[]>()
@@ -102,6 +103,10 @@ export default async function TrainingSessionDetailPage({
       .returns<CourseSessionDelivery[]>(),
   ]);
 
+  const { data: activityRuns, error: activityError } = await supabase.from("course_session_activities")
+    .select("id,session_id,module_id,activity_id,status,duration_minutes,note,activity_snapshot,recorded_at")
+    .eq("session_id",id).order("recorded_at").returns<ActivityRun[]>();
+  if(activityError) throw new Error("Unable to load session activities");
   const enrolledBhwIds = (enrollments ?? []).map((e) => e.bhw_user_id);
 
   const [{ data: courseProgress }, { data: testAttempts }, { data: bhwCandidates }] = await Promise.all([
@@ -147,6 +152,7 @@ export default async function TrainingSessionDetailPage({
       facilitatorNotes={facilitatorNotes ?? []}
       initialEnrollments={enrollments ?? []}
       initialDeliveries={deliveries ?? []}
+      initialActivityRuns={activityRuns ?? []}
       courseProgress={courseProgress ?? []}
       moduleProgress={moduleProgress ?? []}
       testAttempts={testAttempts ?? []}

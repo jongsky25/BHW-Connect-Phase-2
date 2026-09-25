@@ -1,5 +1,7 @@
 "use client";
 
+import { ActivityLibrary } from "./activity-library";
+import type { ActivityRun } from "@/lib/elearning/activities";
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
@@ -31,6 +33,7 @@ type Props = {
   facilitatorNotes: CourseModuleFacilitatorNotes[];
   initialEnrollments: CourseSessionEnrollment[];
   initialDeliveries: CourseSessionDelivery[];
+  initialActivityRuns?: ActivityRun[];
   courseProgress: ProgressRow[];
   moduleProgress: ModuleProgressRow[];
   testAttempts: SessionTestAttempt[];
@@ -48,6 +51,7 @@ export function TrainingSessionDetail({
   facilitatorNotes,
   initialEnrollments,
   initialDeliveries,
+  initialActivityRuns = [],
   courseProgress,
   moduleProgress,
   testAttempts,
@@ -400,6 +404,17 @@ export function TrainingSessionDetail({
           </div>
         )}
       </section>
+
+      {deliverable.filter(m => notesByModuleId.get(m.id)?.activities?.length || initialActivityRuns.some(r=>r.module_id===m.id)).map(m =>
+        <details key={m.id} className="rounded-md border border-ink/15 p-4">
+          <summary className="min-h-[44px] cursor-pointer font-medium">
+            {locale === "en" ? "Optional activities: " : "Opsyonal na mga gawain: "}{locale === "en" ? m.title_en : m.title_fil}
+          </summary>
+          <ActivityLibrary lang={locale === "en" ? "en" : "fil"}
+            moduleTitle={locale === "en" ? m.title_en : m.title_fil}
+            activities={notesByModuleId.get(m.id)?.activities ?? []} sessionId={session.id} moduleId={m.id} sessionOpen={sessionOpen}
+            initialRuns={initialActivityRuns.filter(r=>r.module_id===m.id)}/>
+        </details>)}
 
       <section className="flex flex-col gap-3 rounded-md border border-ink/10 p-4" aria-labelledby="session-log-heading">
         <h2 id="session-log-heading" className="text-lg font-semibold text-ink">{t("logHeading")}</h2>

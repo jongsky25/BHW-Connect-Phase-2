@@ -1,3 +1,5 @@
+import type { FacilitatorActivity } from "./activities";
+
 export type CourseStatus = "draft" | "published" | "archived";
 export type ModuleType = "text" | "video" | "quiz";
 
@@ -214,6 +216,7 @@ export type ObservationIndicator = {
 };
 
 export type CourseModuleFacilitatorNotes = {
+  activities?: FacilitatorActivity[];
   id: string;
   module_id: string;
   notes_fil: string;

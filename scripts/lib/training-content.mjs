@@ -9,6 +9,7 @@
 
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
+import { loadActivities } from "./training-activities.mjs";
 import { fileURLToPath } from "node:url";
 import { parseLessonMarkdown } from "./lesson-md.mjs";
 import { validateSvgMarkup } from "./svg-allowlist.mjs";
@@ -398,6 +399,7 @@ function loadModule(moduleId, mDir, ctx, problems, reviewFlags) {
     lesson: mergedSections.length > 0 ? { sections: mergedSections } : null,
     visuals,
     facilitatorNotes: {
+      activities: loadActivities(mDir, competency.observation_indicators ?? []),
       notes_fil: notesFil,
       notes_en: notesEn,
       competency_statement_fil: competency.competency_statement_fil ?? "",

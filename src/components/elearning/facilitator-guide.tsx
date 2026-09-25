@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ActivityLibrary } from "./activity-library";
+import type { FacilitatorActivity } from "@/lib/elearning/activities";
 import type { ReactNode } from "react";
 import { NotesMarkdown } from "@/components/elearning/notes-markdown";
 import {
@@ -148,6 +150,7 @@ export function SubchapterFacilitatorGuide({
         )}
       </Section>
 
+      <ActivityLibrary activities={notes?.activities ?? []} lang={lang}/>
       <Section id="guide-run" title={pick(lang, "3. Paano patakbuhin ang subchapter", "3. How to run this subchapter")}>
         {script ? <NotesMarkdown markdown={script} /> : <p className="text-sm text-ink/60">{pick(lang, "Wala pang tala ng facilitator.", "No facilitator notes authored yet.")}</p>}
         <p className="text-sm text-ink/70">{pick(lang, "May sariling hakbang-hakbang na gabay ang bawat aralin — buksan ang aralin sa itaas.", "Each lesson has its own step-by-step guide — open a lesson above.")}</p>
@@ -171,7 +174,7 @@ export function SubchapterFacilitatorGuide({
       </Section>
 
       <Section id="guide-bhws" title={pick(lang, "4. Mga BHW sa iyong lugar", "4. BHWs in your area")} open>
-        <FacilitatorRoster lang={lang} moduleId={moduleId} rows={roster} indicators={rosterIndicators} observations={observations} lessonCount={lessons.length} />
+        <FacilitatorRoster lang={lang} moduleId={moduleId} rows={roster} indicators={rosterIndicators} observations={observations} lessonCount={lessons.length} activities={notes?.activities ?? []} />
         {rosterTruncated && <p className="text-sm text-ink/70">{pick(lang, "Unang 500 BHW lamang ang ipinapakita.", "Showing the first 500 BHWs only.")}</p>}
       </Section>
     </section>
@@ -181,11 +184,13 @@ export function SubchapterFacilitatorGuide({
 export function LessonFacilitatorGuide({
   lang,
   notesMarkdown,
+  activities = [],
   indicators,
   objectives,
 }: {
   lang: Lang;
   notesMarkdown: string | null;
+  activities?: FacilitatorActivity[];
   indicators: ObservationIndicator[];
   objectives: string[];
 }) {
@@ -199,6 +204,7 @@ export function LessonFacilitatorGuide({
           <ul className="mt-3 list-disc pl-5">{objectives.map((o, i) => <li key={i}>{o}</li>)}</ul>
         )}
       </div>
+      <ActivityLibrary activities={activities} lang={lang}/>
       {sections.length ? (
         sections.map((s, i) => (
           <Section key={s.id} id={`lesson-guide-${s.id}`} title={s.heading || pick(lang, "Tala", "Notes")} open={i < 2 || s.id === "steps"}>

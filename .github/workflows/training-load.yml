@@ -8,7 +8,7 @@ on:
         required: true
         default: lessons
         type: choice
-        options: [hierarchy, course, content, lessons, assessments, kb]
+        options: [hierarchy, course, content, lessons, activities, assessments, kb]
       project:
         description: "Supabase project ref"
         required: true
@@ -31,7 +31,7 @@ on:
         default: false
         type: boolean
       modules:
-        description: "Selected stable module keys; required for content/lessons"
+        description: "Selected stable module keys; required for content/lessons/activities"
         required: false
         default: "01-tungkulin-ng-bhw"
         type: string
