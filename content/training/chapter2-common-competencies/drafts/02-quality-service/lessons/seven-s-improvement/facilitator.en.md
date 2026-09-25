@@ -1,57 +1,76 @@
 ## [purpose] Purpose
 
-120 minutes: opening 10; model 15; triad practice 55; feedback/retry 20; debrief 10; workplace plan 10. Use seven Slides, cards, worksheet and observer sheet. Rotate roles and retry with one changed detail.
-
-Inspect a simulated work area using all seven categories and assign an improvement, owner and review date.
+At a simulated desk, the BHW checks all seven categories and assigns one safe, authorized improvement with owner, review date and evidence.
 
 ## [time-materials] Time and materials
 
-The four quality-service sessions total 600 minutes. This is facilitated training, separate from digital reading. Use repeated comparisons, practice and feedback; time alone does not establish competence. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **Time:** 120 minutes face-to-face (this lesson's share of the 600-minute subchapter plan): opening 10, model 10, inspection 55, feedback and retry 20, checks, debrief and subchapter close 25. Read in the app: about 5 minutes.
+- **Materials:** *2.2.4 7S inspection* cards (one set per triad), worksheet, observation sheet, *Quality service* job aid. Simulated desk: old poster, mixed blank forms, unlabeled empty containers, an empty box blocking the walkway.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Take both checks in the app first.
+- Confirm who authorizes removing items and the channel for reporting hazards.
+- **Scope:** safe props only. No real records, medicines or equipment; nothing is discarded. No sharps or contaminated items; those belong to 2.3.
 
 ## [opening] Opening
 
-BHW Tess inspects a simulated desk. There is an old poster, mixed blank forms and dust. Containers have no labels. A box blocks the walkway. No checker or review date is assigned. The team needs order that lasts beyond one cleaning session.
+Point to the desk and ask: *"If we clean this today, will it still be tidy in a month? Why?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step is a Read section and its matching slide.
 
-## [expected-answers] Expected response
+1. **"The situation."** Ask: *"What do you see at Tess's desk?"*
+2. **"What to do and say."** Ask: *"Of these four, which needs permission first?"*
+3. **"Choose the first response."** Self-check 1 — let pairs answer first.
+4. **"Worked example."** Ask: *"How are standardize, self-discipline and sustain different here?"*
+5. **"Scope and support."** Ask: *"Who must authorize removing an item?"*
+6. **"Apply it to the situation."** Self-check 2 — let pairs answer first.
+7. **"On Monday, try this."** Ask: *"What would show next Friday that the change happened?"* Close the subchapter: one dimension, one privacy step, one 7S category; one proposal on the job aid.
 
-Safety: report the blocking box and arrange a clear walkway. Self-discipline: carry out assigned checks without repeated reminders. Sustain: repeat and review the routine. Tess and staff agree on a daily checklist and a Friday review. All seven categories matter, not just sweeping.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Throw out the old poster and forms."** Sort: identify, then seek authorization before removal.
+- **"Sweep and dust it."** Yes, that is Sweep. Ask: *"And the other six?"*
+- **"Label the containers."** Good, that is Standardize. Ask: *"Who agrees the labels?"*
+- **"Check it every Friday."** That is Sustain. Ask: *"Who, and what is the evidence?"*
 
-Checks only sweeping or discards records and medicines without authorization.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"7S is a big cleaning day."** General cleaning days are familiar, so this is natural. But Tess's desk has no assigned checker. Ask: *"Which three S's keep it tidy after today?"* Let them find the three.
 
-Using safe props, inspect all seven categories at Tess’s desk. Assign one improvement, owner, date and evidence. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**7S inspection of a simulated desk.** Triads rotate at the desks (three rounds, about 18 minutes each). The learner fills all seven rows, then names one change, owner, review date and evidence. Partner (staff) asks *"Who will check it?"* The observer records actual words. Retry with one changed detail (a different item moved). Fictional details only. Alone: a drawing of Tess's desk; staff observation later.
 
-1: Needed items are arranged according to use. / 2: This conflicts with self-discipline and does not arrange supplies. / 3: A shared standard is needed, not changing labels.
+## [answer-key] Self-check answer key
 
-1: The guide for maintaining the work is lost. / 2: This provides responsibility and follow-up beyond one cleaning session. / 3: This does not check whether the seven categories are maintained.
+- **Check 1 (which is Systematize):** **"Arrange forms by use."** Needed items are arranged according to use.
+  - "Wait for reminders": conflicts with self-discipline and does not arrange supplies.
+  - "Make different labels daily": a shared standard is needed, not changing labels.
+- **Check 2 (keeping 7S going):** **"Assign an owner, routine and review."** This provides responsibility and follow-up beyond one cleaning session.
+  - "Remove the checklist": the guide for maintaining the work is lost.
+  - "Declare everything finished": does not check whether the seven categories are maintained.
 
-## [observe] Observe
+## [observe] What to observe
 
-Checks all seven categories and proposes a safe, authorized improvement with an owner and review date.
+Indicator: Checks all seven categories and proposes a safe, authorized improvement with an owner and review date.
 
-Ready: Completes all seven rows, distinguishes standardize, self-discipline and sustain, and specifies follow-up without prompting.
+- **Kaya na:** Completes all seven rows, distinguishes standardize, self-discipline and sustain, and specifies follow-up without prompting.
+- **Kailangan pa ng practice:** Proposes a safe change but needs a prompt to add a category or review date.
+- **Hindi pa:** Checks only sweeping or discards records and medicines without authorization.
 
-Needs practice: Proposes a safe change but needs a prompt to add a category or review date.
+Look for: the box reported, not just moved. A correct self-check is not evidence of the skill.
 
-Not yet: Checks only sweeping or discards records and medicines without authorization.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** ask *"Which row is empty?"* or *"When will you check again?"*; re-observe in the same session.
+- **Hindi pa:** re-model the last three rows; retry with those three only, then all seven. Pair with a Kaya na BHW. Re-observe next round or at follow-up.
+- Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF p. 30; Facilitator Guide PDF p. 34; Day 1 Part 2 presentation PDF p. 36.
+- Timing: an authoring distribution of the source's 600-minute allocation.
+- Owner approved and published 25 Sep 2026; reviewer names not recorded. Local protocol overrides.
