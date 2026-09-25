@@ -1,0 +1,266 @@
+{
+  "manifest": {
+    "lesson_key": "resources-safe-change",
+    "position": 1,
+    "title_fil": "Pumili ng ligtas na pagbabago",
+    "title_en": "Choose a safe change",
+    "objectives_fil": [
+      "Pumili ng resource-saving action na nagpapanatili ng infection prevention, critical equipment at napapanahong serbisyo, at ipaliwanag ang tinanggihang opsyon."
+    ],
+    "objectives_en": [
+      "Choose a resource-saving action that preserves infection prevention, critical equipment and timely services, and explain the rejected option."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "utilities",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang ligtas na pagtitipid ay nag-aalis ng aksaya at pinananatili ang kailangan sa pangangalaga.",
+      "takeaway_en": "Safe conservation removes waste while preserving what care requires.",
+      "check": {
+        "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
+        "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
+        "options": [
+          {
+            "fil": "Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.",
+            "en": "Keep the refrigerator running; check unnecessary lights under facility procedure."
+          },
+          {
+            "fil": "Patayin ang refrigerator sa gabi.",
+            "en": "Switch the refrigerator off overnight."
+          },
+          {
+            "fil": "Patayin pati ang kinakailangang bentilasyon.",
+            "en": "Switch off required ventilation too."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.",
+        "feedback_en": "The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service."
+      }
+    },
+    {
+      "id": "materials",
+      "concept_ids": [
+        "m9.plastics",
+        "m9.safe-savings"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pagbawas ng basura ay hindi pahintulot na muling gamitin ang clinical single-use items.",
+      "takeaway_en": "Waste reduction does not authorize reuse of clinical single-use items.",
+      "check": null
+    },
+    {
+      "id": "workflow",
+      "concept_ids": [
+        "m9.productivity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang productivity ay dekalidad na serbisyo na may mas kaunting aksaya at pag-uulit.",
+      "takeaway_en": "Productivity means quality service with less waste and rework.",
+      "check": null
+    },
+    {
+      "id": "worked-example",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+      "takeaway_en": "Reduce waste and rework while preserving essential protection and services.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ],
+      "asset_ids": [
+        "safe-change"
+      ],
+      "takeaway_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+      "takeaway_en": "Reduce waste and rework while preserving essential protection and services.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m9.resources",
+        "m9.safe-savings",
+        "m9.plastics",
+        "m9.productivity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Makatipid sa waste at rework; panatilihin ang proteksyon at serbisyong kailangan.",
+      "takeaway_en": "Reduce waste and rework while preserving essential protection and services.",
+      "check": {
+        "prompt_fil": "Gustong bawasan ang papel sa health teaching. Aling mungkahi ang angkop?",
+        "prompt_en": "The team wants to reduce paper in health teaching. Which proposal fits?",
+        "options": [
+          {
+            "fil": "Huwag nang magbigay ng kailangang instruction para mabawasan ang pahina.",
+            "en": "Omit needed instructions to reduce pages."
+          },
+          {
+            "fil": "Gamitin ang lumang bersyon hanggang maubos.",
+            "en": "Use the old version until it runs out."
+          },
+          {
+            "fil": "Suriin ang approved version at gumamit ng aprubadong reusable visual kung angkop.",
+            "en": "Check the approved version and use an approved reusable visual where suitable."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "Ang ikatlong sagot ay binabawasan ang rework habang tama ang impormasyon. Ang pagtanggal ng kailangan o paggamit ng lumang bersyon ay maaaring magpababa ng kalidad kahit mas kaunti ang papel.",
+        "feedback_en": "The third response reduces rework while keeping information correct. Omitting essentials or using an old version can lower quality even when less paper is used."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m9.resources",
+      "read_ids": [
+        "utilities",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-utilities",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    },
+    {
+      "id": "m9.safe-savings",
+      "read_ids": [
+        "utilities",
+        "materials",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-utilities",
+        "slide-materials",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    },
+    {
+      "id": "m9.plastics",
+      "read_ids": [
+        "materials",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-materials",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    },
+    {
+      "id": "m9.productivity",
+      "read_ids": [
+        "workflow",
+        "worked-example",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-workflow",
+        "slide-worked-example",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "tesda-400311217",
+        "who-sustainability"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        19,
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        14,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "tesda-400311217",
+      "title": "TESDA BHS NC II Revision 01 (2019), unit 400311217",
+      "pdf_pages": [
+        33,
+        34,
+        35
+      ],
+      "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    },
+    {
+      "id": "who-sustainability",
+      "title": "WHO — Climate-resilient and environmentally sustainable health care facilities",
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities"
+    }
+  ],
+  "assets": [
+    {
+      "id": "safe-change",
+      "path": "/training/module-1-9/safe-change-5cb1aa2f1081.svg",
+      "content_hash": "5cb1aa2f1081f92d638f95187cce412ecbb7bcd31f203d3c3540f17effee1509",
+      "alt_fil": "Paghahambing ng pagtitipid at proteksyon sa hand hygiene, single-use at kalidad ng serbisyo.",
+      "alt_en": "A comparison of conservation with hand-hygiene, single-use and service-quality protections.",
+      "caption_fil": "Piliin lamang ang pagtitipid na pumapasa sa safety at quality check.",
+      "caption_en": "Choose a saving only when it passes safety and quality checks.",
+      "provenance": "Original code-authored bilingual SVG for Module 1.9. User approved candidate visuals in task on 2026-09-25; no external imagery.",
+      "review_status": "approved"
+    }
+  ]
+}

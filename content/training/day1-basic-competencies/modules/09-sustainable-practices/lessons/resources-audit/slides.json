@@ -1,0 +1,114 @@
+[
+  {
+    "id": "slide-elena",
+    "concept_ids": [
+      "m9.competency",
+      "m9.resources"
+    ],
+    "layout": "scene",
+    "heading_fil": "Ubos ang supplies bago matapos ang linggo",
+    "heading_en": "Supplies run out before the week ends",
+    "display_fil": "Si Elena, 38, ay nakakita ng tumutulong gripo, paulit-ulit na printing at gamit na hindi makita. Itala ang nasasayang na tubig, papel, kuryente at oras bago magmungkahi ng pagbabago.",
+    "display_en": "Elena, 38, finds a leaking tap, repeated printing and misplaced supplies. Record wasted water, paper, electricity and time before proposing changes.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-inventory",
+    "concept_ids": [
+      "m9.organize"
+    ],
+    "layout": "process",
+    "heading_fil": "Makita, mabilang, maibalik",
+    "heading_en": "Find it, count it, return it",
+    "display_fil": "May label na puwesto → bilang at expiry check → report ng expired o damaged → ibalik ang reusable teaching materials. Huwag ipamigay ang expired para maubos lang.",
+    "display_en": "Labeled location → count and expiry check → report expired or damaged items → return reusable teaching materials. Do not distribute expired stock just to use it up.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "May apat na lumang handout at walang kasalukuyang bersyon sa kit. Ano ang ligtas na susunod na hakbang?",
+      "prompt_en": "The kit has four outdated handouts and no current version. What is the safe next step?",
+      "options": [
+        {
+          "fil": "Ipamahagi ang luma para hindi masayang.",
+          "en": "Distribute the old copies so they are not wasted."
+        },
+        {
+          "fil": "Palitan ang label at ituring na aprubado ang luma.",
+          "en": "Relabel the old copies as approved."
+        },
+        {
+          "fil": "Ihiwalay ang luma, tiyakin ang aprubadong master at humingi ng kasalukuyang kopya.",
+          "en": "Set aside the old copies, verify the approved master and request current copies."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ang nagpoprotekta sa tamang impormasyon. Hindi nagiging tama ang lumang bersyon dahil sayang itong itapon o palitan ang label.",
+      "feedback_en": "The third response protects correct information. An outdated version does not become valid because disposal feels wasteful or its label is changed."
+    }
+  },
+  {
+    "id": "slide-seven-s",
+    "concept_ids": [
+      "m9.organize"
+    ],
+    "layout": "process",
+    "heading_fil": "7S bilang araw-araw na routine",
+    "heading_en": "7S as a daily routine",
+    "display_fil": "7S: alisin ang di kailangan, ayusin, linisin, standardize, tiyaking ligtas, gawin ang tungkulin, panatilihin. Sa teaching kit: label, checklist, cleaning routine at taong susuri bago at pagkatapos.",
+    "display_en": "7S: sort, systematize, sweep, standardize, safety, self-discipline, sustain. For a teaching kit: label, checklist, cleaning routine and a person checking before and after use.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m9.competency",
+      "m9.resources",
+      "m9.organize"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Resource → nakitang pag-aaksaya → ebidensya → ligtas na hakbang. Label at bilang bago mag-order.",
+    "display_en": "Resource → observed waste → evidence → safe step. Label and count before ordering.",
+    "asset_ids": [
+      "resource-audit"
+    ],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m9.competency",
+      "m9.resources",
+      "m9.organize"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Magsimula sa nakitang pag-aaksaya at maayos na routine, hindi sa hula na kulang ang budget.",
+    "display_en": "Start with observed waste and a reliable routine, not an assumption that the budget is insufficient.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Hindi makita ang handouts kaya may gustong mag-order ulit. Ano muna?",
+      "prompt_en": "Handouts cannot be found, so someone wants to reorder. What first?",
+      "options": [
+        {
+          "fil": "Mag-order agad ng doble para sigurado.",
+          "en": "Order twice as many immediately."
+        },
+        {
+          "fil": "Suriin ang labeled storage, approved version at bilang ng stock.",
+          "en": "Check labeled storage, approved version and stock count."
+        },
+        {
+          "fil": "Gamitin ang anumang lumang handout na makita.",
+          "en": "Use any old handout that can be found."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay sinusuri ang tunay na pangangailangan at tamang materyal. Ang dobleng order ay maaaring pag-aaksaya; ang lumang handout ay maaaring maling bersyon.",
+      "feedback_en": "The second response checks actual need and the correct material. Duplicate ordering may waste resources; an old handout may be the wrong version."
+    }
+  }
+]

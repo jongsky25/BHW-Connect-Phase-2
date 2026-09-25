@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon.",
+      "observable_en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option.",
+      "not_yet_fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+      "not_yet_en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings.",
+      "levels": {
+        "kaya_na_fil": "Pinipili ang ligtas na pagbabago; sinusuri ang dalawang posibleng sanhi gamit ang printout, master at supervisor; naipapaliwanag ang safeguards at tinanggihang opsyon. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Chooses a safe change, checks two possible causes against printouts, the master and supervisor, and explains safeguards and the rejected option. Completes this without prompting.",
+        "kailangan_practice_fil": "Ligtas ang napili ngunit hindi maipaliwanag ang safeguard; gamitin ang tatlong tanong sa practice at ipaulit.",
+        "kailangan_practice_en": "Makes a safe choice but cannot explain the safeguard; use the three practice questions and repeat.",
+        "hindi_pa_fil": "Iminumungkahi ang clinical single-use reuse, paghinto sa critical equipment o pag-antala sa urgent referral para makatipid.",
+        "hindi_pa_en": "Proposes reusing clinical single-use items, stopping critical equipment or delaying urgent referral for savings."
+      }
+    }
+  ]
+}
