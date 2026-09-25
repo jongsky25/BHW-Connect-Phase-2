@@ -2,17 +2,17 @@
 
 import {useRouter} from 'next/navigation';
 import {ReferenceLessons, type ReferenceData} from './reference-lessons';
-import type {CourseModule} from '@/lib/elearning/types';
+import type {CourseModule,LessonModality} from '@/lib/elearning/types';
 import type {LessonNarration} from '@/lib/elearning/reference-narration';
 import {createClient} from '@/lib/supabase/client';
 
-export function ManualLesson({data,modules,lessonId,baseHref,locale,readOnly,lessonNumber,lessonCount,narration,nextLessonHref}:{
+export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,readOnly,lessonNumber,lessonCount,narration,nextLessonHref,initialMode}:{
   data:ReferenceData; modules:CourseModule[]; lessonId:string; baseHref:string; locale:string; readOnly:boolean;
-  lessonNumber:number; lessonCount:number; narration?:LessonNarration; nextLessonHref?:string;
+  lessonNumber:number; lessonCount:number; narration?:LessonNarration; nextLessonHref?:string; initialMode?:LessonModality; returnHref?:string;
 }) {
   const router=useRouter();
   return <ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
-    lessonBaseHref={baseHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount}
+    lessonBaseHref={baseHref} returnHref={returnHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount} initialMode={initialMode}
     nextLessonHref={nextLessonHref}
     narration={narration?{[lessonId]:narration}:undefined}
     onResume={async value=>{

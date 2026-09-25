@@ -30,12 +30,13 @@ type AttemptRow = { bhw_user_id: string; phase: "pretest" | "posttest"; score_pe
 
 export async function loadSubchapterGuide(
   db: SupabaseClient,
-  { courseId, moduleId, lessons, lang, lessonHref }: {
+  { courseId, moduleId, lessons, lang, lessonHref, includeRoster }: {
     courseId: string;
     moduleId: string;
     lessons: CourseLesson[];
     lang: Lang;
     lessonHref: (lessonId: string) => string;
+    includeRoster: boolean;
   },
 ) {
   const revisionIds = lessons.map((l) => l.published_revision_id).filter((id): id is string => Boolean(id));
@@ -45,15 +46,16 @@ export async function loadSubchapterGuide(
       ? db.from("course_lesson_revisions").select("id,read_sections").in("id", revisionIds)
           .returns<Array<{ id: string; read_sections: StableLessonSection[] }>>()
       : Promise.resolve({ data: [], error: null }),
-    db.from("users").select("id,full_name,org_units(name)").eq("role", "bhw").eq("status", "active")
-      .order("full_name").limit(ROSTER_LIMIT + 1).returns<UserRow[]>(),
-    db.from("course_progress").select("bhw_user_id,status,course_lesson_progress(lesson_id)").eq("course_id", courseId)
-      .returns<ProgressRow[]>(),
-    db.from("course_test_attempts").select("bhw_user_id,phase,score_percent,taken_at").eq("course_id", courseId)
-      .returns<AttemptRow[]>(),
-    db.from("competency_observations")
+    includeRoster ? db.from("users").select("id,full_name,org_units(name)").eq("role", "bhw").eq("status", "active")
+      .order("full_name").limit(ROSTER_LIMIT + 1).returns<UserRow[]>() : Promise.resolve({ data: [] as UserRow[], error: null }),
+    includeRoster ? db.from("course_progress").select("bhw_user_id,status,course_lesson_progress(lesson_id)").eq("course_id", courseId)
+      .returns<ProgressRow[]>() : Promise.resolve({ data: [] as ProgressRow[], error: null }),
+    includeRoster ? db.from("course_test_attempts").select("bhw_user_id,phase,score_percent,taken_at").eq("course_id", courseId)
+      .returns<AttemptRow[]>() : Promise.resolve({ data: [] as AttemptRow[], error: null }),
+    includeRoster ? db.from("competency_observations")
       .select("id,bhw_user_id,observer_user_id,module_id,objective_index,level,note,observed_at,activity_snapshot")
-      .eq("module_id", moduleId).order("observed_at", { ascending: false }).returns<CompetencyObservation[]>(),
+      .eq("module_id", moduleId).order("observed_at", { ascending: false }).returns<CompetencyObservation[]>()
+      : Promise.resolve({ data: [] as CompetencyObservation[], error: null }),
     // Where this subchapter has been run in the viewer's area (RLS-scoped).
     db.from("course_session_deliveries").select("id,session_id,module_id,duration_minutes,notes,recorded_at")
       .eq("module_id", moduleId).order("recorded_at", { ascending: false }).limit(5).returns<CourseSessionDelivery[]>(),

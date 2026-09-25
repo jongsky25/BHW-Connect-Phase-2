@@ -6,7 +6,7 @@ import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
-import {ChapterTestInsights,LessonFacilitatorGuide,SubchapterFacilitatorGuide} from '@/components/elearning/facilitator-guide';
+import {ChapterTestInsights,LessonFacilitatorGuide,SubchapterFacilitatorGuide,type SubchapterGuideView} from '@/components/elearning/facilitator-guide';
 import {CardProgress,subchapterSegments} from '@/components/progress/card-progress';
 import {ChapterSteps} from '@/components/progress/chapter-steps';
 import {ManualSummary} from '@/components/progress/manual-summary';
@@ -26,8 +26,8 @@ import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearnin
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
-export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string}>}) {
-  const [{programId,path=[]},{view}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined})]);
+export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string;mode?:string}>}) {
+  const [{programId,path=[]},{view,mode}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined,mode:undefined})]);
   if(path.length>3)notFound();
   const db=await createClient();
   // Independent reads run together; checks keep their original order.
@@ -155,7 +155,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       </>;
     } else {
       const moduleHref=`${chapterHref}/${subchapter.id}`;
-      crumbs.push({label:title(subchapter),...(path.length>2?{href:moduleHref}:{})});
+      crumbs.push({label:title(subchapter),...(path.length>2?{href:facilitator?`${moduleHref}?view=slides`:moduleHref}:{})});
       heading=title(subchapter);
       const own=lessons?.filter(l=>l.module_id===subchapter.id)??[];
       intro=own.length?text('Piliin ang isang maikling aralin.','Choose a short lesson.'):text('Inihahanda pa ang mga aralin para sa subchapter na ito.','Lessons for this subchapter are being prepared.');
@@ -164,17 +164,23 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       if(!lesson) {
         const mine=(await myProgress)?.chapters.find(x=>x.id===chapter.id)?.subchapters.find(x=>x.id===subchapter.id);
         const started=new Map(mine?.lessons.map(l=>[l.id,l.state]));
-        const guide=facilitator?await loadSubchapterGuide(db,{courseId:course.id,moduleId:subchapter.id,lessons:own,lang:loc,lessonHref:id=>`${moduleHref}/${id}`}):null;
+        const guideView:SubchapterGuideView=view==='competency'||view==='activities'||view==='run'||view==='bhws'||view==='slides'?view:'learning';
+        const guide=facilitator?await loadSubchapterGuide(db,{courseId:course.id,moduleId:subchapter.id,lessons:own,lang:loc,
+          lessonHref:id=>`${moduleHref}/${id}`,includeRoster:guideView==='bhws'}):null;
+        if(guide)intro=text('Pumili ng bahagi ng gabay o buksan ang BHW Slides.','Choose a guide section or open BHW Slides.');
+        const lessonCards=<ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} href={guide?`${moduleHref}/${l.id}?view=lesson&mode=slides`:`${moduleHref}/${l.id}`}>
+          <h2 className="font-semibold">{i+1}. {title(l)}</h2>
+          <p className="mt-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-sm">
+            <span className="text-ink/70">{text(`Aralin ${i+1} sa ${own.length}`,`Lesson ${i+1} of ${own.length}`)} · {text('Basahin / Slides','Read / Slides')}</span>
+            {!readOnly && <LessonStatus state={started.get(l.id)??(done.has(l.id)?'completed':'not_started')} locale={loc}/>}
+          </p>
+        </Link></li>)}</ol>;
         content=<>
-          {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
-          <ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} href={`${moduleHref}/${l.id}`}>
-            <h2 className="font-semibold">{i+1}. {title(l)}</h2>
-            <p className="mt-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-sm">
-              <span className="text-ink/70">{text(`Aralin ${i+1} sa ${own.length}`,`Lesson ${i+1} of ${own.length}`)} · {text('Basahin / Slides','Read / Slides')}</span>
-              {!readOnly && <LessonStatus state={started.get(l.id)??(done.has(l.id)?'completed':'not_started')} locale={loc}/>}
-            </p>
-          </Link></li>)}</ol>
-          {guide && <SubchapterFacilitatorGuide lang={loc} moduleId={subchapter.id} objectives={en?subchapter.objectives_en??[]:subchapter.objectives_fil??[]} {...guide}/>}
+          {guide ? <SubchapterFacilitatorGuide lang={loc} moduleId={subchapter.id} objectives={en?subchapter.objectives_en??[]:subchapter.objectives_fil??[]}
+            view={guideView} href={moduleHref} slidesContent={lessonCards} {...guide}/> : <>
+            {mine && mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} locale={loc} label={text(`Progreso sa ${title(subchapter)}`,`Progress in ${title(subchapter)}`)}/>}
+            {lessonCards}
+          </>}
         </>;
       } else {
         // Keep the existing pretest gate. Certified learners can review without retaking tests.
@@ -201,6 +207,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         heading=title(lesson); intro=readOnly&&!showGuide?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
         if(revisionResult.error || resumeResult.error || !revisionResult.data)throw new Error('Unable to load lesson');
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
+        const adjacentHref=(id:string)=>`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
         content=<>
           {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
@@ -210,11 +217,13 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {showGuide ? <LessonFacilitatorGuide lang={loc} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
             indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
-          nextLessonHref={own[lessonIndex+1]?`${moduleHref}/${own[lessonIndex+1].id}`:undefined}
+          returnHref={facilitator?`${moduleHref}?view=slides`:undefined}
+          initialMode={facilitator && mode==='slides'?'slides':undefined}
+          nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
-            {own[lessonIndex-1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex-1].id}`}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
-            {own[lessonIndex+1] && <Link className="rounded border p-3" href={`${moduleHref}/${own[lessonIndex+1].id}`}>{text('Susunod na aralin →','Next lesson →')}</Link>}
+            {own[lessonIndex-1] && <Link className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
+            {own[lessonIndex+1] && <Link className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
           </nav></>;
       }
     }

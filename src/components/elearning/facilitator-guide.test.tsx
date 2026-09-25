@@ -2,8 +2,10 @@ import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-li
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { NotesMarkdown } from "./notes-markdown";
 import { FacilitatorRoster } from "./facilitator-roster";
+import { SubchapterFacilitatorGuide } from "./facilitator-guide";
 import activityCards from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/activities.json";
 import type { FacilitatorActivity } from "@/lib/elearning/activities";
+import type { CourseModuleFacilitatorNotes } from "@/lib/elearning/types";
 
 const state = vi.hoisted(() => ({ rpc: vi.fn(), refresh: vi.fn() }));
 vi.mock("next/navigation", () => ({ useRouter: () => ({ refresh: state.refresh }) }));
@@ -14,6 +16,37 @@ beforeEach(() => {
   state.refresh.mockReset();
 });
 afterEach(cleanup);
+
+describe("SubchapterFacilitatorGuide", () => {
+  const shared = {
+    lang: "fil" as const,
+    lessons: [],
+    objectives: [],
+    notes: null,
+    roster: [],
+    observations: [],
+    moduleId: "module-1",
+    rosterTruncated: false,
+    href: "/training/program/chapter/module-1",
+    slidesContent: <p>Mga slide ng aralin</p>,
+  };
+
+  it("shows one selected subpage and keeps BHW Slides inside the guide card", () => {
+    render(<SubchapterFacilitatorGuide {...shared} view="slides" />);
+    const slidesLink = screen.getByRole("link", { name: /BHW Slides/ });
+    expect(slidesLink).toHaveAttribute("aria-current", "page");
+    expect(slidesLink).toHaveAttribute("href", "/training/program/chapter/module-1?view=slides");
+    expect(screen.getByText("Mga slide ng aralin")).toBeInTheDocument();
+    expect(screen.queryByText("1. Ano ang natututuhan ng BHW dito")).not.toBeInTheDocument();
+  });
+
+  it("keeps authored activities available as their own guide view", () => {
+    const notes = { activities: [activityCards[0]] } as unknown as CourseModuleFacilitatorNotes;
+    render(<SubchapterFacilitatorGuide {...shared} notes={notes} view="activities" />);
+    expect(screen.getByRole("link", { name: /Mga gawain/ })).toHaveAttribute("aria-current", "page");
+    expect(screen.getByRole("heading", { name: "Mga gawaing maaari mong gawin" })).toBeInTheDocument();
+  });
+});
 
 describe("NotesMarkdown", () => {
   it("renders lists, tables and emphasis", () => {

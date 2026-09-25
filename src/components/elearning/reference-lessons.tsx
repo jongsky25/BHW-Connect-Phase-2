@@ -30,7 +30,9 @@ export type ReferenceData = {
 type Props = ReferenceData & {
   modules: CourseModule[];
   initialLessonId?: string;
+  initialMode?: LessonModality;
   lessonBaseHref?: string;
+  returnHref?: string;
   readOnly?: boolean;
   lessonNumber?: number;
   lessonCount?: number;
@@ -87,10 +89,13 @@ export function ReferenceLessons(props: Props) {
   const initial=lessons.find(l=>l.id===props.initialLessonId);
   const initialResume=props.resumes.filter(r=>r.lesson_id===initial?.id).sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];
   const [selected, setSelected] = useState<string | null>(props.initialLessonId??null);
-  const [mode, setMode] = useState<LessonModality>(initialResume?.modality??"read");
+  const startingMode=props.initialMode??initialResume?.modality??"read";
+  const startingResume=props.resumes.filter(r=>r.lesson_id===initial?.id&&r.modality===startingMode)
+    .sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];
+  const [mode, setMode] = useState<LessonModality>(startingMode);
   const [resumes, setResumes] = useState(props.resumes);
   const [completed, setCompleted] = useState(props.completed);
-  const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,initialResume?.modality??"read",initialResume).id:null);
+  const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,startingMode,startingResume).id:null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   // Practice is formative, not a scored assessment. Keep attempts across
@@ -309,7 +314,7 @@ export function ReferenceLessons(props: Props) {
       ) : (
         item && (
           <>
-            {props.lessonBaseHref ? <Link className="self-start underline" href={props.lessonBaseHref}>{ui("← Bumalik sa mga aralin","← Back to lessons")}</Link> : <button
+            {props.lessonBaseHref ? <Link className="self-start underline" href={props.returnHref??props.lessonBaseHref}>{ui("← Bumalik sa mga aralin","← Back to lessons")}</Link> : <button
               type="button"
               className="self-start underline"
               onClick={() => {
@@ -456,7 +461,7 @@ export function ReferenceLessons(props: Props) {
               <p>{ui("Natapos ang aralin. Naka-save ang iyong progreso.", "Lesson complete. Your progress is saved.")}</p>
               {props.nextLessonHref ? <Link className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
                 {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
-              </Link> : props.lessonBaseHref ? <Link className="mt-3 inline-block underline" href={props.lessonBaseHref}>
+              </Link> : props.lessonBaseHref ? <Link className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
                 {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
               </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
                 {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
