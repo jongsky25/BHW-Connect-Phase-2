@@ -392,11 +392,18 @@ async function main() {
     const [existing] = await client.get(`courses?select=id,org_unit_id&id=eq.${lock.course}`);
     if(!existing || existing.org_unit_id !== orgUnitId) throw new Error('Reconcile course identity/org scope');
     if(args.mode === 'content') for(const id of args.modules) {
-      if(!lock.modules[id])throw new Error('Reconcile lock: existing module required');
-      const [mod] = await client.get(`course_modules?select=id,course_id&id=eq.${lock.modules[id]}`);
-      if(!mod || mod.course_id!==lock.course)throw new Error('Reconcile module identity');
-      const converted=await client.get(`course_lessons?select=id&module_id=eq.${mod.id}&limit=1`);
-      if(converted.length)throw new Error('Use lessons mode for converted subchapters');
+      const authored = content.modules.find(m => m.id === id);
+      if(lock.modules[id]) {
+        const [mod] = await client.get(`course_modules?select=id,course_id&id=eq.${lock.modules[id]}`);
+        if(!mod || mod.course_id!==lock.course)throw new Error('Reconcile module identity');
+        const converted=await client.get(`course_lessons?select=id&module_id=eq.${mod.id}&limit=1`);
+        if(converted.length)throw new Error('Use lessons mode for converted subchapters');
+      } else {
+        // A new module is created from its complete authored source. Never
+        // attach content to an untracked row or overwrite another position.
+        const occupied = await client.get(`course_modules?select=id&course_id=eq.${lock.course}&position=eq.${authored.position}`);
+        if(occupied.length)throw new Error(`Reconcile module position ${authored.position}: existing row has no lock`);
+      }
     }
   }
 
@@ -429,6 +436,9 @@ async function main() {
   const modulesToLoad = args.modules ? content.modules.filter((m) => args.modules.includes(m.id)) : content.modules;
   for (const mod of args.mode === 'content' ? modulesToLoad : []) {
     const moduleId = await syncModule(client, courseId, mod, ctx, plan);
+    // Keep the identity if a later notes/visuals write fails. The workflow
+    // uploads this lock as an artifact even on failure for safe reconciliation.
+    if (args.apply) writeLock(args.course,args.project,lock);
     await syncFacilitatorNotes(client, moduleId, mod.facilitatorNotes, plan, args.apply);
     await syncVisuals(client, moduleId, mod.visuals, plan, args.apply);
   }
