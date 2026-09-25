@@ -6,8 +6,9 @@
 // request and the clips are joined with a short pause: the timings then
 // come from the measured length of each clip, not from an estimate.
 //
-// Output is 24 kHz 16-bit mono PCM, re-encoded here to MP3 so a section
-// costs ~6 KB/s on a BHW's mobile data instead of ~48 KB/s.
+// Output is 24 kHz 16-bit mono PCM, re-encoded here to MP3 (48 kbps by
+// default; training:narrate asks for 32 kbps, the content standard's cap)
+// so a section costs a few KB/s on a BHW's mobile data.
 //
 // fetch and sleep are injected so the request/retry/assembly logic is
 // testable without a network call (gemini.test.mjs).
@@ -23,7 +24,7 @@ export const GEMINI_VOICE = "Kore";
 const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const DEFAULT_SAMPLE_RATE = 24000;
 const GAP_MS = 300;
-const MP3_KBPS = 48;
+const DEFAULT_MP3_KBPS = 48;
 const MAX_ATTEMPTS = 6;
 
 const STYLES = {
@@ -79,8 +80,8 @@ function toInt16(buf) {
   return new Int16Array(copy.buffer, copy.byteOffset, copy.length / 2);
 }
 
-function encodeMp3(samples, sampleRate) {
-  const encoder = new Mp3Encoder(1, sampleRate, MP3_KBPS);
+function encodeMp3(samples, sampleRate, kbps) {
+  const encoder = new Mp3Encoder(1, sampleRate, kbps);
   const chunks = [];
   const block = 1152;
   for (let i = 0; i < samples.length; i += block) {
@@ -140,6 +141,10 @@ export async function synthesizeWithGemini(zones, language, options) {
     apiKey,
     model = GEMINI_TTS_MODEL,
     voice = GEMINI_VOICE,
+    kbps = DEFAULT_MP3_KBPS,
+    // What is sent for a zone. Timings always keep zone.text (the displayed
+    // words), which is what the renderer matches against the revision.
+    speak = (zone) => zone.text,
     fetchImpl = fetch,
     sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
   } = options;
@@ -147,7 +152,7 @@ export async function synthesizeWithGemini(zones, language, options) {
 
   const clips = [];
   for (const zone of zones) {
-    clips.push(await synthesizeZoneText(zone.text, language, { apiKey, model, voice, fetchImpl, sleep }));
+    clips.push(await synthesizeZoneText(speak(zone), language, { apiKey, model, voice, fetchImpl, sleep }));
   }
 
   const sampleRate = clips[0]?.sampleRate ?? DEFAULT_SAMPLE_RATE;
@@ -176,7 +181,7 @@ export async function synthesizeWithGemini(zones, language, options) {
 
   return {
     provider: "gemini",
-    audioBytes: encodeMp3(joined, sampleRate),
+    audioBytes: encodeMp3(joined, sampleRate, kbps),
     format: "mp3",
     durationSeconds: total / sampleRate,
     timings,

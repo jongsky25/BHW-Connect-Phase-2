@@ -130,6 +130,12 @@ test("committed narration is current for every converted subchapter", () => {
     const frames = mp3AudioFrames(readFileSync(file(item.src)));
     const seconds = frames.reduce((n, f) => n + f.samples / f.sampleRate, 0);
     assert.ok(Math.abs(seconds - item.existing.duration_seconds) < 0.01, `${item.src} duration`);
-    assert.equal(item.existing.timings.at(-1).end_ms, Math.round(seconds * 1000));
+    const fileMs = Math.round(seconds * 1000);
+    const lastEnd = item.existing.timings.at(-1).end_ms;
+    if (item.provider === "gemini") {
+      // One encode of the whole section: LAME pads the final frames, so the
+      // file runs slightly past the last sentence.
+      assert.ok(lastEnd <= fileMs && fileMs - lastEnd < 150, `${item.src} last sentence ends at ${lastEnd} of ${fileMs} ms`);
+    } else assert.equal(lastEnd, fileMs);
   }
 });

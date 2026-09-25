@@ -13,8 +13,20 @@
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
+import { geminiVoiceId } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
+// Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.
+export const GEMINI_NARRATION_KBPS = 32;
+// Voice per provider and language. The voice string is part of the content
+// hash (and so of the file name): switching provider re-renders a section.
+export const PROVIDER_VOICES = {
+  edge: NARRATION_VOICES,
+  gemini: { fil: geminiVoiceId(), en: geminiVoiceId() },
+};
+export const providerOfVoice = (voice) => (voice?.startsWith("gemini:") ? "gemini" : "edge");
+const hashVoice = (provider, voice) =>
+  provider === "gemini" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k` : `${voice}|${SPEECH_RULES}`;
 export const AUDIO_ROOT = "/training/audio";
 // Bump when spokenText changes so existing audio is re-rendered.
 export const SPEECH_RULES = "speech-v2";
@@ -128,6 +140,29 @@ export function assembleNarration(zones, clips) {
   return { bytes: Buffer.concat(parts), timings, durationSeconds: Math.round((samples / sampleRate) * 1000) / 1000 };
 }
 
+// Renders one planned item. Synthesizers are injected (the CLI passes the
+// real ones; tests pass fakes). Both paths send spokenText but record the
+// displayed zone text in timings, which is what timingsMatchSection compares
+// against the published revision.
+export async function renderNarration(item, { synthesizeUtterance, synthesizeWithGemini, geminiApiKey, fetchImpl }) {
+  if (item.provider === "gemini") {
+    const audio = await synthesizeWithGemini(item.zones, item.language, {
+      apiKey: geminiApiKey,
+      kbps: GEMINI_NARRATION_KBPS,
+      speak: (zone) => spokenText(zone.text, item.language),
+      ...(fetchImpl ? { fetchImpl } : {}),
+    });
+    // The encoder pads the last frame, so the file runs a few ms past the
+    // final sentence: record the file's own length, as the Edge path does.
+    const frames = mp3AudioFrames(audio.audioBytes);
+    const seconds = frames.reduce((n, f) => n + f.samples, 0) / frames[0].sampleRate;
+    return { bytes: audio.audioBytes, timings: audio.timings, durationSeconds: Math.round(seconds * 1000) / 1000 };
+  }
+  const clips = [];
+  for (const zone of item.zones) clips.push(await synthesizeUtterance(spokenText(zone.text, item.language), item.voice));
+  return assembleNarration(item.zones, clips);
+}
+
 export const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 
 export function narrationSrc(moduleKey, lessonKey, sectionId, language, contentHash) {
@@ -139,8 +174,11 @@ export function narrationSrc(moduleKey, lessonKey, sectionId, language, contentH
  *   lessons come from loadReferenceModule(...).lessons
  * @param {object} manifest - the current narration manifest
  * @param {(src: string) => string | null} fileHash - sha256 of a public file, or null if missing
+ * @param {{ provider?: "edge" | "gemini" }} [options] - with no provider, each
+ *   section keeps the provider its current audio used (new sections: edge), so
+ *   a plain re-run after a text edit never swaps a re-voiced chapter back.
  */
-export function planReferenceNarration(modules, manifest, fileHash) {
+export function planReferenceNarration(modules, manifest, fileHash, { provider: chosen } = {}) {
   const items = [];
   for (const { key: moduleKey, lessons } of modules) {
     for (const lesson of lessons) {
@@ -153,10 +191,11 @@ export function planReferenceNarration(modules, manifest, fileHash) {
             takeaway: section[`takeaway_${language}`],
           });
           if (!zones.length) continue;
-          const voice = NARRATION_VOICES[language];
-          const contentHash = computeContentHash(zones, `${voice}|${SPEECH_RULES}`);
-          const src = narrationSrc(moduleKey, lessonKey, section.id, language, contentHash);
           const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];
+          const provider = chosen ?? providerOfVoice(existing?.voice);
+          const voice = PROVIDER_VOICES[provider][language];
+          const contentHash = computeContentHash(zones, hashVoice(provider, voice));
+          const src = narrationSrc(moduleKey, lessonKey, section.id, language, contentHash);
           const current =
             existing?.content_hash === contentHash && existing.src === src && fileHash(src) === existing.sha256;
           items.push({
@@ -164,12 +203,15 @@ export function planReferenceNarration(modules, manifest, fileHash) {
             lessonKey,
             sectionId: section.id,
             language,
+            provider,
             voice,
             zones,
             contentHash,
             src,
             action: current ? "skip" : "render",
             existing: current ? existing : null,
+            // Audio this item replaces; kept if the render is deferred or fails.
+            previous: current ? null : (existing ?? null),
             charCount: zones.reduce((n, z) => n + z.text.length, 0),
           });
         }
@@ -199,7 +241,13 @@ export function buildManifest(previous, modules, results) {
     };
   }
   const sorted = Object.fromEntries(Object.keys(lessons).sort().map((k) => [k, lessons[k]]));
-  return { format: "mp3", voices: NARRATION_VOICES, lessons: sorted };
+  // Summary only (the app reads each entry's own voice): every voice in use, per language.
+  const voices = { fil: new Set(), en: new Set() };
+  for (const lesson of Object.values(sorted))
+    for (const section of Object.values(lesson.sections))
+      for (const [language, entry] of Object.entries(section)) voices[language]?.add(entry.voice);
+  const summary = Object.fromEntries(Object.entries(voices).map(([l, set]) => [l, [...set].sort().join(", ")]));
+  return { format: "mp3", voices: summary, lessons: sorted };
 }
 
 export function referencedSources(manifest) {
