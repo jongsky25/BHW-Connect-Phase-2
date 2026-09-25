@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan.",
+      "observable_en": "Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning.",
+      "not_yet_fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
+      "not_yet_en": "Continues an unsafe route or unprotected task simply to finish the target.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang limang bahagi ng checklist; natutukoy ang unsafe task na ihihinto at supervisor na kokontakin; kasama ang heat, route at return-time plan. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Completes the five checklist fields, identifies the unsafe task to pause and supervisor to contact, and includes heat, route and return-time planning. Completes this without prompting.",
+        "kailangan_practice_fil": "May supplies at ruta ngunit kulang ang contact o pause condition; ipapunan bago muling magbrief.",
+        "kailangan_practice_en": "Lists supplies and route but misses a contact or pause condition; complete these before repeating the briefing.",
+        "hindi_pa_fil": "Itinutuloy ang mapanganib na ruta o gawaing kulang ang proteksyon para lang matapos ang target.",
+        "hindi_pa_en": "Continues an unsafe route or unprotected task simply to finish the target."
+      }
+    }
+  ]
+}

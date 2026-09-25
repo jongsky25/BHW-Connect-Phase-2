@@ -1,0 +1,203 @@
+{
+  "manifest": {
+    "lesson_key": "communication-explain",
+    "position": 2,
+    "title_fil": "Empathy at malinaw na paliwanag",
+    "title_en": "Empathy and clear explanations",
+    "objectives_fil": [
+      "Sa isang sensitibong usapan, kilalanin ang concern, magbigay ng isang hakbang na saklaw ng BHW at ipasabi ito sa sariling salita ng kausap."
+    ],
+    "objectives_en": [
+      "In a sensitive conversation, acknowledge the concern, give one next step within the BHW role and ask the person to explain it in their own words."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "teach-back",
+      "concept_ids": [
+        "m6.health-promotion"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang malinaw na mensahe ay nasusuri sa sariling paliwanag ng kausap, hindi sa pagtango lamang.",
+      "takeaway_en": "Check a clear message through the person’s own explanation, not a nod alone.",
+      "check": null
+    },
+    {
+      "id": "family-planning",
+      "concept_ids": [
+        "m6.family-planning"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pakikipag-usap tungkol sa family planning ay nagbibigay ng puwang sa pagpili at tamang counseling.",
+      "takeaway_en": "Family-planning communication supports the person’s choice and appropriate counseling.",
+      "check": null
+    },
+    {
+      "id": "distress",
+      "concept_ids": [
+        "m6.distress"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pakikinig ay suporta; ang diagnosis at pangangalagang klinikal ay para sa kwalipikadong health professional.",
+      "takeaway_en": "Listening offers support; diagnosis and clinical care belong with a qualified health professional.",
+      "check": null
+    },
+    {
+      "id": "smoking",
+      "concept_ids": [
+        "m6.smoking"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mas madaling magplano kapag narinig ang layunin at hadlang ng mismong tao.",
+      "takeaway_en": "Planning improves when the person’s own goal and barriers are heard.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m6.health-promotion",
+        "m6.family-planning",
+        "m6.distress",
+        "m6.smoking"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
+      "takeaway_en": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m6.health-promotion",
+        "m6.family-planning",
+        "m6.distress",
+        "m6.smoking"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
+      "takeaway_en": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
+      "check": {
+        "prompt_fil": "Sa teach-back, iba ang planong ikinuwento ni Liza. Ano ang susunod?",
+        "prompt_en": "During teach-back, Liza describes a different plan. What next?",
+        "options": [
+          {
+            "fil": "Sabihing mali at tapusin ang usapan.",
+            "en": "Say it is wrong and end the conversation."
+          },
+          {
+            "fil": "Ibigay ang parehong paliwanag nang mas mabilis.",
+            "en": "Give the same explanation more quickly."
+          },
+          {
+            "fil": "Ipaliwanag sa ibang paraan at ipasabi muli ang hakbang.",
+            "en": "Explain another way and ask her to describe the step again."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "Ang ikatlong sagot ay inaayos ang paliwanag at muling sinusuri ito. Ang pagsisi ay maaaring magpatahimik sa kausap; ang mas mabilis na pag-uulit ay hindi tumutugon sa hindi malinaw.",
+        "feedback_en": "The third response repairs the explanation and checks again. Blame may silence the person; faster repetition does not address the misunderstanding."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m6.health-promotion",
+      "read_ids": [
+        "teach-back",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-teach-back",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "ahrq-teach-back"
+      ]
+    },
+    {
+      "id": "m6.family-planning",
+      "read_ids": [
+        "family-planning",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-family-planning",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "ahrq-teach-back"
+      ]
+    },
+    {
+      "id": "m6.distress",
+      "read_ids": [
+        "distress",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-distress",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "ahrq-teach-back"
+      ]
+    },
+    {
+      "id": "m6.smoking",
+      "read_ids": [
+        "smoking",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-smoking",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "ahrq-teach-back"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        28
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        18,
+        19,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "ahrq-teach-back",
+      "title": "AHRQ — Use the Teach-Back Method: Tool 5",
+      "url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html"
+    }
+  ],
+  "assets": []
+}

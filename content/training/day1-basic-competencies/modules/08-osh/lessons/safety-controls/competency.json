@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps.",
+      "observable_en": "Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps.",
+      "not_yet_fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
+      "not_yet_en": "Suggests recapping, compression, ordinary bins or continuing without essential protection.",
+      "levels": {
+        "kaya_na_fil": "Tama ang limang hazard-control pair; pinipili ang pause at escalation kung kulang ang mahalagang proteksyon; hindi gumagamit ng ordinaryong basurahan o reuse para sa sharps. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Matches all five hazard-control pairs, pauses and escalates when essential protection is missing, and does not use ordinary bins or reuse for sharps. Completes this without prompting.",
+        "kailangan_practice_fil": "Ligtas ang desisyon ngunit nalilito ang control para sa dalawang hazard; ipares muli at ipaliwanag ang dahilan.",
+        "kailangan_practice_en": "Makes a safe decision but mixes up controls for two hazards; rematch and explain.",
+        "hindi_pa_fil": "Nagmumungkahi ng recapping, pagsiksik, ordinaryong basurahan o pagpapatuloy nang walang mahalagang proteksyon.",
+        "hindi_pa_en": "Suggests recapping, compression, ordinary bins or continuing without essential protection."
+      }
+    }
+  ]
+}

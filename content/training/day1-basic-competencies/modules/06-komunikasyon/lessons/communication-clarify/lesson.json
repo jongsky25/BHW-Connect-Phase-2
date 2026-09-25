@@ -1,0 +1,136 @@
+{
+  "manifest": {
+    "lesson_key": "communication-clarify",
+    "position": 1,
+    "title_fil": "Magtanong at maglinaw",
+    "title_en": "Ask and clarify",
+    "objectives_fil": [
+      "Sa kuwento ng hindi pagpunta sa health center, gumamit ng bukas na tanong, linawin ang isang detalye at kumpirmahin ang buod nang hindi isinusubo ang sagot."
+    ],
+    "objectives_en": [
+      "Given a missed-visit story, use an open question, clarify one detail and confirm a summary without leading the answer."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "open-question",
+      "concept_ids": [
+        "m6.clarify"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Bukas na tanong para sa kuwento; tiyak na tanong para sa paglilinaw ng impormasyon.",
+      "takeaway_en": "Use open questions for the story and focused questions to clarify information.",
+      "check": null
+    },
+    {
+      "id": "barriers",
+      "concept_ids": [
+        "m6.barriers"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang hadlang sa serbisyo ay mahalagang impormasyon, hindi dahilan para husgahan ang pamilya.",
+      "takeaway_en": "A barrier to services is important information, not a reason to judge a family.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m6.clarify",
+        "m6.barriers"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.",
+      "takeaway_en": "A clear question elicits information rather than the answer we expect.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m6.clarify",
+        "m6.barriers"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang malinaw na tanong ay naglalabas ng impormasyon, hindi ng sagot na gusto nating marinig.",
+      "takeaway_en": "A clear question elicits information rather than the answer we expect.",
+      "check": {
+        "prompt_fil": "Sinabi ni Liza, “Hindi puwede noong araw na iyon.” Alin ang tamang paglilinaw?",
+        "prompt_en": "Liza says, “That day did not work.” Which clarification helps?",
+        "options": [
+          {
+            "fil": "“Ano ang nakaabala sa iyo noong araw na iyon?”",
+            "en": "“What got in the way that day?”"
+          },
+          {
+            "fil": "“Ibig mong sabihin, ayaw mong pumunta?”",
+            "en": "“You mean you did not want to go?”"
+          },
+          {
+            "fil": "“Hindi ba sapat ang paalala namin?”",
+            "en": "“Was our reminder not enough?”"
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang tanong ay nagpapaliwanag ng hadlang. Ang ikalawa ay ipinapalagay ang motibo; ang ikatlo ay nililimitahan agad ang usapan sa paalala. Pagkatapos ng sagot, linawin ang petsa o ibang kailangang detalye.",
+        "feedback_en": "The first question explores the barrier. The second assumes motivation; the third limits the conversation to reminders. After the response, clarify the date or another needed detail."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m6.clarify",
+      "read_ids": [
+        "open-question",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-open-question",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m6.barriers",
+      "read_ids": [
+        "barriers",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-barriers",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        28
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        18,
+        19,
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

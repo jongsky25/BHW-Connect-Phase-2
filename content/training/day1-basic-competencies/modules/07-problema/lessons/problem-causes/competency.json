@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May dalawang sangay ang map; magkahiwalay ang natiyak at hinala; bawat sangay ay may paraan ng beripikasyon; kasama ang pananaw ng residente.",
+      "observable_en": "Maps two branches, separates evidence from hypotheses, gives a verification step for each and includes the resident’s perspective.",
+      "not_yet_fil": "Isang mapanising dahilan ang itinuturing na tiyak dahil umabot sa limang tanong.",
+      "not_yet_en": "Treats a blaming explanation as proven because five questions were asked.",
+      "levels": {
+        "kaya_na_fil": "May dalawang sangay ang map; magkahiwalay ang natiyak at hinala; bawat sangay ay may paraan ng beripikasyon; kasama ang pananaw ng residente. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Maps two branches, separates evidence from hypotheses, gives a verification step for each and includes the resident’s perspective. Completes this without prompting.",
+        "kailangan_practice_fil": "May dalawang sangay ngunit walang beripikasyon; ipatukoy ang kausap o rekord para sa bawat arrow.",
+        "kailangan_practice_en": "Draws two branches without verification; prompt for the person or record behind each arrow.",
+        "hindi_pa_fil": "Isang mapanising dahilan ang itinuturing na tiyak dahil umabot sa limang tanong.",
+        "hindi_pa_en": "Treats a blaming explanation as proven because five questions were asked."
+      }
+    }
+  ]
+}
