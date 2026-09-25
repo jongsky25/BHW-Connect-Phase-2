@@ -1,8 +1,9 @@
 // @vitest-environment node
 import { test } from "vitest";
 import assert from "node:assert/strict";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import { NARRATION_MANIFEST, narratedModules } from "../lib/narration-sources.mjs";
 import { loadReferenceModule } from "../lib/reference-content.mjs";
 import {
   assembleNarration,
@@ -115,11 +116,11 @@ test("plan renders new or edited sections and skips unchanged ones", () => {
 // manifest hash. Editing lesson text without `npm run training:narrate --
 // --apply` fails here instead of silently hiding the player for learners.
 test("committed narration is current for every converted subchapter", () => {
-  const modulesRoot = "content/training/day1-basic-competencies/modules";
-  const manifest = JSON.parse(readFileSync("content/training/day1-basic-competencies/narration.json", "utf8"));
-  const modules = readdirSync(modulesRoot)
-    .filter((key) => existsSync(path.join(modulesRoot, key, "lessons")))
-    .map((key) => ({ key, lessons: loadReferenceModule(path.join(modulesRoot, key), "public").lessons }));
+  const manifest = JSON.parse(readFileSync(NARRATION_MANIFEST, "utf8"));
+  const modules = narratedModules(".").map(({ key, dir }) => ({ key, lessons: loadReferenceModule(dir, "public").lessons }));
+  // The page looks narration up by lesson key alone, across chapters.
+  const lessonKeys = modules.flatMap((m) => m.lessons.map((l) => l.manifest.lesson_key));
+  assert.equal(new Set(lessonKeys).size, lessonKeys.length, "lesson keys must be unique across narrated chapters");
   const file = (src) => path.join("public", src.slice(1));
   const items = planReferenceNarration(modules, manifest, (src) => (existsSync(file(src)) ? sha256(readFileSync(file(src))) : null));
   const stale = items.filter((i) => i.action !== "skip").map((i) => `${i.lessonKey}/${i.sectionId}/${i.language}`);

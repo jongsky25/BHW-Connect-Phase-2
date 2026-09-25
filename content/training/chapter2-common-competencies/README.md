@@ -14,6 +14,8 @@ This package preserves the authoring sources for all 55 lessons across Chapters 
 - `standards-status.json`: implemented content versus platform work still needed.
 - Source text and hashes: `docs/source-material/chapter2-common-competencies/`.
 
+Read-mode narration for all 55 lessons (Filipino and English) is rendered from these drafts by `npm run training:narrate`; see `content/training/README.md`.
+
 Run `node scripts/chapter2-validate.mjs` for local, read-only validation. It uses the current reference parser and checks the chapter map, hour allocation, draft isolation, density, rubric/guide alignment and printable material links. Run `npx vitest run scripts/tests/chapter2-content.test.mjs scripts/tests/chapter2-preview.test.mjs scripts/tests/chapter2-batch2-preview.test.mjs scripts/tests/chapter2-ipc.test.mjs scripts/tests/chapter2-firstaid.test.mjs scripts/tests/chapter2-plants.test.mjs scripts/tests/chapter2-drrm.test.mjs scripts/tests/reference-content.test.mjs` for regression, rejection and DOM simulation tests. DOM simulation does not establish visual layout or assistive-technology behavior.
 
 Run `node scripts/chapter2-preview.mjs --module 2.2 --output <review-directory>` (or `--module 2.3` / `--module 2.4` / `--module 2.5` / `--module 2.6` / `--module 2.7`) to generate separate learner, participant workbook and private facilitator HTML review files. Omitting `--module` preserves the 2.1 preview. The learner file intentionally contains no facilitator notes. These files are local review artifacts, not production app routes. Their print styles supply participant and observer sheets without a network connection. Staff must distribute learner cards separately from private answer material.
