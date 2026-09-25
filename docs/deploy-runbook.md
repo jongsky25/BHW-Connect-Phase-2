@@ -256,11 +256,39 @@ changed. The two projects now differ only by the survey helpers
 (pilot-only, 3 anon + 3 authenticated) and the consent/password grants
 (CI-only, 2 anon): pilot 27/98, CI 26/95.
 
-Not fixed here (follow-ups): commit the pilot's survey-helper version of `fix_surveys_org_unit_rls_composability` as a
-migration, or bring the pilot's survey policies back to the repo's shape. Add
-a corrective migration revoking `public, anon` execute on `rpc_give_consent()`
-and `rpc_complete_password_change()` so the repo, and therefore CI, matches
-the pilot.
+**Update: consent/password revoke applied to CI on 2026-09-25.** The corrective
+migration `20260930000000_revoke_anon_consent_password_rpcs.sql` revokes
+`public, anon` execute on `rpc_give_consent()` and
+`rpc_complete_password_change()` and re-grants `authenticated`. Both functions
+act only on the caller's row via `auth.uid()`, and their only callers
+(`consent-form.tsx`, `change-password-form.tsx`) run signed in, so the only
+behaviour change is that anon gets a permission error instead of a no-op.
+
+| Project | `revoke_anon_consent_password_rpcs` |
+|---|---|
+| `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925012507` |
+| pilot (`ltzicxyefizxoqhfuuzc`) | not applied, by owner decision. Its July `harden_function_grants` rows already give the same grants, so applying it would only add a history row |
+
+Verification on CI:
+
+```sql
+select p.oid::regprocedure::text sig, p.proacl::text acl,
+  has_function_privilege('anon', p.oid, 'execute') anon_x,
+  has_function_privilege('authenticated', p.oid, 'execute') auth_x
+from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+where n.nspname = 'public' and p.proname in ('rpc_give_consent', 'rpc_complete_password_change');
+```
+
+Result: both `acl = {postgres=X/postgres,authenticated=X/postgres,service_role=X/postgres}`,
+`anon_x = false`, `auth_x = true`. This is the same ACL the pilot has, and
+the bodies are unchanged. Security advisor, before → after: anon 26 → 24 (the
+two findings for these functions removed), authenticated 95 → 95, nothing
+added. The only remaining difference is the pilot's survey helpers: pilot
+27/98, CI 24/95.
+
+Not fixed here (follow-up): commit the pilot's survey-helper version of
+`fix_surveys_org_unit_rls_composability` as a migration, or bring the pilot's
+survey policies back to the repo's shape.
 
 ## Rolling out a risky feature
 
