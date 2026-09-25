@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-privacy-and-inclusion",
+  "objective_id": "privacy-and-inclusion.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Inilalantad nito ang impormasyong hindi kailangang marinig ng iba.",
+          "en": "This exposes information others do not need."
+        },
+        {
+          "fil": "Dinadagdagan nito ang pagbabahagi nang hindi muna tinatanong si Alex.",
+          "en": "This involves others without first asking Alex."
+        },
+        {
+          "fil": "Tinutugunan nito ang alalahanin nang hindi inilalantad ang kondisyon.",
+          "en": "This addresses the concern without disclosing the condition."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Tumutugon ito sa hiniling na tulong at pribadong usapan.",
+          "en": "This respects the requested support and privacy."
+        },
+        {
+          "fil": "Gumagawa ito ng hadlang sa halip na magbigay ng tulong.",
+          "en": "This creates a barrier instead of support."
+        },
+        {
+          "fil": "Hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form.",
+          "en": "Another person is not automatically authorized to see the form."
+        }
+      ]
+    }
+  ]
+}

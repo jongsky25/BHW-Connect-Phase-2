@@ -1,0 +1,171 @@
+{
+  "activities": [
+    {
+      "id": "activity-effective-safe-person-centered",
+      "lesson_key": "effective-safe-person-centered",
+      "kind": "scenario-comparison",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 120,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/effective-safe-person-centered/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Ihambing ang dalawang usapan. Sa bawat katangian, itala ang ebidensiya at isang pagbabago. Ipaliwanag ang pagkakaiba sa kapareha.",
+        "en": "Compare the two encounters. For each dimension, record the evidence and one improvement. Explain the difference to a partner."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          29
+        ],
+        "F": [
+          34
+        ],
+        "P": [
+          29,
+          31,
+          32,
+          37
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-privacy-and-inclusion",
+      "lesson_key": "privacy-and-inclusion",
+      "kind": "role-play",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/privacy-and-inclusion/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gumanap bilang Lorna, Alex at tagamasid. Mag-alok ng pribadong usapan, itanong ang gustong tulong at ipaliwanag ang susunod na hakbang.",
+        "en": "Play Lorna, Alex and observer. Offer privacy, ask about preferred support and explain the next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          30
+        ],
+        "F": [
+          34
+        ],
+        "P": [
+          30,
+          33,
+          34,
+          35
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-timely-integrated-service",
+      "lesson_key": "timely-integrated-service",
+      "kind": "pathway-worksheet",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/timely-integrated-service/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Iguhit ang apat na hakbang sa kuwento. Markahan ang isang hadlang. Gumawa ng mungkahi na may responsable, kumpirmasyon, petsa at panukat.",
+        "en": "Draw the four steps in the story. Mark one barrier. Propose a change with an owner, confirmation, date and measure."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          30
+        ],
+        "F": [
+          34
+        ],
+        "P": [
+          33,
+          37
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-seven-s-improvement",
+      "lesson_key": "seven-s-improvement",
+      "kind": "simulated-inspection",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 120,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/seven-s-improvement/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gamit ang ligtas na props, suriin ang lahat ng 7S sa mesa ni Tess. Magtalaga ng isang pagbabago, responsable, petsa at ebidensiya.",
+        "en": "Using safe props, inspect all seven categories at Tess’s desk. Assign one improvement, owner, date and evidence."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          30
+        ],
+        "F": [
+          34
+        ],
+        "P": [
+          36
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    }
+  ]
+}

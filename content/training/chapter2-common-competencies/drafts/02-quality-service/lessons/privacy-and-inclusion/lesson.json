@@ -1,0 +1,244 @@
+{
+  "manifest": {
+    "lesson_key": "privacy-and-inclusion",
+    "position": 1,
+    "title_fil": "Panatilihin ang pribadong usapan at pantay na serbisyo",
+    "title_en": "Protect privacy and include everyone",
+    "objectives_fil": [
+      "Sa usapan kay Alex, protektahan ang pribadong detalye at mag-alok ng tulong sa pag-unawa nang walang panghuhusga."
+    ],
+    "objectives_en": [
+      "In a conversation with Alex, protect private details and offer help with understanding without judgment."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.quality.privacy",
+        "c2.quality.equity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Paano tutulong nang hindi inilalantad?",
+      "takeaway_en": "How can you help without disclosure?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.quality.privacy",
+        "c2.quality.equity",
+        "c2.quality.respect"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gumanap bilang Lorna, Alex at tagamasid. Mag-alok ng pribadong usapan, itanong ang gustong tulong at ipaliwanag ang susunod na hakbang.",
+      "takeaway_en": "Play Lorna, Alex and observer. Offer privacy, ask about preferred support and explain the next step.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.quality.privacy"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tinutugunan nito ang alalahanin nang hindi inilalantad ang kondisyon.",
+      "takeaway_en": "This addresses the concern without disclosing the condition.",
+      "check": {
+        "prompt_fil": "May nagtanong sa pila tungkol sa kondisyon ni Alex. Ano ang tugon?",
+        "prompt_en": "Someone in the queue asks about Alex’s condition. What should Lorna do?",
+        "options": [
+          {
+            "fil": "Basahin ang form para marinig ng buong pila.",
+            "en": "Read the form so the whole queue can hear."
+          },
+          {
+            "fil": "Tanungin ang kapitbahay upang mas mabilis makakuha ng detalye.",
+            "en": "Ask a neighbor to obtain the details more quickly."
+          },
+          {
+            "fil": "Mag-alok ng pribadong usapan.",
+            "en": "Offer a private conversation."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Inilalantad nito ang impormasyong hindi kailangang marinig ng iba. 2: Dinadagdagan nito ang pagbabahagi nang hindi muna tinatanong si Alex. 3: Tinutugunan nito ang alalahanin nang hindi inilalantad ang kondisyon.",
+        "feedback_en": "1: This exposes information others do not need. 2: This involves others without first asking Alex. 3: This addresses the concern without disclosing the condition."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.quality.privacy",
+        "c2.quality.equity",
+        "c2.quality.respect"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Hindi inilalantad ang kondisyon; humihingi ng pahintulot sa lugar at tulong; nagbibigay ng paliwanag nang walang panghuhusga.",
+      "takeaway_en": "Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.quality.privacy",
+        "c2.quality.respect"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.quality.equity",
+        "c2.quality.respect"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tumutugon ito sa hiniling na tulong at pribadong usapan.",
+      "takeaway_en": "This respects the requested support and privacy.",
+      "check": {
+        "prompt_fil": "Hiniling ni Alex na basahin nang dahan-dahan ang form. Ano ang angkop?",
+        "prompt_en": "Alex asks for the form to be read slowly. What is appropriate?",
+        "options": [
+          {
+            "fil": "Basahin sa napagkasunduang lugar.",
+            "en": "Read it in the agreed setting."
+          },
+          {
+            "fil": "Sabihing bumalik lamang kapag kaya nang basahin mag-isa.",
+            "en": "Ask Alex to return only when able to read it alone."
+          },
+          {
+            "fil": "Ipasa sa unang kakilala sa pila nang hindi muna nagtatanong.",
+            "en": "Hand it to the first acquaintance in the queue without asking."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tumutugon ito sa hiniling na tulong at pribadong usapan. 2: Gumagawa ito ng hadlang sa halip na magbigay ng tulong. 3: Hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form.",
+        "feedback_en": "1: This respects the requested support and privacy. 2: This creates a barrier instead of support. 3: Another person is not automatically authorized to see the form."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.quality.privacy",
+        "c2.quality.equity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.quality.privacy",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.quality.equity",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.quality.respect",
+      "read_ids": [
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation",
+      "pdf_pages": [
+        30,
+        33,
+        34,
+        35
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/privacy-and-inclusion-4cc6cdfc2201.svg",
+      "content_hash": "4cc6cdfc22012d3365f48ea158ef5b03134afba58de5c3b90f5e9ebde70feace",
+      "alt_fil": "Tatlong kahon: Pribado, Pantay, May respeto.",
+      "alt_en": "Three boxes: Private, Equitable, Respectful.",
+      "caption_fil": "Hindi inilalantad ang kondisyon; humihingi ng pahintulot sa lugar at tulong; nagbibigay ng paliwanag nang walang panghuhusga.",
+      "caption_en": "Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

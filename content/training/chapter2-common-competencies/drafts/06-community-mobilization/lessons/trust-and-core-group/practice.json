@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-trust-and-core-group",
+  "objective_id": "trust-and-core-group.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "May pagkakataong mag-ambag nang walang pamimilit.",
+          "en": "This creates an opportunity without coercion."
+        },
+        {
+          "fil": "Nanghuhusga ito at maaaring makabawas sa tiwala.",
+          "en": "This judges her and can undermine trust."
+        },
+        {
+          "fil": "Hindi katumbas ng malinaw na pagsang-ayon ang katahimikan.",
+          "en": "Silence is not clear agreement."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi nito tinitiyak ang pakikilahok at pagsang-ayon ng komunidad.",
+          "en": "This does not establish community participation and agreement."
+        },
+        {
+          "fil": "Nasusuri ang umiiral na grupo at nililinaw ang handang gagampan.",
+          "en": "This considers the existing group and who willingly takes responsibility."
+        },
+        {
+          "fil": "Inaalis nito ang pagmamay-ari ng komunidad sa proseso.",
+          "en": "This removes community ownership of the process."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "manifest": {
+    "lesson_key": "community-action-followup",
+    "position": 3,
+    "title_fil": "Magkasundo sa aksyon at suriin ang resulta",
+    "title_en": "Agree actions and review results",
+    "objectives_fil": [
+      "Bumuo ng action plan na may responsable, kumpirmadong resources, petsa, follow-up at panukat na susuriin kasama ang residente."
+    ],
+    "objectives_en": [
+      "Create an action plan with an owner, confirmed resources, dates, follow-up and a measure to review with residents."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.mobilization.action-plan",
+        "c2.mobilization.accountability"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kailangan ng plano at panukat ng resulta.",
+      "takeaway_en": "An action plan and result measure are needed.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.mobilization.action-plan",
+        "c2.mobilization.accountability",
+        "c2.mobilization.results-review"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Punan ang action plan ng grupo. Magdagdag ng panukat sa napapanahong balita at tugon kapag may hindi nakatapos.",
+      "takeaway_en": "Complete the group’s action plan. Add a timely-update measure and a response to an unfinished commitment.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.mobilization.action-plan"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ginagawang malinaw at masusuri ang napagkasunduan.",
+      "takeaway_en": "This makes the agreement specific and reviewable.",
+      "check": {
+        "prompt_fil": "Ano ang kulang sa “Magpapabalita ang grupo balang araw”?",
+        "prompt_en": "What is missing from “The group will send updates someday”?",
+        "options": [
+          {
+            "fil": "Listahan ng personal na kondisyon ng lahat ng residente.",
+            "en": "A list of every resident’s personal health conditions."
+          },
+          {
+            "fil": "Pangakong may sasakyan kahit hindi pa ito naitatanong.",
+            "en": "A promise of transport even though nobody has confirmed it."
+          },
+          {
+            "fil": "Tao, resources, petsa at panukat.",
+            "en": "Owner, resources, date and measure."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi kailangan ang ganitong detalye para sa plano ng paanyaya. 2: Nagdadagdag ito ng hindi kumpirmadong pangako. 3: Ginagawang malinaw at masusuri ang napagkasunduan.",
+        "feedback_en": "1: These details are unnecessary for an invitation plan. 2: This adds an unconfirmed promise. 3: This makes the agreement specific and reviewable."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.mobilization.action-plan",
+        "c2.mobilization.accountability",
+        "c2.mobilization.results-review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May gawain, responsable, kumpirmasyon ng resources, petsa, panukat at magalang na follow-up kasama ang komunidad.",
+      "takeaway_en": "Includes an action, owner, resource confirmation, date, measure and respectful community follow-up.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.mobilization.action-plan",
+        "c2.mobilization.accountability"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.mobilization.accountability",
+        "c2.mobilization.results-review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pinananatili ang pananagutan habang inaayos ang aktuwal na problema.",
+      "takeaway_en": "This maintains accountability while addressing the actual problem.",
+      "check": {
+        "prompt_fil": "Hindi naihatid ang ilang paanyaya. Ano ang gagawin sa follow-up?",
+        "prompt_en": "Some invitations were not delivered. What should happen at follow-up?",
+        "options": [
+          {
+            "fil": "Alamin ang hadlang at baguhin ang plano.",
+            "en": "Discuss the barrier and adjust the plan."
+          },
+          {
+            "fil": "Ipahiya sa pulong ang kasaping hindi nakatapos ng gawain.",
+            "en": "Shame the member who did not finish in the meeting."
+          },
+          {
+            "fil": "Sabihing matagumpay pa rin dahil marami ang dumalo noon.",
+            "en": "Declare success because many people attended the earlier meeting."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Pinananatili ang pananagutan habang inaayos ang aktuwal na problema. 2: Maaaring masira ang tiwala at hindi matukoy ang dahilan. 3: Hindi patunay ng nakarating na balita ang dami ng dumalo sa pulong.",
+        "feedback_en": "1: This maintains accountability while addressing the actual problem. 2: This can damage trust without clarifying the reason. 3: Meeting attendance does not prove that updates reached people."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.mobilization.accountability",
+        "c2.mobilization.results-review"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.mobilization.action-plan",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.accountability",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.results-review",
+      "read_ids": [
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        41
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/community-action-followup-664b725a6957.svg",
+      "content_hash": "664b725a69577e40aefef555d3cce7c6d64ff3f3776abc552c5a45b81ea659a9",
+      "alt_fil": "Tatlong kahon: Gawin, Balikan, Suriin.",
+      "alt_en": "Three boxes: Act, Follow up, Review together.",
+      "caption_fil": "May gawain, responsable, kumpirmasyon ng resources, petsa, panukat at magalang na follow-up kasama ang komunidad.",
+      "caption_en": "Includes an action, owner, resource confirmation, date, measure and respectful community follow-up.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "availability": "unavailable",
   "publication_allowed": false,
   "planned_lesson_count": 55,
-  "authored_lesson_count": 4,
+  "authored_lesson_count": 12,
   "competency_groups": [
     {
       "id": "behavior",
@@ -31,7 +31,12 @@
         "2.7"
       ],
       "hours": 2,
-      "source": "F38"
+      "source": "F38",
+      "proposed_minutes": {
+        "2.6": 60,
+        "2.7": 60
+      },
+      "split_status": "authoring proposal; manual states combined two hours only"
     }
   ],
   "modules": [
@@ -182,7 +187,7 @@
           38
         ]
       },
-      "status": "mapped-not-authored",
+      "status": "draft-authored",
       "lessons": [
         {
           "code": "2.2.1",
@@ -194,22 +199,24 @@
           "task_fil": "Ihambing ang dalawang usapan sa bisa, kaligtasan at pangangailangan ng residente",
           "practice_id": "activity-effective-safe-person-centered",
           "practice_en": "quality scenario comparison",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Identifies evidence for all three dimensions and proposes an appropriate improvement for each.",
           "source_pages": {
             "R": [
-              29,
-              30
+              29
             ],
             "F": [
               34
             ],
             "P": [
               29,
-              38
+              31,
+              32,
+              37
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
         },
         {
           "code": "2.2.2",
@@ -221,22 +228,24 @@
           "task_fil": "Tumugon sa alalahanin nang hindi inilalantad o hinuhusgahan ang residente",
           "practice_id": "activity-privacy-and-inclusion",
           "practice_en": "privacy role-play",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.",
           "source_pages": {
             "R": [
-              29,
               30
             ],
             "F": [
               34
             ],
             "P": [
-              29,
-              38
+              30,
+              33,
+              34,
+              35
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
         },
         {
           "code": "2.2.3",
@@ -248,22 +257,22 @@
           "task_fil": "Tukuyin ang pagkaantala, hadlang o paulit-ulit na hakbang at magmungkahi ng pagbabago",
           "practice_id": "activity-timely-integrated-service",
           "practice_en": "service pathway worksheet",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.",
           "source_pages": {
             "R": [
-              29,
               30
             ],
             "F": [
               34
             ],
             "P": [
-              29,
-              38
+              33,
+              37
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
         },
         {
           "code": "2.2.4",
@@ -275,22 +284,21 @@
           "task_fil": "Suriin ang work area gamit ang pitong kategorya at magtalaga ng isang pagbabago",
           "practice_id": "activity-seven-s-improvement",
           "practice_en": "7S inspection",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Checks all seven categories and proposes a safe, authorized improvement with an owner and review date.",
           "source_pages": {
             "R": [
-              29,
               30
             ],
             "F": [
               34
             ],
             "P": [
-              29,
-              38
+              36
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
         }
       ]
     },
@@ -1425,7 +1433,7 @@
           94
         ]
       },
-      "status": "mapped-not-authored",
+      "status": "draft-authored",
       "lessons": [
         {
           "code": "2.6.1",
@@ -1437,11 +1445,11 @@
           "task_fil": "Ilahad ang isyu gamit ang ebidensiya at pananaw ng apektadong residente",
           "practice_id": "activity-community-issue",
           "practice_en": "community issue worksheet",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Includes a specific report, affected group, missing perspective and question without labels or personal details.",
           "source_pages": {
             "R": [
               52,
-              54
+              53
             ],
             "F": [
               41
@@ -1451,8 +1459,9 @@
               94
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
         },
         {
           "code": "2.6.2",
@@ -1464,11 +1473,11 @@
           "task_fil": "Bumuo ng inclusive na invitation plan na tumutugon sa hadlang sa pakikilahok",
           "practice_id": "activity-invite-and-remove-barriers",
           "practice_en": "stakeholder map",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Plans for all three barriers with clear inviters and voluntary participation options.",
           "source_pages": {
             "R": [
               52,
-              54
+              53
             ],
             "F": [
               41
@@ -1478,8 +1487,9 @@
               94
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
         },
         {
           "code": "2.6.3",
@@ -1491,10 +1501,10 @@
           "task_fil": "Pangasiwaan ang pulong na may pakikilahok at napagkasunduang tungkulin",
           "practice_id": "activity-trust-and-core-group",
           "practice_en": "community meeting role-play",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Invites contributions, summarizes differences and confirms voluntary roles while considering the existing group.",
           "source_pages": {
             "R": [
-              52,
+              53,
               54
             ],
             "F": [
@@ -1505,8 +1515,9 @@
               94
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
         },
         {
           "code": "2.6.4",
@@ -1518,10 +1529,11 @@
           "task_fil": "Gumawa ng action plan na may responsable, resources, follow-up at panukat",
           "practice_id": "activity-community-action-followup",
           "practice_en": "community action plan",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Includes an action, owner, resource confirmation, date, measure and respectful community follow-up.",
           "source_pages": {
             "R": [
               52,
+              53,
               54
             ],
             "F": [
@@ -1532,8 +1544,9 @@
               94
             ]
           },
-          "status": "outline",
-          "claim_review_required": false
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
         }
       ]
     },

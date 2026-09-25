@@ -1,0 +1,232 @@
+{
+  "manifest": {
+    "lesson_key": "trust-and-core-group",
+    "position": 2,
+    "title_fil": "Bumuo ng tiwala at pangunahing grupo",
+    "title_en": "Build trust and a core group",
+    "objectives_fil": [
+      "Pangasiwaan ang maikling pulong na may pagkakataong mag-ambag at kusang pinagkasunduang tungkulin ng pangunahing grupo."
+    ],
+    "objectives_en": [
+      "Facilitate a short meeting that invites contributions and agrees voluntary responsibilities for a core group."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.mobilization.trust",
+        "c2.mobilization.participation",
+        "c2.mobilization.core-group"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Paano bubuksan ang usapan?",
+      "takeaway_en": "How can the discussion include them?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.mobilization.trust",
+        "c2.mobilization.participation",
+        "c2.mobilization.core-group"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gumanap bilang tagapangasiwa, lider at residenteng may ibang mungkahi. Anyayahan ang bawat boses at kumpirmahin ang dalawang kusang tungkulin.",
+      "takeaway_en": "Play facilitator, leader and resident with another suggestion. Invite each voice and confirm two voluntary roles.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.mobilization.participation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May pagkakataong mag-ambag nang walang pamimilit.",
+      "takeaway_en": "This creates an opportunity without coercion.",
+      "check": {
+        "prompt_fil": "Tahimik si Eva. Ano ang angkop na gawin ni Ina?",
+        "prompt_en": "Eva is quiet. What should Ina do?",
+        "options": [
+          {
+            "fil": "Anyayahan at payagang lumampas.",
+            "en": "Invite her and allow her to pass."
+          },
+          {
+            "fil": "Sabihing wala siyang pakialam kung hindi siya magsasalita.",
+            "en": "Say she does not care if she stays silent."
+          },
+          {
+            "fil": "Isulat na pumayag siya sa lahat dahil wala siyang pagtutol.",
+            "en": "Record that she agreed to everything because she did not object."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: May pagkakataong mag-ambag nang walang pamimilit. 2: Nanghuhusga ito at maaaring makabawas sa tiwala. 3: Hindi katumbas ng malinaw na pagsang-ayon ang katahimikan.",
+        "feedback_en": "1: This creates an opportunity without coercion. 2: This judges her and can undermine trust. 3: Silence is not clear agreement."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.mobilization.trust",
+        "c2.mobilization.participation",
+        "c2.mobilization.core-group"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Nagbibigay ng pagkakataong mag-ambag, nagbubuod ng pagkakaiba at nagkukumpirma ng kusang tungkulin habang isinasaalang-alang ang umiiral na grupo.",
+      "takeaway_en": "Invites contributions, summarizes differences and confirms voluntary roles while considering the existing group.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.mobilization.trust",
+        "c2.mobilization.core-group"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.mobilization.core-group"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Nasusuri ang umiiral na grupo at nililinaw ang handang gagampan.",
+      "takeaway_en": "This considers the existing group and who willingly takes responsibility.",
+      "check": {
+        "prompt_fil": "May umiiral nang samahan. Ano ang dapat linawin bago bumuo ng pangunahing grupo?",
+        "prompt_en": "An association already exists. What should be clarified before forming a core group?",
+        "options": [
+          {
+            "fil": "Italaga agad ang lahat ng kaibigan ng BHW bilang lider.",
+            "en": "Immediately appoint all the BHW’s friends as leaders."
+          },
+          {
+            "fil": "Pakikipagtulungan at kusang tungkulin.",
+            "en": "Collaboration and voluntary roles."
+          },
+          {
+            "fil": "Buwagin ang samahan upang BHW lamang ang makapagpasya.",
+            "en": "Dissolve the association so only the BHW can decide."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi nito tinitiyak ang pakikilahok at pagsang-ayon ng komunidad. 2: Nasusuri ang umiiral na grupo at nililinaw ang handang gagampan. 3: Inaalis nito ang pagmamay-ari ng komunidad sa proseso.",
+        "feedback_en": "1: This does not establish community participation and agreement. 2: This considers the existing group and who willingly takes responsibility. 3: This removes community ownership of the process."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.mobilization.trust",
+        "c2.mobilization.core-group"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.mobilization.trust",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.participation",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.core-group",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        53,
+        54
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        41
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/trust-and-core-group-8d77bc9b2eff.svg",
+      "content_hash": "8d77bc9b2eff8766167c2ed448faeffd1491c7746fa7051aae63f39d386a6496",
+      "alt_fil": "Tatlong kahon: Pakinggan lahat, Linawin ang papel, Kumpirmahin.",
+      "alt_en": "Three boxes: Invite all voices, Clarify roles, Confirm agreement.",
+      "caption_fil": "Nagbibigay ng pagkakataong mag-ambag, nagbubuod ng pagkakaiba at nagkukumpirma ng kusang tungkulin habang isinasaalang-alang ang umiiral na grupo.",
+      "caption_en": "Invites contributions, summarizes differences and confirms voluntary roles while considering the existing group.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

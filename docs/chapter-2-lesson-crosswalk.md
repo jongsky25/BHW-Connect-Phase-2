@@ -1,6 +1,6 @@
 # Chapter 2 lesson and activity crosswalk
 
-55 proposed lessons; four authored draft lessons in 2.1. Other entries are scoped outlines, not teaching copy or approved clinical content. Page ranges refer to original PDFs.
+55 planned lessons; 12 authored drafts in 2.1, 2.2 and 2.6. The other 43 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
 
 | Lesson | English / Filipino | Intended task | Practice | Status |
 |---|---|---|---|---|
@@ -8,10 +8,10 @@
 | 2.1.2 | Listen and clarify calmly / Makinig at maglinaw nang mahinahon | Listen to Liza, summarize the concern and invite correction | listening role-play | authored-draft |
 | 2.1.3 | Agree on the next step / Magkasundo sa susunod na hakbang | Agree an action, owner and follow-up time with Ben | action card | authored-draft |
 | 2.1.4 | Report and reflect / Mag-ulat at suriin ang sariling tugon | Hand over Elena’s concern factually and name one improvement | handover and reflection | authored-draft |
-| 2.2.1 | Apply the three quality dimensions / Gamitin ang tatlong katangian ng dekalidad na serbisyo | Compare two BHS encounters for effectiveness, safety and the resident’s needs | quality scenario comparison | outline |
-| 2.2.2 | Protect privacy and include everyone / Panatilihin ang pribadong usapan at pantay na serbisyo | Respond to a privacy concern without exposing or judging the resident | privacy role-play | outline |
-| 2.2.3 | Improve the service pathway / Ayusin ang paglapit sa serbisyo | Identify one delay, access barrier or duplicated step and propose a feasible improvement | service pathway worksheet | outline |
-| 2.2.4 | Use 7S to improve the work area / Gamitin ang 7S sa lugar ng trabaho | Inspect a simulated work area using all seven categories and assign one improvement | 7S inspection | outline |
+| 2.2.1 | Apply the three quality dimensions / Gamitin ang tatlong katangian ng dekalidad na serbisyo | Compare two BHS encounters for effectiveness, safety and the resident’s needs | quality scenario comparison | authored-draft |
+| 2.2.2 | Protect privacy and include everyone / Panatilihin ang pribadong usapan at pantay na serbisyo | Respond to a privacy concern without exposing or judging the resident | privacy role-play | authored-draft |
+| 2.2.3 | Improve the service pathway / Ayusin ang paglapit sa serbisyo | Identify one delay, access barrier or duplicated step and propose a feasible improvement | service pathway worksheet | authored-draft |
+| 2.2.4 | Use 7S to improve the work area / Gamitin ang 7S sa lugar ng trabaho | Inspect a simulated work area using all seven categories and assign one improvement | 7S inspection | authored-draft |
 | 2.3.1 | Recognize routes of transmission / Kilalanin ang paraan ng pagkalat | Match household/BHS exposure scenes to reviewed transmission routes | transmission card sort | outline |
 | 2.3.2 | Choose controls at several levels / Pumili ng mga paraan ng pagkontrol | Select source, environmental, work-practice and protective measures in a BHS scene | control-level map | outline |
 | 2.3.3 | Demonstrate hand hygiene / Ipakita ang wastong paglilinis ng kamay | Demonstrate every step of the clinically reviewed hand-hygiene sequence | handwashing return demonstration | outline |
@@ -49,10 +49,10 @@
 | 2.5.10 | Ulasimang bato / pansit-pansitan / Ulasimang bato / pansit-pansitan | For Ulasimang bato / pansit-pansitan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | ulasimang-bato reference-card practice | outline |
 | 2.5.11 | Yerba buena / Yerba buena | For Yerba buena, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | yerba-buena reference-card practice | outline |
 | 2.5.12 | Use the plant references responsibly / Gamitin nang maingat ang plant references | Use the approved cards in a consultation scenario and a supervised preparation demonstration where authorized | plant consultation and demonstration | outline |
-| 2.6.1 | Identify the issue with the community / Tukuyin ang isyu kasama ang komunidad | State an issue with evidence and the perspectives of affected residents | community issue worksheet | outline |
-| 2.6.2 | Invite people and address barriers / Mag-imbita at tugunan ang hadlang | Create an inclusive stakeholder invitation plan addressing participation barriers | stakeholder map | outline |
-| 2.6.3 | Build trust and a core group / Bumuo ng tiwala at pangunahing grupo | Facilitate a participatory meeting that invites contributions and agrees group responsibilities | community meeting role-play | outline |
-| 2.6.4 | Agree actions and review results / Magkasundo sa aksyon at suriin ang resulta | Make an action plan with owners, resources, follow-up and a review measure | community action plan | outline |
+| 2.6.1 | Identify the issue with the community / Tukuyin ang isyu kasama ang komunidad | State an issue with evidence and the perspectives of affected residents | community issue worksheet | authored-draft |
+| 2.6.2 | Invite people and address barriers / Mag-imbita at tugunan ang hadlang | Create an inclusive stakeholder invitation plan addressing participation barriers | stakeholder map | authored-draft |
+| 2.6.3 | Build trust and a core group / Bumuo ng tiwala at pangunahing grupo | Facilitate a participatory meeting that invites contributions and agrees group responsibilities | community meeting role-play | authored-draft |
+| 2.6.4 | Agree actions and review results / Magkasundo sa aksyon at suriin ang resulta | Make an action plan with owners, resources, follow-up and a review measure | community action plan | authored-draft |
 | 2.7.1 | Map hazards and capacities / Tukuyin ang panganib at kakayahan | Use a fictional barangay map to identify hazards, households needing support and available capacities | risk map exercise | outline |
 | 2.7.2 | Confirm evacuation and warning arrangements / Kumpirmahin ang evacuation at babala | Explain locally verified warning, evacuation and contact arrangements using a directory | evacuation communication drill | outline |
 | 2.7.3 | Prepare a go-bag or e-balde / Maghanda ng go-bag o e-balde | Assemble and explain a go-bag/e-balde using reviewed local guidance and household needs | go-bag demonstration | outline |

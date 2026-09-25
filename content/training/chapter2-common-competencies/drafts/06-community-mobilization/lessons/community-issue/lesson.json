@@ -1,0 +1,232 @@
+{
+  "manifest": {
+    "lesson_key": "community-issue",
+    "position": 0,
+    "title_fil": "Tukuyin ang isyu kasama ang komunidad",
+    "title_en": "Identify the issue with the community",
+    "objectives_fil": [
+      "Bumuo ng pahayag ng isyu na may iniulat na ebidensiya, pananaw ng apektadong residente at tanong na kailangan pang linawin."
+    ],
+    "objectives_en": [
+      "Write an issue statement with reported evidence, affected residents’ perspectives and a question still to clarify."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.mobilization.shared-issue",
+        "c2.mobilization.evidence"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sino pa ang hindi naririnig?",
+      "takeaway_en": "Whose voice is missing?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.mobilization.shared-issue",
+        "c2.mobilization.evidence",
+        "c2.mobilization.ownership"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gumawa ng issue card: ano ang naiulat, sino ang apektado, sino ang hindi pa naririnig at ano ang itatanong.",
+      "takeaway_en": "Make an issue card: reported concern, affected people, missing voices and the next question.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.mobilization.evidence"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ito ang tiyak na naiulat; kailangan pang linawin ang lawak at dahilan.",
+      "takeaway_en": "This is the specific report; its extent and causes still need clarification.",
+      "check": {
+        "prompt_fil": "Alin ang ebidensiyang mayroon ang grupo?",
+        "prompt_en": "What evidence does the group currently have?",
+        "options": [
+          {
+            "fil": "Tamad ang lahat ng hindi nakarating sa BHS.",
+            "en": "Everyone who missed the visit is lazy."
+          },
+          {
+            "fil": "Tiyak na ayaw ng walang cellphone na makilahok.",
+            "en": "People without phones definitely refuse to participate."
+          },
+          {
+            "fil": "Tatlong ulat ng huling balita.",
+            "en": "Three reports of late updates."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Bansag ito; hindi ito napatunayan ng mga ulat. 2: Hindi pa naririnig ang kanilang pananaw. 3: Ito ang tiyak na naiulat; kailangan pang linawin ang lawak at dahilan.",
+        "feedback_en": "1: This is a label, not something established by the reports. 2: Their perspectives have not yet been heard. 3: This is the specific report; its extent and causes still need clarification."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.mobilization.shared-issue",
+        "c2.mobilization.evidence",
+        "c2.mobilization.ownership"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May tiyak na ulat, apektadong grupo, nawawalang pananaw at tanong; walang bansag o personal na detalye.",
+      "takeaway_en": "Includes a specific report, affected group, missing perspective and question without labels or personal details.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.mobilization.shared-issue",
+        "c2.mobilization.ownership"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.mobilization.shared-issue",
+        "c2.mobilization.ownership"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kasama ang apektado sa pagtukoy ng magagamit na solusyon.",
+      "takeaway_en": "Affected people help identify a workable solution.",
+      "check": {
+        "prompt_fil": "Ano ang dapat gawin bago pumili ng paraan ng pagpapabalita?",
+        "prompt_en": "What should happen before choosing an update channel?",
+        "options": [
+          {
+            "fil": "Tanungin ang mga hindi naaabot.",
+            "en": "Ask people who miss updates."
+          },
+          {
+            "fil": "Piliin agad ang chat dahil iyon ang gamit ng lider.",
+            "en": "Choose chat immediately because the leader uses it."
+          },
+          {
+            "fil": "Ilista ang personal na kondisyon ng lahat sa pampublikong poster.",
+            "en": "List everyone’s personal health conditions on a public poster."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Kasama ang apektado sa pagtukoy ng magagamit na solusyon. 2: Maaaring patuloy na hindi maabot ang walang cellphone. 3: Hindi kailangan ang personal na kondisyon para linawin ang daan ng balita.",
+        "feedback_en": "1: Affected people help identify a workable solution. 2: People without phones may still be excluded. 3: Personal conditions are unnecessary for clarifying update channels."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.mobilization.evidence",
+        "c2.mobilization.ownership"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.mobilization.shared-issue",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.evidence",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.ownership",
+      "read_ids": [
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        52,
+        53
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        41
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/community-issue-41865d8cbc1b.svg",
+      "content_hash": "41865d8cbc1b9753e98edd305465eb20355069253296ed3931b7275d3c0e8c90",
+      "alt_fil": "Tatlong kahon: Pakinggan, Patunayan, Magkasundo.",
+      "alt_en": "Three boxes: Listen, Check evidence, Agree together.",
+      "caption_fil": "May tiyak na ulat, apektadong grupo, nawawalang pananaw at tanong; walang bansag o personal na detalye.",
+      "caption_en": "Includes a specific report, affected group, missing perspective and question without labels or personal details.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

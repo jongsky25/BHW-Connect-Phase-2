@@ -1,4 +1,10 @@
-# Chapter 2 execution record — first review stage
+# Chapter 2 execution record
+
+## Batch 2 update — 25 September 2026
+
+The user approved the 2.1 sample and requested 2.2 Quality Services and 2.6 Community Mobilization. Both four-lesson modules are now authored: 12 of 55 lessons total, with 43 still outlines. See `chapter-2-batch-2-review.md` for content, source decisions, timing, preview files and current validation. The 2.1 content remains unchanged, and its owner approval is recorded separately. The first-stage record below is historical.
+
+## First review stage — historical record
 
 25 September 2026. Baseline: `f52fba64ebbd838b048d7946b7d12a8fb5d0bd5d` (PR #105 merged). This implements the source-mapping and sample stages of the agreed plan, expanding the sample to all four lessons of 2.1 so the existing complete-subchapter validator can evaluate it.
 
@@ -56,4 +62,3 @@ Per-option feedback is authored and linked in `practice.json`; the compatible re
 5. Implement selected shared activity/transfer features, validate scoped loading and access controls, pilot with BHWs/facilitators, then publish reviewed content and verify production.
 
 This draft is the first implementation checkpoint, not completion of the whole Chapter 2 rollout.
-

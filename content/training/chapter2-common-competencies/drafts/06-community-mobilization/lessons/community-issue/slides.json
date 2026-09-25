@@ -1,0 +1,157 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.mobilization.shared-issue",
+      "c2.mobilization.evidence"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Tatlong ulat: huli ang balita sa oras.\nHula ng lider: “Ayaw sumunod.”\nSino pa ang hindi naririnig?",
+    "display_en": "Three reports: late schedule updates.\nLeader’s assumption: “They refuse.”\nWhose voice is missing?",
+    "check": null,
+    "narration_fil": "Sa kathang-isip na Purok Maligaya, tatlong residente ang nagsabing huli nilang nalaman ang pagbabago ng oras sa BHS. Sabi ng isang lider, “Ayaw lang nilang sumunod.” Hindi pa naririnig ni BHW Ina ang mga walang cellphone at nagtatrabaho sa araw. Ano ang tunay na isyu?",
+    "narration_en": "In fictional Purok Maligaya, three residents say they learned about a BHS schedule change too late. A leader says, “They just refuse to follow.” BHW Ina has not heard from people without phones or those working during the day. What is the actual issue?"
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.mobilization.shared-issue",
+      "c2.mobilization.evidence",
+      "c2.mobilization.ownership"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Pakinggan ang apektado.\nIhiwalay ang ulat sa hula.\nSabihin ang alam at hindi pa alam.\nMagkasamang ilahad ang isyu.",
+    "display_en": "Hear affected people.\nSeparate reports from assumptions.\nState what is known and unknown.\nFrame the issue together.",
+    "check": null,
+    "narration_fil": "Pakinggan ang mga apektado bago pumili ng solusyon. Ihiwalay ang iniulat sa hula. Itanong kung sino pa ang hindi naririnig. Bumuo kasama nila ng maikling pahayag: ano ang nangyayari, kanino at anong ebidensiya ang mayroon. Markahan ang hindi pa alam. Ang komunidad ay kasamang nagpapasya, hindi tagatanggap lamang ng utos.",
+    "narration_en": "Hear affected people before choosing a solution. Separate reports from assumptions. Ask whose voice is missing. Together, state what is happening, who is affected and what evidence exists. Mark what remains unknown. Community members share decisions rather than simply receiving instructions."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.mobilization.evidence"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Alin ang ebidensiyang mayroon ang grupo?",
+      "prompt_en": "What evidence does the group currently have?",
+      "options": [
+        {
+          "fil": "Tamad ang lahat ng hindi nakarating sa BHS.",
+          "en": "Everyone who missed the visit is lazy."
+        },
+        {
+          "fil": "Tiyak na ayaw ng walang cellphone na makilahok.",
+          "en": "People without phones definitely refuse to participate."
+        },
+        {
+          "fil": "Tatlong ulat ng huling balita.",
+          "en": "Three reports of late updates."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Bansag ito; hindi ito napatunayan ng mga ulat. 2: Hindi pa naririnig ang kanilang pananaw. 3: Ito ang tiyak na naiulat; kailangan pang linawin ang lawak at dahilan.",
+      "feedback_en": "1: This is a label, not something established by the reports. 2: Their perspectives have not yet been heard. 3: This is the specific report; its extent and causes still need clarification."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.mobilization.shared-issue",
+      "c2.mobilization.evidence",
+      "c2.mobilization.ownership"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Alam: tatlong ulat ng huling balita.\nHindi alam: daan ng balita sa walang phone.\nItanong ang magagamit nilang paraan.",
+    "display_en": "Known: three reports of late updates.\nUnknown: channels for people without phones.\nAsk what channels they can use.",
+    "check": null,
+    "narration_fil": "Isinulat ng grupo: “Tatlong residente ang nag-ulat na huli nilang nalaman ang bagong oras. Hindi pa natin alam kung paano naaabot ang walang cellphone.” Itatanong nila sa mga apektado kung aling paraan ang magagamit. Hindi nila tinawag na tamad ang mga hindi nakarating.",
+    "narration_en": "The group writes: “Three residents report learning the new time late. We do not yet know how people without phones receive updates.” They will ask affected residents which channels they can use. They do not label people who missed the visit as lazy."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.mobilization.shared-issue",
+      "c2.mobilization.ownership"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Komunidad: kasama sa pagpapasya.\nWalang sapilitang personal na kuwento.\nSensitibo: isaalang-alang ang pribadong usapan.",
+    "display_en": "Residents share decisions.\nNo forced personal disclosure.\nSensitive concern: consider private discussion.",
+    "check": null,
+    "narration_fil": "Ang community mobilization ay sama-samang pagtukoy, pagkilos at pagsusuri sa lokal na pangangailangan. Hindi kailangan ang pampublikong pagsasalaysay ng personal na kalagayan. Gumamit ng pinagsama at hindi makikilalang impormasyon. Kung sensitibo ang isyu, itanong kung ang maliit at pribadong usapan ang mas angkop.",
+    "narration_en": "Community mobilization involves identifying needs, acting and reviewing results together. People do not need to disclose personal circumstances publicly. Use combined, non-identifying information. For sensitive concerns, ask whether a small, private conversation is more appropriate."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.mobilization.shared-issue",
+      "c2.mobilization.ownership"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang dapat gawin bago pumili ng paraan ng pagpapabalita?",
+      "prompt_en": "What should happen before choosing an update channel?",
+      "options": [
+        {
+          "fil": "Tanungin ang mga hindi naaabot.",
+          "en": "Ask people who miss updates."
+        },
+        {
+          "fil": "Piliin agad ang chat dahil iyon ang gamit ng lider.",
+          "en": "Choose chat immediately because the leader uses it."
+        },
+        {
+          "fil": "Ilista ang personal na kondisyon ng lahat sa pampublikong poster.",
+          "en": "List everyone’s personal health conditions on a public poster."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Kasama ang apektado sa pagtukoy ng magagamit na solusyon. 2: Maaaring patuloy na hindi maabot ang walang cellphone. 3: Hindi kailangan ang personal na kondisyon para linawin ang daan ng balita.",
+      "feedback_en": "1: Affected people help identify a workable solution. 2: People without phones may still be excluded. 3: Personal conditions are unnecessary for clarifying update channels."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.mobilization.evidence",
+      "c2.mobilization.ownership"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Unahin ang hindi pa naririnig.\nSa Lunes: magsanay gamit ang issue card.\nEbidensiya: ulat o obserbasyon, hindi hula.",
+    "display_en": "Start with voices not yet heard.\nOn Monday: practise with the issue card.\nEvidence: reports or observations, not guesses.",
+    "check": null,
+    "narration_fil": "Napili ng grupo na linawin muna kung sino ang hindi naaabot ng balita. Sa Lunes, gamitin ang blangkong issue card sa kathang-isip na kaso kasama ang katrabaho. Salita: ebidensiya — tiyak na iniulat o naobserbahan, hindi hula sa ugali ng tao.",
+    "narration_en": "The group decides first to clarify who is missing updates. On Monday, use the blank issue card with a colleague and a fictional case. Word: evidence — a specific report or observation, not an assumption about someone’s character."
+  }
+]

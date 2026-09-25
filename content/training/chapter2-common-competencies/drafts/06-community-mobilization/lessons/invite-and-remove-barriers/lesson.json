@@ -1,0 +1,232 @@
+{
+  "manifest": {
+    "lesson_key": "invite-and-remove-barriers",
+    "position": 1,
+    "title_fil": "Mag-imbita at tugunan ang hadlang",
+    "title_en": "Invite people and address barriers",
+    "objectives_fil": [
+      "Bumuo ng invitation plan na may apektadong grupo, pinagkakatiwalaang tagapag-imbita, hadlang at napagkasunduang paraan ng pakikilahok."
+    ],
+    "objectives_en": [
+      "Build an invitation plan identifying affected groups, trusted inviters, barriers and agreed participation options."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.mobilization.stakeholders",
+        "c2.mobilization.barriers"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Hindi sapat ang iisang chat.",
+      "takeaway_en": "One chat is not enough.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.mobilization.stakeholders",
+        "c2.mobilization.barriers",
+        "c2.mobilization.voluntary-participation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gumawa ng tatlong hanay para kina Ruben, Sari at Eva. Ilagay ang hadlang, tagapag-imbita, paraan at petsa ng pagbalik.",
+      "takeaway_en": "Create rows for Ruben, Sari and Eva. Add each barrier, inviter, invitation method and follow-up date.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.mobilization.stakeholders",
+        "c2.mobilization.barriers"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kasama si Sari sa pagpili ng magagamit na paraan.",
+      "takeaway_en": "Sari helps choose a method she can use.",
+      "check": {
+        "prompt_fil": "Walang cellphone si Sari. Ano ang pinakamainam na simula?",
+        "prompt_en": "Sari has no phone. What is the best starting step?",
+        "options": [
+          {
+            "fil": "Ipadala muli sa parehong chat ang paanyaya.",
+            "en": "Send the invitation to the same chat again."
+          },
+          {
+            "fil": "Itanong ang angkop na paanyaya.",
+            "en": "Ask what invitation method works."
+          },
+          {
+            "fil": "Sabihing wala siyang interes dahil hindi siya sumagot online.",
+            "en": "Assume she is uninterested because she did not reply online."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi nito binabago ang hadlang sa pag-access. 2: Kasama si Sari sa pagpili ng magagamit na paraan. 3: Hula sa interes ang kawalan ng sagot, hindi ebidensiya.",
+        "feedback_en": "1: This does not address the access barrier. 2: Sari helps choose a method she can use. 3: No online reply is not evidence of disinterest."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.mobilization.stakeholders",
+        "c2.mobilization.barriers",
+        "c2.mobilization.voluntary-participation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May plano para sa tatlong hadlang, malinaw na tagapag-imbita at kusang-loob na paraan ng pakikilahok.",
+      "takeaway_en": "Plans for all three barriers with clear inviters and voluntary participation options.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.mobilization.barriers",
+        "c2.mobilization.voluntary-participation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.mobilization.voluntary-participation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Nirerespeto ang hadlang habang binubuksan ang pakikilahok.",
+      "takeaway_en": "This respects the barrier while allowing participation.",
+      "check": {
+        "prompt_fil": "Hindi makadalo si Ruben. Ano ang angkop na sagot?",
+        "prompt_en": "Ruben cannot attend. Which response is appropriate?",
+        "options": [
+          {
+            "fil": "Ipagpaliban ang serbisyo niya hanggang makadalo siya.",
+            "en": "Delay his services until he attends."
+          },
+          {
+            "fil": "Mangako ng pera kahit wala pang pahintulot ang organizer.",
+            "en": "Promise money without the organizer’s authorization."
+          },
+          {
+            "fil": "Mag-alok ng ibang paraan ng mungkahi.",
+            "en": "Offer another way to contribute."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi dapat nakatali ang serbisyo sa pagdalo. 2: Hindi dapat mangako ng hindi kumpirmadong gantimpala. 3: Nirerespeto ang hadlang habang binubuksan ang pakikilahok.",
+        "feedback_en": "1: Access to services should not depend on attendance. 2: Unconfirmed rewards should not be promised. 3: This respects the barrier while allowing participation."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.mobilization.stakeholders",
+        "c2.mobilization.barriers"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.mobilization.stakeholders",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.barriers",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    },
+    {
+      "id": "c2.mobilization.voluntary-participation",
+      "read_ids": [
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        52,
+        53
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        41
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/invite-and-remove-barriers-80ae66b4d0f4.svg",
+      "content_hash": "80ae66b4d0f4ef1cf7e84c53964afac56c3f53ca6b23ac53eb7566c9ec652467",
+      "alt_fil": "Tatlong kahon: Sino?, Anong hadlang?, Paano sasali?.",
+      "alt_en": "Three boxes: Who?, Which barrier?, How to participate?.",
+      "caption_fil": "May plano para sa tatlong hadlang, malinaw na tagapag-imbita at kusang-loob na paraan ng pakikilahok.",
+      "caption_en": "Plans for all three barriers with clear inviters and voluntary participation options.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

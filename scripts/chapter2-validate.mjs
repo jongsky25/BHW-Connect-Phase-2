@@ -21,6 +21,12 @@ export function validateBlueprint(blueprint) {
   assert(blueprint.publication_allowed === false && blueprint.availability === 'unavailable', 'Draft chapter must not activate');
   assert(blueprint.competency_groups.reduce((n, c) => n + c.hours, 0) === 42, 'Source competency allocation must total 42 hours');
   assert(modules.reduce((n,m)=>n+(m.source_allocation_hours ?? 0),0) + blueprint.shared_allocations.reduce((n,a)=>n+a.hours,0) === 42, 'Subchapter allocations must not double-count shared hours');
+  for (const allocation of blueprint.shared_allocations) {
+    if (allocation.proposed_minutes) {
+      assert(Object.keys(allocation.proposed_minutes).sort().join(',') === [...allocation.subchapters].sort().join(','), 'Shared split must name every allocated subchapter');
+      assert(Object.values(allocation.proposed_minutes).every(n=>Number.isInteger(n)&&n>0) && Object.values(allocation.proposed_minutes).reduce((n,v)=>n+v,0)===allocation.hours*60, 'Proposed shared minutes must reconcile to source hours');
+    }
+  }
   for (const m of modules) for (const l of m.lessons) {
     for (const field of ['title_fil','title_en','task_fil','task_en','practice_en']) assert(l[field]?.trim(), `${l.code}: missing ${field}`);
     assert(l.status === 'authored-draft' || l.status === 'outline', `${l.code}: invalid authoring status`);
@@ -31,8 +37,15 @@ export function validateBlueprint(blueprint) {
 
 export function validateDraftModule(module, moduleDir, review, activities) {
   assert(review.status === 'draft' && review.lessons.every((l)=>l.publication_allowed === false), 'Draft review must prohibit publication');
-  assert(module.lessons.length === 4, 'Behavior draft must contain all four planned lessons');
-  assert(review.facilitated_minutes === 600 && activities.reduce((n,a)=>n+a.minutes,0) === 600, 'Behavior session allocation must reconcile to 600 minutes');
+  const blueprint=json(path.join(packageRoot,'chapter-blueprint.json'));
+  const planned=blueprint.modules.find(m=>m.module_key===module.module_key);
+  assert(planned, 'Draft module must exist in blueprint');
+  const sameKeys=(left,right)=>[...left].sort().join(',')===[...right].sort().join(',');
+  const keys=module.lessons.map(l=>l.manifest.lesson_key);
+  assert(sameKeys(keys,planned.lessons.map(l=>l.lesson_key)), 'Draft must contain exactly its planned lessons');
+  assert(sameKeys(keys,review.lessons.map(l=>l.lesson_key)) && sameKeys(keys,activities.map(a=>a.lesson_key)), 'Review and activities must match every lesson exactly once');
+  const expectedMinutes=planned.source_allocation_hours!==null?planned.source_allocation_hours*60:blueprint.shared_allocations.find(a=>a.subchapters.includes(planned.code))?.proposed_minutes?.[planned.code];
+  assert(expectedMinutes>0 && review.facilitated_minutes===expectedMinutes && activities.every(a=>Number.isInteger(a.minutes)&&a.minutes>0) && activities.reduce((n,a)=>n+a.minutes,0)===expectedMinutes, 'Session allocation must reconcile to source or proposed shared minutes');
   const diagnostics = [];
   let sectionCount=0, checkCount=0, slideCount=0;
   for (const lesson of module.lessons) {
@@ -57,7 +70,8 @@ export function validateDraftModule(module, moduleDir, review, activities) {
       const indicator=lesson.notes.observation_indicators[0];
       for (const text of [indicator[`observable_${lang}`],...['kaya_na','kailangan_practice','hindi_pa'].map((k)=>indicator.levels[`${k}_${lang}`])]) assert(guide.includes(text), `${key}/${lang}: guide/indicator drift`);
       assert(!/sources-review|review_status|Draft for review/.test(parseReferenceRead(guide).map(s=>s.body).join('\n')), `${key}: editorial metadata in guide body`);
-      for (const name of ['participant-cards','observer-sheet']) assert(existsSync(path.join(dir,`${name}.${lang}.md`)), `${key}: missing ${name}`);
+      for (const name of activity.materials.filter(n=>n!=='job-aid')) assert(existsSync(path.join(dir,`${name}.${lang}.md`)), `${key}: missing ${name}`);
+      assert(existsSync(path.join(moduleDir,`job-aid.${lang}.md`)), `${key}: missing job aid`);
       for (const s of lesson.revision.read_sections) {
         const body=s[`body_${lang}`];
         assert(!/draft|review_status|PDF page|github\.com/i.test(body), `${key}: editorial text in learner content`);
@@ -91,13 +105,17 @@ export function validateDraftModule(module, moduleDir, review, activities) {
 export function validatePackage() {
   const blueprint=json(path.join(packageRoot,'chapter-blueprint.json'));
   validateBlueprint(blueprint);
-  const dir=path.join(packageRoot,'drafts/01-difficult-situations');
-  const chapterModule=loadReferenceModule(dir,path.join(root,'public'));
-  const report=validateDraftModule(chapterModule,dir,json(path.join(dir,'review.json')),json(path.join(dir,'activities.json')).activities);
+  const reports=blueprint.modules.filter(m=>m.status==='draft-authored').map(m=>{
+    assert(m.lessons.every(l=>l.status==='authored-draft'), `${m.code}: module and lesson authoring statuses must agree`);
+    const dir=path.join(packageRoot,'drafts',m.module_key);
+    const chapterModule=loadReferenceModule(dir,path.join(root,'public'));
+    return {code:m.code,module_key:m.module_key,...validateDraftModule(chapterModule,dir,json(path.join(dir,'review.json')),json(path.join(dir,'activities.json')).activities)};
+  });
+  assert(reports.reduce((n,r)=>n+r.lessons,0)===blueprint.authored_lesson_count,'Authored count must match validated draft modules');
   const program=json(path.join(root,'content/training/day1-basic-competencies/program.json'));
   const chapter=program.chapters.find((c)=>c.chapter_key==='chapter-2');
   assert(chapter.delivery_course===null && chapter.availability==='unavailable','Chapter 2 must remain isolated from live delivery mapping');
   assert(!existsSync(path.join(packageRoot,'course.json'))&&!existsSync(path.join(packageRoot,'locks')),'Draft package must not acquire live delivery configuration');
-  return {status:'passed',scope:'source and authoring validation; not clinical approval or live application testing',planned_lessons:55,...report};
+  return {status:'passed',scope:'source and authoring validation; not clinical approval or live application testing',planned_lessons:55,lessons:reports.reduce((n,r)=>n+r.lessons,0),read_sections:reports.reduce((n,r)=>n+r.read_sections,0),slides:reports.reduce((n,r)=>n+r.slides,0),checks:reports.reduce((n,r)=>n+r.checks,0),modules:reports};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) console.log(JSON.stringify(validatePackage(),null,2));
