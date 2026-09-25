@@ -15,7 +15,7 @@ Status: **requester-approved review materials; detailed reviewer and pilot evide
 
 The draft's Elena scenario, 20/100-to-5/100 figures, trial checklist, and three optional practice cards are authored examples. They are **not** observed BHS data, verbatim DOH activities, or TESDA assessment instruments. The legacy 1.9 source has no activity cards. The cards' source-page field points to the background competency and time pages, not to an original card.
 
-The review candidate adds formative checks at inventory, utility safety, normalized comparison and colleague communication. The three lessons now have 2, 2 and 3 checks respectively in both Read and Slides. Each three-option check explains the rejected choices; facilitator answer keys include the additions. The existing `loadReferenceModule` parser/validator passes locally for all three 1.9 lessons. The three optional cards pass `validateActivities`; the three candidate SVGs pass `validateSvgMarkup`. The production-authoring copy, approved SVGs and optional cards have been added to the draft PR. Full CI and authenticated preview remain pending.
+The review candidate adds formative checks at inventory, utility safety, normalized comparison and colleague communication. The three lessons now have 2, 2 and 3 checks respectively in both Read and Slides. Each three-option check explains the rejected choices; facilitator answer keys include the additions. The existing `loadReferenceModule` parser/validator passes locally for all three 1.9 lessons. The three optional cards pass `validateActivities`; the three candidate SVGs pass `validateSvgMarkup`. The complete module, three bilingual lessons, approved SVGs, optional cards, narration and printable practice packet are in the production authoring path on the draft PR. Full CI and authenticated learner/facilitator view checks remain pending.
 
 ## Protected boundaries
 
@@ -62,13 +62,18 @@ The facilitator and Filipino-language reviewer should discuss where instructions
 | Visuals | Requester approval noted 2026-09-25; asset hashes verified; visual review notes pending | Approve final bilingual resource-audit, safe-change and normalized-tracker diagrams and their alt text; check mobile and print legibility. The approved SVGs are attached to the production-authoring lessons; visual review notes remain pending. |
 | Learner timing | Requester approval noted 2026-09-25; pilot date and actual minutes pending | Run all three lessons with a real learner group. Log per-segment start/end, group size, completion, questions, retries, quality failures and deviations. Revise until each lesson can be facilitated within its tested allocation without rushing observation. |
 
+## Staging record (25 September 2026)
+
+The established content loader created 1.9 from the complete authored module after a successful dry run. Module ID `586f0588-2776-42b0-be1c-bc88c4ef825f` is recorded in the course lock. The established lesson loader then passed a dry run and staged all three authored lessons without promotion. Returned lesson IDs are `resources-audit`: `73e5e389-0f41-4ef5-aadf-aa368da6a863`; `resources-safe-change`: `98605646-c56d-4dec-b440-eb016c44e6cf`; `resources-monitor`: `59cea10b-f0e8-4fa9-837f-77b8504f4e77`. These IDs are recorded in the same lock. The module's facilitator notes contain all three optional practice cards. Each lesson has one immutable revision and a null `published_revision_id`.
+
+The printable six-page bilingual packet is `public/training/module-1-9/practice-1cd24cf309ea.pdf`. Three hash-named SVGs are attached to the lesson Read and Slide practice sections. Narration assets and their manifest entries are committed for both languages. These materials are review assets; no completed learner timing log has been supplied. Learner publication and authenticated view checks remain pending.
+
 ## Release check after signoff
 
 1. Record names, dates, findings and approved final revisions above. Resolve every safety and language issue; replace proposed minutes with measured results.
-2. Move the **complete** reviewed 1.9 module (all three bilingual lessons, facilitator guides, competency definitions, visuals, approved cards and source metadata) into `content/training/day1-basic-competencies/modules/09-sustainable-practices`. Keep the draft as review history until the team decides its retention.
-3. Run the established content parser/validator and `training:load` dry run. Compare the complete generated module and lesson revisions with the review decisions.
-4. Create 1.9 through the existing course and lesson loader only after the authored module passes. Record the returned module ID in `locks/ltzicxyefizxoqhfuuzc.json`; do not invent an ID or insert a placeholder row.
-5. Review immutable lesson revisions, then use the established reviewed publish flow. Verify signed-in learner Read/Slides/practice and facilitator guide, activities, observation and print views; verify a historical certified learner remains unaffected.
+2. Reconcile the final human decisions against the production-authored lessons, cards, visuals, narration and printable packet. Keep the draft as review history until the team decides its retention.
+3. Rerun the established parser/validator and scoped loader dry runs if reviewed content changes. Compare the immutable revisions with the signed decisions.
+4. Review the staged revisions and use the established publish flow only after the pilot timing and safety/service checks are documented. Verify signed-in learner Read/Slides/practice and facilitator guide, activities, observation and print views; verify a historical certified learner remains unaffected.
 
-No database load, publish action, course-lock change, or authenticated learner/facilitator view test is claimed by this review-ready draft.
+Module and lesson staging and course-lock updates are complete. No lesson publication or authenticated learner/facilitator view test is claimed.
 
