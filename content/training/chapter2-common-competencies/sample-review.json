@@ -100,6 +100,23 @@
         "independent Filipino/English instructional review",
         "production publication"
       ]
+    },
+    {
+      "module": "2.3",
+      "asset": "hand-hygiene/handrub-steps (INC-28 tier 2 Remotion clip)",
+      "date": "2026-09-25",
+      "evidence": "User message: \"I approve it\", in reply to a full-timeline frame-by-frame visual QA summary of the rendered clip",
+      "approved_scopes": [
+        "The rendered clip and its on-screen Filipino/English step labels"
+      ],
+      "reviewer_names": null,
+      "methods_or_artifacts": "Frame-by-frame review across the clip's full timeline (title card, all 8 steps, closing summary), reported to the user before approval",
+      "not_equivalent_to": [
+        "independent clinical/IPC review",
+        "the hand-hygiene lesson's own visual_approval (its action-sequence asset remains draft)",
+        "keyboard or print-layout QA",
+        "production publication"
+      ]
     }
   ]
 }

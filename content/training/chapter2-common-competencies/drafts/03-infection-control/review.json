@@ -32,6 +32,21 @@
       "authoring_checks": "passed; parser, density, mode parity, materials, rubrics, evidence coverage and DOM checks; visual browser QA not performed",
       "independent_review": null,
       "visual_approval": null,
+      "asset_visual_approvals": [
+        {
+          "asset_id": "handrub-steps",
+          "status": "approved-by-user-attestation",
+          "date": "2026-09-25",
+          "evidence": "User message: I approve it (INC-28 tier 2 handrub clip)",
+          "scope": "The rendered clip and its on-screen Filipino/English step labels only",
+          "not_equivalent_to": [
+            "independent clinical review",
+            "IPC/clinical sign-off",
+            "the lesson's own visual_approval (action-sequence remains draft)",
+            "production publication"
+          ]
+        }
+      ],
       "audio_status": "scripts-only",
       "learner_pilot": null,
       "publication_allowed": false,
