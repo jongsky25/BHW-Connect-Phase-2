@@ -286,9 +286,48 @@ two findings for these functions removed), authenticated 95 → 95, nothing
 added. The only remaining difference is the pilot's survey helpers: pilot
 27/98, CI 24/95.
 
-Not fixed here (follow-up): commit the pilot's survey-helper version of
-`fix_surveys_org_unit_rls_composability` as a migration, or bring the pilot's
-survey policies back to the repo's shape.
+**Update: survey-helper drift fixed on 2026-09-25.** The repo's shape was
+kept, not the pilot's. The migration
+`20261001000000_survey_policies_repo_shape.sql` re-creates the four child-table
+policies verbatim from `20260728000000_inc11_surveys.sql` (policies first,
+because the pilot's depended on the helpers), then drops `survey_status(uuid)`,
+`survey_org_unit_path(uuid)` and `survey_response_org_unit_path(uuid)`.
+
+Why the repo's shape rather than the pilot's: the two admit the same rows.
+The pilot's helpers read `surveys`/`survey_responses` as definer, while the
+repo's `exists (…)` reads them through their own RLS. Those RLS policies
+restate exactly the conditions the helper checks test, so the result is the
+same. CI and e2e already run the repo's shape. The pilot's helpers were also
+callable directly via `/rest/v1/rpc`, so anon could read any survey's status
+and org path, drafts included. No app code, script or e2e test calls them.
+
+| Project | `survey_policies_repo_shape` |
+|---|---|
+| `bhw-connect-e2e` (`qeryhxctxslhdkclifom`) | applied as `20260925020459`. No change: the policy md5s were identical before and after, and there were no helpers to drop |
+| pilot (`ltzicxyefizxoqhfuuzc`) | applied as `20260925020632` (owner-confirmed) |
+
+Verification query (run on each project):
+
+```sql
+select string_agg(policyname||'='||md5(cmd||'|'||coalesce(qual,'')||'|'||coalesce(with_check,'')), ', ' order by policyname) policies,
+  (select count(*) from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public' and p.proname in ('survey_org_unit_path','survey_response_org_unit_path','survey_status')) helper_count
+from pg_policies where schemaname = 'public' and tablename like 'survey%';
+```
+
+Result, identical on both projects: `helper_count = 0` and
+`survey_answers_admin_read=9c59f2b2…, survey_questions_admin_write=6002989c…,
+survey_questions_read=25ae7b24…, survey_responses_admin_read=8f9f4e91…,
+surveys_admin_write=af5ef86f…, surveys_read_scope=4374cc21…`.
+
+Security advisor, before → after: CI 24/95 → 24/95, nothing added or
+removed. Pilot 27/98 → 24/95: the six survey-helper findings (3 anon, 3
+authenticated) were removed and nothing was added. **The two projects' security
+advisor findings are now identical, finding for finding.** The only remaining
+history difference is that the pilot has no
+`revoke_anon_consent_password_rpcs` row (owner decision; its July rows already
+give the same grants), and inc17/17b/18a still have no history row on either
+project.
 
 ## Rolling out a risky feature
 
