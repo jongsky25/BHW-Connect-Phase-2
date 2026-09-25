@@ -1,0 +1,71 @@
+name: Remotion clips
+
+# INC-28 tier 2 (docs/training-modules-plan.md). Proves every committed
+# composition in remotion/ still lints, typechecks and renders to the lesson
+# format (480p H.264 + last-frame poster) within the size budget, and keeps
+# the render as a downloadable artifact for review. It does NOT replace the
+# committed files under public/training/: renders are not byte-reproducible
+# across machines, so a lesson's hashed clip is re-rendered locally with
+# `npm run remotion:render -- <id> <name> --public <dir>` and committed with
+# its new lesson.json hashes, like every other training asset.
+
+on:
+  pull_request:
+    paths:
+      - "remotion/**"
+      - "scripts/remotion-render.mjs"
+      - ".github/workflows/remotion.yml"
+  push:
+    branches: [main]
+    paths:
+      - "remotion/**"
+      - "scripts/remotion-render.mjs"
+      - ".github/workflows/remotion.yml"
+
+concurrency:
+  group: remotion-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+
+      - name: Install Remotion project
+        working-directory: remotion
+        run: npm ci
+
+      - name: Lint and typecheck
+        working-directory: remotion
+        run: npm run lint
+
+      - name: Install Remotion's headless browser
+        working-directory: remotion
+        run: npx remotion browser ensure
+
+      - name: Render every composition
+        run: |
+          set -euo pipefail
+          # `--quiet` prints one ID per line; keep only ID-shaped lines.
+          ids=$(cd remotion && npx remotion compositions --quiet | grep -E '^[A-Za-z0-9-]+$')
+          for id in $ids; do
+            node scripts/remotion-render.mjs "$id" 2>&1 | tee -a render.log
+          done
+          if grep -q "warn .* exceeds" render.log; then
+            echo "::error::A clip exceeds the INC-28 size budget (see log above)"
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: remotion-renders
+          path: remotion/out/
+          retention-days: 14

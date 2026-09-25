@@ -3,44 +3,108 @@
 // the remotion/ sub-project to the format the plan commits to — 480p H.264,
 // muted (narration is a separate audio track per LessonNarration, exactly
 // as tier 1's SVG scenes already work), plus a poster frame for the
-// lazy-loaded <video> tag. A thin wrapper around the Remotion CLI, not a
-// content pipeline: no module/DB wiring exists yet because no authored
-// module has a concept that meets the tier's own bar ("the few concepts
-// that genuinely need video" — Five Whys, sharps disposal). Run this once
-// INC-24/25 authors a module with one; until then it is a verified-working
-// pipeline with nothing queued through it.
+// lazy-loaded <video> tag. The poster is the composition's LAST frame:
+// clips end on a static summary of everything they teach, so the poster is
+// also the reduced-motion / not-yet-played view.
 //
-//   npm run remotion:render -- <composition-id> [output-name]
+//   npm run remotion:render -- <composition-id> [output-name] [--public <dir>]
 //
 // Writes <output-name>.mp4 and <output-name>-poster.jpg under remotion/out/.
+// With --public (a directory under public/, e.g. training/chapter2-draft),
+// also copies both there under content-hashed names, the reference lesson
+// loader's convention, and prints the `video` fields for the lesson asset.
+//
+// Set REMOTION_BROWSER_EXECUTABLE to render with an existing Chromium (e.g.
+// Playwright's headless shell) instead of letting Remotion download one.
 
 import { execFileSync } from "node:child_process";
-import { mkdirSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { copyFileSync, mkdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
-const REMOTION_DIR = path.resolve(import.meta.dirname, "..", "remotion");
+const ROOT = path.resolve(import.meta.dirname, "..");
+const REMOTION_DIR = path.join(ROOT, "remotion");
 const OUT_DIR = path.join(REMOTION_DIR, "out");
+const PUBLIC_DIR = path.join(ROOT, "public");
 
-// The plan's own budget: ~0.5-1 MB for a 20s clip. Anything past 1.5 MB for
-// a clip that short means the CRF/bitrate settings below need revisiting
-// before this ships in a lesson, not a blocker for this script itself.
+// The plan's own budget: ~0.5-1 MB for a 20s clip, i.e. ~50 KB/s. Past
+// 75 KB/s the CRF/bitrate settings below need revisiting before the clip
+// ships in a lesson.
 const SIZE_WARNING_BYTES_PER_SECOND = 75_000;
 
-function parseArgs(argv) {
-  const [compositionId, outputName] = argv;
-  if (!compositionId) {
-    throw new Error("usage: remotion:render -- <composition-id> [output-name]");
+export function parseArgs(argv) {
+  const positional = [];
+  let publicDir;
+  for (let i = 0; i < argv.length; i++) {
+    if (argv[i] === "--public") publicDir = argv[++i];
+    else if (argv[i].startsWith("--public=")) publicDir = argv[i].slice(9);
+    else positional.push(argv[i]);
   }
-  return { compositionId, outputName: outputName ?? compositionId };
+  const [compositionId, outputName] = positional;
+  if (!compositionId || publicDir === "") {
+    throw new Error(
+      "usage: remotion:render -- <composition-id> [output-name] [--public <dir under public/>]",
+    );
+  }
+  if (publicDir !== undefined) {
+    const resolved = path.resolve(PUBLIC_DIR, publicDir);
+    if (!resolved.startsWith(PUBLIC_DIR + path.sep))
+      throw new Error("--public must be a directory under public/");
+  }
+  return { compositionId, outputName: outputName ?? compositionId, publicDir };
 }
 
 function run(cmd, args) {
-  console.log(`  $ npx ${cmd} ${args.join(" ")}`);
-  execFileSync("npx", [cmd, ...args], { cwd: REMOTION_DIR, stdio: "inherit" });
+  const browser = process.env.REMOTION_BROWSER_EXECUTABLE;
+  const all = browser ? [...args, `--browser-executable=${browser}`] : args;
+  console.log(`  $ npx ${cmd} ${all.join(" ")}`);
+  execFileSync("npx", [cmd, ...all], { cwd: REMOTION_DIR, stdio: "inherit" });
+}
+
+function publish(file, dir, name, ext) {
+  const hash = createHash("sha256").update(readFileSync(file)).digest("hex");
+  const rel = path.posix.join(
+    dir.split(path.sep).join("/"),
+    `${name}-${hash.slice(0, 12)}${ext}`,
+  );
+  mkdirSync(path.join(PUBLIC_DIR, path.dirname(rel)), { recursive: true });
+  copyFileSync(file, path.join(PUBLIC_DIR, rel));
+  return { path: `/${rel}`, content_hash: hash };
+}
+
+function durationSeconds(compositionId) {
+  const browser = process.env.REMOTION_BROWSER_EXECUTABLE;
+  const out = execFileSync(
+    "npx",
+    [
+      "remotion",
+      "compositions",
+      ...(browser ? [`--browser-executable=${browser}`] : []),
+    ],
+    {
+      cwd: REMOTION_DIR,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    },
+  );
+  return parseDuration(out, compositionId);
+}
+
+// `remotion compositions` lists "<id>  <fps>  <w>x<h>  <frames> (<s> sec)".
+export function parseDuration(listing, compositionId) {
+  for (const line of listing.split("\n")) {
+    const m = line.trim().match(/^(\S+)\s+(\d+)\s+\d+x\d+\s+(\d+)\b/);
+    if (m && m[1] === compositionId) return Number(m[3]) / Number(m[2]);
+  }
+  throw new Error(
+    `composition ${compositionId} not found in remotion compositions output`,
+  );
 }
 
 function main() {
-  const { compositionId, outputName } = parseArgs(process.argv.slice(2));
+  const { compositionId, outputName, publicDir } = parseArgs(
+    process.argv.slice(2),
+  );
   mkdirSync(OUT_DIR, { recursive: true });
 
   const videoPath = path.join(OUT_DIR, `${outputName}.mp4`);
@@ -56,6 +120,9 @@ function main() {
     "--crf=28",
     "--x264-preset=slow",
     "--muted",
+    // BT.709 tags the stream limited-range yuv420p; the default leaves it
+    // full-range yuvj420p, which some low-end Android/iOS decoders mishandle.
+    "--color-space=bt709",
     "--overwrite",
   ]);
 
@@ -65,23 +132,44 @@ function main() {
     posterPath,
     "--height=480",
     "--width=854",
-    "--frame=0",
+    "--frame=-1",
+    "--image-format=jpeg",
+    "--jpeg-quality=85",
     "--overwrite",
   ]);
 
   const { size } = statSync(videoPath);
+  const seconds = durationSeconds(compositionId);
   console.log("");
-  console.log(`video   ${videoPath} (${(size / 1024).toFixed(0)} KB)`);
+  console.log(
+    `video   ${videoPath} (${(size / 1024).toFixed(0)} KB, ${seconds.toFixed(1)} s)`,
+  );
   console.log(`poster  ${posterPath}`);
 
-  // Duration isn't known here without re-reading the composition's own
-  // metadata, so this only warns using the budget as a flat per-file
-  // ceiling for a ~20s clip — a real size regression check belongs next to
-  // whatever CI job eventually renders real content, not this script.
-  const budget = SIZE_WARNING_BYTES_PER_SECOND * 20;
+  const budget = SIZE_WARNING_BYTES_PER_SECOND * seconds;
   if (size > budget) {
-    console.warn(`  warn   ${(size / 1024).toFixed(0)} KB exceeds the ~${(budget / 1024).toFixed(0)} KB/20s budget in docs/training-modules-plan.md's INC-28 section`);
+    console.warn(
+      `  warn   ${(size / 1024).toFixed(0)} KB exceeds the ~${(budget / 1024).toFixed(0)} KB budget for ${seconds.toFixed(0)} s in docs/training-modules-plan.md's INC-28 section`,
+    );
+  }
+
+  if (publicDir !== undefined) {
+    const poster = publish(posterPath, publicDir, outputName, "-poster.jpg");
+    const video = publish(videoPath, publicDir, outputName, ".mp4");
+    console.log("");
+    console.log("Lesson asset fields (lesson.json `assets[]`):");
+    console.log(
+      JSON.stringify(
+        {
+          path: poster.path,
+          content_hash: poster.content_hash,
+          video: { ...video, duration_s: Math.round(seconds) },
+        },
+        null,
+        2,
+      ),
+    );
   }
 }
 
-main();
+if (import.meta.url === `file://${process.argv[1]}`) main();

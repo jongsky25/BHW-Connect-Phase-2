@@ -260,10 +260,15 @@ via `eslint.config.mjs` and `tsconfig.json`'s `exclude`; the first attempt
 missed the `tsconfig.json` side and broke `next build`'s TypeScript check
 on Vercel — fixed same-day, see the INC-28 section for the exact failure).
 `npm run remotion:render -- <composition-id> [output-name]` renders 480p
-H.264 + poster frame and was verified working end to end. No DB/UI wiring
-and no real clip yet — nothing authored so far needs one (Module 1 is
-conceptual content, not the procedural-sequence kind tier 2 is for). Full
-detail: `docs/training-modules-plan.md`'s INC-28 section.
+H.264 + poster frame and was verified working end to end. **Update 25 Sep
+2026:** the first real clip exists — Chapter 2.3 `hand-hygiene`'s handrub
+steps (`remotion/src/hand-hygiene/`), wired through the lesson asset's new
+optional `video` field (JSONB, no migration), `LessonAssetFigure`
+(no autoplay, `preload="none"`, poster = all-steps summary), and a
+`remotion.yml` CI render job. It is a **draft** asset, so production still
+serves the published revision until the clip is reviewed/approved and a new
+revision is published. Full detail: `docs/training-modules-plan.md`'s INC-28
+section.
 
 **Issue #58 (unpaginated admin BHW table) is fixed (PR #75), and its
 follow-up — the 1,055 `e2e.%` throwaway users themselves — now has a

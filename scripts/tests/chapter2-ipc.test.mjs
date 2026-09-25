@@ -80,3 +80,15 @@ test('IPC private kit contains every canonical rubric and selects one print lang
  const lang=doc.getElementById('language');lang.value='en';lang.dispatchEvent(new dom.window.Event('change'));assert.ok(doc.querySelector('[data-language="fil"]').classList.contains('hidden'));dom.window.close();
 });
 
+test('handrub clip: hashed, draft, and its text version names every on-screen step',async()=>{
+ const {HANDRUB_STEPS}=await import('../../remotion/src/hand-hygiene/steps.ts');
+ const l=chapterModule.lessons.find(l=>l.manifest.lesson_key==='hand-hygiene');
+ const a=l.revision.assets.find(a=>a.video);
+ assert.ok(a&&a.review_status==='draft'&&a.path.endsWith('.jpg'));
+ for(const mode of ['read_sections','slides'])assert.ok(l.revision[mode].find(s=>s.id.replace('slide-','')==='example').asset_ids.includes(a.id));
+ for(const lang of ['fil','en']){
+  const alt=a['alt_'+lang].replace(/;/g,' —');
+  assert.equal((alt.match(/\b\d\. /g)??[]).length,HANDRUB_STEPS.length);
+  HANDRUB_STEPS.forEach((s,i)=>assert.ok(alt.includes(`${i+1}. ${s[lang]}`),`${lang} step ${i+1}`));
+ }
+});

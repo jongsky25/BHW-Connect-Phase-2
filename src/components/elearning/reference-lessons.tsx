@@ -18,6 +18,7 @@ import {
 } from "@/lib/elearning/reference-navigation";
 import type { LessonNarration } from "@/lib/elearning/reference-narration";
 import { ReferenceReadSection } from "./reference-read-section";
+import { LessonAssetFigure } from "./lesson-asset-figure";
 
 export type ReferenceData = {
   title_fil: string;
@@ -126,23 +127,7 @@ export function ReferenceLessons(props: Props) {
     lesson && item
       ? item.asset_ids.map((id) => {
           const a = lesson.revision.assets.find((a) => a.id === id);
-          return a ? (
-            <figure key={a.id} className="my-4">
-              {/* Public static assets; text alternatives remain visible if an image fails. */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={a.path}
-                width={720}
-                height={360}
-                loading="lazy"
-                alt={en ? a.alt_en : a.alt_fil}
-                className="h-auto w-full rounded-lg"
-              />
-              <figcaption className="text-sm">
-                {en ? a.caption_en : a.caption_fil}
-              </figcaption>
-            </figure>
-          ) : null;
+          return a ? <LessonAssetFigure key={a.id} asset={a} en={en} /> : null;
         })
       : null;
 

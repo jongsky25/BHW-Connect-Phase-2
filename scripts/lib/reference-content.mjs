@@ -228,6 +228,7 @@ export function validateReferenceLesson(
         "caption_en",
         "provenance",
         "review_status",
+        "video",
       ],
       "asset",
     );
@@ -250,6 +251,34 @@ export function validateReferenceLesson(
       "asset must use /training/ public path",
     );
     assert(assetExists(a.path), `missing asset ${a.path}`);
+    // INC-28 tier 2: a rendered clip (scripts/remotion-render.mjs). `path`
+    // stays an image, now the clip's poster, so every place that shows the
+    // asset still has a static view carrying the same steps.
+    if (a.video !== undefined) {
+      const v = a.video;
+      fields(v, ["path", "content_hash", "duration_s"], "asset video");
+      assert(
+        typeof v.content_hash === "string" &&
+          /^[0-9a-f]{64}$/.test(v.content_hash) &&
+          typeof v.path === "string" &&
+          v.path.includes(v.content_hash.slice(0, 12)),
+        "asset video path must include its content hash",
+      );
+      assert(
+        /^\/training\/[a-zA-Z0-9_./-]+\.mp4$/.test(v.path) &&
+          !v.path.includes(".."),
+        "asset video must be an .mp4 under /training/",
+      );
+      assert(
+        Number.isInteger(v.duration_s) && v.duration_s > 0 && v.duration_s <= 90,
+        "asset video duration must be 1-90 seconds",
+      );
+      assert(
+        /\.(jpe?g|png|webp)$/.test(a.path),
+        "asset video poster must be a raster image",
+      );
+      assert(assetExists(v.path, v.content_hash), `missing asset ${v.path}`);
+    }
   });
   for (const [mode, items] of [
     ["read", r.read_sections],
@@ -457,13 +486,13 @@ export function loadReferenceModule(moduleRoot, publicRoot) {
           notes,
         },
         {
-          assetExists: (p) => {
+          assetExists: (p, hash) => {
             try {
               const bytes = file(publicRoot, p.slice(1), null);
-              const a = authored.assets.find((a) => a.path === p);
+              const expected =
+                hash ?? authored.assets.find((a) => a.path === p).content_hash;
               return (
-                createHash("sha256").update(bytes).digest("hex") ===
-                a.content_hash
+                createHash("sha256").update(bytes).digest("hex") === expected
               );
             } catch {
               return false;

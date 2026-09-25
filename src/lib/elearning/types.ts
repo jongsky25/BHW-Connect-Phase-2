@@ -39,7 +39,11 @@ export type LessonAsset = {
   id: string; path: string; alt_fil: string; alt_en: string;
   caption_fil: string; caption_en: string; provenance: string;
   review_status: "draft" | "approved";
+  // INC-28 tier 2: a muted Remotion clip; `path` is then its poster, the
+  // clip's final all-steps frame (scripts/remotion-render.mjs).
+  video?: LessonAssetVideo;
 };
+export type LessonAssetVideo = { path: string; content_hash: string; duration_s: number };
 export type LessonConceptCoverage = { id: string; read_ids: string[]; slide_ids: string[]; source_ids: string[] };
 export type CourseLessonRevision = {
   id: string; lesson_id: string; revision_key: string; content_hash: string;
