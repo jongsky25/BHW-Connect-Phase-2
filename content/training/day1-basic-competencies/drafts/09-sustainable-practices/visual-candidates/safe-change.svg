@@ -1,18 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
-  <title id="title">Safe change / Ligtas na pagbabago</title>
-  <desc id="desc">Four paired decisions distinguish conservation from unsafe cuts, with protected hand hygiene, single-use clinical items, cold chain and urgent referrals.</desc>
-  <rect width="900" height="420" rx="20" fill="#F4F8F7"/>
-  <text x="40" y="52" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#153D51">Safe change / Ligtas na pagbabago</text>
-  <text x="67" y="105" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#0B756F">Consider / Pag-isipan</text>
-  <text x="478" y="105" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#A34632">Reject / Tanggihan</text>
-  <g font-family="Arial,sans-serif" font-size="19" fill="#153D51">
-    <rect x="40" y="121" width="390" height="72" rx="12" fill="#D9EBE7"/><text x="62" y="164">Repair leak / Ayusin ang tagas</text>
-    <rect x="470" y="121" width="390" height="72" rx="12" fill="#F8E4E0"/><text x="492" y="164">Cut handwashing / Bawasan ang paghuhugas</text>
-    <rect x="40" y="207" width="390" height="72" rx="12" fill="#D9EBE7"/><text x="62" y="250">Reusable teaching visual</text>
-    <rect x="470" y="207" width="390" height="72" rx="12" fill="#F8E4E0"/><text x="492" y="250">Reuse clinical single-use items</text>
+<svg viewBox="0 0 640 400">
+  <title>Unsafe cut versus safe conservation</title>
+  <g fill="currentColor" text-anchor="middle">
+    <rect x="30" y="40" width="270" height="320" rx="10" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="165" y="80" font-size="16" font-weight="700">Unsafe / Di-ligtas</text>
+    <text x="165" y="178" font-size="13">Cut handwashing water</text>
+    <text x="165" y="200" font-size="13">Reuse clinical single-use items</text>
+    <rect x="340" y="40" width="270" height="320" rx="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <text x="475" y="80" font-size="16" font-weight="700">Safer / Mas ligtas</text>
+    <text x="475" y="178" font-size="13">Repair the leak</text>
+    <text x="475" y="200" font-size="13">Reuse teaching visuals</text>
+    <text x="475" y="305" font-size="12">Check local policy first</text>
   </g>
-  <rect x="40" y="310" width="820" height="77" rx="12" fill="#FFF4DD" stroke="#A96E16" stroke-width="2"/>
-  <text x="450" y="342" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#604410">Check local policy and service quality / Suriin ang lokal na policy at kalidad</text>
-  <text x="450" y="370" font-family="Arial,sans-serif" font-size="17" text-anchor="middle" fill="#604410">Protect cold chain and urgent referral / Protektahan ang cold chain at agarang referral</text>
 </svg>
 
