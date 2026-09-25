@@ -1,6 +1,6 @@
 # Chapter 2 authoring package
 
-This package contains the source map and all 55 planned lessons as owner-approved authoring drafts across Chapters 2.1–2.7. It is deliberately outside the live `day1-basic-competencies/modules` tree. Do not treat it as a loadable or published Chapter 2 delivery course.
+This package preserves the authoring sources for all 55 lessons across Chapters 2.1–2.7. The Los Baños production program published Chapter 2 on 25 September 2026 as a separate delivery course. See `release/los-banos-2026-09-25.json` for its IDs, revision hashes, counts and approval provenance. The draft files below remain the reviewed authoring snapshot; their draft flags are historical and do not describe the live course.
 
 - `chapter-blueprint.json`: seven subchapters / 55 lesson boundaries, task and practice IDs, source crosswalk and shared hours.
 - `drafts/01-difficult-situations`: four complete bilingual lesson drafts using the existing reference lesson contract; 12 concepts, 28 Read sections, 28 separately authored Slides, eight checks, private guides, four activity kits, four original diagrams and a transfer package.
@@ -10,7 +10,7 @@ This package contains the source map and all 55 planned lessons as owner-approve
 - `drafts/05-medicinal-plants`: 12 bilingual source-card and consultation drafts, 84 Read sections, 84 Slides, 24 checks, ten botanical crosswalk entries, original diagrams and dated evidence decisions.
 - `drafts/07-disaster-preparedness`: six bilingual DRRM drafts, 42 Read sections, 42 Slides, 12 checks, original diagrams and dated evidence decisions.
 - `sample-review.json`: records the user’s approvals of the authoring drafts in Chapters 2.1–2.7, separately from independent review and publication gates.
-- `claim-review-queue.json`: clinical/policy questions that must be resolved during later authoring; no claims have been clinically signed off.
+- `claim-review-queue.json`: historical clinical/policy questions from authoring. Release sign-off is recorded in the release manifest.
 - `standards-status.json`: implemented content versus platform work still needed.
 - Source text and hashes: `docs/source-material/chapter2-common-competencies/`.
 
@@ -20,4 +20,5 @@ Run `node scripts/chapter2-preview.mjs --module 2.2 --output <review-directory>`
 
 The source allocation for behavior is 10 hours; the four session outlines total 600 minutes. For large groups, plan enough observed rounds/staff; the timetable does not prove competence or replace extra practice. Quality Services also preserves its ten-hour allocation. The remaining source competency allocations are in the blueprint. Community mobilization and DRRM share two hours within the guide's 12-hour first-aid group. Proposed 60-minute introductory shares are authored for each module; the 2.7 share comprises six 10-minute stations. Further supervised practice is needed. This split is an authoring proposal, not separately prescribed source hours.
 
-The user approved the authoring drafts in 2.1–2.7, including the 2.4 First Aid owner QA attestation whose method was not specified. For 2.7, the owner separately attested approval of local DRRM and clinical review, an observed pilot and browser visual QA; reviewer details were not supplied. Other modules retain their own review gates. See `docs/chapter-2-ipc-review.md`, `docs/chapter-2-firstaid-review.md`, `docs/chapter-2-plants-review.md` and `docs/chapter-2-drrm-review.md`. This is not an independent content approval, clinical endorsement, formal certification or production release. No Chapter I content, questions, IDs, historical progress, certificates or database state changes.
+The user approved the authoring drafts in 2.1–2.7 and requested publication. The user also attested independent clinical sign-off for 2.3, 2.4 and 2.5, and local DRRM and clinical review, an observed pilot and browser visual QA for 2.7. Reviewer names and sign-off artifacts were not supplied; the record preserves that limit. The seven modules, 55 lesson revisions and 14-question assessment bank were published to the Los Baños program without changing Chapter I identities or progress. The authoring `program.json` and `chapter-blueprint.json` still describe the original staging state, so they are not the production-state source of truth; use the release manifest and live program records for that. The legacy `--mode hierarchy` loader is not a Chapter 2 reconciliation command.
+
