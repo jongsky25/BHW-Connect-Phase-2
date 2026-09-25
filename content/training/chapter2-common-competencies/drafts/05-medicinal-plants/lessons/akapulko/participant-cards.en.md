@@ -6,11 +6,11 @@ Ana has an itchy circular rash. A yard plant is called Akapulko.
 
 ## Learner card
 
-Match two Akapulko cards; choose Senna alata, leaves, use and safe next step.
+Fill the worksheet from two Akapulko cards: botanical name, part and listed use. Tell Ana what is known and unknown, ask about her medicines and symptoms, and name when her rash needs health-center assessment.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Ana. Say you have an itchy circular rash and a yard plant called Akapulko. Ask: “It’s buni, isn’t it? Can I use the leaves?” Answer questions briefly. Do not add symptoms, medicines or personal details beyond the case.
 
 ## Observer card
 

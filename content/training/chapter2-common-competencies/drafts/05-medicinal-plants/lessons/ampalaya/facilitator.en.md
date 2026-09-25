@@ -42,20 +42,20 @@ Read the case. Ask: *"Who decides about Joel's medicine?"* Return to it at step 
 
 ## [answer-key] Self-check answer key
 
-- **"Which Ampalaya part is listed on the card?"** Correct: **"Leaves of confirmed Momordica charantia."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Ampalaya is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **"What is the safe response in the Ampalaya case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **"Which Ampalaya part is listed on the card?"** Correct: **"Leaves of confirmed Momordica charantia."**
+  - "Any part, since Ampalaya is a familiar vegetable." Familiar food is not the listed part.
+  - "Whatever part Joel names, without checking the botanical name." Check the card, not only Joel’s words.
+- **"What is the safe response in Joel’s case?"** Correct: **"Do not change his medicine; refer the question to his clinician."**
+  - "Tell Joel Ampalaya can replace his medicine because it is a vegetable." Not an automatic substitute.
+  - "Suggest he take less medicine and add Ampalaya alongside it." Taking less is a medication change.
 
 ## [observe] What to observe
 
 Watch for: For Ampalaya, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Ampalaya, Momordica charantia, leaves, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Momordica charantia, leaves and listed use, keeps Joel’s medicine unchanged, and refers him to his clinician without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to keep the medicine unchanged or to name who decides.
+- **Hindi pa:** Says Ampalaya can replace or reduce Joel’s medicine, or suggests an amount.
 
 Look for: no suggestion to stop or reduce medicine. A correct self-check is not evidence of the skill.
 

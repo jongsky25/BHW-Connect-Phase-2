@@ -4,7 +4,7 @@ Itinutugma ng BHW ang Allium sativum, butil at nakalistang gamit sa Bawang card,
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** 8 minutong harapan (bahagi ng lesson sa 120 minutong plano ng subchapter, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
+- **Oras:** 8 minutong harapan (bahagi ng 120 minutong plano, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
 - **Sa mesa:** participant cards na *2.5.4 — Reference-card practice: Bawang*, worksheet, staff observation sheet; job aid na *Sampung halamang gamot*; dalawang printed Bawang card.
 
 ## [prepare] Paghahanda
@@ -20,10 +20,10 @@ Basahin ang kaso. Itanong: *"Ano ang sasabihin mo kay Liza, at sino ang magpapas
 
 1. **"Ang sitwasyon" (unang slide).** *"Ano ang gustong baguhin ni Liza?"*
 2. **"Gawin at sabihin" (katugmang slide).** Ituro ang Allium sativum at butil: *"Ano ang ibig sabihin ng 'sa payo ng clinician'?"*
-3. **"Piliin ang unang tugon."** Self-check 1 — magkapareha muna ang sasagot, saka ibunyag.
+3. **"Piliin ang unang tugon."** Self-check 1: magkapareha muna ang sasagot, saka ibunyag.
 4. **"Halimbawang sagot."** Ipakita: ituro ang card; ibalik ang desisyon sa clinician; walang dami. *"Bakit walang dami?"*
 5. **"Saklaw at paghingi ng tulong."** *"Ano pa ang dapat itanong kay Liza?"* (Iba pang iniinom at posibleng epekto.) Simulan ang practice.
-6. **"Subukan sa sitwasyon."** Self-check 2 — magkapareha muna ang sasagot, saka ibunyag.
+6. **"Subukan sa sitwasyon."** Self-check 2: magkapareha muna ang sasagot, saka ibunyag.
 7. **"Sa Lunes, gawin ito."** *"Ano ang mamarkahan mo sa dalawang Bawang card?"*
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
@@ -38,24 +38,24 @@ Basahin ang kaso. Itanong: *"Ano ang sasabihin mo kay Liza, at sino ang magpapas
 
 ## [practice] Gawaing pagsasanay
 
-**Reference-card practice: Bawang** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (Liza), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit ng kalahok sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang iba pang gamot at sintomas, at ibinabalik ang desisyon sa clinician. Itinatala ng tagamasid ang aktuwal na salita; nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye lamang. Kung kulang ang gamit: isang card set para sa buong grupo.
+**Reference-card practice: Bawang** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (Liza), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang iba pang gamot at sintomas, at ibinabalik ang desisyon sa clinician. Itinatala ng tagamasid ang aktuwal na salita; nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye lamang. Kung kulang ang gamit: isang card set para sa buong grupo.
 
 ## [answer-key] Susi sa self-check
 
-- **"Aling bahagi ng Bawang ang nakalista sa card?"** Tama: **"Butil ng kumpirmadong Allium sativum."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
-  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Bawang." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
-  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
-- **"Ano ang ligtas na sagot sa kaso ni Bawang?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
-  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
-  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+- **"Aling bahagi ng Bawang ang nakalista sa card?"** Tama: **"Butil ng kumpirmadong Allium sativum."**
+  - "Anumang bahagi ng bawang, dahil karaniwang pagkain ito." Hindi batayan ang pagiging pagkain.
+  - "Ang bahaging kinakain na ni Liza, nang hindi binabasa ang card." Hindi batayan ang nakasanayan ni Liza.
+- **"Ano ang ligtas na tugon sa kaso ni Liza?"** Tama: **"Itanong ang iba pa niyang gamot; ibalik ang desisyon sa clinician."**
+  - "Sabihing puwede na niyang itigil ang gamot dahil kumakain siya ng bawang." Hindi pahintulot ang bawang sa pagkain.
+  - "Sabihin kung ilang butil ng bawang ang kakainin kapalit ng gamot." Walang itinakdang dami ng bawang.
 
 ## [observe] Ano ang oobserbahan
 
 Bantayan: Para sa Bawang, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-- **Kaya na:** Tama ang Bawang, Allium sativum, butil, gamit at referral nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
-- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Naitutugma ang Allium sativum, butil at nakalistang gamit, itinatanong ang iba pang gamot, at ibinabalik ang desisyon sa clinician ni Liza nang walang paalala.
+- **Kailangan pa ng practice:** Naitutugma ang card ngunit kailangan ng paalala na itanong ang iba pang gamot o kung sino ang magpapasya.
+- **Hindi pa:** Sumasang-ayong itigil ni Liza ang gamot, o nagsasabi ng dami ng bawang.
 
 Tingnan: walang dami; naitanong ang iba pang gamot. Hindi ebidensiya ng kakayahan ang tamang self-check.
 

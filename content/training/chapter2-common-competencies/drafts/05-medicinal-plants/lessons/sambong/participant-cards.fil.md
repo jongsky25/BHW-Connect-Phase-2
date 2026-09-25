@@ -6,11 +6,11 @@ May matinding sakit sa tagiliran si Paolo at kaunti ang ihi. Tinanong niya ang t
 
 ## Card ng kalahok
 
-Itugma ang dalawang Sambong card; piliin ang Blumea balsamifera, dahon, gamit at ligtas na susunod na hakbang.
+Ihambing ang dalawang Sambong card at punan ang worksheet. Sabihin kay Paolo ang alam, ang hindi alam at kung sino ang kokonsultahin.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang si Paolo. Sabihing matindi ang sakit sa tagiliran mo at kaunti ang ihi, at hilinging subukan muna ang Sambong. Huwag magdagdag ng sintomas, gamot o ibang detalye.
 
 ## Card ng tagamasid
 

@@ -45,28 +45,28 @@
         "c2.plants.bayabas.identity"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.",
-      "takeaway_en": "Match the part to the written source; this is not a dose.",
+      "takeaway_fil": "Talbos/dahon ng Psidium guajava ang nasa card; hindi ito paghahanda.",
+      "takeaway_en": "The card lists leafy tops of Psidium guajava; this is not a preparation.",
       "check": {
         "prompt_fil": "Aling bahagi ng Bayabas ang nakalista sa card?",
         "prompt_en": "Which Bayabas part is listed on the card?",
         "options": [
           {
-            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Bayabas.",
-            "en": "Any part of a yard plant even when its identity as Bayabas is unconfirmed."
+            "fil": "Anumang bahagi ng bayabas, dahil may gamit sa balat sa lumang manual.",
+            "en": "Any part of a guava tree, since the old manual lists skin uses."
           },
           {
             "fil": "Talbos/dahon ng kumpirmadong Psidium guajava.",
             "en": "Leafy tops of confirmed Psidium guajava."
           },
           {
-            "fil": "Hindi kailangang malaman ang botanical name.",
-            "en": "The botanical name need not be checked."
+            "fil": "Pinakuluang dahon para sa sugat ni Mara, gaya ng plano niya.",
+            "en": "Boiled leaves for Mara’s wound, as she already plans."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+        "feedback_fil": "1: Hindi saklaw ng gamit sa balat ang lahat ng bahagi; talbos/dahon ang nasa card. 2: Talbos/dahon ng Psidium guajava ang nasa card; hindi ito paghahanda. 3: Bahagi ang nasa card, hindi panghugas sa sugat; walang pahintulot na maghanda.",
+        "feedback_en": "1: A listed skin use does not cover every part; the card lists leafy tops. 2: The card lists leafy tops of Psidium guajava; this is not a preparation. 3: The card names a part, not a wash for a wound; no preparation is authorized."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.bayabas.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Para sa Bayabas, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
-      "takeaway_en": "For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "takeaway_fil": "Kaso ni Mara: tugma ang card, walang wash, ipinasuri agad ang sugat.",
+      "takeaway_en": "Mara’s case: card matched, no wash, wound sent for prompt assessment.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.bayabas.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi kapalit ng pagsusuri at wound care ang herbal wash.",
+      "takeaway_en": "A herbal wash does not replace assessment and wound care.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.bayabas.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
-      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "takeaway_fil": "Kailangang ipasuri agad ang sugat ni Mara na may nana.",
+      "takeaway_en": "Mara’s wound with pus needs prompt assessment.",
       "check": {
-        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Bayabas?",
-        "prompt_en": "What is the safe response in the Bayabas case?",
+        "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Mara?",
+        "prompt_en": "What is the safe response in Mara’s case?",
         "options": [
           {
-            "fil": "Ipalit agad sa niresetang gamot.",
-            "en": "Replace prescribed treatment now."
+            "fil": "Tulungan si Mara na pakuluan ang dahon at hugasan muna ang sugat.",
+            "en": "Help Mara boil the leaves and wash the wound with it first."
           },
           {
-            "fil": "Kumonsulta muna sa clinician.",
-            "en": "Consult a clinician first."
+            "fil": "Ipasuri agad ang sugat dahil namumula ito at may nana.",
+            "en": "Seek prompt assessment, since the wound is red with pus."
           },
           {
-            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-            "en": "Copy an old recipe without assessment."
+            "fil": "Linisin ang sugat at maghintay ng ilang araw kung gagaling.",
+            "en": "Clean the wound and wait a few days to see if it heals."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+        "feedback_fil": "1: Hindi kapalit ng pagsusuri at angkop na wound care ang herbal wash. 2: Senyales ng impeksiyon ang nana; kailangang maipasuri agad si Mara. 3: Dapat ipasuri agad ang nana; naaantala ang pangangalaga kapag naghintay.",
+        "feedback_en": "1: A herbal wash does not replace assessment and appropriate wound care. 2: Pus is an infection concern; Mara needs prompt assessment. 3: Pus needs prompt assessment; waiting delays needed care."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.bayabas.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ihambing ang dalawang Bayabas card at ipasuri sa supervisor.",
+      "takeaway_en": "On Monday, compare two Bayabas cards and review them with a supervisor.",
       "check": null
     }
   ],

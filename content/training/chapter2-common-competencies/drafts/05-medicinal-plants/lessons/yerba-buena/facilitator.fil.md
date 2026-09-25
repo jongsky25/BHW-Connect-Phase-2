@@ -4,7 +4,7 @@ Itinutugma ng BHW ang card sa Mentha cordifolia at dahon, sinasabing kailangan n
 
 ## [time-materials] Oras at kagamitan
 
-- **8 minutong harapan** (bahagi ng lesson na ito sa 120-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
+- **8 minutong harapan** (sa 120-minutong plano): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
 - **Bawat tatluhan:** cards at worksheet na *2.5.11 — Reference-card practice: Yerba buena*; *2.5.11 — Talaan ng obserbasyon*; job aid; dalawang Yerba buena card. Tuyong props lamang.
 
 ## [prepare] Paghahanda
@@ -25,8 +25,6 @@ Basahin nang malakas ang kaso. Itanong: *"Masakit ang ngipin ni Eva at namamaga 
 5. **Saklaw at paghingi ng tulong.** *"Kayang palitan ng halaman ang dental care?"*
 6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
 7. **Sa Lunes, gawin ito.** Simulan ang practice.
-
-Katapat ng bawat hakbang ang slide na may parehong pangalan.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -50,20 +48,20 @@ Kathang-isip na detalye lamang. Kung mag-isa: worksheet ngayon, obserbasyon ng s
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Aling bahagi ng Yerba buena ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Mentha cordifolia."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
-  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Yerba buena." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
-  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
-- **Check 2: "Ano ang ligtas na sagot sa kaso ni Yerba buena?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
-  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
-  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+- **Check 1: "Aling bahagi ng Yerba buena ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Mentha cordifolia."** Tugma ang bahagi sa card; hindi ito dose.
+  - "Anumang dahong tinatawag ni Eva na Yerba buena, nang hindi sinusuri." Hindi patunay ng identity ang local name.
+  - "Dahon ng anumang halamang sinasabing pampaginhawa sa sakit ng ngipin." Kailangan ng dental assessment ang sakit ng ngipin.
+- **Check 2: "May masakit na ngipin at namamagang pisngi si Eva. Ano ang ligtas na tugon?"** Tama: **"Iugnay agad si Eva sa dental o health professional."** Kailangang iugnay agad ang pamamaga.
+  - "Imungkahi ang paghahanda ng Yerba buena na iinumin o ipapahid." Walang iniinom o ipinapahid na paghahanda.
+  - "Sabihing puwedeng ipalit ang halaman sa pagpapatingin sa dentista." Hindi kapalit ng dental care ang halaman.
 
 ## [observe] Ano ang oobserbahan
 
 Staff lamang. Indicator: Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-- **Kaya na:** Tama ang Yerba buena, Mentha cordifolia, dahon, gamit at referral nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
-- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Itinutugma ang Mentha cordifolia at dahon, walang iminumungkahing paghahanda at iniuugnay agad ang pamamaga ni Eva nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang card ngunit kailangan ng paalala para iugnay agad ang pamamaga kapag malayo ang dentista.
+- **Hindi pa:** Nagmumungkahi ng paghahanda ng halaman o ipinapalit ang halaman sa dental care ni Eva.
 
 Hanapin: nire-refer ang pamamaga nang walang paalala, kahit malayo ang dentista. Hindi ebidensya ng kasanayan ang tamang self-check.
 
@@ -76,5 +74,4 @@ Hanapin: nire-refer ang pamamaga nang walang paalala, kahit malayo ang dentista.
 ## [sources-review] Sanggunian at tala sa pagrepaso
 
 - Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 16 (hindi isinama ang paghahanda at dose).
-- Hati ng authoring ang minuto sa 2-oras na alokasyon ng F38.
 - Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

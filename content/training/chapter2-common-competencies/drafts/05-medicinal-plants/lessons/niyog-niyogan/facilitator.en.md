@@ -4,7 +4,7 @@ The BHW matches the card to Quisqualis indica and seeds, says the worms need con
 
 ## [time-materials] Time and materials
 
-- **8 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **8 minutes face-to-face** (of the 120-minute plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
 - **Per triad:** *2.5.7 — Reference-card practice: Niyog-niyogan* cards and worksheet; *2.5.7 — Observation sheet*; job aid; two Niyog-niyogan cards. Dry props only.
 
 ## [prepare] Prepare
@@ -25,8 +25,6 @@ Read the case aloud. Ask: *"The neighbour is already reaching for the seeds. Who
 5. **Scope and support.** *"Why can a wrong plant or wrong seed amount harm a child?"*
 6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
 7. **On Monday, try this.** Start the practice.
-
-Each step matches the slide of the same name.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -50,20 +48,20 @@ Fictional details only. Alone: worksheet now, staff observation later.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "Which Niyog-niyogan part is listed on the card?"** Correct: **"Seeds of confirmed Quisqualis indica."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Niyog-niyogan is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **Check 2: "What is the safe response in the Niyog-niyogan case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **Check 1: "Which Niyog-niyogan part is listed on the card?"** Correct: **"Seeds of confirmed Quisqualis indica."** Part matched to the card; not a dose.
+  - "Whatever part the neighbor picks from the yard plant." Unconfirmed plant; only seeds are listed.
+  - "Seeds of any plant the neighbor calls Niyog-niyogan." A local name is not identity.
+- **Check 2: "The neighbor wants to pick seeds for the child. What is the safe response?"** Correct: **"Refer the child to the health center for diagnosis."** Worms need diagnosis first.
+  - "Let the neighbor pick seeds and give the child a few." Unconfirmed plant; seeds can harm a child.
+  - "Give the child seeds using the old manual's table." No dose from the old table.
 
 ## [observe] What to observe
 
 Staff only. Indicator: For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Niyog-niyogan, Quisqualis indica, seeds, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Quisqualis indica and seeds, says worms are unconfirmed and refers the child to the health center without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to say worms are unconfirmed or to refer the child.
+- **Hindi pa:** Treats the neighbor's plant as Niyog-niyogan or names a seed amount for the child.
 
 Look for: says the worms are not yet confirmed; names no seed amount. A correct self-check is not evidence of the skill.
 
@@ -76,5 +74,4 @@ Look for: says the worms are not yet confirmed; names no seed amount. A correct 
 ## [sources-review] Sources and review notes
 
 - Reference Manual PDF p. 50; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 12 (preparation and dose content excluded).
-- Minutes are an authoring distribution of F38's 2-hour plant allocation.
 - Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

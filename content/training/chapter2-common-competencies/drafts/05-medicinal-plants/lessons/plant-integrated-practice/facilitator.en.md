@@ -4,7 +4,7 @@ On three case cards, the BHW records identity, use, concern, referral and missin
 
 ## [time-materials] Time and materials
 
-- **30 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 2, model 3, practice 18 (three 6-minute rounds), feedback 4, checks and close 3. Read in the app: about 4 minutes.
+- **30 minutes face-to-face** (of the 120-minute plan): opening 2, model 3, practice 18 (three 6-minute rounds), feedback 4, checks and close 3. Read in the app: about 4 minutes.
 - **Per triad:** *2.5.12 — Plant-card consultation* cards, three worksheets, observation sheet, job aid, the three plants' current cards. Dry props only.
 
 ## [prepare] Prepare
@@ -14,7 +14,7 @@ On three case cards, the BHW records identity, use, concern, referral and missin
 
 ## [opening] Opening
 
-Read the case aloud (Ben: breathing difficulty; Joel: diabetes medicine; Mara: wound with pus). Ask: *"Which of these three do you escalate first, and what do you record?"*
+Read the case aloud. Ask: *"Which of these three do you escalate first, and what do you record?"*
 
 ## [steps] Steps
 
@@ -24,9 +24,7 @@ Read the case aloud (Ben: breathing difficulty; Joel: diabetes medicine; Mara: w
 4. **Worked example.** Model one case: read the card, separate listed use from a prescription, ask about symptoms and medicines.
 5. **Scope and support.** *"Does attending today mean we can prepare these plants?"*
 6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
-7. **On Monday, try this.** Close: *"What follows the card check?"* Each names one thing for the supervisor on Monday.
-
-Each step matches the slide of the same name.
+7. **On Monday, try this.** Close: each names one thing for the supervisor on Monday.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -50,22 +48,22 @@ Fictional details only. Low resource: the facilitator plays each resident. Alone
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "What is the first safe step?"** Correct: **"Confirm identity and source."** A verified reference is the proper start.
-  - "Guess from a name or picture." The plant may be misidentified.
-  - "Give the old dose immediately." Clinical and local authorization are missing.
-- **Check 2: "What follows the card check?"** Correct: **"Consult a clinician."** Clinical advice matters before preparation or use.
-  - "Change the resident’s medicine." Changing treatment is not authorized.
-  - "Withhold other symptoms from staff." Complete information is needed.
+- **Check 1: "What do you do first for the three residents?"** Correct: **"Confirm each plant's identity on its current card."** A verified card is the proper start.
+  - "Guess each plant from its local name or from a picture." A name or picture can mislead.
+  - "Tell each resident how much of the plant to use." No dose; authorization is missing.
+- **Check 2: "After the card check, what is the safe response?"** Correct: **"Escalate Ben and Mara; take Joel's question to his clinician."** Urgent signs first.
+  - "Tell Joel he can use Ampalaya in place of his diabetes medicine." Changing treatment is not authorized.
+  - "Suggest Lagundi for Ben and Bayabas for Mara before any referral." Delays the urgent referral.
 
 ## [observe] What to observe
 
 Staff only. Indicator: For three case cards, record identity, use, concern, referral and missing local authorization.
 
-- **Kaya na:** Completes identity, part, scope and referral without prompts.
-- **Kailangan pa ng practice:** Mostly correct, but needs a prompt for source or referral.
-- **Hindi pa:** Guesses identity, dose or authorization.
+- **Kaya na:** Completes all three cards, escalates Ben and Mara, keeps Joel's medicine unchanged and marks authorization missing, without prompts.
+- **Kailangan pa ng practice:** Completes the cards but needs a prompt on a referral or on authorization.
+- **Hindi pa:** Guesses identity, gives a dose, changes Joel's medicine or treats attendance as authorization.
 
-Look for: escalates breathing difficulty and the wound unprompted; marks authorization as missing. Station attendance is not clinical sign-off, and a correct self-check is not evidence of the skill.
+Station attendance is not clinical sign-off, and a correct self-check is not evidence of the skill.
 
 ## [support] If a BHW needs more support
 
@@ -76,5 +74,4 @@ Look for: escalates breathing difficulty and the wound unprompted; marks authori
 ## [sources-review] Sources and review notes
 
 - Reference Manual PDF pp. 48–51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 6, 16 (preparation and dose content excluded).
-- Minutes are an authoring distribution of F38's 2-hour plant allocation.
 - Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

@@ -4,7 +4,7 @@ The BHW matches the card to Carmona retusa and leaves, says stomach pain needs a
 
 ## [time-materials] Time and materials
 
-- **8 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **8 minutes face-to-face** (of the 120-minute plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
 - **Per triad:** *2.5.9 — Reference-card practice: Tsaang gubat* cards and worksheet; *2.5.9 — Observation sheet*; job aid; two Tsaang gubat cards. Dry props only.
 
 ## [prepare] Prepare
@@ -25,8 +25,6 @@ Read the case aloud. Ask: *"Rosa wants to drink Tsaang gubat. What do you do abo
 5. **Scope and support.** *"Does the name tell us it is safe to drink?"*
 6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
 7. **On Monday, try this.** Start the practice.
-
-Each step matches the slide of the same name.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -50,20 +48,20 @@ Fictional details only. Alone: worksheet now, staff observation later.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "Which Tsaang gubat part is listed on the card?"** Correct: **"Leaves of confirmed Carmona retusa."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Tsaang gubat is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **Check 2: "What is the safe response in the Tsaang gubat case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **Check 1: "Which Tsaang gubat part is listed on the card?"** Correct: **"Leaves of confirmed Carmona retusa."** Part matched to the card; not a dose.
+  - "Any leaves Rosa calls Tsaang gubat, unchecked." A local name is not identity.
+  - "Leaves of any plant said to ease stomach pain." Match the botanical name, not the complaint.
+- **Check 2: "Rosa's stomach pain is getting worse. What is the safe response?"** Correct: **"Refer her worsening pain to a health professional."** Worsening pain needs a health professional.
+  - "Copy a dose from the old table so she can drink it." No dose from the old table.
+  - "Tell her Tsaang gubat is safe to drink since it is listed." A name does not make it safe to drink.
 
 ## [observe] What to observe
 
 Staff only. Indicator: For Tsaang gubat, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Tsaang gubat, Carmona retusa, leaves, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Carmona retusa and leaves, names no amount and refers Rosa's worsening pain to a health professional without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to act on Rosa's worsening pain.
+- **Hindi pa:** Copies a dose from the old table or says Tsaang gubat is safe for Rosa to drink.
 
 Look for: acts on "worsening" without a prompt; names no amount. A correct self-check is not evidence of the skill.
 
@@ -76,5 +74,4 @@ Look for: acts on "worsening" without a prompt; names no amount. A correct self-
 ## [sources-review] Sources and review notes
 
 - Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 14 (preparation and dose content excluded).
-- Minutes are an authoring distribution of F38's 2-hour plant allocation.
 - Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

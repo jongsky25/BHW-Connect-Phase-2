@@ -45,28 +45,28 @@
         "c2.plants.akapulko.identity"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.",
-      "takeaway_en": "Match the part to the written source; this is not a dose.",
+      "takeaway_fil": "Dahon ng Senna alata ang nasa card; hindi ito dose.",
+      "takeaway_en": "The card lists leaves of Senna alata; this is not a dose.",
       "check": {
         "prompt_fil": "Aling bahagi ng Akapulko ang nakalista sa card?",
         "prompt_en": "Which Akapulko part is listed on the card?",
         "options": [
           {
-            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Akapulko.",
-            "en": "Any part of a yard plant even when its identity as Akapulko is unconfirmed."
+            "fil": "Anumang bahagi ng halaman sa bakuran ni Ana, kahit hindi pa kumpirmadong Akapulko.",
+            "en": "Any part of Ana’s yard plant, even before it is confirmed as Akapulko."
           },
           {
             "fil": "Dahon ng kumpirmadong Senna alata.",
             "en": "Leaves of confirmed Senna alata."
           },
           {
-            "fil": "Hindi kailangang malaman ang botanical name.",
-            "en": "The botanical name need not be checked."
+            "fil": "Ang bahaging laging ginagamit ng pamilya, nang hindi tinitingnan ang card.",
+            "en": "The part her family always used, without checking the card."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+        "feedback_fil": "1: Hindi pa kumpirmadong Senna alata ang halaman ni Ana, kaya walang bahaging maitutugma. 2: Dahon ng Senna alata ang nasa card; hindi ito dose. 3: Hindi patunay ng halaman o bahagi ang nakasanayan ng pamilya; tingnan ang botanical name.",
+        "feedback_en": "1: Ana’s yard plant is not yet confirmed as Senna alata, so no part can be matched. 2: The card lists leaves of Senna alata; this is not a dose. 3: Family habit does not confirm the plant or part; check the botanical name."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.akapulko.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Para sa Akapulko, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
-      "takeaway_en": "For Akapulko, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "takeaway_fil": "Kaso ni Ana: tugma ang card, hindi kumpirmado ang halaman, ipinasuri ang pantal.",
+      "takeaway_en": "Ana’s case: card matched, yard plant unconfirmed, rash sent for assessment.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.akapulko.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Hindi patunay ang pangalan o larawan; huwag ipahid ang hindi kumpirmadong katas.",
+      "takeaway_en": "A name or picture is not proof; do not apply an unverified extract.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.akapulko.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
-      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "takeaway_fil": "Sabihin ang hindi pa alam; sa health center ipasuri ang pantal ni Ana.",
+      "takeaway_en": "Say what is unknown; the health center assesses Ana’s rash.",
       "check": {
-        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Akapulko?",
-        "prompt_en": "What is the safe response in the Akapulko case?",
+        "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Ana?",
+        "prompt_en": "What is the safe response in Ana’s case?",
         "options": [
           {
-            "fil": "Ipalit agad sa niresetang gamot.",
-            "en": "Replace prescribed treatment now."
+            "fil": "Sabihing buni ito at ipahid kay Ana ang dahon ng halaman sa bakuran.",
+            "en": "Tell Ana it is ringworm and have her apply leaves from the yard plant."
           },
           {
-            "fil": "Kumonsulta muna sa clinician.",
-            "en": "Consult a clinician first."
+            "fil": "Sabihin ang hindi pa alam at ipasuri ang pantal sa health center.",
+            "en": "Say what is unknown and have the health center assess the rash."
           },
           {
-            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-            "en": "Copy an old recipe without assessment."
+            "fil": "Ituro ang timpla ng inyong pamilya para hindi na siya magpatingin.",
+            "en": "Show her how your family prepared Akapulko, to save her a trip."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+        "feedback_fil": "1: Hindi nagdidiyagnos ang BHW, at hindi kumpirmado ang halaman; huwag itong ipahid. 2: Hindi tiyak ang diagnosis, kaya sa health center ipasusuri ang pantal. 3: Walang pahintulot ang lesson na maghanda, at hindi masusuri ng timpla ang pantal.",
+        "feedback_en": "1: The BHW does not diagnose, and the yard plant is unverified; do not apply it. 2: The diagnosis is uncertain, so the health center assesses the rash. 3: This lesson does not authorize preparation, and a recipe cannot assess her rash."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.akapulko.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ihambing ang dalawang Akapulko card at ipasuri sa supervisor.",
+      "takeaway_en": "On Monday, compare two Akapulko cards and review them with a supervisor.",
       "check": null
     }
   ],

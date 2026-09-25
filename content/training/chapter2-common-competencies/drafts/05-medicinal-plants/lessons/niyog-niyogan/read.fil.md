@@ -1,6 +1,6 @@
 ## [scene] Ang sitwasyon
 
-May batang nangangati at pinaghihinalaang may bulate. Gustong pumitas ng buto ng Niyog-niyogan ang kapitbahay.
+May batang pinaghihinalaang may bulate. Gustong pumitas ng buto ng Niyog-niyogan ang kapitbahay.
 
 ## [action] Gawin at sabihin
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Niyog-niyogan at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri ang bata sa health center para sa diagnosis at angkop na deworming plan.
+Sinabi ng BHW sa magulang na hindi pa kumpirmado ang bulate. Itinuro niya ang Quisqualis indica at "Bahagi: buto" sa card. Hindi niya inakalang Niyog-niyogan ang halaman ng kapitbahay. Itinanong niya ang sintomas at kasalukuyang gamot ng bata. Ipinasuri niya ang bata sa health center para sa diagnosis at angkop na deworming plan.
 
 ## [scope] Saklaw at paghingi ng tulong
 

@@ -6,11 +6,11 @@ May bilog na makating pantal si Ana. May halamang tinatawag niyang Akapulko sa b
 
 ## Card ng kalahok
 
-Itugma ang dalawang Akapulko card; piliin ang Senna alata, dahon, gamit at ligtas na susunod na hakbang.
+Punan ang worksheet mula sa dalawang Akapulko card: botanical name, bahagi at nakalistang gamit. Sabihin kay Ana ang alam at hindi alam, itanong ang gamot at sintomas niya, at sabihin kung kailan ipasusuri ang pantal.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Ana. Sabihing may bilog na makating pantal ka at may halamang tinatawag na Akapulko sa bakuran. Itanong: “Buni ito, hindi ba? Puwede ko bang gamitin ang dahon?” Sumagot nang maikli. Huwag magdagdag ng sintomas, gamot o personal na detalye na wala sa kaso.
 
 ## Card ng tagamasid
 

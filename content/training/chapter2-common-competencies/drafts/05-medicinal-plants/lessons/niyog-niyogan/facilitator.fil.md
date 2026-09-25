@@ -4,7 +4,7 @@ Itinutugma ng BHW ang card sa Quisqualis indica at buto, sinasabing kailangang k
 
 ## [time-materials] Oras at kagamitan
 
-- **8 minutong harapan** (bahagi ng lesson na ito sa 120-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
+- **8 minutong harapan** (sa 120-minutong plano): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
 - **Bawat tatluhan:** cards at worksheet na *2.5.7 — Reference-card practice: Niyog-niyogan*; *2.5.7 — Talaan ng obserbasyon*; job aid; dalawang Niyog-niyogan card. Tuyong props lamang.
 
 ## [prepare] Paghahanda
@@ -25,8 +25,6 @@ Basahin nang malakas ang kaso. Itanong: *"Pipitas na ng buto ang kapitbahay. Sin
 5. **Saklaw at paghingi ng tulong.** *"Bakit makapipinsala sa bata ang maling halaman o maling dami ng buto?"*
 6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
 7. **Sa Lunes, gawin ito.** Simulan ang practice.
-
-Katapat ng bawat hakbang ang slide na may parehong pangalan.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -50,20 +48,20 @@ Kathang-isip na detalye lamang. Kung mag-isa: worksheet ngayon, obserbasyon ng s
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Aling bahagi ng Niyog-niyogan ang nakalista sa card?"** Tama: **"Buto ng kumpirmadong Quisqualis indica."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
-  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Niyog-niyogan." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
-  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
-- **Check 2: "Ano ang ligtas na sagot sa kaso ni Niyog-niyogan?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
-  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
-  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+- **Check 1: "Aling bahagi ng Niyog-niyogan ang nakalista sa card?"** Tama: **"Buto ng kumpirmadong Quisqualis indica."** Tugma ang bahagi sa card; hindi ito dose.
+  - "Anumang bahaging pipitasin ng kapitbahay sa halaman sa bakuran." Hindi kumpirmado ang halaman; buto lamang ang nakalista.
+  - "Buto ng anumang halamang tinatawag ng kapitbahay na Niyog-niyogan." Hindi patunay ng identity ang local name.
+- **Check 2: "Gustong pumitas ng buto ng kapitbahay para sa bata. Ano ang ligtas na tugon?"** Tama: **"Ipasuri ang bata sa health center para sa diagnosis."** Kailangan munang ma-diagnose ang bulate.
+  - "Hayaang pumitas ang kapitbahay at bigyan ang bata ng kaunting buto." Hindi kumpirmado; makapipinsala ang buto sa bata.
+  - "Bigyan ng buto ang bata batay sa table sa lumang manual." Walang dose mula sa lumang table.
 
 ## [observe] Ano ang oobserbahan
 
 Staff lamang. Indicator: Para sa Niyog-niyogan, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-- **Kaya na:** Tama ang Niyog-niyogan, Quisqualis indica, buto, gamit at referral nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
-- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Itinutugma ang Quisqualis indica at buto, sinasabing hindi pa kumpirmado ang bulate at ipinapasuri ang bata sa health center nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang card ngunit kailangan ng paalala para sabihing hindi pa kumpirmado ang bulate o para ipasuri ang bata.
+- **Hindi pa:** Itinuturing na Niyog-niyogan ang halaman ng kapitbahay o nagbabanggit ng dami ng buto para sa bata.
 
 Hanapin: sinasabing hindi pa kumpirmado ang bulate; walang binabanggit na dami ng buto. Hindi ebidensya ng kasanayan ang tamang self-check.
 
@@ -76,5 +74,4 @@ Hanapin: sinasabing hindi pa kumpirmado ang bulate; walang binabanggit na dami n
 ## [sources-review] Sanggunian at tala sa pagrepaso
 
 - Reference Manual PDF p. 50; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 12 (hindi isinama ang paghahanda at dose).
-- Hati ng authoring ang minuto sa 2-oras na alokasyon ng F38.
 - Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

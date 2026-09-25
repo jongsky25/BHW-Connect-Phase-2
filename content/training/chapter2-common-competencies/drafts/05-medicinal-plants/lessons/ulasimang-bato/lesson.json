@@ -52,21 +52,21 @@
         "prompt_en": "Which Ulasimang bato / pansit-pansitan part is listed on the card?",
         "options": [
           {
-            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Ulasimang bato / pansit-pansitan.",
-            "en": "Any part of a yard plant even when its identity as Ulasimang bato / pansit-pansitan is unconfirmed."
+            "fil": "Talbos ng anumang halamang tinatawag na Pansit-pansitan.",
+            "en": "Leafy tops of any plant called Pansit-pansitan."
           },
           {
             "fil": "Talbos ng kumpirmadong Peperomia pellucida.",
             "en": "Leafy tops of confirmed Peperomia pellucida."
           },
           {
-            "fil": "Hindi kailangang malaman ang botanical name.",
-            "en": "The botanical name need not be checked."
+            "fil": "Anumang halamang sinasabi ng kapitbahay na para sa gout.",
+            "en": "Any plant the neighbor says treats gout."
           }
         ],
         "correct_option_index": 1,
-        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+        "feedback_fil": "1: Hindi patunay ng halaman ang local name; tingnan ang botanical name. 2: Tama: talbos ng Peperomia pellucida ang nakalista sa card. Hindi ito dose para kay Carlo. 3: Hindi patunay ng halaman o ng gout ang sinabi ng kapitbahay.",
+        "feedback_en": "1: A local name does not confirm the plant; check the botanical name. 2: Correct: the card lists leafy tops of Peperomia pellucida. This is not a dose for Carlo. 3: The neighbor's claim confirms neither the plant nor a gout diagnosis."
       }
     },
     {
@@ -77,8 +77,8 @@
         "c2.plants.ulasimang-bato.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Para sa Ulasimang bato / pansit-pansitan, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
-      "takeaway_en": "For Ulasimang bato / pansit-pansitan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "takeaway_fil": "Huwag tawaging gout o itigil ang gamot; ipasuri si Carlo sa health center.",
+      "takeaway_en": "Do not call it gout or stop medicine; ask the health center to assess Carlo.",
       "check": null
     },
     {
@@ -88,8 +88,8 @@
         "c2.plants.ulasimang-bato.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
-      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "takeaway_fil": "Walang tatawaging gout, walang pangakong gagaling at walang ititigil na gamot.",
+      "takeaway_en": "No gout label, no promised cure and no stopped medicine.",
       "check": null
     },
     {
@@ -99,28 +99,28 @@
         "c2.plants.ulasimang-bato.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
-      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "takeaway_fil": "Ipasuri sa health center ang sakit at gamot ni Carlo.",
+      "takeaway_en": "Ask the health center to assess Carlo's pain and medicines.",
       "check": {
-        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Ulasimang bato / pansit-pansitan?",
-        "prompt_en": "What is the safe response in the Ulasimang bato / pansit-pansitan case?",
+        "prompt_fil": "Sinabi ng kapitbahay na sapat na ang Pansit-pansitan para sa gout ni Carlo. Ano ang ligtas na tugon?",
+        "prompt_en": "A neighbor says Pansit-pansitan alone will treat Carlo's gout. What is the safe response?",
         "options": [
           {
-            "fil": "Ipalit agad sa niresetang gamot.",
-            "en": "Replace prescribed treatment now."
+            "fil": "Sang-ayunang gout ito at imungkahi ang halaman kay Carlo.",
+            "en": "Agree that it is gout and suggest the plant for Carlo."
           },
           {
-            "fil": "Kumonsulta muna sa clinician.",
-            "en": "Consult a clinician first."
+            "fil": "Sabihing itigil ni Carlo ang gamot at gamitin na lang ang halaman.",
+            "en": "Tell Carlo to stop his medicine and use the plant instead."
           },
           {
-            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-            "en": "Copy an old recipe without assessment."
+            "fil": "Ipasuri sa health center ang sakit at gamot niya.",
+            "en": "Have the health center assess his pain and medicines."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi diagnosis ng gout ang sakit ng kasukasuan, at hindi maipapangakong gagaling sa halaman. 2: Huwag itigil ang gamot; sa health center susuriin ang kasalukuyang gamot niya. 3: Tama: sa health center susuriin ang sakit at ang kasalukuyang gamot niya.",
+        "feedback_en": "1: Joint pain is not a gout diagnosis, and a cure from the plant cannot be promised. 2: Do not stop medicine; the health center assesses his current medicines. 3: Correct: the health center assesses the pain and his current medicines."
       }
     },
     {
@@ -130,8 +130,8 @@
         "c2.plants.ulasimang-bato.boundary"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
-      "takeaway_en": "Try the task and review the result.",
+      "takeaway_fil": "Sa Lunes, ihambing ang dalawang Ulasimang bato / pansit-pansitan card kasama ang supervisor.",
+      "takeaway_en": "On Monday, compare two Ulasimang bato / pansit-pansitan cards with a supervisor.",
       "check": null
     }
   ],

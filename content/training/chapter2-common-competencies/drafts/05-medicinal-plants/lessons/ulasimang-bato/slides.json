@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nakalista sa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part is listed on the card?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Ulasimang bato / pansit-pansitan ang nakalista sa card?",
       "prompt_en": "Which Ulasimang bato / pansit-pansitan part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Ulasimang bato / pansit-pansitan.",
-          "en": "Any part of a yard plant even when its identity as Ulasimang bato / pansit-pansitan is unconfirmed."
+          "fil": "Talbos ng anumang halamang tinatawag na Pansit-pansitan.",
+          "en": "Leafy tops of any plant called Pansit-pansitan."
         },
         {
           "fil": "Talbos ng kumpirmadong Peperomia pellucida.",
           "en": "Leafy tops of confirmed Peperomia pellucida."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Anumang halamang sinasabi ng kapitbahay na para sa gout.",
+          "en": "Any plant the neighbor says treats gout."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "feedback_fil": "1: Hindi patunay ng halaman ang local name; tingnan ang botanical name. 2: Tama: talbos ng Peperomia pellucida ang nakalista sa card. Hindi ito dose para kay Carlo. 3: Hindi patunay ng halaman o ng gout ang sinabi ng kapitbahay.",
+      "feedback_en": "1: A local name does not confirm the plant; check the botanical name. 2: Correct: the card lists leafy tops of Peperomia pellucida. This is not a dose for Carlo. 3: The neighbor's claim confirms neither the plant nor a gout diagnosis."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: uric-acid o gout concern sa payo ng clinician\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: uric-acid or gout concern under clinical advice\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Hindi tinatawag na gout ang sakit.\nCard: Peperomia pellucida, talbos.\nHindi itinitigil ang gamot ni Carlo.\nIpasuri sa health center ang sakit at gamot.",
+    "display_en": "Joint pain is not called gout.\nCard: Peperomia pellucida, leafy tops.\nCarlo's medicine is not stopped.\nThe health center assesses pain and medicines.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Ulasimang bato / pansit-pansitan at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri ang dahilan ng sakit at ang kasalukuyang gamot sa health center.",
-    "narration_en": "The BHW points to Ulasimang bato / pansit-pansitan and its botanical name on the card. The yard plant is not assumed to be identified. Ask the health center to assess the pain and current medicines."
+    "narration_fil": "Narinig ng BHW ang sinabi ng kapitbahay tungkol sa gout. Hindi niya tinawag na gout ang sakit sa kasukasuan ni Carlo. Itinuro niya ang Peperomia pellucida at \"Bahagi: talbos\" sa card. Itinanong niya ang kasalukuyang gamot ni Carlo at sinabing huwag itong itigil. Ipinasuri niya sa health center ang sakit at ang gamot.",
+    "narration_en": "The BHW hears the neighbor's gout claim and does not call Carlo's joint pain gout. The BHW points to Peperomia pellucida and \"Part: leafy tops\" on the card. The BHW asks about Carlo's current medicine, says not to stop it, and asks the health center to assess the pain and his medicines."
   },
   {
     "id": "slide-scope",
@@ -97,8 +97,8 @@
     "layout": "process",
     "heading_fil": "Saklaw at paghingi ng tulong",
     "heading_en": "Scope and support",
-    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
-    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "display_fil": "Hindi diagnosis ng gout ang sakit ng kasukasuan.\nHuwag itigil ang gamot o mangakong gagaling.\nWalang paghahanda o dose.",
+    "display_en": "Joint pain is not a gout diagnosis.\nDo not stop medicine or promise a cure.\nNo preparation or dose.",
     "check": null,
     "narration_fil": "Hindi diagnosis ng gout ang pananakit ng kasukasuan. Huwag itigil ang gamot o mangakong gagaling sa halaman. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
     "narration_en": "Joint pain is not a gout diagnosis. Do not stop medicine or promise a cure from the plant. This lesson does not authorize preparation or dosing of an herbal remedy."
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Sabi ng kapitbahay, sapat na ang halaman sa gout.\nAno ang ligtas na tugon?",
+    "display_en": "The neighbor says the plant alone treats gout.\nWhat is the safe response?",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Ulasimang bato / pansit-pansitan?",
-      "prompt_en": "What is the safe response in the Ulasimang bato / pansit-pansitan case?",
+      "prompt_fil": "Sinabi ng kapitbahay na sapat na ang Pansit-pansitan para sa gout ni Carlo. Ano ang ligtas na tugon?",
+      "prompt_en": "A neighbor says Pansit-pansitan alone will treat Carlo's gout. What is the safe response?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Sang-ayunang gout ito at imungkahi ang halaman kay Carlo.",
+          "en": "Agree that it is gout and suggest the plant for Carlo."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Sabihing itigil ni Carlo ang gamot at gamitin na lang ang halaman.",
+          "en": "Tell Carlo to stop his medicine and use the plant instead."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Ipasuri sa health center ang sakit at gamot niya.",
+          "en": "Have the health center assess his pain and medicines."
         }
       ],
-      "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi diagnosis ng gout ang sakit ng kasukasuan, at hindi maipapangakong gagaling sa halaman. 2: Huwag itigil ang gamot; sa health center susuriin ang kasalukuyang gamot niya. 3: Tama: sa health center susuriin ang sakit at ang kasalukuyang gamot niya.",
+      "feedback_en": "1: Joint pain is not a gout diagnosis, and a cure from the plant cannot be promised. 2: Do not stop medicine; the health center assesses his current medicines. 3: Correct: the health center assesses the pain and his current medicines."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

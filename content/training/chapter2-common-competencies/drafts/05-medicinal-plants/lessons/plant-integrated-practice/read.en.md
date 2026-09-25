@@ -1,10 +1,10 @@
 ## [scene] The situation
 
-Three residents ask about Lagundi, Ampalaya and Bayabas. Their cards include breathing difficulty, diabetes medicine and a wound with pus.
+Three residents ask about plants. Ben asks about Lagundi and has breathing difficulty. Joel asks about Ampalaya and takes diabetes medicine. Mara asks about Bayabas and has a wound with pus.
 
 ## [action] What to do and say
 
-Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product.
+Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification only, with dry props; dispense no product.
 
 ## [check-start] Choose the first response
 
@@ -12,7 +12,7 @@ Choose an answer first. Then read the explanation for each option.
 
 ## [example] Worked example
 
-The BHW reads the current card and listens to the resident. Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product.
+The BHW reads each current card and listens to each resident. Ben's breathing difficulty and Mara's wound with pus are escalated first. For Joel, the BHW says Ampalaya does not replace his diabetes medicine and takes his question to his clinician. On each worksheet, the BHW marks local authorization as missing.
 
 ## [scope] Scope and support
 

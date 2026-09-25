@@ -42,20 +42,20 @@ Read the case. Ask: *"What in Mara's wound means assessment comes first?"* Retur
 
 ## [answer-key] Self-check answer key
 
-- **"Which Bayabas part is listed on the card?"** Correct: **"Leafy tops of confirmed Psidium guajava."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Bayabas is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **"What is the safe response in the Bayabas case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **"Which Bayabas part is listed on the card?"** Correct: **"Leafy tops of confirmed Psidium guajava."**
+  - "Any part of a guava tree, since the old manual lists skin uses." The card lists leafy tops.
+  - "Boiled leaves for Mara’s wound, as she already plans." A part, not a wash.
+- **"What is the safe response in Mara’s case?"** Correct: **"Seek prompt assessment, since the wound is red with pus."**
+  - "Help Mara boil the leaves and wash the wound with it first." A wash does not replace assessment.
+  - "Clean the wound and wait a few days to see if it heals." Waiting delays needed care.
 
 ## [observe] What to observe
 
 Watch for: For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Bayabas, Psidium guajava, leafy tops, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Psidium guajava, leafy tops and listed use, and seeks prompt assessment of Mara’s wound without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt that pus or spreading redness needs prompt assessment.
+- **Hindi pa:** Suggests boiling the leaves or a wash, or waiting before assessment.
 
 Look for: the pus is named as the reason for prompt assessment. A correct self-check is not evidence of the skill.
 

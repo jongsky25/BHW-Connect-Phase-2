@@ -42,20 +42,20 @@ Read the case. Ask: *"What would make you send Ana to the health center?"* Retur
 
 ## [answer-key] Self-check answer key
 
-- **"Which Akapulko part is listed on the card?"** Correct: **"Leaves of confirmed Senna alata."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Akapulko is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **"What is the safe response in the Akapulko case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **"Which Akapulko part is listed on the card?"** Correct: **"Leaves of confirmed Senna alata."**
+  - "Any part of Ana’s yard plant, even before it is confirmed as Akapulko." Yard plant not confirmed.
+  - "The part her family always used, without checking the card." Habit is not proof; check the card.
+- **"What is the safe response in Ana’s case?"** Correct: **"Say what is unknown and have the health center assess the rash."**
+  - "Tell Ana it is ringworm and have her apply leaves from the yard plant." The BHW does not diagnose; plant unverified.
+  - "Show her how your family prepared Akapulko, to save her a trip." No preparation is authorized.
 
 ## [observe] What to observe
 
 Watch for: For Akapulko, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Akapulko, Senna alata, leaves, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Senna alata, leaves and listed use, and names when Ana’s rash needs health-center assessment, without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt that the yard plant is unconfirmed or that the rash needs assessment.
+- **Hindi pa:** Calls the rash ringworm, treats the yard plant as Akapulko, or explains a preparation.
 
 Look for: the learner names the referral signs unprompted. A correct self-check is not evidence of the skill.
 

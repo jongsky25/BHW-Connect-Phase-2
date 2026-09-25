@@ -6,11 +6,11 @@ A child is suspected of having worms. A neighbor wants to pick Niyog-niyogan see
 
 ## Learner card
 
-Match two Niyog-niyogan cards; choose Quisqualis indica, seeds, use and safe next step.
+Compare the two Niyog-niyogan cards and fill the worksheet. Tell the parent what is known, what is unknown and who to consult.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the child's parent. Say the neighbor wants to pick Niyog-niyogan seeds now, and ask whether a few seeds are fine. Do not add symptoms, amounts or other details.
 
 ## Observer card
 

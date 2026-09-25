@@ -4,7 +4,7 @@ The BHW matches the card to Mentha cordifolia and leaves, says tooth pain needs 
 
 ## [time-materials] Time and materials
 
-- **8 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **8 minutes face-to-face** (of the 120-minute plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
 - **Per triad:** *2.5.11 — Reference-card practice: Yerba buena* cards and worksheet; *2.5.11 — Observation sheet*; job aid; two Yerba buena cards. Dry props only.
 
 ## [prepare] Prepare
@@ -25,8 +25,6 @@ Read the case aloud. Ask: *"Eva has tooth pain and a swollen cheek. Who should s
 5. **Scope and support.** *"Can a plant replace dental care?"*
 6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
 7. **On Monday, try this.** Start the practice.
-
-Each step matches the slide of the same name.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -50,20 +48,20 @@ Fictional details only. Alone: worksheet now, staff observation later.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "Which Yerba buena part is listed on the card?"** Correct: **"Leaves of confirmed Mentha cordifolia."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Yerba buena is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **Check 2: "What is the safe response in the Yerba buena case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **Check 1: "Which Yerba buena part is listed on the card?"** Correct: **"Leaves of confirmed Mentha cordifolia."** Part matched to the card; not a dose.
+  - "Any leaves Eva calls Yerba buena, unchecked." A local name is not identity.
+  - "Leaves of any plant said to ease tooth pain." Tooth pain needs dental assessment.
+- **Check 2: "Eva has tooth pain and a swollen cheek. What is the safe response?"** Correct: **"Refer her promptly to a dental or health professional."** The swelling needs prompt referral.
+  - "Suggest a Yerba buena preparation to drink or apply now." No oral or topical preparation.
+  - "Tell her the plant can take the place of a dental visit." A plant does not replace dental care.
 
 ## [observe] What to observe
 
 Staff only. Indicator: For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Yerba buena, Mentha cordifolia, leaves, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Mentha cordifolia and leaves, suggests no preparation and refers Eva's swelling promptly without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to refer the swelling promptly when the dentist is far.
+- **Hindi pa:** Suggests a plant preparation or lets the plant replace Eva's dental care.
 
 Look for: refers the swelling unprompted, even when the dentist is far. A correct self-check is not evidence of the skill.
 
@@ -76,5 +74,4 @@ Look for: refers the swelling unprompted, even when the dentist is far. A correc
 ## [sources-review] Sources and review notes
 
 - Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 16 (preparation and dose content excluded).
-- Minutes are an authoring distribution of F38's 2-hour plant allocation.
 - Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

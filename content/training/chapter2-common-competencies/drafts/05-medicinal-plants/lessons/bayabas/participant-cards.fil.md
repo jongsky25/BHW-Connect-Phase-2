@@ -6,11 +6,11 @@ May sugat na namumula at may nana si Mara. Nais niyang gamitin ang pinakuluang d
 
 ## Card ng kalahok
 
-Itugma ang dalawang Bayabas card; piliin ang Psidium guajava, talbos/dahon, gamit at ligtas na susunod na hakbang.
+Punan ang worksheet mula sa dalawang Bayabas card: botanical name, bahagi at nakalistang gamit. Sabihin kay Mara ang alam at hindi alam, itanong ang gamot at sintomas niya, at ipasuri agad ang sugat niya.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Mara. Sabihing namumula at may nana ang sugat mo at nais mong gamitin ang pinakuluang dahon ng Bayabas. Itanong: “Puwede ko bang hugasan na lang ito ng Bayabas?” Sumagot nang maikli. Huwag magdagdag ng sintomas, gamot o personal na detalye na wala sa kaso. Walang likido sa mesa.
 
 ## Card ng tagamasid
 

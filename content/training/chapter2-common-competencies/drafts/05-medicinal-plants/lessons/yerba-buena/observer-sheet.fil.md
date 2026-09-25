@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Yerba buena, Mentha cordifolia, dahon, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Itinutugma ang Mentha cordifolia at dahon, walang iminumungkahing paghahanda at iniuugnay agad ang pamamaga ni Eva nang walang paalala. |
+| Kailangan pa ng practice | Tama ang card ngunit kailangan ng paalala para iugnay agad ang pamamaga kapag malayo ang dentista. |
+| Hindi pa | Nagmumungkahi ng paghahanda ng halaman o ipinapalit ang halaman sa dental care ni Eva. |
 
 Aktuwal na nakita/narinig: ____
 

@@ -6,11 +6,11 @@ May mataas na cholesterol si Liza. Kumakain siya ng bawang at nais itigil ang ni
 
 ## Card ng kalahok
 
-Itugma ang dalawang Bawang card; piliin ang Allium sativum, butil, gamit at ligtas na susunod na hakbang.
+Punan ang worksheet mula sa dalawang Bawang card: botanical name, bahagi at nakalistang gamit. Sabihin kay Liza ang alam at hindi alam, itanong ang iba pa niyang gamot at sintomas, at ibalik sa clinician ang desisyon sa gamot.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Liza. Sabihing mataas ang cholesterol mo, kumakain ka ng bawang at nais mong itigil ang niresetang gamot. Itanong: “Gaano karaming bawang ang kakainin ko kapalit nito?” Sumagot nang maikli. Huwag magdagdag ng sintomas, gamot o personal na detalye na wala sa kaso.
 
 ## Card ng tagamasid
 

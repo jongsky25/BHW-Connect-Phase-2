@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Tsaang gubat, Carmona retusa, leaves, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Carmona retusa and leaves, names no amount and refers Rosa's worsening pain to a health professional without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to act on Rosa's worsening pain. |
+| Hindi pa | Copies a dose from the old table or says Tsaang gubat is safe for Rosa to drink. |
 
 Evidence observed: ____
 

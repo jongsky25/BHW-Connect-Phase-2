@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Tsaang gubat at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay ang lumalalang sakit sa health professional; huwag magbigay ng dose mula sa lumang table.
+Napansin ng BHW na lumalala ang sakit ng tiyan ni Rosa. Itinuro niya ang Carmona retusa at "Bahagi: dahon" sa card. Wala siyang binanggit na dami. Itinanong niya ang kasalukuyang gamot ni Rosa. Iniugnay niya sa health professional ang lumalalang sakit.
 
 ## [scope] Saklaw at paghingi ng tulong
 

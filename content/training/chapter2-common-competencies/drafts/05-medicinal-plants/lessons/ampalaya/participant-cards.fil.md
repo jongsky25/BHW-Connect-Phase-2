@@ -6,11 +6,11 @@ May diabetes si Joel at gumagamit ng niresetang gamot. Nagtanong siya kung puwed
 
 ## Card ng kalahok
 
-Itugma ang dalawang Ampalaya card; piliin ang Momordica charantia, dahon, gamit at ligtas na susunod na hakbang.
+Punan ang worksheet mula sa dalawang Ampalaya card: botanical name, bahagi at nakalistang gamit. Sabihin kay Joel ang alam at hindi alam, itanong ang gamot at sintomas niya, at sabihin kung aling clinician ang magpapasya sa gamot niya.
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Joel. Sabihing may diabetes ka at may niresetang gamot. Itanong: “Puwede bang ipalit ang ampalaya sa gamot ko?” Kung hindi sinabi ng kalahok kung sino ang magpapasya, itanong: “Sino ang magpapasya?” Sumagot nang maikli. Huwag magdagdag ng sintomas, gamot o personal na detalye na wala sa kaso.
 
 ## Card ng tagamasid
 

@@ -4,7 +4,7 @@ Itinutugma ng BHW ang card sa Blumea balsamifera at dahon, sinasabing paksa ng c
 
 ## [time-materials] Oras at kagamitan
 
-- **8 minutong harapan** (bahagi ng lesson na ito sa 120-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
+- **8 minutong harapan** (sa 120-minutong plano): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
 - **Bawat tatluhan:** cards at worksheet na *2.5.8 — Reference-card practice: Sambong*; *2.5.8 — Talaan ng obserbasyon*; job aid; dalawang Sambong card. Tuyong props lamang.
 
 ## [prepare] Paghahanda
@@ -25,8 +25,6 @@ Basahin nang malakas ang kaso. Itanong: *"Matindi ang sakit sa tagiliran ni Paol
 5. **Saklaw at paghingi ng tulong.** *"Ano ang mawawala kung pinagpakuluan muna ang susubukan ni Paolo?"*
 6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
 7. **Sa Lunes, gawin ito.** Simulan ang practice.
-
-Katapat ng bawat hakbang ang slide na may parehong pangalan.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -50,20 +48,20 @@ Kathang-isip na detalye lamang. Kung mag-isa: worksheet ngayon, obserbasyon ng s
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Aling bahagi ng Sambong ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Blumea balsamifera."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
-  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Sambong." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
-  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
-- **Check 2: "Ano ang ligtas na sagot sa kaso ni Sambong?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
-  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
-  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+- **Check 1: "Aling bahagi ng Sambong ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Blumea balsamifera."** Tugma ang bahagi sa card; hindi ito dose.
+  - "Dahon ng anumang halamang tinatawag ni Paolo na Sambong." Hindi patunay ng identity ang local name.
+  - "Anumang bahagi, basta tugma ang local name." Dahon lamang ang nakalista.
+- **Check 2: "Matindi ang sakit sa tagiliran ni Paolo at kaunti ang ihi. Ano ang ligtas na tugon?"** Tama: **"Ipasuri agad si Paolo sa health facility."** Kailangang ipasuri agad ang matinding sakit at pagbabago sa pag-ihi.
+  - "Sabihing kidney stone ito at makatutulong ang Sambong." Hindi patunay ng kidney stone ang sintomas lamang.
+  - "Pasubukan muna ang Sambong at saka magpasuri." Huwag ipagpaliban ang pagsusuri para sa pinagpakuluan.
 
 ## [observe] Ano ang oobserbahan
 
 Staff lamang. Indicator: Para sa Sambong, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-- **Kaya na:** Tama ang Sambong, Blumea balsamifera, dahon, gamit at referral nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
-- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Itinutugma ang Blumea balsamifera at dahon, hindi sinasabing kidney stone ito at ipinapasuri agad si Paolo sa health facility nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang card ngunit kailangan ng paalala para ipasuri agad ang sakit at pagbabago sa pag-ihi ni Paolo.
+- **Hindi pa:** Sinasabing kidney stone ito, ipinapasubok muna ang Sambong o ipinagpapaliban ang pagsusuri kay Paolo.
 
 Hanapin: binabasa ang botanical name; nire-refer si Paolo nang walang paalala. Hindi ebidensya ng kasanayan ang tamang self-check.
 
@@ -76,5 +74,4 @@ Hanapin: binabasa ang botanical name; nire-refer si Paolo nang walang paalala. H
 ## [sources-review] Sanggunian at tala sa pagrepaso
 
 - Reference Manual PDF p. 50; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 13 (hindi isinama ang paghahanda at dose nito).
-- Hati ng authoring ang minuto sa 2-oras na alokasyon ng F38.
 - Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

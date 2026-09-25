@@ -6,11 +6,11 @@ Eva has tooth pain and a swollen cheek. She asks about Yerba buena.
 
 ## Learner card
 
-Match two Yerba buena cards; choose Mentha cordifolia, leaves, use and safe next step.
+Compare the two Yerba buena cards and fill the worksheet. Tell Eva what is known, what is unknown and who to consult.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Eva. Say you have tooth pain and a swollen cheek, ask about Yerba buena, and say the dentist is far away. Do not add symptoms, medicines or other details.
 
 ## Observer card
 

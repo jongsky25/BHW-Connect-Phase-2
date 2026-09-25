@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Completes identity, part, scope and referral without prompts. |
-| Kailangan practice | Mostly correct, but needs a prompt for source or referral. |
-| Hindi pa | Guesses identity, dose or authorization. |
+| Kaya na | Marks the botanical name, part and what needs confirmation on both cards, and who to consult, without prompts. |
+| Kailangan pa ng practice | Compares the cards but needs a prompt on the shared name or on who to consult. |
+| Hindi pa | Picks a plant by name, picture or family use, or gives a dose. |
 
 Evidence observed: ____
 

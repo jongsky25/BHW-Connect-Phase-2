@@ -6,11 +6,11 @@ Joel has diabetes and takes prescribed medicine. He asks whether Ampalaya can re
 
 ## Learner card
 
-Match two Ampalaya cards; choose Momordica charantia, leaves, use and safe next step.
+Fill the worksheet from two Ampalaya cards: botanical name, part and listed use. Tell Joel what is known and unknown, ask about his medicines and symptoms, and name the clinician who decides about his medicine.
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Joel. Say you have diabetes and take prescribed medicine. Ask: “Can Ampalaya replace my medicine?” If the learner does not say who decides, ask: “So who decides?” Answer questions briefly. Do not add symptoms, medicines or personal details beyond the case.
 
 ## Observer card
 

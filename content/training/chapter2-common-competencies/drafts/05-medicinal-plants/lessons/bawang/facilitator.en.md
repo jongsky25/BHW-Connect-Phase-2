@@ -42,20 +42,20 @@ Read the case. Ask: *"What do you say to Liza, and who decides?"* Return to it a
 
 ## [answer-key] Self-check answer key
 
-- **"Which Bawang part is listed on the card?"** Correct: **"Bulb of confirmed Allium sativum."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Bawang is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **"What is the safe response in the Bawang case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **"Which Bawang part is listed on the card?"** Correct: **"Bulb of confirmed Allium sativum."**
+  - "Any part of the garlic plant, since it is ordinary food." Food use is not the listed part.
+  - "The part Liza already eats, without reading the card." Liza’s habit is not the check.
+- **"What is the safe response in Liza’s case?"** Correct: **"Ask about her other medicines; return the decision to her clinician."**
+  - "Tell Liza she may stop her medicine because she eats garlic daily." Food garlic does not authorize a change.
+  - "Tell her how many cloves of garlic to eat instead of the medicine." No amount of garlic as medicine.
 
 ## [observe] What to observe
 
 Watch for: For Bawang, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Bawang, Allium sativum, bulb, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Allium sativum, bulb and listed use, asks about other medicines, and returns the decision to Liza’s clinician without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to ask about other medicines or to name who decides.
+- **Hindi pa:** Agrees that Liza can stop her medicine, or names an amount of garlic.
 
 Look for: no amount named; other medicines asked. A correct self-check is not evidence of the skill.
 

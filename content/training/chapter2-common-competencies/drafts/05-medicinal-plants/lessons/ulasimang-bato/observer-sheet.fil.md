@@ -6,9 +6,9 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 
 | Antas | Tiyak na kilos |
 |---|---|
-| Kaya na | Tama ang Ulasimang bato / pansit-pansitan, Peperomia pellucida, talbos, gamit at referral nang walang paalala. |
-| Kailangan practice | Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral. |
-| Hindi pa | Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot. |
+| Kaya na | Itinutugma ang Peperomia pellucida at talbos, hindi tinatawag na gout ang sakit, hindi itinitigil ang gamot at ipinapasuri si Carlo sa health center nang walang paalala. |
+| Kailangan pa ng practice | Tama ang card ngunit kailangan ng paalala para kuwestiyunin ang sinabing gout o para ipasuri si Carlo. |
+| Hindi pa | Tinatawag na gout ang sakit, nangangakong gagaling o pinatitigil ang gamot ni Carlo. |
 
 Aktuwal na nakita/narinig: ____
 

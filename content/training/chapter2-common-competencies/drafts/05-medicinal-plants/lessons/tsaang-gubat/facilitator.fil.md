@@ -4,7 +4,7 @@ Itinutugma ng BHW ang card sa Carmona retusa at dahon, sinasabing kailangang sur
 
 ## [time-materials] Oras at kagamitan
 
-- **8 minutong harapan** (bahagi ng lesson na ito sa 120-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
+- **8 minutong harapan** (sa 120-minutong plano): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
 - **Bawat tatluhan:** cards at worksheet na *2.5.9 — Reference-card practice: Tsaang gubat*; *2.5.9 — Talaan ng obserbasyon*; job aid; dalawang Tsaang gubat card. Tuyong props lamang.
 
 ## [prepare] Paghahanda
@@ -25,8 +25,6 @@ Basahin nang malakas ang kaso. Itanong: *"Gustong uminom ni Rosa ng Tsaang gubat
 5. **Saklaw at paghingi ng tulong.** *"Sinasabi ba ng pangalan na ligtas itong inumin?"*
 6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
 7. **Sa Lunes, gawin ito.** Simulan ang practice.
-
-Katapat ng bawat hakbang ang slide na may parehong pangalan.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -50,20 +48,20 @@ Kathang-isip na detalye lamang. Kung mag-isa: worksheet ngayon, obserbasyon ng s
 
 ## [answer-key] Susi sa self-check
 
-- **Check 1: "Aling bahagi ng Tsaang gubat ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Carmona retusa."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
-  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Tsaang gubat." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
-  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
-- **Check 2: "Ano ang ligtas na sagot sa kaso ni Tsaang gubat?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
-  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
-  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+- **Check 1: "Aling bahagi ng Tsaang gubat ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Carmona retusa."** Tugma ang bahagi sa card; hindi ito dose.
+  - "Anumang dahong tinatawag ni Rosa na Tsaang gubat, nang hindi sinusuri." Hindi patunay ng identity ang local name.
+  - "Dahon ng anumang halamang sinasabing pampaginhawa sa sakit ng tiyan." Itugma ang botanical name, hindi ang reklamo.
+- **Check 2: "Lumalala ang sakit ng tiyan ni Rosa. Ano ang ligtas na tugon?"** Tama: **"Iugnay sa health professional ang lumalala niyang sakit."** Kailangan ng health professional ang lumalalang sakit.
+  - "Kopyahin ang dose mula sa lumang table para mainom niya ito." Walang dose mula sa lumang table.
+  - "Sabihing ligtas inumin ang Tsaang gubat dahil nakalista ito." Hindi patunay ng pangalan na ligtas itong inumin.
 
 ## [observe] Ano ang oobserbahan
 
 Staff lamang. Indicator: Para sa Tsaang gubat, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-- **Kaya na:** Tama ang Tsaang gubat, Carmona retusa, dahon, gamit at referral nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
-- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Itinutugma ang Carmona retusa at dahon, walang binabanggit na dami at iniuugnay sa health professional ang lumalalang sakit ni Rosa nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang card ngunit kailangan ng paalala para kumilos sa lumalalang sakit ni Rosa.
+- **Hindi pa:** Kinokopya ang dose mula sa lumang table o sinasabing ligtas inumin ni Rosa ang Tsaang gubat.
 
 Hanapin: kumikilos sa "lumalala" nang walang paalala; walang binabanggit na dami. Hindi ebidensya ng kasanayan ang tamang self-check.
 
@@ -76,5 +74,4 @@ Hanapin: kumikilos sa "lumalala" nang walang paalala; walang binabanggit na dami
 ## [sources-review] Sanggunian at tala sa pagrepaso
 
 - Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 14 (hindi isinama ang paghahanda at dose).
-- Hati ng authoring ang minuto sa 2-oras na alokasyon ng F38.
 - Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

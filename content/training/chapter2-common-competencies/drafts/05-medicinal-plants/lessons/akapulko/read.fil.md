@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Akapulko at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Kung lumalala, kumakalat, may impeksiyon o hindi tiyak ang diagnosis, ipasuri sa health center.
+Ipinakita ng BHW kay Ana ang card: Senna alata ang Akapulko, at dahon ang nakalistang bahagi. Sinabi ng BHW na hindi pa kumpirmado ang halaman sa bakuran at hindi pa tiyak kung ano ang pantal. Itinanong niya ang gamot at sintomas ni Ana. Dahil hindi tiyak ang diagnosis, ipinasuri niya ang pantal sa health center.
 
 ## [scope] Saklaw at paghingi ng tulong
 

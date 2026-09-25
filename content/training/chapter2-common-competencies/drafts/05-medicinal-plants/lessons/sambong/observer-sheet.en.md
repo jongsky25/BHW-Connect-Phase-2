@@ -6,9 +6,9 @@ Learner code: ____  Observer: ____  Date: ____
 
 | Rating | Specific behavior |
 |---|---|
-| Kaya na | Correctly identifies Sambong, Blumea balsamifera, leaves, use and referral without prompts. |
-| Kailangan practice | Identifies the plant but needs a prompt about limits or referral. |
-| Hindi pa | Guesses identity, prescribes a dose or replaces treatment. |
+| Kaya na | Matches Blumea balsamifera and leaves, does not call it a kidney stone and seeks prompt facility assessment for Paolo without prompts. |
+| Kailangan pa ng practice | Matches the card but needs a prompt to seek prompt assessment for Paolo's pain and urine change. |
+| Hindi pa | Calls it a kidney stone, suggests Sambong first or delays Paolo's assessment. |
 
 Evidence observed: ____
 

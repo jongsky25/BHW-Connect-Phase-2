@@ -44,28 +44,28 @@
     "layout": "decision",
     "heading_fil": "Piliin ang unang tugon",
     "heading_en": "Choose the first response",
-    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
-    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "display_fil": "Aling bahagi ang nasa card?\nPumili bago basahin ang paliwanag.",
+    "display_en": "Which part does the card list?\nChoose before reading the explanation.",
     "check": {
       "prompt_fil": "Aling bahagi ng Ampalaya ang nakalista sa card?",
       "prompt_en": "Which Ampalaya part is listed on the card?",
       "options": [
         {
-          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Ampalaya.",
-          "en": "Any part of a yard plant even when its identity as Ampalaya is unconfirmed."
+          "fil": "Anumang bahagi, dahil kilalang gulay ang ampalaya.",
+          "en": "Any part, since Ampalaya is a familiar vegetable."
         },
         {
           "fil": "Dahon ng kumpirmadong Momordica charantia.",
           "en": "Leaves of confirmed Momordica charantia."
         },
         {
-          "fil": "Hindi kailangang malaman ang botanical name.",
-          "en": "The botanical name need not be checked."
+          "fil": "Anumang bahaging banggitin ni Joel, nang hindi tinitingnan ang botanical name.",
+          "en": "Whatever part Joel names, without checking the botanical name."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
-      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      "feedback_fil": "1: Hindi sinasabi ng pagiging gulay ang nakalistang bahagi; dahon ang nasa card. 2: Dahon ng Momordica charantia ang nasa card; hindi ito dose. 3: Tingnan ang botanical name at bahagi sa card, hindi lang ang sinasabi ni Joel.",
+      "feedback_en": "1: Being familiar food does not tell you the listed part; the card lists leaves. 2: The card lists leaves of Momordica charantia; this is not a dose. 3: Check the botanical name and part on the card, not only what Joel says."
     },
     "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
     "narration_en": "Choose an answer first. Then read the explanation for each option."
@@ -81,11 +81,11 @@
     "layout": "process",
     "heading_fil": "Halimbawang sagot",
     "heading_en": "Worked example",
-    "display_fil": "Paksa: pagkontrol ng blood sugar sa payo ng clinician\nSuriin ang sintomas.\nKumpirmahin ang card.",
-    "display_en": "Use topic: blood-sugar management under clinical advice\nAssess symptoms.\nConfirm the card.",
+    "display_fil": "Card: Momordica charantia, dahon.\nHindi awtomatikong kapalit ng diabetes plan.\nHuwag ihinto o baguhin ang gamot.\nIugnay sa clinician ni Joel.",
+    "display_en": "Card: Momordica charantia, leaves.\nNot an automatic substitute for his plan.\nDo not stop or change medicine.\nRefer to Joel’s clinician.",
     "check": null,
-    "narration_fil": "Itinuro ng BHW ang Ampalaya at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay ang tanong sa clinician na sumusubaybay sa blood sugar at iba pang gamot ni Joel.",
-    "narration_en": "The BHW points to Ampalaya and its botanical name on the card. The yard plant is not assumed to be identified. Refer the question to the clinician monitoring Joel’s blood sugar and other medicines."
+    "narration_fil": "Ipinakita ng BHW kay Joel ang card: Momordica charantia ang Ampalaya, dahon, para sa pagkontrol ng blood sugar sa payo ng clinician. Sinabi ng BHW na hindi awtomatikong kapalit ng diabetes plan ang ampalaya. Itinanong niya ang gamot at sintomas ni Joel. Sinabi niyang huwag ihinto o baguhin ang gamot, at iniugnay ang tanong sa clinician na sumusubaybay sa blood sugar ni Joel.",
+    "narration_en": "The BHW shows Joel the card: Ampalaya is Momordica charantia, leaves, for blood-sugar management under clinical advice. The BHW says Ampalaya is not an automatic substitute for his diabetes plan and asks about his medicines and symptoms. The BHW tells Joel not to stop or change his medicine and refers his question to the clinician monitoring his blood sugar."
   },
   {
     "id": "slide-scope",
@@ -113,28 +113,28 @@
     "layout": "decision",
     "heading_fil": "Subukan sa sitwasyon",
     "heading_en": "Apply it to the situation",
-    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
-    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "display_fil": "Ano ang ligtas na hakbang para kay Joel?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the safe step for Joel?\nTry before viewing the explanation.",
     "check": {
-      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Ampalaya?",
-      "prompt_en": "What is the safe response in the Ampalaya case?",
+      "prompt_fil": "Ano ang ligtas na tugon sa kaso ni Joel?",
+      "prompt_en": "What is the safe response in Joel’s case?",
       "options": [
         {
-          "fil": "Ipalit agad sa niresetang gamot.",
-          "en": "Replace prescribed treatment now."
+          "fil": "Sabihin kay Joel na puwedeng ipalit ang ampalaya sa gamot dahil gulay ito.",
+          "en": "Tell Joel Ampalaya can replace his medicine because it is a vegetable."
         },
         {
-          "fil": "Kumonsulta muna sa clinician.",
-          "en": "Consult a clinician first."
+          "fil": "Huwag baguhin ang gamot; iugnay ang tanong sa kanyang clinician.",
+          "en": "Do not change his medicine; refer the question to his clinician."
         },
         {
-          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
-          "en": "Copy an old recipe without assessment."
+          "fil": "Imungkahing bawasan niya ang gamot at sabayan ito ng ampalaya.",
+          "en": "Suggest he take less medicine and add Ampalaya alongside it."
         }
       ],
       "correct_option_index": 1,
-      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
-      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      "feedback_fil": "1: Hindi awtomatikong kapalit ng diabetes plan ang pagkain; maaaring maantala ang pangangalaga. 2: Ang clinician na sumusubaybay sa blood sugar at gamot ni Joel ang magpapasya. 3: Pagbabago ng gamot ang pagbabawas; ang clinician lamang niya ang magpapasya.",
+      "feedback_en": "1: Food is not an automatic substitute for a diabetes plan; care may be delayed. 2: The clinician monitoring Joel’s blood sugar and medicines decides. 3: Taking less medicine is a medication change; only his clinician decides."
     },
     "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
     "narration_en": "Return to the story. Choose an appropriate next step."

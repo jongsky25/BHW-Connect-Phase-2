@@ -42,20 +42,20 @@ Read the case. Ask: *"What cannot wait here?"* Return to it at step 4.
 
 ## [answer-key] Self-check answer key
 
-- **"Which Lagundi part is listed on the card?"** Correct: **"Leaves of confirmed Vitex negundo."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Lagundi is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **"What is the safe response in the Lagundi case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **"Which Lagundi part is listed on the card?"** Correct: **"Leaves of confirmed Vitex negundo."**
+  - "Any part of the plant, since Lagundi is well known for cough." The card lists leaves.
+  - "The decoction and dose shown on the old slide." Do not copy the old slide’s dose.
+- **"What is the safe response in Ben’s case?"** Correct: **"Connect Ben promptly and report his breathing difficulty."**
+  - "Let Ben drink the Lagundi decoction while you wait." A drink must not delay assessment.
+  - "Try Lagundi first and refer only if the cough does not ease." Not only a cough; it delays assessment.
 
 ## [observe] What to observe
 
 Watch for: For Lagundi, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Lagundi, Vitex negundo, leaves, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Vitex negundo, leaves and listed use, and connects Ben promptly and reports his breathing difficulty without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt that the breathing difficulty cannot wait or must be reported.
+- **Hindi pa:** Lets Ben take the decoction first, or gives a dose from the old slide.
 
 Look for: breathing difficulty is named and reported without a prompt. A correct self-check is not evidence of the skill.
 

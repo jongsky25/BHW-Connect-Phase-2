@@ -4,7 +4,7 @@ Itinutugma ng BHW ang Momordica charantia, dahon at nakalistang gamit sa Ampalay
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** 8 minutong harapan (bahagi ng lesson sa 120 minutong plano ng subchapter, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
+- **Oras:** 8 minutong harapan (bahagi ng 120 minutong plano, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
 - **Sa mesa:** participant cards na *2.5.3 — Reference-card practice: Ampalaya*, worksheet, staff observation sheet; job aid na *Sampung halamang gamot*; dalawang printed Ampalaya card.
 
 ## [prepare] Paghahanda
@@ -20,10 +20,10 @@ Basahin ang kaso. Itanong: *"Sino ang magpapasya sa gamot ni Joel?"* Balikan ito
 
 1. **"Ang sitwasyon" (unang slide).** *"Ano talaga ang tanong ni Joel?"*
 2. **"Gawin at sabihin" (katugmang slide).** Ituro ang Momordica charantia at dahon: *"Ano ang ibig sabihin ng 'sa payo ng clinician'?"*
-3. **"Piliin ang unang tugon."** Self-check 1 — magkapareha muna ang sasagot, saka ibunyag.
+3. **"Piliin ang unang tugon."** Self-check 1: magkapareha muna ang sasagot, saka ibunyag.
 4. **"Halimbawang sagot."** Ipakita: ituro ang card; iugnay sa clinician na sumusubaybay sa blood sugar at gamot ni Joel. Itanong: *"Sino iyon?"*
 5. **"Saklaw at paghingi ng tulong."** *"Awtomatiko bang kapalit ng diabetes plan ang pagkain?"* Simulan ang practice.
-6. **"Subukan sa sitwasyon."** Self-check 2 — magkapareha muna ang sasagot, saka ibunyag.
+6. **"Subukan sa sitwasyon."** Self-check 2: magkapareha muna ang sasagot, saka ibunyag.
 7. **"Sa Lunes, gawin ito."** *"Ano ang mamarkahan mo sa dalawang Ampalaya card?"*
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
@@ -38,24 +38,24 @@ Basahin ang kaso. Itanong: *"Sino ang magpapasya sa gamot ni Joel?"* Balikan ito
 
 ## [practice] Gawaing pagsasanay
 
-**Reference-card practice: Ampalaya** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (Joel), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit ng kalahok sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang gamot at sintomas, at sinasabi ang clinician. Itinatala ng tagamasid ang aktuwal na salita, saka nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye lamang. Kung kulang ang gamit: isang card set para sa buong grupo.
+**Reference-card practice: Ampalaya** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (Joel), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang gamot at sintomas, at sinasabi ang clinician. Itinatala ng tagamasid ang aktuwal na salita, saka nagbibigay ng lakas at susunod na hakbang. Kathang-isip na detalye lamang. Kung kulang ang gamit: isang card set para sa buong grupo.
 
 ## [answer-key] Susi sa self-check
 
-- **"Aling bahagi ng Ampalaya ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Momordica charantia."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
-  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Ampalaya." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
-  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
-- **"Ano ang ligtas na sagot sa kaso ni Ampalaya?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
-  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
-  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+- **"Aling bahagi ng Ampalaya ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Momordica charantia."**
+  - "Anumang bahagi, dahil kilalang gulay ang ampalaya." Hindi batayan ang pagiging gulay.
+  - "Anumang bahaging banggitin ni Joel, nang hindi tinitingnan ang botanical name." Tingnan ang card, hindi lang ang sinasabi ni Joel.
+- **"Ano ang ligtas na tugon sa kaso ni Joel?"** Tama: **"Huwag baguhin ang gamot; iugnay ang tanong sa kanyang clinician."**
+  - "Sabihin kay Joel na puwedeng ipalit ang ampalaya sa gamot dahil gulay ito." Hindi awtomatikong kapalit.
+  - "Imungkahing bawasan niya ang gamot at sabayan ito ng ampalaya." Pagbabago ng gamot ang pagbabawas.
 
 ## [observe] Ano ang oobserbahan
 
 Bantayan: Para sa Ampalaya, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-- **Kaya na:** Tama ang Ampalaya, Momordica charantia, dahon, gamit at referral nang walang paalala.
-- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
-- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Naitutugma ang Momordica charantia, dahon at nakalistang gamit, hindi binabago ang gamot ni Joel, at iniuugnay siya sa clinician nang walang paalala.
+- **Kailangan pa ng practice:** Naitutugma ang card ngunit kailangan ng paalala na huwag baguhin ang gamot o kung sino ang magpapasya.
+- **Hindi pa:** Sinasabing puwedeng ipalit ang ampalaya o bawasan ang gamot ni Joel, o nagmumungkahi ng dami.
 
 Tingnan: walang mungkahing ihinto o bawasan ang gamot. Hindi ebidensiya ng kakayahan ang tamang self-check.
 

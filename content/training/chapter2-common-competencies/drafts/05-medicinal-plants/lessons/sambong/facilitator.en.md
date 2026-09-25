@@ -4,7 +4,7 @@ The BHW matches the card to Blumea balsamifera and leaves, names the listed use 
 
 ## [time-materials] Time and materials
 
-- **8 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **8 minutes face-to-face** (of the 120-minute plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
 - **Per triad:** *2.5.8 — Reference-card practice: Sambong* cards and worksheet; *2.5.8 — Observation sheet*; job aid; two Sambong cards. Dry props only.
 
 ## [prepare] Prepare
@@ -25,8 +25,6 @@ Read the case aloud. Ask: *"Paolo has severe side pain and little urine. What co
 5. **Scope and support.** *"What do we lose if Paolo tries a decoction first?"*
 6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
 7. **On Monday, try this.** Start the practice.
-
-Each step matches the slide of the same name.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -50,20 +48,20 @@ Fictional details only. Alone: worksheet now, staff observation later.
 
 ## [answer-key] Self-check answer key
 
-- **Check 1: "Which Sambong part is listed on the card?"** Correct: **"Leaves of confirmed Blumea balsamifera."** Match the part to the written source; this is not a dose.
-  - "Any part of a yard plant even when its identity as Sambong is unconfirmed." Unconfirmed part and identity are unsafe.
-  - "The botanical name need not be checked." Common names may cover different plants.
-- **Check 2: "What is the safe response in the Sambong case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
-  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
-  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
+- **Check 1: "Which Sambong part is listed on the card?"** Correct: **"Leaves of confirmed Blumea balsamifera."** Part matched to the card; not a dose.
+  - "Leaves of any plant Paolo calls Sambong." A local name is not identity.
+  - "Any part, once the local name matches." Only leaves are listed.
+- **Check 2: "Paolo has severe side pain and little urine. What is the safe response?"** Correct: **"Seek prompt facility assessment for Paolo."** Severe pain and changed urination need prompt assessment.
+  - "Tell Paolo it is a kidney stone that Sambong can help." Symptoms alone do not establish a kidney stone.
+  - "Have him try Sambong first and seek assessment later." Do not delay assessment for a decoction.
 
 ## [observe] What to observe
 
 Staff only. Indicator: For Sambong, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-- **Kaya na:** Correctly identifies Sambong, Blumea balsamifera, leaves, use and referral without prompts.
-- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
-- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Matches Blumea balsamifera and leaves, does not call it a kidney stone and seeks prompt facility assessment for Paolo without prompts.
+- **Kailangan pa ng practice:** Matches the card but needs a prompt to seek prompt assessment for Paolo's pain and urine change.
+- **Hindi pa:** Calls it a kidney stone, suggests Sambong first or delays Paolo's assessment.
 
 Look for: reads the botanical name; refers Paolo unprompted. A correct self-check is not evidence of the skill.
 
@@ -76,5 +74,4 @@ Look for: reads the botanical name; refers Paolo unprompted. A correct self-chec
 ## [sources-review] Sources and review notes
 
 - Reference Manual PDF p. 50; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 13 (its preparation and dose content is excluded).
-- Minutes are an authoring distribution of F38's 2-hour plant allocation.
 - Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

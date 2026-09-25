@@ -43,20 +43,20 @@ Ask: *"What do residents already ask you about plants?"* Do not write down recip
 
 ## [answer-key] Self-check answer key
 
-- **"What is the first safe step?"** Correct: **"Confirm identity and source."** A verified reference is the proper start.
-  - "Guess from a name or picture." The plant may be misidentified.
-  - "Give the old dose immediately." Clinical and local authorization are missing.
-- **"What follows the card check?"** Correct: **"Consult a clinician."** Clinical advice matters before preparation or use.
-  - "Change the resident’s medicine." Changing treatment is not authorized.
-  - "Withhold other symptoms from staff." Complete information is needed.
+- **"What is the first safe step?"** Correct: **"Read the botanical name and part on a current card."**
+  - "Choose the plant the resident’s family has always used." Family use does not confirm identity.
+  - "Pick the plant that looks most like the picture." A picture is not proof.
+- **"What follows the card check?"** Correct: **"Ask about symptoms and medicines; consult a clinician."**
+  - "Tell the resident to use the plant whose name matches." A shared name is not proof.
+  - "Give the old manual’s dose for tsaang gubat." No clinical or local authorization.
 
 ## [observe] What to observe
 
 Staff watch for: Compare two cards and identify what needs confirmation before any use.
 
-- **Kaya na:** Completes identity, part, scope and referral without prompts.
-- **Kailangan pa ng practice:** Mostly correct, but needs a prompt for source or referral.
-- **Hindi pa:** Guesses identity, dose or authorization.
+- **Kaya na:** Marks the botanical name, part and what needs confirmation on both cards, and who to consult, without prompts.
+- **Kailangan pa ng practice:** Compares the cards but needs a prompt on the shared name or on who to consult.
+- **Hindi pa:** Picks a plant by name, picture or family use, or gives a dose.
 
 Look for: the botanical name comes from the card, not the plant's look. A correct self-check is not evidence of the skill.
 

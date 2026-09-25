@@ -4,7 +4,7 @@ May sugat na namumula at may nana si Mara. Nais niyang gamitin ang pinakuluang d
 
 ## [action] Gawin at sabihin
 
-Sa reference card, hanapin ang Psidium guajava. Ang nakalistang bahagi ay talbos/dahon; ang paksang gamit ay mga gamit sa balat na nakalista sa lumang manual. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri agad ang lumalalang pamumula, nana, lagnat o ibang senyales ng impeksiyon.
+Sa reference card, hanapin ang Psidium guajava. Ang nakalistang bahagi ay talbos/dahon; ang paksang gamit ay mga gamit sa balat na nakalista sa lumang manual. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri agad ang kumakalat na pamumula, nana, lagnat o ibang senyales ng impeksiyon.
 
 ## [check-start] Piliin ang unang tugon
 
@@ -12,7 +12,7 @@ Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.
 
 ## [example] Halimbawang sagot
 
-Itinuro ng BHW ang Bayabas at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri agad ang lumalalang pamumula, nana, lagnat o ibang senyales ng impeksiyon.
+Ipinakita ng BHW kay Mara ang card: Psidium guajava ang Bayabas, talbos/dahon, na may gamit sa balat sa lumang manual. Sinabi ng BHW na hindi kapalit ng pagsusuri at wound care ang herbal wash. Itinanong niya ang gamot at sintomas ni Mara. Dahil namumula ang sugat at may nana, ipinasuri niya ito agad.
 
 ## [scope] Saklaw at paghingi ng tulong
 
