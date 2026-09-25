@@ -1,6 +1,6 @@
 # Module 1.9 review and release gate
 
-Status: **review-ready draft; human review and learner timing pending** (25 September 2026). This record supplements [the first-pass review](chapter-1-6-1-9-draft-review.md). It does not record a facilitator, Filipino-language, clinical-policy, visual, or learner-pilot approval.
+Status: **requester-approved review materials; detailed reviewer and pilot evidence pending** (25 September 2026). This record supplements [the first-pass review](chapter-1-6-1-9-draft-review.md). The requester approved the facilitator, Filipino-language, local safety, visual and learner-timing categories in this task on 25 September 2026. Reviewer identities, role-specific findings, pilot date and measured minutes were not supplied, so this record does not assert those observations occurred.
 
 ## Source reconciliation
 
@@ -15,7 +15,7 @@ Status: **review-ready draft; human review and learner timing pending** (25 Sept
 
 The draft's Elena scenario, 20/100-to-5/100 figures, trial checklist, and three optional practice cards are authored examples. They are **not** observed BHS data, verbatim DOH activities, or TESDA assessment instruments. The legacy 1.9 source has no activity cards. The cards' source-page field points to the background competency and time pages, not to an original card.
 
-The review candidate adds formative checks at inventory, utility safety, normalized comparison and colleague communication. The three lessons now have 2, 2 and 3 checks respectively in both Read and Slides. Each three-option check explains the rejected choices; facilitator answer keys include the additions. The existing `loadReferenceModule` parser/validator passes locally for all three 1.9 lessons. The three optional cards pass `validateActivities`; the three candidate SVGs pass `validateSvgMarkup`. A full repository build and authenticated preview remain pending.
+The review candidate adds formative checks at inventory, utility safety, normalized comparison and colleague communication. The three lessons now have 2, 2 and 3 checks respectively in both Read and Slides. Each three-option check explains the rejected choices; facilitator answer keys include the additions. The existing `loadReferenceModule` parser/validator passes locally for all three 1.9 lessons. The three optional cards pass `validateActivities`; the three candidate SVGs pass `validateSvgMarkup`. The production-authoring copy, approved SVGs and optional cards have been added to the draft PR. Full CI and authenticated preview remain pending.
 
 ## Protected boundaries
 
@@ -56,11 +56,11 @@ The facilitator and Filipino-language reviewer should discuss where instructions
 
 | Gate | Reviewer, role and date | Evidence and required decision |
 |---|---|---|
-| Facilitator | Pending | Read, Slides, guides, questions, cards, printed worksheets, 60-minute lesson plans and individual observation cues; approve or request changes. |
-| Filipino-language | Pending | Natural Filipino, clear BHS terms, parity with English, pronunciation for later narration; approve or request changes. |
-| Clinical/local policy | Pending | Hand hygiene, single-use, cold chain, waste segregation, urgent referral and document control against local protocol; approve or request changes. |
-| Visuals | Pending | Approve final bilingual resource-audit, safe-change and normalized-tracker diagrams and their alt text; check mobile and print legibility. Candidate art is not yet approved or attached to lessons. |
-| Learner timing | Pending | Run all three lessons with a real learner group. Log per-segment start/end, group size, completion, questions, retries, quality failures and deviations. Revise until each lesson can be facilitated within its tested allocation without rushing observation. |
+| Facilitator | Requester approval noted 2026-09-25; reviewer identity and findings pending | Read, Slides, guides, questions, cards, printed worksheets, 60-minute lesson plans and individual observation cues; approve or request changes. |
+| Filipino-language | Requester approval noted 2026-09-25; reviewer identity and findings pending | Natural Filipino, clear BHS terms, parity with English, pronunciation for later narration; approve or request changes. |
+| Clinical/local policy | Requester approval noted 2026-09-25; local protocol evidence pending | Hand hygiene, single-use, cold chain, waste segregation, urgent referral and document control against local protocol; approve or request changes. |
+| Visuals | Requester approval noted 2026-09-25; asset hashes verified; visual review notes pending | Approve final bilingual resource-audit, safe-change and normalized-tracker diagrams and their alt text; check mobile and print legibility. The approved SVGs are attached to the production-authoring lessons; visual review notes remain pending. |
+| Learner timing | Requester approval noted 2026-09-25; pilot date and actual minutes pending | Run all three lessons with a real learner group. Log per-segment start/end, group size, completion, questions, retries, quality failures and deviations. Revise until each lesson can be facilitated within its tested allocation without rushing observation. |
 
 ## Release check after signoff
 
