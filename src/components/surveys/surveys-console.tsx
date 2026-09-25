@@ -8,16 +8,14 @@ import { mapSurveyRpcError } from "@/lib/surveys/error-messages";
 import type { Survey, SurveyStatus } from "@/lib/surveys/types";
 import { createClient } from "@/lib/supabase/client";
 import { SurveyForm } from "./survey-form";
-
-type OrgUnitOption = { id: string; name: string; level: string };
+import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
   initialSurveys: Survey[];
-  orgUnits: OrgUnitOption[];
-  defaultOrgUnitId: string;
+  rootOrgUnit: OrgUnitNode;
 };
 
-export function SurveysConsole({ initialSurveys, orgUnits, defaultOrgUnitId }: Props) {
+export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
   const t = useTranslations("admin.surveys");
   const [surveys, setSurveys] = useState(initialSurveys);
   const [pendingId, setPendingId] = useState<string | null>(null);
@@ -67,8 +65,7 @@ export function SurveysConsole({ initialSurveys, orgUnits, defaultOrgUnitId }: P
       <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
 
       <SurveyForm
-        orgUnits={orgUnits}
-        defaultOrgUnitId={defaultOrgUnitId}
+        rootOrgUnit={rootOrgUnit}
         onCreated={(survey) => setSurveys((prev) => [survey, ...prev])}
       />
 

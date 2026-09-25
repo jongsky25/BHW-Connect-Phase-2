@@ -290,7 +290,7 @@
       "usernameLabel": "Username",
       "fullNameLabel": "Full name",
       "roleLabel": "Role",
-      "orgUnitLabel": "Barangay / scope",
+      "orgUnitLabel": "Location (PSGC)",
       "contactLabel": "Contact number",
       "emailLabel": "Email",
       "addressLabel": "Address",
@@ -338,7 +338,15 @@
       "outOfScopeError": "That user or barangay is outside your scope.",
       "usernameRequiredError": "A username is required.",
       "userNotFoundError": "That user wasn't found.",
-      "genericError": "Something went wrong. Please try again."
+      "genericError": "Something went wrong. Please try again.",
+      "assessorLevelError": "An assessor's catchment must be a whole region, province or city/municipality — not a barangay.",
+      "bhwLevelError": "A BHW must be placed in a barangay, or in a city/municipality so they can pick their barangay on first sign-in.",
+      "catchmentLabel": "Catchment (PSGC)",
+      "bhwPlacementHint": "Choose the BHW's barangay. If you stop at the city/municipality, the BHW picks their own barangay the first time they sign in.",
+      "assessorCatchmentHint": "The assessor sees every BHW, course and assessment inside this region, province or city/municipality.",
+      "placementNeedsLevel": "Choose at least a city/municipality.",
+      "catchmentNeedsLevel": "Choose a region, province or city/municipality.",
+      "pendingBarangay": "{name} · barangay not chosen yet"
     },
     "audit": {
       "heading": "Audit log",
@@ -1080,6 +1088,27 @@
     "personaInactiveError": "That test account is deactivated.",
     "outOfScopeError": "That org unit is outside your scope.",
     "invalidRoleError": "That role isn't available.",
+    "genericError": "Something went wrong. Please try again.",
+    "placementLevelError": "An assessor needs a region, province or city/municipality; a BHW needs a barangay or city/municipality."
+  },
+  "orgPicker": {
+    "within": "Within {name}",
+    "allOf": "All of {name}",
+    "choose": "Choose…",
+    "loading": "Loading…",
+    "loadError": "Couldn't load the list of places. Please refresh and try again.",
+    "levelNational": "National",
+    "levelRegional": "Region",
+    "levelProvincial": "Province",
+    "levelCityMunicipal": "City / municipality",
+    "levelBarangay": "Barangay"
+  },
+  "selectBarangay": {
+    "heading": "Which barangay do you serve?",
+    "intro": "Choose the barangay where you work as a Barangay Health Worker. Your courses, announcements and assessments follow this barangay. You can only set it once; ask your admin if it needs to change later.",
+    "confirm": "You're choosing {name}.",
+    "submit": "Save my barangay",
+    "submitting": "Saving…",
     "genericError": "Something went wrong. Please try again."
   }
 }

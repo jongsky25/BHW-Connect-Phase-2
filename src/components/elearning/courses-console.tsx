@@ -7,16 +7,14 @@ import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type { Course, CourseStatus } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
 import { CourseForm } from "./course-form";
-
-type OrgUnitOption = { id: string; name: string; level: string };
+import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
   initialCourses: Course[];
-  orgUnits: OrgUnitOption[];
-  defaultOrgUnitId: string;
+  rootOrgUnit: OrgUnitNode;
 };
 
-export function CoursesConsole({ initialCourses, orgUnits, defaultOrgUnitId }: Props) {
+export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
   const t = useTranslations("admin.courses");
   const [courses, setCourses] = useState(initialCourses);
   const [pendingId, setPendingId] = useState<string | null>(null);
@@ -66,8 +64,7 @@ export function CoursesConsole({ initialCourses, orgUnits, defaultOrgUnitId }: P
       <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
 
       <CourseForm
-        orgUnits={orgUnits}
-        defaultOrgUnitId={defaultOrgUnitId}
+        rootOrgUnit={rootOrgUnit}
         onCreated={(course) => setCourses((prev) => [course, ...prev])}
       />
 

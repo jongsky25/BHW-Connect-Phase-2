@@ -8,6 +8,8 @@ export type AdminErrorKey =
   | "courseNotFoundError"
   | "targetNotBhwError"
   | "assessmentBlocksResetError"
+  | "assessorLevelError"
+  | "bhwLevelError"
   | "genericError";
 
 // rpc_admin_* functions raise plain Postgres exceptions (delivery-plan.md
@@ -25,5 +27,7 @@ export function mapAdminRpcError(message: string | undefined): AdminErrorKey {
   if (message.includes("course not found")) return "courseNotFoundError";
   if (message.includes("is not a BHW")) return "targetNotBhwError";
   if (message.includes("flag not found")) return "flagNotFoundError";
+  if (message.includes("assessor catchment")) return "assessorLevelError";
+  if (message.includes("bhw must belong to a barangay")) return "bhwLevelError";
   return "genericError";
 }

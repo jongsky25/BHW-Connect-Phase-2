@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { createPersona, resetPersona, switchToPersona } from "@/app/actions/super-admin";
 import { EmptyState } from "@/components/empty-state";
+import { OrgUnitPicker } from "@/components/org-unit-picker";
+import { ROLE_LEVELS, type OrgUnitNode } from "@/lib/org-units";
 import {
   PERSONA_ROLES,
   type PersonaResetResult,
@@ -12,23 +14,20 @@ import {
   type SuperAdminPersona,
 } from "@/lib/super-admin/types";
 
-type OrgUnit = { id: string; name: string; level: string };
-
 type Props = {
   personas: SuperAdminPersona[];
-  orgUnits: OrgUnit[];
+  /** The super admin's own org unit: personas can be placed there or below. */
+  rootOrgUnit: OrgUnitNode;
 };
 
 const inputClass = "rounded-md border border-ink/20 bg-canvas px-3 py-2 text-ink";
 
-export function SuperAdminConsole({ personas, orgUnits }: Props) {
+export function SuperAdminConsole({ personas, rootOrgUnit }: Props) {
   const t = useTranslations("superAdmin");
   const router = useRouter();
   const [role, setRole] = useState<PersonaRole>("bhw");
-  // A BHW belongs to a barangay; default there when one exists.
-  const [orgUnitId, setOrgUnitId] = useState(
-    (orgUnits.find((o) => o.level === "barangay") ?? orgUnits[0])?.id ?? "",
-  );
+  const [orgUnit, setOrgUnit] = useState<OrgUnitNode>(rootOrgUnit);
+  const placementValid = ROLE_LEVELS[role].includes(orgUnit.level);
   const [fullName, setFullName] = useState("");
   const [creating, setCreating] = useState(false);
   const [busyId, setBusyId] = useState<string | null>(null);
@@ -42,7 +41,7 @@ export function SuperAdminConsole({ personas, orgUnits }: Props) {
     setNotice(null);
     setCreating(true);
     try {
-      const result = await createPersona({ role, orgUnitId, fullName });
+      const result = await createPersona({ role, orgUnitId: orgUnit.id, fullName });
       if (!result.ok) {
         setError(t(result.error));
         return;
@@ -231,7 +230,14 @@ export function SuperAdminConsole({ personas, orgUnits }: Props) {
         <form onSubmit={handleCreate} className="grid gap-4 sm:grid-cols-3">
           <label className="flex flex-col gap-1 text-sm font-medium text-ink">
             {t("roleLabel")}
-            <select value={role} onChange={(e) => setRole(e.target.value as PersonaRole)} className={inputClass}>
+            <select
+              value={role}
+              onChange={(e) => {
+                setRole(e.target.value as PersonaRole);
+                setOrgUnit(rootOrgUnit);
+              }}
+              className={inputClass}
+            >
               {PERSONA_ROLES.map((r) => (
                 <option key={r} value={r}>
                   {t(`role.${r}`)}
@@ -239,16 +245,16 @@ export function SuperAdminConsole({ personas, orgUnits }: Props) {
               ))}
             </select>
           </label>
-          <label className="flex flex-col gap-1 text-sm font-medium text-ink">
+          <div className="flex flex-col gap-1 text-sm font-medium text-ink sm:row-span-2">
             {t("orgUnitLabel")}
-            <select value={orgUnitId} onChange={(e) => setOrgUnitId(e.target.value)} className={inputClass}>
-              {orgUnits.map((o) => (
-                <option key={o.id} value={o.id}>
-                  {o.name} ({o.level})
-                </option>
-              ))}
-            </select>
-          </label>
+            <OrgUnitPicker
+              key={role}
+              root={rootOrgUnit}
+              maxLevel={role === "assessor" ? "city_municipal" : "barangay"}
+              onChange={setOrgUnit}
+            />
+            {placementValid ? null : <span className="text-xs font-normal text-danger">{t("placementLevelError")}</span>}
+          </div>
           <label className="flex flex-col gap-1 text-sm font-medium text-ink">
             {t("fullNameLabel")}
             <input
@@ -261,7 +267,7 @@ export function SuperAdminConsole({ personas, orgUnits }: Props) {
           <div className="sm:col-span-3">
             <button
               type="submit"
-              disabled={creating || !orgUnitId}
+              disabled={creating || !placementValid}
               className="rounded-md bg-primary px-4 py-2 font-medium text-on-primary disabled:opacity-60"
             >
               {creating ? t("creating") : t("createAction")}

@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { SurveysConsole } from "@/components/surveys/surveys-console";
 import type { Survey } from "@/lib/surveys/types";
+import { loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -23,7 +24,7 @@ export default async function AdminSurveysPage() {
     redirect("/login");
   }
 
-  const [{ data: surveys }, { data: orgUnits }] = await Promise.all([
+  const [{ data: surveys }, rootOrgUnit] = await Promise.all([
     supabase
       .from("surveys")
       .select(
@@ -31,14 +32,15 @@ export default async function AdminSurveysPage() {
       )
       .order("created_at", { ascending: false })
       .returns<Survey[]>(),
-    supabase.from("org_units").select("id, name, level").order("name"),
+    loadOrgUnit(supabase, appUser.org_unit_id),
   ]);
+
+  if (!rootOrgUnit) redirect("/login");
 
   return (
     <SurveysConsole
       initialSurveys={surveys ?? []}
-      orgUnits={orgUnits ?? []}
-      defaultOrgUnitId={appUser.org_unit_id}
+      rootOrgUnit={rootOrgUnit}
     />
   );
 }

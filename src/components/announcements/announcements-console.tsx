@@ -8,17 +8,15 @@ import type { Announcement } from "@/lib/announcements/types";
 import { createClient } from "@/lib/supabase/client";
 import { AnnouncementCard } from "./announcement-card";
 import { AnnouncementForm } from "./announcement-form";
-
-type OrgUnitOption = { id: string; name: string; level: string };
+import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
   initialAnnouncements: Announcement[];
-  orgUnits: OrgUnitOption[];
-  defaultOrgUnitId: string;
+  rootOrgUnit: OrgUnitNode;
   locale: string;
 };
 
-export function AnnouncementsConsole({ initialAnnouncements, orgUnits, defaultOrgUnitId, locale }: Props) {
+export function AnnouncementsConsole({ initialAnnouncements, rootOrgUnit, locale }: Props) {
   const t = useTranslations("admin.announcements");
   const [announcements, setAnnouncements] = useState(initialAnnouncements);
   const [error, setError] = useState<string | null>(null);
@@ -41,8 +39,7 @@ export function AnnouncementsConsole({ initialAnnouncements, orgUnits, defaultOr
       <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
 
       <AnnouncementForm
-        orgUnits={orgUnits}
-        defaultOrgUnitId={defaultOrgUnitId}
+        rootOrgUnit={rootOrgUnit}
         onCreated={(announcement) => setAnnouncements((prev) => [announcement, ...prev])}
       />
 

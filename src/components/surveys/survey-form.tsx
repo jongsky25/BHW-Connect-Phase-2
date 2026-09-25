@@ -6,12 +6,12 @@ import { Field, inputClass } from "@/components/admin/form-field";
 import { mapSurveyRpcError } from "@/lib/surveys/error-messages";
 import type { DraftQuestion, QuestionType, Survey } from "@/lib/surveys/types";
 import { createClient } from "@/lib/supabase/client";
-
-type OrgUnitOption = { id: string; name: string; level: string };
+import { OrgUnitPicker } from "@/components/org-unit-picker";
+import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
-  orgUnits: OrgUnitOption[];
-  defaultOrgUnitId: string;
+  /** The admin's own org unit: content can be deployed there or anywhere below it. */
+  rootOrgUnit: OrgUnitNode;
   onCreated: (survey: Survey) => void;
 };
 
@@ -21,9 +21,10 @@ function emptyQuestion(): DraftQuestion {
   return { type: "single_choice", prompt_fil: "", prompt_en: "", options: [{ fil: "", en: "" }] };
 }
 
-export function SurveyForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
+export function SurveyForm({ rootOrgUnit, onCreated }: Props) {
   const t = useTranslations("admin.surveys");
-  const [orgUnitId, setOrgUnitId] = useState(defaultOrgUnitId);
+  const [orgUnit, setOrgUnit] = useState<OrgUnitNode>(rootOrgUnit);
+  const orgUnitId = orgUnit.id;
   const [titleFil, setTitleFil] = useState("");
   const [titleEn, setTitleEn] = useState("");
   const [descriptionFil, setDescriptionFil] = useState("");
@@ -82,8 +83,6 @@ export function SurveyForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
         setError(t("genericError"));
         return;
       }
-
-      const orgUnit = orgUnits.find((unit) => unit.id === orgUnitId) ?? null;
       onCreated({
         id: row.survey_id,
         org_unit_id: orgUnitId,
@@ -95,7 +94,7 @@ export function SurveyForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
         is_anonymous: isAnonymous,
         status: "draft",
         created_at: new Date().toISOString(),
-        org_units: orgUnit ? { name: orgUnit.name } : null,
+        org_units: { name: orgUnit.name },
       });
 
       setTitleFil("");
@@ -119,21 +118,10 @@ export function SurveyForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
     >
       <h2 className="text-lg font-semibold text-ink">{t("createHeading")}</h2>
 
-      <Field label={t("orgUnitLabel")} htmlFor="survey-org-unit">
-        <select
-          id="survey-org-unit"
-          required
-          value={orgUnitId}
-          onChange={(event) => setOrgUnitId(event.target.value)}
-          className={inputClass}
-        >
-          {orgUnits.map((unit) => (
-            <option key={unit.id} value={unit.id}>
-              {unit.name}
-            </option>
-          ))}
-        </select>
-      </Field>
+      <div className="flex flex-col gap-1">
+        <span className="text-sm font-medium text-ink">{t("orgUnitLabel")}</span>
+        <OrgUnitPicker root={rootOrgUnit} onChange={setOrgUnit} />
+      </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field label={t("titleFilLabel")} htmlFor="survey-title-fil">
