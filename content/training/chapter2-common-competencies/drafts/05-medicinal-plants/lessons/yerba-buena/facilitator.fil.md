@@ -1,57 +1,80 @@
 ## [purpose] Layunin
 
-8 minuto: pambungad 1; modelo 1; supervised reference-card practice 4; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+Itinutugma ng BHW ang card sa Mentha cordifolia at dahon, sinasabing kailangan ng dental assessment ang sakit ng ngipin, at iniuugnay agad ang namamagang pisngi ni Eva.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **8 minutong harapan** (bahagi ng lesson na ito sa 120-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback 1, checks 1. Mga 3 minuto ang Read sa app.
+- **Bawat tatluhan:** cards at worksheet na *2.5.11 — Reference-card practice: Yerba buena*; *2.5.11 — Talaan ng obserbasyon*; job aid; dalawang Yerba buena card. Tuyong props lamang.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa midwife o RHU kung saan may dental assessment.
+- **Hangganan:** card check at referral lamang. Walang iniinom o ipinapahid na paghahanda, dami o dose: *"Tanong iyan para sa midwife o RHU."*
 
 ## [opening] Pambungad
 
-May masakit na ngipin at namamagang pisngi si Eva. Nagtanong siya tungkol sa Yerba buena.
+Basahin nang malakas ang kaso. Itanong: *"Masakit ang ngipin ni Eva at namamaga ang pisngi. Sino ang dapat tumingin sa pamamaga?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **Ang sitwasyon.** *"Ano ang nakikita mo sa labas?"*
+2. **Gawin at sabihin.** Ituro ang botanical name at "Bahagi: dahon". *"Anong pagsusuri ang kailangan ng nakalistang gamit?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapares.
+4. **Halimbawang sagot.** Ipakita ang pagbasa ng card nang hindi inaakalang tugma ang halaman sa bakuran. *"Ano ang iuulat mo kasama ng referral?"*
+5. **Saklaw at paghingi ng tulong.** *"Kayang palitan ng halaman ang dental care?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
+7. **Sa Lunes, gawin ito.** Simulan ang practice.
 
-## [expected-answers] Inaasahang tugon
+Katapat ng bawat hakbang ang slide na may parehong pangalan.
 
-Itinuro ng BHW ang Yerba buena at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay agad ang pamamaga sa dental o health professional at iulat ang mga sintomas.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Lagyan lang ng dahon."** Huwag pag-usapan kung paano. *"Ano muna ang kailangan ng pamamaga?"*
+- **"Sakit lang ng ngipin iyan; malayo ang dentista."** Totoo, mahirap ang access. *"Sino ang pinakamabilis na makatitingin?"*
+- **"Iugnay na siya sa dental o health professional."** Tama; itanong ang iuulat: sintomas at kasalukuyang gamot.
 
-Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Yerba buena na lang; hindi na kailangan ang dentista."** Malayo o magastos ang dental care. Sa grupo itanong, hindi sa nagsabi: *"Ano ang sinasabi sa atin ng namamagang pisngi?"* Hindi kapalit ng dental care ang halaman, at kailangang i-refer agad ang pamamaga.
 
-Itugma ang dalawang Yerba buena card; piliin ang Mentha cordifolia, dahon, gamit at ligtas na susunod na hakbang. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Reference-card practice: Yerba buena** (rotation B), tatluhan, isang 4-minutong round.
 
-1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. / 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. / 3: Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **Kalahok:** ihambing ang cards, punan ang worksheet, sabihin kay Eva ang alam, hindi alam at sino ang kokonsultahin.
+- **Kapareha:** gumanap na Eva; sabihing malayo ang dentista.
+- **Tagamasid:** itala ang aktuwal na salita; isang lakas, isang susunod na hakbang.
 
-1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. / 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. / 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+Kathang-isip na detalye lamang. Kung mag-isa: worksheet ngayon, obserbasyon ng staff pagkatapos.
 
-## [observe] Obserbahan
+## [answer-key] Susi sa self-check
 
-Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+- **Check 1: "Aling bahagi ng Yerba buena ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Mentha cordifolia."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
+  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Yerba buena." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
+  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **Check 2: "Ano ang ligtas na sagot sa kaso ni Yerba buena?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
+  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
+  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
 
-Kaya na: Tama ang Yerba buena, Mentha cordifolia, dahon, gamit at referral nang walang paalala.
+## [observe] Ano ang oobserbahan
 
-Kailangan practice: Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+Staff lamang. Indicator: Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-Hindi pa: Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kaya na:** Tama ang Yerba buena, Mentha cordifolia, dahon, gamit at referral nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
 
-## [support] Suporta at talakayan
+Hanapin: nire-refer ang pamamaga nang walang paalala, kahit malayo ang dentista. Hindi ebidensya ng kasanayan ang tamang self-check.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [sources-review] Lokal na kagamitan
+- **Kailangan pa:** sabihin ang kulang na hakbang; ulitin agad ang parehong card.
+- **Hindi pa:** ulitin ang hangganan, ipakitang muli ang hakbang 4, ulitin kasama ang kaparehang Kaya na.
+- Obserbahan muli sa susunod na sesyon na may isang binagong detalye (ang nanay ni Eva ang nagtanong). Hindi staff rating ang peer feedback.
 
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+## [sources-review] Sanggunian at tala sa pagrepaso
+
+- Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 16 (hindi isinama ang paghahanda at dose).
+- Hati ng authoring ang minuto sa 2-oras na alokasyon ng F38.
+- Author source check (PITAHC, WHO) at attested clinical sign-off ng program owner para sa 2.5: 25 Set 2026; walang naitalang pangalan ng reviewer. Kung may pagkakaiba, lokal na protocol ang masusunod.

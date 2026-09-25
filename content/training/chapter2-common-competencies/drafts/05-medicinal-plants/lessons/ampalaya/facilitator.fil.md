@@ -1,57 +1,72 @@
 ## [purpose] Layunin
 
-8 minuto: pambungad 1; modelo 1; supervised reference-card practice 4; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Para sa Ampalaya, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+Itinutugma ng BHW ang Momordica charantia, dahon at nakalistang gamit sa Ampalaya card, at ibinabalik sa clinician ang tanong ni Joel.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 8 minutong harapan (bahagi ng lesson sa 120 minutong plano ng subchapter, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
+- **Sa mesa:** participant cards na *2.5.3 — Reference-card practice: Ampalaya*, worksheet, staff observation sheet; job aid na *Sampung halamang gamot*; dalawang printed Ampalaya card.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang lesson at mga check. Isulat sa job aid kung sino ang sumusubaybay sa diabetes care (midwife / RHU).
+- **Hangganan:** walang payong ihinto, bawasan o baguhin ang gamot. Walang paghahanda, dami o pagtikim. Kung itanong: *"Tanong iyan para sa midwife o RHU. Ngayon, ang card check ang pag-aaralan natin."*
 
 ## [opening] Pambungad
 
-May diabetes si Joel at gumagamit ng niresetang gamot. Nagtanong siya kung puwedeng ipalit ang ampalaya.
+Basahin ang kaso. Itanong: *"Sino ang magpapasya sa gamot ni Joel?"* Balikan ito sa hakbang 4.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **"Ang sitwasyon" (unang slide).** *"Ano talaga ang tanong ni Joel?"*
+2. **"Gawin at sabihin" (katugmang slide).** Ituro ang Momordica charantia at dahon: *"Ano ang ibig sabihin ng 'sa payo ng clinician'?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — magkapareha muna ang sasagot, saka ibunyag.
+4. **"Halimbawang sagot."** Ipakita: ituro ang card; iugnay sa clinician na sumusubaybay sa blood sugar at gamot ni Joel. Itanong: *"Sino iyon?"*
+5. **"Saklaw at paghingi ng tulong."** *"Awtomatiko bang kapalit ng diabetes plan ang pagkain?"* Simulan ang practice.
+6. **"Subukan sa sitwasyon."** Self-check 2 — magkapareha muna ang sasagot, saka ibunyag.
+7. **"Sa Lunes, gawin ito."** *"Ano ang mamarkahan mo sa dalawang Ampalaya card?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Itinuro ng BHW ang Ampalaya at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay ang tanong sa clinician na sumusubaybay sa blood sugar at iba pang gamot ni Joel.
+- **"Oo, pampababa ng asukal ang ampalaya."** Huwag sang-ayunan. *"'Sa payo ng clinician' ang nasa card. Kaninong payo?"*
+- **"Sabihing gamitin niya pareho."** Tama ang ituloy ang gamot; clinician ang magpapasya tungkol sa Ampalaya.
+- **"Ituloy ang gamot; tutulungan ko siyang magtanong sa clinician."** Purihin; iginagalang nito ang gusto ni Joel.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+**"Gulay ang ampalaya, kaya puwedeng ipalit sa gamot."** Kilalang pagkain ito, kaya parang ligtas. Itanong sa grupo, hindi sa tao: *"Kung ihinto ni Joel ang gamot, ano ang puwedeng mangyari?"* Hayaan silang makita: naaantala o napapalitan ang kinakailangang pangangalaga.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Itugma ang dalawang Ampalaya card; piliin ang Momordica charantia, dahon, gamit at ligtas na susunod na hakbang. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Reference-card practice: Ampalaya** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (Joel), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit ng kalahok sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang gamot at sintomas, at sinasabi ang clinician. Itinatala ng tagamasid ang aktuwal na salita, saka nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye lamang. Kung kulang ang gamit: isang card set para sa buong grupo.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. / 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. / 3: Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **"Aling bahagi ng Ampalaya ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Momordica charantia."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
+  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Ampalaya." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
+  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **"Ano ang ligtas na sagot sa kaso ni Ampalaya?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
+  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
+  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
 
-1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. / 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. / 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Bantayan: Para sa Ampalaya, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-Para sa Ampalaya, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+- **Kaya na:** Tama ang Ampalaya, Momordica charantia, dahon, gamit at referral nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
 
-Kaya na: Tama ang Ampalaya, Momordica charantia, dahon, gamit at referral nang walang paalala.
+Tingnan: walang mungkahing ihinto o bawasan ang gamot. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-Kailangan practice: Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kailangan pa ng practice:** sabihin ang kulang na hakbang; ulitin sa parehong card.
+- **Hindi pa:** ipakitang muli ang hakbang 4; ulitin sa tatlong bagay lamang (botanical name, bahagi, sino ang magpapasya), kapares ang BHW na Kaya na.
+- Obserbahang muli sa susunod na sesyon (gustong bawasan ni Joel ang gamot). Practice ang peer feedback, hindi staff rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 49; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 8.
+- Oras: hati sa 2 oras ng F38 para sa halaman.
+- Katayuan: attested clinical sign-off ng program owner, 25 Set 2026; walang naitalang pangalan ng reviewer. Lokal na protocol ang masusunod.

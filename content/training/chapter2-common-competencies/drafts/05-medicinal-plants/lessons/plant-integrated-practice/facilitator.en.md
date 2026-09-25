@@ -1,57 +1,80 @@
 ## [purpose] Purpose
 
-30 minutes: opening 1; model 1; supervised reference-card practice 26; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-For three case cards, record identity, use, concern, referral and missing local authorization.
+On three case cards, the BHW records identity, use, concern, referral and missing authorization, escalates breathing difficulty and the infected wound, and leaves diabetes medicine unchanged.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **30 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 2, model 3, practice 18 (three 6-minute rounds), feedback 4, checks and close 3. Read in the app: about 4 minutes.
+- **Per triad:** *2.5.12 — Plant-card consultation* cards, three worksheets, observation sheet, job aid, the three plants' current cards. Dry props only.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm with the midwife or RHU the urgent referral route and who authorizes plant products.
+- **Scope:** the Read mentions a trainer-authorized station; this session has none. No preparation, hot water, ingestion, dose or product: *"That is a question for the midwife or RHU."*
 
 ## [opening] Opening
 
-Three residents ask about Lagundi, Ampalaya and Bayabas. Their cards include breathing difficulty, diabetes medicine and a wound with pus.
+Read the case aloud (Ben: breathing difficulty; Joel: diabetes medicine; Mara: wound with pus). Ask: *"Which of these three do you escalate first, and what do you record?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation.** *"Which signs cannot wait?"*
+2. **What to do and say.** *"Where do we find each botanical name, part and listed use?"*
+3. **Choose the first response.** Self-check 1 — pairs answer before revealing.
+4. **Worked example.** Model one case: read the card, separate listed use from a prescription, ask about symptoms and medicines.
+5. **Scope and support.** *"Does attending today mean we can prepare these plants?"*
+6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
+7. **On Monday, try this.** Close: *"What follows the card check?"* Each names one thing for the supervisor on Monday.
 
-## [expected-answers] Expected response
+Each step matches the slide of the same name.
 
-The BHW reads the current card and listens to the resident. Match each plant to its botanical name and listed use. Escalate breathing difficulty and the infected wound. Do not replace diabetes medicine. If a trainer authorizes a station, demonstrate identification and preparation planning with dry props only; dispense no product.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Ampalaya instead of Joel's pills."** *"Who decides about his medicine?"*
+- **"Bayabas for Mara's wound."** *"What does the pus tell us?"*
+- **"Escalate Ben and Mara; take Joel's question to his clinician."** Correct; what goes in the authorization row?
 
-Guesses identity, dose or authorization.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"It's natural, so it's safe. The old manual lists these plants, so I can tell people to use them."** Respect it; do not correct anyone publicly. Ask: *"If the plant works, what could still go wrong here?"* Let them find it: delayed care for Ben and Mara, stopped medicine for Joel.
 
-For three case cards, record identity, use, concern, referral and missing local authorization. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Three residents, three cards**, triads, three 6-minute rounds; each member leads one case.
 
-1: The plant may be misidentified. / 2: A verified reference is the proper start. / 3: Clinical and local authorization are missing.
+- **Learner:** matches the card, asks about symptoms and medicines, refers, fills the worksheet.
+- **Resident:** stays on the case card.
+- **Observer:** records the learner's words on referral and authorization; one strength, one next action.
 
-1: Changing treatment is not authorized. / 2: Complete information is needed. / 3: Clinical advice matters before preparation or use.
+Fictional details only. Low resource: the facilitator plays each resident. Alone: three worksheets, staff observation later.
 
-## [observe] Observe
+## [answer-key] Self-check answer key
 
-For three case cards, record identity, use, concern, referral and missing local authorization.
+- **Check 1: "What is the first safe step?"** Correct: **"Confirm identity and source."** A verified reference is the proper start.
+  - "Guess from a name or picture." The plant may be misidentified.
+  - "Give the old dose immediately." Clinical and local authorization are missing.
+- **Check 2: "What follows the card check?"** Correct: **"Consult a clinician."** Clinical advice matters before preparation or use.
+  - "Change the resident’s medicine." Changing treatment is not authorized.
+  - "Withhold other symptoms from staff." Complete information is needed.
 
-Ready: Completes identity, part, scope and referral without prompts.
+## [observe] What to observe
 
-Needs practice: Mostly correct, but needs a prompt for source or referral.
+Staff only. Indicator: For three case cards, record identity, use, concern, referral and missing local authorization.
 
-Not yet: Guesses identity, dose or authorization.
+- **Kaya na:** Completes identity, part, scope and referral without prompts.
+- **Kailangan pa ng practice:** Mostly correct, but needs a prompt for source or referral.
+- **Hindi pa:** Guesses identity, dose or authorization.
 
-## [support] Support and debrief
+Look for: escalates breathing difficulty and the wound unprompted; marks authorization as missing. Station attendance is not clinical sign-off, and a correct self-check is not evidence of the skill.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [support] If a BHW needs more support
 
-## [sources-review] Local resources
+- **Kailangan pa:** name the missing step (often the authorization row); retry the same case now.
+- **Hindi pa:** restate the scope line, re-model step 4, retry one case (Ben) with a Kaya na partner.
+- Re-observe next session with a different case card. Peer feedback is not a staff rating.
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+## [sources-review] Sources and review notes
+
+- Reference Manual PDF pp. 48–51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 6, 16 (preparation and dose content excluded).
+- Minutes are an authoring distribution of F38's 2-hour plant allocation.
+- Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

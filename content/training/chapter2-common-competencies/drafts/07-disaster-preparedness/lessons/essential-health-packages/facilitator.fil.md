@@ -1,57 +1,69 @@
 ## [purpose] Layunin
 
-10 minuto: pambungad 1; modelo 1; practice 4; feedback at pag-ulit 2; talakayan 1; susunod 1. Panimulang station ito, hindi buong field drill o patunay ng kakayahan. Maglaan ng dagdag na supervised practice.
-
-Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.
+Sa kathang-isip na silungan, naitutugma ng BHW ang apat na pangangailangan sa medical/public health, nutrisyon, WASH o MHPSS, at nasasabi ang referral at follow-up.
 
 ## [time-materials] Oras at kagamitan
 
-Anim na 10-minutong panimulang DRRM station ang 60 minuto. Mungkahing bahagi ito ng pinagsamang dalawang oras sa F38 para sa Community Mobilization at DRRM; ang kabilang mungkahing 60 minuto ay sa Chapter 2.6. Walang hiwalay na minutong itinakda sa F42–43. Gamitin ang lokal na kumpirmadong contact, ruta, tungkulin at plano. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **10 minuto sa harapan** (bahagi ng 60-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback at pag-ulit 2, talakayan 1, susunod na hakbang 1. Mga 3 minuto ang Read sa app.
+- **Kagamitan:** cards, worksheet at talaan ng obserbasyon ng 2.7.5 bawat tatluhan; job aid; ang apat na need card.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin sa RHU ang referral contact ng apat na larangan.
+- Saklaw: hindi nagrereseta, nagtatakda ng ration, nagdedeklarang ligtas ang tubig o nagbibigay ng therapy ang BHW. Sa nababagabag: mahinahon, may-pahintulot na pakikinig at referral. Walang nakapirming 24-oras na target.
 
 ## [opening] Pambungad
 
-Sa silungan, may batang kulang sa pagkain at mahaba ang pila sa tubig. May residenteng nangangailangan ng gamot; ang isa ay nababagabag.
+Ilatag ang need cards; basahin ang eksena. Itanong: *"Aling serbisyo ang hahawak sa bawat pangangailangan, at paano natin malalaman na natanggap ito?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** Itanong: *"Aling pangangailangan ang pinakanag-aalala sa iyo?"*
+2. **Gawin at sabihin.** Banggitin ang apat na larangan. Itanong: *"Saan mapupunta ang bawat card?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapares.
+4. **Halimbawang sagot.** Imodelo: tubig sa WASH, pagkain sa nutrition, gamot sa clinician; mahinahong pakikinig nang hindi pinipilit ang salaysay, saka referral. Patakbuhin ang practice.
+5. **Saklaw at paghingi ng tulong.** Itanong: *"Alin dito ang labas sa ating tungkulin?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares.
+7. **Sa Lunes, gawin ito.** Itanong: *"Sino ang apat mong service contact at kapalit?"*
 
-Ipinasa ng BHW ang tubig sa WASH team. Ang pagkain ay sa nutrition team; ang gamot ay sa clinician. Nakinig siya sa nababagabag nang hindi pinilit ang salaysay at nag-alok ng referral.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Bibigyan ko ng sarili kong gamot."** Pasalamatan. Sabihin: *"Iuugnay natin sa clinician; siya ang magpapasya."*
+- **"Tatanungin ko ang nababagabag kung ano ang nangyari."** Sabihin: *"Kaligtasan muna. Makinig kung gusto niyang magkuwento, saka mag-alok ng referral."*
+- **"Sabihing ayos ang tubig."** Sabihin: *"WASH staff lang ang makapagsasabi niyan. Iuulat natin."*
 
-Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Medikal na problema ng BHW ang lahat ng pangangailangan sa silungan."** Sa BHW unang lumalapit ang lahat. Huwag ituro ang sinuman. Basahin ang opsiyong "Tratuhin ang lahat bilang isang medical case…" at ang feedback: maaaring makapinsala o maantala ang tulong. Itanong kung aling card ang para sa WASH o nutrition.
 
-Itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**EHSP sorting exercise.** Tatluhan: kalahok, kapareha (mga residente), tagamasid. Sa 4 na minuto, ipapangkat ng kalahok ang apat na card, sasabihin ang puwang ng focal person at paano babalik ang feedback; sa nababagabag, susuriin ang kaligtasan, makikinig nang may pahintulot at mag-aalok ng referral. Tala ng tagamasid: aktuwal na salita, isang lakas, isang susunod na hakbang. Pag-ulit 2 minuto; magpalit ng papel. Kathang-isip na detalye lang. Kulang sa gamit: ipangkat sa pisara.
 
-1: Maaaring luma o mali ang impormasyon. / 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. / 3: Kailangan ang tamang awtoridad at lokal na konteksto.
+## [answer-key] Susi sa self-check
 
-1: Maaaring makapinsala o maantala ang tulong. / 2: Nawawala ang accountability at continuity. / 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.
+- **Check 1 (unang ligtas na hakbang).** Tama: **"Iugnay ang apat na domain sa itinalagang staff; itala ang naputol na serbisyo"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
+- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Tratuhin ang lahat bilang isang medical case…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.
+Indicator: Sa fictional na kaso, itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.
 
-Kaya na: Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
+- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
+- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
 
-Kailangan practice: Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
+Hanapin: tama ang apat na larangan; walang reseta, ration, deklarasyon sa tubig o therapy. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** ipakitang muli ang pangungusap ng follow-up; umulit ngayon, binalasang card.
+- **Hindi pa:** ulitin ang halimbawang sagot; dalawang card muna, saka ang iba; ipares sa kasamang Kaya na.
+- Obserbahang muli sa susunod na supervised practice o transfer task, bagong need card. Practice ang peer feedback, hindi rating ng staff.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 56–57; Facilitator Guide PDF pp. 38, 42–43; Day 1 Part 2 presentation PDF pp. 107–110.
+- Authoring distribution ang 10 minuto mula sa dalawang oras ng F38 na kahati ng 2.6, hindi oras ng source. Aprubado sa attestation ng program owner ang lokal na DRRM at clinical review (25 Set 2026); walang pangalan ng reviewer. Lokal na protocol ang masusunod.

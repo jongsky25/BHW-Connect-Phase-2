@@ -1,57 +1,73 @@
 ## [purpose] Layunin
 
-10 minuto: pambungad 1; modelo 1; supervised reference-card practice 6; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.
+Inihahambing ng BHW ang dalawang card ng halamang iisa ang local name at minamarkahan ang kailangang kumpirmahin bago gamitin.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 10 minutong harapan (bahagi ng lesson sa 120 minutong plano ng subchapter): pambungad 2, modelo 1, practice 5, feedback 1, check 1. Mga 3 minuto ang pagbasa sa app.
+- **Bawat tatluhan:** participant cards na *2.5.1 — Konsultasyon gamit ang plant cards*, worksheet at staff observation sheet; job aid na *Sampung halamang gamot*; ang current PITAHC card at isa pang card na may parehong local name.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang lesson at ang dalawang check.
+- Isulat sa job aid: contact ng midwife / RHU, agarang referral route, paraan ng pag-uulat, at sino ang nagpapahintulot sa plant products.
+- **Hangganan:** card check lamang. Walang paghahanda, dami, dose, pagtikim o mainit na tubig. Kung itanong: *"Tanong iyan para sa midwife o RHU. Ngayon, ang card check ang pag-aaralan natin."*
 
 ## [opening] Pambungad
 
-Magkahawig ang dalawang halamang tinatawag na “tsaang gubat” sa isang bakuran. Nagtanong ang residente kung alin ang gagamitin.
+Itanong: *"Ano na ang itinatanong sa inyo ng mga residente tungkol sa halaman?"* Huwag isulat ang timpla. Basahin ang kaso: dalawang halaman sa bakuran ang parehong tinatawag na "tsaang gubat." Itanong: *"Alin ito — at paano mo malalaman?"*
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **"Ang sitwasyon" (unang slide).** Itaas ang dalawang card: *"Parehong pangalan, parehong halaman ba?"*
+2. **"Gawin at sabihin" (katugmang slide).** Ituro ang botanical name at bahagi: *"Kung hindi tiyak ang identity, ano ang gagawin?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — magkapareha muna ang sasagot, saka ibunyag.
+4. **"Halimbawang sagot."** Ipakita: basahin ang card, makinig, itanong ang sintomas at gamot: *"Ano ang una kong tiningnan?"*
+5. **"Saklaw at paghingi ng tulong."** Itanong: *"Ligtas ba dahil 'natural'?"* Simulan ang practice.
+6. **"Subukan sa sitwasyon."** Self-check 2 — magkapareha muna ang sasagot, saka ibunyag.
+7. **"Sa Lunes, gawin ito."** Itanong: *"Ano ang mamarkahan mo kasama ang supervisor?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Hanapin ang botanical name at nakalistang bahagi sa current PITAHC card. Kung hindi tiyak ang identity, huwag maghanda o magbigay. Tanungin ang sintomas at gamot; iugnay sa clinician.
+- **"Iyong ginamit ng lola ko."** Igalang: *"Ano sa card ang magpapatunay niyan?"*
+- **"Ibigay ang dose sa lumang manual."** Mahinahon: walang clinical o lokal na pahintulot; ulitin ang linya sa hangganan.
+- **"Tingnan ang card, itanong ang sintomas at gamot, kumonsulta sa clinician."** Purihin ang buong pagkakasunod.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Nanghuhula ng identity, dose o awtorisasyon.
+**"Kung tsaang gubat ang tawag, tsaang gubat talaga iyan."** Matagal nang ginagamit ng pamilya ang local names. Gamitin ang kaso, hindi ang tao: *"Parehong ganoon ang tawag sa dalawa. Pareho bang sila ang nasa card?"* Hindi sapat ang local name, larawan o "natural" na label na patunay ng identity, bisa o kaligtasan.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Dalawang card, iisang local name** (*Konsultasyon gamit ang plant cards*): tatluhan ng kalahok, kapareha (residente) at tagamasid; isang round na 5 minuto, 1 minutong feedback. Pinupunan ng kalahok ang worksheet at minamarkahan ang kailangang kumpirmahin. Itinatala ng tagamasid ang aktuwal na salita; nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye lamang. Kung mag-isa: worksheet sa papel, saka magpaobserba sa staff.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Maaaring magkamali sa halaman. / 2: Magandang simula ang kumpirmadong reference. / 3: Wala pang clinical at lokal na pahintulot.
+- **"Alin ang unang ligtas na hakbang?"** Tama: **"Kumpirmahin ang identity at source."** Magandang simula ang kumpirmadong reference.
+  - "Manghula mula sa pangalan o larawan." Maaaring magkamali sa halaman.
+  - "Ibigay agad ang lumang dose." Wala pang clinical at lokal na pahintulot.
+- **"Ano ang kasunod ng pag-check ng card?"** Tama: **"Kumonsulta sa clinician."** Mahalaga ang clinical advice bago maghanda o gumamit.
+  - "Baguhin ang gamot ng residente." Hindi awtorisado ang pagpapalit ng gamot.
+  - "Itago ang ibang sintomas sa staff." Kailangan ang kumpletong impormasyon.
 
-1: Hindi awtorisado ang pagpapalit ng gamot. / 2: Kailangan ang kumpletong impormasyon. / 3: Mahalaga ang clinical advice bago maghanda o gumamit.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Bantayan ng staff: Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.
 
-Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.
+- **Kaya na:** Kumpleto ang identity, bahagi, hangganan at referral nang walang paalala.
+- **Kailangan pa ng practice:** May tama ngunit kailangan ng paalala sa source o referral.
+- **Hindi pa:** Nanghuhula ng identity, dose o awtorisasyon.
 
-Kaya na: Kumpleto ang identity, bahagi, hangganan at referral nang walang paalala.
+Bantayan: galing sa card ang botanical name, hindi sa itsura. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-Kailangan practice: May tama ngunit kailangan ng paalala sa source o referral.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Nanghuhula ng identity, dose o awtorisasyon.
+- **Kailangan pa ng practice:** sabihin ang kulang na hakbang; ulitin agad sa parehong card.
+- **Hindi pa:** ipakitang muli ang hakbang 4; ulitin sa tatlong hanay lamang (halaman, bahagi, kokonsultahin), kapares ang BHW na Kaya na.
+- Obserbahang muli sa susunod na sesyon o sa 2.5.12. Practice ang peer feedback, hindi staff rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF pp. 48–51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF pp. 6, 16.
+- Oras: hati sa 2 oras ng F38 para sa halaman, hindi bagong alokasyon.
+- Katayuan: attested clinical sign-off ng program owner para sa 2.5, 25 Set 2026; walang naitalang pangalan ng reviewer. Ang lokal na health center ang nagkukumpirma ng specimen at produkto; masusunod ang lokal na protocol.

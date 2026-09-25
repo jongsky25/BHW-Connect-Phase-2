@@ -1,57 +1,70 @@
 ## [purpose] Layunin
 
-10 minuto: pambungad 1; modelo 1; practice 4; feedback at pag-ulit 2; talakayan 1; susunod 1. Panimulang station ito, hindi buong field drill o patunay ng kakayahan. Maglaan ng dagdag na supervised practice.
-
-Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.
+Gamit ang mock advisory, nasasabi ng BHW sa pamilya ang source at oras ng babala, ang kumpirmadong aksiyon, at ang contact na kukumpirmahin.
 
 ## [time-materials] Oras at kagamitan
 
-Anim na 10-minutong panimulang DRRM station ang 60 minuto. Mungkahing bahagi ito ng pinagsamang dalawang oras sa F38 para sa Community Mobilization at DRRM; ang kabilang mungkahing 60 minuto ay sa Chapter 2.6. Walang hiwalay na minutong itinakda sa F42–43. Gamitin ang lokal na kumpirmadong contact, ruta, tungkulin at plano. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **10 minuto sa harapan** (bahagi ng 60-minutong plano ng subchapter): pambungad 1, modelo 1, practice 4, feedback at pag-ulit 2, talakayan 1, susunod na hakbang 1. Mga 3 minuto ang Read sa app.
+- **Kagamitan:** cards, worksheet at talaan ng obserbasyon ng 2.7.2 bawat tatluhan; job aid; mock advisory (PRACTICE, may source at oras); lumang directory na prop.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Kumpirmahin para sa talakayan: opisyal na source ng babala, sino ang naglalabas ng evacuation order, ruta at accessible na silungan, at barangay DRRM focal person at kapalit.
+- Saklaw: huwag mag-imbento ng order, hotline o ruta; pagsasanay lang ang mock advisory.
 
 ## [opening] Pambungad
 
-May ulat ng paparating na malakas na ulan. Humihingi ang pamilya ni Nena ng tiyak na oras at lugar ng paglikas, ngunit luma ang naka-print na directory.
+Itaas ang directory. Itanong: *"Tinatanong ng pamilya ni Nena kung kailan at saan lilikas. Ano ang sasabihin natin?"* Tumanggap muna ng dalawang sagot.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+Katugma ng bawat hakbang ang Read section at slide na may parehong pamagat.
 
-## [expected-answers] Inaasahang tugon
+1. **Ang sitwasyon.** Itanong: *"Ano ang problema sa directory na ito?"*
+2. **Gawin at sabihin.** Ipakita ang mock advisory. Itanong: *"Saan ito galing, at kailan?"*
+3. **Piliin ang unang tugon.** Self-check 1 — pasagutin muna ang magkapares bago ibunyag.
+4. **Halimbawang sagot.** Imodelo: suriin ang petsa ng advisory, tawagan ang opisyal na contact, sabihin ang kumpirmado at hinihintay pa. Patakbuhin ang practice.
+5. **Saklaw at paghingi ng tulong.** Itanong: *"Anong tatlong bagay ang hindi dapat imbentuhin ng BHW?"*
+6. **Subukan sa sitwasyon.** Self-check 2 — pasagutin muna ang magkapares bago ibunyag.
+7. **Sa Lunes, gawin ito.** Itanong: *"Sino ang magkukumpirma sa directory mo, at kailan?"*
 
-Sinuri ng BHW ang petsa ng advisory at tumawag sa opisyal na contact. Sinabi niya kung ano ang kumpirmado at kung ano ang naghihintay pa ng sagot.
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-## [misconception] Karaniwang pagkakamali
+- **"Sa covered court, gaya noong isang taon."** Itanong: *"Kumpirmado ba iyan ngayon? Sino ang makapagsasabi?"*
+- **Binasa ang lumang hotline.** Sabihin: *"Maaaring nagbago na ang numero. Markahan nating 'kukumpirmahin'."*
+- **"Kukumpirmahin ko at babalikan kita."** Purihin. Bahagi ito ng kasanayan.
 
-Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+## [misconception] Karaniwang maling akala
 
-## [practice] Gawaing maaaring patakbuhin
+**"Sa emergency, mas mabuti ang kahit anong impormasyon kaysa wala."** Galing ito sa malasakit: unang tinatanong ang BHW at gusto niyang tumulong agad. Huwag itama ang tao; balikan si Nena: *"Luma ang directory niya. Paano kung mali ang numero, o baha na ang ruta?"* Sabi ng feedback: maaaring luma o mali ang impormasyon.
 
-Gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+## [practice] Gawaing pagsasanay
 
-## [answer-key] Paliwanag sa checks
+**Evacuation communication drill.** Tatluhan: kalahok, kapareha (pamilya ni Nena), tagamasid. Sa 4 na minuto, sabihin ng kalahok ang source at oras, ang kumpirmado, at ang contact na kukumpirmahin, at punan ang worksheet. Tala ng tagamasid: aktuwal na salita, isang lakas, isang susunod na hakbang. Pag-ulit 2 minuto; magpalit ng papel. Kathang-isip na detalye lang. Kulang sa gamit: basahin nang malakas ang advisory. Mag-isa: worksheet ngayon, obserbasyon ng staff pagkatapos.
 
-1: Maaaring luma o mali ang impormasyon. / 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. / 3: Kailangan ang tamang awtoridad at lokal na konteksto.
+## [answer-key] Susi sa self-check
 
-1: Maaaring makapinsala o maantala ang tulong. / 2: Nawawala ang accountability at continuity. / 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.
+- **Check 1 (unang ligtas na hakbang).** Tama: **"Suriin ang opisyal na update at lokal na ruta bago magpayo"** — ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. "Ipagpalagay na tama pa ang lumang impormasyon…": maaaring luma o mali ang impormasyon. "Magpasiya mag-isa…": kailangan ang tamang awtoridad at lokal na konteksto.
+- **Check 2 (ligtas na susunod na hakbang).** Tama: **"Ipaabot sa lead, itala ang handover, at balikan"** — tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon. "Gamitin ang lumang directory bilang tiyak na kasalukuyan…": maaaring makapinsala o maantala ang tulong. "Walang kailangang itala o balikan…": nawawala ang accountability at continuity.
 
-## [observe] Obserbahan
+## [observe] Ano ang oobserbahan
 
-Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.
+Indicator: Sa fictional na kaso, gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.
 
-Kaya na: Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
+- **Kaya na:** Nakumpleto ang tamang aksiyon, hangganan, handover at follow-up nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
+- **Hindi pa:** Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
 
-Kailangan practice: Tama ang unang hakbang ngunit kailangan ng paalala sa kumpirmasyon o follow-up.
+Hanapin: nasabi ang source at oras; hiwalay ang kumpirmado sa hinihintay pa. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
 
-Hindi pa: Gumagamit ng di-beripikadong plano o lumalampas sa tungkulin.
+## [support] Kung kailangan ng dagdag na suporta
 
-## [support] Suporta at talakayan
+- **Kailangan pa:** ipakitang muli ang pangungusap na "kumpirmado / hinihintay pa"; umulit ngayon, ruta naman ang tanong ng kapareha.
+- **Hindi pa:** ulitin ang halimbawang sagot; isang tanong lang ("Kailan kami aalis?"); ipares sa kasamang Kaya na.
+- Obserbahang muli sa susunod na supervised practice o transfer task, na iba ang advisory. Practice ang peer feedback, hindi rating ng staff.
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 54; Facilitator Guide PDF pp. 38, 42–43; Day 1 Part 2 presentation PDF pp. 99–102.
+- Dalawang oras sa F38, kahati ng 2.6; authoring distribution ang 10 minutong ito, hindi oras ng source.
+- Aprubado ng program owner (attestation, 25 Set 2026) ang lokal na DRRM at clinical review; walang naitalang pangalan ng reviewer. Lokal na protocol ang masusunod.

@@ -1,57 +1,81 @@
 ## [purpose] Purpose
 
-8 minutes: opening 1; model 1; supervised reference-card practice 4; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-For Ulasimang bato / pansit-pansitan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+The BHW matches the card to Peperomia pellucida and leafy tops, and asks the health center to assess Carlo's pain and medicines.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **8 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **Per triad:** *2.5.10 — Reference-card practice* cards and worksheet for this plant; *2.5.10 — Observation sheet*; job aid; two cards with this local name. Dry props only.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Note the two local names, Ulasimang bato and Pansit-pansitan; the card check is the same.
+- Confirm with the midwife or RHU who assesses joint pain.
+- **Scope:** card check and referral only. No preparation or dose; never advise stopping medicine.
 
 ## [opening] Opening
 
-Carlo has joint pain. A neighbor says Pansit-pansitan alone will treat gout.
+Read the case aloud. Ask: *"Is joint pain the same as gout? Who checks?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation.** *"Who said it is gout?"* (The neighbour.)
+2. **What to do and say.** Point to the botanical name and "Part: leafy tops". *"Under whose advice is the listed use?"*
+3. **Choose the first response.** Self-check 1 — pairs answer before revealing.
+4. **Worked example.** Model reading the card. *"Why ask about Carlo's medicines?"*
+5. **Scope and support.** *"What promise must we not make?"* (A cure from the plant.)
+6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
+7. **On Monday, try this.** Start the practice.
 
-## [expected-answers] Expected response
+Each step matches the slide of the same name.
 
-The BHW points to Ulasimang bato / pansit-pansitan and its botanical name on the card. The yard plant is not assumed to be identified. Ask the health center to assess the pain and current medicines.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"It helped my uncle's gout."** *"Who confirmed it was gout?"*
+- **"He can stop his pills and use the plant."** Calmly: *"Who decides about Carlo's medicine?"*
+- **"Ask the health center to check the pain and his medicines."** Correct; that is the lesson's referral.
 
-Guesses identity, prescribes a dose or replaces treatment.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"Joint pain means gout, and the plant alone treats it."** Neighbours mean well. Ask the group, not the speaker: *"Who diagnosed gout?"* Joint pain is not a gout diagnosis; do not stop medicine or promise a cure.
 
-Match two Ulasimang bato / pansit-pansitan cards; choose Peperomia pellucida, leafy tops, use and safe next step. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Reference-card practice** for this plant (rotation B), triads, one 4-minute round.
 
-1: Unconfirmed part and identity are unsafe. / 2: Match the part to the written source; this is not a dose. / 3: Common names may cover different plants.
+- **Learner:** compares the cards, fills the worksheet, tells Carlo what is known, unknown and who to consult.
+- **Partner:** plays Carlo; repeats the neighbour's claim.
+- **Observer:** records the learner's words; one strength, one next action.
 
-1: Necessary care may be displaced or delayed. / 2: Confirm identity, symptoms and scope before advice. / 3: An old recipe does not replace current clinical guidance.
+Fictional details only. Alone: worksheet now, staff observation later.
 
-## [observe] Observe
+## [answer-key] Self-check answer key
 
-For Ulasimang bato / pansit-pansitan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+- **Check 1: "Which Ulasimang bato / pansit-pansitan part is listed on the card?"** Correct: **"Leafy tops of confirmed Peperomia pellucida."** Match the part to the written source; this is not a dose.
+  - "Any part of a yard plant even when its identity as Ulasimang bato / pansit-pansitan is unconfirmed." Unconfirmed part and identity are unsafe.
+  - "The botanical name need not be checked." Common names may cover different plants.
+- **Check 2: "What is the safe response in the Ulasimang bato / pansit-pansitan case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
+  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
+  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
 
-Ready: Correctly identifies Ulasimang bato / pansit-pansitan, Peperomia pellucida, leafy tops, use and referral without prompts.
+## [observe] What to observe
 
-Needs practice: Identifies the plant but needs a prompt about limits or referral.
+Staff only. Indicator: For Ulasimang bato / pansit-pansitan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-Not yet: Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Correctly identifies Ulasimang bato / pansit-pansitan, Peperomia pellucida, leafy tops, use and referral without prompts.
+- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
+- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
 
-## [support] Support and debrief
+Look for: does not call it gout; keeps medicine unchanged. A correct self-check is not evidence of the skill.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [support] If a BHW needs more support
 
-## [sources-review] Local resources
+- **Kailangan pa:** name the missing step; retry the same card now.
+- **Hindi pa:** restate the scope line, re-model step 4, retry with a Kaya na partner.
+- Re-observe next session with one changed detail (Carlo's wife asks). Peer feedback is not a staff rating.
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+## [sources-review] Sources and review notes
+
+- Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 15 (preparation and dose content excluded).
+- Minutes are an authoring distribution of F38's 2-hour plant allocation.
+- Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.

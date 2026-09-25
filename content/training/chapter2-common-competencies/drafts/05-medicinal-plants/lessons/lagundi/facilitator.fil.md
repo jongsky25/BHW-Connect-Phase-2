@@ -1,57 +1,72 @@
 ## [purpose] Layunin
 
-8 minuto: pambungad 1; modelo 1; supervised reference-card practice 4; feedback 1; susunod 1. Panimula lamang ito. Kailangan ng awtorisadong clinical training bago maghanda o magpayo.
-
-Para sa Lagundi, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+Itinutugma ng BHW ang Vitex negundo, dahon at nakalistang gamit sa Lagundi card, at iniuugnay agad si Ben sa health professional.
 
 ## [time-materials] Oras at kagamitan
 
-Kabuuang 120 minuto ang 12 mungkahing station: 10 minuto sa saklaw, tig-8 minuto sa sampung plant card at 30 minuto sa pinagsamang gawain. Ito ang F38 dalawang oras. Printed current PITAHC cards at tuyong props lamang. Walang pag-inom, pagpapakulo, mainit na tubig o dose demonstration. Ang preparation return demonstration sa source ay para sa awtorisadong local trainer. Ihanda ang cards, worksheet, observer sheet at job aid. Maaaring gumamit ng papel at pasalitang tagubilin kung walang internet.
+- **Oras:** 8 minutong harapan (bahagi ng lesson sa 120 minutong plano ng subchapter, rotation A): pambungad 1, modelo 1, practice 4, feedback 1, check 1. Pagbasa: mga 3 minuto sa app.
+- **Sa mesa:** participant cards na *2.5.6 — Reference-card practice: Lagundi*, worksheet, staff observation sheet; job aid na *Sampung halamang gamot*; dalawang printed Lagundi card.
 
-## [prepare] Ihanda
+## [prepare] Paghahanda
 
-Kumpirmahin ang lokal na contact at paraan ng pag-uulat. Maghanda ng set bawat tatluhan. Kathang-isip na detalye at ligtas na props lamang. Para sa 30 kalahok, bumuo ng 10 tatluhan. Maglaan ng staff o dagdag na round para maobserbahan ang lahat.
+- Basahin ang lesson at mga check. Isulat sa job aid ang agarang referral route at paraan ng pag-uulat (midwife / RHU).
+- **Hangganan:** walang pinagpakuluan, mainit na likido, dami o dose mula sa lumang slide. Kung itanong: *"Tanong iyan para sa midwife o RHU. Ngayon, ang card check ang pag-aaralan natin."*
 
 ## [opening] Pambungad
 
-Umuubo si Ben at hirap huminga. May nag-alok ng Lagundi na pinagpakuluan.
+Basahin ang kaso. Itanong: *"Ano ang hindi puwedeng maghintay dito?"* Balikan ito sa hakbang 4.
 
 ## [steps] Mga hakbang
 
-Basahin ang kaso. Ibigay ang unang check bago ang paliwanag. Ipakita ang halimbawa. Ipagawa ang task gamit ang worksheet. Magbigay ng isang lakas at susubukang muli, saka ang ikalawang check. Itanong: Ano ang batayan? Sino ang magpapasya sa susunod?
+1. **"Ang sitwasyon" (unang slide).** *"Ano ang ikinababahala mo kay Ben?"*
+2. **"Gawin at sabihin" (katugmang slide).** Ituro ang Vitex negundo at dahon: *"Ano ang ibig sabihin ng 'sa payo ng clinician'?"*
+3. **"Piliin ang unang tugon."** Self-check 1 — magkapareha muna ang sasagot, saka ibunyag.
+4. **"Halimbawang sagot."** Ipakita: ituro ang card; iugnay agad si Ben at iulat ang hirap sa paghinga. *"Sino ang tatawagan mo, at ano ang iuulat mo?"*
+5. **"Saklaw at paghingi ng tulong."** *"Ano ang hindi dapat maantala ng herbal na inumin?"* Simulan ang practice.
+6. **"Subukan sa sitwasyon."** Self-check 2 — magkapareha muna ang sasagot, saka ibunyag.
+7. **"Sa Lunes, gawin ito."** *"Ano ang mamarkahan mo sa dalawang Lagundi card?"*
 
-## [expected-answers] Inaasahang tugon
+## [expected-answers] Inaasahang sagot at paano tumugon
 
-Itinuro ng BHW ang Lagundi at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Iugnay agad si Ben sa health professional at iulat ang hirap sa paghinga.
+- **"Bigyan ng Lagundi; pang-ubo iyan."** Pagpapagaan ng ubo sa payo ng clinician ang nasa card. *"Ubo lang ba ito?"*
+- **"Painumin habang naghihintay."** Hindi tayo nagbibigay o naghahanda nito. *"Ano ang hakbang natin para kay Ben?"*
+- **"Iugnay agad at iulat ang hirap sa paghinga."** Purihin ito.
 
-## [misconception] Karaniwang pagkakamali
+## [misconception] Karaniwang maling akala
 
-Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+**"Pang-ubo ang Lagundi, kaya subukan muna at tingnan."** Kilalang halamang pang-ubo ito. Itanong sa grupo, hindi sa tao: *"Habang naghihintay, paano ang paghinga ni Ben?"* Huwag hayaang maantala ng herbal na inumin ang pagsusuri sa hirap sa paghinga.
 
-## [practice] Gawaing maaaring patakbuhin
+## [practice] Gawaing pagsasanay
 
-Itugma ang dalawang Lagundi card; piliin ang Vitex negundo, dahon, gamit at ligtas na susunod na hakbang. Iminungkahing gawain, maaaring gamitin sa obserbasyon. Kung mag-isa: sagutan ang fictional worksheet at magpaobserba sa staff pagkatapos. Hindi awtomatikong rating ng kakayahan ang pakikilahok.
+**Reference-card practice: Lagundi** (*Reference-card stations, rotation A*): dalawang tatluhan bawat mesa; kalahok, kapareha (kamag-anak ni Ben), tagamasid; isang round na 4 minuto, 1 minutong feedback; magpalit ng kalahok sa susunod na mesa. Pinupunan ng kalahok ang worksheet, sinasabi ang alam at hindi alam, itinatanong ang gamot at sintomas, iniuugnay agad si Ben at nag-uulat. Itinatala ng tagamasid ang aktuwal na salita; nagbibigay ng isang lakas at isang susunod na hakbang. Kathang-isip na detalye; walang likido. Kung kulang ang gamit: isang card set sa buong grupo.
 
-## [answer-key] Paliwanag sa checks
+## [answer-key] Susi sa self-check
 
-1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. / 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. / 3: Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **"Aling bahagi ng Lagundi ang nakalista sa card?"** Tama: **"Dahon ng kumpirmadong Vitex negundo."** Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.
+  - "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Lagundi." Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.
+  - "Hindi kailangang malaman ang botanical name." Magkapareho ang tawag sa ilang magkakaibang halaman.
+- **"Ano ang ligtas na sagot sa kaso ni Lagundi?"** Tama: **"Kumonsulta muna sa clinician."** Kumpirmahin ang identity, sintomas at saklaw bago magpayo.
+  - "Ipalit agad sa niresetang gamot." Maaaring maantala o mapalitan ang kinakailangang pangangalaga.
+  - "Gayahin ang lumang timpla nang walang pagsusuri." Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
 
-1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. / 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. / 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.
+## [observe] Ano ang oobserbahan
 
-## [observe] Obserbahan
+Bantayan: Para sa Lagundi, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
 
-Para sa Lagundi, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.
+- **Kaya na:** Tama ang Lagundi, Vitex negundo, dahon, gamit at referral nang walang paalala.
+- **Kailangan pa ng practice:** Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+- **Hindi pa:** Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
 
-Kaya na: Tama ang Lagundi, Vitex negundo, dahon, gamit at referral nang walang paalala.
+Tingnan: nababanggit at naiuulat ang hirap sa paghinga nang walang paalala. Hindi ebidensiya ng kakayahan ang tamang self-check.
 
-Kailangan practice: Tama ang pagkakakilanlan ngunit kailangan ng paalala sa limitasyon o referral.
+## [support] Kung kailangan ng dagdag na suporta
 
-Hindi pa: Naghuhula ng halaman, nagtatakda ng dose o nagpapalit ng niresetang gamot.
+- **Kailangan pa ng practice:** sabihin ang kulang na hakbang; ulitin sa parehong card.
+- **Hindi pa:** ipakitang muli ang hakbang 4; ulitin sa tatlong bagay lamang (botanical name, bahagi, sino ang tatawagan), kapares ang BHW na Kaya na.
+- Obserbahang muli sa susunod na sesyon (handa na raw ang pinagpakuluan). Practice ang peer feedback, hindi staff rating.
 
-## [support] Suporta at talakayan
+## [sources-review] Sanggunian at tala sa pagrepaso
 
-Payagan ang pasalita o nakasulat na sagot sa nais na wika. Itanong ang nakatulong at babaguhin. Aktuwal na kilos lamang ang itala. Ang peer feedback ay suporta sa practice, hindi staff rating. Walang rating kung hindi naobserbahan; magtakda ng ibang pagkakataon.
-
-## [sources-review] Lokal na kagamitan
-
-Gamitin ang job aid, blangkong worksheet at kumpirmadong lokal na contact list. Ipasuri sa supervisor o organizer ang paraan ng pag-uulat. Huwag isama ang personal na detalye ng residente sa practice records.
+- Reference Manual PDF p. 49; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 11.
+- Oras: hati sa 2 oras ng F38 para sa halaman.
+- Katayuan: attested clinical sign-off ng program owner, 25 Set 2026; walang naitalang pangalan ng reviewer. Lokal na protocol ang masusunod.

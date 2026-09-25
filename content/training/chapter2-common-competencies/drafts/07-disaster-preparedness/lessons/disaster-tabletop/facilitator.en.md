@@ -1,57 +1,69 @@
 ## [purpose] Purpose
 
-10 minutes: opening 1; model 1; triad/tabletop practice 4; feedback and retry 2; debrief 1; next step 1. This is an orientation station, not a full field drill or proof of competence. Arrange additional supervised practice.
-
-In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.
+In a fictional tabletop, the BHW orders four issues, gives each a first safe action, confirmed lead and follow-up, and arranges relief for the exhausted volunteer.
 
 ## [time-materials] Time and materials
 
-Six 10-minute introductory DRRM stations total 60 minutes. This is a proposed share of F38’s combined two hours for Community Mobilization and DRRM; the other proposed 60 minutes are in Chapter 2.6. F42–43 describe DRRM content but do not prescribe separate minutes. Use locally verified contacts, routes, roles and plans. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **10 minutes face-to-face** (share of the 60-minute subchapter plan): opening 1, model 1, practice 4, feedback and retry 2, debrief 1, next step 1. Read in the app: about 3 minutes.
+- **Materials:** 2.7.6 card, worksheet and observation sheet per triad; job aid; mock advisory (PRACTICE); four issue cards.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm the contacts for evacuation, clinical continuity, WASH and psychosocial support, and who arranges responder relief.
+- Scope: this is a tabletop, not a live drill, incident command, clinical assessment or water testing.
 
 ## [opening] Opening
 
-In a fictional tabletop, flooding and an evacuation advisory coincide. A family needs help leaving, a resident’s medicine is running low, shelter water is uncertain and a volunteer is exhausted.
+Read the case and the mock advisory. Say it is a tabletop only. Ask: *"What comes first, and who takes each item?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+Each step matches the Read section and slide of the same name.
 
-## [expected-answers] Expected response
+1. **The situation.** Ask: *"Which of the four issues is most urgent for safety?"*
+2. **What to do and say.** Ask: *"Which contacts must be confirmed before we act?"*
+3. **Choose the first response.** Self-check 1 — let pairs answer before revealing.
+4. **Worked example.** Model it: safe evacuation and urgent referral first; medicine and water to the right staff; acknowledgement recorded; follow-up and relief for the volunteer. Run the practice.
+5. **Scope and support.** Ask: *"What can a tabletop not replace?"*
+6. **Apply it to the situation.** Self-check 2 — let pairs answer before revealing.
+7. **On Monday, try this.** Ask: *"Which gap will you bring to the DRRM and health leads?"*
 
-The group prioritizes safe evacuation and urgent referral. It routes medicine and water to the appropriate staff, records acknowledgement, and arranges follow-up and relief for the exhausted volunteer.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"Medicine first, it is running out."** It matters. Ask: *"Who is in danger right now?"*
+- **"I will take over the volunteer's work myself."** Thank them. Ask: *"Then who relieves you? Tell the lead."*
+- **"Help the family leave, route medicine and water, record acknowledgement, relieve the volunteer."** Correct. Ask when they will follow up.
 
-Uses an unverified plan or exceeds the role.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"Residents first; volunteers can rest when it is over."** Responders put others first; that is admirable. Do not single anyone out. Read the option "Leave the exhausted responder without relief…" and its feedback: this may harm or delay help. Ask: *"Who looks after the BHW who is exhausted or also affected?"*
 
-In a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Disaster tabletop.** Triads: learner (leads), partner (team leads), observer. In 4 minutes the learner orders the four cards and gives each a first safe action, confirmed lead and follow-up. Observer notes: order, actual words, one strength, one next action. Retry the weakest item for 2 minutes. Fictional details only. Low resource: one group, rotating leaders. Solo: worksheet now, staff talk-through later.
 
-1: Information may be old or wrong. / 2: This ties action to a verified plan and scope. / 3: The correct authority and local context are needed.
+## [answer-key] Self-check answer key
 
-1: This may harm or delay help. / 2: Accountability and continuity are lost. / 3: This establishes clear ownership and next action.
+- **Check 1 (first safe step).** Correct: **"Prioritize safety; link services, confirm handover and follow-up"** — it ties action to a verified plan and scope. "Assume the old information is still correct…": information may be old or wrong. "Decide alone…": the correct authority and local context are needed.
+- **Check 2 (safe next step).** Correct: **"Inform the lead, record handover, and follow up"** — it establishes clear ownership and next action. "Leave the exhausted responder without relief…": this may harm or delay help. "Nothing needs recording or follow-up…": accountability and continuity are lost.
 
-## [observe] Observe
+## [observe] What to observe
 
-In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.
+Indicator: In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.
 
-Ready: Completes action, boundary, handover and follow-up without prompts.
+- **Kaya na:** Completes action, boundary, handover and follow-up without prompts.
+- **Kailangan pa ng practice:** Chooses the first action but needs a prompt for verification or follow-up.
+- **Hindi pa:** Uses an unverified plan or exceeds the role.
 
-Needs practice: Chooses the first action but needs a prompt for verification or follow-up.
+Look for acknowledgement recorded, only confirmed contacts, and relief for the volunteer. A correct self-check is not evidence of the skill.
 
-Not yet: Uses an unverified plan or exceeds the role.
+## [support] If a BHW needs more support
 
-## [support] Support and debrief
+- **Kailangan pa:** re-model the handover and acknowledgement for one card; retry the weakest item now.
+- **Hindi pa:** replay the worked example; start with two cards; pair with a peer rated Kaya na.
+- Re-observe at the next supervised practice or transfer task with a changed case. Peer feedback is practice, not a staff rating.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [sources-review] Sources and review notes
 
-## [sources-review] Local resources
-
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+- Reference Manual PDF pp. 54–57; Facilitator Guide PDF pp. 38, 42–43; Day 1 Part 2 presentation PDF pp. 97–112.
+- The 10 minutes are an authoring distribution of F38's two hours shared with 2.6, not source hours. Local DRRM and clinical review approved by program-owner attestation, 25 Sep 2026; no reviewer names recorded. Local protocol wins.

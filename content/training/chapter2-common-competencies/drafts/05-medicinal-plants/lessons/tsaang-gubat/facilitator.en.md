@@ -1,57 +1,80 @@
 ## [purpose] Purpose
 
-8 minutes: opening 1; model 1; supervised reference-card practice 4; feedback 1; next step 1. The short station introduces reference use. Additional authorized clinical training is required before any preparation or advice.
-
-For Tsaang gubat, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+The BHW matches the card to Carmona retusa and leaves, says stomach pain needs assessment, and connects Rosa's worsening pain to a health professional.
 
 ## [time-materials] Time and materials
 
-Twelve proposed stations total 120 minutes: 10-minute scope, ten eight-minute plant cards and a 30-minute integrated exercise. This matches F38’s two-hour allocation. Use printed current PITAHC cards and dry props only; no specimen ingestion, decoction, hot water or dose demonstration. The source recommends a preparation return demonstration, which remains a qualified local training task beyond this draft. Print cards, worksheet, observer sheet and job aid. Paper and spoken instructions can replace slides and internet.
+- **8 minutes face-to-face** (this lesson's share of the 120-minute subchapter plan): opening 1, model 1, practice 4, feedback 1, checks 1. Read in the app: about 3 minutes.
+- **Per triad:** *2.5.9 — Reference-card practice: Tsaang gubat* cards and worksheet; *2.5.9 — Observation sheet*; job aid; two Tsaang gubat cards. Dry props only.
 
 ## [prepare] Prepare
 
-Confirm the local contact and reporting channel. Prepare one set per triad. Use fictional details and safe props. For 30 participants, use 10 triads; plan enough staff or later rounds to observe everyone.
+- Confirm with the midwife or RHU who sees worsening stomach pain.
+- **Scope:** card check and referral only. No dose from the old table: *"That is a question for the midwife or RHU."*
 
 ## [opening] Opening
 
-Rosa has worsening stomach pain and wants to drink Tsaang gubat.
+Read the case aloud. Ask: *"Rosa wants to drink Tsaang gubat. What do you do about the worsening pain?"*
 
 ## [steps] Steps
 
-Read the case. Take the first check before revealing feedback. Model the worked example. Run the task using the worksheet. Give one strength and one retry action, then take the second check. Ask: What evidence supports the choice? Who decides next?
+1. **The situation.** *"What word in Rosa's story worries you most?"* (Worsening.)
+2. **What to do and say.** Point to the botanical name and "Part: leaves". *"What does 'requiring assessment' mean for Rosa?"*
+3. **Choose the first response.** Self-check 1 — pairs answer before revealing.
+4. **Worked example.** Model reading the card; recall the two yard "tsaang gubat" plants from 2.5.1. *"Which one is on the card?"*
+5. **Scope and support.** *"Does the name tell us it is safe to drink?"*
+6. **Apply it to the situation.** Self-check 2 — pairs answer before revealing.
+7. **On Monday, try this.** Start the practice.
 
-## [expected-answers] Expected response
+Each step matches the slide of the same name.
 
-The BHW points to Tsaang gubat and its botanical name on the card. The yard plant is not assumed to be identified. Refer worsening pain to a health professional; do not copy a dose from the old table.
+## [expected-answers] Expected answers and how to respond
 
-## [misconception] Common error
+- **"It's tea, so it's fine."** *"Does the name prove that?"*
+- **"Tell her to wait and see."** Ask: *"Her pain is already getting worse. Who should see her?"*
+- **"Connect her to a health professional now."** Correct; ask what to report: symptoms and current medicines.
 
-Guesses identity, prescribes a dose or replaces treatment.
+## [misconception] Common misconception
 
-## [practice] Activity you can run
+**"It's called tea, so it is safe to drink."** The name sounds gentle. Ask the group, not the speaker: *"Which plant, and what causes the pain?"* A plant name does not establish that it is safe to drink, and stomach pain has many causes.
 
-Match two Tsaang gubat cards; choose Carmona retusa, leaves, use and safe next step. Suggested activity, suitable for observation. Alone: complete a fictional worksheet and arrange staff observation later. Do not turn participation into an automatic competence rating.
+## [practice] Practice activity
 
-## [answer-key] Check explanations
+**Reference-card practice: Tsaang gubat** (rotation B), triads, one 4-minute round.
 
-1: Unconfirmed part and identity are unsafe. / 2: Match the part to the written source; this is not a dose. / 3: Common names may cover different plants.
+- **Learner:** compares the cards, fills the worksheet, tells Rosa what is known, unknown and who to consult.
+- **Partner:** plays Rosa; says she already has leaves at home.
+- **Observer:** records the learner's words; one strength, one next action.
 
-1: Necessary care may be displaced or delayed. / 2: Confirm identity, symptoms and scope before advice. / 3: An old recipe does not replace current clinical guidance.
+Fictional details only. Alone: worksheet now, staff observation later.
 
-## [observe] Observe
+## [answer-key] Self-check answer key
 
-For Tsaang gubat, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
+- **Check 1: "Which Tsaang gubat part is listed on the card?"** Correct: **"Leaves of confirmed Carmona retusa."** Match the part to the written source; this is not a dose.
+  - "Any part of a yard plant even when its identity as Tsaang gubat is unconfirmed." Unconfirmed part and identity are unsafe.
+  - "The botanical name need not be checked." Common names may cover different plants.
+- **Check 2: "What is the safe response in the Tsaang gubat case?"** Correct: **"Consult a clinician first."** Confirm identity, symptoms and scope before advice.
+  - "Replace prescribed treatment now." Necessary care may be displaced or delayed.
+  - "Copy an old recipe without assessment." An old recipe does not replace current clinical guidance.
 
-Ready: Correctly identifies Tsaang gubat, Carmona retusa, leaves, use and referral without prompts.
+## [observe] What to observe
 
-Needs practice: Identifies the plant but needs a prompt about limits or referral.
+Staff only. Indicator: For Tsaang gubat, match the botanical name, plant part and listed use. Explain the boundary and consultation need.
 
-Not yet: Guesses identity, prescribes a dose or replaces treatment.
+- **Kaya na:** Correctly identifies Tsaang gubat, Carmona retusa, leaves, use and referral without prompts.
+- **Kailangan pa ng practice:** Identifies the plant but needs a prompt about limits or referral.
+- **Hindi pa:** Guesses identity, prescribes a dose or replaces treatment.
 
-## [support] Support and debrief
+Look for: acts on "worsening" without a prompt; names no amount. A correct self-check is not evidence of the skill.
 
-Allow spoken or written work in the learner’s preferred language. Ask what helped and what to change. Record only observed behavior; peer feedback is practice support, not a staff rating. Leave unobserved work unrated and arrange another opportunity.
+## [support] If a BHW needs more support
 
-## [sources-review] Local resources
+- **Kailangan pa:** name the missing step; retry the same card now.
+- **Hindi pa:** restate the scope line, re-model step 4, retry with a Kaya na partner.
+- Re-observe next session with one changed detail (Rosa's daughter asks). Peer feedback is not a staff rating.
 
-Use the job aid, blank worksheet and locally confirmed contact list. Ask the supervisor or organizer to confirm the reporting process. Keep personal resident details out of practice records.
+## [sources-review] Sources and review notes
+
+- Reference Manual PDF p. 51; Facilitator Guide PDF pp. 38–40; Day 1 Part 2 presentation PDF p. 14 (preparation and dose content excluded).
+- Minutes are an authoring distribution of F38's 2-hour plant allocation.
+- Author source check (PITAHC, WHO) and the program owner's attested clinical sign-off for 2.5: 25 Sep 2026; reviewer names not recorded. Local protocol overrides where it differs.
