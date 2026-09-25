@@ -34,17 +34,17 @@ Bahagi ng Read at katugmang slide ang bawat hakbang.
 - **"Ayos lang, mabilis naman."** Mahalaga nga ang bilis. Itanong: *"Tama ba ang oras? Ligtas ba ang daan?"*
 - **"Mali ang mensahe."** Hindi natin alam. Itanong: *"Ano ang magpapatibay dito?"*
 - **"Si Mila na ang mag-alis ng kahon."** Tanggapin ang malasakit; sabi ng aralin, ipaalis ito.
-- **"Itanong kay Nena kung anong oras ang kaya."** Purihin; madalas itong makaligtaan.
+- **"Itanong kay Nena kung anong oras ang kaya."** Purihin; madalas itong nakakaligtaan.
 
 ## [misconception] Karaniwang maling akala
 
-**"Kapag mabilis at magiliw, dekalidad na ang serbisyo."** Natural ito: ayaw ng residente ang paghihintay, at pinupuri ang maagap at mabait na BHW. Itanong: *"Mabilis at magalang si Mila. Ano pa ang kulang?"* Hayaang sila ang makakita. Kilalanin ang sumagot ng "mabilis": *"Bahagi iyan."*
+**"Kapag mabilis at magiliw, dekalidad na ang serbisyo."** Natural ito: ayaw ng residente ang paghihintay, at pinupuri ang maagap at mabait na BHW. Itanong: *"Mabilis at magalang si Mila. Ano pa ang kulang?"* Kilalanin ang sumagot ng "mabilis": *"Bahagi iyan."*
 
 ## [practice] Gawaing pagsasanay
 
 **Paghahambing ng serbisyo: tatlong katangian.** Tatluhan, 55 minuto; magpalitan ng papel.
 
-Itatala ng kalahok ang ebidensiya at isang pagbabago sa bawat katangian, saka ipaliliwanag ang pagkakaiba. Gaganap na Nena ang kapareha. Isusulat ng tagamasid ang aktuwal na salita, isang lakas at isang susunod na hakbang. Umulit nang may binagong detalye (sa umaga nagtatrabaho si Nena). Kathang-isip na detalye lamang. Mag-isa: worksheet sa papel, obserbasyon ng staff pagkatapos.
+Itatala ng kalahok ang ebidensiya at isang pagbabago sa bawat katangian, saka ipaliliwanag ang pagkakaiba. Gaganap na Nena ang kapareha. Isusulat ng tagamasid ang aktuwal na salita, isang lakas at susunod na hakbang. Umulit nang may binagong detalye (sa umaga nagtatrabaho si Nena). Kathang-isip na detalye lamang. Mag-isa: worksheet sa papel, obserbasyon ng staff pagkatapos.
 
 ## [answer-key] Susi sa self-check
 
@@ -59,7 +59,7 @@ Itatala ng kalahok ang ebidensiya at isang pagbabago sa bawat katangian, saka ip
 
 Indicator: Tinutukoy ang ebidensiya para sa tatlong katangian at nagmumungkahi ng isang angkop na pagbabago sa bawat isa.
 
-- **Kaya na:** Naikakabit ang kumpirmadong gabay, ligtas na daan at piniling oras sa tamang katangian nang walang paalala.
+- **Kaya na:** Naikakabit ang kumpirmadong gabay, ligtas na daan at piniling oras sa tamang katangian at nagmumungkahi ng isang pagbabago sa bawat isa nang walang paalala.
 - **Kailangan pa ng practice:** Natukoy ang dalawang katangian; naidagdag ang pakikinig sa residente matapos ang paalala.
 - **Hindi pa:** Bilis lamang ang batayan o ginagamit ang lumang mensahe kahit hindi pa kumpirmado.
 

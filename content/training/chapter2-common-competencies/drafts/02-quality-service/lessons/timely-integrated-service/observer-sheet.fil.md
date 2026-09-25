@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | May tiyak na hadlang at magagamit na panukat; ipinapasuri ang pagbabago at pinananatili ang kailangang proseso nang walang paalala. |
-| Kailangan practice | Malinaw ang hadlang at mungkahi pero kailangang paalalahanang tukuyin ang responsable o panukat. |
+| Kailangan pa ng practice | Malinaw ang hadlang at mungkahi pero kailangang paalalahanang tukuyin ang responsable o panukat. |
 | Hindi pa | Nangangako ng lahat ng serbisyo o basta nag-aalis ng kailangang pagsusuri upang bumilis. |
 
 Aktuwal na nakita/narinig: ____

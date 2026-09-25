@@ -10,7 +10,7 @@ Draw the four steps in the story. Mark one barrier. Propose a change with an own
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play Pilar, the resident who has returned twice. Say the contact was unclear and you had to write the same details again. Ask: "How does this fit my afternoon work?" If Arnel promises everything in one day, ask who confirmed it. Do not add personal or clinical details.
 
 ## Observer card
 

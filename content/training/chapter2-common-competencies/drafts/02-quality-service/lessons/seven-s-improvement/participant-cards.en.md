@@ -10,7 +10,7 @@ Using safe props, inspect all seven categories at Tess’s desk. Assign one impr
 
 ## Partner card
 
-Play the other voice in the case. Ask how the plan meets your stated needs. You may disagree or ask for clarification. Do not add personal or clinical details.
+Play the BHS staff member who must authorize removing items. When the learner wants to remove the old poster or forms, ask: "Did you check with me first?" When a change is proposed, ask: "Who will check it, and when?" Do not add real records, medicines or other items to the desk.
 
 ## Observer card
 

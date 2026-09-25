@@ -4,7 +4,7 @@ Sinusuri ni BHW Tess ang kathang-isip na mesa. May lumang poster, halo-halong bl
 
 ## [action] Gawin at sabihin
 
-Sort: tukuyin ang hindi kailangan at ipaalam bago alisin. Systematize: ayusin ang gamit ayon sa paggamit. Sweep: panatilihing malinis ayon sa nakatalagang paraan. Standardize: magkasundo sa label, ayos at checklist. Sa mesa, suriin ang poster, forms, alikabok at lalagyan.
+Sort: tukuyin ang hindi kailangan at humingi ng pahintulot bago alisin. Systematize: ayusin ang gamit ayon sa paggamit. Sweep: panatilihing malinis ayon sa nakatalagang paraan. Standardize: magkasundo sa label, ayos at checklist. Sa mesa, suriin ang poster, forms, alikabok at lalagyan.
 
 ## [check-start] Piliin ang unang tugon
 

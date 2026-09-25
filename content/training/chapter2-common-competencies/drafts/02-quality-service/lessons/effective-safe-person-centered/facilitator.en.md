@@ -59,7 +59,7 @@ Learner fills in evidence and one improvement per dimension, then explains the d
 
 Indicator: Identifies evidence for all three dimensions and proposes an appropriate improvement for each.
 
-- **Kaya na:** Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions without prompting.
+- **Kaya na:** Links confirmed guidance, a safe walkway and the chosen time to the correct dimensions and proposes one improvement for each without prompting.
 - **Kailangan pa ng practice:** Identifies two dimensions and adds listening to the resident after a prompt.
 - **Hindi pa:** Judges only speed or uses the old message without confirmation.
 

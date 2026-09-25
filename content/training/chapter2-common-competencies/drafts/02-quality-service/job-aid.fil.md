@@ -38,7 +38,7 @@ Panukat at petsa ng pagsusuri: ____
 
 ## Gamitin ang 7S sa lugar ng trabaho
 
-Sort: tukuyin ang hindi kailangan at ipaalam bago alisin. Systematize: ayusin ang gamit ayon sa paggamit. Sweep: panatilihing malinis ayon sa nakatalagang paraan. Standardize: magkasundo sa label, ayos at checklist. Sa mesa, suriin ang poster, forms, alikabok at lalagyan.
+Sort: tukuyin ang hindi kailangan at humingi ng pahintulot bago alisin. Systematize: ayusin ang gamit ayon sa paggamit. Sweep: panatilihing malinis ayon sa nakatalagang paraan. Standardize: magkasundo sa label, ayos at checklist. Sa mesa, suriin ang poster, forms, alikabok at lalagyan.
 
 Safety: iulat ang kahong nakaharang at ipaayos ang daan. Self-discipline: gampanan ang nakatalagang pagsusuri nang hindi laging inuutusan. Sustain: ulitin at balikan ang routine. Napagkasunduan ni Tess at staff ang araw-araw na checklist at pagsusuri sa Biyernes. Kumpleto ang pitong kategorya; hindi lang pagwawalis.
 

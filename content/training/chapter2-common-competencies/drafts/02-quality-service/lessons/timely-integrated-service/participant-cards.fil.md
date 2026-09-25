@@ -10,7 +10,7 @@ Iguhit ang apat na hakbang sa kuwento. Markahan ang isang hadlang. Gumawa ng mun
 
 ## Card ng kapareha
 
-Gumanap bilang kausap sa kaso. Itanong kung paano tutugon ang plano sa iyong kailangan. Maaaring hindi sumang-ayon o magpalinaw. Huwag magdagdag ng personal o clinical na detalye.
+Gumanap bilang Pilar, ang residenteng dalawang beses nang bumalik. Sabihing hindi malinaw ang contact at pinasulat ka muli ng parehong detalye. Itanong: "Paano po ito babagay sa trabaho ko sa hapon?" Kung mangako si Arnel na matatapos ang lahat sa isang araw, itanong kung sino ang nagkumpirma. Huwag magdagdag ng personal o clinical na detalye.
 
 ## Card ng tagamasid
 

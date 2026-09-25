@@ -7,7 +7,7 @@ Code ng kalahok: ____  Tagamasid: ____  Petsa: ____
 | Antas | Tiyak na kilos |
 |---|---|
 | Kaya na | Kumpleto ang pitong hanay; naihihiwalay ang standardize, self-discipline at sustain; may malinaw na follow-up nang walang paalala. |
-| Kailangan practice | May ligtas na pagbabago pero kailangang paalalahanang idagdag ang isang kategorya o petsa ng pagsusuri. |
+| Kailangan pa ng practice | May ligtas na pagbabago pero kailangang paalalahanang idagdag ang isang kategorya o petsa ng pagsusuri. |
 | Hindi pa | Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot. |
 
 Aktuwal na nakita/narinig: ____
