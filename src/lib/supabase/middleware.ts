@@ -32,8 +32,16 @@ function redirectTo(request: NextRequest, path: string, response: NextResponse) 
   return redirect;
 }
 
+function cleanAppHeaders(request: NextRequest) {
+  const forwardedHeaders = new Headers(request.headers);
+  for (const name of forwardedHeaders.keys()) {
+    if (name.startsWith("x-app-")) forwardedHeaders.delete(name);
+  }
+  return forwardedHeaders;
+}
+
 export async function updateSession(request: NextRequest) {
-  let response = NextResponse.next({ request });
+  let response = NextResponse.next({ request: { headers: cleanAppHeaders(request) } });
 
   const supabase = createServerClient(getSupabaseUrl(), getSupabaseAnonKey(), {
     cookies: {
@@ -44,7 +52,7 @@ export async function updateSession(request: NextRequest) {
         for (const { name, value } of cookiesToSet) {
           request.cookies.set(name, value);
         }
-        response = NextResponse.next({ request });
+        response = NextResponse.next({ request: { headers: cleanAppHeaders(request) } });
         for (const { name, value, options } of cookiesToSet) {
           response.cookies.set(name, value, options);
         }
@@ -84,6 +92,11 @@ export async function updateSession(request: NextRequest) {
     path: "/",
   });
 
+  // Pages need feature_flags for the layout headers below; start that read
+  // alongside the profile lookup instead of after it, so the two cost one
+  // round trip instead of two. API routes never use the flags (or the
+  // unread count), so they skip both reads entirely.
+  const flagsPromise = isApiPath(pathname) ? null : getFeatureFlags(supabase);
   const appUser = await getAppUser(supabase, user.id);
 
   if (!appUser || appUser.status !== "active") {
@@ -114,7 +127,24 @@ export async function updateSession(request: NextRequest) {
     return response;
   }
 
-  if (pathname === "/login" || pathname === "/change-password" || pathname === "/consent") {
+  // A BHW provisioned at their city/municipality chooses their PSGC barangay
+  // before anything else (rpc_bhw_select_barangay).
+  if (appUser.role === "bhw" && appUser.org_unit_level && appUser.org_unit_level !== "barangay") {
+    if (isApiPath(pathname)) {
+      return NextResponse.json({ error: "barangay selection required" }, { status: 403 });
+    }
+    if (pathname !== "/select-barangay") {
+      return redirectTo(request, "/select-barangay", response);
+    }
+    return response;
+  }
+
+  if (
+    pathname === "/login" ||
+    pathname === "/change-password" ||
+    pathname === "/consent" ||
+    pathname === "/select-barangay"
+  ) {
     return redirectTo(request, "/home", response);
   }
 
@@ -122,7 +152,13 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
-  const flags = await getFeatureFlags(supabase);
+  if (!flagsPromise) {
+    // API routes still read x-app-language (via next-intl) for localized
+    // exports/PDFs, so keep forwarding the profile headers.
+    return withAppUserHeaders(response, request, appUser, false, false, 0);
+  }
+
+  const flags = await flagsPromise;
 
   let notifUnreadCount = 0;
   if (flags.notifications) {
@@ -153,12 +189,21 @@ function withAppUserHeaders(
   notificationsEnabled: boolean,
   notifUnreadCount: number,
 ) {
-  const forwardedHeaders = new Headers(request.headers);
+  const forwardedHeaders = cleanAppHeaders(request);
   forwardedHeaders.set("x-app-language", appUser.language);
   forwardedHeaders.set("x-app-a11y", JSON.stringify(appUser.a11y_settings ?? {}));
   forwardedHeaders.set("x-app-offline-pwa", offlinePwaEnabled ? "1" : "0");
   forwardedHeaders.set("x-app-notifications", notificationsEnabled ? "1" : "0");
   forwardedHeaders.set("x-app-notif-unread", String(notifUnreadCount));
+  // Signed-in users landed here with a fully set-up account (active, password
+  // set, consented) — the site header's app-name link should take them back
+  // to their /home, not the signed-out "/" marketing page it defaults to.
+  forwardedHeaders.set("x-app-signed-in", "1");
+  forwardedHeaders.set("x-app-username", appUser.username);
+  forwardedHeaders.set("x-app-role", appUser.role);
+  // Lets the root layout tell whether the signed-in user is one of the
+  // super admin's test personas (the persona bar) without another lookup.
+  forwardedHeaders.set("x-app-user-id", appUser.id);
 
   const next = NextResponse.next({ request: { headers: forwardedHeaders } });
   for (const cookie of response.cookies.getAll()) {

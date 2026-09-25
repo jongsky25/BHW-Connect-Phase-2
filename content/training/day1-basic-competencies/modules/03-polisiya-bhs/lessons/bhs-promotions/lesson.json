@@ -1,0 +1,118 @@
+{
+  "manifest": {
+    "lesson_key": "bhs-promotions",
+    "position": 0,
+    "title_fil": "Pagkilala sa alok ng kumpanya",
+    "title_en": "Recognizing a company offer",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: pagkilala sa alok ng kumpanya."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: recognizing a company offer."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "concept_ids": [
+        "m3.milk-code",
+        "m3.pharma-ban"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang pagtanggi ay hindi lang tungkol sa \"ayaw ko\" — may batayan itong polisiya, at mas malakas ito kapag alam mo ang batayang iyon.",
+      "takeaway_en": "Declining isn't just about \"I don't want to\" — there's a policy behind it, and the refusal is stronger once you know what that basis is.",
+      "check": null
+    },
+    {
+      "id": "section-2",
+      "concept_ids": [
+        "m3.milk-code",
+        "m3.pharma-ban"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Magkaiba ang produkto — gatas sa isa, gamot sa isa — pero iisa ang prinsipyo: walang kumpanya ang dapat makaimpluwensya sa serbisyong ibinibigay sa loob ng barangay health station.",
+      "takeaway_en": "The product differs — milk on one side, medicine on the other — but the principle is the same: no company should be able to influence the service given inside a barangay health station.",
+      "check": {
+        "prompt_fil": "Ano ang gagawin sa alok na regalo kapalit ng pagpromote?",
+        "prompt_en": "What should you do about a gift offered in exchange for promotion?",
+        "options": [
+          {
+            "fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya.",
+            "en": "Do not accept the inducement; refer it to the supervisor under facility policy."
+          },
+          {
+            "fil": "Tanggapin basta walang makaalam.",
+            "en": "Accept it as long as nobody knows."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Do not accept the inducement; refer it to the supervisor under facility policy. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m3.milk-code",
+      "read_ids": [
+        "section-1",
+        "section-2"
+      ],
+      "slide_ids": [
+        "slide-section-1",
+        "slide-section-2"
+      ],
+      "source_ids": [
+        "m3.milk-code-source"
+      ]
+    },
+    {
+      "id": "m3.pharma-ban",
+      "read_ids": [
+        "section-1",
+        "section-2"
+      ],
+      "slide_ids": [
+        "slide-section-1",
+        "slide-section-2"
+      ],
+      "source_ids": [
+        "m3.pharma-ban-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m3.milk-code-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        14
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m3.pharma-ban-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        14
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "approved"
+    }
+  ]
+}

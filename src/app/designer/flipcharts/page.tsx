@@ -1,13 +1,12 @@
 import { redirect } from "next/navigation";
 import { DesignerFlipchartConsole } from "@/components/flipcharts/designer-console";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { FlipChart } from "@/lib/flipcharts/types";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function DesignerFlipchartsPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.flipcharts) {
     redirect("/home");
@@ -15,11 +14,11 @@ export default async function DesignerFlipchartsPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser || appUser.role !== "designer") {
     redirect("/home");
   }

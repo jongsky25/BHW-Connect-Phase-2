@@ -1,0 +1,130 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-benefits",
+    "position": 1,
+    "title_fil": "Benepisyo at mga kondisyon",
+    "title_en": "Benefits and conditions",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: benepisyo at mga kondisyon."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: benefits and conditions."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-3",
+      "concept_ids": [
+        "m4.benefits",
+        "m4.registration-requirement",
+        "m4.bhw-cap"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang mga benepisyong ito ay hindi awtomatiko — nakasalalay ito sa tamang rehistrasyon sa local health board.",
+      "takeaway_en": "These benefits aren't automatic — they depend on proper registration with the local health board.",
+      "check": {
+        "prompt_fil": "Paano ipapaliwanag ang benepisyo?",
+        "prompt_en": "How should a benefit be explained?",
+        "options": [
+          {
+            "fil": "May itinakdang kondisyon at proseso; alamin ang naaangkop na patakaran.",
+            "en": "It has defined conditions and procedures; check the applicable rules."
+          },
+          {
+            "fil": "Awtomatikong pare-pareho ang lahat ng allowance.",
+            "en": "All allowances are automatically identical."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "May itinakdang kondisyon at proseso; alamin ang naaangkop na patakaran. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "It has defined conditions and procedures; check the applicable rules. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m4.benefits",
+      "read_ids": [
+        "section-3"
+      ],
+      "slide_ids": [
+        "slide-section-3"
+      ],
+      "source_ids": [
+        "m4.benefits-source",
+        "m4.benefits-irr-source"
+      ]
+    },
+    {
+      "id": "m4.registration-requirement",
+      "read_ids": [
+        "section-3"
+      ],
+      "slide_ids": [
+        "slide-section-3"
+      ],
+      "source_ids": [
+        "m4.registration-requirement-source"
+      ]
+    },
+    {
+      "id": "m4.bhw-cap",
+      "read_ids": [
+        "section-3"
+      ],
+      "slide_ids": [
+        "slide-section-3"
+      ],
+      "source_ids": [
+        "m4.bhw-cap-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m4.benefits-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m4.registration-requirement-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m4.bhw-cap-source",
+      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m4.benefits-irr-source",
+      "title": "RA 7883 Implementing Rules and Regulations — DOH summary of BHW incentives and benefits",
+      "url": "https://web.archive.org/web/20220504133955/https://doh.gov.ph/faqs/What-are-the-incentives-and-benefits-of-BHWs-under-the-Implementing-Rules-and-Regulations-IRR-of-R.A.-7883"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "approved"
+    }
+  ]
+}

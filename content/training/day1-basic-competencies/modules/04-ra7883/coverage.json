@@ -1,0 +1,59 @@
+{
+  "$comment": "§C.2 of docs/training-modules-plan.md. Every concept Module 4's sources oblige it to teach, with a citation into docs/source-material/day1-basic-competencies/. The loader rejects any concept not delivered by a core- or standard-tier lesson section unless 'redundant_with' explains why it is deliberately not delivered. This module also carries forward the RA 7883 legal-basis section INC-21r displaced from Module 1's original draft (git commit d424bde) — see docs/training-modules-plan.md's INC-24 section.",
+  "concepts": [
+    {
+      "id": "m4.legal-basis",
+      "statement_en": "Under RA 7883, a BHW \"voluntarily renders primary health care services\" in the community after receiving proper training and accreditation from the local health board — the legal basis for the role, and the source of the Primary Health Care Approach as the guiding strategy and the barangay health station as a service hub.",
+      "source": "INC-21's original Module 1 draft (displaced, git commit d424bde); reference-manual PDF 13",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.benefits",
+      "statement_en": "Under RA 7883, a BHW may be given hazard allowances, subsistence allowance (isolated barangay health stations only), training/education and career enrichment programs, civil service eligibility, free legal services, and priority access to loans.",
+      "source": "deck slide 19; reference-manual PDF 13; RA 7883 IRR via DOH BLHD FAQ (sources.json ra-7883-irr)",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.registration-requirement",
+      "statement_en": "To be eligible for RA 7883's benefits, a BHW must be registered with the local health board of the city or municipality where they render service.",
+      "source": "deck slide 19; reference-manual PDF 13",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.bhw-cap",
+      "statement_en": "The total number of BHWs nationwide must not exceed one percent (1%) of the total population (RA 7883 §5).",
+      "source": "deck slide 19; reference-manual PDF 13",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.bhwe",
+      "statement_en": "BHW Eligibility (BHWE) in the Civil Service is granted to BHWs who are accredited by the local health board, have completed a minimum of two years of college leading to a degree, have actively and voluntarily served continuously and full time for five years or more as an accredited BHW, and have a satisfactory service record. The five years count only after accreditation, only if unpaid except for an honorarium, and not before 20 February 1995; job-order and contract-of-service BHWs can still qualify (CSC Resolution No. 99-2845).",
+      "source": "deck slide 20; reference-manual PDF 13; CSC Resolution No. 99-2845 (sources.json csc-res-99-2845)",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.accreditation-body",
+      "statement_en": "Under Section 5 of the RA 7883 IRR, responsibility for BHW registration and accreditation lies with the local health board.",
+      "source": "facilitator-guide PDF 25",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.board-duties",
+      "statement_en": "The local health board's specific responsibilities include: safeguarding the registration and accreditation process; evaluating applications; recording board decisions in a resolution or meeting minutes; issuing certificates of registration/accreditation; reviewing and approving incentives that require local funds; recommending benefits and fund appropriation; providing an official copy of the local BHW registry to the DOH; and monitoring the services registered/accredited BHWs provide.",
+      "source": "facilitator-guide PDF 25",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.registration-committee",
+      "statement_en": "A local health board may create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and prepare and update the BHW registry.",
+      "source": "facilitator-guide PDF 25",
+      "redundant_with": null
+    },
+    {
+      "id": "m4.competency",
+      "statement_en": "Module 4 maps to the TESDA BHS NC II competency 'Develop life and career decisions', whose outcomes are: manage one's emotions, develop reflective practices, and boost self-confidence and develop self-regulation.",
+      "source": "deck slide 15; facilitator-guide PDF 23 (competency table)",
+      "redundant_with": null
+    }
+  ]
+}

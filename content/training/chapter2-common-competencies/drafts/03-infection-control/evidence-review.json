@@ -1,0 +1,174 @@
+{
+  "status": "author-source-check-complete; independent clinical review pending",
+  "checked_on": "2026-09-25",
+  "independent_clinical_reviewer": null,
+  "clinical_signoff": null,
+  "publication_allowed": false,
+  "sources": [
+    {
+      "id": "who-air",
+      "title": "WHO: Updated terminology for pathogens transmitted through the air (2024)",
+      "url": "https://www.who.int/news/item/18-04-2024-leading-health-agencies-outline-updated-terminology-for-pathogens-that-transmit-through-the-air",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "cdc-spread",
+      "title": "CDC: How infections spread",
+      "url": "https://www.cdc.gov/children-and-school-preparedness/infection-prevention/appendix-a.html",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "cdc-core",
+      "title": "CDC: Core IPC practices in all healthcare settings (2024)",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "cdc-hierarchy",
+      "title": "CDC: Fundamental elements for preventing transmission (2025 page)",
+      "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/prevention.html",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "who-wash",
+      "title": "WHO: How to handwash (healthcare procedure)",
+      "url": "https://www.who.int/docs/default-source/patient-safety/how-to-handwash-poster.pdf",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "who-rub",
+      "title": "WHO: How to handrub (healthcare procedure)",
+      "url": "https://www.who.int/docs/default-source/patient-safety/how-to-handrub-poster.pdf",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "who-outpatient",
+      "title": "WHO: Hand hygiene in outpatient and home-based care (2012)",
+      "url": "https://www.who.int/publications/i/item/9789241503372",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "who-community",
+      "title": "WHO/UNICEF: Hand hygiene in community settings (2025; non-healthcare scope)",
+      "url": "https://www.who.int/publications/i/item/9789240116559",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "cdc-cough",
+      "title": "CDC: Hygiene and respiratory viruses prevention (2025)",
+      "url": "https://www.cdc.gov/respiratory-viruses/prevention/hygiene.html",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "who-food",
+      "title": "WHO: Five keys to safer food manual",
+      "url": "https://www.who.int/publications/i/item/9789241594639",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "who-water",
+      "title": "WHO: Drinking-water fact sheet (2023)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/drinking-water",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    },
+    {
+      "id": "doh-ipc-2021",
+      "title": "DOH: National Standards in IPC for Health Facilities, third edition (2021), WASH in HCF-hosted primary document",
+      "url": "https://washinhcf.org/wp-content/uploads/2021/10/NATIONAL-STANDARDS-IN-INFECTION-PREVENTION-AND-CONTROL-FOR-HEALTH-FACILITIES-THIRD-EDITION.pdf",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary agency guidance; the DOH document is hosted by WASH in HCF"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "ipc-evidence-01",
+      "lessons": [
+        "infection-routes",
+        "infection-control-levels"
+      ],
+      "source_issue": "R31–33/F36–37 use mixed route labels, animal-health references and misleading disease-route examples.",
+      "decision": "Use human-health contact, respiratory, fecal-oral, vector and blood/perinatal concepts. Respiratory inhalation and direct deposition follow WHO 2024 terminology. Omit incorrect disease-route pairings and diagnosis-by-card.",
+      "sources": [
+        "who-air",
+        "cdc-spread",
+        "cdc-core",
+        "cdc-hierarchy"
+      ],
+      "remaining": "Qualified IPC reviewer must check examples and local task/PPE protocols."
+    },
+    {
+      "id": "ipc-evidence-02",
+      "lessons": [
+        "hand-hygiene"
+      ],
+      "source_issue": "R34/P54 describe a 20-second wash without separating scrubbing time from the full healthcare procedure.",
+      "decision": "Use WHO full healthcare wash 40–60 seconds and handrub 20–30 seconds, including all surfaces and drying. Distinguish non-healthcare community guidance from care delivered in BHS/household settings.",
+      "sources": [
+        "who-wash",
+        "who-rub",
+        "who-outpatient",
+        "who-community",
+        "cdc-core"
+      ],
+      "remaining": "Qualified instructor must verify the demonstration, equipment, local infection-specific exceptions and translated checklist before use."
+    },
+    {
+      "id": "ipc-evidence-03",
+      "lessons": [
+        "cough-etiquette"
+      ],
+      "source_issue": "R35 mnemonic includes covering one’s own mouth when another person coughs and handkerchief/spitting language.",
+      "decision": "Teach tissue or bent elbow, appropriate disposal, hand hygiene and facility symptom/source-control process. Do not teach covering one’s own mouth as adequate exposure control.",
+      "sources": [
+        "cdc-cough",
+        "cdc-core"
+      ],
+      "remaining": "Confirm local waiting-area and mask/source-control arrangements with IPC staff."
+    },
+    {
+      "id": "ipc-evidence-04",
+      "lessons": [
+        "food-water-sanitation"
+      ],
+      "source_issue": "R36/P58–59 give a two-minute boiling instruction and 25-metre septic setback without sufficient context for every locality.",
+      "decision": "Teach safe food, protected storage, sanitation and confirmed local water advice. Do not supply unverified treatment doses/times or engineering guarantees.",
+      "sources": [
+        "who-food",
+        "who-water",
+        "who-community"
+      ],
+      "remaining": "Local water treatment parameters, product instructions, advisories and sanitary-engineering requirements remain unverified and are excluded from procedures."
+    },
+    {
+      "id": "ipc-evidence-05",
+      "lessons": [
+        "bhs-ipc-policies",
+        "ipc-monitor-and-improve"
+      ],
+      "source_issue": "R36–37/F35/P60–61 combine a ten-policy list with statements that could be misread as a blanket BHW training exemption.",
+      "decision": "Confirm the list against the DOH 2021 primary-care policy section and keep all ten items in the worksheet. Require local role/training confirmation; do not imply reading or attendance authorizes specialist tasks. Use observed process and supply measures.",
+      "sources": [
+        "doh-ipc-2021",
+        "cdc-core"
+      ],
+      "remaining": "Current local adoption, policy versions, training responsibilities, exposure reporting and any newer national requirements need facility confirmation."
+    }
+  ],
+  "document_locators": {
+    "doh-ipc-2021": "PDF page 24 (printed p8): ten primary-care policies; PDF pages 30–31 (printed p14–15): training; PDF page 38 (printed p22): monitoring. Publication is 2021, not certified as the latest local adoption.",
+    "who-wash": "Single-page healthcare procedure poster",
+    "who-rub": "Single-page healthcare procedure poster",
+    "who-community": "Publication page confirms non-healthcare scope; no community timing prescription was inferred from its overview."
+  }
+}

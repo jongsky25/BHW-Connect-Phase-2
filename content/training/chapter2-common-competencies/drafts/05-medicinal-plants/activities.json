@@ -1,0 +1,516 @@
+{
+  "activities": [
+    {
+      "id": "activity-plant-scope-identification",
+      "lesson_key": "plant-scope-identification",
+      "kind": "plant-consultation-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/plant-scope-identification/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Ihambing ang dalawang card at tukuyin ang kailangan pang kumpirmahin bago ang anumang paggamit.",
+        "en": "Compare two cards and identify what needs confirmation before any use."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          6,
+          16
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-akapulko",
+      "lesson_key": "akapulko",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/akapulko/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Akapulko card; piliin ang Senna alata, dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Akapulko cards; choose Senna alata, leaves, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          48
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          7
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-ampalaya",
+      "lesson_key": "ampalaya",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/ampalaya/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Ampalaya card; piliin ang Momordica charantia, dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Ampalaya cards; choose Momordica charantia, leaves, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          49
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          8
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-bawang",
+      "lesson_key": "bawang",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/bawang/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Bawang card; piliin ang Allium sativum, butil, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Bawang cards; choose Allium sativum, bulb, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          49
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          9
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-bayabas",
+      "lesson_key": "bayabas",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/bayabas/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Bayabas card; piliin ang Psidium guajava, talbos/dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Bayabas cards; choose Psidium guajava, leafy tops, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          49
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          10
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-lagundi",
+      "lesson_key": "lagundi",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/lagundi/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Lagundi card; piliin ang Vitex negundo, dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Lagundi cards; choose Vitex negundo, leaves, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          49
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          11
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-niyog-niyogan",
+      "lesson_key": "niyog-niyogan",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/niyog-niyogan/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Niyog-niyogan card; piliin ang Quisqualis indica, buto, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Niyog-niyogan cards; choose Quisqualis indica, seeds, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          50
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          12
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-sambong",
+      "lesson_key": "sambong",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/sambong/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Sambong card; piliin ang Blumea balsamifera, dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Sambong cards; choose Blumea balsamifera, leaves, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          50
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          13
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-tsaang-gubat",
+      "lesson_key": "tsaang-gubat",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/tsaang-gubat/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Tsaang gubat card; piliin ang Carmona retusa, dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Tsaang gubat cards; choose Carmona retusa, leaves, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          51
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          14
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-ulasimang-bato",
+      "lesson_key": "ulasimang-bato",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/ulasimang-bato/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Ulasimang bato / pansit-pansitan card; piliin ang Peperomia pellucida, talbos, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Ulasimang bato / pansit-pansitan cards; choose Peperomia pellucida, leafy tops, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          51
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          15
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-yerba-buena",
+      "lesson_key": "yerba-buena",
+      "kind": "plant-reference-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 8,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/yerba-buena/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang dalawang Yerba buena card; piliin ang Mentha cordifolia, dahon, gamit at ligtas na susunod na hakbang.",
+        "en": "Match two Yerba buena cards; choose Mentha cordifolia, leaves, use and safe next step."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          51
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          16
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-plant-integrated-practice",
+      "lesson_key": "plant-integrated-practice",
+      "kind": "plant-consultation-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 30,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/plant-integrated-practice/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.",
+        "en": "For three case cards, record identity, use, concern, referral and missing local authorization."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          6,
+          16
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    }
+  ]
+}

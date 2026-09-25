@@ -1,0 +1,94 @@
+{
+  "manifest": {
+    "lesson_key": "bhs-decline",
+    "position": 2,
+    "title_fil": "Magalang na pagtanggi",
+    "title_en": "Declining respectfully",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: magalang na pagtanggi."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: declining respectfully."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-4",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang pinakamalakas na pagtanggi ay hindi galit — ito ay malinaw, may batayan, walang kasunduan, at ipinaaalam sa midwife.",
+      "takeaway_en": "The strongest refusal isn't an angry one — it's clear, has a basis, makes no deal, and is reported to the midwife.",
+      "check": null
+    },
+    {
+      "id": "section-7",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kapag tinanggap ang alok nang walang batayan, ang kumpanya na, hindi ang BHS, ang nagpapasya kung ano ang mabuti para sa pasyente.",
+      "takeaway_en": "When an offer is accepted with no basis behind it, it is the company, not the BHS, that ends up deciding what's good for the patient.",
+      "check": {
+        "prompt_fil": "Paano tatanggi nang magalang?",
+        "prompt_en": "How can you decline respectfully?",
+        "options": [
+          {
+            "fil": "Ipaliwanag ang polisiya at idulog ang alok sa namamahala.",
+            "en": "Explain the policy and refer the offer to the supervisor."
+          },
+          {
+            "fil": "Pumayag muna para hindi mapahiya ang bisita.",
+            "en": "Agree first to avoid embarrassing the visitor."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ipaliwanag ang polisiya at idulog ang alok sa namamahala. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Explain the policy and refer the offer to the supervisor. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m3.competency",
+      "read_ids": [
+        "section-4",
+        "section-7"
+      ],
+      "slide_ids": [
+        "slide-section-4",
+        "slide-section-7"
+      ],
+      "source_ids": [
+        "m3.competency-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m3.competency-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "approved"
+    }
+  ]
+}

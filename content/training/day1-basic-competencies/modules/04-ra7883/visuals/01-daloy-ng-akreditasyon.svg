@@ -1,0 +1,31 @@
+<svg viewBox="0 0 640 400">
+  <title>Chain: mula sa rehistrasyon patungo sa benepisyo</title>
+  <defs>
+    <marker id="ra7883-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 z" fill="currentColor" />
+    </marker>
+  </defs>
+  <g>
+    <rect x="20" y="170" width="135" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="87" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Magrehistro</text>
+    <text x="87" y="210" text-anchor="middle" dominant-baseline="middle" font-size="9">sa local health board</text>
+
+    <line x1="155" y1="200" x2="185" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#ra7883-arrow)" />
+
+    <rect x="190" y="170" width="135" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="257" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Susuriin</text>
+    <text x="257" y="210" text-anchor="middle" dominant-baseline="middle" font-size="9">aplikasyon + board resolution</text>
+
+    <line x1="325" y1="200" x2="355" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#ra7883-arrow)" />
+
+    <rect x="360" y="170" width="135" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="427" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Certificate</text>
+    <text x="427" y="210" text-anchor="middle" dominant-baseline="middle" font-size="9">akreditasyon ibinigay</text>
+
+    <line x1="495" y1="200" x2="525" y2="200" stroke="currentColor" stroke-width="2" marker-end="url(#ra7883-arrow)" />
+
+    <rect x="530" y="170" width="95" height="60" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="577" y="192" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700">Eligible</text>
+    <text x="577" y="210" text-anchor="middle" dominant-baseline="middle" font-size="9">sa benepisyo</text>
+  </g>
+</svg>

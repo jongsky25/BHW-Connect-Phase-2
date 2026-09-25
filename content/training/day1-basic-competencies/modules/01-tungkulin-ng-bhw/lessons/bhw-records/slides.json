@@ -1,0 +1,99 @@
+[
+  {
+    "id": "record-purpose-slide",
+    "concept_ids": [
+      "m1.provider.records"
+    ],
+    "layout": "annotated-illustration",
+    "heading_fil": "Saan ginagamit ang tala?",
+    "heading_en": "What is the record used for?",
+    "display_fil": "Kolektahin\nPangalagaan\nGamitin sa pagpaplano\nHalimbawang tala lamang · walang tunay na personal na datos.",
+    "display_en": "Collect\nSafeguard\nInform planning\nLearning examples only · no real personal data.",
+    "asset_ids": [
+      "A06"
+    ],
+    "check": null
+  },
+  {
+    "id": "household-profile-slide",
+    "concept_ids": [
+      "m1.provider.documents"
+    ],
+    "layout": "annotated-illustration",
+    "heading_fil": "Household profile: isang kabahayan",
+    "heading_en": "Household profile: one household",
+    "display_fil": "Household profile\nHH-014 · 4 na miyembro\nTanong na sinasagot: ano ang larawan ng kabahayan? Halimbawa lamang.",
+    "display_en": "Household profile\nHH-014 · 4 members\nQuestion answered: what describes this household? Example only.",
+    "asset_ids": [
+      "A06"
+    ],
+    "check": null
+  },
+  {
+    "id": "list-registry-slide",
+    "concept_ids": [
+      "m1.provider.documents"
+    ],
+    "layout": "annotated-illustration",
+    "heading_fil": "Master list o registry?",
+    "heading_en": "Master list or registry?",
+    "display_fil": "Master list · grupo: nakatatanda\nRegistry · serbisyo: health teaching\nSino ang nasa grupo? / Sino ang nabigyan ng serbisyo? Mga halimbawa lamang.",
+    "display_en": "Master list · group: older adults\nRegistry · service: health teaching\nWho belongs to the group? / Who received a service? Examples only.",
+    "asset_ids": [
+      "A06"
+    ],
+    "check": null
+  },
+  {
+    "id": "assigned-form-slide",
+    "concept_ids": [
+      "m1.provider.documents",
+      "m1.competency"
+    ],
+    "layout": "annotated-illustration",
+    "heading_fil": "Sundin ang tagubilin sa form",
+    "heading_en": "Follow the form instructions",
+    "display_fil": "Assigned form · tatanggap: midwife\nSuriin · linawin · ihatid\nTamang impormasyon sa tamang tatanggap. Halimbawang form lamang.",
+    "display_en": "Assigned form · recipient: midwife\nCheck · clarify · deliver\nAccurate information to the appropriate recipient. Sample form only.",
+    "asset_ids": [
+      "A06"
+    ],
+    "check": null
+  },
+  {
+    "id": "check-slide",
+    "concept_ids": [
+      "m1.provider.records",
+      "m1.provider.documents",
+      "m1.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Gamitin ang natutuhan",
+    "heading_en": "Apply your learning",
+    "display_fil": "Piliin ang tamang tala, tiyakin ang impormasyon, at linawin ang tatanggap.",
+    "display_en": "Choose the appropriate record, verify information, and clarify its recipient.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Aling tala ang tumutugon sa “sino ang nabigyan na ng serbisyo”?",
+      "prompt_en": "Which record answers “who has received a service”?",
+      "options": [
+        {
+          "fil": "Household profile",
+          "en": "Household profile"
+        },
+        {
+          "fil": "Master list ng grupo",
+          "en": "Group master list"
+        },
+        {
+          "fil": "Registry",
+          "en": "Registry"
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Registry ang tinutukoy ng manual. Ang master list ay paggrupo ng mga tao; ang household profile ay larawan ng kabahayan. Sundin ang pangalan at gamit ng aprubadong lokal na form.",
+      "feedback_en": "The manual describes a registry. A master list groups people; a household profile describes a household. Follow the names and purposes of approved local forms."
+    }
+  }
+]
+

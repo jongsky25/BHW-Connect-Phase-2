@@ -1,0 +1,72 @@
+{
+  "$comment": "Module 4 — RA 7883: Benefits, Rights, Accreditation. qa-entries.json is the dual-delivery half of the module: same facts as lesson.*.md, shaped for chat retrieval per content/kb/README.md. See content/training/README.md for the field contract. Entries d1m4-legal-basis and d1m4-accreditation carry forward the displaced Module 1 draft's entries (git commit d424bde, ids d1m1-legal-basis/d1m1-accreditation) under this module's own ids.",
+  "category": "day1-m4-ra7883",
+  "entries": [
+    {
+      "id": "d1m4-legal-basis",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "Where does a BHW's duty come from?",
+      "question_fil": "Saan nanggagaling ang tungkulin ng isang BHW?",
+      "answer_en": "It comes from law, not just goodwill: Republic Act 7883, the Barangay Health Workers' Benefits and Incentives Act of 1995, defines the BHW role and the Primary Health Care Approach it follows. A BHW's status becomes official only after training and accreditation by the local health board — being willing to help is not, by itself, enough to begin the work.",
+      "answer_fil": "Nanggagaling ito sa batas, hindi lang sa kagustuhan: ang Republic Act 7883, ang Barangay Health Workers' Benefits and Incentives Act of 1995, ang nagtatakda ng tungkulin ng BHW at ng Primary Health Care Approach na sinusunod nito. Opisyal na katayuan lamang ang BHW matapos ang pagsasanay at akreditasyon ng local health board — ang pagkagustong tumulong lamang ay hindi sapat para simulan ang gawain.",
+      "keywords": ["ra 7883", "legal basis", "batayan", "batas", "saan nanggagaling", "where does it come from", "primary health care approach"],
+      "sources": ["ra-7883"]
+    },
+    {
+      "id": "d1m4-accreditation",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "Who accredits a BHW before they can officially start their work?",
+      "question_fil": "Sino ang nagbibigay ng akreditasyon sa isang BHW bago siya opisyal na makapagsimula sa gawain?",
+      "answer_en": "The local health board, under RA 7883, accredits a BHW after they complete proper training. Neither the midwife nor a fellow BHW has the authority to grant this accreditation on their own — it is a formal step tied to the local health board.",
+      "answer_fil": "Ang local health board, ayon sa RA 7883, ang nagbibigay ng akreditasyon sa isang BHW matapos ang tamang pagsasanay. Wala ni ang midwife o ang kapwa BHW ng awtoridad na magbigay nito nang mag-isa — pormal na hakbang ito na nakatali sa local health board.",
+      "keywords": ["akreditasyon", "accreditation", "local health board", "sino nagbibigay", "who accredits", "opisyal", "official"],
+      "sources": ["ra-7883"]
+    },
+    {
+      "id": "d1m4-benefits",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What benefits can a BHW receive under RA 7883?",
+      "question_fil": "Anong mga benepisyo ang maaaring matanggap ng isang BHW sa ilalim ng RA 7883?",
+      "answer_en": "A BHW may be given hazard allowance (amount set by the local health board and the local peace and order council), subsistence allowance (only for BHWs serving at isolated barangay health stations), training/education and career enrichment programs, civil service eligibility, free legal services, and priority access to loans. To be eligible, a BHW must be registered with the local health board of the city or municipality where they serve.",
+      "answer_fil": "Maaaring bigyan ang BHW ng hazard allowance (halagang itinatakda ng local health board at ng local peace and order council), subsistence allowance (para lamang sa BHW na naglilingkod sa isolated na barangay health station), mga programa sa pagsasanay at career enrichment, civil service eligibility, libreng legal services, at priority access sa mga loan o pautang. Para maging eligible, kailangang rehistrado ang BHW sa local health board ng lungsod o munisipyo kung saan siya nagbibigay ng serbisyo.",
+      "keywords": ["benepisyo", "benefits", "hazard allowance", "subsistence allowance", "libreng legal services", "loan", "pautang"],
+      "sources": ["ra-7883", "ra-7883-irr"]
+    },
+    {
+      "id": "d1m4-bhwe",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What are the requirements for BHW Eligibility (BHWE) in the Civil Service?",
+      "question_fil": "Ano ang mga kondisyon para sa BHW Eligibility (BHWE) sa Civil Service?",
+      "answer_en": "Under CSC Resolution No. 99-2845, four conditions: accredited by the local health board, completed a minimum of two years of college leading to a degree, actively and voluntarily serving continuously and full time for five years or more as an accredited BHW, and having a satisfactory service record. The five years count only from the time the BHW was accredited, only if unpaid except for an honorarium, and not before 20 February 1995. A BHW on a job order or contract of service can still qualify. A four-year college degree is not required. Confirm with the CSC.",
+      "answer_fil": "Ayon sa CSC Resolution No. 99-2845, apat na kondisyon: akreditado ng local health board, nakatapos ng minimum na dalawang taon sa kolehiyo tungo sa isang degree, aktibo at boluntaryong naglilingkod nang tuloy-tuloy at full time sa loob ng limang taon o higit pa bilang accredited BHW, at may satisfactory service. Bibilangin lang ang limang taon mula nang maakreditado, kung walang bayad maliban sa honorarium, at hindi bago ang 20 Pebrero 1995. Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service. Hindi kinakailangan ang four-year college degree. Tiyakin sa CSC.",
+      "keywords": ["bhwe", "bhw eligibility", "civil service", "kondisyon", "requirements", "dalawang taon", "two years", "limang taon", "five years", "honorarium", "job order", "full time"],
+      "sources": ["ra-7883", "csc-res-99-2845"]
+    },
+    {
+      "id": "d1m4-board-duties",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What is the local health board responsible for in the accreditation process?",
+      "question_fil": "Ano ang responsibilidad ng local health board sa proseso ng akreditasyon?",
+      "answer_en": "Under Section 5 of the RA 7883 IRR, the local health board safeguards the registration and accreditation process, evaluates applications, records its decisions in a board resolution or meeting minutes, issues certificates of registration or accreditation, reviews and approves benefits that use local funds, recommends benefits and fund appropriation, provides an official copy of the BHW registry to the DOH, and monitors the service registered BHWs provide. It may also create a Registration and Accreditation Committee to handle applications.",
+      "answer_fil": "Ayon sa Section 5 ng RA 7883 IRR, pinangangalagaan ng local health board ang proseso ng rehistrasyon at akreditasyon, sinusuri ang mga aplikasyon, itinatala ang mga desisyon sa board resolution o minutes, naglalabas ng certificate of registration o accreditation, sinusuri at inaaprubahan ang mga benepisyong gagamit ng pondong lokal, nagrerekomenda ng benepisyo at pondo, nagbibigay ng opisyal na kopya ng BHW registry sa DOH, at binabantayan ang serbisyo ng mga rehistradong BHW. Maaari rin itong lumikha ng Registration and Accreditation Committee para sa mga aplikasyon.",
+      "keywords": ["local health board", "responsibilidad", "responsibilities", "board resolution", "registry", "committee", "irr"],
+      "sources": ["ra-7883"]
+    },
+    {
+      "id": "d1m4-follow-up",
+      "domain": "policy-rights",
+      "tier": "cited",
+      "question_en": "What should a BHW do if their accreditation or benefit is delayed?",
+      "question_fil": "Ano ang dapat gawin ng BHW kung naantala ang kanyang akreditasyon o benepisyo?",
+      "answer_en": "Follow up calmly with a specific question — such as the status of the application and whether anything else needs to be submitted — rather than a vague complaint. A clear, calm question is more likely to be answered, and staying silent about a delay often just lets a fixable problem drag on longer.",
+      "answer_fil": "Mag-follow-up nang kalmado at may tiyak na tanong — tulad ng status ng aplikasyon at kung may kailangan pang ibigay — sa halip na reklamong walang tiyak na hinihingi. Ang malinaw at kalmadong tanong ay mas malamang na masagot, at ang katahimikan sa harap ng pagkaantala ay madalas nagpapahaba lang ng problemang kaya sanang maayos.",
+      "keywords": ["follow-up", "pagkaantala", "delay", "kalmado", "calm", "aplikasyon", "application"],
+      "sources": ["ra-7883"]
+    }
+  ]
+}

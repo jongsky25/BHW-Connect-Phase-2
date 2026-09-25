@@ -1,0 +1,106 @@
+[
+  {
+    "id": "slide-teach-back",
+    "concept_ids": [
+      "m6.health-promotion"
+    ],
+    "layout": "process",
+    "heading_fil": "Isang mensahe, saka pakinggan ang balik",
+    "heading_en": "One message, then hear it back",
+    "display_fil": "Isang hakbang muna. “Para malaman kong malinaw ang paliwanag ko, paano mo ikukuwento ang plano?” Kapag iba ang pagkaunawa, magpaliwanag sa ibang paraan at mag-check muli.",
+    "display_en": "Give one step first. “To check that I explained clearly, how would you describe the plan?” If the meaning differs, explain another way and check again.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-family-planning",
+    "concept_ids": [
+      "m6.family-planning"
+    ],
+    "layout": "scene",
+    "heading_fil": "May tanong tungkol sa family planning",
+    "heading_en": "A family-planning question",
+    "display_fil": "Si Jo ay may takot tungkol sa family planning. Alamin ang concern; gamitin ang aprubadong impormasyon. Ikonekta sa pribadong counseling sa midwife o qualified provider; huwag pumili ng method para sa kanya.",
+    "display_en": "Jo is worried about family planning. Explore the concern and use approved information. Connect her to private counseling with the midwife or qualified provider; do not select her method.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-distress",
+    "concept_ids": [
+      "m6.distress"
+    ],
+    "layout": "scene",
+    "heading_fil": "Kapag mabigat ang nararamdaman",
+    "heading_en": "When someone feels overwhelmed",
+    "display_fil": "Si Ben ay ilang linggong malungkot. Makinig nang pribado at tumulong makaugnay sa health professional. Walang diagnosis o pangakong ililihim ang panganib. Sa agarang panganib, gamitin agad ang emergency referral protocol.",
+    "display_en": "Ben has felt low for weeks. Listen privately and connect him with a health professional. Do not diagnose or promise to conceal danger. Follow emergency referral procedures immediately if safety is at risk.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-smoking",
+    "concept_ids": [
+      "m6.smoking"
+    ],
+    "layout": "scene",
+    "heading_fil": "Pag-usapan ang paninigarilyo nang walang paninisi",
+    "heading_en": "Discuss smoking without blame",
+    "display_fil": "Humingi ng pahintulot kay Ramon na pag-usapan ang paninigarilyo. Pakinggan ang sariling layunin at hadlang. Magkasundo sa isang hakbang at health-center support; ang gamot ay para sa usapan sa provider.",
+    "display_en": "Ask Ramon’s permission to discuss smoking. Hear his goal and barriers. Agree on one step and health-center support; medication belongs in discussion with the provider.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m6.health-promotion",
+      "m6.family-planning",
+      "m6.distress",
+      "m6.smoking"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Concern → isang ligtas na hakbang → sariling paliwanag → ayusin at ulitin. Ang check ay sa paliwanag natin.",
+    "display_en": "Concern → one safe step → their own explanation → clarify and repeat. Check our explanation.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m6.health-promotion",
+      "m6.family-planning",
+      "m6.distress",
+      "m6.smoking"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Pakinggan ang concern at suriin ang linaw ng sariling paliwanag, habang nananatili sa saklaw ng BHW.",
+    "display_en": "Hear the concern and check the clarity of your explanation while staying within the BHW role.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Sa teach-back, iba ang planong ikinuwento ni Liza. Ano ang susunod?",
+      "prompt_en": "During teach-back, Liza describes a different plan. What next?",
+      "options": [
+        {
+          "fil": "Sabihing mali at tapusin ang usapan.",
+          "en": "Say it is wrong and end the conversation."
+        },
+        {
+          "fil": "Ibigay ang parehong paliwanag nang mas mabilis.",
+          "en": "Give the same explanation more quickly."
+        },
+        {
+          "fil": "Ipaliwanag sa ibang paraan at ipasabi muli ang hakbang.",
+          "en": "Explain another way and ask her to describe the step again."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ay inaayos ang paliwanag at muling sinusuri ito. Ang pagsisi ay maaaring magpatahimik sa kausap; ang mas mabilis na pag-uulit ay hindi tumutugon sa hindi malinaw.",
+      "feedback_en": "The third response repairs the explanation and checks again. Blame may silence the person; faster repetition does not address the misunderstanding."
+    }
+  }
+]

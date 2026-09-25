@@ -1,0 +1,323 @@
+{
+  "target": "Los Baños production",
+  "project_id": "ltzicxyefizxoqhfuuzc",
+  "published_on": "2026-09-25",
+  "status": "published",
+  "source_commit": "99daea6ea13ceb9a813d94f8909e26fe7aead004",
+  "program_id": "8dfe8b88-84ce-4e60-a353-93031eceda59",
+  "course_id": "44e8245d-a086-4186-bcf8-cf7c4ad6311a",
+  "module_ids": {
+    "01-difficult-situations": "1afee142-4b1b-4c28-bf6a-74e78e8458bb",
+    "02-quality-service": "4e18fe4d-4ad9-432f-8ee6-3aa0cc0dab5d",
+    "03-infection-control": "609cab9b-d846-47b1-8e93-fdc6d4a362de",
+    "04-first-aid": "474b97ce-300f-4014-a971-f8c9a69d567e",
+    "05-medicinal-plants": "b3b8ba6d-6e5c-4848-b8e0-5bfbcb8b8fc5",
+    "06-community-mobilization": "85ad1ece-0141-4ff8-a90a-09c559362be6",
+    "07-disaster-preparedness": "d746de81-72c6-445b-927a-12265005a1c9"
+  },
+  "lessons": {
+    "01-difficult-situations/prepare-a-response": {
+      "id": "5786c3b0-d533-4ef9-b479-75929c4fbc8b",
+      "revision": "82c238bf-2f91-402a-96b4-7c06e3ef0700",
+      "content_hash": "befa03d434edc49d4c26ed18d5a34cac84b51bdb25a9b6372322978be0954eaf"
+    },
+    "01-difficult-situations/listen-and-clarify": {
+      "id": "134f84f5-32f5-4c4d-b364-526f31aff4c0",
+      "revision": "c099ef69-c654-41f5-8f1d-1933e8e45b20",
+      "content_hash": "24a552d79d0c57ef7dfe35b705a0c26e75afef7c38481832406e4ad161b9e7ef"
+    },
+    "01-difficult-situations/agree-the-next-step": {
+      "id": "2b3c6af4-8772-4a88-a8aa-232c3d1526ac",
+      "revision": "4bbcb7be-4179-42bf-af9f-6d205e5cab08",
+      "content_hash": "5fe18575d82adae27a336e81d7fc681971993b88cb1479e240f47b2441882204"
+    },
+    "01-difficult-situations/report-and-reflect": {
+      "id": "4e1560f7-e138-4c19-95cb-aeb3e7da7a09",
+      "revision": "fbef34e3-78a9-44d8-945f-c1a395e0544f",
+      "content_hash": "48e9d459a95c1fafa06553f23148e5815586cc413e9d6a91149a65331f679553"
+    },
+    "02-quality-service/effective-safe-person-centered": {
+      "id": "41cd27fd-44a4-42e1-b699-e0ff8f948d52",
+      "revision": "f7b7cfb4-cbd9-4d46-b251-7d6186e1426a",
+      "content_hash": "2686e8facc33a37449a5d32f70b8c63e28fcf15614e00428117b8ca0a91128d6"
+    },
+    "02-quality-service/privacy-and-inclusion": {
+      "id": "8176bc9e-8d9a-47ef-960a-b6d32d4af882",
+      "revision": "6764d555-f8d0-44c7-970c-2d1822aa178f",
+      "content_hash": "62557a4f13b1f62ddfcd5929761f0e19895a46613350f4b0f25e82fddfaef7d7"
+    },
+    "02-quality-service/timely-integrated-service": {
+      "id": "5f5c6dbd-a931-44ef-88eb-0d1b68001a79",
+      "revision": "31758571-b060-44fc-8a37-36fac1933007",
+      "content_hash": "3b13964173d216642f2a524c517034f2563141798a74f7ef3879410dce20ce41"
+    },
+    "02-quality-service/seven-s-improvement": {
+      "id": "5bbb4068-17f5-4c50-82a5-a16ed11ca0ef",
+      "revision": "71ea25c4-a460-4f5d-86c4-ab1cae987231",
+      "content_hash": "ec6340df2e822cd7e8b10f3419405adb11a1a6f1274a9fa8e219f6df88e32cb4"
+    },
+    "03-infection-control/infection-routes": {
+      "id": "5e37c6e5-8b75-4f36-b537-bcef1e49626d",
+      "revision": "87a1f98b-81e0-4e91-b4a3-366789749137",
+      "content_hash": "5a4f3328f9b5ded6408d6e5549497e545e01b61aac472221e8cc862e03d7aee3"
+    },
+    "03-infection-control/infection-control-levels": {
+      "id": "4c9bd5c7-a048-4ba2-be6e-bfbc9e1c6f08",
+      "revision": "4e09f10d-789b-4b73-93b5-5979da1c5611",
+      "content_hash": "8dc215a3d15bd4664ae3f30a24c019b3e4a26cefdbf17bff8a412f5fcc31bb32"
+    },
+    "03-infection-control/hand-hygiene": {
+      "id": "b9f69e51-34bc-46ce-b2d3-821056a44f7b",
+      "revision": "67f10f40-f6b3-4442-9a6b-85ab510c0e04",
+      "content_hash": "16af6429a784070105bd89609025374b26c84171cd5d50c9f99fb9b9310a7b44"
+    },
+    "03-infection-control/cough-etiquette": {
+      "id": "9ce19da8-3304-420f-bbcb-0388e9805c52",
+      "revision": "cde4741a-2b4f-408d-9af5-30c711b59b34",
+      "content_hash": "491bfd575a50bbf75a2e36a844eebc4c080593fa87fa92a5a86ea2ad693f20c1"
+    },
+    "03-infection-control/food-water-sanitation": {
+      "id": "3cd68bf2-c766-4f53-8a6b-f5c58b4a49f7",
+      "revision": "33e006c1-e23a-42d8-b9ab-eb30aec17d47",
+      "content_hash": "9650370f31deb3438d7396c387ff45c0604c823d277d1817dfac6cf55ab4ee5b"
+    },
+    "03-infection-control/bhs-ipc-policies": {
+      "id": "f21a282f-2163-49ee-b557-64da47d55a26",
+      "revision": "3c5d0e81-3c27-4852-af29-720d18227200",
+      "content_hash": "ffdee0e0b9a30b1bf1b22b36628fa2fae9f381ada3d016257287fc8bf7cf2900"
+    },
+    "03-infection-control/ipc-monitor-and-improve": {
+      "id": "f87ef825-cd70-4b7a-903d-44a327ff08e7",
+      "revision": "b48fe080-768f-42ca-a585-69c1ec5bd007",
+      "content_hash": "1045ecc872b6cc58facecd1be24665f603cecffea5b0b13e46bbc9e36ddc5042"
+    },
+    "04-first-aid/scene-help-referral": {
+      "id": "9caf244e-4aaa-4c71-9e4b-188f6110e5f5",
+      "revision": "d2c39fe5-fe91-468a-bb86-dcef2e876ecd",
+      "content_hash": "12eabf067ee908ba91c9b0e26529657f04c78ebe424374fef980902f4878dbbf"
+    },
+    "04-first-aid/child-danger-signs": {
+      "id": "5eb1f7ad-3ffd-4c7b-b6ad-2fe81d2e88a2",
+      "revision": "a1ef8e69-aa4e-49ac-8de8-047edcd6442f",
+      "content_hash": "98324dd6310bfffd34400217d394ccb693db62d5b87ef9dd28c2ecdf25aab3ff"
+    },
+    "04-first-aid/child-cough-breathing": {
+      "id": "ba72357a-0509-4114-a211-f45dc6cb1974",
+      "revision": "8dd30ea9-93ef-4edc-9b40-50a43a8f5c5e",
+      "content_hash": "e7f2fa1f499ab1339698072fb5893d201480b67c556c4abec785ea910748f1a3"
+    },
+    "04-first-aid/diarrhea-dehydration": {
+      "id": "218f01c3-0464-4409-9b2a-d3e82adde6c2",
+      "revision": "03a8307e-f947-435f-bd04-0e02d13108dc",
+      "content_hash": "ab3060fc9c718141930d4a07bc9341e74f6b6171565fbe5c27a359ec0ed8cde3"
+    },
+    "04-first-aid/convulsion-response": {
+      "id": "4de0a933-ed62-48e9-bd35-3063dca15afb",
+      "revision": "3d15f534-0c72-4a48-b829-b87fb405d1d4",
+      "content_hash": "cc267f22113e6c97eff0bd14e9ffda3b29012df9013560f5300079cafef99365"
+    },
+    "04-first-aid/shock-loss-consciousness": {
+      "id": "64a843e0-313f-4197-9767-015b416186b6",
+      "revision": "ce1bc8d7-59e0-4d75-bd9c-3c0f211fed32",
+      "content_hash": "0518858673b2968e37d69d3eebb376d282dbc8d1fba70d5454ff1b584b6ff5b5"
+    },
+    "04-first-aid/cpr-bls-orientation": {
+      "id": "e12eba3b-f326-46a9-913d-5f2847460f19",
+      "revision": "d18a5b8a-c83f-43f6-9358-afcf2a9ca6d7",
+      "content_hash": "bbe4f6df7b96bdebfd3df81190e7ec7980fc23b2ee1e837441319f1917fb4456"
+    },
+    "04-first-aid/drowning-response": {
+      "id": "5aa9c411-ac0a-45fd-b316-8a79c0077298",
+      "revision": "7fae737c-15b0-448c-9456-b6566ba90caf",
+      "content_hash": "4c6b0d529c4add7879505970289eea6346917463675fe9732fb46503265e02f2"
+    },
+    "04-first-aid/poisoning-response": {
+      "id": "6362194d-03f7-4ff2-9955-e2c0c749c159",
+      "revision": "051e9597-a84a-43d6-b0f7-85b0e3d34505",
+      "content_hash": "3eac43ac077eb6a1d4dda51862b599703b4e30d56da3b7a7f7b72e3402982154"
+    },
+    "04-first-aid/wounds-bleeding": {
+      "id": "7a222dae-dcd2-4bf4-a5f8-dfa3ccbec7b6",
+      "revision": "05e410de-3674-460c-894c-181c14d17bdb",
+      "content_hash": "6ea2b790dabbd16ce130a7a9bc1f343b3a59610b821c6309ce62ce5367149a8e"
+    },
+    "04-first-aid/fracture-dislocation": {
+      "id": "0f860742-eaf8-42f0-8f49-97865a9415f2",
+      "revision": "bc8fd1c0-e70b-437f-a276-b608fd5e5e92",
+      "content_hash": "5a7d8b6ad59fae0b11d332e298e59113da81d8150217ea84c2bbbb1d66598f7d"
+    },
+    "04-first-aid/insect-bites-stings": {
+      "id": "7da03202-bf1c-46d0-90c6-6611efb3ab63",
+      "revision": "fcd67979-6209-46ea-abc9-a881a230a465",
+      "content_hash": "c80fe166c92863da65bedf07f2409ed09649b212a378131efea67e19d671066a"
+    },
+    "04-first-aid/snakebite-response": {
+      "id": "ed0ba07d-b579-48c8-a305-eafe4a0fb9c7",
+      "revision": "5cdd6ab2-8008-4ee2-b072-517186d06c29",
+      "content_hash": "e2705ed1c7c3044b2b3ae0f3fd65d54f3f8ec6e66268a699eb9bc7dbc558f29d"
+    },
+    "04-first-aid/burn-response": {
+      "id": "d7b3e75b-9bf6-4492-8fd8-5e91a54974b4",
+      "revision": "bbd8be38-41c5-4804-8db7-fcf6f8e2fa28",
+      "content_hash": "967dd22eea159d990ce19f96733a52758259f3c73a3c7ff5d52aa6421d873e9b"
+    },
+    "04-first-aid/choking-response": {
+      "id": "0eeeb550-6bc3-4a30-8271-b6d2c8e12592",
+      "revision": "84978f50-aad4-4a97-a315-73e42d874e80",
+      "content_hash": "ecf56dbd2638446858e2f82e5bf6026741474ede1fe1002c9b34c55b04c9828f"
+    },
+    "04-first-aid/chest-pain-referral": {
+      "id": "6fd475c2-ddbc-476f-89fd-3ef679f54936",
+      "revision": "956e07c7-93b2-453f-bdf1-c0ecb33b198a",
+      "content_hash": "9040d8d87efddc611abf5490539e28b0e4013ce09e669089b9715cfa6fc24b3a"
+    },
+    "04-first-aid/first-aid-kit": {
+      "id": "10d3b790-7e6b-402b-a69f-fcaddcd79bab",
+      "revision": "75e00cce-9852-4943-aebb-0aa954fb9b48",
+      "content_hash": "c079a7e3e61aa0b98bc8a625d5a04636bdb0e832d67b79474a43eef557d027a3"
+    },
+    "04-first-aid/incident-handover": {
+      "id": "adc3892e-6a3c-4c72-b1d3-554a1a6a28d7",
+      "revision": "0b7eb928-d705-49c3-94bf-69a3b1549d9b",
+      "content_hash": "c23ad221928e480657c7f86489c2146e89002b8a51b49ac9186ca50934ecfd09"
+    },
+    "05-medicinal-plants/plant-scope-identification": {
+      "id": "8ecf970a-ba76-465b-a4ef-6683bf37be27",
+      "revision": "f574f7ed-c516-450a-81fa-6d89ef3ba581",
+      "content_hash": "6a54f98427a87b009082473f52edf623a60d38deb8f4bc4595a5759201cd4b02"
+    },
+    "05-medicinal-plants/akapulko": {
+      "id": "9a556da0-0997-4142-bfa4-24518ee42831",
+      "revision": "c1a2e678-f4b2-4ab3-aa50-8e5dc5d21b04",
+      "content_hash": "c11b96590d4e6f52585d1cff2d50130e9ac0f8c67182a348cf0e84ec8ced0ae3"
+    },
+    "05-medicinal-plants/ampalaya": {
+      "id": "817db56a-5b09-4b61-9774-cf966b477317",
+      "revision": "ef730862-046d-4da3-811e-956bb9667a23",
+      "content_hash": "84b55854e3f86ef371028479d26304aeea726384b73cf8f2f27abf434f6caa8f"
+    },
+    "05-medicinal-plants/bawang": {
+      "id": "35882a2b-4384-403f-a973-391211bc4ae7",
+      "revision": "bc8a3195-650e-4652-8f4c-e3df1a6e93d9",
+      "content_hash": "75d6ea1bc44f7864adfc555aec9dbdd407ea4ad6141d7b70c57e9af59bb54e33"
+    },
+    "05-medicinal-plants/bayabas": {
+      "id": "7e20f53e-ce83-435d-adb6-177b0b4541b9",
+      "revision": "5577091c-214b-478c-bece-7879ba83170b",
+      "content_hash": "b29d87f45a5aa23a4904f42cd7871bd023766cc6a3dc4cae151c9b2b42bdebaf"
+    },
+    "05-medicinal-plants/lagundi": {
+      "id": "80b64cb3-e644-4ebc-8551-7e15cec58e3f",
+      "revision": "f98559bb-0a0f-427d-91df-6034c00c8a30",
+      "content_hash": "0c31d403f52244f803c391ab055530ce0f507041e72ef84aa845608bef73b6ef"
+    },
+    "05-medicinal-plants/niyog-niyogan": {
+      "id": "5ee75813-785b-4805-81c5-f4fdd3f105d0",
+      "revision": "07fcd346-e0af-40ed-9842-9edc589ed81e",
+      "content_hash": "d9e46b19abff1abc8a93905c8d035dcb9360da56f262af4b59841843d07c2e55"
+    },
+    "05-medicinal-plants/sambong": {
+      "id": "8220de79-8b6b-4720-9c2b-49e5c4dfb7e3",
+      "revision": "50e1ab9d-c3f5-4fb2-b8e5-ecf6d1ec0e02",
+      "content_hash": "590178faefd5e14492623c6cf5b3b8e3baa815a49f7ef5514c7f0ddfe2ee56c7"
+    },
+    "05-medicinal-plants/tsaang-gubat": {
+      "id": "1c5cf72a-21f1-4d34-8c79-3e427c273060",
+      "revision": "e00992b8-514e-44e7-8dc4-7652897c6d54",
+      "content_hash": "53ed1e242d295cb80beccee351727aa11bc1923e8d1e03f6058f1332ef0dd983"
+    },
+    "05-medicinal-plants/ulasimang-bato": {
+      "id": "ba3e648e-3f93-4646-9b37-da9eb93ce89b",
+      "revision": "6a0ec403-74e5-4075-8842-7658fa47182f",
+      "content_hash": "ade2bc871bdcce60145f6f2dd76b5f73151b0901f0e2325745f08994f7b3b61c"
+    },
+    "05-medicinal-plants/yerba-buena": {
+      "id": "9135d920-4843-450a-8d14-9ac4c0488987",
+      "revision": "a1efc7a2-56d6-430a-a30a-dc60566fd74f",
+      "content_hash": "f5f6a01def814fa838e5c36550d11afdeb0492d765f13fb71e3c7558dadb287e"
+    },
+    "05-medicinal-plants/plant-integrated-practice": {
+      "id": "b73d7759-8cc2-412a-9387-ae1967da3927",
+      "revision": "11d980af-3bed-45c4-9577-ee525ac8472a",
+      "content_hash": "4959a0c13fe56a493ff09682392caf22eb454851d55ab87c5d4b60c883245e7d"
+    },
+    "06-community-mobilization/community-issue": {
+      "id": "8e2c7d94-481f-46a4-90db-ccdfb2e1a204",
+      "revision": "c801df57-468a-4bb8-8a05-a65b1b887205",
+      "content_hash": "ebf24cba1a13521211d37710ae360e9f98a8763f3334de76cb4568eabf43aa6f"
+    },
+    "06-community-mobilization/invite-and-remove-barriers": {
+      "id": "2747a6f9-71b0-42ee-ac62-1ff6677351b4",
+      "revision": "d8346a37-907b-4344-88c9-0b52e03f3c24",
+      "content_hash": "cebd96b8809b0f7d1fca8ecd3277ed96f799dbe5a875ec5b9da2f19a27cdb6ae"
+    },
+    "06-community-mobilization/trust-and-core-group": {
+      "id": "e89452e5-e528-4fc5-a421-02f5ca0cb054",
+      "revision": "27217d48-bf25-4a43-8007-410bdb618554",
+      "content_hash": "670308e8862b513ab8b3fa450556cd4f27496496d95789a5adda8b9674029cd1"
+    },
+    "06-community-mobilization/community-action-followup": {
+      "id": "926a4de3-22d5-41b5-8f28-833ec38e766d",
+      "revision": "b0eb8d27-2d04-4787-bad9-1110a514f538",
+      "content_hash": "5f784fcc431b47c6014f2cbd80b0719c6199b06e71ef80c92bd647e741ed435f"
+    },
+    "07-disaster-preparedness/hazards-capacities": {
+      "id": "5b348b61-7764-4a55-8bdf-3ee1f6d760a8",
+      "revision": "e4d7f1b3-994b-483a-b581-38e69e35e697",
+      "content_hash": "73aabd2f8d01506a52962189e52e0f95d7b1b3333eecdf4c66e2ea38a03460cb"
+    },
+    "07-disaster-preparedness/evacuation-contacts": {
+      "id": "a8f900d2-aa42-4f72-8bf5-8f2365e012d3",
+      "revision": "5e5d3971-56ce-4d5c-aecb-d9f79c61017a",
+      "content_hash": "4da2eb774354ea4ce9da477486598b03d91f0b780f99c5a83d08fb140f8e01e1"
+    },
+    "07-disaster-preparedness/go-bag-e-balde": {
+      "id": "c61620b3-ffee-457f-b0b2-8d67cf0d56e9",
+      "revision": "b094274a-fb28-4805-ae4b-319b246bf98f",
+      "content_hash": "87e1cbc88c4aa3a7cc3eeb59248f897a5aef52ce1ba7c1b896452c8ef060dab9"
+    },
+    "07-disaster-preparedness/bhert-coordination": {
+      "id": "5b2e11fc-b163-4228-abc4-516e3e6e41d2",
+      "revision": "20585349-eafb-4a2e-9bae-7159e25d6c7e",
+      "content_hash": "92d0ff10a6f3411b3067b70d8ba84a5042a8383deb3ae525d58a1a2d81922df2"
+    },
+    "07-disaster-preparedness/essential-health-packages": {
+      "id": "405ea40a-2583-4875-b571-90ea3e6b435c",
+      "revision": "7857e607-e555-4334-9348-8b0fee503eb0",
+      "content_hash": "a98affb53959b0570766fb4ec1f851ec0efbc952e9feef118fd8c68be6c7d0b4"
+    },
+    "07-disaster-preparedness/disaster-tabletop": {
+      "id": "43b91a8e-fbc2-44d5-95f8-402da5f78291",
+      "revision": "503f709d-f1cd-40be-b03f-f79f91ad9d63",
+      "content_hash": "41af5b592007fc5bba517848493a2bc12e04c7cf84183f80d24cf92b9fe10950"
+    }
+  },
+  "assessment_question_ids": [
+    "e94cbe42-6471-473c-84b4-6f0290a13e55",
+    "87fa79f9-114d-4e41-b9b4-936719947180",
+    "8b665f4c-091f-46a1-b2d5-76ff3b035540",
+    "5fece020-9d15-489d-ab89-b08ff6e63811",
+    "baac0fa9-7965-46b9-80ad-c2b33554d470",
+    "88efbabb-f25d-43fc-be57-4a434ca976d0",
+    "e97bdf0b-585f-4321-bdeb-af60e629bbd5",
+    "586f5623-2889-4c5a-b42d-b6ed04504f61",
+    "c3fa0eef-8c60-4709-b7be-600bceea646e",
+    "e74a7779-6776-45d8-801d-4a8d2aad9ce6",
+    "a5710294-c871-4a0d-8141-e20623423944",
+    "4d98c242-842a-49da-a154-7209dc229c50",
+    "216594ca-cae0-4e42-b1a8-1306ccad71a6",
+    "e8f6ccea-2324-42e3-a212-375f07a05a33"
+  ],
+  "counts": {
+    "modules": 7,
+    "lessons": 55,
+    "questions": 14
+  },
+  "approvals": {
+    "owner": "User approved Chapters 2.1–2.7 and requested publication.",
+    "clinical": "User attested independent clinical sign-off for 2.3, 2.4 and 2.5; user attested local DRRM and clinical review for 2.7.",
+    "pilot_visual_qa": "User attested observed pilot and browser visual QA for 2.7. Reviewer names and artifacts were not supplied."
+  },
+  "method": "Published revisions derive from the frozen draft package with asset review_status set to approved in the release snapshot; authoring drafts remain unchanged."
+}
+

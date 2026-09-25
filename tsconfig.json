@@ -30,5 +30,16 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    // remotion/ is its own npm project (own tsconfig); its packages only
+    // exist under remotion/node_modules, which this project's install never
+    // creates. .agents/ is `npx skills add` output — Claude-facing SKILL.md
+    // docs and example .ts/.tsx assets referencing packages (maplibre-gl,
+    // cesium, @remotion/cli, ...) that aren't dependencies of this app
+    // either. Both broke `next build`'s own TypeScript check by matching
+    // the broad **/*.ts(x) include above.
+    "remotion",
+    ".agents"
+  ]
 }

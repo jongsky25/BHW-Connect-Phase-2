@@ -1,0 +1,208 @@
+{
+  "manifest": {
+    "lesson_key": "safety-prepare",
+    "position": 2,
+    "title_fil": "Paghahanda sa ligtas na gawain",
+    "title_en": "Prepare for safe work",
+    "objectives_fil": [
+      "Bumuo ng before-work checklist para sa station at field visit na may supplies, ruta, reporting contact at malinaw na dahilan kung kailan magpa-pause."
+    ],
+    "objectives_en": [
+      "Build a before-work checklist for station work and field visits covering supplies, route, reporting contact and explicit pause conditions."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "station-preparation",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ihanda ang kontrol at kagamitan; iulat ang kulang bago magsagawa ng hindi ligtas na gawain.",
+      "takeaway_en": "Prepare controls and equipment; report gaps before undertaking unsafe work.",
+      "check": null
+    },
+    {
+      "id": "field-preparation",
+      "concept_ids": [
+        "m8.accidents",
+        "m8.heat"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang ligtas na ruta at malinaw na reporting contact ay kasinghalaga ng listahan ng bibisitahin.",
+      "takeaway_en": "A safe route and clear reporting contact matter as much as the visit list.",
+      "check": null
+    },
+    {
+      "id": "combined-hazards",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.requirements"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kapag magkakasabay ang hazards, kailangang baguhin ang gawain at humingi ng tamang desisyon.",
+      "takeaway_en": "Combined hazards may require changing the work and obtaining the appropriate decision.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.accidents",
+        "m8.heat",
+        "m8.requirements"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+      "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.prepare",
+        "m8.practice",
+        "m8.accidents",
+        "m8.heat",
+        "m8.requirements"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+      "takeaway_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+      "check": {
+        "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
+        "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
+        "options": [
+          {
+            "fil": "Ituloy mag-isa para matapos agad.",
+            "en": "Continue alone to finish quickly."
+          },
+          {
+            "fil": "Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.",
+            "en": "Avoid the threat and arrange an alternative with the supervisor."
+          },
+          {
+            "fil": "Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala.",
+            "en": "Change the route without telling anyone to avoid disruption."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
+        "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.prepare",
+      "read_ids": [
+        "station-preparation",
+        "combined-hazards",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-station-preparation",
+        "slide-combined-hazards",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.practice",
+      "read_ids": [
+        "station-preparation",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-station-preparation",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.accidents",
+      "read_ids": [
+        "field-preparation",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-field-preparation",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.heat",
+      "read_ids": [
+        "field-preparation",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-field-preparation",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.requirements",
+      "read_ids": [
+        "combined-hazards",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-combined-hazards",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        21,
+        22,
+        23
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

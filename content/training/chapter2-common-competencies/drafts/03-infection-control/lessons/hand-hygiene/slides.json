@@ -1,0 +1,151 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.hand-method"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "May nakikitang dumi sa kamay ni Lea.\nMay sabon, tubig, towel at handrub.\nAling paraan ang pipiliin?",
+    "display_en": "Lea’s hands are visibly dirty.\nSoap, water, towels and handrub are available.\nWhich method should she choose?",
+    "check": null,
+    "narration_fil": "Maghahanda si BHW Lea sa simulated na pag-aalaga. May nakikitang dumi sa kamay niya. May sabon, tubig, single-use towel at alcohol-based handrub sa station. Hindi sapat ang mabilis na pagdaan sa tubig. Piliin muna ang angkop na paraan.",
+    "narration_en": "BHW Lea prepares for simulated care. Her hands are visibly dirty. Soap, water, single-use towels and alcohol-based handrub are available. A quick rinse is insufficient. First choose an appropriate method."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.hand-technique"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Basain at sabunin ang magkabilang kamay.\nPalad; likod ng kamay; pagitan ng daliri.\nLikod ng daliri; bawat hinlalaki.\nDulo ng daliri at kuko sa kabilang palad.",
+    "display_en": "Wet and soap both hands.\nPalms; hand backs; between fingers.\nFinger backs; each thumb.\nFingertips and nails against the opposite palm.",
+    "check": null,
+    "narration_fil": "Basain at sabunin ang kamay. Kuskusin ang palad sa palad, saka bawat likod ng kamay habang nakasalikop ang daliri. Kuskusin ang pagitan ng mga daliri at likod ng daliri laban sa kabilang palad. Paikuting kuskusin ang bawat hinlalaki. Ikuskos ang dulo ng daliri at kuko sa kabilang palad. Gawin sa magkabilang kamay.",
+    "narration_en": "Wet hands and apply soap. Rub palm against palm, then each hand’s back with fingers interlaced. Clean between fingers and rub their backs against the opposite palm. Rotate around each thumb. Rub fingertips and nails against the opposite palm. Work on both hands."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.hand-method"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "May nakikitang dumi sa kamay. Alin ang angkop?",
+      "prompt_en": "Hands are visibly dirty. Which option fits?",
+      "options": [
+        {
+          "fil": "Handrub lamang kahit may nakikitang dumi.",
+          "en": "Handrub alone despite the visible dirt."
+        },
+        {
+          "fil": "Tubig lamang na mabilis na ipapadaan sa kamay.",
+          "en": "A quick rinse with water alone."
+        },
+        {
+          "fil": "Sabon at tubig.",
+          "en": "Soap and water."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Kailangan ang sabon at tubig para sa nakikitang dumi. 2: Kulang ang sabon, pagkuskos sa lahat ng bahagi at pagpapatuyo. 3: Gawin ang buong paghuhugas at tamang pagpapatuyo.",
+      "feedback_en": "1: Visible dirt calls for soap and water. 2: Soap, all-surface rubbing and drying are missing. 3: Complete washing and appropriate drying."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.hand-method",
+      "c2.ipc.hand-technique"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Banlawan; single-use towel; isara ang gripo.\nBuong healthcare wash: 40–60 segundo.\nHandrub: lahat ng bahagi, hanggang matuyo.\nBuong handrub: 20–30 segundo; huwag punasan.",
+    "display_en": "Rinse; single-use towel; close the tap.\nComplete healthcare wash: 40–60 seconds.\nHandrub: all surfaces, until dry.\nComplete rub: 20–30 seconds; do not wipe off.",
+    "check": null,
+    "narration_fil": "Banlawan at patuyuin gamit ang single-use towel. Gamitin ang towel sa pagsara ng manwal na gripo. Sa healthcare demonstration, 40–60 segundo ang buong paghuhugas. Kung angkop ang handrub at walang nakikitang dumi, gumamit ng sapat para sa lahat ng bahagi. Kuskusin ang parehong mga bahagi hanggang matuyo: 20–30 segundo ang buong handrub. Huwag banlawan o punasan ang handrub.",
+    "narration_en": "Rinse and dry with a single-use towel. Use the towel to close a manual tap. The complete healthcare wash takes 40–60 seconds. When handrub is appropriate and hands are not visibly dirty, apply enough to cover all surfaces. Rub the same surfaces until dry: 20–30 seconds for the complete handrub. Do not rinse or wipe it off."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.hand-method",
+      "c2.ipc.hand-moments"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "May dumi / pagkatapos ng toilet: sabon at tubig.\nGloves ay hindi kapalit ng hand hygiene.\nMaglinis matapos alisin ang gloves.\nSundin ang dagdag na IPC instruction.",
+    "display_en": "Visible dirt / after toilet: soap and water.\nGloves do not replace hand hygiene.\nClean hands after removing gloves.\nFollow additional IPC instructions.",
+    "check": null,
+    "narration_fil": "Sabon at tubig kung may nakikitang dumi at pagkatapos gumamit ng palikuran. Hindi kapalit ng hand hygiene ang gloves; maglinis pagkatapos alisin ang mga ito. Sundin ang dagdag na instruction ng IPC staff kung may partikular na impeksyon. Hindi surgical hand preparation ang practice na ito. Huwag gawing kapalit ng buong procedure ang maikling bilang lamang.",
+    "narration_en": "Use soap and water for visible dirt and after using the toilet. Gloves do not replace hand hygiene; clean hands after removing them. Follow additional IPC instructions for specific infections. This practice is not surgical hand preparation. A brief count does not replace the complete procedure."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.hand-technique"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Natatapos ang handrub pero basa pa. Ano ang gagawin?",
+      "prompt_en": "Handrub has been applied but hands are still wet. What next?",
+      "options": [
+        {
+          "fil": "Kuskusin hanggang matuyo.",
+          "en": "Continue rubbing until dry."
+        },
+        {
+          "fil": "Punasan agad sa suot na damit para makabalik sa gawain.",
+          "en": "Wipe it on clothing immediately to return to work."
+        },
+        {
+          "fil": "Banlawan sa tubig kahit wala pang buong handrub procedure.",
+          "en": "Rinse with water before completing the handrub procedure."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi. 2: Hindi dapat punasan ang handrub at maaaring makontamina muli. 3: Hindi bahagi ng handrub ang pagbanlaw nito.",
+      "feedback_en": "1: Let hands dry while completing rubbing across all surfaces. 2: Handrub should not be wiped off; hands may be recontaminated. 3: Rinsing is not part of the handrub procedure."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.hand-moments"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Bago pasyente; bago malinis na gawain.\nPagkatapos ng body-fluid exposure risk.\nPagkatapos pasyente at paligid niya.\nSa Lunes: obserbasyon gamit ang checklist.",
+    "display_en": "Before patient contact; before clean tasks.\nAfter body-fluid exposure risk.\nAfter patient contact and their surroundings.\nOn Monday: observation with the checklist.",
+    "check": null,
+    "narration_fil": "Linisin ang kamay bago humawak sa pasyente, bago ang malinis na gawain, pagkatapos ng panganib sa body fluids, pagkatapos humawak sa pasyente, at pagkatapos humawak sa paligid niya. Sa Lunes, magpaobserba sa supervisor gamit ang checklist. Salita: hand hygiene — tamang paglilinis sa tamang pagkakataon.",
+    "narration_en": "Clean hands before touching a patient, before a clean task, after body-fluid exposure risk, after touching a patient and after touching their surroundings. On Monday, ask the supervisor to observe using the checklist. Word: hand hygiene — appropriate cleaning at the right time."
+  }
+]

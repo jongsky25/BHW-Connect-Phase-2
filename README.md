@@ -4,6 +4,14 @@ A web app for Barangay Health Workers (BHWs) in the Philippines. See `docs/` for
 the product vision, the increment-by-increment build contract, and the free-AI
 leverage plan — start there before touching code.
 
+Training content quality: `docs/content-assessment-2026-09.md` (multi-perspective
+review of the Day 1 package) and `docs/capacity-building-content-standard.md`
+(the proposed standard for all future training materials).
+
+Partner material the project has taken up for evaluation lives in
+`docs/source-material/`; `docs/cesr-module.md` is the current candidate module
+worked up from it (not scheduled — see `docs/delivery-plan.md` §7.2).
+
 ## Status
 
 **INC-14 — Flip-Chart Builder** (see `docs/delivery-plan.md` §7). INC-0
@@ -84,4 +92,5 @@ read by `src/i18n/request.ts`.
 - `docs/restore-drill-runbook.md` — backup/restore procedure and RPO 24h/RTO 4h drill log.
 - `docs/breach-playbook.md` — DPA breach response, NPC 72h notification timeline.
 - `/admin/flags` — feature flags, flippable without a deploy.
+- `/super-admin` — (rcventura only) linked test accounts for every role: switch between them from one login and reset their progress. Granted in `supabase/migrations/20260925000000_super_admin_personas.sql`.
 - `.github/workflows/backup.yml` / `retention-purge.yml` — scheduled backup and data-retention jobs.

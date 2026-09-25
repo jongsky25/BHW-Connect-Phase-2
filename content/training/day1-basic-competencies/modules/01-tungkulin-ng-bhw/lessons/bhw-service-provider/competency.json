@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Matukoy ang angkop na pagtulong, paggabay, at follow-up ayon sa pagsasanay at pangangasiwa.",
+      "observable_en": "Identify appropriate assistance, guidance, and follow-up within training and supervision.",
+      "not_yet_fil": "Hindi pa maipaliwanag ang sagot sa sitwasyon.",
+      "not_yet_en": "Cannot yet explain the response to the scenario.",
+      "levels": {
+        "kaya_na_fil": "Naipaliwanag nang wasto at walang gabay.",
+        "kaya_na_en": "Explains accurately without prompting.",
+        "kailangan_practice_fil": "Naipaliwanag sa tulong ng tanong.",
+        "kailangan_practice_en": "Explains with prompts.",
+        "hindi_pa_fil": "Kailangan pang ipakita at pagsanayan.",
+        "hindi_pa_en": "Needs further demonstration and practice."
+      }
+    }
+  ]
+}

@@ -21,6 +21,13 @@ describe("mapAdminRpcError", () => {
     expect(mapAdminRpcError("flag not found")).toBe("flagNotFoundError");
   });
 
+  it("maps the role placement trigger messages", () => {
+    expect(mapAdminRpcError("assessor catchment must be a region, province or city/municipality")).toBe(
+      "assessorLevelError",
+    );
+    expect(mapAdminRpcError("bhw must belong to a barangay")).toBe("bhwLevelError");
+  });
+
   it("falls back to a generic error for unknown or missing messages", () => {
     expect(mapAdminRpcError("something unexpected")).toBe("genericError");
     expect(mapAdminRpcError(undefined)).toBe("genericError");

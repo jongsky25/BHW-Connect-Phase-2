@@ -1,13 +1,13 @@
 import { redirect } from "next/navigation";
 import { CoursesConsole } from "@/components/elearning/courses-console";
 import type { Course } from "@/lib/elearning/types";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
+import { loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function AdminCoursesPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.elearning) {
     redirect("/admin/users");
@@ -15,16 +15,16 @@ export default async function AdminCoursesPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
 
-  const [{ data: courses }, { data: orgUnits }] = await Promise.all([
+  const [{ data: courses }, rootOrgUnit] = await Promise.all([
     supabase
       .from("courses")
       .select(
@@ -32,14 +32,15 @@ export default async function AdminCoursesPage() {
       )
       .order("created_at", { ascending: false })
       .returns<Course[]>(),
-    supabase.from("org_units").select("id, name, level").order("name"),
+    loadOrgUnit(supabase, appUser.org_unit_id),
   ]);
+
+  if (!rootOrgUnit) redirect("/login");
 
   return (
     <CoursesConsole
       initialCourses={courses ?? []}
-      orgUnits={orgUnits ?? []}
-      defaultOrgUnitId={appUser.org_unit_id}
+      rootOrgUnit={rootOrgUnit}
     />
   );
 }

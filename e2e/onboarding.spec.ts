@@ -63,13 +63,20 @@ test("a newly provisioned BHW sees the onboarding checklist and it disappears on
   await input.fill("test onboarding question");
   await Promise.all([page.waitForResponse((r) => r.url().includes("/api/chat")), input.press("Enter")]);
 
+  // /api/chat records the onboarding step in after(), i.e. once the
+  // response has already been sent, so wait for the write to land rather
+  // than reading once the instant the response arrives.
+  await expect
+    .poll(async () => (await fetchProgress(request, userToken, fresh.username)).onboarding_progress.chat, { timeout: 10_000 })
+    .toBe(true);
   progress = await fetchProgress(request, userToken, fresh.username);
-  expect(progress.onboarding_progress.chat).toBe(true);
   expect(progress.onboarding_completed_at).toBeNull();
 
   // Step 3: visit a KB category with real published content.
   await page.goto("/kb/mch");
-  await expect(page.getByRole("link", { name: /Back to categories|Bumalik sa mga kategorya/ })).toBeVisible();
+  await expect(
+    page.getByRole("navigation", { name: "Breadcrumb" }).getByRole("link", { name: /Knowledge Base/ }),
+  ).toBeVisible();
 
   progress = await fetchProgress(request, userToken, fresh.username);
   expect(progress.onboarding_progress.kb).toBe(true);

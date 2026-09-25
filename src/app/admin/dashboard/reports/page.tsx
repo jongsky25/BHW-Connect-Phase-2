@@ -4,9 +4,9 @@ import { AiFlywheelPanel } from "@/components/admin/dashboard/ai-flywheel-panel"
 import { ReportExportPanel } from "@/components/admin/dashboard/report-export-panel";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { KpiSummary } from "@/lib/reports/types";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function AdminDashboardReportsPage({
   searchParams,
@@ -17,7 +17,7 @@ export default async function AdminDashboardReportsPage({
   const { start, end } = timeRangeToDates(parseTimeRangeKey(range));
 
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
   if (!flags.reports_export) {
     redirect("/admin/dashboard");
   }

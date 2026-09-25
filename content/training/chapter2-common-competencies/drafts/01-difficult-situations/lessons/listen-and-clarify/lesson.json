@@ -1,0 +1,234 @@
+{
+  "manifest": {
+    "lesson_key": "listen-and-clarify",
+    "position": 1,
+    "title_fil": "Makinig at maglinaw nang mahinahon",
+    "title_en": "Listen and clarify calmly",
+    "objectives_fil": [
+      "Sa role-play ni Liza, magtanong nang bukas, ibuod ang alalahanin at humingi ng pagwawasto nang walang panghuhusga."
+    ],
+    "objectives_en": [
+      "In Liza’s role-play, ask an open question, summarize the concern and invite correction without judgment."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.behavior.calm",
+        "c2.behavior.setting"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Alamin ang alalahanin bago pumili ng tugon.",
+      "takeaway_en": "Find out the concern before choosing a response.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.behavior.calm",
+        "c2.behavior.setting",
+        "c2.behavior.listen"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Sa tatluhan, gumanap bilang Jun, Liza at tagamasid. Itanong ang alalahanin, makinig, ibuod at ipasuri ang pagkaintindi.",
+      "takeaway_en": "In triads, play Jun, Liza and observer. Ask about the concern, listen, summarize and check understanding.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.behavior.calm"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Inaanyayahan nitong magpaliwanag si Liza nang walang panghuhusga.",
+      "takeaway_en": "This invites Liza to explain without judgment.",
+      "check": {
+        "prompt_fil": "Malakas ang boses ni Liza. Aling sagot ni Jun ang makatutulong sa pagsisimula?",
+        "prompt_en": "Liza raises her voice. Which reply helps Jun begin?",
+        "options": [
+          {
+            "fil": "“Ganito po talaga. Maghintay na lang kayo.”",
+            "en": "“This is how it works. Just wait.”"
+          },
+          {
+            "fil": "“Huwag po kayong magalit sa harap nila.”",
+            "en": "“Please don’t get angry in front of them.”"
+          },
+          {
+            "fil": "“Pakinggan ko po ang alalahanin ninyo.”",
+            "en": "“I would like to hear your concern.”"
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Isinasara nito ang usapan bago malinawan ang problema. 2: Nakatuon ito sa pagpigil sa damdamin sa harap ng iba, hindi sa pakikinig. 3: Inaanyayahan nitong magpaliwanag si Liza nang walang panghuhusga.",
+        "feedback_en": "1: This closes the conversation before the problem is clear. 2: This focuses on controlling emotion in public rather than listening. 3: This invites Liza to explain without judgment."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.behavior.listen"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa usapan kay Liza, gumamit ng mahinahong boses at bukas na tanong; hinayaang matapos ang sagot; ibinuod ito at humingi ng pagwawasto.",
+      "takeaway_en": "In the conversation with Liza, uses a calm voice and open question, lets her finish, summarizes her reply and invites correction.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.behavior.setting"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Humingi ng tulong sa tamang tao kapag lampas sa saklaw.",
+      "takeaway_en": "Seek the appropriate support when a situation exceeds your role.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.behavior.listen"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ibinubuod nito ang narinig at humihingi ng pagwawasto.",
+      "takeaway_en": "This summarizes what was heard and invites correction.",
+      "check": {
+        "prompt_fil": "Sinabi ni Liza na hindi niya alam kung sino ang kakausapin. Ano ang susunod na sasabihin ni Jun?",
+        "prompt_en": "Liza says she does not know whom to approach. What should Jun say next?",
+        "options": [
+          {
+            "fil": "“Ayaw po ba ninyong bumalik dahil matagal?”",
+            "en": "“Do you refuse to return because it takes too long?”"
+          },
+          {
+            "fil": "“Hindi pa malinaw ang contact. Tama po ba?”",
+            "en": "“The contact is still unclear. Is that right?”"
+          },
+          {
+            "fil": "“Sigurado po akong matatapos ito ngayong araw.”",
+            "en": "“I am sure this will be finished today.”"
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Nagdadagdag ito ng motibo na hindi sinabi ni Liza. 2: Ibinubuod nito ang narinig at humihingi ng pagwawasto. 3: Nangangako ito ng resulta bago makumpirma ang magagawa ng staff.",
+        "feedback_en": "1: This adds a motive Liza did not state. 2: This summarizes what was heard and invites correction. 3: This promises an outcome before staff availability is confirmed."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.behavior.setting",
+        "c2.behavior.listen"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili ng isang hakbang at balikan ang naging resulta.",
+      "takeaway_en": "Choose one action and follow up on the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.behavior.calm",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.behavior.setting",
+      "read_ids": [
+        "scene",
+        "action",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.behavior.listen",
+      "read_ids": [
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        28,
+        29
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation",
+      "pdf_pages": [
+        22,
+        23,
+        26,
+        27
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/listen-and-clarify-deab3cd7ae99.svg",
+      "content_hash": "deab3cd7ae99ed0bfb77aa9eaa51e9f7e79b2d8c09ec2f5242456c4ce5c62fd6",
+      "alt_fil": "Tatlong kahon: Pakinggan, Linawin, Kumpirmahin.",
+      "alt_en": "Three boxes: Listen, Clarify, Confirm.",
+      "caption_fil": "Sa usapan kay Liza, gumamit ng mahinahong boses at bukas na tanong; hinayaang matapos ang sagot; ibinuod ito at humingi ng pagwawasto.",
+      "caption_en": "In the conversation with Liza, uses a calm voice and open question, lets her finish, summarizes her reply and invites correction.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

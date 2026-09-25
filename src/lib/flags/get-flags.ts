@@ -15,6 +15,7 @@ const DEFAULT_FLAGS: FeatureFlags = {
   announcements: false,
   surveys: false,
   elearning: false,
+  course_sessions: false,
   forum: false,
   flipcharts: false,
   offline_pwa: false,

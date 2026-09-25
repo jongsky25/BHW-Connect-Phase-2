@@ -1,0 +1,157 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.quality.privacy",
+      "c2.quality.equity"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Nahihirapang basahin ni Alex ang form.\nMay nagtatanong tungkol sa kondisyon.\nPaano tutulong nang hindi inilalantad?",
+    "display_en": "Alex finds the form difficult to read.\nSomeone asks about the condition.\nHow can you help without disclosure?",
+    "check": null,
+    "narration_fil": "Sa pila, sinabi ni Alex kay BHW Lorna na nahihirapan siyang basahin ang form. May taong nagtanong nang malakas kung ano ang kondisyon niya. Ayaw ni Alex na marinig ng iba ang sagot. Kailangan niya ng tulong nang hindi napapahiya.",
+    "narration_en": "In the queue, Alex tells BHW Lorna that the form is difficult to read. Someone loudly asks about Alex’s condition. Alex does not want others to hear. Help is needed without embarrassment."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.quality.privacy",
+      "c2.quality.equity",
+      "c2.quality.respect"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Huwag sagutin sa publiko ang kondisyon.\nMag-alok ng pribadong lugar.\nItanong ang gustong tulong.\nIgalang ang pagkakaiba.",
+    "display_en": "Do not disclose the condition publicly.\nOffer a private place.\nAsk what support is preferred.\nRespect differences.",
+    "check": null,
+    "narration_fil": "Huwag sagutin sa publiko ang tanong tungkol sa kondisyon. Mag-alok ng pribadong usapan at itanong kung anong tulong ang nais. Maaaring basahin nang mahinahon ang form sa napagkasunduang lugar. Igalang ang relihiyon, kultura, pagkakakilanlan at kalagayan sa buhay. Ang hadlang sa pagbasa ay dahilan upang tumulong, hindi upang manghusga.",
+    "narration_en": "Do not answer the public question about the condition. Offer a private conversation and ask what help is wanted. You can read the form calmly in an agreed setting. Respect religion, culture, identity and circumstances. Difficulty reading calls for support, not judgment."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.quality.privacy"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "May nagtanong sa pila tungkol sa kondisyon ni Alex. Ano ang tugon?",
+      "prompt_en": "Someone in the queue asks about Alex’s condition. What should Lorna do?",
+      "options": [
+        {
+          "fil": "Basahin ang form para marinig ng buong pila.",
+          "en": "Read the form so the whole queue can hear."
+        },
+        {
+          "fil": "Tanungin ang kapitbahay upang mas mabilis makakuha ng detalye.",
+          "en": "Ask a neighbor to obtain the details more quickly."
+        },
+        {
+          "fil": "Mag-alok ng pribadong usapan.",
+          "en": "Offer a private conversation."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Inilalantad nito ang impormasyong hindi kailangang marinig ng iba. 2: Dinadagdagan nito ang pagbabahagi nang hindi muna tinatanong si Alex. 3: Tinutugunan nito ang alalahanin nang hindi inilalantad ang kondisyon.",
+      "feedback_en": "1: This exposes information others do not need. 2: This involves others without first asking Alex. 3: This addresses the concern without disclosing the condition."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.quality.privacy",
+      "c2.quality.equity",
+      "c2.quality.respect"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "“Anong tulong ang gusto ninyo?”\n“Pakibasa po nang dahan-dahan.”\nKasama: itanong muna kung nais niya.",
+    "display_en": "“What support would you prefer?”\n“Please read it slowly.”\nAsk before involving a support person.",
+    "check": null,
+    "narration_fil": "Lorna: “Doon po ba tayo mag-usap? Anong tulong ang gusto ninyo sa form?” Alex: “Pakibasa po nang dahan-dahan.” Sinunod ni Lorna ang napagkasunduan. Hindi niya sinabi sa pila ang kondisyon ni Alex. Tinanong niya kung nais nitong may kasamang tumulong, bago mag-imbita ng iba.",
+    "narration_en": "Lorna: “Would you like to speak over there? What help would you prefer with the form?” Alex: “Please read it slowly.” Lorna follows the agreement. She does not disclose the condition to the queue. She asks whether Alex wants a support person before involving anyone else."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.quality.privacy",
+      "c2.quality.respect"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Awtorisadong paraan ng pagbabahagi.\nWalang form sa pampublikong chat.\nHindi tiyak: itanong sa supervisor.",
+    "display_en": "Use authorized information channels.\nNo forms in a public chat.\nUnsure: ask the supervisor.",
+    "check": null,
+    "narration_fil": "Gamitin ang awtorisadong paraan ng paghawak at pagbabahagi ng impormasyon. Huwag mangako ng ganap na lihim sa lahat ng sitwasyon. Kung hindi malinaw kung sino ang dapat makaalam, itanong sa supervisor. Huwag magpadala ng larawan ng form sa pampublikong chat.",
+    "narration_en": "Use the authorized process for handling and sharing information. Do not promise absolute secrecy in every situation. If unsure who needs the information, ask the supervisor. Do not send a photograph of the form to a public chat."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.quality.equity",
+      "c2.quality.respect"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Hiniling ni Alex na basahin nang dahan-dahan ang form. Ano ang angkop?",
+      "prompt_en": "Alex asks for the form to be read slowly. What is appropriate?",
+      "options": [
+        {
+          "fil": "Basahin sa napagkasunduang lugar.",
+          "en": "Read it in the agreed setting."
+        },
+        {
+          "fil": "Sabihing bumalik lamang kapag kaya nang basahin mag-isa.",
+          "en": "Ask Alex to return only when able to read it alone."
+        },
+        {
+          "fil": "Ipasa sa unang kakilala sa pila nang hindi muna nagtatanong.",
+          "en": "Hand it to the first acquaintance in the queue without asking."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tumutugon ito sa hiniling na tulong at pribadong usapan. 2: Gumagawa ito ng hadlang sa halip na magbigay ng tulong. 3: Hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form.",
+      "feedback_en": "1: This respects the requested support and privacy. 2: This creates a barrier instead of support. 3: Another person is not automatically authorized to see the form."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.quality.privacy",
+      "c2.quality.equity"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Naintindihan nang hindi napahiya.\nSa Lunes: magsanay gamit ang blankong form.\nPantay: tumutugon sa magkaibang kailangan.",
+    "display_en": "Understood without embarrassment.\nOn Monday: practise with a blank form.\nEquity responds to different needs.",
+    "check": null,
+    "narration_fil": "Naintindihan ni Alex ang form nang hindi isiniwalat sa pila ang personal na detalye. Sa Lunes, magsanay ng pribadong pag-aalok ng tulong gamit ang blangkong form. Salita: pantay na serbisyo — tumutugon sa magkaibang pangangailangan nang walang panghuhusga.",
+    "narration_en": "Alex understands the form without personal details being disclosed to the queue. On Monday, practise offering private support with a blank form. Word: equitable service — responding to different needs without judgment."
+  }
+]

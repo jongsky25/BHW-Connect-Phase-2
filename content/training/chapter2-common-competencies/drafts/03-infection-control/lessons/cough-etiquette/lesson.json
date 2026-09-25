@@ -1,0 +1,255 @@
+{
+  "manifest": {
+    "lesson_key": "cough-etiquette",
+    "position": 3,
+    "title_fil": "Ipakita ang wastong pag-ubo",
+    "title_en": "Demonstrate cough etiquette",
+    "objectives_fil": [
+      "Ipakita ang pagtakip ng ubo, tamang pagtatapon at hand hygiene, saka ipaliwanag ang pag-uulat sa BHS nang may respeto."
+    ],
+    "objectives_en": [
+      "Demonstrate cough covering, disposal and hand hygiene, then explain respectful symptom reporting at the BHS."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.ipc.cough-cover"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Paano tutulong nang may respeto?",
+      "takeaway_en": "How can you help respectfully?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.ipc.cough-cover",
+        "c2.ipc.cough-disposal",
+        "c2.ipc.cough-report"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gayahin ang tissue at elbow methods. Ipakita ang pagtatapon at hand hygiene; ipaliwanag ang pag-uulat sa staff.",
+      "takeaway_en": "Mime tissue and elbow methods. Show disposal and hand hygiene; explain reporting to staff.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.ipc.cough-cover"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Natatakpan ang ilong at bibig nang hindi ginagamit ang palad.",
+      "takeaway_en": "This covers nose and mouth without using hands.",
+      "check": {
+        "prompt_fil": "Walang tissue sa kamay ni Mang Lito. Saan dapat bumahing?",
+        "prompt_en": "Mang Lito has no tissue in hand. Where should he sneeze?",
+        "options": [
+          {
+            "fil": "Sa palad na ihahawak agad sa mesa.",
+            "en": "Into his hand, then immediately touch the desk."
+          },
+          {
+            "fil": "Sa loob ng nakabaluktot na siko.",
+            "en": "Into his bent elbow."
+          },
+          {
+            "fil": "Direkta sa kapareha upang makita ang demonstration.",
+            "en": "Directly toward the partner to show the demonstration."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring mailipat ng kamay ang secretions sa gamit. 2: Natatakpan ang ilong at bibig nang hindi ginagamit ang palad. 3: Dapat gayahin lamang ang kilos at hindi ilantad ang kapareha.",
+        "feedback_en": "1: Hands may transfer secretions to objects. 2: This covers nose and mouth without using hands. 3: Mime the action without exposing the partner."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.ipc.cough-cover",
+        "c2.ipc.cough-disposal",
+        "c2.ipc.cough-report"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Natatakpan ang ilong at bibig, naitatapon ang tissue, nalilinis ang kamay at naipapaliwanag ang magalang na pag-uulat.",
+      "takeaway_en": "Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.ipc.cough-disposal",
+        "c2.ipc.cough-report"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.ipc.cough-disposal"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Bahagi ng kumpletong sequence ang hand hygiene.",
+      "takeaway_en": "Hand hygiene is part of the complete sequence.",
+      "check": {
+        "prompt_fil": "Naitapon na ang tissue, pero nahawakan ang secretions. Ano ang kasunod?",
+        "prompt_en": "The tissue has been discarded, but the person touched secretions. What next?",
+        "options": [
+          {
+            "fil": "Humawak agad sa ibang tao dahil wala na ang tissue.",
+            "en": "Immediately touch someone else because the tissue is gone."
+          },
+          {
+            "fil": "Itago ang ginamit na tissue para ipasa sa susunod.",
+            "en": "Keep the used tissue to give to the next person."
+          },
+          {
+            "fil": "Linisin ang kamay.",
+            "en": "Perform hand hygiene."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring may kontaminasyon pa sa kamay. 2: Hindi dapat ibahagi o gamitin muli ang ginamit na tissue. 3: Bahagi ng kumpletong sequence ang hand hygiene.",
+        "feedback_en": "1: Hands may still be contaminated. 2: Used tissues should not be shared or reused. 3: Hand hygiene is part of the complete sequence."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.ipc.cough-cover",
+        "c2.ipc.cough-disposal",
+        "c2.ipc.cough-report"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.ipc.cough-cover",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "cdc-cough",
+        "cdc-core"
+      ]
+    },
+    {
+      "id": "c2.ipc.cough-disposal",
+      "read_ids": [
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "cdc-cough",
+        "cdc-core"
+      ]
+    },
+    {
+      "id": "c2.ipc.cough-report",
+      "read_ids": [
+        "action",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "cdc-cough",
+        "cdc-core"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        35
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        35,
+        36
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy teaching source, qualified by evidence review",
+      "pdf_pages": [
+        56
+      ]
+    },
+    {
+      "id": "cdc-cough",
+      "title": "CDC: Hygiene and respiratory viruses prevention (2025)",
+      "url": "https://www.cdc.gov/respiratory-viruses/prevention/hygiene.html"
+    },
+    {
+      "id": "cdc-core",
+      "title": "CDC: Core IPC practices in all healthcare settings (2024)",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/cough-etiquette-95835a4a0430.svg",
+      "content_hash": "95835a4a0430c7534e25b30e428d4033e5b16ae5388ada8decaaf216bf566027",
+      "alt_fil": "Tatlong kahon: Takpan, Itapon, Linisin.",
+      "alt_en": "Three boxes: Cover, Dispose, Clean hands.",
+      "caption_fil": "Natatakpan ang ilong at bibig, naitatapon ang tissue, nalilinis ang kamay at naipapaliwanag ang magalang na pag-uulat.",
+      "caption_en": "Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "concepts": [
+    {
+      "id": "c2.firstaid.scene.help.referral.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R38; F38,39,40; P71,72,73,74",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.scene.help.referral.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R38; F38,39,40; P71,72,73,74",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.scene.help.referral.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R38; F38,39,40; P71,72,73,74",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.child.danger.signs.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R39; F38,39,40; P75,76",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.child.danger.signs.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R39; F38,39,40; P75,76",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.child.danger.signs.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R39; F38,39,40; P75,76",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.child.cough.breathing.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R39; F38,39,40; P77,78",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.child.cough.breathing.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R39; F38,39,40; P77,78",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.child.cough.breathing.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R39; F38,39,40; P77,78",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.diarrhea.dehydration.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R40; F38,39,40; P79,80,81",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.diarrhea.dehydration.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R40; F38,39,40; P79,80,81",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.diarrhea.dehydration.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R40; F38,39,40; P79,80,81",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.convulsion.response.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R41; F38,39,40; P82",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.convulsion.response.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R41; F38,39,40; P82",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.convulsion.response.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R41; F38,39,40; P82",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.shock.loss.consciousness.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R41; F38,39,40; P83,84,85",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.shock.loss.consciousness.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R41; F38,39,40; P83,84,85",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.shock.loss.consciousness.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R41; F38,39,40; P83,84,85",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.cpr.bls.orientation.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R42; F38,39,40; P89,90,91,92",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.cpr.bls.orientation.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R42; F38,39,40; P89,90,91,92",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.cpr.bls.orientation.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R42; F38,39,40; P89,90,91,92",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.drowning.response.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.drowning.response.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.drowning.response.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.poisoning.response.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.poisoning.response.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.poisoning.response.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.wounds.bleeding.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.wounds.bleeding.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.wounds.bleeding.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R43; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.fracture.dislocation.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R45; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.fracture.dislocation.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R45; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.fracture.dislocation.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R45; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.insect.bites.stings.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.insect.bites.stings.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.insect.bites.stings.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.snakebite.response.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.snakebite.response.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.snakebite.response.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.burn.response.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.burn.response.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.burn.response.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R46; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.choking.response.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R47; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.choking.response.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R47; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.choking.response.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R47; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.chest.pain.referral.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R48; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.chest.pain.referral.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R48; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.chest.pain.referral.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R48; F38,39,40; P68",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.first.aid.kit.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R48; F38,39,40; P69",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.first.aid.kit.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R48; F38,39,40; P69",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.first.aid.kit.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R48; F38,39,40; P69",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.incident.handover.hazard",
+      "statement_en": "Recognize the specific hazard or urgent concern in this case.",
+      "source": "R38; F38,39,40; P74",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.incident.handover.action",
+      "statement_en": "Use the current evidence-based response within training and role boundaries.",
+      "source": "R38; F38,39,40; P74",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.firstaid.incident.handover.escalation",
+      "statement_en": "Activate help and communicate observations and actions.",
+      "source": "R38; F38,39,40; P74",
+      "redundant_with": null
+    }
+  ]
+}

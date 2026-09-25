@@ -1,0 +1,157 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.quality.effective",
+      "c2.quality.safe",
+      "c2.quality.person-centered"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kailangan ni Nena ang iskedyul.\nLuma ang mensahe; may harang sa daan.\nMabilis, pero dekalidad ba?",
+    "display_en": "Nena needs the schedule.\nOld message; blocked walkway.\nFast, but high quality?",
+    "check": null,
+    "narration_fil": "Sa kathang-isip na BHS, humingi si Nena ng impormasyon tungkol sa iskedyul. Sa unang usapan, binasa ni BHW Mila ang lumang mensahe. May kahong nakaharang sa daan. Hindi naitanong kung kailan makakabalik si Nena. Mabilis ang usapan, pero dekalidad ba ito?",
+    "narration_en": "At a fictional BHS, Nena asks about the schedule. In the first encounter, BHW Mila reads an old message. A box blocks the walkway. Nobody asks when Nena can return. The conversation is fast, but is it good service?"
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.quality.effective",
+      "c2.quality.safe",
+      "c2.quality.person-centered"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Epektibo: kumpirmadong gabay.\nLigtas: pansinin ang panganib.\nNakatuon sa tao: tanungin ang kailangan.",
+    "display_en": "Effective: confirmed guidance.\nSafe: notice potential harm.\nPeople-centered: ask about needs.",
+    "check": null,
+    "narration_fil": "Suriin ang tatlong katangian. Epektibo: kumpirmahin ang impormasyon sa kasalukuyang gabay o nakatalagang staff. Ligtas: pansinin ang maaaring makapinsala at humingi ng angkop na tulong. Nakatuon sa tao: itanong ang pangangailangan at kagustuhan. Hindi sapat na mabilis o magalang lamang ang serbisyo.",
+    "narration_en": "Check three dimensions. Effective: confirm information against current guidance or with the designated staff. Safe: notice potential harm and seek appropriate help. People-centered: ask about needs and preferences. Speed or courtesy alone does not make service high quality."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.quality.effective"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Lumang mensahe lamang ang hawak ni Mila. Ano ang gagawin niya?",
+      "prompt_en": "Mila has only an old message. What should she do?",
+      "options": [
+        {
+          "fil": "Kumpirmahin sa staff.",
+          "en": "Confirm with staff."
+        },
+        {
+          "fil": "Ipangako ang lumang oras upang matapos agad.",
+          "en": "Promise the old time to finish quickly."
+        },
+        {
+          "fil": "Sabihing tama ang mensahe dahil ipinasa ng kapitbahay.",
+          "en": "Treat it as correct because a neighbor forwarded it."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: May mapagkakatiwalaang batayan bago magbigay ng iskedyul. 2: Maaaring mali na ang oras; hindi sapat ang bilis. 3: Hindi kapalit ng kumpirmasyon ang pagkakapasa ng mensahe.",
+      "feedback_en": "1: This establishes a reliable basis before giving a schedule. 2: The time may be wrong; speed is not enough. 3: A forwarded message does not replace confirmation."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.quality.effective",
+      "c2.quality.safe",
+      "c2.quality.person-centered"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Kinumpirma ang iskedyul sa staff.\nIpinaalis ang kahon sa daanan.\nPinili ni Nena ang kayang oras.",
+    "display_en": "Staff confirm the schedule.\nThe walkway is cleared.\nNena chooses a workable time.",
+    "check": null,
+    "narration_fil": "Sa ikalawang usapan, kinumpirma ni Mila ang iskedyul sa staff. Hiniling niyang alisin ang kahon sa daanan. Itinanong niya kung anong oras ang kaya ni Nena. Ipinaliwanag niya ang mga kumpirmadong pagpipilian. Epektibo ang impormasyon, mas ligtas ang daan, at kasama si Nena sa pagpapasya.",
+    "narration_en": "In the second encounter, Mila confirms the schedule with staff. She asks for the box to be removed from the walkway. She asks what time Nena can manage and explains the confirmed options. Information is reliable, the path is safer and Nena participates in the decision."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.quality.safe"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Kumpirmahin; huwag manghula.\nIulat ang panganib sa tamang staff.\nHuwag mag-diagnose o baguhin ang payo.",
+    "display_en": "Confirm; do not guess.\nReport hazards to the appropriate staff.\nDo not diagnose or change clinical advice.",
+    "check": null,
+    "narration_fil": "Maaaring kumpirmahin ng BHW ang impormasyon at iulat ang panganib. Huwag magbigay ng sariling diagnosis o baguhin ang payo ng clinician. Kung hindi tiyak ang sagot, sabihin iyon at lumapit sa nakatalagang staff. Ang kagustuhan ng residente ay pakinggan habang sinusunod ang ligtas na saklaw ng serbisyo.",
+    "narration_en": "The BHW can confirm information and report hazards. Do not diagnose or change a clinician’s advice. If unsure, say so and ask the designated staff. Listen to the resident’s preferences while staying within safe service boundaries."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.quality.safe",
+      "c2.quality.person-centered"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Tama na ang iskedyul, pero may harang at hindi narinig si Nena. Ano pa ang kailangan?",
+      "prompt_en": "The schedule is correct, but the path is blocked and Nena was not heard. What is still needed?",
+      "options": [
+        {
+          "fil": "Ulitin nang mas mabilis ang iskedyul upang makaalis siya.",
+          "en": "Repeat the schedule faster so she can leave."
+        },
+        {
+          "fil": "Pansinin ang harang at pakinggan si Nena.",
+          "en": "Address the obstacle and listen to Nena."
+        },
+        {
+          "fil": "Sabihing maayos na ang lahat dahil tama ang impormasyon.",
+          "en": "Declare the service complete because the information is correct."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi nito naaayos ang panganib o pakikilahok. 2: Kailangan din ang kaligtasan at pagtugon sa pangangailangan. 3: Isang katangian lamang ang nasuri; kulang ang dalawa.",
+      "feedback_en": "1: This addresses neither the risk nor participation. 2: Safety and responsiveness to needs also matter. 3: Only one dimension has been checked; two remain."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.quality.effective",
+      "c2.quality.person-centered"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Suriin ang tatlong katangian.\nSa Lunes: ihambing ang dalawang pagbisita.\nEpektibo: naaayon sa tamang gabay.",
+    "display_en": "Check all three dimensions.\nOn Monday: compare two visits.\nEffective: based on appropriate guidance.",
+    "check": null,
+    "narration_fil": "Nakapili si Nena ng kumpirmadong oras. Sinuri ni Mila ang bawat katangian, hindi lamang ang bilis ng usapan. Sa Lunes, ihambing ang dalawang kathang-isip na pagbisita gamit ang tatlong tanong: Tama ba ang batayan? Ligtas ba? Naisaalang-alang ba ang tao? Salita: epektibo — naaayon sa tamang gabay at layunin.",
+    "narration_en": "Nena chooses a confirmed time. Mila checks every dimension rather than only speed. On Monday, compare two fictional visits using three questions: Is the basis reliable? Is it safe? Have we considered the person? Word: effective — consistent with appropriate guidance and purpose."
+  }
+]

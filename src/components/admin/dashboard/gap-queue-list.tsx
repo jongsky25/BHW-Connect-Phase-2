@@ -147,7 +147,7 @@ export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueR
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href={`/admin/kb/entries/new?fromUnmatched=${row.id}`}
-                      className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-canvas"
+                      className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-on-primary"
                     >
                       {t("createEntryAction")}
                     </Link>
@@ -192,7 +192,7 @@ export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueR
                           type="button"
                           disabled={draftingId === row.id || clearedText.trim().length === 0}
                           onClick={() => handleDraft(row.id)}
-                          className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-canvas disabled:opacity-60"
+                          className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-on-primary disabled:opacity-60"
                         >
                           {draftingId === row.id ? t("aiDrafting") : t("aiSendAction")}
                         </button>

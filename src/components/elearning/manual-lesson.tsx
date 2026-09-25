@@ -1,0 +1,32 @@
+"use client";
+
+import {useRouter} from 'next/navigation';
+import {ReferenceLessons, type ReferenceData} from './reference-lessons';
+import type {CourseModule,LessonModality} from '@/lib/elearning/types';
+import type {LessonNarration} from '@/lib/elearning/reference-narration';
+import {createClient} from '@/lib/supabase/client';
+
+export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,readOnly,lessonNumber,lessonCount,narration,nextLessonHref,initialMode}:{
+  data:ReferenceData; modules:CourseModule[]; lessonId:string; baseHref:string; locale:string; readOnly:boolean;
+  lessonNumber:number; lessonCount:number; narration?:LessonNarration; nextLessonHref?:string; initialMode?:LessonModality; returnHref?:string;
+}) {
+  const router=useRouter();
+  return <ReferenceLessons key={lessonId} {...data} modules={modules} initialLessonId={lessonId}
+    lessonBaseHref={baseHref} returnHref={returnHref} locale={locale} readOnly={readOnly} lessonNumber={lessonNumber} lessonCount={lessonCount} initialMode={initialMode}
+    nextLessonHref={nextLessonHref}
+    narration={narration?{[lessonId]:narration}:undefined}
+    onResume={async value=>{
+      if(readOnly)return;
+      const {error}=await createClient().rpc('rpc_course_lesson_resume',{
+        p_lesson_id:value.lesson_id,p_revision_id:value.revision_id,p_modality:value.modality,
+        p_language:value.language,p_position_key:value.position_key,p_concept_id:value.concept_id,
+      });
+      if(error)throw error;
+    }}
+    onComplete={async lesson=>{
+      if(readOnly)return;
+      const {error}=await createClient().rpc('rpc_course_lesson_complete',{p_lesson_id:lesson.id,p_revision_id:lesson.revision.id});
+      if(error)throw error;
+      router.refresh();
+    }}/>
+}

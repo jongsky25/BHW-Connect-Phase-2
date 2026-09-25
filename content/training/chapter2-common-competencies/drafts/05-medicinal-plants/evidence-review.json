@@ -1,0 +1,208 @@
+{
+  "status": "author-source-check-complete; independent clinical and botanical review pending",
+  "checked_on": "2026-09-25",
+  "independent_clinical_reviewer": null,
+  "clinical_signoff": null,
+  "publication_allowed": false,
+  "sources": [
+    {
+      "id": "pitahc-directory",
+      "title": "PITAHC Directory of Herbs (online, 2026): ten named entries despite “9 herbs” page count",
+      "url": "https://pitahc.gov.ph/herbs-directory/",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary national medicinal-plant directory or WHO guidance; no local product registration inferred"
+    },
+    {
+      "id": "who-traditional",
+      "title": "WHO Traditional Medicine Q&A (quality, evidence and safety)",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/traditional-medicine",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary national medicinal-plant directory or WHO guidance; no local product registration inferred"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "plant-identity-scope",
+      "lessons": [
+        "plant-scope-identification",
+        "plant-integrated-practice"
+      ],
+      "source_issue": "R48–51 and P6–16 describe ten plants and detailed recipes, while current identity, role and product status cannot be inferred from a common name.",
+      "decision": "Use botanical names and reference-card matching; treat listed use as a consultation topic. Exclude practical identification from a drawing, dosing, ingestion and unsupervised preparation.",
+      "sources": [
+        "pitahc-directory",
+        "who-traditional"
+      ],
+      "remaining": "Qualified botanical/clinical reviewer and local health center must confirm specimens, parts, approved products and authorized training."
+    },
+    {
+      "id": "plant-metabolic",
+      "lessons": [
+        "ampalaya",
+        "bawang",
+        "ulasimang-bato"
+      ],
+      "source_issue": "Legacy text can be read as permission to replace diabetes, cholesterol or gout treatment with plant food or decoctions.",
+      "decision": "Identify listed leaf/bulb/top and the source-associated topic; never stop or modify prescribed treatment. Return management to the supervising clinician.",
+      "sources": [
+        "pitahc-directory",
+        "who-traditional"
+      ],
+      "remaining": "Check current local protocols, interactions, contraindications and product registration."
+    },
+    {
+      "id": "plant-skin",
+      "lessons": [
+        "akapulko",
+        "bayabas"
+      ],
+      "source_issue": "A local plant name and old topical recipe may be misapplied to a different plant or an infected wound.",
+      "decision": "Teach reference identity and part only; do not prescribe topical preparation. Escalate worsening skin disease or signs of wound infection.",
+      "sources": [
+        "pitahc-directory",
+        "who-traditional"
+      ],
+      "remaining": "Qualified review of diagnosis boundaries, skin/wound products, adverse reactions and local referral."
+    },
+    {
+      "id": "plant-cough-pain",
+      "lessons": [
+        "lagundi",
+        "tsaang-gubat",
+        "yerba-buena"
+      ],
+      "source_issue": "Cough, abdominal pain and toothache may need assessment; legacy recipes and age tables are not a blanket BHW dosing protocol.",
+      "decision": "Link the source-associated plant and part to the symptom topic while identifying urgent or persistent concerns for clinical or dental assessment. Omit numeric recipes.",
+      "sources": [
+        "pitahc-directory",
+        "who-traditional"
+      ],
+      "remaining": "Confirm current product labels, contraindications, pediatric boundaries and local clinical guidance."
+    },
+    {
+      "id": "plant-worm-kidney",
+      "lessons": [
+        "niyog-niyogan",
+        "sambong"
+      ],
+      "source_issue": "Seed counts and decoction recipes could delay safe deworming or assessment of urinary pain and low urine output.",
+      "decision": "Teach part and source-associated topic, but refer suspected worms and concerning urinary symptoms for diagnosis and treatment. Do not give seeds or promise stone resolution.",
+      "sources": [
+        "pitahc-directory",
+        "who-traditional"
+      ],
+      "remaining": "Qualified review of deworming, urologic referral, plant toxicity and authorized preparations."
+    }
+  ],
+  "directory_count_discrepancy": "The PITAHC Directory of Herbs page says “9 herbs” but contains ten named plant sections. The ten source-manual lessons are retained; current official list status requires owner/local confirmation.",
+  "plant_crosswalk": [
+    {
+      "name": "Akapulko",
+      "botanical": "Senna alata",
+      "part_fil": "dahon",
+      "part_en": "leaves",
+      "source_associated_use": "ringworm or another fungal skin concern",
+      "r_page": 48,
+      "p_page": 7,
+      "lesson_key": "akapulko"
+    },
+    {
+      "name": "Ampalaya",
+      "botanical": "Momordica charantia",
+      "part_fil": "dahon",
+      "part_en": "leaves",
+      "source_associated_use": "blood-sugar management under clinical advice",
+      "r_page": 49,
+      "p_page": 8,
+      "lesson_key": "ampalaya"
+    },
+    {
+      "name": "Bawang",
+      "botanical": "Allium sativum",
+      "part_fil": "butil",
+      "part_en": "bulb",
+      "source_associated_use": "cholesterol management under clinical advice",
+      "r_page": 49,
+      "p_page": 9,
+      "lesson_key": "bawang"
+    },
+    {
+      "name": "Bayabas",
+      "botanical": "Psidium guajava",
+      "part_fil": "talbos/dahon",
+      "part_en": "leafy tops",
+      "source_associated_use": "skin uses listed in the legacy manual",
+      "r_page": 49,
+      "p_page": 10,
+      "lesson_key": "bayabas"
+    },
+    {
+      "name": "Lagundi",
+      "botanical": "Vitex negundo",
+      "part_fil": "dahon",
+      "part_en": "leaves",
+      "source_associated_use": "cough relief under clinical advice",
+      "r_page": 49,
+      "p_page": 11,
+      "lesson_key": "lagundi"
+    },
+    {
+      "name": "Niyog-niyogan",
+      "botanical": "Quisqualis indica",
+      "part_fil": "buto",
+      "part_en": "seeds",
+      "source_associated_use": "intestinal worms requiring confirmation",
+      "r_page": 50,
+      "p_page": 12,
+      "lesson_key": "niyog-niyogan"
+    },
+    {
+      "name": "Sambong",
+      "botanical": "Blumea balsamifera",
+      "part_fil": "dahon",
+      "part_en": "leaves",
+      "source_associated_use": "kidney-stone concern under clinical advice",
+      "r_page": 50,
+      "p_page": 13,
+      "lesson_key": "sambong"
+    },
+    {
+      "name": "Tsaang gubat",
+      "botanical": "Carmona retusa",
+      "part_fil": "dahon",
+      "part_en": "leaves",
+      "source_associated_use": "stomach pain requiring assessment",
+      "r_page": 51,
+      "p_page": 14,
+      "lesson_key": "tsaang-gubat"
+    },
+    {
+      "name": "Ulasimang bato / pansit-pansitan",
+      "botanical": "Peperomia pellucida",
+      "part_fil": "talbos",
+      "part_en": "leafy tops",
+      "source_associated_use": "uric-acid or gout concern under clinical advice",
+      "r_page": 51,
+      "p_page": 15,
+      "lesson_key": "ulasimang-bato"
+    },
+    {
+      "name": "Yerba buena",
+      "botanical": "Mentha cordifolia",
+      "part_fil": "dahon",
+      "part_en": "leaves",
+      "source_associated_use": "tooth pain requiring dental assessment",
+      "r_page": 51,
+      "p_page": 16,
+      "lesson_key": "yerba-buena"
+    }
+  ],
+  "excluded_legacy_claims": [
+    "Age-based plant doses and brewing recipes",
+    "Ingestion or topical administration during practice",
+    "Substituting plants for prescribed diabetes, cholesterol or gout care",
+    "Treatment of infected wounds without clinical assessment",
+    "Treating cough with breathing difficulty before urgent assessment",
+    "Assuming a common name alone proves botanical identity"
+  ]
+}

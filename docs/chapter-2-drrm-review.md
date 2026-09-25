@@ -1,0 +1,21 @@
+# Chapter 2.7 Disaster Preparedness and Response review package
+
+On 25 September 2026, the owner confirmed that local DRRM and clinical review, an observed pilot, and browser visual QA were completed and approved. This is recorded as the owner’s attestation; reviewer names, methods and artifacts were not supplied. Keyboard and print-layout QA and independent Filipino/English instructional review were not included in that confirmation.
+
+Owner approval recorded on 25 September 2026 for all six Chapter 2.7 authoring drafts. Local DRRM, clinical, language, observed pilot, browser visual QA and publication reviews remain separate.
+
+The owner approved Chapter 2.5 (“approve 2.5. do 2.7”). That approval is recorded in the source package and does not constitute medicinal-plant clinical or publication sign-off. Six bilingual Chapter 2.7 DRRM lessons are now authored, bringing the chapter to 55 of 55 planned lessons. Chapter 2 remains isolated from live delivery and unavailable for publication.
+
+The six lessons cover risk and capacity mapping; warnings, evacuation and contacts; a household go-bag/e-balde; BHW and response-team handover; medical/public health, nutrition, WASH and MHPSS service links; and an integrated tabletop with continuity, follow-up and responder support. Each follows the Chapter 1 teaching pattern: seven bilingual Read sections, seven separately authored Slides, two checks with per-option feedback, a diagram, learner cards and worksheet, a private facilitator guide, an observation rubric, job aid and transfer prompt. All examples use fictional residents and cannot substitute for a live barangay plan.
+
+## Timing and source decisions
+
+F38 assigns **two hours combined** to Community Mobilization and DRRM. The 60 minutes already proposed for 2.6 and six 10-minute DRRM introduction stations together reconcile to 120 minutes. Neither module has separately prescribed hours. The stations introduce the workflow; a facilitator must arrange additional supervised practice and any locally required drills before judging field competence.
+
+R54–57, F42–43 and P97–112 provide the source topic sequence. The [WHO Health EDRM fact sheets](https://www.who.int/publications/m/item/health-emergency-and-disaster-risk-management-%28edrm%29-fact-sheets) frame hazard, vulnerability, capacity and interlinked health needs. [PAGASA services](https://www.pagasa.dost.gov.ph/products-and-services) identify official warning products, while [DOH weather guidance](https://caro.doh.gov.ph/cordillera-health-situational-summary-report-for-the-combined-effects-of-recent-tropical-cyclones-and-the-southwest-monsoon-habagat-as-of-400-pm-of-july-31-2025/) emphasizes current advisories, go-bags and local contacts. A [DOH go-bag advisory](https://caraga.doh.gov.ph/ihanda-ang-laman-ng-go-bag-para-sa-mabilis-na-pag-likas/) supports household preparation. [WHO emergency IPC/WASH guidance](https://www.who.int/emergencies/operations/ipc-wash) and the [WHO PFA field guide](https://www.who.int/publications/i/item/9789241548205) inform service referral and humane, consent-based support.
+
+The legacy BHERT team makeup and pandemic-era mandates are not presented as current local authority. The old fixed 24-hour nutrition/latrine targets, unverified hotlines, invented routes, medicine or water-safety decisions, therapy and promises that PFA speeds recovery are excluded. The dated evidence review records the local DRRM and clinical approval attested by the owner. Operational warning channels, evacuation sites, contacts, roles and service pathways still need current confirmation when used in a specific barangay.
+
+## Verification and remaining review
+
+The chapter validator passes for 55 lessons, 385 Read sections, 385 Slides and 110 checks. The focused suite passes 99 tests across eight files, and ESLint passes for the changed JavaScript files. In-memory DOM simulation exercises the six-lesson preview, check progression and separation of learner material from private facilitator answers. The owner separately attested completion and approval of browser visual QA, local DRRM/clinical review and an observed pilot. Reviewer identities, PFA-specific coverage and artifacts were not supplied. Independent Filipino/English instructional review and keyboard/print-layout QA remain unrecorded. Chapter 2.7 remains an unpublished draft.

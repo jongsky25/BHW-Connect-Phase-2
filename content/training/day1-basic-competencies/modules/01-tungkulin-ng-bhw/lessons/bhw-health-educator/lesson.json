@@ -1,0 +1,222 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-health-educator",
+    "position": 1,
+    "title_fil": "Bilang Health Educator",
+    "title_en": "As a Health Educator",
+    "objectives_fil": [
+      "Matukoy ang angkop na gawaing pang-edukasyon para sa iba’t ibang sektor at yugto ng buhay."
+    ],
+    "objectives_en": [
+      "Identify education suited to different community groups and life stages."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "educator-scene",
+      "concept_ids": [
+        "m1.role.educator"
+      ],
+      "asset_ids": [
+        "A01"
+      ],
+      "takeaway_fil": "Ang pagtuturo ay pag-uusap na may layunin.",
+      "takeaway_en": "Teaching is a purposeful conversation.",
+      "check": null
+    },
+    {
+      "id": "body-environment",
+      "concept_ids": [
+        "m1.role.educator"
+      ],
+      "asset_ids": [
+        "A03"
+      ],
+      "takeaway_fil": "Magkaugnay ang kalusugan ng tao at ng kanyang paligid.",
+      "takeaway_en": "People’s health and their surroundings are connected.",
+      "check": null
+    },
+    {
+      "id": "life-stages",
+      "concept_ids": [
+        "m1.educator.lifestages"
+      ],
+      "asset_ids": [
+        "A03"
+      ],
+      "takeaway_fil": "Iangkop ang usapan tungkol sa sakit, aksidente, at panganib sa yugto ng buhay.",
+      "takeaway_en": "Adapt discussion of illness, accidents, and risks to each life stage.",
+      "check": null
+    },
+    {
+      "id": "all-sectors",
+      "concept_ids": [
+        "m1.educator.allsectors"
+      ],
+      "asset_ids": [
+        "A03"
+      ],
+      "takeaway_fil": "Impormasyon, kaalaman, at pagsasanay para sa bawat sektor.",
+      "takeaway_en": "Information, knowledge, and training for every community group.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m1.role.educator",
+        "m1.educator.lifestages",
+        "m1.educator.allsectors"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mabisang pagtuturo: tamang paksa, angkop na paraan, at pagkakataon para sa lahat.",
+      "takeaway_en": "Effective education connects the right topic and approach with opportunities for everyone.",
+      "check": {
+        "prompt_fil": "Puro magulang ang dumadalo. Paano mas maaabot ang kabataan?",
+        "prompt_en": "Only parents attend. How can you better reach young people?",
+        "options": [
+          {
+            "fil": "Iangkop ang oras at usapan sa tanong ng kabataan.",
+            "en": "Adapt the time and discussion to young people’s questions."
+          },
+          {
+            "fil": "Ulitin ang parehong usapan sa mga magulang lamang.",
+            "en": "Repeat the same discussion with parents only."
+          },
+          {
+            "fil": "Ipagpalagay na sapat nang alam nila.",
+            "en": "Assume they already know enough."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang pag-angkop sa kausap ay tumutulong maabot ang bawat sektor. Panatilihing aprubado at tama ang impormasyong ibinabahagi.",
+        "feedback_en": "Adapting to the audience helps reach each group. Keep the information accurate and approved."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m1.role.educator",
+      "read_ids": [
+        "educator-scene",
+        "body-environment",
+        "check"
+      ],
+      "slide_ids": [
+        "educator-scene-slide",
+        "body-environment-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.role.educator-d",
+        "m1.role.educator-r"
+      ]
+    },
+    {
+      "id": "m1.educator.lifestages",
+      "read_ids": [
+        "life-stages",
+        "check"
+      ],
+      "slide_ids": [
+        "life-stages-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.educator.lifestages-d",
+        "m1.educator.lifestages-r"
+      ]
+    },
+    {
+      "id": "m1.educator.allsectors",
+      "read_ids": [
+        "all-sectors",
+        "check"
+      ],
+      "slide_ids": [
+        "all-sectors-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.educator.allsectors-d",
+        "m1.educator.allsectors-r"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1.role.educator-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        9
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.role.educator-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.educator.lifestages-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        9
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.educator.lifestages-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.educator.allsectors-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        9
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.educator.allsectors-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "path": "/training/bhw-1-1/A01-83aeca62b560.svg",
+      "alt_fil": "Pagtuturo, pag-uusap sa komunidad, at paggabay sa residente.",
+      "alt_en": "Teaching, community discussion, and guiding a resident.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "approved",
+      "content_hash": "83aeca62b560e3cc3ad49b97cd921461deb996b174d315b7bc269dc9b027493e"
+    },
+    {
+      "id": "A03",
+      "path": "/training/bhw-1-1/A03-ed47f1a56c67.svg",
+      "alt_fil": "Iba’t ibang kausap at yugto ng buhay.",
+      "alt_en": "Different audiences and life stages.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "approved",
+      "content_hash": "ed47f1a56c671de7f5f1a795c5c0539fb1683960ca3026567cc4c5e6440dc60e"
+    }
+  ]
+}

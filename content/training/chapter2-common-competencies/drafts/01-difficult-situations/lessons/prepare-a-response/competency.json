@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ipinapakita ang apat na bahagi ng plano: layunin, pahintulot, bukas na tanong at paraan ng paghingi ng tulong. Walang hula sa motibo ni Rosa.",
+      "observable_en": "Shows four plan elements: purpose, permission, an open question and a support route, without guessing Rosa’s motive.",
+      "not_yet_fil": "Nagpaplanong tapusin ang form kahit wala pang pahintulot, o tinatawag si Rosa na ayaw sumunod.",
+      "not_yet_en": "Plans to finish the form before permission, or labels Rosa as unwilling to cooperate.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang apat na bahagi; inaangkop ang oras sa sagot ni Rosa nang walang paalala.",
+        "kaya_na_en": "Includes all four elements and adapts the time to Rosa’s reply without prompting.",
+        "kailangan_practice_fil": "May bukas na tanong at contact, pero kailangang paalalahanang humingi muna ng pahintulot.",
+        "kailangan_practice_en": "Has an open question and contact but needs a reminder to ask permission first.",
+        "hindi_pa_fil": "Nagpaplanong tapusin ang form kahit wala pang pahintulot, o tinatawag si Rosa na ayaw sumunod.",
+        "hindi_pa_en": "Plans to finish the form before permission, or labels Rosa as unwilling to cooperate."
+      }
+    }
+  ]
+}

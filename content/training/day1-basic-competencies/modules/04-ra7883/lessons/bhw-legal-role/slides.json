@@ -1,0 +1,50 @@
+[
+  {
+    "id": "slide-section-1",
+    "concept_ids": [
+      "m4.legal-basis"
+    ],
+    "layout": "scene",
+    "heading_fil": "Ang tanong na hindi maitanong ni BHW Josie",
+    "heading_en": "The question BHW Josie couldn't bring herself to ask",
+    "display_fil": "May tanong si Josie tungkol sa benepisyo.\nMagtanong nang malinaw; hindi kailangang manghula.",
+    "display_en": "Josie has a question about benefits.\nAsk clearly rather than guessing.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "Anim na buwan nang boluntaryo si BHW Josie. Narinig niya minsan sa ibang BHW ang tungkol sa \"hazard allowance\" — pero hindi niya alam kung siya rin ba ay dapat makatanggap nito, at nahihiya siyang magtanong. \"Boluntaryo lang naman ako, baka mukhang mataray ako kung magtatanong ako tungkol sa pera,\" naisip niya.\n\nAng totoo, hindi lang kabutihang-loob ang batayan ng gawain ni Josie — may batas ito, at kasama sa batas na iyon ang mga bagay na dapat niyang malaman, hindi dahil sa kasakiman, kundi dahil karapatan niya ang malaman ang mga ito.",
+    "narration_en": "BHW Josie has been volunteering for six months. She once heard another BHW mention a \"hazard allowance\" — but she didn't know whether she too was entitled to it, and she was too embarrassed to ask. \"I'm just a volunteer, maybe I'll look greedy if I ask about money,\" she thought.\n\nThe truth is, goodwill alone is not the basis of Josie's work — it has a legal basis, and that same law provides benefits she has every right to ask about — not out of greed, but because it's her right to know them."
+  },
+  {
+    "id": "slide-section-2",
+    "concept_ids": [
+      "m4.legal-basis"
+    ],
+    "layout": "decision",
+    "heading_fil": "Saan nanggagaling ang tungkulin ng BHW",
+    "heading_en": "Where the BHW's duty comes from",
+    "display_fil": "RA 7883: legal na batayan ng tungkulin at benepisyo.\nPagsasanay at akreditasyon sa itinakdang proseso.\nKatuwang sa primary health care ng komunidad.",
+    "display_en": "RA 7883: a legal basis for the role and benefits.\nTraining and accreditation through the required process.\nA partner in community primary health care.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Sino ang may papel sa akreditasyon ng BHW?",
+      "prompt_en": "Who has a role in BHW accreditation?",
+      "options": [
+        {
+          "fil": "Ang local health board sa itinakdang proseso.",
+          "en": "The local health board through the defined process."
+        },
+        {
+          "fil": "Ang BHW mismo lang.",
+          "en": "Only the BHW themself."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang local health board sa itinakdang proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "The local health board through the defined process. Explain why using the lesson situation."
+    },
+    "narration_fil": "Ang katayuan ng BHW bilang boluntaryong frontliner ay hindi basta-basta naitalaga — nasa batas ito. Ayon sa Republic Act 7883, ang BHW ay \"boluntaryong nagbibigay ng primary health care services sa komunidad\" matapos makatanggap ng tamang pagsasanay at akreditasyon mula sa local health board. Dito rin nakabatay ang paggamit ng Primary Health Care Approach bilang pangunahing estratehiya, at ang pagkakaroon ng barangay health station bilang sentro ng serbisyo.\n\nSa madaling salita: hindi lang \"boluntir\" sa pangkaraniwang kahulugan ang BHW — may legal na batayan ang kanilang tungkulin, at ito rin ang dahilan kung bakit may proseso ng akreditasyon bago simulan ang gawain.",
+    "narration_en": "A BHW's status as a voluntary frontliner is not simply assumed — it is written into law. Under Republic Act 7883, a BHW \"voluntarily renders primary health care services\" in the community after receiving proper training and accreditation from the local health board. This is also where the Primary Health Care Approach as the guiding strategy comes from, and why the barangay health station exists as a service hub.\n\nIn other words: a BHW is not a \"volunteer\" in the everyday sense only — their duty has a legal basis, and that is also why an accreditation process exists before the work can begin."
+  }
+]

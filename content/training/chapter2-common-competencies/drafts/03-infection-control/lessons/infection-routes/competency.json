@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Naipapaliwanag ang walong card, naihihiwalay ang exposure sa diagnosis at naiuugnay ang pag-iwas sa tamang daan.",
+      "observable_en": "Explains all eight cards, distinguishes exposure from diagnosis and links prevention to the route.",
+      "not_yet_fil": "Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.",
+      "not_yet_en": "Diagnoses from appearance or assumes every germ spreads in the same way.",
+      "levels": {
+        "kaya_na_fil": "Tama ang walong pag-uugnay; walang bansag o diagnosis at may angkop na kontrol nang walang paalala.",
+        "kaya_na_en": "Matches all eight cards appropriately, without labels or diagnosis, and suggests suitable controls without prompting.",
+        "kailangan_practice_fil": "Karamihan ay tama pero kailangang linawin ang contact at paglanghap; naitatama matapos ang feedback.",
+        "kailangan_practice_en": "Most matches are appropriate, but contact and inhalation need clarification; corrects them after feedback.",
+        "hindi_pa_fil": "Nagbibigay ng diagnosis mula sa hitsura o ipinapalagay na lahat ng mikrobyo ay dumaraan sa parehong paraan.",
+        "hindi_pa_en": "Diagnoses from appearance or assumes every germ spreads in the same way."
+      }
+    }
+  ]
+}

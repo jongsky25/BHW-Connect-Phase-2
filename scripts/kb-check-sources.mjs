@@ -6,7 +6,8 @@
 //
 //   npm run kb:check-sources
 
-import { loadContent } from "./lib/kb-content.mjs";
+import { listCorpora, loadContent } from "./lib/kb-content.mjs";
+import { listCourses, loadTrainingCourse } from "./lib/training-content.mjs";
 
 const USER_AGENT =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36";
@@ -31,32 +32,58 @@ async function check(url) {
 }
 
 async function main() {
-  const { sources, entries, articles } = loadContent();
-
+  // Every corpus is checked. A dead citation in one is a defect regardless of
+  // which body of content it belongs to, and a per-corpus flag would just mean
+  // the unchecked one rots quietly.
+  const pending = [];
   const used = new Set();
-  for (const entry of entries) for (const id of entry.sources) used.add(id);
-  for (const article of articles) for (const id of article.sources ?? []) used.add(id);
+  const declared = [];
+  for (const corpus of listCorpora()) {
+    const { sources, entries, articles } = loadContent(corpus);
+    for (const entry of entries) for (const id of entry.sources) used.add(`${corpus}/${id}`);
+    for (const article of articles) for (const id of article.sources ?? []) used.add(`${corpus}/${id}`);
+    for (const [id, source] of Object.entries(sources)) {
+      declared.push(`${corpus}/${id}`);
+      pending.push({ corpus, id, source });
+    }
+  }
 
-  const results = await Promise.all(
-    Object.entries(sources).map(async ([id, source]) => ({
-      id,
-      source,
-      status: await check(source.url),
-    })),
+  // content/training/<course>/sources.json is a separate content root from
+  // content/kb/ (see content/training/README.md) but the same "a dead
+  // citation is a defect" rule applies — checked here rather than skipped.
+  for (const course of listCourses()) {
+    const corpus = `training:${course}`;
+    const { sources, qaEntries } = loadTrainingCourse(course);
+    for (const entry of qaEntries) for (const id of entry.sources) used.add(`${corpus}/${id}`);
+    for (const [id, source] of Object.entries(sources)) {
+      declared.push(`${corpus}/${id}`);
+      pending.push({ corpus, id, source });
+    }
+  }
+
+  // The same URL cited by two corpora is fetched once.
+  const statusByUrl = new Map();
+  await Promise.all(
+    [...new Set(pending.map((p) => p.source.url))].map(async (url) => {
+      statusByUrl.set(url, await check(url));
+    }),
   );
+  const results = pending.map((p) => ({ ...p, status: statusByUrl.get(p.source.url) }));
 
   const failures = [];
   const manual = [];
-  for (const { id, source, status } of results.sort((a, b) => a.id.localeCompare(b.id))) {
+  for (const { corpus, id, source, status } of results.sort(
+    (a, b) => a.corpus.localeCompare(b.corpus) || a.id.localeCompare(b.id),
+  )) {
     const ok = status === 200;
     const blocked = source.wafBlocked && status === 403;
     const mark = ok ? "ok  " : blocked ? "waf " : "FAIL";
-    console.log(`  ${mark} ${String(status).padEnd(7)} ${id}  ${source.url}`);
-    if (blocked) manual.push(id);
-    else if (!ok) failures.push(`${id} -> ${status}`);
+    console.log(`  ${mark} ${String(status).padEnd(7)} ${corpus}/${id}  ${source.url}`);
+    if (blocked) manual.push(`${corpus}/${id}`);
+    else if (!ok) failures.push(`${corpus}/${id} -> ${status}`);
   }
 
-  const unused = Object.keys(sources).filter((id) => !used.has(id));
+  const unused = declared.filter((key) => !used.has(key));
   if (unused.length > 0) console.log(`\n  unused source entries: ${unused.join(", ")}`);
   if (manual.length > 0) {
     console.log(`\n  ${manual.length} source(s) blocked to datacenter IPs — open in a browser: ${manual.join(", ")}`);
@@ -66,7 +93,10 @@ async function main() {
     console.error(`\n  ${failures.length} broken source URL(s):\n    ${failures.join("\n    ")}\n`);
     process.exit(1);
   }
-  console.log(`\n  ${results.length} sources checked, ${used.size} of them cited by content\n`);
+  console.log(
+    `\n  ${results.length} sources across ${listCorpora().length} kb corpora and ${listCourses().length} training course(s) checked, ` +
+      `${used.size} of them cited by content\n`,
+  );
 }
 
 main().catch((error) => {

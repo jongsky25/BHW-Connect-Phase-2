@@ -1,0 +1,37 @@
+[
+  {
+    "id": "slide-section-5",
+    "concept_ids": [
+      "m4.accreditation-body",
+      "m4.board-duties",
+      "m4.registration-committee"
+    ],
+    "layout": "decision",
+    "heading_fil": "Kung sino ang bumubuo sa proseso ng akreditasyon",
+    "heading_en": "Who makes up the accreditation process",
+    "display_fil": "Local health board: pagsusuri at desisyon sa itinakdang proseso.\nRegistration/accreditation committee: tumutulong sa pagsusuri at registry.\nPanatilihin ang dokumento at alamin ang susunod na hakbang.",
+    "display_en": "Local health board: review and decisions through the required process.\nRegistration/accreditation committee: supports review and registry work.\nKeep documents and clarify the next step.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": {
+      "prompt_fil": "Ano ang dapat dalhin sa follow-up sa akreditasyon?",
+      "prompt_en": "What should you bring to an accreditation follow-up?",
+      "options": [
+        {
+          "fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang.",
+          "en": "Documents and specific questions about status or missing requirements."
+        },
+        {
+          "fil": "Pangakong hindi kailangan ang proseso.",
+          "en": "A promise that no process is needed."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Mga dokumento at tiyak na tanong tungkol sa status o kulang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "Documents and specific questions about status or missing requirements. Explain why using the lesson situation."
+    },
+    "narration_fil": "Hindi basta-basta pumapayag ang local health board sa akreditasyon — may hanay ng responsibilidad ito ayon sa Section 5 ng RA 7883 IRR: pangalagaan ang proseso ng rehistrasyon at akreditasyon, suriin ang mga aplikasyon, itala ang desisyon sa isang board resolution o minutes ng pulong, maglabas ng certificate of registration o accreditation, suriin at aprubahan ang bawat benepisyong gagamit ng pondong lokal, magrekomenda ng benepisyo at pondo, magbigay ng opisyal na kopya ng BHW registry sa DOH, at bantayan ang serbisyong ibinibigay ng mga rehistradong BHW.\n\nMaaari ring lumikha ang local health board ng isang BHW Registration and Accreditation Committee na susuri ng mga aplikasyon, kakapanayamin ang mga aplikante, magrerekomenda sa local health board, at mag-uupdate ng BHW registry.",
+    "narration_en": "The local health board does not simply grant accreditation on a whim — it carries a set of responsibilities under Section 5 of the RA 7883 IRR: safeguard the registration and accreditation process, evaluate applications, record decisions in a board resolution or meeting minutes, issue certificates of registration or accreditation, review and approve any benefit that would use local funds, recommend benefits and fund appropriation, provide an official copy of the BHW registry to the DOH, and monitor the service registered BHWs provide.\n\nThe local health board may also create a BHW Registration and Accreditation Committee to evaluate applications, interview applicants, recommend action to the board, and keep the BHW registry updated."
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "slide-section-1",
+    "concept_ids": [
+      "m2.enactment",
+      "m2.philhealth"
+    ],
+    "layout": "scene",
+    "heading_fil": "Ang tanong ni Mang Ernesto",
+    "heading_en": "Mang Ernesto's question",
+    "display_fil": "May tanong tungkol sa bayad sa konsulta.\nAlamin muna ang benepisyo at pasilidad bago mangako.",
+    "display_en": "A resident asks about consultation costs.\nCheck the benefit and facility before making promises.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": null,
+    "narration_fil": "\"Totoo bang libre na ang konsulta sa health center? Nabalitaan ko lang sa radyo.\" Iyan ang tanong ni Mang Ernesto kay BHW Beth isang umaga, habang naghihintay sa pila.\n\nAlam ni Beth na may bago ngang batas — narinig niya ito sa isang pagpupulong noong nakaraang buwan. Pero sa totoo lang, hindi niya kayang ipaliwanag nang maayos kung ano talaga ang binago nito. \"Titingnan ko po at babalikan ko kayo,\" ang sagot niya — sagot na, sa totoo lang, ay hindi niya gustong ibigay muli.",
+    "narration_en": "\"Is it true consultations at the health center are free now? I only heard it on the radio.\" That was Mang Ernesto's question to BHW Beth one morning, while waiting in line.\n\nBeth knew there was a new law — she had heard about it at a meeting the month before. But honestly, she could not explain clearly what it had actually changed. \"Let me check and I'll get back to you,\" she answered — an answer she honestly did not want to give again."
+  },
+  {
+    "id": "slide-section-2",
+    "concept_ids": [
+      "m2.enactment",
+      "m2.philhealth"
+    ],
+    "layout": "decision",
+    "heading_fil": "Ang layunin ng UHC Act",
+    "heading_en": "The goal of the UHC Act",
+    "display_fil": "RA 11223: access sa dekalidad na serbisyo at proteksiyon sa gastusin.\nAwtomatikong kasama ang mga Pilipino sa NHIP.\nMay tuntunin pa rin sa kontribusyon at paggamit ng benepisyo.",
+    "display_en": "RA 11223: access to quality services and financial protection.\nFilipinos are automatically included in the NHIP.\nContribution and benefit-access rules still apply.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Ano ang dapat ipaliwanag tungkol sa PhilHealth?",
+      "prompt_en": "What should you explain about PhilHealth?",
+      "options": [
+        {
+          "fil": "Kasama ang lahat ng Pilipino, ngunit dapat alamin ang sakop na benepisyo at proseso.",
+          "en": "All Filipinos are included, but the covered benefit and process must be checked."
+        },
+        {
+          "fil": "Libre ang lahat ng serbisyo sa anumang pasilidad.",
+          "en": "Every service is free at every facility."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Kasama ang lahat ng Pilipino, ngunit dapat alamin ang sakop na benepisyo at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "All Filipinos are included, but the covered benefit and process must be checked. Explain why using the lesson situation."
+    },
+    "narration_fil": "Layunin ng Universal Health Care Act of 2019 (RA 11223) ang mas madaling paglapit sa dekalidad na serbisyo at proteksiyon laban sa mabigat na gastusin. Awtomatikong kasama ang bawat Pilipino sa National Health Insurance Program. Hindi nito ibig sabihing libre ang bawat serbisyo sa bawat pasilidad. May mga tuntunin pa rin sa kontribusyon at paggamit ng partikular na benepisyo. Tulungan ang residente na tiyakin sa PhilHealth o RHU ang benepisyo, provider, at proseso ng pagpaparehistro.",
+    "narration_en": "The Universal Health Care Act of 2019 (RA 11223) aims to improve access to quality health services and protect people from financial hardship. It automatically includes every Filipino in the National Health Insurance Program. This does not mean every service at every facility is free. Contribution obligations and rules for accessing particular benefits still apply. Help the resident verify the relevant benefit, provider and registration process with PhilHealth or the RHU."
+  }
+]

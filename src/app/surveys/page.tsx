@@ -1,10 +1,10 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 type SurveyRow = {
   id: string;
@@ -16,7 +16,7 @@ type SurveyRow = {
 
 export default async function SurveysPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.surveys) {
     redirect("/home");
@@ -24,16 +24,17 @@ export default async function SurveysPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("surveys");
+  const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
 
   const { data: surveys } = await supabase
@@ -46,7 +47,8 @@ export default async function SurveysPage() {
   const rows = surveys ?? [];
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
         <p className="mt-1 text-ink/70">{t("intro")}</p>

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.identity",
+      "c2.plants.plant-scope-identification.boundary",
+      "c2.plants.plant-scope-identification.consult"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Magkahawig ang dalawang halamang tinatawag na “tsaang gubat”",
+    "display_en": "Two yard plants share the local name “tsaang gubat.” A resid",
+    "check": null,
+    "narration_fil": "Magkahawig ang dalawang halamang tinatawag na “tsaang gubat” sa isang bakuran. Nagtanong ang residente kung alin ang gagamitin.",
+    "narration_en": "Two yard plants share the local name “tsaang gubat.” A resident asks which one to use."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.identity",
+      "c2.plants.plant-scope-identification.boundary",
+      "c2.plants.plant-scope-identification.consult"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Kumpirmahin ang halaman.\nBasahin ang botanical name.\nTingnan ang bahagi.",
+    "display_en": "Confirm the plant.\nRead the botanical name.\nCheck the part.",
+    "check": null,
+    "narration_fil": "Hanapin ang botanical name at nakalistang bahagi sa current PITAHC card. Kung hindi tiyak ang identity, huwag maghanda o magbigay. Tanungin ang sintomas at gamot; iugnay sa clinician.",
+    "narration_en": "Find the botanical name and listed part in a current PITAHC card. If identity is uncertain, do not prepare or provide it. Ask about symptoms and medicines; consult a clinician."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.identity"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Alin ang unang ligtas na hakbang?",
+      "prompt_en": "What is the first safe step?",
+      "options": [
+        {
+          "fil": "Manghula mula sa pangalan o larawan.",
+          "en": "Guess from a name or picture."
+        },
+        {
+          "fil": "Kumpirmahin ang identity at source.",
+          "en": "Confirm identity and source."
+        },
+        {
+          "fil": "Ibigay agad ang lumang dose.",
+          "en": "Give the old dose immediately."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring magkamali sa halaman. 2: Magandang simula ang kumpirmadong reference. 3: Wala pang clinical at lokal na pahintulot.",
+      "feedback_en": "1: The plant may be misidentified. 2: A verified reference is the proper start. 3: Clinical and local authorization are missing."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.identity",
+      "c2.plants.plant-scope-identification.boundary",
+      "c2.plants.plant-scope-identification.consult"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Ihiwalay ang gamit sa reseta.\nItanong ang sintomas at gamot.",
+    "display_en": "Separate listed use from a prescription.\nAsk about symptoms and medicine.",
+    "check": null,
+    "narration_fil": "Binasa ng BHW ang kasalukuyang card at pinakinggan ang residente. Hanapin ang botanical name at nakalistang bahagi sa current PITAHC card. Kung hindi tiyak ang identity, huwag maghanda o magbigay. Tanungin ang sintomas at gamot; iugnay sa clinician.",
+    "narration_en": "The BHW reads the current card and listens to the resident. Find the botanical name and listed part in a current PITAHC card. If identity is uncertain, do not prepare or provide it. Ask about symptoms and medicines; consult a clinician."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.boundary",
+      "c2.plants.plant-scope-identification.consult"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Walang sariling dose.\nWalang tunay na pagtimpla.\nKumpirmahin ang trainer.",
+    "display_en": "No independent dose.\nNo real preparation.\nConfirm the trainer.",
+    "check": null,
+    "narration_fil": "Ang local name, larawan at “natural” na label ay hindi sapat na patunay ng identity, bisa o kaligtasan.",
+    "narration_en": "A local name, picture or “natural” label alone does not establish identity, efficacy or safety."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.boundary",
+      "c2.plants.plant-scope-identification.consult"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
+      "prompt_en": "What follows the card check?",
+      "options": [
+        {
+          "fil": "Baguhin ang gamot ng residente.",
+          "en": "Change the resident’s medicine."
+        },
+        {
+          "fil": "Itago ang ibang sintomas sa staff.",
+          "en": "Withhold other symptoms from staff."
+        },
+        {
+          "fil": "Kumonsulta sa clinician.",
+          "en": "Consult a clinician."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
+      "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.plants.plant-scope-identification.identity",
+      "c2.plants.plant-scope-identification.consult"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes: ipasuri ang card.\nItala ang kulang na impormasyon.",
+    "display_en": "On Monday: review the card.\nRecord missing information.",
+    "check": null,
+    "narration_fil": "Sa Lunes, dalhin ang card sa supervisor. Markahan ang dapat kumpirmahin bago gamitin sa tunay na konsultasyon.",
+    "narration_en": "On Monday, review the card with a supervisor. Mark what needs confirmation before a real consultation."
+  }
+]

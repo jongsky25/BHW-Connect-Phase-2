@@ -1,0 +1,222 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-records",
+    "position": 4,
+    "title_fil": "Mga talaan at impormasyon",
+    "title_en": "Records and Information",
+    "objectives_fil": [
+      "Maitugma ang apat na uri ng talaan sa gamit nito at maipaliwanag kung kanino ihahatid ang kaugnay na impormasyon."
+    ],
+    "objectives_en": [
+      "Match four record types to their purposes and explain who should receive relevant information."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "record-purpose",
+      "concept_ids": [
+        "m1.provider.records"
+      ],
+      "asset_ids": [
+        "A06"
+      ],
+      "takeaway_fil": "Halimbawang tala lamang · walang tunay na personal na datos.",
+      "takeaway_en": "Learning examples only · no real personal data.",
+      "check": null
+    },
+    {
+      "id": "household-profile",
+      "concept_ids": [
+        "m1.provider.documents"
+      ],
+      "asset_ids": [
+        "A06"
+      ],
+      "takeaway_fil": "Tanong na sinasagot: ano ang larawan ng kabahayan? Halimbawa lamang.",
+      "takeaway_en": "Question answered: what describes this household? Example only.",
+      "check": null
+    },
+    {
+      "id": "list-registry",
+      "concept_ids": [
+        "m1.provider.documents"
+      ],
+      "asset_ids": [
+        "A06"
+      ],
+      "takeaway_fil": "Sino ang nasa grupo? / Sino ang nabigyan ng serbisyo? Mga halimbawa lamang.",
+      "takeaway_en": "Who belongs to the group? / Who received a service? Examples only.",
+      "check": null
+    },
+    {
+      "id": "assigned-form",
+      "concept_ids": [
+        "m1.provider.documents",
+        "m1.competency"
+      ],
+      "asset_ids": [
+        "A06"
+      ],
+      "takeaway_fil": "Tamang impormasyon sa tamang tatanggap. Halimbawang form lamang.",
+      "takeaway_en": "Accurate information to the appropriate recipient. Sample form only.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m1.provider.records",
+        "m1.provider.documents",
+        "m1.competency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Piliin ang tamang tala, tiyakin ang impormasyon, at linawin ang tatanggap.",
+      "takeaway_en": "Choose the appropriate record, verify information, and clarify its recipient.",
+      "check": {
+        "prompt_fil": "Aling tala ang tumutugon sa “sino ang nabigyan na ng serbisyo”?",
+        "prompt_en": "Which record answers “who has received a service”?",
+        "options": [
+          {
+            "fil": "Household profile",
+            "en": "Household profile"
+          },
+          {
+            "fil": "Master list ng grupo",
+            "en": "Group master list"
+          },
+          {
+            "fil": "Registry",
+            "en": "Registry"
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "Registry ang tinutukoy ng manual. Ang master list ay paggrupo ng mga tao; ang household profile ay larawan ng kabahayan. Sundin ang pangalan at gamit ng aprubadong lokal na form.",
+        "feedback_en": "The manual describes a registry. A master list groups people; a household profile describes a household. Follow the names and purposes of approved local forms."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m1.provider.records",
+      "read_ids": [
+        "record-purpose",
+        "check"
+      ],
+      "slide_ids": [
+        "record-purpose-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.records-d",
+        "m1.provider.records-r"
+      ]
+    },
+    {
+      "id": "m1.provider.documents",
+      "read_ids": [
+        "household-profile",
+        "list-registry",
+        "assigned-form",
+        "check"
+      ],
+      "slide_ids": [
+        "household-profile-slide",
+        "list-registry-slide",
+        "assigned-form-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.provider.documents-d",
+        "m1.provider.documents-r",
+        "m1.provider.documents-f"
+      ]
+    },
+    {
+      "id": "m1.competency",
+      "read_ids": [
+        "assigned-form",
+        "check"
+      ],
+      "slide_ids": [
+        "assigned-form-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.competency-d",
+        "m1.competency-f"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1.provider.records-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.records-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.documents-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.provider.documents-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.provider.documents-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m1.competency-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        5
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.competency-f",
+      "title": "Facilitator Guide",
+      "pdf_pages": [
+        19,
+        20
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A06",
+      "path": "/training/bhw-1-1/A06-5b37233368b5.svg",
+      "alt_fil": "Mga halimbawang household profile, master list, registry, at form.",
+      "alt_en": "Example household profile, master list, registry, and assigned form.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "approved",
+      "content_hash": "5b37233368b572819d45bc852803a0dd16f444cb8a77e326fc387693d02c47f9"
+    }
+  ]
+}

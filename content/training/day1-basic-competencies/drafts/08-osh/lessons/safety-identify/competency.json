@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan.",
+      "observable_en": "Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example.",
+      "not_yet_fil": "Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.",
+      "not_yet_en": "Misses the hazard or gives only “be careful” as the response.",
+      "levels": {
+        "kaya_na_fil": "Natutukoy ang limang hazard group; sa napiling halimbawa, may posibleng pinsala, agarang kontrol at taong lalapitan. Nagagawa kahit hindi pinapaalalahanan.",
+        "kaya_na_en": "Identifies all five hazard groups and gives potential harm, immediate control and a reporting contact for the chosen example. Completes this without prompting.",
+        "kailangan_practice_fil": "Natutukoy ang panganib ngunit kulang ang contact o kontrol; ipapunan ang apat na field bago ulitin.",
+        "kailangan_practice_en": "Names the hazard but omits contact or control; complete all four fields and repeat.",
+        "hindi_pa_fil": "Hindi nakikita ang panganib o paalalang “mag-ingat” lang ang aksyon.",
+        "hindi_pa_en": "Misses the hazard or gives only “be careful” as the response."
+      }
+    }
+  ]
+}

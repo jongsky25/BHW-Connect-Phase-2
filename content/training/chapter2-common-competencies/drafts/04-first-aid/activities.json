@@ -1,0 +1,772 @@
+{
+  "activities": [
+    {
+      "id": "activity-scene-help-referral",
+      "lesson_key": "scene-help-referral",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 40,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/scene-help-referral/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
+        "en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          38
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          71,
+          72,
+          73,
+          74
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-child-danger-signs",
+      "lesson_key": "child-danger-signs",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 25,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/child-danger-signs/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
+        "en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          39
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          75,
+          76
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-child-cough-breathing",
+      "lesson_key": "child-cough-breathing",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 25,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/child-cough-breathing/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Ilarawan ang paghinga, itanong ang danger signs, at gamitin ang kumpirmadong daan sa agarang pagsusuri.",
+        "en": "Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          39
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          77,
+          78
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-diarrhea-dehydration",
+      "lesson_key": "diarrhea-dehydration",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 30,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/diarrhea-dehydration/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+        "en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          40
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          79,
+          80,
+          81
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-convulsion-response",
+      "lesson_key": "convulsion-response",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 20,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/convulsion-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Linisin ang paligid sa simulation, humingi ng tulong, sabihin ang oras at nakita, at tanggihan ang pagpigil at kutsara.",
+        "en": "Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          41
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          82
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-shock-loss-consciousness",
+      "lesson_key": "shock-loss-consciousness",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 20,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/shock-loss-consciousness/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.",
+        "en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          41
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          83,
+          84,
+          85
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-cpr-bls-orientation",
+      "lesson_key": "cpr-bls-orientation",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 40,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/cpr-bls-orientation/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.",
+        "en": "At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          42
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          89,
+          90,
+          91,
+          92
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-drowning-response",
+      "lesson_key": "drowning-response",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/drowning-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Piliin ang ligtas na tugon sa pampang, tawagin ang sanay na rescuer at ipaliwanag ang pangangailangan sa pagsusuri.",
+        "en": "Choose a safe shore response, activate trained rescue and state the need for medical assessment."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          43
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-poisoning-response",
+      "lesson_key": "poisoning-response",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 20,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/poisoning-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
+        "en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          43
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-wounds-bleeding",
+      "lesson_key": "wounds-bleeding",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 30,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/wounds-bleeding/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat.",
+        "en": "On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          43
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-fracture-dislocation",
+      "lesson_key": "fracture-dislocation",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 20,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/fracture-dislocation/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gumamit ng props para ipakita ang suporta sa posisyon, ipaliwanag ang panganib ng paggalaw at tumawag.",
+        "en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          45
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-insect-bites-stings",
+      "lesson_key": "insect-bites-stings",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/insect-bites-stings/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Ihiwalay ang lokal at agarang senyales, humingi ng tulong sa hirap sa paghinga at ilahad ang saklaw ng gamot.",
+        "en": "Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          46
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-snakebite-response",
+      "lesson_key": "snakebite-response",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/snakebite-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.",
+        "en": "Reject the cord and walking plan, keep the person still and call for transport."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          46
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-burn-response",
+      "lesson_key": "burn-response",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 20,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/burn-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa dry tabletop simulation, tukuyin ang pagpapalamig, hangganan sa damit at dahilan ng referral.",
+        "en": "In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          46
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-choking-response",
+      "lesson_key": "choking-response",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 40,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/choking-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
+        "en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          47
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-chest-pain-referral",
+      "lesson_key": "chest-pain-referral",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 20,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/chest-pain-referral/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.",
+        "en": "Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          48
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          68
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-first-aid-kit",
+      "lesson_key": "first-aid-kit",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/first-aid-kit/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
+        "en": "Complete every row of a simulated local kit inventory and name a replenishment owner."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          48
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          69
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-incident-handover",
+      "lesson_key": "incident-handover",
+      "kind": "first-aid-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 25,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/incident-handover/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.",
+        "en": "Deliver a timed, factual handover and invite the receiving worker to confirm the next action."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          38
+        ],
+        "F": [
+          38,
+          39,
+          40
+        ],
+        "P": [
+          74
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    }
+  ]
+}

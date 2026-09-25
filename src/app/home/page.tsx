@@ -1,34 +1,50 @@
-import { getTranslations } from "next-intl/server";
+import * as Sentry from "@sentry/nextjs";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
+import { MyTrainingCard } from "@/components/progress/my-training-card";
 import { SignOutButton } from "@/components/sign-out-button";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
+import { loadManualProgress } from "@/lib/progress/load-manual-progress";
+import type { ManualProgress } from "@/lib/progress/manual-progress";
 import { parseOnboardingProgress } from "@/lib/settings/types";
-import { getAppUser } from "@/lib/supabase/app-user";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
-  const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
 
   if (!user) {
     redirect("/login");
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
 
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("authHome");
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
+  const locale = (await getLocale()) === "en" ? "en" : "fil";
+
+  // "My training" is a convenience: if progress cannot load, the rest of
+  // home still renders and the manual itself remains reachable via Courses.
+  let training: ManualProgress[] = [];
+  if (flags.elearning && appUser.role === "bhw") {
+    try {
+      training = (await loadManualProgress(await createClient(), appUser.id)).filter((p) =>
+        p.chapters.some((ch) => ch.state !== "unavailable"),
+      );
+    } catch (error) {
+      Sentry.captureException(error);
+    }
+  }
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
+    <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-start justify-center gap-4 px-4 py-16 sm:px-6">
       <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
         {t("heading", { name: appUser.full_name })}
       </h1>
@@ -38,10 +54,14 @@ export default async function HomePage() {
         <OnboardingChecklist progress={parseOnboardingProgress(appUser.onboarding_progress)} />
       ) : null}
 
+      {training.map((progress) => (
+        <MyTrainingCard key={progress.programId} progress={progress} locale={locale} />
+      ))}
+
       <div className="flex flex-wrap gap-3">
         <Link
           href="/chat"
-          className="rounded-md bg-primary px-6 py-3 font-medium text-canvas"
+          className="rounded-md bg-primary px-6 py-3 font-medium text-on-primary"
         >
           {t("chatGuideCta")}
         </Link>
@@ -81,6 +101,14 @@ export default async function HomePage() {
             className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
           >
             {t("assessmentsCta")}
+          </Link>
+        ) : null}
+        {flags.elearning && flags.course_sessions && appUser.role === "assessor" ? (
+          <Link
+            href="/training-sessions"
+            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+          >
+            {t("trainingSessionsCta")}
           </Link>
         ) : null}
         {flags.forum ? (

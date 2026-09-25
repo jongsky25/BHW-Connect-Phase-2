@@ -1,0 +1,94 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-follow-up",
+    "position": 4,
+    "title_fil": "Maayos na follow-up",
+    "title_en": "Following up constructively",
+    "objectives_fil": [
+      "Maipaliwanag at mailapat sa isang sitwasyon: maayos na follow-up."
+    ],
+    "objectives_en": [
+      "Explain and apply in a situation: following up constructively."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "section-6",
+      "concept_ids": [
+        "m4.competency"
+      ],
+      "asset_ids": [
+        "practice-map"
+      ],
+      "takeaway_fil": "Ang pag-follow-up nang kalmado at may tiyak na tanong ay mas epektibo kaysa sa reklamong walang tiyak na hinihingi.",
+      "takeaway_en": "Following up calmly and with a specific question works better than a complaint with no specific ask.",
+      "check": null
+    },
+    {
+      "id": "section-7",
+      "concept_ids": [
+        "m4.competency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang katahimikan sa harap ng pagkaantala ay hindi pagiging magalang — madalas itong nagpapahaba lang ng problemang kaya sanang naayos nang maaga.",
+      "takeaway_en": "Staying silent in the face of a delay isn't politeness — it often just lets a problem drag on that could have been fixed much sooner.",
+      "check": {
+        "prompt_fil": "Ano ang maayos na follow-up?",
+        "prompt_en": "What is a constructive follow-up?",
+        "options": [
+          {
+            "fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang.",
+            "en": "Calmly ask about status, missing documents and the next step."
+          },
+          {
+            "fil": "Magalit agad bago alamin ang dahilan.",
+            "en": "Become angry before checking the reason."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Kalmadong itanong ang status, kulang na dokumento, at susunod na hakbang. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+        "feedback_en": "Calmly ask about status, missing documents and the next step. Explain why using the lesson situation."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m4.competency",
+      "read_ids": [
+        "section-6",
+        "section-7"
+      ],
+      "slide_ids": [
+        "slide-section-6",
+        "slide-section-7"
+      ],
+      "source_ids": [
+        "m4.competency-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m4.competency-source",
+      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "pdf_pages": [
+        23
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "practice-map",
+      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
+      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
+      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
+      "alt_en": "Three steps: understand, verify and practice.",
+      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
+      "caption_en": "Draft discussion guide; review required.",
+      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "review_status": "approved"
+    }
+  ]
+}

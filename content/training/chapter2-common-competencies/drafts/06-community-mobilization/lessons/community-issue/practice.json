@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-community-issue",
+  "objective_id": "community-issue.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Bansag ito; hindi ito napatunayan ng mga ulat.",
+          "en": "This is a label, not something established by the reports."
+        },
+        {
+          "fil": "Hindi pa naririnig ang kanilang pananaw.",
+          "en": "Their perspectives have not yet been heard."
+        },
+        {
+          "fil": "Ito ang tiyak na naiulat; kailangan pang linawin ang lawak at dahilan.",
+          "en": "This is the specific report; its extent and causes still need clarification."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Kasama ang apektado sa pagtukoy ng magagamit na solusyon.",
+          "en": "Affected people help identify a workable solution."
+        },
+        {
+          "fil": "Maaaring patuloy na hindi maabot ang walang cellphone.",
+          "en": "People without phones may still be excluded."
+        },
+        {
+          "fil": "Hindi kailangan ang personal na kondisyon para linawin ang daan ng balita.",
+          "en": "Personal conditions are unnecessary for clarifying update channels."
+        }
+      ]
+    }
+  ]
+}

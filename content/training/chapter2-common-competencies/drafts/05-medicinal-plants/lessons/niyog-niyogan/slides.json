@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.identity",
+      "c2.plants.niyog-niyogan.use",
+      "c2.plants.niyog-niyogan.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: May batang nangangati at pinaghihinalaang may bulate",
+    "display_en": "Case: A child is suspected of having worms",
+    "check": null,
+    "narration_fil": "May batang nangangati at pinaghihinalaang may bulate. Gustong pumitas ng buto ng Niyog-niyogan ang kapitbahay.",
+    "narration_en": "A child is suspected of having worms. A neighbor wants to pick Niyog-niyogan seeds."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.identity",
+      "c2.plants.niyog-niyogan.use",
+      "c2.plants.niyog-niyogan.boundary"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Niyog-niyogan\nQuisqualis indica\nBahagi: buto",
+    "display_en": "Niyog-niyogan\nQuisqualis indica\nPart: seeds",
+    "check": null,
+    "narration_fil": "Sa reference card, hanapin ang Quisqualis indica. Ang nakalistang bahagi ay buto; ang paksang gamit ay bulate sa bituka na kailangang kumpirmahin. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ipasuri ang bata sa health center para sa diagnosis at angkop na deworming plan.",
+    "narration_en": "Find Quisqualis indica on the reference card. The listed part is seeds; the use topic is intestinal worms requiring confirmation. State what is known and unknown. Ask about current medicine and symptoms. Refer the child to the health center for diagnosis and an appropriate deworming plan."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.identity"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Aling bahagi ng Niyog-niyogan ang nakalista sa card?",
+      "prompt_en": "Which Niyog-niyogan part is listed on the card?",
+      "options": [
+        {
+          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Niyog-niyogan.",
+          "en": "Any part of a yard plant even when its identity as Niyog-niyogan is unconfirmed."
+        },
+        {
+          "fil": "Buto ng kumpirmadong Quisqualis indica.",
+          "en": "Seeds of confirmed Quisqualis indica."
+        },
+        {
+          "fil": "Hindi kailangang malaman ang botanical name.",
+          "en": "The botanical name need not be checked."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
+      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.identity",
+      "c2.plants.niyog-niyogan.use",
+      "c2.plants.niyog-niyogan.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Paksa: bulate sa bituka na kailangang kumpirmahin\nSuriin ang sintomas.\nKumpirmahin ang card.",
+    "display_en": "Use topic: intestinal worms requiring confirmation\nAssess symptoms.\nConfirm the card.",
+    "check": null,
+    "narration_fil": "Itinuro ng BHW ang Niyog-niyogan at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ipasuri ang bata sa health center para sa diagnosis at angkop na deworming plan.",
+    "narration_en": "The BHW points to Niyog-niyogan and its botanical name on the card. The yard plant is not assumed to be identified. Refer the child to the health center for diagnosis and an appropriate deworming plan."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.use",
+      "c2.plants.niyog-niyogan.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
+    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "check": null,
+    "narration_fil": "Maaaring makapinsala ang maling halaman o dami ng buto. Huwag magbigay ng buto sa bata batay sa table sa lumang manual. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
+    "narration_en": "Wrong identity or seed amount can harm. Do not give seeds to a child from the old manual’s table. This lesson does not authorize preparation or dosing of an herbal remedy."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.use",
+      "c2.plants.niyog-niyogan.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Niyog-niyogan?",
+      "prompt_en": "What is the safe response in the Niyog-niyogan case?",
+      "options": [
+        {
+          "fil": "Ipalit agad sa niresetang gamot.",
+          "en": "Replace prescribed treatment now."
+        },
+        {
+          "fil": "Kumonsulta muna sa clinician.",
+          "en": "Consult a clinician first."
+        },
+        {
+          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+          "en": "Copy an old recipe without assessment."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.plants.niyog-niyogan.identity",
+      "c2.plants.niyog-niyogan.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes: ihambing ang Niyog-niyogan cards.\nIpakita ang referral.",
+    "display_en": "On Monday: compare Niyog-niyogan cards.\nShow the referral.",
+    "check": null,
+    "narration_fil": "Sa Lunes, ihambing ang dalawang card na may pangalang Niyog-niyogan. Markahan ang botanical name, buto, nakalistang gamit at referral. Ipasuri ang card sa supervisor.",
+    "narration_en": "On Monday, compare two cards labelled Niyog-niyogan. Mark the botanical name, seeds, listed use and referral. Review the card with a supervisor."
+  }
+]

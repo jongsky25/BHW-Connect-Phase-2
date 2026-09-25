@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-fracture-dislocation",
+  "objective_id": "fracture-dislocation.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        },
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        },
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+          "en": "The shortcut can cause harm: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag ituwid, imasahe, lagyan ng di-angkop na splint, o ilipat ang posibleng may spinal injury maliban kung kailangan sa kaligtasan.",
+          "en": "The shortcut is unsafe: Do not straighten a deformity, massage it, use an unpadded improvised splint without training, or move a person with possible spinal injury unless safety demands it."
+        },
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        },
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        }
+      ]
+    }
+  ]
+}

@@ -7,18 +7,19 @@ import { ImageUpload } from "@/components/announcements/image-upload";
 import { mapAnnouncementRpcError } from "@/lib/announcements/error-messages";
 import type { Announcement } from "@/lib/announcements/types";
 import { createClient } from "@/lib/supabase/client";
-
-type OrgUnitOption = { id: string; name: string; level: string };
+import { OrgUnitPicker } from "@/components/org-unit-picker";
+import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
-  orgUnits: OrgUnitOption[];
-  defaultOrgUnitId: string;
+  /** The admin's own org unit: content can be deployed there or anywhere below it. */
+  rootOrgUnit: OrgUnitNode;
   onCreated: (announcement: Announcement) => void;
 };
 
-export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
+export function AnnouncementForm({ rootOrgUnit, onCreated }: Props) {
   const t = useTranslations("admin.announcements");
-  const [orgUnitId, setOrgUnitId] = useState(defaultOrgUnitId);
+  const [orgUnit, setOrgUnit] = useState<OrgUnitNode>(rootOrgUnit);
+  const orgUnitId = orgUnit.id;
   const [bodyFil, setBodyFil] = useState("");
   const [bodyEn, setBodyEn] = useState("");
   const [linkUrl, setLinkUrl] = useState("");
@@ -51,8 +52,6 @@ export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Prop
         setError(t("genericError"));
         return;
       }
-
-      const orgUnit = orgUnits.find((unit) => unit.id === orgUnitId) ?? null;
       onCreated({
         id: row.announcement_id,
         org_unit_id: orgUnitId,
@@ -62,7 +61,7 @@ export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Prop
         link_url: linkUrl.trim() || null,
         image_url: imageUrl,
         created_at: new Date().toISOString(),
-        org_units: orgUnit ? { name: orgUnit.name } : null,
+        org_units: { name: orgUnit.name },
         users: null,
       });
 
@@ -85,21 +84,10 @@ export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Prop
     >
       <h2 className="text-lg font-semibold text-ink">{t("postHeading")}</h2>
 
-      <Field label={t("orgUnitLabel")} htmlFor="announcement-org-unit">
-        <select
-          id="announcement-org-unit"
-          required
-          value={orgUnitId}
-          onChange={(event) => setOrgUnitId(event.target.value)}
-          className={inputClass}
-        >
-          {orgUnits.map((unit) => (
-            <option key={unit.id} value={unit.id}>
-              {unit.name}
-            </option>
-          ))}
-        </select>
-      </Field>
+      <div className="flex flex-col gap-1">
+        <span className="text-sm font-medium text-ink">{t("orgUnitLabel")}</span>
+        <OrgUnitPicker root={rootOrgUnit} onChange={setOrgUnit} />
+      </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field label={t("bodyFilLabel")} htmlFor="announcement-body-fil">
@@ -148,7 +136,7 @@ export function AnnouncementForm({ orgUnits, defaultOrgUnitId, onCreated }: Prop
       <button
         type="submit"
         disabled={loading}
-        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-canvas disabled:opacity-60"
+        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("posting") : t("postAction")}
       </button>

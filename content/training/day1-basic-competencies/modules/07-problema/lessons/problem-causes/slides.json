@@ -1,0 +1,91 @@
+[
+  {
+    "id": "slide-whys",
+    "concept_ids": [
+      "m7.whys"
+    ],
+    "layout": "process",
+    "heading_fil": "Bawat bakit, may batayan",
+    "heading_en": "Every why needs evidence",
+    "display_fil": "Walang childcare → sabay sa trabaho → iisang oras ang naipaalam → hindi pa natanong ang availability. Posibleng sanhi ang bawat arrow: beripikahin. Gumawa ng hiwalay na sangay para sa ibang hadlang.",
+    "display_en": "No childcare → conflicts with work → only one time communicated → availability not checked. Each arrow is a possible explanation: verify it. Use separate branches for other barriers.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-manual-example",
+    "concept_ids": [
+      "m7.diarrhoea-example"
+    ],
+    "layout": "process",
+    "heading_fil": "Ang halimbawa ng batang nagtatae",
+    "heading_en": "The manual’s diarrhoea example",
+    "display_fil": "Sinusuri sa halimbawa ng manwal ang pagkamatay ng batang nagtatae: ligtas na tubig, pagtuturo at training gaps. Hindi iisang dahilan ang lahat ng pagkamatay. Suriin din ang kita, transportasyon at serbisyo.",
+    "display_en": "The manual’s child-diarrhoea example examines safe water, education and training gaps. Deaths do not all have one cause. Investigate income, transport and service barriers too.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-rosario",
+    "concept_ids": [
+      "m7.determinants"
+    ],
+    "layout": "scene",
+    "heading_fil": "Si Rosario ay isang bata",
+    "heading_en": "Rosario is a child",
+    "display_fil": "Si Rosario ay isang taon at apat na buwan. Sa makasaysayang kaso, magkakaugnay ang tigdas, pagtatae, dehydration, malnutrisyon at hadlang sa serbisyo. Ihiwalay ang sangay ng kapaligiran, kabuhayan at serbisyo; huwag sisihin ang ina.",
+    "display_en": "Rosario is one year and four months old. The historical case connects measles, diarrhoea, dehydration, malnutrition and access barriers. Map environment, livelihood and services separately; do not blame the mother.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m7.whys",
+      "m7.diarrhoea-example",
+      "m7.determinants"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Dalawang sangay → markahan ang ebidensya → tukuyin ang kausap o rekord → baguhin ang map kapag may bagong impormasyon.",
+    "display_en": "Two branches → label evidence → identify a person or record → revise the map when information changes.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m7.whys",
+      "m7.diarrhoea-example",
+      "m7.determinants"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ang Five Whys ay paraan ng pagtatanong kasama ang iba; ang ebidensya ang nagpapatibay sa sanhi.",
+    "display_en": "Five Whys structures inquiry with others; evidence supports the proposed causes.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Sa ikalimang “bakit,” sinabi ng grupo na kulang sa kaalaman ang ina. Ano ang susunod?",
+      "prompt_en": "At the fifth “why,” the group says the mother lacks knowledge. What next?",
+      "options": [
+        {
+          "fil": "Itigil ang usapan dahil lima na ang tanong.",
+          "en": "Stop because five questions have been asked."
+        },
+        {
+          "fil": "Suriin ang ebidensya at ibang hadlang kasama ang pamilya at health team.",
+          "en": "Check the evidence and other barriers with the family and health team."
+        },
+        {
+          "fil": "Magplano agad ng lecture para sa lahat ng ina.",
+          "en": "Immediately plan a lecture for every mother."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay sumusubok sa paliwanag bago kumilos. Hindi patunay ang bilang ng tanong. Ang lecture ay maaaring hindi tumugon sa transportasyon, kita o kakulangan sa serbisyo.",
+      "feedback_en": "The second response tests the explanation before acting. The question count is not proof. A lecture may miss transport, income or service gaps."
+    }
+  }
+]

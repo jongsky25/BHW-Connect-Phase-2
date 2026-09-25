@@ -1,10 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FlipchartViewer } from "@/components/flipcharts/flipchart-viewer";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { FlipChartPage } from "@/lib/flipcharts/types";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 type FlipChartRow = {
   id: string;
@@ -16,7 +16,7 @@ type FlipChartRow = {
 export default async function FlipchartDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.flipcharts) {
     redirect("/home");
@@ -24,16 +24,17 @@ export default async function FlipchartDetailPage({ params }: { params: Promise<
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("flipcharts");
+  const tCrumbs = await getTranslations("breadcrumbs");
 
   const { data: chart } = await supabase
     .from("flip_charts")
@@ -54,7 +55,14 @@ export default async function FlipchartDetailPage({ params }: { params: Promise<
     .returns<FlipChartPage[]>();
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/flipcharts" },
+          { label: chart.title_en },
+        ]}
+      />
       <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{chart.title_en}</h1>
       {pages && pages.length > 0 ? (
         <FlipchartViewer pages={pages} />

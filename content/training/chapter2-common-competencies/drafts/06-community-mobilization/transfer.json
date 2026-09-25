@@ -1,0 +1,121 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Sa loob ng 2–4 linggo, ipasuri ang fictional plan sa organizer bago gumamit sa tunay na pulong.",
+    "en": "Within 2–4 weeks, review a fictional plan with the organizer before use in a real meeting."
+  },
+  "supervision": {
+    "fil": "Gamitin ang parehong indicator; obserbahan, magbigay ng feedback at umulit.",
+    "en": "Use the same indicator; observe, give feedback and retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "community-issue",
+      "check": {
+        "prompt_fil": "Ano ang dapat gawin bago pumili ng paraan ng pagpapabalita?",
+        "prompt_en": "What should happen before choosing an update channel?",
+        "options": [
+          {
+            "fil": "Tanungin ang mga hindi naaabot.",
+            "en": "Ask people who miss updates."
+          },
+          {
+            "fil": "Piliin agad ang chat dahil iyon ang gamit ng lider.",
+            "en": "Choose chat immediately because the leader uses it."
+          },
+          {
+            "fil": "Ilista ang personal na kondisyon ng lahat sa pampublikong poster.",
+            "en": "List everyone’s personal health conditions on a public poster."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Kasama ang apektado sa pagtukoy ng magagamit na solusyon. 2: Maaaring patuloy na hindi maabot ang walang cellphone. 3: Hindi kailangan ang personal na kondisyon para linawin ang daan ng balita.",
+        "feedback_en": "1: Affected people help identify a workable solution. 2: People without phones may still be excluded. 3: Personal conditions are unnecessary for clarifying update channels."
+      }
+    },
+    {
+      "lesson_key": "invite-and-remove-barriers",
+      "check": {
+        "prompt_fil": "Hindi makadalo si Ruben. Ano ang angkop na sagot?",
+        "prompt_en": "Ruben cannot attend. Which response is appropriate?",
+        "options": [
+          {
+            "fil": "Ipagpaliban ang serbisyo niya hanggang makadalo siya.",
+            "en": "Delay his services until he attends."
+          },
+          {
+            "fil": "Mangako ng pera kahit wala pang pahintulot ang organizer.",
+            "en": "Promise money without the organizer’s authorization."
+          },
+          {
+            "fil": "Mag-alok ng ibang paraan ng mungkahi.",
+            "en": "Offer another way to contribute."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi dapat nakatali ang serbisyo sa pagdalo. 2: Hindi dapat mangako ng hindi kumpirmadong gantimpala. 3: Nirerespeto ang hadlang habang binubuksan ang pakikilahok.",
+        "feedback_en": "1: Access to services should not depend on attendance. 2: Unconfirmed rewards should not be promised. 3: This respects the barrier while allowing participation."
+      }
+    },
+    {
+      "lesson_key": "trust-and-core-group",
+      "check": {
+        "prompt_fil": "May umiiral nang samahan. Ano ang dapat linawin bago bumuo ng pangunahing grupo?",
+        "prompt_en": "An association already exists. What should be clarified before forming a core group?",
+        "options": [
+          {
+            "fil": "Italaga agad ang lahat ng kaibigan ng BHW bilang lider.",
+            "en": "Immediately appoint all the BHW’s friends as leaders."
+          },
+          {
+            "fil": "Pakikipagtulungan at kusang tungkulin.",
+            "en": "Collaboration and voluntary roles."
+          },
+          {
+            "fil": "Buwagin ang samahan upang BHW lamang ang makapagpasya.",
+            "en": "Dissolve the association so only the BHW can decide."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi nito tinitiyak ang pakikilahok at pagsang-ayon ng komunidad. 2: Nasusuri ang umiiral na grupo at nililinaw ang handang gagampan. 3: Inaalis nito ang pagmamay-ari ng komunidad sa proseso.",
+        "feedback_en": "1: This does not establish community participation and agreement. 2: This considers the existing group and who willingly takes responsibility. 3: This removes community ownership of the process."
+      }
+    },
+    {
+      "lesson_key": "community-action-followup",
+      "check": {
+        "prompt_fil": "Hindi naihatid ang ilang paanyaya. Ano ang gagawin sa follow-up?",
+        "prompt_en": "Some invitations were not delivered. What should happen at follow-up?",
+        "options": [
+          {
+            "fil": "Alamin ang hadlang at baguhin ang plano.",
+            "en": "Discuss the barrier and adjust the plan."
+          },
+          {
+            "fil": "Ipahiya sa pulong ang kasaping hindi nakatapos ng gawain.",
+            "en": "Shame the member who did not finish in the meeting."
+          },
+          {
+            "fil": "Sabihing matagumpay pa rin dahil marami ang dumalo noon.",
+            "en": "Declare success because many people attended the earlier meeting."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Pinananatili ang pananagutan habang inaayos ang aktuwal na problema. 2: Maaaring masira ang tiwala at hindi matukoy ang dahilan. 3: Hindi patunay ng nakarating na balita ang dami ng dumalo sa pulong.",
+        "feedback_en": "1: This maintains accountability while addressing the actual problem. 2: This can damage trust without clarifying the reason. 3: Meeting attendance does not prove that updates reached people."
+      }
+    }
+  ],
+  "localization_slots": [
+    "supervisor_or_organizer",
+    "authorized_reporting_channel",
+    "accessible_meeting_place",
+    "confirmed_resource_contact"
+  ]
+}

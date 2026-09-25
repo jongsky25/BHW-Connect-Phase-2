@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Nasusuri ang lahat ng pitong kategorya at may ligtas, awtorisadong pagbabago na may responsable at petsa ng pagbalik.",
+      "observable_en": "Checks all seven categories and proposes a safe, authorized improvement with an owner and review date.",
+      "not_yet_fil": "Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.",
+      "not_yet_en": "Checks only sweeping or discards records and medicines without authorization.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang pitong hanay; naihihiwalay ang standardize, self-discipline at sustain; may malinaw na follow-up nang walang paalala.",
+        "kaya_na_en": "Completes all seven rows, distinguishes standardize, self-discipline and sustain, and specifies follow-up without prompting.",
+        "kailangan_practice_fil": "May ligtas na pagbabago pero kailangang paalalahanang idagdag ang isang kategorya o petsa ng pagsusuri.",
+        "kailangan_practice_en": "Proposes a safe change but needs a prompt to add a category or review date.",
+        "hindi_pa_fil": "Pagwawalis lamang ang sinusuri o nagtatapon ng rekord at gamot nang walang pahintulot.",
+        "hindi_pa_en": "Checks only sweeping or discards records and medicines without authorization."
+      }
+    }
+  ]
+}

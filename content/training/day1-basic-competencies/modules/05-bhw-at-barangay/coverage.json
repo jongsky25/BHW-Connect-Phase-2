@@ -1,0 +1,53 @@
+{
+  "$comment": "§C.2 of docs/training-modules-plan.md. Every concept Module 5's sources oblige it to teach, with a citation into docs/source-material/day1-basic-competencies/. The loader rejects any concept not delivered by a core- or standard-tier lesson section unless 'redundant_with' explains why it is deliberately not delivered. This module also carries forward the four-relationships scenario and sections INC-21r displaced from Module 1's original draft (git commit d424bde) — see docs/training-modules-plan.md's INC-24 section.",
+  "concepts": [
+    {
+      "id": "m5.four-relationships",
+      "statement_en": "A BHW's work runs through four core relationships: the community they serve, the midwife/RHU for referrals and clinical questions, barangay officials for support and facilities, and fellow BHWs for shared experience and correct practice — each with a different purpose, and using the right one for the situation is what keeps barangay health service fast and reliable.",
+      "source": "INC-21's original Module 1 draft (displaced, git commit d424bde); reference-manual PDF 15",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.stakeholders-barangay",
+      "statement_en": "At the barangay level: the Punong Barangay is the BHW's partner in delivering basic health services, oversees BHWs administratively (the midwife remains technical supervisor), and decides how the barangay budget (including BHW honoraria) is used. The Kagawad sa Kalusugan advocates health policies and resolutions in the barangay council, sits on the barangay planning team for health, and pushes for budget for barangay health activities and facilities.",
+      "source": "deck slides 29-30; reference-manual PDF 15",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.stakeholders-city",
+      "statement_en": "At the city/municipal level: the City/Municipal Health Officer oversees public health programs and supervises health workers including BHWs; midwives, assigned to barangay health stations, set BHWs' day-to-day tasks and serve as their technical supervisor; the Public Health Nurse supervises midwives and sometimes all BHWs citywide; city/municipal-level HEPOs plan and carry out health promotion policy and monitor BHWs' health-promotion skills (a different level from a BHW's own HEPO designation in Module 1); and the local health board gives health recommendations to the LGU, sets budgets, and is chaired by the mayor.",
+      "source": "deck slides 31-35; reference-manual PDF 15-16",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.stakeholders-other",
+      "statement_en": "The Mayor is the overall chief executive and direct supervisor of the City/Municipal Health Officer. The BHW President represents fellow BHWs, may sit on the local health board, and helps update the BHW registry and share opportunities. The Municipal Social Work and Development Officer handles social needs including AICS financial assistance. Sanitary Inspectors lead cleanliness promotion and coordinate with BHWs to identify households needing environmental sanitation help.",
+      "source": "deck slides 36-39; reference-manual PDF 16-17",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.teamwork-practices",
+      "statement_en": "Recommendations for working well with fellow BHWs: be clear as a team on why you volunteered (to improve community health); be clear on each member's role and responsibility (who covers which purok, who leads which programme); be open about personal issues that could affect the team's work, and address them promptly; be open to opinions and criticism from colleagues or the community; and build good relationships with teammates outside of work too.",
+      "source": "deck slides 43-46; reference-manual PDF 17",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.self-management-skills",
+      "statement_en": "Six self-management skills a BHW should have: being reliable (delivering the service expected of them), stress management (staying calm and focused under pressure), time management (prioritizing to finish on time), being trustworthy (holding to principles and moral standards), adaptability (willing to accept and keep up with change), and being honest and careful (thoughtful in what is said and how others are treated).",
+      "source": "deck slides 49-50; reference-manual PDF 17-18",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.self-management-improve",
+      "statement_en": "Ways to improve self-management: practice self-care, train yourself to be patient, finish one task at a time instead of multitasking, reflect on your own abilities, set specific/measurable/achievable/realistic/time-bound (SMART) goals, plan each week's tasks in writing, come prepared to meetings by reading materials beforehand, and think before speaking.",
+      "source": "reference-manual PDF 18",
+      "redundant_with": null
+    },
+    {
+      "id": "m5.competency",
+      "statement_en": "Module 5 maps to the TESDA BHS NC II competency 'Work in a team environment', whose outcomes are: describe team role and scope, identify one's own role and responsibility within the team, and work as a team member.",
+      "source": "deck slide 27; facilitator-guide PDF 26-27 (competency table)",
+      "redundant_with": null
+    }
+  ]
+}

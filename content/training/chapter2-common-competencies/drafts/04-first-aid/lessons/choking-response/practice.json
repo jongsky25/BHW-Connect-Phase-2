@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-choking-response",
+  "objective_id": "choking-response.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        },
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
+          "en": "The shortcut can cause harm: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+        },
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        },
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        },
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
+          "en": "The shortcut is unsafe: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+        }
+      ]
+    }
+  ]
+}

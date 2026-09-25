@@ -1,0 +1,266 @@
+{
+  "manifest": {
+    "lesson_key": "plant-integrated-practice",
+    "position": 11,
+    "title_fil": "Gamitin nang maingat ang plant references",
+    "title_en": "Use the plant references responsibly",
+    "objectives_fil": [
+      "Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization."
+    ],
+    "objectives_en": [
+      "For three case cards, record identity, use, concern, referral and missing local authorization."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.identity",
+        "c2.plants.plant-integrated-practice.boundary",
+        "c2.plants.plant-integrated-practice.consult"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tatlong residente ang nagtatanong tungkol sa Lagundi, Ampala",
+      "takeaway_en": "Three residents ask about Lagundi, Ampalaya and Bayabas. The",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.identity",
+        "c2.plants.plant-integrated-practice.boundary",
+        "c2.plants.plant-integrated-practice.consult"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.",
+      "takeaway_en": "For three case cards, record identity, use, concern, referral and missing local authorization.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.identity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Magandang simula ang kumpirmadong reference.",
+      "takeaway_en": "A verified reference is the proper start.",
+      "check": {
+        "prompt_fil": "Alin ang unang ligtas na hakbang?",
+        "prompt_en": "What is the first safe step?",
+        "options": [
+          {
+            "fil": "Manghula mula sa pangalan o larawan.",
+            "en": "Guess from a name or picture."
+          },
+          {
+            "fil": "Kumpirmahin ang identity at source.",
+            "en": "Confirm identity and source."
+          },
+          {
+            "fil": "Ibigay agad ang lumang dose.",
+            "en": "Give the old dose immediately."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring magkamali sa halaman. 2: Magandang simula ang kumpirmadong reference. 3: Wala pang clinical at lokal na pahintulot.",
+        "feedback_en": "1: The plant may be misidentified. 2: A verified reference is the proper start. 3: Clinical and local authorization are missing."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.identity",
+        "c2.plants.plant-integrated-practice.boundary",
+        "c2.plants.plant-integrated-practice.consult"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.",
+      "takeaway_en": "For three case cards, record identity, use, concern, referral and missing local authorization.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.boundary",
+        "c2.plants.plant-integrated-practice.consult"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.boundary",
+        "c2.plants.plant-integrated-practice.consult"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mahalaga ang clinical advice bago maghanda o gumamit.",
+      "takeaway_en": "Clinical advice matters before preparation or use.",
+      "check": {
+        "prompt_fil": "Ano ang kasunod ng pag-check ng card?",
+        "prompt_en": "What follows the card check?",
+        "options": [
+          {
+            "fil": "Baguhin ang gamot ng residente.",
+            "en": "Change the resident’s medicine."
+          },
+          {
+            "fil": "Itago ang ibang sintomas sa staff.",
+            "en": "Withhold other symptoms from staff."
+          },
+          {
+            "fil": "Kumonsulta sa clinician.",
+            "en": "Consult a clinician."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi awtorisado ang pagpapalit ng gamot. 2: Kailangan ang kumpletong impormasyon. 3: Mahalaga ang clinical advice bago maghanda o gumamit.",
+        "feedback_en": "1: Changing treatment is not authorized. 2: Complete information is needed. 3: Clinical advice matters before preparation or use."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.plants.plant-integrated-practice.identity",
+        "c2.plants.plant-integrated-practice.consult"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.plants.plant-integrated-practice.identity",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pitahc-directory",
+        "who-traditional"
+      ]
+    },
+    {
+      "id": "c2.plants.plant-integrated-practice.boundary",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pitahc-directory",
+        "who-traditional"
+      ]
+    },
+    {
+      "id": "c2.plants.plant-integrated-practice.consult",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pitahc-directory",
+        "who-traditional"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy preparation and dose claims excluded from learner draft",
+      "pdf_pages": [
+        6,
+        16
+      ]
+    },
+    {
+      "id": "pitahc-directory",
+      "title": "PITAHC Directory of Herbs (online, 2026): ten named entries despite “9 herbs” page count",
+      "url": "https://pitahc.gov.ph/herbs-directory/"
+    },
+    {
+      "id": "who-traditional",
+      "title": "WHO Traditional Medicine Q&A (quality, evidence and safety)",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/traditional-medicine"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/plant-integrated-practice-621d83584951.svg",
+      "content_hash": "621d835849519c3de6329953ed8ce010bfc2f2ee7eddd5816a159f9496826e99",
+      "alt_fil": "Tatlong kahon: Tukuyin, Suriin, I-refer.",
+      "alt_en": "Three boxes: Identify, Assess, Refer.",
+      "caption_fil": "Sa tatlong case card, itala ang identity, gamit, panganib, referral at kulang na local authorization.",
+      "caption_en": "For three case cards, record identity, use, concern, referral and missing local authorization.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

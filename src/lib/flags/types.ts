@@ -4,6 +4,7 @@ export type FeatureFlagKey =
   | "announcements"
   | "surveys"
   | "elearning"
+  | "course_sessions"
   | "forum"
   | "flipcharts"
   | "offline_pwa"

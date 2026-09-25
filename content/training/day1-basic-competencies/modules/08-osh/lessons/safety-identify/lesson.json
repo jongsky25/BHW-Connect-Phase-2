@@ -1,0 +1,224 @@
+{
+  "manifest": {
+    "lesson_key": "safety-identify",
+    "position": 0,
+    "title_fil": "Kilalanin ang panganib",
+    "title_en": "Identify hazards",
+    "objectives_fil": [
+      "Sa halimbawang health station at field visit, tukuyin ang limang uri ng panganib at ipares ang isang nakitang panganib sa posibleng pinsala, agarang kontrol at reporting contact."
+    ],
+    "objectives_en": [
+      "In a sample health-station and field-visit setting, identify five hazard groups and match one observed hazard to potential harm, immediate control and reporting contact."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "ana",
+      "concept_ids": [
+        "m8.requirements"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang kaligtasan sa trabaho ay nagsisimula sa pagtukoy ng hazard at lokal na requirements bago ang gawain.",
+      "takeaway_en": "Workplace safety starts by identifying hazards and local requirements before the task.",
+      "check": null
+    },
+    {
+      "id": "inspect",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang checklist ay dapat humantong sa kontrol at follow-up, hindi sa pagbilang lamang ng hazards.",
+      "takeaway_en": "A checklist should lead to controls and follow-up, not merely count hazards.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+      "takeaway_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.requirements",
+        "m8.practice",
+        "m8.sharps",
+        "m8.infection",
+        "m8.ergonomics",
+        "m8.stress",
+        "m8.accidents"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pagkilala sa panganib ay dapat humantong sa tiyak na kontrol at taong tutugon.",
+      "takeaway_en": "Recognizing a hazard should lead to a specific control and responsible contact.",
+      "check": {
+        "prompt_fil": "May basang sahig sa pasukan. Aling ulat ang magagamit agad?",
+        "prompt_en": "The entrance floor is wet. Which report supports immediate action?",
+        "options": [
+          {
+            "fil": "“Basang pasukan, panganib madulas; ilayo muna ang tao at ipatama sa responsableng staff.”",
+            "en": "“Wet entrance, slip risk; keep people away and arrange correction with responsible staff.”"
+          },
+          {
+            "fil": "“Mag-ingat na lang ang lahat hanggang uwian.”",
+            "en": "“Everyone should be careful until closing.”"
+          },
+          {
+            "fil": "“Walang nasaktan kaya walang kailangang aksyon.”",
+            "en": "“Nobody was hurt, so no action is needed.”"
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang ulat ay may lugar, panganib at aksyon. Ang paalala lamang ay hindi nag-aalis ng panganib; ang kawalan ng pinsala ngayon ay hindi dahilan para maghintay.",
+        "feedback_en": "The first report gives location, risk and action. A reminder alone does not remove the hazard; absence of injury now is no reason to wait."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.requirements",
+      "read_ids": [
+        "ana",
+        "inspect",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-ana",
+        "slide-inspect",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.practice",
+      "read_ids": [
+        "inspect",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-inspect",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.sharps",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.infection",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.ergonomics",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.stress",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    },
+    {
+      "id": "m8.accidents",
+      "read_ids": [
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        21,
+        22,
+        23
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": []
+}

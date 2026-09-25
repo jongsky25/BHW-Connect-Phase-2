@@ -45,7 +45,7 @@ export default async function AdminKbEntriesPage() {
         <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
         <Link
           href="/admin/kb/entries/new"
-          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
         >
           {t("newAction")}
         </Link>

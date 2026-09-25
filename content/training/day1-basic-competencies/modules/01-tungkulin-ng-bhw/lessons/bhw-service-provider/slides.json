@@ -1,0 +1,101 @@
+[
+  {
+    "id": "first-contact-slide",
+    "concept_ids": [
+      "m1.role.provider",
+      "m1.provider.firstcontact"
+    ],
+    "layout": "scene",
+    "heading_fil": "May residenteng humihingi ng tulong",
+    "heading_en": "A resident asks for help",
+    "display_fil": "Aling Nena · may tanong\nMarites · unang nilapitan\nMidwife · katuwang sa team\nBahagi ng primary care team; katuwang ng midwife.",
+    "display_en": "Aling Nena · a concern\nMarites · first contact\nMidwife · team partner\nPart of the primary care team; a partner to the midwife.",
+    "asset_ids": [
+      "A01"
+    ],
+    "check": null
+  },
+  {
+    "id": "guide-slide",
+    "concept_ids": [
+      "m1.provider.guide"
+    ],
+    "layout": "process",
+    "heading_fil": "Gumabay sa angkop na serbisyo",
+    "heading_en": "Guide to an appropriate service",
+    "display_fil": "Pangangailangan\nAngkop na health worker\nMalinaw na susunod na hakbang\nHalimbawa ng koordinasyon. Sundin ang lokal na referral at emergency procedures.",
+    "display_en": "Need\nAppropriate health worker\nClear next step\nA coordination example. Follow local referral and emergency procedures.",
+    "asset_ids": [
+      "A05"
+    ],
+    "check": null
+  },
+  {
+    "id": "boundaries-slide",
+    "concept_ids": [
+      "m1.provider.initialservices"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Tumulong ayon sa pagsasanay",
+    "heading_en": "Assist within your training",
+    "display_fil": "Pakikipanayam · vital signs · pagtatala\nHousehold profile · paunang lunas\nMga halimbawa lamang. Gawin ayon sa pagsasanay, lokal na patakaran, at pangangasiwa.",
+    "display_en": "Interviewing · vital signs · recording\nHousehold profile · first aid\nExamples only. Work within training, local policy, and supervision.",
+    "asset_ids": [
+      "A05"
+    ],
+    "check": null
+  },
+  {
+    "id": "follow-up-slide",
+    "concept_ids": [
+      "m1.provider.monitoring"
+    ],
+    "layout": "process",
+    "heading_fil": "May kasunod ang paggabay",
+    "heading_en": "Guidance includes follow-up",
+    "display_fil": "Kumpirmahin ang tagubilin\nSubaybayan at itala\nIbalik ang update sa team\nAng follow-up ay nagpapatuloy sa ugnayan ng residente at health team.",
+    "display_en": "Confirm the instruction\nMonitor and record\nReport back to the team\nFollow-up sustains the connection between the resident and health team.",
+    "asset_ids": [
+      "A05"
+    ],
+    "check": null
+  },
+  {
+    "id": "check-slide",
+    "concept_ids": [
+      "m1.role.provider",
+      "m1.provider.firstcontact",
+      "m1.provider.guide",
+      "m1.provider.initialservices",
+      "m1.provider.monitoring"
+    ],
+    "layout": "decision",
+    "heading_fil": "Gamitin ang natutuhan",
+    "heading_en": "Apply your learning",
+    "display_fil": "Makinig, tumulong sa loob ng saklaw, gumabay, at mag-follow-up kasama ang health team.",
+    "display_en": "Listen, assist within scope, guide, and follow up with the health team.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Humingi ng payong lampas sa iyong pagsasanay ang residente. Ano ang angkop?",
+      "prompt_en": "A resident asks for advice beyond your training. What is appropriate?",
+      "options": [
+        {
+          "fil": "Hulaan ang sagot para hindi siya maghintay.",
+          "en": "Guess so the resident will not wait."
+        },
+        {
+          "fil": "Humingi ng gabay sa health team at ipaliwanag ang susunod na hakbang.",
+          "en": "Seek health-team guidance and explain the next step."
+        },
+        {
+          "fil": "Sabihing tapos na ang iyong tungkulin.",
+          "en": "Say your role is finished."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang paggabay sa angkop na health worker ay pagtulong. Panatilihin ang hangganan ng pagsasanay at sundin ang lokal na tagubilin sa follow-up.",
+      "feedback_en": "Guiding someone to the appropriate health worker is assistance. Respect training boundaries and follow local follow-up instructions."
+    }
+  }
+]
+

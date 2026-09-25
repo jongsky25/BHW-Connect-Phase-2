@@ -1,0 +1,66 @@
+{
+  "competency_statement_fil": "Maipahayag ang kaugnay na impormasyon.",
+  "competency_statement_en": "Present relevant information",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Humihingi ng pahintulot, nagtatanong nang bukas at hinahayaang matapos ang sagot.",
+      "observable_en": "Asks permission, uses an open question and lets the person finish.",
+      "not_yet_fil": "Nauuna ang payo o paratang bago marinig ang concern.",
+      "not_yet_en": "Advice or accusation comes before the concern is heard.",
+      "levels": {
+        "kaya_na_fil": "Naipapahayag ng residente ang concern nang walang pamimilit o pagputol.",
+        "kaya_na_en": "The resident can express the concern without pressure or interruption.",
+        "kailangan_practice_fil": "Nagtatanong nang bukas matapos paalalahanang huminto sa pagsasalita.",
+        "kailangan_practice_en": "Uses an open question after a reminder to stop speaking.",
+        "hindi_pa_fil": "Paulit-ulit na nangunguna ang sariling sagot at hindi nakakalap ng concern.",
+        "hindi_pa_en": "Repeatedly supplies the answer and does not gather the concern."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "May hiwalay na sinabi, obserbasyon at hindi pa tiyak sa pagsusuri.",
+      "observable_en": "Separates reports, observations and uncertainty in the assessment.",
+      "not_yet_fil": "Itinuturing na katotohanan ang hula tungkol sa motibo.",
+      "not_yet_en": "Treats a guessed motive as fact.",
+      "levels": {
+        "kaya_na_fil": "Tinutukoy ang pinagmulan at paraan ng pagkumpirma sa kulang na detalye.",
+        "kaya_na_en": "Names the source and a way to confirm a missing detail.",
+        "kailangan_practice_fil": "Nakikita ang hindi tiyak matapos tanungin kung saan galing ang impormasyon.",
+        "kailangan_practice_en": "Recognizes uncertainty after being asked about the information source.",
+        "hindi_pa_fil": "Ipinapasa ang palagay bilang beripikadong detalye.",
+        "hindi_pa_en": "Passes an assumption on as verified information."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Gumagawa ng factual na ulat at pinipili ang awtorisadong tatanggap.",
+      "observable_en": "Writes a factual report and selects an authorized recipient.",
+      "not_yet_fil": "May label na mapanghusga o walang follow-up sa ulat.",
+      "not_yet_en": "The report contains judgmental labels or lacks follow-up.",
+      "levels": {
+        "kaya_na_fil": "Malinaw ang concern, petsa, pinagmulan, ginawa at hinihinging susunod na hakbang.",
+        "kaya_na_en": "Concern, date, source, action and requested next step are clear.",
+        "kailangan_practice_fil": "Kailangan ng prompt para maidagdag ang aksyon o tamang tatanggap.",
+        "kailangan_practice_en": "Needs a prompt to add the action or appropriate recipient.",
+        "hindi_pa_fil": "Hindi matukoy ang kailangang aksyon o ipinapadala sa pampublikong channel.",
+        "hindi_pa_en": "Cannot identify the needed action or sends it through a public channel."
+      }
+    },
+    {
+      "objective_index": 3,
+      "observable_fil": "Nagpapaliwanag nang payak at humihingi ng balik-paliwanag nang hindi naninisi.",
+      "observable_en": "Explains plainly and invites teach-back without blame.",
+      "not_yet_fil": "Pagtango o oo lamang ang ginagawang patunay ng pagkaunawa.",
+      "not_yet_en": "Uses a nod or yes as the only evidence of understanding.",
+      "levels": {
+        "kaya_na_fil": "Binabago ang paliwanag at muling nagtatanong kapag may hindi nagtugma.",
+        "kaya_na_en": "Changes the explanation and checks again when meaning differs.",
+        "kailangan_practice_fil": "Nagagawa ang teach-back matapos bigyan ng halimbawa ng tanong.",
+        "kailangan_practice_en": "Uses teach-back after being given an example question.",
+        "hindi_pa_fil": "Inuulit lang nang mas malakas o sinisisi ang kausap sa hindi pag-unawa.",
+        "hindi_pa_en": "Only repeats more loudly or blames the person for misunderstanding."
+      }
+    }
+  ]
+}

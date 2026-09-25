@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Naipapakita ang lokasyon, bersiyon, contact at training gaps nang walang imbentong training o awtorisasyon.",
+      "observable_en": "Records location, version, contact and training gaps without inventing training or authorization.",
+      "not_yet_fil": "Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.",
+      "not_yet_en": "Treats reading a policy as authorization or marks unobserved training as completed.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang mga hanay, malinaw ang kukumpirma at naihihiwalay ang specialist na gawain nang walang paalala.",
+        "kaya_na_en": "Completes the rows, names who confirms them and distinguishes specialist tasks without prompting.",
+        "kailangan_practice_fil": "May lokasyon at contact pero kailangang idagdag ang bersiyon o training gap matapos ang paalala.",
+        "kailangan_practice_en": "Records location and contact but adds version or training gaps only after prompting.",
+        "hindi_pa_fil": "Itinuturing na awtorisasyon ang nabasang policy o minamarkahang trained ang hindi naobserbahan.",
+        "hindi_pa_en": "Treats reading a policy as authorization or marks unobserved training as completed."
+      }
+    }
+  ]
+}

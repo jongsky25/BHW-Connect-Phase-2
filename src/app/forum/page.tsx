@@ -1,11 +1,11 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { ForumCategory } from "@/lib/forum/types";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 type ThreadListRow = {
   id: string;
@@ -24,7 +24,7 @@ export default async function ForumPage({
 }) {
   const { category, tag } = await searchParams;
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.forum) {
     redirect("/home");
@@ -32,16 +32,17 @@ export default async function ForumPage({
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("forum");
+  const tCrumbs = await getTranslations("breadcrumbs");
 
   const { data: categories } = await supabase
     .from("forum_categories")
@@ -66,7 +67,8 @@ export default async function ForumPage({
   const rows = threads ?? [];
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
@@ -74,7 +76,7 @@ export default async function ForumPage({
         </div>
         <Link
           href="/forum/new"
-          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-canvas"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
         >
           {t("newThreadCta")}
         </Link>
@@ -84,7 +86,7 @@ export default async function ForumPage({
         <div className="flex flex-wrap gap-2 text-sm">
           <Link
             href="/forum"
-            className={`rounded-full border px-3 py-1 ${!category ? "border-primary text-primary" : "border-ink/20 text-ink/70"}`}
+            className={`rounded-full border px-3 py-1 ${!category ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
           >
             {t("allCategories")}
           </Link>
@@ -92,7 +94,7 @@ export default async function ForumPage({
             <Link
               key={c.id}
               href={`/forum?category=${c.id}`}
-              className={`rounded-full border px-3 py-1 ${category === c.id ? "border-primary text-primary" : "border-ink/20 text-ink/70"}`}
+              className={`rounded-full border px-3 py-1 ${category === c.id ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
             >
               {c.name_en}
             </Link>

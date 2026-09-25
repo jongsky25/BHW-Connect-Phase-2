@@ -1,0 +1,99 @@
+[
+  {
+    "id": "morning-slide",
+    "concept_ids": [
+      "m1.uhc.shift"
+    ],
+    "layout": "scene",
+    "heading_fil": "Isang umaga, maraming gawain",
+    "heading_en": "One morning, many tasks",
+    "display_fil": "08:00 · Magturo\n10:00 · Mag-organisa\n11:00 · Gumabay\nPrimary care + health promotion: higit sa pagtulong sa serbisyo.",
+    "display_en": "08:00 · Educate\n10:00 · Organize\n11:00 · Guide\nPrimary care + health promotion: a role beyond service support.",
+    "asset_ids": [
+      "A01"
+    ],
+    "check": null
+  },
+  {
+    "id": "prevention-slide",
+    "concept_ids": [
+      "m1.uhc.organizing"
+    ],
+    "layout": "process",
+    "heading_fil": "Kumilos kasama ang komunidad",
+    "heading_en": "Act with the community",
+    "display_fil": "Magbahagi ng kaalaman\nMag-anyaya ng pakikilahok\nMagkatuwang na kumilos\nKasama ang pagtuturo at pag-oorganisa sa pagsulong ng kalusugan.",
+    "display_en": "Share knowledge\nInvite participation\nAct together\nEducation and organizing contribute to health promotion.",
+    "asset_ids": [
+      "A04"
+    ],
+    "check": null
+  },
+  {
+    "id": "hepo-slide",
+    "concept_ids": [
+      "m1.hepo.umbrella"
+    ],
+    "layout": "relationship-map",
+    "heading_fil": "HEPO: pagsusulong ng kalusugan",
+    "heading_en": "HEPO: promoting health",
+    "display_fil": "Health Educator\nCommunity Organizer\nHealth Service Provider\nHEPO = Health Education and Promotion Officer. Magkakaugnay na gawain, hindi reporting hierarchy.",
+    "display_en": "Health Educator\nCommunity Organizer\nHealth Service Provider\nHEPO = Health Education and Promotion Officer. Connected tasks, not a reporting hierarchy.",
+    "asset_ids": [
+      "A02"
+    ],
+    "check": null
+  },
+  {
+    "id": "knowledge-slide",
+    "concept_ids": [
+      "m1.hepo.knowledge"
+    ],
+    "layout": "process",
+    "heading_fil": "Bago magbahagi, maghanda",
+    "heading_en": "Prepare before sharing",
+    "display_fil": "Mga prayoridad na programa\nMga problemang pangkalusugan\nTamang impormasyong ibabahagi\nSapat na kaalaman ang pundasyon ng tatlong tungkulin.",
+    "display_en": "Priority programs\nHealth problems\nAccurate information to share\nAdequate knowledge supports all three roles.",
+    "asset_ids": [
+      "A02"
+    ],
+    "check": null
+  },
+  {
+    "id": "check-slide",
+    "concept_ids": [
+      "m1.uhc.shift",
+      "m1.uhc.organizing",
+      "m1.hepo.umbrella",
+      "m1.hepo.knowledge"
+    ],
+    "layout": "decision",
+    "heading_fil": "Gamitin ang natutuhan",
+    "heading_en": "Apply your learning",
+    "display_fil": "Isang BHW, tatlong magkakaugnay na papel, iisang layuning isulong ang kalusugan.",
+    "display_en": "One BHW, three connected roles, one aim: promoting health.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Nakipagplano si Marites sa mga residente para sa clean-up drive. Aling papel ang pinakakitang-kita?",
+      "prompt_en": "Marites plans a clean-up drive with residents. Which role is most visible?",
+      "options": [
+        {
+          "fil": "Health Service Provider",
+          "en": "Health Service Provider"
+        },
+        {
+          "fil": "Community Organizer",
+          "en": "Community Organizer"
+        },
+        {
+          "fil": "Health Educator lamang",
+          "en": "Health Educator only"
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Community Organizer: nag-uugnay siya ng mga tao at humihikayat ng pagkilos. Maaari ring may pagtuturo sa parehong gawain; hindi eksklusibo ang mga papel.",
+      "feedback_en": "Community Organizer: she connects people and encourages action. Education can also occur in the same activity; the roles are not exclusive."
+    }
+  }
+]
+

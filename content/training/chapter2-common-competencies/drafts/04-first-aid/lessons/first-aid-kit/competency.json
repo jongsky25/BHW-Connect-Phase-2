@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit.",
+      "observable_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it.",
+      "levels": {
+        "kaya_na_fil": "Punan ang bawat hanay ng simulated kit inventory at tukuyin ang responsable sa pagpapalit. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Complete every row of a simulated local kit inventory and name a replenishment owner.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gawing reseta ang lumang listahan ng gamot, gamitin ang expired stock, o ipagpalagay na pahintulot ang pagkakaroon ng gamit.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not copy the old manual’s drug list as a standing prescription, use expired stock, or assume a kit item certifies the BHW to administer it."
+      }
+    }
+  ]
+}

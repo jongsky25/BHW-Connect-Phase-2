@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-agree-the-next-step",
+  "objective_id": "agree-the-next-step.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Ito ay tiyak na gawaing kayang gawin nang hindi nangangako ng appointment.",
+          "en": "This is a concrete action without promising an appointment."
+        },
+        {
+          "fil": "Hindi pa kumpirmado ang availability ng staff.",
+          "en": "Staff availability has not been confirmed."
+        },
+        {
+          "fil": "Hadlang sa oras ang sinabi ni Ben, hindi kawalan ng interes.",
+          "en": "Ben described a time barrier, not a lack of interest."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Walang nakatalagang kilos o oras ng pagbalita.",
+          "en": "No action or update time is assigned."
+        },
+        {
+          "fil": "Ginagawa nitong appointment ang hindi pa kumpirmadong usapan.",
+          "en": "This turns an unconfirmed discussion into an appointment."
+        },
+        {
+          "fil": "May hakbang, responsable at oras na puwedeng kumpirmahin kay Ben.",
+          "en": "This has an action, owner and time to confirm with Ben."
+        }
+      ]
+    }
+  ]
+}

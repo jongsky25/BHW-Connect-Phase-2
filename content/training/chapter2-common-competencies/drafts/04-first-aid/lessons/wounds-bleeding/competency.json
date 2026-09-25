@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat.",
+      "observable_en": "On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice.",
+      "levels": {
+        "kaya_na_fil": "Sa malinis na props, ipakita ang proteksiyon sa kamay, tuloy-tuloy na direct pressure, agarang referral at malinaw na ulat. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag bunutin ang nakabaong bagay o gumamit ng mahinang pressure sa malubhang pagdurugo. Huwag magtakda ng herbal wash, iodine o tetanus deadline nang walang payo.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not remove an embedded object, rely on gentle pressure for severe bleeding, or use routine herbal wash, iodine inside the wound or a fixed tetanus deadline without clinical advice."
+      }
+    }
+  ]
+}

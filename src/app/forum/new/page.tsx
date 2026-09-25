@@ -1,14 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ThreadForm } from "@/components/forum/thread-form";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
 import type { ForumCategory } from "@/lib/forum/types";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 export default async function NewForumThreadPage() {
   const supabase = await createClient();
-  const flags = await getFeatureFlags(supabase);
+  const flags = await getRequestFeatureFlags();
 
   if (!flags.forum) {
     redirect("/home");
@@ -16,16 +16,17 @@ export default async function NewForumThreadPage() {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
   if (!user) {
     redirect("/login");
   }
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
 
   const t = await getTranslations("forum");
+  const tCrumbs = await getTranslations("breadcrumbs");
 
   const { data: categories } = await supabase
     .from("forum_categories")
@@ -34,7 +35,14 @@ export default async function NewForumThreadPage() {
     .returns<ForumCategory[]>();
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: tCrumbs("home"), href: "/home" },
+          { label: t("heading"), href: "/forum" },
+          { label: t("newThreadHeading") },
+        ]}
+      />
       <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("newThreadHeading")}</h1>
       <ThreadForm categories={categories ?? []} />
     </div>

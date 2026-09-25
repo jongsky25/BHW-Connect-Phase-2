@@ -20,6 +20,15 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
+  // The longest specs are whole end-to-end journeys, not single interactions:
+  // forum.spec.ts alone signs in three times (admin -> BHW -> sibling BHW ->
+  // admin), each a full login + consent + navigation round trip, and
+  // elearning.spec.ts onboards a fresh BHW then walks a course, quiz,
+  // assessment and certificate. Playwright's 30s default left those with no
+  // headroom, so they were the first to fail as the shared CI project grew,
+  // timing out mid-journey rather than on any specific assertion. This is
+  // budget for work those tests genuinely do — no assertion is relaxed.
+  timeout: 60_000,
   reporter: "line",
   use: {
     baseURL: "http://localhost:3000",

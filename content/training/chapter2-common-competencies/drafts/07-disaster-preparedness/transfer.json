@@ -1,0 +1,169 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Sa loob ng 2–4 linggo, ipasuri ang isang mungkahing pagpapabuti sa supervisor gamit ang job aid.",
+    "en": "Within 2–4 weeks, review one improvement proposal with the supervisor using the job aid."
+  },
+  "supervision": {
+    "fil": "Gamitin ang parehong indicator; obserbahan, magbigay ng feedback at umulit.",
+    "en": "Use the same indicator; observe, give feedback and retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "hazards-capacities",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Sabihing bukas ang paaralan kahit hindi pa nasuri. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Say the school is open without checking. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "lesson_key": "evacuation-contacts",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Gamitin ang lumang directory bilang tiyak na kasalukuyan. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Treat an old directory as current. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "lesson_key": "go-bag-e-balde",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Kopyahin ang listahan nang hindi isinasaalang-alang ang sanggol o regular na gamot. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Copy a list without considering the infant or regular medicine. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "lesson_key": "bhert-coordination",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Gamitin ang lumang roster at ipalagay ang dating mandato. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Use an old roster and assume its former mandate. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "lesson_key": "essential-health-packages",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Tratuhin ang lahat bilang isang medical case at magbigay ng sariling therapy. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Treat every need as a single medical case and provide therapy independently. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    },
+    {
+      "lesson_key": "disaster-tabletop",
+      "check": {
+        "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+        "prompt_en": "What is the safe next step?",
+        "options": [
+          {
+            "fil": "Iwanang walang kapalit ang pagod na responder at walang follow-up ang referral. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+            "en": "Leave the exhausted responder without relief and the referral without follow-up. Do not ask the authority or the affected person."
+          },
+          {
+            "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+            "en": "Nothing needs recording or follow-up even without team acknowledgement."
+          },
+          {
+            "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+            "en": "Inform the lead, record handover, and follow up."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+        "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+      }
+    }
+  ],
+  "localization_slots": [
+    "supervisor_or_organizer",
+    "authorized_reporting_channel",
+    "accessible_meeting_place",
+    "confirmed_resource_contact"
+  ]
+}

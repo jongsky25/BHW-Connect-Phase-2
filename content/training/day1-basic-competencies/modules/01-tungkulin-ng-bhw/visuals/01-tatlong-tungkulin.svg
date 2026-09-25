@@ -1,0 +1,31 @@
+<svg viewBox="0 0 640 400">
+  <title>Hub-and-spoke: ang HEPO sa gitna, tatlong tungkulin sa paligid</title>
+  <defs>
+    <marker id="role-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 z" fill="currentColor" />
+    </marker>
+  </defs>
+  <g>
+    <circle cx="320" cy="190" r="62" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="320" y="180" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700">HEPO</text>
+    <text x="320" y="202" text-anchor="middle" dominant-baseline="middle" font-size="10">BHW sa barangay</text>
+  </g>
+  <g data-scene-step="2">
+    <line x1="320" y1="150" x2="320" y2="72" stroke="currentColor" stroke-width="2" marker-end="url(#role-arrow)" />
+    <rect x="215" y="18" width="210" height="52" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="320" y="36" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700">Health Educator</text>
+    <text x="320" y="55" text-anchor="middle" dominant-baseline="middle" font-size="10">nagtuturo bago magkasakit</text>
+  </g>
+  <g data-scene-step="3">
+    <line x1="268" y1="222" x2="168" y2="285" stroke="currentColor" stroke-width="2" marker-end="url(#role-arrow)" />
+    <rect x="20" y="290" width="215" height="52" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="128" y="308" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700">Community Organizer</text>
+    <text x="128" y="327" text-anchor="middle" dominant-baseline="middle" font-size="10">tulay at tagapagbuklod</text>
+  </g>
+  <g data-scene-step="4">
+    <line x1="372" y1="222" x2="472" y2="285" stroke="currentColor" stroke-width="2" marker-end="url(#role-arrow)" />
+    <rect x="405" y="290" width="215" height="52" rx="8" fill="none" stroke="currentColor" stroke-width="2" />
+    <text x="513" y="308" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700">Health Service Provider</text>
+    <text x="513" y="327" text-anchor="middle" dominant-baseline="middle" font-size="10">unang nasasalubong</text>
+  </g>
+</svg>

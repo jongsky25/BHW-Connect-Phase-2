@@ -6,12 +6,12 @@ import { Field, inputClass } from "@/components/admin/form-field";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type { Course, DraftModule, ModuleType } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
-
-type OrgUnitOption = { id: string; name: string; level: string };
+import { OrgUnitPicker } from "@/components/org-unit-picker";
+import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
-  orgUnits: OrgUnitOption[];
-  defaultOrgUnitId: string;
+  /** The admin's own org unit: content can be deployed there or anywhere below it. */
+  rootOrgUnit: OrgUnitNode;
   onCreated: (course: Course) => void;
 };
 
@@ -25,9 +25,10 @@ function emptyQuestion() {
   return { prompt_fil: "", prompt_en: "", options: [{ fil: "", en: "" }, { fil: "", en: "" }], correct_option_index: 0 };
 }
 
-export function CourseForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
+export function CourseForm({ rootOrgUnit, onCreated }: Props) {
   const t = useTranslations("admin.courses");
-  const [orgUnitId, setOrgUnitId] = useState(defaultOrgUnitId);
+  const [orgUnit, setOrgUnit] = useState<OrgUnitNode>(rootOrgUnit);
+  const orgUnitId = orgUnit.id;
   const [titleFil, setTitleFil] = useState("");
   const [titleEn, setTitleEn] = useState("");
   const [descriptionFil, setDescriptionFil] = useState("");
@@ -111,8 +112,6 @@ export function CourseForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
         setError(t("genericError"));
         return;
       }
-
-      const orgUnit = orgUnits.find((unit) => unit.id === orgUnitId) ?? null;
       onCreated({
         id: row.course_id,
         org_unit_id: orgUnitId,
@@ -125,7 +124,7 @@ export function CourseForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
         quiz_passing_percent: passingPercent,
         quiz_max_attempts: maxAttempts,
         created_at: new Date().toISOString(),
-        org_units: orgUnit ? { name: orgUnit.name } : null,
+        org_units: { name: orgUnit.name },
       });
 
       setTitleFil("");
@@ -146,21 +145,10 @@ export function CourseForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-md border border-ink/10 p-4" noValidate>
       <h2 className="text-lg font-semibold text-ink">{t("createHeading")}</h2>
 
-      <Field label={t("orgUnitLabel")} htmlFor="course-org-unit">
-        <select
-          id="course-org-unit"
-          required
-          value={orgUnitId}
-          onChange={(event) => setOrgUnitId(event.target.value)}
-          className={inputClass}
-        >
-          {orgUnits.map((unit) => (
-            <option key={unit.id} value={unit.id}>
-              {unit.name}
-            </option>
-          ))}
-        </select>
-      </Field>
+      <div className="flex flex-col gap-1">
+        <span className="text-sm font-medium text-ink">{t("orgUnitLabel")}</span>
+        <OrgUnitPicker root={rootOrgUnit} onChange={setOrgUnit} />
+      </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field label={t("titleFilLabel")} htmlFor="course-title-fil">
@@ -408,7 +396,7 @@ export function CourseForm({ orgUnits, defaultOrgUnitId, onCreated }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-canvas disabled:opacity-60"
+        className="self-start rounded-md bg-primary px-6 py-3 font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("creating") : t("createAction")}
       </button>

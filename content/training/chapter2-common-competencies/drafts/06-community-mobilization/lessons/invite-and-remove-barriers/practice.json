@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-invite-and-remove-barriers",
+  "objective_id": "invite-and-remove-barriers.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi nito binabago ang hadlang sa pag-access.",
+          "en": "This does not address the access barrier."
+        },
+        {
+          "fil": "Kasama si Sari sa pagpili ng magagamit na paraan.",
+          "en": "Sari helps choose a method she can use."
+        },
+        {
+          "fil": "Hula sa interes ang kawalan ng sagot, hindi ebidensiya.",
+          "en": "No online reply is not evidence of disinterest."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi dapat nakatali ang serbisyo sa pagdalo.",
+          "en": "Access to services should not depend on attendance."
+        },
+        {
+          "fil": "Hindi dapat mangako ng hindi kumpirmadong gantimpala.",
+          "en": "Unconfirmed rewards should not be promised."
+        },
+        {
+          "fil": "Nirerespeto ang hadlang habang binubuksan ang pakikilahok.",
+          "en": "This respects the barrier while allowing participation."
+        }
+      ]
+    }
+  ]
+}

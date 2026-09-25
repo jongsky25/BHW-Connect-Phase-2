@@ -1,0 +1,35 @@
+[
+  {
+    "id": "slide-section-4",
+    "concept_ids": [
+      "m4.bhwe"
+    ],
+    "layout": "decision",
+    "heading_fil": "Ang BHW Eligibility (BHWE) sa Civil Service",
+    "heading_en": "BHW Eligibility (BHWE) in the Civil Service",
+    "display_fil": "BHWE: akreditasyon; hindi bababa sa dalawang taon ng kolehiyo; limang taon ng tuloy-tuloy, aktibo at full-time na boluntaryong serbisyo; satisfactory na record.\nBibilangin lang ang limang taon mula nang maakreditado, at kung walang bayad maliban sa honorarium.\nTiyakin sa CSC ang dokumento at lahat ng kondisyon.",
+    "display_en": "BHWE: accreditation; at least two years of college; five years of continuous, active, full-time voluntary service; a satisfactory record.\nThe five years count only after accreditation, and only if unpaid except for an honorarium.\nConfirm documentation and all conditions with CSC.",
+    "asset_ids": [
+      "practice-map"
+    ],
+    "check": {
+      "prompt_fil": "Saan titiyakin ang BHWE requirements?",
+      "prompt_en": "Where should BHWE requirements be confirmed?",
+      "options": [
+        {
+          "fil": "Sa opisyal na CSC guidance at kaukulang tanggapan.",
+          "en": "In official CSC guidance and with the responsible office."
+        },
+        {
+          "fil": "Sa sabi-sabi lamang.",
+          "en": "Only through hearsay."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Sa opisyal na CSC guidance at kaukulang tanggapan. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
+      "feedback_en": "In official CSC guidance and with the responsible office. Explain why using the lesson situation."
+    },
+    "narration_fil": "May hiwalay na kwalipikasyon para sa BHW Eligibility sa ilalim ng Civil Service Commission (CSC Resolution No. 99-2845). Apat na kondisyon ang kailangan: akreditado ng local health board; nakatapos ng minimum na dalawang (2) taon sa kolehiyo tungo sa isang degree; aktibo at boluntaryong naglilingkod nang tuloy-tuloy at full time sa loob ng limang (5) taon o higit pa bilang accredited BHW; at may satisfactory service bilang accredited BHW sa komunidad.\n\nBibilangin lang ang limang taon kung boluntaryo ang serbisyo — walang sahod o ibang bayad maliban sa honorarium sa buong panahon — at mula lamang nang akreditado na ang BHW. Hindi binibilang ang serbisyo bago ang 20 Pebrero 1995, nang maaprubahan ang RA 7883. Maaari pa ring mag-qualify ang BHW na naka-job order o contract of service.\n\nHindi ito parehong bagay sa pangkalahatang akreditasyon — mas mataas ang hinihingi nito, at para ito sa mga BHW na nais magkaroon ng opisyal na eligibility sa serbisyo sibil.",
+    "narration_en": "There is a separate qualification for BHW Eligibility under the Civil Service Commission (CSC Resolution No. 99-2845). Four conditions are required: accredited by the local health board; completed a minimum of two (2) years of college leading to a degree; actively and voluntarily serving continuously, full time, for five (5) years or more as an accredited BHW; and having a satisfactory service record as an accredited BHW in the community.\n\nThe five years count only if the service was voluntary — no salary or other pay except an honorarium for the whole period — and only from the time the BHW was already accredited. Service before 20 February 1995, when RA 7883 was approved, does not count. A BHW hired under a job order or contract of service can still qualify.\n\nThis is not the same thing as general accreditation — it asks for more, and it is for BHWs who want official eligibility in the civil service."
+  }
+]

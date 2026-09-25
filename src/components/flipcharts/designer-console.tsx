@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import { mapFlipchartRpcError } from "@/lib/flipcharts/error-messages";
 import type { FlipChart } from "@/lib/flipcharts/types";
@@ -17,6 +18,7 @@ type Props = {
 
 export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFullName, authorUsername }: Props) {
   const t = useTranslations("designer.flipcharts");
+  const tCrumbs = useTranslations("breadcrumbs");
   const [charts, setCharts] = useState(initialCharts);
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -55,6 +57,7 @@ export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFu
 
   return (
     <div className="flex flex-col gap-8">
+      <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
 
       {error ? (

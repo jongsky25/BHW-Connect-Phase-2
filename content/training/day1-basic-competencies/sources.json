@@ -1,0 +1,120 @@
+{
+  "$comment": "Citation registry for the Day 1: Basic Competencies course — a separate registry from content/kb/hhp-ncd/sources.json (each corpus keeps its own, per content/kb/README.md's corpus model), even where the same real source is cited by both. Only publicly resolvable sources belong here. Run `npm run kb:check-sources` before any demo — it checks every corpus, and flags an entry here that no qa-entries.json cites yet. Grows as modules 2-9 are authored (EO 51 Milk Code, RA 10028 Breastfeeding, AO 2015-0053, DC 2021-0486 — see docs/training-modules-plan.md §C) — add a source only once a module actually cites it, not ahead of authoring it. The three DOH source documents themselves are not listed here: they are unpublished working documents with no resolvable public URL, and are checked in as transcriptions at docs/source-material/day1-basic-competencies/ instead.",
+  "sources": {
+    "ra-11223": {
+      "label_en": "Republic Act 11223 — Universal Health Care Act of 2019",
+      "label_fil": "Republic Act 11223 — Universal Health Care Act of 2019",
+      "publisher": "Congress of the Philippines",
+      "year": 2019,
+      "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html"
+    },
+    "ra-7883": {
+      "label_en": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
+      "label_fil": "Republic Act 7883 — Barangay Health Workers' Benefits and Incentives Act of 1995",
+      "publisher": "Congress of the Philippines",
+      "year": 1995,
+      "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7883_1995.html"
+    },
+    "who-bhw-manual-ta": {
+      "label_en": "Technical assistance for the revision of the Barangay Health Worker's Reference Manual and development of online training modules",
+      "label_fil": "Teknikal na tulong sa rebisyon ng BHW Reference Manual at pagbuo ng online training modules",
+      "publisher": "WHO Western Pacific Region",
+      "year": 2021,
+      "url": "https://www.who.int/westernpacific/articles/item/technical-assistance-for-the-revision-of-barangay-health-worker-s-(bhw)-reference-manual-and-development-of-online-training-modules"
+    },
+    "eo-51": {
+      "label_en": "Executive Order No. 51, s. 1986 — the Philippine Milk Code",
+      "label_fil": "Executive Order No. 51, s. 1986 — ang Philippine Milk Code",
+      "publisher": "Office of the President of the Philippines",
+      "year": 1986,
+      "url": "https://lawphil.net/executive/execord/eo1986/eo_51_1986.html"
+    },
+    "ra-10028": {
+      "label_en": "Republic Act No. 10028 — Expanded Breastfeeding Promotion Act of 2009",
+      "label_fil": "Republic Act No. 10028 — Expanded Breastfeeding Promotion Act of 2009",
+      "publisher": "Congress of the Philippines",
+      "year": 2010,
+      "url": "https://lawphil.net/statutes/repacts/ra2010/ra_10028_2010.html"
+    },
+    "ao-2015-0053": {
+      "label_en": "DOH Administrative Order No. 2015-0053 — Implementing Guidelines on the Promotion and Marketing of Prescription Pharmaceutical Products and Medical Devices",
+      "label_fil": "DOH Administrative Order No. 2015-0053 — Implementing Guidelines on the Promotion and Marketing of Prescription Pharmaceutical Products and Medical Devices",
+      "publisher": "Department of Health, Philippines",
+      "year": 2015,
+      "url": "https://mcprinciples.apec.org/wp-content/uploads/2020/01/AO20150053.pdf"
+    },
+    "dc-2021-0486": {
+      "label_en": "DOH Department Circular 2021-0486 — Phased Implementation of the Prohibition on the Unnecessary Use of Single-Use Plastics in Hospitals, Other Health Facilities and DOH Offices",
+      "label_fil": "DOH Department Circular 2021-0486 — Unti-unting Pagbabawal sa Hindi Kinakailangang Paggamit ng Single-Use Plastics sa mga Ospital, Health Facilities, at Opisina ng DOH",
+      "publisher": "Department of Health, Philippines",
+      "year": 2021,
+      "url": "https://doh.gov.ph/sites/default/files/basic-page/dm2021-0486%20%281%29.pdf",
+      "wafBlocked": true
+    },
+    "tesda-bhs-2019": {
+      "label_en": "Barangay Health Services NC II Training Regulations, Revision 01",
+      "label_fil": "Barangay Health Services NC II Training Regulations, Revision 01",
+      "publisher": "TESDA",
+      "year": 2019,
+      "url": "https://tesda.gov.ph/Downloadables/Barangay%20Health%20Services%20NC%20II.pdf"
+    },
+    "ahrq-teach-back": {
+      "label_en": "Use the Teach-Back Method: Tool 5",
+      "label_fil": "Use the Teach-Back Method: Tool 5",
+      "publisher": "Agency for Healthcare Research and Quality",
+      "year": 2024,
+      "url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html"
+    },
+    "who-problem-analysis": {
+      "label_en": "Problem analysis approaches for the planning process",
+      "label_fil": "Problem analysis approaches for the planning process",
+      "publisher": "World Health Organization",
+      "year": 2019,
+      "url": "https://apps.who.int/wash-health-toolkit/contents/uploads/2019/05/Tool-10-Tool-Problem_analysis_approaches_for_the_planning_process.pdf"
+    },
+    "zff-rosario": {
+      "label_en": "Leadership Journey: Learning Journal and Workbook — Rosario case, pp.48–51",
+      "label_fil": "Leadership Journey: Learning Journal and Workbook — Rosario case, pp.48–51",
+      "publisher": "Zuellig Family Foundation",
+      "year": 2016,
+      "url": "https://zuelligfoundation.com/wp-content/uploads/2016/07/HLMP-Module-1-Workbook.compressed.pdf"
+    },
+    "cdc-blood-exposure": {
+      "label_en": "Best Practices for Occupational Exposure to Blood",
+      "label_fil": "Best Practices for Occupational Exposure to Blood",
+      "publisher": "Centers for Disease Control and Prevention",
+      "year": 2023,
+      "url": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html"
+    },
+    "who-occupational-infections": {
+      "label_en": "Occupational infections: preventive measures",
+      "label_fil": "Occupational infections: preventive measures",
+      "publisher": "World Health Organization",
+      "year": 2022,
+      "url": "https://www.who.int/tools/occupational-hazards-in-health-sector/occupational-infections"
+    },
+    "who-sustainable-facilities": {
+      "label_en": "Climate-resilient and environmentally sustainable health care facilities",
+      "label_fil": "Climate-resilient and environmentally sustainable health care facilities",
+      "publisher": "World Health Organization",
+      "year": 2020,
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/climate-change-and-health/country-support/climate-resilient-and-environmentally-sustainable-health-care-facilities"
+    },
+    "csc-res-99-2845": {
+      "label_en": "CSC Resolution No. 99-2845 (29 December 1999) — Implementing Guidelines in the Grant of Barangay Health Worker Eligibility (BHWE)",
+      "label_fil": "CSC Resolution No. 99-2845 (29 Disyembre 1999) — Mga Alituntunin sa Pagbibigay ng Barangay Health Worker Eligibility (BHWE)",
+      "publisher": "Civil Service Commission, Philippines",
+      "year": 1999,
+      "url": "https://csc.gov.ph/special-eligibilities/barangay-health-worker-eligibility",
+      "wafBlocked": true
+    },
+    "ra-7883-irr": {
+      "label_en": "Incentives and benefits of BHWs under the Implementing Rules and Regulations of RA 7883 — DOH Bureau of Local Health Development FAQ (archived 4 May 2022)",
+      "label_fil": "Mga insentibo at benepisyo ng BHW sa ilalim ng Implementing Rules and Regulations ng RA 7883 — FAQ ng DOH Bureau of Local Health Development (naka-archive, 4 Mayo 2022)",
+      "publisher": "Department of Health, Philippines",
+      "year": 2022,
+      "url": "https://web.archive.org/web/20220504133955/https://doh.gov.ph/faqs/What-are-the-incentives-and-benefits-of-BHWs-under-the-Implementing-Rules-and-Regulations-IRR-of-R.A.-7883",
+      "wafBlocked": true
+    }
+  }
+}

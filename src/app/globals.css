@@ -4,6 +4,8 @@
 @theme inline {
   --color-primary: var(--color-primary);
   --color-primary-display: var(--color-primary-display);
+  --color-primary-text: var(--color-primary-text);
+  --color-on-primary: var(--color-on-primary);
   --color-secondary: var(--color-secondary);
   --color-celebration: var(--color-celebration);
   --color-celebration-ink: var(--color-celebration-ink);
@@ -24,4 +26,23 @@ html {
 body {
   background: var(--color-canvas);
   color: var(--color-ink);
+}
+
+/* INC-28: an animated scene's data-scene-step elements (see LessonVisual in
+   lesson-module.tsx). No [data-revealed] attribute at all — before the
+   reveal effect has run, e.g. non-JS or pre-hydration — means fully shown,
+   which is also the correct prefers-reduced-motion end-state, so that case
+   needs no rule here at all. */
+[data-scene-step] {
+  transition: opacity 300ms ease;
+}
+
+[data-scene-step][data-revealed="false"] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-scene-step] {
+    transition: none;
+  }
 }

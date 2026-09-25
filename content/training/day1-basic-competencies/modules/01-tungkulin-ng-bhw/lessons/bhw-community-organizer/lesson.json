@@ -1,0 +1,241 @@
+{
+  "manifest": {
+    "lesson_key": "bhw-community-organizer",
+    "position": 2,
+    "title_fil": "Bilang Community Organizer",
+    "title_en": "As a Community Organizer",
+    "objectives_fil": [
+      "Mailarawan kung paano mag-anyaya ng pakikilahok at magdala ng obserbasyon sa lokal na pagpaplano."
+    ],
+    "objectives_en": [
+      "Describe how to invite participation and bring observations into local planning."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "organizer-scene",
+      "concept_ids": [
+        "m1.role.organizer"
+      ],
+      "asset_ids": [
+        "A01"
+      ],
+      "takeaway_fil": "Ugnayan at komunikasyon ang simula ng sama-samang pagkilos.",
+      "takeaway_en": "Relationships and communication begin collective action.",
+      "check": null
+    },
+    {
+      "id": "participation",
+      "concept_ids": [
+        "m1.organizer.participation"
+      ],
+      "asset_ids": [
+        "A04"
+      ],
+      "takeaway_fil": "Makinig sa tugon; buuin ang gawain kasama ang mga residente.",
+      "takeaway_en": "Listen to responses; shape the activity with residents.",
+      "check": null
+    },
+    {
+      "id": "planning-team",
+      "concept_ids": [
+        "m1.organizer.planningteam"
+      ],
+      "asset_ids": [
+        "A04"
+      ],
+      "takeaway_fil": "Ibahagi ang ebidensya, hindi ang hinalang parang tiyak na katotohanan.",
+      "takeaway_en": "Share evidence without presenting assumptions as established facts.",
+      "check": null
+    },
+    {
+      "id": "liph",
+      "concept_ids": [
+        "m1.organizer.liph"
+      ],
+      "asset_ids": [
+        "A04"
+      ],
+      "takeaway_fil": "Local Investment Plan for Health: may ambag ang barangay; kumpirmahin ang lokal na proseso.",
+      "takeaway_en": "Local Investment Plan for Health: barangays contribute; confirm the local process.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m1.role.organizer",
+        "m1.organizer.participation",
+        "m1.organizer.planningteam",
+        "m1.organizer.liph"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mag-ugnay ng tao, mag-anyaya ng pagkilos, at dalhin ang obserbasyon sa pagpaplano.",
+      "takeaway_en": "Connect people, invite action, and bring observations into planning.",
+      "check": {
+        "prompt_fil": "Alin ang malinaw na gawaing pang-organisa?",
+        "prompt_en": "Which is a clear organizing action?",
+        "options": [
+          {
+            "fil": "I-post ang plano at huwag nang humingi ng tugon.",
+            "en": "Post the plan without inviting responses."
+          },
+          {
+            "fil": "Pangakuan ng pondo ang bawat mungkahi.",
+            "en": "Promise funding for every suggestion."
+          },
+          {
+            "fil": "Anyayahan ang residente at health staff na magplano mula sa obserbasyon.",
+            "en": "Invite residents and health staff to plan using observations."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "May ugnayan, pakikilahok, at ambag sa pagpaplano. Hindi awtomatikong paglalaan ng pondo ang LIPH link.",
+        "feedback_en": "This combines relationships, participation, and planning input. The LIPH connection does not guarantee funding."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m1.role.organizer",
+      "read_ids": [
+        "organizer-scene",
+        "check"
+      ],
+      "slide_ids": [
+        "organizer-scene-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.role.organizer-d",
+        "m1.role.organizer-r"
+      ]
+    },
+    {
+      "id": "m1.organizer.participation",
+      "read_ids": [
+        "participation",
+        "check"
+      ],
+      "slide_ids": [
+        "participation-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.organizer.participation-d",
+        "m1.organizer.participation-r"
+      ]
+    },
+    {
+      "id": "m1.organizer.planningteam",
+      "read_ids": [
+        "planning-team",
+        "check"
+      ],
+      "slide_ids": [
+        "planning-team-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.organizer.planningteam-d",
+        "m1.organizer.planningteam-r"
+      ]
+    },
+    {
+      "id": "m1.organizer.liph",
+      "read_ids": [
+        "liph",
+        "check"
+      ],
+      "slide_ids": [
+        "liph-slide",
+        "check-slide"
+      ],
+      "source_ids": [
+        "m1.organizer.liph-r"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1.role.organizer-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        10
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.role.organizer-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.organizer.participation-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        10
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.organizer.participation-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.organizer.planningteam-d",
+      "title": "Day 1 presentation",
+      "pdf_pages": [
+        10
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/day1-part1-presentation.md"
+    },
+    {
+      "id": "m1.organizer.planningteam-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m1.organizer.liph-r",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        12
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "path": "/training/bhw-1-1/A01-83aeca62b560.svg",
+      "alt_fil": "Pagtuturo, pag-uusap sa komunidad, at paggabay sa residente.",
+      "alt_en": "Teaching, community discussion, and guiding a resident.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "approved",
+      "content_hash": "83aeca62b560e3cc3ad49b97cd921461deb996b174d315b7bc269dc9b027493e"
+    },
+    {
+      "id": "A04",
+      "path": "/training/bhw-1-1/A04-b4c8ec2f1411.svg",
+      "alt_fil": "Obserbasyon, pakikilahok, at ambag sa pagpaplano.",
+      "alt_en": "Observation, participation, and planning contributions.",
+      "caption_fil": "Eskematiko para sa pag-aaral; ang mga label sa aralin ang nagpapaliwanag ng kahulugan.",
+      "caption_en": "Learning schematic; the authored lesson labels convey its meaning.",
+      "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
+      "review_status": "approved",
+      "content_hash": "b4c8ec2f14110700a21b0ead42866f5ae29ed818936673af8f26880cc00a8723"
+    }
+  ]
+}

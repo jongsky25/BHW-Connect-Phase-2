@@ -34,7 +34,7 @@ export function ConsentForm() {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center gap-6 px-4 py-16 sm:px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col justify-center gap-6 px-4 py-16 sm:px-6">
       <div>
         <h1 className="text-3xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
         <p className="mt-2 text-ink/70">{t("intro")}</p>
@@ -57,7 +57,7 @@ export function ConsentForm() {
         type="button"
         onClick={handleAgree}
         disabled={loading}
-        className="self-start rounded-md bg-primary px-4 py-2 font-medium text-canvas transition-opacity disabled:opacity-60"
+        className="self-start rounded-md bg-primary px-4 py-2 font-medium text-on-primary transition-opacity disabled:opacity-60"
       >
         {loading ? t("submitting") : t("agree")}
       </button>

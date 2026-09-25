@@ -1,0 +1,176 @@
+{
+  "manifest": {
+    "lesson_key": "safety-demonstrate",
+    "position": 3,
+    "title_fil": "Ipakita ang ligtas na paraan",
+    "title_en": "Demonstrate safe practice",
+    "objectives_fil": [
+      "Gamit ang dummy equipment, sundin ang trainer-approved safety checklist at ipakita ang agarang reporting at referral response sa simulated needlestick."
+    ],
+    "objectives_en": [
+      "Using dummy equipment, follow the trainer-approved safety checklist and demonstrate immediate reporting and referral for a simulated needlestick."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "exposure",
+      "concept_ids": [
+        "m8.exposure"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang needlestick injury ay iulat at ipasuri kaagad; hindi sapat ang paghuhugas lamang.",
+      "takeaway_en": "Report and obtain immediate evaluation after a needlestick; washing alone is insufficient.",
+      "check": null
+    },
+    {
+      "id": "return-demo",
+      "concept_ids": [
+        "m8.practice",
+        "m8.prepare"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang competency ay nakikita sa ligtas na demonstrasyon sa loob ng saklaw ng pagsasanay.",
+      "takeaway_en": "Competence is shown through a safe demonstration within the scope of training.",
+      "check": null
+    },
+    {
+      "id": "near-miss",
+      "concept_ids": [
+        "m8.practice"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pag-uulat ng muntikang insidente ay pagkakataong maiwasan ang susunod na pinsala.",
+      "takeaway_en": "Reporting a near miss creates a chance to prevent the next injury.",
+      "check": null
+    },
+    {
+      "id": "practice",
+      "concept_ids": [
+        "m8.exposure",
+        "m8.practice",
+        "m8.prepare"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+      "takeaway_en": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m8.exposure",
+        "m8.practice",
+        "m8.prepare"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ipakita ang ligtas na gawain; sa exposure, agarang tulong ang una at hindi hinihintay ang sintomas.",
+      "takeaway_en": "Demonstrate safe practice; after exposure, obtain help immediately without waiting for symptoms.",
+      "check": {
+        "prompt_fil": "Natusok si Ana ng used needle ngunit walang sintomas. Ano ang gagawin?",
+        "prompt_en": "Ana has a used-needle injury but no symptoms. What should she do?",
+        "options": [
+          {
+            "fil": "Hugasan, iulat agad at magpa-medical evaluation kaagad.",
+            "en": "Wash, report immediately and obtain immediate medical evaluation."
+          },
+          {
+            "fil": "Hugasan at maghintay hanggang matapos ang visits.",
+            "en": "Wash and wait until the visits are finished."
+          },
+          {
+            "fil": "Pumili ng gamot mula sa available supplies.",
+            "en": "Choose medication from available supplies."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ang tamang sequence. Hindi sapat ang paghuhugas lamang; maaaring maantala ng paghihintay ang time-critical na assessment at treatment. Qualified provider ang magpapasya sa paggamot.",
+        "feedback_en": "The first response follows the required sequence. Washing alone is insufficient; waiting can delay time-critical assessment and treatment. A qualified provider decides treatment."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "m8.exposure",
+      "read_ids": [
+        "exposure",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-exposure",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "cdc-exposure"
+      ]
+    },
+    {
+      "id": "m8.practice",
+      "read_ids": [
+        "return-demo",
+        "near-miss",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-return-demo",
+        "slide-near-miss",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "cdc-exposure"
+      ]
+    },
+    {
+      "id": "m8.prepare",
+      "read_ids": [
+        "return-demo",
+        "practice",
+        "check"
+      ],
+      "slide_ids": [
+        "slide-return-demo",
+        "slide-practice",
+        "slide-check"
+      ],
+      "source_ids": [
+        "facilitator",
+        "manual",
+        "cdc-exposure"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "facilitator",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        30
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        21,
+        22,
+        23
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/6c5e05ab16c0290072c6c67e6ed8ad56436b76b3/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "cdc-exposure",
+      "title": "CDC — Best Practices for Occupational Exposure to Blood",
+      "url": "https://www.cdc.gov/dental-infection-control/hcp/dental-ipc-faqs/occupational-exposure.html"
+    }
+  ],
+  "assets": []
+}

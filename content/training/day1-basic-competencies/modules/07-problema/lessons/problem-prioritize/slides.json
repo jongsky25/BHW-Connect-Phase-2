@@ -1,0 +1,74 @@
+[
+  {
+    "id": "slide-criteria",
+    "concept_ids": [
+      "m7.prioritize"
+    ],
+    "layout": "process",
+    "heading_fil": "Piliin ang prayoridad nang malinaw",
+    "heading_en": "Make priorities explicit",
+    "display_fil": "Marka 1–5: laki, kabigatan, kakayahang malutas, pagkamadalian. Mas mataas na feasibility = mas kayang gawin. Pagsamahin, saka talakayin ang ebidensya. Ang agarang pangangailangan ng pangangalaga ay hindi naghihintay sa ranking.",
+    "display_en": "Score 1–5: magnitude, seriousness, feasibility, urgency. Higher feasibility means more achievable. Add the scores, then discuss evidence. Immediate care must not wait for ranking.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-worked-scores",
+    "concept_ids": [
+      "m7.prioritize"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan ang pagmamarka",
+    "heading_en": "Try scoring priorities",
+    "display_fil": "Halimbawang score: training gap 4+5+5+5=19; safe-water teaching 4+3+5+5=17; household knowledge 3+3+5+5=16. Ayos: laki, kabigatan, feasibility, urgency. Hindi ito sukat ng inyong barangay.",
+    "display_en": "Example scores: training gap 4+5+5+5=19; safe-water teaching 4+3+5+5=17; household knowledge 3+3+5+5=16. Order: magnitude, seriousness, feasibility, urgency. These are not local measurements.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m7.prioritize"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Kwentahin ang 19, 17, 16. Ipaliwanag ang ebidensya. Kapag tabla, talakayin ang urgency at resources; huwag baguhin ang score nang walang dahilan.",
+    "display_en": "Calculate 19, 17, 16. Explain the evidence. For a tie, discuss urgency and resources; do not change scores without reasons.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m7.prioritize"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ang total ay gabay sa pagpaplano; kailangan pa rin ang ebidensya, pag-uusap at agarang referral kapag kailangan.",
+    "display_en": "Totals guide planning; evidence, discussion and urgent referral when needed still matter.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Parehong 17 ang dalawang problema. Alin ang gagawin ng grupo?",
+      "prompt_en": "Two problems both score 17. What should the group do?",
+      "options": [
+        {
+          "fil": "Balikan ang ebidensya, urgency at resources bago magkasundo.",
+          "en": "Revisit evidence, urgency and resources before agreeing."
+        },
+        {
+          "fil": "Unahin ang unang nakasulat para mabilis.",
+          "en": "Choose the first listed to save time."
+        },
+        {
+          "fil": "Dagdagan ng isa ang gusto ng lider kahit walang bagong ebidensya.",
+          "en": "Add one point to the leader’s preference without new evidence."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "Ang unang sagot ay may batayan at bukas sa grupo. Ang pagkakasunod sa listahan at kagustuhan ng lider ay hindi dagdag na ebidensya. Kung may nangangailangan ng agarang pangangalaga, sundin agad ang referral protocol.",
+      "feedback_en": "The first response is evidence-based and open to the group. List order and a leader’s preference are not additional evidence. Follow referral procedures immediately for someone needing urgent care."
+    }
+  }
+]

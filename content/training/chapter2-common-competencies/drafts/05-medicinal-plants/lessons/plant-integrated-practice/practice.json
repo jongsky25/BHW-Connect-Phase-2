@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-plant-integrated-practice",
+  "objective_id": "plant-integrated-practice.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring magkamali sa halaman.",
+          "en": "The plant may be misidentified."
+        },
+        {
+          "fil": "Magandang simula ang kumpirmadong reference.",
+          "en": "A verified reference is the proper start."
+        },
+        {
+          "fil": "Wala pang clinical at lokal na pahintulot.",
+          "en": "Clinical and local authorization are missing."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi awtorisado ang pagpapalit ng gamot.",
+          "en": "Changing treatment is not authorized."
+        },
+        {
+          "fil": "Kailangan ang kumpletong impormasyon.",
+          "en": "Complete information is needed."
+        },
+        {
+          "fil": "Mahalaga ang clinical advice bago maghanda o gumamit.",
+          "en": "Clinical advice matters before preparation or use."
+        }
+      ]
+    }
+  ]
+}

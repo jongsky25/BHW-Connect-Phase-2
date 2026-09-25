@@ -22,14 +22,14 @@ export function FlipchartViewer({ pages }: Props) {
         <button
           type="button"
           onClick={() => setView("client")}
-          className={`rounded-full border px-4 py-1.5 text-sm font-medium ${view === "client" ? "border-primary text-primary" : "border-ink/20 text-ink/70"}`}
+          className={`rounded-full border px-4 py-1.5 text-sm font-medium ${view === "client" ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
         >
           {t("clientViewToggle")}
         </button>
         <button
           type="button"
           onClick={() => setView("bhw")}
-          className={`rounded-full border px-4 py-1.5 text-sm font-medium ${view === "bhw" ? "border-primary text-primary" : "border-ink/20 text-ink/70"}`}
+          className={`rounded-full border px-4 py-1.5 text-sm font-medium ${view === "bhw" ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
         >
           {t("bhwViewToggle")}
         </button>

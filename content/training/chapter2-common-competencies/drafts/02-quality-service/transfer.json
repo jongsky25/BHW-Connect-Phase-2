@@ -1,0 +1,121 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Sa loob ng 2–4 linggo, ipasuri ang isang mungkahing pagpapabuti sa supervisor gamit ang job aid.",
+    "en": "Within 2–4 weeks, review one improvement proposal with the supervisor using the job aid."
+  },
+  "supervision": {
+    "fil": "Gamitin ang parehong indicator; obserbahan, magbigay ng feedback at umulit.",
+    "en": "Use the same indicator; observe, give feedback and retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "effective-safe-person-centered",
+      "check": {
+        "prompt_fil": "Tama na ang iskedyul, pero may harang at hindi narinig si Nena. Ano pa ang kailangan?",
+        "prompt_en": "The schedule is correct, but the path is blocked and Nena was not heard. What is still needed?",
+        "options": [
+          {
+            "fil": "Ulitin nang mas mabilis ang iskedyul upang makaalis siya.",
+            "en": "Repeat the schedule faster so she can leave."
+          },
+          {
+            "fil": "Pansinin ang harang at pakinggan si Nena.",
+            "en": "Address the obstacle and listen to Nena."
+          },
+          {
+            "fil": "Sabihing maayos na ang lahat dahil tama ang impormasyon.",
+            "en": "Declare the service complete because the information is correct."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi nito naaayos ang panganib o pakikilahok. 2: Kailangan din ang kaligtasan at pagtugon sa pangangailangan. 3: Isang katangian lamang ang nasuri; kulang ang dalawa.",
+        "feedback_en": "1: This addresses neither the risk nor participation. 2: Safety and responsiveness to needs also matter. 3: Only one dimension has been checked; two remain."
+      }
+    },
+    {
+      "lesson_key": "privacy-and-inclusion",
+      "check": {
+        "prompt_fil": "Hiniling ni Alex na basahin nang dahan-dahan ang form. Ano ang angkop?",
+        "prompt_en": "Alex asks for the form to be read slowly. What is appropriate?",
+        "options": [
+          {
+            "fil": "Basahin sa napagkasunduang lugar.",
+            "en": "Read it in the agreed setting."
+          },
+          {
+            "fil": "Sabihing bumalik lamang kapag kaya nang basahin mag-isa.",
+            "en": "Ask Alex to return only when able to read it alone."
+          },
+          {
+            "fil": "Ipasa sa unang kakilala sa pila nang hindi muna nagtatanong.",
+            "en": "Hand it to the first acquaintance in the queue without asking."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tumutugon ito sa hiniling na tulong at pribadong usapan. 2: Gumagawa ito ng hadlang sa halip na magbigay ng tulong. 3: Hindi awtomatikong pinahintulutan ang ibang tao na makakita ng form.",
+        "feedback_en": "1: This respects the requested support and privacy. 2: This creates a barrier instead of support. 3: Another person is not automatically authorized to see the form."
+      }
+    },
+    {
+      "lesson_key": "timely-integrated-service",
+      "check": {
+        "prompt_fil": "Gustong bawasan ang dobleng form. Ano ang ligtas na mungkahi?",
+        "prompt_en": "The group wants to reduce duplicate forms. Which proposal is appropriate?",
+        "options": [
+          {
+            "fil": "Itapon ang lahat ng lumang form upang wala nang ulit.",
+            "en": "Discard all old forms so nothing can be repeated."
+          },
+          {
+            "fil": "Laktawan ang lahat ng tanong kahit kailangan ng staff.",
+            "en": "Skip every question even when staff need it."
+          },
+          {
+            "fil": "Ipasuri ang paggamit ng naunang tala.",
+            "en": "Ask staff to review use of the earlier record."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring kailangan pa ang mga tala; hindi ito pasya ng BHW lamang. 2: Maaaring mawala ang mahalagang pagsusuri. 3: Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.",
+        "feedback_en": "1: Records may still be required; this is not the BHW’s decision alone. 2: Necessary checks could be lost. 3: This explores less duplication while preserving required processes."
+      }
+    },
+    {
+      "lesson_key": "seven-s-improvement",
+      "check": {
+        "prompt_fil": "Nalinis na ang mesa. Ano ang makatutulong upang magpatuloy ang 7S?",
+        "prompt_en": "The desk is clean. What helps 7S continue?",
+        "options": [
+          {
+            "fil": "Alisin ang checklist para wala nang susunod na gawain.",
+            "en": "Remove the checklist so there are no further tasks."
+          },
+          {
+            "fil": "Itakda ang tao, routine at review.",
+            "en": "Assign an owner, routine and review."
+          },
+          {
+            "fil": "Sabihing tapos na ang lahat dahil isang beses nang nalinis.",
+            "en": "Declare everything finished because it was cleaned once."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Nawawala ang gabay sa pagpapanatili. 2: May pananagutan at pagbalik sa resulta, hindi minsanang paglilinis. 3: Hindi nito sinusuri kung napapanatili ang pitong kategorya.",
+        "feedback_en": "1: The guide for maintaining the work is lost. 2: This provides responsibility and follow-up beyond one cleaning session. 3: This does not check whether the seven categories are maintained."
+      }
+    }
+  ],
+  "localization_slots": [
+    "supervisor_or_organizer",
+    "authorized_reporting_channel",
+    "accessible_meeting_place",
+    "confirmed_resource_contact"
+  ]
+}

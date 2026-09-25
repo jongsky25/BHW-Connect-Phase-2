@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-hand-hygiene",
+  "objective_id": "hand-hygiene.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Kailangan ang sabon at tubig para sa nakikitang dumi.",
+          "en": "Visible dirt calls for soap and water."
+        },
+        {
+          "fil": "Kulang ang sabon, pagkuskos sa lahat ng bahagi at pagpapatuyo.",
+          "en": "Soap, all-surface rubbing and drying are missing."
+        },
+        {
+          "fil": "Gawin ang buong paghuhugas at tamang pagpapatuyo.",
+          "en": "Complete washing and appropriate drying."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi.",
+          "en": "Let hands dry while completing rubbing across all surfaces."
+        },
+        {
+          "fil": "Hindi dapat punasan ang handrub at maaaring makontamina muli.",
+          "en": "Handrub should not be wiped off; hands may be recontaminated."
+        },
+        {
+          "fil": "Hindi bahagi ng handrub ang pagbanlaw nito.",
+          "en": "Rinsing is not part of the handrub procedure."
+        }
+      ]
+    }
+  ]
+}

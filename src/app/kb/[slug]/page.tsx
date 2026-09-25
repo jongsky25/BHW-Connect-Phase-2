@@ -1,11 +1,10 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { ArticleViewer } from "@/components/kb/article-viewer";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
 type CategoryRow = { id: string; name_fil: string; name_en: string; slug: string };
 type EntryRow = { id: string; question_fil: string; question_en: string; answer_fil: string; answer_en: string };
@@ -16,30 +15,32 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getRequestAuthUser();
 
   if (!user) {
     redirect("/login");
   }
 
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getRequestAppUser(user.id);
   if (!appUser) {
     redirect("/login");
   }
 
-  const { data: category } = await supabase
-    .from("kb_categories")
-    .select("id, name_fil, name_en, slug")
-    .eq("slug", slug)
-    .maybeSingle<CategoryRow>();
+  const [{ data: category }, t, tCrumbs, locale, flags] = await Promise.all([
+    supabase
+      .from("kb_categories")
+      .select("id, name_fil, name_en, slug")
+      .eq("slug", slug)
+      .maybeSingle<CategoryRow>(),
+    getTranslations("kb"),
+    getTranslations("breadcrumbs"),
+    getLocale(),
+    getRequestFeatureFlags(),
+  ]);
 
   if (!category) {
     notFound();
   }
-
-  const t = await getTranslations("kb");
-  const locale = await getLocale();
-  const flags = await getFeatureFlags(supabase);
 
   const [{ data: entries }, { data: articles }] = await Promise.all([
     supabase
@@ -56,11 +57,11 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
           .eq("status", "published")
           .returns<ArticleRow[]>()
       : Promise.resolve({ data: [] as ArticleRow[] }),
+    // Best-effort: visiting a published category satisfies the "visit a KB
+    // category" onboarding step. Runs alongside the reads above so it adds
+    // no extra round trip to the render.
+    supabase.rpc("rpc_onboarding_complete_step", { p_step: "kb" }),
   ]);
-
-  // Best-effort: visiting a published category satisfies the "visit a KB
-  // category" onboarding step. Never blocks the page render.
-  await supabase.rpc("rpc_onboarding_complete_step", { p_step: "kb" });
 
   const entryRows = entries ?? [];
   const articleRows = articles ?? [];
@@ -79,11 +80,15 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   const isEmpty = entryRows.length === 0 && articleRows.length === 0;
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <div>
-        <Link href="/kb" className="text-sm font-medium text-ink underline hover:text-secondary">
-          {t("backToCategories")}
-        </Link>
+        <Breadcrumbs
+          items={[
+            { label: tCrumbs("home"), href: "/home" },
+            { label: t("browseHeading"), href: "/kb" },
+            { label: locale === "en" ? category.name_en : category.name_fil },
+          ]}
+        />
         <h1 className="mt-2 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           {locale === "en" ? category.name_en : category.name_fil}
         </h1>

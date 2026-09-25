@@ -1,0 +1,105 @@
+[
+  {
+    "id": "slide-compare-solutions",
+    "concept_ids": [
+      "m7.solutions"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Solusyon na tumatama sa sanhi",
+    "heading_en": "Match the solution to the cause",
+    "display_fil": "Poster lang o pagtalakay ng ibang oras? Piliin ang tumutugon sa sanhi. Suriin ang oras, tao at gastos. Ang bagong serbisyo o pondo ay kailangan munang sang-ayunan ng may tungkulin.",
+    "display_en": "A poster alone or discussion of another time? Match the response to the cause. Check time, people and costs. New services or funding need agreement from the responsible authority.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-plan",
+    "concept_ids": [
+      "m7.recommend",
+      "m7.mobilize"
+    ],
+    "layout": "process",
+    "heading_fil": "Mula mungkahi tungo sa napagkasunduang gawain",
+    "heading_en": "Turn a proposal into agreed work",
+    "display_fil": "Ngayong linggo: kausapin ang pamilya → ipasa ang pinagsamang gustong oras → talakayin ang trial sa midwife at planning team. Itala ang owner, resources, deadline, attendance measure at review date.",
+    "display_en": "This week: consult households → aggregate preferred times → discuss a trial with the midwife and planning team. Record the owner, resources, deadline, attendance measure and review date.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-partners",
+    "concept_ids": [
+      "m7.mobilize"
+    ],
+    "layout": "process",
+    "heading_fil": "Sino ang dapat kasama?",
+    "heading_en": "Who should take part?",
+    "display_fil": "Kasama ang apektadong residente, health team at barangay o ibang ahensya kung kailangan. Ihiwalay ang kayang gawin ng BHW at kailangang desisyon ng iba. Ibalik sa residente ang napagkasunduan.",
+    "display_en": "Include affected residents, the health team and barangay or other agencies as needed. Separate BHW actions from decisions others must make. Return the agreement to residents.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-review",
+    "concept_ids": [
+      "m7.recommend"
+    ],
+    "layout": "process",
+    "heading_fil": "Kapag hindi gumana ang unang plano",
+    "heading_en": "When the first plan does not work",
+    "display_fil": "Mas maaga na ang schedule ngunit may hindi pa rin nakapunta. Balikan ang trabaho, gastos at abiso. Ihambing ang invited at attendance; baguhin ang maling palagay. Hindi sapat ang isang trial para sabihing lutas na.",
+    "display_en": "The schedule moved earlier but visits were still missed. Recheck work, costs and notice. Compare invitations with attendance and revise the wrong assumption. One trial does not establish resolution.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m7.solutions",
+      "m7.recommend",
+      "m7.mobilize"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Sanhi → solusyon → owner at resources → deadline → sukatan at review. Kumpirmahin ang ambag bago mangako.",
+    "display_en": "Cause → solution → owner and resources → deadline → measure and review. Confirm contributions before making promises.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m7.solutions",
+      "m7.recommend",
+      "m7.mobilize"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ang plano ay may taong kikilos at paraan upang malaman kung bumaba ang hadlang.",
+    "display_en": "A plan names who acts and how to tell whether the barrier decreased.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "Nagawa ang meeting ngunit hindi dumami ang nakarating. Ano ang tamang review?",
+      "prompt_en": "The meeting happened but attendance did not improve. What review is useful?",
+      "options": [
+        {
+          "fil": "Ituring na tagumpay dahil natapos ang meeting.",
+          "en": "Declare success because the meeting finished."
+        },
+        {
+          "fil": "Ulitin ang parehong plano nang walang bagong tanong.",
+          "en": "Repeat the same plan without new questions."
+        },
+        {
+          "fil": "Balikan ang hadlang at ihambing ang invitations at attendance bago magbago.",
+          "en": "Recheck barriers and compare invitations with attendance before revising."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "Ang ikatlong sagot ay sumusukat sa resulta. Ang meeting ay gawain, hindi patunay na nawala ang hadlang; ang basta pag-uulit ay maaaring maulit ang maling palagay.",
+      "feedback_en": "The third response examines results. A meeting is an activity, not proof that a barrier disappeared; repetition may preserve the wrong assumption."
+    }
+  }
+]

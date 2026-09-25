@@ -1,0 +1,98 @@
+[
+  {
+    "id": "slide-station-preparation",
+    "concept_ids": [
+      "m8.prepare",
+      "m8.practice"
+    ],
+    "layout": "process",
+    "heading_fil": "Ihanda ang lugar at kagamitan",
+    "heading_en": "Prepare the area and equipment",
+    "display_fil": "Itama ang madulas na pasukan. Suriin ang sharps box, hand-hygiene supplies at PPE. Tiyakin ang ligtas na ruta at incident contact. Kulang ang proteksyon o lampas sa training? Mag-pause at kausapin ang supervisor.",
+    "display_en": "Correct the slippery entrance. Check the sharps container, hand-hygiene supplies and PPE. Confirm a safe route and incident contact. Missing protection or beyond training? Pause and contact the supervisor.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-field-preparation",
+    "concept_ids": [
+      "m8.accidents",
+      "m8.heat"
+    ],
+    "layout": "process",
+    "heading_fil": "Planuhin ang ligtas na pagbisita",
+    "heading_en": "Plan a safe field visit",
+    "display_fil": "Suriin ang panahon, daan, aso at banta. Ipaalam ang ruta at oras ng balik; buddy kung kailangan sa protocol. Magdala ng tubig, planuhin ang lilim at pahinga. Huwag pumasok sa hindi ligtas na sitwasyon.",
+    "display_en": "Check weather, paths, dogs and threats. Share the route and return time; use a buddy when the protocol requires it. Carry water and plan shade and rest. Do not enter an unsafe situation.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-combined-hazards",
+    "concept_ids": [
+      "m8.prepare",
+      "m8.requirements"
+    ],
+    "layout": "process",
+    "heading_fil": "Kapag pinagsama ang mga panganib",
+    "heading_en": "When hazards combine",
+    "display_fil": "Mainit, maraming kliyente at kulang ang PPE: tukuyin ang ihihinto, maaaring baguhin at kailangang pasya ng supervisor. Isama ang staffing at daloy ng kliyente; hindi puro dagdag-oras ng BHW ang sagot.",
+    "display_en": "Heat, a client surge and missing PPE: identify what pauses, what can change and what needs a supervisor’s decision. Consider staffing and client flow; extra BHW hours cannot be the only response.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-practice",
+    "concept_ids": [
+      "m8.prepare",
+      "m8.practice",
+      "m8.accidents",
+      "m8.heat",
+      "m8.requirements"
+    ],
+    "layout": "process",
+    "heading_fil": "Subukan, saka ulitin",
+    "heading_en": "Try it, then repeat",
+    "display_fil": "Bago umalis: saklaw, supplies, ruta, contact, oras ng balik, pause conditions. Iulat ang kulang at kumuha ng ligtas na alternatibo.",
+    "display_en": "Before leaving: scope, supplies, route, contact, return time, pause conditions. Report gaps and arrange a safe alternative.",
+    "asset_ids": [],
+    "check": null
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m8.prepare",
+      "m8.practice",
+      "m8.accidents",
+      "m8.heat",
+      "m8.requirements"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang susunod na hakbang",
+    "heading_en": "Choose the next step",
+    "display_fil": "Ang checklist ay dapat may desisyon kung ligtas nang magsimula, hindi listahan lamang ng gamit.",
+    "display_en": "A checklist must support a decision about safe starting conditions, not just list equipment.",
+    "asset_ids": [],
+    "check": {
+      "prompt_fil": "May banta sa ruta ngunit mahaba pa ang visit list. Ano ang ligtas na hakbang?",
+      "prompt_en": "There is a threat on the route but many visits remain. What is safe?",
+      "options": [
+        {
+          "fil": "Ituloy mag-isa para matapos agad.",
+          "en": "Continue alone to finish quickly."
+        },
+        {
+          "fil": "Iwasan ang banta at ayusin ang alternatibo kasama ang supervisor.",
+          "en": "Avoid the threat and arrange an alternative with the supervisor."
+        },
+        {
+          "fil": "Huwag ipaalam ang pagbabago ng ruta upang hindi makaabala.",
+          "en": "Change the route without telling anyone to avoid disruption."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "Ang ikalawang sagot ay inuuna ang ligtas na paraan at koordinasyon. Ang visit target ay hindi dahilan upang pumasok sa banta; kailangan pa ring alam ang ruta at oras ng balik.",
+      "feedback_en": "The second response secures a safe approach and coordination. Visit targets do not justify entering danger; the route and return time still need to be known."
+    }
+  }
+]

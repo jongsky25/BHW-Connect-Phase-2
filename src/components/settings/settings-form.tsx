@@ -65,7 +65,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
     // This is the one screen where a user can select dark theme / high
     // contrast, so it's also the one place its own controls get exercised
     // against every combination. bg-ink/text-canvas is used instead of the
-    // usual bg-primary/text-canvas or text-success accents because ink and
+    // usual bg-primary/text-on-primary or text-success accents because ink and
     // canvas are always each other's inverse in every theme + contrast
     // state, guaranteeing AA contrast; primary and success are fixed brand
     // colors tuned against the default palette and don't hold up once

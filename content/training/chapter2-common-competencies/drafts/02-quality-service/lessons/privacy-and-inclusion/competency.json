@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Hindi inilalantad ang kondisyon; humihingi ng pahintulot sa lugar at tulong; nagbibigay ng paliwanag nang walang panghuhusga.",
+      "observable_en": "Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.",
+      "not_yet_fil": "Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.",
+      "not_yet_en": "Discloses the condition to the queue or refuses support because Alex finds reading difficult.",
+      "levels": {
+        "kaya_na_fil": "Nakapag-alok ng pribadong tulong ayon sa hiling ni Alex nang walang bansag o sapilitang pagsama ng ibang tao.",
+        "kaya_na_en": "Offers private support matched to Alex’s request without labels or imposing another person’s involvement.",
+        "kailangan_practice_fil": "Nag-alok ng pribadong lugar pero kailangang paalalahanang itanong ang gustong tulong.",
+        "kailangan_practice_en": "Offers privacy but needs a prompt to ask what support is preferred.",
+        "hindi_pa_fil": "Ibinubunyag ang kondisyon sa pila o tinatanggihan ang tulong dahil nahihirapang bumasa si Alex.",
+        "hindi_pa_en": "Discloses the condition to the queue or refuses support because Alex finds reading difficult."
+      }
+    }
+  ]
+}

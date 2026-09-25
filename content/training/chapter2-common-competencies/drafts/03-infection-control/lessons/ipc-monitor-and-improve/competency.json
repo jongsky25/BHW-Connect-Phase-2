@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May tiyak na gap, pag-uulat, responsable, petsa at ebidensiya; naihihiwalay ang pangako sa naobserbahang resulta.",
+      "observable_en": "Records a specific gap, report, owner, date and evidence; distinguishes promises from observed results.",
+      "not_yet_fil": "Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.",
+      "not_yet_en": "Marks unresolved work complete or assumes everyone is competent from attendance.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang card, tapat ang resolved at unresolved na resulta, at may susunod na aksyon nang walang paalala.",
+        "kaya_na_en": "Completes the card with accurate resolved and unresolved outcomes and next actions without prompting.",
+        "kailangan_practice_fil": "Malinaw ang gap pero kailangang paalalahanang magtakda ng follow-up o ebidensiya.",
+        "kailangan_practice_en": "States the gap clearly but needs a prompt to set follow-up or evidence.",
+        "hindi_pa_fil": "Minamarkahang tapos ang hindi pa naayos o ipinapalagay na competent ang lahat mula sa attendance.",
+        "hindi_pa_en": "Marks unresolved work complete or assumes everyone is competent from attendance."
+      }
+    }
+  ]
+}

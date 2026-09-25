@@ -57,6 +57,14 @@ test("Chat Guide intercepts a red flag, asks the deeper question, and resolves a
 }) => {
   await loginAsBhw(page);
 
+  // Assert the resting state rather than assuming it. If an earlier attempt
+  // timed out, Playwright disposed its `request` context before the `finally`
+  // below could restore the flag ("Target page, context or browser has been
+  // closed"), leaving chat_conversation ON — which made every retry fail here
+  // on `before.route` === "red_flag", turning one slow attempt into a hard,
+  // deterministic failure. Setting it explicitly makes retries recoverable.
+  await setConversationFlag(request, false);
+
   // With the flag off the response carries no route and the symptomatic
   // question is answered by whatever scores highest — the behaviour this
   // increment exists to change. Asserted so the rollback path is real.

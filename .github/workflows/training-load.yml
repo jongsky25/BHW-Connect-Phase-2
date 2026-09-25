@@ -1,0 +1,95 @@
+name: Training content load
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Explicit loader scope; hierarchy stages unavailable chapters"
+        required: true
+        default: lessons
+        type: choice
+        options: [hierarchy, course, content, lessons, activities, assessments, kb]
+      project:
+        description: "Supabase project ref"
+        required: true
+        default: "ltzicxyefizxoqhfuuzc"
+        type: string
+      org_unit:
+        description: "Org unit name"
+        required: true
+        default: "Los Baños"
+        type: string
+      apply:
+        description: "Write (true) or dry run (false)"
+        required: true
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+      publish:
+        description: "Promote selected lessons, or publish course/KB; requires apply"
+        required: false
+        default: false
+        type: boolean
+      modules:
+        description: "Selected stable module keys; required for content/lessons/activities"
+        required: false
+        default: "01-tungkulin-ng-bhw"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: training-load-${{ inputs.project }}
+  cancel-in-progress: false
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Load selected training scope
+        env:
+          KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
+          KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
+          KB_LOADER_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          LOAD_MODE: ${{ inputs.mode }}
+          LOAD_PROJECT: ${{ inputs.project }}
+          LOAD_ORG_UNIT: ${{ inputs.org_unit }}
+          LOAD_APPLY: ${{ inputs.apply }}
+          LOAD_PUBLISH: ${{ inputs.publish }}
+          LOAD_MODULES: ${{ inputs.modules }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$KB_LOADER_PASSWORD" ] || [ -z "$KB_LOADER_ANON_KEY" ]; then
+            echo "::error::Missing loader password or pilot anon key in repository secrets."
+            exit 1
+          fi
+          args=(--mode "$LOAD_MODE" --project "$LOAD_PROJECT" --org-unit "$LOAD_ORG_UNIT")
+          if [ -n "$LOAD_MODULES" ]; then args+=(--modules "$LOAD_MODULES"); fi
+          if [ "$LOAD_APPLY" = "true" ]; then args+=(--apply); else args+=(--dry-run); fi
+          if [ "$LOAD_PUBLISH" = "true" ]; then
+            if [ "$LOAD_APPLY" != "true" ]; then
+              echo "::error::Publication requires apply=true. Run an ordinary dry run first."
+              exit 1
+            fi
+            args+=(--publish)
+            if [ "$LOAD_MODE" = "kb" ]; then args+=(--owner "$KB_LOADER_USERNAME"); fi
+          fi
+          npm run training:load -- "${args[@]}" 2>&1 | tee training-load.log
+      - name: Upload loader evidence and resulting lock
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-load-${{ github.run_id }}
+          path: |
+            training-load.log
+            content/training/day1-basic-competencies/locks/*.json
+          retention-days: 30
+          if-no-files-found: ignore

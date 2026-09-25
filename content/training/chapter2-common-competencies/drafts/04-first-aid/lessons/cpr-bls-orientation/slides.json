@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.hazard",
+      "c2.firstaid.cpr.bls.orientation.action",
+      "c2.firstaid.cpr.bls.orientation.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: Ang training manikin ay adult na hindi tumutugon at hindi…",
+    "display_en": "Case: A training manikin represents an adult who is unresponsive…",
+    "check": null,
+    "narration_fil": "Ang training manikin ay adult na hindi tumutugon at hindi normal ang paghinga. May AED trainer sa tabi.",
+    "narration_en": "A training manikin represents an adult who is unresponsive and not breathing normally. An AED trainer is nearby."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.hazard",
+      "c2.firstaid.cpr.bls.orientation.action",
+      "c2.firstaid.cpr.bls.orientation.escalation"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Humingi ng tulong at AED\nSundin ang kasalukuyang adult BLS algorithm ng kwalipikadong…\nMagsanay sa manikin at AED trainer; ihiwalay ang algorithm para…",
+    "display_en": "Activate help and request an AED\nFollow the current adult BLS algorithm demonstrated by a…\nPractise compressions and AED prompts on approved equipment;…",
+    "check": null,
+    "narration_fil": "Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod.",
+    "narration_en": "Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.hazard"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+      "prompt_en": "In this case, what comes first?",
+      "options": [
+        {
+          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+          "en": "Use the shortcut before confirming the facts."
+        },
+        {
+          "fil": "Tumawag at humingi ng AED.",
+          "en": "Call and request an AED."
+        },
+        {
+          "fil": "Maghintay muna at huwag ipaalam sa staff.",
+          "en": "Wait without notifying the responsible staff."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
+      "feedback_en": "1: The shortcut can cause harm: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.hazard",
+      "c2.firstaid.cpr.bls.orientation.action",
+      "c2.firstaid.cpr.bls.orientation.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong…\nMagsanay sa manikin at AED trainer; ihiwalay ang algorithm para…",
+    "display_en": "Follow the current adult BLS algorithm demonstrated by a…\nPractise compressions and AED prompts on approved equipment;…",
+    "check": null,
+    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Humingi ng tulong at AED. Sundin ang kasalukuyang adult BLS algorithm ng kwalipikadong trainer. Magsanay sa manikin at AED trainer; ihiwalay ang algorithm para sa bata at pagkalunod. Iniiwasan ni Lea ang shortcut.",
+    "narration_en": "This is the safe response in the case. Activate help and request an AED. Follow the current adult BLS algorithm demonstrated by a qualified trainer. Practise compressions and AED prompts on approved equipment; distinguish the pediatric algorithm and drowning response before any child or water case. Lea avoids the shortcut."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.hazard",
+      "c2.firstaid.cpr.bls.orientation.action",
+      "c2.firstaid.cpr.bls.orientation.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag umasa lamang sa pulso kung hindi sanay\nHuwag mag-compression sa totoong tao\nHindi sertipikasyon ang lumang CAB talata",
+    "display_en": "Do not use a pulse check as the only gate for an untrained…",
+    "check": null,
+    "narration_fil": "Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata.",
+    "narration_en": "Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.action",
+      "c2.firstaid.cpr.bls.orientation.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang dapat ipakita sa practice?",
+      "prompt_en": "What should the practice show?",
+      "options": [
+        {
+          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+          "en": "Diagnose from the story and promise it is enough for the person."
+        },
+        {
+          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+        },
+        {
+          "fil": "Magsanay lamang sa manikin.",
+          "en": "Practise only on a manikin."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag umasa lamang sa pulso kung hindi sanay. Huwag mag-compression sa totoong tao. Hindi sertipikasyon ang lumang CAB talata. 3: Obserbahan ang gawa at ang tamang referral.",
+      "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use a pulse check as the only gate for an untrained rescuer, practise compressions on a live person, or treat the old CAB paragraph as certification. 3: Observe the task and appropriate referral."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.firstaid.cpr.bls.orientation.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes:\nSa supervised manikin, ipakita ang pagtawag, paghingi ng AED at…",
+    "display_en": "On Monday:\nAt a supervised manikin station, show help activation, AED…",
+    "check": null,
+    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Sa supervised manikin, ipakita ang pagtawag, paghingi ng AED at aprubadong adult sequence; itala ang naobserbahan.",
+    "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action."
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "inherited": [
+    "bilingual Read and independently authored Slides",
+    "shared lesson completion across modes",
+    "private facilitator notes",
+    "source coverage and immutable revisions",
+    "historical Chapter I preservation"
+  ],
+  "authoring_targets": [
+    "condition/action/standard objectives",
+    "scenario→action→example→check→resolution→workplace task",
+    "specific observation and retry",
+    "job aid and local contact slots"
+  ],
+  "implementation_gaps": [
+    "per-option feedback exists in practice.json; reader displays combined feedback with every option explained",
+    "activity IDs and run/adapted/skipped options are authored; not integrated with database logs",
+    "recall intervals are content specifications, not scheduled notifications",
+    "narration scripts exist; audio not synthesized or listening-reviewed",
+    "offline/print preview is a review artifact, not an app download feature",
+    "Randomized answer delivery remains a proposed platform enhancement; the review preview retains fixed option order to match current combined feedback."
+  ],
+  "certification_change": false
+}
