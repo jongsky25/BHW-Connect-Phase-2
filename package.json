@@ -18,6 +18,7 @@
     "training:review-setup": "node scripts/training-review-setup.mjs",
     "training:tts": "node scripts/tts-render.mjs",
     "training:narrate": "node scripts/training-narrate.mjs",
+    "training:chapter2-guide": "node scripts/chapter2-guide-load.mjs",
     "remotion:render": "node scripts/remotion-render.mjs",
     "doctor": "node scripts/doctor.mjs"
   },
