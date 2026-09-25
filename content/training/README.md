@@ -37,7 +37,11 @@ pages, with corrected citations from the approved prototype crosswalk.
 Assets live under `public/training/`, use bilingual alt/caption text and provenance,
 and have a SHA-256 `content_hash`. Their filename includes its first 12 characters.
 The loader verifies bytes and rejects root escapes/symlinks outside the public root.
-New media gets a new path; retain historical assets. Draft media can stage but
+A procedural clip (INC-28 tier 2) is an asset with an
+optional `video: {path, content_hash, duration_s}` (hashed `.mp4` under
+`/training/`); its `path` is then the poster JPEG, which must show every step.
+Render both with `npm run remotion:render -- <composition-id> <name> --public
+<dir>`, which prints the fields to paste. New media gets a new path; retain historical assets. Draft media can stage but
 cannot promote. The converted 1.1 fallback media remains draft pending visual review.
 
 Example (future authorized target, not a release instruction):

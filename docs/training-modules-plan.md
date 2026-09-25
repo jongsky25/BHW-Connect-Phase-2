@@ -18,7 +18,7 @@ for this codebase.
 | INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | ✅ Approved by the user 20 Sep 2026. Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot, rendering at Detalyado since 19 Sep, course status `published`. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it taught the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | ✅ Merged — [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64). Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit), and real touch-swipe is unverified (only a `scrollLeft` stand-in). No carousel dependency added. The PR's test-plan checklist (real click-through, real touch-swipe, e2e run) was left unchecked at merge — owed, not blocking. A follow-up axe-core run in CI (a different session's PR, [PR #66](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/66)) caught one real color-contrast bug in the Basahin/Islide toggle — fixed there, not a flake. |
 | INC-27 — audio narration + read-along | ✅ Merged — [PR #68](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/68), by a separate session run in parallel with this one. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in that session (same constraint `docs/session-handoff.md` §2 documents for Supabase MCP, and that this plan's own INC-23 row above hit first). See the Status note inside the INC-27 section below. |
-| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual) and its render pipeline installed + verified 20 Sep 2026; no content queued through it yet — see the INC-28 section below for the "deliberately not built yet" list. |
+| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual), pipeline verified 20 Sep 2026; first clip (Chapter 2.3 handrub steps) rendered and wired into reference lessons 25 Sep 2026 as a draft asset, pending review before a new revision is published — see the INC-28 section below. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
 | INC-24 — author modules 2-5 | ✅ Code-complete, 20 Sep 2026. All four modules load clean through every INC-21 validation including the coverage check; `npm run kb:check-sources` passes (adds `eo-51`, `ra-10028`, `ao-2015-0053`, `dc-2021-0486`); `test-questions.json` grew from 9 to 21 questions, covering modules 1-5; `--apply`'d to the pilot and rendered in the real app (read + slide modalities) under a throwaway review account. See the INC-24 section below for what's still owed (a user approval pass, audio/animation modalities, e2e/axe-core coverage). |
 | INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | ⬜ Blocked on INC-24's user approval (code is unblocked). Now **four** modules, not three — §C is a nine-module map. |
@@ -1709,16 +1709,57 @@ Verified end to end against the scaffold's own placeholder composition: a
 valid MP4 (H.264, muted) and an 854×480 JPEG poster, both produced without
 error.
 
-**What's deliberately not built yet:** no DB/UI wiring (`course_module_visuals`
-has no `video` primitive or `video_url` column), no CI render job, no actual
-clip. Building that now would be schema and pipeline work with nothing real
-to render against or verify with — none of Module 1's content meets tier 2's
-own bar ("the few concepts that genuinely need video"; Module 1 is HEPO/role
-conceptual content, not a procedural sequence). This is owed once INC-24/25
-authors a module with a genuinely motion-teaching concept (the plan's own
-examples: the Five Whys unfolding, correct sharps disposal) — wire the
-schema and the `LessonVisual` video case against that real concept, not
-speculatively now.
+**First real clip wired in, 25 Sep 2026.** Chapter 2.3's `hand-hygiene`
+lesson is the first authored concept that meets tier 2's bar — the handrub
+procedure is motion-teaching by nature (the plan's own sharps/Five Whys
+examples are the same kind). What now exists:
+
+- **The clip.** `remotion/src/hand-hygiene/` (`HandrubSteps`, 854×480,
+  27 s): schematic two-colour hands (no skin tone implied) performing the
+  eight handrub steps in the order of the WHO procedure the lesson already
+  cites (`who-rub`), bilingual labels on screen (one muted file serves both
+  locales, like the lesson's SVGs), ending on a static all-steps summary.
+  Rendered output (451 KB, H.264 yuv420p/BT.709, muted) plus that last-frame
+  poster are committed under `public/training/chapter2-draft/` with
+  content-hashed names.
+- **Data, not a column.** Reference lessons already keep assets in
+  `course_lesson_revisions.assets` (JSONB), so no migration: an asset may
+  carry an optional `video: {path, content_hash, duration_s}`, and its
+  existing `path` becomes the poster. The legacy `course_module_visuals`
+  table (pre-lesson Chapter 1 modules) is untouched — no remaining content
+  path needs a `video_url` there. `validateReferenceLesson`
+  (`scripts/lib/reference-content.mjs`) checks the clip the same way it
+  checks images: hash in the path and verified against the bytes, `.mp4`
+  under `/training/`, 1-90 s, raster poster, no unknown fields.
+- **UI.** `LessonAssetFigure` (`src/components/elearning/lesson-asset-figure.tsx`),
+  used by `ReferenceLessons` for both Read and Slides: `<video controls muted
+  playsInline preload="none" poster>` — never autoplays, fetches nothing
+  until the learner presses play (no surprise mobile-data cost), so the
+  reduced-motion view is the static poster, which carries every step. The
+  asset's alt text doubles as the clip's text version (`aria-describedby`,
+  shown in a "Steps as text" disclosure). Wired to the lesson's `example`
+  Read section and `slide-example` slide (the handrub timing content).
+- **Render pipeline.** `npm run remotion:render -- <id> [name] --public
+  <dir under public/>` now renders the last frame as the poster, copies both
+  files in under hashed names and prints the `lesson.json` fields; set
+  `REMOTION_BROWSER_EXECUTABLE` to reuse a local Chromium (e.g. Playwright's
+  headless shell) instead of downloading one. The size check now uses the
+  composition's real duration.
+- **CI.** `.github/workflows/remotion.yml` (only on `remotion/**` or the
+  script changing): lint + typecheck the sub-project, render every
+  composition, fail over the size budget, upload renders as an artifact for
+  review. It does not overwrite committed clips — renders are not
+  byte-reproducible across machines, so the committed hashed file stays the
+  source of truth, re-rendered locally when the composition changes.
+
+**Not live yet — by the existing gates, not new ones.** The asset is
+`review_status: "draft"` (clinical/visual review of the animation and its
+Filipino labels is owed), and `training:load` refuses to promote a revision
+with draft assets. The Los Baños production course still serves the
+25 Sep 2026 `hand-hygiene` revision recorded in
+`content/training/chapter2-common-competencies/release/los-banos-2026-09-25.json`;
+showing the clip there needs the asset approved and a new revision staged
+and published through the normal reviewed release step.
 
 ---
 

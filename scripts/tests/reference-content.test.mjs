@@ -300,3 +300,47 @@ test("hierarchy refuses an invented available Chapter II before writes", async (
   );
   assert.equal(f.writes.length, 0);
 });
+// INC-28 tier 2: an asset may carry a rendered clip; its `path` is the poster.
+const withVideo = () => {
+  const l = structuredClone(referenceModule.lessons[0]);
+  const hash = (c) => c.repeat(64);
+  l.revision.assets[0] = {
+    ...l.revision.assets[0],
+    path: `/training/clip-${hash("a").slice(0, 12)}-poster.jpg`,
+    content_hash: hash("a"),
+    video: {
+      path: `/training/clip-${hash("b").slice(0, 12)}.mp4`,
+      content_hash: hash("b"),
+      duration_s: 27,
+    },
+  };
+  return l;
+};
+test("an asset may carry a hashed .mp4 clip with a raster poster", () =>
+  validateReferenceLesson(withVideo()));
+for (const [name, mutate] of [
+  ["clip path without its hash", (v) => (v.path = "/training/clip.mp4")],
+  ["clip outside /training/", (v) => (v.path = `/elsewhere/clip-${"b".repeat(12)}.mp4`)],
+  ["clip that is not .mp4", (v) => (v.path = `/training/clip-${"b".repeat(12)}.webm`)],
+  ["clip with a zero duration", (v) => (v.duration_s = 0)],
+  ["clip longer than 90 s", (v) => (v.duration_s = 91)],
+  ["clip with an unknown field", (v) => (v.autoplay = true)],
+])
+  test(`rejects ${name}`, () => {
+    const l = withVideo();
+    mutate(l.revision.assets[0].video);
+    assert.throws(() => validateReferenceLesson(l));
+  });
+test("rejects a clip whose poster is not a raster image", () => {
+  const l = withVideo();
+  l.revision.assets[0].path = `/training/clip-${"a".repeat(12)}.svg`;
+  assert.throws(() => validateReferenceLesson(l), /poster/);
+});
+test("rejects a clip whose file is missing or does not match its hash", () =>
+  assert.throws(
+    () =>
+      validateReferenceLesson(withVideo(), {
+        assetExists: (p) => !p.endsWith(".mp4"),
+      }),
+    /missing asset .*\.mp4/,
+  ));

@@ -46,3 +46,6 @@ next-env.d.ts
 
 # Claude Code personal overrides (never commit — may reference local credentials)
 .claude/settings.local.json
+
+# Local review HTML written by scripts/chapter2-preview.mjs and its tests
+/.preview/
