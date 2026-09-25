@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-drowning-response",
+  "objective_id": "drowning-response.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        },
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        },
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.",
+          "en": "The shortcut can cause harm: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag sumuong sa mapanganib na tubig, baligtarin para patuluin ang tubig, o ipagpalagay na sapat ang karaniwang compression-only CPR sa pagkalunod.",
+          "en": "The shortcut is unsafe: Do not enter unsafe water, invert the person to drain water, or assume ordinary compression-only CPR covers drowning-specific ventilation needs."
+        },
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        },
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        }
+      ]
+    }
+  ]
+}

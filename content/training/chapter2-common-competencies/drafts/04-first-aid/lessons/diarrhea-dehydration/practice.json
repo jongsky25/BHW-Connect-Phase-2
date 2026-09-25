@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-diarrhea-dehydration",
+  "objective_id": "diarrhea-dehydration.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+          "en": "The shortcut can cause harm: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe."
+        },
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        },
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        },
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+          "en": "The shortcut is unsafe: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe."
+        },
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        }
+      ]
+    }
+  ]
+}

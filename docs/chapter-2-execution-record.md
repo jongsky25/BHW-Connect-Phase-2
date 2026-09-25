@@ -1,3 +1,9 @@
+# Current update: Chapter 2.4 First Aid — 25 September 2026
+
+Eighteen bilingual training drafts added; 37/55 lessons authored. The F38 seven-hour cases plus one-hour kit allocation reconciles to 480 minutes. Current-source evidence documented; independent clinical/local review and browser visual QA pending. See chapter-2-firstaid-review.md.
+
+Earlier updates below describe their then-current counts.
+
 # Current update: Chapter 2.3 IPC — 25 September 2026
 
 Owner approval of 2.2/2.6 recorded separately. Seven IPC drafts added, bringing Chapter 2 to 19/55; 70 focused tests passed. Source evidence documented; independent clinical/local approval and browser visual QA pending. Chapter remains unavailable. See chapter-2-ipc-review.md.

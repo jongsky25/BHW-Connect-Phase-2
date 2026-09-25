@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.hazard",
+      "c2.firstaid.diarrhea.dehydration.action",
+      "c2.firstaid.diarrhea.dehydration.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: May malabnaw na dumi si sanggol Mina at sumususo pa",
+    "display_en": "Case: Baby Mina has loose stools and is still breastfeeding",
+    "check": null,
+    "narration_fil": "May malabnaw na dumi si sanggol Mina at sumususo pa. May ORS sachet ang tagapag-alaga na may sariling panuto.",
+    "narration_en": "Baby Mina has loose stools and is still breastfeeding. Her caregiver has an ORS sachet with its own mixing directions."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.hazard",
+      "c2.firstaid.diarrhea.dehydration.action",
+      "c2.firstaid.diarrhea.dehydration.escalation"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan\nIpagpatuloy ang pagpapasuso kung kaya\nIpaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet",
+    "display_en": "Ask about ability to drink, vomiting, blood in stool and alertness\nEncourage continued breastfeeding when the child can feed\nExplain that packaged ORS uses safe water and the exact packet…",
+    "check": null,
+    "narration_fil": "Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign.",
+    "narration_en": "Ask about ability to drink, vomiting, blood in stool and alertness. Encourage continued breastfeeding when the child can feed. Explain that packaged ORS uses safe water and the exact packet directions. Refer urgently for danger signs or dehydration concerns."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.hazard"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+      "prompt_en": "In this case, what comes first?",
+      "options": [
+        {
+          "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+          "en": "Use the shortcut before confirming the facts."
+        },
+        {
+          "fil": "Basahin ang ORS sachet.",
+          "en": "Read the ORS packet."
+        },
+        {
+          "fil": "Maghintay muna at huwag ipaalam sa staff.",
+          "en": "Wait without notifying the responsible staff."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
+      "feedback_en": "1: The shortcut can cause harm: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.hazard",
+      "c2.firstaid.diarrhea.dehydration.action",
+      "c2.firstaid.diarrhea.dehydration.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Ipagpatuloy ang pagpapasuso kung kaya\nIpaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet\nI-refer agad kung may danger sign",
+    "display_en": "Encourage continued breastfeeding when the child can feed\nExplain that packaged ORS uses safe water and the exact packet…\nRefer urgently for danger signs or dehydration concerns",
+    "check": null,
+    "narration_fil": "Ganito ang ligtas na tugon sa kaso. Itanong ang pag-inom, pagsusuka, dugo sa dumi at kamalayan. Ipagpatuloy ang pagpapasuso kung kaya. Ipaliwanag ang ligtas na tubig at eksaktong panuto ng ORS sachet. I-refer agad kung may danger sign. Iniiwasan ni Lea ang shortcut.",
+    "narration_en": "This is the safe response in the case. Ask about ability to drink, vomiting, blood in stool and alertness. Encourage continued breastfeeding when the child can feed. Explain that packaged ORS uses safe water and the exact packet directions. Refer urgently for danger signs or dehydration concerns. Lea avoids the shortcut."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.hazard",
+      "c2.firstaid.diarrhea.dehydration.action",
+      "c2.firstaid.diarrhea.dehydration.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng…\nHuwag piliting painumin kung hindi ligtas lumunok",
+    "display_en": "Do not give a fixed homemade recipe or fluid dose across all ages…\nDo not force oral fluids when swallowing is unsafe",
+    "check": null,
+    "narration_fil": "Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok.",
+    "narration_en": "Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.action",
+      "c2.firstaid.diarrhea.dehydration.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang dapat ipakita sa practice?",
+      "prompt_en": "What should the practice show?",
+      "options": [
+        {
+          "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+          "en": "Diagnose from the story and promise it is enough for the person."
+        },
+        {
+          "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+          "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+        },
+        {
+          "fil": "Ipagpatuloy ang pagpapasuso kung kaya.",
+          "en": "Continue breastfeeding when safe."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag magbigay ng iisang homemade timpla o dami para sa lahat ng edad at sachet. Huwag piliting painumin kung hindi ligtas lumunok. 3: Obserbahan ang gawa at ang tamang referral.",
+      "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not give a fixed homemade recipe or fluid dose across all ages and packet sizes. Do not force oral fluids when swallowing is unsafe. 3: Observe the task and appropriate referral."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.firstaid.diarrhea.dehydration.escalation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes:\nGamitin ang label ng sachet sa dry simulation, ipaliwanag ang…",
+    "display_en": "On Monday:\nUse the packet label in a dry simulation, explain safe water and…",
+    "check": null,
+    "narration_fil": "Sa Lunes, gamitin ang kaparehong checklist sa bagong kathang-isip na kaso. Itala ang nakita at kung sino ang tatawagan. Gamitin ang label ng sachet sa dry simulation, ipaliwanag ang ligtas na tubig at pagpapasuso, at tukuyin ang referral trigger.",
+    "narration_en": "On Monday, use the same checklist with a new fictional case. Record observations and the confirmed contact. Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger."
+  }
+]

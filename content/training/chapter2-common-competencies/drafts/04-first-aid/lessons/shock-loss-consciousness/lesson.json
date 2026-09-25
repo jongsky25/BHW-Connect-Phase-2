@@ -1,0 +1,264 @@
+{
+  "manifest": {
+    "lesson_key": "shock-loss-consciousness",
+    "position": 5,
+    "title_fil": "Kilalanin ang shock at pagkawala ng malay",
+    "title_en": "Recognize shock and loss of consciousness",
+    "objectives_fil": [
+      "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom."
+    ],
+    "objectives_en": [
+      "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.hazard",
+        "c2.firstaid.shock.loss.consciousness.action",
+        "c2.firstaid.shock.loss.consciousness.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Bumagsak ang isang nasa hustong gulang sa waiting area at…",
+      "takeaway_en": "Case: An adult collapses at the waiting area and does not…",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.hazard",
+        "c2.firstaid.shock.loss.consciousness.action",
+        "c2.firstaid.shock.loss.consciousness.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.",
+      "takeaway_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          },
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          },
+          {
+            "fil": "Tawag at suriin ang paghinga.",
+            "en": "Call and check breathing."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag. 3: Unahin ang kaligtasan at agarang tulong.",
+        "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation. 3: Prioritize safety and timely help."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.hazard",
+        "c2.firstaid.shock.loss.consciousness.action",
+        "c2.firstaid.shock.loss.consciousness.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.",
+      "takeaway_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.hazard",
+        "c2.firstaid.shock.loss.consciousness.action",
+        "c2.firstaid.shock.loss.consciousness.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.action",
+        "c2.firstaid.shock.loss.consciousness.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Huwag magpainom sa walang malay.",
+            "en": "Give no drink to an unresponsive person."
+          },
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          },
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag magpakain o magpainom sa walang malay. Huwag manghula ng sanhi mula sa iisang palatandaan o ipagpaliban ang pagtawag.",
+        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not give food, candy or water to an unresponsive person. Do not infer the cause of collapse from a single clue or delay emergency activation."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.shock.loss.consciousness.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.shock.loss.consciousness.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-bec",
+        "aha-adult"
+      ]
+    },
+    {
+      "id": "c2.firstaid.shock.loss.consciousness.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-bec",
+        "aha-adult"
+      ]
+    },
+    {
+      "id": "c2.firstaid.shock.loss.consciousness.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-bec",
+        "aha-adult"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        41
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "id": "who-bec",
+      "title": "WHO/ICRC Basic Emergency Care and transfer/handover",
+      "url": "https://www.who.int/publications-detail-redirect/9789241513081"
+    },
+    {
+      "id": "aha-adult",
+      "title": "AHA Adult Basic Life Support Guidelines 2025",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/shock-loss-consciousness-3656d39d34b1.svg",
+      "content_hash": "3656d39d34b1cfb8f3caedf32717dfff0b487dba1c00eb97f229e9e885ab77fb",
+      "alt_fil": "Tatlong kahon: Tugon, Hinga, Tawag.",
+      "alt_en": "Three boxes: Response, Breathing, Call.",
+      "caption_fil": "Ipakita ang ligtas na pagtawag, obserbasyon sa tugon at paghinga, at handover nang walang pagpapainom.",
+      "caption_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

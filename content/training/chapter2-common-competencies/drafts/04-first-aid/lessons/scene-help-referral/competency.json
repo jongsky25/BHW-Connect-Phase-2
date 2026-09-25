@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
+      "observable_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact.",
+      "levels": {
+        "kaya_na_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact."
+      }
+    }
+  ]
+}

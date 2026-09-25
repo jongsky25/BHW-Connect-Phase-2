@@ -1,6 +1,6 @@
 # Chapter 2 lesson and activity crosswalk
 
-55 planned lessons; 19 authored drafts in 2.1, 2.2, 2.3 and 2.6. The other 36 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
+55 planned lessons; 37 authored drafts in 2.1, 2.2, 2.3, 2.4 and 2.6. The other 18 entries are outlines, not teaching copy or approved clinical content. See chapter-2-batch-2-review.md for the shared mobilization/DRRM timing proposal.
 
 | Lesson | English / Filipino | Intended task | Practice | Status |
 |---|---|---|---|---|
@@ -19,24 +19,24 @@
 | 2.3.5 | Prevent diarrhea through safer surroundings / Iwasan ang pagtatae sa mas ligtas na kapaligiran | Use reviewed guidance to identify food, water and sanitation changes in a household scene | household safety review | authored-draft |
 | 2.3.6 | Find BHS IPC policies / Hanapin ang patakaran sa IPC ng BHS | Locate required local policies and distinguish BHW support from specialist procedures | policy and training checklist | authored-draft |
 | 2.3.7 | Monitor and improve IPC practice / Subaybayan at pagbutihin ang IPC | Document one checklist gap with owner, action and follow-up date | IPC improvement plan | authored-draft |
-| 2.4.1 | Assess the situation and get help / Suriin ang sitwasyon at humingi ng tulong | Apply the reviewed scene-safety and help-activation sequence in a simulation | scene assessment station | outline |
-| 2.4.2 | Recognize childhood danger signs / Kilalanin ang panganib sa batang may sakit | Identify reviewed danger signs in a case and communicate urgency | childhood case cards | outline |
-| 2.4.3 | Respond to cough and breathing concerns / Tumugon sa ubo at hirap sa paghinga | Use a clinically reviewed age-specific case to decide escalation | breathing case station | outline |
-| 2.4.4 | Respond to diarrhea and dehydration concerns / Tumugon sa pagtatae at dehydration | Recognize reviewed concerns and demonstrate approved ORS education using training materials | ORS education station | outline |
-| 2.4.5 | Respond to convulsions / Tumugon sa kombulsyon | Demonstrate the reviewed response boundaries and escalation for a seizure simulation | convulsion scenario | outline |
-| 2.4.6 | Recognize shock and loss of consciousness / Kilalanin ang shock at pagkawala ng malay | Identify urgency and select actions from the approved response protocol | urgent response simulation | outline |
-| 2.4.7 | Prepare for supervised CPR/BLS practice / Maghanda sa supervised CPR/BLS practice | Demonstrate the approved skills sequence on appropriate training equipment under qualified observation | CPR training station | outline |
-| 2.4.8 | Respond safely to drowning / Ligtas na tumugon sa pagkalunod | Select a safe response and referral pathway from the reviewed drowning scenario | drowning tabletop | outline |
-| 2.4.9 | Gather information in suspected poisoning / Mangolekta ng impormasyon sa posibleng pagkalason | Communicate relevant exposure facts to the verified emergency contact without improvising treatment | poisoning call rehearsal | outline |
-| 2.4.10 | Respond to wounds and bleeding / Tumugon sa sugat at pagdurugo | Demonstrate approved bleeding/wound actions and escalation on training props | wound and bleeding station | outline |
-| 2.4.11 | Respond to suspected fractures / Tumugon sa posibleng bali | Demonstrate approved support and referral boundaries for a simulated injury | injury support station | outline |
-| 2.4.12 | Respond to bites and stings / Tumugon sa kagat at tusok ng insekto | Recognize reviewed escalation signs in a bites/stings case | bite and sting cards | outline |
-| 2.4.13 | Respond to snakebite / Tumugon sa kagat ng ahas | Choose the approved response and referral in a snakebite case | snakebite decision exercise | outline |
-| 2.4.14 | Respond to burns / Tumugon sa paso | Apply reviewed response and escalation criteria to a burn simulation | burn scenario station | outline |
-| 2.4.15 | Respond to choking / Tumugon sa pagkabulon | Demonstrate the appropriate reviewed age-specific technique on training equipment | choking skills station | outline |
-| 2.4.16 | Arrange urgent chest-pain referral / Iugnay sa agarang tulong ang may pananakit ng dibdib | Activate the reviewed referral route and communicate relevant facts in a chest-pain case | emergency referral rehearsal | outline |
-| 2.4.17 | Check first-aid kit readiness / Suriin ang first-aid kit | Inspect an approved kit list for completeness, condition, storage and replenishment needs | kit inspection | outline |
-| 2.4.18 | Hand over an incident / Iparating ang detalye ng insidente | Deliver a concise factual handover of situation, actions and support needed | integrated handover station | outline |
+| 2.4.1 | Assess the situation and get help / Suriin ang sitwasyon at humingi ng tulong | Apply the reviewed scene-safety and help-activation sequence in a simulation | scene assessment station | authored-draft |
+| 2.4.2 | Recognize childhood danger signs / Kilalanin ang panganib sa batang may sakit | Identify reviewed danger signs in a case and communicate urgency | childhood case cards | authored-draft |
+| 2.4.3 | Respond to cough and breathing concerns / Tumugon sa ubo at hirap sa paghinga | Use a clinically reviewed age-specific case to decide escalation | breathing case station | authored-draft |
+| 2.4.4 | Respond to diarrhea and dehydration concerns / Tumugon sa pagtatae at dehydration | Recognize reviewed concerns and demonstrate approved ORS education using training materials | ORS education station | authored-draft |
+| 2.4.5 | Respond to convulsions / Tumugon sa kombulsyon | Demonstrate the reviewed response boundaries and escalation for a seizure simulation | convulsion scenario | authored-draft |
+| 2.4.6 | Recognize shock and loss of consciousness / Kilalanin ang shock at pagkawala ng malay | Identify urgency and select actions from the approved response protocol | urgent response simulation | authored-draft |
+| 2.4.7 | Prepare for supervised CPR/BLS practice / Maghanda sa supervised CPR/BLS practice | Demonstrate the approved skills sequence on appropriate training equipment under qualified observation | CPR training station | authored-draft |
+| 2.4.8 | Respond safely to drowning / Ligtas na tumugon sa pagkalunod | Select a safe response and referral pathway from the reviewed drowning scenario | drowning tabletop | authored-draft |
+| 2.4.9 | Gather information in suspected poisoning / Mangolekta ng impormasyon sa posibleng pagkalason | Communicate relevant exposure facts to the verified emergency contact without improvising treatment | poisoning call rehearsal | authored-draft |
+| 2.4.10 | Respond to wounds and bleeding / Tumugon sa sugat at pagdurugo | Demonstrate approved bleeding/wound actions and escalation on training props | wound and bleeding station | authored-draft |
+| 2.4.11 | Respond to suspected fractures / Tumugon sa posibleng bali | Demonstrate approved support and referral boundaries for a simulated injury | injury support station | authored-draft |
+| 2.4.12 | Respond to bites and stings / Tumugon sa kagat at tusok ng insekto | Recognize reviewed escalation signs in a bites/stings case | bite and sting cards | authored-draft |
+| 2.4.13 | Respond to snakebite / Tumugon sa kagat ng ahas | Choose the approved response and referral in a snakebite case | snakebite decision exercise | authored-draft |
+| 2.4.14 | Respond to burns / Tumugon sa paso | Apply reviewed response and escalation criteria to a burn simulation | burn scenario station | authored-draft |
+| 2.4.15 | Respond to choking / Tumugon sa pagkabulon | Demonstrate the appropriate reviewed age-specific technique on training equipment | choking skills station | authored-draft |
+| 2.4.16 | Arrange urgent chest-pain referral / Iugnay sa agarang tulong ang may pananakit ng dibdib | Activate the reviewed referral route and communicate relevant facts in a chest-pain case | emergency referral rehearsal | authored-draft |
+| 2.4.17 | Check first-aid kit readiness / Suriin ang first-aid kit | Inspect an approved kit list for completeness, condition, storage and replenishment needs | kit inspection | authored-draft |
+| 2.4.18 | Hand over an incident / Iparating ang detalye ng insidente | Deliver a concise factual handover of situation, actions and support needed | integrated handover station | authored-draft |
 | 2.5.1 | Check scope and plant identity / Suriin ang saklaw at pagkakakilanlan | Use verified references to distinguish identification, approved use and consultation needs | plant identification practice | outline |
 | 2.5.2 | Akapulko / Akapulko | For Akapulko, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | akapulko reference-card practice | outline |
 | 2.5.3 | Ampalaya / Ampalaya | For Ampalaya, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs | ampalaya reference-card practice | outline |

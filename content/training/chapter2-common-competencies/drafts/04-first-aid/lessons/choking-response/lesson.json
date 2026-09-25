@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "lesson_key": "choking-response",
+    "position": 14,
+    "title_fil": "Tumugon sa pagkabulon",
+    "title_en": "Respond to choking",
+    "objectives_fil": [
+      "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad."
+    ],
+    "objectives_en": [
+      "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.choking.response.hazard",
+        "c2.firstaid.choking.response.action",
+        "c2.firstaid.choking.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Sa tanghalian, hindi makapagsalita o makaubo nang mabisa…",
+      "takeaway_en": "Case: At lunch, an adult cannot speak or cough effectively",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.choking.response.hazard",
+        "c2.firstaid.choking.response.action",
+        "c2.firstaid.choking.response.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
+      "takeaway_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.choking.response.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          },
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          },
+          {
+            "fil": "Humingi ng tulong ayon sa edad.",
+            "en": "Call for age-specific help."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha. 3: Unahin ang kaligtasan at agarang tulong.",
+        "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner. 3: Prioritize safety and timely help."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.choking.response.hazard",
+        "c2.firstaid.choking.response.action",
+        "c2.firstaid.choking.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
+      "takeaway_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.choking.response.hazard",
+        "c2.firstaid.choking.response.action",
+        "c2.firstaid.choking.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.choking.response.action",
+        "c2.firstaid.choking.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Infant manikin, hindi adult maneuver.",
+            "en": "Infant manikin, not adult maneuver."
+          },
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          },
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag gumamit ng abdominal thrust sa sanggol, bulag na paghugot sa bibig, o magsanay ng thrust sa totoong kapareha.",
+        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not apply adult abdominal thrusts to an infant, use blind finger sweeps, or rehearse thrusts on a live partner."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.choking.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.choking.response.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "aha-adult",
+        "aha-ped"
+      ]
+    },
+    {
+      "id": "c2.firstaid.choking.response.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "aha-adult",
+        "aha-ped"
+      ]
+    },
+    {
+      "id": "c2.firstaid.choking.response.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "aha-adult",
+        "aha-ped"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        47
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        68
+      ]
+    },
+    {
+      "id": "aha-adult",
+      "title": "AHA Adult Basic Life Support Guidelines 2025",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support"
+    },
+    {
+      "id": "aha-ped",
+      "title": "AHA/AAP Pediatric Basic Life Support Guidelines 2025",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/choking-response-c9bb8e9d40aa.svg",
+      "content_hash": "c9bb8e9d40aaed1937246ffd1dab058769211aaa3774c28bb63c45b1d11f58b7",
+      "alt_fil": "Tatlong kahon: Ubo, Edad, Manikin.",
+      "alt_en": "Three boxes: Cough, Age, Manikin.",
+      "caption_fil": "Sa dalawang manikin, ihiwalay ang mabisang ubo sa malubhang bara at ipakita ang tugon ayon sa edad.",
+      "caption_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "availability": "unavailable",
   "publication_allowed": false,
   "planned_lesson_count": 55,
-  "authored_lesson_count": 19,
+  "authored_lesson_count": 37,
   "competency_groups": [
     {
       "id": "behavior",
@@ -550,7 +550,7 @@
           92
         ]
       },
-      "status": "mapped-not-authored",
+      "status": "draft-authored",
       "lessons": [
         {
           "code": "2.4.1",
@@ -562,23 +562,26 @@
           "task_fil": "Gamitin sa simulation ang nasuring safety at paghingi ng tulong",
           "practice_id": "activity-scene-help-referral",
           "practice_en": "scene assessment station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
           "source_pages": {
             "R": [
-              38,
-              48
+              38
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              71,
+              72,
+              73,
+              74
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.2",
@@ -590,23 +593,24 @@
           "task_fil": "Tukuyin sa kaso ang nasuring danger signs at iparating ang pagkaapurahan",
           "practice_id": "activity-child-danger-signs",
           "practice_en": "childhood case cards",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
           "source_pages": {
             "R": [
-              38,
-              48
+              39
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              75,
+              76
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.3",
@@ -618,23 +622,24 @@
           "task_fil": "Gamitin ang nasuring kasong ayon sa edad sa pagpili ng referral",
           "practice_id": "activity-child-cough-breathing",
           "practice_en": "breathing case station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
           "source_pages": {
             "R": [
-              38,
-              48
+              39
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              77,
+              78
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.4",
@@ -646,23 +651,25 @@
           "task_fil": "Kilalanin ang nasuring alalahanin at ipakita ang aprubadong ORS education",
           "practice_id": "activity-diarrhea-dehydration",
           "practice_en": "ORS education station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
           "source_pages": {
             "R": [
-              38,
-              48
+              40
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              79,
+              80,
+              81
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.5",
@@ -674,23 +681,23 @@
           "task_fil": "Ipakita ang nasuring saklaw ng tugon at paghingi ng tulong sa simulation",
           "practice_id": "activity-convulsion-response",
           "practice_en": "convulsion scenario",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.",
           "source_pages": {
             "R": [
-              38,
-              48
+              41
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              82
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.6",
@@ -702,23 +709,25 @@
           "task_fil": "Kilalanin ang pagkaapurahan at piliin ang hakbang sa aprubadong protocol",
           "practice_id": "activity-shock-loss-consciousness",
           "practice_en": "urgent response simulation",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
           "source_pages": {
             "R": [
-              38,
-              48
+              41
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              83,
+              84,
+              85
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.7",
@@ -730,23 +739,26 @@
           "task_fil": "Ipakita ang aprubadong sequence sa training equipment sa gabay ng kwalipikadong trainer",
           "practice_id": "activity-cpr-bls-orientation",
           "practice_en": "CPR training station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
           "source_pages": {
             "R": [
-              38,
-              48
+              42
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
+              89,
+              90,
+              91,
               92
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.8",
@@ -758,23 +770,23 @@
           "task_fil": "Piliin ang ligtas na tugon at referral sa nasuring drowning scenario",
           "practice_id": "activity-drowning-response",
           "practice_en": "drowning tabletop",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Choose a safe shore response, activate trained rescue and state the need for medical assessment.",
           "source_pages": {
             "R": [
-              38,
-              48
+              43
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.9",
@@ -786,23 +798,23 @@
           "task_fil": "Iparating ang exposure facts sa kumpirmadong emergency contact nang hindi nag-iimbento ng lunas",
           "practice_id": "activity-poisoning-response",
           "practice_en": "poisoning call rehearsal",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
           "source_pages": {
             "R": [
-              38,
-              48
+              43
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.10",
@@ -814,23 +826,23 @@
           "task_fil": "Ipakita sa props ang aprubadong hakbang sa sugat at pagdurugo",
           "practice_id": "activity-wounds-bleeding",
           "practice_en": "wound and bleeding station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
           "source_pages": {
             "R": [
-              38,
-              48
+              43
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.11",
@@ -842,23 +854,23 @@
           "task_fil": "Ipakita ang aprubadong suporta at referral sa simulated injury",
           "practice_id": "activity-fracture-dislocation",
           "practice_en": "injury support station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
           "source_pages": {
             "R": [
-              38,
-              48
+              45
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.12",
@@ -870,23 +882,23 @@
           "task_fil": "Kilalanin ang nasuring senyales para sa referral sa kagat ng insekto",
           "practice_id": "activity-insect-bites-stings",
           "practice_en": "bite and sting cards",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.",
           "source_pages": {
             "R": [
-              38,
-              48
+              46
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.13",
@@ -898,23 +910,23 @@
           "task_fil": "Piliin ang aprubadong tugon at referral sa kasong kagat ng ahas",
           "practice_id": "activity-snakebite-response",
           "practice_en": "snakebite decision exercise",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Reject the cord and walking plan, keep the person still and call for transport.",
           "source_pages": {
             "R": [
-              38,
-              48
+              46
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.14",
@@ -926,23 +938,23 @@
           "task_fil": "Gamitin ang nasuring tugon at referral sa burn simulation",
           "practice_id": "activity-burn-response",
           "practice_en": "burn scenario station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.",
           "source_pages": {
             "R": [
-              38,
-              48
+              46
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.15",
@@ -954,23 +966,23 @@
           "task_fil": "Ipakita sa training equipment ang nasuring technique ayon sa edad",
           "practice_id": "activity-choking-response",
           "practice_en": "choking skills station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
           "source_pages": {
             "R": [
-              38,
-              48
+              47
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.16",
@@ -982,23 +994,23 @@
           "task_fil": "Gamitin ang nasuring referral at iparating ang facts sa chest-pain case",
           "practice_id": "activity-chest-pain-referral",
           "practice_en": "emergency referral rehearsal",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
           "source_pages": {
             "R": [
-              38,
               48
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              68
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.17",
@@ -1010,23 +1022,23 @@
           "task_fil": "Suriin ang aprubadong kit list para sa laman, kondisyon, imbakan at kailangang palitan",
           "practice_id": "activity-first-aid-kit",
           "practice_en": "kit inspection",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
           "source_pages": {
             "R": [
-              38,
               48
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              69
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         },
         {
           "code": "2.4.18",
@@ -1038,23 +1050,23 @@
           "task_fil": "Magbigay ng maikling factual na handover ng sitwasyon, ginawa at kailangan",
           "practice_id": "activity-incident-handover",
           "practice_en": "integrated handover station",
-          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "observation_design_en": "Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
           "source_pages": {
             "R": [
-              38,
-              48
+              38
             ],
             "F": [
               38,
+              39,
               40
             ],
             "P": [
-              67,
-              92
+              74
             ]
           },
-          "status": "outline",
-          "claim_review_required": true
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
         }
       ]
     },

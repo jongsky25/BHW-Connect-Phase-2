@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-poisoning-response",
+  "objective_id": "poisoning-response.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        },
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+          "en": "The shortcut can cause harm: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+        },
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        },
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        },
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+          "en": "The shortcut is unsafe: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+        }
+      ]
+    }
+  ]
+}

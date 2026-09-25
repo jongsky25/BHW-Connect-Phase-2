@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "lesson_key": "poisoning-response",
+    "position": 8,
+    "title_fil": "Mangolekta ng impormasyon sa posibleng pagkalason",
+    "title_en": "Gather information in suspected poisoning",
+    "objectives_fil": [
+      "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure."
+    ],
+    "objectives_en": [
+      "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.hazard",
+        "c2.firstaid.poisoning.response.action",
+        "c2.firstaid.poisoning.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Maaaring nakalunok ng panlinis ang isang bata",
+      "takeaway_en": "Case: A child may have swallowed an unknown household cleaner",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.hazard",
+        "c2.firstaid.poisoning.response.action",
+        "c2.firstaid.poisoning.response.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
+      "takeaway_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          },
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          },
+          {
+            "fil": "Lumayo at tumawag ng payo.",
+            "en": "Move away and call for advice."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring maantala ang kinakailangang assessment. 2: Maaaring makapinsala ang shortcut: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill. 3: Unahin ang kaligtasan at agarang tulong.",
+        "feedback_en": "1: Necessary assessment may be delayed. 2: The shortcut can cause harm: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe. 3: Prioritize safety and timely help."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.hazard",
+        "c2.firstaid.poisoning.response.action",
+        "c2.firstaid.poisoning.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
+      "takeaway_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.hazard",
+        "c2.firstaid.poisoning.response.action",
+        "c2.firstaid.poisoning.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.action",
+        "c2.firstaid.poisoning.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Iulat ang label at oras.",
+            "en": "Report the label and time."
+          },
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          },
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Obserbahan ang gawa at ang tamang referral. 2: Hindi batayan ang kuwento para sa sariling diagnosis. 3: Ang shortcut ay hindi ligtas: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+        "feedback_en": "1: Observe the task and appropriate referral. 2: The story is not grounds for an independent diagnosis. 3: The shortcut is unsafe: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.poisoning.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.poisoning.response.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "poison-control",
+        "ifrc-2025"
+      ]
+    },
+    {
+      "id": "c2.firstaid.poisoning.response.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "poison-control",
+        "ifrc-2025"
+      ]
+    },
+    {
+      "id": "c2.firstaid.poisoning.response.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "poison-control",
+        "ifrc-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        43
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        68
+      ]
+    },
+    {
+      "id": "poison-control",
+      "title": "US Poison Control First Aid for Poisonings, clinical principles only; local contact required",
+      "url": "https://www.poison.org/first-aid-for-poisonings"
+    },
+    {
+      "id": "ifrc-2025",
+      "title": "IFRC International First Aid, Resuscitation and Education Guidelines 2025",
+      "url": "https://www.ifrc.org/document/ifrc-international-first-aid-resuscitation-and-education-guidelines-2025"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/poisoning-response-c3d7c770e6ca.svg",
+      "content_hash": "c3d7c770e6ca1835d9cdc602e5fd5e182e345401580154d7139c920c687362f4",
+      "alt_fil": "Tatlong kahon: Exposure, Label, Payo.",
+      "alt_en": "Three boxes: Exposure, Label, Advice.",
+      "caption_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
+      "caption_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}
