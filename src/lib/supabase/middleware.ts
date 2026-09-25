@@ -32,8 +32,16 @@ function redirectTo(request: NextRequest, path: string, response: NextResponse) 
   return redirect;
 }
 
+function cleanAppHeaders(request: NextRequest) {
+  const forwardedHeaders = new Headers(request.headers);
+  for (const name of forwardedHeaders.keys()) {
+    if (name.startsWith("x-app-")) forwardedHeaders.delete(name);
+  }
+  return forwardedHeaders;
+}
+
 export async function updateSession(request: NextRequest) {
-  let response = NextResponse.next({ request });
+  let response = NextResponse.next({ request: { headers: cleanAppHeaders(request) } });
 
   const supabase = createServerClient(getSupabaseUrl(), getSupabaseAnonKey(), {
     cookies: {
@@ -44,7 +52,7 @@ export async function updateSession(request: NextRequest) {
         for (const { name, value } of cookiesToSet) {
           request.cookies.set(name, value);
         }
-        response = NextResponse.next({ request });
+        response = NextResponse.next({ request: { headers: cleanAppHeaders(request) } });
         for (const { name, value, options } of cookiesToSet) {
           response.cookies.set(name, value, options);
         }
@@ -164,7 +172,7 @@ function withAppUserHeaders(
   notificationsEnabled: boolean,
   notifUnreadCount: number,
 ) {
-  const forwardedHeaders = new Headers(request.headers);
+  const forwardedHeaders = cleanAppHeaders(request);
   forwardedHeaders.set("x-app-language", appUser.language);
   forwardedHeaders.set("x-app-a11y", JSON.stringify(appUser.a11y_settings ?? {}));
   forwardedHeaders.set("x-app-offline-pwa", offlinePwaEnabled ? "1" : "0");
@@ -174,6 +182,8 @@ function withAppUserHeaders(
   // set, consented) — the site header's app-name link should take them back
   // to their /home, not the signed-out "/" marketing page it defaults to.
   forwardedHeaders.set("x-app-signed-in", "1");
+  forwardedHeaders.set("x-app-username", appUser.username);
+  forwardedHeaders.set("x-app-role", appUser.role);
   // Lets the root layout tell whether the signed-in user is one of the
   // super admin's test personas (the persona bar) without another lookup.
   forwardedHeaders.set("x-app-user-id", appUser.id);
