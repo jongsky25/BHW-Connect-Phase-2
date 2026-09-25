@@ -22,7 +22,27 @@
       "asset_ids": [],
       "takeaway_fil": "Ang ligtas na pagtitipid ay nag-aalis ng aksaya at pinananatili ang kailangan sa pangangalaga.",
       "takeaway_en": "Safe conservation removes waste while preserving what care requires.",
-      "check": null
+      "check": {
+        "prompt_fil": "May vaccine refrigerator sa BHS at mataas ang bill. Aling mungkahi ang ligtas na siyasatin?",
+        "prompt_en": "The BHS has a vaccine refrigerator and a high electricity bill. Which proposal is safe to investigate?",
+        "options": [
+          {
+            "fil": "Panatilihing gumagana ang refrigerator; suriin ang hindi kailangang ilaw at sundin ang facility procedure.",
+            "en": "Keep the refrigerator running; check unnecessary lights under facility procedure."
+          },
+          {
+            "fil": "Patayin ang refrigerator sa gabi.",
+            "en": "Switch the refrigerator off overnight."
+          },
+          {
+            "fil": "Patayin pati ang kinakailangang bentilasyon.",
+            "en": "Switch off required ventilation too."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "Ang unang sagot ay tumutukoy sa hindi kailangang konsumo habang protektado ang cold chain. Ang pagpatay sa refrigerator o kinakailangang bentilasyon ay maaaring makasira sa ligtas na serbisyo.",
+        "feedback_en": "The first response targets unnecessary use while protecting the cold chain. Switching off the refrigerator or required ventilation can compromise safe service."
+      }
     },
     {
       "id": "materials",
@@ -230,3 +250,4 @@
   ],
   "assets": []
 }
+
