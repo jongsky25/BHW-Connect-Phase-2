@@ -1,0 +1,143 @@
+{
+  "status": "draft",
+  "lessons": [
+    {
+      "lesson_key": "hazards-capacities",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
+      "independent_review": null,
+      "visual_approval": "approved-by-user-attestation",
+      "audio_status": "scripts-only",
+      "learner_pilot": "approved-by-user-attestation",
+      "publication_allowed": false,
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
+    },
+    {
+      "lesson_key": "evacuation-contacts",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
+      "independent_review": null,
+      "visual_approval": "approved-by-user-attestation",
+      "audio_status": "scripts-only",
+      "learner_pilot": "approved-by-user-attestation",
+      "publication_allowed": false,
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
+    },
+    {
+      "lesson_key": "go-bag-e-balde",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
+      "independent_review": null,
+      "visual_approval": "approved-by-user-attestation",
+      "audio_status": "scripts-only",
+      "learner_pilot": "approved-by-user-attestation",
+      "publication_allowed": false,
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
+    },
+    {
+      "lesson_key": "bhert-coordination",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
+      "independent_review": null,
+      "visual_approval": "approved-by-user-attestation",
+      "audio_status": "scripts-only",
+      "learner_pilot": "approved-by-user-attestation",
+      "publication_allowed": false,
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
+    },
+    {
+      "lesson_key": "essential-health-packages",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
+      "independent_review": null,
+      "visual_approval": "approved-by-user-attestation",
+      "audio_status": "scripts-only",
+      "learner_pilot": "approved-by-user-attestation",
+      "publication_allowed": false,
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
+    },
+    {
+      "lesson_key": "disaster-tabletop",
+      "status": "authored-draft",
+      "clinical_content": true,
+      "authoring_checks": "passed; source/lesson contract, bilingual Read/Slides density, checks, timing, materials and DOM simulation; local/clinical review, observed pilot and browser visual QA user-attested approved",
+      "independent_review": null,
+      "visual_approval": "approved-by-user-attestation",
+      "audio_status": "scripts-only",
+      "learner_pilot": "approved-by-user-attestation",
+      "publication_allowed": false,
+      "owner_review": "approved-by-user",
+      "local_drrm_review": "approved-by-user-attestation",
+      "clinical_review": "approved-by-user-attestation"
+    }
+  ],
+  "blocking_reviews": [
+    "Independent Filipino/English and instructional review",
+    "Keyboard accessibility and print-layout QA",
+    "Clinical reviewer, PFA coverage and pilot documentation for audit"
+  ],
+  "source_allocation_hours": null,
+  "facilitated_minutes": 60,
+  "timing_basis": "Proposed six 10-minute orientation stations = 60-minute DRRM share of F38 combined 120-minute Community Mobilization/DRRM allocation; extra supervised practice is necessary.",
+  "source_adaptations": [
+    "Fictional cases, map and forms are instructional adaptations, not live barangay plans.",
+    "P97–112 supplies the topic sequence; the pandemic-era BHERT structure and fixed-time EHSP claims are not current mandates.",
+    "Official warnings, routes, shelter, contacts, team roles and service pathways must be verified locally before use.",
+    "PFA is humane support and referral, not diagnosis or therapy."
+  ],
+  "self_study_time": "Not a replacement for facilitated training; additional observed practice may be required.",
+  "owner_review": {
+    "status": "approved-by-user",
+    "date": "2026-09-25",
+    "evidence": "User message: approve 2.7"
+  },
+  "review_attestations": {
+    "local_drrm_and_health_review": {
+      "status": "approved-by-user-attestation",
+      "scope": "Local DRRM and health review",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "clinical_review": {
+      "status": "approved-by-user-attestation",
+      "scope": "Clinical review",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "observed_bhw_facilitator_pilot": {
+      "status": "approved-by-user-attestation",
+      "scope": "Observed BHW/facilitator pilot",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    },
+    "browser_visual_qa": {
+      "status": "approved-by-user-attestation",
+      "scope": "Browser visual QA",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "reviewer_name": null,
+      "method_or_artifact": null
+    }
+  }
+}

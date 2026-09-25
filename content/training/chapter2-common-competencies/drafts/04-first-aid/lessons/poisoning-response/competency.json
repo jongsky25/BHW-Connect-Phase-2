@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure.",
+      "observable_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe.",
+      "levels": {
+        "kaya_na_fil": "Sanayin ang tawag gamit ang kathang-isip na label habang iniiwasan ang simulated exposure. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag pasukahin, rutinang painumin nang marami, mag-imbento ng panlunas, o umasa sa isang nakatakdang distansya sa chemical spill.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not induce vomiting, give a routine large drink, improvise an antidote, or assume a fixed distance makes a chemical spill safe."
+      }
+    }
+  ]
+}

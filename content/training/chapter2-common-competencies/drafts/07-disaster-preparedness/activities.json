@@ -1,0 +1,267 @@
+{
+  "activities": [
+    {
+      "id": "activity-hazards-capacities",
+      "lesson_key": "hazards-capacities",
+      "kind": "disaster-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/hazards-capacities/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa fictional map, ituro ang hazard, pangangailangang suportahan at isang kakayahang kailangang kumpirmahin.",
+        "en": "On the fictional map, identify a hazard, a support need and one capacity needing confirmation."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          54
+        ],
+        "F": [
+          38,
+          42,
+          43
+        ],
+        "P": [
+          97,
+          99
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-evacuation-contacts",
+      "lesson_key": "evacuation-contacts",
+      "kind": "disaster-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/evacuation-contacts/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gamit ang mock advisory, sabihin ang source/oras, kumpirmadong aksiyon at contact na kukumpirmahin.",
+        "en": "Using a mock advisory, state source/time, confirmed action and contact to verify."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          54
+        ],
+        "F": [
+          38,
+          42,
+          43
+        ],
+        "P": [
+          99,
+          102
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-go-bag-e-balde",
+      "lesson_key": "go-bag-e-balde",
+      "kind": "disaster-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/go-bag-e-balde/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Pumili ng gamit para sa fictional pamilya, ipaliwanag ang dahilan at petsa ng susunod na pag-check.",
+        "en": "Select items for the fictional family, explain why, and set a date to recheck."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          54,
+          55
+        ],
+        "F": [
+          38,
+          42,
+          43
+        ],
+        "P": [
+          102,
+          104
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-bhert-coordination",
+      "lesson_key": "bhert-coordination",
+      "kind": "disaster-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/bhert-coordination/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa mock team change, tukuyin ang dapat kumpirmahin at magbigay ng maikling handover nang walang personal na detalye.",
+        "en": "In a mock team change, identify what to confirm and give a short handover without personal details."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          55
+        ],
+        "F": [
+          38,
+          42,
+          43
+        ],
+        "P": [
+          104,
+          107
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-essential-health-packages",
+      "lesson_key": "essential-health-packages",
+      "kind": "disaster-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/essential-health-packages/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Itugma ang apat na fictional pangangailangan sa tamang serbisyo at sabihin ang referral at follow-up.",
+        "en": "Match four fictional needs to the appropriate service and state referral and follow-up."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          56,
+          57
+        ],
+        "F": [
+          38,
+          42,
+          43
+        ],
+        "P": [
+          107,
+          110
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-disaster-tabletop",
+      "lesson_key": "disaster-tabletop",
+      "kind": "disaster-simulation",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 10,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/disaster-tabletop/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa 10 minutong tabletop, ayusin ang prayoridad, handover, continuity, follow-up at suporta sa responder.",
+        "en": "In a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          54,
+          55,
+          56,
+          57
+        ],
+        "F": [
+          38,
+          42,
+          43
+        ],
+        "P": [
+          97,
+          112
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    }
+  ]
+}

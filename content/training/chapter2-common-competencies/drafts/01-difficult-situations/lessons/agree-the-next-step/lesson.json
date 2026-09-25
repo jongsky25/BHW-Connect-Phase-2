@@ -1,0 +1,235 @@
+{
+  "manifest": {
+    "lesson_key": "agree-the-next-step",
+    "position": 2,
+    "title_fil": "Magkasundo sa susunod na hakbang",
+    "title_en": "Agree on the next step",
+    "objectives_fil": [
+      "Sa sitwasyon ni Ben, mag-alok ng makatotohanang pagpipilian at kumpirmahin ang napiling hakbang, responsable at oras ng pag-follow-up."
+    ],
+    "objectives_en": [
+      "Given Ben’s situation, offer realistic options and confirm the chosen action, responsible person and follow-up time."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.behavior.alternatives"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Alamin ang alalahanin bago pumili ng tugon.",
+      "takeaway_en": "Find out the concern before choosing a response.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.behavior.alternatives",
+        "c2.behavior.agreement",
+        "c2.behavior.followup"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Gamit ang action card, mag-alok ng dalawang makatotohanang paraan ng pag-follow-up kay Ben. Ipasabi kung alin ang nais niya.",
+      "takeaway_en": "Using the action card, offer Ben two realistic follow-up options. Ask which he prefers.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.behavior.alternatives"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ito ay tiyak na gawaing kayang gawin nang hindi nangangako ng appointment.",
+      "takeaway_en": "This is a concrete action without promising an appointment.",
+      "check": {
+        "prompt_fil": "Hindi pa alam ni Salma ang iskedyul. Ano ang maaari niyang ialok kay Ben?",
+        "prompt_en": "Salma does not know the schedule yet. What can she offer Ben?",
+        "options": [
+          {
+            "fil": "Itanong sa health center at magbalita sa takdang oras.",
+            "en": "Ask the health center and update him at an agreed time."
+          },
+          {
+            "fil": "Mangakong may staff kahit anong oras siya dumating.",
+            "en": "Promise staff will be available whenever he arrives."
+          },
+          {
+            "fil": "Ipalagay na hindi interesado si Ben sa serbisyo.",
+            "en": "Assume Ben is not interested in the service."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ay tiyak na gawaing kayang gawin nang hindi nangangako ng appointment. 2: Hindi pa kumpirmado ang availability ng staff. 3: Hadlang sa oras ang sinabi ni Ben, hindi kawalan ng interes.",
+        "feedback_en": "1: This is a concrete action without promising an appointment. 2: Staff availability has not been confirmed. 3: Ben described a time barrier, not a lack of interest."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.behavior.agreement",
+        "c2.behavior.followup"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Itinatala ang piniling hakbang, taong kikilos at oras; kinukumpirma ang pagpili ni Ben at hindi tinatawag na appointment ang update.",
+      "takeaway_en": "Records the chosen action, responsible person and time; confirms Ben’s choice without presenting an update as an appointment.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.behavior.alternatives"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Humingi ng tulong sa tamang tao kapag lampas sa saklaw.",
+      "takeaway_en": "Seek the appropriate support when a situation exceeds your role.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.behavior.agreement",
+        "c2.behavior.followup"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May hakbang, responsable at oras na puwedeng kumpirmahin kay Ben.",
+      "takeaway_en": "This has an action, owner and time to confirm with Ben.",
+      "check": {
+        "prompt_fil": "Pumayag si Ben na magtanong muna si Salma. Aling pagtatapos ang pinakamalinaw?",
+        "prompt_en": "Ben agrees that Salma will first ask. Which closing is clearest?",
+        "options": [
+          {
+            "fil": "“Sige po, hintayin na lang natin ang mangyayari.”",
+            "en": "“All right, let us wait and see what happens.”"
+          },
+          {
+            "fil": "“Pumunta na po kayo bukas; bahala na ang staff.”",
+            "en": "“Just go tomorrow; staff will deal with it.”"
+          },
+          {
+            "fil": "“Magtatanong ako at tatawag bukas ng alas-dos.”",
+            "en": "“I will ask and call tomorrow at two.”"
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Walang nakatalagang kilos o oras ng pagbalita. 2: Ginagawa nitong appointment ang hindi pa kumpirmadong usapan. 3: May hakbang, responsable at oras na puwedeng kumpirmahin kay Ben.",
+        "feedback_en": "1: No action or update time is assigned. 2: This turns an unconfirmed discussion into an appointment. 3: This has an action, owner and time to confirm with Ben."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.behavior.agreement",
+        "c2.behavior.followup"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili ng isang hakbang at balikan ang naging resulta.",
+      "takeaway_en": "Choose one action and follow up on the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.behavior.alternatives",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.behavior.agreement",
+      "read_ids": [
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.behavior.followup",
+      "read_ids": [
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        28,
+        29
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation",
+      "pdf_pages": [
+        24,
+        27
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/agree-the-next-step-e4b6400ba036.svg",
+      "content_hash": "e4b6400ba03677b762259e5e12c998f2ff2e2fd775756a445b1f730df6710e3b",
+      "alt_fil": "Tatlong kahon: Hakbang, Tao, Oras.",
+      "alt_en": "Three boxes: Action, Person, Time.",
+      "caption_fil": "Itinatala ang piniling hakbang, taong kikilos at oras; kinukumpirma ang pagpili ni Ben at hindi tinatawag na appointment ang update.",
+      "caption_en": "Records the chosen action, responsible person and time; confirms Ben’s choice without presenting an update as an appointment.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "concepts": [
+    {
+      "id": "c2.ipc.infection",
+      "statement_en": "Infection involves germs entering and multiplying; symptoms alone do not establish or exclude infection.",
+      "source": "R31,32; F35,36,37; P46,47,48,49,50,51,52",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.contact",
+      "statement_en": "Recognize direct and indirect contact exposure without equating any touch with infection.",
+      "source": "R31,32; F35,36,37; P46,47,48,49,50,51,52",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.respiratory",
+      "statement_en": "Distinguish inhalation from direct deposition of infectious respiratory particles without rigid particle-size categories.",
+      "source": "R31,32; F35,36,37; P46,47,48,49,50,51,52",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.other-routes",
+      "statement_en": "Recognize fecal-oral, vector, blood exposure and mother-to-child routes without stigmatizing or diagnosing people.",
+      "source": "R31,32; F35,36,37; P46,47,48,49,50,51,52",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.source-controls",
+      "statement_en": "Reduce exposure at its source through prompt reporting and locally directed source-control measures.",
+      "source": "R33; F35,36; P53",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.environment-work",
+      "statement_en": "Combine environmental and administrative/work-practice measures rather than relying on a single layer.",
+      "source": "R33; F35,36; P53",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.ppe-risk",
+      "statement_en": "Choose PPE through task-specific risk assessment and training; PPE does not replace other controls.",
+      "source": "R33; F35,36; P53",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.hand-method",
+      "statement_en": "Choose soap and water for visibly dirty hands; distinguish complete healthcare wash and handrub procedures.",
+      "source": "R34; F35,36; P54,55",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.hand-technique",
+      "statement_en": "Demonstrate all hand surfaces, rinse and dry correctly for washing; rub to dryness for handrub.",
+      "source": "R34; F35,36; P54,55",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.hand-moments",
+      "statement_en": "Recognize hand-hygiene moments in care and after glove removal; gloves do not replace hand hygiene.",
+      "source": "R34; F35,36; P54,55",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.cough-cover",
+      "statement_en": "Cover mouth and nose with tissue, or the bent elbow when tissue is unavailable; avoid coughing into hands.",
+      "source": "R35; F35,36; P56",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.cough-disposal",
+      "statement_en": "Dispose of used tissue appropriately and perform hand hygiene after contact with respiratory secretions.",
+      "source": "R35; F35,36; P56",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.cough-report",
+      "statement_en": "Report respiratory symptoms and follow the facility source-control and waiting-area process without diagnosis or stigma.",
+      "source": "R35; F35,36; P56",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.food-safety",
+      "statement_en": "Apply the five food-safety principles to an observed household scene.",
+      "source": "R36; F36; P57,58,59",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.safe-water",
+      "statement_en": "Protect drinking-water storage and seek verified treatment advice rather than assuming clarity means safety.",
+      "source": "R36; F36; P57,58,59",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.sanitation",
+      "statement_en": "Use sanitation and hand hygiene to interrupt fecal contamination; refer engineering and treatment parameters for local confirmation.",
+      "source": "R36; F36; P57,58,59",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.policy-access",
+      "statement_en": "Locate the locally applicable IPC policy, owner and current version rather than assuming possession means implementation.",
+      "source": "R36,37; F35; P60,61",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.role-training",
+      "statement_en": "Confirm task-specific authorization, instruction and observed competency; finding a policy does not authorize a specialist procedure.",
+      "source": "R36,37; F35; P60,61",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.exposure-report",
+      "statement_en": "Identify the immediate local reporting route for exposure or missing protection without self-directed treatment.",
+      "source": "R36,37; F35; P60,61",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.observe-gap",
+      "statement_en": "Record a specific observed IPC supply or practice gap without inventing observations or blaming people.",
+      "source": "R36,37; F35; P60,61,62",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.improvement-owner",
+      "statement_en": "Assign a feasible action, owner and follow-up through the facility IPC process.",
+      "source": "R36,37; F35; P60,61,62",
+      "redundant_with": null
+    },
+    {
+      "id": "c2.ipc.verify-result",
+      "statement_en": "Verify improvement with an observable measure and record unresolved barriers; observed competence is distinct from quiz completion.",
+      "source": "R36,37; F35; P60,61,62",
+      "redundant_with": null
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.quality.timeliness",
+      "c2.quality.integration",
+      "c2.quality.efficiency"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Dalawang balik; hindi malinaw ang contact.\nPaulit-ulit ang parehong detalye.\nSaan maaaring bawasan ang hadlang?",
+    "display_en": "Two visits; unclear contact.\nThe same details are requested again.\nWhere could a barrier be reduced?",
+    "check": null,
+    "narration_fil": "Dalawang beses nang bumalik si Pilar sa BHS. Sa unang punta, hindi malinaw kung aling staff ang lalapitan. Sa ikalawa, pinasulat muli ang parehong detalye. May trabaho siya sa hapon. Gustong tumulong ni BHW Arnel nang hindi nangangakong matatapos ang lahat sa isang araw.",
+    "narration_en": "Pilar has returned to the BHS twice. On the first visit, the staff contact was unclear. On the second, she was asked to write the same details again. She works in the afternoon. BHW Arnel wants to help without promising that everything will finish in one day."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.quality.timeliness",
+      "c2.quality.integration",
+      "c2.quality.efficiency"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Iguhit ang mga hakbang.\nMarkahan ang delay at dobleng gawain.\nKumpirmahin ang pagbabago sa staff.\nItakda kung paano susuriin.",
+    "display_en": "Map the steps.\nMark delay and duplicated work.\nConfirm the change with staff.\nDecide how to review it.",
+    "check": null,
+    "narration_fil": "Ilista ang hakbang mula pagdating hanggang follow-up. Markahan ang pagkaantala, hadlang at dobleng gawain. Itanong sa staff ang tamang contact at kung magagamit ang naunang tala. Kumpirmahin ang susunod na hakbang kay Pilar. Pumili ng pagbabago na hindi nag-aalis ng kailangang pagsusuri o pahintulot.",
+    "narration_en": "List the steps from arrival to follow-up. Mark delays, barriers and repeated work. Ask staff about the correct contact and whether the earlier record can be used. Confirm the next step with Pilar. Choose an improvement that preserves necessary checks and permission."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.quality.timeliness"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Hindi alam ni Pilar ang tamang contact. Ano ang unang makatutulong?",
+      "prompt_en": "Pilar does not know the right contact. What helps first?",
+      "options": [
+        {
+          "fil": "Sabihing umikot muli hanggang may makausap siyang staff.",
+          "en": "Tell her to keep asking around until she finds someone."
+        },
+        {
+          "fil": "Kumpirmahin ang contact sa staff.",
+          "en": "Confirm the contact with staff."
+        },
+        {
+          "fil": "Mangakong lahat ng serbisyo ay matatapos bago magtanghali.",
+          "en": "Promise every service will finish before noon."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Inuulit nito ang hadlang sa halip na linawin ang daan. 2: May malinaw na pupuntahan bago magbigay ng tagubilin. 3: Hindi hawak ng BHW ang lahat ng oras at serbisyo.",
+      "feedback_en": "1: This repeats the barrier rather than clarifying the pathway. 2: This establishes a clear destination before giving directions. 3: The BHW does not control all timings and services."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.quality.timeliness",
+      "c2.quality.integration",
+      "c2.quality.efficiency"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Pagdating → tanong → form → hintay.\nMungkahi: malinaw na contact card.\nPanukat: balik dahil sa maling contact.",
+    "display_en": "Arrival → ask → form → wait.\nProposal: a clear contact card.\nMeasure: returns due to an incorrect contact.",
+    "check": null,
+    "narration_fil": "Mapa: pagdating → pagtatanong → pagpuno muli → paghihintay. Iminungkahi ni Arnel ang malinaw na contact card. Kukumpirmahin ng staff kung kailan puwedeng gamitin ang naunang tala. Sa susunod na linggo, bibilangin nila ang pagbalik dahil sa maling contact. Hindi pa nila sinasabing bumuti ang serbisyo hangga’t walang resulta.",
+    "narration_en": "Map: arrival → asking around → repeating the form → waiting. Arnel proposes a clear contact card. Staff will confirm when the earlier record can be used. Next week they will count return visits caused by an incorrect contact. They will not claim improvement before reviewing results."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.quality.integration",
+      "c2.quality.efficiency"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Ugnayan, hindi lahat ng serbisyo ng BHW.\nPanatilihin ang kailangang pagsusuri.\nIpasuri muna ang pagbabago sa staff.",
+    "display_en": "Coordinate the appropriate providers.\nPreserve required checks.\nHave staff review the proposed change.",
+    "check": null,
+    "narration_fil": "Ang integrated na serbisyo ay may ugnayan sa tamang tagapagbigay. Hindi ibig sabihin na gagawin ng BHW ang lahat ng serbisyo. Huwag alisin ang form o pagsusuring kailangan ng staff. Huwag baguhin ang pila o prayoridad nang walang awtorisasyon. Iulat ang hadlang at ipasuri ang mungkahi.",
+    "narration_en": "Integrated service connects the appropriate providers. It does not mean the BHW delivers every service. Do not remove a form or check that staff require. Do not change queue priority without authorization. Report barriers and have the proposal reviewed."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.quality.efficiency"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Gustong bawasan ang dobleng form. Ano ang ligtas na mungkahi?",
+      "prompt_en": "The group wants to reduce duplicate forms. Which proposal is appropriate?",
+      "options": [
+        {
+          "fil": "Itapon ang lahat ng lumang form upang wala nang ulit.",
+          "en": "Discard all old forms so nothing can be repeated."
+        },
+        {
+          "fil": "Laktawan ang lahat ng tanong kahit kailangan ng staff.",
+          "en": "Skip every question even when staff need it."
+        },
+        {
+          "fil": "Ipasuri ang paggamit ng naunang tala.",
+          "en": "Ask staff to review use of the earlier record."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Maaaring kailangan pa ang mga tala; hindi ito pasya ng BHW lamang. 2: Maaaring mawala ang mahalagang pagsusuri. 3: Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.",
+      "feedback_en": "1: Records may still be required; this is not the BHW’s decision alone. 2: Necessary checks could be lost. 3: This explores less duplication while preserving required processes."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.quality.timeliness",
+      "c2.quality.integration",
+      "c2.quality.efficiency"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "May contact at takdang update.\nSa Lunes: ipasuri ang isang pagbabago.\nIntegrated: magkakaugnay na serbisyo.",
+    "display_en": "A contact and update time are agreed.\nOn Monday: seek review of one change.\nIntegrated: coordinated services.",
+    "check": null,
+    "narration_fil": "May contact at takdang update na si Pilar. Susuriin pa ng staff ang paggamit ng naunang tala. Sa Lunes, gumawa ng mapa ng kathang-isip na pagbisita at ipasuri ang isang pagbabago. Salita: integrated — magkakaugnay ang angkop na serbisyo at tagapagbigay.",
+    "narration_en": "Pilar has a contact and an agreed update time. Staff still need to review use of the earlier record. On Monday, map a fictional visit and ask staff to review one proposed improvement. Word: integrated — relevant services and providers are coordinated."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang.",
+      "observable_en": "Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover.",
+      "levels": {
+        "kaya_na_fil": "Magbigay ng maikling factual na handover at hilinging kumpirmahin ang susunod na hakbang. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magdagdag ng hinulaang diagnosis, kaligtaan ang oras o ginawa, o ibahagi ang detalye sa labas ng handover.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not add a guessed diagnosis, omit the time or actions, or share identifiable details outside the care handover."
+      }
+    }
+  ]
+}

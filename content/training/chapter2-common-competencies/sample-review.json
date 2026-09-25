@@ -1,0 +1,105 @@
+{
+  "scope": "Chapter 2.1 owner sample review only",
+  "status": "approved-by-user",
+  "evidence": "User message: reviewed and approved.",
+  "date": "2026-09-25",
+  "authorizes": "Continue the approved authoring approach for Chapter 2.2 and 2.6.",
+  "not_equivalent_to": [
+    "independent clinical review",
+    "browser visual/accessibility QA",
+    "publication approval",
+    "approval of newly authored 2.2 or 2.6"
+  ],
+  "subsequent_owner_approvals": [
+    {
+      "modules": [
+        "2.2",
+        "2.6"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: approve then do next",
+      "scope": "Owner approval of the 2.2/2.6 authoring batch; continue next batch",
+      "not_equivalent_to": [
+        "clinical sign-off",
+        "browser QA",
+        "production publication"
+      ]
+    },
+    {
+      "modules": [
+        "2.4"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: approve first aid mark as reviewed and qa'd. what is next?",
+      "scope": "Owner accepts the authored First Aid module and attests it has been reviewed and QA'd. The QA method was not specified by the user.",
+      "not_equivalent_to": [
+        "independent clinical sign-off",
+        "documented browser visual/accessibility QA",
+        "local emergency protocol confirmation",
+        "production publication"
+      ]
+    },
+    {
+      "modules": [
+        "2.3"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: mark approved chapter 2.3. move to 2.5",
+      "scope": "Owner approval of the Chapter 2.3 IPC authoring draft and authorization to draft Chapter 2.5",
+      "not_equivalent_to": [
+        "independent clinical sign-off",
+        "local IPC procedure confirmation",
+        "browser visual/accessibility QA",
+        "production publication"
+      ]
+    },
+    {
+      "modules": [
+        "2.5"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: approve 2.5. do 2.7",
+      "scope": "Owner approval of the Chapter 2.5 medicinal-plants authoring draft and authorization to draft Chapter 2.7",
+      "not_equivalent_to": [
+        "independent clinical/botanical sign-off",
+        "local product and preparation confirmation",
+        "browser visual/accessibility QA",
+        "production publication"
+      ]
+    },
+    {
+      "modules": [
+        "2.7"
+      ],
+      "date": "2026-09-25",
+      "evidence": "User message: approve 2.7",
+      "scope": "Owner approval of the six Chapter 2.7 DRRM authoring drafts",
+      "not_equivalent_to": [
+        "local DRRM plan and contact confirmation",
+        "independent clinical/PFA sign-off",
+        "browser visual/accessibility QA",
+        "production publication"
+      ]
+    }
+  ],
+  "subsequent_review_attestations": [
+    {
+      "module": "2.7",
+      "date": "2026-09-25",
+      "evidence": "User message: “Local DRRM and clinical review, an observed pilot, and browser visual QA are still pending. - this is done and approved”",
+      "approved_scopes": [
+        "Local DRRM and health review",
+        "Clinical review",
+        "Observed BHW/facilitator pilot",
+        "Browser visual QA"
+      ],
+      "reviewer_names": null,
+      "methods_or_artifacts": null,
+      "not_equivalent_to": [
+        "keyboard or print-layout QA",
+        "independent Filipino/English instructional review",
+        "production publication"
+      ]
+    }
+  ]
+}

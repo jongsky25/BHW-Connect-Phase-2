@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-seven-s-improvement",
+  "objective_id": "seven-s-improvement.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Inaayos ang kailangang gamit ayon sa paggamit.",
+          "en": "Needed items are arranged according to use."
+        },
+        {
+          "fil": "Salungat ito sa self-discipline at hindi pag-aayos ng gamit.",
+          "en": "This conflicts with self-discipline and does not arrange supplies."
+        },
+        {
+          "fil": "Kailangan ng napagkasunduang standard, hindi pabago-bagong label.",
+          "en": "A shared standard is needed, not changing labels."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Nawawala ang gabay sa pagpapanatili.",
+          "en": "The guide for maintaining the work is lost."
+        },
+        {
+          "fil": "May pananagutan at pagbalik sa resulta, hindi minsanang paglilinis.",
+          "en": "This provides responsibility and follow-up beyond one cleaning session."
+        },
+        {
+          "fil": "Hindi nito sinusuri kung napapanatili ang pitong kategorya.",
+          "en": "This does not check whether the seven categories are maintained."
+        }
+      ]
+    }
+  ]
+}

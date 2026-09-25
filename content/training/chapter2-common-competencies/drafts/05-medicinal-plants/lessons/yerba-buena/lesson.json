@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "lesson_key": "yerba-buena",
+    "position": 10,
+    "title_fil": "Yerba buena",
+    "title_en": "Yerba buena",
+    "objectives_fil": [
+      "Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon."
+    ],
+    "objectives_en": [
+      "For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.plants.yerba-buena.identity",
+        "c2.plants.yerba-buena.use",
+        "c2.plants.yerba-buena.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: May masakit na ngipin at namamagang pisngi si Eva",
+      "takeaway_en": "Case: Eva has tooth pain and a swollen cheek",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.plants.yerba-buena.identity",
+        "c2.plants.yerba-buena.use",
+        "c2.plants.yerba-buena.boundary"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Itugma ang dalawang Yerba buena card; piliin ang Mentha cordifolia, dahon, gamit at ligtas na susunod na hakbang.",
+      "takeaway_en": "Match two Yerba buena cards; choose Mentha cordifolia, leaves, use and safe next step.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.plants.yerba-buena.identity"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.",
+      "takeaway_en": "Match the part to the written source; this is not a dose.",
+      "check": {
+        "prompt_fil": "Aling bahagi ng Yerba buena ang nakalista sa card?",
+        "prompt_en": "Which Yerba buena part is listed on the card?",
+        "options": [
+          {
+            "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Yerba buena.",
+            "en": "Any part of a yard plant even when its identity as Yerba buena is unconfirmed."
+          },
+          {
+            "fil": "Dahon ng kumpirmadong Mentha cordifolia.",
+            "en": "Leaves of confirmed Mentha cordifolia."
+          },
+          {
+            "fil": "Hindi kailangang malaman ang botanical name.",
+            "en": "The botanical name need not be checked."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
+        "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.plants.yerba-buena.identity",
+        "c2.plants.yerba-buena.use",
+        "c2.plants.yerba-buena.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
+      "takeaway_en": "For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.plants.yerba-buena.use",
+        "c2.plants.yerba-buena.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.plants.yerba-buena.use",
+        "c2.plants.yerba-buena.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
+      "takeaway_en": "Confirm identity, symptoms and scope before advice.",
+      "check": {
+        "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Yerba buena?",
+        "prompt_en": "What is the safe response in the Yerba buena case?",
+        "options": [
+          {
+            "fil": "Ipalit agad sa niresetang gamot.",
+            "en": "Replace prescribed treatment now."
+          },
+          {
+            "fil": "Kumonsulta muna sa clinician.",
+            "en": "Consult a clinician first."
+          },
+          {
+            "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+            "en": "Copy an old recipe without assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+        "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.plants.yerba-buena.identity",
+        "c2.plants.yerba-buena.boundary"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.plants.yerba-buena.identity",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pitahc-directory",
+        "who-traditional"
+      ]
+    },
+    {
+      "id": "c2.plants.yerba-buena.use",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pitahc-directory",
+        "who-traditional"
+      ]
+    },
+    {
+      "id": "c2.plants.yerba-buena.boundary",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "pitahc-directory",
+        "who-traditional"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        51
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy preparation and dose claims excluded from learner draft",
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "id": "pitahc-directory",
+      "title": "PITAHC Directory of Herbs (online, 2026): ten named entries despite “9 herbs” page count",
+      "url": "https://pitahc.gov.ph/herbs-directory/"
+    },
+    {
+      "id": "who-traditional",
+      "title": "WHO Traditional Medicine Q&A (quality, evidence and safety)",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/traditional-medicine"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/yerba-buena-d74795afffd1.svg",
+      "content_hash": "d74795afffd164788fc70da411d983ba784df51dfda6506ec64f96c2f39fd5f4",
+      "alt_fil": "Tatlong kahon: Pangalan, Gamit, Konsulta.",
+      "alt_en": "Three boxes: Identity, Use, Consult.",
+      "caption_fil": "Para sa Yerba buena, itugma ang botanical name, bahagi at nakalistang gamit. Ipaliwanag ang hangganan at konsultasyon.",
+      "caption_en": "For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

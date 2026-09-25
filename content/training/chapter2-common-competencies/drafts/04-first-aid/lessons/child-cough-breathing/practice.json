@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-child-cough-breathing",
+  "objective_id": "child-cough-breathing.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring maantala ang kinakailangang assessment.",
+          "en": "Necessary assessment may be delayed."
+        },
+        {
+          "fil": "Maaaring makapinsala ang shortcut: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
+          "en": "The shortcut can cause harm: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait."
+        },
+        {
+          "fil": "Unahin ang kaligtasan at agarang tulong.",
+          "en": "Prioritize safety and timely help."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Obserbahan ang gawa at ang tamang referral.",
+          "en": "Observe the task and appropriate referral."
+        },
+        {
+          "fil": "Hindi batayan ang kuwento para sa sariling diagnosis.",
+          "en": "The story is not grounds for an independent diagnosis."
+        },
+        {
+          "fil": "Ang shortcut ay hindi ligtas: Huwag umasa sa isang lumang bilang ng temperatura o paghinga, o ipangakong maaaring maghintay ang batang hirap huminga.",
+          "en": "The shortcut is unsafe: Do not use a single old temperature or respiratory-rate threshold as a stand-alone referral rule, or promise that a child with breathing difficulty can wait."
+        }
+      ]
+    }
+  ]
+}

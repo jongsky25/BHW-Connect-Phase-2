@@ -1,0 +1,121 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Sa loob ng 2–4 linggo, magsanay ng usapan at handover kasama ang midwife gamit ang kathang-isip na kaso.",
+    "en": "Within 2–4 weeks, practise a conversation and handover with the midwife using a fictional case."
+  },
+  "supervision": {
+    "fil": "Obserbahan gamit ang parehong lesson indicator; magbigay ng feedback at pagkakataong umulit.",
+    "en": "Observe using the same lesson indicator; provide feedback and a retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "prepare-a-response",
+      "check": {
+        "prompt_fil": "Gusto ni Rosa na bumalik si Amina sa hapon. Ano ang pinakamainam na plano?",
+        "prompt_en": "Rosa wants Amina to return in the afternoon. Which plan fits?",
+        "options": [
+          {
+            "fil": "Kumpirmahin ang oras at babalikang alalahanin.",
+            "en": "Confirm the time and concern to revisit."
+          },
+          {
+            "fil": "Tapusin ang tanong sa harap ng kapitbahay.",
+            "en": "Finish the questions in front of the neighbors."
+          },
+          {
+            "fil": "Itala na tumanggi sa lahat ng pagbisita.",
+            "en": "Record that she refused all visits."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Sinusunod nito ang napagkasunduan at may malinaw na susunod na hakbang. 2: Hindi nito tinutugunan ang alalahanin sa pribadong usapan. 3: Hindi ito ang sinabi ni Rosa; ibang oras ang hiniling niya.",
+        "feedback_en": "1: This respects the agreement and gives a clear next step. 2: This does not address the privacy concern. 3: That is not what Rosa said; she requested another time."
+      }
+    },
+    {
+      "lesson_key": "listen-and-clarify",
+      "check": {
+        "prompt_fil": "Sinabi ni Liza na hindi niya alam kung sino ang kakausapin. Ano ang susunod na sasabihin ni Jun?",
+        "prompt_en": "Liza says she does not know whom to approach. What should Jun say next?",
+        "options": [
+          {
+            "fil": "“Ayaw po ba ninyong bumalik dahil matagal?”",
+            "en": "“Do you refuse to return because it takes too long?”"
+          },
+          {
+            "fil": "“Hindi pa malinaw ang contact. Tama po ba?”",
+            "en": "“The contact is still unclear. Is that right?”"
+          },
+          {
+            "fil": "“Sigurado po akong matatapos ito ngayong araw.”",
+            "en": "“I am sure this will be finished today.”"
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Nagdadagdag ito ng motibo na hindi sinabi ni Liza. 2: Ibinubuod nito ang narinig at humihingi ng pagwawasto. 3: Nangangako ito ng resulta bago makumpirma ang magagawa ng staff.",
+        "feedback_en": "1: This adds a motive Liza did not state. 2: This summarizes what was heard and invites correction. 3: This promises an outcome before staff availability is confirmed."
+      }
+    },
+    {
+      "lesson_key": "agree-the-next-step",
+      "check": {
+        "prompt_fil": "Pumayag si Ben na magtanong muna si Salma. Aling pagtatapos ang pinakamalinaw?",
+        "prompt_en": "Ben agrees that Salma will first ask. Which closing is clearest?",
+        "options": [
+          {
+            "fil": "“Sige po, hintayin na lang natin ang mangyayari.”",
+            "en": "“All right, let us wait and see what happens.”"
+          },
+          {
+            "fil": "“Pumunta na po kayo bukas; bahala na ang staff.”",
+            "en": "“Just go tomorrow; staff will deal with it.”"
+          },
+          {
+            "fil": "“Magtatanong ako at tatawag bukas ng alas-dos.”",
+            "en": "“I will ask and call tomorrow at two.”"
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Walang nakatalagang kilos o oras ng pagbalita. 2: Ginagawa nitong appointment ang hindi pa kumpirmadong usapan. 3: May hakbang, responsable at oras na puwedeng kumpirmahin kay Ben.",
+        "feedback_en": "1: No action or update time is assigned. 2: This turns an unconfirmed discussion into an appointment. 3: This has an action, owner and time to confirm with Ben."
+      }
+    },
+    {
+      "lesson_key": "report-and-reflect",
+      "check": {
+        "prompt_fil": "Naipasa na ni Datu ang handover. Ano ang makabuluhang pagninilay?",
+        "prompt_en": "Datu has handed over the concern. Which reflection is useful?",
+        "options": [
+          {
+            "fil": "Mag-alok ng pribadong lugar nang mas maaga sa susunod.",
+            "en": "Offer a private place earlier next time."
+          },
+          {
+            "fil": "Iwasan na ang lahat ng residenteng maraming tanong.",
+            "en": "Avoid all residents who ask many questions."
+          },
+          {
+            "fil": "Sabihing maayos ang lahat kahit hindi nakinig nang buo.",
+            "en": "Say everything went well despite not fully listening."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Tiyak itong pagbabago na maaari niyang subukan at suriin. 2: Hindi nito pinabubuti ang sariling pakikitungo o access sa serbisyo. 3: Hindi nito sinusuri ang aktuwal na nangyari o kailangang baguhin.",
+        "feedback_en": "1: This is a specific change he can try and review. 2: This does not improve his response or access to service. 3: This does not examine what happened or what needs to change."
+      }
+    }
+  ],
+  "localization_slots": [
+    "midwife_or_supervisor",
+    "authorized_reporting_channel",
+    "emergency_contact",
+    "safe_meeting_place"
+  ]
+}

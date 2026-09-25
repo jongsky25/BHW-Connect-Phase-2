@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-bayabas",
+  "objective_id": "bayabas.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan.",
+          "en": "Unconfirmed part and identity are unsafe."
+        },
+        {
+          "fil": "Itugma ang bahagi sa nakasulat na source; hindi pa ito dose.",
+          "en": "Match the part to the written source; this is not a dose."
+        },
+        {
+          "fil": "Magkapareho ang tawag sa ilang magkakaibang halaman.",
+          "en": "Common names may cover different plants."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring maantala o mapalitan ang kinakailangang pangangalaga.",
+          "en": "Necessary care may be displaced or delayed."
+        },
+        {
+          "fil": "Kumpirmahin ang identity, sintomas at saklaw bago magpayo.",
+          "en": "Confirm identity, symptoms and scope before advice."
+        },
+        {
+          "fil": "Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+          "en": "An old recipe does not replace current clinical guidance."
+        }
+      ]
+    }
+  ]
+}

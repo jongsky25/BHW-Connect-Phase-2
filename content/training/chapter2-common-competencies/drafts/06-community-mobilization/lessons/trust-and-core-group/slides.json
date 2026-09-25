@@ -1,0 +1,157 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.mobilization.trust",
+      "c2.mobilization.participation",
+      "c2.mobilization.core-group"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "May umiiral nang samahan.\nLider: chat lamang ang nais.\nSari: may ibang mungkahi; tahimik si Eva.\nPaano bubuksan ang usapan?",
+    "display_en": "An association already exists.\nLeader: wants chat only.\nSari has another idea; Eva is quiet.\nHow can the discussion include them?",
+    "check": null,
+    "narration_fil": "May umiiral nang samahan sa Purok Maligaya. Sa pulong, gustong kontrolin ng lider ang lahat ng pagpapabalita. Tahimik si Eva, at may mungkahi si Sari para sa walang cellphone. Kailangan ni Ina na buksan ang usapan at linawin kung sino ang handang tumulong.",
+    "narration_en": "Purok Maligaya already has a residents’ group. At the meeting, its leader wants to control every update. Eva is quiet, and Sari has an idea for people without phones. Ina needs to open the discussion and clarify who is willing to help."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.mobilization.trust",
+      "c2.mobilization.participation",
+      "c2.mobilization.core-group"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Magkasundo sa magalang na usapan.\nAnyayahang mag-ambag; payagang lumampas.\nIsaalang-alang ang umiiral na grupo.\nKumpirmahin ang kusang tungkulin.",
+    "display_en": "Agree on respectful discussion.\nInvite contributions; allow people to pass.\nConsider the existing group.\nConfirm voluntary responsibilities.",
+    "check": null,
+    "narration_fil": "Ipaliwanag ang layunin at magkasundo sa magalang na usapan. Anyayahang mag-ambag ang bawat isa; payagang lumampas muna kung ayaw magsalita. Ibuod ang magkakaibang mungkahi. Alamin kung makikipagtulungan sa umiiral na grupo. Piliin ang handang kasapi, linawin ang papel at ipaulit ang napagkasunduan.",
+    "narration_en": "Explain the purpose and agree on respectful discussion. Invite everyone to contribute, allowing people to pass. Summarize different suggestions. Consider working with the existing group. Identify willing members, clarify roles and ask them to restate the agreement."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.mobilization.participation"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Tahimik si Eva. Ano ang angkop na gawin ni Ina?",
+      "prompt_en": "Eva is quiet. What should Ina do?",
+      "options": [
+        {
+          "fil": "Anyayahan at payagang lumampas.",
+          "en": "Invite her and allow her to pass."
+        },
+        {
+          "fil": "Sabihing wala siyang pakialam kung hindi siya magsasalita.",
+          "en": "Say she does not care if she stays silent."
+        },
+        {
+          "fil": "Isulat na pumayag siya sa lahat dahil wala siyang pagtutol.",
+          "en": "Record that she agreed to everything because she did not object."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: May pagkakataong mag-ambag nang walang pamimilit. 2: Nanghuhusga ito at maaaring makabawas sa tiwala. 3: Hindi katumbas ng malinaw na pagsang-ayon ang katahimikan.",
+      "feedback_en": "1: This creates an opportunity without coercion. 2: This judges her and can undermine trust. 3: Silence is not clear agreement."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.mobilization.trust",
+      "c2.mobilization.participation",
+      "c2.mobilization.core-group"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Napakinggan ang paraan para sa walang phone.\nMakikipagtulungan sa umiiral na samahan.\nMay pumayag sa papel; walang sapilitang hirang.",
+    "display_en": "An option for people without phones is heard.\nWork with the existing association.\nRoles are agreed, not imposed.",
+    "check": null,
+    "narration_fil": "Ina: “Narinig natin ang chat. Sari, gusto mo bang ibahagi ang ibang paraan?” Nagmungkahi si Sari ng personal na paanyaya. Piniling makipagtulungan ng grupo sa umiiral na samahan. Pumayag ang lider na tumanggap ng kumpirmadong balita, at si Sari na magmungkahi ng paraan para sa walang phone. Hindi hinirang ang tahimik na si Eva nang walang pahintulot.",
+    "narration_en": "Ina: “We have heard about chat. Sari, would you like to share another approach?” Sari suggests personal invitations. The group chooses to work with the existing association. The leader agrees to receive confirmed updates, and Sari to propose options for people without phones. Quiet Eva is not assigned a role without agreement."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.mobilization.trust",
+      "c2.mobilization.core-group"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "BHW: tulong sa proseso.\nDesisyon: kasama ang komunidad.\nHindi pagkakaunawaan: linawin ang punto.\nHindi pa handa: balikan ang tanong.",
+    "display_en": "BHW: supports the process.\nDecisions: made with the community.\nDisagreement: clarify the points.\nNot ready: return to the question later.",
+    "check": null,
+    "narration_fil": "Ang BHW ay tumutulong sa proseso, hindi awtomatikong may-ari ng desisyon. Huwag pilitin ang pagsang-ayon o humirang ng ayaw tumanggap. Kung may hindi pagkakaunawaan, ibuod ang punto at balikan ang layunin. Kung hindi pa handa ang grupo, itala ang tanong na kailangang pag-usapan muli.",
+    "narration_en": "The BHW supports the process rather than automatically owning decisions. Do not force agreement or appoint unwilling people. When disagreement arises, summarize the points and return to the shared purpose. If the group is not ready, record what needs another discussion."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.mobilization.core-group"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "May umiiral nang samahan. Ano ang dapat linawin bago bumuo ng pangunahing grupo?",
+      "prompt_en": "An association already exists. What should be clarified before forming a core group?",
+      "options": [
+        {
+          "fil": "Italaga agad ang lahat ng kaibigan ng BHW bilang lider.",
+          "en": "Immediately appoint all the BHW’s friends as leaders."
+        },
+        {
+          "fil": "Pakikipagtulungan at kusang tungkulin.",
+          "en": "Collaboration and voluntary roles."
+        },
+        {
+          "fil": "Buwagin ang samahan upang BHW lamang ang makapagpasya.",
+          "en": "Dissolve the association so only the BHW can decide."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi nito tinitiyak ang pakikilahok at pagsang-ayon ng komunidad. 2: Nasusuri ang umiiral na grupo at nililinaw ang handang gagampan. 3: Inaalis nito ang pagmamay-ari ng komunidad sa proseso.",
+      "feedback_en": "1: This does not establish community participation and agreement. 2: This considers the existing group and who willingly takes responsibility. 3: This removes community ownership of the process."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.mobilization.trust",
+      "c2.mobilization.core-group"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Handang kasapi at malinaw na tungkulin.\nSa Lunes: magsanay ng maliit na pulong.\nPangunahing grupo: kusang namumuno kasama nila.",
+    "display_en": "Willing members with clear responsibilities.\nOn Monday: practise a small meeting.\nCore group: willing members leading with others.",
+    "check": null,
+    "narration_fil": "May handang kasapi at malinaw na unang tungkulin ang pangunahing grupo. May puwang pa rin para sa iba. Sa Lunes, magsanay ng pulong gamit ang tatlong kathang-isip na papel. Salita: pangunahing grupo — mga kusang kasaping tutulong mamuno kasama ng komunidad.",
+    "narration_en": "The core group has willing members and clear initial responsibilities, with room for others to contribute. On Monday, practise the meeting with three fictional roles. Word: core group — willing members who help lead with the community."
+  }
+]

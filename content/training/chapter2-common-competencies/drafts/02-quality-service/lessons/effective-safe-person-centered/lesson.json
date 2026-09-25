@@ -1,0 +1,244 @@
+{
+  "manifest": {
+    "lesson_key": "effective-safe-person-centered",
+    "position": 0,
+    "title_fil": "Gamitin ang tatlong katangian ng dekalidad na serbisyo",
+    "title_en": "Apply the three quality dimensions",
+    "objectives_fil": [
+      "Ihambing ang dalawang pagbisita at magmungkahi ng pagbabago sa bisa, kaligtasan at pagtugon sa pangangailangan ng residente."
+    ],
+    "objectives_en": [
+      "Compare two visits and propose improvements in effectiveness, safety and responsiveness to the resident’s needs."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.quality.effective",
+        "c2.quality.safe",
+        "c2.quality.person-centered"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Mabilis, pero dekalidad ba?",
+      "takeaway_en": "Fast, but high quality?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.quality.effective",
+        "c2.quality.safe",
+        "c2.quality.person-centered"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Ihambing ang dalawang usapan. Sa bawat katangian, itala ang ebidensiya at isang pagbabago. Ipaliwanag ang pagkakaiba sa kapareha.",
+      "takeaway_en": "Compare the two encounters. For each dimension, record the evidence and one improvement. Explain the difference to a partner.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.quality.effective"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May mapagkakatiwalaang batayan bago magbigay ng iskedyul.",
+      "takeaway_en": "This establishes a reliable basis before giving a schedule.",
+      "check": {
+        "prompt_fil": "Lumang mensahe lamang ang hawak ni Mila. Ano ang gagawin niya?",
+        "prompt_en": "Mila has only an old message. What should she do?",
+        "options": [
+          {
+            "fil": "Kumpirmahin sa staff.",
+            "en": "Confirm with staff."
+          },
+          {
+            "fil": "Ipangako ang lumang oras upang matapos agad.",
+            "en": "Promise the old time to finish quickly."
+          },
+          {
+            "fil": "Sabihing tama ang mensahe dahil ipinasa ng kapitbahay.",
+            "en": "Treat it as correct because a neighbor forwarded it."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: May mapagkakatiwalaang batayan bago magbigay ng iskedyul. 2: Maaaring mali na ang oras; hindi sapat ang bilis. 3: Hindi kapalit ng kumpirmasyon ang pagkakapasa ng mensahe.",
+        "feedback_en": "1: This establishes a reliable basis before giving a schedule. 2: The time may be wrong; speed is not enough. 3: A forwarded message does not replace confirmation."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.quality.effective",
+        "c2.quality.safe",
+        "c2.quality.person-centered"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tinutukoy ang ebidensiya para sa tatlong katangian at nagmumungkahi ng isang angkop na pagbabago sa bawat isa.",
+      "takeaway_en": "Identifies evidence for all three dimensions and proposes an appropriate improvement for each.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.quality.safe"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.quality.safe",
+        "c2.quality.person-centered"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kailangan din ang kaligtasan at pagtugon sa pangangailangan.",
+      "takeaway_en": "Safety and responsiveness to needs also matter.",
+      "check": {
+        "prompt_fil": "Tama na ang iskedyul, pero may harang at hindi narinig si Nena. Ano pa ang kailangan?",
+        "prompt_en": "The schedule is correct, but the path is blocked and Nena was not heard. What is still needed?",
+        "options": [
+          {
+            "fil": "Ulitin nang mas mabilis ang iskedyul upang makaalis siya.",
+            "en": "Repeat the schedule faster so she can leave."
+          },
+          {
+            "fil": "Pansinin ang harang at pakinggan si Nena.",
+            "en": "Address the obstacle and listen to Nena."
+          },
+          {
+            "fil": "Sabihing maayos na ang lahat dahil tama ang impormasyon.",
+            "en": "Declare the service complete because the information is correct."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi nito naaayos ang panganib o pakikilahok. 2: Kailangan din ang kaligtasan at pagtugon sa pangangailangan. 3: Isang katangian lamang ang nasuri; kulang ang dalawa.",
+        "feedback_en": "1: This addresses neither the risk nor participation. 2: Safety and responsiveness to needs also matter. 3: Only one dimension has been checked; two remain."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.quality.effective",
+        "c2.quality.person-centered"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.quality.effective",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.quality.safe",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.quality.person-centered",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation",
+      "pdf_pages": [
+        29,
+        31,
+        32,
+        37
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/effective-safe-person-centered-955372f2c0bd.svg",
+      "content_hash": "955372f2c0bde90f5efd93c2ab8cde150f87509e07b5c2022858ebfb6bbd6c8b",
+      "alt_fil": "Tatlong kahon: Epektibo, Ligtas, Nakatuon sa tao.",
+      "alt_en": "Three boxes: Effective, Safe, People-centered.",
+      "caption_fil": "Tinutukoy ang ebidensiya para sa tatlong katangian at nagmumungkahi ng isang angkop na pagbabago sa bawat isa.",
+      "caption_en": "Identifies evidence for all three dimensions and proposes an appropriate improvement for each.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

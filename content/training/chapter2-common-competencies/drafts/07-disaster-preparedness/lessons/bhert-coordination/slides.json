@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.risk",
+      "c2.drrm.bhert-coordination.action",
+      "c2.drrm.bhert-coordination.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: bhert coordination",
+    "display_en": "Case: bhert coordination",
+    "check": null,
+    "narration_fil": "Pagkatapos ng pagbaha, hinihiling sa BHW na maglista ng sintomas at maghatid ng impormasyon sa response team. Hindi malinaw kung aktibo ang lumang BHERT roster.",
+    "narration_en": "After flooding, a BHW is asked to record concerns and relay information to a response team. It is unclear whether an old BHERT roster is active."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.risk",
+      "c2.drrm.bhert-coordination.action",
+      "c2.drrm.bhert-coordination.boundary"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Tungkulin\nIulat\nHandover",
+    "display_en": "Role\nReport\nHandover",
+    "check": null,
+    "narration_fil": "Kumpirmahin sa barangay at health supervisor ang kasalukuyang team, tungkulin, lider at reporting channel. Iulat ang minimum na kailangan: lugar, panganib, agarang pangangailangan, ginawa at susunod na contact. Mag-handover at itala ang oras; panatilihing pribado ang sensitibong detalye.",
+    "narration_en": "Confirm the current team, role, lead and reporting channel with the barangay and health supervisor. Report the minimum needed: location, hazard, urgent need, action taken and next contact. Hand over and record time; protect sensitive details."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.risk"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang unang ligtas na hakbang?",
+      "prompt_en": "What is the first safe step?",
+      "options": [
+        {
+          "fil": "Ipagpalagay na tama pa ang lumang impormasyon at agad itong ipasa sa lahat.",
+          "en": "Assume the old information is still correct and immediately relay it to everyone."
+        },
+        {
+          "fil": "Kumpirmahin ang kasalukuyang lider at channel, saka mag-handover.",
+          "en": "Confirm current lead and channel, then hand over."
+        },
+        {
+          "fil": "Magpasiya mag-isa nang walang lokal na kumpirmasyon o opisyal na babala.",
+          "en": "Decide alone without local confirmation or an official warning."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring luma o mali ang impormasyon. 2: Ikinokonekta nito ang pagpapasya sa beripikadong plano at saklaw. 3: Kailangan ang tamang awtoridad at lokal na konteksto.",
+      "feedback_en": "1: Information may be old or wrong. 2: This ties action to a verified plan and scope. 3: The correct authority and local context are needed."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.risk",
+      "c2.drrm.bhert-coordination.action",
+      "c2.drrm.bhert-coordination.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Suriin ang opisyal na plano.\nKumpirmahin ang lokal na contact.",
+    "display_en": "Check the official plan.\nConfirm the local contact.",
+    "check": null,
+    "narration_fil": "Hindi ipinagpalagay ng BHW na may aktibong BHERT. Kinumpirma niya ang kasalukuyang response focal person at ipinasa ang pangangailangan sa tamang channel.",
+    "narration_en": "The BHW does not assume an active BHERT. They verify the current response focal person and hand the need over through the approved channel."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.action",
+      "c2.drrm.bhert-coordination.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag manghula.\nIgalang ang tungkulin at privacy.",
+    "display_en": "Do not guess.\nRespect role and privacy.",
+    "check": null,
+    "narration_fil": "Ang lumang pandemic-era BHERT slide ay hindi patunay ng kasalukuyang team composition, isolation o contact-tracing mandate. Huwag magtalaga ng klinikal o enforcement na papel sa BHW.",
+    "narration_en": "The old pandemic-era BHERT slide does not establish today’s team composition, isolation or contact-tracing mandate. Do not assign clinical or enforcement duties to a BHW."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.action",
+      "c2.drrm.bhert-coordination.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Alin ang ligtas na susunod na hakbang?",
+      "prompt_en": "What is the safe next step?",
+      "options": [
+        {
+          "fil": "Gamitin ang lumang roster at ipalagay ang dating mandato. Huwag nang tanungin ang awtoridad o ang taong apektado.",
+          "en": "Use an old roster and assume its former mandate. Do not ask the authority or the affected person."
+        },
+        {
+          "fil": "Walang kailangang itala o balikan kahit hindi pa natatanggap ng tamang team.",
+          "en": "Nothing needs recording or follow-up even without team acknowledgement."
+        },
+        {
+          "fil": "Ipaabot sa lead, itala ang handover, at balikan.",
+          "en": "Inform the lead, record handover, and follow up."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Maaaring makapinsala o maantala ang tulong. 2: Nawawala ang accountability at continuity. 3: Tinitiyak nito ang malinaw na pananagutan at susunod na aksiyon.",
+      "feedback_en": "1: This may harm or delay help. 2: Accountability and continuity are lost. 3: This establishes clear ownership and next action."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.drrm.bhert-coordination.risk",
+      "c2.drrm.bhert-coordination.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes: ipa-verify ang card.\nItala ang petsa at follow-up.",
+    "display_en": "On Monday: verify the card.\nRecord date and follow-up.",
+    "check": null,
+    "narration_fil": "Sa Lunes, ipa-update sa supervisor ang role-and-handover card: pangalan ng posisyon, alternatibong contact, channel at petsa ng kumpirmasyon.",
+    "narration_en": "On Monday, ask the supervisor to update a role-and-handover card: position, backup contact, channel and verification date."
+  }
+]

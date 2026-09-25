@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-ipc-monitor-and-improve",
+  "objective_id": "ipc-monitor-and-improve.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Bansag ito at hindi tiyak na observation.",
+          "en": "This is a label rather than a specific observation."
+        },
+        {
+          "fil": "Malinaw ang nakita, lugar at oras.",
+          "en": "This identifies what was seen, where and when."
+        },
+        {
+          "fil": "Hindi sapat ang attendance para malaman ang aktuwal na practice.",
+          "en": "Attendance cannot establish actual practice."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Pangako ay hindi ebidensiya ng resulta.",
+          "en": "A promise is not evidence of completion."
+        },
+        {
+          "fil": "Hindi pinapalitan ng training ang kailangang supply.",
+          "en": "Training does not replace the needed supply."
+        },
+        {
+          "fil": "Tapat ang tala at may susunod na aksyon.",
+          "en": "The record is accurate and prompts further action."
+        }
+      ]
+    }
+  ]
+}

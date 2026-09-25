@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin.",
+      "observable_en": "Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication.",
+      "levels": {
+        "kaya_na_fil": "Gamitin ang agarang referral at iulat ang simula at sintomas nang hindi nagrereseta ng aspirin. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag gamitin ang paulit-ulit na aspirin schedule sa lumang manual, magbigay ng gamot ng iba, o ipagpaliban ang tawag para maghanap ng tablet.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not use the source manual’s repeated aspirin schedule, give another person’s tablets, or delay the call to find medication."
+      }
+    }
+  ]
+}

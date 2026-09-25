@@ -1,0 +1,265 @@
+{
+  "manifest": {
+    "lesson_key": "scene-help-referral",
+    "position": 0,
+    "title_fil": "Suriin ang sitwasyon at humingi ng tulong",
+    "title_en": "Assess the situation and get help",
+    "objectives_fil": [
+      "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon."
+    ],
+    "objectives_en": [
+      "Mark hazards, assign the call, state response and breathing observations, and give a concise location report."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.hazard",
+        "c2.firstaid.scene.help.referral.action",
+        "c2.firstaid.scene.help.referral.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Huminto ang traysikel sa tabi ng nadapang sakay habang may…",
+      "takeaway_en": "Case: A tricycle has stopped beside a fallen rider while traffic…",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.hazard",
+        "c2.firstaid.scene.help.referral.action",
+        "c2.firstaid.scene.help.referral.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
+      "takeaway_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          },
+          {
+            "fil": "Tingnan ang trapiko at tumawag.",
+            "en": "Check traffic and call."
+          },
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
+        "feedback_en": "1: The shortcut can cause harm: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.hazard",
+        "c2.firstaid.scene.help.referral.action",
+        "c2.firstaid.scene.help.referral.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
+      "takeaway_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.hazard",
+        "c2.firstaid.scene.help.referral.action",
+        "c2.firstaid.scene.help.referral.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.action",
+        "c2.firstaid.scene.help.referral.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          },
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          },
+          {
+            "fil": "Ibigay ang lokasyon at nakita.",
+            "en": "Give the location and observations."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag pumasok sa daloy ng sasakyan, ipagpaliban ang tawag para sa mahabang history, o manghula ng emergency number. 3: Obserbahan ang gawa at ang tamang referral.",
+        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not step into moving traffic, delay the call for a full history, or assume a national number replaces the locally verified contact. 3: Observe the task and appropriate referral."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.scene.help.referral.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.scene.help.referral.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-community",
+        "who-bec"
+      ]
+    },
+    {
+      "id": "c2.firstaid.scene.help.referral.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-community",
+        "who-bec"
+      ]
+    },
+    {
+      "id": "c2.firstaid.scene.help.referral.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-community",
+        "who-bec"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        38
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "id": "who-community",
+      "title": "WHO Community-Based Care and First Aid Responders",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/community-based-care"
+    },
+    {
+      "id": "who-bec",
+      "title": "WHO/ICRC Basic Emergency Care and transfer/handover",
+      "url": "https://www.who.int/publications-detail-redirect/9789241513081"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/scene-help-referral-36a0899d6962.svg",
+      "content_hash": "36a0899d696267834e180b07e8caae0b52ed6faec0932af424b4f00617d336a0",
+      "alt_fil": "Tatlong kahon: Lugar, Tawag, Ulat.",
+      "alt_en": "Three boxes: Scene, Call, Report.",
+      "caption_fil": "Tukuyin ang panganib, magtalaga ng tatawag, ilarawan ang tugon at paghinga, at ibigay ang lokasyon.",
+      "caption_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

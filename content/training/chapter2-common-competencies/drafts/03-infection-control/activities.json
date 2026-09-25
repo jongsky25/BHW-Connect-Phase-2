@@ -1,0 +1,304 @@
+{
+  "activities": [
+    {
+      "id": "activity-infection-routes",
+      "lesson_key": "infection-routes",
+      "kind": "transmission-card-sort",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 120,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/infection-routes/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Ayusin ang walong exposure card. Para sa bawat isa, sabihin ang posibleng daan at isang kontrol o taong lalapitan.",
+        "en": "Sort eight exposure cards. For each, state a possible route and one control or person to approach."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          31,
+          32
+        ],
+        "F": [
+          35,
+          36,
+          37
+        ],
+        "P": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-infection-control-levels",
+      "lesson_key": "infection-control-levels",
+      "kind": "control-map",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/infection-control-levels/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Punan ang apat na hanay: pinagmulan, kapaligiran, gawain at PPE. Isulat ang mungkahi at taong dapat magkumpirma.",
+        "en": "Complete four rows: source, environment, work practices and PPE. Add a proposal and the person who must confirm it."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          33
+        ],
+        "F": [
+          35,
+          36
+        ],
+        "P": [
+          53
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-hand-hygiene",
+      "lesson_key": "hand-hygiene",
+      "kind": "hand-hygiene-demonstration",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 120,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/hand-hygiene/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Pumili ng paraan para sa dalawang card: may dumi at walang dumi. Ipakita ang handwash at handrub sa supervisor.",
+        "en": "Choose a method for two cards: visibly dirty and not visibly dirty. Demonstrate handwashing and handrub to the supervisor."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          34
+        ],
+        "F": [
+          35,
+          36
+        ],
+        "P": [
+          54,
+          55
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-cough-etiquette",
+      "lesson_key": "cough-etiquette",
+      "kind": "cough-etiquette-demonstration",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 90,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/cough-etiquette/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gayahin ang tissue at elbow methods. Ipakita ang pagtatapon at hand hygiene; ipaliwanag ang pag-uulat sa staff.",
+        "en": "Mime tissue and elbow methods. Show disposal and hand hygiene; explain reporting to staff."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          35
+        ],
+        "F": [
+          35,
+          36
+        ],
+        "P": [
+          56
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-food-water-sanitation",
+      "lesson_key": "food-water-sanitation",
+      "kind": "household-ipc-review",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 90,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/food-water-sanitation/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Markahan ang panganib sa kuwento ng bahay. Punan ang pagkain, tubig at sanitasyon na hanay; magdagdag ng contact para sa hindi tiyak.",
+        "en": "Mark risks in the household story. Complete the food, water and sanitation rows and add a contact for uncertainties."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          36
+        ],
+        "F": [
+          36
+        ],
+        "P": [
+          57,
+          58,
+          59
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-bhs-ipc-policies",
+      "lesson_key": "bhs-ipc-policies",
+      "kind": "policy-training-inventory",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/bhs-ipc-policies/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Punan ang sample policy at training checklist. Tukuyin ang lumang gabay, kulang na contact at dalawang gawain na kailangan ng specialist staff.",
+        "en": "Complete the sample policy and training checklist. Identify old guidance, a missing contact and two tasks requiring specialist staff."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          36,
+          37
+        ],
+        "F": [
+          35
+        ],
+        "P": [
+          60,
+          61
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    },
+    {
+      "id": "activity-ipc-monitor-and-improve",
+      "lesson_key": "ipc-monitor-and-improve",
+      "kind": "ipc-improvement-card",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/ipc-monitor-and-improve/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gumawa ng improvement card para sa kulang na sabon. Itala ang pansamantalang kaayusan at resulta ng dalawang posibleng follow-up.",
+        "en": "Make an improvement card for missing soap. Record the interim arrangement and two possible follow-up outcomes."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          36,
+          37
+        ],
+        "F": [
+          35
+        ],
+        "P": [
+          60,
+          61,
+          62
+        ]
+      },
+      "timing_status": "proposed distribution within source allocation"
+    }
+  ]
+}

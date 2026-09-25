@@ -1,0 +1,154 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.behavior.alternatives"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Ben: hindi puwede sa umaga.\nHindi pa tiyak ang ibang iskedyul.\nAnong pagpipilian ang makatotohanan?",
+    "display_en": "Ben cannot attend in the morning.\nAnother schedule is not yet confirmed.\nWhich option is realistic?",
+    "check": null,
+    "narration_fil": "Binisita ni BHW Salma si Ben sa Marawi. Hindi siya makapunta sa health center sa umaga dahil sa trabaho. “Hindi ko kayang mawala buong araw,” sabi niya. Hindi pa alam ni Salma kung may ibang iskedyul ang staff.",
+    "narration_en": "BHW Salma visits Ben in Marawi. He cannot go to the health center in the morning because of work. “I cannot lose a whole day,” he says. Salma does not yet know whether staff offer another schedule."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.behavior.alternatives",
+      "c2.behavior.agreement",
+      "c2.behavior.followup"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Linawin ang nais na resulta.\nMagtanong ng alternatibo.\nMag-alok ng kayang gawin.\nKumpirmahin ang tao at oras.",
+    "display_en": "Clarify the desired outcome.\nAsk about alternatives.\nOffer what you can do.\nConfirm the person and time.",
+    "check": null,
+    "narration_fil": "Linawin kung anong resulta ang nais ng kausap. Itanong kung may naiisip siyang ibang paraan. Mag-alok lamang ng kayang gawin o kumpirmahin. Sabihin: “Maaari kong itanong ang ibang iskedyul. Gusto po ba ninyo iyon?” Kumpirmahin kung sino ang kikilos at kailan magbabalitaan.",
+    "narration_en": "Clarify the outcome the person wants. Ask whether they have another approach in mind. Offer only what you can do or confirm. Say, “I can ask about another schedule. Would you like that?” Confirm who will act and when you will update each other."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.behavior.alternatives"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Hindi pa alam ni Salma ang iskedyul. Ano ang maaari niyang ialok kay Ben?",
+      "prompt_en": "Salma does not know the schedule yet. What can she offer Ben?",
+      "options": [
+        {
+          "fil": "Itanong sa health center at magbalita sa takdang oras.",
+          "en": "Ask the health center and update him at an agreed time."
+        },
+        {
+          "fil": "Mangakong may staff kahit anong oras siya dumating.",
+          "en": "Promise staff will be available whenever he arrives."
+        },
+        {
+          "fil": "Ipalagay na hindi interesado si Ben sa serbisyo.",
+          "en": "Assume Ben is not interested in the service."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Ito ay tiyak na gawaing kayang gawin nang hindi nangangako ng appointment. 2: Hindi pa kumpirmado ang availability ng staff. 3: Hadlang sa oras ang sinabi ni Ben, hindi kawalan ng interes.",
+      "feedback_en": "1: This is a concrete action without promising an appointment. 2: Staff availability has not been confirmed. 3: Ben described a time barrier, not a lack of interest."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag para sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read why each choice helps or does not help."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.behavior.agreement",
+      "c2.behavior.followup"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa ng usapan",
+    "heading_en": "Worked example",
+    "display_fil": "Salma: magtatanong sa health center.\nUpdate: bukas, alas-dos.\nHindi pa appointment ang napagkasunduan.",
+    "display_en": "Salma will ask the health center.\nUpdate: tomorrow at two.\nThe agreement is not an appointment yet.",
+    "check": null,
+    "narration_fil": "Ben: “Puwede kaya sa hapon?” Salma: “Itatanong ko po sa health center. Tatawagan ko kayo bukas ng alas-dos kung iyon ay ayos.” Ben: “Oo.” Salma: “Wala pa pong kumpirmadong appointment; update muna bukas.” Malinaw kung ano ang napagkasunduan at kung ano ang hindi pa tiyak.",
+    "narration_en": "Ben: “Could it be in the afternoon?” Salma: “I will ask the health center. I can call you tomorrow at two if that works.” Ben: “Yes.” Salma: “The appointment is not confirmed yet; tomorrow’s call is an update.” The agreement and uncertainty are both clear."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.behavior.alternatives"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Tumulong sa pakikipag-ugnayan.\nHuwag maggarantiya ng iskedyul.\nHumingi ng gabay kung walang opsyon.\nAgarang panganib: emergency help.",
+    "display_en": "Help coordinate.\nDo not guarantee a schedule.\nSeek guidance when no option fits.\nImmediate danger: emergency help.",
+    "check": null,
+    "narration_fil": "Tungkulin ng BHW na tumulong sa pakikipag-ugnayan, hindi maggarantiya ng iskedyul o pilitin ang pagsang-ayon. Kapag walang angkop na pagpipilian, humingi ng gabay sa midwife o supervisor. Kung may agarang panganib, unahin ang emergency service; huwag gamitin ang ordinaryong follow-up bilang kapalit ng agarang tulong.",
+    "narration_en": "The BHW helps coordinate; do not guarantee a schedule or force agreement. If no suitable option is available, ask the midwife or supervisor. If there is immediate danger, prioritize emergency services; routine follow-up must not replace urgent help."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.behavior.agreement",
+      "c2.behavior.followup"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Pumayag si Ben na magtanong muna si Salma. Aling pagtatapos ang pinakamalinaw?",
+      "prompt_en": "Ben agrees that Salma will first ask. Which closing is clearest?",
+      "options": [
+        {
+          "fil": "“Sige po, hintayin na lang natin ang mangyayari.”",
+          "en": "“All right, let us wait and see what happens.”"
+        },
+        {
+          "fil": "“Pumunta na po kayo bukas; bahala na ang staff.”",
+          "en": "“Just go tomorrow; staff will deal with it.”"
+        },
+        {
+          "fil": "“Magtatanong ako at tatawag bukas ng alas-dos.”",
+          "en": "“I will ask and call tomorrow at two.”"
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Walang nakatalagang kilos o oras ng pagbalita. 2: Ginagawa nitong appointment ang hindi pa kumpirmadong usapan. 3: May hakbang, responsable at oras na puwedeng kumpirmahin kay Ben.",
+      "feedback_en": "1: No action or update time is assigned. 2: This turns an unconfirmed discussion into an appointment. 3: This has an action, owner and time to confirm with Ben."
+    },
+    "narration_fil": "Balikan ang nangyari sa kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose the appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.behavior.agreement",
+      "c2.behavior.followup"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Hakbang + responsable + oras.\nSa Lunes: magsanay gamit ang action card.\nFollow-up: alamin ang naging resulta.",
+    "display_en": "Action + responsible person + time.\nOn Monday: practise with the action card.\nFollow-up: find out the result.",
+    "check": null,
+    "narration_fil": "Isinulat ni Salma: siya ang magtatanong sa health center at tatawag kay Ben bukas ng alas-dos. Inulit ni Ben ang napagkasunduan. Sa Lunes, gamitin ang blangkong action card sa isang pagsasanay kasama ang katrabaho. Salita: follow-up — pagbabalik sa napag-usapan upang alamin ang resulta.",
+    "narration_en": "Salma writes that she will ask the health center and call Ben tomorrow at two. Ben repeats the agreement. On Monday, use the blank action card in practice with a colleague. Word: follow-up — returning to an agreement to find out the result."
+  }
+]

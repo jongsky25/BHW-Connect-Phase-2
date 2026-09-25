@@ -1,0 +1,254 @@
+{
+  "manifest": {
+    "lesson_key": "snakebite-response",
+    "position": 12,
+    "title_fil": "Tumugon sa kagat ng ahas",
+    "title_en": "Respond to snakebite",
+    "objectives_fil": [
+      "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport."
+    ],
+    "objectives_en": [
+      "Reject the cord and walking plan, keep the person still and call for transport."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.hazard",
+        "c2.firstaid.snakebite.response.action",
+        "c2.firstaid.snakebite.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kaso: Nakagat ng ahas sa bukung-bukong ang manggagawa",
+      "takeaway_en": "Case: A farm worker reports a snakebite to the ankle",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.hazard",
+        "c2.firstaid.snakebite.response.action",
+        "c2.firstaid.snakebite.response.escalation"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.",
+      "takeaway_en": "Reject the cord and walking plan, keep the person still and call for transport.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.hazard"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Unahin ang kaligtasan at agarang tulong.",
+      "takeaway_en": "Prioritize safety and timely help.",
+      "check": {
+        "prompt_fil": "Sa kasong ito, ano ang unang tugon?",
+        "prompt_en": "In this case, what comes first?",
+        "options": [
+          {
+            "fil": "Gawin muna ang shortcut kahit walang kumpirmasyon.",
+            "en": "Use the shortcut before confirming the facts."
+          },
+          {
+            "fil": "Panatilihing hindi gumagalaw.",
+            "en": "Keep the person still."
+          },
+          {
+            "fil": "Maghintay muna at huwag ipaalam sa staff.",
+            "en": "Wait without notifying the responsible staff."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring makapinsala ang shortcut: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan. 2: Unahin ang kaligtasan at agarang tulong. 3: Maaaring maantala ang kinakailangang assessment.",
+        "feedback_en": "1: The shortcut can cause harm: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. 2: Prioritize safety and timely help. 3: Necessary assessment may be delayed."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.hazard",
+        "c2.firstaid.snakebite.response.action",
+        "c2.firstaid.snakebite.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.",
+      "takeaway_en": "Reject the cord and walking plan, keep the person still and call for transport.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.hazard",
+        "c2.firstaid.snakebite.response.action",
+        "c2.firstaid.snakebite.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.action",
+        "c2.firstaid.snakebite.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Obserbahan ang gawa at ang tamang referral.",
+      "takeaway_en": "Observe the task and appropriate referral.",
+      "check": {
+        "prompt_fil": "Ano ang dapat ipakita sa practice?",
+        "prompt_en": "What should the practice show?",
+        "options": [
+          {
+            "fil": "Magbigay ng diagnosis mula sa kuwento at mangakong sapat na iyon para sa pasyente.",
+            "en": "Diagnose from the story and promise it is enough for the person."
+          },
+          {
+            "fil": "Ulitin ang shortcut kahit may panganib at walang kumpirmadong tagubilin.",
+            "en": "Repeat the shortcut despite the risk and without confirmed guidance."
+          },
+          {
+            "fil": "Ayusin ang mabilis na transport.",
+            "en": "Arrange rapid transport."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi batayan ang kuwento para sa sariling diagnosis. 2: Ang shortcut ay hindi ligtas: Huwag gumamit ng tourniquet, hiwain o sipsipin ang sugat, lagyan ng yelo, habulin ang ahas, o papaglakarin nang hindi kailangan. 3: Obserbahan ang gawa at ang tamang referral.",
+        "feedback_en": "1: The story is not grounds for an independent diagnosis. 2: The shortcut is unsafe: Do not use a tourniquet, cut or suck the wound, apply ice, chase the snake, or make the person walk unnecessarily. 3: Observe the task and appropriate referral."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.firstaid.snakebite.response.escalation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.firstaid.snakebite.response.hazard",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-snake"
+      ]
+    },
+    {
+      "id": "c2.firstaid.snakebite.response.action",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-snake"
+      ]
+    },
+    {
+      "id": "c2.firstaid.snakebite.response.escalation",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-snake"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        46
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: first-aid orientation with legacy claims qualified by current evidence",
+      "pdf_pages": [
+        68
+      ]
+    },
+    {
+      "id": "who-snake",
+      "title": "WHO Snakebite first aid",
+      "url": "https://www.who.int/health-topics/snakebite/snakebite"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/snakebite-response-d8ca42a47bfd.svg",
+      "content_hash": "d8ca42a47bfd4bcb823de59023eb92b03002923fa4e3fd8063ddd157f07d2e99",
+      "alt_fil": "Tatlong kahon: Lumayo, Panatilihin, Dalhin.",
+      "alt_en": "Three boxes: Move away, Keep still, Transport.",
+      "caption_fil": "Tanggihan ang tali at paglalakad, panatilihing hindi gumagalaw ang tao at tumawag ng transport.",
+      "caption_en": "Reject the cord and walking plan, keep the person still and call for transport.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

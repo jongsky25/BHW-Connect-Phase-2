@@ -1,0 +1,157 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.mobilization.stakeholders",
+      "c2.mobilization.barriers"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Ruben: trabaho sa araw.\nSari: walang cellphone.\nEva: takot sa malaking usapan.\nHindi sapat ang iisang chat.",
+    "display_en": "Ruben: daytime work.\nSari: no phone.\nEva: nervous in a large meeting.\nOne chat is not enough.",
+    "check": null,
+    "narration_fil": "Magpapatawag ng usapan si Ina tungkol sa huling balita sa iskedyul. May lider na kilala ng mga residente. Si Ruben ay nagtatrabaho sa araw. Si Sari ay walang cellphone. Si Eva ay kinakabahang magsalita sa malaking grupo. Hindi sapat ang isang chat invitation.",
+    "narration_en": "Ina will convene a discussion about late schedule updates. A local leader is trusted by residents. Ruben works during the day. Sari has no phone. Eva feels nervous speaking in a large group. One chat invitation is not enough."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.mobilization.stakeholders",
+      "c2.mobilization.barriers",
+      "c2.mobilization.voluntary-participation"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Tukuyin ang apektado at makatutulong.\nPiliin ang pinagkakatiwalaang tagapag-imbita.\nItanong ang hadlang.\nMagkasundo sa paraan ng pagsali.",
+    "display_en": "Identify affected people and contributors.\nChoose a trusted inviter.\nAsk about barriers.\nAgree on participation options.",
+    "check": null,
+    "narration_fil": "Tukuyin ang apektadong residente, lokal na lider at iba pang makatutulong. Tanungin kung sino ang pinagkakatiwalaang mag-imbita. Alamin ang hadlang sa oras, lugar, wika at pagsasalita. Magkasundo sa paraan: personal na paanyaya, angkop na oras o maliit na usapan. Huwag ipagpalagay na kinakatawan ng lider ang lahat.",
+    "narration_en": "Identify affected residents, local leaders and others who can help. Ask who is trusted to invite them. Explore barriers involving time, location, language and speaking. Agree on options such as personal invitations, suitable timing or small conversations. Do not assume a leader represents everyone."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.mobilization.stakeholders",
+      "c2.mobilization.barriers"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Walang cellphone si Sari. Ano ang pinakamainam na simula?",
+      "prompt_en": "Sari has no phone. What is the best starting step?",
+      "options": [
+        {
+          "fil": "Ipadala muli sa parehong chat ang paanyaya.",
+          "en": "Send the invitation to the same chat again."
+        },
+        {
+          "fil": "Itanong ang angkop na paanyaya.",
+          "en": "Ask what invitation method works."
+        },
+        {
+          "fil": "Sabihing wala siyang interes dahil hindi siya sumagot online.",
+          "en": "Assume she is uninterested because she did not reply online."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi nito binabago ang hadlang sa pag-access. 2: Kasama si Sari sa pagpili ng magagamit na paraan. 3: Hula sa interes ang kawalan ng sagot, hindi ebidensiya.",
+      "feedback_en": "1: This does not address the access barrier. 2: Sari helps choose a method she can use. 3: No online reply is not evidence of disinterest."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.mobilization.stakeholders",
+      "c2.mobilization.barriers",
+      "c2.mobilization.voluntary-participation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Ruben: itanong ang kayang oras.\nSari: personal na paanyaya.\nEva: maliit na usapan.\nItala ang tagapag-imbita at petsa.",
+    "display_en": "Ruben: ask about workable timing.\nSari: a personal invitation.\nEva: a small conversation.\nRecord the inviter and date.",
+    "check": null,
+    "narration_fil": "Kasama ang lider, tinanong ni Ina si Ruben tungkol sa oras. Personal na paanyaya ang pinili ni Sari. Mas nais ni Eva ang maliit na usapan. Itinala nila kung sino ang mag-iimbita at kailan magbabalita. Nilinaw na kusang-loob ang pagsali at puwedeng magbigay ng mungkahi sa ibang paraan.",
+    "narration_en": "With the leader, Ina asks Ruben about timing. Sari chooses a personal invitation. Eva prefers a small conversation. They record who will invite each group and when to report back. Participation is voluntary, with another way to offer suggestions."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.mobilization.barriers",
+      "c2.mobilization.voluntary-participation"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Kusang-loob ang pagsali.\nWalang serbisyo kapalit ng pagdalo.\nHuwag mangako ng gantimpala.\nLinawin ang praktikal na suporta.",
+    "display_en": "Participation is voluntary.\nDo not condition services on attendance.\nDo not promise attendance rewards.\nClarify practical participation support.",
+    "check": null,
+    "narration_fil": "Huwag gawing kondisyon sa serbisyo ang pagdalo. Huwag mangako ng bayad o gantimpala para makahikayat. Ang praktikal na suporta sa pakikilahok ay kailangang linawin sa organizer ayon sa lokal na patakaran. Igalang ang pagtanggi at huwag ilantad ang personal na dahilan nito.",
+    "narration_en": "Do not make attendance a condition for services. Do not promise payment or rewards to recruit participants. Clarify practical participation support with the organizer under local policy. Respect refusal and do not expose someone’s personal reason."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.mobilization.voluntary-participation"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Hindi makadalo si Ruben. Ano ang angkop na sagot?",
+      "prompt_en": "Ruben cannot attend. Which response is appropriate?",
+      "options": [
+        {
+          "fil": "Ipagpaliban ang serbisyo niya hanggang makadalo siya.",
+          "en": "Delay his services until he attends."
+        },
+        {
+          "fil": "Mangako ng pera kahit wala pang pahintulot ang organizer.",
+          "en": "Promise money without the organizer’s authorization."
+        },
+        {
+          "fil": "Mag-alok ng ibang paraan ng mungkahi.",
+          "en": "Offer another way to contribute."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Hindi dapat nakatali ang serbisyo sa pagdalo. 2: Hindi dapat mangako ng hindi kumpirmadong gantimpala. 3: Nirerespeto ang hadlang habang binubuksan ang pakikilahok.",
+      "feedback_en": "1: Access to services should not depend on attendance. 2: Unconfirmed rewards should not be promised. 3: This respects the barrier while allowing participation."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.mobilization.stakeholders",
+      "c2.mobilization.barriers"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Paanyayang tumutugon sa hadlang.\nSa Lunes: gumawa ng invitation map.\nStakeholder: apektado o makatutulong.",
+    "display_en": "Invitations that address barriers.\nOn Monday: make an invitation map.\nStakeholder: affected or able to contribute.",
+    "check": null,
+    "narration_fil": "May iba-ibang paraan ng paanyaya ayon sa napag-usapang hadlang. Sa Lunes, gumawa ng mapa ng paanyaya gamit ang kathang-isip na mga papel. Salita: stakeholder — taong apektado o may maiaambag sa isyu. Ang pagdalo ay simula lamang; mahalaga ang aktuwal na pakikilahok.",
+    "narration_en": "Invitations now respond to the barriers discussed. On Monday, create an invitation map using fictional roles. Word: stakeholder — someone affected by or able to contribute to the issue. Attendance is only a start; meaningful participation matters."
+  }
+]

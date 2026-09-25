@@ -1,0 +1,153 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.behavior.report"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Elena: sino ang makakakita ng form?\nPumayag siyang makausap ang midwife.\nAno ang kailangang iparating?",
+    "display_en": "Elena: who can see the form?\nShe agrees to speak with the midwife.\nWhat needs to be handed over?",
+    "check": null,
+    "narration_fil": "Nakinig si BHW Datu kay Elena. Nagtanong si Elena kung sino ang makakakita ng kanyang household form. Pumayag siyang mag-usap muli kasama ang midwife. Kailangang ibahagi ni Datu ang usapan nang hindi ikinukuwento sa buong barangay.",
+    "narration_en": "BHW Datu listened to Elena. Elena asked who could see her household form. She agreed to talk again with the midwife. Datu needs to hand over the concern without telling the whole barangay."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.behavior.report",
+      "c2.behavior.reflect",
+      "c2.behavior.application"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Sinabi, hindi hula.\nGinawa at napagkasunduan.\nTamang tao at pribadong channel.\nIsang pagpapabuti sa sariling tugon.",
+    "display_en": "Report, not assumption.\nAction and agreement.\nAppropriate person and private channel.\nOne improvement to your response.",
+    "check": null,
+    "narration_fil": "Ihiwalay ang sinabi ng residente sa sariling hula. Iulat sa awtorisadong katrabaho ang kailangang impormasyon lamang. Isama ang ginawa, napagkasunduan at kailangan pang tulong. Pagkatapos, itanong sa sarili: Nakinig ba ako? Ano ang nakatulong? Ano ang isang babaguhin ko sa susunod?",
+    "narration_en": "Separate the resident’s words from your assumptions. Share only necessary information with the authorized colleague. Include the action, agreement and support still needed. Then ask yourself: Did I listen? What helped? What one thing will I change next time?"
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.behavior.report"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Aling detalye ang dapat isama ni Datu sa handover tungkol kay Elena?",
+      "prompt_en": "Which detail should Datu include in Elena’s handover?",
+      "options": [
+        {
+          "fil": "“Mahirap kausap at maraming tanong si Elena.”",
+          "en": "“Elena is difficult and asks many questions.”"
+        },
+        {
+          "fil": "“Nagtanong siya kung sino ang makakakita ng form.”",
+          "en": "“She asked who can see the form.”"
+        },
+        {
+          "fil": "“Ayaw niyang may makaalam ng totoong buhay niya.”",
+          "en": "“She does not want anyone to know her real life.”"
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Bansag ito sa tao at hindi malinaw na paglalarawan ng alalahanin. 2: Ito ang tanong na sinabi niya at mahalaga sa susunod na usapan. 3: Hula ito sa motibo ni Elena, hindi nakumpirmang impormasyon.",
+      "feedback_en": "1: This labels the person rather than describing the concern. 2: This is what she asked and is relevant to the next conversation. 3: This guesses Elena’s motive rather than reporting confirmed information."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag para sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read why each choice helps or does not help."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.behavior.report",
+      "c2.behavior.reflect"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa ng usapan",
+    "heading_en": "Worked example",
+    "display_fil": "Tanong: sino ang makakakita ng form?\nHakbang: usapan kasama ang midwife.\nKailangan: kumpirmahin ang oras.",
+    "display_en": "Question: who can see the form?\nAction: conversation with the midwife.\nNeeded: confirm the time.",
+    "check": null,
+    "narration_fil": "Handover: “Nagtanong si Elena kung sino ang makakakita ng household form. Ipinaliwanag ko ang layunin ng pagbisita. Pumayag siyang makausap ang midwife bukas. Pakikumpirma ang oras.” Hindi kasama ang bansag na “mahirap kausap.” Ang pagninilay ni Datu: mas maagang mag-alok ng pribadong lugar.",
+    "narration_en": "Handover: “Elena asked who can see the household form. I explained the visit’s purpose. She agreed to speak with the midwife tomorrow. Please confirm the time.” It does not label her “difficult.” Datu’s reflection: offer a private place earlier."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.behavior.report"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Awtorisadong paraan ng pag-uulat.\nKailangang detalye lamang.\nHindi tiyak: itanong sa supervisor.\nAgarang panganib: emergency contact muna.",
+    "display_en": "Use the authorized reporting channel.\nShare necessary details only.\nUnsure: ask the supervisor.\nImmediate danger: emergency contact first.",
+    "check": null,
+    "narration_fil": "Gamitin ang awtorisadong paraan ng pag-uulat sa inyong lugar. Huwag ilagay ang personal na kuwento sa pampublikong chat. Humingi ng gabay sa midwife o supervisor kung hindi tiyak kung anong detalye ang kailangan. Kung may agarang panganib, unahin ang emergency contact at saka kumpletuhin ang kinakailangang ulat.",
+    "narration_en": "Use the authorized reporting channel in your locality. Do not put personal stories in a public chat. Ask the midwife or supervisor if you are unsure which details are needed. If there is immediate danger, prioritize the emergency contact, then complete the necessary report."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.behavior.reflect"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Naipasa na ni Datu ang handover. Ano ang makabuluhang pagninilay?",
+      "prompt_en": "Datu has handed over the concern. Which reflection is useful?",
+      "options": [
+        {
+          "fil": "Mag-alok ng pribadong lugar nang mas maaga sa susunod.",
+          "en": "Offer a private place earlier next time."
+        },
+        {
+          "fil": "Iwasan na ang lahat ng residenteng maraming tanong.",
+          "en": "Avoid all residents who ask many questions."
+        },
+        {
+          "fil": "Sabihing maayos ang lahat kahit hindi nakinig nang buo.",
+          "en": "Say everything went well despite not fully listening."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Tiyak itong pagbabago na maaari niyang subukan at suriin. 2: Hindi nito pinabubuti ang sariling pakikitungo o access sa serbisyo. 3: Hindi nito sinusuri ang aktuwal na nangyari o kailangang baguhin.",
+      "feedback_en": "1: This is a specific change he can try and review. 2: This does not improve his response or access to service. 3: This does not examine what happened or what needs to change."
+    },
+    "narration_fil": "Balikan ang nangyari sa kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose the appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.behavior.reflect",
+      "c2.behavior.application"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Naiparating ang kailangan sa midwife.\nSa Lunes: ipasuri ang handover checklist.\nHandover: impormasyon sa susunod na tutulong.",
+    "display_en": "The midwife receives the necessary facts.\nOn Monday: review the handover checklist.\nHandover: information for the next helper.",
+    "check": null,
+    "narration_fil": "Natanggap ng midwife ang maikling handover at kukumpirmahin ang oras. Isinulat ni Datu ang isang babaguhin sa susunod na usapan. Sa Lunes, ipasuri sa midwife ang blangkong handover checklist. Gumamit ng kathang-isip na kaso sa practice. Salita: handover — paglilipat ng mahalagang impormasyon sa susunod na tutulong.",
+    "narration_en": "The midwife receives the short handover and will confirm the time. Datu identifies one change for the next conversation. On Monday, ask the midwife to review the blank handover checklist. Use a fictional case in practice. Word: handover — passing necessary information to the next person helping."
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "activities": [
+    {
+      "id": "activity-prepare-a-response",
+      "lesson_key": "prepare-a-response",
+      "kind": "role-play",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 120,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/prepare-a-response/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Isulat ang layunin, unang tanong, pahintulot na hihingin at contact para sa tulong sa sitwasyon ni Rosa.",
+        "en": "Write the purpose, opening question, permission request and support contact for Rosa’s situation."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          29
+        ],
+        "F": [
+          33
+        ],
+        "P": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          26
+        ]
+      }
+    },
+    {
+      "id": "activity-listen-and-clarify",
+      "lesson_key": "listen-and-clarify",
+      "kind": "role-play",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/listen-and-clarify/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sa tatluhan, gumanap bilang Jun, Liza at tagamasid. Itanong ang alalahanin, makinig, ibuod at ipasuri ang pagkaintindi.",
+        "en": "In triads, play Jun, Liza and observer. Ask about the concern, listen, summarize and check understanding."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          29
+        ],
+        "F": [
+          33
+        ],
+        "P": [
+          22,
+          23,
+          26,
+          27
+        ]
+      }
+    },
+    {
+      "id": "activity-agree-the-next-step",
+      "lesson_key": "agree-the-next-step",
+      "kind": "role-play",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/agree-the-next-step/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gamit ang action card, mag-alok ng dalawang makatotohanang paraan ng pag-follow-up kay Ben. Ipasabi kung alin ang nais niya.",
+        "en": "Using the action card, offer Ben two realistic follow-up options. Ask which he prefers."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          29
+        ],
+        "F": [
+          33
+        ],
+        "P": [
+          24,
+          27
+        ]
+      }
+    },
+    {
+      "id": "activity-report-and-reflect",
+      "lesson_key": "report-and-reflect",
+      "kind": "handover-practice",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 120,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/report-and-reflect/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Sumulat ng tatlong linyang handover tungkol kay Elena. Ipasuri sa kapareha kung may hula o hindi kailangang detalye. Tukuyin ang isang pagbabago sa susunod.",
+        "en": "Write a three-line handover about Elena. Ask a partner to check for assumptions or unnecessary details. Identify one change for next time."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          29
+        ],
+        "F": [
+          33
+        ],
+        "P": [
+          25,
+          27
+        ]
+      }
+    }
+  ]
+}

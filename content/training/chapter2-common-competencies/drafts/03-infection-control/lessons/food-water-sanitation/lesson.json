@@ -1,0 +1,261 @@
+{
+  "manifest": {
+    "lesson_key": "food-water-sanitation",
+    "position": 4,
+    "title_fil": "Iwasan ang pagtatae sa mas ligtas na kapaligiran",
+    "title_en": "Prevent diarrhea through safer surroundings",
+    "objectives_fil": [
+      "Sa household scene, tukuyin ang panganib sa pagkain, tubig at sanitasyon at magkasundo sa ligtas na pagbabago at dapat ipakumpirma."
+    ],
+    "objectives_en": [
+      "In a household scene, identify food, water and sanitation risks and agree on safe improvements and points needing confirmation."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.ipc.food-safety",
+        "c2.ipc.safe-water",
+        "c2.ipc.sanitation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Walang sabon sa tabi ng palikuran.",
+      "takeaway_en": "No soap near the toilet.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.ipc.food-safety"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Markahan ang panganib sa kuwento ng bahay. Punan ang pagkain, tubig at sanitasyon na hanay; magdagdag ng contact para sa hindi tiyak.",
+      "takeaway_en": "Mark risks in the household story. Complete the food, water and sanitation rows and add a contact for uncertainties.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.ipc.safe-water"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kailangan ng tamang batayan at tagubilin, hindi hitsura lamang.",
+      "takeaway_en": "A reliable basis and instructions are needed, not appearance alone.",
+      "check": {
+        "prompt_fil": "Malinaw ang tubig pero hindi alam ang pinagmulan. Ano ang angkop?",
+        "prompt_en": "Water is clear but its source is unknown. What is appropriate?",
+        "options": [
+          {
+            "fil": "Kumpirmahin ang kaligtasan sa staff.",
+            "en": "Confirm safety with the appropriate staff."
+          },
+          {
+            "fil": "Sabihing ligtas dahil walang kulay o amoy.",
+            "en": "Declare it safe because it has no color or smell."
+          },
+          {
+            "fil": "Magdagdag ng kahit anong dami ng kemikal na nasa bahay.",
+            "en": "Add any amount of a household chemical."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Kailangan ng tamang batayan at tagubilin, hindi hitsura lamang. 2: Hindi nakikita ang lahat ng maaaring kontaminasyon. 3: Maaaring mapanganib ang maling produkto o dami.",
+        "feedback_en": "1: A reliable basis and instructions are needed, not appearance alone. 2: Not all contamination is visible. 3: The wrong product or amount may be dangerous."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.ipc.safe-water",
+        "c2.ipc.sanitation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May angkop na pagbabago sa pagkain, tubig at sanitasyon; walang hinulaang treatment o garantiya mula sa hitsura.",
+      "takeaway_en": "Proposes appropriate food, water and sanitation changes without guessed treatment or appearance-based guarantees.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.ipc.safe-water",
+        "c2.ipc.sanitation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.ipc.food-safety"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Nababawasan ang paglipat mula sa hilaw na pagkain.",
+      "takeaway_en": "This reduces transfer from raw food.",
+      "check": {
+        "prompt_fil": "Hilaw na manok ang katabi ng lutong pagkain. Ano ang pagbabago?",
+        "prompt_en": "Raw chicken is beside cooked food. What should change?",
+        "options": [
+          {
+            "fil": "Hayaan lamang basta takpan nang sabay sa iisang lalagyan.",
+            "en": "Leave them together under one cover in the same container."
+          },
+          {
+            "fil": "Ihiwalay ang hilaw sa luto.",
+            "en": "Separate raw and cooked food."
+          },
+          {
+            "fil": "Tikman ang luto upang malaman kung may mikrobyo.",
+            "en": "Taste the cooked food to determine whether germs are present."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi pinipigilan ng iisang takip ang kontaminasyon sa pagitan nila. 2: Nababawasan ang paglipat mula sa hilaw na pagkain. 3: Hindi ligtas o maaasahang pagsusuri ang pagtikim.",
+        "feedback_en": "1: One cover does not prevent contamination between them. 2: This reduces transfer from raw food. 3: Tasting is neither a safe nor reliable test."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.ipc.food-safety",
+        "c2.ipc.safe-water",
+        "c2.ipc.sanitation"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.ipc.food-safety",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-food",
+        "who-water",
+        "who-community"
+      ]
+    },
+    {
+      "id": "c2.ipc.safe-water",
+      "read_ids": [
+        "scene",
+        "check-start",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-food",
+        "who-water",
+        "who-community"
+      ]
+    },
+    {
+      "id": "c2.ipc.sanitation",
+      "read_ids": [
+        "scene",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-food",
+        "who-water",
+        "who-community"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        36
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        36
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy teaching source, qualified by evidence review",
+      "pdf_pages": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "id": "who-food",
+      "title": "WHO: Five keys to safer food manual",
+      "url": "https://www.who.int/publications/i/item/9789241594639"
+    },
+    {
+      "id": "who-water",
+      "title": "WHO: Drinking-water fact sheet (2023)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/drinking-water"
+    },
+    {
+      "id": "who-community",
+      "title": "WHO/UNICEF: Hand hygiene in community settings (2025; non-healthcare scope)",
+      "url": "https://www.who.int/publications/i/item/9789240116559"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/food-water-sanitation-03b37b7a2a29.svg",
+      "content_hash": "03b37b7a2a29d2789f3befefb71a67d52a6a54be001ada67dd5ddfa986aded5d",
+      "alt_fil": "Tatlong kahon: Pagkain, Tubig, Palikuran at kamay.",
+      "alt_en": "Three boxes: Food, Water, Toilet and hands.",
+      "caption_fil": "May angkop na pagbabago sa pagkain, tubig at sanitasyon; walang hinulaang treatment o garantiya mula sa hitsura.",
+      "caption_en": "Proposes appropriate food, water and sanitation changes without guessed treatment or appearance-based guarantees.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover.",
+      "observable_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+      "not_yet_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+      "not_yet_en": "Uses the shortcut or fails to activate help: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow.",
+      "levels": {
+        "kaya_na_fil": "Tukuyin ang danger sign, magpa-agarang referral, at ulitin ang aktuwal na obserbasyon sa handover. Nagawa nang walang paalala.",
+        "kaya_na_en": "Completes the task without prompting: Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+        "kailangan_practice_fil": "Nagawa ang tugon ngunit kailangan ng paalala sa referral o hangganan ng tungkulin.",
+        "kailangan_practice_en": "Performs the response but needs a prompt about referral or scope.",
+        "hindi_pa_fil": "Ginagamit ang shortcut o hindi tumatawag ng tulong: Huwag magbigay ng diagnosis, maghintay ng lahat ng senyales, o magpainom sa batang hindi ligtas lumunok.",
+        "hindi_pa_en": "Uses the shortcut or fails to activate help: Do not label the illness, wait for every sign, or give anything by mouth to a child who cannot safely swallow."
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.plants.bawang.identity",
+      "c2.plants.bawang.use",
+      "c2.plants.bawang.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Kaso: May mataas na cholesterol si Liza",
+    "display_en": "Case: Liza has high cholesterol",
+    "check": null,
+    "narration_fil": "May mataas na cholesterol si Liza. Kumakain siya ng bawang at nais itigil ang niresetang gamot.",
+    "narration_en": "Liza has high cholesterol. She eats garlic and wants to stop her prescribed medicine."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.plants.bawang.identity",
+      "c2.plants.bawang.use",
+      "c2.plants.bawang.boundary"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Bawang\nAllium sativum\nBahagi: butil",
+    "display_en": "Bawang\nAllium sativum\nPart: bulb",
+    "check": null,
+    "narration_fil": "Sa reference card, hanapin ang Allium sativum. Ang nakalistang bahagi ay butil; ang paksang gamit ay pagkontrol ng cholesterol sa payo ng clinician. Sabihin kung ano ang alam at hindi alam. Itanong ang kasalukuyang gamot at sintomas. Ibalik ang desisyon sa clinician; huwag magtakda ng dami ng bawang bilang gamot.",
+    "narration_en": "Find Allium sativum on the reference card. The listed part is bulb; the use topic is cholesterol management under clinical advice. State what is known and unknown. Ask about current medicine and symptoms. Return the decision to the clinician; do not prescribe an amount of garlic as medicine."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.plants.bawang.identity"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Aling bahagi ng Bawang ang nakalista sa card?",
+      "prompt_en": "Which Bawang part is listed on the card?",
+      "options": [
+        {
+          "fil": "Anumang bahagi ng halaman sa bakuran kahit hindi ito nakumpirmang Bawang.",
+          "en": "Any part of a yard plant even when its identity as Bawang is unconfirmed."
+        },
+        {
+          "fil": "Butil ng kumpirmadong Allium sativum.",
+          "en": "Bulb of confirmed Allium sativum."
+        },
+        {
+          "fil": "Hindi kailangang malaman ang botanical name.",
+          "en": "The botanical name need not be checked."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi ligtas ang hindi nakumpirmang bahagi at pagkakakilanlan. 2: Itugma ang bahagi sa nakasulat na source; hindi pa ito dose. 3: Magkapareho ang tawag sa ilang magkakaibang halaman.",
+      "feedback_en": "1: Unconfirmed part and identity are unsafe. 2: Match the part to the written source; this is not a dose. 3: Common names may cover different plants."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.plants.bawang.identity",
+      "c2.plants.bawang.use",
+      "c2.plants.bawang.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Paksa: pagkontrol ng cholesterol sa payo ng clinician\nSuriin ang sintomas.\nKumpirmahin ang card.",
+    "display_en": "Use topic: cholesterol management under clinical advice\nAssess symptoms.\nConfirm the card.",
+    "check": null,
+    "narration_fil": "Itinuro ng BHW ang Bawang at botanical name sa card. Hindi niya pinaghulaang tama ang halamang nasa bakuran. Ibalik ang desisyon sa clinician; huwag magtakda ng dami ng bawang bilang gamot.",
+    "narration_en": "The BHW points to Bawang and its botanical name on the card. The yard plant is not assumed to be identified. Return the decision to the clinician; do not prescribe an amount of garlic as medicine."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.plants.bawang.use",
+      "c2.plants.bawang.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Huwag magtakda ng dose.\nHuwag palitan ang gamot.\nKumonsulta sa clinician.",
+    "display_en": "Do not prescribe a dose.\nDo not replace medicine.\nConsult a clinician.",
+    "check": null,
+    "narration_fil": "Ang bawang sa pagkain ay hindi pahintulot na baguhin ang gamot. Itanong ang iba pang iniinom at posibleng epekto. Hindi awtorisasyon ang lesson na ito para maghanda o mag-dose ng halamang gamot.",
+    "narration_en": "Garlic as food does not authorize a medication change. Ask about other medicines and possible effects. This lesson does not authorize preparation or dosing of an herbal remedy."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.plants.bawang.use",
+      "c2.plants.bawang.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Ano ang ligtas na sagot sa kaso ni Bawang?",
+      "prompt_en": "What is the safe response in the Bawang case?",
+      "options": [
+        {
+          "fil": "Ipalit agad sa niresetang gamot.",
+          "en": "Replace prescribed treatment now."
+        },
+        {
+          "fil": "Kumonsulta muna sa clinician.",
+          "en": "Consult a clinician first."
+        },
+        {
+          "fil": "Gayahin ang lumang timpla nang walang pagsusuri.",
+          "en": "Copy an old recipe without assessment."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Maaaring maantala o mapalitan ang kinakailangang pangangalaga. 2: Kumpirmahin ang identity, sintomas at saklaw bago magpayo. 3: Hindi kapalit ng kasalukuyang clinical guidance ang lumang timpla.",
+      "feedback_en": "1: Necessary care may be displaced or delayed. 2: Confirm identity, symptoms and scope before advice. 3: An old recipe does not replace current clinical guidance."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.plants.bawang.identity",
+      "c2.plants.bawang.boundary"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "Sa Lunes: ihambing ang Bawang cards.\nIpakita ang referral.",
+    "display_en": "On Monday: compare Bawang cards.\nShow the referral.",
+    "check": null,
+    "narration_fil": "Sa Lunes, ihambing ang dalawang card na may pangalang Bawang. Markahan ang botanical name, butil, nakalistang gamit at referral. Ipasuri ang card sa supervisor.",
+    "narration_en": "On Monday, compare two cards labelled Bawang. Mark the botanical name, bulb, listed use and referral. Review the card with a supervisor."
+  }
+]

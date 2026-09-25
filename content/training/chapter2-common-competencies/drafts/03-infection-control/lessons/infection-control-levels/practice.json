@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-infection-control-levels",
+  "objective_id": "infection-control-levels.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Kailangan ang magkakaugnay na kontrol.",
+          "en": "Complementary controls are needed."
+        },
+        {
+          "fil": "Kailangan pa rin ang napagkasunduang pag-uulat.",
+          "en": "The agreed reporting process still applies."
+        },
+        {
+          "fil": "Hindi inaalis ng isang gamit ang lahat ng panganib.",
+          "en": "One item does not remove every risk."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Maaaring hindi angkop ang bagong lugar.",
+          "en": "The new location may be unsuitable."
+        },
+        {
+          "fil": "May tamang pagsusuri at pag-aayos ng facility.",
+          "en": "This enables appropriate facility review and action."
+        },
+        {
+          "fil": "Walang sapat na batayan ang katiyakan.",
+          "en": "The reassurance lacks a basis."
+        }
+      ]
+    }
+  ]
+}

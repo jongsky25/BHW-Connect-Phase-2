@@ -1,0 +1,1784 @@
+{
+  "chapter_key": "chapter-2",
+  "title_fil": "Ang BHW Bilang First Responder",
+  "title_en": "The BHW as First Responder",
+  "availability": "unavailable",
+  "publication_allowed": false,
+  "planned_lesson_count": 55,
+  "authored_lesson_count": 55,
+  "competency_groups": [
+    {
+      "id": "behavior",
+      "hours": 10
+    },
+    {
+      "id": "quality",
+      "hours": 10
+    },
+    {
+      "id": "ipc",
+      "hours": 10
+    },
+    {
+      "id": "first-aid",
+      "hours": 12
+    }
+  ],
+  "shared_allocations": [
+    {
+      "subchapters": [
+        "2.6",
+        "2.7"
+      ],
+      "hours": 2,
+      "source": "F38",
+      "proposed_minutes": {
+        "2.6": 60,
+        "2.7": 60
+      },
+      "split_status": "authoring proposal; manual states combined two hours only"
+    }
+  ],
+  "modules": [
+    {
+      "code": "2.1",
+      "module_key": "01-difficult-situations",
+      "title_en": "Responding to difficult situations",
+      "title_fil": "Maayos na pagtugon sa mahirap na sitwasyon",
+      "competency_group": "behavior",
+      "source_allocation_hours": 10,
+      "source_pages": {
+        "R": [
+          29
+        ],
+        "F": [
+          33
+        ],
+        "P": [
+          19,
+          27
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.1.1",
+          "lesson_key": "prepare-a-response",
+          "title_en": "Find out the concern",
+          "title_fil": "Alamin ang alalahanin",
+          "objective_id": "prepare-a-response.objective-1",
+          "task_en": "Prepare a permission-based response plan for Rosa’s visit",
+          "task_fil": "Bumuo ng planong may pahintulot sa pagbisita kay Rosa",
+          "practice_id": "activity-prepare-a-response",
+          "practice_en": "plan card",
+          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "source_pages": {
+            "R": [
+              29
+            ],
+            "F": [
+              33
+            ],
+            "P": [
+              19,
+              27
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false
+        },
+        {
+          "code": "2.1.2",
+          "lesson_key": "listen-and-clarify",
+          "title_en": "Listen and clarify calmly",
+          "title_fil": "Makinig at maglinaw nang mahinahon",
+          "objective_id": "listen-and-clarify.objective-1",
+          "task_en": "Listen to Liza, summarize the concern and invite correction",
+          "task_fil": "Pakinggan si Liza, ibuod ang alalahanin at humingi ng pagwawasto",
+          "practice_id": "activity-listen-and-clarify",
+          "practice_en": "listening role-play",
+          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "source_pages": {
+            "R": [
+              29
+            ],
+            "F": [
+              33
+            ],
+            "P": [
+              19,
+              27
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false
+        },
+        {
+          "code": "2.1.3",
+          "lesson_key": "agree-the-next-step",
+          "title_en": "Agree on the next step",
+          "title_fil": "Magkasundo sa susunod na hakbang",
+          "objective_id": "agree-the-next-step.objective-1",
+          "task_en": "Agree an action, owner and follow-up time with Ben",
+          "task_fil": "Kumpirmahin kay Ben ang hakbang, responsable at oras",
+          "practice_id": "activity-agree-the-next-step",
+          "practice_en": "action card",
+          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "source_pages": {
+            "R": [
+              29
+            ],
+            "F": [
+              33
+            ],
+            "P": [
+              19,
+              27
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false
+        },
+        {
+          "code": "2.1.4",
+          "lesson_key": "report-and-reflect",
+          "title_en": "Report and reflect",
+          "title_fil": "Mag-ulat at suriin ang sariling tugon",
+          "objective_id": "report-and-reflect.objective-1",
+          "task_en": "Hand over Elena’s concern factually and name one improvement",
+          "task_fil": "Iulat ang sinabi ni Elena at tukuyin ang isang pagpapabuti",
+          "practice_id": "activity-report-and-reflect",
+          "practice_en": "handover and reflection",
+          "observation_design_en": "Observe the task in the named practice; specify critical actions and rating anchors during authoring.",
+          "source_pages": {
+            "R": [
+              29
+            ],
+            "F": [
+              33
+            ],
+            "P": [
+              19,
+              27
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false
+        }
+      ]
+    },
+    {
+      "code": "2.2",
+      "module_key": "02-quality-service",
+      "title_en": "Quality service",
+      "title_fil": "Mataas na kalidad ng serbisyo",
+      "competency_group": "quality",
+      "source_allocation_hours": 10,
+      "source_pages": {
+        "R": [
+          29,
+          30
+        ],
+        "F": [
+          34
+        ],
+        "P": [
+          29,
+          38
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.2.1",
+          "lesson_key": "effective-safe-person-centered",
+          "title_en": "Apply the three quality dimensions",
+          "title_fil": "Gamitin ang tatlong katangian ng dekalidad na serbisyo",
+          "objective_id": "effective-safe-person-centered.objective-1",
+          "task_en": "Compare two BHS encounters for effectiveness, safety and the resident’s needs",
+          "task_fil": "Ihambing ang dalawang usapan sa bisa, kaligtasan at pangangailangan ng residente",
+          "practice_id": "activity-effective-safe-person-centered",
+          "practice_en": "quality scenario comparison",
+          "observation_design_en": "Identifies evidence for all three dimensions and proposes an appropriate improvement for each.",
+          "source_pages": {
+            "R": [
+              29
+            ],
+            "F": [
+              34
+            ],
+            "P": [
+              29,
+              31,
+              32,
+              37
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
+        },
+        {
+          "code": "2.2.2",
+          "lesson_key": "privacy-and-inclusion",
+          "title_en": "Protect privacy and include everyone",
+          "title_fil": "Panatilihin ang pribadong usapan at pantay na serbisyo",
+          "objective_id": "privacy-and-inclusion.objective-1",
+          "task_en": "Respond to a privacy concern without exposing or judging the resident",
+          "task_fil": "Tumugon sa alalahanin nang hindi inilalantad o hinuhusgahan ang residente",
+          "practice_id": "activity-privacy-and-inclusion",
+          "practice_en": "privacy role-play",
+          "observation_design_en": "Avoids disclosing the condition, seeks agreement on setting and support, and explains without judgment.",
+          "source_pages": {
+            "R": [
+              30
+            ],
+            "F": [
+              34
+            ],
+            "P": [
+              30,
+              33,
+              34,
+              35
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
+        },
+        {
+          "code": "2.2.3",
+          "lesson_key": "timely-integrated-service",
+          "title_en": "Improve the service pathway",
+          "title_fil": "Ayusin ang paglapit sa serbisyo",
+          "objective_id": "timely-integrated-service.objective-1",
+          "task_en": "Identify one delay, access barrier or duplicated step and propose a feasible improvement",
+          "task_fil": "Tukuyin ang pagkaantala, hadlang o paulit-ulit na hakbang at magmungkahi ng pagbabago",
+          "practice_id": "activity-timely-integrated-service",
+          "practice_en": "service pathway worksheet",
+          "observation_design_en": "Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.",
+          "source_pages": {
+            "R": [
+              30
+            ],
+            "F": [
+              34
+            ],
+            "P": [
+              33,
+              37
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
+        },
+        {
+          "code": "2.2.4",
+          "lesson_key": "seven-s-improvement",
+          "title_en": "Use 7S to improve the work area",
+          "title_fil": "Gamitin ang 7S sa lugar ng trabaho",
+          "objective_id": "seven-s-improvement.objective-1",
+          "task_en": "Inspect a simulated work area using all seven categories and assign one improvement",
+          "task_fil": "Suriin ang work area gamit ang pitong kategorya at magtalaga ng isang pagbabago",
+          "practice_id": "activity-seven-s-improvement",
+          "practice_en": "7S inspection",
+          "observation_design_en": "Checks all seven categories and proposes a safe, authorized improvement with an owner and review date.",
+          "source_pages": {
+            "R": [
+              30
+            ],
+            "F": [
+              34
+            ],
+            "P": [
+              36
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "substantive content"
+        }
+      ]
+    },
+    {
+      "code": "2.3",
+      "module_key": "03-infection-control",
+      "title_en": "Infection prevention and control",
+      "title_fil": "Pag-iwas at pagkontrol sa impeksyon",
+      "competency_group": "ipc",
+      "source_allocation_hours": 10,
+      "source_pages": {
+        "R": [
+          31,
+          37
+        ],
+        "F": [
+          35,
+          37
+        ],
+        "P": [
+          41,
+          63
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.3.1",
+          "lesson_key": "infection-routes",
+          "title_en": "Recognize routes of transmission",
+          "title_fil": "Kilalanin ang paraan ng pagkalat",
+          "objective_id": "infection-routes.objective-1",
+          "task_en": "Match household/BHS exposure scenes to reviewed transmission routes",
+          "task_fil": "Itugma ang exposure sa bahay o BHS sa nasuring paraan ng pagkalat",
+          "practice_id": "activity-infection-routes",
+          "practice_en": "transmission card sort",
+          "observation_design_en": "Explains all eight cards, distinguishes exposure from diagnosis and links prevention to the route.",
+          "source_pages": {
+            "R": [
+              31,
+              32
+            ],
+            "F": [
+              35,
+              36,
+              37
+            ],
+            "P": [
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        },
+        {
+          "code": "2.3.2",
+          "lesson_key": "infection-control-levels",
+          "title_en": "Choose controls at several levels",
+          "title_fil": "Pumili ng mga paraan ng pagkontrol",
+          "objective_id": "infection-control-levels.objective-1",
+          "task_en": "Select source, environmental, work-practice and protective measures in a BHS scene",
+          "task_fil": "Pumili ng kontrol sa pinagmulan, kapaligiran, gawain at proteksiyon sa BHS",
+          "practice_id": "activity-infection-control-levels",
+          "practice_en": "control-level map",
+          "observation_design_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
+          "source_pages": {
+            "R": [
+              33
+            ],
+            "F": [
+              35,
+              36
+            ],
+            "P": [
+              53
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        },
+        {
+          "code": "2.3.3",
+          "lesson_key": "hand-hygiene",
+          "title_en": "Demonstrate hand hygiene",
+          "title_fil": "Ipakita ang wastong paglilinis ng kamay",
+          "objective_id": "hand-hygiene.objective-1",
+          "task_en": "Demonstrate every step of the clinically reviewed hand-hygiene sequence",
+          "task_fil": "Ipakita ang bawat hakbang ng nasuring paglilinis ng kamay",
+          "practice_id": "activity-hand-hygiene",
+          "practice_en": "handwashing return demonstration",
+          "observation_design_en": "Appropriate method; all surfaces of both hands; complete timing and drying; no recontamination.",
+          "source_pages": {
+            "R": [
+              34
+            ],
+            "F": [
+              35,
+              36
+            ],
+            "P": [
+              54,
+              55
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        },
+        {
+          "code": "2.3.4",
+          "lesson_key": "cough-etiquette",
+          "title_en": "Demonstrate cough etiquette",
+          "title_fil": "Ipakita ang wastong pag-ubo",
+          "objective_id": "cough-etiquette.objective-1",
+          "task_en": "Demonstrate the reviewed cough-etiquette sequence and explain it to a resident",
+          "task_fil": "Ipakita at ipaliwanag sa residente ang nasuring paraan ng pag-ubo",
+          "practice_id": "activity-cough-etiquette",
+          "practice_en": "cough-etiquette return demonstration",
+          "observation_design_en": "Covers nose and mouth, discards tissue, cleans hands and explains respectful reporting.",
+          "source_pages": {
+            "R": [
+              35
+            ],
+            "F": [
+              35,
+              36
+            ],
+            "P": [
+              56
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        },
+        {
+          "code": "2.3.5",
+          "lesson_key": "food-water-sanitation",
+          "title_en": "Prevent diarrhea through safer surroundings",
+          "title_fil": "Iwasan ang pagtatae sa mas ligtas na kapaligiran",
+          "objective_id": "food-water-sanitation.objective-1",
+          "task_en": "Use reviewed guidance to identify food, water and sanitation changes in a household scene",
+          "task_fil": "Gamit ang nasuring gabay, tukuyin ang pagbabago sa pagkain, tubig at sanitasyon",
+          "practice_id": "activity-food-water-sanitation",
+          "practice_en": "household safety review",
+          "observation_design_en": "Proposes appropriate food, water and sanitation changes without guessed treatment or appearance-based guarantees.",
+          "source_pages": {
+            "R": [
+              36
+            ],
+            "F": [
+              36
+            ],
+            "P": [
+              57,
+              58,
+              59
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        },
+        {
+          "code": "2.3.6",
+          "lesson_key": "bhs-ipc-policies",
+          "title_en": "Find BHS IPC policies",
+          "title_fil": "Hanapin ang patakaran sa IPC ng BHS",
+          "objective_id": "bhs-ipc-policies.objective-1",
+          "task_en": "Locate required local policies and distinguish BHW support from specialist procedures",
+          "task_fil": "Hanapin ang lokal na patakaran at ihiwalay ang suporta ng BHW sa espesyal na procedure",
+          "practice_id": "activity-bhs-ipc-policies",
+          "practice_en": "policy and training checklist",
+          "observation_design_en": "Records location, version, contact and training gaps without inventing training or authorization.",
+          "source_pages": {
+            "R": [
+              36,
+              37
+            ],
+            "F": [
+              35
+            ],
+            "P": [
+              60,
+              61
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        },
+        {
+          "code": "2.3.7",
+          "lesson_key": "ipc-monitor-and-improve",
+          "title_en": "Monitor and improve IPC practice",
+          "title_fil": "Subaybayan at pagbutihin ang IPC",
+          "objective_id": "ipc-monitor-and-improve.objective-1",
+          "task_en": "Document one checklist gap with owner, action and follow-up date",
+          "task_fil": "Itala ang isang kakulangan kasama ang responsable, hakbang at petsa ng follow-up",
+          "practice_id": "activity-ipc-monitor-and-improve",
+          "practice_en": "IPC improvement plan",
+          "observation_design_en": "Records a specific gap, report, owner, date and evidence; distinguishes promises from observed results.",
+          "source_pages": {
+            "R": [
+              36,
+              37
+            ],
+            "F": [
+              35
+            ],
+            "P": [
+              60,
+              61,
+              62
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy content qualified by primary human-health evidence; see evidence-review.json"
+        }
+      ]
+    },
+    {
+      "code": "2.4",
+      "module_key": "04-first-aid",
+      "title_en": "First aid and referral",
+      "title_fil": "Paunang lunas at tamang referral",
+      "competency_group": "first-aid",
+      "source_allocation_hours": 8,
+      "source_pages": {
+        "R": [
+          38,
+          48
+        ],
+        "F": [
+          38,
+          40
+        ],
+        "P": [
+          67,
+          92
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.4.1",
+          "lesson_key": "scene-help-referral",
+          "title_en": "Assess the situation and get help",
+          "title_fil": "Suriin ang sitwasyon at humingi ng tulong",
+          "objective_id": "scene-help-referral.objective-1",
+          "task_en": "Apply the reviewed scene-safety and help-activation sequence in a simulation",
+          "task_fil": "Gamitin sa simulation ang nasuring safety at paghingi ng tulong",
+          "practice_id": "activity-scene-help-referral",
+          "practice_en": "scene assessment station",
+          "observation_design_en": "Mark hazards, assign the call, state response and breathing observations, and give a concise location report.",
+          "source_pages": {
+            "R": [
+              38
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              71,
+              72,
+              73,
+              74
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.2",
+          "lesson_key": "child-danger-signs",
+          "title_en": "Recognize childhood danger signs",
+          "title_fil": "Kilalanin ang panganib sa batang may sakit",
+          "objective_id": "child-danger-signs.objective-1",
+          "task_en": "Identify reviewed danger signs in a case and communicate urgency",
+          "task_fil": "Tukuyin sa kaso ang nasuring danger signs at iparating ang pagkaapurahan",
+          "practice_id": "activity-child-danger-signs",
+          "practice_en": "childhood case cards",
+          "observation_design_en": "Identify at least one danger sign, activate urgent referral and repeat the observation in a factual handover.",
+          "source_pages": {
+            "R": [
+              39
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              75,
+              76
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.3",
+          "lesson_key": "child-cough-breathing",
+          "title_en": "Respond to cough and breathing concerns",
+          "title_fil": "Tumugon sa ubo at hirap sa paghinga",
+          "objective_id": "child-cough-breathing.objective-1",
+          "task_en": "Use a clinically reviewed age-specific case to decide escalation",
+          "task_fil": "Gamitin ang nasuring kasong ayon sa edad sa pagpili ng referral",
+          "practice_id": "activity-child-cough-breathing",
+          "practice_en": "breathing case station",
+          "observation_design_en": "Describe breathing observations, ask about danger signs and activate the confirmed urgent assessment route.",
+          "source_pages": {
+            "R": [
+              39
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              77,
+              78
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.4",
+          "lesson_key": "diarrhea-dehydration",
+          "title_en": "Respond to diarrhea and dehydration concerns",
+          "title_fil": "Tumugon sa pagtatae at dehydration",
+          "objective_id": "diarrhea-dehydration.objective-1",
+          "task_en": "Recognize reviewed concerns and demonstrate approved ORS education using training materials",
+          "task_fil": "Kilalanin ang nasuring alalahanin at ipakita ang aprubadong ORS education",
+          "practice_id": "activity-diarrhea-dehydration",
+          "practice_en": "ORS education station",
+          "observation_design_en": "Use the packet label in a dry simulation, explain safe water and continued feeding, and identify a referral trigger.",
+          "source_pages": {
+            "R": [
+              40
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              79,
+              80,
+              81
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.5",
+          "lesson_key": "convulsion-response",
+          "title_en": "Respond to convulsions",
+          "title_fil": "Tumugon sa kombulsyon",
+          "objective_id": "convulsion-response.objective-1",
+          "task_en": "Demonstrate the reviewed response boundaries and escalation for a seizure simulation",
+          "task_fil": "Ipakita ang nasuring saklaw ng tugon at paghingi ng tulong sa simulation",
+          "practice_id": "activity-convulsion-response",
+          "practice_en": "convulsion scenario",
+          "observation_design_en": "Clear a simulated space, call for help, state time and observations, and reject restraint and mouth insertion.",
+          "source_pages": {
+            "R": [
+              41
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              82
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.6",
+          "lesson_key": "shock-loss-consciousness",
+          "title_en": "Recognize shock and loss of consciousness",
+          "title_fil": "Kilalanin ang shock at pagkawala ng malay",
+          "objective_id": "shock-loss-consciousness.objective-1",
+          "task_en": "Identify urgency and select actions from the approved response protocol",
+          "task_fil": "Kilalanin ang pagkaapurahan at piliin ang hakbang sa aprubadong protocol",
+          "practice_id": "activity-shock-loss-consciousness",
+          "practice_en": "urgent response simulation",
+          "observation_design_en": "Demonstrate safe activation, response/breathing observation and an appropriate handover without oral intake.",
+          "source_pages": {
+            "R": [
+              41
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              83,
+              84,
+              85
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.7",
+          "lesson_key": "cpr-bls-orientation",
+          "title_en": "Prepare for supervised CPR/BLS practice",
+          "title_fil": "Maghanda sa supervised CPR/BLS practice",
+          "objective_id": "cpr-bls-orientation.objective-1",
+          "task_en": "Demonstrate the approved skills sequence on appropriate training equipment under qualified observation",
+          "task_fil": "Ipakita ang aprubadong sequence sa training equipment sa gabay ng kwalipikadong trainer",
+          "practice_id": "activity-cpr-bls-orientation",
+          "practice_en": "CPR training station",
+          "observation_design_en": "At a supervised manikin station, show help activation, AED request and the trainer-approved adult sequence; record each observed action.",
+          "source_pages": {
+            "R": [
+              42
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              89,
+              90,
+              91,
+              92
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.8",
+          "lesson_key": "drowning-response",
+          "title_en": "Respond safely to drowning",
+          "title_fil": "Ligtas na tumugon sa pagkalunod",
+          "objective_id": "drowning-response.objective-1",
+          "task_en": "Select a safe response and referral pathway from the reviewed drowning scenario",
+          "task_fil": "Piliin ang ligtas na tugon at referral sa nasuring drowning scenario",
+          "practice_id": "activity-drowning-response",
+          "practice_en": "drowning tabletop",
+          "observation_design_en": "Choose a safe shore response, activate trained rescue and state the need for medical assessment.",
+          "source_pages": {
+            "R": [
+              43
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.9",
+          "lesson_key": "poisoning-response",
+          "title_en": "Gather information in suspected poisoning",
+          "title_fil": "Mangolekta ng impormasyon sa posibleng pagkalason",
+          "objective_id": "poisoning-response.objective-1",
+          "task_en": "Communicate relevant exposure facts to the verified emergency contact without improvising treatment",
+          "task_fil": "Iparating ang exposure facts sa kumpirmadong emergency contact nang hindi nag-iimbento ng lunas",
+          "practice_id": "activity-poisoning-response",
+          "practice_en": "poisoning call rehearsal",
+          "observation_design_en": "Rehearse the information call from a fictional label while keeping the simulated scene clear of exposure.",
+          "source_pages": {
+            "R": [
+              43
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.10",
+          "lesson_key": "wounds-bleeding",
+          "title_en": "Respond to wounds and bleeding",
+          "title_fil": "Tumugon sa sugat at pagdurugo",
+          "objective_id": "wounds-bleeding.objective-1",
+          "task_en": "Demonstrate approved bleeding/wound actions and escalation on training props",
+          "task_fil": "Ipakita sa props ang aprubadong hakbang sa sugat at pagdurugo",
+          "practice_id": "activity-wounds-bleeding",
+          "practice_en": "wound and bleeding station",
+          "observation_design_en": "On clean props, show hand protection, continuous direct pressure, urgent escalation and a factual wound report.",
+          "source_pages": {
+            "R": [
+              43
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.11",
+          "lesson_key": "fracture-dislocation",
+          "title_en": "Respond to suspected fractures",
+          "title_fil": "Tumugon sa posibleng bali",
+          "objective_id": "fracture-dislocation.objective-1",
+          "task_en": "Demonstrate approved support and referral boundaries for a simulated injury",
+          "task_fil": "Ipakita ang aprubadong suporta at referral sa simulated injury",
+          "practice_id": "activity-fracture-dislocation",
+          "practice_en": "injury support station",
+          "observation_design_en": "Use a prop to show support in place, explain when movement is unsafe and make the referral call.",
+          "source_pages": {
+            "R": [
+              45
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.12",
+          "lesson_key": "insect-bites-stings",
+          "title_en": "Respond to bites and stings",
+          "title_fil": "Tumugon sa kagat at tusok ng insekto",
+          "objective_id": "insect-bites-stings.objective-1",
+          "task_en": "Recognize reviewed escalation signs in a bites/stings case",
+          "task_fil": "Kilalanin ang nasuring senyales para sa referral sa kagat ng insekto",
+          "practice_id": "activity-insect-bites-stings",
+          "practice_en": "bite and sting cards",
+          "observation_design_en": "Sort local versus urgent signs, activate help for breathing difficulty and state medication boundaries.",
+          "source_pages": {
+            "R": [
+              46
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.13",
+          "lesson_key": "snakebite-response",
+          "title_en": "Respond to snakebite",
+          "title_fil": "Tumugon sa kagat ng ahas",
+          "objective_id": "snakebite-response.objective-1",
+          "task_en": "Choose the approved response and referral in a snakebite case",
+          "task_fil": "Piliin ang aprubadong tugon at referral sa kasong kagat ng ahas",
+          "practice_id": "activity-snakebite-response",
+          "practice_en": "snakebite decision exercise",
+          "observation_design_en": "Reject the cord and walking plan, keep the person still and call for transport.",
+          "source_pages": {
+            "R": [
+              46
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.14",
+          "lesson_key": "burn-response",
+          "title_en": "Respond to burns",
+          "title_fil": "Tumugon sa paso",
+          "objective_id": "burn-response.objective-1",
+          "task_en": "Apply reviewed response and escalation criteria to a burn simulation",
+          "task_fil": "Gamitin ang nasuring tugon at referral sa burn simulation",
+          "practice_id": "activity-burn-response",
+          "practice_en": "burn scenario station",
+          "observation_design_en": "In a dry tabletop simulation, identify cooling, stuck-clothing boundaries and referral concerns.",
+          "source_pages": {
+            "R": [
+              46
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.15",
+          "lesson_key": "choking-response",
+          "title_en": "Respond to choking",
+          "title_fil": "Tumugon sa pagkabulon",
+          "objective_id": "choking-response.objective-1",
+          "task_en": "Demonstrate the appropriate reviewed age-specific technique on training equipment",
+          "task_fil": "Ipakita sa training equipment ang nasuring technique ayon sa edad",
+          "practice_id": "activity-choking-response",
+          "practice_en": "choking skills station",
+          "observation_design_en": "With two training manikins, classify cough versus severe obstruction and show the supervised age-specific response.",
+          "source_pages": {
+            "R": [
+              47
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.16",
+          "lesson_key": "chest-pain-referral",
+          "title_en": "Arrange urgent chest-pain referral",
+          "title_fil": "Iugnay sa agarang tulong ang may pananakit ng dibdib",
+          "objective_id": "chest-pain-referral.objective-1",
+          "task_en": "Activate the reviewed referral route and communicate relevant facts in a chest-pain case",
+          "task_fil": "Gamitin ang nasuring referral at iparating ang facts sa chest-pain case",
+          "practice_id": "activity-chest-pain-referral",
+          "practice_en": "emergency referral rehearsal",
+          "observation_design_en": "Activate the urgent pathway and hand over onset and symptoms without prescribing aspirin.",
+          "source_pages": {
+            "R": [
+              48
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              68
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.17",
+          "lesson_key": "first-aid-kit",
+          "title_en": "Check first-aid kit readiness",
+          "title_fil": "Suriin ang first-aid kit",
+          "objective_id": "first-aid-kit.objective-1",
+          "task_en": "Inspect an approved kit list for completeness, condition, storage and replenishment needs",
+          "task_fil": "Suriin ang aprubadong kit list para sa laman, kondisyon, imbakan at kailangang palitan",
+          "practice_id": "activity-first-aid-kit",
+          "practice_en": "kit inspection",
+          "observation_design_en": "Complete every row of a simulated local kit inventory and name a replenishment owner.",
+          "source_pages": {
+            "R": [
+              48
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              69
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        },
+        {
+          "code": "2.4.18",
+          "lesson_key": "incident-handover",
+          "title_en": "Hand over an incident",
+          "title_fil": "Iparating ang detalye ng insidente",
+          "objective_id": "incident-handover.objective-1",
+          "task_en": "Deliver a concise factual handover of situation, actions and support needed",
+          "task_fil": "Magbigay ng maikling factual na handover ng sitwasyon, ginawa at kailangan",
+          "practice_id": "activity-incident-handover",
+          "practice_en": "integrated handover station",
+          "observation_design_en": "Deliver a timed, factual handover and invite the receiving worker to confirm the next action.",
+          "source_pages": {
+            "R": [
+              38
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              74
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "presentation orientation only for most cases; reference manual and current primary guidance provide substantive detail"
+        }
+      ]
+    },
+    {
+      "code": "2.5",
+      "module_key": "05-medicinal-plants",
+      "title_en": "Ten medicinal plants",
+      "title_fil": "Sampung halamang gamot",
+      "competency_group": "first-aid",
+      "source_allocation_hours": 2,
+      "source_pages": {
+        "R": [
+          48,
+          51
+        ],
+        "F": [
+          38,
+          40
+        ],
+        "P": [
+          6,
+          16
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.5.1",
+          "lesson_key": "plant-scope-identification",
+          "title_en": "Check scope and plant identity",
+          "title_fil": "Suriin ang saklaw at pagkakakilanlan",
+          "objective_id": "plant-scope-identification.objective-1",
+          "task_en": "Use verified references to distinguish identification, approved use and consultation needs",
+          "task_fil": "Gamitin ang kumpirmadong reference sa pagkilala, aprubadong gamit at konsultasyon",
+          "practice_id": "activity-plant-scope-identification",
+          "practice_en": "plant identification practice",
+          "observation_design_en": "Compare two cards and identify what needs confirmation before any use.",
+          "source_pages": {
+            "R": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              6,
+              16
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.2",
+          "lesson_key": "akapulko",
+          "title_en": "Akapulko",
+          "title_fil": "Akapulko",
+          "objective_id": "akapulko.objective-1",
+          "task_en": "For Akapulko, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Akapulko, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-akapulko",
+          "practice_en": "akapulko reference-card practice",
+          "observation_design_en": "For Akapulko, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              48
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              7
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.3",
+          "lesson_key": "ampalaya",
+          "title_en": "Ampalaya",
+          "title_fil": "Ampalaya",
+          "objective_id": "ampalaya.objective-1",
+          "task_en": "For Ampalaya, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Ampalaya, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-ampalaya",
+          "practice_en": "ampalaya reference-card practice",
+          "observation_design_en": "For Ampalaya, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              49
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              8
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.4",
+          "lesson_key": "bawang",
+          "title_en": "Bawang",
+          "title_fil": "Bawang",
+          "objective_id": "bawang.objective-1",
+          "task_en": "For Bawang, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Bawang, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-bawang",
+          "practice_en": "bawang reference-card practice",
+          "observation_design_en": "For Bawang, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              49
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              9
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.5",
+          "lesson_key": "bayabas",
+          "title_en": "Bayabas",
+          "title_fil": "Bayabas",
+          "objective_id": "bayabas.objective-1",
+          "task_en": "For Bayabas, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Bayabas, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-bayabas",
+          "practice_en": "bayabas reference-card practice",
+          "observation_design_en": "For Bayabas, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              49
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              10
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.6",
+          "lesson_key": "lagundi",
+          "title_en": "Lagundi",
+          "title_fil": "Lagundi",
+          "objective_id": "lagundi.objective-1",
+          "task_en": "For Lagundi, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Lagundi, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-lagundi",
+          "practice_en": "lagundi reference-card practice",
+          "observation_design_en": "For Lagundi, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              49
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              11
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.7",
+          "lesson_key": "niyog-niyogan",
+          "title_en": "Niyog-niyogan",
+          "title_fil": "Niyog-niyogan",
+          "objective_id": "niyog-niyogan.objective-1",
+          "task_en": "For Niyog-niyogan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Niyog-niyogan, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-niyog-niyogan",
+          "practice_en": "niyog-niyogan reference-card practice",
+          "observation_design_en": "For Niyog-niyogan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              50
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              12
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.8",
+          "lesson_key": "sambong",
+          "title_en": "Sambong",
+          "title_fil": "Sambong",
+          "objective_id": "sambong.objective-1",
+          "task_en": "For Sambong, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Sambong, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-sambong",
+          "practice_en": "sambong reference-card practice",
+          "observation_design_en": "For Sambong, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              50
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              13
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.9",
+          "lesson_key": "tsaang-gubat",
+          "title_en": "Tsaang gubat",
+          "title_fil": "Tsaang gubat",
+          "objective_id": "tsaang-gubat.objective-1",
+          "task_en": "For Tsaang gubat, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Tsaang gubat, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-tsaang-gubat",
+          "practice_en": "tsaang-gubat reference-card practice",
+          "observation_design_en": "For Tsaang gubat, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              51
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              14
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.10",
+          "lesson_key": "ulasimang-bato",
+          "title_en": "Ulasimang bato / pansit-pansitan",
+          "title_fil": "Ulasimang bato / pansit-pansitan",
+          "objective_id": "ulasimang-bato.objective-1",
+          "task_en": "For Ulasimang bato / pansit-pansitan, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Ulasimang bato / pansit-pansitan, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-ulasimang-bato",
+          "practice_en": "ulasimang-bato reference-card practice",
+          "observation_design_en": "For Ulasimang bato / pansit-pansitan, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              51
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              15
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.11",
+          "lesson_key": "yerba-buena",
+          "title_en": "Yerba buena",
+          "title_fil": "Yerba buena",
+          "objective_id": "yerba-buena.objective-1",
+          "task_en": "For Yerba buena, distinguish the verified plant/part, reviewed purpose, restrictions and consultation needs",
+          "task_fil": "Para sa Yerba buena, tukuyin ang kumpirmadong halaman/bahagi, nasuring gamit, limitasyon at konsultasyon",
+          "practice_id": "activity-yerba-buena",
+          "practice_en": "yerba-buena reference-card practice",
+          "observation_design_en": "For Yerba buena, match the botanical name, plant part and listed use. Explain the boundary and consultation need.",
+          "source_pages": {
+            "R": [
+              51
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              16
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        },
+        {
+          "code": "2.5.12",
+          "lesson_key": "plant-integrated-practice",
+          "title_en": "Use the plant references responsibly",
+          "title_fil": "Gamitin nang maingat ang plant references",
+          "objective_id": "plant-integrated-practice.objective-1",
+          "task_en": "Use the approved cards in a consultation scenario and a supervised preparation demonstration where authorized",
+          "task_fil": "Gamitin ang aprubadong cards sa consultation scenario at supervised demonstration kung awtorisado",
+          "practice_id": "activity-plant-integrated-practice",
+          "practice_en": "plant consultation and demonstration",
+          "observation_design_en": "For three case cards, record identity, use, concern, referral and missing local authorization.",
+          "source_pages": {
+            "R": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "F": [
+              38,
+              39,
+              40
+            ],
+            "P": [
+              6,
+              16
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "legacy source topic and preparation claim; current PITAHC/WHO guidance controls the bounded learner text"
+        }
+      ]
+    },
+    {
+      "code": "2.6",
+      "module_key": "06-community-mobilization",
+      "title_en": "Community mobilization",
+      "title_fil": "Pagpapakilos ng komunidad",
+      "competency_group": "first-aid",
+      "source_allocation_hours": null,
+      "source_pages": {
+        "R": [
+          52,
+          54
+        ],
+        "F": [
+          41
+        ],
+        "P": [
+          93,
+          94
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.6.1",
+          "lesson_key": "community-issue",
+          "title_en": "Identify the issue with the community",
+          "title_fil": "Tukuyin ang isyu kasama ang komunidad",
+          "objective_id": "community-issue.objective-1",
+          "task_en": "State an issue with evidence and the perspectives of affected residents",
+          "task_fil": "Ilahad ang isyu gamit ang ebidensiya at pananaw ng apektadong residente",
+          "practice_id": "activity-community-issue",
+          "practice_en": "community issue worksheet",
+          "observation_design_en": "Includes a specific report, affected group, missing perspective and question without labels or personal details.",
+          "source_pages": {
+            "R": [
+              52,
+              53
+            ],
+            "F": [
+              41
+            ],
+            "P": [
+              93,
+              94
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
+        },
+        {
+          "code": "2.6.2",
+          "lesson_key": "invite-and-remove-barriers",
+          "title_en": "Invite people and address barriers",
+          "title_fil": "Mag-imbita at tugunan ang hadlang",
+          "objective_id": "invite-and-remove-barriers.objective-1",
+          "task_en": "Create an inclusive stakeholder invitation plan addressing participation barriers",
+          "task_fil": "Bumuo ng inclusive na invitation plan na tumutugon sa hadlang sa pakikilahok",
+          "practice_id": "activity-invite-and-remove-barriers",
+          "practice_en": "stakeholder map",
+          "observation_design_en": "Plans for all three barriers with clear inviters and voluntary participation options.",
+          "source_pages": {
+            "R": [
+              52,
+              53
+            ],
+            "F": [
+              41
+            ],
+            "P": [
+              93,
+              94
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
+        },
+        {
+          "code": "2.6.3",
+          "lesson_key": "trust-and-core-group",
+          "title_en": "Build trust and a core group",
+          "title_fil": "Bumuo ng tiwala at pangunahing grupo",
+          "objective_id": "trust-and-core-group.objective-1",
+          "task_en": "Facilitate a participatory meeting that invites contributions and agrees group responsibilities",
+          "task_fil": "Pangasiwaan ang pulong na may pakikilahok at napagkasunduang tungkulin",
+          "practice_id": "activity-trust-and-core-group",
+          "practice_en": "community meeting role-play",
+          "observation_design_en": "Invites contributions, summarizes differences and confirms voluntary roles while considering the existing group.",
+          "source_pages": {
+            "R": [
+              53,
+              54
+            ],
+            "F": [
+              41
+            ],
+            "P": [
+              93,
+              94
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
+        },
+        {
+          "code": "2.6.4",
+          "lesson_key": "community-action-followup",
+          "title_en": "Agree actions and review results",
+          "title_fil": "Magkasundo sa aksyon at suriin ang resulta",
+          "objective_id": "community-action-followup.objective-1",
+          "task_en": "Make an action plan with owners, resources, follow-up and a review measure",
+          "task_fil": "Gumawa ng action plan na may responsable, resources, follow-up at panukat",
+          "practice_id": "activity-community-action-followup",
+          "practice_en": "community action plan",
+          "observation_design_en": "Includes an action, owner, resource confirmation, date, measure and respectful community follow-up.",
+          "source_pages": {
+            "R": [
+              52,
+              53,
+              54
+            ],
+            "F": [
+              41
+            ],
+            "P": [
+              93,
+              94
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": false,
+          "presentation_role": "topic heading only; substantive lesson evidence is R/F"
+        }
+      ]
+    },
+    {
+      "code": "2.7",
+      "module_key": "07-disaster-preparedness",
+      "title_en": "Disaster preparedness and response",
+      "title_fil": "Paghahanda at pagtugon sa sakuna",
+      "competency_group": "first-aid",
+      "source_allocation_hours": null,
+      "source_pages": {
+        "R": [
+          54,
+          57
+        ],
+        "F": [
+          42,
+          43
+        ],
+        "P": [
+          97,
+          112
+        ]
+      },
+      "status": "draft-authored",
+      "lessons": [
+        {
+          "code": "2.7.1",
+          "lesson_key": "hazards-capacities",
+          "title_en": "Map hazards and capacities",
+          "title_fil": "Tukuyin ang panganib at kakayahan",
+          "objective_id": "hazards-capacities.objective-1",
+          "task_en": "Use a fictional barangay map to identify hazards, households needing support and available capacities",
+          "task_fil": "Gamitin ang fictional barangay map sa panganib, pamilyang nangangailangan at kapasidad",
+          "practice_id": "activity-hazards-capacities",
+          "practice_en": "risk map exercise",
+          "observation_design_en": "In a fictional case, on the fictional map, identify a hazard, a support need and one capacity needing confirmation.",
+          "source_pages": {
+            "R": [
+              54
+            ],
+            "F": [
+              38,
+              42,
+              43
+            ],
+            "P": [
+              97,
+              99
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
+        },
+        {
+          "code": "2.7.2",
+          "lesson_key": "evacuation-contacts",
+          "title_en": "Confirm evacuation and warning arrangements",
+          "title_fil": "Kumpirmahin ang evacuation at babala",
+          "objective_id": "evacuation-contacts.objective-1",
+          "task_en": "Explain locally verified warning, evacuation and contact arrangements using a directory",
+          "task_fil": "Ipaliwanag ang kumpirmadong babala, evacuation at contact gamit ang directory",
+          "practice_id": "activity-evacuation-contacts",
+          "practice_en": "evacuation communication drill",
+          "observation_design_en": "In a fictional case, using a mock advisory, state source/time, confirmed action and contact to verify.",
+          "source_pages": {
+            "R": [
+              54
+            ],
+            "F": [
+              38,
+              42,
+              43
+            ],
+            "P": [
+              99,
+              102
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
+        },
+        {
+          "code": "2.7.3",
+          "lesson_key": "go-bag-e-balde",
+          "title_en": "Prepare a go-bag or e-balde",
+          "title_fil": "Maghanda ng go-bag o e-balde",
+          "objective_id": "go-bag-e-balde.objective-1",
+          "task_en": "Assemble and explain a go-bag/e-balde using reviewed local guidance and household needs",
+          "task_fil": "Buuin at ipaliwanag ang go-bag/e-balde ayon sa nasuring gabay at pangangailangan",
+          "practice_id": "activity-go-bag-e-balde",
+          "practice_en": "go-bag demonstration",
+          "observation_design_en": "In a fictional case, select items for the fictional family, explain why, and set a date to recheck.",
+          "source_pages": {
+            "R": [
+              54,
+              55
+            ],
+            "F": [
+              38,
+              42,
+              43
+            ],
+            "P": [
+              102,
+              104
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
+        },
+        {
+          "code": "2.7.4",
+          "lesson_key": "bhert-coordination",
+          "title_en": "Coordinate the BHW/BHERT role",
+          "title_fil": "Iugnay ang gawain ng BHW at BHERT",
+          "objective_id": "bhert-coordination.objective-1",
+          "task_en": "Explain the locally confirmed role and appropriate response-team handover",
+          "task_fil": "Ipaliwanag ang kumpirmadong tungkulin at handover sa response team",
+          "practice_id": "activity-bhert-coordination",
+          "practice_en": "response-team coordination",
+          "observation_design_en": "In a fictional case, in a mock team change, identify what to confirm and give a short handover without personal details.",
+          "source_pages": {
+            "R": [
+              55
+            ],
+            "F": [
+              38,
+              42,
+              43
+            ],
+            "P": [
+              104,
+              107
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
+        },
+        {
+          "code": "2.7.5",
+          "lesson_key": "essential-health-packages",
+          "title_en": "Connect people to essential services",
+          "title_fil": "Iugnay ang tao sa mahalagang serbisyo",
+          "objective_id": "essential-health-packages.objective-1",
+          "task_en": "Match disaster needs to medical/public health, nutrition, WASH and psychosocial support",
+          "task_fil": "Itugma ang pangangailangan sa medical/public health, nutrisyon, WASH at psychosocial support",
+          "practice_id": "activity-essential-health-packages",
+          "practice_en": "EHSP sorting exercise",
+          "observation_design_en": "In a fictional case, match four fictional needs to the appropriate service and state referral and follow-up.",
+          "source_pages": {
+            "R": [
+              56,
+              57
+            ],
+            "F": [
+              38,
+              42,
+              43
+            ],
+            "P": [
+              107,
+              110
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
+        },
+        {
+          "code": "2.7.6",
+          "lesson_key": "disaster-tabletop",
+          "title_en": "Practise coordinated disaster response",
+          "title_fil": "Magsanay ng magkakaugnay na pagtugon",
+          "objective_id": "disaster-tabletop.objective-1",
+          "task_en": "Complete a tabletop with referral, service continuity, follow-up and responder support",
+          "task_fil": "Kumpletuhin ang tabletop na may referral, tuloy na serbisyo, follow-up at suporta sa responder",
+          "practice_id": "activity-disaster-tabletop",
+          "practice_en": "disaster tabletop",
+          "observation_design_en": "In a fictional case, in a 10-minute tabletop, sequence priorities, handover, continuity, follow-up and responder support.",
+          "source_pages": {
+            "R": [
+              54,
+              55,
+              56,
+              57
+            ],
+            "F": [
+              38,
+              42,
+              43
+            ],
+            "P": [
+              97,
+              112
+            ]
+          },
+          "status": "authored-draft",
+          "claim_review_required": true,
+          "presentation_role": "topic sequence and legacy examples; current WHO/DOH/PAGASA and local protocols bound live action"
+        }
+      ]
+    }
+  ]
+}

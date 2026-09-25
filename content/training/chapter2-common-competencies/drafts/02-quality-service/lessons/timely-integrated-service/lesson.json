@@ -1,0 +1,245 @@
+{
+  "manifest": {
+    "lesson_key": "timely-integrated-service",
+    "position": 2,
+    "title_fil": "Ayusin ang paglapit sa serbisyo",
+    "title_en": "Improve the service pathway",
+    "objectives_fil": [
+      "Gumuhit ng paglapit ni Pilar sa serbisyo at magmungkahi ng pagbabago na may responsable, kumpirmasyon at panukat."
+    ],
+    "objectives_en": [
+      "Map Pilar’s service pathway and propose an improvement with an owner, confirmation and a review measure."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.quality.timeliness",
+        "c2.quality.integration",
+        "c2.quality.efficiency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Saan maaaring bawasan ang hadlang?",
+      "takeaway_en": "Where could a barrier be reduced?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.quality.timeliness",
+        "c2.quality.integration",
+        "c2.quality.efficiency"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Iguhit ang apat na hakbang sa kuwento. Markahan ang isang hadlang. Gumawa ng mungkahi na may responsable, kumpirmasyon, petsa at panukat.",
+      "takeaway_en": "Draw the four steps in the story. Mark one barrier. Propose a change with an owner, confirmation, date and measure.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.quality.timeliness"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May malinaw na pupuntahan bago magbigay ng tagubilin.",
+      "takeaway_en": "This establishes a clear destination before giving directions.",
+      "check": {
+        "prompt_fil": "Hindi alam ni Pilar ang tamang contact. Ano ang unang makatutulong?",
+        "prompt_en": "Pilar does not know the right contact. What helps first?",
+        "options": [
+          {
+            "fil": "Sabihing umikot muli hanggang may makausap siyang staff.",
+            "en": "Tell her to keep asking around until she finds someone."
+          },
+          {
+            "fil": "Kumpirmahin ang contact sa staff.",
+            "en": "Confirm the contact with staff."
+          },
+          {
+            "fil": "Mangakong lahat ng serbisyo ay matatapos bago magtanghali.",
+            "en": "Promise every service will finish before noon."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Inuulit nito ang hadlang sa halip na linawin ang daan. 2: May malinaw na pupuntahan bago magbigay ng tagubilin. 3: Hindi hawak ng BHW ang lahat ng oras at serbisyo.",
+        "feedback_en": "1: This repeats the barrier rather than clarifying the pathway. 2: This establishes a clear destination before giving directions. 3: The BHW does not control all timings and services."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.quality.timeliness",
+        "c2.quality.integration",
+        "c2.quality.efficiency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Naiguguhit ang daloy, natutukoy ang hadlang at naitatala ang pagbabago, responsable, kumpirmasyon at panukat nang hindi lumalampas sa tungkulin.",
+      "takeaway_en": "Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.quality.integration",
+        "c2.quality.efficiency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.quality.efficiency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.",
+      "takeaway_en": "This explores less duplication while preserving required processes.",
+      "check": {
+        "prompt_fil": "Gustong bawasan ang dobleng form. Ano ang ligtas na mungkahi?",
+        "prompt_en": "The group wants to reduce duplicate forms. Which proposal is appropriate?",
+        "options": [
+          {
+            "fil": "Itapon ang lahat ng lumang form upang wala nang ulit.",
+            "en": "Discard all old forms so nothing can be repeated."
+          },
+          {
+            "fil": "Laktawan ang lahat ng tanong kahit kailangan ng staff.",
+            "en": "Skip every question even when staff need it."
+          },
+          {
+            "fil": "Ipasuri ang paggamit ng naunang tala.",
+            "en": "Ask staff to review use of the earlier record."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring kailangan pa ang mga tala; hindi ito pasya ng BHW lamang. 2: Maaaring mawala ang mahalagang pagsusuri. 3: Binabawasan ang posibleng pag-uulit habang pinananatili ang kailangang proseso.",
+        "feedback_en": "1: Records may still be required; this is not the BHW’s decision alone. 2: Necessary checks could be lost. 3: This explores less duplication while preserving required processes."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.quality.timeliness",
+        "c2.quality.integration",
+        "c2.quality.efficiency"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.quality.timeliness",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.quality.integration",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    },
+    {
+      "id": "c2.quality.efficiency",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        30
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation",
+      "pdf_pages": [
+        33,
+        37
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/timely-integrated-service-15ea89fc5b2f.svg",
+      "content_hash": "15ea89fc5b2fc67760e9bae92e70bb8dd87fc4f7484ca7deb534181f047fb39c",
+      "alt_fil": "Tatlong kahon: Hadlang, Ugnayan, Balikan.",
+      "alt_en": "Three boxes: Barrier, Coordinate, Follow up.",
+      "caption_fil": "Naiguguhit ang daloy, natutukoy ang hadlang at naitatala ang pagbabago, responsable, kumpirmasyon at panukat nang hindi lumalampas sa tungkulin.",
+      "caption_en": "Maps the pathway, identifies a barrier and records a change, owner, confirmation and measure within role boundaries.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

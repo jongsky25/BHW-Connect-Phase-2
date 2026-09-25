@@ -1,0 +1,265 @@
+{
+  "manifest": {
+    "lesson_key": "hand-hygiene",
+    "position": 2,
+    "title_fil": "Ipakita ang wastong paglilinis ng kamay",
+    "title_en": "Demonstrate hand hygiene",
+    "objectives_fil": [
+      "Sa return demonstration, piliin ang angkop na paraan at ipakita ang kumpletong paglilinis ng magkabilang kamay kasama ang tamang pagpapatuyo."
+    ],
+    "objectives_en": [
+      "In a return demonstration, choose the appropriate method and show complete cleaning of both hands, including correct drying."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.ipc.hand-method"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Aling paraan ang pipiliin?",
+      "takeaway_en": "Which method should she choose?",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.ipc.hand-technique"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Pumili ng paraan para sa dalawang card: may dumi at walang dumi. Ipakita ang handwash at handrub sa supervisor.",
+      "takeaway_en": "Choose a method for two cards: visibly dirty and not visibly dirty. Demonstrate handwashing and handrub to the supervisor.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.ipc.hand-method"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Gawin ang buong paghuhugas at tamang pagpapatuyo.",
+      "takeaway_en": "Complete washing and appropriate drying.",
+      "check": {
+        "prompt_fil": "May nakikitang dumi sa kamay. Alin ang angkop?",
+        "prompt_en": "Hands are visibly dirty. Which option fits?",
+        "options": [
+          {
+            "fil": "Handrub lamang kahit may nakikitang dumi.",
+            "en": "Handrub alone despite the visible dirt."
+          },
+          {
+            "fil": "Tubig lamang na mabilis na ipapadaan sa kamay.",
+            "en": "A quick rinse with water alone."
+          },
+          {
+            "fil": "Sabon at tubig.",
+            "en": "Soap and water."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Kailangan ang sabon at tubig para sa nakikitang dumi. 2: Kulang ang sabon, pagkuskos sa lahat ng bahagi at pagpapatuyo. 3: Gawin ang buong paghuhugas at tamang pagpapatuyo.",
+        "feedback_en": "1: Visible dirt calls for soap and water. 2: Soap, all-surface rubbing and drying are missing. 3: Complete washing and appropriate drying."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.ipc.hand-method",
+        "c2.ipc.hand-technique"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tamang paraan; lahat ng bahagi ng magkabilang kamay; kumpletong oras at pagpapatuyo; walang muling kontaminasyon.",
+      "takeaway_en": "Appropriate method; all surfaces of both hands; complete timing and drying; no recontamination.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.ipc.hand-method",
+        "c2.ipc.hand-moments"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.ipc.hand-technique"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi.",
+      "takeaway_en": "Let hands dry while completing rubbing across all surfaces.",
+      "check": {
+        "prompt_fil": "Natatapos ang handrub pero basa pa. Ano ang gagawin?",
+        "prompt_en": "Handrub has been applied but hands are still wet. What next?",
+        "options": [
+          {
+            "fil": "Kuskusin hanggang matuyo.",
+            "en": "Continue rubbing until dry."
+          },
+          {
+            "fil": "Punasan agad sa suot na damit para makabalik sa gawain.",
+            "en": "Wipe it on clothing immediately to return to work."
+          },
+          {
+            "fil": "Banlawan sa tubig kahit wala pang buong handrub procedure.",
+            "en": "Rinse with water before completing the handrub procedure."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi. 2: Hindi dapat punasan ang handrub at maaaring makontamina muli. 3: Hindi bahagi ng handrub ang pagbanlaw nito.",
+        "feedback_en": "1: Let hands dry while completing rubbing across all surfaces. 2: Handrub should not be wiped off; hands may be recontaminated. 3: Rinsing is not part of the handrub procedure."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.ipc.hand-moments"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.ipc.hand-method",
+      "read_ids": [
+        "scene",
+        "check-start",
+        "example",
+        "scope"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-wash",
+        "who-rub",
+        "who-outpatient",
+        "cdc-core",
+        "who-community"
+      ]
+    },
+    {
+      "id": "c2.ipc.hand-technique",
+      "read_ids": [
+        "action",
+        "example",
+        "check-transfer"
+      ],
+      "slide_ids": [
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-wash",
+        "who-rub",
+        "who-outpatient",
+        "cdc-core",
+        "who-community"
+      ]
+    },
+    {
+      "id": "c2.ipc.hand-moments",
+      "read_ids": [
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "who-wash",
+        "who-rub",
+        "who-outpatient",
+        "cdc-core",
+        "who-community"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        34
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        35,
+        36
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy teaching source, qualified by evidence review",
+      "pdf_pages": [
+        54,
+        55
+      ]
+    },
+    {
+      "id": "who-wash",
+      "title": "WHO: How to handwash (healthcare procedure)",
+      "url": "https://www.who.int/docs/default-source/patient-safety/how-to-handwash-poster.pdf"
+    },
+    {
+      "id": "who-rub",
+      "title": "WHO: How to handrub (healthcare procedure)",
+      "url": "https://www.who.int/docs/default-source/patient-safety/how-to-handrub-poster.pdf"
+    },
+    {
+      "id": "who-outpatient",
+      "title": "WHO: Hand hygiene in outpatient and home-based care (2012)",
+      "url": "https://www.who.int/publications/i/item/9789241503372"
+    },
+    {
+      "id": "cdc-core",
+      "title": "CDC: Core IPC practices in all healthcare settings (2024)",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/"
+    },
+    {
+      "id": "who-community",
+      "title": "WHO/UNICEF: Hand hygiene in community settings (2025; non-healthcare scope)",
+      "url": "https://www.who.int/publications/i/item/9789240116559"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/hand-hygiene-27d8e31d66ad.svg",
+      "content_hash": "27d8e31d66ad34622f04a2cc468cfbc930cb5cdcf8b6f552b3d28ca470bd3542",
+      "alt_fil": "Tatlong kahon: Piliin ang paraan, Lahat ng bahagi, Patuyuin.",
+      "alt_en": "Three boxes: Choose the method, Cover every surface, Dry appropriately.",
+      "caption_fil": "Tamang paraan; lahat ng bahagi ng magkabilang kamay; kumpletong oras at pagpapatuyo; walang muling kontaminasyon.",
+      "caption_en": "Appropriate method; all surfaces of both hands; complete timing and drying; no recontamination.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

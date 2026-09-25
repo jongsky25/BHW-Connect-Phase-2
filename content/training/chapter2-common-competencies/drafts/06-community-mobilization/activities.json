@@ -1,0 +1,157 @@
+{
+  "activities": [
+    {
+      "id": "activity-community-issue",
+      "lesson_key": "community-issue",
+      "kind": "issue-worksheet",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/community-issue/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gumawa ng issue card: ano ang naiulat, sino ang apektado, sino ang hindi pa naririnig at ano ang itatanong.",
+        "en": "Make an issue card: reported concern, affected people, missing voices and the next question."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          52,
+          53
+        ],
+        "F": [
+          41
+        ]
+      },
+      "timing_status": "proposed portion of shared allocation"
+    },
+    {
+      "id": "activity-invite-and-remove-barriers",
+      "lesson_key": "invite-and-remove-barriers",
+      "kind": "stakeholder-map",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/invite-and-remove-barriers/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gumawa ng tatlong hanay para kina Ruben, Sari at Eva. Ilagay ang hadlang, tagapag-imbita, paraan at petsa ng pagbalik.",
+        "en": "Create rows for Ruben, Sari and Eva. Add each barrier, inviter, invitation method and follow-up date."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          52,
+          53
+        ],
+        "F": [
+          41
+        ]
+      },
+      "timing_status": "proposed portion of shared allocation"
+    },
+    {
+      "id": "activity-trust-and-core-group",
+      "lesson_key": "trust-and-core-group",
+      "kind": "meeting-role-play",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/trust-and-core-group/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Gumanap bilang tagapangasiwa, lider at residenteng may ibang mungkahi. Anyayahan ang bawat boses at kumpirmahin ang dalawang kusang tungkulin.",
+        "en": "Play facilitator, leader and resident with another suggestion. Invite each voice and confirm two voluntary roles."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          53,
+          54
+        ],
+        "F": [
+          41
+        ]
+      },
+      "timing_status": "proposed portion of shared allocation"
+    },
+    {
+      "id": "activity-community-action-followup",
+      "lesson_key": "community-action-followup",
+      "kind": "action-plan",
+      "status": "suggested",
+      "assessment_use": "suitable-for-observation",
+      "setting": "simulation",
+      "minutes": 15,
+      "group_size": 3,
+      "objective_index": 0,
+      "indicator_ref": "lessons/community-action-followup/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "worksheet",
+        "observer-sheet",
+        "job-aid"
+      ],
+      "task": {
+        "fil": "Punan ang action plan ng grupo. Magdagdag ng panukat sa napapanahong balita at tugon kapag may hindi nakatapos.",
+        "en": "Complete the group’s action plan. Add a timely-update measure and a response to an unfinished commitment."
+      },
+      "delivery_record_options": [
+        "run",
+        "adapted",
+        "skipped"
+      ],
+      "privacy": "fictional cases only; no identifiable resident details",
+      "source_pages": {
+        "R": [
+          52,
+          53,
+          54
+        ],
+        "F": [
+          41
+        ]
+      },
+      "timing_status": "proposed portion of shared allocation"
+    }
+  ]
+}

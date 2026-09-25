@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.",
+      "observable_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
+      "not_yet_fil": "Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.",
+      "not_yet_en": "Relies only on a mask or changes isolation arrangements without guidance.",
+      "levels": {
+        "kaya_na_fil": "Magkakaugnay ang apat na kontrol at malinaw ang dapat ipasuri nang walang paalala.",
+        "kaya_na_en": "Links all four controls and identifies what needs review without prompting.",
+        "kailangan_practice_fil": "May maraming kontrol pero kailangang paalalahanang magtalaga ng responsable.",
+        "kailangan_practice_en": "Suggests several controls but needs a prompt to assign owners.",
+        "hindi_pa_fil": "Mask lamang ang sagot o binabago ang isolation arrangement nang walang gabay.",
+        "hindi_pa_en": "Relies only on a mask or changes isolation arrangements without guidance."
+      }
+    }
+  ]
+}

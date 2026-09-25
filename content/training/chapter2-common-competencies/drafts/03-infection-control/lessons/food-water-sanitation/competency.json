@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "May angkop na pagbabago sa pagkain, tubig at sanitasyon; walang hinulaang treatment o garantiya mula sa hitsura.",
+      "observable_en": "Proposes appropriate food, water and sanitation changes without guessed treatment or appearance-based guarantees.",
+      "not_yet_fil": "Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.",
+      "not_yet_en": "Guarantees that clear water is safe or guesses chemical amounts.",
+      "levels": {
+        "kaya_na_fil": "Kumpleto ang tatlong hanay at malinaw ang ipapakumpirma sa health o water staff nang walang paalala.",
+        "kaya_na_en": "Completes all three rows and identifies what health or water staff must confirm without prompting.",
+        "kailangan_practice_fil": "May angkop na pagbabago pero kailangan ng paalala sa pagprotekta ng tubig o contact para sa treatment.",
+        "kailangan_practice_en": "Suggests appropriate changes but needs a prompt on water protection or the treatment contact.",
+        "hindi_pa_fil": "Ginagarantiyang ligtas ang malinaw na tubig o nanghuhula ng dami ng kemikal.",
+        "hindi_pa_en": "Guarantees that clear water is safe or guesses chemical amounts."
+      }
+    }
+  ]
+}

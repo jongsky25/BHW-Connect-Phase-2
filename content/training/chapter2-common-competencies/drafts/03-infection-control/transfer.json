@@ -1,0 +1,193 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Sa loob ng 2–4 linggo, ipasuri ang isang mungkahing pagpapabuti sa supervisor gamit ang job aid.",
+    "en": "Within 2–4 weeks, review one improvement proposal with the supervisor using the job aid."
+  },
+  "supervision": {
+    "fil": "Gamitin ang parehong indicator; obserbahan, magbigay ng feedback at umulit.",
+    "en": "Use the same indicator; observe, give feedback and retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "infection-routes",
+      "check": {
+        "prompt_fil": "Sa saradong silid, maaaring malanghap ang particles mula sa umuubo. Ano ang angkop?",
+        "prompt_en": "In an enclosed room, particles from a cough may be inhaled. What is appropriate?",
+        "options": [
+          {
+            "fil": "Sabihing sapat na ang pagpunas sa mesa para sa lahat ng panganib.",
+            "en": "Say wiping the desk alone addresses every risk."
+          },
+          {
+            "fil": "Pangalanan agad ang sakit at ipaalam sa buong pila.",
+            "en": "Immediately name the illness and tell the entire queue."
+          },
+          {
+            "fil": "Iugnay sa respiratory controls ng BHS.",
+            "en": "Use the BHS respiratory-control process."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Hindi nito natutugunan ang posibleng paglanghap. 2: Hula ito at hindi angkop na pagbabahagi ng impormasyon. 3: Gamitin ang napagkasunduang pag-aayos ng lugar, pag-uulat at proteksiyon.",
+        "feedback_en": "1: This does not address possible inhalation. 2: This guesses a diagnosis and discloses information inappropriately. 3: Use the agreed arrangements for space, reporting and protection."
+      }
+    },
+    {
+      "lesson_key": "infection-control-levels",
+      "check": {
+        "prompt_fil": "May concern sa bentilasyon. Ano ang tamang susunod na hakbang?",
+        "prompt_en": "There is a ventilation concern. What is the appropriate next step?",
+        "options": [
+          {
+            "fil": "Ilipat agad ang lahat sa silid na hindi pa nasusuri.",
+            "en": "Immediately move everyone to a room that has not been assessed."
+          },
+          {
+            "fil": "Ipaalam at ipasuri sa responsable.",
+            "en": "Report it to the responsible person."
+          },
+          {
+            "fil": "Sabihing ligtas ang silid kahit walang anumang pagsusuri.",
+            "en": "Declare the room safe without any assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring hindi angkop ang bagong lugar. 2: May tamang pagsusuri at pag-aayos ng facility. 3: Walang sapat na batayan ang katiyakan.",
+        "feedback_en": "1: The new location may be unsuitable. 2: This enables appropriate facility review and action. 3: The reassurance lacks a basis."
+      }
+    },
+    {
+      "lesson_key": "hand-hygiene",
+      "check": {
+        "prompt_fil": "Natatapos ang handrub pero basa pa. Ano ang gagawin?",
+        "prompt_en": "Handrub has been applied but hands are still wet. What next?",
+        "options": [
+          {
+            "fil": "Kuskusin hanggang matuyo.",
+            "en": "Continue rubbing until dry."
+          },
+          {
+            "fil": "Punasan agad sa suot na damit para makabalik sa gawain.",
+            "en": "Wipe it on clothing immediately to return to work."
+          },
+          {
+            "fil": "Banlawan sa tubig kahit wala pang buong handrub procedure.",
+            "en": "Rinse with water before completing the handrub procedure."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Hayaang matuyo habang kinukumpleto ang handrub sa lahat ng bahagi. 2: Hindi dapat punasan ang handrub at maaaring makontamina muli. 3: Hindi bahagi ng handrub ang pagbanlaw nito.",
+        "feedback_en": "1: Let hands dry while completing rubbing across all surfaces. 2: Handrub should not be wiped off; hands may be recontaminated. 3: Rinsing is not part of the handrub procedure."
+      }
+    },
+    {
+      "lesson_key": "cough-etiquette",
+      "check": {
+        "prompt_fil": "Naitapon na ang tissue, pero nahawakan ang secretions. Ano ang kasunod?",
+        "prompt_en": "The tissue has been discarded, but the person touched secretions. What next?",
+        "options": [
+          {
+            "fil": "Humawak agad sa ibang tao dahil wala na ang tissue.",
+            "en": "Immediately touch someone else because the tissue is gone."
+          },
+          {
+            "fil": "Itago ang ginamit na tissue para ipasa sa susunod.",
+            "en": "Keep the used tissue to give to the next person."
+          },
+          {
+            "fil": "Linisin ang kamay.",
+            "en": "Perform hand hygiene."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Maaaring may kontaminasyon pa sa kamay. 2: Hindi dapat ibahagi o gamitin muli ang ginamit na tissue. 3: Bahagi ng kumpletong sequence ang hand hygiene.",
+        "feedback_en": "1: Hands may still be contaminated. 2: Used tissues should not be shared or reused. 3: Hand hygiene is part of the complete sequence."
+      }
+    },
+    {
+      "lesson_key": "food-water-sanitation",
+      "check": {
+        "prompt_fil": "Hilaw na manok ang katabi ng lutong pagkain. Ano ang pagbabago?",
+        "prompt_en": "Raw chicken is beside cooked food. What should change?",
+        "options": [
+          {
+            "fil": "Hayaan lamang basta takpan nang sabay sa iisang lalagyan.",
+            "en": "Leave them together under one cover in the same container."
+          },
+          {
+            "fil": "Ihiwalay ang hilaw sa luto.",
+            "en": "Separate raw and cooked food."
+          },
+          {
+            "fil": "Tikman ang luto upang malaman kung may mikrobyo.",
+            "en": "Taste the cooked food to determine whether germs are present."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi pinipigilan ng iisang takip ang kontaminasyon sa pagitan nila. 2: Nababawasan ang paglipat mula sa hilaw na pagkain. 3: Hindi ligtas o maaasahang pagsusuri ang pagtikim.",
+        "feedback_en": "1: One cover does not prevent contamination between them. 2: This reduces transfer from raw food. 3: Tasting is neither a safe nor reliable test."
+      }
+    },
+    {
+      "lesson_key": "bhs-ipc-policies",
+      "check": {
+        "prompt_fil": "Magkaiba ang lumang poster at bagong instruction. Ano ang gagawin?",
+        "prompt_en": "An old poster conflicts with a newer instruction. What should happen?",
+        "options": [
+          {
+            "fil": "Kumpirmahin sa IPC contact.",
+            "en": "Confirm with the IPC contact."
+          },
+          {
+            "fil": "Piliin ang mas madaling sundin kahit hindi pa malinaw.",
+            "en": "Choose whichever is easier despite the uncertainty."
+          },
+          {
+            "fil": "Markahang kumpleto ang checklist upang hindi na magtanong.",
+            "en": "Mark the checklist complete to avoid asking."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Nililinaw ang kasalukuyang naaangkop na gabay. 2: Maaaring hindi angkop o ligtas ang napiling instruction. 3: Itinatago nito ang tunay na kakulangan.",
+        "feedback_en": "1: This clarifies the applicable guidance. 2: The selected instruction may be inappropriate or unsafe. 3: This conceals the actual gap."
+      }
+    },
+    {
+      "lesson_key": "ipc-monitor-and-improve",
+      "check": {
+        "prompt_fil": "Hindi pa na-refill ang sabon sa follow-up. Ano ang dapat itala?",
+        "prompt_en": "Soap has not been refilled at follow-up. What should be recorded?",
+        "options": [
+          {
+            "fil": "Tapos na ang gawain dahil may nangakong magre-refill.",
+            "en": "The task is complete because someone promised a refill."
+          },
+          {
+            "fil": "Walang problema dahil may naunang training ang lahat.",
+            "en": "There is no problem because everyone received training."
+          },
+          {
+            "fil": "Hindi pa naayos; muling ipaalam.",
+            "en": "Unresolved; report it again."
+          }
+        ],
+        "correct_option_index": 2,
+        "feedback_fil": "1: Pangako ay hindi ebidensiya ng resulta. 2: Hindi pinapalitan ng training ang kailangang supply. 3: Tapat ang tala at may susunod na aksyon.",
+        "feedback_en": "1: A promise is not evidence of completion. 2: Training does not replace the needed supply. 3: The record is accurate and prompts further action."
+      }
+    }
+  ],
+  "localization_slots": [
+    "supervisor_or_organizer",
+    "authorized_reporting_channel",
+    "accessible_meeting_place",
+    "confirmed_resource_contact"
+  ]
+}

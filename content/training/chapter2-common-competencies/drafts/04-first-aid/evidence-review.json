@@ -1,0 +1,212 @@
+{
+  "status": "author-source-check-complete; independent clinical review pending",
+  "checked_on": "2026-09-25",
+  "independent_clinical_reviewer": null,
+  "clinical_signoff": null,
+  "publication_allowed": false,
+  "sources": [
+    {
+      "id": "ifrc-2025",
+      "title": "IFRC International First Aid, Resuscitation and Education Guidelines 2025",
+      "url": "https://www.ifrc.org/document/ifrc-international-first-aid-resuscitation-and-education-guidelines-2025",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "aha-firstaid",
+      "title": "AHA/American Red Cross Guidelines for First Aid 2024",
+      "url": "https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "aha-adult",
+      "title": "AHA Adult Basic Life Support Guidelines 2025",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "aha-ped",
+      "title": "AHA/AAP Pediatric Basic Life Support Guidelines 2025",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "aha-drowning",
+      "title": "AHA Adult and Pediatric Special Circumstances of Resuscitation 2025",
+      "url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "who-bec",
+      "title": "WHO/ICRC Basic Emergency Care and transfer/handover",
+      "url": "https://www.who.int/publications-detail-redirect/9789241513081",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "who-community",
+      "title": "WHO Community-Based Care and First Aid Responders",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/community-based-care",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "who-imci",
+      "title": "WHO IMCI Chart Booklet, danger signs, cough and diarrhoea",
+      "url": "https://www.who.int/publications/m/item/integrated-management-of-childhood-illness---chart-booklet-%28march-2014%29",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "who-diarrhea",
+      "title": "WHO Diarrhoeal Disease guidance",
+      "url": "https://www.who.int/health-topics/diarrhoea",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "cdc-seizure",
+      "title": "CDC First Aid for Seizures",
+      "url": "https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "who-snake",
+      "title": "WHO Snakebite first aid",
+      "url": "https://www.who.int/health-topics/snakebite/snakebite",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    },
+    {
+      "id": "poison-control",
+      "title": "US Poison Control First Aid for Poisonings, clinical principles only; local contact required",
+      "url": "https://www.poison.org/first-aid-for-poisonings",
+      "accessed_on": "2026-09-25",
+      "provenance": "Primary professional or public-health organization; Poison Control principles require a locally confirmed contact"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "fa-01",
+      "lessons": [
+        "scene-help-referral",
+        "shock-loss-consciousness",
+        "incident-handover"
+      ],
+      "decision": "Teach scene safety, response/normal-breathing observation, prompt local activation and factual handover; qualified staff use their current protocol.",
+      "sources": [
+        "who-community",
+        "who-bec",
+        "aha-adult"
+      ],
+      "remaining": "Confirm local contact, response equipment and BHW authorization.",
+      "source_issue": "Legacy scene and pulse-first sequence can delay activation and assumes BHW clinical scope."
+    },
+    {
+      "id": "fa-02",
+      "lessons": [
+        "child-danger-signs",
+        "child-cough-breathing",
+        "diarrhea-dehydration"
+      ],
+      "decision": "Use WHO IMCI danger signs and age-specific trained assessment. Continue breastfeeding when safe; use the actual ORS packet directions and safe water. Do not provide a universal recipe or dose.",
+      "sources": [
+        "who-imci",
+        "who-diarrhea"
+      ],
+      "remaining": "Local IMCI adaptation, ORS brands, trained assessor and referral route require confirmation.",
+      "source_issue": "Older temperature/respiratory cutoffs and a fixed home ORS recipe may be misapplied by age or packet size."
+    },
+    {
+      "id": "fa-03",
+      "lessons": [
+        "convulsion-response"
+      ],
+      "decision": "Clear hazards, protect the head, time the event, observe breathing and seek urgent child assessment; do not restrain or insert anything into the mouth.",
+      "sources": [
+        "cdc-seizure",
+        "who-imci"
+      ],
+      "remaining": "Qualified pediatric reviewer must confirm referral thresholds and local pathway.",
+      "source_issue": "Legacy fever-wiping instructions could distract from immediate seizure safety and referral."
+    },
+    {
+      "id": "fa-04",
+      "lessons": [
+        "cpr-bls-orientation",
+        "choking-response",
+        "drowning-response"
+      ],
+      "decision": "Use current AHA adult/pediatric and drowning guidance only through a qualified trainer and appropriate manikins. Do not practise thrusts or compressions on people; water rescue requires trained responders.",
+      "sources": [
+        "aha-adult",
+        "aha-ped",
+        "aha-drowning",
+        "ifrc-2025"
+      ],
+      "remaining": "Trainer certification, AED/manikin availability, rescue service and local BLS adoption require confirmation.",
+      "source_issue": "Legacy CAB, generic Heimlich and drowning paragraphs do not reflect age-specific 2025 resuscitation and airway-obstruction pathways."
+    },
+    {
+      "id": "fa-05",
+      "lessons": [
+        "poisoning-response",
+        "chest-pain-referral",
+        "first-aid-kit"
+      ],
+      "decision": "Activate verified advice, report exposure facts and avoid improvised treatment. Medication and kit use follow current local protocols and qualified direction; no source dose is taught.",
+      "sources": [
+        "poison-control",
+        "aha-firstaid",
+        "who-community"
+      ],
+      "remaining": "Local poison contact, cardiology/aspirin protocol, kit list and medication authority remain unverified.",
+      "source_issue": "The old source gives routine water after poisoning, a fixed chemical-spill distance, repeated aspirin doses and kit medications as if possession implied authority."
+    },
+    {
+      "id": "fa-06",
+      "lessons": [
+        "wounds-bleeding",
+        "fracture-dislocation",
+        "burn-response"
+      ],
+      "decision": "Teach direct pressure and prompt escalation for severe bleeding, support suspected fractures in position, cool thermal burns safely and seek assessment for concerning burns. Omit routine herbal treatment.",
+      "sources": [
+        "aha-firstaid",
+        "ifrc-2025"
+      ],
+      "remaining": "Qualified trainer must verify hands-on technique, dressing, immobilization and referral criteria.",
+      "source_issue": "Legacy gentle pressure, herbal wound care, universal splints and burn grading could under-triage injury."
+    },
+    {
+      "id": "fa-07",
+      "lessons": [
+        "insect-bites-stings",
+        "snakebite-response"
+      ],
+      "decision": "Urgently escalate breathing difficulty or systemic reaction; follow authorized emergency medication plans only. For snakebite, minimize movement and transport promptly without tourniquet, incision or suction.",
+      "sources": [
+        "aha-firstaid",
+        "who-snake",
+        "ifrc-2025"
+      ],
+      "remaining": "Confirm epinephrine access/training, snakebite transport and local facility availability.",
+      "source_issue": "Local bite or sting symptoms may conceal anaphylaxis, while traditional snakebite methods cause harm."
+    }
+  ],
+  "source_allocation": "F38: seven hours emergency cases plus one hour first-aid kit; 2.5/2.6/2.7 use the remaining four hours of the shared 12-hour first-aid competency.",
+  "excluded_legacy_claims": [
+    "Routine water for any conscious poisoning",
+    "Fixed 200-metre chemical spill safety distance",
+    "Old repeated aspirin schedule",
+    "Universal homemade ORS recipe",
+    "CPR or abdominal-thrust rehearsal on a live person",
+    "Routine herbal wound wash",
+    "Tetanus deadline without clinical assessment"
+  ]
+}

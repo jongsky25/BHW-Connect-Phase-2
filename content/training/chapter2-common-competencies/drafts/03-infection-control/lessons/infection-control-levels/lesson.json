@@ -1,0 +1,264 @@
+{
+  "manifest": {
+    "lesson_key": "infection-control-levels",
+    "position": 1,
+    "title_fil": "Pumili ng mga paraan ng pagkontrol",
+    "title_en": "Choose controls at several levels",
+    "objectives_fil": [
+      "Sa sitwasyon ng BHS, magmungkahi ng kontrol sa pinagmulan, kapaligiran, gawain at PPE na may tamang responsable."
+    ],
+    "objectives_en": [
+      "For a BHS scenario, propose source, environmental, work-practice and PPE controls with appropriate owners."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c2.ipc.source-controls",
+        "c2.ipc.environment-work",
+        "c2.ipc.ppe-risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May mask, pero kulang ang proseso.",
+      "takeaway_en": "Masks are available; the process is incomplete.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c2.ipc.source-controls",
+        "c2.ipc.environment-work",
+        "c2.ipc.ppe-risk"
+      ],
+      "asset_ids": [
+        "action-sequence"
+      ],
+      "takeaway_fil": "Punan ang apat na hanay: pinagmulan, kapaligiran, gawain at PPE. Isulat ang mungkahi at taong dapat magkumpirma.",
+      "takeaway_en": "Complete four rows: source, environment, work practices and PPE. Add a proposal and the person who must confirm it.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c2.ipc.ppe-risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kailangan ang magkakaugnay na kontrol.",
+      "takeaway_en": "Complementary controls are needed.",
+      "check": {
+        "prompt_fil": "May mask na sa kahon. Ano ang dapat isipin ng BHW?",
+        "prompt_en": "Masks are available. What should the BHW consider?",
+        "options": [
+          {
+            "fil": "Suriin din ang lugar at proseso.",
+            "en": "Check the setting and process too."
+          },
+          {
+            "fil": "Hindi na kailangang ipaalam ang sintomas sa clinical staff.",
+            "en": "Symptoms no longer need reporting to clinical staff."
+          },
+          {
+            "fil": "Wala nang panganib dahil may mask na magagamit.",
+            "en": "There is no remaining risk because masks are available."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Kailangan ang magkakaugnay na kontrol. 2: Kailangan pa rin ang napagkasunduang pag-uulat. 3: Hindi inaalis ng isang gamit ang lahat ng panganib.",
+        "feedback_en": "1: Complementary controls are needed. 2: The agreed reporting process still applies. 3: One item does not remove every risk."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c2.ipc.source-controls",
+        "c2.ipc.environment-work",
+        "c2.ipc.ppe-risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.",
+      "takeaway_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c2.ipc.environment-work",
+        "c2.ipc.ppe-risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Kumpirmahin ang saklaw at kailangan sa tamang tao.",
+      "takeaway_en": "Confirm boundaries and requirements with the appropriate person.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c2.ipc.source-controls",
+        "c2.ipc.environment-work"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May tamang pagsusuri at pag-aayos ng facility.",
+      "takeaway_en": "This enables appropriate facility review and action.",
+      "check": {
+        "prompt_fil": "May concern sa bentilasyon. Ano ang tamang susunod na hakbang?",
+        "prompt_en": "There is a ventilation concern. What is the appropriate next step?",
+        "options": [
+          {
+            "fil": "Ilipat agad ang lahat sa silid na hindi pa nasusuri.",
+            "en": "Immediately move everyone to a room that has not been assessed."
+          },
+          {
+            "fil": "Ipaalam at ipasuri sa responsable.",
+            "en": "Report it to the responsible person."
+          },
+          {
+            "fil": "Sabihing ligtas ang silid kahit walang anumang pagsusuri.",
+            "en": "Declare the room safe without any assessment."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Maaaring hindi angkop ang bagong lugar. 2: May tamang pagsusuri at pag-aayos ng facility. 3: Walang sapat na batayan ang katiyakan.",
+        "feedback_en": "1: The new location may be unsuitable. 2: This enables appropriate facility review and action. 3: The reassurance lacks a basis."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c2.ipc.source-controls",
+        "c2.ipc.environment-work",
+        "c2.ipc.ppe-risk"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Subukan ang gawain at balikan ang resulta.",
+      "takeaway_en": "Try the task and review the result.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c2.ipc.source-controls",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "cdc-core",
+        "cdc-hierarchy"
+      ]
+    },
+    {
+      "id": "c2.ipc.environment-work",
+      "read_ids": [
+        "scene",
+        "action",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "cdc-core",
+        "cdc-hierarchy"
+      ]
+    },
+    {
+      "id": "c2.ipc.ppe-risk",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide",
+        "presentation",
+        "cdc-core",
+        "cdc-hierarchy"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual",
+      "pdf_pages": [
+        33
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "DOH Facilitator Guide",
+      "pdf_pages": [
+        35,
+        36
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "Day 1 Part 2 Presentation: legacy teaching source, qualified by evidence review",
+      "pdf_pages": [
+        53
+      ]
+    },
+    {
+      "id": "cdc-core",
+      "title": "CDC: Core IPC practices in all healthcare settings (2024)",
+      "url": "https://www.cdc.gov/infection-control/hcp/core-practices/"
+    },
+    {
+      "id": "cdc-hierarchy",
+      "title": "CDC: Fundamental elements for preventing transmission (2025 page)",
+      "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/prevention.html"
+    }
+  ],
+  "assets": [
+    {
+      "id": "action-sequence",
+      "path": "/training/chapter2-draft/infection-control-levels-7b136adf347f.svg",
+      "content_hash": "7b136adf347f85d0362dd6c9c229f2a7580227fe49b945960ef80c23b5006440",
+      "alt_fil": "Tatlong kahon: Pinagmulan, Lugar at gawain, Proteksiyon.",
+      "alt_en": "Three boxes: Source, Place and practice, Protection.",
+      "caption_fil": "May kontrol sa apat na uri, malinaw na responsable at walang sariling pagbabago sa clinical o engineering na proseso.",
+      "caption_en": "Includes all four types, appropriate owners and no unauthorized clinical or engineering changes.",
+      "provenance": "Original bilingual vector diagram authored for Chapter 2; no source artwork reproduced.",
+      "review_status": "draft"
+    }
+  ]
+}

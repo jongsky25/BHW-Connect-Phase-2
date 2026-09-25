@@ -1,0 +1,155 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c2.ipc.observe-gap"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Walang sabon sa station.\nKumpleto ang training attendance.\nAttendance ay hindi patunay ng supply o practice.",
+    "display_en": "No soap at the station.\nTraining attendance is complete.\nAttendance does not prove supplies or practice.",
+    "check": null,
+    "narration_fil": "Sa practice inspection, walang sabon sa handwashing station. May kumpletong attendance sheet ng training. Sabi ng kasama, “Okay na tayo dahil lahat ay dumalo.” Nakita ni BHW Aya na magkaiba ang attendance, supply at aktuwal na gawain. Ano ang dapat niyang itala?",
+    "narration_en": "During a practice inspection, the handwashing station has no soap. The training attendance sheet is complete. A colleague says, “Everyone attended, so we are fine.” BHW Aya recognizes that attendance, supplies and actual practice differ. What should she record?"
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c2.ipc.observe-gap",
+      "c2.ipc.improvement-owner",
+      "c2.ipc.verify-result"
+    ],
+    "asset_ids": [
+      "action-sequence"
+    ],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Tiyak na nakita + lugar + oras.\nIulat at sundin ang pansamantalang kaayusan.\nGagawin + tao + follow-up.\nPanukat: may sabon at gumaganang station?",
+    "display_en": "Specific observation + place + time.\nReport and use the safe interim arrangement.\nAction + owner + follow-up.\nMeasure: soap and a working station?",
+    "check": null,
+    "narration_fil": "Itala ang tiyak na nakita, lugar at oras. Ipaalam ang kakulangan sa responsable at sundin ang pansamantalang ligtas na kaayusan. Magkasundo sa gagawin, tao at follow-up. Pumili ng panukat na makikita: may sabon ba at gumagana ba ang station? Huwag ipagpalagay na kumpleto ang practice dahil may attendance.",
+    "narration_en": "Record the specific observation, place and time. Report the gap and follow the agreed safe interim arrangement. Agree on an action, owner and follow-up. Choose an observable measure: is soap available and does the station work? Do not infer complete practice from attendance."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c2.ipc.observe-gap"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang tugon",
+    "heading_en": "Choose the first response",
+    "display_fil": "Ano ang unang tugon?\nPumili bago basahin ang paliwanag.",
+    "display_en": "What is the first response?\nChoose before reading the explanation.",
+    "check": {
+      "prompt_fil": "Alin ang wastong observation entry?",
+      "prompt_en": "Which observation entry is appropriate?",
+      "options": [
+        {
+          "fil": "Tamad ang lahat kaya tiyak na mali ang kanilang gawain.",
+          "en": "Everyone is lazy, so their practice is certainly wrong."
+        },
+        {
+          "fil": "Station A, alas-nuwebe: walang sabon.",
+          "en": "Station A, nine o’clock: no soap."
+        },
+        {
+          "fil": "Lahat ay mahusay dahil may pirma sa attendance sheet.",
+          "en": "Everyone is competent because the attendance sheet is signed."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Bansag ito at hindi tiyak na observation. 2: Malinaw ang nakita, lugar at oras. 3: Hindi sapat ang attendance para malaman ang aktuwal na practice.",
+      "feedback_en": "1: This is a label rather than a specific observation. 2: This identifies what was seen, where and when. 3: Attendance cannot establish actual practice."
+    },
+    "narration_fil": "Piliin muna ang sagot. Pagkatapos, basahin ang paliwanag sa bawat pagpipilian.",
+    "narration_en": "Choose an answer first. Then read the explanation for each option."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c2.ipc.observe-gap",
+      "c2.ipc.improvement-owner",
+      "c2.ipc.verify-result"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawang sagot",
+    "heading_en": "Worked example",
+    "display_fil": "Alas-nuwebe: walang sabon sa Station A.\nNurse: refill at pansamantalang station.\nPagbalik: sabon at gumaganang tubig.\nItala ang ebidensiya, pati kung hindi naayos.",
+    "display_en": "Nine o’clock: no soap at Station A.\nNurse: refill and interim station.\nFollow-up: soap and running water.\nRecord evidence, including unresolved gaps.",
+    "check": null,
+    "narration_fil": "Tala ni Aya: “Station A, alas-nuwebe: walang sabon.” Ipinaalam sa nurse, na nagtakda ng refill at pansamantalang station. Sa pagbalik, may sabon na at gumagana ang tubig. Isinulat ang petsa at ebidensiya. Kung hindi pa naayos, “hindi pa naayos” ang ilalagay at muling ipaaalam.",
+    "narration_en": "Aya records: “Station A, nine o’clock: no soap.” The nurse arranges a refill and an interim station. At follow-up, soap and running water are available. Aya records the date and evidence. If unresolved, she records that honestly and reports it again."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c2.ipc.observe-gap",
+      "c2.ipc.improvement-owner"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Saklaw at paghingi ng tulong",
+    "heading_en": "Scope and support",
+    "display_fil": "Sundin ang observation at privacy rules.\nClinical audit: awtorisadong staff.\nExposure o agarang panganib: iulat agad.\nQuiz ay hindi procedure observation.",
+    "display_en": "Follow observation and privacy rules.\nClinical audits: authorized staff.\nExposure or immediate hazard: report promptly.\nA quiz is not procedure observation.",
+    "check": null,
+    "narration_fil": "Sundin ang lokal na observation at privacy rules. Hindi awtomatikong awtorisado ang BHW na magsagawa ng clinical audit o mag-imbestiga ng outbreak. Iulat agad ang exposure o agarang panganib; huwag hintayin ang petsa ng routine follow-up. Ang quiz completion ay hindi kapalit ng naobserbahang procedure.",
+    "narration_en": "Follow local observation and privacy rules. BHWs are not automatically authorized to conduct clinical audits or investigate outbreaks. Report exposures or immediate hazards promptly rather than waiting for routine follow-up. Quiz completion does not replace observation of a procedure."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c2.ipc.verify-result"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa sitwasyon",
+    "heading_en": "Apply it to the situation",
+    "display_fil": "Ano ang susunod na hakbang?\nSubukan bago tingnan ang paliwanag.",
+    "display_en": "What is the next step?\nTry before viewing the explanation.",
+    "check": {
+      "prompt_fil": "Hindi pa na-refill ang sabon sa follow-up. Ano ang dapat itala?",
+      "prompt_en": "Soap has not been refilled at follow-up. What should be recorded?",
+      "options": [
+        {
+          "fil": "Tapos na ang gawain dahil may nangakong magre-refill.",
+          "en": "The task is complete because someone promised a refill."
+        },
+        {
+          "fil": "Walang problema dahil may naunang training ang lahat.",
+          "en": "There is no problem because everyone received training."
+        },
+        {
+          "fil": "Hindi pa naayos; muling ipaalam.",
+          "en": "Unresolved; report it again."
+        }
+      ],
+      "correct_option_index": 2,
+      "feedback_fil": "1: Pangako ay hindi ebidensiya ng resulta. 2: Hindi pinapalitan ng training ang kailangang supply. 3: Tapat ang tala at may susunod na aksyon.",
+      "feedback_en": "1: A promise is not evidence of completion. 2: Training does not replace the needed supply. 3: The record is accurate and prompts further action."
+    },
+    "narration_fil": "Balikan ang kuwento. Piliin ang angkop na susunod na hakbang.",
+    "narration_en": "Return to the story. Choose an appropriate next step."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c2.ipc.improvement-owner",
+      "c2.ipc.verify-result"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Sa Lunes, gawin ito",
+    "heading_en": "On Monday, try this",
+    "display_fil": "May resulta at ebidensiya.\nSa Lunes: subukan ang improvement card.\nMonitoring: suriin gamit ang iisang batayan.",
+    "display_en": "A result with evidence.\nOn Monday: use the improvement card.\nMonitoring: check against agreed criteria.",
+    "check": null,
+    "narration_fil": "Naayos ang supply gap at may ebidensiya ng follow-up. Sa Lunes, gamitin ang blangkong improvement card sa fictional na station kasama ang supervisor. Salita: monitoring — paulit-ulit na pagsusuri gamit ang napagkasunduang batayan. Ihiwalay ang alam, nakita at kailangan pang suriin.",
+    "narration_en": "The supply gap is addressed with follow-up evidence. On Monday, use a blank improvement card for a fictional station with the supervisor. Word: monitoring — repeated checks using agreed criteria. Distinguish what is known, observed and still unverified."
+  }
+]
