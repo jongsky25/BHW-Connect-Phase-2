@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
+  STABLE_BHW,
   createThrowawayBhw,
   getAccessToken,
   onboardThroughLogin,
@@ -63,4 +64,44 @@ test("settings persist across sessions and apply immediately on save", async ({ 
   await expect(secondPage.getByRole("heading", { name: new RegExp(fresh.fullName) })).toBeVisible();
 
   await secondDevice.close();
+});
+
+// Increment 2.3 DoD: a signed-out visitor's display prefs come from the
+// BHW_DISPLAY cookie and survive a reload. No UI writes this cookie yet
+// (increment 3.5 adds the header's quick-display popover) — set it
+// directly to prove the SSR read path lands ahead of that UI.
+test("a signed-out visitor's BHW_DISPLAY cookie applies on /login and survives reload", async ({ page }) => {
+  await page.goto("/login");
+  await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
+
+  await page.context().addCookies([
+    { name: "BHW_DISPLAY", value: JSON.stringify({ theme: "dark", font_scale: "lg" }), url: new URL(page.url()).origin },
+  ]);
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("html")).toHaveAttribute("data-font-scale", "lg");
+
+  // A second reload proves this is the cookie being re-read on every
+  // request, not a one-off from the navigation that just set it.
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("html")).toHaveAttribute("data-font-scale", "lg");
+});
+
+test("a signed-in profile's settings override a leftover BHW_DISPLAY cookie", async ({ page }) => {
+  await page.goto("/login");
+  await page.context().addCookies([
+    { name: "BHW_DISPLAY", value: JSON.stringify({ theme: "dark" }), url: new URL(page.url()).origin },
+  ]);
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  // STABLE_BHW's own profile has no theme override, so the profile (not
+  // the stale signed-out cookie) decides what renders once signed in.
+  await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
 });

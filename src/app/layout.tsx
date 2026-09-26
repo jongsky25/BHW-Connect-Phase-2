@@ -9,7 +9,8 @@ import { SiteHeader } from "@/components/site-header";
 import { PersonaBar } from "@/components/super-admin/persona-bar";
 import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
 import { parsePersonaSnapshot } from "@/lib/super-admin/types";
-import { parseA11ySettings } from "@/lib/settings/types";
+import { displayCookieName, parseDisplayCookie } from "@/lib/settings/display-cookie";
+import { displayAttributes, parseA11ySettings } from "@/lib/settings/types";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { getRequestFeatureFlags } from "@/lib/supabase/request";
 import "./globals.css";
@@ -62,9 +63,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      data-theme={a11y.theme === "system" ? undefined : a11y.theme}
-      data-font-scale={a11y.font_scale}
-      data-contrast={a11y.high_contrast ? "high" : undefined}
+      {...displayAttributes(a11y)}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-canvas text-ink">
@@ -94,22 +93,28 @@ export default async function RootLayout({
   );
 }
 
-// Unauthenticated pages (login, privacy, etc.) render through this layout
-// too, so a signed-out visitor falls through to the CSS-only defaults
-// (OS-level prefers-color-scheme, "md" font scale, no forced contrast).
-// The signed-in case is populated by middleware (src/lib/supabase/middleware.ts),
-// which forwards it as a request header rather than this layout re-fetching
-// the profile itself on every request.
+// A signed-in profile's a11y_settings is the source of truth: middleware
+// (src/lib/supabase/middleware.ts) already fetches it for auth gating and
+// forwards it as a request header, so this doesn't need its own Supabase
+// round trip. Unauthenticated pages (login, privacy, etc.) render through
+// this layout too but never get that header (middleware strips any
+// client-supplied x-app-* headers before a signed-out request reaches
+// here), so they fall back to the BHW_DISPLAY cookie a previous visit's
+// header quick-display popover wrote (increment 3.5) — same "profile wins,
+// cookie is the signed-out fallback" split as BHW_LOCALE/src/i18n/request.ts.
 async function getRequestA11ySettings() {
   const h = await headers();
   const raw = h.get("x-app-a11y");
-  if (!raw) return parseA11ySettings(null);
-
-  try {
-    return parseA11ySettings(JSON.parse(raw));
-  } catch {
-    return parseA11ySettings(null);
+  if (raw) {
+    try {
+      return parseA11ySettings(JSON.parse(raw));
+    } catch {
+      return parseA11ySettings(null);
+    }
   }
+
+  const cookieValue = (await cookies()).get(displayCookieName)?.value;
+  return parseDisplayCookie(cookieValue);
 }
 
 async function getRequestOfflinePwaEnabled() {
