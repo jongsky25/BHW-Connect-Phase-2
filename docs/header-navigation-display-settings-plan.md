@@ -319,7 +319,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 
 | Increment | Status | PR |
 |---|---|---|
-| 1.1 Nav config | ☐ | |
+| 1.1 Nav config | ☑ | #128 |
 | 1.2 Header shell | ☐ | |
 | 1.3 User menu + sign out | ☐ | |
 | 1.4 Mobile drawer | ☐ | |
