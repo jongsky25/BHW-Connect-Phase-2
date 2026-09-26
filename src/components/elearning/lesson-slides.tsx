@@ -164,8 +164,17 @@ export function LessonSlides({
     if (container && target) {
       // Instant, not scroll-into-view: on mount this is "restore where the
       // BHW was", not a navigation the CSS scroll-smooth transition (used
-      // for goToIndex below) should animate.
-      container.scrollLeft = target.offsetLeft;
+      // for goToIndex below) should animate. It has to say so explicitly:
+      // assigning scrollLeft on a `scroll-behavior: smooth` element
+      // animates too, and while it does the scroll-spy's first report sees
+      // slide 1 still in view and overwrites the restored index — so an
+      // arrow key pressed before the animation settles steps from slide 1,
+      // not from where the BHW actually was. (jsdom has no Element.scrollTo.)
+      if (typeof container.scrollTo === "function") {
+        container.scrollTo({ left: target.offsetLeft, behavior: "instant" });
+      } else {
+        container.scrollLeft = target.offsetLeft;
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
