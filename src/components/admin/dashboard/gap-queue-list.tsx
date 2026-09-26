@@ -30,7 +30,18 @@ export function aiErrorKey(status: number, reason: string | undefined): string {
   }
 }
 
-export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueRow[]; aiDraftEnabled?: boolean }) {
+export function GapQueueList({
+  rows,
+  aiDraftEnabled = false,
+  emptyMessage,
+}: {
+  rows: GapQueueRow[];
+  aiDraftEnabled?: boolean;
+  // Overrides the default "queue is empty" copy — used by the page when a
+  // search is active, so an empty result reads as "no matches" rather than
+  // "there is nothing to triage".
+  emptyMessage?: string;
+}) {
   const t = useTranslations("admin.dashboard.chatGuide");
   const router = useRouter();
   const [dismissingId, setDismissingId] = useState<string | null>(null);
@@ -107,7 +118,7 @@ export function GapQueueList({ rows, aiDraftEnabled = false }: { rows: GapQueueR
   }
 
   if (rows.length === 0) {
-    return <EmptyState message={t("gapQueueEmpty")} />;
+    return <EmptyState message={emptyMessage ?? t("gapQueueEmpty")} />;
   }
 
   return (

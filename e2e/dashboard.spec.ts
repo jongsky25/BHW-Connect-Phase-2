@@ -105,7 +105,7 @@ test("admin triages an unmatched question into a published entry from the dashbo
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
-  await page.goto("/admin/dashboard/chat-guide");
+  await page.goto(`/admin/dashboard/chat-guide?q=${encodeURIComponent(marker)}`);
   const gapRow = page.getByRole("row", { name: new RegExp(marker) });
   await expect(gapRow).toBeVisible();
 
@@ -131,7 +131,7 @@ test("admin triages an unmatched question into a published entry from the dashbo
   await expect(page).toHaveURL("/admin/kb/entries", { timeout: 10_000 });
   await expect(page.getByRole("row", { name: new RegExp(marker) }).getByText("Nailathala")).toBeVisible();
 
-  await page.goto("/admin/dashboard/chat-guide");
+  await page.goto(`/admin/dashboard/chat-guide?q=${encodeURIComponent(marker)}`);
   await expect(page.getByRole("row", { name: new RegExp(marker) })).toHaveCount(0);
 
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
