@@ -132,7 +132,16 @@ function PreviewCard() {
         <span className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary">
           {t("previewButton")}
         </span>
-        <a href="#" onClick={(event) => event.preventDefault()} className="text-sm font-medium text-secondary">
+        {/* Not text-secondary: #0c7c7e measures 4.48:1 on the light canvas
+            and 4.19:1 on the high-contrast black one, and isn't
+            theme-adjusted yet (increment 3.1's contrast guard / 3.3's accent
+            colourways). primary-text is the token tokens.css already tunes
+            to be text-safe on canvas in every theme. */}
+        <a
+          href="#"
+          onClick={(event) => event.preventDefault()}
+          className="text-sm font-medium text-primary-text underline underline-offset-2"
+        >
           {t("previewLink")}
         </a>
         <span className="rounded-full border border-ink/15 bg-ink/5 px-3 py-1 text-xs font-medium text-ink">
