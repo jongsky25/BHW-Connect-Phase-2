@@ -152,6 +152,15 @@
   },
   "admin": {
     "nav": {
+      "menuLabel": "Menu ng admin",
+      "groups": {
+        "overview": "Pangkalahatang-ideya",
+        "people": "Mga Tao",
+        "knowledge": "Knowledge base",
+        "training": "Pagsasanay",
+        "engagement": "Pakikipag-ugnayan",
+        "system": "Sistema"
+      },
       "dashboard": "Dashboard",
       "users": "Mga User",
       "audit": "Audit Log",
@@ -160,7 +169,7 @@
       "kbArticles": "Mga Artikulo",
       "kbSynonyms": "Mga Kasingkahulugan",
       "flags": "Mga Feature Flag",
-      "settings": "Mga Setting",
+      "myPreferences": "Aking mga kagustuhan",
       "announcements": "Mga Anunsyo",
       "surveys": "Mga Survey",
       "courses": "Mga Kurso",

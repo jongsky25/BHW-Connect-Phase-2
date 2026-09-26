@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { createClient } from "@/lib/supabase/server";
 
@@ -29,15 +30,17 @@ export default async function AdminKbArticlesPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex items-center justify-between gap-4">
-        <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
-        <Link
-          href="/admin/kb/articles/new"
-          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
-        >
-          {t("newAction")}
-        </Link>
-      </div>
+      <AdminPageHeader
+        title={t("heading")}
+        actions={
+          <Link
+            href="/admin/kb/articles/new"
+            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
+          >
+            {t("newAction")}
+          </Link>
+        }
+      />
 
       {rows.length === 0 ? (
         <EmptyState message={t("empty")} actionLabel={t("newAction")} actionHref="/admin/kb/articles/new" />
