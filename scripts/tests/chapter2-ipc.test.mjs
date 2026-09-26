@@ -87,7 +87,8 @@ test('IPC learner preview renders the handrub clip as a lesson-level "Panoorin" 
  const video=doc.querySelector('#intro video');assert.ok(video,'expected a <video> for the handrub clip in the lesson intro');
  assert.ok(video.getAttribute('poster').startsWith('data:image/jpeg;base64,'));
  assert.ok(doc.querySelector('#intro video source').getAttribute('src').startsWith('data:video/mp4;base64,'));
- assert.equal(video.hasAttribute('autoplay'),false);assert.ok(video.hasAttribute('muted'));assert.ok(video.hasAttribute('controls'));
+ assert.equal(video.hasAttribute('autoplay'),false);assert.equal(video.hasAttribute('muted'),false,'the narrated clip plays with sound');assert.ok(video.hasAttribute('controls'));
+ const track=doc.querySelector('#intro video track');assert.ok(track,'expected a captions track');assert.equal(track.getAttribute('kind'),'captions');assert.ok(track.getAttribute('src').startsWith('data:text/vtt;base64,'));
  assert.match(doc.querySelector('#intro details p').textContent,/Maglagay ng sapat na handrub/);
  assert.equal(doc.querySelector('#content video'),null,'the example section itself should carry no video');
  dom.window.close();
@@ -95,8 +96,9 @@ test('IPC learner preview renders the handrub clip as a lesson-level "Panoorin" 
 test('handrub clip: hashed, draft, lesson-level (not in any section/slide arc), and its text version names every on-screen step',async()=>{
  const {HANDRUB_STEPS}=await import('../../remotion/src/hand-hygiene/steps.ts');
  const l=chapterModule.lessons.find(l=>l.manifest.lesson_key==='hand-hygiene');
- const a=l.revision.assets.find(a=>a.video);
+ const a=l.revision.assets.find(a=>a.videos);
  assert.ok(a&&a.review_status==='draft'&&a.path.endsWith('.jpg'));
+ for(const lang of ['fil','en'])assert.ok(a.videos[lang].path.includes(`-${lang}-`)&&a.videos[lang].captions.path.endsWith('.vtt'),`${lang} narrated video with captions`);
  assert.equal(l.revision.featured_asset_id,a.id);
  for(const mode of ['read_sections','slides'])for(const s of l.revision[mode])assert.ok(!s.asset_ids.includes(a.id),`${mode} ${s.id} should not carry the featured clip`);
  for(const lang of ['fil','en']){

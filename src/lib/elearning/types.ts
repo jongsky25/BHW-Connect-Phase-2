@@ -42,8 +42,14 @@ export type LessonAsset = {
   // INC-28 tier 2: a muted Remotion clip; `path` is then its poster, the
   // clip's final all-steps frame (scripts/remotion-render.mjs).
   video?: LessonAssetVideo;
+  // A narrated clip, one render per narration language, each with its own
+  // captions; takes the place of `video` (docs/handrub-clip-enhancement-handoff.md §3).
+  videos?: { fil: LessonAssetVideo; en: LessonAssetVideo };
 };
-export type LessonAssetVideo = { path: string; content_hash: string; duration_s: number };
+export type LessonAssetVideo = {
+  path: string; content_hash: string; duration_s: number;
+  captions?: { path: string; content_hash: string };
+};
 export type LessonConceptCoverage = { id: string; read_ids: string[]; slide_ids: string[]; source_ids: string[] };
 export type CourseLessonRevision = {
   id: string; lesson_id: string; revision_key: string; content_hash: string;

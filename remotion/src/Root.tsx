@@ -13,26 +13,27 @@ import {
 // handoff.md §3): on-screen labels stay bilingual, only the audio track and
 // the narration-derived pacing differ between the two.
 //
-// HandrubStepsEn is added once English narration exists (public/hand-
-// hygiene/narration-en.{mp3,json}) — the render workflow renders every
-// registered composition on every push, and Remotion fails a render on any
-// browser console error, including the "failed to load resource" a missing
-// narration file produces even though calculateHandrubMetadata's own fetch
-// catches it in JS. Registering the composition before its data file exists
-// would break CI for every push until English is recorded.
+// Register a language only once its narration files (public/hand-hygiene/
+// narration-<lang>.{mp3,json}) are committed: the render workflow renders
+// every registered composition on every push, and Remotion fails a render
+// on the browser's "failed to load resource" error for a missing file even
+// though calculateHandrubMetadata catches the failed fetch in JS.
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <Composition
-        id="HandrubStepsFil"
-        component={HandrubSteps}
-        calculateMetadata={calculateHandrubMetadata}
-        durationInFrames={HANDRUB_FALLBACK_DURATION}
-        fps={HANDRUB_FPS}
-        width={854}
-        height={480}
-        defaultProps={{ language: "fil" }}
-      />
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={language}
+          id={language === "fil" ? "HandrubStepsFil" : "HandrubStepsEn"}
+          component={HandrubSteps}
+          calculateMetadata={calculateHandrubMetadata}
+          durationInFrames={HANDRUB_FALLBACK_DURATION}
+          fps={HANDRUB_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
     </>
   );
 };

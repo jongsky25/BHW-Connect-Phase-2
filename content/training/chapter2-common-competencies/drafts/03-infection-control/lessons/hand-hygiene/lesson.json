@@ -265,17 +265,32 @@
       "id": "handrub-steps",
       "path": "/training/chapter2-draft/handrub-steps-469d5db8110b-poster.jpg",
       "content_hash": "469d5db8110bd6b074147f76590589ea8ac3e8cecff7c479fc7aec77473ef930",
-      "video": {
-        "path": "/training/chapter2-draft/handrub-steps-2f831aea2a9b.mp4",
-        "content_hash": "2f831aea2a9b9ab66f9ae1af908a83cea71b863569b5232d66885ff86ea4801d",
-        "duration_s": 27
-      },
       "alt_fil": "Walong hakbang ng handrub: 1. Maglagay ng sapat na handrub sa nakakurbang palad. 2. Kuskusin ang palad sa palad. 3. Palad sa likod ng kabilang kamay, magkasalikop ang daliri; ulitin sa kabilang kamay. 4. Palad sa palad, magkasalikop ang daliri. 5. Likod ng mga daliri sa kabilang palad, magkakawit. 6. Ikutin ang hinlalaki sa loob ng kabilang palad; ulitin sa kabilang kamay. 7. Ikutin ang dulo ng mga daliri sa kabilang palad; ulitin sa kabilang kamay. 8. Kuskusin hanggang matuyo; huwag punasan.",
       "alt_en": "Eight handrub steps: 1. Apply a palmful of handrub in a cupped hand. 2. Rub palm to palm. 3. Palm over the back of the other hand, fingers interlaced; repeat on the other hand. 4. Palm to palm, fingers interlaced. 5. Backs of fingers to the opposite palm, fingers interlocked. 6. Rotate each thumb clasped in the other palm. 7. Rub the fingertips in circles on the other palm; repeat on the other hand. 8. Keep rubbing until dry; do not wipe.",
-      "caption_fil": "Handrub, 20–30 segundo: parehong mga bahagi ng magkabilang kamay, hanggang matuyo. Walang tunog ang video.",
-      "caption_en": "Handrub, 20–30 seconds: the same surfaces on both hands, until dry. The video has no sound.",
-      "provenance": "Original bilingual schematic animation rendered with Remotion from remotion/src/hand-hygiene (INC-28 tier 2); step order follows the cited WHO handrub procedure; no source artwork reproduced.",
-      "review_status": "draft"
+      "caption_fil": "Handrub, 20–30 segundo: parehong mga bahagi ng magkabilang kamay, hanggang matuyo. May pagsasalaysay at caption ang video; mas mahaba ito kaysa sa totoong handrub.",
+      "caption_en": "Handrub, 20–30 seconds: the same surfaces on both hands, until dry. The video is narrated and captioned; it runs longer than a real handrub.",
+      "provenance": "Original bilingual schematic animation rendered with Remotion from remotion/src/hand-hygiene (INC-28 tier 2); step order follows the cited WHO handrub procedure; no source artwork reproduced. Narration: owner-approved script (remotion/src/hand-hygiene/narration.ts) synthesized with Gemini TTS (voice Kore), one render per language, captions from the same timings.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/chapter2-draft/handrub-steps-fil-2d60563534b2.mp4",
+          "content_hash": "2d60563534b24dd1af7c7fce5c30fedd41280f3d3c06145d8ba484ef5bbc7cbe",
+          "duration_s": 64,
+          "captions": {
+            "path": "/training/chapter2-draft/handrub-steps-fil-2a64e3b498f7.vtt",
+            "content_hash": "2a64e3b498f7a7805b10aa241c8b7c05910a64788bf04a2df1d47fb85afdc34f"
+          }
+        },
+        "en": {
+          "path": "/training/chapter2-draft/handrub-steps-en-6b8656639d79.mp4",
+          "content_hash": "6b8656639d7969a1bfd766f75c0fe30fc3702026ea58de88a5de42ef35f1c675",
+          "duration_s": 55,
+          "captions": {
+            "path": "/training/chapter2-draft/handrub-steps-en-d123003278f3.vtt",
+            "content_hash": "d123003278f36f077bae6ebedd239ef6a461f6337131ca0e2529732f4633e568"
+          }
+        }
+      }
     }
   ],
   "featured_asset_id": "handrub-steps"

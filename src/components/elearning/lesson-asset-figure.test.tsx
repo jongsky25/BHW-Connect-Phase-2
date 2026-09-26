@@ -48,5 +48,38 @@ describe("LessonAssetFigure", () => {
     expect(video).toHaveAttribute("aria-describedby", text.id);
     expect(screen.getByText("Mga hakbang bilang teksto")).toBeInTheDocument();
     expect(container.querySelector("img")).toBeNull();
+    expect(container.querySelector("track")).toBeNull();
+  });
+
+  const narrated: LessonAsset = {
+    ...clip,
+    video: undefined,
+    videos: {
+      fil: {
+        path: "/training/clip-fil-cccccccccccc.mp4", content_hash: "c".repeat(64), duration_s: 64,
+        captions: { path: "/training/clip-fil-dddddddddddd.vtt", content_hash: "d".repeat(64) },
+      },
+      en: {
+        path: "/training/clip-en-eeeeeeeeeeee.mp4", content_hash: "e".repeat(64), duration_s: 55,
+        captions: { path: "/training/clip-en-ffffffffffff.vtt", content_hash: "f".repeat(64) },
+      },
+    },
+  };
+
+  it.each([
+    [false, "fil", "Filipino"],
+    [true, "en", "English"],
+  ] as const)("plays a narrated clip in the learner's language with sound and captions (en=%s)", (en, lang, label) => {
+    const { container } = render(<LessonAssetFigure asset={narrated} en={en} />);
+    const video = container.querySelector("video")!;
+    expect(video.muted).toBe(false);
+    expect(video).toHaveAttribute("preload", "none");
+    expect(video).not.toHaveAttribute("autoplay");
+    expect(container.querySelector("source")).toHaveAttribute("src", narrated.videos![lang].path);
+    const track = container.querySelector("track")!;
+    expect(track).toHaveAttribute("kind", "captions");
+    expect(track).toHaveAttribute("src", narrated.videos![lang].captions!.path);
+    expect(track).toHaveAttribute("srclang", lang);
+    expect(track).toHaveAttribute("label", label);
   });
 });
