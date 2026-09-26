@@ -75,7 +75,7 @@ The learner-facing structure is **Program → Chapter → Subchapter → Lesson*
 | Audio in Slides mode | yes | **no** (Read mode only) |
 | Visuals | `course_module_visuals`, inline sanitized SVG | `revision.assets` → `<img>` / `<video>` (`src/components/elearning/lesson-asset-figure.tsx:19`, `:25`) |
 | Visuals synced to narration | yes: `data-scene-step` build-up (`lesson-module.tsx:252-300`) | **none**; only the sentence being read is highlighted |
-| Remotion clip | no | yes: handrub steps, Chapter 2.3, draft asset, not promoted |
+| Remotion clip | no | yes: handrub steps, Chapter 2.3, promoted to production 26 Sep 2026 |
 | e2e test for narration | `e2e/lesson-narration.spec.ts` | **none**; unit tests only (`reference-read-section.test.tsx`, `scripts/tests/reference-narration.test.mjs`) |
 
 Legacy code is still used in two places:

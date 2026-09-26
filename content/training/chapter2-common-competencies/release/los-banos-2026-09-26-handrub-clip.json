@@ -1,0 +1,28 @@
+{
+  "target": "Los Baños production",
+  "project_id": "ltzicxyefizxoqhfuuzc",
+  "published_on": "2026-09-26",
+  "status": "published",
+  "supersedes": "los-banos-2026-09-25.json",
+  "scope": "Adds one asset (handrub-steps, Remotion clip) to one already-published lesson. No other lesson, module, or program identity changed.",
+  "module_id": "609cab9b-d846-47b1-8e93-fdc6d4a362de",
+  "lesson": {
+    "module_key": "03-infection-control",
+    "lesson_key": "hand-hygiene",
+    "id": "b9f69e51-34bc-46ce-b2d3-821056a44f7b",
+    "previous_revision": "63fca30b-e187-4221-8225-82a67a8b2f49",
+    "new_revision": "a0e10ae4-40c3-4f80-b6e2-a9d19ef3e7e7"
+  },
+  "asset_added": {
+    "id": "handrub-steps",
+    "content_hash": "469d5db8110bd6b074147f76590589ea8ac3e8cecff7c479fc7aec77473ef930",
+    "video_content_hash": "2f831aea2a9b9ab66f9ae1af908a83cea71b863569b5232d66885ff86ea4801d",
+    "review_status_in_release_snapshot": "approved"
+  },
+  "published_via": "scripts/chapter2-promote-handrub-clip.mjs --project ltzicxyefizxoqhfuuzc --apply",
+  "approvals": {
+    "asset_visual": "User attested visual approval of the rendered clip and its on-screen bilingual labels, 25 Sep 2026 (see drafts/03-infection-control/review.json asset_visual_approvals).",
+    "blocking_reviews": "User attested that all five of 03-infection-control's blocking_reviews (qualified IPC/clinical review, local IPC policy confirmation, independent Filipino/English review, a BHW usability pilot, and browser QA) are complete, 26 Sep 2026, in direct response to being shown that list. Reviewer names and review artifacts were not supplied — same limit already recorded for the 25 Sep 2026 release."
+  },
+  "method": "Same convention as los-banos-2026-09-25.json: a new revision built from the frozen draft package, with the newly-approved asset's review_status set to approved in this release snapshot only. The authoring draft (drafts/03-infection-control/lessons/hand-hygiene/lesson.json) is unchanged and keeps review_status: \"draft\" for this asset, per chapter2-validate.mjs."
+}
