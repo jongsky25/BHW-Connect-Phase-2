@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { MyTrainingCard } from "@/components/progress/my-training-card";
 import { SignOutButton } from "@/components/sign-out-button";
+import { getNavItems } from "@/lib/nav/nav-items";
 import { loadManualProgress } from "@/lib/progress/load-manual-progress";
 import type { ManualProgress } from "@/lib/progress/manual-progress";
 import { parseOnboardingProgress } from "@/lib/settings/types";
@@ -29,6 +30,7 @@ export default async function HomePage() {
   const t = await getTranslations("authHome");
   const flags = await getRequestFeatureFlags();
   const locale = (await getLocale()) === "en" ? "en" : "fil";
+  const navItems = getNavItems({ role: appUser.role, flags });
 
   // "My training" is a convenience: if progress cannot load, the rest of
   // home still renders and the manual itself remains reachable via Courses.
@@ -59,96 +61,19 @@ export default async function HomePage() {
       ))}
 
       <div className="flex flex-wrap gap-3">
-        <Link
-          href="/chat"
-          className="rounded-md bg-primary px-6 py-3 font-medium text-on-primary"
-        >
-          {t("chatGuideCta")}
-        </Link>
-        <Link
-          href="/kb"
-          className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-        >
-          {t("kbBrowseCta")}
-        </Link>
-        {flags.announcements ? (
+        {navItems.map((item) => (
           <Link
-            href="/announcements"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+            key={item.id}
+            href={item.href}
+            className={
+              item.variant === "primary"
+                ? "rounded-md bg-primary px-6 py-3 font-medium text-on-primary"
+                : "rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
+            }
           >
-            {t("announcementsCta")}
+            {t(item.labelKey)}
           </Link>
-        ) : null}
-        {flags.surveys ? (
-          <Link
-            href="/surveys"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("surveysCta")}
-          </Link>
-        ) : null}
-        {flags.elearning ? (
-          <Link
-            href="/courses"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("coursesCta")}
-          </Link>
-        ) : null}
-        {flags.elearning && appUser.role === "assessor" ? (
-          <Link
-            href="/assessments"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("assessmentsCta")}
-          </Link>
-        ) : null}
-        {flags.elearning && flags.course_sessions && appUser.role === "assessor" ? (
-          <Link
-            href="/training-sessions"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("trainingSessionsCta")}
-          </Link>
-        ) : null}
-        {flags.forum ? (
-          <Link
-            href="/forum"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("forumCta")}
-          </Link>
-        ) : null}
-        {flags.flipcharts ? (
-          <Link
-            href="/flipcharts"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("flipchartsCta")}
-          </Link>
-        ) : null}
-        {flags.flipcharts && appUser.role === "designer" ? (
-          <Link
-            href="/designer/flipcharts"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("designerFlipchartsCta")}
-          </Link>
-        ) : null}
-        <Link
-          href="/settings"
-          className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-        >
-          {t("settingsCta")}
-        </Link>
-        {appUser.role === "admin" ? (
-          <Link
-            href="/admin/users"
-            className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
-          >
-            {t("adminConsoleCta")}
-          </Link>
-        ) : null}
+        ))}
         <SignOutButton />
       </div>
     </div>

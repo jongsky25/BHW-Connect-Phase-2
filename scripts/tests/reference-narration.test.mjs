@@ -138,4 +138,6 @@ test("committed narration is current for every converted subchapter", () => {
       assert.ok(lastEnd <= fileMs && fileMs - lastEnd < 150, `${item.src} last sentence ends at ${lastEnd} of ${fileMs} ms`);
     } else assert.equal(lastEnd, fileMs);
   }
-});
+  // Reads and hashes every committed MP3 (~1,060 files): past vitest's 5 s
+  // default on a cold disk cache.
+}, 60_000);

@@ -5,13 +5,21 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { localeCookieName, type Locale } from "@/i18n/locales";
 import { mapSettingsRpcError } from "@/lib/settings/error-messages";
-import { fontScales, themes, type A11ySettings, type FontScale, type Theme } from "@/lib/settings/types";
+import { themes, type A11ySettings, type FontScale, type Theme } from "@/lib/settings/types";
 import { createClient } from "@/lib/supabase/client";
 
 type Props = {
   initialLanguage: Locale;
   initialA11y: A11ySettings;
 };
+
+// The current rpc_update_settings only accepts these three font scales, so
+// this form renders its own fixed list rather than mapping over the full
+// `fontScales` allow-list in settings/types.ts — that list has grown to
+// include "sm" for a later increment (2.2 widens the RPC; 2.4 restructures
+// this page to use the full option set) and must not add a button here that
+// the RPC would reject.
+const FORM_FONT_SCALES = ["md", "lg", "xl"] as const satisfies readonly FontScale[];
 
 function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
@@ -112,7 +120,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       <fieldset className="flex flex-col gap-2">
         <legend className="text-sm font-medium text-ink">{t("fontScaleLabel")}</legend>
         <div className="inline-flex w-fit overflow-hidden rounded-full border border-ink/15">
-          {fontScales.map((option) => (
+          {FORM_FONT_SCALES.map((option) => (
             <button
               key={option}
               type="button"
