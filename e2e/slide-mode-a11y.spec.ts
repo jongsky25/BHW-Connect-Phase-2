@@ -173,7 +173,14 @@ test("Basahin and Islide have no axe-core violations at the largest font scale, 
     });
 
     await page.goto(`/courses/${courseId}`);
-    await expect(page.locator("html")).toHaveAttribute("data-font-scale", combo.p_font_scale);
+    // displayAttributes (increment 2.3) omits data-font-scale entirely at
+    // the default "md" — same behavior as the pre-existing data-theme
+    // omission at "system" — rather than setting it explicitly.
+    if (combo.p_font_scale === "md") {
+      await expect(page.locator("html")).not.toHaveAttribute("data-font-scale");
+    } else {
+      await expect(page.locator("html")).toHaveAttribute("data-font-scale", combo.p_font_scale);
+    }
 
     const readScan = await new AxeBuilder({ page }).include("main").analyze();
     expect(readScan.violations, `Basahin axe violations at ${combo.label}`).toEqual([]);

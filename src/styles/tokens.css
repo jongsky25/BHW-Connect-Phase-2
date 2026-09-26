@@ -9,6 +9,13 @@
  */
 
 :root {
+  /* Tells native controls (checkboxes, scrollbars, form fields) and the
+     browser UI which palette to render in, independently of our own
+     canvas/ink tokens above — "light dark" here means "follow the OS",
+     matching the unset-theme default. The two [data-theme=...] overrides
+     below pin it once a user picks an explicit theme (increment 2.3). */
+  color-scheme: light dark;
+
   /* Brand */
   --color-primary: #b84e12; /* Marigold, button-safe — FILL use only (bg-primary). Never use for text/border. */
   --color-primary-display: #e8641c; /* Marigold, display-only (large text/decorative, not on small UI text) */
@@ -61,6 +68,7 @@
    token plumbing ships now so the future toggle only needs to set this
    attribute). Takes precedence over the OS-level media query above. */
 :root[data-theme="light"] {
+  color-scheme: light;
   --color-canvas: #f6f2ed;
   --color-ink: #2b2420;
   --color-primary-text: var(--color-primary);
@@ -71,6 +79,7 @@
 }
 
 :root[data-theme="dark"] {
+  color-scheme: dark;
   --color-canvas: #221b16;
   --color-ink: #f5ede4;
   --color-primary-text: var(--color-primary-display);
