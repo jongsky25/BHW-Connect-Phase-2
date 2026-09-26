@@ -20,23 +20,29 @@ test("settings persist across sessions and apply immediately on save", async ({ 
   await page.goto("/settings");
   await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
 
-  // The form itself still renders in the pre-save locale (Filipino, the
-  // default) right up until submit triggers a refresh with the new
-  // profile language — so every button clicked here except the language
-  // picker itself (whose "English"/"Filipino" labels are identical in
-  // both catalogs) must be targeted by its Filipino label. The site
-  // header's own LanguageToggle also renders an "English" button on every
-  // page, so scope to <main> to hit the settings form's copy instead.
+  // The page still renders in the pre-save locale (Filipino, the default)
+  // right up until the Language section's own Save triggers a refresh with
+  // the new profile language — so the language radio (and its Save button)
+  // are targeted by their Filipino label, and everything after the refresh
+  // by its English label. The site header's own LanguageToggle also renders
+  // an "English" control on every page, so scope to <main> throughout.
   const main = page.getByRole("main");
-  await main.getByRole("button", { name: "English" }).click();
-  await main.getByRole("button", { name: "Madilim" }).click();
-  await main.getByRole("button", { name: "Sobrang Laki" }).click();
-  await main.getByLabel("Mataas na Contrast").check();
+  await main.getByRole("radio", { name: "English" }).click();
   await main.getByRole("button", { name: "I-save ang mga setting" }).click();
-
   await expect(
     page.getByText(/Na-save na ang iyong mga setting\.|Your settings have been saved\./),
   ).toBeVisible({ timeout: 10_000 });
+
+  // Display settings (increment 2.4) apply instantly and save on their own
+  // debounce — there's no submit button for them. Each click is reflected
+  // on <html> immediately; the three clicks below land inside one debounce
+  // window and are expected to reach the server as a single save.
+  await main.getByRole("radio", { name: "Dark" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await main.getByRole("radio", { name: "Extra large" }).click();
+  await main.getByRole("radio", { name: "High" }).click();
+
+  await expect(main.getByText("Your settings have been saved.")).toBeVisible({ timeout: 10_000 });
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await expect(page.locator("html")).toHaveAttribute("data-font-scale", "xl");
   await expect(page.locator("html")).toHaveAttribute("data-contrast", "high");
