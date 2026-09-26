@@ -2,11 +2,11 @@ export const themes = ["light", "dark", "system"] as const;
 export type Theme = (typeof themes)[number];
 
 // "sm" is a Phase 4 addition (docs/header-navigation-display-settings-plan.md
-// §5, increment 2.1). The live settings form (settings-form.tsx) renders its
-// own literal list of options rather than mapping over this array, so
-// widening it here does not add a button the current settings RPC (which
-// only accepts md/lg/xl) would reject. A later increment (2.2 + 2.4) wires
-// "sm" through the RPC and the restructured settings page.
+// §5, increment 2.1). Increment 2.2 widened both settings RPCs to accept it,
+// but the live settings form (settings-form.tsx) still renders its own
+// literal list of options rather than mapping over this array, so widening
+// it here does not yet add a button — that's increment 2.4's restructured
+// settings page.
 export const fontScales = ["sm", "md", "lg", "xl"] as const;
 export type FontScale = (typeof fontScales)[number];
 

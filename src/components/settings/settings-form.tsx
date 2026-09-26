@@ -13,12 +13,12 @@ type Props = {
   initialA11y: A11ySettings;
 };
 
-// The current rpc_update_settings only accepts these three font scales, so
-// this form renders its own fixed list rather than mapping over the full
-// `fontScales` allow-list in settings/types.ts — that list has grown to
-// include "sm" for a later increment (2.2 widens the RPC; 2.4 restructures
-// this page to use the full option set) and must not add a button here that
-// the RPC would reject.
+// rpc_update_settings accepts "sm" as of increment 2.2, but this form still
+// renders its own fixed three-option list rather than mapping over the full
+// `fontScales` allow-list in settings/types.ts — increment 2.4 restructures
+// this page to use the full option set. Keeping the literal list here (not
+// the RPC) is what stops a fourth button from appearing before that redesign
+// lands.
 const FORM_FONT_SCALES = ["md", "lg", "xl"] as const satisfies readonly FontScale[];
 
 function writeLocaleCookie(next: Locale) {
