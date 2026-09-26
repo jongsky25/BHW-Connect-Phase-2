@@ -1,4 +1,5 @@
 export const DASHBOARD_BHW_PAGE_SIZE = 25;
+export const GAP_QUEUE_PAGE_SIZE = 25;
 
 export function parsePageParam(value: string | undefined): number {
   const parsed = Number.parseInt(value ?? "", 10);
