@@ -1,27 +1,83 @@
 import {
   AbsoluteFill,
+  Audio,
   Easing,
   Series,
   interpolate,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
+  type CalculateMetadataFunction,
 } from "remotion";
 import { Hand } from "./Hand";
 import { HANDRUB_STEPS, type HandrubMotion } from "./steps";
 
-// INC-28 tier 2's first real clip (docs/training-modules-plan.md): the
-// handrub sequence for Chapter 2.3's hand-hygiene lesson. Muted and
-// bilingual on screen; the last frame is a static summary of every step,
-// which the render script uses as the poster so the lesson's
-// no-autoplay/reduced-motion state still carries the whole procedure.
+// INC-28 tier 2's first real clip (docs/training-modules-plan.md), narrated
+// per docs/handrub-clip-enhancement-handoff.md §3: the handrub sequence for
+// Chapter 2.3's hand-hygiene lesson. On-screen labels stay bilingual (owner
+// decision, 26 Sep 2026); `language` only selects which narration track
+// plays. The last frame is a static summary of every step, which the render
+// script uses as the poster so the lesson's no-autoplay/reduced-motion
+// state still carries the whole procedure.
 
 export const HANDRUB_FPS = 30;
-const INTRO = 45;
-const STEP = 84;
-const LAST_STEP = 72;
-const SUMMARY = 105;
-export const HANDRUB_DURATION =
-  INTRO + STEP * (HANDRUB_STEPS.length - 1) + LAST_STEP + SUMMARY;
+// A rough fallback before calculateMetadata resolves the real, narration-
+// derived duration (Composition requires a durationInFrames alongside
+// explicit width/height even when calculateMetadata is given).
+export const HANDRUB_FALLBACK_DURATION = HANDRUB_FPS * 60;
+// After the closing line, hold the summary a moment before cutting to black.
+const TAIL_PAD_SECONDS = 0.8;
+
+export type HandrubStepsProps = {
+  language: "fil" | "en";
+  // Populated by calculateHandrubMetadata from public/hand-hygiene/
+  // narration-<language>.json; each entry is [intro, 8 steps, closing].
+  beatFrames?: number[];
+  audioSrc?: string;
+};
+
+type NarrationTimings = {
+  language: string;
+  durationSeconds: number;
+  beats: { zone: string; index: number; start_ms: number; end_ms: number }[];
+};
+
+export const calculateHandrubMetadata: CalculateMetadataFunction<
+  HandrubStepsProps
+> = async ({ props }) => {
+  const url = staticFile(`hand-hygiene/narration-${props.language}.json`);
+  // Fall back to an even split (and no audio) when this language's
+  // narration hasn't been synthesized yet — e.g. the Filipino sample is
+  // rendered and approved before English is recorded at all (handoff §4) —
+  // so listing/bundling compositions never crashes on the missing one.
+  const response = await fetch(url).catch(() => null);
+  if (!response || !response.ok) {
+    return { durationInFrames: HANDRUB_FALLBACK_DURATION, props };
+  }
+  const timings: NarrationTimings = await response.json();
+  // Cut scenes at each beat's own start (frame-exact, telescoping — no
+  // rounding drift accumulates), so the visual stays locked to the audio
+  // instead of adding a separate pad that would slip out of sync with the
+  // single continuous narration track. The built-in ~300ms gap between
+  // beats (scripts/lib/tts-providers/gemini.mjs) already reads as the
+  // "short pad" the handoff doc calls for.
+  const boundariesMs = [
+    ...timings.beats.map((b) => b.start_ms),
+    timings.durationSeconds * 1000 + TAIL_PAD_SECONDS * 1000,
+  ];
+  const frameAt = (ms: number) => Math.round((ms / 1000) * HANDRUB_FPS);
+  const beatFrames = boundariesMs
+    .slice(1)
+    .map((ms, i) => frameAt(ms) - frameAt(boundariesMs[i]));
+  return {
+    durationInFrames: beatFrames.reduce((a, b) => a + b, 0),
+    props: {
+      ...props,
+      beatFrames,
+      audioSrc: staticFile(`hand-hygiene/narration-${props.language}.mp3`),
+    },
+  };
+};
 
 const INK = "#10261f";
 const MUTED = "#3d5a52";
@@ -438,23 +494,39 @@ const Summary: React.FC = () => {
   );
 };
 
-export const HandrubSteps: React.FC = () => {
+export const HandrubSteps: React.FC<HandrubStepsProps> = ({
+  beatFrames,
+  audioSrc,
+}) => {
+  // calculateHandrubMetadata always supplies these before the component is
+  // rendered for real (Studio and render both resolve metadata first); the
+  // fallback here only avoids a crash on an unresolved/default-props pass.
+  const frames = beatFrames ?? [
+    HANDRUB_FALLBACK_DURATION / (HANDRUB_STEPS.length + 2),
+    ...Array(HANDRUB_STEPS.length).fill(
+      HANDRUB_FALLBACK_DURATION / (HANDRUB_STEPS.length + 2),
+    ),
+    HANDRUB_FALLBACK_DURATION / (HANDRUB_STEPS.length + 2),
+  ];
+  const [introFrames, ...rest] = frames;
+  const stepFrames = rest.slice(0, HANDRUB_STEPS.length);
+  const summaryFrames = rest[HANDRUB_STEPS.length];
   return (
-    <Series>
-      <Series.Sequence durationInFrames={INTRO}>
-        <Intro />
-      </Series.Sequence>
-      {HANDRUB_STEPS.map((s, i) => {
-        const duration = i === HANDRUB_STEPS.length - 1 ? LAST_STEP : STEP;
-        return (
-          <Series.Sequence key={s.motion} durationInFrames={duration}>
-            <StepScene index={i} duration={duration} />
+    <>
+      {audioSrc ? <Audio src={audioSrc} /> : null}
+      <Series>
+        <Series.Sequence durationInFrames={introFrames}>
+          <Intro />
+        </Series.Sequence>
+        {HANDRUB_STEPS.map((s, i) => (
+          <Series.Sequence key={s.motion} durationInFrames={stepFrames[i]}>
+            <StepScene index={i} duration={stepFrames[i]} />
           </Series.Sequence>
-        );
-      })}
-      <Series.Sequence durationInFrames={SUMMARY}>
-        <Summary />
-      </Series.Sequence>
-    </Series>
+        ))}
+        <Series.Sequence durationInFrames={summaryFrames}>
+          <Summary />
+        </Series.Sequence>
+      </Series>
+    </>
   );
 };

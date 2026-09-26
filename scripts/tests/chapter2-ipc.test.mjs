@@ -80,23 +80,25 @@ test('IPC private kit contains every canonical rubric and selects one print lang
  const lang=doc.getElementById('language');lang.value='en';lang.dispatchEvent(new dom.window.Event('change'));assert.ok(doc.querySelector('[data-language="fil"]').classList.contains('hidden'));dom.window.close();
 });
 
-test('IPC learner preview renders the handrub clip as video, not an SVG-mistyped image',()=>{
+test('IPC learner preview renders the handrub clip as a lesson-level "Panoorin" video, not an SVG-mistyped image or a step inside the example section',()=>{
  const {dom,doc}=preview();
  const choice=doc.getElementById('lesson');choice.value='2';choice.dispatchEvent(new dom.window.Event('change'));// hand-hygiene
- for(let i=0;i<3;i++)doc.getElementById('next').click();// scene, action, check-start -> example
- const video=doc.querySelector('#content video');assert.ok(video,'expected a <video> for the handrub clip');
+ // Lesson-level, not tied to any section/slide position: visible immediately, no navigation needed.
+ const video=doc.querySelector('#intro video');assert.ok(video,'expected a <video> for the handrub clip in the lesson intro');
  assert.ok(video.getAttribute('poster').startsWith('data:image/jpeg;base64,'));
- assert.ok(doc.querySelector('#content video source').getAttribute('src').startsWith('data:video/mp4;base64,'));
+ assert.ok(doc.querySelector('#intro video source').getAttribute('src').startsWith('data:video/mp4;base64,'));
  assert.equal(video.hasAttribute('autoplay'),false);assert.ok(video.hasAttribute('muted'));assert.ok(video.hasAttribute('controls'));
- assert.match(doc.querySelector('#content details p').textContent,/Maglagay ng sapat na handrub/);
+ assert.match(doc.querySelector('#intro details p').textContent,/Maglagay ng sapat na handrub/);
+ assert.equal(doc.querySelector('#content video'),null,'the example section itself should carry no video');
  dom.window.close();
 });
-test('handrub clip: hashed, draft, and its text version names every on-screen step',async()=>{
+test('handrub clip: hashed, draft, lesson-level (not in any section/slide arc), and its text version names every on-screen step',async()=>{
  const {HANDRUB_STEPS}=await import('../../remotion/src/hand-hygiene/steps.ts');
  const l=chapterModule.lessons.find(l=>l.manifest.lesson_key==='hand-hygiene');
  const a=l.revision.assets.find(a=>a.video);
  assert.ok(a&&a.review_status==='draft'&&a.path.endsWith('.jpg'));
- for(const mode of ['read_sections','slides'])assert.ok(l.revision[mode].find(s=>s.id.replace('slide-','')==='example').asset_ids.includes(a.id));
+ assert.equal(l.revision.featured_asset_id,a.id);
+ for(const mode of ['read_sections','slides'])for(const s of l.revision[mode])assert.ok(!s.asset_ids.includes(a.id),`${mode} ${s.id} should not carry the featured clip`);
  for(const lang of ['fil','en']){
   const alt=a['alt_'+lang].replace(/;/g,' —');
   assert.equal((alt.match(/\b\d\. /g)??[]).length,HANDRUB_STEPS.length);

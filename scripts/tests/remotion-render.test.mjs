@@ -8,12 +8,14 @@ test("positional composition and output name, optional --public", () => {
     compositionId: "HandrubSteps",
     outputName: "HandrubSteps",
     publicDir: undefined,
+    withAudio: false,
   });
   assert.deepEqual(
     parseArgs(["HandrubSteps", "handrub-steps", "--public", "training/chapter2-draft"]),
-    { compositionId: "HandrubSteps", outputName: "handrub-steps", publicDir: "training/chapter2-draft" },
+    { compositionId: "HandrubSteps", outputName: "handrub-steps", publicDir: "training/chapter2-draft", withAudio: false },
   );
   assert.equal(parseArgs(["X", "--public=training/x"]).publicDir, "training/x");
+  assert.equal(parseArgs(["X", "--with-audio"]).withAudio, true);
 });
 
 test("rejects a missing composition and a --public outside public/", () => {

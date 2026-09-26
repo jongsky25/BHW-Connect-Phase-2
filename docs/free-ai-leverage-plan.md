@@ -51,12 +51,14 @@ A small server-side module every external AI call must pass through. No direct p
 - **Privacy notice** (delivery plan §5.4) gains a clause stating plainly: personal information and BHW-typed text are never shared with external AI services; external AI processes only admin-authored or admin-reviewed content.
 - **Response cache**: keyed on normalized input per feature — repeated questions and re-translations cost zero quota. With a few dozen pilot BHWs asking overlapping questions, cache hit-rate compounds the free allowance substantially.
 
-**Owner-approved exception: offline narration rendering (25 September 2026).** The Gemini text-to-speech provider (`scripts/lib/tts-providers/gemini.mjs`) calls the Gemini API directly. It does not go through the adapter, writes no `ai.external_call` audit event, and does not count against `ai_usage`. The owner approved this on 25 Sep 2026, under these conditions:
+**Owner-approved exception: offline narration rendering (25 September 2026; extended 26 September 2026).** The Gemini text-to-speech provider (`scripts/lib/tts-providers/gemini.mjs`) calls the Gemini API directly. It does not go through the adapter, writes no `ai.external_call` audit event, and does not count against `ai_usage`. The owner approved this on 25 Sep 2026, under these conditions:
 
 - It runs only from authoring scripts (`training:narrate`, and legacy `training:tts`) on a developer machine or session. It is never part of `src/` or any request path.
 - It sends only published, `admin_authored` lesson text. That means no learner data, no names beyond the fictional characters in the lessons, and nothing `user_generated` or `personal`.
 - The lint exception stays scoped to that one provider file.
 - Bulk runs stay under the 1,200/day Gemini ceiling above. Re-runs resume, so a render may take several days.
+
+**Extension (26 September 2026):** the owner extended this exception to also cover `scripts/remotion-narrate.mjs`, synthesizing the new narration script authored for the Chapter 2.3 handrub Remotion clip (`remotion/src/hand-hygiene/narration.ts`; see `docs/handrub-clip-enhancement-handoff.md` §3). Same conditions apply: authoring-script-only, `admin_authored` clip narration text, no learner data, well under the 1,200/day ceiling (about 20 requests per language for this clip).
 
 Anything else that wants to call Gemini still goes through the adapter.
 
