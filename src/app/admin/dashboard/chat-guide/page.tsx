@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { DeflectionTrendTable } from "@/components/admin/dashboard/deflection-trend-table";
 import { GapQueueList } from "@/components/admin/dashboard/gap-queue-list";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
@@ -43,6 +44,8 @@ export default async function AdminDashboardChatGuidePage({
 
   return (
     <div className="flex flex-col gap-8">
+      <AdminPageHeader title={t("heading")} />
+
       <div className="flex flex-col gap-3">
         <h2 className="text-lg font-semibold tracking-tight text-ink">{t("gapQueueHeading")}</h2>
         <GapQueueList rows={gapRows ?? []} aiDraftEnabled={flags.ai_external && flags.ai_gap_draft} />
