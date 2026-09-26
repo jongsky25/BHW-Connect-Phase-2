@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useId, useRef, useState } from "react";
+import { useId } from "react";
 import type { NavItem } from "@/lib/nav/nav-items";
 import { isNavItemActive } from "./nav-link";
+import { useDisclosure } from "./use-disclosure";
 
 type Props = {
   items: NavItem[];
@@ -17,42 +18,16 @@ type Props = {
 // guidance for site menus — not role="menu"/role="menuitem", which expects
 // arrow-key navigation this component doesn't implement.
 export function MoreMenu({ items, labels, triggerLabel }: Props) {
-  const [open, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const { open, setOpen, containerRef, triggerRef } = useDisclosure<HTMLDivElement, HTMLButtonElement>();
   const pathname = usePathname();
   const panelId = useId();
-
-  useEffect(() => {
-    if (!open) return;
-
-    function handlePointerDown(event: PointerEvent) {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    }
-
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setOpen(false);
-        buttonRef.current?.focus();
-      }
-    }
-
-    document.addEventListener("pointerdown", handlePointerDown);
-    document.addEventListener("keydown", handleKeyDown);
-    return () => {
-      document.removeEventListener("pointerdown", handlePointerDown);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [open]);
 
   if (items.length === 0) return null;
 
   return (
     <div ref={containerRef} className="relative">
       <button
-        ref={buttonRef}
+        ref={triggerRef}
         type="button"
         aria-expanded={open}
         aria-haspopup="true"

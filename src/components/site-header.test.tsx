@@ -9,6 +9,13 @@ import { SiteHeader } from "./site-header";
 
 vi.mock("@/components/language-toggle", () => ({ LanguageToggle: () => <span>Language toggle</span> }));
 vi.mock("@/components/notifications/notification-bell", () => ({ NotificationBell: () => <span>Notifications</span> }));
+// UserMenu gets its own dedicated test (user-menu.test.tsx); here we only
+// need to see which account it was composed with.
+vi.mock("@/components/nav/user-menu", () => ({
+  UserMenu: ({ account }: { account: { username: string; role: string } }) => (
+    <span>UserMenu:{account.username}:{account.role}</span>
+  ),
+}));
 
 let pathname = "/home";
 vi.mock("next/navigation", () => ({
@@ -65,22 +72,21 @@ function show(
 }
 
 describe("SiteHeader account indicator", () => {
-  it("shows the active username and role", () => {
+  it("renders the user menu with the signed-in account, not the language toggle", () => {
     show("en", { username: "rosa.bhw", role: "bhw" });
-    expect(screen.getByText("rosa.bhw")).toBeInTheDocument();
-    expect(screen.getByText("BHW")).toBeInTheDocument();
-    expect(screen.getByLabelText("Signed in as rosa.bhw, role: BHW")).toBeInTheDocument();
+    expect(screen.getByText("UserMenu:rosa.bhw:bhw")).toBeInTheDocument();
+    expect(screen.queryByText("Language toggle")).not.toBeInTheDocument();
   });
 
-  it("uses the Filipino label for an assessor", () => {
+  it("passes the assessor's account through unchanged", () => {
     show("fil", { username: "lito.assessor", role: "assessor" });
-    expect(screen.getByLabelText("Naka-login bilang lito.assessor, tungkulin: Facilitator / Assessor")).toBeInTheDocument();
+    expect(screen.getByText("UserMenu:lito.assessor:assessor")).toBeInTheDocument();
   });
 
-  it("hides account details on signed-out pages", () => {
+  it("renders the language toggle instead of a user menu on signed-out pages", () => {
     show("en", null);
-    expect(screen.queryByText("BHW")).not.toBeInTheDocument();
-    expect(screen.queryByLabelText(/Signed in as/)).not.toBeInTheDocument();
+    expect(screen.getByText("Language toggle")).toBeInTheDocument();
+    expect(screen.queryByText(/^UserMenu:/)).not.toBeInTheDocument();
   });
 });
 

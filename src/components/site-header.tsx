@@ -3,6 +3,7 @@ import Link from "next/link";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MoreMenu } from "@/components/nav/more-menu";
 import { NavLink } from "@/components/nav/nav-link";
+import { UserMenu } from "@/components/nav/user-menu";
 import { NotificationBell } from "@/components/notifications/notification-bell";
 import type { FeatureFlags } from "@/lib/flags/types";
 import { getNavItems } from "@/lib/nav/nav-items";
@@ -52,18 +53,8 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
           ) : null}
         </div>
         <div className="flex flex-wrap items-center gap-3">
-          {signedIn && account ? (
-            <div
-              aria-label={t("signedInAs", { username: account.username, role: t(`role.${account.role}`) })}
-              className="flex min-w-0 max-w-[15rem] items-center gap-2 rounded-full border border-ink/15 bg-ink/5 px-3 py-1.5 text-xs sm:max-w-[20rem] sm:text-sm"
-            >
-              <span className="truncate font-medium" title={account.username}>{account.username}</span>
-              <span aria-hidden="true" className="shrink-0 text-ink/40">·</span>
-              <span className="shrink-0 text-ink/70">{t(`role.${account.role}`)}</span>
-            </div>
-          ) : null}
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
-          <LanguageToggle signedIn={signedIn} />
+          {signedIn && account ? <UserMenu account={account} /> : <LanguageToggle signedIn={signedIn} />}
         </div>
       </div>
     </header>
