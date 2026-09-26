@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { cookies, headers } from "next/headers";
 import { ServiceWorkerRegister } from "@/components/pwa/service-worker-register";
 import { SiteFooter } from "@/components/site-footer";
@@ -11,6 +11,7 @@ import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
 import { parsePersonaSnapshot } from "@/lib/super-admin/types";
 import { parseA11ySettings } from "@/lib/settings/types";
 import type { AppUser } from "@/lib/supabase/app-user";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -55,6 +56,8 @@ export default async function RootLayout({
   const signedIn = await getRequestSignedIn();
   const account = signedIn ? await getRequestAccount() : null;
   const persona = signedIn ? await getRequestPersona() : null;
+  const flags = await getRequestFeatureFlags();
+  const t = await getTranslations("common");
 
   return (
     <html
@@ -66,14 +69,23 @@ export default async function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-canvas text-ink">
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <a
+            href="#main"
+            className="sr-only rounded-md bg-primary px-4 py-2 font-medium text-on-primary focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50"
+          >
+            {t("skipToContent")}
+          </a>
           <SiteHeader
             signedIn={signedIn}
             account={account}
             notificationsEnabled={notifications.enabled}
             notifUnreadCount={notifications.unreadCount}
+            flags={flags}
           />
           {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
-          <main className="flex flex-1 flex-col">{children}</main>
+          <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">
+            {children}
+          </main>
           <SiteFooter />
         </NextIntlClientProvider>
         <ServiceWorkerRegister enabled={offlinePwaEnabled} />
