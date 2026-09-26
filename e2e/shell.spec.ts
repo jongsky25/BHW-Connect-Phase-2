@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { STABLE_BHW } from "./fixtures/auth";
+import { STABLE_ADMIN, STABLE_BHW } from "./fixtures/auth";
 
 test("home page renders the foundation shell in Filipino by default", async ({ page }) => {
   await page.goto("/");
@@ -60,6 +60,36 @@ test("signing out from the header's user menu on a non-home page lands on /login
   await page.getByRole("button", { name: "Mag-sign out" }).click();
 
   await expect(page).toHaveURL("/login", { timeout: 10_000 });
+});
+
+test("the header stays a single row at a 320px viewport, for a visitor and every role", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 640 });
+
+  await page.goto("/");
+  const signedOutHeight = await page.locator("header").boundingBox().then((box) => box?.height);
+
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  const bhwHeight = await page.locator("header").boundingBox().then((box) => box?.height);
+
+  await page.getByRole("button", { name: /^Naka-login bilang/ }).click();
+  await page.getByRole("button", { name: "Mag-sign out" }).click();
+  await expect(page).toHaveURL("/login", { timeout: 10_000 });
+
+  await page.getByLabel("Username").fill(STABLE_ADMIN.username);
+  await page.getByLabel("Password").fill(STABLE_ADMIN.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  const adminHeight = await page.locator("header").boundingBox().then((box) => box?.height);
+
+  // A wrapped header (hamburger+app name and bell+avatar on separate rows)
+  // is roughly double this height; same value across roles rules that out.
+  expect(signedOutHeight).toBe(bhwHeight);
+  expect(bhwHeight).toBe(adminHeight);
+  expect(bhwHeight).toBeLessThan(100);
 });
 
 test("breadcrumbs let a signed-in BHW navigate back up from a nested page", async ({ page }) => {

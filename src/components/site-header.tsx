@@ -30,7 +30,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
 
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-canvas">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <div className="mx-auto flex max-w-7xl flex-nowrap items-center justify-between gap-2 px-4 py-4 sm:gap-4 sm:px-6">
         <div className="flex items-center gap-2 md:gap-6">
           {signedIn && account ? (
             <MobileDrawer
