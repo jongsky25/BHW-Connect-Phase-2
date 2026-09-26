@@ -155,7 +155,7 @@ export default async function CourseDetailPage({
     const lessonRows=lessonResult.data??[];
     if(!lessonRows.length)return undefined;
     const {data: revisions,error} = await supabase.from('course_lesson_revisions')
-      .select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
+      .select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,featured_asset_id,created_by,created_at')
       .in('id',lessonRows.map(l=>l.published_revision_id!)).returns<CourseLessonRevision[]>();
     if(error || lessonRows.some(l=>!revisions?.some(r=>r.id===l.published_revision_id)))throw new Error('Unable to load published lesson revisions');
     return {...program,chapters:chapterResult.data??[],completed:completedResult.data??[],resumes:resumeResult.data??[],

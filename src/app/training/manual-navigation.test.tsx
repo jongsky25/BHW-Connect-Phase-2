@@ -90,6 +90,18 @@ describe('manual navigation',()=>{
     expect(screen.getByRole('link',{name:'As the BHW sees it'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l1?view=lesson');
     expect(screen.queryByText('Admin preview')).not.toBeInTheDocument();
   });
+  it('lesson loads the featured clip for BHWs and shows it on the facilitator guide',async()=>{
+    const clip={id:'clip',path:'/training/x/clip-aaaaaaaaaaaa-poster.jpg',content_hash:'a'.repeat(64),alt_en:'Eight handrub steps',alt_fil:'Walong hakbang',
+      caption_en:'Handrub clip',caption_fil:'Handrub',provenance:'p',review_status:'approved',video:{path:'/training/x/clip-bbbbbbbbbbbb.mp4',content_hash:'b'.repeat(64),duration_s:60}};
+    state.rows.course_lesson_revisions=[{id:'r1',read_sections:[],slides:[],assets:[clip],featured_asset_id:'clip'}];
+    render(await page(['chapter-1','m1','l1']));
+    expect(state.calls.find(c=>c.table==='course_lesson_revisions')?.columns).toMatch(/\bfeatured_asset_id\b/);
+    cleanup();state.calls=[];state.role='assessor';
+    render(await page(['chapter-1','m1','l1']));
+    expect(screen.getByRole('heading',{name:'Facilitator guide for this lesson'})).toBeInTheDocument();
+    expect(screen.getByRole('region',{name:'Watch'})).toBeInTheDocument();
+    expect(screen.getByLabelText('Eight handrub steps')).toHaveProperty('tagName','VIDEO');
+  });
   it('facilitator subchapter opens one guide view at a time and loads the roster only on Mga BHW',async()=>{
     state.role='assessor';
     state.rows.course_modules[0].objectives_en=['Explain the three roles'];

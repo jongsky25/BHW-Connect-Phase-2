@@ -5,6 +5,7 @@ import type { CourseModuleFacilitatorNotes } from '@/lib/elearning/types';
 import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
+import {LessonAssetFigure} from '@/components/elearning/lesson-asset-figure';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
 import {ChapterTestInsights,LessonFacilitatorGuide,SubchapterFacilitatorGuide,type SubchapterGuideView} from '@/components/elearning/facilitator-guide';
 import {CardProgress,subchapterSegments} from '@/components/progress/card-progress';
@@ -192,7 +193,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const [bank,attempt,revisionResult,resumeResult,notes,activityNotes]=await Promise.all([
           pretestGate?db.from('course_test_questions_current').select('id').eq('course_id',course.id).limit(1):Promise.resolve({data:null,error:null}),
           pretestGate?db.from('course_test_attempts').select('id').eq('course_id',course.id).eq('bhw_user_id',actor.id).eq('phase','pretest').maybeSingle():Promise.resolve({data:null,error:null}),
-          db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,created_by,created_at')
+          db.from('course_lesson_revisions').select('id,lesson_id,revision_key,content_hash,read_sections,slides,coverage,sources,assets,featured_asset_id,created_by,created_at')
             .eq('id',lesson.published_revision_id!).single<CourseLessonRevision>(),
           progress?db.from('course_lesson_resume').select('*').eq('course_progress_id',progress.id).eq('lesson_id',lesson.id).returns<CourseLessonResume[]>():Promise.resolve({data:[],error:null}),
           facilitator?loadLessonGuide(db,lesson.published_revision_id!):Promise.resolve(null),
@@ -206,6 +207,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         crumbs.push({label:title(lesson)});
         heading=title(lesson); intro=readOnly&&!showGuide?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
         if(revisionResult.error || resumeResult.error || !revisionResult.data)throw new Error('Unable to load lesson');
+        const revision=revisionResult.data;
+        const featured=revision.featured_asset_id?revision.assets.find(a=>a.id===revision.featured_asset_id):undefined;
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
         const adjacentHref=(id:string)=>`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
@@ -214,8 +217,14 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             <Link className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
             <Link className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
           </nav>}
-          {showGuide ? <LessonFacilitatorGuide lang={loc} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
-            indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision:revisionResult.data}],completed:completed??[],resumes:resumeResult.data??[]}}
+          {showGuide ? <>
+            {featured && <section className="rounded-xl border border-ink/15 p-4 sm:p-6" aria-label={text('Panoorin','Watch')}>
+              <p className="mb-1 text-sm font-semibold">{text('Panoorin','Watch')}</p>
+              <LessonAssetFigure asset={featured} en={en}/>
+            </section>}
+            <LessonFacilitatorGuide lang={loc} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
+              indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/>
+          </> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],completed:completed??[],resumes:resumeResult.data??[]}}
           modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
           returnHref={facilitator?`${moduleHref}?view=slides`:undefined}
           initialMode={facilitator && mode==='slides'?'slides':undefined}
