@@ -10,7 +10,9 @@ function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
 }
 
-export function LanguageToggle({signedIn=false}:{signedIn?:boolean}) {
+// `compact` keeps the label for screen readers only below `sm`, so the
+// signed-out header fits on one row at 320px.
+export function LanguageToggle({signedIn=false,compact=false}:{signedIn?:boolean;compact?:boolean}) {
   const locale = useLocale();
   const t = useTranslations("common");
   const router = useRouter();
@@ -30,7 +32,7 @@ export function LanguageToggle({signedIn=false}:{signedIn?:boolean}) {
 
   return (
     <div className="flex items-center gap-2 text-sm">
-      <span className="text-ink/70">{t("languageToggleLabel")}</span>
+      <span className={compact ? "sr-only text-ink/70 sm:not-sr-only" : "text-ink/70"}>{t("languageToggleLabel")}</span>
       <div className="inline-flex overflow-hidden rounded-full border border-ink/15">
         {locales.map((option) => (
           <button

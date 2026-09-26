@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 import { STABLE_ADMIN, STABLE_BHW } from "./fixtures/auth";
 
 test("home page renders the foundation shell in Filipino by default", async ({ page }) => {
@@ -62,17 +62,45 @@ test("signing out from the header's user menu on a non-home page lands on /login
   await expect(page).toHaveURL("/login", { timeout: 10_000 });
 });
 
-test("the header stays a single row at a 320px viewport, for a visitor and every role", async ({ page }) => {
+// The header's two groups (app name / menu on the left, language toggle or
+// bell + avatar on the right) share one row, and the app name is one line.
+// Either wrapping is what made the header grow at 320px.
+async function expectSingleRowHeader(page: Page, who: string) {
+  const layout = await page.evaluate(() => {
+    const row = document.querySelector("header > div")!;
+    const [left, right] = Array.from(row.children).map((el) => el.getBoundingClientRect());
+    const name = row.querySelector(":scope > div > a")!.getBoundingClientRect();
+    return {
+      centerGap: Math.abs(left.top + left.height / 2 - (right.top + right.height / 2)),
+      nameHeight: name.height,
+      nameLineHeight: parseFloat(getComputedStyle(row.querySelector(":scope > div > a")!).lineHeight),
+    };
+  });
+  expect(layout.centerGap, `${who}: header groups wrapped onto separate rows`).toBeLessThan(2);
+  expect(layout.nameHeight, `${who}: app name wrapped onto two lines`).toBeLessThanOrEqual(layout.nameLineHeight + 1);
+}
+
+test("the header stays a single row at a 320px viewport, for a visitor and every role", async ({ page, browser }) => {
   await page.setViewportSize({ width: 320, height: 640 });
 
   await page.goto("/");
-  const signedOutHeight = await page.locator("header").boundingBox().then((box) => box?.height);
+  await expectSingleRowHeader(page, "visitor (fil)");
+
+  // English's "Language" label is longer than "Wika".
+  const enContext = await browser.newContext({ viewport: { width: 320, height: 640 } });
+  await enContext.addCookies([{ name: "BHW_LOCALE", value: "en", url: new URL(page.url()).origin }]);
+  const enPage = await enContext.newPage();
+  await enPage.goto("/");
+  await expect(enPage.locator("html")).toHaveAttribute("lang", "en");
+  await expectSingleRowHeader(enPage, "visitor (en)");
+  await enContext.close();
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_BHW.username);
   await page.getByLabel("Password").fill(STABLE_BHW.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  await expectSingleRowHeader(page, "bhw");
   const bhwHeight = await page.locator("header").boundingBox().then((box) => box?.height);
 
   // /home has its own inline sign-out action too, so go to a page without
@@ -86,13 +114,10 @@ test("the header stays a single row at a 320px viewport, for a visitor and every
   await page.getByLabel("Password").fill(STABLE_ADMIN.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  await expectSingleRowHeader(page, "admin");
   const adminHeight = await page.locator("header").boundingBox().then((box) => box?.height);
 
-  // A wrapped header (hamburger+app name and bell+avatar on separate rows)
-  // is roughly double this height; same value across roles rules that out.
-  expect(signedOutHeight).toBe(bhwHeight);
-  expect(bhwHeight).toBe(adminHeight);
-  expect(bhwHeight).toBeLessThan(100);
+  expect(adminHeight).toBe(bhwHeight);
 });
 
 test("breadcrumbs let a signed-in BHW navigate back up from a nested page", async ({ page }) => {
