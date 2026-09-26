@@ -101,7 +101,7 @@ describe("MobileDrawer", () => {
     const user = userEvent.setup();
     show("admin");
     await user.click(screen.getByRole("button", { name: "Open menu" }));
-    expect(within(dialog()).getByRole("link", { name: "Admin console" })).toHaveAttribute("href", "/admin/users");
+    expect(within(dialog()).getByRole("link", { name: "Admin console" })).toHaveAttribute("href", "/admin/dashboard");
     cleanup();
 
     show("bhw");
