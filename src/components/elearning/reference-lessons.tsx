@@ -102,6 +102,8 @@ export function ReferenceLessons(props: Props) {
   // Practice is formative, not a scored assessment. Keep attempts across
   // section/mode changes, but never carry them into a different revision.
   const [answers, setAnswers] = useState<Record<string, number>>({});
+  // Keyed by lesson id, like `answers`, so switching lessons doesn't lose it.
+  const [featuredWatched, setFeaturedWatched] = useState<Record<string, boolean>>({});
   const heading = useRef<HTMLHeadingElement>(null);
   const writes = useRef(Promise.resolve());
   const lesson = lessons.find((l) => l.id === selected);
@@ -119,7 +121,11 @@ export function ReferenceLessons(props: Props) {
   const answerKey = (id: string) => `${lesson?.id}:${lesson?.revision.id}:${mode}:${id}`;
   const answer = item ? answers[answerKey(item.id)] : undefined;
   const checksAnswered = items.every(p => !p.check || answers[answerKey(p.id)] !== undefined);
-  const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
+  const featuredAsset = lesson?.revision.featured_asset_id
+    ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
+    : undefined;
+  const featuredOk = !featuredAsset || Boolean(lesson && featuredWatched[lesson.id]);
+  const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered && featuredOk;
   const revealSummary = !item?.check || answer !== undefined;
   const practice = item?.check ? <Practice check={item.check} en={en} answer={answer}
     onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/> : null;
@@ -325,6 +331,20 @@ export function ReferenceLessons(props: Props) {
                 <li key={o}>{o}</li>
               ))}
             </ul>
+            {featuredAsset && (
+              <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
+                <p className="mb-1 text-sm font-semibold">
+                  {ui("Panoorin", "Watch")}
+                </p>
+                <LessonAssetFigure
+                  asset={featuredAsset}
+                  en={en}
+                  onEnded={() =>
+                    setFeaturedWatched((old) => ({ ...old, [lesson.id]: true }))
+                  }
+                />
+              </div>
+            )}
             <div className="flex gap-2">
               {(["read", "slides"] as const).map((m) => (
                 <button
@@ -428,6 +448,7 @@ export function ReferenceLessons(props: Props) {
             {!props.readOnly && <>
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
+                !featuredOk ? ui("Panoorin muna ang video sa itaas ng aralin bago markahang tapos.", "Watch the video at the top of the lesson before marking it complete.") :
                 ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
                   "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
             </p>}

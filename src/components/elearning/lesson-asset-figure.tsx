@@ -7,7 +7,17 @@ import type { LessonAsset } from "@/lib/elearning/types";
 // costs no mobile data unasked and shows only the static poster under
 // prefers-reduced-motion unless the learner chooses to play it. The alt
 // text doubles as the clip's text version, shown on request.
-export function LessonAssetFigure({ asset: a, en }: { asset: LessonAsset; en: boolean }) {
+export function LessonAssetFigure({
+  asset: a,
+  en,
+  onEnded,
+}: {
+  asset: LessonAsset;
+  en: boolean;
+  // Fired when a video asset finishes playing. Used by the lesson-level
+  // featured asset to gate lesson completion on having watched it.
+  onEnded?: () => void;
+}) {
   const textId = useId();
   const alt = en ? a.alt_en : a.alt_fil;
   const caption = en ? a.caption_en : a.caption_fil;
@@ -33,6 +43,7 @@ export function LessonAssetFigure({ asset: a, en }: { asset: LessonAsset; en: bo
         aria-label={alt}
         aria-describedby={textId}
         className="h-auto w-full rounded-lg bg-canvas"
+        onEnded={onEnded}
       >
         <source src={a.video.path} type="video/mp4" />
       </video>

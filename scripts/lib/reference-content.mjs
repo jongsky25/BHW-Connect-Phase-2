@@ -192,7 +192,14 @@ export function validateReferenceLesson(
   );
   fields(
     r,
-    ["read_sections", "slides", "coverage", "sources", "assets"],
+    [
+      "read_sections",
+      "slides",
+      "coverage",
+      "sources",
+      "assets",
+      "featured_asset_id",
+    ],
     "revision",
   );
   array(r.read_sections, "Read", 1);
@@ -203,6 +210,15 @@ export function validateReferenceLesson(
   const sources = unique(r.sources, "id", "sources"),
     assets = unique(r.assets, "id", "assets"),
     concepts = unique(r.coverage, "id", "coverage");
+  // A lesson-level "Panoorin" (Watch) asset shown once, outside the Read/
+  // Slides section arc: it needs none of the per-section arc, parity,
+  // check-spacing or coverage rules that r.read_sections/r.slides enforce.
+  if (r.featured_asset_id != null) {
+    assert(
+      typeof r.featured_asset_id === "string" && assets.has(r.featured_asset_id),
+      "featured_asset_id must reference a known asset",
+    );
+  }
   r.sources.forEach((s) => {
     fields(s, ["id", "title", "pdf_pages", "url"], "source");
     text(s.id, "source id");
@@ -443,7 +459,14 @@ export function loadReferenceModule(moduleRoot, publicRoot) {
         authored = json(root, "lesson.json");
       fields(
         authored,
-        ["manifest", "sections", "coverage", "sources", "assets"],
+        [
+          "manifest",
+          "sections",
+          "coverage",
+          "sources",
+          "assets",
+          "featured_asset_id",
+        ],
         "lesson.json",
       );
       const fil = parseReferenceRead(file(root, "read.fil.md")),
@@ -482,6 +505,7 @@ export function loadReferenceModule(moduleRoot, publicRoot) {
             coverage: authored.coverage,
             sources: authored.sources,
             assets: authored.assets,
+            featured_asset_id: authored.featured_asset_id ?? null,
           },
           notes,
         },
