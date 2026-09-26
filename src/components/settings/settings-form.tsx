@@ -63,11 +63,25 @@ function SegmentedRadioGroup<T>({
           return (
             <label
               key={index}
-              className={`flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-4 text-sm font-medium transition-colors focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 ${
+              className={`relative flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-4 text-sm font-medium transition-colors focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 ${
                 checked ? "bg-ink text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
               }`}
             >
-              <input type="radio" name={name} checked={checked} onChange={() => onChange(option)} className="sr-only" />
+              {/* An `sr-only` input clips to 1x1px at a fixed offset, away
+                  from the label's own rendered box — real browsers then
+                  can't hit-test a click there (Playwright: "element is
+                  outside of the viewport" / a sibling "intercepts pointer
+                  events"), even though jsdom-based component tests never
+                  notice since they don't do real hit-testing. An invisible
+                  input stretched to cover the whole label keeps every click
+                  on the label landing on the input itself. */}
+              <input
+                type="radio"
+                name={name}
+                checked={checked}
+                onChange={() => onChange(option)}
+                className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+              />
               {labelFor(option)}
             </label>
           );
@@ -125,17 +139,23 @@ function PreviewCard() {
           {t("previewChip")}
         </span>
       </div>
+      {/* Solid fill + text-canvas, not a tinted background with colored
+          text: the four status hues' light/dark values are tuned so this
+          fill/on-fill pairing clears 4.5:1 in both themes (same pairing as
+          e.g. user-row.tsx's bg-danger/text-canvas actions) — the
+          tinted-background pattern (bg-success/10 + text-success) measured
+          as low as 4.06:1 here and failed axe. */}
       <div className="flex flex-wrap gap-2">
-        <span className="rounded-md bg-success/10 px-2.5 py-1 text-xs font-semibold text-success">
+        <span className="rounded-md bg-success px-2.5 py-1 text-xs font-semibold text-canvas">
           {t("previewBadgeSuccess")}
         </span>
-        <span className="rounded-md bg-warning/10 px-2.5 py-1 text-xs font-semibold text-warning">
+        <span className="rounded-md bg-warning px-2.5 py-1 text-xs font-semibold text-canvas">
           {t("previewBadgeWarning")}
         </span>
-        <span className="rounded-md bg-danger/10 px-2.5 py-1 text-xs font-semibold text-danger">
+        <span className="rounded-md bg-danger px-2.5 py-1 text-xs font-semibold text-canvas">
           {t("previewBadgeDanger")}
         </span>
-        <span className="rounded-md bg-info/10 px-2.5 py-1 text-xs font-semibold text-info">
+        <span className="rounded-md bg-info px-2.5 py-1 text-xs font-semibold text-canvas">
           {t("previewBadgeInfo")}
         </span>
       </div>
