@@ -38,8 +38,10 @@ for (const theme of ["light", "dark"] as const) {
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto("/home");
     await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
-    await page.getByRole("button", { name: "More" }).click();
-    await expect(page.getByRole("link", { name: "Settings" })).toBeVisible();
+    // /home also lists every nav item in <main>, so scope to the header.
+    const header = page.locator("header");
+    await header.getByRole("button", { name: "More", exact: true }).click();
+    await expect(header.getByRole("link", { name: "Settings", exact: true })).toBeVisible();
 
     const desktopScan = await new AxeBuilder({ page }).include("header").analyze();
     expect(desktopScan.violations, `axe violations in the header/More menu (${theme})`).toEqual([]);
