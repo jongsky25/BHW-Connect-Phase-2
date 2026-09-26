@@ -42,8 +42,27 @@ jobs:
       - name: Unit tests
         run: npm run test
 
-  e2e:
+  # Waits, first come first served, until no other run is using the shared
+  # e2e project. See the e2e job for why.
+  e2e-wait:
     needs: checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+
+      - name: Wait for the shared e2e project
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/wait-for-e2e-slot.sh
+
+  e2e:
+    needs: e2e-wait
     runs-on: ubuntu-latest
     # Every PR's e2e run shares ONE Supabase project, and four specs toggle
     # GLOBAL feature flags (`chat_conversation`, `offline_pwa`, `kb_articles`,
@@ -54,11 +73,17 @@ jobs:
     # exactly what broke CI on 20 Sep 2026, when several PRs ran at once and
     # chat-conversation.spec.ts failed on `expect(before.route).toBeUndefined()`
     # receiving "red_flag" — the other run had turned `chat_conversation` on.
-    # This group queues e2e repo-wide so only one run touches the project at a
-    # time. `cancel-in-progress: false` matters: cancelling a run mid-spec
-    # skips the `finally` that restores the flag, which would leak a mutated
-    # flag into the next run and break it deterministically. Because there is
-    # no workflow-level group, nothing upstream can cancel this job either.
+    # So only one run may touch the project at a time, and nothing may cancel
+    # a running e2e job: cancelling mid-spec skips the `finally` that restores
+    # the flag, leaking a mutated flag into the next run. There is no
+    # workflow-level concurrency group, so nothing upstream cancels this job.
+    #
+    # e2e-wait does the queueing. A concurrency group alone cannot: it holds
+    # only ONE pending job, and each newly queued e2e cancelled the one already
+    # waiting, so with several PRs open e2e jobs were cancelled before they
+    # ever started (PR #130's, three times on 26 Sep 2026). The group below
+    # stays as a safety net: e2e-wait lets one run through at a time, so it is
+    # not contended, and it keeps runs on an older ci.yml from overlapping.
     concurrency:
       group: e2e-shared-supabase-project
       cancel-in-progress: false
