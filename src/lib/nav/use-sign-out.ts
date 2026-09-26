@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { clearSuperAdminCookies } from "@/app/actions/super-admin";
 import { clearOfflineCache } from "@/lib/pwa/clear-offline-cache";
-import { createClient } from "@/lib/supabase/client";
 
 /**
  * Shared sign-out logic for every sign-out entry point (the /home button,
@@ -33,6 +32,11 @@ export function useSignOut() {
       // the cookies expire, and the return cookie is only honoured for
       // that super admin's own personas.
       await clearSuperAdminCookies().catch(() => undefined);
+      // Loaded on click, not at module scope: the header (and so this hook)
+      // is in the root layout, and a static import would put the Supabase
+      // browser client (~50 KB gzipped) on every page, including signed-out
+      // ones — enough to fail the Lighthouse script-size budget on "/".
+      const { createClient } = await import("@/lib/supabase/client");
       await createClient().auth.signOut();
       await clearOfflineCache();
     } finally {
