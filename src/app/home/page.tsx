@@ -143,7 +143,7 @@ export default async function HomePage() {
         </Link>
         {appUser.role === "admin" ? (
           <Link
-            href="/admin/users"
+            href="/admin/dashboard"
             className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink"
           >
             {t("adminConsoleCta")}
