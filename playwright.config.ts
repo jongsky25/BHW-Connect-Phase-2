@@ -17,7 +17,14 @@ const chromiumExecutablePath = existsSync(pinnedChromium) ? pinnedChromium : und
 
 export default defineConfig({
   testDir: "./e2e",
-  fullyParallel: true,
+  // Every spec shares one Supabase project: global feature flags that specs
+  // toggle (chat_conversation, offline_pwa, kb_articles, course_sessions) and
+  // the stable accounts, whose sign-out is global and ends that account's
+  // other sessions. Two workers race on both, so the suite must run serially.
+  // Playwright's default is half the CPU cores, which became 2 workers once
+  // GitHub's ubuntu-latest runners grew to 4 vCPUs.
+  fullyParallel: false,
+  workers: 1,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   // The longest specs are whole end-to-end journeys, not single interactions:

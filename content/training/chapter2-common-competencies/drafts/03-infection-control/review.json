@@ -45,6 +45,17 @@
             "the lesson's own visual_approval (action-sequence remains draft)",
             "production publication"
           ]
+        },
+        {
+          "asset_id": "handrub-steps",
+          "status": "promoted",
+          "date": "2026-09-26",
+          "evidence": "User message: it is reviewed and approved. republish it — confirmed, in response to a direct list of this package's blocking_reviews, that independent IPC/clinical review, independent Filipino/English review, a BHW usability pilot, and browser QA are all complete for 03-infection-control.",
+          "action": "Published via scripts/chapter2-promote-handrub-clip.mjs to the Los Baños production project (ltzicxyefizxoqhfuuzc); course_lesson_revisions a0e10ae4-40c3-4f80-b6e2-a9d19ef3e7e7.",
+          "not_equivalent_to": [
+            "a named independent reviewer's sign-off, or supplied review artifacts",
+            "a change to this file's own review_status/publication_allowed fields, which chapter2-validate.mjs still requires to stay draft/false for the authoring package"
+          ]
         }
       ],
       "audio_status": "scripts-only",
@@ -123,5 +134,15 @@
     "status": "approved-by-user",
     "date": "2026-09-25",
     "evidence": "User message: mark approved chapter 2.3. move to 2.5"
+  },
+  "blocking_reviews_attestation": {
+    "status": "approved-by-user-attestation",
+    "date": "2026-09-26",
+    "evidence": "User message: it is reviewed and approved. republish it — given in direct response to being shown this file's blocking_reviews list.",
+    "scope": "All five blocking_reviews above, for the purpose of promoting the hand-hygiene lesson's handrub-steps clip.",
+    "not_equivalent_to": [
+      "named reviewer sign-off or supplied review artifacts (none were supplied, same limit already recorded for the 25 Sep 2026 release)",
+      "a change to this file's own review_status/publication_allowed fields, which chapter2-validate.mjs still requires to stay draft/false for the authoring package"
+    ]
   }
 }

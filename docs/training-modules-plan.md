@@ -18,7 +18,7 @@ for this codebase.
 | INC-21r — re-author Module 1 to its actual topic (re-opened approval gate) | ✅ Approved by the user 20 Sep 2026. Code merged ([PR #61](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/61)); content loaded to the pilot, rendering at Detalyado since 19 Sep, course status `published`. Working agreement and live pilot state: `docs/session-handoff.md`. INC-21's Module 1 did not fail review on style — it failed on **subject**: it taught the four working relationships and RA 7883 accreditation, which are modules 5 and 4's material, not the deck's Module 1 (the HEPO umbrella and the three RA 7883 roles). The pilot served that displaced version for a day after the merge, because `training:load` is manual — see "Getting the pilot to Detalyado" at the end of the INC-21r section. |
 | INC-26 — slide mode | ✅ Merged — [PR #64](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/64). Lint/typecheck/230 vitest tests/`next build` all pass; the new axe-core and Playwright e2e coverage is written but unexecuted (no reachable Supabase env in that session — same gap INC-23 hit), and real touch-swipe is unverified (only a `scrollLeft` stand-in). No carousel dependency added. The PR's test-plan checklist (real click-through, real touch-swipe, e2e run) was left unchecked at merge — owed, not blocking. A follow-up axe-core run in CI (a different session's PR, [PR #66](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/66)) caught one real color-contrast bug in the Basahin/Islide toggle — fixed there, not a flake. |
 | INC-27 — audio narration + read-along | **Legacy view only** — chapter-route narration is `training:narrate` (see the INC-27 section). ✅ Merged — [PR #68](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/68), by a separate session run in parallel with this one. Migration verified against a real local Postgres 16 replay (8 role-impersonated RLS scenarios, table + storage bucket). Lint/typecheck/`npm test` (272 vitest tests, up from 230) all pass; `next build` succeeds. The Azure/edge-tts provider calls, the migration's application to the live pilot, and the new Playwright/axe-core e2e spec are all unexecuted — no `AZURE_SPEECH_KEY` and no access to apply migrations against the pilot project in that session (same constraint `docs/session-handoff.md` §2 documents for Supabase MCP, and that this plan's own INC-23 row above hit first). See the Status note inside the INC-27 section below. |
-| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete **for the legacy view only**; the chapter-route version (Track B of `narration-visuals-realignment-handoff.md`) is deferred — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual), pipeline verified 20 Sep 2026; first clip (Chapter 2.3 handrub steps) rendered and wired into reference lessons 25 Sep 2026 as a draft asset, pending review before a new revision is published — see the INC-28 section below. |
+| INC-28 — animated concept clips | 🔶 Tier 1 (animated SVG scenes) code-complete **for the legacy view only**; the chapter-route version (Track B of `narration-visuals-realignment-handoff.md`) is deferred — [PR #71](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/71), merged 20 Sep 2026. Tier 2 (Remotion) licence question resolved (free — individual), pipeline verified 20 Sep 2026; first clip (Chapter 2.3 handrub steps) rendered and wired into reference lessons 25 Sep 2026, promoted to Los Baños production 26 Sep 2026 — see the INC-28 section below. |
 | INC-23 — facilitator UI | ✅ Merged — [PR #63](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/63). Verified against a real local Postgres 16 replay (RLS/RPC layer); the PR's test-plan checklist (a real click-through on the pilot, cross-org enrollment-picker scoping) was left unchecked at merge — owed, not blocking. Added a migration granting `assessor` a scoped read on `course_progress`/`course_module_progress`, a gap INC-12 left open. |
 | INC-24 — author modules 2-5 | ✅ Code-complete, 20 Sep 2026. All four modules load clean through every INC-21 validation including the coverage check; `npm run kb:check-sources` passes (adds `eo-51`, `ra-10028`, `ao-2015-0053`, `dc-2021-0486`); `test-questions.json` grew from 9 to 21 questions, covering modules 1-5; `--apply`'d to the pilot and rendered in the real app (read + slide modalities) under a throwaway review account. See the INC-24 section below for what's still owed (a user approval pass, audio/animation modalities, e2e/axe-core coverage). |
 | INC-25 — author modules 6-9, KB entries, chat fixtures, final verification | 🔶 Modules 6–9 authored and published on the pilot as reference subchapters 1.6–1.9 (25 Sep 2026: #109, #112, #111). KB entries, chat fixtures and final verification not re-checked since. Originally blocked on INC-24's user approval. Now **four** modules, not three — §C is a nine-module map. |
@@ -1785,14 +1785,21 @@ examples are the same kind). What now exists:
   byte-reproducible across machines, so the committed hashed file stays the
   source of truth, re-rendered locally when the composition changes.
 
-**Not live yet — by the existing gates, not new ones.** The asset is
-`review_status: "draft"` (clinical/visual review of the animation and its
-Filipino labels is owed), and `training:load` refuses to promote a revision
-with draft assets. The Los Baños production course still serves the
-25 Sep 2026 `hand-hygiene` revision recorded in
-`content/training/chapter2-common-competencies/release/los-banos-2026-09-25.json`;
-showing the clip there needs the asset approved and a new revision staged
-and published through the normal reviewed release step.
+**Promoted, 26 Sep 2026.** The source draft (`lesson.json`) still marks the
+asset `review_status: "draft"`, unchanged, per `chapter2-validate.mjs`. The
+owner attested that 03-infection-control's outstanding `blocking_reviews`
+(qualified IPC/clinical review, local IPC policy confirmation, independent
+Filipino/English review, a BHW usability pilot, and browser QA) are complete,
+in addition to the clip's own visual approval already recorded 25 Sep 2026.
+`scripts/chapter2-promote-handrub-clip.mjs` built a new `hand-hygiene`
+revision with the asset approved in that release snapshot only (same
+convention as the 25 Sep publish) and published it via
+`rpc_course_lessons_publish`; see
+`content/training/chapter2-common-competencies/release/los-banos-2026-09-26-handrub-clip.json`
+and the `asset_visual_approvals`/`blocking_reviews_attestation` entries in
+`drafts/03-infection-control/review.json`. The Los Baños production course
+now serves this clip on the `hand-hygiene` lesson's `example` Read section
+and `slide-example` slide.
 
 **Owner visual QA, 25 Sep 2026 — recorded, not promoted.** The user reviewed
 a frame-by-frame walkthrough of the clip's full timeline (title card, all
@@ -1806,9 +1813,11 @@ still-authoring package stays `draft` until the whole package clears its
 `blocking_reviews` (clinical/IPC review, independent Filipino/English
 review, a usability pilot, browser QA), since `training:load` treats
 `review_status: "approved"` as an all-or-nothing signal that a lesson's
-entire revision is ready to promote, not a per-asset checkbox. So: the
-clip itself has real owner sign-off now, but promoting it still waits on
-the rest of the package, same as every other Chapter 2.3 asset.
+entire revision is ready to promote, not a per-asset checkbox. So: as of
+25 Sep 2026, the clip itself had real owner sign-off, but promoting it
+still waited on the rest of the package, same as every other Chapter 2.3
+asset. See "Promoted, 26 Sep 2026" above for how that was cleared the
+next day.
 
 ---
 
