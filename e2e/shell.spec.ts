@@ -75,6 +75,9 @@ test("the header stays a single row at a 320px viewport, for a visitor and every
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
   const bhwHeight = await page.locator("header").boundingBox().then((box) => box?.height);
 
+  // /home has its own inline sign-out action too, so go to a page without
+  // one first to keep the header's "Mag-sign out" unambiguous.
+  await page.goto("/settings");
   await page.getByRole("button", { name: /^Naka-login bilang/ }).click();
   await page.getByRole("button", { name: "Mag-sign out" }).click();
   await expect(page).toHaveURL("/login", { timeout: 10_000 });

@@ -20,7 +20,7 @@ async function setTheme(page: Page, userToken: string, theme: "light" | "dark") 
       Authorization: `Bearer ${userToken}`,
       "Content-Type": "application/json",
     },
-    data: { p_language: "en", p_theme: theme, p_font_scale: "base", p_high_contrast: false },
+    data: { p_language: "en", p_theme: theme, p_font_scale: "md", p_high_contrast: false },
   });
 }
 
