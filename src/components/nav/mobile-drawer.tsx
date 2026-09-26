@@ -82,7 +82,7 @@ export function MobileDrawer({ account, items, labels }: Props) {
           href={item.href}
           aria-current={active ? "page" : undefined}
           onClick={close}
-          className={`${ITEM_CLASS} ${active ? "bg-ink/5 font-semibold text-primary-text" : "text-ink hover:bg-ink/5"}`}
+          className={`${ITEM_CLASS} ${active ? "font-semibold text-primary-text" : "text-ink hover:bg-ink/5"}`}
         >
           {labels[item.id]}
         </Link>
