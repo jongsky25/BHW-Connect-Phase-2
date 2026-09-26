@@ -48,8 +48,8 @@ jobs:
     # Every PR's e2e run shares ONE Supabase project, and four specs toggle
     # GLOBAL feature flags (`chat_conversation`, `offline_pwa`, `kb_articles`,
     # `course_sessions`) — each flips a flag, asserts, and restores it in a
-    # `finally`. That is safe within a run (Playwright runs the suite with a
-    # single worker) but NOT across runs: two PRs' e2e jobs overlapping means
+    # `finally`. That is safe within a run only because playwright.config.ts
+    # pins `workers: 1`, but NOT across runs: two PRs' e2e jobs overlapping means
     # one flips a flag while the other is asserting its resting value. That is
     # exactly what broke CI on 20 Sep 2026, when several PRs ran at once and
     # chat-conversation.spec.ts failed on `expect(before.route).toBeUndefined()`
