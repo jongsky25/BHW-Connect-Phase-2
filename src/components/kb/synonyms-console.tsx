@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import type { Synonym } from "@/lib/kb/types";
 import { SynonymForm } from "./synonym-form";
@@ -17,7 +18,7 @@ export function SynonymsConsole({ initialSynonyms }: Props) {
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       <SynonymForm onCreated={(synonym) => setSynonyms((prev) => [synonym, ...prev])} />
 
