@@ -1,6 +1,7 @@
 import * as Sentry from "@sentry/nextjs";
 import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { OrgUnitPicker } from "@/components/org-unit-picker";
 import { BhwProgressCard } from "@/components/progress/bhw-progress-card";
@@ -119,10 +120,7 @@ export default async function AdminTrainingProgressPage({
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
-        <p className="mt-1 text-sm text-ink/70">{t("description")}</p>
-      </div>
+      <AdminPageHeader title={t("heading")} description={t("description")} />
 
       {!program ? (
         <EmptyState message={t("noProgram")} />

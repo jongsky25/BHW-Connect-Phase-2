@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { mapForumRpcError } from "@/lib/forum/error-messages";
 import type { ForumCategory, ForumPostModerationRow, ForumThreadModerationRow } from "@/lib/forum/types";
@@ -80,7 +81,7 @@ export function ForumConsole({ initialCategories, initialThreads, initialPosts }
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       {error ? (
         <p role="alert" className="text-sm text-danger">

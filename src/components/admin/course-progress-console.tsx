@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { mapAdminRpcError } from "@/lib/admin/error-messages";
 import type {
@@ -94,10 +95,7 @@ export function CourseProgressConsole({
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
-        <p className="mt-1 text-sm text-ink/70">{t("description")}</p>
-      </div>
+      <AdminPageHeader title={t("heading")} description={t("description")} />
 
       {result ? (
         <div className="flex items-start justify-between gap-4 rounded-md bg-celebration px-4 py-3 text-celebration-ink">
