@@ -1,6 +1,7 @@
 import { after, NextResponse, type NextRequest } from "next/server";
 import { resolveTurn } from "@/lib/chat/conversation";
 import { matchQuestion } from "@/lib/chat/matcher";
+import { loadPublishedEntries } from "@/lib/chat/published-entries";
 import { clarifierRules, redFlagRules } from "@/lib/chat/rules";
 import type {
   ChatContext,
@@ -89,7 +90,7 @@ export async function POST(request: NextRequest) {
   const requestedSessionId = requestSessionId(body);
   const [{ data: entries, error: entriesError }, { data: synonyms, error: synonymsError }, context] =
     await Promise.all([
-      supabase.from("kb_entries").select(entryColumns).eq("status", "published"),
+      loadPublishedEntries(supabase, entryColumns),
       supabase.from("synonyms").select("term, maps_to, language"),
       conversational ? loadContext(supabase, requestedSessionId) : Promise.resolve(null),
     ]);
