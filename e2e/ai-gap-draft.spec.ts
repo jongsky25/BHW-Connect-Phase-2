@@ -123,7 +123,7 @@ test("an AI draft becomes a published KB entry, and the next ask is answered wit
   const callsBeforeDraft = await gapDraftCallCount(request, adminToken);
 
   // 2. Clearance and the draft.
-  await page.goto("/admin/dashboard/chat-guide");
+  await page.goto(`/admin/dashboard/chat-guide?q=${encodeURIComponent(marker)}`);
   const gapRow = page.getByRole("row", { name: new RegExp(marker) });
   await expect(gapRow).toBeVisible();
 
