@@ -27,7 +27,7 @@ import { validateDraftModule } from './chapter2-validate.mjs';
 import { createClient, projectUrl, requireEnv, signIn } from './lib/supabase-rest.mjs';
 
 const publicRoot = path.resolve(chapter2Root, '../../../public');
-const REVISION_FIELDS = ['read_sections', 'slides', 'coverage', 'sources', 'assets'];
+const REVISION_FIELDS = ['read_sections', 'slides', 'coverage', 'sources', 'assets', 'featured_asset_id'];
 const json = (file) => JSON.parse(readFileSync(file, 'utf8'));
 const lf = (s) => s.replace(/\r\n/g, '\n');
 const notesOf = (n) => ({ observation_indicators: n.observation_indicators, notes_fil: lf(n.notes_fil), notes_en: lf(n.notes_en) });
@@ -52,6 +52,7 @@ export function releasableRevision(draftRevision, liveAssets) {
   });
   for (const s of revision.read_sections) s.asset_ids = keep(s.asset_ids);
   for (const s of revision.slides) s.asset_ids = keep(s.asset_ids);
+  if (revision.featured_asset_id && !live.has(revision.featured_asset_id)) revision.featured_asset_id = null;
   return revision;
 }
 

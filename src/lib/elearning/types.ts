@@ -49,6 +49,9 @@ export type CourseLessonRevision = {
   id: string; lesson_id: string; revision_key: string; content_hash: string;
   read_sections: StableLessonSection[]; slides: AuthoredLessonSlide[];
   coverage: LessonConceptCoverage[]; sources: LessonSource[]; assets: LessonAsset[];
+  // A lesson-level "Panoorin" (Watch) asset shown once, outside the Read/
+  // Slides section arc — see docs/handrub-clip-enhancement-handoff.md §2.
+  featured_asset_id: string | null;
   created_by: string; created_at: string;
 };
 export type CourseLessonProgress = {
