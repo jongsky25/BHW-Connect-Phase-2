@@ -47,6 +47,19 @@ describe("LanguageToggle", () => {
     );
   });
 
+  it("keeps the label for screen readers only on narrow screens when compact", () => {
+    render(
+      <NextIntlClientProvider locale="en" messages={enMessages}>
+        <LanguageToggle compact />
+      </NextIntlClientProvider>,
+    );
+    expect(screen.getByText("Language")).toHaveClass("sr-only", "sm:not-sr-only");
+    cleanup();
+
+    renderToggle();
+    expect(screen.getByText("Language")).not.toHaveClass("sr-only");
+  });
+
   it("sets the locale cookie and refreshes when a language is picked", async () => {
     document.cookie = "";
     renderToggle();

@@ -30,7 +30,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
 
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-canvas">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <div className="mx-auto flex max-w-7xl flex-nowrap items-center justify-between gap-2 px-4 py-4 sm:gap-4 sm:px-6">
         <div className="flex items-center gap-2 md:gap-6">
           {signedIn && account ? (
             <MobileDrawer
@@ -41,7 +41,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
           ) : null}
           <Link
             href={signedIn ? "/home" : "/"}
-            className="rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {t("appName")}
           </Link>
@@ -62,7 +62,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
         </div>
         <div className="flex flex-wrap items-center gap-3">
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
-          {signedIn && account ? <UserMenu account={account} /> : <LanguageToggle signedIn={signedIn} />}
+          {signedIn && account ? <UserMenu account={account} /> : <LanguageToggle signedIn={signedIn} compact />}
         </div>
       </div>
     </header>
