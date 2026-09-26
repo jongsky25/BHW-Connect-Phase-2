@@ -3,8 +3,10 @@
 # for why). Exits once this run may use the shared e2e Supabase project:
 # no other CI run holds it, and no run that started waiting earlier is still
 # waiting (first come, first served). A run holds the project from the moment
-# its e2e-wait succeeds until its e2e job completes; a run on an older ci.yml,
-# with no e2e-wait job, holds it while its e2e job is in progress.
+# its e2e-wait succeeds until its e2e job completes (the jobs API omits e2e
+# until e2e-wait finishes, so a missing e2e job counts as holding); a run on
+# an older ci.yml, with no e2e-wait job, holds it while its e2e job is in
+# progress.
 #
 # Needs GH_TOKEN with actions:read and the standard GITHUB_REPOSITORY,
 # GITHUB_RUN_ID and GITHUB_RUN_ATTEMPT.
@@ -23,7 +25,7 @@ classify() {
       | (.jobs | map(select(.name == "e2e"))[0]) as $e
       | if $w then
           if $w.status == "in_progress" then {waiting: true, key: [$w.started_at, .run]}
-          elif $w.conclusion == "success" and ($e.status // "completed") != "completed" then {holding: true}
+          elif $w.conclusion == "success" and ($e.status // "not created yet") != "completed" then {holding: true}
           else empty end
         elif ($e.status // "") == "in_progress" then {holding: true}
         else empty end)
