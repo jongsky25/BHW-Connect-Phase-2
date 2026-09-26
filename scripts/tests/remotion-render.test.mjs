@@ -9,19 +9,23 @@ test("positional composition and output name, optional --public", () => {
     outputName: "HandrubSteps",
     publicDir: undefined,
     withAudio: false,
+    captions: undefined,
   });
   assert.deepEqual(
     parseArgs(["HandrubSteps", "handrub-steps", "--public", "training/chapter2-draft"]),
-    { compositionId: "HandrubSteps", outputName: "handrub-steps", publicDir: "training/chapter2-draft", withAudio: false },
+    { compositionId: "HandrubSteps", outputName: "handrub-steps", publicDir: "training/chapter2-draft", withAudio: false, captions: undefined },
   );
   assert.equal(parseArgs(["X", "--public=training/x"]).publicDir, "training/x");
   assert.equal(parseArgs(["X", "--with-audio"]).withAudio, true);
+  assert.equal(parseArgs(["X", "--captions", "hand-hygiene/narration-fil.json"]).captions, "hand-hygiene/narration-fil.json");
 });
 
 test("rejects a missing composition and a --public outside public/", () => {
   assert.throws(() => parseArgs([]), /usage/);
   assert.throws(() => parseArgs(["X", "--public", "../src"]), /under public/);
   assert.throws(() => parseArgs(["X", "--public", ""]), /usage/);
+  assert.throws(() => parseArgs(["X", "--captions", "../../etc/x.json"]), /remotion\/public/);
+  assert.throws(() => parseArgs(["X", "--captions", "hand-hygiene/narration-fil.mp3"]), /timings \.json/);
 });
 
 test("reads the duration from `remotion compositions` output", () => {

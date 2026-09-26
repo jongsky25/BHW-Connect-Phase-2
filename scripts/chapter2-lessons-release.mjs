@@ -45,10 +45,12 @@ export function releasableRevision(draftRevision, liveAssets) {
   const keep = (ids) => (ids ?? []).filter((id) => live.has(id));
   const revision = structuredClone(draftRevision);
   revision.assets = revision.assets.filter((a) => live.has(a.id)).map((a) => {
-    const { review_status: liveStatus } = live.get(a.id);
-    const { video, ...rest } = a;
-    const released = { ...rest, review_status: liveStatus };
-    return live.get(a.id).video ? { ...released, video } : released;
+    const l = live.get(a.id);
+    const { video, videos, ...rest } = a;
+    const released = { ...rest, review_status: l.review_status };
+    // Clip media rides along only on an asset already live as a clip.
+    if (!(l.video || l.videos)) return released;
+    return { ...released, ...(video ? { video } : {}), ...(videos ? { videos } : {}) };
   });
   for (const s of revision.read_sections) s.asset_ids = keep(s.asset_ids);
   for (const s of revision.slides) s.asset_ids = keep(s.asset_ids);

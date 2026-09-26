@@ -9,7 +9,7 @@
 // itself (the clip carries its own <Audio>, per
 // docs/handrub-clip-enhancement-handoff.md §3) uses --with-audio instead.
 //
-//   npm run remotion:render -- <composition-id> [output-name] [--public <dir>] [--with-audio]
+//   npm run remotion:render -- <composition-id> [output-name] [--public <dir>] [--with-audio] [--captions <timings.json>]
 //
 // Writes <output-name>.mp4 and <output-name>-poster.jpg under remotion/out/.
 // With --public (a directory under public/, e.g. training/chapter2-draft),
@@ -21,17 +21,24 @@
 // use it for a composition that carries its own narration, e.g. the handrub
 // clip's per-language compositions (HandrubStepsFil, HandrubStepsEn).
 //
+// --captions <timings.json> (relative to remotion/public, from
+// scripts/remotion-narrate.mjs) also writes a WebVTT captions file for the
+// clip and, with --public, publishes it hashed next to the .mp4 and adds it
+// to the printed `video` fields.
+//
 // Set REMOTION_BROWSER_EXECUTABLE to render with an existing Chromium (e.g.
 // Playwright's headless shell) instead of letting Remotion download one.
 
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFileSync, mkdirSync, readFileSync, statSync } from "node:fs";
+import { copyFileSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { toWebVtt } from "./lib/webvtt.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const REMOTION_DIR = path.join(ROOT, "remotion");
 const OUT_DIR = path.join(REMOTION_DIR, "out");
+const REMOTION_PUBLIC_DIR = path.join(REMOTION_DIR, "public");
 const PUBLIC_DIR = path.join(ROOT, "public");
 
 // The plan's own budget: ~0.5-1 MB for a 20s clip, i.e. ~50 KB/s. Past
@@ -43,17 +50,24 @@ export function parseArgs(argv) {
   const positional = [];
   let publicDir;
   let withAudio = false;
+  let captions;
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--public") publicDir = argv[++i];
     else if (argv[i].startsWith("--public=")) publicDir = argv[i].slice(9);
     else if (argv[i] === "--with-audio") withAudio = true;
+    else if (argv[i] === "--captions") captions = argv[++i];
     else positional.push(argv[i]);
   }
   const [compositionId, outputName] = positional;
-  if (!compositionId || publicDir === "") {
+  if (!compositionId || publicDir === "" || captions === "") {
     throw new Error(
-      "usage: remotion:render -- <composition-id> [output-name] [--public <dir under public/>] [--with-audio]",
+      "usage: remotion:render -- <composition-id> [output-name] [--public <dir under public/>] [--with-audio] [--captions <timings.json under remotion/public/>]",
     );
+  }
+  if (captions !== undefined) {
+    const resolved = path.resolve(REMOTION_PUBLIC_DIR, captions);
+    if (!resolved.startsWith(REMOTION_PUBLIC_DIR + path.sep) || !resolved.endsWith(".json"))
+      throw new Error("--captions must be a timings .json under remotion/public/");
   }
   if (publicDir !== undefined) {
     const resolved = path.resolve(PUBLIC_DIR, publicDir);
@@ -65,6 +79,7 @@ export function parseArgs(argv) {
     outputName: outputName ?? compositionId,
     publicDir,
     withAudio,
+    captions,
   };
 }
 
@@ -116,7 +131,7 @@ export function parseDuration(listing, compositionId) {
 }
 
 function main() {
-  const { compositionId, outputName, publicDir, withAudio } = parseArgs(
+  const { compositionId, outputName, publicDir, withAudio, captions } = parseArgs(
     process.argv.slice(2),
   );
   mkdirSync(OUT_DIR, { recursive: true });
@@ -162,6 +177,13 @@ function main() {
   );
   console.log(`poster  ${posterPath}`);
 
+  const captionsPath = path.join(OUT_DIR, `${outputName}.vtt`);
+  if (captions !== undefined) {
+    const timings = JSON.parse(readFileSync(path.join(REMOTION_PUBLIC_DIR, captions), "utf8"));
+    writeFileSync(captionsPath, toWebVtt(timings));
+    console.log(`captions ${captionsPath}`);
+  }
+
   const budget = SIZE_WARNING_BYTES_PER_SECOND * seconds;
   if (size > budget) {
     console.warn(
@@ -172,6 +194,8 @@ function main() {
   if (publicDir !== undefined) {
     const poster = publish(posterPath, publicDir, outputName, "-poster.jpg");
     const video = publish(videoPath, publicDir, outputName, ".mp4");
+    const track =
+      captions !== undefined ? publish(captionsPath, publicDir, outputName, ".vtt") : undefined;
     console.log("");
     console.log("Lesson asset fields (lesson.json `assets[]`):");
     console.log(
@@ -179,7 +203,11 @@ function main() {
         {
           path: poster.path,
           content_hash: poster.content_hash,
-          video: { ...video, duration_s: Math.round(seconds) },
+          video: {
+            ...video,
+            duration_s: Math.round(seconds),
+            ...(track ? { captions: track } : {}),
+          },
         },
         null,
         2,

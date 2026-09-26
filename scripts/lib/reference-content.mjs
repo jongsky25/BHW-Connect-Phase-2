@@ -245,6 +245,7 @@ export function validateReferenceLesson(
         "provenance",
         "review_status",
         "video",
+        "videos",
       ],
       "asset",
     );
@@ -270,30 +271,52 @@ export function validateReferenceLesson(
     // INC-28 tier 2: a rendered clip (scripts/remotion-render.mjs). `path`
     // stays an image, now the clip's poster, so every place that shows the
     // asset still has a static view carrying the same steps.
-    if (a.video !== undefined) {
-      const v = a.video;
-      fields(v, ["path", "content_hash", "duration_s"], "asset video");
+    const hashedFile = (f, ext, label) => {
       assert(
-        typeof v.content_hash === "string" &&
-          /^[0-9a-f]{64}$/.test(v.content_hash) &&
-          typeof v.path === "string" &&
-          v.path.includes(v.content_hash.slice(0, 12)),
-        "asset video path must include its content hash",
+        typeof f.content_hash === "string" &&
+          /^[0-9a-f]{64}$/.test(f.content_hash) &&
+          typeof f.path === "string" &&
+          f.path.includes(f.content_hash.slice(0, 12)),
+        `${label} path must include its content hash`,
       );
       assert(
-        /^\/training\/[a-zA-Z0-9_./-]+\.mp4$/.test(v.path) &&
-          !v.path.includes(".."),
-        "asset video must be an .mp4 under /training/",
+        new RegExp(`^/training/[a-zA-Z0-9_./-]+\\.${ext}$`).test(f.path) &&
+          !f.path.includes(".."),
+        `${label} must be an .${ext} under /training/`,
       );
+      assert(assetExists(f.path, f.content_hash), `missing asset ${f.path}`);
+    };
+    const checkVideo = (v, label, narrated) => {
+      fields(v, ["path", "content_hash", "duration_s", "captions"], label);
+      hashedFile(v, "mp4", label);
       assert(
         Number.isInteger(v.duration_s) && v.duration_s > 0 && v.duration_s <= 90,
         "asset video duration must be 1-90 seconds",
+      );
+      // A clip with speech needs captions; the alt-text disclosure is not one.
+      if (narrated) assert(v.captions !== undefined, `${label} requires captions`);
+      if (v.captions !== undefined) {
+        fields(v.captions, ["path", "content_hash"], `${label} captions`);
+        hashedFile(v.captions, "vtt", `${label} captions`);
+      }
+    };
+    if (a.video !== undefined || a.videos !== undefined) {
+      assert(
+        a.video === undefined || a.videos === undefined,
+        "asset takes video or videos, not both",
       );
       assert(
         /\.(jpe?g|png|webp)$/.test(a.path),
         "asset video poster must be a raster image",
       );
-      assert(assetExists(v.path, v.content_hash), `missing asset ${v.path}`);
+    }
+    if (a.video !== undefined) checkVideo(a.video, "asset video", false);
+    if (a.videos !== undefined) {
+      fields(a.videos, ["fil", "en"], "asset videos");
+      for (const lang of ["fil", "en"]) {
+        assert(a.videos[lang] !== undefined, `asset videos requires ${lang}`);
+        checkVideo(a.videos[lang], `asset videos.${lang}`, true);
+      }
     }
   });
   for (const [mode, items] of [

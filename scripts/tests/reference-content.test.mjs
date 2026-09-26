@@ -336,6 +336,39 @@ test("rejects a clip whose poster is not a raster image", () => {
   l.revision.assets[0].path = `/training/clip-${"a".repeat(12)}.svg`;
   assert.throws(() => validateReferenceLesson(l), /poster/);
 });
+// A narrated clip: one render per language, each with WebVTT captions.
+const withVideos = () => {
+  const l = withVideo();
+  const clip = (c, d) => ({
+    path: `/training/clip-${c.repeat(12)}.mp4`,
+    content_hash: c.repeat(64),
+    duration_s: 60,
+    captions: { path: `/training/clip-${d.repeat(12)}.vtt`, content_hash: d.repeat(64) },
+  });
+  delete l.revision.assets[0].video;
+  l.revision.assets[0].videos = { fil: clip("b", "c"), en: clip("d", "e") };
+  return l;
+};
+test("an asset may carry a narrated clip per language, each with captions", () =>
+  validateReferenceLesson(withVideos()));
+for (const [name, mutate, message] of [
+  ["a narrated clip without captions", (a) => delete a.videos.en.captions, /requires captions/],
+  ["a narrated clip missing a language", (a) => delete a.videos.en, /requires en/],
+  ["captions that are not .vtt", (a) => (a.videos.fil.captions.path = `/training/clip-${"c".repeat(12)}.srt`), /\.vtt/],
+  ["captions path without their hash", (a) => (a.videos.fil.captions.path = "/training/clip.vtt"), /content hash/],
+  ["both video and videos", (a) => (a.video = a.videos.fil), /not both/],
+  ["an unknown language", (a) => (a.videos.es = a.videos.fil), /unknown field es/],
+])
+  test(`rejects ${name}`, () => {
+    const l = withVideos();
+    mutate(l.revision.assets[0]);
+    assert.throws(() => validateReferenceLesson(l), message);
+  });
+test("rejects narrated captions whose file is missing", () =>
+  assert.throws(
+    () => validateReferenceLesson(withVideos(), { assetExists: (p) => !p.endsWith(".vtt") }),
+    /missing asset .*\.vtt/,
+  ));
 test("rejects a clip whose file is missing or does not match its hash", () =>
   assert.throws(
     () =>

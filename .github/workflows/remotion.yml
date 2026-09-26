@@ -54,8 +54,9 @@ jobs:
       - name: Render every composition
         run: |
           set -euo pipefail
-          # `--quiet` prints one ID per line; keep only ID-shaped lines.
-          ids=$(cd remotion && npx remotion compositions --quiet | grep -E '^[A-Za-z0-9-]+$')
+          # `--quiet` ends with the IDs space-separated on one line; split
+          # that line and keep only ID-shaped words.
+          ids=$(cd remotion && npx remotion compositions --quiet | tail -n 1 | tr -s ' \t' '\n' | grep -E '^[A-Za-z0-9-]+$')
           for id in $ids; do
             node scripts/remotion-render.mjs "$id" 2>&1 | tee -a render.log
           done

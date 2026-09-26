@@ -56,6 +56,18 @@
             "a named independent reviewer's sign-off, or supplied review artifacts",
             "a change to this file's own review_status/publication_allowed fields, which chapter2-validate.mjs still requires to stay draft/false for the authoring package"
           ]
+        },
+        {
+          "asset_id": "handrub-steps",
+          "status": "approved-by-user-attestation",
+          "date": "2026-09-26",
+          "evidence": "User messages: '2. agree' (the Filipino/English narration script) and 'i approve' (the narrated Filipino sample render)",
+          "scope": "The Gemini TTS narration (voice Kore) of the approved script, the clip re-paced to it, and the per-language narrated videos with WebVTT captions; English was rendered from the same approved script after the Filipino sample was approved",
+          "not_equivalent_to": [
+            "independent clinical review",
+            "an independent Filipino/English review of the narration audio",
+            "the lesson's own visual_approval (action-sequence remains draft)"
+          ]
         }
       ],
       "audio_status": "scripts-only",
