@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { LanguageToggle } from "@/components/language-toggle";
+import { MobileDrawer } from "@/components/nav/mobile-drawer";
 import { MoreMenu } from "@/components/nav/more-menu";
 import { NavLink } from "@/components/nav/nav-link";
 import { UserMenu } from "@/components/nav/user-menu";
@@ -30,7 +31,14 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-canvas">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2 md:gap-6">
+          {signedIn && account ? (
+            <MobileDrawer
+              account={account}
+              items={navItems}
+              labels={Object.fromEntries(navItems.map((item) => [item.id, tNav(item.labelKey)]))}
+            />
+          ) : null}
           <Link
             href={signedIn ? "/home" : "/"}
             className="rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"

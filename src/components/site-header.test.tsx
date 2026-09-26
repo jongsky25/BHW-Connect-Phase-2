@@ -11,6 +11,13 @@ vi.mock("@/components/language-toggle", () => ({ LanguageToggle: () => <span>Lan
 vi.mock("@/components/notifications/notification-bell", () => ({ NotificationBell: () => <span>Notifications</span> }));
 // UserMenu gets its own dedicated test (user-menu.test.tsx); here we only
 // need to see which account it was composed with.
+// MobileDrawer has its own test (mobile-drawer.test.tsx); here we only need
+// to see whether the header renders it, and for which account.
+vi.mock("@/components/nav/mobile-drawer", () => ({
+  MobileDrawer: ({ account, items }: { account: { username: string }; items: unknown[] }) => (
+    <span>MobileDrawer:{account.username}:{items.length}</span>
+  ),
+}));
 vi.mock("@/components/nav/user-menu", () => ({
   UserMenu: ({ account }: { account: { username: string; role: string } }) => (
     <span>UserMenu:{account.username}:{account.role}</span>
@@ -87,6 +94,17 @@ describe("SiteHeader account indicator", () => {
     show("en", null);
     expect(screen.getByText("Language toggle")).toBeInTheDocument();
     expect(screen.queryByText(/^UserMenu:/)).not.toBeInTheDocument();
+  });
+
+  it("renders the mobile drawer with the signed-in account's nav items", () => {
+    show("en", { username: "rosa.bhw", role: "bhw" });
+    // chat, kb, settings with every flag off
+    expect(screen.getByText("MobileDrawer:rosa.bhw:3")).toBeInTheDocument();
+  });
+
+  it("renders no mobile drawer on signed-out pages", () => {
+    show("en", null);
+    expect(screen.queryByText(/^MobileDrawer:/)).not.toBeInTheDocument();
   });
 });
 

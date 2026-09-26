@@ -46,3 +46,24 @@ body {
     transition: none;
   }
 }
+
+/* Header increment 1.4: the mobile drawer (<dialog class="mobile-drawer">)
+   slides in from the left when opened with showModal(). */
+.mobile-drawer[open] {
+  animation: mobile-drawer-in 180ms ease-out;
+}
+
+@keyframes mobile-drawer-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-drawer[open] {
+    animation: none;
+  }
+}
