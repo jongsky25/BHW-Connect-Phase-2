@@ -324,7 +324,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 1.3 User menu + sign out | ☐ | |
 | 1.4 Mobile drawer | ☐ | |
 | 1.5 Header a11y pass | ☐ | |
-| 2.1 Settings model | ☐ | |
+| 2.1 Settings model | ☑ | |
 | 2.2 Settings RPC migration | ☐ | |
 | 2.3 Apply everywhere (SSR + cookie) | ☐ | |
 | 2.4 Settings page restructure | ☐ | |
