@@ -1,0 +1,41 @@
+{
+  "target": "Los Baños production",
+  "project_id": "ltzicxyefizxoqhfuuzc",
+  "published_on": "2026-09-26",
+  "status": "published",
+  "supersedes": "los-banos-2026-09-26-handrub-clip.json",
+  "scope": "Replaces the silent handrub-steps clip on one already-published lesson with narrated Filipino and English videos, each with WebVTT captions. Only this lesson's assets changed; the other six 2.3 lessons were republished unchanged, and no module or program identity changed.",
+  "module_id": "609cab9b-d846-47b1-8e93-fdc6d4a362de",
+  "lesson": {
+    "module_key": "03-infection-control",
+    "lesson_key": "hand-hygiene",
+    "id": "b9f69e51-34bc-46ce-b2d3-821056a44f7b",
+    "previous_revision": "58bb631d-92c7-4d82-967b-e723f0c725f4",
+    "new_revision": "c0a1bc07-a3ae-499e-9603-528c0c201fd3",
+    "new_revision_content_hash": "bc72c713a3179b4e5439645a30d08a92dac8855222ec10a28af564dbe404b2c0"
+  },
+  "asset_changed": {
+    "id": "handrub-steps",
+    "removed": { "video_content_hash": "2f831aea2a9b9ab66f9ae1af908a83cea71b863569b5232d66885ff86ea4801d" },
+    "added": {
+      "fil": {
+        "video_content_hash": "2d60563534b24dd1af7c7fce5c30fedd41280f3d3c06145d8ba484ef5bbc7cbe",
+        "captions_content_hash": "2a64e3b498f7a7805b10aa241c8b7c05910a64788bf04a2df1d47fb85afdc34f",
+        "duration_s": 64
+      },
+      "en": {
+        "video_content_hash": "6b8656639d7969a1bfd766f75c0fe30fc3702026ea58de88a5de42ef35f1c675",
+        "captions_content_hash": "d123003278f36f077bae6ebedd239ef6a461f6337131ca0e2529732f4633e568",
+        "duration_s": 55
+      }
+    },
+    "review_status_in_release_snapshot": "approved (carried from the live revision)"
+  },
+  "media_deployed_in": "main c2cf7652 (PR #141); Vercel production deployment dpl_D5fksqXvT2Yj8Z6WnyT6Lqob8jru READY before publication",
+  "published_via": "scripts/chapter2-lessons-release.mjs --project ltzicxyefizxoqhfuuzc --modules 03-infection-control --apply",
+  "approvals": {
+    "narration": "User approved the Filipino/English narration script ('2. agree') and the narrated Filipino sample ('i approve'), 26 Sep 2026 (see drafts/03-infection-control/review.json asset_visual_approvals). The English render uses the same approved script and voice.",
+    "not_equivalent_to": "an independent Filipino/English review of the narration audio, or clinical sign-off"
+  },
+  "method": "Built from the draft package by chapter2-lessons-release.mjs, which releases clip media only onto an asset already live as a clip and keeps its live review_status. The authoring draft keeps review_status: \"draft\" for this asset, per chapter2-validate.mjs."
+}
