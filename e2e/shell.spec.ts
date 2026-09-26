@@ -48,6 +48,20 @@ test("a signed-in BHW's header app name goes to /home, not the public landing pa
   await expect(page).toHaveURL("/home");
 });
 
+test("signing out from the header's user menu on a non-home page lands on /login", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+  await page.goto("/settings");
+  await page.getByRole("button", { name: /^Naka-login bilang/ }).click();
+  await page.getByRole("button", { name: "Mag-sign out" }).click();
+
+  await expect(page).toHaveURL("/login", { timeout: 10_000 });
+});
+
 test("breadcrumbs let a signed-in BHW navigate back up from a nested page", async ({ page }) => {
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_BHW.username);

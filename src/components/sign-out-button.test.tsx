@@ -46,4 +46,13 @@ describe("SignOutButton", () => {
     await waitFor(() => expect(state.push).toHaveBeenCalledWith("/login"));
     expect(state.calls).toEqual(["clearSuperAdminCookies", "signOut", "clearOfflineCache"]);
   });
+
+  it("never double-submits from a second click while sign-out is in flight", async () => {
+    renderButton();
+    const button = screen.getByRole("button");
+    fireEvent.click(button);
+    fireEvent.click(button);
+    await waitFor(() => expect(state.push).toHaveBeenCalledWith("/login"));
+    expect(state.calls).toEqual(["clearSuperAdminCookies", "signOut", "clearOfflineCache"]);
+  });
 });
