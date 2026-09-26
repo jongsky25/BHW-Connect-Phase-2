@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import type { AdminUserRow } from "@/lib/admin/types";
 import type { OrgUnitNode } from "@/lib/org-units";
@@ -37,7 +38,7 @@ export function UsersConsole({ initialUsers, rootOrgUnit, query, page, totalCoun
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       {tempPassword ? (
         <div className="flex items-start justify-between gap-4 rounded-md bg-celebration px-4 py-3 text-celebration-ink">

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { mapSurveyRpcError } from "@/lib/surveys/error-messages";
 import type { Survey, SurveyStatus } from "@/lib/surveys/types";
@@ -62,7 +63,7 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       <SurveyForm
         rootOrgUnit={rootOrgUnit}

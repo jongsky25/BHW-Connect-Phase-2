@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { mapAnnouncementRpcError } from "@/lib/announcements/error-messages";
 import type { Announcement } from "@/lib/announcements/types";
@@ -36,7 +37,7 @@ export function AnnouncementsConsole({ initialAnnouncements, rootOrgUnit, locale
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       <AnnouncementForm
         rootOrgUnit={rootOrgUnit}

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { AiStatusPanel } from "@/components/admin/dashboard/ai-status-panel";
 import { StatCard } from "@/components/admin/dashboard/stat-card";
@@ -85,7 +86,7 @@ export default async function AdminDashboardActivityPage({
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <StatCard label={t("cardActiveBhws")} value={`${summary?.pct_active_bhws ?? 0}%`} />

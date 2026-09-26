@@ -155,6 +155,15 @@
   },
   "admin": {
     "nav": {
+      "menuLabel": "Admin menu",
+      "groups": {
+        "overview": "Overview",
+        "people": "People",
+        "knowledge": "Knowledge base",
+        "training": "Training",
+        "engagement": "Engagement",
+        "system": "System"
+      },
       "dashboard": "Dashboard",
       "users": "Users",
       "audit": "Audit log",
@@ -163,7 +172,7 @@
       "kbArticles": "Articles",
       "kbSynonyms": "Synonyms",
       "flags": "Feature flags",
-      "settings": "Settings",
+      "myPreferences": "My preferences",
       "announcements": "Announcements",
       "surveys": "Surveys",
       "courses": "Courses",

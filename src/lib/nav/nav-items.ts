@@ -120,7 +120,7 @@ const NAV_ITEM_DEFS: NavItemDef[] = [
   },
   {
     id: "admin-users",
-    href: "/admin/users",
+    href: "/admin/dashboard",
     labelKey: "adminConsoleCta",
     group: "admin",
     match: "prefix",

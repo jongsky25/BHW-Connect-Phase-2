@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { EmptyState } from "@/components/empty-state";
 import { mapFlipchartRpcError } from "@/lib/flipcharts/error-messages";
 import type { FlipChart, FlipChartPage } from "@/lib/flipcharts/types";
@@ -70,7 +71,7 @@ export function AdminFlipchartConsole({ initialCharts, authorUserId, authorFullN
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+      <AdminPageHeader title={t("heading")} />
 
       {error ? (
         <p role="alert" className="text-sm text-danger">

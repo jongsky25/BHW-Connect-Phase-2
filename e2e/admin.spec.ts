@@ -14,7 +14,11 @@ test("admin creates a BHW, resets their password, deactivates them, and every ac
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
   await page.getByRole("link", { name: "Admin console" }).click();
-  await expect(page).toHaveURL("/admin/users");
+  await expect(page).toHaveURL("/admin/dashboard");
+
+  // Users has its own page under the admin sidebar; go straight there since
+  // this test is about user CRUD, not admin navigation chrome.
+  await page.goto("/admin/users");
 
   await page.getByLabel("Username", { exact: true }).fill(username);
   await page.getByLabel("Buong Pangalan").fill(fullName);
