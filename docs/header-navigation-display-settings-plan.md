@@ -238,7 +238,8 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 
 ### 3.3 Accent colourways (`data-accent`) and preset pairs
 
-- **Accent colourways** (text-safe, used by `--color-secondary`): `teal` (default, current Bayanihan Teal `#0c7c7e`), `equity`, `marigold` (uses the text-safe marigold), `emerald`, `violet`, `rose`, `slate`.
+- **Accent colourways** (text-safe, used by `--color-secondary`): `teal` (default, Bayanihan Teal), `equity`, `marigold` (uses the text-safe marigold), `emerald`, `violet`, `rose`, `slate`.
+- **Shipped values** (increment 3.3, PR TBD): unlike main colours, `--color-secondary` is only ever text/border, never a fill, so each colourway is just a light-canvas-safe value and a dark-canvas-safe one (no on-secondary/UI-focus-ring tradeoff to balance against) — five of the six reuse the exact fill/display pair already tuned for the same-named `data-primary` colourway in 3.2. Bayanihan Teal itself was retuned by a hair, from `#0c7c7e` (4.486:1 on the light canvas — just short of 4.5:1) to `#0c787a`/`#0f9ea0` (light/dark), which also fixed the pre-existing gap in the 3.1 contrast guard. See `src/styles/tokens.css`'s comment above the `data-accent` rules, and `tokens-contrast.test.ts` for the per-colourway checks.
 - **Preset pairs**, exported from `palette.ts`:
 
 | Preset | Main | Accent |
@@ -249,7 +250,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | Sunrise | rose | marigold |
 | Calm | slate | teal |
 
-  Choosing a preset sets both keys. Changing either key afterwards shows "Custom".
+  Done: `colorPresets` in `src/lib/settings/palette.ts`, cross-checked against the plan table by `palette.test.ts`. Choosing a preset sets both keys. Changing either key afterwards shows "Custom" — that comparison, and the "Main and accent are the same colour. Links may be harder to spot" hint below, are part of the picker UI (increment 3.5), not this one.
 - Same main + accent is allowed but shows a gentle hint ("Main and accent are the same colour. Links may be harder to spot").
 
 ### 3.4 Equity branding
@@ -331,7 +332,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 2.4 Settings page restructure | ☑ | |
 | 3.1 Contrast guard test | ☑ | |
 | 3.2 Main colourways + Equity Blue | ☑ | |
-| 3.3 Accent colourways + presets | ☐ | |
+| 3.3 Accent colourways + presets | ☑ | |
 | 3.4 Equity mark + credit | ☐ | |
 | 3.5 Colour picker + quick popover | ☐ | |
 | 4.1 Text `sm` + density | ☐ | |

@@ -132,15 +132,15 @@ function PreviewCard() {
         <span className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary">
           {t("previewButton")}
         </span>
-        {/* Not text-secondary: #0c7c7e measures 4.48:1 on the light canvas
-            and 4.19:1 on the high-contrast black one, and isn't
-            theme-adjusted yet (increment 3.1's contrast guard / 3.3's accent
-            colourways). primary-text is the token tokens.css already tunes
-            to be text-safe on canvas in every theme. */}
+        {/* text-secondary (the accent colour, per docs/header-navigation-
+            display-settings-plan.md's "links and secondary UI" role):
+            increment 3.3 made --color-secondary theme-adjusted so this
+            clears 4.5:1 on canvas in every theme, the same guarantee
+            --color-primary-text already had. */}
         <a
           href="#"
           onClick={(event) => event.preventDefault()}
-          className="text-sm font-medium text-primary-text underline underline-offset-2"
+          className="text-sm font-medium text-secondary underline underline-offset-2"
         >
           {t("previewLink")}
         </a>

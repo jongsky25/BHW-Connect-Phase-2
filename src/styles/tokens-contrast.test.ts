@@ -35,10 +35,15 @@ type Declarations = Record<string, string>;
 // already covered by the selectors above.
 const PRIMARY_COLOURWAYS = ["equity", "teal", "violet", "emerald", "rose", "crimson", "slate"] as const;
 
-function colourwaySelectors(colour: string) {
+// Increment 3.3's accent colourways (docs plan §6 3.3): same idea, but for
+// `data-accent` / `--color-secondary`. "teal" isn't listed — Bayanihan Teal
+// is the untagged accent default, same as marigold above.
+const ACCENT_COLOURWAYS = ["equity", "marigold", "emerald", "violet", "rose", "slate"] as const;
+
+function attributeSelectors(attribute: string, colour: string) {
   return {
-    base: `:root[data-primary="${colour}"]`,
-    dark: `:root[data-theme="dark"][data-primary="${colour}"]`,
+    base: `:root[${attribute}="${colour}"]`,
+    dark: `:root[data-theme="dark"][${attribute}="${colour}"]`,
   } as const;
 }
 
@@ -50,7 +55,8 @@ const TOP_LEVEL_SELECTORS = [
   ':root[data-theme="dark"]',
   ':root[data-theme="light"][data-contrast="high"]',
   ':root[data-theme="dark"][data-contrast="high"]',
-  ...PRIMARY_COLOURWAYS.flatMap((colour) => Object.values(colourwaySelectors(colour))),
+  ...PRIMARY_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-primary", colour))),
+  ...ACCENT_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-accent", colour))),
 ] as const;
 
 /**
@@ -182,36 +188,50 @@ function resolvedColor(theme: ThemeName, token: string): string {
   return resolveColor(raw, tokens);
 }
 
-// One theme-layer set per colourway, built the same way as `themeLayers`
-// above but with that colourway's own `:root[data-primary="x"]` (and, for
-// the two dark layers, its `[data-theme="dark"]` redirect) spread in last so
-// it wins over the marigold values it's replacing.
-const colourwayThemeLayers = Object.fromEntries(
-  PRIMARY_COLOURWAYS.map((colour) => {
-    const { base: baseSelector, dark: darkSelector } = colourwaySelectors(colour);
-    const colourwayBase = mergeDeclarations(rules, baseSelector);
-    const colourwayDark = mergeDeclarations(rules, darkSelector);
+// One theme-layer set per colourway of a given attribute (`data-primary` or
+// `data-accent`), built the same way as `themeLayers` above but with that
+// colourway's own base selector (and, for the two dark layers, its
+// `[data-theme="dark"]` redirect) spread in last so it wins over the
+// default values it's replacing.
+function buildColourwayThemeLayers<Colour extends string>(
+  attribute: string,
+  colours: readonly Colour[],
+): Record<Colour, typeof themeLayers> {
+  return Object.fromEntries(
+    colours.map((colour) => {
+      const { base: baseSelector, dark: darkSelector } = attributeSelectors(attribute, colour);
+      const colourwayBase = mergeDeclarations(rules, baseSelector);
+      const colourwayDark = mergeDeclarations(rules, darkSelector);
 
-    return [
-      colour,
-      {
-        light: { ...base, ...lightOverride, ...colourwayBase },
-        dark: { ...base, ...darkOverride, ...colourwayBase, ...colourwayDark },
-        "high-contrast light": { ...base, ...lightOverride, ...lightHighContrastOverride, ...colourwayBase },
-        "high-contrast dark": {
-          ...base,
-          ...darkOverride,
-          ...darkHighContrastOverride,
-          ...colourwayBase,
-          ...colourwayDark,
+      return [
+        colour,
+        {
+          light: { ...base, ...lightOverride, ...colourwayBase },
+          dark: { ...base, ...darkOverride, ...colourwayBase, ...colourwayDark },
+          "high-contrast light": { ...base, ...lightOverride, ...lightHighContrastOverride, ...colourwayBase },
+          "high-contrast dark": {
+            ...base,
+            ...darkOverride,
+            ...darkHighContrastOverride,
+            ...colourwayBase,
+            ...colourwayDark,
+          },
         },
-      },
-    ] as const;
-  }),
-) as Record<(typeof PRIMARY_COLOURWAYS)[number], typeof themeLayers>;
+      ] as const;
+    }),
+  ) as Record<Colour, typeof themeLayers>;
+}
 
-function resolvedColourwayColor(colour: (typeof PRIMARY_COLOURWAYS)[number], theme: ThemeName, token: string): string {
-  const tokens = colourwayThemeLayers[colour][theme];
+const primaryColourwayThemeLayers = buildColourwayThemeLayers("data-primary", PRIMARY_COLOURWAYS);
+const accentColourwayThemeLayers = buildColourwayThemeLayers("data-accent", ACCENT_COLOURWAYS);
+
+function resolvedColourwayColor<Colour extends string>(
+  layers: Record<Colour, typeof themeLayers>,
+  colour: Colour,
+  theme: ThemeName,
+  token: string,
+): string {
+  const tokens = layers[colour][theme];
   const raw = tokens[token];
   if (!raw) throw new Error(`Colourway "${colour}" theme "${theme}" has no declaration for ${token}`);
   return resolveColor(raw, tokens);
@@ -232,30 +252,13 @@ describe("tokens.css contrast guard (increment 3.1)", () => {
     expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 
-  // --color-secondary (Bayanihan Teal, #0c7c7e) is a known, already-documented
-  // gap: see the comment in src/components/settings/settings-form.tsx's
-  // PreviewCard, which avoids `text-secondary` for exactly this reason. It
-  // isn't theme-adjusted yet, so it only clears 4.5:1 on the high-contrast
-  // light canvas (white); fixing it is increment 3.3 (accent colourways),
-  // not this one. `it.fails` keeps that failure visible without turning this
-  // whole suite red — flip each case back to a plain `it` as 3.3 fixes it.
-  const secondaryOnCanvas = (theme: ThemeName) =>
-    contrastRatio(resolvedColor(theme, "--color-secondary"), resolvedColor(theme, "--color-canvas"));
-
-  it("high-contrast light: secondary (accent) on canvas ≥ 4.5:1", () => {
-    expect(secondaryOnCanvas("high-contrast light")).toBeGreaterThanOrEqual(4.5);
-  });
-
-  it.fails("light: secondary (accent) on canvas ≥ 4.5:1 (known gap, see 3.3)", () => {
-    expect(secondaryOnCanvas("light")).toBeGreaterThanOrEqual(4.5);
-  });
-
-  it.fails("dark: secondary (accent) on canvas ≥ 4.5:1 (known gap, see 3.3)", () => {
-    expect(secondaryOnCanvas("dark")).toBeGreaterThanOrEqual(4.5);
-  });
-
-  it.fails("high-contrast dark: secondary (accent) on canvas ≥ 4.5:1 (known gap, see 3.3)", () => {
-    expect(secondaryOnCanvas("high-contrast dark")).toBeGreaterThanOrEqual(4.5);
+  // --color-secondary (Bayanihan Teal) used to be a known, already-documented
+  // gap here (only cleared 4.5:1 on the high-contrast light canvas), fixed by
+  // increment 3.3's retune + dark-canvas twin — see the comment on its
+  // declaration in tokens.css.
+  it.each(themeNames)("%s: secondary (accent) on canvas ≥ 4.5:1", (theme) => {
+    const ratio = contrastRatio(resolvedColor(theme, "--color-secondary"), resolvedColor(theme, "--color-canvas"));
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 
   it.each(themeNames)("%s: primary vs canvas (focus ring / UI) ≥ 3:1", (theme) => {
@@ -278,26 +281,38 @@ describe("tokens.css main-colour colourways (increment 3.2)", () => {
 
   it.each(cases)("%s/%s: on-primary text on primary fill ≥ 4.5:1", (colour, theme) => {
     const ratio = contrastRatio(
-      resolvedColourwayColor(colour, theme, "--color-on-primary"),
-      resolvedColourwayColor(colour, theme, "--color-primary"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-on-primary"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-primary"),
     );
     expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 
   it.each(cases)("%s/%s: primary-text on canvas ≥ 4.5:1", (colour, theme) => {
     const ratio = contrastRatio(
-      resolvedColourwayColor(colour, theme, "--color-primary-text"),
-      resolvedColourwayColor(colour, theme, "--color-canvas"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-primary-text"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-canvas"),
     );
     expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 
   it.each(cases)("%s/%s: primary vs canvas (focus ring / UI) ≥ 3:1", (colour, theme) => {
     const ratio = contrastRatio(
-      resolvedColourwayColor(colour, theme, "--color-primary"),
-      resolvedColourwayColor(colour, theme, "--color-canvas"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-primary"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-canvas"),
     );
     expect(ratio).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe("tokens.css accent colourways (increment 3.3)", () => {
+  const cases = ACCENT_COLOURWAYS.flatMap((colour) => themeNames.map((theme) => [colour, theme] as const));
+
+  it.each(cases)("%s/%s: secondary (accent) on canvas ≥ 4.5:1", (colour, theme) => {
+    const ratio = contrastRatio(
+      resolvedColourwayColor(accentColourwayThemeLayers, colour, theme, "--color-secondary"),
+      resolvedColourwayColor(accentColourwayThemeLayers, colour, theme, "--color-canvas"),
+    );
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 });
 

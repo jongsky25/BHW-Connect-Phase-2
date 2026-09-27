@@ -32,7 +32,15 @@
      was INC-19a gap #2 — text-canvas on bg-primary silently broke to
      3.35:1 in dark mode once canvas went dark). */
   --color-on-primary: #fdf6f0;
-  --color-secondary: #0c7c7e; /* Bayanihan Teal */
+  /* Bayanihan Teal, the default accent colourway (increment 3.3,
+     docs/header-navigation-display-settings-plan.md §6 3.3) — used only as
+     text/border (text-secondary, border-secondary), never a fill, so unlike
+     --color-primary this needs no on-secondary/UI-focus-ring tradeoff, just
+     enough contrast to read as text. Retuned by a hair from the original
+     #0c7c7e (4.486:1 on the light canvas — just short of 4.5:1) to clear
+     it with margin; the dark-mode blocks below give it a lighter dark-canvas
+     tint the same way the status colours already have one. */
+  --color-secondary: #0c787a;
 
   /* Celebratory / progress accent — pair ONLY with dark ink text, never light text */
   --color-celebration: #ffc857; /* Sampaguita Yellow */
@@ -57,6 +65,7 @@
     --color-canvas: #221b16;
     --color-ink: #f5ede4;
     --color-primary-text: var(--color-primary-display);
+    --color-secondary: #0f9ea0;
     --color-success: #289f5a;
     --color-warning: #ba750a;
     --color-danger: #d67575;
@@ -83,6 +92,7 @@
   --color-canvas: #221b16;
   --color-ink: #f5ede4;
   --color-primary-text: var(--color-primary-display);
+  --color-secondary: #0f9ea0;
   --color-success: #289f5a;
   --color-warning: #ba750a;
   --color-danger: #d67575;
@@ -266,4 +276,101 @@
 
 :root[data-theme="dark"][data-primary="slate"] {
   --color-primary-text: var(--color-primary-display);
+}
+
+/* Accent colourways (increment 3.3,
+   docs/header-navigation-display-settings-plan.md §6 3.3): `data-accent`
+   swaps out Bayanihan Teal (the default, defined in the unconditioned
+   `:root` block and its dark-mode blocks above) for another accent. Unlike
+   `data-primary`, there's no fill/on-fill pairing to keep in a narrow
+   luminance band here — `--color-secondary` is only ever used as text or a
+   border — so each colourway is just two values: light-canvas-safe and
+   dark-canvas-safe. Five of these six colourways reuse the exact fill/
+   display hex pair already tuned for the same-named `data-primary`
+   colourway above (already proven to clear 4.5:1 as text against both
+   canvases); "marigold" has no `data-primary="marigold"` rule to reuse
+   from (it's the untagged primary default), so its pair is restated here
+   literally from the unconditioned `:root` block's own Marigold values. */
+:root[data-accent="equity"] {
+  --color-secondary: #1f63e9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="equity"] {
+    --color-secondary: #5a8cef;
+  }
+}
+
+:root[data-theme="dark"][data-accent="equity"] {
+  --color-secondary: #5a8cef;
+}
+
+:root[data-accent="marigold"] {
+  --color-secondary: #b84e12;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="marigold"] {
+    --color-secondary: #e8641c;
+  }
+}
+
+:root[data-theme="dark"][data-accent="marigold"] {
+  --color-secondary: #e8641c;
+}
+
+:root[data-accent="emerald"] {
+  --color-secondary: #1f7b4e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="emerald"] {
+    --color-secondary: #29a166;
+  }
+}
+
+:root[data-theme="dark"][data-accent="emerald"] {
+  --color-secondary: #29a166;
+}
+
+:root[data-accent="violet"] {
+  --color-secondary: #7857c9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="violet"] {
+    --color-secondary: #9980d6;
+  }
+}
+
+:root[data-theme="dark"][data-accent="violet"] {
+  --color-secondary: #9980d6;
+}
+
+:root[data-accent="rose"] {
+  --color-secondary: #c33563;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="rose"] {
+    --color-secondary: #d76b8f;
+  }
+}
+
+:root[data-theme="dark"][data-accent="rose"] {
+  --color-secondary: #d76b8f;
+}
+
+:root[data-accent="slate"] {
+  --color-secondary: #5b6d87;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="slate"] {
+    --color-secondary: #7e8fa8;
+  }
+}
+
+:root[data-theme="dark"][data-accent="slate"] {
+  --color-secondary: #7e8fa8;
 }

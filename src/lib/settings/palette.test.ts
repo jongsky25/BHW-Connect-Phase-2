@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import { primaryColors } from "./types";
-import { primaryColorHex } from "./palette";
+import { accentColors, primaryColors } from "./types";
+import { colorPresets, primaryColorHex } from "./palette";
 
 // primaryColorHex duplicates tokens.css's --color-primary per colourway (see
 // the comment on that map for why). This test is what keeps the duplicate
@@ -38,5 +38,30 @@ describe("primaryColorHex", () => {
     for (const hex of Object.values(primaryColorHex)) {
       expect(hex).toMatch(/^#[0-9a-fA-F]{6}$/);
     }
+  });
+});
+
+describe("colorPresets", () => {
+  it("has one entry per preset id, no duplicates", () => {
+    const ids = colorPresets.map((preset) => preset.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it.each(colorPresets.map((preset) => [preset.id, preset] as const))(
+    "%s: primary and accent are both valid colourway ids",
+    (_id, preset) => {
+      expect(primaryColors).toContain(preset.primary);
+      expect(accentColors).toContain(preset.accent);
+    },
+  );
+
+  it("matches the plan's preset table (docs/header-navigation-display-settings-plan.md §6 3.3)", () => {
+    expect(colorPresets).toEqual([
+      { id: "bayanihan", primary: "marigold", accent: "teal" },
+      { id: "equity", primary: "equity", accent: "marigold" },
+      { id: "garden", primary: "emerald", accent: "violet" },
+      { id: "sunrise", primary: "rose", accent: "marigold" },
+      { id: "calm", primary: "slate", accent: "teal" },
+    ]);
   });
 });
