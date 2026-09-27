@@ -11,12 +11,12 @@ name: E2E test user purge
 # they've reviewed a few dry runs and are ready to let it actually
 # delete on schedule too.
 #
-# Unlike retention-purge.yml (which authenticates with the pilot
-# project's service-role key), the shared e2e project has no
-# service-role secret wired into CI — only an anon key plus the
-# admin.stable fixture's password, the same credential e2e specs
-# already sign in with. rpc_e2e_purge_test_users accepts an admin
-# caller for exactly this reason.
+# E2E now runs against the pilot project (the one database for this
+# phase — see docs/deploy-runbook.md's "One database" section), so this
+# purges the pilot. It signs in as admin.stable with the anon key, the
+# same credential e2e specs already use, rather than the service-role
+# key; rpc_e2e_purge_test_users accepts an admin caller for exactly
+# this reason. It only ever matches `e2e.%` usernames older than 24h.
 on:
   schedule:
     - cron: "0 4 * * 1" # every Monday, 04:00 UTC
@@ -37,13 +37,13 @@ jobs:
     steps:
       - name: Sign in as admin.stable and call rpc_e2e_purge_test_users
         env:
-          SUPABASE_URL: ${{ secrets.E2E_SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.E2E_SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
           ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
           DRY_RUN: ${{ inputs.dry_run || 'true' }}
         run: |
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_ANON_KEY" ] || [ -z "$ADMIN_PASSWORD" ]; then
-            echo "::error::E2E_SUPABASE_URL / E2E_SUPABASE_ANON_KEY / E2E_STABLE_ADMIN_PASSWORD secrets are not set"
+            echo "::error::NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY / E2E_STABLE_ADMIN_PASSWORD secrets are not set"
             exit 1
           fi
 

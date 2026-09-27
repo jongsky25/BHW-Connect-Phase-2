@@ -78,9 +78,11 @@ carrying it, so it would not work, and it grants far more than any session
 needs. It belongs in GitHub Actions and nowhere else.
 
 **GitHub Actions secrets** — `KB_LOADER_PASSWORD` (new, see §3),
-`SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_DB_URL`, the four `E2E_*` passwords,
-`E2E_SUPABASE_URL`/`E2E_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SUPABASE_URL`/
-`NEXT_PUBLIC_SUPABASE_ANON_KEY`, and the `SENTRY_*` trio.
+`SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_DB_URL`, the four `E2E_*` passwords
+(for the stable fixture accounts on the pilot project), `NEXT_PUBLIC_SUPABASE_URL`/
+`NEXT_PUBLIC_SUPABASE_ANON_KEY` (the pilot — the one database, which CI's E2E
+job also uses), and the `SENTRY_*` trio. `E2E_SUPABASE_URL`/
+`E2E_SUPABASE_ANON_KEY` are no longer read.
 
 **Vercel** — `GEMINI_API_KEY` and `GEMINI_MODEL`. Read at request time by the
 running app, so neither GitHub nor the Claude environment is any use to them.

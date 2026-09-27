@@ -15,6 +15,10 @@ slide 4 of 7 and adding narration that paces the clip.
 built for the legacy module view, and that document redirects them to the
 chapter route.
 
+**One database:** as of 27 Sep 2026 all development, CI E2E and the live app
+use the pilot project `ltzicxyefizxoqhfuuzc` only. Apply migrations there and
+nowhere else. Mentions of `bhw-connect-e2e` below are history.
+
 ---
 
 ## 1. How to work here (the part that matters most)
@@ -360,7 +364,9 @@ Full detail: `docs/training-modules-plan.md`'s INC-27 section.
 
 ### CI
 
-`e2e/` runs against a shared `bhw-connect-e2e` project, and specs early in
+`e2e/` runs against the pilot project — the one database since 27 Sep 2026
+(see `docs/deploy-runbook.md`'s "One database"; the old `bhw-connect-e2e`
+project is retired). Specs early in
 the run occasionally fail at login (three did on 19 Sep, green on re-run with
 no code change). Before assuming a failure is yours: check whether `main` is
 green, and re-run once. Do not "fix" it by touching tests.
