@@ -328,7 +328,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 2.2 Settings RPC migration | ☑ | #144 |
 | 2.3 Apply everywhere (SSR + cookie) | ☑ | #145 |
 | 2.4 Settings page restructure | ☑ | |
-| 3.1 Contrast guard test | ☐ | |
+| 3.1 Contrast guard test | ☑ | |
 | 3.2 Main colourways + Equity Blue | ☐ | |
 | 3.3 Accent colourways + presets | ☐ | |
 | 3.4 Equity mark + credit | ☐ | |
