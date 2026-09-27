@@ -10,6 +10,8 @@ export type FlipChart = {
   status: FlipChartStatus;
   review_note: string | null;
   created_at: string;
+  hidden_at: string | null;
+  archived_at: string | null;
 };
 
 export type FlipChartPage = {

@@ -471,7 +471,7 @@ The recommended serial order is **A1, A2, A3, C1, C2, C3, B1, B2, C4, C5**. Phas
 | C2 User-facing read filters | ☑ | #156 |
 | C3 Admin kit and KB pages | ☑ | #156 |
 | C4 Announcements, surveys, courses | ☑ | #156 |
-| C5 Flipcharts, forum, docs | ☐ | |
+| C5 Flipcharts, forum, docs | ☑ | #156 |
 
 ## 11. Kickoff prompt for a Sonnet session
 

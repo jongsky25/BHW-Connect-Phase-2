@@ -11,6 +11,18 @@ import {
 
 const TINY_PNG = path.join(__dirname, "fixtures", "tiny.png");
 
+function supabaseUrl(): string {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url) throw new Error("NEXT_PUBLIC_SUPABASE_URL is required");
+  return url;
+}
+
+function anonKey(): string {
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!key) throw new Error("NEXT_PUBLIC_SUPABASE_ANON_KEY is required");
+  return key;
+}
+
 test("a designer drafts a flip chart, an admin reviews and approves it, and a BHW views it client/BHW-side", async ({
   page,
   request,
@@ -92,4 +104,72 @@ test("a designer drafts a flip chart, an admin reviews and approves it, and a BH
   await expect(page.getByRole("heading", { name: `Chart en ${marker}` })).toBeVisible();
   await page.getByRole("button", { name: "BHW script" }).click();
   await expect(page.getByText(`Script en ${marker}`)).toBeVisible();
+});
+
+// RFT C5 DoD (docs/role-feature-toggles-plan.md §7 C5): hide/show and
+// archive/restore on a published flip chart, driven through
+// rpc_content_set_visibility exactly as /admin/flipcharts calls it. A
+// published chart can't be hard-deleted (rpc_flipchart_delete rejects it),
+// so this always ends archived rather than restored — out of every BHW's
+// view, same spirit as the kb-authoring spec's "unpublish" cleanup.
+test("hiding, then archiving, a published flip chart takes it out of a BHW's reads; showing/restoring brings it back", async ({
+  request,
+}) => {
+  const marker = `e2e.flipchart.visibility.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
+
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const createResponse = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_flipchart_create`, {
+    headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+    data: {
+      p_title_fil: `Tsart visibility fil ${marker}`,
+      p_title_en: `Chart visibility en ${marker}`,
+      p_pages: [
+        {
+          client_image_url: "https://example.invalid/tiny.png",
+          client_caption_fil: "",
+          client_caption_en: "",
+          script_fil: `Script fil ${marker}`,
+          script_en: `Script en ${marker}`,
+        },
+      ],
+    },
+  });
+  const [{ flip_chart_id: flipChartId }] = (await createResponse.json()) as Array<{ flip_chart_id: string }>;
+
+  async function setVisibility(action: "hide" | "show" | "archive" | "restore") {
+    const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_content_set_visibility`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_type: "flipchart", p_id: flipChartId, p_action: action },
+    });
+    expect(response.status(), `rpc_content_set_visibility(${action})`).toBe(204);
+  }
+
+  async function bhwCanReadChart(): Promise<boolean> {
+    const bhwToken = await getAccessToken(request, STABLE_BHW.username, STABLE_BHW.password);
+    const rows = await restGet(request, bhwToken, `flip_charts?id=eq.${flipChartId}`);
+    return rows.length === 1;
+  }
+
+  try {
+    expect(await bhwCanReadChart()).toBe(true);
+
+    await setVisibility("hide");
+    expect(await bhwCanReadChart()).toBe(false);
+
+    await setVisibility("show");
+    expect(await bhwCanReadChart()).toBe(true);
+
+    await setVisibility("archive");
+    expect(await bhwCanReadChart()).toBe(false);
+
+    await setVisibility("restore");
+    expect(await bhwCanReadChart()).toBe(true);
+  } finally {
+    // Best-effort: leaves the chart out of every BHW's view regardless of
+    // which step above the test failed on (so it may already be archived).
+    await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_content_set_visibility`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_type: "flipchart", p_id: flipChartId, p_action: "archive" },
+    });
+  }
 });

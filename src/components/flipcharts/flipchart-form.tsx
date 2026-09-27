@@ -71,6 +71,8 @@ export function FlipchartForm({ namespace, authorFullName, authorUsername, autho
         status: createdStatus,
         review_note: null,
         created_at: new Date().toISOString(),
+        hidden_at: null,
+        archived_at: null,
       });
 
       setTitleFil("");

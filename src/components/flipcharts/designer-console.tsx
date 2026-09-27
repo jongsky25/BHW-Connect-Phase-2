@@ -93,7 +93,18 @@ export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFu
                 <div className="flex items-center justify-between gap-3">
                   <div>
                     <p className="font-medium text-ink">{chart.title_en}</p>
-                    <p className="text-sm text-ink/70">{t(`status.${chart.status}`)}</p>
+                    <p className="flex flex-wrap items-center gap-2 text-sm text-ink/70">
+                      {t(`status.${chart.status}`)}
+                      {chart.archived_at ? (
+                        <span className="rounded-full bg-ink/10 px-2 py-0.5 text-xs font-medium text-ink/70">
+                          {t("archivedBadge")}
+                        </span>
+                      ) : chart.hidden_at ? (
+                        <span className="rounded-full bg-warning/10 px-2 py-0.5 text-xs font-medium text-warning">
+                          {t("hiddenByAdminBadge")}
+                        </span>
+                      ) : null}
+                    </p>
                   </div>
                   <div className="flex gap-2">
                     {chart.status === "draft" ? (

@@ -24,7 +24,9 @@ export default async function DesignerFlipchartsPage() {
 
   const { data: charts } = await supabase
     .from("flip_charts")
-    .select("id, author_user_id, author_full_name, author_username, title_fil, title_en, status, review_note, created_at")
+    .select(
+      "id, author_user_id, author_full_name, author_username, title_fil, title_en, status, review_note, created_at, hidden_at, archived_at",
+    )
     .eq("author_user_id", appUser.id)
     .order("created_at", { ascending: false })
     .returns<FlipChart[]>();

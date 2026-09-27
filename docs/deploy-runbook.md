@@ -359,6 +359,45 @@ deploy needed to turn it on, and flipping it back off is the fastest
 possible rollback for that specific feature if something's wrong with it
 alone.
 
+## Feature toggles per user type
+
+`/admin/flags` (`docs/role-feature-toggles-plan.md`) has two layers per flag:
+
+- **Available** — the master switch, unchanged from before: off hides the
+  feature from everyone, admins included. This is the kill switch to reach
+  for in an incident.
+- **BHW / Assessor / Designer** — per-type switches. Off for a type hides
+  the feature from that type only, on their next page load; the master
+  switch must be on for these to matter at all. Only the super admin
+  (`rcventura`, `public.super_admins`) can change either layer — other
+  admins see the matrix read-only.
+
+Nothing is ever hidden from an admin's own account by either layer. To see
+what a BHW, Assessor or Designer actually sees — including a flag disabled
+for that type — an admin uses **View as** from the header user menu. A
+banner shows while previewing, and every write action is disabled (a
+disabled control shows "Preview only — nothing is saved."); non-`GET`
+`/api/*` requests are also rejected with 403 while previewing, as a
+backstop. **Exit preview** in the banner returns to `/admin/dashboard`.
+
+## Hide, show and archive content
+
+The admin pages for KB entries/articles, announcements, surveys, courses,
+flipcharts and forum threads (`docs/role-feature-toggles-plan.md` §4.5) can
+take a published item out of every user's view without deleting it:
+
+- **Hide** / **Show** — a quick, reversible toggle. A hidden item stays in
+  the admin list with a "Hidden" badge.
+- **Archive** / **Restore** — for retiring an item. An archived item moves
+  to the page's **Archived** tab and is read-only until restored.
+
+Nothing is ever hidden from an admin's own view by this either — an admin
+still sees hidden and archived items in the admin console; only a BHW's
+(or other previewed type's) reads and the Chat Guide's retrieval are
+filtered. Forum threads keep their INC-13 moderation hide/show (its own
+reason field) as a separate control; only archive/restore go through this
+shared mechanism there.
+
 ## Rollback
 
 - **Bad app code, schema unchanged**: revert the merge commit on `main`,

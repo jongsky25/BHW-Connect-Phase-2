@@ -91,6 +91,7 @@ read by `src/i18n/request.ts`.
 - `docs/deploy-runbook.md` — deploy flow, env var/secrets checklist, rollback.
 - `docs/restore-drill-runbook.md` — backup/restore procedure and RPO 24h/RTO 4h drill log.
 - `docs/breach-playbook.md` — DPA breach response, NPC 72h notification timeline.
-- `/admin/flags` — feature flags, flippable without a deploy.
+- `/admin/flags` — feature flags, flippable without a deploy. Each flag has a master "Available" switch plus a per-type (BHW/Assessor/Designer) switch; only the super admin (rcventura, `public.super_admins`) can change either — other admins see the matrix read-only. Nothing is ever hidden from admins: an admin previews another user type's view with "View as" from the header user menu (a read-only preview; see `docs/role-feature-toggles-plan.md` §4.4).
+- Admin pages for KB entries/articles, announcements, surveys, courses, flipcharts and forum threads can hide, show, archive and restore content without deleting it (`docs/role-feature-toggles-plan.md` §4.5).
 - `/super-admin` — (rcventura only) linked test accounts for every role: switch between them from one login and reset their progress. Granted in `supabase/migrations/20260925000000_super_admin_personas.sql`.
 - `.github/workflows/backup.yml` / `retention-purge.yml` — scheduled backup and data-retention jobs.

@@ -1,8 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
+import { VisibilityActions, VisibilityBadge, VisibilityTabs } from "@/components/admin/content-visibility";
 import { EmptyState } from "@/components/empty-state";
 import { mapFlipchartRpcError } from "@/lib/flipcharts/error-messages";
 import type { FlipChart, FlipChartPage } from "@/lib/flipcharts/types";
@@ -12,15 +14,26 @@ import { FlipchartForm } from "./flipchart-form";
 type ChartWithPages = FlipChart & { flip_chart_pages: FlipChartPage[] };
 
 type Props = {
-  initialCharts: ChartWithPages[];
+  charts: ChartWithPages[];
+  view: "active" | "archived";
+  activeCount: number;
+  archivedCount: number;
   authorUserId: string;
   authorFullName: string;
   authorUsername: string;
 };
 
-export function AdminFlipchartConsole({ initialCharts, authorUserId, authorFullName, authorUsername }: Props) {
+export function AdminFlipchartConsole({
+  charts,
+  view,
+  activeCount,
+  archivedCount,
+  authorUserId,
+  authorFullName,
+  authorUsername,
+}: Props) {
   const t = useTranslations("admin.flipcharts");
-  const [charts, setCharts] = useState(initialCharts);
+  const router = useRouter();
   const [notes, setNotes] = useState<Record<string, string>>({});
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -39,13 +52,7 @@ export function AdminFlipchartConsole({ initialCharts, authorUserId, authorFullN
         setError(t(mapFlipchartRpcError(rpcError.message)));
         return;
       }
-      setCharts((prev) =>
-        prev.map((c) =>
-          c.id === id
-            ? { ...c, status: approve ? "published" : "draft", review_note: approve ? null : notes[id]?.trim() || null }
-            : c,
-        ),
-      );
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -61,7 +68,7 @@ export function AdminFlipchartConsole({ initialCharts, authorUserId, authorFullN
         setError(t(mapFlipchartRpcError(rpcError.message)));
         return;
       }
-      setCharts((prev) => prev.filter((c) => c.id !== id));
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -85,7 +92,7 @@ export function AdminFlipchartConsole({ initialCharts, authorUserId, authorFullN
         authorFullName={authorFullName}
         authorUsername={authorUsername}
         createdStatus="published"
-        onCreated={(chart) => setCharts((prev) => [{ ...chart, flip_chart_pages: [] }, ...prev])}
+        onCreated={() => router.refresh()}
       />
 
       <section className="flex flex-col gap-4" aria-label={t("reviewQueueHeading")}>
@@ -152,28 +159,49 @@ export function AdminFlipchartConsole({ initialCharts, authorUserId, authorFullN
 
       <section className="flex flex-col gap-4" aria-label={t("allChartsHeading")}>
         <h2 className="text-lg font-semibold text-ink">{t("allChartsHeading")}</h2>
+
+        <VisibilityTabs
+          basePath="/admin/flipcharts"
+          view={view}
+          activeCount={activeCount}
+          archivedCount={archivedCount}
+        />
+
         {charts.length === 0 ? (
           <EmptyState message={t("empty")} />
         ) : (
           <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
             {charts.map((chart) => (
-              <li key={chart.id} className="flex items-center justify-between gap-3 px-4 py-3">
+              <li key={chart.id} className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
                 <div>
                   <p className="font-medium text-ink">{chart.title_en}</p>
                   <p className="text-sm text-ink/70">
                     {chart.author_full_name} · {t(`status.${chart.status}`)}
                   </p>
                 </div>
-                {chart.status !== "published" ? (
-                  <button
-                    type="button"
-                    disabled={pendingId === chart.id}
-                    onClick={() => handleDelete(chart.id)}
-                    className="rounded-md border border-danger/40 px-2 py-1 text-xs font-medium text-danger hover:bg-danger/5 disabled:opacity-60"
-                  >
-                    {t("deleteAction")}
-                  </button>
-                ) : null}
+                <div className="flex flex-wrap items-center gap-2">
+                  {chart.status === "published" ? (
+                    <>
+                      <VisibilityBadge hidden_at={chart.hidden_at} archived_at={chart.archived_at} />
+                      <VisibilityActions
+                        contentType="flipchart"
+                        id={chart.id}
+                        hidden_at={chart.hidden_at}
+                        archived_at={chart.archived_at}
+                      />
+                    </>
+                  ) : null}
+                  {chart.status !== "published" ? (
+                    <button
+                      type="button"
+                      disabled={pendingId === chart.id}
+                      onClick={() => handleDelete(chart.id)}
+                      className="rounded-md border border-danger/40 px-2 py-1 text-xs font-medium text-danger hover:bg-danger/5 disabled:opacity-60"
+                    >
+                      {t("deleteAction")}
+                    </button>
+                  ) : null}
+                </div>
               </li>
             ))}
           </ul>
