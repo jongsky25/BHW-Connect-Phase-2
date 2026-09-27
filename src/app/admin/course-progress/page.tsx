@@ -7,7 +7,7 @@ import type {
   AdminTestAttemptRow,
 } from "@/lib/admin/types";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 
 // The admin path off the dashboard-SQL runbook step docs/session-handoff.md
 // flagged as owed: everything here is readable under the existing
@@ -17,7 +17,7 @@ import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@
 // the write (rpc_course_progress_reset, INC-29) had nothing to go through.
 export default async function AdminCourseProgressPage() {
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
 
   if (!flags.elearning) {
     redirect("/admin/users");

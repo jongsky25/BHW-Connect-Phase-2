@@ -7,7 +7,7 @@ import { StatCard } from "@/components/admin/dashboard/stat-card";
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
 import type { KpiSummary } from "@/lib/reports/types";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function AdminDashboardReportsPage({
   searchParams,
@@ -18,7 +18,7 @@ export default async function AdminDashboardReportsPage({
   const { start, end } = timeRangeToDates(parseTimeRangeKey(range));
 
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
   if (!flags.reports_export) {
     redirect("/admin/dashboard");
   }

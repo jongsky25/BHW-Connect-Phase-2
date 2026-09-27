@@ -1,8 +1,10 @@
+import type { AppRole } from "@/lib/auth/roles";
+
 // Super admin + linked test personas (migration 20260925000000). A persona
 // is a real account the super admin switches the browser into, so every
 // role's features — and how they relate — can be exercised from one login.
 
-export type PersonaRole = "bhw" | "admin" | "assessor" | "designer";
+export type PersonaRole = AppRole;
 
 export const PERSONA_ROLES: PersonaRole[] = ["bhw", "assessor", "designer", "admin"];
 

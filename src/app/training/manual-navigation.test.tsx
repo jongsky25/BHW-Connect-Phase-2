@@ -7,7 +7,11 @@ import activityCards from '../../../content/training/day1-basic-competencies/mod
 const state=vi.hoisted(()=>({failing:'',role:'bhw',status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
-vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true})}));
+vi.mock('@/lib/flags/get-flags',()=>({
+  getFeatureFlags:async()=>({elearning:true,course_sessions:true}),
+  resolveFlags:()=>({elearning:true,course_sessions:true}),
+  fetchFlagRows:async()=>[],
+}));
 vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'})}));
 vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,nextLessonHref}:{readOnly:boolean;nextLessonHref?:string})=><div data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
 vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));

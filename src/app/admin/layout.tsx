@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { AdminNav, type AdminNavGroupView, type AdminNavLink } from "@/components/admin/admin-nav";
 import { ADMIN_NAV_PREFERENCES_ITEM, visibleAdminNavGroups } from "@/lib/admin/nav";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -23,7 +23,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   // Tolerant of the RPC failing (e.g. the super admin migration not yet
   // applied): the link just doesn't show.
   const [flags, { data: superAdminContext }] = await Promise.all([
-    getRequestFeatureFlags(),
+    getRequestMasterFlags(),
     (await createClient()).rpc("rpc_super_admin_context"),
   ]);
   const isSuperAdmin =

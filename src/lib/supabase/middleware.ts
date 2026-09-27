@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { getAppUser } from "./app-user";
-import { getFeatureFlags } from "../flags/get-flags";
+import { fetchFlagRows, resolveFlags } from "../flags/get-flags";
 import { getSupabaseAnonKey, getSupabaseUrl } from "./env";
 
 // A BHW's working day session: idle 8h with no requests signs them out,
@@ -95,8 +95,10 @@ export async function updateSession(request: NextRequest) {
   // Pages need feature_flags for the layout headers below; start that read
   // alongside the profile lookup instead of after it, so the two cost one
   // round trip instead of two. API routes never use the flags (or the
-  // unread count), so they skip both reads entirely.
-  const flagsPromise = isApiPath(pathname) ? null : getFeatureFlags(supabase);
+  // unread count), so they skip both reads entirely. The rows can't be
+  // resolved into role-effective flags until appUser.role is known below
+  // (docs/role-feature-toggles-plan.md §5 A2), so this reads rows, not flags.
+  const flagRowsPromise = isApiPath(pathname) ? null : fetchFlagRows(supabase);
   const appUser = await getAppUser(supabase, user.id);
 
   if (!appUser || appUser.status !== "active") {
@@ -152,13 +154,13 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
-  if (!flagsPromise) {
+  if (!flagRowsPromise) {
     // API routes still read x-app-language (via next-intl) for localized
     // exports/PDFs, so keep forwarding the profile headers.
     return withAppUserHeaders(response, request, appUser, false, false, 0);
   }
 
-  const flags = await flagsPromise;
+  const flags = resolveFlags(await flagRowsPromise, appUser.role);
 
   let notifUnreadCount = 0;
   if (flags.notifications) {

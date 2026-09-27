@@ -10,7 +10,7 @@ import { GAP_QUEUE_PAGE_SIZE, pageOffset, parsePageParam, parseSearchParam, tota
 import { parseTimeRangeKey, timeRangeToDates } from "@/lib/dashboard/time-range";
 import type { DashboardTopTopic, DashboardTrendPoint, GapQueueRow } from "@/lib/dashboard/types";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function AdminDashboardChatGuidePage({
   searchParams,
@@ -51,7 +51,7 @@ export default async function AdminDashboardChatGuidePage({
         .select("id", { count: "exact", head: true })
         .eq("status", "published")
         .lt("review_due_on", today),
-      getRequestFeatureFlags(),
+      getRequestMasterFlags(),
     ]);
 
   const gapRows = (gapPage ?? []) as GapQueueRow[];

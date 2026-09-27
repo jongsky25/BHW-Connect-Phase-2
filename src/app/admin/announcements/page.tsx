@@ -4,11 +4,11 @@ import { AnnouncementsConsole } from "@/components/announcements/announcements-c
 import type { Announcement } from "@/lib/announcements/types";
 import { loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function AdminAnnouncementsPage() {
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
 
   if (!flags.announcements) {
     redirect("/admin/users");

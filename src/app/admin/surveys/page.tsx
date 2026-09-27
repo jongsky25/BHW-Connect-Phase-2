@@ -3,11 +3,11 @@ import { SurveysConsole } from "@/components/surveys/surveys-console";
 import type { Survey } from "@/lib/surveys/types";
 import { loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function AdminSurveysPage() {
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
 
   if (!flags.surveys) {
     redirect("/admin/users");

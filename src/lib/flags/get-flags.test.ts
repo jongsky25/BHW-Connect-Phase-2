@@ -2,7 +2,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import { describe, expect, it } from "vitest";
 import { getFeatureFlags } from "./get-flags";
 
-function stubClient(rows: { key: string; enabled: boolean }[] | null) {
+function stubClient(rows: { key: string; enabled: boolean; disabled_roles?: string[] }[] | null) {
   return {
     from: () => ({
       select: async () => ({ data: rows }),
@@ -11,7 +11,7 @@ function stubClient(rows: { key: string; enabled: boolean }[] | null) {
 }
 
 describe("getFeatureFlags", () => {
-  it("applies known flag rows over the defaults", async () => {
+  it("applies known flag rows over the defaults (master switches, no role)", async () => {
     const flags = await getFeatureFlags(
       stubClient([
         { key: "kb_articles", enabled: false },
@@ -64,6 +64,9 @@ describe("getFeatureFlags", () => {
     };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
     expect(await getFeatureFlags(stubClient(null))).toEqual(expected);
+    // Same fallback with a role passed — a read failure never exposes an
+    // unreviewed feature to any user type either.
+    expect(await getFeatureFlags(stubClient([]), "bhw")).toEqual(expected);
   });
 
   it("ignores unrecognized flag keys", async () => {
@@ -82,6 +85,35 @@ describe("getFeatureFlags", () => {
       chat_conversation: false,
       ai_external: false,
       ai_gap_draft: false,
+    });
+  });
+
+  // RFT A2 (docs/role-feature-toggles-plan.md §4.2): per-type toggles.
+  describe("per-type disabled_roles", () => {
+    it("turns a flag off for a role listed in disabled_roles, master switch still on", async () => {
+      const client = stubClient([{ key: "forum", enabled: true, disabled_roles: ["bhw"] }]);
+      expect((await getFeatureFlags(client, "bhw")).forum).toBe(false);
+    });
+
+    it("leaves a flag on for a role not listed in disabled_roles", async () => {
+      const client = stubClient([{ key: "forum", enabled: true, disabled_roles: ["bhw"] }]);
+      expect((await getFeatureFlags(client, "assessor")).forum).toBe(true);
+    });
+
+    it("never disables a flag for admin, even when admin is (invalidly) listed", async () => {
+      const client = stubClient([{ key: "forum", enabled: true, disabled_roles: ["admin"] }]);
+      expect((await getFeatureFlags(client, "admin")).forum).toBe(true);
+    });
+
+    it("returns the master switches when no role is passed, ignoring disabled_roles", async () => {
+      const client = stubClient([{ key: "forum", enabled: true, disabled_roles: ["bhw", "assessor", "designer"] }]);
+      expect((await getFeatureFlags(client)).forum).toBe(true);
+    });
+
+    it("the master switch off beats every per-type switch", async () => {
+      const client = stubClient([{ key: "forum", enabled: false, disabled_roles: [] }]);
+      expect((await getFeatureFlags(client, "assessor")).forum).toBe(false);
+      expect((await getFeatureFlags(client)).forum).toBe(false);
     });
   });
 });

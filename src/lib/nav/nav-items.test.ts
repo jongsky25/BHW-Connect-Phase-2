@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { resolveFlags } from "@/lib/flags/get-flags";
 import type { FeatureFlags } from "@/lib/flags/types";
 import { getNavItems } from "./nav-items";
 
@@ -110,5 +111,16 @@ describe("getNavItems", () => {
     expect(items.find((item) => item.id === "chat")?.variant).toBe("primary");
     expect(items.find((item) => item.id === "kb")?.variant).toBeUndefined();
     expect(items.find((item) => item.id === "settings")?.variant).toBeUndefined();
+  });
+
+  // RFT A2 (docs/role-feature-toggles-plan.md §5 A2): a flag disabled for a
+  // specific user type hides its nav item for that type only.
+  it("hides forum for a bhw it's disabled for, but keeps it for an assessor", () => {
+    const rows = [{ key: "forum", enabled: true, disabled_roles: ["bhw"] }];
+    const bhwFlags = resolveFlags(rows, "bhw");
+    const assessorFlags = resolveFlags(rows, "assessor");
+
+    expect(ids(getNavItems({ role: "bhw", flags: bhwFlags }))).not.toContain("forum");
+    expect(ids(getNavItems({ role: "assessor", flags: assessorFlags }))).toContain("forum");
   });
 });

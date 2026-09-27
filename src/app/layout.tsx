@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { cookies, headers } from "next/headers";
+import { isAppRole } from "@/lib/auth/roles";
 import { ServiceWorkerRegister } from "@/components/pwa/service-worker-register";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -144,7 +145,7 @@ async function getRequestAccount(): Promise<{ username: string; role: AppUser["r
   const h = await headers();
   const username = h.get("x-app-username");
   const role = h.get("x-app-role");
-  if (!username || (role !== "bhw" && role !== "assessor" && role !== "designer" && role !== "admin")) {
+  if (!username || !isAppRole(role)) {
     return null;
   }
   return { username, role };

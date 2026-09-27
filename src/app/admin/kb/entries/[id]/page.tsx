@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EntryForm } from "@/components/kb/entry-form";
 import type { KbEntry } from "@/lib/kb/types";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestMasterFlags } from "@/lib/supabase/request";
 
 const BASE_COLUMNS =
   "id, category_id, question_fil, question_en, answer_fil, answer_en, keywords, image_url, status, owner_user_id, review_due_on, updated_at";
@@ -23,7 +23,7 @@ export default async function EditKbEntryPage({ params }: { params: Promise<{ id
   // its confirm control — but rpc_kb_entry_update still refuses to publish it,
   // and mapKbRpcError turns that refusal into a plain explanation. Retiring
   // the feature must not turn an unreviewed AI draft into a publishable one.
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
   const entryColumns = flags.ai_gap_draft
     ? `${BASE_COLUMNS}, ai_drafted_at, ai_draft_confirmed_at`
     : BASE_COLUMNS;

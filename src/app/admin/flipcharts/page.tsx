@@ -2,11 +2,11 @@ import { redirect } from "next/navigation";
 import { AdminFlipchartConsole } from "@/components/flipcharts/admin-console";
 import type { FlipChart, FlipChartPage } from "@/lib/flipcharts/types";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function AdminFlipchartsPage() {
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
 
   if (!flags.flipcharts) {
     redirect("/admin/users");

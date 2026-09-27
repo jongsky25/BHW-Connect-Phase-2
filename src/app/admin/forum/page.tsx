@@ -2,11 +2,11 @@ import { redirect } from "next/navigation";
 import { ForumConsole } from "@/components/forum/forum-console";
 import type { ForumPostModerationRow, ForumThreadModerationRow } from "@/lib/forum/types";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function AdminForumPage() {
   const supabase = await createClient();
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
 
   if (!flags.forum) {
     redirect("/admin/users");
