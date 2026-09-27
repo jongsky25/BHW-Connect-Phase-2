@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
+  STABLE_SUPER_ADMIN,
   createThrowawayBhw,
   getAccessToken,
 } from "./fixtures/auth";
@@ -44,8 +45,14 @@ async function callRpc(
 // global flag shared with every other e2e spec/live traffic, so this test
 // flips it off just long enough to assert the nav link disappears, then
 // always restores it in `finally` — never leave a shared flag mutated.
+// Only a super admin may flip flags (RFT A1), so the RPC calls use
+// superadmin.stable while the browser session stays a plain admin.
 test("flipping a feature flag off hides its nav link immediately", async ({ page, request }) => {
-  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const superAdminToken = await getAccessToken(
+    request,
+    STABLE_SUPER_ADMIN.username,
+    STABLE_SUPER_ADMIN.password,
+  );
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_ADMIN.username);
@@ -57,7 +64,7 @@ test("flipping a feature flag off hides its nav link immediately", async ({ page
   await expect(page.getByRole("link", { name: /Articles|Artikulo/ })).toBeVisible();
 
   try {
-    const off = await callRpc(request, adminToken, "rpc_flag_toggle", {
+    const off = await callRpc(request, superAdminToken, "rpc_flag_toggle", {
       p_key: "kb_articles",
       p_enabled: false,
     });
@@ -69,7 +76,7 @@ test("flipping a feature flag off hides its nav link immediately", async ({ page
     await page.goto("/admin/kb/articles");
     await expect(page).toHaveURL("/admin/kb/categories", { timeout: 10_000 });
   } finally {
-    const on = await callRpc(request, adminToken, "rpc_flag_toggle", {
+    const on = await callRpc(request, superAdminToken, "rpc_flag_toggle", {
       p_key: "kb_articles",
       p_enabled: true,
     });
@@ -78,6 +85,55 @@ test("flipping a feature flag off hides its nav link immediately", async ({ page
 
   await page.reload();
   await expect(page.getByRole("link", { name: /Articles|Artikulo/ })).toBeVisible();
+});
+
+// RFT A1: feature toggles are super-admin only. A plain admin is refused
+// both the master switch and the per-type switch; neither call changes
+// anything, so there is nothing to restore.
+test("a plain admin cannot change feature flags", async ({ request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+
+  const toggle = await callRpc(request, adminToken, "rpc_flag_toggle", {
+    p_key: "kb_articles",
+    p_enabled: true,
+  });
+  expect(toggle.status).toBe(400);
+  expect(toggle.body).toMatchObject({ message: "not authorized" });
+
+  const setRole = await callRpc(request, adminToken, "rpc_flag_set_role", {
+    p_key: "kb_articles",
+    p_role: "bhw",
+    p_enabled: true,
+  });
+  expect(setRole.status).toBe(400);
+  expect(setRole.body).toMatchObject({ message: "not authorized" });
+});
+
+// RFT A1: a per-type switch only accepts the user types in flag_role_scope.
+// Enabling is a no-op on a flag with no disabled roles, so the in-scope
+// call leaves the shared flag unchanged.
+test("super admin per-type switch rejects out-of-scope user types", async ({ request }) => {
+  const superAdminToken = await getAccessToken(
+    request,
+    STABLE_SUPER_ADMIN.username,
+    STABLE_SUPER_ADMIN.password,
+  );
+
+  const admin = await callRpc(request, superAdminToken, "rpc_flag_set_role", {
+    p_key: "forum",
+    p_role: "admin",
+    p_enabled: false,
+  });
+  expect(admin.status).toBe(400);
+  expect(admin.body).toMatchObject({ message: "invalid role for flag" });
+
+  const masterOnly = await callRpc(request, superAdminToken, "rpc_flag_set_role", {
+    p_key: "reports_export",
+    p_role: "bhw",
+    p_enabled: false,
+  });
+  expect(masterOnly.status).toBe(400);
+  expect(masterOnly.body).toMatchObject({ message: "invalid role for flag" });
 });
 
 // INC-9 DoD (§5.4 DPA data-subject rights): export returns the user's data;

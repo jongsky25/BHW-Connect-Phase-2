@@ -21,6 +21,10 @@ describe("mapAdminRpcError", () => {
     expect(mapAdminRpcError("flag not found")).toBe("flagNotFoundError");
   });
 
+  it("maps invalid-role-for-flag", () => {
+    expect(mapAdminRpcError("invalid role for flag")).toBe("invalidRoleForFlagError");
+  });
+
   it("maps the role placement trigger messages", () => {
     expect(mapAdminRpcError("assessor catchment must be a region, province or city/municipality")).toBe(
       "assessorLevelError",

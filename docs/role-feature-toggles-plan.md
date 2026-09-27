@@ -219,9 +219,9 @@ visible_to_users(row) = <existing publish rule> AND row.hidden_at IS NULL AND ro
 
 **Before you start (owner action).** E2E needs a super-admin account.
 
-- The owner creates a dedicated test user, for example `e2e.superadmin` with role `admin`, in the org used by `STABLE_ADMIN`.
+- The owner creates a dedicated test user `superadmin.stable` with role `admin`, in the org used by `STABLE_ADMIN` (`admin.stable`).
 - The owner adds it to `super_admins` with a one-off SQL statement. Do not put it in a migration, because migrations also run on other projects.
-- The owner adds the CI secrets `E2E_SUPER_ADMIN_USERNAME` and `E2E_SUPER_ADMIN_PASSWORD`.
+- The owner adds the CI secret `E2E_STABLE_SUPER_ADMIN_PASSWORD` (the username is fixed in `e2e/fixtures/auth.ts`, like the other stable fixtures).
 - If these are missing, stop and ask; do not weaken the RPC.
 
 **Migration** `..._rft_a1_flag_roles.sql`:
@@ -241,7 +241,7 @@ visible_to_users(row) = <existing publish rule> AND row.hidden_at IS NULL AND ro
 
 **Code and tests:**
 
-- `e2e/fixtures/auth.ts`: add `STABLE_SUPER_ADMIN`.
+- `e2e/fixtures/auth.ts`: add `STABLE_SUPER_ADMIN` (`superadmin.stable`); wire `E2E_STABLE_SUPER_ADMIN_PASSWORD` into `.env.example` and the CI e2e job env.
 - `e2e/ops-hardening.spec.ts`: call `rpc_flag_toggle` with the super-admin token.
 - Add an e2e case: calling `rpc_flag_toggle` with `STABLE_ADMIN`'s token fails with `not authorized`.
 - `src/lib/admin/error-messages.ts`: map `invalid role for flag`.
@@ -462,7 +462,7 @@ The recommended serial order is **A1, A2, A3, C1, C2, C3, B1, B2, C4, C5**. Phas
 
 | Increment | Status | PR |
 |---|---|---|
-| A1 Flag roles migration, super-admin-only RPCs | ☐ | |
+| A1 Flag roles migration, super-admin-only RPCs | ☑ (migration not yet applied to the pilot) | #156 |
 | A2 Role-aware flag resolution | ☐ | |
 | A3 Flags matrix UI | ☐ | |
 | B1 Viewer context, cookie, banner | ☐ | |
