@@ -99,6 +99,11 @@ jobs:
       E2E_STABLE_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
       E2E_OTHER_BARANGAY_BHW_PASSWORD: ${{ secrets.E2E_OTHER_BARANGAY_BHW_PASSWORD }}
       E2E_STABLE_CITY_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_CITY_ADMIN_PASSWORD }}
+      # The pilot has ai_external + ai_gap_draft on, so e2e/ai-gap-draft.spec.ts
+      # runs its real round trip here and needs a provider key; each run
+      # spends a small amount of Gemini quota. GEMINI_MODEL is optional.
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
       SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       SENTRY_ORG: ${{ secrets.SENTRY_ORG }}

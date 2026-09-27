@@ -37,8 +37,8 @@ project settings (for the running app) and GitHub Actions repo secrets
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
 | `SUPABASE_DB_URL` | not needed | required for `backup.yml` |
 | `SUPABASE_SERVICE_ROLE_KEY` | not needed (never expose to the app) | required for `retention-purge.yml` |
-| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | not needed (unit tests stub the transport; no CI step calls a provider) |
-| `GEMINI_MODEL` | optional — defaults to `gemini-3.6-flash`. **Set this when the provider retires a model**: a shut-down model returns 404 on every call, and this is the switch that fixes it without a deploy. `gemini-2.0-flash` was shut down 2026-06-01 | not needed |
+| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | required for `ci.yml`'s E2E job — the pilot has `ai_external`/`ai_gap_draft` on, so `e2e/ai-gap-draft.spec.ts` makes a real provider call each run (small quota cost) |
+| `GEMINI_MODEL` | optional — defaults to `gemini-3.6-flash`. **Set this when the provider retires a model**: a shut-down model returns 404 on every call, and this is the switch that fixes it without a deploy. `gemini-2.0-flash` was shut down 2026-06-01 | optional (E2E job; same default) |
 
 ## One database
 
