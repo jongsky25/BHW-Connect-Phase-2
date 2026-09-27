@@ -35,6 +35,7 @@ beforeEach(() => {
   document.documentElement.removeAttribute("data-theme");
   document.documentElement.removeAttribute("data-font-scale");
   document.documentElement.removeAttribute("data-contrast");
+  document.documentElement.removeAttribute("data-density");
 });
 
 afterEach(() => {
@@ -55,6 +56,14 @@ describe("SettingsForm", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
 
     expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a density change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Compact" }));
+
+    expect(document.documentElement.getAttribute("data-density")).toBe("compact");
     expect(state.rpcCalls).toEqual([]);
   });
 

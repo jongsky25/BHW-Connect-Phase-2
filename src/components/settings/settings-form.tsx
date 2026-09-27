@@ -8,11 +8,13 @@ import { mapSettingsRpcError } from "@/lib/settings/error-messages";
 import { accentColorHex, colorPresets, primaryColorHex } from "@/lib/settings/palette";
 import {
   accentColors,
+  densities,
   fontScales,
   primaryColors,
   themes,
   type A11ySettings,
   type AccentColor,
+  type Density,
   type FontScale,
   type PrimaryColor,
   type Theme,
@@ -312,6 +314,15 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={a11y.high_contrast}
           onChange={(next: boolean) => updateDisplay({ high_contrast: next })}
           labelFor={(option) => t(option ? "contrastHigh" : "contrastStandard")}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("densityLabel")}
+          name="density"
+          options={densities}
+          value={a11y.density}
+          onChange={(next: Density) => updateDisplay({ density: next })}
+          labelFor={(option) => t(`density${capitalize(option)}`)}
         />
 
         <DisplayStatusMessage status={displayStatus} errorKey={displayErrorKey} />

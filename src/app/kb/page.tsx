@@ -55,7 +55,7 @@ export default async function KbBrowsePage() {
             <li key={category.slug}>
               <Link
                 href={`/kb/${category.slug}`}
-                className="flex min-h-[44px] items-center px-4 py-3 text-ink hover:bg-ink/5"
+                className="flex min-h-[44px] items-center px-4 py-[var(--space-row)] text-ink hover:bg-ink/5"
               >
                 {locale === "en" ? category.name_en : category.name_fil}
               </Link>

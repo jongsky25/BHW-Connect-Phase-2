@@ -347,7 +347,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 3.3 Accent colourways + presets | ☑ | |
 | 3.4 Equity mark + credit | ☑ | |
 | 3.5 Colour picker + quick popover | ☑ | |
-| 4.1 Text `sm` + density | ☐ | |
+| 4.1 Text `sm` + density | ☑ | |
 | 4.2 Motion, underline, spacing | ☐ | |
 | 4.3 Dyslexia-friendly font | ☐ | |
 | 4.4 Colour-blind status colours | ☐ | |

@@ -105,12 +105,34 @@
   --font-scale: 1;
 }
 
+:root[data-font-scale="sm"] {
+  --font-scale: 0.9375;
+}
+
 :root[data-font-scale="lg"] {
   --font-scale: 1.125;
 }
 
 :root[data-font-scale="xl"] {
   --font-scale: 1.25;
+}
+
+/* Density setting (Phase 4.1, docs/header-navigation-display-settings-plan.md
+   §6): list-row and card padding as tokens, so "compact" can tighten them in
+   one place instead of every component switching on data-density itself.
+   Defaults match today's hand-written px-4 py-3 (row) and px-4 py-6 (card)
+   paddings exactly, so "comfortable" (the default) changes nothing visually.
+   Only a few shared list/card components read these (empty-state, the KB
+   category list, the courses list) — most pages don't use rows or cards at
+   all and are left alone. */
+:root {
+  --space-row: 0.75rem;
+  --space-card: 1.5rem;
+}
+
+:root[data-density="compact"] {
+  --space-row: 0.5rem;
+  --space-card: 1rem;
 }
 
 /* High-contrast setting (INC-7): widens the ink/canvas gap beyond the
