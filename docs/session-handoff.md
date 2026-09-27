@@ -4,7 +4,7 @@ Read this before starting work on BHW Connect Phase 2. It is not a plan (that
 is `docs/training-modules-plan.md`); it is how to work, and the live state of
 the pilot project, so a new session does not re-discover either the hard way.
 
-Last updated: 25 September 2026.
+Last updated: 27 September 2026.
 
 **Handrub clip (Chapter 2.3, Remotion) work:** read
 `docs/handrub-clip-enhancement-handoff.md`. It covers moving the clip off
@@ -315,6 +315,34 @@ this workspace's Supabase MCP connection is scoped to the wrong org (see
 §2), the same gap that made INC-23/INC-27/#58's migrations manual steps
 too — and then flipping the workflow's `dry_run` off once a human has
 reviewed a couple of runs.
+
+**The `courses` table had the same leak, and it was worse (27 Sep 2026,
+courses cleanup).** `/courses` and `/admin/courses` were listing dozens of
+throwaway courses alongside the two real ones (the BHW Reference Manual
+program's `chapter-1`/`chapter-2` courses, "Day 1: BHW Basic Competencies"
+and "The BHW as First Responder" — `chapter-3` has no course yet). Cause:
+`elearning.spec.ts`'s first test, `slide-mode.spec.ts`,
+`slide-mode-a11y.spec.ts`, `lesson-narration.spec.ts`'s narrated/scene
+fixtures and `training-sessions.spec.ts` all `rpc_course_create` + publish a
+course per run and never delete it (only `elearning.spec.ts`'s *second* test
+does). Same shape as the `e2e.%` user leak above — and the same fix would
+not have worked as a spec-level cleanup, because the BHW/assessor activity
+these specs generate (quiz attempts, assessments, certificates) trips
+`rpc_course_delete`'s own "course has learner progress" guard. So:
+`rpc_e2e_purge_test_courses` (`20261002000400_e2e_test_course_purge.sql`,
+applied to the pilot) matches the `e2e.<spec-tag>.<epoch-ms>.<random>` marker
+every one of these specs embeds in the course title, cascades the ~10 tables
+a course touches (assessments/certificates, course_progress and children,
+course_sessions and children) in FK order, and excludes any course a
+`training_program_chapters` row points at. `.github/workflows/
+e2e-test-courses-purge.yml` calls it weekly, dry-run by default, same shape
+as `e2e-test-users-purge.yml`. The **45 already-accumulated junk courses
+were purged for real** in this session (`p_min_age_hours := 0`, since they
+were known-safe test-only rows and the request was to clean up now, not
+just add a mechanism) — `courses` holds exactly the two real rows as of this
+writing. **Still owed:** fixing the specs themselves so they stop leaking
+(none currently clean up their course), and flipping the new workflow's
+`dry_run` off once a human has reviewed a couple of scheduled runs.
 
 **INC-27 — audio narration** is code complete (migration +
 `course_module_audio` RLS verified against a real local Postgres 16 replay;
