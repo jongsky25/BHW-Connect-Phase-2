@@ -36,6 +36,9 @@ beforeEach(() => {
   document.documentElement.removeAttribute("data-font-scale");
   document.documentElement.removeAttribute("data-contrast");
   document.documentElement.removeAttribute("data-density");
+  document.documentElement.removeAttribute("data-motion");
+  document.documentElement.removeAttribute("data-underline-links");
+  document.documentElement.removeAttribute("data-line-spacing");
 });
 
 afterEach(() => {
@@ -64,6 +67,30 @@ describe("SettingsForm", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Compact" }));
 
     expect(document.documentElement.getAttribute("data-density")).toBe("compact");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a motion change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Reduce" }));
+
+    expect(document.documentElement.getAttribute("data-motion")).toBe("reduce");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies an underline-links change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "On" }));
+
+    expect(document.documentElement.getAttribute("data-underline-links")).toBe("true");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a line-spacing change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Relaxed" }));
+
+    expect(document.documentElement.getAttribute("data-line-spacing")).toBe("relaxed");
     expect(state.rpcCalls).toEqual([]);
   });
 

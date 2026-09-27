@@ -10,12 +10,16 @@ import {
   accentColors,
   densities,
   fontScales,
+  lineSpacings,
+  motionPreferences,
   primaryColors,
   themes,
   type A11ySettings,
   type AccentColor,
   type Density,
   type FontScale,
+  type LineSpacing,
+  type MotionPreference,
   type PrimaryColor,
   type Theme,
 } from "@/lib/settings/types";
@@ -36,6 +40,7 @@ type Props = {
 // refresh to load the other message catalog. Reading aids (Phase 4) are
 // still a placeholder here — nothing in this increment writes those keys.
 const CONTRAST_OPTIONS = [false, true] as const;
+const UNDERLINE_LINKS_OPTIONS = [false, true] as const;
 
 function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
@@ -325,6 +330,15 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           labelFor={(option) => t(`density${capitalize(option)}`)}
         />
 
+        <SegmentedRadioGroup
+          legend={t("motionLabel")}
+          name="motion"
+          options={motionPreferences}
+          value={a11y.motion}
+          onChange={(next: MotionPreference) => updateDisplay({ motion: next })}
+          labelFor={(option) => t(`motion${capitalize(option)}`)}
+        />
+
         <DisplayStatusMessage status={displayStatus} errorKey={displayErrorKey} />
 
         <PreviewCard />
@@ -338,7 +352,28 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       </Section>
 
       <Section id="reading" heading={t("readingHeading")}>
-        <p className="text-sm text-ink/70">{t("readingPlaceholder")}</p>
+        {/* Shares the Display section's one status/aria-live region above —
+            both write through the same debounced save, so a second region
+            here would double-announce the same "Saved" to screen readers.
+            A dyslexia-friendly font (4.3) and colour-blind-safe status
+            colours (4.4) still land in later increments. */}
+        <SegmentedRadioGroup
+          legend={t("underlineLinksLabel")}
+          name="underline-links"
+          options={UNDERLINE_LINKS_OPTIONS}
+          value={a11y.underline_links}
+          onChange={(next: boolean) => updateDisplay({ underline_links: next })}
+          labelFor={(option) => t(option ? "underlineLinksOn" : "underlineLinksOff")}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("lineSpacingLabel")}
+          name="line-spacing"
+          options={lineSpacings}
+          value={a11y.line_spacing}
+          onChange={(next: LineSpacing) => updateDisplay({ line_spacing: next })}
+          labelFor={(option) => t(`lineSpacing${capitalize(option)}`)}
+        />
       </Section>
 
       <Section id="reset" heading={t("resetHeading")}>

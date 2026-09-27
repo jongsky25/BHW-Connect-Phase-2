@@ -396,3 +396,57 @@
 :root[data-theme="dark"][data-accent="slate"] {
   --color-secondary: #7e8fa8;
 }
+
+/* Motion setting (Phase 4.2, docs/header-navigation-display-settings-plan.md
+   §6): the standard "kill all animation" rule, scoped to an explicit
+   `data-motion="reduce"` choice, plus the same rule unconditionally under
+   the OS-level media query so a user who never touched this setting still
+   gets it from their system preference. `data-motion="system"` (the
+   default) never renders an attribute (see displayAttributes), so there is
+   no "force motion back on over the OS setting" case to write a rule for.
+   `src/lib/elearning/reduced-motion.ts`'s prefersReducedMotion() reads the
+   attribute the same way, so JS-driven motion (narration auto-scroll, the
+   animated-scene reveal) honours an explicit choice the same as CSS does. */
+[data-motion="reduce"] *,
+[data-motion="reduce"] *::before,
+[data-motion="reduce"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Underline-links setting (Phase 4.2): GitHub-style "always underline
+   links in content, not just on hover". Scoped to `<main>` so header/nav/
+   menu links (which already carry their own active/hover treatment) are
+   unaffected, and excludes anything with a `bg-*` utility class, since
+   those are buttons that happen to be an `<a>`, not reading links. The
+   attribute is only ever present when true (see displayAttributes), so
+   presence is enough, but the explicit value keeps the selector
+   self-documenting. */
+[data-underline-links="true"] main a:not([class*="bg-"]) {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Line-spacing setting (Phase 4.2): a relaxed reading rhythm for body
+   copy. This codebase has no separate ".prose"/content-only typography
+   class the way a blog theme would (checked: no `@tailwindcss/typography`,
+   no `.prose` usage anywhere) — lesson text, KB articles and chat answers
+   all render as plain body text — so both rules apply to `body` rather
+   than a class that does not exist yet. */
+[data-line-spacing="relaxed"] body {
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
