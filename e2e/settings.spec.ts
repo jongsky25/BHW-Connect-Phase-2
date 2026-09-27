@@ -1,5 +1,5 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
@@ -8,6 +8,24 @@ import {
   getAccessToken,
   onboardThroughLogin,
 } from "./fixtures/auth";
+
+// A freshly onboarded BHW defaults to language='fil' (baseline migration),
+// but the colour-picker assertions below are keyed to English labels (some
+// of settings.coloursMainLabel/coloursAccentLabel etc. are translated, unlike
+// the colourway/preset names themselves) — same reasoning as
+// lesson-narration.spec.ts's onboardEnglishBhw. Set it via the RPC directly
+// rather than the Settings page's own language switcher, which is its own
+// round trip already covered by the "settings persist..." test above.
+async function setLanguageEnglish(page: Page, userToken: string) {
+  await page.request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_update_settings`, {
+    headers: {
+      apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string,
+      Authorization: `Bearer ${userToken}`,
+      "Content-Type": "application/json",
+    },
+    data: { p_language: "en", p_theme: "light", p_font_scale: "md", p_high_contrast: false },
+  });
+}
 
 // INC-7 DoD: settings persist to the profile and survive logout/login and a
 // second device (not just a local cookie).
@@ -116,7 +134,11 @@ test("a signed-in profile's settings override a leftover BHW_DISPLAY cookie", as
 test("picking the Equity in Health preset recolours the header and persists on reload", async ({ page, request }) => {
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
   const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
-  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, "Fresh-Colours-2026");
+  const newPassword = "Fresh-Colours-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await setLanguageEnglish(page, userToken);
 
   await page.goto("/settings");
   const main = page.getByRole("main");
@@ -137,7 +159,11 @@ test("picking the Equity in Health preset recolours the header and persists on r
 test("the main and accent colour swatches are keyboard-operable", async ({ page, request }) => {
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
   const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
-  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, "Fresh-Swatch-2026");
+  const newPassword = "Fresh-Swatch-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await setLanguageEnglish(page, userToken);
 
   await page.goto("/settings");
   const main = page.getByRole("main");
@@ -160,6 +186,11 @@ test("a signed-out visitor's quick-display popover writes the BHW_DISPLAY cookie
 }) => {
   await page.goto("/login");
   await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
+
+  // /login renders in the default cookie-less locale (Filipino) — switch via
+  // the header's own toggle, same as shell.spec.ts's language-toggle test,
+  // so the popover's "Dark" radio has that exact English label.
+  await page.getByRole("button", { name: "English" }).click();
 
   await page.getByRole("button", { name: "Display" }).click();
   await page.getByRole("radio", { name: "Dark" }).click();
