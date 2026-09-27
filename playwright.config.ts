@@ -37,6 +37,9 @@ export default defineConfig({
   // budget for work those tests genuinely do — no assertion is relaxed.
   timeout: 60_000,
   reporter: "line",
+  // Cleans up the courses several specs publish and never delete -- see
+  // e2e/global-teardown.ts.
+  globalTeardown: "./e2e/global-teardown.ts",
   use: {
     baseURL: "http://localhost:3000",
     trace: "on-first-retry",
