@@ -665,6 +665,7 @@
       "colTitle": "Pamagat",
       "colOrgUnit": "Na-deploy sa",
       "colStatus": "Status",
+      "colVisibility": "Visibility",
       "colActions": "Mga Aksyon",
       "status": {
         "draft": "Draft",
@@ -727,6 +728,7 @@
       "colTitle": "Pamagat",
       "colOrgUnit": "Na-deploy sa",
       "colStatus": "Status",
+      "colVisibility": "Visibility",
       "colActions": "Mga Aksyon",
       "status": {
         "draft": "Draft",
@@ -866,7 +868,8 @@
     "heading": "Mga Anunsyo",
     "intro": "Mga update mula sa inyong barangay, lungsod, rehiyon, at DOH.",
     "empty": "Wala pang mga anunsyo.",
-    "deleteAction": "Tanggalin"
+    "deleteAction": "Tanggalin",
+    "confirmDelete": "Tanggalin ang anunsyong ito? Hindi na ito mababawi."
   },
   "surveys": {
     "heading": "Mga Survey",

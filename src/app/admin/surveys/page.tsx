@@ -5,7 +5,13 @@ import { loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 
-export default async function AdminSurveysPage() {
+export default async function AdminSurveysPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ view?: string }>;
+}) {
+  const { view: viewParam } = await searchParams;
+  const view = viewParam === "archived" ? "archived" : "active";
   const supabase = await createClient();
   const flags = await getRequestMasterFlags();
 
@@ -28,7 +34,7 @@ export default async function AdminSurveysPage() {
     supabase
       .from("surveys")
       .select(
-        "id, org_unit_id, author_user_id, title_fil, title_en, description_fil, description_en, is_anonymous, status, created_at, org_units(name)",
+        "id, org_unit_id, author_user_id, title_fil, title_en, description_fil, description_en, is_anonymous, status, created_at, hidden_at, archived_at, org_units(name)",
       )
       .order("created_at", { ascending: false })
       .returns<Survey[]>(),
@@ -37,9 +43,17 @@ export default async function AdminSurveysPage() {
 
   if (!rootOrgUnit) redirect("/login");
 
+  const allRows = surveys ?? [];
+  const activeRows = allRows.filter((row) => !row.archived_at);
+  const archivedRows = allRows.filter((row) => row.archived_at);
+  const rows = view === "archived" ? archivedRows : activeRows;
+
   return (
     <SurveysConsole
-      initialSurveys={surveys ?? []}
+      surveys={rows}
+      view={view}
+      activeCount={activeRows.length}
+      archivedCount={archivedRows.length}
       rootOrgUnit={rootOrgUnit}
     />
   );

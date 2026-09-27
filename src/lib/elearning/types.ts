@@ -91,6 +91,8 @@ export type Course = {
   quiz_passing_percent: number;
   quiz_max_attempts: number;
   created_at: string;
+  hidden_at: string | null;
+  archived_at: string | null;
   org_units: { name: string } | null;
 };
 

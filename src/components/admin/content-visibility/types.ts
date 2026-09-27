@@ -21,3 +21,14 @@ export type VisibilityState = {
   hidden_at: string | null;
   archived_at: string | null;
 };
+
+// A content-type-specific extra menu item (today only announcements' Delete,
+// plan §7 C4), rendered in the same disclosure menu as hide/show/archive/
+// restore. `confirm` mirrors Archive's own confirm-before-acting step.
+export type VisibilityExtraAction = {
+  key: string;
+  label: string;
+  confirm: { message: string; confirmLabel: string };
+  run: () => Promise<{ error?: string } | void>;
+  danger?: boolean;
+};

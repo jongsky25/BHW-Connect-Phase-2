@@ -14,6 +14,8 @@ export type Survey = {
   is_anonymous: boolean;
   status: SurveyStatus;
   created_at: string;
+  hidden_at: string | null;
+  archived_at: string | null;
   org_units: { name: string } | null;
 };
 

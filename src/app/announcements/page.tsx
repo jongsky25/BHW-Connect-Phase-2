@@ -34,7 +34,9 @@ export default async function AnnouncementsPage() {
   const { data: announcements } = await withVisible(
     supabase
       .from("announcements")
-      .select("id, org_unit_id, author_user_id, body_fil, body_en, link_url, image_url, created_at, org_units(name), users(full_name)"),
+      .select(
+        "id, org_unit_id, author_user_id, body_fil, body_en, link_url, image_url, created_at, hidden_at, archived_at, org_units(name), users(full_name)",
+      ),
   )
     .order("created_at", { ascending: false })
     .returns<Announcement[]>();
@@ -54,7 +56,7 @@ export default async function AnnouncementsPage() {
       ) : (
         <div className="flex flex-col gap-4">
           {rows.map((announcement) => (
-            <AnnouncementCard key={announcement.id} announcement={announcement} locale={locale} canModerate={false} />
+            <AnnouncementCard key={announcement.id} announcement={announcement} locale={locale} />
           ))}
         </div>
       )}

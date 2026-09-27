@@ -111,6 +111,30 @@ describe("VisibilityActions", () => {
     expect(screen.queryByRole("alertdialog")).not.toBeInTheDocument();
   });
 
+  it("renders an extra action, asks for its own confirmation, and calls its run() only after confirming", async () => {
+    const run = vi.fn().mockResolvedValue(undefined);
+    renderActions({
+      extraActions: [
+        {
+          key: "delete",
+          label: "Delete",
+          confirm: { message: "Delete this for good?", confirmLabel: "Delete" },
+          run,
+          danger: true,
+        },
+      ],
+    });
+    fireEvent.click(screen.getByRole("button", { name: /Actions/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Delete" }));
+
+    expect(screen.getByText("Delete this for good?")).toBeInTheDocument();
+    expect(run).not.toHaveBeenCalled();
+
+    fireEvent.click(screen.getByRole("button", { name: "Delete" }));
+    await waitFor(() => expect(run).toHaveBeenCalled());
+    await waitFor(() => expect(state.refresh).toHaveBeenCalled());
+  });
+
   it("shows a friendly error when the RPC fails, and does not refresh", async () => {
     state.rpc.mockResolvedValue({ error: { message: "content archived" } });
     renderActions();

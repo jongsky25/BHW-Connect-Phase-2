@@ -6,11 +6,21 @@ import { useId, useState } from "react";
 import { mapAdminRpcError } from "@/lib/admin/error-messages";
 import { useDisclosure } from "@/components/nav/use-disclosure";
 import { createClient } from "@/lib/supabase/client";
-import { actionsFor, type VisibilityAction, type VisibilityContentType, type VisibilityState } from "./types";
+import {
+  actionsFor,
+  type VisibilityAction,
+  type VisibilityContentType,
+  type VisibilityExtraAction,
+  type VisibilityState,
+} from "./types";
 
 type Props = VisibilityState & {
   contentType: VisibilityContentType;
   id: string;
+  /** A content-type-specific extra menu item, e.g. announcements' Delete
+   * (plan §7 C4). Rendered after the standard actions, each with its own
+   * confirm step. */
+  extraActions?: VisibilityExtraAction[];
 };
 
 const ACTION_LABEL_KEY: Record<VisibilityAction, string> = {
@@ -20,15 +30,20 @@ const ACTION_LABEL_KEY: Record<VisibilityAction, string> = {
   restore: "restoreAction",
 };
 
+type PendingConfirm =
+  | { kind: "archive" }
+  | { kind: "extra"; action: VisibilityExtraAction };
+
 // A disclosure menu (button + conditionally-rendered panel), same pattern as
-// the header's MoreMenu — not role="menu"/role="menuitem". Archive asks for
-// confirmation first (plan §4.5); every other action fires immediately.
-export function VisibilityActions({ contentType, id, hidden_at, archived_at }: Props) {
+// the header's MoreMenu — not role="menu"/role="menuitem". Archive, and any
+// extra action that asks for one, shows a confirmation step first (plan
+// §4.5); every other action fires immediately.
+export function VisibilityActions({ contentType, id, hidden_at, archived_at, extraActions = [] }: Props) {
   const t = useTranslations("admin.visibility");
   const router = useRouter();
   const { open, setOpen, containerRef, triggerRef } = useDisclosure<HTMLDivElement, HTMLButtonElement>();
   const panelId = useId();
-  const [confirmingArchive, setConfirmingArchive] = useState(false);
+  const [confirming, setConfirming] = useState<PendingConfirm | null>(null);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -41,7 +56,7 @@ export function VisibilityActions({ contentType, id, hidden_at, archived_at }: P
     return isArchived; // restore
   });
 
-  async function run(action: VisibilityAction) {
+  async function runVisibility(action: VisibilityAction) {
     setError(null);
     setPending(true);
     try {
@@ -60,17 +75,40 @@ export function VisibilityActions({ contentType, id, hidden_at, archived_at }: P
       setError(t("genericError"));
     } finally {
       setPending(false);
-      setConfirmingArchive(false);
+      setConfirming(null);
+      setOpen(false);
+    }
+  }
+
+  async function runExtra(action: VisibilityExtraAction) {
+    setError(null);
+    setPending(true);
+    try {
+      const result = await action.run();
+      if (result?.error) {
+        setError(result.error);
+        return;
+      }
+      router.refresh();
+    } catch {
+      setError(t("genericError"));
+    } finally {
+      setPending(false);
+      setConfirming(null);
       setOpen(false);
     }
   }
 
   function handleActionClick(action: VisibilityAction) {
     if (action === "archive") {
-      setConfirmingArchive(true);
+      setConfirming({ kind: "archive" });
       return;
     }
-    run(action);
+    runVisibility(action);
+  }
+
+  function handleExtraClick(action: VisibilityExtraAction) {
+    setConfirming({ kind: "extra", action });
   }
 
   return (
@@ -93,13 +131,19 @@ export function VisibilityActions({ contentType, id, hidden_at, archived_at }: P
           id={panelId}
           className="absolute right-0 top-full z-50 mt-2 min-w-56 rounded-md border border-ink/10 bg-canvas py-1 shadow-lg"
         >
-          {confirmingArchive ? (
-            <div role="alertdialog" aria-label={t("confirmArchive")} className="flex flex-col gap-2 p-3">
-              <p className="text-sm text-ink">{t("confirmArchive")}</p>
+          {confirming ? (
+            <div
+              role="alertdialog"
+              aria-label={confirming.kind === "archive" ? t("confirmArchive") : confirming.action.confirm.message}
+              className="flex flex-col gap-2 p-3"
+            >
+              <p className="text-sm text-ink">
+                {confirming.kind === "archive" ? t("confirmArchive") : confirming.action.confirm.message}
+              </p>
               <div className="flex justify-end gap-2">
                 <button
                   type="button"
-                  onClick={() => setConfirmingArchive(false)}
+                  onClick={() => setConfirming(null)}
                   className="min-h-[44px] rounded-md border border-ink/20 px-3 py-1.5 text-xs font-medium text-ink hover:bg-ink/5"
                 >
                   {t("cancelAction")}
@@ -107,25 +151,42 @@ export function VisibilityActions({ contentType, id, hidden_at, archived_at }: P
                 <button
                   type="button"
                   disabled={pending}
-                  onClick={() => run("archive")}
+                  onClick={() =>
+                    confirming.kind === "archive" ? runVisibility("archive") : runExtra(confirming.action)
+                  }
                   className="min-h-[44px] rounded-md bg-danger px-3 py-1.5 text-xs font-medium text-on-primary disabled:opacity-60"
                 >
-                  {t("confirmArchiveAction")}
+                  {confirming.kind === "archive" ? t("confirmArchiveAction") : confirming.action.confirm.confirmLabel}
                 </button>
               </div>
             </div>
           ) : (
-            available.map((action) => (
-              <button
-                key={action}
-                type="button"
-                disabled={pending}
-                onClick={() => handleActionClick(action)}
-                className="block w-full px-4 py-2 text-left text-sm text-ink/80 hover:bg-ink/5 disabled:opacity-60"
-              >
-                {t(ACTION_LABEL_KEY[action])}
-              </button>
-            ))
+            <>
+              {available.map((action) => (
+                <button
+                  key={action}
+                  type="button"
+                  disabled={pending}
+                  onClick={() => handleActionClick(action)}
+                  className="block w-full px-4 py-2 text-left text-sm text-ink/80 hover:bg-ink/5 disabled:opacity-60"
+                >
+                  {t(ACTION_LABEL_KEY[action])}
+                </button>
+              ))}
+              {extraActions.map((action) => (
+                <button
+                  key={action.key}
+                  type="button"
+                  disabled={pending}
+                  onClick={() => handleExtraClick(action)}
+                  className={`block w-full px-4 py-2 text-left text-sm hover:bg-ink/5 disabled:opacity-60 ${
+                    action.danger ? "text-danger" : "text-ink/80"
+                  }`}
+                >
+                  {action.label}
+                </button>
+              ))}
+            </>
           )}
         </div>
       ) : null}

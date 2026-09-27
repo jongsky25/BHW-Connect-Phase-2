@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import {
+  BARANGAY_BATONG_MALAKE_ID,
   OTHER_BARANGAY_BHW,
   STABLE_ADMIN,
   STABLE_BHW,
@@ -7,6 +8,18 @@ import {
   getAccessToken,
   restGet,
 } from "./fixtures/auth";
+
+function supabaseUrl(): string {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url) throw new Error("NEXT_PUBLIC_SUPABASE_URL is required");
+  return url;
+}
+
+function anonKey(): string {
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!key) throw new Error("NEXT_PUBLIC_SUPABASE_ANON_KEY is required");
+  return key;
+}
 
 test("a barangay admin posts an announcement, it reaches BHWs in that barangay but not a sibling barangay, and delete removes it for everyone", async ({
   page,
@@ -53,7 +66,12 @@ test("a barangay admin posts an announcement, it reaches BHWs in that barangay b
   expect(visibleToOtherBarangay).toHaveLength(0);
 
   // Deleting it removes it from both the console and every viewer's feed.
-  await page.getByRole("button", { name: "Tanggalin" }).first().click();
+  // RFT C4: Delete now lives inside the same Visibility actions menu as
+  // Hide/Archive, and confirms before acting.
+  const card = page.locator("article", { hasText: marker });
+  await card.getByRole("button", { name: "Mga Aksyon" }).click();
+  await card.getByRole("button", { name: "Tanggalin" }).click();
+  await card.getByRole("button", { name: "Tanggalin" }).click();
   await expect(page.getByText(marker)).not.toBeVisible();
 
   const afterDelete = await restGet(request, sameBarangayToken, `announcements?id=eq.${announcementId}`);
@@ -109,4 +127,63 @@ test("a city-level announcement cascades down to a barangay BHW's feed", async (
     },
     data: { p_announcement_id: announcementId },
   });
+});
+
+// RFT C4 DoD (docs/role-feature-toggles-plan.md §4.5): hide/show and
+// archive/restore on an announcement, driven through
+// rpc_content_set_visibility exactly as /admin/announcements calls it.
+// Always cleaned up in `finally` via the hard delete, same as the specs
+// above.
+test("hiding, then archiving, an announcement takes it out of a BHW's feed; showing/restoring brings it back", async ({
+  request,
+}) => {
+  const marker = `e2e.announce.visibility.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
+
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const createResponse = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_announcement_create`, {
+    headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+    data: {
+      p_org_unit_id: BARANGAY_BATONG_MALAKE_ID,
+      p_body_fil: `Tala para sa visibility test. ${marker}`,
+      p_body_en: `Note for the visibility test. ${marker}`,
+    },
+  });
+  const [{ announcement_id: announcementId }] = (await createResponse.json()) as Array<{
+    announcement_id: string;
+  }>;
+
+  async function setVisibility(action: "hide" | "show" | "archive" | "restore") {
+    const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_content_set_visibility`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_type: "announcement", p_id: announcementId, p_action: action },
+    });
+    expect(response.status(), `rpc_content_set_visibility(${action})`).toBe(204);
+  }
+
+  async function bhwCanReadAnnouncement(): Promise<boolean> {
+    const bhwToken = await getAccessToken(request, STABLE_BHW.username, STABLE_BHW.password);
+    const rows = await restGet(request, bhwToken, `announcements?id=eq.${announcementId}`);
+    return rows.length === 1;
+  }
+
+  try {
+    expect(await bhwCanReadAnnouncement()).toBe(true);
+
+    await setVisibility("hide");
+    expect(await bhwCanReadAnnouncement()).toBe(false);
+
+    await setVisibility("show");
+    expect(await bhwCanReadAnnouncement()).toBe(true);
+
+    await setVisibility("archive");
+    expect(await bhwCanReadAnnouncement()).toBe(false);
+
+    await setVisibility("restore");
+    expect(await bhwCanReadAnnouncement()).toBe(true);
+  } finally {
+    await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_announcement_delete`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_announcement_id: announcementId },
+    });
+  }
 });
