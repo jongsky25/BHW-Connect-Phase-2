@@ -40,6 +40,7 @@ beforeEach(() => {
   document.documentElement.removeAttribute("data-underline-links");
   document.documentElement.removeAttribute("data-line-spacing");
   document.documentElement.removeAttribute("data-reading-font");
+  document.documentElement.removeAttribute("data-colorblind-status");
 });
 
 afterEach(() => {
@@ -100,6 +101,14 @@ describe("SettingsForm", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Atkinson Hyperlegible" }));
 
     expect(document.documentElement.getAttribute("data-reading-font")).toBe("hyperlegible");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a colorblind-status change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Enabled" }));
+
+    expect(document.documentElement.getAttribute("data-colorblind-status")).toBe("true");
     expect(state.rpcCalls).toEqual([]);
   });
 

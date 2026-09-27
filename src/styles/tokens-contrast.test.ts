@@ -40,6 +40,14 @@ const PRIMARY_COLOURWAYS = ["equity", "teal", "violet", "emerald", "rose", "crim
 // is the untagged accent default, same as marigold above.
 const ACCENT_COLOURWAYS = ["equity", "marigold", "emerald", "violet", "rose", "slate"] as const;
 
+// Increment 4.4's colour-blind-safe status colours (docs plan §6 4.4):
+// `data-colorblind-status` is a boolean flag (only ever "true", see
+// displayAttributes), not a multi-value colourway, but it follows the exact
+// same base/dark-redirect shape as a `data-primary`/`data-accent` colourway,
+// so it's modelled as a one-option "colourway" and reuses
+// buildColourwayThemeLayers below rather than duplicating that shape.
+const COLORBLIND_STATUS_COLOURWAYS = ["true"] as const;
+
 function attributeSelectors(attribute: string, colour: string) {
   return {
     base: `:root[${attribute}="${colour}"]`,
@@ -57,6 +65,7 @@ const TOP_LEVEL_SELECTORS = [
   ':root[data-theme="dark"][data-contrast="high"]',
   ...PRIMARY_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-primary", colour))),
   ...ACCENT_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-accent", colour))),
+  ...COLORBLIND_STATUS_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-colorblind-status", colour))),
 ] as const;
 
 /**
@@ -224,6 +233,7 @@ function buildColourwayThemeLayers<Colour extends string>(
 
 const primaryColourwayThemeLayers = buildColourwayThemeLayers("data-primary", PRIMARY_COLOURWAYS);
 const accentColourwayThemeLayers = buildColourwayThemeLayers("data-accent", ACCENT_COLOURWAYS);
+const colorblindStatusThemeLayers = buildColourwayThemeLayers("data-colorblind-status", COLORBLIND_STATUS_COLOURWAYS);
 
 function resolvedColourwayColor<Colour extends string>(
   layers: Record<Colour, typeof themeLayers>,
@@ -236,6 +246,8 @@ function resolvedColourwayColor<Colour extends string>(
   if (!raw) throw new Error(`Colourway "${colour}" theme "${theme}" has no declaration for ${token}`);
   return resolveColor(raw, tokens);
 }
+
+const statusTokens = ["--color-success", "--color-warning", "--color-danger", "--color-info"] as const;
 
 describe("tokens.css contrast guard (increment 3.1)", () => {
   it.each(themeNames)("%s: found all four expected theme layers", (theme) => {
@@ -265,8 +277,6 @@ describe("tokens.css contrast guard (increment 3.1)", () => {
     const ratio = contrastRatio(resolvedColor(theme, "--color-primary"), resolvedColor(theme, "--color-canvas"));
     expect(ratio).toBeGreaterThanOrEqual(3);
   });
-
-  const statusTokens = ["--color-success", "--color-warning", "--color-danger", "--color-info"] as const;
 
   for (const token of statusTokens) {
     it.each(themeNames)(`%s: ${token} on canvas ≥ 4.5:1`, (theme) => {
@@ -314,6 +324,20 @@ describe("tokens.css accent colourways (increment 3.3)", () => {
     );
     expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
+});
+
+describe("tokens.css colour-blind-safe status colours (increment 4.4)", () => {
+  const cases = COLORBLIND_STATUS_COLOURWAYS.flatMap((colour) => themeNames.map((theme) => [colour, theme] as const));
+
+  for (const token of statusTokens) {
+    it.each(cases)(`%s/%s: ${token} on canvas ≥ 4.5:1`, (colour, theme) => {
+      const ratio = contrastRatio(
+        resolvedColourwayColor(colorblindStatusThemeLayers, colour, theme, token),
+        resolvedColourwayColor(colorblindStatusThemeLayers, colour, theme, "--color-canvas"),
+      );
+      expect(ratio).toBeGreaterThanOrEqual(4.5);
+    });
+  }
 });
 
 describe("contrastRatio", () => {

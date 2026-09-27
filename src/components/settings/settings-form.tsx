@@ -40,10 +40,10 @@ type Props = {
 // apply instantly and save through use-display-settings.ts's shared
 // debounce; Language keeps its pre-2.4 explicit-Save flow, since a language
 // change needs a full-page refresh to load the other message catalog.
-// Reading & comfort (Phase 4) shares the same instant-apply/debounce flow;
-// only colour-blind-safe status colours (4.4) still remain unbuilt.
+// Reading & comfort (Phase 4) shares the same instant-apply/debounce flow.
 const CONTRAST_OPTIONS = [false, true] as const;
 const UNDERLINE_LINKS_OPTIONS = [false, true] as const;
+const COLORBLIND_STATUS_OPTIONS = [false, true] as const;
 
 function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
@@ -357,9 +357,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       <Section id="reading" heading={t("readingHeading")}>
         {/* Shares the Display section's one status/aria-live region above —
             both write through the same debounced save, so a second region
-            here would double-announce the same "Saved" to screen readers.
-            Colour-blind-safe status colours (4.4) still land in a later
-            increment. */}
+            here would double-announce the same "Saved" to screen readers. */}
         <SegmentedRadioGroup
           legend={t("underlineLinksLabel")}
           name="underline-links"
@@ -385,6 +383,15 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={a11y.reading_font}
           onChange={(next: ReadingFont) => updateDisplay({ reading_font: next })}
           labelFor={(option) => t(`readingFont${capitalize(option)}`)}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("colorblindStatusLabel")}
+          name="colorblind-status"
+          options={COLORBLIND_STATUS_OPTIONS}
+          value={a11y.colorblind_status}
+          onChange={(next: boolean) => updateDisplay({ colorblind_status: next })}
+          labelFor={(option) => t(option ? "colorblindStatusOn" : "colorblindStatusOff")}
         />
       </Section>
 

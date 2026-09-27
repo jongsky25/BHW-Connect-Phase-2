@@ -467,3 +467,39 @@
 :root[data-reading-font="hyperlegible"] {
   --font-sans: var(--font-reading);
 }
+
+/* Colour-blind-safe status colours (Phase 4.4, docs/header-navigation-
+   display-settings-plan.md §6): data-colorblind-status swaps success/
+   warning/danger/info to a blue/orange-based set, Okabe-Ito style. The
+   overwhelmingly common colour-vision deficiencies are red-green, not
+   blue-yellow, so blue/orange is the widely-recommended safe pair — the
+   default success (green) vs danger (red) is exactly the confusable pair
+   this exists to avoid. info and warning are already blue/orange, so only
+   their hue moves a little for separation from the new success/danger;
+   success moves from green to blue, danger from red to vermillion
+   (orange-red), so no two roles share a hue family with another. Tuned to
+   clear WCAG 4.5:1 against canvas (tokens-contrast.test.ts) with the same
+   kind of real margin the other status colours above already carry — not
+   a bare pass. */
+:root[data-colorblind-status="true"] {
+  --color-success: #3d64d6;
+  --color-warning: #9b6009;
+  --color-danger: #c13f10;
+  --color-info: #2d71a9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-colorblind-status="true"] {
+    --color-success: #6382de;
+    --color-warning: #c1780b;
+    --color-danger: #ec5018;
+    --color-info: #3d8ccc;
+  }
+}
+
+:root[data-theme="dark"][data-colorblind-status="true"] {
+  --color-success: #6382de;
+  --color-warning: #c1780b;
+  --color-danger: #ec5018;
+  --color-info: #3d8ccc;
+}
