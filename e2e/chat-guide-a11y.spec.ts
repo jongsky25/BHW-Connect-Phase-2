@@ -1,6 +1,21 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
-import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet } from "./fixtures/auth";
+import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet, unpublishKbEntry } from "./fixtures/auth";
+
+// This spec publishes a real KB entry on the shared live pilot project
+// (docs/deploy-runbook.md, "One database"), so it must not stay visible to
+// BHWs after the test — afterEach sets it back to draft. A hook rather than
+// inline try/finally: Playwright tears down a timed-out test before a
+// finally block would run, but the hook still fires.
+let publishedEntryId: string | undefined;
+
+test.afterEach(async ({ request }) => {
+  if (!publishedEntryId) return;
+  const entryId = publishedEntryId;
+  publishedEntryId = undefined;
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  await unpublishKbEntry(request, adminToken, entryId);
+});
 
 // INC-5 DoD: axe-core scan clean on the Chat Guide flow. Scans the empty
 // state and, separately, the answer and no-answer response states — the
@@ -22,23 +37,28 @@ test("Chat Guide UI has no axe-core violations across its response states", asyn
     `users?username=eq.${STABLE_ADMIN.username}&select=id`,
   )) as Array<{ id: string }>;
 
-  await request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_kb_entry_create`, {
-    headers: {
-      apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string,
-      Authorization: `Bearer ${adminToken}`,
-      "Content-Type": "application/json",
+  const createResponse = await request.post(
+    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_kb_entry_create`,
+    {
+      headers: {
+        apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string,
+        Authorization: `Bearer ${adminToken}`,
+        "Content-Type": "application/json",
+      },
+      data: {
+        p_category_id: category.id,
+        p_question_fil: questionFil,
+        p_question_en: questionEn,
+        p_answer_fil: `Sagot para sa ${marker}.`,
+        p_answer_en: `Answer for ${marker}.`,
+        p_keywords: [marker],
+        p_owner_user_id: owner.id,
+        p_status: "published",
+      },
     },
-    data: {
-      p_category_id: category.id,
-      p_question_fil: questionFil,
-      p_question_en: questionEn,
-      p_answer_fil: `Sagot para sa ${marker}.`,
-      p_answer_en: `Answer for ${marker}.`,
-      p_keywords: [marker],
-      p_owner_user_id: owner.id,
-      p_status: "published",
-    },
-  });
+  );
+  const [{ entry_id: entryId }] = (await createResponse.json()) as Array<{ entry_id: string }>;
+  publishedEntryId = entryId;
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_BHW.username);
