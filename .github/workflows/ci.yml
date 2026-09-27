@@ -153,26 +153,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Fail in seconds, with a plain message, when the shared database can't
-      # serve requests (e.g. PostgREST stuck on 503 PGRST002 because its
-      # schema-cache query keeps hitting the statement timeout). Running the
-      # suite against it anyway turns into a 1.5h run of timeouts and retries
-      # that loads the database further while it's trying to recover.
-      - name: Check the shared database is serving requests
-        run: |
-          for attempt in 1 2 3 4 5; do
-            status=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 \
-              -H "apikey: $NEXT_PUBLIC_SUPABASE_ANON_KEY" \
-              "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/feature_flags?select=key&limit=1")
-            if [ "$status" -ge 200 ] && [ "$status" -lt 500 ]; then
-              echo "Shared database OK (HTTP $status)"
-              exit 0
-            fi
-            echo "Attempt $attempt: shared database returned HTTP $status; retrying in 30s"
-            sleep 30
-          done
-          echo "::error::The shared Supabase database is not serving requests (last HTTP $status). This is an infrastructure problem, not a test failure — check the project's health in the Supabase dashboard before re-running."
-          exit 1
+      # Don't start a chunk against a database that can't answer promptly —
+      # it only fails on timeouts and slows the database's recovery. Waits
+      # up to ~10 minutes for it to recover first; see the script.
+      - name: Check the shared database is answering promptly
+        run: bash .github/scripts/check-shared-db.sh
 
       - name: E2E smoke tests (chunk ${{ matrix.shard }} of 4)
         run: npm run e2e -- --shard=${{ matrix.shard }}/4
