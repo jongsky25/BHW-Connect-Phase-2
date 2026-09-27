@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
+  STABLE_SUPER_ADMIN,
   createThrowawayBhw,
   getAccessToken,
 } from "./fixtures/auth";
@@ -45,7 +46,11 @@ async function callRpc(
 // flips it off just long enough to assert the nav link disappears, then
 // always restores it in `finally` — never leave a shared flag mutated.
 test("flipping a feature flag off hides its nav link immediately", async ({ page, request }) => {
-  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  // rpc_flag_toggle is super-admin-only (docs/role-feature-toggles-plan.md
+  // §5 A1) — a plain admin token gets "not authorized" here now. The UI
+  // login below stays STABLE_ADMIN: the test is about a plain admin's own
+  // view of a flag someone else toggled, not about who may toggle it.
+  const adminToken = await getAccessToken(request, STABLE_SUPER_ADMIN.username, STABLE_SUPER_ADMIN.password);
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_ADMIN.username);

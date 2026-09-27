@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { STABLE_ADMIN, getAccessToken } from "./fixtures/auth";
+import { STABLE_ADMIN, STABLE_SUPER_ADMIN, getAccessToken } from "./fixtures/auth";
 
 function supabaseUrl(): string {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -14,7 +14,9 @@ function anonKey(): string {
 }
 
 async function setOfflinePwaFlag(request: import("@playwright/test").APIRequestContext, enabled: boolean) {
-  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  // rpc_flag_toggle is super-admin-only (docs/role-feature-toggles-plan.md
+  // §5 A1) — a plain admin token gets "not authorized" here now.
+  const adminToken = await getAccessToken(request, STABLE_SUPER_ADMIN.username, STABLE_SUPER_ADMIN.password);
   const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_flag_toggle`, {
     headers: {
       apikey: anonKey(),
