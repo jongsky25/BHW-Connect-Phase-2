@@ -5,6 +5,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import en from "../../messages/en.json";
 import fil from "../../messages/fil.json";
 import type { FeatureFlags } from "@/lib/flags/types";
+import { defaultA11ySettings } from "@/lib/settings/types";
 import { SiteHeader } from "./site-header";
 
 vi.mock("@/components/language-toggle", () => ({ LanguageToggle: () => <span>Language toggle</span> }));
@@ -22,6 +23,11 @@ vi.mock("@/components/nav/user-menu", () => ({
   UserMenu: ({ account }: { account: { username: string; role: string } }) => (
     <span>UserMenu:{account.username}:{account.role}</span>
   ),
+}));
+// Has its own dedicated test (quick-display-popover.test.tsx); here we only
+// need to see that the header renders it.
+vi.mock("@/components/nav/quick-display-popover", () => ({
+  QuickDisplayPopover: () => <span>QuickDisplayPopover</span>,
 }));
 
 let pathname = "/home";
@@ -73,6 +79,7 @@ function show(
         notificationsEnabled={false}
         notifUnreadCount={0}
         flags={flags}
+        initialA11y={defaultA11ySettings}
       />
     </NextIntlClientProvider>,
   );

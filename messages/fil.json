@@ -11,6 +11,7 @@
     "openMenuLabel": "Buksan ang menu",
     "closeMenuLabel": "Isara ang menu",
     "mainMenuLabel": "Pangunahing menu",
+    "equityMarkLabel": "Equity in Health",
     "role": {
       "bhw": "BHW",
       "assessor": "Facilitator / Assessor",
@@ -30,7 +31,8 @@
   },
   "footer": {
     "copyright": "© {year} BHW Connect",
-    "privacyNotice": "Patakaran sa Privacy"
+    "privacyNotice": "Patakaran sa Privacy",
+    "credit": "Isang inobasyon ng Equity in Health Section"
   },
   "privacy": {
     "heading": "Patakaran sa Privacy",
@@ -121,7 +123,32 @@
     "genericError": "May naganap na problema. Subukan muli.",
     "displayHeading": "Display",
     "coloursHeading": "Mga Kulay",
-    "coloursPlaceholder": "Malapit na ang karagdagang mga kulay.",
+    "coloursPresetsLabel": "Mga Preset",
+    "coloursCustomLabel": "Custom",
+    "coloursMainLabel": "Pangunahing kulay",
+    "coloursAccentLabel": "Kulay ng accent",
+    "coloursSameHint": "Magkatulad ang pangunahing kulay at accent. Maaaring mahirap makita ang mga link.",
+    "coloursPreset": {
+      "bayanihan": "Bayanihan",
+      "equity": "Equity in Health",
+      "garden": "Garden",
+      "sunrise": "Sunrise",
+      "calm": "Calm"
+    },
+    "colourName": {
+      "marigold": "Marigold",
+      "equity": "Equity Blue",
+      "teal": "Bayanihan Teal",
+      "emerald": "Emerald",
+      "violet": "Violet",
+      "rose": "Rose",
+      "crimson": "Crimson",
+      "slate": "Slate"
+    },
+    "textSizeDown": "A−",
+    "textSizeDefault": "A",
+    "textSizeUp": "A+",
+    "moreDisplaySettingsCta": "Higit pang display settings",
     "readingHeading": "Pagbasa at Kaginhawaan",
     "readingPlaceholder": "Malapit na ang mga tulong sa pagbasa.",
     "resetHeading": "Ibalik sa Default",

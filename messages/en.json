@@ -11,6 +11,7 @@
     "openMenuLabel": "Open menu",
     "closeMenuLabel": "Close menu",
     "mainMenuLabel": "Main menu",
+    "equityMarkLabel": "Equity in Health",
     "role": {
       "bhw": "BHW",
       "assessor": "Facilitator / Assessor",
@@ -30,7 +31,8 @@
   },
   "footer": {
     "copyright": "© {year} BHW Connect",
-    "privacyNotice": "Privacy Notice"
+    "privacyNotice": "Privacy Notice",
+    "credit": "An Equity in Health Section innovation"
   },
   "privacy": {
     "heading": "Privacy Notice",
@@ -121,7 +123,32 @@
     "genericError": "Something went wrong. Please try again.",
     "displayHeading": "Display",
     "coloursHeading": "Colours",
-    "coloursPlaceholder": "More colour choices are coming soon.",
+    "coloursPresetsLabel": "Presets",
+    "coloursCustomLabel": "Custom",
+    "coloursMainLabel": "Main colour",
+    "coloursAccentLabel": "Accent colour",
+    "coloursSameHint": "Main and accent are the same colour. Links may be harder to spot.",
+    "coloursPreset": {
+      "bayanihan": "Bayanihan",
+      "equity": "Equity in Health",
+      "garden": "Garden",
+      "sunrise": "Sunrise",
+      "calm": "Calm"
+    },
+    "colourName": {
+      "marigold": "Marigold",
+      "equity": "Equity Blue",
+      "teal": "Bayanihan Teal",
+      "emerald": "Emerald",
+      "violet": "Violet",
+      "rose": "Rose",
+      "crimson": "Crimson",
+      "slate": "Slate"
+    },
+    "textSizeDown": "A−",
+    "textSizeDefault": "A",
+    "textSizeUp": "A+",
+    "moreDisplaySettingsCta": "More display settings",
     "readingHeading": "Reading & comfort",
     "readingPlaceholder": "Reading aids are coming soon.",
     "resetHeading": "Reset to defaults",

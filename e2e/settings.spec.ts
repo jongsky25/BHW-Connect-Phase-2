@@ -1,5 +1,5 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
@@ -8,6 +8,24 @@ import {
   getAccessToken,
   onboardThroughLogin,
 } from "./fixtures/auth";
+
+// A freshly onboarded BHW defaults to language='fil' (baseline migration),
+// but the colour-picker assertions below are keyed to English labels (some
+// of settings.coloursMainLabel/coloursAccentLabel etc. are translated, unlike
+// the colourway/preset names themselves) — same reasoning as
+// lesson-narration.spec.ts's onboardEnglishBhw. Set it via the RPC directly
+// rather than the Settings page's own language switcher, which is its own
+// round trip already covered by the "settings persist..." test above.
+async function setLanguageEnglish(page: Page, userToken: string) {
+  await page.request.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/rpc_update_settings`, {
+    headers: {
+      apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string,
+      Authorization: `Bearer ${userToken}`,
+      "Content-Type": "application/json",
+    },
+    data: { p_language: "en", p_theme: "light", p_font_scale: "md", p_high_contrast: false },
+  });
+}
 
 // INC-7 DoD: settings persist to the profile and survive logout/login and a
 // second device (not just a local cookie).
@@ -73,9 +91,9 @@ test("settings persist across sessions and apply immediately on save", async ({ 
 });
 
 // Increment 2.3 DoD: a signed-out visitor's display prefs come from the
-// BHW_DISPLAY cookie and survive a reload. No UI writes this cookie yet
-// (increment 3.5 adds the header's quick-display popover) — set it
-// directly to prove the SSR read path lands ahead of that UI.
+// BHW_DISPLAY cookie and survive a reload. Set directly here (rather than
+// through the header's quick-display popover, which increment 3.5 adds and
+// exercises for real in the test below) to isolate the SSR read path.
 test("a signed-out visitor's BHW_DISPLAY cookie applies on /login and survives reload", async ({ page }) => {
   await page.goto("/login");
   await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
@@ -110,4 +128,80 @@ test("a signed-in profile's settings override a leftover BHW_DISPLAY cookie", as
   // STABLE_BHW's own profile has no theme override, so the profile (not
   // the stale signed-out cookie) decides what renders once signed in.
   await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
+});
+
+// Increment 3.5 DoD.
+test("picking the Equity in Health preset recolours the header and persists on reload", async ({ page, request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  const newPassword = "Fresh-Colours-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await setLanguageEnglish(page, userToken);
+
+  await page.goto("/settings");
+  const main = page.getByRole("main");
+  await main.getByRole("button", { name: "Equity in Health" }).click();
+
+  await expect(page.locator("html")).toHaveAttribute("data-primary", "equity");
+  await expect(page.locator("html")).toHaveAttribute("data-accent", "marigold");
+  await expect(main.getByText("Your settings have been saved.")).toBeVisible({ timeout: 10_000 });
+
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-primary", "equity");
+  await expect(page.locator("html")).toHaveAttribute("data-accent", "marigold");
+
+  const a11yScan = await new AxeBuilder({ page }).include("main").analyze();
+  expect(a11yScan.violations).toEqual([]);
+});
+
+test("the main and accent colour swatches are keyboard-operable", async ({ page, request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  const newPassword = "Fresh-Swatch-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await setLanguageEnglish(page, userToken);
+
+  await page.goto("/settings");
+  const main = page.getByRole("main");
+
+  const mainColourRadio = main.getByRole("group", { name: "Main colour" }).getByRole("radio", { name: "Rose" });
+  await mainColourRadio.focus();
+  await page.keyboard.press("Space");
+  await expect(mainColourRadio).toBeChecked();
+  await expect(page.locator("html")).toHaveAttribute("data-primary", "rose");
+
+  const accentColourRadio = main.getByRole("group", { name: "Accent colour" }).getByRole("radio", { name: "Violet" });
+  await accentColourRadio.focus();
+  await page.keyboard.press("Space");
+  await expect(accentColourRadio).toBeChecked();
+  await expect(page.locator("html")).toHaveAttribute("data-accent", "violet");
+});
+
+test("a signed-out visitor's quick-display popover writes the BHW_DISPLAY cookie and persists on reload", async ({
+  page,
+}) => {
+  await page.goto("/login");
+  await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
+
+  // /login renders in the default cookie-less locale (Filipino) — switch via
+  // the header's own toggle, same as shell.spec.ts's language-toggle test,
+  // so the popover's "Dark" radio has that exact English label.
+  await page.getByRole("button", { name: "English" }).click();
+
+  await page.getByRole("button", { name: "Display" }).click();
+  await page.getByRole("radio", { name: "Dark" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+
+  // The popover applies instantly to <html> but only writes the BHW_DISPLAY
+  // cookie after use-display-settings.ts's 600ms save debounce fires —
+  // reloading before that lands would race it and lose the change, so wait
+  // for the cookie itself rather than a fixed sleep.
+  await page.waitForFunction(() => document.cookie.includes("BHW_DISPLAY="));
+
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 });

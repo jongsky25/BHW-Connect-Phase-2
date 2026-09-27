@@ -2,11 +2,25 @@
 
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { localeCookieName, type Locale } from "@/i18n/locales";
 import { mapSettingsRpcError } from "@/lib/settings/error-messages";
-import { defaultA11ySettings, displayAttributes, fontScales, themes, type A11ySettings, type FontScale, type Theme } from "@/lib/settings/types";
+import { accentColorHex, colorPresets, primaryColorHex } from "@/lib/settings/palette";
+import {
+  accentColors,
+  fontScales,
+  primaryColors,
+  themes,
+  type A11ySettings,
+  type AccentColor,
+  type FontScale,
+  type PrimaryColor,
+  type Theme,
+} from "@/lib/settings/types";
+import { useDisplaySettings } from "@/lib/settings/use-display-settings";
 import { createClient } from "@/lib/supabase/client";
+import { ColourSwatchGroup } from "./colour-swatch-group";
+import { SegmentedRadioGroup } from "./segmented-radio-group";
 
 type Props = {
   initialLanguage: Locale;
@@ -14,13 +28,11 @@ type Props = {
 };
 
 // Increment 2.4 restructures this page into anchored sections. Display
-// settings (theme/font size/contrast) apply instantly and save through a
-// shared debounce; Language keeps its pre-2.4 explicit-Save flow, since a
-// language change needs a full-page refresh to load the other message
-// catalog. Colours (3.5) and reading aids (Phase 4) are placeholders here —
-// nothing in this increment writes those keys yet.
-const DISPLAY_SAVE_DEBOUNCE_MS = 600;
-
+// settings (theme/font size/contrast) and Colours (3.5) apply instantly and
+// save through use-display-settings.ts's shared debounce; Language keeps its
+// pre-2.4 explicit-Save flow, since a language change needs a full-page
+// refresh to load the other message catalog. Reading aids (Phase 4) are
+// still a placeholder here — nothing in this increment writes those keys.
 const CONTRAST_OPTIONS = [false, true] as const;
 
 function writeLocaleCookie(next: Locale) {
@@ -29,66 +41,6 @@ function writeLocaleCookie(next: Locale) {
 
 function capitalize<T extends string>(value: T): string {
   return value.charAt(0).toUpperCase() + value.slice(1);
-}
-
-// This is the one screen where a user can select dark theme / high contrast,
-// so it's also the one place its own controls get exercised against every
-// combination. bg-ink/text-canvas is used instead of the usual
-// bg-primary/text-on-primary or text-success accents because ink and canvas
-// are always each other's inverse in every theme + contrast state,
-// guaranteeing AA contrast; primary and success are fixed brand colors tuned
-// against the default palette and don't hold up once canvas swings to the
-// dark or high-contrast extremes.
-function SegmentedRadioGroup<T>({
-  legend,
-  name,
-  options,
-  value,
-  onChange,
-  labelFor,
-}: {
-  legend: string;
-  name: string;
-  options: readonly T[];
-  value: T;
-  onChange: (next: T) => void;
-  labelFor: (option: T) => string;
-}) {
-  return (
-    <fieldset className="flex flex-col gap-2">
-      <legend className="text-sm font-medium text-ink">{legend}</legend>
-      <div className="inline-flex w-fit overflow-hidden rounded-full border border-ink/15">
-        {options.map((option, index) => {
-          const checked = value === option;
-          return (
-            <label
-              key={index}
-              className={`relative flex min-h-11 min-w-11 cursor-pointer items-center justify-center px-4 text-sm font-medium transition-colors focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 ${
-                checked ? "bg-ink text-canvas" : "bg-transparent text-ink hover:bg-ink/5"
-              }`}
-            >
-              {/* An `sr-only` input clips to 1x1px at a fixed offset, away
-                  from the label's own rendered box — real browsers then
-                  can't hit-test a click there (Playwright: "element is
-                  outside of the viewport" / a sibling "intercepts pointer
-                  events"), even though jsdom-based component tests never
-                  notice since they don't do real hit-testing. An invisible
-                  input stretched to cover the whole label keeps every click
-                  on the label landing on the input itself. */}
-              <input
-                type="radio"
-                name={name}
-                checked={checked}
-                onChange={() => onChange(option)}
-                className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-              />
-              {labelFor(option)}
-            </label>
-          );
-        })}
-      </div>
-    </fieldset>
-  );
 }
 
 function Section({ id, heading, children }: { id: string; heading: string; children: ReactNode }) {
@@ -132,15 +84,15 @@ function PreviewCard() {
         <span className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary">
           {t("previewButton")}
         </span>
-        {/* Not text-secondary: #0c7c7e measures 4.48:1 on the light canvas
-            and 4.19:1 on the high-contrast black one, and isn't
-            theme-adjusted yet (increment 3.1's contrast guard / 3.3's accent
-            colourways). primary-text is the token tokens.css already tunes
-            to be text-safe on canvas in every theme. */}
+        {/* text-secondary (the accent colour, per docs/header-navigation-
+            display-settings-plan.md's "links and secondary UI" role):
+            increment 3.3 made --color-secondary theme-adjusted so this
+            clears 4.5:1 on canvas in every theme, the same guarantee
+            --color-primary-text already had. */}
         <a
           href="#"
           onClick={(event) => event.preventDefault()}
-          className="text-sm font-medium text-primary-text underline underline-offset-2"
+          className="text-sm font-medium text-secondary underline underline-offset-2"
         >
           {t("previewLink")}
         </a>
@@ -173,113 +125,101 @@ function PreviewCard() {
   );
 }
 
+function ColoursFields({
+  a11y,
+  update,
+}: {
+  a11y: A11ySettings;
+  update: (patch: Partial<A11ySettings>) => void;
+}) {
+  const t = useTranslations("settings");
+  const activePreset = colorPresets.find((preset) => preset.primary === a11y.primary_color && preset.accent === a11y.accent_color);
+  const sameColour: boolean = a11y.primary_color === a11y.accent_color;
+
+  return (
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="text-sm font-medium text-ink">{t("coloursPresetsLabel")}</h3>
+          {!activePreset ? (
+            <span className="rounded-full bg-ink/10 px-2 py-0.5 text-xs font-medium text-ink/70">
+              {t("coloursCustomLabel")}
+            </span>
+          ) : null}
+        </div>
+        <div className="flex flex-wrap gap-3">
+          {colorPresets.map((preset) => {
+            const selected = activePreset?.id === preset.id;
+            return (
+              <button
+                key={preset.id}
+                type="button"
+                aria-pressed={selected}
+                onClick={() => update({ primary_color: preset.primary, accent_color: preset.accent })}
+                className={`flex min-h-11 flex-col items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-medium text-ink transition-colors ${
+                  selected ? "border-ink bg-ink/5" : "border-ink/15 hover:bg-ink/5"
+                }`}
+              >
+                <span aria-hidden="true" className="flex">
+                  <span
+                    className="h-5 w-5 rounded-full border-2 border-canvas"
+                    style={{ backgroundColor: primaryColorHex[preset.primary] }}
+                  />
+                  <span
+                    className="-ml-2 h-5 w-5 rounded-full border-2 border-canvas"
+                    style={{ backgroundColor: accentColorHex[preset.accent] }}
+                  />
+                </span>
+                {t(`coloursPreset.${preset.id}`)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <ColourSwatchGroup
+        legend={t("coloursMainLabel")}
+        name="primary-color"
+        options={primaryColors}
+        value={a11y.primary_color}
+        onChange={(next: PrimaryColor) => update({ primary_color: next })}
+        colourFor={(option) => primaryColorHex[option]}
+        labelFor={(option) => t(`colourName.${option}`)}
+      />
+
+      <ColourSwatchGroup
+        legend={t("coloursAccentLabel")}
+        name="accent-color"
+        options={accentColors}
+        value={a11y.accent_color}
+        onChange={(next: AccentColor) => update({ accent_color: next })}
+        colourFor={(option) => accentColorHex[option]}
+        labelFor={(option) => t(`colourName.${option}`)}
+      />
+
+      {sameColour ? (
+        <p role="status" className="text-sm text-ink/70">
+          {t("coloursSameHint")}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
 export function SettingsForm({ initialLanguage, initialA11y }: Props) {
   const t = useTranslations("settings");
   const router = useRouter();
 
   const [language, setLanguage] = useState<Locale>(initialLanguage);
-  const [a11y, setA11y] = useState<A11ySettings>(initialA11y);
   const [languageSaving, setLanguageSaving] = useState(false);
   const [languageError, setLanguageError] = useState<string | null>(null);
   const [languageSaved, setLanguageSaved] = useState(false);
 
-  const [displayStatus, setDisplayStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
-  const [displayErrorKey, setDisplayErrorKey] = useState<string | null>(null);
-
-  // The last successfully-saved display settings, so a failed save can
-  // revert both the UI state and the <html> attributes to it rather than to
-  // whatever the page happened to load with.
-  const lastSavedA11yRef = useRef(initialA11y);
-  const pendingPatchRef = useRef<Partial<A11ySettings>>({});
-  const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    return () => {
-      if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
-    };
-  }, []);
-
-  function applyDisplayAttributes(next: A11ySettings) {
-    const html = document.documentElement;
-    for (const name of ["data-theme", "data-font-scale", "data-contrast"]) {
-      html.removeAttribute(name);
-    }
-    for (const [name, value] of Object.entries(displayAttributes(next))) {
-      if (name === "data-theme" || name === "data-font-scale" || name === "data-contrast") {
-        html.setAttribute(name, value);
-      }
-    }
-  }
-
-  async function flushDisplaySave() {
-    const patch = pendingPatchRef.current;
-    pendingPatchRef.current = {};
-    if (Object.keys(patch).length === 0) return;
-
-    setDisplayStatus("saving");
-    setDisplayErrorKey(null);
-
-    try {
-      const supabase = createClient();
-      const { error } = await supabase.rpc("rpc_update_display_settings", { p_settings: patch });
-
-      if (error) {
-        setDisplayErrorKey(mapSettingsRpcError(error.message));
-        setA11y(lastSavedA11yRef.current);
-        applyDisplayAttributes(lastSavedA11yRef.current);
-        setDisplayStatus("error");
-        return;
-      }
-
-      lastSavedA11yRef.current = { ...lastSavedA11yRef.current, ...patch };
-      setDisplayStatus("saved");
-    } catch {
-      setDisplayErrorKey("genericError");
-      setA11y(lastSavedA11yRef.current);
-      applyDisplayAttributes(lastSavedA11yRef.current);
-      setDisplayStatus("error");
-    }
-  }
-
-  function updateDisplay<K extends "theme" | "font_scale" | "high_contrast">(key: K, value: A11ySettings[K]) {
-    const next = { ...a11y, [key]: value };
-    setA11y(next);
-    applyDisplayAttributes(next);
-
-    pendingPatchRef.current = { ...pendingPatchRef.current, [key]: value };
-    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
-    saveTimerRef.current = setTimeout(flushDisplaySave, DISPLAY_SAVE_DEBOUNCE_MS);
-  }
-
-  async function handleReset() {
-    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
-    pendingPatchRef.current = {};
-    setA11y(defaultA11ySettings);
-    applyDisplayAttributes(defaultA11ySettings);
-    setDisplayStatus("saving");
-    setDisplayErrorKey(null);
-
-    try {
-      const supabase = createClient();
-      const { error } = await supabase.rpc("rpc_update_display_settings", { p_settings: defaultA11ySettings });
-
-      if (error) {
-        setDisplayErrorKey(mapSettingsRpcError(error.message));
-        setA11y(lastSavedA11yRef.current);
-        applyDisplayAttributes(lastSavedA11yRef.current);
-        setDisplayStatus("error");
-        return;
-      }
-
-      lastSavedA11yRef.current = defaultA11ySettings;
-      setDisplayStatus("saved");
-    } catch {
-      setDisplayErrorKey("genericError");
-      setA11y(lastSavedA11yRef.current);
-      applyDisplayAttributes(lastSavedA11yRef.current);
-      setDisplayStatus("error");
-    }
-  }
+  // The settings page is only ever reached signed in (see settings/page.tsx's
+  // redirect), so this always writes through the RPC, never the signed-out
+  // cookie.
+  const { a11y, status: displayStatus, errorKey: displayErrorKey, update: updateDisplay, reset: handleReset } =
+    useDisplaySettings(initialA11y, true);
 
   async function handleLanguageSave() {
     setLanguageError(null);
@@ -352,7 +292,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           name="theme"
           options={themes}
           value={a11y.theme}
-          onChange={(next: Theme) => updateDisplay("theme", next)}
+          onChange={(next: Theme) => updateDisplay({ theme: next })}
           labelFor={(option) => t(`theme${capitalize(option)}`)}
         />
 
@@ -361,7 +301,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           name="font-scale"
           options={fontScales}
           value={a11y.font_scale}
-          onChange={(next: FontScale) => updateDisplay("font_scale", next)}
+          onChange={(next: FontScale) => updateDisplay({ font_scale: next })}
           labelFor={(option) => t(`fontScale${capitalize(option)}`)}
         />
 
@@ -370,7 +310,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           name="contrast"
           options={CONTRAST_OPTIONS}
           value={a11y.high_contrast}
-          onChange={(next: boolean) => updateDisplay("high_contrast", next)}
+          onChange={(next: boolean) => updateDisplay({ high_contrast: next })}
           labelFor={(option) => t(option ? "contrastHigh" : "contrastStandard")}
         />
 
@@ -380,7 +320,10 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       </Section>
 
       <Section id="colours" heading={t("coloursHeading")}>
-        <p className="text-sm text-ink/70">{t("coloursPlaceholder")}</p>
+        {/* Shares the Display section's one status/aria-live region above —
+            both write through the same debounced save, so a second region
+            here would double-announce the same "Saved" to screen readers. */}
+        <ColoursFields a11y={a11y} update={updateDisplay} />
       </Section>
 
       <Section id="reading" heading={t("readingHeading")}>

@@ -1,4 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
+import { EquityMark } from "@/components/brand/equity-mark";
 import { createClient } from "@/lib/supabase/server";
 
 type VerifyResult = {
@@ -19,6 +20,7 @@ export default async function CertificateVerifyPage({ params }: { params: Promis
 
   return (
     <div className="mx-auto flex w-full max-w-lg flex-1 flex-col gap-4 px-4 py-16 sm:px-6">
+      <EquityMark size="md" />
       <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
 
       {data?.valid ? (

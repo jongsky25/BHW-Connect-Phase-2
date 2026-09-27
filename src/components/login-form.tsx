@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
+import { EquityMark } from "@/components/brand/equity-mark";
 import { createClient } from "@/lib/supabase/client";
 
 type LoginPrecheck = {
@@ -97,6 +98,8 @@ export function LoginForm() {
 
   return (
     <div className="mx-auto flex w-full max-w-sm flex-1 flex-col justify-center gap-6 px-4 py-16 sm:px-6">
+      <EquityMark size="lg" className="self-center" />
+
       <div>
         <h1 className="text-3xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
         <p className="mt-2 text-ink/70">{t("body")}</p>

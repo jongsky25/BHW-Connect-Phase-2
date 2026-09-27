@@ -10,6 +10,7 @@ import { PersonaBar } from "@/components/super-admin/persona-bar";
 import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
 import { parsePersonaSnapshot } from "@/lib/super-admin/types";
 import { displayCookieName, parseDisplayCookie } from "@/lib/settings/display-cookie";
+import { primaryColorHex } from "@/lib/settings/palette";
 import { displayAttributes, parseA11ySettings } from "@/lib/settings/types";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { getRequestFeatureFlags } from "@/lib/supabase/request";
@@ -41,7 +42,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export async function generateViewport(): Promise<Viewport> {
   const offlinePwaEnabled = await getRequestOfflinePwaEnabled();
-  return offlinePwaEnabled ? { themeColor: "#b84e12" } : {};
+  if (!offlinePwaEnabled) return {};
+
+  const a11y = await getRequestA11ySettings();
+  return { themeColor: primaryColorHex[a11y.primary_color] };
 }
 
 export default async function RootLayout({
@@ -80,6 +84,7 @@ export default async function RootLayout({
             notificationsEnabled={notifications.enabled}
             notifUnreadCount={notifications.unreadCount}
             flags={flags}
+            initialA11y={a11y}
           />
           {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
           <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">

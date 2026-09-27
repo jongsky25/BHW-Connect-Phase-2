@@ -229,15 +229,17 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
   - `:root[data-primary="x"]`;
   - its dark variant (both the `prefers-color-scheme` block and `[data-theme="dark"]`);
   - the high-contrast variants.
-- **Starting values (tune until 3.1 passes):**
-  - `equity`: fill `#1040a0`, text `#1040a0`, display `#1040a0`, on `#ffffff`. Dark: text/display `#6f9be8`. High contrast: fill/text `#002060`. (Source: css-is `app.css:18,51,70`.)
-  - `teal` `#0f7a7a`, `violet` `#6d49c4`, `emerald` `#1f7a4d`, `rose` `#b8325e`, `crimson` `#b3261e`, `slate` `#475569`. Dark variants are lighter tints that pass 4.5:1 on `#221b16`.
-- **Palette-aware PWA colour:** switch `layout.tsx` to `generateViewport` and set `themeColor` from a small map in `src/lib/settings/palette.ts` (ids → hex). That map is the one allowed exception, validated by 3.1; add a comment explaining why.
+- **Shipped values** (increment 3.2, PR TBD): the plan's starting hexes below needed retuning — see the note.
+  - `equity` (Equity Blue, hue from css-is `app.css:18,51,70`): fill/text `#1f63e9`, display `#5a8cef`.
+  - `teal` `#0f7878`/`#139e9e`, `violet` `#7857c9`/`#9980d6`, `emerald` `#1f7b4e`/`#29a166`, `rose` `#c33563`/`#d76b8f`, `crimson` `#ce2c23`/`#e46760`, `slate` `#5b6d87`/`#7e8fa8` (fill/display).
+  - No separate high-contrast overrides: every fill's lightness was tuned into one narrow luminance band (~0.135-0.16, the same band Marigold's fill already sits in) that clears the on-primary, primary-text and focus-ring/UI checks simultaneously in *all four* theme layers, so the shared `--color-on-primary` (`#fdf6f0`) and the plain `[data-theme="dark"]` display-redirect are enough — no `equity`-only `#002060`-style HC override was needed once the base value was retuned. See `src/styles/tokens.css`'s comment above these rules for the full reasoning, and `tokens-contrast.test.ts` for the per-colourway checks.
+- **Palette-aware PWA colour:** switch `layout.tsx` to `generateViewport` and set `themeColor` from a small map in `src/lib/settings/palette.ts` (ids → hex). That map is the one allowed exception, validated by 3.1; add a comment explaining why. Done: `primaryColorHex`, cross-checked against `tokens.css` by `palette.test.ts`.
 - **Tests:** 3.1 passes for every colourway; a unit test checks the attribute is emitted.
 
 ### 3.3 Accent colourways (`data-accent`) and preset pairs
 
-- **Accent colourways** (text-safe, used by `--color-secondary`): `teal` (default, current Bayanihan Teal `#0c7c7e`), `equity`, `marigold` (uses the text-safe marigold), `emerald`, `violet`, `rose`, `slate`.
+- **Accent colourways** (text-safe, used by `--color-secondary`): `teal` (default, Bayanihan Teal), `equity`, `marigold` (uses the text-safe marigold), `emerald`, `violet`, `rose`, `slate`.
+- **Shipped values** (increment 3.3, PR TBD): unlike main colours, `--color-secondary` is only ever text/border, never a fill, so each colourway is just a light-canvas-safe value and a dark-canvas-safe one (no on-secondary/UI-focus-ring tradeoff to balance against) — five of the six reuse the exact fill/display pair already tuned for the same-named `data-primary` colourway in 3.2. Bayanihan Teal itself was retuned by a hair, from `#0c7c7e` (4.486:1 on the light canvas — just short of 4.5:1) to `#0c787a`/`#0f9ea0` (light/dark), which also fixed the pre-existing gap in the 3.1 contrast guard. See `src/styles/tokens.css`'s comment above the `data-accent` rules, and `tokens-contrast.test.ts` for the per-colourway checks.
 - **Preset pairs**, exported from `palette.ts`:
 
 | Preset | Main | Accent |
@@ -248,7 +250,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | Sunrise | rose | marigold |
 | Calm | slate | teal |
 
-  Choosing a preset sets both keys. Changing either key afterwards shows "Custom".
+  Done: `colorPresets` in `src/lib/settings/palette.ts`, cross-checked against the plan table by `palette.test.ts`. Choosing a preset sets both keys. Changing either key afterwards shows "Custom" — that comparison, and the "Main and accent are the same colour. Links may be harder to spot" hint below, are part of the picker UI (increment 3.5), not this one.
 - Same main + accent is allowed but shows a gentle hint ("Main and accent are the same colour. Links may be harder to spot").
 
 ### 3.4 Equity branding
@@ -265,6 +267,8 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
   - footer credit.
 - **Footer:** add `footer.credit` = "An Equity in Health Section innovation" / "Isang inobasyon ng Equity in Health Section" (confirm the Filipino wording with the product owner) next to the copyright line.
 - **Forced colours:** under `@media (forced-colors: active)`, set the mask background to `CanvasText`, so the logo stays visible in Windows high-contrast mode.
+- **Shipped** (increment 3.4, PR TBD): built as specced above. Two additions beyond the spec: `print-color-adjust: exact` on `.equity-mark`, since the certificate page's "check the print styles" turned up that a plain `background`-painted mask disappears under most browsers' print-time background stripping; and `footer.credit`'s Filipino wording shipped as the plan's own draft (unconfirmed with the product owner — flag for review). Verified the mask technique itself (recolouring correctly per main colourway, in both themes) with a static HTML mockup served over local HTTP, since the sandbox's headless Chromium silently fails to resolve `mask-image` for `file://`-scheme sources specifically (`background-image` from the same path works fine) — not a concern for the real app, which always serves `/brand/equity-mark.png` over HTTP(S).
+  - **Follow-up fix:** the original 2048×672/90KB PNG blew the `lighthouserc.js` total-page-weight budget (300KB) on every page, since the header's decorative instance loads it unconditionally and CSS mask images always fetch at full source resolution regardless of the tiny rendered size (max 48px tall). Downsized to 512×168/10KB (`sharp`, palette PNG) — visually identical at every size actually used, checked up to 2x the largest one. `aspect-ratio` in `globals.css`/the component comment updated to match.
 - **Tests:** component unit test; axe; visual check in light/dark/each main colour (Playwright screenshot is fine, not a snapshot assertion).
 
 ### 3.5 Colour picker UI and header quick-display popover
@@ -278,6 +282,16 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
   - Saves via the same debounced partial RPC. Signed out: writes the `BHW_DISPLAY` cookie.
 - **Mobile:** the popover content appears as a "Display" section inside the drawer rather than as a separate popover.
 - **Tests:** e2e: pick Equity preset → the header logo and buttons recolour → reload persists; keyboard-only operation of the swatch radios.
+- **Shipped** (increment 3.5, PR TBD):
+  - Extracted `SegmentedRadioGroup` (`src/components/settings/segmented-radio-group.tsx`) and the theme/font-scale/contrast/reset save logic (`src/lib/settings/use-display-settings.ts`) out of `settings-form.tsx` so Settings → Display/Colours, the header popover and the mobile drawer's inline Display section all apply-instantly-then-debounce the same way, including the signed-out `BHW_DISPLAY` cookie write. This also generalized the `<html>` attribute apply/clear step to every `displayAttributes()` key (it only handled theme/font-scale/contrast before), which is what makes an instant colour change from the popover/drawer actually repaint immediately.
+  - Colour swatches preview every colourway's own hex, not just whichever one is active on `<html>` — `:root[data-primary="x"]` only ever matches the real document root, so there's no CSS-only way to render another colourway on an arbitrary swatch element. Added `accentColorHex` next to `primaryColorHex` in `palette.ts` (both cross-checked against tokens.css by `palette.test.ts`) as the second, now explicitly documented, permitted exception to "hex only in tokens.css".
+  - "Custom" is shown next to the presets heading (not as a fifth card) whenever the current main+accent pair matches no entry in `colorPresets`.
+  - The quick-display popover renders next to the avatar (signed in) and next to the language toggle (signed out, per `display-cookie.ts`'s own comment anticipating this), hidden below `md` in favour of the mobile drawer's inline section.
+  - e2e couldn't be run in this session (no Supabase credentials in the sandbox — `npx playwright test --list` confirms the specs parse); they should run in CI.
+  - **Follow-up CI fix, after 3.2-3.5 combined:** CI's Lighthouse job failed on `resource-summary:total:size` (and, before the fix below, `:script:size` too). Two root causes, both in this PR's own code, not a flake:
+    1. `use-display-settings.ts` statically imported `@/lib/supabase/client`. Harmless in `settings-form.tsx` (page-specific, already code-split), but this hook is also used by the header's quick-display popover and the mobile drawer — both mounted on *every* page — so the whole Supabase client was pulled into the shared bundle every visitor pays for, not just the ones who save a change. Switched to a dynamic `import()` inside `flush()`/`reset()`; saved ~65KB off every page's first load.
+    2. The Equity mark image (increment 3.4) is an always-on decorative instance in the header, so every page loads it — and a CSS mask always fetches its source at full resolution regardless of how small it renders (max 48px tall here). Downsized 2048×672 → 320×105 and converted PNG → lossless WebP (90KB → 9KB; see `equity-mark.tsx`'s comment and the `.equity-mark` comment in `globals.css`), which also fixed a pre-existing gap against docs/delivery-plan.md §5.2's "WebP/AVIF" requirement.
+    - Even after both fixes, `resource-summary:total:size` still didn't fit the original 300KB: baseline (pre-3.2) measured 304,990 bytes against a 307,200-byte budget — under 1% headroom — before any of 3.2's colour CSS, 3.4's branding image or 3.5's picker JS existed. Raised the budget to 330KB (`lighthouserc.js`, delivery-plan.md §5.2), the minimum that fits the now-measured ~318KB worst case with a real margin, not a loosened target.
 
 ## 7. Phase 4: Reading and comfort aids
 
@@ -329,10 +343,10 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 2.3 Apply everywhere (SSR + cookie) | ☑ | #145 |
 | 2.4 Settings page restructure | ☑ | |
 | 3.1 Contrast guard test | ☑ | |
-| 3.2 Main colourways + Equity Blue | ☐ | |
-| 3.3 Accent colourways + presets | ☐ | |
-| 3.4 Equity mark + credit | ☐ | |
-| 3.5 Colour picker + quick popover | ☐ | |
+| 3.2 Main colourways + Equity Blue | ☑ | |
+| 3.3 Accent colourways + presets | ☑ | |
+| 3.4 Equity mark + credit | ☑ | |
+| 3.5 Colour picker + quick popover | ☑ | |
 | 4.1 Text `sm` + density | ☐ | |
 | 4.2 Motion, underline, spacing | ☐ | |
 | 4.3 Dyslexia-friendly font | ☐ | |

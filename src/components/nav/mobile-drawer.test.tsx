@@ -5,6 +5,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import en from "../../../messages/en.json";
 import type { FeatureFlags } from "@/lib/flags/types";
 import { getNavItems } from "@/lib/nav/nav-items";
+import { defaultA11ySettings } from "@/lib/settings/types";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { MobileDrawer } from "./mobile-drawer";
 
@@ -46,7 +47,7 @@ function show(role: AppUser["role"] = "bhw") {
   // React bail out, so a changed usePathname() would never be re-read.
   const view = () => (
     <NextIntlClientProvider locale="en" messages={en}>
-      <MobileDrawer account={{ username: "rosa.bhw", role }} items={items} labels={labels} />
+      <MobileDrawer account={{ username: "rosa.bhw", role }} items={items} labels={labels} initialA11y={defaultA11ySettings} />
     </NextIntlClientProvider>
   );
   const result = render(view());
@@ -83,11 +84,32 @@ describe("MobileDrawer", () => {
       "Courses",
       "Announcements",
       "Settings",
-      "Display",
+      "More display settings →",
       "Privacy Notice",
     ]);
     expect(d.getByText("Language toggle")).toBeInTheDocument();
     expect(d.getByRole("button", { name: "Sign out" })).toBeInTheDocument();
+  });
+
+  it("shows the Display heading with the quick-display controls inline, not just a link", async () => {
+    const user = userEvent.setup();
+    show();
+    await user.click(screen.getByRole("button", { name: "Open menu" }));
+
+    const d = within(dialog());
+    expect(d.getByRole("heading", { name: "Display" })).toBeInTheDocument();
+    expect(d.getByRole("radio", { name: "Dark" })).toBeInTheDocument();
+    expect(d.getByRole("button", { name: "Bayanihan" })).toBeInTheDocument();
+  });
+
+  it("applies a theme change from the drawer immediately", async () => {
+    const user = userEvent.setup();
+    show();
+    await user.click(screen.getByRole("button", { name: "Open menu" }));
+    await user.click(within(dialog()).getByRole("radio", { name: "Dark" }));
+
+    expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    document.documentElement.removeAttribute("data-theme");
   });
 
   it("lists Settings once, not also among the More links", async () => {

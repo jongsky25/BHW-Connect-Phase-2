@@ -19,6 +19,34 @@ const TOKENS_CSS_PATH = path.join(__dirname, "tokens.css");
 
 type Declarations = Record<string, string>;
 
+// Increment 3.2's main-colour colourways (docs/header-navigation-display-
+// settings-plan.md §6 3.2). Each one only needs two selectors read: the
+// theme-independent `:root[data-primary="x"]` (fill/display/text=fill) and
+// the explicit `:root[data-theme="dark"][data-primary="x"]` redirect
+// (text=display) — there's no `:root[data-theme="light"][data-primary="x"]`
+// in tokens.css because the base `:root[data-primary="x"]` rule already
+// resolves correctly for light (nothing else overrides `--color-primary` or
+// `--color-primary-text` between the two), and the `@media
+// (prefers-color-scheme: dark)` variant isn't tested separately here for
+// the same reason the existing selectors above don't test it: this guard
+// checks resolved values per explicit `[data-theme]`, trusting (as the rest
+// of tokens.css already does) that the media-query variant is kept in sync
+// with it by hand. "marigold" needs no entry — it's the untagged default,
+// already covered by the selectors above.
+const PRIMARY_COLOURWAYS = ["equity", "teal", "violet", "emerald", "rose", "crimson", "slate"] as const;
+
+// Increment 3.3's accent colourways (docs plan §6 3.3): same idea, but for
+// `data-accent` / `--color-secondary`. "teal" isn't listed — Bayanihan Teal
+// is the untagged accent default, same as marigold above.
+const ACCENT_COLOURWAYS = ["equity", "marigold", "emerald", "violet", "rose", "slate"] as const;
+
+function attributeSelectors(attribute: string, colour: string) {
+  return {
+    base: `:root[${attribute}="${colour}"]`,
+    dark: `:root[data-theme="dark"][${attribute}="${colour}"]`,
+  } as const;
+}
+
 // Only these selectors are read; anything else in tokens.css (font-scale,
 // density, motion, etc.) is irrelevant to colour contrast and ignored.
 const TOP_LEVEL_SELECTORS = [
@@ -27,18 +55,25 @@ const TOP_LEVEL_SELECTORS = [
   ':root[data-theme="dark"]',
   ':root[data-theme="light"][data-contrast="high"]',
   ':root[data-theme="dark"][data-contrast="high"]',
+  ...PRIMARY_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-primary", colour))),
+  ...ACCENT_COLOURWAYS.flatMap((colour) => Object.values(attributeSelectors("data-accent", colour))),
 ] as const;
 
 /**
- * Splits `css` into top-level rules (selector + declaration body), skipping
- * into `@media` blocks so their contents are also picked up as top-level
- * rules (their selector strings already disambiguate them from the
- * `prefers-color-scheme` variants we don't need — see the comment above).
+ * Splits `css` into top-level rules (selector + declaration body + which
+ * `@media` block, if any, it was nested in), recursing into `@media` blocks
+ * so their contents are also picked up. A rule's `media` is tracked (rather
+ * than merged away) because the same selector can legitimately appear both
+ * at the top level and inside `@media (prefers-color-scheme: dark)` (every
+ * dark-theme selector below does this) with *different* declarations for
+ * the same custom property — `mergeDeclarations` needs to tell those apart
+ * so it doesn't silently prefer whichever one happens to come later in the
+ * file (see the "media: null" filter there).
  */
-function parseTopLevelRules(css: string): { selector: string; declarations: Declarations }[] {
-  const rules: { selector: string; declarations: Declarations }[] = [];
+function parseTopLevelRules(css: string): { selector: string; media: string | null; declarations: Declarations }[] {
+  const rules: { selector: string; media: string | null; declarations: Declarations }[] = [];
 
-  function walk(text: string) {
+  function walk(text: string, media: string | null) {
     let i = 0;
     while (i < text.length) {
       const braceIndex = text.indexOf("{", i);
@@ -55,7 +90,7 @@ function parseTopLevelRules(css: string): { selector: string; declarations: Decl
       const body = text.slice(braceIndex + 1, j - 1);
 
       if (selector.startsWith("@media")) {
-        walk(body);
+        walk(body, selector);
       } else if ((TOP_LEVEL_SELECTORS as readonly string[]).includes(selector)) {
         const declarations: Declarations = {};
         const declRegex = /(--[\w-]+)\s*:\s*([^;]+);/g;
@@ -63,20 +98,30 @@ function parseTopLevelRules(css: string): { selector: string; declarations: Decl
         while ((match = declRegex.exec(body))) {
           declarations[match[1]] = match[2].trim();
         }
-        rules.push({ selector, declarations });
+        rules.push({ selector, media, declarations });
       }
 
       i = j;
     }
   }
 
-  walk(css.replace(/\/\*[\s\S]*?\*\//g, ""));
+  walk(css.replace(/\/\*[\s\S]*?\*\//g, ""), null);
   return rules;
 }
 
-function mergeDeclarations(rules: { selector: string; declarations: Declarations }[], selector: string): Declarations {
+// Only the top-level (non-`@media`) declaration for a selector: this guard
+// resolves theme layers by their explicit `[data-theme="…"]` attribute, the
+// same convention tokens.css itself follows (every `@media
+// (prefers-color-scheme: dark)` block has a `[data-theme="dark"]` twin that
+// fully restates it — see the comment above `:root[data-theme="light"]`),
+// so the `@media`-nested declarations for a given selector are never what a
+// resolved theme layer should use.
+function mergeDeclarations(
+  rules: { selector: string; media: string | null; declarations: Declarations }[],
+  selector: string,
+): Declarations {
   return rules
-    .filter((rule) => rule.selector === selector)
+    .filter((rule) => rule.selector === selector && rule.media === null)
     .reduce((acc, rule) => ({ ...acc, ...rule.declarations }), {} as Declarations);
 }
 
@@ -143,6 +188,55 @@ function resolvedColor(theme: ThemeName, token: string): string {
   return resolveColor(raw, tokens);
 }
 
+// One theme-layer set per colourway of a given attribute (`data-primary` or
+// `data-accent`), built the same way as `themeLayers` above but with that
+// colourway's own base selector (and, for the two dark layers, its
+// `[data-theme="dark"]` redirect) spread in last so it wins over the
+// default values it's replacing.
+function buildColourwayThemeLayers<Colour extends string>(
+  attribute: string,
+  colours: readonly Colour[],
+): Record<Colour, typeof themeLayers> {
+  return Object.fromEntries(
+    colours.map((colour) => {
+      const { base: baseSelector, dark: darkSelector } = attributeSelectors(attribute, colour);
+      const colourwayBase = mergeDeclarations(rules, baseSelector);
+      const colourwayDark = mergeDeclarations(rules, darkSelector);
+
+      return [
+        colour,
+        {
+          light: { ...base, ...lightOverride, ...colourwayBase },
+          dark: { ...base, ...darkOverride, ...colourwayBase, ...colourwayDark },
+          "high-contrast light": { ...base, ...lightOverride, ...lightHighContrastOverride, ...colourwayBase },
+          "high-contrast dark": {
+            ...base,
+            ...darkOverride,
+            ...darkHighContrastOverride,
+            ...colourwayBase,
+            ...colourwayDark,
+          },
+        },
+      ] as const;
+    }),
+  ) as Record<Colour, typeof themeLayers>;
+}
+
+const primaryColourwayThemeLayers = buildColourwayThemeLayers("data-primary", PRIMARY_COLOURWAYS);
+const accentColourwayThemeLayers = buildColourwayThemeLayers("data-accent", ACCENT_COLOURWAYS);
+
+function resolvedColourwayColor<Colour extends string>(
+  layers: Record<Colour, typeof themeLayers>,
+  colour: Colour,
+  theme: ThemeName,
+  token: string,
+): string {
+  const tokens = layers[colour][theme];
+  const raw = tokens[token];
+  if (!raw) throw new Error(`Colourway "${colour}" theme "${theme}" has no declaration for ${token}`);
+  return resolveColor(raw, tokens);
+}
+
 describe("tokens.css contrast guard (increment 3.1)", () => {
   it.each(themeNames)("%s: found all four expected theme layers", (theme) => {
     expect(Object.keys(themeLayers[theme]).length).toBeGreaterThan(0);
@@ -158,30 +252,13 @@ describe("tokens.css contrast guard (increment 3.1)", () => {
     expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 
-  // --color-secondary (Bayanihan Teal, #0c7c7e) is a known, already-documented
-  // gap: see the comment in src/components/settings/settings-form.tsx's
-  // PreviewCard, which avoids `text-secondary` for exactly this reason. It
-  // isn't theme-adjusted yet, so it only clears 4.5:1 on the high-contrast
-  // light canvas (white); fixing it is increment 3.3 (accent colourways),
-  // not this one. `it.fails` keeps that failure visible without turning this
-  // whole suite red — flip each case back to a plain `it` as 3.3 fixes it.
-  const secondaryOnCanvas = (theme: ThemeName) =>
-    contrastRatio(resolvedColor(theme, "--color-secondary"), resolvedColor(theme, "--color-canvas"));
-
-  it("high-contrast light: secondary (accent) on canvas ≥ 4.5:1", () => {
-    expect(secondaryOnCanvas("high-contrast light")).toBeGreaterThanOrEqual(4.5);
-  });
-
-  it.fails("light: secondary (accent) on canvas ≥ 4.5:1 (known gap, see 3.3)", () => {
-    expect(secondaryOnCanvas("light")).toBeGreaterThanOrEqual(4.5);
-  });
-
-  it.fails("dark: secondary (accent) on canvas ≥ 4.5:1 (known gap, see 3.3)", () => {
-    expect(secondaryOnCanvas("dark")).toBeGreaterThanOrEqual(4.5);
-  });
-
-  it.fails("high-contrast dark: secondary (accent) on canvas ≥ 4.5:1 (known gap, see 3.3)", () => {
-    expect(secondaryOnCanvas("high-contrast dark")).toBeGreaterThanOrEqual(4.5);
+  // --color-secondary (Bayanihan Teal) used to be a known, already-documented
+  // gap here (only cleared 4.5:1 on the high-contrast light canvas), fixed by
+  // increment 3.3's retune + dark-canvas twin — see the comment on its
+  // declaration in tokens.css.
+  it.each(themeNames)("%s: secondary (accent) on canvas ≥ 4.5:1", (theme) => {
+    const ratio = contrastRatio(resolvedColor(theme, "--color-secondary"), resolvedColor(theme, "--color-canvas"));
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
   });
 
   it.each(themeNames)("%s: primary vs canvas (focus ring / UI) ≥ 3:1", (theme) => {
@@ -197,6 +274,46 @@ describe("tokens.css contrast guard (increment 3.1)", () => {
       expect(ratio).toBeGreaterThanOrEqual(4.5);
     });
   }
+});
+
+describe("tokens.css main-colour colourways (increment 3.2)", () => {
+  const cases = PRIMARY_COLOURWAYS.flatMap((colour) => themeNames.map((theme) => [colour, theme] as const));
+
+  it.each(cases)("%s/%s: on-primary text on primary fill ≥ 4.5:1", (colour, theme) => {
+    const ratio = contrastRatio(
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-on-primary"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-primary"),
+    );
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
+  });
+
+  it.each(cases)("%s/%s: primary-text on canvas ≥ 4.5:1", (colour, theme) => {
+    const ratio = contrastRatio(
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-primary-text"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-canvas"),
+    );
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
+  });
+
+  it.each(cases)("%s/%s: primary vs canvas (focus ring / UI) ≥ 3:1", (colour, theme) => {
+    const ratio = contrastRatio(
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-primary"),
+      resolvedColourwayColor(primaryColourwayThemeLayers, colour, theme, "--color-canvas"),
+    );
+    expect(ratio).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe("tokens.css accent colourways (increment 3.3)", () => {
+  const cases = ACCENT_COLOURWAYS.flatMap((colour) => themeNames.map((theme) => [colour, theme] as const));
+
+  it.each(cases)("%s/%s: secondary (accent) on canvas ≥ 4.5:1", (colour, theme) => {
+    const ratio = contrastRatio(
+      resolvedColourwayColor(accentColourwayThemeLayers, colour, theme, "--color-secondary"),
+      resolvedColourwayColor(accentColourwayThemeLayers, colour, theme, "--color-canvas"),
+    );
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
+  });
 });
 
 describe("contrastRatio", () => {

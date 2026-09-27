@@ -7,14 +7,18 @@ import { useEffect, useRef, useState } from "react";
 import { LanguageToggle } from "@/components/language-toggle";
 import type { NavItem } from "@/lib/nav/nav-items";
 import { useSignOut } from "@/lib/nav/use-sign-out";
+import type { A11ySettings } from "@/lib/settings/types";
+import { useDisplaySettings } from "@/lib/settings/use-display-settings";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { isNavItemActive } from "./nav-link";
+import { QuickDisplayControls } from "./quick-display-controls";
 
 type Props = {
   account: { username: string; role: AppUser["role"] };
   items: NavItem[];
   /** Translated label for each item, keyed by NavItem.id. */
   labels: Record<string, string>;
+  initialA11y: A11ySettings;
 };
 
 const ITEM_CLASS =
@@ -24,7 +28,7 @@ const ITEM_CLASS =
 // A native <dialog> opened with showModal() gives the focus trap, Escape
 // handling and inert background for free, and returns focus to the ☰ button
 // when it closes.
-export function MobileDrawer({ account, items, labels }: Props) {
+export function MobileDrawer({ account, items, labels, initialA11y }: Props) {
   const t = useTranslations("common");
   const tNav = useTranslations("authHome");
   const tFooter = useTranslations("footer");
@@ -32,6 +36,9 @@ export function MobileDrawer({ account, items, labels }: Props) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const { signOut, pending } = useSignOut();
+  // Only ever rendered signed in (site-header.tsx), so always the RPC path,
+  // never the signed-out cookie.
+  const { a11y, update } = useDisplaySettings(initialA11y, true);
 
   function show() {
     const dialog = dialogRef.current;
@@ -145,10 +152,9 @@ export function MobileDrawer({ account, items, labels }: Props) {
             ) : null}
             <ul className="mt-2 flex flex-col gap-1 border-t border-ink/10 pt-2">
               {settingsItem ? navLink(settingsItem) : null}
-              <li>
-                <Link href="/settings#display" onClick={close} className={`${ITEM_CLASS} text-ink hover:bg-ink/5`}>
-                  {t("displayLabel")}
-                </Link>
+              <li className="flex flex-col gap-2 px-3 py-2">
+                <h3 className="text-sm font-semibold text-ink">{t("displayLabel")}</h3>
+                <QuickDisplayControls a11y={a11y} update={update} onNavigate={close} />
               </li>
               <li className="flex min-h-12 items-center px-3">
                 <LanguageToggle signedIn />

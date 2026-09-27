@@ -32,7 +32,15 @@
      was INC-19a gap #2 — text-canvas on bg-primary silently broke to
      3.35:1 in dark mode once canvas went dark). */
   --color-on-primary: #fdf6f0;
-  --color-secondary: #0c7c7e; /* Bayanihan Teal */
+  /* Bayanihan Teal, the default accent colourway (increment 3.3,
+     docs/header-navigation-display-settings-plan.md §6 3.3) — used only as
+     text/border (text-secondary, border-secondary), never a fill, so unlike
+     --color-primary this needs no on-secondary/UI-focus-ring tradeoff, just
+     enough contrast to read as text. Retuned by a hair from the original
+     #0c7c7e (4.486:1 on the light canvas — just short of 4.5:1) to clear
+     it with margin; the dark-mode blocks below give it a lighter dark-canvas
+     tint the same way the status colours already have one. */
+  --color-secondary: #0c787a;
 
   /* Celebratory / progress accent — pair ONLY with dark ink text, never light text */
   --color-celebration: #ffc857; /* Sampaguita Yellow */
@@ -57,6 +65,7 @@
     --color-canvas: #221b16;
     --color-ink: #f5ede4;
     --color-primary-text: var(--color-primary-display);
+    --color-secondary: #0f9ea0;
     --color-success: #289f5a;
     --color-warning: #ba750a;
     --color-danger: #d67575;
@@ -83,6 +92,7 @@
   --color-canvas: #221b16;
   --color-ink: #f5ede4;
   --color-primary-text: var(--color-primary-display);
+  --color-secondary: #0f9ea0;
   --color-success: #289f5a;
   --color-warning: #ba750a;
   --color-danger: #d67575;
@@ -130,4 +140,237 @@
 :root[data-theme="dark"][data-contrast="high"] {
   --color-canvas: #000000;
   --color-ink: #ffffff;
+}
+
+/* Main-colour colourways (increment 3.2,
+   docs/header-navigation-display-settings-plan.md §6 3.2): `data-primary`
+   lets a profile swap out Marigold (the default, defined in the
+   unconditioned `:root` block above) for another main colour. Each
+   colourway below follows Marigold's own two-value pattern: `--color-primary`
+   is a theme-independent vivid fill (buttons, borders, focus rings) and
+   `--color-primary-display` is a lighter tint that `--color-primary-text`
+   redirects to once the canvas goes dark — the vivid fill reads fine as
+   *text* on the light canvas, but is too close in luminance to the dark
+   canvas to hit 4.5:1 as text there, exactly like Marigold's own
+   `--color-primary-display` redirect above.
+
+   `--color-on-primary` is deliberately NOT redefined per colourway: every
+   fill here was tuned (by lightness only, hue/saturation kept close to the
+   design source) so its relative luminance sits in the same narrow band
+   Marigold's fill occupies (~0.135-0.16) — dark enough for the one shared
+   cream `--color-on-primary` to read at >=4.5:1 as button text, and light
+   enough for the fill itself to clear >=3:1 against the dark canvas as a
+   bare border/ring. That shared band is what lets one on-primary value
+   keep working, unchanged, for every colourway (see
+   tokens-contrast.test.ts, which checks this for each one). */
+:root[data-primary="equity"] {
+  /* Equity Blue — hue/display split from jongsky25/css-is app.css:18,51,70;
+     lightness retuned from the source's #1040a0 (too dark to clear 3:1
+     against the dark canvas as a bare border/ring) to fit the shared band. */
+  --color-primary: #1f63e9;
+  --color-primary-display: #5a8cef;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="equity"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="equity"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="teal"] {
+  --color-primary: #0f7878;
+  --color-primary-display: #139e9e;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="teal"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="teal"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="violet"] {
+  --color-primary: #7857c9;
+  --color-primary-display: #9980d6;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="violet"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="violet"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="emerald"] {
+  --color-primary: #1f7b4e;
+  --color-primary-display: #29a166;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="emerald"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="emerald"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="rose"] {
+  --color-primary: #c33563;
+  --color-primary-display: #d76b8f;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="rose"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="rose"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="crimson"] {
+  --color-primary: #ce2c23;
+  --color-primary-display: #e46760;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="crimson"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="crimson"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="slate"] {
+  --color-primary: #5b6d87;
+  --color-primary-display: #7e8fa8;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="slate"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="slate"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+/* Accent colourways (increment 3.3,
+   docs/header-navigation-display-settings-plan.md §6 3.3): `data-accent`
+   swaps out Bayanihan Teal (the default, defined in the unconditioned
+   `:root` block and its dark-mode blocks above) for another accent. Unlike
+   `data-primary`, there's no fill/on-fill pairing to keep in a narrow
+   luminance band here — `--color-secondary` is only ever used as text or a
+   border — so each colourway is just two values: light-canvas-safe and
+   dark-canvas-safe. Five of these six colourways reuse the exact fill/
+   display hex pair already tuned for the same-named `data-primary`
+   colourway above (already proven to clear 4.5:1 as text against both
+   canvases); "marigold" has no `data-primary="marigold"` rule to reuse
+   from (it's the untagged primary default), so its pair is restated here
+   literally from the unconditioned `:root` block's own Marigold values. */
+:root[data-accent="equity"] {
+  --color-secondary: #1f63e9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="equity"] {
+    --color-secondary: #5a8cef;
+  }
+}
+
+:root[data-theme="dark"][data-accent="equity"] {
+  --color-secondary: #5a8cef;
+}
+
+:root[data-accent="marigold"] {
+  --color-secondary: #b84e12;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="marigold"] {
+    --color-secondary: #e8641c;
+  }
+}
+
+:root[data-theme="dark"][data-accent="marigold"] {
+  --color-secondary: #e8641c;
+}
+
+:root[data-accent="emerald"] {
+  --color-secondary: #1f7b4e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="emerald"] {
+    --color-secondary: #29a166;
+  }
+}
+
+:root[data-theme="dark"][data-accent="emerald"] {
+  --color-secondary: #29a166;
+}
+
+:root[data-accent="violet"] {
+  --color-secondary: #7857c9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="violet"] {
+    --color-secondary: #9980d6;
+  }
+}
+
+:root[data-theme="dark"][data-accent="violet"] {
+  --color-secondary: #9980d6;
+}
+
+:root[data-accent="rose"] {
+  --color-secondary: #c33563;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="rose"] {
+    --color-secondary: #d76b8f;
+  }
+}
+
+:root[data-theme="dark"][data-accent="rose"] {
+  --color-secondary: #d76b8f;
+}
+
+:root[data-accent="slate"] {
+  --color-secondary: #5b6d87;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="slate"] {
+    --color-secondary: #7e8fa8;
+  }
+}
+
+:root[data-theme="dark"][data-accent="slate"] {
+  --color-secondary: #7e8fa8;
 }

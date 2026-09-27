@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { EquityMark } from "@/components/brand/equity-mark";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileDrawer } from "@/components/nav/mobile-drawer";
 import { MoreMenu } from "@/components/nav/more-menu";
@@ -8,7 +9,9 @@ import { UserMenu } from "@/components/nav/user-menu";
 import { NotificationBell } from "@/components/notifications/notification-bell";
 import type { FeatureFlags } from "@/lib/flags/types";
 import { getNavItems } from "@/lib/nav/nav-items";
+import type { A11ySettings } from "@/lib/settings/types";
 import type { AppUser } from "@/lib/supabase/app-user";
+import { QuickDisplayPopover } from "./nav/quick-display-popover";
 
 type Props = {
   signedIn: boolean;
@@ -16,9 +19,10 @@ type Props = {
   notificationsEnabled: boolean;
   notifUnreadCount: number;
   flags: FeatureFlags;
+  initialA11y: A11ySettings;
 };
 
-export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnreadCount, flags }: Props) {
+export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnreadCount, flags, initialA11y }: Props) {
   const t = useTranslations("common");
   const tNav = useTranslations("authHome");
 
@@ -37,12 +41,14 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
               account={account}
               items={navItems}
               labels={Object.fromEntries(navItems.map((item) => [item.id, tNav(item.labelKey)]))}
+              initialA11y={initialA11y}
             />
           ) : null}
           <Link
             href={signedIn ? "/home" : "/"}
-            className="whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="flex items-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
+            <EquityMark size="sm" decorative />
             {t("appName")}
           </Link>
           {primaryItems.length > 0 ? (
@@ -62,6 +68,12 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
         </div>
         <div className="flex flex-wrap items-center gap-3">
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
+          {/* Mobile gets the same controls inline in the drawer's "Display"
+              section instead (see MobileDrawer) — a separate popover there
+              would just be a second, harder-to-reach way to the same thing. */}
+          <div className="hidden md:block">
+            <QuickDisplayPopover initialA11y={initialA11y} signedIn={signedIn} />
+          </div>
           {signedIn && account ? <UserMenu account={account} /> : <LanguageToggle signedIn={signedIn} compact />}
         </div>
       </div>
