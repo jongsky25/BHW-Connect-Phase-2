@@ -7,7 +7,7 @@ import { createClient } from "@/lib/supabase/server";
 import { getRequestMasterFlags } from "@/lib/supabase/request";
 
 const BASE_COLUMNS =
-  "id, category_id, question_fil, question_en, answer_fil, answer_en, keywords, image_url, status, owner_user_id, review_due_on, updated_at";
+  "id, category_id, question_fil, question_en, answer_fil, answer_en, keywords, image_url, status, owner_user_id, review_due_on, updated_at, hidden_at, archived_at";
 
 export default async function EditKbEntryPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

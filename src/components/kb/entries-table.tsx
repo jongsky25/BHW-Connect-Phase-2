@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
+import { VisibilityActions, VisibilityBadge } from "@/components/admin/content-visibility";
 import { mapKbRpcError } from "@/lib/kb/error-messages";
 import type { KbStatus, OwnerOption } from "@/lib/kb/types";
 import { createClient } from "@/lib/supabase/client";
@@ -17,6 +18,8 @@ export type EntryRow = {
   owner_user_id: string | null;
   category_name: string | null;
   owner_name: string | null;
+  hidden_at: string | null;
+  archived_at: string | null;
 };
 
 function defaultReviewDueOn(): string {
@@ -175,6 +178,9 @@ export function EntriesTable({ rows, owners }: { rows: EntryRow[]; owners: Owner
                 {t("reviewDueLabel")}
               </th>
               <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
+                {t("colVisibility")}
+              </th>
+              <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
                 {t("colActions")}
               </th>
             </tr>
@@ -199,12 +205,23 @@ export function EntriesTable({ rows, owners }: { rows: EntryRow[]; owners: Owner
                 <td className="px-3 py-3 text-sm text-ink">{row.owner_name ?? "—"}</td>
                 <td className="px-3 py-3 text-sm text-ink">{row.review_due_on ?? "—"}</td>
                 <td className="px-3 py-3 text-sm">
-                  <Link
-                    href={`/admin/kb/entries/${row.id}`}
-                    className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
-                  >
-                    {t("editAction")}
-                  </Link>
+                  <VisibilityBadge hidden_at={row.hidden_at} archived_at={row.archived_at} />
+                </td>
+                <td className="px-3 py-3 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Link
+                      href={`/admin/kb/entries/${row.id}`}
+                      className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
+                    >
+                      {t("editAction")}
+                    </Link>
+                    <VisibilityActions
+                      contentType="kb_entry"
+                      id={row.id}
+                      hidden_at={row.hidden_at}
+                      archived_at={row.archived_at}
+                    />
+                  </div>
                 </td>
               </tr>
             ))}

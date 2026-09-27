@@ -11,7 +11,9 @@ export default async function EditKbArticlePage({ params }: { params: Promise<{ 
   const [{ data: article }, { data: categories }, { data: owners }] = await Promise.all([
     supabase
       .from("kb_articles")
-      .select("id, category_id, title_fil, title_en, body_fil, body_en, status, owner_user_id, review_due_on, updated_at")
+      .select(
+        "id, category_id, title_fil, title_en, body_fil, body_en, status, owner_user_id, review_due_on, updated_at, hidden_at, archived_at",
+      )
       .eq("id", id)
       .maybeSingle(),
     supabase.from("kb_categories").select("id, name_fil, name_en, slug, sort_order").order("sort_order"),
