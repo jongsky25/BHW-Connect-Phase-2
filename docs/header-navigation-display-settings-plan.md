@@ -229,10 +229,11 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
   - `:root[data-primary="x"]`;
   - its dark variant (both the `prefers-color-scheme` block and `[data-theme="dark"]`);
   - the high-contrast variants.
-- **Starting values (tune until 3.1 passes):**
-  - `equity`: fill `#1040a0`, text `#1040a0`, display `#1040a0`, on `#ffffff`. Dark: text/display `#6f9be8`. High contrast: fill/text `#002060`. (Source: css-is `app.css:18,51,70`.)
-  - `teal` `#0f7a7a`, `violet` `#6d49c4`, `emerald` `#1f7a4d`, `rose` `#b8325e`, `crimson` `#b3261e`, `slate` `#475569`. Dark variants are lighter tints that pass 4.5:1 on `#221b16`.
-- **Palette-aware PWA colour:** switch `layout.tsx` to `generateViewport` and set `themeColor` from a small map in `src/lib/settings/palette.ts` (ids → hex). That map is the one allowed exception, validated by 3.1; add a comment explaining why.
+- **Shipped values** (increment 3.2, PR TBD): the plan's starting hexes below needed retuning — see the note.
+  - `equity` (Equity Blue, hue from css-is `app.css:18,51,70`): fill/text `#1f63e9`, display `#5a8cef`.
+  - `teal` `#0f7878`/`#139e9e`, `violet` `#7857c9`/`#9980d6`, `emerald` `#1f7b4e`/`#29a166`, `rose` `#c33563`/`#d76b8f`, `crimson` `#ce2c23`/`#e46760`, `slate` `#5b6d87`/`#7e8fa8` (fill/display).
+  - No separate high-contrast overrides: every fill's lightness was tuned into one narrow luminance band (~0.135-0.16, the same band Marigold's fill already sits in) that clears the on-primary, primary-text and focus-ring/UI checks simultaneously in *all four* theme layers, so the shared `--color-on-primary` (`#fdf6f0`) and the plain `[data-theme="dark"]` display-redirect are enough — no `equity`-only `#002060`-style HC override was needed once the base value was retuned. See `src/styles/tokens.css`'s comment above these rules for the full reasoning, and `tokens-contrast.test.ts` for the per-colourway checks.
+- **Palette-aware PWA colour:** switch `layout.tsx` to `generateViewport` and set `themeColor` from a small map in `src/lib/settings/palette.ts` (ids → hex). That map is the one allowed exception, validated by 3.1; add a comment explaining why. Done: `primaryColorHex`, cross-checked against `tokens.css` by `palette.test.ts`.
 - **Tests:** 3.1 passes for every colourway; a unit test checks the attribute is emitted.
 
 ### 3.3 Accent colourways (`data-accent`) and preset pairs
@@ -329,7 +330,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 2.3 Apply everywhere (SSR + cookie) | ☑ | #145 |
 | 2.4 Settings page restructure | ☑ | |
 | 3.1 Contrast guard test | ☑ | |
-| 3.2 Main colourways + Equity Blue | ☐ | |
+| 3.2 Main colourways + Equity Blue | ☑ | |
 | 3.3 Accent colourways + presets | ☐ | |
 | 3.4 Equity mark + credit | ☐ | |
 | 3.5 Colour picker + quick popover | ☐ | |

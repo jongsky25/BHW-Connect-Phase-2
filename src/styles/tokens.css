@@ -131,3 +131,139 @@
   --color-canvas: #000000;
   --color-ink: #ffffff;
 }
+
+/* Main-colour colourways (increment 3.2,
+   docs/header-navigation-display-settings-plan.md §6 3.2): `data-primary`
+   lets a profile swap out Marigold (the default, defined in the
+   unconditioned `:root` block above) for another main colour. Each
+   colourway below follows Marigold's own two-value pattern: `--color-primary`
+   is a theme-independent vivid fill (buttons, borders, focus rings) and
+   `--color-primary-display` is a lighter tint that `--color-primary-text`
+   redirects to once the canvas goes dark — the vivid fill reads fine as
+   *text* on the light canvas, but is too close in luminance to the dark
+   canvas to hit 4.5:1 as text there, exactly like Marigold's own
+   `--color-primary-display` redirect above.
+
+   `--color-on-primary` is deliberately NOT redefined per colourway: every
+   fill here was tuned (by lightness only, hue/saturation kept close to the
+   design source) so its relative luminance sits in the same narrow band
+   Marigold's fill occupies (~0.135-0.16) — dark enough for the one shared
+   cream `--color-on-primary` to read at >=4.5:1 as button text, and light
+   enough for the fill itself to clear >=3:1 against the dark canvas as a
+   bare border/ring. That shared band is what lets one on-primary value
+   keep working, unchanged, for every colourway (see
+   tokens-contrast.test.ts, which checks this for each one). */
+:root[data-primary="equity"] {
+  /* Equity Blue — hue/display split from jongsky25/css-is app.css:18,51,70;
+     lightness retuned from the source's #1040a0 (too dark to clear 3:1
+     against the dark canvas as a bare border/ring) to fit the shared band. */
+  --color-primary: #1f63e9;
+  --color-primary-display: #5a8cef;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="equity"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="equity"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="teal"] {
+  --color-primary: #0f7878;
+  --color-primary-display: #139e9e;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="teal"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="teal"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="violet"] {
+  --color-primary: #7857c9;
+  --color-primary-display: #9980d6;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="violet"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="violet"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="emerald"] {
+  --color-primary: #1f7b4e;
+  --color-primary-display: #29a166;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="emerald"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="emerald"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="rose"] {
+  --color-primary: #c33563;
+  --color-primary-display: #d76b8f;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="rose"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="rose"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="crimson"] {
+  --color-primary: #ce2c23;
+  --color-primary-display: #e46760;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="crimson"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="crimson"] {
+  --color-primary-text: var(--color-primary-display);
+}
+
+:root[data-primary="slate"] {
+  --color-primary: #5b6d87;
+  --color-primary-display: #7e8fa8;
+  --color-primary-text: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-primary="slate"] {
+    --color-primary-text: var(--color-primary-display);
+  }
+}
+
+:root[data-theme="dark"][data-primary="slate"] {
+  --color-primary-text: var(--color-primary-display);
+}
