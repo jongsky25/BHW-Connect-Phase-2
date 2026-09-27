@@ -30,8 +30,8 @@ project settings (for the running app) and GitHub Actions repo secrets
 
 | Variable | Vercel | GitHub Actions |
 |---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required (pilot project — `ci.yml`'s build + E2E job, `e2e-test-users-purge.yml`, `retention-purge.yml`, `training-load.yml`) |
-| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job; the stable fixture accounts' passwords **on the pilot project**) |
+| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required (pilot project — `ci.yml`'s build + E2E job, `e2e-test-users-purge.yml`, `e2e-test-courses-purge.yml`, `retention-purge.yml`, `training-load.yml`) |
+| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job, `e2e-test-courses-purge.yml`; the stable fixture accounts' passwords **on the pilot project**) |
 | ~~`E2E_SUPABASE_URL` / `E2E_SUPABASE_ANON_KEY`~~ | — | no longer read; delete once the switch to one database is confirmed green |
 | `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN` | optional — app runs fine unset | optional (build-time only) |
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
@@ -57,7 +57,11 @@ What that means in practice:
   exist there. Throwaway `e2e.<timestamp>.<random>` accounts, forum posts,
   announcements and surveys created by specs land in the pilot's barangays
   and show up in its lists and dashboards. `e2e-test-users-purge.yml` purges
-  the `e2e.%` accounts (older than 24h only).
+  the `e2e.%` accounts (older than 24h only). Several specs also publish a
+  course (marked `e2e.<spec-tag>.<epoch-ms>.<random>` in its title) and never
+  delete it — `/courses` and `/admin/courses` show these until
+  `e2e-test-courses-purge.yml` purges them (also older than 24h only, via
+  `rpc_e2e_purge_test_courses`).
 - **Global feature flags flip during a run.** Four specs toggle
   `chat_conversation`, `offline_pwa`, `kb_articles` and `course_sessions`
   and restore them in a `finally`, so the live site briefly shows those
