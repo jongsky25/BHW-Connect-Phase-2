@@ -73,9 +73,9 @@ test("settings persist across sessions and apply immediately on save", async ({ 
 });
 
 // Increment 2.3 DoD: a signed-out visitor's display prefs come from the
-// BHW_DISPLAY cookie and survive a reload. No UI writes this cookie yet
-// (increment 3.5 adds the header's quick-display popover) — set it
-// directly to prove the SSR read path lands ahead of that UI.
+// BHW_DISPLAY cookie and survive a reload. Set directly here (rather than
+// through the header's quick-display popover, which increment 3.5 adds and
+// exercises for real in the test below) to isolate the SSR read path.
 test("a signed-out visitor's BHW_DISPLAY cookie applies on /login and survives reload", async ({ page }) => {
   await page.goto("/login");
   await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
@@ -110,4 +110,61 @@ test("a signed-in profile's settings override a leftover BHW_DISPLAY cookie", as
   // STABLE_BHW's own profile has no theme override, so the profile (not
   // the stale signed-out cookie) decides what renders once signed in.
   await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
+});
+
+// Increment 3.5 DoD.
+test("picking the Equity in Health preset recolours the header and persists on reload", async ({ page, request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, "Fresh-Colours-2026");
+
+  await page.goto("/settings");
+  const main = page.getByRole("main");
+  await main.getByRole("button", { name: "Equity in Health" }).click();
+
+  await expect(page.locator("html")).toHaveAttribute("data-primary", "equity");
+  await expect(page.locator("html")).toHaveAttribute("data-accent", "marigold");
+  await expect(main.getByText("Your settings have been saved.")).toBeVisible({ timeout: 10_000 });
+
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-primary", "equity");
+  await expect(page.locator("html")).toHaveAttribute("data-accent", "marigold");
+
+  const a11yScan = await new AxeBuilder({ page }).include("main").analyze();
+  expect(a11yScan.violations).toEqual([]);
+});
+
+test("the main and accent colour swatches are keyboard-operable", async ({ page, request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, "Fresh-Swatch-2026");
+
+  await page.goto("/settings");
+  const main = page.getByRole("main");
+
+  const mainColourRadio = main.getByRole("group", { name: "Main colour" }).getByRole("radio", { name: "Rose" });
+  await mainColourRadio.focus();
+  await page.keyboard.press("Space");
+  await expect(mainColourRadio).toBeChecked();
+  await expect(page.locator("html")).toHaveAttribute("data-primary", "rose");
+
+  const accentColourRadio = main.getByRole("group", { name: "Accent colour" }).getByRole("radio", { name: "Violet" });
+  await accentColourRadio.focus();
+  await page.keyboard.press("Space");
+  await expect(accentColourRadio).toBeChecked();
+  await expect(page.locator("html")).toHaveAttribute("data-accent", "violet");
+});
+
+test("a signed-out visitor's quick-display popover writes the BHW_DISPLAY cookie and persists on reload", async ({
+  page,
+}) => {
+  await page.goto("/login");
+  await expect(page.locator("html")).not.toHaveAttribute("data-theme", "dark");
+
+  await page.getByRole("button", { name: "Display" }).click();
+  await page.getByRole("radio", { name: "Dark" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 });

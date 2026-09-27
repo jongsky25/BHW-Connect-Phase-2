@@ -281,6 +281,12 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
   - Saves via the same debounced partial RPC. Signed out: writes the `BHW_DISPLAY` cookie.
 - **Mobile:** the popover content appears as a "Display" section inside the drawer rather than as a separate popover.
 - **Tests:** e2e: pick Equity preset → the header logo and buttons recolour → reload persists; keyboard-only operation of the swatch radios.
+- **Shipped** (increment 3.5, PR TBD):
+  - Extracted `SegmentedRadioGroup` (`src/components/settings/segmented-radio-group.tsx`) and the theme/font-scale/contrast/reset save logic (`src/lib/settings/use-display-settings.ts`) out of `settings-form.tsx` so Settings → Display/Colours, the header popover and the mobile drawer's inline Display section all apply-instantly-then-debounce the same way, including the signed-out `BHW_DISPLAY` cookie write. This also generalized the `<html>` attribute apply/clear step to every `displayAttributes()` key (it only handled theme/font-scale/contrast before), which is what makes an instant colour change from the popover/drawer actually repaint immediately.
+  - Colour swatches preview every colourway's own hex, not just whichever one is active on `<html>` — `:root[data-primary="x"]` only ever matches the real document root, so there's no CSS-only way to render another colourway on an arbitrary swatch element. Added `accentColorHex` next to `primaryColorHex` in `palette.ts` (both cross-checked against tokens.css by `palette.test.ts`) as the second, now explicitly documented, permitted exception to "hex only in tokens.css".
+  - "Custom" is shown next to the presets heading (not as a fifth card) whenever the current main+accent pair matches no entry in `colorPresets`.
+  - The quick-display popover renders next to the avatar (signed in) and next to the language toggle (signed out, per `display-cookie.ts`'s own comment anticipating this), hidden below `md` in favour of the mobile drawer's inline section.
+  - e2e couldn't be run in this session (no Supabase credentials in the sandbox — `npx playwright test --list` confirms the specs parse); they should run in CI.
 
 ## 7. Phase 4: Reading and comfort aids
 
@@ -335,7 +341,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 3.2 Main colourways + Equity Blue | ☑ | |
 | 3.3 Accent colourways + presets | ☑ | |
 | 3.4 Equity mark + credit | ☑ | |
-| 3.5 Colour picker + quick popover | ☐ | |
+| 3.5 Colour picker + quick popover | ☑ | |
 | 4.1 Text `sm` + density | ☐ | |
 | 4.2 Motion, underline, spacing | ☐ | |
 | 4.3 Dyslexia-friendly font | ☐ | |

@@ -84,6 +84,7 @@ export default async function RootLayout({
             notificationsEnabled={notifications.enabled}
             notifUnreadCount={notifications.unreadCount}
             flags={flags}
+            initialA11y={a11y}
           />
           {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
           <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">

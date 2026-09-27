@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import enMessages from "../../../messages/en.json";
@@ -101,6 +101,45 @@ describe("SettingsForm", () => {
       }),
     );
     expect(document.documentElement.hasAttribute("data-theme")).toBe(false);
+  });
+
+  it("shows the default Bayanihan preset as selected, with no 'Custom' badge", () => {
+    renderForm();
+    expect(screen.getByRole("button", { name: "Bayanihan" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.queryByText("Custom")).not.toBeInTheDocument();
+  });
+
+  it("picking a preset sets both the main and accent colour swatches", async () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("button", { name: "Garden" }));
+
+    await waitFor(() =>
+      expect(state.rpcCalls).toContainEqual({
+        name: "rpc_update_display_settings",
+        args: { p_settings: { primary_color: "emerald", accent_color: "violet" } },
+      }),
+    );
+    expect(within(screen.getByRole("group", { name: "Main colour" })).getByRole("radio", { name: "Emerald" })).toBeChecked();
+    expect(within(screen.getByRole("group", { name: "Accent colour" })).getByRole("radio", { name: "Violet" })).toBeChecked();
+  });
+
+  it("changing just the main colour swatch shows 'Custom' instead of any preset", async () => {
+    renderForm();
+    const mainGroup = within(screen.getByRole("group", { name: "Main colour" }));
+    fireEvent.click(mainGroup.getByRole("radio", { name: "Rose" }));
+
+    expect(screen.getByText("Custom")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Bayanihan" })).toHaveAttribute("aria-pressed", "false");
+  });
+
+  it("warns when the main and accent colours match", () => {
+    renderForm();
+    expect(screen.queryByText(/Links may be harder to spot/)).not.toBeInTheDocument();
+
+    const accentGroup = within(screen.getByRole("group", { name: "Accent colour" }));
+    fireEvent.click(accentGroup.getByRole("radio", { name: "Marigold" }));
+
+    expect(screen.getByText(/Links may be harder to spot/)).toBeInTheDocument();
   });
 
   it("saves language together with the current display settings and refreshes", async () => {
