@@ -1,7 +1,9 @@
+import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_ADMIN,
+  STABLE_BHW,
   STABLE_SUPER_ADMIN,
   createThrowawayBhw,
   getAccessToken,
@@ -134,6 +136,75 @@ test("super admin per-type switch rejects out-of-scope user types", async ({ req
   });
   expect(masterOnly.status).toBe(400);
   expect(masterOnly.body).toMatchObject({ message: "invalid role for flag" });
+});
+
+// RFT A3 DoD: the super admin can turn a feature off for one user type from
+// the /admin/flags matrix, and it takes effect on that user type's next
+// page load — a BHW loses the Forum nav link and is redirected out of
+// /forum, while an admin (whose own view always uses the master switch,
+// plan §2 D2) keeps seeing it throughout. forum is shared with
+// e2e/forum.spec.ts and live traffic, so this always restores it in
+// `finally`, the same discipline as the flag-flip test above.
+test("super admin disables a feature for one user type from the flags matrix", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Username").fill(STABLE_SUPER_ADMIN.username);
+  await page.getByLabel("Password").fill(STABLE_SUPER_ADMIN.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+  await page.goto("/admin/flags");
+  const bhwSwitch = page.getByRole("switch", { name: "Turn Forum on or off for BHW" });
+  await expect(bhwSwitch).toHaveAttribute("aria-checked", "true");
+
+  const scan = await new AxeBuilder({ page }).include("main").analyze();
+  expect(scan.violations, "axe violations on /admin/flags").toEqual([]);
+
+  try {
+    await bhwSwitch.click();
+    await expect(bhwSwitch).toHaveAttribute("aria-checked", "false");
+
+    // The super admin's own view is unaffected — it always uses the master
+    // switch, never disabled_roles (plan §2 D2).
+    await page.goto("/home");
+    await expect(page.getByRole("link", { name: "Forum" })).toBeVisible();
+
+    await page.getByRole("button", { name: "Mag-sign out" }).click();
+    await expect(page).toHaveURL("/login", { timeout: 10_000 });
+
+    await page.getByLabel("Username").fill(STABLE_BHW.username);
+    await page.getByLabel("Password").fill(STABLE_BHW.password);
+    await page.getByRole("button", { name: "Mag-login" }).click();
+    await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+    await expect(page.getByRole("link", { name: "Forum" })).not.toBeVisible();
+    await page.goto("/forum");
+    await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+    await page.getByRole("button", { name: "Mag-sign out" }).click();
+    await expect(page).toHaveURL("/login", { timeout: 10_000 });
+
+    await page.getByLabel("Username").fill(STABLE_SUPER_ADMIN.username);
+    await page.getByLabel("Password").fill(STABLE_SUPER_ADMIN.password);
+    await page.getByRole("button", { name: "Mag-login" }).click();
+    await expect(page).toHaveURL("/home", { timeout: 10_000 });
+    await page.goto("/admin/flags");
+  } finally {
+    const restoreSwitch = page.getByRole("switch", { name: "Turn Forum on or off for BHW" });
+    if ((await restoreSwitch.getAttribute("aria-checked")) === "false") {
+      await restoreSwitch.click();
+      await expect(restoreSwitch).toHaveAttribute("aria-checked", "true");
+    }
+  }
+
+  // Confirm the restore actually took for the user type it was scoped to,
+  // not just for the super admin, whose own view was never affected.
+  await page.getByRole("button", { name: "Mag-sign out" }).click();
+  await expect(page).toHaveURL("/login", { timeout: 10_000 });
+  await page.getByLabel("Username").fill(STABLE_BHW.username);
+  await page.getByLabel("Password").fill(STABLE_BHW.password);
+  await page.getByRole("button", { name: "Mag-login" }).click();
+  await expect(page).toHaveURL("/home", { timeout: 10_000 });
+  await expect(page.getByRole("link", { name: "Forum" })).toBeVisible();
 });
 
 // INC-9 DoD (§5.4 DPA data-subject rights): export returns the user's data;
