@@ -79,8 +79,9 @@ vi.mock("../flags/get-flags", async (importOriginal) => {
   };
 });
 
-function makeRequest(pathname: string, cookieHeader?: string) {
+function makeRequest(pathname: string, cookieHeader?: string, method = "GET") {
   return new NextRequest(`http://localhost${pathname}`, {
+    method,
     headers: cookieHeader ? { cookie: cookieHeader } : {},
   });
 }
@@ -131,5 +132,29 @@ describe("updateSession preview cookie (RFT B1)", () => {
     const location = new URL(response.headers.get("location") ?? "");
     expect(location.pathname).toBe("/home");
     expect(location.searchParams.get("preview")).toBe("1");
+  });
+});
+
+describe("updateSession preview write-blocking (RFT B2)", () => {
+  it("returns 403 for a non-GET /api/* request while previewing", async () => {
+    appUserRow.role = "admin";
+    const response = await updateSession(makeRequest("/api/chat", "bhw_view_as=bhw", "POST"));
+
+    expect(response.status).toBe(403);
+    expect(await response.json()).toEqual({ error: "preview read-only" });
+  });
+
+  it("still allows a GET /api/* request while previewing", async () => {
+    appUserRow.role = "admin";
+    const response = await updateSession(makeRequest("/api/chat", "bhw_view_as=bhw", "GET"));
+
+    expect(response.status).not.toBe(403);
+  });
+
+  it("never blocks a non-GET /api/* request outside preview", async () => {
+    appUserRow.role = "admin";
+    const response = await updateSession(makeRequest("/api/chat", undefined, "POST"));
+
+    expect(response.status).not.toBe(403);
   });
 });

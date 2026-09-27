@@ -6,6 +6,7 @@ import { cookies, headers } from "next/headers";
 import { isAppRole, isPreviewableRole } from "@/lib/auth/roles";
 import { ServiceWorkerRegister } from "@/components/pwa/service-worker-register";
 import { PreviewBar } from "@/components/preview/preview-bar";
+import { PreviewProvider } from "@/components/preview/preview-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { PersonaBar } from "@/components/super-admin/persona-bar";
@@ -75,26 +76,28 @@ export default async function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-canvas text-ink">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <a
-            href="#main"
-            className="sr-only rounded-md bg-primary px-4 py-2 font-medium text-on-primary focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50"
-          >
-            {t("skipToContent")}
-          </a>
-          <SiteHeader
-            signedIn={signedIn}
-            account={account}
-            notificationsEnabled={notifications.enabled}
-            notifUnreadCount={notifications.unreadCount}
-            flags={flags}
-            initialA11y={a11y}
-          />
-          {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
-          {preview ? <PreviewBar role={preview.role} /> : null}
-          <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">
-            {children}
-          </main>
-          <SiteFooter />
+          <PreviewProvider isPreview={Boolean(preview)}>
+            <a
+              href="#main"
+              className="sr-only rounded-md bg-primary px-4 py-2 font-medium text-on-primary focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50"
+            >
+              {t("skipToContent")}
+            </a>
+            <SiteHeader
+              signedIn={signedIn}
+              account={account}
+              notificationsEnabled={notifications.enabled}
+              notifUnreadCount={notifications.unreadCount}
+              flags={flags}
+              initialA11y={a11y}
+            />
+            {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
+            {preview ? <PreviewBar role={preview.role} /> : null}
+            <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">
+              {children}
+            </main>
+            <SiteFooter />
+          </PreviewProvider>
         </NextIntlClientProvider>
         <ServiceWorkerRegister enabled={offlinePwaEnabled} />
       </body>

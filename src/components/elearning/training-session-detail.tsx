@@ -7,6 +7,8 @@ import { useMemo, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Field, inputClass } from "@/components/admin/form-field";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import { computeCohortSummary, type SessionTestAttempt } from "@/lib/elearning/session-summary";
 import type {
@@ -60,6 +62,7 @@ export function TrainingSessionDetail({
 }: Props) {
   const t = useTranslations("trainingSessions");
   const tCrumbs = useTranslations("breadcrumbs");
+  const isPreview = usePreview();
   const [density, setDensity] = useState(session.lesson_density);
   const [status, setStatus] = useState(session.status);
   const [enrollments, setEnrollments] = useState(initialEnrollments);
@@ -121,6 +124,7 @@ export function TrainingSessionDetail({
   const cohortSummary = useMemo(() => computeCohortSummary(testAttempts), [testAttempts]);
 
   async function handleDensityChange(next: LessonDensity) {
+    if (isPreview) return;
     setError(null);
     setDensityPending(true);
     const previous = density;
@@ -142,6 +146,7 @@ export function TrainingSessionDetail({
   }
 
   async function handleEnroll() {
+    if (isPreview) return;
     if (!selectedBhwId) return;
     setError(null);
     setEnrollPending(true);
@@ -178,6 +183,7 @@ export function TrainingSessionDetail({
   }
 
   async function handleAttendance(enrollment: CourseSessionEnrollment, next: EnrollmentStatus) {
+    if (isPreview) return;
     setError(null);
     setAttendancePending(enrollment.bhw_user_id);
     try {
@@ -197,6 +203,7 @@ export function TrainingSessionDetail({
   }
 
   async function handleLogDelivery() {
+    if (isPreview) return;
     const minutes = Number(logMinutes);
     if (!logModuleId || !Number.isInteger(minutes) || minutes < 1 || minutes > 600) {
       setError(t("invalidDurationError"));
@@ -234,6 +241,7 @@ export function TrainingSessionDetail({
   }
 
   async function handleComplete() {
+    if (isPreview) return;
     setError(null);
     setCompletePending(true);
     try {
@@ -272,6 +280,8 @@ export function TrainingSessionDetail({
         </p>
       </div>
 
+      {isPreview ? <PreviewNote /> : null}
+
       {error ? (
         <p role="alert" className="text-sm text-danger">
           {error}
@@ -283,7 +293,7 @@ export function TrainingSessionDetail({
           <select
             id="density-field"
             value={density}
-            disabled={densityLocked || densityPending}
+            disabled={densityLocked || densityPending || isPreview}
             onChange={(event) => handleDensityChange(event.target.value as LessonDensity)}
             className={`${inputClass} max-w-xs disabled:opacity-60`}
           >
@@ -319,7 +329,7 @@ export function TrainingSessionDetail({
             </Field>
             <button
               type="button"
-              disabled={enrollPending}
+              disabled={enrollPending || isPreview}
               onClick={handleEnroll}
               className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
             >
@@ -375,7 +385,7 @@ export function TrainingSessionDetail({
                         <select
                           aria-label={`${t("colAttendance")}: ${enrollment.users?.full_name ?? ""}`}
                           value={enrollment.status}
-                          disabled={!sessionOpen || attendancePending === enrollment.bhw_user_id || enrollment.id.startsWith("optimistic-")}
+                          disabled={!sessionOpen || attendancePending === enrollment.bhw_user_id || enrollment.id.startsWith("optimistic-") || isPreview}
                           onChange={(event) => handleAttendance(enrollment, event.target.value as EnrollmentStatus)}
                           className={`${inputClass} min-w-[150px] disabled:opacity-60`}
                         >
@@ -454,7 +464,7 @@ export function TrainingSessionDetail({
               <textarea id="log-notes" rows={3} maxLength={2000} value={logNotes} onChange={(event) => setLogNotes(event.target.value)} className={inputClass} />
             </Field>
             <div className="flex flex-wrap items-center gap-3">
-              <button type="button" disabled={logPending} onClick={handleLogDelivery}
+              <button type="button" disabled={logPending || isPreview} onClick={handleLogDelivery}
                 className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60">
                 {logPending ? t("logging") : t("logAction")}
               </button>
@@ -468,7 +478,7 @@ export function TrainingSessionDetail({
         <section className="flex flex-col gap-2 rounded-md border border-ink/10 p-4">
           <h2 className="text-lg font-semibold text-ink">{t("completeHeading")}</h2>
           <p className="text-sm text-ink/70">{t("completeNote")}</p>
-          <button type="button" disabled={completePending} onClick={handleComplete}
+          <button type="button" disabled={completePending || isPreview} onClick={handleComplete}
             className="self-start rounded-md border border-ink/20 px-4 py-2 text-sm font-medium disabled:opacity-60">
             {completePending ? t("completing") : t("completeAction")}
           </button>

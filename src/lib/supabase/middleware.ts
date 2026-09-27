@@ -177,6 +177,16 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response, "?preview=1");
   }
 
+  // RFT B2 (docs/role-feature-toggles-plan.md §6 B2): a client component can
+  // fail to disable a write action it doesn't know about, but every write
+  // still has to cross this route-handler boundary — so this is the one
+  // place that has to hold, whatever a component forgets. GET requests
+  // (including admin API reads, since isPreview is never true on /admin/*
+  // for the reason above) are unaffected.
+  if (isPreview && isApiPath(pathname) && request.method !== "GET") {
+    return NextResponse.json({ error: "preview read-only" }, { status: 403 });
+  }
+
   if (!flagRowsPromise) {
     // API routes still read x-app-language (via next-intl) for localized
     // exports/PDFs, so keep forwarding the profile headers.

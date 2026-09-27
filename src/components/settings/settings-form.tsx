@@ -3,6 +3,8 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState, type ReactNode } from "react";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { localeCookieName, type Locale } from "@/i18n/locales";
 import { mapSettingsRpcError } from "@/lib/settings/error-messages";
 import { accentColorHex, colorPresets, primaryColorHex } from "@/lib/settings/palette";
@@ -128,9 +130,11 @@ function PreviewCard() {
 function ColoursFields({
   a11y,
   update,
+  disabled,
 }: {
   a11y: A11ySettings;
   update: (patch: Partial<A11ySettings>) => void;
+  disabled?: boolean;
 }) {
   const t = useTranslations("settings");
   const activePreset = colorPresets.find((preset) => preset.primary === a11y.primary_color && preset.accent === a11y.accent_color);
@@ -155,8 +159,9 @@ function ColoursFields({
                 key={preset.id}
                 type="button"
                 aria-pressed={selected}
+                disabled={disabled}
                 onClick={() => update({ primary_color: preset.primary, accent_color: preset.accent })}
-                className={`flex min-h-11 flex-col items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-medium text-ink transition-colors ${
+                className={`flex min-h-11 flex-col items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-medium text-ink transition-colors disabled:opacity-60 ${
                   selected ? "border-ink bg-ink/5" : "border-ink/15 hover:bg-ink/5"
                 }`}
               >
@@ -185,6 +190,7 @@ function ColoursFields({
         onChange={(next: PrimaryColor) => update({ primary_color: next })}
         colourFor={(option) => primaryColorHex[option]}
         labelFor={(option) => t(`colourName.${option}`)}
+        disabled={disabled}
       />
 
       <ColourSwatchGroup
@@ -195,6 +201,7 @@ function ColoursFields({
         onChange={(next: AccentColor) => update({ accent_color: next })}
         colourFor={(option) => accentColorHex[option]}
         labelFor={(option) => t(`colourName.${option}`)}
+        disabled={disabled}
       />
 
       {sameColour ? (
@@ -209,6 +216,7 @@ function ColoursFields({
 export function SettingsForm({ initialLanguage, initialA11y }: Props) {
   const t = useTranslations("settings");
   const router = useRouter();
+  const isPreview = usePreview();
 
   const [language, setLanguage] = useState<Locale>(initialLanguage);
   const [languageSaving, setLanguageSaving] = useState(false);
@@ -262,6 +270,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={language}
           onChange={setLanguage}
           labelFor={(option) => t(option === "fil" ? "languageFil" : "languageEn")}
+          disabled={isPreview}
         />
 
         {languageError ? (
@@ -279,11 +288,12 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
         <button
           type="button"
           onClick={handleLanguageSave}
-          disabled={languageSaving}
+          disabled={languageSaving || isPreview}
           className="self-start rounded-md bg-ink px-6 py-3 font-medium text-canvas transition-opacity disabled:opacity-60"
         >
           {languageSaving ? t("saving") : t("saveAction")}
         </button>
+        {isPreview ? <PreviewNote /> : null}
       </Section>
 
       <Section id="display" heading={t("displayHeading")}>
@@ -294,6 +304,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={a11y.theme}
           onChange={(next: Theme) => updateDisplay({ theme: next })}
           labelFor={(option) => t(`theme${capitalize(option)}`)}
+          disabled={isPreview}
         />
 
         <SegmentedRadioGroup
@@ -303,6 +314,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={a11y.font_scale}
           onChange={(next: FontScale) => updateDisplay({ font_scale: next })}
           labelFor={(option) => t(`fontScale${capitalize(option)}`)}
+          disabled={isPreview}
         />
 
         <SegmentedRadioGroup
@@ -312,9 +324,11 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={a11y.high_contrast}
           onChange={(next: boolean) => updateDisplay({ high_contrast: next })}
           labelFor={(option) => t(option ? "contrastHigh" : "contrastStandard")}
+          disabled={isPreview}
         />
 
         <DisplayStatusMessage status={displayStatus} errorKey={displayErrorKey} />
+        {isPreview ? <PreviewNote /> : null}
 
         <PreviewCard />
       </Section>
@@ -323,7 +337,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
         {/* Shares the Display section's one status/aria-live region above —
             both write through the same debounced save, so a second region
             here would double-announce the same "Saved" to screen readers. */}
-        <ColoursFields a11y={a11y} update={updateDisplay} />
+        <ColoursFields a11y={a11y} update={updateDisplay} disabled={isPreview} />
       </Section>
 
       <Section id="reading" heading={t("readingHeading")}>
@@ -339,10 +353,12 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
         <button
           type="button"
           onClick={handleReset}
-          className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5"
+          disabled={isPreview}
+          className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5 disabled:opacity-60"
         >
           {t("resetAction")}
         </button>
+        {isPreview ? <PreviewNote /> : null}
       </Section>
     </div>
   );

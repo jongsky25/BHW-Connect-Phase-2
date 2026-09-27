@@ -13,6 +13,7 @@ export function SegmentedRadioGroup<T>({
   onChange,
   labelFor,
   ariaLabelFor,
+  disabled,
 }: {
   legend: string;
   name: string;
@@ -23,9 +24,12 @@ export function SegmentedRadioGroup<T>({
   /** Accessible name, when it needs to say more than the visible label (e.g.
       a compact "A+" glyph whose accessible name should be "Large text"). */
   ariaLabelFor?: (option: T) => string;
+  /** RFT B2 (docs/role-feature-toggles-plan.md §6 B2): while previewing,
+      nothing is saved — a fieldset disables every option in one place. */
+  disabled?: boolean;
 }) {
   return (
-    <fieldset className="flex flex-col gap-2">
+    <fieldset disabled={disabled} className="flex flex-col gap-2">
       <legend className="text-sm font-medium text-ink">{legend}</legend>
       <div className="inline-flex w-fit overflow-hidden rounded-full border border-ink/15">
         {options.map((option, index) => {

@@ -3,6 +3,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import { useRef, useState, type FormEvent } from "react";
 import { EmptyState } from "@/components/empty-state";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { normalizeText } from "@/lib/chat/normalize";
 import { createClient } from "@/lib/supabase/client";
 
@@ -62,6 +64,7 @@ function pick(locale: string, fil: string, en: string): string {
 export function ChatGuide() {
   const t = useTranslations("chat");
   const locale = useLocale();
+  const isPreview = usePreview();
   const [exchanges, setExchanges] = useState<Exchange[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
@@ -127,12 +130,14 @@ export function ChatGuide() {
   }
 
   function ask(questionText: string) {
+    if (isPreview) return;
     const question = questionText.trim();
     if (!question) return;
     void send(question, { question });
   }
 
   function selectClarifierOption(clarifierId: string, optionIndex: number, label: string) {
+    if (isPreview) return;
     void send(label, { selection: { clarifier_id: clarifierId, option_index: optionIndex } });
   }
 
@@ -144,6 +149,7 @@ export function ChatGuide() {
   }
 
   async function handleFeedback(exchange: Exchange, vote: "up" | "down") {
+    if (isPreview) return;
     if (!exchange.messageId) return;
     setExchanges((prev) =>
       prev.map((item) => (item.key === exchange.key ? { ...item, feedback: vote } : item)),
@@ -199,16 +205,18 @@ export function ChatGuide() {
             value={input}
             onChange={(event) => setInput(event.target.value)}
             placeholder={t("inputPlaceholder")}
-            className="min-h-[48px] flex-1 rounded-md border border-ink/20 bg-canvas px-3 py-2 text-ink outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30"
+            disabled={isPreview}
+            className="min-h-[48px] flex-1 rounded-md border border-ink/20 bg-canvas px-3 py-2 text-ink outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30 disabled:opacity-60"
           />
           <button
             type="submit"
-            disabled={sending || !input.trim()}
+            disabled={sending || !input.trim() || isPreview}
             className="min-h-[48px] min-w-[96px] rounded-md bg-primary px-6 py-3 font-medium text-on-primary transition-opacity disabled:opacity-60"
           >
             {sending ? t("sending") : t("send")}
           </button>
         </div>
+        {isPreview ? <PreviewNote /> : null}
       </form>
     </div>
   );

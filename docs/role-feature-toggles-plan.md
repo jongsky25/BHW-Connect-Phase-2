@@ -466,7 +466,7 @@ The recommended serial order is **A1, A2, A3, C1, C2, C3, B1, B2, C4, C5**. Phas
 | A2 Role-aware flag resolution | ☑ | #156 |
 | A3 Flags matrix UI | ☑ | #156 |
 | B1 Viewer context, cookie, banner | ☑ | #156 |
-| B2 Read-only preview and e2e | ☐ | |
+| B2 Read-only preview and e2e | ☑ | #156 |
 | C1 Content visibility migration | ☑ applied to the pilot | #156 |
 | C2 User-facing read filters | ☑ | #156 |
 | C3 Admin kit and KB pages | ☑ | #156 |

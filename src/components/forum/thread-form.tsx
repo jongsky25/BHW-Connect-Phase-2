@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapForumRpcError } from "@/lib/forum/error-messages";
 import type { ForumCategory } from "@/lib/forum/types";
 import { createClient } from "@/lib/supabase/client";
@@ -15,6 +17,7 @@ type Props = {
 export function ThreadForm({ categories }: Props) {
   const t = useTranslations("forum");
   const router = useRouter();
+  const isPreview = usePreview();
   const [categoryId, setCategoryId] = useState(categories[0]?.id ?? "");
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -57,6 +60,7 @@ export function ThreadForm({ categories }: Props) {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-md border border-ink/10 p-4">
+      <fieldset disabled={isPreview} className="contents">
       <Field label={t("categoryLabel")} htmlFor="forum-thread-category">
         <select
           id="forum-thread-category"
@@ -111,11 +115,13 @@ export function ThreadForm({ categories }: Props) {
 
       <button
         type="submit"
-        disabled={loading || !categoryId}
+        disabled={loading || !categoryId || isPreview}
         className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("posting") : t("postThreadAction")}
       </button>
+      </fieldset>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }

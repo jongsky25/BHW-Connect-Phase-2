@@ -3,6 +3,8 @@
 import { useTranslations } from "next-intl";
 import { useState, type FormEvent } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapFlipchartRpcError } from "@/lib/flipcharts/error-messages";
 import { emptyDraftPage, type DraftFlipChartPage, type FlipChart, type FlipChartStatus } from "@/lib/flipcharts/types";
 import { createClient } from "@/lib/supabase/client";
@@ -19,6 +21,7 @@ type Props = {
 
 export function FlipchartForm({ namespace, authorFullName, authorUsername, authorUserId, createdStatus, onCreated }: Props) {
   const t = useTranslations(namespace);
+  const isPreview = usePreview();
   const [titleFil, setTitleFil] = useState("");
   const [titleEn, setTitleEn] = useState("");
   const [pages, setPages] = useState<DraftFlipChartPage[]>([emptyDraftPage()]);
@@ -27,6 +30,7 @@ export function FlipchartForm({ namespace, authorFullName, authorUsername, autho
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (isPreview) return;
     setError(null);
     setLoading(true);
 
@@ -114,11 +118,12 @@ export function FlipchartForm({ namespace, authorFullName, authorUsername, autho
 
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || isPreview}
         className="self-start rounded-md bg-primary px-6 py-3 font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("creating") : t("createAction")}
       </button>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }

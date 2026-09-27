@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { inputClass } from "@/components/admin/form-field";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapForumRpcError } from "@/lib/forum/error-messages";
 import { createClient } from "@/lib/supabase/client";
 
@@ -14,6 +16,7 @@ type Props = {
 export function ReplyForm({ threadId }: Props) {
   const t = useTranslations("forum");
   const router = useRouter();
+  const isPreview = usePreview();
   const [body, setBody] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -52,6 +55,7 @@ export function ReplyForm({ threadId }: Props) {
         className={`${inputClass} min-h-[80px]`}
         value={body}
         onChange={(e) => setBody(e.target.value)}
+        disabled={isPreview}
         required
       />
       {error ? (
@@ -61,11 +65,12 @@ export function ReplyForm({ threadId }: Props) {
       ) : null}
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || isPreview}
         className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("posting") : t("postReplyAction")}
       </button>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }
