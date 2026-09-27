@@ -368,7 +368,7 @@ Needs A2 and C2.
   - add the four columns (§4.5) to `kb_entries`, `kb_articles`, `announcements`, `surveys`, `courses`, `flip_charts` and `forum_threads`, with partial indexes `where hidden_at is null and archived_at is null` where the table is listed by users;
   - add one restrictive `select` policy per table (§4.5). Author clauses:
     - `flip_charts.author_user_id`;
-    - `forum_threads.author_user_id` (check the actual column names in the inc13 and inc14 migrations);
+    - `forum_threads.author_user_id` (both verified in the inc13 and inc14 migrations);
     - none for the other tables.
   - backfill `courses status='archived'` and guard `rpc_course_set_status` (§4.5);
   - add `rpc_content_set_visibility` (§4.5);
