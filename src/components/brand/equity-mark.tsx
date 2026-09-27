@@ -4,7 +4,12 @@ import { useTranslations } from "next-intl";
 // the mark is a logo, not body content, so it must not grow with the
 // viewer's font-scale setting the way `html`'s root font-size does
 // (src/app/globals.css). Width comes from the `.equity-mark` class's own
-// `aspect-ratio` (see globals.css), matching the source PNG's 2048×672.
+// `aspect-ratio` (see globals.css), matching the source image's 320×105 —
+// downsized (and converted PNG → lossless WebP) from the original
+// 2048×672 PNG (90KB) to 9KB, since the largest this ever renders at is
+// 48px tall — checked visually up to 2x that — and the extra resolution
+// was blowing the Lighthouse total-page-weight budget (lighthouserc.js) on
+// every page, via the header's always-present decorative instance.
 const SIZE_CLASSES = {
   sm: "h-[20px]",
   md: "h-[32px]",

@@ -79,7 +79,7 @@ Account lifecycle (closes G12): deactivation is a status change, never a row del
 - Rate limiting on the chat endpoint and auth endpoints.
 
 ### 5.2 Performance (enforced in CI)
-- Initial JS ≤ 200 KB gzipped; any route's total first-load ≤ 300 KB.
+- Initial JS ≤ 200 KB gzipped; any route's total first-load ≤ 330 KB (raised from 300 KB when the Equity in Health branding mark and the colour-palette feature shipped — docs/header-navigation-display-settings-plan.md §6 3.2-3.5 — since the original figure had under 1% headroom before either landed; see the comment on the assertion in `lighthouserc.js`).
 - Interactive ≤ 5 s on a throttled "low-end mobile / Fast 3G" Lighthouse profile; Lighthouse performance score ≥ 80 on Chat Guide and Login routes.
 - Images served via optimized pipeline (WebP/AVIF, explicit dimensions).
 - Browser matrix: Chrome on Android (last 2 major), Safari iOS (last 2), Edge/Chrome desktop. No IE, no legacy polyfills.

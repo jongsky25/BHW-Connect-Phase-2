@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { createClient } from "@/lib/supabase/client";
 import { displayCookieName } from "./display-cookie";
 import { mapSettingsRpcError } from "./error-messages";
 import { defaultA11ySettings, displayAttributes, type A11ySettings } from "./types";
@@ -12,6 +11,14 @@ import { defaultA11ySettings, displayAttributes, type A11ySettings } from "./typ
 // same debounced partial write. Factored out here so that debounce/error/
 // revert behaviour — and the signed-out cookie fallback — has exactly one
 // implementation instead of three.
+//
+// `@/lib/supabase/client` is loaded with a dynamic `import()` inside flush()/
+// reset(), not a static import up top: this hook is used by the popover and
+// drawer, both mounted on every page via the header, so a static import
+// would pull the whole Supabase client into the shared bundle every visitor
+// pays for on first load, not just the ones who actually change a display
+// setting. That regression is what blew lighthouserc.js's script-size
+// budget after this hook shipped.
 const DISPLAY_SAVE_DEBOUNCE_MS = 600;
 
 export type DisplaySaveStatus = "idle" | "saving" | "saved" | "error";
@@ -82,6 +89,7 @@ export function useDisplaySettings(initial: A11ySettings, signedIn: boolean) {
     setErrorKey(null);
 
     try {
+      const { createClient } = await import("@/lib/supabase/client");
       const supabase = createClient();
       const { error } = await supabase.rpc("rpc_update_display_settings", { p_settings: patch });
 
@@ -130,6 +138,7 @@ export function useDisplaySettings(initial: A11ySettings, signedIn: boolean) {
     setErrorKey(null);
 
     try {
+      const { createClient } = await import("@/lib/supabase/client");
       const supabase = createClient();
       const { error } = await supabase.rpc("rpc_update_display_settings", { p_settings: defaultA11ySettings });
 
