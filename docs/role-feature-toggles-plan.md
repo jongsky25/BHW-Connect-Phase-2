@@ -468,7 +468,7 @@ The recommended serial order is **A1, A2, A3, C1, C2, C3, B1, B2, C4, C5**. Phas
 | B1 Viewer context, cookie, banner | ☐ | |
 | B2 Read-only preview and e2e | ☐ | |
 | C1 Content visibility migration | ☑ applied to the pilot | #156 |
-| C2 User-facing read filters | ☐ | |
+| C2 User-facing read filters | ☑ | #156 |
 | C3 Admin kit and KB pages | ☐ | |
 | C4 Announcements, surveys, courses | ☐ | |
 | C5 Flipcharts, forum, docs | ☐ | |

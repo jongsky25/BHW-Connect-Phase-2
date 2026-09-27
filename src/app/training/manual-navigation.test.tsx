@@ -18,7 +18,7 @@ vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));
 vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}})},from:(table:string)=>{
   const call={table,columns:'',filters:[] as Array<[string,unknown]>};state.calls.push(call);
   let single=false;
-  const q={select:(c:string)=>{call.columns=c;return q},eq:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},in:()=>q,not:()=>q,order:()=>q,limit:()=>q,returns:()=>q,
+  const q={select:(c:string)=>{call.columns=c;return q},eq:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},is:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},in:()=>q,not:()=>q,order:()=>q,limit:()=>q,returns:()=>q,
     maybeSingle:()=>{single=true;return q},single:()=>{single=true;return q},then:(resolve:(v:unknown)=>void)=>{
       let rows=state.rows[table]??[];
       rows=rows.filter(r=>call.filters.every(([k,v])=>r[k]===v));
@@ -33,7 +33,7 @@ beforeEach(()=>{
     training_programs:[{id:'manual',content_key:'bhw-reference-manual',status:'published',title_en:'Manual',title_fil:'Manwal'}],
     training_program_chapters:[{id:'ch1',program_id:'manual',chapter_key:'chapter-1',position:0,availability:'available',course_id:'course',title_en:'BHWs and Their Barangay',title_fil:'Ang BHW at Barangay'},
       {id:'ch2',program_id:'manual',chapter_key:'chapter-2',position:1,availability:'unavailable',course_id:null,title_en:'First Responders',title_fil:'First Responders'}],
-    courses:[{id:'course',status:'published',title_en:'Old Araw 1',title_fil:'Lumang Araw 1'},{id:'generic',status:'published',title_en:'Other course',title_fil:'Ibang kurso'}],
+    courses:[{id:'course',status:'published',title_en:'Old Araw 1',title_fil:'Lumang Araw 1',hidden_at:null,archived_at:null},{id:'generic',status:'published',title_en:'Other course',title_fil:'Ibang kurso',hidden_at:null,archived_at:null}],
     course_modules:[{id:'m1',course_id:'course',position:0,type:'text',title_en:'Roles',title_fil:'Tungkulin'},{id:'m2',course_id:'course',position:1,type:'text',title_en:'UHC',title_fil:'UHC'}],
     course_lessons:[{id:'l1',module_id:'m1',position:0,required:true,title_en:'HEPO',title_fil:'HEPO',published_revision_id:'r1'},{id:'l2',module_id:'m1',position:1,required:true,title_en:'Educator',title_fil:'Tagapagturo',published_revision_id:'r2'}],
     course_progress:[{id:'someone',course_id:'course',bhw_user_id:'other',status:'certified'},{id:'mine',course_id:'course',bhw_user_id:'self',status:'certified'}],

@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FlipchartViewer } from "@/components/flipcharts/flipchart-viewer";
 import type { FlipChartPage } from "@/lib/flipcharts/types";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -36,12 +37,13 @@ export default async function FlipchartDetailPage({ params }: { params: Promise<
   const t = await getTranslations("flipcharts");
   const tCrumbs = await getTranslations("breadcrumbs");
 
-  const { data: chart } = await supabase
-    .from("flip_charts")
-    .select("id, title_fil, title_en, status")
-    .eq("id", id)
-    .eq("status", "published")
-    .maybeSingle<FlipChartRow>();
+  const { data: chart } = await withVisible(
+    supabase
+      .from("flip_charts")
+      .select("id, title_fil, title_en, status")
+      .eq("id", id)
+      .eq("status", "published"),
+  ).maybeSingle<FlipChartRow>();
 
   if (!chart) {
     notFound();

@@ -4,6 +4,7 @@ import { AnnouncementCard } from "@/components/announcements/announcement-card";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import type { Announcement } from "@/lib/announcements/types";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -30,9 +31,11 @@ export default async function AnnouncementsPage() {
   const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
 
-  const { data: announcements } = await supabase
-    .from("announcements")
-    .select("id, org_unit_id, author_user_id, body_fil, body_en, link_url, image_url, created_at, org_units(name), users(full_name)")
+  const { data: announcements } = await withVisible(
+    supabase
+      .from("announcements")
+      .select("id, org_unit_id, author_user_id, body_fil, body_en, link_url, image_url, created_at, org_units(name), users(full_name)"),
+  )
     .order("created_at", { ascending: false })
     .returns<Announcement[]>();
 

@@ -2,6 +2,7 @@ import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { TrainingSessionsConsole } from "@/components/elearning/training-sessions-console";
 import type { CourseSession } from "@/lib/elearning/types";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -43,11 +44,12 @@ export default async function TrainingSessionsPage() {
       .select(SESSION_COLUMNS)
       .order("scheduled_at", { ascending: false })
       .returns<CourseSession[]>(),
-    supabase
-      .from("courses")
-      .select("id, title_fil, title_en")
-      .eq("status", "published")
-      .order("title_en"),
+    withVisible(
+      supabase
+        .from("courses")
+        .select("id, title_fil, title_en")
+        .eq("status", "published"),
+    ).order("title_en"),
   ]);
 
   return <TrainingSessionsConsole initialSessions={sessions ?? []} courses={courses ?? []} locale={locale} />;

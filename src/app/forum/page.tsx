@@ -50,10 +50,16 @@ export default async function ForumPage({
     .order("sort_order")
     .returns<ForumCategory[]>();
 
+  // status='visible' already excludes a moderator-hidden thread (its own
+  // hidden_at is set at the same time); archived_at is the one column that
+  // status doesn't cover, so it's filtered directly here rather than through
+  // the shared withVisible() helper, which would filter hidden_at too and
+  // could read as redundant with the status check right next to it.
   let query = supabase
     .from("forum_threads")
     .select("id, title, author_full_name, tags, created_at, category_id, forum_categories(name_fil, name_en)")
     .eq("status", "visible")
+    .is("archived_at", null)
     .order("created_at", { ascending: false });
 
   if (category) {

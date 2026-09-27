@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SurveyRespondForm } from "@/components/surveys/survey-respond-form";
 import type { SurveyQuestion } from "@/lib/surveys/types";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -30,12 +31,13 @@ export default async function SurveyRespondPage({ params }: { params: Promise<{ 
   const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
 
-  const { data: survey } = await supabase
-    .from("surveys")
-    .select("id, title_fil, title_en, description_fil, description_en, status")
-    .eq("id", id)
-    .eq("status", "published")
-    .maybeSingle();
+  const { data: survey } = await withVisible(
+    supabase
+      .from("surveys")
+      .select("id, title_fil, title_en, description_fil, description_en, status")
+      .eq("id", id)
+      .eq("status", "published"),
+  ).maybeSingle();
 
   if (!survey) {
     notFound();
