@@ -27,6 +27,12 @@ export default defineConfig({
   workers: 1,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
+  // Retries absorb an isolated flake, but when the shared database itself
+  // degrades every test fails and each is retried twice — tripling load on
+  // the database exactly when it's struggling (27 Sep 2026: 47 failures,
+  // 1.5h run, PostgREST then stuck on 503 for hours). Stop the run once
+  // failures are clearly systemic rather than isolated.
+  maxFailures: process.env.CI ? 10 : undefined,
   // The longest specs are whole end-to-end journeys, not single interactions:
   // forum.spec.ts alone signs in three times (admin -> BHW -> sibling BHW ->
   // admin), each a full login + consent + navigation round trip, and

@@ -8,13 +8,36 @@
 # an older ci.yml, with no e2e-wait job, holds it while its e2e job is in
 # progress.
 #
-# Needs GH_TOKEN with actions:read and the standard GITHUB_REPOSITORY,
-# GITHUB_RUN_ID and GITHUB_RUN_ATTEMPT.
+# A pull_request run whose commit is no longer the PR's head (a newer push
+# superseded it while it queued) is skipped instead: it writes run=false to
+# GITHUB_OUTPUT and the e2e job does not start. Checked before every poll,
+# since a run can become stale while it waits. It hasn't touched the
+# database yet at that point, so skipping leaves no shared state behind.
+#
+# Needs GH_TOKEN with actions:read (and pull-requests:read for PR runs) and
+# the standard GITHUB_REPOSITORY, GITHUB_RUN_ID, GITHUB_RUN_ATTEMPT and
+# GITHUB_OUTPUT. PR_NUMBER and HEAD_SHA are set only for pull_request runs.
 set -uo pipefail
 
 repo=$GITHUB_REPOSITORY
 me=$GITHUB_RUN_ID
 poll=${POLL_SECONDS:-90}
+pr=${PR_NUMBER:-}
+head_sha=${HEAD_SHA:-}
+output=${GITHUB_OUTPUT:-/dev/null}
+
+# Exit 0 (and tell the e2e job to skip) if this PR run's commit is stale.
+# An API failure is not proof of staleness, so it never skips.
+skip_if_superseded() {
+  [ -n "$pr" ] && [ -n "$head_sha" ] || return 0
+  local current
+  current=$(gh api "repos/$repo/pulls/$pr" --jq .head.sha) || return 0
+  if [ -n "$current" ] && [ "$current" != "$head_sha" ]; then
+    echo "PR #$pr moved on to $current; skipping e2e for superseded $head_sha"
+    echo "run=false" >>"$output"
+    exit 0
+  fi
+}
 
 # stdin: one {run, jobs} object per other in-progress CI run. $1: when this
 # run's e2e-wait started. Prints go, busy or queued.
@@ -49,9 +72,13 @@ started=$(gh api "repos/$repo/actions/runs/$me/attempts/$GITHUB_RUN_ATTEMPT/jobs
 [ -n "$started" ] || { echo "could not find this run's e2e-wait job"; exit 1; }
 
 while :; do
+  skip_if_superseded
   if runs=$(other_runs); then
     state=$(classify "$started" <<<"$runs")
-    [ "$state" = go ] && exit 0
+    if [ "$state" = go ]; then
+      echo "run=true" >>"$output"
+      exit 0
+    fi
     echo "$(date -u +%H:%M:%SZ) shared database $state; checking again in ${poll}s"
   else
     echo "$(date -u +%H:%M:%SZ) GitHub API call failed; retrying in ${poll}s"

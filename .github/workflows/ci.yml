@@ -51,18 +51,28 @@ jobs:
     permissions:
       actions: read
       contents: read
+      pull-requests: read
+    outputs:
+      run: ${{ steps.wait.outputs.run }}
     steps:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: .github/scripts
 
       - name: Wait for the shared database
+        id: wait
         env:
           GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: bash .github/scripts/wait-for-e2e-slot.sh
 
   e2e:
     needs: e2e-wait
+    # e2e-wait skips a PR run whose commit was superseded by a newer push
+    # while it queued: nobody merges that commit, and a full suite on it only
+    # adds load to the one shared database.
+    if: needs.e2e-wait.outputs.run == 'true'
     runs-on: ubuntu-latest
     # Every PR's e2e run shares ONE Supabase project (the pilot), and four specs toggle
     # GLOBAL feature flags (`chat_conversation`, `offline_pwa`, `kb_articles`,
@@ -129,6 +139,27 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # Fail in seconds, with a plain message, when the shared database can't
+      # serve requests (e.g. PostgREST stuck on 503 PGRST002 because its
+      # schema-cache query keeps hitting the statement timeout). Running the
+      # suite against it anyway turns into a 1.5h run of timeouts and retries
+      # that loads the database further while it's trying to recover.
+      - name: Check the shared database is serving requests
+        run: |
+          for attempt in 1 2 3 4 5; do
+            status=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 \
+              -H "apikey: $NEXT_PUBLIC_SUPABASE_ANON_KEY" \
+              "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/feature_flags?select=key&limit=1")
+            if [ "$status" -ge 200 ] && [ "$status" -lt 500 ]; then
+              echo "Shared database OK (HTTP $status)"
+              exit 0
+            fi
+            echo "Attempt $attempt: shared database returned HTTP $status; retrying in 30s"
+            sleep 30
+          done
+          echo "::error::The shared Supabase database is not serving requests (last HTTP $status). This is an infrastructure problem, not a test failure — check the project's health in the Supabase dashboard before re-running."
+          exit 1
 
       - name: E2E smoke tests
         run: npm run e2e
