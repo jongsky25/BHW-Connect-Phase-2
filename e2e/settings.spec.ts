@@ -196,6 +196,12 @@ test("a signed-out visitor's quick-display popover writes the BHW_DISPLAY cookie
   await page.getByRole("radio", { name: "Dark" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 
+  // The popover applies instantly to <html> but only writes the BHW_DISPLAY
+  // cookie after use-display-settings.ts's 600ms save debounce fires —
+  // reloading before that lands would race it and lose the change, so wait
+  // for the cookie itself rather than a fixed sleep.
+  await page.waitForFunction(() => document.cookie.includes("BHW_DISPLAY="));
+
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
 });
