@@ -13,6 +13,7 @@ import {
   lineSpacings,
   motionPreferences,
   primaryColors,
+  readingFonts,
   themes,
   type A11ySettings,
   type AccentColor,
@@ -21,6 +22,7 @@ import {
   type LineSpacing,
   type MotionPreference,
   type PrimaryColor,
+  type ReadingFont,
   type Theme,
 } from "@/lib/settings/types";
 import { useDisplaySettings } from "@/lib/settings/use-display-settings";
@@ -34,11 +36,12 @@ type Props = {
 };
 
 // Increment 2.4 restructures this page into anchored sections. Display
-// settings (theme/font size/contrast) and Colours (3.5) apply instantly and
-// save through use-display-settings.ts's shared debounce; Language keeps its
-// pre-2.4 explicit-Save flow, since a language change needs a full-page
-// refresh to load the other message catalog. Reading aids (Phase 4) are
-// still a placeholder here — nothing in this increment writes those keys.
+// settings (theme/font size/contrast/density/motion) and Colours (3.5)
+// apply instantly and save through use-display-settings.ts's shared
+// debounce; Language keeps its pre-2.4 explicit-Save flow, since a language
+// change needs a full-page refresh to load the other message catalog.
+// Reading & comfort (Phase 4) shares the same instant-apply/debounce flow;
+// only colour-blind-safe status colours (4.4) still remain unbuilt.
 const CONTRAST_OPTIONS = [false, true] as const;
 const UNDERLINE_LINKS_OPTIONS = [false, true] as const;
 
@@ -355,8 +358,8 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
         {/* Shares the Display section's one status/aria-live region above —
             both write through the same debounced save, so a second region
             here would double-announce the same "Saved" to screen readers.
-            A dyslexia-friendly font (4.3) and colour-blind-safe status
-            colours (4.4) still land in later increments. */}
+            Colour-blind-safe status colours (4.4) still land in a later
+            increment. */}
         <SegmentedRadioGroup
           legend={t("underlineLinksLabel")}
           name="underline-links"
@@ -373,6 +376,15 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           value={a11y.line_spacing}
           onChange={(next: LineSpacing) => updateDisplay({ line_spacing: next })}
           labelFor={(option) => t(`lineSpacing${capitalize(option)}`)}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("readingFontLabel")}
+          name="reading-font"
+          options={readingFonts}
+          value={a11y.reading_font}
+          onChange={(next: ReadingFont) => updateDisplay({ reading_font: next })}
+          labelFor={(option) => t(`readingFont${capitalize(option)}`)}
         />
       </Section>
 

@@ -450,3 +450,20 @@
   line-height: 1.75;
   letter-spacing: 0.01em;
 }
+
+/* Reading-font setting (Phase 4.3, docs/header-navigation-display-settings-
+   plan.md §6): Atkinson Hyperlegible, a typeface designed for low-vision
+   and dyslexic readers, loaded via next/font/google in layout.tsx (variable
+   --font-atkinson-hyperlegible) with preload:false so it costs nothing until
+   someone opts in. --font-reading is the stable name the setting switches
+   to; overriding --font-sans (globals.css's `@theme inline` block defines
+   it from --font-geist-sans by default) means every existing font-sans/body
+   text usage picks up the swap for free, the same mechanism a --data-primary
+   colourway override already uses for --color-primary. */
+:root {
+  --font-reading: var(--font-atkinson-hyperlegible);
+}
+
+:root[data-reading-font="hyperlegible"] {
+  --font-sans: var(--font-reading);
+}

@@ -39,6 +39,7 @@ beforeEach(() => {
   document.documentElement.removeAttribute("data-motion");
   document.documentElement.removeAttribute("data-underline-links");
   document.documentElement.removeAttribute("data-line-spacing");
+  document.documentElement.removeAttribute("data-reading-font");
 });
 
 afterEach(() => {
@@ -91,6 +92,14 @@ describe("SettingsForm", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Relaxed" }));
 
     expect(document.documentElement.getAttribute("data-line-spacing")).toBe("relaxed");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a reading-font change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Atkinson Hyperlegible" }));
+
+    expect(document.documentElement.getAttribute("data-reading-font")).toBe("hyperlegible");
     expect(state.rpcCalls).toEqual([]);
   });
 
