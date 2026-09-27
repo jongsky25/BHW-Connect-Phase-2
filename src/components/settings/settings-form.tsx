@@ -224,6 +224,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
   const [languageSaving, setLanguageSaving] = useState(false);
   const [languageError, setLanguageError] = useState<string | null>(null);
   const [languageSaved, setLanguageSaved] = useState(false);
+  const [confirmingReset, setConfirmingReset] = useState(false);
 
   // The settings page is only ever reached signed in (see settings/page.tsx's
   // redirect), so this always writes through the RPC, never the signed-out
@@ -399,15 +400,47 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
         {/* Reset writes through the same rpc_update_display_settings flow as
             the Display controls above, and shares its one status/aria-live
             region — a second live region announcing the same text here
-            would double-announce to screen readers. */}
+            would double-announce to screen readers. A confirm step (4.5)
+            guards it, the same inline confirm/cancel pattern
+            course-progress-console.tsx already uses for its own reset
+            action, since this wipes every display preference at once. */}
         <p className="text-sm text-ink/70">{t("resetIntro")}</p>
-        <button
-          type="button"
-          onClick={handleReset}
-          className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5"
-        >
-          {t("resetAction")}
-        </button>
+        {confirmingReset ? (
+          <div className="flex flex-col gap-2">
+            <p role="alert" className="text-sm text-danger">
+              {t("resetConfirmWarning")}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                disabled={displayStatus === "saving"}
+                onClick={async () => {
+                  await handleReset();
+                  setConfirmingReset(false);
+                }}
+                className="self-start rounded-md bg-danger px-4 py-2 text-sm font-medium text-canvas transition-opacity disabled:opacity-60"
+              >
+                {t("resetConfirmAction")}
+              </button>
+              <button
+                type="button"
+                disabled={displayStatus === "saving"}
+                onClick={() => setConfirmingReset(false)}
+                className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5 disabled:opacity-60"
+              >
+                {t("resetCancelAction")}
+              </button>
+            </div>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setConfirmingReset(true)}
+            className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5"
+          >
+            {t("resetAction")}
+          </button>
+        )}
       </Section>
     </div>
   );

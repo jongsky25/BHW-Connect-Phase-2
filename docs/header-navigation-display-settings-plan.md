@@ -351,7 +351,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 4.2 Motion, underline, spacing | ☑ | |
 | 4.3 Dyslexia-friendly font | ☑ | |
 | 4.4 Colour-blind status colours | ☑ | |
-| 4.5 Reset, docs, final matrix | ☐ | |
+| 4.5 Reset, docs, final matrix | ☑ | |
 
 Dependencies:
 

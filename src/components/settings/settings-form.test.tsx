@@ -143,10 +143,34 @@ describe("SettingsForm", () => {
     expect(document.documentElement.hasAttribute("data-theme")).toBe(false);
   });
 
-  it("resets every display setting to its default and saves the full object", async () => {
+  it("reset now shows a confirm step rather than resetting immediately", () => {
     renderForm();
     fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
     fireEvent.click(screen.getByRole("button", { name: "Reset now" }));
+
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "This can't be undone. Reset every display setting above to its default value?",
+    );
+    expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("cancelling the reset confirm step leaves settings untouched", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
+    fireEvent.click(screen.getByRole("button", { name: "Reset now" }));
+    fireEvent.click(screen.getByRole("button", { name: "Cancel" }));
+
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("confirming the reset resets every display setting to its default and saves the full object", async () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
+    fireEvent.click(screen.getByRole("button", { name: "Reset now" }));
+    fireEvent.click(screen.getByRole("button", { name: "Yes, reset" }));
 
     await waitFor(() =>
       expect(state.rpcCalls.at(-1)).toEqual({
@@ -155,6 +179,7 @@ describe("SettingsForm", () => {
       }),
     );
     expect(document.documentElement.hasAttribute("data-theme")).toBe(false);
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
   });
 
   it("shows the default Bayanihan preset as selected, with no 'Custom' badge", () => {
