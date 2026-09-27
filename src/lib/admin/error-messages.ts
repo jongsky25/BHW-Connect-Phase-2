@@ -11,6 +11,15 @@ export type AdminErrorKey =
   | "assessmentBlocksResetError"
   | "assessorLevelError"
   | "bhwLevelError"
+  | "contentArchivedError"
+  | "contentNotFoundError"
+  | "invalidContentTypeError"
+  | "invalidActionError"
+  | "alreadyHiddenError"
+  | "notHiddenError"
+  | "alreadyArchivedError"
+  | "notArchivedError"
+  | "useArchiveActionError"
   | "genericError";
 
 // rpc_admin_* functions raise plain Postgres exceptions (delivery-plan.md
@@ -31,5 +40,14 @@ export function mapAdminRpcError(message: string | undefined): AdminErrorKey {
   if (message.includes("invalid role for flag")) return "invalidRoleForFlagError";
   if (message.includes("assessor catchment")) return "assessorLevelError";
   if (message.includes("bhw must belong to a barangay")) return "bhwLevelError";
+  if (message.includes("use archive action")) return "useArchiveActionError";
+  if (message.includes("content archived")) return "contentArchivedError";
+  if (message.includes("content not found")) return "contentNotFoundError";
+  if (message.includes("invalid content type")) return "invalidContentTypeError";
+  if (message.includes("invalid action")) return "invalidActionError";
+  if (message.includes("already hidden")) return "alreadyHiddenError";
+  if (message.includes("not hidden")) return "notHiddenError";
+  if (message.includes("already archived")) return "alreadyArchivedError";
+  if (message.includes("not archived")) return "notArchivedError";
   return "genericError";
 }

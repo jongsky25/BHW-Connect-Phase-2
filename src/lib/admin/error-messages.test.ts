@@ -32,6 +32,21 @@ describe("mapAdminRpcError", () => {
     expect(mapAdminRpcError("bhw must belong to a barangay")).toBe("bhwLevelError");
   });
 
+  // RFT C1 (docs/role-feature-toggles-plan.md §4.5): content hide/show/
+  // archive/restore errors, raised by rpc_content_set_visibility and the
+  // archived-row guard added to the existing edit/set-status RPCs.
+  it("maps content visibility errors", () => {
+    expect(mapAdminRpcError("content archived")).toBe("contentArchivedError");
+    expect(mapAdminRpcError("content not found")).toBe("contentNotFoundError");
+    expect(mapAdminRpcError("invalid content type")).toBe("invalidContentTypeError");
+    expect(mapAdminRpcError("invalid action")).toBe("invalidActionError");
+    expect(mapAdminRpcError("already hidden")).toBe("alreadyHiddenError");
+    expect(mapAdminRpcError("not hidden")).toBe("notHiddenError");
+    expect(mapAdminRpcError("already archived")).toBe("alreadyArchivedError");
+    expect(mapAdminRpcError("not archived")).toBe("notArchivedError");
+    expect(mapAdminRpcError("use archive action")).toBe("useArchiveActionError");
+  });
+
   it("falls back to a generic error for unknown or missing messages", () => {
     expect(mapAdminRpcError("something unexpected")).toBe("genericError");
     expect(mapAdminRpcError(undefined)).toBe("genericError");
