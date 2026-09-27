@@ -2,8 +2,10 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useId } from "react";
+import { useId, useState } from "react";
 import { LanguageToggle } from "@/components/language-toggle";
+import { startPreview } from "@/app/actions/preview";
+import { PREVIEWABLE_ROLES } from "@/lib/auth/roles";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { useSignOut } from "@/lib/nav/use-sign-out";
 import { useDisclosure } from "./use-disclosure";
@@ -22,9 +24,26 @@ export function UserMenu({ account }: Props) {
   const t = useTranslations("common");
   const tNav = useTranslations("authHome");
   const tFooter = useTranslations("footer");
+  const tPreview = useTranslations("preview");
   const { open, setOpen, containerRef, triggerRef } = useDisclosure<HTMLDivElement, HTMLButtonElement>();
   const { signOut, pending } = useSignOut();
+  const [previewPending, setPreviewPending] = useState(false);
   const panelId = useId();
+
+  // RFT B1 (docs/role-feature-toggles-plan.md §4.4): only an admin who
+  // isn't already previewing sees "View as" here — while previewing,
+  // `account.role` is the preview role, so this is naturally hidden, and
+  // the preview bar's own "Switch" control takes over.
+  async function startViewAs(role: (typeof PREVIEWABLE_ROLES)[number]) {
+    setOpen(false);
+    setPreviewPending(true);
+    try {
+      const result = await startPreview(role);
+      if (result.ok) window.location.assign("/home");
+    } finally {
+      setPreviewPending(false);
+    }
+  }
 
   const accessibleName = t("signedInAs", { username: account.username, role: t(`role.${account.role}`) });
 
@@ -61,6 +80,26 @@ export function UserMenu({ account }: Props) {
             </p>
             <p className="text-xs text-ink/70">{t(`role.${account.role}`)}</p>
           </div>
+          {account.role === "admin" ? (
+            <div className="border-b border-ink/10 px-4 py-2">
+              <p className="mb-1 text-xs font-medium uppercase tracking-wide text-ink/50">
+                {tPreview("viewAsLabel")}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {PREVIEWABLE_ROLES.map((role) => (
+                  <button
+                    key={role}
+                    type="button"
+                    disabled={previewPending}
+                    onClick={() => startViewAs(role)}
+                    className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5 disabled:opacity-60"
+                  >
+                    {t(`role.${role}`)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : null}
           <Link
             href="/settings"
             onClick={() => setOpen(false)}

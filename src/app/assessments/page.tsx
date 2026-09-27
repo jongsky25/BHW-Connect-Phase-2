@@ -1,8 +1,9 @@
 import { redirect } from "next/navigation";
 import { AssessmentsConsole } from "@/components/elearning/assessments-console";
 import type { Assessment } from "@/lib/elearning/types";
+import { getViewer } from "@/lib/auth/viewer";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const ASSESSMENT_COLUMNS =
   "id, course_id, bhw_user_id, org_unit_id, status, assessor_user_id, notes, created_at, decided_at, courses(title_fil, title_en), users:bhw_user_id(full_name, username)";
@@ -15,14 +16,11 @@ export default async function AssessmentsPage() {
     redirect("/home");
   }
 
-  const {
-    data: { user },
-  } = await getRequestAuthUser();
-  if (!user) {
+  const viewer = await getViewer();
+  if (!viewer.appUser) {
     redirect("/login");
   }
-  const appUser = await getRequestAppUser(user.id);
-  if (!appUser || appUser.role !== "assessor") {
+  if (viewer.role !== "assessor") {
     redirect("/home");
   }
 
@@ -37,7 +35,7 @@ export default async function AssessmentsPage() {
       .from("assessments")
       .select(ASSESSMENT_COLUMNS)
       .eq("status", "assigned")
-      .eq("assessor_user_id", appUser.id)
+      .eq("assessor_user_id", viewer.appUser.id)
       .order("created_at")
       .returns<Assessment[]>(),
   ]);

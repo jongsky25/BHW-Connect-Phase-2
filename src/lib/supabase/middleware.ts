@@ -1,7 +1,9 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { isPreviewableRole, type AppRole } from "../auth/roles";
 import { getAppUser } from "./app-user";
 import { fetchFlagRows, resolveFlags } from "../flags/get-flags";
+import { PREVIEW_COOKIE } from "../preview/cookies";
 import { getSupabaseAnonKey, getSupabaseUrl } from "./env";
 
 // A BHW's working day session: idle 8h with no requests signs them out,
@@ -21,10 +23,10 @@ function isPublicPath(pathname: string) {
   return PUBLIC_PATHS.has(pathname) || pathname.startsWith("/certificates/");
 }
 
-function redirectTo(request: NextRequest, path: string, response: NextResponse) {
+function redirectTo(request: NextRequest, path: string, response: NextResponse, search = "") {
   const url = request.nextUrl.clone();
   url.pathname = path;
-  url.search = "";
+  url.search = search;
   const redirect = NextResponse.redirect(url);
   for (const cookie of response.cookies.getAll()) {
     redirect.cookies.set(cookie);
@@ -154,13 +156,34 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
+  // RFT B1 (docs/role-feature-toggles-plan.md §4.4): only an admin's own
+  // preview cookie is ever honoured — anyone else's is a leftover from a
+  // role change or a forged cookie, and is deleted rather than trusted.
+  const previewCookieValue = request.cookies.get(PREVIEW_COOKIE)?.value;
+  let effectiveRole: AppRole = appUser.role;
+  let isPreview = false;
+  if (previewCookieValue) {
+    if (appUser.role === "admin" && isPreviewableRole(previewCookieValue)) {
+      effectiveRole = previewCookieValue;
+      isPreview = true;
+    } else {
+      response.cookies.delete(PREVIEW_COOKIE);
+    }
+  }
+
+  // Previewing hides the admin console from itself, so "what I see" stays
+  // honest: the admin must exit preview to manage anything.
+  if (isPreview && pathname.startsWith("/admin")) {
+    return redirectTo(request, "/home", response, "?preview=1");
+  }
+
   if (!flagRowsPromise) {
     // API routes still read x-app-language (via next-intl) for localized
     // exports/PDFs, so keep forwarding the profile headers.
-    return withAppUserHeaders(response, request, appUser, false, false, 0);
+    return withAppUserHeaders(response, request, appUser, effectiveRole, isPreview, false, false, 0);
   }
 
-  const flags = resolveFlags(await flagRowsPromise, appUser.role);
+  const flags = resolveFlags(await flagRowsPromise, effectiveRole);
 
   let notifUnreadCount = 0;
   if (flags.notifications) {
@@ -172,7 +195,16 @@ export async function updateSession(request: NextRequest) {
     notifUnreadCount = count ?? 0;
   }
 
-  return withAppUserHeaders(response, request, appUser, flags.offline_pwa, flags.notifications, notifUnreadCount);
+  return withAppUserHeaders(
+    response,
+    request,
+    appUser,
+    effectiveRole,
+    isPreview,
+    flags.offline_pwa,
+    flags.notifications,
+    notifUnreadCount,
+  );
 }
 
 // The root layout and i18n config need the signed-in user's language/a11y
@@ -187,6 +219,8 @@ function withAppUserHeaders(
   response: NextResponse,
   request: NextRequest,
   appUser: NonNullable<Awaited<ReturnType<typeof getAppUser>>>,
+  effectiveRole: AppRole,
+  isPreview: boolean,
   offlinePwaEnabled: boolean,
   notificationsEnabled: boolean,
   notifUnreadCount: number,
@@ -203,6 +237,11 @@ function withAppUserHeaders(
   forwardedHeaders.set("x-app-signed-in", "1");
   forwardedHeaders.set("x-app-username", appUser.username);
   forwardedHeaders.set("x-app-role", appUser.role);
+  // RFT B1 (docs/role-feature-toggles-plan.md §4.4): the role every page and
+  // layout should gate and resolve flags on (src/lib/auth/viewer.ts) — the
+  // admin's own role, unless a validated `bhw_view_as` preview is active.
+  forwardedHeaders.set("x-app-effective-role", effectiveRole);
+  forwardedHeaders.set("x-app-preview", isPreview ? "1" : "0");
   // Lets the root layout tell whether the signed-in user is one of the
   // super admin's test personas (the persona bar) without another lookup.
   forwardedHeaders.set("x-app-user-id", appUser.id);

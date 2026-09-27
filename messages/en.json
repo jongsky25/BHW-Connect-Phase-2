@@ -1222,6 +1222,15 @@
     "genericError": "Something went wrong. Please try again.",
     "placementLevelError": "An assessor needs a region, province or city/municipality; a BHW needs a barangay or city/municipality."
   },
+  "preview": {
+    "viewAsLabel": "View as",
+    "banner": "Previewing as {role} — this is what that user type sees.",
+    "switchAction": "Switch",
+    "switching": "Switching…",
+    "exitAction": "Exit preview",
+    "notAuthorizedError": "Only an admin can preview another user type.",
+    "genericError": "Something went wrong. Please try again."
+  },
   "orgPicker": {
     "within": "Within {name}",
     "allOf": "All of {name}",

@@ -16,3 +16,7 @@ export function isAppRole(value: unknown): value is AppRole {
 export const PREVIEWABLE_ROLES = ["bhw", "assessor", "designer"] as const;
 
 export type PreviewableRole = (typeof PREVIEWABLE_ROLES)[number];
+
+export function isPreviewableRole(value: unknown): value is PreviewableRole {
+  return typeof value === "string" && (PREVIEWABLE_ROLES as readonly string[]).includes(value);
+}

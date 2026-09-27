@@ -15,8 +15,9 @@ import {ProgressBar} from '@/components/progress/progress-bar';
 import {LessonStatus,StatusChip} from '@/components/progress/status-chip';
 import {loadManualProgress} from '@/lib/progress/load-manual-progress';
 import {loadChapterTestItems,loadLessonGuide,loadSubchapterGuide} from '@/lib/elearning/load-facilitator-guide';
+import {getViewer} from '@/lib/auth/viewer';
 import {createClient} from '@/lib/supabase/server';
-import {getRequestAppUser,getRequestAuthUser,getRequestFeatureFlags} from '@/lib/supabase/request';
+import {getRequestFeatureFlags} from '@/lib/supabase/request';
 import type {CourseLesson,CourseLessonRevision,CourseLessonProgress,CourseLessonResume,CourseModule,TrainingProgramChapter} from '@/lib/elearning/types';
 import communication from '../../../../../content/training/day1-basic-competencies/modules/06-komunikasyon/module.json';
 import problems from '../../../../../content/training/day1-basic-competencies/modules/07-problema/module.json';
@@ -32,15 +33,15 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
   if(path.length>3)notFound();
   const db=await createClient();
   // Independent reads run together; checks keep their original order.
-  const [flags,{data:{user}}]=await Promise.all([getRequestFeatureFlags(),getRequestAuthUser()]);
+  const [flags,viewer]=await Promise.all([getRequestFeatureFlags(),getViewer()]);
   if(!flags.elearning)redirect('/home');
-  if(!user)redirect('/login');
-  const actor=await getRequestAppUser(user.id);
+  const actor=viewer.appUser;
   if(!actor || actor.status!=='active')redirect('/login');
-  const readOnly=actor.role!=='bhw';
+  const role=viewer.role;
+  const readOnly=role!=='bhw';
   // Facilitator guide: private notes, competency and the area's BHWs. RLS
   // limits every guide read to these two roles; designers keep the preview.
-  const facilitator=actor.role==='assessor'||actor.role==='admin';
+  const facilitator=role==='assessor'||role==='admin';
   // Personal progress is for BHWs on the manual, chapter and subchapter pages;
   // admins get a preview. Started now so it overlaps the reads below. A
   // failure only hides the progress view — the manual itself still renders.

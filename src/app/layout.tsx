@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { cookies, headers } from "next/headers";
-import { isAppRole } from "@/lib/auth/roles";
+import { isAppRole, isPreviewableRole } from "@/lib/auth/roles";
 import { ServiceWorkerRegister } from "@/components/pwa/service-worker-register";
+import { PreviewBar } from "@/components/preview/preview-bar";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { PersonaBar } from "@/components/super-admin/persona-bar";
@@ -62,6 +63,7 @@ export default async function RootLayout({
   const signedIn = await getRequestSignedIn();
   const account = signedIn ? await getRequestAccount() : null;
   const persona = signedIn ? await getRequestPersona() : null;
+  const preview = signedIn ? await getRequestPreview() : null;
   const flags = await getRequestFeatureFlags();
   const t = await getTranslations("common");
 
@@ -88,6 +90,7 @@ export default async function RootLayout({
             initialA11y={a11y}
           />
           {persona ? <PersonaBar currentUserId={persona.userId} snapshot={persona.snapshot} /> : null}
+          {preview ? <PreviewBar role={preview.role} /> : null}
           <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">
             {children}
           </main>
@@ -141,14 +144,26 @@ async function getRequestSignedIn() {
   return h.get("x-app-signed-in") === "1";
 }
 
+// RFT B1 (docs/role-feature-toggles-plan.md §4.4): the header, its nav and
+// the user menu gate on the effective role — the preview role while an
+// admin is previewing, otherwise the signed-in user's own role — so "View
+// as BHW" genuinely shows the BHW's nav and features, not the admin's own.
 async function getRequestAccount(): Promise<{ username: string; role: AppUser["role"] } | null> {
   const h = await headers();
   const username = h.get("x-app-username");
-  const role = h.get("x-app-role");
+  const role = h.get("x-app-effective-role") ?? h.get("x-app-role");
   if (!username || !isAppRole(role)) {
     return null;
   }
   return { username, role };
+}
+
+async function getRequestPreview() {
+  const h = await headers();
+  if (h.get("x-app-preview") !== "1") return null;
+  const role = h.get("x-app-effective-role");
+  if (!isPreviewableRole(role)) return null;
+  return { role };
 }
 
 // The super admin's persona bar: only while the signed-in user is one of the

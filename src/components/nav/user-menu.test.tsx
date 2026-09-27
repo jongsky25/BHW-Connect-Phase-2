@@ -1,4 +1,4 @@
-import { cleanup, render, screen } from "@testing-library/react";
+import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { NextIntlClientProvider } from "next-intl";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
@@ -9,21 +9,28 @@ import { UserMenu } from "./user-menu";
 vi.mock("@/components/language-toggle", () => ({ LanguageToggle: () => <span>Language toggle</span> }));
 
 const signOut = vi.fn();
-const state = vi.hoisted(() => ({ pending: false }));
+const state = vi.hoisted(() => ({ pending: false, startPreview: vi.fn(), assign: vi.fn() }));
 vi.mock("@/lib/nav/use-sign-out", () => ({
   useSignOut: () => ({ signOut: signOut, pending: state.pending }),
 }));
+vi.mock("@/app/actions/preview", () => ({ startPreview: state.startPreview }));
 
 beforeEach(() => {
   signOut.mockReset();
   state.pending = false;
+  state.startPreview.mockReset().mockResolvedValue({ ok: true });
+  state.assign.mockReset();
+  Object.defineProperty(window, "location", {
+    configurable: true,
+    value: { ...window.location, assign: state.assign },
+  });
 });
 afterEach(cleanup);
 
-function show(locale: "en" | "fil" = "en") {
+function show(locale: "en" | "fil" = "en", role: "bhw" | "admin" = "bhw") {
   return render(
     <NextIntlClientProvider locale={locale} messages={locale === "en" ? en : fil}>
-      <UserMenu account={{ username: "rosa.bhw", role: "bhw" }} />
+      <UserMenu account={{ username: role === "admin" ? "rcventura" : "rosa.bhw", role }} />
     </NextIntlClientProvider>,
   );
 }
@@ -99,5 +106,33 @@ describe("UserMenu", () => {
   it("uses the Filipino sign-in label as the accessible name", () => {
     show("fil");
     expect(screen.getByRole("button", { name: "Naka-login bilang rosa.bhw, tungkulin: BHW" })).toBeInTheDocument();
+  });
+
+  it("never shows View as for a non-admin account", async () => {
+    const user = userEvent.setup();
+    show("en", "bhw");
+    await user.click(screen.getByRole("button", { name: "Signed in as rosa.bhw, role: BHW" }));
+    expect(screen.queryByText("View as")).not.toBeInTheDocument();
+  });
+
+  it("shows a View as control listing BHW, Facilitator/Assessor and Designer for an admin account", async () => {
+    const user = userEvent.setup();
+    show("en", "admin");
+    await user.click(screen.getByRole("button", { name: "Signed in as rcventura, role: Admin" }));
+
+    expect(screen.getByText("View as")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "BHW" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Facilitator / Assessor" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Designer" })).toBeInTheDocument();
+  });
+
+  it("starts a preview and navigates to /home on success", async () => {
+    const user = userEvent.setup();
+    show("en", "admin");
+    await user.click(screen.getByRole("button", { name: "Signed in as rcventura, role: Admin" }));
+    await user.click(screen.getByRole("button", { name: "BHW" }));
+
+    expect(state.startPreview).toHaveBeenCalledWith("bhw");
+    await waitFor(() => expect(state.assign).toHaveBeenCalledWith("/home"));
   });
 });

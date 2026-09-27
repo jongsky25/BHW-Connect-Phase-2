@@ -6,6 +6,9 @@ import activityCards from '../../../content/training/day1-basic-competencies/mod
 
 const state=vi.hoisted(()=>({failing:'',role:'bhw',status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
+// getViewer() (RFT B1) reads the preview headers; no preview is active in
+// these fixtures, so every lookup misses and the real appUser role wins.
+vi.mock('next/headers',()=>({headers:async()=>({get:()=>null})}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
 vi.mock('@/lib/flags/get-flags',()=>({
   getFeatureFlags:async()=>({elearning:true,course_sessions:true}),

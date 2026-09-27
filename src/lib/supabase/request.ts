@@ -1,4 +1,6 @@
+import { headers } from "next/headers";
 import { cache } from "react";
+import { isAppRole } from "../auth/roles";
 import { resolveFlags } from "../flags/get-flags";
 import { getAppUser } from "./app-user";
 import { createClient } from "./server";
@@ -35,7 +37,10 @@ const getRequestFlagRows = cache(async () => {
 // Role-effective flags for the signed-in user (docs/role-feature-toggles-plan.md
 // §5 A2): a flag disabled for their role reads false even while its master
 // switch is on. Falls back to the master switches when signed out, since
-// there's no role to resolve against.
+// there's no role to resolve against. RFT B1 (§4.4): resolves against the
+// *effective* role, so an admin previewing as BHW sees the same flags a BHW
+// would, not their own — the middleware-forwarded `x-app-effective-role`
+// header, same source src/lib/auth/viewer.ts reads.
 export const getRequestFeatureFlags = cache(async () => {
   const rows = await getRequestFlagRows();
   const {
@@ -43,7 +48,12 @@ export const getRequestFeatureFlags = cache(async () => {
   } = await getRequestAuthUser();
   if (!user) return resolveFlags(rows);
   const appUser = await getRequestAppUser(user.id);
-  return resolveFlags(rows, appUser?.role);
+  if (!appUser) return resolveFlags(rows);
+
+  const h = await headers();
+  const effectiveRoleHeader = h.get("x-app-effective-role");
+  const role = isAppRole(effectiveRoleHeader) ? effectiveRoleHeader : appUser.role;
+  return resolveFlags(rows, role);
 });
 
 // The master "Available" switches, ignoring every per-type disabled_roles

@@ -12,8 +12,9 @@ import type {
   CourseSessionDelivery,
   CourseSessionEnrollment,
 } from "@/lib/elearning/types";
+import { getViewer } from "@/lib/auth/viewer";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const SESSION_COLUMNS =
   "id, course_id, org_unit_id, facilitator_user_id, scheduled_at, location_note, lesson_density, status, created_at, courses(title_fil, title_en)";
@@ -31,18 +32,15 @@ export default async function TrainingSessionDetailPage({
     redirect("/home");
   }
 
-  const {
-    data: { user },
-  } = await getRequestAuthUser();
-  if (!user) {
+  const viewer = await getViewer();
+  if (!viewer.appUser) {
     redirect("/login");
   }
-  const appUser = await getRequestAppUser(user.id);
   // course_sessions_facilitator_own RLS already restricts the row below to
   // sessions this facilitator scheduled — a bhw or an assessor viewing
   // someone else's session gets nothing back here, same refusal shape
   // notFound() already gives a missing id.
-  if (!appUser || appUser.role !== "assessor") {
+  if (viewer.role !== "assessor") {
     redirect("/home");
   }
 
