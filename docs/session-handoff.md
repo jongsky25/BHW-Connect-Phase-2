@@ -340,9 +340,37 @@ as `e2e-test-users-purge.yml`. The **45 already-accumulated junk courses
 were purged for real** in this session (`p_min_age_hours := 0`, since they
 were known-safe test-only rows and the request was to clean up now, not
 just add a mechanism) — `courses` holds exactly the two real rows as of this
-writing. **Still owed:** fixing the specs themselves so they stop leaking
-(none currently clean up their course), and flipping the new workflow's
-`dry_run` off once a human has reviewed a couple of scheduled runs.
+writing.
+
+**Update, same session, ~1h later: the purge alone wasn't enough — the
+leak is continuous, not historical.** After merging the above, `/courses`
+was still visibly repopulating with junk (screenshot from the live app:
+a fresh page of `e2e.training.*`/`e2e.slide.*`/etc. rows). Checked
+`courses` again: 38 more had appeared in the ~50 minutes since the first
+purge. This is a genuinely busy shared pilot — `list_workflow_runs` showed
+488 CI runs against this repo that day alone, several other sessions'
+PRs in flight concurrently, and two of them (`#148` "Unpublish KB entries
+created by e2e tests after each run", `#151` "Purge leftover e2e forum
+categories from the pilot database") independently hit and fixed the
+exact same *shape* of bug for other tables that same day. A weekly
+dry-run-by-default workflow was never going to keep up with that rate,
+and was never meant to — it was flagged as "still owed: fixing the specs
+themselves" for a reason. Fixed properly this time: `playwright.config.ts`
+now sets `globalTeardown: "./e2e/global-teardown.ts"`, which signs in as
+`admin.stable` and calls `rpc_e2e_purge_test_courses(false, 0)` once after
+the whole suite finishes. `p_min_age_hours: 0` is safe specifically here
+(not as the scheduled workflow's default) because `ci.yml`'s `e2e-wait`
+job serializes E2E repo-wide via a concurrency group
+(`e2e-shared-supabase-project`) — only one run's specs ever touch the
+pilot at a time, so by the time a run's teardown fires, every course *that
+run* created is provably finished with. Purged the 38 accumulated in the
+meantime by hand; going forward this should mean `courses` never
+accumulates junk beyond a single in-flight CI run. The weekly workflow
+stays as a safety net for whatever still slips through (a run that crashes
+hard enough to skip teardown, a manual `workflow_dispatch` E2E run, etc.).
+**Still owed:** flipping that workflow's `dry_run` off once a human has
+reviewed a couple of scheduled runs (lower stakes now that it's a
+safety net, not the only mechanism).
 
 **INC-27 — audio narration** is code complete (migration +
 `course_module_audio` RLS verified against a real local Postgres 16 replay;
