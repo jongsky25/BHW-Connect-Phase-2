@@ -36,10 +36,10 @@ export default defineConfig({
   // timing out mid-journey rather than on any specific assertion. This is
   // budget for work those tests genuinely do — no assertion is relaxed.
   timeout: 60_000,
-  reporter: "line",
-  // Cleans up the courses several specs publish and never delete -- see
-  // e2e/global-teardown.ts.
+  // Purges the e2e-marked content and throwaway users specs leave on the
+  // shared pilot project -- see e2e/global-teardown.ts.
   globalTeardown: "./e2e/global-teardown.ts",
+  reporter: "line",
   use: {
     baseURL: "http://localhost:3000",
     trace: "on-first-retry",

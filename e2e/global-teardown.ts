@@ -1,59 +1,50 @@
-// Every course-creating spec (elearning.spec.ts's first test,
-// slide-mode.spec.ts, slide-mode-a11y.spec.ts, lesson-narration.spec.ts's
-// narrated/scene fixtures, training-sessions.spec.ts) publishes a course via
-// rpc_course_create and never deletes it -- the BHW/assessor activity each
-// one drives (quiz attempts, assessments, certificates) trips
-// rpc_course_delete's own "course has learner progress"/"recorded test
-// attempts" guard, so a plain per-spec cleanup call isn't an option.
-// rpc_e2e_purge_test_courses (supabase/migrations/
-// 20261002000400_e2e_test_course_purge.sql) is a full cascade-safe delete
-// keyed on the `e2e.<spec-tag>.<epoch-ms>.<random>` marker every one of
-// those specs embeds in the course title. e2e-test-courses-purge.yml's
-// weekly dry-run is a safety net for whatever slips through; this global
-// teardown is the actual fix at the source -- it runs once after the whole
-// suite finishes, and specs run serially (playwright.config.ts: `workers: 1`,
-// plus `.github/workflows/ci.yml`'s concurrency group so only one E2E job
-// ever runs against the shared pilot project at a time), so every course
-// this run created is provably done by the time this fires. `p_min_age_hours:
-// 0` is therefore safe here specifically -- it is NOT safe as the default
-// for the scheduled workflow, which has no such guarantee about what else
-// might be mid-run.
-async function globalTeardown() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  const adminPassword = process.env.E2E_STABLE_ADMIN_PASSWORD;
-  if (!supabaseUrl || !anonKey || !adminPassword) {
-    console.warn("global-teardown: NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY / " +
-      "E2E_STABLE_ADMIN_PASSWORD not set, skipping e2e course purge");
-    return;
-  }
+import { request } from "@playwright/test";
+import { STABLE_ADMIN, getAccessToken } from "./fixtures/auth";
 
-  const tokenResponse = await fetch(`${supabaseUrl}/auth/v1/token?grant_type=password`, {
-    method: "POST",
-    headers: { apikey: anonKey, "Content-Type": "application/json" },
-    body: JSON.stringify({ email: "admin.stable@bhw.local", password: adminPassword }),
-  });
-  const tokenBody = (await tokenResponse.json()) as { access_token?: string; error?: string };
-  if (!tokenBody.access_token) {
-    console.warn("global-teardown: failed to sign in as admin.stable, skipping e2e course purge:", tokenBody);
-    return;
-  }
+// Specs publish real announcements, surveys, flip charts, forum threads and
+// courses on the shared pilot project and provision throwaway `e2e.%` users,
+// and a failed or retried test skips its own cleanup — so all of it used to
+// stay visible to real users. After the whole suite:
+//  1. rpc_e2e_purge_test_content deletes everything carrying an `e2e.`
+//     marker, courses included (it calls rpc_e2e_purge_test_courses, which
+//     never touches the BHW Reference Manual's courses), plus the
+//     notifications it fanned out
+//     (supabase/migrations/20261004000000_e2e_purge_test_content.sql).
+//  2. rpc_e2e_purge_test_kb deletes the KB entries and chat-guide gap-queue
+//     rows the Chat Guide / dashboard / KB specs create, matched by
+//     public.e2e_marker_pattern() -- which also knows the single-token
+//     `zzz`/`fly`/`dash`/... markers those specs need
+//     (supabase/migrations/20261004000200_e2e_purge_test_kb.sql).
+//  3. rpc_e2e_purge_test_users deletes the throwaway users and what they
+//     authored (supabase/migrations/20261004000100_e2e_purge_test_users_min_age.sql).
+//     It runs last so the courses and sessions they touched are gone first.
+//
+// p_min_age_hours => 0 is only safe because CI runs one E2E job at a time
+// against the pilot (ci.yml's e2e-wait), so this can't delete another run's
+// in-flight fixtures. A local run could, so it only purges when asked to
+// (E2E_PURGE=1). A failed purge never fails the suite; the next run retries.
+const PURGES = ["rpc_e2e_purge_test_content", "rpc_e2e_purge_test_kb", "rpc_e2e_purge_test_users"];
 
-  const purgeResponse = await fetch(`${supabaseUrl}/rest/v1/rpc/rpc_e2e_purge_test_courses`, {
-    method: "POST",
-    headers: {
-      apikey: anonKey,
-      Authorization: `Bearer ${tokenBody.access_token}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ p_dry_run: false, p_min_age_hours: 0 }),
-  });
-  const purgeBody = await purgeResponse.json().catch(() => null);
-  if (!purgeResponse.ok) {
-    console.warn("global-teardown: rpc_e2e_purge_test_courses failed:", purgeResponse.status, purgeBody);
-    return;
+export default async function globalTeardown() {
+  if (!process.env.CI && process.env.E2E_PURGE !== "1") return;
+
+  const context = await request.newContext();
+  try {
+    const token = await getAccessToken(context, STABLE_ADMIN.username, STABLE_ADMIN.password);
+    for (const rpc of PURGES) {
+      const response = await context.post(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/rpc/${rpc}`, {
+        headers: {
+          apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "",
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        data: { p_dry_run: false, p_min_age_hours: 0 },
+      });
+      console.log(`global-teardown: ${rpc} (${response.status()}): ${await response.text()}`);
+    }
+  } catch (error) {
+    console.warn("global-teardown: e2e purge failed:", error);
+  } finally {
+    await context.dispose();
   }
-  console.log("global-teardown: purged e2e test courses:", purgeBody);
 }
-
-export default globalTeardown;
