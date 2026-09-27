@@ -5,6 +5,7 @@ import {
   createThrowawayBhw,
   getAccessToken,
   restGet,
+  unpublishKbEntry,
 } from "./fixtures/auth";
 
 function supabaseUrl(): string {
@@ -68,10 +69,9 @@ async function gapDraftCallCount(
 // This spec runs against the pilot project, the one database for this phase
 // (docs/deploy-runbook.md, "One database"), whose KB carries real published
 // content. The entry it publishes is AI-written and unreviewed, so it must not
-// stay visible to BHWs: afterEach sets it back to draft — the same kill switch
-// `npm run kb:unpublish` uses (rpc_kb_entry_update is a full replace, so every
-// current value is passed back unchanged except status). afterEach gets a fresh
-// request context, so this still runs when the test itself times out.
+// stay visible to BHWs: afterEach sets it back to draft via the same kill
+// switch `npm run kb:unpublish` uses. afterEach gets a fresh request context,
+// so this still runs when the test itself times out.
 let publishedEntryId: string | undefined;
 
 test.afterEach(async ({ request }) => {
@@ -79,33 +79,7 @@ test.afterEach(async ({ request }) => {
   const entryId = publishedEntryId;
   publishedEntryId = undefined;
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
-  const [row] = (await restGet(
-    request,
-    adminToken,
-    `kb_entries?id=eq.${entryId}&select=id,category_id,question_fil,question_en,answer_fil,answer_en,keywords,image_url,owner_user_id,review_due_on`,
-  )) as Array<Record<string, unknown>>;
-  if (!row) return;
-  const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_kb_entry_update`, {
-    headers: {
-      apikey: anonKey(),
-      Authorization: `Bearer ${adminToken}`,
-      "Content-Type": "application/json",
-    },
-    data: {
-      p_id: row.id,
-      p_category_id: row.category_id,
-      p_question_fil: row.question_fil,
-      p_question_en: row.question_en,
-      p_answer_fil: row.answer_fil,
-      p_answer_en: row.answer_en,
-      p_keywords: row.keywords,
-      p_image_url: row.image_url,
-      p_owner_user_id: row.owner_user_id,
-      p_review_due_on: row.review_due_on,
-      p_status: "draft",
-    },
-  });
-  expect(response.ok()).toBe(true);
+  await unpublishKbEntry(request, adminToken, entryId);
 });
 
 test("an AI draft becomes a published KB entry, and the next ask is answered with no AI call", async ({

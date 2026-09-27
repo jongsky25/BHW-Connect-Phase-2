@@ -1,5 +1,20 @@
 import { expect, test } from "@playwright/test";
-import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet } from "./fixtures/auth";
+import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet, unpublishKbEntry } from "./fixtures/auth";
+
+// This spec publishes a real KB entry on the shared live pilot project
+// (docs/deploy-runbook.md, "One database"), so it must not stay visible to
+// BHWs after the test — afterEach sets it back to draft. A hook rather than
+// inline try/finally: Playwright tears down a timed-out test before a
+// finally block would run, but the hook still fires.
+let publishedEntryId: string | undefined;
+
+test.afterEach(async ({ request }) => {
+  if (!publishedEntryId) return;
+  const entryId = publishedEntryId;
+  publishedEntryId = undefined;
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  await unpublishKbEntry(request, adminToken, entryId);
+});
 
 // INC-4 ships the matcher as a server route with no chat UI yet (that's
 // INC-5), so this drives /api/chat directly via page.request — it shares
@@ -45,6 +60,7 @@ test("Chat Guide API answers a published entry, dedupes unmatched questions, and
     },
   );
   const [{ entry_id: entryId }] = (await createResponse.json()) as Array<{ entry_id: string }>;
+  publishedEntryId = entryId;
 
   await page.goto("/login");
   await page.getByLabel("Username").fill(STABLE_BHW.username);

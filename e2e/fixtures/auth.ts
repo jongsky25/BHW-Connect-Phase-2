@@ -95,6 +95,45 @@ export async function restGet(
   return (await response.json()) as unknown[];
 }
 
+// kb_entries is neither hierarchy-scoped nor behind a feature flag (see
+// scripts/kb-unpublish.mjs), so setting a test-published entry's status
+// back to "draft" is the only way to pull it out of every BHW's view.
+// rpc_kb_entry_update is a full replace, so every current field is read
+// back and resent unchanged except p_status.
+export async function unpublishKbEntry(
+  request: APIRequestContext,
+  adminAccessToken: string,
+  entryId: string,
+): Promise<void> {
+  const [row] = (await restGet(
+    request,
+    adminAccessToken,
+    `kb_entries?id=eq.${entryId}&select=id,category_id,question_fil,question_en,answer_fil,answer_en,keywords,image_url,owner_user_id,review_due_on`,
+  )) as Array<Record<string, unknown>>;
+  if (!row) return;
+  const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_kb_entry_update`, {
+    headers: {
+      apikey: anonKey(),
+      Authorization: `Bearer ${adminAccessToken}`,
+      "Content-Type": "application/json",
+    },
+    data: {
+      p_id: row.id,
+      p_category_id: row.category_id,
+      p_question_fil: row.question_fil,
+      p_question_en: row.question_en,
+      p_answer_fil: row.answer_fil,
+      p_answer_en: row.answer_en,
+      p_keywords: row.keywords,
+      p_image_url: row.image_url,
+      p_owner_user_id: row.owner_user_id,
+      p_review_due_on: row.review_due_on,
+      p_status: "draft",
+    },
+  });
+  expect(response.ok()).toBe(true);
+}
+
 async function createThrowawayUser(
   request: APIRequestContext,
   adminAccessToken: string,

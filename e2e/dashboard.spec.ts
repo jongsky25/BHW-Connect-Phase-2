@@ -7,6 +7,7 @@ import {
   createThrowawayBhw,
   getAccessToken,
   restGet,
+  unpublishKbEntry,
 } from "./fixtures/auth";
 
 function supabaseUrl(): string {
@@ -16,6 +17,21 @@ function supabaseUrl(): string {
 function anonKey(): string {
   return process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 }
+
+// The first test below publishes a real KB entry on the shared live pilot
+// project (docs/deploy-runbook.md, "One database"), so it must not stay
+// visible to BHWs after the test — afterEach sets it back to draft. A hook
+// rather than inline try/finally: Playwright tears down a timed-out test
+// before a finally block would run, but the hook still fires.
+let publishedEntryId: string | undefined;
+
+test.afterEach(async ({ request }) => {
+  if (!publishedEntryId) return;
+  const entryId = publishedEntryId;
+  publishedEntryId = undefined;
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  await unpublishKbEntry(request, adminToken, entryId);
+});
 
 async function logChatSession(
   request: import("@playwright/test").APIRequestContext,
@@ -127,6 +143,7 @@ test("admin triages an unmatched question into a published entry from the dashbo
   const createBody = (await createResponse.json()) as Array<{ entry_id: string }>;
   const entryId = createBody[0]?.entry_id;
   expect(entryId).toBeTruthy();
+  publishedEntryId = entryId;
 
   await expect(page).toHaveURL("/admin/kb/entries", { timeout: 10_000 });
   await expect(page.getByRole("row", { name: new RegExp(marker) }).getByText("Nailathala")).toBeVisible();
