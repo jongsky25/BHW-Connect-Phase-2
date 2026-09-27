@@ -3,10 +3,12 @@
 # for why). Exits once this run may use the shared e2e Supabase project:
 # no other CI run holds it, and no run that started waiting earlier is still
 # waiting (first come, first served). A run holds the project from the moment
-# its e2e-wait succeeds until its e2e job completes (the jobs API omits e2e
-# until e2e-wait finishes, so a missing e2e job counts as holding); a run on
-# an older ci.yml, with no e2e-wait job, holds it while its e2e job is in
-# progress.
+# its e2e-wait succeeds until every one of its e2e jobs completes — the
+# sequential "e2e-shard (n/4)" chunks and the "e2e" summary, or the single
+# "e2e" job on an older ci.yml — so no other run can slip in between two
+# chunks. The jobs API omits them until e2e-wait finishes, so none existing
+# yet counts as holding. A run on a much older ci.yml, with no e2e-wait job,
+# holds it while an e2e job is in progress.
 #
 # A pull_request run whose commit is no longer the PR's head (a newer push
 # superseded it while it queued) is skipped instead: it writes run=false to
@@ -45,12 +47,12 @@ classify() {
   jq -rs --arg started "$1" --argjson me "$me" '
     map(
       (.jobs | map(select(.name == "e2e-wait"))[0]) as $w
-      | (.jobs | map(select(.name == "e2e"))[0]) as $e
+      | (.jobs | map(select(.name == "e2e" or (.name | startswith("e2e-shard"))))) as $e
       | if $w then
           if $w.status == "in_progress" then {waiting: true, key: [$w.started_at, .run]}
-          elif $w.conclusion == "success" and ($e.status // "not created yet") != "completed" then {holding: true}
+          elif $w.conclusion == "success" and (($e | length) == 0 or any($e[]; .status != "completed")) then {holding: true}
           else empty end
-        elif ($e.status // "") == "in_progress" then {holding: true}
+        elif any($e[]; .status == "in_progress") then {holding: true}
         else empty end)
     | if any(.holding) then "busy"
       elif any(.waiting and .key < [$started, $me]) then "queued"

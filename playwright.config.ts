@@ -31,8 +31,9 @@ export default defineConfig({
   // degrades every test fails and each is retried twice — tripling load on
   // the database exactly when it's struggling (27 Sep 2026: 47 failures,
   // 1.5h run, PostgREST then stuck on 503 for hours). Stop the run once
-  // failures are clearly systemic rather than isolated.
-  maxFailures: process.env.CI ? 10 : undefined,
+  // failures are clearly systemic rather than isolated. CI runs the suite
+  // as ~17-test chunks (ci.yml's e2e-shard), so 5 is already a pattern.
+  maxFailures: process.env.CI ? 5 : undefined,
   // The longest specs are whole end-to-end journeys, not single interactions:
   // forum.spec.ts alone signs in three times (admin -> BHW -> sibling BHW ->
   // admin), each a full login + consent + navigation round trip, and

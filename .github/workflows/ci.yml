@@ -67,12 +67,25 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: bash .github/scripts/wait-for-e2e-slot.sh
 
-  e2e:
+  e2e-shard:
     needs: e2e-wait
     # e2e-wait skips a PR run whose commit was superseded by a newer push
     # while it queued: nobody merges that commit, and a full suite on it only
     # adds load to the one shared database.
     if: needs.e2e-wait.outputs.run == 'true'
+    name: e2e-shard (${{ matrix.shard }}/4)
+    # The suite runs as four short chunks, ONE AT A TIME (max-parallel: 1):
+    # parallel shards would multiply load on the one shared database, the
+    # opposite of the point. Small chunks give the database gaps to recover
+    # between them, a failed chunk can be re-run alone instead of replaying
+    # the whole suite, and fail-fast skips the chunks that haven't started
+    # yet once one fails. Those were never started, so cancelling them can't
+    # interrupt a spec mid-flag-toggle (see below).
+    strategy:
+      max-parallel: 1
+      fail-fast: true
+      matrix:
+        shard: [1, 2, 3, 4]
     runs-on: ubuntu-latest
     # Every PR's e2e run shares ONE Supabase project (the pilot), and four specs toggle
     # GLOBAL feature flags (`chat_conversation`, `offline_pwa`, `kb_articles`,
@@ -161,8 +174,8 @@ jobs:
           echo "::error::The shared Supabase database is not serving requests (last HTTP $status). This is an infrastructure problem, not a test failure — check the project's health in the Supabase dashboard before re-running."
           exit 1
 
-      - name: E2E smoke tests
-        run: npm run e2e
+      - name: E2E smoke tests (chunk ${{ matrix.shard }} of 4)
+        run: npm run e2e -- --shard=${{ matrix.shard }}/4
         env:
           CI: true
 
@@ -170,10 +183,28 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-test-results
+          name: playwright-test-results-${{ matrix.shard }}
           path: test-results/
           retention-days: 7
           if-no-files-found: ignore
 
+      # Once per run, not once per chunk.
       - name: Performance budget check (Lighthouse)
+        if: matrix.shard == 4
         run: npx lhci autorun --config=lighthouserc.js
+
+  # A single, stable "e2e" check for branch protection and reviewers, since
+  # the chunks above report as "e2e-shard (n/4)". Passes when every chunk
+  # passed, or when e2e-wait skipped them for a superseded commit.
+  e2e:
+    needs: [e2e-wait, e2e-shard]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Summarize the e2e chunks
+        run: |
+          echo "e2e-wait: ${{ needs.e2e-wait.result }}, chunks: ${{ needs.e2e-shard.result }}"
+          case "${{ needs.e2e-wait.result }}/${{ needs.e2e-shard.result }}" in
+            success/success|success/skipped) exit 0 ;;
+            *) exit 1 ;;
+          esac
