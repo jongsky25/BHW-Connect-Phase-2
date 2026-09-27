@@ -43,7 +43,7 @@ jobs:
         run: npm run test
 
   # Waits, first come first served, until no other run is using the shared
-  # e2e project. See the e2e job for why.
+  # database (the pilot project). See the e2e job for why.
   e2e-wait:
     needs: checks
     runs-on: ubuntu-latest
@@ -56,7 +56,7 @@ jobs:
         with:
           sparse-checkout: .github/scripts
 
-      - name: Wait for the shared e2e project
+      - name: Wait for the shared database
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash .github/scripts/wait-for-e2e-slot.sh
@@ -64,7 +64,7 @@ jobs:
   e2e:
     needs: e2e-wait
     runs-on: ubuntu-latest
-    # Every PR's e2e run shares ONE Supabase project, and four specs toggle
+    # Every PR's e2e run shares ONE Supabase project (the pilot), and four specs toggle
     # GLOBAL feature flags (`chat_conversation`, `offline_pwa`, `kb_articles`,
     # `course_sessions`) — each flips a flag, asserts, and restores it in a
     # `finally`. That is safe within a run only because playwright.config.ts
@@ -88,16 +88,22 @@ jobs:
       group: e2e-shared-supabase-project
       cancel-in-progress: false
     env:
-      # Points at a dedicated Supabase project used only for CI/E2E, never
-      # the pilot project — see docs/deploy-runbook.md. Do NOT reuse the
-      # NEXT_PUBLIC_SUPABASE_URL/ANON_KEY secrets here; those name the pilot
-      # project and back the retention-purge workflow and production.
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.E2E_SUPABASE_URL }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.E2E_SUPABASE_ANON_KEY }}
+      # The pilot project is the ONE database for this phase: the live app,
+      # the content loaders and this E2E run all use it (the separate
+      # `bhw-connect-e2e` project is retired — see docs/deploy-runbook.md's
+      # "One database" section). While the pilot holds only test data, E2E
+      # writing into it is intended; revisit before real BHWs are onboarded.
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
       E2E_STABLE_BHW_PASSWORD: ${{ secrets.E2E_STABLE_BHW_PASSWORD }}
       E2E_STABLE_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
       E2E_OTHER_BARANGAY_BHW_PASSWORD: ${{ secrets.E2E_OTHER_BARANGAY_BHW_PASSWORD }}
       E2E_STABLE_CITY_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_CITY_ADMIN_PASSWORD }}
+      # The pilot has ai_external + ai_gap_draft on, so e2e/ai-gap-draft.spec.ts
+      # runs its real round trip here and needs a provider key; each run
+      # spends a small amount of Gemini quota. GEMINI_MODEL is optional.
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
       SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
       SENTRY_ORG: ${{ secrets.SENTRY_ORG }}

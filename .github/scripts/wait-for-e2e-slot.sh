@@ -52,7 +52,7 @@ while :; do
   if runs=$(other_runs); then
     state=$(classify "$started" <<<"$runs")
     [ "$state" = go ] && exit 0
-    echo "$(date -u +%H:%M:%SZ) shared e2e project $state; checking again in ${poll}s"
+    echo "$(date -u +%H:%M:%SZ) shared database $state; checking again in ${poll}s"
   else
     echo "$(date -u +%H:%M:%SZ) GitHub API call failed; retrying in ${poll}s"
   fi

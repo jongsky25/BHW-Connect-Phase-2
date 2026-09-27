@@ -6,14 +6,12 @@
    typecheck, unit tests, an E2E smoke pass, a production build, and the
    Lighthouse performance-budget check.
 2. If the change includes a `supabase/migrations/*.sql` file, apply it to
-   **both** Supabase projects — the live pilot project and the dedicated
-   `bhw-connect-e2e` CI project (see "CI test project" below) — before or
-   alongside merging, via the Supabase MCP `apply_migration` tool (or
-   `supabase db push` from the CLI if working locally). The app and the
-   schema should never drift on either project: a merged PR whose migration
-   wasn't applied to the pilot project means the deployed code will call
-   RPCs that don't exist yet; not applying it to the CI project means the
-   next PR's E2E run fails on unrelated code.
+   the pilot project (`ltzicxyefizxoqhfuuzc` — the one database; see "One
+   database" below) before or alongside merging, via the Supabase MCP
+   `apply_migration` tool (or `supabase db push` from the CLI if working
+   locally). CI's E2E run uses the same database, so a PR that needs its
+   migration will fail E2E until it's applied — apply it first, then let CI
+   run.
 3. Merge to `main` once CI is green and the migration (if any) is applied.
 4. Vercel's GitHub integration auto-deploys `main` (per INC-0's scaffold —
    see `docs/delivery-plan.md` §3/§7). No separate deploy step in this
@@ -32,32 +30,48 @@ project settings (for the running app) and GitHub Actions repo secrets
 
 | Variable | Vercel | GitHub Actions |
 |---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required for `retention-purge.yml` only (pilot project) |
-| `E2E_SUPABASE_URL` / `E2E_SUPABASE_ANON_KEY` | not needed | required (`ci.yml`'s build + E2E job — the dedicated `bhw-connect-e2e` project, never the pilot project) |
-| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job; accounts live on the `bhw-connect-e2e` project) |
+| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required (pilot project — `ci.yml`'s build + E2E job, `e2e-test-users-purge.yml`, `retention-purge.yml`, `training-load.yml`) |
+| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job; the stable fixture accounts' passwords **on the pilot project**) |
+| ~~`E2E_SUPABASE_URL` / `E2E_SUPABASE_ANON_KEY`~~ | — | no longer read; delete once the switch to one database is confirmed green |
 | `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN` | optional — app runs fine unset | optional (build-time only) |
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
 | `SUPABASE_DB_URL` | not needed | required for `backup.yml` |
 | `SUPABASE_SERVICE_ROLE_KEY` | not needed (never expose to the app) | required for `retention-purge.yml` |
-| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | not needed (unit tests stub the transport; no CI step calls a provider) |
-| `GEMINI_MODEL` | optional — defaults to `gemini-3.6-flash`. **Set this when the provider retires a model**: a shut-down model returns 404 on every call, and this is the switch that fixes it without a deploy. `gemini-2.0-flash` was shut down 2026-06-01 | not needed |
+| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | required for `ci.yml`'s E2E job — the pilot has `ai_external`/`ai_gap_draft` on, so `e2e/ai-gap-draft.spec.ts` makes a real provider call each run (small quota cost) |
+| `GEMINI_MODEL` | optional — defaults to `gemini-3.6-flash`. **Set this when the provider retires a model**: a shut-down model returns 404 on every call, and this is the switch that fixes it without a deploy. `gemini-2.0-flash` was shut down 2026-06-01 | optional (E2E job; same default) |
 
-## CI test project
+## One database
 
-`ci.yml`'s build + E2E + Lighthouse steps run against a dedicated,
-schema-identical Supabase project (`bhw-connect-e2e`, free tier, same org as
-the pilot project) instead of the pilot project — PR runs on every branch
-must never write test data into the database real BHWs and admins depend on.
-It's seeded with the same `org_units` chain and one `kb_categories` row the
-migrations + `e2e/fixtures/auth.ts` expect, plus the four stable fixture
-accounts (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`),
-fully onboarded so tests can log straight in. Throwaway accounts created by
-`e2e/fixtures/auth.ts`'s `createThrowawayBhw` (`e2e.<timestamp>.<random>`)
-accumulate on this project across runs the same way they used to on the
-pilot project; since it's a test-only database this is expected and
-harmless, but it's still worth an occasional purge (same pattern as the
-one-off cleanup this doc's history records for the pilot project) if it
-grows large enough to slow queries down.
+Since 27 Sep 2026 there is **one** Supabase project for everything: the pilot
+project (`ltzicxyefizxoqhfuuzc`, "gibs-21's Project"). The live app on Vercel,
+the content loaders, and `ci.yml`'s build + E2E + Lighthouse steps all point
+at it. The pilot phase holds only test data, so E2E writing into it is
+intended — it stopped being worth keeping a second, schema-identical copy in
+sync for every migration.
+
+What that means in practice:
+
+- **Migrations go to one project.** No more "apply to both".
+- **E2E writes into the live pilot.** The four stable fixture accounts
+  (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`) already
+  exist there. Throwaway `e2e.<timestamp>.<random>` accounts, forum posts,
+  announcements and surveys created by specs land in the pilot's barangays
+  and show up in its lists and dashboards. `e2e-test-users-purge.yml` purges
+  the `e2e.%` accounts (older than 24h only).
+- **Global feature flags flip during a run.** Four specs toggle
+  `chat_conversation`, `offline_pwa`, `kb_articles` and `course_sessions`
+  and restore them in a `finally`, so the live site briefly shows those
+  features switching. This is why E2E still runs one-at-a-time
+  (`e2e-wait` + the concurrency group in `ci.yml`), and why an E2E job must
+  never be cancelled mid-run.
+- **Before real BHWs are onboarded** (the pilot launch gate in
+  `docs/delivery-plan.md`), revisit this: either stand a separate test
+  database back up or cut E2E down to specs that don't write or toggle flags.
+
+The old `bhw-connect-e2e` project (`qeryhxctxslhdkclifom`) is retired: nothing
+in the repo reads it any more. Pause or delete it in the Supabase dashboard
+once CI is green against the pilot. Earlier history notes below still mention
+it; they describe what happened at the time.
 
 ## Migration history notes
 

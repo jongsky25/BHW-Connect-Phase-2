@@ -54,7 +54,7 @@ const SILENT_WAV_DATA_URI =
   "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
 // docs/deploy-runbook.md requires every migration to be applied to the
-// dedicated bhw-connect-e2e project by hand (via the Supabase MCP
+// pilot project (the one database E2E runs against) by hand (via the Supabase MCP
 // apply_migration tool or `supabase db push`) alongside merging — there is
 // no CI step that does this. The same gap this spec's own header comment
 // already discloses (never executed against a live Supabase project) means

@@ -65,6 +65,49 @@ async function gapDraftCallCount(
   return rows[0]?.gap_draft_calls ?? 0;
 }
 
+// This spec runs against the pilot project, the one database for this phase
+// (docs/deploy-runbook.md, "One database"), whose KB carries real published
+// content. The entry it publishes is AI-written and unreviewed, so it must not
+// stay visible to BHWs: afterEach sets it back to draft — the same kill switch
+// `npm run kb:unpublish` uses (rpc_kb_entry_update is a full replace, so every
+// current value is passed back unchanged except status). afterEach gets a fresh
+// request context, so this still runs when the test itself times out.
+let publishedEntryId: string | undefined;
+
+test.afterEach(async ({ request }) => {
+  if (!publishedEntryId) return;
+  const entryId = publishedEntryId;
+  publishedEntryId = undefined;
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const [row] = (await restGet(
+    request,
+    adminToken,
+    `kb_entries?id=eq.${entryId}&select=id,category_id,question_fil,question_en,answer_fil,answer_en,keywords,image_url,owner_user_id,review_due_on`,
+  )) as Array<Record<string, unknown>>;
+  if (!row) return;
+  const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_kb_entry_update`, {
+    headers: {
+      apikey: anonKey(),
+      Authorization: `Bearer ${adminToken}`,
+      "Content-Type": "application/json",
+    },
+    data: {
+      p_id: row.id,
+      p_category_id: row.category_id,
+      p_question_fil: row.question_fil,
+      p_question_en: row.question_en,
+      p_answer_fil: row.answer_fil,
+      p_answer_en: row.answer_en,
+      p_keywords: row.keywords,
+      p_image_url: row.image_url,
+      p_owner_user_id: row.owner_user_id,
+      p_review_due_on: row.review_due_on,
+      p_status: "draft",
+    },
+  });
+  expect(response.ok()).toBe(true);
+});
+
 test("an AI draft becomes a published KB entry, and the next ask is answered with no AI call", async ({
   page,
   request,
@@ -80,11 +123,16 @@ test("an AI draft becomes a published KB entry, and the next ask is answered wit
     "ai_external and ai_gap_draft must both be on, with GEMINI_API_KEY configured on the deployment",
   );
 
-  // Same per-run marker discipline as dashboard.spec.ts: this question becomes
-  // a permanently published entry on a shared project, so a static token would
-  // let earlier runs' entries start matching later runs' "nonsense".
+  // Same per-run marker discipline as dashboard.spec.ts: a static token would
+  // let an earlier run's entry start matching a later run's "nonsense".
+  //
+  // The question itself must be unanswerable. It used to read "ano ang gagawin
+  // kung mataas ang presyon ng dugo", which only worked while the CI project
+  // had no hypertension content; the pilot publishes the HHP-NCD corpus, which
+  // answers it. Nonsense words keep step 1 a genuine gap on any KB; the cleared
+  // text sent to the AI below still gives it a real topic to draft.
   const marker = `fly${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
-  const question = `${marker} ano ang gagawin kung mataas ang presyon ng dugo`;
+  const question = `${marker} blorvik zantequ primsol`;
 
   const bhw = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
 
@@ -144,6 +192,7 @@ test("an AI draft becomes a published KB entry, and the next ask is answered wit
   expect(draftResponse.status()).toBe(200);
   const { entry_id: entryId } = (await draftResponse.json()) as { entry_id: string };
   expect(entryId).toBeTruthy();
+  publishedEntryId = entryId;
 
   await expect(page).toHaveURL(new RegExp(`/admin/kb/entries/${entryId}`), { timeout: 10_000 });
   expect(await gapDraftCallCount(request, adminToken)).toBe(callsBeforeDraft + 1);

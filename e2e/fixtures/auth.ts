@@ -1,17 +1,16 @@
 import type { APIRequestContext, Page } from "@playwright/test";
 import { expect } from "@playwright/test";
 
-// Fixture accounts seeded on the dedicated `bhw-connect-e2e` Supabase
-// project's org chain (Department of Health -> Region IV-A -> Laguna ->
-// Los Baños -> barangay) — never the pilot project; see
-// docs/deploy-runbook.md's "CI test project" section.
+// Fixture accounts on the pilot project's org chain (Department of Health
+// -> Region IV-A -> Laguna -> Los Baños -> barangay) — the one database for
+// this phase; see docs/deploy-runbook.md's "One database" section.
 // bhw.stable / admin.stable are fully onboarded and never mutated by tests,
 // so they're safe to reuse across runs. Tests that need a fresh account
 // (forced password change, lockout) provision a throwaway user per run via
 // rpc_admin_create_user instead of mutating a shared fixture.
 //
 // Passwords are intentionally NOT hardcoded here even though the project
-// they belong to is test-only — set them locally in .env.local (gitignored)
+// they belong to holds only test data — set them locally in .env.local (gitignored)
 // and as CI secrets; see .env.example.
 export const BARANGAY_BATONG_MALAKE_ID = "00000000-0000-0000-0000-000000000005";
 export const BARANGAY_ANOS_ID = "00000000-0000-0000-0000-000000000006";
