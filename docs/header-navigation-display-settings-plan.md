@@ -267,6 +267,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
   - footer credit.
 - **Footer:** add `footer.credit` = "An Equity in Health Section innovation" / "Isang inobasyon ng Equity in Health Section" (confirm the Filipino wording with the product owner) next to the copyright line.
 - **Forced colours:** under `@media (forced-colors: active)`, set the mask background to `CanvasText`, so the logo stays visible in Windows high-contrast mode.
+- **Shipped** (increment 3.4, PR TBD): built as specced above. Two additions beyond the spec: `print-color-adjust: exact` on `.equity-mark`, since the certificate page's "check the print styles" turned up that a plain `background`-painted mask disappears under most browsers' print-time background stripping; and `footer.credit`'s Filipino wording shipped as the plan's own draft (unconfirmed with the product owner — flag for review). Verified the mask technique itself (recolouring correctly per main colourway, in both themes) with a static HTML mockup served over local HTTP, since the sandbox's headless Chromium silently fails to resolve `mask-image` for `file://`-scheme sources specifically (`background-image` from the same path works fine) — not a concern for the real app, which always serves `/brand/equity-mark.png` over HTTP(S).
 - **Tests:** component unit test; axe; visual check in light/dark/each main colour (Playwright screenshot is fine, not a snapshot assertion).
 
 ### 3.5 Colour picker UI and header quick-display popover
@@ -333,7 +334,7 @@ The Equity brand source is `jongsky25/css-is` → `static/css/app.css:12-115,384
 | 3.1 Contrast guard test | ☑ | |
 | 3.2 Main colourways + Equity Blue | ☑ | |
 | 3.3 Accent colourways + presets | ☑ | |
-| 3.4 Equity mark + credit | ☐ | |
+| 3.4 Equity mark + credit | ☑ | |
 | 3.5 Colour picker + quick popover | ☐ | |
 | 4.1 Text `sm` + density | ☐ | |
 | 4.2 Motion, underline, spacing | ☐ | |

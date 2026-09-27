@@ -67,3 +67,31 @@ body {
     animation: none;
   }
 }
+
+/* Equity branding (increment 3.4, docs/header-navigation-display-settings-
+   plan.md §6 3.4): the Equity in Health mark is a single-colour PNG mask
+   rather than an <img>, so it recolours with the active main colour instead
+   of shipping a separately-coloured asset per colourway — the same
+   CSS-mask technique as its jongsky25/css-is source. `background` (not
+   `background-color`) because forced-colors mode below needs to override
+   the *painted* colour, and `mask`/`-webkit-mask` need the vendor-prefixed
+   property for Safari, which doesn't yet ship the unprefixed one. */
+.equity-mark {
+  display: inline-block;
+  aspect-ratio: 2048 / 672;
+  background: var(--color-primary-text);
+  -webkit-mask: url("/brand/equity-mark.png") center / contain no-repeat;
+  mask: url("/brand/equity-mark.png") center / contain no-repeat;
+  /* The mark is painted entirely via `background`, so without this,
+     browsers that drop backgrounds on print by default (checked on the
+     certificate verify page, the one placement someone is likely to print)
+     would print an empty box instead of the logo. */
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+@media (forced-colors: active) {
+  .equity-mark {
+    background: CanvasText;
+  }
+}

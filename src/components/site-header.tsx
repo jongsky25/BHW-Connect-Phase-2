@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { EquityMark } from "@/components/brand/equity-mark";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileDrawer } from "@/components/nav/mobile-drawer";
 import { MoreMenu } from "@/components/nav/more-menu";
@@ -41,8 +42,9 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
           ) : null}
           <Link
             href={signedIn ? "/home" : "/"}
-            className="whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="flex items-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
+            <EquityMark size="sm" decorative />
             {t("appName")}
           </Link>
           {primaryItems.length > 0 ? (
