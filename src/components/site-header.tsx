@@ -7,6 +7,7 @@ import { MoreMenu } from "@/components/nav/more-menu";
 import { NavLink } from "@/components/nav/nav-link";
 import { UserMenu } from "@/components/nav/user-menu";
 import { NotificationBell } from "@/components/notifications/notification-bell";
+import { GlobalSearch } from "@/components/search/global-search";
 import type { FeatureFlags } from "@/lib/flags/types";
 import { getNavItems } from "@/lib/nav/nav-items";
 import type { A11ySettings } from "@/lib/settings/types";
@@ -67,6 +68,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
           ) : null}
         </div>
         <div className="flex flex-wrap items-center gap-3">
+          {signedIn && account ? <GlobalSearch /> : null}
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
           {/* Mobile gets the same controls inline in the drawer's "Display"
               section instead (see MobileDrawer) — a separate popover there
