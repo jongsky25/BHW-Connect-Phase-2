@@ -18,11 +18,18 @@ describe('route lesson viewer',()=>{
       expect(dialog).toHaveAttribute('open');
       expect(within(dialog).getByRole('heading',{name:'first'})).toBeInTheDocument();
       expect(within(dialog).queryByText('Estimated 3–7 minutes for independent study; facilitated practice is separate.')).not.toBeInTheDocument();
+      expect(dialog.querySelector('[data-reader-viewport]')).not.toContainElement(within(dialog).getByRole('navigation',{name:'Lesson position'}));
+      expect(within(dialog).getByRole('button',{name:'Zoom out'})).toBeDisabled();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Zoom in'}));
+      expect(within(dialog).getByText('1.25×')).toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Fit'}));
+      expect(within(dialog).getByText('1×')).toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Landscape'}));
       expect(within(dialog).getByRole('button',{name:'Landscape'})).toHaveAttribute('aria-pressed','true');
       expect(dialog.querySelector('.lesson-reader-surface')).toHaveAttribute('data-orientation','landscape');
       fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
       expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
+      expect(within(dialog).getByText('1×')).toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Read'}));
       fireEvent.click(within(dialog).getByRole('button',{name:'Next'}));
       expect(within(dialog).getByRole('heading',{name:'second'})).toBeInTheDocument();

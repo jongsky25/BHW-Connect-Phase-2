@@ -19,6 +19,7 @@ import {
 import type { LessonNarration } from "@/lib/elearning/reference-narration";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
+import { FittedLessonPage } from "./fitted-lesson-page";
 
 type ResumeValue = Omit<CourseLessonResume, "course_progress_id" | "updated_at">;
 const RESUME_SAVE_DELAY_MS = 3000;
@@ -346,8 +347,7 @@ export function ReferenceLessons(props: Props) {
       setPending(false);
     }
   }
-  const readerContent = lesson && item && (
-    <>
+  const readerArticle = lesson && item && (
       <article
         className="rounded-xl border border-ink/15 p-4 sm:p-6"
         data-layout={"layout" in item ? item.layout : "read"}
@@ -399,6 +399,8 @@ export function ReferenceLessons(props: Props) {
           </ReferenceReadSection>
         )}
       </article>
+  );
+  const readerPager = lesson && item && (
       <nav
         className="flex items-center justify-between gap-2"
         aria-label={ui("Puwesto sa aralin", "Lesson position")}
@@ -423,7 +425,6 @@ export function ReferenceLessons(props: Props) {
           {ui("Susunod", "Next")}
         </button>
       </nav>
-    </>
   );
 
   return (
@@ -561,7 +562,7 @@ export function ReferenceLessons(props: Props) {
                 {ui("Buong screen", "Full screen")}
               </button>
             </div>
-            {!readerOpen && readerContent}
+            {!readerOpen && <>{readerArticle}{readerPager}</>}
             {!props.readOnly && <>
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
@@ -684,11 +685,13 @@ export function ReferenceLessons(props: Props) {
               ? ui("I-rotate ang device nang pahiga para mabasa ang nilalaman.", "Turn your device sideways to read the content.")
               : ui("I-rotate ang device nang patayo para mabasa ang nilalaman.", "Turn your device upright to read the content.")}
           </p>}
-          <div className="min-h-0 flex-1 overflow-auto px-3 py-4 sm:px-6">
-            <div className={`mx-auto flex flex-col gap-4 ${orientation === "portrait" ? "max-w-2xl" : "max-w-6xl"}`}>
-              {readerOpen && readerContent}
-            </div>
-          </div>
+          {readerOpen && lesson && item && <FittedLessonPage
+            key={`${lesson.id}:${mode}:${item.id}:${orientation}`}
+            content={readerArticle}
+            pager={readerPager}
+            maxContentWidth={orientation === "portrait" ? 720 : 1800}
+            en={en}
+          />}
           </div>
         </div>
       </dialog>
