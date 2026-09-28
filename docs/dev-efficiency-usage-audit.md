@@ -309,41 +309,52 @@ What wastes minutes:
 ## 4. Recommendations, prioritised
 
 Effort: S = under an hour, M = half a day, L = a day or more.
+Each item has a **done when** check, in the same style as the delivery plan's
+Definition of Done, so every batch can be shown to have worked.
+
+### Step 0: measure first
+
+| # | Action | Done when | Effort |
+|---|---|---|---|
+| 0 | **Baseline, then reset stats.** Save a snapshot of the top 30 `pg_stat_statements` rows, API requests per hour, edge-log volume by user agent (Vercel vs `Next.js Middleware`/`node`), and the advisor counts. Then run `select extensions.pg_stat_statements_reset();`. The stats have never been reset (they add up from July), so without a reset there is no clean before/after. Repeat the snapshot after each batch below. The snapshot query becomes item 18's recurring check. | A dated baseline is saved in this doc or `docs/`, and the stats reset time is recorded | S |
 
 ### Now: stop the remaining waste (no product change)
 
-| # | Action | Saves | Effort |
+Ordered by impact. The dev database comes first because it removes traffic
+that isn't users at all; the middleware fix only lowers the per-user cost.
+
+| # | Action | Done when | Effort |
 |---|---|---|---|
-| 1 | **Middleware matcher:** exclude media and static extensions and `/training/`; add `immutable` cache headers for `/training/*` (H1) | 4 DB/Auth calls per audio clip; CDN caching of 128 MB of media | S |
-| 2 | **Pick one E2E strategy:** keep #158 (local stack), close #160 and #157's pilot-based CI, never re-run pre-#158 CI runs (push or merge main instead) | Stops the pilot re-run spikes and frees the 2nd project slot | S |
-| 3 | **Repurpose or pause `bhw-connect-e2e`** as the *dev* database for Claude sessions and local `next dev`. Point `.env.local` and session credentials at it (or at `supabase start`). **The pilot is for real BHWs, deploy smoke checks and migrations only** | Removes ~90% of today's non-user pilot traffic | S–M |
-| 4 | **CI `paths-ignore`** for `docs/**`, `**/*.md`, `pitch/**`, `mockups/**`, `prototypes/**`, `content/**/*.md`; add workflow-level `concurrency` with `cancel-in-progress` | ~10 runner-min per docs commit | S |
-| 5 | **Vercel `ignoreCommand`:** skip builds when only docs or non-app paths changed, e.g. `git diff --quiet HEAD^ HEAD -- src public messages supabase package.json next.config.ts middleware.ts` | Preview builds per docs commit | S |
-| 6 | **Retire the two weekly e2e purge workflows** after one applied run | Weekly pilot sign-ins and scans | S |
-| 7 | **Fix the stale docs** listed above, and add a short **CLAUDE.md** with the rules in section 5 | Stops sessions from rebuilding pilot-based CI | S |
+| 1 | **One dev database, enforced in code.** Use `supabase start` wherever Docker is available (local machines, GitHub runners). Use the hosted `bhw-connect-e2e` project only for cloud sandbox sessions that can't run Docker. Point `.env.local`, session credentials and loader defaults at it. **Guards:** `next dev`, `playwright test` and `scripts/*` refuse to start when `NEXT_PUBLIC_SUPABASE_URL` contains the pilot ref `ltzicxyefizxoqhfuuzc`, unless `ALLOW_PILOT=1` is set. `doctor.mjs` warns when `.env.local` points at the pilot. The SessionStart hook checks for a *dev* database instead of pilot loader credentials. Remove `training:load` from the pre-approved commands in `.claude/settings.json`, or scope it to `--project local`. | `Next.js Middleware`/`node` user agents are under 5% of pilot edge logs for a week | S–M |
+| 2 | **One E2E strategy.** Keep #158 (local stack). Close #157. From #160, drop the CI change but keep the `bhw-connect-e2e` project as the sandbox dev database from item 1. Never re-run a CI run from before #158; push or merge `main` instead. | No pilot sign-ins from CI; #157/#160 closed | S |
+| 3 | **Middleware matcher:** exclude `mp3\|mp4\|webm\|vtt\|pdf\|json\|txt\|ico\|woff2?\|map` and `/training/`. Add `Cache-Control: public, max-age=31536000, immutable` for `/training/*` in `next.config.ts` (H1). **Decision to record:** afterwards, lesson media can be downloaded by anyone who has the URL (today, signed-out requests redirect to `/login`). It is public DOH training material already in `public/`, so this should be fine, but it is a deliberate choice, not a side effect. | Media responses have no `Set-Cookie` and are served from the CDN cache (`x-vercel-cache: HIT`); `auth/v1/user` calls per lesson view drop | S |
+| 4 | **CI `paths-ignore`** for `docs/**`, `**/*.md`, `pitch/**`, `mockups/**`, `prototypes/**` and `content/**/*.md`, plus workflow-level `concurrency` with `cancel-in-progress`. **Caveat:** if a CI check is *required* by branch protection, a skipped workflow leaves it pending and the PR can't merge. Either keep the checks non-required, or add a tiny always-green `docs-only` workflow on the ignored paths that reports the same check names. The same applies to `[skip ci]`. | A docs-only PR runs no E2E and can still merge | S |
+| 5 | **Vercel `ignoreCommand`:** skip the build when only docs or non-app paths changed, e.g. `git diff --quiet HEAD^ HEAD -- src public messages supabase package.json package-lock.json next.config.ts middleware.ts`. Do this before any more docs-only pushes; this audit's own PR built a preview for a Markdown file. | A docs-only push shows "Canceled by Ignored Build Step" in Vercel | S |
+| 6 | **Retire the two weekly e2e purge workflows** after one applied run | Both workflow files deleted | S |
+| 7 | **Check the other Vercel projects and preview env vars.** Pause `bhw-connect` (and any other unused projects) if they still auto-deploy; they share the account's Hobby pool. Check in the dashboard which Supabase project **preview** deployments use (the API returned 403). If previews point at the pilot, move them to the dev database. | Only `bhw-connect-phase-2` deploys on push; previews don't use the pilot | S |
+| 8 | **Fix the stale docs** listed in section 3, and add a short **CLAUDE.md** with the rules in section 5 | No doc says E2E runs on the pilot | S |
 
 ### Next: per-user cost (keeps the pilot inside Nano IO as BHW numbers grow)
 
-| # | Action | Saves | Effort |
+| # | Action | Done when | Effort |
 |---|---|---|---|
-| 8 | `getClaims()` instead of `getUser()`; pages reuse the `x-app-*` headers; flags cached or forwarded once (H2) | ~40% of all API and Auth calls | M |
-| 9 | Store the unread notification count on `users` (or use a short cache) instead of a per-request `count: exact` (H2/M3) | The #2 query by call count | S–M |
-| 10 | `prefetch={false}` on lesson prev/next, breadcrumbs, header nav, home, `/kb`, `/courses` and admin nav, or add `loading.tsx` (H3) | 5–10 hidden renders per page view | S |
-| 11 | Debounce or save-on-leave for lesson resume; drop the `course_modules FOR UPDATE` on resume; make `rpc_onboarding_complete_step` a no-op when already set (H5) | Most per-user writes, WAL and dead tuples | M |
-| 12 | `/courses/[id]`: redirect first; slim the assessment payload (H6) | Egress, function CPU | S–M |
-| 13 | Loader scripts: diff before writing (M5) | Pointless rewrites, tsvector rebuilds and audit rows on each load | M |
+| 9 | **Prerequisite:** in the Supabase dashboard (Auth → JWT signing keys), migrate the pilot to **asymmetric signing keys**. `getClaims()` only verifies locally with asymmetric keys; with the legacy shared secret it still calls the Auth server and item 10 saves nothing. Rotate carefully: existing sessions stay valid during the overlap period. | Project shows an asymmetric (e.g. ES256) current key | S |
+| 10 | `getClaims()` instead of `getUser()`; pages reuse the `x-app-*` headers; flags cached or forwarded once (H2) | Middleware plus render make ≤2 Supabase calls per page before page data; daily `users` lookups drop by half or more | M |
+| 11 | Store the unread notification count on `users` (or use a short cache) instead of a per-request `count: exact` (H2/M3) | The notifications `HEAD` query is gone from the per-request path | S–M |
+| 12 | `prefetch={false}` on lesson prev/next, breadcrumbs, header nav, home, `/kb`, `/courses` and admin nav, or add `loading.tsx` (H3) | One lesson view makes one page render in Vercel logs, not 5–10 | S |
+| 13 | Debounce or save-on-leave for lesson resume; drop the `course_modules FOR UPDATE` on resume; make `rpc_onboarding_complete_step` a no-op when the step is already set (H5) | ≤1 resume write per lesson visit; no `users` UPDATE from a KB view or chat question once onboarding is done | M |
+| 14 | `/courses/[id]`: redirect first; slim the assessment payload (H6) | Manual-mapped courses redirect after ≤2 queries | S–M |
+| 15 | Loader scripts: diff before writing (M5) | Re-running a load with no content changes makes zero writes | M |
 
 ### Then: structural
 
-| # | Action | Saves | Effort |
+| # | Action | Done when | Effort |
 |---|---|---|---|
-| 14 | Rewrite the training RLS helpers to be set-based, fix the per-row `org_unit_path()` policies, consolidate overlapping permissive policies (H4) | The #1 query (266 ms to about 5 ms expected); scales with users | L |
-| 15 | Cache the KB and synonyms for chat with `unstable_cache` plus tag revalidation (M1) | Full KB read per question | M |
-| 16 | Per-lesson narration JSON instead of a 1.97 MB import (M2); pass only the needed i18n namespaces to the client (M3) | Cold start, HTML size | M |
-| 17 | CI speed: run `checks` and `e2e` in parallel; cache `.next/cache` and Playwright; shard E2E across 2–3 jobs (each has its own local DB now, so shared-state races no longer apply); Lighthouse `numberOfRuns: 3`; stub Gemini in CI; `maxFailures` | ~10 min down to ~5 min wall time per run | M |
-| 18 | Add a pilot usage check (weekly or on demand): top `pg_stat_statements`, edge-log volume by user agent, advisor count. Alert before the IO budget runs out, not after | Early warning | S |
-
----
+| 16 | Rewrite the training RLS helpers to be set-based, fix the per-row `org_unit_path()` policies, and consolidate overlapping permissive policies (H4) | The `course_lessons` list query is under 10 ms mean (from 266 ms); `multiple_permissive_policies` warnings are cut by at least half | L |
+| 17 | Cache the KB and synonyms for chat with `unstable_cache` plus tag revalidation (M1) | A chat question reads no `kb_entries` rows on a cache hit | M |
+| 18 | Per-lesson narration JSON instead of the 1.97 MB import (M2); pass only the needed i18n namespaces to the client (M3) | `narration.json` is no longer in the server bundle; HTML shrinks by tens of KB | M |
+| 19 | CI speed: run `checks` and `e2e` in parallel; cache `.next/cache` and Playwright; Lighthouse `numberOfRuns: 3`; stub Gemini in CI; set `maxFailures`. **Sharding:** each shard pays its own ~78 s `supabase start` and npm install, so it saves wall time, not runner minutes. On a public repo, shard 2–3 ways. On a private repo's 2,000 min/month, use at most 2 shards. | Wall time per run is about 5 minutes (from about 10) | M |
+| 20 | Weekly pilot usage check: the step-0 snapshot (top `pg_stat_statements`, edge-log volume by user agent, advisor counts, DB size, egress), run as a script or a scheduled Claude Routine. Warn before the IO budget runs out, not after | A weekly report exists; there is a threshold to alert on | S |
 
 ## 5. Proposed working rules (for CLAUDE.md)
 
@@ -366,7 +377,15 @@ Effort: S = under an hour, M = half a day, L = a day or more.
 7. **Before adding a query to a layout, middleware or list, check whether
    the data is already forwarded in `x-app-*` headers or `React.cache()`.**
    Every link to a dynamic page needs a deliberate prefetch decision.
-8. **RLS:** actor context is computed once per statement
+8. **Batch migrations to the pilot.** Each applied migration makes
+   PostgREST reload its schema cache. That reload query
+   (`pg_timezone_names`, about 2 s each) is what timed out on 27 Sep under
+   IO pressure. Apply the migrations in one batch per merge, never one per
+   session, and never while the IO budget is low.
+9. **The pilot is guarded in code.** Tools refuse the pilot URL unless
+   `ALLOW_PILOT=1` is set. Set it only for a reviewed migration, a
+   deliberate content load, or the post-deploy smoke check.
+10. **RLS:** actor context is computed once per statement
    (`(select current_app_user())`). No SECURITY DEFINER helper called per
    row. At most one permissive policy per role and action.
 
@@ -378,21 +397,22 @@ Assuming ~30–100 BHWs piloting:
 
 - **Supabase (Nano).** The IO budget was exhausted only by CI and dev
   traffic (~480k requests in 10 h). Real use is far below that. With items
-  1–3 the pilot sees only real users. Items 8–11 cut per-user calls by about
+  1–3 the pilot sees only real users. Items 10–13 cut per-user calls by about
   half and remove most per-slide writes, which leaves wide headroom for a
   larger pilot. Keep an eye on:
   - DB size: 69 MB of 500 MB, and PSGC `org_units` is half of it
   - egress: 5 GB/month
   - MAU: 50k
-  - the 2-active-project limit
+  - the 2-active-project limit (the pilot plus `bhw-connect-e2e` use both slots, so
+    a third project means pausing one)
   - pause after 7 days inactive, so a cohort break longer than a week needs
     a visit
 - **Vercel (Hobby).** Items 4–5 remove the docs and merge-main build churn.
-  Items 1, 8 and 10 cut function and middleware invocations per page view by
+  Items 3, 10 and 12 cut function and middleware invocations per page view by
   roughly 3–5×, and immutable media headers stop repeat audio transfers.
   Hobby is non-commercial use only; check that the pilot's status (e.g.
   donor-funded) fits the terms before scaling.
 - **GitHub Actions:** unlimited for public repos; 2,000 min/month for
   private repos. At ~10 min per run, 488 runs a day is not sustainable on a
-  private repo. With items 4 and 17 each increment costs about 2–3 runs of
+  private repo. With items 4 and 19 each increment costs about 2–3 runs of
   about 5 minutes.
