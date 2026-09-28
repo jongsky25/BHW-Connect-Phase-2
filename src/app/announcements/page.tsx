@@ -56,7 +56,9 @@ export default async function AnnouncementsPage() {
       ) : (
         <div className="flex flex-col gap-4">
           {rows.map((announcement) => (
-            <AnnouncementCard key={announcement.id} announcement={announcement} locale={locale} />
+            <div key={announcement.id} id={`announcement-${announcement.id}`} className="scroll-mt-24">
+              <AnnouncementCard announcement={announcement} locale={locale} />
+            </div>
           ))}
         </div>
       )}

@@ -113,7 +113,7 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
             <ul className="flex flex-col gap-2">
               {entryRows.map((entry) => (
                 <li key={entry.id}>
-                  <details className="group rounded-md border border-ink/10 px-4 py-3">
+                  <details id={`entry-${entry.id}`} className="group scroll-mt-24 rounded-md border border-ink/10 px-4 py-3 target:border-primary">
                     <summary className="cursor-pointer font-medium text-ink marker:text-secondary">
                       {locale === "en" ? entry.question_en : entry.question_fil}
                     </summary>
@@ -130,7 +130,7 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
             <ul className="flex flex-col gap-2">
               {articleRows.map((article) => (
                 <li key={article.id}>
-                  <details className="group rounded-md border border-ink/10 px-4 py-3">
+                  <details id={`article-${article.id}`} className="group scroll-mt-24 rounded-md border border-ink/10 px-4 py-3 target:border-primary">
                     <summary className="cursor-pointer font-medium text-ink marker:text-secondary">
                       {locale === "en" ? article.title_en : article.title_fil}
                     </summary>
