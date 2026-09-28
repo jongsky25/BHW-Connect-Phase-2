@@ -6,6 +6,8 @@ This revision supersedes the earlier optional-full-module proposal.
 
 ## 1. Confirmed user requirements
 
+**Course scope confirmed by the owner:** the **BHW Reference Manual** is the foundation and initial course. All chapter learning, exams, assessor orientation and qualification in this plan belong to that course. Its program identity is `bhw-reference-manual`; the existing program/chapter/delivery-course mappings must be preserved. The repository path `content/training/day1-basic-competencies/` is a legacy storage location for some Chapter I source material, not a separate Day 1 course to build or expose. Inventory the Reference Manual's current Chapter I and Chapter II delivery sources and explicitly mark unavailable chapters. Chapter I may serve as the first end-to-end fixture, but the foundation must support the Reference Manual's chapters.
+
 1. The assessor candidate must complete the **full chapter** for which they want to qualify, including its learning content, and pass its required exams.
 2. The candidate does **not** need a practical assessment by another assessor. Completion of the chapter and passed exams unlock the next step directly.
 3. **After** that, the candidate completes the chapter's assessor orientation/course on how to assess BHW competence and how to score.
@@ -97,7 +99,7 @@ Every increment has one PR based on the then-current main. Update this document'
 **Depends on:** none.
 
 **Change existing features/content**
-- Inventory the chapter's actual full learning content, module quizzes and chapter tests using the current authored content and loader.
+- Inventory the BHW Reference Manual's current program, chapters, subchapters, full learning content and chapter exams using the actual delivery mappings and loaders. Include existing Chapter II sources; do not infer course identity or availability from the legacy Chapter I folder name. Build chapter-specific manifests under the Reference Manual identity.
 - Create a versioned qualification manifest with the full required coverage, exam rules, orientation mapping and chapter identity.
 - Map practical components to subchapters, approved indicators and evidence requirements. Document the BHW test prerequisites separately from candidate exam rules.
 - Inventory latest definitions of learning, test, observation, session, claim and decision RPCs across all migrations, including account/catchment and View as behavior.
