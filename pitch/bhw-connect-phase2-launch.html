@@ -250,14 +250,26 @@
   .callouts li b{color:var(--ink);font-weight:700}
   .demo-note{margin-top:.7rem;font-size:.76rem;font-style:italic;color:var(--ink-soft);opacity:.85;line-height:1.42;max-width:70ch}
 
-  /* device frames */
-  .dev-phone{width:290px;flex:0 0 auto;background:#0c0c0d;border-radius:34px;padding:10px;box-shadow:0 26px 54px -20px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06) inset}
+  /* device frames
+     Width is viewport-relative (clamp), not a fixed px, with a max-width
+     safety net: a fixed 700px laptop does not shrink in a narrow .col-r on
+     a small projector, so it overflows past its grid column and overlaps
+     the text column next to it — that was the reported bug. Height stays a
+     plain px, sized to the actual content on each slide (not vh-based:
+     tying it to viewport height either crops the rubric rows at a short
+     viewport or leaves a blank gap at a tall one, since the content inside
+     is fixed-px and does not reflow with the frame). fit() still scales the
+     whole slide — box included — uniformly to the viewport afterward, which
+     is where the actual small-projector adaptation happens; on a roomy
+     screen that also means the whole slide, text included, scales up
+     further than a hard-coded box would otherwise allow. */
+  .dev-phone{width:clamp(210px,25vw,300px);max-width:100%;flex:0 0 auto;background:#0c0c0d;border-radius:34px;padding:10px;box-shadow:0 26px 54px -20px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06) inset}
   .dev-phone .notch{height:18px;display:flex;justify-content:center;align-items:center}
   .dev-phone .notch::before{content:"";width:100px;height:5px;border-radius:999px;background:#2a2a2c}
   .dev-phone .glass{border-radius:25px;overflow:hidden;height:494px;display:flex;flex-direction:column}
-  .dev-laptop{width:700px;flex:0 0 auto}
+  .dev-laptop{width:clamp(400px,54vw,720px);max-width:100%;flex:0 0 auto}
   .dev-laptop .lid{background:#0c0c0d;border-radius:14px 14px 0 0;padding:9px 9px 0;box-shadow:0 26px 54px -22px rgba(0,0,0,.5)}
-  .dev-laptop .glass{border-radius:7px 7px 0 0;overflow:hidden;height:452px;display:flex;flex-direction:column}
+  .dev-laptop .glass{border-radius:7px 7px 0 0;overflow:hidden;height:400px;display:flex;flex-direction:column}
   .dev-laptop .base{height:12px;background:linear-gradient(#161616,#0c0c0d);border-radius:0 0 12px 12px;box-shadow:0 10px 20px -12px rgba(0,0,0,.6)}
   .dev-laptop .base::after{content:"";display:block;width:78px;height:4px;margin:3px auto 0;border-radius:0 0 7px 7px;background:#2a2a2c}
 
@@ -648,7 +660,7 @@
           <p class="demo-note">Mockup screen &mdash; the rubric rows and name shown are illustrative, not a real assessment record.</p>
         </div>
         <div class="col-r">
-          <div class="dev-laptop tall"><div class="lid"><div class="glass"><div class="app-scope">
+          <div class="dev-laptop"><div class="lid"><div class="glass"><div class="app-scope">
             <div class="hdr"><span class="wordmark">BHW Connect &middot; Admin</span><span class="who">Assessor queue</span></div>
             <div class="tabs"><a class="on">Assessments</a><a>Chat</a><a>Reports</a><a>Training</a></div>
             <div class="body pad">
