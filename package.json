@@ -20,7 +20,8 @@
     "training:narrate": "node scripts/training-narrate.mjs",
     "training:chapter2-guide": "node scripts/chapter2-guide-load.mjs",
     "remotion:render": "node scripts/remotion-render.mjs",
-    "doctor": "node scripts/doctor.mjs"
+    "doctor": "node scripts/doctor.mjs",
+    "assessor:check": "node scripts/assessor-check.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.67.0",
