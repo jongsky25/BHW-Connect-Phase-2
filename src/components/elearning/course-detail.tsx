@@ -144,7 +144,7 @@ export function CourseDetail({
         <p className="font-medium text-success">{t("status.certified")}</p>
         {certificateCode ? (
           <div className="mt-2 flex flex-wrap gap-4">
-            <Link
+            <Link prefetch={false}
               href={`/certificates/${certificateCode}`}
               className="text-sm font-medium text-secondary underline"
             >
@@ -175,7 +175,7 @@ export function CourseDetail({
   return (
     <div className="flex flex-col gap-4">
       {reference && <p>{locale==='en'?'Chapter I assessment and certificate':'Pagtatasa at sertipiko ng Kabanata I'}: {progressStatus ? t(`status.${progressStatus}`) : '—'}
-        {certificateCode && <Link className="ml-2 underline" href={`/certificates/${certificateCode}`}>{t('viewCertificateAction')}</Link>}
+        {certificateCode && <Link prefetch={false} className="ml-2 underline" href={`/certificates/${certificateCode}`}>{t('viewCertificateAction')}</Link>}
       </p>}
       {progressStatus === "content_completed" ? (
         <div className="rounded-md border border-info/40 bg-info/5 p-4">

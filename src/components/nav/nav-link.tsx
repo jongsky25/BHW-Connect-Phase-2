@@ -23,7 +23,7 @@ export function NavLink({ item, label }: Props) {
   const active = isNavItemActive(pathname, item);
 
   return (
-    <Link
+    <Link prefetch={false}
       href={item.href}
       aria-current={active ? "page" : undefined}
       className={`relative rounded-md px-2 py-1.5 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${

@@ -199,7 +199,7 @@ export function EntriesTable({ rows, owners }: { rows: EntryRow[]; owners: Owner
                 <td className="px-3 py-3 text-sm text-ink">{row.owner_name ?? "—"}</td>
                 <td className="px-3 py-3 text-sm text-ink">{row.review_due_on ?? "—"}</td>
                 <td className="px-3 py-3 text-sm">
-                  <Link
+                  <Link prefetch={false}
                     href={`/admin/kb/entries/${row.id}`}
                     className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                   >

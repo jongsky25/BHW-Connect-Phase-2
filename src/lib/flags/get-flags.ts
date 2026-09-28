@@ -9,7 +9,7 @@ import type { FeatureFlagKey, FeatureFlags } from "./types";
 // failure should never expose an unreviewed feature. chat_conversation is
 // the same — falling closed restores the single-turn Chat Guide, which is
 // the behaviour the pilot was validated against.
-const DEFAULT_FLAGS: FeatureFlags = {
+export const DEFAULT_FLAGS: FeatureFlags = {
   kb_articles: true,
   reports_export: true,
   announcements: false,

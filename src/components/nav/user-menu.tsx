@@ -61,14 +61,14 @@ export function UserMenu({ account }: Props) {
             </p>
             <p className="text-xs text-ink/70">{t(`role.${account.role}`)}</p>
           </div>
-          <Link
+          <Link prefetch={false}
             href="/settings"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 text-sm text-ink/80 hover:bg-ink/5"
           >
             {tNav("settingsCta")}
           </Link>
-          <Link
+          <Link prefetch={false}
             href="/settings#display"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 text-sm text-ink/80 hover:bg-ink/5"
@@ -78,7 +78,7 @@ export function UserMenu({ account }: Props) {
           <div className="px-4 py-2">
             <LanguageToggle signedIn />
           </div>
-          <Link
+          <Link prefetch={false}
             href="/privacy"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 text-sm text-ink/80 hover:bg-ink/5"

@@ -53,9 +53,13 @@ project settings (for the running app) and GitHub Actions repo secrets
   (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`).
 - **Local** (`npx supabase start`): CI's E2E job, and development wherever
   Docker runs.
-- **Dev** (`bhw-connect-e2e`, `ekehmwzyhlagtfuvquho`): development in cloud
-  sandboxes without Docker, and Vercel Preview deployments. It uses the free
-  org's second active-project slot.
+- **Dev** (`bhw-connect-e2e`, `ekehmwzyhlagtfuvquho`): **paused** since
+  28 Sep 2026, and nearly empty (one account, no fixtures or content, only
+  the Los Baños org units). Cloud sandboxes can run the local stack instead
+  (`dockerd &`, then `npx supabase start`). Vercel Preview deployments still
+  use the pilot. That is cheap now that docs-only pushes don't build and a
+  preview only touches the pilot when someone opens it. Restoring this
+  project takes the free org's second active-project slot.
 
 `scripts/lib/pilot-guard.mjs` makes `next dev`/`build`/`start` (via
 `next.config.ts`) and every loader's `--project` refuse the pilot outside

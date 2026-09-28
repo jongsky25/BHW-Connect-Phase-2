@@ -13,9 +13,11 @@ Start with `docs/session-handoff.md` for context, and use
 ## Databases
 
 - **Never develop or run E2E against the pilot** (`ltzicxyefizxoqhfuuzc`). It
-  is for real BHWs. Use `npx supabase start` (`--project local`) wherever
-  Docker runs. Use the dev project `bhw-connect-e2e` (`ekehmwzyhlagtfuvquho`)
-  in sandboxes without Docker.
+  is for real BHWs. Use `npx supabase start` (`--project local`); the Claude
+  Code cloud sandbox has Docker too (start the daemon with `dockerd &` first).
+  The hosted dev project `bhw-connect-e2e` (`ekehmwzyhlagtfuvquho`) is paused
+  and nearly empty. Restore and seed it only if a hosted dev database is
+  really needed; it takes the free org's second project slot.
 - Dev servers and the loaders refuse the pilot unless `ALLOW_PILOT=1` is set
   (`scripts/lib/pilot-guard.mjs`). Set it only for a reviewed migration, a
   deliberate content load, or the post-deploy smoke check, and never in

@@ -1,13 +1,23 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-import { getAppUser } from "./app-user";
+import { APP_FLAGS_HEADER, APP_USER_HEADER, getAppUser, type AppUser } from "./app-user";
 import { getFeatureFlags } from "../flags/get-flags";
+import type { FeatureFlags } from "../flags/types";
 import { getSupabaseAnonKey, getSupabaseUrl } from "./env";
 
 // A BHW's working day session: idle 8h with no requests signs them out,
 // refreshed on every request that carries an active session (§5.1).
 const IDLE_TIMEOUT_MS = 8 * 60 * 60 * 1000;
 const LAST_ACTIVITY_COOKIE = "bhw_last_activity";
+
+// The header bell's unread count was a `count: exact` query on notifications
+// (whose RLS evaluates org_unit_path() per row) on every page request — the
+// second most-called query on the pilot. It is cached per user in a cookie
+// for a minute instead, and recomputed at once when the read cursor moves or
+// on /notifications itself. The value is display-only: tampering with it only
+// changes the number the same user sees on their own bell.
+const NOTIF_COOKIE = "bhw_notif_unread";
+const NOTIF_TTL_MS = 60 * 1000;
 
 const PUBLIC_PATHS = new Set(["/", "/privacy", "/login", "/offline"]);
 
@@ -60,13 +70,18 @@ export async function updateSession(request: NextRequest) {
     },
   });
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // getClaims() verifies the access token locally against the project's
+  // published ES256 key (cached for 10 minutes per instance) and refreshes an
+  // expired session like getUser() did — but without a round trip to the
+  // Auth server, and the auth.users read behind it, on every request. A
+  // deactivated account is still refused below: getAppUser() reads the
+  // profile's status on every request.
+  const { data: claimsData } = await supabase.auth.getClaims();
+  const authUserId = claimsData?.claims?.sub ?? null;
 
   const pathname = request.nextUrl.pathname;
 
-  if (!user) {
+  if (!authUserId) {
     if (isApiPath(pathname)) {
       return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     }
@@ -97,7 +112,7 @@ export async function updateSession(request: NextRequest) {
   // round trip instead of two. API routes never use the flags (or the
   // unread count), so they skip both reads entirely.
   const flagsPromise = isApiPath(pathname) ? null : getFeatureFlags(supabase);
-  const appUser = await getAppUser(supabase, user.id);
+  const appUser = await getAppUser(supabase, authUserId);
 
   if (!appUser || appUser.status !== "active") {
     await supabase.auth.signOut();
@@ -155,7 +170,7 @@ export async function updateSession(request: NextRequest) {
   if (!flagsPromise) {
     // API routes still read x-app-language (via next-intl) for localized
     // exports/PDFs, so keep forwarding the profile headers.
-    return withAppUserHeaders(response, request, appUser, false, false, 0);
+    return withAppUserHeaders(response, request, appUser, null, 0);
   }
 
   const flags = await flagsPromise;
@@ -163,14 +178,39 @@ export async function updateSession(request: NextRequest) {
   let notifUnreadCount = 0;
   if (flags.notifications) {
     const since = appUser.notifications_last_read_at ?? "1970-01-01T00:00:00Z";
-    const { count } = await supabase
-      .from("notifications")
-      .select("id", { count: "exact", head: true })
-      .gt("created_at", since);
-    notifUnreadCount = count ?? 0;
+    const cached = readNotifCookie(request, appUser.id, since);
+    if (cached !== null && !pathname.startsWith("/notifications")) {
+      notifUnreadCount = cached;
+    } else {
+      const { count } = await supabase
+        .from("notifications")
+        .select("id", { count: "exact", head: true })
+        .gt("created_at", since);
+      notifUnreadCount = count ?? 0;
+      response.cookies.set(NOTIF_COOKIE, [appUser.id, since, Date.now(), notifUnreadCount].join("~"), {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+      });
+    }
   }
 
-  return withAppUserHeaders(response, request, appUser, flags.offline_pwa, flags.notifications, notifUnreadCount);
+  return withAppUserHeaders(response, request, appUser, flags, notifUnreadCount);
+}
+
+// A cached count is only reused for the same user and read cursor, and for
+// NOTIF_TTL_MS; anything else (another account on this browser, a mark-read,
+// a malformed value) recomputes.
+function readNotifCookie(request: NextRequest, appUserId: string, since: string): number | null {
+  const parts = request.cookies.get(NOTIF_COOKIE)?.value.split("~");
+  if (!parts || parts.length !== 4) return null;
+  const [userId, cachedSince, at, count] = parts;
+  const cachedAt = Number(at);
+  const value = Number(count);
+  if (userId !== appUserId || cachedSince !== since) return null;
+  if (!Number.isFinite(cachedAt) || Date.now() - cachedAt > NOTIF_TTL_MS) return null;
+  if (!Number.isInteger(value) || value < 0) return null;
+  return value;
 }
 
 // The root layout and i18n config need the signed-in user's language/a11y
@@ -184,16 +224,15 @@ export async function updateSession(request: NextRequest) {
 function withAppUserHeaders(
   response: NextResponse,
   request: NextRequest,
-  appUser: NonNullable<Awaited<ReturnType<typeof getAppUser>>>,
-  offlinePwaEnabled: boolean,
-  notificationsEnabled: boolean,
+  appUser: AppUser,
+  flags: FeatureFlags | null,
   notifUnreadCount: number,
 ) {
   const forwardedHeaders = cleanAppHeaders(request);
   forwardedHeaders.set("x-app-language", appUser.language);
   forwardedHeaders.set("x-app-a11y", JSON.stringify(appUser.a11y_settings ?? {}));
-  forwardedHeaders.set("x-app-offline-pwa", offlinePwaEnabled ? "1" : "0");
-  forwardedHeaders.set("x-app-notifications", notificationsEnabled ? "1" : "0");
+  forwardedHeaders.set("x-app-offline-pwa", flags?.offline_pwa ? "1" : "0");
+  forwardedHeaders.set("x-app-notifications", flags?.notifications ? "1" : "0");
   forwardedHeaders.set("x-app-notif-unread", String(notifUnreadCount));
   // Signed-in users landed here with a fully set-up account (active, password
   // set, consented) — the site header's app-name link should take them back
@@ -204,6 +243,14 @@ function withAppUserHeaders(
   // Lets the root layout tell whether the signed-in user is one of the
   // super admin's test personas (the persona bar) without another lookup.
   forwardedHeaders.set("x-app-user-id", appUser.id);
+  // The whole profile and flag set this middleware already read, so pages'
+  // getRequestAppUser()/getRequestFeatureFlags() (src/lib/supabase/request.ts)
+  // reuse them instead of querying users and feature_flags a second time.
+  // cleanAppHeaders() strips any client-sent x-app-* first, so these can
+  // only come from here. The profile is URI-encoded: names can hold "ñ" and
+  // header values must be ASCII.
+  forwardedHeaders.set(APP_USER_HEADER, encodeURIComponent(JSON.stringify(appUser)));
+  if (flags) forwardedHeaders.set(APP_FLAGS_HEADER, JSON.stringify(flags));
 
   const next = NextResponse.next({ request: { headers: forwardedHeaders } });
   for (const cookie of response.cookies.getAll()) {

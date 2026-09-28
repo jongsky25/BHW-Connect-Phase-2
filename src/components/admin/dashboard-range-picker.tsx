@@ -27,7 +27,7 @@ export function DashboardRangePicker() {
         params.set("range", key);
         const isActive = key === activeRange;
         return (
-          <Link
+          <Link prefetch={false}
             key={key}
             href={`${pathname}?${params.toString()}`}
             aria-current={isActive ? "true" : undefined}

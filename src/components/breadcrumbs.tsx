@@ -39,7 +39,7 @@ export function Breadcrumbs({ items }: Props) {
                   {label}
                 </span>
               ) : (
-                <Link
+                <Link prefetch={false}
                   href={item.href}
                   className="inline-flex min-h-[44px] items-center font-medium text-ink underline hover:text-secondary"
                 >

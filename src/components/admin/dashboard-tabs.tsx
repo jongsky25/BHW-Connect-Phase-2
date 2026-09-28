@@ -25,7 +25,7 @@ export function DashboardTabs({ tabs }: Props) {
       {tabs.map((tab) => {
         const active = pathname === tab.href;
         return (
-          <Link
+          <Link prefetch={false}
             key={tab.key}
             href={tab.href}
             aria-current={active ? "page" : undefined}

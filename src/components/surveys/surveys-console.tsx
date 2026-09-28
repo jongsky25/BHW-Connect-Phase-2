@@ -105,7 +105,7 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
                   <td className="px-3 py-3 text-sm text-ink">{t(`status.${survey.status}`)}</td>
                   <td className="px-3 py-3 text-sm">
                     <div className="flex flex-wrap gap-2">
-                      <Link
+                      <Link prefetch={false}
                         href={`/admin/surveys/${survey.id}`}
                         className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                       >

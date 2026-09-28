@@ -57,7 +57,7 @@ export default async function FlipchartsPage() {
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
           {rows.map((chart) => (
             <li key={chart.id}>
-              <Link
+              <Link prefetch={false}
                 href={`/flipcharts/${chart.id}`}
                 className="flex min-h-[44px] items-center px-4 py-3 font-medium text-ink hover:bg-ink/5"
               >

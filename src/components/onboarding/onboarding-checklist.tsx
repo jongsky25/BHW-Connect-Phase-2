@@ -19,7 +19,7 @@ export async function OnboardingChecklist({ progress }: { progress: Record<Onboa
           const done = progress[step];
           return (
             <li key={step}>
-              <Link
+              <Link prefetch={false}
                 href={STEP_HREF[step]}
                 className="flex min-h-[44px] items-center gap-3 rounded-md px-2 py-1 text-ink hover:bg-ink/5"
               >

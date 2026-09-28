@@ -87,7 +87,7 @@ function AdminNavList({
 function AdminNavRow({ item, active }: { item: AdminNavLink; active: boolean }) {
   return (
     <li>
-      <Link
+      <Link prefetch={false}
         href={item.href}
         aria-current={active ? "page" : undefined}
         className={`flex min-h-[44px] items-center rounded-md px-2 py-2 text-sm font-medium transition-colors ${

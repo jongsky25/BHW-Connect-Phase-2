@@ -43,7 +43,7 @@ export function TrainingSessionsConsole({ initialSessions, courses, locale }: Pr
           <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
             {sessions.map((session) => (
               <li key={session.id}>
-                <Link
+                <Link prefetch={false}
                   href={`/training-sessions/${session.id}`}
                   className="flex min-h-[44px] flex-wrap items-center justify-between gap-2 px-4 py-3 hover:bg-ink/5"
                 >
