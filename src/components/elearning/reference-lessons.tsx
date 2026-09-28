@@ -17,6 +17,7 @@ import {
   type PublishedLesson,
 } from "@/lib/elearning/reference-navigation";
 import type { LessonNarration } from "@/lib/elearning/reference-narration";
+import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
 import { FittedLessonPage } from "./fitted-lesson-page";
@@ -100,6 +101,7 @@ export function ReferenceLessons(props: Props) {
   const [mode, setMode] = useState<LessonModality>(startingMode);
   const [resumes, setResumes] = useState(props.resumes);
   const [completed, setCompleted] = useState(props.completed);
+  const [newlyCompletedLessonId, setNewlyCompletedLessonId] = useState<string | null>(null);
   const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,startingMode,startingResume).id:null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
@@ -241,6 +243,7 @@ export function ReferenceLessons(props: Props) {
   }
   function open(l: PublishedLesson) {
     if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}
+    setNewlyCompletedLessonId(null);
     const latest = resumes
       .filter((r) => r.lesson_id === l.id)
       .sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];
@@ -336,6 +339,7 @@ export function ReferenceLessons(props: Props) {
               },
             ],
       );
+      setNewlyCompletedLessonId(prefersReducedMotion() ? null : lesson.id);
     } catch {
       setError(
         ui(
@@ -581,15 +585,22 @@ export function ReferenceLessons(props: Props) {
                 ? ui("Natapos", "Completed")
                 : ui("Markahang tapos ang aralin", "Mark lesson complete")}
             </button>
-            {done.has(lesson.id) && <div role="status" className="rounded-lg border border-ink/20 p-4">
-              <p>{ui("Natapos ang aralin. Naka-save ang iyong progreso.", "Lesson complete. Your progress is saved.")}</p>
-              {props.nextLessonHref ? <Link prefetch={false} className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
-                {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
-              </Link> : props.lessonBaseHref ? <Link prefetch={false} className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
-                {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
-              </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
-                {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
-              </button>}
+            {done.has(lesson.id) && <div
+              role="status"
+              data-celebrating={newlyCompletedLessonId === lesson.id ? "true" : undefined}
+              className="lesson-completion flex items-start gap-3 rounded-xl border border-success/40 bg-success/5 p-4"
+            >
+              <span aria-hidden="true" className="lesson-completion-check flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-success text-xl font-bold text-canvas">✓</span>
+              <div className="min-w-0">
+                <p className="font-semibold">{ui("Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.", "Well done! Lesson complete. Your progress is saved.")}</p>
+                {props.nextLessonHref ? <Link prefetch={false} className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
+                  {ui("Susunod na aralin →", "Next lesson →")}
+                </Link> : props.lessonBaseHref ? <Link prefetch={false} className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
+                  {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
+                </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
+                  {ui("Susunod na aralin →", "Next lesson →")}
+                </button>}
+              </div>
             </div>}
             </>}
             <nav
