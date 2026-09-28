@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "program_key": "bhw-reference-manual",
+  "version": "2026-09-28.1",
+  "title": {
+    "fil": "BHW Reference Manual",
+    "en": "BHW Reference Manual"
+  },
+  "pretest": "diagnostic",
+  "candidate_practical_assessment_required": false,
+  "component_unlock": "related_subchapter",
+  "chapters": [
+    {
+      "chapter_key": "chapter-1",
+      "title": "BHWs and Their Barangay",
+      "source_root": "content/training/day1-basic-competencies/modules",
+      "curriculum_status": "draft",
+      "modules": [
+        {
+          "module_key": "01-tungkulin-ng-bhw",
+          "title": {
+            "fil": "Ang mga Tungkulin ng Isang BHW",
+            "en": "The Roles of a BHW"
+          },
+          "required_lesson_keys": [
+            "bhw-roles-hepo",
+            "bhw-health-educator",
+            "bhw-community-organizer",
+            "bhw-service-provider",
+            "bhw-records",
+            "bhw-roles-application"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/competency.json",
+          "rubric_sha256": "e8a5997c7d457d808aee37a70af7b81d8a148ba69a2cae270d88733883ec0bc5",
+          "indicators": [
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:01-tungkulin-ng-bhw:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "02-uhc-act",
+          "title": {
+            "fil": "Ang UHC Act of 2019",
+            "en": "The UHC Act of 2019"
+          },
+          "required_lesson_keys": [
+            "uhc-coverage",
+            "uhc-primary-care",
+            "uhc-local-system",
+            "uhc-improvement"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/02-uhc-act/competency.json",
+          "rubric_sha256": "8bf7f0af4762e0178ff6bcfdd8bd102b900ca57ce6e7b1ccb80583007b872a43",
+          "indicators": [
+            {
+              "id": "chapter-1:02-uhc-act:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:02-uhc-act:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:02-uhc-act:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:02-uhc-act:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "03-polisiya-bhs",
+          "title": {
+            "fil": "Mga Polisiya sa Barangay Health Station",
+            "en": "Policies at the Barangay Health Station"
+          },
+          "required_lesson_keys": [
+            "bhs-promotions",
+            "bhs-support-environment",
+            "bhs-decline",
+            "bhs-resources",
+            "bhs-improvement"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/03-polisiya-bhs/competency.json",
+          "rubric_sha256": "b5d9cd81cc4af0f0f400e6f4b891a123a34b3b4e1352426c7dd91e2db12ec6ec",
+          "indicators": [
+            {
+              "id": "chapter-1:03-polisiya-bhs:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:03-polisiya-bhs:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:03-polisiya-bhs:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:03-polisiya-bhs:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "04-ra7883",
+          "title": {
+            "fil": "RA 7883: Benepisyo, Karapatan, Akreditasyon",
+            "en": "RA 7883: Benefits, Rights, Accreditation"
+          },
+          "required_lesson_keys": [
+            "bhw-legal-role",
+            "bhw-benefits",
+            "bhw-eligibility",
+            "bhw-accreditation",
+            "bhw-follow-up"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/04-ra7883/competency.json",
+          "rubric_sha256": "68bbe4c4303fac233efa06a7b0af2e875d6ff2186c47bde6267b6f1caa8724eb",
+          "indicators": [
+            {
+              "id": "chapter-1:04-ra7883:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:04-ra7883:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:04-ra7883:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:04-ra7883:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "05-bhw-at-barangay",
+          "title": {
+            "fil": "Ang BHW at ang Kanyang Barangay",
+            "en": "The BHW and Their Barangay"
+          },
+          "required_lesson_keys": [
+            "bhw-relationships",
+            "bhw-barangay-partners",
+            "bhw-local-partners",
+            "bhw-teamwork",
+            "bhw-self-management",
+            "bhw-right-contact"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/05-bhw-at-barangay/competency.json",
+          "rubric_sha256": "4880b381b2eeef39043b9876cf9da9cfe809c8fc8f4a679368f96054560a6aad",
+          "indicators": [
+            {
+              "id": "chapter-1:05-bhw-at-barangay:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:05-bhw-at-barangay:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:05-bhw-at-barangay:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:05-bhw-at-barangay:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "06-komunikasyon",
+          "title": {
+            "fil": "Epektibong Komunikasyon",
+            "en": "Effective Communication"
+          },
+          "required_lesson_keys": [
+            "communication-listen",
+            "communication-clarify",
+            "communication-explain",
+            "communication-record",
+            "communication-handoff"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/06-komunikasyon/competency.json",
+          "rubric_sha256": "643ee626ba066bebbee0d59223ae3001cb836b4765ebdbcd40af1a1355e3e64c",
+          "indicators": [
+            {
+              "id": "chapter-1:06-komunikasyon:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:06-komunikasyon:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:06-komunikasyon:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:06-komunikasyon:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "07-problema",
+          "title": {
+            "fil": "Pagkilala sa Problema at Pagpaplano ng Solusyon",
+            "en": "Identifying Problems and Planning Solutions"
+          },
+          "required_lesson_keys": [
+            "problem-define",
+            "problem-causes",
+            "problem-prioritize",
+            "problem-action-plan"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/07-problema/competency.json",
+          "rubric_sha256": "0eec7ca2091de056d51fb0422c43c8c940c70c7e9aac59742ffca7a1946f2604",
+          "indicators": [
+            {
+              "id": "chapter-1:07-problema:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:07-problema:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:07-problema:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:07-problema:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "08-osh",
+          "title": {
+            "fil": "Occupational Safety and Health",
+            "en": "Occupational Safety and Health"
+          },
+          "required_lesson_keys": [
+            "safety-identify",
+            "safety-controls",
+            "safety-prepare",
+            "safety-demonstrate"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/08-osh/competency.json",
+          "rubric_sha256": "92d28c5a5b5da2bd60ccc7755a9dca91b28077ca81872503f61eaa70276e7dc0",
+          "indicators": [
+            {
+              "id": "chapter-1:08-osh:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:08-osh:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:08-osh:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:08-osh:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "09-sustainable-practices",
+          "title": {
+            "fil": "Mabisang Gawi sa Lugar ng Trabaho",
+            "en": "Efficient and Sustainable Practices at Work"
+          },
+          "required_lesson_keys": [
+            "resources-audit",
+            "resources-safe-change",
+            "resources-monitor"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/day1-basic-competencies/modules/09-sustainable-practices/competency.json",
+          "rubric_sha256": "7feaa0ac20e4a6ecbe2e8d8a293a60586f4949d32bd57ca8be7a0c63e6b34cd2",
+          "indicators": [
+            {
+              "id": "chapter-1:09-sustainable-practices:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-1:09-sustainable-practices:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-1:09-sustainable-practices:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-1:09-sustainable-practices:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        }
+      ],
+      "posttest": {
+        "id": "chapter-1:posttest",
+        "passing_percent": 80,
+        "source": "content/training/day1-basic-competencies/test-questions.json",
+        "sha256": "1bd3c889b1b7cbd02a7258f7b378fddd803866e4339d6d73a820e4e8024154eb"
+      },
+      "orientation": null
+    },
+    {
+      "chapter_key": "chapter-2",
+      "title": "The BHW as First Responder",
+      "source_root": "content/training/chapter2-common-competencies/drafts",
+      "curriculum_status": "draft",
+      "modules": [
+        {
+          "module_key": "01-difficult-situations",
+          "title": {
+            "fil": "Maayos na pagtugon sa mahirap na sitwasyon",
+            "en": "Responding to difficult situations"
+          },
+          "required_lesson_keys": [
+            "prepare-a-response",
+            "listen-and-clarify",
+            "agree-the-next-step",
+            "report-and-reflect"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/01-difficult-situations/competency.json",
+          "rubric_sha256": "c392f32077b3b5bf91060e47b4aeaf537bb06fec60a79f0243487c6d657f78d8",
+          "indicators": [
+            {
+              "id": "chapter-2:01-difficult-situations:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:01-difficult-situations:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:01-difficult-situations:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:01-difficult-situations:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "02-quality-service",
+          "title": {
+            "fil": "Mataas na kalidad ng serbisyo",
+            "en": "Quality service"
+          },
+          "required_lesson_keys": [
+            "effective-safe-person-centered",
+            "privacy-and-inclusion",
+            "timely-integrated-service",
+            "seven-s-improvement"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/02-quality-service/competency.json",
+          "rubric_sha256": "e142fecf1ed196d2945b5e6441b7ca4972d1cf1f614f958f0affd3d4077fedd5",
+          "indicators": [
+            {
+              "id": "chapter-2:02-quality-service:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:02-quality-service:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:02-quality-service:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:02-quality-service:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "03-infection-control",
+          "title": {
+            "fil": "Pag-iwas at pagkontrol sa impeksyon",
+            "en": "Infection prevention and control"
+          },
+          "required_lesson_keys": [
+            "infection-routes",
+            "infection-control-levels",
+            "hand-hygiene",
+            "cough-etiquette",
+            "food-water-sanitation",
+            "bhs-ipc-policies",
+            "ipc-monitor-and-improve"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/03-infection-control/competency.json",
+          "rubric_sha256": "d392ea9361c9b9165e57a1acf53459c1c8a4fa26093868b788e02c0a0f9c03eb",
+          "indicators": [
+            {
+              "id": "chapter-2:03-infection-control:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:03-infection-control:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:03-infection-control:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:03-infection-control:indicator-4",
+              "source_objective_index": 3
+            },
+            {
+              "id": "chapter-2:03-infection-control:indicator-5",
+              "source_objective_index": 4
+            },
+            {
+              "id": "chapter-2:03-infection-control:indicator-6",
+              "source_objective_index": 5
+            },
+            {
+              "id": "chapter-2:03-infection-control:indicator-7",
+              "source_objective_index": 6
+            }
+          ]
+        },
+        {
+          "module_key": "04-first-aid",
+          "title": {
+            "fil": "Paunang lunas at tamang referral",
+            "en": "First aid and referral"
+          },
+          "required_lesson_keys": [
+            "scene-help-referral",
+            "child-danger-signs",
+            "child-cough-breathing",
+            "diarrhea-dehydration",
+            "convulsion-response",
+            "shock-loss-consciousness",
+            "cpr-bls-orientation",
+            "drowning-response",
+            "poisoning-response",
+            "wounds-bleeding",
+            "fracture-dislocation",
+            "insect-bites-stings",
+            "snakebite-response",
+            "burn-response",
+            "choking-response",
+            "chest-pain-referral",
+            "first-aid-kit",
+            "incident-handover"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/04-first-aid/competency.json",
+          "rubric_sha256": "7d71c2cf57c367922b2e3d51523750e81800249d8ae2e7156a03d4ac94090d14",
+          "indicators": [
+            {
+              "id": "chapter-2:04-first-aid:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-4",
+              "source_objective_index": 3
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-5",
+              "source_objective_index": 4
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-6",
+              "source_objective_index": 5
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-7",
+              "source_objective_index": 6
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-8",
+              "source_objective_index": 7
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-9",
+              "source_objective_index": 8
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-10",
+              "source_objective_index": 9
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-11",
+              "source_objective_index": 10
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-12",
+              "source_objective_index": 11
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-13",
+              "source_objective_index": 12
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-14",
+              "source_objective_index": 13
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-15",
+              "source_objective_index": 14
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-16",
+              "source_objective_index": 15
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-17",
+              "source_objective_index": 16
+            },
+            {
+              "id": "chapter-2:04-first-aid:indicator-18",
+              "source_objective_index": 17
+            }
+          ]
+        },
+        {
+          "module_key": "05-medicinal-plants",
+          "title": {
+            "fil": "Sampung halamang gamot",
+            "en": "Ten medicinal plants"
+          },
+          "required_lesson_keys": [
+            "plant-scope-identification",
+            "akapulko",
+            "ampalaya",
+            "bawang",
+            "bayabas",
+            "lagundi",
+            "niyog-niyogan",
+            "sambong",
+            "tsaang-gubat",
+            "ulasimang-bato",
+            "yerba-buena",
+            "plant-integrated-practice"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/05-medicinal-plants/competency.json",
+          "rubric_sha256": "f5fa3b9bc0180d6d8defe3106c75f9a13fa9d0541b1915a18c8fcfaf80ab928b",
+          "indicators": [
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-4",
+              "source_objective_index": 3
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-5",
+              "source_objective_index": 4
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-6",
+              "source_objective_index": 5
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-7",
+              "source_objective_index": 6
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-8",
+              "source_objective_index": 7
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-9",
+              "source_objective_index": 8
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-10",
+              "source_objective_index": 9
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-11",
+              "source_objective_index": 10
+            },
+            {
+              "id": "chapter-2:05-medicinal-plants:indicator-12",
+              "source_objective_index": 11
+            }
+          ]
+        },
+        {
+          "module_key": "06-community-mobilization",
+          "title": {
+            "fil": "Pagpapakilos ng komunidad",
+            "en": "Community mobilization"
+          },
+          "required_lesson_keys": [
+            "community-issue",
+            "invite-and-remove-barriers",
+            "trust-and-core-group",
+            "community-action-followup"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/06-community-mobilization/competency.json",
+          "rubric_sha256": "5269985098bc6d51c6d5299c3e42e6040fc390924b892086566bd8ffed30de5c",
+          "indicators": [
+            {
+              "id": "chapter-2:06-community-mobilization:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:06-community-mobilization:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:06-community-mobilization:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:06-community-mobilization:indicator-4",
+              "source_objective_index": 3
+            }
+          ]
+        },
+        {
+          "module_key": "07-disaster-preparedness",
+          "title": {
+            "fil": "Paghahanda at pagtugon sa sakuna",
+            "en": "Disaster preparedness and response"
+          },
+          "required_lesson_keys": [
+            "hazards-capacities",
+            "evacuation-contacts",
+            "go-bag-e-balde",
+            "bhert-coordination",
+            "essential-health-packages",
+            "disaster-tabletop"
+          ],
+          "required_exam_keys": [],
+          "rubric_source": "content/training/chapter2-common-competencies/drafts/07-disaster-preparedness/competency.json",
+          "rubric_sha256": "82fa731d8676c249a5cdf8a666176bb43d7f53d5a16257efcabf13cd6cf2b1a1",
+          "indicators": [
+            {
+              "id": "chapter-2:07-disaster-preparedness:indicator-1",
+              "source_objective_index": 0
+            },
+            {
+              "id": "chapter-2:07-disaster-preparedness:indicator-2",
+              "source_objective_index": 1
+            },
+            {
+              "id": "chapter-2:07-disaster-preparedness:indicator-3",
+              "source_objective_index": 2
+            },
+            {
+              "id": "chapter-2:07-disaster-preparedness:indicator-4",
+              "source_objective_index": 3
+            },
+            {
+              "id": "chapter-2:07-disaster-preparedness:indicator-5",
+              "source_objective_index": 4
+            },
+            {
+              "id": "chapter-2:07-disaster-preparedness:indicator-6",
+              "source_objective_index": 5
+            }
+          ]
+        }
+      ],
+      "posttest": {
+        "id": "chapter-2:posttest",
+        "passing_percent": 80,
+        "source": null,
+        "sha256": null
+      },
+      "orientation": null
+    }
+  ],
+  "unavailable_chapter_keys": [
+    "chapter-3"
+  ]
+}
