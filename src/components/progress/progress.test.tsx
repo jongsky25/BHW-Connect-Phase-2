@@ -105,12 +105,34 @@ describe("MyTrainingCard", () => {
       "href",
       "/training/p1/chapter-1/m1/l2",
     );
+    expect(screen.getByText("Up next: Chapter 1 · 1.1")).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: /Continue where you left off/ })).toHaveLength(1);
   });
 
   it("speaks Filipino by default", () => {
     render(<MyTrainingCard progress={progress} locale="fil" />);
     expect(screen.getByRole("heading", { name: "Ang aking pagsasanay" })).toBeInTheDocument();
     expect(screen.getByText("1 sa 3 na aralin ang tapos")).toBeInTheDocument();
+    expect(screen.getByText("Susunod: Kabanata 1 · 1.1")).toBeInTheDocument();
+  });
+
+  it("points to assessment when lessons are done and no lesson remains to resume", () => {
+    const awaitingAssessment = {
+      ...progress,
+      continueTo: null,
+      chapters: progress.chapters.map((chapter, index) =>
+        index === 0 ? { ...chapter, state: "ready_for_assessment" as const } : chapter,
+      ),
+    };
+    render(<MyTrainingCard progress={awaitingAssessment} locale="en" />);
+    expect(screen.getByText("Up next: Chapter 1 assessment")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "View your next step" })).toHaveAttribute("href", "/training/p1/chapter-1");
+  });
+
+  it("shows a useful manual action when no lesson is available", () => {
+    render(<MyTrainingCard progress={{ ...progress, counts: { done: 0, total: 0, percent: 0 }, continueTo: null, chapters: [] }} locale="en" />);
+    expect(screen.getByText("Explore your chapters and lessons.")).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: "View the whole manual" })).toHaveLength(1);
   });
 });
 
