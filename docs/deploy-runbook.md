@@ -6,10 +6,13 @@
    typecheck, unit tests, an E2E smoke pass, a production build, and the
    Lighthouse performance-budget check.
 2. If the change includes a `supabase/migrations/*.sql` file, apply it to
-   the pilot project (`ltzicxyefizxoqhfuuzc` — the one database; see "One
-   database" below) before or alongside merging, via the Supabase MCP
-   `apply_migration` tool (or `supabase db push` from the CLI if working
-   locally). CI's E2E run does **not** use the pilot: it builds a throwaway
+   the pilot project (`ltzicxyefizxoqhfuuzc`; see "Databases" below) **once,
+   at merge time, from the session that merges**, via the Supabase MCP
+   `apply_migration` tool (or `ALLOW_PILOT=1 supabase db push`). Apply all of
+   a PR's migrations together, never one per session, and not while the
+   pilot's Disk IO budget is low. Each applied migration makes PostgREST
+   reload its schema cache, and that reload (`pg_timezone_names`) is the
+   query that timed out on 27 Sep. CI's E2E run does **not** use the pilot: it builds a throwaway
    database from `supabase/migrations/` (see "E2E database" below), so a PR's
    own migration is already in effect there. That also means every migration
    must replay cleanly on an empty database, in filename order.
@@ -31,8 +34,9 @@ project settings (for the running app) and GitHub Actions repo secrets
 
 | Variable | Vercel | GitHub Actions |
 |---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required (pilot project — `e2e-test-users-purge.yml`, `e2e-test-courses-purge.yml`, `retention-purge.yml`, `training-load.yml`) |
-| `E2E_STABLE_*_PASSWORD` | not needed | required only by `e2e-test-courses-purge.yml` (the stable fixture accounts' passwords **on the pilot project**). `ci.yml`'s E2E job no longer reads them: it uses the local seed's fixed password |
+| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project for Production; **the dev project for Preview**) | **retired**: delete once `PILOT_SUPABASE_*` exist (see "Pilot secrets") |
+| `PILOT_SUPABASE_URL` / `PILOT_SUPABASE_ANON_KEY` | not needed | required (pilot project) by `retention-purge.yml` (URL) and `training-load.yml` (anon key) |
+| `E2E_STABLE_*_PASSWORD` | not needed | **retired**: no workflow reads them (`ci.yml` uses the local seed's fixed password). Keep them only in `.env.local` when running E2E against a hosted dev project |
 | ~~`E2E_SUPABASE_URL` / `E2E_SUPABASE_ANON_KEY`~~ | — | no longer read; delete once the switch to one database is confirmed green |
 | `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN` | optional — app runs fine unset | optional (build-time only) |
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
@@ -41,13 +45,37 @@ project settings (for the running app) and GitHub Actions repo secrets
 | `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | required for `ci.yml`'s E2E job — the seed turns `ai_external`/`ai_gap_draft` on, as on the pilot, so `e2e/ai-gap-draft.spec.ts` makes a real provider call each run (small quota cost) |
 | `GEMINI_MODEL` | optional — defaults to `gemini-3.6-flash`. **Set this when the provider retires a model**: a shut-down model returns 404 on every call, and this is the switch that fixes it without a deploy. `gemini-2.0-flash` was shut down 2026-06-01 | optional (E2E job; same default) |
 
-## One database
+## Databases
 
-There is **one** hosted Supabase project for this phase: the pilot project
-(`ltzicxyefizxoqhfuuzc`, "gibs-21's Project"). The live app on Vercel and
-the content loaders point at it. The four stable fixture accounts
-(`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`) exist there
-for the post-deploy smoke check.
+- **Pilot** (`ltzicxyefizxoqhfuuzc`, "gibs-21's Project"): real BHWs only.
+  The live app on Vercel (Production), reviewed migrations, deliberate content
+  loads, and the post-deploy smoke check with the four stable fixture accounts
+  (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`).
+- **Local** (`npx supabase start`): CI's E2E job, and development wherever
+  Docker runs.
+- **Dev** (`bhw-connect-e2e`, `ekehmwzyhlagtfuvquho`): development in cloud
+  sandboxes without Docker, and Vercel Preview deployments. It uses the free
+  org's second active-project slot.
+
+`scripts/lib/pilot-guard.mjs` makes `next dev`/`build`/`start` (via
+`next.config.ts`), Playwright and every loader's `--project` refuse the pilot
+outside Vercel unless `ALLOW_PILOT=1` is set. `npm run doctor -- --brief`
+(the SessionStart hook) prints which database this environment points at.
+
+## Pilot secrets
+
+Old workflow runs are re-run with their **original** commit's workflow file.
+A re-run of a CI run from before #158 therefore still runs E2E against the
+pilot, through the repo secret `NEXT_PUBLIC_SUPABASE_URL`. That is what caused
+the 03:15 UTC spike on 28 Sep (a re-run of #157). To close that for good:
+
+1. In GitHub → Settings → Secrets and variables → Actions, add
+   `PILOT_SUPABASE_URL` and `PILOT_SUPABASE_ANON_KEY` with the pilot's values.
+   The workflows on `main` read these first (falling back to the old names
+   until they exist).
+2. Delete `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` and the
+   four `E2E_*` secrets. Old CI runs then fail fast instead of loading the
+   pilot.
 
 ## E2E database
 
@@ -85,13 +113,15 @@ Consequences:
   `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the `ANON_KEY` that `npx supabase status`
   prints, and every `E2E_STABLE_*_PASSWORD` to `local-e2e-password`, then
   `npm run e2e`. `npx supabase db reset` rebuilds the database from scratch.
-- `e2e-test-users-purge.yml` and `e2e-test-courses-purge.yml` still target
-  the pilot, to clear the test data E2E left there before the switch.
+- The weekly `e2e-test-users-purge.yml` and `e2e-test-courses-purge.yml`
+  workflows were deleted on 28 Sep 2026. A service-role dry run of both
+  purge RPCs on the pilot reported 0 users, 0 forum categories and 0 courses
+  left over, so there is nothing left for them to clear.
 
-The old `bhw-connect-e2e` project (`qeryhxctxslhdkclifom`) is retired: nothing
-in the repo reads it any more. Pause or delete it in the Supabase dashboard
-once CI is green against the pilot. Earlier history notes below still mention
-it; they describe what happened at the time.
+The original `bhw-connect-e2e` project (`qeryhxctxslhdkclifom`) is gone. The
+current project of that name (`ekehmwzyhlagtfuvquho`, created 28 Sep 2026) is
+the dev database above. Earlier history notes below describe what happened
+at the time.
 
 ## Migration history notes
 

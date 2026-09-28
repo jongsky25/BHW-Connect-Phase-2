@@ -116,35 +116,35 @@ const REGISTER = [
   },
   {
     name: "E2E_STABLE_BHW_PASSWORD",
-    store: "githubSecrets",
+    store: "localOnly",
     secret: true,
-    alsoIn: ["localOnly"],
-    consumers: ["ci.yml", "e2e/auth.spec.ts"],
-    blocks: "Running the E2E suite locally. CI has its own copy.",
+    consumers: ["e2e/auth.spec.ts against a hosted dev project"],
+    blocks:
+      "Running E2E against a hosted dev project. CI and a local `supabase start` use supabase/seed.sql's local-e2e-password instead.",
   },
   {
     name: "E2E_STABLE_ADMIN_PASSWORD",
-    store: "githubSecrets",
+    store: "localOnly",
     secret: true,
-    alsoIn: ["localOnly"],
-    consumers: ["ci.yml", "e2e/auth.spec.ts"],
-    blocks: "Running the E2E suite locally. CI has its own copy.",
+    consumers: ["e2e/auth.spec.ts against a hosted dev project"],
+    blocks:
+      "Running E2E against a hosted dev project. CI and a local `supabase start` use supabase/seed.sql's local-e2e-password instead.",
   },
   {
     name: "E2E_OTHER_BARANGAY_BHW_PASSWORD",
-    store: "githubSecrets",
+    store: "localOnly",
     secret: true,
-    alsoIn: ["localOnly"],
-    consumers: ["ci.yml", "e2e/auth.spec.ts"],
-    blocks: "Running the E2E suite locally. CI has its own copy.",
+    consumers: ["e2e/auth.spec.ts against a hosted dev project"],
+    blocks:
+      "Running E2E against a hosted dev project. CI and a local `supabase start` use supabase/seed.sql's local-e2e-password instead.",
   },
   {
     name: "E2E_STABLE_CITY_ADMIN_PASSWORD",
-    store: "githubSecrets",
+    store: "localOnly",
     secret: true,
-    alsoIn: ["localOnly"],
-    consumers: ["ci.yml", "e2e/dashboard.spec.ts"],
-    blocks: "Running the E2E suite locally. CI has its own copy.",
+    consumers: ["e2e/dashboard.spec.ts against a hosted dev project"],
+    blocks:
+      "Running E2E against a hosted dev project. CI and a local `supabase start` use supabase/seed.sql's local-e2e-password instead.",
   },
   {
     name: "SENTRY_AUTH_TOKEN",
@@ -163,6 +163,31 @@ const SESSION_CRITICAL = new Set([
   "KB_LOADER_ANON_KEY",
 ]);
 
+// Which database a dev server / E2E run here would use. The pilot is refused
+// by scripts/lib/pilot-guard.mjs without ALLOW_PILOT=1; say so up front.
+import { existsSync, readFileSync } from "node:fs";
+import { PILOT_PROJECT_REF, isPilot } from "./lib/pilot-guard.mjs";
+
+function databaseTarget() {
+  let url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  let via = "environment";
+  if (!url && existsSync(".env.local")) {
+    const match = readFileSync(".env.local", "utf8").match(/^NEXT_PUBLIC_SUPABASE_URL=(.*)$/m);
+    if (match) {
+      url = match[1].trim().replace(/^["']|["']$/g, "");
+      via = ".env.local";
+    }
+  }
+  if (!url) return "database: none configured — use `npx supabase start` (http://127.0.0.1:54321) for dev and E2E.";
+  if (isPilot(url)) {
+    return (
+      `database: WARNING — NEXT_PUBLIC_SUPABASE_URL (${via}) is the PILOT (${PILOT_PROJECT_REF}). ` +
+      "Dev servers and E2E refuse it without ALLOW_PILOT=1. Point it at `supabase start` or the dev project."
+    );
+  }
+  return `database: ${url} (${via}) — not the pilot.`;
+}
+
 function resolve(entry) {
   const direct = process.env[entry.name];
   if (direct) return { set: true, via: entry.name, length: direct.length };
@@ -176,8 +201,11 @@ function brief() {
   const missing = REGISTER.filter(
     (e) => SESSION_CRITICAL.has(e.name) && !resolve(e).set,
   );
+  console.log(databaseTarget());
   if (missing.length === 0) {
-    console.log("credentials: pilot loader credentials present — training:load can run here.");
+    console.log(
+      "credentials: pilot loader credentials present. Pilot loads need ALLOW_PILOT=1; dev and E2E use --project local.",
+    );
     return 0;
   }
   console.log(
@@ -259,8 +287,9 @@ function full() {
     console.log("  To make sessions self-sufficient instead, set the three KB_LOADER_* values");
     console.log("  as Claude Code environment variables — see docs/credentials.md.\n");
   } else {
-    console.log("  ---\n  All pilot loader credentials present. training:load can run here.\n");
+    console.log("  ---\n  All pilot loader credentials present. Pilot loads need ALLOW_PILOT=1.\n");
   }
+  console.log(`  ${databaseTarget()}\n`);
   return 0;
 }
 
