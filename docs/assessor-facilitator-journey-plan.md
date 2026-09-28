@@ -77,3 +77,65 @@ Replace the flat pass/fail list with a mobile-first flow: **catchment dashboard 
 ## Out of scope for this planning PR
 
 No production migration, feature flag change, qualification grant, assessor training publication, or replacement of the current assessment UI is included. Those belong to the reviewed increments above.
+
+
+## Reviewable screen flow for Increment A
+
+The first release should provide one clear assessor entry point, such as **Facilitate and assess**, linked from the assessor home/navigation. It has four destinations: **My chapter qualifications**, **BHWs in my area**, **Sessions**, and **Assigned assessments**. The latter two can retain their current data and actions while their navigation points into the new BHW workspace. An admin's separate `/admin/training-progress` page remains an administrative view.
+
+```mermaid
+flowchart TD
+  A["Facilitate and assess"] --> Q["My qualifications"]
+  A --> D["BHWs in my area"]
+  A --> S["Sessions"]
+  A --> P["Assigned assessments"]
+  Q --> T["BHW chapter course and assessor training"]
+  D --> B["BHW profile and chapter progress"]
+  S --> B
+  P --> B
+  B --> C["Eligible component"]
+  C --> R["Evidence and anchored rating"]
+  R --> F["Review, decide, follow up"]
+```
+
+| Screen | Primary content | Primary action | Empty/blocked state |
+|---|---|---|---|
+| My qualifications | One card per published chapter: BHW learning, tests, assessor training, calibration, qualification date and version. | Continue the earliest incomplete prerequisite. | Explain why assessment authority is unavailable; link directly to training. |
+| BHWs in my area | Search, org filter, paged list of active BHWs, chapter progress, next action and follow-up count. | Open the selected BHW. | No matching BHWs; clear filters. Scope is explained without disclosing out-of-area names. |
+| BHW detail | Identity and barangay, chapter step tracker, subchapter lesson progress, tests, observations, assessment history and a component list. | Open a component labelled Ready, Needs practice, Waiting for BHW, or Unavailable. | Give the specific prerequisite and the next person/action; never leave a disabled control unexplained. |
+| Component assessment | Observable behavior and rating anchors, linked activity, evidence note, previous ratings, save-progress state. | Save observation or continue to review. | Show required fields and recoverable save errors; no certificate action in this screen. |
+| Review and decision | Each required component's latest valid evidence, missing items, BHW feedback and outcome. | Confirm decision once the server verifies prerequisites and evidence. | List missing items with links back to the relevant component. |
+
+### Example BHW component states
+
+These are UI examples for review; exact readiness thresholds and required indicators come from the approved chapter rubric, not these labels.
+
+| BHW record | Component display | Assessor action |
+|---|---|---|
+| Pretest missing, no lessons started | Waiting for BHW — take the pretest. | View progress or guide the BHW to their own pretest; no assessor-submitted attempt. |
+| Lessons under way, practice session occurring | Practice observation available. Final assessment waiting for learning. | Record formative evidence and feedback; do not issue a final decision. |
+| Required lessons done and post-test recorded | Ready to assess, subject to the approved component prerequisites. | Select an indicator and record observed performance. |
+| Latest indicator is Kailangan pa ng practice | Needs practice — show the exact indicator, feedback and suggested activity. | Re-observe after practice; retain earlier history. |
+| All required indicators have valid passing evidence | Ready for review. | Check the consolidated record and submit the chapter decision. |
+| Assessor has the role but lacks qualification for this chapter | Read-only chapter progress; qualification required. | Continue assessor training. Direct claim/decision RPCs must reject this actor. |
+| Assessment assigned to another qualified assessor | Assigned elsewhere. | Read only if the user's scope permits; no duplicate decision. |
+
+### First-use guidance
+
+The tour has four short steps, each with **Next**, **Back**, **Skip**, and **Open this guide later**:
+
+1. Find a BHW using area and name; session enrollment is optional.
+2. Read the chapter progress and the reason each component is ready or blocked.
+3. Observe against the written indicator, choose a level and record what was actually seen.
+4. Review all evidence, give actionable feedback and confirm the final decision.
+
+Contextual help on the BHW detail explains the difference between the BHW's pre/post-tests, practice observations and final assessment. The rating screen links to the chapter's facilitator guide and sample calibrated case. A persistent guide entry makes the tour available again. The tour is guidance only; qualification and eligibility remain server-enforced.
+
+### Interaction and content acceptance
+
+- At 360px, a BHW's name, barangay, next action and chapter state are visible before opening details. Actions have touch-sized targets; ratings are labelled with words, not colour alone.
+- Search and area filters preserve state when a BHW detail is opened and closed. Pagination is server-side; the current first-500 facilitator roster is not treated as a complete catchment list.
+- A BHW with zero eligible components still has a useful next action. Every blocked state names the missing prerequisite without exposing private guide notes to the learner.
+- Switching Filipino/English changes every label, eligibility reason, rating anchor, error and help step without changing records.
+- Saving an observation, leaving, and returning shows it in history. A newer observation does not erase the earlier one or retroactively change a signed decision.
+- A direct API attempt to claim or decide from an unqualified, out-of-area, inactive or self-assessing account is denied regardless of what the page displayed.
