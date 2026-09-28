@@ -43,22 +43,48 @@ describe('formative lesson completion',()=>{
   });
   it('preserves historical completion and returns to the list after the last lesson',()=>{
     const d=data();d.completed=[{lesson_id:'lesson',revision_id:'old',course_progress_id:'p',completed_at:'2026-09-24',completion_basis:'legacy_equivalence',legacy_module_id:'module',migration_batch:'batch'}];
-    view(d,vi.fn(),{nextLessonHref:undefined});expect(screen.getByRole('button',{name:'Completed'})).toBeDisabled();
+    view(d,vi.fn(),{nextLessonHref:undefined,completionMilestone:{scope:'subchapter',number:'1.1'}});expect(screen.getByRole('button',{name:'Completed'})).toBeDisabled();
     expect(screen.getByRole('link',{name:/Return to the lesson list/})).toHaveAttribute('href','/lessons');
     expect(screen.getByText('Well done! Lesson complete. Your progress is saved.').closest('.lesson-completion')).not.toHaveAttribute('data-celebrating');
+    expect(screen.queryByText('Subchapter 1.1 lessons complete!')).not.toBeInTheDocument();
+  });
+  it.each([
+    ['subchapter','1.1','Subchapter 1.1 lessons complete!'],
+    ['chapter','1','Chapter 1 lessons complete!'],
+  ] as const)('recognizes a newly finished %s after the save succeeds',async(scope,number,message)=>{
+    view(data(),vi.fn().mockResolvedValue(undefined),{completionMilestone:{scope,number}});
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
+    await screen.findByRole('button',{name:'Completed'});
+    expect(screen.getByText(message)).toBeInTheDocument();
+    expect(screen.getByText(message).closest('.lesson-completion')).toHaveAttribute('data-celebrating','true');
+  });
+  it('keeps the saved milestone visible when refreshed server props no longer predict it',async()=>{
+    const {rerender}=view(data(),vi.fn().mockResolvedValue(undefined),{completionMilestone:{scope:'chapter',number:'1'}});
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
+    await screen.findByRole('button',{name:'Completed'});
+    rerender(<ReferenceLessons {...data()} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(screen.getByText('Chapter 1 lessons complete!')).toBeInTheDocument();
+  });
+  it('describes finished chapter lessons in Filipino without implying certification',async()=>{
+    view(data(),vi.fn().mockResolvedValue(undefined),{locale:'fil',completionMilestone:{scope:'chapter',number:'1'}});
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Susunod'}));fireEvent.click(screen.getByRole('button',{name:'Magtanong'}));fireEvent.click(screen.getByRole('button',{name:'Markahang tapos ang aralin'}));
+    await screen.findByRole('button',{name:'Natapos'});
+    expect(screen.getByText('Tapos na ang mga aralin sa Kabanata 1!')).toBeInTheDocument();
   });
   it('reports failed completion and allows retry without losing attempts',async()=>{
-    const complete=vi.fn().mockRejectedValueOnce(Error('offline')).mockResolvedValue(undefined);view(data(),complete);
+    const complete=vi.fn().mockRejectedValueOnce(Error('offline')).mockResolvedValue(undefined);view(data(),complete,{completionMilestone:{scope:'subchapter',number:'1.1'}});
     fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
     await screen.findByRole('alert');expect(screen.queryByRole('link',{name:/Next lesson/})).not.toBeInTheDocument();expect(button()).toBeEnabled();
     expect(screen.queryByText('Well done! Lesson complete. Your progress is saved.')).not.toBeInTheDocument();
+    expect(screen.queryByText('Subchapter 1.1 lessons complete!')).not.toBeInTheDocument();
     fireEvent.click(button());await waitFor(()=>expect(screen.getByRole('button',{name:'Completed'})).toBeDisabled());expect(complete).toHaveBeenCalledTimes(2);
   });
   it('uses a static saved state when the learner requests reduced motion',async()=>{
     document.documentElement.setAttribute('data-motion','reduce');
-    view();fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
+    view(data(),vi.fn().mockResolvedValue(undefined),{completionMilestone:{scope:'subchapter',number:'1.1'}});fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
     await screen.findByRole('button',{name:'Completed'});
     expect(screen.getByText('Well done! Lesson complete. Your progress is saved.').closest('.lesson-completion')).not.toHaveAttribute('data-celebrating');
+    expect(screen.getByText('Subchapter 1.1 lessons complete!')).toBeInTheDocument();
   });
   it('keeps preview read-only and localizes the completion guidance',()=>{
     view(data(),vi.fn(),{readOnly:true,locale:'fil'});expect(screen.queryByRole('button',{name:'Markahang tapos ang aralin'})).not.toBeInTheDocument();cleanup();

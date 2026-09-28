@@ -14,6 +14,7 @@ import {ManualSummary} from '@/components/progress/manual-summary';
 import {ProgressBar} from '@/components/progress/progress-bar';
 import {LessonStatus,StatusChip} from '@/components/progress/status-chip';
 import {loadManualProgress} from '@/lib/progress/load-manual-progress';
+import {completionMilestoneOnSave} from '@/lib/progress/completion-milestone';
 import {loadChapterTestItems,loadLessonGuide,loadSubchapterGuide} from '@/lib/elearning/load-facilitator-guide';
 import {getViewer} from '@/lib/auth/viewer';
 import {createClient} from '@/lib/supabase/server';
@@ -213,6 +214,12 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const revision=revisionResult.data;
         const featured=revision.featured_asset_id?revision.assets.find(a=>a.id===revision.featured_asset_id):undefined;
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
+        const completionScope=readOnly?null:completionMilestoneOnSave(lesson,lessons??[],modules??[],done);
+        const subchapterNumber=(modules??[]).filter(m=>m.type!=='quiz').findIndex(m=>m.id===subchapter.id)+1;
+        const completionMilestone=completionScope?{
+          scope:completionScope,
+          number:completionScope==='chapter'?String(chapter.position+1):`${chapter.position+1}.${subchapterNumber}`,
+        }:undefined;
         const adjacentHref=(id:string)=>`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
         content=<>
@@ -232,6 +239,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           returnHref={facilitator?`${moduleHref}?view=slides`:undefined}
           initialMode={facilitator && mode==='slides'?'slides':undefined}
           nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
+          completionMilestone={completionMilestone}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}

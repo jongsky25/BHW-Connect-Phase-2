@@ -80,18 +80,24 @@ body {
   animation: lesson-completion-pop 480ms ease-out both;
 }
 
+.lesson-completion[data-celebrating="true"] .scope-recognition-star {
+  animation: lesson-completion-pop 480ms 100ms ease-out both;
+}
+
 @keyframes lesson-completion-pop {
   0% { opacity: 0.7; transform: scale(0.75); }
   65% { opacity: 1; transform: scale(1.12); }
   100% { opacity: 1; transform: scale(1); }
 }
 
-:root[data-motion="reduce"] .lesson-completion-check {
+:root[data-motion="reduce"] .lesson-completion-check,
+:root[data-motion="reduce"] .scope-recognition-star {
   animation: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lesson-completion-check {
+  .lesson-completion-check,
+  .scope-recognition-star {
     animation: none;
   }
 }

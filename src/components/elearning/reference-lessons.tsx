@@ -43,6 +43,7 @@ type Props = ReferenceData & {
   lessonNumber?: number;
   lessonCount?: number;
   nextLessonHref?: string;
+  completionMilestone?: { scope: "subchapter" | "chapter"; number: string };
   // Lesson ID -> Read-mode narration in the current language (optional).
   narration?: Record<string, LessonNarration>;
   locale: string;
@@ -101,6 +102,7 @@ export function ReferenceLessons(props: Props) {
   const [mode, setMode] = useState<LessonModality>(startingMode);
   const [resumes, setResumes] = useState(props.resumes);
   const [completed, setCompleted] = useState(props.completed);
+  const [savedMilestone, setSavedMilestone] = useState<({ lessonId: string } & NonNullable<Props["completionMilestone"]>) | null>(null);
   const [newlyCompletedLessonId, setNewlyCompletedLessonId] = useState<string | null>(null);
   const [position, setPosition] = useState<string | null>(initial?lessonPosition(initial,startingMode,startingResume).id:null);
   const [error, setError] = useState<string | null>(null);
@@ -243,6 +245,7 @@ export function ReferenceLessons(props: Props) {
   }
   function open(l: PublishedLesson) {
     if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}
+    setSavedMilestone(null);
     setNewlyCompletedLessonId(null);
     const latest = resumes
       .filter((r) => r.lesson_id === l.id)
@@ -339,6 +342,7 @@ export function ReferenceLessons(props: Props) {
               },
             ],
       );
+      setSavedMilestone(props.completionMilestone ? { lessonId: lesson.id, ...props.completionMilestone } : null);
       setNewlyCompletedLessonId(prefersReducedMotion() ? null : lesson.id);
     } catch {
       setError(
@@ -593,6 +597,20 @@ export function ReferenceLessons(props: Props) {
               <span aria-hidden="true" className="lesson-completion-check flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-success text-xl font-bold text-canvas">✓</span>
               <div className="min-w-0">
                 <p className="font-semibold">{ui("Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.", "Well done! Lesson complete. Your progress is saved.")}</p>
+                {savedMilestone?.lessonId === lesson.id && (
+                  <p className="mt-3 flex items-start gap-2 rounded-lg border border-celebration/60 bg-celebration/20 px-3 py-2 font-medium">
+                    <span aria-hidden="true" className="scope-recognition-star text-primary-text">★</span>
+                    <span>{savedMilestone.scope === "chapter"
+                      ? ui(
+                          `Tapos na ang mga aralin sa Kabanata ${savedMilestone.number}!`,
+                          `Chapter ${savedMilestone.number} lessons complete!`,
+                        )
+                      : ui(
+                          `Tapos na ang mga aralin sa subchapter ${savedMilestone.number}!`,
+                          `Subchapter ${savedMilestone.number} lessons complete!`,
+                        )}</span>
+                  </p>
+                )}
                 {props.nextLessonHref ? <Link prefetch={false} className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
                   {ui("Susunod na aralin →", "Next lesson →")}
                 </Link> : props.lessonBaseHref ? <Link prefetch={false} className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>

@@ -47,6 +47,15 @@ create new activity or qualification records.
 3. Add permanent achievements only after defining award-once rules, historical
    backfill, reset handling, and distinct assessor qualification criteria.
 
+The completion recognition in increment 2 uses the published, required
+lessons already loaded for the chapter. A subchapter message appears only when
+the saved lesson was its last unfinished required lesson; a chapter message
+takes precedence when it was the chapter's last. Quiz modules and optional
+lessons do not trigger either message. The chapter copy says its *lessons* are
+complete, without implying that the assessment or certificate is complete.
+The message appears only after a successful save, never on a historical
+completion or failed save. Reduced-motion users see the same static message.
+
 The visual language stays within `src/styles/tokens.css`: warm canvas,
 marigold action, teal accent, and sampaguita yellow for recognition. All
 meaningful status uses text and an icon as well as color. Check the design
