@@ -242,6 +242,11 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
   }
   return <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
     <Breadcrumbs items={crumbs}/><header><h1 className="text-2xl font-semibold sm:text-3xl">{heading}</h1>{intro&&<p className="mt-2 text-ink/70">{intro}</p>}</header>
+    {role==='assessor' && !viewer.isPreview && program.content_key==='bhw-reference-manual' && <aside className="rounded-xl border border-primary/30 p-4">
+      <h2 className="font-semibold">{text('Pag-aaral para maging assessor','Study to become an assessor')}</h2>
+      <p className="mt-1 text-sm">{text('Aralin ang buong kabanata at i-save ang sarili mong progreso. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Study the full chapter and save your own progress. No practical assessment by another assessor is required.')}</p>
+      <div className="mt-3 flex flex-wrap gap-3">{chapters?.filter(c=>c.availability==='available' && c.course_id && ['chapter-1','chapter-2'].includes(c.chapter_key)).map(c=><Link key={c.id} prefetch={false} className="rounded border px-4 py-3 underline" href={`${base}/assessor/${c.chapter_key}`}>{text('Pag-aralan: ','Study: ')}{title(c)}</Link>)}</div>
+    </aside>}
     {content}
   </div>;
 }
