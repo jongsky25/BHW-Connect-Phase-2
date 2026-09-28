@@ -27,12 +27,13 @@ jobs:
     steps:
       - name: Call rpc_retention_purge
         env:
-          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          # PILOT_SUPABASE_URL: see docs/deploy-runbook.md "Pilot secrets".
+          SUPABASE_URL: ${{ secrets.PILOT_SUPABASE_URL || secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           DRY_RUN: ${{ inputs.dry_run || 'true' }}
         run: |
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
-            echo "::error::NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
+            echo "::error::PILOT_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY secrets are not set"
             exit 1
           fi
           curl -sS --fail-with-body -X POST \

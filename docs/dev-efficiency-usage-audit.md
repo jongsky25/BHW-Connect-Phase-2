@@ -30,18 +30,24 @@ schema-cache load timed out (PGRST002 503s) for hours, for real users too.
 **Already fixed:** #158 moved CI E2E to a throwaway local `supabase start`
 stack. Traffic dropped from ~50k/h to ~1k/h right after.
 
-**Not fixed yet.** The pilot is still being used as a development database:
+**Not fixed yet (corrected 28 Sep, 04:10 UTC).** The first draft of this
+audit said dev sessions were still using the pilot. A 15-minute breakdown of
+28 Sep's logs shows otherwise: apart from Vercel, the **only** traffic was
+one burst at 03:15 UTC (4,223 `Next.js Middleware` requests, 1,321 `node`
+and 329 browser requests). That burst is a **re-run of #157's old CI run**.
+A re-run uses the workflow file from its original commit, which is the
+pilot-based E2E, and it reads the pilot URL from the repo secret
+`NEXT_PUBLIC_SUPABASE_URL`. So the remaining leak is **old CI workflows**,
+not dev servers.
 
-- In today's logs, about **1,100 of ~1,200 middleware auth calls came from
-  `Next.js Middleware` / `node` user agents**. That is a local or sandbox
-  `next start`, not Vercel (Vercel shows `Vercel Edge Functions`, 105 calls).
-  So dev sessions and PR re-runs are still hitting the pilot.
-- The 03:00 UTC spike today lines up with a **re-run of #157's old CI run**.
-  A re-run uses the workflow file from its original commit, which is the
-  pilot-based E2E.
-- #160 is still open. It proposes a *separate hosted* E2E project,
-  `bhw-connect-e2e`, re-created today. That competes with #158 and uses the
-  free org's **second (last) active project slot**.
+- The fix is to close the pilot-based PRs and rename that secret (see
+  `docs/deploy-runbook.md` "Pilot secrets"). The pilot guard
+  (`scripts/lib/pilot-guard.mjs`) stops dev servers and scripts from
+  drifting back to it.
+- #160 proposes a *separate hosted* E2E project, `bhw-connect-e2e`,
+  re-created today. It competes with #158 and uses the free org's **second
+  (last) active project slot**. The project stays as the sandbox dev
+  database, and the CI change is dropped.
 
 ---
 
@@ -325,7 +331,7 @@ that isn't users at all; the middleware fix only lowers the per-user cost.
 
 | # | Action | Done when | Effort |
 |---|---|---|---|
-| 1 | **One dev database, enforced in code.** Use `supabase start` wherever Docker is available (local machines, GitHub runners). Use the hosted `bhw-connect-e2e` project only for cloud sandbox sessions that can't run Docker. Point `.env.local`, session credentials and loader defaults at it. **Guards:** `next dev`, `playwright test` and `scripts/*` refuse to start when `NEXT_PUBLIC_SUPABASE_URL` contains the pilot ref `ltzicxyefizxoqhfuuzc`, unless `ALLOW_PILOT=1` is set. `doctor.mjs` warns when `.env.local` points at the pilot. The SessionStart hook checks for a *dev* database instead of pilot loader credentials. Remove `training:load` from the pre-approved commands in `.claude/settings.json`, or scope it to `--project local`. | `Next.js Middleware`/`node` user agents are under 5% of pilot edge logs for a week | S–M |
+| 1 | **One dev database, enforced in code.** _(Done in the follow-up PR: `scripts/lib/pilot-guard.mjs`, doctor warning, docs. The main leak turned out to be old CI re-runs, closed by the secret rename in "Pilot secrets".)_ Use `supabase start` wherever Docker is available (local machines, GitHub runners). Use the hosted `bhw-connect-e2e` project only for cloud sandbox sessions that can't run Docker. Point `.env.local`, session credentials and loader defaults at it. **Guards:** `next dev`, `playwright test` and `scripts/*` refuse to start when `NEXT_PUBLIC_SUPABASE_URL` contains the pilot ref `ltzicxyefizxoqhfuuzc`, unless `ALLOW_PILOT=1` is set. `doctor.mjs` warns when `.env.local` points at the pilot. The SessionStart hook checks for a *dev* database instead of pilot loader credentials. Remove `training:load` from the pre-approved commands in `.claude/settings.json`, or scope it to `--project local`. | `Next.js Middleware`/`node` user agents are under 5% of pilot edge logs for a week | S–M |
 | 2 | **One E2E strategy.** Keep #158 (local stack). Close #157. From #160, drop the CI change but keep the `bhw-connect-e2e` project as the sandbox dev database from item 1. Never re-run a CI run from before #158; push or merge `main` instead. | No pilot sign-ins from CI; #157/#160 closed | S |
 | 3 | **Middleware matcher:** exclude `mp3\|mp4\|webm\|vtt\|pdf\|json\|txt\|ico\|woff2?\|map` and `/training/`. Add `Cache-Control: public, max-age=31536000, immutable` for `/training/*` in `next.config.ts` (H1). **Decision to record:** afterwards, lesson media can be downloaded by anyone who has the URL (today, signed-out requests redirect to `/login`). It is public DOH training material already in `public/`, so this should be fine, but it is a deliberate choice, not a side effect. | Media responses have no `Set-Cookie` and are served from the CDN cache (`x-vercel-cache: HIT`); `auth/v1/user` calls per lesson view drop | S |
 | 4 | **CI `paths-ignore`** for `docs/**`, `**/*.md`, `pitch/**`, `mockups/**`, `prototypes/**` and `content/**/*.md`, plus workflow-level `concurrency` with `cancel-in-progress`. **Caveat:** if a CI check is *required* by branch protection, a skipped workflow leaves it pending and the PR can't merge. Either keep the checks non-required, or add a tiny always-green `docs-only` workflow on the ignored paths that reports the same check names. The same applies to `[skip ci]`. | A docs-only PR runs no E2E and can still merge | S |

@@ -1,5 +1,6 @@
 import { existsSync } from "node:fs";
 import { defineConfig, devices } from "@playwright/test";
+import { assertPilotAllowed } from "./scripts/lib/pilot-guard.mjs";
 
 // Next's dev/build server loads .env.local itself; the Playwright test
 // process is separate and needs it too (auth specs call the Supabase REST
@@ -10,14 +11,10 @@ if (existsSync(".env.local")) {
 }
 
 // .env.local usually points the app at the pilot. E2E writes users, content
-// and global flag flips, so refuse rather than spend the pilot's disk I/O.
-const PILOT_PROJECT_REF = "ltzicxyefizxoqhfuuzc";
-if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes(PILOT_PROJECT_REF)) {
-  throw new Error(
-    "E2E is pointed at the pilot Supabase project. Run it against a local Supabase " +
-      "(docs/deploy-runbook.md, \"E2E database\").",
-  );
-}
+// and global flag flips, so refuse rather than spend the pilot's disk I/O —
+// unconditionally: unlike the loaders, ALLOW_PILOT=1 does not unlock E2E
+// (see docs/deploy-runbook.md, "E2E database").
+assertPilotAllowed(process.env.NEXT_PUBLIC_SUPABASE_URL, "E2E NEXT_PUBLIC_SUPABASE_URL", {});
 
 // Some sandboxes pre-install a Chromium build that predates this package's
 // expected revision and block re-downloading; use it directly when present,

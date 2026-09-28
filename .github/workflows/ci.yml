@@ -10,8 +10,45 @@ on:
 # against its own throwaway Supabase, so nothing is left dirty.
 
 jobs:
+  # Docs-only changes (docs/, pitch/, mockups/, prototypes/, Markdown outside
+  # content/) skip the ~10 runner-minute checks + E2E run. The jobs are skipped
+  # with `if:`, not filtered with `paths-ignore`, so they still report their
+  # check names (as "skipped", which satisfies a required status check) and a
+  # docs-only PR can merge. Anything else, or any doubt (a diff that can't be
+  # computed), runs everything. content/ always counts: the app imports its
+  # JSON and the unit tests read its Markdown.
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      app: ${{ steps.diff.outputs.app }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: diff
+        env:
+          # pull_request checks out the PR's merge commit, whose first parent
+          # is this base SHA, so the diff is exactly what the PR changes.
+          BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          set -u
+          app=true
+          if git fetch --quiet --depth=1 origin "$BASE" 2>/dev/null \
+            && changed=$(git diff --name-only "$BASE" HEAD) && [ -n "$changed" ]; then
+            app=false
+            while IFS= read -r f; do
+              case "$f" in
+                content/*) app=true ;;
+                docs/*|pitch/*|mockups/*|prototypes/*|.claude/*|.agents/*|*.md) ;;
+                *) app=true ;;
+              esac
+            done <<< "$changed"
+            echo "Changed files:"; echo "$changed"
+          fi
+          echo "app=$app" | tee -a "$GITHUB_OUTPUT"
+
   # Pure local checks: fully parallel across PRs, fast feedback.
   checks:
+    needs: changes
+    if: needs.changes.outputs.app == 'true'
     runs-on: ubuntu-latest
     concurrency:
       group: checks-${{ github.event.pull_request.number || github.ref }}

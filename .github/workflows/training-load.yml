@@ -57,7 +57,10 @@ jobs:
         env:
           KB_LOADER_USERNAME: ${{ vars.KB_LOADER_USERNAME || 'training.loader' }}
           KB_LOADER_PASSWORD: ${{ secrets.KB_LOADER_PASSWORD }}
-          KB_LOADER_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          KB_LOADER_ANON_KEY: ${{ secrets.PILOT_SUPABASE_ANON_KEY || secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          # A manual dispatch is a deliberate content load; the loaders refuse
+          # the pilot project without this (scripts/lib/pilot-guard.mjs).
+          ALLOW_PILOT: "1"
           LOAD_MODE: ${{ inputs.mode }}
           LOAD_PROJECT: ${{ inputs.project }}
           LOAD_ORG_UNIT: ${{ inputs.org_unit }}

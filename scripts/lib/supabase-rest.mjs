@@ -3,11 +3,14 @@
 // supabase-js client, so the scripts run on plain Node with no build step and
 // every write goes through the same public API an admin's browser would use.
 
+import { assertPilotAllowed } from "./pilot-guard.mjs";
+
 // `--project local` targets the throwaway stack `npx supabase start` runs
 // (CI's E2E job seeds its KB content this way — see docs/deploy-runbook.md's
 // "E2E database" section).
 export function projectUrl(ref) {
   if (ref === "local") return "http://127.0.0.1:54321";
+  assertPilotAllowed(ref, `--project ${ref}`);
   return `https://${ref}.supabase.co`;
 }
 
