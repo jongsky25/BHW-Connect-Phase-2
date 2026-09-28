@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Atkinson_Hyperlegible, Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { cookies, headers } from "next/headers";
@@ -24,6 +24,22 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Reading-font setting (Phase 4.3, docs/header-navigation-display-settings-
+// plan.md §6): a dyslexia/low-vision-friendly typeface, opt-in via Settings
+// -> Reading & comfort. `preload: false` keeps it out of every page's
+// critical path — it only costs a network request once someone actually
+// turns the setting on and `[data-reading-font="hyperlegible"]` (tokens.css)
+// swaps it in; `display: "swap"` avoids an invisible-text flash for that
+// same case. `latin-ext` alongside `latin` covers Filipino diacritics (e.g.
+// ñ) the same way the KB/lesson content needs them rendered correctly.
+const atkinsonHyperlegible = Atkinson_Hyperlegible({
+  variable: "--font-atkinson-hyperlegible",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "700"],
+  preload: false,
+  display: "swap",
 });
 
 // generateMetadata/generateViewport (not the static `metadata`/`viewport`
@@ -68,7 +84,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       {...displayAttributes(a11y)}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${atkinsonHyperlegible.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-canvas text-ink">
         <NextIntlClientProvider locale={locale} messages={messages}>

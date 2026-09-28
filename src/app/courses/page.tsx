@@ -75,7 +75,7 @@ export default async function CoursesPage() {
             <li key={course.id}>
               <Link prefetch={false}
                 href={`/courses/${course.id}`}
-                className="flex min-h-[44px] flex-col gap-1 px-4 py-3 hover:bg-ink/5"
+                className="flex min-h-[44px] flex-col gap-1 px-4 py-[var(--space-row)] hover:bg-ink/5"
               >
                 <span className="font-medium text-ink">
                   {locale === "en" ? course.title_en : course.title_fil}
