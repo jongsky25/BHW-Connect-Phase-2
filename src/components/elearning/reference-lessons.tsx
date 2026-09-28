@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { appendCoursePathSegment } from "@/lib/elearning/course-layout";
 import {useRouter} from "next/navigation";
 import type {
   CourseModule,
@@ -225,7 +226,7 @@ export function ReferenceLessons(props: Props) {
     }
   }
   function open(l: PublishedLesson) {
-    if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}
+    if(props.lessonBaseHref){router.push(appendCoursePathSegment(props.lessonBaseHref,l.id));return;}
     const latest = resumes
       .filter((r) => r.lesson_id === l.id)
       .sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];

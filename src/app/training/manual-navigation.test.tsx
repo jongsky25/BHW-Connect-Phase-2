@@ -41,7 +41,7 @@ beforeEach(()=>{
   };
 });
 afterEach(cleanup);
-const page=(path:string[]=[],view?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view})});
+const page=(path:string[]=[],view?:string,layout?:string)=>TrainingPage({params:Promise.resolve({programId:'manual',path}),searchParams:Promise.resolve({view,layout})});
 const guideTables=['course_lesson_facilitator_notes','course_module_facilitator_notes','competency_observations','users'];
 describe('manual navigation',()=>{
   it('facilitator lesson shows only activity cards mapped to its lesson key',async()=>{
@@ -53,8 +53,18 @@ describe('manual navigation',()=>{
     expect(screen.queryByRole('heading',{name:'Other activity'})).not.toBeInTheDocument();
   });
   it('catalog replaces only the mapped course with the manual',async()=>{
-    render(await Catalog());expect(screen.getByRole('link',{name:/BHW Reference Manual/})).toHaveAttribute('href','/training/manual');
+    render(await Catalog({searchParams:Promise.resolve({})}));expect(screen.getByRole('link',{name:/BHW Reference Manual/})).toHaveAttribute('href','/training/manual');
     expect(screen.queryByText('Old Araw 1')).not.toBeInTheDocument();expect(screen.getByText('Other course')).toBeInTheDocument();
+  });
+  it('keeps full-page view through the catalog and lesson navigation',async()=>{
+    render(await Catalog({searchParams:Promise.resolve({layout:'full'})}));
+    expect(screen.getByRole('link',{name:/BHW Reference Manual/})).toHaveAttribute('href','/training/manual?layout=full');
+    expect(screen.getByRole('link',{name:'Standard view'})).toHaveAttribute('href','/courses');
+    cleanup();
+    render(await page(['chapter-1','m1','l1'],undefined,'full'));
+    expect(screen.getByRole('complementary',{name:'Lessons in this subchapter'})).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'Next lesson →'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l2?layout=full');
+    expect(screen.getByRole('link',{name:'Standard view'})).toHaveAttribute('href','/training/manual/chapter-1/m1/l1');
   });
   it('manual opens chapters, with unavailable chapters not linked',async()=>{
     render(await page());expect(screen.getByRole('link',{name:/BHWs and Their Barangay/})).toHaveAttribute('href','/training/manual/chapter-1');
