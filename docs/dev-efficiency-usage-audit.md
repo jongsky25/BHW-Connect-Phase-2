@@ -321,8 +321,9 @@ What wastes minutes:
 | 0 baseline and stats reset | Done: `docs/usage-baseline.md`, stats reset 03:57:50 UTC |
 | 1–8 stop the waste | Done in #163. Secrets renamed and old ones deleted; no unused Vercel projects. Preview env vars stay on the pilot, because `bhw-connect-e2e` is paused and empty. |
 | 9 asymmetric JWT keys | Already done: ES256 is the current key |
-| 10–14 per-user cost | In the follow-up PR: `getClaims()`, forwarded profile and flags, cached unread count, prefetch off everywhere, debounced resume saves, onboarding-step writes skipped once done, slim `/courses/[id]` assessment payload. Two parts that need a migration (drop the `course_modules` lock on resume; make `rpc_onboarding_complete_step` a no-op in SQL) come with 16. |
-| 15–20 | Not started |
+| 10–14 per-user cost | Done in #164: `getClaims()`, forwarded profile and flags, cached unread count, prefetch off everywhere, debounced resume saves, onboarding-step writes skipped once done, slim `/courses/[id]` assessment payload |
+| 16 RLS (first pass) | In the follow-up PR, migration `20261005000000_set_based_training_rls.sql`. It adds set-based lesson and revision read policies and a notifications policy without per-row lookups, drops the resume locks, and makes `rpc_onboarding_complete_step` a no-op when the step is done. Checked against the pilot's data for all 30 users with zero differences in visible rows. The lesson list drops from 283 ms to 7 ms. Still open: the org-scope helpers on courses, announcements and surveys, and the `multiple_permissive_policies` warnings. |
+| 15, 17–20 | Not started |
 
 Effort: S = under an hour, M = half a day, L = a day or more.
 Each item has a **done when** check, in the same style as the delivery plan's
