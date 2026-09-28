@@ -9,6 +9,16 @@ if (existsSync(".env.local")) {
   process.loadEnvFile(".env.local");
 }
 
+// .env.local usually points the app at the pilot. E2E writes users, content
+// and global flag flips, so refuse rather than spend the pilot's disk I/O.
+const PILOT_PROJECT_REF = "ltzicxyefizxoqhfuuzc";
+if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes(PILOT_PROJECT_REF)) {
+  throw new Error(
+    "E2E is pointed at the pilot Supabase project. Run it against a local Supabase " +
+      "(docs/deploy-runbook.md, \"E2E database\").",
+  );
+}
+
 // Some sandboxes pre-install a Chromium build that predates this package's
 // expected revision and block re-downloading; use it directly when present,
 // otherwise fall back to Playwright's normal managed browser (e.g. in CI).
@@ -17,7 +27,7 @@ const chromiumExecutablePath = existsSync(pinnedChromium) ? pinnedChromium : und
 
 export default defineConfig({
   testDir: "./e2e",
-  // Every spec shares one Supabase project: global feature flags that specs
+  // Every spec shares one Supabase database: global feature flags that specs
   // toggle (chat_conversation, offline_pwa, kb_articles, course_sessions) and
   // the stable accounts, whose sign-out is global and ends that account's
   // other sessions. Two workers race on both, so the suite must run serially.
@@ -27,13 +37,6 @@ export default defineConfig({
   workers: 1,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  // Retries absorb an isolated flake, but when the shared database itself
-  // degrades every test fails and each is retried twice — tripling load on
-  // the database exactly when it's struggling (27 Sep 2026: 47 failures,
-  // 1.5h run, PostgREST then stuck on 503 for hours). Stop the run once
-  // failures are clearly systemic rather than isolated. CI runs the suite
-  // as ~17-test chunks (ci.yml's e2e-shard), so 5 is already a pattern.
-  maxFailures: process.env.CI ? 5 : undefined,
   // The longest specs are whole end-to-end journeys, not single interactions:
   // forum.spec.ts alone signs in three times (admin -> BHW -> sibling BHW ->
   // admin), each a full login + consent + navigation round trip, and
@@ -43,8 +46,8 @@ export default defineConfig({
   // timing out mid-journey rather than on any specific assertion. This is
   // budget for work those tests genuinely do — no assertion is relaxed.
   timeout: 60_000,
-  // Purges the e2e-marked content and throwaway users specs leave on the
-  // shared pilot project -- see e2e/global-teardown.ts.
+  // Purges the e2e-marked content and throwaway users specs leave behind --
+  // see e2e/global-teardown.ts.
   globalTeardown: "./e2e/global-teardown.ts",
   reporter: "line",
   use: {

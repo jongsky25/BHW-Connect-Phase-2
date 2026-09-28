@@ -1,5 +1,5 @@
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
-import { STABLE_ADMIN, STABLE_BHW, STABLE_SUPER_ADMIN, getAccessToken, restGet } from "./fixtures/auth";
+import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet } from "./fixtures/auth";
 
 // INC-17. The conversation layer only works against the real HHP+ NCD corpus
 // (the red-flag and clarifier rules point at m3-/m4-/m1- entry ids), so this
@@ -23,9 +23,7 @@ function anonKey(): string {
 }
 
 async function setConversationFlag(request: APIRequestContext, enabled: boolean) {
-  // rpc_flag_toggle is super-admin-only (docs/role-feature-toggles-plan.md
-  // §5 A1) — a plain admin token gets "not authorized" here now.
-  const adminToken = await getAccessToken(request, STABLE_SUPER_ADMIN.username, STABLE_SUPER_ADMIN.password);
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
   const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_flag_toggle`, {
     headers: {
       apikey: anonKey(),

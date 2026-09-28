@@ -147,14 +147,6 @@ const REGISTER = [
     blocks: "Running the E2E suite locally. CI has its own copy.",
   },
   {
-    name: "E2E_STABLE_SUPER_ADMIN_PASSWORD",
-    store: "githubSecrets",
-    secret: true,
-    alsoIn: ["localOnly"],
-    consumers: ["ci.yml", "e2e/ops-hardening.spec.ts"],
-    blocks: "Running the E2E suite locally. CI has its own copy.",
-  },
-  {
     name: "SENTRY_AUTH_TOKEN",
     store: "githubSecrets",
     secret: true,

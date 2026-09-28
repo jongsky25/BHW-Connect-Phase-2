@@ -71,10 +71,12 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
     const mine=await myProgress;
     content=<>
       {mine && mine.counts.total>0 && <ManualSummary progress={mine} title={manualTitle} locale={loc}/>}
+      {/* List links skip prefetch: each one is a full server render with its own
+          database reads, and a chapter view used to fire one per link at once. */}
       <div className="grid gap-4">{chapters?.map(c=>{
         const p=mine?.chapters.find(x=>x.id===c.id);
         return <div key={c.id}>
-          {c.availability==='available' && c.course_id ? <Link className={card} href={`${base}/${c.chapter_key}`}>
+          {c.availability==='available' && c.course_id ? <Link className={card} prefetch={false} href={`${base}/${c.chapter_key}`}>
             <span className="text-sm text-ink/70">{text('Kabanata','Chapter')} {c.position+1}</span>
             <h2 className="mt-1 text-xl font-semibold">{title(c)}</h2>
             {p && <CardProgress state={p.state} counts={p.counts} locale={loc} segments={subchapterSegments(p,loc)}
@@ -137,7 +139,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         <div className="grid gap-3">{modules?.filter(m=>m.type!=='quiz').map((m,i)=>{
           const own=lessons?.filter(l=>l.module_id===m.id)??[];
           const sub=mine?.subchapters.find(x=>x.id===m.id);
-          return <Link key={m.id} className={card} href={`${chapterHref}/${m.id}`}>
+          return <Link key={m.id} className={card} prefetch={false} href={`${chapterHref}/${m.id}`}>
             <h2 className="text-lg font-semibold">{chapter.position+1}.{i+1} {title(m)}</h2>
             {sub && own.length ? <CardProgress state={sub.state} counts={sub.counts} locale={loc} label={text(`Progreso sa ${sub.number}`,`${sub.number} progress`)}/>:
               <p className="mt-2 text-sm text-ink/70">{own.length ? `${own.length} ${text('maiikling aralin','short lessons')}`:text('Inihahanda ang maiikling aralin','Short lessons are being prepared')}</p>}
@@ -169,7 +171,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const guide=facilitator?await loadSubchapterGuide(db,{courseId:course.id,moduleId:subchapter.id,lessons:own,lang:loc,
           lessonHref:id=>`${moduleHref}/${id}`,includeRoster:guideView==='bhws'}):null;
         if(guide)intro=text('Pumili ng bahagi ng gabay o buksan ang BHW Slides.','Choose a guide section or open BHW Slides.');
-        const lessonCards=<ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} href={guide?`${moduleHref}/${l.id}?view=lesson&mode=slides`:`${moduleHref}/${l.id}`}>
+        const lessonCards=<ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} prefetch={false} href={guide?`${moduleHref}/${l.id}?view=lesson&mode=slides`:`${moduleHref}/${l.id}`}>
           <h2 className="font-semibold">{i+1}. {title(l)}</h2>
           <p className="mt-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-sm">
             <span className="text-ink/70">{text(`Aralin ${i+1} sa ${own.length}`,`Lesson ${i+1} of ${own.length}`)} · {text('Basahin / Slides','Read / Slides')}</span>
