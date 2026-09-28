@@ -1,4 +1,4 @@
--- Follow-up to 20260729000000_fix_audit_events_admin_read_subject_scope.sql.
+-- Follow-up to 20260729000100_fix_audit_events_admin_read_subject_scope.sql.
 --
 -- That migration fixed `audit_event_visible_to_admin` for the subject types
 -- that existed on `main` at the time, but was written and merged before

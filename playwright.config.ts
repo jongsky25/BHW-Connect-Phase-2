@@ -17,7 +17,7 @@ const chromiumExecutablePath = existsSync(pinnedChromium) ? pinnedChromium : und
 
 export default defineConfig({
   testDir: "./e2e",
-  // Every spec shares one Supabase project: global feature flags that specs
+  // Every spec shares one Supabase database: global feature flags that specs
   // toggle (chat_conversation, offline_pwa, kb_articles, course_sessions) and
   // the stable accounts, whose sign-out is global and ends that account's
   // other sessions. Two workers race on both, so the suite must run serially.
@@ -36,8 +36,8 @@ export default defineConfig({
   // timing out mid-journey rather than on any specific assertion. This is
   // budget for work those tests genuinely do — no assertion is relaxed.
   timeout: 60_000,
-  // Purges the e2e-marked content and throwaway users specs leave on the
-  // shared pilot project -- see e2e/global-teardown.ts.
+  // Purges the e2e-marked content and throwaway users specs leave behind --
+  // see e2e/global-teardown.ts.
   globalTeardown: "./e2e/global-teardown.ts",
   reporter: "line",
   use: {

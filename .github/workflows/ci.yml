@@ -5,18 +5,12 @@ on:
     branches: [main]
   pull_request:
 
-# Concurrency is deliberately per-JOB, not workflow-level. A workflow-level
-# group applies its cancel-in-progress to every job, including `e2e` — and
-# cancelling e2e mid-spec skips the `finally` that restores a global feature
-# flag, leaking a mutated flag into the next run. That is not hypothetical:
-# run #213 (the merge of PR #66) had its e2e job cancelled by the next push
-# to main, landing in the Build step. Two minutes later it would have been
-# mid-suite. So `checks` is cancellable and `e2e` is not — see each job.
+# Concurrency is per-JOB: a newer push to the same PR or branch cancels that
+# ref's in-flight `checks` and `e2e`. Both are safe to cancel — `e2e` runs
+# against its own throwaway Supabase, so nothing is left dirty.
 
 jobs:
-  # Everything that touches nothing shared: pure local checks, so these stay
-  # fully parallel across PRs and give fast feedback. Safe to cancel — a new
-  # push supersedes this ref's own in-flight checks and nothing is left dirty.
+  # Pure local checks: fully parallel across PRs, fast feedback.
   checks:
     runs-on: ubuntu-latest
     concurrency:
@@ -42,66 +36,37 @@ jobs:
       - name: Unit tests
         run: npm run test
 
-  # Waits, first come first served, until no other run is using the shared
-  # database (the pilot project). See the e2e job for why.
-  e2e-wait:
+  e2e:
     needs: checks
     runs-on: ubuntu-latest
-    timeout-minutes: 180
-    permissions:
-      actions: read
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          sparse-checkout: .github/scripts
-
-      - name: Wait for the shared database
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: bash .github/scripts/wait-for-e2e-slot.sh
-
-  e2e:
-    needs: e2e-wait
-    runs-on: ubuntu-latest
-    # Every PR's e2e run shares ONE Supabase project (the pilot), and four specs toggle
-    # GLOBAL feature flags (`chat_conversation`, `offline_pwa`, `kb_articles`,
-    # `course_sessions`) — each flips a flag, asserts, and restores it in a
-    # `finally`. That is safe within a run only because playwright.config.ts
-    # pins `workers: 1`, but NOT across runs: two PRs' e2e jobs overlapping means
-    # one flips a flag while the other is asserting its resting value. That is
-    # exactly what broke CI on 20 Sep 2026, when several PRs ran at once and
-    # chat-conversation.spec.ts failed on `expect(before.route).toBeUndefined()`
-    # receiving "red_flag" — the other run had turned `chat_conversation` on.
-    # So only one run may touch the project at a time, and nothing may cancel
-    # a running e2e job: cancelling mid-spec skips the `finally` that restores
-    # the flag, leaking a mutated flag into the next run. There is no
-    # workflow-level concurrency group, so nothing upstream cancels this job.
+    # Each run gets its OWN throwaway Supabase, built by `supabase start` from
+    # supabase/migrations/ and seeded by supabase/seed.sql (the four stable
+    # fixture accounts plus the pilot's resting feature flags). Nothing here
+    # touches the pilot project any more: E2E used to write into it on every
+    # PR, and the specs, their purges and the flag flips were a large share of
+    # the pilot's Disk IO budget on the free plan — see docs/deploy-runbook.md's
+    # "E2E database" section.
     #
-    # e2e-wait does the queueing. A concurrency group alone cannot: it holds
-    # only ONE pending job, and each newly queued e2e cancelled the one already
-    # waiting, so with several PRs open e2e jobs were cancelled before they
-    # ever started (PR #130's, three times on 26 Sep 2026). The group below
-    # stays as a safety net: e2e-wait lets one run through at a time, so it is
-    # not contended, and it keeps runs on an older ci.yml from overlapping.
+    # Because nothing is shared, runs can overlap and a cancelled run leaves
+    # nothing behind, so this job is cancellable like `checks` and needs no
+    # queueing (the old e2e-wait job and e2e-shared-supabase-project group).
     concurrency:
-      group: e2e-shared-supabase-project
-      cancel-in-progress: false
+      group: e2e-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     env:
-      # The pilot project is the ONE database for this phase: the live app,
-      # the content loaders and this E2E run all use it (the separate
-      # `bhw-connect-e2e` project is retired — see docs/deploy-runbook.md's
-      # "One database" section). While the pilot holds only test data, E2E
-      # writing into it is intended; revisit before real BHWs are onboarded.
-      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-      E2E_STABLE_BHW_PASSWORD: ${{ secrets.E2E_STABLE_BHW_PASSWORD }}
-      E2E_STABLE_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
-      E2E_OTHER_BARANGAY_BHW_PASSWORD: ${{ secrets.E2E_OTHER_BARANGAY_BHW_PASSWORD }}
-      E2E_STABLE_CITY_ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_CITY_ADMIN_PASSWORD }}
-      # The pilot has ai_external + ai_gap_draft on, so e2e/ai-gap-draft.spec.ts
-      # runs its real round trip here and needs a provider key; each run
-      # spends a small amount of Gemini quota. GEMINI_MODEL is optional.
+      # The local stack's well-known demo URL, anon key and the seed's fixture
+      # password. None of these are secrets: they only ever unlock the
+      # throwaway database this job starts and discards.
+      NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
+      E2E_STABLE_BHW_PASSWORD: local-e2e-password
+      E2E_STABLE_ADMIN_PASSWORD: local-e2e-password
+      E2E_OTHER_BARANGAY_BHW_PASSWORD: local-e2e-password
+      E2E_STABLE_CITY_ADMIN_PASSWORD: local-e2e-password
+      # The seed turns ai_external + ai_gap_draft on, as on the pilot, so
+      # e2e/ai-gap-draft.spec.ts runs its real round trip and needs a provider
+      # key; each run spends a small amount of Gemini quota. GEMINI_MODEL is
+      # optional.
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
       SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
@@ -119,6 +84,23 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.118.0
+
+      # Only what the app and specs call: Postgres, Auth, PostgREST, Storage
+      # and the Kong gateway in front of them.
+      - name: Start local Supabase (migrations + seed)
+        run: supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+
+      # The HHP-NCD corpus the Chat Guide specs answer from, loaded and
+      # published through the admin RPCs exactly as it was on the pilot.
+      - name: Load KB content into local Supabase
+        run: npm run kb:load -- --project local --apply --publish --owner admin.stable
+        env:
+          KB_LOADER_USERNAME: admin.stable
+          KB_LOADER_PASSWORD: local-e2e-password
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
