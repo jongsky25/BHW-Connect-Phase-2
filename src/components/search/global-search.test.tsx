@@ -27,7 +27,7 @@ describe("GlobalSearch", () => {
     const user = userEvent.setup();
     render(<NextIntlClientProvider locale="en" messages={en}><GlobalSearch /></NextIntlClientProvider>);
 
-    await user.click(screen.getByRole("button", { name: /Search/ }));
+    await user.click(screen.getByRole("button", { name: "Open global search" }));
     await user.type(screen.getByRole("combobox"), "vaccination");
     const result = await screen.findByRole("link", { name: /Vaccination schedule/ });
     expect(result).toHaveAttribute("href", "/kb/immunization#entry-one");
@@ -35,6 +35,6 @@ describe("GlobalSearch", () => {
 
     await user.keyboard("{ArrowDown}{Enter}");
     expect(push).toHaveBeenCalledWith("/kb/immunization#entry-one");
-    await waitFor(() => expect(screen.getByRole("button", { name: /Search/ })).toHaveAttribute("aria-expanded", "false"));
+    await waitFor(() => expect(screen.getByRole("button", { name: "Open global search" })).toHaveAttribute("aria-expanded", "false"));
   });
 });

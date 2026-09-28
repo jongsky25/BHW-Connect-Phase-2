@@ -51,7 +51,7 @@ export function GlobalSearch() {
   }
 
   return <div className="relative">
-    <button type="button" onClick={() => setOpen((value) => !value)} aria-label={t("label")} aria-expanded={open}
+    <button type="button" onClick={() => setOpen((value) => !value)} aria-label={t("triggerLabel")} aria-expanded={open}
       aria-controls="global-search-panel" className="rounded-md border border-ink/20 px-3 py-2 text-sm font-medium text-ink hover:bg-ink/5">
       <span aria-hidden="true">⌕ </span>{t("button")}
     </button>
