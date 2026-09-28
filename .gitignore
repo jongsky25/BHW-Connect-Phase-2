@@ -49,3 +49,10 @@ next-env.d.ts
 
 # Local review HTML written by scripts/chapter2-preview.mjs and its tests
 /.preview/
+
+# Loader row-mapping locks for a throwaway local Supabase (`--project local`).
+content/**/locks/local.json
+
+# Supabase CLI local state.
+supabase/.branches
+supabase/.temp

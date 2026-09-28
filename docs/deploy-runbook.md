@@ -6,12 +6,16 @@
    typecheck, unit tests, an E2E smoke pass, a production build, and the
    Lighthouse performance-budget check.
 2. If the change includes a `supabase/migrations/*.sql` file, apply it to
-   the pilot project (`ltzicxyefizxoqhfuuzc` — the one database; see "One
-   database" below) before or alongside merging, via the Supabase MCP
-   `apply_migration` tool (or `supabase db push` from the CLI if working
-   locally). CI's E2E run uses the same database, so a PR that needs its
-   migration will fail E2E until it's applied — apply it first, then let CI
-   run.
+   the pilot project (`ltzicxyefizxoqhfuuzc`; see "Databases" below) **once,
+   at merge time, from the session that merges**, via the Supabase MCP
+   `apply_migration` tool (or `ALLOW_PILOT=1 supabase db push`). Apply all of
+   a PR's migrations together, never one per session, and not while the
+   pilot's Disk IO budget is low. Each applied migration makes PostgREST
+   reload its schema cache, and that reload (`pg_timezone_names`) is the
+   query that timed out on 27 Sep. CI's E2E run does **not** use the pilot: it builds a throwaway
+   database from `supabase/migrations/` (see "E2E database" below), so a PR's
+   own migration is already in effect there. That also means every migration
+   must replay cleanly on an empty database, in filename order.
 3. Merge to `main` once CI is green and the migration (if any) is applied.
 4. Vercel's GitHub integration auto-deploys `main` (per INC-0's scaffold —
    see `docs/delivery-plan.md` §3/§7). No separate deploy step in this
@@ -30,52 +34,101 @@ project settings (for the running app) and GitHub Actions repo secrets
 
 | Variable | Vercel | GitHub Actions |
 |---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project) | required (pilot project — `ci.yml`'s build + E2E job, `e2e-test-users-purge.yml`, `e2e-test-courses-purge.yml`, `retention-purge.yml`, `training-load.yml`) |
-| `E2E_STABLE_*_PASSWORD` | not needed | required (E2E job, `e2e-test-courses-purge.yml`; the stable fixture accounts' passwords **on the pilot project**) |
+| `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` | required (pilot project for Production; **the dev project for Preview**) | **retired**: delete once `PILOT_SUPABASE_*` exist (see "Pilot secrets") |
+| `PILOT_SUPABASE_URL` / `PILOT_SUPABASE_ANON_KEY` | not needed | required (pilot project) by `retention-purge.yml` (URL) and `training-load.yml` (anon key) |
+| `E2E_STABLE_*_PASSWORD` | not needed | **retired**: no workflow reads them (`ci.yml` uses the local seed's fixed password). Keep them only in `.env.local` when running E2E against a hosted dev project |
 | ~~`E2E_SUPABASE_URL` / `E2E_SUPABASE_ANON_KEY`~~ | — | no longer read; delete once the switch to one database is confirmed green |
 | `SENTRY_DSN` / `NEXT_PUBLIC_SENTRY_DSN` | optional — app runs fine unset | optional (build-time only) |
 | `SENTRY_ORG` / `SENTRY_PROJECT` / `SENTRY_AUTH_TOKEN` | not needed | optional — enables source-map upload |
 | `SUPABASE_DB_URL` | not needed | required for `backup.yml` |
 | `SUPABASE_SERVICE_ROLE_KEY` | not needed (never expose to the app) | required for `retention-purge.yml` |
-| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | required for `ci.yml`'s E2E job — the pilot has `ai_external`/`ai_gap_draft` on, so `e2e/ai-gap-draft.spec.ts` makes a real provider call each run (small quota cost) |
+| `GEMINI_API_KEY` | optional — unset means external AI is unavailable and features fall back to their rule-based baseline | required for `ci.yml`'s E2E job — the seed turns `ai_external`/`ai_gap_draft` on, as on the pilot, so `e2e/ai-gap-draft.spec.ts` makes a real provider call each run (small quota cost) |
 | `GEMINI_MODEL` | optional — defaults to `gemini-3.6-flash`. **Set this when the provider retires a model**: a shut-down model returns 404 on every call, and this is the switch that fixes it without a deploy. `gemini-2.0-flash` was shut down 2026-06-01 | optional (E2E job; same default) |
 
-## One database
+## Databases
 
-Since 27 Sep 2026 there is **one** Supabase project for everything: the pilot
-project (`ltzicxyefizxoqhfuuzc`, "gibs-21's Project"). The live app on Vercel,
-the content loaders, and `ci.yml`'s build + E2E + Lighthouse steps all point
-at it. The pilot phase holds only test data, so E2E writing into it is
-intended — it stopped being worth keeping a second, schema-identical copy in
-sync for every migration.
+- **Pilot** (`ltzicxyefizxoqhfuuzc`, "gibs-21's Project"): real BHWs only.
+  The live app on Vercel (Production), reviewed migrations, deliberate content
+  loads, and the post-deploy smoke check with the four stable fixture accounts
+  (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`).
+- **Local** (`npx supabase start`): CI's E2E job, and development wherever
+  Docker runs.
+- **Dev** (`bhw-connect-e2e`, `ekehmwzyhlagtfuvquho`): **paused** since
+  28 Sep 2026, and nearly empty (one account, no fixtures or content, only
+  the Los Baños org units). Cloud sandboxes can run the local stack instead
+  (`dockerd &`, then `npx supabase start`). Vercel Preview deployments still
+  use the pilot. That is cheap now that docs-only pushes don't build and a
+  preview only touches the pilot when someone opens it. Restoring this
+  project takes the free org's second active-project slot.
 
-What that means in practice:
+`scripts/lib/pilot-guard.mjs` makes `next dev`/`build`/`start` (via
+`next.config.ts`) and every loader's `--project` refuse the pilot outside
+Vercel unless `ALLOW_PILOT=1` is set. Playwright refuses it unconditionally. `npm run doctor -- --brief`
+(the SessionStart hook) prints which database this environment points at.
 
-- **Migrations go to one project.** No more "apply to both".
-- **E2E writes into the live pilot.** The four stable fixture accounts
-  (`admin.stable`, `bhw.stable`, `bhw.other`, `admin.city.stable`) already
-  exist there. Throwaway `e2e.<timestamp>.<random>` accounts, forum posts,
-  announcements and surveys created by specs land in the pilot's barangays
-  and show up in its lists and dashboards. `e2e-test-users-purge.yml` purges
-  the `e2e.%` accounts (older than 24h only). Several specs also publish a
-  course (marked `e2e.<spec-tag>.<epoch-ms>.<random>` in its title) and never
-  delete it — `/courses` and `/admin/courses` show these until
-  `e2e-test-courses-purge.yml` purges them (also older than 24h only, via
-  `rpc_e2e_purge_test_courses`).
-- **Global feature flags flip during a run.** Four specs toggle
-  `chat_conversation`, `offline_pwa`, `kb_articles` and `course_sessions`
-  and restore them in a `finally`, so the live site briefly shows those
-  features switching. This is why E2E still runs one-at-a-time
-  (`e2e-wait` + the concurrency group in `ci.yml`), and why an E2E job must
-  never be cancelled mid-run.
-- **Before real BHWs are onboarded** (the pilot launch gate in
-  `docs/delivery-plan.md`), revisit this: either stand a separate test
-  database back up or cut E2E down to specs that don't write or toggle flags.
+## Pilot secrets
 
-The old `bhw-connect-e2e` project (`qeryhxctxslhdkclifom`) is retired: nothing
-in the repo reads it any more. Pause or delete it in the Supabase dashboard
-once CI is green against the pilot. Earlier history notes below still mention
-it; they describe what happened at the time.
+Old workflow runs are re-run with their **original** commit's workflow file.
+A re-run of a CI run from before #158 therefore still runs E2E against the
+pilot, through the repo secret `NEXT_PUBLIC_SUPABASE_URL`. That is what caused
+the 03:15 UTC spike on 28 Sep (a re-run of #157). To close that for good:
+
+1. In GitHub → Settings → Secrets and variables → Actions, add
+   `PILOT_SUPABASE_URL` and `PILOT_SUPABASE_ANON_KEY` with the pilot's values.
+   The workflows on `main` read these first (falling back to the old names
+   until they exist).
+2. Delete `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` and the
+   four `E2E_*` secrets. Old CI runs then fail fast instead of loading the
+   pilot.
+
+## E2E database
+
+Since 28 Sep 2026, `ci.yml`'s E2E job no longer touches the pilot. From 27 to
+28 Sep it wrote into the pilot on every PR, and the specs, their purges and
+the global flag flips were a steady, avoidable load on the pilot's Disk IO
+budget on the free plan (the free-plan database drops to baseline disk
+throughput once that budget is spent, and the live app slows or times out
+with it). Now each E2E job:
+
+1. Runs `supabase start`, which builds a fresh local Postgres + Auth +
+   PostgREST + Storage from `supabase/config.toml` and every file in
+   `supabase/migrations/`, in filename order.
+2. Loads `supabase/seed.sql`: the four stable fixture accounts (fully
+   onboarded, same org chain and profile fields as on the pilot) with the
+   fixed password `local-e2e-password`, and the pilot's resting feature-flag
+   values. **Never run the seed against a hosted project.** If a pilot flag
+   changes and a spec depends on it, update the seed's flag list too.
+3. Builds the app against it, runs Playwright and Lighthouse, and throws the
+   whole database away with the runner.
+
+Consequences:
+
+- **Migrations must replay from empty.** The migration files are now the
+  only way CI gets a schema. A migration that references an object created
+  by a later file, or two files with the same timestamp, fails the E2E job
+  at `supabase start`. (Four files were renamed on 28 Sep 2026 to fix
+  exactly that; the pilot was unaffected because `apply_migration` records
+  its own versions.)
+- **Runs no longer queue or need protecting.** The old `e2e-wait` job, the
+  `e2e-shared-supabase-project` concurrency group and "never cancel E2E" are
+  gone: flag flips and purges only affect that run's own database.
+- **Locally**, run the same thing with Docker:
+  `npx supabase start`, then set `NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321`,
+  `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the `ANON_KEY` that `npx supabase status`
+  prints, and every `E2E_STABLE_*_PASSWORD` to `local-e2e-password`, then
+  `npm run e2e`. `npx supabase db reset` rebuilds the database from scratch.
+  `playwright.config.ts` refuses to run if `NEXT_PUBLIC_SUPABASE_URL` is the
+  pilot's, so a `.env.local` still pointed at the pilot fails fast instead of
+  writing test data there.
+- The weekly `e2e-test-users-purge.yml` and `e2e-test-courses-purge.yml`
+  workflows were deleted on 28 Sep 2026. A service-role dry run of both
+  purge RPCs on the pilot reported 0 users, 0 forum categories and 0 courses
+  left over, so there is nothing left for them to clear.
+
+The original `bhw-connect-e2e` project (`qeryhxctxslhdkclifom`) is gone. The
+current project of that name (`ekehmwzyhlagtfuvquho`, created 28 Sep 2026) is
+the dev database above. Earlier history notes below describe what happened
+at the time.
 
 ## Migration history notes
 

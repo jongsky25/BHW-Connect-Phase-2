@@ -6,19 +6,15 @@ import activityCards from '../../../content/training/day1-basic-competencies/mod
 
 const state=vi.hoisted(()=>({failing:'',role:'bhw',status:'certified',locale:'en',calls:[] as Array<{table:string;columns?:string;filters:Array<[string,unknown]>}>,rows:{} as Record<string,Array<Record<string,unknown>>>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')},useRouter:()=>({push:vi.fn(),refresh:vi.fn()})}));
+vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
+vi.mock('@/lib/flags/get-flags',()=>({getFeatureFlags:async()=>({elearning:true,course_sessions:true})}));
+vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'}),forwardedAppUser:()=>null,APP_USER_HEADER:'x-app-user',APP_FLAGS_HEADER:'x-app-flags'}));
 // getViewer() (RFT B1) reads the preview headers; no preview is active in
 // these fixtures, so every lookup misses and the real appUser role wins.
-vi.mock('next/headers',()=>({headers:async()=>({get:()=>null})}));
-vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale,getTranslations:async()=>((key:string)=>key)}));
-vi.mock('@/lib/flags/get-flags',()=>({
-  getFeatureFlags:async()=>({elearning:true,course_sessions:true}),
-  resolveFlags:()=>({elearning:true,course_sessions:true}),
-  fetchFlagRows:async()=>[],
-}));
-vi.mock('@/lib/supabase/app-user',()=>({getAppUser:async()=>({id:'self',role:state.role,status:'active'})}));
+vi.mock('next/headers',()=>({headers:async()=>new Headers(),cookies:async()=>({get:()=>undefined,getAll:()=>[]})}));
 vi.mock('@/components/elearning/manual-lesson',()=>({ManualLesson:({readOnly,nextLessonHref}:{readOnly:boolean;nextLessonHref?:string})=><div data-next-lesson={nextLessonHref}>{readOnly?'Admin preview':'Learner lesson'}</div>}));
 vi.mock('@sentry/nextjs',()=>({captureException:vi.fn()}));
-vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}})},from:(table:string)=>{
+vi.mock('@/lib/supabase/server',()=>({createClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'auth'}}}),getClaims:async()=>({data:{claims:{sub:'auth'}}})},from:(table:string)=>{
   const call={table,columns:'',filters:[] as Array<[string,unknown]>};state.calls.push(call);
   let single=false;
   const q={select:(c:string)=>{call.columns=c;return q},eq:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},is:(k:string,v:unknown)=>{call.filters.push([k,v]);return q},in:()=>q,not:()=>q,order:()=>q,limit:()=>q,returns:()=>q,

@@ -78,11 +78,16 @@ carrying it, so it would not work, and it grants far more than any session
 needs. It belongs in GitHub Actions and nowhere else.
 
 **GitHub Actions secrets** — `KB_LOADER_PASSWORD` (new, see §3),
-`SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_DB_URL`, the four `E2E_*` passwords
-(for the stable fixture accounts on the pilot project), `NEXT_PUBLIC_SUPABASE_URL`/
-`NEXT_PUBLIC_SUPABASE_ANON_KEY` (the pilot — the one database, which CI's E2E
-job also uses), and the `SENTRY_*` trio. `E2E_SUPABASE_URL`/
-`E2E_SUPABASE_ANON_KEY` are no longer read.
+`SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_DB_URL`, `PILOT_SUPABASE_URL`/
+`PILOT_SUPABASE_ANON_KEY` (the pilot; read only by `retention-purge.yml` and
+`training-load.yml`), `GEMINI_*`, and the `SENTRY_*` trio. CI's E2E job uses
+the local stack's well-known demo keys and seed passwords, not secrets.
+`NEXT_PUBLIC_SUPABASE_URL`/`NEXT_PUBLIC_SUPABASE_ANON_KEY` and the four
+`E2E_*` passwords are **retired as repo secrets**. Delete them once
+`PILOT_SUPABASE_*` exist: re-runs of CI runs from before #158 read them and
+would otherwise still reach the pilot (see `docs/deploy-runbook.md`
+"Pilot secrets"). `E2E_SUPABASE_URL`/`E2E_SUPABASE_ANON_KEY` are no longer
+read.
 
 **Vercel** — `GEMINI_API_KEY` and `GEMINI_MODEL`. Read at request time by the
 running app, so neither GitHub nor the Claude environment is any use to them.

@@ -15,9 +15,16 @@ slide 4 of 7 and adding narration that paces the clip.
 built for the legacy module view, and that document redirects them to the
 chapter route.
 
-**One database:** as of 27 Sep 2026 all development, CI E2E and the live app
-use the pilot project `ltzicxyefizxoqhfuuzc` only. Apply migrations there and
-nowhere else. Mentions of `bhw-connect-e2e` below are history.
+**Databases (since 28 Sep 2026, #158 and the usage audit):** the pilot
+project `ltzicxyefizxoqhfuuzc` is for real BHWs only. Use it for reviewed
+migrations, deliberate content loads and the post-deploy smoke check, never
+for development or E2E. CI's E2E job builds its own throwaway database with
+`supabase start`. Develop against `supabase start` too. Cloud sandboxes have
+Docker: run `dockerd &` first. The hosted dev project `bhw-connect-e2e` is
+paused. Dev servers and the loader scripts refuse the pilot unless
+`ALLOW_PILOT=1` is set (`scripts/lib/pilot-guard.mjs`); E2E refuses it always. The rules are in
+`CLAUDE.md`, and the reasoning is in `docs/dev-efficiency-usage-audit.md`.
+Older entries below that say E2E runs on the pilot are history.
 
 ---
 
@@ -342,6 +349,9 @@ were known-safe test-only rows and the request was to clean up now, not
 just add a mechanism) — `courses` holds exactly the two real rows as of this
 writing.
 
+_(History, superseded by #158: E2E no longer runs on the pilot, and the
+`e2e-wait` job and weekly purge workflows described here are gone.)_
+
 **Update, same session, ~1h later: the purge alone wasn't enough — the
 leak is continuous, not historical.** After merging the above, `/courses`
 was still visibly repopulating with junk (screenshot from the live app:
@@ -420,12 +430,13 @@ Full detail: `docs/training-modules-plan.md`'s INC-27 section.
 
 ### CI
 
-`e2e/` runs against the pilot project — the one database since 27 Sep 2026
-(see `docs/deploy-runbook.md`'s "One database"; the old `bhw-connect-e2e`
-project is retired). Specs early in
-the run occasionally fail at login (three did on 19 Sep, green on re-run with
-no code change). Before assuming a failure is yours: check whether `main` is
-green, and re-run once. Do not "fix" it by touching tests.
+CI's `e2e` job runs against its own throwaway `supabase start` stack (see
+`docs/deploy-runbook.md`'s "E2E database"). Nothing in CI touches the pilot.
+Docs-only changes skip `checks` and `e2e` (the `changes` job). Before
+assuming a failure is yours, check whether `main` is green. If you re-run,
+push a new commit or merge `main` rather than re-running a run from before
+a CI change: a re-run uses its original commit's workflow file, and runs from
+before #158 still target the pilot. Do not "fix" a failure by touching tests.
 
 
 

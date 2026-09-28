@@ -58,7 +58,7 @@ resetFixtures();
 vi.mock("@supabase/ssr", () => ({
   createServerClient: () => ({
     auth: {
-      getUser: async () => ({ data: { user: authUser } }),
+      getClaims: async () => ({ data: { claims: authUser ? { sub: authUser.id } : null } }),
       signOut: async () => undefined,
     },
     from: () => ({
@@ -69,6 +69,8 @@ vi.mock("@supabase/ssr", () => ({
 
 vi.mock("./app-user", () => ({
   getAppUser: async () => appUserRow,
+  APP_USER_HEADER: "x-app-user",
+  APP_FLAGS_HEADER: "x-app-flags",
 }));
 
 vi.mock("../flags/get-flags", async (importOriginal) => {

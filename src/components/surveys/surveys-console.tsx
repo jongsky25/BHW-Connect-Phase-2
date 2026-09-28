@@ -121,6 +121,7 @@ export function SurveysConsole({ surveys, view, activeCount, archivedCount, root
                   <td className="px-3 py-3 text-sm">
                     <div className="flex flex-wrap items-center gap-2">
                       <Link
+                        prefetch={false}
                         href={`/admin/surveys/${survey.id}`}
                         className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                       >

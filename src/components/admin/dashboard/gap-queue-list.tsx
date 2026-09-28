@@ -156,7 +156,7 @@ export function GapQueueList({
                 </td>
                 <td className="px-3 py-3 text-sm">
                   <div className="flex flex-wrap gap-2">
-                    <Link
+                    <Link prefetch={false}
                       href={`/admin/kb/entries/new?fromUnmatched=${row.id}`}
                       className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-on-primary"
                     >

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import type {
@@ -19,6 +19,9 @@ import {
 import type { LessonNarration } from "@/lib/elearning/reference-narration";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
+
+type ResumeValue = Omit<CourseLessonResume, "course_progress_id" | "updated_at">;
+const RESUME_SAVE_DELAY_MS = 3000;
 
 export type ReferenceData = {
   title_fil: string;
@@ -42,7 +45,7 @@ type Props = ReferenceData & {
   narration?: Record<string, LessonNarration>;
   locale: string;
   onResume: (
-    resume: Omit<CourseLessonResume, "course_progress_id" | "updated_at">,
+    resume: ResumeValue,
   ) => Promise<void>;
   onComplete: (lesson: PublishedLesson) => Promise<void>;
 };
@@ -106,6 +109,16 @@ export function ReferenceLessons(props: Props) {
   const [featuredWatched, setFeaturedWatched] = useState<Record<string, boolean>>({});
   const heading = useRef<HTMLHeadingElement>(null);
   const writes = useRef(Promise.resolve());
+  // Resume positions are saved on a trailing debounce, not on every Next/
+  // Previous: each rpc_course_lesson_resume call runs the full visibility
+  // check, locks rows and upserts course_lesson_resume, so paging through a
+  // lesson wrote once per slide. Only the latest position is kept; it is
+  // written after RESUME_SAVE_DELAY_MS of no movement, and immediately when
+  // the lesson/mode changes, on completion, on retry, when the tab is hidden,
+  // and on unmount.
+  const pendingResume = useRef<ResumeValue | null>(null);
+  const resumeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const flushResumeRef = useRef<() => Promise<void>>(() => writes.current);
   const lesson = lessons.find((l) => l.id === selected);
   const items = lesson
     ? mode === "read"
@@ -137,13 +150,51 @@ export function ReferenceLessons(props: Props) {
         })
       : null;
 
+  function flushResume() {
+    if (resumeTimer.current) {
+      clearTimeout(resumeTimer.current);
+      resumeTimer.current = null;
+    }
+    const value = pendingResume.current;
+    if (!value) return writes.current;
+    pendingResume.current = null;
+    // Serialize writes so a slower request cannot overwrite newer state.
+    writes.current = writes.current
+      .then(async () => {await onResume(value);setError(null);})
+      .catch(() =>
+        setError(
+          ui(
+            "Hindi nai-save ang puwesto. Subukang muli.",
+            "Position could not be saved. Try again.",
+          ),
+        ),
+      );
+    return writes.current;
+  }
+  useEffect(() => {
+    flushResumeRef.current = flushResume;
+  });
+  useEffect(() => {
+    const flush = () => void flushResumeRef.current();
+    const onVisibility = () => {
+      if (document.visibilityState === "hidden") flush();
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    window.addEventListener("pagehide", flush);
+    return () => {
+      document.removeEventListener("visibilitychange", onVisibility);
+      window.removeEventListener("pagehide", flush);
+      flush();
+    };
+  }, []);
   function save(
     l: PublishedLesson,
     m: LessonModality,
     p: { id: string; concept_ids: string[] },
+    immediate = false,
   ) {
     if(props.readOnly)return;
-    const value = {
+    const value: ResumeValue = {
       lesson_id: l.id,
       revision_id: l.revision.id,
       modality: m,
@@ -159,17 +210,19 @@ export function ReferenceLessons(props: Props) {
         updated_at: new Date().toISOString(),
       },
     ]);
-    // Serialize rapid navigation so a slower request cannot overwrite newer state.
-    writes.current = writes.current
-      .then(async () => {await onResume(value);setError(null);})
-      .catch(() =>
-        setError(
-          ui(
-            "Hindi nai-save ang puwesto. Subukang muli.",
-            "Position could not be saved. Try again.",
-          ),
-        ),
-      );
+    // A pending position for another lesson or mode is its own resume row;
+    // write it now rather than letting this one replace it.
+    const prev = pendingResume.current;
+    if (prev && (prev.lesson_id !== value.lesson_id || prev.modality !== value.modality)) {
+      void flushResume();
+    }
+    pendingResume.current = value;
+    if (resumeTimer.current) clearTimeout(resumeTimer.current);
+    if (immediate) {
+      void flushResume();
+    } else {
+      resumeTimer.current = setTimeout(() => void flushResume(), RESUME_SAVE_DELAY_MS);
+    }
   }
   function open(l: PublishedLesson) {
     if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}
@@ -201,7 +254,7 @@ export function ReferenceLessons(props: Props) {
     setPending(true);
     setError(null);
     try {
-      await writes.current;
+      await flushResume();
       await onComplete(lesson);
       setCompleted((old) =>
         done.has(lesson.id)
@@ -305,7 +358,7 @@ export function ReferenceLessons(props: Props) {
       ) : (
         item && (
           <>
-            {props.lessonBaseHref ? <Link className="self-start underline" href={props.returnHref??props.lessonBaseHref}>{ui("← Bumalik sa mga aralin","← Back to lessons")}</Link> : <button
+            {props.lessonBaseHref ? <Link prefetch={false} className="self-start underline" href={props.returnHref??props.lessonBaseHref}>{ui("← Bumalik sa mga aralin","← Back to lessons")}</Link> : <button
               type="button"
               className="self-start underline"
               onClick={() => {
@@ -465,9 +518,9 @@ export function ReferenceLessons(props: Props) {
             </button>
             {done.has(lesson.id) && <div role="status" className="rounded-lg border border-ink/20 p-4">
               <p>{ui("Natapos ang aralin. Naka-save ang iyong progreso.", "Lesson complete. Your progress is saved.")}</p>
-              {props.nextLessonHref ? <Link className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
+              {props.nextLessonHref ? <Link prefetch={false} className="mt-3 inline-block rounded bg-primary p-3 text-on-primary" href={props.nextLessonHref}>
                 {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
-              </Link> : props.lessonBaseHref ? <Link className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
+              </Link> : props.lessonBaseHref ? <Link prefetch={false} className="mt-3 inline-block underline" href={props.returnHref??props.lessonBaseHref}>
                 {ui("Bumalik sa listahan ng mga aralin →", "Return to the lesson list →")}
               </Link> : siblings[siblings.indexOf(lesson)+1] && <button type="button" className="mt-3 rounded bg-primary p-3 text-on-primary" onClick={()=>open(siblings[siblings.indexOf(lesson)+1])}>
                 {ui("Magpatuloy sa susunod na aralin →", "Continue to the next lesson →")}
@@ -526,7 +579,7 @@ export function ReferenceLessons(props: Props) {
           </>
         )
       )}
-      {error && <div role="alert"><p>{error}</p>{lesson && item && <button className="mt-2 underline" onClick={()=>save(lesson,mode,item)}>{ui('Subukang i-save muli','Retry saving position')}</button>}</div>}
+      {error && <div role="alert"><p>{error}</p>{lesson && item && <button className="mt-2 underline" onClick={()=>save(lesson,mode,item,true)}>{ui('Subukang i-save muli','Retry saving position')}</button>}</div>}
     </section>
   );
 }

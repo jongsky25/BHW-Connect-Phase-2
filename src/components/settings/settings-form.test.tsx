@@ -35,6 +35,12 @@ beforeEach(() => {
   document.documentElement.removeAttribute("data-theme");
   document.documentElement.removeAttribute("data-font-scale");
   document.documentElement.removeAttribute("data-contrast");
+  document.documentElement.removeAttribute("data-density");
+  document.documentElement.removeAttribute("data-motion");
+  document.documentElement.removeAttribute("data-underline-links");
+  document.documentElement.removeAttribute("data-line-spacing");
+  document.documentElement.removeAttribute("data-reading-font");
+  document.documentElement.removeAttribute("data-colorblind-status");
 });
 
 afterEach(() => {
@@ -55,6 +61,54 @@ describe("SettingsForm", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
 
     expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a density change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Compact" }));
+
+    expect(document.documentElement.getAttribute("data-density")).toBe("compact");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a motion change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Reduce" }));
+
+    expect(document.documentElement.getAttribute("data-motion")).toBe("reduce");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies an underline-links change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "On" }));
+
+    expect(document.documentElement.getAttribute("data-underline-links")).toBe("true");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a line-spacing change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Relaxed" }));
+
+    expect(document.documentElement.getAttribute("data-line-spacing")).toBe("relaxed");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a reading-font change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Atkinson Hyperlegible" }));
+
+    expect(document.documentElement.getAttribute("data-reading-font")).toBe("hyperlegible");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("applies a colorblind-status change to <html> immediately, before the debounced save resolves", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Enabled" }));
+
+    expect(document.documentElement.getAttribute("data-colorblind-status")).toBe("true");
     expect(state.rpcCalls).toEqual([]);
   });
 
@@ -89,10 +143,34 @@ describe("SettingsForm", () => {
     expect(document.documentElement.hasAttribute("data-theme")).toBe(false);
   });
 
-  it("resets every display setting to its default and saves the full object", async () => {
+  it("reset now shows a confirm step rather than resetting immediately", () => {
     renderForm();
     fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
     fireEvent.click(screen.getByRole("button", { name: "Reset now" }));
+
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "This can't be undone. Reset every display setting above to its default value?",
+    );
+    expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("cancelling the reset confirm step leaves settings untouched", () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
+    fireEvent.click(screen.getByRole("button", { name: "Reset now" }));
+    fireEvent.click(screen.getByRole("button", { name: "Cancel" }));
+
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+    expect(state.rpcCalls).toEqual([]);
+  });
+
+  it("confirming the reset resets every display setting to its default and saves the full object", async () => {
+    renderForm();
+    fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
+    fireEvent.click(screen.getByRole("button", { name: "Reset now" }));
+    fireEvent.click(screen.getByRole("button", { name: "Yes, reset" }));
 
     await waitFor(() =>
       expect(state.rpcCalls.at(-1)).toEqual({
@@ -101,6 +179,7 @@ describe("SettingsForm", () => {
       }),
     );
     expect(document.documentElement.hasAttribute("data-theme")).toBe(false);
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
   });
 
   it("shows the default Bayanihan preset as selected, with no 'Custom' badge", () => {

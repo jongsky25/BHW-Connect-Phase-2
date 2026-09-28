@@ -44,7 +44,7 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
               initialA11y={initialA11y}
             />
           ) : null}
-          <Link
+          <Link prefetch={false}
             href={signedIn ? "/home" : "/"}
             className="flex items-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >

@@ -87,7 +87,7 @@ export function QuickDisplayControls({ a11y, update, onNavigate }: Props) {
         ariaLabelFor={(option) => t(`fontScale${capitalize(option)}`)}
       />
 
-      <Link
+      <Link prefetch={false}
         href="/settings#display"
         onClick={onNavigate}
         className="text-sm font-medium text-secondary underline underline-offset-2"

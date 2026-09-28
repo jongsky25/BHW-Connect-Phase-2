@@ -20,6 +20,25 @@ export type AppUser = {
   org_unit_level: string | null;
 };
 
+// Request headers middleware forwards to Server Components (see
+// withAppUserHeaders in ./middleware.ts and ./request.ts).
+export const APP_USER_HEADER = "x-app-user";
+export const APP_FLAGS_HEADER = "x-app-flags";
+
+// The profile middleware forwarded for this request, if it belongs to
+// authUserId. Anything else (absent, malformed, another account) is null, and
+// the caller reads the profile from Supabase instead.
+export function forwardedAppUser(headers: Headers, authUserId: string): AppUser | null {
+  const raw = headers.get(APP_USER_HEADER);
+  if (!raw) return null;
+  try {
+    const user = JSON.parse(decodeURIComponent(raw)) as AppUser;
+    return user.auth_user_id === authUserId ? user : null;
+  } catch {
+    return null;
+  }
+}
+
 const APP_USER_COLUMNS =
   "id, auth_user_id, username, full_name, role, org_unit_id, status, must_change_password, consented_at, language, a11y_settings, onboarding_progress, onboarding_completed_at, notifications_last_read_at, org_units(level)";
 

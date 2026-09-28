@@ -45,7 +45,7 @@ export function MoreMenu({ items, labels, triggerLabel }: Props) {
           {items.map((item) => {
             const active = isNavItemActive(pathname, item);
             return (
-              <Link
+              <Link prefetch={false}
                 key={item.id}
                 href={item.href}
                 aria-current={active ? "page" : undefined}

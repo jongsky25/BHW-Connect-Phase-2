@@ -63,7 +63,7 @@ export default async function SurveysPage() {
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
           {rows.map((survey) => (
             <li key={survey.id}>
-              <Link
+              <Link prefetch={false}
                 href={`/surveys/${survey.id}`}
                 className="flex min-h-[44px] flex-col gap-1 px-4 py-3 hover:bg-ink/5"
               >

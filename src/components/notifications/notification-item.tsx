@@ -30,7 +30,7 @@ export function NotificationItem({ notification, locale }: Props) {
   }
 
   return (
-    <Link
+    <Link prefetch={false}
       href={notification.link_path}
       className="block rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
     >

@@ -210,6 +210,7 @@ export function EntriesTable({ rows, owners }: { rows: EntryRow[]; owners: Owner
                 <td className="px-3 py-3 text-sm">
                   <div className="flex items-center gap-2">
                     <Link
+                      prefetch={false}
                       href={`/admin/kb/entries/${row.id}`}
                       className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                     >

@@ -10,13 +10,21 @@ import { mapSettingsRpcError } from "@/lib/settings/error-messages";
 import { accentColorHex, colorPresets, primaryColorHex } from "@/lib/settings/palette";
 import {
   accentColors,
+  densities,
   fontScales,
+  lineSpacings,
+  motionPreferences,
   primaryColors,
+  readingFonts,
   themes,
   type A11ySettings,
   type AccentColor,
+  type Density,
   type FontScale,
+  type LineSpacing,
+  type MotionPreference,
   type PrimaryColor,
+  type ReadingFont,
   type Theme,
 } from "@/lib/settings/types";
 import { useDisplaySettings } from "@/lib/settings/use-display-settings";
@@ -30,12 +38,14 @@ type Props = {
 };
 
 // Increment 2.4 restructures this page into anchored sections. Display
-// settings (theme/font size/contrast) and Colours (3.5) apply instantly and
-// save through use-display-settings.ts's shared debounce; Language keeps its
-// pre-2.4 explicit-Save flow, since a language change needs a full-page
-// refresh to load the other message catalog. Reading aids (Phase 4) are
-// still a placeholder here — nothing in this increment writes those keys.
+// settings (theme/font size/contrast/density/motion) and Colours (3.5)
+// apply instantly and save through use-display-settings.ts's shared
+// debounce; Language keeps its pre-2.4 explicit-Save flow, since a language
+// change needs a full-page refresh to load the other message catalog.
+// Reading & comfort (Phase 4) shares the same instant-apply/debounce flow.
 const CONTRAST_OPTIONS = [false, true] as const;
+const UNDERLINE_LINKS_OPTIONS = [false, true] as const;
+const COLORBLIND_STATUS_OPTIONS = [false, true] as const;
 
 function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
@@ -222,6 +232,7 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
   const [languageSaving, setLanguageSaving] = useState(false);
   const [languageError, setLanguageError] = useState<string | null>(null);
   const [languageSaved, setLanguageSaved] = useState(false);
+  const [confirmingReset, setConfirmingReset] = useState(false);
 
   // The settings page is only ever reached signed in (see settings/page.tsx's
   // redirect), so this always writes through the RPC, never the signed-out
@@ -327,6 +338,24 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
           disabled={isPreview}
         />
 
+        <SegmentedRadioGroup
+          legend={t("densityLabel")}
+          name="density"
+          options={densities}
+          value={a11y.density}
+          onChange={(next: Density) => updateDisplay({ density: next })}
+          labelFor={(option) => t(`density${capitalize(option)}`)}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("motionLabel")}
+          name="motion"
+          options={motionPreferences}
+          value={a11y.motion}
+          onChange={(next: MotionPreference) => updateDisplay({ motion: next })}
+          labelFor={(option) => t(`motion${capitalize(option)}`)}
+        />
+
         <DisplayStatusMessage status={displayStatus} errorKey={displayErrorKey} />
         {isPreview ? <PreviewNote /> : null}
 
@@ -341,23 +370,92 @@ export function SettingsForm({ initialLanguage, initialA11y }: Props) {
       </Section>
 
       <Section id="reading" heading={t("readingHeading")}>
-        <p className="text-sm text-ink/70">{t("readingPlaceholder")}</p>
+        {/* Shares the Display section's one status/aria-live region above —
+            both write through the same debounced save, so a second region
+            here would double-announce the same "Saved" to screen readers. */}
+        <SegmentedRadioGroup
+          legend={t("underlineLinksLabel")}
+          name="underline-links"
+          options={UNDERLINE_LINKS_OPTIONS}
+          value={a11y.underline_links}
+          onChange={(next: boolean) => updateDisplay({ underline_links: next })}
+          labelFor={(option) => t(option ? "underlineLinksOn" : "underlineLinksOff")}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("lineSpacingLabel")}
+          name="line-spacing"
+          options={lineSpacings}
+          value={a11y.line_spacing}
+          onChange={(next: LineSpacing) => updateDisplay({ line_spacing: next })}
+          labelFor={(option) => t(`lineSpacing${capitalize(option)}`)}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("readingFontLabel")}
+          name="reading-font"
+          options={readingFonts}
+          value={a11y.reading_font}
+          onChange={(next: ReadingFont) => updateDisplay({ reading_font: next })}
+          labelFor={(option) => t(`readingFont${capitalize(option)}`)}
+        />
+
+        <SegmentedRadioGroup
+          legend={t("colorblindStatusLabel")}
+          name="colorblind-status"
+          options={COLORBLIND_STATUS_OPTIONS}
+          value={a11y.colorblind_status}
+          onChange={(next: boolean) => updateDisplay({ colorblind_status: next })}
+          labelFor={(option) => t(option ? "colorblindStatusOn" : "colorblindStatusOff")}
+        />
       </Section>
 
       <Section id="reset" heading={t("resetHeading")}>
         {/* Reset writes through the same rpc_update_display_settings flow as
             the Display controls above, and shares its one status/aria-live
             region — a second live region announcing the same text here
-            would double-announce to screen readers. */}
+            would double-announce to screen readers. A confirm step (4.5)
+            guards it, the same inline confirm/cancel pattern
+            course-progress-console.tsx already uses for its own reset
+            action, since this wipes every display preference at once. */}
         <p className="text-sm text-ink/70">{t("resetIntro")}</p>
-        <button
-          type="button"
-          onClick={handleReset}
-          disabled={isPreview}
-          className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5 disabled:opacity-60"
-        >
-          {t("resetAction")}
-        </button>
+        {confirmingReset ? (
+          <div className="flex flex-col gap-2">
+            <p role="alert" className="text-sm text-danger">
+              {t("resetConfirmWarning")}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                disabled={displayStatus === "saving" || isPreview}
+                onClick={async () => {
+                  await handleReset();
+                  setConfirmingReset(false);
+                }}
+                className="self-start rounded-md bg-danger px-4 py-2 text-sm font-medium text-canvas transition-opacity disabled:opacity-60"
+              >
+                {t("resetConfirmAction")}
+              </button>
+              <button
+                type="button"
+                disabled={displayStatus === "saving"}
+                onClick={() => setConfirmingReset(false)}
+                className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5 disabled:opacity-60"
+              >
+                {t("resetCancelAction")}
+              </button>
+            </div>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setConfirmingReset(true)}
+            disabled={isPreview}
+            className="self-start rounded-md border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-ink/5 disabled:opacity-60"
+          >
+            {t("resetAction")}
+          </button>
+        )}
         {isPreview ? <PreviewNote /> : null}
       </Section>
     </div>

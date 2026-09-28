@@ -53,9 +53,9 @@ export default async function KbBrowsePage() {
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
           {rows.map((category) => (
             <li key={category.slug}>
-              <Link
+              <Link prefetch={false}
                 href={`/kb/${category.slug}`}
-                className="flex min-h-[44px] items-center px-4 py-3 text-ink hover:bg-ink/5"
+                className="flex min-h-[44px] items-center px-4 py-[var(--space-row)] text-ink hover:bg-ink/5"
               >
                 {locale === "en" ? category.name_en : category.name_fil}
               </Link>

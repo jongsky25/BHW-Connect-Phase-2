@@ -93,7 +93,7 @@ export function UsersConsole({ initialUsers, rootOrgUnit, query, page, totalCoun
           {t("searchSubmit")}
         </button>
         {query ? (
-          <Link
+          <Link prefetch={false}
             href={userListHref("", 1)}
             className="rounded-md border border-ink/20 px-3 py-2 text-sm font-medium text-ink hover:bg-ink/5"
           >
@@ -150,7 +150,7 @@ export function UsersConsole({ initialUsers, rootOrgUnit, query, page, totalCoun
             </p>
             <div className="flex items-center gap-2">
               {page > 1 ? (
-                <Link
+                <Link prefetch={false}
                   href={userListHref(query, page - 1)}
                   className="rounded-md border border-ink/20 px-3 py-1 text-sm font-medium text-ink hover:bg-ink/5"
                 >
@@ -158,7 +158,7 @@ export function UsersConsole({ initialUsers, rootOrgUnit, query, page, totalCoun
                 </Link>
               ) : null}
               {page < lastPage ? (
-                <Link
+                <Link prefetch={false}
                   href={userListHref(query, page + 1)}
                   className="rounded-md border border-ink/20 px-3 py-1 text-sm font-medium text-ink hover:bg-ink/5"
                 >

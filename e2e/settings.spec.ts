@@ -181,6 +181,91 @@ test("the main and accent colour swatches are keyboard-operable", async ({ page,
   await expect(page.locator("html")).toHaveAttribute("data-accent", "violet");
 });
 
+// Increment 4.5 DoD: the plan's own axe matrix — {light, dark} ×
+// {standard, high contrast} × {marigold/teal, equity/marigold} — run against
+// one throwaway profile rather than eight, since each combination only
+// needs the settings page in that state, not a fresh account. Asserts the
+// resulting <html> attribute(s) before each scan rather than waiting for
+// the "saved" banner: re-clicking an already-selected radio (the first
+// theme/contrast combination lands on the profile's own defaults) doesn't
+// fire a change event in a real browser, so no save round-trip happens —
+// the attribute, applied synchronously by useDisplaySettings.ts on click,
+// is the reliable signal either way. Bayanihan (marigold/teal) is this
+// profile's own default pair, so displayAttributes() omits data-primary/
+// data-accent entirely for it — only Equity in Health's non-default pair
+// sets them.
+test("axe passes across theme × contrast × colourway combinations (4.5)", async ({ page, request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  const newPassword = "Fresh-AxeMatrix-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await setLanguageEnglish(page, userToken);
+
+  await page.goto("/settings");
+  const main = page.getByRole("main");
+
+  const themes = [
+    { label: "Light", attr: "light" },
+    { label: "Dark", attr: "dark" },
+  ] as const;
+  const contrasts = [
+    { label: "Standard", attr: null },
+    { label: "High", attr: "high" },
+  ] as const;
+  const colourways = [
+    { preset: "Bayanihan", primary: null, accent: null },
+    { preset: "Equity in Health", primary: "equity", accent: "marigold" },
+  ] as const;
+
+  for (const theme of themes) {
+    await main.getByRole("radio", { name: theme.label }).click();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", theme.attr);
+
+    for (const contrast of contrasts) {
+      await main.getByRole("radio", { name: contrast.label }).click();
+      if (contrast.attr) {
+        await expect(page.locator("html")).toHaveAttribute("data-contrast", contrast.attr);
+      } else {
+        await expect(page.locator("html")).not.toHaveAttribute("data-contrast", "high");
+      }
+
+      for (const colourway of colourways) {
+        await main.getByRole("button", { name: colourway.preset }).click();
+        if (colourway.primary) {
+          await expect(page.locator("html")).toHaveAttribute("data-primary", colourway.primary);
+          await expect(page.locator("html")).toHaveAttribute("data-accent", colourway.accent);
+        } else {
+          await expect(page.locator("html")).not.toHaveAttribute("data-primary");
+          await expect(page.locator("html")).not.toHaveAttribute("data-accent");
+        }
+
+        const a11yScan = await new AxeBuilder({ page }).include("main").analyze();
+        expect(
+          a11yScan.violations,
+          `theme=${theme.label} contrast=${contrast.label} colourway=${colourway.preset}`,
+        ).toEqual([]);
+      }
+    }
+  }
+});
+
+// Increment 4.5 DoD: the plan's own "320px width pass".
+test("settings page passes axe at 320px width", async ({ page, request }) => {
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  const newPassword = "Fresh-Axe320-2026";
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, newPassword);
+  const userToken = await getAccessToken(request, fresh.username, newPassword);
+  await setLanguageEnglish(page, userToken);
+
+  await page.setViewportSize({ width: 320, height: 720 });
+  await page.goto("/settings");
+
+  const a11yScan = await new AxeBuilder({ page }).include("main").analyze();
+  expect(a11yScan.violations).toEqual([]);
+});
+
 test("a signed-out visitor's quick-display popover writes the BHW_DISPLAY cookie and persists on reload", async ({
   page,
 }) => {

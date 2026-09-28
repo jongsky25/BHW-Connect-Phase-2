@@ -145,8 +145,20 @@ export default async function CourseDetailPage({
 
   // Opt in only for a published mapped program. Private facilitator notes are
   // deliberately absent from every learner query and serialized prop.
+  // A BHW reaching a manual-mapped course here is on its assessment
+  // (CourseDetail assessmentOnly): no lesson, visual or narration is rendered,
+  // only whether the chapter has published lessons. Loading every published
+  // revision (both languages' read_sections and slides), the SVG visuals and
+  // audio timings — then serializing them all to the client — was pure egress.
+  const assessmentOnly = Boolean(manualHref);
   const loadReference = async (): Promise<ReferenceData | undefined> => {
     if(!program || !moduleIds.length)return undefined;
+    if(assessmentOnly){
+      const {data: anyLesson, error} = await supabase.from('course_lessons').select('id')
+        .in('module_id',moduleIds).not('published_revision_id','is',null).limit(1);
+      if(error)throw new Error('Unable to load lesson state');
+      return anyLesson?.length ? {...program,chapters:[],completed:[],resumes:[],lessons:[]} : undefined;
+    }
     const [chapterResult, lessonResult, completedResult, resumeResult] = await Promise.all([
       supabase.from('training_program_chapters').select('*').eq('program_id',program.id).order('position').returns<TrainingProgramChapter[]>(),
       supabase.from('course_lessons').select('*').in('module_id',moduleIds).not('published_revision_id','is',null).order('position').returns<CourseLesson[]>(),
@@ -182,7 +194,7 @@ export default async function CourseDetailPage({
           .order("position")
           .returns<QuizQuestion[]>()
       : Promise.resolve({ data: [] as QuizQuestion[] }),
-    moduleIds.length > 0
+    moduleIds.length > 0 && !assessmentOnly
       ? supabase
           .from("course_module_visuals")
           .select(
@@ -192,7 +204,7 @@ export default async function CourseDetailPage({
           .order("position")
           .returns<CourseModuleVisual[]>()
       : Promise.resolve({ data: [] as CourseModuleVisual[] }),
-    moduleIds.length > 0
+    moduleIds.length > 0 && !assessmentOnly
       ? supabase
           .from("course_module_audio")
           .select(
@@ -241,7 +253,7 @@ export default async function CourseDetailPage({
 
       <CourseDetail
         reference={reference}
-        assessmentOnly={Boolean(manualHref)}
+        assessmentOnly={assessmentOnly}
         courseId={course.id}
         quizMaxAttempts={course.quiz_max_attempts}
         modules={modules ?? []}

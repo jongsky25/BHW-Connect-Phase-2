@@ -85,7 +85,7 @@ export function MobileDrawer({ account, items, labels, initialA11y }: Props) {
     const active = isNavItemActive(pathname, item);
     return (
       <li key={item.id}>
-        <Link
+        <Link prefetch={false}
           href={item.href}
           aria-current={active ? "page" : undefined}
           onClick={close}
@@ -160,7 +160,7 @@ export function MobileDrawer({ account, items, labels, initialA11y }: Props) {
                 <LanguageToggle signedIn />
               </li>
               <li>
-                <Link
+                <Link prefetch={false}
                   href="/privacy"
                   aria-current={pathname === "/privacy" ? "page" : undefined}
                   onClick={close}
