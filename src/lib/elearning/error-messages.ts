@@ -33,6 +33,9 @@ export type ElearningErrorKey =
   | "notesTooLongError"
   | "logSubchapterFirstError"
   | "attendanceIncompleteError"
+  | "scopeWidenOnlyError"
+  | "orgUnitNotFoundError"
+  | "courseIsChapterError"
   | "genericError";
 
 // rpc_course_*/rpc_assessment_* raise plain Postgres exceptions (same
@@ -49,7 +52,11 @@ export function mapElearningRpcError(message: string | undefined): ElearningErro
   if (message.includes("org unit out of scope")) return "orgUnitOutOfScopeError";
   if (message.includes("invalid status")) return "invalidStatusError";
   if (message.includes("course has learner progress")) return "courseHasProgressError";
+  if (message.includes("this course belongs to a training program")) return "courseIsChapterError";
   if (message.includes("course not found")) return "courseNotFoundError";
+  if (message.includes("org unit not found")) return "orgUnitNotFoundError";
+  if (message.includes("scope can only be widened to an ancestor org unit"))
+    return "scopeWidenOnlyError";
   if (message.includes("use rpc_course_quiz_submit for quiz modules")) return "useQuizSubmitError";
   if (message.includes("quiz module not found")) return "quizModuleNotFoundError";
   if (message.includes("module not found")) return "moduleNotFoundError";
