@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { appendCoursePathSegment } from "@/lib/elearning/course-layout";
 import {useRouter} from "next/navigation";
 import type {
   CourseModule,
@@ -109,6 +108,11 @@ export function ReferenceLessons(props: Props) {
   // Keyed by lesson id, like `answers`, so switching lessons doesn't lose it.
   const [featuredWatched, setFeaturedWatched] = useState<Record<string, boolean>>({});
   const heading = useRef<HTMLHeadingElement>(null);
+  const readerDialog = useRef<HTMLDialogElement>(null);
+  const fullscreenTarget = useRef<HTMLDivElement>(null);
+  const [readerOpen, setReaderOpen] = useState(false);
+  const [orientation, setOrientation] = useState<"portrait" | "landscape">("portrait");
+  const [orientationHelp, setOrientationHelp] = useState(false);
   const writes = useRef(Promise.resolve());
   // Resume positions are saved on a trailing debounce, not on every Next/
   // Previous: each rpc_course_lesson_resume call runs the full visibility
@@ -176,6 +180,15 @@ export function ReferenceLessons(props: Props) {
     flushResumeRef.current = flushResume;
   });
   useEffect(() => {
+    const clearHelpWhenTurned = () => {
+      if (window.matchMedia?.(`(orientation: ${orientation})`).matches) {
+        setOrientationHelp(false);
+      }
+    };
+    window.addEventListener("resize", clearHelpWhenTurned);
+    return () => window.removeEventListener("resize", clearHelpWhenTurned);
+  }, [orientation]);
+  useEffect(() => {
     const flush = () => void flushResumeRef.current();
     const onVisibility = () => {
       if (document.visibilityState === "hidden") flush();
@@ -226,7 +239,7 @@ export function ReferenceLessons(props: Props) {
     }
   }
   function open(l: PublishedLesson) {
-    if(props.lessonBaseHref){router.push(appendCoursePathSegment(props.lessonBaseHref,l.id));return;}
+    if(props.lessonBaseHref){router.push(`${props.lessonBaseHref}/${l.id}`);return;}
     const latest = resumes
       .filter((r) => r.lesson_id === l.id)
       .sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];
@@ -249,6 +262,55 @@ export function ReferenceLessons(props: Props) {
     setPosition(p.id);
     save(lesson, m, p);
     requestAnimationFrame(() => heading.current?.focus());
+  }
+  function changeMode(next: LessonModality) {
+    if (!lesson || !item) return;
+    move(
+      lessonPosition(
+        lesson,
+        next,
+        resumes.find((r) => r.lesson_id === lesson.id && r.modality === next),
+        item.concept_ids[0],
+      ),
+      next,
+    );
+  }
+  function openReader() {
+    setReaderOpen(true);
+    setOrientationHelp(false);
+    readerDialog.current?.showModal();
+    // Safari on iPhone does not expose element fullscreen. The modal itself
+    // still fills the viewport and keeps the rest of the page out of view.
+    const target = fullscreenTarget.current;
+    if (target?.requestFullscreen) {
+      void target.requestFullscreen().catch(() => {});
+    }
+  }
+  function closeReader() {
+    if (document.fullscreenElement === fullscreenTarget.current) {
+      void document.exitFullscreen().catch(() => {});
+    }
+    readerDialog.current?.close();
+    setReaderOpen(false);
+    setOrientationHelp(false);
+  }
+  async function chooseOrientation(next: "portrait" | "landscape") {
+    setOrientation(next);
+    if (window.matchMedia?.(`(orientation: ${next})`).matches) {
+      setOrientationHelp(false);
+      return;
+    }
+    const orientationApi = screen.orientation as ScreenOrientation & {
+      lock?: (orientation: "portrait" | "landscape") => Promise<void>;
+    };
+    if (document.fullscreenElement && orientationApi?.lock) {
+      try {
+        await orientationApi.lock(next);
+        setOrientationHelp(false);
+        return;
+      } catch { /* Physical rotation remains available. */ }
+    }
+    setOrientationHelp(true);
   }
   async function complete() {
     if (!lesson || props.readOnly || pending || done.has(lesson.id) || !canComplete) return;
@@ -284,6 +346,86 @@ export function ReferenceLessons(props: Props) {
       setPending(false);
     }
   }
+  const readerContent = lesson && item && (
+    <>
+      <article
+        className="rounded-xl border border-ink/15 p-4 sm:p-6"
+        data-layout={"layout" in item ? item.layout : "read"}
+      >
+        {"display_fil" in item ? (
+          <>
+            <h2 tabIndex={-1} ref={heading} className="text-xl font-semibold">
+              {en ? item.heading_en : item.heading_fil}
+            </h2>
+            {practice}
+            {revealSummary && <div
+              className={
+                ["comparison", "relationship-map", "scene"].includes(
+                  item.layout,
+                )
+                  ? "my-5 grid gap-3 sm:grid-cols-2"
+                  : "my-5 flex flex-col gap-3"
+              }
+            >
+              {(en ? item.display_en : item.display_fil)
+                .split("\n")
+                .filter(Boolean)
+                .map((line, i) => (
+                  <p key={i} className="rounded-lg bg-ink/5 p-4 text-lg">
+                    {item.layout === "process" ? (
+                      <span aria-hidden="true">{i + 1}. </span>
+                    ) : null}
+                    {line}
+                  </p>
+                ))}
+            </div>}
+            {revealSummary && figures}
+          </>
+        ) : (
+          <ReferenceReadSection
+            key={lesson.id + item.id + props.locale}
+            heading={en ? item.heading_en : item.heading_fil}
+            body={en ? item.body_en : item.body_fil}
+            takeaway={revealSummary ? ((en ? item.takeaway_en : item.takeaway_fil) ?? "") : ""}
+            narration={revealSummary ? props.narration?.[lesson.id]?.[item.id] : undefined}
+            en={en}
+            headingRef={heading}
+          >
+            {figures}
+            {practice}
+            {!revealSummary && props.narration?.[lesson.id]?.[item.id] && <p className="mt-3 text-sm">
+              {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}
+            </p>}
+          </ReferenceReadSection>
+        )}
+      </article>
+      <nav
+        className="flex items-center justify-between gap-2"
+        aria-label={ui("Puwesto sa aralin", "Lesson position")}
+      >
+        <button
+          type="button"
+          className="rounded border p-3 disabled:opacity-40"
+          disabled={index === 0}
+          onClick={() => move(items[index - 1])}
+        >
+          {ui("Nakaraan", "Previous")}
+        </button>
+        <span aria-live="polite">
+          {index + 1} / {items.length}
+        </span>
+        <button
+          type="button"
+          className="rounded border p-3 disabled:opacity-40"
+          disabled={index === items.length - 1}
+          onClick={() => move(items[index + 1])}
+        >
+          {ui("Susunod", "Next")}
+        </button>
+      </nav>
+    </>
+  );
+
   return (
     <section
       className="flex flex-col gap-4"
@@ -399,106 +541,27 @@ export function ReferenceLessons(props: Props) {
                 />
               </div>
             )}
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {(["read", "slides"] as const).map((m) => (
                 <button
                   type="button"
                   className="rounded border border-ink/20 px-4 py-2"
                   key={m}
                   aria-pressed={mode === m}
-                  onClick={() =>
-                    move(
-                      lessonPosition(
-                        lesson,
-                        m,
-                        resumes.find(
-                          (r) => r.lesson_id === lesson.id && r.modality === m,
-                        ),
-                        item.concept_ids[0],
-                      ),
-                      m,
-                    )
-                  }
+                  onClick={() => changeMode(m)}
                 >
                   {m === "read" ? ui("Basahin", "Read") : "Slides"}
                 </button>
               ))}
+              <button
+                type="button"
+                className="rounded border border-ink/20 px-4 py-2"
+                onClick={openReader}
+              >
+                {ui("Buong screen", "Full screen")}
+              </button>
             </div>
-            <article
-              className="rounded-xl border border-ink/15 p-4 sm:p-6"
-              data-layout={"layout" in item ? item.layout : "read"}
-            >
-              {"display_fil" in item ? (
-                <>
-                  <h2 tabIndex={-1} ref={heading} className="text-xl font-semibold">
-                    {en ? item.heading_en : item.heading_fil}
-                  </h2>
-                  {practice}
-                  {revealSummary && <div
-                    className={
-                      ["comparison", "relationship-map", "scene"].includes(
-                        item.layout,
-                      )
-                        ? "my-5 grid gap-3 sm:grid-cols-2"
-                        : "my-5 flex flex-col gap-3"
-                    }
-                  >
-                    {(en ? item.display_en : item.display_fil)
-                      .split("\n")
-                      .filter(Boolean)
-                      .map((line, i) => (
-                        <p key={i} className="rounded-lg bg-ink/5 p-4 text-lg">
-                          {item.layout === "process" ? (
-                            <span aria-hidden="true">{i + 1}. </span>
-                          ) : null}
-                          {line}
-                        </p>
-                      ))}
-                  </div>}
-                  {revealSummary && figures}
-                </>
-              ) : (
-                <ReferenceReadSection
-                  key={lesson.id + item.id + props.locale}
-                  heading={en ? item.heading_en : item.heading_fil}
-                  body={en ? item.body_en : item.body_fil}
-                  takeaway={revealSummary ? ((en ? item.takeaway_en : item.takeaway_fil) ?? "") : ""}
-                  narration={revealSummary ? props.narration?.[lesson.id]?.[item.id] : undefined}
-                  en={en}
-                  headingRef={heading}
-                >
-                  {figures}
-                  {practice}
-                  {!revealSummary && props.narration?.[lesson.id]?.[item.id] && <p className="mt-3 text-sm">
-                    {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}
-                  </p>}
-                </ReferenceReadSection>
-              )}
-            </article>
-            <nav
-              className="flex items-center justify-between gap-2"
-              aria-label={ui("Puwesto sa aralin", "Lesson position")}
-            >
-              <button
-                type="button"
-                className="rounded border p-3 disabled:opacity-40"
-                disabled={index === 0}
-                onClick={() => move(items[index - 1])}
-              >
-                {ui("Nakaraan", "Previous")}
-              </button>
-              <span aria-live="polite">
-                {index + 1} / {items.length}
-              </span>
-              <button
-                type="button"
-                className="rounded border p-3 disabled:opacity-40"
-                disabled={index === items.length - 1}
-                onClick={() => move(items[index + 1])}
-              >
-                {ui("Susunod", "Next")}
-              </button>
-            </nav>
+            {!readerOpen && readerContent}
             {!props.readOnly && <>
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
@@ -581,6 +644,54 @@ export function ReferenceLessons(props: Props) {
         )
       )}
       {error && <div role="alert"><p>{error}</p>{lesson && item && <button className="mt-2 underline" onClick={()=>save(lesson,mode,item,true)}>{ui('Subukang i-save muli','Retry saving position')}</button>}</div>}
+      <dialog
+        ref={readerDialog}
+        aria-label={ui("Buong screen na aralin", "Full-screen lesson")}
+        onClose={() => {
+          if (document.fullscreenElement === fullscreenTarget.current) {
+            void document.exitFullscreen().catch(() => {});
+          }
+          setReaderOpen(false);
+          setOrientationHelp(false);
+        }}
+        className="fixed inset-0 m-0 h-dvh max-h-dvh w-dvw max-w-none border-0 bg-canvas p-0 text-ink backdrop:bg-black/70"
+      >
+        <div ref={fullscreenTarget} className="relative h-dvh w-dvw overflow-hidden bg-canvas text-ink">
+          <div data-orientation={orientation} className="lesson-reader-surface flex h-dvh flex-col overflow-hidden bg-canvas text-ink">
+          <div className="grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2 sm:grid-cols-[1fr_auto_1fr] sm:px-6">
+            <div className="col-start-1 row-start-1 flex gap-2" role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
+              {(["read", "slides"] as const).map((m) => (
+                <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)}
+                  className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
+                  {m === "read" ? ui("Basahin", "Read") : "Slides"}
+                </button>
+              ))}
+            </div>
+            <div className="col-span-2 row-start-2 flex justify-center gap-2 sm:col-span-1 sm:col-start-2 sm:row-start-1" role="group" aria-label={ui("Oryentasyon", "Orientation")}>
+              {(["portrait", "landscape"] as const).map((value) => (
+                <button key={value} type="button" aria-pressed={orientation === value} onClick={() => void chooseOrientation(value)}
+                  className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
+                  {value === "portrait" ? ui("Patayo", "Portrait") : ui("Pahiga", "Landscape")}
+                </button>
+              ))}
+            </div>
+            <button type="button" onClick={closeReader} className="col-start-2 row-start-1 justify-self-end rounded border border-ink/25 px-3 py-2 text-sm sm:col-start-3">
+              {ui("Isara", "Close")}
+            </button>
+          </div>
+          {orientationHelp && <p role="status" className="px-4 py-2 text-sm">
+            {orientation === "landscape"
+              ? ui("I-rotate ang device nang pahiga para mabasa ang nilalaman.", "Turn your device sideways to read the content.")
+              : ui("I-rotate ang device nang patayo para mabasa ang nilalaman.", "Turn your device upright to read the content.")}
+          </p>}
+          <div className="min-h-0 flex-1 overflow-auto px-3 py-4 sm:px-6">
+            <div className={`mx-auto flex flex-col gap-4 ${orientation === "portrait" ? "max-w-2xl" : "max-w-6xl"}`}>
+              {readerOpen && readerContent}
+            </div>
+          </div>
+          </div>
+        </div>
+      </dialog>
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import {act,cleanup,fireEvent,render,screen,waitFor} from '@testing-library/react';
+import {act,cleanup,fireEvent,render,screen,waitFor,within} from '@testing-library/react';
 import {afterEach,describe,expect,it,vi} from 'vitest';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
@@ -6,6 +6,34 @@ afterEach(cleanup);
 const part=(id:string)=>({id,concept_ids:['concept'],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Short content',body_fil:'Maikling aralin',check:null});
 const data={title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Lesson',title_en:'Lesson',objectives_fil:['Layunin'],objectives_en:['Objective'],revision:{id:'revision',read_sections:[part('first'),part('second')],slides:[{...part('slide'),display_en:'Slide content',display_fil:'Slide',layout:'scene'}],assets:[],sources:[]}}]} as unknown as ReferenceData;
 describe('route lesson viewer',()=>{
+  it('opens only the reader content and keeps mode, orientation, and paging inside it',()=>{
+    const showModal = HTMLDialogElement.prototype.showModal;
+    const close = HTMLDialogElement.prototype.close;
+    HTMLDialogElement.prototype.showModal = function () {this.setAttribute('open','');};
+    HTMLDialogElement.prototype.close = function () {this.removeAttribute('open');};
+    try {
+      const {container}=render(<ReferenceLessons {...data} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+      fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
+      const dialog=container.querySelector('dialog')!;
+      expect(dialog).toHaveAttribute('open');
+      expect(within(dialog).getByRole('heading',{name:'first'})).toBeInTheDocument();
+      expect(within(dialog).queryByText('Estimated 3–7 minutes for independent study; facilitated practice is separate.')).not.toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Landscape'}));
+      expect(within(dialog).getByRole('button',{name:'Landscape'})).toHaveAttribute('aria-pressed','true');
+      expect(dialog.querySelector('.lesson-reader-surface')).toHaveAttribute('data-orientation','landscape');
+      fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
+      expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Read'}));
+      fireEvent.click(within(dialog).getByRole('button',{name:'Next'}));
+      expect(within(dialog).getByRole('heading',{name:'second'})).toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Close'}));
+      expect(dialog).not.toHaveAttribute('open');
+      expect(screen.getByRole('heading',{name:'second'})).toBeInTheDocument();
+    } finally {
+      HTMLDialogElement.prototype.showModal = showModal;
+      HTMLDialogElement.prototype.close = close;
+    }
+  });
   it('admin preview never offers completion or writes resume',async()=>{
     const save=vi.fn();render(<ReferenceLessons {...data} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={save} onComplete={vi.fn()}/>);
     fireEvent.click(screen.getByRole('button',{name:'Next'}));
