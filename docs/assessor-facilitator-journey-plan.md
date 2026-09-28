@@ -17,17 +17,17 @@ This revision supersedes the earlier optional-full-module proposal.
 
 The full chapter is mandatory. There is no abbreviated prerequisite or optional full-chapter branch. The candidate's exemption from practical assessment applies to their own qualification pathway; BHW learners still follow their practical competency assessment pathway.
 
-## 2. Decisions and proposed defaults
+## 2. Approved decisions and remaining proposed defaults
 
-The confirmed sequence above can be implemented without reopening it. The questions below affect configuration and release criteria. No answers were received in the planning turn, so the defaults are recommendations, not approved policy.
+On 28 September 2026, the owner confirmed the three clarification answers: **1. 80%; 2. scoring exercise recommended; 3. progressive component readiness recommended.** Record these as the implementation requirements below. The orientation exercise's numeric pass threshold was not included in the resent question; it remains proposed, alongside D4–D5.
 
-| ID | Decision | Proposed default | Must be resolved before |
+| ID | Decision | Rule and status | Applied in |
 |---|---|---|---|
-| D1 | Which exams must pass, and at what score? | Take the pretest as a diagnostic baseline. Require 80% on the chapter post-test and each required quiz. Store thresholds per qualification curriculum; support different approved values. Full required chapter content is compulsory regardless of score. | AF-01 policy manifest, AF-03 production configuration |
-| D2 | What completes the assessor orientation? | Complete every orientation lesson and pass an automatically scored exercise on rating sample BHW cases; proposed 80%. Qualification is issued automatically from verified records. No human assessment of the candidate and no additional per-candidate admin approval. | AF-04 content, AF-05 issuance |
-| D3 | When can a BHW undertake a practical component? | After the related subchapter lessons and any component-specific tests. A chapter-wide post-test remains a final chapter requirement, so it does not accidentally block all subchapter components. | AF-01 component map, AF-07 readiness rules |
-| D4 | How do BHW ratings produce a final pass? | Every required indicator must have valid summative evidence rated Kaya na. Kailangan pa ng practice, Hindi pa and Not observed require follow-up. Do not average away a missing or failed required indicator. Final decision also checks chapter learning and the approved BHW test requirements. | AF-01 rubric, AF-08 final decision |
-| D5 | Retakes, validity and existing assessors | Allow candidate exam/orientation retakes with feedback and retained history; configurable limits, initially no fixed cap. No automatic credential expiry initially; explicit suspension/revocation is supported. Existing assessor roles do not receive automatic chapter qualifications. | AF-03, AF-05, AF-10 rollout |
+| D1 | Candidate chapter exams | **Approved:** complete the full chapter and achieve at least 80% on its post-test and each required quiz. The pretest is a diagnostic baseline, with no passing mark. Store the approved thresholds per qualification curriculum. Full chapter content is compulsory regardless of exam score. | AF-01 manifest, AF-03 exams |
+| D2 | Assessor orientation | **Approved:** complete the orientation and pass an exercise scoring sample BHW cases. Use the recommended automatically scored exercise; no practical assessment of the candidate by another assessor. The exercise's numeric threshold remains **proposed at 80%**, to be settled in AF-01. Automatic issuance from verified records remains the proposed implementation, without an additional per-candidate approval step. | AF-04 content, AF-05 issuance |
+| D3 | BHW practical component readiness | **Approved:** unlock each component after its related subchapter lessons and required tests. Do not require completion of the entire chapter to start a component. Full chapter requirements still apply to final chapter certification; a chapter-wide post-test must not accidentally block every subchapter component. | AF-01 component map, AF-07 readiness |
+| D4 | BHW final practical pass rule | **Proposed:** every required indicator has valid summative evidence rated Kaya na. Kailangan pa ng practice, Hindi pa and Not observed require follow-up. Do not average away a missing or failed required indicator. Final decision also checks chapter learning and approved BHW test requirements. | Resolve in AF-01 before AF-08 production activation |
+| D5 | Retakes, validity and existing assessors | **Proposed:** allow candidate exam/orientation retakes with feedback and retained history; configurable limits, initially no fixed cap. No automatic credential expiry initially; explicit suspension/revocation is supported. Existing assessor roles do not receive automatic chapter qualifications. | AF-03, AF-05, AF-10 rollout |
 
 D1 changes the candidate qualification rule. It does not silently turn the existing BHW learning-gain post-test into a new BHW pass/fail gate. AF-01 must explicitly document the BHW test requirements used for component and final readiness.
 
@@ -106,7 +106,7 @@ Every increment has one PR based on the then-current main. Update this document'
 
 **Done when**
 - Every required chapter section and exam maps to a stable identity; unavailable material is explicitly identified.
-- D1–D4 have recorded approved values or remain clearly blocked for production activation.
+- D1 and D3, and the D2 completion method, are implemented in the manifest as approved. The orientation exercise threshold and D4 rubric rule are recorded before production activation.
 - Fixtures demonstrate full versus partial chapter completion and formative versus summative evidence.
 - The next increments have a checked manifest and rubric contract to implement.
 
@@ -131,13 +131,13 @@ Every increment has one PR based on the then-current main. Update this document'
 
 #### AF-03 — Qualifying chapter exams, scoring and retakes
 
-**Depends on:** AF-02 and approved D1.
+**Depends on:** AF-02. D1 is approved: 80% for qualifying exams, diagnostic pretest.
 
 **Change existing features**
 - Reuse the chapter exam renderer with a candidate context and dynamic chapter headings.
 - Add server-scored candidate attempts, pass/fail result, feedback and configured retakes.
 - Snapshot the question set and rule used for each attempt; handle bank edits during an open attempt consistently.
-- Take the diagnostic pretest before learning under D1, then require every qualifying quiz/post-test pass.
+- Take the diagnostic pretest before learning without a passing mark, then require at least 80% on the chapter post-test and every required quiz.
 - Unlock orientation only from server-verified full chapter completion and passed exams. Reject skipped lessons, fabricated scores, duplicate question payloads and empty exams.
 
 **Done when**
@@ -180,7 +180,7 @@ Every increment has one PR based on the then-current main. Update this document'
 - Make qualification available to subsequent authorization checks; activation of stricter live assessment gates occurs in AF-10 after the complete path exists.
 
 **Done when**
-- Completion of the selected D2 rule issues one qualification for the selected chapter.
+- Completion of every orientation lesson and a passed sample-case scoring exercise issues one qualification for the selected chapter under the configured issuance rule.
 - A qualified Chapter I assessor remains unqualified for Chapter II.
 - The candidate's full sequence works without any practical assessment by another assessor.
 - Qualification cannot be created by changing a browser value or using View as.
@@ -213,13 +213,13 @@ Every increment has one PR based on the then-current main. Update this document'
 
 #### AF-07 — BHW detail and component eligibility
 
-**Depends on:** AF-01 component map, AF-06 and approved D3.
+**Depends on:** AF-01 component map and AF-06. D3 is approved: progressive readiness per component.
 
 **Change existing features**
 - Add a BHW detail view with chapter/subchapter progress, tests, observations, pending assessments and history.
 - Implement one authoritative eligibility service returning learner readiness, actor authority, missing prerequisites and allowed next actions.
 - Present each component as Waiting for learning, Ready, In progress, Needs practice, Completed or Unavailable.
-- Configure component prerequisites explicitly: a chapter post-test must not unintentionally become a prerequisite for every subchapter if D3 allows progressive assessment.
+- Configure each component to unlock after its related subchapter lessons and required tests. A chapter-wide post-test is a final chapter requirement, not a prerequisite for every subchapter component.
 - Use existing pending assessments as chapter containers where appropriate. Their mere presence does not prove readiness.
 - Link into the specific component from the dashboard, manual guide, session roster and assessment queue.
 
