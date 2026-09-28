@@ -6,7 +6,8 @@ import type {CourseModule,LessonModality} from '@/lib/elearning/types';
 import type {LessonNarration} from '@/lib/elearning/reference-narration';
 import {createClient} from '@/lib/supabase/client';
 
-export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,readOnly,lessonNumber,lessonCount,narration,nextLessonHref,initialMode}:{
+export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,readOnly,lessonNumber,lessonCount,narration,nextLessonHref,initialMode,assessorChapterId}:{
+  assessorChapterId?:string;
   data:ReferenceData; modules:CourseModule[]; lessonId:string; baseHref:string; locale:string; readOnly:boolean;
   lessonNumber:number; lessonCount:number; narration?:LessonNarration; nextLessonHref?:string; initialMode?:LessonModality; returnHref?:string;
 }) {
@@ -17,7 +18,8 @@ export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,r
     narration={narration?{[lessonId]:narration}:undefined}
     onResume={async value=>{
       if(readOnly)return;
-      const {error}=await createClient().rpc('rpc_course_lesson_resume',{
+      const {error}=await createClient().rpc(assessorChapterId?'rpc_assessor_lesson_resume':'rpc_course_lesson_resume',{
+        ...(assessorChapterId?{p_chapter_id:assessorChapterId}:{}),
         p_lesson_id:value.lesson_id,p_revision_id:value.revision_id,p_modality:value.modality,
         p_language:value.language,p_position_key:value.position_key,p_concept_id:value.concept_id,
       });
@@ -25,7 +27,7 @@ export function ManualLesson({data,modules,lessonId,baseHref,returnHref,locale,r
     }}
     onComplete={async lesson=>{
       if(readOnly)return;
-      const {error}=await createClient().rpc('rpc_course_lesson_complete',{p_lesson_id:lesson.id,p_revision_id:lesson.revision.id});
+      const {error}=await createClient().rpc(assessorChapterId?'rpc_assessor_lesson_complete':'rpc_course_lesson_complete',{...(assessorChapterId?{p_chapter_id:assessorChapterId}:{}),p_lesson_id:lesson.id,p_revision_id:lesson.revision.id});
       if(error)throw error;
       router.refresh();
     }}/>
