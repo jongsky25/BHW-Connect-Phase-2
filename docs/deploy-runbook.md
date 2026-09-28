@@ -85,6 +85,9 @@ Consequences:
   `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the `ANON_KEY` that `npx supabase status`
   prints, and every `E2E_STABLE_*_PASSWORD` to `local-e2e-password`, then
   `npm run e2e`. `npx supabase db reset` rebuilds the database from scratch.
+  `playwright.config.ts` refuses to run if `NEXT_PUBLIC_SUPABASE_URL` is the
+  pilot's, so a `.env.local` still pointed at the pilot fails fast instead of
+  writing test data there.
 - `e2e-test-users-purge.yml` and `e2e-test-courses-purge.yml` still target
   the pilot, to clear the test data E2E left there before the switch.
 
