@@ -1,141 +1,310 @@
-# Assessor and facilitator journey — implementation plan
+# Assessor and facilitator process — executable increment plan
 
-Status: proposal for review, 28 September 2026. This PR plans the work; it does not change roles, live assessment rules, or pilot data.
+Updated: 28 September 2026.
+Status: planning PR #166; all increments below are **not started**.
+This revision supersedes the earlier optional-full-module proposal.
 
-## Goal
+## 1. Confirmed user requirements
 
-An assessor becomes **qualified for a particular chapter** only after completing the BHW learning path for that chapter and its assessor training. The facilitator then has one guided place to find BHWs in their catchment, understand each learner's progress and eligible assessment components, observe competence against chapter rubrics, and reach an evidence-backed decision. A person can hold the `assessor` account role without being qualified for every chapter.
+1. The assessor candidate must complete the **full chapter** for which they want to qualify, including its learning content, and pass its required exams.
+2. The candidate does **not** need a practical assessment by another assessor. Completion of the chapter and passed exams unlock the next step directly.
+3. **After** that, the candidate completes the chapter's assessor orientation/course on how to assess BHW competence and how to score.
+4. Qualification is per chapter. Qualification for Chapter I does not qualify someone for Chapter II.
+5. Provide a guide, tour or navigator explaining how to facilitate.
+6. Show all BHWs in the assessor's assigned area, with their learning progress. Selecting a BHW shows the assessment components they are eligible for and lets the qualified assessor conduct them.
+7. Redesign both the assessment interface and the assessment process.
+8. Deliver these as changes to existing BHW Connect features and content infrastructure.
 
-This applies first to the published BHW Reference Manual chapters and extends chapter by chapter. Qualification to assess Chapter I does not imply qualification for Chapter II. "Certified assessor" here is an internal, chapter-scoped qualification; it is distinct from the BHW's existing QR-verifiable course certificate. Do not present it as a TESDA/DOH credential unless the issuing authority and wording are separately approved.
+The full chapter is mandatory. There is no abbreviated prerequisite or optional full-chapter branch. The candidate's exemption from practical assessment applies to their own qualification pathway; BHW learners still follow their practical competency assessment pathway.
 
-## Existing system and the gaps this plan addresses
+## 2. Decisions and proposed defaults
 
-- `training_programs → training_program_chapters → courses → course_modules → course_lessons` is the learner hierarchy. Chapter progress is derived from required published lessons; the pretest, post-test and certificate are separate steps (`docs/bhw-progress-plan.md`).
-- The `assessor` role already runs `/training-sessions` and `/assessments`. Sessions are an optional cohort wrapper; solo BHW learning remains valid. The facilitator guide is already available on manual chapter/subchapter/lesson pages.
-- The subchapter guide already lists BHWs in scope and records append-only `competency_observations`, including a three-level rating and optional activity evidence (`docs/facilitator-guide.md`). Its first-500 roster and the separate session page are poor starting points for a catchment-wide workflow.
-- `/admin/training-progress` has a paged, searchable manual/chapter/subchapter progress summary, but its route is admin-only. The facilitator's session roster covers enrolled BHWs rather than all BHWs in the catchment.
-- Completing a course currently creates a pending `assessments` row. `rpc_assessment_claim` and `rpc_assessment_decide` check the assessor role and assignment, but no chapter qualification. The final decision is a boolean plus free-text note; recorded observations do not yet determine or substantiate it. `src/components/elearning/assessments-console.tsx` exposes that as a flat queue.
-- The assessor catchment is an org subtree, with placement at regional, provincial or city/municipal level (`20261002000100_assessor_catchment_bhw_barangay.sql`). Scope, account role and chapter qualification are three different checks. Existing training plans lock in reuse of the `assessor` role and no BHW self-enrollment.
+The confirmed sequence above can be implemented without reopening it. The questions below affect configuration and release criteria. No answers were received in the planning turn, so the defaults are recommendations, not approved policy.
 
-## Proposed journey
-
-| Stage | Assessor/facilitator sees or does | System rule |
-|---|---|---|
-| 1. Start | An "Become an assessor" page lists chapters, qualification status and next action. | Account is provisioned with `assessor` role as today; this alone grants no new certification authority. |
-| 2. Learn the BHW course | Complete the chapter's required learning path and all applicable tests as a learner. | Use a distinct assessor-as-learner progress/attempt context so existing BHW-only RPCs, progress, certificates and BHW population counts are not silently reused or inflated. A BHW-facing assessment by another assessor is **not** required for this prerequisite. |
-| 3. Optional full module | Opt into the expanded BHW module experience, including every applicable pretest, module quiz and post-test, practice activities and lesson content. | It remains optional and self-directed; no other assessor grades the candidate as a BHW. Clarify the boundary between required chapter learning and expanded practice before authoring. Do not turn optional completion into a hidden certification gate. |
-| 4. Assessor training | Work through chapter-specific "how to assess" lessons: competency evidence, when an assessment component is ready, direct observation, three-level rating, feedback, retry, records, bias and difficult cases. Practice on sample BHW cases and calibrate ratings against approved examples. | Training and calibration/test completion are recorded per chapter and version. The pass rule, retry policy, issuing authority and validity period are explicit configuration/content decisions, not assumed from the BHW quiz threshold. |
-| 5. Qualification | See "Certified to assess Chapter N" with date, scope and training version; other chapters show what is still owed. | Activate chapter qualification only when both required prerequisites pass. Retain an audit record of who/what conferred it; support suspension/expiry if policy later requires it. |
-| 6. Guided facilitation | Open a short first-use tour, a persistent "How to facilitate" guide and a contextual help link at each step. | Guidance is available again after dismissal, in Filipino and English, on mobile and with keyboard/screen-reader support. |
-| 7. Find a BHW | Dashboard lists active BHWs in the assessor's catchment, with search, area filters, chapter progress, readiness and follow-up needs. | Server-side pagination and bounded queries; never treat session enrollment as the only source of eligible BHWs. No cross-catchment reads. |
-| 8. Assess | Open a BHW workspace, inspect chapter and subchapter progress, then select an eligible assessment component. Record evidence, rating and feedback, or schedule/retry the component. | Display the reason a component is ready or blocked. Enforce the same state and qualification checks in write RPCs; a disabled button alone is insufficient. |
-| 9. Decide and follow up | Review a summary of required evidence, missing indicators and previous attempts; confirm a decision and show the next BHW action. | Certificate issuance only after the approved chapter-level pass rule is satisfied; failed/needs-practice outcomes retain feedback and a repeat path. |
-
-### Eligibility language in the BHW workspace
-
-The page should make a distinction between **learning**, **practice observation**, and **final assessment**:
-
-- Pretest: taken by the BHW before learning under the existing course rules; visible as a status, never administered or answered by the assessor.
-- Lessons and post-test: show completed/remaining counts and attempts. Use the existing chapter rules; do not invent a post-test pass mark where the current test measures learning gain.
-- Practice observation: can be recorded during facilitation with date, observer, activity and indicator. It is evidence, not an automatic pass or certificate.
-- Summative component: show "Ready to assess" only after its approved prerequisites are met. For each indicator, show required evidence, latest rating, history and "Needs practice" / "Not yet" next steps.
-- Final chapter decision: show the consolidated checklist and only enable submission after all required components have valid evidence under the approved rating rule. On a retry, preserve the earlier evidence and decision, and make the reassessment target clear.
-- If a chapter is unpublished or its assessment rubric/training is not approved, label it "Not yet available" rather than 0% or ready.
-
-### Assessment interface redesign
-
-Replace the flat pass/fail list with a mobile-first flow: **catchment dashboard → BHW detail → chapter → eligible component → observe/rate → review and confirm**. In the BHW detail, use the existing progress bars and status chips; add a compact "Next action" panel and component cards with explicit eligibility reasons. In the rating step, show one observable behavior at a time, the authored `Kaya na / Kailangan pa ng practice / Hindi pa` anchors, linked activity and an evidence note. Require an intentional review/confirmation before a final decision. Show a clear saved state, validation and recovery from a failed submission. Validate the flow with real assessor/BHW scenarios at 360px and desktop, Filipino and English, light and dark themes. Keep the queue as an entry point to the same BHW workspace, so an assessment cannot take a different decision path.
-
-## Data and authorization design
-
-1. Add chapter qualification and training-attempt records keyed by assessor user, chapter identity and published training version. Store prerequisite completions, outcome, issue/expiry/revocation metadata and audit events. Preserve immutable historical attempts when training or a rubric changes. Decide whether an existing qualification stays valid after a content revision through an explicit policy; never silently revoke or grandfather it.
-2. Give assessors a supported learner path through chapter lessons/tests without changing their account role or creating a fake BHW. Either extend the existing RPCs with a strictly scoped learner context or add parallel assessor-training progress. Keep BHW `course_progress`, BHW certificates, BHW dashboards and population denominators semantically clean. Reuse authored lessons and questions where feasible.
-3. Author assessor training as chapter-versioned content with case exercises, answer/rating rationales and calibration assessment. Keep the source and review status alongside the chapter rubric; require a subject-matter reviewer before publication.
-4. Define an eligibility/read model for a BHW + chapter: published content, chapter learning/test states, component prerequisites, latest observations, outstanding indicators, assessment status and assessor qualification. Compute it once for both the dashboard/detail presentation and the write path's authoritative checks.
-5. Extend observation evidence to distinguish formative practice from summative assessment, record the rubric/activity version used, and attach the rating and evidence to the assessment/component. The newest observation alone must not silently overwrite a past certification decision.
-6. Replace or extend `rpc_assessment_claim` and `rpc_assessment_decide` transactionally. Recheck active account, catchment, chapter qualification, assignment, current eligibility and required evidence at the moment of claim/decision. Reject direct RPC calls that bypass the UI; prohibit self-assessment. Preserve the existing BHW QR certificate flow only for a valid BHW decision. Assessors' chapter credentials use separate records.
-7. Extend assessor-scoped read policies/queries for the paginated dashboard and BHW detail, using the catchment rules already established. Bound list reads and avoid per-row security-definer checks and extra middleware queries, consistent with `CLAUDE.md`.
-
-## Increment sequence and review gates
-
-| Increment | Deliverable | Acceptance evidence |
-|---|---|---|
-| A. Rules and UX | Approved chapter prerequisite map, rating/decision rubric, bilingual screen flow and mobile mockups; map current vs proposed assessment states. | Walk through a new assessor, a partially qualified assessor, a solo BHW, a session BHW, a failed/retake case and an out-of-area case. Explicitly approve what "full module" includes and the competency pass rule. |
-| B. Qualification foundation | Migrations, chapter training content/attempts, assessor-as-learner path and issuance/audit RPCs. | An assessor cannot qualify on role alone, skip either prerequisite, self-issue a qualification, or gain a BHW certificate merely by taking the prerequisite. Chapter I qualification does not open Chapter II. |
-| C. Guide and dashboard | "Become an assessor" journey and persistent tour/help; paginated catchment dashboard and BHW detail using the existing manual progress summarizer. | In-scope BHWs appear whether solo or enrolled; sibling catchments are excluded; states and next actions match actual records. Test Filipino/English and accessible mobile UI. |
-| D. Structured assessment | Component eligibility, evidence capture, rubric-based rating/review, retry and the final decision guard in the RPC. Retire the old direct binary decision path for chapter-based assessments. | Forced RPC calls fail without qualification, readiness or evidence. A pass issues exactly one BHW certificate; failures preserve evidence, feedback and retry history. Concurrent claims/decisions cannot duplicate certificates. |
-| E. Pilot release | End-to-end assessor and BHW walkthrough, migration replay on the local Supabase stack, content review and controlled pilot rollout. | Confirm rendered screens with real fixtures; verify cross-catchment RLS, course/session/solo flows, chapter version changes, audit and certificate verification. Apply migrations to the pilot together only at merge time, per `CLAUDE.md`. |
-
-## Decisions to settle in Increment A
-
-1. Does "full module" mean the expanded BHW learning/practice track beyond the mandatory chapter lessons, or the whole chapter course including every assessment? Proposed interpretation above: required core chapter course and tests; optional expanded practice and tests, with no external assessment.
-2. Which assessor-training calibration score, number of attempts, reviewer/issuer and validity period confer the chapter qualification? Proposed default is a versioned training test plus administrator approval of the training content, with no self-awarded credential or unapproved numeric threshold.
-3. Which indicators/components are mandatory for each chapter, and how do three-level ratings aggregate into a pass? The authored module indicators are a starting point, but the current notes vary in specificity; approve a chapter rubric before allowing a final certificate.
-4. Should previously provisioned assessors receive a time-limited transition status? The safe default is no automatic qualification; existing accounts retain access to training, while new claim/decision authority follows the chapter gate at rollout.
-5. What happens to a claimed assessment when an assessor's qualification expires or is revoked? Proposed rule: it returns to an eligible qualified assessor, with history preserved.
-
-## Out of scope for this planning PR
-
-No production migration, feature flag change, qualification grant, assessor training publication, or replacement of the current assessment UI is included. Those belong to the reviewed increments above.
-
-
-## Reviewable screen flow for Increment A
-
-The first release should provide one clear assessor entry point, such as **Facilitate and assess**, linked from the assessor home/navigation. It has four destinations: **My chapter qualifications**, **BHWs in my area**, **Sessions**, and **Assigned assessments**. The latter two can retain their current data and actions while their navigation points into the new BHW workspace. An admin's separate `/admin/training-progress` page remains an administrative view.
-
-```mermaid
-flowchart TD
-  A["Facilitate and assess"] --> Q["My qualifications"]
-  A --> D["BHWs in my area"]
-  A --> S["Sessions"]
-  A --> P["Assigned assessments"]
-  Q --> T["BHW chapter course and assessor training"]
-  D --> B["BHW profile and chapter progress"]
-  S --> B
-  P --> B
-  B --> C["Eligible component"]
-  C --> R["Evidence and anchored rating"]
-  R --> F["Review, decide, follow up"]
-```
-
-| Screen | Primary content | Primary action | Empty/blocked state |
+| ID | Decision | Proposed default | Must be resolved before |
 |---|---|---|---|
-| My qualifications | One card per published chapter: BHW learning, tests, assessor training, calibration, qualification date and version. | Continue the earliest incomplete prerequisite. | Explain why assessment authority is unavailable; link directly to training. |
-| BHWs in my area | Search, org filter, paged list of active BHWs, chapter progress, next action and follow-up count. | Open the selected BHW. | No matching BHWs; clear filters. Scope is explained without disclosing out-of-area names. |
-| BHW detail | Identity and barangay, chapter step tracker, subchapter lesson progress, tests, observations, assessment history and a component list. | Open a component labelled Ready, Needs practice, Waiting for BHW, or Unavailable. | Give the specific prerequisite and the next person/action; never leave a disabled control unexplained. |
-| Component assessment | Observable behavior and rating anchors, linked activity, evidence note, previous ratings, save-progress state. | Save observation or continue to review. | Show required fields and recoverable save errors; no certificate action in this screen. |
-| Review and decision | Each required component's latest valid evidence, missing items, BHW feedback and outcome. | Confirm decision once the server verifies prerequisites and evidence. | List missing items with links back to the relevant component. |
+| D1 | Which exams must pass, and at what score? | Take the pretest as a diagnostic baseline. Require 80% on the chapter post-test and each required quiz. Store thresholds per qualification curriculum; support different approved values. Full required chapter content is compulsory regardless of score. | AF-01 policy manifest, AF-03 production configuration |
+| D2 | What completes the assessor orientation? | Complete every orientation lesson and pass an automatically scored exercise on rating sample BHW cases; proposed 80%. Qualification is issued automatically from verified records. No human assessment of the candidate and no additional per-candidate admin approval. | AF-04 content, AF-05 issuance |
+| D3 | When can a BHW undertake a practical component? | After the related subchapter lessons and any component-specific tests. A chapter-wide post-test remains a final chapter requirement, so it does not accidentally block all subchapter components. | AF-01 component map, AF-07 readiness rules |
+| D4 | How do BHW ratings produce a final pass? | Every required indicator must have valid summative evidence rated Kaya na. Kailangan pa ng practice, Hindi pa and Not observed require follow-up. Do not average away a missing or failed required indicator. Final decision also checks chapter learning and the approved BHW test requirements. | AF-01 rubric, AF-08 final decision |
+| D5 | Retakes, validity and existing assessors | Allow candidate exam/orientation retakes with feedback and retained history; configurable limits, initially no fixed cap. No automatic credential expiry initially; explicit suspension/revocation is supported. Existing assessor roles do not receive automatic chapter qualifications. | AF-03, AF-05, AF-10 rollout |
 
-### Example BHW component states
+D1 changes the candidate qualification rule. It does not silently turn the existing BHW learning-gain post-test into a new BHW pass/fail gate. AF-01 must explicitly document the BHW test requirements used for component and final readiness.
 
-These are UI examples for review; exact readiness thresholds and required indicators come from the approved chapter rubric, not these labels.
+## 3. Existing features to extend
 
-| BHW record | Component display | Assessor action |
+Repository inspection includes the current main course route, versioned bank migration, facilitator guide, assessment console and progress features. Recheck the latest main and applicable working rules at the start of each increment.
+
+| Existing area | Current behavior | Planned change |
 |---|---|---|
-| Pretest missing, no lessons started | Waiting for BHW — take the pretest. | View progress or guide the BHW to their own pretest; no assessor-submitted attempt. |
-| Lessons under way, practice session occurring | Practice observation available. Final assessment waiting for learning. | Record formative evidence and feedback; do not issue a final decision. |
-| Required lessons done and post-test recorded | Ready to assess, subject to the approved component prerequisites. | Select an indicator and record observed performance. |
-| Latest indicator is Kailangan pa ng practice | Needs practice — show the exact indicator, feedback and suggested activity. | Re-observe after practice; retain earlier history. |
-| All required indicators have valid passing evidence | Ready for review. | Check the consolidated record and submit the chapter decision. |
-| Assessor has the role but lacks qualification for this chapter | Read-only chapter progress; qualification required. | Continue assessor training. Direct claim/decision RPCs must reject this actor. |
-| Assessment assigned to another qualified assessor | Assigned elsewhere. | Read only if the user's scope permits; no duplicate decision. |
+| Reference Manual: `training_programs → training_program_chapters → courses → course_modules → course_lessons` | BHW learning; assessor/admin usually preview or view the guide. | Add an assessor candidate learning mode using the same full chapter lessons and renderers, with personal completion/resume records. |
+| `src/app/training/[programId]/[[...path]]/page.tsx`, `manual-lesson.tsx` | Learner and facilitator views already share a hierarchy. | Explicit modes: My chapter learning, Facilitator guide, and BHW preview. Learning actions use the real account and candidate context. |
+| `src/app/courses/[id]/page.tsx`, `course-detail.tsx`, `pre-post-test.tsx` | Manual-mapped assessor access redirects to the manual; BHW assessment view loads chapter tests. Some headings still say Chapter I. | Candidate exam entry with dynamic chapter labels, qualifying score, attempts, feedback and retry. Preserve the BHW pathway. |
+| `course_test_questions_current`, `rpc_course_test_submit` | Versioned questions; the inspected RPC records a score, permits one submission per phase and has no qualifying post-test threshold. | Add a candidate exam contract with explicit pass rules and repeat attempts, reusing reviewed chapter content. Do not relax the legacy BHW contract as a shortcut. |
+| `/admin/training-progress`, `src/lib/progress/load-supervisor-progress.ts`, `src/components/progress/` | Admin-only paginated manual/chapter/subchapter overview. | Reuse summarizers/cards in an assessor entry point with catchment reads, next actions and BHW drill-down. |
+| `facilitator-guide.ts`, `facilitator-roster.tsx`, `competency_observations` | Guides, three rating levels, append-only observations, activity snapshots, and a roster capped at 500. | Reuse guide content and evidence history; add component readiness, assessment linkage and proper pagination. |
+| `/training-sessions` | Assessor-created optional cohorts, attendance and delivery logs. | Link every roster BHW into the common assessment workspace; add chapter qualification checks when activating the new facilitator process. |
+| `/assessments`, `assessments-console.tsx`, `rpc_assessment_claim`, `rpc_assessment_decide` | Course queue, claim and binary decision with free text. | Structured component assessment, evidence review, retakes and chapter-qualified authorization. |
+| Current feature access / View as / hidden and archived content | Recent changes affect navigation and visibility. | Respect actual feature access and content visibility. Previewing a role never grants real learning completions, qualification or assessment authority. |
 
-### First-use guidance
+Keep the existing assessor role and account provisioning. A chapter credential is an additional capability. Assessors learn under their own accounts; no fake BHW account, role switching or enrollment into the BHW population is needed.
 
-The tour has four short steps, each with **Next**, **Back**, **Skip**, and **Open this guide later**:
+## 4. End-to-end states
 
-1. Find a BHW using area and name; session enrollment is optional.
-2. Read the chapter progress and the reason each component is ready or blocked.
-3. Observe against the written indicator, choose a level and record what was actually seen.
-4. Review all evidence, give actionable feedback and confirm the final decision.
+### Candidate qualification
 
-Contextual help on the BHW detail explains the difference between the BHW's pre/post-tests, practice observations and final assessment. The rating screen links to the chapter's facilitator guide and sample calibrated case. A persistent guide entry makes the tour available again. The tour is guidance only; qualification and eligibility remain server-enforced.
+| State | What the user sees | Transition |
+|---|---|---|
+| Not started | Full chapter and its qualification requirements | Start chapter |
+| Chapter learning | Required subchapters, lessons and tests with progress | All required chapter content complete |
+| Exams outstanding | Missing/failed exams and retry action | Required qualifying exams pass |
+| Orientation available | Chapter complete; start assessor orientation | Start orientation |
+| Orientation in progress | How to assess and score, sample cases, feedback | Orientation completion rule satisfied |
+| Qualified | Certified to assess this chapter, issue date and version | Explicit suspension/revocation if necessary |
+| Suspended/revoked | Reason and next step; retained training history | Authorized restoration or requalification |
 
-### Interaction and content acceptance
+The orientation cannot be completed before chapter learning and qualifying exams pass. A candidate never enters the BHW practical-assessment queue, never waits for another assessor and never obtains a BHW practical competency certificate through this pathway.
 
-- At 360px, a BHW's name, barangay, next action and chapter state are visible before opening details. Actions have touch-sized targets; ratings are labelled with words, not colour alone.
-- Search and area filters preserve state when a BHW detail is opened and closed. Pagination is server-side; the current first-500 facilitator roster is not treated as a complete catchment list.
-- A BHW with zero eligible components still has a useful next action. Every blocked state names the missing prerequisite without exposing private guide notes to the learner.
-- Switching Filipino/English changes every label, eligibility reason, rating anchor, error and help step without changing records.
-- Saving an observation, leaving, and returning shows it in history. A newer observation does not erase the earlier one or retroactively change a signed decision.
-- A direct API attempt to claim or decide from an unqualified, out-of-area, inactive or self-assessing account is denied regardless of what the page displayed.
+A complete chapter means the approved full curriculum manifest is satisfied. Existing progress percentages exclude unpublished content, so **100% of currently visible lessons alone cannot prove full chapter completion**. Unpublished required subchapters/exams or hidden required material make the chapter qualification unavailable until resolved. Do not certify against a partial chapter or an empty question bank.
+
+### BHW assessment
+
+Learning → component ready → claimed/in progress → evidence recorded → component complete or needs practice → chapter review → certified or follow-up. Formative practice remains distinguishable from summative assessment. Lesson percentage, exam result, observed competence and certificate status remain separate facts.
+
+## 5. Data and service contracts
+
+Use shared content and UI with separate candidate records. This is the proposed implementation choice, avoiding a broad rewrite of BHW tables that are keyed by `bhw_user_id`.
+
+- **Qualification curriculum:** versioned chapter manifest mapping the full set of required lessons/exams, pass rules, orientation and approved rubric version. Resolve curriculum identity through the program/chapter and mapped delivery course; do not use a chapter number alone or silently transfer qualifications across unrelated copies.
+- **Candidate progress:** assessor-owned chapter enrollment, lesson completion/resume and exam attempts. Include learner, curriculum version, question IDs/version snapshot, answers, score, pass result and timestamps. Successful retries retain earlier attempts.
+- **Orientation progress:** versioned lessons and scoring cases associated with a chapter rubric, plus candidate completions and final exercise attempts.
+- **Chapter qualification:** actor, chapter/curriculum, evidence record IDs, issued status/date and revocation history. Only a server operation evaluating prerequisites can issue it, idempotently.
+- **Assessment components:** stable IDs, chapter/subchapter mapping, prerequisites, required indicators and rubric versions. Use stable indicator IDs; old `objective_index` alone is not a safe identity after content edits.
+- **Assessment evidence:** reuse append-only observations, adding a summative/formative distinction, component/attempt linkage and rubric snapshots. Final decisions reference the exact evidence accepted; a later practice observation cannot rewrite a signed decision.
+- **Readiness:** server evaluation returns both `learner_ready` and `actor_can_assess`, with reason codes and next actions. A BHW may be ready while the viewing assessor lacks qualification.
+- **Authorization:** active real actor + current catchment + chapter qualification + assignment + current component readiness. Apply at claim, evidence submission and final decision, including all older callable mutation paths.
+- **Exam integrity:** score on the server and do not expose qualifying answer keys before submission. Existing assessor guide/key access must be reviewed; role-based access to a facilitator answer key must not also reveal a qualification exam key. Use separately protected qualifying items if the existing bank cannot support this.
+- **Version changes:** preserve issued credentials and assessment snapshots. Mark a new curriculum as requiring requalification only through an explicit policy; do not retroactively alter scores or silently invalidate completions.
+
+## 6. Phases and executable increments
+
+Every increment has one PR based on the then-current main. Update this document's status/evidence in that increment's final implementation commit. Names below are proposed contracts; inspect existing schema before choosing exact new table/RPC names.
+
+### Phase 1 — Define chapter requirements and enable candidate learning
+
+#### AF-01 — Chapter curriculum, rubric and acceptance fixtures
+
+**Depends on:** none.
+
+**Change existing features/content**
+- Inventory the chapter's actual full learning content, module quizzes and chapter tests using the current authored content and loader.
+- Create a versioned qualification manifest with the full required coverage, exam rules, orientation mapping and chapter identity.
+- Map practical components to subchapters, approved indicators and evidence requirements. Document the BHW test prerequisites separately from candidate exam rules.
+- Inventory latest definitions of learning, test, observation, session, claim and decision RPCs across all migrations, including account/catchment and View as behavior.
+- Prepare Chapter I fixtures: new candidate, failed exam, qualified candidate, learner partway through a chapter, ready BHW, reassessment, sibling catchment, incomplete chapter.
+- Produce bilingual screen mockups for qualification, area dashboard, BHW detail, rating and decision; review the scoring anchors and screen flow with the owner.
+
+**Done when**
+- Every required chapter section and exam maps to a stable identity; unavailable material is explicitly identified.
+- D1–D4 have recorded approved values or remain clearly blocked for production activation.
+- Fixtures demonstrate full versus partial chapter completion and formative versus summative evidence.
+- The next increments have a checked manifest and rubric contract to implement.
+
+#### AF-02 — Full chapter learning under an assessor account
+
+**Depends on:** AF-01.
+
+**Change existing features**
+- Add candidate progress/resume records and narrowly authorized completion operations.
+- Extend the current manual route and lesson renderer with an explicit My chapter learning mode, preserving read/slides/audio options.
+- Show a chapter checklist and continue action using existing progress components.
+- Keep facilitator guide and preview separate from learning completion. A preview does not save progress.
+- Prevent candidate completion from calling the BHW course-finish helper that creates a practical assessment.
+
+**Done when**
+- A real assessor can start, resume and finish every required chapter lesson; records survive reload and language/mode switching.
+- Another account cannot change their progress.
+- No BHW assessment row or BHW competency certificate is created for the candidate; BHW population/progress reports exclude these records.
+- An incomplete published chapter cannot be marked fully complete.
+
+**Verify:** local migration replay, role/scope scenarios, targeted renderer tests, browser journey at 360px and desktop.
+
+#### AF-03 — Qualifying chapter exams, scoring and retakes
+
+**Depends on:** AF-02 and approved D1.
+
+**Change existing features**
+- Reuse the chapter exam renderer with a candidate context and dynamic chapter headings.
+- Add server-scored candidate attempts, pass/fail result, feedback and configured retakes.
+- Snapshot the question set and rule used for each attempt; handle bank edits during an open attempt consistently.
+- Take the diagnostic pretest before learning under D1, then require every qualifying quiz/post-test pass.
+- Unlock orientation only from server-verified full chapter completion and passed exams. Reject skipped lessons, fabricated scores, duplicate question payloads and empty exams.
+
+**Done when**
+- A failed exam keeps orientation locked and offers a valid retry.
+- A later passing attempt unlocks orientation without erasing the failed attempt.
+- Full chapter completion plus exams proceeds directly to orientation, with no practical assessor sign-off.
+- Existing BHW tests and scores retain their current meaning.
+
+**Verify:** score/threshold boundary cases, missing/retired questions, repeated submissions, direct unauthorized API calls and a complete candidate exam journey.
+
+### Phase 2 — Teach scoring and issue chapter qualification
+
+#### AF-04 — Chapter assessor orientation/course
+
+**Depends on:** AF-01 rubric and AF-03 unlock contract.
+
+**Change existing features/content**
+- Author orientation content using the existing bilingual content/lesson infrastructure and reviewable source files.
+- Cover: component eligibility, evidence collection, exact rating anchors, insufficient evidence, case comparisons, feedback, reassessment and final decision.
+- Include worked BHW cases at each rating level with reasons, then scoring exercises.
+- Add orientation navigation and progress after the chapter-pass screen; enforce the prerequisite on reads/actions that record orientation completion.
+- Approve cases and answers against the same rubric that will drive real assessments.
+
+**Done when**
+- A candidate understands why the sample BHW receives a particular rating and can practise applying the same rubric.
+- All required orientation lessons are recorded; skipping through the URL cannot bypass the chapter prerequisite.
+- The orientation and real assessment use the same versioned indicator definitions.
+
+**Verify:** content coverage/Filipino-English parity, scoring-case review and browser walkthrough.
+
+#### AF-05 — Chapter qualification and My qualifications
+
+**Depends on:** AF-04 and approved D2/D5.
+
+**Change existing features**
+- Add server issuance from verified chapter and orientation evidence, and a chapter qualification card.
+- Show statuses and next steps for each chapter; display issue date and applicable curriculum/rubric.
+- Add authorized suspension/revocation and an audit trail.
+- Prevent arbitrary direct qualification inserts, self-awarded credentials, duplicate issuance and cross-chapter reuse.
+- Make qualification available to subsequent authorization checks; activation of stricter live assessment gates occurs in AF-10 after the complete path exists.
+
+**Done when**
+- Completion of the selected D2 rule issues one qualification for the selected chapter.
+- A qualified Chapter I assessor remains unqualified for Chapter II.
+- The candidate's full sequence works without any practical assessment by another assessor.
+- Qualification cannot be created by changing a browser value or using View as.
+
+**Verify:** complete candidate flow, idempotence, revoked/inactive actor cases and chapter isolation.
+
+### Phase 3 — Guide facilitation and show the area dashboard
+
+#### AF-06 — Facilitator home, navigator and catchment dashboard
+
+**Depends on:** AF-05.
+
+**Change existing features**
+- Add one assessor home entry: Facilitate and assess, with My qualifications, BHWs in my area, Sessions and Assigned assessments.
+- Reuse the admin progress summarizer/cards in an assessor route with appropriate RLS; do not grant access to the whole admin console.
+- List all active BHWs in the actor's current catchment, including solo learners and BHWs never enrolled in a session.
+- Add server pagination, name/area/chapter filters, progress and follow-up states; replace the assumption that the first 500 rows represent the whole area.
+- Add a four-step tour: find BHW, read readiness, observe/rate, review/follow up. Include Skip, Back, Next and a permanent reopen/help entry.
+- Connect existing session rosters and queues to a common BHW detail destination.
+
+**Done when**
+- The list is complete through pagination, scoped correctly and retains filters after returning from BHW detail.
+- Progress separates lessons, exams, practical competence and certification.
+- The guide works in Filipino/English with keyboard navigation and on a 360px screen.
+- Unqualified candidates can see their own qualification path and permitted catchment progress; assessment actions explain the missing qualification.
+
+**Verify:** regional/provincial/city catchments, sibling exclusion, zero-result states, solo learners and bounded query behavior.
+
+### Phase 4 — Rebuild the assessment process and interface
+
+#### AF-07 — BHW detail and component eligibility
+
+**Depends on:** AF-01 component map, AF-06 and approved D3.
+
+**Change existing features**
+- Add a BHW detail view with chapter/subchapter progress, tests, observations, pending assessments and history.
+- Implement one authoritative eligibility service returning learner readiness, actor authority, missing prerequisites and allowed next actions.
+- Present each component as Waiting for learning, Ready, In progress, Needs practice, Completed or Unavailable.
+- Configure component prerequisites explicitly: a chapter post-test must not unintentionally become a prerequisite for every subchapter if D3 allows progressive assessment.
+- Use existing pending assessments as chapter containers where appropriate. Their mere presence does not prove readiness.
+- Link into the specific component from the dashboard, manual guide, session roster and assessment queue.
+
+**Done when**
+- Two BHWs in the same chapter can correctly have different eligible components.
+- A ready BHW is distinguished from an assessor who lacks authority.
+- Hidden/unavailable prerequisites are shown as blocked, not silently omitted.
+- Displayed reasons match the backend decision for the same records.
+
+**Verify:** partial learning, required tests, no content, stale page, out-of-scope BHW and competing assignment cases.
+
+#### AF-08 — Evidence, ratings, review, final decision and retry
+
+**Depends on:** AF-07 and approved D4.
+
+**Change existing features**
+- Replace the flat notes/pass/fail action with component selection → observe and rate → review → confirm.
+- Reuse observation/activity records while adding stable component IDs, assessment attempt linkage and rubric snapshots.
+- Show one indicator with its observable behavior and three rating anchors; capture evidence and constructive next practice.
+- Save server drafts and resume them; keep Not observed distinct from a failed rating.
+- Add atomic claim/reassignment and final decision operations. On every write recheck active account, catchment, chapter qualification, readiness and assignment.
+- Require the approved evidence rule for final chapter certification. Retire or guard every legacy binary decision endpoint so it cannot bypass this rule.
+- Issue the existing BHW certificate idempotently after a valid final pass. Preserve failed attempts and enable targeted reassessment.
+
+**Done when**
+- Missing evidence cannot produce a certificate; a below-standard component has clear feedback and a repeat path.
+- A later observation never rewrites the evidence used in a previous signed decision.
+- Concurrent claims have one winner; repeated final submission produces one certificate.
+- Direct RPC calls cannot bypass the same checks shown in the interface.
+- Assessors do not assess themselves.
+
+**Verify:** local RLS/RPC scenarios, concurrency and duplicate-submit tests, draft recovery, retake flow and existing QR verification.
+
+### Phase 5 — Integrate existing facilitation and release
+
+#### AF-09 — Session, guide, learner feedback and navigation integration
+
+**Depends on:** AF-08.
+
+**Change existing features**
+- Update existing session rosters, subchapter facilitator rosters and assessment queue to use the shared component/readiness workflow.
+- Connect chapter qualification to learner-facing facilitation actions for that chapter under the selected rollout policy.
+- Preserve optional sessions: solo BHWs remain eligible without enrollment.
+- Show BHW-safe results, actionable feedback and retry guidance in the learner journey; keep private guide keys/internal assessor notes out of the learner payload.
+- Integrate current feature access, hidden/archive behavior and View as. UI flags control presentation, while database rules independently control qualification/assessment writes.
+
+**Done when**
+- Every entry point leads to the same assessment record and rules.
+- No old form or callable RPC provides an ungated route to a decision.
+- A BHW receives the same outcome/next action whether learning solo or in a session.
+
+**Verify:** full journeys from each entry point, learner visibility, feature access and role-preview isolation.
+
+#### AF-10 — Local verification, migration and pilot cutover
+
+**Depends on:** AF-01 through AF-09 and recorded decisions D1–D5.
+
+**Release tasks**
+- Replay migrations on the local Supabase stack and run required lint/typecheck, targeted tests and complete candidate/facilitator/BHW browser journeys.
+- Reconcile existing assessor accounts, qualifications, pending/assigned assessments, observations and certificates using an idempotent dry-run report.
+- Never fabricate historical exam passes or automatically qualify existing assessors from their role. Preserve historical BHW certificates and label legacy evidence honestly.
+- Publish the full chapter manifest and orientation for each enabled chapter before enforcing qualification for its live assessment flow.
+- Keep existing assignments and evidence; if an actor is unqualified or revoked, block further decisions and provide authorized reassignment with audit. Avoid silently deleting or resetting work.
+- Apply each PR's reviewed migrations together at merge time, following the latest `CLAUDE.md` and deploy runbook. Develop/test against local Supabase, not the pilot.
+- Switch the chapter to the new assessment policy only when the complete path is ready and pending-work reconciliation is reviewed.
+- Confirm a pilot assessor can complete chapter/exams/orientation, qualify and assess an in-scope BHW through certificate verification.
+- Rollback may disable new UI/mutations while preserving data; it must not restore an unguarded pass/fail endpoint.
+
+**Done when**
+- Candidate: full chapter → exams passed → orientation complete → chapter qualification.
+- Facilitator: guide → all in-area BHWs → individual progress → eligible components.
+- BHW: practical evidence → feedback/retry when needed → valid final certificate.
+- Out-of-area, unqualified, inactive and self-assessing writes fail.
+- Release evidence and any remaining limitations are recorded in the increment PR.
+
+## 7. Execution checklist
+
+| Phase | Increments | Status |
+|---|---|---|
+| Full chapter learning and exams | AF-01, AF-02, AF-03 | Not started |
+| Assessor orientation and qualification | AF-04, AF-05 | Not started |
+| Guided facilitation and area dashboard | AF-06 | Not started |
+| Eligibility and assessment redesign | AF-07, AF-08 | Not started |
+| Integration and release | AF-09, AF-10 | Not started |
+
+For every increment: inspect current main → implement the named changes → verify its acceptance cases → include evidence and status update in the same PR → merge according to the repository workflow before starting the dependent increment. Additive schema/UI can ship before cutover, but chapter qualification claims and new live authority must wait for their complete, verified prerequisites.
+
+This planning revision updates the implementation contract in PR #166. It does not mark any increment implemented.
