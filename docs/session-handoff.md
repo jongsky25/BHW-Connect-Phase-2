@@ -19,9 +19,9 @@ chapter route.
 project `ltzicxyefizxoqhfuuzc` is for real BHWs only. Use it for reviewed
 migrations, deliberate content loads and the post-deploy smoke check, never
 for development or E2E. CI's E2E job builds its own throwaway database with
-`supabase start`. Develop against `supabase start` too, or against the hosted
-dev project `bhw-connect-e2e` (`ekehmwzyhlagtfuvquho`) in sandboxes without
-Docker. Dev servers and the loader scripts refuse the pilot unless
+`supabase start`. Develop against `supabase start` too. Cloud sandboxes have
+Docker: run `dockerd &` first. The hosted dev project `bhw-connect-e2e` is
+paused. Dev servers and the loader scripts refuse the pilot unless
 `ALLOW_PILOT=1` is set (`scripts/lib/pilot-guard.mjs`); E2E refuses it always. The rules are in
 `CLAUDE.md`, and the reasoning is in `docs/dev-efficiency-usage-audit.md`.
 Older entries below that say E2E runs on the pilot are history.

@@ -10,7 +10,7 @@ export function NotificationBell({ unreadCount }: Props) {
   const label = unreadCount > 0 ? t("bellAriaLabelUnread", { count: unreadCount }) : t("bellAriaLabel");
 
   return (
-    <Link
+    <Link prefetch={false}
       href="/notifications"
       aria-label={label}
       className="relative rounded-md p-2 text-ink hover:bg-ink/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"

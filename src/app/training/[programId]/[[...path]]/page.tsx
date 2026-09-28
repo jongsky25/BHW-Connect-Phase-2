@@ -152,8 +152,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         {readOnly?<p>{text('Preview lamang. Hindi binabago ang progreso ng mga mag-aaral.','Preview only. Learner progress is not changed.')}</p>:
           <section className="rounded-xl border border-ink/15 p-5" aria-label={text('Pagtatasa at sertipiko','Assessment and certificate')}>
             <h2 className="font-semibold">{text('Pagtatasa at sertipiko ng kabanatang ito','This chapter’s assessment and certificate')}</h2>
-            {certificate?<><p className="my-2">{text('Sertipikado ka na. Maaari mong balikan ang mga aralin nang hindi nawawala ang iyong sertipiko.','You are certified. You can review lessons without losing your certificate.')}</p><Link className="underline" href={`/certificates/${certificate.verification_code}`}>{text('Tingnan ang sertipiko','View certificate')}</Link></>:
-              <Link className="mt-3 inline-block underline" href={assessmentHref}>{text('Tingnan ang pagtatasa','View assessment')}</Link>}
+            {certificate?<><p className="my-2">{text('Sertipikado ka na. Maaari mong balikan ang mga aralin nang hindi nawawala ang iyong sertipiko.','You are certified. You can review lessons without losing your certificate.')}</p><Link prefetch={false} className="underline" href={`/certificates/${certificate.verification_code}`}>{text('Tingnan ang sertipiko','View certificate')}</Link></>:
+              <Link prefetch={false} className="mt-3 inline-block underline" href={assessmentHref}>{text('Tingnan ang pagtatasa','View assessment')}</Link>}
           </section>}
       </>;
     } else {
@@ -216,8 +216,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
         content=<>
           {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
-            <Link className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
-            <Link className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
+            <Link prefetch={false} className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
+            <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
           </nav>}
           {showGuide ? <>
             {featured && <section className="rounded-xl border border-ink/15 p-4 sm:p-6" aria-label={text('Panoorin','Watch')}>
@@ -233,8 +233,8 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
-            {own[lessonIndex-1] && <Link className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
-            {own[lessonIndex+1] && <Link className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
+            {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
+            {own[lessonIndex+1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
           </nav></>;
       }
     }

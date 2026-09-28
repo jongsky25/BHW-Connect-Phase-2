@@ -74,7 +74,7 @@ export default async function ForumPage({
           <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
           <p className="mt-1 text-ink/70">{t("intro")}</p>
         </div>
-        <Link
+        <Link prefetch={false}
           href="/forum/new"
           className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
         >
@@ -84,14 +84,14 @@ export default async function ForumPage({
 
       {categories && categories.length > 0 ? (
         <div className="flex flex-wrap gap-2 text-sm">
-          <Link
+          <Link prefetch={false}
             href="/forum"
             className={`rounded-full border px-3 py-1 ${!category ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
           >
             {t("allCategories")}
           </Link>
           {categories.map((c) => (
-            <Link
+            <Link prefetch={false}
               key={c.id}
               href={`/forum?category=${c.id}`}
               className={`rounded-full border px-3 py-1 ${category === c.id ? "border-primary-text text-primary-text" : "border-ink/20 text-ink/70"}`}
@@ -108,7 +108,7 @@ export default async function ForumPage({
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
           {rows.map((thread) => (
             <li key={thread.id}>
-              <Link
+              <Link prefetch={false}
                 href={`/forum/${thread.id}`}
                 className="flex min-h-[44px] flex-col gap-1 px-4 py-3 hover:bg-ink/5"
               >

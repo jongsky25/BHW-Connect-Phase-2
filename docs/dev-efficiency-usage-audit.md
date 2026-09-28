@@ -314,6 +314,16 @@ What wastes minutes:
 
 ## 4. Recommendations, prioritised
 
+### Progress (updated 28 Sep 2026)
+
+| Items | Status |
+|---|---|
+| 0 baseline and stats reset | Done: `docs/usage-baseline.md`, stats reset 03:57:50 UTC |
+| 1–8 stop the waste | Done in #163. Secrets renamed and old ones deleted; no unused Vercel projects. Preview env vars stay on the pilot, because `bhw-connect-e2e` is paused and empty. |
+| 9 asymmetric JWT keys | Already done: ES256 is the current key |
+| 10–14 per-user cost | In the follow-up PR: `getClaims()`, forwarded profile and flags, cached unread count, prefetch off everywhere, debounced resume saves, onboarding-step writes skipped once done, slim `/courses/[id]` assessment payload. Two parts that need a migration (drop the `course_modules` lock on resume; make `rpc_onboarding_complete_step` a no-op in SQL) come with 16. |
+| 15–20 | Not started |
+
 Effort: S = under an hour, M = half a day, L = a day or more.
 Each item has a **done when** check, in the same style as the delivery plan's
 Definition of Done, so every batch can be shown to have worked.

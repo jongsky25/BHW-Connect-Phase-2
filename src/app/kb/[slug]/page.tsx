@@ -5,6 +5,8 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { parseOnboardingProgress } from "@/lib/settings/types";
+import { after } from "next/server";
 
 type CategoryRow = { id: string; name_fil: string; name_en: string; slug: string };
 type EntryRow = { id: string; question_fil: string; question_en: string; answer_fil: string; answer_en: string };
@@ -59,8 +61,11 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
       : Promise.resolve({ data: [] as ArticleRow[] }),
     // Best-effort: visiting a published category satisfies the "visit a KB
     // category" onboarding step. Runs alongside the reads above so it adds
-    // no extra round trip to the render.
-    supabase.rpc("rpc_onboarding_complete_step", { p_step: "kb" }),
+    // no extra round trip to the render — and only until the step is done:
+    // the RPC UPDATEs users unconditionally, the most-read table.
+    parseOnboardingProgress(appUser.onboarding_progress).kb
+      ? Promise.resolve(null)
+      : supabase.rpc("rpc_onboarding_complete_step", { p_step: "kb" }),
   ]);
 
   const entryRows = entries ?? [];
@@ -68,13 +73,16 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
 
   // Best-effort analytics: every published article shown on this category
   // page counts as viewed (articles render collapsed but are already
-  // delivered to the client). Never blocks the page render.
-  await Promise.all(
-    articleRows.map((article) =>
-      supabase.rpc("rpc_track_event", {
-        p_event_name: "kb.article_viewed",
-        p_properties: { article_id: article.id, category_id: category.id },
-      }),
+  // delivered to the client). Sent after the response, so it never delays
+  // the page render.
+  after(() =>
+    Promise.all(
+      articleRows.map((article) =>
+        supabase.rpc("rpc_track_event", {
+          p_event_name: "kb.article_viewed",
+          p_properties: { article_id: article.id, category_id: category.id },
+        }),
+      ),
     ),
   );
   const isEmpty = entryRows.length === 0 && articleRows.length === 0;

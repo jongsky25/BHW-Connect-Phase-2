@@ -66,14 +66,14 @@ export default async function CoursesPage() {
       ) : (
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
           {programs?.map(program=>(
-            <li key={program.id}><Link href={`/training/${program.id}`} className="flex min-h-[44px] flex-col gap-2 px-4 py-5 hover:bg-ink/5">
+            <li key={program.id}><Link prefetch={false} href={`/training/${program.id}`} className="flex min-h-[44px] flex-col gap-2 px-4 py-5 hover:bg-ink/5">
               <span className="text-lg font-semibold">{program.content_key==='bhw-reference-manual' ? 'BHW Reference Manual' : locale==='en'?program.title_en:program.title_fil}</span>
               <span className="text-sm text-ink/70">{locale==='en'?'Explore chapters, subchapters and short lessons.':'Piliin ang kabanata, subchapter, at maiikling aralin.'}</span>
             </Link></li>
           ))}
           {rows.map((course) => (
             <li key={course.id}>
-              <Link
+              <Link prefetch={false}
                 href={`/courses/${course.id}`}
                 className="flex min-h-[44px] flex-col gap-1 px-4 py-3 hover:bg-ink/5"
               >

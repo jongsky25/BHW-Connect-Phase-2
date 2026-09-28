@@ -13,7 +13,7 @@ export function manualTitle(p: Pick<ManualProgress, "contentKey" | "title_fil" |
 export function ContinueLink({ to, locale }: { to: ContinueTarget; locale: Locale }) {
   const en = locale === "en";
   return (
-    <Link href={to.href} className="rounded-md bg-primary px-5 py-3 font-medium text-on-primary">
+    <Link prefetch={false} href={to.href} className="rounded-md bg-primary px-5 py-3 font-medium text-on-primary">
       {en ? "Continue where you left off" : "Ituloy kung saan ka tumigil"}
       <span className="block text-xs font-normal">
         {to.subchapterNumber} · {en ? to.title_en : to.title_fil}
@@ -67,7 +67,7 @@ export function MyTrainingCard({ progress, locale }: { progress: ManualProgress;
             <li key={ch.id} className="flex flex-col gap-1.5">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 {ch.href ? (
-                  <Link href={ch.href} className="text-sm font-medium underline-offset-2 hover:underline">
+                  <Link prefetch={false} href={ch.href} className="text-sm font-medium underline-offset-2 hover:underline">
                     {name}
                   </Link>
                 ) : (
@@ -92,7 +92,7 @@ export function MyTrainingCard({ progress, locale }: { progress: ManualProgress;
 
       <div className="flex flex-wrap items-center gap-3">
         {next ? <ContinueLink to={next} locale={locale} /> : null}
-        <Link href={manualHref} className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink">
+        <Link prefetch={false} href={manualHref} className="rounded-md border border-ink/20 px-4 py-2 font-medium text-ink">
           {text("Tingnan ang buong manual", "View the whole manual")}
         </Link>
       </div>

@@ -62,7 +62,7 @@ export default async function HomePage() {
 
       <div className="flex flex-wrap gap-3">
         {navItems.map((item) => (
-          <Link
+          <Link prefetch={false}
             key={item.id}
             href={item.href}
             className={

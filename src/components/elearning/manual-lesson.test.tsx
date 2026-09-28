@@ -1,4 +1,4 @@
-import {cleanup,fireEvent,render,screen,waitFor} from '@testing-library/react';
+import {act,cleanup,fireEvent,render,screen,waitFor} from '@testing-library/react';
 import {afterEach,describe,expect,it,vi} from 'vitest';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
@@ -13,11 +13,32 @@ describe('route lesson viewer',()=>{
     expect(screen.queryByRole('button',{name:'Mark lesson complete'})).not.toBeInTheDocument();expect(save).not.toHaveBeenCalled();
     expect(screen.getByRole('link',{name:'← Back to lessons'})).toHaveAttribute('href','/lessons');
   });
+  it('paging quickly saves only the final position, once, after the debounce',async()=>{
+    const save=vi.fn().mockResolvedValue(undefined);
+    vi.useFakeTimers({shouldAdvanceTime:true});
+    try{
+      render(<ReferenceLessons {...data} resumes={[{lesson_id:'lesson',revision_id:'revision',course_progress_id:'mine',modality:'read',language:'en',position_key:'second',concept_id:'concept',updated_at:'2026-09-24'}]} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" onResume={save} onComplete={vi.fn()}/>);
+      fireEvent.click(screen.getByRole('button',{name:'Previous'}));
+      fireEvent.click(screen.getByRole('button',{name:'Next'}));
+      fireEvent.click(screen.getByRole('button',{name:'Previous'}));
+      expect(save).not.toHaveBeenCalled();
+      await act(()=>vi.advanceTimersByTimeAsync(3000));
+    }finally{vi.useRealTimers();}
+    expect(save).toHaveBeenCalledTimes(1);
+    expect(save).toHaveBeenCalledWith(expect.objectContaining({lesson_id:'lesson',modality:'read',position_key:'first'}));
+  });
   it('reload restores saved position and retries a failed write',async()=>{
     const save=vi.fn().mockRejectedValueOnce(new Error('offline')).mockResolvedValue(undefined);
     render(<ReferenceLessons {...data} resumes={[{lesson_id:'lesson',revision_id:'revision',course_progress_id:'mine',modality:'read',language:'en',position_key:'second',concept_id:'concept',updated_at:'2026-09-24'}]} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" onResume={save} onComplete={vi.fn()}/>);
     expect(screen.getByRole('heading',{name:'second'})).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button',{name:'Previous'}));
+    // Resume saves are debounced; the write (and its failure) lands once the
+    // position has been still for the delay.
+    vi.useFakeTimers({shouldAdvanceTime:true});
+    try{
+      fireEvent.click(screen.getByRole('button',{name:'Previous'}));
+      expect(save).not.toHaveBeenCalled();
+      await act(()=>vi.advanceTimersByTimeAsync(3000));
+    }finally{vi.useRealTimers();}
     await screen.findByRole('alert');fireEvent.click(screen.getByRole('button',{name:'Retry saving position'}));
     await waitFor(()=>expect(screen.queryByRole('alert')).not.toBeInTheDocument());expect(save).toHaveBeenCalledTimes(2);
   });

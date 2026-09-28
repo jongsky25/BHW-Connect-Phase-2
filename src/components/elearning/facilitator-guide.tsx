@@ -122,7 +122,7 @@ export function SubchapterFacilitatorGuide({
         </p>
         <nav className="mt-4 grid gap-2 sm:grid-cols-2" aria-label={pick(lang, "Mga bahagi ng gabay", "Guide sections")}>
           {choices.map(({ key, fil, en }) => (
-            <Link key={key} href={key === "learning" ? href : `${href}?view=${key}`}
+            <Link prefetch={false} key={key} href={key === "learning" ? href : `${href}?view=${key}`}
               aria-current={view === key ? "page" : undefined}
               className={`flex min-h-[48px] items-center justify-between rounded-lg border px-4 py-3 text-sm font-medium focus-visible:outline-2 focus-visible:outline-primary ${view === key ? "border-primary bg-primary text-on-primary" : "border-ink/20 bg-canvas text-ink hover:bg-ink/5"}`}>
               <span>{pick(lang, fil, en)}</span><span aria-hidden="true">›</span>
@@ -141,7 +141,7 @@ export function SubchapterFacilitatorGuide({
         <ol className="flex flex-col gap-3">
           {lessons.map((l, i) => (
             <li key={l.id} className="rounded-md border border-ink/10 p-4">
-              <Link className="font-semibold underline" href={l.href}>{i + 1}. {l.title}</Link>
+              <Link prefetch={false} className="font-semibold underline" href={l.href}>{i + 1}. {l.title}</Link>
               {l.objectives.length > 0 && (
                 <p className="mt-1 text-sm text-ink/70">{pick(lang, "Layunin: ", "Objective: ")}{l.objectives.join(" · ")}</p>
               )}

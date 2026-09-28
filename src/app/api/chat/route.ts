@@ -11,8 +11,9 @@ import type {
   SynonymRow,
 } from "@/lib/chat/types";
 import { getFeatureFlags } from "@/lib/flags/get-flags";
-import { getAppUser } from "@/lib/supabase/app-user";
+import { forwardedAppUser, getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
+import { parseOnboardingProgress } from "@/lib/settings/types";
 
 const MAX_QUESTION_LENGTH = 500;
 
@@ -21,19 +22,21 @@ type RateLimitRow = { allowed: boolean; retry_after_seconds: number };
 export async function POST(request: NextRequest) {
   const supabase = await createClient();
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // Local JWT verification (ES256), not an Auth-server round trip; and the
+  // profile middleware already read for this request when it forwarded one.
+  const { data: claimsData } = await supabase.auth.getClaims();
+  const authUserId = claimsData?.claims?.sub;
 
-  if (!user) {
+  if (!authUserId) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
   // Profile, request body and flags are independent — load them together.
   // The 401 still takes precedence over a malformed body.
   const invalidBody = Symbol("invalid body");
+  const forwarded = forwardedAppUser(request.headers, authUserId);
   const [appUser, body, flags] = await Promise.all([
-    getAppUser(supabase, user.id),
+    forwarded ?? getAppUser(supabase, authUserId),
     request.json().catch((): typeof invalidBody => invalidBody) as Promise<unknown>,
     getFeatureFlags(supabase),
   ]);
@@ -177,8 +180,11 @@ export async function POST(request: NextRequest) {
     await Promise.all([
       ...events.map((event) => supabase.rpc("rpc_track_event", event)),
       // Best-effort: the "try the Chat Guide" onboarding step is satisfied by
-      // sending any question, matched or not.
-      supabase.rpc("rpc_onboarding_complete_step", { p_step: "chat" }),
+      // sending any question, matched or not. Skipped once done: the RPC
+      // UPDATEs users unconditionally, on every question otherwise.
+      ...(parseOnboardingProgress(appUser.onboarding_progress).chat
+        ? []
+        : [supabase.rpc("rpc_onboarding_complete_step", { p_step: "chat" })]),
     ]);
   });
 
