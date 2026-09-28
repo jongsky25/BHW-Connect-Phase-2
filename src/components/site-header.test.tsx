@@ -10,6 +10,7 @@ import { SiteHeader } from "./site-header";
 
 vi.mock("@/components/language-toggle", () => ({ LanguageToggle: () => <span>Language toggle</span> }));
 vi.mock("@/components/notifications/notification-bell", () => ({ NotificationBell: () => <span>Notifications</span> }));
+vi.mock("@/components/search/global-search", () => ({ GlobalSearch: () => <span>GlobalSearch</span> }));
 // UserMenu gets its own dedicated test (user-menu.test.tsx); here we only
 // need to see which account it was composed with.
 // MobileDrawer has its own test (mobile-drawer.test.tsx); here we only need
