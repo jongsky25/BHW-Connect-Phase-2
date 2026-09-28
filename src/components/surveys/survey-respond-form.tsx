@@ -3,6 +3,8 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapSurveyRpcError } from "@/lib/surveys/error-messages";
 import type { AnswerValue, SurveyQuestion } from "@/lib/surveys/types";
 import { createClient } from "@/lib/supabase/client";
@@ -16,6 +18,7 @@ type Props = {
 export function SurveyRespondForm({ surveyId, questions, locale }: Props) {
   const t = useTranslations("surveys");
   const router = useRouter();
+  const isPreview = usePreview();
   const [answers, setAnswers] = useState<Record<string, AnswerValue>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -73,7 +76,11 @@ export function SurveyRespondForm({ surveyId, questions, locale }: Props) {
         const prompt = locale === "en" ? question.prompt_en : question.prompt_fil;
 
         return (
-          <fieldset key={question.id} className="flex flex-col gap-2 rounded-md border border-ink/10 p-4">
+          <fieldset
+            key={question.id}
+            disabled={isPreview}
+            className="flex flex-col gap-2 rounded-md border border-ink/10 p-4"
+          >
             <legend className="px-1 font-medium text-ink">{prompt}</legend>
 
             {question.type === "text" ? (
@@ -140,11 +147,12 @@ export function SurveyRespondForm({ surveyId, questions, locale }: Props) {
 
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || isPreview}
         className="self-start rounded-md bg-primary px-6 py-3 font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("submitting") : t("submitAction")}
       </button>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }

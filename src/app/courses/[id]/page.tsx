@@ -15,6 +15,7 @@ import type {
   ModuleProgress,
   QuizQuestion,
 } from "@/lib/elearning/types";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -70,14 +71,15 @@ export default async function CourseDetailPage({
         if(programError)throw new Error('Unable to load training program');
         return {mapping, program};
       }),
-    supabase
-      .from("courses")
-      .select(
-        "id, title_fil, title_en, description_fil, description_en, quiz_max_attempts, status",
-      )
-      .eq("id", id)
-      .eq("status", "published")
-      .maybeSingle(),
+    withVisible(
+      supabase
+        .from("courses")
+        .select(
+          "id, title_fil, title_en, description_fil, description_en, quiz_max_attempts, status",
+        )
+        .eq("id", id)
+        .eq("status", "published"),
+    ).maybeSingle(),
     supabase
       .from("course_modules")
       .select(

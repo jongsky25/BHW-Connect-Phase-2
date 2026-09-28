@@ -5,37 +5,32 @@ import { redirect } from "next/navigation";
 import { OnboardingChecklist } from "@/components/onboarding/onboarding-checklist";
 import { MyTrainingCard } from "@/components/progress/my-training-card";
 import { SignOutButton } from "@/components/sign-out-button";
+import { getViewer } from "@/lib/auth/viewer";
 import { getNavItems } from "@/lib/nav/nav-items";
 import { loadManualProgress } from "@/lib/progress/load-manual-progress";
 import type { ManualProgress } from "@/lib/progress/manual-progress";
 import { parseOnboardingProgress } from "@/lib/settings/types";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
-  const {
-    data: { user },
-  } = await getRequestAuthUser();
+  const viewer = await getViewer();
 
-  if (!user) {
+  if (!viewer.appUser || !viewer.role) {
     redirect("/login");
   }
-
-  const appUser = await getRequestAppUser(user.id);
-
-  if (!appUser) {
-    redirect("/login");
-  }
+  const appUser = viewer.appUser;
+  const role = viewer.role;
 
   const t = await getTranslations("authHome");
   const flags = await getRequestFeatureFlags();
   const locale = (await getLocale()) === "en" ? "en" : "fil";
-  const navItems = getNavItems({ role: appUser.role, flags });
+  const navItems = getNavItems({ role, flags });
 
   // "My training" is a convenience: if progress cannot load, the rest of
   // home still renders and the manual itself remains reachable via Courses.
   let training: ManualProgress[] = [];
-  if (flags.elearning && appUser.role === "bhw") {
+  if (flags.elearning && role === "bhw") {
     try {
       training = (await loadManualProgress(await createClient(), appUser.id)).filter((p) =>
         p.chapters.some((ch) => ch.state !== "unavailable"),
@@ -52,7 +47,7 @@ export default async function HomePage() {
       </h1>
       <p className="max-w-xl text-lg text-ink/70">{t("body")}</p>
 
-      {appUser.role === "bhw" && !appUser.onboarding_completed_at ? (
+      {role === "bhw" && !appUser.onboarding_completed_at ? (
         <OnboardingChecklist progress={parseOnboardingProgress(appUser.onboarding_progress)} />
       ) : null}
 

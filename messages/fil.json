@@ -445,13 +445,41 @@
     },
     "flags": {
       "heading": "Mga Feature Flag",
-      "intro": "Buksan o isara ang isang feature para sa lahat, agad-agad — walang kailangang i-deploy.",
+      "intro": "Buksan o isara ang isang feature para sa lahat, o para sa isang uri ng user lang — walang kailangang i-deploy.",
+      "adminsAlwaysSee": "Palaging nakikita ng mga admin ang bawat available na feature. Gamitin ang View as para tingnan ang nakikita ng iba.",
+      "readOnlyNote": "Ang super admin lang ang makakapagbago nito.",
       "empty": "Wala pang feature flag.",
       "enabledLabel": "Buhay",
       "disabledLabel": "Patay",
-      "toggleLabel": "I-toggle ang {key}",
+      "offForEveryone": "Patay para sa lahat",
+      "notApplicable": "Hindi applicable",
+      "toggleAvailableLabel": "Buksan o isara ang {name} para sa lahat",
+      "toggleRoleLabel": "Buksan o isara ang {name} para sa {role}",
+      "columns": {
+        "feature": "Feature",
+        "available": "Available",
+        "bhw": "BHW",
+        "assessor": "Assessor",
+        "designer": "Designer"
+      },
+      "names": {
+        "kb_articles": "Mga artikulo ng KB",
+        "reports_export": "Mga ulat at export",
+        "announcements": "Mga anunsyo",
+        "surveys": "Mga survey",
+        "elearning": "Mga kurso",
+        "course_sessions": "Mga training session",
+        "forum": "Forum",
+        "flipcharts": "Mga flipchart",
+        "offline_pwa": "Offline app",
+        "notifications": "Mga notipikasyon",
+        "chat_conversation": "Usapan sa Chat Guide",
+        "ai_external": "AI (external provider)",
+        "ai_gap_draft": "Mga mungkahi ng AI gap-draft"
+      },
       "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
       "flagNotFoundError": "Hindi nahanap ang flag na iyon.",
+      "invalidRoleForFlagError": "Hindi mapapalitan ang feature na ito para sa ganitong uri ng user.",
       "genericError": "May naganap na problema. Subukan muli."
     },
     "kbCategories": {
@@ -501,6 +529,7 @@
       "colCategory": "Kategorya",
       "colStatus": "Status",
       "colOwner": "May-ari",
+      "colVisibility": "Visibility",
       "colActions": "Aksyon",
       "editAction": "I-edit",
       "empty": "Wala pang tanong-sagot.",
@@ -545,6 +574,7 @@
       "colCategory": "Kategorya",
       "colStatus": "Status",
       "colOwner": "May-ari",
+      "colVisibility": "Visibility",
       "colActions": "Aksyon",
       "editAction": "I-edit",
       "empty": "Wala pang artikulo.",
@@ -552,6 +582,33 @@
       "ownerRequiredError": "Kailangan ng may-ari bago mailathala ang artikulong ito.",
       "entryNotFoundError": "Hindi nahanap ang entry.",
       "articleNotFoundError": "Hindi nahanap ang artikulo.",
+      "genericError": "May naganap na problema. Subukan muli."
+    },
+    "visibility": {
+      "actionsLabel": "Mga Aksyon",
+      "hideAction": "Itago",
+      "showAction": "Ipakita",
+      "archiveAction": "I-archive",
+      "restoreAction": "Ibalik",
+      "cancelAction": "Kanselahin",
+      "confirmArchive": "I-archive ang item na ito? Hindi na ito makikita ng mga user, at maeedit lang muli kapag naibalik na.",
+      "confirmArchiveAction": "I-archive",
+      "hiddenBadge": "Nakatago",
+      "archivedBadge": "Naka-archive",
+      "archivedReadOnly": "Naka-archive ang item na ito at hindi na maeedit. Ibalik ito mula sa Archived tab para makapag-edit.",
+      "tabs": {
+        "active": "Aktibo",
+        "archived": "Naka-archive"
+      },
+      "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
+      "contentNotFoundError": "Hindi nahanap ang item na iyon.",
+      "invalidContentTypeError": "Hindi suportado ang uri ng content na iyon.",
+      "invalidActionError": "Hindi available ang aksyon na iyon para sa item na ito.",
+      "alreadyHiddenError": "Nakatago na ang item na ito.",
+      "notHiddenError": "Hindi nakatago ang item na ito.",
+      "alreadyArchivedError": "Naka-archive na ang item na ito.",
+      "notArchivedError": "Hindi naka-archive ang item na ito.",
+      "contentArchivedError": "Naka-archive ang item na ito at hindi na maeedit. Ibalik muna ito.",
       "genericError": "May naganap na problema. Subukan muli."
     },
     "kbSynonyms": {
@@ -628,6 +685,7 @@
       "colTitle": "Pamagat",
       "colOrgUnit": "Na-deploy sa",
       "colStatus": "Status",
+      "colVisibility": "Visibility",
       "colActions": "Mga Aksyon",
       "status": {
         "draft": "Draft",
@@ -690,6 +748,7 @@
       "colTitle": "Pamagat",
       "colOrgUnit": "Na-deploy sa",
       "colStatus": "Status",
+      "colVisibility": "Visibility",
       "colActions": "Mga Aksyon",
       "status": {
         "draft": "Draft",
@@ -829,7 +888,8 @@
     "heading": "Mga Anunsyo",
     "intro": "Mga update mula sa inyong barangay, lungsod, rehiyon, at DOH.",
     "empty": "Wala pang mga anunsyo.",
-    "deleteAction": "Tanggalin"
+    "deleteAction": "Tanggalin",
+    "confirmDelete": "Tanggalin ang anunsyong ito? Hindi na ito mababawi."
   },
   "surveys": {
     "heading": "Mga Survey",
@@ -1080,6 +1140,8 @@
       "submitAction": "Isumite para sa pagsusuri",
       "deleteAction": "Tanggalin",
       "reviewNotePrefix": "Puna mula sa admin:",
+      "hiddenByAdminBadge": "Itinago ng admin",
+      "archivedBadge": "Naka-archive",
       "status": {
         "draft": "Draft",
         "in_review": "Nasa Pagsusuri",
@@ -1181,6 +1243,16 @@
     "invalidRoleError": "Hindi available ang role na iyon.",
     "genericError": "May nangyaring mali. Pakisubukang muli.",
     "placementLevelError": "Ang assessor ay kailangan ng rehiyon, lalawigan o lungsod/munisipyo; ang BHW ay kailangan ng barangay o lungsod/munisipyo."
+  },
+  "preview": {
+    "viewAsLabel": "Tingnan bilang",
+    "banner": "Tinitingnan bilang {role} — ito ang nakikita ng ganitong uri ng user.",
+    "switchAction": "Lumipat",
+    "switching": "Lumilipat…",
+    "exitAction": "Itigil ang preview",
+    "readOnlyNote": "Preview lang ito — walang mase-save.",
+    "notAuthorizedError": "Admin lang ang puwedeng mag-preview ng ibang uri ng user.",
+    "genericError": "May nangyaring mali. Pakisubukang muli."
   },
   "orgPicker": {
     "within": "Sakop ng {name}",

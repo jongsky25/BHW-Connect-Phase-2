@@ -1,8 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
+import { VisibilityActions, VisibilityBadge, VisibilityTabs } from "@/components/admin/content-visibility";
 import { EmptyState } from "@/components/empty-state";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type { Course, CourseStatus } from "@/lib/elearning/types";
@@ -11,17 +13,23 @@ import { CourseForm } from "./course-form";
 import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
-  initialCourses: Course[];
+  courses: Course[];
+  view: "active" | "archived";
+  activeCount: number;
+  archivedCount: number;
   rootOrgUnit: OrgUnitNode;
 };
 
-export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
+export function CoursesConsole({ courses, view, activeCount, archivedCount, rootOrgUnit }: Props) {
   const t = useTranslations("admin.courses");
-  const [courses, setCourses] = useState(initialCourses);
+  const router = useRouter();
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  async function handleSetStatus(id: string, status: CourseStatus) {
+  // 'archived' is no longer a status this control offers — that's now the
+  // Visibility menu's Archive action (RFT C1/C4), which also takes the
+  // course out of user-facing reads, unlike the old bare status flip.
+  async function handleSetStatus(id: string, status: Exclude<CourseStatus, "archived">) {
     setError(null);
     setPendingId(id);
     try {
@@ -36,7 +44,7 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
         return;
       }
 
-      setCourses((prev) => prev.map((c) => (c.id === id ? { ...c, status } : c)));
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -54,7 +62,7 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
         return;
       }
 
-      setCourses((prev) => prev.filter((c) => c.id !== id));
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -64,9 +72,13 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
     <div className="flex flex-col gap-6">
       <AdminPageHeader title={t("heading")} />
 
-      <CourseForm
-        rootOrgUnit={rootOrgUnit}
-        onCreated={(course) => setCourses((prev) => [course, ...prev])}
+      <CourseForm rootOrgUnit={rootOrgUnit} onCreated={() => router.refresh()} />
+
+      <VisibilityTabs
+        basePath="/admin/courses"
+        view={view}
+        activeCount={activeCount}
+        archivedCount={archivedCount}
       />
 
       {error ? (
@@ -79,7 +91,7 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
         <EmptyState message={t("empty")} />
       ) : (
         <div className="overflow-x-auto rounded-md border border-ink/10">
-          <table className="w-full min-w-[720px] border-collapse text-left">
+          <table className="w-full min-w-[860px] border-collapse text-left">
             <thead className="bg-ink/5">
               <tr>
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
@@ -90,6 +102,9 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
                 </th>
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
                   {t("colStatus")}
+                </th>
+                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
+                  {t("colVisibility")}
                 </th>
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
                   {t("colActions")}
@@ -103,7 +118,10 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
                   <td className="px-3 py-3 text-sm text-ink">{course.org_units?.name ?? "—"}</td>
                   <td className="px-3 py-3 text-sm text-ink">{t(`status.${course.status}`)}</td>
                   <td className="px-3 py-3 text-sm">
-                    <div className="flex flex-wrap gap-2">
+                    <VisibilityBadge hidden_at={course.hidden_at} archived_at={course.archived_at} />
+                  </td>
+                  <td className="px-3 py-3 text-sm">
+                    <div className="flex flex-wrap items-center gap-2">
                       {course.status !== "published" ? (
                         <button
                           type="button"
@@ -114,16 +132,6 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
                           {t("publishAction")}
                         </button>
                       ) : null}
-                      {course.status !== "archived" ? (
-                        <button
-                          type="button"
-                          disabled={pendingId === course.id}
-                          onClick={() => handleSetStatus(course.id, "archived")}
-                          className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5 disabled:opacity-60"
-                        >
-                          {t("archiveAction")}
-                        </button>
-                      ) : null}
                       <button
                         type="button"
                         disabled={pendingId === course.id}
@@ -132,6 +140,12 @@ export function CoursesConsole({ initialCourses, rootOrgUnit }: Props) {
                       >
                         {t("deleteAction")}
                       </button>
+                      <VisibilityActions
+                        contentType="course"
+                        id={course.id}
+                        hidden_at={course.hidden_at}
+                        archived_at={course.archived_at}
+                      />
                     </div>
                   </td>
                 </tr>

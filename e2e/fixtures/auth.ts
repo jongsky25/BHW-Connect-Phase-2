@@ -52,6 +52,17 @@ export const STABLE_CITY_ADMIN = {
   },
 };
 
+// A dedicated super admin (public.super_admins) used only by tests that
+// exercise super-admin-only RPCs such as rpc_flag_toggle and
+// rpc_flag_set_role (docs/role-feature-toggles-plan.md §5 A1). Provisioned
+// by hand on the pilot project like bhw.stable/admin.stable; never mutated.
+export const STABLE_SUPER_ADMIN = {
+  username: "superadmin.stable",
+  get password() {
+    return requireEnv("E2E_STABLE_SUPER_ADMIN_PASSWORD");
+  },
+};
+
 function supabaseUrl(): string {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   if (!url) {

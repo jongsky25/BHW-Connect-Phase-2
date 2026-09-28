@@ -1,10 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import { DashboardRangePicker } from "@/components/admin/dashboard-range-picker";
 import { DashboardTabs, type DashboardTab } from "@/components/admin/dashboard-tabs";
-import { getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestMasterFlags } from "@/lib/supabase/request";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
   const t = await getTranslations("admin.dashboard");
 
   const tabs: DashboardTab[] = [

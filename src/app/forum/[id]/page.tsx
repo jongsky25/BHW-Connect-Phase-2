@@ -40,10 +40,16 @@ export default async function ForumThreadPage({ params }: { params: Promise<{ id
   const t = await getTranslations("forum");
   const tCrumbs = await getTranslations("breadcrumbs");
 
+  // hidden_at is deliberately not filtered here: a moderator-hidden thread
+  // stays reachable by its own author or an admin (forum_threads_visibility,
+  // RFT C1), rendering the notice below instead of a 404 — INC-13's existing
+  // moderation UX, unchanged. archived_at has no such carve-out: an archived
+  // thread is retired, so it 404s here the same as everywhere else.
   const { data: thread } = await supabase
     .from("forum_threads")
     .select("id, title, body, tags, author_full_name, status, created_at, forum_categories(name_fil, name_en)")
     .eq("id", id)
+    .is("archived_at", null)
     .maybeSingle<ThreadDetailRow>();
 
   if (!thread) {

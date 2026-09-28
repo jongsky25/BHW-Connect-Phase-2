@@ -1,11 +1,12 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import type { AppRole } from "@/lib/auth/roles";
 
 export type AppUser = {
   id: string;
   auth_user_id: string;
   username: string;
   full_name: string;
-  role: "bhw" | "admin" | "assessor" | "designer";
+  role: AppRole;
   org_unit_id: string;
   status: "invited" | "active" | "deactivated";
   must_change_password: boolean;

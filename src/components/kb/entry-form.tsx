@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { VisibilityBadge } from "@/components/admin/content-visibility";
 import { mapKbRpcError } from "@/lib/kb/error-messages";
 import type { KbCategory, KbEntry, KbStatus, OwnerOption } from "@/lib/kb/types";
 import { createClient } from "@/lib/supabase/client";
@@ -25,6 +26,7 @@ function defaultReviewDueOn(): string {
 
 export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
   const t = useTranslations("admin.kbEntries");
+  const tVisibility = useTranslations("admin.visibility");
   const router = useRouter();
   // Read the source gap id straight from the current URL rather than only
   // trusting the server-passed `prefill` prop: it's the more direct source
@@ -54,6 +56,10 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
   const alreadyConfirmed = Boolean(entry?.ai_draft_confirmed_at);
   const [reviewed, setReviewed] = useState(false);
   const needsReview = isAiDraft && !alreadyConfirmed;
+
+  // RFT C3 (plan §4.5): an archived entry is read-only until it's restored
+  // from the list page's Archived tab.
+  const isArchived = Boolean(entry?.archived_at);
 
   async function handleSave(status: KbStatus) {
     setError(null);
@@ -139,6 +145,13 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
       className="flex flex-col gap-4 rounded-md border border-ink/10 p-4"
       noValidate
     >
+      {isArchived ? (
+        <p className="rounded-md border border-ink/20 bg-ink/5 px-4 py-3 text-sm text-ink">
+          {tVisibility("archivedReadOnly")}
+        </p>
+      ) : null}
+
+      <fieldset disabled={isArchived} className="contents">
       {prefill ? (
         <p className="rounded-md bg-secondary/10 px-4 py-3 text-sm text-ink">
           {t("prefillBanner", { question: prefill.text })}
@@ -264,8 +277,9 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
       </div>
 
       {entry ? (
-        <p className="text-sm text-ink/70">
+        <p className="flex items-center gap-2 text-sm text-ink/70">
           {t("currentStatus")}: {t(entry.status === "published" ? "statusPublished" : "statusDraft")}
+          <VisibilityBadge hidden_at={entry.hidden_at} archived_at={entry.archived_at} />
         </p>
       ) : null}
 
@@ -292,6 +306,7 @@ export function EntryForm({ mode, entry, categories, owners, prefill }: Props) {
           {loading ? t("saving") : t("publishAction")}
         </button>
       </div>
+      </fieldset>
     </form>
   );
 }

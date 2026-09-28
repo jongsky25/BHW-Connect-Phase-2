@@ -1,8 +1,10 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-import { APP_FLAGS_HEADER, APP_USER_HEADER, getAppUser, type AppUser } from "./app-user";
-import { getFeatureFlags } from "../flags/get-flags";
+import { isPreviewableRole, type AppRole } from "../auth/roles";
+import { fetchFlagRows, resolveFlags } from "../flags/get-flags";
 import type { FeatureFlags } from "../flags/types";
+import { PREVIEW_COOKIE } from "../preview/cookies";
+import { APP_FLAGS_HEADER, APP_USER_HEADER, getAppUser, type AppUser } from "./app-user";
 import { getSupabaseAnonKey, getSupabaseUrl } from "./env";
 
 // A BHW's working day session: idle 8h with no requests signs them out,
@@ -31,10 +33,10 @@ function isPublicPath(pathname: string) {
   return PUBLIC_PATHS.has(pathname) || pathname.startsWith("/certificates/");
 }
 
-function redirectTo(request: NextRequest, path: string, response: NextResponse) {
+function redirectTo(request: NextRequest, path: string, response: NextResponse, search = "") {
   const url = request.nextUrl.clone();
   url.pathname = path;
-  url.search = "";
+  url.search = search;
   const redirect = NextResponse.redirect(url);
   for (const cookie of response.cookies.getAll()) {
     redirect.cookies.set(cookie);
@@ -110,8 +112,10 @@ export async function updateSession(request: NextRequest) {
   // Pages need feature_flags for the layout headers below; start that read
   // alongside the profile lookup instead of after it, so the two cost one
   // round trip instead of two. API routes never use the flags (or the
-  // unread count), so they skip both reads entirely.
-  const flagsPromise = isApiPath(pathname) ? null : getFeatureFlags(supabase);
+  // unread count), so they skip both reads entirely. The rows can't be
+  // resolved into role-effective flags until effectiveRole is known below
+  // (docs/role-feature-toggles-plan.md §5 A2), so this reads rows, not flags.
+  const flagRowsPromise = isApiPath(pathname) ? null : fetchFlagRows(supabase);
   const appUser = await getAppUser(supabase, authUserId);
 
   if (!appUser || appUser.status !== "active") {
@@ -167,13 +171,44 @@ export async function updateSession(request: NextRequest) {
     return redirectTo(request, "/home", response);
   }
 
-  if (!flagsPromise) {
-    // API routes still read x-app-language (via next-intl) for localized
-    // exports/PDFs, so keep forwarding the profile headers.
-    return withAppUserHeaders(response, request, appUser, null, 0);
+  // RFT B1 (docs/role-feature-toggles-plan.md §4.4): only an admin's own
+  // preview cookie is ever honoured — anyone else's is a leftover from a
+  // role change or a forged cookie, and is deleted rather than trusted.
+  const previewCookieValue = request.cookies.get(PREVIEW_COOKIE)?.value;
+  let effectiveRole: AppRole = appUser.role;
+  let isPreview = false;
+  if (previewCookieValue) {
+    if (appUser.role === "admin" && isPreviewableRole(previewCookieValue)) {
+      effectiveRole = previewCookieValue;
+      isPreview = true;
+    } else {
+      response.cookies.delete(PREVIEW_COOKIE);
+    }
   }
 
-  const flags = await flagsPromise;
+  // Previewing hides the admin console from itself, so "what I see" stays
+  // honest: the admin must exit preview to manage anything.
+  if (isPreview && pathname.startsWith("/admin")) {
+    return redirectTo(request, "/home", response, "?preview=1");
+  }
+
+  // RFT B2 (docs/role-feature-toggles-plan.md §6 B2): a client component can
+  // fail to disable a write action it doesn't know about, but every write
+  // still has to cross this route-handler boundary — so this is the one
+  // place that has to hold, whatever a component forgets. GET requests
+  // (including admin API reads, since isPreview is never true on /admin/*
+  // for the reason above) are unaffected.
+  if (isPreview && isApiPath(pathname) && request.method !== "GET") {
+    return NextResponse.json({ error: "preview read-only" }, { status: 403 });
+  }
+
+  if (!flagRowsPromise) {
+    // API routes still read x-app-language (via next-intl) for localized
+    // exports/PDFs, so keep forwarding the profile headers.
+    return withAppUserHeaders(response, request, appUser, effectiveRole, isPreview, null, 0);
+  }
+
+  const flags = resolveFlags(await flagRowsPromise, effectiveRole);
 
   let notifUnreadCount = 0;
   if (flags.notifications) {
@@ -195,7 +230,7 @@ export async function updateSession(request: NextRequest) {
     }
   }
 
-  return withAppUserHeaders(response, request, appUser, flags, notifUnreadCount);
+  return withAppUserHeaders(response, request, appUser, effectiveRole, isPreview, flags, notifUnreadCount);
 }
 
 // A cached count is only reused for the same user and read cursor, and for
@@ -225,6 +260,8 @@ function withAppUserHeaders(
   response: NextResponse,
   request: NextRequest,
   appUser: AppUser,
+  effectiveRole: AppRole,
+  isPreview: boolean,
   flags: FeatureFlags | null,
   notifUnreadCount: number,
 ) {
@@ -240,6 +277,11 @@ function withAppUserHeaders(
   forwardedHeaders.set("x-app-signed-in", "1");
   forwardedHeaders.set("x-app-username", appUser.username);
   forwardedHeaders.set("x-app-role", appUser.role);
+  // RFT B1 (docs/role-feature-toggles-plan.md §4.4): the role every page and
+  // layout should gate and resolve flags on (src/lib/auth/viewer.ts) — the
+  // admin's own role, unless a validated `bhw_view_as` preview is active.
+  forwardedHeaders.set("x-app-effective-role", effectiveRole);
+  forwardedHeaders.set("x-app-preview", isPreview ? "1" : "0");
   // Lets the root layout tell whether the signed-in user is one of the
   // super admin's test personas (the persona bar) without another lookup.
   forwardedHeaders.set("x-app-user-id", appUser.id);

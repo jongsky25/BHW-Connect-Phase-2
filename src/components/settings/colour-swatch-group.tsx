@@ -15,6 +15,7 @@ export function ColourSwatchGroup<T extends string>({
   onChange,
   colourFor,
   labelFor,
+  disabled,
 }: {
   legend: string;
   name: string;
@@ -23,9 +24,12 @@ export function ColourSwatchGroup<T extends string>({
   onChange: (next: T) => void;
   colourFor: (option: T) => string;
   labelFor: (option: T) => string;
+  /** RFT B2 (docs/role-feature-toggles-plan.md §6 B2): while previewing,
+      nothing is saved — a fieldset disables every swatch in one place. */
+  disabled?: boolean;
 }) {
   return (
-    <fieldset className="flex flex-col gap-2">
+    <fieldset disabled={disabled} className="flex flex-col gap-2">
       <legend className="text-sm font-medium text-ink">{legend}</legend>
       <div className="flex flex-wrap gap-4">
         {options.map((option) => {

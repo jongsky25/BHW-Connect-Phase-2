@@ -44,6 +44,7 @@ export type ForumThreadModerationRow = {
   status: ForumStatus;
   hidden_reason: string | null;
   created_at: string;
+  archived_at: string | null;
   forum_categories: { name_fil: string; name_en: string } | null;
 };
 

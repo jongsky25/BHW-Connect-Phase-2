@@ -3,6 +3,8 @@
 import { useTranslations } from "next-intl";
 import { useState, type FormEvent } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type { CourseSession, LessonDensity } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
@@ -20,6 +22,7 @@ const DENSITIES: LessonDensity[] = ["short", "normal", "long"];
 
 export function TrainingSessionForm({ courses, locale, onCreated }: Props) {
   const t = useTranslations("trainingSessions");
+  const isPreview = usePreview();
   const [courseId, setCourseId] = useState(courses[0]?.id ?? "");
   const [scheduledAt, setScheduledAt] = useState("");
   const [locationNote, setLocationNote] = useState("");
@@ -29,6 +32,7 @@ export function TrainingSessionForm({ courses, locale, onCreated }: Props) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (isPreview) return;
     setError(null);
 
     if (!courseId || !scheduledAt) {
@@ -88,6 +92,7 @@ export function TrainingSessionForm({ courses, locale, onCreated }: Props) {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-md border border-ink/10 p-4" noValidate>
       <h2 className="text-lg font-semibold text-ink">{t("createHeading")}</h2>
+      <fieldset disabled={isPreview} className="contents">
 
       <Field label={t("courseLabel")} htmlFor="session-course">
         <select
@@ -149,11 +154,13 @@ export function TrainingSessionForm({ courses, locale, onCreated }: Props) {
 
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || isPreview}
         className="self-start rounded-md bg-primary px-6 py-3 font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("creating") : t("createAction")}
       </button>
+      </fieldset>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }

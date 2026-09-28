@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useState, type FormEvent } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
-import type { Course, DraftModule, ModuleType } from "@/lib/elearning/types";
+import type { DraftModule, ModuleType } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
 import { OrgUnitPicker } from "@/components/org-unit-picker";
 import type { OrgUnitNode } from "@/lib/org-units";
@@ -12,7 +12,10 @@ import type { OrgUnitNode } from "@/lib/org-units";
 type Props = {
   /** The admin's own org unit: content can be deployed there or anywhere below it. */
   rootOrgUnit: OrgUnitNode;
-  onCreated: (course: Course) => void;
+  /** RFT C4: the console re-fetches (router.refresh()) rather than taking an
+   * optimistic row — it needs to know which tab a new course belongs to
+   * (always Active), which is decided server-side. */
+  onCreated: () => void;
 };
 
 const MODULE_TYPES: ModuleType[] = ["text", "video", "quiz"];
@@ -112,20 +115,7 @@ export function CourseForm({ rootOrgUnit, onCreated }: Props) {
         setError(t("genericError"));
         return;
       }
-      onCreated({
-        id: row.course_id,
-        org_unit_id: orgUnitId,
-        author_user_id: "",
-        title_fil: titleFil.trim(),
-        title_en: titleEn.trim(),
-        description_fil: descriptionFil.trim(),
-        description_en: descriptionEn.trim(),
-        status: "draft",
-        quiz_passing_percent: passingPercent,
-        quiz_max_attempts: maxAttempts,
-        created_at: new Date().toISOString(),
-        org_units: { name: orgUnit.name },
-      });
+      onCreated();
 
       setTitleFil("");
       setTitleEn("");

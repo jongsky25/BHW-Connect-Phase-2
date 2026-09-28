@@ -2,6 +2,7 @@ import { expect, test, type APIRequestContext } from "@playwright/test";
 import {
   BARANGAY_BATONG_MALAKE_ID,
   STABLE_CITY_ADMIN,
+  STABLE_SUPER_ADMIN,
   createThrowawayAssessor,
   createThrowawayBhw,
   getAccessToken,
@@ -245,11 +246,12 @@ test.describe.serial("training sessions (INC-22)", () => {
   // purpose: when a test times out, Playwright tears the context down before
   // `finally` can run, so the reset silently doesn't happen and a global flag
   // leaks into the rest of the suite. afterEach still runs on timeout.
+  // RFT A1: rpc_flag_toggle is super-admin only.
   test.beforeEach(async ({ request }) => {
     const token = await getAccessToken(
       request,
-      STABLE_CITY_ADMIN.username,
-      STABLE_CITY_ADMIN.password,
+      STABLE_SUPER_ADMIN.username,
+      STABLE_SUPER_ADMIN.password,
     );
     const on = await callRpc(request, token, "rpc_flag_toggle", {
       p_key: "course_sessions",
@@ -261,8 +263,8 @@ test.describe.serial("training sessions (INC-22)", () => {
   test.afterEach(async ({ request }) => {
     const token = await getAccessToken(
       request,
-      STABLE_CITY_ADMIN.username,
-      STABLE_CITY_ADMIN.password,
+      STABLE_SUPER_ADMIN.username,
+      STABLE_SUPER_ADMIN.password,
     );
     const off = await callRpc(request, token, "rpc_flag_toggle", {
       p_key: "course_sessions",

@@ -7,6 +7,8 @@ export type Announcement = {
   link_url: string | null;
   image_url: string | null;
   created_at: string;
+  hidden_at: string | null;
+  archived_at: string | null;
   org_units: { name: string } | null;
   users: { full_name: string } | null;
 };

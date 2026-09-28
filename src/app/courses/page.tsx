@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -37,10 +38,12 @@ export default async function CoursesPage() {
   const tCrumbs = await getTranslations("breadcrumbs");
   const locale = await getLocale();
 
-  const { data: courses } = await supabase
-    .from("courses")
-    .select("id, title_fil, title_en, description_fil, description_en")
-    .eq("status", "published")
+  const { data: courses } = await withVisible(
+    supabase
+      .from("courses")
+      .select("id, title_fil, title_en, description_fil, description_en")
+      .eq("status", "published"),
+  )
     .order("created_at", { ascending: false })
     .returns<CourseRow[]>();
 

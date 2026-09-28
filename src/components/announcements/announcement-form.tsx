@@ -5,7 +5,6 @@ import { useState, type FormEvent } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
 import { ImageUpload } from "@/components/announcements/image-upload";
 import { mapAnnouncementRpcError } from "@/lib/announcements/error-messages";
-import type { Announcement } from "@/lib/announcements/types";
 import { createClient } from "@/lib/supabase/client";
 import { OrgUnitPicker } from "@/components/org-unit-picker";
 import type { OrgUnitNode } from "@/lib/org-units";
@@ -13,7 +12,10 @@ import type { OrgUnitNode } from "@/lib/org-units";
 type Props = {
   /** The admin's own org unit: content can be deployed there or anywhere below it. */
   rootOrgUnit: OrgUnitNode;
-  onCreated: (announcement: Announcement) => void;
+  /** RFT C4: the console re-fetches (router.refresh()) rather than taking an
+   * optimistic row — it needs to know which tab a new announcement belongs
+   * to (always Active), which is decided server-side. */
+  onCreated: () => void;
 };
 
 export function AnnouncementForm({ rootOrgUnit, onCreated }: Props) {
@@ -52,18 +54,7 @@ export function AnnouncementForm({ rootOrgUnit, onCreated }: Props) {
         setError(t("genericError"));
         return;
       }
-      onCreated({
-        id: row.announcement_id,
-        org_unit_id: orgUnitId,
-        author_user_id: "",
-        body_fil: bodyFil.trim(),
-        body_en: bodyEn.trim(),
-        link_url: linkUrl.trim() || null,
-        image_url: imageUrl,
-        created_at: new Date().toISOString(),
-        org_units: { name: orgUnit.name },
-        users: null,
-      });
+      onCreated();
 
       setBodyFil("");
       setBodyEn("");

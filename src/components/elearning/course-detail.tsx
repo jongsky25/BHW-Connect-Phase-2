@@ -7,6 +7,8 @@ import { useState, type FormEvent } from "react";
 import { LessonModule, type LessonPosition } from "@/components/elearning/lesson-module";
 import { LessonSlides } from "@/components/elearning/lesson-slides";
 import { TestForm, TestScores } from "@/components/elearning/pre-post-test";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type {
   CourseModule,
@@ -61,6 +63,7 @@ export function CourseDetail({
   const t = useTranslations("courses");
   const tt = useTranslations("training");
   const router = useRouter();
+  const isPreview = usePreview();
   const [pendingModuleId, setPendingModuleId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   // INC-26: Basahin/Islide is a per-module toggle, not a page-level one —
@@ -115,6 +118,7 @@ export function CourseDetail({
   }
 
   async function handleModuleComplete(moduleId: string) {
+    if (isPreview) return;
     setError(null);
     setPendingModuleId(moduleId);
     try {
@@ -174,6 +178,7 @@ export function CourseDetail({
 
   return (
     <div className="flex flex-col gap-4">
+      {isPreview ? <PreviewNote /> : null}
       {reference && <p>{locale==='en'?'Chapter I assessment and certificate':'Pagtatasa at sertipiko ng Kabanata I'}: {progressStatus ? t(`status.${progressStatus}`) : '—'}
         {certificateCode && <Link prefetch={false} className="ml-2 underline" href={`/certificates/${certificateCode}`}>{t('viewCertificateAction')}</Link>}
       </p>}
@@ -319,7 +324,7 @@ export function CourseDetail({
                       ) : (
                         <button
                           type="button"
-                          disabled={pendingModuleId === module.id}
+                          disabled={pendingModuleId === module.id || isPreview}
                           onClick={() => handleModuleComplete(module.id)}
                           className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
                         >
@@ -410,6 +415,7 @@ function QuizForm({
   onSubmitted,
 }: QuizFormProps) {
   const t = useTranslations("courses");
+  const isPreview = usePreview();
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -433,6 +439,7 @@ function QuizForm({
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (isPreview) return;
     setError(null);
     setLoading(true);
 
@@ -504,7 +511,7 @@ function QuizForm({
         const prompt =
           locale === "en" ? question.prompt_en : question.prompt_fil;
         return (
-          <fieldset key={question.id} className="flex flex-col gap-2">
+          <fieldset key={question.id} disabled={isPreview} className="flex flex-col gap-2">
             <legend className="text-sm font-medium text-ink">{prompt}</legend>
             <div className="flex flex-col gap-1">
               {question.options.map((option, index) => (
@@ -537,11 +544,12 @@ function QuizForm({
 
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || isPreview}
         className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("quizSubmitting") : t("quizSubmitAction")}
       </button>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }

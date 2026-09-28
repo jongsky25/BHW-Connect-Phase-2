@@ -1,6 +1,18 @@
 import { expect, test } from "@playwright/test";
 import { OTHER_BARANGAY_BHW, STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet } from "./fixtures/auth";
 
+function supabaseUrl(): string {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url) throw new Error("NEXT_PUBLIC_SUPABASE_URL is required");
+  return url;
+}
+
+function anonKey(): string {
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!key) throw new Error("NEXT_PUBLIC_SUPABASE_ANON_KEY is required");
+  return key;
+}
+
 test("an admin creates a category, a BHW starts a thread, a BHW in a different barangay replies, and an admin moderates the reply", async ({
   page,
   request,
@@ -92,4 +104,82 @@ test("an admin creates a category, a BHW starts a thread, a BHW in a different b
   const filter = `forum_posts?body=eq.${encodeURIComponent(`Reply ${marker}`)}`;
   expect(await restGet(request, threadAuthorToken, filter)).toHaveLength(0);
   expect(await restGet(request, otherBarangayToken, filter)).toHaveLength(1);
+});
+
+// RFT C5 DoD (docs/role-feature-toggles-plan.md §7 C5): archive/restore on
+// a thread, driven through rpc_content_set_visibility exactly as
+// /admin/forum calls it. Only archive/restore apply here — hide/show stays
+// INC-13 moderation (rpc_forum_thread_moderate), unaffected by this. A
+// thread has no delete RPC, so this always ends archived rather than
+// restored — out of every BHW's view, same spirit as the flipcharts and
+// kb-authoring specs' cleanup.
+test("archiving, then restoring, a forum thread takes it out of a BHW's reads without touching moderation", async ({
+  request,
+}) => {
+  const marker = `e2e.forum.visibility.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
+
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const bhwToken = await getAccessToken(request, STABLE_BHW.username, STABLE_BHW.password);
+  // The restrictive policy's author clause (RFT C1, docs/role-feature-toggles-plan.md
+  // §7 C1: "keeps ... a forum author's own archived thread visible to their
+  // author") means the thread's own author keeps reading it even archived —
+  // by design. Read as a different barangay's BHW instead, so this checks
+  // what archiving actually does: take the thread out of every *other* BHW's
+  // reads.
+  const otherBhwToken = await getAccessToken(
+    request,
+    OTHER_BARANGAY_BHW.username,
+    OTHER_BARANGAY_BHW.password,
+  );
+  const [category] = (await restGet(request, adminToken, "forum_categories?select=id&limit=1")) as Array<{
+    id: string;
+  }>;
+
+  const createResponse = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_forum_thread_create`, {
+    headers: { apikey: anonKey(), Authorization: `Bearer ${bhwToken}`, "Content-Type": "application/json" },
+    data: {
+      p_category_id: category.id,
+      p_title: `Thread visibility ${marker}`,
+      p_body: `Body ${marker}`,
+      p_tags: [],
+    },
+  });
+  const [{ thread_id: threadId }] = (await createResponse.json()) as Array<{ thread_id: string }>;
+
+  async function setVisibility(action: "archive" | "restore") {
+    const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_content_set_visibility`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_type: "forum_thread", p_id: threadId, p_action: action },
+    });
+    expect(response.status(), `rpc_content_set_visibility(${action})`).toBe(204);
+  }
+
+  async function bhwCanReadThread(): Promise<boolean> {
+    const rows = await restGet(request, otherBhwToken, `forum_threads?id=eq.${threadId}`);
+    return rows.length === 1;
+  }
+
+  try {
+    expect(await bhwCanReadThread()).toBe(true);
+
+    await setVisibility("archive");
+    expect(await bhwCanReadThread()).toBe(false);
+
+    // Archiving never touches INC-13 moderation status: it stays "visible",
+    // moderation's own field, unaffected by the archive.
+    const [row] = (await restGet(request, adminToken, `forum_threads?id=eq.${threadId}&select=status`)) as Array<{
+      status: string;
+    }>;
+    expect(row.status).toBe("visible");
+
+    await setVisibility("restore");
+    expect(await bhwCanReadThread()).toBe(true);
+  } finally {
+    // Best-effort: leaves the thread out of every BHW's view regardless of
+    // which step above the test failed on (so it may already be archived).
+    await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_content_set_visibility`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_type: "forum_thread", p_id: threadId, p_action: "archive" },
+    });
+  }
 });

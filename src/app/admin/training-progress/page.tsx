@@ -14,7 +14,7 @@ import {
 } from "@/lib/progress/load-supervisor-progress";
 import { loadOrgChain, loadOrgUnit } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestAppUser, getRequestAuthUser, getRequestMasterFlags } from "@/lib/supabase/request";
 
 const PAGE_SIZE = 20;
 
@@ -35,7 +35,7 @@ export default async function AdminTrainingProgressPage({
 }: {
   searchParams: Promise<{ program?: string; org?: string; q?: string; page?: string }>;
 }) {
-  const flags = await getRequestFeatureFlags();
+  const flags = await getRequestMasterFlags();
   if (!flags.elearning) redirect("/admin/users");
 
   const {

@@ -10,7 +10,7 @@ import type {
   ConversationResult,
   SynonymRow,
 } from "@/lib/chat/types";
-import { getFeatureFlags } from "@/lib/flags/get-flags";
+import { fetchFlagRows, resolveFlags } from "@/lib/flags/get-flags";
 import { forwardedAppUser, getAppUser } from "@/lib/supabase/app-user";
 import { createClient } from "@/lib/supabase/server";
 import { parseOnboardingProgress } from "@/lib/settings/types";
@@ -31,14 +31,16 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  // Profile, request body and flags are independent — load them together.
-  // The 401 still takes precedence over a malformed body.
+  // Profile, request body and flag rows are independent — load them
+  // together. The 401 still takes precedence over a malformed body. Flags
+  // resolve to role-effective values below, once appUser.role is known
+  // (docs/role-feature-toggles-plan.md §5 A2), so this loads rows, not flags.
   const invalidBody = Symbol("invalid body");
   const forwarded = forwardedAppUser(request.headers, authUserId);
-  const [appUser, body, flags] = await Promise.all([
+  const [appUser, body, flagRows] = await Promise.all([
     forwarded ?? getAppUser(supabase, authUserId),
     request.json().catch((): typeof invalidBody => invalidBody) as Promise<unknown>,
-    getFeatureFlags(supabase),
+    fetchFlagRows(supabase),
   ]);
   if (!appUser) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
@@ -47,6 +49,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "invalid request body" }, { status: 400 });
   }
 
+  const flags = resolveFlags(flagRows, appUser.role);
   const conversational = flags.chat_conversation;
 
   // A selection is only meaningful when the conversation layer is on; with the

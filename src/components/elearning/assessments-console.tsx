@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type { Assessment } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
@@ -16,6 +18,7 @@ type Props = {
 export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
   const t = useTranslations("assessments");
   const tCrumbs = useTranslations("breadcrumbs");
+  const isPreview = usePreview();
   const [queue, setQueue] = useState(initialQueue);
   const [mine, setMine] = useState(initialMine);
   const [pendingId, setPendingId] = useState<string | null>(null);
@@ -24,6 +27,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
   const [issuedNotice, setIssuedNotice] = useState<string | null>(null);
 
   async function handleClaim(assessment: Assessment) {
+    if (isPreview) return;
     setError(null);
     setPendingId(assessment.id);
     try {
@@ -43,6 +47,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
   }
 
   async function handleDecide(assessment: Assessment, passed: boolean) {
+    if (isPreview) return;
     setError(null);
     setIssuedNotice(null);
     setPendingId(assessment.id);
@@ -75,6 +80,8 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
       <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">{t("heading")}</h1>
 
+      {isPreview ? <PreviewNote /> : null}
+
       {error ? (
         <p role="alert" className="text-sm text-danger">
           {error}
@@ -101,7 +108,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
                 </div>
                 <button
                   type="button"
-                  disabled={pendingId === assessment.id}
+                  disabled={pendingId === assessment.id || isPreview}
                   onClick={() => handleClaim(assessment)}
                   className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
                 >
@@ -136,7 +143,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
                 <div className="flex gap-2">
                   <button
                     type="button"
-                    disabled={pendingId === assessment.id}
+                    disabled={pendingId === assessment.id || isPreview}
                     onClick={() => handleDecide(assessment, true)}
                     className="rounded-md border border-success/40 px-3 py-2 text-sm font-medium text-success hover:bg-success/5 disabled:opacity-60"
                   >
@@ -144,7 +151,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
                   </button>
                   <button
                     type="button"
-                    disabled={pendingId === assessment.id}
+                    disabled={pendingId === assessment.id || isPreview}
                     onClick={() => handleDecide(assessment, false)}
                     className="rounded-md border border-danger/40 px-3 py-2 text-sm font-medium text-danger hover:bg-danger/5 disabled:opacity-60"
                   >

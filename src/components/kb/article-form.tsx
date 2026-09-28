@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { VisibilityBadge } from "@/components/admin/content-visibility";
 import { mapKbRpcError } from "@/lib/kb/error-messages";
 import type { KbArticle, KbCategory, KbStatus, OwnerOption } from "@/lib/kb/types";
 import { createClient } from "@/lib/supabase/client";
@@ -24,7 +25,12 @@ function defaultReviewDueOn(): string {
 
 export function ArticleForm({ mode, article, categories, owners }: Props) {
   const t = useTranslations("admin.kbArticles");
+  const tVisibility = useTranslations("admin.visibility");
   const router = useRouter();
+
+  // RFT C3 (plan §4.5): an archived article is read-only until it's restored
+  // from the list page's Archived tab.
+  const isArchived = Boolean(article?.archived_at);
 
   const [categoryId, setCategoryId] = useState(article?.category_id ?? categories[0]?.id ?? "");
   const [titleFil, setTitleFil] = useState(article?.title_fil ?? "");
@@ -96,6 +102,13 @@ export function ArticleForm({ mode, article, categories, owners }: Props) {
       className="flex flex-col gap-4 rounded-md border border-ink/10 p-4"
       noValidate
     >
+      {isArchived ? (
+        <p className="rounded-md border border-ink/20 bg-ink/5 px-4 py-3 text-sm text-ink">
+          {tVisibility("archivedReadOnly")}
+        </p>
+      ) : null}
+
+      <fieldset disabled={isArchived} className="contents">
       <Field label={t("categoryLabel")} htmlFor="article-category">
         <select
           id="article-category"
@@ -135,10 +148,10 @@ export function ArticleForm({ mode, article, categories, owners }: Props) {
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field label={t("bodyFilLabel")} htmlFor="article-body-fil">
-          <RichTextEditor content={bodyFil} onChange={setBodyFil} ariaLabel={t("bodyFilLabel")} />
+          <RichTextEditor content={bodyFil} onChange={setBodyFil} ariaLabel={t("bodyFilLabel")} editable={!isArchived} />
         </Field>
         <Field label={t("bodyEnLabel")} htmlFor="article-body-en">
-          <RichTextEditor content={bodyEn} onChange={setBodyEn} ariaLabel={t("bodyEnLabel")} />
+          <RichTextEditor content={bodyEn} onChange={setBodyEn} ariaLabel={t("bodyEnLabel")} editable={!isArchived} />
         </Field>
       </div>
 
@@ -170,8 +183,9 @@ export function ArticleForm({ mode, article, categories, owners }: Props) {
       </div>
 
       {article ? (
-        <p className="text-sm text-ink/70">
+        <p className="flex items-center gap-2 text-sm text-ink/70">
           {t("currentStatus")}: {t(article.status === "published" ? "statusPublished" : "statusDraft")}
+          <VisibilityBadge hidden_at={article.hidden_at} archived_at={article.archived_at} />
         </p>
       ) : null}
 
@@ -198,6 +212,7 @@ export function ArticleForm({ mode, article, categories, owners }: Props) {
           {loading ? t("saving") : t("publishAction")}
         </button>
       </div>
+      </fieldset>
     </form>
   );
 }

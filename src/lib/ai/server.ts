@@ -66,6 +66,10 @@ export async function runAiCall(
   payload: AiPayload,
   feature: AiFeature,
 ): Promise<AiResult> {
+  // No role is passed: ai_external has no per-type switch (it's admin
+  // console/system-only, docs/role-feature-toggles-plan.md §4.3), and
+  // runAiCall's only caller today (/api/admin/gap/draft) is an admin route
+  // anyway, which always reads the master switches regardless.
   const flags = await getFeatureFlags(supabase);
   const apiKey = getGeminiApiKey();
 

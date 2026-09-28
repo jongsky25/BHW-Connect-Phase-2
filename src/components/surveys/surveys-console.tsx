@@ -2,8 +2,10 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
+import { VisibilityActions, VisibilityBadge, VisibilityTabs } from "@/components/admin/content-visibility";
 import { EmptyState } from "@/components/empty-state";
 import { mapSurveyRpcError } from "@/lib/surveys/error-messages";
 import type { Survey, SurveyStatus } from "@/lib/surveys/types";
@@ -12,13 +14,16 @@ import { SurveyForm } from "./survey-form";
 import type { OrgUnitNode } from "@/lib/org-units";
 
 type Props = {
-  initialSurveys: Survey[];
+  surveys: Survey[];
+  view: "active" | "archived";
+  activeCount: number;
+  archivedCount: number;
   rootOrgUnit: OrgUnitNode;
 };
 
-export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
+export function SurveysConsole({ surveys, view, activeCount, archivedCount, rootOrgUnit }: Props) {
   const t = useTranslations("admin.surveys");
-  const [surveys, setSurveys] = useState(initialSurveys);
+  const router = useRouter();
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -37,7 +42,7 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
         return;
       }
 
-      setSurveys((prev) => prev.map((s) => (s.id === id ? { ...s, status } : s)));
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -55,7 +60,7 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
         return;
       }
 
-      setSurveys((prev) => prev.filter((s) => s.id !== id));
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -65,9 +70,13 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
     <div className="flex flex-col gap-6">
       <AdminPageHeader title={t("heading")} />
 
-      <SurveyForm
-        rootOrgUnit={rootOrgUnit}
-        onCreated={(survey) => setSurveys((prev) => [survey, ...prev])}
+      <SurveyForm rootOrgUnit={rootOrgUnit} onCreated={() => router.refresh()} />
+
+      <VisibilityTabs
+        basePath="/admin/surveys"
+        view={view}
+        activeCount={activeCount}
+        archivedCount={archivedCount}
       />
 
       {error ? (
@@ -80,7 +89,7 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
         <EmptyState message={t("empty")} />
       ) : (
         <div className="overflow-x-auto rounded-md border border-ink/10">
-          <table className="w-full min-w-[720px] border-collapse text-left">
+          <table className="w-full min-w-[860px] border-collapse text-left">
             <thead className="bg-ink/5">
               <tr>
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
@@ -91,6 +100,9 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
                 </th>
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
                   {t("colStatus")}
+                </th>
+                <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
+                  {t("colVisibility")}
                 </th>
                 <th className="px-3 py-2 text-xs font-semibold uppercase tracking-wide text-ink/70">
                   {t("colActions")}
@@ -104,8 +116,12 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
                   <td className="px-3 py-3 text-sm text-ink">{survey.org_units?.name ?? "—"}</td>
                   <td className="px-3 py-3 text-sm text-ink">{t(`status.${survey.status}`)}</td>
                   <td className="px-3 py-3 text-sm">
-                    <div className="flex flex-wrap gap-2">
-                      <Link prefetch={false}
+                    <VisibilityBadge hidden_at={survey.hidden_at} archived_at={survey.archived_at} />
+                  </td>
+                  <td className="px-3 py-3 text-sm">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Link
+                        prefetch={false}
                         href={`/admin/surveys/${survey.id}`}
                         className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5"
                       >
@@ -139,6 +155,12 @@ export function SurveysConsole({ initialSurveys, rootOrgUnit }: Props) {
                       >
                         {t("deleteAction")}
                       </button>
+                      <VisibilityActions
+                        contentType="survey"
+                        id={survey.id}
+                        hidden_at={survey.hidden_at}
+                        archived_at={survey.archived_at}
+                      />
                     </div>
                   </td>
                 </tr>

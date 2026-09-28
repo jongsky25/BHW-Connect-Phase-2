@@ -1,4 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { withVisible } from "@/lib/content/visibility";
 
 const PAGE_SIZE = 1000;
 
@@ -8,10 +9,12 @@ const PAGE_SIZE = 1000;
 // by the rows actually returned keeps this correct whatever the cap is.
 export async function loadPublishedEntries(supabase: SupabaseClient, columns: string) {
   const page = (from: number) =>
-    supabase
-      .from("kb_entries")
-      .select(columns, { count: "exact" })
-      .eq("status", "published")
+    withVisible(
+      supabase
+        .from("kb_entries")
+        .select(columns, { count: "exact" })
+        .eq("status", "published"),
+    )
       .order("id")
       .range(from, from + PAGE_SIZE - 1);
   const first = await page(0);

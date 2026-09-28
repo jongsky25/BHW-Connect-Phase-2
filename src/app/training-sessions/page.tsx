@@ -2,8 +2,10 @@ import { getLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
 import { TrainingSessionsConsole } from "@/components/elearning/training-sessions-console";
 import type { CourseSession } from "@/lib/elearning/types";
+import { withVisible } from "@/lib/content/visibility";
+import { getViewer } from "@/lib/auth/viewer";
 import { createClient } from "@/lib/supabase/server";
-import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
+import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const SESSION_COLUMNS =
   "id, course_id, org_unit_id, facilitator_user_id, scheduled_at, location_note, lesson_density, status, created_at, courses(title_fil, title_en)";
@@ -24,14 +26,11 @@ export default async function TrainingSessionsPage() {
     redirect("/home");
   }
 
-  const {
-    data: { user },
-  } = await getRequestAuthUser();
-  if (!user) {
+  const viewer = await getViewer();
+  if (!viewer.appUser) {
     redirect("/login");
   }
-  const appUser = await getRequestAppUser(user.id);
-  if (!appUser || appUser.role !== "assessor") {
+  if (viewer.role !== "assessor") {
     redirect("/home");
   }
 
@@ -43,11 +42,12 @@ export default async function TrainingSessionsPage() {
       .select(SESSION_COLUMNS)
       .order("scheduled_at", { ascending: false })
       .returns<CourseSession[]>(),
-    supabase
-      .from("courses")
-      .select("id, title_fil, title_en")
-      .eq("status", "published")
-      .order("title_en"),
+    withVisible(
+      supabase
+        .from("courses")
+        .select("id, title_fil, title_en")
+        .eq("status", "published"),
+    ).order("title_en"),
   ]);
 
   return <TrainingSessionsConsole initialSessions={sessions ?? []} courses={courses ?? []} locale={locale} />;

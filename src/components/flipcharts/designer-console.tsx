@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapFlipchartRpcError } from "@/lib/flipcharts/error-messages";
 import type { FlipChart } from "@/lib/flipcharts/types";
 import { createClient } from "@/lib/supabase/client";
@@ -19,11 +21,13 @@ type Props = {
 export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFullName, authorUsername }: Props) {
   const t = useTranslations("designer.flipcharts");
   const tCrumbs = useTranslations("breadcrumbs");
+  const isPreview = usePreview();
   const [charts, setCharts] = useState(initialCharts);
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(id: string) {
+    if (isPreview) return;
     setError(null);
     setPendingId(id);
     try {
@@ -40,6 +44,7 @@ export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFu
   }
 
   async function handleDelete(id: string) {
+    if (isPreview) return;
     setError(null);
     setPendingId(id);
     try {
@@ -59,6 +64,8 @@ export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFu
     <div className="flex flex-col gap-8">
       <Breadcrumbs items={[{ label: tCrumbs("home"), href: "/home" }, { label: t("heading") }]} />
       <h1 className="text-2xl font-semibold tracking-tight text-ink">{t("heading")}</h1>
+
+      {isPreview ? <PreviewNote /> : null}
 
       {error ? (
         <p role="alert" className="text-sm text-danger">
@@ -86,13 +93,24 @@ export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFu
                 <div className="flex items-center justify-between gap-3">
                   <div>
                     <p className="font-medium text-ink">{chart.title_en}</p>
-                    <p className="text-sm text-ink/70">{t(`status.${chart.status}`)}</p>
+                    <p className="flex flex-wrap items-center gap-2 text-sm text-ink/70">
+                      {t(`status.${chart.status}`)}
+                      {chart.archived_at ? (
+                        <span className="rounded-full bg-ink/10 px-2 py-0.5 text-xs font-medium text-ink/70">
+                          {t("archivedBadge")}
+                        </span>
+                      ) : chart.hidden_at ? (
+                        <span className="rounded-full bg-warning/10 px-2 py-0.5 text-xs font-medium text-warning">
+                          {t("hiddenByAdminBadge")}
+                        </span>
+                      ) : null}
+                    </p>
                   </div>
                   <div className="flex gap-2">
                     {chart.status === "draft" ? (
                       <button
                         type="button"
-                        disabled={pendingId === chart.id}
+                        disabled={pendingId === chart.id || isPreview}
                         onClick={() => handleSubmit(chart.id)}
                         className="rounded-md border border-secondary/40 px-2 py-1 text-xs font-medium text-secondary hover:bg-secondary/5 disabled:opacity-60"
                       >
@@ -102,7 +120,7 @@ export function DesignerFlipchartConsole({ initialCharts, authorUserId, authorFu
                     {chart.status !== "published" ? (
                       <button
                         type="button"
-                        disabled={pendingId === chart.id}
+                        disabled={pendingId === chart.id || isPreview}
                         onClick={() => handleDelete(chart.id)}
                         className="rounded-md border border-danger/40 px-2 py-1 text-xs font-medium text-danger hover:bg-danger/5 disabled:opacity-60"
                       >

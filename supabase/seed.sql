@@ -5,7 +5,7 @@
 -- It recreates the state the E2E suite expects of the pilot project, so CI
 -- can run every spec against a local database instead of writing into the
 -- pilot (see docs/deploy-runbook.md's "E2E database" section):
---   * the four stable fixture accounts, fully onboarded, on the same org
+--   * the five stable fixture accounts, fully onboarded, on the same org
 --     chain and with the same profile fields as on the pilot;
 --   * the pilot's resting feature-flag values (captured 28 Sep 2026);
 --   * the Phase 1 `mch` KB category with one published entry. On the pilot
@@ -14,7 +14,10 @@
 --     loaded separately, by `npm run kb:load -- --project local` (ci.yml).
 --
 -- admin.city.stable is already created by the INC-6 migration with a random
--- password; only its password is reset here.
+-- password; only its password is reset here. superadmin.stable is an
+-- ordinary admin account additionally granted public.super_admins, the way
+-- RFT A1's rpc_flag_toggle/rpc_flag_set_role require (docs/role-feature-
+-- toggles-plan.md §5); it is provisioned by hand on the pilot the same way.
 
 do $$
 declare
@@ -26,7 +29,8 @@ begin
     select * from (values
       ('admin.stable', 'Stable Pilot Admin', 'admin', '00000000-0000-0000-0000-000000000005'::uuid, '{}'::jsonb),
       ('bhw.stable', 'Stable Pilot BHW', 'bhw', '00000000-0000-0000-0000-000000000005'::uuid, '{"chat":true}'::jsonb),
-      ('bhw.other', 'Other Barangay BHW', 'bhw', '00000000-0000-0000-0000-000000000006'::uuid, '{}'::jsonb)
+      ('bhw.other', 'Other Barangay BHW', 'bhw', '00000000-0000-0000-0000-000000000006'::uuid, '{}'::jsonb),
+      ('superadmin.stable', 'Stable Super Admin', 'admin', '00000000-0000-0000-0000-000000000005'::uuid, '{}'::jsonb)
     ) as t(username, full_name, role, org_unit_id, onboarding_progress)
   loop
     if exists (select 1 from public.users where username = v_account.username) then
@@ -66,6 +70,10 @@ begin
   update public.users
      set onboarding_completed_at = coalesce(onboarding_completed_at, now())
    where username = 'admin.city.stable';
+
+  insert into public.super_admins (user_id)
+  select id from public.users where username = 'superadmin.stable'
+  on conflict do nothing;
 end;
 $$;
 

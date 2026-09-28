@@ -7,18 +7,24 @@ import { loadPublishedEntries } from "./published-entries";
 function fakeClient(total: number, cap: number, failOnRequest?: number) {
   const rows = Array.from({ length: total }, (_, i) => ({ id: String(i).padStart(5, "0") }));
   const requests: Array<[number, number]> = [];
+  // withVisible() chains two .is() calls (hidden_at/archived_at) between
+  // .eq("status", "published") and .order() — the stub needs to carry them
+  // through even though this fixture doesn't itself test visibility.
+  const afterFilters = {
+    order: () => ({
+      range: async (from: number, to: number) => {
+        requests.push([from, to]);
+        if (failOnRequest === requests.length) return { data: null, error: { message: "boom" }, count: null };
+        const end = Math.min(to + 1, from + cap);
+        return { data: rows.slice(from, end), error: null, count: total };
+      },
+    }),
+  };
   const client = {
     from: () => ({
       select: () => ({
         eq: () => ({
-          order: () => ({
-            range: async (from: number, to: number) => {
-              requests.push([from, to]);
-              if (failOnRequest === requests.length) return { data: null, error: { message: "boom" }, count: null };
-              const end = Math.min(to + 1, from + cap);
-              return { data: rows.slice(from, end), error: null, count: total };
-            },
-          }),
+          is: () => ({ is: () => afterFilters }),
         }),
       }),
     }),

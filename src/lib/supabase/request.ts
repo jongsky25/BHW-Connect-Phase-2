@@ -43,6 +43,14 @@ export const getRequestAppUser = cache(async (authUserId: string): Promise<AppUs
   return getAppUser(supabase, authUserId);
 });
 
+// Role-effective flags for the signed-in user (docs/role-feature-toggles-plan.md
+// §5 A2): a flag disabled for their role reads false even while its master
+// switch is on. Falls back to the master switches when signed out, since
+// there's no role to resolve against. RFT B1 (§4.4): the middleware already
+// resolves against the *effective* role (an admin previewing as BHW gets the
+// same flags a BHW would) before forwarding x-app-flags, so this only needs
+// to redo that resolution itself on the fallback path, once it knows the
+// signed-in user's own role.
 export const getRequestFeatureFlags = cache(async (): Promise<FeatureFlags> => {
   const raw = (await headers()).get(APP_FLAGS_HEADER);
   if (raw) {
@@ -59,6 +67,28 @@ export const getRequestFeatureFlags = cache(async (): Promise<FeatureFlags> => {
     data: { user },
   } = await getRequestAuthUser();
   if (!user) return { ...DEFAULT_FLAGS };
+  const appUser = await getRequestAppUser(user.id);
+  const supabase = await getRequestClient();
+  return getFeatureFlags(supabase, appUser?.role);
+});
+
+// The master "Available" switches, ignoring every per-type disabled_roles
+// entry. Admin console pages and layouts use this — nothing is ever hidden
+// from admins (plan §2 D2); they use View-as (plan §4.4) to preview another
+// user type's view instead. Every /admin/* route redirects away while a
+// preview is active, so whenever this is reached, the effective role the
+// middleware forwarded is always the admin's own — meaning x-app-flags
+// already IS the master set; the fallback below matches that by resolving
+// with no role at all.
+export const getRequestMasterFlags = cache(async (): Promise<FeatureFlags> => {
+  const raw = (await headers()).get(APP_FLAGS_HEADER);
+  if (raw) {
+    try {
+      return { ...DEFAULT_FLAGS, ...(JSON.parse(raw) as Partial<FeatureFlags>) };
+    } catch {
+      // fall through to a real read
+    }
+  }
   const supabase = await getRequestClient();
   return getFeatureFlags(supabase);
 });

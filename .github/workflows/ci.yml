@@ -100,6 +100,7 @@ jobs:
       E2E_STABLE_ADMIN_PASSWORD: local-e2e-password
       E2E_OTHER_BARANGAY_BHW_PASSWORD: local-e2e-password
       E2E_STABLE_CITY_ADMIN_PASSWORD: local-e2e-password
+      E2E_STABLE_SUPER_ADMIN_PASSWORD: local-e2e-password
       # The seed turns ai_external + ai_gap_draft on, as on the pilot, so
       # e2e/ai-gap-draft.spec.ts runs its real round trip and needs a provider
       # key; each run spends a small amount of Gemini quota. GEMINI_MODEL is

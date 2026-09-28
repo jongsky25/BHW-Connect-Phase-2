@@ -3,6 +3,8 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
+import { PreviewNote } from "@/components/preview/preview-note";
+import { usePreview } from "@/components/preview/preview-provider";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type {
   CourseTestAttempt,
@@ -75,12 +77,14 @@ export function TestForm({
   const t = useTranslations("training");
   const tc = useTranslations("courses");
   const router = useRouter();
+  const isPreview = usePreview();
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (isPreview) return;
     setError(null);
 
     if (Object.keys(answers).length < questions.length) {
@@ -145,7 +149,7 @@ export function TestForm({
         const prompt =
           locale === "en" ? question.prompt_en : question.prompt_fil;
         return (
-          <fieldset key={question.id} className="flex flex-col gap-2">
+          <fieldset key={question.id} disabled={isPreview} className="flex flex-col gap-2">
             <legend className="text-sm font-medium text-ink">{prompt}</legend>
             <div className="flex flex-col gap-1">
               {question.options.map((option, index) => (
@@ -177,11 +181,12 @@ export function TestForm({
 
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || isPreview}
         className="self-start rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60"
       >
         {loading ? t("testSubmitting") : t("testSubmitAction")}
       </button>
+      {isPreview ? <PreviewNote /> : null}
     </form>
   );
 }

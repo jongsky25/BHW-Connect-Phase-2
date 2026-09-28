@@ -1,8 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
+import { VisibilityActions, VisibilityBadge, VisibilityTabs } from "@/components/admin/content-visibility";
 import { EmptyState } from "@/components/empty-state";
 import { mapForumRpcError } from "@/lib/forum/error-messages";
 import type { ForumCategory, ForumPostModerationRow, ForumThreadModerationRow } from "@/lib/forum/types";
@@ -11,14 +13,17 @@ import { CategoryForm } from "./category-form";
 
 type Props = {
   initialCategories: ForumCategory[];
-  initialThreads: ForumThreadModerationRow[];
+  threads: ForumThreadModerationRow[];
+  view: "active" | "archived";
+  activeCount: number;
+  archivedCount: number;
   initialPosts: ForumPostModerationRow[];
 };
 
-export function ForumConsole({ initialCategories, initialThreads, initialPosts }: Props) {
+export function ForumConsole({ initialCategories, threads, view, activeCount, archivedCount, initialPosts }: Props) {
   const t = useTranslations("admin.forum");
+  const router = useRouter();
   const [categories, setCategories] = useState(initialCategories);
-  const [threads, setThreads] = useState(initialThreads);
   const [posts, setPosts] = useState(initialPosts);
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -53,7 +58,7 @@ export function ForumConsole({ initialCategories, initialThreads, initialPosts }
         setError(t(mapForumRpcError(rpcError.message)));
         return;
       }
-      setThreads((prev) => prev.map((th) => (th.id === id ? { ...th, status: hidden ? "hidden" : "visible" } : th)));
+      router.refresh();
     } finally {
       setPendingId(null);
     }
@@ -118,12 +123,15 @@ export function ForumConsole({ initialCategories, initialThreads, initialPosts }
 
       <section className="flex flex-col gap-4">
         <h2 className="text-lg font-semibold text-ink">{t("threadsHeading")}</h2>
+
+        <VisibilityTabs basePath="/admin/forum" view={view} activeCount={activeCount} archivedCount={archivedCount} />
+
         {threads.length === 0 ? (
           <EmptyState message={t("noThreads")} />
         ) : (
           <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
             {threads.map((thread) => (
-              <li key={thread.id} className="flex items-center justify-between gap-3 px-4 py-3">
+              <li key={thread.id} className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
                 <div>
                   <p className="font-medium text-ink">{thread.title}</p>
                   <p className="text-sm text-ink/70">
@@ -131,14 +139,23 @@ export function ForumConsole({ initialCategories, initialThreads, initialPosts }
                     {t(`status.${thread.status}`)}
                   </p>
                 </div>
-                <button
-                  type="button"
-                  disabled={pendingId === thread.id}
-                  onClick={() => handleModerateThread(thread.id, thread.status !== "hidden")}
-                  className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5 disabled:opacity-60"
-                >
-                  {thread.status === "hidden" ? t("unhideAction") : t("hideAction")}
-                </button>
+                <div className="flex flex-wrap items-center gap-2">
+                  <VisibilityBadge hidden_at={null} archived_at={thread.archived_at} />
+                  <button
+                    type="button"
+                    disabled={pendingId === thread.id}
+                    onClick={() => handleModerateThread(thread.id, thread.status !== "hidden")}
+                    className="rounded-md border border-ink/20 px-2 py-1 text-xs font-medium text-ink hover:bg-ink/5 disabled:opacity-60"
+                  >
+                    {thread.status === "hidden" ? t("unhideAction") : t("hideAction")}
+                  </button>
+                  <VisibilityActions
+                    contentType="forum_thread"
+                    id={thread.id}
+                    hidden_at={null}
+                    archived_at={thread.archived_at}
+                  />
+                </div>
               </li>
             ))}
           </ul>

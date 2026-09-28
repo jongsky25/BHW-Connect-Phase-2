@@ -445,13 +445,41 @@
     },
     "flags": {
       "heading": "Feature flags",
-      "intro": "Turn a feature on or off for everyone, instantly — no deploy needed.",
+      "intro": "Turn a feature on or off for everyone, or for one user type at a time — no deploy needed.",
+      "adminsAlwaysSee": "Admins always see every available feature. Use View as to check what others see.",
+      "readOnlyNote": "Only the super admin can change these.",
       "empty": "No feature flags yet.",
       "enabledLabel": "On",
       "disabledLabel": "Off",
-      "toggleLabel": "Toggle {key}",
+      "offForEveryone": "Off for everyone",
+      "notApplicable": "Not applicable",
+      "toggleAvailableLabel": "Turn {name} on or off for everyone",
+      "toggleRoleLabel": "Turn {name} on or off for {role}",
+      "columns": {
+        "feature": "Feature",
+        "available": "Available",
+        "bhw": "BHW",
+        "assessor": "Assessor",
+        "designer": "Designer"
+      },
+      "names": {
+        "kb_articles": "KB articles",
+        "reports_export": "Reports & export",
+        "announcements": "Announcements",
+        "surveys": "Surveys",
+        "elearning": "Courses",
+        "course_sessions": "Training sessions",
+        "forum": "Forum",
+        "flipcharts": "Flipcharts",
+        "offline_pwa": "Offline app",
+        "notifications": "Notifications",
+        "chat_conversation": "Chat Guide conversation",
+        "ai_external": "AI (external provider)",
+        "ai_gap_draft": "AI gap-draft suggestions"
+      },
       "notAuthorizedError": "You're not authorized to do that.",
       "flagNotFoundError": "That flag wasn't found.",
+      "invalidRoleForFlagError": "That feature can't be turned on or off for that user type.",
       "genericError": "Something went wrong. Please try again."
     },
     "kbCategories": {
@@ -501,6 +529,7 @@
       "colCategory": "Category",
       "colStatus": "Status",
       "colOwner": "Owner",
+      "colVisibility": "Visibility",
       "colActions": "Actions",
       "editAction": "Edit",
       "empty": "No Q&A entries yet.",
@@ -545,6 +574,7 @@
       "colCategory": "Category",
       "colStatus": "Status",
       "colOwner": "Owner",
+      "colVisibility": "Visibility",
       "colActions": "Actions",
       "editAction": "Edit",
       "empty": "No articles yet.",
@@ -552,6 +582,33 @@
       "ownerRequiredError": "An owner is required to publish this article.",
       "entryNotFoundError": "That entry wasn't found.",
       "articleNotFoundError": "That article wasn't found.",
+      "genericError": "Something went wrong. Please try again."
+    },
+    "visibility": {
+      "actionsLabel": "Actions",
+      "hideAction": "Hide",
+      "showAction": "Show",
+      "archiveAction": "Archive",
+      "restoreAction": "Restore",
+      "cancelAction": "Cancel",
+      "confirmArchive": "Archive this item? It will no longer show to users, and can only be edited again after it's restored.",
+      "confirmArchiveAction": "Archive",
+      "hiddenBadge": "Hidden",
+      "archivedBadge": "Archived",
+      "archivedReadOnly": "This item is archived and read-only. Restore it from the Archived tab to make changes.",
+      "tabs": {
+        "active": "Active",
+        "archived": "Archived"
+      },
+      "notAuthorizedError": "You're not authorized to do that.",
+      "contentNotFoundError": "That item wasn't found.",
+      "invalidContentTypeError": "That content type isn't supported.",
+      "invalidActionError": "That action isn't available for this item.",
+      "alreadyHiddenError": "This item is already hidden.",
+      "notHiddenError": "This item isn't hidden.",
+      "alreadyArchivedError": "This item is already archived.",
+      "notArchivedError": "This item isn't archived.",
+      "contentArchivedError": "This item is archived and can't be edited. Restore it first.",
       "genericError": "Something went wrong. Please try again."
     },
     "kbSynonyms": {
@@ -628,6 +685,7 @@
       "colTitle": "Title",
       "colOrgUnit": "Deployed to",
       "colStatus": "Status",
+      "colVisibility": "Visibility",
       "colActions": "Actions",
       "status": {
         "draft": "Draft",
@@ -690,6 +748,7 @@
       "colTitle": "Title",
       "colOrgUnit": "Deployed to",
       "colStatus": "Status",
+      "colVisibility": "Visibility",
       "colActions": "Actions",
       "status": {
         "draft": "Draft",
@@ -829,7 +888,8 @@
     "heading": "Announcements",
     "intro": "Updates from your barangay, city, region, and DOH.",
     "empty": "No announcements yet.",
-    "deleteAction": "Delete"
+    "deleteAction": "Delete",
+    "confirmDelete": "Delete this announcement? This can't be undone."
   },
   "surveys": {
     "heading": "Surveys",
@@ -1080,6 +1140,8 @@
       "submitAction": "Submit for review",
       "deleteAction": "Delete",
       "reviewNotePrefix": "Admin note:",
+      "hiddenByAdminBadge": "Hidden by admin",
+      "archivedBadge": "Archived",
       "status": {
         "draft": "Draft",
         "in_review": "In Review",
@@ -1181,6 +1243,16 @@
     "invalidRoleError": "That role isn't available.",
     "genericError": "Something went wrong. Please try again.",
     "placementLevelError": "An assessor needs a region, province or city/municipality; a BHW needs a barangay or city/municipality."
+  },
+  "preview": {
+    "viewAsLabel": "View as",
+    "banner": "Previewing as {role} — this is what that user type sees.",
+    "switchAction": "Switch",
+    "switching": "Switching…",
+    "exitAction": "Exit preview",
+    "readOnlyNote": "Preview only — nothing is saved.",
+    "notAuthorizedError": "Only an admin can preview another user type.",
+    "genericError": "Something went wrong. Please try again."
   },
   "orgPicker": {
     "within": "Within {name}",

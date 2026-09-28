@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useState, type FormEvent } from "react";
 import { Field, inputClass } from "@/components/admin/form-field";
 import { mapSurveyRpcError } from "@/lib/surveys/error-messages";
-import type { DraftQuestion, QuestionType, Survey } from "@/lib/surveys/types";
+import type { DraftQuestion, QuestionType } from "@/lib/surveys/types";
 import { createClient } from "@/lib/supabase/client";
 import { OrgUnitPicker } from "@/components/org-unit-picker";
 import type { OrgUnitNode } from "@/lib/org-units";
@@ -12,7 +12,10 @@ import type { OrgUnitNode } from "@/lib/org-units";
 type Props = {
   /** The admin's own org unit: content can be deployed there or anywhere below it. */
   rootOrgUnit: OrgUnitNode;
-  onCreated: (survey: Survey) => void;
+  /** RFT C4: the console re-fetches (router.refresh()) rather than taking an
+   * optimistic row — it needs to know which tab a new survey belongs to
+   * (always Active), which is decided server-side. */
+  onCreated: () => void;
 };
 
 const QUESTION_TYPES: QuestionType[] = ["single_choice", "multi_choice", "rating", "text"];
@@ -83,19 +86,7 @@ export function SurveyForm({ rootOrgUnit, onCreated }: Props) {
         setError(t("genericError"));
         return;
       }
-      onCreated({
-        id: row.survey_id,
-        org_unit_id: orgUnitId,
-        author_user_id: "",
-        title_fil: titleFil.trim(),
-        title_en: titleEn.trim(),
-        description_fil: descriptionFil.trim(),
-        description_en: descriptionEn.trim(),
-        is_anonymous: isAnonymous,
-        status: "draft",
-        created_at: new Date().toISOString(),
-        org_units: { name: orgUnit.name },
-      });
+      onCreated();
 
       setTitleFil("");
       setTitleEn("");

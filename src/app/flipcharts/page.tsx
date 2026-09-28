@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -34,10 +35,12 @@ export default async function FlipchartsPage() {
   const t = await getTranslations("flipcharts");
   const tCrumbs = await getTranslations("breadcrumbs");
 
-  const { data: charts } = await supabase
-    .from("flip_charts")
-    .select("id, title_fil, title_en")
-    .eq("status", "published")
+  const { data: charts } = await withVisible(
+    supabase
+      .from("flip_charts")
+      .select("id, title_fil, title_en")
+      .eq("status", "published"),
+  )
     .order("created_at", { ascending: false })
     .returns<FlipChartRow[]>();
 

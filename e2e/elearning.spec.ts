@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import {
+  BARANGAY_BATONG_MALAKE_ID,
   OTHER_BARANGAY_BHW,
   STABLE_ADMIN,
   STABLE_BHW,
@@ -11,6 +12,18 @@ import {
 } from "./fixtures/auth";
 
 const LOS_BANOS_ID = "00000000-0000-0000-0000-000000000004";
+
+function supabaseUrl(): string {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!url) throw new Error("NEXT_PUBLIC_SUPABASE_URL is required");
+  return url;
+}
+
+function anonKey(): string {
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!key) throw new Error("NEXT_PUBLIC_SUPABASE_ANON_KEY is required");
+  return key;
+}
 
 test("admin creates a course, a BHW completes it and passes the quiz, an assessor certifies them, and the certificate verifies publicly", async ({
   page,
@@ -147,4 +160,70 @@ test("a city-level course cascades down to a barangay BHW, and a sibling baranga
     },
     data: { p_course_id: courseId },
   });
+});
+
+// RFT C4 DoD (docs/role-feature-toggles-plan.md §4.5): hide/show and
+// archive/restore on a course, driven through rpc_content_set_visibility
+// exactly as /admin/courses calls it. Always cleaned up in `finally` via
+// the hard delete, same as the specs above.
+test("hiding, then archiving, a course takes it out of a BHW's reads; showing/restoring brings it back", async ({
+  request,
+}) => {
+  const marker = `e2e.course.visibility.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
+
+  const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+  const createResponse = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_course_create`, {
+    headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+    data: {
+      p_org_unit_id: BARANGAY_BATONG_MALAKE_ID,
+      p_title_fil: `Kurso visibility fil ${marker}`,
+      p_title_en: `Course visibility en ${marker}`,
+      p_description_fil: "",
+      p_description_en: "",
+      p_quiz_passing_percent: 80,
+      p_quiz_max_attempts: 3,
+      p_modules: [{ type: "text", title_fil: "Aralin", title_en: "Lesson", body_fil: "X", body_en: "Y" }],
+    },
+  });
+  const [{ course_id: courseId }] = (await createResponse.json()) as Array<{ course_id: string }>;
+
+  await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_course_set_status`, {
+    headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+    data: { p_course_id: courseId, p_status: "published" },
+  });
+
+  async function setVisibility(action: "hide" | "show" | "archive" | "restore") {
+    const response = await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_content_set_visibility`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_type: "course", p_id: courseId, p_action: action },
+    });
+    expect(response.status(), `rpc_content_set_visibility(${action})`).toBe(204);
+  }
+
+  async function bhwCanReadCourse(): Promise<boolean> {
+    const bhwToken = await getAccessToken(request, STABLE_BHW.username, STABLE_BHW.password);
+    const rows = await restGet(request, bhwToken, `courses?id=eq.${courseId}`);
+    return rows.length === 1;
+  }
+
+  try {
+    expect(await bhwCanReadCourse()).toBe(true);
+
+    await setVisibility("hide");
+    expect(await bhwCanReadCourse()).toBe(false);
+
+    await setVisibility("show");
+    expect(await bhwCanReadCourse()).toBe(true);
+
+    await setVisibility("archive");
+    expect(await bhwCanReadCourse()).toBe(false);
+
+    await setVisibility("restore");
+    expect(await bhwCanReadCourse()).toBe(true);
+  } finally {
+    await request.post(`${supabaseUrl()}/rest/v1/rpc/rpc_course_delete`, {
+      headers: { apikey: anonKey(), Authorization: `Bearer ${adminToken}`, "Content-Type": "application/json" },
+      data: { p_course_id: courseId },
+    });
+  }
 });

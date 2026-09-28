@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { ArticleViewer } from "@/components/kb/article-viewer";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
+import { withVisible } from "@/lib/content/visibility";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 import { parseOnboardingProgress } from "@/lib/settings/types";
@@ -45,19 +46,21 @@ export default async function KbCategoryPage({ params }: { params: Promise<{ slu
   }
 
   const [{ data: entries }, { data: articles }] = await Promise.all([
-    supabase
-      .from("kb_entries")
-      .select("id, question_fil, question_en, answer_fil, answer_en")
-      .eq("category_id", category.id)
-      .eq("status", "published")
-      .returns<EntryRow[]>(),
+    withVisible(
+      supabase
+        .from("kb_entries")
+        .select("id, question_fil, question_en, answer_fil, answer_en")
+        .eq("category_id", category.id)
+        .eq("status", "published"),
+    ).returns<EntryRow[]>(),
     flags.kb_articles
-      ? supabase
-          .from("kb_articles")
-          .select("id, title_fil, title_en, body_fil, body_en")
-          .eq("category_id", category.id)
-          .eq("status", "published")
-          .returns<ArticleRow[]>()
+      ? withVisible(
+          supabase
+            .from("kb_articles")
+            .select("id, title_fil, title_en, body_fil, body_en")
+            .eq("category_id", category.id)
+            .eq("status", "published"),
+        ).returns<ArticleRow[]>()
       : Promise.resolve({ data: [] as ArticleRow[] }),
     // Best-effort: visiting a published category satisfies the "visit a KB
     // category" onboarding step. Runs alongside the reads above so it adds

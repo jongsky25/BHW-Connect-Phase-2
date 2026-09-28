@@ -1,17 +1,18 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import type { ReactNode } from "react";
 import type { Announcement } from "@/lib/announcements/types";
 
 type Props = {
   announcement: Announcement;
   locale: string;
-  canModerate: boolean;
-  onDeleted?: (id: string) => void;
+  /** RFT C4: the admin console's Visibility badge + actions menu, rendered
+   * where the old standalone Delete button used to be. Absent for the
+   * user-facing feed. */
+  actions?: ReactNode;
 };
 
-export function AnnouncementCard({ announcement, locale, canModerate, onDeleted }: Props) {
-  const t = useTranslations("announcements");
+export function AnnouncementCard({ announcement, locale, actions }: Props) {
   const body = locale === "en" ? announcement.body_en : announcement.body_fil;
   const postedAt = new Date(announcement.created_at).toLocaleDateString(locale === "en" ? "en-US" : "fil-PH", {
     year: "numeric",
@@ -51,15 +52,7 @@ export function AnnouncementCard({ announcement, locale, canModerate, onDeleted 
         </a>
       ) : null}
 
-      {canModerate ? (
-        <button
-          type="button"
-          onClick={() => onDeleted?.(announcement.id)}
-          className="self-start text-sm font-medium text-danger underline"
-        >
-          {t("deleteAction")}
-        </button>
-      ) : null}
+      {actions ? <div className="self-start">{actions}</div> : null}
     </article>
   );
 }
