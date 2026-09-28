@@ -108,11 +108,11 @@
   .slide__inner{width:100%;max-width:var(--maxw);margin:0 auto;transform-origin:top center}
   .slide.centered .slide__inner{transform-origin:center center}
   .slide.wide .slide__inner{max-width:1240px}
-  /* full-bleed: the three feature-mockup slides get most of the stage rather
-     than the centered 1120px column, so the phone/laptop frames render at
-     their natural size instead of being squeezed by side padding. */
-  .slide.full{padding-left:clamp(1rem,2.6vw,2.6rem);padding-right:clamp(1rem,2.6vw,2.6rem)}
-  .slide.full .slide__inner{max-width:1440px}
+  /* full-bleed: the three feature-mockup slides get nearly the whole stage
+     rather than the centered 1120px column, so the phone/laptop frames and
+     their narrative text render as large as the screen allows. */
+  .slide.full{padding-left:clamp(.6rem,1.6vw,1.8rem);padding-right:clamp(.6rem,1.6vw,1.8rem)}
+  .slide.full .slide__inner{max-width:1680px}
 
   .slide.dark{background:var(--teal-deep);color:var(--cream)}
   .slide.darker{background:radial-gradient(120% 120% at 78% 12%,#0d5254 0%,var(--teal-deeper) 62%);color:var(--cream)}
@@ -235,43 +235,46 @@
      and the .app-scope component system (course hero/module list/quiz, the
      assessor return-demonstration checklist, the certificate + QR).
      ================================================================ */
-  .demo2{display:grid;grid-template-columns:minmax(0,38fr) minmax(0,62fr);gap:clamp(1.2rem,3vw,2.8rem);align-items:center}
-  .demo2 .col-l{display:flex;flex-direction:column;gap:.75rem;min-width:0}
-  .demo2 .col-r{display:flex;flex-direction:column;align-items:center;gap:.8rem;min-width:0}
-  .demo2 h2{font-size:clamp(1.5rem,2.5vw,2.2rem);color:var(--ink);line-height:1.14;margin-bottom:.1rem}
-  .demo2 .sub{color:var(--ink-soft);line-height:1.48;font-size:clamp(.92rem,1.18vw,1.05rem)}
-  .ptag{display:inline-block;vertical-align:middle;margin-left:.55rem;font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.16rem .5rem;border-radius:999px;
+  .demo2{display:grid;grid-template-columns:minmax(0,32fr) minmax(0,68fr);gap:clamp(1.6rem,3.6vw,3.6rem);align-items:center}
+  .demo2 .col-l{display:flex;flex-direction:column;gap:1rem;min-width:0}
+  .demo2 .col-r{display:flex;flex-direction:column;align-items:center;gap:1rem;min-width:0}
+  .demo2 h2{font-size:clamp(2rem,3.6vw,3.1rem);color:var(--ink);line-height:1.1;margin-bottom:.2rem}
+  .demo2 .sub{color:var(--ink-soft);line-height:1.5;font-size:clamp(1.15rem,1.6vw,1.4rem)}
+  .ptag{display:inline-block;vertical-align:middle;margin-left:.6rem;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:999px;
     background:rgba(184,78,18,.1);color:var(--marigold-deep);border:1px solid rgba(184,78,18,.32)}
-  .callouts{display:flex;flex-direction:column;gap:.62rem;margin-top:.3rem}
-  .callouts li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:start;
-    font-size:clamp(.88rem,1.12vw,1rem);line-height:1.44;color:var(--ink-soft)}
-  .callouts li i{font-style:normal;width:22px;height:22px;border-radius:50%;background:var(--marigold-deep);
-    color:#fff;font-size:.7rem;font-weight:800;display:grid;place-items:center;margin-top:.08rem;flex:0 0 auto}
+  .callouts{display:flex;flex-direction:column;gap:.85rem;margin-top:.5rem}
+  .callouts li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;
+    font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.48;color:var(--ink-soft)}
+  .callouts li i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--marigold-deep);
+    color:#fff;font-size:.85rem;font-weight:800;display:grid;place-items:center;margin-top:.08rem;flex:0 0 auto}
   .callouts li b{color:var(--ink);font-weight:700}
-  .demo-note{margin-top:.7rem;font-size:.76rem;font-style:italic;color:var(--ink-soft);opacity:.85;line-height:1.42;max-width:70ch}
+  .demo-note{margin-top:.9rem;font-size:.92rem;font-style:italic;color:var(--ink-soft);opacity:.85;line-height:1.42;max-width:70ch}
 
   /* device frames
      Width is viewport-relative (clamp), not a fixed px, with a max-width
-     safety net: a fixed 700px laptop does not shrink in a narrow .col-r on
-     a small projector, so it overflows past its grid column and overlaps
-     the text column next to it — that was the reported bug. Height stays a
-     plain px, sized to the actual content on each slide (not vh-based:
-     tying it to viewport height either crops the rubric rows at a short
-     viewport or leaves a blank gap at a tall one, since the content inside
-     is fixed-px and does not reflow with the frame). fit() still scales the
-     whole slide — box included — uniformly to the viewport afterward, which
-     is where the actual small-projector adaptation happens; on a roomy
-     screen that also means the whole slide, text included, scales up
-     further than a hard-coded box would otherwise allow. */
-  .dev-phone{width:clamp(210px,25vw,300px);max-width:100%;flex:0 0 auto;background:#0c0c0d;border-radius:34px;padding:10px;box-shadow:0 26px 54px -20px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06) inset}
-  .dev-phone .notch{height:18px;display:flex;justify-content:center;align-items:center}
-  .dev-phone .notch::before{content:"";width:100px;height:5px;border-radius:999px;background:#2a2a2c}
-  .dev-phone .glass{border-radius:25px;overflow:hidden;height:494px;display:flex;flex-direction:column}
-  .dev-laptop{width:clamp(400px,54vw,720px);max-width:100%;flex:0 0 auto}
-  .dev-laptop .lid{background:#0c0c0d;border-radius:14px 14px 0 0;padding:9px 9px 0;box-shadow:0 26px 54px -22px rgba(0,0,0,.5)}
-  .dev-laptop .glass{border-radius:7px 7px 0 0;overflow:hidden;height:400px;display:flex;flex-direction:column}
-  .dev-laptop .base{height:12px;background:linear-gradient(#161616,#0c0c0d);border-radius:0 0 12px 12px;box-shadow:0 10px 20px -12px rgba(0,0,0,.6)}
-  .dev-laptop .base::after{content:"";display:block;width:78px;height:4px;margin:3px auto 0;border-radius:0 0 7px 7px;background:#2a2a2c}
+     safety net: a fixed-px laptop does not shrink in a narrow .col-r on a
+     small projector, so it overflows past its grid column and overlaps the
+     text column next to it — that was the earlier reported bug. Height
+     stays a plain px, sized to the actual content on each slide (not
+     vh-based: tying it to viewport height either crops the rubric rows on a
+     short screen or leaves a blank gap on a tall one, since the content
+     inside is fixed-px and does not reflow with the frame). fit() still
+     scales the whole slide — box included — uniformly to the viewport
+     afterward, which is where the actual small-projector adaptation
+     happens; on a roomy screen that also means the whole slide, text
+     included, scales up further than a hard-coded box would allow. Both
+     the frame sizes and the .app-scope type scale below are deliberately
+     large — a projector audience reads this from the back of the room, not
+     off a laptop screen up close. */
+  .dev-phone{width:clamp(270px,32vw,400px);max-width:100%;flex:0 0 auto;background:#0c0c0d;border-radius:38px;padding:12px;box-shadow:0 26px 54px -20px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06) inset}
+  .dev-phone .notch{height:20px;display:flex;justify-content:center;align-items:center}
+  .dev-phone .notch::before{content:"";width:110px;height:6px;border-radius:999px;background:#2a2a2c}
+  .dev-phone .glass{border-radius:28px;overflow:hidden;height:620px;display:flex;flex-direction:column}
+  .dev-laptop{width:clamp(500px,60vw,880px);max-width:100%;flex:0 0 auto}
+  .dev-laptop .lid{background:#0c0c0d;border-radius:15px 15px 0 0;padding:10px 10px 0;box-shadow:0 26px 54px -22px rgba(0,0,0,.5)}
+  .dev-laptop .glass{border-radius:8px 8px 0 0;overflow:hidden;height:540px;display:flex;flex-direction:column}
+  .dev-laptop .base{height:14px;background:linear-gradient(#161616,#0c0c0d);border-radius:0 0 13px 13px;box-shadow:0 10px 20px -12px rgba(0,0,0,.6)}
+  .dev-laptop .base::after{content:"";display:block;width:88px;height:5px;margin:3px auto 0;border-radius:0 0 8px 8px;background:#2a2a2c}
 
   .app-scope{
     --a-canvas:#f6f2ed; --a-ink:#2b2420;
@@ -286,83 +289,83 @@
     background:var(--a-canvas);color:var(--a-ink);
     height:100%;display:flex;flex-direction:column;text-align:left;
   }
-  .app-scope .hdr{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 14px;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
-  .app-scope .hdr .wordmark{font-weight:700;color:var(--a-primary);font-size:13px}
-  .app-scope .hdr .mini{font-size:10.5px;color:var(--a-ink-70)}
-  .app-scope .hdr .who{font-size:11px;color:var(--a-ink-70)}
-  .app-scope .tabs{display:flex;gap:15px;padding:8px 15px 0;font-size:11.5px;font-weight:600;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
-  .app-scope .tabs a{color:var(--a-secondary);text-decoration:none;padding-bottom:8px;border-bottom:2px solid transparent}
+  .app-scope .hdr{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 19px;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
+  .app-scope .hdr .wordmark{font-weight:700;color:var(--a-primary);font-size:17px}
+  .app-scope .hdr .mini{font-size:14px;color:var(--a-ink-70)}
+  .app-scope .hdr .who{font-size:14px;color:var(--a-ink-70)}
+  .app-scope .tabs{display:flex;gap:19px;padding:10px 19px 0;font-size:15px;font-weight:600;border-bottom:1px solid var(--a-ink-10);flex:0 0 auto}
+  .app-scope .tabs a{color:var(--a-secondary);text-decoration:none;padding-bottom:10px;border-bottom:2px solid transparent}
   .app-scope .tabs a.on{color:var(--a-ink);border-bottom-color:var(--a-primary)}
-  .app-scope .body{flex:1 1 auto;overflow-y:auto;padding:13px;scrollbar-width:none;-ms-overflow-style:none;
-    -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 22px),transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 calc(100% - 22px),transparent 100%)}
+  .app-scope .body{flex:1 1 auto;overflow-y:auto;padding:17px;scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent 100%)}
   .app-scope .body::-webkit-scrollbar{width:0;height:0;display:none}
-  .app-scope .body.pad{padding:14px 15px}
-  .app-scope .sec{font-size:13px;font-weight:650;margin:0 0 8px}
+  .app-scope .body.pad{padding:18px 20px}
+  .app-scope .sec{font-size:17px;font-weight:650;margin:0 0 10px}
 
-  .app-scope .chero{display:flex;gap:12px;align-items:center;padding:12px;border-radius:13px;background:linear-gradient(135deg,color-mix(in srgb,var(--a-secondary) 12%,var(--a-canvas)),var(--a-canvas));border:1px solid var(--a-ink-10)}
-  .app-scope .ring{--p:44;width:56px;height:56px;border-radius:999px;flex:0 0 auto;background:conic-gradient(var(--a-secondary) calc(var(--p)*1%),var(--a-ink-10) 0);display:grid;place-items:center}
-  .app-scope .ring::before{content:"";width:43px;height:43px;border-radius:999px;background:var(--a-canvas);grid-area:1/1}
-  .app-scope .ring b{grid-area:1/1;font-size:11.5px;font-weight:700;z-index:1;font-variant-numeric:tabular-nums}
-  .app-scope .chero h4{margin:0 0 3px;font-size:13.5px;line-height:1.25}
-  .app-scope .chero p{margin:0;font-size:11px;color:var(--a-ink-70)}
-  .app-scope .mods{display:flex;flex-direction:column;gap:6px;margin-top:11px}
-  .app-scope .mod{display:flex;align-items:center;gap:9px;border:1px solid var(--a-ink-10);border-radius:10px;padding:8px 10px}
-  .app-scope .mod .k{width:23px;height:23px;flex:0 0 auto;border-radius:7px;display:grid;place-items:center;font-size:11px;font-weight:700}
+  .app-scope .chero{display:flex;gap:16px;align-items:center;padding:16px;border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--a-secondary) 12%,var(--a-canvas)),var(--a-canvas));border:1px solid var(--a-ink-10)}
+  .app-scope .ring{--p:44;width:72px;height:72px;border-radius:999px;flex:0 0 auto;background:conic-gradient(var(--a-secondary) calc(var(--p)*1%),var(--a-ink-10) 0);display:grid;place-items:center}
+  .app-scope .ring::before{content:"";width:56px;height:56px;border-radius:999px;background:var(--a-canvas);grid-area:1/1}
+  .app-scope .ring b{grid-area:1/1;font-size:15px;font-weight:700;z-index:1;font-variant-numeric:tabular-nums}
+  .app-scope .chero h4{margin:0 0 4px;font-size:18px;line-height:1.25}
+  .app-scope .chero p{margin:0;font-size:14px;color:var(--a-ink-70)}
+  .app-scope .mods{display:flex;flex-direction:column;gap:9px;margin-top:15px}
+  .app-scope .mod{display:flex;align-items:center;gap:12px;border:1px solid var(--a-ink-10);border-radius:12px;padding:11px 14px}
+  .app-scope .mod .k{width:30px;height:30px;flex:0 0 auto;border-radius:9px;display:grid;place-items:center;font-size:14px;font-weight:700}
   .app-scope .mod .k.done{background:var(--a-success);color:#fff}
   .app-scope .mod .k.now{background:var(--a-primary);color:#fff}
   .app-scope .mod .k.todo{background:var(--a-ink-10);color:var(--a-ink-70)}
   .app-scope .mod .t{flex:1;min-width:0}
-  .app-scope .mod .t b{display:block;font-size:11.5px;font-weight:600;line-height:1.3}
-  .app-scope .mod .t span{font-size:10px;color:var(--a-ink-70);line-height:1.3}
-  .app-scope .mod .fmt{font-size:9.5px;color:var(--a-ink-70);white-space:nowrap}
+  .app-scope .mod .t b{display:block;font-size:15px;font-weight:600;line-height:1.3}
+  .app-scope .mod .t span{font-size:13px;color:var(--a-ink-70);line-height:1.3}
+  .app-scope .mod .fmt{font-size:12px;color:var(--a-ink-70);white-space:nowrap}
 
-  .app-scope .quiz{border:1px solid var(--a-ink-10);border-radius:11px;padding:13px;margin-top:12px}
-  .app-scope .quiz .q{font-size:12px;font-weight:600;margin-bottom:10px;line-height:1.4}
-  .app-scope .opt{display:flex;align-items:center;gap:9px;border:1px solid var(--a-ink-20);border-radius:9px;padding:9px 11px;margin-bottom:6px;font-size:11.5px;line-height:1.35}
-  .app-scope .opt .k{width:17px;height:17px;border-radius:999px;border:2px solid var(--a-ink-20);flex:0 0 auto}
+  .app-scope .quiz{border:1px solid var(--a-ink-10);border-radius:14px;padding:17px;margin-top:16px}
+  .app-scope .quiz .q{font-size:16px;font-weight:600;margin-bottom:13px;line-height:1.4}
+  .app-scope .opt{display:flex;align-items:center;gap:12px;border:1px solid var(--a-ink-20);border-radius:11px;padding:12px 14px;margin-bottom:8px;font-size:15px;line-height:1.35}
+  .app-scope .opt .k{width:22px;height:22px;border-radius:999px;border:2px solid var(--a-ink-20);flex:0 0 auto}
   .app-scope .opt.ok{border-color:var(--a-success);background:color-mix(in srgb,var(--a-success) 10%,transparent)}
   .app-scope .opt.ok .k{border-color:var(--a-success);background:var(--a-success)}
-  .app-scope .verdict{margin-top:8px;font-size:11.5px;font-weight:600;color:var(--a-success);line-height:1.4}
+  .app-scope .verdict{margin-top:10px;font-size:15px;font-weight:600;color:var(--a-success);line-height:1.4}
 
   /* return-demonstration checklist */
-  .app-scope .rd-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:10px}
-  .app-scope .rd-scale{display:flex;gap:11px;flex-wrap:wrap;font-size:10px;color:var(--a-ink-70);line-height:1.4}
+  .app-scope .rd-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:13px}
+  .app-scope .rd-scale{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--a-ink-70);line-height:1.4}
   .app-scope .rd-scale b{color:var(--a-ink)}
-  .app-scope .rd-sec{font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--a-ink-70);margin:11px 0 6px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .app-scope .rd-sec{font-size:14px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--a-ink-70);margin:14px 0 8px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
   .app-scope .rd-sec .sub{font-weight:700;color:var(--a-secondary);font-variant-numeric:tabular-nums;letter-spacing:0;text-transform:none}
-  .app-scope .rd-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;border:1px solid var(--a-ink-10);border-radius:8px;padding:6px 10px;margin-bottom:5px;font-size:11px;line-height:1.32}
-  .app-scope .rd-scores{display:flex;gap:5px;flex:0 0 auto}
-  .app-scope .rd-scores i{width:19px;height:19px;border-radius:6px;border:1.5px solid var(--a-ink-20);display:grid;place-items:center;font-style:normal;font-size:9.5px;font-weight:700;color:var(--a-ink-70)}
+  .app-scope .rd-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border:1px solid var(--a-ink-10);border-radius:10px;padding:9px 13px;margin-bottom:7px;font-size:14px;line-height:1.32}
+  .app-scope .rd-scores{display:flex;gap:6px;flex:0 0 auto}
+  .app-scope .rd-scores i{width:25px;height:25px;border-radius:7px;border:1.5px solid var(--a-ink-20);display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700;color:var(--a-ink-70)}
   .app-scope .rd-scores i.on{background:var(--a-success);border-color:var(--a-success);color:#fff}
   .app-scope .rd-scores i.on.part{background:var(--a-warning);border-color:var(--a-warning)}
-  .app-scope .foot{border-top:1px solid var(--a-ink-10);padding:10px 15px 12px;flex:0 0 auto;background:var(--a-ink-05)}
-  .app-scope .rd-sum{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-  .app-scope .rd-sum .nums{display:flex;gap:15px;flex-wrap:wrap;font-size:10.5px;color:var(--a-ink-70)}
-  .app-scope .rd-sum .nums b{display:block;font-size:15px;color:var(--a-ink);font-variant-numeric:tabular-nums;letter-spacing:-.3px}
-  .app-scope .rd-verdict{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:var(--a-success);color:#fff}
-  .app-scope .btn{border-radius:8px;padding:6px 11px;font-size:11px;font-weight:600;display:inline-block}
+  .app-scope .foot{border-top:1px solid var(--a-ink-10);padding:13px 19px 16px;flex:0 0 auto;background:var(--a-ink-05)}
+  .app-scope .rd-sum{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .app-scope .rd-sum .nums{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--a-ink-70)}
+  .app-scope .rd-sum .nums b{display:block;font-size:19px;color:var(--a-ink);font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+  .app-scope .rd-verdict{font-size:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:999px;background:var(--a-success);color:#fff}
+  .app-scope .btn{border-radius:9px;padding:8px 14px;font-size:14px;font-weight:600;display:inline-block}
   .app-scope .btn.p{background:var(--a-primary);color:#fff}
 
   /* certificate */
-  .app-scope .cert{width:100%;max-width:420px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid var(--a-ink-10);box-shadow:0 16px 40px -22px rgba(0,0,0,.4)}
-  .app-scope .cert .band{height:7px;background:linear-gradient(90deg,var(--a-primary-display),var(--a-celebration),var(--a-secondary))}
-  .app-scope .cert .in{padding:17px 20px;text-align:center}
-  .app-scope .cert .seal{width:46px;height:46px;margin:0 auto 7px;border-radius:999px;background:var(--a-celebration);display:grid;place-items:center;font-size:20px;box-shadow:0 0 0 5px color-mix(in srgb,var(--a-celebration) 30%,transparent)}
-  .app-scope .cert .k{font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:var(--a-ink-70);font-weight:700}
-  .app-scope .cert h3{margin:5px 0 2px;font-size:14px;line-height:1.25}
-  .app-scope .cert .nm{font-size:20px;font-weight:750;color:var(--a-primary-display);margin:8px 0 4px;letter-spacing:-.3px}
-  .app-scope .cert .ds{font-size:10.5px;color:var(--a-ink-70);max-width:40ch;margin:0 auto;line-height:1.5}
-  .app-scope .cert .ft{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:14px;text-align:left}
-  .app-scope .cert .ft .sig{font-size:9.5px;color:var(--a-ink-70)}
-  .app-scope .cert .ft .sig b{display:block;font-size:11px;color:var(--a-ink)}
-  .app-scope .qr{width:56px;height:56px;border-radius:7px;background:#fff;padding:4px}
-  .app-scope .vfy{font-size:9px;color:var(--a-ink-70);text-align:center;margin-top:3px}
+  .app-scope .cert{width:100%;max-width:520px;margin:0 auto;border-radius:16px;overflow:hidden;border:1px solid var(--a-ink-10);box-shadow:0 16px 40px -22px rgba(0,0,0,.4)}
+  .app-scope .cert .band{height:9px;background:linear-gradient(90deg,var(--a-primary-display),var(--a-celebration),var(--a-secondary))}
+  .app-scope .cert .in{padding:22px 26px;text-align:center}
+  .app-scope .cert .seal{width:58px;height:58px;margin:0 auto 9px;border-radius:999px;background:var(--a-celebration);display:grid;place-items:center;font-size:25px;box-shadow:0 0 0 6px color-mix(in srgb,var(--a-celebration) 30%,transparent)}
+  .app-scope .cert .k{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--a-ink-70);font-weight:700}
+  .app-scope .cert h3{margin:7px 0 3px;font-size:18px;line-height:1.25}
+  .app-scope .cert .nm{font-size:26px;font-weight:750;color:var(--a-primary-display);margin:10px 0 5px;letter-spacing:-.3px}
+  .app-scope .cert .ds{font-size:13px;color:var(--a-ink-70);max-width:40ch;margin:0 auto;line-height:1.5}
+  .app-scope .cert .ft{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-top:18px;text-align:left}
+  .app-scope .cert .ft .sig{font-size:12px;color:var(--a-ink-70)}
+  .app-scope .cert .ft .sig b{display:block;font-size:14px;color:var(--a-ink)}
+  .app-scope .qr{width:68px;height:68px;border-radius:8px;background:#fff;padding:4px}
+  .app-scope .vfy{font-size:11px;color:var(--a-ink-70);text-align:center;margin-top:4px}
 
-  .rollup-kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;width:100%;max-width:290px}
-  .rollup-kpis .kpi{border:1px solid rgba(36,28,23,.12);border-radius:9px;padding:9px 11px;background:rgba(255,255,255,.7);display:flex;flex-direction:column;gap:2px}
-  .rollup-kpis .kpi .l{font-size:9px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--ink-soft)}
-  .rollup-kpis .kpi .v{font-size:18px;font-weight:700;letter-spacing:-.3px;font-variant-numeric:tabular-nums;color:var(--ink)}
+  .rollup-kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;width:100%;max-width:380px}
+  .rollup-kpis .kpi{border:1px solid rgba(36,28,23,.12);border-radius:11px;padding:12px 14px;background:rgba(255,255,255,.7);display:flex;flex-direction:column;gap:3px}
+  .rollup-kpis .kpi .l{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--ink-soft)}
+  .rollup-kpis .kpi .v{font-size:23px;font-weight:700;letter-spacing:-.3px;font-variant-numeric:tabular-nums;color:var(--ink)}
 
   /* ================================================================
      STEP BUILDS
@@ -667,14 +670,14 @@
               <div class="rd-head">
                 <div>
                   <h3 class="sec" style="margin:0">Return-demonstration &middot; Chapter I</h3>
-                  <div style="font-size:10.5px;color:var(--a-ink-70);margin-top:3px">Candidate: Rosa D. Mendoza</div>
+                  <div style="font-size:13px;color:var(--a-ink-70);margin-top:4px">Candidate: Rosa D. Mendoza</div>
                 </div>
                 <div class="rd-scale"><span><b>3</b> Independent</span><span><b>2</b> With prompting</span><span><b>1</b> With help</span><span><b>0</b> Not shown</span></div>
               </div>
               <div class="rd-sec">Household visit<span class="sub">8 / 9 pts</span></div>
-              <div class="rd-row"><span>Greets the household and confirms purpose</span><span class="rd-scores"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
-              <div class="rd-row"><span>Uses the correct barangay referral pathway</span><span class="rd-scores"><i>0</i><i>1</i><i class="on part">2</i><i>3</i></span></div>
-              <div class="rd-row"><span>Completes the signal log entry accurately</span><span class="rd-scores"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="rd-row"><span>Greets household, confirms purpose</span><span class="rd-scores"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
+              <div class="rd-row"><span>Uses correct referral pathway</span><span class="rd-scores"><i>0</i><i>1</i><i class="on part">2</i><i>3</i></span></div>
+              <div class="rd-row"><span>Completes signal log entry</span><span class="rd-scores"><i>0</i><i>1</i><i>2</i><i class="on">3</i></span></div>
             </div>
             <div class="foot">
               <div class="rd-sum">
@@ -717,7 +720,7 @@
                 <div class="seal">&#127942;</div>
                 <div class="k">Certificate of Competency</div>
                 <h3>BHW Reference Manual &middot; Chapter I</h3>
-                <div style="font-size:10px;color:var(--a-ink-70);margin-top:5px">Awarded to</div>
+                <div style="font-size:12px;color:var(--a-ink-70);margin-top:6px">Awarded to</div>
                 <div class="nm">Rosa D. Mendoza</div>
                 <p class="ds">Completed all required lessons and passed the chapter assessment, verified by an assigned assessor.</p>
                 <div class="ft">
@@ -848,7 +851,7 @@
       var f=finder(x,y), on = f>=0 ? f : (rnd(y*n+x)>0.5?1:0);
       if(on) cells += '<rect x="'+x+'" y="'+y+'" width="1" height="1"/>';
     }}
-    return '<svg viewBox="0 0 21 21" width="56" height="56" shape-rendering="crispEdges" aria-hidden="true"><g fill="#0c0c0d">'+cells+'</g></svg>';
+    return '<svg viewBox="0 0 21 21" width="60" height="60" shape-rendering="crispEdges" aria-hidden="true"><g fill="#0c0c0d">'+cells+'</g></svg>';
   }
   (function(){
     var el = document.getElementById('cert-qr');
