@@ -9,7 +9,7 @@ import { FLAG_ROLE_SCOPE, type FeatureFlagKey } from "./types";
 // silently drift apart.
 const MIGRATION_PATH = join(
   __dirname,
-  "../../../supabase/migrations/20261005000000_rft_a1_flag_roles.sql",
+  "../../../supabase/migrations/20261005000100_rft_a1_flag_roles.sql",
 );
 
 function parseFlagRoleScopeSql(sql: string): Record<string, string[]> {

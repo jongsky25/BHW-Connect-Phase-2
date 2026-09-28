@@ -28,7 +28,7 @@ export type FeatureFlagRow = {
 
 // Which user types each flag can be toggled for (docs/role-feature-toggles-plan.md
 // §4.3). Mirrors flag_role_scope() in
-// supabase/migrations/20261005000000_rft_a1_flag_roles.sql — keep the two in
+// supabase/migrations/20261005000100_rft_a1_flag_roles.sql — keep the two in
 // sync; flag-role-scope.test.ts checks it. A flag missing here, or mapped to
 // an empty array, can only be changed through its master "Available" switch:
 // admin-console-only and system flags (reports_export, ai_gap_draft,
