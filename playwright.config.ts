@@ -10,8 +10,11 @@ if (existsSync(".env.local")) {
   process.loadEnvFile(".env.local");
 }
 
-// E2E creates users, content and global flag flips; never against the pilot.
-assertPilotAllowed(process.env.NEXT_PUBLIC_SUPABASE_URL, "E2E NEXT_PUBLIC_SUPABASE_URL");
+// .env.local usually points the app at the pilot. E2E writes users, content
+// and global flag flips, so refuse rather than spend the pilot's disk I/O —
+// unconditionally: unlike the loaders, ALLOW_PILOT=1 does not unlock E2E
+// (see docs/deploy-runbook.md, "E2E database").
+assertPilotAllowed(process.env.NEXT_PUBLIC_SUPABASE_URL, "E2E NEXT_PUBLIC_SUPABASE_URL", {});
 
 // Some sandboxes pre-install a Chromium build that predates this package's
 // expected revision and block re-downloading; use it directly when present,

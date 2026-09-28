@@ -58,8 +58,8 @@ project settings (for the running app) and GitHub Actions repo secrets
   org's second active-project slot.
 
 `scripts/lib/pilot-guard.mjs` makes `next dev`/`build`/`start` (via
-`next.config.ts`), Playwright and every loader's `--project` refuse the pilot
-outside Vercel unless `ALLOW_PILOT=1` is set. `npm run doctor -- --brief`
+`next.config.ts`) and every loader's `--project` refuse the pilot outside
+Vercel unless `ALLOW_PILOT=1` is set. Playwright refuses it unconditionally. `npm run doctor -- --brief`
 (the SessionStart hook) prints which database this environment points at.
 
 ## Pilot secrets
@@ -113,6 +113,9 @@ Consequences:
   `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the `ANON_KEY` that `npx supabase status`
   prints, and every `E2E_STABLE_*_PASSWORD` to `local-e2e-password`, then
   `npm run e2e`. `npx supabase db reset` rebuilds the database from scratch.
+  `playwright.config.ts` refuses to run if `NEXT_PUBLIC_SUPABASE_URL` is the
+  pilot's, so a `.env.local` still pointed at the pilot fails fast instead of
+  writing test data there.
 - The weekly `e2e-test-users-purge.yml` and `e2e-test-courses-purge.yml`
   workflows were deleted on 28 Sep 2026. A service-role dry run of both
   purge RPCs on the pilot reported 0 users, 0 forum categories and 0 courses

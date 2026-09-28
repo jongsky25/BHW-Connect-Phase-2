@@ -16,10 +16,10 @@ Start with `docs/session-handoff.md` for context, and use
   is for real BHWs. Use `npx supabase start` (`--project local`) wherever
   Docker runs. Use the dev project `bhw-connect-e2e` (`ekehmwzyhlagtfuvquho`)
   in sandboxes without Docker.
-- Dev servers, Playwright and the loaders refuse the pilot unless
-  `ALLOW_PILOT=1` is set (`scripts/lib/pilot-guard.mjs`). Set it only for a
-  reviewed migration, a deliberate content load, or the post-deploy smoke
-  check. Never set it in `.env.local`.
+- Dev servers and the loaders refuse the pilot unless `ALLOW_PILOT=1` is set
+  (`scripts/lib/pilot-guard.mjs`). Set it only for a reviewed migration, a
+  deliberate content load, or the post-deploy smoke check, and never in
+  `.env.local`. E2E refuses the pilot even with it set.
 - **Migrations:** write the file, prove it replays on `supabase start`, then
   apply it to the pilot **once, at merge time**, applying all of the PR's
   migrations together. Every apply reloads PostgREST's schema cache, which is

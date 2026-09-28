@@ -13,6 +13,12 @@ export function isPilot(urlOrRef) {
   return typeof urlOrRef === "string" && urlOrRef.includes(PILOT_PROJECT_REF);
 }
 
+/**
+ * @param {string | undefined} urlOrRef a Supabase URL or project ref
+ * @param {string} context what is being checked, for the error message
+ * @param {Record<string, string | undefined>} [env] pass {} to refuse the
+ *   pilot unconditionally (E2E), ignoring VERCEL and ALLOW_PILOT
+ */
 export function assertPilotAllowed(urlOrRef, context, env = process.env) {
   if (!isPilot(urlOrRef)) return;
   if (env.VERCEL === "1" || env.ALLOW_PILOT === "1") return;
