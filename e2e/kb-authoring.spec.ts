@@ -1,6 +1,15 @@
 import path from "node:path";
 import { expect, test } from "@playwright/test";
-import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet, unpublishKbEntry } from "./fixtures/auth";
+import {
+  BARANGAY_BATONG_MALAKE_ID,
+  STABLE_ADMIN,
+  STABLE_BHW,
+  createThrowawayBhw,
+  getAccessToken,
+  onboardThroughLogin,
+  restGet,
+  unpublishKbEntry,
+} from "./fixtures/auth";
 
 function supabaseUrl(): string {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -93,13 +102,16 @@ test("hiding, then archiving, a published KB entry takes it out of BHW reads and
   const marker = `e2e.kb.visibility.${Date.now()}.${Math.random().toString(36).slice(2, 8)}`;
   const questionEn = `What is the ${marker} protocol?`;
 
-  await page.goto("/login");
-  await page.getByLabel("Username").fill(STABLE_BHW.username);
-  await page.getByLabel("Password").fill(STABLE_BHW.password);
-  await page.getByRole("button", { name: "Mag-login" }).click();
-  await expect(page).toHaveURL("/home", { timeout: 10_000 });
-
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+
+  // A dedicated throwaway BHW, not bhw.stable: chat-guide.spec.ts's own
+  // rate-limit test deliberately floods bhw.stable's 20-req/60s chat quota
+  // (rpc_chat_check_rate_limit) and runs right before this spec in the
+  // suite's alphabetical order, so a shared-account chat call here would be
+  // racing that leftover quota.
+  const fresh = await createThrowawayBhw(request, adminToken, BARANGAY_BATONG_MALAKE_ID);
+  await onboardThroughLogin(page, fresh.username, fresh.tempPassword, "e2e-throwaway-password");
+
   const [category] = (await restGet(request, adminToken, "kb_categories?select=id&limit=1")) as Array<{
     id: string;
   }>;
@@ -174,6 +186,7 @@ test("hiding, then archiving, a published KB entry takes it out of BHW reads and
         p_answer_fil: `Sagot para sa ${marker}.`,
         p_answer_en: `Answer for ${marker}.`,
         p_keywords: [marker],
+        p_image_url: null,
         p_owner_user_id: owner.id,
         p_review_due_on: null,
         p_status: "published",

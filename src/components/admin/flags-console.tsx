@@ -140,7 +140,7 @@ export function FlagsConsole({ initialFlags, canEdit }: Props) {
       );
     }
     if (!flag.enabled) {
-      return <span className="text-xs text-ink/50">{t("offForEveryone")}</span>;
+      return <span className="text-xs text-ink/70">{t("offForEveryone")}</span>;
     }
     const checked = !flag.disabled_roles.includes(role);
     if (!canEdit) return <StatusText checked={checked} />;
@@ -195,7 +195,7 @@ export function FlagsConsole({ initialFlags, canEdit }: Props) {
                   <tr key={flag.id} className="border-t border-ink/10">
                     <td className="px-3 py-3">
                       <p className="font-medium text-ink">{t(`names.${flag.key}`)}</p>
-                      <p className="text-xs text-ink/60">{flag.description}</p>
+                      <p className="text-xs text-ink/70">{flag.description}</p>
                     </td>
                     <td className="px-3 py-3">
                       <AvailableCell flag={flag} />
@@ -216,7 +216,7 @@ export function FlagsConsole({ initialFlags, canEdit }: Props) {
               <li key={flag.id} className="flex flex-col gap-3 rounded-md border border-ink/10 p-4">
                 <div>
                   <p className="font-medium text-ink">{t(`names.${flag.key}`)}</p>
-                  <p className="text-xs text-ink/60">{flag.description}</p>
+                  <p className="text-xs text-ink/70">{flag.description}</p>
                 </div>
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-sm text-ink/70">{t("columns.available")}</span>

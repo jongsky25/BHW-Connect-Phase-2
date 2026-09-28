@@ -66,7 +66,7 @@ function AdminNavList({
     <nav aria-label="Admin" className="flex flex-col gap-5 border-t border-ink/10 px-4 py-3 lg:border-t-0 lg:px-0 lg:py-0">
       {groups.map((group) => (
         <div key={group.id} className="flex flex-col gap-1">
-          <p className="px-2 text-xs font-semibold uppercase tracking-wide text-ink/50">{group.label}</p>
+          <p className="px-2 text-xs font-semibold uppercase tracking-wide text-ink/70">{group.label}</p>
           <ul className="flex flex-col gap-0.5">
             {group.items.map((item) => (
               <AdminNavRow key={item.key} item={item} active={isAdminNavItemActive(item.href, pathname)} />

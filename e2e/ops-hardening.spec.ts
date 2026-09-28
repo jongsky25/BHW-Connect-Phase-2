@@ -153,7 +153,11 @@ test("super admin disables a feature for one user type from the flags matrix", a
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
   await page.goto("/admin/flags");
-  const bhwSwitch = page.getByRole("switch", { name: "Turn Forum on or off for BHW" });
+  // superadmin.stable has no language preference set, so a fresh session
+  // renders Filipino (the app default) — match both, same as this file's
+  // /Articles|Artikulo/ pattern above.
+  const bhwSwitchName = /Turn Forum on or off for BHW|Buksan o isara ang Forum para sa BHW/;
+  const bhwSwitch = page.getByRole("switch", { name: bhwSwitchName });
   await expect(bhwSwitch).toHaveAttribute("aria-checked", "true");
 
   const scan = await new AxeBuilder({ page }).include("main").analyze();
@@ -168,6 +172,10 @@ test("super admin disables a feature for one user type from the flags matrix", a
     await page.goto("/home");
     await expect(page.getByRole("link", { name: "Forum" })).toBeVisible();
 
+    // /home has its own inline sign-out action too (shell.spec.ts), so go to
+    // a page without one first to keep the header's "Mag-sign out" unambiguous.
+    await page.goto("/settings");
+    await page.getByRole("button", { name: /^Naka-login bilang/ }).click();
     await page.getByRole("button", { name: "Mag-sign out" }).click();
     await expect(page).toHaveURL("/login", { timeout: 10_000 });
 
@@ -180,6 +188,8 @@ test("super admin disables a feature for one user type from the flags matrix", a
     await page.goto("/forum");
     await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
+    await page.goto("/settings");
+    await page.getByRole("button", { name: /^Naka-login bilang/ }).click();
     await page.getByRole("button", { name: "Mag-sign out" }).click();
     await expect(page).toHaveURL("/login", { timeout: 10_000 });
 
@@ -189,7 +199,7 @@ test("super admin disables a feature for one user type from the flags matrix", a
     await expect(page).toHaveURL("/home", { timeout: 10_000 });
     await page.goto("/admin/flags");
   } finally {
-    const restoreSwitch = page.getByRole("switch", { name: "Turn Forum on or off for BHW" });
+    const restoreSwitch = page.getByRole("switch", { name: bhwSwitchName });
     if ((await restoreSwitch.getAttribute("aria-checked")) === "false") {
       await restoreSwitch.click();
       await expect(restoreSwitch).toHaveAttribute("aria-checked", "true");
@@ -198,6 +208,7 @@ test("super admin disables a feature for one user type from the flags matrix", a
 
   // Confirm the restore actually took for the user type it was scoped to,
   // not just for the super admin, whose own view was never affected.
+  await page.getByRole("button", { name: /^Naka-login bilang/ }).click();
   await page.getByRole("button", { name: "Mag-sign out" }).click();
   await expect(page).toHaveURL("/login", { timeout: 10_000 });
   await page.getByLabel("Username").fill(STABLE_BHW.username);

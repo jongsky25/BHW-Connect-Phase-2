@@ -30,7 +30,7 @@ export default async function AdminKbArticlesPage({
   const { data: articles } = await supabase
     .from("kb_articles")
     .select(
-      "id, title_fil, title_en, status, review_due_on, hidden_at, archived_at, category:kb_categories(name_en), owner:users(full_name)",
+      "id, title_fil, title_en, status, review_due_on, hidden_at, archived_at, category:kb_categories(name_en), owner:users!kb_articles_owner_user_id_fkey(full_name)",
     )
     .order("updated_at", { ascending: false })
     .returns<ArticleRow[]>();

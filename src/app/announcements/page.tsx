@@ -35,7 +35,7 @@ export default async function AnnouncementsPage() {
     supabase
       .from("announcements")
       .select(
-        "id, org_unit_id, author_user_id, body_fil, body_en, link_url, image_url, created_at, hidden_at, archived_at, org_units(name), users(full_name)",
+        "id, org_unit_id, author_user_id, body_fil, body_en, link_url, image_url, created_at, hidden_at, archived_at, org_units(name), users!announcements_author_user_id_fkey(full_name)",
       ),
   )
     .order("created_at", { ascending: false })

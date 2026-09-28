@@ -32,7 +32,7 @@ export default async function AdminKbEntriesPage({
     supabase
       .from("kb_entries")
       .select(
-        "id, question_en, status, review_due_on, owner_user_id, hidden_at, archived_at, category:kb_categories(name_en), owner:users(full_name)",
+        "id, question_en, status, review_due_on, owner_user_id, hidden_at, archived_at, category:kb_categories(name_en), owner:users!kb_entries_owner_user_id_fkey(full_name)",
       )
       .order("updated_at", { ascending: false })
       .returns<EntryRow[]>(),

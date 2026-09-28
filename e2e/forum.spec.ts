@@ -120,6 +120,17 @@ test("archiving, then restoring, a forum thread takes it out of a BHW's reads wi
 
   const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
   const bhwToken = await getAccessToken(request, STABLE_BHW.username, STABLE_BHW.password);
+  // The restrictive policy's author clause (RFT C1, docs/role-feature-toggles-plan.md
+  // §7 C1: "keeps ... a forum author's own archived thread visible to their
+  // author") means the thread's own author keeps reading it even archived —
+  // by design. Read as a different barangay's BHW instead, so this checks
+  // what archiving actually does: take the thread out of every *other* BHW's
+  // reads.
+  const otherBhwToken = await getAccessToken(
+    request,
+    OTHER_BARANGAY_BHW.username,
+    OTHER_BARANGAY_BHW.password,
+  );
   const [category] = (await restGet(request, adminToken, "forum_categories?select=id&limit=1")) as Array<{
     id: string;
   }>;
@@ -144,7 +155,7 @@ test("archiving, then restoring, a forum thread takes it out of a BHW's reads wi
   }
 
   async function bhwCanReadThread(): Promise<boolean> {
-    const rows = await restGet(request, bhwToken, `forum_threads?id=eq.${threadId}`);
+    const rows = await restGet(request, otherBhwToken, `forum_threads?id=eq.${threadId}`);
     return rows.length === 1;
   }
 
