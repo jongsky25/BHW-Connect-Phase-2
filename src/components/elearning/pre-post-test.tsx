@@ -66,6 +66,33 @@ type TestFormProps = {
   onSubmitted: (attempt: { phase: TestPhase; score_percent: number }) => void;
 };
 
+export type RenderedTestQuestion = Pick<CourseTestQuestion, 'id' | 'prompt_fil' | 'prompt_en' | 'options'>;
+
+/** The BHW and assessor exam paths share the same bilingual question controls. */
+export function TestQuestionFields({questions, locale, answers, onAnswer, disabled, namePrefix}: {
+  questions: RenderedTestQuestion[];
+  locale: string;
+  answers: Record<string, number>;
+  onAnswer: (id: string, option: number) => void;
+  disabled: boolean;
+  namePrefix: string;
+}) {
+  return questions.map(question => (
+    <fieldset key={question.id} disabled={disabled} className="flex flex-col gap-2">
+      <legend className="text-sm font-medium text-ink">{locale === 'en' ? question.prompt_en : question.prompt_fil}</legend>
+      <div className="flex flex-col gap-1">
+        {question.options.map((option, index) => (
+          <label key={index} className="flex min-h-[44px] items-center gap-2 text-sm text-ink">
+            <input type="radio" name={`${namePrefix}-${question.id}`} checked={answers[question.id] === index}
+              onChange={() => onAnswer(question.id, index)} />
+            {locale === 'en' ? option.en : option.fil}
+          </label>
+        ))}
+      </div>
+    </fieldset>
+  ));
+}
+
 export function TestForm({
   courseId,
   phase,
@@ -145,33 +172,9 @@ export function TestForm({
         </p>
       </div>
 
-      {questions.map((question) => {
-        const prompt =
-          locale === "en" ? question.prompt_en : question.prompt_fil;
-        return (
-          <fieldset key={question.id} disabled={isPreview} className="flex flex-col gap-2">
-            <legend className="text-sm font-medium text-ink">{prompt}</legend>
-            <div className="flex flex-col gap-1">
-              {question.options.map((option, index) => (
-                <label
-                  key={index}
-                  className="flex min-h-[44px] items-center gap-2 text-sm text-ink"
-                >
-                  <input
-                    type="radio"
-                    name={`test-${phase}-${question.id}`}
-                    checked={answers[question.id] === index}
-                    onChange={() =>
-                      setAnswers((prev) => ({ ...prev, [question.id]: index }))
-                    }
-                  />
-                  {locale === "en" ? option.en : option.fil}
-                </label>
-              ))}
-            </div>
-          </fieldset>
-        );
-      })}
+      <TestQuestionFields questions={questions} locale={locale} answers={answers}
+        onAnswer={(id, option) => setAnswers(prev => ({...prev, [id]: option}))}
+        disabled={isPreview} namePrefix={`test-${phase}`} />
 
       {error ? (
         <p role="alert" className="text-sm text-danger">
