@@ -5,7 +5,6 @@ import type { CourseModuleFacilitatorNotes } from '@/lib/elearning/types';
 import {getLocale} from 'next-intl/server';
 import {notFound,redirect} from 'next/navigation';
 import {Breadcrumbs} from '@/components/breadcrumbs';
-import {CourseLayoutToggle} from '@/components/elearning/course-layout-toggle';
 import {LessonAssetFigure} from '@/components/elearning/lesson-asset-figure';
 import {ManualLesson} from '@/components/elearning/manual-lesson';
 import {ChapterTestInsights,LessonFacilitatorGuide,SubchapterFacilitatorGuide,type SubchapterGuideView} from '@/components/elearning/facilitator-guide';
@@ -19,7 +18,6 @@ import {loadChapterTestItems,loadLessonGuide,loadSubchapterGuide} from '@/lib/el
 import {getViewer} from '@/lib/auth/viewer';
 import {createClient} from '@/lib/supabase/server';
 import {getRequestFeatureFlags} from '@/lib/supabase/request';
-import {withCourseLayout} from '@/lib/elearning/course-layout';
 import type {CourseLesson,CourseLessonRevision,CourseLessonProgress,CourseLessonResume,CourseModule,TrainingProgramChapter} from '@/lib/elearning/types';
 import communication from '../../../../../content/training/day1-basic-competencies/modules/06-komunikasyon/module.json';
 import problems from '../../../../../content/training/day1-basic-competencies/modules/07-problema/module.json';
@@ -30,8 +28,8 @@ import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearnin
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
-export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string;mode?:string;layout?:string}>}) {
-  const [{programId,path=[]},{view,mode,layout}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined,mode:undefined,layout:undefined})]);
+export default async function TrainingPage({params,searchParams}:{params:Promise<{programId:string;path?:string[]}>;searchParams?:Promise<{view?:string;mode?:string}>}) {
+  const [{programId,path=[]},{view,mode}]=await Promise.all([params,searchParams??Promise.resolve({view:undefined,mode:undefined})]);
   if(path.length>3)notFound();
   const db=await createClient();
   // Independent reads run together; checks keep their original order.
@@ -41,8 +39,6 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
   if(!actor || actor.status!=='active')redirect('/login');
   const role=viewer.role;
   const readOnly=role!=='bhw';
-  const fullPage=!readOnly && layout==='full';
-  const inLayout=(href:string)=>withCourseLayout(href,fullPage);
   // Facilitator guide: private notes, competency and the area's BHWs. RLS
   // limits every guide read to these two roles; designers keep the preview.
   const facilitator=role==='assessor'||role==='admin';
@@ -65,10 +61,6 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
   if(chapterError)throw new Error('Unable to load training chapters');
   const manualTitle=program.content_key==='bhw-reference-manual'?'BHW Reference Manual':title(program);
   const base=`/training/${programId}`;
-  const currentSearch=new URLSearchParams();
-  if(view)currentSearch.set('view',view);
-  if(mode)currentSearch.set('mode',mode);
-  const currentHref=`${base}${path.length?`/${path.join('/')}`:''}${currentSearch.size?`?${currentSearch.toString()}`:''}`;
   const crumbs:Array<{label:string;href?:string}>=[{label:'Home',href:'/home'},{label:text('Mga Kurso','Courses'),href:'/courses'},
     {label:manualTitle,...(path.length?{href:base}:{})}];
   const chapter=path.length?chapters?.find(c=>c.chapter_key===path[0]):null;
@@ -82,10 +74,10 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
       {mine && mine.counts.total>0 && <ManualSummary progress={mine} title={manualTitle} locale={loc}/>}
       {/* List links skip prefetch: each one is a full server render with its own
           database reads, and a chapter view used to fire one per link at once. */}
-      <div className={`grid gap-4 ${fullPage?'lg:grid-cols-2':''}`}>{chapters?.map(c=>{
+      <div className="grid gap-4">{chapters?.map(c=>{
         const p=mine?.chapters.find(x=>x.id===c.id);
         return <div key={c.id}>
-          {c.availability==='available' && c.course_id ? <Link className={card} prefetch={false} href={inLayout(`${base}/${c.chapter_key}`)}>
+          {c.availability==='available' && c.course_id ? <Link className={card} prefetch={false} href={`${base}/${c.chapter_key}`}>
             <span className="text-sm text-ink/70">{text('Kabanata','Chapter')} {c.position+1}</span>
             <h2 className="mt-1 text-xl font-semibold">{title(c)}</h2>
             {p && <CardProgress state={p.state} counts={p.counts} locale={loc} segments={subchapterSegments(p,loc)}
@@ -145,10 +137,10 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           {mine.counts.total>0 && <ProgressBar counts={mine.counts} state={mine.state} label={chapterTitle} locale={loc} segments={subchapterSegments(mine,loc)}/>}
           <ChapterSteps steps={mine.steps} locale={loc}/>
         </section>}
-        <div className={`grid gap-3 ${fullPage?'lg:grid-cols-2':''}`}>{modules?.filter(m=>m.type!=='quiz').map((m,i)=>{
+        <div className="grid gap-3">{modules?.filter(m=>m.type!=='quiz').map((m,i)=>{
           const own=lessons?.filter(l=>l.module_id===m.id)??[];
           const sub=mine?.subchapters.find(x=>x.id===m.id);
-          return <Link key={m.id} className={card} prefetch={false} href={inLayout(`${chapterHref}/${m.id}`)}>
+          return <Link key={m.id} className={card} prefetch={false} href={`${chapterHref}/${m.id}`}>
             <h2 className="text-lg font-semibold">{chapter.position+1}.{i+1} {title(m)}</h2>
             {sub && own.length ? <CardProgress state={sub.state} counts={sub.counts} locale={loc} label={text(`Progreso sa ${sub.number}`,`${sub.number} progress`)}/>:
               <p className="mt-2 text-sm text-ink/70">{own.length ? `${own.length} ${text('maiikling aralin','short lessons')}`:text('Inihahanda ang maiikling aralin','Short lessons are being prepared')}</p>}
@@ -162,7 +154,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           <section className="rounded-xl border border-ink/15 p-5" aria-label={text('Pagtatasa at sertipiko','Assessment and certificate')}>
             <h2 className="font-semibold">{text('Pagtatasa at sertipiko ng kabanatang ito','This chapter’s assessment and certificate')}</h2>
             {certificate?<><p className="my-2">{text('Sertipikado ka na. Maaari mong balikan ang mga aralin nang hindi nawawala ang iyong sertipiko.','You are certified. You can review lessons without losing your certificate.')}</p><Link prefetch={false} className="underline" href={`/certificates/${certificate.verification_code}`}>{text('Tingnan ang sertipiko','View certificate')}</Link></>:
-              <Link prefetch={false} className="mt-3 inline-block underline" href={inLayout(assessmentHref)}>{text('Tingnan ang pagtatasa','View assessment')}</Link>}
+              <Link prefetch={false} className="mt-3 inline-block underline" href={assessmentHref}>{text('Tingnan ang pagtatasa','View assessment')}</Link>}
           </section>}
       </>;
     } else {
@@ -180,7 +172,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const guide=facilitator?await loadSubchapterGuide(db,{courseId:course.id,moduleId:subchapter.id,lessons:own,lang:loc,
           lessonHref:id=>`${moduleHref}/${id}`,includeRoster:guideView==='bhws'}):null;
         if(guide)intro=text('Pumili ng bahagi ng gabay o buksan ang BHW Slides.','Choose a guide section or open BHW Slides.');
-        const lessonCards=<ol className={`grid gap-3 ${fullPage?'lg:grid-cols-2':''}`}>{own.map((l,i)=><li key={l.id}><Link className={card} prefetch={false} href={inLayout(guide?`${moduleHref}/${l.id}?view=lesson&mode=slides`:`${moduleHref}/${l.id}`)}>
+        const lessonCards=<ol className="grid gap-3">{own.map((l,i)=><li key={l.id}><Link className={card} prefetch={false} href={guide?`${moduleHref}/${l.id}?view=lesson&mode=slides`:`${moduleHref}/${l.id}`}>
           <h2 className="font-semibold">{i+1}. {title(l)}</h2>
           <p className="mt-2 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-sm">
             <span className="text-ink/70">{text(`Aralin ${i+1} sa ${own.length}`,`Lesson ${i+1} of ${own.length}`)} · {text('Basahin / Slides','Read / Slides')}</span>
@@ -213,7 +205,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         if(activityNotes.error)throw new Error('Unable to load activities');
         if(pretestGate){
           if(bank.error||attempt.error)throw new Error('Unable to check assessment eligibility');
-          if(bank.data?.length && !attempt.data)redirect(inLayout(assessmentHref));
+          if(bank.data?.length && !attempt.data)redirect(assessmentHref);
         }
         crumbs.push({label:title(lesson)});
         heading=title(lesson); intro=readOnly&&!showGuide?text('Preview lamang — hindi sine-save ang progreso.','Preview only — progress is not saved.'):'';
@@ -221,10 +213,9 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
         const revision=revisionResult.data;
         const featured=revision.featured_asset_id?revision.assets.find(a=>a.id===revision.featured_asset_id):undefined;
         const lessonIndex=own.findIndex(l=>l.id===lesson.id);
-        const adjacentHref=(id:string)=>inLayout(`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`);
+        const adjacentHref=(id:string)=>`${moduleHref}/${id}${facilitator&&!showGuide?`?view=lesson${mode==='slides'?'&mode=slides':''}`:''}`;
         const tab=(active:boolean)=>`min-h-[44px] rounded-md px-4 py-2 font-medium ${active?'bg-primary text-on-primary':'border border-ink/20'}`;
-        content=<div className={fullPage?'grid gap-6 xl:grid-cols-[minmax(0,1fr)_18rem]':''}>
-          <div className="flex min-w-0 flex-col gap-4">
+        content=<>
           {facilitator && <nav className="flex flex-wrap gap-2" aria-label={text('Paraan ng pagtingin','View')}>
             <Link prefetch={false} className={tab(showGuide)} aria-current={showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}`}>{text('Gabay ng facilitator','Facilitator guide')}</Link>
             <Link prefetch={false} className={tab(!showGuide)} aria-current={!showGuide?'page':undefined} href={`${moduleHref}/${lesson.id}?view=lesson`}>{text('Nakikita ng BHW','As the BHW sees it')}</Link>
@@ -237,7 +228,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
             <LessonFacilitatorGuide lang={loc} activities={lessonActivities(activityNotes.data?.activities??[],lesson.lesson_key)} notesMarkdown={notes?(en?notes.notes_en:notes.notes_fil):null}
               indicators={notes?.observation_indicators??[]} objectives={(en?lesson.objectives_en:lesson.objectives_fil)??[]}/>
           </> : <ManualLesson data={{title_fil:program.title_fil,title_en:program.title_en,chapters:[],lessons:[{...lesson,revision}],completed:completed??[],resumes:resumeResult.data??[]}}
-          modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={inLayout(moduleHref)} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
+          modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={moduleHref} locale={en?'en':'fil'} readOnly={readOnly} lessonNumber={lessonIndex+1} lessonCount={own.length}
           returnHref={facilitator?`${moduleHref}?view=slides`:undefined}
           initialMode={facilitator && mode==='slides'?'slides':undefined}
           nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
@@ -245,27 +236,12 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
             {own[lessonIndex+1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}
-          </nav>
-          </div>
-          {fullPage && <aside className="hidden self-start rounded-xl border border-ink/15 p-4 xl:sticky xl:top-6 xl:block xl:max-h-[calc(100vh-3rem)] xl:overflow-y-auto" aria-label={text('Mga aralin sa subchapter','Lessons in this subchapter')}>
-            <h2 className="font-semibold">{text('Mga aralin','Lessons')}</h2>
-            <ol className="mt-3 flex flex-col gap-1">{own.map((item,index)=><li key={item.id}>
-              <Link prefetch={false} href={adjacentHref(item.id)} aria-current={item.id===lesson.id?'page':undefined}
-                className={`block rounded-md px-3 py-2 text-sm hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary ${item.id===lesson.id?'bg-primary/10 font-semibold':''}`}>
-                <span className="block">{index+1}. {title(item)}</span>
-                {done.has(item.id) && <span className="text-xs text-ink/70">{text('Natapos','Completed')}</span>}
-              </Link>
-            </li>)}</ol>
-          </aside>}
-        </div>;
+          </nav></>;
       }
     }
   }
-  return <div className={`mx-auto flex w-full flex-1 flex-col gap-6 px-4 py-10 sm:px-6 ${fullPage?'max-w-[1600px] lg:px-10':'max-w-5xl'}`}>
-    <Breadcrumbs items={crumbs.map(crumb=>crumb.href&&(crumb.href==='/courses'||crumb.href.startsWith('/training/'))?{...crumb,href:inLayout(crumb.href)}:crumb)}/>
-    <header className="flex flex-wrap items-start justify-between gap-4"><div><h1 className="text-2xl font-semibold sm:text-3xl">{heading}</h1>{intro&&<p className="mt-2 text-ink/70">{intro}</p>}</div>
-      {!readOnly && <CourseLayoutToggle href={currentHref} fullPage={fullPage} locale={locale}/>}
-    </header>
+  return <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+    <Breadcrumbs items={crumbs}/><header><h1 className="text-2xl font-semibold sm:text-3xl">{heading}</h1>{intro&&<p className="mt-2 text-ink/70">{intro}</p>}</header>
     {role==='assessor' && !viewer.isPreview && program.content_key==='bhw-reference-manual' && <aside className="rounded-xl border border-primary/30 p-4">
       <h2 className="font-semibold">{text('Pag-aaral para maging assessor','Study to become an assessor')}</h2>
       <p className="mt-1 text-sm">{text('Aralin ang buong kabanata at i-save ang sarili mong progreso. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Study the full chapter and save your own progress. No practical assessment by another assessor is required.')}</p>

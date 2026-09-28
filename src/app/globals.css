@@ -28,6 +28,33 @@ body {
   color: var(--color-ink);
 }
 
+/* Keep the chosen reader orientation usable where screen.orientation.lock is
+   unavailable, including iPhone browsers. Rotating the device then gives the
+   reader its natural viewport shape without this transform. */
+@media (orientation: portrait) {
+  .lesson-reader-surface[data-orientation="landscape"] {
+    position: absolute;
+    top: 0;
+    left: 100dvw;
+    width: 100dvh;
+    height: 100dvw;
+    transform-origin: top left;
+    transform: rotate(90deg);
+  }
+}
+
+@media (orientation: landscape) {
+  .lesson-reader-surface[data-orientation="portrait"] {
+    position: absolute;
+    top: 100dvh;
+    left: 0;
+    width: 100dvh;
+    height: 100dvw;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+  }
+}
+
 /* INC-28: an animated scene's data-scene-step elements (see LessonVisual in
    lesson-module.tsx). No [data-revealed] attribute at all — before the
    reveal effect has run, e.g. non-JS or pre-hydration — means fully shown,

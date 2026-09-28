@@ -1,9 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { CourseLayoutToggle } from "@/components/elearning/course-layout-toggle";
 import { CourseDetail } from "@/components/elearning/course-detail";
-import { withCourseLayout } from "@/lib/elearning/course-layout";
 import type { ReferenceData } from "@/components/elearning/reference-lessons";
 import type { CourseLesson, CourseLessonRevision, CourseLessonProgress, CourseLessonResume, TrainingProgramChapter } from "@/lib/elearning/types";
 import type {
@@ -25,11 +23,10 @@ export default async function CourseDetailPage({
   params, searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ assessment?: string; layout?: string }>;
+  searchParams: Promise<{ assessment?: string }>;
 }) {
   const { id } = await params;
-  const { assessment: assessmentParam, layout } = await searchParams;
-  const assessment = assessmentParam === "1";
+  const assessment = (await searchParams).assessment === "1";
   const supabase = await createClient();
   // Flags and the auth user are independent; fetch them together, then keep
   // the original redirect order (feature gate first, then sign-in).
@@ -47,7 +44,6 @@ export default async function CourseDetailPage({
   if (!appUser) {
     redirect("/login");
   }
-  const fullPage = appUser.role === "bhw" && layout === "full";
 
   // Everything below keys off the course id or the signed-in BHW only, so it
   // is fetched in a few parallel batches instead of ~20 sequential round
@@ -133,7 +129,7 @@ export default async function CourseDetailPage({
   ]);
 
   const manualHref=mapping&&program?`/training/${mapping.program_id}/${mapping.chapter_key}`:null;
-  if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(withCourseLayout(manualHref, fullPage));
+  if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(manualHref);
 
   if (!course) {
     notFound();
@@ -236,27 +232,26 @@ export default async function CourseDetailPage({
   ]);
 
   return (
-    <div className={`mx-auto flex w-full flex-1 flex-col gap-6 px-4 py-10 sm:px-6 ${fullPage ? "max-w-[1600px] lg:px-10" : "max-w-4xl"}`}>
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
       <Breadcrumbs
         items={[
           { label: tCrumbs("home"), href: "/home" },
-          { label: tCourses("heading"), href: withCourseLayout("/courses", fullPage) },
-          ...(manualHref ? [{label: locale === "en" ? "Chapter I" : "Kabanata I", href:withCourseLayout(manualHref, fullPage)},{label:locale === "en" ? "Assessment" : "Pagtatasa"}] : [{ label: locale === "en" ? course.title_en : course.title_fil }]),
+          { label: tCourses("heading"), href: "/courses" },
+          ...(manualHref ? [{label: locale === "en" ? "Chapter I" : "Kabanata I", href:manualHref},{label:locale === "en" ? "Assessment" : "Pagtatasa"}] : [{ label: locale === "en" ? course.title_en : course.title_fil }]),
         ]}
       />
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div><h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+      <div>
+        <h1 className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           {manualHref ? (locale==='en'?'Chapter I assessment':'Pagtatasa sa Kabanata I') : (locale === 'en' ? course.title_en : course.title_fil)}
         </h1>
         {!manualHref && (locale === "en" ? course.description_en : course.description_fil) ? (
           <p className="mt-1 text-ink/70">
             {locale === "en" ? course.description_en : course.description_fil}
           </p>
-        ) : null}</div>
-        {appUser.role === "bhw" && <CourseLayoutToggle href={`/courses/${course.id}${assessment ? "?assessment=1" : ""}`} fullPage={fullPage} locale={locale} />}
+        ) : null}
       </div>
 
-      <div className={fullPage ? "w-full max-w-5xl" : ""}><CourseDetail
+      <CourseDetail
         reference={reference}
         assessmentOnly={assessmentOnly}
         courseId={course.id}
@@ -273,7 +268,7 @@ export default async function CourseDetailPage({
         moduleProgress={moduleProgress ?? []}
         certificateCode={certificate?.verification_code ?? null}
         locale={locale}
-      /></div>
+      />
     </div>
   );
 }
