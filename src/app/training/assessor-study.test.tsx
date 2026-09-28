@@ -23,7 +23,8 @@ beforeEach(()=>{
     courses:[{id:'course',status:'published'}],course_modules:[{id:'m1',course_id:'course',position:0,title_en:'Roles',title_fil:'Tungkulin'}],
     course_lessons:[{id:'l1',module_id:'m1',lesson_key:'bhw-roles-hepo',position:0,published_revision_id:'r1',title_en:'HEPO',title_fil:'HEPO'},
       {id:'l2',module_id:'m1',lesson_key:'bhw-health-educator',position:1,published_revision_id:'r2',title_en:'Educator',title_fil:'Tagapagturo'}],
-    course_lesson_revisions:[{id:'r1',lesson_id:'l1'}],assessor_lesson_progress:[{assessor_user_id:'other',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'}],assessor_lesson_resume:[]};
+    course_lesson_revisions:[{id:'r1',lesson_id:'l1'}],assessor_lesson_progress:[{assessor_user_id:'other',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'}],assessor_lesson_resume:[],
+    assessor_exam_attempts:[{id:'a1',assessor_user_id:'self',chapter_id:'ch1',curriculum_version:'2026-09-28.1',phase:'pretest',status:'submitted',score_percent:0,passed:false}]};
 });
 afterEach(cleanup);
 const page=(path:string[]=[],chapterKey='chapter-1')=>StudyPage({params:Promise.resolve({programId:'manual',chapterKey,path})});
@@ -40,6 +41,19 @@ describe('assessor study route',()=>{
     render(await page(['m1','l1']));expect(screen.getByText('Study reader')).toHaveAttribute('data-chapter','ch1');expect(screen.getByText('Study reader')).toHaveAttribute('data-readonly','false');
     expect(screen.getByText('Study reader')).toHaveAttribute('data-next','/training/manual/assessor/chapter-1/m1/l2');
   });
+  it('requires the diagnostic pretest before opening lessons',async()=>{
+    state.rows.assessor_exam_attempts=[];
+    render(await page());
+    expect(screen.getByRole('link',{name:'Take the diagnostic pretest'})).toHaveAttribute('href','/training/manual/assessor/chapter-1/exam/pretest');
+    expect(screen.queryByRole('link',{name:'Continue studying'})).toBeNull();
+    await expect(page(['m1','l1'])).rejects.toThrow('REDIRECT /training/manual/assessor/chapter-1/exam/pretest');
+  });
+  it('shows personal exam history and does not enter the BHW test route',async()=>{
+    state.rows.assessor_exam_attempts.push({id:'a2',assessor_user_id:'self',chapter_id:'ch1',curriculum_version:'2026-09-28.1',phase:'posttest',status:'submitted',score_percent:79,passed:false});
+    render(await page());
+    expect(screen.getByText(/Post-test: 79%/)).toBeInTheDocument();
+    expect(state.calls).not.toContain('course_test_attempts');
+  });
   it.each(['admin','bhw','designer'])('denies %s before any study query',async role=>{
     state.role=role;state.actualRole=role;await expect(page()).rejects.toThrow('REDIRECT /home');expect(state.calls).toEqual([]);
   });
@@ -54,7 +68,7 @@ describe('assessor study route',()=>{
     state.rows.training_programs[0].content_key='other';await expect(page()).rejects.toThrow('NOT_FOUND');
   });
   it('reports a progress read failure instead of silently resetting progress',async()=>{
-    state.failing='assessor_lesson_progress';await expect(page()).rejects.toThrow('Unable to load your study progress');
+    state.failing='assessor_lesson_progress';await expect(page()).rejects.toThrow('Unable to load your candidate progress');
   });
   it('renders Filipino study guidance',async()=>{
     state.locale='fil';render(await page());expect(screen.getByText('Sariling pag-aaral ng assessor')).toBeInTheDocument();expect(screen.getByRole('link',{name:'Magpatuloy sa pag-aaral'})).toBeInTheDocument();
