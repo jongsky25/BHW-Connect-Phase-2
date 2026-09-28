@@ -9,6 +9,21 @@ if (existsSync(".env.local")) {
   process.loadEnvFile(".env.local");
 }
 
+// E2E gets its own Supabase project so its logins and throwaway users don't
+// spend the pilot's disk I/O budget. .env.local usually points the app at the
+// pilot, so E2E_SUPABASE_* override it for this process and the web server it
+// starts (Next never lets a .env file override an already-set variable).
+if (process.env.E2E_SUPABASE_URL) process.env.NEXT_PUBLIC_SUPABASE_URL = process.env.E2E_SUPABASE_URL;
+if (process.env.E2E_SUPABASE_ANON_KEY) process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = process.env.E2E_SUPABASE_ANON_KEY;
+
+const PILOT_PROJECT_REF = "ltzicxyefizxoqhfuuzc";
+if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes(PILOT_PROJECT_REF)) {
+  throw new Error(
+    "E2E is pointed at the pilot Supabase project. Set E2E_SUPABASE_URL and E2E_SUPABASE_ANON_KEY " +
+      "to the bhw-connect-e2e project (see docs/deploy-runbook.md).",
+  );
+}
+
 // Some sandboxes pre-install a Chromium build that predates this package's
 // expected revision and block re-downloading; use it directly when present,
 // otherwise fall back to Playwright's normal managed browser (e.g. in CI).
@@ -37,7 +52,7 @@ export default defineConfig({
   // budget for work those tests genuinely do — no assertion is relaxed.
   timeout: 60_000,
   // Purges the e2e-marked content and throwaway users specs leave on the
-  // shared pilot project -- see e2e/global-teardown.ts.
+  // shared E2E project -- see e2e/global-teardown.ts.
   globalTeardown: "./e2e/global-teardown.ts",
   reporter: "line",
   use: {

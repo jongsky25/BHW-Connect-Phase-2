@@ -2,9 +2,9 @@ import { request } from "@playwright/test";
 import { STABLE_ADMIN, getAccessToken } from "./fixtures/auth";
 
 // Specs publish real announcements, surveys, flip charts, forum threads and
-// courses on the shared pilot project and provision throwaway `e2e.%` users,
+// courses on the shared E2E project and provision throwaway `e2e.%` users,
 // and a failed or retried test skips its own cleanup — so all of it used to
-// stay visible to real users. After the whole suite:
+// pile up across runs. After the whole suite:
 //  1. rpc_e2e_purge_test_content deletes everything carrying an `e2e.`
 //     marker, courses included (it calls rpc_e2e_purge_test_courses, which
 //     never touches the BHW Reference Manual's courses), plus the
@@ -20,7 +20,7 @@ import { STABLE_ADMIN, getAccessToken } from "./fixtures/auth";
 //     It runs last so the courses and sessions they touched are gone first.
 //
 // p_min_age_hours => 0 is only safe because CI runs one E2E job at a time
-// against the pilot (ci.yml's e2e-wait), so this can't delete another run's
+// against the E2E project (ci.yml's e2e-wait), so this can't delete another run's
 // in-flight fixtures. A local run could, so it only purges when asked to
 // (E2E_PURGE=1). A failed purge never fails the suite; the next run retries.
 const PURGES = ["rpc_e2e_purge_test_content", "rpc_e2e_purge_test_kb", "rpc_e2e_purge_test_users"];

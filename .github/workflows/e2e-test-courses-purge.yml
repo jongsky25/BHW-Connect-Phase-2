@@ -41,13 +41,13 @@ jobs:
     steps:
       - name: Sign in as admin.stable and call rpc_e2e_purge_test_courses
         env:
-          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ secrets.E2E_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.E2E_SUPABASE_ANON_KEY }}
           ADMIN_PASSWORD: ${{ secrets.E2E_STABLE_ADMIN_PASSWORD }}
           DRY_RUN: ${{ inputs.dry_run || 'true' }}
         run: |
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_ANON_KEY" ] || [ -z "$ADMIN_PASSWORD" ]; then
-            echo "::error::NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY / E2E_STABLE_ADMIN_PASSWORD secrets are not set"
+            echo "::error::E2E_SUPABASE_URL / E2E_SUPABASE_ANON_KEY / E2E_STABLE_ADMIN_PASSWORD secrets are not set"
             exit 1
           fi
 

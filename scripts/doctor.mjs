@@ -115,6 +115,23 @@ const REGISTER = [
     blocks: "Nothing — defaults to gemini-3.6-flash.",
   },
   {
+    name: "E2E_SUPABASE_URL",
+    store: "githubSecrets",
+    secret: false,
+    alsoIn: ["localOnly"],
+    consumers: ["ci.yml", "e2e-test-users-purge.yml", "e2e-test-courses-purge.yml", "playwright.config.ts"],
+    blocks: "The E2E suite and its purge jobs. Must be the bhw-connect-e2e project, never the pilot.",
+  },
+  {
+    name: "E2E_SUPABASE_ANON_KEY",
+    store: "githubSecrets",
+    secret: false,
+    alsoIn: ["localOnly"],
+    consumers: ["ci.yml", "e2e-test-users-purge.yml", "e2e-test-courses-purge.yml", "playwright.config.ts"],
+    blocks: "The E2E suite and its purge jobs.",
+    note: "Public by design (an anon key), but for the bhw-connect-e2e project, not the pilot.",
+  },
+  {
     name: "E2E_STABLE_BHW_PASSWORD",
     store: "githubSecrets",
     secret: true,

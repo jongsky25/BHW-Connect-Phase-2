@@ -66,10 +66,9 @@ async function gapDraftCallCount(
   return rows[0]?.gap_draft_calls ?? 0;
 }
 
-// This spec runs against the pilot project, the one database for this phase
-// (docs/deploy-runbook.md, "One database"), whose KB carries real published
-// content. The entry it publishes is AI-written and unreviewed, so it must not
-// stay visible to BHWs: afterEach sets it back to draft via the same kill
+// This spec runs against the shared E2E project (docs/deploy-runbook.md,
+// "Two databases"). The entry it publishes is AI-written and unreviewed, so it
+// must not stay visible to later runs: afterEach sets it back to draft via the same kill
 // switch `npm run kb:unpublish` uses. afterEach gets a fresh request context,
 // so this still runs when the test itself times out.
 let publishedEntryId: string | undefined;

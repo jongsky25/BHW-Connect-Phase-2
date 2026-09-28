@@ -18,9 +18,9 @@ function anonKey(): string {
   return process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 }
 
-// The first test below publishes a real KB entry on the shared live pilot
-// project (docs/deploy-runbook.md, "One database"), so it must not stay
-// visible to BHWs after the test — afterEach sets it back to draft. A hook
+// The first test below publishes a real KB entry on the shared E2E
+// project (docs/deploy-runbook.md, "Two databases"), so it must not stay
+// visible to later runs after the test — afterEach sets it back to draft. A hook
 // rather than inline try/finally: Playwright tears down a timed-out test
 // before a finally block would run, but the hook still fires.
 let publishedEntryId: string | undefined;

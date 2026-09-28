@@ -2,9 +2,9 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 import { STABLE_ADMIN, STABLE_BHW, getAccessToken, restGet, unpublishKbEntry } from "./fixtures/auth";
 
-// This spec publishes a real KB entry on the shared live pilot project
-// (docs/deploy-runbook.md, "One database"), so it must not stay visible to
-// BHWs after the test — afterEach sets it back to draft. A hook rather than
+// This spec publishes a real KB entry on the shared E2E project
+// (docs/deploy-runbook.md, "Two databases"), so it must not stay visible to
+// later runs after the test — afterEach sets it back to draft. A hook rather than
 // inline try/finally: Playwright tears down a timed-out test before a
 // finally block would run, but the hook still fires.
 let publishedEntryId: string | undefined;

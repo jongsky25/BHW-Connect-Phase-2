@@ -1,9 +1,9 @@
 import type { APIRequestContext, Page } from "@playwright/test";
 import { expect } from "@playwright/test";
 
-// Fixture accounts on the pilot project's org chain (Department of Health
-// -> Region IV-A -> Laguna -> Los Baños -> barangay) — the one database for
-// this phase; see docs/deploy-runbook.md's "One database" section.
+// Fixture accounts on the E2E project's org chain (Department of Health
+// -> Region IV-A -> Laguna -> Los Baños -> barangay), the same fixed units as
+// the pilot's; see docs/deploy-runbook.md's "Two databases" section.
 // bhw.stable / admin.stable are fully onboarded and never mutated by tests,
 // so they're safe to reuse across runs. Tests that need a fresh account
 // (forced password change, lockout) provision a throwaway user per run via
@@ -43,7 +43,7 @@ export const OTHER_BARANGAY_BHW = {
 };
 // City-level (Los Baños) admin, parent of both pilot barangays — seeded by
 // the INC-6 migration (unlike the other fixtures above, which were
-// provisioned by hand on the pilot project) so the dashboard's org-unit
+// provisioned by hand on each project) so the dashboard's org-unit
 // roll-up scoping is testable in CI.
 export const STABLE_CITY_ADMIN = {
   username: "admin.city.stable",
