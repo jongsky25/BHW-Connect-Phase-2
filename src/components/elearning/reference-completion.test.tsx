@@ -2,7 +2,7 @@ import {cleanup,fireEvent,render,screen,waitFor} from '@testing-library/react';
 import {afterEach,describe,expect,it,vi} from 'vitest';
 import {ReferenceLessons,type ReferenceData} from './reference-lessons';
 vi.mock('next/navigation',()=>({useRouter:()=>({push:vi.fn()})}));
-afterEach(cleanup);
+afterEach(()=>{cleanup();document.documentElement.removeAttribute('data-motion');});
 const check={prompt_en:'What would you do?',prompt_fil:'Ano ang gagawin mo?',options:[{en:'Ask',fil:'Magtanong'},{en:'Guess',fil:'Hulaan'}],correct_option_index:0,feedback_en:'Ask the team.',feedback_fil:'Magtanong sa team.'};
 const part=(id:string,hasCheck=false)=>({id,concept_ids:[id],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Teaching text',body_fil:'Aralin',takeaway_en:'Takeaway '+id,takeaway_fil:'Buod '+id,check:hasCheck?check:null});
 function data():ReferenceData{return {title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Aralin',title_en:'Lesson',objectives_fil:[],objectives_en:[],revision:{id:'revision',read_sections:[part('first',true),part('last',true)],slides:[{...part('slide-first'),display_en:'First teaching slide',display_fil:'Una',layout:'scene'},{...part('slide-check',true),display_en:'Revealing slide summary',display_fil:'Buod sa slide',layout:'takeaway'}],assets:[],sources:[]}}]} as unknown as ReferenceData;}
@@ -17,9 +17,10 @@ describe('formative lesson completion',()=>{
     fireEvent.click(screen.getByRole('button',{name:'Previous'}));fireEvent.click(screen.getByRole('button',{name:'Guess'}));
     expect(screen.getByText('Takeaway first')).toBeInTheDocument();expect(button()).toBeDisabled();
     fireEvent.click(screen.getByRole('button',{name:'Next'}));expect(screen.getByRole('button',{name:'Ask'})).toHaveAttribute('aria-pressed','true');
-    expect(button()).toBeEnabled();expect(screen.queryByRole('link',{name:/Continue to the next/})).not.toBeInTheDocument();
+    expect(button()).toBeEnabled();expect(screen.queryByRole('link',{name:/Next lesson/})).not.toBeInTheDocument();
     fireEvent.click(button());await screen.findByRole('button',{name:'Completed'});
-    expect(complete).toHaveBeenCalledTimes(1);expect(screen.getByRole('link',{name:/Continue to the next/})).toHaveAttribute('href','/lessons/next');
+    expect(complete).toHaveBeenCalledTimes(1);expect(screen.getByRole('link',{name:/Next lesson/})).toHaveAttribute('href','/lessons/next');
+    expect(screen.getByText('Well done! Lesson complete. Your progress is saved.').closest('.lesson-completion')).toHaveAttribute('data-celebrating','true');
   });
   it('uses Slides independently and hides its summary until an answer',()=>{
     view();fireEvent.click(screen.getByRole('button',{name:'Slides'}));expect(button()).toBeDisabled();
@@ -44,12 +45,20 @@ describe('formative lesson completion',()=>{
     const d=data();d.completed=[{lesson_id:'lesson',revision_id:'old',course_progress_id:'p',completed_at:'2026-09-24',completion_basis:'legacy_equivalence',legacy_module_id:'module',migration_batch:'batch'}];
     view(d,vi.fn(),{nextLessonHref:undefined});expect(screen.getByRole('button',{name:'Completed'})).toBeDisabled();
     expect(screen.getByRole('link',{name:/Return to the lesson list/})).toHaveAttribute('href','/lessons');
+    expect(screen.getByText('Well done! Lesson complete. Your progress is saved.').closest('.lesson-completion')).not.toHaveAttribute('data-celebrating');
   });
   it('reports failed completion and allows retry without losing attempts',async()=>{
     const complete=vi.fn().mockRejectedValueOnce(Error('offline')).mockResolvedValue(undefined);view(data(),complete);
     fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
-    await screen.findByRole('alert');expect(screen.queryByRole('link',{name:/Continue to the next/})).not.toBeInTheDocument();expect(button()).toBeEnabled();
+    await screen.findByRole('alert');expect(screen.queryByRole('link',{name:/Next lesson/})).not.toBeInTheDocument();expect(button()).toBeEnabled();
+    expect(screen.queryByText('Well done! Lesson complete. Your progress is saved.')).not.toBeInTheDocument();
     fireEvent.click(button());await waitFor(()=>expect(screen.getByRole('button',{name:'Completed'})).toBeDisabled());expect(complete).toHaveBeenCalledTimes(2);
+  });
+  it('uses a static saved state when the learner requests reduced motion',async()=>{
+    document.documentElement.setAttribute('data-motion','reduce');
+    view();fireEvent.click(screen.getByRole('button',{name:'Slides'}));fireEvent.click(screen.getByRole('button',{name:'Next'}));fireEvent.click(screen.getByRole('button',{name:'Ask'}));fireEvent.click(button());
+    await screen.findByRole('button',{name:'Completed'});
+    expect(screen.getByText('Well done! Lesson complete. Your progress is saved.').closest('.lesson-completion')).not.toHaveAttribute('data-celebrating');
   });
   it('keeps preview read-only and localizes the completion guidance',()=>{
     view(data(),vi.fn(),{readOnly:true,locale:'fil'});expect(screen.queryByRole('button',{name:'Markahang tapos ang aralin'})).not.toBeInTheDocument();cleanup();

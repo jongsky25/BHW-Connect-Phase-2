@@ -74,6 +74,28 @@ body {
   }
 }
 
+/* A saved lesson gets one small check animation. The completion message and
+   next action are visible immediately, including with motion reduced. */
+.lesson-completion[data-celebrating="true"] .lesson-completion-check {
+  animation: lesson-completion-pop 480ms ease-out both;
+}
+
+@keyframes lesson-completion-pop {
+  0% { opacity: 0.7; transform: scale(0.75); }
+  65% { opacity: 1; transform: scale(1.12); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+:root[data-motion="reduce"] .lesson-completion-check {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lesson-completion-check {
+    animation: none;
+  }
+}
+
 /* Header increment 1.4: the mobile drawer (<dialog class="mobile-drawer">)
    slides in from the left when opened with showModal(). */
 .mobile-drawer[open] {
