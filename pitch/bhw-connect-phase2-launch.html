@@ -367,6 +367,31 @@
   .rollup-kpis .kpi .l{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--ink-soft)}
   .rollup-kpis .kpi .v{font-size:23px;font-weight:700;letter-spacing:-.3px;font-variant-numeric:tabular-nums;color:var(--ink)}
 
+  /* neutral (non-progress) list-row icon, for KB categories / forum threads /
+     survey list — the same .mod row the course-module list uses, reused
+     rather than building three near-identical list components */
+  .app-scope .mod .k.plain{background:var(--a-secondary);color:#fff}
+
+  /* small tag/category chip — forum thread tags */
+  .app-scope .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;
+    padding:3px 9px;border-radius:999px;background:var(--a-sec-10);color:var(--a-secondary);white-space:nowrap}
+
+  /* chat log — Chat Guide mockup */
+  .app-scope .log{display:flex;flex-direction:column;gap:13px}
+  .app-scope .bub{max-width:88%;padding:11px 14px;border-radius:16px;font-size:14px;line-height:1.5}
+  .app-scope .bub.u{margin-left:auto;background:var(--a-primary);color:#fff;border-bottom-right-radius:5px}
+  .app-scope .bub.b{background:var(--a-canvas);border:1px solid var(--a-ink-10);border-bottom-left-radius:5px}
+  .app-scope .dym{border:1px solid var(--a-ink-15);border-radius:12px;padding:10px 13px;font-size:13px;color:var(--a-ink-70);display:flex;flex-direction:column;gap:4px}
+  .app-scope .dym b{font-weight:600;color:var(--a-ink)}
+  .app-scope .dym span{color:var(--a-secondary);font-weight:600}
+
+  /* announcement feed card */
+  .app-scope .accard{border:1px solid var(--a-ink-10);border-radius:13px;padding:14px 16px;margin-bottom:11px}
+  .app-scope .accard .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:5px}
+  .app-scope .accard b{font-size:15px;font-weight:650;line-height:1.3}
+  .app-scope .accard .meta{font-size:12px;color:var(--a-ink-70);white-space:nowrap;flex:0 0 auto}
+  .app-scope .accard p{font-size:13px;color:var(--a-ink-70);line-height:1.42;margin:0}
+
   /* ================================================================
      STEP BUILDS
      ================================================================ */
@@ -742,7 +767,190 @@
     </aside>
   </section>
 
-  <!-- 09 · REIMAGINING -->
+  <!-- 09 · FEATURE 4 — CHAT GUIDE -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 4 &middot; Chat Guide</div>
+          <h2>A question, answered in her own words.</h2>
+          <p class="sub">The same matching engine behind the Courses quizzes resolves what she actually meant &mdash; typos, Taglish, all of it &mdash; against admin-authored content.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span><b>Rule-based matching</b>, scored against authored content &mdash; no paid AI API in the answer path.</span></li>
+            <li data-step="2"><i>2</i><span><b>Red-flag rules</b> intercept an urgent symptom before scoring even finishes, and route it for follow-up.</span></li>
+            <li data-step="3"><i>3</i><span>A question nobody could answer <b>becomes the next Knowledge Base entry</b> &mdash; not a dead end.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; the conversation shown is illustrative and requires DOH clinical validation before any BHW-facing use.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Chat Guide</span></div>
+            <div class="body">
+              <div class="log">
+                <div class="bub u">pano po malaman kung late na po yung bakuna ng bata</div>
+                <div class="dym"><b>Did you mean:</b> <span>Paano malaman kung late na ang bakuna ng bata?</span></div>
+                <div class="bub b">Hindi na po kailangang ulitin mula umpisa &mdash; ipagpatuloy lang sa susunod na iskedyul. Gusto niyo po bang makita ang buong catch-up schedule?</div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>Point at the "did you mean" box &mdash; that's the rule-based match, not a model guessing.</p>
+    </aside>
+  </section>
+
+  <!-- 10 · FEATURE 5 — KNOWLEDGE BASE -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 5 &middot; Knowledge Base</div>
+          <h2>The same answers, browsable on her own.</h2>
+          <p class="sub">Admin-authored, organized by category &mdash; the content the Chat Guide draws its answers from, open to read anytime, not just when she asks.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>Organized by category, not a folder of PDFs &mdash; <b>the same entries the Chat Guide matches against</b>.</span></li>
+            <li data-step="2"><i>2</i><span>Every entry carries an <b>owner and a review-due date</b> &mdash; nothing goes stale silently.</span></li>
+            <li data-step="3"><i>3</i><span>A weekly ritual reviews the gap queue and what's due &mdash; <b>content upkeep is a schedule, not a memory</b>.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; category names and entry counts shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Knowledge Base</span></div>
+            <div class="body">
+              <div class="mods" style="margin-top:0">
+                <div class="mod"><div class="k plain">M</div><div class="t"><b>Maternal &amp; Child Health</b><span>12 entries</span></div><div class="fmt">&rsaquo;</div></div>
+                <div class="mod"><div class="k plain">I</div><div class="t"><b>Immunization</b><span>9 entries</span></div><div class="fmt">&rsaquo;</div></div>
+                <div class="mod"><div class="k plain">N</div><div class="t"><b>Nutrition</b><span>7 entries</span></div><div class="fmt">&rsaquo;</div></div>
+                <div class="mod"><div class="k plain">F</div><div class="t"><b>First Aid &amp; Referral</b><span>6 entries</span></div><div class="fmt">&rsaquo;</div></div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>This is /kb in the real app &mdash; a BHW-facing browse screen, not just an admin authoring tool.</p>
+    </aside>
+  </section>
+
+  <!-- 11 · FEATURE 6 — FORUM -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 6 &middot; Forum</div>
+          <h2>One place for what used to live in a group chat.</h2>
+          <p class="sub">Any BHW, admin or assessor can start a thread &mdash; visible app-wide, not boxed into her own barangay or region.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span><b>App-wide visibility</b> &mdash; a question from Marinduque is visible in Palawan, not walled off by hierarchy.</span></li>
+            <li data-step="2"><i>2</i><span><b>Post first, moderate after</b> &mdash; a thread is hidden if it needs to be, never silently deleted.</span></li>
+            <li data-step="3"><i>3</i><span>Tagged and categorized, so a thread from six months ago is <b>still findable</b>.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; thread titles and reply counts shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Forum</span></div>
+            <div class="body">
+              <div class="mods" style="margin-top:0">
+                <div class="mod"><div class="k plain">&#128172;</div><div class="t"><b>Paano mag-refer ng may sugat na may amoy?</b><span><span class="tag">First Aid</span></span></div><div class="fmt">14 replies</div></div>
+                <div class="mod"><div class="k plain">&#128172;</div><div class="t"><b>Schedule ng bakuna kapag late</b><span><span class="tag">Immunization</span></span></div><div class="fmt">6 replies</div></div>
+                <div class="mod"><div class="k plain">&#128172;</div><div class="t"><b>Tamang paraan ng pag-CBG</b><span><span class="tag">NCD</span></span></div><div class="fmt">22 replies</div></div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>The tag is the category; the reply count is the thing that makes this feel alive rather than empty.</p>
+    </aside>
+  </section>
+
+  <!-- 12 · FEATURE 7 — SURVEYS -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 7 &middot; Surveys</div>
+          <h2>Feedback that reaches exactly who it's for.</h2>
+          <p class="sub">Admin-authored and deployed to the hierarchy tier it's meant for &mdash; a needs assessment for Palawan doesn't have to go to Marinduque.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>Multi-format questions &mdash; not just a five-point scale.</span></li>
+            <li data-step="2"><i>2</i><span><b>Anonymity is a per-survey setting</b>, chosen when it's authored, not assumed.</span></li>
+            <li data-step="3"><i>3</i><span>Responses <b>roll up into tallied results</b> &mdash; and are deliberately kept out of the audit trail.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; survey titles and the question shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Surveys</span></div>
+            <div class="body">
+              <div class="mods" style="margin-top:0">
+                <div class="mod"><div class="k plain">&#128203;</div><div class="t"><b>BHW Kit Needs Assessment</b><span>2026 Q3 &middot; Palawan</span></div><div class="fmt">Open</div></div>
+                <div class="mod"><div class="k plain">&#128203;</div><div class="t"><b>Post-Training Feedback</b><span>Refresher, July 2026</span></div><div class="fmt">Open</div></div>
+              </div>
+              <div class="quiz" style="margin-top:14px">
+                <div class="q">Ilang beses po kayo na-training sa nakaraang taon?</div>
+                <div class="opt"><span class="k"></span><span>Wala</span></div>
+                <div class="opt"><span class="k"></span><span>Isa</span></div>
+                <div class="opt"><span class="k"></span><span>Dalawa o higit pa</span></div>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>No option is marked correct here on purpose &mdash; this is a survey, not a quiz.</p>
+    </aside>
+  </section>
+
+  <!-- 13 · FEATURE 8 — ANNOUNCEMENTS -->
+  <section class="slide light full" data-act="The Platform">
+    <div class="slide__inner">
+      <div class="demo2">
+        <div class="col-l">
+          <div class="eyebrow"><span class="num"></span> Feature 8 &middot; Announcements</div>
+          <h2>One push, not a phone tree.</h2>
+          <p class="sub">A message from her DSO or region reaches every BHW it's meant for &mdash; scoped to the hierarchy tier that should see it, and timestamped.</p>
+          <ul class="callouts">
+            <li data-step="1"><i>1</i><span>One message, scoped to exactly the hierarchy tier it's meant for &mdash; barangay, municipality, region, or everyone.</span></li>
+            <li data-step="2"><i>2</i><span>A feed she can scroll back through &mdash; <b>not a group chat</b> that buries yesterday's notice under today's.</span></li>
+            <li data-step="3"><i>3</i><span>Same account, same login &mdash; <b>no separate broadcast app or SMS blast</b> to maintain.</span></li>
+          </ul>
+          <p class="demo-note">Mockup screen &mdash; the announcements shown are illustrative.</p>
+        </div>
+        <div class="col-r">
+          <div class="dev-phone"><div class="notch"></div><div class="glass"><div class="app-scope">
+            <div class="hdr"><span class="wordmark">BHW Connect</span><span class="mini">Announcements</span></div>
+            <div class="body">
+              <div class="accard">
+                <div class="top"><b>Advisory: dengue clustering reported</b><span class="meta">Region &middot; 2d</span></div>
+                <p>Increased vigilance for clustered fever cases advised this month.</p>
+              </div>
+              <div class="accard">
+                <div class="top"><b>Bagong schedule ng supply pickup</b><span class="meta">Municipality &middot; 5d</span></div>
+                <p>Pickup ng BHW kit supplies, tuwing Miyerkules na lang simula sa susunod na linggo.</p>
+              </div>
+              <div class="accard">
+                <div class="top"><b>Refresher training reminder</b><span class="meta">Barangay &middot; 1w</span></div>
+                <p>Paalala: refresher session sa darating na Sabado, 8 AM sa BHS.</p>
+              </div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>The scope tag (Region / Municipality / Barangay) is the point &mdash; it's who this actually reached, not a guess.</p>
+    </aside>
+  </section>
+
+  <!-- 14 · REIMAGINING -->
   <section class="slide solution centered" data-act="The Ask">
     <div class="slide__inner">
       <q class="bigquote" data-step="1">Not a replacement for training. <em>A system that keeps training.</em></q>
@@ -753,7 +961,7 @@
     </aside>
   </section>
 
-  <!-- 10 · CLOSE / THE ASK -->
+  <!-- 15 · CLOSE / THE ASK -->
   <section class="slide darker centered" data-act="The Ask">
     <div class="slide__inner">
       <q class="close-q">
