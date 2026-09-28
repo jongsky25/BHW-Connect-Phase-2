@@ -94,6 +94,14 @@ jobs:
       - name: Start local Supabase (migrations + seed)
         run: supabase start -x realtime,imgproxy,mailpit,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
 
+      # The HHP-NCD corpus the Chat Guide specs answer from, loaded and
+      # published through the admin RPCs exactly as it was on the pilot.
+      - name: Load KB content into local Supabase
+        run: npm run kb:load -- --project local --apply --publish --owner admin.stable
+        env:
+          KB_LOADER_USERNAME: admin.stable
+          KB_LOADER_PASSWORD: local-e2e-password
+
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 

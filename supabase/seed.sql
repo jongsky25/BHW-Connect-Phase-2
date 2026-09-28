@@ -7,7 +7,11 @@
 -- pilot (see docs/deploy-runbook.md's "E2E database" section):
 --   * the four stable fixture accounts, fully onboarded, on the same org
 --     chain and with the same profile fields as on the pilot;
---   * the pilot's resting feature-flag values (captured 28 Sep 2026).
+--   * the pilot's resting feature-flag values (captured 28 Sep 2026);
+--   * the Phase 1 `mch` KB category with one published entry. On the pilot
+--     it was authored by hand and isn't in content/; onboarding.spec.ts
+--     visits /kb/mch. The HHP-NCD corpus the Chat Guide specs rely on is
+--     loaded separately, by `npm run kb:load -- --project local` (ci.yml).
 --
 -- admin.city.stable is already created by the INC-6 migration with a random
 -- password; only its password is reset here.
@@ -83,3 +87,23 @@ update public.feature_flags f
     ('surveys', true)
   ) as v(key, enabled)
  where f.key = v.key;
+
+insert into public.kb_categories (name_fil, name_en, slug, sort_order)
+values ('Kalusugan ng Ina at Bata', 'Maternal & Child Health', 'mch', 1)
+on conflict do nothing;
+
+insert into public.kb_entries (
+  category_id, question_fil, question_en, answer_fil, answer_en, keywords,
+  status, owner_user_id, review_due_on
+)
+select c.id,
+       'Puwede bang magpasuso ang inang may banayad na sipon o lagnat?',
+       'Can a mother with a mild cold or fever continue breastfeeding?',
+       'Oo. Ituloy ang pagpapasuso; maghugas ng kamay at magsuot ng mask kung may ubo o sipon.',
+       'Yes. Keep breastfeeding; wash hands and wear a mask if coughing or sneezing.',
+       array['pagpapasuso', 'breastfeeding', 'lagnat', 'sipon'],
+       'published', u.id, current_date + 365
+  from public.kb_categories c, public.users u
+ where c.slug = 'mch'
+   and u.username = 'admin.stable'
+   and not exists (select 1 from public.kb_entries e where e.category_id = c.id);
