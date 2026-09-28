@@ -106,6 +106,7 @@ describe("MyTrainingCard", () => {
       "/training/p1/chapter-1/m1/l2",
     );
     expect(screen.getByText("Up next: Chapter 1 · 1.1")).toBeInTheDocument();
+    expect(screen.getByText("1 lesson to finish subchapter 1.1")).toBeInTheDocument();
     expect(screen.getAllByRole("link", { name: /Continue where you left off/ })).toHaveLength(1);
   });
 
@@ -114,6 +115,40 @@ describe("MyTrainingCard", () => {
     expect(screen.getByRole("heading", { name: "Ang aking pagsasanay" })).toBeInTheDocument();
     expect(screen.getByText("1 sa 3 na aralin ang tapos")).toBeInTheDocument();
     expect(screen.getByText("Susunod: Kabanata 1 · 1.1")).toBeInTheDocument();
+    expect(screen.getByText("1 aralin na lang para matapos ang subchapter 1.1")).toBeInTheDocument();
+  });
+
+  it("uses the plural milestone when more than one required lesson remains", () => {
+    const twoRemaining = {
+      ...progress,
+      chapters: progress.chapters.map((chapter) => ({
+        ...chapter,
+        subchapters: chapter.subchapters.map((subchapter) =>
+          subchapter.number === "1.1"
+            ? { ...subchapter, counts: { done: 0, total: 2, percent: 0 } }
+            : subchapter,
+        ),
+      })),
+    };
+    render(<MyTrainingCard progress={twoRemaining} locale="en" />);
+    expect(screen.getByText("2 lessons to finish subchapter 1.1")).toBeInTheDocument();
+  });
+
+  it("hides the required-lesson milestone when a resumed optional lesson is in a finished subchapter", () => {
+    const finishedSubchapter = {
+      ...progress,
+      chapters: progress.chapters.map((chapter) => ({
+        ...chapter,
+        subchapters: chapter.subchapters.map((subchapter) =>
+          subchapter.number === "1.1"
+            ? { ...subchapter, counts: { done: 2, total: 2, percent: 100 } }
+            : subchapter,
+        ),
+      })),
+    };
+    render(<MyTrainingCard progress={finishedSubchapter} locale="en" />);
+    expect(screen.getByText("Up next: Chapter 1 · 1.1")).toBeInTheDocument();
+    expect(screen.queryByText(/lessons? to finish subchapter/)).not.toBeInTheDocument();
   });
 
   it("points to assessment when lessons are done and no lesson remains to resume", () => {
@@ -126,6 +161,7 @@ describe("MyTrainingCard", () => {
     };
     render(<MyTrainingCard progress={awaitingAssessment} locale="en" />);
     expect(screen.getByText("Up next: Chapter 1 assessment")).toBeInTheDocument();
+    expect(screen.queryByText(/lessons? to finish subchapter/)).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: "View your next step" })).toHaveAttribute("href", "/training/p1/chapter-1");
   });
 

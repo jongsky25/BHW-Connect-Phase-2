@@ -34,6 +34,12 @@ export function MyTrainingCard({ progress, locale }: { progress: ManualProgress;
     : progress.chapters.find((chapter) =>
         chapter.state === "ready_for_assessment" || chapter.state === "retake_assessment",
       );
+  const currentSubchapter = next
+    ? currentChapter?.subchapters.find((subchapter) => subchapter.number === next.subchapterNumber)
+    : null;
+  const lessonsToMilestone = currentSubchapter
+    ? currentSubchapter.counts.total - currentSubchapter.counts.done
+    : 0;
   const nextStep = currentChapter
     ? next
       ? text(
@@ -79,7 +85,25 @@ export function MyTrainingCard({ progress, locale }: { progress: ManualProgress;
           </div>
         </div>
         <div className="flex flex-col gap-3 rounded-xl border border-ink/10 bg-canvas p-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm font-medium text-ink">{nextStep}</p>
+          <div className="flex min-w-0 flex-col items-start gap-2">
+            <p className="text-sm font-medium text-ink">{nextStep}</p>
+            {currentSubchapter && lessonsToMilestone > 0 ? (
+              <p className="inline-flex items-start gap-2 rounded-full border border-celebration/60 bg-celebration/20 px-3 py-1.5 text-sm font-medium text-ink">
+                <span aria-hidden="true" className="text-primary-text">✦</span>
+                <span>
+                  {lessonsToMilestone === 1
+                    ? text(
+                        `1 aralin na lang para matapos ang subchapter ${currentSubchapter.number}`,
+                        `1 lesson to finish subchapter ${currentSubchapter.number}`,
+                      )
+                    : text(
+                        `${lessonsToMilestone} aralin pa para matapos ang subchapter ${currentSubchapter.number}`,
+                        `${lessonsToMilestone} lessons to finish subchapter ${currentSubchapter.number}`,
+                      )}
+                </span>
+              </p>
+            ) : null}
+          </div>
           {next ? (
             <ContinueLink to={next} locale={locale} />
           ) : (
