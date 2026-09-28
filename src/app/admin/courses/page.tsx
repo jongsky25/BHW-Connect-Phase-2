@@ -30,7 +30,7 @@ export default async function AdminCoursesPage({
     redirect("/login");
   }
 
-  const [{ data: courses }, rootOrgUnit] = await Promise.all([
+  const [{ data: courses }, rootOrgUnit, { data: superAdminContext }] = await Promise.all([
     supabase
       .from("courses")
       .select(
@@ -39,9 +39,15 @@ export default async function AdminCoursesPage({
       .order("created_at", { ascending: false })
       .returns<Course[]>(),
     loadOrgUnit(supabase, appUser.org_unit_id),
+    // Tolerant of the RPC failing (e.g. before this migration is applied):
+    // the console just hides the super-admin-only scope action.
+    supabase.rpc("rpc_super_admin_context"),
   ]);
 
   if (!rootOrgUnit) redirect("/login");
+
+  const isSuperAdmin =
+    ((superAdminContext as { is_super_admin: boolean }[] | null) ?? [])[0]?.is_super_admin === true;
 
   const allRows = courses ?? [];
   const activeRows = allRows.filter((row) => !row.archived_at);
@@ -55,6 +61,7 @@ export default async function AdminCoursesPage({
       activeCount={activeRows.length}
       archivedCount={archivedRows.length}
       rootOrgUnit={rootOrgUnit}
+      isSuperAdmin={isSuperAdmin}
     />
   );
 }

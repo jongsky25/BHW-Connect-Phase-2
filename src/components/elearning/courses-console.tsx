@@ -9,6 +9,7 @@ import { EmptyState } from "@/components/empty-state";
 import { mapElearningRpcError } from "@/lib/elearning/error-messages";
 import type { Course, CourseStatus } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
+import { ChangeScopeAction } from "./change-scope-action";
 import { CourseForm } from "./course-form";
 import type { OrgUnitNode } from "@/lib/org-units";
 
@@ -18,9 +19,17 @@ type Props = {
   activeCount: number;
   archivedCount: number;
   rootOrgUnit: OrgUnitNode;
+  isSuperAdmin: boolean;
 };
 
-export function CoursesConsole({ courses, view, activeCount, archivedCount, rootOrgUnit }: Props) {
+export function CoursesConsole({
+  courses,
+  view,
+  activeCount,
+  archivedCount,
+  rootOrgUnit,
+  isSuperAdmin,
+}: Props) {
   const t = useTranslations("admin.courses");
   const router = useRouter();
   const [pendingId, setPendingId] = useState<string | null>(null);
@@ -146,6 +155,13 @@ export function CoursesConsole({ courses, view, activeCount, archivedCount, root
                         hidden_at={course.hidden_at}
                         archived_at={course.archived_at}
                       />
+                      {isSuperAdmin ? (
+                        <ChangeScopeAction
+                          courseId={course.id}
+                          orgUnitId={course.org_unit_id}
+                          orgUnitName={course.org_units?.name ?? ""}
+                        />
+                      ) : null}
                     </div>
                   </td>
                 </tr>
