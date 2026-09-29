@@ -11,7 +11,7 @@ On 2026-09-29 the official [YAKAP overview](https://www.philhealth.gov.ph/yakap/
 - App: Vercel production deployment of `main`. Pilot Supabase project: `ltzicxyefizxoqhfuuzc`.
 - Scope: national root `Department of Health`, so BHWs in descendant org units can see the course. A national admin must stage and publish it. The course has five lessons, ten quiz items, an unscored diagnostic, and the observed role-play gate.
 - Before any live write, confirm current `main`, a green CI run on the integrated PR, a healthy pilot database, the release manifest, and absence of an existing Gabay course/KB package. Record the prior production deployment ID and current `flipcharts` and `offline_pwa` flags.
-- Apply `20261010000000_gabay_observed_assessment.sql` **once**, using the Supabase migration tool at merge time. Confirm the new course and assessment columns, quiz views and Gabay RPCs, and compare security advisors before and after. No other migration belongs to this release.
+- Apply `20261010000100_gabay_observed_assessment.sql` **once**, using the Supabase migration tool at merge time. Confirm the new course and assessment columns, quiz views and Gabay RPCs, and compare security advisors before and after. No other migration belongs to this release.
 
 ## Publication sequence
 
