@@ -1,33 +1,40 @@
 #!/usr/bin/env node
-// P2 draft loader. --dry-run validates the reviewed P1 packet without a DB.
-// --apply is deliberately limited to the disposable local stack in this PR.
+// Draft loader. Pilot staging requires both --release-pilot and ALLOW_PILOT=1;
+// this script never publishes a course.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadGabayContent } from './lib/gabay-content.mjs';
 import { createClient, projectUrl, requireEnv, signIn } from './lib/supabase-rest.mjs';
+import { PILOT_PROJECT_REF } from './lib/pilot-guard.mjs';
+import { assertGabayReleaseApproved } from './lib/gabay-release-approval.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const lockFile = path.join(root, 'content/training/philhealth-gabay/locks/local.json');
 const args = process.argv.slice(2);
 const apply = args.includes('--apply');
 const value = (flag) => { const i = args.indexOf(flag); return i < 0 ? null : args[i + 1]; };
-const allowed = new Set(['--apply','--dry-run','--project','--org-unit','--owner']);
+const allowed = new Set(['--apply','--dry-run','--project','--org-unit','--owner','--release-pilot']);
 if (args.some((arg) => arg.startsWith('--') && !allowed.has(arg))) throw new Error('unknown argument');
 if (apply && args.includes('--dry-run')) throw new Error('choose --apply or --dry-run');
+const project = value('--project');
+const pilotRelease = project === PILOT_PROJECT_REF && args.includes('--release-pilot');
+if (args.includes('--release-pilot') && !pilotRelease) throw new Error('--release-pilot requires the exact pilot project');
+const lockFile = path.join(root, 'content/training/philhealth-gabay/locks', `${project ?? 'local'}.json`);
 const content = loadGabayContent();
 if (content.modules.some((m) => m.claim_ids.some((id) => id.startsWith('PH-') && (!content.sources[id]?.length || !content.sources[id].every((url) => url.startsWith('https://'))))))
   throw new Error('invalid source URL');
+if (apply && project !== 'local' && !pilotRelease) throw new Error('apply is limited to local or the explicitly reviewed pilot');
+if (pilotRelease) assertGabayReleaseApproved();
 console.log(JSON.stringify({ course: content.id, lessons: content.modules.length, quizQuestions: content.questions.length,
   diagnostic: content.opening_diagnostic.length, passingPercent: content.quiz_passing_percent,
-  maxAttempts: content.quiz_max_attempts, mode: apply ? 'local draft apply' : 'offline dry run' }, null, 2));
+  maxAttempts: content.quiz_max_attempts, mode: apply ? (pilotRelease ? 'pilot draft apply' : 'local draft apply') : 'offline dry run' }, null, 2));
 if (!apply) process.exit(0);
-if (value('--project') !== 'local') throw new Error('P2 apply is limited to --project local');
 const orgName = value('--org-unit');
 const owner = value('--owner');
-if (!orgName || !owner) throw new Error('--org-unit and --owner are required for local apply');
+if (!orgName || !owner) throw new Error('--org-unit and --owner are required for apply');
+if (pilotRelease && orgName !== 'Department of Health') throw new Error('pilot Gabay course must be nationally scoped');
 if (owner !== process.env.KB_LOADER_USERNAME) throw new Error('--owner must match the signed-in admin');
-const url = projectUrl('local');
+const url = projectUrl(project);
 const anonKey = process.env.KB_LOADER_ANON_KEY ?? requireEnv('NEXT_PUBLIC_SUPABASE_ANON_KEY');
 const token = await signIn(url, anonKey, requireEnv('KB_LOADER_USERNAME'), requireEnv('KB_LOADER_PASSWORD'));
 const client = createClient(url, anonKey, token);
@@ -85,4 +92,4 @@ for (const question of content.questions) {
     const [row] = await client.insert('course_quiz_questions', [payload]); lock.questions[question.id] = row.id; save();
   }
 }
-console.log(`Local draft ready: ${lock.course}. This loader never publishes.`);
+console.log(`${pilotRelease ? 'Pilot' : 'Local'} draft ready: ${lock.course}. This loader never publishes.`);

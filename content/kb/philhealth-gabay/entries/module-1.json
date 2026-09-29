@@ -28,10 +28,10 @@
     {
       "id": "ph-yakap-first-visit", "domain": "yakap", "tier": "cited", "claims": ["PH-03", "PH-06"],
       "question_en": "What happens at the first YAKAP clinic visit after selection?", "question_fil": "Ano ang mangyayari sa unang pagbisita sa YAKAP clinic matapos pumili?",
-      "answer_en": "Visit the selected clinic for the first patient encounter. A clinician assesses the person and advises on appropriate care and follow-up. Ask the clinic when to come and what to bring; the BHW should not promise a particular test or referral beforehand.",
-      "answer_fil": "Pumunta sa napiling clinic para sa first patient encounter. Susuriin ng clinician ang tao at magpapayo ng angkop na pangangalaga at follow-up. Itanong sa clinic kung kailan pupunta at ano ang dadalhin; hindi dapat mangako ang BHW ng tiyak na test o referral bago ang pagsusuri.",
+      "answer_en": "Visit the selected clinic for the First Patient Encounter (FPE), when basic health data is taken or updated to identify risks. The FPE is not yet a consultation. Ask the clinic when to come, what to bring, and how consultation and follow-up care will proceed. Do not promise a particular test or referral beforehand.",
+      "answer_fil": "Pumunta sa napiling clinic para sa First Patient Encounter (FPE), kung saan kinukuha o ina-update ang pangunahing health data upang matukoy ang panganib. Hindi pa konsultasyon ang FPE. Itanong sa clinic kung kailan pupunta, ano ang dadalhin, at paano susunod ang konsultasyon at pangangalaga. Huwag mangako ng tiyak na test o referral bago nito.",
       "keywords": ["first patient encounter", "fpe", "unang", "pagbisita", "first", "visit", "appointment", "consultation"],
-      "sources": ["PH-03", "PH-06"]
+      "sources": ["PH-03", "PH-06", "PH-CLIN"]
     },
     {
       "id": "ph-yakap-test", "domain": "scope", "tier": "cited", "claims": ["PH-06"],

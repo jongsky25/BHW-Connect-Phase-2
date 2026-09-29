@@ -16,6 +16,8 @@
     "kb:check-sources": "node scripts/kb-check-sources.mjs",
     "training:load": "node scripts/training-load.mjs",
     "gabay:load": "node scripts/gabay-course-load.mjs",
+    "gabay:publish": "node scripts/gabay-course-publish.mjs",
+    "gabay:release:check": "node scripts/gabay-release-check.mjs",
     "gabay:check": "node --test scripts/lib/gabay-content.check.mjs",
     "gabay:kb:check": "node scripts/gabay-kb-check.mjs",
     "training:review-setup": "node scripts/training-review-setup.mjs",

@@ -228,7 +228,7 @@ export function reviewDueOn(entry, today = new Date()) {
   // PhilHealth selection routes, provider listings and GAMOT rules change
   // faster than a training article. Recheck these 30 days after a load.
   if (entry.corpus === "philhealth-gabay" &&
-      entry.sources.some((id) => ["PH-03", "PH-04", "PH-05", "PH-07", "PH-07S", "PH-08", "PH-09"].includes(id))) {
+      entry.sources.some((id) => ["PH-03", "PH-CLIN", "PH-04", "PH-05", "PH-07", "PH-07S", "PH-08", "PH-09"].includes(id))) {
     due.setDate(due.getDate() + 30);
     return due.toISOString().slice(0, 10);
   }

@@ -1,6 +1,6 @@
 # Gabay sa PhilHealth — P1 lesson and claim draft
 
-**Status:** Content draft for admin review. Not loaded or published.
+**Status:** Admin approved for the pilot on 2026-09-29; P5 source recheck added Circular 2026-0007. Publication is recorded separately.
 **Course:** BHW Connect: Gabay sa PhilHealth — YAKAP, GAMOT, at Tamang Pagpaparehistro
 **Companion drafts:** [assessment](./p1-assessment.md) and [flipcharts/KB](./p1-flipcharts-and-kb.md). The [approved blueprint](https://github.com/jongsky25/BHW-Connect-Phase-2/pull/182) defines the scope.
 
@@ -12,7 +12,7 @@ Every draft statement below uses an ID. The same IDs should travel into the fina
 |---|---|---|---|
 | **PH-01** | YAKAP connects a member or dependent with an accredited primary care clinic for continuing care. | [PhilHealth YAKAP overview](https://www.philhealth.gov.ph/yakap/) | Medium |
 | **PH-02** | A person who lacks a PIN, or has an uncertain member record, needs to resolve that through an official PhilHealth channel; that is distinct from choosing a YAKAP clinic. | [YAKAP steps](https://www.philhealth.gov.ph/yakap/YakapSteps.pdf) | Medium |
-| **PH-03** | A person with a PIN can select a YAKAP clinic through the currently supported official channel, then attend the first patient encounter and follow the clinic's care plan. | [YAKAP patient guide](https://www.philhealth.gov.ph/yakap/MgaDapatMalamanSaPhilHealthYAKAP.pdf); [Circular 2025-0017](https://www.philhealth.gov.ph/circulars/2025/PC2025-0017.pdf) | High |
+| **PH-03** | A person with a PIN can select a YAKAP clinic through a current official channel, then attend the first patient encounter (FPE). The FPE collects or updates basic health data and is not yet a consultation; the clinic advises on subsequent care. | [YAKAP patient guide](https://www.philhealth.gov.ph/yakap/MgaDapatMalamanSaPhilHealthYAKAP.pdf); [Circular 2025-0017](https://www.philhealth.gov.ph/circulars/2025/PC2025-0017.pdf); [Circular 2026-0007](https://www.philhealth.gov.ph/circulars/2026/PC2026-0007.pdf) | High |
 | **PH-04** | The eGovPH app, PhilHealth Member Portal, and PhilHealth office are current clinic-selection routes. The old provider My PhilHealth Portal selection module was discontinued effective 1 March 2026. | [Advisory 2026-0019](https://www.philhealth.gov.ph/advisories/2026/PA2026-0019.pdf) | High |
 | **PH-05** | A member should verify the current accredited YAKAP clinic and GAMOT facility listings; availability can differ by location and date. | [Accredited health facilities](https://www.philhealth.gov.ph/partners/providers/facilities/accredited/) | High |
 | **PH-06** | After clinical assessment, a qualified clinician determines which consultations, tests, referrals, and medicines are appropriate. A BHW does not make that decision. | [YAKAP FAQ](https://www.philhealth.gov.ph/yakap/YAKAP_FAQs.pdf) | Medium |
@@ -46,9 +46,9 @@ Given a household question, the BHW listens, sorts the request into the right pa
 
 **Observable objectives:** The BHW (1) explains clinic selection and first encounter in sequence; (2) identifies who decides follow-up tests and referrals; and (3) helps locate a current accredited clinic without promising a specific service. **Claim IDs:** PH-01, PH-03, PH-04, PH-05, PH-06.
 
-**Filipino draft:** “May PIN na kayo. Ang susunod ay pumili ng accredited YAKAP clinic sa kasalukuyang PhilHealth channel. Pagkatapos, pumunta sa napiling clinic para sa unang konsultasyon at assessment. Doon pag-uusapan ng clinician kung anong follow-up, test, referral, o gamot ang kailangan.” Show where to check the current clinic listing. If the app or signal is unavailable, offer the PhilHealth office route. Ask Mang Nilo to repeat where he will go first.
+**Filipino draft:** “May PIN na kayo. Ang susunod ay pumili ng accredited YAKAP clinic sa kasalukuyang PhilHealth channel. Pagkatapos, pumunta sa napiling clinic para sa first patient encounter (FPE), kung saan kinukuha o ina-update ang pangunahing health data. Hindi pa konsultasyon ang FPE. Itanong sa clinic kung paano susunod ang konsultasyon at angkop na pangangalaga.” Show where to check the current clinic listing. If the app or signal is unavailable, offer the PhilHealth office route. Ask Mang Nilo to repeat where he will go first.
 
-**English draft:** “You already have a PIN. Next, choose an accredited YAKAP clinic through a current PhilHealth channel. Then visit the selected clinic for the first consultation and assessment. The clinician will discuss any needed follow-up, test, referral, or medicine.” Show where to verify the current clinic list. If the app or signal is unavailable, offer the PhilHealth office route. Ask Mang Nilo to repeat where he will go first.
+**English draft:** “You already have a PIN. Next, choose an accredited YAKAP clinic through a current PhilHealth channel. Then visit the selected clinic for the First Patient Encounter (FPE), where basic health data is taken or updated. The FPE is not yet a consultation. Ask the clinic how consultation and appropriate care follow.” Show where to verify the current clinic list. If the app or signal is unavailable, offer the PhilHealth office route. Ask Mang Nilo to repeat where he will go first.
 
 **Practice:** Put four cards in order: PIN or record check; clinic selection; first patient encounter; clinician-directed follow-up. **Misconception check:** “Does clinic selection by itself guarantee a laboratory test?” Expected answer: no; clinical assessment and the applicable benefit rules determine the next care step.
 

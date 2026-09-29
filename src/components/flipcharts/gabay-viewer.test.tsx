@@ -20,6 +20,6 @@ describe("Gabay flipchart reader", () => {
     fireEvent.click(screen.getByRole("button", { name: "Patient cards" }));
     expect(screen.getByText("Choose an accredited YAKAP clinic you can reach.")).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "Next" }));
-    expect(screen.getByText("Start with a consultation at your selected clinic.")).toBeInTheDocument();
+    expect(screen.getByText("Visit the clinic for the FPE; ask how consultation follows.")).toBeInTheDocument();
   });
 });
