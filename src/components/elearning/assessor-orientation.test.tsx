@@ -12,6 +12,13 @@ const state:OrientationState={ready:true,passed:false,title:local('Scoring orien
 const props={chapterId:'chapter-1-id',chapterHref:'/training/manual/assessor/chapter-1',locale:'en'};
 
 describe('assessor orientation',()=>{
+  it('shows Chapter II and requires every safety case',()=>{
+    render(<AssessorOrientation {...props} chapterLabel={{fil:'Kabanata II',en:'Chapter II'}} initial={{...state,passed:true,
+      cases:state.cases!.map((item,index)=>({...item,critical:index<2}))}}/>);
+    expect(screen.getByText('Chapter II · Assessor orientation')).toBeInTheDocument();
+    expect(screen.getByText(/correct ratings on all 2 safety cases/)).toBeInTheDocument();
+    expect(screen.getByText(/Your Chapter II pass is recorded/)).toBeInTheDocument();
+  });
   it('keeps the exercise closed before prerequisites are met',()=>{
     render(<AssessorOrientation {...props} initial={{ready:false,passed:false}}/>);
     expect(screen.getByText(/Complete the diagnostic pretest/)).toBeInTheDocument();

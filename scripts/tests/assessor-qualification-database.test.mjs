@@ -1,15 +1,18 @@
 // @vitest-environment node
 import {PGlite} from '@electric-sql/pglite';
 import {readFileSync} from 'node:fs';
-import {beforeAll,afterAll,beforeEach,afterEach,describe,it,expect} from 'vitest';
+import {beforeAll,afterAll,beforeEach,afterEach,describe,it,expect,vi} from 'vitest';
 import manifest from '../../content/assessor/bhw-reference-manual.v1.json';
 import orientation from '../../content/assessor/chapter-1-orientation.v1.json';
+import orientation2 from '../../content/assessor/chapter-2-orientation.v1.json';
 
 const root=new URL('../../',import.meta.url);
 const read=path=>readFileSync(new URL(path,root),'utf8');
 const uuid=n=>`00000000-0000-4000-8000-${String(n).padStart(12,'0')}`;
 const ids={self:uuid(1),other:uuid(2),bhw:uuid(3),inactive:uuid(4),admin:uuid(5),outsideAdmin:uuid(6),city:uuid(21),away:uuid(22),program:uuid(30),chapter:uuid(31),chapter2:uuid(33),course:uuid(32),course2:uuid(34)};
 const requirements=manifest.chapters[0].modules.flatMap((m,position)=>m.required_lesson_keys.map(key=>({position,key})));
+const requirements2=manifest.chapters[1].modules.flatMap((m,position)=>m.required_lesson_keys.map(key=>({position,key})));
+vi.setConfig({testTimeout:20000});
 let db;
 function migrationFunction(file,name){
   const sql=read(`supabase/migrations/${file}`),start=sql.indexOf(`create or replace function public.${name}(`);
@@ -50,6 +53,7 @@ beforeAll(async()=>{
   await db.exec(migrationFunction('20260727000000_inc10_announcements.sql','org_unit_path'));
   for(const name of ['org_visible_to_actor','assessor_catchment_includes','training_lesson_visible'])await db.exec(migrationFunction('20261002000100_assessor_catchment_bhw_barangay.sql',name));
   for(const file of ['20260928080043_assessor_candidate_learning.sql','20260928093110_assessor_candidate_exams.sql','20260929050611_assessor_scoring_orientation.sql','20260929054250_assessor_chapter_qualification.sql'])await db.exec(read(`supabase/migrations/${file}`));
+  await db.exec(read('supabase/migrations/20260929063731_assessor_chapter2_exams_orientation.sql'));
   await db.query('insert into org_units values($1,$3),($2,$4)',[ids.city,ids.away,`${ids.city}.`,`${ids.away}.`]);
   for(const [id,role,status,org] of [[ids.self,'assessor','active',ids.city],[ids.other,'assessor','active',ids.away],[ids.bhw,'bhw','active',ids.city],[ids.inactive,'assessor','deactivated',ids.city],[ids.admin,'admin','active',ids.city],[ids.outsideAdmin,'admin','active',ids.away]])
     await db.query('insert into users values($1,$1,$2,$3,$4)',[id,role,status,org]);
@@ -62,12 +66,38 @@ beforeAll(async()=>{
     await db.query('insert into course_lessons values($1,$2,$3,$4,true)',[lesson,uuid(100+req.position),revision,req.key]);
     await db.query('insert into course_lesson_revisions values($1,$2,$3,$4)',[revision,lesson,JSON.stringify([{id:'read',concept_ids:['c']}]),JSON.stringify([{id:'slide',concept_ids:['c']}])]);
   }
+  for(let i=0;i<7;i++)await db.query('insert into course_modules values($1,$2,$3)',[uuid(400+i),ids.course2,i]);
+  for(let i=0;i<requirements2.length;i++){
+    const req=requirements2[i],lesson=uuid(500+i),revision=uuid(600+i);
+    await db.query('insert into course_lessons values($1,$2,$3,$4,true)',[lesson,uuid(400+req.position),revision,req.key]);
+    await db.query('insert into course_lesson_revisions values($1,$2,$3,$4)',[revision,lesson,JSON.stringify([{id:'read',concept_ids:['c']}]),JSON.stringify([{id:'slide',concept_ids:['c']}])]);
+  }
 },30000);
 afterAll(async()=>{await db?.close();});
 beforeEach(async()=>{await db.exec('begin');});
 afterEach(async()=>{await db.exec('rollback');});
 
 describe('AF-05 qualification migration',()=>{
+  it('qualifies Chapter II only after its own exams, study, and both safety ratings',async()=>{
+    for(let i=0;i<requirements2.length;i++)await db.query('insert into assessor_lesson_progress(assessor_user_id,chapter_id,lesson_id,revision_id) values($1,$2,$3,$4)',[ids.self,ids.chapter2,uuid(500+i),uuid(600+i)]);
+    for(const phase of ['pretest','posttest'])await db.query(`insert into assessor_exam_attempts
+      (assessor_user_id,chapter_id,curriculum_version,exam_id,phase,status,question_set_hash,question_count,passing_percent,score_percent,passed,answers,submitted_at)
+      values($1,$2,'2026-09-28.1',$3,$4,'submitted','00000000000000000000000000000000',14,$5,$6,$7,'[]',now())`,
+      [ids.self,ids.chapter2,`chapter-2:${phase}`,phase,phase==='posttest'?80:null,phase==='posttest'?86:0,phase==='posttest']);
+    for(const lesson of orientation2.lessons)await call(ids.self,'rpc_assessor_orientation_lesson_complete',ids.chapter2,lesson.id);
+    const correct=orientation2.cases.map(c=>({id:c.id,rating:c.correct}));
+    for(const safetyId of orientation2.cases.filter(c=>c.critical).map(c=>c.id)){
+      const wrong=correct.map(a=>a.id===safetyId?{...a,rating:'kaya_na'}:a);
+      const result=(await actor(ids.self,()=>db.query('select rpc_assessor_orientation_submit($1,$2::jsonb,true) as result',[ids.chapter2,JSON.stringify(wrong)]))).rows[0].result;
+      expect(result).toMatchObject({passed:false,correct_count:7,critical_correct:false});
+      expect((await db.query('select count(*)::integer n from assessor_chapter_qualifications')).rows[0].n).toBe(0);
+    }
+    const result=(await actor(ids.self,()=>db.query('select rpc_assessor_orientation_submit($1,$2::jsonb,true) as result',[ids.chapter2,JSON.stringify(correct)]))).rows[0].result;
+    expect(result).toMatchObject({passed:true,correct_count:8,critical_correct:true});
+    expect((await call(ids.self,'rpc_assessor_qualification_state',ids.chapter2)).rows[0].result).toMatchObject({status:'active',orientation_version:'2026-09-29.2'});
+    expect((await call(ids.self,'rpc_assessor_chapter_qualified',ids.chapter2)).rows[0].result).toBe(true);
+    expect((await call(ids.self,'rpc_assessor_chapter_qualified',ids.chapter)).rows[0].result).toBe(false);
+  });
   it('automatically issues once from the full verified sequence and stays chapter scoped',async()=>{
     expect((await call(ids.self,'rpc_assessor_qualification_state',ids.chapter)).rows[0].result).toMatchObject({status:'in_progress',next_step:'pretest'});
     expect((await pass()).rows[0].result.passed).toBe(true);
@@ -75,14 +105,14 @@ describe('AF-05 qualification migration',()=>{
     expect(state).toMatchObject({status:'active',curriculum_version:'2026-09-28.1',rubric_version:'2026-09-28.1',orientation_version:'2026-09-29.1'});
     expect((await call(ids.self,'rpc_assessor_chapter_qualified',ids.chapter)).rows[0].result).toBe(true);
     expect((await call(ids.self,'rpc_assessor_chapter_qualified',ids.chapter2)).rows[0].result).toBe(false);
-    expect((await call(ids.self,'rpc_assessor_qualification_state',ids.chapter2)).rows[0].result).toMatchObject({status:'unavailable'});
+    expect((await call(ids.self,'rpc_assessor_qualification_state',ids.chapter2)).rows[0].result).toMatchObject({status:'in_progress',next_step:'pretest'});
     expect((await call(ids.self,'rpc_assessor_qualification_ensure',ids.chapter)).rows[0].result).toBe(state.qualification_id);
     expect((await db.query('select count(*)::integer n from assessor_chapter_qualifications')).rows[0].n).toBe(1);
     expect((await db.query("select count(*)::integer n from audit_events where event_type='assessor.qualification.issued'")).rows[0].n).toBe(1);
   });
   it('rejects early, forged, cross-role, and client-issued qualifications',async()=>{
     await expect(call(ids.self,'rpc_assessor_qualification_ensure',ids.chapter)).rejects.toThrow(/prerequisites incomplete/);
-    await expect(call(ids.self,'rpc_assessor_qualification_ensure',ids.chapter2)).rejects.toThrow(/unavailable/);
+    await expect(call(ids.self,'rpc_assessor_qualification_ensure',ids.chapter2)).rejects.toThrow(/prerequisites incomplete/);
     for(const id of [ids.other,ids.bhw,ids.inactive,null])await expect(call(id,'rpc_assessor_qualification_ensure',ids.chapter)).rejects.toThrow(/authorized|unavailable|permission denied/);
     await expect(call(ids.admin,'rpc_assessor_qualification_ensure',ids.chapter)).rejects.toThrow(/authorized/);
     await expect(actor(ids.self,()=>db.exec(`insert into assessor_chapter_qualifications(assessor_user_id,chapter_id,curriculum_version,rubric_version,orientation_version,orientation_attempt_id)

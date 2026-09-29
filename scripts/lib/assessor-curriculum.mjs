@@ -67,26 +67,42 @@ export function auditCurriculum(root, supplied) {
     assert(chapter.posttest.id === `${chapter.chapter_key}:posttest` && chapter.posttest.passing_percent === 80, 'post-test must use approved 80% threshold');
     let questionCount = 0;
     if (chapter.posttest.source) {
-      assert(chapter.chapter_key === 'chapter-1' && chapter.posttest.source === 'content/training/day1-basic-competencies/test-questions.json', 'unexpected exam source');
+      const expectedSource = chapter.chapter_key === 'chapter-1'
+        ? 'content/training/day1-basic-competencies/test-questions.json'
+        : 'content/training/chapter2-common-competencies/release/los-banos-2026-09-25.json';
+      assert(chapter.posttest.source === expectedSource, 'unexpected exam source');
       const bytes = read(chapter.posttest.source);
       assert(sha(bytes) === chapter.posttest.sha256, 'exam bank changed; review and version the manifest');
-      const questions = JSON.parse(bytes.toString('utf8')).questions;
-      assert(questions.length > 0, 'empty exam bank');
-      assert(equalSet([...new Set(questions.map(q => q.module))], chapter.modules.map(m => m.module_key)), 'exam bank does not cover full chapter');
-      questionCount = questions.length;
+      const source = JSON.parse(bytes.toString('utf8'));
+      if (chapter.chapter_key === 'chapter-1') {
+        const questions = source.questions;
+        assert(questions.length > 0, 'empty exam bank');
+        assert(equalSet([...new Set(questions.map(q => q.module))], chapter.modules.map(m => m.module_key)), 'exam bank does not cover full chapter');
+        questionCount = questions.length;
+      } else {
+        assert(source.status === 'published' && source.counts?.lessons === lessons && source.counts?.modules === chapter.modules.length,
+          'Chapter II published release inventory drift');
+        assert(source.counts.questions === 14 && source.assessment_question_ids.length === 14
+          && unique(source.assessment_question_ids), 'Chapter II published question inventory drift');
+        questionCount = source.assessment_question_ids.length;
+      }
     } else {
-      assert(chapter.chapter_key === 'chapter-2' && chapter.posttest.sha256 === null, 'missing exam source');
+      assert(false, `${chapter.chapter_key}: missing exam source`);
     }
-    if (chapter.chapter_key === 'chapter-1') {
+    {
       const orientation = chapter.orientation;
-      assert(orientation?.version === '2026-09-29.1' && orientation.lesson_count === 6
+      const expectedVersion = chapter.chapter_key === 'chapter-1' ? '2026-09-29.1' : '2026-09-29.2';
+      const expectedMigration = chapter.chapter_key === 'chapter-1'
+        ? 'supabase/migrations/20260929050611_assessor_scoring_orientation.sql'
+        : 'supabase/migrations/20260929063731_assessor_chapter2_exams_orientation.sql';
+      assert(orientation?.version === expectedVersion && orientation.lesson_count === 6
         && orientation.case_count === 8 && orientation.passing_count === 7,
-        'Chapter I orientation contract drift');
-      assert(orientation.migration_source === 'supabase/migrations/20260929050611_assessor_scoring_orientation.sql',
+        `${chapter.chapter_key} orientation contract drift`);
+      assert(orientation.migration_source === expectedMigration,
         'unexpected orientation source');
       assert(sha(read(orientation.migration_source)) === orientation.sha256,
         'orientation changed; review and version the scoring exercise');
-      assert(orientation.content_source === 'content/assessor/chapter-1-orientation.v1.json'
+      assert(orientation.content_source === `content/assessor/${chapter.chapter_key}-orientation.v1.json`
         && sha(read(orientation.content_source)) === orientation.content_sha256,
       'orientation source changed; review and version it');
       const material = json(orientation.content_source);
@@ -103,10 +119,10 @@ export function auditCurriculum(root, supplied) {
       assert(material.cases.length === orientation.case_count && unique(material.cases.map(c => c.id))
         && material.cases.every(c => key(c.id) && indicatorIds.has(c.indicator) && localized(c.case)
           && localized(c.reason) && ['kaya_na','kailangan_practice','hindi_pa'].includes(c.correct))
-        && material.cases.filter(c => c.critical).length === 1
+        && material.cases.filter(c => c.critical).length === (chapter.chapter_key === 'chapter-1' ? 1 : 2)
         && material.passing_count === orientation.passing_count,
       'orientation cases or rubric mapping incomplete');
-    } else assert(chapter.orientation === null, 'Chapter II orientation must remain unavailable without its exam');
+    }
     results.push({ chapter: chapter.chapter_key, modules: chapter.modules.length, lessons, indicators, questionCount,
       activationBlockers: ['curriculum_and_rubric_review', ...(chapter.orientation ? [] : ['orientation_not_implemented']), ...(questionCount ? [] : ['chapter_exam_bank_missing'])] });
   }

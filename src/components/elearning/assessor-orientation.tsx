@@ -19,7 +19,7 @@ const ratings: {key:Rating;label:Localized}[] = [
   {key:'hindi_pa',label:{fil:'Hindi pa',en:'Hindi pa (not yet)'}},
 ];
 
-export function AssessorOrientation({chapterId,chapterHref,locale,initial}:{chapterId:string;chapterHref:string;locale:string;initial:OrientationState}) {
+export function AssessorOrientation({chapterId,chapterHref,chapterLabel={fil:'Kabanata I',en:'Chapter I'},locale,initial}:{chapterId:string;chapterHref:string;chapterLabel?:Localized;locale:string;initial:OrientationState}) {
   const en=locale==='en';
   const text=(fil:string,english:string)=>en?english:fil;
   const local=(value:Localized)=>value[en?'en':'fil'];
@@ -31,6 +31,7 @@ export function AssessorOrientation({chapterId,chapterHref,locale,initial}:{chap
   const [busy,setBusy]=useState(false);
   const [error,setError]=useState<string|null>(null);
   const cases=initial.cases??[];
+  const criticalCount=cases.filter(item=>item.critical).length;
   const lessons=initial.lessons??[];
   const allLessonsDone=lessons.length>0 && lessons.every(lesson=>completed.includes(lesson.id));
   const activeLesson=lessons[selected];
@@ -76,9 +77,9 @@ export function AssessorOrientation({chapterId,chapterHref,locale,initial}:{chap
 
   return <div className="flex flex-col gap-6">
     <header>
-      <p className="text-sm font-semibold text-primary">{text('Kabanata I · Oryentasyon ng assessor','Chapter I · Assessor orientation')}</p>
+      <p className="text-sm font-semibold text-primary">{local(chapterLabel)} · {text('Oryentasyon ng assessor','Assessor orientation')}</p>
       <h1 className="mt-2 text-2xl font-semibold">{initial.title?local(initial.title):text('Oryentasyon sa pagmamarka','Scoring orientation')}</h1>
-      <p className="mt-2 text-ink/70">{text(`Tapusin ang ${lessons.length} aralin, pagkatapos ay markahan ang ${cases.length} halimbawa. Kailangan ang ${initial.passing_count} tamang sagot at tamang marka sa kasong pangkaligtasan. Maaaring ulitin ang pagsasanay.`,`Complete ${lessons.length} lessons, then rate ${cases.length} examples. You need ${initial.passing_count} correct answers and the correct rating on the safety case. You may repeat the practice.`)}</p>
+      <p className="mt-2 text-ink/70">{text(`Tapusin ang ${lessons.length} aralin, pagkatapos ay markahan ang ${cases.length} halimbawa. Kailangan ang ${initial.passing_count} tamang sagot at tamang marka sa ${criticalCount} kasong pangkaligtasan. Maaaring ulitin ang pagsasanay.`,`Complete ${lessons.length} lessons, then rate ${cases.length} examples. You need ${initial.passing_count} correct answers and correct ratings on all ${criticalCount} safety cases. You may repeat the practice.`)}</p>
     </header>
     <section className="rounded-xl border border-ink/20 p-5" aria-label={text('Gabay sa pagmamarka','Scoring guide')}>
       <h2 className="text-lg font-semibold">{text('Gabay sa pagmamarka','Scoring guide')}</h2>
@@ -107,7 +108,7 @@ export function AssessorOrientation({chapterId,chapterHref,locale,initial}:{chap
     </p>}
     {initial.passed || result?.passed ? <section role="status" className="rounded-xl border border-primary/40 bg-primary/5 p-5">
       <h2 className="font-semibold">{text('Natapos ang oryentasyon','Orientation completed')}</h2>
-      <p>{text('Naitala ang iyong pagpasa para sa Kabanata I. Tingnan ang naibigay na kwalipikasyon at katayuan nito.','Your Chapter I pass is recorded. Check your issued qualification and its status.')}</p>
+      <p>{text(`Naitala ang iyong pagpasa para sa ${chapterLabel.fil}. Tingnan ang naibigay na kwalipikasyon at katayuan nito.`,`Your ${chapterLabel.en} pass is recorded. Check your issued qualification and its status.`)}</p>
       <Link prefetch={false} href={`${chapterHref.split('/assessor/')[0]}/assessor/qualifications`} className="mt-3 inline-block underline">{text('Tingnan ang aking mga kwalipikasyon','View my qualifications')}</Link>
     </section> : allLessonsDone&&<form onSubmit={submit} className="flex flex-col gap-5" noValidate>
       <h2 className="text-lg font-semibold">{text('Pagsasanay sa pagmamarka','Scoring practice')}</h2>
@@ -129,7 +130,7 @@ export function AssessorOrientation({chapterId,chapterHref,locale,initial}:{chap
     {result && <section role="status" className="rounded-xl border border-info/40 bg-info/5 p-5">
       <h2 className="font-semibold">{text(`Tamang marka: ${result.correct_count} sa ${result.question_count}`,`Correct ratings: ${result.correct_count} of ${result.question_count}`)}</h2>
       <p>{result.passed?text('Pumasa ka sa pagsasanay.','You passed the practice.'):text('Balikan ang gabay at subukang muli.','Review the guide and try again.')}</p>
-      {!result.critical_correct&&<p className="font-medium">{text('Balikan ang desisyon sa kasong pangkaligtasan.','Review the safety case decision.')}</p>}
+      {!result.critical_correct&&<p className="font-medium">{text('Balikan ang mga desisyon sa kasong pangkaligtasan.','Review the safety case decisions.')}</p>}
       <ol className="mt-3 space-y-3">{result.feedback.map((f,index)=><li key={f.id}>
         <span className="font-medium">{text(`Kaso ${index+1}`,`Case ${index+1}`)}: {local(ratings.find(r=>r.key===f.correct)!.label)}</span>
         <p>{local(f.reason)}</p>
