@@ -16,6 +16,8 @@ import type {
   QuizQuestion,
 } from "@/lib/elearning/types";
 import { withVisible } from "@/lib/content/visibility";
+import { gabayCharts } from "@/lib/flipcharts/gabay-charts";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -262,6 +264,17 @@ export default async function CourseDetailPage({
           </p>
         ) : null}
       </div>
+
+      {course.assessment_kind === "gabay_roleplay" && flags.flipcharts && gabayCharts.some((chart) => chart.review === "approved") ? (
+        <section className="rounded-md border border-ink/10 p-4">
+          <h2 className="font-semibold text-ink">{locale === "en" ? "Patient flipcharts" : "Mga flipchart para sa residente"}</h2>
+          <ul className="mt-3 space-y-2">{gabayCharts.filter((chart) => chart.review === "approved").map((chart) => <li key={chart.slug}>
+            <Link prefetch={false} className="text-primary-text underline" href={`/flipcharts/gabay/${chart.slug}`}>
+              {chart.title[locale === "en" ? "en" : "fil"]}
+            </Link>
+          </li>)}</ul>
+        </section>
+      ) : null}
 
       <CourseDetail
         reference={reference}

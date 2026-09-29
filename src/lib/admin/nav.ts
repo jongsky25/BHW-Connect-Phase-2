@@ -49,6 +49,7 @@ export const ADMIN_NAV_GROUPS: AdminNavGroup[] = [
       { key: "courseProgress", href: "/admin/course-progress", flag: "elearning" },
       { key: "trainingProgress", href: "/admin/training-progress", flag: "elearning" },
       { key: "flipcharts", href: "/admin/flipcharts", flag: "flipcharts" },
+      { key: "gabayFlipcharts", href: "/admin/gabay-flipcharts" },
     ],
   },
   {
