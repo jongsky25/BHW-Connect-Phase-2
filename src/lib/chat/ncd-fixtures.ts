@@ -5,8 +5,10 @@ import module4 from "../../../content/kb/hhp-ncd/entries/module-4.json";
 import module5 from "../../../content/kb/hhp-ncd/entries/module-5.json";
 import module6 from "../../../content/kb/hhp-ncd/entries/module-6.json";
 import synonymsFile from "../../../content/kb/hhp-ncd/synonyms.json";
+import clarifiersFile from "../../../content/kb/hhp-ncd/clarifiers.json";
+import redFlagsFile from "../../../content/kb/hhp-ncd/red-flags.json";
 import type { ChatFixture } from "./fixtures";
-import type { ChatEntryCandidate, SynonymRow } from "./types";
+import type { ChatEntryCandidate, Clarifier, RedFlagRule, SynonymRow } from "./types";
 
 // Unlike fixtures.ts — which is invented Maternal & Child Health mock data —
 // this corpus is generated from the real content files under content/kb/hhp-ncd
@@ -55,10 +57,10 @@ export const ncdKbEntries: ChatEntryCandidate[] = modules
 
 export const ncdSynonyms: SynonymRow[] = synonymsFile.synonyms as SynonymRow[];
 
-// Re-exported from the runtime module so the corpus tests score against the
-// exact rules /api/chat loads, the same way ncdKbEntries mirrors the entries
-// the loader publishes.
-export { clarifierRules as ncdClarifiers, redFlagRules as ncdRedFlags } from "./rules";
+// NCD-only rules for NCD-only fixture tests. Runtime also includes the Gabay
+// registration clarifier, which has targets outside this fixture corpus.
+export const ncdClarifiers: Clarifier[] = clarifiersFile.clarifiers as Clarifier[];
+export const ncdRedFlags: RedFlagRule[] = redFlagsFile.red_flags as RedFlagRule[];
 
 // 30 English / 30 Filipino / 30 Taglish-Hiligaynon-misspelled, each asserting
 // the specific entry that must win — not merely that something came back.

@@ -17,6 +17,7 @@
     "training:load": "node scripts/training-load.mjs",
     "gabay:load": "node scripts/gabay-course-load.mjs",
     "gabay:check": "node --test scripts/lib/gabay-content.check.mjs",
+    "gabay:kb:check": "node scripts/gabay-kb-check.mjs",
     "training:review-setup": "node scripts/training-review-setup.mjs",
     "training:tts": "node scripts/tts-render.mjs",
     "training:narrate": "node scripts/training-narrate.mjs",

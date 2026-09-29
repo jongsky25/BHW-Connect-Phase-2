@@ -40,6 +40,11 @@ function parseArgs(argv) {
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (!args.project) throw new Error("--project <supabase-project-ref> is required");
+  // P4 authoring stays in the disposable stack. P5 will open a separately
+  // reviewed release path after source recheck; do not load this corpus to pilot.
+  if (args.corpus === "philhealth-gabay" && args.project !== "local") {
+    throw new Error("philhealth-gabay corpus is limited to --project local in P4");
+  }
   if (args.publish && !args.owner) {
     throw new Error("--publish requires --owner <username>: kb_entries_publish_requires_owner");
   }

@@ -1,0 +1,77 @@
+{
+  "category": "philhealth-registration",
+  "entries": [
+    {
+      "id": "ph-pin-none", "domain": "registration", "tier": "cited", "claims": ["PH-02"],
+      "question_en": "I have no PhilHealth PIN. What should I do?", "question_fil": "Wala akong PhilHealth PIN. Ano ang gagawin ko?",
+      "answer_en": "A PhilHealth PIN or member record is different from selecting a YAKAP clinic. If you do not have a PIN, ask PhilHealth through an official member channel or office how to establish or verify your record. Complete any detailed membership application there, using your own account and documents. Then ask about clinic selection.",
+      "answer_fil": "Magkaiba ang PhilHealth PIN o rekord at pagpili ng YAKAP clinic. Kung wala kang PIN, magtanong sa opisyal na member channel o opisina ng PhilHealth kung paano mabubuo o mabeberipika ang rekord mo. Doon gawin ang detalyadong membership application gamit ang sarili mong account at dokumento. Pagkatapos, itanong ang pagpili ng clinic.",
+      "keywords": ["no philhealth pin", "wala pin", "new member number", "need pin", "philhealth membership application", "walang philhealth number"],
+      "sources": ["PH-02", "PH-09"]
+    },
+    {
+      "id": "ph-pin-unknown", "domain": "registration", "tier": "cited", "claims": ["PH-02"],
+      "question_en": "I cannot find or verify my PhilHealth PIN. Should I apply again?", "question_fil": "Hindi ko mahanap o matiyak ang PhilHealth PIN ko. Mag-aapply ba ulit ako?",
+      "answer_en": "Do not assume a new application is needed. First ask PhilHealth to verify the existing member record through an official channel or office. The resident should provide any requested personal details directly to PhilHealth, not in the Chat Guide.",
+      "answer_fil": "Huwag agad ipagpalagay na kailangan ng bagong aplikasyon. Hilingin muna sa PhilHealth na beripikahin ang kasalukuyang member record sa opisyal na channel o opisina. Ang residente mismo ang magbibigay ng anumang hinihinging personal na detalye sa PhilHealth, hindi sa Chat Guide.",
+      "keywords": ["lost philhealth pin", "forgot", "lost", "reapply", "unknown", "maalala", "verify existing record", "apply again philhealth"],
+      "sources": ["PH-02", "PH-09"]
+    },
+    {
+      "id": "ph-record-correction", "domain": "registration", "tier": "cited", "claims": ["PH-02", "BHW-02"],
+      "question_en": "How do I correct a wrong name or dependent in my PhilHealth record?", "question_fil": "Paano itatama ang maling pangalan o dependent sa PhilHealth record ko?",
+      "answer_en": "Record correction belongs in an official PhilHealth member channel or office. Ask PhilHealth which documents and steps apply to this person's case. Do not send a PIN, ID image, password or one-time code in the Chat Guide or to a BHW for processing.",
+      "answer_fil": "Sa opisyal na member channel o opisina ng PhilHealth ginagawa ang pagwawasto ng rekord. Itanong sa PhilHealth kung aling dokumento at hakbang ang kailangan sa kasong ito. Huwag magpadala ng PIN, larawan ng ID, password o one-time code sa Chat Guide o sa BHW para iproseso.",
+      "keywords": ["correct philhealth record", "wrong name member", "maling pangalan philhealth", "dependent record correction", "update member details", "edit philhealth profile"],
+      "sources": ["PH-02", "PH-09"]
+    },
+    {
+      "id": "ph-clinic-select", "domain": "registration", "tier": "cited", "claims": ["PH-03", "PH-04", "PH-05"],
+      "question_en": "I have a PIN. How do I choose a YAKAP clinic?", "question_fil": "May PIN na ako. Paano pipili ng YAKAP clinic?",
+      "answer_en": "Check PhilHealth's current accredited YAKAP clinic list, then use a current official selection route such as the eGovPH app or PhilHealth Member Portal. A PhilHealth office can help when needed. The old provider My PhilHealth Portal selection module stopped on 1 March 2026. After selection, ask the clinic about the first patient encounter.",
+      "answer_fil": "Tingnan ang kasalukuyang listahan ng accredited YAKAP clinics ng PhilHealth at gamitin ang opisyal na paraan ng pagpili, gaya ng eGovPH app o PhilHealth Member Portal. Maaari ring magpatulong sa PhilHealth office. Itinigil noong 1 Marso 2026 ang lumang selection module ng provider My PhilHealth Portal. Pagkapili, itanong sa clinic ang first patient encounter.",
+      "keywords": ["choose yakap clinic", "select primary care clinic", "choose", "select", "egovph", "portal", "register", "yakap empanelment", "philhealth clinic selection"],
+      "sources": ["PH-03", "PH-04", "PH-05"]
+    },
+    {
+      "id": "ph-clinic-no-internet", "domain": "registration", "tier": "cited", "claims": ["PH-04"],
+      "question_en": "How can I choose a YAKAP clinic without a phone or internet?", "question_fil": "Paano pipili ng YAKAP clinic kung walang cellphone o internet?",
+      "answer_en": "A resident without reliable internet can ask the nearest PhilHealth Local Health Insurance Office for the current clinic selection route. Check the accredited clinic list with the office and confirm what to bring before travelling. Do not collect the resident's account password or one-time code.",
+      "answer_fil": "Kung walang maaasahang internet, maaaring magtanong ang residente sa pinakamalapit na PhilHealth Local Health Insurance Office tungkol sa kasalukuyang paraan ng pagpili ng clinic. Kumpirmahin doon ang accredited clinic at kung ano ang dadalhin bago bumiyahe. Huwag kunin ang password o one-time code ng residente.",
+      "keywords": ["yakap no internet", "walang cellphone clinic", "offline", "internet", "cellphone", "phone", "signal", "lhio", "magselect"],
+      "sources": ["PH-04", "PH-05", "PH-09"]
+    },
+    {
+      "id": "ph-dependent-selection", "domain": "registration", "tier": "cited", "claims": ["PH-08"],
+      "question_en": "How do I choose or verify a separate YAKAP clinic for my dependent?", "question_fil": "Paano pipili o magbeberipika ng hiwalay na YAKAP clinic para sa dependent ko?",
+      "answer_en": "Do not assume the member's clinic selection automatically settles a dependent's record. Ask PhilHealth to verify that dependent's current record and applicable selection process, then follow the official instructions. Avoid sharing the dependent's identifiers in chat.",
+      "answer_fil": "Huwag ipagpalagay na awtomatikong naaayos ng pagpili ng miyembro ang rekord ng dependent. Hilingin sa PhilHealth na tiyakin ang kasalukuyang rekord at angkop na proseso ng pagpili para sa dependent, saka sundin ang opisyal na gabay. Huwag ibahagi sa chat ang personal na pagkakakilanlan ng dependent.",
+      "keywords": ["yakap dependent selection", "anak clinic yakap", "separate", "hiwalay", "empanelment", "member dependent empanelment", "pili para dependent"],
+      "sources": ["PH-06", "PH-08"]
+    },
+    {
+      "id": "ph-clinic-transfer", "domain": "registration", "tier": "cited", "claims": ["PH-08"],
+      "question_en": "Can I transfer to another YAKAP clinic?", "question_fil": "Maaari ba akong lumipat sa ibang YAKAP clinic?",
+      "answer_en": "PhilHealth has rules for clinic transfer, and the applicable process can depend on the person's record and current program year. Verify the current transfer steps with PhilHealth or the clinic before acting. Do not tell the resident to start a new membership application just to change clinics.",
+      "answer_fil": "May tuntunin ang PhilHealth sa paglipat ng clinic, at maaaring nakadepende ang proseso sa rekord ng tao at kasalukuyang taon ng programa. Kumpirmahin muna sa PhilHealth o clinic ang mga hakbang. Huwag sabihing maghain ng bagong membership application para lang lumipat ng clinic.",
+      "keywords": ["transfer yakap clinic", "change", "different", "lipat", "palit", "switch", "reselect", "ibang clinic"],
+      "sources": ["PH-04", "PH-06", "PH-08"]
+    },
+    {
+      "id": "ph-benefit-charge", "domain": "scope", "tier": "cited", "claims": ["PH-09"],
+      "question_en": "Is every YAKAP visit or GAMOT medicine free? What if I was charged?", "question_fil": "Libreng lahat ba ng YAKAP visit o GAMOT? Paano kung siningil ako?",
+      "answer_en": "Do not promise that every visit, test or medicine has no charge. Benefits depend on the person's case and current rules. Ask the clinic or dispensing facility for an explanation of the specific charge, and contact PhilHealth if it remains unclear or disputed. Keep receipts and records for that conversation.",
+      "answer_fil": "Huwag mangakong walang bayad ang lahat ng bisita, test o gamot. Nakasalalay ang benepisyo sa kaso at kasalukuyang tuntunin. Humingi ng paliwanag sa clinic o dispensing facility tungkol sa tiyak na singil, at makipag-ugnayan sa PhilHealth kung hindi malinaw o pinagtatalunan. Itabi ang resibo at rekord para sa pag-uusap na iyon.",
+      "keywords": ["yakap charged", "gamot payment", "charged", "charge", "siningil", "bayad", "free", "libreng", "dispute benefit charge"],
+      "sources": ["PH-03", "PH-09"]
+    },
+    {
+      "id": "ph-credentials", "domain": "scope", "tier": "cited", "claims": ["BHW-02"],
+      "question_en": "Can I give a BHW my PhilHealth password or one-time code?", "question_fil": "Maaari ko bang ibigay sa BHW ang PhilHealth password o one-time code ko?",
+      "answer_en": "No. The resident should use their own PhilHealth account, password and one-time code in the official channel. A BHW can explain the next step without collecting credentials. If someone asks for a code or password, stop and verify the request with PhilHealth directly.",
+      "answer_fil": "Hindi. Ang residente mismo ang gagamit ng sariling PhilHealth account, password at one-time code sa opisyal na channel. Maaaring ipaliwanag ng BHW ang susunod na hakbang nang hindi kinukuha ang credentials. Kung may humingi ng code o password, huminto at tiyakin muna ang kahilingan sa PhilHealth.",
+      "keywords": ["philhealth password bhw", "otp", "share", "password", "code", "login", "credentials", "ibigay password"],
+      "sources": ["PH-09", "PH-SEC"]
+    }
+  ]
+}

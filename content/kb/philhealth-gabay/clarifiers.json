@@ -1,0 +1,16 @@
+{
+  "clarifiers": [
+    {
+      "id": "clr-philhealth-registration-path",
+      "question_en": "Do you mean a PhilHealth PIN/member record or choosing a YAKAP clinic?",
+      "question_fil": "PhilHealth PIN o rekord ba, o pagpili ng YAKAP clinic?",
+      "topic_any_of": ["philhealth", "yakap", "pin", "member", "register", "registration", "rehistro", "magparehistro", "pagpaparehistro", "enroll", "enrol"],
+      "intent_any_of": ["register", "registration", "rehistro", "magparehistro", "pagpaparehistro", "enroll", "enrol"],
+      "skip_if_any_of": ["wala akong pin", "no pin", "lost pin", "forgot pin", "member record", "record correction", "mali ang pangalan", "clinic", "klinika", "primary care", "dependent", "transfer", "lipat", "birth certificate", "civil registry", "bhw connect"],
+      "options": [
+        { "label_en": "I need a PIN or need to verify or correct my member record", "label_fil": "Kailangan ko ng PIN o beripikasyon o pagwawasto ng aking rekord", "entry_id": "ph-pin-none" },
+        { "label_en": "I have a PIN and want to choose a YAKAP clinic", "label_fil": "May PIN na ako at pipili ng YAKAP clinic", "entry_id": "ph-clinic-select" }
+      ]
+    }
+  ]
+}
