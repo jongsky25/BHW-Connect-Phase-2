@@ -10,7 +10,7 @@ export default async function OrientationPage({params}:{params:Promise<{programI
   const [{programId,chapterKey},viewer,flags,locale]=await Promise.all([params,getViewer(),getRequestFeatureFlags(),getLocale()]);
   if(!viewer.appUser || viewer.appUser.status!=='active')redirect('/login');
   if(!flags.elearning || viewer.role!=='assessor' || viewer.appUser.role!=='assessor' || viewer.isPreview)redirect('/home');
-  if(chapterKey!=='chapter-1')notFound();
+  if(chapterKey!=='chapter-1'&&chapterKey!=='chapter-2')notFound();
   const db=await createClient();
   const [{data:program,error:programError},{data:chapter,error:chapterError}]=await Promise.all([
     db.from('training_programs').select('id').eq('id',programId).eq('content_key','bhw-reference-manual').eq('status','published').maybeSingle(),
@@ -22,8 +22,9 @@ export default async function OrientationPage({params}:{params:Promise<{programI
   if(error)throw new Error('Unable to load assessor orientation');
   const state=data as OrientationState;
   const chapterHref=`/training/${programId}/assessor/${chapterKey}`;
+  const chapterLabel=chapterKey==='chapter-1'?{fil:'Kabanata I',en:'Chapter I'}:{fil:'Kabanata II',en:'Chapter II'};
   return <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 py-10 sm:px-6">
-    <Breadcrumbs items={[{label:'BHW Reference Manual',href:`/training/${programId}`},{label:locale==='en'?'Chapter I':'Kabanata I',href:chapterHref},{label:locale==='en'?'Scoring orientation':'Oryentasyon sa pagmamarka'}]}/>
-    <AssessorOrientation chapterId={chapter.id} chapterHref={chapterHref} locale={locale} initial={state}/>
+    <Breadcrumbs items={[{label:'BHW Reference Manual',href:`/training/${programId}`},{label:chapterLabel[locale==='en'?'en':'fil'],href:chapterHref},{label:locale==='en'?'Scoring orientation':'Oryentasyon sa pagmamarka'}]}/>
+    <AssessorOrientation chapterId={chapter.id} chapterHref={chapterHref} chapterLabel={chapterLabel} locale={locale} initial={state}/>
   </main>;
 }

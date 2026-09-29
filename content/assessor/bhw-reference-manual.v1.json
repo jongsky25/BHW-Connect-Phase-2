@@ -729,10 +729,19 @@
       "posttest": {
         "id": "chapter-2:posttest",
         "passing_percent": 80,
-        "source": null,
-        "sha256": null
+        "source": "content/training/chapter2-common-competencies/release/los-banos-2026-09-25.json",
+        "sha256": "7a905cc31041fdaa95b71d1b8d5259362827126669fd19eb0dc42aa443fd704d"
       },
-      "orientation": null
+      "orientation": {
+        "version": "2026-09-29.2",
+        "migration_source": "supabase/migrations/20260929063731_assessor_chapter2_exams_orientation.sql",
+        "sha256": "6c0a8a860ba980d8c9177ff3d9be80956ff61f99a69d4072a2b50f1ce55dc5ae",
+        "content_source": "content/assessor/chapter-2-orientation.v1.json",
+        "content_sha256": "d82b79002401712dc55094d74528c6d402b76613c40357d02466e31bf7b02c89",
+        "lesson_count": 6,
+        "case_count": 8,
+        "passing_count": 7
+      }
     }
   ],
   "unavailable_chapter_keys": [
