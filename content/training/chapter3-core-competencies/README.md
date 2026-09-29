@@ -9,6 +9,7 @@ This package prepares **The BHW as a Primary Care Advocate** for draft staging i
 - `drafts/<subchapter>/`: Read and Slides content, checks, lesson facilitator notes, observer sheets, practice, module guide, facilitated activity cards, transfer prompts and job aid.
 - `review-queue.json`: one pending review record per lesson. No reviewer or current clinical authority is fabricated.
 - `local-configuration.template.json`: empty fields for the authorized local team to verify after staging.
+- Read narration: 910 Filipino/English MP3 sections under `public/training/audio/chapter3/`, indexed by the shared `content/training/day1-basic-competencies/narration.json` manifest. The new audio uses the existing Edge Read Aloud voices (`fil-PH-BlessicaNeural`, `en-PH-RosaNeural`).
 
 The drafts use fictional residents and synthetic records. They intentionally avoid fixed 2022 clinical thresholds, vaccine schedules, medicine instructions and service promises. Some lesson examples and activity cards are still editorial drafts; structural validation does **not** establish clinical accuracy, teaching quality or local readiness. The module hours represent facilitated training time, not time awarded for opening the digital lessons.
 
@@ -25,6 +26,8 @@ node scripts/chapter3-stage.mjs --check
 ```
 
 The last two commands do not read credentials or contact Supabase. Regeneration overwrites files under `drafts/`, so edit the source blueprint/crosswalk, localization rows, full cards or generator rather than a generated lesson file.
+
+Narration is rendered from the exact Read text and is not part of the draft staging database write. After any Read edit, run `npm run training:narrate -- --chapter 3` to find stale sections, then `npm run training:narrate -- --chapter 3 --apply` to re-render only those sections. Run `node scripts/chapter3-narration-validate.mjs` before committing or publishing. Speech quality still needs a human listening review, including Filipino/English pronunciation and acronyms; the automated check verifies presence, hashes, timing and text currency.
 
 ## Migration boundary
 

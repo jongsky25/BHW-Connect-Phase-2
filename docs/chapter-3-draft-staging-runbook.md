@@ -12,7 +12,7 @@ The project reference and exact organization name must be confirmed at trigger t
 
 1. Confirm the owner has triggered migration and identified the target organization.
 2. Freeze a reviewed Git commit of this package. Record its SHA and the two supplied PDF hashes in the migration record.
-3. Run `node scripts/chapter3-validate.mjs` and `node scripts/chapter3-stage.mjs --check` locally. Both must pass with 12 modules, 65 lessons and 23,520 facilitated minutes.
+3. Run `node scripts/chapter3-validate.mjs`, `node scripts/chapter3-stage.mjs --check`, and `node scripts/chapter3-narration-validate.mjs` locally. They must pass with 12 modules, 65 lessons, 23,520 facilitated minutes and 910 current bilingual audio sections.
 4. Check `review-queue.json` and `local-configuration.template.json` remain pending. Draft staging is permitted for review; publication is not.
 
 ## After the trigger
@@ -22,8 +22,10 @@ The project reference and exact organization name must be confirmed at trigger t
 3. Run `node scripts/chapter3-stage.mjs --project <confirmed-ref> --org-unit "<exact organization>" --apply` once the plan is accepted. The script saves a row-ID lock after each created course/module/lesson and can reconcile on rerun. It has no `--publish` option.
 4. Re-run the remote read-only plan. Expect unchanged modules, guides and lessons. Save the report and lock in the authorized release record. Verify in an admin/staff view that all 12 modules and 65 lessons are present as drafts, private notes are staff-only, and a BHW cannot see Chapter III.
 
+The MP3s and narration manifest are static application assets in the Git branch; the database staging script does not upload them. Plan an asset deployment or preview separately after the owner's trigger before assessing in-app audio. No production deployment is part of offline narration work.
+
 ## Review after staging
 
-Review the actual staged lesson views, clinical/program claims, Filipino/English wording, local contact slots, accessibility, facilitator cards, observation criteria and hour allocation. Complete each `review-queue.json` record with authority, reviewer, date and disposition. Fill a local configuration copy through the authorized local health team. Resolve the guide's 384/392 discrepancy in the formal timetable and the F106 stock-card label before any official training-hour claim.
+Review the actual staged lesson views, clinical/program claims, Filipino/English wording and spoken pronunciation, local contact slots, accessibility, facilitator cards, observation criteria and hour allocation. Complete each `review-queue.json` record with authority, reviewer, date and disposition. Fill a local configuration copy through the authorized local health team. Resolve the guide's 384/392 discrepancy in the formal timetable and the F106 stock-card label before any official training-hour claim.
 
 Publishing the course, attaching Chapter III to the learner program, changing assessments/certificates, and announcing availability require a separate release plan after this review. Draft staging is reversible through a target-specific, reviewed cleanup that first checks for references and progress; this script intentionally contains no delete path.

@@ -12,6 +12,7 @@ export const NARRATION_MANIFEST = "content/training/day1-basic-competencies/narr
 export const NARRATION_SOURCES = [
   { prefix: "", dir: "content/training/day1-basic-competencies/modules" },
   { prefix: "chapter2/", dir: "content/training/chapter2-common-competencies/drafts" },
+  { prefix: "chapter3/", dir: "content/training/chapter3-core-competencies/drafts" },
 ];
 
 // [{ key, dir }] for every narrated subchapter, relative to the repo root.
