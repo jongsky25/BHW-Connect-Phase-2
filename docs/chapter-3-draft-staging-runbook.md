@@ -29,4 +29,12 @@ The MP3s and narration manifest are static application assets in the Git branch;
 
 Review the actual staged lesson views, clinical/program claims, Filipino/English wording and spoken pronunciation, local contact slots, accessibility, facilitator cards, observation criteria and hour allocation. Complete each `review-queue.json` record with authority, reviewer, date and disposition. Fill a local configuration copy through the authorized local health team. Resolve the guide's 384/392 discrepancy in the formal timetable and the F106 stock-card label before any official training-hour claim.
 
-Publishing the course, attaching Chapter III to the learner program, changing assessments/certificates, and announcing availability require a separate release plan after this review. Draft staging is reversible through a target-specific, reviewed cleanup that first checks for references and progress; this script intentionally contains no delete path.
+Publishing the course, making Chapter III available to learners, changing assessments/certificates, and announcing availability require a separate release plan after this review. Draft staging is reversible through a target-specific, reviewed cleanup that first checks for references and progress; this script intentionally contains no delete path.
+
+## Lesson revision publication
+
+On 29 September 2026 the owner requested publication of all 65 staged lessons and attested that review is complete; the signed review record is to follow. The package's `review-queue.json`, per-module `review.json`, and local configuration template have not yet been updated with that evidence. Do not fill reviewer identities or local service values by inference.
+
+The exact, authenticated publication path is `scripts/chapter3-publish-lessons.mjs`. Run it first without `--apply` using the confirmed project, organization and course ID, then with `--apply` under a signed-in active admin account. It verifies course and chapter state, all 12 module identities, all 65 lesson manifests, matching revision hashes, separate private notes and approved assets before the first write. It calls `rpc_course_lessons_publish` once for each complete module, and verifies all 65 pointers afterward. Reruns are safe if a connection fails partway through. The course remains `draft` and Chapter III remains `unavailable`.
+
+The connected SQL editor executes as `postgres` without an app user, so it cannot use this RPC with an accurate actor or audit trail. Do not set session claims to impersonate an admin or write publication pointers directly to bypass the RPC. Use the existing authenticated admin loader credentials or an authenticated admin workflow.
