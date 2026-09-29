@@ -1,0 +1,77 @@
+{
+  "source_allocation_hours": 3,
+  "planning_split": "Shared eight-hour source block; provisional three/five-hour split",
+  "activities": [
+    {
+      "id": "activity-services-by-facility",
+      "lesson_key": "services-by-facility",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "objective_index": 0,
+      "indicator_ref": "lessons/services-by-facility/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          62,
+          63
+        ],
+        "F": [
+          45,
+          46
+        ]
+      }
+    },
+    {
+      "id": "activity-life-stage-needs",
+      "lesson_key": "life-stage-needs",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "objective_index": 1,
+      "indicator_ref": "lessons/life-stage-needs/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          64
+        ],
+        "F": [
+          46
+        ]
+      }
+    },
+    {
+      "id": "activity-referral-and-handover",
+      "lesson_key": "referral-and-handover",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 60,
+      "objective_index": 2,
+      "indicator_ref": "lessons/referral-and-handover/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          65
+        ],
+        "F": [
+          46
+        ]
+      }
+    }
+  ]
+}

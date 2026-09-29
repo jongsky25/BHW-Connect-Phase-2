@@ -1,0 +1,34 @@
+{
+  "concepts": [
+    {
+      "id": "c3.bhs-services-and-standards",
+      "statement_en": "Given a local BHS profile, compare actual services with the approved checklist and identify a gap to report.",
+      "source": "R141, F106",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.equipment-readiness",
+      "statement_en": "Given the visually verified source list and local standard, check equipment presence, condition and responsible staff.",
+      "source": "R141, R142, R143, F106",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.inventory",
+      "statement_en": "Given a sample room and inventory sheet, reconcile items and document one discrepancy.",
+      "source": "R144, F106",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.bp-apparatus-care",
+      "statement_en": "Given a training device and reviewed manufacturer/local protocol, demonstrate cleaning, storage and fault reporting.",
+      "source": "R144, R145, F106, F107",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.medicine-supplies-and-stock-cards",
+      "statement_en": "Given fictional receipts, issues and expiry dates, update a stock card and flag storage/expiry problems.",
+      "source": "R145, R146, F106, F107",
+      "redundant_with": null
+    }
+  ]
+}

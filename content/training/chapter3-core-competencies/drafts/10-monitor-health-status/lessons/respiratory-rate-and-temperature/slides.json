@@ -1,0 +1,147 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Ang sitwasyon\nMay training partner si Amira na kailangang sukatin ang paghinga at temperatura.",
+    "display_en": "The situation\nAmira has a training partner whose breathing rate and temperature need measurement.",
+    "check": null,
+    "narration_fil": "May training partner si Amira na kailangang sukatin ang paghinga at temperatura.",
+    "narration_en": "Amira has a training partner whose breathing rate and temperature need measurement."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Gawin at sabihin\nGamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+    "display_en": "What to do and say\nMeasure and record both accurately.",
+    "check": null,
+    "narration_fil": "Gamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+    "narration_en": "Measure and record both accurately."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang tugon",
+    "heading_en": "Choose a response",
+    "display_fil": "Piliin ang tugon\nPumili muna ng sagot.",
+    "display_en": "Choose a response\nChoose an answer first.",
+    "check": {
+      "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+      "prompt_en": "What should the BHW do in this situation?",
+      "options": [
+        {
+          "fil": "Itala ang resultang hindi nasukat o gumamit ng maruming aparato.",
+          "en": "Record a value that was not measured or use unclean equipment."
+        },
+        {
+          "fil": "Gamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+          "en": "Measure and record both accurately."
+        },
+        {
+          "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+          "en": "Delay without a plan or follow-up."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+      "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+    },
+    "narration_fil": "Pumili muna ng sagot. Pagkatapos, basahin ang dahilan.",
+    "narration_en": "Choose an answer first. Then read the reason."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa",
+    "heading_en": "Worked example",
+    "display_fil": "Halimbawa\nSa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+    "display_en": "Worked example\nIn this fictional case, Mira checks the current local guide before responding.",
+    "check": null,
+    "narration_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot. Ito ang ipinakita niya sa observer: Gamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+    "narration_en": "In this fictional case, Mira checks the current local guide before responding. The observer sees that she uses the reviewed method, avoids contaminating equipment, records value/units and escalates concern."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "comparison",
+    "heading_fil": "Saklaw at kaligtasan",
+    "heading_en": "Scope and safety",
+    "display_fil": "Saklaw at kaligtasan\nIwasan ang ganitong kilos: Itala ang resultang hindi nasukat o gumamit ng maruming aparato.",
+    "display_en": "Scope and safety\nAvoid this action: Record a value that was not measured or use unclean equipment.",
+    "check": null,
+    "narration_fil": "Iwasan ang ganitong kilos: Itala ang resultang hindi nasukat o gumamit ng maruming aparato. Kung hindi tiyak ang susunod na hakbang, humingi ng gabay sa midwife o aprubadong lokal na protocol.",
+    "narration_en": "Avoid this action: Record a value that was not measured or use unclean equipment. If the next step is uncertain, consult the midwife or approved local protocol."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa gawain",
+    "heading_en": "Apply the task",
+    "display_fil": "Subukan sa gawain\nPiliin ang kilos na may nakikitang resulta.",
+    "display_en": "Apply the task\nChoose the action with an observable result.",
+    "check": {
+      "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+      "prompt_en": "Which action shows the task was done well?",
+      "options": [
+        {
+          "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+          "en": "Uses the reviewed method, avoids contaminating equipment, records value/units and escalates concern."
+        },
+        {
+          "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+          "en": "Say the task is complete without recording an outcome."
+        },
+        {
+          "fil": "Itala ang resultang hindi nasukat o gumamit ng maruming aparato.",
+          "en": "Record a value that was not measured or use unclean equipment."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+      "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+    },
+    "narration_fil": "Piliin ang kilos na may nakikitang resulta.",
+    "narration_en": "Choose the action with an observable result."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c3.respiratory-rate-and-temperature"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin sa trabaho",
+    "heading_en": "Use this at work",
+    "display_fil": "Gawin sa trabaho\nSa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+    "display_en": "Use this at work\nAt the next supervised practice, use this fictional case.",
+    "check": null,
+    "narration_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito. Ipasuri ang kilos sa observer sheet at ulitin ang hakbang na kailangang ayusin.",
+    "narration_en": "At the next supervised practice, use this fictional case. Ask the observer to score the action on the observer sheet, then repeat the step that needs correction."
+  }
+]

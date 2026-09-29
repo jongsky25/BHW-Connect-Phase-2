@@ -1,0 +1,55 @@
+{
+  "source_allocation_hours": 20,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-childhood-immunization-follow-up",
+      "lesson_key": "childhood-immunization-follow-up",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 600,
+      "objective_index": 0,
+      "indicator_ref": "lessons/childhood-immunization-follow-up/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          96,
+          97
+        ],
+        "F": [
+          80,
+          81
+        ]
+      }
+    },
+    {
+      "id": "activity-adult-and-older-person-vaccination",
+      "lesson_key": "adult-and-older-person-vaccination",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 600,
+      "objective_index": 1,
+      "indicator_ref": "lessons/adult-and-older-person-vaccination/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          97,
+          98
+        ],
+        "F": [
+          82
+        ]
+      }
+    }
+  ]
+}

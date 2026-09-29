@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+      "observable_en": "Uses the reviewed method, avoids contaminating equipment, records value/units and escalates concern.",
+      "not_yet_fil": "Itala ang resultang hindi nasukat o gumamit ng maruming aparato.",
+      "not_yet_en": "Record a value that was not measured or use unclean equipment.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang nasuring pamamaraan at malinis na gamit; itala ang bilang, yunit at oras at iulat ang concern.",
+        "kaya_na_en": "Uses the reviewed method, avoids contaminating equipment, records value/units and escalates concern.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Itala ang resultang hindi nasukat o gumamit ng maruming aparato.",
+        "hindi_pa_en": "Record a value that was not measured or use unclean equipment."
+      }
+    }
+  ]
+}

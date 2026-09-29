@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Magtanong sa nakagawiang gawain ni Ben, magbigay ng nasuring mensahe, at pumili kasama niya ng kayang gawin.",
+      "observable_en": "Gives an accurate message and checks the resident's own next step.",
+      "not_yet_fil": "Sisihin si Ben at ipag-utos ang mamahaling pagkain at programang hindi niya kaya.",
+      "not_yet_en": "Blame Ben and prescribe an expensive plan he cannot follow.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Magtanong sa nakagawiang gawain ni Ben, magbigay ng nasuring mensahe, at pumili kasama niya ng kayang gawin.",
+        "kaya_na_en": "Gives an accurate message and checks the resident's own next step.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Sisihin si Ben at ipag-utos ang mamahaling pagkain at programang hindi niya kaya.",
+        "hindi_pa_en": "Blame Ben and prescribe an expensive plan he cannot follow."
+      }
+    }
+  ]
+}

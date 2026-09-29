@@ -1,0 +1,173 @@
+{
+  "manifest": {
+    "lesson_key": "tobacco-control",
+    "position": 0,
+    "title_fil": "Pag-iwas sa paninigarilyo",
+    "title_en": "Tobacco control",
+    "objectives_fil": [
+      "Humingi ng pahintulot sa usapan, magbahagi ng nasuring mensahe tungkol sa usok, at mag-alok ng konkretong suporta."
+    ],
+    "objectives_en": [
+      "Given a smoker's concern or community exposure, give a reviewed prevention/cessation message and support route."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Nagpapasuso si Rhea at nalalanghap ng pamilya ang usok ng sigarilyo sa bahay.",
+      "takeaway_en": "Rhea's family is exposed to cigarette smoke at home.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Humingi ng pahintulot sa usapan, magbahagi ng nasuring mensahe tungkol sa usok, at mag-alok ng konkretong suporta.",
+      "takeaway_en": "Give a reviewed prevention/cessation message and support route.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili muna ng sagot.",
+      "takeaway_en": "Choose an answer first.",
+      "check": {
+        "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+        "prompt_en": "What should the BHW do in this situation?",
+        "options": [
+          {
+            "fil": "Sermunan ang naninigarilyo at tapusin ang usapan nang walang plano.",
+            "en": "Lecture the smoker and end without a support plan."
+          },
+          {
+            "fil": "Humingi ng pahintulot sa usapan, magbahagi ng nasuring mensahe tungkol sa usok, at mag-alok ng konkretong suporta.",
+            "en": "Give a reviewed prevention/cessation message and support route."
+          },
+          {
+            "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+            "en": "Delay without a plan or follow-up."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+        "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+      "takeaway_en": "In this fictional case, Mira checks the current local guide before responding.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Iwasan ang ganitong kilos: Sermunan ang naninigarilyo at tapusin ang usapan nang walang plano.",
+      "takeaway_en": "Avoid this action: Lecture the smoker and end without a support plan.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Piliin ang kilos na may nakikitang resulta.",
+      "takeaway_en": "Choose the action with an observable result.",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Humingi ng pahintulot sa usapan, magbahagi ng nasuring mensahe tungkol sa usok, at mag-alok ng konkretong suporta.",
+            "en": "Asks permission, avoids blame, and identifies a realistic next step."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Sermunan ang naninigarilyo at tapusin ang usapan nang walang plano.",
+            "en": "Lecture the smoker and end without a support plan."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c3.tobacco-control"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+      "takeaway_en": "At the next supervised practice, use this fictional case.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c3.tobacco-control",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual (2022)",
+      "pdf_pages": [
+        99,
+        100
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "BHW Facilitator Guide (2022)",
+      "pdf_pages": [
+        83,
+        84
+      ]
+    }
+  ],
+  "assets": []
+}

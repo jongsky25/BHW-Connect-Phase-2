@@ -1,0 +1,147 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Ang sitwasyon\nHiningi ng midwife kay BHW Amira ang BP ng isang kasamang nagsasanay.",
+    "display_en": "The situation\nThe midwife asks BHW Amira to measure a training partner's BP.",
+    "check": null,
+    "narration_fil": "Hiningi ng midwife kay BHW Amira ang BP ng isang kasamang nagsasanay. May gamit siyang aparatus at blangkong record. Susunod siya sa kasalukuyang aprubadong pamamaraan habang inoobserbahan ng supervisor.",
+    "narration_en": "The midwife asks BHW Amira to measure a training partner's BP. She has a device and a blank record. A supervisor watches while she follows the current approved procedure."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Gawin at sabihin\nSuriin ang aparato at angkop na cuff.",
+    "display_en": "What to do and say\nCheck the device and suitable cuff.",
+    "check": null,
+    "narration_fil": "Suriin ang aparato at angkop na cuff. Humingi ng pahintulot at ihanda ang tao ayon sa aprubadong checklist. Sukatin at ulitin kung hinihingi ng protocol. Itala ang aktuwal na resulta, yunit, oras at konteksto. Ipaabot sa midwife ang resulta at anumang concern.",
+    "narration_en": "Check the device and suitable cuff. Ask permission and prepare the person using the approved checklist. Measure and repeat if the protocol requires it. Record the actual reading, units, time and context. Tell the midwife the result and any concern."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang tugon",
+    "heading_en": "Choose a response",
+    "display_fil": "Piliin ang tugon\nPumili muna ng sagot.",
+    "display_en": "Choose a response\nChoose an answer first.",
+    "check": {
+      "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+      "prompt_en": "What should the BHW do in this situation?",
+      "options": [
+        {
+          "fil": "Manghula ng resulta o sabihing normal ito kahit hindi pa nasuri sa protocol.",
+          "en": "Guess the reading or call it normal before checking the protocol."
+        },
+        {
+          "fil": "Suriin ang aparato at angkop na cuff.",
+          "en": "Check the device and suitable cuff."
+        },
+        {
+          "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+          "en": "Delay without a plan or follow-up."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+      "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+    },
+    "narration_fil": "Pumili muna ng sagot. Pagkatapos, basahin ang dahilan.",
+    "narration_en": "Choose an answer first. Then read the reason."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa",
+    "heading_en": "Worked example",
+    "display_fil": "Halimbawa\nTiningnan ni Amira ang kondisyon ng gamit bago magsimula.",
+    "display_en": "Worked example\nAmira checks the equipment before starting.",
+    "check": null,
+    "narration_fil": "Tiningnan ni Amira ang kondisyon ng gamit bago magsimula. Ipinaliwanag niya ang gagawin at sinunod ang checklist. Isinulat niya ang nabasang numero sa halip na hulaan. Sinabi niya sa midwife ang resulta nang walang sariling diagnosis.",
+    "narration_en": "Amira checks the equipment before starting. She explains the procedure and follows the checklist. She records the number she actually reads instead of guessing. She tells the midwife the result without making her own diagnosis."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "comparison",
+    "heading_fil": "Saklaw at kaligtasan",
+    "heading_en": "Scope and safety",
+    "display_fil": "Saklaw at kaligtasan\nHuwag gumamit ng sirang aparato o hindi angkop na cuff.",
+    "display_en": "Scope and safety\nDo not use a faulty device or unsuitable cuff.",
+    "check": null,
+    "narration_fil": "Huwag gumamit ng sirang aparato o hindi angkop na cuff. Huwag magbigay ng diagnosis, gamot o katiyakang ligtas ang resulta batay sa iisang sukat. Gamitin ang kasalukuyang lokal na patakaran para sa agarang pag-refer.",
+    "narration_en": "Do not use a faulty device or unsuitable cuff. Do not diagnose, prescribe or assure someone that one reading is safe. Use the current local protocol for urgent referral."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa gawain",
+    "heading_en": "Apply the task",
+    "display_fil": "Subukan sa gawain\nPiliin ang kilos na may nakikitang resulta.",
+    "display_en": "Apply the task\nChoose the action with an observable result.",
+    "check": {
+      "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+      "prompt_en": "Which action shows the task was done well?",
+      "options": [
+        {
+          "fil": "Nasunod ang bawat kritikal na hakbang sa aprubadong BP checklist; naitala ang aktuwal na resulta at naipasa ito sa midwife ayon sa protocol.",
+          "en": "Completed each critical step on the approved BP checklist; recorded the actual reading and handed it to the midwife under the protocol."
+        },
+        {
+          "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+          "en": "Say the task is complete without recording an outcome."
+        },
+        {
+          "fil": "Manghula ng resulta o sabihing normal ito kahit hindi pa nasuri sa protocol.",
+          "en": "Guess the reading or call it normal before checking the protocol."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+      "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+    },
+    "narration_fil": "Piliin ang kilos na may nakikitang resulta.",
+    "narration_en": "Choose the action with an observable result."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c3.bp-measurement-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin sa trabaho",
+    "heading_en": "Use this at work",
+    "display_fil": "Gawin sa trabaho\nMagpaobserba sa midwife sa kumpletong return demonstration.",
+    "display_en": "Use this at work\nAsk the midwife to observe a full return demonstration.",
+    "check": null,
+    "narration_fil": "Magpaobserba sa midwife sa kumpletong return demonstration. Ipa-check ang record at ulitin ang hakbang na kailangang ayusin bago magsukat sa totoong serbisyo.",
+    "narration_en": "Ask the midwife to observe a full return demonstration. Have the record checked and repeat any step needing correction before measuring during real service."
+  }
+]

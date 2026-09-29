@@ -1,0 +1,127 @@
+{
+  "source_allocation_hours": 72,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-bhs-services-and-standards",
+      "lesson_key": "bhs-services-and-standards",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 864,
+      "objective_index": 0,
+      "indicator_ref": "lessons/bhs-services-and-standards/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          141
+        ],
+        "F": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "activity-equipment-readiness",
+      "lesson_key": "equipment-readiness",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 864,
+      "objective_index": 1,
+      "indicator_ref": "lessons/equipment-readiness/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          141,
+          142,
+          143
+        ],
+        "F": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "activity-inventory",
+      "lesson_key": "inventory",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 864,
+      "objective_index": 2,
+      "indicator_ref": "lessons/inventory/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          144
+        ],
+        "F": [
+          106
+        ]
+      }
+    },
+    {
+      "id": "activity-bp-apparatus-care",
+      "lesson_key": "bp-apparatus-care",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 864,
+      "objective_index": 3,
+      "indicator_ref": "lessons/bp-apparatus-care/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          144,
+          145
+        ],
+        "F": [
+          106,
+          107
+        ]
+      }
+    },
+    {
+      "id": "activity-medicine-supplies-and-stock-cards",
+      "lesson_key": "medicine-supplies-and-stock-cards",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 864,
+      "objective_index": 4,
+      "indicator_ref": "lessons/medicine-supplies-and-stock-cards/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          145,
+          146
+        ],
+        "F": [
+          106,
+          107
+        ]
+      }
+    }
+  ]
+}

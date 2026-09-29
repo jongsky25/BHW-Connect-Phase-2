@@ -1,0 +1,304 @@
+{
+  "source_allocation_hours": 32,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-environmental-health",
+      "lesson_key": "environmental-health",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 0,
+      "indicator_ref": "lessons/environmental-health/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          81,
+          82,
+          83
+        ],
+        "F": [
+          64,
+          65,
+          66
+        ]
+      }
+    },
+    {
+      "id": "activity-tuberculosis",
+      "lesson_key": "tuberculosis",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 1,
+      "indicator_ref": "lessons/tuberculosis/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          83,
+          84,
+          85
+        ],
+        "F": [
+          67,
+          68
+        ]
+      }
+    },
+    {
+      "id": "activity-dengue",
+      "lesson_key": "dengue",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 2,
+      "indicator_ref": "lessons/dengue/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          85,
+          86,
+          87
+        ],
+        "F": [
+          69,
+          70
+        ]
+      }
+    },
+    {
+      "id": "activity-rabies",
+      "lesson_key": "rabies",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 3,
+      "indicator_ref": "lessons/rabies/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          88
+        ],
+        "F": [
+          71
+        ]
+      }
+    },
+    {
+      "id": "activity-influenza",
+      "lesson_key": "influenza",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 4,
+      "indicator_ref": "lessons/influenza/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          89
+        ],
+        "F": [
+          72
+        ]
+      }
+    },
+    {
+      "id": "activity-hepatitis-a-b-and-c",
+      "lesson_key": "hepatitis-a-b-and-c",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 5,
+      "indicator_ref": "lessons/hepatitis-a-b-and-c/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          89,
+          90
+        ],
+        "F": [
+          73,
+          74
+        ]
+      }
+    },
+    {
+      "id": "activity-leptospirosis",
+      "lesson_key": "leptospirosis",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 6,
+      "indicator_ref": "lessons/leptospirosis/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          90,
+          91
+        ],
+        "F": [
+          75
+        ]
+      }
+    },
+    {
+      "id": "activity-covid-19",
+      "lesson_key": "covid-19",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 7,
+      "indicator_ref": "lessons/covid-19/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          91,
+          92
+        ],
+        "F": [
+          76,
+          77
+        ]
+      }
+    },
+    {
+      "id": "activity-typhoid",
+      "lesson_key": "typhoid",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 8,
+      "indicator_ref": "lessons/typhoid/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          92,
+          93
+        ],
+        "F": [
+          78,
+          79
+        ]
+      }
+    },
+    {
+      "id": "activity-malaria",
+      "lesson_key": "malaria",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 9,
+      "indicator_ref": "lessons/malaria/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          93,
+          94
+        ],
+        "F": [
+          78,
+          79
+        ]
+      }
+    },
+    {
+      "id": "activity-leprosy",
+      "lesson_key": "leprosy",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 10,
+      "indicator_ref": "lessons/leprosy/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          94
+        ],
+        "F": [
+          78,
+          79
+        ]
+      }
+    },
+    {
+      "id": "activity-filariasis-and-schistosomiasis",
+      "lesson_key": "filariasis-and-schistosomiasis",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 160,
+      "objective_index": 11,
+      "indicator_ref": "lessons/filariasis-and-schistosomiasis/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          94,
+          95
+        ],
+        "F": [
+          78,
+          79
+        ]
+      }
+    }
+  ]
+}

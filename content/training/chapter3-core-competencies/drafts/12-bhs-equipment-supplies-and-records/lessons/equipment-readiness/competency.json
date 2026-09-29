@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang lokal na checklist, itala ang item, kondisyon at may pananagutan, at iulat ang kulang o sira.",
+      "observable_en": "Records item, condition, discrepancy and escalation; distinguishes standard from local stock.",
+      "not_yet_fil": "Markahang kumpleto ang kagamitan nang hindi ito nakikita.",
+      "not_yet_en": "Mark equipment complete without checking it.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang lokal na checklist, itala ang item, kondisyon at may pananagutan, at iulat ang kulang o sira.",
+        "kaya_na_en": "Records item, condition, discrepancy and escalation; distinguishes standard from local stock.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Markahang kumpleto ang kagamitan nang hindi ito nakikita.",
+        "hindi_pa_en": "Mark equipment complete without checking it."
+      }
+    }
+  ]
+}

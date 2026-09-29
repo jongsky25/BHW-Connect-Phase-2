@@ -1,0 +1,187 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Gamit ang kathang-isip na kaso at kasalukuyang lokal na gabay, ulitin ang gawaing kailangan ng pagsasanay sa harap ng supervisor.",
+    "en": "Using a fictional case and current local guide, repeat the task needing practice with a supervisor."
+  },
+  "supervision": {
+    "fil": "Markahan ang parehong observer indicator, magbigay ng feedback at magtakda ng susunod na pagsubok.",
+    "en": "Score the same observer indicator, give feedback and schedule a retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "adolescent-srh-and-sti",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service.",
+            "en": "Does not block access, shame, or disclose private information."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Hadlangan ang pagtatanong o sabihin ito sa iba nang walang batayan.",
+            "en": "Block the question or disclose it to others without basis."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "consent-and-safer-choices",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ipaliwanag na mahalaga ang malayang pahintulot, pakinggan ang hangganan niya, at ituro ang serbisyo para sa mas ligtas na pagpili.",
+            "en": "Centers voluntary decision-making and names a source of further help."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Sabihing kailangang pumayag si Rina dahil partner niya iyon.",
+            "en": "Tell Rina she must agree because they are partners."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "family-planning",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ilarawan ang malalawak na uri ng pamamaraan gamit ang kasalukuyang gabay at ayusin ang counseling sa provider ayon sa pasiya niya.",
+            "en": "Explains choice without selecting or prescribing a method for the resident."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Piliin ang pamamaraan para kay Mara nang hindi sinusuri ang kanyang pangangailangan.",
+            "en": "Choose a method for Mara without assessing her needs."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "prenatal-identification-and-support",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Iugnay si Dina sa kasalukuyang prenatal service, alamin ang anumang concern na kailangang madaliin, at ayusin ang follow-up.",
+            "en": "Communicates urgency where indicated and refers through the approved pathway."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Hintaying malapit na ang panganganak bago magpatingin.",
+            "en": "Wait until delivery is near before seeking care."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "birth-and-immediate-care",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang aprubadong birth/referral plan, ihanda ang handover sa kwalipikadong team, at ipaliwanag ang sariling saklaw.",
+            "en": "Avoids representing unsupervised clinical procedures as BHW tasks."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Mag-alok na gawin nang mag-isa ang klinikal na hakbang na kailangan ng trained provider.",
+            "en": "Offer to perform a clinical procedure alone that requires a trained provider."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "postnatal-follow-up",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tingnan ang kasalukuyang postnatal schedule at danger guidance, ayusin ang pagbisita, at i-refer ang concern.",
+            "en": "Uses reviewed timing and referral rules, confirms local service availability."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Mangakong hindi na kailangan ang check-up kung mukhang maayos silang dalawa.",
+            "en": "Promise no check-up is needed because both look well."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "newborn-health",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ibahagi ang nasuring essential-care message, magpa-teach-back, at iugnay sa provider kung may concern.",
+            "en": "Gives a current reviewed message and recognizes a referral trigger."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Balewalain ang iniuulat na pagbabago dahil normal daw sa lahat ng sanggol.",
+            "en": "Dismiss a reported change as normal for every newborn."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    }
+  ]
+}

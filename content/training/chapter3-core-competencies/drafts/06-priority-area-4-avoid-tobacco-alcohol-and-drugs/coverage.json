@@ -1,0 +1,22 @@
+{
+  "concepts": [
+    {
+      "id": "c3.tobacco-control",
+      "statement_en": "Given a smoker's concern or community exposure, give a reviewed prevention/cessation message and support route.",
+      "source": "R99, R100, F83, F84",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.substance-use-concern",
+      "statement_en": "Given a disclosure or family concern, respond without diagnosis or shame and connect to qualified help.",
+      "source": "R100, R101, F85",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.alcohol-use-concern",
+      "statement_en": "Given an alcohol-related concern, identify risk, a safe conversation, and referral boundary.",
+      "source": "R100, R101, F86",
+      "redundant_with": null
+    }
+  ]
+}

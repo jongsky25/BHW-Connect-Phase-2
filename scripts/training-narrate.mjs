@@ -70,7 +70,7 @@ function parseArgs(argv) {
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (args.provider && !["edge", "gemini"].includes(args.provider)) throw new Error("--provider must be edge or gemini");
-  if (args.chapter && !["1", "2"].includes(args.chapter)) throw new Error("--chapter must be 1 or 2");
+  if (args.chapter && !["1", "2", "3"].includes(args.chapter)) throw new Error("--chapter must be 1, 2 or 3");
   return args;
 }
 
@@ -86,8 +86,8 @@ async function pool(items, size, work) {
   );
 }
 
-// Chapter II subchapters are keyed "chapter2/..."; Chapter I keys have no prefix.
-const inChapter = (key, chapter) => !chapter || (chapter === "2") === key.startsWith("chapter2/");
+// Chapter II and III subchapters have distinct prefixes; Chapter I has none.
+const inChapter = (key, chapter) => !chapter || (chapter === "1" ? !key.startsWith("chapter2/") && !key.startsWith("chapter3/") : key.startsWith(`chapter${chapter}/`));
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));

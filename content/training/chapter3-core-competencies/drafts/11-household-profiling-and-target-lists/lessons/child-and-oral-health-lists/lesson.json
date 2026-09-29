@@ -1,0 +1,174 @@
+{
+  "manifest": {
+    "lesson_key": "child-and-oral-health-lists",
+    "position": 3,
+    "title_fil": "Listahan ng bata at oral health",
+    "title_en": "Child and oral-health lists",
+    "objectives_fil": [
+      "Iuri ang bawat bata ayon sa kasalukuyang form, i-update ang target list, at markahan ang follow-up na kailangang kumpirmahin."
+    ],
+    "objectives_en": [
+      "Given fictional ages and services, update newborn, infant, child/adolescent and oral-health target lists."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May bagong silang, sanggol at batang nasa paaralan sa fictional household file.",
+      "takeaway_en": "A fictional file includes a newborn, infant and school-age child.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Iuri ang bawat bata ayon sa kasalukuyang form, i-update ang target list, at markahan ang follow-up na kailangang kumpirmahin.",
+      "takeaway_en": "Update newborn, infant, child/adolescent and oral-health target lists.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili muna ng sagot.",
+      "takeaway_en": "Choose an answer first.",
+      "check": {
+        "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+        "prompt_en": "What should the BHW do in this situation?",
+        "options": [
+          {
+            "fil": "Ilagay ang lahat sa parehong age group kahit magkakaiba ang edad.",
+            "en": "Put all children in the same age group despite different ages."
+          },
+          {
+            "fil": "Iuri ang bawat bata ayon sa kasalukuyang form, i-update ang target list, at markahan ang follow-up na kailangang kumpirmahin.",
+            "en": "Update newborn, infant, child/adolescent and oral-health target lists."
+          },
+          {
+            "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+            "en": "Delay without a plan or follow-up."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+        "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+      "takeaway_en": "In this fictional case, Mira checks the current local guide before responding.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Iwasan ang ganitong kilos: Ilagay ang lahat sa parehong age group kahit magkakaiba ang edad.",
+      "takeaway_en": "Avoid this action: Put all children in the same age group despite different ages.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Piliin ang kilos na may nakikitang resulta.",
+      "takeaway_en": "Choose the action with an observable result.",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Iuri ang bawat bata ayon sa kasalukuyang form, i-update ang target list, at markahan ang follow-up na kailangang kumpirmahin.",
+            "en": "Classifies age group correctly under current forms and flags due follow-up."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Ilagay ang lahat sa parehong age group kahit magkakaiba ang edad.",
+            "en": "Put all children in the same age group despite different ages."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c3.child-and-oral-health-lists"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+      "takeaway_en": "At the next supervised practice, use this fictional case.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c3.child-and-oral-health-lists",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual (2022)",
+      "pdf_pages": [
+        135,
+        136
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "BHW Facilitator Guide (2022)",
+      "pdf_pages": [
+        103,
+        104,
+        105
+      ]
+    }
+  ],
+  "assets": []
+}

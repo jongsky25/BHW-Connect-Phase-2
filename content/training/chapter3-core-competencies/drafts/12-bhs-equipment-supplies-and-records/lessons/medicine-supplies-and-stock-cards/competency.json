@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: I-update ang stock card mula sa aktuwal na resibo at issue, sundin ang aprubadong pag-aayos, at iulat ang expired o sirang suplay.",
+      "observable_en": "Balances counts, applies approved stock rotation, and reports damaged/expired stock.",
+      "not_yet_fil": "Itago ang expired na suplay sa unahan at huwag itala ang nailabas.",
+      "not_yet_en": "Place expired stock up front and omit issued items from the record.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: I-update ang stock card mula sa aktuwal na resibo at issue, sundin ang aprubadong pag-aayos, at iulat ang expired o sirang suplay.",
+        "kaya_na_en": "Balances counts, applies approved stock rotation, and reports damaged/expired stock.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Itago ang expired na suplay sa unahan at huwag itala ang nailabas.",
+        "hindi_pa_en": "Place expired stock up front and omit issued items from the record."
+      }
+    }
+  ]
+}

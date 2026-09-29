@@ -1,0 +1,24 @@
+{
+  "purpose": "Complete with the authorized local health team after draft staging and before publication. Do not place personal client data here.",
+  "org_unit": null,
+  "verified_by": null,
+  "verified_on": null,
+  "service_directory": {
+    "bhs": { "name": null, "address": null, "contact": null, "hours": null, "services": [] },
+    "pcf_rhu": { "name": null, "address": null, "contact": null, "hours": null, "services": [] },
+    "emergency_route": { "contact": null, "transport": null, "handover_channel": null },
+    "animal_bite_route": { "facility": null, "contact": null, "hours": null },
+    "tb_service": { "facility": null, "contact": null, "hours": null },
+    "mental_health_route": { "facility": null, "contact": null, "hours": null },
+    "violence_protection_route": { "contact": null, "privacy_procedure": null }
+  },
+  "current_materials": {
+    "immunization_schedule": null,
+    "bp_measurement_protocol": null,
+    "nutrition_growth_protocol": null,
+    "fhsis_forms_version": null,
+    "bhs_inventory_standard": null,
+    "medicine_stock_protocol": null
+  },
+  "publication_allowed": false
+}

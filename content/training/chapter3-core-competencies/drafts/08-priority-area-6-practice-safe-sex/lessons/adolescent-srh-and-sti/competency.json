@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service.",
+      "observable_en": "Does not block access, shame, or disclose private information.",
+      "not_yet_fil": "Hadlangan ang pagtatanong o sabihin ito sa iba nang walang batayan.",
+      "not_yet_en": "Block the question or disclose it to others without basis.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service.",
+        "kaya_na_en": "Does not block access, shame, or disclose private information.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Hadlangan ang pagtatanong o sabihin ito sa iba nang walang batayan.",
+        "hindi_pa_en": "Block the question or disclose it to others without basis."
+      }
+    }
+  ]
+}

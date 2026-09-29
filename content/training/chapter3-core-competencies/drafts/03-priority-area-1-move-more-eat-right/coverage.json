@@ -1,0 +1,52 @@
+{
+  "concepts": [
+    {
+      "id": "c3.nutrition-and-activity-conversation",
+      "statement_en": "Given a household's routine, select one feasible reviewed food or activity message without shaming.",
+      "source": "R69, F53",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.breastfeeding-support",
+      "statement_en": "Given a breastfeeding concern, provide approved counseling and identify when qualified help is needed.",
+      "source": "R69, R70, R71, R72, F54, F55",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.complementary-feeding",
+      "statement_en": "Given a child's age and household food options, explain the reviewed age-appropriate feeding approach.",
+      "source": "R72, R73, F56",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.garantisadong-pambata",
+      "statement_en": "Given a child program card, identify the due service and address a caregiver concern using current local program guidance.",
+      "source": "R73, R74, F57",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.pinggang-pinoy-and-oral-health",
+      "statement_en": "Given an age-group meal and oral-care scenario, demonstrate a reviewed education message and service link.",
+      "source": "R74, R75, F58, F59",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.hypertension",
+      "statement_en": "Given a fictional BP concern, explain follow-up and refer according to a reviewed protocol.",
+      "source": "R76, R77, F60",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.diabetes",
+      "statement_en": "Given a fictional diabetes risk or symptom concern, provide a reviewed prevention/referral message.",
+      "source": "R77, R78, F61",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.cancer-prevention-and-screening",
+      "statement_en": "Given a resident's question, explain a reviewed risk-reduction or screening route for colon, lung, cervical, breast, or prostate cancer.",
+      "source": "R78, R79, R80, F62, F63",
+      "redundant_with": null
+    }
+  ]
+}

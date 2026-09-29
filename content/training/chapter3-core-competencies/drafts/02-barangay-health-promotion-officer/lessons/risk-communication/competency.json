@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihiwalay ang kumpirmadong impormasyon sa hindi pa tiyak; sabihin ang ligtas na hakbang at opisyal na update channel.",
+      "observable_en": "Separates confirmed facts from unknowns, gives a feasible action, and names where to check updates.",
+      "not_yet_fil": "Sabihing tiyak ang hindi pa kumpirmadong balita upang mapabilis ang kilos.",
+      "not_yet_en": "Present an unconfirmed report as certain to make people act.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihiwalay ang kumpirmadong impormasyon sa hindi pa tiyak; sabihin ang ligtas na hakbang at opisyal na update channel.",
+        "kaya_na_en": "Separates confirmed facts from unknowns, gives a feasible action, and names where to check updates.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Sabihing tiyak ang hindi pa kumpirmadong balita upang mapabilis ang kilos.",
+        "hindi_pa_en": "Present an unconfirmed report as certain to make people act."
+      }
+    }
+  ]
+}

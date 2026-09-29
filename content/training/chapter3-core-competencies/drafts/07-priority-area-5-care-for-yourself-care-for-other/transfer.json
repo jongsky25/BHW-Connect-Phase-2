@@ -1,0 +1,67 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Gamit ang kathang-isip na kaso at kasalukuyang lokal na gabay, ulitin ang gawaing kailangan ng pagsasanay sa harap ng supervisor.",
+    "en": "Using a fictional case and current local guide, repeat the task needing practice with a supervisor."
+  },
+  "supervision": {
+    "fil": "Markahan ang parehong observer indicator, magbigay ng feedback at magtakda ng susunod na pagsubok.",
+    "en": "Score the same observer indicator, give feedback and schedule a retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "mental-wellbeing-and-stigma",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Makinig nang may paggalang, tanungin kung anong tulong ang kailangan, at ipaliwanag ang nasuring suporta sa komunidad.",
+            "en": "Listens, checks safety and consent, and avoids diagnosis or dismissive myths."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Sabihing nag-iinarte lamang si Lea at huwag siyang pakinggan.",
+            "en": "Dismiss Lea's concern as attention seeking."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "mental-health-escalation-and-support",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Suriin ang agarang kaligtasan ayon sa protocol, panatilihin ang pribadong usapan, at gamitin ang angkop na referral route.",
+            "en": "Protects privacy, communicates necessary facts, and seeks qualified help when indicated."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Ipagpaliban ang agarang tulong o ipagsabi ang pribadong concern.",
+            "en": "Delay urgent help or disclose the private concern."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    }
+  ]
+}

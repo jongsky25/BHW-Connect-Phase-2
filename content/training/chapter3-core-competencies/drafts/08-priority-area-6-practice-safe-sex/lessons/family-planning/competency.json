@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ilarawan ang malalawak na uri ng pamamaraan gamit ang kasalukuyang gabay at ayusin ang counseling sa provider ayon sa pasiya niya.",
+      "observable_en": "Explains choice without selecting or prescribing a method for the resident.",
+      "not_yet_fil": "Piliin ang pamamaraan para kay Mara nang hindi sinusuri ang kanyang pangangailangan.",
+      "not_yet_en": "Choose a method for Mara without assessing her needs.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ilarawan ang malalawak na uri ng pamamaraan gamit ang kasalukuyang gabay at ayusin ang counseling sa provider ayon sa pasiya niya.",
+        "kaya_na_en": "Explains choice without selecting or prescribing a method for the resident.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Piliin ang pamamaraan para kay Mara nang hindi sinusuri ang kanyang pangangailangan.",
+        "hindi_pa_en": "Choose a method for Mara without assessing her needs."
+      }
+    }
+  ]
+}

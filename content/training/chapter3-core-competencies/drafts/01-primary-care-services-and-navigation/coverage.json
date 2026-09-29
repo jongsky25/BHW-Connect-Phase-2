@@ -1,0 +1,22 @@
+{
+  "concepts": [
+    {
+      "id": "c3.services-by-facility",
+      "statement_en": "Given a resident request and an approved local directory, identify the appropriate BHS/PCF/RHU service category and limits of the BHW role.",
+      "source": "R62, R63, F45, F46",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.life-stage-needs",
+      "statement_en": "Given three life-stage cases, identify a relevant service need and the information to confirm locally.",
+      "source": "R64, F46",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.referral-and-handover",
+      "statement_en": "Given an uncertain service request, use the verified local directory to connect the resident to a qualified provider and hand over essential facts with consent.",
+      "source": "R65, F46",
+      "redundant_with": null
+    }
+  ]
+}

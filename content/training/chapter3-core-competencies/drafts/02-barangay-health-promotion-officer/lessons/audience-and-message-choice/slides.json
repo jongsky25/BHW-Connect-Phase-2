@@ -1,0 +1,147 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Ang sitwasyon\nMagpapalaganap si BHW Mira ng aprubadong mensahe sa nakatatanda at kabataang magkakaiba ang gamit na media.",
+    "display_en": "The situation\nMira needs to share an approved message with older and younger residents who use different media.",
+    "check": null,
+    "narration_fil": "Magpapalaganap si BHW Mira ng aprubadong mensahe sa nakatatanda at kabataang magkakaiba ang gamit na media.",
+    "narration_en": "Mira needs to share an approved message with older and younger residents who use different media."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Gawin at sabihin\nTukuyin ang kausap, hadlang at angkop na channel; gamitin lamang ang mensaheng nasuri ng health team.",
+    "display_en": "What to do and say\nChoose a message/channel/material suited to each.",
+    "check": null,
+    "narration_fil": "Tukuyin ang kausap, hadlang at angkop na channel; gamitin lamang ang mensaheng nasuri ng health team.",
+    "narration_en": "Choose a message/channel/material suited to each."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang tugon",
+    "heading_en": "Choose a response",
+    "display_fil": "Piliin ang tugon\nPumili muna ng sagot.",
+    "display_en": "Choose a response\nChoose an answer first.",
+    "check": {
+      "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+      "prompt_en": "What should the BHW do in this situation?",
+      "options": [
+        {
+          "fil": "Ipadala ang parehong hindi nasuring post sa lahat ng grupo.",
+          "en": "Send the same unreviewed post to every group."
+        },
+        {
+          "fil": "Tukuyin ang kausap, hadlang at angkop na channel; gamitin lamang ang mensaheng nasuri ng health team.",
+          "en": "Choose a message/channel/material suited to each."
+        },
+        {
+          "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+          "en": "Delay without a plan or follow-up."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+      "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+    },
+    "narration_fil": "Pumili muna ng sagot. Pagkatapos, basahin ang dahilan.",
+    "narration_en": "Choose an answer first. Then read the reason."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa",
+    "heading_en": "Worked example",
+    "display_fil": "Halimbawa\nSa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+    "display_en": "Worked example\nIn this fictional case, Mira checks the current local guide before responding.",
+    "check": null,
+    "narration_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot. Ito ang ipinakita niya sa observer: Tukuyin ang kausap, hadlang at angkop na channel; gamitin lamang ang mensaheng nasuri ng health team.",
+    "narration_en": "In this fictional case, Mira checks the current local guide before responding. The observer sees that she states the audience, barrier, reviewed message, and why the channel fits."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "comparison",
+    "heading_fil": "Saklaw at kaligtasan",
+    "heading_en": "Scope and safety",
+    "display_fil": "Saklaw at kaligtasan\nIwasan ang ganitong kilos: Ipadala ang parehong hindi nasuring post sa lahat ng grupo.",
+    "display_en": "Scope and safety\nAvoid this action: Send the same unreviewed post to every group.",
+    "check": null,
+    "narration_fil": "Iwasan ang ganitong kilos: Ipadala ang parehong hindi nasuring post sa lahat ng grupo. Kung hindi tiyak ang susunod na hakbang, humingi ng gabay sa midwife o aprubadong lokal na protocol.",
+    "narration_en": "Avoid this action: Send the same unreviewed post to every group. If the next step is uncertain, consult the midwife or approved local protocol."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa gawain",
+    "heading_en": "Apply the task",
+    "display_fil": "Subukan sa gawain\nPiliin ang kilos na may nakikitang resulta.",
+    "display_en": "Apply the task\nChoose the action with an observable result.",
+    "check": {
+      "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+      "prompt_en": "Which action shows the task was done well?",
+      "options": [
+        {
+          "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang kausap, hadlang at angkop na channel; gamitin lamang ang mensaheng nasuri ng health team.",
+          "en": "States the audience, barrier, reviewed message, and why the channel fits."
+        },
+        {
+          "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+          "en": "Say the task is complete without recording an outcome."
+        },
+        {
+          "fil": "Ipadala ang parehong hindi nasuring post sa lahat ng grupo.",
+          "en": "Send the same unreviewed post to every group."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+      "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+    },
+    "narration_fil": "Piliin ang kilos na may nakikitang resulta.",
+    "narration_en": "Choose the action with an observable result."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c3.audience-and-message-choice"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin sa trabaho",
+    "heading_en": "Use this at work",
+    "display_fil": "Gawin sa trabaho\nSa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+    "display_en": "Use this at work\nAt the next supervised practice, use this fictional case.",
+    "check": null,
+    "narration_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito. Ipasuri ang kilos sa observer sheet at ulitin ang hakbang na kailangang ayusin.",
+    "narration_en": "At the next supervised practice, use this fictional case. Ask the observer to score the action on the observer sheet, then repeat the step that needs correction."
+  }
+]

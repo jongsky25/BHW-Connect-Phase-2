@@ -1,0 +1,16 @@
+{
+  "concepts": [
+    {
+      "id": "c3.childhood-immunization-follow-up",
+      "statement_en": "Given a fictional child card and the current approved schedule, identify a due/missed visit and counsel the caregiver.",
+      "source": "R96, R97, F80, F81",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.adult-and-older-person-vaccination",
+      "statement_en": "Given an adult concern, identify which current local vaccine program to ask about and where to refer.",
+      "source": "R97, R98, F82",
+      "redundant_with": null
+    }
+  ]
+}

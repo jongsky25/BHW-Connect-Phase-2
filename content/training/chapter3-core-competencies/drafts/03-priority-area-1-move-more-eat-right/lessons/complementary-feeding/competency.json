@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang kasalukuyang age guide at mga pagkaing mayroon sa bahay; ipasabi kay Jona ang susunod na hakbang.",
+      "observable_en": "Uses the approved age guide, checks comprehension, and avoids unverified quantities.",
+      "not_yet_fil": "Gumamit ng lumang dami o iskedyul nang hindi sinusuri sa aprubadong gabay.",
+      "not_yet_en": "Use an old quantity or schedule without checking the approved guide.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang kasalukuyang age guide at mga pagkaing mayroon sa bahay; ipasabi kay Jona ang susunod na hakbang.",
+        "kaya_na_en": "Uses the approved age guide, checks comprehension, and avoids unverified quantities.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Gumamit ng lumang dami o iskedyul nang hindi sinusuri sa aprubadong gabay.",
+        "hindi_pa_en": "Use an old quantity or schedule without checking the approved guide."
+      }
+    }
+  ]
+}

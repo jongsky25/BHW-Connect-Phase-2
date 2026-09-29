@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang uri ng concern, gumamit ng kasalukuyang screening guidance, at iugnay sa provider na makapagpapayo.",
+      "observable_en": "Selects a relevant reviewed message, avoids unsupported age/interval claims, and links to a provider.",
+      "not_yet_fil": "Ibigay ang edad at pagitan ng screening mula sa lumang chart nang hindi kinukumpirma.",
+      "not_yet_en": "Give screening ages and intervals from an old chart without checking.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang uri ng concern, gumamit ng kasalukuyang screening guidance, at iugnay sa provider na makapagpapayo.",
+        "kaya_na_en": "Selects a relevant reviewed message, avoids unsupported age/interval claims, and links to a provider.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Ibigay ang edad at pagitan ng screening mula sa lumang chart nang hindi kinukumpirma.",
+        "hindi_pa_en": "Give screening ages and intervals from an old chart without checking."
+      }
+    }
+  ]
+}

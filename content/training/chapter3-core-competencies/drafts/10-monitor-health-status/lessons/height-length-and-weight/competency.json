@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Piliin ang angkop na kagamitan, sukatin nang ligtas at may paggalang, at isulat ang tamang yunit.",
+      "observable_en": "Selects correct equipment, positions safely, reads and records units accurately.",
+      "not_yet_fil": "Gamitin ang adult height tool sa sanggol o hulaan ang timbang.",
+      "not_yet_en": "Use an adult height tool for an infant or guess the weight.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Piliin ang angkop na kagamitan, sukatin nang ligtas at may paggalang, at isulat ang tamang yunit.",
+        "kaya_na_en": "Selects correct equipment, positions safely, reads and records units accurately.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Gamitin ang adult height tool sa sanggol o hulaan ang timbang.",
+        "hindi_pa_en": "Use an adult height tool for an infant or guess the weight."
+      }
+    }
+  ]
+}

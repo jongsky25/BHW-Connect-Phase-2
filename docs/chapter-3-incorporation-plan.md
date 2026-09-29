@@ -1,0 +1,64 @@
+# BHW Connect Phase 2 — Chapter III incorporation plan
+
+**Planning draft, 29 September 2026.** Source review and GitHub inspection only. No application, database, or live-system calls or changes were made.
+
+**Execution update, 29 September 2026:** The owner chose 392 facilitated hours and changed the sequence: prepare the entire draft package offline, wait for an explicit migration trigger, stage all modules as unpublished drafts, then review them in the system. The current package and exact migration boundary are documented in `content/training/chapter3-core-competencies/README.md` and `docs/chapter-3-draft-staging-runbook.md`. The earlier review-first recommendations below remain historical planning notes.
+
+**Crosswalk drafted:** [Chapter III objective–practice–indicator crosswalk](chapter-3-objective-practice-crosswalk.md) maps 65 provisional lesson boundaries across the 12 units and includes complete planning designs for 3.1.3 service referral and 3.10.1 BP measurement. This is an editorial map; lesson count, clinical claims, and observation criteria still require review.
+
+## Decision in brief
+
+Add **Kabanata III: Ang BHW bilang Tagapagsulong ng Primary Care** as the final chapter of the existing BHW Reference Manual course. Keep the existing chapter → subchapter → short lesson experience and bilingual Read/Slides, practice, facilitator, and progress conventions. Organize Chapter III around tasks a BHW performs, while retaining every substantive manual topic in a source crosswalk. Treat digital study as preparation and reinforcement for supervised practice; it does not itself establish the guide's hundreds of training hours or practical competence.
+
+Use `R` for the one-based PDF page of *BHW REFERENCE MANUAL.pdf* (150 pages), and `F` for the one-based PDF page of *FACILITATOR GUIDE-Oct11 (1).pdf* (126 pages). These are the supplied 2022 publications, not current clinical authorization. Chapter III begins at R61; substantive material runs R62–146. The guide's core competency coverage is F44–107.
+
+## Proposed chapter map
+
+The numbered boundaries below are **design proposals**, not printed manual subchapter numbers. Final lesson count follows a concept-by-concept crosswalk and task analysis. Each unit should have short Filipino and English lessons, independently written Read and Slides, scenario checks, a private facilitator guide, an observation rubric, printable practice material, a job aid, and a workplace follow-up task.
+
+| Proposed unit | Source coverage | BHW task and observed practice |
+|---|---|---|
+| **3.1 Primary care services and navigation** | R63–65; F45–46 | Distinguish BHS, PCF/RHU, population and individual services; use life-stage needs and a locally verified service directory to make a safe referral/handover. Do not promise an unverified service. |
+| **3.2 BHW as barangay health promotion officer** | R65–68; F47–49 | Identify social determinants, listen and give feedback, adapt a message to an audience, and plan risk communication. Reuse Chapter I communication and Chapter II mobilization as refreshers while teaching the new HEPO task in full. |
+| **3.3 Move More, Eat Right** | R69–80; F53–63 | Household teaching and referral cases for breastfeeding, complementary feeding, GP, Pinggang Pinoy, oral health, hypertension, diabetes, and cancer. Include supervised demonstrations only for approved skills. |
+| **3.4 Be Clean, Live Sustainably** | R81–95; F64–79 | Explain water, sanitation, food safety, waste, and the listed communicable diseases; practice a household risk conversation and program-specific referral or follow-up. Keep locally relevant endemic diseases traceable even if some are optional for an LGU. |
+| **3.5 Get Vaccinated** | R96–98; F80–82 | Use a reviewed current schedule and a fictional client record to identify due or missed vaccinations, answer concerns, and refer. The 2020 chart in R97 is source evidence, not the release-day schedule. |
+| **3.6 Avoid tobacco, alcohol, and drugs** | R99–101; F83–86 | Conduct a non-stigmatizing conversation, identify a service or support route, and propose a feasible community prevention action. |
+| **3.7 Care for Yourself, Care for Others** | R102–104; F87–89 | Recognize when a person needs support; listen without diagnosis, protect confidentiality, and connect to the locally verified mental health pathway. |
+| **3.8 Practice Safe Sex** | R105–114; F90–98 | Respond respectfully to adolescent and adult SRH questions; cover STI, family planning, pregnancy, safe motherhood, and newborn health with current referral and scope boundaries. |
+| **3.9 Do No Harm, Put Safety First** | R115–119; F99–100 | Use a safety and referral scenario covering violence prevention, older persons, fireworks, and road safety, with careful privacy and escalation. |
+| **3.10 Monitor health status** | R120–130; F101–102 | Demonstrate BP, pulse, respiratory rate, temperature, height/length, weight, growth-chart and MUAC work with approved equipment and trained observation; record, interpret within role, and refer. |
+| **3.11 Household profiling and target lists** | R131–140; F103–105 | Complete fictional household and target-client forms, check completeness/accuracy, update lists, and explain confidential handover using the currently adopted FHSIS/local forms. |
+| **3.12 BHS equipment, supplies, and records** | R141–146; F106–107 | Inspect a BHS checklist, prepare inventory and stock cards, demonstrate reviewed sphygmomanometer care, identify storage problems, and report corrective action. |
+
+This map preserves all seven health promotion priority areas as distinct navigation units and the three operational competencies that follow them. Several units will need multiple short lessons. Author from **observable work tasks first**, then split only where a learner can practice and check a distinct decision or action. Do not turn every disease paragraph into an isolated fact page.
+
+## Competency and time reconciliation
+
+F45 presents five core competency groups and a **384-hour** total: primary care/navigation 8; two education/household-help competencies at 72 each (144 together); monitoring 64; records 96; equipment/supplies 72. F50 explicitly assigns **144 hours** across the seven priority areas: 40, 32, 20, 12, 12, 16, and 12 hours. Those seven figures sum to 144. F101, however, says monitoring takes **72 hours**, and its detailed 8 + 16 + 48-hour table also totals 72. Using that detail makes the chapter total **392**, not 384. **Planning decision, 29 September 2026:** the course owner chose **392 hours** as the Chapter III planning basis, using the detailed monitoring allocation. Retain the 384-hour overview discrepancy in the source record; confirm the formal training timetable and any TESDA claim with the curriculum owner before publication. F106's final 24-hour row is labeled sphygmomanometer maintenance but its activities describe medicine stock cards and organizing medicine storage; verify the intended label. The app should track digital lesson progress separately from supervised hours and demonstrated competency.
+
+## Content and policy review queue
+
+1. **Current clinical/program rules:** Recheck vaccination schedules, BP categories and measurement technique, growth thresholds, GP/deworming, TB and other communicable disease pathways, NCD screening, family planning, maternal/newborn care, mental health, and violence-related referrals against current DOH/PhilHealth/LGU rules. The guide itself tells facilitators to check program updates (F52), and the manual's vaccine chart cites 2020 guidance (R97). Mark each reviewed claim with source, date, reviewer, and disposition. No unreviewed algorithm, dose, cut-off, or promise of a free service should reach learners.
+2. **Local operating information:** Confirm BHS/RHU services, hours, contacts, transport, referral channels, emergency routes, supplies, and LGU-specific forms before local release. Keep these in maintained local slots rather than hardcoding them into general lessons.
+3. **Scope and privacy:** State which actions are BHW education, observation, or referral and which require qualified supervision. Use synthetic client records for practice and preview. Keep identifiable household/health data out of content files, analytics examples, and review artifacts. Restrict facilitator answer keys and observation notes to authorized staff views.
+4. **Figures and forms:** Visually recheck image-heavy source pages and replace dated charts with approved, legible, accessible versions. The R97 schedule and the guide's hour tables cannot be validated from plain text extraction alone. Provide text equivalents and alt text.
+5. **Cross-chapter overlap:** Link to Chapter I for roles, communication, UHC and record basics; Chapter II for IPC, first aid, community mobilization and disaster response. Chapter III must still teach its own primary care, program counseling, monitoring, records, and BHS operations outcomes. Share reviewed claims across lessons, assessments and KB rather than maintaining conflicting copies.
+
+## Integration with the GitHub course
+
+Read-only GitHub `main` snapshot: [`jongsky25/BHW-Connect-Phase-2`](https://github.com/jongsky25/BHW-Connect-Phase-2), commit `8b0e91a` on 29 September 2026. `content/training/day1-basic-competencies/program.json` reserves `chapter-3` with no delivery course and `availability: unavailable`; the assessor curriculum code and tests also expect Chapter III to be unavailable. No Chapter III authoring package was found. Chapter II has 55 authored lesson drafts and a 25 September publication record in the repository. Repository manifests contain editorial or historical availability values, so this inspection **does not establish the current live state**.
+
+Create a versioned Chapter III package alongside the Chapter II package, using stable chapter/subchapter/lesson keys, source-page IDs, reviewed claim records, bilingual lesson material, private guides, practice/rubric assets, and a chapter blueprint. Reuse the existing lesson schema and reader where they fit; assess a schema extension only when Chapter III's observation, local-directory, or form practice needs cannot be represented cleanly. Preserve Chapter I/II IDs, historical progress, assessment/certificate scope, and publication state. Preview and validate locally or in a dedicated disposable environment. Any later staging/publication needs a separately reviewed release plan with an explicit target and rollback record; keep the production/live system untouched during planning and authoring.
+
+The repository's `docs/capacity-building-content-standard.md` is explicitly **proposed**. Use its task-first design, observable indicators, practice, transfer, and review gates as authoring targets; do not claim its automated checks or sign-offs already exist. Existing Chapter II source mapping, validation, review, and release records are the practical implementation pattern.
+
+## Recommended sequence
+
+1. **Lock the map.** Build a line-by-line concept inventory for R62–146 and F45–107. For each concept: unit, lesson, objective, practice, observed indicator, source claim, and any documented exclusion or local variation. Use the agreed 392-hour planning basis and retain the 384-hour source discrepancy; verify the F106 table label before training-time claims.
+2. **Design two complete samples.** First, a 3.1 service-navigation case with a local-directory slot and referral handover. Second, a 3.10 measurement/recording lesson with a supervised return demonstration and observation rubric. These exercise both the education and practical-skills patterns before bulk authoring.
+3. **Author in risk-aware waves.** Start with 3.1–3.2 and 3.11–3.12, then the seven priority areas, while current-source review for clinical content proceeds. Produce bilingual Read/Slides, checks, staff guides, printable practice, job aids, and transfer prompts together.
+4. **Review and pilot.** Obtain named content and clinical/program review where relevant, local validation, language/read-aloud review, observed BHW/facilitator pilot, mobile/accessibility review, and a documented disposition of every source discrepancy. Record evidence and actual approvals; do not infer them from a draft or a passing test.
+5. **Integrate and rehearse.** In an isolated checkout and non-production test environment, validate source coverage, schema compatibility, navigation, draft visibility, staff privacy, progress preservation, assessment scope, and failure/rollback paths. Release only after a concrete reviewed publication decision.
+
+**Next planning review:** walk through the 65 provisional boundaries and the two sample designs with BHWs, a facilitator, and the appropriate clinical/program reviewers. Record merges, local variations, claim decisions, and finalized observation criteria before writing learner lessons.

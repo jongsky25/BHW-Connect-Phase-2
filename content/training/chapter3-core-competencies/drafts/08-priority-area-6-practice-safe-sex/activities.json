@@ -1,0 +1,190 @@
+{
+  "source_allocation_hours": 16,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-adolescent-srh-and-sti",
+      "lesson_key": "adolescent-srh-and-sti",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 138,
+      "objective_index": 0,
+      "indicator_ref": "lessons/adolescent-srh-and-sti/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          105,
+          106,
+          107
+        ],
+        "F": [
+          90,
+          91,
+          92
+        ]
+      }
+    },
+    {
+      "id": "activity-consent-and-safer-choices",
+      "lesson_key": "consent-and-safer-choices",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 137,
+      "objective_index": 1,
+      "indicator_ref": "lessons/consent-and-safer-choices/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          106,
+          107
+        ],
+        "F": [
+          90,
+          91,
+          92
+        ]
+      }
+    },
+    {
+      "id": "activity-family-planning",
+      "lesson_key": "family-planning",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 137,
+      "objective_index": 2,
+      "indicator_ref": "lessons/family-planning/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          107,
+          108
+        ],
+        "F": [
+          93,
+          94
+        ]
+      }
+    },
+    {
+      "id": "activity-prenatal-identification-and-support",
+      "lesson_key": "prenatal-identification-and-support",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 137,
+      "objective_index": 3,
+      "indicator_ref": "lessons/prenatal-identification-and-support/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          109,
+          110
+        ],
+        "F": [
+          95,
+          96,
+          97
+        ]
+      }
+    },
+    {
+      "id": "activity-birth-and-immediate-care",
+      "lesson_key": "birth-and-immediate-care",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 137,
+      "objective_index": 4,
+      "indicator_ref": "lessons/birth-and-immediate-care/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          111,
+          112,
+          113
+        ],
+        "F": [
+          95,
+          96,
+          97,
+          98
+        ]
+      }
+    },
+    {
+      "id": "activity-postnatal-follow-up",
+      "lesson_key": "postnatal-follow-up",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 137,
+      "objective_index": 5,
+      "indicator_ref": "lessons/postnatal-follow-up/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          113,
+          114
+        ],
+        "F": [
+          95,
+          96,
+          97,
+          98
+        ]
+      }
+    },
+    {
+      "id": "activity-newborn-health",
+      "lesson_key": "newborn-health",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 137,
+      "objective_index": 6,
+      "indicator_ref": "lessons/newborn-health/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          112,
+          113,
+          114
+        ],
+        "F": [
+          98
+        ]
+      }
+    }
+  ]
+}

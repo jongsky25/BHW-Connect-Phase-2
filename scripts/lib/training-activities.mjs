@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 
-export function validateActivities(cards, indicators, lessonKeys = []) {
+export function validateActivities(cards, indicators, lessonKeys = [], maxSourcePage = 78) {
   const assert = (ok, message) => { if (!ok) throw new Error(`Invalid activity: ${message}`); };
   assert(Array.isArray(cards), 'expected array');
   const ids = new Set();
@@ -15,7 +15,7 @@ export function validateActivities(cards, indicators, lessonKeys = []) {
     assert(c.choice_group === null || /^[a-z0-9-]+$/.test(c.choice_group), `${c.id}: choice group`);
     assert(Array.isArray(c.lesson_keys) && c.lesson_keys.every(k => lessonKeys.includes(k)), `${c.id}: unknown lesson`);
     assert(Array.isArray(c.objective_indices) && c.objective_indices.every(i => indicators.some(x => x.objective_index === i)), `${c.id}: unknown indicator`);
-    assert(Array.isArray(c.source_pages) && c.source_pages.length && c.source_pages.every(p => Number.isInteger(p) && p >= 1 && p <= 78), `${c.id}: PDF pages`);
+    assert(Array.isArray(c.source_pages) && c.source_pages.length && c.source_pages.every(p => Number.isInteger(p) && p >= 1 && p <= maxSourcePage), `${c.id}: PDF pages`);
     for (const k of ['title','purpose','group_size','output','alternative']) assert(text(c[k]), `${c.id}: bilingual ${k}`);
     for (const k of ['materials','steps','debrief','observe','worksheet']) assert(Array.isArray(c[k]) && c[k].length && c[k].every(text), `${c.id}: bilingual ${k}`);
     assert(c.kind !== 'game' || !c.objective_indices.length, `${c.id}: games are not competency evidence alone`);

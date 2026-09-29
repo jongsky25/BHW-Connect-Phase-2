@@ -1,0 +1,16 @@
+{
+  "concepts": [
+    {
+      "id": "c3.mental-wellbeing-and-stigma",
+      "statement_en": "Given a resident's concern, use supportive language and identify a reviewed self/community support step.",
+      "source": "R102, R103, R104, F87, F88, F89",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.mental-health-escalation-and-support",
+      "statement_en": "Given a fictional urgent or non-urgent mental-health situation, choose the verified referral and handover route.",
+      "source": "R103, R104, F88, F89",
+      "redundant_with": null
+    }
+  ]
+}

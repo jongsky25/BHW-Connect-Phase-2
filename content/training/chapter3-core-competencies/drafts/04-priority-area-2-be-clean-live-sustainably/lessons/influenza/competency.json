@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ibahagi ang nasuring cough etiquette at prevention message; ituro ang angkop na serbisyo at kasalukuyang bakuna kung naaangkop.",
+      "observable_en": "Gives a current message and checks the resident's plan.",
+      "not_yet_fil": "Sabihing walang kailangang gawin dahil simpleng ubo lamang ito.",
+      "not_yet_en": "Say no action is needed because it is only a cough.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ibahagi ang nasuring cough etiquette at prevention message; ituro ang angkop na serbisyo at kasalukuyang bakuna kung naaangkop.",
+        "kaya_na_en": "Gives a current message and checks the resident's plan.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Sabihing walang kailangang gawin dahil simpleng ubo lamang ito.",
+        "hindi_pa_en": "Say no action is needed because it is only a cough."
+      }
+    }
+  ]
+}

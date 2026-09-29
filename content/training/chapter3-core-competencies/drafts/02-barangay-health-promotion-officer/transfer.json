@@ -1,0 +1,139 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Gamit ang kathang-isip na kaso at kasalukuyang lokal na gabay, ulitin ang gawaing kailangan ng pagsasanay sa harap ng supervisor.",
+    "en": "Using a fictional case and current local guide, repeat the task needing practice with a supervisor."
+  },
+  "supervision": {
+    "fil": "Markahan ang parehong observer indicator, magbigay ng feedback at magtakda ng susunod na pagsubok.",
+    "en": "Score the same observer indicator, give feedback and schedule a retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "hepo-role-and-determinants",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang hadlang sa pamumuhay, kausapin si Rosa nang walang sisi, at magplano ng isang hakbang kasama ang angkop na katuwang.",
+            "en": "Distinguishes the barrier from a diagnosis and proposes an achievable action with partners."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Sabihing wala siyang pakialam sa kalusugan dahil hindi siya nakadalo.",
+            "en": "Say she does not care about health because she missed the visit."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "respectful-interpersonal-communication",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Mag-alok ng pribadong usapan, magtanong nang bukas, pakinggan si Liza, at ipasuri kung tama ang pagkaunawa.",
+            "en": "Uses an open question, reflects the concern, respects context and privacy, and invites correction."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Ipaliwanag agad ang iniisip na problema ni Liza nang hindi siya pinakikinggan.",
+            "en": "Explain what you assume Liza's problem is without listening."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "audience-and-message-choice",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang kausap, hadlang at angkop na channel; gamitin lamang ang mensaheng nasuri ng health team.",
+            "en": "States the audience, barrier, reviewed message, and why the channel fits."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Ipadala ang parehong hindi nasuring post sa lahat ng grupo.",
+            "en": "Send the same unreviewed post to every group."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "risk-communication",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihiwalay ang kumpirmadong impormasyon sa hindi pa tiyak; sabihin ang ligtas na hakbang at opisyal na update channel.",
+            "en": "Separates confirmed facts from unknowns, gives a feasible action, and names where to check updates."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Sabihing tiyak ang hindi pa kumpirmadong balita upang mapabilis ang kilos.",
+            "en": "Present an unconfirmed report as certain to make people act."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "social-listening-and-feedback",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Itala ang tema ng feedback nang walang hindi kailangang pangalan, ipasa sa health team, at sabihin kung paano ibabalik ang sagot sa komunidad.",
+            "en": "Records a theme and source context, escalates accurately, and explains how the community will hear the response."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "I-post sa group chat ang pangalan at reklamo ng bawat magulang.",
+            "en": "Post each parent's name and complaint in a group chat."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    }
+  ]
+}

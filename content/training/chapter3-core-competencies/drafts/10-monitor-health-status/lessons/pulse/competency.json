@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang aprubadong paraan at oras ng pagbibilang, itala ang halaga at yunit, at iulat ang concern sa supervisor.",
+      "observable_en": "Finds appropriate site, measures for required interval, records units/time and flags concern.",
+      "not_yet_fil": "Hulaan ang pulso nang hindi binibilang o itinatala ang yunit.",
+      "not_yet_en": "Guess the pulse without counting or recording units.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang aprubadong paraan at oras ng pagbibilang, itala ang halaga at yunit, at iulat ang concern sa supervisor.",
+        "kaya_na_en": "Finds appropriate site, measures for required interval, records units/time and flags concern.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Hulaan ang pulso nang hindi binibilang o itinatala ang yunit.",
+        "hindi_pa_en": "Guess the pulse without counting or recording units."
+      }
+    }
+  ]
+}

@@ -129,6 +129,7 @@ export default async function CourseDetailPage({
   ]);
 
   const manualHref=mapping&&program?`/training/${mapping.program_id}/${mapping.chapter_key}`:null;
+  if(manualHref && mapping?.chapter_key==='chapter-3')redirect(manualHref);
   if(manualHref && (!assessment || appUser.role!=='bhw'))redirect(manualHref);
 
   if (!course) {

@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Bilangin muli, itala ang petsa at kondisyon, at sundin ang reconciliation process kasama ang supervisor.",
+      "observable_en": "Counts accurately, records date/condition/owner, and follows reconciliation process.",
+      "not_yet_fil": "Baguhin ang bilang sa papel para lamang magtugma.",
+      "not_yet_en": "Change the number on paper merely to make it match.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Bilangin muli, itala ang petsa at kondisyon, at sundin ang reconciliation process kasama ang supervisor.",
+        "kaya_na_en": "Counts accurately, records date/condition/owner, and follows reconciliation process.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Baguhin ang bilang sa papel para lamang magtugma.",
+        "hindi_pa_en": "Change the number on paper merely to make it match."
+      }
+    }
+  ]
+}
