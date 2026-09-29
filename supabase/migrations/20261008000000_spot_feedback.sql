@@ -86,6 +86,25 @@ create index spot_feedback_submitter_idx on public.spot_feedback(submitted_by, c
 create index spot_feedback_org_idx on public.spot_feedback(org_unit_id, created_at desc);
 alter table public.spot_feedback enable row level security;
 grant select, insert on public.spot_feedback to authenticated;
+-- Keep Storage cleanup durable even when an account deletion cascades its feedback rows.
+create table public.spot_feedback_screenshot_cleanup (
+  path text primary key,
+  queued_at timestamptz not null default now()
+);
+alter table public.spot_feedback_screenshot_cleanup enable row level security;
+grant select, delete on public.spot_feedback_screenshot_cleanup to service_role;
+create or replace function public.queue_spot_feedback_screenshot_cleanup()
+returns trigger language plpgsql security definer set search_path = public as $$
+begin
+  if old.screenshot_path is not null then
+    insert into public.spot_feedback_screenshot_cleanup(path)
+    values (old.screenshot_path) on conflict (path) do nothing;
+  end if;
+  return old;
+end;
+$$;
+create trigger spot_feedback_queue_screenshot_cleanup before delete on public.spot_feedback
+  for each row execute function public.queue_spot_feedback_screenshot_cleanup();
 create policy spot_feedback_read on public.spot_feedback for select to authenticated using (
   submitted_by = (select public.current_app_user()).id
   or ((select public.current_app_user()).role = 'admin'

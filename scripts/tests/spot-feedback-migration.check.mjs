@@ -7,7 +7,7 @@ test('spot feedback migration applies and restricts capture to the pilot area', 
   const db = new PGlite();
   try {
     await db.exec(`
-      create role anon; create role authenticated;
+      create role anon; create role authenticated; create role service_role;
       create schema auth; create schema storage;
       create function auth.uid() returns uuid language sql stable as $$
         select nullif(current_setting('test.auth_uid', true), '')::uuid $$;
@@ -69,10 +69,11 @@ test('spot feedback migration applies and restricts capture to the pilot area', 
     `);
     await db.exec(`
       insert into public.spot_feedback
-        (id, submitted_by, org_unit_id, page_path, message)
+        (id, submitted_by, org_unit_id, page_path, message, screenshot_path)
       values ('30000000-0000-0000-0000-000000000001',
         '10000000-0000-0000-0000-000000000001',
-        '00000000-0000-0000-0000-000000000002', '/chat', 'Pilot comment');
+        '00000000-0000-0000-0000-000000000002', '/chat', 'Pilot comment',
+        '20000000-0000-0000-0000-000000000001/capture.png');
     `);
     assert.equal((await db.query('select count(*)::int as n from public.spot_feedback')).rows[0].n, 1);
     await db.exec("select set_config('test.auth_uid', '20000000-0000-0000-0000-000000000002', false)");
@@ -103,6 +104,8 @@ test('spot feedback migration applies and restricts capture to the pilot area', 
     await db.exec("update public.feature_flags set enabled = false where key = 'spot_feedback'");
     await db.exec("select set_config('test.auth_uid', '20000000-0000-0000-0000-000000000001', false)");
     assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, false);
+    await db.exec("delete from public.spot_feedback where id = '30000000-0000-0000-0000-000000000001'");
+    assert.equal((await db.query('select count(*)::int as n from public.spot_feedback_screenshot_cleanup')).rows[0].n, 1);
   } finally {
     await db.close();
   }

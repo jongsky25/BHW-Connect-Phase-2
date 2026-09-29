@@ -11,6 +11,7 @@ cutoff.setUTCMonth(cutoff.getUTCMonth() - 24);
 const supabase = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
 let scanned = 0;
 let removed = 0;
+let screenshotsRemoved = 0;
 let offset = 0;
 
 for (;;) {
@@ -28,15 +29,32 @@ for (;;) {
     offset += rows.length;
     continue;
   }
-  const paths = rows.map((row) => row.screenshot_path).filter(Boolean);
-  if (paths.length > 0) {
-    const { error: storageError } = await supabase.storage.from('spot-feedback').remove(paths);
-    if (storageError) throw storageError;
-  }
   const { error: deleteError } = await supabase.from('spot_feedback')
     .delete().in('id', rows.map((row) => row.id));
   if (deleteError) throw deleteError;
   removed += rows.length;
 }
 
-console.log(JSON.stringify({ cutoff: cutoff.toISOString(), dry_run: dryRun, candidates: scanned, removed }));
+let cleanupOffset = 0;
+for (;;) {
+  const { data, error } = await supabase.from('spot_feedback_screenshot_cleanup')
+    .select('path').order('queued_at', { ascending: true })
+    .range(dryRun ? cleanupOffset : 0, (dryRun ? cleanupOffset : 0) + 99);
+  if (error) throw error;
+  const paths = (data ?? []).map((row) => row.path);
+  if (paths.length === 0) break;
+  if (dryRun) {
+    cleanupOffset += paths.length;
+    continue;
+  }
+  const { error: storageError } = await supabase.storage.from('spot-feedback').remove(paths);
+  if (storageError) throw storageError;
+  const { error: queueError } = await supabase.from('spot_feedback_screenshot_cleanup')
+    .delete().in('path', paths);
+  if (queueError) throw queueError;
+  screenshotsRemoved += paths.length;
+}
+
+console.log(JSON.stringify({ cutoff: cutoff.toISOString(), dry_run: dryRun,
+  candidates: scanned, removed, screenshots_removed: screenshotsRemoved,
+  screenshots_queued: dryRun ? cleanupOffset : 0 }));
