@@ -8,7 +8,7 @@ test('app requirements share the actual Reference Manual manifest', () => {
   expect(chapter.requirements.requiredLessonIds).toHaveLength(42);
   expect(chapter.requirements.exams).toEqual([{ id: 'chapter-1:posttest', passingPercent: 80 }]);
   expect(chapter.status).toBe('draft');
-  expect(chapter.orientationAvailable).toBe(false);
+  expect(chapter.orientationAvailable).toBe(true);
 });
 
 test('Chapter II cannot qualify from completion while its exam is unauthored', () => {

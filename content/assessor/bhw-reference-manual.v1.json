@@ -335,7 +335,16 @@
         "source": "content/training/day1-basic-competencies/test-questions.json",
         "sha256": "1bd3c889b1b7cbd02a7258f7b378fddd803866e4339d6d73a820e4e8024154eb"
       },
-      "orientation": null
+      "orientation": {
+        "version": "2026-09-29.1",
+        "migration_source": "supabase/migrations/20260929050611_assessor_scoring_orientation.sql",
+        "sha256": "0c85d0d97eb2f8d79da7bc8263f7fabe0211af5a76a050682c05d140fefb115b",
+        "content_source": "content/assessor/chapter-1-orientation.v1.json",
+        "content_sha256": "e475bca08da53a66e17584793908f79eb07a5658ef5425bbb0d967916e94b80c",
+        "lesson_count": 6,
+        "case_count": 8,
+        "passing_count": 7
+      }
     },
     {
       "chapter_key": "chapter-2",

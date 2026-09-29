@@ -8,7 +8,8 @@ const assert = (ok, message) => { if (!ok) fail(message); };
 const equalSet = (a, b) => JSON.stringify([...a].sort()) === JSON.stringify([...b].sort());
 const unique = (values) => new Set(values).size === values.length;
 const key = (v) => typeof v === 'string' && /^[a-z0-9][a-z0-9-]*$/.test(v);
-const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
+// Git's Windows checkout may expand LF to CRLF; hash the committed text form.
+const sha = (bytes) => createHash('sha256').update(bytes.toString('utf8').replace(/\r\n/g, '\n')).digest('hex');
 
 /** Read-only authored-content audit. It never infers live publication from files. */
 export function auditCurriculum(root, supplied) {
@@ -76,9 +77,38 @@ export function auditCurriculum(root, supplied) {
     } else {
       assert(chapter.chapter_key === 'chapter-2' && chapter.posttest.sha256 === null, 'missing exam source');
     }
-    assert(chapter.orientation === null, 'orientation must be implemented and reviewed in AF-04');
+    if (chapter.chapter_key === 'chapter-1') {
+      const orientation = chapter.orientation;
+      assert(orientation?.version === '2026-09-29.1' && orientation.lesson_count === 6
+        && orientation.case_count === 8 && orientation.passing_count === 7,
+        'Chapter I orientation contract drift');
+      assert(orientation.migration_source === 'supabase/migrations/20260929050611_assessor_scoring_orientation.sql',
+        'unexpected orientation source');
+      assert(sha(read(orientation.migration_source)) === orientation.sha256,
+        'orientation changed; review and version the scoring exercise');
+      assert(orientation.content_source === 'content/assessor/chapter-1-orientation.v1.json'
+        && sha(read(orientation.content_source)) === orientation.content_sha256,
+      'orientation source changed; review and version it');
+      const material = json(orientation.content_source);
+      const localized = value => value && typeof value.fil === 'string' && value.fil.trim()
+        && typeof value.en === 'string' && value.en.trim();
+      assert(material.chapter_key === chapter.chapter_key && material.curriculum_version === manifest.version
+        && material.orientation_version === orientation.version, 'orientation identity drift');
+      assert(localized(material.title) && material.guide.length >= 3 && material.guide.every(localized),
+        'orientation guide translation incomplete');
+      assert(material.lessons.length === orientation.lesson_count && unique(material.lessons.map(l => l.id))
+        && material.lessons.every(l => key(l.id) && localized(l.title) && l.body.length >= 2 && l.body.every(localized)),
+      'orientation lessons incomplete');
+      const indicatorIds = new Set(chapter.modules.flatMap(m => m.indicators.map(i => i.id)));
+      assert(material.cases.length === orientation.case_count && unique(material.cases.map(c => c.id))
+        && material.cases.every(c => key(c.id) && indicatorIds.has(c.indicator) && localized(c.case)
+          && localized(c.reason) && ['kaya_na','kailangan_practice','hindi_pa'].includes(c.correct))
+        && material.cases.filter(c => c.critical).length === 1
+        && material.passing_count === orientation.passing_count,
+      'orientation cases or rubric mapping incomplete');
+    } else assert(chapter.orientation === null, 'Chapter II orientation must remain unavailable without its exam');
     results.push({ chapter: chapter.chapter_key, modules: chapter.modules.length, lessons, indicators, questionCount,
-      activationBlockers: ['curriculum_and_rubric_review', 'orientation_not_implemented', ...(questionCount ? [] : ['chapter_exam_bank_missing'])] });
+      activationBlockers: ['curriculum_and_rubric_review', ...(chapter.orientation ? [] : ['orientation_not_implemented']), ...(questionCount ? [] : ['chapter_exam_bank_missing'])] });
   }
   return { program: manifest.program_key, version: manifest.version, chapters: results, readyForActivation: false };
 }
