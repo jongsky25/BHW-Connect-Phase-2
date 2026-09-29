@@ -5,11 +5,12 @@ import { auditCurriculum, MANIFEST_PATH } from '../lib/assessor-curriculum.mjs';
 const root = process.cwd();
 const manifest = JSON.parse(readFileSync(MANIFEST_PATH, 'utf8'));
 
-test('inventories both Reference Manual chapters without pretending authored content is live', () => {
+test('inventories both Reference Manual chapters and keeps review explicit', () => {
   const report = auditCurriculum(root);
   expect(report.chapters.map(c => [c.modules, c.lessons])).toEqual([[9, 42], [7, 55]]);
   expect(report.chapters[0].questionCount).toBeGreaterThan(0);
-  expect(report.chapters[1].activationBlockers).toContain('chapter_exam_bank_missing');
+  expect(report.chapters[1].questionCount).toBe(14);
+  expect(report.chapters[1].activationBlockers).toContain('curriculum_and_rubric_review');
   expect(report.readyForActivation).toBe(false);
 });
 

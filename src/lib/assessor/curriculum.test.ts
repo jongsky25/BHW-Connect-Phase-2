@@ -11,11 +11,13 @@ test('app requirements share the actual Reference Manual manifest', () => {
   expect(chapter.orientationAvailable).toBe(true);
 });
 
-test('Chapter II cannot qualify from completion while its exam is unauthored', () => {
-  const { requirements } = referenceManualChapter('chapter-2')!;
+test('Chapter II requires its own qualifying exam after study', () => {
+  const { requirements, orientationAvailable } = referenceManualChapter('chapter-2')!;
   expect(requirements.requiredLessonIds).toHaveLength(55);
+  expect(requirements.exams).toEqual([{id:'chapter-2:posttest',passingPercent:80}]);
+  expect(orientationAvailable).toBe(true);
   expect(candidateReadiness(requirements, { ...requirements, pretestRecorded: true,
     availableLessonIds: requirements.requiredLessonIds, completedLessonIds: requirements.requiredLessonIds, attempts: [],
-  }).state).toBe('unavailable');
+  }).state).toBe('exams');
   expect(referenceManualChapter('chapter-3')).toBeNull();
 });
