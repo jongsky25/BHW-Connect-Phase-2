@@ -28,6 +28,7 @@ it('shows a failed result, permits retry, and stops after a passing attempt',asy
   fireEvent.click(screen.getByRole('radio',{name:'Correct'}));
   fireEvent.click(screen.getByRole('button',{name:'Submit answers'}));
   await screen.findByText('Score: 80%');
+  expect(screen.getByRole('link',{name:'Start orientation'})).toHaveAttribute('href','/chapter/orientation');
   expect(screen.queryByRole('button',{name:'Retry exam'})).toBeNull();
   expect(state.refreshes).toBe(2);
 });

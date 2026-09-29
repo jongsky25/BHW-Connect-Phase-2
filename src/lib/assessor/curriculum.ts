@@ -8,7 +8,7 @@ export function referenceManualChapter(chapterKey: string): {
   requirements: ChapterRequirements;
   title: string;
   status: string;
-  orientationAvailable: false;
+  orientationAvailable: boolean;
 } | null {
   const chapter = manifest.chapters.find(c => c.chapter_key === chapterKey);
   if (!chapter) return null;
@@ -22,6 +22,6 @@ export function referenceManualChapter(chapterKey: string): {
     },
     title: chapter.title,
     status: chapter.curriculum_status,
-    orientationAvailable: false,
+    orientationAvailable: chapter.orientation !== null,
   };
 }

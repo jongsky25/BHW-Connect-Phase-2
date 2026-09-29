@@ -20,6 +20,8 @@ for (const [name, mutate] of [
   ['missing lesson', m => { m.chapters[0].modules[0].required_lesson_keys.pop(); }],
   ['duplicate lesson', m => { m.chapters[0].modules[0].required_lesson_keys.push(m.chapters[0].modules[0].required_lesson_keys[0]); }],
   ['changed bank', m => { m.chapters[0].posttest.sha256 = 'changed'; }],
+  ['changed orientation', m => { m.chapters[0].orientation.sha256 = 'changed'; }],
+  ['changed orientation content', m => { m.chapters[0].orientation.content_sha256 = 'changed'; }],
   ['changed rubric', m => { m.chapters[0].modules[0].rubric_sha256 = 'changed'; }],
   ['wrong passing score', m => { m.chapters[0].posttest.passing_percent = 50; }],
   ['practical candidate assessment', m => { m.candidate_practical_assessment_required = true; }],

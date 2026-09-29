@@ -1,6 +1,7 @@
 import {cleanup,render,screen} from '@testing-library/react';
 import {afterEach,beforeEach,describe,expect,it,vi} from 'vitest';
 import StudyPage from './[programId]/assessor/[chapterKey]/[[...path]]/page';
+import manifest from '../../../content/assessor/bhw-reference-manual.v1.json';
 const state=vi.hoisted(()=>({role:'assessor',actualRole:'assessor',active:true,preview:false,enabled:true,locale:'en',failing:'',calls:[] as string[],rows:{} as Record<string,Record<string,unknown>[]>}));
 vi.mock('next/navigation',()=>({redirect:(url:string)=>{throw new Error('REDIRECT '+url)},notFound:()=>{throw new Error('NOT_FOUND')}}));
 vi.mock('next-intl/server',()=>({getLocale:async()=>state.locale}));
@@ -53,6 +54,17 @@ describe('assessor study route',()=>{
     render(await page());
     expect(screen.getByText(/Post-test: 79%/)).toBeInTheDocument();
     expect(state.calls).not.toContain('course_test_attempts');
+  });
+  it('opens Chapter I orientation after all current lessons and the chapter exam pass',async()=>{
+    const modules=manifest.chapters[0].modules;
+    state.rows.course_modules=modules.map((m,i)=>({id:m.module_key,course_id:'course',position:i,title_en:m.title.en,title_fil:m.title.fil}));
+    state.rows.course_lessons=modules.flatMap(m=>m.required_lesson_keys.map((key,i)=>({
+      id:key,module_id:m.module_key,lesson_key:key,position:i,published_revision_id:`revision-${key}`,title_en:key,title_fil:key,
+    })));
+    state.rows.assessor_lesson_progress=state.rows.course_lessons.map(l=>({assessor_user_id:'self',chapter_id:'ch1',lesson_id:l.id,revision_id:l.published_revision_id}));
+    state.rows.assessor_exam_attempts.push({id:'a2',assessor_user_id:'self',chapter_id:'ch1',curriculum_version:'2026-09-28.1',phase:'posttest',status:'submitted',score_percent:80,passed:true});
+    render(await page());
+    expect(screen.getByRole('link',{name:'Start scoring orientation'})).toHaveAttribute('href','/training/manual/assessor/chapter-1/orientation');
   });
   it.each(['admin','bhw','designer'])('denies %s before any study query',async role=>{
     state.role=role;state.actualRole=role;await expect(page()).rejects.toThrow('REDIRECT /home');expect(state.calls).toEqual([]);
