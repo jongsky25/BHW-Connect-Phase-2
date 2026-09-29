@@ -72,7 +72,7 @@ export const gabayCharts: GabayChart[] = [
         "Kung wala o hindi tiyak ang PIN, sa opisyal na PhilHealth channel magtanong.", "If your PIN is absent or uncertain, ask through an official PhilHealth channel.",
         "Ang detalyadong membership application o pagwawasto ng rekord ay gagawin sa PhilHealth channel. Ang residente mismo ang gagamit ng login at one-time code.",
         "Detailed membership application or record correction stays in the PhilHealth channel. The resident uses their own login and one-time code.", ["PH-02", "BHW-02"]),
-      page("rehistro-selection", "Residente na pumipili ng accredited clinic bago ang unang konsulta.", "Resident choosing an accredited clinic before a first consultation.",
+      page("rehistro-selection", "Residente na pumipili ng accredited clinic bago ang FPE.", "Resident choosing an accredited clinic before the FPE.",
         "Kung may PIN na, pumili ng accredited YAKAP clinic sa kasalukuyang opisyal na paraan.", "If you have a PIN, choose an accredited YAKAP clinic through a current official channel.",
         "Ipakita ang kasalukuyang channel at clinic list. Para sa dependent o transfer, tiyakin muna ang partikular na proseso sa PhilHealth. Itanong sa residente kung ano ang una niyang gagawin.",
         "Show the current channel and clinic list. For a dependent or transfer, first verify the specific PhilHealth process. Ask the resident to repeat the first step.",

@@ -38,7 +38,7 @@ C. Sabihing ang residente mismo ang gagamit ng kaniyang credentials sa opisyal n
 **Filipino:** May PIN na si Mang Nilo ngunit wala pang napiling YAKAP clinic. Ano ang susunod?
 **English:** Mang Nilo has a PIN but has not selected a YAKAP clinic. What is next?
 
-A. Pumili ng accredited YAKAP clinic sa kasalukuyang opisyal na channel, pagkatapos ay magpaunang konsultasyon doon. / Select an accredited YAKAP clinic through a current official channel, then attend the first consultation there. **(Correct)**
+A. Pumili ng accredited YAKAP clinic sa kasalukuyang opisyal na channel, pagkatapos ay pumunta roon para sa FPE; itanong kung paano susunod ang konsultasyon. / Select an accredited YAKAP clinic through a current official channel, then go there for the FPE; ask how consultation follows. **(Correct)**
 B. Pumunta agad sa kahit anong botika para sa GAMOT. / Go straight to any pharmacy for GAMOT.
 C. Mag-apply muli para sa bagong PIN. / Apply for a new PIN.
 
@@ -50,7 +50,7 @@ C. Mag-apply muli para sa bagong PIN. / Apply for a new PIN.
 **English:** After selecting a clinic, Mang Nilo asks for a particular laboratory test. What should the BHW say?
 
 A. “Siguradong kasama iyan bukas.” / “That test is guaranteed tomorrow.”
-B. “Sa unang konsultasyon, susuriin ng clinician kung anong test o referral ang kailangan.” / “At the first consultation, the clinician assesses which test or referral is needed.” **(Correct)**
+B. “Pagkatapos ng FPE, clinician ang magpapasya sa konsultasyon kung anong test o referral ang kailangan.” / “After the FPE, a clinician decides at the consultation which test or referral is needed.” **(Correct)**
 C. “Ako ang mag-oorder ng test para sa inyo.” / “I will order the test.”
 
 **Rationale:** Selection does not substitute for clinical assessment or the applicable benefit rules.
