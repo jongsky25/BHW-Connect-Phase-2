@@ -8,8 +8,6 @@ import { EmptyState } from "@/components/empty-state";
 import { mapAdminRpcError } from "@/lib/admin/error-messages";
 import { PREVIEWABLE_ROLES } from "@/lib/auth/roles";
 import { FLAG_ROLE_SCOPE, type FeatureFlagKey, type FeatureFlagRow } from "@/lib/flags/types";
-import { OrgUnitPicker } from "@/components/org-unit-picker";
-import type { OrgUnitNode } from "@/lib/org-units";
 import { createClient } from "@/lib/supabase/client";
 
 type Props = {
@@ -18,9 +16,6 @@ type Props = {
    * matrix read-only — no admin, including a plain admin, can change a
    * toggle. */
   canEdit: boolean;
-  pilotRoot?: OrgUnitNode | null;
-  pilotChain?: OrgUnitNode[];
-  pilotId?: string | null;
 };
 
 // The user-type columns after "Available" (the master switch). Order
@@ -32,23 +27,11 @@ function cellKey(flagKey: string, column: Column) {
   return `${flagKey}:${column}`;
 }
 
-export function FlagsConsole({ initialFlags, canEdit, pilotRoot = null, pilotChain = [], pilotId = null }: Props) {
+export function FlagsConsole({ initialFlags, canEdit }: Props) {
   const t = useTranslations("admin.flags");
   const router = useRouter();
   const [pendingCell, setPendingCell] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [selectedPilot, setSelectedPilot] = useState<string | null>(pilotId);
-
-  async function savePilot(id: string | null) {
-    setError(null);
-    setPendingCell("spot_feedback:pilot");
-    const { error: rpcError } = await createClient().rpc("rpc_spot_feedback_set_pilot", {
-      p_org_unit_id: id,
-    });
-    if (rpcError) setError(t("genericError"));
-    else router.refresh();
-    setPendingCell(null);
-  }
 
   async function handleToggleAvailable(flag: FeatureFlagRow) {
     const key = cellKey(flag.key, "available");
@@ -175,30 +158,6 @@ export function FlagsConsole({ initialFlags, canEdit, pilotRoot = null, pilotCha
     <div className="flex flex-col gap-6">
       <AdminPageHeader title={t("heading")} description={t("intro")} />
       <p className="text-sm text-ink/70">{t("adminsAlwaysSee")}</p>
-      {pilotRoot && initialFlags.some((flag) => flag.key === "spot_feedback") ? (
-        <section className="rounded-md border border-ink/10 p-4">
-          <h2 className="text-lg font-semibold">{t("spotPilotHeading")}</h2>
-          <p className="mt-1 text-sm text-ink/70">{t("spotPilotIntro")}</p>
-          <div className="mt-3 max-w-lg">
-            <OrgUnitPicker root={pilotRoot} initialChain={pilotChain} allowRoot={false}
-              disabled={!canEdit || pendingCell === "spot_feedback:pilot"}
-              onChange={(unit) => setSelectedPilot(unit.id === pilotRoot.id ? null : unit.id)} />
-          </div>
-          <div className="mt-3 flex flex-wrap gap-2">
-            <button type="button" disabled={!canEdit || !selectedPilot || pendingCell === "spot_feedback:pilot"}
-              onClick={() => void savePilot(selectedPilot)}
-              className="min-h-[44px] rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary disabled:opacity-60">
-              {t("spotPilotSave")}
-            </button>
-            <button type="button" disabled={!canEdit || !pilotId || pendingCell === "spot_feedback:pilot"}
-              onClick={() => void savePilot(null)}
-              className="min-h-[44px] rounded-md border border-ink/20 px-4 py-2 text-sm disabled:opacity-60">
-              {t("spotPilotClear")}
-            </button>
-          </div>
-          {!pilotId ? <p className="mt-2 text-sm text-danger">{t("spotPilotUnset")}</p> : null}
-        </section>
-      ) : null}
       {!canEdit ? <p className="text-sm text-ink/70">{t("readOnlyNote")}</p> : null}
 
       {error ? (

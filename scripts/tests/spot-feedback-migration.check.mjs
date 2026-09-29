@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 import { PGlite } from '@electric-sql/pglite';
 
-test('spot feedback migration applies and restricts capture to the pilot area', async () => {
+test('spot feedback migration allows active users across organizations and scopes admin review', async () => {
   const db = new PGlite();
   try {
     await db.exec(`
@@ -48,16 +48,14 @@ test('spot feedback migration applies and restricts capture to the pilot area', 
         ('00000000-0000-0000-0000-000000000003', '1.3.');
       insert into public.users values
         ('10000000-0000-0000-0000-000000000001', '20000000-0000-0000-0000-000000000001',
-         '00000000-0000-0000-0000-000000000002', 'bhw', 'active', 'Pilot', 'pilot'),
+         '00000000-0000-0000-0000-000000000002', 'bhw', 'active', 'North', 'north'),
         ('10000000-0000-0000-0000-000000000002', '20000000-0000-0000-0000-000000000002',
-         '00000000-0000-0000-0000-000000000003', 'bhw', 'active', 'Outside', 'outside'),
+         '00000000-0000-0000-0000-000000000003', 'bhw', 'active', 'South', 'south'),
         ('10000000-0000-0000-0000-000000000003', '20000000-0000-0000-0000-000000000003',
-         '00000000-0000-0000-0000-000000000002', 'admin', 'active', 'Pilot admin', 'admin');
-      update public.feature_flags set enabled = true,
-        org_unit_filter = '00000000-0000-0000-0000-000000000002'
-        where key = 'spot_feedback';
+         '00000000-0000-0000-0000-000000000002', 'admin', 'active', 'North admin', 'admin');
       insert into public.feature_flags(key, enabled) values ('notifications', true);
     `);
+    assert.equal((await db.query("select enabled from public.feature_flags where key = 'spot_feedback'")).rows[0].enabled, true);
     await db.exec("select set_config('test.auth_uid', '20000000-0000-0000-0000-000000000001', false)");
     assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, true);
     await db.exec(`
@@ -72,19 +70,28 @@ test('spot feedback migration applies and restricts capture to the pilot area', 
         (id, submitted_by, org_unit_id, page_path, message, screenshot_path)
       values ('30000000-0000-0000-0000-000000000001',
         '10000000-0000-0000-0000-000000000001',
-        '00000000-0000-0000-0000-000000000002', '/chat', 'Pilot comment',
+        '00000000-0000-0000-0000-000000000002', '/chat', 'North comment',
         '20000000-0000-0000-0000-000000000001/capture.png');
     `);
     assert.equal((await db.query('select count(*)::int as n from public.spot_feedback')).rows[0].n, 1);
     await db.exec("select set_config('test.auth_uid', '20000000-0000-0000-0000-000000000002', false)");
-    assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, false);
+    assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, true);
     assert.equal((await db.query('select count(*)::int as n from public.spot_feedback')).rows[0].n, 0);
-    await assert.rejects(db.exec(`
+    await db.exec(`
       insert into public.spot_feedback(submitted_by, org_unit_id, page_path, message)
       values ('10000000-0000-0000-0000-000000000002',
-        '00000000-0000-0000-0000-000000000003', '/chat', 'Outside comment');
-    `), /row-level security/);
+        '00000000-0000-0000-0000-000000000003', '/chat', 'South comment');
+    `);
+    assert.equal((await db.query('select count(*)::int as n from public.spot_feedback')).rows[0].n, 1);
     await db.exec('reset role');
+    await db.exec(`
+      update public.users set role = 'assessor' where id = '10000000-0000-0000-0000-000000000002';
+    `);
+    assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, true);
+    await db.exec("update public.users set role = 'designer' where id = '10000000-0000-0000-0000-000000000002'");
+    assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, true);
+    await db.exec("update public.users set status = 'deactivated' where id = '10000000-0000-0000-0000-000000000002'");
+    assert.equal((await db.query('select public.spot_feedback_access() as allowed')).rows[0].allowed, false);
     await db.exec(`
       insert into public.spot_feedback(id, submitted_by, org_unit_id, page_path, message)
       values ('30000000-0000-0000-0000-000000000002',

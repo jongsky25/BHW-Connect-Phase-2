@@ -1,8 +1,8 @@
--- Spot feedback for the live pilot. The master flag starts off and the pilot
--- organization starts unset. Both must be configured before field users can submit.
+-- Spot feedback is available DOH-wide to active users after deployment.
 insert into public.feature_flags (key, enabled, description)
-values ('spot_feedback', false, 'Page-specific comments from live users, with optional screenshots and an admin inbox.')
-on conflict (key) do nothing;
+values ('spot_feedback', true, 'Page-specific comments from live users, with optional screenshots and an admin inbox.')
+on conflict (key) do update set enabled = true, disabled_roles = '{}'::text[],
+  org_unit_filter = null, updated_at = now();
 
 create or replace function public.flag_role_scope(p_key text)
 returns text[] language sql immutable set search_path = public as $$
@@ -14,7 +14,6 @@ returns text[] language sql immutable set search_path = public as $$
     when 'notifications' then array['bhw', 'assessor', 'designer']
     when 'offline_pwa' then array['bhw', 'assessor', 'designer']
     when 'chat_conversation' then array['bhw', 'assessor', 'designer']
-    when 'spot_feedback' then array['bhw', 'assessor', 'designer']
     when 'elearning' then array['bhw', 'assessor']
     when 'course_sessions' then array['bhw', 'assessor']
     when 'flipcharts' then array['bhw', 'designer']
@@ -27,11 +26,6 @@ create or replace function public.spot_feedback_access()
 returns boolean language sql stable set search_path = public as $$
   select coalesce((
     select u.status = 'active' and f.enabled
-      and (u.role = 'admin' or (
-        f.org_unit_filter is not null
-        and not (u.role = any(f.disabled_roles))
-        and public.current_org_path() like public.org_unit_path(f.org_unit_filter) || '%'
-      ))
     from public.current_app_user() u
     cross join public.feature_flags f
     where f.key = 'spot_feedback'
@@ -39,29 +33,6 @@ returns boolean language sql stable set search_path = public as $$
 $$;
 revoke execute on function public.spot_feedback_access() from public, anon;
 grant execute on function public.spot_feedback_access() to authenticated;
-
-create or replace function public.rpc_spot_feedback_set_pilot(p_org_unit_id uuid)
-returns void language plpgsql security definer set search_path = public as $$
-declare v_actor public.users; v_flag public.feature_flags;
-begin
-  select * into v_actor from public.current_super_admin();
-  if v_actor.id is null then raise exception 'not authorized'; end if;
-  if p_org_unit_id is not null and not exists
-    (select 1 from public.org_units where id = p_org_unit_id) then
-    raise exception 'organization not found';
-  end if;
-  update public.feature_flags set org_unit_filter = p_org_unit_id, updated_at = now()
-    where key = 'spot_feedback' returning * into v_flag;
-  if v_flag.id is null then raise exception 'flag not found'; end if;
-  insert into public.audit_events
-    (actor_user_id, event_type, subject_type, subject_id, metadata, plain_summary_fil, plain_summary_en)
-  values (v_actor.id, 'flag.pilot_changed', 'feature_flag', v_flag.id,
-    jsonb_build_object('key', 'spot_feedback', 'org_unit_id', p_org_unit_id),
-    'Binago ang pilot area para sa feedback.', 'Changed the feedback pilot area.');
-end;
-$$;
-revoke execute on function public.rpc_spot_feedback_set_pilot(uuid) from public, anon;
-grant execute on function public.rpc_spot_feedback_set_pilot(uuid) to authenticated;
 
 create table public.spot_feedback (
   id uuid primary key default gen_random_uuid(),

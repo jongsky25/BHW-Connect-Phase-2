@@ -49,5 +49,5 @@ export const FLAG_ROLE_SCOPE: Record<FeatureFlagKey, AppRole[]> = {
   chat_conversation: ["bhw", "assessor", "designer"],
   ai_external: [],
   ai_gap_draft: [],
-  spot_feedback: ["bhw", "assessor", "designer"],
+  spot_feedback: [],
 };
