@@ -1,0 +1,27 @@
+{
+  "package": "philhealth-gabay",
+  "approval": "Pilot admin approved integrated live release on 2026-09-29",
+  "source_rechecked_on": "2026-09-29",
+  "source_note": "Official PhilHealth YAKAP, accredited facilities, GAMOT and clinic-selection sources rechecked; Circular 2026-0007 clarified that FPE is not yet a consultation.",
+  "sha256_lf": {
+    "content/kb/philhealth-gabay/categories.json": "8ef6191029602c3ad5a221dfc7cdaa3276e813b9243269478cd3e5ffc471912f",
+    "content/kb/philhealth-gabay/clarifiers.json": "a3ace834a5b3d4e72abbcf6c8ee561c2c5bfbff66faa89079595c589c79d867a",
+    "content/kb/philhealth-gabay/entries/module-1.json": "8794331a1aa9b5c8512408953aebe5d56e0e849861fc2b70d94fe250495a4389",
+    "content/kb/philhealth-gabay/entries/module-2.json": "05d5f3bb3c6d449f865441e3fb38e0333b65880e0e1f580f7f5ef8d38cf823d9",
+    "content/kb/philhealth-gabay/entries/module-3.json": "347a0bdea468557ec1490999360bf403058ccaa60284b91f7d8089db4a25a10e",
+    "content/kb/philhealth-gabay/sources.json": "19503b51d35bf92d75673138ceed3ff4ba282b1050b8f170e7ced757fc0af6ce",
+    "content/kb/philhealth-gabay/synonyms.json": "431c5bb9e5f3ebe88409352e714b6d5c50622bbf75869be801b6ed106bb383e0",
+    "docs/gabay-sa-philhealth/p1-assessment.md": "e8e8ae249d616450781bac19e2808eb62a8290fc2c8586a0de16037ef049c234",
+    "docs/gabay-sa-philhealth/p1-lessons-and-claims.md": "c143380934a4527a201707a152e3272448a7c8dbd29275e08e00e74d27c4518d",
+    "public/gabay-flipcharts/gamot-consult.svg": "67debde78ffee53d2234f7b274a4e24eaa59db4eff42e7bf3c596cb54c9af789",
+    "public/gabay-flipcharts/gamot-facility.svg": "e53cada6bfe6828deda91bf6859725b6e6de82cb4f6934ab9d8c7194ee8b4f60",
+    "public/gabay-flipcharts/gamot-prescription.svg": "36222b4ae17ae77089fbb3614624e4b90cee9f02fff5fe0151ab16dcb0675ed2",
+    "public/gabay-flipcharts/rehistro-clarify.svg": "7e86b89f82448c97b3efc14a025a8df6e39fb4ac04108421c4563fa2c1526c92",
+    "public/gabay-flipcharts/rehistro-pin.svg": "f18fe2117e4e25ee39a72d4e24393a97169170f560caa7d4b5ce3e63df1c2aec",
+    "public/gabay-flipcharts/rehistro-selection.svg": "ea19ad88f207b8c9589cc991048c65bf2330e7ed1d6a200d395e83b215ef717c",
+    "public/gabay-flipcharts/yakap-clinic.svg": "1cbae9a8f53d74dd5a9b3975fd2d74e7aefc3cd522cc780874e81915a1010ce5",
+    "public/gabay-flipcharts/yakap-consult.svg": "975b17b839333cdcd255b4ce0ad78e2332a6351190736fadfe5efc762cc9a2a6",
+    "public/gabay-flipcharts/yakap-followup.svg": "615b23dc81b714934c82e2c48f1dd80aff111e1063d243c292f1b96e46b9ac2c",
+    "src/lib/flipcharts/gabay-charts.ts": "b4ec7b9450fae37aecb9332feb2cf7c6184a2fc244ffbfc35fd847e62ab06003"
+  }
+}

@@ -225,6 +225,13 @@ export function renderAnswer(entry, sources, locale) {
 
 export function reviewDueOn(entry, today = new Date()) {
   const due = new Date(today.getTime());
+  // PhilHealth selection routes, provider listings and GAMOT rules change
+  // faster than a training article. Recheck these 30 days after a load.
+  if (entry.corpus === "philhealth-gabay" &&
+      entry.sources.some((id) => ["PH-03", "PH-CLIN", "PH-04", "PH-05", "PH-07", "PH-07S", "PH-08", "PH-09"].includes(id))) {
+    due.setDate(due.getDate() + 30);
+    return due.toISOString().slice(0, 10);
+  }
   // Anything still awaiting a protocol figure comes back in 60 days; settled
   // content follows the +6 months the admin form already defaults to.
   if (entry.tier === "pending") due.setDate(due.getDate() + 60);

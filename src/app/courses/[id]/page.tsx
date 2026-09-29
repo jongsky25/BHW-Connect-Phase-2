@@ -16,6 +16,8 @@ import type {
   QuizQuestion,
 } from "@/lib/elearning/types";
 import { withVisible } from "@/lib/content/visibility";
+import { gabayCharts } from "@/lib/flipcharts/gabay-charts";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -75,7 +77,7 @@ export default async function CourseDetailPage({
       supabase
         .from("courses")
         .select(
-          "id, title_fil, title_en, description_fil, description_en, quiz_max_attempts, status",
+          "id, title_fil, title_en, description_fil, description_en, quiz_max_attempts, assessment_kind, opening_diagnostic, status",
         )
         .eq("id", id)
         .eq("status", "published"),
@@ -183,13 +185,15 @@ export default async function CourseDetailPage({
     { data: audios },
     { data: moduleProgress },
     { data: certificate },
+    { data: failedObservation },
+    { data: quizReview },
     reference,
   ] = await Promise.all([
     quizModuleIds.length > 0
       ? supabase
-          .from("course_quiz_questions")
+          .from("course_quiz_questions_public")
           .select(
-            "id, module_id, position, prompt_fil, prompt_en, options, correct_option_index",
+            "id, module_id, position, prompt_fil, prompt_en, options",
           )
           .in("module_id", quizModuleIds)
           .order("position")
@@ -229,6 +233,16 @@ export default async function CourseDetailPage({
           .eq("bhw_user_id",appUser.id)
           .maybeSingle<{ verification_code: string }>()
       : Promise.resolve({ data: null }),
+    course.assessment_kind === "gabay_roleplay" && progress?.status === "failed_assessment"
+      ? supabase.from("assessments").select("scenario_id, notes, practice_advice")
+          .eq("course_id", id).eq("bhw_user_id", appUser.id).eq("status", "failed")
+          .order("decided_at", { ascending: false }).limit(1).maybeSingle()
+      : Promise.resolve({ data: null }),
+    course.assessment_kind === "gabay_roleplay" && quizModuleIds.length > 0
+      ? supabase.from("course_quiz_review")
+          .select("id,module_id,position,prompt_fil,prompt_en,options,correct_option_index,rationale_fil,rationale_en")
+          .in("module_id", quizModuleIds).order("position")
+      : Promise.resolve({ data: [] }),
     loadReference(),
   ]);
 
@@ -252,13 +266,28 @@ export default async function CourseDetailPage({
         ) : null}
       </div>
 
+      {course.assessment_kind === "gabay_roleplay" && flags.flipcharts && gabayCharts.some((chart) => chart.review === "approved") ? (
+        <section className="rounded-md border border-ink/10 p-4">
+          <h2 className="font-semibold text-ink">{locale === "en" ? "Patient flipcharts" : "Mga flipchart para sa residente"}</h2>
+          <ul className="mt-3 space-y-2">{gabayCharts.filter((chart) => chart.review === "approved").map((chart) => <li key={chart.slug}>
+            <Link prefetch={false} className="text-primary-text underline" href={`/flipcharts/gabay/${chart.slug}`}>
+              {chart.title[locale === "en" ? "en" : "fil"]}
+            </Link>
+          </li>)}</ul>
+        </section>
+      ) : null}
+
       <CourseDetail
         reference={reference}
         assessmentOnly={assessmentOnly}
         courseId={course.id}
+        assessmentKind={course.assessment_kind === "gabay_roleplay" ? "gabay_roleplay" : "standard"}
+        openingDiagnostic={course.opening_diagnostic ?? []}
+        failedObservation={failedObservation}
         quizMaxAttempts={course.quiz_max_attempts}
         modules={modules ?? []}
         questions={questions ?? []}
+        quizReview={quizReview ?? []}
         visuals={visuals ?? []}
         audios={audios ?? []}
         testQuestions={testQuestions ?? []}

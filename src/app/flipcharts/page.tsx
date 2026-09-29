@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { EmptyState } from "@/components/empty-state";
 import { withVisible } from "@/lib/content/visibility";
+import { gabayCharts } from "@/lib/flipcharts/gabay-charts";
 import { createClient } from "@/lib/supabase/server";
 import { getRequestAppUser, getRequestAuthUser, getRequestFeatureFlags } from "@/lib/supabase/request";
 
@@ -54,10 +55,18 @@ export default async function FlipchartsPage() {
         <p className="mt-1 text-ink/70">{t("intro")}</p>
       </div>
 
-      {rows.length === 0 ? (
+      {rows.length === 0 && gabayCharts.every((chart) => chart.review !== "approved") ? (
         <EmptyState message={t("empty")} />
       ) : (
         <ul className="flex flex-col divide-y divide-ink/10 rounded-md border border-ink/10">
+          {gabayCharts.filter((chart) => chart.review === "approved").map((chart) => (
+            <li key={chart.slug}>
+              <Link prefetch={false} href={`/flipcharts/gabay/${chart.slug}`}
+                className="flex min-h-[44px] items-center px-4 py-3 font-medium text-ink hover:bg-ink/5">
+                {chart.title.en}
+              </Link>
+            </li>
+          ))}
           {rows.map((chart) => (
             <li key={chart.id}>
               <Link prefetch={false}

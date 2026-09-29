@@ -15,6 +15,10 @@ type Props = {
   initialMine: Assessment[];
 };
 
+const indicators = ["ask_sort", "explain", "stay_in_role", "direct", "flipchart", "teach_back"] as const;
+type Rating = "observed" | "needs_practice" | "not_seen";
+type Observation = Partial<Record<(typeof indicators)[number], Rating>>;
+
 export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
   const t = useTranslations("assessments");
   const tCrumbs = useTranslations("breadcrumbs");
@@ -25,6 +29,10 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [notesById, setNotesById] = useState<Record<string, string>>({});
   const [issuedNotice, setIssuedNotice] = useState<string | null>(null);
+  const [scenarioById, setScenarioById] = useState<Record<string, string>>({});
+  const [observationById, setObservationById] = useState<Record<string, Observation>>({});
+  const [promptById, setPromptById] = useState<Record<string, boolean>>({});
+  const [adviceById, setAdviceById] = useState<Record<string, string>>({});
 
   async function handleClaim(assessment: Assessment) {
     if (isPreview) return;
@@ -53,11 +61,22 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
     setPendingId(assessment.id);
     try {
       const supabase = createClient();
-      const { data, error: rpcError } = await supabase.rpc("rpc_assessment_decide", {
-        p_assessment_id: assessment.id,
-        p_passed: passed,
-        p_notes: notesById[assessment.id] ?? "",
-      });
+      const isGabay = assessment.courses?.assessment_kind === "gabay_roleplay";
+      const observation = observationById[assessment.id] ?? {};
+      const { data, error: rpcError } = isGabay
+        ? await supabase.rpc("rpc_gabay_assessment_decide", {
+            p_assessment_id: assessment.id,
+            p_scenario_id: scenarioById[assessment.id] ?? "",
+            p_observation: observation,
+            p_prompt_used: promptById[assessment.id] ?? false,
+            p_evidence: notesById[assessment.id] ?? "",
+            p_practice_advice: adviceById[assessment.id] ?? "",
+          })
+        : await supabase.rpc("rpc_assessment_decide", {
+            p_assessment_id: assessment.id,
+            p_passed: passed,
+            p_notes: notesById[assessment.id] ?? "",
+          });
 
       if (rpcError) {
         setError(t(mapElearningRpcError(rpcError.message)));
@@ -65,7 +84,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
       }
 
       const row = (data as Array<{ certificate_id: string | null; verification_code: string | null }> | null)?.[0];
-      if (passed && row?.verification_code) {
+      if (row?.verification_code) {
         setIssuedNotice(row.verification_code);
       }
 
@@ -130,9 +149,42 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
               <li key={assessment.id} className="flex flex-col gap-2 rounded-md border border-ink/10 p-4">
                 <p className="font-medium text-ink">{assessment.users?.full_name}</p>
                 <p className="text-sm text-ink/70">{assessment.courses?.title_en}</p>
+                {assessment.courses?.assessment_kind === "gabay_roleplay" ? <p className="text-xs text-ink/70">{t("attemptLabel", { number: assessment.attempt_number })}</p> : null}
+                {assessment.courses?.assessment_kind === "gabay_roleplay" ? (
+                  <div className="mt-3 flex flex-col gap-3">
+                    <label className="text-sm text-ink">
+                      {t("scenarioLabel")}
+                      <select className="mt-1 block rounded-md border border-ink/20 bg-canvas p-2" value={scenarioById[assessment.id] ?? ""}
+                        onChange={(event) => setScenarioById((prev) => ({ ...prev, [assessment.id]: event.target.value }))}>
+                        <option value="">{t("chooseScenario")}</option>
+                        {["R1", "R2", "R3", "R4"].map((id) => <option key={id} value={id}>{t(`scenario.${id}`)}</option>)}
+                      </select>
+                    </label>
+                    <fieldset className="flex flex-col gap-2">
+                      <legend className="text-sm font-medium">{t("observationHeading")}</legend>
+                      {indicators.map((key) => <label key={key} className="flex flex-wrap items-center justify-between gap-2 text-sm">
+                        <span>{t(`indicator.${key}`)}</span>
+                        <select aria-label={t(`indicator.${key}`)} className="rounded-md border border-ink/20 bg-canvas p-2"
+                          value={observationById[assessment.id]?.[key] ?? ""}
+                          onChange={(event) => setObservationById((prev) => ({ ...prev, [assessment.id]: { ...prev[assessment.id], [key]: event.target.value as Rating } }))}>
+                          <option value="">—</option>
+                          {(["observed", "needs_practice", "not_seen"] as const).map((rating) => <option key={rating} value={rating}>{t(`rating.${rating}`)}</option>)}
+                        </select>
+                      </label>)}
+                    </fieldset>
+                    <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={promptById[assessment.id] ?? false}
+                      onChange={(event) => setPromptById((prev) => ({ ...prev, [assessment.id]: event.target.checked }))} />{t("promptUsedLabel")}</label>
+                    <label className="text-sm">{t("practiceAdviceLabel")}
+                      <textarea className="mt-1 block w-full rounded-md border border-ink/20 bg-canvas p-2" rows={2}
+                        value={adviceById[assessment.id] ?? ""}
+                        onChange={(event) => setAdviceById((prev) => ({ ...prev, [assessment.id]: event.target.value }))} />
+                    </label>
+                    <p className="text-xs text-ink/70">{t("rubricHelp")}</p>
+                  </div>
+                ) : null}
                 <textarea
-                  aria-label={t("notesLabel")}
-                  placeholder={t("notesLabel")}
+                  aria-label={assessment.courses?.assessment_kind === "gabay_roleplay" ? t("evidenceLabel") : t("notesLabel")}
+                  placeholder={assessment.courses?.assessment_kind === "gabay_roleplay" ? t("evidenceLabel") : t("notesLabel")}
                   rows={2}
                   value={notesById[assessment.id] ?? ""}
                   onChange={(event) =>
@@ -143,7 +195,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
                 <div className="flex gap-2">
                   <button
                     type="button"
-                    disabled={pendingId === assessment.id || isPreview}
+                    disabled={pendingId === assessment.id || isPreview || (assessment.courses?.assessment_kind === "gabay_roleplay" && indicators.some((key) => observationById[assessment.id]?.[key] !== "observed"))}
                     onClick={() => handleDecide(assessment, true)}
                     className="rounded-md border border-success/40 px-3 py-2 text-sm font-medium text-success hover:bg-success/5 disabled:opacity-60"
                   >
@@ -151,7 +203,7 @@ export function AssessmentsConsole({ initialQueue, initialMine }: Props) {
                   </button>
                   <button
                     type="button"
-                    disabled={pendingId === assessment.id || isPreview}
+                    disabled={pendingId === assessment.id || isPreview || (assessment.courses?.assessment_kind === "gabay_roleplay" && !indicators.some((key) => observationById[assessment.id]?.[key] === "needs_practice" || observationById[assessment.id]?.[key] === "not_seen"))}
                     onClick={() => handleDecide(assessment, false)}
                     className="rounded-md border border-danger/40 px-3 py-2 text-sm font-medium text-danger hover:bg-danger/5 disabled:opacity-60"
                   >

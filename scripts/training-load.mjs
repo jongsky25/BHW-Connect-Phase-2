@@ -128,6 +128,7 @@ async function syncCourse(client, course, ctx, plan) {
     description_en: course.description_en ?? "",
     quiz_passing_percent: course.quiz_passing_percent ?? 80,
     quiz_max_attempts: course.quiz_max_attempts ?? 3,
+    assessment_kind: course.assessment_kind ?? "standard",
   };
 
   if (courseId) {

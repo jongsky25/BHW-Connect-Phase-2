@@ -25,12 +25,15 @@ import path from "node:path";
 import { DEFAULT_CORPUS, contentDir, loadContent, renderAnswer, reviewDueOn } from "./lib/kb-content.mjs";
 import { markdownToTiptap } from "./lib/md-to-tiptap.mjs";
 import { createClient, projectUrl, requireEnv, selectAll, signIn } from "./lib/supabase-rest.mjs";
+import { PILOT_PROJECT_REF } from "./lib/pilot-guard.mjs";
+import { assertGabayReleaseApproved } from "./lib/gabay-release-approval.mjs";
 
 function parseArgs(argv) {
-  const args = { modules: null, apply: false, publish: false, owner: null, project: null, corpus: DEFAULT_CORPUS };
+  const args = { modules: null, apply: false, publish: false, owner: null, project: null, corpus: DEFAULT_CORPUS, releasePilot: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
+    else if (arg === "--release-pilot") args.releasePilot = true;
     else if (arg === "--dry-run") args.apply = false;
     else if (arg === "--publish") args.publish = true;
     else if (arg === "--owner") args.owner = argv[++i];
@@ -40,6 +43,15 @@ function parseArgs(argv) {
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (!args.project) throw new Error("--project <supabase-project-ref> is required");
+  // Only the exact pilot project can use the reviewed release path. The
+  // existing projectUrl guard also requires ALLOW_PILOT=1 before network I/O.
+  if (args.releasePilot && (args.corpus !== "philhealth-gabay" || args.project !== PILOT_PROJECT_REF)) {
+    throw new Error("--release-pilot requires the Gabay corpus and exact pilot project");
+  }
+  if (args.corpus === "philhealth-gabay" && args.project !== "local" && !args.releasePilot) {
+    throw new Error("philhealth-gabay corpus is limited to --project local unless --release-pilot is used");
+  }
+  if (args.releasePilot) assertGabayReleaseApproved();
   if (args.publish && !args.owner) {
     throw new Error("--publish requires --owner <username>: kb_entries_publish_requires_owner");
   }
