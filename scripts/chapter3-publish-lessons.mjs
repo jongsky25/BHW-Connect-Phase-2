@@ -83,6 +83,7 @@ async function main() {
   const plan = [];
   for (const [position, item] of blueprint.modules.entries()) {
     const expectedModule = JSON.parse(readFileSync(path.join(packageRoot, 'drafts', item.module_key, 'module.json'), 'utf8'));
+    // eslint-disable-next-line @next/next/no-assign-module-variable
     const module = modules[position];
     const { id: localKey, ...moduleFields } = expectedModule;
     if (localKey !== item.module_key || !module || !sameFields(module, moduleFields)) throw new Error(`${item.module_key}: staged module differs`);

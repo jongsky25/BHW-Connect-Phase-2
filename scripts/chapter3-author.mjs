@@ -108,6 +108,7 @@ for (const card of cards) {
   lesson.title_fil = card.title_fil;
 }
 
+// eslint-disable-next-line @next/next/no-assign-module-variable
 for (const module of blueprint.modules) {
   const selected = module.lessons.filter(l => seen.has(l.code));
   if (!selected.length) continue;

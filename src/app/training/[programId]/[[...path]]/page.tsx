@@ -151,7 +151,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           <h2 className="text-lg font-semibold">1.{m.position+1} {title(m)}</h2><div className="mt-2"><StatusChip state="unavailable" locale={loc}/></div>
         </div>)}</div>
         {testItems && <ChapterTestInsights lang={loc} {...testItems}/>}
-        {readOnly?<p>{text('Preview lamang. Hindi binabago ang progreso ng mga mag-aaral.','Preview only. Learner progress is not changed.')}</p>:
+        {readOnly?<p>{text('Preview lamang. Hindi binabago ang progreso ng mga mag-aaral.','Preview only. Learner progress is not changed.')}</p>:chapter.chapter_key==='chapter-3'?null:
           <section className="rounded-xl border border-ink/15 p-5" aria-label={text('Pagtatasa at sertipiko','Assessment and certificate')}>
             <h2 className="font-semibold">{text('Pagtatasa at sertipiko ng kabanatang ito','This chapter’s assessment and certificate')}</h2>
             {certificate?<><p className="my-2">{text('Sertipikado ka na. Maaari mong balikan ang mga aralin nang hindi nawawala ang iyong sertipiko.','You are certified. You can review lessons without losing your certificate.')}</p><Link prefetch={false} className="underline" href={`/certificates/${certificate.verification_code}`}>{text('Tingnan ang sertipiko','View certificate')}</Link></>:

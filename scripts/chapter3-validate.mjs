@@ -26,6 +26,7 @@ assert.equal(cards.length, 65);
 assert.equal(new Set(cards.map(c => c.code)).size, 65);
 
 const report = { mode: 'offline', chapter: 'chapter-3', modules: [], lesson_count: 0, training_minutes: 0, publication_allowed: false };
+// eslint-disable-next-line @next/next/no-assign-module-variable
 for (const module of blueprint.modules) {
   const dir = path.join(packageRoot, 'drafts', module.module_key);
   const loaded = loadReferenceModule(dir, publicRoot);
