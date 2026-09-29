@@ -93,6 +93,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       <h1 className="mt-2 text-2xl font-semibold">{examPage?(examPhase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Chapter post-test')):lesson?title(lesson):subchapter?title(subchapter):title(chapter)}</h1>
       <p className="mt-2">{text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
     </header>
+    <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga kwalipikasyon','My qualifications')}</Link>
     <section className="rounded-xl border border-ink/15 p-4" aria-label={text('Progreso sa pag-aaral','Study progress')}>
       <p>{text(`${study.completed} sa ${study.total} kinakailangang aralin ang natapos`,`${study.completed} of ${study.total} required lessons completed`)}</p>
       <progress className="mt-2 w-full" max={study.total} value={study.completed} aria-label={text('Mga araling natapos','Lessons completed')}/>

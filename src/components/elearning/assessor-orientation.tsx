@@ -107,7 +107,8 @@ export function AssessorOrientation({chapterId,chapterHref,locale,initial}:{chap
     </p>}
     {initial.passed || result?.passed ? <section role="status" className="rounded-xl border border-primary/40 bg-primary/5 p-5">
       <h2 className="font-semibold">{text('Natapos ang oryentasyon','Orientation completed')}</h2>
-      <p>{text('Naitala ang iyong pagpasa para sa Kabanata I. Ang kwalipikasyon bilang assessor ay hiwalay na hakbang.','Your Chapter I pass is recorded. Assessor qualification is a separate step.')}</p>
+      <p>{text('Naitala ang iyong pagpasa para sa Kabanata I. Tingnan ang naibigay na kwalipikasyon at katayuan nito.','Your Chapter I pass is recorded. Check your issued qualification and its status.')}</p>
+      <Link prefetch={false} href={`${chapterHref.split('/assessor/')[0]}/assessor/qualifications`} className="mt-3 inline-block underline">{text('Tingnan ang aking mga kwalipikasyon','View my qualifications')}</Link>
     </section> : allLessonsDone&&<form onSubmit={submit} className="flex flex-col gap-5" noValidate>
       <h2 className="text-lg font-semibold">{text('Pagsasanay sa pagmamarka','Scoring practice')}</h2>
       {cases.map((item,index)=><fieldset key={item.id} className="rounded-xl border border-ink/20 p-4">
