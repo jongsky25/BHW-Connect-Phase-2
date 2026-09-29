@@ -32,6 +32,11 @@ export type TrainingDashboardPersonChapter = {
   started: boolean;
   content_completed: boolean;
   final_completed: boolean;
+  started_at: string | null;
+  last_progress_at: string | null;
+  content_completed_at: string | null;
+  final_completed_at: string | null;
+  scores: { phase: "pretest" | "posttest" | "orientation"; score_percent: number; attempted_at: string; attempts: number }[];
 };
 
 export type TrainingDashboardPerson = {
@@ -47,6 +52,10 @@ export type TrainingDashboardPerson = {
   final_completed: boolean;
   lesson_done: number;
   lesson_total: number;
+  started_at: string | null;
+  last_progress_at: string | null;
+  content_completed_at: string | null;
+  final_completed_at: string | null;
   chapters: TrainingDashboardPersonChapter[];
 };
 

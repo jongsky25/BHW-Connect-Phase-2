@@ -212,7 +212,7 @@ export default async function TrainingDashboardPage({
             ) : (
               <ul className="space-y-3">
                 {dashboard.people.map((person) => (
-                  <PersonCard key={person.user_id} person={person} title={title} t={t} />
+                  <PersonCard key={person.user_id} person={person} title={title} t={t} locale={locale} />
                 ))}
               </ul>
             )}
@@ -267,15 +267,29 @@ function AreaMeasure({ label, role, area, t }: {
 }
 
 function PersonCard({
-  person, title, t,
+  person, title, t, locale,
 }: {
   person: TrainingDashboardPerson;
   title: (item: { title_fil: string; title_en: string }) => string;
   t: DashboardTranslations;
+  locale: "en" | "fil";
 }) {
   const status = progressStatus(person);
   const statusLabel = (value: ReturnType<typeof progressStatus>) =>
     value === "final_completed" ? t(person.role === "bhw" ? "certified" : "qualified") : t(value);
+  const date = (value: string | null) => value
+    ? new Intl.DateTimeFormat(locale === "en" ? "en-PH" : "fil-PH", {
+      dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Manila",
+    }).format(new Date(value))
+    : t("notAvailable");
+  const dates = (item: TrainingDashboardPerson | TrainingDashboardPersonChapter) => (
+    <dl className="grid gap-x-4 gap-y-1 text-xs text-ink/65 sm:grid-cols-2">
+      <div><dt className="inline">{t("startedAt")}: </dt><dd className="inline tabular-nums">{date(item.started_at)}</dd></div>
+      <div><dt className="inline">{t("lastProgressAt")}: </dt><dd className="inline tabular-nums">{date(item.last_progress_at)}</dd></div>
+      <div><dt className="inline">{t("contentCompletedAt")}: </dt><dd className="inline tabular-nums">{date(item.content_completed_at)}</dd></div>
+      <div><dt className="inline">{t(person.role === "bhw" ? "certifiedAt" : "qualifiedAt")}: </dt><dd className="inline tabular-nums">{date(item.final_completed_at)}</dd></div>
+    </dl>
+  );
   return (
     <li className="rounded-xl border border-ink/15 bg-canvas">
       <details className="group">
@@ -291,6 +305,7 @@ function PersonCard({
           </span>
         </summary>
         <div className="space-y-3 border-t border-ink/10 p-4">
+          {person.chapter_total > 1 ? <div className="rounded-md bg-ink/5 p-3">{dates(person)}</div> : null}
           {person.chapters.map((chapter: TrainingDashboardPersonChapter) => {
             const chapterStatus = progressStatus(chapter);
             return (
@@ -298,6 +313,18 @@ function PersonCard({
                 <div>
                   <p className="font-medium text-ink">{title(chapter)}</p>
                   <p className="text-sm text-ink/65">{statusLabel(chapterStatus)} · {t("lessons", { done: chapter.lesson_done, total: chapter.lesson_total })}</p>
+                  <div className="mt-2">{dates(chapter)}</div>
+                  {chapter.scores.length > 0 ? (
+                    <ul className="mt-2 flex flex-wrap gap-2 text-xs text-ink/75">
+                      {chapter.scores.map((score) => (
+                        <li key={score.phase} className="rounded-md bg-ink/5 px-2 py-1">
+                          {t(score.phase)}: <span className="font-semibold tabular-nums">{score.score_percent}%</span>
+                          {" · "}{date(score.attempted_at)}
+                          {score.attempts > 1 ? ` · ${t("attempts", { count: score.attempts })}` : ""}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-ink/10 sm:w-36" role="progressbar"
                   aria-label={title(chapter)} aria-valuenow={chapter.lesson_done} aria-valuemin={0} aria-valuemax={chapter.lesson_total}>
