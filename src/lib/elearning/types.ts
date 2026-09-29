@@ -248,7 +248,12 @@ export type QuizQuestion = {
   prompt_fil: string;
   prompt_en: string;
   options: QuizOption[];
+};
+
+export type QuizReviewItem = QuizQuestion & {
   correct_option_index: number;
+  rationale_fil: string;
+  rationale_en: string;
 };
 
 // INC-19 course-level shared pretest/posttest bank — same shape as
@@ -355,6 +360,7 @@ export type AssessmentStatus = "pending" | "assigned" | "passed" | "failed";
 
 export type Assessment = {
   id: string;
+  attempt_number: number;
   course_id: string;
   bhw_user_id: string;
   org_unit_id: string;
@@ -363,6 +369,6 @@ export type Assessment = {
   notes: string;
   created_at: string;
   decided_at: string | null;
-  courses: { title_fil: string; title_en: string } | null;
+  courses: { title_fil: string; title_en: string; assessment_kind: "standard" | "gabay_roleplay" } | null;
   users: { full_name: string; username: string } | null;
 };

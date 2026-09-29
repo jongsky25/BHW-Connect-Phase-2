@@ -17,6 +17,7 @@ export type ElearningErrorKey =
   | "invalidQuestionError"
   | "assessmentNotFoundError"
   | "assessmentAlreadyClaimedError"
+  | "invalidGabayAssessmentError"
   | "invalidPhaseError"
   | "notEnrolledInSessionError"
   | "phaseAlreadySubmittedError"
@@ -66,6 +67,7 @@ export function mapElearningRpcError(message: string | undefined): ElearningErro
   if (message.includes("invalid question")) return "invalidQuestionError";
   if (message.includes("assessment already claimed")) return "assessmentAlreadyClaimedError";
   if (message.includes("assessment not found")) return "assessmentNotFoundError";
+  if (message.includes("scenario") || message.includes("indicator") || message.includes("observation") || message.includes("evidence") || message.includes("practice advice") || message.includes("rubric") || message.includes("assessment kind") || message.includes("failed assessment to retry") || message.includes("assessment already active")) return "invalidGabayAssessmentError";
   if (message.includes("invalid phase")) return "invalidPhaseError";
   if (message.includes("not enrolled in this session")) return "notEnrolledInSessionError";
   if (message.includes("this phase has already been submitted")) return "phaseAlreadySubmittedError";
