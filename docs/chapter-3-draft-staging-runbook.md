@@ -1,12 +1,12 @@
 # Chapter III draft staging runbook
 
-**Current state: prepared offline; no live calls authorized yet.** The course owner will explicitly trigger migration. Review of the modules will occur **after** they are staged in the system. Do not substitute the old planning sequence, which called for review before authoring.
+**Current state: draft staged on the confirmed pilot after the owner's 29 September 2026 trigger.** Review of the modules occurs **after** staging. Publication and production asset deployment remain separate actions.
 
-## Scope of the future trigger
+## Staging scope
 
-Stage the Chapter III package as a **draft course** with 12 ordered modules, 65 unpublished lessons, lesson-level private facilitator notes and module-level private guides. The program's `chapter-3` mapping stays `unavailable` with `delivery_course: null`. No Chapter I/II content, assessments, certificates, learner progress, KB or published course row is changed by `scripts/chapter3-stage.mjs`.
+Stage the Chapter III package as a **draft course** with 12 ordered modules, 65 unpublished lessons, lesson-level private facilitator notes and module-level private guides. The live database requires the draft course to be mapped to `chapter-3` before accepting lessons; the mapping stays `unavailable`, the course stays `draft`, and all lesson `published_revision_id` values stay null. No Chapter I/II content, assessments, certificates, learner progress, KB or published course row is changed by this operation. The repository's `program.json` continues to reserve Chapter III with `delivery_course: null` and is not a snapshot of live chapter mappings.
 
-The project reference and exact organization name must be confirmed at trigger time. Repository history names a pilot project, but a historical release record is not proof of the current target. Use an active admin account scoped to the intended organization. Do not store credentials in this package or commit the generated `locks/<project-ref>.json`, which will contain target row IDs.
+The trigger-time read-only check confirmed the active pilot project `ltzicxyefizxoqhfuuzc` and the BHW Reference Manual program under `Department of Health`. Draft course ID: `6881b261-4b4a-4041-aa67-6d8f3736140d`. Do not store credentials in this package or commit a generated `locks/<project-ref>.json`, which would contain target row IDs.
 
 ## Before contact with the target
 
@@ -18,9 +18,10 @@ The project reference and exact organization name must be confirmed at trigger t
 ## After the trigger
 
 1. Set the admin environment values expected by the existing Supabase REST loader: `NEXT_PUBLIC_SUPABASE_ANON_KEY` (or `KB_LOADER_ANON_KEY`), `KB_LOADER_USERNAME`, and `KB_LOADER_PASSWORD`. Use the approved secret source; never print them or commit an `.env` file.
-2. Run a **remote read-only plan**: `node scripts/chapter3-stage.mjs --project <confirmed-ref> --org-unit "<exact organization>"`. The pilot guard in `scripts/lib/pilot-guard.mjs` may require `ALLOW_PILOT=1` for a deliberate pilot operation. Confirm the report says draft course, Chapter III mapping unchanged/unavailable and publication not performed.
-3. Run `node scripts/chapter3-stage.mjs --project <confirmed-ref> --org-unit "<exact organization>" --apply` once the plan is accepted. The script saves a row-ID lock after each created course/module/lesson and can reconcile on rerun. It has no `--publish` option.
-4. Re-run the remote read-only plan. Expect unchanged modules, guides and lessons. Save the report and lock in the authorized release record. Verify in an admin/staff view that all 12 modules and 65 lessons are present as drafts, private notes are staff-only, and a BHW cannot see Chapter III.
+2. The read-only plan confirmed the target, source program, unavailable Chapter III mapping and absence of a Chapter III course.
+3. The migration used `scripts/chapter3-sql-stage.mjs` to generate 78 ordered, transactional SQL files and the connected Supabase project to apply them. The existing REST staging script requires admin credentials that were not configured locally. The SQL scripts create or reconcile the draft course, map it to still-unavailable Chapter III, and stage modules, guides and unpublished lesson revisions. They contain no publication operation.
+4. The post-stage SQL check confirmed 12 modules, 12 module guides, 65 lessons, 65 revisions, 65 private lesson guides, zero published lessons, course status `draft`, and Chapter III availability `unavailable`. Keep this record with the source commit and generated SQL hashes. An admin/staff view should still be checked during the scheduled in-system review.
+5. Run `node scripts/chapter3-sql-verify.mjs <staged-course-uuid>` and execute its read-only SQL against the confirmed target. The 29 September check returned 65 expected revisions, 65 staged revisions, 65 exact hash matches, and no missing or mismatched lessons.
 
 The MP3s and narration manifest are static application assets in the Git branch; the database staging script does not upload them. Plan an asset deployment or preview separately after the owner's trigger before assessing in-app audio. No production deployment is part of offline narration work.
 

@@ -63,29 +63,42 @@ async function main() {
   const orgs = await client.get(`org_units?select=id,name&name=eq.${encodeURIComponent(args.orgUnit)}`);
   if (orgs.length !== 1) throw new Error('Resolve the exact organization before staging');
   const orgUnitId = orgs[0].id;
+  const programs = await client.get(`training_programs?select=id,org_unit_id&content_key=eq.bhw-reference-manual&org_unit_id=eq.${orgUnitId}`);
+  if (programs.length !== 1) throw new Error('Expected one BHW Reference Manual program for this organization');
+  const chapters = await client.get(`training_program_chapters?select=id,course_id,availability&program_id=eq.${programs[0].id}&chapter_key=eq.chapter-3`);
+  if (chapters.length !== 1 || chapters[0].availability !== 'unavailable') throw new Error('Chapter III must exist and remain unavailable');
+  const liveChapter = chapters[0];
   const file = lockFile(args.project);
   const lock = existsSync(file) ? json(file) : { course: null, modules: {}, lessons: {} };
+  lock.modules ??= {};
+  lock.lessons ??= {};
   const title = blueprint.title_en;
-  const candidateCourses = await client.get(`courses?select=id,org_unit_id,status,title_en&org_unit_id=eq.${orgUnitId}&title_en=eq.${encodeURIComponent(title)}`);
+  const candidateCourses = await client.get(`courses?select=id,org_unit_id,status,title_fil,title_en&org_unit_id=eq.${orgUnitId}&title_en=eq.${encodeURIComponent(title)}`);
   if (candidateCourses.length > 1) throw new Error('Duplicate Chapter III course titles; reconcile before staging');
-  if (candidateCourses[0] && lock.course !== candidateCourses[0].id) throw new Error('Existing Chapter III course has no matching lock; reconcile before staging');
+  if (candidateCourses[0] && lock.course && lock.course !== candidateCourses[0].id) throw new Error('Existing Chapter III course differs from lock');
+  if (candidateCourses[0] && !lock.course && liveChapter.course_id !== candidateCourses[0].id) throw new Error('Existing Chapter III course has no matching lock or chapter mapping');
   if (lock.course && (!candidateCourses[0] || candidateCourses[0].id !== lock.course)) throw new Error('Course lock is stale or points to another organization');
-  if (candidateCourses[0]?.status !== undefined && candidateCourses[0].status !== 'draft') throw new Error('Chapter III course must remain draft');
+  if (candidateCourses[0] && (candidateCourses[0].status !== 'draft' || candidateCourses[0].title_fil !== blueprint.title_fil)) throw new Error('Chapter III course must match the draft package');
+  if (liveChapter.course_id && liveChapter.course_id !== candidateCourses[0]?.id) throw new Error('Chapter III is mapped to a different course');
 
-  let courseId = lock.course;
+  let courseId = lock.course ?? candidateCourses[0]?.id ?? null;
+  if (courseId) lock.course = courseId;
   if (!courseId && args.apply) {
     const [row] = await client.insert('courses', [{ org_unit_id: orgUnitId, author_user_id: author.id, title_fil: blueprint.title_fil, title_en: title, description_fil: 'Kabanata III — draft para sa pagsusuri', description_en: 'Chapter III — draft for review', status: 'draft', quiz_passing_percent: 80, quiz_max_attempts: 3 }]);
     courseId = row.id;
     lock.course = courseId;
     saveLock(args.project, lock);
   }
-  const report = { project: args.project, organization: args.orgUnit, course: courseId ? 'draft-existing' : 'draft-create', modules: [], module_guides: [], lesson_plan: null, chapter_mapping: 'unchanged/unavailable', publication: 'not performed' };
+  if (courseId && !liveChapter.course_id && args.apply) await client.patch(`training_program_chapters?id=eq.${liveChapter.id}`, { course_id: courseId });
+  const mapped = liveChapter.course_id === courseId || Boolean(courseId && args.apply);
+  const report = { project: args.project, organization: args.orgUnit, course: courseId ? 'draft-existing' : 'draft-create', modules: [], module_guides: [], lesson_plan: null, chapter_mapping: mapped ? 'linked/unavailable' : 'link-on-apply/unavailable', publication: 'not performed' };
   for (const m of moduleRows) {
     const existing = courseId ? await client.get(`course_modules?select=id,course_id,position,title_en&course_id=eq.${courseId}&position=eq.${m.authored.position}`) : [];
     if (existing.length > 1) throw new Error(`${m.module_key}: duplicate module positions`);
     const row = existing[0];
-    if (row && (lock.modules[m.module_key] !== row.id || row.title_en !== m.title_en)) throw new Error(`${m.module_key}: module identity differs from lock`);
+    if (row && ((lock.modules[m.module_key] && lock.modules[m.module_key] !== row.id) || row.title_en !== m.title_en)) throw new Error(`${m.module_key}: module identity differs from lock`);
     if (!row && lock.modules[m.module_key]) throw new Error(`${m.module_key}: stale module lock`);
+    if (row) lock.modules[m.module_key] = row.id;
     report.modules.push({ key: m.module_key, action: row ? 'unchanged' : 'create' });
     if (!row && args.apply) {
       const [created] = await client.insert('course_modules', [{ course_id: courseId, position: m.authored.position, type: 'text', title_fil: m.title_fil, title_en: m.title_en, body_fil: '', body_en: '', video_url: null, objectives_fil: m.authored.objectives_fil, objectives_en: m.authored.objectives_en, summary_fil: m.authored.summary_fil, summary_en: m.authored.summary_en, lesson: null }]);
