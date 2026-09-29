@@ -1,4 +1,4 @@
-# Chapter III offline staging package
+# Chapter III content and release package
 
 This package prepares **The BHW as a Primary Care Advocate** for draft staging in the BHW Reference Manual program. It contains 12 subchapters and 65 bilingual lesson drafts. The planned facilitated allocation is **392 hours**. The guide's overview says 384 hours, while its detailed monitoring table yields 392; the owner chose the detailed basis for planning. The three/five-hour split of the guide's shared 3.1–3.2 block is an authoring proposal.
 
@@ -31,4 +31,4 @@ Narration is rendered from the exact Read text and is not part of the draft stag
 
 ## Migration boundary
 
-The owner triggered draft migration on 29 September 2026. Follow `docs/chapter-3-draft-staging-runbook.md` for the target record. The staging path creates or reconciles a draft course, its 12 modules, 65 unpublished lesson revisions and private module/lesson guides. The database requires the draft course to be mapped to Chapter III before lesson inserts; Chapter III remains `unavailable` and the course remains `draft`, so learners cannot reach it. Review in the system follows staging; publication remains a separate decision after the review queue and local configuration are completed.
+The owner triggered draft migration on 29 September 2026. The staged course has 12 modules and 65 lesson revisions with private module/lesson guides. The owner then requested publication of all 65 lesson revisions and attested that review was completed; the reviewer record is still to be supplied. The live check confirmed 65/65 published lesson pointers and 12 migration audit events. The course remains `draft` and Chapter III remains `unavailable`, so learners cannot reach it. See `release/pilot-2026-09-29-lessons.json` and `docs/chapter-3-draft-staging-runbook.md`. Narration assets are still only in the Git branch and have not been deployed to the live app.
