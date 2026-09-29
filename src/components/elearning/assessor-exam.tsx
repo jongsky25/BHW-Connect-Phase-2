@@ -64,6 +64,9 @@ export function AssessorExam({chapterId,phase,locale,chapterHref}:{chapterId:str
       <p>{phase==='pretest'?text('Naitala ang diagnostic baseline.','Diagnostic baseline recorded.')
         :result.passed?text('Pumasa. Ang oryentasyon ang susunod na hakbang.','Passed. Orientation is the next step.')
           :text('Hindi pa pumasa. Naitala ang pagsubok; maaari kang umulit.','Not yet passed. This attempt is saved; you can retry.')}</p>
+      {phase==='posttest'&&result.passed&&<Link prefetch={false} href={`${chapterHref}/orientation`} className="mt-2 inline-block rounded bg-primary px-4 py-3 font-medium text-on-primary">
+        {text('Simulan ang oryentasyon','Start orientation')}
+      </Link>}
       {result.pretest_late && <p className="text-sm">{text('Naitala ito matapos magsimula ang pag-aaral.','This diagnostic was recorded after study had begun.')}</p>}
     </div>}
     {!attempt && <div className="flex flex-wrap items-center gap-3">

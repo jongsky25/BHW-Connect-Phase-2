@@ -93,6 +93,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       <h1 className="mt-2 text-2xl font-semibold">{examPage?(examPhase==='pretest'?text('Diagnostic pretest','Diagnostic pretest'):text('Pangwakas na pagsusulit','Chapter post-test')):lesson?title(lesson):subchapter?title(subchapter):title(chapter)}</h1>
       <p className="mt-2">{text('Kumpletuhin ang buong kabanata at pumasa sa pagsusulit bago ang oryentasyon sa pagmamarka. Hindi kailangan ng praktikal na pagtatasa ng ibang assessor.','Complete the full chapter and pass its exam before scoring orientation. No practical assessment by another assessor is required.')}</p>
     </header>
+    <Link prefetch={false} className="self-start rounded border border-primary px-4 py-3 font-medium text-primary" href={`/training/${programId}/assessor/qualifications`}>{text('Aking mga kwalipikasyon','My qualifications')}</Link>
     <section className="rounded-xl border border-ink/15 p-4" aria-label={text('Progreso sa pag-aaral','Study progress')}>
       <p>{text(`${study.completed} sa ${study.total} kinakailangang aralin ang natapos`,`${study.completed} of ${study.total} required lessons completed`)}</p>
       <progress className="mt-2 w-full" max={study.total} value={study.completed} aria-label={text('Mga araling natapos','Lessons completed')}/>
@@ -102,7 +103,8 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       {examAvailable&&pretestDone&&!posttestPassed&&posttestReady&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={`${base}/exam/posttest`}>{text('Kunin ang pangwakas na pagsusulit','Take the chapter post-test')}</Link>}
       {examAvailable&&pretestDone&&!posttestReady&&study.nextLesson&&!lesson&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={href(study.nextLesson)}>{text('Magpatuloy sa pag-aaral','Continue studying')}</Link>}
       {!examAvailable&&<p className="mt-2">{text('Hindi pa available ang kwalipikadong pagsusulit para sa kabanatang ito.','The qualifying exam for this chapter is not yet available.')}</p>}
-      {posttestPassed&&<p className="mt-2">{text('Pumasa ka sa pagsusulit. Susunod ang oryentasyon sa pagmamarka kapag available na ito.','You passed the exam. Scoring orientation is the next step when available.')}</p>}
+      {posttestPassed&&posttestReady&&curriculum?.orientationAvailable&&<Link prefetch={false} className="mt-3 inline-block rounded bg-primary px-4 py-3 text-on-primary" href={`${base}/orientation`}>{text('Simulan ang oryentasyon sa pagmamarka','Start scoring orientation')}</Link>}
+      {posttestPassed&&!curriculum?.orientationAvailable&&<p className="mt-2">{text('Pumasa ka sa pagsusulit. Susunod ang oryentasyon sa pagmamarka kapag available na ito.','You passed the exam. Scoring orientation is the next step when available.')}</p>}
     </section>
     {examPage?(examPhase==='posttest'&&!posttestReady
       ?<p>{text('Kumpletuhin muna ang diagnostic pretest at lahat ng aralin bago kumuha ng pangwakas na pagsusulit.','Complete the diagnostic pretest and every lesson before taking the post-test.')}</p>

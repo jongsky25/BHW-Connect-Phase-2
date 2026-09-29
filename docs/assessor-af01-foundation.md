@@ -66,16 +66,16 @@ npx vitest run src/lib/assessor scripts/tests/assessor-curriculum.test.mjs scrip
 ```
 
 The first command succeeds for a structurally valid **draft** inventory and lists
-activation blockers. `--require-ready` intentionally exits 1: orientation is not
-implemented, rubric/curriculum review is outstanding and Chapter II lacks its exam
-bank. A successful ordinary audit is not permission to activate the feature.
+activation blockers. `--require-ready` intentionally exits 1: rubric/curriculum
+review is outstanding and Chapter II lacks an exam bank and orientation.
+A successful ordinary audit is not permission to activate the feature.
 
 Do not automatically regenerate hashes to silence drift failures. Review the
 changed source, add a new manifest version and preserve older versions referenced
-by evidence. These initial source hashes cover file bytes, so formatting/line-ending
-changes also require explicit review. Once orientation and review state are
-implemented, extend the activation validator with that reviewed schema rather
-than simply removing its guards.
+by evidence. The source audit normalizes checkout line endings before hashing;
+other formatting changes still require explicit review. AF-04 extends the
+activation validator with its source and migration hashes while preserving the
+remaining blockers.
 
 ## Existing mutation paths audited for the next increments
 
