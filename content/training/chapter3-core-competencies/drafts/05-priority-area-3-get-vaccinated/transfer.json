@@ -1,0 +1,67 @@
+{
+  "job_aid": "job-aid.{language}.md",
+  "workplace_task": {
+    "fil": "Gamit ang kathang-isip na kaso at kasalukuyang lokal na gabay, ulitin ang gawaing kailangan ng pagsasanay sa harap ng supervisor.",
+    "en": "Using a fictional case and current local guide, repeat the task needing practice with a supervisor."
+  },
+  "supervision": {
+    "fil": "Markahan ang parehong observer indicator, magbigay ng feedback at magtakda ng susunod na pagsubok.",
+    "en": "Score the same observer indicator, give feedback and schedule a retry."
+  },
+  "recall_schedule_days": [
+    2,
+    14,
+    60
+  ],
+  "delivery": "content specification only; no reminders scheduled",
+  "recall_items": [
+    {
+      "lesson_key": "childhood-immunization-follow-up",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihambing ang card sa kasalukuyang aprubadong iskedyul, kumpirmahin ang hindi malinaw na tala, at ayusin ang follow-up sa health team.",
+            "en": "Uses the current schedule, verifies uncertain entries, and arranges follow-up."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Gumamit ng iskedyul sa lumang poster bilang tiyak na gabay.",
+            "en": "Treat an old poster as the definitive current schedule."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "lesson_key": "adult-and-older-person-vaccination",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tingnan ang kasalukuyang lokal na programa at eligibility, ipaliwanag ang makukumpirma pa lamang, at iugnay siya sa provider.",
+            "en": "Does not promise eligibility, stock, timing, or price without verification."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Mangakong libre at mayroon agad ang bakuna nang hindi sinusuri.",
+            "en": "Promise that the vaccine is free and in stock without checking."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    }
+  ]
+}

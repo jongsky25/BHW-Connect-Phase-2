@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Hanapin ang hindi tugma, itama gamit ang pinagmulan ng impormasyon, markahan ang hindi pa tiyak, at ipasa nang pribado.",
+      "observable_en": "Finds all critical discrepancies, marks unresolved facts, and follows the approved storage/submission route.",
+      "not_yet_fil": "Baguhin ang tala mula sa hula para lang makapasa sa deadline.",
+      "not_yet_en": "Change entries from guesses merely to meet the deadline.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Hanapin ang hindi tugma, itama gamit ang pinagmulan ng impormasyon, markahan ang hindi pa tiyak, at ipasa nang pribado.",
+        "kaya_na_en": "Finds all critical discrepancies, marks unresolved facts, and follows the approved storage/submission route.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Baguhin ang tala mula sa hula para lang makapasa sa deadline.",
+        "hindi_pa_en": "Change entries from guesses merely to meet the deadline."
+      }
+    }
+  ]
+}

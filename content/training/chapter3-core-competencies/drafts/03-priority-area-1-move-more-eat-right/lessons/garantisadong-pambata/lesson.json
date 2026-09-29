@@ -1,0 +1,172 @@
+{
+  "manifest": {
+    "lesson_key": "garantisadong-pambata",
+    "position": 3,
+    "title_fil": "Garantisadong Pambata",
+    "title_en": "Garantisadong Pambata",
+    "objectives_fil": [
+      "Tingnan ang kasalukuyang programa at card, ipaliwanag ang dapat kumpirmahin sa health center, at tugunan ang pangamba nang may respeto."
+    ],
+    "objectives_en": [
+      "Given a child program card, identify the due service and address a caregiver concern using current local program guidance."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "May card si Nanay Elsa at hindi niya tiyak kung anong serbisyo ang due sa anak niya.",
+      "takeaway_en": "Elsa has her child's card and is unsure which service is due.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tingnan ang kasalukuyang programa at card, ipaliwanag ang dapat kumpirmahin sa health center, at tugunan ang pangamba nang may respeto.",
+      "takeaway_en": "Identify the due service and address a caregiver concern using current local program guidance.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili muna ng sagot.",
+      "takeaway_en": "Choose an answer first.",
+      "check": {
+        "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+        "prompt_en": "What should the BHW do in this situation?",
+        "options": [
+          {
+            "fil": "Magbigay ng supplement o gamot mula sa sariling hula.",
+            "en": "Give a supplement or medicine based on a guess."
+          },
+          {
+            "fil": "Tingnan ang kasalukuyang programa at card, ipaliwanag ang dapat kumpirmahin sa health center, at tugunan ang pangamba nang may respeto.",
+            "en": "Identify the due service and address a caregiver concern using current local program guidance."
+          },
+          {
+            "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+            "en": "Delay without a plan or follow-up."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+        "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+      "takeaway_en": "In this fictional case, Mira checks the current local guide before responding.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Iwasan ang ganitong kilos: Magbigay ng supplement o gamot mula sa sariling hula.",
+      "takeaway_en": "Avoid this action: Give a supplement or medicine based on a guess.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Piliin ang kilos na may nakikitang resulta.",
+      "takeaway_en": "Choose the action with an observable result.",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tingnan ang kasalukuyang programa at card, ipaliwanag ang dapat kumpirmahin sa health center, at tugunan ang pangamba nang may respeto.",
+            "en": "Explains the action and referral site without independently prescribing supplements or medicine."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Magbigay ng supplement o gamot mula sa sariling hula.",
+            "en": "Give a supplement or medicine based on a guess."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c3.garantisadong-pambata"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+      "takeaway_en": "At the next supervised practice, use this fictional case.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c3.garantisadong-pambata",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual (2022)",
+      "pdf_pages": [
+        73,
+        74
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "BHW Facilitator Guide (2022)",
+      "pdf_pages": [
+        57
+      ]
+    }
+  ],
+  "assets": []
+}

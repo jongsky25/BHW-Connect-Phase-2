@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang maaaring pinamumugaran ng lamok, ibahagi ang nasuring prevention message, at sundin ang referral protocol sa may sakit.",
+      "observable_en": "Identifies breeding-site action and flags concerning illness per reviewed protocol.",
+      "not_yet_fil": "Sabihing dengue na ito at ipagpaliban ang assessment.",
+      "not_yet_en": "Call it dengue and delay assessment.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang maaaring pinamumugaran ng lamok, ibahagi ang nasuring prevention message, at sundin ang referral protocol sa may sakit.",
+        "kaya_na_en": "Identifies breeding-site action and flags concerning illness per reviewed protocol.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Sabihing dengue na ito at ipagpaliban ang assessment.",
+        "hindi_pa_en": "Call it dengue and delay assessment."
+      }
+    }
+  ]
+}

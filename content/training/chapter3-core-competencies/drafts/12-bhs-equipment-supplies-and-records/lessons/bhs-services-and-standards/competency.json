@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihambing ang aprubadong lokal na standard sa aktuwal na serbisyo at iulat ang tiyak na puwang sa responsable.",
+      "observable_en": "Reports a specific gap without promising a service or practicing beyond role.",
+      "not_yet_fil": "Mangako sa residente ng serbisyong nakasulat sa lumang manual ngunit wala sa BHS.",
+      "not_yet_en": "Promise a service listed in an old manual but unavailable at the BHS.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihambing ang aprubadong lokal na standard sa aktuwal na serbisyo at iulat ang tiyak na puwang sa responsable.",
+        "kaya_na_en": "Reports a specific gap without promising a service or practicing beyond role.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Mangako sa residente ng serbisyong nakasulat sa lumang manual ngunit wala sa BHS.",
+        "hindi_pa_en": "Promise a service listed in an old manual but unavailable at the BHS."
+      }
+    }
+  ]
+}

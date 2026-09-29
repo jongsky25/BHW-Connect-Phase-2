@@ -1,0 +1,172 @@
+{
+  "manifest": {
+    "lesson_key": "diabetes",
+    "position": 6,
+    "title_fil": "Payo at referral sa diabetes",
+    "title_en": "Diabetes",
+    "objectives_fil": [
+      "Pakinggan ang sintomas, gamitin ang nasuring NCD guidance, at i-refer sa angkop na pagsusuri at follow-up."
+    ],
+    "objectives_en": [
+      "Given a fictional diabetes risk or symptom concern, provide a reviewed prevention/referral message."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Madalas mauhaw si Celia at nagtatanong tungkol sa diabetes sa BHS.",
+      "takeaway_en": "Celia reports frequent thirst and asks about diabetes at the BHS.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pakinggan ang sintomas, gamitin ang nasuring NCD guidance, at i-refer sa angkop na pagsusuri at follow-up.",
+      "takeaway_en": "Provide a reviewed prevention/referral message.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili muna ng sagot.",
+      "takeaway_en": "Choose an answer first.",
+      "check": {
+        "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+        "prompt_en": "What should the BHW do in this situation?",
+        "options": [
+          {
+            "fil": "Sabihing may diabetes na siya nang walang pagsusuri ng provider.",
+            "en": "Tell her she has diabetes without provider assessment."
+          },
+          {
+            "fil": "Pakinggan ang sintomas, gamitin ang nasuring NCD guidance, at i-refer sa angkop na pagsusuri at follow-up.",
+            "en": "Provide a reviewed prevention/referral message."
+          },
+          {
+            "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+            "en": "Delay without a plan or follow-up."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+        "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+      "takeaway_en": "In this fictional case, Mira checks the current local guide before responding.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Iwasan ang ganitong kilos: Sabihing may diabetes na siya nang walang pagsusuri ng provider.",
+      "takeaway_en": "Avoid this action: Tell her she has diabetes without provider assessment.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Piliin ang kilos na may nakikitang resulta.",
+      "takeaway_en": "Choose the action with an observable result.",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Pakinggan ang sintomas, gamitin ang nasuring NCD guidance, at i-refer sa angkop na pagsusuri at follow-up.",
+            "en": "Identifies the appropriate service and role boundary; does not make an unsupported treatment claim."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Sabihing may diabetes na siya nang walang pagsusuri ng provider.",
+            "en": "Tell her she has diabetes without provider assessment."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c3.diabetes"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+      "takeaway_en": "At the next supervised practice, use this fictional case.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c3.diabetes",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual (2022)",
+      "pdf_pages": [
+        77,
+        78
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "BHW Facilitator Guide (2022)",
+      "pdf_pages": [
+        61
+      ]
+    }
+  ],
+  "assets": []
+}

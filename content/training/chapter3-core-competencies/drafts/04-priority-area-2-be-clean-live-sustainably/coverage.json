@@ -1,0 +1,76 @@
+{
+  "concepts": [
+    {
+      "id": "c3.environmental-health",
+      "statement_en": "Given a household scene, identify a water, sanitation, food-safety, or waste concern and an appropriate partner/action.",
+      "source": "R81, R82, R83, F64, F65, F66",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.tuberculosis",
+      "statement_en": "Given a cough and treatment-support case, explain current TB service access and BHW follow-up role.",
+      "source": "R83, R84, R85, F67, F68",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.dengue",
+      "statement_en": "Given a household risk map and symptom case, choose prevention and escalation actions.",
+      "source": "R85, R86, R87, F69, F70",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.rabies",
+      "statement_en": "Given an animal-bite case, communicate the reviewed first response and urgent referral route.",
+      "source": "R88, F71",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.influenza",
+      "statement_en": "Given an older-person household case, explain reviewed cough etiquette, prevention, and service options.",
+      "source": "R89, F72",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.hepatitis-a-b-and-c",
+      "statement_en": "Given a misconception, explain a reviewed transmission/prevention distinction without stigma.",
+      "source": "R89, R90, F73, F74",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.leptospirosis",
+      "statement_en": "Given a flood-exposure concern, convey prevention and referral guidance from the current local protocol.",
+      "source": "R90, R91, F75",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.covid-19",
+      "statement_en": "Given a changing local advisory, locate the current official response and communicate a safe household action.",
+      "source": "R91, R92, F76, F77",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.typhoid",
+      "statement_en": "In a locally relevant case, connect WASH prevention with a reviewed referral message.",
+      "source": "R92, R93, F78, F79",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.malaria",
+      "statement_en": "In an endemic or travel-relevant case, identify a locally verified prevention and referral route.",
+      "source": "R93, R94, F78, F79",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.leprosy",
+      "statement_en": "Given a persistent skin-change concern, respond without stigma and direct to assessment.",
+      "source": "R94, F78, F79",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.filariasis-and-schistosomiasis",
+      "statement_en": "In locally relevant cases, match each disease to its reviewed exposure-prevention and assessment pathway.",
+      "source": "R94, R95, F78, F79",
+      "redundant_with": null
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "source_allocation_hours": 12,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-violence-and-safe-referral",
+      "lesson_key": "violence-and-safe-referral",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "objective_index": 0,
+      "indicator_ref": "lessons/violence-and-safe-referral/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          115,
+          116
+        ],
+        "F": [
+          99,
+          100
+        ]
+      }
+    },
+    {
+      "id": "activity-older-person-safety-and-benefits",
+      "lesson_key": "older-person-safety-and-benefits",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "objective_index": 1,
+      "indicator_ref": "lessons/older-person-safety-and-benefits/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          116,
+          117
+        ],
+        "F": [
+          99,
+          100
+        ]
+      }
+    },
+    {
+      "id": "activity-fireworks-injury-prevention",
+      "lesson_key": "fireworks-injury-prevention",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "objective_index": 2,
+      "indicator_ref": "lessons/fireworks-injury-prevention/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          118
+        ],
+        "F": [
+          99,
+          100
+        ]
+      }
+    },
+    {
+      "id": "activity-road-safety",
+      "lesson_key": "road-safety",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 180,
+      "objective_index": 3,
+      "indicator_ref": "lessons/road-safety/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          119
+        ],
+        "F": [
+          99,
+          100
+        ]
+      }
+    }
+  ]
+}

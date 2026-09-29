@@ -1,0 +1,147 @@
+[
+  {
+    "id": "slide-scene",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "scene",
+    "heading_fil": "Ang sitwasyon",
+    "heading_en": "The situation",
+    "display_fil": "Ang sitwasyon\nNagtanong si Lira kung may konsultasyon sa BHS para sa kanyang ina.",
+    "display_en": "The situation\nLira asks whether the BHS can see her mother.",
+    "check": null,
+    "narration_fil": "Nagtanong si Lira kung may konsultasyon sa BHS para sa kanyang ina. Wala sa lumang listahan ang iskedyul ngayon. Kailangan munang tiyakin ni BHW Marga ang serbisyo bago magbigay ng direksiyon.",
+    "narration_en": "Lira asks whether the BHS can see her mother. The schedule on hand is old. BHW Marga needs to confirm the service before giving directions."
+  },
+  {
+    "id": "slide-action",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin at sabihin",
+    "heading_en": "What to do and say",
+    "display_fil": "Gawin at sabihin\nItanong ang pangangailangan at kung may agarang panganib.",
+    "display_en": "What to do and say\nAsk what Lira's mother needs and whether there is an urgent concern.",
+    "check": null,
+    "narration_fil": "Itanong ang pangangailangan at kung may agarang panganib. Gamitin ang kasalukuyang lokal na directory. Kung hindi tiyak ang serbisyo, kumpirmahin sa midwife o health center. Humingi ng pahintulot bago magpasa ng detalye.",
+    "narration_en": "Ask what Lira's mother needs and whether there is an urgent concern. Use the current local directory. If service availability is uncertain, confirm with the midwife or health centre. Ask permission before sharing details."
+  },
+  {
+    "id": "slide-check-start",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Piliin ang tugon",
+    "heading_en": "Choose a response",
+    "display_fil": "Piliin ang tugon\nPumili muna ng sagot.",
+    "display_en": "Choose a response\nChoose an answer first.",
+    "check": {
+      "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+      "prompt_en": "What should the BHW do in this situation?",
+      "options": [
+        {
+          "fil": "Sabihing tiyak na bukas at libre ang konsultasyon kahit luma ang listahan.",
+          "en": "Say the consultation is definitely open and free even though the list is old."
+        },
+        {
+          "fil": "Itanong ang pangangailangan at kung may agarang panganib.",
+          "en": "Ask what Lira's mother needs and whether there is an urgent concern."
+        },
+        {
+          "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+          "en": "Delay without a plan or follow-up."
+        }
+      ],
+      "correct_option_index": 1,
+      "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+      "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+    },
+    "narration_fil": "Pumili muna ng sagot. Pagkatapos, basahin ang dahilan.",
+    "narration_en": "Choose an answer first. Then read the reason."
+  },
+  {
+    "id": "slide-example",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Halimbawa",
+    "heading_en": "Worked example",
+    "display_fil": "Halimbawa\nSinabi ni Marga: “Kukumpirmahin ko po muna ang iskedyul.",
+    "display_en": "Worked example\nMarga says, “I will confirm the schedule first.",
+    "check": null,
+    "narration_fil": "Sinabi ni Marga: “Kukumpirmahin ko po muna ang iskedyul. Puwede ko bang ibahagi sa midwife ang kailangan ng inyong ina?” Nang pumayag si Lira, ipinasa ni Marga ang kailangang detalye. Binalikan niya si Lira na may tiyak na contact at oras ng follow-up.",
+    "narration_en": "Marga says, “I will confirm the schedule first. May I tell the midwife what your mother needs?” With Lira's permission, Marga shares only the necessary facts. She returns with a confirmed contact and follow-up time."
+  },
+  {
+    "id": "slide-scope",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "comparison",
+    "heading_fil": "Saklaw at kaligtasan",
+    "heading_en": "Scope and safety",
+    "display_fil": "Saklaw at kaligtasan\nHuwag mangakong bukas ang serbisyo o may libreng konsulta kung hindi pa ito nakumpirma.",
+    "display_en": "Scope and safety\nDo not promise that a service is open or free before confirming it.",
+    "check": null,
+    "narration_fil": "Huwag mangakong bukas ang serbisyo o may libreng konsulta kung hindi pa ito nakumpirma. Huwag ipahayag sa iba ang pribadong detalye. Kung may agarang panganib, gamitin ang lokal na emergency pathway.",
+    "narration_en": "Do not promise that a service is open or free before confirming it. Do not share private details with others. If an urgent concern is present, use the local emergency pathway."
+  },
+  {
+    "id": "slide-check-transfer",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "decision",
+    "heading_fil": "Subukan sa gawain",
+    "heading_en": "Apply the task",
+    "display_fil": "Subukan sa gawain\nPiliin ang kilos na may nakikitang resulta.",
+    "display_en": "Apply the task\nChoose the action with an observable result.",
+    "check": {
+      "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+      "prompt_en": "Which action shows the task was done well?",
+      "options": [
+        {
+          "fil": "Sinuri ang pangangailangan, kinumpirma ang serbisyo, humingi ng pahintulot, nagbigay ng tiyak na susunod na hakbang at nagtakda ng follow-up.",
+          "en": "Checked the need, confirmed the service, asked permission, gave a concrete next step and set a follow-up."
+        },
+        {
+          "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+          "en": "Say the task is complete without recording an outcome."
+        },
+        {
+          "fil": "Sabihing tiyak na bukas at libre ang konsultasyon kahit luma ang listahan.",
+          "en": "Say the consultation is definitely open and free even though the list is old."
+        }
+      ],
+      "correct_option_index": 0,
+      "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+      "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+    },
+    "narration_fil": "Piliin ang kilos na may nakikitang resulta.",
+    "narration_en": "Choose the action with an observable result."
+  },
+  {
+    "id": "slide-next-step",
+    "concept_ids": [
+      "c3.referral-and-handover"
+    ],
+    "asset_ids": [],
+    "layout": "process",
+    "heading_fil": "Gawin sa trabaho",
+    "heading_en": "Use this at work",
+    "display_fil": "Gawin sa trabaho\nKasama ang midwife, punan ang mga bakanteng contact, iskedyul, transport at referral channel sa lokal na directory.",
+    "display_en": "Use this at work\nWith the midwife, fill in the local directory's contact, schedule, transport and referral-channel gaps.",
+    "check": null,
+    "narration_fil": "Kasama ang midwife, punan ang mga bakanteng contact, iskedyul, transport at referral channel sa lokal na directory. Gamitin ang kathang-isip na kaso sa susunod na handover practice.",
+    "narration_en": "With the midwife, fill in the local directory's contact, schedule, transport and referral-channel gaps. Use a fictional case in the next handover practice."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Iuri ang bawat bata ayon sa kasalukuyang form, i-update ang target list, at markahan ang follow-up na kailangang kumpirmahin.",
+      "observable_en": "Classifies age group correctly under current forms and flags due follow-up.",
+      "not_yet_fil": "Ilagay ang lahat sa parehong age group kahit magkakaiba ang edad.",
+      "not_yet_en": "Put all children in the same age group despite different ages.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Iuri ang bawat bata ayon sa kasalukuyang form, i-update ang target list, at markahan ang follow-up na kailangang kumpirmahin.",
+        "kaya_na_en": "Classifies age group correctly under current forms and flags due follow-up.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Ilagay ang lahat sa parehong age group kahit magkakaiba ang edad.",
+        "hindi_pa_en": "Put all children in the same age group despite different ages."
+      }
+    }
+  ]
+}

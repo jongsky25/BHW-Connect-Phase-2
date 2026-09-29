@@ -1,0 +1,58 @@
+{
+  "source_allocation_hours": 12,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-mental-wellbeing-and-stigma",
+      "lesson_key": "mental-wellbeing-and-stigma",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 360,
+      "objective_index": 0,
+      "indicator_ref": "lessons/mental-wellbeing-and-stigma/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          102,
+          103,
+          104
+        ],
+        "F": [
+          87,
+          88,
+          89
+        ]
+      }
+    },
+    {
+      "id": "activity-mental-health-escalation-and-support",
+      "lesson_key": "mental-health-escalation-and-support",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 360,
+      "objective_index": 1,
+      "indicator_ref": "lessons/mental-health-escalation-and-support/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          103,
+          104
+        ],
+        "F": [
+          88,
+          89
+        ]
+      }
+    }
+  ]
+}

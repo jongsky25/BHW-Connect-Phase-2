@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ibahagi ang nasuring safety action at ituro kung saan kukumpirmahin ang kasalukuyang dokumento at benepisyo.",
+      "observable_en": "Distinguishes confirmed benefits from locally unverified requirements.",
+      "not_yet_fil": "Mangako ng benepisyong hindi pa nakumpirma sa lokal na tanggapan.",
+      "not_yet_en": "Promise a benefit not confirmed by the local office.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ibahagi ang nasuring safety action at ituro kung saan kukumpirmahin ang kasalukuyang dokumento at benepisyo.",
+        "kaya_na_en": "Distinguishes confirmed benefits from locally unverified requirements.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Mangako ng benepisyong hindi pa nakumpirma sa lokal na tanggapan.",
+        "hindi_pa_en": "Promise a benefit not confirmed by the local office."
+      }
+    }
+  ]
+}

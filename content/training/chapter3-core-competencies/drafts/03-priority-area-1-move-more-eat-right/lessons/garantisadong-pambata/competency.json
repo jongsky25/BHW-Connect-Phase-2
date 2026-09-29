@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tingnan ang kasalukuyang programa at card, ipaliwanag ang dapat kumpirmahin sa health center, at tugunan ang pangamba nang may respeto.",
+      "observable_en": "Explains the action and referral site without independently prescribing supplements or medicine.",
+      "not_yet_fil": "Magbigay ng supplement o gamot mula sa sariling hula.",
+      "not_yet_en": "Give a supplement or medicine based on a guess.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tingnan ang kasalukuyang programa at card, ipaliwanag ang dapat kumpirmahin sa health center, at tugunan ang pangamba nang may respeto.",
+        "kaya_na_en": "Explains the action and referral site without independently prescribing supplements or medicine.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Magbigay ng supplement o gamot mula sa sariling hula.",
+        "hindi_pa_en": "Give a supplement or medicine based on a guess."
+      }
+    }
+  ]
+}

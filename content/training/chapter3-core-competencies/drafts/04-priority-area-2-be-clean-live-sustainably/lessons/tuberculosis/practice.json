@@ -1,0 +1,42 @@
+{
+  "activity_id": "activity-tuberculosis",
+  "objective_id": "tuberculosis.objective-1",
+  "setting": "simulation",
+  "formative": true,
+  "checks": [
+    {
+      "section_id": "check-start",
+      "feedback_by_option": [
+        {
+          "fil": "Hindi ito ligtas o hindi nakumpirma. ",
+          "en": "This is unsafe or unconfirmed. "
+        },
+        {
+          "fil": "Ito ang angkop na unang hakbang. ",
+          "en": "This is the appropriate first step. "
+        },
+        {
+          "fil": "Walang malinaw na susunod na hakbang.",
+          "en": "No next step is arranged."
+        }
+      ]
+    },
+    {
+      "section_id": "check-transfer",
+      "feedback_by_option": [
+        {
+          "fil": "Ito ang nakikitang patunay ng gawain. ",
+          "en": "This is observable evidence of the task. "
+        },
+        {
+          "fil": "Walang naitalang resulta. ",
+          "en": "There is no recorded result. "
+        },
+        {
+          "fil": "Hindi ito ang angkop na kilos.",
+          "en": "This is not the appropriate action."
+        }
+      ]
+    }
+  ]
+}

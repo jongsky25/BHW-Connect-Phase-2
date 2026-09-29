@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Piliin ang adult BMI o age-appropriate chart, ipakita ang kalkulasyon at yunit, at ipa-review ang kahulugan kung kailangan.",
+      "observable_en": "Selects adult BMI versus child/adolescent chart correctly, shows units and refers for interpretation where required.",
+      "not_yet_fil": "Gumamit ng adult BMI cut-off sa lahat ng bata.",
+      "not_yet_en": "Apply adult BMI cut-offs to every child.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Piliin ang adult BMI o age-appropriate chart, ipakita ang kalkulasyon at yunit, at ipa-review ang kahulugan kung kailangan.",
+        "kaya_na_en": "Selects adult BMI versus child/adolescent chart correctly, shows units and refers for interpretation where required.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Gumamit ng adult BMI cut-off sa lahat ng bata.",
+        "hindi_pa_en": "Apply adult BMI cut-offs to every child."
+      }
+    }
+  ]
+}

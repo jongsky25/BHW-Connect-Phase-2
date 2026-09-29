@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Nasunod ang bawat kritikal na hakbang sa aprubadong BP checklist; naitala ang aktuwal na resulta at naipasa ito sa midwife ayon sa protocol.",
+      "observable_en": "Completed each critical step on the approved BP checklist; recorded the actual reading and handed it to the midwife under the protocol.",
+      "not_yet_fil": "Manghula ng resulta o sabihing normal ito kahit hindi pa nasuri sa protocol.",
+      "not_yet_en": "Guess the reading or call it normal before checking the protocol.",
+      "levels": {
+        "kaya_na_fil": "Nasunod ang bawat kritikal na hakbang sa aprubadong BP checklist; naitala ang aktuwal na resulta at naipasa ito sa midwife ayon sa protocol.",
+        "kaya_na_en": "Completed each critical step on the approved BP checklist; recorded the actual reading and handed it to the midwife under the protocol.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Manghula ng resulta o sabihing normal ito kahit hindi pa nasuri sa protocol.",
+        "hindi_pa_en": "Guess the reading or call it normal before checking the protocol."
+      }
+    }
+  ]
+}

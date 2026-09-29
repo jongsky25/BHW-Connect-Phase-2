@@ -1,0 +1,178 @@
+{
+  "source_allocation_hours": 72,
+  "planning_split": null,
+  "activities": [
+    {
+      "id": "activity-bp-measurement-and-handover",
+      "lesson_key": "bp-measurement-and-handover",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 618,
+      "objective_index": 0,
+      "indicator_ref": "lessons/bp-measurement-and-handover/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          120,
+          121,
+          122
+        ],
+        "F": [
+          101,
+          102
+        ]
+      }
+    },
+    {
+      "id": "activity-pulse",
+      "lesson_key": "pulse",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 617,
+      "objective_index": 1,
+      "indicator_ref": "lessons/pulse/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          123
+        ],
+        "F": [
+          101
+        ]
+      }
+    },
+    {
+      "id": "activity-respiratory-rate-and-temperature",
+      "lesson_key": "respiratory-rate-and-temperature",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 617,
+      "objective_index": 2,
+      "indicator_ref": "lessons/respiratory-rate-and-temperature/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          124
+        ],
+        "F": [
+          101
+        ]
+      }
+    },
+    {
+      "id": "activity-height-length-and-weight",
+      "lesson_key": "height-length-and-weight",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 617,
+      "objective_index": 3,
+      "indicator_ref": "lessons/height-length-and-weight/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          124,
+          125
+        ],
+        "F": [
+          101
+        ]
+      }
+    },
+    {
+      "id": "activity-growth-chart-use",
+      "lesson_key": "growth-chart-use",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 617,
+      "objective_index": 4,
+      "indicator_ref": "lessons/growth-chart-use/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "F": [
+          101,
+          102
+        ]
+      }
+    },
+    {
+      "id": "activity-muac",
+      "lesson_key": "muac",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 617,
+      "objective_index": 5,
+      "indicator_ref": "lessons/muac/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          129
+        ],
+        "F": [
+          101,
+          102
+        ]
+      }
+    },
+    {
+      "id": "activity-bmi-and-age-appropriate-interpretation",
+      "lesson_key": "bmi-and-age-appropriate-interpretation",
+      "kind": "facilitated-practice-and-observation",
+      "setting": "simulation",
+      "minutes": 617,
+      "objective_index": 6,
+      "indicator_ref": "lessons/bmi-and-age-appropriate-interpretation/competency.json#/observation_indicators/0",
+      "materials": [
+        "participant-cards",
+        "observer-sheet",
+        "approved-local-job-aid"
+      ],
+      "privacy": "fictional cases only",
+      "source_pages": {
+        "R": [
+          129,
+          130
+        ],
+        "F": [
+          101,
+          102
+        ]
+      }
+    }
+  ]
+}

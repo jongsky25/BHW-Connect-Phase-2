@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Piliin ang aprubadong chart, i-plot ang tamang punto at petsa, at ipasuri sa kwalipikadong staff ang interpretasyon.",
+      "observable_en": "Uses correct chart/axis/date and avoids independent diagnosis.",
+      "not_yet_fil": "Gumamit ng maling axis at magbigay agad ng diagnosis.",
+      "not_yet_en": "Use the wrong axis and immediately make a diagnosis.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Piliin ang aprubadong chart, i-plot ang tamang punto at petsa, at ipasuri sa kwalipikadong staff ang interpretasyon.",
+        "kaya_na_en": "Uses correct chart/axis/date and avoids independent diagnosis.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Gumamit ng maling axis at magbigay agad ng diagnosis.",
+        "hindi_pa_en": "Use the wrong axis and immediately make a diagnosis."
+      }
+    }
+  ]
+}

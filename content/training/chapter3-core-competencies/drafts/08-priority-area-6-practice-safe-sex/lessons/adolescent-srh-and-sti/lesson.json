@@ -1,0 +1,175 @@
+{
+  "manifest": {
+    "lesson_key": "adolescent-srh-and-sti",
+    "position": 0,
+    "title_fil": "Usapan sa kabataang may tanong sa SRH",
+    "title_en": "Adolescent SRH and STI",
+    "objectives_fil": [
+      "Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service."
+    ],
+    "objectives_en": [
+      "Given a confidential question, provide a respectful, age-appropriate reviewed message and service link."
+    ],
+    "required": true
+  },
+  "sections": [
+    {
+      "id": "scene",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Nagtanong si Kai nang pribado tungkol sa sexual health at natatakot mapagalitan.",
+      "takeaway_en": "Kai asks a private sexual-health question and fears being scolded.",
+      "check": null
+    },
+    {
+      "id": "action",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service.",
+      "takeaway_en": "Provide a respectful, age-appropriate reviewed message and service link.",
+      "check": null
+    },
+    {
+      "id": "check-start",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Pumili muna ng sagot.",
+      "takeaway_en": "Choose an answer first.",
+      "check": {
+        "prompt_fil": "Ano ang pinakamainam na gagawin ng BHW sa sitwasyong ito?",
+        "prompt_en": "What should the BHW do in this situation?",
+        "options": [
+          {
+            "fil": "Hadlangan ang pagtatanong o sabihin ito sa iba nang walang batayan.",
+            "en": "Block the question or disclose it to others without basis."
+          },
+          {
+            "fil": "Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service.",
+            "en": "Provide a respectful, age-appropriate reviewed message and service link."
+          },
+          {
+            "fil": "Ipagpaliban nang walang plano o pag-follow-up.",
+            "en": "Delay without a plan or follow-up."
+          }
+        ],
+        "correct_option_index": 1,
+        "feedback_fil": "1: Hindi ito ligtas o hindi nakumpirma. 2: Ito ang angkop na unang hakbang. 3: Walang malinaw na susunod na hakbang.",
+        "feedback_en": "1: This is unsafe or unconfirmed. 2: This is the appropriate first step. 3: No next step is arranged."
+      }
+    },
+    {
+      "id": "example",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa kathang-isip na kasong ito, ginamit ni Mira ang kasalukuyang lokal na gabay bago sumagot.",
+      "takeaway_en": "In this fictional case, Mira checks the current local guide before responding.",
+      "check": null
+    },
+    {
+      "id": "scope",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Iwasan ang ganitong kilos: Hadlangan ang pagtatanong o sabihin ito sa iba nang walang batayan.",
+      "takeaway_en": "Avoid this action: Block the question or disclose it to others without basis.",
+      "check": null
+    },
+    {
+      "id": "check-transfer",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Piliin ang kilos na may nakikitang resulta.",
+      "takeaway_en": "Choose the action with an observable result.",
+      "check": {
+        "prompt_fil": "Aling kilos ang nagpapakita ng maayos na pagtupad?",
+        "prompt_en": "Which action shows the task was done well?",
+        "options": [
+          {
+            "fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Pakinggan nang walang panghuhusga, ibahagi ang nasuring impormasyong angkop sa edad, at ituro ang confidential service.",
+            "en": "Does not block access, shame, or disclose private information."
+          },
+          {
+            "fil": "Sabihing natapos ang gawain kahit walang naitalang resulta.",
+            "en": "Say the task is complete without recording an outcome."
+          },
+          {
+            "fil": "Hadlangan ang pagtatanong o sabihin ito sa iba nang walang batayan.",
+            "en": "Block the question or disclose it to others without basis."
+          }
+        ],
+        "correct_option_index": 0,
+        "feedback_fil": "1: Ito ang nakikitang patunay ng gawain. 2: Walang naitalang resulta. 3: Hindi ito ang angkop na kilos.",
+        "feedback_en": "1: This is observable evidence of the task. 2: There is no recorded result. 3: This is not the appropriate action."
+      }
+    },
+    {
+      "id": "next-step",
+      "concept_ids": [
+        "c3.adolescent-srh-and-sti"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Sa susunod na pinangangasiwaang pagsasanay, gamitin ang kathang-isip na kasong ito.",
+      "takeaway_en": "At the next supervised practice, use this fictional case.",
+      "check": null
+    }
+  ],
+  "coverage": [
+    {
+      "id": "c3.adolescent-srh-and-sti",
+      "read_ids": [
+        "scene",
+        "action",
+        "check-start",
+        "example",
+        "scope",
+        "check-transfer",
+        "next-step"
+      ],
+      "slide_ids": [
+        "slide-scene",
+        "slide-action",
+        "slide-check-start",
+        "slide-example",
+        "slide-scope",
+        "slide-check-transfer",
+        "slide-next-step"
+      ],
+      "source_ids": [
+        "reference-manual",
+        "facilitator-guide"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "reference-manual",
+      "title": "BHW Reference Manual (2022)",
+      "pdf_pages": [
+        105,
+        106,
+        107
+      ]
+    },
+    {
+      "id": "facilitator-guide",
+      "title": "BHW Facilitator Guide (2022)",
+      "pdf_pages": [
+        90,
+        91,
+        92
+      ]
+    }
+  ],
+  "assets": []
+}

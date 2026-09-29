@@ -1,0 +1,46 @@
+{
+  "concepts": [
+    {
+      "id": "c3.bp-measurement-and-handover",
+      "statement_en": "Given approved equipment, a fictional client, and a current measurement protocol, take, record, and communicate a BP reading within scope.",
+      "source": "R120, R121, R122, F101, F102",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.pulse",
+      "statement_en": "Given a watch and training partner, measure, record, and report pulse using the approved protocol.",
+      "source": "R123, F101",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.respiratory-rate-and-temperature",
+      "statement_en": "Given a training partner and thermometer, measure and record both accurately.",
+      "source": "R124, F101",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.height-length-and-weight",
+      "statement_en": "Given age-appropriate tools, perform and document measurement with dignity and assistance where needed.",
+      "source": "R124, R125, F101",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.growth-chart-use",
+      "statement_en": "Given fictional child measurements and an approved chart, plot correctly and identify whether qualified review is needed.",
+      "source": "R125, R126, R127, R128, F101, F102",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.muac",
+      "statement_en": "Given approved tape and a training model, measure and record MUAC and identify the reviewed referral action.",
+      "source": "R129, F101, F102",
+      "redundant_with": null
+    },
+    {
+      "id": "c3.bmi-and-age-appropriate-interpretation",
+      "statement_en": "Given fictional height/weight/age, calculate or plot using the correct approved tool and state a safe follow-up.",
+      "source": "R129, R130, F101, F102",
+      "redundant_with": null
+    }
+  ]
+}

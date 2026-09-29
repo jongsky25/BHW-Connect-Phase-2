@@ -1,0 +1,51 @@
+{
+  "competency_statement_fil": "Mga serbisyo sa primary care at pag-uugnay sa serbisyo: isinasagawa ang mga gawain sa araling ito ayon sa kasalukuyang lokal na gabay, may paggalang sa pahintulot, privacy at saklaw ng BHW.",
+  "competency_statement_en": "Primary care services and navigation: performs the unit tasks using current local guidance, consent, privacy and BHW scope boundaries.",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang kailangan ni Paz, hanapin ang angkop na serbisyo at provider sa kasalukuyang directory, at sabihin kung ano pa ang kailangang kumpirmahin.",
+      "observable_en": "Names a supported destination and avoids promising an unverified service.",
+      "not_yet_fil": "Mangakong mayroon agad na serbisyong hindi pa nakumpirma.",
+      "not_yet_en": "Promise that an unconfirmed service is available immediately.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Tukuyin ang kailangan ni Paz, hanapin ang angkop na serbisyo at provider sa kasalukuyang directory, at sabihin kung ano pa ang kailangang kumpirmahin.",
+        "kaya_na_en": "Names a supported destination and avoids promising an unverified service.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Mangakong mayroon agad na serbisyong hindi pa nakumpirma.",
+        "hindi_pa_en": "Promise that an unconfirmed service is available immediately."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Itugma ang bawat pangangailangan sa yugto ng buhay at hanapin ang tamang entry point sa aprubadong lokal na gabay.",
+      "observable_en": "States the need, a plausible service entry point, and a fact requiring confirmation.",
+      "not_yet_fil": "Iisang serbisyo ang ibigay na direksiyon sa lahat kahit magkaiba ang pangangailangan.",
+      "not_yet_en": "Send everyone to the same service despite their different needs.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Itugma ang bawat pangangailangan sa yugto ng buhay at hanapin ang tamang entry point sa aprubadong lokal na gabay.",
+        "kaya_na_en": "States the need, a plausible service entry point, and a fact requiring confirmation.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Iisang serbisyo ang ibigay na direksiyon sa lahat kahit magkaiba ang pangangailangan.",
+        "hindi_pa_en": "Send everyone to the same service despite their different needs."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Sinuri ang pangangailangan, kinumpirma ang serbisyo, humingi ng pahintulot, nagbigay ng tiyak na susunod na hakbang at nagtakda ng follow-up.",
+      "observable_en": "Checked the need, confirmed the service, asked permission, gave a concrete next step and set a follow-up.",
+      "not_yet_fil": "Sabihing tiyak na bukas at libre ang konsultasyon kahit luma ang listahan.",
+      "not_yet_en": "Say the consultation is definitely open and free even though the list is old.",
+      "levels": {
+        "kaya_na_fil": "Sinuri ang pangangailangan, kinumpirma ang serbisyo, humingi ng pahintulot, nagbigay ng tiyak na susunod na hakbang at nagtakda ng follow-up.",
+        "kaya_na_en": "Checked the need, confirmed the service, asked permission, gave a concrete next step and set a follow-up.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Sabihing tiyak na bukas at libre ang konsultasyon kahit luma ang listahan.",
+        "hindi_pa_en": "Say the consultation is definitely open and free even though the list is old."
+      }
+    }
+  ]
+}

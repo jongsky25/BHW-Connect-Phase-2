@@ -1,0 +1,81 @@
+{
+  "competency_statement_fil": "Kagamitan, suplay at talaan ng BHS: isinasagawa ang mga gawain sa araling ito ayon sa kasalukuyang lokal na gabay, may paggalang sa pahintulot, privacy at saklaw ng BHW.",
+  "competency_statement_en": "BHS equipment, supplies, and records: performs the unit tasks using current local guidance, consent, privacy and BHW scope boundaries.",
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihambing ang aprubadong lokal na standard sa aktuwal na serbisyo at iulat ang tiyak na puwang sa responsable.",
+      "observable_en": "Reports a specific gap without promising a service or practicing beyond role.",
+      "not_yet_fil": "Mangako sa residente ng serbisyong nakasulat sa lumang manual ngunit wala sa BHS.",
+      "not_yet_en": "Promise a service listed in an old manual but unavailable at the BHS.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Ihambing ang aprubadong lokal na standard sa aktuwal na serbisyo at iulat ang tiyak na puwang sa responsable.",
+        "kaya_na_en": "Reports a specific gap without promising a service or practicing beyond role.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Mangako sa residente ng serbisyong nakasulat sa lumang manual ngunit wala sa BHS.",
+        "hindi_pa_en": "Promise a service listed in an old manual but unavailable at the BHS."
+      }
+    },
+    {
+      "objective_index": 1,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang lokal na checklist, itala ang item, kondisyon at may pananagutan, at iulat ang kulang o sira.",
+      "observable_en": "Records item, condition, discrepancy and escalation; distinguishes standard from local stock.",
+      "not_yet_fil": "Markahang kumpleto ang kagamitan nang hindi ito nakikita.",
+      "not_yet_en": "Mark equipment complete without checking it.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang lokal na checklist, itala ang item, kondisyon at may pananagutan, at iulat ang kulang o sira.",
+        "kaya_na_en": "Records item, condition, discrepancy and escalation; distinguishes standard from local stock.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Markahang kumpleto ang kagamitan nang hindi ito nakikita.",
+        "hindi_pa_en": "Mark equipment complete without checking it."
+      }
+    },
+    {
+      "objective_index": 2,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Bilangin muli, itala ang petsa at kondisyon, at sundin ang reconciliation process kasama ang supervisor.",
+      "observable_en": "Counts accurately, records date/condition/owner, and follows reconciliation process.",
+      "not_yet_fil": "Baguhin ang bilang sa papel para lamang magtugma.",
+      "not_yet_en": "Change the number on paper merely to make it match.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Bilangin muli, itala ang petsa at kondisyon, at sundin ang reconciliation process kasama ang supervisor.",
+        "kaya_na_en": "Counts accurately, records date/condition/owner, and follows reconciliation process.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Baguhin ang bilang sa papel para lamang magtugma.",
+        "hindi_pa_en": "Change the number on paper merely to make it match."
+      }
+    },
+    {
+      "objective_index": 3,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Sundin ang kasalukuyang device at infection-control guidance sa paglilinis at pagtatabi; iulat ang sira sa responsable.",
+      "observable_en": "Completes approved care steps safely and does not attempt unauthorized repair.",
+      "not_yet_fil": "Gamitin muli ang sira o maruming cuff at ayusin ang aparato nang walang awtorisasyon.",
+      "not_yet_en": "Reuse a faulty or dirty cuff and attempt an unauthorized repair.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Sundin ang kasalukuyang device at infection-control guidance sa paglilinis at pagtatabi; iulat ang sira sa responsable.",
+        "kaya_na_en": "Completes approved care steps safely and does not attempt unauthorized repair.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Gamitin muli ang sira o maruming cuff at ayusin ang aparato nang walang awtorisasyon.",
+        "hindi_pa_en": "Reuse a faulty or dirty cuff and attempt an unauthorized repair."
+      }
+    },
+    {
+      "objective_index": 4,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: I-update ang stock card mula sa aktuwal na resibo at issue, sundin ang aprubadong pag-aayos, at iulat ang expired o sirang suplay.",
+      "observable_en": "Balances counts, applies approved stock rotation, and reports damaged/expired stock.",
+      "not_yet_fil": "Itago ang expired na suplay sa unahan at huwag itala ang nailabas.",
+      "not_yet_en": "Place expired stock up front and omit issued items from the record.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: I-update ang stock card mula sa aktuwal na resibo at issue, sundin ang aprubadong pag-aayos, at iulat ang expired o sirang suplay.",
+        "kaya_na_en": "Balances counts, applies approved stock rotation, and reports damaged/expired stock.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Itago ang expired na suplay sa unahan at huwag itala ang nailabas.",
+        "hindi_pa_en": "Place expired stock up front and omit issued items from the record."
+      }
+    }
+  ]
+}

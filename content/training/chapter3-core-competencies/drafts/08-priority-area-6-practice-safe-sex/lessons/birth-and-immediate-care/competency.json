@@ -1,0 +1,19 @@
+{
+  "observation_indicators": [
+    {
+      "objective_index": 0,
+      "observable_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang aprubadong birth/referral plan, ihanda ang handover sa kwalipikadong team, at ipaliwanag ang sariling saklaw.",
+      "observable_en": "Avoids representing unsupervised clinical procedures as BHW tasks.",
+      "not_yet_fil": "Mag-alok na gawin nang mag-isa ang klinikal na hakbang na kailangan ng trained provider.",
+      "not_yet_en": "Offer to perform a clinical procedure alone that requires a trained provider.",
+      "levels": {
+        "kaya_na_fil": "Ginamit ang kasalukuyang lokal na gabay at naipakita ang mahalagang hakbang: Gamitin ang aprubadong birth/referral plan, ihanda ang handover sa kwalipikadong team, at ipaliwanag ang sariling saklaw.",
+        "kaya_na_en": "Avoids representing unsupervised clinical procedures as BHW tasks.",
+        "kailangan_practice_fil": "Nagawa ang pangunahing hakbang ngunit kailangan ng paalala o pagwawasto sa pag-follow-up.",
+        "kailangan_practice_en": "Completes the main step but needs a prompt or correction on follow-up.",
+        "hindi_pa_fil": "Mag-alok na gawin nang mag-isa ang klinikal na hakbang na kailangan ng trained provider.",
+        "hindi_pa_en": "Offer to perform a clinical procedure alone that requires a trained provider."
+      }
+    }
+  ]
+}
