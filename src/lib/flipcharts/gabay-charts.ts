@@ -101,6 +101,6 @@ export const gabaySources: Record<string, { label: string; url: string }[]> = {
   ],
   "PH-09": [
     { label: "YAKAP patient guide", url: "https://www.philhealth.gov.ph/yakap/MgaDapatMalamanSaPhilHealthYAKAP.pdf" },
-    { label: "PhilHealth contact", url: "https://www.philhealth.gov.ph/about_us/contact_us.php" },
+    { label: "PhilHealth contact", url: "https://www.philhealth.gov.ph/about_us/" },
   ],
 };
