@@ -4,10 +4,10 @@ This PR adds three charts and nine illustrated patient cards from the approved P
 
 ## Review and access
 
-- The versioned source is `src/lib/flipcharts/gabay-charts.ts`. Every chart has `review: "draft"` and `reviewedAt: null`.
+- The versioned source is `src/lib/flipcharts/gabay-charts.ts`. The pilot admin approved all three charts on 2026-09-29; each now has `review: "approved"` and a content review date.
 - Admins can open `/admin/gabay-flipcharts` even while the general flipchart feature is off, preview all pages, and compare the BHW notes to the patient view. The route and preview require an authenticated admin.
-- BHWs cannot open a Gabay chart while its review state is draft. The main flipchart list and Gabay course show links only after the chart is marked approved and the flipchart feature flag is on. This PR does not approve any chart or change a feature flag.
-- Before any approval change, the admin should check wording and images, recheck the high-change PhilHealth claims and current official provider/channel pages, set a content review date, and request PhilHealth review when available. Approval and release need a separate reviewed change.
+- The main flipchart list and Gabay course show links only when the flipchart feature flag is on. This PR does not change that flag or deploy the charts.
+- Before pilot publication, recheck the high-change PhilHealth claims and current official provider/channel pages. PhilHealth review will be requested when available. The admin plans to review the deployed experience after release.
 
 ## Field use
 

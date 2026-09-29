@@ -8,7 +8,8 @@ describe("Gabay flipchart review packet", () => {
     expect(gabayCharts.map((chart) => chart.slug)).toEqual(["yakap", "gamot", "rehistro"]);
     expect(gabayCharts.every((chart) => chart.pages.length === 3)).toBe(true);
     for (const chart of gabayCharts) {
-      expect(chart.review).toBe("draft");
+      expect(chart.review).toBe("approved");
+      expect(chart.reviewedAt).toBe("2026-09-29");
       for (const page of chart.pages) {
         expect(existsSync(path.join(process.cwd(), "public", page.image))).toBe(true);
         for (const language of ["fil", "en"] as const) {

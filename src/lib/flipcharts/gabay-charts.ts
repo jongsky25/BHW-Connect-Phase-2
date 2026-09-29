@@ -1,5 +1,5 @@
-// Versioned P3 draft. Admins can preview; BHW access is enabled only after
-// the content review field is changed to "approved" in a later PR.
+// Versioned P3 packet. The pilot admin approved these charts on 2026-09-29;
+// live visibility still depends on deployment and the flipcharts feature flag.
 export type GabayPage = {
   image: string;
   alt: { fil: string; en: string };
@@ -25,7 +25,7 @@ const page = (image: string, altFil: string, altEn: string, captionFil: string, 
 export const gabayCharts: GabayChart[] = [
   {
     slug: "yakap", title: { fil: "YAKAP: Alaga Mula sa Unang Konsulta", en: "YAKAP: Care from the First Consultation" },
-    review: "draft", reviewedAt: null,
+    review: "approved", reviewedAt: "2026-09-29",
     pages: [
       page("yakap-clinic", "Residente na pumipili ng accredited clinic.", "Resident choosing an accredited clinic.",
         "Pumili ng accredited YAKAP clinic na maaabot mo.", "Choose an accredited YAKAP clinic you can reach.",
@@ -44,7 +44,7 @@ export const gabayCharts: GabayChart[] = [
   },
   {
     slug: "gamot", title: { fil: "GAMOT: Mula Reseta Hanggang Botika", en: "GAMOT: From Prescription to Pharmacy" },
-    review: "draft", reviewedAt: null,
+    review: "approved", reviewedAt: "2026-09-29",
     pages: [
       page("gamot-consult", "Clinician na nakikinig sa pasyente.", "Clinician listening to a patient.",
         "Magpakonsulta para masuri ang kailangan mong gamot.", "Consult a clinician to assess which medicine you need.",
@@ -62,7 +62,7 @@ export const gabayCharts: GabayChart[] = [
   },
   {
     slug: "rehistro", title: { fil: "Rehistro: Aling Hakbang ang Kailangan?", en: "Registration: Which Step Do You Need?" },
-    review: "draft", reviewedAt: null,
+    review: "approved", reviewedAt: "2026-09-29",
     pages: [
       page("rehistro-clarify", "Tanong ng residente na may dalawang posibleng daan: PIN o clinic.", "Resident's question branching to a PIN or a clinic.",
         "PIN o rekord ba, o pagpili ng YAKAP clinic?", "PIN or record, or YAKAP clinic selection?",
