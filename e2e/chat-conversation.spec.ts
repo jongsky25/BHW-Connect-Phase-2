@@ -155,6 +155,28 @@ test("Chat Guide intercepts a red flag, asks the deeper question, and resolves a
     )) as Array<{ kind: string; route: string }>;
     expect(messages[0]?.kind).toBe("answer");
     expect(messages[0]?.route).toBe("red_flag");
+
+    // P4: the same disposable DB also contains the published Gabay corpus.
+    // An unclear registration question narrows to PIN/record or clinic; the
+    // chosen clinic option resolves by stable content id, not re-scoring.
+    const gabayClarify = (await (
+      await page.request.post("/api/chat", { data: { question: "Paano magparehistro sa PhilHealth?" } })
+    ).json()) as ChatBody;
+    expect(gabayClarify.type).toBe("clarify");
+    expect(gabayClarify.clarifier?.id).toBe("clr-philhealth-registration-path");
+
+    const gabaySelection = (await (
+      await page.request.post("/api/chat", { data: {
+        selection: { clarifier_id: "clr-philhealth-registration-path", option_index: 1 },
+        session_id: gabayClarify.session_id,
+      } })
+    ).json()) as ChatBody;
+    expect(gabaySelection.answer?.content_id).toBe("ph-clinic-select");
+
+    const dose = (await (
+      await page.request.post("/api/chat", { data: { question: "What dose of GAMOT medicine should I take?" } })
+    ).json()) as ChatBody;
+    expect(dose.answer?.content_id).toBe("ph-gamot-dose");
   } finally {
     await setConversationFlag(request, false);
   }

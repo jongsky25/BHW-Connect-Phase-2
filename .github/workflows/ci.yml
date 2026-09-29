@@ -73,6 +73,9 @@ jobs:
       - name: Validate Gabay course source
         run: npm run gabay:check
 
+      - name: Validate Gabay KB source
+        run: npm run gabay:kb:check
+
       - name: Unit tests
         run: npm run test
 
@@ -139,6 +142,15 @@ jobs:
       # published through the admin RPCs exactly as it was on the pilot.
       - name: Load KB content into local Supabase
         run: npm run kb:load -- --project local --apply --publish --owner admin.stable
+        env:
+          KB_LOADER_USERNAME: admin.stable
+          KB_LOADER_PASSWORD: local-e2e-password
+
+      # P4 content is published only in this job's disposable database, so
+      # browser tests can verify the Chat Guide end to end. The loader rejects
+      # every nonlocal target for this corpus.
+      - name: Load Gabay KB into disposable Supabase
+        run: npm run kb:load -- --project local --corpus philhealth-gabay --apply --publish --owner admin.stable
         env:
           KB_LOADER_USERNAME: admin.stable
           KB_LOADER_PASSWORD: local-e2e-password

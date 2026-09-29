@@ -1,0 +1,45 @@
+{
+  "category": "philhealth-gamot",
+  "entries": [
+    {
+      "id": "ph-gamot-what", "domain": "gamot", "tier": "cited", "claims": ["PH-07"],
+      "question_en": "What is PhilHealth GAMOT?", "question_fil": "Ano ang PhilHealth GAMOT?",
+      "answer_en": "GAMOT is PhilHealth's outpatient medicine benefit for selected medicines. The person's clinical need, applicable prescription, current program rules and accredited dispensing facility matter. Ask a clinician about the needed medicine, then verify the dispensing pathway with a participating facility.",
+      "answer_fil": "Ang GAMOT ay benepisyo ng PhilHealth para sa piling outpatient na gamot. Mahalaga ang pagsusuri ng clinician, angkop na reseta, kasalukuyang tuntunin at accredited dispensing facility. Itanong sa clinician ang kailangan, saka kumpirmahin sa kasaling pasilidad ang paraan ng pagkuha.",
+      "keywords": ["philhealth gamot", "gamot benefit", "outpatient medicines", "ano gamot program", "what is gamot", "gamot package"],
+      "sources": ["PH-07", "PH-07S"]
+    },
+    {
+      "id": "ph-gamot-get", "domain": "gamot", "tier": "cited", "claims": ["PH-07"],
+      "question_en": "How do I obtain medicine through GAMOT?", "question_fil": "Paano kukuha ng gamot sa PhilHealth GAMOT?",
+      "answer_en": "Start with a clinician's assessment and the appropriate prescription. Then ask a currently accredited GAMOT facility to verify dispensing requirements and availability. Do not assume a named medicine is covered or in stock until the facility confirms it.",
+      "answer_fil": "Magsimula sa pagsusuri ng clinician at angkop na reseta. Pagkatapos, itanong sa kasalukuyang accredited GAMOT facility ang mga kailangan sa pagkuha at kung may stock. Huwag ipagpalagay na sakop o may stock ang isang gamot hangga't hindi ito nakukumpirma.",
+      "keywords": ["how obtain gamot", "gamot prescription pathway", "pagkuha", "kumuha", "steps", "dispense", "dispensing", "reseta", "get outpatient medicine"],
+      "sources": ["PH-07", "PH-05"]
+    },
+    {
+      "id": "ph-gamot-facility", "domain": "gamot", "tier": "cited", "claims": ["PH-05", "PH-07"],
+      "question_en": "Where is an accredited GAMOT dispensing facility?", "question_fil": "Saan may accredited GAMOT dispensing facility?",
+      "answer_en": "Use PhilHealth's current accredited facilities page and choose GAMOT Package Providers. Confirm the branch's participation and location directly before visiting. The list does not prove a particular medicine is in stock today.",
+      "answer_fil": "Tingnan ang kasalukuyang listahan ng accredited facilities ng PhilHealth at piliin ang GAMOT Package Providers. Kumpirmahin sa mismong branch ang pagsali nito at lokasyon bago pumunta. Hindi nangangahulugang may stock ngayon ang isang gamot dahil nasa listahan ang pasilidad.",
+      "keywords": ["gamot provider list", "accredited gamot pharmacy", "saan gamot facility", "gamot dispensing location", "where gamot pharmacy", "participating drug facility"],
+      "sources": ["PH-05", "PH-07S"]
+    },
+    {
+      "id": "ph-gamot-stock", "domain": "gamot", "tier": "cited", "claims": ["PH-05", "PH-07"],
+      "question_en": "Is a named GAMOT medicine available today?", "question_fil": "May stock ba ngayon ng isang gamot sa GAMOT?",
+      "answer_en": "The Chat Guide cannot see live medicine stock. Ask the accredited dispensing facility or pharmacist about the specific prescription and current availability before the resident travels. If unavailable, ask the facility or PhilHealth about the next official option; do not suggest a substitute yourself.",
+      "answer_fil": "Hindi nakikita ng Chat Guide ang aktuwal na stock ng gamot. Itanong sa accredited dispensing facility o pharmacist ang tiyak na reseta at kasalukuyang availability bago bumiyahe ang residente. Kung wala, itanong sa pasilidad o PhilHealth ang opisyal na susunod na opsyon; huwag magmungkahi ng pamalit na gamot.",
+      "keywords": ["gamot stock today", "available medicine now", "may stock ba", "out of stock gamot", "gamot availability", "specific medicine inventory"],
+      "sources": ["PH-05", "PH-07", "PH-07S"]
+    },
+    {
+      "id": "ph-gamot-dose", "domain": "scope", "tier": "cited", "claims": ["PH-06", "PH-07"],
+      "question_en": "What GAMOT dose or substitute should the resident take?", "question_fil": "Anong dosis o pamalit na gamot ang dapat inumin ng residente?",
+      "answer_en": "A BHW and the Chat Guide must not choose a dose, change a prescription or recommend a substitute. The prescribing clinician or pharmacist should answer for this person and medicine. Help the resident contact that professional with the prescription.",
+      "answer_fil": "Hindi dapat pumili ng dosis, baguhin ang reseta o magmungkahi ng pamalit na gamot ang BHW o Chat Guide. Ang nagresetang clinician o pharmacist ang dapat sumagot para sa taong ito at sa gamot na ito. Tulungan ang residente na makausap sila dala ang reseta.",
+      "keywords": ["gamot dose", "dose", "dosage", "dosis", "pamalit", "substitute", "replacement", "tableta", "ilang tableta", "change dose gamot"],
+      "sources": ["PH-06", "PH-07"]
+    }
+  ]
+}

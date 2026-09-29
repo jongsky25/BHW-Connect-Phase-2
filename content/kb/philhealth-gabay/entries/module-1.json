@@ -1,0 +1,45 @@
+{
+  "category": "philhealth-yakap",
+  "entries": [
+    {
+      "id": "ph-yakap-what", "domain": "yakap", "tier": "cited", "claims": ["PH-01"],
+      "question_en": "What is PhilHealth YAKAP?", "question_fil": "Ano ang PhilHealth YAKAP?",
+      "answer_en": "YAKAP connects a member or dependent with an accredited primary care clinic for continuing care. Ask which clinic the resident can reach, then check PhilHealth's current accredited list before helping them choose.",
+      "answer_fil": "Iniuugnay ng YAKAP ang miyembro o dependent sa accredited primary care clinic para sa patuloy na pangangalaga. Itanong kung aling clinic ang maaabot ng residente at tingnan ang kasalukuyang listahan ng PhilHealth bago pumili.",
+      "keywords": ["yakap", "program", "programa", "programang", "explain", "kahulugan", "yaman kalusugan", "primary care clinic"],
+      "sources": ["PH-01", "PH-05"]
+    },
+    {
+      "id": "ph-yakap-who", "domain": "yakap", "tier": "cited", "claims": ["PH-01", "PH-08"],
+      "question_en": "Can a member or dependent use YAKAP?", "question_fil": "Kasama ba ang miyembro o dependent sa YAKAP?",
+      "answer_en": "PhilHealth describes YAKAP for members and dependents. A person's own record and clinic selection still need verification through PhilHealth. Ask whether the question is about the member or a dependent, then use an official PhilHealth channel to confirm that person's next step.",
+      "answer_fil": "Ayon sa PhilHealth, kasama sa YAKAP ang mga miyembro at dependent. Kailangan pa ring tiyakin sa PhilHealth ang sariling rekord at pagpili ng clinic ng bawat tao. Alamin kung miyembro o dependent ang tinutukoy, saka kumpirmahin ang susunod na hakbang sa opisyal na channel.",
+      "keywords": ["yakap dependent", "yakap eligibility", "kasama dependent", "member dependent", "para kanino yakap", "who qualifies yakap"],
+      "sources": ["PH-01", "PH-06", "PH-08"]
+    },
+    {
+      "id": "ph-yakap-clinic-find", "domain": "yakap", "tier": "cited", "claims": ["PH-05"],
+      "question_en": "Where is the current list of accredited YAKAP clinics?", "question_fil": "Saan makikita ang listahan ng accredited YAKAP clinics?",
+      "answer_en": "Use PhilHealth's current accredited health facilities list and look for YAKAP Clinics. Confirm the clinic's location and current status before a visit; the list can change. If internet is unavailable, ask the nearest PhilHealth office to help verify a clinic.",
+      "answer_fil": "Tingnan ang kasalukuyang listahan ng accredited health facilities ng PhilHealth at piliin ang YAKAP Clinics. Kumpirmahin ang lokasyon at kasalukuyang status bago bumisita dahil maaaring magbago ang listahan. Kung walang internet, magpatulong sa pinakamalapit na PhilHealth office.",
+      "keywords": ["yakap clinic list", "accredited yakap clinic", "list", "listahan", "find", "hanap", "provider", "facilities"],
+      "sources": ["PH-05", "PH-09"]
+    },
+    {
+      "id": "ph-yakap-first-visit", "domain": "yakap", "tier": "cited", "claims": ["PH-03", "PH-06"],
+      "question_en": "What happens at the first YAKAP clinic visit after selection?", "question_fil": "Ano ang mangyayari sa unang pagbisita sa YAKAP clinic matapos pumili?",
+      "answer_en": "Visit the selected clinic for the first patient encounter. A clinician assesses the person and advises on appropriate care and follow-up. Ask the clinic when to come and what to bring; the BHW should not promise a particular test or referral beforehand.",
+      "answer_fil": "Pumunta sa napiling clinic para sa first patient encounter. Susuriin ng clinician ang tao at magpapayo ng angkop na pangangalaga at follow-up. Itanong sa clinic kung kailan pupunta at ano ang dadalhin; hindi dapat mangako ang BHW ng tiyak na test o referral bago ang pagsusuri.",
+      "keywords": ["first patient encounter", "fpe", "unang", "pagbisita", "first", "visit", "appointment", "consultation"],
+      "sources": ["PH-03", "PH-06"]
+    },
+    {
+      "id": "ph-yakap-test", "domain": "scope", "tier": "cited", "claims": ["PH-06"],
+      "question_en": "Is a particular YAKAP test or referral guaranteed?", "question_fil": "Sigurado ba ang isang YAKAP test o referral?",
+      "answer_en": "A clinician decides what test, referral or other care is appropriate after assessment, under current benefit rules. Do not promise a named service. Ask the selected clinic about the person's specific need and current coverage.",
+      "answer_fil": "Clinician ang magpapasya kung aling test, referral o ibang pangangalaga ang angkop matapos suriin ang pasyente, ayon sa kasalukuyang tuntunin. Huwag mangako ng partikular na serbisyo. Itanong sa napiling clinic ang tiyak na pangangailangan at sakop.",
+      "keywords": ["yakap test guaranteed", "free laboratory yakap", "sigurado test", "covered referral", "lab test yakap", "specific test coverage"],
+      "sources": ["PH-06", "PH-03"]
+    }
+  ]
+}

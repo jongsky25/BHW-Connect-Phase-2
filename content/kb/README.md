@@ -5,6 +5,16 @@ by `scripts/kb-load.mjs`. Editing a file here and re-running the loader is the
 supported way to change loaded content — the loader always rebuilds each row
 from these files, so the database never becomes the master copy.
 
+## `philhealth-gabay/` — YAKAP, GAMOT and registration
+
+P4 adds 19 bilingual, source-cited answers in three categories, 12 targeted
+synonyms, and one authored registration clarifier. `npm run gabay:kb:check`
+validates the packet without network or database access. This corpus's loader
+is restricted to `--project local` until the later pilot release increment.
+CI loads it into a disposable Supabase instance for Chat Guide E2E testing.
+High-change PhilHealth sources receive a 30-day review due date at load time.
+The detailed membership application remains in official PhilHealth channels.
+
 ## `hhp-ncd/` — HHP+ / PhilPEN community NCD screening
 
 Covers the six-module, seven-competency-domain BHW training package proposed in
