@@ -30,7 +30,7 @@ describe('assessor orientation',()=>{
       p_chapter_id:'chapter-1-id',p_acknowledged:true,p_answers:state.cases!.map(c=>({id:c.id,rating:'kaya_na'})),
     }));
     expect(await screen.findByText('Orientation completed')).toBeInTheDocument();
-    expect(screen.getByText(/Assessor qualification is a separate step/)).toBeInTheDocument();
+    expect(screen.getByRole('link',{name:'View my qualifications'})).toHaveAttribute('href','/training/manual/assessor/qualifications');
   });
   it('records each lesson before opening scoring practice',async()=>{
     rpc.mockResolvedValue({data:null,error:null});
