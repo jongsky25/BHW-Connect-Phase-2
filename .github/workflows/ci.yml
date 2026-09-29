@@ -70,6 +70,9 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Validate Gabay course source
+        run: npm run gabay:check
+
       - name: Unit tests
         run: npm run test
 
@@ -136,6 +139,12 @@ jobs:
       # published through the admin RPCs exactly as it was on the pilot.
       - name: Load KB content into local Supabase
         run: npm run kb:load -- --project local --apply --publish --owner admin.stable
+        env:
+          KB_LOADER_USERNAME: admin.stable
+          KB_LOADER_PASSWORD: local-e2e-password
+
+      - name: Load Gabay course as a local draft
+        run: npm run gabay:load -- --apply --project local --org-unit "Barangay Batong Malake" --owner admin.stable
         env:
           KB_LOADER_USERNAME: admin.stable
           KB_LOADER_PASSWORD: local-e2e-password

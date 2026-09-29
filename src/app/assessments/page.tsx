@@ -6,7 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { getRequestFeatureFlags } from "@/lib/supabase/request";
 
 const ASSESSMENT_COLUMNS =
-  "id, course_id, bhw_user_id, org_unit_id, status, assessor_user_id, notes, created_at, decided_at, courses(title_fil, title_en), users:bhw_user_id(full_name, username)";
+  "id, course_id, bhw_user_id, org_unit_id, status, assessor_user_id, attempt_number, notes, created_at, decided_at, courses(title_fil, title_en, assessment_kind), users:bhw_user_id(full_name, username)";
 
 export default async function AssessmentsPage() {
   const supabase = await createClient();
