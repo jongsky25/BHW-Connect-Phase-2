@@ -42,6 +42,11 @@ describe('assessor study route',()=>{
     render(await page(['m1','l1']));expect(screen.getByText('Study reader')).toHaveAttribute('data-chapter','ch1');expect(screen.getByText('Study reader')).toHaveAttribute('data-readonly','false');
     expect(screen.getByText('Study reader')).toHaveAttribute('data-next','/training/manual/assessor/chapter-1/m1/l2');
   });
+  it('keeps the continuation visible on a completed lesson page',async()=>{
+    state.rows.assessor_lesson_progress=[{assessor_user_id:'self',chapter_id:'ch1',lesson_id:'l1',revision_id:'r1'}];
+    render(await page(['m1','l1']));
+    expect(screen.getByRole('link',{name:'Continue studying'})).toHaveAttribute('href','/training/manual/assessor/chapter-1/m1/l2');
+  });
   it('requires the diagnostic pretest before opening lessons',async()=>{
     state.rows.assessor_exam_attempts=[];
     render(await page());
@@ -86,3 +91,4 @@ describe('assessor study route',()=>{
     state.locale='fil';render(await page());expect(screen.getByText('Sariling pag-aaral ng assessor')).toBeInTheDocument();expect(screen.getByRole('link',{name:'Magpatuloy sa pag-aaral'})).toBeInTheDocument();
   });
 });
+
