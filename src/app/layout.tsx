@@ -9,6 +9,7 @@ import { PreviewBar } from "@/components/preview/preview-bar";
 import { PreviewProvider } from "@/components/preview/preview-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SpotFeedbackWidget } from "@/components/spot-feedback/spot-feedback-widget";
 import { PersonaBar } from "@/components/super-admin/persona-bar";
 import { SUPER_ADMIN_PERSONAS_COOKIE } from "@/lib/super-admin/cookies";
 import { parsePersonaSnapshot } from "@/lib/super-admin/types";
@@ -17,6 +18,7 @@ import { primaryColorHex } from "@/lib/settings/palette";
 import { displayAttributes, parseA11ySettings } from "@/lib/settings/types";
 import type { AppUser } from "@/lib/supabase/app-user";
 import { getRequestFeatureFlags } from "@/lib/supabase/request";
+import { createClient } from "@/lib/supabase/server";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -82,6 +84,9 @@ export default async function RootLayout({
   const persona = signedIn ? await getRequestPersona() : null;
   const preview = signedIn ? await getRequestPreview() : null;
   const flags = await getRequestFeatureFlags();
+  const spotFeedbackAllowed = signedIn && !preview && flags.spot_feedback
+    ? (await (await createClient()).rpc("spot_feedback_access")).data === true
+    : false;
   const t = await getTranslations("common");
 
   return (
@@ -113,6 +118,7 @@ export default async function RootLayout({
               {children}
             </main>
             <SiteFooter />
+            {spotFeedbackAllowed ? <SpotFeedbackWidget /> : null}
           </PreviewProvider>
         </NextIntlClientProvider>
         <ServiceWorkerRegister enabled={offlinePwaEnabled} />

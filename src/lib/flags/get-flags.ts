@@ -24,6 +24,7 @@ export const DEFAULT_FLAGS: FeatureFlags = {
   chat_conversation: false,
   ai_external: false,
   ai_gap_draft: false,
+  spot_feedback: false,
 };
 
 type FlagRow = { key: string; enabled: boolean; disabled_roles?: string[] | null };

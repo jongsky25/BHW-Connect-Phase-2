@@ -5,7 +5,8 @@ export type NotificationType =
   | "assessment.decided"
   | "forum.reply"
   | "flipchart.reviewed"
-  | "user.transferred";
+  | "user.transferred"
+  | "feedback.reply";
 
 export type Notification = {
   id: string;

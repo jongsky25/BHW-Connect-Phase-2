@@ -57,6 +57,7 @@ export const ADMIN_NAV_GROUPS: AdminNavGroup[] = [
       { key: "announcements", href: "/admin/announcements", flag: "announcements" },
       { key: "surveys", href: "/admin/surveys", flag: "surveys" },
       { key: "forum", href: "/admin/forum", flag: "forum" },
+      { key: "spotFeedback", href: "/admin/feedback" },
     ],
   },
   {

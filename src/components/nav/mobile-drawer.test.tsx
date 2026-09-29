@@ -38,6 +38,7 @@ const FLAGS: FeatureFlags = {
   chat_conversation: false,
   ai_external: false,
   ai_gap_draft: false,
+  spot_feedback: false,
 };
 
 function show(role: AppUser["role"] = "bhw") {

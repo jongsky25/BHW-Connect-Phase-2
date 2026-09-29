@@ -10,6 +10,7 @@ export default function PrivacyPage() {
       {/* free-ai-leverage-plan.md §2 requires this stated plainly in the
           privacy notice, not only in the architecture. */}
       <p className="max-w-xl text-base text-ink/70">{t("aiClause")}</p>
+      <p className="max-w-xl text-base text-ink/70">{t("feedbackClause")}</p>
     </div>
   );
 }

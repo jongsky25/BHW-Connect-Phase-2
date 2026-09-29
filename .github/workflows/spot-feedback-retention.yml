@@ -1,0 +1,30 @@
+name: Spot feedback retention
+
+on:
+  schedule:
+    - cron: "20 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Count only (true) or remove comments and screenshots older than 24 months (false)"
+        required: true
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci --omit=dev --ignore-scripts
+      - name: Remove expired feedback
+        env:
+          SUPABASE_URL: ${{ secrets.PILOT_SUPABASE_URL || secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: node scripts/spot-feedback-retention.mjs

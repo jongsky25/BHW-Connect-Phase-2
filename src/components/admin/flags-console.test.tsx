@@ -28,6 +28,7 @@ const flags: FeatureFlagRow[] = [
     enabled: true,
     description: "Peer discussion boards.",
     disabled_roles: ["bhw"],
+    org_unit_filter: null,
     updated_at: "2026-01-01T00:00:00Z",
   },
   {
@@ -36,6 +37,7 @@ const flags: FeatureFlagRow[] = [
     enabled: true,
     description: "Reports dashboard and export routes.",
     disabled_roles: [],
+    org_unit_filter: null,
     updated_at: "2026-01-01T00:00:00Z",
   },
   {
@@ -44,6 +46,7 @@ const flags: FeatureFlagRow[] = [
     enabled: false,
     description: "Scheduled, facilitator-led training sessions.",
     disabled_roles: [],
+    org_unit_filter: null,
     updated_at: "2026-01-01T00:00:00Z",
   },
 ];
