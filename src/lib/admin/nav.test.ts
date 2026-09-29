@@ -26,12 +26,12 @@ describe("visibleAdminNavGroups", () => {
     expect(system?.items.map((i) => i.key)).toContain("superAdmin");
   });
 
-  it("drops a group entirely once every item in it is hidden", () => {
+  it("keeps draft review available while gated training items are hidden", () => {
     const groups = visibleAdminNavGroups({
       flags: { elearning: false, flipcharts: false },
       isSuperAdmin: false,
     });
-    expect(groups.find((g) => g.id === "training")).toBeUndefined();
+    expect(groups.find((g) => g.id === "training")?.items.map((i) => i.key)).toEqual(["gabayFlipcharts"]);
   });
 
   it("always shows unflagged items like the dashboard and feature flags", () => {
