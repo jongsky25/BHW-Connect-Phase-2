@@ -144,7 +144,7 @@ jobs:
           KB_LOADER_PASSWORD: local-e2e-password
 
       - name: Load Gabay course as a local draft
-        run: npm run gabay:load -- --apply --project local --org-unit "Barangay Batong Malake" --owner admin.stable
+        run: npm run gabay:load -- --apply --project local --org-unit "Batong Malake" --owner admin.stable
         env:
           KB_LOADER_USERNAME: admin.stable
           KB_LOADER_PASSWORD: local-e2e-password
