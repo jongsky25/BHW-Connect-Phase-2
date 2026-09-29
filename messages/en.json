@@ -37,7 +37,8 @@
   "privacy": {
     "heading": "Privacy Notice",
     "body": "The full Data Privacy Act notice ships with the consent flow in a later increment.",
-    "aiClause": "Personal information and text typed by BHWs are never shared with external AI services. External AI processes only content that an administrator has authored or explicitly reviewed and cleared."
+    "aiClause": "Personal information and text typed by BHWs are never shared with external AI services. External AI processes only content that an administrator has authored or explicitly reviewed and cleared.",
+    "feedbackClause": "If you send page feedback, we store your comment, page location, and an optional screenshot you choose to attach. Your admins use it to fix the app. Feedback and screenshots are removed after 24 months."
   },
   "offline": {
     "heading": "You're offline",
@@ -79,7 +80,8 @@
     "bodyRights": "You have the right to ask your admin for a copy of your data or to have your account deactivated and anonymized.",
     "agree": "I agree",
     "submitting": "Saving…",
-    "genericError": "Couldn't record your consent. Please try again."
+    "genericError": "Couldn't record your consent. Please try again.",
+    "bodyFeedback": "Page feedback is optional. It may include a screenshot only when you choose to attach one; comments and screenshots are retained for up to 24 months."
   },
   "authHome": {
     "heading": "Welcome, {name}!",
@@ -247,7 +249,8 @@
       "flipcharts": "Flip Charts",
       "courseProgress": "Course progress",
       "trainingProgress": "Training progress",
-      "superAdmin": "Test accounts"
+      "superAdmin": "Test accounts",
+      "spotFeedback": "Spot feedback"
     },
     "dashboard": {
       "tabActivity": "Activity",
@@ -475,12 +478,18 @@
         "notifications": "Notifications",
         "chat_conversation": "Chat Guide conversation",
         "ai_external": "AI (external provider)",
-        "ai_gap_draft": "AI gap-draft suggestions"
+        "ai_gap_draft": "AI gap-draft suggestions",
+        "spot_feedback": "Spot feedback"
       },
       "notAuthorizedError": "You're not authorized to do that.",
       "flagNotFoundError": "That flag wasn't found.",
       "invalidRoleForFlagError": "That feature can't be turned on or off for that user type.",
-      "genericError": "Something went wrong. Please try again."
+      "genericError": "Something went wrong. Please try again.",
+      "spotPilotHeading": "Spot feedback pilot area",
+      "spotPilotIntro": "Choose the organization whose users can send page comments. Set this before enabling the feature flag.",
+      "spotPilotSave": "Save pilot area",
+      "spotPilotClear": "Clear pilot area",
+      "spotPilotUnset": "No pilot area is selected. Field users cannot submit feedback yet."
     },
     "kbCategories": {
       "heading": "KB categories",
@@ -1310,5 +1319,54 @@
     "submit": "Save my barangay",
     "submitting": "Saving…",
     "genericError": "Something went wrong. Please try again."
+  },
+  "spotFeedback": {
+    "button": "Comment on this page",
+    "pickHint": "Tap the part of the page you want to comment on. Press Escape to cancel.",
+    "title": "Page comment",
+    "onPage": "Page: {page}",
+    "onElement": "About: {element}",
+    "messageLabel": "What would you like us to know?",
+    "screenshotTitle": "Optional screenshot",
+    "screenshotPrivacy": "Attach only if the preview contains no patient or other private information. Your comment can be sent without a screenshot.",
+    "attachScreenshot": "Capture and preview screenshot",
+    "capturing": "Capturing…",
+    "removeScreenshot": "Remove screenshot",
+    "screenshotPreview": "Screenshot preview",
+    "captureError": "Could not capture this screen. You can still send your comment.",
+    "sendError": "Could not send your comment. Please try again.",
+    "cancel": "Cancel",
+    "send": "Send comment",
+    "sending": "Sending…",
+    "sent": "Comment sent. Thank you!",
+    "mine": "My feedback",
+    "mineIntro": "Follow the comments you sent and read replies.",
+    "adminTitle": "Spot feedback",
+    "adminIntro": "Review comments from users in your organization.",
+    "statusFilter": "Filter comments by status",
+    "all": "All",
+    "empty": "No comments here yet.",
+    "status": {
+      "new": "New",
+      "in_review": "In review",
+      "resolved": "Resolved",
+      "dismissed": "Dismissed"
+    },
+    "elementContext": "Selected element: {element}",
+    "viewScreenshot": "View screenshot",
+    "pinLocation": "Selected spot",
+    "close": "Close",
+    "statusLabel": "Status",
+    "replies": "Replies",
+    "noReplies": "No replies yet.",
+    "team": "Team",
+    "replyLabel": "Write a reply",
+    "sendReply": "Send reply",
+    "actionError": "Could not save your change. Please try again.",
+    "previous": "Previous",
+    "next": "Next",
+    "pageFilter": "Page path",
+    "applyFilter": "Filter",
+    "clearFilter": "Clear page filter"
   }
 }

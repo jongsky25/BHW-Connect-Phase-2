@@ -37,7 +37,8 @@
   "privacy": {
     "heading": "Patakaran sa Privacy",
     "body": "Ang buong abiso ayon sa Data Privacy Act ay ilalabas kasama ng consent flow sa susunod na increment.",
-    "aiClause": "Hindi kailanman ibinabahagi sa panlabas na AI ang personal na impormasyon at ang tekstong isinulat ng mga BHW. Tanging nilalamang isinulat o sadyang sinuri at pinayagan ng administrador ang pinoproseso ng panlabas na AI."
+    "aiClause": "Hindi kailanman ibinabahagi sa panlabas na AI ang personal na impormasyon at ang tekstong isinulat ng mga BHW. Tanging nilalamang isinulat o sadyang sinuri at pinayagan ng administrador ang pinoproseso ng panlabas na AI.",
+    "feedbackClause": "Kung magpapadala ka ng komento sa pahina, itatago namin ang komento, lokasyon sa pahina, at opsyonal na screenshot na pinili mong ilakip. Ginagamit ito ng mga admin upang ayusin ang app. Aalisin ang komento at screenshot pagkalipas ng 24 buwan."
   },
   "offline": {
     "heading": "Offline ka",
@@ -79,7 +80,8 @@
     "bodyRights": "May karapatan kang humingi sa iyong admin ng kopya ng iyong datos o magpa-deactivate at anonymize ng iyong account.",
     "agree": "Sumasang-ayon ako",
     "submitting": "Sine-save…",
-    "genericError": "Hindi na-record ang iyong pahintulot. Subukan muli."
+    "genericError": "Hindi na-record ang iyong pahintulot. Subukan muli.",
+    "bodyFeedback": "Opsyonal ang komento sa pahina. May screenshot lang ito kung pipiliin mong maglakip; itatago ang komento at screenshot nang hanggang 24 buwan."
   },
   "authHome": {
     "heading": "Maligayang pagdating, {name}!",
@@ -247,7 +249,8 @@
       "flipcharts": "Mga Flip Chart",
       "courseProgress": "Progress ng kurso",
       "trainingProgress": "Progreso sa pagsasanay",
-      "superAdmin": "Mga test account"
+      "superAdmin": "Mga test account",
+      "spotFeedback": "Mga komento sa pahina"
     },
     "dashboard": {
       "tabActivity": "Aktibidad",
@@ -475,12 +478,18 @@
         "notifications": "Mga notipikasyon",
         "chat_conversation": "Usapan sa Chat Guide",
         "ai_external": "AI (external provider)",
-        "ai_gap_draft": "Mga mungkahi ng AI gap-draft"
+        "ai_gap_draft": "Mga mungkahi ng AI gap-draft",
+        "spot_feedback": "Mga komento sa pahina"
       },
       "notAuthorizedError": "Hindi ka pinahihintulutang gawin ito.",
       "flagNotFoundError": "Hindi nahanap ang flag na iyon.",
       "invalidRoleForFlagError": "Hindi mapapalitan ang feature na ito para sa ganitong uri ng user.",
-      "genericError": "May naganap na problema. Subukan muli."
+      "genericError": "May naganap na problema. Subukan muli.",
+      "spotPilotHeading": "Pilot area para sa mga komento",
+      "spotPilotIntro": "Piliin ang lugar na maaaring magpadala ng komento sa pahina. Itakda ito bago i-on ang feature flag.",
+      "spotPilotSave": "I-save ang pilot area",
+      "spotPilotClear": "Alisin ang pilot area",
+      "spotPilotUnset": "Wala pang pilot area. Hindi pa makakapagpadala ng komento ang mga field user."
     },
     "kbCategories": {
       "heading": "Mga Kategorya ng KB",
@@ -1310,5 +1319,54 @@
     "submit": "I-save ang aking barangay",
     "submitting": "Sine-save…",
     "genericError": "May nagkamali. Pakisubukang muli."
+  },
+  "spotFeedback": {
+    "button": "Magkomento sa pahinang ito",
+    "pickHint": "Pindutin ang bahaging gusto mong komentuhan. Pindutin ang Escape upang kanselahin.",
+    "title": "Komento sa pahina",
+    "onPage": "Pahina: {page}",
+    "onElement": "Tungkol sa: {element}",
+    "messageLabel": "Ano ang gusto mong ipaalam sa amin?",
+    "screenshotTitle": "Opsyonal na screenshot",
+    "screenshotPrivacy": "Ilakip lang kung walang impormasyon ng pasyente o iba pang pribadong detalye sa preview. Maaari kang magpadala nang walang screenshot.",
+    "attachScreenshot": "Kunan at tingnan ang screenshot",
+    "capturing": "Kinukunan…",
+    "removeScreenshot": "Alisin ang screenshot",
+    "screenshotPreview": "Preview ng screenshot",
+    "captureError": "Hindi makunan ang screen. Maaari mo pa ring ipadala ang komento.",
+    "sendError": "Hindi maipadala ang komento. Pakisubukang muli.",
+    "cancel": "Kanselahin",
+    "send": "Ipadala ang komento",
+    "sending": "Ipinapadala…",
+    "sent": "Naipadala ang komento. Salamat!",
+    "mine": "Aking mga komento",
+    "mineIntro": "Subaybayan ang mga komento mo at basahin ang mga tugon.",
+    "adminTitle": "Mga komento sa pahina",
+    "adminIntro": "Suriin ang mga komento ng mga user sa iyong lugar.",
+    "statusFilter": "Salain ang mga komento ayon sa estado",
+    "all": "Lahat",
+    "empty": "Wala pang komento rito.",
+    "status": {
+      "new": "Bago",
+      "in_review": "Sinusuri",
+      "resolved": "Nalutas",
+      "dismissed": "Isinara"
+    },
+    "elementContext": "Piniling bahagi: {element}",
+    "viewScreenshot": "Tingnan ang screenshot",
+    "pinLocation": "Piniling lugar",
+    "close": "Isara",
+    "statusLabel": "Estado",
+    "replies": "Mga tugon",
+    "noReplies": "Wala pang tugon.",
+    "team": "Koponan",
+    "replyLabel": "Sumulat ng tugon",
+    "sendReply": "Ipadala ang tugon",
+    "actionError": "Hindi na-save ang pagbabago. Pakisubukang muli.",
+    "previous": "Nakaraan",
+    "next": "Susunod",
+    "pageFilter": "Landas ng pahina",
+    "applyFilter": "Salain",
+    "clearFilter": "Alisin ang salaan sa pahina"
   }
 }

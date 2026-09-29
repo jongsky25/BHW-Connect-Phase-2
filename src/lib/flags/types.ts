@@ -13,7 +13,8 @@ export type FeatureFlagKey =
   | "notifications"
   | "chat_conversation"
   | "ai_external"
-  | "ai_gap_draft";
+  | "ai_gap_draft"
+  | "spot_feedback";
 
 export type FeatureFlags = Record<FeatureFlagKey, boolean>;
 
@@ -23,6 +24,7 @@ export type FeatureFlagRow = {
   enabled: boolean;
   description: string;
   disabled_roles: AppRole[];
+  org_unit_filter: string | null;
   updated_at: string;
 };
 
@@ -47,4 +49,5 @@ export const FLAG_ROLE_SCOPE: Record<FeatureFlagKey, AppRole[]> = {
   chat_conversation: ["bhw", "assessor", "designer"],
   ai_external: [],
   ai_gap_draft: [],
+  spot_feedback: ["bhw", "assessor", "designer"],
 };

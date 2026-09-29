@@ -17,6 +17,7 @@ const ALL_OFF: FeatureFlags = {
   chat_conversation: false,
   ai_external: false,
   ai_gap_draft: false,
+  spot_feedback: false,
 };
 
 const ALL_ON: FeatureFlags = {

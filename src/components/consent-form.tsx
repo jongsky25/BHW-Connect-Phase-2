@@ -44,6 +44,7 @@ export function ConsentForm() {
         <li>{t("bodyWhat")}</li>
         <li>{t("bodyWhy")}</li>
         <li>{t("bodyRetention")}</li>
+        <li>{t("bodyFeedback")}</li>
         <li>{t("bodyRights")}</li>
       </ul>
 

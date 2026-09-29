@@ -4,12 +4,12 @@ import { describe, expect, it } from "vitest";
 import { FLAG_ROLE_SCOPE, type FeatureFlagKey } from "./types";
 
 // RFT A2 (docs/role-feature-toggles-plan.md §5 A2): FLAG_ROLE_SCOPE must
-// mirror flag_role_scope() in the A1 migration exactly — this parses that
+// mirror the latest flag_role_scope() definition exactly — this parses that
 // migration's `case` expression out of the SQL text so the two can never
 // silently drift apart.
 const MIGRATION_PATH = join(
   __dirname,
-  "../../../supabase/migrations/20261005000100_rft_a1_flag_roles.sql",
+  "../../../supabase/migrations/20261008000000_spot_feedback.sql",
 );
 
 function parseFlagRoleScopeSql(sql: string): Record<string, string[]> {
@@ -33,7 +33,7 @@ function parseFlagRoleScopeSql(sql: string): Record<string, string[]> {
 }
 
 describe("FLAG_ROLE_SCOPE", () => {
-  it("matches flag_role_scope() in the A1 migration for every key it lists", () => {
+  it("matches flag_role_scope() in the latest migration for every key it lists", () => {
     const sql = readFileSync(MIGRATION_PATH, "utf8");
     const sqlScope = parseFlagRoleScopeSql(sql);
 
@@ -63,6 +63,7 @@ describe("FLAG_ROLE_SCOPE", () => {
       "chat_conversation",
       "ai_external",
       "ai_gap_draft",
+      "spot_feedback",
     ];
     for (const key of keys) {
       expect(FLAG_ROLE_SCOPE[key]).toBeDefined();

@@ -27,6 +27,7 @@ describe("getFeatureFlags", () => {
         { key: "chat_conversation", enabled: true },
         { key: "ai_external", enabled: true },
         { key: "ai_gap_draft", enabled: true },
+        { key: "spot_feedback", enabled: true },
       ]),
     );
     expect(flags).toEqual({
@@ -43,10 +44,11 @@ describe("getFeatureFlags", () => {
       chat_conversation: true,
       ai_external: true,
       ai_gap_draft: true,
+      spot_feedback: true,
     });
   });
 
-  it("defaults kb_articles/reports_export to enabled and announcements/surveys/elearning/forum/flipcharts/offline_pwa/notifications/chat_conversation/ai_external/ai_gap_draft to disabled when the table is empty or unreachable", async () => {
+  it("defaults existing features on and new features off when the table is empty or unreachable", async () => {
     const expected = {
       kb_articles: true,
       reports_export: true,
@@ -61,6 +63,7 @@ describe("getFeatureFlags", () => {
       chat_conversation: false,
       ai_external: false,
       ai_gap_draft: false,
+      spot_feedback: false,
     };
     expect(await getFeatureFlags(stubClient([]))).toEqual(expected);
     expect(await getFeatureFlags(stubClient(null))).toEqual(expected);
@@ -85,6 +88,7 @@ describe("getFeatureFlags", () => {
       chat_conversation: false,
       ai_external: false,
       ai_gap_draft: false,
+      spot_feedback: false,
     });
   });
 
