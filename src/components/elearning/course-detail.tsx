@@ -20,6 +20,7 @@ import type {
   LessonDensity,
   ModuleProgress,
   QuizQuestion,
+  QuizReviewItem,
 } from "@/lib/elearning/types";
 import { createClient } from "@/lib/supabase/client";
 import { ReferenceLessons, type ReferenceData } from './reference-lessons';
@@ -28,9 +29,13 @@ type Props = {
   reference?: ReferenceData;
   assessmentOnly?: boolean;
   courseId: string;
+  assessmentKind: "standard" | "gabay_roleplay";
+  openingDiagnostic: Array<{ id: string; prompt_fil: string; prompt_en: string; answer_fil: string; answer_en: string }>;
+  failedObservation: { scenario_id: string | null; notes: string; practice_advice: string | null } | null;
   quizMaxAttempts: number;
   modules: CourseModule[];
   questions: QuizQuestion[];
+  quizReview: QuizReviewItem[];
   visuals: CourseModuleVisual[];
   audios: CourseModuleAudio[];
   testQuestions: CourseTestQuestion[];
@@ -46,9 +51,13 @@ type Props = {
 export function CourseDetail({
   reference, assessmentOnly=false,
   courseId,
+  assessmentKind,
+  openingDiagnostic,
+  failedObservation,
   quizMaxAttempts,
   modules,
   questions,
+  quizReview,
   visuals,
   audios,
   testQuestions,
@@ -66,6 +75,18 @@ export function CourseDetail({
   const isPreview = usePreview();
   const [pendingModuleId, setPendingModuleId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [retryPending, setRetryPending] = useState(false);
+
+  async function requestRetry() {
+    if (isPreview) return;
+    setError(null);
+    setRetryPending(true);
+    try {
+      const { error: rpcError } = await createClient().rpc("rpc_gabay_assessment_retry", { p_course_id: courseId });
+      if (rpcError) setError(t(mapElearningRpcError(rpcError.message)));
+      else router.refresh();
+    } finally { setRetryPending(false); }
+  }
   // INC-26: Basahin/Islide is a per-module toggle, not a page-level one —
   // each module.map() row owns its own view and reading position, keyed by
   // module id, so switching one module's renderer never touches another's.
@@ -166,7 +187,7 @@ export function CourseDetail({
     );
   }
 
-  if (progressStatus === "failed_assessment" && !reference) {
+  if (progressStatus === "failed_assessment" && !reference && assessmentKind !== "gabay_roleplay") {
     return (
       <div className="rounded-md border border-danger/40 bg-danger/5 p-4">
         <p className="font-medium text-danger">
@@ -179,6 +200,17 @@ export function CourseDetail({
   return (
     <div className="flex flex-col gap-4">
       {isPreview ? <PreviewNote /> : null}
+      {progressStatus === "failed_assessment" && assessmentKind === "gabay_roleplay" ? (
+        <div className="rounded-md border border-danger/40 bg-danger/5 p-4 text-sm text-ink">
+          <p className="font-medium text-danger">{t("status.failed_assessment")}</p>
+          {failedObservation?.practice_advice ? <p className="mt-2">{t("roleplayAdvice")}: {failedObservation.practice_advice}</p> : null}
+          <p className="mt-2">{t("roleplayRetryInfo")}</p>
+          <button type="button" disabled={retryPending || isPreview} onClick={requestRetry}
+            className="mt-3 rounded-md bg-primary px-4 py-2 font-medium text-on-primary disabled:opacity-60">
+            {t("roleplayRetryAction")}
+          </button>
+        </div>
+      ) : null}
       {reference && <p>{locale==='en'?'Chapter I assessment and certificate':'Pagtatasa at sertipiko ng Kabanata I'}: {progressStatus ? t(`status.${progressStatus}`) : '—'}
         {certificateCode && <Link prefetch={false} className="ml-2 underline" href={`/certificates/${certificateCode}`}>{t('viewCertificateAction')}</Link>}
       </p>}
@@ -195,6 +227,28 @@ export function CourseDetail({
           {error}
         </p>
       ) : null}
+
+      {openingDiagnostic.length > 0 && progressStatus !== "certified" ? (
+        <section className="rounded-md border border-ink/10 p-4">
+          <h2 className="font-semibold text-ink">{t("diagnosticHeading")}</h2>
+          <p className="mt-1 text-sm text-ink/70">{t("diagnosticHelp")}</p>
+          <div className="mt-3 space-y-2">{openingDiagnostic.map((item) => (
+            <details key={item.id} className="rounded-md border border-ink/10 p-3 text-sm">
+              <summary className="cursor-pointer font-medium">{locale === "en" ? item.prompt_en : item.prompt_fil}</summary>
+              <p className="mt-2">{locale === "en" ? item.answer_en : item.answer_fil}</p>
+            </details>
+          ))}</div>
+        </section>
+      ) : null}
+
+      {quizReview.length > 0 ? <section className="rounded-md border border-ink/10 p-4">
+        <h2 className="font-semibold text-ink">{t("quizReviewHeading")}</h2>
+        <ol className="mt-3 list-decimal space-y-3 pl-5 text-sm">{quizReview.map((item) => <li key={item.id}>
+          <p>{locale === "en" ? item.prompt_en : item.prompt_fil}</p>
+          <p className="font-medium">{t("quizReviewAnswer")}: {locale === "en" ? item.options[item.correct_option_index]?.en : item.options[item.correct_option_index]?.fil}</p>
+          <p className="text-ink/70">{locale === "en" ? item.rationale_en : item.rationale_fil}</p>
+        </li>)}</ol>
+      </section> : null}
 
       {hasTestBank ? (
         <TestScores

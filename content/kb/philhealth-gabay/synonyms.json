@@ -1,0 +1,16 @@
+{
+  "synonyms": [
+    { "term": "filhealt", "maps_to": "philhealth", "language": "taglish" },
+    { "term": "philhealt", "maps_to": "philhealth", "language": "taglish" },
+    { "term": "yakep", "maps_to": "yakap", "language": "taglish" },
+    { "term": "yakab", "maps_to": "yakap", "language": "taglish" },
+    { "term": "mag pa rehistro", "maps_to": "magparehistro registration", "language": "taglish" },
+    { "term": "pag paparehistro", "maps_to": "pagpaparehistro registration", "language": "taglish" },
+    { "term": "member number", "maps_to": "pin philhealth", "language": "en" },
+    { "term": "philhealth number", "maps_to": "pin philhealth", "language": "taglish" },
+    { "term": "fpe", "maps_to": "first patient encounter", "language": "taglish" },
+    { "term": "botika", "maps_to": "pharmacy dispensing facility", "language": "fil" },
+    { "term": "out of stock", "maps_to": "gamot stock availability", "language": "en" },
+    { "term": "otp", "maps_to": "one time code password", "language": "taglish" }
+  ]
+}

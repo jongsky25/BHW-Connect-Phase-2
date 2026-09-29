@@ -3,6 +3,7 @@ import { normalizeText, tokenize } from "./normalize";
 import { scoreEntry } from "./scoring";
 import { filterStopwords } from "./stopwords";
 import { expandTokens } from "./synonyms";
+import { gabayIntentEntry } from "./gabay-routing";
 import type { ChatEntryCandidate, ChatMatchResult, ChatMatcherConfig, SynonymRow } from "./types";
 
 // §6.1 step 4: score >= 0.55 -> top entry as the answer, next 2 as
@@ -17,6 +18,12 @@ export function matchQuestion(
   const normalizedText = normalizeText(question);
   const tokens = tokenize(normalizedText);
   const expandedTokens = filterStopwords(expandTokens(normalizedText, tokens, synonyms));
+
+  const guardedEntry = gabayIntentEntry(normalizedText, entries);
+  if (guardedEntry) {
+    return { type: "answer", normalizedText,
+      top: scoreEntry(normalizedText, expandedTokens, guardedEntry, config), related: [] };
+  }
 
   const scored = entries
     .map((entry) => scoreEntry(normalizedText, expandedTokens, entry, config))

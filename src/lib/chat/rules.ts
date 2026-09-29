@@ -1,5 +1,6 @@
 import clarifiersFile from "../../../content/kb/hhp-ncd/clarifiers.json";
 import redFlagsFile from "../../../content/kb/hhp-ncd/red-flags.json";
+import gabayClarifiersFile from "../../../content/kb/philhealth-gabay/clarifiers.json";
 import type { Clarifier, RedFlagRule } from "./types";
 
 // Red-flag and clarifier rules ship as versioned content files rather than
@@ -15,4 +16,7 @@ import type { Clarifier, RedFlagRule } from "./types";
 // not. Turning the flag off is the no-deploy mitigation in the meantime.
 
 export const redFlagRules: RedFlagRule[] = redFlagsFile.red_flags as RedFlagRule[];
-export const clarifierRules: Clarifier[] = clarifiersFile.clarifiers as Clarifier[];
+export const clarifierRules: Clarifier[] = [
+  ...(clarifiersFile.clarifiers as Clarifier[]),
+  ...(gabayClarifiersFile.clarifiers as Clarifier[]),
+];
