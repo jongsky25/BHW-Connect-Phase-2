@@ -41,6 +41,9 @@ test('spot feedback migration allows active users across organizations and scope
     `);
     const migration = await readFile(new URL('../../supabase/migrations/20261008000000_spot_feedback.sql', import.meta.url), 'utf8');
     await db.exec(migration);
+    const grantFix = await readFile(new URL('../../supabase/migrations/20261009000000_spot_feedback_trigger_grant.sql', import.meta.url), 'utf8');
+    await db.exec(grantFix);
+    assert.equal((await db.query("select has_function_privilege('anon', 'public.queue_spot_feedback_screenshot_cleanup()', 'EXECUTE') as allowed")).rows[0].allowed, false);
     await db.exec(`
       insert into public.org_units values
         ('00000000-0000-0000-0000-000000000001', '1.'),
