@@ -24,7 +24,7 @@ type Props = {
 const ITEM_CLASS =
   "flex min-h-12 items-center rounded-md px-3 text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
 
-// The below-`md` counterpart of the desktop links, "More" menu and user menu.
+// The below-`xl` counterpart of the desktop links, "More" menu and user menu.
 // A native <dialog> opened with showModal() gives the focus trap, Escape
 // handling and inert background for free, and returns focus to the ☰ button
 // when it closes.
@@ -98,7 +98,7 @@ export function MobileDrawer({ account, items, labels, initialA11y }: Props) {
   }
 
   return (
-    <div className="md:hidden">
+    <div className="xl:hidden">
       <button
         type="button"
         aria-label={t("openMenuLabel")}

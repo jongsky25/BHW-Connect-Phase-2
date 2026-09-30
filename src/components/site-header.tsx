@@ -35,8 +35,15 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
 
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-canvas">
-      <div className="mx-auto flex max-w-7xl flex-nowrap items-center justify-between gap-2 px-4 py-4 sm:gap-4 sm:px-6">
-        <div className="flex items-center gap-2 md:gap-6">
+      <div className={`mx-auto flex max-w-7xl gap-2 px-4 sm:gap-4 sm:px-6 ${signedIn && account ? "flex-col py-2 md:flex-row md:items-center md:justify-between md:py-4" : "flex-col py-2 min-[560px]:flex-row min-[560px]:items-center min-[560px]:justify-between min-[560px]:py-4"}`}>
+        <div className={`flex items-center gap-2 md:gap-6 ${signedIn && account ? "w-full justify-between md:w-auto md:justify-start" : "w-full min-[560px]:w-auto"}`}>
+          <Link prefetch={false}
+            href={signedIn ? "/home" : "/"}
+            className="flex items-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <EquityMark size="sm" decorative />
+            {t("appName")}
+          </Link>
           {signedIn && account ? (
             <MobileDrawer
               account={account}
@@ -45,15 +52,8 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
               initialA11y={initialA11y}
             />
           ) : null}
-          <Link prefetch={false}
-            href={signedIn ? "/home" : "/"}
-            className="flex items-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold text-primary-text hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            <EquityMark size="sm" decorative />
-            {t("appName")}
-          </Link>
           {primaryItems.length > 0 ? (
-            <nav aria-label={t("primaryNavLabel")} className="hidden items-center gap-1 md:flex">
+            <nav aria-label={t("primaryNavLabel")} className="hidden items-center gap-1 xl:flex">
               {primaryItems.map((item) => (
                 <NavLink key={item.id} item={item} label={tNav(item.labelKey)} />
               ))}
@@ -67,13 +67,13 @@ export function SiteHeader({ signedIn, account, notificationsEnabled, notifUnrea
             </nav>
           ) : null}
         </div>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex w-full items-center justify-end gap-2 md:w-auto md:gap-3">
           {signedIn && account ? <GlobalSearch /> : null}
           {notificationsEnabled ? <NotificationBell unreadCount={notifUnreadCount} /> : null}
           {/* Mobile gets the same controls inline in the drawer's "Display"
               section instead (see MobileDrawer) — a separate popover there
               would just be a second, harder-to-reach way to the same thing. */}
-          <div className="hidden md:block">
+          <div className={signedIn && account ? "hidden xl:block" : "hidden md:block"}>
             <QuickDisplayPopover initialA11y={initialA11y} signedIn={signedIn} />
           </div>
           {signedIn && account ? <UserMenu account={account} /> : <LanguageToggle signedIn={signedIn} compact />}
