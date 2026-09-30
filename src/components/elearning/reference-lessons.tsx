@@ -146,9 +146,26 @@ export function ReferenceLessons(props: Props) {
   const resumeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const flushResumeRef = useRef<() => Promise<void>>(() => writes.current);
   const lesson = lessons.find((l) => l.id === selected);
-  // Pilot the new story composition on 1.1.1 only. The clock wording above
-  // is the only display correction to the published Read text.
-  const storyLayout = lesson?.lesson_key === "bhw-roles-hepo";
+  const storyArt = lesson?.lesson_key === "bhw-roles-hepo"
+    ? {
+        src: "/training/bhw-1-1/scene-8cdb1498a723.png",
+        alt: ui(
+          "Si BHW Marites ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.",
+          "BHW Marites talks with residents; nearby, a mother and child speak with a midwife.",
+        ),
+        caption: ui("Isang umaga sa barangay", "One morning in the barangay"),
+      }
+    : lesson?.lesson_key === "bhw-health-educator"
+      ? {
+          src: "/training/bhw-1-1/health-educator-c9c658e97d1e.png",
+          alt: ui(
+            "Nakikinig ang BHW sa kabataan, magulang na may sanggol, at nakatatanda sa isang talakayan sa barangay.",
+            "A BHW listens to a young person, a parent with an infant, and an older resident at a barangay discussion.",
+          ),
+          caption: ui("Talakayang angkop sa kausap", "A discussion shaped around its audience"),
+        }
+      : null;
+  const storyLayout = storyArt !== null;
   const items = lesson
     ? mode === "read"
       ? lesson.revision.read_sections
@@ -376,32 +393,30 @@ export function ReferenceLessons(props: Props) {
   }
   const readerArticle = lesson && item && (
       <article
-        className={storyLayout ? "bhw111-story" : "rounded-xl border border-ink/15 p-4 sm:p-6"}
+        className={storyLayout ? "reference-story" : "rounded-xl border border-ink/15 p-4 sm:p-6"}
         data-layout={"layout" in item ? item.layout : "read"}
         data-scene={item.id}
+        data-lesson={lesson.lesson_key}
       >
-        {storyLayout && <figure className="bhw111-art">
+        {storyArt && <figure className="reference-story-art">
           <Image
-            src="/training/bhw-1-1/scene-8cdb1498a723.png"
+            src={storyArt.src}
             fill
             sizes="(max-width: 700px) 100vw, 50vw"
-            alt={ui(
-              "Si BHW Marites ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.",
-              "BHW Marites talks with residents; nearby, a mother and child speak with a midwife.",
-            )}
+            alt={storyArt.alt}
             priority
           />
-          <figcaption>{ui("Isang umaga sa barangay", "One morning in the barangay")}</figcaption>
+          <figcaption>{storyArt.caption}</figcaption>
         </figure>}
-        <div className={storyLayout ? "bhw111-copy" : undefined}>
+        <div className={storyLayout ? "reference-story-copy" : undefined}>
         {"display_fil" in item ? (
           <>
-            <h2 tabIndex={-1} ref={heading} className={storyLayout ? "bhw111-title" : "text-xl font-semibold"}>
+            <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
             {practice}
             {revealSummary && <div
-              className={storyLayout ? "bhw111-lines" :
+              className={storyLayout ? "reference-story-lines" :
                 ["comparison", "relationship-map", "scene"].includes(
                   item.layout,
                 )
@@ -413,7 +428,7 @@ export function ReferenceLessons(props: Props) {
                 .split("\n")
                 .filter(Boolean)
                 .map((line, i) => (
-                  <p key={i} className={storyLayout ? "bhw111-line" : "rounded-lg bg-ink/5 p-4 text-lg"}>
+                  <p key={i} className={storyLayout ? "reference-story-line" : "rounded-lg bg-ink/5 p-4 text-lg"}>
                     {item.layout === "process" ? (
                       <span aria-hidden="true">{i + 1}. </span>
                     ) : null}
@@ -749,9 +764,9 @@ export function ReferenceLessons(props: Props) {
               ? ui("I-rotate ang device nang pahiga para mabasa ang nilalaman.", "Turn your device sideways to read the content.")
               : ui("I-rotate ang device nang patayo para mabasa ang nilalaman.", "Turn your device upright to read the content.")}
           </p>}
-          {readerOpen && lesson && item && (storyLayout ? <div className="bhw111-presenter">
-            <div className="bhw111-presenter-content">{readerArticle}</div>
-            <div className="bhw111-presenter-pager">{readerPager}</div>
+          {readerOpen && lesson && item && (storyLayout ? <div className="reference-story-presenter">
+            <div className="reference-story-presenter-content">{readerArticle}</div>
+            <div className="reference-story-presenter-pager">{readerPager}</div>
           </div> : <FittedLessonPage
             key={`${lesson.id}:${mode}:${item.id}:${orientation}`}
             content={readerArticle}

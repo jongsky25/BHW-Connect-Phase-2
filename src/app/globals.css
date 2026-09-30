@@ -59,17 +59,17 @@ body {
   line-height: 1.45;
 }
 
-.bhw111-presenter .reference-check-feedback-label {
+.reference-story-presenter .reference-check-feedback-label {
   font-size: clamp(2rem, 3vw, 3rem);
 }
 
-.bhw111-presenter .reference-check-feedback-detail {
+.reference-story-presenter .reference-check-feedback-detail {
   font-size: clamp(1.25rem, 1.7vw, 1.8rem);
 }
 
-/* Lesson 1.1.1 story layout. Text remains native size in the presenter;
+/* Reference lesson story layout. Text remains native size in the presenter;
    long sections scroll within their content area instead of scaling down. */
-.bhw111-story {
+.reference-story {
   display: grid;
   grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
   min-height: 33rem;
@@ -78,20 +78,20 @@ body {
   background: color-mix(in srgb, var(--color-canvas) 87%, var(--color-secondary));
 }
 
-.bhw111-art {
+.reference-story-art {
   position: relative;
   min-height: 21rem;
   overflow: hidden;
   background: color-mix(in srgb, var(--color-secondary) 30%, var(--color-canvas));
 }
 
-.bhw111-art img {
+.reference-story-art img {
   object-fit: cover;
   object-position: 50% 50%;
   transition: object-position 600ms ease, scale 600ms ease;
 }
 
-.bhw111-art::after {
+.reference-story-art::after {
   position: absolute;
   inset: 0;
   background: linear-gradient(transparent 77%, color-mix(in srgb, var(--color-ink) 55%, transparent));
@@ -99,7 +99,7 @@ body {
   pointer-events: none;
 }
 
-.bhw111-art figcaption {
+.reference-story-art figcaption {
   position: absolute;
   z-index: 1;
   bottom: 1.25rem;
@@ -110,38 +110,60 @@ body {
   font-weight: 600;
 }
 
-.bhw111-story[data-scene="prevention-slide"] .bhw111-art img,
-.bhw111-story[data-scene="prevention"] .bhw111-art img {
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="prevention-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="prevention"] .reference-story-art img {
   object-position: 22% 50%;
   scale: 1.15;
 }
 
-.bhw111-story[data-scene="hepo-slide"] .bhw111-art img,
-.bhw111-story[data-scene="hepo"] .bhw111-art img {
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="hepo-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="hepo"] .reference-story-art img {
   object-position: 52% 50%;
 }
 
-.bhw111-story[data-scene="knowledge-slide"] .bhw111-art img,
-.bhw111-story[data-scene="knowledge"] .bhw111-art img {
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="knowledge-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="knowledge"] .reference-story-art img {
   object-position: 42% 50%;
   scale: 1.1;
 }
 
-.bhw111-story[data-scene="check-slide"] .bhw111-art img,
-.bhw111-story[data-scene="check"] .bhw111-art img {
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="check-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-roles-hepo"][data-scene="check"] .reference-story-art img {
   object-position: 58% 50%;
 }
 
-.bhw111-copy {
+.reference-story[data-lesson="bhw-health-educator"][data-scene="educator-scene"] .reference-story-art img,
+.reference-story[data-lesson="bhw-health-educator"][data-scene="educator-scene-slide"] .reference-story-art img {
+  object-position: 25% 50%;
+}
+
+.reference-story[data-lesson="bhw-health-educator"][data-scene="body-environment"] .reference-story-art img,
+.reference-story[data-lesson="bhw-health-educator"][data-scene="body-environment-slide"] .reference-story-art img {
+  object-position: 48% 50%;
+}
+
+.reference-story[data-lesson="bhw-health-educator"][data-scene="life-stages"] .reference-story-art img,
+.reference-story[data-lesson="bhw-health-educator"][data-scene="life-stages-slide"] .reference-story-art img {
+  object-position: 78% 50%;
+}
+
+.reference-story[data-lesson="bhw-health-educator"][data-scene="all-sectors"] .reference-story-art img,
+.reference-story[data-lesson="bhw-health-educator"][data-scene="all-sectors-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-health-educator"][data-scene="check"] .reference-story-art img,
+.reference-story[data-lesson="bhw-health-educator"][data-scene="check-slide"] .reference-story-art img {
+  object-position: 66% 50%;
+}
+
+.reference-story-copy {
   align-self: center;
   min-width: 0;
   padding: clamp(1.5rem, 3.4vw, 3.5rem);
   color: var(--color-ink);
 }
 
-.bhw111-title,
-.bhw111-copy > h2,
-.bhw111-copy > h2.text-xl {
+.reference-story-title,
+.reference-story-copy > h2,
+.reference-story-copy > h2.text-xl {
   font-family: Georgia, serif;
   font-size: clamp(2.2rem, 3.3vw, 4rem);
   font-weight: 400;
@@ -150,127 +172,127 @@ body {
   overflow-wrap: anywhere;
 }
 
-.bhw111-lines {
+.reference-story-lines {
   display: grid;
   gap: 0.75rem;
   margin-block: 1.5rem;
 }
 
-.bhw111-line {
+.reference-story-line {
   border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 18%, transparent);
   padding-block: 0.65rem;
   font-size: clamp(1.25rem, 1.7vw, 1.8rem);
   line-height: 1.35;
 }
 
-.bhw111-line:last-child {
+.reference-story-line:last-child {
   border-bottom: 0;
   color: var(--color-primary-text);
   font-weight: 600;
 }
 
-.bhw111-copy > div.my-5.flex.flex-col.gap-4 {
+.reference-story-copy > div.my-5.flex.flex-col.gap-4 {
   font-size: clamp(1.15rem, 1.4vw, 1.5rem);
   line-height: 1.6;
 }
 
-.bhw111-copy fieldset {
+.reference-story-copy fieldset {
   border: 0;
   padding: 0;
   margin-top: 1.75rem;
 }
 
-.bhw111-copy fieldset legend {
+.reference-story-copy fieldset legend {
   font-size: clamp(1.2rem, 1.5vw, 1.7rem);
   line-height: 1.35;
   margin-bottom: 1rem;
 }
 
-.bhw111-copy fieldset button {
+.reference-story-copy fieldset button {
   min-height: 3.4rem;
   font-size: clamp(1.05rem, 1.25vw, 1.5rem);
   line-height: 1.35;
   background: var(--color-canvas);
 }
 
-.bhw111-copy fieldset button[aria-pressed="true"] {
+.reference-story-copy fieldset button[aria-pressed="true"] {
   border-color: var(--color-primary);
   border-width: 2px;
 }
 
-.bhw111-presenter {
+.reference-story-presenter {
   display: flex;
   min-height: 0;
   flex: 1;
   flex-direction: column;
 }
 
-.bhw111-presenter-content {
+.reference-story-presenter-content {
   display: flex;
   min-height: 0;
   flex: 1;
   overflow-y: auto;
 }
 
-.bhw111-presenter-content .bhw111-story {
+.reference-story-presenter-content .reference-story {
   flex: 1;
   min-height: 100%;
   border-radius: 0;
 }
 
-.bhw111-presenter .bhw111-copy {
+.reference-story-presenter .reference-story-copy {
   padding: clamp(1.5rem, 3.8vw, 4rem);
 }
 
-.bhw111-presenter .bhw111-title,
-.bhw111-presenter .bhw111-copy > h2.text-xl {
+.reference-story-presenter .reference-story-title,
+.reference-story-presenter .reference-story-copy > h2.text-xl {
   font-size: clamp(2.8rem, 4vw, 5rem);
 }
 
-.bhw111-presenter .bhw111-line,
-.bhw111-presenter .bhw111-copy > div.my-5.flex.flex-col.gap-4 {
+.reference-story-presenter .reference-story-line,
+.reference-story-presenter .reference-story-copy > div.my-5.flex.flex-col.gap-4 {
   font-size: clamp(1.5rem, 2vw, 2.4rem);
 }
 
-.bhw111-presenter .bhw111-copy fieldset legend {
+.reference-story-presenter .reference-story-copy fieldset legend {
   font-size: clamp(1.4rem, 2vw, 2.2rem);
 }
 
-.bhw111-presenter .bhw111-copy fieldset button {
+.reference-story-presenter .reference-story-copy fieldset button {
   font-size: clamp(1.25rem, 1.6vw, 1.8rem);
 }
 
-.bhw111-presenter-pager {
+.reference-story-presenter-pager {
   flex: none;
   padding: 0.7rem 1.5rem;
   border-top: 1px solid color-mix(in srgb, var(--color-ink) 18%, transparent);
 }
 
 @media (max-width: 700px) {
-  .bhw111-story {
+  .reference-story {
     display: block;
   }
 
-  .bhw111-art {
+  .reference-story-art {
     min-height: 0;
     aspect-ratio: 1.55;
   }
 
-  .bhw111-copy {
+  .reference-story-copy {
     padding: 1.5rem;
   }
 
-  .bhw111-presenter-content .bhw111-story {
+  .reference-story-presenter-content .reference-story {
     min-height: max-content;
   }
 
-  .bhw111-presenter .bhw111-copy {
+  .reference-story-presenter .reference-story-copy {
     padding: 1.5rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bhw111-art img {
+  .reference-story-art img {
     transition: none;
   }
 }
