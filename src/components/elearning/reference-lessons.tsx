@@ -765,7 +765,12 @@ export function ReferenceLessons(props: Props) {
               : ui("I-rotate ang device nang patayo para mabasa ang nilalaman.", "Turn your device upright to read the content.")}
           </p>}
           {readerOpen && lesson && item && (storyLayout ? <div className="reference-story-presenter">
-            <div className="reference-story-presenter-content">{readerArticle}</div>
+            <div
+              className="reference-story-presenter-content"
+              role="region"
+              tabIndex={0}
+              aria-label={ui("Nilalaman ng aralin", "Lesson content")}
+            >{readerArticle}</div>
             <div className="reference-story-presenter-pager">{readerPager}</div>
           </div> : <FittedLessonPage
             key={`${lesson.id}:${mode}:${item.id}:${orientation}`}
