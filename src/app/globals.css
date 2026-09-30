@@ -28,6 +28,214 @@ body {
   color: var(--color-ink);
 }
 
+/* Lesson 1.1.1 story layout. Text remains native size in the presenter;
+   long sections scroll within their content area instead of scaling down. */
+.bhw111-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+  min-height: 33rem;
+  overflow: hidden;
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, var(--color-canvas) 87%, var(--color-secondary));
+}
+
+.bhw111-art {
+  position: relative;
+  min-height: 21rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--color-secondary) 30%, var(--color-canvas));
+}
+
+.bhw111-art img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: object-position 600ms ease, scale 600ms ease;
+}
+
+.bhw111-art::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 77%, color-mix(in srgb, var(--color-ink) 55%, transparent));
+  content: "";
+  pointer-events: none;
+}
+
+.bhw111-art figcaption {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.25rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  color: var(--color-on-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.bhw111-story[data-scene="prevention-slide"] .bhw111-art img,
+.bhw111-story[data-scene="prevention"] .bhw111-art img {
+  object-position: 22% 50%;
+  scale: 1.15;
+}
+
+.bhw111-story[data-scene="hepo-slide"] .bhw111-art img,
+.bhw111-story[data-scene="hepo"] .bhw111-art img {
+  object-position: 52% 50%;
+}
+
+.bhw111-story[data-scene="knowledge-slide"] .bhw111-art img,
+.bhw111-story[data-scene="knowledge"] .bhw111-art img {
+  object-position: 42% 50%;
+  scale: 1.1;
+}
+
+.bhw111-story[data-scene="check-slide"] .bhw111-art img,
+.bhw111-story[data-scene="check"] .bhw111-art img {
+  object-position: 58% 50%;
+}
+
+.bhw111-copy {
+  align-self: center;
+  min-width: 0;
+  padding: clamp(1.5rem, 3.4vw, 3.5rem);
+  color: var(--color-ink);
+}
+
+.bhw111-title,
+.bhw111-copy > h2,
+.bhw111-copy > h2.text-xl {
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 3.3vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.bhw111-lines {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 1.5rem;
+}
+
+.bhw111-line {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-ink) 18%, transparent);
+  padding-block: 0.65rem;
+  font-size: clamp(1.25rem, 1.7vw, 1.8rem);
+  line-height: 1.35;
+}
+
+.bhw111-line:last-child {
+  border-bottom: 0;
+  color: var(--color-primary-text);
+  font-weight: 600;
+}
+
+.bhw111-copy > div.my-5.flex.flex-col.gap-4 {
+  font-size: clamp(1.15rem, 1.4vw, 1.5rem);
+  line-height: 1.6;
+}
+
+.bhw111-copy fieldset {
+  border: 0;
+  padding: 0;
+  margin-top: 1.75rem;
+}
+
+.bhw111-copy fieldset legend {
+  font-size: clamp(1.2rem, 1.5vw, 1.7rem);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+.bhw111-copy fieldset button {
+  min-height: 3.4rem;
+  font-size: clamp(1.05rem, 1.25vw, 1.5rem);
+  line-height: 1.35;
+  background: var(--color-canvas);
+}
+
+.bhw111-copy fieldset button[aria-pressed="true"] {
+  border-color: var(--color-primary);
+  border-width: 2px;
+}
+
+.bhw111-presenter {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.bhw111-presenter-content {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.bhw111-presenter-content .bhw111-story {
+  flex: 1;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+.bhw111-presenter .bhw111-copy {
+  padding: clamp(1.5rem, 3.8vw, 4rem);
+}
+
+.bhw111-presenter .bhw111-title,
+.bhw111-presenter .bhw111-copy > h2.text-xl {
+  font-size: clamp(2.8rem, 4vw, 5rem);
+}
+
+.bhw111-presenter .bhw111-line,
+.bhw111-presenter .bhw111-copy > div.my-5.flex.flex-col.gap-4 {
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
+}
+
+.bhw111-presenter .bhw111-copy fieldset legend {
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
+}
+
+.bhw111-presenter .bhw111-copy fieldset button {
+  font-size: clamp(1.25rem, 1.6vw, 1.8rem);
+}
+
+.bhw111-presenter-pager {
+  flex: none;
+  padding: 0.7rem 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-ink) 18%, transparent);
+}
+
+@media (max-width: 700px) {
+  .bhw111-story {
+    display: block;
+  }
+
+  .bhw111-art {
+    min-height: 0;
+    aspect-ratio: 1.55;
+  }
+
+  .bhw111-copy {
+    padding: 1.5rem;
+  }
+
+  .bhw111-presenter-content .bhw111-story {
+    min-height: max-content;
+  }
+
+  .bhw111-presenter .bhw111-copy {
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bhw111-art img {
+    transition: none;
+  }
+}
+
 /* Keep the chosen reader orientation usable where screen.orientation.lock is
    unavailable, including iPhone browsers. Rotating the device then gives the
    reader its natural viewport shape without this transform. */

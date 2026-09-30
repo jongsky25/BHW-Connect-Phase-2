@@ -6,6 +6,30 @@ afterEach(cleanup);
 const part=(id:string)=>({id,concept_ids:['concept'],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Short content',body_fil:'Maikling aralin',check:null});
 const data={title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Lesson',title_en:'Lesson',objectives_fil:['Layunin'],objectives_en:['Objective'],revision:{id:'revision',read_sections:[part('first'),part('second')],slides:[{...part('slide'),display_en:'Slide content',display_fil:'Slide',layout:'scene'}],assets:[],sources:[]}}]} as unknown as ReferenceData;
 describe('route lesson viewer',()=>{
+  it('reflows Lesson 1.1.1 in the presenter while keeping published text and paging',()=>{
+    const showModal = HTMLDialogElement.prototype.showModal;
+    const close = HTMLDialogElement.prototype.close;
+    HTMLDialogElement.prototype.showModal = function () {this.setAttribute('open','');};
+    HTMLDialogElement.prototype.close = function () {this.removeAttribute('open');};
+    const roleLesson = {...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-roles-hepo'}))};
+    try {
+      const {container}=render(<ReferenceLessons {...roleLesson} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+      fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
+      const dialog=container.querySelector('dialog')!;
+      expect(dialog.querySelector('.bhw111-presenter .bhw111-story')).toBeInTheDocument();
+      expect(within(dialog).getByRole('img',{name:/BHW Marites talks with residents/})).toBeInTheDocument();
+      expect(within(dialog).getByText('Short content')).toBeInTheDocument();
+      expect(dialog.querySelector('[data-reader-viewport]')).not.toBeInTheDocument();
+      expect(within(dialog).queryByRole('button',{name:'Fit'})).not.toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Next'}));
+      expect(within(dialog).getByRole('heading',{name:'second'})).toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
+      expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
+    } finally {
+      HTMLDialogElement.prototype.showModal = showModal;
+      HTMLDialogElement.prototype.close = close;
+    }
+  });
   it('opens only the reader content and keeps mode, orientation, and paging inside it',()=>{
     const showModal = HTMLDialogElement.prototype.showModal;
     const close = HTMLDialogElement.prototype.close;

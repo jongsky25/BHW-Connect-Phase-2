@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {useRouter} from "next/navigation";
 import type {
   CourseModule,
@@ -130,6 +131,9 @@ export function ReferenceLessons(props: Props) {
   const resumeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const flushResumeRef = useRef<() => Promise<void>>(() => writes.current);
   const lesson = lessons.find((l) => l.id === selected);
+  // Pilot the new story composition on 1.1.1 only. All instructional words,
+  // checks, audio and saved positions still come from its published revision.
+  const storyLayout = lesson?.lesson_key === "bhw-roles-hepo";
   const items = lesson
     ? mode === "read"
       ? lesson.revision.read_sections
@@ -357,17 +361,32 @@ export function ReferenceLessons(props: Props) {
   }
   const readerArticle = lesson && item && (
       <article
-        className="rounded-xl border border-ink/15 p-4 sm:p-6"
+        className={storyLayout ? "bhw111-story" : "rounded-xl border border-ink/15 p-4 sm:p-6"}
         data-layout={"layout" in item ? item.layout : "read"}
+        data-scene={item.id}
       >
+        {storyLayout && <figure className="bhw111-art">
+          <Image
+            src="/training/bhw-1-1/scene-8cdb1498a723.png"
+            fill
+            sizes="(max-width: 700px) 100vw, 50vw"
+            alt={ui(
+              "Si BHW Marites ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.",
+              "BHW Marites talks with residents; nearby, a mother and child speak with a midwife.",
+            )}
+            priority
+          />
+          <figcaption>{ui("Isang umaga sa barangay", "One morning in the barangay")}</figcaption>
+        </figure>}
+        <div className={storyLayout ? "bhw111-copy" : undefined}>
         {"display_fil" in item ? (
           <>
-            <h2 tabIndex={-1} ref={heading} className="text-xl font-semibold">
+            <h2 tabIndex={-1} ref={heading} className={storyLayout ? "bhw111-title" : "text-xl font-semibold"}>
               {en ? item.heading_en : item.heading_fil}
             </h2>
             {practice}
             {revealSummary && <div
-              className={
+              className={storyLayout ? "bhw111-lines" :
                 ["comparison", "relationship-map", "scene"].includes(
                   item.layout,
                 )
@@ -379,7 +398,7 @@ export function ReferenceLessons(props: Props) {
                 .split("\n")
                 .filter(Boolean)
                 .map((line, i) => (
-                  <p key={i} className="rounded-lg bg-ink/5 p-4 text-lg">
+                  <p key={i} className={storyLayout ? "bhw111-line" : "rounded-lg bg-ink/5 p-4 text-lg"}>
                     {item.layout === "process" ? (
                       <span aria-hidden="true">{i + 1}. </span>
                     ) : null}
@@ -387,7 +406,7 @@ export function ReferenceLessons(props: Props) {
                   </p>
                 ))}
             </div>}
-            {revealSummary && figures}
+            {revealSummary && !storyLayout && figures}
           </>
         ) : (
           <ReferenceReadSection
@@ -399,13 +418,14 @@ export function ReferenceLessons(props: Props) {
             en={en}
             headingRef={heading}
           >
-            {figures}
+            {!storyLayout && figures}
             {practice}
             {!revealSummary && props.narration?.[lesson.id]?.[item.id] && <p className="mt-3 text-sm">
               {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}
             </p>}
           </ReferenceReadSection>
         )}
+        </div>
       </article>
   );
   const readerPager = lesson && item && (
@@ -714,13 +734,16 @@ export function ReferenceLessons(props: Props) {
               ? ui("I-rotate ang device nang pahiga para mabasa ang nilalaman.", "Turn your device sideways to read the content.")
               : ui("I-rotate ang device nang patayo para mabasa ang nilalaman.", "Turn your device upright to read the content.")}
           </p>}
-          {readerOpen && lesson && item && <FittedLessonPage
+          {readerOpen && lesson && item && (storyLayout ? <div className="bhw111-presenter">
+            <div className="bhw111-presenter-content">{readerArticle}</div>
+            <div className="bhw111-presenter-pager">{readerPager}</div>
+          </div> : <FittedLessonPage
             key={`${lesson.id}:${mode}:${item.id}:${orientation}`}
             content={readerArticle}
             pager={readerPager}
             maxContentWidth={orientation === "portrait" ? 720 : 1800}
             en={en}
-          />}
+          />)}
           </div>
         </div>
       </dialog>
