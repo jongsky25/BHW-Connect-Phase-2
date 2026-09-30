@@ -24,7 +24,7 @@ Itanong sa grupo: *"Alalahanin ang huling health talk sa inyong barangay. Sino a
 3. **Yugto ng buhay.** Gamitin ang visual ng yugto ng buhay. Sa bawat yugto (tagapag-alaga ng sanggol, kabataan, buntis, nakatatanda), humingi sa grupo ng isang tanong na maaaring mayroon ang taong iyon. Ipakita na iba ang pag-uusap sa iisang paksa para sa bawat isa.
 4. **Bawat sektor.** Balikan ang listahan ng "sino ang wala." Itanong kung alin sa mga ito ang tinatawag ng aralin na sektor at yugto ng buhay.
 5. **Pumili ng oras, lugar, wika, at paraan.** Para sa isang grupong wala, ipabago sa grupo ang isang bagay — oras, lugar, wika, o paraan — na makatutulong para dumalo ang grupong iyon.
-6. **Self-check.** Ibigay ang sitwasyon ng check (puro magulang ang dumadalo) at hayaang mag-usap ang grupo bago ibigay ang sagot.
+6. **Self-check.** Ibigay ang sitwasyon ng check (nagsagawa si Marites ng talakayang pangkalusugan, ngunit mga magulang lamang ang dumalo) at hayaang mag-usap ang grupo bago ibigay ang sagot.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -42,7 +42,7 @@ Magkapares, pipili ang bawat BHW ng isang grupong bihirang maabot ng health talk
 
 ## [answer-key] Susi sa self-check
 
-- **"Puro magulang ang dumadalo. Paano mas maaabot ang kabataan?"** → **Iangkop ang oras at usapan sa tanong ng kabataan.** Hindi naaabot ang kabataan kung uulitin lang ang usapan sa mga magulang, at nilalampasan sila kung ipagpapalagay na sapat na ang alam nila. Paalalahanan ang grupo na panatilihing tama at aprubado ang impormasyon.
+- **"Nagsagawa si Marites ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?"** → **Tanungin ang mga kabataan kung kailan sila makakasali at iangkop ang talakayan sa kanilang mga tanong.** Hindi naaabot ang kabataan kung uulitin ang parehong talakayan sa parehong oras para sa mga magulang lamang. Hindi rin sila maaabot kung hindi sila aanyayahan. Paalalahanan ang grupo na panatilihing tama at aprubado ang impormasyon.
 
 ## [observe] Ano ang oobserbahan
 

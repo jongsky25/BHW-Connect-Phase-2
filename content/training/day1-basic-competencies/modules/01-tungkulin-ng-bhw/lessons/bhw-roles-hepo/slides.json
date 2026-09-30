@@ -7,8 +7,8 @@
     "layout": "scene",
     "heading_fil": "Isang umaga, maraming gawain",
     "heading_en": "One morning, many tasks",
-    "display_fil": "08:00 · Magturo\n10:00 · Mag-organisa\n11:00 · Gumabay\nPrimary care + health promotion: higit sa pagtulong sa serbisyo.",
-    "display_en": "08:00 · Educate\n10:00 · Organize\n11:00 · Guide\nPrimary care + health promotion: a role beyond service support.",
+    "display_fil": "08:00 · Magturo\n10:00 · Mag-organisa\n11:00 · Gumabay\nAng BHW ay nagtuturo, nag-oorganisa, at gumagabay sa serbisyo.",
+    "display_en": "08:00 · Educate\n10:00 · Organize\n11:00 · Guide\nA BHW teaches, organizes, and helps people reach services.",
     "asset_ids": [
       "A01"
     ],
@@ -37,8 +37,8 @@
     "layout": "relationship-map",
     "heading_fil": "HEPO: pagsusulong ng kalusugan",
     "heading_en": "HEPO: promoting health",
-    "display_fil": "Health Educator\nCommunity Organizer\nHealth Service Provider\nHEPO = Health Education and Promotion Officer. Magkakaugnay na gawain, hindi reporting hierarchy.",
-    "display_en": "Health Educator\nCommunity Organizer\nHealth Service Provider\nHEPO = Health Education and Promotion Officer. Connected tasks, not a reporting hierarchy.",
+    "display_fil": "Health Educator\nCommunity Organizer\nHealth Service Provider\nAng HEPO ay Health Education and Promotion Officer.",
+    "display_en": "Health Educator\nCommunity Organizer\nHealth Service Provider\nHEPO means Health Education and Promotion Officer.",
     "asset_ids": [
       "A02"
     ],
@@ -70,12 +70,12 @@
     "layout": "decision",
     "heading_fil": "Gamitin ang natutuhan",
     "heading_en": "Apply your learning",
-    "display_fil": "Isang BHW, tatlong magkakaugnay na papel, iisang layuning isulong ang kalusugan.",
-    "display_en": "One BHW, three connected roles, one aim: promoting health.",
+    "display_fil": "Maaaring pagsamahin ng BHW ang pagtuturo, pag-oorganisa, at serbisyo.",
+    "display_en": "A BHW can combine teaching, organizing, and service support.",
     "asset_ids": [],
     "check": {
-      "prompt_fil": "Nakipagplano si Marites sa mga residente para sa clean-up drive. Aling papel ang pinakakitang-kita?",
-      "prompt_en": "Marites plans a clean-up drive with residents. Which role is most visible?",
+      "prompt_fil": "Tinipon ni Marites ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?",
+      "prompt_en": "Marites brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?",
       "options": [
         {
           "fil": "Health Service Provider",

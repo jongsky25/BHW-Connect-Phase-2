@@ -4,7 +4,7 @@ At 8:00 a.m., BHW Marites leads a health discussion in the purok. At 10:00 a.m.,
 
 ## [prevention] Act with the community
 
-Services matter when people need them. Alongside this, the BHW teaches and encourages people to join health activities. In Marites’s clean-up drive, information is shared and residents help plan and act. Education, participation, and access to services are connected.
+When residents need care, the BHW helps them reach health services. The BHW also teaches and encourages people to join health activities. For Marites’s clean-up drive, she shares information and invites residents to plan and act with her. These tasks connect education, community participation, and access to services.
 
 ## [hepo] HEPO: promoting health
 
@@ -16,4 +16,4 @@ Marites needs adequate knowledge of the barangay’s priority health programs an
 
 ## [check] Apply your learning
 
-Marites plans a clean-up drive with residents. Which role is most visible?
+Marites brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?

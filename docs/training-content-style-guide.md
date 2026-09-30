@@ -295,6 +295,14 @@ just gets corrective feedback and the BHW moves on.
 - The feedback line (`>`) always explains *why* the correct answer is
   correct, not just "Tama!" alone — the explanation is what makes it a
   learning moment rather than a scorekeeping moment.
+- **Read each prompt by itself.** It must name who is acting, what happened,
+  and what decision the learner should make, even when it appears after a
+  scene or on a separate slide. Apply the same test to choices and feedback:
+  replace unclear pronouns and shorthand with the person or action meant.
+  Headings and diagram labels can be brief, but instructional sentences and
+  takeaways should express a complete thought in both languages. For example,
+  "Only parents attend" does not say what they attended; "Marites holds a
+  barangay health discussion, but only parents attend" does.
 
 ---
 
@@ -338,6 +346,8 @@ actually covers.
       takeaway, both `alt_text_*` filled in and different from the caption
 - [ ] At least one retrieval check, testing judgment not trivia, feedback
       explains why
+- [ ] Each Read prompt, Slide, takeaway, choice and feedback item makes sense
+      on its own in Filipino and English; any short label is clearly a label
 - [ ] Summary is written from the sections' takeaways and states the
       connecting idea — read it next to the objectives and confirm it is
       not just their tense flipped

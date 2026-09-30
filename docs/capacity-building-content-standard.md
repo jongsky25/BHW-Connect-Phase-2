@@ -160,6 +160,11 @@ Rules:
   context does not establish morning). A compact "08:00" is suitable for a
   slide timeline. Avoid "at eight" where a learner could read eight as a
   count rather than a clock time.
+- **L12.** Each instructional sentence and takeaway expresses a complete
+  thought. A slide or Read section must identify the person, action and
+  context needed to understand it without relying on the preceding screen.
+  Short headings, timeline entries and diagram labels remain acceptable when
+  their role as labels is clear. Review this in Filipino and English.
 
 ## 7. Checks (in-lesson, ungraded)
 
@@ -176,6 +181,10 @@ Rules:
   ("Correct" or "Not quite. Try again"), a distinct border and icon, and
   the explanatory feedback below it. Use the same treatment in Read and
   Slides, including presenter view; never rely on color alone.
+- **C6.** Read each question, choice and feedback item alone. The question
+  must state what happened and what the learner is deciding; choices and
+  feedback must name their subjects rather than relying on "it," "they,"
+  "ito" or "sila" when the referent is unclear.
 
 ## 8. Observation and competency
 

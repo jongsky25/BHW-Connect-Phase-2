@@ -4,7 +4,7 @@ Alas-otso, may talakayang pangkalusugan si BHW Marites sa purok. Alas-diyes, kau
 
 ## [prevention] Kumilos kasama ang komunidad
 
-Mahalaga ang serbisyo kapag kailangan ito. Kasabay nito, nagtuturo ang BHW at hinihikayat ang mga tao na makilahok sa mga gawaing pangkalusugan. Sa clean-up drive ni Marites, may kaalamang ibinabahagi at may mga residenteng kasamang nagpaplano at kumikilos. Magkaugnay ang edukasyon, pakikilahok, at paglapit sa serbisyo.
+Kapag nangangailangan ng pangangalaga ang mga residente, tinutulungan sila ng BHW na makalapit sa serbisyong pangkalusugan. Nagtuturo rin ang BHW at hinihikayat ang mga tao na makilahok sa mga gawaing pangkalusugan. Para sa paglilinis ng barangay, nagbabahagi si Marites ng impormasyon at inaanyayahan ang mga residente na makipagplano at kumilos. Magkaugnay sa mga gawaing ito ang edukasyon, pakikilahok ng komunidad, at paglapit sa serbisyo.
 
 ## [hepo] HEPO: pagsusulong ng kalusugan
 
@@ -16,4 +16,4 @@ Kailangan ni Marites ng sapat na kaalaman sa mga prayoridad na programa at probl
 
 ## [check] Gamitin ang natutuhan
 
-Nakipagplano si Marites sa mga residente para sa clean-up drive. Aling papel ang pinakakitang-kita?
+Tinipon ni Marites ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?
