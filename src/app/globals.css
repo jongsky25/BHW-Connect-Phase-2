@@ -335,6 +335,27 @@ body {
   }
 }
 
+/* Portrait tablets need the lesson text across the full reader width. */
+@container presenter (min-width: 701px) and (max-width: 900px) and (min-height: 700px) {
+  .reference-story-presenter-content .reference-story {
+    display: block;
+  }
+
+  .reference-story-presenter-content .reference-story-art {
+    height: clamp(12rem, 30cqw, 15rem);
+  }
+
+  .reference-story-presenter-content .reference-story-title,
+  .reference-story-presenter-content .reference-story-copy > h2.text-xl {
+    font-size: clamp(2.25rem, 4.6cqw, 3rem);
+  }
+
+  .reference-story-presenter-content .reference-story-line,
+  .reference-story-presenter-content .reference-story-copy > div.my-5.flex.flex-col.gap-4 {
+    font-size: clamp(1.25rem, 2.6cqw, 1.5rem);
+  }
+}
+
 @container presenter (max-height: 500px) {
   .reference-story-presenter-content .reference-story-copy {
     padding: 0.65rem;

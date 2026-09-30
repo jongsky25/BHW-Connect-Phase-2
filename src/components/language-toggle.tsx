@@ -10,8 +10,8 @@ function writeLocaleCookie(next: Locale) {
   document.cookie = `${localeCookieName}=${next}; path=/; max-age=31536000; samesite=lax`;
 }
 
-// `compact` keeps the label for screen readers only below `sm`, so the
-// signed-out header fits on one row at 320px.
+// `compact` keeps the label for screen readers only below `sm`, leaving
+// the signed-out phone header room for both language choices.
 export function LanguageToggle({signedIn=false,compact=false}:{signedIn?:boolean;compact?:boolean}) {
   const locale = useLocale();
   const t = useTranslations("common");

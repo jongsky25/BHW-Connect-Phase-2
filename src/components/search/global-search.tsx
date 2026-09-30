@@ -55,7 +55,7 @@ export function GlobalSearch() {
       aria-controls="global-search-panel" className="rounded-md border border-ink/20 px-3 py-2 text-sm font-medium text-ink hover:bg-ink/5">
       <span aria-hidden="true">⌕ </span>{t("button")}
     </button>
-    {open ? <div id="global-search-panel" className="fixed inset-x-3 top-20 z-50 rounded-xl border border-ink/20 bg-canvas p-3 shadow-xl sm:absolute sm:-left-64 sm:right-0 sm:top-full sm:mt-3 sm:w-96">
+    {open ? <div id="global-search-panel" className="fixed inset-x-3 top-28 z-50 rounded-xl border border-ink/20 bg-canvas p-3 shadow-xl sm:absolute sm:-left-64 sm:right-0 sm:top-full sm:mt-3 sm:w-96">
       <form action="/search" role="search" onSubmit={() => setOpen(false)}>
         <label htmlFor="global-search-query" className="sr-only">{t("label")}</label>
         <input ref={inputRef} id="global-search-query" name="q" type="search" autoComplete="off"

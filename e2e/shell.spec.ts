@@ -62,29 +62,37 @@ test("signing out from the header's user menu on a non-home page lands on /login
   await expect(page).toHaveURL("/login", { timeout: 10_000 });
 });
 
-// The header's two groups (app name / menu on the left, language toggle or
-// bell + avatar on the right) share one row, and the app name is one line.
-// Either wrapping is what made the header grow at 320px.
-async function expectSingleRowHeader(page: Page, who: string) {
+// At phone width, the brand and drawer form the first row. Language or
+// account actions form the second row without clipping or wrapping the name.
+async function expectPhoneHeaderFit(page: Page, who: string) {
   const layout = await page.evaluate(() => {
     const row = document.querySelector("header > div")!;
     const [left, right] = Array.from(row.children).map((el) => el.getBoundingClientRect());
     const name = row.querySelector(":scope > div > a")!.getBoundingClientRect();
+    const clipped = Array.from(row.querySelectorAll("a, button"))
+      .filter((el) => el.getClientRects().length > 0)
+      .some((el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.left < -1 || rect.right > innerWidth + 1;
+      });
     return {
-      centerGap: Math.abs(left.top + left.height / 2 - (right.top + right.height / 2)),
+      rowGap: right.top - left.bottom,
       nameHeight: name.height,
       nameLineHeight: parseFloat(getComputedStyle(row.querySelector(":scope > div > a")!).lineHeight),
+      clipped,
     };
   });
-  expect(layout.centerGap, `${who}: header groups wrapped onto separate rows`).toBeLessThan(2);
+  expect(layout.rowGap, `${who}: action row overlaps the brand`).toBeGreaterThanOrEqual(-1);
+  expect(layout.rowGap, `${who}: action row is too far below the brand`).toBeLessThan(20);
   expect(layout.nameHeight, `${who}: app name wrapped onto two lines`).toBeLessThanOrEqual(layout.nameLineHeight + 1);
+  expect(layout.clipped, `${who}: a header control is clipped`).toBe(false);
 }
 
-test("the header stays a single row at a 320px viewport, for a visitor and every role", async ({ page, browser }) => {
+test("the header fits at a 320px viewport, for a visitor and every role", async ({ page, browser }) => {
   await page.setViewportSize({ width: 320, height: 640 });
 
   await page.goto("/");
-  await expectSingleRowHeader(page, "visitor (fil)");
+  await expectPhoneHeaderFit(page, "visitor (fil)");
 
   // English's "Language" label is longer than "Wika".
   const enContext = await browser.newContext({ viewport: { width: 320, height: 640 } });
@@ -92,7 +100,7 @@ test("the header stays a single row at a 320px viewport, for a visitor and every
   const enPage = await enContext.newPage();
   await enPage.goto("/");
   await expect(enPage.locator("html")).toHaveAttribute("lang", "en");
-  await expectSingleRowHeader(enPage, "visitor (en)");
+  await expectPhoneHeaderFit(enPage, "visitor (en)");
   await enContext.close();
 
   await page.goto("/login");
@@ -100,7 +108,7 @@ test("the header stays a single row at a 320px viewport, for a visitor and every
   await page.getByLabel("Password").fill(STABLE_BHW.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
-  await expectSingleRowHeader(page, "bhw");
+  await expectPhoneHeaderFit(page, "bhw");
   const bhwHeight = await page.locator("header").boundingBox().then((box) => box?.height);
 
   // /home has its own inline sign-out action too, so go to a page without
@@ -114,7 +122,7 @@ test("the header stays a single row at a 320px viewport, for a visitor and every
   await page.getByLabel("Password").fill(STABLE_ADMIN.password);
   await page.getByRole("button", { name: "Mag-login" }).click();
   await expect(page).toHaveURL("/home", { timeout: 10_000 });
-  await expectSingleRowHeader(page, "admin");
+  await expectPhoneHeaderFit(page, "admin");
   const adminHeight = await page.locator("header").boundingBox().then((box) => box?.height);
 
   expect(adminHeight).toBe(bhwHeight);
