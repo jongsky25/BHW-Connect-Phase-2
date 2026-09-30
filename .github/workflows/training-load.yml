@@ -17,7 +17,7 @@ on:
       org_unit:
         description: "Org unit name"
         required: true
-        default: "Los Baños"
+        default: "Department of Health"
         type: string
       apply:
         description: "Write (true) or dry run (false)"
