@@ -271,6 +271,26 @@ body {
   border-top: 1px solid color-mix(in srgb, var(--color-ink) 18%, transparent);
 }
 
+.lesson-reader-surface {
+  container: lesson-reader / inline-size;
+}
+
+@container lesson-reader (min-width: 500px) {
+  .lesson-reader-toolbar {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    padding-inline: 1.5rem;
+  }
+
+  .lesson-reader-orientation {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .lesson-reader-close {
+    grid-column: 3;
+  }
+}
+
 @media (max-width: 700px) {
   .reference-story {
     display: block;
