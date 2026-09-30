@@ -22,7 +22,7 @@ describe('route lesson viewer',()=>{
       const {container}=render(<ReferenceLessons {...roleLesson} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
       fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
       const dialog=container.querySelector('dialog')!;
-      expect(dialog.querySelector('.bhw111-presenter .bhw111-story')).toBeInTheDocument();
+      expect(dialog.querySelector('.reference-story-presenter .reference-story')).toBeInTheDocument();
       expect(within(dialog).getByRole('img',{name:/BHW Marites talks with residents/})).toBeInTheDocument();
       expect(within(dialog).getByText('Short content')).toBeInTheDocument();
       expect(dialog.querySelector('[data-reader-viewport]')).not.toBeInTheDocument();
@@ -31,6 +31,27 @@ describe('route lesson viewer',()=>{
       expect(within(dialog).getByRole('heading',{name:'second'})).toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
       expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
+    } finally {
+      HTMLDialogElement.prototype.showModal = showModal;
+      HTMLDialogElement.prototype.close = close;
+    }
+  });
+  it('reflows Lesson 1.1.2 with its own illustration in Read and Slides',()=>{
+    const showModal = HTMLDialogElement.prototype.showModal;
+    const close = HTMLDialogElement.prototype.close;
+    HTMLDialogElement.prototype.showModal = function () {this.setAttribute('open','');};
+    HTMLDialogElement.prototype.close = function () {this.removeAttribute('open');};
+    const educatorLesson = {...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-health-educator'}))};
+    try {
+      const {container}=render(<ReferenceLessons {...educatorLesson} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+      fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
+      const dialog=container.querySelector('dialog')!;
+      expect(dialog.querySelector('.reference-story[data-lesson="bhw-health-educator"]')).toBeInTheDocument();
+      expect(within(dialog).getByRole('img',{name:/A BHW listens to a young person/})).toBeInTheDocument();
+      expect(dialog.querySelector('[data-reader-viewport]')).not.toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
+      expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
+      expect(dialog.querySelector('.reference-story[data-lesson="bhw-health-educator"]')).toBeInTheDocument();
     } finally {
       HTMLDialogElement.prototype.showModal = showModal;
       HTMLDialogElement.prototype.close = close;
