@@ -26,6 +26,17 @@ import { FittedLessonPage } from "./fitted-lesson-page";
 type ResumeValue = Omit<CourseLessonResume, "course_progress_id" | "updated_at">;
 const RESUME_SAVE_DELAY_MS = 3000;
 
+// The pilot database still has the first published wording. Render its
+// explicit clock times while the new authored revision awaits a national
+// course publisher. Once that revision is published, this is a no-op.
+function clarifyMorningTimes(body: string) {
+  if (!body.startsWith("At eight, BHW Marites")) return body;
+  return body
+    .replace("At eight,", "At 8:00 a.m.,")
+    .replace("At ten,", "At 10:00 a.m.,")
+    .replace("At eleven,", "At 11:00 a.m.,");
+}
+
 export type ReferenceData = {
   title_fil: string;
   title_en: string;
@@ -135,8 +146,8 @@ export function ReferenceLessons(props: Props) {
   const resumeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const flushResumeRef = useRef<() => Promise<void>>(() => writes.current);
   const lesson = lessons.find((l) => l.id === selected);
-  // Pilot the new story composition on 1.1.1 only. All instructional words,
-  // checks, audio and saved positions still come from its published revision.
+  // Pilot the new story composition on 1.1.1 only. The clock wording above
+  // is the only display correction to the published Read text.
   const storyLayout = lesson?.lesson_key === "bhw-roles-hepo";
   const items = lesson
     ? mode === "read"
@@ -416,7 +427,7 @@ export function ReferenceLessons(props: Props) {
           <ReferenceReadSection
             key={lesson.id + item.id + props.locale}
             heading={en ? item.heading_en : item.heading_fil}
-            body={en ? item.body_en : item.body_fil}
+            body={en ? (storyLayout && item.id === "morning" ? clarifyMorningTimes(item.body_en) : item.body_en) : item.body_fil}
             takeaway={revealSummary ? ((en ? item.takeaway_en : item.takeaway_fil) ?? "") : ""}
             narration={revealSummary ? props.narration?.[lesson.id]?.[item.id] : undefined}
             en={en}

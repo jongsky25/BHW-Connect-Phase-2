@@ -6,6 +6,12 @@ afterEach(cleanup);
 const part=(id:string)=>({id,concept_ids:['concept'],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Short content',body_fil:'Maikling aralin',check:null});
 const data={title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Lesson',title_en:'Lesson',objectives_fil:['Layunin'],objectives_en:['Objective'],revision:{id:'revision',read_sections:[part('first'),part('second')],slides:[{...part('slide'),display_en:'Slide content',display_fil:'Slide',layout:'scene'}],assets:[],sources:[]}}]} as unknown as ReferenceData;
 describe('route lesson viewer',()=>{
+  it('shows explicit clock times for the pilot morning story until its new revision is published',()=>{
+    const old='At eight, BHW Marites leads a discussion. At ten, she meets a council member. At eleven, she calls the midwife.';
+    const roleLesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-roles-hepo',revision:{...l.revision,read_sections:[{...part('morning'),body_en:old}]}}))} as unknown as ReferenceData;
+    render(<ReferenceLessons {...roleLesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(screen.getByText('At 8:00 a.m., BHW Marites leads a discussion. At 10:00 a.m., she meets a council member. At 11:00 a.m., she calls the midwife.')).toBeInTheDocument();
+  });
   it('reflows Lesson 1.1.1 in the presenter while keeping published text and paging',()=>{
     const showModal = HTMLDialogElement.prototype.showModal;
     const close = HTMLDialogElement.prototype.close;
