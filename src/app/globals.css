@@ -225,41 +225,44 @@ body {
   min-height: 0;
   flex: 1;
   flex-direction: column;
+  container: presenter / size;
 }
 
 .reference-story-presenter-content {
-  display: flex;
   min-height: 0;
   flex: 1;
+  container-type: inline-size;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
 .reference-story-presenter-content .reference-story {
-  flex: 1;
+  width: 100%;
   min-height: 100%;
   border-radius: 0;
+  overflow: visible;
 }
 
 .reference-story-presenter .reference-story-copy {
-  padding: clamp(1.5rem, 3.8vw, 4rem);
+  padding: clamp(1rem, 3cqw, 4rem);
 }
 
 .reference-story-presenter .reference-story-title,
 .reference-story-presenter .reference-story-copy > h2.text-xl {
-  font-size: clamp(2.8rem, 4vw, 5rem);
+  font-size: clamp(2rem, 4cqw, 5rem);
 }
 
 .reference-story-presenter .reference-story-line,
 .reference-story-presenter .reference-story-copy > div.my-5.flex.flex-col.gap-4 {
-  font-size: clamp(1.5rem, 2vw, 2.4rem);
+  font-size: clamp(1.125rem, 2cqw, 2.4rem);
 }
 
 .reference-story-presenter .reference-story-copy fieldset legend {
-  font-size: clamp(1.4rem, 2vw, 2.2rem);
+  font-size: clamp(1.125rem, 2cqw, 2.2rem);
 }
 
 .reference-story-presenter .reference-story-copy fieldset button {
-  font-size: clamp(1.25rem, 1.6vw, 1.8rem);
+  font-size: clamp(1rem, 1.6cqw, 1.8rem);
 }
 
 .reference-story-presenter-pager {
@@ -281,13 +284,73 @@ body {
   .reference-story-copy {
     padding: 1.5rem;
   }
+}
 
+/* Full-screen layouts follow the reader's width, including rotated surfaces. */
+@container (max-width: 700px) {
   .reference-story-presenter-content .reference-story {
-    min-height: max-content;
+    display: block;
   }
 
-  .reference-story-presenter .reference-story-copy {
-    padding: 1.5rem;
+  .reference-story-presenter-content .reference-story-art {
+    min-height: 0;
+    height: clamp(8rem, 35cqw, 15rem);
+    aspect-ratio: auto;
+  }
+
+  .reference-story-presenter-content .reference-story-copy {
+    padding: clamp(1rem, 4cqw, 1.5rem);
+  }
+}
+
+@container (min-width: 701px) {
+  .reference-story-presenter-content .reference-story {
+    display: grid;
+  }
+
+  .reference-story-presenter-content .reference-story-art {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+  }
+}
+
+@container presenter (max-height: 500px) {
+  .reference-story-presenter-content .reference-story {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  }
+
+  .reference-story-presenter-content .reference-story-art {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  .reference-story-presenter-content .reference-story-copy {
+    padding: 0.65rem;
+  }
+
+  .reference-story-presenter-content .reference-story-title {
+    font-size: clamp(1.75rem, 3cqw, 2.25rem);
+  }
+
+  .reference-story-presenter-content .reference-story-lines {
+    gap: 0.15rem;
+    margin-block: 0.25rem;
+  }
+
+  .reference-story-presenter-content .reference-story-line {
+    padding-block: 0.1rem;
+    line-height: 1.22;
+  }
+
+  .reference-story-presenter-pager {
+    padding: 0.35rem 1rem;
+  }
+
+  .reference-story-presenter-pager button {
+    padding: 0.5rem;
   }
 }
 
