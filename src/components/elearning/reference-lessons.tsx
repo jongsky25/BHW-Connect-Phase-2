@@ -74,16 +74,20 @@ function Practice({ check, en, answer, onAnswer }: { check: LessonCheck; en: boo
         ))}
       </div>
       {answer !== undefined && (
-        <p role="status" className="mt-3">
-          {answer === check.correct_option_index
-            ? en
-              ? "Correct. "
-              : "Tama. "
-            : en
-              ? "Try again. "
-              : "Subukang muli. "}
-          {en ? check.feedback_en : check.feedback_fil}
-        </p>
+        <div
+          role="status"
+          aria-live="polite"
+          className="reference-check-feedback"
+          data-result={answer === check.correct_option_index ? "correct" : "incorrect"}
+        >
+          <strong className="reference-check-feedback-label">
+            <span aria-hidden="true">{answer === check.correct_option_index ? "✓" : "↺"}</span>{" "}
+            {answer === check.correct_option_index
+              ? en ? "Correct!" : "Tama!"
+              : en ? "Not quite. Try again." : "Hindi pa tama. Subukang muli."}
+          </strong>
+          <p className="reference-check-feedback-detail">{en ? check.feedback_en : check.feedback_fil}</p>
+        </div>
       )}
     </fieldset>
   );

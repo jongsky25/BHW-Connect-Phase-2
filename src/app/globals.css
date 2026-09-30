@@ -28,6 +28,45 @@ body {
   color: var(--color-ink);
 }
 
+/* Shared feedback treatment for Reference Manual checks in Read and Slides. */
+.reference-check-feedback {
+  margin-top: 1rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 2px solid var(--color-success);
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, var(--color-success) 12%, var(--color-canvas));
+}
+
+.reference-check-feedback[data-result="incorrect"] {
+  border-color: var(--color-danger);
+  background: color-mix(in srgb, var(--color-danger) 12%, var(--color-canvas));
+}
+
+.reference-check-feedback-label {
+  display: block;
+  color: var(--color-success);
+  font-size: clamp(1.5rem, 2vw, 2.15rem);
+  line-height: 1.2;
+}
+
+.reference-check-feedback[data-result="incorrect"] .reference-check-feedback-label {
+  color: var(--color-danger);
+}
+
+.reference-check-feedback-detail {
+  margin-top: 0.5rem;
+  font-size: clamp(1rem, 1.25vw, 1.3rem);
+  line-height: 1.45;
+}
+
+.bhw111-presenter .reference-check-feedback-label {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.bhw111-presenter .reference-check-feedback-detail {
+  font-size: clamp(1.25rem, 1.7vw, 1.8rem);
+}
+
 /* Lesson 1.1.1 story layout. Text remains native size in the presenter;
    long sections scroll within their content area instead of scaling down. */
 .bhw111-story {
