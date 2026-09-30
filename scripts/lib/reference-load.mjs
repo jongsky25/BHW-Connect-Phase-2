@@ -25,8 +25,10 @@ export async function planReferenceLoad(
   client,
   modules,
   lock,
-  { orgUnitId, promote = false } = {},
+  { orgUnitId, promote = false, lessonKeys = null } = {},
 ) {
+  if (lessonKeys && modules.length !== 1)
+    throw new Error("Scoped lesson load requires exactly one subchapter");
   const courseId = requireId(lock.course, "course UUID");
   const [course] = await client.get(
     `courses?select=id,org_unit_id&id=eq.${courseId}`,
@@ -37,6 +39,8 @@ export async function planReferenceLoad(
     );
   const plan = [];
   for (const mod of modules) {
+    if (lessonKeys?.some((key) => !mod.lessons.some((lesson) => lesson.manifest.lesson_key === key)))
+      throw new Error("Selected lesson key is not in the selected subchapter");
     const moduleId = requireId(lock.modules?.[mod.module_key], mod.module_key);
     const [existingModule] = await client.get(
       `course_modules?select=id,course_id&id=eq.${moduleId}`,
@@ -57,7 +61,16 @@ export async function planReferenceLoad(
         "Selected subchapter omits existing lessons; reconcile instead of deleting",
       );
     const entries = [];
+    const retainedPublishedRevisionIds = [];
     for (const lesson of mod.lessons) {
+      if (lessonKeys && !lessonKeys.includes(lesson.manifest.lesson_key)) {
+        const found = existing.find((l) => l.lesson_key === lesson.manifest.lesson_key);
+        const locked = lock.lessons?.[mod.module_key]?.[lesson.manifest.lesson_key];
+        if (!found?.published_revision_id || (locked && locked !== found.id))
+          throw new Error("Scoped publication requires every other lesson to have a reconciled published revision");
+        retainedPublishedRevisionIds.push(found.published_revision_id);
+        continue;
+      }
       validateReferenceLesson(lesson);
       if (
         promote &&
@@ -121,14 +134,15 @@ export async function planReferenceLoad(
               : "unchanged",
       });
     }
-    plan.push({ module_key: mod.module_key, moduleId, entries, promote });
+    plan.push({ module_key: mod.module_key, moduleId, entries, retainedPublishedRevisionIds, promote });
   }
   return plan;
 }
 export function referenceReport(plan) {
   return plan.map((m) => ({
     module: m.module_key,
-    promotion: m.promote ? "complete selected subchapter" : "none",
+    promotion: m.promote ? (m.retainedPublishedRevisionIds.length ? "selected lessons; retain other published revisions" : "complete selected subchapter") : "none",
+    retained_published_lessons: m.retainedPublishedRevisionIds.length,
     lessons: m.entries.map((e) => ({
       key: e.lesson.manifest.lesson_key,
       action: e.action,
@@ -146,7 +160,7 @@ export async function applyReferenceLoad(
   saveLock = () => {},
 ) {
   for (const mod of plan) {
-    const revisionIds = [];
+    const revisionIds = [...mod.retainedPublishedRevisionIds];
     for (const e of mod.entries) {
       const lesson =
         e.existing ??
@@ -181,7 +195,7 @@ export async function applyReferenceLoad(
     if (
       mod.promote &&
       mod.entries.some(
-        (e, i) => e.existing?.published_revision_id !== revisionIds[i],
+        (e, i) => e.existing?.published_revision_id !== revisionIds[mod.retainedPublishedRevisionIds.length + i],
       )
     )
       await client.rpc("rpc_course_lessons_publish", {

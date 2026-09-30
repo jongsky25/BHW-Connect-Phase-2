@@ -466,6 +466,12 @@ npm run training:load -- --project <ref> --org-unit "<org unit name>" --modules 
 - `--modules <id,id,...>` limits a run to specific module content ids
   (matching the folder name), for iterating on one module without touching
   the rest of the course.
+- In `--mode lessons`, `--lesson-keys <key,key,...>` narrows a run to those
+  lessons in one selected module. The loader stages only the selected lessons.
+  When publishing, it passes their new revisions together with the current
+  published revision IDs of all other lessons in the subchapter. It refuses
+  the run if any other lesson is not already published. Omit this flag only
+  when the whole selected subchapter is intended for staging or publication.
 - Re-running with `--apply` is idempotent: every row is identified through
   `locks/<ref>.json` (course and module ids) or the database's own unique
   constraints (`course_module_visuals(module_id, position)`,

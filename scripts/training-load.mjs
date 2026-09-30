@@ -10,6 +10,7 @@
 //   npm run training:load -- --project <ref> --org-unit "<org unit name>" --apply
 //   npm run training:load -- --project <ref> --org-unit "<org unit name>" --apply --publish --owner <admin-username>
 //   npm run training:load -- --project <ref> --org-unit "<org unit name>" --modules 01-tungkulin-ng-bhw --apply
+//   npm run training:load -- --mode lessons --modules 01-tungkulin-ng-bhw --lesson-keys bhw-roles-hepo --project <ref> --org-unit "<org unit name>" --apply --publish
 //
 // Env: KB_LOADER_ANON_KEY (or NEXT_PUBLIC_SUPABASE_ANON_KEY),
 //      KB_LOADER_USERNAME, KB_LOADER_PASSWORD — an admin account on that project
@@ -47,6 +48,7 @@ function parseArgs(argv) {
     owner: null,
     course: DEFAULT_COURSE,
     modules: null,
+    lessonKeys: null,
     mode: null,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -60,6 +62,7 @@ function parseArgs(argv) {
     else if (arg === "--course") args.course = argv[++i];
     else if (arg === "--mode") args.mode = argv[++i];
     else if (arg === "--modules") args.modules = argv[++i].split(",").map((m) => m.trim());
+    else if (arg === "--lesson-keys") args.lessonKeys = argv[++i].split(",").map((key) => key.trim());
     else throw new Error(`unknown argument: ${arg}`);
   }
   if (!args.project) throw new Error("--project <supabase-project-ref> is required");
@@ -67,6 +70,7 @@ function parseArgs(argv) {
   if (!/^[a-z0-9-]+$/.test(args.course) || !/^[a-z0-9-]+$/.test(args.project)) throw new Error('invalid course/project key');
   if (args.modules?.some(m => !/^[a-z0-9-]+$/.test(m))) throw new Error('invalid module key');
   if (args.modules && new Set(args.modules).size!==args.modules.length)throw new Error('duplicate selected module');
+  if (args.lessonKeys && (args.mode !== 'lessons' || args.modules?.length !== 1 || args.lessonKeys.some(key => !/^[a-z0-9-]+$/.test(key)) || new Set(args.lessonKeys).size !== args.lessonKeys.length)) throw new Error('--lesson-keys requires lessons mode, one module, and unique valid lesson keys');
   if (['content','lessons','activities'].includes(args.mode) && !args.modules?.length) throw new Error('selected content requires --modules');
   if (args.publish && !['course','lessons','kb'].includes(args.mode)) throw new Error('publication is not supported for this mode');
   if (!args.orgUnit) throw new Error('--org-unit "<org unit name>" is required — see content/training/README.md');
@@ -383,7 +387,7 @@ async function main() {
     return;
   }
   if (referenceModules) {
-    const referencePlan = await planReferenceLoad(client,referenceModules,lock,{orgUnitId,promote:args.publish});
+    const referencePlan = await planReferenceLoad(client,referenceModules,lock,{orgUnitId,promote:args.publish,lessonKeys:args.lessonKeys});
     console.log(JSON.stringify(referenceReport(referencePlan),null,2));
     if(args.apply) await applyReferenceLoad(client,referencePlan,lock,authorUserId,()=>writeLock(args.course,args.project,lock));
     return;
