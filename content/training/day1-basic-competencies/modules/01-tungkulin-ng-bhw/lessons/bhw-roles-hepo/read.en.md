@@ -1,6 +1,6 @@
 ## [morning] One morning, many tasks
 
-At eight, BHW Marites leads a health discussion in the purok. At ten, she talks with the council member about a clean-up drive. At eleven, she helps Aling Nena contact the midwife about her child’s needs. One BHW does all three. The curriculum describes UHC as strengthening primary care and health promotion, so the role extends beyond service support.
+At 8:00 a.m., BHW Marites leads a health discussion in the purok. At 10:00 a.m., she talks with the council member about a clean-up drive. At 11:00 a.m., she helps Aling Nena contact the midwife about her child’s needs. One BHW does all three. The curriculum describes UHC as strengthening primary care and health promotion, so the role extends beyond service support.
 
 ## [prevention] Act with the community
 

@@ -9,6 +9,22 @@ function data():ReferenceData{return {title_fil:'Manual',title_en:'Manual',chapt
 const button=()=>screen.getByRole('button',{name:'Mark lesson complete'});
 function view(d=data(),complete=vi.fn().mockResolvedValue(undefined),extra={}) {return render(<ReferenceLessons {...d} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" nextLessonHref="/lessons/next" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={complete} {...extra}/>);}
 describe('formative lesson completion',()=>{
+  it('shows prominent, explicit feedback after a choice in Read and Slides',()=>{
+    view();
+    fireEvent.click(screen.getByRole('button',{name:'Guess'}));
+    let status=screen.getByRole('status');
+    expect(status).toHaveAttribute('data-result','incorrect');
+    expect(status).toHaveTextContent('Not quite. Try again.');
+    expect(status).toHaveTextContent('Ask the team.');
+    fireEvent.click(screen.getByRole('button',{name:'Ask'}));
+    status=screen.getByRole('status');
+    expect(status).toHaveAttribute('data-result','correct');
+    expect(status).toHaveTextContent('Correct!');
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+    fireEvent.click(screen.getByRole('button',{name:'Next'}));
+    fireEvent.click(screen.getByRole('button',{name:'Guess'}));
+    expect(screen.getByRole('status')).toHaveAttribute('data-result','incorrect');
+  });
   it('requires the end and every check, keeps an attempted wrong answer, and saves before offering continuation',async()=>{
     const complete=vi.fn().mockResolvedValue(undefined);view(data(),complete);
     expect(button()).toBeDisabled();expect(screen.queryByText('Takeaway first')).not.toBeInTheDocument();

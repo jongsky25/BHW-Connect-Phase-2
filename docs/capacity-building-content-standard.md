@@ -155,6 +155,11 @@ Rules:
   reveal).
 - **L10 [auto].** The self-study time estimate is computed from the content
   and narration, never hard-coded.
+- **L11.** When a scene names a time of day, write it explicitly: "8:00 a.m."
+  in English Read text or "alas-otso" in Filipino (add "ng umaga" when the
+  context does not establish morning). A compact "08:00" is suitable for a
+  slide timeline. Avoid "at eight" where a learner could read eight as a
+  count rather than a clock time.
 
 ## 7. Checks (in-lesson, ungraded)
 
@@ -167,6 +172,10 @@ Rules:
   wrong. Feedback strings repeated across lessons are rejected.
 - **C4.** A check tests the scene's decision point, not trivia (not
   acronyms, numbers or dates unless the job needs them).
+- **C5.** After a learner chooses an answer, show a large, written result
+  ("Correct" or "Not quite. Try again"), a distinct border and icon, and
+  the explanatory feedback below it. Use the same treatment in Read and
+  Slides, including presenter view; never rely on color alone.
 
 ## 8. Observation and competency
 
