@@ -14,6 +14,7 @@
 //   npm run training:narrate -- --apply               # render missing/stale audio
 //   npm run training:narrate -- --chapter 1 --provider gemini --apply
 //   npm run training:narrate -- --modules 01-tungkulin-ng-bhw --lessons bhw-roles-hepo --languages fil --provider gemini --apply
+//   npm run training:narrate -- --modules 01-tungkulin-ng-bhw --lessons bhw-roles-hepo --sections check --provider edge --apply
 //
 // Providers (--provider edge|gemini):
 //   edge   — fil-PH-BlessicaNeural (Filipino), en-PH-RosaNeural (Philippine
@@ -55,7 +56,7 @@ const publicRoot = path.join(root, "public");
 const manifestPath = path.join(root, NARRATION_MANIFEST);
 
 function parseArgs(argv) {
-  const args = { apply: false, modules: null, chapter: null, lessons: null, languages: null, provider: null, maxRequests: 1200, concurrency: 3 };
+  const args = { apply: false, modules: null, chapter: null, lessons: null, sections: null, languages: null, provider: null, maxRequests: 1200, concurrency: 3 };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
@@ -63,6 +64,7 @@ function parseArgs(argv) {
     else if (arg === "--modules") args.modules = argv[++i].split(",").map((m) => m.trim());
     else if (arg === "--chapter") args.chapter = argv[++i];
     else if (arg === "--lessons") args.lessons = argv[++i].split(",").map((m) => m.trim());
+    else if (arg === "--sections") args.sections = argv[++i].split(",").map((m) => m.trim());
     else if (arg === "--languages") args.languages = argv[++i].split(",").map((m) => m.trim());
     else if (arg === "--provider") args.provider = argv[++i];
     else if (arg === "--max-requests") args.maxRequests = Math.max(0, Number(argv[++i]) || 0);
@@ -99,9 +101,9 @@ async function main() {
   const modules = keys.map((key) => ({ key, lessons: loadReferenceModule(path.join(root, converted.get(key)), publicRoot).lessons }));
   const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, "utf8")) : { lessons: {} };
   const items = planReferenceNarration(modules, manifest, fileHash, { provider: args.provider ?? undefined });
-  // --lessons / --languages narrow what is rendered; everything else in the
+  // --lessons / --sections / --languages narrow what is rendered; everything else in the
   // processed subchapters keeps its current audio.
-  const selected = (i) => (!args.lessons || args.lessons.includes(i.lessonKey)) && (!args.languages || args.languages.includes(i.language));
+  const selected = (i) => (!args.lessons || args.lessons.includes(i.lessonKey)) && (!args.sections || args.sections.includes(i.sectionId)) && (!args.languages || args.languages.includes(i.language));
   const toRender = items.filter((i) => i.action === "render" && selected(i));
   const geminiRequests = toRender.filter((i) => i.provider === "gemini").reduce((n, i) => n + i.zones.length, 0);
 

@@ -1,14 +1,14 @@
 ## [educator-scene] Magsimula sa kausap
 
-Sa talakayan ni Marites, hindi sapat na basahin lang ang poster. Inaalam niya muna kung ano ang tanong ng mga residente, saka nagbibigay ng malinaw na paliwanag. Bilang Health Educator, tinutulungan niyang magkaroon ng kaalaman ang mga tao para mapangalagaan ang kanilang katawan at kapaligiran.
+Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni Marites ang poster. Inaalam niya muna ang mga tanong ng mga residente, saka nagbibigay ng malinaw na paliwanag. Bilang Health Educator, tinutulungan niya ang mga tao na matutuhan kung paano pangalagaan ang kanilang katawan at panatilihing malinis ang paligid.
 
 ## [body-environment] Katawan at kapaligiran
 
-Kasama sa edukasyong pangkalusugan ang katawan at ang kapaligiran nito. Maaaring pag-usapan ang paglapit sa serbisyong pangkalusugan at ang kalinisan ng paligid, gamit ang materyal na aprubado ng health team. Ang araling ito ay tungkol sa pagpili ng paksa at kausap; ang detalyadong payong pangkalusugan ay nasa kaukulang pagsasanay.
+Maaaring talakayin sa edukasyong pangkalusugan ang pangangalaga sa katawan at ang kalinisan ng paligid. Maaari ring ipaliwanag ni Marites kung paano makalalapit ang mga residente sa serbisyong pangkalusugan. Gumagamit siya ng materyal na aprubado ng health team. Sa araling ito, nakatuon siya sa pagpili ng paksa at kausap; ang detalyadong payong pangkalusugan ay nasa kaukulang pagsasanay.
 
 ## [life-stages] Iba ang pangangailangan sa bawat yugto
 
-Patuloy ang pagtuturo sa bawat yugto ng buhay. Iba ang mga tanong ng tagapag-alaga ng sanggol, kabataan, buntis, at nakatatanda. Kailangang iangkop ang usapan tungkol sa mga sakit, aksidente, at panganib na kaugnay ng kanilang yugto. Halimbawa, iba ang konteksto ng pag-uusap sa kabataan kaysa sa tagapag-alaga ng sanggol.
+Iniaangkop ng BHW ang edukasyong pangkalusugan sa iba’t ibang yugto ng buhay. Maaaring magkakaiba ang tanong ng tagapag-alaga ng sanggol, kabataan, buntis, at nakatatanda. Dapat umangkop sa yugto ng buhay ng kausap ang usapan tungkol sa sakit, aksidente, at panganib. Halimbawa, maaaring magkaiba ang itanong ng kabataan at ng tagapag-alaga ng sanggol tungkol sa panganib sa kalusugan.
 
 ## [all-sectors] Abutin ang bawat sektor
 
@@ -16,4 +16,4 @@ Hindi lamang ang mga dumadalo na sa health talk ang kailangang maabot. Pag-isipa
 
 ## [check] Gamitin ang natutuhan
 
-Puro magulang ang dumadalo. Paano mas maaabot ang kabataan?
+Nagsagawa si Marites ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?

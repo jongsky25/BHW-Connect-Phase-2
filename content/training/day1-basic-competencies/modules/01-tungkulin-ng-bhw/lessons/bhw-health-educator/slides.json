@@ -52,8 +52,8 @@
     "layout": "comparison",
     "heading_fil": "Abutin ang bawat sektor",
     "heading_en": "Reach every community group",
-    "display_fil": "Sino ang hindi pa naaabot?\nAnong paraan ang angkop?\nImpormasyon, kaalaman, at pagsasanay para sa bawat sektor.",
-    "display_en": "Who is not yet reached?\nWhat approach will work?\nInformation, knowledge, and training for every community group.",
+    "display_fil": "Sino ang hindi pa naaabot?\nAnong paraan ang angkop?\nDapat maabot ng edukasyong pangkalusugan ang bawat sektor.",
+    "display_en": "Who is not yet reached?\nWhat approach will work?\nA BHW should make learning possible for every community group.",
     "asset_ids": [
       "A03"
     ],
@@ -69,24 +69,24 @@
     "layout": "decision",
     "heading_fil": "Gamitin ang natutuhan",
     "heading_en": "Apply your learning",
-    "display_fil": "Mabisang pagtuturo: tamang paksa, angkop na paraan, at pagkakataon para sa lahat.",
-    "display_en": "Effective education connects the right topic and approach with opportunities for everyone.",
+    "display_fil": "Ang mabisang pagtuturo ay angkop sa kausap at bukas sa lahat.",
+    "display_en": "Good teaching fits its audience and invites everyone to take part.",
     "asset_ids": [],
     "check": {
-      "prompt_fil": "Puro magulang ang dumadalo. Paano mas maaabot ang kabataan?",
-      "prompt_en": "Only parents attend. How can you better reach young people?",
+      "prompt_fil": "Nagsagawa si Marites ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?",
+      "prompt_en": "Marites holds a barangay health discussion, but only parents attend. What could she change to help young people take part?",
       "options": [
         {
-          "fil": "Iangkop ang oras at usapan sa tanong ng kabataan.",
-          "en": "Adapt the time and discussion to young people’s questions."
+          "fil": "Tanungin ang mga kabataan kung kailan sila makakasali at iangkop ang talakayan sa kanilang mga tanong.",
+          "en": "Ask young people when they can join and adapt the discussion to their questions."
         },
         {
-          "fil": "Ulitin ang parehong usapan sa mga magulang lamang.",
-          "en": "Repeat the same discussion with parents only."
+          "fil": "Ulitin ang parehong talakayan sa parehong oras para sa mga magulang lamang.",
+          "en": "Repeat the same discussion at the same time for parents only."
         },
         {
-          "fil": "Ipagpalagay na sapat nang alam nila.",
-          "en": "Assume they already know enough."
+          "fil": "Huwag nang anyayahan ang mga kabataan dahil sapat na ang alam nila.",
+          "en": "Do not invite young people because they already know enough."
         }
       ],
       "correct_option_index": 0,
