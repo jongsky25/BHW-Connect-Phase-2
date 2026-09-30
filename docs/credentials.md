@@ -65,6 +65,11 @@ The short version, by store:
 asking:
 
 - `KB_LOADER_USERNAME` — `training.loader`. Not secret.
+- The pilot `training.loader` account is scoped to the national
+  `Department of Health` org unit for the national Day 1 course. This is an
+  admin account with national reach; keep its password in the GitHub Actions
+  secret, rotate it when access changes, and use `lesson_keys` for a one
+  lesson publication.
 - `KB_LOADER_PASSWORD` — the loader admin's password. The one that keeps
   getting asked for.
 - `KB_LOADER_ANON_KEY` — the pilot project's anon key. Public by design: it

@@ -247,6 +247,38 @@ test("publication rejects draft assets before writes, then promotes once", async
   );
   assert.equal(f.writes.length, count);
 });
+test("one-lesson publication retains the other five published revisions", async () => {
+  const f = fake();
+  const approved = structuredClone(referenceModule);
+  approved.lessons.forEach((lesson) => lesson.revision.assets.forEach((asset) => (asset.review_status = "approved")));
+  await applyReferenceLoad(f.client, await planReferenceLoad(f.client, [approved], f.lock, { orgUnitId: f.org, promote: true }), f.lock, randomUUID());
+  const before = new Map(f.tables.course_lessons.map((lesson) => [lesson.lesson_key, lesson.published_revision_id]));
+  const changed = structuredClone(approved);
+  changed.lessons[0].revision.read_sections[0].body_en += " A clearer clock time.";
+  const options = { orgUnitId: f.org, promote: true, lessonKeys: ["bhw-roles-hepo"] };
+  const plan = await planReferenceLoad(f.client, [changed], f.lock, options);
+  assert.equal(plan[0].entries.length, 1);
+  assert.equal(referenceReport(plan)[0].retained_published_lessons, 5);
+  assert.equal(plan[0].entries[0].action, "stage-revision");
+  const count = f.tables.course_lesson_revisions.length;
+  await applyReferenceLoad(f.client, plan, f.lock, randomUUID());
+  assert.equal(f.tables.course_lesson_revisions.length, count + 1);
+  for (const lesson of f.tables.course_lessons) {
+    if (lesson.lesson_key === "bhw-roles-hepo") assert.notEqual(lesson.published_revision_id, before.get(lesson.lesson_key));
+    else assert.equal(lesson.published_revision_id, before.get(lesson.lesson_key));
+  }
+  const writes = f.writes.length;
+  await applyReferenceLoad(f.client, await planReferenceLoad(f.client, [changed], f.lock, options), f.lock, randomUUID());
+  assert.equal(f.writes.length, writes);
+  assert.equal(f.tables.course_lesson_facilitator_notes.length, 7);
+});
+test("scoped publication refuses an unpublished sibling before writes", async () => {
+  const f = fake();
+  await applyReferenceLoad(f.client, await planReferenceLoad(f.client, [referenceModule], f.lock, { orgUnitId: f.org }), f.lock, randomUUID());
+  const writes = f.writes.length;
+  await assert.rejects(planReferenceLoad(f.client, [referenceModule], f.lock, { orgUnitId: f.org, promote: true, lessonKeys: ["bhw-roles-hepo"] }), /every other lesson/);
+  assert.equal(f.writes.length, writes);
+});
 test("stale locks fail closed and never create replacement history", async () => {
   const f = fake();
   f.lock.modules[referenceModule.module_key] = randomUUID();

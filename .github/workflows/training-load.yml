@@ -17,7 +17,7 @@ on:
       org_unit:
         description: "Org unit name"
         required: true
-        default: "Los Baños"
+        default: "Department of Health"
         type: string
       apply:
         description: "Write (true) or dry run (false)"
@@ -34,6 +34,11 @@ on:
         description: "Selected stable module keys; required for content/lessons/activities"
         required: false
         default: "01-tungkulin-ng-bhw"
+        type: string
+      lesson_keys:
+        description: "Optional lesson keys for lessons mode; other published lessons stay unchanged"
+        required: false
+        default: ""
         type: string
 
 permissions:
@@ -67,6 +72,7 @@ jobs:
           LOAD_APPLY: ${{ inputs.apply }}
           LOAD_PUBLISH: ${{ inputs.publish }}
           LOAD_MODULES: ${{ inputs.modules }}
+          LOAD_LESSON_KEYS: ${{ inputs.lesson_keys }}
         shell: bash
         run: |
           set -euo pipefail
@@ -76,6 +82,7 @@ jobs:
           fi
           args=(--mode "$LOAD_MODE" --project "$LOAD_PROJECT" --org-unit "$LOAD_ORG_UNIT")
           if [ -n "$LOAD_MODULES" ]; then args+=(--modules "$LOAD_MODULES"); fi
+          if [ -n "$LOAD_LESSON_KEYS" ]; then args+=(--lesson-keys "$LOAD_LESSON_KEYS"); fi
           if [ "$LOAD_APPLY" = "true" ]; then args+=(--apply); else args+=(--dry-run); fi
           if [ "$LOAD_PUBLISH" = "true" ]; then
             if [ "$LOAD_APPLY" != "true" ]; then
