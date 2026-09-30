@@ -738,7 +738,7 @@ export function ReferenceLessons(props: Props) {
       >
         <div ref={fullscreenTarget} className="relative h-dvh w-dvw overflow-hidden bg-canvas text-ink">
           <div data-orientation={orientation} className="lesson-reader-surface flex h-dvh flex-col overflow-hidden bg-canvas text-ink">
-          <div className="grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2 sm:grid-cols-[1fr_auto_1fr] sm:px-6">
+          <div className="grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2 min-[500px]:grid-cols-[1fr_auto_1fr] min-[500px]:px-6">
             <div className="col-start-1 row-start-1 flex gap-2" role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
                 <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)}
@@ -747,7 +747,7 @@ export function ReferenceLessons(props: Props) {
                 </button>
               ))}
             </div>
-            <div className="col-span-2 row-start-2 flex justify-center gap-2 sm:col-span-1 sm:col-start-2 sm:row-start-1" role="group" aria-label={ui("Oryentasyon", "Orientation")}>
+            <div className="col-span-2 row-start-2 flex justify-center gap-2 min-[500px]:col-span-1 min-[500px]:col-start-2 min-[500px]:row-start-1" role="group" aria-label={ui("Oryentasyon", "Orientation")}>
               {(["portrait", "landscape"] as const).map((value) => (
                 <button key={value} type="button" aria-pressed={orientation === value} onClick={() => void chooseOrientation(value)}
                   className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
@@ -755,7 +755,7 @@ export function ReferenceLessons(props: Props) {
                 </button>
               ))}
             </div>
-            <button type="button" onClick={closeReader} className="col-start-2 row-start-1 justify-self-end rounded border border-ink/25 px-3 py-2 text-sm sm:col-start-3">
+            <button type="button" onClick={closeReader} className="col-start-2 row-start-1 justify-self-end rounded border border-ink/25 px-3 py-2 text-sm min-[500px]:col-start-3">
               {ui("Isara", "Close")}
             </button>
           </div>

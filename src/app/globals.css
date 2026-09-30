@@ -316,17 +316,6 @@ body {
 }
 
 @container presenter (max-height: 500px) {
-  .reference-story-presenter-content .reference-story {
-    display: grid;
-    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-  }
-
-  .reference-story-presenter-content .reference-story-art {
-    min-height: 0;
-    height: auto;
-    aspect-ratio: auto;
-  }
-
   .reference-story-presenter-content .reference-story-copy {
     padding: 0.65rem;
   }
@@ -351,6 +340,19 @@ body {
 
   .reference-story-presenter-pager button {
     padding: 0.5rem;
+  }
+}
+
+@container presenter (max-height: 500px) and (min-width: 500px) {
+  .reference-story-presenter-content .reference-story {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  }
+
+  .reference-story-presenter-content .reference-story-art {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
   }
 }
 
