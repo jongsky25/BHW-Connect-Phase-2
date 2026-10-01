@@ -271,10 +271,13 @@ test("Chat Guide computes BMI and blood pressure categories and keeps the patien
     // Nothing the BHW typed about the patient is persisted: the user turn is a
     // placeholder, the system turn records kind and outcome only, and the
     // turn is stored under the existing constrained kind/route values.
-    const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+    // Read as the BHW who owns the session: the admin policy only shows
+    // messages from the admin's own org path, and this BHW is in the other
+    // barangay, so an admin read comes back empty (and would pass vacuously).
+    const bhwToken = await getAccessToken(request, OTHER_BARANGAY_BHW.username, OTHER_BARANGAY_BHW.password);
     const rows = (await restGet(
       request,
-      adminToken,
+      bhwToken,
       `chat_messages?session_id=eq.${bmi.session_id}&select=sender,text,kind,route,resolved_query,matched_entry_id&order=created_at.asc`,
     )) as Array<{
       sender: string;
@@ -284,6 +287,8 @@ test("Chat Guide computes BMI and blood pressure categories and keeps the patien
       resolved_query: string | null;
       matched_entry_id: string | null;
     }>;
+    // Three exchanges (BMI, BP, guideline), a user and a system row each.
+    expect(rows).toHaveLength(6);
     const measurementRows = rows.slice(0, 4);
     const serialized = JSON.stringify(measurementRows);
     expect(serialized).not.toMatch(/62 ?kg|160 ?cm|150\/95|35 taong/i);
