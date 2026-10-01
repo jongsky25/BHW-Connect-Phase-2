@@ -13,7 +13,7 @@
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
-import { geminiVoiceId, ORGANIZER_STORY_STYLES } from "./tts-providers/gemini.mjs";
+import { geminiVoiceId, ORGANIZER_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
 // Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.
@@ -195,8 +195,13 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];
           const provider = chosen ?? providerOfVoice(existing?.voice);
           const voice = PROVIDER_VOICES[provider][language];
-          const speechStyle = provider === "gemini" && lessonKey === "bhw-community-organizer"
-            ? ORGANIZER_STORY_STYLES[language] : null;
+          const speechStyle = provider === "gemini"
+            ? lessonKey === "bhw-community-organizer"
+              ? ORGANIZER_STORY_STYLES[language]
+              : lessonKey === "bhw-service-provider"
+                ? SERVICE_PROVIDER_STORY_STYLES[language]
+                : null
+            : null;
           const contentHash = computeContentHash(zones, hashVoice(provider, voice, speechStyle));
           const src = narrationSrc(moduleKey, lessonKey, section.id, language, contentHash);
           const current =

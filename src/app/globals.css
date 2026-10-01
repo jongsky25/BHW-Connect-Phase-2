@@ -178,6 +178,30 @@ body {
   object-position: 56% 50%;
 }
 
+.reference-story[data-lesson="bhw-service-provider"][data-scene="first-contact"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="first-contact-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="check"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="check-slide"] .reference-story-art img {
+  object-position: 50% 50%;
+}
+
+.reference-story[data-lesson="bhw-service-provider"][data-scene="clarify-need"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="clarify-need-slide"] .reference-story-art img {
+  object-position: 38% 50%;
+}
+
+.reference-story[data-lesson="bhw-service-provider"][data-scene="boundaries"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="boundaries-slide"] .reference-story-art img {
+  object-position: 59% 50%;
+}
+
+.reference-story[data-lesson="bhw-service-provider"][data-scene="guide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="guide-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="follow-up"] .reference-story-art img,
+.reference-story[data-lesson="bhw-service-provider"][data-scene="follow-up-slide"] .reference-story-art img {
+  object-position: 72% 50%;
+}
+
 .reference-story-copy {
   align-self: center;
   min-width: 0;

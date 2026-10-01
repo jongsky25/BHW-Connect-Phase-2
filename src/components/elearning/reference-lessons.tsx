@@ -173,6 +173,15 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Sama-samang pagtalakay sa barangay", "Planning together in the barangay"),
           }
+      : lesson?.lesson_key === "bhw-service-provider"
+        ? {
+            src: "/training/bhw-1-1/service-provider-10b884207b48.png",
+            alt: ui(
+              "Nakikinig si BHW Marites kay Aling Nena sa labas ng barangay health station; nasa likuran ang midwife.",
+              "BHW Marites listens to Aling Nena outside a barangay health station; the midwife is in the background.",
+            ),
+            caption: ui("Pakikinig at paggabay kasama ang health team", "Listening and guiding with the health team"),
+          }
       : null;
   const storyLayout = storyArt !== null;
   const items = lesson
