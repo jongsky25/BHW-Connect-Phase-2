@@ -3,8 +3,9 @@
 ## Normal deploy
 
 1. Open a PR against `main`. CI (`.github/workflows/ci.yml`) runs lint,
-   typecheck, unit tests, an E2E smoke pass, a production build, and the
-   Lighthouse performance-budget check.
+   typecheck and unit tests (`checks`) alongside an E2E smoke pass on a
+   production build (`e2e`). The Lighthouse performance-budget check runs on
+   pushes to `main`, after the merge, not on every PR push.
 2. If the change includes a `supabase/migrations/*.sql` file, apply it to
    the pilot project (`ltzicxyefizxoqhfuuzc`; see "Databases" below) **once,
    at merge time, from the session that merges**, via the Supabase MCP
@@ -98,8 +99,9 @@ with it). Now each E2E job:
    fixed password `local-e2e-password`, and the pilot's resting feature-flag
    values. **Never run the seed against a hosted project.** If a pilot flag
    changes and a spec depends on it, update the seed's flag list too.
-3. Builds the app against it, runs Playwright and Lighthouse, and throws the
-   whole database away with the runner.
+3. Builds the app (in parallel with starting it), runs Playwright, and, on
+   `main` only, Lighthouse, then throws the whole database away with the
+   runner.
 
 Consequences:
 
