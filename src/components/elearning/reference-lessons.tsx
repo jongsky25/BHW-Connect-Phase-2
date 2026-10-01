@@ -164,6 +164,15 @@ export function ReferenceLessons(props: Props) {
           ),
           caption: ui("Talakayang angkop sa kausap", "A discussion shaped around its audience"),
         }
+      : lesson?.lesson_key === "bhw-community-organizer"
+        ? {
+            src: "/training/bhw-1-1/community-organizer-4c7f7fa5b422.png",
+            alt: ui(
+              "Nakikinig si BHW Marites habang tinatalakay ng mga residente at health staff ang mapa ng kanilang purok.",
+              "BHW Marites listens as residents and health staff discuss a map of their neighborhood.",
+            ),
+            caption: ui("Sama-samang pagtalakay sa barangay", "Planning together in the barangay"),
+          }
       : null;
   const storyLayout = storyArt !== null;
   const items = lesson

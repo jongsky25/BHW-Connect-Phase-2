@@ -154,6 +154,30 @@ body {
   object-position: 66% 50%;
 }
 
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="organizer-scene"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="organizer-scene-slide"] .reference-story-art img {
+  object-position: 32% 50%;
+}
+
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="participation"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="participation-slide"] .reference-story-art img {
+  object-position: 48% 50%;
+}
+
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="observation"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="observation-slide"] .reference-story-art img {
+  object-position: 70% 50%;
+}
+
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="planning-team"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="planning-team-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="liph"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="liph-slide"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="check"] .reference-story-art img,
+.reference-story[data-lesson="bhw-community-organizer"][data-scene="check-slide"] .reference-story-art img {
+  object-position: 56% 50%;
+}
+
 .reference-story-copy {
   align-self: center;
   min-width: 0;
