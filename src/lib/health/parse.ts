@@ -36,6 +36,10 @@ const BP_WORDS =
 const BMI_WORDS = /\b(?:bmi|body mass index)\b/i;
 // "Why does another guideline call 130/80 high?" carries a reading-shaped
 // number but is a knowledge question; these words send it to the KB instead.
+// "180/110 or higher" names a threshold, not a reading, so it is a question
+// about the category (and the entry for it), not something to classify.
+const THRESHOLD_MARKERS =
+  /\b(?:or higher|or above|or more|and above|and higher|o mas mataas|o higit pa|pataas)\b/i;
 const KNOWLEDGE_MARKERS =
   /\b(?:guidelines?|gabay|why|bakit|ibang|another|other)\b/i;
 const PREGNANT = /\b(?:buntis|pregnant|nagbubuntis|pregnancy)\b/i;
@@ -201,6 +205,6 @@ export function parseMeasurement(raw: string): MeasurementParse | null {
   if (text.length === 0) return null;
   // A question naming BMI is a BMI request even if a stray "x/y" appears.
   if (BMI_WORDS.test(text)) return parseBmi(text) ?? null;
-  if (KNOWLEDGE_MARKERS.test(text)) return null;
+  if (KNOWLEDGE_MARKERS.test(text) || THRESHOLD_MARKERS.test(text)) return null;
   return parseBp(text) ?? parseBmi(text);
 }

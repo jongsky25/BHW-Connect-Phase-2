@@ -422,6 +422,7 @@ function toResponseBody(result: ConversationResult, conversational: boolean) {
       text_fil: m.text.fil,
       text_en: m.text.en,
       related: m.related.map((entry) => entrySummary(entry, 0, conversational)),
+      advice: m.advice ? entrySummary(m.advice, 0, conversational) : null,
     };
   }
   if (result.type === "did_you_mean") {

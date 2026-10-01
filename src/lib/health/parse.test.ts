@@ -108,4 +108,18 @@ describe("parseMeasurement — BMI", () => {
       parseMeasurement("Bakit mataas ang 130/80 sa ibang gabay?"),
     ).toBeNull();
   });
+
+  it("treats 'or higher' as a threshold question, not a reading", () => {
+    expect(
+      parseMeasurement(
+        "The blood pressure is 180/110 or higher, what do I tell the client?",
+      ),
+    ).toBeNull();
+    expect(
+      parseMeasurement(
+        "Ano ang sasabihin ko sa kliyente kung 180/110 o mas mataas ang presyon?",
+      ),
+    ).toBeNull();
+    expect(parseMeasurement("BP 180/110")).toMatchObject({ kind: "bp" });
+  });
 });

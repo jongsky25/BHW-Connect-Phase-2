@@ -1,5 +1,5 @@
-import { computeBmi } from "../health/bmi";
-import { classifyBp } from "../health/bp";
+import { computeBmi, type AsiaPacificBmiCategory } from "../health/bmi";
+import { classifyBp, type BpCategory } from "../health/bp";
 import {
   EMERGENCY_FALLBACK,
   formatBmi,
@@ -35,6 +35,13 @@ export type MeasurementAnswer = {
   text: Bilingual;
   /** KB entries offered as follow-ups, restricted to published ones. */
   related: ChatEntryCandidate[];
+  /**
+   * The clinician-approved "what should I tell them / what do I do next"
+   * entry for this result, when it is published. Absent for a missing-input,
+   * invalid or out-of-scope reply, for an emergency (the emergency steps are
+   * already the reply), and when the entry is not published.
+   */
+  advice?: ChatEntryCandidate;
 };
 
 const RELATED: Record<MeasurementKind, string[]> = {
@@ -43,6 +50,34 @@ const RELATED: Record<MeasurementKind, string[]> = {
 };
 
 const EMERGENCY_ENTRY = "m3-very-high-with-symptoms";
+
+// One advice entry per result the calculator can return (module-5.json, the
+// adv-* entries). BMI follows the Asia-Pacific category, the one shown first.
+const BMI_ADVICE: Record<AsiaPacificBmiCategory, string> = {
+  underweight: "adv-bmi-underweight",
+  normal: "adv-bmi-normal",
+  overweight: "adv-bmi-overweight",
+  obese_1: "adv-bmi-obese",
+  obese_2: "adv-bmi-obese",
+};
+
+const BP_ADVICE: Record<BpCategory, string> = {
+  optimal: "adv-bp-normal",
+  normal: "adv-bp-normal",
+  high_normal: "adv-bp-high-normal",
+  grade_1: "adv-bp-raised",
+  grade_2: "adv-bp-raised",
+  grade_3: "adv-bp-grade-3",
+  low: "adv-bp-low",
+};
+
+function adviceFor(
+  contentId: string,
+  byContentId: Map<string, ChatEntryCandidate>,
+): { advice: ChatEntryCandidate } | Record<string, never> {
+  const advice = byContentId.get(contentId);
+  return advice ? { advice } : {};
+}
 
 function pickRelated(
   kind: MeasurementKind,
@@ -113,6 +148,7 @@ export function resolveMeasurement(
       urgency: "none",
       text: formatBmi(result),
       related,
+      ...adviceFor(BMI_ADVICE[result.asiaPacific], byContentId),
     };
   }
 
@@ -168,5 +204,6 @@ export function resolveMeasurement(
     urgency: result.urgent ? "attention" : "none",
     text,
     related,
+    ...adviceFor(BP_ADVICE[result.category], byContentId),
   };
 }

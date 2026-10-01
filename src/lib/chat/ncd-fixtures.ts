@@ -174,6 +174,21 @@ export const ncdCorpusFixtures: ChatFixture[] = [
   { id: "ncd-fil-bmibp-4", language: "fil", question: "Ibig bang sabihin ng isang mataas na resulta na may altapresyon na ang tao?", expected: { type: "answer", entryId: "m3-bp-one-reading" } },
   { id: "ncd-tag-bmibp-1", language: "taglish", question: "paano kuwentahin ang bmi may halimbawa", expected: { type: "answer", entryId: "m2-bmi-worked-example" } },
   { id: "ncd-tag-bmibp-2", language: "taglish", question: "magkaiba ang kategorya ng itaas at ibabang numero ng presyon", expected: { type: "answer", entryId: "m3-bp-different-categories" } },
+  { id: "ncd-en-adv-1", language: "en", question: "What do I tell the client when the blood pressure is normal?", expected: { type: "answer", entryId: "adv-bp-normal" } },
+  { id: "ncd-en-adv-2", language: "en", question: "The blood pressure is a little above ideal, 130 to 139, what do I tell the client?", expected: { type: "answer", entryId: "adv-bp-high-normal" } },
+  { id: "ncd-en-adv-3", language: "en", question: "What do I tell a client whose blood pressure is in the grade 1 range?", expected: { type: "answer", entryId: "adv-bp-raised" } },
+  { id: "ncd-en-adv-4", language: "en", question: "The blood pressure is 180/110 or higher, what do I tell the client?", expected: { type: "answer", entryId: "adv-bp-grade-3" } },
+  { id: "ncd-en-adv-5", language: "en", question: "What do I tell the client when the blood pressure reading is low?", expected: { type: "answer", entryId: "adv-bp-low" } },
+  { id: "ncd-en-adv-6", language: "en", question: "The BMI is underweight, what do I tell the client and do next?", expected: { type: "answer", entryId: "adv-bmi-underweight" } },
+  { id: "ncd-en-adv-7", language: "en", question: "The BMI is normal, what do I tell the client?", expected: { type: "answer", entryId: "adv-bmi-normal" } },
+  { id: "ncd-en-adv-8", language: "en", question: "The BMI is overweight, what do I tell the client and do next?", expected: { type: "answer", entryId: "adv-bmi-overweight" } },
+  { id: "ncd-en-adv-9", language: "en", question: "The BMI is in the obese range, what do I tell the client?", expected: { type: "answer", entryId: "adv-bmi-obese" } },
+  { id: "ncd-fil-adv-1", language: "fil", question: "Ano ang sasabihin ko sa kliyente kung overweight ang BMI?", expected: { type: "answer", entryId: "adv-bmi-overweight" } },
+  { id: "ncd-fil-adv-2", language: "fil", question: "Ano ang sasabihin ko kung underweight ang BMI ng kliyente?", expected: { type: "answer", entryId: "adv-bmi-underweight" } },
+  { id: "ncd-fil-adv-3", language: "fil", question: "Nasa grade 1 o grade 2 ang presyon, ano ang sasabihin ko sa kliyente?", expected: { type: "answer", entryId: "adv-bp-raised" } },
+  { id: "ncd-fil-adv-4", language: "fil", question: "Ano ang sasabihin ko sa kliyente kung 180/110 o mas mataas ang presyon?", expected: { type: "answer", entryId: "adv-bp-grade-3" } },
+  { id: "ncd-tag-adv-1", language: "taglish", question: "ano sasabihin ko sa client kung obese ang bmi", expected: { type: "answer", entryId: "adv-bmi-obese" } },
+  { id: "ncd-tag-adv-2", language: "taglish", question: "optimal ang presyon ano sasabihin ko sa kliyente", expected: { type: "answer", entryId: "adv-bp-normal" } },
 ];
 
 // The entries whose whole job is to say "that is not yours to decide". A
