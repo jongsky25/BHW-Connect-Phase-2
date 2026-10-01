@@ -160,6 +160,20 @@ export const ncdCorpusFixtures: ChatFixture[] = [
   { id: "ncd-tag-28", language: "taglish", question: "naubos na ang maintenance nya ano gagawin", expected: { type: "answer", entryId: "m5-ran-out-of-medicine" } },
   { id: "ncd-tag-29", language: "taglish", question: "paano makaalala uminom ng gamot araw araw", expected: { type: "answer", entryId: "m5-remembering-medicine" } },
   { id: "ncd-tag-30", language: "taglish", question: "ano isusulat sa buwanang ulat", expected: { type: "answer", entryId: "m6-monthly-report" } },
+  { id: "ncd-en-bmibp-1", language: "en", question: "What do the BMI categories mean, normal overweight obese?", expected: { type: "answer", entryId: "m2-bmi-categories" } },
+  { id: "ncd-en-bmibp-2", language: "en", question: "Why are there two sets of BMI categories and which one do I use?", expected: { type: "answer", entryId: "m2-bmi-which-scheme" } },
+  { id: "ncd-en-bmibp-3", language: "en", question: "Show me an example of how to compute BMI", expected: { type: "answer", entryId: "m2-bmi-worked-example" } },
+  { id: "ncd-en-bmibp-4", language: "en", question: "When can I not use BMI, for children or pregnant women?", expected: { type: "answer", entryId: "m2-bmi-limits" } },
+  { id: "ncd-en-bmibp-5", language: "en", question: "What are the blood pressure categories, optimal normal high-normal grade 1?", expected: { type: "answer", entryId: "m3-bp-categories" } },
+  { id: "ncd-en-bmibp-6", language: "en", question: "What if the top and bottom numbers fall in different categories?", expected: { type: "answer", entryId: "m3-bp-different-categories" } },
+  { id: "ncd-en-bmibp-7", language: "en", question: "Does one high reading mean the person has hypertension?", expected: { type: "answer", entryId: "m3-bp-one-reading" } },
+  { id: "ncd-en-bmibp-8", language: "en", question: "Why does another guideline call 130/80 high?", expected: { type: "answer", entryId: "m3-bp-other-guidelines" } },
+  { id: "ncd-fil-bmibp-1", language: "fil", question: "Ano ang ibig sabihin ng mga kategorya ng BMI?", expected: { type: "answer", entryId: "m2-bmi-categories" } },
+  { id: "ncd-fil-bmibp-2", language: "fil", question: "Bakit may dalawang set ng kategorya ng BMI?", expected: { type: "answer", entryId: "m2-bmi-which-scheme" } },
+  { id: "ncd-fil-bmibp-3", language: "fil", question: "Ano ang mga kategorya ng presyon, optimal, normal, high-normal?", expected: { type: "answer", entryId: "m3-bp-categories" } },
+  { id: "ncd-fil-bmibp-4", language: "fil", question: "Ibig bang sabihin ng isang mataas na resulta na may altapresyon na ang tao?", expected: { type: "answer", entryId: "m3-bp-one-reading" } },
+  { id: "ncd-tag-bmibp-1", language: "taglish", question: "paano kuwentahin ang bmi may halimbawa", expected: { type: "answer", entryId: "m2-bmi-worked-example" } },
+  { id: "ncd-tag-bmibp-2", language: "taglish", question: "magkaiba ang kategorya ng itaas at ibabang numero ng presyon", expected: { type: "answer", entryId: "m3-bp-different-categories" } },
 ];
 
 // The entries whose whole job is to say "that is not yours to decide". A

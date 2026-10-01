@@ -276,6 +276,50 @@
       "answer_fil": "Batiin ang pamilya, ipakilala ang sarili bilang BHW, sabihin nang malinaw kung bakit ka pumunta at gaano katagal ito, at humingi ng pahintulot bago magsimula. Ipaliwanag na boluntaryo ang pagsagot at na mapupunta ang impormasyon sa health center. Ang maayos na pahintulot sa pintuan ang umiiwas sa halos lahat ng pagtanggi sa gitna ng pagsusuri.",
       "keywords": ["pagbisita", "visit", "simula", "open", "pahintulot", "consent", "pakilala", "bahay", "household"],
       "sources": ["who-bhw-manual-ta", "who-pen"]
+    },
+    {
+      "id": "m2-bmi-categories",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "What do the BMI categories (normal, overweight, obese) mean?",
+      "question_fil": "Ano ang ibig sabihin ng mga kategorya ng BMI (normal, overweight, obese)?",
+      "answer_en": "For adults aged 19 and over who are not pregnant, use the Asia-Pacific categories first: below 18.5 underweight, 18.5 to 22.9 normal, 23 to 24.9 overweight (at risk), 25 to 29.9 obese class I, and 30 or more obese class II. The WHO international categories are shown beside them: below 18.5 underweight, 18.5 to 24.9 normal, 25 to 29.9 overweight (pre-obese), 30 to 34.9 obese class I, 35 to 39.9 obese class II, and 40 or more obese class III. Round the BMI to one decimal place before choosing the category. This is a screening category, not a diagnosis; the clinician decides.",
+      "answer_fil": "Para sa mga nasa hustong gulang na 19 pataas na hindi buntis, unahin ang mga kategorya ng Asia-Pacific: mas mababa sa 18.5 underweight, 18.5 hanggang 22.9 normal, 23 hanggang 24.9 overweight (may panganib), 25 hanggang 29.9 obese class I, at 30 pataas obese class II. Ipinapakita sa tabi ang mga pandaigdigang kategorya ng WHO: mas mababa sa 18.5 underweight, 18.5 hanggang 24.9 normal, 25 hanggang 29.9 overweight (pre-obese), 30 hanggang 34.9 obese class I, 35 hanggang 39.9 obese class II, at 40 pataas obese class III. I-round ang BMI sa isang decimal bago piliin ang kategorya. Ito ay kategorya sa screening, hindi diagnosis; ang clinician ang magpapasya.",
+      "keywords": ["bmi", "kategorya", "categories", "normal", "overweight", "obese", "underweight", "payat", "sobra timbang", "labis na timbang"],
+      "sources": ["who-wpro-asia-pacific-2000", "who-trs-894"]
+    },
+    {
+      "id": "m2-bmi-which-scheme",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Why are there two sets of BMI categories, and which one do I use?",
+      "question_fil": "Bakit may dalawang set ng kategorya ng BMI, at alin ang gagamitin ko?",
+      "answer_en": "The WHO international categories were set for all populations. WHO later found that Asian populations carry more risk of diabetes and heart disease at lower BMI, so the Asia-Pacific categories start \"overweight\" at 23 and \"obese\" at 25. For Filipino adults, read the Asia-Pacific category first and show the WHO category beside it. If your LGU's form or the current PhilPEN protocol names a different scheme, follow that.",
+      "answer_fil": "Ang mga pandaigdigang kategorya ng WHO ay para sa lahat ng populasyon. Nakita ng WHO na mas mataas ang panganib ng diabetes at sakit sa puso ng mga Asyano kahit mas mababa ang BMI, kaya ang kategorya ng Asia-Pacific ay nagsisimula ang \"overweight\" sa 23 at ang \"obese\" sa 25. Para sa mga Pilipinong nasa hustong gulang, basahin muna ang kategorya ng Asia-Pacific at ipakita sa tabi ang kategorya ng WHO. Kung ibang sistema ang nakasaad sa form ng inyong LGU o sa kasalukuyang PhilPEN protocol, iyon ang sundin.",
+      "keywords": ["dalawang", "two", "scheme", "sistema", "asia pacific", "asian", "who", "alin", "which", "pilipino"],
+      "sources": ["who-expert-consultation-2004", "who-wpro-asia-pacific-2000"]
+    },
+    {
+      "id": "m2-bmi-worked-example",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "Can you show me how to compute BMI with an example?",
+      "question_fil": "Maaari bang magpakita ng halimbawa kung paano kuwentahin ang BMI?",
+      "answer_en": "BMI is weight in kilograms divided by height in metres, squared. Example: a woman who weighs 62 kg and is 160 cm (1.60 m) tall: 1.60 x 1.60 = 2.56, and 62 / 2.56 = 24.2. That is normal by the WHO categories and overweight by the Asia-Pacific categories. If the scale is in pounds, divide by 2.2 first to get kilograms; if the height is in feet and inches, convert it to centimetres (1 inch = 2.54 cm) before dividing by 100. This is a screening category, not a diagnosis; the clinician decides.",
+      "answer_fil": "Ang BMI ay timbang sa kilo na hinati sa taas sa metro, na iparisan. Halimbawa: isang babaeng 62 kg ang timbang at 160 cm (1.60 m) ang taas: 1.60 x 1.60 = 2.56, at 62 / 2.56 = 24.2. Normal ito ayon sa kategorya ng WHO at overweight ayon sa kategorya ng Asia-Pacific. Kung pounds ang timbangan, hatiin muna sa 2.2 para maging kilo; kung talampakan at pulgada ang taas, gawing sentimetro (1 pulgada = 2.54 cm) bago hatiin sa 100. Ito ay kategorya sa screening, hindi diagnosis; ang clinician ang magpapasya.",
+      "keywords": ["halimbawa", "example", "kuwenta", "compute", "formula", "pounds", "kilo", "sentimetro", "talampakan", "paano kuwentahin"],
+      "sources": ["who-trs-894", "who-pen"]
+    },
+    {
+      "id": "m2-bmi-limits",
+      "domain": "risk-assessment",
+      "tier": "cited",
+      "question_en": "When can I not use BMI?",
+      "question_fil": "Kailan hindi puwedeng gamitin ang BMI?",
+      "answer_en": "These adult BMI categories are not for children and teenagers under 19, who are assessed against growth charts by age, and not for pregnant women. Treat the number with care in people who are very muscular, have swelling of the legs or abdomen, or are very elderly or have lost height, because BMI can then be too high or too low for their real body fat. Do not tell the client they have a disease because of BMI; record the height and weight and refer according to your protocol.",
+      "answer_fil": "Ang mga kategorya ng BMI para sa nasa hustong gulang ay hindi para sa mga bata at kabataang wala pang 19, na sinusuri gamit ang growth chart ayon sa edad, at hindi para sa mga buntis. Mag-ingat sa numero sa mga taong napakamuscular, may pamamaga ng binti o tiyan, o napakatanda o lumiit ang taas, dahil maaaring masyadong mataas o mababa ang BMI kumpara sa tunay na taba ng katawan. Huwag sabihin sa kliyente na may sakit siya dahil lang sa BMI; itala ang taas at timbang at mag-refer ayon sa inyong protocol.",
+      "keywords": ["bata", "kabataan", "children", "teenager", "buntis", "pregnant", "muscular", "limitasyon", "limit", "hindi puwede"],
+      "sources": ["who-trs-894", "who-expert-consultation-2004"]
     }
   ]
 }
