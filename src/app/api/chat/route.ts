@@ -2,6 +2,7 @@ import { after, NextResponse, type NextRequest } from "next/server";
 import { resolveTurn } from "@/lib/chat/conversation";
 import { matchQuestion } from "@/lib/chat/matcher";
 import { loadPublishedEntries } from "@/lib/chat/published-entries";
+import { chatRateLimitArgs } from "@/lib/chat/rate-limit";
 import { clarifierRules, redFlagRules } from "@/lib/chat/rules";
 import type {
   ChatContext,
@@ -68,7 +69,7 @@ export async function POST(request: NextRequest) {
   }
 
   const { data: rateLimit, error: rateLimitError } = await supabase
-    .rpc("rpc_chat_check_rate_limit")
+    .rpc("rpc_chat_check_rate_limit", chatRateLimitArgs())
     .single<RateLimitRow>();
 
   if (rateLimitError) {

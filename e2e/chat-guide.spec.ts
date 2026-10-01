@@ -94,8 +94,11 @@ test("Chat Guide API answers a published entry, dedupes unmatched questions, and
 
   // Hammering the endpoint past the per-user sliding window (default 20 /
   // 60s, rpc_chat_check_rate_limit) returns 429 with a Retry-After header.
+  // CI raises the ceiling (CHAT_RATE_LIMIT_PER_MINUTE) so the serial suite's
+  // other chat specs don't starve each other; size the flood to exceed it.
+  const limit = Number(process.env.CHAT_RATE_LIMIT_PER_MINUTE ?? 20);
   const floodResponses = await Promise.all(
-    Array.from({ length: 25 }, (_, i) =>
+    Array.from({ length: limit + 5 }, (_, i) =>
       page.request.post("/api/chat", { data: { question: `rate limit probe ${i} ${marker}` } }),
     ),
   );
