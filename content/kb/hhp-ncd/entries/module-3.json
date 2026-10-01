@@ -287,6 +287,72 @@
       "answer_fil": "Nakakatulong ang pagsukat sa bahay kung tama ang paggawa. Ituro ang parehong tuntunin — pahinga, nakaupo na suportado ang likod at paa, braso sa mesa sa taas ng puso, tamang cuff, walang usapan — at pakiusapan silang isulat ang bawat resulta at petsa upang makita ng doktor ang takbo nito. Ipaalala na huwag baguhin ang gamot nang mag-isa dahil sa resulta sa bahay.",
       "keywords": ["bahay", "home", "sariling", "monitor", "sarili", "sukat", "pamilya", "record", "gamot"],
       "sources": ["paho-hearts-bp", "who-hearts"]
+    },
+    {
+      "id": "m3-bp-categories",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What are the blood pressure categories (optimal, normal, high-normal, grade 1, 2 and 3)?",
+      "question_fil": "Ano ang mga kategorya ng presyon (optimal, normal, high-normal, grade 1, 2 at 3)?",
+      "answer_en": "For an adult office reading (mmHg): optimal is below 120 and below 80; normal is 120 to 129 and/or 80 to 84; high-normal is 130 to 139 and/or 85 to 89; grade 1 hypertension range is 140 to 159 and/or 90 to 99; grade 2 is 160 to 179 and/or 100 to 109; grade 3 is 180 or more and/or 110 or more. Use the higher category of the two numbers. These are guideline categories on properly taken measurements; the cut-off your programme uses to refer comes from the current PhilPEN protocol. This is a screening category, not a diagnosis; the clinician decides.",
+      "answer_fil": "Para sa office reading ng nasa hustong gulang (mmHg): optimal ang mas mababa sa 120 at mas mababa sa 80; normal ang 120 hanggang 129 at/o 80 hanggang 84; high-normal ang 130 hanggang 139 at/o 85 hanggang 89; grade 1 na saklaw ng altapresyon ang 140 hanggang 159 at/o 90 hanggang 99; grade 2 ang 160 hanggang 179 at/o 100 hanggang 109; grade 3 ang 180 pataas at/o 110 pataas. Gamitin ang mas mataas na kategorya sa dalawang numero. Ito ay mga kategorya ng gabay sa tamang pagsukat; ang hangganang gagamitin ng inyong programa sa pag-refer ay mula sa kasalukuyang PhilPEN protocol. Ito ay kategorya sa screening, hindi diagnosis; ang clinician ang magpapasya.",
+      "keywords": ["kategorya", "categories", "optimal", "high normal", "high-normal", "grade 1", "grade 2", "grade 3", "grade", "uri", "klasipikasyon", "classification"],
+      "sources": ["esc-esh-2018", "who-htn-guideline-2021"]
+    },
+    {
+      "id": "m3-bp-different-categories",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "What if the top and bottom numbers fall in different categories?",
+      "question_fil": "Paano kung magkaiba ang kategorya ng itaas at ibabang numero?",
+      "answer_en": "Classify by the higher category. For example 118/95 is grade 1 because of the bottom number, and 165/82 is grade 2 because of the top number. A top number of 140 or more with a bottom number below 90, such as 150/85, is called isolated systolic hypertension and is common in older people; it still counts as a raised reading and is not ignored. This is a screening category, not a diagnosis; the clinician decides.",
+      "answer_fil": "Ang mas mataas na kategorya ang susundin. Halimbawa, ang 118/95 ay grade 1 dahil sa ibabang numero, at ang 165/82 ay grade 2 dahil sa itaas na numero. Ang itaas na numerong 140 pataas na may ibabang numerong mas mababa sa 90, gaya ng 150/85, ay tinatawag na isolated systolic hypertension at karaniwan sa matatanda; mataas na resulta pa rin ito at hindi dapat balewalain. Ito ay kategorya sa screening, hindi diagnosis; ang clinician ang magpapasya.",
+      "keywords": ["magkaiba", "different", "isolated", "systolic lang", "itaas lang", "mas mataas", "higher", "alin ang susundin"],
+      "sources": ["esc-esh-2018"]
+    },
+    {
+      "id": "m3-bp-one-reading",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "Does one high reading mean the person has hypertension?",
+      "question_fil": "Ibig bang sabihin ng isang mataas na resulta na may altapresyon na ang tao?",
+      "answer_en": "No. One high reading is a screening finding, not a diagnosis. Blood pressure changes with stress, pain, a full bladder, caffeine or a rushed measurement. Hypertension is confirmed by the clinician from properly taken measurements on more than one occasion. Tell the client the reading is high, record it, and refer as your protocol directs; do not say \"you have hypertension\" and do not say it is nothing.",
+      "answer_fil": "Hindi. Ang isang mataas na resulta ay natuklasan sa screening, hindi diagnosis. Nagbabago ang presyon dahil sa stress, sakit, puno ang pantog, kape o minadaling pagsukat. Ang altapresyon ay kinukumpirma ng clinician mula sa tamang pagsukat sa higit sa isang pagkakataon. Sabihin sa kliyente na mataas ang resulta, itala ito, at mag-refer ayon sa protocol; huwag sabihing \"may altapresyon ka na\" at huwag ding sabihing wala itong kaso.",
+      "keywords": ["isang resulta", "one reading", "isang beses", "diagnosis", "may altapresyon na", "kumpirma", "confirm", "sigurado"],
+      "sources": ["who-hearts", "esc-esh-2018"]
+    },
+    {
+      "id": "m3-bp-other-guidelines",
+      "domain": "bp-screening",
+      "tier": "cited",
+      "question_en": "Why does another guideline call 130/80 high?",
+      "question_fil": "Bakit tinatawag ng ibang gabay na mataas ang 130/80?",
+      "answer_en": "Guidelines use different labels. The 2017 American (AHA/ACC) guideline calls 120 to 129 over below 80 \"elevated\", 130 to 139 or 80 to 89 \"stage 1\" and 140/90 or more \"stage 2\". The European and WHO-aligned categories above call 130 to 139 over 85 to 89 \"high-normal\". The labels differ, but all of them agree that 140/90 and above is the hypertension range. In the field, use the categories and referral cut-off in your PhilPEN protocol and do not mix labels from different guidelines.",
+      "answer_fil": "Magkakaiba ang tawag ng mga gabay. Tinatawag ng 2017 na gabay ng Amerika (AHA/ACC) na \"elevated\" ang 120 hanggang 129 sa ibabaw ng mas mababa sa 80, \"stage 1\" ang 130 hanggang 139 o 80 hanggang 89, at \"stage 2\" ang 140/90 pataas. Tinatawag namang \"high-normal\" ng mga kategoryang Europeo at naka-ayon sa WHO sa itaas ang 130 hanggang 139 sa ibabaw ng 85 hanggang 89. Magkaiba ang tawag pero pare-pareho ang sinasabi na ang 140/90 pataas ay saklaw ng altapresyon. Sa field, gamitin ang mga kategorya at hangganan ng referral sa inyong PhilPEN protocol at huwag paghaluin ang tawag mula sa magkakaibang gabay.",
+      "keywords": ["aha", "acc", "stage 1", "stage 2", "elevated", "amerika", "american", "130/80", "ibang gabay", "other guideline"],
+      "sources": ["aha-acc-2017", "esc-esh-2018"]
+    },
+    {
+      "id": "m3-bp-grade-3",
+      "domain": "referral",
+      "tier": "pending",
+      "question_en": "The reading is 180/110 or higher. What do I do?",
+      "question_fil": "180/110 o mas mataas ang resulta. Ano ang gagawin ko?",
+      "answer_en": "A reading of 180 or more and/or 110 or more is the highest category (grade 3). The exact referral timing for it, same day or immediate, must be taken from the current PhilPEN 2025 protocol as adopted by your LGU. This entry stays unpublished until BLHSD and WHO confirm it. What does not change: with chest pain, breathlessness, one-sided weakness, confusion or severe headache, treat it as an emergency and arrange transport now.",
+      "answer_fil": "Ang resultang 180 pataas at/o 110 pataas ay ang pinakamataas na kategorya (grade 3). Ang eksaktong oras ng referral para rito, parehong araw o agaran, ay dapat kunin sa kasalukuyang PhilPEN 2025 protocol na ginagamit ng inyong LGU. Mananatiling hindi nailalathala ang aytem na ito hanggang makumpirma ng BLHSD at WHO. Hindi nagbabago ito: kung may sakit sa dibdib, hirap huminga, panghihina sa isang bahagi, pagkalito o matinding sakit ng ulo, ituring itong emergency at ayusin ang transport ngayon din.",
+      "keywords": ["180", "110", "grade 3", "napakataas", "180/110", "pinakamataas", "kailangan agad"],
+      "sources": ["doh-philpen", "esc-esh-2018"]
+    },
+    {
+      "id": "m3-bp-low-numbers",
+      "domain": "bp-screening",
+      "tier": "pending",
+      "question_en": "At what number is blood pressure considered low (hypotension)?",
+      "question_fil": "Sa anong numero itinuturing na mababa ang presyon (hypotension)?",
+      "answer_en": "There is no single international cut-off for low blood pressure. Many clinicians take below 90 for the top number or below 60 for the bottom number as low, but the number your programme uses must be confirmed by BLHSD and WHO, so this entry stays unpublished until then. What matters in the field is symptoms: dizziness on standing, weakness, cold clammy skin, confusion or fainting mean the person should lie down and be referred whatever the number.",
+      "answer_fil": "Walang iisang pandaigdigang hangganan para sa mababang presyon. Maraming clinician ang nagtuturing na mababa ang itaas na numerong mas mababa sa 90 o ang ibabang numerong mas mababa sa 60, ngunit ang bilang na gagamitin ng inyong programa ay dapat kumpirmahin ng BLHSD at WHO, kaya mananatiling hindi nailalathala ang aytem na ito hanggang doon. Ang mahalaga sa field ay ang sintomas: pagkahilo sa pagtayo, panghihina, malamig at basang balat, pagkalito o pagkahimatay ay nangangahulugang dapat pahigain ang tao at i-refer anuman ang numero.",
+      "keywords": ["hypotension", "hypotensive", "mababang presyon", "90/60", "90", "60", "mababang numero", "low bp"],
+      "sources": ["who-pen", "paho-hearts-bp"]
     }
   ]
 }

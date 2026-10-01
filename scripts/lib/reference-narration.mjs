@@ -13,7 +13,7 @@
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
-import { geminiVoiceId } from "./tts-providers/gemini.mjs";
+import { geminiVoiceId, ORGANIZER_STORY_STYLES } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
 // Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.
@@ -25,8 +25,8 @@ export const PROVIDER_VOICES = {
   gemini: { fil: geminiVoiceId(), en: geminiVoiceId() },
 };
 export const providerOfVoice = (voice) => (voice?.startsWith("gemini:") ? "gemini" : "edge");
-const hashVoice = (provider, voice) =>
-  provider === "gemini" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k-resampled` : `${voice}|${SPEECH_RULES}`;
+const hashVoice = (provider, voice, speechStyle) =>
+  provider === "gemini" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k-resampled${speechStyle ? `|${speechStyle}` : ""}` : `${voice}|${SPEECH_RULES}`;
 export const AUDIO_ROOT = "/training/audio";
 // Bump when spokenText changes so existing audio is re-rendered.
 export const SPEECH_RULES = "speech-v2";
@@ -150,6 +150,7 @@ export async function renderNarration(item, { synthesizeUtterance, synthesizeWit
       apiKey: geminiApiKey,
       kbps: GEMINI_NARRATION_KBPS,
       speak: (zone) => spokenText(zone.text, item.language),
+      ...(item.speechStyle ? { style: item.speechStyle } : {}),
       ...(fetchImpl ? { fetchImpl } : {}),
     });
     // The encoder pads the last frame, so the file runs a few ms past the
@@ -194,7 +195,9 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];
           const provider = chosen ?? providerOfVoice(existing?.voice);
           const voice = PROVIDER_VOICES[provider][language];
-          const contentHash = computeContentHash(zones, hashVoice(provider, voice));
+          const speechStyle = provider === "gemini" && lessonKey === "bhw-community-organizer"
+            ? ORGANIZER_STORY_STYLES[language] : null;
+          const contentHash = computeContentHash(zones, hashVoice(provider, voice, speechStyle));
           const src = narrationSrc(moduleKey, lessonKey, section.id, language, contentHash);
           const current =
             existing?.content_hash === contentHash && existing.src === src && fileHash(src) === existing.sha256;
@@ -205,6 +208,7 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
             language,
             provider,
             voice,
+            speechStyle,
             zones,
             contentHash,
             src,

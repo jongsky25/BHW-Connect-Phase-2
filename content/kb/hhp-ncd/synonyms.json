@@ -128,6 +128,18 @@
     { "term": "timbang", "maps_to": "weight bmi kilo", "language": "fil" },
     { "term": "ehersisyo", "maps_to": "exercise physical activity kilos", "language": "fil" },
     { "term": "maalat", "maps_to": "salt sodium asin maalat", "language": "fil" },
-    { "term": "asin", "maps_to": "salt sodium maalat", "language": "fil" }
+    { "term": "asin", "maps_to": "salt sodium maalat", "language": "fil" },
+    { "term": "sobra timbang", "maps_to": "overweight obese sobra labis bmi", "language": "taglish" },
+    { "term": "labis na timbang", "maps_to": "overweight obese sobra bmi", "language": "fil" },
+    { "term": "payat", "maps_to": "underweight kulang timbang bmi", "language": "fil" },
+    { "term": "sobrang payat", "maps_to": "underweight kulang timbang bmi", "language": "taglish" },
+    { "term": "obese", "maps_to": "obesity labis na katabaan sobra timbang bmi", "language": "en" },
+    { "term": "underweight", "maps_to": "payat kulang timbang bmi", "language": "en" },
+    { "term": "overweight", "maps_to": "sobra timbang labis bmi", "language": "en" },
+    { "term": "hypotension", "maps_to": "mababang presyon low blood pressure", "language": "en" },
+    { "term": "hypotensive", "maps_to": "mababang presyon low blood pressure", "language": "en" },
+    { "term": "mababang presyon", "maps_to": "low blood pressure hypotension mababa", "language": "fil" },
+    { "term": "mababa ang presyon", "maps_to": "low blood pressure hypotension mababa", "language": "fil" },
+    { "term": "grade", "maps_to": "kategorya category antas", "language": "en" }
   ]
 }

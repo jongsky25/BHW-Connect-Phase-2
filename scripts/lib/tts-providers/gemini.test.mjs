@@ -79,6 +79,14 @@ describe("synthesizeWithGemini", () => {
     expect(result.audioBytes[0]).toBe(0xff);
   });
 
+  it("uses a custom delivery style without adding directions to the spoken text", async () => {
+    const fetchImpl = vi.fn(async () => audioResponse(wav(0.2)));
+    await synthesizeWithGemini([zones[0]], "fil", { apiKey: "k", style: "Lively and warm.", fetchImpl });
+    const content = JSON.parse(fetchImpl.mock.calls[0][1].body).input[0].content[0];
+    expect(content.text).toBe("Tungkulin");
+    expect(content.annotations[0]).toEqual({ type: "speech_metadata", style: "Lively and warm." });
+  });
+
   it("waits and retries on 429, honoring Retry-After", async () => {
     const sleep = vi.fn(async () => {});
     const fetchImpl = vi

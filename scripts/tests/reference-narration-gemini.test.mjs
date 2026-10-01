@@ -69,6 +69,23 @@ test("without --provider a section keeps its current provider, and switching re-
   expect(manifest.voices).toEqual({ fil: geminiVoiceId(), en: geminiVoiceId() });
 });
 
+test("1.1.3 uses an expressive story style that changes its audio hash", async () => {
+  const organizer = structuredClone(lesson);
+  organizer.manifest.lesson_key = "bhw-community-organizer";
+  const [ordinary] = planReferenceNarration(modules, { lessons: {} }, () => null, { provider: "gemini" });
+  const [story] = planReferenceNarration([{ key: "01-tungkulin-ng-bhw", lessons: [organizer] }],
+    { lessons: {} }, () => null, { provider: "gemini" });
+  expect(story.voice).toBe(ordinary.voice);
+  expect(story.speechStyle).toMatch(/lively, warm, and expressive/);
+  expect(story.contentHash).not.toBe(ordinary.contentHash);
+
+  const fetchImpl = vi.fn(async () => pcmResponse(0.2));
+  await renderNarration(story, { synthesizeWithGemini, geminiApiKey: "k", fetchImpl });
+  const content = JSON.parse(fetchImpl.mock.calls[0][1].body).input[0].content[0];
+  expect(content.text).toBe("Ang bi-eych-dobolyu bilang eych-i-pi-o");
+  expect(content.annotations[0].style).toBe(story.speechStyle);
+});
+
 test("Gemini hears the spoken text; timings keep the displayed text; audio is 32 kbps", async () => {
   const [item] = planReferenceNarration(modules, { lessons: {} }, () => null, { provider: "gemini" });
   const fetchImpl = vi.fn(async () => pcmResponse(0.5));
