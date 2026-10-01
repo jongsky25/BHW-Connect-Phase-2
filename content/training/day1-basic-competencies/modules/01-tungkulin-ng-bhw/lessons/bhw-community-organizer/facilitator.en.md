@@ -74,6 +74,6 @@ Observing this in the room is separate from the BHW finishing the online self-ch
 - The subchapter guide says the LIPH content comes in at the Long (Detalyado) density.
 - Confirm the actual local process; the LIPH does not guarantee funding.
 - Assessment remains separate from the self-check.
-- **Review status:** teaching copy, visuals and this guide still need subject-matter review before publication.
+- **Review status:** the owner confirmed the wording review, audio approval, and phone and tablet checks on 2026-10-01 and authorized publication. Confirm the actual local planning route when facilitating; the LIPH does not guarantee funding.
 
-Draft for review
+Approved for publication

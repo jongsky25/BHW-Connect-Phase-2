@@ -27,4 +27,4 @@ The lesson uses the large type, scrolling story layout already used by 1.1.1 and
 - Listen to both languages of narration after the final copy is rendered. The narration manifest must match the lesson text exactly.
 - Keep the learner-facing copy free of source and review notes; retain sources and review status in private authoring material.
 
-The lesson remains a draft until content, language, visual, and narration review are complete.
+On 2026-10-01, the owner confirmed that the wording was reviewed, the audio was approved, and the phone and tablet checks were completed, then authorized publication. The local planning route remains a facilitator-level check because it varies by location; the lesson makes no funding promise. The approved source is ready for publication to the pilot course.
