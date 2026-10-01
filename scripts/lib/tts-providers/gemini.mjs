@@ -32,6 +32,13 @@ const STYLES = {
   en: "Speak in clear, warm English at a steady teaching pace, like a community health trainer.",
 };
 
+// Story delivery for 1.1.3. Keep directions in speech metadata: Gemini 3.8
+// treats the text itself as the exact words to say.
+export const ORGANIZER_STORY_STYLES = {
+  fil: "Speak in natural Filipino (Tagalog) as an engaging community health storyteller. Sound lively, warm, and expressive, with gentle changes in pitch and pace. Give the residents' responses and Marites's decisions human interest while keeping health guidance clear and respectful. Do not add or change words.",
+  en: "Speak in natural Philippine English as an engaging community health storyteller. Sound lively, warm, and expressive, with gentle changes in pitch and pace. Give the residents' responses and Marites's decisions human interest while keeping health guidance clear and respectful. Do not add or change words.",
+};
+
 // The voice string recorded in content_hash for Gemini renders, so switching
 // provider re-renders a section instead of skipping it as unchanged.
 export function geminiVoiceId(model = GEMINI_TTS_MODEL, voice = GEMINI_VOICE) {
@@ -132,7 +139,7 @@ export function encodeMp3(samples, sampleRate, kbps) {
   return bytes;
 }
 
-async function synthesizeZoneText(text, language, { apiKey, model, voice, fetchImpl, sleep }) {
+async function synthesizeZoneText(text, language, { apiKey, model, voice, style, fetchImpl, sleep }) {
   const body = {
     model,
     input: [
@@ -142,7 +149,7 @@ async function synthesizeZoneText(text, language, { apiKey, model, voice, fetchI
           {
             type: "text",
             text,
-            annotations: [{ type: "speech_metadata", style: STYLES[language] ?? STYLES.en }],
+            annotations: [{ type: "speech_metadata", style: style ?? STYLES[language] ?? STYLES.en }],
           },
         ],
       },
@@ -180,6 +187,7 @@ export async function synthesizeWithGemini(zones, language, options) {
     apiKey,
     model = GEMINI_TTS_MODEL,
     voice = GEMINI_VOICE,
+    style,
     kbps = DEFAULT_MP3_KBPS,
     // What is sent for a zone. Timings always keep zone.text (the displayed
     // words), which is what the renderer matches against the revision.
@@ -191,7 +199,7 @@ export async function synthesizeWithGemini(zones, language, options) {
 
   const clips = [];
   for (const zone of zones) {
-    clips.push(await synthesizeZoneText(speak(zone), language, { apiKey, model, voice, fetchImpl, sleep }));
+    clips.push(await synthesizeZoneText(speak(zone), language, { apiKey, model, voice, style, fetchImpl, sleep }));
   }
 
   const sampleRate = clips[0]?.sampleRate ?? DEFAULT_SAMPLE_RATE;
