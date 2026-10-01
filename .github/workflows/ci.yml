@@ -180,6 +180,10 @@ jobs:
         run: npm run e2e
         env:
           CI: true
+          # The suite runs serially as a few shared test users, so specs that
+          # each send chat requests starve one another at the default 20/min.
+          # chat-guide.spec.ts reads this to size its 429 flood.
+          CHAT_RATE_LIMIT_PER_MINUTE: 60
 
       - name: Upload Playwright traces
         if: failure()
