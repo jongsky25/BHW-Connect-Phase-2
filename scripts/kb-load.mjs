@@ -9,6 +9,9 @@
 //   npm run kb:load -- --project <ref> --modules 3,4 --apply
 //   npm run kb:load -- --project <ref> --modules 2,3 --create-only --apply --publish --owner <username>
 //
+// --only <content-id,...> restricts the entry sync to those entries (use it with
+// an update, to correct one live entry without rewriting the rest of its module).
+//
 // --create-only adds entries and articles that do not exist yet and leaves
 // every existing row untouched. Without it the loader rewrites every existing
 // row in the selected modules (owner, review date and status included), which
@@ -36,7 +39,7 @@ import { PILOT_PROJECT_REF } from "./lib/pilot-guard.mjs";
 import { assertGabayReleaseApproved } from "./lib/gabay-release-approval.mjs";
 
 function parseArgs(argv) {
-  const args = { modules: null, apply: false, publish: false, createOnly: false, owner: null, project: null, corpus: DEFAULT_CORPUS, releasePilot: false };
+  const args = { modules: null, apply: false, publish: false, createOnly: false, only: null, owner: null, project: null, corpus: DEFAULT_CORPUS, releasePilot: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
@@ -44,6 +47,7 @@ function parseArgs(argv) {
     else if (arg === "--dry-run") args.apply = false;
     else if (arg === "--publish") args.publish = true;
     else if (arg === "--create-only") args.createOnly = true;
+    else if (arg === "--only") args.only = argv[++i].split(",").map((id) => id.trim());
     else if (arg === "--owner") args.owner = argv[++i];
     else if (arg === "--project") args.project = argv[++i];
     else if (arg === "--corpus") args.corpus = argv[++i];
@@ -134,7 +138,7 @@ async function syncSynonyms(client, synonyms, plan, apply) {
 
 async function syncEntries(client, content, ctx, plan) {
   const { sources } = content;
-  const { categoryIds, lock, apply, publish, ownerId, modules, createOnly } = ctx;
+  const { categoryIds, lock, apply, publish, ownerId, modules, createOnly, only } = ctx;
 
   // Identity resolution, most reliable first: content_id is the real key
   // (INC-17b), the lockfile is the legacy mapping kept working for projects
@@ -151,6 +155,7 @@ async function syncEntries(client, content, ctx, plan) {
   for (const entry of content.entries) {
     const moduleNumber = Number(entry.file.match(/module-(\d+)/)[1]);
     if (modules && !modules.includes(moduleNumber)) continue;
+    if (only && !only.includes(entry.id)) continue;
 
     const answerEn = renderAnswer(entry, sources, "en");
     const answerFil = renderAnswer(entry, sources, "fil");
@@ -220,7 +225,9 @@ async function syncEntries(client, content, ctx, plan) {
 }
 
 async function syncArticles(client, content, ctx, plan) {
-  const { categoryIds, lock, apply, publish, ownerId, modules, createOnly } = ctx;
+  const { categoryIds, lock, apply, publish, ownerId, modules, createOnly, only } = ctx;
+  // --only names entries; articles are not part of it.
+  if (only) return;
   const existing = await selectAll(client, "kb_articles", "id,title_en");
   const byTitle = new Map(existing.map((row) => [row.title_en, row.id]));
   const knownIds = new Set(existing.map((row) => row.id));
@@ -309,6 +316,7 @@ async function main() {
     ownerId,
     modules: args.modules,
     createOnly: args.createOnly,
+    only: args.only,
   };
   await syncEntries(client, content, ctx, plan);
   await syncArticles(client, content, ctx, plan);

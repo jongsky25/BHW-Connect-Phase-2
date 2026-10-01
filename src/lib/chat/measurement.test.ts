@@ -283,6 +283,67 @@ describe("resolveMeasurement", () => {
   });
 });
 
+describe("advice attached to a result", () => {
+  const advice = (q: string) => ask(q)?.advice?.content_id ?? null;
+
+  it.each([
+    // blood pressure: one advice entry per band
+    ["BP 118/76", "adv-bp-normal"],
+    ["BP 125/82", "adv-bp-normal"],
+    ["BP 135/88", "adv-bp-high-normal"],
+    ["BP 150/95", "adv-bp-raised"],
+    ["BP 165/102", "adv-bp-raised"],
+    ["BP 185/112", "adv-bp-grade-3"],
+    ["BP 85/55", "adv-bp-low"],
+    // BMI follows the Asia-Pacific category
+    ["BMI 45 kg 160 cm 30 years old", "adv-bmi-underweight"],
+    ["BMI 55 kg 160 cm 30 years old", "adv-bmi-normal"],
+    ["BMI 62 kg 160 cm 35 years old", "adv-bmi-overweight"],
+    ["BMI 70 kg 160 cm 35 years old", "adv-bmi-obese"],
+    ["BMI 90 kg 160 cm 35 years old", "adv-bmi-obese"],
+  ])("%s -> %s", (q, id) => {
+    expect(advice(q)).toBe(id);
+  });
+
+  it("offers no advice when the reply is a prompt, a refusal or an emergency", () => {
+    expect(advice("BMI ko 62 kg")).toBeNull(); // needs input
+    expect(advice("BMI 62 kg 160 cm 15 years old")).toBeNull(); // under 19
+    expect(advice("BMI 62 kg 160 cm 28 taong gulang buntis")).toBeNull(); // pregnant
+    expect(advice("BP 80/120")).toBeNull(); // invalid
+    expect(advice("BP 160/100 sumasakit ang dibdib")).toBeNull(); // emergency steps instead
+  });
+
+  it("offers no advice when the entry is not published", () => {
+    const withoutAdvice = ncdKbEntries.filter(
+      (e) => !e.content_id?.startsWith("adv-"),
+    );
+    expect(
+      resolveMeasurement("BP 150/95", withoutAdvice)?.advice,
+    ).toBeUndefined();
+    expect(resolveMeasurement("BP 150/95", withoutAdvice)?.outcome).toBe(
+      "result",
+    );
+  });
+
+  it("every result category the calculator can return has an advice entry", () => {
+    const categories = [
+      "BP 110/70",
+      "BP 125/82",
+      "BP 135/88",
+      "BP 150/95",
+      "BP 170/105",
+      "BP 185/112",
+      "BP 85/55",
+      "BMI 45 kg 160 cm 30 years old",
+      "BMI 55 kg 160 cm 30 years old",
+      "BMI 62 kg 160 cm 30 years old",
+      "BMI 70 kg 160 cm 30 years old",
+      "BMI 90 kg 160 cm 30 years old",
+    ];
+    for (const q of categories) expect(ask(q)?.advice, q).toBeDefined();
+  });
+});
+
 describe("resolveTurn with a measurement", () => {
   it("routes to measurement and never echoes the numbers into the persisted query", () => {
     const r = turn("BMI ko 62 kg 160 cm 35 taong gulang");

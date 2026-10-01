@@ -41,6 +41,9 @@ type MeasurementPayload = {
   text_fil: string;
   text_en: string;
   related: ChatEntrySummary[];
+  // The clinician-approved "what should I tell them" entry for this result,
+  // or null (missing input, invalid, emergency, or not published).
+  advice: ChatEntrySummary | null;
   route?: ChatRoute;
 };
 
@@ -362,6 +365,7 @@ function AnswerBubble({
         >
           {pick(locale, result.text_fil, result.text_en)}
         </div>
+        {result.advice ? <MeasurementAdvice advice={result.advice} locale={locale} t={t} /> : null}
         <FeedbackControls exchange={exchange} t={t} onFeedback={onFeedback} />
         {result.related.length > 0 ? (
           <div className="flex flex-col gap-2">
@@ -447,6 +451,39 @@ function AnswerBubble({
               {pick(locale, entry.question_fil, entry.question_en)}
             </button>
           ))}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+// Shown inline, from the response, so opening it costs no extra request (the
+// Chat Guide is rate-limited) and shows exactly the approved entry rather than
+// re-scoring a question against the whole KB.
+function MeasurementAdvice({
+  advice,
+  locale,
+  t,
+}: {
+  advice: ChatEntrySummary;
+  locale: string;
+  t: ChatTranslations;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="flex flex-col gap-2">
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((value) => !value)}
+        className="min-h-[44px] rounded-md border border-ink/20 px-3 py-2 text-left text-sm font-medium text-ink hover:bg-ink/5"
+      >
+        {t("adviceButton")}
+      </button>
+      {open ? (
+        <div role="region" aria-label={t("adviceHeading")} className="rounded-lg border border-ink/10 bg-canvas px-4 py-3 text-ink">
+          <p className="mb-1 text-sm font-semibold text-ink/70">{t("adviceHeading")}</p>
+          {pick(locale, advice.answer_fil, advice.answer_en)}
         </div>
       ) : null}
     </div>

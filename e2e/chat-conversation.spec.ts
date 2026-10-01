@@ -242,6 +242,7 @@ test("Chat Guide computes BMI and blood pressure categories and keeps the patien
       urgency?: string;
       text_en?: string;
       related?: Array<{ content_id: string | null }>;
+      advice?: { content_id: string | null } | null;
       session_id: string | null;
     };
     expect(bmi.type).toBe("measurement");
@@ -249,14 +250,23 @@ test("Chat Guide computes BMI and blood pressure categories and keeps the patien
     expect(bmi).toMatchObject({ kind: "bmi", outcome: "result", urgency: "none" });
     expect(bmi.text_en).toMatch(/BMI 24\.2.*overweight \(at risk\).*normal/);
     expect(bmi.related?.map((entry) => entry.content_id)).toContain("m2-bmi-categories");
+    // 24.2 is "overweight" on the Asia-Pacific scale, which the advice follows.
+    expect(bmi.advice?.content_id).toBe("adv-bmi-overweight");
 
     const bp = (await (
       await page.request.post("/api/chat", {
         data: { question: "BP 150/95, mataas ba?", session_id: bmi.session_id },
       })
-    ).json()) as { type: string; kind?: string; urgency?: string; text_en?: string };
+    ).json()) as {
+      type: string;
+      kind?: string;
+      urgency?: string;
+      text_en?: string;
+      advice?: { content_id: string | null } | null;
+    };
     expect(bp).toMatchObject({ type: "measurement", kind: "bp", urgency: "none" });
     expect(bp.text_en).toMatch(/grade 1/);
+    expect(bp.advice?.content_id).toBe("adv-bp-raised");
 
     // A knowledge question that merely contains a reading-shaped number is
     // still answered from the KB, not computed.
@@ -307,6 +317,14 @@ test("Chat Guide computes BMI and blood pressure categories and keeps the patien
     await page.getByLabel("Ang iyong tanong").fill("BP 165/102");
     await page.getByRole("button", { name: "Ipadala" }).click();
     await expect(page.getByText(/grade 2/i)).toBeVisible({ timeout: 10_000 });
+
+    // The approved "what should I tell them" guidance opens inline from the
+    // result, without another request.
+    const adviceButton = page.getByRole("button", { name: /Ano ang sasabihin ko sa kanila\?/ });
+    await expect(adviceButton).toBeVisible();
+    await expect(page.getByText(/sakit sa dibdib/)).toHaveCount(0);
+    await adviceButton.click();
+    await expect(page.getByRole("region", { name: "Susunod na hakbang" })).toContainText(/sakit sa dibdib/);
   } finally {
     await setConversationFlag(request, false);
   }

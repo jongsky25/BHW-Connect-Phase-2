@@ -123,5 +123,12 @@ The reply offers the published `m2-bmi-*` / `m3-bp-*` entries as follow-ups.
   thumbs-down on a measurement is not copied to the content-gap log.
 - The numeric low-BP cut-off is not stated to the BHW until BLHSD–WHO confirm it
   (`m3-bp-low-numbers` is pending); the reply says to go by symptoms.
+- Each result carries one clinician-approved advice entry (`adv-bp-*`,
+  `adv-bmi-*` in `module-5.json`): the reply shows a "What should I tell them?"
+  button that opens it inline from the response, with no extra request. BMI
+  follows the Asia-Pacific category. A missing, invalid, out-of-scope or
+  emergency reply carries none, and neither does one whose entry is unpublished.
+  The calculator adds no clinical wording of its own to this: the advice is the
+  entry, as the reviewer approved it.
 - Emergency signs with a raised reading reuse the `m3-very-high-with-symptoms`
   steps. Add a sign by adding a phrase to `SYMPTOM_PHRASES` in `parse.ts`.

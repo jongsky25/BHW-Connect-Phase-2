@@ -1,6 +1,6 @@
 # BMI and blood-pressure advice: clinical review sheet
 
-Draft wording for the "What should I tell them / what do I do next" guidance a BHW sees after the Chat Guide computes a BMI or blood-pressure category. **None of it is published.** Every entry is `tier: pending` in `content/kb/hhp-ncd/entries/module-5.json`, so it loads as a draft and BHWs cannot see it until the reviewer approves it and the tier is changed to `cited`.
+Draft wording for the "What should I tell them / what do I do next" guidance a BHW sees after the Chat Guide computes a BMI or blood-pressure category. **Status: approved by the clinical reviewer on 1 Oct 2026**, as written below; the entries are `tier: cited` in `content/kb/hhp-ncd/entries/module-5.json`. They were drafted as `pending` first, so no BHW saw them before approval. Any change to the wording after this point is an ordinary content edit and should come back to the reviewer.
 
 For each entry please mark **Approve / Change (write the change) / Remove**, in both English and Filipino. Please look especially at:
 
