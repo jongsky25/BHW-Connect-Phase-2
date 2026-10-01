@@ -31,9 +31,15 @@ export const BMI_LIMITS = {
   heightCm: { min: 100, max: 250 },
 } as const;
 
-/** Office BP grades (ESC/ESH 2018, as used by the Philippine Society of
- *  Hypertension CPG). A reading takes the higher of its systolic and
- *  diastolic grades. Bounds are exclusive upper limits. */
+/** Office BP grades from the 2018 ESC/ESH guideline. These are NOT the
+ *  Philippine classification: the Philippine Society of Hypertension 2020 CPG
+ *  uses three bands (normal <120/80, borderline 120-139/80-89, hypertension
+ *  >=140/90, confirmed on at least two readings on two separate days) and no
+ *  grades, though the 140/90 boundary is shared. The Philippine acute severe
+ *  hypertension threshold (2024 CPG) is also diastolic >=120, not the >=110
+ *  of grade 3 below. See docs/bp-thresholds-evidence.md. A reading takes the
+ *  higher of its systolic and diastolic grades. Bounds are exclusive upper
+ *  limits. */
 export const BP_SYSTOLIC_LEVELS = [
   { upTo: 120, level: "optimal" },
   { upTo: 130, level: "normal" },
