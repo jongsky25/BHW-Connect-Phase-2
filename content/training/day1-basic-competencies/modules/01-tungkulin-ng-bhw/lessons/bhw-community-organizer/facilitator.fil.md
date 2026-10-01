@@ -74,6 +74,6 @@ Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check.
 - Ayon sa gabay ng subchapter, kasama ang LIPH sa Detalyado (Long) na density.
 - Kumpirmahin ang aktuwal na lokal na proseso; hindi garantiya ng pondo ang LIPH.
 - Hiwalay ang pagtatasa sa self-check.
-- **Status ng pagrepaso:** kailangan pa ng pagrepaso ng eksperto sa nilalaman, visual, at gabay na ito bago ilathala.
+- **Status ng pagrepaso:** kinumpirma ng may-ari ang pagrepaso sa mga salita, pag-apruba sa audio, at pagsuri sa phone at tablet noong 2026-10-01 at pinahintulutan ang paglalathala. Kumpirmahin ang aktuwal na lokal na proseso sa pagtuturo; hindi garantiya ng pondo ang LIPH.
 
-Draft for review
+Aprubado para ilathala
