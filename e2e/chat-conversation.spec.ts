@@ -1,5 +1,12 @@
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
-import { STABLE_ADMIN, STABLE_BHW, STABLE_SUPER_ADMIN, getAccessToken, restGet } from "./fixtures/auth";
+import {
+  OTHER_BARANGAY_BHW,
+  STABLE_ADMIN,
+  STABLE_BHW,
+  STABLE_SUPER_ADMIN,
+  getAccessToken,
+  restGet,
+} from "./fixtures/auth";
 
 // INC-17. The conversation layer only works against the real HHP+ NCD corpus
 // (the red-flag and clarifier rules point at m3-/m4-/m1- entry ids), so this
@@ -215,7 +222,15 @@ test("Chat Guide computes BMI and blood pressure categories and keeps the patien
   await setConversationFlag(request, true);
 
   try {
-    await loginAsBhw(page);
+    // A different BHW from the rest of this spec: /api/chat allows 20 requests
+    // per 60s per user and the suite runs serially, so this test's calls on
+    // the stable BHW would eat into chat-guide.spec.ts's rate-limit budget
+    // (it asserts its first request is not already throttled).
+    await page.goto("/login");
+    await page.getByLabel("Username").fill(OTHER_BARANGAY_BHW.username);
+    await page.getByLabel("Password").fill(OTHER_BARANGAY_BHW.password);
+    await page.getByRole("button", { name: "Mag-login" }).click();
+    await expect(page).toHaveURL("/home", { timeout: 10_000 });
 
     const bmi = (await (
       await page.request.post("/api/chat", { data: { question: "BMI ko 62 kg 160 cm 35 taong gulang" } })
