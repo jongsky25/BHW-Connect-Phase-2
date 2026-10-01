@@ -19,10 +19,10 @@ The [BHW Reference Manual](source-material/day1-basic-competencies/bhw-reference
 
 The large type story layout used in lessons 1.1.1–1.1.3 now also covers 1.1.4 in Read, Slides, and the full-screen presenter. The new image is `public/training/bhw-1-1/service-provider-10b884207b48.png` (SHA-256 `10b884207b488060ea252ace389301cad0a90852b846c36ca6f9344bbe9efdd1`). It depicts fictional Marites listening to fictional Aling Nena outside a barangay health station, with a separate midwife in the background. The backpack implies a child without depicting a symptom or treatment. The image is illustrative, not a real service encounter or clinical instruction; no logos, readable records, or medical procedure were requested. It was generated for this lesson on 2026-10-01.
 
-## Review points before publication
+## Review record and local use
 
-- A BHW and supervising clinician should review the Filipino and English wording, especially the medicine request, scope of training, and local referral, emergency, and follow-up language. The lesson provides no medicine or treatment instructions.
+- The lesson provides no medicine or treatment instructions. Its medicine request, scope of training, and referral, emergency, and follow-up language were part of the owner's review of this revision.
 - The facilitator should replace generic local steps with confirmed contacts and procedures. Detailed records and forms belong in lesson 1.1.5.
-- Review all six Read and Slides screens in both languages on narrow phone portrait, phone landscape, and tablet, including the image crop, choices, feedback, and full-screen presenter.
-- Twelve Gemini narration tracks were rendered for the six screens in both languages. Listen to both languages during content review; the narration manifest and published lesson text must match exactly. Any copy change requires re-rendering affected tracks before publication.
-- This build is a draft for review. No course content publication is recorded here.
+- The owner confirmed on 2026-10-01 that everything in this 1.1.4 revision was reviewed and approved, and authorized live deployment. That approval covers the submitted Filipino and English Read and Slides copy, practice check, facilitator material, illustration, and twelve Gemini narration tracks. It does not assert a separate independent clinical review.
+- The narration manifest and published lesson text must match exactly. Any later copy change requires re-rendering affected tracks.
+- Merge, production deployment, and course publication are separate release actions and must be verified after this approval record.
