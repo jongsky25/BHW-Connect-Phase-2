@@ -1,19 +1,23 @@
-## [first-contact] A resident asks for help
+## [first-contact] Marites is the first person approached
 
-Aling Nena asks where she can speak with a health worker about her child. As a BHW, Marites may be the first person approached. She is part of the city or municipal primary care team and assists the barangay midwife. Being a first contact does not mean having every answer or providing every treatment.
+Aling Nena approaches BHW Marites. She wants to know whom to speak with about her child's needs. As part of the city or municipal primary care team, Marites assists the barangay midwife. She may be Aling Nena's first contact, but she does not have to answer every question or provide every treatment.
 
-## [guide] Guide to an appropriate service
+## [clarify-need] Listen before guiding
 
-Marites listens to the need and helps identify an appropriate health worker or facility. She confirms local access arrangements and explains the next step. The pathway illustrates coordination, not a mandatory route for everyone. Follow local referral and emergency procedures when applicable.
+Marites asks, “What help do you need, and have you spoken with a health worker?” She gives Aling Nena time to explain and repeats what she understood. She does not guess at an illness or its treatment. Understanding the need helps the health team provide appropriate guidance.
 
-## [boundaries] Assist within your training
+## [boundaries] Know the limits of your role
 
-The manual lists interviewing, vital signs, recording, household profiling, and first aid as examples of initial services. Perform only tasks covered by your training, local policy, and required supervision. This lesson does not teach measurement or treatment procedures. When uncertain or outside your scope, seek guidance from the health team.
+Examples of initial services include interviewing, taking vital signs, recording, preparing a household profile, and first aid. Perform only tasks covered by your training, local policy, and required supervision. This lesson does not teach measurement, first aid, or treatment. If a request is beyond your scope or you are unsure, seek guidance from the midwife or health team.
 
-## [follow-up] Guidance includes follow-up
+## [guide] Give a clear next step
 
-The BHW’s role continues after explaining where to go. Following health-team instructions, the BHW monitors the situation, records relevant information, and sends an update to the right person. Confirm what to report, when, and to whom; do not invent an outcome or promise that no further follow-up is needed.
+Marites confirms which health worker or facility Aling Nena should approach under local arrangements. She explains whom to contact and how to get there. She might say, “I will check with the health team who can speak with you and how you can reach them.” She checks that Aling Nena understands the next step. Follow local referral and emergency procedures when applicable; there is no single route for every place or situation.
+
+## [follow-up] Follow through with the health team
+
+Helping does not end with directions. Following the health team's instructions, Marites confirms what to monitor or record, when to follow up, and whom to update. She does not invent an outcome or promise that nothing further is needed. The next lesson covers specific records and forms.
 
 ## [check] Apply your learning
 
-A resident asks for advice beyond your training. What is appropriate?
+Aling Nena asks Marites what medicine to give her child. Giving that advice is outside Marites's training. What is her best response?

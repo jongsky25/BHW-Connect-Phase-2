@@ -1,78 +1,65 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can respond to a resident who asks for help by listening to the need, guiding them to an appropriate health worker or facility, staying within their own training and supervision, and saying what follow-up they will do and who they will report to.
+By the end of the lesson, the BHW can demonstrate a full response to a resident seeking help: listen and clarify the need, identify an appropriate health worker and next step, stay within training and supervision, and confirm follow-up and reporting under the health team's instructions.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 60 minutes in a face-to-face session (the Health Service Provider part of the 6-hour allocation in the subchapter guide). Self-study of the lesson alone takes about 10 minutes.
-- **Materials:** manila paper and markers; the lesson's slides (the first-contact scene and the need → health worker → next step pathway); your area's local referral and emergency contact information, written out on manila paper; three or four role-play cards with a resident's request (see Practice activity).
+- **Time:** about 60 minutes of face-to-face practice within the Health Service Provider discussion. Self-study of the six screens takes about 10 minutes.
+- **Materials:** the lesson's six slides; manila paper and markers; confirmed local information about health workers, facilities, referral, and emergency procedures; fictional resident-request cards; a short observation checklist.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Have the local facts ready: which midwife covers which purok, the RHU or health center hours, and the local referral and emergency procedures. The lesson tells BHWs to follow these "when applicable", so they will ask what they are.
-- Write the role-play cards yourself, using fictional residents only. Make at least one card a request clearly beyond a BHW's training (for example, a resident asking what medicine to give), so the group practises seeking guidance.
-- Scope limits: the lesson lists interviewing, vital signs, recording, household profiling and first aid only as **examples** of initial services from the manual. **Do not teach measurement, first aid or treatment procedures in this lesson**, and do not give clinical advice when answering role-play questions. Those belong to other trainings and to the health team.
+- Read all six Read sections and Slides in Filipino and English. Both modes use the same situation and check.
+- Confirm with the supervising midwife or health team whom to contact, how residents reach services, and the local referral and emergency procedures. Do not teach one pathway as universal.
+- Prepare fictional role-play cards. Include Aling Nena's request for medicine advice, which is beyond Marites's training in this scenario. Do not use real patient names or information.
+- Interviewing, vital signs, recording, household profiles, and first aid are **examples** in the manual. Do not teach measurement, first aid technique, diagnosis, or treatment in this lesson. Actual tasks depend on training, local policy, and supervision.
 
 ## [opening] Opening
 
-Ask the group: *"When a neighbour knocks on your door because they are worried about their child, what is the first thing you say?"* Take four or five answers and write them word for word on manila paper. Do not comment on them yet; you will come back to them in the role-play.
+Ask: *"When a resident first approaches you with a question about her child, what do you do first?"* Record the answers. Return to them after the role-play to see whether they include listening and a clear next step.
 
 ## [steps] Steps
 
-1. **First contact (Read "A resident asks for help", first slide).** Aling Nena asks Marites where she can talk to a health worker about her child. Point out that Marites is part of the city or municipal primary care team and assists the barangay midwife. Ask: *"Does being the first person asked mean you must have the answer?"*
-2. **Guide (Read "Guide to an appropriate service", second slide).** Walk through the pathway: need → appropriate health worker → clear next step. Show your local referral and emergency information. Say that the pathway is an example of coordination, not one route everyone must take. Ask: *"For Aling Nena, who is the appropriate health worker in our area, and what would you tell her about getting there?"*
-3. **Boundaries (Read "Assist within your training", third slide).** Read out the manual's examples of initial services. Ask: *"Which of these have you been trained and supervised to do?"* Answers will differ by barangay — that is the point. Anything not covered by training, local policy and supervision goes to the health team.
-4. **Follow-up (Read "Guidance includes follow-up", fourth slide).** Ask: *"After Aling Nena leaves your house, is your part finished?"* Bring out the three moves on the slide: confirm the instruction, monitor and record, report back to the team. Stress: confirm what to report, when and to whom; never invent an outcome.
-5. **Back to the opening.** Return to the "first thing you say" list. Ask which answers start by listening to the need.
-6. **Self-check.** Read the check scenario and let the group discuss before revealing the answer.
+1. **First contact.** Introduce Marites and Aling Nena. Ask how partnering with the midwife helps a BHW who cannot answer every question.
+2. **Listening.** Have a participant ask Marites's question about Aling Nena's need. Ask them to repeat what they heard without guessing at illness or treatment.
+3. **Boundaries.** Show the manual's examples of initial services. Ask which fall within participants' actual training and supervision. The supervising health team confirms local scope.
+4. **Guidance.** Using confirmed local information, have participants say whom Aling Nena should approach, how to reach them, and how to check her understanding. Mention local referral and emergency procedures when applicable.
+5. **Follow-up.** Ask: *"What must you confirm with the health team before promising to follow up?"* Listen for what to report, when, and to whom. Specific forms belong in the next lesson.
+6. **Self-check.** Present Aling Nena's request for medicine advice. Ask why "go to the health center" alone is incomplete and why guessing at a medicine is outside scope.
 
 ## [expected-answers] Expected answers and how to respond
 
-- **"I tell her to go to the health center."** Good, and often right. Ask: *"Would she know when it's open and who to ask for? What will you do after?"* Build in the clear next step and follow-up.
-- **They give clinical advice** (a medicine, a home remedy, a diagnosis). Acknowledge the care behind it, then ask: *"Is that covered by your training and your midwife's instruction? If not, what would you do instead?"* Do not correct the medical content yourself; bring it back to seeking guidance.
-- **"If I say I don't know, they'll lose trust in me."** This is a real worry. Answer: *"Guiding her to the right health worker is help. Saying 'Let me check with our midwife' is part of the job."*
-- **Different lists of what they are allowed to do.** Do not rule on who is right. Say that it depends on each BHW's training, local policy and supervision, and that the midwife or health team is who confirms it.
+- **"I would tell her to go to the health center immediately."** Ask whether Aling Nena knows whom to speak with, how to get there, and what happens afterward. Confirm local arrangements first.
+- **"She may lose trust if I cannot name a medicine."** Explain that honestly stating a boundary and connecting her to the right health worker is part of helping.
+- **Participants give different lists of tasks they can perform.** Do not decide from memory. Bring the discussion back to each BHW's training, local policy, and supervising midwife or health team.
+- **Someone proposes a specific medicine or diagnosis.** Do not validate or correct clinical content in this lesson. Ask whether it is within training and take the request to the health team.
 
 ## [misconception] Common misconception
 
-**"Being the first contact means I should be able to answer or treat everything myself."** Residents come to BHWs first, so BHWs often feel they must solve the problem on the spot. Correct it without embarrassing anyone: ask the group, not one person, *"What did Marites do for Aling Nena — treat her child, or guide her?"* The lesson says first contact does not mean having every answer or providing every treatment. Guiding the resident to the appropriate health worker, within your training, is the service.
+**"If I am the first contact, I must have every answer."** Return to the illustration: Marites listens to Aling Nena, and the midwife is a partner. Her role is to listen, assist within scope, guide to appropriate care, and follow the team's instructions afterward.
 
 ## [practice] Practice activity
 
-Role-play in pairs using the cards. One BHW plays the resident with the request on the card; the other plays the BHW. The BHW must (1) ask about the need, (2) say who the appropriate health worker is and what the next step is, and (3) say what follow-up they will do and who they will report to. Swap roles for a second card. Make sure every pair gets at least one card that is beyond a BHW's training. Watch two or three pairs closely; the group gives one strength and one suggestion.
+Work in pairs. One person plays a resident with a request on a card; the other plays the BHW. Use Aling Nena's situation first, then another fictional request. The BHW should (1) ask about and clarify the need, (2) seek guidance when the request exceeds training, (3) explain a confirmed health worker and next step, and (4) confirm what to report, when, and to whom. Swap roles. Observe actions, not just answers to the online check.
 
 ## [answer-key] Self-check answer key
 
-The lesson has one check. It appears at the end of Read ("Apply your learning") and again on the last slide; it is the same question, so it is covered once here.
+Read and the final Slide contain the same check. Correct response: **listen, seek health-team guidance, explain the next step, and confirm follow-up.**
 
-- **"A resident asks for advice beyond your training. What is appropriate?"** → **Seek health-team guidance and explain the next step.** Guiding someone to the appropriate health worker is assistance; it respects training boundaries and follows local follow-up instructions.
-  - *Guess so the resident will not wait* is wrong: guessing gives advice outside your training. Helping does not require guessing an answer.
-  - *Say your role is finished* is wrong: the BHW's role continues — guiding, then following up and reporting to the health team.
+- Suggesting a medicine based on what neighbors do is advice beyond training in this scenario.
+- Saying only to go to the health center and ending the conversation leaves out the appropriate contact, how to reach them, and follow-up.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator — *identify appropriate assistance, guidance and follow-up within training and supervision* — during the role-play:
+- **Can do:** asks and listens; states the boundary without prompting; gives a confirmed contact and clear next step; states follow-up and reporting under instructions.
+- **Needs practice:** guides appropriately but needs a prompt about scope or follow-up.
+- **Not yet:** gives advice beyond training or cannot give a clear next step even with prompting.
 
-- **Kaya na:** without prompting, the BHW asks about the need, names an appropriate health worker and next step, seeks guidance when the request is beyond their training, and states what follow-up they will do and who they will report to.
-- **Kailangan pa ng practice:** the BHW guides the resident correctly but leaves out follow-up or reporting, or only seeks guidance on the out-of-scope card after you ask *"Is that within your training?"*
-- **Hindi pa:** the BHW gives advice or treatment beyond their training, or ends the conversation with "go to the health center" and no next step, and does not change this even with prompts.
+## [support] If more support is needed
 
-Observing this in the role-play is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
-
-## [support] If a BHW needs more support
-
-- Model one role-play yourself, playing the BHW, with the out-of-scope card. Then let them try the same card.
-- Give them the three prompts on a small card — *Need? Who and next step? Follow-up and report to whom?* — to use in the next role-play, then take it away for the one after.
-- Pair them with a BHW rated **Kaya na** who plays the resident.
-- Re-observe at the next session with the same card, not a new one. If they gave clinical advice, let their supervising midwife know so it can be followed up in the field.
+Demonstrate the role-play using the same card. Give a short cue: *What is needed? Whom to approach and how? What follow-up and to whom do you report?* Repeat the same card to see progress. If unsafe clinical advice appears, connect the participant with the supervising midwife for appropriate training.
 
 ## [sources-review] Sources and review notes
 
-- Day 1 presentation pp. 11–12; BHW Reference Manual p. 12.
-- Facilitator Guide PDF 19 allocates six hours to the module; the narrative on PDF 20 says at least three. The 60-minute figure above is this lesson's share of the module plan.
-- First contact does not mean independent treatment. The lesson does not teach measurement or treatment procedures; the manual's list of initial services is examples only.
-- Assessment remains separate from the self-check.
-- **Review status:** teaching copy, visuals and this guide still need subject-matter review before publication.
-
-Draft for review
+- Day 1 presentation, slides 11–12; BHW Reference Manual, PDF p. 12. The subchapter facilitator guide allocates more time overall; this 60-minute plan covers only this part.
+- A local midwife or health team must confirm the referral, emergency, and follow-up examples before the face-to-face session. This lesson provides no clinical procedure or medicine advice.

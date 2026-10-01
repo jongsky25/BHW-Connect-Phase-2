@@ -5,10 +5,10 @@
     "title_fil": "Bilang Health Service Provider",
     "title_en": "As a Health Service Provider",
     "objectives_fil": [
-      "Matukoy ang angkop na pagtulong, paggabay, at follow-up ayon sa pagsasanay at pangangasiwa."
+      "Sa residenteng humihingi ng tulong, matanong ang pangangailangan, maituro ang angkop na health worker at malinaw na susunod na hakbang, manatili sa loob ng pagsasanay, at masabi ang follow-up ayon sa tagubilin ng health team."
     ],
     "objectives_en": [
-      "Identify appropriate assistance, guidance, and follow-up within training and supervision."
+      "Given a resident seeking help, ask about the need, identify an appropriate health worker and clear next step, stay within training, and state the follow-up directed by the health team."
     ],
     "required": true
   },
@@ -22,20 +22,20 @@
       "asset_ids": [
         "A01"
       ],
-      "takeaway_fil": "Bahagi ng primary care team; katuwang ng midwife.",
-      "takeaway_en": "Part of the primary care team; a partner to the midwife.",
+      "takeaway_fil": "Maaaring unang lapitan ang BHW; katuwang siya ng midwife at health team.",
+      "takeaway_en": "A BHW may be the first contact and works with the midwife and health team.",
       "check": null
     },
     {
-      "id": "guide",
+      "id": "clarify-need",
       "concept_ids": [
-        "m1.provider.guide"
+        "m1.provider.firstcontact"
       ],
       "asset_ids": [
         "A05"
       ],
-      "takeaway_fil": "Halimbawa ng koordinasyon. Sundin ang lokal na referral at emergency procedures.",
-      "takeaway_en": "A coordination example. Follow local referral and emergency procedures.",
+      "takeaway_fil": "Makinig at linawin ang pangangailangan bago gumabay.",
+      "takeaway_en": "Listen and clarify the need before guiding someone.",
       "check": null
     },
     {
@@ -46,8 +46,20 @@
       "asset_ids": [
         "A05"
       ],
-      "takeaway_fil": "Mga halimbawa lamang. Gawin ayon sa pagsasanay, lokal na patakaran, at pangangasiwa.",
-      "takeaway_en": "Examples only. Work within training, local policy, and supervision.",
+      "takeaway_fil": "Mga halimbawa lamang ang paunang serbisyo; sundin ang pagsasanay, lokal na patakaran, at pangangasiwa.",
+      "takeaway_en": "Initial services are examples; follow training, local policy, and supervision.",
+      "check": null
+    },
+    {
+      "id": "guide",
+      "concept_ids": [
+        "m1.provider.guide"
+      ],
+      "asset_ids": [
+        "A05"
+      ],
+      "takeaway_fil": "Kumpirmahin kung sino ang lalapitan at ipaliwanag ang malinaw na susunod na hakbang.",
+      "takeaway_en": "Confirm whom to approach and explain a clear next step.",
       "check": null
     },
     {
@@ -58,8 +70,8 @@
       "asset_ids": [
         "A05"
       ],
-      "takeaway_fil": "Ang follow-up ay nagpapatuloy sa ugnayan ng residente at health team.",
-      "takeaway_en": "Follow-up sustains the connection between the resident and health team.",
+      "takeaway_fil": "Kumpirmahin kung ano, kailan, at kanino mag-uulat ayon sa health team.",
+      "takeaway_en": "Confirm what to report, when, and to whom under the health team’s instructions.",
       "check": null
     },
     {
@@ -72,28 +84,28 @@
         "m1.provider.monitoring"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Makinig, tumulong sa loob ng saklaw, gumabay, at mag-follow-up kasama ang health team.",
-      "takeaway_en": "Listen, assist within scope, guide, and follow up with the health team.",
+      "takeaway_fil": "Makinig, manatili sa saklaw, gumabay, at mag-follow-up kasama ang health team.",
+      "takeaway_en": "Listen, stay within scope, guide, and follow through with the health team.",
       "check": {
-        "prompt_fil": "Humingi ng payong lampas sa iyong pagsasanay ang residente. Ano ang angkop?",
-        "prompt_en": "A resident asks for advice beyond your training. What is appropriate?",
+        "prompt_fil": "Tinanong ni Aling Nena si Marites kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Marites ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?",
+        "prompt_en": "Aling Nena asks Marites what medicine to give her child. Giving that advice is outside Marites's training. What is her best response?",
         "options": [
           {
-            "fil": "Hulaan ang sagot para hindi siya maghintay.",
-            "en": "Guess so the resident will not wait."
+            "fil": "Magmungkahi ng gamot batay sa karaniwang ginagawa ng kapitbahay.",
+            "en": "Suggest a medicine based on what neighbors usually do."
           },
           {
-            "fil": "Humingi ng gabay sa health team at ipaliwanag ang susunod na hakbang.",
-            "en": "Seek health-team guidance and explain the next step."
+            "fil": "Sabihing pumunta sa health center at tapusin na ang usapan.",
+            "en": "Tell her to go to the health center and end the conversation."
           },
           {
-            "fil": "Sabihing tapos na ang iyong tungkulin.",
-            "en": "Say your role is finished."
+            "fil": "Makinig, humingi ng gabay sa health team, ipaliwanag ang susunod na hakbang, at kumpirmahin ang follow-up.",
+            "en": "Listen, seek health-team guidance, explain the next step, and confirm the follow-up."
           }
         ],
-        "correct_option_index": 1,
-        "feedback_fil": "Ang paggabay sa angkop na health worker ay pagtulong. Panatilihin ang hangganan ng pagsasanay at sundin ang lokal na tagubilin sa follow-up.",
-        "feedback_en": "Guiding someone to the appropriate health worker is assistance. Respect training boundaries and follow local follow-up instructions."
+        "correct_option_index": 2,
+        "feedback_fil": "Hindi nagbibigay si Marites ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.",
+        "feedback_en": "Marites does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions."
       }
     }
   ],
@@ -117,10 +129,12 @@
       "id": "m1.provider.firstcontact",
       "read_ids": [
         "first-contact",
+        "clarify-need",
         "check"
       ],
       "slide_ids": [
         "first-contact-slide",
+        "clarify-need-slide",
         "check-slide"
       ],
       "source_ids": [

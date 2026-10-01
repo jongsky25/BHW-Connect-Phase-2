@@ -86,6 +86,17 @@ test("1.1.3 uses an expressive story style that changes its audio hash", async (
   expect(content.annotations[0].style).toBe(story.speechStyle);
 });
 
+test("1.1.4 uses a calm, expressive service story style", () => {
+  const service = structuredClone(lesson);
+  service.manifest.lesson_key = "bhw-service-provider";
+  const [ordinary] = planReferenceNarration(modules, { lessons: {} }, () => null, { provider: "gemini" });
+  const [story] = planReferenceNarration([{ key: "01-tungkulin-ng-bhw", lessons: [service] }],
+    { lessons: {} }, () => null, { provider: "gemini" });
+  expect(story.speechStyle).toMatch(/warm, expressive community health storyteller/);
+  expect(story.speechStyle).toMatch(/Do not add or change words/);
+  expect(story.contentHash).not.toBe(ordinary.contentHash);
+});
+
 test("Gemini hears the spoken text; timings keep the displayed text; audio is 32 kbps", async () => {
   const [item] = planReferenceNarration(modules, { lessons: {} }, () => null, { provider: "gemini" });
   const fetchImpl = vi.fn(async () => pcmResponse(0.5));

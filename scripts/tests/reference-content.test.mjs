@@ -20,11 +20,11 @@ const referenceModule = loadReferenceModule(
   "content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw",
   "public",
 );
-test("six bilingual lessons, 32 distinct slides, every legacy concept covered", () => {
+test("six bilingual lessons, 33 distinct slides, every legacy concept covered", () => {
   assert.equal(referenceModule.lessons.length, 6);
   assert.equal(
     referenceModule.lessons.reduce((n, l) => n + l.revision.slides.length, 0),
-    32,
+    33,
   );
 });
 const corruptions = [

@@ -1,78 +1,65 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na tumugon sa residenteng humihingi ng tulong: makinig sa pangangailangan, gumabay sa angkop na health worker o pasilidad, manatili sa loob ng sariling pagsasanay at pangangasiwa, at sabihin kung anong follow-up ang gagawin niya at kanino siya mag-uulat.
+Sa pagtatapos ng aralin, maipakikita ng BHW ang buong pagtugon sa residenteng humihingi ng tulong: makinig at linawin ang pangangailangan, tukuyin ang angkop na health worker at susunod na hakbang, manatili sa loob ng pagsasanay at pangangasiwa, at kumpirmahin ang follow-up at pag-uulat ayon sa health team.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 60 minuto sa harapang sesyon (bahagi ng Health Service Provider sa 6 na oras na nakatakda sa gabay ng subchapter). Mga 10 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper at marker; ang slides ng aralin (ang eksena ng unang contact at ang daloy na pangangailangan → health worker → susunod na hakbang); ang lokal na impormasyon sa referral at emergency sa inyong lugar, nakasulat sa manila paper; tatlo o apat na role-play card na may hiling ng residente (tingnan ang Gawaing pagsasanay).
+- **Oras:** mga 60 minuto sa harapang sesyon bilang bahagi ng Health Service Provider na talakayan. Mga 10 minuto ang sariling pag-aaral ng anim na screen.
+- **Kagamitan:** anim na slide ng aralin; manila paper at marker; nakumpirmang lokal na impormasyon sa health worker, pasilidad, referral, at emergency procedures; mga card na may kathang-isip na hiling ng residente; simpleng observation checklist.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Ihanda ang mga lokal na impormasyon: aling midwife ang may hawak sa aling purok, oras ng RHU o health center, at ang lokal na referral at emergency procedures. Sinasabi ng aralin na sundin ang mga ito "kapag naaangkop", kaya itatanong ng mga BHW kung ano ang mga ito.
-- Ikaw mismo ang gumawa ng mga role-play card, gamit lang ang kathang-isip na residente. Gawing kahit isang card ay hiling na malinaw na lampas sa pagsasanay ng BHW (halimbawa, residenteng nagtatanong kung anong gamot ang ibibigay), para masanay ang grupo sa paghingi ng gabay.
-- Saklaw: binabanggit ng aralin ang pakikipanayam, vital signs, pagtatala, household profiling, at paunang lunas bilang **mga halimbawa lamang** ng paunang serbisyo mula sa manual. **Huwag ituro dito ang pamamaraan ng pagsukat, paunang lunas, o paggamot**, at huwag magbigay ng klinikal na payo kapag sinasagot ang tanong sa role-play. Para iyon sa ibang training at sa health team.
+- Basahin ang anim na Read section at Slide sa Filipino at English. Pareho ang sitwasyon at check sa dalawang mode.
+- Kumpirmahin sa nangangasiwang midwife o health team kung sino ang tatawagan, paano makarating sa serbisyo, at alin ang lokal na referral at emergency procedures. Huwag magturo ng iisang ruta para sa lahat ng lugar.
+- Maghanda ng mga kathang-isip na role-play card. Isama ang hiling ni Aling Nena tungkol sa gamot, na malinaw na lampas sa pagsasanay sa sitwasyong ito. Huwag gumamit ng tunay na pangalan o datos ng pasyente.
+- Ang pakikipanayam, vital signs, pagtatala, household profile, at paunang lunas ay mga **halimbawa** sa manual. Huwag ituro sa araling ito ang paraan ng pagsukat, paunang lunas, pag-diagnose, o paggamot. Ang pinagsanayan, lokal na patakaran, at pangangasiwa ang nagtatakda ng maaari talagang gawin.
 
 ## [opening] Pambungad
 
-Itanong sa grupo: *"Kapag kumatok ang kapitbahay dahil nag-aalala siya sa anak niya, ano ang una ninyong sinasabi?"* Kumuha ng apat o limang sagot at isulat nang eksakto sa manila paper. Huwag munang magkomento; babalikan ito sa role-play.
+Itanong: *“Kapag ikaw ang unang nilapitan ng residenteng may tanong tungkol sa anak niya, ano ang una mong gagawin?”* Isulat ang mga sagot. Balikan ang mga ito pagkatapos ng role-play upang makita kung may pakikinig at malinaw na susunod na hakbang.
 
 ## [steps] Mga hakbang
 
-1. **Unang contact (Read "May residenteng humihingi ng tulong", unang slide).** Nagtanong si Aling Nena kay Marites kung saan makakausap ang health worker tungkol sa anak niya. Ipakita na bahagi si Marites ng primary care team ng lungsod o munisipyo at katuwang ng midwife sa barangay. Itanong: *"Kapag ikaw ang unang nilapitan, ibig bang sabihin ikaw na ang dapat may sagot?"*
-2. **Gumabay (Read "Gumabay sa angkop na serbisyo", ikalawang slide).** Isa-isahin ang daloy: pangangailangan → angkop na health worker → malinaw na susunod na hakbang. Ipakita ang lokal na impormasyon sa referral at emergency. Sabihing halimbawa ng koordinasyon ang daloy, hindi iisang rutang dapat daanan ng lahat. Itanong: *"Para kay Aling Nena, sino ang angkop na health worker sa lugar natin, at ano ang sasabihin mo sa kanya kung paano makarating doon?"*
-3. **Hangganan (Read "Tumulong ayon sa pagsasanay", ikatlong slide).** Basahin ang mga halimbawa ng paunang serbisyo mula sa manual. Itanong: *"Alin dito ang pinagsanayan ninyo at may pangangasiwa?"* Magkakaiba ang sagot bawat barangay — iyon ang punto. Ang hindi saklaw ng pagsasanay, lokal na patakaran, at pangangasiwa ay dinadala sa health team.
-4. **Follow-up (Read "May kasunod ang paggabay", ikaapat na slide).** Itanong: *"Pag-alis ni Aling Nena sa bahay mo, tapos na ba ang bahagi mo?"* Ilabas ang tatlong hakbang sa slide: kumpirmahin ang tagubilin, subaybayan at itala, mag-ulat pabalik sa team. Idiin: kumpirmahin kung ano, kailan, at kanino mag-uulat; huwag mag-imbento ng resulta.
-5. **Balikan ang pambungad.** Bumalik sa listahan ng "una ninyong sinasabi." Itanong kung alin sa mga sagot ang nagsisimula sa pakikinig sa pangangailangan.
-6. **Self-check.** Basahin ang sitwasyon ng check at hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. **Unang contact.** Ipakilala sina Marites at Aling Nena. Itanong kung bakit makakatulong ang pagiging katuwang ng BHW sa midwife kahit hindi niya kayang sagutin ang lahat.
+2. **Pakikinig.** Ipagaya ang tanong ni Marites tungkol sa kailangan ni Aling Nena. Ipasabi sa kalahok kung paano uulitin ang naunawaan nang hindi nanghuhula ng sakit o paggamot.
+3. **Hangganan.** Ipakita ang mga halimbawang serbisyo mula sa manual. Itanong kung alin ang saklaw ng aktuwal nilang pagsasanay at pangangasiwa. Ang nangangasiwang health team ang nagkukumpirma ng lokal na saklaw.
+4. **Paggabay.** Gamit ang nakumpirmang lokal na impormasyon, ipasabi kung sino ang lalapitan, paano makakarating doon, at paano titiyaking naunawaan ito ni Aling Nena. Banggitin ang lokal na referral at emergency procedures kapag naaangkop.
+5. **Follow-up.** Ipasagot: *“Ano ang dapat kumpirmahin sa health team bago sabihing magfo-follow-up ka?”* Hanapin ang ano, kailan, at kanino mag-uulat. Ang detalye ng mga form ay nasa susunod na aralin.
+6. **Self-check.** Ipakita ang hiling ni Aling Nena tungkol sa gamot. Ipasabi kung bakit hindi sapat ang basta “pumunta sa health center” at kung bakit hindi maaaring manghula ng gamot.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
-- **"Sinasabi ko na pumunta siya sa health center."** Mabuti, at madalas tama. Itanong: *"Alam ba niya kung kailan bukas at sino ang hahanapin? Ano ang gagawin mo pagkatapos?"* Idagdag ang malinaw na susunod na hakbang at follow-up.
-- **Klinikal na payo ang ibinibigay** (gamot, halamang-gamot, diagnosis). Kilalanin ang malasakit sa likod nito, saka itanong: *"Saklaw ba iyan ng pagsasanay mo at ng tagubilin ng midwife mo? Kung hindi, ano ang gagawin mo?"* Huwag ikaw mismo ang magtama ng medikal na nilalaman; ibalik sa paghingi ng gabay.
-- **"Kapag sinabi kong hindi ko alam, mawawala ang tiwala nila sa akin."** Totoong alalahanin ito. Sagutin: *"Pagtulong ang paggabay sa kanya sa tamang health worker. Bahagi ng trabaho ang pagsasabing 'Itatanong ko muna sa midwife natin.'"*
-- **Magkakaiba ang listahan ng puwede nilang gawin.** Huwag magpasya kung sino ang tama. Sabihing nakadepende ito sa pagsasanay, lokal na patakaran, at pangangasiwa sa bawat BHW, at ang midwife o health team ang nagkukumpirma nito.
+- **“Sabihin ko agad na pumunta siya sa health center.”** Itanong kung alam ni Aling Nena kung sino ang kakausapin, paano makakarating, at kung ano ang susunod pagkatapos. Kumpirmahin muna ang lokal na kaayusan.
+- **“Baka mawalan siya ng tiwala kung hindi ko alam ang gamot.”** Ipaliwanag na bahagi ng tulong ang tapat na pagsasabi ng hangganan at pag-ugnay sa angkop na health worker.
+- **Magkakaiba ang sinasabing kaya nilang gawin.** Huwag magpasya batay sa palagay. Ibalik sa kani-kanilang pagsasanay, lokal na patakaran, at nangangasiwang midwife o health team.
+- **May nagmumungkahing tiyak na gamot o diagnosis.** Huwag pagtibayin o itama ang klinikal na nilalaman sa klase. Itanong kung saklaw ito ng pagsasanay at dalhin ang hiling sa health team.
 
 ## [misconception] Karaniwang maling akala
 
-**"Kapag ako ang unang contact, dapat kaya kong sagutin o gamutin ang lahat."** Sa BHW unang lumalapit ang residente, kaya madalas pakiramdam ng BHW na kailangan niyang lutasin agad ang problema. Itama ito nang hindi napapahiya ang sinuman: itanong sa buong grupo, hindi sa isang tao, *"Ano ang ginawa ni Marites para kay Aling Nena — ginamot ba niya ang anak, o ginabayan siya?"* Sinasabi ng aralin na ang pagiging unang contact ay hindi nangangahulugang siya ang may sagot o paggamot sa lahat. Ang paggabay sa angkop na health worker, sa loob ng sariling pagsasanay, ang mismong serbisyo.
+**“Kapag ako ang unang contact, kailangan kong masagot ang lahat.”** Balikan ang larawan: nakikinig si Marites kay Aling Nena, at may midwife na katuwang. Ang tungkulin niya ay makinig, tumulong sa loob ng saklaw, gumabay sa angkop na serbisyo, at sumunod sa tagubilin sa follow-up.
 
 ## [practice] Gawaing pagsasanay
 
-Role-play nang magkapares gamit ang mga card. Gaganap ang isang BHW bilang residente na may hiling na nakasulat sa card; ang isa ay gaganap bilang BHW. Dapat gawin ng BHW ang: (1) itanong ang pangangailangan, (2) sabihin kung sino ang angkop na health worker at ano ang susunod na hakbang, at (3) sabihin kung anong follow-up ang gagawin at kanino mag-uulat. Magpalit ng papel sa ikalawang card. Siguraduhing may kahit isang card na lampas sa pagsasanay ng BHW ang bawat pares. Masusing panoorin ang dalawa o tatlong pares; magbibigay ang grupo ng isang kalakasan at isang mungkahi.
+Magpares. Gaganap ang isa bilang residenteng may hiling sa card; ang isa bilang BHW. Sa unang round, gamitin ang sitwasyon ni Aling Nena. Sa ikalawa, gumamit ng ibang kathang-isip na hiling. Dapat (1) itanong at linawin ng BHW ang pangangailangan, (2) humingi ng gabay kapag lampas sa pagsasanay, (3) sabihin ang nakumpirmang health worker at susunod na hakbang, at (4) kumpirmahin kung ano, kailan, at kanino mag-uulat. Magpalit ng papel. Panoorin ang mga aksiyon, hindi lamang ang sagot sa online check.
 
 ## [answer-key] Susi sa self-check
 
-Iisa ang check sa aralin. Nasa dulo ito ng Read ("Gamitin ang natutuhan") at nasa huling slide rin; iisang tanong ito, kaya isang beses lang itong sinasagot dito.
+Iisa ang check sa Read at huling Slide. Tamang sagot: **makinig, humingi ng gabay sa health team, ipaliwanag ang susunod na hakbang, at kumpirmahin ang follow-up.**
 
-- **"Humingi ng payong lampas sa iyong pagsasanay ang residente. Ano ang angkop?"** → **Humingi ng gabay sa health team at ipaliwanag ang susunod na hakbang.** Pagtulong ang paggabay sa angkop na health worker; iginagalang nito ang hangganan ng pagsasanay at sinusunod ang lokal na tagubilin sa follow-up.
-  - Mali ang *Hulaan ang sagot para hindi siya maghintay*: payong lampas sa pagsasanay ang panghuhula. Hindi kailangang manghula para makatulong.
-  - Mali ang *Sabihing tapos na ang iyong tungkulin*: nagpapatuloy ang papel ng BHW — gumagabay, saka nagfo-follow-up at nag-uulat sa health team.
+- Ang pagmumungkahi ng gamot batay sa karaniwang ginagawa ng kapitbahay ay payong lampas sa pagsasanay sa sitwasyong ito.
+- Ang pagsasabing pumunta sa health center at pagtatapos agad ng usapan ay hindi naglilinaw ng angkop na contact, paraan ng paglapit, o follow-up.
 
 ## [observe] Ano ang oobserbahan
 
-Gamitin ang observation indicator ng aralin — *matukoy ang angkop na pagtulong, paggabay, at follow-up ayon sa pagsasanay at pangangasiwa* — habang nagro-role-play:
-
-- **Kaya na:** nang walang gabay, itinatanong ng BHW ang pangangailangan, binabanggit ang angkop na health worker at susunod na hakbang, humihingi ng gabay kapag lampas sa pagsasanay ang hiling, at sinasabi kung anong follow-up ang gagawin at kanino mag-uulat.
-- **Kailangan pa ng practice:** tama ang paggabay ng BHW pero nakakalimutan ang follow-up o pag-uulat, o humihingi lang ng gabay sa card na lampas sa saklaw matapos mong itanong *"Saklaw ba iyan ng pagsasanay mo?"*
-- **Hindi pa:** nagbibigay ang BHW ng payo o paggamot na lampas sa pagsasanay, o tinatapos ang usapan sa "pumunta ka sa health center" nang walang susunod na hakbang, at hindi ito nababago kahit may gabay.
-
-Hiwalay ang pag-obserba nito sa role-play sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+- **Kaya na:** nagtanong at nakinig; nagtakda ng hangganan nang walang gabay; nagbigay ng nakumpirmang contact at malinaw na susunod na hakbang; nagsabi ng follow-up at pag-uulat ayon sa tagubilin.
+- **Kailangan pa ng practice:** nakagabay nang tama ngunit kinailangang paalalahanan tungkol sa saklaw o follow-up.
+- **Hindi pa:** nagbigay ng payong lampas sa pagsasanay o hindi makapagbigay ng malinaw na susunod na hakbang kahit may gabay.
 
 ## [support] Kung kailangan ng dagdag na suporta
 
-- Ipakita muna: ikaw ang gumanap na BHW sa isang role-play gamit ang card na lampas sa saklaw. Saka nila subukan ang parehong card.
-- Bigyan sila ng maliit na card na may tatlong gabay — *Pangangailangan? Sino at ano ang susunod? Follow-up at kanino mag-uulat?* — para sa susunod na role-play, saka alisin sa kasunod pa.
-- Ipares sila sa BHW na **Kaya na** na gaganap bilang residente.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong card, hindi bago. Kung nagbigay sila ng klinikal na payo, ipaalam sa kanilang midwife na nangangasiwa para masubaybayan ito sa field.
+Ipakita muna ang role-play gamit ang parehong card. Magbigay ng maikling paalala: *Ano ang kailangan? Kanino lalapit at paano? Ano ang follow-up at kanino mag-uulat?* Ulitin ang parehong card upang makita ang pag-unlad. Kung lumitaw ang hindi ligtas na klinikal na payo, iugnay ang kalahok sa nangangasiwang midwife para sa angkop na pagsasanay.
 
 ## [sources-review] Sanggunian at tala sa pagrepaso
 
-- Day 1 presentation pp. 11–12; BHW Reference Manual p. 12.
-- Ang talahanayan sa Facilitator Guide PDF 19 ay naglalaan ng anim na oras sa module; hindi bababa sa tatlong oras ang nasa salaysay sa PDF 20. Ang 60 minuto sa itaas ay bahagi ng araling ito sa plano ng module.
-- Hindi nangangahulugan ng malayang paggamot ang first contact. Hindi itinuturo sa aralin ang pamamaraan ng pagsukat o paggamot; mga halimbawa lamang ang listahan ng paunang serbisyo mula sa manual.
-- Hiwalay ang pagtatasa sa self-check.
-- **Status ng pagrepaso:** kailangan pa ng pagrepaso ng eksperto sa nilalaman, visual, at gabay na ito bago ilathala.
-
-Draft for review
+- Day 1 presentation, slides 11–12; BHW Reference Manual, PDF p. 12. Ang gabay sa facilitator ng subchapter ay may mas mahabang nakalaang oras; ang 60 minuto rito ay para sa bahaging ito lamang.
+- Kailangang kumpirmahin ng lokal na midwife o health team ang referral, emergency, at follow-up na halimbawa bago gamitin sa harapang sesyon. Hindi nagbibigay ang araling ito ng klinikal na pamamaraan o payo sa gamot.

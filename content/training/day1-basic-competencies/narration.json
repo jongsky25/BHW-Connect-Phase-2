@@ -13108,478 +13108,624 @@
       "sections": {
         "boundaries": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/boundaries.en.f607803deda8.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/boundaries.en.34608082aba6.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "f607803deda84b92d26ae7d4b239e2514a1b5c7aed4aea994ff936e6c649bad9",
-            "sha256": "9e1616b797627eb05606f421c58d993f10195e9708e6685271c9bbe698b0f4b8",
-            "duration_seconds": 37.433,
+            "content_hash": "34608082aba6033d5ca35877af862f3a990bd759b8dffa8f21dea24377d01a7b",
+            "sha256": "f691839c801aef011ad4d542d4707e65b019382c9feceda98a26ac8b684a907e",
+            "duration_seconds": 39.21,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Assist within your training",
+                "text": "Know the limits of your role",
                 "start_ms": 0,
-                "end_ms": 2320
+                "end_ms": 2840
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "The manual lists interviewing, vital signs, recording, household profiling, and first aid as examples of initial services.",
-                "start_ms": 2620,
-                "end_ms": 13260
+                "text": "Examples of initial services include interviewing, taking vital signs, recording, preparing a household profile, and first aid.",
+                "start_ms": 3140,
+                "end_ms": 12940
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Perform only tasks covered by your training, local policy, and required supervision.",
-                "start_ms": 13560,
-                "end_ms": 20320
+                "start_ms": 13240,
+                "end_ms": 19680
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "This lesson does not teach measurement or treatment procedures.",
-                "start_ms": 20620,
-                "end_ms": 25100
+                "text": "This lesson does not teach measurement, first aid, or treatment.",
+                "start_ms": 19980,
+                "end_ms": 24780
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "When uncertain or outside your scope, seek guidance from the health team.",
-                "start_ms": 25400,
-                "end_ms": 31040
+                "text": "If a request is beyond your scope or you are unsure, seek guidance from the midwife or health team.",
+                "start_ms": 25080,
+                "end_ms": 32480
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Examples only. Work within training, local policy, and supervision.",
-                "start_ms": 31340,
-                "end_ms": 37380
+                "text": "Initial services are examples; follow training, local policy, and supervision.",
+                "start_ms": 32780,
+                "end_ms": 39140
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/boundaries.fil.e94d5e49e1ae.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/boundaries.fil.5bf801006391.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e94d5e49e1aecceaa083039b03657ba8f2d111e1ccb641f5a73970ea8623b29d",
-            "sha256": "243ec2e73fbed08da8af38e3a42d4ab50f93dac82e4133993f9d3ebcdcc1a4e8",
-            "duration_seconds": 43.755,
+            "content_hash": "5bf801006391dc1c32e5122bb5fbc27b024f97a261671c0905b7e1d5f86a57bc",
+            "sha256": "bd0d7cccd8b00a32675aabd107819ee8639808bd8833261bebc09b8f82e67085",
+            "duration_seconds": 45.322,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Tumulong ayon sa pagsasanay",
+                "text": "Alamin ang saklaw ng sariling gawain",
                 "start_ms": 0,
-                "end_ms": 2920
+                "end_ms": 3320
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Binabanggit ng manual ang pakikipanayam, vital signs, pagtatala, household profiling, at paunang lunas bilang mga halimbawa ng paunang serbisyo.",
-                "start_ms": 3220,
-                "end_ms": 16100
+                "text": "Kabilang sa mga halimbawa ng paunang serbisyo ang pakikipanayam, pagsukat ng vital signs, pagtatala, paggawa ng household profile, at paunang lunas.",
+                "start_ms": 3620,
+                "end_ms": 16380
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Gawin lamang ang gawaing saklaw ng iyong pagsasanay, lokal na patakaran, at kinakailangang pangangasiwa.",
-                "start_ms": 16400,
-                "end_ms": 23640
+                "text": "Gawin lamang ang saklaw ng iyong pagsasanay, lokal na patakaran, at kinakailangang pangangasiwa.",
+                "start_ms": 16680,
+                "end_ms": 24480
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Hindi itinuturo rito ang pamamaraan ng pagsukat o paggamot.",
-                "start_ms": 23940,
-                "end_ms": 29140
+                "text": "Hindi itinuturo ng araling ito ang pagsukat, paunang lunas, o paggamot.",
+                "start_ms": 24780,
+                "end_ms": 30540
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Kapag hindi tiyak o lampas sa saklaw, humingi ng gabay sa health team.",
-                "start_ms": 29440,
-                "end_ms": 35400
+                "text": "Kung lampas sa saklaw o hindi ka tiyak, humingi ng gabay sa midwife o health team.",
+                "start_ms": 30840,
+                "end_ms": 37280
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Mga halimbawa lamang. Gawin ayon sa pagsasanay, lokal na patakaran, at pangangasiwa.",
-                "start_ms": 35700,
-                "end_ms": 43700
+                "text": "Mga halimbawa lamang ang paunang serbisyo; sundin ang pagsasanay, lokal na patakaran, at pangangasiwa.",
+                "start_ms": 37580,
+                "end_ms": 45260
               }
             ]
           }
         },
         "check": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/check.en.cf7df6356cff.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/check.en.7cfc0d320371.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "cf7df6356cffb01f6e839d3fe9e9d4396e16c863be3ce0423f11ca53f3a15110",
-            "sha256": "33a0651ec997782011979ac8a203d9c65d278f872b612bdc4cb2562b37a196bc",
-            "duration_seconds": 14.733,
+            "content_hash": "7cfc0d320371c4e510032f248388adb9228620734b7ad72177a394fc0a6ca94d",
+            "sha256": "6f27d44aa3c774843e22d8a793c02430f2dea1e85f50bf96ae6995dcf4882a91",
+            "duration_seconds": 20.14,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Apply your learning",
                 "start_ms": 0,
-                "end_ms": 1640
+                "end_ms": 2000
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "A resident asks for advice beyond your training.",
-                "start_ms": 1940,
-                "end_ms": 5340
+                "text": "Aling Nena asks Marites what medicine to give her child.",
+                "start_ms": 2300,
+                "end_ms": 6980
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "What is appropriate?",
-                "start_ms": 5640,
-                "end_ms": 7600
+                "text": "Giving that advice is outside Marites's training.",
+                "start_ms": 7280,
+                "end_ms": 11360
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "What is her best response?",
+                "start_ms": 11660,
+                "end_ms": 13820
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Listen, assist within scope, guide, and follow up with the health team.",
-                "start_ms": 7900,
-                "end_ms": 14660
+                "text": "Listen, stay within scope, guide, and follow through with the health team.",
+                "start_ms": 14120,
+                "end_ms": 20080
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/check.fil.8a9f5b72a419.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/check.fil.6cc77a027b9a.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "8a9f5b72a419617224e80f97be60367aa4fac68dd5dfcf8e01814916dd6e7266",
-            "sha256": "443a0b9b35874e7f188d75cf24c92f7ffa6c7906c7c29aea4724dc17237d6b7d",
-            "duration_seconds": 17.293,
+            "content_hash": "6cc77a027b9a051b6e329dfe05fcffd5e5b5bded08c243ae8aa800e238aa4857",
+            "sha256": "c917ec6e1383edf6067c920a6e2b1a78c6899e3d039432bac4c43f0cd830e11a",
+            "duration_seconds": 22.021,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Gamitin ang natutuhan",
                 "start_ms": 0,
-                "end_ms": 2160
+                "end_ms": 2200
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Humingi ng payong lampas sa iyong pagsasanay ang residente.",
-                "start_ms": 2460,
-                "end_ms": 6860
+                "text": "Tinanong ni Aling Nena si Marites kung anong gamot ang ibibigay sa anak niya.",
+                "start_ms": 2500,
+                "end_ms": 6900
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ano ang angkop?",
-                "start_ms": 7160,
-                "end_ms": 8960
+                "text": "Hindi saklaw ng pagsasanay ni Marites ang pagbibigay ng payong iyon.",
+                "start_ms": 7200,
+                "end_ms": 11600
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ano ang pinakamainam niyang gawin?",
+                "start_ms": 11900,
+                "end_ms": 14340
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Makinig, tumulong sa loob ng saklaw, gumabay, at mag-follow-up kasama ang health team.",
-                "start_ms": 9260,
-                "end_ms": 17220
+                "text": "Makinig, manatili sa saklaw, gumabay, at mag-follow-up kasama ang health team.",
+                "start_ms": 14640,
+                "end_ms": 21960
+              }
+            ]
+          }
+        },
+        "clarify-need": {
+          "en": {
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/clarify-need.en.99f998ecc6c8.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "99f998ecc6c8e062982e7bba0e4b07a412d969c4794c185de9c56c4f68394163",
+            "sha256": "3c5cfd3094a27579f0a8a6bab4a296aec685b07ee0b7023bd00766c8eb672349",
+            "duration_seconds": 28.056,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Listen before guiding",
+                "start_ms": 0,
+                "end_ms": 2400
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Marites asks, “What help do you need, and have you spoken with a health worker?”",
+                "start_ms": 2700,
+                "end_ms": 8540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She gives Aling Nena time to explain and repeats what she understood.",
+                "start_ms": 8840,
+                "end_ms": 13720
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She does not guess at an illness or its treatment.",
+                "start_ms": 14020,
+                "end_ms": 18740
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Understanding the need helps the health team provide appropriate guidance.",
+                "start_ms": 19040,
+                "end_ms": 23920
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Listen and clarify the need before guiding someone.",
+                "start_ms": 24220,
+                "end_ms": 27980
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/clarify-need.fil.827cd96d6b76.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "827cd96d6b76e11e1b3ca1b89a7b187e583b31d75843b323db2247e01b498aaa",
+            "sha256": "7efc0ed8c7aeb4ff8c2194c0fa1c7563f494f70b868edb164bb4a3b173b4ce31",
+            "duration_seconds": 31.451,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Makinig bago gumabay",
+                "start_ms": 0,
+                "end_ms": 2640
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Tinanong ni Marites: “Ano po ang kailangan ninyong tulong, at may nakausap na po ba kayong health worker?”",
+                "start_ms": 2940,
+                "end_ms": 9940
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Hinayaan niyang magpaliwanag si Aling Nena at inulit ang naunawaan niya.",
+                "start_ms": 10240,
+                "end_ms": 15560
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi siya nanghula ng sakit o ng kailangan nitong paggamot.",
+                "start_ms": 15860,
+                "end_ms": 19820
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang malinaw na pangangailangan ang tutulong sa health team na magbigay ng angkop na gabay.",
+                "start_ms": 20120,
+                "end_ms": 26680
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Makinig at linawin ang pangangailangan bago gumabay.",
+                "start_ms": 26980,
+                "end_ms": 31380
               }
             ]
           }
         },
         "first-contact": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/first-contact.en.11af8d57e3fd.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/first-contact.en.161b376e7fbd.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "11af8d57e3fd26c318ba1d20dc7458d30d0203273fd1f8e3efbbd6bcb2b585e6",
-            "sha256": "337cb51dd5509fb4f0bcc08ef077794598b37a3e49da573a46902066a925203f",
-            "duration_seconds": 31.922,
+            "content_hash": "161b376e7fbdc0caefb4f8948cd55b8ed4667b3f59f06b3fa2185f3b3d283e4a",
+            "sha256": "6b7412b8a6388b112b35f173c863c5c751eeefd9c281fa5eda4ab3d2dad99451",
+            "duration_seconds": 33.176,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "A resident asks for help",
+                "text": "Marites is the first person approached",
                 "start_ms": 0,
-                "end_ms": 2360
+                "end_ms": 3040
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Aling Nena asks where she can speak with a health worker about her child.",
-                "start_ms": 2660,
-                "end_ms": 7700
+                "text": "Aling Nena approaches BHW Marites.",
+                "start_ms": 3340,
+                "end_ms": 6660
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "As a BHW, Marites may be the first person approached.",
-                "start_ms": 8000,
-                "end_ms": 13000
+                "text": "She wants to know whom to speak with about her child's needs.",
+                "start_ms": 6960,
+                "end_ms": 11720
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "She is part of the city or municipal primary care team and assists the barangay midwife.",
-                "start_ms": 13300,
-                "end_ms": 20300
+                "text": "As part of the city or municipal primary care team, Marites assists the barangay midwife.",
+                "start_ms": 12020,
+                "end_ms": 18820
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Being a first contact does not mean having every answer or providing every treatment.",
-                "start_ms": 20600,
-                "end_ms": 26960
+                "text": "She may be Aling Nena's first contact, but she does not have to answer every question or provide every treatment.",
+                "start_ms": 19120,
+                "end_ms": 27120
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Part of the primary care team; a partner to the midwife.",
-                "start_ms": 27260,
-                "end_ms": 31860
+                "text": "A BHW may be the first contact and works with the midwife and health team.",
+                "start_ms": 27420,
+                "end_ms": 33100
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/first-contact.fil.0eda08d80dc1.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/first-contact.fil.81d7187eb4ed.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "0eda08d80dc14946032de65559c07d987bb3a74e22c64d77a8375d9a1ecf6574",
-            "sha256": "ee528796fd047dd918c65aad6dc101be5e217d0ed4ae1b711823928c3deffd4c",
-            "duration_seconds": 33.802,
+            "content_hash": "81d7187eb4edee2ee04133f3b213289e6674302be20eeb9cba12a43d5c90d57a",
+            "sha256": "6f8e0b601d34939d8c9e8da141598acb1817fe158b7333b2642fc246c1b02228",
+            "duration_seconds": 34.717,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "May residenteng humihingi ng tulong",
+                "text": "Si Marites ang unang nilapitan",
                 "start_ms": 0,
-                "end_ms": 2680
+                "end_ms": 2520
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Nagtanong si Aling Nena kung saan maaaring makausap ang health worker tungkol sa anak niya.",
-                "start_ms": 2980,
-                "end_ms": 9300
+                "text": "Lumapit si Aling Nena kay BHW Marites.",
+                "start_ms": 2820,
+                "end_ms": 6460
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Bilang BHW, maaaring si Marites ang unang lapitan.",
-                "start_ms": 9600,
-                "end_ms": 14280
+                "text": "Gusto niyang malaman kung sino ang makakausap tungkol sa pangangailangan ng anak niya.",
+                "start_ms": 6760,
+                "end_ms": 12600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Bahagi siya ng primary care team ng lungsod o munisipyo at katuwang ng midwife sa barangay.",
-                "start_ms": 14580,
-                "end_ms": 21580
+                "text": "Bilang bahagi ng primary care team ng lungsod o munisipyo, katuwang si Marites ng midwife sa barangay.",
+                "start_ms": 12900,
+                "end_ms": 20620
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang pagiging unang contact ay hindi nangangahulugang siya ang may sagot o paggamot sa lahat.",
-                "start_ms": 21880,
-                "end_ms": 28800
+                "text": "Maaari siyang maging unang contact ni Aling Nena, ngunit hindi niya kailangang sagutin o gamutin ang lahat.",
+                "start_ms": 20920,
+                "end_ms": 27880
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Bahagi ng primary care team; katuwang ng midwife.",
-                "start_ms": 29100,
-                "end_ms": 33740
+                "text": "Maaaring unang lapitan ang BHW; katuwang siya ng midwife at health team.",
+                "start_ms": 28180,
+                "end_ms": 34660
               }
             ]
           }
         },
         "follow-up": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/follow-up.en.2afc8e0fbd15.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/follow-up.en.fc8ea452ba96.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "2afc8e0fbd1560533a3b0354ca60bbe5ec73c37aaf87653ee6a45ff109c7ac75",
-            "sha256": "18d789b2ebd0d0fb836be9f1ab7517a0558fb8ba4fa4a6bc60b9647e4eb1992f",
-            "duration_seconds": 34.22,
+            "content_hash": "fc8ea452ba969816b01ee36c2c7278320736cd996780f37fc10e4de17a099631",
+            "sha256": "448b1983848f08a45650c5b43c422a05159e0d40cde4ee1e7eea17605fe7a73e",
+            "duration_seconds": 29.205,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Guidance includes follow-up",
+                "text": "Follow through with the health team",
                 "start_ms": 0,
-                "end_ms": 2600
+                "end_ms": 2040
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "The BHW’s role continues after explaining where to go.",
-                "start_ms": 2900,
-                "end_ms": 8020
+                "text": "Helping does not end with directions.",
+                "start_ms": 2340,
+                "end_ms": 5220
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Following health-team instructions, the BHW monitors the situation, records relevant information, and sends an update to the right person.",
-                "start_ms": 8320,
-                "end_ms": 19080
+                "text": "Following the health team's instructions, Marites confirms what to monitor or record, when to follow up, and whom to update.",
+                "start_ms": 5520,
+                "end_ms": 14600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Confirm what to report, when, and to whom; do not invent an outcome or promise that no further follow-up is needed.",
-                "start_ms": 19380,
-                "end_ms": 29380
+                "text": "She does not invent an outcome or promise that nothing further is needed.",
+                "start_ms": 14900,
+                "end_ms": 19700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "The next lesson covers specific records and forms.",
+                "start_ms": 20000,
+                "end_ms": 23720
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Follow-up sustains the connection between the resident and health team.",
-                "start_ms": 29680,
-                "end_ms": 34160
+                "text": "Confirm what to report, when, and to whom under the health team’s instructions.",
+                "start_ms": 24020,
+                "end_ms": 29140
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/follow-up.fil.f58c2090742b.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/follow-up.fil.3866e62f4a51.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "f58c2090742be6713580a8011e42aeca88a36a0f4c9f6a490d73cad338001313",
-            "sha256": "2bc76edb197b7d06b5464301ec30830236f2375e76c50ac0fb14e7cebd2f5869",
-            "duration_seconds": 35.187,
+            "content_hash": "3866e62f4a512f40da6a750fbac22d59e82768fea002751024e68ce0bef751b5",
+            "sha256": "087764eb1d85384dd36f75eda05722d2a5b2d7f8470109b9c288a96161ff7aa4",
+            "duration_seconds": 34.926,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "May kasunod ang paggabay",
+                "text": "Mag-follow-up kasama ang health team",
                 "start_ms": 0,
-                "end_ms": 2160
+                "end_ms": 2960
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Hindi natatapos ang papel ng BHW sa pagturo kung saan pupunta.",
-                "start_ms": 2460,
-                "end_ms": 8620
+                "text": "Hindi nagtatapos ang pagtulong sa pagturo kung saan pupunta.",
+                "start_ms": 3260,
+                "end_ms": 7500
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ayon sa tagubilin ng health team, sinusubaybayan niya ang kalagayan, itinatala ang kaugnay na impormasyon, at ipinapaabot ang update sa tamang tao.",
-                "start_ms": 8920,
-                "end_ms": 19560
+                "text": "Ayon sa tagubilin ng health team, kinumpirma ni Marites kung ano ang dapat subaybayan o itala, kailan siya magfo-follow-up, at kanino siya mag-uulat.",
+                "start_ms": 7800,
+                "end_ms": 17960
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Kumpirmahin kung ano, kailan, at kanino mag-uulat; huwag mag-imbento ng resulta o mangakong wala nang kailangang follow-up.",
-                "start_ms": 19860,
-                "end_ms": 30100
+                "text": "Hindi siya nag-imbento ng resulta o nangako na wala nang kailangang gawin.",
+                "start_ms": 18260,
+                "end_ms": 23620
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Tatalakayin sa susunod na aralin ang mga partikular na talaan at form.",
+                "start_ms": 23920,
+                "end_ms": 29560
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang follow-up ay nagpapatuloy sa ugnayan ng residente at health team.",
-                "start_ms": 30400,
-                "end_ms": 35120
+                "text": "Kumpirmahin kung ano, kailan, at kanino mag-uulat ayon sa health team.",
+                "start_ms": 29860,
+                "end_ms": 34860
               }
             ]
           }
         },
         "guide": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/guide.en.7dfad0d3288a.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/guide.en.96663d13fc8a.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "7dfad0d3288a945657ef73f168ea829cfac14a7367af3cbca67ad25939bd13df",
-            "sha256": "f8ed638b41afecab971d8bf24383af9df330742de615f3a72c627ba302e53bd6",
-            "duration_seconds": 33.358,
+            "content_hash": "96663d13fc8a57f4cf70747f8c45e5c8a3f4788eb2087a0f8643689d954512ff",
+            "sha256": "609426872b191496fc025adb272517a4a45dea9d486b27dc2ce0b5a37f287d2c",
+            "duration_seconds": 36.911,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Guide to an appropriate service",
+                "text": "Give a clear next step",
                 "start_ms": 0,
-                "end_ms": 2560
+                "end_ms": 2600
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Marites listens to the need and helps identify an appropriate health worker or facility.",
-                "start_ms": 2860,
-                "end_ms": 9700
+                "text": "Marites confirms which health worker or facility Aling Nena should approach under local arrangements.",
+                "start_ms": 2900,
+                "end_ms": 9660
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "She confirms local access arrangements and explains the next step.",
-                "start_ms": 10000,
-                "end_ms": 15240
+                "text": "She explains whom to contact and how to get there.",
+                "start_ms": 9960,
+                "end_ms": 13600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "The pathway illustrates coordination, not a mandatory route for everyone.",
-                "start_ms": 15540,
-                "end_ms": 21260
+                "text": "She might say, “I will check with the health team who can speak with you and how you can reach them.”",
+                "start_ms": 13900,
+                "end_ms": 19460
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Follow local referral and emergency procedures when applicable.",
-                "start_ms": 21560,
-                "end_ms": 26520
+                "text": "She checks that Aling Nena understands the next step.",
+                "start_ms": 19760,
+                "end_ms": 23240
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Follow local referral and emergency procedures when applicable; there is no single route for every place or situation.",
+                "start_ms": 23540,
+                "end_ms": 32060
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "A coordination example. Follow local referral and emergency procedures.",
-                "start_ms": 26820,
-                "end_ms": 33300
+                "text": "Confirm whom to approach and explain a clear next step.",
+                "start_ms": 32360,
+                "end_ms": 36840
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/guide.fil.e78e6933813f.mp3",
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/guide.fil.3145f809cb0e.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e78e6933813f20225deb40da84225d5f3841f50ce6816140b369670ce925ee41",
-            "sha256": "4b7757b2acce73f52d65b2e81d1796afa4234a2133065d25946cd868b465d9b4",
-            "duration_seconds": 38.609,
+            "content_hash": "3145f809cb0ebbe9ebbfc47b1f181fe2b6d2f60530c0e888d7fd1d51bbb7672b",
+            "sha256": "4c1bcc528268f3451ae7822bbacdbf6326dda55d09e70fa2b22dbf2b16c94914",
+            "duration_seconds": 47.229,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Gumabay sa angkop na serbisyo",
+                "text": "Sabihin ang malinaw na susunod na hakbang",
                 "start_ms": 0,
-                "end_ms": 2560
+                "end_ms": 3280
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Nakikinig si Marites sa pangangailangan at tumutulong tukuyin ang angkop na health worker o pasilidad.",
-                "start_ms": 2860,
-                "end_ms": 10460
+                "text": "Kinumpirma ni Marites kung aling health worker o pasilidad ang angkop lapitan ayon sa lokal na kaayusan.",
+                "start_ms": 3580,
+                "end_ms": 11860
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Kinukumpirma niya ang lokal na paraan ng paglapit at ipinapaliwanag ang susunod na hakbang.",
-                "start_ms": 10760,
-                "end_ms": 17240
+                "text": "Ipinaliwanag niya kay Aling Nena kung sino ang kakausapin at paano makakarating doon.",
+                "start_ms": 12160,
+                "end_ms": 18280
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang landas sa larawan ay halimbawa ng koordinasyon, hindi sapilitang rutang daraanan ng lahat.",
-                "start_ms": 17540,
-                "end_ms": 24740
+                "text": "Maaari niyang sabihin: “Titingnan ko po sa health team kung sino ang maaari ninyong makausap at kung paano kayo makakapunta.”",
+                "start_ms": 18580,
+                "end_ms": 26460
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Sundin ang lokal na referral at emergency procedures kapag naaangkop.",
-                "start_ms": 25040,
-                "end_ms": 30640
+                "text": "Tiniyak niyang naunawaan ni Aling Nena ang susunod na hakbang.",
+                "start_ms": 26760,
+                "end_ms": 30840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sundin ang lokal na referral at emergency procedures kapag naaangkop; hindi iisa ang ruta sa lahat ng lugar o sitwasyon.",
+                "start_ms": 31140,
+                "end_ms": 40500
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Halimbawa ng koordinasyon. Sundin ang lokal na referral at emergency procedures.",
-                "start_ms": 30940,
-                "end_ms": 38540
+                "text": "Kumpirmahin kung sino ang lalapitan at ipaliwanag ang malinaw na susunod na hakbang.",
+                "start_ms": 40800,
+                "end_ms": 47160
               }
             ]
           }
