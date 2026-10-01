@@ -28,12 +28,27 @@ type ClarifierPayload = {
 
 // How the server decided this turn. Present only when the chat_conversation
 // flag is on; absent responses render exactly as they did before.
-type ChatRoute = "direct" | "red_flag" | "clarify" | "selection" | "context_carry";
+type ChatRoute = "direct" | "red_flag" | "clarify" | "selection" | "context_carry" | "measurement";
+
+// A computed BMI / blood-pressure result. `urgency` is decided server-side:
+// "emergency" (raised reading with warning signs) is announced like a red
+// flag, "attention" (highest BP category) gets the urgent border only.
+type MeasurementPayload = {
+  type: "measurement";
+  kind: "bmi" | "bp";
+  outcome: "result" | "needs_input" | "out_of_scope" | "invalid";
+  urgency: "none" | "attention" | "emergency";
+  text_fil: string;
+  text_en: string;
+  related: ChatEntrySummary[];
+  route?: ChatRoute;
+};
 
 type ChatApiResult =
   | { type: "answer"; answer: ChatEntrySummary; related: ChatEntrySummary[]; route?: ChatRoute }
   | { type: "did_you_mean"; candidates: ChatEntrySummary[]; route?: ChatRoute }
   | { type: "clarify"; clarifier: ClarifierPayload; route?: ChatRoute }
+  | MeasurementPayload
   | { type: "no_answer"; route?: ChatRoute };
 
 type ChatApiResponse = ChatApiResult & {
@@ -162,7 +177,9 @@ export function ChatGuide() {
       p_properties: { vote },
     });
 
-    if (vote === "down") {
+    // A measurement turn's text holds a patient's numbers; the vote is kept
+    // but the text must not be written to the content-gap log.
+    if (vote === "down" && exchange.result?.type !== "measurement") {
       await supabase.rpc("rpc_chat_upsert_unmatched", {
         p_text: exchange.question,
         p_normalized_text: normalizeText(exchange.question),
@@ -322,6 +339,45 @@ function AnswerBubble({
             );
           })}
         </div>
+      </div>
+    );
+  }
+
+  if (result.type === "measurement") {
+    const emergency = result.urgency === "emergency";
+    const flagged = result.urgency !== "none";
+    return (
+      <div className="mr-auto flex max-w-[85%] flex-col gap-3">
+        {emergency ? (
+          <p role="alert" className="font-semibold text-danger">
+            {t("urgentHeading")}
+          </p>
+        ) : null}
+        <div
+          className={
+            flagged
+              ? "rounded-lg rounded-bl-none border-2 border-danger bg-canvas px-4 py-3 text-ink"
+              : "rounded-lg rounded-bl-none border border-ink/10 bg-canvas px-4 py-3 text-ink"
+          }
+        >
+          {pick(locale, result.text_fil, result.text_en)}
+        </div>
+        <FeedbackControls exchange={exchange} t={t} onFeedback={onFeedback} />
+        {result.related.length > 0 ? (
+          <div className="flex flex-col gap-2">
+            <p className="text-sm font-medium text-ink/70">{t("relatedHeading")}</p>
+            {result.related.map((entry) => (
+              <button
+                key={entry.id}
+                type="button"
+                onClick={() => onSelectQuestion(pick(locale, entry.question_fil, entry.question_en))}
+                className="min-h-[44px] rounded-md border border-ink/20 px-3 py-2 text-left text-sm text-ink hover:bg-ink/5"
+              >
+                {pick(locale, entry.question_fil, entry.question_en)}
+              </button>
+            ))}
+          </div>
+        ) : null}
       </div>
     );
   }
