@@ -57,6 +57,26 @@ describe('route lesson viewer',()=>{
       HTMLDialogElement.prototype.close = close;
     }
   });
+  it('reflows Lesson 1.1.3 with its community planning illustration in Read and Slides',()=>{
+    const showModal = HTMLDialogElement.prototype.showModal;
+    const close = HTMLDialogElement.prototype.close;
+    HTMLDialogElement.prototype.showModal = function () {this.setAttribute('open','');};
+    HTMLDialogElement.prototype.close = function () {this.removeAttribute('open');};
+    const organizerLesson = {...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-community-organizer'}))};
+    try {
+      const {container}=render(<ReferenceLessons {...organizerLesson} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+      fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
+      const dialog=container.querySelector('dialog')!;
+      expect(dialog.querySelector('.reference-story[data-lesson="bhw-community-organizer"]')).toBeInTheDocument();
+      expect(within(dialog).getByRole('img',{name:/BHW Marites listens as residents and health staff/})).toBeInTheDocument();
+      fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
+      expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
+      expect(dialog.querySelector('.reference-story[data-lesson="bhw-community-organizer"]')).toBeInTheDocument();
+    } finally {
+      HTMLDialogElement.prototype.showModal = showModal;
+      HTMLDialogElement.prototype.close = close;
+    }
+  });
   it('opens only the reader content and keeps mode, orientation, and paging inside it',()=>{
     const showModal = HTMLDialogElement.prototype.showModal;
     const close = HTMLDialogElement.prototype.close;

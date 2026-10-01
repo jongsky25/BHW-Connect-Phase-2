@@ -8728,450 +8728,624 @@
       "sections": {
         "check": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/check.en.b7e4625f4661.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "b7e4625f4661a5f5f1117afa4385dcbd7775a182e9fba41f2b8bc54e6c9b5fce",
-            "sha256": "09d8aea802c6f642ee36a461c8c31dd343a915e6d67e59a8fcfc20ef27be4e36",
-            "duration_seconds": 11.416,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/check.en.0195be9abab7.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "0195be9abab7c71d3bd07935a33d374e8da619972ce9975cd2fb1702472dfff9",
+            "sha256": "306b54e0ec434d4fb55abdf3583bb49fe11e89eddfd548acb92ef863fefba67b",
+            "duration_seconds": 19.248,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Apply your learning",
                 "start_ms": 0,
-                "end_ms": 1840
+                "end_ms": 2088
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Which is a clear organizing action?",
-                "start_ms": 2140,
-                "end_ms": 5220
+                "text": "Residents suggest a different time for the discussion.",
+                "start_ms": 2088,
+                "end_ms": 5856
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "One resident also says the standing water caused children to become ill.",
+                "start_ms": 5856,
+                "end_ms": 10824
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "What should Marites do next?",
+                "start_ms": 10824,
+                "end_ms": 13368
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Connect people, invite action, and bring observations into planning.",
-                "start_ms": 5520,
-                "end_ms": 11360
+                "text": "Listen to responses, report what was seen, and use the local planning process.",
+                "start_ms": 13368,
+                "end_ms": 19248
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/check.fil.80b6a4d852e2.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "80b6a4d852e258b5fd02cf82fdd8379c493e3a39f96d6ed931f3de9161c8801e",
-            "sha256": "95b8efb241fc9ca6e466e34091c17ac988c317e4ed8ab5f171e99b8ccd1e6c7b",
-            "duration_seconds": 13.74,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/check.fil.775d59351cc0.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "775d59351cc01f2540ab8d3ab66cd08c938aa31682cef1bbf3788b3ac5145b9c",
+            "sha256": "6a2f4f82d23b62b0cca6cf6775bdfb7969fcb6d04a693c641bf27619d435ada1",
+            "duration_seconds": 21.696,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Gamitin ang natutuhan",
                 "start_ms": 0,
-                "end_ms": 2240
+                "end_ms": 2352
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Alin ang malinaw na gawaing pang-organisa?",
-                "start_ms": 2540,
-                "end_ms": 5620
+                "text": "Nagmungkahi ng ibang oras ang mga residente para sa usapan.",
+                "start_ms": 2352,
+                "end_ms": 6696
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sinabi rin ng isa na ang naipong tubig ang sanhi ng pagkakasakit ng mga bata.",
+                "start_ms": 6696,
+                "end_ms": 11952
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ano ang pinakamainam na susunod na gawin ni Marites?",
+                "start_ms": 11952,
+                "end_ms": 15648
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Mag-ugnay ng tao, mag-anyaya ng pagkilos, at dalhin ang obserbasyon sa pagpaplano.",
-                "start_ms": 5920,
-                "end_ms": 13680
+                "text": "Makinig sa tugon, iulat ang nakita, at dalhin ang usapin sa tamang lokal na proseso.",
+                "start_ms": 15648,
+                "end_ms": 21696
               }
             ]
           }
         },
         "liph": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/liph.en.52532ed3ccba.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "52532ed3ccba69b1520cbf82bb87daea4cd7feb7c4030c746964674fe53290b6",
-            "sha256": "175be3045e5c31f30be426857a75fb38c88e0703113f34f369020c9fe5bbd045",
-            "duration_seconds": 38.034,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/liph.en.e46ffc5b6a73.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "e46ffc5b6a73dfa316d8eac9a7f07c0b79245afbb0b61715ad851a28b1823ce3",
+            "sha256": "d8ed36579007006158b9bc5ca748ec843ff28a4498558ab19ac2da47c3b668e7",
+            "duration_seconds": 27.576,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Contribute to wider planning",
                 "start_ms": 0,
-                "end_ms": 2600
+                "end_ms": 2568
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "The Local Investment Plan for Health, or LIPH, is the city or provincial health plan described in the manual.",
-                "start_ms": 2900,
-                "end_ms": 11100
+                "text": "Barangay input can help identify health needs discussed for the city or provincial Local Investment Plan for Health, or LIPH.",
+                "start_ms": 2568,
+                "end_ms": 11544
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "It recognizes barangay and municipal contributions to planning.",
-                "start_ms": 11400,
-                "end_ms": 16280
+                "text": "Share a proposal through the existing local process with the health team.",
+                "start_ms": 11544,
+                "end_ms": 16416
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Observations shared by BHWs can inform discussion of local needs.",
-                "start_ms": 16580,
-                "end_ms": 22540
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "Contribute through the existing local process with the health team; a proposal does not automatically receive funding.",
-                "start_ms": 22840,
-                "end_ms": 30920
+                "text": "Bringing a suggestion into planning does not mean it will automatically receive funding.",
+                "start_ms": 16416,
+                "end_ms": 22080
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Local Investment Plan for Health: barangays contribute; confirm the local process.",
-                "start_ms": 31220,
-                "end_ms": 37980
+                "text": "Barangay input may inform the LIPH; funding is not guaranteed.",
+                "start_ms": 22080,
+                "end_ms": 27576
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/liph.fil.273d26d8ef9e.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "273d26d8ef9e371e3000662cf90fcc73c442a0e2031fd6a96030ed6a044f3eb1",
-            "sha256": "5cd4793fcc0a4c4376bbe1265b7bf2bcc7ed0083119dbceaec9f6c13f3fc3783",
-            "duration_seconds": 47.856,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/liph.fil.92f7b4bef573.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "92f7b4bef57350a40819283bb241530c369410c37cce2fed6ccc37ae03f1bb66",
+            "sha256": "8cf0a0dad4d1361a2d6bd3410aa67b9d7ff081cf4774009e102703c62a044429",
+            "duration_seconds": 30.72,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "May ambag sa mas malawak na plano",
                 "start_ms": 0,
-                "end_ms": 3320
+                "end_ms": 2712
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Ang Local Investment Plan for Health o LIPH ay planong pangkalusugan sa antas ng lungsod o probinsya na tinutukoy ng manual.",
-                "start_ms": 3620,
-                "end_ms": 14300
+                "text": "Maaaring makatulong ang ambag ng barangay sa pagtalakay ng mga pangangailangang pangkalusugan para sa Local Investment Plan for Health o LIPH ng lungsod o probinsya.",
+                "start_ms": 2712,
+                "end_ms": 13536
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Kinikilala rito ang kontribusyon ng barangay at munisipyo sa pagpaplano.",
-                "start_ms": 14600,
-                "end_ms": 20240
+                "text": "Ibinabahagi ang mungkahi sa pamamagitan ng umiiral na lokal na proseso kasama ang health team.",
+                "start_ms": 13536,
+                "end_ms": 19656
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang obserbasyong ibinahagi ng BHW ay maaaring makatulong sa pagtalakay ng mga lokal na pangangailangan.",
-                "start_ms": 20540,
-                "end_ms": 29540
-              },
-              {
-                "zone": "body",
-                "index": 3,
-                "text": "Ipaalam sa health team ang ambag sa pamamagitan ng umiiral na lokal na proseso; hindi awtomatikong pondado ang bawat mungkahi.",
-                "start_ms": 29840,
-                "end_ms": 40240
+                "text": "Hindi awtomatikong napopondohan ang mungkahi dahil naiparating ito sa pagpaplano.",
+                "start_ms": 19656,
+                "end_ms": 25032
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Local Investment Plan for Health: may ambag ang barangay; kumpirmahin ang lokal na proseso.",
-                "start_ms": 40540,
-                "end_ms": 47780
+                "text": "Maaaring makatulong ang ambag ng barangay sa LIPH; walang garantiyang pondo.",
+                "start_ms": 25032,
+                "end_ms": 30720
+              }
+            ]
+          }
+        },
+        "observation": {
+          "en": {
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/observation.en.70afc86eed3c.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "70afc86eed3c89884c4f91dc8d9271bd5b2edbd8ff15f3e4a55cc2b633f69b79",
+            "sha256": "06c90b739e78a091fae04bd661a76baadfd4910fb6bc355cda56041de128efb0",
+            "duration_seconds": 27.672,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Report what was seen",
+                "start_ms": 0,
+                "end_ms": 2304
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Marites writes, “There is standing water in three yards.”",
+                "start_ms": 2304,
+                "end_ms": 6528
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "That is what she saw.",
+                "start_ms": 6528,
+                "end_ms": 8784
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She does not write that the water caused children to become ill; she has not established that.",
+                "start_ms": 8784,
+                "end_ms": 14808
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She shares the specific observation and residents’ concern with health staff so they can discuss an appropriate next step.",
+                "start_ms": 14808,
+                "end_ms": 22560
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Share what was seen and the concern without claiming an unverified cause.",
+                "start_ms": 22560,
+                "end_ms": 27672
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/observation.fil.02730ef445ea.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "02730ef445eaa9e0e48e3af7f544da77a238a302a6b030f67e633889eb572038",
+            "sha256": "86e4ed4b020748ef4299ff77313eaaa95cc2c77a5cf7b01084bc647dffa9831b",
+            "duration_seconds": 30.672,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Sabihin ang nakita, hindi ang hinala",
+                "start_ms": 0,
+                "end_ms": 3096
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Isinulat ni Marites: “May naipong tubig sa tatlong bakuran.”",
+                "start_ms": 3096,
+                "end_ms": 7344
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Iyan ang nakita niya.",
+                "start_ms": 7344,
+                "end_ms": 9552
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi niya isinulat na ang tubig ang sanhi ng pagkakasakit ng mga bata; hindi pa niya iyon napatunayan.",
+                "start_ms": 9552,
+                "end_ms": 16104
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ibinahagi niya ang tiyak na obserbasyon at ang alalahanin ng mga residente sa health staff upang mapag-usapan ang angkop na susunod na hakbang.",
+                "start_ms": 16104,
+                "end_ms": 25200
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ibahagi ang nakita at ang alalahanin; huwag magpahayag ng di-napatunayang sanhi.",
+                "start_ms": 25200,
+                "end_ms": 30672
               }
             ]
           }
         },
         "organizer-scene": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/organizer-scene.en.af4bccd1d253.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "af4bccd1d2536e21f1fb203b0b51768209693bb14a54f1c86353415305814325",
-            "sha256": "2fdd6b2b53a497c52f2595e0be8e2f09e9c3b5c5538f7a5b16f49ae6912c51c2",
-            "duration_seconds": 31.373,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/organizer-scene.en.ab8688b04724.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "ab8688b04724e37dc19a6e1ee4b27688847558e2b05475d1a94d093a55847104",
+            "sha256": "b000a36902e0d1dc5eee827ae35c7152fb2e593b44d32e29290f467e2352f8e7",
+            "duration_seconds": 27.72,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "From observation to conversation",
                 "start_ms": 0,
-                "end_ms": 3160
+                "end_ms": 3120
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Marites notices standing water in some yards.",
-                "start_ms": 3460,
-                "end_ms": 7300
+                "text": "BHW Marites notices standing water in three yards.",
+                "start_ms": 3120,
+                "end_ms": 7872
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "She talks with residents, the purok leader, the health council member, and health staff about a possible shared activity.",
-                "start_ms": 7600,
-                "end_ms": 16320
+                "text": "She asks residents what they have noticed and who else should join the discussion.",
+                "start_ms": 7872,
+                "end_ms": 13488
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "A Community Organizer maintains good relationships and communication with the community and city or municipal health staff.",
-                "start_ms": 16620,
-                "end_ms": 26060
+                "text": "She also approaches the purok leader and health staff.",
+                "start_ms": 13488,
+                "end_ms": 17664
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "As a Community Organizer, she connects people before they decide on a shared activity.",
+                "start_ms": 17664,
+                "end_ms": 23592
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Relationships and communication begin collective action.",
-                "start_ms": 26360,
-                "end_ms": 31320
+                "text": "Listen and connect people before deciding on an activity.",
+                "start_ms": 23592,
+                "end_ms": 27720
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/organizer-scene.fil.47b84be3a75c.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "47b84be3a75c20b504f35e5066f62cb64c5c4cb31e8e1a995f7ab878db11f08e",
-            "sha256": "3afd26ef7444924d3e6c96b4b663112e60bc0085420dcc864063e1d46471129c",
-            "duration_seconds": 34.299,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/organizer-scene.fil.7005a326dafd.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "7005a326dafd1f13e9be73f2338029636529adca16d9a3a86dc9416a3f8e6497",
+            "sha256": "18b9ce9cdf24764009d542a908697d44018186c4e6f5dc7028570f7a71e03265",
+            "duration_seconds": 29.64,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Mula obserbasyon, tungo sa usapan",
                 "start_ms": 0,
-                "end_ms": 3560
+                "end_ms": 3048
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Napansin ni Marites ang naipong tubig sa ilang bakuran.",
-                "start_ms": 3860,
-                "end_ms": 7940
+                "text": "Napansin ni BHW Marites ang naipong tubig sa tatlong bakuran.",
+                "start_ms": 3048,
+                "end_ms": 8088
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Kinausap niya ang mga residente, purok leader, kagawad sa kalusugan, at health staff tungkol sa posibleng sama-samang gawain.",
-                "start_ms": 8240,
-                "end_ms": 18640
+                "text": "Kinausap niya ang mga residente: ano ang napansin nila, at sino pa ang dapat makasama sa usapan?",
+                "start_ms": 8088,
+                "end_ms": 14688
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang Community Organizer ay nagpapanatili ng mabuting relasyon at komunikasyon sa komunidad at sa health staff ng lungsod o munisipyo.",
-                "start_ms": 18940,
-                "end_ms": 28020
+                "text": "Lumapit din siya sa purok leader at health staff.",
+                "start_ms": 14688,
+                "end_ms": 18168
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Bilang Community Organizer, pinag-uugnay niya ang mga tao bago magpasya tungkol sa sama-samang gawain.",
+                "start_ms": 18168,
+                "end_ms": 25032
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ugnayan at komunikasyon ang simula ng sama-samang pagkilos.",
-                "start_ms": 28320,
-                "end_ms": 34240
+                "text": "Makinig at pag-ugnayin muna ang mga tao bago magpasya sa gawain.",
+                "start_ms": 25032,
+                "end_ms": 29640
               }
             ]
           }
         },
         "participation": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/participation.en.396bdbe8803e.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "396bdbe8803e1f22a62926abbd9df6b11c3f658fbb5cd5e90dbb52529ffb1757",
-            "sha256": "3ccaea3562960d6b2f8ceaf29100570e17362b16cb72bfd44ac693727d26623a",
-            "duration_seconds": 29.336,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/participation.en.9bbc7037ff43.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "9bbc7037ff4304b2378c1f154e4ce4901dbabd53108d7d4f282eba4855506fb7",
+            "sha256": "ae2bd4f5a21e07557d85e3b56d98aa528e2eac1157b4bc94385859c9b92e9bbe",
+            "duration_seconds": 30.552,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Invite people to participate",
                 "start_ms": 0,
-                "end_ms": 2480
+                "end_ms": 2736
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Marites does more than announce a clean-up drive.",
-                "start_ms": 2780,
-                "end_ms": 6460
+                "text": "Marites says, “I noticed standing water in three yards.",
+                "start_ms": 2736,
+                "end_ms": 7080
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "She asks who can join, what they can contribute, and which schedule is possible.",
-                "start_ms": 6760,
-                "end_ms": 12760
+                "text": "Could we meet with the purok leader and health staff to discuss what we might do?",
+                "start_ms": 7080,
+                "end_ms": 12072
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "A clear invitation names an action, includes partners, and allows people to respond.",
-                "start_ms": 13060,
-                "end_ms": 19900
+                "text": "When could you join us?”",
+                "start_ms": 12072,
+                "end_ms": 14232
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Residents participate rather than simply watch.",
-                "start_ms": 20200,
-                "end_ms": 24000
+                "text": "A resident suggests a different time.",
+                "start_ms": 14232,
+                "end_ms": 17328
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Marites listens before they choose a time together.",
+                "start_ms": 17328,
+                "end_ms": 21120
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Organizing gives residents a chance to shape the activity, rather than only attend it.",
+                "start_ms": 21120,
+                "end_ms": 27312
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Listen to responses; shape the activity with residents.",
-                "start_ms": 24300,
-                "end_ms": 29260
+                "text": "Residents have a chance to shape the plan.",
+                "start_ms": 27312,
+                "end_ms": 30552
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/participation.fil.92a022ff7e93.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "92a022ff7e937f5e3252006063e43a1ec4ad38f6738494a1ab1000eac47833c5",
-            "sha256": "74d8fe83c3a04a490261af1c6523385e348c4367866dcdbb06bd61aa98ff7a4f",
-            "duration_seconds": 34.795,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/participation.fil.d406b31f9aea.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "d406b31f9aeac5f50434257cf472dce9dbfb15b25a49a1a9a06afecb1abe1291",
+            "sha256": "15d3d5395a377e532b3d2993573497554ebedc9e8d08ae568ba860f0a658ce24",
+            "duration_seconds": 33.84,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Anyayahang makilahok",
                 "start_ms": 0,
-                "end_ms": 2160
+                "end_ms": 2208
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Hindi lang ipinapaalam ni Marites na may clean-up drive.",
-                "start_ms": 2460,
-                "end_ms": 6700
+                "text": "Sinabi ni Marites: “May napansin po akong naipong tubig sa tatlong bakuran.",
+                "start_ms": 2208,
+                "end_ms": 7272
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Tinatanong niya kung sino ang makasasama, ano ang kaya nilang gawin, at anong iskedyul ang posible.",
-                "start_ms": 7000,
-                "end_ms": 15000
+                "text": "Maaari ba tayong mag-usap kasama ang purok leader at health staff tungkol sa maaaring gawin?",
+                "start_ms": 7272,
+                "end_ms": 13320
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang malinaw na paanyaya ay may gagawin, kasama, at pagkakataong sumagot.",
-                "start_ms": 15300,
-                "end_ms": 22740
+                "text": "Kailan kayo makakasama?”",
+                "start_ms": 13320,
+                "end_ms": 15648
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang mga residente ay kalahok sa gawain, hindi tagapanood lamang.",
+                "text": "Nagmungkahi ng ibang oras ang isang residente.",
+                "start_ms": 15648,
+                "end_ms": 19080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Pinakinggan ito ni Marites bago sila pumili ng oras.",
+                "start_ms": 19080,
+                "end_ms": 23040
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Sa pag-oorganisa, may pagkakataon ang mga residente na hubugin ang gawain, hindi lamang dumalo rito.",
                 "start_ms": 23040,
-                "end_ms": 28480
+                "end_ms": 29832
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Makinig sa tugon; buuin ang gawain kasama ang mga residente.",
-                "start_ms": 28780,
-                "end_ms": 34740
+                "text": "May pagkakataon ang mga residente na baguhin ang plano.",
+                "start_ms": 29832,
+                "end_ms": 33840
               }
             ]
           }
         },
         "planning-team": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/planning-team.en.a725c82aad13.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "a725c82aad13ce5d0f667172d610ec95b80589c4d7ed4d1e5a85c357a7af162a",
-            "sha256": "019930d16978d3f71ec29ba54eee4ef4f2d0d20f113b8f206bd56a7bceff48d1",
-            "duration_seconds": 34.534,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/planning-team.en.e2b5e79c7746.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "e2b5e79c774677772faf3c832fa9d9e0b94d25969572b976e2254d37e2973ce2",
+            "sha256": "1c0a9fcacafd86eba9e51325f20fb252dc7dcd68f6742da56d8a6414509448a2",
+            "duration_seconds": 29.184,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Bring observations into planning",
                 "start_ms": 0,
-                "end_ms": 2800
+                "end_ms": 3000
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "The manual describes the BHW as part of the barangay planning team for health.",
-                "start_ms": 3100,
-                "end_ms": 9300
+                "text": "With residents and health staff, Marites identifies who will bring the observation to the barangay planning team for health.",
+                "start_ms": 3000,
+                "end_ms": 10824
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "The BHW brings relevant observations to help leaders understand and act on a problem.",
-                "start_ms": 9600,
-                "end_ms": 17120
+                "text": "They record the proposed action and who will report back to residents.",
+                "start_ms": 10824,
+                "end_ms": 15648
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Separate what was seen from an assumption: “There is standing water in three yards” is an observation; it does not prove the cause of an illness.",
-                "start_ms": 17420,
-                "end_ms": 28900
+                "text": "This brings what people saw into planning and lets them know what happened next.",
+                "start_ms": 15648,
+                "end_ms": 20904
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Confirm the actual process with your local health team.",
+                "start_ms": 20904,
+                "end_ms": 24840
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Share evidence without presenting assumptions as established facts.",
-                "start_ms": 29200,
-                "end_ms": 34480
+                "text": "Identify who will bring the concern forward and report back.",
+                "start_ms": 24840,
+                "end_ms": 29184
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/planning-team.fil.90a6eac28c22.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "90a6eac28c220ec3025dc10e584b1ca339dcc300270b42221a73947e801760bd",
-            "sha256": "8e9baec8d3a7af5ad23e4fe7d98d1173387c1438599762c3413b5d335bd142aa",
-            "duration_seconds": 37.094,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-community-organizer/planning-team.fil.b09afa266a0f.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "b09afa266a0f9e5cc48d5c71b69cc68bd6c3245f6bb16466c5831e3f8a7d63a1",
+            "sha256": "5249aeb89946814a3588e5f5a77878d6b8d3feb78cb6f5024077e2effa0f4b7c",
+            "duration_seconds": 33.312,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Dalhin ang nakita sa pagpaplano",
                 "start_ms": 0,
-                "end_ms": 3280
+                "end_ms": 2760
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Inilalarawan ng manual ang BHW bilang bahagi ng barangay planning team for health.",
-                "start_ms": 3580,
-                "end_ms": 10300
+                "text": "Kasama ang mga residente at health staff, tinukoy ni Marites kung sino ang magdadala ng obserbasyon sa barangay planning team for health.",
+                "start_ms": 2760,
+                "end_ms": 11064
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Dinadala niya ang kaugnay na obserbasyon upang matulungan ang mga lider na maunawaan at aksyunan ang problema.",
-                "start_ms": 10600,
-                "end_ms": 18760
+                "text": "Itinala nila ang napag-usapang mungkahi at kung sino ang magbabalik ng sagot sa mga residente.",
+                "start_ms": 11064,
+                "end_ms": 17208
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ihiwalay ang aktuwal na nakita sa hinala: “May naipong tubig sa tatlong bakuran” ay obserbasyon; hindi pa iyon patunay na iyon ang sanhi ng isang sakit.",
-                "start_ms": 19060,
-                "end_ms": 30900
+                "text": "Sa ganitong paraan, nakararating ang nakita sa pagpaplano at nalalaman ng mga tao ang naging kasunod na hakbang.",
+                "start_ms": 17208,
+                "end_ms": 24408
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kumpirmahin sa health team ang aktuwal na proseso sa inyong barangay.",
+                "start_ms": 24408,
+                "end_ms": 28896
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ibahagi ang ebidensya, hindi ang hinalang parang tiyak na katotohanan.",
-                "start_ms": 31200,
-                "end_ms": 37040
+                "text": "Tukuyin kung sino ang magdadala ng usapin at magbabalik ng sagot.",
+                "start_ms": 28896,
+                "end_ms": 33312
               }
             ]
           }

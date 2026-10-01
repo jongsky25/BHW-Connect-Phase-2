@@ -5,10 +5,10 @@
     "title_fil": "Bilang Community Organizer",
     "title_en": "As a Community Organizer",
     "objectives_fil": [
-      "Mailarawan kung paano mag-anyaya ng pakikilahok at magdala ng obserbasyon sa lokal na pagpaplano."
+      "Sa sitwasyong may napansing suliranin sa purok, makapag-anyaya ng pakikilahok, maihiwalay ang obserbasyon sa hinala, at maituro kung paano ito dadalhin sa lokal na pagpaplano."
     ],
     "objectives_en": [
-      "Describe how to invite participation and bring observations into local planning."
+      "Given a concern observed in the neighborhood, invite participation, distinguish the observation from an assumption, and explain how to bring it into local planning."
     ],
     "required": true
   },
@@ -21,8 +21,8 @@
       "asset_ids": [
         "A01"
       ],
-      "takeaway_fil": "Ugnayan at komunikasyon ang simula ng sama-samang pagkilos.",
-      "takeaway_en": "Relationships and communication begin collective action.",
+      "takeaway_fil": "Makinig at pag-ugnayin muna ang mga tao bago magpasya sa gawain.",
+      "takeaway_en": "Listen and connect people before deciding on an activity.",
       "check": null
     },
     {
@@ -33,8 +33,20 @@
       "asset_ids": [
         "A04"
       ],
-      "takeaway_fil": "Makinig sa tugon; buuin ang gawain kasama ang mga residente.",
-      "takeaway_en": "Listen to responses; shape the activity with residents.",
+      "takeaway_fil": "May pagkakataon ang mga residente na baguhin ang plano.",
+      "takeaway_en": "Residents have a chance to shape the plan.",
+      "check": null
+    },
+    {
+      "id": "observation",
+      "concept_ids": [
+        "m1.organizer.planningteam"
+      ],
+      "asset_ids": [
+        "A04"
+      ],
+      "takeaway_fil": "Ibahagi ang nakita at ang alalahanin; huwag magpahayag ng di-napatunayang sanhi.",
+      "takeaway_en": "Share what was seen and the concern without claiming an unverified cause.",
       "check": null
     },
     {
@@ -45,8 +57,8 @@
       "asset_ids": [
         "A04"
       ],
-      "takeaway_fil": "Ibahagi ang ebidensya, hindi ang hinalang parang tiyak na katotohanan.",
-      "takeaway_en": "Share evidence without presenting assumptions as established facts.",
+      "takeaway_fil": "Tukuyin kung sino ang magdadala ng usapin at magbabalik ng sagot.",
+      "takeaway_en": "Identify who will bring the concern forward and report back.",
       "check": null
     },
     {
@@ -57,8 +69,8 @@
       "asset_ids": [
         "A04"
       ],
-      "takeaway_fil": "Local Investment Plan for Health: may ambag ang barangay; kumpirmahin ang lokal na proseso.",
-      "takeaway_en": "Local Investment Plan for Health: barangays contribute; confirm the local process.",
+      "takeaway_fil": "Maaaring makatulong ang ambag ng barangay sa LIPH; walang garantiyang pondo.",
+      "takeaway_en": "Barangay input may inform the LIPH; funding is not guaranteed.",
       "check": null
     },
     {
@@ -70,28 +82,28 @@
         "m1.organizer.liph"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Mag-ugnay ng tao, mag-anyaya ng pagkilos, at dalhin ang obserbasyon sa pagpaplano.",
-      "takeaway_en": "Connect people, invite action, and bring observations into planning.",
+      "takeaway_fil": "Makinig sa tugon, iulat ang nakita, at dalhin ang usapin sa tamang lokal na proseso.",
+      "takeaway_en": "Listen to responses, report what was seen, and use the local planning process.",
       "check": {
-        "prompt_fil": "Alin ang malinaw na gawaing pang-organisa?",
-        "prompt_en": "Which is a clear organizing action?",
+        "prompt_fil": "Nagmungkahi ng ibang oras ang mga residente para sa usapan. Sinabi rin ng isa na ang naipong tubig ang sanhi ng pagkakasakit ng mga bata. Ano ang pinakamainam na susunod na gawin ni Marites?",
+        "prompt_en": "Residents suggest a different time for the discussion. One resident also says the standing water caused children to become ill. What should Marites do next?",
         "options": [
           {
-            "fil": "I-post ang plano at huwag nang humingi ng tugon.",
-            "en": "Post the plan without inviting responses."
+            "fil": "Ituloy ang unang oras at sabihin na napatunayan na ang sanhi ng sakit.",
+            "en": "Keep the original time and say the cause of illness has been proven."
           },
           {
-            "fil": "Pangakuan ng pondo ang bawat mungkahi.",
-            "en": "Promise funding for every suggestion."
+            "fil": "Ipagpaliban ang usapan hanggang may pangakong pondo para sa gawain.",
+            "en": "Delay the discussion until funding for the activity is promised."
           },
           {
-            "fil": "Anyayahan ang residente at health staff na magplano mula sa obserbasyon.",
-            "en": "Invite residents and health staff to plan using observations."
+            "fil": "Pakinggan ang mungkahing oras, iulat ang nakita, at kausapin ang health staff tungkol sa susunod na hakbang.",
+            "en": "Listen to the suggested time, report what was seen, and discuss the next step with health staff."
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "May ugnayan, pakikilahok, at ambag sa pagpaplano. Hindi awtomatikong paglalaan ng pondo ang LIPH link.",
-        "feedback_en": "This combines relationships, participation, and planning input. The LIPH connection does not guarantee funding."
+        "feedback_fil": "Tama ang pakikinig sa residente at pagbabahagi ng tiyak na obserbasyon sa health staff. Hindi pa napatunayan ang sanhi ng sakit, at hindi maaaring mangako ng pondo ang BHW.",
+        "feedback_en": "Listening to residents and sharing a specific observation with health staff supports joint planning. The cause of illness has not been established, and the BHW cannot promise funding."
       }
     }
   ],
@@ -129,10 +141,12 @@
     {
       "id": "m1.organizer.planningteam",
       "read_ids": [
+        "observation",
         "planning-team",
         "check"
       ],
       "slide_ids": [
+        "observation-slide",
         "planning-team-slide",
         "check-slide"
       ],

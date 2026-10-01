@@ -1,11 +1,11 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can say out loud how they would invite residents to take part in a shared activity — what to do, who can join, when to talk — and how they would bring an observation (not an assumption) to the barangay planning team for health.
+Given a concern noticed in the purok, the BHW can invite residents into a discussion, adjust to their response, report what was seen without claiming a cause, and name the local route for bringing the concern into health planning.
 
 ## [time-materials] Time and materials
 
 - **Time:** about 45 minutes in a face-to-face session (the Community Organizer part of the 6-hour allocation in the subchapter guide). Self-study of the lesson alone takes about 10 minutes.
-- **Materials:** manila paper and markers; the lesson's slides (the "Invite people to participate" questions and the observation-to-planning flow); two index cards per pair for the practice activity.
+- **Materials:** manila paper and markers; the lesson's six slides; two index cards per pair for the invitation and observation practice.
 
 ## [prepare] Prepare
 
@@ -19,11 +19,12 @@ Ask the group: *"Think of the last time something needed fixing in your purok �
 
 ## [steps] Steps
 
-1. **Scene (Read "From observation to conversation", first slide).** Marites notices standing water and talks with residents, the purok leader, the health council member and health staff. Ask: *"Who did Marites talk to before anything was decided?"* Point out that relationships and communication with both the community and city or municipal health staff come first.
-2. **Invite participation (Read "Invite people to participate", second slide).** Show the three questions on the slide: *What will we do? Who can join? When can we discuss it?* Ask: *"What is the difference between announcing a clean-up drive and inviting people to one?"* Bring out that a clear invitation names an action, includes partners, and lets people respond.
-3. **Bring observations into planning (Read "Bring observations into planning", third slide).** Ask: *"Who here already sits on your barangay's planning team for health?"* Usually few hands — treat that as information, not failure, and discuss why. Then write two sentences on the board: *"There is standing water in three yards"* and *"The standing water is making children sick."* Ask which one is an observation.
-4. **Wider planning (Read "Contribute to wider planning", fourth slide).** Explain that the LIPH is the city or provincial health plan the manual describes, and that it recognizes barangay and municipal contributions. Share what you found out about your local process. Say clearly: a proposal does not automatically receive funding.
-5. **Self-check.** Read the check question and let the group discuss before revealing the answer. Ask the group to say what is missing from each wrong option.
+1. **Scene (first slide).** Marites notices standing water in three yards. Ask: *"Who should she hear from before a shared activity is decided?"* Include residents, the purok leader, and health staff.
+2. **Invitation (second slide).** Read Marites's example invitation from the lesson. Ask a participant to suggest another time. Have the group say how Marites should respond so residents can shape the activity.
+3. **Observation (third slide).** Write *"There is standing water in three yards"* and *"The standing water made children ill."* Ask which statement Marites can report as something she saw. Acknowledge concern about illness without asserting its cause.
+4. **Planning team (fourth slide).** Ask who carries a concern to the barangay planning team for health in this locality and how residents hear the response. Use the actual local route you confirmed during preparation; do not imply every BHW attends the team.
+5. **Wider planning (fifth slide).** Explain in one sentence how barangay input may inform the city or provincial LIPH through the local process. State that a proposal does not automatically receive funding.
+6. **Self-check (sixth slide).** Let the group choose Marites's next action before revealing the answer. Ask why the other options fail.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -38,21 +39,21 @@ Ask the group: *"Think of the last time something needed fixing in your purok �
 
 ## [practice] Practice activity
 
-In pairs, each BHW picks one real observation from their own purok (no names of residents). On one card they write the observation as something seen, not assumed. On the other they write a 3-line invitation: what we will do, who can join, when we can discuss it. Then one partner plays a resident or the purok leader and the BHW gives the invitation aloud, and says in one or two sentences how they would bring the observation to the barangay planning team for health. The partner answers as a resident would; the BHW must respond to that answer. Two or three pairs present.
+In pairs, each BHW chooses one real observation from their purok without naming residents. On one card they write only what was seen. On the other they write an invitation that says what needs discussion, who should join, and when they might meet. One partner plays a resident and suggests a different time or raises an unverified explanation. The BHW listens, adjusts the invitation, states the observation without claiming a cause, and names whom they would approach to bring it into local health planning. Swap roles. Observe two or three pairs, then sample others in the next round.
 
 ## [answer-key] Self-check answer key
 
 The lesson has one check. It appears at the end of Read ("Apply your learning") and again on the last slide; it is the same question, so it is covered once here.
 
-- **"Which is a clear organizing action?"** → **Invite residents and health staff to plan using observations.** It combines relationships, participation and planning input.
-  - *Post the plan without inviting responses* is wrong: it announces but does not let residents respond or take part, so they only watch.
-  - *Promise funding for every suggestion* is wrong: the LIPH connection does not guarantee funding, and a BHW cannot promise it. Contributions go through the existing local process with the health team.
+- **"Residents suggest a different time ... What should Marites do next?"** → **Listen to the suggested time, report what was seen, and discuss the next step with health staff.** She includes residents and keeps the observation separate from an unverified explanation.
+  - *Keep the original time and say the cause has been proven* ignores residents and turns an assumption into a fact.
+  - *Delay until funding is promised* blocks discussion and assumes a funding guarantee that neither the BHW nor the LIPH can give.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator — *describe how to invite participation and bring observations into local planning* — during the practice activity:
+Use the lesson's observation indicator during the paired role-play:
 
-- **Kaya na:** without prompting, the BHW gives an invitation that names the action, who can join and when to talk; responds to the "resident's" answer; and states the observation as something seen (not a cause) when describing how they would bring it to planning.
+- **Kaya na:** without prompting, the BHW invites a discussion with residents and health staff, adjusts to the resident's response, states only what was observed, and names whom to approach through the actual local planning route.
 - **Kailangan pa ng practice:** the BHW gets there, but only after you ask (for example, *"How would they answer you?"* or *"Is that what you saw, or what you think?"*).
 - **Hindi pa:** the BHW only announces the activity, does not respond to the resident, presents an assumption as fact, or promises funding, and cannot correct it even with prompts.
 

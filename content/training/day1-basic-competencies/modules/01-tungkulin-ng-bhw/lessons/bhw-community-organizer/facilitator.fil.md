@@ -1,11 +1,11 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na sabihin nang malakas kung paano niya aanyayahan ang mga residente na makilahok sa sama-samang gawain — ano ang gagawin, sino ang makasasama, kailan mag-uusap — at kung paano niya dadalhin ang isang obserbasyon (hindi hinala) sa barangay planning team for health.
+Sa sitwasyong may napansing suliranin sa purok, kaya ng BHW na mag-anyaya ng mga residente sa usapan, umangkop sa kanilang tugon, mag-ulat ng nakita nang hindi naghahayag ng sanhi, at pangalanan ang lokal na paraan ng pagdadala nito sa pagpaplanong pangkalusugan.
 
 ## [time-materials] Oras at kagamitan
 
 - **Oras:** mga 45 minuto sa harapang sesyon (bahagi ng Community Organizer sa 6 na oras na nakatakda sa gabay ng subchapter). Mga 10 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper at marker; ang slides ng aralin (ang mga tanong sa "Anyayahang makilahok" at ang daloy mula obserbasyon tungo sa pagpaplano); dalawang index card bawat pares para sa gawaing pagsasanay.
+- **Kagamitan:** manila paper at marker; ang anim na slide ng aralin; dalawang index card bawat pares para sa paanyaya at obserbasyon.
 
 ## [prepare] Paghahanda
 
@@ -19,11 +19,12 @@ Itanong sa grupo: *"Alalahanin ang huling pagkakataong may kailangang ayusin sa 
 
 ## [steps] Mga hakbang
 
-1. **Eksena (Read "Mula obserbasyon, tungo sa usapan", unang slide).** Napansin ni Marites ang naipong tubig at kinausap niya ang mga residente, purok leader, kagawad sa kalusugan, at health staff. Itanong: *"Sino-sino ang kinausap ni Marites bago may napagpasyahan?"* Ipakita na nauuna ang ugnayan at komunikasyon sa komunidad at sa health staff ng lungsod o munisipyo.
-2. **Anyayahang makilahok (Read "Anyayahang makilahok", ikalawang slide).** Ipakita ang tatlong tanong sa slide: *Ano ang gagawin? Sino ang makasasama? Kailan tayo mag-uusap?* Itanong: *"Ano ang pagkakaiba ng pag-anunsyo ng clean-up drive at pag-anyaya sa clean-up drive?"* Ilabas na ang malinaw na paanyaya ay may gagawin, may kasama, at may pagkakataong sumagot.
-3. **Dalhin ang nakita sa pagpaplano (Read "Dalhin ang nakita sa pagpaplano", ikatlong slide).** Itanong: *"Sino sa inyo ang kasapi na ng barangay planning team for health?"* Kadalasan kakaunti ang kamay — ituring itong impormasyon, hindi kabiguan, at pag-usapan kung bakit. Pagkatapos, isulat sa pisara ang dalawang pangungusap: *"May naipong tubig sa tatlong bakuran"* at *"Ang naipong tubig ang nagpapasakit sa mga bata."* Itanong kung alin ang obserbasyon.
-4. **Mas malawak na plano (Read "May ambag sa mas malawak na plano", ikaapat na slide).** Ipaliwanag na ang LIPH ay planong pangkalusugan ng lungsod o probinsya na tinutukoy ng manual, at kinikilala nito ang ambag ng barangay at munisipyo. Ibahagi ang nalaman mo tungkol sa lokal na proseso. Sabihin nang malinaw: hindi awtomatikong napopondohan ang bawat mungkahi.
-5. **Self-check.** Basahin ang tanong ng check at hayaang mag-usap ang grupo bago ibigay ang sagot. Ipasabi sa grupo kung ano ang kulang sa bawat maling sagot.
+1. **Eksena (unang slide).** Napansin ni Marites ang naipong tubig sa tatlong bakuran. Itanong: *"Sino ang dapat niyang pakinggan bago magpasya sa sama-samang gawain?"* Isama ang mga residente, purok leader, at health staff.
+2. **Paanyaya (ikalawang slide).** Basahin ang halimbawang paanyaya ni Marites sa aralin. Hayaang magmungkahi ng ibang oras ang isang kalahok. Itanong kung paano tutugon si Marites upang makabahagi ang mga residente sa pagbuo ng gawain.
+3. **Obserbasyon (ikatlong slide).** Isulat ang *"May naipong tubig sa tatlong bakuran"* at *"Ang tubig ang nagpasakit sa mga bata."* Itanong kung alin ang maipapahayag ni Marites bilang nakita. Kilalanin ang pag-aalala nang hindi nag-aangking alam ang sanhi.
+4. **Planning team (ikaapat na slide).** Itanong kung sino sa lugar na ito ang nagdadala ng usapin sa barangay planning team for health at paano malalaman ng mga residente ang naging tugon. Gamitin ang lokal na prosesong kinumpirma sa paghahanda; huwag ipahiwatig na lahat ng BHW ay dumadalo sa team.
+5. **Mas malawak na plano (ikalimang slide).** Ipaliwanag sa isang pangungusap na maaaring makatulong ang ambag ng barangay sa LIPH ng lungsod o probinsya sa pamamagitan ng lokal na proseso. Sabihin na hindi awtomatikong napopondohan ang mungkahi.
+6. **Self-check (ikaanim na slide).** Papiliin ang grupo ng susunod na gagawin ni Marites bago ibigay ang sagot. Itanong kung bakit hindi angkop ang ibang pagpipilian.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -38,21 +39,21 @@ Itanong sa grupo: *"Alalahanin ang huling pagkakataong may kailangang ayusin sa 
 
 ## [practice] Gawaing pagsasanay
 
-Magkapares, pipili ang bawat BHW ng isang totoong obserbasyon mula sa sariling purok (walang pangalan ng residente). Sa isang card, isusulat nila ang obserbasyon bilang nakita, hindi hinala. Sa isa pa, isusulat ang 3-linyang paanyaya: ano ang gagawin, sino ang makasasama, kailan mag-uusap. Pagkatapos, gaganap ang kapares bilang residente o purok leader, at sasabihin nang malakas ng BHW ang paanyaya, at ipapaliwanag sa isa o dalawang pangungusap kung paano niya dadalhin ang obserbasyon sa barangay planning team for health. Sasagot ang kapares gaya ng isang residente; dapat tumugon ang BHW sa sagot na iyon. Dalawa o tatlong pares ang magpepresenta.
+Magkapares, pipili ang bawat BHW ng isang totoong obserbasyon sa purok nang hindi pinapangalanan ang mga residente. Sa unang card, isusulat lamang ang nakita. Sa ikalawa, isusulat ang paanyaya: ano ang pag-uusapan, sino ang dapat makasama, at kailan maaaring magkita. Gaganap na residente ang kapares at magmumungkahi ng ibang oras o ng hindi pa napatunayang paliwanag. Makikinig ang BHW, iaangkop ang paanyaya, sasabihin ang obserbasyon nang hindi naghahayag ng sanhi, at papangalanan kung kanino siya lalapit upang dalhin ito sa lokal na pagpaplanong pangkalusugan. Magpalitan ng papel. Obserbahan ang dalawa o tatlong pares, saka pumili pa ng iba sa susunod na ikot.
 
 ## [answer-key] Susi sa self-check
 
 Iisa ang check sa aralin. Nasa dulo ito ng Read ("Gamitin ang natutuhan") at nasa huling slide rin; iisang tanong ito, kaya isang beses lang itong sinasagot dito.
 
-- **"Alin ang malinaw na gawaing pang-organisa?"** → **Anyayahan ang residente at health staff na magplano mula sa obserbasyon.** May ugnayan, pakikilahok, at ambag sa pagpaplano.
-  - Mali ang *I-post ang plano at huwag nang humingi ng tugon*: nag-aanunsyo ito pero hindi binibigyan ng pagkakataon ang residente na sumagot o makilahok, kaya nanonood lang sila.
-  - Mali ang *Pangakuan ng pondo ang bawat mungkahi*: hindi garantiya ng pondo ang ugnayan sa LIPH, at hindi ito maipapangako ng BHW. Dumadaan ang ambag sa umiiral na lokal na proseso kasama ang health team.
+- **"Nagmungkahi ng ibang oras ... Ano ang pinakamainam na susunod na gawin ni Marites?"** → **Pakinggan ang mungkahing oras, iulat ang nakita, at kausapin ang health staff tungkol sa susunod na hakbang.** Nakasali ang mga residente at hiwalay ang obserbasyon sa hindi pa napatunayang paliwanag.
+  - Mali ang *Ituloy ang unang oras at sabihin na napatunayan na ang sanhi*: hindi pinakikinggan ang mga residente at ginagawang katotohanan ang hinala.
+  - Mali ang *Ipagpaliban hanggang may pangakong pondo*: nahahadlangan ang usapan at ipinapalagay ang garantiyang hindi maibibigay ng BHW o LIPH.
 
 ## [observe] Ano ang oobserbahan
 
-Gamitin ang observation indicator ng aralin — *mailarawan kung paano mag-anyaya ng pakikilahok at magdala ng obserbasyon sa lokal na pagpaplano* — habang ginagawa ang gawaing pagsasanay:
+Gamitin ang observation indicator ng aralin habang ginagawa ang pagsasanay ng magkapares:
 
-- **Kaya na:** nang walang gabay, nagbibigay ang BHW ng paanyayang may gagawin, kung sino ang makasasama, at kailan mag-uusap; tumutugon sa sagot ng "residente"; at inilalahad ang obserbasyon bilang nakita (hindi sanhi) kapag inilalarawan kung paano ito dadalhin sa pagpaplano.
+- **Kaya na:** nang walang gabay, inaanyayahan ng BHW ang mga residente at health staff sa usapan, umaangkop sa tugon ng residente, sinasabi lamang ang nakita, at pinapangalanan kung kanino lalapit sa aktuwal na lokal na proseso ng pagpaplano.
 - **Kailangan pa ng practice:** nagagawa ito ng BHW pero matapos mo lang magtanong (halimbawa, *"Paano ka nila sasagutin?"* o *"Iyan ba ang nakita mo, o ang sa tingin mo?"*).
 - **Hindi pa:** nag-aanunsyo lang ang BHW, hindi tumutugon sa residente, inilalahad ang hinala na parang katotohanan, o nangangako ng pondo, at hindi ito maitama kahit may gabay.
 

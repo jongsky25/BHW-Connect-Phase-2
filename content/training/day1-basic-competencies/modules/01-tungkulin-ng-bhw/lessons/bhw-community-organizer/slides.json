@@ -7,8 +7,8 @@
     "layout": "scene",
     "heading_fil": "Mula obserbasyon, tungo sa usapan",
     "heading_en": "From observation to conversation",
-    "display_fil": "Mga residente\nMga lokal na lider\nHealth staff\nUgnayan at komunikasyon ang simula ng sama-samang pagkilos.",
-    "display_en": "Residents\nLocal leaders\nHealth staff\nRelationships and communication begin collective action.",
+    "display_fil": "Napansin ni Marites ang naipong tubig sa tatlong bakuran.\nTinanong niya ang mga residente kung ano ang nakita nila.\nKinakausap niya rin ang purok leader at health staff.",
+    "display_en": "Marites noticed standing water in three yards.\nShe asked residents what they had seen.\nShe also spoke with the purok leader and health staff.",
     "asset_ids": [
       "A01"
     ],
@@ -19,11 +19,26 @@
     "concept_ids": [
       "m1.organizer.participation"
     ],
-    "layout": "process",
+    "layout": "scene",
     "heading_fil": "Anyayahang makilahok",
     "heading_en": "Invite people to participate",
-    "display_fil": "Ano ang gagawin?\nSino ang makasasama?\nKailan tayo mag-uusap?\nMakinig sa tugon; buuin ang gawain kasama ang mga residente.",
-    "display_en": "What will we do?\nWho can join?\nWhen can we discuss it?\nListen to responses; shape the activity with residents.",
+    "display_fil": "Inanyayahan ni Marites ang mga residente sa usapan.\nTinanong niya kung sino ang makasasama at kailan sila maaari.\nPinakinggan niya ang mungkahing ibang oras.",
+    "display_en": "Marites invited residents to discuss what they could do.\nShe asked who could join and when they were available.\nShe listened when a resident suggested a different time.",
+    "asset_ids": [
+      "A04"
+    ],
+    "check": null
+  },
+  {
+    "id": "observation-slide",
+    "concept_ids": [
+      "m1.organizer.planningteam"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Sabihin ang nakita, hindi ang hinala",
+    "heading_en": "Report what was seen",
+    "display_fil": "Nakita: May naipong tubig sa tatlong bakuran.\nHindi pa napatunayan: Iyon ang sanhi ng sakit.\nIbinahagi ni Marites ang obserbasyon sa health staff.",
+    "display_en": "Seen: There is standing water in three yards.\nNot established: It caused an illness.\nMarites shared the observation with health staff.",
     "asset_ids": [
       "A04"
     ],
@@ -34,11 +49,11 @@
     "concept_ids": [
       "m1.organizer.planningteam"
     ],
-    "layout": "process",
+    "layout": "scene",
     "heading_fil": "Dalhin ang nakita sa pagpaplano",
     "heading_en": "Bring observations into planning",
-    "display_fil": "Obserbasyon\nBarangay planning team for health\nNapagkasunduang aksyon\nIbahagi ang ebidensya, hindi ang hinalang parang tiyak na katotohanan.",
-    "display_en": "Observation\nBarangay planning team for health\nAgreed action\nShare evidence without presenting assumptions as established facts.",
+    "display_fil": "Tutukuyin ng grupo kung sino ang magdadala ng usapin.\nDadalo ang kinatawan sa lokal na pagpaplano kasama ang health team.\nMay magbabalik ng sagot sa mga residente.",
+    "display_en": "The group identifies who will bring the concern forward.\nA representative uses the local planning process with the health team.\nSomeone reports back to residents.",
     "asset_ids": [
       "A04"
     ],
@@ -49,11 +64,11 @@
     "concept_ids": [
       "m1.organizer.liph"
     ],
-    "layout": "process",
+    "layout": "scene",
     "heading_fil": "May ambag sa mas malawak na plano",
     "heading_en": "Contribute to wider planning",
-    "display_fil": "Pangangailangan sa barangay\nLokal na pagtalakay\nLIPH · lungsod / probinsya\nLocal Investment Plan for Health: may ambag ang barangay; kumpirmahin ang lokal na proseso.",
-    "display_en": "Barangay needs\nLocal discussion\nLIPH · city / province\nLocal Investment Plan for Health: barangays contribute; confirm the local process.",
+    "display_fil": "Maaaring makatulong sa LIPH ang ambag ng barangay.\nDumaraan ito sa umiiral na lokal na proseso.\nHindi garantisado ang pondo para sa mungkahi.",
+    "display_en": "Barangay input may inform the LIPH.\nIt goes through the existing local process.\nFunding for a proposal is not guaranteed.",
     "asset_ids": [
       "A04"
     ],
@@ -70,29 +85,29 @@
     "layout": "decision",
     "heading_fil": "Gamitin ang natutuhan",
     "heading_en": "Apply your learning",
-    "display_fil": "Mag-ugnay ng tao, mag-anyaya ng pagkilos, at dalhin ang obserbasyon sa pagpaplano.",
-    "display_en": "Connect people, invite action, and bring observations into planning.",
+    "display_fil": "Makinig sa tugon, iulat ang nakita, at sundin ang lokal na proseso.",
+    "display_en": "Listen, report what was seen, and follow the local process.",
     "asset_ids": [],
     "check": {
-      "prompt_fil": "Alin ang malinaw na gawaing pang-organisa?",
-      "prompt_en": "Which is a clear organizing action?",
+      "prompt_fil": "Nagmungkahi ng ibang oras ang mga residente para sa usapan. Sinabi rin ng isa na ang naipong tubig ang sanhi ng pagkakasakit ng mga bata. Ano ang pinakamainam na susunod na gawin ni Marites?",
+      "prompt_en": "Residents suggest a different time for the discussion. One resident also says the standing water caused children to become ill. What should Marites do next?",
       "options": [
         {
-          "fil": "I-post ang plano at huwag nang humingi ng tugon.",
-          "en": "Post the plan without inviting responses."
+          "fil": "Ituloy ang unang oras at sabihin na napatunayan na ang sanhi ng sakit.",
+          "en": "Keep the original time and say the cause of illness has been proven."
         },
         {
-          "fil": "Pangakuan ng pondo ang bawat mungkahi.",
-          "en": "Promise funding for every suggestion."
+          "fil": "Ipagpaliban ang usapan hanggang may pangakong pondo para sa gawain.",
+          "en": "Delay the discussion until funding for the activity is promised."
         },
         {
-          "fil": "Anyayahan ang residente at health staff na magplano mula sa obserbasyon.",
-          "en": "Invite residents and health staff to plan using observations."
+          "fil": "Pakinggan ang mungkahing oras, iulat ang nakita, at kausapin ang health staff tungkol sa susunod na hakbang.",
+          "en": "Listen to the suggested time, report what was seen, and discuss the next step with health staff."
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "May ugnayan, pakikilahok, at ambag sa pagpaplano. Hindi awtomatikong paglalaan ng pondo ang LIPH link.",
-      "feedback_en": "This combines relationships, participation, and planning input. The LIPH connection does not guarantee funding."
+      "feedback_fil": "Tama ang pakikinig sa residente at pagbabahagi ng tiyak na obserbasyon sa health staff. Hindi pa napatunayan ang sanhi ng sakit, at hindi maaaring mangako ng pondo ang BHW.",
+      "feedback_en": "Listening to residents and sharing a specific observation with health staff supports joint planning. The cause of illness has not been established, and the BHW cannot promise funding."
     }
   }
 ]

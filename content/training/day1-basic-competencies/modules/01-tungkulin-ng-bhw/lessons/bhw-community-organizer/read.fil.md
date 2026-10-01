@@ -1,19 +1,23 @@
 ## [organizer-scene] Mula obserbasyon, tungo sa usapan
 
-Napansin ni Marites ang naipong tubig sa ilang bakuran. Kinausap niya ang mga residente, purok leader, kagawad sa kalusugan, at health staff tungkol sa posibleng sama-samang gawain. Ang Community Organizer ay nagpapanatili ng mabuting relasyon at komunikasyon sa komunidad at sa health staff ng lungsod o munisipyo.
+Napansin ni BHW Marites ang naipong tubig sa tatlong bakuran. Kinausap niya ang mga residente: ano ang napansin nila, at sino pa ang dapat makasama sa usapan? Lumapit din siya sa purok leader at health staff. Bilang Community Organizer, pinag-uugnay niya ang mga tao bago magpasya tungkol sa sama-samang gawain.
 
 ## [participation] Anyayahang makilahok
 
-Hindi lang ipinapaalam ni Marites na may clean-up drive. Tinatanong niya kung sino ang makasasama, ano ang kaya nilang gawin, at anong iskedyul ang posible. Ang malinaw na paanyaya ay may gagawin, kasama, at pagkakataong sumagot. Ang mga residente ay kalahok sa gawain, hindi tagapanood lamang.
+Sinabi ni Marites: “May napansin po akong naipong tubig sa tatlong bakuran. Maaari ba tayong mag-usap kasama ang purok leader at health staff tungkol sa maaaring gawin? Kailan kayo makakasama?” Nagmungkahi ng ibang oras ang isang residente. Pinakinggan ito ni Marites bago sila pumili ng oras. Sa pag-oorganisa, may pagkakataon ang mga residente na hubugin ang gawain, hindi lamang dumalo rito.
+
+## [observation] Sabihin ang nakita, hindi ang hinala
+
+Isinulat ni Marites: “May naipong tubig sa tatlong bakuran.” Iyan ang nakita niya. Hindi niya isinulat na ang tubig ang sanhi ng pagkakasakit ng mga bata; hindi pa niya iyon napatunayan. Ibinahagi niya ang tiyak na obserbasyon at ang alalahanin ng mga residente sa health staff upang mapag-usapan ang angkop na susunod na hakbang.
 
 ## [planning-team] Dalhin ang nakita sa pagpaplano
 
-Inilalarawan ng manual ang BHW bilang bahagi ng barangay planning team for health. Dinadala niya ang kaugnay na obserbasyon upang matulungan ang mga lider na maunawaan at aksyunan ang problema. Ihiwalay ang aktuwal na nakita sa hinala: “May naipong tubig sa tatlong bakuran” ay obserbasyon; hindi pa iyon patunay na iyon ang sanhi ng isang sakit.
+Kasama ang mga residente at health staff, tinukoy ni Marites kung sino ang magdadala ng obserbasyon sa barangay planning team for health. Itinala nila ang napag-usapang mungkahi at kung sino ang magbabalik ng sagot sa mga residente. Sa ganitong paraan, nakararating ang nakita sa pagpaplano at nalalaman ng mga tao ang naging kasunod na hakbang. Kumpirmahin sa health team ang aktuwal na proseso sa inyong barangay.
 
 ## [liph] May ambag sa mas malawak na plano
 
-Ang Local Investment Plan for Health o LIPH ay planong pangkalusugan sa antas ng lungsod o probinsya na tinutukoy ng manual. Kinikilala rito ang kontribusyon ng barangay at munisipyo sa pagpaplano. Ang obserbasyong ibinahagi ng BHW ay maaaring makatulong sa pagtalakay ng mga lokal na pangangailangan. Ipaalam sa health team ang ambag sa pamamagitan ng umiiral na lokal na proseso; hindi awtomatikong pondado ang bawat mungkahi.
+Maaaring makatulong ang ambag ng barangay sa pagtalakay ng mga pangangailangang pangkalusugan para sa Local Investment Plan for Health o LIPH ng lungsod o probinsya. Ibinabahagi ang mungkahi sa pamamagitan ng umiiral na lokal na proseso kasama ang health team. Hindi awtomatikong napopondohan ang mungkahi dahil naiparating ito sa pagpaplano.
 
 ## [check] Gamitin ang natutuhan
 
-Alin ang malinaw na gawaing pang-organisa?
+Nagmungkahi ng ibang oras ang mga residente para sa usapan. Sinabi rin ng isa na ang naipong tubig ang sanhi ng pagkakasakit ng mga bata. Ano ang pinakamainam na susunod na gawin ni Marites?
