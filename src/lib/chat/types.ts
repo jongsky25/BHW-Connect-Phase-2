@@ -1,3 +1,5 @@
+import type { MeasurementAnswer } from "./measurement";
+
 export type ChatEntryCandidate = {
   // Database primary key (uuid). This is what the API returns to the client
   // and what chat_messages.matched_entry_id references.
@@ -95,7 +97,8 @@ export type ConversationRoute =
   | "red_flag"
   | "clarify"
   | "selection"
-  | "context_carry";
+  | "context_carry"
+  | "measurement";
 
 type ConversationBase = {
   route: ConversationRoute;
@@ -112,6 +115,7 @@ export type ConversationResult =
       clarifierId?: string;
     })
   | (ConversationBase & { type: "did_you_mean"; candidates: ScoredEntry[] })
+  | (ConversationBase & { type: "measurement"; measurement: MeasurementAnswer })
   | (ConversationBase & { type: "clarify"; clarifier: Clarifier })
   | (ConversationBase & { type: "no_answer" })
   | (ConversationBase & { type: "invalid_selection" });

@@ -1,5 +1,12 @@
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
-import { STABLE_ADMIN, STABLE_BHW, STABLE_SUPER_ADMIN, getAccessToken, restGet } from "./fixtures/auth";
+import {
+  OTHER_BARANGAY_BHW,
+  STABLE_ADMIN,
+  STABLE_BHW,
+  STABLE_SUPER_ADMIN,
+  getAccessToken,
+  restGet,
+} from "./fixtures/auth";
 
 // INC-17. The conversation layer only works against the real HHP+ NCD corpus
 // (the red-flag and clarifier rules point at m3-/m4-/m1- entry ids), so this
@@ -203,6 +210,98 @@ test("Chat Guide UI asks a clarifying question and answers the tapped option", a
 
     // The emergency answer is announced assertively, not as a routine bubble.
     await expect(page.getByRole("alert")).toBeVisible({ timeout: 10_000 });
+  } finally {
+    await setConversationFlag(request, false);
+  }
+});
+
+test("Chat Guide computes BMI and blood pressure categories and keeps the patient's numbers out of the log", async ({
+  page,
+  request,
+}) => {
+  await setConversationFlag(request, true);
+
+  try {
+    // A different BHW from the rest of this spec: /api/chat allows 20 requests
+    // per 60s per user and the suite runs serially, so this test's calls on
+    // the stable BHW would eat into chat-guide.spec.ts's rate-limit budget
+    // (it asserts its first request is not already throttled).
+    await page.goto("/login");
+    await page.getByLabel("Username").fill(OTHER_BARANGAY_BHW.username);
+    await page.getByLabel("Password").fill(OTHER_BARANGAY_BHW.password);
+    await page.getByRole("button", { name: "Mag-login" }).click();
+    await expect(page).toHaveURL("/home", { timeout: 10_000 });
+
+    const bmi = (await (
+      await page.request.post("/api/chat", { data: { question: "BMI ko 62 kg 160 cm 35 taong gulang" } })
+    ).json()) as {
+      type: string;
+      route?: string;
+      kind?: string;
+      outcome?: string;
+      urgency?: string;
+      text_en?: string;
+      related?: Array<{ content_id: string | null }>;
+      session_id: string | null;
+    };
+    expect(bmi.type).toBe("measurement");
+    expect(bmi.route).toBe("measurement");
+    expect(bmi).toMatchObject({ kind: "bmi", outcome: "result", urgency: "none" });
+    expect(bmi.text_en).toMatch(/BMI 24\.2.*overweight \(at risk\).*normal/);
+    expect(bmi.related?.map((entry) => entry.content_id)).toContain("m2-bmi-categories");
+
+    const bp = (await (
+      await page.request.post("/api/chat", {
+        data: { question: "BP 150/95, mataas ba?", session_id: bmi.session_id },
+      })
+    ).json()) as { type: string; kind?: string; urgency?: string; text_en?: string };
+    expect(bp).toMatchObject({ type: "measurement", kind: "bp", urgency: "none" });
+    expect(bp.text_en).toMatch(/grade 1/);
+
+    // A knowledge question that merely contains a reading-shaped number is
+    // still answered from the KB, not computed.
+    const guideline = (await (
+      await page.request.post("/api/chat", {
+        data: { question: "Why does another guideline call 130/80 high?", session_id: bmi.session_id },
+      })
+    ).json()) as { type: string; answer?: { content_id: string | null } };
+    expect(guideline.type).toBe("answer");
+    expect(guideline.answer?.content_id).toBe("m3-bp-other-guidelines");
+
+    // Nothing the BHW typed about the patient is persisted: the user turn is a
+    // placeholder, the system turn records kind and outcome only, and the
+    // turn is stored under the existing constrained kind/route values.
+    const adminToken = await getAccessToken(request, STABLE_ADMIN.username, STABLE_ADMIN.password);
+    const rows = (await restGet(
+      request,
+      adminToken,
+      `chat_messages?session_id=eq.${bmi.session_id}&select=sender,text,kind,route,resolved_query,matched_entry_id&order=created_at.asc`,
+    )) as Array<{
+      sender: string;
+      text: string;
+      kind: string | null;
+      route: string | null;
+      resolved_query: string | null;
+      matched_entry_id: string | null;
+    }>;
+    const measurementRows = rows.slice(0, 4);
+    const serialized = JSON.stringify(measurementRows);
+    expect(serialized).not.toMatch(/62 ?kg|160 ?cm|150\/95|35 taong/i);
+    expect(measurementRows[0]).toMatchObject({ sender: "user", text: "[bmi measurement]" });
+    expect(measurementRows[1]).toMatchObject({
+      sender: "system",
+      text: "measurement:bmi:result",
+      kind: "answer",
+      route: "direct",
+      resolved_query: "[bmi measurement]",
+      matched_entry_id: null,
+    });
+
+    // The UI renders the computed result and its follow-up questions.
+    await page.goto("/chat");
+    await page.getByLabel("Ang iyong tanong").fill("BP 165/102");
+    await page.getByRole("button", { name: "Ipadala" }).click();
+    await expect(page.getByText(/grade 2/i)).toBeVisible({ timeout: 10_000 });
   } finally {
     await setConversationFlag(request, false);
   }

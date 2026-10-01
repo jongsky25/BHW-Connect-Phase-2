@@ -106,3 +106,22 @@ lowercase and trimmed.
 Loading is deliberately explicit: `--project` has no default, and `--apply` is
 required to write anything. `kb_entries` has no org scoping and no feature flag,
 so publishing here is visible to every BHW in the project.
+
+### BMI and blood-pressure calculator (behind `chat_conversation`)
+
+A question with numbers in it ("BMI ko 62 kg 160 cm 35 taong gulang", "BP 150/95")
+is **computed**, not retrieved: `src/lib/chat/measurement.ts` parses it
+(`src/lib/health/parse.ts`), classifies it (`bmi.ts`, `bp.ts`, cut-offs and
+sources in `thresholds.ts`) and words the reply in `format.ts`. It runs after red
+flags and before clarifiers, and only when the `chat_conversation` flag is on.
+The reply offers the published `m2-bmi-*` / `m3-bp-*` entries as follow-ups.
+
+- Missing inputs are asked for in one reply; nothing is remembered between turns.
+- The patient's numbers are never stored: the user turn is logged as
+  `[bmi measurement]`, the system turn as `measurement:bmi:result`, under the
+  existing `kind = answer` / `route = direct` values (so no migration), and a
+  thumbs-down on a measurement is not copied to the content-gap log.
+- The numeric low-BP cut-off is not stated to the BHW until BLHSD–WHO confirm it
+  (`m3-bp-low-numbers` is pending); the reply says to go by symptoms.
+- Emergency signs with a raised reading reuse the `m3-very-high-with-symptoms`
+  steps. Add a sign by adding a phrase to `SYMPTOM_PHRASES` in `parse.ts`.

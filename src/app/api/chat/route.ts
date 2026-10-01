@@ -148,7 +148,7 @@ export async function POST(request: NextRequest) {
     supabase,
     appUser.id,
     requestedSessionId,
-    selection ? selectionEcho(result) : askedText,
+    userTurnText(result, selection !== null, askedText),
     result,
     conversational ? nextContext(context, result) : null,
   );
@@ -173,6 +173,10 @@ export async function POST(request: NextRequest) {
     if (result.route === "selection") {
       events.push({ p_event_name: "chat.clarify_answered", p_properties: { clarifier: result.clarifierId ?? null } });
     }
+  } else if (result.type === "measurement") {
+    // No dedicated event: the analytics whitelist lives in a migration, and
+    // this increment ships none. A computed answer is an answer shown.
+    events.push({ p_event_name: "chat.answer_shown" });
   } else if (result.type === "no_answer") {
     events.push({ p_event_name: "chat.no_answer" });
   } else if (result.type === "clarify") {
@@ -270,10 +274,13 @@ function nextContext(previous: ChatContext | null, result: ConversationResult): 
   return { lastContentId: previous?.lastContentId ?? null, pendingClarifierId: null };
 }
 
-// What to store as the user's turn when they tapped an option instead of
-// typing. Storing the label keeps the transcript readable.
-function selectionEcho(result: ConversationResult): string {
-  return result.resolvedQuery;
+// What to store as the user's turn. A tapped option stores its label so the
+// transcript stays readable. A measurement turn stores a placeholder, never
+// the text: it carries a patient's weight, height, age or blood pressure,
+// which is health data this log has no need to keep (Data Privacy Act).
+function userTurnText(result: ConversationResult, selected: boolean, askedText: string): string {
+  if (result.type === "measurement") return result.resolvedQuery;
+  return selected ? result.resolvedQuery : askedText;
 }
 
 async function logConversation(
@@ -325,8 +332,8 @@ async function logConversation(
       text: systemResponseText(result),
       matched_entry_id: result.type === "answer" ? result.top.entry.id : null,
       match_score: result.type === "answer" ? result.top.totalScore : null,
-      kind: result.type,
-      route: result.route,
+      kind: persistedKind(result),
+      route: persistedRoute(result),
       // The candidate set is persisted so a later turn can resolve a choice by
       // id. Before INC-17 this was discarded and the row read "did_you_mean".
       candidates: persistedCandidates(result),
@@ -336,6 +343,17 @@ async function logConversation(
     .single();
 
   return { sessionId, systemMessageId: systemMessage?.id ?? null, isNewSession };
+}
+
+// chat_messages.kind and .route are CHECK-constrained to the INC-17 values.
+// A measurement is stored as a plain answer with no matched entry, so this
+// increment needs no migration (and no PostgREST schema reload on the pilot).
+function persistedKind(result: ConversationResult): string {
+  return result.type === "measurement" ? "answer" : result.type;
+}
+
+function persistedRoute(result: ConversationResult): string {
+  return result.route === "measurement" ? "direct" : result.route;
 }
 
 function persistedCandidates(result: ConversationResult): unknown {
@@ -357,6 +375,8 @@ function persistedCandidates(result: ConversationResult): unknown {
 
 function systemResponseText(result: ConversationResult): string {
   if (result.type === "answer") return result.top.entry.answer_en;
+  // Kind and outcome only — the computed text repeats the patient's numbers.
+  if (result.type === "measurement") return `measurement:${result.measurement.kind}:${result.measurement.outcome}`;
   if (result.type === "clarify") return result.clarifier.question_en;
   if (result.type === "did_you_mean") return "did_you_mean";
   return "no_answer";
@@ -388,6 +408,19 @@ function toResponseBody(result: ConversationResult, conversational: boolean) {
       type: "answer" as const,
       answer: entrySummary(result.top.entry, result.top.totalScore, conversational),
       related: result.related.map((r) => entrySummary(r.entry, r.totalScore, conversational)),
+    };
+  }
+  if (result.type === "measurement") {
+    const m = result.measurement;
+    return {
+      ...route,
+      type: "measurement" as const,
+      kind: m.kind,
+      outcome: m.outcome,
+      urgency: m.urgency,
+      text_fil: m.text.fil,
+      text_en: m.text.en,
+      related: m.related.map((entry) => entrySummary(entry, 0, conversational)),
     };
   }
   if (result.type === "did_you_mean") {

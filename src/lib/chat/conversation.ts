@@ -1,5 +1,6 @@
 import { defaultChatMatcherConfig } from "./config";
 import { matchQuestion } from "./matcher";
+import { resolveMeasurement } from "./measurement";
 import { normalizeText, tokenize } from "./normalize";
 import { scoreEntry } from "./scoring";
 import { filterStopwords, isStopword } from "./stopwords";
@@ -120,6 +121,23 @@ export function resolveTurn(
     }
     // Entry unpublished or missing: fall through to scoring rather than
     // silently dropping the turn. Content validation should prevent this.
+  }
+
+  // 2b. A BMI or blood-pressure question with numbers in it is computed, not
+  // retrieved: scoring would match the wording and ignore the figures. After
+  // red flags so an emergency phrasing still wins; before clarifiers so
+  // "BP 150/95, ano gagawin" gets its category rather than a generic question.
+  const measurement = resolveMeasurement(question, entries);
+  if (measurement) {
+    // resolvedQuery is deliberately NOT the question: it is persisted, and
+    // this text carries a patient's weight, height, age or blood pressure.
+    return {
+      type: "measurement",
+      route: "measurement",
+      normalizedText: "",
+      resolvedQuery: `[${measurement.kind} measurement]`,
+      measurement,
+    };
   }
 
   // 3. Ask the deeper question — but never twice in a row for the same

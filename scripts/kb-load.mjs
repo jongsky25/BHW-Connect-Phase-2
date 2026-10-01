@@ -7,6 +7,13 @@
 //   npm run kb:load -- --project <ref> --apply               # write as drafts
 //   npm run kb:load -- --project <ref> --apply --publish --owner <username>
 //   npm run kb:load -- --project <ref> --modules 3,4 --apply
+//   npm run kb:load -- --project <ref> --modules 2,3 --create-only --apply --publish --owner <username>
+//
+// --create-only adds entries and articles that do not exist yet and leaves
+// every existing row untouched. Without it the loader rewrites every existing
+// row in the selected modules (owner, review date and status included), which
+// is what you want for a content re-sync but not for adding a few entries to a
+// live project.
 //   npm run kb:load -- --project <ref> --corpus cesr --apply
 //
 // --corpus selects the content/kb/<corpus> tree and defaults to hhp-ncd, the
@@ -29,13 +36,14 @@ import { PILOT_PROJECT_REF } from "./lib/pilot-guard.mjs";
 import { assertGabayReleaseApproved } from "./lib/gabay-release-approval.mjs";
 
 function parseArgs(argv) {
-  const args = { modules: null, apply: false, publish: false, owner: null, project: null, corpus: DEFAULT_CORPUS, releasePilot: false };
+  const args = { modules: null, apply: false, publish: false, createOnly: false, owner: null, project: null, corpus: DEFAULT_CORPUS, releasePilot: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--apply") args.apply = true;
     else if (arg === "--release-pilot") args.releasePilot = true;
     else if (arg === "--dry-run") args.apply = false;
     else if (arg === "--publish") args.publish = true;
+    else if (arg === "--create-only") args.createOnly = true;
     else if (arg === "--owner") args.owner = argv[++i];
     else if (arg === "--project") args.project = argv[++i];
     else if (arg === "--corpus") args.corpus = argv[++i];
@@ -126,7 +134,7 @@ async function syncSynonyms(client, synonyms, plan, apply) {
 
 async function syncEntries(client, content, ctx, plan) {
   const { sources } = content;
-  const { categoryIds, lock, apply, publish, ownerId, modules } = ctx;
+  const { categoryIds, lock, apply, publish, ownerId, modules, createOnly } = ctx;
 
   // Identity resolution, most reliable first: content_id is the real key
   // (INC-17b), the lockfile is the legacy mapping kept working for projects
@@ -156,6 +164,12 @@ async function syncEntries(client, content, ctx, plan) {
       if (entryId && !knownIds.has(entryId)) entryId = undefined; // lock is stale
     }
     if (!entryId) entryId = byQuestion.get(entry.question_en);
+
+    if (entryId && createOnly) {
+      plan.entries.skipped += 1;
+      lock.entries[entry.id] = entryId;
+      continue;
+    }
 
     if (entryId) {
       plan.entries.update += 1;
@@ -206,7 +220,7 @@ async function syncEntries(client, content, ctx, plan) {
 }
 
 async function syncArticles(client, content, ctx, plan) {
-  const { categoryIds, lock, apply, publish, ownerId, modules } = ctx;
+  const { categoryIds, lock, apply, publish, ownerId, modules, createOnly } = ctx;
   const existing = await selectAll(client, "kb_articles", "id,title_en");
   const byTitle = new Map(existing.map((row) => [row.title_en, row.id]));
   const knownIds = new Set(existing.map((row) => row.id));
@@ -222,6 +236,12 @@ async function syncArticles(client, content, ctx, plan) {
     let articleId = lock.articles[article.id];
     if (articleId && !knownIds.has(articleId)) articleId = undefined;
     if (!articleId) articleId = byTitle.get(article.title_en);
+
+    if (articleId && createOnly) {
+      plan.articles.skipped += 1;
+      lock.articles[article.id] = articleId;
+      continue;
+    }
 
     if (articleId) {
       plan.articles.update += 1;
@@ -275,8 +295,8 @@ async function main() {
   const plan = {
     categories: { create: 0, skip: 0 },
     synonyms: { create: 0, skip: 0 },
-    entries: { create: 0, update: 0, pendingDrafts: 0, contentIdStamped: 0 },
-    articles: { create: 0, update: 0 },
+    entries: { create: 0, update: 0, skipped: 0, pendingDrafts: 0, contentIdStamped: 0 },
+    articles: { create: 0, update: 0, skipped: 0 },
   };
 
   const categoryIds = await syncCategories(client, content.categories, lock, plan, args.apply);
@@ -288,6 +308,7 @@ async function main() {
     publish: args.publish,
     ownerId,
     modules: args.modules,
+    createOnly: args.createOnly,
   };
   await syncEntries(client, content, ctx, plan);
   await syncArticles(client, content, ctx, plan);
@@ -302,6 +323,9 @@ async function main() {
     `  entries     create ${plan.entries.create}  update ${plan.entries.update}  content_id stamped ${plan.entries.contentIdStamped}`,
   );
   console.log(`  articles    create ${plan.articles.create}  update ${plan.articles.update}`);
+  if (args.createOnly) {
+    console.log(`  --create-only: left ${plan.entries.skipped} entries and ${plan.articles.skipped} articles untouched`);
+  }
   if (args.publish) {
     console.log(
       `  ${plan.entries.pendingDrafts} entries held as drafts pending BLHSD–WHO validation`,
