@@ -23,15 +23,14 @@ The BHW Reference Manual (printed p. 5 / PDF p. 13) describes RA 11223's aim of 
 
 The large type story layout now includes 1.2.1 in Read, Slides, and the full-screen presenter. The new fictional Vlanche–Ernesto illustration was generated with the built-in image tool on 2026-10-02. Its source asset is `public/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png` (SHA-256 `7e4e351416282cb78a0d8b17c80fba7a4367291f9d46f2586baaa90cd66dcaea`). Prompt: an attentive Filipina BHW in a teal polo listening to an older male resident outside a Philippine barangay health station; warm editorial illustration; blank notebook; no readable text, logos, forms, clinical procedure, or claim that a service is free. The image is illustrative, not a real encounter.
 
-The separately selected Video view has six timed beats in Filipino and English. Its script is `remotion/src/uhc-purpose/narration.ts`. Speech, beat timings, and language-specific captions are built from `remotion/public/uhc-purpose/`. Riza's existing five videos have also been revoiced and rendered with her name. The revised Read narration and new video narration use the repository's Edge Read Aloud voices because this workspace has no Gemini API key. All new named media are draft and require fresh listening and visual review; prior approval of the Marites cuts does not cover them.
+The separately selected Video view has six timed beats in Filipino and English. Its script is `remotion/src/uhc-purpose/narration.ts`. Speech, beat timings, and language-specific captions are built from `remotion/public/uhc-purpose/`. Riza's existing five videos have also been revoiced and rendered with her name. The revised Read narration and new video narration use the repository's Edge Read Aloud voices because this workspace has no Gemini API key. The owner confirmed review, approval, and deployment of this named revision on 2026-10-02; the seven new or revised assets now have `review_status: approved`.
 
 Video is an optional companion. Completion now depends on reaching the end and attempting the Read or Slides check; watching a featured video is not required. Existing learner completions and lesson keys remain intact. Earlier content-hashed Read audio and video files are retained for already-published revisions. The 1.2.1 manifest objective wording remains unchanged pending comparison with immutable pilot metadata.
 
-## Review before publication
+## Approval and deployment checks
 
-- Review the Filipino and English legal/policy wording with a current PhilHealth or local health policy reviewer. Confirm that the local facilitator contact and primary care steps are current; do not add a fixed charge or universal facility promise.
-- Listen to both language tracks for **Riza**, **Vlanche**, **NHIP**, and **PhilHealth** pronunciation. Check caption timing, on-screen contrast, poster, phone and tablet layout, and the final answer card.
-- Review each revised Read and Slides screen, the three-option check, and the facilitator role-play. Verify that the same claims appear in the UHC module text, chatbot entries, and assessment item before publication.
-- Keep the image and new media at `review_status: draft` until the owner and relevant reviewer approve. Then run the scoped loader dry run and publish the intended lessons without replacing earlier content-hashed media in place.
+- The owner reviewed and approved this release on 2026-10-02. No separate PhilHealth, clinical, legal, translation, or accessibility approval is recorded by this note.
+- Preserve the versioned Chapter I assessment bank. Its existing question retains its historical character name; this release changes the named lesson revisions, not the exam bank or assessor curriculum version.
+- Confirm CI, run the scoped loader dry run, publish the intended lessons, and verify the live app in Filipino and English. Do not replace earlier content-hashed media in place.
 
-No course publication or production deployment is recorded by this build note.
+The deployment outcome is recorded separately from this build note.
