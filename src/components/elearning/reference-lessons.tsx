@@ -122,6 +122,8 @@ export function ReferenceLessons(props: Props) {
   const startingResume=props.resumes.filter(r=>r.lesson_id===initial?.id&&r.modality===startingMode)
     .sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];
   const [mode, setMode] = useState<LessonModality>(startingMode);
+  // Video is a view of the featured asset, not a resume modality in the DB.
+  const [videoSelected, setVideoSelected] = useState(false);
   const [resumes, setResumes] = useState(props.resumes);
   const [completed, setCompleted] = useState(props.completed);
   const [savedMilestone, setSavedMilestone] = useState<({ lessonId: string } & NonNullable<Props["completionMilestone"]>) | null>(null);
@@ -216,7 +218,8 @@ export function ReferenceLessons(props: Props) {
   const featuredAsset = lesson?.revision.featured_asset_id
     ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
     : undefined;
-  const featuredOk = !featuredAsset || Boolean(lesson && featuredWatched[lesson.id]);
+  const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
+  const featuredOk = !featuredVideo || Boolean(lesson && featuredWatched[lesson.id]);
   const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered && featuredOk;
   const revealSummary = !item?.check || answer !== undefined;
   const promptShownInBody = item && "body_fil" in item && item.check
@@ -330,6 +333,7 @@ export function ReferenceLessons(props: Props) {
     );
     setSelected(l.id);
     setMode(m);
+    setVideoSelected(false);
     setPosition(p.id);
     setError(null);
     save(l, m, p);
@@ -344,6 +348,7 @@ export function ReferenceLessons(props: Props) {
   }
   function changeMode(next: LessonModality) {
     if (!lesson || !item) return;
+    setVideoSelected(false);
     move(
       lessonPosition(
         lesson,
@@ -520,6 +525,16 @@ export function ReferenceLessons(props: Props) {
         </button>
       </nav>
   );
+  const videoContent = featuredVideo && lesson && (
+    <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
+      <p className="mb-1 text-sm font-semibold">{ui("Panoorin", "Watch")}</p>
+      <LessonAssetFigure
+        asset={featuredVideo}
+        en={en}
+        onEnded={() => setFeaturedWatched((old) => ({ ...old, [lesson.id]: true }))}
+      />
+    </div>
+  );
 
   return (
     <section
@@ -622,32 +637,23 @@ export function ReferenceLessons(props: Props) {
                 <li key={o}>{o}</li>
               ))}
             </ul>
-            {featuredAsset && (
-              <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
-                <p className="mb-1 text-sm font-semibold">
-                  {ui("Panoorin", "Watch")}
-                </p>
-                <LessonAssetFigure
-                  asset={featuredAsset}
-                  en={en}
-                  onEnded={() =>
-                    setFeaturedWatched((old) => ({ ...old, [lesson.id]: true }))
-                  }
-                />
-              </div>
-            )}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2" role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
                 <button
                   type="button"
-                  className="rounded border border-ink/20 px-4 py-2"
+                  className="rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary"
                   key={m}
-                  aria-pressed={mode === m}
+                  aria-pressed={!videoSelected && mode === m}
                   onClick={() => changeMode(m)}
                 >
                   {m === "read" ? ui("Basahin", "Read") : "Slides"}
                 </button>
               ))}
+              {featuredVideo && <button type="button"
+                className="rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary"
+                aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}>
+                {ui("Video", "Video")}
+              </button>}
               <button
                 type="button"
                 className="rounded border border-ink/20 px-4 py-2"
@@ -656,11 +662,11 @@ export function ReferenceLessons(props: Props) {
                 {ui("Buong screen", "Full screen")}
               </button>
             </div>
-            {!readerOpen && <>{readerArticle}{readerPager}</>}
+            {!readerOpen && (videoSelected ? videoContent : <>{readerArticle}{readerPager}</>)}
             {!props.readOnly && <>
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
-                !featuredOk ? ui("Panoorin muna ang video sa itaas ng aralin bago markahang tapos.", "Watch the video at the top of the lesson before marking it complete.") :
+                !featuredOk ? ui("Panoorin muna ang video sa opsyong Video bago markahang tapos.", "Watch the video in the Video view before marking the lesson complete.") :
                 ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
                   "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
             </p>}
@@ -777,11 +783,15 @@ export function ReferenceLessons(props: Props) {
           <div className="lesson-reader-toolbar grid grid-cols-[1fr_auto] items-center gap-2 border-b border-ink/15 px-3 py-2">
             <div className="col-start-1 row-start-1 flex gap-2" role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
-                <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)}
+                <button key={m} type="button" aria-pressed={!videoSelected && mode === m} onClick={() => changeMode(m)}
                   className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
                   {m === "read" ? ui("Basahin", "Read") : "Slides"}
                 </button>
               ))}
+              {featuredVideo && <button type="button" aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}
+                className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
+                Video
+              </button>}
             </div>
             <div className="lesson-reader-orientation col-span-2 row-start-2 flex justify-center gap-2" role="group" aria-label={ui("Oryentasyon", "Orientation")}>
               {(["portrait", "landscape"] as const).map((value) => (
@@ -800,7 +810,7 @@ export function ReferenceLessons(props: Props) {
               ? ui("I-rotate ang device nang pahiga para mabasa ang nilalaman.", "Turn your device sideways to read the content.")
               : ui("I-rotate ang device nang patayo para mabasa ang nilalaman.", "Turn your device upright to read the content.")}
           </p>}
-          {readerOpen && lesson && item && (storyLayout ? <div className="reference-story-presenter">
+          {readerOpen && lesson && item && (videoSelected ? <div className="min-h-0 flex-1 overflow-y-auto p-4 sm:p-6">{videoContent}</div> : storyLayout ? <div className="reference-story-presenter">
             <div
               className="reference-story-presenter-content"
               role="region"
