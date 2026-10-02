@@ -141,3 +141,13 @@ test("committed narration is current for every converted subchapter", () => {
   // Reads and hashes every committed MP3 (~1,060 files): past vitest's 5 s
   // default on a cold disk cache.
 }, 60_000);
+
+test("lesson 1.2.1 Read narration uses Gemini in every section and language", () => {
+  const manifest = JSON.parse(readFileSync(NARRATION_MANIFEST, "utf8"));
+  const sections = Object.values(manifest.lessons["uhc-coverage"].sections);
+  assert.equal(sections.length, 6);
+  for (const section of sections) {
+    assert.equal(section.fil.voice, "gemini:gemini-3.8-flash-tts:Kore");
+    assert.equal(section.en.voice, "gemini:gemini-3.8-flash-tts:Kore");
+  }
+});
