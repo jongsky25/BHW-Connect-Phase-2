@@ -1,0 +1,39 @@
+name: Generate UHC Gemini narration
+
+on:
+  pull_request:
+    paths:
+      - "scripts/remotion-uhc-purpose-narrate.mjs"
+      - "remotion/src/uhc-purpose/narration.ts"
+      - ".github/workflows/uhc-purpose-narration.yml"
+
+jobs:
+  synthesize:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install Remotion source loader
+        working-directory: remotion
+        run: npm ci
+      - name: Generate Filipino and English tracks
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/remotion-uhc-purpose-narrate.mjs fil
+          node scripts/remotion-uhc-purpose-narrate.mjs en
+      - uses: actions/upload-artifact@v4
+        with:
+          name: uhc-purpose-gemini-narration
+          path: |
+            remotion/public/uhc-purpose/narration-fil.mp3
+            remotion/public/uhc-purpose/narration-fil.json
+            remotion/public/uhc-purpose/narration-en.mp3
+            remotion/public/uhc-purpose/narration-en.json
+          retention-days: 7
