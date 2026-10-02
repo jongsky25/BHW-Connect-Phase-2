@@ -41,7 +41,13 @@ bilingual summary poster. The script is in
 `remotion/public/service-provider/`. The existing approved Read and Slides
 content and twelve Read narration tracks are unchanged.
 
-The new `service-provider-story` asset remains **draft**. Review both videos
-for language, pacing, caption accuracy, legibility, and the scope/referral
-boundary before approving and publishing this revision. The prior approval
-above did not include this new video.
+The new `service-provider-story` asset was kept **draft** for review of both
+videos' language, pacing, captions, legibility, and scope/referral boundary.
+The prior approval above did not include this new video.
+
+## Animated Video approval — 2026-10-02
+
+The owner reviewed the Filipino and English previews and approved the new
+animated Video view for live deployment and publication. The media, script,
+timings, captions, and approved Read/Slides copy are unchanged from the draft
+reviewed above. The `service-provider-story` asset is now marked approved.

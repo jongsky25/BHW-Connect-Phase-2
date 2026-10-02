@@ -37,5 +37,6 @@ review document. After owner approval, mark the asset approved, merge the PR,
 verify Vercel production, then use the scoped lesson loader dry run and
 publish workflow for the one lesson. Preserve published metadata and progress.
 
-Lesson 1.1.5 is the released example in `remotion/src/records/`. Lesson 1.1.4
-is authored in `remotion/src/service-provider/` and starts as a draft preview.
+Lesson 1.1.5 is the first released example in `remotion/src/records/`. Lesson
+1.1.4 follows it in `remotion/src/service-provider/`; its bilingual video
+was approved by the owner on 2026-10-02.
