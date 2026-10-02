@@ -42,6 +42,12 @@ import {
   UhcPurposeStory,
   calculateUhcPurposeMetadata,
 } from "./uhc-purpose/UhcPurposeStory";
+import {
+  PRIMARY_CARE_FALLBACK_DURATION,
+  PRIMARY_CARE_FPS,
+  PrimaryCareStory,
+  calculatePrimaryCareMetadata,
+} from "./uhc-primary-care/PrimaryCareStory";
 
 // Compositions are authored at the lesson format (854×480, see
 // scripts/remotion-render.mjs) so the render needs no scaling. One
@@ -143,6 +149,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateUhcPurposeMetadata}
           durationInFrames={UHC_PURPOSE_FALLBACK_DURATION}
           fps={UHC_PURPOSE_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`uhc-primary-care-${language}`}
+          id={language === "fil" ? "PrimaryCareStoryFil" : "PrimaryCareStoryEn"}
+          component={PrimaryCareStory}
+          calculateMetadata={calculatePrimaryCareMetadata}
+          durationInFrames={PRIMARY_CARE_FALLBACK_DURATION}
+          fps={PRIMARY_CARE_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}

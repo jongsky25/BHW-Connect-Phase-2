@@ -1,0 +1,51 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 82.077,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Mang Ernesto asks BHW Vlanche again: Where do I start for a checkup? And if I need a referral, where do I go? Vlanche does not guess.",
+      "start_ms": 0,
+      "end_ms": 11040
+    },
+    {
+      "zone": "four-changes",
+      "index": 1,
+      "text": "They recall the guide’s four changes: PhilHealth inclusion, outpatient consultation, choosing a primary care provider, and a better referral system. They covered the first one already; now they follow the other three.",
+      "start_ms": 11340,
+      "end_ms": 26220
+    },
+    {
+      "zone": "outpatient",
+      "index": 2,
+      "text": "PhilHealth YAKAP has outpatient and primary care benefits, but each service has rules. Vlanche asks the health team which benefit applies to Mang Ernesto’s consultation and at which accredited clinic it is available.",
+      "start_ms": 26520,
+      "end_ms": 40320
+    },
+    {
+      "zone": "provider",
+      "index": 3,
+      "text": "Mang Ernesto can choose a primary care clinic. PhilHealth inclusion does not mean he has selected one already. Vlanche helps him check current choices and how to select with the RHU or PhilHealth.",
+      "start_ms": 40620,
+      "end_ms": 53980
+    },
+    {
+      "zone": "referral",
+      "index": 4,
+      "text": "If another level of care is needed, a clinician decides on the referral. Local processes can differ. Vlanche asks the health team for the right contact and instructions; she does not choose a hospital by guesswork.",
+      "start_ms": 54280,
+      "end_ms": 67480
+    },
+    {
+      "zone": "next-step",
+      "index": 5,
+      "text": "Vlanche says: Let us confirm your clinic, the benefit for this consultation, and the next step. If a clinician recommends referral, we will get the local process. I will help you ask the health team.",
+      "start_ms": 67780,
+      "end_ms": 82020
+    }
+  ]
+}
