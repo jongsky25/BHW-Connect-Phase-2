@@ -189,6 +189,11 @@ export const ncdCorpusFixtures: ChatFixture[] = [
   { id: "ncd-fil-adv-4", language: "fil", question: "Ano ang sasabihin ko sa kliyente kung 180/110 o mas mataas ang presyon?", expected: { type: "answer", entryId: "adv-bp-grade-3" } },
   { id: "ncd-tag-adv-1", language: "taglish", question: "ano sasabihin ko sa client kung obese ang bmi", expected: { type: "answer", entryId: "adv-bmi-obese" } },
   { id: "ncd-tag-adv-2", language: "taglish", question: "optimal ang presyon ano sasabihin ko sa kliyente", expected: { type: "answer", entryId: "adv-bp-normal" } },
+  { id: "ncd-en-bpdec-1", language: "en", question: "At what number is blood pressure considered low, hypotension?", expected: { type: "answer", entryId: "m3-bp-low-numbers" } },
+  { id: "ncd-fil-bpdec-1", language: "fil", question: "Sa anong numero itinuturing na mababa ang presyon?", expected: { type: "answer", entryId: "m3-bp-low-numbers" } },
+  { id: "ncd-tag-bpdec-1", language: "taglish", question: "hypotension ilang numero mababa ang bp", expected: { type: "answer", entryId: "m3-bp-low-numbers" } },
+  { id: "ncd-en-bpdec-2", language: "en", question: "The reading is 180/110 or higher. What do I do?", expected: { type: "answer", entryId: "m3-bp-grade-3" } },
+  { id: "ncd-fil-bpdec-2", language: "fil", question: "Ano ang tamang hakbang kapag 180/110 o mas mataas ang resulta?", expected: { type: "answer", entryId: "m3-bp-grade-3" } },
 ];
 
 // The entries whose whole job is to say "that is not yours to decide". A

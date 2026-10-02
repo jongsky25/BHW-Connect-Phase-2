@@ -101,6 +101,20 @@ const BP_LABEL: Record<Exclude<BpCategory, "low">, Bilingual> = {
   },
 };
 
+// The Philippine Society of Hypertension 2020 CPG groups readings in three
+// bands. They line up exactly with the ESC/ESH grades used here: its "normal"
+// (<120/80) is ESC "optimal", its "borderline" (120-139/80-89) is ESC "normal"
+// plus "high-normal", and its "hypertension" (>=140/90) is grades 1 to 3. So
+// the label follows from the category, with no second set of cut-offs.
+const PH_BAND: Record<Exclude<BpCategory, "low">, Bilingual> = {
+  optimal: { en: "normal", fil: "normal" },
+  normal: { en: "borderline", fil: "borderline" },
+  high_normal: { en: "borderline", fil: "borderline" },
+  grade_1: { en: "hypertension range", fil: "saklaw ng altapresyon" },
+  grade_2: { en: "hypertension range", fil: "saklaw ng altapresyon" },
+  grade_3: { en: "hypertension range", fil: "saklaw ng altapresyon" },
+};
+
 export function formatBp(
   result: Extract<BpResult, { ok: true }>,
   reading: { systolic: number; diastolic: number },
@@ -110,12 +124,16 @@ export function formatBp(
 
   if (result.category === "low") {
     parts.push({
-      en: `${head}: a low reading. There is no agreed numeric cut-off yet for your programme, so go by symptoms: dizziness on standing, weakness, cold clammy skin, confusion or fainting mean lie them down and refer. Also check the cuff size and position.`,
-      fil: `${head}: mababang resulta. Wala pang kumpirmadong numerong hangganan para sa inyong programa, kaya sintomas ang sundin: pagkahilo sa pagtayo, panghihina, malamig at basang balat, pagkalito o pagkahimatay ay nangangahulugang pahigain at i-refer. Suriin din ang laki at pagkakalagay ng cuff.`,
+      en: `${head}: a low reading. A top number below 90 or a bottom number below 60 is generally treated as low, but some people are normally this low and feel fine, so go by symptoms: dizziness on standing, weakness, cold clammy skin, confusion or fainting mean lie them down and refer. Also check the cuff size and position.`,
+      fil: `${head}: mababang resulta. Ang itaas na numerong mas mababa sa 90 o ang ibabang numerong mas mababa sa 60 ay karaniwang itinuturing na mababa, ngunit may mga taong karaniwang ganito kababa at maayos ang pakiramdam, kaya sintomas ang sundin: pagkahilo sa pagtayo, panghihina, malamig at basang balat, pagkalito o pagkahimatay ay nangangahulugang pahigain at i-refer. Suriin din ang laki at pagkakalagay ng cuff.`,
     });
   } else {
     const label = BP_LABEL[result.category];
-    parts.push({ en: `${head}: ${label.en}.`, fil: `${head}: ${label.fil}.` });
+    const ph = PH_BAND[result.category];
+    parts.push({
+      en: `${head}: ${label.en}. Philippine guideline: ${ph.en}.`,
+      fil: `${head}: ${label.fil}. Ayon sa gabay ng Pilipinas: ${ph.fil}.`,
+    });
     if (result.isolatedSystolic) {
       parts.push({
         en: "Only the top number is raised (isolated systolic); it still counts as a raised reading.",
@@ -124,13 +142,13 @@ export function formatBp(
     }
     if (result.category === "grade_3") {
       parts.push({
-        en: "Arrange facility assessment following your PhilPEN protocol for this level.",
-        fil: "Ayusin ang pagsusuri sa pasilidad ayon sa PhilPEN protocol para sa antas na ito.",
+        en: "This is the highest category (180/110 or above). Ask now about chest pain, trouble breathing, a severe headache, weakness on one side, trouble speaking, changes in vision, confusion or fainting: if there is any, treat it as an emergency. If there is none, arrange for them to be seen at the health facility today and do not send them home to wait. If your LGU's PhilPEN protocol sets a different timing for this level, follow it.",
+        fil: "Ito ang pinakamataas na kategorya (180/110 pataas). Itanong agad kung may sakit sa dibdib, hirap huminga, matinding sakit ng ulo, panghihina sa isang bahagi, hirap magsalita, pagbabago ng paningin, pagkalito o pagkahimatay: kung mayroon, ituring itong emergency. Kung wala, ayusin na masuri sila sa pasilidad ngayong araw at huwag silang pauwiin para maghintay. Kung ibang oras ang itinakda ng PhilPEN protocol ng inyong LGU para sa antas na ito, iyon ang sundin.",
       });
     } else if (result.hypertensiveRange) {
       parts.push({
-        en: "One reading is not a diagnosis: record it and refer or repeat as your PhilPEN protocol directs.",
-        fil: "Hindi diagnosis ang isang resulta: itala ito at mag-refer o ulitin ayon sa PhilPEN protocol.",
+        en: "One reading is not a diagnosis: hypertension is confirmed on at least two readings on two separate days. Record it and refer or repeat as your PhilPEN protocol directs.",
+        fil: "Hindi diagnosis ang isang resulta: kinukumpirma ang altapresyon sa hindi bababa sa dalawang pagsukat sa dalawang magkaibang araw. Itala ito at mag-refer o ulitin ayon sa PhilPEN protocol.",
       });
     }
   }
