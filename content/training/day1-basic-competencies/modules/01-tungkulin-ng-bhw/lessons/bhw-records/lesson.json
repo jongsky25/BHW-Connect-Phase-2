@@ -231,6 +231,38 @@
       "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
       "review_status": "approved",
       "content_hash": "5b37233368b572819d45bc852803a0dd16f444cb8a77e326fc387693d02c47f9"
+    },
+    {
+      "id": "records-story",
+      "path": "/training/bhw-1-1/records-story-fil-6bb45a17131f-poster.jpg",
+      "content_hash": "6bb45a17131f6e56b68b795ded847b9ef09e9fec16f43a408e5461fa029d4979",
+      "alt_fil": "Piliin ang tala ayon sa tanong: household profile para sa isang kabahayan; master list para sa kasapi ng grupo; registry para sa serbisyong naibigay; iniatas na form para sa hiniling na detalye. Linawin ang hindi tiyak na entry at tiyakin ang tatanggap at aprubadong paraan ng pagpapasa.",
+      "alt_en": "Choose the record for the question: household profile for one household; master list for group members; registry for services given; assigned form for requested details. Clarify uncertain entries and confirm the recipient and approved handoff route.",
+      "caption_fil": "Kathang-isip na halimbawa ni Marites. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example with Marites. The animated video has Filipino and English narration and captions.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/records) for lesson 1.1.5, using fictional record examples and no real personal data. Narration script and beat timings are in remotion/src/records/narration.ts and remotion/public/records; voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow the narration timings. Subject-matter and language review pending.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-1/records-story-fil-5407fb7868ce.mp4",
+          "content_hash": "5407fb7868ceba2ea901a33f14aef3608255a551f3918808aa91fa2b2abef627",
+          "duration_s": 45,
+          "captions": {
+            "path": "/training/bhw-1-1/records-story-fil-4b3356b8dc1c.vtt",
+            "content_hash": "4b3356b8dc1c749f929b28835e229d89f67bb183d33805c81a2adc694eb29ecb"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-1/records-story-en-d1ad00a54e6a.mp4",
+          "content_hash": "d1ad00a54e6ac1e132379759d8eb55108f3d0052d77f5c94da0d0be80fa22521",
+          "duration_s": 40,
+          "captions": {
+            "path": "/training/bhw-1-1/records-story-en-82469aced241.vtt",
+            "content_hash": "82469aced241295a54c047abd6942172e644b054558ef6a65e9ea242f5abb2c7"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "records-story"
 }

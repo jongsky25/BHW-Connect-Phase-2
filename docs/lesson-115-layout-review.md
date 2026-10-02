@@ -15,16 +15,18 @@ The [BHW Reference Manual](source-material/day1-basic-competencies/bhw-reference
 | Clarify before handing it over | Verify the request, recipient, and approved route | `m1.provider.documents`, `m1.competency` |
 | Apply your learning | Make the complete record and handoff decision | All three |
 
-## Illustration and integration
+## Illustration, narration, and integration
 
 The large type story layout used in lessons 1.1.1–1.1.4 now covers 1.1.5 in Read, Slides, and the full-screen presenter. The new image is `public/training/bhw-1-1/records-2a1725eaf243.png` (SHA-256 `2a1725eaf243727724b6ff37c0f35437506f01ca753da7f648fdcd12b2b43fcc`). It was generated for this lesson on 2026-10-02 using the existing fictional Marites and midwife image as a character and style reference. It shows blank folders at a health station, with no legible fields, names, logos, or patient data. It illustrates a discussion, not an official form or an actual health record. The existing A06 schematic remains in the authored assets as a fallback for other layouts; the story layout conveys record distinctions in native text.
+
+Watch now contains a six-beat Remotion animation about choosing among four record types and checking an uncertain entry before handoff. Filipino and English versions have separately synthesized Gemini expressive narration, matching WebVTT captions, and a bilingual poster. The video uses fictional examples and does not depict actual records. Read narration for all six screens and both languages was also regenerated with Gemini expressive speech in place of the previous Edge voice tracks. `remotion/src/records/narration.ts` is the video script; `remotion/public/records/narration-*.json` records beat timing. The lesson asset manifest selects the correct video and captions by language.
 
 ## Review points
 
 - Confirm the local forms, recipient, storage, and submission route with the supervising midwife or health team. The fictional “recipient: midwife” example is specific to the lesson scenario.
 - Review the Filipino and English Read and Slides copy, final check, and facilitator activity with BHWs and a local subject-matter reviewer. The distinction between a group list and a service registry should remain clear.
 - Check the narrow phone and landscape layouts, full-screen presenter, image crop, choice buttons, and feedback.
-- Listen to both languages of narration after rendering. The narration manifest must match the final lesson text exactly; copy changes require affected tracks to be rendered again.
+- Listen to the Read and video narration in both languages. The Read narration manifest must match the final lesson text exactly; copy changes require affected tracks to be rendered again. Video script changes require regenerating the corresponding audio, timing, captions, and video.
 - Keep fictional examples free of real personal details and review status in authoring material, not learner-facing copy.
 
 This revision is a draft for review. Course publication and production deployment require separate verification after approval.
