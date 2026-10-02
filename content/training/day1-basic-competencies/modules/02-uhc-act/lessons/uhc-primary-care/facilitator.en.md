@@ -1,81 +1,64 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can name the changes the lesson lists — outpatient benefits, registration with a primary care provider, coordinated referral, and province-wide and city-wide health systems that coordinate services — say with a real example which of these have and have not yet reached their own barangay, and, before advising a resident, name what to check first: the current provider, benefit and referral procedure, with the RHU or PhilHealth.
+By the end, a BHW can help a resident identify the next step for an outpatient consultation: confirm the resident's chosen or available primary care clinic, check the applicable benefit and its steps, and obtain the local referral instructions if a clinician recommends referral. The BHW names what is still unknown and leaves clinical decisions to the health professional.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 55 minutes in a face-to-face session. This is this lesson's share of the 3-hour plan in the subchapter guide: the "four changes" half (about 15 minutes) of the 30-minute "UHC's goal and the four changes" row, plus the 40-minute "Which of this has already happened for us" per-barangay discussion. The other half of the 30-minute row goes to *UHC purpose and coverage*. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper prepared with three columns — **"Already here" / "Not yet" / "Check with the RHU"**; markers; small pieces of paper or sticky notes; the lesson's slides (including the "understand, verify, practice" visual, still marked draft).
+- **Time:** about 55 minutes in the face-to-face module plan: about 15 minutes of the shared 30-minute UHC changes discussion, plus 40 minutes comparing what is actually happening in participants' barangays. This is a suggested split of the subchapter's time, not a new allocation. Self-study takes about 7 minutes.
+- **Materials:** Slides and the short story; a board with three columns, **Confirmed locally / Still to check / Who can confirm**; cards for clinic, outpatient benefit, and referral instructions. Use current RHU or PhilHealth information if available.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides. The two sections are "Four concrete changes" and "Which of this is already happening for us?".
-- Before the session, ask your midwife or RHU for the current local facts: who residents register with as their primary care provider, how the outpatient benefit is accessed, and the current referral procedure from your barangay. If something cannot be confirmed, leave it in the "Check with the RHU" column — do not guess.
-- Note that the subchapter's four-changes visual shows a different set of four (PhilHealth, outpatient, primary care, referral) from this lesson's slide (outpatient, primary care, referral, integrated systems). Teach from this lesson's slide; do not show the two side by side until the reviewer reconciles them.
-- Scope: do not teach who should be referred for which condition — that is clinical and outside this lesson. The BHW supports the resident "within their training and supervision." The health board belongs to the next lesson.
+- Review the four-change chain used by the subchapter visual: PhilHealth inclusion, outpatient consultation, primary care provider, and referral. Lesson 1.2.1 taught inclusion. This lesson teaches the next three. The Reference Manual also lists integration of previously separate DOH programs; it is context for coordinated care, not a replacement fourth box.
+- Ask the midwife or RHU which primary care clinics residents can currently choose, how to check an existing selection and access the applicable outpatient benefit, and whom to contact for the local referral protocol. Check current PhilHealth guidance. Record an unanswered item as **Still to check**; do not invent a local provider or arrangement.
+- Do not diagnose, choose a referral destination, promise coverage, or imply all services are available. Patient navigation and clinical referral decisions belong to the doctor, nurse, or midwife. If a participant raises an urgent concern, follow the local health team's emergency protocol rather than this classroom example.
 
 ## [opening] Opening
 
-In this continuing story, BHW Vlanche helps Mang Ernesto identify the next step.
-
-Ask the group: *"Think of the last resident you helped get to a health service. What happened between the moment they needed help and the moment they were served?"* Take two or three stories and write the steps of one story across the top of the manila paper. You will come back to it in step 3.
+Play the story or read the first section. Mang Ernesto asks where he should start for a checkup and what happens if a clinician recommends referral. Ask: “What does Vlanche know already from lesson 1.2.1, and what does she still have to confirm?” Place PhilHealth inclusion under **Known principle**, then move to the three new checks.
 
 ## [steps] Steps
 
-1. **Four concrete changes (Read "Four concrete changes", slide "Four concrete changes").** Before showing the list, ask: *"Which of the changes under UHC do you already know?"* Then reveal the slide one line at a time: outpatient benefits — check what is covered; primary care — identify the provider and registration process; referral — follow the local pathway; integrated systems — coordinate services.
-2. **Whose job is what.** Read: "A primary care provider helps navigate care; the BHW supports the resident within their training and supervision." Ask: *"What does the provider do, and what do you do?"*
-3. **Connect the four.** Go back to the opening story. Ask the group to point to where each change would touch that resident's journey. Draw out the takeaway: the four changes are connected — each one is about how a person moves from having a need to actually receiving service.
-4. **Which of this is already happening for us? (Read "Which of this is already happening for us?", slide of the same name).** Make this a real group discussion, not an individual worksheet — group BHWs by barangay if they come from different ones. Ask the lesson's three questions word for word: *"Is everyone there already automatically covered by PhilHealth? Do you know anyone with an assigned primary care provider? If someone needs a referral, is the process clear, or is there still confusion about where to go?"* Each group puts sticky notes in the three columns.
-5. **The law's aim versus what is available.** Point to the slide line "Distinguish the law's aims from services currently available." For each "Not yet" note, ask: *"What would you check with the RHU before telling a resident about this?"* Move it to "Check with the RHU" if needed. Say plainly: *"'Not yet' is not a failure — it is the first step."*
-6. **Self-check.** Ask *"What should you do before promising a consultation has no charge?"* and let the group discuss before revealing the answer.
+1. **Trace the four-change chain (5 minutes).** Show the subchapter visual and slide “Four changes, one journey.” Say that the manual lists more than four UHC changes; this selected chain follows the resident's journey. Ask participants to name the three changes after PhilHealth inclusion.
+2. **Outpatient benefit (7 minutes).** Ask what outpatient means. Explain that YAKAP offers specified primary and outpatient services subject to program rules and accredited providers. In Mang Ernesto's case, the BHW must confirm the service, applicable benefit, clinic, and process with PhilHealth or the health team. Ask why a blanket promise of a free test would be unreliable.
+3. **Resident's chosen clinic (8 minutes).** Explain that the resident can choose a primary care clinic under current PhilHealth selection rules. Ask whether automatic NHIP inclusion proves a clinic has already been selected. It does not. Practice a neutral question: “Have you selected a clinic, or shall we check the available choices and process?” The BHW supports, while the resident chooses.
+4. **Referral roles (8 minutes).** Draw three boxes: clinician decides the clinical need; health team confirms the local pathway and contact; BHW helps communicate and follow instructions. The local government may have its own protocol. Do not turn this into a diagnosis or hospital selection exercise.
+5. **Local mapping (22 minutes).** In pairs, use a real but de-identified barangay example. Put clinic selection, outpatient benefit, and referral contact in **Confirmed locally**, **Still to check**, or **Who can confirm**. For each uncertain item, write one specific question for the midwife, RHU, or PhilHealth. Invite participants to compare differences between barangays without treating one arrangement as universal.
+6. **Learner check and feedback (5 minutes).** Read the Mang Ernesto question from the last Read section or slide. Let participants choose individually, then explain the role boundary and local facts they would confirm.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers
 
-- **"All of it is already here."** Accept it, then ask for one specific example: *"Who in your barangay has an assigned primary care provider?"* If the example is unclear, the item moves to "Check with the RHU" — without saying the BHW was wrong.
-- **"None of it has reached us."** Accept it, then ask: *"Is there any of the four you have seen even once?"* The point is an honest comparison, not a score.
-- **"I am their primary care provider."** Respond gently with the lesson's words: the primary care provider helps navigate care; the BHW supports the resident within their training and supervision. Ask: *"Who is the provider in your area?"* If nobody knows, that is a "Check with the RHU" item.
-- **Barangays give different answers.** This is expected and is the most important part of the module. Say so out loud.
-- **Questions about which illnesses to refer where.** Do not answer here. Say the referral pathway is local and must be checked with the RHU.
+- **“Everyone already has a clinic because everyone is in PhilHealth.”** Inclusion and clinic selection are separate. Confirm his selection or current choices with PhilHealth or the RHU.
+- **“I know which hospital to send him to.”** Ask who made the clinical decision and whether the local receiving pathway has been confirmed. A BHW should not select a destination by guesswork.
+- **“YAKAP covers outpatient care, so every service is here.”** Ask which specific service, accredited clinic, and current rule support the statement. Keep unconfirmed details in the check column.
+- **“Our barangay's procedure differs.”** Invite the group to document the difference and confirm it with the local health team.
 
 ## [misconception] Common misconception
 
-**"If the law says it, it is already available in our barangay."** BHWs often hear a change described and assume it has already arrived locally. Correct it without embarrassing anyone by pointing to the group's own chart: *"Look — some of us have it, some of us don't yet. The law is the same for all of us."* Then read the lesson line: "Do not assume every service or referral arrangement is already available locally." This is close to the module's named misconception, "Everything is free now because of UHC" — both come from treating the law's aim as today's local service.
+Automatic PhilHealth inclusion does not establish a selected clinic, a specific outpatient entitlement at any facility, or a universal referral route. State each as a separate question to confirm. This lesson does not revisit 1.2.1's “Is every consultation free?” quiz as its main assessment.
 
 ## [practice] Practice activity
 
-In pairs, one BHW plays a resident at the barangay health station who says: *"I heard that under UHC I now have my own primary care provider and a clear referral. Who is my provider, and where do I go if I need to be referred?"* The other BHW answers in 2 minutes: (1) which of the four changes the question is about, (2) what they honestly know is available in their barangay, using the group's chart, and (3) the first action — checking the current provider, benefit and referral procedure with the RHU or the midwife — without promising anything. Swap roles. Two or three pairs perform; the group gives one strength and one suggestion.
+In pairs, one person is Mang Ernesto and one is Vlanche. Ernesto says he wants a checkup, does not know whether he selected a primary care clinic, and wonders what to do if a clinician recommends referral. Vlanche responds in about one minute, naming (1) what to ask about the clinic, (2) what to check about the outpatient benefit, and (3) how to get local referral instructions without making the clinical decision. Swap roles. Observe the BHW's words, not just the online answer.
 
 ## [answer-key] Self-check answer key
 
-The lesson has one check. It appears at the end of Read section "Which of this is already happening for us?" and on the slide of the same name; it is the same question, so it is covered once here.
-
-- **"What should you do before promising a consultation has no charge?"** → **Check the provider, benefit and process with the RHU or PhilHealth.** The lesson says to check the current provider, benefit and referral procedure before advising a resident.
-  - **"Promise that everything is free."** is wrong because the lesson says not to assume every service or referral arrangement is already available locally, and outpatient benefits must be checked for what is covered. A promise the facility cannot keep repeats Mang Ernesto's confusion and costs the BHW the resident's trust.
-  - As the feedback says, ask the BHW to explain why using the lesson situation.
+The first option is correct: help Mang Ernesto confirm his selected or available clinic and outpatient process with the RHU or PhilHealth; if a clinician recommends referral, obtain the local instructions from the health team. Choosing a clinic *for* him removes his choice and may name an unverified provider. Deciding a clinical referral and hospital based on a BHW's guess crosses the role boundary and ignores the local protocol.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator — *explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor* — during the resident role-play:
+- **Kaya na:** names the clinic, benefit, and local referral questions without prompting, and explicitly leaves the referral decision to the clinician.
+- **Kailangan pa ng practice:** knows to check with the health team but needs a prompt to specify what to ask.
+- **Hindi pa:** names an unconfirmed clinic or hospital, promises a benefit, or makes a clinical referral decision.
 
-- **Kaya na:** without prompting, the BHW names the change the question is about, says honestly whether it is already available in their barangay, and gives the first action: checking the current provider, benefit and referral procedure with the RHU, PhilHealth or the midwife.
-- **Kailangan pa ng practice:** the BHW says "let's check with the RHU" but needs your follow-up question before saying what exactly to check, or which change the question is about.
-- **Hindi pa:** the BHW promises the service is free or already available, names a place to be referred to without checking the local pathway, or cannot connect the question to any of the changes.
-
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Completion of the online check is not evidence of observed navigation skill. Record the role-play separately.
 
 ## [support] If a BHW needs more support
 
-- Let them redo the role-play with the group's three-column chart in front of them, and with a cue card reading *provider — benefit — referral procedure*.
-- Ask them to find out one real local fact from the midwife before the next session (for example, the current referral procedure) and report it to the group.
-- Pair them with a BHW rated **Kaya na** and let them answer second.
-- Re-observe at the next session using the same resident role-play, not a new one.
+Let them repeat the role-play with a three-card cue: **clinic / benefit / referral contact**. Ask them to bring one confirmed local fact from the midwife or RHU to the next session and practice stating what remains unknown. Re-observe the same scenario.
 
 ## [sources-review] Sources and review notes
 
-- BHW Reference Manual p. 5 (PDF 13), list of changes under R.A. 11223 — listed in the lesson's source list as an inherited page reference; final audit pending. Day 1 presentation slide 18 (primary care provider, outpatient consult, referral system, reorganizing DOH programs). Facilitator Guide p. 14 (PDF 21).
-- Timing: Facilitator Guide PDF 19 sets 3 hours for the module's competency; PDF 21 says "at least 3 hours". Keep the original total in the subchapter guide; do not repeat that whole allocation for each short lesson. The 55 minutes above is this lesson's share; splitting the 30-minute "goal and four changes" row between this lesson and *UHC purpose and coverage* is a suggestion, not part of the module table. This split supports self-study and does not create a new training-hour allocation.
-- **Which four changes:** this lesson's Read and slide list outpatient benefits, primary care provider, referral and integrated (province-wide and city-wide) systems. The subchapter guide, the subchapter's competency indicator and the four-changes visual list PhilHealth coverage, outpatient, primary care provider and referral. The Reference Manual lists nine changes, including "pagsasaayos ng hiwa-hiwalay na mga programang pangkalusugan ng DOH". The reviewer should settle one set.
-- The phrase "Province-wide and city-wide health systems are intended to coordinate services" is the lesson's own wording; the source pages speak of reorganizing DOH's separate programs, and the Facilitator Guide PDF 10 speaks of province-wide or city-wide health plans. Review current legal/policy wording before publication.
-- Still to review: bilingual parity and the observation indicator (the same generic indicator is used in all four lessons). Keep online completion separate from demonstrated competence.
-
-Draft for review.
+- **Audited 2 October 2026:** BHW Reference Manual printed p. 5 / PDF p. 13 lists nine UHC changes, including the selected four and DOH program integration. Printed p. 50 / PDF p. 65 says complete patient navigation belongs to the doctor, nurse, or midwife and local governments may have their own referral protocols. The old “page audit pending” and unreconciled-four notes are resolved.
+- RA 11223 sections 4, 6, and 18; PhilHealth's YAKAP announcement of 25 July 2025; PhilHealth Circular 2025-0017 on choosing and empaneling with a primary care clinic; and DOH National Objectives for Health 2023–2028 support the benefit, provider-choice, and network claims. The lesson deliberately avoids a fixed service list, fee, provider name, or referral destination because these depend on current rules and local capacity.
+- The story is fictional. The owner approved the Filipino and English previews on 2 October 2026. No independent policy or clinical SME approval is recorded. The 55-minute facilitation split is an instructional suggestion within the existing module plan.

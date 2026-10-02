@@ -14,47 +14,89 @@
   },
   "sections": [
     {
-      "id": "section-3",
+      "id": "bridge",
       "concept_ids": [
         "m2.outpatient",
         "m2.primary-care-provider",
-        "m2.referral-system",
-        "m2.program-integration"
+        "m2.referral-system"
       ],
-      "asset_ids": [
-        "practice-map"
-      ],
-      "takeaway_fil": "Apat itong pagbabago, at magkakaugnay — ang bawat isa ay may kinalaman sa kung paano dumadaan ang isang tao mula sa pangangailangan patungo sa serbisyo.",
-      "takeaway_en": "These four changes are connected — each one has to do with how a person moves from having a need to actually receiving service.",
+      "asset_ids": [],
+      "takeaway_fil": "Ang awtomatikong pagsama sa PhilHealth ang panimulang punto; tatlo pang hakbang ang kailangang unawain.",
+      "takeaway_en": "Automatic PhilHealth inclusion is the starting point; three more changes shape the next step.",
       "check": null
     },
     {
-      "id": "section-4",
+      "id": "outpatient",
       "concept_ids": [
-        "m2.outpatient",
-        "m2.primary-care-provider",
+        "m2.outpatient"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Benepisyo ang outpatient care na may tuntunin; tiyakin ang partikular na serbisyo at pasilidad.",
+      "takeaway_en": "Outpatient care is a benefit with rules; check the specific service and facility.",
+      "check": null
+    },
+    {
+      "id": "provider",
+      "concept_ids": [
+        "m2.primary-care-provider"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tiyakin kung may napiling clinic at paano makapipili; igalang ang pagpili ng residente.",
+      "takeaway_en": "Check whether a clinic was selected and how to choose; respect the resident’s choice.",
+      "check": null
+    },
+    {
+      "id": "referral",
+      "concept_ids": [
         "m2.referral-system",
         "m2.program-integration"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Bago magmungkahi ng pagpapabuti, kailangan munang malinaw kung alin sa mga pagbabago ang totoong dumating na sa sariling barangay, at alin ang hindi pa.",
-      "takeaway_en": "Before proposing an improvement, first get clear on which changes have actually reached your own barangay, and which have not.",
+      "takeaway_fil": "Ang health professional ang nagpapasya sa klinikal na referral; ang BHW ay umaalalay ayon sa lokal na tagubilin.",
+      "takeaway_en": "A health professional makes clinical referral decisions; the BHW supports the local instructions.",
+      "check": null
+    },
+    {
+      "id": "local",
+      "concept_ids": [
+        "m2.outpatient",
+        "m2.primary-care-provider",
+        "m2.referral-system"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Magtanong, kumpirmahin ang lokal na detalye, at tulungan ang residente sa susunod na hakbang.",
+      "takeaway_en": "Ask, confirm local details, and help the resident take the next step.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m2.primary-care-provider",
+        "m2.referral-system"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tiyakin ang napiling clinic at lokal na proseso; ipaubaya sa clinician ang referral decision.",
+      "takeaway_en": "Confirm the chosen clinic and local process; leave the referral decision to the clinician.",
       "check": {
-        "prompt_fil": "Ano ang unang gagawin bago mangakong walang bayad ang konsulta?",
-        "prompt_en": "What should you do before promising a consultation has no charge?",
+        "prompt_fil": "Hindi alam ni Mang Ernesto ang napili niyang primary care clinic at nagtatanong siya tungkol sa posibleng referral. Ano ang pinakamainam na susunod na hakbang ni Vlanche?",
+        "prompt_en": "Mang Ernesto does not know which primary care clinic he selected and asks about a possible referral. What is Vlanche’s best next step?",
         "options": [
           {
-            "fil": "Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso.",
-            "en": "Check the provider, benefit and process with the RHU or PhilHealth."
+            "fil": "Tulungan siyang tiyakin sa RHU o PhilHealth ang napili o mapipiling clinic at outpatient process; kung kailangan ng referral ayon sa clinician, kunin sa health team ang lokal na tagubilin.",
+            "en": "Help him confirm his selected or available clinic and outpatient process with the RHU or PhilHealth; if a clinician recommends referral, get the local instructions from the health team."
           },
           {
-            "fil": "Ipangako agad na libre ang lahat.",
-            "en": "Promise that everything is free."
+            "fil": "Pumili ng clinic para sa kanya at sabihin na roon siya dapat magpunta kahit hindi pa natiyak ang status nito.",
+            "en": "Choose a clinic for him and tell him to go there without confirming its status."
+          },
+          {
+            "fil": "Magpasya kung kailangan niyang ma-refer at pumili agad ng ospital batay sa hinala ni Vlanche.",
+            "en": "Decide whether he needs referral and choose a hospital based on Vlanche’s guess."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Check the provider, benefit and process with the RHU or PhilHealth. Explain why using the lesson situation."
+        "feedback_fil": "Tinutulungan ng BHW ang residente sa pagpili at paggamit ng serbisyo matapos tiyakin ang lokal na impormasyon. Ang clinician ang nagpapasya sa referral; ang health team ang magbibigay ng lokal na tagubilin.",
+        "feedback_en": "The BHW helps the resident navigate clinic selection and benefits after confirming local information. The clinician decides on referral; the health team provides local instructions."
       }
     }
   ],
@@ -62,105 +104,137 @@
     {
       "id": "m2.outpatient",
       "read_ids": [
-        "section-3",
-        "section-4"
+        "bridge",
+        "outpatient",
+        "local"
       ],
       "slide_ids": [
-        "slide-section-3",
-        "slide-section-4"
+        "slide-bridge",
+        "slide-outpatient",
+        "slide-local"
       ],
       "source_ids": [
-        "m2.outpatient-source"
+        "manual-uhc",
+        "philhealth-yakap"
       ]
     },
     {
       "id": "m2.primary-care-provider",
       "read_ids": [
-        "section-3",
-        "section-4"
+        "bridge",
+        "provider",
+        "local",
+        "check"
       ],
       "slide_ids": [
-        "slide-section-3",
-        "slide-section-4"
+        "slide-bridge",
+        "slide-provider",
+        "slide-local",
+        "slide-check"
       ],
       "source_ids": [
-        "m2.primary-care-provider-source"
+        "manual-uhc",
+        "ra11223",
+        "philhealth-selection"
       ]
     },
     {
       "id": "m2.referral-system",
       "read_ids": [
-        "section-3",
-        "section-4"
+        "bridge",
+        "referral",
+        "local",
+        "check"
       ],
       "slide_ids": [
-        "slide-section-3",
-        "slide-section-4"
+        "slide-bridge",
+        "slide-referral",
+        "slide-local",
+        "slide-check"
       ],
       "source_ids": [
-        "m2.referral-system-source"
+        "manual-uhc",
+        "ra11223",
+        "doh-networks"
       ]
     },
     {
       "id": "m2.program-integration",
       "read_ids": [
-        "section-3",
-        "section-4"
+        "referral"
       ],
       "slide_ids": [
-        "slide-section-3",
-        "slide-section-4"
+        "slide-referral"
       ],
       "source_ids": [
-        "m2.program-integration-source"
+        "manual-uhc",
+        "doh-networks"
       ]
     }
   ],
   "sources": [
     {
-      "id": "m2.outpatient-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "id": "manual-uhc",
+      "title": "BHW Reference Manual — UHC changes, printed p. 5 / PDF p. 13; BHW referral role, printed p. 50 / PDF p. 65",
       "pdf_pages": [
-        13
+        13,
+        65
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     },
     {
-      "id": "m2.primary-care-provider-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
-      "pdf_pages": [
-        13
-      ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "id": "ra11223",
+      "title": "Republic Act No. 11223 — UHC Act, sections 4, 6 and 18",
+      "url": "https://www.philhealth.gov.ph/about_us/RA11223_UHC.pdf"
     },
     {
-      "id": "m2.referral-system-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
-      "pdf_pages": [
-        13
-      ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "id": "philhealth-yakap",
+      "title": "PhilHealth — YAKAP primary and outpatient benefit announcement, 25 July 2025",
+      "url": "https://www.philhealth.gov.ph/news/up/article/2025/news_6889cbf12d887.php"
     },
     {
-      "id": "m2.program-integration-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
-      "pdf_pages": [
-        13
-      ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "id": "philhealth-selection",
+      "title": "PhilHealth Circular 2025-0017 — Selection and Empanelment for the Primary Care Benefit Package",
+      "url": "https://www.philhealth.gov.ph/circulars/2025/PC2025-0017.pdf"
+    },
+    {
+      "id": "doh-networks",
+      "title": "DOH National Objectives for Health 2023–2028 — primary care networks and patient navigation",
+      "url": "https://doh.gov.ph/wp-content/uploads/2024/01/National-Objectives-for-Health-2023-2028.pdf"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "uhc-primary-care-story",
+      "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-dd4f64832ebc-poster.jpg",
+      "content_hash": "dd4f64832ebca39197e0defa7ba4e99e275572d31f65a0b29dc00609d8cd042c",
+      "alt_fil": "Animadong kuwento nina BHW Vlanche at Mang Ernesto tungkol sa outpatient benefit, pagpili ng primary care clinic, at lokal na referral pathway.",
+      "alt_en": "Animated story of BHW Vlanche and Mang Ernesto about an outpatient benefit, choosing a primary care clinic, and the local referral pathway.",
+      "caption_fil": "Kathang-isip na halimbawa; Filipino at English na may Gemini narration at captions. Inaprubahan ng may-ari matapos mapakinggan ang dalawang preview noong 2026-10-02.",
+      "caption_en": "A fictional example; Filipino and English with Gemini narration and captions. Owner approved both previews after listening on 2026-10-02.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/uhc-primary-care) for lesson 1.2.2. Reuses the owner-approved 1.2.1 fictional Vlanche and Mang Ernesto illustration for character continuity; no logos, forms, provider name, or benefit guarantee. Filipino and English expressive narration generated scene by scene with Gemini 3.8 Flash TTS (Kore), measured from audio samples; timing manifests in remotion/public/uhc-primary-care. Owner approved both previews on 2026-10-02. No independent policy or clinical SME approval recorded.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-2c1ace75bb0f.mp4",
+          "content_hash": "2c1ace75bb0fefb8265e2c01fe14b2968dc03c2254cc295fe7cce2893c9e842e",
+          "duration_s": 76,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-33488b566944.vtt",
+            "content_hash": "33488b566944efd4181605ac23ee414220af7add89c9bf0508ab2024c64ad735"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-d9ff53ab0ae2.mp4",
+          "content_hash": "d9ff53ab0ae2da226f6cd911844a27b747d9a4850608db117f7ea3862eb95713",
+          "duration_s": 83,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-db7f831ea66a.vtt",
+            "content_hash": "db7f831ea66a663c944a7d6fee928feceab0c0c41f425fa63f7a893f8a72ed56"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "uhc-primary-care-story"
 }

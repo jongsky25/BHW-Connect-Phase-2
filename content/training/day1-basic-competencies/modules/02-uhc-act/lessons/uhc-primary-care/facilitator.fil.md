@@ -1,81 +1,64 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na banggitin ang mga pagbabagong nakalista sa aralin — outpatient benefits, pagpaparehistro sa primary care provider, maayos na referral, at province-wide at city-wide health systems na nag-uugnay sa mga serbisyo — masabi, gamit ang totoong halimbawa, kung alin dito ang dumating na at alin ang hindi pa sa sariling barangay, at bago magpayo sa residente, masabi kung ano ang dapat munang tiyakin: ang kasalukuyang provider, benepisyo, at proseso ng referral, sa RHU o PhilHealth.
+Sa pagtatapos, matutulungan ng BHW ang residente na tukuyin ang susunod na hakbang para sa outpatient consultation: tiyakin ang napili o mapipiling primary care clinic, alamin ang naaangkop na benepisyo at proseso, at kunin ang lokal na tagubilin kung magrekomenda ng referral ang clinician. Nasasabi ng BHW ang hindi pa alam at iniiwan sa health professional ang klinikal na pasya.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 55 minuto sa harapang sesyon. Ito ang bahagi ng araling ito sa 3 oras na nakatakda sa gabay ng subchapter: ang kalahati tungkol sa "apat na pagbabago" (mga 15 minuto) ng 30 minutong "Layunin ng UHC at ang apat na pagbabago," at ang 40 minutong talakayan bawat barangay na "Alin dito ang nangyari na sa amin." Ang kabilang kalahati ng 30 minuto ay para sa *Layunin at saklaw ng UHC*. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper na may tatlong hanay — **"Nandito na" / "Hindi pa" / "Tiyakin sa RHU"**; marker; maliliit na papel o sticky notes; ang slides ng aralin (kasama ang visual na "unawain, tiyakin, at isagawa," na draft pa).
+- **Oras:** mga 55 minuto sa harapang plano: mga 15 minuto mula sa pinagsasaluhang 30 minutong talakayan sa mga pagbabago sa UHC, at 40 minuto para ihambing ang nangyayari sa mga barangay. Mungkahing paghahati ito ng oras ng subchapter, hindi bagong alokasyon. Mga 7 minuto ang sariling pag-aaral.
+- **Kagamitan:** Slides at maikling kuwento; pisara na may tatlong hanay, **Natiyak dito / Tiyakin pa / Sino ang makapagtitiyak**; mga kard para sa clinic, outpatient benefit, at referral instruction. Gamitin ang kasalukuyang impormasyon mula sa RHU o PhilHealth kung mayroon.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides. Dalawa ang seksyon: "Apat na konkretong pagbabago" at "Alin dito ang nangyayari na sa amin?"
-- Bago ang sesyon, itanong sa midwife o RHU ang kasalukuyang lokal na impormasyon: kanino nagpaparehistro ang mga residente bilang primary care provider, paano ginagamit ang outpatient benefit, at ano ang kasalukuyang proseso ng referral mula sa inyong barangay. Kung may hindi matiyak, ilagay ito sa hanay na "Tiyakin sa RHU" — huwag manghula.
-- Pansinin na iba ang apat na nasa visual ng subchapter tungkol sa apat na pagbabago (PhilHealth, outpatient, primary care, referral) kaysa sa slide ng araling ito (outpatient, primary care, referral, integrated system). Ituro mula sa slide ng araling ito; huwag munang ipakita nang magkatabi ang dalawa hangga't hindi pa ito napagtutugma ng reviewer.
-- Saklaw: huwag ituro kung sino ang dapat i-refer para sa anong kondisyon — klinikal iyon at labas sa araling ito. Umaalalay ang BHW sa residente "ayon sa pagsasanay at pangangasiwa." Sa susunod na aralin ang health board.
+- Balikan ang apat na nasa visual ng subchapter: PhilHealth inclusion, outpatient consultation, primary care provider, at referral. Ang inclusion ay nasa aralin 1.2.1; ang susunod na tatlo ay nasa araling ito. Nasa Reference Manual din ang pagsasaayos ng dating hiwa-hiwalay na programang pangkalusugan ng DOH; konteksto ito ng ugnayan ng serbisyo, hindi kapalit na ikaapat na kahon.
+- Itanong sa midwife o RHU kung aling primary care clinic ang kasalukuyang mapipili, paano malalaman kung may napili na ang residente at magagamit ang naaangkop na outpatient benefit, at sino ang contact para sa lokal na referral protocol. Tiyakin din ang kasalukuyang gabay ng PhilHealth. Isulat sa **Tiyakin pa** ang hindi masagot; huwag gumawa ng lokal na provider o proseso.
+- Huwag mag-diagnose, pumili ng referral destination, mangako ng sakop na serbisyo, o sabihing available na ang lahat. Ang doktor, nurse, o midwife ang may tungkulin sa kumpletong patient navigation at klinikal na referral. Kung may agarang pangangailangan sa talakayan, sundin ang lokal na emergency protocol ng health team sa halip na ang halimbawang pangklase.
 
 ## [opening] Pambungad
 
-Sa kasunod na kuwento, si BHW Vlanche ang kasama ni Mang Ernesto sa pagtukoy ng susunod na hakbang.
-
-Itanong sa grupo: *"Alalahanin ang huling residenteng tinulungan n'yong makarating sa isang serbisyong pangkalusugan. Ano ang nangyari mula nang kailanganin niya ng tulong hanggang sa mabigyan siya ng serbisyo?"* Kumuha ng dalawa o tatlong kuwento at isulat sa itaas ng manila paper ang mga hakbang ng isang kuwento. Babalikan mo ito sa hakbang 3.
+I-play ang kuwento o basahin ang unang seksiyon. Itinatanong ni Mang Ernesto kung saan magsisimula sa checkup at ano ang gagawin kung magrekomenda ng referral ang clinician. Itanong: “Ano na ang alam ni Vlanche mula sa aralin 1.2.1, at ano pa ang dapat niyang tiyakin?” Ilagay ang PhilHealth inclusion sa **alam nang prinsipyo**, saka lumipat sa tatlong bagong tanong.
 
 ## [steps] Mga hakbang
 
-1. **Apat na konkretong pagbabago (Read "Apat na konkretong pagbabago," slide "Apat na konkretong pagbabago").** Bago ipakita ang listahan, itanong: *"Alin sa mga pagbabago sa ilalim ng UHC ang alam n'yo na?"* Saka ipakita ang slide nang isa-isang linya: outpatient benefits — tiyakin ang sakop; primary care — alamin ang provider at pagpaparehistro; referral — sundin ang lokal na proseso; integrated system — pag-ugnayin ang mga serbisyo.
-2. **Sino ang gagawa ng ano.** Basahin: "Tumutulong ang primary care provider sa pag-ugnay ng pangangalaga; ang BHW ay umaalalay ayon sa pagsasanay at pangangasiwa." Itanong: *"Ano ang ginagawa ng provider, at ano ang ginagawa n'yo?"*
-3. **Pag-ugnayin ang apat.** Balikan ang kuwento sa pambungad. Ipaturo sa grupo kung saan dadaan ang bawat pagbabago sa paglalakbay ng residenteng iyon. Ilabas ang takeaway: magkakaugnay ang apat — bawat isa ay tungkol sa kung paano dumadaan ang tao mula sa pangangailangan patungo sa serbisyo.
-4. **Alin dito ang nangyayari na sa amin? (Read "Alin dito ang nangyayari na sa amin?," slide na may parehong pamagat).** Gawin itong tunay na talakayan ng grupo, hindi indibidwal na sagutan — pagsamahin ang mga BHW ayon sa barangay kung galing sila sa iba't ibang barangay. Itanong nang eksakto ang tatlong tanong ng aralin: *"Saklaw na ba ng PhilHealth nang awtomatiko ang lahat dito? May kilala ka bang may nakatalagang primary care provider? Kung may kailangang i-refer, malinaw ba ang proseso, o nalilito pa rin kung saan dapat pumunta?"* Ilalagay ng bawat grupo ang sticky notes sa tatlong hanay.
-5. **Layunin ng batas laban sa aktuwal na serbisyo.** Ituro ang linya sa slide: "Ihiwalay ang layunin ng batas sa aktuwal na serbisyong available." Sa bawat note na "Hindi pa," itanong: *"Ano ang titiyakin n'yo sa RHU bago ito sabihin sa residente?"* Ilipat sa "Tiyakin sa RHU" kung kailangan. Sabihin nang malinaw: *"Hindi kahihiyan ang 'hindi pa' — iyan ang unang hakbang."*
-6. **Self-check.** Itanong ang *"Ano ang unang gagawin bago mangakong walang bayad ang konsulta?"* at hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. **Sundan ang apat na pagbabago (5 minuto).** Ipakita ang visual ng subchapter at slide na “Apat na pagbabago, isang paglalakbay.” Sabihing mas marami sa apat ang nakalista sa manual; ang napiling chain na ito ay sumusunod sa paglalakbay ng residente. Ipatukoy ang tatlong pagbabago pagkatapos ng PhilHealth inclusion.
+2. **Outpatient benefit (7 minuto).** Itanong ang ibig sabihin ng outpatient. Ipaliwanag na may mga partikular na serbisyo ang YAKAP sa ilalim ng mga tuntunin nito at sa accredited providers. Sa kaso ni Mang Ernesto, dapat tiyakin ng BHW ang serbisyo, benepisyo, clinic, at proseso sa PhilHealth o health team. Itanong kung bakit hindi maaaring mangakong libre ang kahit anong test.
+3. **Napiling clinic ng residente (8 minuto).** Ipaliwanag na makapipili ang residente ng primary care clinic ayon sa kasalukuyang patakaran ng PhilHealth. Itanong kung sapat na bang patunay ng napiling clinic ang awtomatikong NHIP inclusion. Hindi. Sanayin ang maingat na tanong: “May napili na po ba kayong clinic, o alamin natin ang mga pagpipilian at proseso?” Umaalalay ang BHW; residente ang pumipili.
+4. **Papel sa referral (8 minuto).** Gumuhit ng tatlong kahon: clinician ang nagpapasya sa klinikal na pangangailangan; health team ang nagkukumpirma sa lokal na proseso at contact; BHW ang tumutulong sa pakikipag-ugnayan at pagsunod sa tagubilin. Maaaring may sariling protocol ang lokal na pamahalaan. Huwag gawing ehersisyo ito sa diagnosis o pagpili ng ospital.
+5. **Lokal na mapa (22 minuto).** Magpares at gumamit ng tunay ngunit hindi kinikilalang halimbawa mula sa barangay. Ilagay ang clinic selection, outpatient benefit, at referral contact sa **Natiyak dito**, **Tiyakin pa**, o **Sino ang makapagtitiyak**. Sa bawat hindi tiyak, sumulat ng isang tiyak na tanong para sa midwife, RHU, o PhilHealth. Ihambing ang magkakaibang barangay nang hindi ipinapalagay na iisa ang proseso sa lahat.
+6. **Learner check at feedback (5 minuto).** Basahin ang tanong tungkol kay Mang Ernesto sa huling Read section o slide. Papiliin muna ang bawat isa, saka ipaliwanag ang hangganan ng papel at lokal na detalyeng dapat tiyakin.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot
 
-- **"Nandito na lahat."** Tanggapin, saka humingi ng isang tiyak na halimbawa: *"Sino sa barangay n'yo ang may nakatalagang primary care provider?"* Kung hindi malinaw ang halimbawa, ililipat ito sa "Tiyakin sa RHU" — nang hindi sinasabing mali ang BHW.
-- **"Wala pang dumarating sa amin."** Tanggapin, saka itanong: *"May isa ba sa apat na nakita n'yo na kahit minsan?"* Ang punto ay tapat na paghahambing, hindi puntos.
-- **"Ako ang primary care provider nila."** Tumugon nang mahinahon gamit ang salita ng aralin: tumutulong ang primary care provider sa pag-ugnay ng pangangalaga; ang BHW ay umaalalay ayon sa pagsasanay at pangangasiwa. Itanong: *"Sino ang provider sa lugar n'yo?"* Kung walang nakaaalam, isa itong "Tiyakin sa RHU."
-- **Magkakaiba ang sagot ng mga barangay.** Inaasahan ito at ito ang pinakamahalagang bahagi ng module. Sabihin ito nang malakas.
-- **Tanong kung anong sakit ang ire-refer saan.** Huwag sagutin dito. Sabihing lokal ang proseso ng referral at kailangang tiyakin sa RHU.
+- **“May clinic na ang lahat dahil kasama ang lahat sa PhilHealth.”** Magkaiba ang inclusion at pagpili ng clinic. Tiyakin ang napili o kasalukuyang pagpipilian sa PhilHealth o RHU.
+- **“Alam ko na kung saang ospital siya dadalhin.”** Itanong kung sino ang gumawa ng klinikal na pasya at kung natiyak ang lokal na proseso ng pagtanggap. Hindi pipili ang BHW batay sa hula.
+- **“Saklaw ng YAKAP ang outpatient kaya available dito ang lahat.”** Itanong kung anong partikular na serbisyo, accredited clinic, at kasalukuyang tuntunin ang batayan. Ilagay sa hanay ng pagtitiyak ang hindi pa kumpirmado.
+- **“Iba ang proseso sa barangay namin.”** Itala ang pagkakaiba at tiyakin ito sa lokal na health team.
 
 ## [misconception] Karaniwang maling akala
 
-**"Kapag sinabi ng batas, nandito na iyon sa barangay namin."** Madalas, kapag narinig ng BHW ang isang pagbabago, ipinapalagay nilang dumating na ito sa kanilang lugar. Itama ito nang hindi napapahiya ang sinuman sa pamamagitan ng pagturo sa sariling chart ng grupo: *"Tingnan n'yo — mayroon na ang ilan sa atin, wala pa ang iba. Pero iisang batas lang ito para sa ating lahat."* Saka basahin ang linya ng aralin: "Huwag ipalagay na available na sa lokalidad ang bawat serbisyo o referral arrangement." Kahawig ito ng maling akala na pinangalanan sa module, "Libre na ang lahat dahil sa UHC" — pareho silang galing sa pagtingin sa layunin ng batas na parang serbisyo na ito ngayon sa lugar.
+Hindi patunay ang awtomatikong PhilHealth inclusion na may napiling clinic na, sakop ang isang partikular na serbisyo sa kahit anong pasilidad, o iisa ang referral route sa lahat ng lugar. Hiwalay na tanong ang bawat isa. Hindi inuulit ng pangunahing pagsusulit dito ang “Libre ba ang bawat konsulta?” sa 1.2.1.
 
-## [practice] Gawaing pagsasanay
+## [practice] Pagsasanay
 
-Magkapares: gaganap ang isang BHW bilang residente sa barangay health station na nagsasabing: *"Narinig ko na sa UHC, may sarili na akong primary care provider at malinaw na ang referral. Sino ang provider ko, at saan ako pupunta kung kailangan kong ma-refer?"* Sasagot ang isa sa loob ng 2 minuto: (1) aling pagbabago ang tinutukoy ng tanong, (2) ano ang tapat niyang alam na available sa kanilang barangay, gamit ang chart ng grupo, at (3) ang unang hakbang — tiyakin ang kasalukuyang provider, benepisyo, at proseso ng referral sa RHU o midwife — nang hindi nangangako ng anuman. Magpalit. Dalawa o tatlong pares ang magpapakita; magbibigay ang grupo ng isang kalakasan at isang mungkahi.
+Magpares: si Mang Ernesto ang isa, si Vlanche ang isa. Gusto ni Ernesto ng checkup, hindi alam kung may napili na siyang primary care clinic, at nagtatanong kung ano ang gagawin kung magrekomenda ng referral ang clinician. Sa loob ng isang minuto, sasagutin ni Vlanche ang (1) itatanong tungkol sa clinic, (2) titiyakin sa outpatient benefit, at (3) paano kukunin ang lokal na referral instruction nang hindi gumagawa ng klinikal na pasya. Magpalit ng papel. Obserbahan ang mismong paliwanag ng BHW, hindi lang ang online na sagot.
 
 ## [answer-key] Susi sa self-check
 
-Iisa ang check ng aralin. Lumalabas ito sa dulo ng Read na seksyong "Alin dito ang nangyayari na sa amin?" at sa slide na may parehong pamagat; iisang tanong ito, kaya isang beses lang ito tinatalakay dito.
+Tama ang unang opsiyon: tulungang tiyakin ni Mang Ernesto ang napili o mapipiling clinic at outpatient process sa RHU o PhilHealth; kung magrekomenda ng referral ang clinician, kunin sa health team ang lokal na tagubilin. Ang pagpili ng clinic *para* sa kanya ay umaagaw sa kanyang pagpili at maaaring magbanggit ng hindi natiyak na provider. Ang pagdedesisyon sa klinikal na referral at ospital batay sa hula ng BHW ay lampas sa kanyang papel at hindi sumusunod sa lokal na protocol.
 
-- **"Ano ang unang gagawin bago mangakong walang bayad ang konsulta?"** → **Alamin sa RHU o PhilHealth ang provider, benepisyo, at proseso.** Sinasabi ng aralin na tiyakin muna ang kasalukuyang provider, benepisyo, at proseso bago magpayo sa residente.
-  - Mali ang **"Ipangako agad na libre ang lahat."** dahil sinasabi ng aralin na huwag ipalagay na available na sa lokalidad ang bawat serbisyo o referral arrangement, at kailangang tiyakin ang sakop ng outpatient benefits. Ang pangakong hindi matutupad ng pasilidad ay inuulit lang ang kalituhan ni Mang Ernesto at nakasisira sa tiwala ng residente sa BHW.
-  - Gaya ng sinasabi ng feedback, ipaliwanag sa BHW ang dahilan gamit ang sitwasyon sa aralin.
+## [observe] Obserbahan
 
-## [observe] Ano ang oobserbahan
+- **Kaya na:** nababanggit nang walang untag ang tanong sa clinic, benepisyo, at lokal na referral, at malinaw na sa clinician ang pasya sa referral.
+- **Kailangan pa ng practice:** alam na dapat magtanong sa health team ngunit kailangan ng untag sa eksaktong itatanong.
+- **Hindi pa:** nagbabanggit ng hindi kumpirmadong clinic o ospital, nangangako ng benepisyo, o gumagawa ng klinikal na pasya.
 
-Gamitin ang observation indicator ng aralin — *naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor* — habang ginagawa ang role-play ng residente:
+Hindi katumbas ng naobserbahang kasanayan ang pagkumpleto ng online check. Itala nang hiwalay ang role-play.
 
-- **Kaya na:** nang walang untag, nasasabi ng BHW kung aling pagbabago ang tinutukoy ng tanong, tapat na nasasabi kung available na ito sa kanilang barangay, at ibinibigay ang unang hakbang: tiyakin ang kasalukuyang provider, benepisyo, at proseso ng referral sa RHU, PhilHealth, o midwife.
-- **Kailangan pa ng practice:** sinasabi ng BHW na "titiyakin natin sa RHU" pero kailangan pa ng tanong mo bago masabi kung ano mismo ang titiyakin, o aling pagbabago ang tinutukoy.
-- **Hindi pa:** nangangako ang BHW na libre o available na ang serbisyo, nagtuturo ng lugar na pagre-refer-an nang hindi tinitiyak ang lokal na proseso, o hindi maiugnay ang tanong sa alinmang pagbabago.
+## [support] Kung kailangan pa ng tulong
 
-Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Ipaulit ang role-play gamit ang tatlong kard: **clinic / benepisyo / referral contact**. Magpadala ng isang natiyak na lokal na impormasyon mula sa midwife o RHU sa susunod na sesyon at ipasanay ang pagsasabi ng hindi pa alam. Obserbahang muli sa parehong sitwasyon.
 
-## [support] Kung kailangan ng dagdag na suporta
+## [sources-review] Sanggunian at tala sa review
 
-- Ipaulit ang role-play habang nasa harap nila ang chart ng grupo na may tatlong hanay, at may cue card na *provider — benepisyo — proseso ng referral*.
-- Hilingin sa kanilang alamin mula sa midwife ang isang totoong lokal na impormasyon bago ang susunod na sesyon (halimbawa, ang kasalukuyang proseso ng referral) at iulat ito sa grupo.
-- Ipares sila sa BHW na **Kaya na** at hayaang sila ang pangalawang sumagot.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong role-play ng residente, hindi bago.
-
-## [sources-review] Sanggunian at tala sa pagrepaso
-
-- BHW Reference Manual p. 5 (PDF 13), listahan ng mga pagbabago sa ilalim ng R.A. 11223 — nakalista sa listahan ng sanggunian ng aralin bilang minanang page reference; hinihintay pa ang final audit. Day 1 presentation slide 18 (primary care provider, outpatient consult, referral system, pagsasaayos ng mga programa ng DOH). Facilitator Guide p. 14 (PDF 21).
-- Oras: 3 oras para sa competency ng module ang nasa Facilitator Guide PDF 19; "at least 3 hours" naman ang nasa PDF 21. Panatilihin ang orihinal na kabuuang oras sa gabay ng subchapter; huwag idagdag muli ang buong oras sa bawat maikling aralin. Ang 55 minuto sa itaas ay bahagi ng araling ito; mungkahi lang, hindi bahagi ng talahanayan ng module, ang paghahati sa 30 minutong "layunin at apat na pagbabago" sa pagitan ng araling ito at ng *Layunin at saklaw ng UHC*. Para sa self-study ang hating ito, hindi bagong training-hour allocation.
-- **Aling apat na pagbabago:** outpatient benefits, primary care provider, referral, at integrated (province-wide at city-wide) system ang nasa Read at slide ng araling ito. PhilHealth coverage, outpatient, primary care provider, at referral naman ang nasa gabay ng subchapter, sa indicator ng kakayahan ng subchapter, at sa visual ng apat na pagbabago. Siyam na pagbabago ang nasa Reference Manual, kasama ang "pagsasaayos ng hiwa-hiwalay na mga programang pangkalusugan ng DOH." Dapat pumili ang reviewer ng iisang set.
-- Sariling wording ng aralin ang "Layunin ng province-wide at city-wide health systems na pag-ugnayin ang mga serbisyo"; ang nasa source ay ang pagsasaayos ng hiwa-hiwalay na programa ng DOH, at nasa Facilitator Guide PDF 10 ang province-wide o city-wide health plan. Repasuhin ang kasalukuyang legal/policy wording bago ilathala.
-- Kailangan pang repasuhin: bilingual parity at observation indicator (iisang pangkalahatang indicator ang gamit sa apat na aralin). Ihiwalay ang online completion sa aktuwal na demonstrasyon.
-
-Draft for review — draft pa ito at kailangang repasuhin bago ilathala.
+- **Sinuri noong 2 Oktubre 2026:** BHW Reference Manual nakalimbag na p. 5 / PDF p. 13 ay may siyam na pagbabago sa UHC, kabilang ang napiling apat at DOH program integration. Sinasabi ng nakalimbag na p. 50 / PDF p. 65 na ang kumpletong patient navigation ay tungkulin ng doktor, nurse, o midwife at maaaring may sariling referral protocol ang lokal na pamahalaan. Nalutas na ang lumang “page audit pending” at magkaibang apat na listahan.
+- Ang RA 11223 seksiyon 4, 6, at 18; anunsiyo ng PhilHealth sa YAKAP noong 25 Hulyo 2025; PhilHealth Circular 2025-0017 tungkol sa pagpili at empanelment sa primary care clinic; at DOH National Objectives for Health 2023–2028 ang batayan ng mga pahayag sa benepisyo, pagpili ng provider, at network. Sadyang walang tiyak na listahan ng serbisyo, bayad, pangalan ng provider, o referral destination sa aralin dahil nakasalalay ang mga ito sa kasalukuyang tuntunin at lokal na kapasidad.
+- Kathang-isip ang kuwento. Inaprubahan ng may-ari ang Filipino at English na preview noong 2 Oktubre 2026. Wala pang hiwalay na pag-apruba mula sa policy o clinical SME. Mungkahi lamang ang 55 minutong paghahati sa umiiral na module plan.

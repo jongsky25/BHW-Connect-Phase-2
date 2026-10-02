@@ -1,0 +1,51 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 75.128,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Muling tanong ni Mang Ernesto kay BHW Vlanche: Saan po ako magpapacheckup? At kung may referral, saan? Hindi nanghula si Vlanche.",
+      "start_ms": 0,
+      "end_ms": 9400
+    },
+    {
+      "zone": "four-changes",
+      "index": 1,
+      "text": "Apat ang pagbabago sa gabay: PhilHealth inclusion, outpatient consultation, pagpili ng primary care provider, at referral. Natalakay na ang una; susundan nila ang tatlo pa.",
+      "start_ms": 9700,
+      "end_ms": 22260
+    },
+    {
+      "zone": "outpatient",
+      "index": 2,
+      "text": "May outpatient at primary care benefits ang PhilHealth YAKAP, ngunit may tuntunin. Aalamin ni Vlanche sa health team kung sakop ang konsultasyon ni Ernesto at sa aling accredited clinic ito makukuha.",
+      "start_ms": 22560,
+      "end_ms": 37040
+    },
+    {
+      "zone": "provider",
+      "index": 3,
+      "text": "Makapipili si Mang Ernesto ng primary care clinic. Hindi patunay ang PhilHealth inclusion na may napili na siya. Aalamin nila sa RHU o PhilHealth ang kasalukuyang pagpipilian at proseso.",
+      "start_ms": 37340,
+      "end_ms": 50620
+    },
+    {
+      "zone": "referral",
+      "index": 4,
+      "text": "Clinician ang magpapasya sa referral kung kailangan ng ibang pangangalaga. Kukunin ni Vlanche sa health team ang lokal na contact at tagubilin. Hindi siya huhula ng ospital.",
+      "start_ms": 50920,
+      "end_ms": 62320
+    },
+    {
+      "zone": "next-step",
+      "index": 5,
+      "text": "Sinabi ni Vlanche: Tiyakin natin ang inyong clinic, benepisyo, at susunod na hakbang. Kung may referral mula sa clinician, kukunin natin ang lokal na proseso. Sasamahan ko kayong magtanong sa health team.",
+      "start_ms": 62620,
+      "end_ms": 75060
+    }
+  ]
+}
