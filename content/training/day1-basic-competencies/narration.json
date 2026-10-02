@@ -81943,266 +81943,703 @@
     "uhc-primary-care": {
       "module": "02-uhc-act",
       "sections": {
-        "section-3": {
+        "bridge": {
           "en": {
-            "src": "/training/audio/02-uhc-act/uhc-primary-care/section-3.en.2806b510827e.mp3",
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/bridge.en.b0e7551183b0.mp3",
             "voice": "en-PH-RosaNeural",
-            "content_hash": "2806b510827e5d5d2c853ad4ff0972a9e7596868762e4d03f08425a2f91191c2",
-            "sha256": "b7d518f9f417b5268a001090dc3c7bbf7f5b44eeee220339990d5846378fd707",
-            "duration_seconds": 47.472,
+            "content_hash": "b0e7551183b06042a0956987aa49c36363632edfd8326cfd87861bfd02cabb0b",
+            "sha256": "ad4dc675084ea3823aa3fa16b1983e1f770615cce53ad2c93ad904dc68520be4",
+            "duration_seconds": 47.736,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Four concrete changes",
+                "text": "Four changes, one journey",
                 "start_ms": 0,
-                "end_ms": 2400
+                "end_ms": 2928
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "UHC provides for stronger primary care, including outpatient benefits, registration with a primary care provider and coordinated referral to other services.",
-                "start_ms": 2400,
-                "end_ms": 13680
+                "text": "Last time, Mang Ernesto and BHW Vlanche learned that every Filipino citizen is automatically included in the National Health Insurance Program.",
+                "start_ms": 2928,
+                "end_ms": 13104
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "A primary care provider helps navigate care; BHW Vlanche supports the resident within her training and supervision.",
-                "start_ms": 13680,
-                "end_ms": 22008
+                "text": "That is the first box in the UHC guide’s selected four-change chain: **PhilHealth inclusion, outpatient consultation, choosing a primary care provider, and a better referral system**.",
+                "start_ms": 13104,
+                "end_ms": 25176
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Province-wide and city-wide health systems are intended to coordinate services.",
-                "start_ms": 22008,
-                "end_ms": 27672
+                "text": "The BHW Reference Manual lists more changes; this story follows these four.",
+                "start_ms": 25176,
+                "end_ms": 31680
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Do not assume every service or referral arrangement is already available locally.",
-                "start_ms": 27672,
-                "end_ms": 33336
+                "text": "Now Mang Ernesto asks, ‘Where do I start, and what if I need another service?’",
+                "start_ms": 31680,
+                "end_ms": 37944
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Check the current provider, benefit and referral procedure before advising a resident.",
-                "start_ms": 33336,
-                "end_ms": 39288
+                "text": "Vlanche will not guess the answer for their barangay.",
+                "start_ms": 37944,
+                "end_ms": 41712
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "These four changes are connected — each one has to do with how a person moves from having a need to actually receiving service.",
-                "start_ms": 39288,
-                "end_ms": 47472
+                "text": "Automatic PhilHealth inclusion is the starting point; three more changes shape the next step.",
+                "start_ms": 41712,
+                "end_ms": 47736
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/02-uhc-act/uhc-primary-care/section-3.fil.5935c1555009.mp3",
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/bridge.fil.779c303aa3da.mp3",
             "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "5935c15550091ac10114326712a05f1ce8b2eca5c948a37026aab0d7d13f86fa",
-            "sha256": "28ee0b50b339842025c5cd4268db4afdae5d23d57f56def1480e7d06b843df66",
-            "duration_seconds": 50.328,
+            "content_hash": "779c303aa3da418954ddbbef25ddeef884413bb5de1bad2f8f8f1efe87e66827",
+            "sha256": "551e8f9c854499b853087d8e882ba1f2b825ced57a4863c65c2d9c7d34e989aa",
+            "duration_seconds": 50.4,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Apat na konkretong pagbabago",
+                "text": "Apat na pagbabago, isang paglalakbay",
                 "start_ms": 0,
-                "end_ms": 2664
+                "end_ms": 3264
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Itinataguyod ng UHC ang primary care, kasama ang outpatient benefits, pagpaparehistro sa primary care provider, at maayos na referral sa ibang serbisyo.",
-                "start_ms": 2664,
-                "end_ms": 13248
+                "text": "Noong huli, nalaman nina Mang Ernesto at BHW Vlanche na awtomatikong kasama ang bawat Pilipinong mamamayan sa National Health Insurance Program.",
+                "start_ms": 3264,
+                "end_ms": 13320
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Tumutulong ang primary care provider sa pag-ugnay ng pangangalaga; umaalalay si BHW Vlanche ayon sa kanyang pagsasanay at pangangasiwa.",
-                "start_ms": 13248,
-                "end_ms": 22896
+                "text": "Iyon ang unang kahon sa apat na pagbabagong pinili ng gabay sa UHC: **PhilHealth inclusion, outpatient consultation, pagpili ng primary care provider, at mas maayos na referral**.",
+                "start_ms": 13320,
+                "end_ms": 25488
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Layunin ng province-wide at city-wide health systems na pag-ugnayin ang mga serbisyo.",
-                "start_ms": 22896,
-                "end_ms": 28488
+                "text": "Marami pang pagbabagong nakalista sa BHW Reference Manual; itong apat ang sinusundan natin sa kuwento.",
+                "start_ms": 25488,
+                "end_ms": 32808
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Huwag ipalagay na available na sa lokalidad ang bawat serbisyo o referral arrangement.",
-                "start_ms": 28488,
+                "text": "Ngayon, ang tanong ni Mang Ernesto ay: ‘Saan ako magsisimula, at paano kung kailangan ko ng ibang serbisyo?’",
+                "start_ms": 32808,
+                "end_ms": 39816
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi huhulaan ni Vlanche ang sagot para sa kanilang barangay.",
+                "start_ms": 39816,
+                "end_ms": 43968
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ang awtomatikong pagsama sa PhilHealth ang panimulang punto; tatlo pang hakbang ang kailangang unawain.",
+                "start_ms": 43968,
+                "end_ms": 50400
+              }
+            ]
+          }
+        },
+        "check": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/check.en.4cdb0d2a7f8c.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "4cdb0d2a7f8c6ef0b3d8b221fc2f6c2d61cf2eafeff845109fcaeb36ed868702",
+            "sha256": "b4599929536024f58e59287581cdf6c44c47e1d36d048d24de29d5c52bdd60c3",
+            "duration_seconds": 21.072,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Choose the appropriate next step",
+                "start_ms": 0,
+                "end_ms": 2688
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mang Ernesto is unsure whether he has selected a primary care clinic.",
+                "start_ms": 2688,
+                "end_ms": 7944
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "He also asks where to go if a clinician recommends a referral.",
+                "start_ms": 7944,
+                "end_ms": 12528
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "What should Vlanche do now?",
+                "start_ms": 12528,
+                "end_ms": 14880
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Confirm the chosen clinic and local process; leave the referral decision to the clinician.",
+                "start_ms": 14880,
+                "end_ms": 21072
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/check.fil.7878057f37cd.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "7878057f37cd295d06cb17f4214e40cc37e094461480b842ad937f9ef53e64d0",
+            "sha256": "bd9da9bc8ee63bd9329b67ecc014f7b60840d8ebd4e8f4b05e077b4f724e0cc7",
+            "duration_seconds": 22.2,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Piliin ang angkop na susunod na hakbang",
+                "start_ms": 0,
+                "end_ms": 3120
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Hindi pa alam ni Mang Ernesto kung may napili na siyang primary care clinic.",
+                "start_ms": 3120,
+                "end_ms": 7824
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Nagtanong din siya kung saan siya pupunta kung magrekomenda ng referral ang clinician.",
+                "start_ms": 7824,
+                "end_ms": 13128
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ano ang dapat gawin ni Vlanche ngayon?",
+                "start_ms": 13128,
+                "end_ms": 16032
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin ang napiling clinic at lokal na proseso; ipaubaya sa clinician ang referral decision.",
+                "start_ms": 16032,
+                "end_ms": 22200
+              }
+            ]
+          }
+        },
+        "local": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/local.en.245ae9f96583.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "245ae9f965833a4c7245d4cc2e8ed653907fba84ee0e2bf96fbb5a5fd8002f1b",
+            "sha256": "ae58f1c647f81c3bfb548db29cbc9d15b040ff7690befc095f339d07bf940c73",
+            "duration_seconds": 46.488,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Vlanche’s next step",
+                "start_ms": 0,
+                "end_ms": 2208
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Vlanche tells Mang Ernesto, ‘Let us first find out whether you have chosen a primary care clinic.",
+                "start_ms": 2208,
+                "end_ms": 8832
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "We will also ask the health team which outpatient benefit and steps apply to your consultation.",
+                "start_ms": 8832,
+                "end_ms": 15000
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "If a clinician says a referral is needed, we will get the local process and contact.’",
+                "start_ms": 15000,
+                "end_ms": 21096
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "On a small note, she writes the three things to confirm: **clinic and selection; benefit and how to use it; referral contact and instructions if needed**.",
+                "start_ms": 21096,
+                "end_ms": 31296
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "She does not promise that every service is already available in the barangay.",
+                "start_ms": 31296,
+                "end_ms": 36528
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "She takes unanswered questions to the midwife or RHU.",
+                "start_ms": 36528,
+                "end_ms": 41064
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ask, confirm local details, and help the resident take the next step.",
+                "start_ms": 41064,
+                "end_ms": 46488
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/local.fil.60e801bb48e4.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "60e801bb48e4bea27b24f16f93f4e75cfe2d17242f9f2bcee9dbddf91187b910",
+            "sha256": "c458ab832f27edd4be5b8c99648c2b89d01587d1e4a6669cf483e9ccddfb9b5f",
+            "duration_seconds": 49.104,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ang susunod na hakbang ni Vlanche",
+                "start_ms": 0,
+                "end_ms": 2712
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sinabi ni Vlanche kay Mang Ernesto: ‘Alamin muna natin kung may napili na kayong primary care clinic.",
+                "start_ms": 2712,
+                "end_ms": 9120
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Itatanong din natin sa health team kung anong outpatient benefit at hakbang ang naaangkop sa inyong konsultasyon.",
+                "start_ms": 9120,
+                "end_ms": 16464
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Kung sabihin ng clinician na kailangan ng referral, hihingin natin ang lokal na proseso at contact.’",
+                "start_ms": 16464,
+                "end_ms": 22536
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa isang maliit na tala, isinulat niya ang tatlong kailangang kumpirmahin: **clinic at pagpili; benepisyo at paraan ng paggamit; referral contact at tagubilin kung kailangan**.",
+                "start_ms": 22536,
                 "end_ms": 34080
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Tiyakin muna ang kasalukuyang provider, benepisyo, at proseso bago magpayo sa residente.",
+                "text": "Hindi niya ipinangakong mayroon nang lahat ng serbisyo sa barangay.",
                 "start_ms": 34080,
-                "end_ms": 40224
+                "end_ms": 38280
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang mga hindi pa nasasagot ay dadalhin niya sa midwife o RHU.",
+                "start_ms": 38280,
+                "end_ms": 42912
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Apat itong pagbabago, at magkakaugnay — ang bawat isa ay may kinalaman sa kung paano dumadaan ang isang tao mula sa pangangailangan patungo sa serbisyo.",
-                "start_ms": 40224,
-                "end_ms": 50328
+                "text": "Magtanong, kumpirmahin ang lokal na detalye, at tulungan ang residente sa susunod na hakbang.",
+                "start_ms": 42912,
+                "end_ms": 49104
               }
             ]
           }
         },
-        "section-4": {
+        "outpatient": {
           "en": {
-            "src": "/training/audio/02-uhc-act/uhc-primary-care/section-4.en.58cde9b8ee49.mp3",
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/outpatient.en.e0f675d9d51e.mp3",
             "voice": "en-PH-RosaNeural",
-            "content_hash": "58cde9b8ee49df3f6a6689285829bb87534988dd47ecc9528ed596b4a9783a58",
-            "sha256": "a9cc2c25499af9c4a4aa39a8b273b276413aab9dfadfd9a7d451679b95efcaca",
-            "duration_seconds": 54.288,
+            "content_hash": "e0f675d9d51eb897d720c2339a5c5551135e08865c3aeb484be4211724cb9b0c",
+            "sha256": "9b9c61379232e0daa137607375243dbbe7b5aed5b04650e45beb06e036253872",
+            "duration_seconds": 45.264,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Which of this is already happening for us?",
+                "text": "What is an outpatient benefit?",
                 "start_ms": 0,
-                "end_ms": 3240
+                "end_ms": 2736
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Back to Mang Ernesto and Vlanche.",
-                "start_ms": 3240,
-                "end_ms": 6312
+                "text": "Outpatient care does not require hospital admission; a primary care consultation is one example.",
+                "start_ms": 2736,
+                "end_ms": 9768
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Of the four changes you just learned, not all of them arrive at the same pace in every barangay — some are already felt, some are not yet.",
-                "start_ms": 6312,
-                "end_ms": 15576
+                "text": "PhilHealth’s current YAKAP primary care package covers specified services under its rules.",
+                "start_ms": 9768,
+                "end_ms": 17160
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Try it: think about your own barangay.",
-                "start_ms": 15576,
-                "end_ms": 18816
+                "text": "That does not mean every test, medicine, or consultation is available at any facility.",
+                "start_ms": 17160,
+                "end_ms": 23904
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Is everyone there already automatically covered by PhilHealth?",
-                "start_ms": 18816,
-                "end_ms": 23328
+                "text": "Vlanche asks which service Mang Ernesto is seeking, then checks with PhilHealth or the health team whether it is covered, at which accredited clinic, and what steps apply.",
+                "start_ms": 23904,
+                "end_ms": 35280
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Do you know anyone registered with a primary care provider?",
-                "start_ms": 23328,
-                "end_ms": 27336
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "If someone needs a referral, is the process clear, or is there still confusion about where to go?",
-                "start_ms": 27336,
-                "end_ms": 33888
-              },
-              {
-                "zone": "body",
-                "index": 6,
-                "text": "It is not a failure if your answer to some of these is \"not yet\" — that is exactly the first step: knowing what has actually arrived in your own area before deciding what should happen next.",
-                "start_ms": 33888,
-                "end_ms": 45768
+                "text": "A health professional decides the appropriate clinical care.",
+                "start_ms": 35280,
+                "end_ms": 39480
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Before proposing an improvement, first get clear on which changes have actually reached your own barangay, and which have not.",
-                "start_ms": 45768,
-                "end_ms": 54288
+                "text": "Outpatient care is a benefit with rules; check the specific service and facility.",
+                "start_ms": 39480,
+                "end_ms": 45264
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/02-uhc-act/uhc-primary-care/section-4.fil.07606a6e9613.mp3",
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/outpatient.fil.623b6e177373.mp3",
             "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "07606a6e9613198f7c79f084de4252db65b71f8ffc2c26888b6e435df3c1f175",
-            "sha256": "ef7f0e1accbb8c2d56e9170d057ac78d3735bbb9c42fcff45da0d69a8118bc21",
-            "duration_seconds": 53.76,
+            "content_hash": "623b6e177373b7633cf19d0f50dd58f7c467f9ed27e77f776db4bc28986452cc",
+            "sha256": "090dc1622c798dde1cd0a2b1edaed639538ff80ec7ea83728ddfcb670fe44555",
+            "duration_seconds": 47.4,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Alin dito ang nangyayari na sa amin?",
+                "text": "Ano ang outpatient benefit?",
                 "start_ms": 0,
-                "end_ms": 2904
+                "end_ms": 2472
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Bumalik tayo kina Mang Ernesto at Vlanche.",
-                "start_ms": 2904,
-                "end_ms": 6192
+                "text": "Ang outpatient ay pangangalagang hindi nangangailangan ng pagpapaospital, gaya ng konsultasyon sa primary care.",
+                "start_ms": 2472,
+                "end_ms": 9312
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Sa apat na pagbabagong natutunan mo, hindi lahat ay parehong bilis dumating sa bawat barangay — may bago nang naramdaman, may hindi pa lubos.",
-                "start_ms": 6192,
-                "end_ms": 14976
+                "text": "Saklaw ng kasalukuyang PhilHealth YAKAP primary care package ang mga partikular na serbisyo sa ilalim ng mga tuntunin nito.",
+                "start_ms": 9312,
+                "end_ms": 17832
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Subukan mo: isipin ang sariling barangay mo.",
-                "start_ms": 14976,
-                "end_ms": 18504
+                "text": "Hindi ibig sabihin nito na makukuha ang bawat pagsusuri, gamot, o konsulta sa kahit anong pasilidad.",
+                "start_ms": 17832,
+                "end_ms": 24624
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Saklaw na ba ng PhilHealth nang awtomatiko ang lahat dito?",
-                "start_ms": 18504,
-                "end_ms": 22248
+                "text": "Tatanungin ni Vlanche kung anong serbisyo ang kailangan ni Mang Ernesto at titiyakin sa PhilHealth o health team kung sakop ito, sa aling accredited clinic, at ano ang kailangang proseso.",
+                "start_ms": 24624,
+                "end_ms": 36264
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "May kilala ka bang nakarehistro na sa primary care provider?",
-                "start_ms": 22248,
-                "end_ms": 26136
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "Kung may kailangang i-refer, malinaw ba ang proseso, o nalilito pa rin kung saan dapat pumunta?",
-                "start_ms": 26136,
-                "end_ms": 32088
-              },
-              {
-                "zone": "body",
-                "index": 6,
-                "text": "Hindi kahihiyan kung \"hindi pa lubos\" ang sagot mo sa ilan dito — iyon mismo ang unang hakbang: alamin muna kung alin ang totoong nangyayari sa iyong lugar bago mo isipin kung ano ang dapat pang gawin.",
-                "start_ms": 32088,
-                "end_ms": 44544
+                "text": "Ang health professional ang magtatakda ng angkop na klinikal na pangangalaga.",
+                "start_ms": 36264,
+                "end_ms": 41160
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Bago magmungkahi ng pagpapabuti, kailangan munang malinaw kung alin sa mga pagbabago ang totoong dumating na sa sariling barangay, at alin ang hindi pa.",
-                "start_ms": 44544,
-                "end_ms": 53760
+                "text": "Benepisyo ang outpatient care na may tuntunin; tiyakin ang partikular na serbisyo at pasilidad.",
+                "start_ms": 41160,
+                "end_ms": 47400
+              }
+            ]
+          }
+        },
+        "provider": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/provider.en.bbaaf41398d8.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "bbaaf41398d8c97cf3cc081eb4a8579f9f4056a90fc0c9295ccfacbe32b5bb36",
+            "sha256": "53a87d492b0eca3489feb977718f34557dd11cef00754dc58cd4efca2a4ca59f",
+            "duration_seconds": 50.952,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Which primary care clinic was chosen?",
+                "start_ms": 0,
+                "end_ms": 3192
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Under the UHC Act, every Filipino is to choose and register with a public or private primary care provider.",
+                "start_ms": 3192,
+                "end_ms": 11064
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "PhilHealth’s current rules provide a process for selecting an accredited YAKAP primary care clinic and completing a first patient encounter.",
+                "start_ms": 11064,
+                "end_ms": 20280
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Automatic PhilHealth inclusion does not mean a clinic has already been selected.",
+                "start_ms": 20280,
+                "end_ms": 25632
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Vlanche asks whether Mang Ernesto has chosen one; if he is unsure, she helps him ask the RHU, PhilHealth, or health team about current choices and how to select.",
+                "start_ms": 25632,
+                "end_ms": 37584
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Mang Ernesto chooses.",
+                "start_ms": 37584,
+                "end_ms": 40176
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Vlanche does not choose for him or name a clinic she has not confirmed.",
+                "start_ms": 40176,
+                "end_ms": 45144
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Check whether a clinic was selected and how to choose; respect the resident’s choice.",
+                "start_ms": 45144,
+                "end_ms": 50952
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/provider.fil.3bd50ad7e1b1.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "3bd50ad7e1b1f15e26d6035176f4e75e1ea3cfc96abdf989d2beed2e5ec98aaf",
+            "sha256": "b4ecc723452ab2729825aa6e6376c782287d28c88e48b6c1ae33c6ee47de3237",
+            "duration_seconds": 52.152,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Alin ang napiling primary care clinic?",
+                "start_ms": 0,
+                "end_ms": 2880
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa ilalim ng UHC Act, dapat makapili at makapagparehistro ang bawat Pilipino sa pampubliko o pribadong primary care provider.",
+                "start_ms": 2880,
+                "end_ms": 11832
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sa kasalukuyang patakaran ng PhilHealth, may proseso para sa pagpili ng accredited YAKAP primary care clinic at unang patient encounter.",
+                "start_ms": 11832,
+                "end_ms": 20856
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi awtomatikong ibig sabihin ng PhilHealth inclusion na napili na ang clinic.",
+                "start_ms": 20856,
+                "end_ms": 25896
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Itatanong ni Vlanche kung may napili na si Mang Ernesto; kung hindi niya alam, tutulungan siyang itanong sa RHU, PhilHealth, o health team ang mga kasalukuyang pagpipilian at paraan ng pagpili.",
+                "start_ms": 25896,
+                "end_ms": 38544
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Si Mang Ernesto ang pipili; hindi pipili si Vlanche para sa kanya at hindi magpapangalan ng clinic na hindi pa natiyak.",
+                "start_ms": 38544,
+                "end_ms": 46272
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin kung may napiling clinic at paano makapipili; igalang ang pagpili ng residente.",
+                "start_ms": 46272,
+                "end_ms": 52152
+              }
+            ]
+          }
+        },
+        "referral": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/referral.en.bf97fccf73e2.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "bf97fccf73e216c26344e6baadff59afdb76060647c121c829958a7dd5682e44",
+            "sha256": "ce075f06994d66728c244c5052f5eada26193ef009fa19eb972ce6a1cc4cbbee",
+            "duration_seconds": 45.24,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Who decides on a referral?",
+                "start_ms": 0,
+                "end_ms": 2544
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "UHC aims to connect services better, including reorganizing previously separate health programs and improving movement between levels of care.",
+                "start_ms": 2544,
+                "end_ms": 12192
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Local governments may have their own referral protocols.",
+                "start_ms": 12192,
+                "end_ms": 16368
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "A doctor, nurse, or midwife guides the patient and decides the clinical need and appropriate referral.",
+                "start_ms": 16368,
+                "end_ms": 23400
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Vlanche’s role is to ask them for the current local contact, communication method, and instructions for the resident.",
+                "start_ms": 23400,
+                "end_ms": 31344
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "She does not decide which condition needs hospital care or which facility will receive the patient.",
+                "start_ms": 31344,
+                "end_ms": 37776
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "A health professional makes clinical referral decisions; the BHW supports the local instructions.",
+                "start_ms": 37776,
+                "end_ms": 45240
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-primary-care/referral.fil.a599d08ada06.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "a599d08ada06dba8a0fd7f7c7da98592338084dac7809e7ef127ec3db768cef5",
+            "sha256": "a7ff0bf99b3e23d2fd7fb462ffc006db42c16657599630212b49ec66edaa73d4",
+            "duration_seconds": 50.928,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Sino ang nagpapasya sa referral?",
+                "start_ms": 0,
+                "end_ms": 2736
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Layunin ng UHC ang mas magkakaugnay na serbisyo, kabilang ang pag-aayos ng dating hiwa-hiwalay na mga programang pangkalusugan at mas maayos na paglipat sa ibang antas ng pangangalaga.",
+                "start_ms": 2736,
+                "end_ms": 14352
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Ngunit maaaring may sariling referral protocol ang lokal na pamahalaan.",
+                "start_ms": 14352,
+                "end_ms": 19248
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ang doktor, nurse, o midwife ang gagabay sa pasyente at magpapasya sa klinikal na pangangailangan at angkop na pagre-refer.",
+                "start_ms": 19248,
+                "end_ms": 27408
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang tungkulin ni Vlanche ay alamin sa kanila ang kasalukuyang lokal na contact, paraan ng pakikipag-ugnayan, at tagubilin para sa residente.",
+                "start_ms": 27408,
+                "end_ms": 36216
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi siya magpapasya kung anong kondisyon ang dapat dalhin sa ospital o kung saang pasilidad ito tatanggapin.",
+                "start_ms": 36216,
+                "end_ms": 43128
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ang health professional ang nagpapasya sa klinikal na referral; ang BHW ay umaalalay ayon sa lokal na tagubilin.",
+                "start_ms": 43128,
+                "end_ms": 50928
               }
             ]
           }

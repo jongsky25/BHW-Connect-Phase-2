@@ -16,7 +16,9 @@ The original Remotion story reuses the approved fictional Vlanche and Mang Ernes
 
 On 2026-10-02, the owner approved the two previews and requested live deployment. The story asset is marked `approved`; no independent policy or clinical SME approval is recorded. The lesson's original Filipino and English objective strings are preserved because the live loader treats lesson metadata as immutable. The revised specific learning targets are in Read, Slides, and facilitator guidance.
 
-Approved revision hash: `0eb6a540ca6b499255b3ec1be79b540dd8b45f6d784ae90255f0542933fdbf68`.
+Approved revision hash from the Linux loader dry run: `a5d60864e73ab0047227a042cb3efed9eca4ea4f552c801e197e60daec05a28b`. Windows CRLF checkout of the facilitator Markdown yields a different local hash; the Linux loader hash is the publication target.
+
+The revised Read sections have committed bilingual sentence narration in `narration.json` and `public/training/audio/02-uhc-act/uhc-primary-care/`. These use the established Read voice provider. The animated story videos use Gemini, as approved.
 
 ## Publication scope
 
