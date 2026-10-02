@@ -18,6 +18,12 @@ import {
   ServiceProviderStory,
   calculateServiceProviderMetadata,
 } from "./service-provider/ServiceProviderStory";
+import {
+  COMMUNITY_ORGANIZER_FALLBACK_DURATION,
+  COMMUNITY_ORGANIZER_FPS,
+  CommunityOrganizerStory,
+  calculateCommunityOrganizerMetadata,
+} from "./community-organizer/CommunityOrganizerStory";
 
 // Compositions are authored at the lesson format (854×480, see
 // scripts/remotion-render.mjs) so the render needs no scaling. One
@@ -41,6 +47,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateHandrubMetadata}
           durationInFrames={HANDRUB_FALLBACK_DURATION}
           fps={HANDRUB_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`community-organizer-${language}`}
+          id={language === "fil" ? "CommunityOrganizerStoryFil" : "CommunityOrganizerStoryEn"}
+          component={CommunityOrganizerStory}
+          calculateMetadata={calculateCommunityOrganizerMetadata}
+          durationInFrames={COMMUNITY_ORGANIZER_FALLBACK_DURATION}
+          fps={COMMUNITY_ORGANIZER_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}
