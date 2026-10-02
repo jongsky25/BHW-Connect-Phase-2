@@ -1,9 +1,10 @@
 # Narrated lesson video pattern
 
 Use this for Chapter I lessons after the 1.1.5 pilot. The learner's controls
-are **Basahin · Slides · Video · Buong screen**. Video is a separate, optional
-view and mounts only when selected. Full screen opens the selected view. Read
-keeps its own section-level expressive narration; Slides keeps its own text.
+are **Basahin · Slides · Kuwentong may salaysay · Buong screen**. The narrated
+story is a separate, optional view and mounts only when selected. Read and the
+first slide link directly to it. Full screen opens the selected view. Read
+keeps its own section-level narration; Slides keeps its own text.
 
 ## Authoring
 
@@ -15,6 +16,9 @@ keeps its own section-level expressive narration; Slides keeps its own text.
    provider for that revision; do not mix voices within one cut. Keep exact
    words in the script and save each voice track and measured beat timings
    under `remotion/public/<story>/`.
+   When a named-character revision changes the script, regenerate with the
+   same reviewed provider and record it in asset provenance. Do not substitute
+   Edge Read Aloud for an approved Gemini story during a character edit.
 3. Make one Remotion composition per language. Use the measured timings for
    scene pacing and a final summary frame for the poster. Render at 854×480,
    H.264 with audio and language-matched WebVTT captions using
@@ -24,9 +28,9 @@ keeps its own section-level expressive narration; Slides keeps its own text.
    `videos.fil` / `videos.en` paths, hashes, durations, and caption paths.
    Keep new media at `review_status: draft` until the owner reviews it. The
    loader does not promote draft media.
-5. Leave the existing Read narration unchanged unless Read copy changes. A
-   video script change requires new voice, timing, captions, video, and
-   content-hashed public paths. Avoid replacing immutable media in place.
+5. Keep the reviewed Read narration provider when Read copy changes. A video
+   script change requires new voice, timing, captions, video, and content-hashed
+   public paths. Avoid replacing immutable media in place.
 
 ## Review and release
 

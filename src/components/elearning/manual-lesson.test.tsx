@@ -17,13 +17,13 @@ describe('route lesson viewer',()=>{
       const {container}=render(<ReferenceLessons {...videoLesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
       expect(container.querySelector('video')).not.toBeInTheDocument();
       expect(screen.getByRole('heading',{name:'first'})).toBeInTheDocument();
-      fireEvent.click(screen.getByRole('button',{name:'Video'}));
+      fireEvent.click(screen.getByRole('button',{name:'Narrated story'}));
       expect(container.querySelector('video source')).toHaveAttribute('src','/records-en.mp4');
       expect(screen.queryByRole('heading',{name:'first'})).not.toBeInTheDocument();
       fireEvent.click(screen.getByRole('button',{name:'Slides'}));
       expect(container.querySelector('video')).not.toBeInTheDocument();
       expect(screen.getByText('Slide content')).toBeInTheDocument();
-      fireEvent.click(screen.getByRole('button',{name:'Video'}));
+      fireEvent.click(screen.getByRole('button',{name:'Narrated story'}));
       fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
       const dialog=container.querySelector('dialog')!;
       expect(dialog.querySelector('video source')).toHaveAttribute('src','/records-en.mp4');

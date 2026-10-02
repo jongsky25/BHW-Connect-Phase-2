@@ -236,7 +236,7 @@ export function ReferenceLessons(props: Props) {
     ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
     : undefined;
   const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
-  const narratedStory = lesson?.lesson_key === "uhc-primary-care" && Boolean(featuredVideo?.videos);
+  const narratedStory = Boolean(featuredVideo?.videos);
   const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
   const videoLabel = narratedStory
     ? ui("Kuwentong may salaysay", "Narrated story")
