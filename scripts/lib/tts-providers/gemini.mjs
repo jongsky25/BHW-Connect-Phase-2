@@ -59,6 +59,11 @@ export const RECORDS_STORY_STYLES = {
   en: "Speak in natural Philippine English as an animated, warm community health storyteller. Give Marites's question lively curiosity, then emphasize each record's distinct purpose with clear, varied pitch and pace. Slow slightly for checking uncertain details and the safe handoff. Keep the delivery respectful and easy to follow. Do not add or change words.",
 };
 
+export const UHC_COVERAGE_STORY_STYLES = {
+  fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health storyteller. Give Mang Ernesto's question genuine curiosity and Vlanche's response a calm, reassuring tone. Use gentle changes in pitch and pace to distinguish the promise of UHC from the practical details she must check. Keep every benefit statement careful and clear. Do not add or change words.",
+  en: "Speak in natural Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto's question genuine curiosity and Vlanche's response a calm, reassuring tone. Use gentle changes in pitch and pace to distinguish the promise of UHC from the practical details she must check. Keep every benefit statement careful and clear. Do not add or change words.",
+};
+
 // The voice string recorded in content_hash for Gemini renders, so switching
 // provider re-renders a section instead of skipping it as unchanged.
 export function geminiVoiceId(model = GEMINI_TTS_MODEL, voice = GEMINI_VOICE) {
