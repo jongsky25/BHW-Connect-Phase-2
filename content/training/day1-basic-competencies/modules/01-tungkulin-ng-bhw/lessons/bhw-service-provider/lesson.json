@@ -283,6 +283,38 @@
       "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
       "review_status": "approved",
       "content_hash": "e058d004a5e503ea9821b772a3c55148b3585f76c6e9aeaed6362fc61af4bf1c"
+    },
+    {
+      "id": "service-provider-story",
+      "path": "/training/bhw-1-1/service-provider-story-fil-5a789846d579-poster.jpg",
+      "content_hash": "5a789846d579f72ffa177035ed1fe9c0f91e546320fe4ede9a2d332c01926289",
+      "alt_fil": "Lumapit si Aling Nena kay Marites tungkol sa anak niya. Nagtanong at nakinig si Marites, nanatili sa saklaw ng kanyang pagsasanay, humingi ng gabay sa midwife kapag hindi tiyak, ipinaliwanag ang susunod na hakbang, at nag-follow-up ayon sa tagubilin ng health team.",
+      "alt_en": "Aling Nena approaches Marites about her child. Marites asks and listens, stays within her training, seeks the midwife's guidance when unsure, explains the next step, and follows the health team's instructions for follow-up.",
+      "caption_fil": "Kathang-isip na halimbawa nina Marites at Aling Nena. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example with Marites and Aling Nena. The animated video has Filipino and English narration and captions.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/service-provider) for lesson 1.1.4. Narration script and measured beat timings are in remotion/src/service-provider/narration.ts and remotion/public/service-provider. Voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow narration timings. Draft for owner review; no treatment is depicted or instructed.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-1/service-provider-story-fil-cafea93cdd16.mp4",
+          "content_hash": "cafea93cdd16844b4add2cf1ab8fd0198c8fdcf7d0891c8597e774aa7d2661aa",
+          "duration_s": 65,
+          "captions": {
+            "path": "/training/bhw-1-1/service-provider-story-fil-7017cb2d2308.vtt",
+            "content_hash": "7017cb2d23086ba36dc397e875dd74c30b2357e3ff1ac750f47ab6cbe050f666"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-1/service-provider-story-en-29763039c2c7.mp4",
+          "content_hash": "29763039c2c77cdf2aabed43232bd02c2e20dbcee01cae041d56281b082f3851",
+          "duration_s": 54,
+          "captions": {
+            "path": "/training/bhw-1-1/service-provider-story-en-29b4a1bb30ea.vtt",
+            "content_hash": "29b4a1bb30eae384fc56309cc35a353c0e7e87bbb67cdbf88b7b38b7267052f1"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "service-provider-story"
 }

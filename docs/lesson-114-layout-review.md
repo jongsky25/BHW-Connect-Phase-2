@@ -26,3 +26,22 @@ The large type story layout used in lessons 1.1.1–1.1.3 now also covers 1.1.4 
 - The owner confirmed on 2026-10-01 that everything in this 1.1.4 revision was reviewed and approved, and authorized live deployment. That approval covers the submitted Filipino and English Read and Slides copy, practice check, facilitator material, illustration, and twelve Gemini narration tracks. It does not assert a separate independent clinical review.
 - The narration manifest and published lesson text must match exactly. Any later copy change requires re-rendering affected tracks.
 - Merge, production deployment, and course publication are separate release actions and must be verified after this approval record.
+
+## Animated Video view draft — 2026-10-02
+
+The on-demand Video view introduced with lesson 1.1.5 is now authored for
+1.1.4. A six-beat Remotion story follows the approved sequence: first contact,
+listening, staying within training and supervision, explaining the next step,
+following up with the health team, and applying that sequence to a medicine
+question beyond Marites's training. It adds no treatment directions or fixed
+referral route. Filipino and English versions use separately synthesized
+expressive Gemini narration, measured beat timing, captions, and a shared
+bilingual summary poster. The script is in
+`remotion/src/service-provider/narration.ts`; timing and voice files are in
+`remotion/public/service-provider/`. The existing approved Read and Slides
+content and twelve Read narration tracks are unchanged.
+
+The new `service-provider-story` asset remains **draft**. Review both videos
+for language, pacing, caption accuracy, legibility, and the scope/referral
+boundary before approving and publishing this revision. The prior approval
+above did not include this new video.
