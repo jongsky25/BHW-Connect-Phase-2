@@ -39,6 +39,11 @@ export const ORGANIZER_STORY_STYLES = {
   en: "Speak in natural Philippine English as an engaging community health storyteller. Sound lively, warm, and expressive, with gentle changes in pitch and pace. Give the residents' responses and Marites's decisions human interest while keeping health guidance clear and respectful. Do not add or change words.",
 };
 
+export const HEALTH_EDUCATOR_STORY_STYLES = {
+  fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health educator. Sound curious as Marites listens to residents, then encouraging as she includes different ages and groups. Use gentle changes in pitch and pace. Keep the guidance clear and respectful. Do not add or change words.",
+  en: "Speak in natural Philippine English as a warm, expressive community health educator. Sound curious as Marites listens to residents, then encouraging as she includes different ages and groups. Use gentle changes in pitch and pace. Keep the guidance clear and respectful. Do not add or change words.",
+};
+
 export const SERVICE_PROVIDER_STORY_STYLES = {
   fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health storyteller. Make Marites's listening and Aling Nena's concern feel human, with gentle changes in pitch and pace. Keep the guidance calm, clear, and respectful. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, expressive community health storyteller. Make Marites's listening and Aling Nena's concern feel human, with gentle changes in pitch and pace. Keep the guidance calm, clear, and respectful. Do not add or change words.",

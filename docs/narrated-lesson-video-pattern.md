@@ -42,3 +42,5 @@ Lesson 1.1.5 is the first released example in `remotion/src/records/`. Lesson
 was approved by the owner on 2026-10-02.
 Lesson 1.1.3 uses the same pattern in `remotion/src/community-organizer/`;
 its bilingual video was approved by the owner on 2026-10-02.
+Lesson 1.1.2 follows in `remotion/src/health-educator/`; its new video remains
+a review draft.
