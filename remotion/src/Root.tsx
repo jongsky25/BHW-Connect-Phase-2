@@ -24,6 +24,12 @@ import {
   CommunityOrganizerStory,
   calculateCommunityOrganizerMetadata,
 } from "./community-organizer/CommunityOrganizerStory";
+import {
+  HEALTH_EDUCATOR_FALLBACK_DURATION,
+  HEALTH_EDUCATOR_FPS,
+  HealthEducatorStory,
+  calculateHealthEducatorMetadata,
+} from "./health-educator/HealthEducatorStory";
 
 // Compositions are authored at the lesson format (854×480, see
 // scripts/remotion-render.mjs) so the render needs no scaling. One
@@ -47,6 +53,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateHandrubMetadata}
           durationInFrames={HANDRUB_FALLBACK_DURATION}
           fps={HANDRUB_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`health-educator-${language}`}
+          id={language === "fil" ? "HealthEducatorStoryFil" : "HealthEducatorStoryEn"}
+          component={HealthEducatorStory}
+          calculateMetadata={calculateHealthEducatorMetadata}
+          durationInFrames={HEALTH_EDUCATOR_FALLBACK_DURATION}
+          fps={HEALTH_EDUCATOR_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}

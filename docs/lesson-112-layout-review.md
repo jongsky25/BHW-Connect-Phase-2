@@ -25,3 +25,25 @@ The new image is `public/training/bhw-1-1/health-educator-c9c658e97d1e.png` (SHA
 - Read all five sections and Slides in Filipino and English on a phone.
 - Check the full-screen portrait and landscape layouts, including the feedback after an answer.
 - Confirm that the illustration supports the learning target without implying that one group receives the same message as every other group.
+
+## Animated Video view — owner approved
+
+Lesson 1.1.2 now follows the Chapter I video pattern: Basahin, Slides, Video,
+and Buong screen. Video mounts only when chosen. The published Read narration,
+Slides text, and learner progress rules remain unchanged. The owner approved
+the Filipino and English cuts on 2026-10-02.
+
+Six animated beats show Marites listening before explaining, choosing approved
+material about the body and surroundings, adapting to different life stages,
+noticing who the health talk missed, inviting young people on terms that work
+for them, and summing up the Health Educator role. The script is in
+`remotion/src/health-educator/narration.ts`; measured Gemini voice and beat
+timings are in `remotion/public/health-educator/`. Each language has its own
+video and WebVTT captions.
+The approved cuts run 84 seconds in Filipino and 76 seconds in English at
+854×480, with H.264 video and AAC narration.
+
+Review points included exact wording and pronunciation, audio pace, caption
+timing, phone legibility, and the final summary. The video does not turn the
+example into detailed clinical guidance or imply a single message suits every
+age group. The owner approved pilot publication on 2026-10-02.
