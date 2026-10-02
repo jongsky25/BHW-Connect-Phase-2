@@ -29,4 +29,6 @@ Watch now contains a six-beat Remotion animation about choosing among four recor
 - Listen to the Read and video narration in both languages. The Read narration manifest must match the final lesson text exactly; copy changes require affected tracks to be rendered again. Video script changes require regenerating the corresponding audio, timing, captions, and video.
 - Keep fictional examples free of real personal details and review status in authoring material, not learner-facing copy.
 
-This revision is a draft for review. Course publication and production deployment require separate verification after approval.
+## Release authorization — 2026-10-02
+
+The owner approved the completed 1.1.5 content, expressive Read narration, and Filipino and English animated videos, and reported that experts had reviewed them. This approval covers the exact authored lesson revision hash `c97510da1f3e5bdd6b9e11e8472636d7cf61d1e5f49bb3ab90723079acdf7591`. The `records-story` asset is marked approved; its media hashes and script are unchanged from the reviewed draft. The owner also authorized merging, production deployment, and publication of this lesson to the live pilot course. The technical release and live verification are recorded separately from this approval.
