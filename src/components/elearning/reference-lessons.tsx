@@ -207,6 +207,15 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Ang tanong ni Mang Ernesto tungkol sa UHC", "Mang Ernesto's question about UHC"),
           }
+      : lesson?.lesson_key === "uhc-primary-care"
+        ? {
+            src: "/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png",
+            alt: ui(
+              "Nakikinig si BHW Vlanche kay Mang Ernesto sa labas ng barangay health station habang pinag-uusapan nila ang susunod na hakbang.",
+              "BHW Vlanche listens to Mang Ernesto outside a barangay health station as they discuss his next step.",
+            ),
+            caption: ui("Tiyakin ang susunod na hakbang", "Confirm the next step"),
+          }
       : null;
   const storyLayout = storyArt !== null;
   const items = lesson
@@ -227,6 +236,11 @@ export function ReferenceLessons(props: Props) {
     ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
     : undefined;
   const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
+  const narratedStory = lesson?.lesson_key === "uhc-primary-care" && Boolean(featuredVideo?.videos);
+  const storyVideoPrompt = narratedStory && index === 0 && Boolean(item);
+  const videoLabel = narratedStory
+    ? ui("Kuwentong may salaysay", "Narrated story")
+    : "Video";
   const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
   const revealSummary = !item?.check || answer !== undefined;
   const promptShownInBody = item && "body_fil" in item && item.check
@@ -457,6 +471,11 @@ export function ReferenceLessons(props: Props) {
           <figcaption>{storyArt.caption}</figcaption>
         </figure>}
         <div className={storyLayout ? "reference-story-copy" : undefined}>
+        {storyVideoPrompt && <button type="button"
+          className="mb-4 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 text-left font-semibold text-primary-text hover:bg-primary/20"
+          onClick={() => setVideoSelected(true)}>
+          {ui("▶ Panoorin ang animadong kuwento na may salaysay", "▶ Watch the animated narrated story")}
+        </button>}
         {"display_fil" in item ? (
           <>
             <h2 tabIndex={-1} ref={heading} className={storyLayout ? "reference-story-title" : "text-xl font-semibold"}>
@@ -534,7 +553,10 @@ export function ReferenceLessons(props: Props) {
   );
   const videoContent = featuredVideo && lesson && (
     <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
-      <p className="mb-1 text-sm font-semibold">{ui("Panoorin", "Watch")}</p>
+      <p className="mb-1 text-sm font-semibold">{narratedStory ? videoLabel : ui("Panoorin", "Watch")}</p>
+      {narratedStory && <p className="text-sm">
+        {ui("Pindutin ang Play para marinig ang salaysay sa napiling wika.", "Press Play to hear the story in your selected language.")}
+      </p>}
       <LessonAssetFigure
         asset={featuredVideo}
         en={en}
@@ -658,7 +680,7 @@ export function ReferenceLessons(props: Props) {
               {featuredVideo && <button type="button"
                 className="rounded border border-ink/20 px-4 py-2 aria-pressed:bg-primary aria-pressed:text-on-primary"
                 aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}>
-                {ui("Video", "Video")}
+                {videoLabel}
               </button>}
               <button
                 type="button"
@@ -795,7 +817,7 @@ export function ReferenceLessons(props: Props) {
               ))}
               {featuredVideo && <button type="button" aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}
                 className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
-                Video
+                {videoLabel}
               </button>}
             </div>
             <div className="lesson-reader-orientation col-span-2 row-start-2 flex justify-center gap-2" role="group" aria-label={ui("Oryentasyon", "Orientation")}>
