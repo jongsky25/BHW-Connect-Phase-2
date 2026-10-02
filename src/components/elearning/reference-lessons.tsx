@@ -65,11 +65,17 @@ type Props = ReferenceData & {
   onComplete: (lesson: PublishedLesson) => Promise<void>;
 };
 
-function Practice({ check, en, answer, onAnswer }: { check: LessonCheck; en: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {
+function repeatsCheckPrompt(body: string, prompt: string) {
+  const lastParagraph = body.trim().split(/\n\s*\n/).at(-1) ?? "";
+  const normalize = (text: string) => text.replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
+  return normalize(lastParagraph) === normalize(prompt);
+}
+
+function Practice({ check, en, promptShownInBody, answer, onAnswer }: { check: LessonCheck; en: boolean; promptShownInBody: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {
   return (
     <fieldset className="mt-5 rounded-lg border border-ink/20 p-4">
       <legend className="font-semibold">
-        {en ? check.prompt_en : check.prompt_fil}
+        {promptShownInBody ? (en ? "Choose an answer" : "Pumili ng sagot") : en ? check.prompt_en : check.prompt_fil}
       </legend>
       <div className="flex flex-col gap-2">
         {check.options.map((o, i) => (
@@ -204,7 +210,10 @@ export function ReferenceLessons(props: Props) {
   const featuredOk = !featuredAsset || Boolean(lesson && featuredWatched[lesson.id]);
   const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered && featuredOk;
   const revealSummary = !item?.check || answer !== undefined;
-  const practice = item?.check ? <Practice check={item.check} en={en} answer={answer}
+  const promptShownInBody = item && "body_fil" in item && item.check
+    ? repeatsCheckPrompt(en ? item.body_en : item.body_fil, en ? item.check.prompt_en : item.check.prompt_fil)
+    : false;
+  const practice = item?.check ? <Practice check={item.check} en={en} promptShownInBody={Boolean(promptShownInBody)} answer={answer}
     onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/> : null;
   const figures =
     lesson && item
