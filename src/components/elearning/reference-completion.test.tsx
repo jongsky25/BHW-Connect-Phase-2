@@ -9,6 +9,17 @@ function data():ReferenceData{return {title_fil:'Manual',title_en:'Manual',chapt
 const button=()=>screen.getByRole('button',{name:'Mark lesson complete'});
 function view(d=data(),complete=vi.fn().mockResolvedValue(undefined),extra={}) {return render(<ReferenceLessons {...d} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" nextLessonHref="/lessons/next" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={complete} {...extra}/>);}
 describe('formative lesson completion',()=>{
+  it('shows a repeated Read check question once and keeps the full question in Slides',()=>{
+    const d=data();
+    d.lessons[0].revision.read_sections=[{...part('check',true),body_en:check.prompt_en,body_fil:check.prompt_fil}];
+    view(d,vi.fn(),{locale:'fil'});
+    expect(screen.getAllByText(check.prompt_fil)).toHaveLength(1);
+    expect(screen.getByText('Pumili ng sagot')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+    fireEvent.click(screen.getByRole('button',{name:'Susunod'}));
+    expect(screen.getByText(check.prompt_fil)).toBeInTheDocument();
+    expect(screen.queryByText('Pumili ng sagot')).not.toBeInTheDocument();
+  });
   it('shows prominent, explicit feedback after a choice in Read and Slides',()=>{
     view();
     fireEvent.click(screen.getByRole('button',{name:'Guess'}));
