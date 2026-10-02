@@ -279,31 +279,31 @@
     },
     {
       "id": "roles-hepo-story",
-      "path": "/training/bhw-1-1/roles-hepo-riza-fil-5e4920aab7ea-poster.jpg",
-      "content_hash": "5e4920aab7ea9cf2da6545c5a9fc55c8d66820e13f59e73eaefbced942465b46",
+      "path": "/training/bhw-1-1/roles-hepo-riza-gemini-fil-dbe48558bcbf-poster.jpg",
+      "content_hash": "dbe48558bcbf5e21a8dd04d50f365a1fb8ff7e20fd19d6668115d24f35bf146f",
       "alt_fil": "Sa isang umaga, nagtuturo si Riza, inaanyayahan ang mga residente na magplano, at ginagabayan si Aling Nena na makausap ang midwife. Magkakaugnay ang tatlong gawaing ito sa papel ng BHW at HEPO.",
       "alt_en": "In one morning, Riza teaches, invites residents to plan, and helps Aling Nena contact the midwife. These three duties connect in the BHW and HEPO role.",
       "caption_fil": "Kathang-isip na halimbawa ng magkakaugnay na tungkulin ng BHW. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
       "caption_en": "A fictional example of connected BHW duties. The animated video has Filipino and English narration and captions.",
-      "provenance": "Revised original Remotion animation (remotion/src/roles-hepo) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/roles-hepo. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
-      "review_status": "approved",
+      "provenance": "Revised original Remotion animation (remotion/src/roles-hepo) naming fictional BHW Riza. Filipino and English narration synthesized scene by scene with Gemini TTS (gemini-3.8-flash-tts, Kore); measured beat timings and audio are in remotion/public/roles-hepo. Language-matched WebVTT captions follow those timings. Replaces the Edge Read Aloud cut introduced in PR #225. Owner review of these new Riza/Gemini renders is pending.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/roles-hepo-riza-fil-f3db3043043a.mp4",
-          "content_hash": "f3db3043043a402660be2ad10b44271d42fc501bdb0f5f69fcd5d4e245a77901",
-          "duration_s": 76,
+          "path": "/training/bhw-1-1/roles-hepo-riza-gemini-fil-53e7d69a39fb.mp4",
+          "content_hash": "53e7d69a39fb9742226c64288e475c442239b76040480f1b7ffbaecabbc5ae22",
+          "duration_s": 84,
           "captions": {
-            "path": "/training/bhw-1-1/roles-hepo-riza-fil-aa49fd8c5fd7.vtt",
-            "content_hash": "aa49fd8c5fd7dec953885d7eb60268a3bad069ac01513775722d29330aea7da2"
+            "path": "/training/bhw-1-1/roles-hepo-riza-gemini-fil-5723f12fe791.vtt",
+            "content_hash": "5723f12fe7917abb07213cc27f43a391b90411840c506f4d2cf9f392a1f2c51b"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/roles-hepo-riza-en-d43832df9211.mp4",
-          "content_hash": "d43832df9211b4e1c3a20359f7f93ad12a3dac91407357b56dc1c7571ba6486c",
-          "duration_s": 72,
+          "path": "/training/bhw-1-1/roles-hepo-riza-gemini-en-2ce358210f06.mp4",
+          "content_hash": "2ce358210f065e88547078f25a6a812f847471511fe3b1a1b67ab543d90a919d",
+          "duration_s": 70,
           "captions": {
-            "path": "/training/bhw-1-1/roles-hepo-riza-en-62f733e9977a.vtt",
-            "content_hash": "62f733e9977a86897c54e289beac284d4252147f91d916fb20d5499dc113f104"
+            "path": "/training/bhw-1-1/roles-hepo-riza-gemini-en-5c76db74f5f0.vtt",
+            "content_hash": "5c76db74f5f0896c5cd35f58c97809c5a5428dc9a1a127f8305f452d5d6b210c"
           }
         }
       }

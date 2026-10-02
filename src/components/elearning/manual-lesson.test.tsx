@@ -17,13 +17,13 @@ describe('route lesson viewer',()=>{
       const {container}=render(<ReferenceLessons {...videoLesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
       expect(container.querySelector('video')).not.toBeInTheDocument();
       expect(screen.getByRole('heading',{name:'first'})).toBeInTheDocument();
-      fireEvent.click(screen.getByRole('button',{name:'Video'}));
+      fireEvent.click(screen.getByRole('button',{name:'Narrated story'}));
       expect(container.querySelector('video source')).toHaveAttribute('src','/records-en.mp4');
       expect(screen.queryByRole('heading',{name:'first'})).not.toBeInTheDocument();
       fireEvent.click(screen.getByRole('button',{name:'Slides'}));
       expect(container.querySelector('video')).not.toBeInTheDocument();
       expect(screen.getByText('Slide content')).toBeInTheDocument();
-      fireEvent.click(screen.getByRole('button',{name:'Video'}));
+      fireEvent.click(screen.getByRole('button',{name:'Narrated story'}));
       fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
       const dialog=container.querySelector('dialog')!;
       expect(dialog.querySelector('video source')).toHaveAttribute('src','/records-en.mp4');
@@ -122,6 +122,24 @@ describe('route lesson viewer',()=>{
     expect(document.querySelector('.reference-story[data-lesson="uhc-coverage"]')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button',{name:'Slides'}));
     expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/})).toBeInTheDocument();
+  });
+  it('shows Lesson 1.2.2 artwork in Read and Slides and opens its narrated story with captions',()=>{
+    const clip={id:'uhc-primary-care-story',path:'/poster.jpg',alt_en:'Vlanche and Mang Ernesto story',alt_fil:'Kuwento nina Vlanche at Mang Ernesto',caption_en:'Next step',caption_fil:'Susunod na hakbang',videos:{en:{path:'/primary-care-en.mp4',captions:{path:'/primary-care-en.vtt'}},fil:{path:'/primary-care-fil.mp4',captions:{path:'/primary-care-fil.vtt'}}}};
+    const lesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'uhc-primary-care',revision:{...l.revision,read_sections:[{...part('bridge'),heading_en:'Four changes, one journey'}],slides:[{...part('slide-bridge'),display_en:'Outpatient consultation',display_fil:'Outpatient consultation',layout:'process'}],assets:[clip],featured_asset_id:clip.id}}))} as unknown as ReferenceData;
+    const {container,rerender}=render(<ReferenceLessons {...lesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(container.querySelector('.reference-story[data-lesson="uhc-primary-care"]')).toBeInTheDocument();
+    expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/}).getAttribute('src')).toContain('vlanche-ernesto-7e4e35141628.png');
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+    expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/})).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:/Watch the animated narrated story/}));
+    const video=container.querySelector('video')!;
+    expect(video).toBeInTheDocument();
+    expect(video.muted).toBe(false);
+    expect(video.querySelector('source')).toHaveAttribute('src','/primary-care-en.mp4');
+    expect(video.querySelector('track')).toHaveAttribute('src','/primary-care-en.vtt');
+    rerender(<ReferenceLessons {...lesson} modules={[]} locale="fil" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(container.querySelector('video source')).toHaveAttribute('src','/primary-care-fil.mp4');
+    expect(container.querySelector('video track')).toHaveAttribute('src','/primary-care-fil.vtt');
   });
   it('opens only the reader content and keeps mode, orientation, and paging inside it',()=>{
     const showModal = HTMLDialogElement.prototype.showModal;

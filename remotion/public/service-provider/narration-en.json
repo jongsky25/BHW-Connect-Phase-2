@@ -1,48 +1,48 @@
 {
   "language": "en",
-  "durationSeconds": 53.208,
+  "durationSeconds": 52.767,
   "beats": [
     {
       "zone": "first-contact",
       "index": 0,
       "text": "Aling Nena approaches Riza about her child. As a BHW, Riza works with the midwife in the health team.",
       "start_ms": 0,
-      "end_ms": 8880
+      "end_ms": 7760
     },
     {
       "zone": "listen",
       "index": 1,
       "text": "Riza asks what help is needed. She listens and checks what she understood instead of guessing at an illness.",
-      "start_ms": 8880,
-      "end_ms": 17088
+      "start_ms": 8060,
+      "end_ms": 16740
     },
     {
       "zone": "scope",
       "index": 2,
       "text": "Riza acts only within her training, local policy, and supervision. If she is unsure, she seeks guidance from the midwife.",
-      "start_ms": 17088,
-      "end_ms": 26976
+      "start_ms": 17040,
+      "end_ms": 26280
     },
     {
       "zone": "guide",
       "index": 3,
       "text": "She confirms the appropriate health worker or facility. She explains whom to contact and how to get there.",
-      "start_ms": 26976,
-      "end_ms": 34896
+      "start_ms": 26580,
+      "end_ms": 34220
     },
     {
       "zone": "follow-up",
       "index": 4,
       "text": "Following the health team's instructions, Riza confirms what to record, when to follow up, and whom to update.",
-      "start_ms": 34896,
-      "end_ms": 42960
+      "start_ms": 34520,
+      "end_ms": 41880
     },
     {
       "zone": "summary",
       "index": 5,
       "text": "If Aling Nena asks for medicine advice beyond Riza's training, Riza listens, seeks guidance, explains the next step, and follows through.",
-      "start_ms": 42960,
-      "end_ms": 53208
+      "start_ms": 42180,
+      "end_ms": 52700
     }
   ]
 }

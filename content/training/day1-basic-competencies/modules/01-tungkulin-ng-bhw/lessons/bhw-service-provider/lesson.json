@@ -286,31 +286,31 @@
     },
     {
       "id": "service-provider-story",
-      "path": "/training/bhw-1-1/service-provider-riza-fil-439e02e58cb9-poster.jpg",
-      "content_hash": "439e02e58cb952645a1750c8789203cbb58ce4405874941ce3ca33336896f8c3",
+      "path": "/training/bhw-1-1/service-provider-riza-gemini-fil-83b315ef4f79-poster.jpg",
+      "content_hash": "83b315ef4f795d6baa6e4a2279c84838249eb65bff14ea4ab9fa3983c93b51f1",
       "alt_fil": "Lumapit si Aling Nena kay Riza tungkol sa anak niya. Nagtanong at nakinig si Riza, nanatili sa saklaw ng kanyang pagsasanay, humingi ng gabay sa midwife kapag hindi tiyak, ipinaliwanag ang susunod na hakbang, at nag-follow-up ayon sa tagubilin ng health team.",
       "alt_en": "Aling Nena approaches Riza about her child. Riza asks and listens, stays within her training, seeks the midwife's guidance when unsure, explains the next step, and follows the health team's instructions for follow-up.",
       "caption_fil": "Kathang-isip na halimbawa nina Riza at Aling Nena. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
       "caption_en": "A fictional example with Riza and Aling Nena. The animated video has Filipino and English narration and captions.",
-      "provenance": "Revised original Remotion animation (remotion/src/service-provider) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/service-provider. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
-      "review_status": "approved",
+      "provenance": "Revised original Remotion animation (remotion/src/service-provider) naming fictional BHW Riza. Filipino and English narration synthesized scene by scene with Gemini TTS (gemini-3.8-flash-tts, Kore); measured beat timings and audio are in remotion/public/service-provider. Language-matched WebVTT captions follow those timings. Replaces the Edge Read Aloud cut introduced in PR #225. Owner review of these new Riza/Gemini renders is pending.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/service-provider-riza-fil-d90ec0e9c049.mp4",
-          "content_hash": "d90ec0e9c049462668d79dd8210123086001b9768bebe683cd0419961f756412",
-          "duration_s": 55,
+          "path": "/training/bhw-1-1/service-provider-riza-gemini-fil-e755ed15d905.mp4",
+          "content_hash": "e755ed15d9057698606e6db4caa1ab1893043d373d86c05e91bd22d38a458bbd",
+          "duration_s": 63,
           "captions": {
-            "path": "/training/bhw-1-1/service-provider-riza-fil-5cc568592e75.vtt",
-            "content_hash": "5cc568592e7578ded1d7e98ba000d9f654205712e1dcf9aca8ee0d9883fc4975"
+            "path": "/training/bhw-1-1/service-provider-riza-gemini-fil-66277969f3fa.vtt",
+            "content_hash": "66277969f3fa6f603d4df262cd4f165afad58a8137b9a26e43a4408644a31a19"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/service-provider-riza-en-b8861e440eb5.mp4",
-          "content_hash": "b8861e440eb5bc04f4190c8cbaf0bf69c7b624962b013a0ab32da73910f94c2f",
+          "path": "/training/bhw-1-1/service-provider-riza-gemini-en-448ff109839e.mp4",
+          "content_hash": "448ff109839e632d85cc607bd84291c48af42e12efbb07fe0e6f48148858184a",
           "duration_s": 54,
           "captions": {
-            "path": "/training/bhw-1-1/service-provider-riza-en-187580171525.vtt",
-            "content_hash": "187580171525247b6c3bd08bed5cba9a5289eb53d59971800fdf5b3ad629addd"
+            "path": "/training/bhw-1-1/service-provider-riza-gemini-en-31bd2c351fce.vtt",
+            "content_hash": "31bd2c351fcec79fcadf562e90223e8b67e5deedf92b3470611241d7b49ecbf7"
           }
         }
       }

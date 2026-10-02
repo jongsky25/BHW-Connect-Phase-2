@@ -234,31 +234,31 @@
     },
     {
       "id": "records-story",
-      "path": "/training/bhw-1-1/records-riza-fil-f491be91a82c-poster.jpg",
-      "content_hash": "f491be91a82ca0f6e8cabcd66e5758505ff5ffd3506301bd2b1c2a1becb28fbd",
+      "path": "/training/bhw-1-1/records-riza-gemini-fil-fe6fabf67d2f-poster.jpg",
+      "content_hash": "fe6fabf67d2f73a8b6c35785d1da467fee4b8f2502b7066aa449388892ca4b6b",
       "alt_fil": "Piliin ang tala ayon sa tanong: household profile para sa isang kabahayan; master list para sa kasapi ng grupo; registry para sa serbisyong naibigay; iniatas na form para sa hiniling na detalye. Linawin ang hindi tiyak na entry at tiyakin ang tatanggap at aprubadong paraan ng pagpapasa.",
       "alt_en": "Choose the record for the question: household profile for one household; master list for group members; registry for services given; assigned form for requested details. Clarify uncertain entries and confirm the recipient and approved handoff route.",
       "caption_fil": "Kathang-isip na halimbawa ni Riza. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
       "caption_en": "A fictional example with Riza. The animated video has Filipino and English narration and captions.",
-      "provenance": "Revised original Remotion animation (remotion/src/records) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/records. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
-      "review_status": "approved",
+      "provenance": "Revised original Remotion animation (remotion/src/records) naming fictional BHW Riza. Filipino and English narration synthesized scene by scene with Gemini TTS (gemini-3.8-flash-tts, Kore); measured beat timings and audio are in remotion/public/records. Language-matched WebVTT captions follow those timings. Replaces the Edge Read Aloud cut introduced in PR #225. Owner review of these new Riza/Gemini renders is pending.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/records-riza-fil-d331679469d9.mp4",
-          "content_hash": "d331679469d9d6c4de65d86e2198e3c0b1df1c07fea2070da486c8e2b98368ce",
-          "duration_s": 43,
+          "path": "/training/bhw-1-1/records-riza-gemini-fil-3cf14c880605.mp4",
+          "content_hash": "3cf14c880605dca2f1af3e94ba4d0164cdc11178a0a9b4209e949da1fac66bfc",
+          "duration_s": 46,
           "captions": {
-            "path": "/training/bhw-1-1/records-riza-fil-b922d5893e04.vtt",
-            "content_hash": "b922d5893e0437a5c14a73093de675adc3d2ae15a1357cedcd984ab27a7eef38"
+            "path": "/training/bhw-1-1/records-riza-gemini-fil-22697c1aae1d.vtt",
+            "content_hash": "22697c1aae1d067f3277b35ec19c80a8a0505f199a28769942ec93e56d263744"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/records-riza-en-0cf861a44fc4.mp4",
-          "content_hash": "0cf861a44fc4196a6724f4ae9d1142af7dd595d26ad9b0d894d658c96210afb4",
-          "duration_s": 42,
+          "path": "/training/bhw-1-1/records-riza-gemini-en-a1b9ab3e1d2e.mp4",
+          "content_hash": "a1b9ab3e1d2e6618b242e85a79728f0932b893d4f112daa5f5271d10014048c1",
+          "duration_s": 41,
           "captions": {
-            "path": "/training/bhw-1-1/records-riza-en-76921ba269e4.vtt",
-            "content_hash": "76921ba269e485402b17be6fbc79e362829d1fe0f2596a084507865d03d25075"
+            "path": "/training/bhw-1-1/records-riza-gemini-en-d1e67835fd74.vtt",
+            "content_hash": "d1e67835fd74da19123886c4722158088f81cf99747e1c4e74f403bbea95f882"
           }
         }
       }

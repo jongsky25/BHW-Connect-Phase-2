@@ -253,31 +253,31 @@
     },
     {
       "id": "community-organizer-story",
-      "path": "/training/bhw-1-1/community-organizer-riza-fil-c1a1a9bc8b2e-poster.jpg",
-      "content_hash": "c1a1a9bc8b2ec0bf7c3147dfe92665eb07598769de02ce40c9b00ead68d3ff66",
+      "path": "/training/bhw-1-1/community-organizer-riza-gemini-fil-259c2a360fa0-poster.jpg",
+      "content_hash": "259c2a360fa0877931ffbf7da9bf2330901f027cde344e645ac896f554f97f92",
       "alt_fil": "Napansin ni Riza ang naipong tubig sa tatlong bakuran. Inanyayahan niya ang mga residente, purok leader, at health staff; ibinahagi ang nakita nang hindi nagsasabi ng di-napatunayang sanhi; at tinukoy kung sino ang magdadala ng usapin sa pagpaplano at magbabalik ng sagot.",
       "alt_en": "Riza notices standing water in three yards. She invites residents, the purok leader, and health staff; reports what was seen without claiming an unverified cause; and identifies who will bring the concern into planning and report back.",
       "caption_fil": "Kathang-isip na halimbawa ng pag-oorganisa ni Riza. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
       "caption_en": "A fictional example of Riza organizing a community response. The animated video has Filipino and English narration and captions.",
-      "provenance": "Revised original Remotion animation (remotion/src/community-organizer) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/community-organizer. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
-      "review_status": "approved",
+      "provenance": "Revised original Remotion animation (remotion/src/community-organizer) naming fictional BHW Riza. Filipino and English narration synthesized scene by scene with Gemini TTS (gemini-3.8-flash-tts, Kore); measured beat timings and audio are in remotion/public/community-organizer. Language-matched WebVTT captions follow those timings. Replaces the Edge Read Aloud cut introduced in PR #225. Owner review of these new Riza/Gemini renders is pending.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/community-organizer-riza-fil-3c26d20c88e9.mp4",
-          "content_hash": "3c26d20c88e9d003f9a874d931db6291c0a0c18753d8d58517962db326c5d20f",
-          "duration_s": 72,
+          "path": "/training/bhw-1-1/community-organizer-riza-gemini-fil-248b5fb7d6b1.mp4",
+          "content_hash": "248b5fb7d6b1fe66e00ae1d491c151b01cc6e3ee1b195086ae20629186209815",
+          "duration_s": 74,
           "captions": {
-            "path": "/training/bhw-1-1/community-organizer-riza-fil-ccafa85c3773.vtt",
-            "content_hash": "ccafa85c377383384f1ad3cbe215b3ae81d215ba3850cfa6117d53115a3fc7f9"
+            "path": "/training/bhw-1-1/community-organizer-riza-gemini-fil-38556407b23c.vtt",
+            "content_hash": "38556407b23c502c4695f2900ba9af711cff81491d960ae53debcb703f1b4294"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/community-organizer-riza-en-168066059198.mp4",
-          "content_hash": "16806605919849d79fd2cbb926dc76a1f6efb905832c946d4124d5a972fc529c",
-          "duration_s": 67,
+          "path": "/training/bhw-1-1/community-organizer-riza-gemini-en-2ae0bf36be41.mp4",
+          "content_hash": "2ae0bf36be41ed29526c29b3e3fcde16aad7e0ecef116de818767796e769343a",
+          "duration_s": 64,
           "captions": {
-            "path": "/training/bhw-1-1/community-organizer-riza-en-8d6f40aa32b9.vtt",
-            "content_hash": "8d6f40aa32b9f70a3e826393b0400e137200fa025333c09ff70b74b19da4c4f0"
+            "path": "/training/bhw-1-1/community-organizer-riza-gemini-en-0fc9a6e50fad.vtt",
+            "content_hash": "0fc9a6e50fad8b3009e5be8369302b85117b28eee8ab927ee912f88a9f1def91"
           }
         }
       }

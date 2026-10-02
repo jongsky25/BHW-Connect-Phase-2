@@ -220,31 +220,31 @@
     },
     {
       "id": "health-educator-story",
-      "path": "/training/bhw-1-1/health-educator-riza-fil-a80b812f33d6-poster.jpg",
-      "content_hash": "a80b812f33d629dc8cc9022a2776104365547e0d66ff0d6c9608ed5f0bf82ee2",
+      "path": "/training/bhw-1-1/health-educator-riza-gemini-fil-0f58d135fb6f-poster.jpg",
+      "content_hash": "0f58d135fb6fdccad33bb1092b850caf668f7caa30b3cf959c0363e841aee7f3",
       "alt_fil": "Sa talakayang pangkalusugan, nakikinig muna si Riza sa mga tanong, gumagamit ng aprubadong materyal, inaangkop ang usapan sa iba't ibang yugto ng buhay, at naghahanap ng paraan upang makasali rin ang mga kabataan at ibang grupo.",
       "alt_en": "At a health discussion, Riza listens to questions first, uses approved materials, adapts the conversation to different life stages, and finds ways for young people and other groups to participate.",
       "caption_fil": "Kathang-isip na halimbawa ng pagtuturo ni Riza bilang BHW. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
       "caption_en": "A fictional example of Riza teaching as a BHW. The animated video has Filipino and English narration and captions.",
-      "provenance": "Revised original Remotion animation (remotion/src/health-educator) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/health-educator. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
-      "review_status": "approved",
+      "provenance": "Revised original Remotion animation (remotion/src/health-educator) naming fictional BHW Riza. Filipino and English narration synthesized scene by scene with Gemini TTS (gemini-3.8-flash-tts, Kore); measured beat timings and audio are in remotion/public/health-educator. Language-matched WebVTT captions follow those timings. Replaces the Edge Read Aloud cut introduced in PR #225. Owner review of these new Riza/Gemini renders is pending.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/health-educator-riza-fil-89125ef49cdf.mp4",
-          "content_hash": "89125ef49cdf7f455165f8069f8b13db364bc16b79198dbbd9bd40bd2f4fc915",
-          "duration_s": 76,
+          "path": "/training/bhw-1-1/health-educator-riza-gemini-fil-3d624b5cb015.mp4",
+          "content_hash": "3d624b5cb015cbdb2bea38907f288694c7e5316c849bcaeb9ff38cb0723e2b94",
+          "duration_s": 86,
           "captions": {
-            "path": "/training/bhw-1-1/health-educator-riza-fil-4cccb1712a97.vtt",
-            "content_hash": "4cccb1712a97abf9172d301b7646a1000877b4df85acf74b65fd5b0140d8ce47"
+            "path": "/training/bhw-1-1/health-educator-riza-gemini-fil-0c67009d2d32.vtt",
+            "content_hash": "0c67009d2d32de68a8ec46fdfc0a23f50d8b922a65038f62260c56079ceefbb8"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/health-educator-riza-en-8b9134f041c5.mp4",
-          "content_hash": "8b9134f041c59d75ac89a71d650aa6f6c526592b348ba88474dde3f240fb26d1",
+          "path": "/training/bhw-1-1/health-educator-riza-gemini-en-b04d666899e6.mp4",
+          "content_hash": "b04d666899e6052407bbc2ac70abf492300defa121f9b28a1c9dc848f4524dee",
           "duration_s": 73,
           "captions": {
-            "path": "/training/bhw-1-1/health-educator-riza-en-7f4462712f2f.vtt",
-            "content_hash": "7f4462712f2fdfaa612bd509f37853e44e0e47a5f6a6d50fc3ddeb5ab242cf9e"
+            "path": "/training/bhw-1-1/health-educator-riza-gemini-en-855561046d2f.vtt",
+            "content_hash": "855561046d2f6c69136f6dfa610dca1c4fef5b5e855704c91c3b7c81f522a187"
           }
         }
       }
