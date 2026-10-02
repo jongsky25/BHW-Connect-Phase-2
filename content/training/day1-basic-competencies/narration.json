@@ -10672,478 +10672,666 @@
       "sections": {
         "assigned-form": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/assigned-form.en.c71647ae05fb.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "c71647ae05fb7d7e66d19e9fd2db7a9bea38c80dc48e80749f7465f22d205a85",
-            "sha256": "e8cfc8c64c1779bec53cd6efe0d4756865802db0d7d70e2fcbe588f7b2b55745",
-            "duration_seconds": 37.355,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/assigned-form.en.ef9f8b307b96.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "ef9f8b307b962548c536e54c6ed1f19468a8140aa6b6ea2c048f446f19d01bc5",
+            "sha256": "4eaec0b019e00dd4306e457108bb8aa33b9bc09f49eed6dcc71cf547ae13df76",
+            "duration_seconds": 45.024,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Follow the form instructions",
+                "text": "Clarify before handing it over",
                 "start_ms": 0,
-                "end_ms": 2560
+                "end_ms": 3048
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "A nurse, midwife, or doctor may assign government, DOH, or local-government forms.",
-                "start_ms": 2860,
-                "end_ms": 9860
+                "text": "There is also an assigned form with the fictional label “recipient: midwife.”",
+                "start_ms": 3048,
+                "end_ms": 8616
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Clarify the required information and recipient.",
-                "start_ms": 10160,
-                "end_ms": 14200
+                "text": "A nurse, midwife, or doctor may assign a government, DOH, or local-government form.",
+                "start_ms": 8616,
+                "end_ms": 15984
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "The example form highlights “recipient: midwife.”",
-                "start_ms": 14500,
-                "end_ms": 18820
+                "text": "Before handing it over, Marites checks what information is requested, whether it matches the verified record, and who should receive it.",
+                "start_ms": 15984,
+                "end_ms": 25296
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Check entries against the information collected; do not guess missing details.",
-                "start_ms": 19120,
-                "end_ms": 25280
+                "text": "She does not guess missing details.",
+                "start_ms": 25296,
+                "end_ms": 28488
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Deliver and safeguard the record using approved local arrangements.",
-                "start_ms": 25580,
-                "end_ms": 31180
+                "text": "She follows the approved local method for safeguarding and submitting it; this example is neither a real form nor a universal rule for where every record goes.",
+                "start_ms": 28488,
+                "end_ms": 38784
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Accurate information to the appropriate recipient. Sample form only.",
-                "start_ms": 31480,
-                "end_ms": 37280
+                "text": "Before handoff, confirm the requested details, recipient, and approved route.",
+                "start_ms": 38784,
+                "end_ms": 45024
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/assigned-form.fil.e18c8388237c.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e18c8388237c5339d1fce86ad83f06c365113ec06a9a38fb5db62d4a91bf90cf",
-            "sha256": "3b12aace81edf8f2984f5aa5e480b6b2a4280271c02a7bcac4d6676cabc9878a",
-            "duration_seconds": 40.307,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/assigned-form.fil.e7e43059f7bd.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "e7e43059f7bd45e4880d05fdf5e24d96be5bd3f0b9d615a064a25fb0451c1d80",
+            "sha256": "7b2abaad612c6cf9e8c7edbfffa0a038671561ebfd2d2208a4547c22d759a79a",
+            "duration_seconds": 43.368,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Sundin ang tagubilin sa form",
+                "text": "Linawin bago ihatid",
                 "start_ms": 0,
-                "end_ms": 3000
+                "end_ms": 2208
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Maaaring magpagawa ang nurse, midwife, o doktor ng mga form ng gobyerno, DOH, o lokal na pamahalaan.",
-                "start_ms": 3300,
-                "end_ms": 12100
+                "text": "May iniatas ding form na may kathang-isip na label na “tatanggap: midwife.”",
+                "start_ms": 2208,
+                "end_ms": 7296
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Linawin ang hinihinging impormasyon at tatanggap.",
-                "start_ms": 12400,
-                "end_ms": 16400
+                "text": "Maaaring magpagawa ang nurse, midwife, o doktor ng form ng gobyerno, DOH, o lokal na pamahalaan.",
+                "start_ms": 7296,
+                "end_ms": 14856
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Sa halimbawang form, ang field ay “tatanggap: midwife.”",
-                "start_ms": 16700,
-                "end_ms": 21740
+                "text": "Bago ito ihatid, tinitiyak ni Marites kung anong impormasyon ang hinihingi, kung tugma ito sa natiyak na tala, at kung sino ang tatanggap.",
+                "start_ms": 14856,
+                "end_ms": 23520
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Suriin ang pagkakatala laban sa impormasyong nakuha; huwag punan ng hula ang hindi alam.",
-                "start_ms": 22040,
-                "end_ms": 28800
+                "text": "Hindi niya pupunan ng hula ang kulang.",
+                "start_ms": 23520,
+                "end_ms": 26520
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Ihatid at ingatan ang tala ayon sa aprubadong lokal na paraan.",
-                "start_ms": 29100,
-                "end_ms": 34700
+                "text": "Susundin niya ang aprubadong lokal na paraan ng pag-iingat at pagpapasa; ang halimbawa ay hindi tunay na form o pangkalahatang tuntunin kung saan dapat ipadala ang lahat ng tala.",
+                "start_ms": 26520,
+                "end_ms": 37632
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Tamang impormasyon sa tamang tatanggap. Halimbawang form lamang.",
-                "start_ms": 35000,
-                "end_ms": 40240
+                "text": "Bago ipasa: tiyakin ang hinihinging detalye, tatanggap, at aprubadong paraan.",
+                "start_ms": 37632,
+                "end_ms": 43368
               }
             ]
           }
         },
         "check": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/check.en.45ca9c9226e5.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "45ca9c9226e51649cf3e6e754b58ce7b50be319ec4b9dff854ae03e84522d4ff",
-            "sha256": "bcab30a13f2f868bc3ac901ea52220a77ba2a2318540dbc83872d318b0facb7a",
-            "duration_seconds": 12.539,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/check.en.b92f41b9f1b3.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "b92f41b9f1b38348e61ab0fd2fa061f8f88f030f5017a1de11ceaf49b00767ca",
+            "sha256": "5355b652b841a2a03cc2fa8bf1fa944f4416e7427535540119fb3a4c0e0268c4",
+            "duration_seconds": 22.2,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Apply your learning",
                 "start_ms": 0,
-                "end_ms": 1720
+                "end_ms": 2040
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Which record answers “who has received a service”?",
-                "start_ms": 2020,
-                "end_ms": 6180
+                "text": "The midwife asks Marites for the record of who has received health teaching.",
+                "start_ms": 2040,
+                "end_ms": 7392
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She has a master list of older residents and a registry of services given, but one registry entry is unclear.",
+                "start_ms": 7392,
+                "end_ms": 15552
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "What should she do?",
+                "start_ms": 15552,
+                "end_ms": 17424
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Choose the appropriate record, verify information, and clarify its recipient.",
-                "start_ms": 6480,
-                "end_ms": 12480
+                "text": "Choose the record by the question; verify details before handoff.",
+                "start_ms": 17424,
+                "end_ms": 22200
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/check.fil.04aece168b56.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "04aece168b56b8b07cdde5338de3bbd4890917656fefd5bd39b3d5824fc1acae",
-            "sha256": "2a40f4f48fad4713de9759b847fd88b13a2a61252e5eb4ba39d1f5e7311f5d0b",
-            "duration_seconds": 15.177,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/check.fil.864ce0c3862e.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "864ce0c3862e11f95f0b4b6647f847c592848fa7d6b161957c2f2d477a23eebb",
+            "sha256": "f0958b5af292864a8f0eec96f85d387ae78e9f7e8cb3c4dfad5a13292eabf774",
+            "duration_seconds": 23.352,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Gamitin ang natutuhan",
                 "start_ms": 0,
-                "end_ms": 2280
+                "end_ms": 2352
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Aling tala ang tumutugon sa “sino ang nabigyan na ng serbisyo”?",
-                "start_ms": 2580,
-                "end_ms": 8260
+                "text": "Hiniling ng midwife kay Marites ang tala kung sino ang nabigyan na ng health teaching.",
+                "start_ms": 2352,
+                "end_ms": 7680
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw.",
+                "start_ms": 7680,
+                "end_ms": 15912
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ano ang pinakamainam niyang gawin?",
+                "start_ms": 15912,
+                "end_ms": 18624
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Piliin ang tamang tala, tiyakin ang impormasyon, at linawin ang tatanggap.",
-                "start_ms": 8560,
-                "end_ms": 15120
+                "text": "Piliin ang tala ayon sa tanong; tiyakin ang detalye bago magpasa.",
+                "start_ms": 18624,
+                "end_ms": 23352
               }
             ]
           }
         },
         "household-profile": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/household-profile.en.66cadc6bd3f3.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "66cadc6bd3f37dc988c9b88ef92609c99353b265c93ef55be0edb4f2b93b57bb",
-            "sha256": "91b593da3e5856fa0c278527b112fbee8e407a80ca98fb015238a715ff3dca9f",
-            "duration_seconds": 33.802,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/household-profile.en.22c67a5c6e55.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "22c67a5c6e55e4977003dd3e68ff5ccf79052648328ec39ed3c92566002bec53",
+            "sha256": "bb7f795a2210e89c7cb6f32355e870887bc4ed012e51214548e06e703bcc2c06",
+            "duration_seconds": 31.968,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Household profile: one household",
+                "text": "What describes the household?",
                 "start_ms": 0,
-                "end_ms": 3440
+                "end_ms": 2568
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "A household profile describes a household.",
-                "start_ms": 3740,
-                "end_ms": 7140
+                "text": "Marites first looks at the household profile.",
+                "start_ms": 2568,
+                "end_ms": 6072
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "This example shows code HH-014 and four members to illustrate the kind of information brought together.",
-                "start_ms": 7440,
-                "end_ms": 16080
+                "text": "In the fictional example, code HH-014 stands for one household with four members.",
+                "start_ms": 6072,
+                "end_ms": 13248
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Actual fields and storage arrangements must follow the approved local form and instructions.",
-                "start_ms": 16380,
-                "end_ms": 23700
+                "text": "This helps describe the household.",
+                "start_ms": 13248,
+                "end_ms": 16128
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Never use the fictional example as a real record.",
-                "start_ms": 24000,
-                "end_ms": 28280
+                "text": "It does not answer who has already received a service.",
+                "start_ms": 16128,
+                "end_ms": 20424
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Use the approved local form and instructions for actual fields and safekeeping.",
+                "start_ms": 20424,
+                "end_ms": 25992
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Question answered: what describes this household? Example only.",
-                "start_ms": 28580,
-                "end_ms": 33740
+                "text": "A household profile describes one household; it does not prove a service was given.",
+                "start_ms": 25992,
+                "end_ms": 31968
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/household-profile.fil.5b610e2305ca.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "5b610e2305ca3deecfd89a8bf931714b3e5de33250e528a2a528a5dd3ded5f43",
-            "sha256": "b050b5703083e2b62f73fe2cb02dfa395dd185c7d9105a8ec154b5eed7835ff8",
-            "duration_seconds": 39.497,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/household-profile.fil.2fdff5458481.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "2fdff54584816cdfab9168c90a124d70377b42a8aa4db71392ed48fb2efde84c",
+            "sha256": "aaac341cf21be4cb2bceaa7c1561c243ba0f59bd60a545344096d5c72312b0f6",
+            "duration_seconds": 34.296,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Household profile: isang kabahayan",
+                "text": "Ano ang larawan ng kabahayan?",
                 "start_ms": 0,
-                "end_ms": 3560
+                "end_ms": 2592
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Ang household profile ay naglalarawan ng kabahayan.",
-                "start_ms": 3860,
-                "end_ms": 7980
+                "text": "Unang tiningnan ni Marites ang household profile.",
+                "start_ms": 2592,
+                "end_ms": 6096
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Sa halimbawang ito, code na HH-014 at bilang na apat na miyembro ang ipinapakita upang makita ang uri ng impormasyong pinagsasama.",
-                "start_ms": 8280,
-                "end_ms": 20800
+                "text": "Sa kathang-isip na halimbawa, ang code na HH-014 ay tumutukoy sa isang kabahayang may apat na miyembro.",
+                "start_ms": 6096,
+                "end_ms": 14304
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang aktuwal na fields at paraan ng pag-iingat ay dapat ayon sa aprubadong lokal na form at tagubilin.",
-                "start_ms": 21100,
-                "end_ms": 28140
+                "text": "Makakatulong ito upang makita ang larawan ng kabahayan.",
+                "start_ms": 14304,
+                "end_ms": 18480
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Huwag gamitin ang kathang-isip na halimbawa bilang tunay na tala.",
-                "start_ms": 28440,
-                "end_ms": 33680
+                "text": "Hindi nito sinasagot kung sino ang nabigyan na ng serbisyo.",
+                "start_ms": 18480,
+                "end_ms": 22440
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang tunay na fields at paraan ng pag-iingat ay ayon sa aprubadong lokal na form at tagubilin.",
+                "start_ms": 22440,
+                "end_ms": 28464
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Tanong na sinasagot: ano ang larawan ng kabahayan? Halimbawa lamang.",
-                "start_ms": 33980,
-                "end_ms": 39420
+                "text": "Household profile: larawan ng isang kabahayan, hindi patunay ng serbisyong naibigay.",
+                "start_ms": 28464,
+                "end_ms": 34296
               }
             ]
           }
         },
-        "list-registry": {
+        "master-list": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/list-registry.en.8df8046fef0a.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "8df8046fef0a00249ca67f85f434c14dbb03f49b16f1f6674a2eb86d6a29e338",
-            "sha256": "f30d20ed8c0589f0166ed2c724cf11573654064e96605591d7ce0895338b4396",
-            "duration_seconds": 36.571,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/master-list.en.6dd6de5759d5.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "6dd6de5759d527a602094955267be532bda6435843571f9d974669e59a84df16",
+            "sha256": "9608cd410806f67dc48f45c7d37dac65981dd06ee85b528264d7702c22faac9b",
+            "duration_seconds": 27.072,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Master list or registry?",
+                "text": "Who belongs to the group?",
                 "start_ms": 0,
-                "end_ms": 2560
+                "end_ms": 2328
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "In the manual’s description, a master list groups people, such as children, pregnant residents, or older adults.",
-                "start_ms": 2860,
-                "end_ms": 12460
+                "text": "Next, Marites looks at a master list for a group, such as older residents in the neighborhood.",
+                "start_ms": 2328,
+                "end_ms": 8784
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "A registry records people who received services.",
-                "start_ms": 12760,
-                "end_ms": 16920
+                "text": "The manual describes a master list as grouping people by category.",
+                "start_ms": 8784,
+                "end_ms": 13680
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "In this fictional example, the master list says “group: older adults”; the registry says “service provided: health teaching.”",
-                "start_ms": 17220,
-                "end_ms": 27140
+                "text": "It helps answer who belongs to that group.",
+                "start_ms": 13680,
+                "end_ms": 17184
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "They answer different questions.",
-                "start_ms": 27440,
-                "end_ms": 30280
+                "text": "Being listed there does not establish that someone received health teaching or another service.",
+                "start_ms": 17184,
+                "end_ms": 23592
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Who belongs to the group? / Who received a service? Examples only.",
-                "start_ms": 30580,
-                "end_ms": 36500
+                "text": "A master list shows who belongs to a group.",
+                "start_ms": 23592,
+                "end_ms": 27072
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/list-registry.fil.0b85407e5edd.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "0b85407e5eddd7af84e0a3dd0b517357891ee124dbe3ec163a492307aa7e478c",
-            "sha256": "7110db3d3d2a4b103fb9691faff1a5a45307fd5a5cc3a8616d36a7e723408a27",
-            "duration_seconds": 40.882,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/master-list.fil.c79da6c4f6df.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "c79da6c4f6dfe42c31c602f0d5c75eee61a2bb981aff9f58fe1086874edbee5a",
+            "sha256": "ce2ab5d9532084631cb6301fecbdd3c31916e306583830f9d1576a35d5949c57",
+            "duration_seconds": 28.776,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Master list o registry?",
+                "text": "Sino ang kabilang sa grupo?",
                 "start_ms": 0,
-                "end_ms": 2760
+                "end_ms": 2400
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Sa paglalarawan ng manual, pinagsasama ng master list ang mga tao ayon sa grupo, gaya ng mga bata, buntis, o nakatatanda.",
-                "start_ms": 3060,
-                "end_ms": 13580
+                "text": "Sumunod, nakita ni Marites ang master list para sa isang grupo, gaya ng mga nakatatanda sa purok.",
+                "start_ms": 2400,
+                "end_ms": 8952
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ang registry naman ay tala ng mga taong nabigyan ng serbisyo.",
-                "start_ms": 13880,
-                "end_ms": 18600
+                "text": "Ayon sa manual, pinagsasama ng master list ang mga tao ayon sa grupo.",
+                "start_ms": 8952,
+                "end_ms": 13992
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Sa kathang-isip na halimbawa, ang master list ay “grupo: nakatatanda”; ang registry ay “naibigay na serbisyo: health teaching.”",
-                "start_ms": 18900,
-                "end_ms": 30460
+                "text": "Magagamit ito kung ang tanong ay kung sino ang kabilang sa grupong iyon.",
+                "start_ms": 13992,
+                "end_ms": 18720
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Magkaiba ang tanong na sinasagot ng dalawa.",
-                "start_ms": 30760,
-                "end_ms": 33920
+                "text": "Hindi sapat ang pagkakalista rito upang sabihing nabigyan na sila ng health teaching o ibang serbisyo.",
+                "start_ms": 18720,
+                "end_ms": 25200
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Sino ang nasa grupo? / Sino ang nabigyan ng serbisyo? Mga halimbawa lamang.",
-                "start_ms": 34220,
-                "end_ms": 40820
+                "text": "Master list: sino ang kabilang sa isang grupo.",
+                "start_ms": 25200,
+                "end_ms": 28776
               }
             ]
           }
         },
         "record-purpose": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/record-purpose.en.00391fd2a6eb.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "00391fd2a6ebe09721c8644a350105e06901b632399927e2b66f5d23c201474b",
-            "sha256": "6eaf53fd4c7aaa4b30dc99cc563021898cf1f9442e28ffac4e3a9095d4fcb884",
-            "duration_seconds": 26.227,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/record-purpose.en.d6722bea53d2.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "d6722bea53d2c6033eb61b67e78f26ba8f345cc8e3d1b9b28bbcd78db61a9f90",
+            "sha256": "460c1a643ca52732ab7b29b3bbb73224a45b1c1035bf7d71bdc725e59f031cac",
+            "duration_seconds": 37.056,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "What is the record used for?",
+                "text": "After the visit",
                 "start_ms": 0,
-                "end_ms": 2120
+                "end_ms": 2016
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "BHWs help collect and safeguard information from households in their area.",
-                "start_ms": 2420,
-                "end_ms": 8420
+                "text": "After speaking with Aling Nena, BHW Marites returns to the health station.",
+                "start_ms": 2016,
+                "end_ms": 8040
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Accurate records inform program planning and identification of needs.",
-                "start_ms": 8720,
-                "end_ms": 14120
+                "text": "She has a fictional note about the conversation, but she will not put it into just any list.",
+                "start_ms": 8040,
+                "end_ms": 14448
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Every document shown here is a fictional learning example, not an official form or an actual patient record.",
-                "start_ms": 14420,
-                "end_ms": 22060
+                "text": "She asks the midwife, “What information is needed, and what will it be used for?”",
+                "start_ms": 14448,
+                "end_ms": 20472
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Accurate records help the health team understand community needs and plan programs.",
+                "start_ms": 20472,
+                "end_ms": 26160
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Every example in this lesson is fictional; it contains no real personal data or official form.",
+                "start_ms": 26160,
+                "end_ms": 32880
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Learning examples only · no real personal data.",
-                "start_ms": 22360,
-                "end_ms": 26160
+                "text": "A record answers a question for someone who will use it.",
+                "start_ms": 32880,
+                "end_ms": 37056
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/record-purpose.fil.46e662d45567.mp3",
-            "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "46e662d45567b825ab12e550c2a62f3c6168ebf7268e5e9e50eac4e98f67dac5",
-            "sha256": "a60d5730877eedb096f862b427aafc9edb03a525b0d099e57c07ab89390d73fb",
-            "duration_seconds": 32.392,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/record-purpose.fil.fa9335c12046.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "fa9335c12046e283cc6d8609458c869b43863d6dbd7046907dc4ff804ca18878",
+            "sha256": "35fcd881954551c4594ec46e45701b47ac9ce2422f4ce4a7e9763859835c9bc6",
+            "duration_seconds": 38.304,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Saan ginagamit ang tala?",
+                "text": "Pagkatapos ng pagbisita",
                 "start_ms": 0,
-                "end_ms": 2360
+                "end_ms": 2448
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Tumutulong ang BHW sa pagkolekta at pangangalaga ng impormasyon mula sa mga kabahayang nasasakupan.",
-                "start_ms": 2660,
-                "end_ms": 10460
+                "text": "Pagkatapos kausapin si Aling Nena, bumalik si BHW Marites sa health station.",
+                "start_ms": 2448,
+                "end_ms": 8352
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ginagamit ang wastong tala sa pagplano ng programa at pagtukoy ng pangangailangan.",
-                "start_ms": 10760,
-                "end_ms": 17280
+                "text": "May kathang-isip siyang tala ng napag-usapan, ngunit hindi niya ito basta ilalagay sa kahit aling listahan.",
+                "start_ms": 8352,
+                "end_ms": 14928
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang lahat ng halimbawang dokumento rito ay kathang-isip para sa pag-aaral; hindi sila opisyal na form o aktuwal na patient record.",
-                "start_ms": 17580,
-                "end_ms": 27100
+                "text": "Tinanong niya ang midwife: “Anong impormasyon ang kailangan, at para saan ito gagamitin?”",
+                "start_ms": 14928,
+                "end_ms": 20928
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Mahalaga ang wastong tala sa pag-unawa sa pangangailangan ng komunidad at sa pagpaplano ng programa.",
+                "start_ms": 20928,
+                "end_ms": 27264
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang lahat ng halimbawa sa araling ito ay kathang-isip; wala itong tunay na personal na datos o opisyal na form.",
+                "start_ms": 27264,
+                "end_ms": 34344
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Halimbawang tala lamang · walang tunay na personal na datos.",
-                "start_ms": 27400,
-                "end_ms": 32320
+                "text": "Ang tala ay may tanong na sinasagot at taong gagamit nito.",
+                "start_ms": 34344,
+                "end_ms": 38304
+              }
+            ]
+          }
+        },
+        "registry": {
+          "en": {
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/registry.en.1f7989abe4c9.mp3",
+            "voice": "en-PH-RosaNeural",
+            "content_hash": "1f7989abe4c9b9becc3bd0bedbd76df8557d050425f6f9253b35f8680e60ef8e",
+            "sha256": "b5ee635c9acde21277b0db80cf1c3d01c68172bdb044a6a241da783d89fe1072",
+            "duration_seconds": 32.64,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Who received a service?",
+                "start_ms": 0,
+                "end_ms": 2376
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“Who has received health teaching?”",
+                "start_ms": 2376,
+                "end_ms": 5304
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "asks the midwife.",
+                "start_ms": 5304,
+                "end_ms": 7512
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Marites checks the registry: the manual describes it as the record of people who received a service.",
+                "start_ms": 7512,
+                "end_ms": 14400
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She checks the recorded service before answering.",
+                "start_ms": 14400,
+                "end_ms": 18144
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "If an entry is unclear, she clarifies it with the health team rather than inferring an answer from the master list or adding a guessed entry.",
+                "start_ms": 18144,
+                "end_ms": 27072
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "A registry shows who received a service, based on verified entries.",
+                "start_ms": 27072,
+                "end_ms": 32640
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/registry.fil.584ac8f1297f.mp3",
+            "voice": "fil-PH-BlessicaNeural",
+            "content_hash": "584ac8f1297f7e5d1d2f12097e78b0e5970953d34f977bfd59dc6a767596e6e8",
+            "sha256": "e322a8e50860724101000bbf4c81280c627c598e790bf79521b6d244110085ed",
+            "duration_seconds": 32.112,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Sino ang nabigyan ng serbisyo?",
+                "start_ms": 0,
+                "end_ms": 2544
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“Sino na ang nabigyan ng health teaching?”",
+                "start_ms": 2544,
+                "end_ms": 5400
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "tanong ng midwife.",
+                "start_ms": 5400,
+                "end_ms": 7512
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ang registry ang titingnan ni Marites: ayon sa manual, ito ang tala ng mga taong nabigyan ng serbisyo.",
+                "start_ms": 7512,
+                "end_ms": 14136
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Susuriin niya ang nakatalang serbisyo bago sumagot.",
+                "start_ms": 14136,
+                "end_ms": 17640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Kung may detalyeng hindi malinaw, lilinawin muna niya ito sa health team; hindi niya hahanguin ang sagot mula sa master list o magdaragdag ng entry batay sa hula.",
+                "start_ms": 17640,
+                "end_ms": 27336
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Registry: sino ang nabigyan ng serbisyo, batay sa natiyak na tala.",
+                "start_ms": 27336,
+                "end_ms": 32112
               }
             ]
           }

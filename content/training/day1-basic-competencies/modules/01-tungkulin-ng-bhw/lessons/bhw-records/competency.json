@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Maitugma ang apat na uri ng talaan sa gamit nito at maipaliwanag kung kanino ihahatid ang kaugnay na impormasyon.",
-      "observable_en": "Match four record types to their purposes and explain who should receive relevant information.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang sagot sa sitwasyon.",
-      "not_yet_en": "Cannot yet explain the response to the scenario.",
+      "observable_fil": "Maitugma ang apat na tala sa tanong na sinasagot ng bawat isa; masuri ang hindi tiyak na entry at maipaliwanag ang tamang tatanggap at paraan ng pagpapasa.",
+      "observable_en": "Match four records to the questions they answer; check an uncertain entry and explain the recipient and approved handoff route.",
+      "not_yet_fil": "Napagpapalit ang master list at registry o nanghuhula ng kulang na detalye kahit may gabay.",
+      "not_yet_en": "Confuses the master list with the registry or guesses missing details even with prompting.",
       "levels": {
-        "kaya_na_fil": "Naipaliwanag nang wasto at walang gabay.",
-        "kaya_na_en": "Explains accurately without prompting.",
-        "kailangan_practice_fil": "Naipaliwanag sa tulong ng tanong.",
-        "kailangan_practice_en": "Explains with prompts.",
-        "hindi_pa_fil": "Kailangan pang ipakita at pagsanayan.",
-        "hindi_pa_en": "Needs further demonstration and practice."
+        "kaya_na_fil": "Naitutugma ang lahat at nailalarawan ang ligtas na pagpapasa nang walang gabay.",
+        "kaya_na_en": "Matches all four and describes a safe handoff without prompting.",
+        "kailangan_practice_fil": "Tama ang pagtutugma ngunit kailangan ng paalala sa paglinaw o tatanggap.",
+        "kailangan_practice_en": "Matches the records but needs a prompt about verification or recipient.",
+        "hindi_pa_fil": "Kailangan pang ipakita at pagsanayan ang pagpili at paglinaw ng tala.",
+        "hindi_pa_en": "Needs demonstration and practice in choosing and checking a record."
       }
     }
   ]

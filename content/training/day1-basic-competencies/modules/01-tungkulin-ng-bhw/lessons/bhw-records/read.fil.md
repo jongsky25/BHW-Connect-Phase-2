@@ -1,19 +1,23 @@
-## [record-purpose] Saan ginagamit ang tala?
+## [record-purpose] Pagkatapos ng pagbisita
 
-Tumutulong ang BHW sa pagkolekta at pangangalaga ng impormasyon mula sa mga kabahayang nasasakupan. Ginagamit ang wastong tala sa pagplano ng programa at pagtukoy ng pangangailangan. Ang lahat ng halimbawang dokumento rito ay kathang-isip para sa pag-aaral; hindi sila opisyal na form o aktuwal na patient record.
+Pagkatapos kausapin si Aling Nena, bumalik si BHW Marites sa health station. May kathang-isip siyang tala ng napag-usapan, ngunit hindi niya ito basta ilalagay sa kahit aling listahan. Tinanong niya ang midwife: “Anong impormasyon ang kailangan, at para saan ito gagamitin?” Mahalaga ang wastong tala sa pag-unawa sa pangangailangan ng komunidad at sa pagpaplano ng programa. Ang lahat ng halimbawa sa araling ito ay kathang-isip; wala itong tunay na personal na datos o opisyal na form.
 
-## [household-profile] Household profile: isang kabahayan
+## [household-profile] Ano ang larawan ng kabahayan?
 
-Ang household profile ay naglalarawan ng kabahayan. Sa halimbawang ito, code na HH-014 at bilang na apat na miyembro ang ipinapakita upang makita ang uri ng impormasyong pinagsasama. Ang aktuwal na fields at paraan ng pag-iingat ay dapat ayon sa aprubadong lokal na form at tagubilin. Huwag gamitin ang kathang-isip na halimbawa bilang tunay na tala.
+Unang tiningnan ni Marites ang household profile. Sa kathang-isip na halimbawa, ang code na HH-014 ay tumutukoy sa isang kabahayang may apat na miyembro. Makakatulong ito upang makita ang larawan ng kabahayan. Hindi nito sinasagot kung sino ang nabigyan na ng serbisyo. Ang tunay na fields at paraan ng pag-iingat ay ayon sa aprubadong lokal na form at tagubilin.
 
-## [list-registry] Master list o registry?
+## [master-list] Sino ang kabilang sa grupo?
 
-Sa paglalarawan ng manual, pinagsasama ng master list ang mga tao ayon sa grupo, gaya ng mga bata, buntis, o nakatatanda. Ang registry naman ay tala ng mga taong nabigyan ng serbisyo. Sa kathang-isip na halimbawa, ang master list ay “grupo: nakatatanda”; ang registry ay “naibigay na serbisyo: health teaching.” Magkaiba ang tanong na sinasagot ng dalawa.
+Sumunod, nakita ni Marites ang master list para sa isang grupo, gaya ng mga nakatatanda sa purok. Ayon sa manual, pinagsasama ng master list ang mga tao ayon sa grupo. Magagamit ito kung ang tanong ay kung sino ang kabilang sa grupong iyon. Hindi sapat ang pagkakalista rito upang sabihing nabigyan na sila ng health teaching o ibang serbisyo.
 
-## [assigned-form] Sundin ang tagubilin sa form
+## [registry] Sino ang nabigyan ng serbisyo?
 
-Maaaring magpagawa ang nurse, midwife, o doktor ng mga form ng gobyerno, DOH, o lokal na pamahalaan. Linawin ang hinihinging impormasyon at tatanggap. Sa halimbawang form, ang field ay “tatanggap: midwife.” Suriin ang pagkakatala laban sa impormasyong nakuha; huwag punan ng hula ang hindi alam. Ihatid at ingatan ang tala ayon sa aprubadong lokal na paraan.
+“Sino na ang nabigyan ng health teaching?” tanong ng midwife. Ang registry ang titingnan ni Marites: ayon sa manual, ito ang tala ng mga taong nabigyan ng serbisyo. Susuriin niya ang nakatalang serbisyo bago sumagot. Kung may detalyeng hindi malinaw, lilinawin muna niya ito sa health team; hindi niya hahanguin ang sagot mula sa master list o magdaragdag ng entry batay sa hula.
+
+## [assigned-form] Linawin bago ihatid
+
+May iniatas ding form na may kathang-isip na label na “tatanggap: midwife.” Maaaring magpagawa ang nurse, midwife, o doktor ng form ng gobyerno, DOH, o lokal na pamahalaan. Bago ito ihatid, tinitiyak ni Marites kung anong impormasyon ang hinihingi, kung tugma ito sa natiyak na tala, at kung sino ang tatanggap. Hindi niya pupunan ng hula ang kulang. Susundin niya ang aprubadong lokal na paraan ng pag-iingat at pagpapasa; ang halimbawa ay hindi tunay na form o pangkalahatang tuntunin kung saan dapat ipadala ang lahat ng tala.
 
 ## [check] Gamitin ang natutuhan
 
-Aling tala ang tumutugon sa “sino ang nabigyan na ng serbisyo”?
+Hiniling ng midwife kay Marites ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?
