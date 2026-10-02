@@ -33,6 +33,7 @@ import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { copyFileSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { toWebVtt } from "./lib/webvtt.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -40,6 +41,7 @@ const REMOTION_DIR = path.join(ROOT, "remotion");
 const OUT_DIR = path.join(REMOTION_DIR, "out");
 const REMOTION_PUBLIC_DIR = path.join(REMOTION_DIR, "public");
 const PUBLIC_DIR = path.join(ROOT, "public");
+const REMOTION_CLI = path.join(REMOTION_DIR, "node_modules", "@remotion", "cli", "remotion-cli.js");
 
 // The plan's own budget: ~0.5-1 MB for a 20s clip, i.e. ~50 KB/s. Past
 // 75 KB/s the CRF/bitrate settings below need revisiting before the clip
@@ -84,10 +86,11 @@ export function parseArgs(argv) {
 }
 
 function run(cmd, args) {
+  if (cmd !== "remotion") throw new Error(`unsupported renderer command: ${cmd}`);
   const browser = process.env.REMOTION_BROWSER_EXECUTABLE;
   const all = browser ? [...args, `--browser-executable=${browser}`] : args;
-  console.log(`  $ npx ${cmd} ${all.join(" ")}`);
-  execFileSync("npx", [cmd, ...all], { cwd: REMOTION_DIR, stdio: "inherit" });
+  console.log(`  $ remotion ${all.join(" ")}`);
+  execFileSync(process.execPath, [REMOTION_CLI, ...all], { cwd: REMOTION_DIR, stdio: "inherit" });
 }
 
 function publish(file, dir, name, ext) {
@@ -104,9 +107,9 @@ function publish(file, dir, name, ext) {
 function durationSeconds(compositionId) {
   const browser = process.env.REMOTION_BROWSER_EXECUTABLE;
   const out = execFileSync(
-    "npx",
+    process.execPath,
     [
-      "remotion",
+      REMOTION_CLI,
       "compositions",
       ...(browser ? [`--browser-executable=${browser}`] : []),
     ],
@@ -216,4 +219,4 @@ function main() {
   }
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) main();
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) main();

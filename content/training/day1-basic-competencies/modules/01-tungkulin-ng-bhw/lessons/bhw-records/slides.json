@@ -4,11 +4,11 @@
     "concept_ids": [
       "m1.provider.records"
     ],
-    "layout": "annotated-illustration",
-    "heading_fil": "Saan ginagamit ang tala?",
-    "heading_en": "What is the record used for?",
-    "display_fil": "Kolektahin\nPangalagaan\nGamitin sa pagpaplano\nHalimbawang tala lamang · walang tunay na personal na datos.",
-    "display_en": "Collect\nSafeguard\nInform planning\nLearning examples only · no real personal data.",
+    "layout": "scene",
+    "heading_fil": "Pagkatapos ng pagbisita",
+    "heading_en": "After the visit",
+    "display_fil": "Itanong muna kung para saan ang tala.\nMagkakaiba ang tanong na sinasagot ng bawat uri.\nKathang-isip lamang ang mga halimbawa.",
+    "display_en": "Ask what the record is for.\nEach kind answers a different question.\nAll examples are fictional.",
     "asset_ids": [
       "A06"
     ],
@@ -19,26 +19,41 @@
     "concept_ids": [
       "m1.provider.documents"
     ],
-    "layout": "annotated-illustration",
-    "heading_fil": "Household profile: isang kabahayan",
-    "heading_en": "Household profile: one household",
-    "display_fil": "Household profile\nHH-014 · 4 na miyembro\nTanong na sinasagot: ano ang larawan ng kabahayan? Halimbawa lamang.",
-    "display_en": "Household profile\nHH-014 · 4 members\nQuestion answered: what describes this household? Example only.",
+    "layout": "process",
+    "heading_fil": "Ano ang larawan ng kabahayan?",
+    "heading_en": "What describes the household?",
+    "display_fil": "Household profile: isang kabahayan.\nHalimbawa: HH-014 · apat na miyembro.\nHindi ito tala ng serbisyong naibigay.",
+    "display_en": "Household profile: one household.\nExample: HH-014 · four members.\nIt is not a record of services given.",
     "asset_ids": [
       "A06"
     ],
     "check": null
   },
   {
-    "id": "list-registry-slide",
+    "id": "master-list-slide",
     "concept_ids": [
       "m1.provider.documents"
     ],
-    "layout": "annotated-illustration",
-    "heading_fil": "Master list o registry?",
-    "heading_en": "Master list or registry?",
-    "display_fil": "Master list · grupo: nakatatanda\nRegistry · serbisyo: health teaching\nSino ang nasa grupo? / Sino ang nabigyan ng serbisyo? Mga halimbawa lamang.",
-    "display_en": "Master list · group: older adults\nRegistry · service: health teaching\nWho belongs to the group? / Who received a service? Examples only.",
+    "layout": "comparison",
+    "heading_fil": "Sino ang kabilang sa grupo?",
+    "heading_en": "Who belongs to the group?",
+    "display_fil": "Master list: sino ang nasa grupo?\nHalimbawa: mga nakatatanda.\nHindi nito pinatutunayan na may serbisyong naibigay.",
+    "display_en": "Master list: who belongs to the group?\nExample: older residents.\nIt does not prove a service was given.",
+    "asset_ids": [
+      "A06"
+    ],
+    "check": null
+  },
+  {
+    "id": "registry-slide",
+    "concept_ids": [
+      "m1.provider.documents"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Sino ang nabigyan ng serbisyo?",
+    "heading_en": "Who received a service?",
+    "display_fil": "Registry: sino ang nabigyan ng serbisyo?\nSuriin ang nakatalang serbisyo.\nLinawin ang hindi tiyak; huwag manghula.",
+    "display_en": "Registry: who received a service?\nCheck the service recorded.\nClarify uncertainty; do not guess.",
     "asset_ids": [
       "A06"
     ],
@@ -50,11 +65,11 @@
       "m1.provider.documents",
       "m1.competency"
     ],
-    "layout": "annotated-illustration",
-    "heading_fil": "Sundin ang tagubilin sa form",
-    "heading_en": "Follow the form instructions",
-    "display_fil": "Assigned form · tatanggap: midwife\nSuriin · linawin · ihatid\nTamang impormasyon sa tamang tatanggap. Halimbawang form lamang.",
-    "display_en": "Assigned form · recipient: midwife\nCheck · clarify · deliver\nAccurate information to the appropriate recipient. Sample form only.",
+    "layout": "process",
+    "heading_fil": "Linawin bago ihatid",
+    "heading_en": "Clarify before handing it over",
+    "display_fil": "Linawin ang hinihinging impormasyon.\nTiyakin ang tatanggap at aprubadong paraan.\nHuwag punan ng hula ang kulang.",
+    "display_en": "Clarify the information requested.\nConfirm the recipient and approved route.\nDo not guess missing details.",
     "asset_ids": [
       "A06"
     ],
@@ -70,30 +85,29 @@
     "layout": "decision",
     "heading_fil": "Gamitin ang natutuhan",
     "heading_en": "Apply your learning",
-    "display_fil": "Piliin ang tamang tala, tiyakin ang impormasyon, at linawin ang tatanggap.",
-    "display_en": "Choose the appropriate record, verify information, and clarify its recipient.",
+    "display_fil": "Piliin ang tala ayon sa tanong.\nSuriin ang hindi malinaw na entry.\nIhatid lamang sa tamang tatanggap sa aprubadong paraan.",
+    "display_en": "Choose the record by the question.\nCheck the unclear entry.\nUse the approved route to the right recipient.",
     "asset_ids": [],
     "check": {
-      "prompt_fil": "Aling tala ang tumutugon sa “sino ang nabigyan na ng serbisyo”?",
-      "prompt_en": "Which record answers “who has received a service”?",
+      "prompt_fil": "Hiniling ng midwife kay Marites ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?",
+      "prompt_en": "The midwife asks Marites for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?",
       "options": [
         {
-          "fil": "Household profile",
-          "en": "Household profile"
+          "fil": "Gamitin ang master list bilang patunay na nabigyan na ng health teaching ang lahat ng nakatatanda.",
+          "en": "Use the master list as proof that all older residents received health teaching."
         },
         {
-          "fil": "Master list ng grupo",
-          "en": "Group master list"
+          "fil": "Gamitin ang registry, linawin muna ang hindi tiyak na entry, at ihatid ang natiyak na impormasyon sa midwife sa aprubadong paraan.",
+          "en": "Use the registry, clarify the uncertain entry, and give the verified information to the midwife through the approved route."
         },
         {
-          "fil": "Registry",
-          "en": "Registry"
+          "fil": "Kopyahin ang mga pangalan sa iniatas na form at hulaan ang kulang na detalye para maipasa agad.",
+          "en": "Copy the names into the assigned form and guess the missing detail so it can be submitted immediately."
         }
       ],
-      "correct_option_index": 2,
-      "feedback_fil": "Registry ang tinutukoy ng manual. Ang master list ay paggrupo ng mga tao; ang household profile ay larawan ng kabahayan. Sundin ang pangalan at gamit ng aprubadong lokal na form.",
-      "feedback_en": "The manual describes a registry. A master list groups people; a household profile describes a household. Follow the names and purposes of approved local forms."
+      "correct_option_index": 1,
+      "feedback_fil": "Ang registry ang tala ng mga nabigyan ng serbisyo ayon sa manual. Hindi patunay ng serbisyo ang master list. Linawin ang hindi tiyak na entry at sundin ang aprubadong lokal na paraan ng pagpapasa sa midwife.",
+      "feedback_en": "The manual describes the registry as the record of people who received a service. The master list does not prove service delivery. Clarify the uncertain entry and follow the approved local route to the midwife."
     }
   }
 ]
-

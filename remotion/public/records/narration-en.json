@@ -1,0 +1,48 @@
+{
+  "language": "en",
+  "durationSeconds": 39.21,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "After speaking with Aling Nena, Marites asks the midwife what information is needed.",
+      "start_ms": 0,
+      "end_ms": 5720
+    },
+    {
+      "zone": "household",
+      "index": 1,
+      "text": "A household profile describes one household. It does not prove that a service was given.",
+      "start_ms": 6020,
+      "end_ms": 12340
+    },
+    {
+      "zone": "master-list",
+      "index": 2,
+      "text": "A master list shows who belongs to a group. It does not record that a service was given.",
+      "start_ms": 12640,
+      "end_ms": 18240
+    },
+    {
+      "zone": "registry",
+      "index": 3,
+      "text": "Check the registry to see who received health teaching. Clarify any uncertain entry first.",
+      "start_ms": 18540,
+      "end_ms": 24620
+    },
+    {
+      "zone": "assigned-form",
+      "index": 4,
+      "text": "For an assigned form, confirm the requested details and recipient. Follow the approved local handoff route.",
+      "start_ms": 24920,
+      "end_ms": 32800
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Choose the record for the question, check the information, and do not guess.",
+      "start_ms": 33100,
+      "end_ms": 39140
+    }
+  ]
+}

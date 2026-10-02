@@ -6,6 +6,12 @@ import {
   HandrubSteps,
   calculateHandrubMetadata,
 } from "./hand-hygiene/HandrubSteps";
+import {
+  RECORDS_FALLBACK_DURATION,
+  RECORDS_FPS,
+  RecordsStory,
+  calculateRecordsMetadata,
+} from "./records/RecordsStory";
 
 // Compositions are authored at the lesson format (854×480, see
 // scripts/remotion-render.mjs) so the render needs no scaling. One
@@ -29,6 +35,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateHandrubMetadata}
           durationInFrames={HANDRUB_FALLBACK_DURATION}
           fps={HANDRUB_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`records-${language}`}
+          id={language === "fil" ? "RecordsStoryFil" : "RecordsStoryEn"}
+          component={RecordsStory}
+          calculateMetadata={calculateRecordsMetadata}
+          durationInFrames={RECORDS_FALLBACK_DURATION}
+          fps={RECORDS_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}

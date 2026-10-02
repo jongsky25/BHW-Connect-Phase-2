@@ -188,6 +188,15 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Pakikinig at paggabay kasama ang health team", "Listening and guiding with the health team"),
           }
+      : lesson?.lesson_key === "bhw-records"
+        ? {
+            src: "/training/bhw-1-1/records-2a1725eaf243.png",
+            alt: ui(
+              "Magkasamang tumitingin sina BHW Marites at ang midwife sa mga blangkong folder sa health station; walang nakikitang personal na datos.",
+              "BHW Marites and the midwife look at blank folders together in the health station; no personal data is visible.",
+            ),
+            caption: ui("Pagpili at paglinaw ng tala kasama ang health team", "Choosing and checking a record with the health team"),
+          }
       : null;
   const storyLayout = storyArt !== null;
   const items = lesson

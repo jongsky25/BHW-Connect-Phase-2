@@ -5,10 +5,10 @@
     "title_fil": "Mga talaan at impormasyon",
     "title_en": "Records and Information",
     "objectives_fil": [
-      "Maitugma ang apat na uri ng talaan sa gamit nito at maipaliwanag kung kanino ihahatid ang kaugnay na impormasyon."
+      "Sa kathang-isip na sitwasyon, maitugma ang household profile, master list, registry, at iniatas na form sa tanong na sinasagot ng bawat isa; masabi kung paano tiyakin ang detalye at ang tamang tatanggap bago magpasa."
     ],
     "objectives_en": [
-      "Match four record types to their purposes and explain who should receive relevant information."
+      "Given a fictional situation, match a household profile, master list, registry, and assigned form to the question each answers; explain how to verify details and the recipient before handing information over."
     ],
     "required": true
   },
@@ -21,8 +21,8 @@
       "asset_ids": [
         "A06"
       ],
-      "takeaway_fil": "Halimbawang tala lamang · walang tunay na personal na datos.",
-      "takeaway_en": "Learning examples only · no real personal data.",
+      "takeaway_fil": "Ang tala ay may tanong na sinasagot at taong gagamit nito.",
+      "takeaway_en": "A record answers a question for someone who will use it.",
       "check": null
     },
     {
@@ -33,20 +33,32 @@
       "asset_ids": [
         "A06"
       ],
-      "takeaway_fil": "Tanong na sinasagot: ano ang larawan ng kabahayan? Halimbawa lamang.",
-      "takeaway_en": "Question answered: what describes this household? Example only.",
+      "takeaway_fil": "Household profile: larawan ng isang kabahayan, hindi patunay ng serbisyong naibigay.",
+      "takeaway_en": "A household profile describes one household; it does not prove a service was given.",
       "check": null
     },
     {
-      "id": "list-registry",
+      "id": "master-list",
       "concept_ids": [
         "m1.provider.documents"
       ],
       "asset_ids": [
         "A06"
       ],
-      "takeaway_fil": "Sino ang nasa grupo? / Sino ang nabigyan ng serbisyo? Mga halimbawa lamang.",
-      "takeaway_en": "Who belongs to the group? / Who received a service? Examples only.",
+      "takeaway_fil": "Master list: sino ang kabilang sa isang grupo.",
+      "takeaway_en": "A master list shows who belongs to a group.",
+      "check": null
+    },
+    {
+      "id": "registry",
+      "concept_ids": [
+        "m1.provider.documents"
+      ],
+      "asset_ids": [
+        "A06"
+      ],
+      "takeaway_fil": "Registry: sino ang nabigyan ng serbisyo, batay sa natiyak na tala.",
+      "takeaway_en": "A registry shows who received a service, based on verified entries.",
       "check": null
     },
     {
@@ -58,8 +70,8 @@
       "asset_ids": [
         "A06"
       ],
-      "takeaway_fil": "Tamang impormasyon sa tamang tatanggap. Halimbawang form lamang.",
-      "takeaway_en": "Accurate information to the appropriate recipient. Sample form only.",
+      "takeaway_fil": "Bago ipasa: tiyakin ang hinihinging detalye, tatanggap, at aprubadong paraan.",
+      "takeaway_en": "Before handoff, confirm the requested details, recipient, and approved route.",
       "check": null
     },
     {
@@ -70,28 +82,28 @@
         "m1.competency"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Piliin ang tamang tala, tiyakin ang impormasyon, at linawin ang tatanggap.",
-      "takeaway_en": "Choose the appropriate record, verify information, and clarify its recipient.",
+      "takeaway_fil": "Piliin ang tala ayon sa tanong; tiyakin ang detalye bago magpasa.",
+      "takeaway_en": "Choose the record by the question; verify details before handoff.",
       "check": {
-        "prompt_fil": "Aling tala ang tumutugon sa “sino ang nabigyan na ng serbisyo”?",
-        "prompt_en": "Which record answers “who has received a service”?",
+        "prompt_fil": "Hiniling ng midwife kay Marites ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?",
+        "prompt_en": "The midwife asks Marites for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?",
         "options": [
           {
-            "fil": "Household profile",
-            "en": "Household profile"
+            "fil": "Gamitin ang master list bilang patunay na nabigyan na ng health teaching ang lahat ng nakatatanda.",
+            "en": "Use the master list as proof that all older residents received health teaching."
           },
           {
-            "fil": "Master list ng grupo",
-            "en": "Group master list"
+            "fil": "Gamitin ang registry, linawin muna ang hindi tiyak na entry, at ihatid ang natiyak na impormasyon sa midwife sa aprubadong paraan.",
+            "en": "Use the registry, clarify the uncertain entry, and give the verified information to the midwife through the approved route."
           },
           {
-            "fil": "Registry",
-            "en": "Registry"
+            "fil": "Kopyahin ang mga pangalan sa iniatas na form at hulaan ang kulang na detalye para maipasa agad.",
+            "en": "Copy the names into the assigned form and guess the missing detail so it can be submitted immediately."
           }
         ],
-        "correct_option_index": 2,
-        "feedback_fil": "Registry ang tinutukoy ng manual. Ang master list ay paggrupo ng mga tao; ang household profile ay larawan ng kabahayan. Sundin ang pangalan at gamit ng aprubadong lokal na form.",
-        "feedback_en": "The manual describes a registry. A master list groups people; a household profile describes a household. Follow the names and purposes of approved local forms."
+        "correct_option_index": 1,
+        "feedback_fil": "Ang registry ang tala ng mga nabigyan ng serbisyo ayon sa manual. Hindi patunay ng serbisyo ang master list. Linawin ang hindi tiyak na entry at sundin ang aprubadong lokal na paraan ng pagpapasa sa midwife.",
+        "feedback_en": "The manual describes the registry as the record of people who received a service. The master list does not prove service delivery. Clarify the uncertain entry and follow the approved local route to the midwife."
       }
     }
   ],
@@ -115,13 +127,15 @@
       "id": "m1.provider.documents",
       "read_ids": [
         "household-profile",
-        "list-registry",
+        "master-list",
+        "registry",
         "assigned-form",
         "check"
       ],
       "slide_ids": [
         "household-profile-slide",
-        "list-registry-slide",
+        "master-list-slide",
+        "registry-slide",
         "assigned-form-slide",
         "check-slide"
       ],
@@ -217,6 +231,38 @@
       "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
       "review_status": "approved",
       "content_hash": "5b37233368b572819d45bc852803a0dd16f444cb8a77e326fc387693d02c47f9"
+    },
+    {
+      "id": "records-story",
+      "path": "/training/bhw-1-1/records-story-fil-6bb45a17131f-poster.jpg",
+      "content_hash": "6bb45a17131f6e56b68b795ded847b9ef09e9fec16f43a408e5461fa029d4979",
+      "alt_fil": "Piliin ang tala ayon sa tanong: household profile para sa isang kabahayan; master list para sa kasapi ng grupo; registry para sa serbisyong naibigay; iniatas na form para sa hiniling na detalye. Linawin ang hindi tiyak na entry at tiyakin ang tatanggap at aprubadong paraan ng pagpapasa.",
+      "alt_en": "Choose the record for the question: household profile for one household; master list for group members; registry for services given; assigned form for requested details. Clarify uncertain entries and confirm the recipient and approved handoff route.",
+      "caption_fil": "Kathang-isip na halimbawa ni Marites. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example with Marites. The animated video has Filipino and English narration and captions.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/records) for lesson 1.1.5, using fictional record examples and no real personal data. Narration script and beat timings are in remotion/src/records/narration.ts and remotion/public/records; voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow the narration timings. Owner approved this asset and confirmed expert review on 2026-10-02.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-1/records-story-fil-5407fb7868ce.mp4",
+          "content_hash": "5407fb7868ceba2ea901a33f14aef3608255a551f3918808aa91fa2b2abef627",
+          "duration_s": 45,
+          "captions": {
+            "path": "/training/bhw-1-1/records-story-fil-4b3356b8dc1c.vtt",
+            "content_hash": "4b3356b8dc1c749f929b28835e229d89f67bb183d33805c81a2adc694eb29ecb"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-1/records-story-en-d1ad00a54e6a.mp4",
+          "content_hash": "d1ad00a54e6ac1e132379759d8eb55108f3d0052d77f5c94da0d0be80fa22521",
+          "duration_s": 40,
+          "captions": {
+            "path": "/training/bhw-1-1/records-story-en-82469aced241.vtt",
+            "content_hash": "82469aced241295a54c047abd6942172e644b054558ef6a65e9ea242f5abb2c7"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "records-story"
 }
