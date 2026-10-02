@@ -34,3 +34,9 @@ Video is an optional companion. Completion now depends on reaching the end and a
 - Confirm CI, run the scoped loader dry run, publish the intended lessons, and verify the live app in Filipino and English. Do not replace earlier content-hashed media in place.
 
 The deployment outcome is recorded separately from this build note.
+
+## Read narration follow-up
+
+The original build used Edge Read Aloud for both the Read player and the animated video. PR #226 subsequently replaced the Filipino and English animated video narration with Gemini, but did not change the Read player's six section tracks in either language. That left an audible voice mismatch within lesson 1.2.1.
+
+The follow-up Read tracks use Gemini `gemini-3.8-flash-tts`, voice `Kore`, with section-specific delivery guidance for the Vlanche–Mang Ernesto story. Each heading, sentence, and takeaway was synthesized separately; the Read manifest records the resulting audio timing and SHA-256. The approved video, lesson text, and learner check are unchanged. Review the new Filipino and English Read tracks before publishing this follow-up.
