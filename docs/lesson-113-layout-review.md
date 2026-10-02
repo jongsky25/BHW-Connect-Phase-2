@@ -29,13 +29,14 @@ The lesson uses the large type, scrolling story layout already used by 1.1.1 and
 
 On 2026-10-01, the owner confirmed that the wording was reviewed, the audio was approved, and the phone and tablet checks were completed, then authorized publication. The local planning route remains a facilitator-level check because it varies by location; the lesson makes no funding promise. The approved source is ready for publication to the pilot course.
 
-## Animated Video view — draft for review
+## Animated Video view — approved
 
 Following the released 1.1.5 and 1.1.4 pattern, lesson 1.1.3 gains a separate
 **Video** choice next to Basahin and Slides. It appears only when selected;
 Buong screen presents the selected view. The existing approved Read narration
 and Slides copy remain unchanged. The video is a new, separately reviewable
-asset and is not yet approved for pilot publication.
+asset. The owner approved the Filipino and English video on 2026-10-02 and
+authorized live deployment.
 
 The six animated beats follow Marites as she notices standing water, invites
 residents and the health team, records only what was seen, identifies who
@@ -44,7 +45,7 @@ a funding promise, and reports back. The Filipino and English scripts live in
 `remotion/src/community-organizer/narration.ts`; measured Gemini narration
 timings and voice tracks live in `remotion/public/community-organizer/`.
 Language-matched WebVTT captions and a poster accompany each video.
-The draft renders are 79 seconds in Filipino and 67 seconds in English at
+The approved renders are 79 seconds in Filipino and 67 seconds in English at
 854×480, with H.264 video and AAC audio. The preview files are available in
 this task's `outputs/` folder for owner review.
 
@@ -53,3 +54,5 @@ pace, caption timing, contrast and legibility on a phone, and the final summary
 frame. Verify that the video does not imply standing water caused illness or
 that a planning proposal receives guaranteed funding. The local planning route
 should be checked with a facilitator familiar with the barangay process.
+The approval covers this authored video; the exact local planning route remains
+a facilitator-level check, as in the already published lesson text.

@@ -41,4 +41,4 @@ Lesson 1.1.5 is the first released example in `remotion/src/records/`. Lesson
 1.1.4 follows it in `remotion/src/service-provider/`; its bilingual video
 was approved by the owner on 2026-10-02.
 Lesson 1.1.3 uses the same pattern in `remotion/src/community-organizer/`;
-its new video remains a review draft.
+its bilingual video was approved by the owner on 2026-10-02.
