@@ -6,6 +6,47 @@ afterEach(cleanup);
 const part=(id:string)=>({id,concept_ids:['concept'],asset_ids:[],heading_en:id,heading_fil:id,body_en:'Short content',body_fil:'Maikling aralin',check:null});
 const data={title_fil:'Manual',title_en:'Manual',chapters:[],completed:[],resumes:[],lessons:[{id:'lesson',module_id:'module',required:true,title_fil:'Lesson',title_en:'Lesson',objectives_fil:['Layunin'],objectives_en:['Objective'],revision:{id:'revision',read_sections:[part('first'),part('second')],slides:[{...part('slide'),display_en:'Slide content',display_fil:'Slide',layout:'scene'}],assets:[],sources:[]}}]} as unknown as ReferenceData;
 describe('route lesson viewer',()=>{
+  it('shows a featured video only in the Video view, including full screen',()=>{
+    const showModal = HTMLDialogElement.prototype.showModal;
+    const close = HTMLDialogElement.prototype.close;
+    HTMLDialogElement.prototype.showModal = function () {this.setAttribute('open','');};
+    HTMLDialogElement.prototype.close = function () {this.removeAttribute('open');};
+    const clip={id:'records-story',path:'/poster.png',alt_en:'Records story',alt_fil:'Kuwento ng tala',caption_en:'Records',caption_fil:'Mga tala',videos:{en:{path:'/records-en.mp4',captions:{path:'/records-en.vtt'}},fil:{path:'/records-fil.mp4',captions:{path:'/records-fil.vtt'}}}};
+    const videoLesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-records',revision:{...l.revision,assets:[clip],featured_asset_id:clip.id}}))} as unknown as ReferenceData;
+    try {
+      const {container}=render(<ReferenceLessons {...videoLesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+      expect(container.querySelector('video')).not.toBeInTheDocument();
+      expect(screen.getByRole('heading',{name:'first'})).toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button',{name:'Video'}));
+      expect(container.querySelector('video source')).toHaveAttribute('src','/records-en.mp4');
+      expect(screen.queryByRole('heading',{name:'first'})).not.toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+      expect(container.querySelector('video')).not.toBeInTheDocument();
+      expect(screen.getByText('Slide content')).toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button',{name:'Video'}));
+      fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
+      const dialog=container.querySelector('dialog')!;
+      expect(dialog.querySelector('video source')).toHaveAttribute('src','/records-en.mp4');
+      expect(container.querySelectorAll('video')).toHaveLength(1);
+      fireEvent.click(within(dialog).getByRole('button',{name:'Read'}));
+      expect(dialog.querySelector('video')).not.toBeInTheDocument();
+      expect(within(dialog).getByRole('heading',{name:'first'})).toBeInTheDocument();
+    } finally {
+      HTMLDialogElement.prototype.showModal = showModal;
+      HTMLDialogElement.prototype.close = close;
+    }
+  });
+  it('keeps the featured video completion requirement after moving it into its own view',()=>{
+    const clip={id:'records-story',path:'/poster.png',alt_en:'Records story',alt_fil:'Kuwento ng tala',caption_en:'Records',caption_fil:'Mga tala',videos:{en:{path:'/records-en.mp4'}}};
+    const videoLesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-records',revision:{...l.revision,assets:[clip],featured_asset_id:clip.id}}))} as unknown as ReferenceData;
+    const onComplete=vi.fn().mockResolvedValue(undefined);
+    const {container}=render(<ReferenceLessons {...videoLesson} modules={[]} locale="en" initialLessonId="lesson" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={onComplete}/>);
+    fireEvent.click(screen.getByRole('button',{name:'Next'}));
+    expect(screen.getByRole('button',{name:'Mark lesson complete'})).toBeDisabled();
+    fireEvent.click(screen.getByRole('button',{name:'Video'}));
+    fireEvent.ended(container.querySelector('video')!);
+    expect(screen.getByRole('button',{name:'Mark lesson complete'})).toBeEnabled();
+  });
   it('shows explicit clock times for the pilot morning story until its new revision is published',()=>{
     const old='At eight, BHW Marites leads a discussion. At ten, she meets a council member. At eleven, she calls the midwife.';
     const roleLesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-roles-hepo',revision:{...l.revision,read_sections:[{...part('morning'),body_en:old}]}}))} as unknown as ReferenceData;
