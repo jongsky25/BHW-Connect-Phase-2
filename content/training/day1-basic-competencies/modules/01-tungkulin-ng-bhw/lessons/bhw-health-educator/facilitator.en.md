@@ -19,12 +19,12 @@ Ask the group: *"Think of the last health talk in your barangay. Who was in the 
 
 ## [steps] Steps
 
-1. **Scene (Read "Start with your audience", first slide).** Point out that Marites first listens to what residents are asking, then explains. Ask: *"What did she do before she talked?"*
+1. **Scene (Read "Start with your audience", first slide).** Point out that Riza first listens to what residents are asking, then explains. Ask: *"What did she do before she talked?"*
 2. **Body and environment.** Explain that health education covers both the person and their surroundings — services, cleanliness, safety. Show the approved IEC material and say that BHWs teach with approved materials from the health team.
 3. **Life stages.** Use the life-stage visual. For each stage (infant's caregiver, young person, pregnant resident, older adult) ask the group for one question that person might have. Show that the same topic is discussed differently for each.
 4. **Every community group.** Return to the "who was not" list from the opening. Ask which of these the lesson calls sectors and life stages.
 5. **Choose time, place, language, format.** For one missing group, ask the group to change one thing — the time, the place, the language or the format — that would help that group attend.
-6. **Self-check.** Give the check scenario (Marites holds a barangay health discussion, but only parents attend) and let the group discuss before revealing the answer.
+6. **Self-check.** Give the check scenario (Riza holds a barangay health discussion, but only parents attend) and let the group discuss before revealing the answer.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -42,7 +42,7 @@ In pairs, each BHW chooses one group their barangay's health talks rarely reach.
 
 ## [answer-key] Self-check answer key
 
-- **"Marites holds a barangay health discussion, but only parents attend. What could she change to help young people take part?"** → **Ask young people when they can join and adapt the discussion to their questions.** Repeating the same discussion at the same time for parents does not reach young people, and leaving them uninvited skips them entirely. Remind the group to keep the information accurate and approved.
+- **"Riza holds a barangay health discussion, but only parents attend. What could she change to help young people take part?"** → **Ask young people when they can join and adapt the discussion to their questions.** Repeating the same discussion at the same time for parents does not reach young people, and leaving them uninvited skips them entirely. Remind the group to keep the information accurate and approved.
 
 ## [observe] What to observe
 

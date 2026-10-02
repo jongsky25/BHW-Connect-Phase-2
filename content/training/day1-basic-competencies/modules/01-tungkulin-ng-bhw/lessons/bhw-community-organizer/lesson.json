@@ -85,8 +85,8 @@
       "takeaway_fil": "Makinig sa tugon, iulat ang nakita, at dalhin ang usapin sa tamang lokal na proseso.",
       "takeaway_en": "Listen to responses, report what was seen, and use the local planning process.",
       "check": {
-        "prompt_fil": "Nagmungkahi ng ibang oras ang mga residente para sa usapan. Sinabi rin ng isa na ang naipong tubig ang sanhi ng pagkakasakit ng mga bata. Ano ang pinakamainam na susunod na gawin ni Marites?",
-        "prompt_en": "Residents suggest a different time for the discussion. One resident also says the standing water caused children to become ill. What should Marites do next?",
+        "prompt_fil": "Nagmungkahi ng ibang oras ang mga residente para sa usapan. Sinabi rin ng isa na ang naipong tubig ang sanhi ng pagkakasakit ng mga bata. Ano ang pinakamainam na susunod na gawin ni Riza?",
+        "prompt_en": "Residents suggest a different time for the discussion. One resident also says the standing water caused children to become ill. What should Riza do next?",
         "options": [
           {
             "fil": "Ituloy ang unang oras at sabihin na napatunayan na ang sanhi ng sakit.",
@@ -253,31 +253,31 @@
     },
     {
       "id": "community-organizer-story",
-      "path": "/training/bhw-1-1/community-organizer-story-fil-39db1307e648-poster.jpg",
-      "content_hash": "39db1307e6482e66765f0e86131353fb08fb6b70a5a90c799733c8ba9239704a",
-      "alt_fil": "Napansin ni Marites ang naipong tubig sa tatlong bakuran. Inanyayahan niya ang mga residente, purok leader, at health staff; ibinahagi ang nakita nang hindi nagsasabi ng di-napatunayang sanhi; at tinukoy kung sino ang magdadala ng usapin sa pagpaplano at magbabalik ng sagot.",
-      "alt_en": "Marites notices standing water in three yards. She invites residents, the purok leader, and health staff; reports what was seen without claiming an unverified cause; and identifies who will bring the concern into planning and report back.",
-      "caption_fil": "Kathang-isip na halimbawa ng pag-oorganisa ni Marites. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
-      "caption_en": "A fictional example of Marites organizing a community response. The animated video has Filipino and English narration and captions.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/community-organizer) for lesson 1.1.3. Narration script and measured beat timings are in remotion/src/community-organizer/narration.ts and remotion/public/community-organizer. Voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow narration timings. Owner approved both language versions on 2026-10-02; no claim that standing water caused illness or that funding is guaranteed.",
-      "review_status": "approved",
+      "path": "/training/bhw-1-1/community-organizer-riza-fil-c1a1a9bc8b2e-poster.jpg",
+      "content_hash": "c1a1a9bc8b2ec0bf7c3147dfe92665eb07598769de02ce40c9b00ead68d3ff66",
+      "alt_fil": "Napansin ni Riza ang naipong tubig sa tatlong bakuran. Inanyayahan niya ang mga residente, purok leader, at health staff; ibinahagi ang nakita nang hindi nagsasabi ng di-napatunayang sanhi; at tinukoy kung sino ang magdadala ng usapin sa pagpaplano at magbabalik ng sagot.",
+      "alt_en": "Riza notices standing water in three yards. She invites residents, the purok leader, and health staff; reports what was seen without claiming an unverified cause; and identifies who will bring the concern into planning and report back.",
+      "caption_fil": "Kathang-isip na halimbawa ng pag-oorganisa ni Riza. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example of Riza organizing a community response. The animated video has Filipino and English narration and captions.",
+      "provenance": "Revised original Remotion animation (remotion/src/community-organizer) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/community-organizer. Replaces the earlier Marites-named cut; this new version is draft for owner review, 2026-10-02. Earlier content-hashed media remain available for published revisions.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/community-organizer-story-fil-89f1dd45746d.mp4",
-          "content_hash": "89f1dd45746d3b9d0b9fd14d79536fc35fbb43107116ba943e1b0093f5f5ca0c",
-          "duration_s": 79,
+          "path": "/training/bhw-1-1/community-organizer-riza-fil-3c26d20c88e9.mp4",
+          "content_hash": "3c26d20c88e9d003f9a874d931db6291c0a0c18753d8d58517962db326c5d20f",
+          "duration_s": 72,
           "captions": {
-            "path": "/training/bhw-1-1/community-organizer-story-fil-c604828a8fb6.vtt",
-            "content_hash": "c604828a8fb692992982bdb784c15650f29f20cfdb96569c952b1c70f1cf377c"
+            "path": "/training/bhw-1-1/community-organizer-riza-fil-ccafa85c3773.vtt",
+            "content_hash": "ccafa85c377383384f1ad3cbe215b3ae81d215ba3850cfa6117d53115a3fc7f9"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/community-organizer-story-en-acc4cc4b66b3.mp4",
-          "content_hash": "acc4cc4b66b33857520cb2d7dc398b0125b4a15901c0e12675d4c50d81accb7d",
+          "path": "/training/bhw-1-1/community-organizer-riza-en-168066059198.mp4",
+          "content_hash": "16806605919849d79fd2cbb926dc76a1f6efb905832c946d4124d5a972fc529c",
           "duration_s": 67,
           "captions": {
-            "path": "/training/bhw-1-1/community-organizer-story-en-a80ed1727d41.vtt",
-            "content_hash": "a80ed1727d41f07bde0ff353dfedc3e3c4b2fddeb0201f95fc48d7384694e0cf"
+            "path": "/training/bhw-1-1/community-organizer-riza-en-8d6f40aa32b9.vtt",
+            "content_hash": "8d6f40aa32b9f70a3e826393b0400e137200fa025333c09ff70b74b19da4c4f0"
           }
         }
       }

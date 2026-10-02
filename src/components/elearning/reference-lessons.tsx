@@ -30,7 +30,7 @@ const RESUME_SAVE_DELAY_MS = 3000;
 // explicit clock times while the new authored revision awaits a national
 // course publisher. Once that revision is published, this is a no-op.
 function clarifyMorningTimes(body: string) {
-  if (!body.startsWith("At eight, BHW Marites")) return body;
+  if (!/^At eight, BHW (Marites|Riza)\b/.test(body)) return body;
   return body
     .replace("At eight,", "At 8:00 a.m.,")
     .replace("At ten,", "At 10:00 a.m.,")
@@ -135,7 +135,6 @@ export function ReferenceLessons(props: Props) {
   // section/mode changes, but never carry them into a different revision.
   const [answers, setAnswers] = useState<Record<string, number>>({});
   // Keyed by lesson id, like `answers`, so switching lessons doesn't lose it.
-  const [featuredWatched, setFeaturedWatched] = useState<Record<string, boolean>>({});
   const heading = useRef<HTMLHeadingElement>(null);
   const readerDialog = useRef<HTMLDialogElement>(null);
   const fullscreenTarget = useRef<HTMLDivElement>(null);
@@ -158,8 +157,8 @@ export function ReferenceLessons(props: Props) {
     ? {
         src: "/training/bhw-1-1/scene-8cdb1498a723.png",
         alt: ui(
-          "Si BHW Marites ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.",
-          "BHW Marites talks with residents; nearby, a mother and child speak with a midwife.",
+          "Si BHW Riza ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.",
+          "BHW Riza talks with residents; nearby, a mother and child speak with a midwife.",
         ),
         caption: ui("Isang umaga sa barangay", "One morning in the barangay"),
       }
@@ -176,8 +175,8 @@ export function ReferenceLessons(props: Props) {
         ? {
             src: "/training/bhw-1-1/community-organizer-4c7f7fa5b422.png",
             alt: ui(
-              "Nakikinig si BHW Marites habang tinatalakay ng mga residente at health staff ang mapa ng kanilang purok.",
-              "BHW Marites listens as residents and health staff discuss a map of their neighborhood.",
+              "Nakikinig si BHW Riza habang tinatalakay ng mga residente at health staff ang mapa ng kanilang purok.",
+              "BHW Riza listens as residents and health staff discuss a map of their neighborhood.",
             ),
             caption: ui("Sama-samang pagtalakay sa barangay", "Planning together in the barangay"),
           }
@@ -185,8 +184,8 @@ export function ReferenceLessons(props: Props) {
         ? {
             src: "/training/bhw-1-1/service-provider-10b884207b48.png",
             alt: ui(
-              "Nakikinig si BHW Marites kay Aling Nena sa labas ng barangay health station; nasa likuran ang midwife.",
-              "BHW Marites listens to Aling Nena outside a barangay health station; the midwife is in the background.",
+              "Nakikinig si BHW Riza kay Aling Nena sa labas ng barangay health station; nasa likuran ang midwife.",
+              "BHW Riza listens to Aling Nena outside a barangay health station; the midwife is in the background.",
             ),
             caption: ui("Pakikinig at paggabay kasama ang health team", "Listening and guiding with the health team"),
           }
@@ -194,10 +193,19 @@ export function ReferenceLessons(props: Props) {
         ? {
             src: "/training/bhw-1-1/records-2a1725eaf243.png",
             alt: ui(
-              "Magkasamang tumitingin sina BHW Marites at ang midwife sa mga blangkong folder sa health station; walang nakikitang personal na datos.",
-              "BHW Marites and the midwife look at blank folders together in the health station; no personal data is visible.",
+              "Magkasamang tumitingin sina BHW Riza at ang midwife sa mga blangkong folder sa health station; walang nakikitang personal na datos.",
+              "BHW Riza and the midwife look at blank folders together in the health station; no personal data is visible.",
             ),
             caption: ui("Pagpili at paglinaw ng tala kasama ang health team", "Choosing and checking a record with the health team"),
+          }
+      : lesson?.lesson_key === "uhc-coverage"
+        ? {
+            src: "/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png",
+            alt: ui(
+              "Nakikinig si BHW Vlanche kay Mang Ernesto sa labas ng barangay health station habang nagtatanong siya tungkol sa konsulta.",
+              "BHW Vlanche listens to Mang Ernesto outside a barangay health station as he asks about a consultation.",
+            ),
+            caption: ui("Ang tanong ni Mang Ernesto tungkol sa UHC", "Mang Ernesto's question about UHC"),
           }
       : null;
   const storyLayout = storyArt !== null;
@@ -219,8 +227,7 @@ export function ReferenceLessons(props: Props) {
     ? lesson.revision.assets.find((a) => a.id === lesson.revision.featured_asset_id)
     : undefined;
   const featuredVideo = featuredAsset && (featuredAsset.video || featuredAsset.videos) ? featuredAsset : undefined;
-  const featuredOk = !featuredVideo || Boolean(lesson && featuredWatched[lesson.id]);
-  const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered && featuredOk;
+  const canComplete = items.length > 0 && index === items.length - 1 && checksAnswered;
   const revealSummary = !item?.check || answer !== undefined;
   const promptShownInBody = item && "body_fil" in item && item.check
     ? repeatsCheckPrompt(en ? item.body_en : item.body_fil, en ? item.check.prompt_en : item.check.prompt_fil)
@@ -531,7 +538,6 @@ export function ReferenceLessons(props: Props) {
       <LessonAssetFigure
         asset={featuredVideo}
         en={en}
-        onEnded={() => setFeaturedWatched((old) => ({ ...old, [lesson.id]: true }))}
       />
     </div>
   );
@@ -666,7 +672,6 @@ export function ReferenceLessons(props: Props) {
             {!props.readOnly && <>
             {!done.has(lesson.id) && <p id="lesson-completion-help" className="text-sm" aria-live="polite">
               {canComplete ? ui("Maaari mo nang markahang tapos ang aralin.", "You can now mark this lesson complete.") :
-                !featuredOk ? ui("Panoorin muna ang video sa opsyong Video bago markahang tapos.", "Watch the video in the Video view before marking the lesson complete.") :
                 ui("Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.",
                   "Reach the end and answer every check in Read or Slides. Your first answer does not have to be correct. After a reload, answer the checks again.")}
             </p>}

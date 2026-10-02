@@ -6,10 +6,10 @@
       "m1.provider.firstcontact"
     ],
     "layout": "scene",
-    "heading_fil": "Si Marites ang unang nilapitan",
-    "heading_en": "Marites is the first contact",
-    "display_fil": "Lumapit si Aling Nena tungkol sa pangangailangan ng anak niya.\nKatuwang si Marites ng midwife sa primary care team.\nHindi niya kailangang sagutin o gamutin ang lahat.",
-    "display_en": "Aling Nena asks for help for her child.\nMarites works with the midwife in the primary care team.\nShe need not answer or treat everything.",
+    "heading_fil": "Si Riza ang unang nilapitan",
+    "heading_en": "Riza is the first contact",
+    "display_fil": "Lumapit si Aling Nena tungkol sa pangangailangan ng anak niya.\nKatuwang si Riza ng midwife sa primary care team.\nHindi niya kailangang sagutin o gamutin ang lahat.",
+    "display_en": "Aling Nena asks for help for her child.\nRiza works with the midwife in the primary care team.\nShe need not answer or treat everything.",
     "asset_ids": [
       "A01"
     ],
@@ -23,8 +23,8 @@
     "layout": "scene",
     "heading_fil": "Makinig bago gumabay",
     "heading_en": "Listen before guiding",
-    "display_fil": "Tinanong ni Marites kung anong tulong ang kailangan.\nPinakinggan niya ang sagot at nilinaw ang naunawaan.\nHindi siya nanghula ng sakit o paggamot.",
-    "display_en": "Marites asks what help is needed.\nShe listens and checks what she understood.\nShe does not guess at illness or treatment.",
+    "display_fil": "Tinanong ni Riza kung anong tulong ang kailangan.\nPinakinggan niya ang sagot at nilinaw ang naunawaan.\nHindi siya nanghula ng sakit o paggamot.",
+    "display_en": "Riza asks what help is needed.\nShe listens and checks what she understood.\nShe does not guess at illness or treatment.",
     "asset_ids": [
       "A05"
     ],
@@ -91,8 +91,8 @@
     "display_en": "Listen, stay within scope, guide, and follow through.",
     "asset_ids": [],
     "check": {
-      "prompt_fil": "Tinanong ni Aling Nena si Marites kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Marites ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?",
-      "prompt_en": "Aling Nena asks Marites what medicine to give her child. Giving that advice is outside Marites's training. What is her best response?",
+      "prompt_fil": "Tinanong ni Aling Nena si Riza kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Riza ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?",
+      "prompt_en": "Aling Nena asks Riza what medicine to give her child. Giving that advice is outside Riza's training. What is her best response?",
       "options": [
         {
           "fil": "Magmungkahi ng gamot batay sa karaniwang ginagawa ng kapitbahay.",
@@ -108,8 +108,8 @@
         }
       ],
       "correct_option_index": 2,
-      "feedback_fil": "Hindi nagbibigay si Marites ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.",
-      "feedback_en": "Marites does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions."
+      "feedback_fil": "Hindi nagbibigay si Riza ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.",
+      "feedback_en": "Riza does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions."
     }
   }
 ]

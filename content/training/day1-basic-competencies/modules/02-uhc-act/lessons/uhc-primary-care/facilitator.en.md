@@ -16,6 +16,8 @@ By the end of this short lesson the BHW can name the changes the lesson lists â€
 
 ## [opening] Opening
 
+In this continuing story, BHW Vlanche helps Mang Ernesto identify the next step.
+
 Ask the group: *"Think of the last resident you helped get to a health service. What happened between the moment they needed help and the moment they were served?"* Take two or three stories and write the steps of one story across the top of the manila paper. You will come back to it in step 3.
 
 ## [steps] Steps

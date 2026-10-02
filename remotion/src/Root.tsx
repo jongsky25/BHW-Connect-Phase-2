@@ -36,6 +36,12 @@ import {
   RolesHepoStory,
   calculateRolesHepoMetadata,
 } from "./roles-hepo/RolesHepoStory";
+import {
+  UHC_PURPOSE_FALLBACK_DURATION,
+  UHC_PURPOSE_FPS,
+  UhcPurposeStory,
+  calculateUhcPurposeMetadata,
+} from "./uhc-purpose/UhcPurposeStory";
 
 // Compositions are authored at the lesson format (854×480, see
 // scripts/remotion-render.mjs) so the render needs no scaling. One
@@ -124,6 +130,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateRecordsMetadata}
           durationInFrames={RECORDS_FALLBACK_DURATION}
           fps={RECORDS_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`uhc-purpose-${language}`}
+          id={language === "fil" ? "UhcPurposeStoryFil" : "UhcPurposeStoryEn"}
+          component={UhcPurposeStory}
+          calculateMetadata={calculateUhcPurposeMetadata}
+          durationInFrames={UHC_PURPOSE_FALLBACK_DURATION}
+          fps={UHC_PURPOSE_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}

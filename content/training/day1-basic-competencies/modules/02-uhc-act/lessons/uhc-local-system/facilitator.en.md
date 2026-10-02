@@ -16,6 +16,8 @@ By the end of this short lesson the BHW can say, in the lesson's words, what the
 
 ## [opening] Opening
 
+In this continuing story, BHW Vlanche considers how to share a barangay observation with the health team.
+
 Ask the group: *"If you noticed something in your barangay that could work better, who would you tell first? And after that person, where would it go?"* Write the names or offices they say into the boxes on the manila paper, in order. Leave gaps where nobody knows.
 
 ## [steps] Steps

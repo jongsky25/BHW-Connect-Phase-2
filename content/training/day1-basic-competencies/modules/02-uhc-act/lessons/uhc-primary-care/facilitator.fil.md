@@ -16,6 +16,8 @@ Sa pagtatapos ng maikling araling ito, kaya ng BHW na banggitin ang mga pagbabag
 
 ## [opening] Pambungad
 
+Sa kasunod na kuwento, si BHW Vlanche ang kasama ni Mang Ernesto sa pagtukoy ng susunod na hakbang.
+
 Itanong sa grupo: *"Alalahanin ang huling residenteng tinulungan n'yong makarating sa isang serbisyong pangkalusugan. Ano ang nangyari mula nang kailanganin niya ng tulong hanggang sa mabigyan siya ng serbisyo?"* Kumuha ng dalawa o tatlong kuwento at isulat sa itaas ng manila paper ang mga hakbang ng isang kuwento. Babalikan mo ito sa hakbang 3.
 
 ## [steps] Mga hakbang

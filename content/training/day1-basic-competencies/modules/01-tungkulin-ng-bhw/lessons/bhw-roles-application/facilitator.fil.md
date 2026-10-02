@@ -16,11 +16,11 @@ Sa pagtatapos ng maikling araling ito, kaya ng BHW na pangalanan ang mga tungkul
 
 ## [opening] Pambungad
 
-Basahin nang malakas ang tagubilin ng midwife mula sa manila paper: *"Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon."* Saka itanong: *"Ilang magkakaibang bagay ang ipinapagawa niya kay Marites? Bilangin natin."* Salungguhitan ang bawat isa habang binabanggit ng grupo.
+Basahin nang malakas ang tagubilin ng midwife mula sa manila paper: *"Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon."* Saka itanong: *"Ilang magkakaibang bagay ang ipinapagawa niya kay Riza? Bilangin natin."* Salungguhitan ang bawat isa habang binabanggit ng grupo.
 
 ## [steps] Mga hakbang
 
-1. **Isang obserbasyon (Read "Isang obserbasyon, maraming hakbang", unang slide).** May naipong tubig sa tatlong bakuran na nakita ni Marites. Itanong: *"Ano ang nakita niya? Ano ang hindi pa niya alam?"* Idiin: basahin ang tagubilin, linawin ang hindi tiyak, at ihiwalay ang nakita sa hinala. Walang diagnosis mula sa obserbasyon sa paligid.
+1. **Isang obserbasyon (Read "Isang obserbasyon, maraming hakbang", unang slide).** May naipong tubig sa tatlong bakuran na nakita ni Riza. Itanong: *"Ano ang nakita niya? Ano ang hindi pa niya alam?"* Idiin: basahin ang tagubilin, linawin ang hindi tiyak, at ihiwalay ang nakita sa hinala. Walang diagnosis mula sa obserbasyon sa paligid.
 2. **Pagtuturo (Read "Piliin ang pagtuturong kailangan", ikalawang slide).** Itanong: *"Paano mo bubuksan ang usapan sa pamilya, sa sarili mong salita?"* Kumuha ng dalawa o tatlong pambungad. Ituro ang halimbawa ng aralin: *"Ano po ang napapansin ninyo sa tubig na naiipon dito?"* — makinig bago magpaliwanag. Itanong kung anong tungkulin ito (Health Educator).
 3. **Pag-oorganisa (Read "Tukuyin ang mga makakatuwang", ikatlong slide).** Itanong: *"Sino pa ang kakausapin mo para sa sama-samang gawain?"* → mga residente, purok leader, kagawad, health staff. Itanong: *"Bakit hindi dapat ang BHW na lang ang magpasya para sa lahat?"* Itanong kung anong tungkulin ito (Community Organizer).
 4. **Handover (Read "Ihanda ang maikling handover", ikaapat na slide).** Ipakita ang tatlong linya: *Nakita · Nagawa · Kailangan.* Basahin nang malakas ang halimbawang handover ng aralin. Itanong: *"Aling bahagi ang obserbasyon? Alin ang ginawa niya? Alin ang kailangan pa?"* Ipakita na kaugnay na impormasyon lang ang ibinabahagi sa tamang tao at tugma ito sa naitala.
@@ -41,7 +41,7 @@ Basahin nang malakas ang tagubilin ng midwife mula sa manila paper: *"Itala ang 
 
 ## [practice] Gawaing pagsasanay
 
-Magkapares, gaganap ang isang BHW bilang midwife at ang isa bilang Marites. Magbibigay si "Marites" ng pasalitang handover tungkol sa naipong tubig sa tatlong linya — nakita, nagawa, kailangan pa — saka sasabihin kung anong mga tungkulin ang ginamit niya at paano niya sinunod ang tagubilin. Maaaring magtanong ng isang paglilinaw ang "midwife", at dapat itong sagutin ni "Marites" nang walang iniimbento. Magpalit ng papel, at sa pagkakataong ito gumamit ng sitwasyon mula sa sariling barangay ng BHW (walang pangalan ng residente). Panoorin ang pasalitang handover ng bawat BHW; huwag umasa sa nakasulat na tala.
+Magkapares, gaganap ang isang BHW bilang midwife at ang isa bilang Riza. Magbibigay si "Riza" ng pasalitang handover tungkol sa naipong tubig sa tatlong linya — nakita, nagawa, kailangan pa — saka sasabihin kung anong mga tungkulin ang ginamit niya at paano niya sinunod ang tagubilin. Maaaring magtanong ng isang paglilinaw ang "midwife", at dapat itong sagutin ni "Riza" nang walang iniimbento. Magpalit ng papel, at sa pagkakataong ito gumamit ng sitwasyon mula sa sariling barangay ng BHW (walang pangalan ng residente). Panoorin ang pasalitang handover ng bawat BHW; huwag umasa sa nakasulat na tala.
 
 ## [answer-key] Susi sa self-check
 

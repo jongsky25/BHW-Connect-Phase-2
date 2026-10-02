@@ -15,8 +15,8 @@ export type CommunityOrganizerBeat = {
 export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = [
   {
     id: "observe",
-    fil: "Napansin ni BHW Marites ang naipong tubig sa tatlong bakuran. Kinausap niya ang mga residente at nagtanong kung ano rin ang napansin nila.",
-    en: "BHW Marites notices standing water in three yards. She speaks with residents and asks what they have noticed too.",
+    fil: "Napansin ni BHW Riza ang naipong tubig sa tatlong bakuran. Kinausap niya ang mga residente at nagtanong kung ano rin ang napansin nila.",
+    en: "BHW Riza notices standing water in three yards. She speaks with residents and asks what they have noticed too.",
     title_fil: "Mula sa nakita",
     title_en: "Start with what you saw",
     detail_fil: "Makinig sa mga residente.",
@@ -24,8 +24,8 @@ export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = [
   },
   {
     id: "invite",
-    fil: "Inanyayahan ni Marites ang mga residente, purok leader, at health staff sa usapan. May nagmungkahi ng ibang oras; pinakinggan niya iyon bago sila pumili ng oras.",
-    en: "Marites invites residents, the purok leader, and health staff to talk. Someone suggests another time; she listens before they choose a time together.",
+    fil: "Inanyayahan ni Riza ang mga residente, purok leader, at health staff sa usapan. May nagmungkahi ng ibang oras; pinakinggan niya iyon bago sila pumili ng oras.",
+    en: "Riza invites residents, the purok leader, and health staff to talk. Someone suggests another time; she listens before they choose a time together.",
     title_fil: "Anyayahang makilahok",
     title_en: "Invite participation",
     detail_fil: "Makibagay sa mungkahi ng residente.",
@@ -33,8 +33,8 @@ export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = [
   },
   {
     id: "verify",
-    fil: "Isinulat ni Marites ang nakita: may naipong tubig sa tatlong bakuran. Hindi niya sinabing iyon ang sanhi ng pagkakasakit ng mga bata, dahil hindi pa iyon napatunayan.",
-    en: "Marites records what she saw: standing water in three yards. She does not claim it caused children to become ill, because that has not been established.",
+    fil: "Isinulat ni Riza ang nakita: may naipong tubig sa tatlong bakuran. Hindi niya sinabing iyon ang sanhi ng pagkakasakit ng mga bata, dahil hindi pa iyon napatunayan.",
+    en: "Riza records what she saw: standing water in three yards. She does not claim it caused children to become ill, because that has not been established.",
     title_fil: "Nakita, hindi hinala",
     title_en: "Seen, not assumed",
     detail_fil: "Ibahagi ang tiyak na obserbasyon.",
@@ -60,8 +60,8 @@ export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = [
   },
   {
     id: "summary",
-    fil: "Bilang Community Organizer, nakikinig si Marites, pinag-uugnay ang mga tao, iniuulat ang nakita sa halip na ang hinala, at sinusundan ang lokal na proseso hanggang may maibalik na sagot sa mga residente.",
-    en: "As a Community Organizer, Marites listens, connects people, reports what was seen rather than assumed, and follows the local process until residents receive a response.",
+    fil: "Bilang Community Organizer, nakikinig si Riza, pinag-uugnay ang mga tao, iniuulat ang nakita sa halip na ang hinala, at sinusundan ang lokal na proseso hanggang may maibalik na sagot sa mga residente.",
+    en: "As a Community Organizer, Riza listens, connects people, reports what was seen rather than assumed, and follows the local process until residents receive a response.",
     title_fil: "Makinig · Pag-ugnayin",
     title_en: "Listen · Connect",
     detail_fil: "Iulat ang nakita · Magbalik ng sagot",

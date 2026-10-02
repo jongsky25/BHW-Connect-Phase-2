@@ -17,8 +17,7 @@ export function LessonAssetFigure({
 }: {
   asset: LessonAsset;
   en: boolean;
-  // Fired when a video asset finishes playing. Used by the lesson-level
-  // featured asset to gate lesson completion on having watched it.
+  // Optional callback for a caller that needs to react when playback ends.
   onEnded?: () => void;
 }) {
   const textId = useId();

@@ -16,6 +16,8 @@ Sa pagtatapos ng maikling araling ito, kaya ng BHW na sabihin, ayon sa salita ng
 
 ## [opening] Pambungad
 
+Sa kasunod na kuwento, sinusuri ni BHW Vlanche kung paano maipaaabot ang obserbasyon mula sa barangay sa health team.
+
 Itanong sa grupo: *"Kung may napansin kayong puwedeng mapabuti sa barangay n'yo, kanino n'yo ito unang sasabihin? At pagkatapos niya, saan ito pupunta?"* Isulat nang sunod-sunod sa mga kahon sa manila paper ang mga pangalan o opisinang sinabi nila. Iwanang bakante ang mga bahaging walang nakaaalam.
 
 ## [steps] Mga hakbang

@@ -72,8 +72,8 @@
       "takeaway_fil": "Nagiging mabisa ang pagtuturo kapag ang paksa at paraan ay angkop sa kausap at may pagkakataon siyang makilahok.",
       "takeaway_en": "Health education works better when its topic and approach fit the audience and everyone has a chance to take part.",
       "check": {
-        "prompt_fil": "Nagsagawa si Marites ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?",
-        "prompt_en": "Marites holds a barangay health discussion, but only parents attend. What could she change to help young people take part?",
+        "prompt_fil": "Nagsagawa si Riza ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?",
+        "prompt_en": "Riza holds a barangay health discussion, but only parents attend. What could she change to help young people take part?",
         "options": [
           {
             "fil": "Tanungin ang mga kabataan kung kailan sila makakasali at iangkop ang talakayan sa kanilang mga tanong.",
@@ -220,31 +220,31 @@
     },
     {
       "id": "health-educator-story",
-      "path": "/training/bhw-1-1/health-educator-story-fil-1cf33284b1f4-poster.jpg",
-      "content_hash": "1cf33284b1f49c23e754e72bd993c2ec65654d9969655e3bbc68823206f91ce1",
-      "alt_fil": "Sa talakayang pangkalusugan, nakikinig muna si Marites sa mga tanong, gumagamit ng aprubadong materyal, inaangkop ang usapan sa iba't ibang yugto ng buhay, at naghahanap ng paraan upang makasali rin ang mga kabataan at ibang grupo.",
-      "alt_en": "At a health discussion, Marites listens to questions first, uses approved materials, adapts the conversation to different life stages, and finds ways for young people and other groups to participate.",
-      "caption_fil": "Kathang-isip na halimbawa ng pagtuturo ni Marites bilang BHW. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
-      "caption_en": "A fictional example of Marites teaching as a BHW. The animated video has Filipino and English narration and captions.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/health-educator) for lesson 1.1.2. Narration script and measured beat timings are in remotion/src/health-educator/narration.ts and remotion/public/health-educator. Voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow narration timings. Owner approved both language versions on 2026-10-02; no detailed clinical advice is depicted or instructed.",
-      "review_status": "approved",
+      "path": "/training/bhw-1-1/health-educator-riza-fil-a80b812f33d6-poster.jpg",
+      "content_hash": "a80b812f33d629dc8cc9022a2776104365547e0d66ff0d6c9608ed5f0bf82ee2",
+      "alt_fil": "Sa talakayang pangkalusugan, nakikinig muna si Riza sa mga tanong, gumagamit ng aprubadong materyal, inaangkop ang usapan sa iba't ibang yugto ng buhay, at naghahanap ng paraan upang makasali rin ang mga kabataan at ibang grupo.",
+      "alt_en": "At a health discussion, Riza listens to questions first, uses approved materials, adapts the conversation to different life stages, and finds ways for young people and other groups to participate.",
+      "caption_fil": "Kathang-isip na halimbawa ng pagtuturo ni Riza bilang BHW. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example of Riza teaching as a BHW. The animated video has Filipino and English narration and captions.",
+      "provenance": "Revised original Remotion animation (remotion/src/health-educator) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/health-educator. Replaces the earlier Marites-named cut; this new version is draft for owner review, 2026-10-02. Earlier content-hashed media remain available for published revisions.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/health-educator-story-fil-319db4972570.mp4",
-          "content_hash": "319db49725700a79e2df58049a9c34522d831610986865e30fd91a9821f3f4f5",
-          "duration_s": 84,
+          "path": "/training/bhw-1-1/health-educator-riza-fil-89125ef49cdf.mp4",
+          "content_hash": "89125ef49cdf7f455165f8069f8b13db364bc16b79198dbbd9bd40bd2f4fc915",
+          "duration_s": 76,
           "captions": {
-            "path": "/training/bhw-1-1/health-educator-story-fil-f5175a537d8b.vtt",
-            "content_hash": "f5175a537d8ba12aaec0b8584fef38d46047f4e9b8d13c49dee363e15b8e4ac3"
+            "path": "/training/bhw-1-1/health-educator-riza-fil-4cccb1712a97.vtt",
+            "content_hash": "4cccb1712a97abf9172d301b7646a1000877b4df85acf74b65fd5b0140d8ce47"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/health-educator-story-en-dbb56ea4ab27.mp4",
-          "content_hash": "dbb56ea4ab27102dfbb85b5d870932b91b18d2b14e21d5f0549bc7fe81eff295",
-          "duration_s": 76,
+          "path": "/training/bhw-1-1/health-educator-riza-en-8b9134f041c5.mp4",
+          "content_hash": "8b9134f041c59d75ac89a71d650aa6f6c526592b348ba88474dde3f240fb26d1",
+          "duration_s": 73,
           "captions": {
-            "path": "/training/bhw-1-1/health-educator-story-en-17fc2e805fbe.vtt",
-            "content_hash": "17fc2e805fbe2699ec5300bb595a495e388a919c1de2b8473075a06fc5b91356"
+            "path": "/training/bhw-1-1/health-educator-riza-en-7f4462712f2f.vtt",
+            "content_hash": "7f4462712f2fdfaa612bd509f37853e44e0e47a5f6a6d50fc3ddeb5ab242cf9e"
           }
         }
       }

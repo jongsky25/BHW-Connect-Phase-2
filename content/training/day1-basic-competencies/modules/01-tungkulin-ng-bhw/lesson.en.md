@@ -1,6 +1,6 @@
-## [scenario/core] BHW Marites' morning
+## [scenario/core] BHW Riza' morning
 
-Eight in the morning. BHW Marites is out in the purok with a dengue
+Eight in the morning. BHW Riza is out in the purok with a dengue
 tarpaulin under her arm. Fifteen mothers are sitting in front of her.
 
 Ten o'clock, she is at the barangay hall, talking to the health kagawad
@@ -8,7 +8,7 @@ about Saturday's clean-up drive — she has brought the list of households
 with standing water in their back yards.
 
 Eleven o'clock, Aling Nena knocks. Her eldest has been coughing for
-three weeks. Marites takes his temperature, writes down what she finds,
+three weeks. Riza takes his temperature, writes down what she finds,
 and walks them over to the midwife.
 
 One morning. Three different kinds of work. But only one role.
@@ -78,7 +78,7 @@ barangay's health programmes well enough.
 
 ## [concept/core] Health Educator {m1.role.educator, m1.educator.lifestages, m1.educator.allsectors}
 
-When Marites stood in front of those fifteen mothers, she was a Health
+When Riza stood in front of those fifteen mothers, she was a Health
 Educator.
 
 The Health Educator's role is to give people the knowledge to keep both
@@ -101,7 +101,7 @@ sector of the community for the risks that belong to each stage of life.
 
 ## [concept/core] Community Organizer {m1.role.organizer, m1.organizer.participation, m1.organizer.planningteam, m1.organizer.liph}
 
-When Marites talked to the kagawad about the clean-up drive, she was a
+When Riza talked to the kagawad about the clean-up drive, she was a
 Community Organizer.
 
 The Community Organizer keeps good relationships and open communication
@@ -128,7 +128,7 @@ health, not merely a task list.
 
 ## [concept/core] Health Service Provider {m1.role.provider, m1.provider.firstcontact, m1.provider.guide, m1.provider.initialservices, m1.provider.monitoring}
 
-When Aling Nena knocked, Marites was a Health Service Provider.
+When Aling Nena knocked, Riza was a Health Service Provider.
 
 The BHW is part of the city or municipal **primary care team**, and the
 barangay midwife's partner in delivering health services.

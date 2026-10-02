@@ -3,6 +3,7 @@
 Implemented against main `93fa455` on 25 September 2026, addressing the remaining learner-flow items in content-assessment-2026-09.md Phase 0.
 
 - A new completion requires being on the final section/slide and attempting every check in the selected modality. Either Read or Slides is sufficient; the first answer need not be correct.
+- The separate Video view is optional and does not gate completion. It remains available for replay in either language.
 - Attempts stay visible across section and modality navigation and are scoped to lesson, revision, modality and section. Reload restores the existing server resume position, but checks must be attempted again. The interface explains this.
 - Read takeaways and check-slide summaries appear after a response. Read practice precedes the takeaway. On check sections, narration unlocks after the response because the existing recording includes the takeaway; other sections retain their audio.
 - Saved completion shows an explicit next-lesson link, or a return-to-list link for the last lesson. Existing route sibling navigation remains available. The route supplies the next published sibling without fetching its revision.

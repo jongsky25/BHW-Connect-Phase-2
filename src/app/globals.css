@@ -206,6 +206,25 @@ body {
   object-position: 50% 54%;
 }
 
+.reference-story[data-lesson="uhc-coverage"][data-scene="section-1"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="slide-section-1"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="check"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="slide-check"] .reference-story-art img {
+  object-position: 50% 50%;
+}
+
+.reference-story[data-lesson="uhc-coverage"][data-scene="section-2"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="slide-section-2"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="verify"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="slide-verify"] .reference-story-art img {
+  object-position: 32% 50%;
+}
+
+.reference-story[data-lesson="uhc-coverage"][data-scene="benefit"] .reference-story-art img,
+.reference-story[data-lesson="uhc-coverage"][data-scene="slide-benefit"] .reference-story-art img {
+  object-position: 68% 50%;
+}
+
 .reference-story-copy {
   align-self: center;
   min-width: 0;

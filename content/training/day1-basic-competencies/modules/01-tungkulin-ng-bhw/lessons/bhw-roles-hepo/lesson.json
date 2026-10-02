@@ -73,8 +73,8 @@
       "takeaway_fil": "Maaaring pagsamahin ng BHW ang pagtuturo, pag-oorganisa, at pagtulong sa serbisyo upang isulong ang kalusugan.",
       "takeaway_en": "A BHW can combine education, community organizing, and service support to promote health.",
       "check": {
-        "prompt_fil": "Tinipon ni Marites ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?",
-        "prompt_en": "Marites brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?",
+        "prompt_fil": "Tinipon ni Riza ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?",
+        "prompt_en": "Riza brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?",
         "options": [
           {
             "fil": "Health Service Provider",
@@ -279,31 +279,31 @@
     },
     {
       "id": "roles-hepo-story",
-      "path": "/training/bhw-1-1/roles-hepo-story-fil-39f2c02bc935-poster.jpg",
-      "content_hash": "39f2c02bc9350f7fe4087525c274dd1bf6ac9c77aeca82ca30154ea8b9724ebd",
-      "alt_fil": "Sa isang umaga, nagtuturo si Marites, inaanyayahan ang mga residente na magplano, at ginagabayan si Aling Nena na makausap ang midwife. Magkakaugnay ang tatlong gawaing ito sa papel ng BHW at HEPO.",
-      "alt_en": "In one morning, Marites teaches, invites residents to plan, and helps Aling Nena contact the midwife. These three duties connect in the BHW and HEPO role.",
+      "path": "/training/bhw-1-1/roles-hepo-riza-fil-5e4920aab7ea-poster.jpg",
+      "content_hash": "5e4920aab7ea9cf2da6545c5a9fc55c8d66820e13f59e73eaefbced942465b46",
+      "alt_fil": "Sa isang umaga, nagtuturo si Riza, inaanyayahan ang mga residente na magplano, at ginagabayan si Aling Nena na makausap ang midwife. Magkakaugnay ang tatlong gawaing ito sa papel ng BHW at HEPO.",
+      "alt_en": "In one morning, Riza teaches, invites residents to plan, and helps Aling Nena contact the midwife. These three duties connect in the BHW and HEPO role.",
       "caption_fil": "Kathang-isip na halimbawa ng magkakaugnay na tungkulin ng BHW. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
       "caption_en": "A fictional example of connected BHW duties. The animated video has Filipino and English narration and captions.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/roles-hepo) for lesson 1.1.1. Narration script and measured beat timings are in remotion/src/roles-hepo/narration.ts and remotion/public/roles-hepo. Voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow narration timings. Owner approved both language versions on 2026-10-02; the HEPO visual explains connected duties, not a formal appointment or official organizational chart.",
-      "review_status": "approved",
+      "provenance": "Revised original Remotion animation (remotion/src/roles-hepo) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/roles-hepo. Replaces the earlier Marites-named cut; this new version is draft for owner review, 2026-10-02. Earlier content-hashed media remain available for published revisions.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/roles-hepo-story-fil-53fe6d588487.mp4",
-          "content_hash": "53fe6d588487829c1a4df3aec84c7f7e41cba3e16ad256ffacde65276bd14d30",
-          "duration_s": 85,
+          "path": "/training/bhw-1-1/roles-hepo-riza-fil-f3db3043043a.mp4",
+          "content_hash": "f3db3043043a402660be2ad10b44271d42fc501bdb0f5f69fcd5d4e245a77901",
+          "duration_s": 76,
           "captions": {
-            "path": "/training/bhw-1-1/roles-hepo-story-fil-32148485b06f.vtt",
-            "content_hash": "32148485b06f63358f10d7df3d6cc945104a86169c97bc23fead4ee0a9d69132"
+            "path": "/training/bhw-1-1/roles-hepo-riza-fil-aa49fd8c5fd7.vtt",
+            "content_hash": "aa49fd8c5fd7dec953885d7eb60268a3bad069ac01513775722d29330aea7da2"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/roles-hepo-story-en-130a46166258.mp4",
-          "content_hash": "130a4616625805b0b6b000a5f7315e24b805f02c29a03f8ddc3e1a58c24f92ef",
-          "duration_s": 71,
+          "path": "/training/bhw-1-1/roles-hepo-riza-en-d43832df9211.mp4",
+          "content_hash": "d43832df9211b4e1c3a20359f7f93ad12a3dac91407357b56dc1c7571ba6486c",
+          "duration_s": 72,
           "captions": {
-            "path": "/training/bhw-1-1/roles-hepo-story-en-f2bcf1509be2.vtt",
-            "content_hash": "f2bcf1509be23f78900b60e1e09157c2a8053d5d9d09e80c15ece37b52e1ed21"
+            "path": "/training/bhw-1-1/roles-hepo-riza-en-62f733e9977a.vtt",
+            "content_hash": "62f733e9977a86897c54e289beac284d4252147f91d916fb20d5499dc113f104"
           }
         }
       }

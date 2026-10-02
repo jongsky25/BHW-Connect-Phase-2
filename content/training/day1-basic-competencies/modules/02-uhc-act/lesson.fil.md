@@ -1,10 +1,10 @@
 ## [scenario/core] Ang tanong ni Mang Ernesto
 
 "Totoo bang libre na ang konsulta sa health center? Nabalitaan ko lang sa
-radyo." Iyan ang tanong ni Mang Ernesto kay BHW Beth isang umaga, habang
+radyo." Iyan ang tanong ni Mang Ernesto kay BHW Vlanche isang umaga, habang
 naghihintay sa pila.
 
-Alam ni Beth na may bago ngang batas — narinig niya ito sa isang pagpupulong
+Alam ni Vlanche na may bago ngang batas — narinig niya ito sa isang pagpupulong
 noong nakaraang buwan. Pero sa totoo lang, hindi niya kayang ipaliwanag nang
 maayos kung ano talaga ang binago nito. "Titingnan ko po at babalikan ko
 kayo," ang sagot niya — sagot na, sa totoo lang, ay hindi niya gustong ibigay
@@ -83,14 +83,14 @@ hindi pa.
 
 :::check
 ? Nabalitaan ni Mang Ernesto na "libre na ang konsulta." Alin sa mga
-  sumusunod ang pinakatamang paliwanag ni BHW Beth?
+  sumusunod ang pinakatamang paliwanag ni BHW Vlanche?
 - Libre na ang lahat ng gamot at ospital dahil sa UHC
 + Maaaring sakop ang konsulta kung nakarehistro siya sa primary care
   provider ng PhilHealth, pero hindi libre ang lahat ng serbisyo
 - Hindi totoo iyon, walang binago ang UHC sa pagbabayad
 > Tama! Pinalalawak ng UHC ang PhilHealth para isama ang outpatient
   consultation ng mga nakarehistro sa primary care provider. Hindi nito
-  ginagawang libre ang lahat, kaya tinutulungan ni Beth si Mang Ernesto
+  ginagawang libre ang lahat, kaya tinutulungan ni Vlanche si Mang Ernesto
   na tingnan ang rehistro niya sa halip na mangakong libre ang
   pagbisita.
 :::

@@ -9,21 +9,21 @@ By the end of this lesson, a BHW can choose among a household profile, master li
 
 ## [prepare] Prepare
 
-- Read the six Read sections and Slides in Filipino and English. Both modes follow the same Marites and midwife situation.
+- Read the six Read sections and Slides in Filipino and English. Both modes follow the same Riza and midwife situation.
 - Ask the supervising midwife or health team which local forms are used, who assigns and receives them, and how to store and submit them. “Recipient: midwife” in the fictional example is not a universal route.
 - Bring **blank** local forms only. Never use completed forms with real household or patient details, and do not ask learners to use real names. The illustration and HH-014 example are fictional, not official forms.
 - Confirm how to resolve an unclear entry locally. This lesson teaches checking and asking, not changing an official record from memory.
 
 ## [opening] Opening
 
-Marites has returned from speaking with Aling Nena. Ask: *“If the midwife asks who already received health teaching, which record would you check first, and why?”* Keep the initial answers visible and return to them after practice.
+Riza has returned from speaking with Aling Nena. Ask: *“If the midwife asks who already received health teaching, which record would you check first, and why?”* Keep the initial answers visible and return to them after practice.
 
 ## [steps] Steps
 
 1. **After the visit.** Ask what information the team needs and why record purpose matters. Explain that the examples are fictional and blank.
 2. **Household profile.** Show HH-014 and ask what it describes. Check that learners do not treat a household description as proof of service delivery.
 3. **Master list.** Show the older-resident group card. Ask what it answers and whether group membership proves health teaching occurred.
-4. **Registry.** Present the midwife's service question. Ask why the registry is relevant and what Marites should do about one unclear entry.
+4. **Registry.** Present the midwife's service question. Ask why the registry is relevant and what Riza should do about one unclear entry.
 5. **Assigned form.** Point to “recipient: midwife.” Ask what was requested, what has been verified, and which locally confirmed handoff route applies.
 6. **Self-check.** Let each learner choose before showing feedback. Discuss why a group list is not a service record and why missing details must not be guessed.
 
