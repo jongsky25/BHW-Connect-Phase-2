@@ -17,7 +17,7 @@ Riza lessons at them would reintroduce a character mismatch.
 - Re-rendered all 56 Read sections across those five lessons with Gemini in
   both languages. The narration manifest matches the current Read text.
 - Generated one bilingual pair of content-hashed MP4s and WebVTT caption files
-  per lesson. The new assets remain `draft` until the owner listens and approves.
+  per lesson. The owner reviewed and approved all five pairs on 2026-10-02.
 - Kept the older content-hashed files for already-published revisions.
 - Made the narrated story visible from the first Read screen and first slide;
   the Video view is labeled “Narrated story” / “Kuwentong may salaysay.”
@@ -37,10 +37,10 @@ Vlanche and Mang Ernesto illustration in Read and Slides, links to its already
 approved Gemini narrated story, and removes duplicated numbers on its first
 slide. It does not change the approved 1.2.2 media files.
 
-## Release gate
+## Release
 
-Listen to both language previews for lessons 1.1.1–1.1.5. After approval,
-change the five featured asset statuses to `approved`, run CI and a scoped
-loader dry run, publish only those five lesson keys, and verify the live video
-paths and adjacent lesson pointers. Until then, the five new story assets
-remain draft.
+The owner listened to the Filipino and English previews for lessons
+1.1.1–1.1.5 and approved live deployment on 2026-10-02. The five featured
+assets are marked `approved`. Run CI and a scoped loader dry run, publish only
+those five lesson keys, and verify the live video paths and adjacent lesson
+pointers.

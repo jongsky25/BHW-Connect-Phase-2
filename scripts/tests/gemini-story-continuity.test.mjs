@@ -12,6 +12,7 @@ describe('Chapter 1 narrated stories', () => {
     it(`${key} keeps Gemini narration in its Read and animated story`, () => {
       const lesson = JSON.parse(readFileSync(path.join(moduleDir, key, 'lesson.json'), 'utf8'));
       const asset = lesson.assets.find(item => item.id === lesson.featured_asset_id);
+      expect(asset?.review_status).toBe('approved');
       expect(asset?.provenance).toMatch(/Gemini TTS.*gemini-3\.8-flash-tts.*Kore/);
       for (const lang of ['fil', 'en']) {
         expect(asset?.videos?.[lang]?.path).toMatch(/-riza-gemini-.*\.mp4$/);
