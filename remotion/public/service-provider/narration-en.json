@@ -1,0 +1,48 @@
+{
+  "language": "en",
+  "durationSeconds": 53.159,
+  "beats": [
+    {
+      "zone": "first-contact",
+      "index": 0,
+      "text": "Aling Nena approaches Marites about her child. As a BHW, Marites works with the midwife in the health team.",
+      "start_ms": 0,
+      "end_ms": 7640
+    },
+    {
+      "zone": "listen",
+      "index": 1,
+      "text": "Marites asks what help is needed. She listens and checks what she understood instead of guessing at an illness.",
+      "start_ms": 7940,
+      "end_ms": 15340
+    },
+    {
+      "zone": "scope",
+      "index": 2,
+      "text": "Marites acts only within her training, local policy, and supervision. If she is unsure, she seeks guidance from the midwife.",
+      "start_ms": 15640,
+      "end_ms": 25640
+    },
+    {
+      "zone": "guide",
+      "index": 3,
+      "text": "She confirms the appropriate health worker or facility. She explains whom to contact and how to get there.",
+      "start_ms": 25940,
+      "end_ms": 32940
+    },
+    {
+      "zone": "follow-up",
+      "index": 4,
+      "text": "Following the health team's instructions, Marites confirms what to record, when to follow up, and whom to update.",
+      "start_ms": 33240,
+      "end_ms": 41400
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "If Aling Nena asks for medicine advice beyond Marites's training, Marites listens, seeks guidance, explains the next step, and follows through.",
+      "start_ms": 41700,
+      "end_ms": 53100
+    }
+  ]
+}

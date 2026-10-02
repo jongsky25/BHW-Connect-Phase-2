@@ -44,6 +44,12 @@ Render both with `npm run remotion:render -- <composition-id> <name> --public
 <dir>`, which prints the fields to paste. New media gets a new path; retain historical assets. Draft media can stage but
 cannot promote. The converted 1.1 fallback media remains draft pending visual review.
 
+For narrated lesson stories, use a featured asset with language-specific
+`videos.fil` and `videos.en` plus caption tracks. The lesson viewer presents
+it as an on-demand **Video** choice alongside Basahin and Slides, including
+in full screen. Keep its Read narration separate. The authoring and review
+steps are in `docs/narrated-lesson-video-pattern.md`.
+
 Example (future authorized target, not a release instruction):
 
 ```sh
