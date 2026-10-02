@@ -179,25 +179,25 @@
       "alt_en": "An animated explanation by BHW Vlanche to Mang Ernesto: UHC's aim, automatic NHIP inclusion, and checking the particular benefit, provider, and steps before promising no charge.",
       "caption_fil": "Kathang-isip na halimbawa nina Vlanche at Mang Ernesto; Filipino at English na may pagsasalaysay at captions.",
       "caption_en": "A fictional example with Vlanche and Mang Ernesto; narrated and captioned in Filipino and English.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/uhc-purpose) for lesson 1.2.1. Fictional scenario and original AI-generated illustration; no service price or benefit guarantee. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/uhc-purpose. Owner review approved on 2026-10-02; no independent policy/SME approval recorded.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/uhc-purpose) for lesson 1.2.1. Fictional scenario and original AI-generated illustration; no service price or benefit guarantee. Filipino and English expressive narration generated with Gemini 3.8 Flash TTS (Kore), with measured beat timings in remotion/public/uhc-purpose. Owner approved the replacement audio and video on 2026-10-02. No independent policy/SME approval recorded.",
       "review_status": "approved",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-2/uhc-purpose-vlanche-fil-063aefa9fc3f.mp4",
-          "content_hash": "063aefa9fc3fc9f9b2d182835e069a652238445e7ea07e6c7b401952318a597d",
-          "duration_s": 57,
+          "path": "/training/bhw-1-2/uhc-purpose-vlanche-gemini-fil-448e8721f19e.mp4",
+          "content_hash": "448e8721f19e98fa8a2d4ed3f7f1611bbf246e0d1c57cc8604546dfea9534206",
+          "duration_s": 62,
           "captions": {
-            "path": "/training/bhw-1-2/uhc-purpose-vlanche-fil-c238c918d7ed.vtt",
-            "content_hash": "c238c918d7edd0fe7d261a34f3ee039bd6f6785e5fe2c4f276fe8064f5ce6683"
+            "path": "/training/bhw-1-2/uhc-purpose-vlanche-gemini-fil-c849f182d503.vtt",
+            "content_hash": "c849f182d503a2fa96498911d8c753e14510faa3b27aa9e25dd5afa49708d37f"
           }
         },
         "en": {
-          "path": "/training/bhw-1-2/uhc-purpose-vlanche-en-bcbc9e97aa8c.mp4",
-          "content_hash": "bcbc9e97aa8c834ff702cab8bd8070fe3190eb9a62075e73fabfebcfa5e8e773",
+          "path": "/training/bhw-1-2/uhc-purpose-vlanche-gemini-en-5feea46b07a2.mp4",
+          "content_hash": "5feea46b07a2e7aaab553c4503dd48d930213cf4efed5f69378309495402ff23",
           "duration_s": 57,
           "captions": {
-            "path": "/training/bhw-1-2/uhc-purpose-vlanche-en-ae27def541ae.vtt",
-            "content_hash": "ae27def541ae46bff0729b9a2f96b66704b05851351f00a756d1d1752e2e3866"
+            "path": "/training/bhw-1-2/uhc-purpose-vlanche-gemini-en-38b84f8c321a.vtt",
+            "content_hash": "38b84f8c321a49f77137c9439016b6432a02541560746d821d18cccef601d31b"
           }
         }
       }
