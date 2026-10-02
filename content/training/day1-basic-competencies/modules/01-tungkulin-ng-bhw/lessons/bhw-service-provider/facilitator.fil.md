@@ -20,8 +20,8 @@ Itanong: *“Kapag ikaw ang unang nilapitan ng residenteng may tanong tungkol sa
 
 ## [steps] Mga hakbang
 
-1. **Unang contact.** Ipakilala sina Marites at Aling Nena. Itanong kung bakit makakatulong ang pagiging katuwang ng BHW sa midwife kahit hindi niya kayang sagutin ang lahat.
-2. **Pakikinig.** Ipagaya ang tanong ni Marites tungkol sa kailangan ni Aling Nena. Ipasabi sa kalahok kung paano uulitin ang naunawaan nang hindi nanghuhula ng sakit o paggamot.
+1. **Unang contact.** Ipakilala sina Riza at Aling Nena. Itanong kung bakit makakatulong ang pagiging katuwang ng BHW sa midwife kahit hindi niya kayang sagutin ang lahat.
+2. **Pakikinig.** Ipagaya ang tanong ni Riza tungkol sa kailangan ni Aling Nena. Ipasabi sa kalahok kung paano uulitin ang naunawaan nang hindi nanghuhula ng sakit o paggamot.
 3. **Hangganan.** Ipakita ang mga halimbawang serbisyo mula sa manual. Itanong kung alin ang saklaw ng aktuwal nilang pagsasanay at pangangasiwa. Ang nangangasiwang health team ang nagkukumpirma ng lokal na saklaw.
 4. **Paggabay.** Gamit ang nakumpirmang lokal na impormasyon, ipasabi kung sino ang lalapitan, paano makakarating doon, at paano titiyaking naunawaan ito ni Aling Nena. Banggitin ang lokal na referral at emergency procedures kapag naaangkop.
 5. **Follow-up.** Ipasagot: *“Ano ang dapat kumpirmahin sa health team bago sabihing magfo-follow-up ka?”* Hanapin ang ano, kailan, at kanino mag-uulat. Ang detalye ng mga form ay nasa susunod na aralin.
@@ -36,7 +36,7 @@ Itanong: *“Kapag ikaw ang unang nilapitan ng residenteng may tanong tungkol sa
 
 ## [misconception] Karaniwang maling akala
 
-**“Kapag ako ang unang contact, kailangan kong masagot ang lahat.”** Balikan ang larawan: nakikinig si Marites kay Aling Nena, at may midwife na katuwang. Ang tungkulin niya ay makinig, tumulong sa loob ng saklaw, gumabay sa angkop na serbisyo, at sumunod sa tagubilin sa follow-up.
+**“Kapag ako ang unang contact, kailangan kong masagot ang lahat.”** Balikan ang larawan: nakikinig si Riza kay Aling Nena, at may midwife na katuwang. Ang tungkulin niya ay makinig, tumulong sa loob ng saklaw, gumabay sa angkop na serbisyo, at sumunod sa tagubilin sa follow-up.
 
 ## [practice] Gawaing pagsasanay
 

@@ -14,8 +14,8 @@ export type RolesHepoBeat = {
 export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
   {
     id: "morning",
-    fil: "Isang umaga, tatlong gawain ang haharapin ni BHW Marites. Magtuturo siya sa purok, makikipagplano sa mga residente, at tutulong kay Aling Nena na makausap ang midwife.",
-    en: "One morning, BHW Marites has three tasks. She will lead a health discussion, plan with residents, and help Aling Nena contact the midwife.",
+    fil: "Isang umaga, tatlong gawain ang haharapin ni BHW Riza. Magtuturo siya sa purok, makikipagplano sa mga residente, at tutulong kay Aling Nena na makausap ang midwife.",
+    en: "One morning, BHW Riza has three tasks. She will lead a health discussion, plan with residents, and help Aling Nena contact the midwife.",
     title_fil: "Isang umaga, tatlong gawain",
     title_en: "One morning, three tasks",
     detail_fil: "08:00 · 10:00 · 11:00",
@@ -23,8 +23,8 @@ export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
   },
   {
     id: "educate",
-    fil: "Sa talakayan, nakikinig si Marites sa tanong ng mga tao at nagbabahagi ng malinaw at aprubadong impormasyong pangkalusugan. Ito ang papel niyang Health Educator.",
-    en: "At the discussion, Marites listens to people's questions and shares clear, approved health information. This is her Health Educator role.",
+    fil: "Sa talakayan, nakikinig si Riza sa tanong ng mga tao at nagbabahagi ng malinaw at aprubadong impormasyong pangkalusugan. Ito ang papel niyang Health Educator.",
+    en: "At the discussion, Riza listens to people's questions and shares clear, approved health information. This is her Health Educator role.",
     title_fil: "Magturo",
     title_en: "Educate",
     detail_fil: "Makinig at magbahagi ng tamang kaalaman.",
@@ -32,8 +32,8 @@ export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
   },
   {
     id: "organize",
-    fil: "Para sa paglilinis ng barangay, inaanyayahan ni Marites ang mga residente na magplano at kumilos kasama niya. Bilang Community Organizer, pinag-uugnay niya ang mga tao.",
-    en: "For a barangay clean-up, Marites invites residents to plan and act with her. As a Community Organizer, she brings people together.",
+    fil: "Para sa paglilinis ng barangay, inaanyayahan ni Riza ang mga residente na magplano at kumilos kasama niya. Bilang Community Organizer, pinag-uugnay niya ang mga tao.",
+    en: "For a barangay clean-up, Riza invites residents to plan and act with her. As a Community Organizer, she brings people together.",
     title_fil: "Mag-organisa",
     title_en: "Organize",
     detail_fil: "Mag-anyaya ng pakikilahok.",
@@ -41,8 +41,8 @@ export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
   },
   {
     id: "guide",
-    fil: "Kapag kailangan ni Aling Nena ng tulong para sa anak, tinutulungan siya ni Marites na makausap ang midwife. Bilang Health Service Provider, ginagabayan niya ang paglapit sa serbisyo.",
-    en: "When Aling Nena needs help for her child, Marites helps her contact the midwife. In the Health Service Provider role, she helps the family reach care.",
+    fil: "Kapag kailangan ni Aling Nena ng tulong para sa anak, tinutulungan siya ni Riza na makausap ang midwife. Bilang Health Service Provider, ginagabayan niya ang paglapit sa serbisyo.",
+    en: "When Aling Nena needs help for her child, Riza helps her contact the midwife. In the Health Service Provider role, she helps the family reach care.",
     title_fil: "Gumabay sa serbisyo",
     title_en: "Guide to services",
     detail_fil: "Tulungan silang makalapit sa health worker.",
@@ -59,8 +59,8 @@ export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
   },
   {
     id: "summary",
-    fil: "Bago magbahagi, inaalam ni Marites ang mga prayoridad ng barangay at kinukumpirma sa health worker ang detalyeng hindi tiyak. Tandaan: magturo, pag-ugnayin ang mga tao, at gumabay sa serbisyo nang may tamang kaalaman.",
-    en: "Before sharing information, Marites learns the barangay's priorities and confirms uncertain details with a health worker. Remember: educate, connect people, and guide them to services with accurate knowledge.",
+    fil: "Bago magbahagi, inaalam ni Riza ang mga prayoridad ng barangay at kinukumpirma sa health worker ang detalyeng hindi tiyak. Tandaan: magturo, pag-ugnayin ang mga tao, at gumabay sa serbisyo nang may tamang kaalaman.",
+    en: "Before sharing information, Riza learns the barangay's priorities and confirms uncertain details with a health worker. Remember: educate, connect people, and guide them to services with accurate knowledge.",
     title_fil: "Magturo · Mag-ugnay · Gumabay",
     title_en: "Educate · Connect · Guide",
     detail_fil: "Tamang kaalaman ang pundasyon.",

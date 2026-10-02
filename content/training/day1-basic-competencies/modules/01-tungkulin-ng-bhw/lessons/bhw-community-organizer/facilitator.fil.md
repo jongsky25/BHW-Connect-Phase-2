@@ -19,12 +19,12 @@ Itanong sa grupo: *"Alalahanin ang huling pagkakataong may kailangang ayusin sa 
 
 ## [steps] Mga hakbang
 
-1. **Eksena (unang slide).** Napansin ni Marites ang naipong tubig sa tatlong bakuran. Itanong: *"Sino ang dapat niyang pakinggan bago magpasya sa sama-samang gawain?"* Isama ang mga residente, purok leader, at health staff.
-2. **Paanyaya (ikalawang slide).** Basahin ang halimbawang paanyaya ni Marites sa aralin. Hayaang magmungkahi ng ibang oras ang isang kalahok. Itanong kung paano tutugon si Marites upang makabahagi ang mga residente sa pagbuo ng gawain.
-3. **Obserbasyon (ikatlong slide).** Isulat ang *"May naipong tubig sa tatlong bakuran"* at *"Ang tubig ang nagpasakit sa mga bata."* Itanong kung alin ang maipapahayag ni Marites bilang nakita. Kilalanin ang pag-aalala nang hindi nag-aangking alam ang sanhi.
+1. **Eksena (unang slide).** Napansin ni Riza ang naipong tubig sa tatlong bakuran. Itanong: *"Sino ang dapat niyang pakinggan bago magpasya sa sama-samang gawain?"* Isama ang mga residente, purok leader, at health staff.
+2. **Paanyaya (ikalawang slide).** Basahin ang halimbawang paanyaya ni Riza sa aralin. Hayaang magmungkahi ng ibang oras ang isang kalahok. Itanong kung paano tutugon si Riza upang makabahagi ang mga residente sa pagbuo ng gawain.
+3. **Obserbasyon (ikatlong slide).** Isulat ang *"May naipong tubig sa tatlong bakuran"* at *"Ang tubig ang nagpasakit sa mga bata."* Itanong kung alin ang maipapahayag ni Riza bilang nakita. Kilalanin ang pag-aalala nang hindi nag-aangking alam ang sanhi.
 4. **Planning team (ikaapat na slide).** Itanong kung sino sa lugar na ito ang nagdadala ng usapin sa barangay planning team for health at paano malalaman ng mga residente ang naging tugon. Gamitin ang lokal na prosesong kinumpirma sa paghahanda; huwag ipahiwatig na lahat ng BHW ay dumadalo sa team.
 5. **Mas malawak na plano (ikalimang slide).** Ipaliwanag sa isang pangungusap na maaaring makatulong ang ambag ng barangay sa LIPH ng lungsod o probinsya sa pamamagitan ng lokal na proseso. Sabihin na hindi awtomatikong napopondohan ang mungkahi.
-6. **Self-check (ikaanim na slide).** Papiliin ang grupo ng susunod na gagawin ni Marites bago ibigay ang sagot. Itanong kung bakit hindi angkop ang ibang pagpipilian.
+6. **Self-check (ikaanim na slide).** Papiliin ang grupo ng susunod na gagawin ni Riza bago ibigay ang sagot. Itanong kung bakit hindi angkop ang ibang pagpipilian.
 
 ## [expected-answers] Inaasahang sagot at paano tumugon
 
@@ -45,7 +45,7 @@ Magkapares, pipili ang bawat BHW ng isang totoong obserbasyon sa purok nang hind
 
 Iisa ang check sa aralin. Nasa dulo ito ng Read ("Gamitin ang natutuhan") at nasa huling slide rin; iisang tanong ito, kaya isang beses lang itong sinasagot dito.
 
-- **"Nagmungkahi ng ibang oras ... Ano ang pinakamainam na susunod na gawin ni Marites?"** → **Pakinggan ang mungkahing oras, iulat ang nakita, at kausapin ang health staff tungkol sa susunod na hakbang.** Nakasali ang mga residente at hiwalay ang obserbasyon sa hindi pa napatunayang paliwanag.
+- **"Nagmungkahi ng ibang oras ... Ano ang pinakamainam na susunod na gawin ni Riza?"** → **Pakinggan ang mungkahing oras, iulat ang nakita, at kausapin ang health staff tungkol sa susunod na hakbang.** Nakasali ang mga residente at hiwalay ang obserbasyon sa hindi pa napatunayang paliwanag.
   - Mali ang *Ituloy ang unang oras at sabihin na napatunayan na ang sanhi*: hindi pinakikinggan ang mga residente at ginagawang katotohanan ang hinala.
   - Mali ang *Ipagpaliban hanggang may pangakong pondo*: nahahadlangan ang usapan at ipinapalagay ang garantiyang hindi maibibigay ng BHW o LIPH.
 
@@ -61,7 +61,7 @@ Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 
-- Ipakita muna: ibigay ang sarili mong paanyaya para sa clean-up drive ni Marites gamit ang tatlong tanong sa slide, saka ipagawa sa BHW ang sa kanya.
+- Ipakita muna: ibigay ang sarili mong paanyaya para sa clean-up drive ni Riza gamit ang tatlong tanong sa slide, saka ipagawa sa BHW ang sa kanya.
 - Hatiin ang gawain. Sanayin muna ang pangungusap ng obserbasyon ("Ano ang nakita mo? Saan? Ilan?") bago idagdag ang paanyaya.
 - Ipares sila sa BHW na **Kaya na** na gaganap bilang residente.
 - Obserbahan muli sa susunod na sesyon gamit ang parehong obserbasyong pinili nila, hindi bago.

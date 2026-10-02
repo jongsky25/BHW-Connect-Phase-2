@@ -11,9 +11,10 @@ keeps its own section-level expressive narration; Slides keeps its own text.
    Slides content, and sources. Use a small sequence of timed beats with
    distinct visual changes. Do not add clinical instructions or a universal
    local workflow that the lesson does not teach.
-2. Render Filipino and English Gemini voiceovers separately. Keep voice style
-   directions in speech metadata, with exact words in the script. Save each
-   voice track and measured beat timings under `remotion/public/<story>/`.
+2. Render Filipino and English voiceovers separately. Use the reviewed voice
+   provider for that revision; do not mix voices within one cut. Keep exact
+   words in the script and save each voice track and measured beat timings
+   under `remotion/public/<story>/`.
 3. Make one Remotion composition per language. Use the measured timings for
    scene pacing and a final summary frame for the poster. Render at 854×480,
    H.264 with audio and language-matched WebVTT captions using
@@ -31,8 +32,9 @@ keeps its own section-level expressive narration; Slides keeps its own text.
 
 Listen to both language tracks and inspect motion, legibility, captions,
 poster, mobile layout, and full-screen behavior. Check that the Video choice
-is absent for lessons without a featured video and that completion still
-requires finishing a featured clip. Record review in the lesson's layout
+is absent for lessons without a featured video. Video is optional; completion
+requires reaching the end and answering the Read or Slides checks, without
+watching the clip. Record review in the lesson's layout
 review document. After owner approval, mark the asset approved, merge the PR,
 verify Vercel production, then use the scoped lesson loader dry run and
 publish workflow for the one lesson. Preserve published metadata and progress.

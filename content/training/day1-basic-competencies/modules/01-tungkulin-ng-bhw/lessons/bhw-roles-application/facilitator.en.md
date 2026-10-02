@@ -16,11 +16,11 @@ By the end of this short lesson the BHW can name the roles a single barangay sit
 
 ## [opening] Opening
 
-Read the midwife's instruction aloud from the manila paper: *"Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me."* Then ask: *"How many different things is she asking Marites to do? Let's count them."* Underline each one as the group names it.
+Read the midwife's instruction aloud from the manila paper: *"Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me."* Then ask: *"How many different things is she asking Riza to do? Let's count them."* Underline each one as the group names it.
 
 ## [steps] Steps
 
-1. **One observation (Read "One observation, several actions", first slide).** Marites sees standing water in three yards. Ask: *"What did she see? What does she not know yet?"* Stress: read the instruction, clarify what is uncertain, and keep observation and assumption apart. No diagnosis from an environmental observation.
+1. **One observation (Read "One observation, several actions", first slide).** Riza sees standing water in three yards. Ask: *"What did she see? What does she not know yet?"* Stress: read the instruction, clarify what is uncertain, and keep observation and assumption apart. No diagnosis from an environmental observation.
 2. **Education (Read "Choose the education needed", second slide).** Ask: *"How would you open the conversation with the family, in your own words?"* Take two or three openings. Point to the lesson's example: *"What have you noticed about the water collecting here?"* — listen before explaining. Ask which role this is (Health Educator).
 3. **Organizing (Read "Identify potential partners", third slide).** Ask: *"Who else would you talk to for a shared activity?"* → residents, purok leader, council member, health staff. Ask: *"Why shouldn't the BHW just decide for everyone?"* Ask which role this is (Community Organizer).
 4. **Handover (Read "Prepare a short handover", fourth slide).** Show the three lines: *Observed · Done · Needed.* Read the lesson's example handover aloud. Ask: *"Which part is the observation? Which is what she did? Which is what's still needed?"* Point out that it shares only relevant information with the right person and matches what was recorded.
@@ -41,7 +41,7 @@ Read the midwife's instruction aloud from the manila paper: *"Record what you sa
 
 ## [practice] Practice activity
 
-In pairs, one BHW plays the midwife and one plays Marites. "Marites" gives a spoken handover of the standing-water situation in three lines — observed, done, still needed — then says which roles she used and how she followed the instruction. "The midwife" may ask one clarifying question, which "Marites" must answer without inventing anything. Swap roles, this time using a situation from the BHW's own barangay (no residents' names). Watch each BHW's spoken handover; do not rely on written notes.
+In pairs, one BHW plays the midwife and one plays Riza. "Riza" gives a spoken handover of the standing-water situation in three lines — observed, done, still needed — then says which roles she used and how she followed the instruction. "The midwife" may ask one clarifying question, which "Riza" must answer without inventing anything. Swap roles, this time using a situation from the BHW's own barangay (no residents' names). Watch each BHW's spoken handover; do not rely on written notes.
 
 ## [answer-key] Self-check answer key
 

@@ -20,9 +20,9 @@ Kung tapos na ang pambungad na aktibidad ng module, ituro ang manila paper na iy
 
 ## [steps] Mga hakbang
 
-1. **Isang umaga (Read "Isang umaga, maraming gawain", unang slide).** Isa-isahin ang alas-otso, alas-diyes, at alas-onse ni Marites. Itanong: *"Tatlong trabaho ba iyon, o iisa?"* Ipakita na iisang BHW ang gumawa ng tatlo, at sa curriculum, ang direksyon ng UHC ay mas matibay na primary care at health promotion — kaya mas malawak ang papel kaysa pagtulong sa serbisyo lamang.
+1. **Isang umaga (Read "Isang umaga, maraming gawain", unang slide).** Isa-isahin ang alas-otso, alas-diyes, at alas-onse ni Riza. Itanong: *"Tatlong trabaho ba iyon, o iisa?"* Ipakita na iisang BHW ang gumawa ng tatlo, at sa curriculum, ang direksyon ng UHC ay mas matibay na primary care at health promotion — kaya mas malawak ang papel kaysa pagtulong sa serbisyo lamang.
 2. **Balikan ang listahan.** Bumalik sa manila paper. Itanong: *"Ilan sa mga gawain natin ang pagtuturo? Ilan ang pag-oorganisa?"* Kadalasan kakaunti pareho. Hayaang sila mismo ang makapansin.
-3. **Kumilos kasama ang komunidad (Read "Kumilos kasama ang komunidad", ikalawang slide).** Ipaliwanag na tinutulungan ng BHW ang mga residente na makalapit sa pangangalaga kapag kailangan nila ito. Nagtuturo rin ang BHW at hinihikayat ang mga tao na makilahok sa mga gawaing pangkalusugan. Itanong: *"Sa clean-up drive ni Marites, saan may pagtuturo, at saan may residenteng nakikilahok?"*
+3. **Kumilos kasama ang komunidad (Read "Kumilos kasama ang komunidad", ikalawang slide).** Ipaliwanag na tinutulungan ng BHW ang mga residente na makalapit sa pangangalaga kapag kailangan nila ito. Nagtuturo rin ang BHW at hinihikayat ang mga tao na makilahok sa mga gawaing pangkalusugan. Itanong: *"Sa clean-up drive ni Riza, saan may pagtuturo, at saan may residenteng nakikilahok?"*
 4. **HEPO (Read "HEPO: pagsusulong ng kalusugan", HEPO slide).** Ituro ang bawat tungkulin habang pinapangalanan — huwag basahin nang malakas ang screen. Sabihin nang malinaw na ang mga linya ay magkakaugnay na gawain, hindi kung sino ang nag-uulat kanino. Itanong: *"Alin sa tatlo ang pinakamadalas ninyong gawin? Alin ang pinakamadalang?"*
 5. **Bago magbahagi, maghanda (Read "Bago magbahagi, maghanda", ikaapat na slide).** Itanong: *"Ano ang ginagawa ninyo kapag may tanong ang residente na hindi kayo sigurado?"* Ilabas na kinukumpirma ito ng BHW sa kaukulang health worker at gumagamit ng aprubadong materyal — hindi kailangang manghula para makatulong.
 6. **Self-check.** Basahin ang sitwasyon ng clean-up drive at hayaang mag-usap ang grupo bago ibigay ang sagot. Idiin ang feedback: maaaring higit sa isang tungkulin ang makita sa iisang gawain.
@@ -46,7 +46,7 @@ Sa maliliit na grupo, magbibigay ang bawat BHW ng isang totoong gawain mula sa n
 
 Iisa ang check sa aralin. Nasa dulo ito ng Read ("Gamitin ang natutuhan") at nasa huling slide rin; iisang tanong ito, kaya isang beses lang itong sinasagot dito.
 
-- **"Tinipon ni Marites ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?"** → **Community Organizer.** Nag-uugnay siya ng mga tao at humihikayat na kumilos nang sama-sama.
+- **"Tinipon ni Riza ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?"** → **Community Organizer.** Nag-uugnay siya ng mga tao at humihikayat na kumilos nang sama-sama.
   - Mali ang *Health Service Provider*: hindi siya tumutugon sa pangangailangan ng isang tao o gumagabay sa health worker sa gawaing ito.
   - Mali ang *Health Educator lamang* dahil sa salitang "lamang": maaaring may pagtuturo sa clean-up drive, pero pag-oorganisa ang pakikipagplano sa mga residente. Hindi eksklusibo ang mga papel.
 
@@ -62,7 +62,7 @@ Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check.
 
 ## [support] Kung kailangan ng dagdag na suporta
 
-- Balikan ang umaga ni Marites at ipapangalan ang tungkulin sa alas-otso, alas-diyes, at alas-onse bago subukan muli ang sariling gawain.
+- Balikan ang umaga ni Riza at ipapangalan ang tungkulin sa alas-otso, alas-diyes, at alas-onse bago subukan muli ang sariling gawain.
 - Bigyan sila ng isa sa sarili nilang gawaing serbisyo mula sa listahan sa pambungad at itanong lang: *"May ipinaliwanag ka ba sa pamilya habang ginagawa ito?"* — isang ugnayan muna.
 - Ipares sila sa BHW na **Kaya na** sa susunod na round ng paghahanay.
 - Obserbahan muli sa susunod na pagsasanay na "Aling tungkulin ito?" sa module (ang araling Gamitin ang mga tungkulin), gamit ang gawain mula sa sarili nilang barangay.

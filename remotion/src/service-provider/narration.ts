@@ -14,8 +14,8 @@ export type ServiceProviderBeat = {
 export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
   {
     id: "first-contact",
-    fil: "Lumapit si Aling Nena kay Marites tungkol sa anak niya. Bilang BHW, katuwang si Marites ng midwife sa health team.",
-    en: "Aling Nena approaches Marites about her child. As a BHW, Marites works with the midwife in the health team.",
+    fil: "Lumapit si Aling Nena kay Riza tungkol sa anak niya. Bilang BHW, katuwang si Riza ng midwife sa health team.",
+    en: "Aling Nena approaches Riza about her child. As a BHW, Riza works with the midwife in the health team.",
     title_fil: "Unang nilapitan",
     title_en: "First contact",
     detail_fil: "Makinig sa pangangailangan.",
@@ -23,8 +23,8 @@ export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
   },
   {
     id: "listen",
-    fil: "Nagtanong si Marites kung anong tulong ang kailangan. Pinakinggan niya si Aling Nena at nilinaw ang naunawaan, sa halip na manghula ng sakit.",
-    en: "Marites asks what help is needed. She listens and checks what she understood instead of guessing at an illness.",
+    fil: "Nagtanong si Riza kung anong tulong ang kailangan. Pinakinggan niya si Aling Nena at nilinaw ang naunawaan, sa halip na manghula ng sakit.",
+    en: "Riza asks what help is needed. She listens and checks what she understood instead of guessing at an illness.",
     title_fil: "Makinig muna",
     title_en: "Listen first",
     detail_fil: "Magtanong · Makinig · Linawin",
@@ -32,8 +32,8 @@ export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
   },
   {
     id: "scope",
-    fil: "Gagawin lamang ni Marites ang saklaw ng kanyang pagsasanay, lokal na patakaran, at pangangasiwa. Kung hindi tiyak, hihingi siya ng gabay sa midwife.",
-    en: "Marites acts only within her training, local policy, and supervision. If she is unsure, she seeks guidance from the midwife.",
+    fil: "Gagawin lamang ni Riza ang saklaw ng kanyang pagsasanay, lokal na patakaran, at pangangasiwa. Kung hindi tiyak, hihingi siya ng gabay sa midwife.",
+    en: "Riza acts only within her training, local policy, and supervision. If she is unsure, she seeks guidance from the midwife.",
     title_fil: "Alamin ang saklaw",
     title_en: "Know your limits",
     detail_fil: "Kapag hindi tiyak, humingi ng gabay.",
@@ -50,8 +50,8 @@ export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
   },
   {
     id: "follow-up",
-    fil: "Ayon sa tagubilin ng health team, kinumpirma ni Marites kung ano ang itatala, kailan magfo-follow-up, at kanino mag-uulat.",
-    en: "Following the health team's instructions, Marites confirms what to record, when to follow up, and whom to update.",
+    fil: "Ayon sa tagubilin ng health team, kinumpirma ni Riza kung ano ang itatala, kailan magfo-follow-up, at kanino mag-uulat.",
+    en: "Following the health team's instructions, Riza confirms what to record, when to follow up, and whom to update.",
     title_fil: "Mag-follow-up",
     title_en: "Follow through",
     detail_fil: "Ano · Kailan · Kanino",
@@ -59,8 +59,8 @@ export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
   },
   {
     id: "summary",
-    fil: "Kung humingi si Aling Nena ng payo sa gamot na lampas sa pagsasanay ni Marites, makikinig siya, hihingi ng gabay, magpapaliwanag ng susunod na hakbang, at magfo-follow-up.",
-    en: "If Aling Nena asks for medicine advice beyond Marites's training, Marites listens, seeks guidance, explains the next step, and follows through.",
+    fil: "Kung humingi si Aling Nena ng payo sa gamot na lampas sa pagsasanay ni Riza, makikinig siya, hihingi ng gabay, magpapaliwanag ng susunod na hakbang, at magfo-follow-up.",
+    en: "If Aling Nena asks for medicine advice beyond Riza's training, Riza listens, seeks guidance, explains the next step, and follows through.",
     title_fil: "Makinig · Humingi ng gabay",
     title_en: "Listen · Seek guidance",
     detail_fil: "Ipaliwanag ang hakbang · Mag-follow-up",

@@ -20,37 +20,81 @@
         "m2.philhealth"
       ],
       "asset_ids": [
-        "practice-map"
+        "vlanche-ernesto"
       ],
-      "takeaway_fil": "Kapag hindi malinaw sa BHW ang isang batas, hindi rin ito malinaw sa taong umaasa sa kanya para dito.",
-      "takeaway_en": "When a law is not clear to the BHW, it is not clear either to the person who is counting on them for it.",
+      "takeaway_fil": "Makinig muna sa tanong bago magpaliwanag o mangako.",
+      "takeaway_en": "Listen to the question before explaining or promising anything.",
       "check": null
     },
     {
       "id": "section-2",
       "concept_ids": [
+        "m2.enactment"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Layunin ng UHC ang mas madaling paglapit sa dekalidad na serbisyo at proteksiyon sa gastusin.",
+      "takeaway_en": "UHC aims to improve access to quality care and protect people from financial hardship.",
+      "check": null
+    },
+    {
+      "id": "included",
+      "concept_ids": [
+        "m2.philhealth"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Awtomatikong kasama sa NHIP ang bawat Pilipinong mamamayan.",
+      "takeaway_en": "Every Filipino citizen is automatically included in the NHIP.",
+      "check": null
+    },
+    {
+      "id": "benefit",
+      "concept_ids": [
+        "m2.philhealth"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Ang pagiging kasama sa programa ay hindi pangakong libre ang bawat serbisyo saanman.",
+      "takeaway_en": "Inclusion in the program is not a promise that every service is free everywhere.",
+      "check": null
+    },
+    {
+      "id": "verify",
+      "concept_ids": [
+        "m2.philhealth"
+      ],
+      "asset_ids": [],
+      "takeaway_fil": "Tiyakin ang benepisyo, provider, at kailangang hakbang para sa partikular na konsulta.",
+      "takeaway_en": "Check the benefit, provider, and required steps for the particular consultation.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
         "m2.enactment",
         "m2.philhealth"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Ang direksyon ng UHC ay malinaw: mula sa sistemang umaasang may babayad, tungo sa sistemang nagsisiguro na may serbisyong maaabot ang lahat.",
-      "takeaway_en": "UHC's direction is clear: from a system that waits for someone to pay, to one that guarantees service everyone can reach.",
+      "takeaway_fil": "Ibigay ang alam na, at tukuyin ang dapat pang tiyakin.",
+      "takeaway_en": "Explain what is known and name what still needs checking.",
       "check": {
-        "prompt_fil": "Ano ang dapat ipaliwanag tungkol sa PhilHealth?",
-        "prompt_en": "What should you explain about PhilHealth?",
+        "prompt_fil": "Kung kasama na si Mang Ernesto sa PhilHealth, libre na ba ang konsulta niya sa kahit aling pasilidad? Ano ang dapat sabihin ni Vlanche?",
+        "prompt_en": "If Mang Ernesto is already included in PhilHealth, is his consultation free at any facility? What should Vlanche say?",
         "options": [
           {
-            "fil": "Kasama ang lahat ng Pilipino, ngunit dapat alamin ang sakop na benepisyo at proseso.",
-            "en": "All Filipinos are included, but the covered benefit and process must be checked."
+            "fil": "Kasama kayo sa PhilHealth. Tiyakin natin kung sakop ang konsultang ito rito, kung sino ang provider, at ang kailangang hakbang.",
+            "en": "You are included in PhilHealth. Let us check whether this consultation is covered here, who the provider is, and what steps apply."
           },
           {
-            "fil": "Libre ang lahat ng serbisyo sa anumang pasilidad.",
-            "en": "Every service is free at every facility."
+            "fil": "Oo. Dahil kasama kayo, libre ang lahat ng konsulta sa kahit aling pasilidad.",
+            "en": "Yes. Because you are included, all consultations at every facility are free."
+          },
+          {
+            "fil": "Hindi mahalaga ang UHC; walang maaaring saklaw na konsulta.",
+            "en": "UHC makes no difference; no consultation can be covered."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Kasama ang lahat ng Pilipino, ngunit dapat alamin ang sakop na benepisyo at proseso. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "All Filipinos are included, but the covered benefit and process must be checked. Explain why using the lesson situation."
+        "feedback_fil": "Awtomatikong kasama si Mang Ernesto sa NHIP, ngunit hindi iyon sagot sa sakop ng partikular na konsulta. Tiyakin ang benepisyo, provider, at proseso bago mangako ng walang bayad.",
+        "feedback_en": "Mang Ernesto is automatically included in the NHIP, but that alone does not settle coverage for this consultation. Check the benefit, provider, and process before promising no charge."
       }
     }
   ],
@@ -59,60 +103,105 @@
       "id": "m2.enactment",
       "read_ids": [
         "section-1",
-        "section-2"
+        "section-2",
+        "check"
       ],
       "slide_ids": [
         "slide-section-1",
-        "slide-section-2"
+        "slide-section-2",
+        "slide-check"
       ],
       "source_ids": [
-        "m2.enactment-source"
+        "manual-uhc",
+        "ra11223"
       ]
     },
     {
       "id": "m2.philhealth",
       "read_ids": [
         "section-1",
-        "section-2"
+        "included",
+        "benefit",
+        "verify",
+        "check"
       ],
       "slide_ids": [
         "slide-section-1",
-        "slide-section-2"
+        "slide-included",
+        "slide-benefit",
+        "slide-verify",
+        "slide-check"
       ],
       "source_ids": [
-        "m2.philhealth-source"
+        "manual-uhc",
+        "ra11223",
+        "philhealth-primary-care"
       ]
     }
   ],
   "sources": [
     {
-      "id": "m2.enactment-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "id": "manual-uhc",
+      "title": "BHW Reference Manual — UHC Act, printed p. 5 / PDF p. 13",
       "pdf_pages": [
         13
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     },
     {
-      "id": "m2.philhealth-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
-      "pdf_pages": [
-        13
-      ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "id": "ra11223",
+      "title": "Republic Act No. 11223 — Universal Health Care Act",
+      "url": "https://www.philhealth.gov.ph/about_us/RA11223_UHC.pdf"
+    },
+    {
+      "id": "philhealth-primary-care",
+      "title": "PhilHealth Circular 2025-0017 — primary care clinic selection",
+      "url": "https://www.philhealth.gov.ph/circulars/2025/PC2025-0017.pdf"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "id": "vlanche-ernesto",
+      "path": "/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png",
+      "content_hash": "7e4e351416282cb78a0d8b17c80fba7a4367291f9d46f2586baaa90cd66dcaea",
+      "alt_fil": "Nakikinig si BHW Vlanche kay Mang Ernesto sa labas ng barangay health station habang nagtatanong siya tungkol sa konsulta.",
+      "alt_en": "BHW Vlanche listens to Mang Ernesto outside a barangay health station as he asks about a consultation.",
+      "caption_fil": "Kathang-isip na pag-uusap tungkol sa UHC; hindi ipinapakita ang aktuwal na benepisyo o bayad.",
+      "caption_en": "A fictional UHC conversation; the scene does not show a particular benefit or charge.",
+      "provenance": "Original AI-generated illustration for lesson 1.2.1, 2026-10-02. Fictional people and blank notebook; no logos, readable forms, or service claim. Generated with built-in image tool; owner review approved on 2026-10-02.",
       "review_status": "approved"
+    },
+    {
+      "id": "uhc-purpose-story",
+      "path": "/training/bhw-1-2/uhc-purpose-vlanche-fil-2b094d54f279-poster.jpg",
+      "content_hash": "2b094d54f279eda32b6ab9af0aad9a11765af5913c5e464a2aa45b629f1248ce",
+      "alt_fil": "Animadong paliwanag ni BHW Vlanche kay Mang Ernesto: layunin ng UHC, awtomatikong pagsama sa NHIP, at pagtitiyak ng partikular na benepisyo, provider, at hakbang bago mangakong walang bayad.",
+      "alt_en": "An animated explanation by BHW Vlanche to Mang Ernesto: UHC's aim, automatic NHIP inclusion, and checking the particular benefit, provider, and steps before promising no charge.",
+      "caption_fil": "Kathang-isip na halimbawa nina Vlanche at Mang Ernesto; Filipino at English na may pagsasalaysay at captions.",
+      "caption_en": "A fictional example with Vlanche and Mang Ernesto; narrated and captioned in Filipino and English.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/uhc-purpose) for lesson 1.2.1. Fictional scenario and original AI-generated illustration; no service price or benefit guarantee. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/uhc-purpose. Owner review approved on 2026-10-02; no independent policy/SME approval recorded.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-2/uhc-purpose-vlanche-fil-063aefa9fc3f.mp4",
+          "content_hash": "063aefa9fc3fc9f9b2d182835e069a652238445e7ea07e6c7b401952318a597d",
+          "duration_s": 57,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-purpose-vlanche-fil-c238c918d7ed.vtt",
+            "content_hash": "c238c918d7edd0fe7d261a34f3ee039bd6f6785e5fe2c4f276fe8064f5ce6683"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-2/uhc-purpose-vlanche-en-bcbc9e97aa8c.mp4",
+          "content_hash": "bcbc9e97aa8c834ff702cab8bd8070fe3190eb9a62075e73fabfebcfa5e8e773",
+          "duration_s": 57,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-purpose-vlanche-en-ae27def541ae.vtt",
+            "content_hash": "ae27def541ae46bff0729b9a2f96b66704b05851351f00a756d1d1752e2e3866"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "uhc-purpose-story"
 }

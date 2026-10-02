@@ -16,6 +16,8 @@ Sa pagtatapos ng maikling araling ito, kaya ng BHW na tukuyin ang isang bagay sa
 
 ## [opening] Pambungad
 
+Sa kasunod na kuwento, pinag-iisipan ni BHW Vlanche ang isang maliit na pagpapabuting maaari niyang talakayin sa health team.
+
 Itanong sa grupo: *"May naisip na ba kayong ideya sa trabaho na hindi natuloy? Ano ang pumigil dito?"* Kumuha ng dalawa o tatlong sagot. Pakinggan ang mga sagot na gaya ng "hindi ko sinabi kahit kanino" o "sinubukan kong gawin lahat nang sabay" — babalikan mo ang mga ito sa hakbang 2 at 3.
 
 ## [steps] Mga hakbang

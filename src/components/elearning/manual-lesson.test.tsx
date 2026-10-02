@@ -36,15 +36,12 @@ describe('route lesson viewer',()=>{
       HTMLDialogElement.prototype.close = close;
     }
   });
-  it('keeps the featured video completion requirement after moving it into its own view',()=>{
+  it('allows lesson completion after Read checks without requiring the optional video',()=>{
     const clip={id:'records-story',path:'/poster.png',alt_en:'Records story',alt_fil:'Kuwento ng tala',caption_en:'Records',caption_fil:'Mga tala',videos:{en:{path:'/records-en.mp4'}}};
     const videoLesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-records',revision:{...l.revision,assets:[clip],featured_asset_id:clip.id}}))} as unknown as ReferenceData;
     const onComplete=vi.fn().mockResolvedValue(undefined);
-    const {container}=render(<ReferenceLessons {...videoLesson} modules={[]} locale="en" initialLessonId="lesson" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={onComplete}/>);
+    render(<ReferenceLessons {...videoLesson} modules={[]} locale="en" initialLessonId="lesson" onResume={vi.fn().mockResolvedValue(undefined)} onComplete={onComplete}/>);
     fireEvent.click(screen.getByRole('button',{name:'Next'}));
-    expect(screen.getByRole('button',{name:'Mark lesson complete'})).toBeDisabled();
-    fireEvent.click(screen.getByRole('button',{name:'Video'}));
-    fireEvent.ended(container.querySelector('video')!);
     expect(screen.getByRole('button',{name:'Mark lesson complete'})).toBeEnabled();
   });
   it('shows explicit clock times for the pilot morning story until its new revision is published',()=>{
@@ -64,7 +61,7 @@ describe('route lesson viewer',()=>{
       fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
       const dialog=container.querySelector('dialog')!;
       expect(dialog.querySelector('.reference-story-presenter .reference-story')).toBeInTheDocument();
-      expect(within(dialog).getByRole('img',{name:/BHW Marites talks with residents/})).toBeInTheDocument();
+      expect(within(dialog).getByRole('img',{name:/BHW Riza talks with residents/})).toBeInTheDocument();
       expect(within(dialog).getByText('Short content')).toBeInTheDocument();
       expect(dialog.querySelector('[data-reader-viewport]')).not.toBeInTheDocument();
       expect(within(dialog).queryByRole('button',{name:'Fit'})).not.toBeInTheDocument();
@@ -109,7 +106,7 @@ describe('route lesson viewer',()=>{
       fireEvent.click(screen.getByRole('button',{name:'Full screen'}));
       const dialog=container.querySelector('dialog')!;
       expect(dialog.querySelector('.reference-story[data-lesson="bhw-community-organizer"]')).toBeInTheDocument();
-      expect(within(dialog).getByRole('img',{name:/BHW Marites listens as residents and health staff/})).toBeInTheDocument();
+      expect(within(dialog).getByRole('img',{name:/BHW Riza listens as residents and health staff/})).toBeInTheDocument();
       fireEvent.click(within(dialog).getByRole('button',{name:'Slides'}));
       expect(within(dialog).getByText('Slide content')).toBeInTheDocument();
       expect(dialog.querySelector('.reference-story[data-lesson="bhw-community-organizer"]')).toBeInTheDocument();
@@ -117,6 +114,14 @@ describe('route lesson viewer',()=>{
       HTMLDialogElement.prototype.showModal = showModal;
       HTMLDialogElement.prototype.close = close;
     }
+  });
+  it('uses Vlanche and Mang Ernesto artwork for Lesson 1.2.1 in Read and Slides',()=>{
+    const coverageLesson = {...data,lessons:data.lessons.map(l=>({...l,lesson_key:'uhc-coverage'}))};
+    render(<ReferenceLessons {...coverageLesson} modules={[]} locale="en" initialLessonId="lesson" lessonBaseHref="/lessons" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/})).toBeInTheDocument();
+    expect(document.querySelector('.reference-story[data-lesson="uhc-coverage"]')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+    expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/})).toBeInTheDocument();
   });
   it('opens only the reader content and keeps mode, orientation, and paging inside it',()=>{
     const showModal = HTMLDialogElement.prototype.showModal;

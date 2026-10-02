@@ -1,10 +1,10 @@
 ## [educator-scene] Magsimula sa kausap
 
-Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni Marites ang poster. Inaalam niya muna ang mga tanong ng mga residente, saka nagbibigay ng malinaw na paliwanag. Bilang Health Educator, tinutulungan niya ang mga tao na matutuhan kung paano pangalagaan ang kanilang katawan at panatilihing malinis ang paligid.
+Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni Riza ang poster. Inaalam niya muna ang mga tanong ng mga residente, saka nagbibigay ng malinaw na paliwanag. Bilang Health Educator, tinutulungan niya ang mga tao na matutuhan kung paano pangalagaan ang kanilang katawan at panatilihing malinis ang paligid.
 
 ## [body-environment] Katawan at kapaligiran
 
-Maaaring talakayin sa edukasyong pangkalusugan ang pangangalaga sa katawan at ang kalinisan ng paligid. Maaari ring ipaliwanag ni Marites kung paano makalalapit ang mga residente sa serbisyong pangkalusugan. Gumagamit siya ng materyal na aprubado ng health team. Sa araling ito, nakatuon siya sa pagpili ng paksa at kausap; ang detalyadong payong pangkalusugan ay nasa kaukulang pagsasanay.
+Maaaring talakayin sa edukasyong pangkalusugan ang pangangalaga sa katawan at ang kalinisan ng paligid. Maaari ring ipaliwanag ni Riza kung paano makalalapit ang mga residente sa serbisyong pangkalusugan. Gumagamit siya ng materyal na aprubado ng health team. Sa araling ito, nakatuon siya sa pagpili ng paksa at kausap; ang detalyadong payong pangkalusugan ay nasa kaukulang pagsasanay.
 
 ## [life-stages] Iba ang pangangailangan sa bawat yugto
 
@@ -16,4 +16,4 @@ Hindi lamang ang mga dumadalo na sa health talk ang kailangang maabot. Pag-isipa
 
 ## [check] Gamitin ang natutuhan
 
-Nagsagawa si Marites ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?
+Nagsagawa si Riza ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?

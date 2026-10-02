@@ -9,21 +9,21 @@ Sa pagtatapos ng araling ito, makapipili ang BHW ng household profile, master li
 
 ## [prepare] Paghahanda
 
-- Basahin ang anim na Read section at Slides sa Filipino at English. Iisang sitwasyon nina Marites at midwife ang sinusundan sa dalawang mode.
+- Basahin ang anim na Read section at Slides sa Filipino at English. Iisang sitwasyon nina Riza at midwife ang sinusundan sa dalawang mode.
 - Itanong sa nangangasiwang midwife o health team kung aling form ang ginagamit sa inyong lugar, sino ang nag-aatas at tumatanggap nito, at paano ito iniingatan at ipinapasa. Hindi pangkalahatang ruta ang kathang-isip na “tatanggap: midwife.”
 - **Blangkong** lokal na form lamang ang dalhin. Huwag gumamit ng napunang form na may tunay na impormasyon ng kabahayan o pasyente, at huwag pagamitin ng tunay na pangalan ang mga kalahok. Kathang-isip ang larawan at HH-014; hindi sila opisyal na form.
 - Kumpirmahin kung paano nililinaw ang hindi tiyak na entry sa inyong lugar. Ang aralin ay nagtuturo ng pagsusuri at pagtatanong, hindi pagbabago ng opisyal na tala batay sa alaala.
 
 ## [opening] Pambungad
 
-Bumalik si Marites matapos kausapin si Aling Nena. Itanong: *“Kung itanong ng midwife kung sino na ang nabigyan ng health teaching, aling tala ang una ninyong titingnan, at bakit?”* Itabi ang unang sagot at balikan matapos ang pagsasanay.
+Bumalik si Riza matapos kausapin si Aling Nena. Itanong: *“Kung itanong ng midwife kung sino na ang nabigyan ng health teaching, aling tala ang una ninyong titingnan, at bakit?”* Itabi ang unang sagot at balikan matapos ang pagsasanay.
 
 ## [steps] Mga hakbang
 
 1. **Pagkatapos ng pagbisita.** Itanong kung anong impormasyon ang kailangan ng team at bakit mahalaga ang gamit ng tala. Ipaliwanag na kathang-isip at blangko ang mga halimbawa.
 2. **Household profile.** Ipakita ang HH-014 at itanong kung ano ang inilalarawan nito. Tiyaking hindi ito itinuturing na patunay ng serbisyong naibigay.
 3. **Master list.** Ipakita ang card ng mga nakatatanda. Itanong kung anong tanong ang sinasagot nito at kung patunay ba ito ng health teaching.
-4. **Registry.** Ibigay ang tanong ng midwife tungkol sa serbisyo. Itanong kung bakit registry ang kaugnay na tala at ano ang gagawin ni Marites sa isang hindi malinaw na entry.
+4. **Registry.** Ibigay ang tanong ng midwife tungkol sa serbisyo. Itanong kung bakit registry ang kaugnay na tala at ano ang gagawin ni Riza sa isang hindi malinaw na entry.
 5. **Iniatas na form.** Ituro ang “tatanggap: midwife.” Itanong kung anong impormasyon ang hinihingi, ano ang natiyak, at anong nakumpirmang lokal na paraan ng pagpapasa ang angkop.
 6. **Self-check.** Hayaan munang pumili ang bawat isa bago ipakita ang feedback. Talakayin kung bakit hindi tala ng serbisyo ang master list at bakit hindi dapat hulaan ang kulang na detalye.
 

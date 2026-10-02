@@ -85,8 +85,8 @@
       "takeaway_fil": "Piliin ang tala ayon sa tanong; tiyakin ang detalye bago magpasa.",
       "takeaway_en": "Choose the record by the question; verify details before handoff.",
       "check": {
-        "prompt_fil": "Hiniling ng midwife kay Marites ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?",
-        "prompt_en": "The midwife asks Marites for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?",
+        "prompt_fil": "Hiniling ng midwife kay Riza ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?",
+        "prompt_en": "The midwife asks Riza for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?",
         "options": [
           {
             "fil": "Gamitin ang master list bilang patunay na nabigyan na ng health teaching ang lahat ng nakatatanda.",
@@ -234,31 +234,31 @@
     },
     {
       "id": "records-story",
-      "path": "/training/bhw-1-1/records-story-fil-6bb45a17131f-poster.jpg",
-      "content_hash": "6bb45a17131f6e56b68b795ded847b9ef09e9fec16f43a408e5461fa029d4979",
+      "path": "/training/bhw-1-1/records-riza-fil-f491be91a82c-poster.jpg",
+      "content_hash": "f491be91a82ca0f6e8cabcd66e5758505ff5ffd3506301bd2b1c2a1becb28fbd",
       "alt_fil": "Piliin ang tala ayon sa tanong: household profile para sa isang kabahayan; master list para sa kasapi ng grupo; registry para sa serbisyong naibigay; iniatas na form para sa hiniling na detalye. Linawin ang hindi tiyak na entry at tiyakin ang tatanggap at aprubadong paraan ng pagpapasa.",
       "alt_en": "Choose the record for the question: household profile for one household; master list for group members; registry for services given; assigned form for requested details. Clarify uncertain entries and confirm the recipient and approved handoff route.",
-      "caption_fil": "Kathang-isip na halimbawa ni Marites. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
-      "caption_en": "A fictional example with Marites. The animated video has Filipino and English narration and captions.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/records) for lesson 1.1.5, using fictional record examples and no real personal data. Narration script and beat timings are in remotion/src/records/narration.ts and remotion/public/records; voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow the narration timings. Owner approved this asset and confirmed expert review on 2026-10-02.",
+      "caption_fil": "Kathang-isip na halimbawa ni Riza. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example with Riza. The animated video has Filipino and English narration and captions.",
+      "provenance": "Revised original Remotion animation (remotion/src/records) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/records. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
       "review_status": "approved",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/records-story-fil-5407fb7868ce.mp4",
-          "content_hash": "5407fb7868ceba2ea901a33f14aef3608255a551f3918808aa91fa2b2abef627",
-          "duration_s": 45,
+          "path": "/training/bhw-1-1/records-riza-fil-d331679469d9.mp4",
+          "content_hash": "d331679469d9d6c4de65d86e2198e3c0b1df1c07fea2070da486c8e2b98368ce",
+          "duration_s": 43,
           "captions": {
-            "path": "/training/bhw-1-1/records-story-fil-4b3356b8dc1c.vtt",
-            "content_hash": "4b3356b8dc1c749f929b28835e229d89f67bb183d33805c81a2adc694eb29ecb"
+            "path": "/training/bhw-1-1/records-riza-fil-b922d5893e04.vtt",
+            "content_hash": "b922d5893e0437a5c14a73093de675adc3d2ae15a1357cedcd984ab27a7eef38"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/records-story-en-d1ad00a54e6a.mp4",
-          "content_hash": "d1ad00a54e6ac1e132379759d8eb55108f3d0052d77f5c94da0d0be80fa22521",
-          "duration_s": 40,
+          "path": "/training/bhw-1-1/records-riza-en-0cf861a44fc4.mp4",
+          "content_hash": "0cf861a44fc4196a6724f4ae9d1142af7dd595d26ad9b0d894d658c96210afb4",
+          "duration_s": 42,
           "captions": {
-            "path": "/training/bhw-1-1/records-story-en-82469aced241.vtt",
-            "content_hash": "82469aced241295a54c047abd6942172e644b054558ef6a65e9ea242f5abb2c7"
+            "path": "/training/bhw-1-1/records-riza-en-76921ba269e4.vtt",
+            "content_hash": "76921ba269e485402b17be6fbc79e362829d1fe0f2596a084507865d03d25075"
           }
         }
       }

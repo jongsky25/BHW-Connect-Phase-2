@@ -1,10 +1,10 @@
 ## [educator-scene] Start with your audience
 
-At a barangay health discussion, Marites does more than read a poster. She first learns what residents are asking, then explains clearly. As a Health Educator, she helps people learn how to care for their bodies and keep their surroundings healthy.
+At a barangay health discussion, Riza does more than read a poster. She first learns what residents are asking, then explains clearly. As a Health Educator, she helps people learn how to care for their bodies and keep their surroundings healthy.
 
 ## [body-environment] Body and environment
 
-Health education can cover care for the body and cleanliness of the surroundings. Marites may also explain how residents can reach health services. She uses materials approved by the health team. In this lesson, she focuses on choosing a topic and audience; detailed health advice belongs in the relevant training.
+Health education can cover care for the body and cleanliness of the surroundings. Riza may also explain how residents can reach health services. She uses materials approved by the health team. In this lesson, she focuses on choosing a topic and audience; detailed health advice belongs in the relevant training.
 
 ## [life-stages] Needs change through life
 
@@ -16,4 +16,4 @@ Education must reach beyond people who already attend a health talk. Consider wh
 
 ## [check] Apply your learning
 
-Marites holds a barangay health discussion, but only parents attend. What could she change to help young people take part?
+Riza holds a barangay health discussion, but only parents attend. What could she change to help young people take part?

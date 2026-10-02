@@ -1,10 +1,10 @@
 ## [applied-observation] Isang obserbasyon, maraming hakbang
 
-Sa kathang-isip na sitwasyon, may naipong tubig sa tatlong bakuran na napuntahan ni Marites. Tagubilin ng midwife: “Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon.” Basahin ang tagubilin, linawin ang hindi tiyak, at ihiwalay ang naobserbahan sa hinala. Huwag magbigay ng diagnosis mula sa obserbasyon sa paligid.
+Sa kathang-isip na sitwasyon, may naipong tubig sa tatlong bakuran na napuntahan ni Riza. Tagubilin ng midwife: “Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon.” Basahin ang tagubilin, linawin ang hindi tiyak, at ihiwalay ang naobserbahan sa hinala. Huwag magbigay ng diagnosis mula sa obserbasyon sa paligid.
 
 ## [applied-education] Piliin ang pagtuturong kailangan
 
-Tatanungin ni Marites kung ano ang gustong linawin ng pamilya tungkol sa kanilang paligid. Gagamit siya ng aprubadong materyal at paliwanag na angkop sa kausap. Sabihin sa sarili mong salita kung paano mo bubuksan ang usapan. Halimbawa: “Ano po ang napapansin ninyo sa tubig na naiipon dito?” Makinig bago magpaliwanag.
+Tatanungin ni Riza kung ano ang gustong linawin ng pamilya tungkol sa kanilang paligid. Gagamit siya ng aprubadong materyal at paliwanag na angkop sa kausap. Sabihin sa sarili mong salita kung paano mo bubuksan ang usapan. Halimbawa: “Ano po ang napapansin ninyo sa tubig na naiipon dito?” Makinig bago magpaliwanag.
 
 ## [applied-organizing] Tukuyin ang mga makakatuwang
 

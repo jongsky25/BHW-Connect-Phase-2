@@ -15,8 +15,8 @@ export type RecordsBeat = {
 export const RECORDS_BEATS: RecordsBeat[] = [
   {
     id: "question",
-    fil: "Pagkatapos kausapin si Aling Nena, tinanong ni Marites ang midwife kung anong impormasyong kailangan.",
-    en: "After speaking with Aling Nena, Marites asks the midwife what information is needed.",
+    fil: "Pagkatapos kausapin si Aling Nena, tinanong ni Riza ang midwife kung anong impormasyong kailangan.",
+    en: "After speaking with Aling Nena, Riza asks the midwife what information is needed.",
     title_fil: "Anong tala ang kailangan?",
     title_en: "Which record is needed?",
     detail_fil: "Alamin muna ang tanong.",

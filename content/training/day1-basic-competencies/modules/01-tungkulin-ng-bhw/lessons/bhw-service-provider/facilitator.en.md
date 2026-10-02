@@ -11,7 +11,7 @@ By the end of the lesson, the BHW can demonstrate a full response to a resident 
 
 - Read all six Read sections and Slides in Filipino and English. Both modes use the same situation and check.
 - Confirm with the supervising midwife or health team whom to contact, how residents reach services, and the local referral and emergency procedures. Do not teach one pathway as universal.
-- Prepare fictional role-play cards. Include Aling Nena's request for medicine advice, which is beyond Marites's training in this scenario. Do not use real patient names or information.
+- Prepare fictional role-play cards. Include Aling Nena's request for medicine advice, which is beyond Riza's training in this scenario. Do not use real patient names or information.
 - Interviewing, vital signs, recording, household profiles, and first aid are **examples** in the manual. Do not teach measurement, first aid technique, diagnosis, or treatment in this lesson. Actual tasks depend on training, local policy, and supervision.
 
 ## [opening] Opening
@@ -20,8 +20,8 @@ Ask: *"When a resident first approaches you with a question about her child, wha
 
 ## [steps] Steps
 
-1. **First contact.** Introduce Marites and Aling Nena. Ask how partnering with the midwife helps a BHW who cannot answer every question.
-2. **Listening.** Have a participant ask Marites's question about Aling Nena's need. Ask them to repeat what they heard without guessing at illness or treatment.
+1. **First contact.** Introduce Riza and Aling Nena. Ask how partnering with the midwife helps a BHW who cannot answer every question.
+2. **Listening.** Have a participant ask Riza's question about Aling Nena's need. Ask them to repeat what they heard without guessing at illness or treatment.
 3. **Boundaries.** Show the manual's examples of initial services. Ask which fall within participants' actual training and supervision. The supervising health team confirms local scope.
 4. **Guidance.** Using confirmed local information, have participants say whom Aling Nena should approach, how to reach them, and how to check her understanding. Mention local referral and emergency procedures when applicable.
 5. **Follow-up.** Ask: *"What must you confirm with the health team before promising to follow up?"* Listen for what to report, when, and to whom. Specific forms belong in the next lesson.
@@ -36,7 +36,7 @@ Ask: *"When a resident first approaches you with a question about her child, wha
 
 ## [misconception] Common misconception
 
-**"If I am the first contact, I must have every answer."** Return to the illustration: Marites listens to Aling Nena, and the midwife is a partner. Her role is to listen, assist within scope, guide to appropriate care, and follow the team's instructions afterward.
+**"If I am the first contact, I must have every answer."** Return to the illustration: Riza listens to Aling Nena, and the midwife is a partner. Her role is to listen, assist within scope, guide to appropriate care, and follow the team's instructions afterward.
 
 ## [practice] Practice activity
 

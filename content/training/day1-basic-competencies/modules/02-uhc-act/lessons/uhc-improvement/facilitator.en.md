@@ -16,6 +16,8 @@ By the end of this short lesson the BHW can name one gap in their own barangay w
 
 ## [opening] Opening
 
+In this continuing story, BHW Vlanche considers one small improvement to discuss with the health team.
+
 Ask the group: *"Have you ever had an idea at work that never happened? What stopped it?"* Take two or three answers. Listen for "I never told anyone" or "I tried to do it all at once" — you will come back to these in steps 2 and 3.
 
 ## [steps] Steps

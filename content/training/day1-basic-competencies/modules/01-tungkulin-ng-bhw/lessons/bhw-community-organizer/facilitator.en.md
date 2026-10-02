@@ -19,12 +19,12 @@ Ask the group: *"Think of the last time something needed fixing in your purok �
 
 ## [steps] Steps
 
-1. **Scene (first slide).** Marites notices standing water in three yards. Ask: *"Who should she hear from before a shared activity is decided?"* Include residents, the purok leader, and health staff.
-2. **Invitation (second slide).** Read Marites's example invitation from the lesson. Ask a participant to suggest another time. Have the group say how Marites should respond so residents can shape the activity.
-3. **Observation (third slide).** Write *"There is standing water in three yards"* and *"The standing water made children ill."* Ask which statement Marites can report as something she saw. Acknowledge concern about illness without asserting its cause.
+1. **Scene (first slide).** Riza notices standing water in three yards. Ask: *"Who should she hear from before a shared activity is decided?"* Include residents, the purok leader, and health staff.
+2. **Invitation (second slide).** Read Riza's example invitation from the lesson. Ask a participant to suggest another time. Have the group say how Riza should respond so residents can shape the activity.
+3. **Observation (third slide).** Write *"There is standing water in three yards"* and *"The standing water made children ill."* Ask which statement Riza can report as something she saw. Acknowledge concern about illness without asserting its cause.
 4. **Planning team (fourth slide).** Ask who carries a concern to the barangay planning team for health in this locality and how residents hear the response. Use the actual local route you confirmed during preparation; do not imply every BHW attends the team.
 5. **Wider planning (fifth slide).** Explain in one sentence how barangay input may inform the city or provincial LIPH through the local process. State that a proposal does not automatically receive funding.
-6. **Self-check (sixth slide).** Let the group choose Marites's next action before revealing the answer. Ask why the other options fail.
+6. **Self-check (sixth slide).** Let the group choose Riza's next action before revealing the answer. Ask why the other options fail.
 
 ## [expected-answers] Expected answers and how to respond
 
@@ -45,7 +45,7 @@ In pairs, each BHW chooses one real observation from their purok without naming 
 
 The lesson has one check. It appears at the end of Read ("Apply your learning") and again on the last slide; it is the same question, so it is covered once here.
 
-- **"Residents suggest a different time ... What should Marites do next?"** → **Listen to the suggested time, report what was seen, and discuss the next step with health staff.** She includes residents and keeps the observation separate from an unverified explanation.
+- **"Residents suggest a different time ... What should Riza do next?"** → **Listen to the suggested time, report what was seen, and discuss the next step with health staff.** She includes residents and keeps the observation separate from an unverified explanation.
   - *Keep the original time and say the cause has been proven* ignores residents and turns an assumption into a fact.
   - *Delay until funding is promised* blocks discussion and assumes a funding guarantee that neither the BHW nor the LIPH can give.
 
@@ -61,7 +61,7 @@ Observing this in the room is separate from the BHW finishing the online self-ch
 
 ## [support] If a BHW needs more support
 
-- Model it first: give your own invitation for Marites's clean-up drive using the three slide questions, then have the BHW give theirs.
+- Model it first: give your own invitation for Riza's clean-up drive using the three slide questions, then have the BHW give theirs.
 - Split the task. Practise the observation sentence alone ("What did you see? Where? How many?") before adding the invitation.
 - Pair them with a BHW rated **Kaya na** who plays the resident.
 - Re-observe at the next session with the same observation they chose, not a new one.

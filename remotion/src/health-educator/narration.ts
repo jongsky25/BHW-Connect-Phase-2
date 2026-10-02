@@ -14,8 +14,8 @@ export type HealthEducatorBeat = {
 export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = [
   {
     id: "listen",
-    fil: "Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni BHW Marites ang poster. Inaalam muna niya ang mga tanong ng mga residente, saka nagpapaliwanag nang malinaw.",
-    en: "At a barangay health discussion, BHW Marites does more than read a poster. She first learns what residents are asking, then explains clearly.",
+    fil: "Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni BHW Riza ang poster. Inaalam muna niya ang mga tanong ng mga residente, saka nagpapaliwanag nang malinaw.",
+    en: "At a barangay health discussion, BHW Riza does more than read a poster. She first learns what residents are asking, then explains clearly.",
     title_fil: "Magsimula sa kausap",
     title_en: "Start with your audience",
     detail_fil: "Makinig muna sa tanong.",
@@ -32,8 +32,8 @@ export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = [
   },
   {
     id: "life-stages",
-    fil: "Magkakaiba ang tanong ng tagapag-alaga ng sanggol, kabataan, buntis, at nakatatanda. Iniaangkop ni Marites ang usapan tungkol sa sakit, aksidente, at panganib sa yugto ng buhay ng kausap.",
-    en: "An infant's caregiver, a young person, a pregnant resident, and an older adult may have different questions. Marites adapts discussions of illness, accidents, and risks to each life stage.",
+    fil: "Magkakaiba ang tanong ng tagapag-alaga ng sanggol, kabataan, buntis, at nakatatanda. Iniaangkop ni Riza ang usapan tungkol sa sakit, aksidente, at panganib sa yugto ng buhay ng kausap.",
+    en: "An infant's caregiver, a young person, a pregnant resident, and an older adult may have different questions. Riza adapts discussions of illness, accidents, and risks to each life stage.",
     title_fil: "Iba't ibang yugto",
     title_en: "Different life stages",
     detail_fil: "Iangkop ang usapan sa kausap.",
@@ -41,8 +41,8 @@ export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = [
   },
   {
     id: "reach",
-    fil: "Napansin ni Marites na mga magulang lamang ang dumalo. Tinanong niya kung sino pa ang hindi naaabot, at kung anong oras, lugar, wika, at paraan ang makatutulong sa kanila.",
-    en: "Marites notices that only parents attended. She asks who else is missing and what time, place, language, and format could help them take part.",
+    fil: "Napansin ni Riza na mga magulang lamang ang dumalo. Tinanong niya kung sino pa ang hindi naaabot, at kung anong oras, lugar, wika, at paraan ang makatutulong sa kanila.",
+    en: "Riza notices that only parents attended. She asks who else is missing and what time, place, language, and format could help them take part.",
     title_fil: "Sino ang wala rito?",
     title_en: "Who is missing?",
     detail_fil: "Abutin ang bawat sektor.",
@@ -50,8 +50,8 @@ export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = [
   },
   {
     id: "young-people",
-    fil: "Upang makasali ang mga kabataan, tatanungin ni Marites kung kailan sila maaari at kung ano ang nais nilang malaman. Iaangkop niya ang talakayan sa kanilang tanong, habang tinitiyak na tama at aprubado ang impormasyon.",
-    en: "To include young people, Marites asks when they can join and what they want to learn. She adapts the discussion to their questions while keeping the information accurate and approved.",
+    fil: "Upang makasali ang mga kabataan, tatanungin ni Riza kung kailan sila maaari at kung ano ang nais nilang malaman. Iaangkop niya ang talakayan sa kanilang tanong, habang tinitiyak na tama at aprubado ang impormasyon.",
+    en: "To include young people, Riza asks when they can join and what they want to learn. She adapts the discussion to their questions while keeping the information accurate and approved.",
     title_fil: "Anyayahan ang kabataan",
     title_en: "Invite young people",
     detail_fil: "Makinig · Iangkop · Isama",

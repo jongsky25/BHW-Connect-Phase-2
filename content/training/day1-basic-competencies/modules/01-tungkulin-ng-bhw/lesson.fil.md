@@ -1,6 +1,6 @@
-## [scenario/core] Ang umaga ni BHW Marites
+## [scenario/core] Ang umaga ni BHW Riza
 
-Alas-otso ng umaga. Nasa purok si BHW Marites, may dala-dalang tarpaulin
+Alas-otso ng umaga. Nasa purok si BHW Riza, may dala-dalang tarpaulin
 tungkol sa dengue. Labinlimang nanay ang nakaupo sa harap niya.
 
 Alas-diyes, nasa barangay hall siya. Kausap niya ang kagawad sa kalusugan
@@ -8,11 +8,11 @@ tungkol sa clean-up drive sa Sabado — dala niya ang listahan ng mga
 kabahayan na may naipong tubig sa likod-bahay.
 
 Alas-onse, kumatok si Aling Nena. Tatlong linggo nang umuubo ang panganay
-niya. Sinukat ni Marites ang temperatura, isinulat ang nakita, at
+niya. Sinukat ni Riza ang temperatura, isinulat ang nakita, at
 inihatid siya sa midwife.
 
 Isang umaga. Tatlong magkaibang trabaho. Pero isa lang ang tungkulin ni
-Marites.
+Riza.
 
 :::takeaway
 Ang tungkulin ng BHW ay hindi iisang gawain — tatlong magkaibang papel na
@@ -80,7 +80,7 @@ sapat na kaalaman sa mga programa ng barangay.
 
 ## [concept/core] Health Educator {m1.role.educator, m1.educator.lifestages, m1.educator.allsectors}
 
-Nang tumayo si Marites sa harap ng labinlimang nanay, Health Educator
+Nang tumayo si Riza sa harap ng labinlimang nanay, Health Educator
 siya noon.
 
 Ang tungkulin ng Health Educator ay bigyan ang tao ng kaalaman kung
@@ -105,7 +105,7 @@ yugto ng buhay.
 
 ## [concept/core] Community Organizer {m1.role.organizer, m1.organizer.participation, m1.organizer.planningteam, m1.organizer.liph}
 
-Nang kausapin ni Marites ang kagawad tungkol sa clean-up drive,
+Nang kausapin ni Riza ang kagawad tungkol sa clean-up drive,
 Community Organizer siya noon.
 
 Ang Community Organizer ay nagpapanatili ng magandang relasyon at
@@ -132,7 +132,7 @@ lamang tagapagpatupad.
 
 ## [concept/core] Health Service Provider {m1.role.provider, m1.provider.firstcontact, m1.provider.guide, m1.provider.initialservices, m1.provider.monitoring}
 
-Nang kumatok si Aling Nena, Health Service Provider si Marites noon.
+Nang kumatok si Aling Nena, Health Service Provider si Riza noon.
 
 Ang BHW ay bahagi ng **primary care team** ng lungsod o munisipyo, at
 katuwang ng midwife sa barangay sa paghatid ng serbisyong pangkalusugan.

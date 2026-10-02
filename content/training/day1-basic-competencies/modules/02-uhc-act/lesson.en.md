@@ -1,10 +1,10 @@
 ## [scenario/core] Mang Ernesto's question
 
 "Is it true consultations at the health center are free now? I only heard
-it on the radio." That was Mang Ernesto's question to BHW Beth one
+it on the radio." That was Mang Ernesto's question to BHW Vlanche one
 morning, while waiting in line.
 
-Beth knew there was a new law — she had heard about it at a meeting the
+Vlanche knew there was a new law — she had heard about it at a meeting the
 month before. But honestly, she could not explain clearly what it had
 actually changed. "Let me check and I'll get back to you," she answered —
 an answer she honestly did not want to give again.
@@ -76,14 +76,14 @@ actually reached your own barangay, and which have not.
 
 :::check
 ? Mang Ernesto heard that "consultations are free now." Which of the
-  following is BHW Beth's most accurate explanation?
+  following is BHW Vlanche's most accurate explanation?
 - All medicine and hospitalization are now free because of UHC
 + Consultation can be covered if he is registered with a PhilHealth
   primary care provider, but not every service is free
 - That's not true, UHC changed nothing about payment
 > Correct! UHC widens PhilHealth to include outpatient consultation for
   people registered with a primary care provider. It does not make
-  everything free, so Beth helps him check his registration instead of
+  everything free, so Vlanche helps him check his registration instead of
   promising a free visit.
 :::
 

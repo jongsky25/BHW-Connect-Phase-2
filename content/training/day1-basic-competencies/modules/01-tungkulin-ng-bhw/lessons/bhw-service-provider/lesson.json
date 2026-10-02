@@ -87,8 +87,8 @@
       "takeaway_fil": "Makinig, manatili sa saklaw, gumabay, at mag-follow-up kasama ang health team.",
       "takeaway_en": "Listen, stay within scope, guide, and follow through with the health team.",
       "check": {
-        "prompt_fil": "Tinanong ni Aling Nena si Marites kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Marites ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?",
-        "prompt_en": "Aling Nena asks Marites what medicine to give her child. Giving that advice is outside Marites's training. What is her best response?",
+        "prompt_fil": "Tinanong ni Aling Nena si Riza kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Riza ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?",
+        "prompt_en": "Aling Nena asks Riza what medicine to give her child. Giving that advice is outside Riza's training. What is her best response?",
         "options": [
           {
             "fil": "Magmungkahi ng gamot batay sa karaniwang ginagawa ng kapitbahay.",
@@ -104,8 +104,8 @@
           }
         ],
         "correct_option_index": 2,
-        "feedback_fil": "Hindi nagbibigay si Marites ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.",
-        "feedback_en": "Marites does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions."
+        "feedback_fil": "Hindi nagbibigay si Riza ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.",
+        "feedback_en": "Riza does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions."
       }
     }
   ],
@@ -286,31 +286,31 @@
     },
     {
       "id": "service-provider-story",
-      "path": "/training/bhw-1-1/service-provider-story-fil-5a789846d579-poster.jpg",
-      "content_hash": "5a789846d579f72ffa177035ed1fe9c0f91e546320fe4ede9a2d332c01926289",
-      "alt_fil": "Lumapit si Aling Nena kay Marites tungkol sa anak niya. Nagtanong at nakinig si Marites, nanatili sa saklaw ng kanyang pagsasanay, humingi ng gabay sa midwife kapag hindi tiyak, ipinaliwanag ang susunod na hakbang, at nag-follow-up ayon sa tagubilin ng health team.",
-      "alt_en": "Aling Nena approaches Marites about her child. Marites asks and listens, stays within her training, seeks the midwife's guidance when unsure, explains the next step, and follows the health team's instructions for follow-up.",
-      "caption_fil": "Kathang-isip na halimbawa nina Marites at Aling Nena. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
-      "caption_en": "A fictional example with Marites and Aling Nena. The animated video has Filipino and English narration and captions.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/service-provider) for lesson 1.1.4. Narration script and measured beat timings are in remotion/src/service-provider/narration.ts and remotion/public/service-provider. Voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow narration timings. Owner approved both language versions on 2026-10-02; no treatment is depicted or instructed.",
+      "path": "/training/bhw-1-1/service-provider-riza-fil-439e02e58cb9-poster.jpg",
+      "content_hash": "439e02e58cb952645a1750c8789203cbb58ce4405874941ce3ca33336896f8c3",
+      "alt_fil": "Lumapit si Aling Nena kay Riza tungkol sa anak niya. Nagtanong at nakinig si Riza, nanatili sa saklaw ng kanyang pagsasanay, humingi ng gabay sa midwife kapag hindi tiyak, ipinaliwanag ang susunod na hakbang, at nag-follow-up ayon sa tagubilin ng health team.",
+      "alt_en": "Aling Nena approaches Riza about her child. Riza asks and listens, stays within her training, seeks the midwife's guidance when unsure, explains the next step, and follows the health team's instructions for follow-up.",
+      "caption_fil": "Kathang-isip na halimbawa nina Riza at Aling Nena. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example with Riza and Aling Nena. The animated video has Filipino and English narration and captions.",
+      "provenance": "Revised original Remotion animation (remotion/src/service-provider) for lesson 1.1, naming the fictional BHW Riza. Filipino and English Edge Read Aloud narration and measured beat timings are in remotion/public/service-provider. Replaces the earlier Marites-named cut; this revision was approved by the owner on 2026-10-02. Earlier content-hashed media remain available for published revisions.",
       "review_status": "approved",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-1/service-provider-story-fil-cafea93cdd16.mp4",
-          "content_hash": "cafea93cdd16844b4add2cf1ab8fd0198c8fdcf7d0891c8597e774aa7d2661aa",
-          "duration_s": 65,
+          "path": "/training/bhw-1-1/service-provider-riza-fil-d90ec0e9c049.mp4",
+          "content_hash": "d90ec0e9c049462668d79dd8210123086001b9768bebe683cd0419961f756412",
+          "duration_s": 55,
           "captions": {
-            "path": "/training/bhw-1-1/service-provider-story-fil-7017cb2d2308.vtt",
-            "content_hash": "7017cb2d23086ba36dc397e875dd74c30b2357e3ff1ac750f47ab6cbe050f666"
+            "path": "/training/bhw-1-1/service-provider-riza-fil-5cc568592e75.vtt",
+            "content_hash": "5cc568592e7578ded1d7e98ba000d9f654205712e1dcf9aca8ee0d9883fc4975"
           }
         },
         "en": {
-          "path": "/training/bhw-1-1/service-provider-story-en-29763039c2c7.mp4",
-          "content_hash": "29763039c2c77cdf2aabed43232bd02c2e20dbcee01cae041d56281b082f3851",
+          "path": "/training/bhw-1-1/service-provider-riza-en-b8861e440eb5.mp4",
+          "content_hash": "b8861e440eb5bc04f4190c8cbaf0bf69c7b624962b013a0ab32da73910f94c2f",
           "duration_s": 54,
           "captions": {
-            "path": "/training/bhw-1-1/service-provider-story-en-29b4a1bb30ea.vtt",
-            "content_hash": "29b4a1bb30eae384fc56309cc35a353c0e7e87bbb67cdbf88b7b38b7267052f1"
+            "path": "/training/bhw-1-1/service-provider-riza-en-187580171525.vtt",
+            "content_hash": "187580171525247b6c3bd08bed5cba9a5289eb53d59971800fdf5b3ad629addd"
           }
         }
       }

@@ -1,10 +1,10 @@
 ## [applied-observation] One observation, several actions
 
-In this fictional situation, Marites sees standing water in three yards. The midwife instructs: “Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me.” Read the instruction, clarify uncertainty, and separate observations from assumptions. Do not diagnose from an environmental observation.
+In this fictional situation, Riza sees standing water in three yards. The midwife instructs: “Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me.” Read the instruction, clarify uncertainty, and separate observations from assumptions. Do not diagnose from an environmental observation.
 
 ## [applied-education] Choose the education needed
 
-Marites asks what the family wants to clarify about their surroundings. She uses approved materials and an explanation suited to the audience. Say in your own words how you would open the conversation. For example: “What have you noticed about the water collecting here?” Listen before explaining.
+Riza asks what the family wants to clarify about their surroundings. She uses approved materials and an explanation suited to the audience. Say in your own words how you would open the conversation. For example: “What have you noticed about the water collecting here?” Listen before explaining.
 
 ## [applied-organizing] Identify potential partners
 
