@@ -44,3 +44,5 @@ Lesson 1.1.3 uses the same pattern in `remotion/src/community-organizer/`;
 its bilingual video was approved by the owner on 2026-10-02.
 Lesson 1.1.2 follows in `remotion/src/health-educator/`; its bilingual video
 was approved by the owner on 2026-10-02.
+Lesson 1.1.1 follows in `remotion/src/roles-hepo/`; its new video is a review
+draft.

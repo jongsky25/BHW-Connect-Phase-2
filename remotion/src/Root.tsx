@@ -30,6 +30,12 @@ import {
   HealthEducatorStory,
   calculateHealthEducatorMetadata,
 } from "./health-educator/HealthEducatorStory";
+import {
+  ROLES_HEPO_FALLBACK_DURATION,
+  ROLES_HEPO_FPS,
+  RolesHepoStory,
+  calculateRolesHepoMetadata,
+} from "./roles-hepo/RolesHepoStory";
 
 // Compositions are authored at the lesson format (854×480, see
 // scripts/remotion-render.mjs) so the render needs no scaling. One
@@ -53,6 +59,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculateHandrubMetadata}
           durationInFrames={HANDRUB_FALLBACK_DURATION}
           fps={HANDRUB_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`roles-hepo-${language}`}
+          id={language === "fil" ? "RolesHepoStoryFil" : "RolesHepoStoryEn"}
+          component={RolesHepoStory}
+          calculateMetadata={calculateRolesHepoMetadata}
+          durationInFrames={ROLES_HEPO_FALLBACK_DURATION}
+          fps={ROLES_HEPO_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}

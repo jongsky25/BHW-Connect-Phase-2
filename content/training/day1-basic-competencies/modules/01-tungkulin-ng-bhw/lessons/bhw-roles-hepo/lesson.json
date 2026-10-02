@@ -276,6 +276,38 @@
       "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
       "review_status": "approved",
       "content_hash": "736187dad098070d806d873a90f59cf871b3d03c02b52bb3001692d1ecb7ecb8"
+    },
+    {
+      "id": "roles-hepo-story",
+      "path": "/training/bhw-1-1/roles-hepo-story-fil-39f2c02bc935-poster.jpg",
+      "content_hash": "39f2c02bc9350f7fe4087525c274dd1bf6ac9c77aeca82ca30154ea8b9724ebd",
+      "alt_fil": "Sa isang umaga, nagtuturo si Marites, inaanyayahan ang mga residente na magplano, at ginagabayan si Aling Nena na makausap ang midwife. Magkakaugnay ang tatlong gawaing ito sa papel ng BHW at HEPO.",
+      "alt_en": "In one morning, Marites teaches, invites residents to plan, and helps Aling Nena contact the midwife. These three duties connect in the BHW and HEPO role.",
+      "caption_fil": "Kathang-isip na halimbawa ng magkakaugnay na tungkulin ng BHW. May pagsasalaysay at caption ang animadong video sa Filipino at English.",
+      "caption_en": "A fictional example of connected BHW duties. The animated video has Filipino and English narration and captions.",
+      "provenance": "Original code-authored Remotion animation (remotion/src/roles-hepo) for lesson 1.1.1. Narration script and measured beat timings are in remotion/src/roles-hepo/narration.ts and remotion/public/roles-hepo. Voice synthesized with Gemini TTS (Kore), one render per language. Caption cues follow narration timings. Draft for owner review; the HEPO visual explains connected duties, not a formal appointment or official organizational chart.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-1/roles-hepo-story-fil-53fe6d588487.mp4",
+          "content_hash": "53fe6d588487829c1a4df3aec84c7f7e41cba3e16ad256ffacde65276bd14d30",
+          "duration_s": 85,
+          "captions": {
+            "path": "/training/bhw-1-1/roles-hepo-story-fil-32148485b06f.vtt",
+            "content_hash": "32148485b06f63358f10d7df3d6cc945104a86169c97bc23fead4ee0a9d69132"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-1/roles-hepo-story-en-130a46166258.mp4",
+          "content_hash": "130a4616625805b0b6b000a5f7315e24b805f02c29a03f8ddc3e1a58c24f92ef",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-1/roles-hepo-story-en-f2bcf1509be2.vtt",
+            "content_hash": "f2bcf1509be23f78900b60e1e09157c2a8053d5d9d09e80c15ece37b52e1ed21"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "roles-hepo-story"
 }
