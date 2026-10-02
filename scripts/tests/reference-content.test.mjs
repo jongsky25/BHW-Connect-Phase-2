@@ -274,9 +274,11 @@ test("one-lesson publication retains the other five published revisions", async 
 });
 test("scoped publication refuses an unpublished sibling before writes", async () => {
   const f = fake();
-  await applyReferenceLoad(f.client, await planReferenceLoad(f.client, [referenceModule], f.lock, { orgUnitId: f.org }), f.lock, randomUUID());
+  const approved = structuredClone(referenceModule);
+  approved.lessons.forEach((lesson) => lesson.revision.assets.forEach((asset) => (asset.review_status = "approved")));
+  await applyReferenceLoad(f.client, await planReferenceLoad(f.client, [approved], f.lock, { orgUnitId: f.org }), f.lock, randomUUID());
   const writes = f.writes.length;
-  await assert.rejects(planReferenceLoad(f.client, [referenceModule], f.lock, { orgUnitId: f.org, promote: true, lessonKeys: ["bhw-roles-hepo"] }), /every other lesson/);
+  await assert.rejects(planReferenceLoad(f.client, [approved], f.lock, { orgUnitId: f.org, promote: true, lessonKeys: ["bhw-roles-hepo"] }), /every other lesson/);
   assert.equal(f.writes.length, writes);
 });
 test("stale locks fail closed and never create replacement history", async () => {
