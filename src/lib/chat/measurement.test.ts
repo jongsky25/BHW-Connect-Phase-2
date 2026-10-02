@@ -78,7 +78,7 @@ const cases: Case[] = [
     kind: "bp",
     outcome: "result",
     urgency: "attention",
-    en: /grade 3.*PhilPEN/,
+    en: /grade 3.*seen at the health facility today/,
   },
   {
     q: "BP 150/85",
@@ -228,10 +228,49 @@ describe("resolveMeasurement", () => {
     expect(r.text.en).toMatch(/lie them down and refer/);
   });
 
-  it("never states the unvalidated numeric low-BP cut-off", () => {
+  it("states the conventional low-BP numbers with the symptom caveat", () => {
     const r = ask("BP 85/55")!;
-    expect(r.text.en).toMatch(/no agreed numeric cut-off/);
-    expect(r.text.en).not.toMatch(/below 90|< ?90/);
+    expect(r.text.en).toMatch(/below 90.*below 60.*generally treated as low/);
+    expect(r.text.en).toMatch(/some people are normally this low/);
+    expect(r.text.en).toMatch(/go by symptoms/);
+    expect(r.text.fil).toMatch(/mas mababa sa 90.*mas mababa sa 60/);
+  });
+
+  it("sends the highest category to the emergency questions first, then same-day assessment", () => {
+    const r = ask("BP 185/112")!;
+    expect(r.urgency).toBe("attention");
+    expect(r.text.en).toMatch(/chest pain.*treat it as an emergency/);
+    expect(r.text.en).toMatch(/seen at the health facility today/);
+    expect(r.text.en).toMatch(/do not send them home to wait/);
+    expect(r.text.en).toMatch(
+      /LGU's PhilPEN protocol sets a different timing.*follow it/,
+    );
+    expect(r.text.fil).toMatch(/ngayong araw/);
+  });
+
+  it("shows the Philippine band beside the grade, matching the 2020 CPG exactly", () => {
+    const band = (q: string) =>
+      /Philippine guideline: ([a-z ]+)\./.exec(ask(q)!.text.en)?.[1];
+    expect(band("BP 110/70")).toBe("normal"); // <120/80
+    expect(band("BP 119/79")).toBe("normal");
+    expect(band("BP 120/70")).toBe("borderline"); // 120-139/80-89
+    expect(band("BP 125/82")).toBe("borderline");
+    expect(band("BP 139/89")).toBe("borderline");
+    expect(band("BP 118/82")).toBe("borderline"); // one number in the band is enough
+    expect(band("BP 140/85")).toBe("hypertension range"); // >=140/90
+    expect(band("BP 130/90")).toBe("hypertension range");
+    expect(band("BP 185/112")).toBe("hypertension range");
+    expect(ask("BP 85/55")!.text.en).not.toMatch(/Philippine guideline/);
+    expect(ask("BP 150/95")!.text.fil).toMatch(
+      /Ayon sa gabay ng Pilipinas: saklaw ng altapresyon/,
+    );
+  });
+
+  it("says hypertension needs two readings on two separate days", () => {
+    expect(ask("BP 150/95")!.text.en).toMatch(
+      /at least two readings on two separate days/,
+    );
+    expect(ask("BP 150/95")!.text.fil).toMatch(/dalawang magkaibang araw/);
   });
 
   it("always carries the screening-not-diagnosis line on a result", () => {
