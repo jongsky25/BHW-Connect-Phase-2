@@ -622,3 +622,8 @@ body {
     background: CanvasText;
   }
 }
+
+/* Keep Riza and the midwife together in narrow lesson crops. */
+.reference-story[data-lesson="bhw-roles-application"] .reference-story-art img {
+  object-position: 68% 45%;
+}

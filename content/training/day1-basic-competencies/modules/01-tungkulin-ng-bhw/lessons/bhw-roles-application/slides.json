@@ -5,10 +5,10 @@
       "m1.competency"
     ],
     "layout": "scene",
-    "heading_fil": "Isang obserbasyon, maraming hakbang",
-    "heading_en": "One observation, several actions",
-    "display_fil": "Nakita: naipong tubig\nTatlong bakuran\nTagubilin: itala at iulat\nObserbasyon ito; hindi diagnosis o napatunayang sanhi ng sakit.",
-    "display_en": "Observed: standing water\nThree yards\nInstruction: record and report\nThis is an observation, not a diagnosis or a proven cause of illness.",
+    "heading_fil": "Isang obserbasyon, tatlong tungkulin",
+    "heading_en": "One observation, three roles",
+    "display_fil": "Tubig sa tatlong bakuran\nItala · Magtanong · Iulat\nNakita ang tubig; hindi napatunayan ang sakit.",
+    "display_en": "Water in three yards\nRecord · Ask · Report\nWater was observed; illness was not established.",
     "asset_ids": [
       "A07"
     ],
@@ -20,10 +20,10 @@
       "m1.role.educator"
     ],
     "layout": "scene",
-    "heading_fil": "Piliin ang pagtuturong kailangan",
-    "heading_en": "Choose the education needed",
-    "display_fil": "Itanong ang alalahanin\nGamitin ang aprubadong mensahe\nHealth Educator: malinaw na usapang angkop sa pamilya.",
-    "display_en": "Ask about the concern\nUse an approved message\nHealth Educator: a clear conversation suited to the family.",
+    "heading_fil": "Makinig bago magpaliwanag",
+    "heading_en": "Listen before explaining",
+    "display_fil": "“Ano po ang napapansin ninyo?”\nMakinig bago magpaliwanag\nGamitin ang aprubadong mensahe.",
+    "display_en": "“What have you noticed?”\nListen before explaining\nUse an approved message.",
     "asset_ids": [
       "A07"
     ],
@@ -36,12 +36,29 @@
       "m1.organizer.participation"
     ],
     "layout": "process",
-    "heading_fil": "Tukuyin ang mga makakatuwang",
-    "heading_en": "Identify potential partners",
-    "display_fil": "Residente + purok leader\nKagawad + health staff\nUsapan at napagkasunduang gawain\nCommunity Organizer: anyayahan ang mga tao na magplano at kumilos.",
-    "display_en": "Residents + purok leader\nCouncil member + health staff\nDiscussion and agreed action\nCommunity Organizer: invite people to plan and act.",
+    "heading_fil": "Anyayahan ang mga makakatuwang",
+    "heading_en": "Invite people to take part",
+    "display_fil": "Residente · Purok leader · Kagawad · Health staff\n“Anong oras ang maaari sa inyo?”\nMakinig bago magkasundo.",
+    "display_en": "Residents · Purok leader · Council member · Health staff\n“What time works for you?”\nListen before agreeing.",
     "asset_ids": [
       "A07"
+    ],
+    "check": null
+  },
+  {
+    "id": "next-learning-slide",
+    "concept_ids": [
+      "m1.skills.crossref",
+      "m1.provider.records",
+      "m1.provider.guide"
+    ],
+    "layout": "process",
+    "heading_fil": "Gumabay at itala ang ginawa",
+    "heading_en": "Guide and record the action",
+    "display_fil": "Tiyakin ang contact at lokal na paraan\nIpaliwanag ang susunod na hakbang\nItala ang aktwal na ginawa\nBalikan ang 1.1.5; palawakin ang kasanayan sa susunod na mga aralin.",
+    "display_en": "Confirm the contact and local route\nExplain the next step\nRecord the actual action\nRevisit 1.1.5; develop these skills in later lessons.",
+    "asset_ids": [
+      "A02"
     ],
     "check": null
   },
@@ -53,27 +70,12 @@
       "m1.provider.guide"
     ],
     "layout": "process",
-    "heading_fil": "Ihanda ang maikling handover",
-    "heading_en": "Prepare a short handover",
-    "display_fil": "Nakita · tubig sa 3 bakuran\nGinawa · itinala at nakinig\nKailangan · gabay sa susunod na hakbang\nUlat sa midwife: obserbasyon + ginawa + kailangan.",
-    "display_en": "Observed · water in 3 yards\nDone · recorded and listened\nNeeded · guidance on the next step\nReport to the midwife: observation + action taken + next need.",
+    "heading_fil": "Nakita, ginawa, at kailangan",
+    "heading_en": "Observed, done, and needed",
+    "display_fil": "Nakita · Tubig sa tatlong bakuran\nGinawa · Naitala, nakinig, nakipag-ugnayan\nKailangan · Gabay sa susunod na hakbang",
+    "display_en": "Observed · Water in three yards\nDone · Recorded, listened, connected\nNeeded · Guidance on the next step",
     "asset_ids": [
       "A07"
-    ],
-    "check": null
-  },
-  {
-    "id": "next-learning-slide",
-    "concept_ids": [
-      "m1.skills.crossref"
-    ],
-    "layout": "process",
-    "heading_fil": "Ituloy ang paglinang ng kasanayan",
-    "heading_en": "Continue developing your skills",
-    "display_fil": "1.6 · Komunikasyon\nII · Community mobilization\nIII · Health-promotion teaching\nMga susunod na pag-aaral. Hiwalay na obserbasyon ang praktikal na kakayahan.",
-    "display_en": "1.6 · Communication\nII · Community mobilization\nIII · Health-promotion teaching\nFuture learning. Practical competence requires separate observation.",
-    "asset_ids": [
-      "A02"
     ],
     "check": null
   },
@@ -89,32 +91,31 @@
       "m1.skills.crossref"
     ],
     "layout": "decision",
-    "heading_fil": "Gamitin ang natutuhan",
-    "heading_en": "Apply your learning",
-    "display_fil": "Maayos na pagkilos: piliin ang papel, sundin ang tagubilin, itala, at makipag-ugnayan.",
-    "display_en": "Sound action: choose the role, follow instructions, record, and communicate.",
+    "heading_fil": "Gamitin at ipaliwanag ang mga tungkulin",
+    "heading_en": "Apply and explain the roles",
+    "display_fil": "Piliin ang kumpletong ulat\nBigkasin ang sarili mong handover\nIpaliwanag ang tatlong tungkulin\nHiwalay ang praktikal na assessment.",
+    "display_en": "Choose the complete report\nSpeak your own handover\nExplain the three roles\nPractical assessment is separate.",
     "asset_ids": [],
     "check": {
-      "prompt_fil": "Aling ulat ang sumusunod sa tagubilin nang walang imbentong konklusyon?",
-      "prompt_en": "Which report follows the instruction without inventing a conclusion?",
+      "prompt_fil": "Aling ulat ang tumutugon sa buong tagubilin at nagsasabi ng kailangan pang aksyon?",
+      "prompt_en": "Which report addresses the whole instruction and states what action is still needed?",
       "options": [
         {
-          "fil": "May tubig sa tatlong bakuran; naitala ko; kailangan ko ng gabay sa susunod na hakbang.",
-          "en": "Water in three yards; recorded; I need guidance on the next step."
+          "fil": "May tubig sa tatlong bakuran. Naitala ko, nakinig sa tanong, at ipinaabot ang residenteng gustong makausap ang health team. Kailangan ko pa ng gabay sa susunod na hakbang.",
+          "en": "There is water in three yards. I recorded it, listened to questions, and passed on the request of a resident who wants to speak with the health team. I still need guidance on the next step."
         },
         {
-          "fil": "Tiyak na may sakit na ang lahat doon.",
-          "en": "Everyone there is certainly ill."
+          "fil": "May tubig sa tatlong bakuran. Naitala ko na ito, kaya tapos na ang buong tagubilin.",
+          "en": "There is water in three yards. I recorded it, so the whole instruction is complete."
         },
         {
-          "fil": "Wala nang kailangang gawin.",
-          "en": "Nothing else needs to be done."
+          "fil": "May tubig sa tatlong bakuran. Tiyak na iyon ang sanhi ng sakit ng mga residente; sinabi ko nang iyon ang diagnosis.",
+          "en": "There is water in three yards. It is certainly the cause of residents’ illness; I told them that was the diagnosis."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Naihihiwalay nito ang obserbasyon, nagawa, at kailangan. Bigkasin ang sarili mong handover at ipaliwanag kung paano mo nasunod ang tagubilin; ang pagpili ng sagot ay hindi praktikal na assessment.",
-      "feedback_en": "It separates observation, action taken, and remaining needs. Speak your own handover and explain how you followed the instruction; selecting an answer is not a practical assessment."
+      "feedback_fil": "Ang unang ulat ay may nakita, aktwal na ginawa, at kailangan pang aksyon. Ang ikalawa ay tala lamang; hindi nito tinutugunan ang pagtanong at pag-uulat. Ang ikatlo ay nag-aangkin ng sanhi at diagnosis na hindi napatunayan. Subukan ang sarili mong handover at ipaliwanag ang tatlong tungkulin; hiwalay ang praktikal na assessment.",
+      "feedback_en": "The first report includes the observation, actual action, and remaining need. The second only records; it does not address asking and reporting. The third claims a cause and diagnosis that have not been established. Try your own handover and explain the three roles; practical assessment is separate."
     }
   }
 ]
-

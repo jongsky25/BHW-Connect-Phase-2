@@ -59,6 +59,11 @@ export const RECORDS_STORY_STYLES = {
   en: "Speak in natural Philippine English as an animated, warm community health storyteller. Give Marites's question lively curiosity, then emphasize each record's distinct purpose with clear, varied pitch and pace. Slow slightly for checking uncertain details and the safe handoff. Keep the delivery respectful and easy to follow. Do not add or change words.",
 };
 
+export const ROLES_APPLICATION_STORY_STYLES = {
+  fil: "Speak in natural Filipino (Tagalog) as a warm, animated community health storyteller. Make Riza's listening and decisions lively and expressive, using gentle changes in pitch and pace. Slow slightly for the midwife's instruction and the three-part handover. End with an encouraging invitation to practice. Keep every word clear and respectful. Do not add or change words.",
+  en: "Speak in natural Philippine English as a warm, animated community health storyteller. Make Riza's listening and decisions lively and expressive, using gentle changes in pitch and pace. Slow slightly for the midwife's instruction and the three-part handover. End with an encouraging invitation to practice. Keep every word clear and respectful. Do not add or change words.",
+};
+
 export const UHC_COVERAGE_STORY_STYLES = {
   fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health storyteller. Give Mang Ernesto's question genuine curiosity and Vlanche's response a calm, reassuring tone. Use gentle changes in pitch and pace to distinguish the promise of UHC from the practical details she must check. Keep every benefit statement careful and clear. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto's question genuine curiosity and Vlanche's response a calm, reassuring tone. Use gentle changes in pitch and pace to distinguish the promise of UHC from the practical details she must check. Keep every benefit statement careful and clear. Do not add or change words.",

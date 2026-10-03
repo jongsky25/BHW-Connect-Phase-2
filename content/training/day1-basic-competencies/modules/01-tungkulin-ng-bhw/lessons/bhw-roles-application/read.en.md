@@ -1,23 +1,23 @@
-## [applied-observation] One observation, several actions
+## [applied-observation] One observation, three roles
 
-In this fictional situation, Riza sees standing water in three yards. The midwife instructs: “Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me.” Read the instruction, clarify uncertainty, and separate observations from assumptions. Do not diagnose from an environmental observation.
+During a neighborhood visit, BHW Riza notices standing water in three yards. The midwife instructs: “Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me.” Riza reads the instruction and clarifies uncertainty. Standing water is an observation; it does not establish that residents are ill. Which roles will she need to follow the whole instruction?
 
-## [applied-education] Choose the education needed
+## [applied-education] Listen before explaining
 
-Riza asks what the family wants to clarify about their surroundings. She uses approved materials and an explanation suited to the audience. Say in your own words how you would open the conversation. For example: “What have you noticed about the water collecting here?” Listen before explaining.
+Riza asks the family: “What have you noticed about the water collecting here? Is there anything you would like to ask the health team?” She listens first, then uses a health team approved message and an explanation suited to the audience. If she is unsure of an answer, she asks the health team. This is the Health Educator role: help the family understand the message and find out what still needs clarification.
 
-## [applied-organizing] Identify potential partners
+## [applied-organizing] Invite people to take part
 
-For a shared activity, talk with residents and the purok leader, together with the council member and health staff. Propose a clear discussion about the activity and schedule, then listen to responses. Explain why their participation matters; the BHW should not decide for everyone without discussion.
+For a shared discussion, Riza speaks with residents, the purok leader, the council member, and health staff. “When could we discuss what we observed and what we might do?” she asks. She listens to suggestions about the time and activity before they agree. This is the Community Organizer role: connect people and encourage participation. She does not present an activity as agreed before people have discussed it.
 
-## [handover] Prepare a short handover
+## [next-learning] Guide and record the action
 
-Practise reporting to the midwife: what you observed, what you did, and what action is still needed. For example: “There is standing water in three yards. I recorded the observation and listened to residents’ questions. I need to confirm the appropriate message and next step with you.” Keep the record and report consistent, follow the instruction, and share only relevant information with the appropriate recipient.
+A resident wants to speak with the health team. Riza confirms the appropriate contact and local communication route with the midwife, then explains the next step to the resident. Following the instruction, she records what she observed, the question, and what she actually did; she does not record a service as delivered when it was not. This is the Health Service Provider role: guide residents and support the health team within her training. Record selection connects to lesson 1.1.5; communication, community mobilization, and health-promotion teaching are developed further in later lessons.
 
-## [next-learning] Continue developing your skills
+## [handover] Observed, done, and needed
 
-Subchapter 1.1 introduces the roles; it does not establish competence in every task. Subchapter 1.6 develops communication. The facilitator guide links community mobilization to common competencies and health-promotion teaching to core competencies. These skills belong in later chapters; Chapters II and III are not available in this prototype. Practical competence must be observed separately from reading or viewing slides.
+Riza reports to the midwife: “There is standing water in three yards. I recorded the observation, listened to questions, and spoke with potential partners. A resident wants to speak with the health team; I explained the contact you confirmed. I still need guidance on the next step.” Compare the report with the record and the instruction. Share only relevant information with the appropriate recipient. Explain where she used each role and what remains unfinished.
 
-## [check] Apply your learning
+## [check] Apply and explain the roles
 
-Which report follows the instruction without inventing a conclusion?
+Now it is your turn. Choose the report that addresses the whole instruction, then speak your own handover using observed, done, and needed. Explain which actions used the Health Educator, Community Organizer, and Health Service Provider roles. The online question prepares you for practice. The facilitator observes your actual performance separately; lesson completion does not establish practical competence.

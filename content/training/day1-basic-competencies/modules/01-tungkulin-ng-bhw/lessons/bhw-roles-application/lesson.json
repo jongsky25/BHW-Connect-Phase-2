@@ -21,8 +21,8 @@
       "asset_ids": [
         "A07"
       ],
-      "takeaway_fil": "Obserbasyon ito; hindi diagnosis o napatunayang sanhi ng sakit.",
-      "takeaway_en": "This is an observation, not a diagnosis or a proven cause of illness.",
+      "takeaway_fil": "Basahin at linawin ang tagubilin; ihiwalay ang nakita sa hinala.",
+      "takeaway_en": "Read and clarify the instruction; separate observation from assumption.",
       "check": null
     },
     {
@@ -33,8 +33,8 @@
       "asset_ids": [
         "A07"
       ],
-      "takeaway_fil": "Health Educator: malinaw na usapang angkop sa pamilya.",
-      "takeaway_en": "Health Educator: a clear conversation suited to the family.",
+      "takeaway_fil": "Health Educator: makinig, gumamit ng aprubadong mensahe, at linawin ang tanong.",
+      "takeaway_en": "Health Educator: listen, use an approved message, and clarify questions.",
       "check": null
     },
     {
@@ -46,8 +46,22 @@
       "asset_ids": [
         "A07"
       ],
-      "takeaway_fil": "Community Organizer: anyayahan ang mga tao na magplano at kumilos.",
-      "takeaway_en": "Community Organizer: invite people to plan and act.",
+      "takeaway_fil": "Community Organizer: mag-anyaya, makinig, at magkasundo kasama ang mga tao.",
+      "takeaway_en": "Community Organizer: invite, listen, and agree with the people involved.",
+      "check": null
+    },
+    {
+      "id": "next-learning",
+      "concept_ids": [
+        "m1.skills.crossref",
+        "m1.provider.records",
+        "m1.provider.guide"
+      ],
+      "asset_ids": [
+        "A02"
+      ],
+      "takeaway_fil": "Health Service Provider: tiyakin ang contact, ipaliwanag ang hakbang, at itala ang aktwal na ginawa.",
+      "takeaway_en": "Health Service Provider: confirm the contact, explain the next step, and record the actual action.",
       "check": null
     },
     {
@@ -60,20 +74,8 @@
       "asset_ids": [
         "A07"
       ],
-      "takeaway_fil": "Ulat sa midwife: obserbasyon + ginawa + kailangan.",
-      "takeaway_en": "Report to the midwife: observation + action taken + next need.",
-      "check": null
-    },
-    {
-      "id": "next-learning",
-      "concept_ids": [
-        "m1.skills.crossref"
-      ],
-      "asset_ids": [
-        "A02"
-      ],
-      "takeaway_fil": "Mga susunod na pag-aaral. Hiwalay na obserbasyon ang praktikal na kakayahan.",
-      "takeaway_en": "Future learning. Practical competence requires separate observation.",
+      "takeaway_fil": "Maikling handover: nakita + aktwal na ginawa + kailangan pang aksyon.",
+      "takeaway_en": "Short handover: observed + actual action taken + action still needed.",
       "check": null
     },
     {
@@ -88,28 +90,28 @@
         "m1.skills.crossref"
       ],
       "asset_ids": [],
-      "takeaway_fil": "Maayos na pagkilos: piliin ang papel, sundin ang tagubilin, itala, at makipag-ugnayan.",
-      "takeaway_en": "Sound action: choose the role, follow instructions, record, and communicate.",
+      "takeaway_fil": "Piliin ang tungkulin, sundin ang tagubilin, itala, at iulat ang kailangan.",
+      "takeaway_en": "Choose the role, follow the instruction, record, and report what is needed.",
       "check": {
-        "prompt_fil": "Aling ulat ang sumusunod sa tagubilin nang walang imbentong konklusyon?",
-        "prompt_en": "Which report follows the instruction without inventing a conclusion?",
+        "prompt_fil": "Aling ulat ang tumutugon sa buong tagubilin at nagsasabi ng kailangan pang aksyon?",
+        "prompt_en": "Which report addresses the whole instruction and states what action is still needed?",
         "options": [
           {
-            "fil": "May tubig sa tatlong bakuran; naitala ko; kailangan ko ng gabay sa susunod na hakbang.",
-            "en": "Water in three yards; recorded; I need guidance on the next step."
+            "fil": "May tubig sa tatlong bakuran. Naitala ko, nakinig sa tanong, at ipinaabot ang residenteng gustong makausap ang health team. Kailangan ko pa ng gabay sa susunod na hakbang.",
+            "en": "There is water in three yards. I recorded it, listened to questions, and passed on the request of a resident who wants to speak with the health team. I still need guidance on the next step."
           },
           {
-            "fil": "Tiyak na may sakit na ang lahat doon.",
-            "en": "Everyone there is certainly ill."
+            "fil": "May tubig sa tatlong bakuran. Naitala ko na ito, kaya tapos na ang buong tagubilin.",
+            "en": "There is water in three yards. I recorded it, so the whole instruction is complete."
           },
           {
-            "fil": "Wala nang kailangang gawin.",
-            "en": "Nothing else needs to be done."
+            "fil": "May tubig sa tatlong bakuran. Tiyak na iyon ang sanhi ng sakit ng mga residente; sinabi ko nang iyon ang diagnosis.",
+            "en": "There is water in three yards. It is certainly the cause of residents’ illness; I told them that was the diagnosis."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Naihihiwalay nito ang obserbasyon, nagawa, at kailangan. Bigkasin ang sarili mong handover at ipaliwanag kung paano mo nasunod ang tagubilin; ang pagpili ng sagot ay hindi praktikal na assessment.",
-        "feedback_en": "It separates observation, action taken, and remaining needs. Speak your own handover and explain how you followed the instruction; selecting an answer is not a practical assessment."
+        "feedback_fil": "Ang unang ulat ay may nakita, aktwal na ginawa, at kailangan pang aksyon. Ang ikalawa ay tala lamang; hindi nito tinutugunan ang pagtanong at pag-uulat. Ang ikatlo ay nag-aangkin ng sanhi at diagnosis na hindi napatunayan. Subukan ang sarili mong handover at ipaliwanag ang tatlong tungkulin; hiwalay ang praktikal na assessment.",
+        "feedback_en": "The first report includes the observation, actual action, and remaining need. The second only records; it does not address asking and reporting. The third claims a cause and diagnosis that have not been established. Try your own handover and explain the three roles; practical assessment is separate."
       }
     }
   ],
@@ -179,10 +181,12 @@
     {
       "id": "m1.provider.records",
       "read_ids": [
+        "next-learning",
         "handover",
         "check"
       ],
       "slide_ids": [
+        "next-learning-slide",
         "handover-slide",
         "check-slide"
       ],
@@ -194,10 +198,12 @@
     {
       "id": "m1.provider.guide",
       "read_ids": [
+        "next-learning",
         "handover",
         "check"
       ],
       "slide_ids": [
+        "next-learning-slide",
         "handover-slide",
         "check-slide"
       ],
@@ -351,6 +357,49 @@
       "provenance": "Original code-authored SVG/HTML by Codex for this prototype, 2026-09-24; no third-party imagery, logos, or real records. Repository licensing applies; no external reuse rights asserted. Adapted as a static fallback; visual review required.",
       "review_status": "approved",
       "content_hash": "736187dad098070d806d873a90f59cf871b3d03c02b52bb3001692d1ecb7ecb8"
+    },
+    {
+      "id": "roles-application-illustration",
+      "path": "/training/bhw-1-1/roles-application-328d2317d8fd.png",
+      "content_hash": "328d2317d8fd7419b7a7f912baeb4fe42413e380701634737ef1dc7197f2a25b",
+      "alt_fil": "Si BHW Riza ay nag-uulat sa midwife gamit ang blangkong notebook habang nakikinig ang isang nakatatandang residente.",
+      "alt_en": "BHW Riza reports to the midwife using a blank notebook while an older resident listens.",
+      "caption_fil": "Nakita, ginawa, at kailangan: pag-uulat kasama ang health team.",
+      "caption_en": "Observed, done, and needed: reporting with the health team.",
+      "provenance": "Original AI-generated educational image, built-in imagegen, 2026-10-03. Existing community-organizer illustration used as a fictional Riza/midwife character and style reference. Blank notebook; no legible patient data, logos, or clinical procedures. Fictional handover at a barangay health station. Prompt recorded in docs/lesson-116-layout-review.md.",
+      "review_status": "approved"
+    },
+    {
+      "id": "roles-application-story",
+      "path": "/training/bhw-1-1/roles-application-riza-gemini-fil-b5ee6db7b201-poster.jpg",
+      "content_hash": "b5ee6db7b201f0af7d4cd0fa2023b99e921bcb7aac46ce264fb3f2da7bfc9250",
+      "alt_fil": "Isang sitwasyon, tatlong tungkulin: Health Educator, Community Organizer, at Health Service Provider. Handover: nakita, ginawa, at kailangan.",
+      "alt_en": "One situation, three roles: Health Educator, Community Organizer, and Health Service Provider. Handover: observed, done, and needed.",
+      "caption_fil": "Kathang-isip na kuwento ni Riza na may animasyon, Gemini narration, at caption sa Filipino at English.",
+      "caption_en": "A fictional Riza story with animation, Gemini narration, and captions in Filipino and English.",
+      "provenance": "Original Remotion animation (remotion/src/roles-application) for lesson 1.1.6, featuring fictional BHW Riza. Filipino and English voiceovers synthesized scene by scene with expressive Gemini TTS (gemini-3.8-flash-tts, Kore); measured beat timings and audio are in remotion/public/roles-application. Language-matched WebVTT captions follow the six narration beats. Uses the original fictional lesson illustration. Owner approved the lesson and bilingual media for live publication on 2026-10-03; no diagnosis or treatment instructions.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-1/roles-application-riza-gemini-fil-f43afc3984e2.mp4",
+          "content_hash": "f43afc3984e27393044d5680992efedf6469c0f48498788f90ca8117c0441c36",
+          "duration_s": 84,
+          "captions": {
+            "path": "/training/bhw-1-1/roles-application-riza-gemini-fil-95f9cf0d66cc.vtt",
+            "content_hash": "95f9cf0d66ccdea5d514dc7000108e1941a9982c6b9e2e255beb260a0e83f01f"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-1/roles-application-riza-gemini-en-8ae5b70eca8c.mp4",
+          "content_hash": "8ae5b70eca8c3bccd69223b5880a6a922cbe812dcf7f7bddb41398fd21b7e669",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-1/roles-application-riza-gemini-en-8916dec01634.vtt",
+            "content_hash": "8916dec0163455ea5eccda4bb1d7a68168f0ee6fbcc613b83ffa62d6085045a1"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "featured_asset_id": "roles-application-story"
 }

@@ -141,6 +141,22 @@ describe('route lesson viewer',()=>{
     expect(container.querySelector('video source')).toHaveAttribute('src','/primary-care-fil.mp4');
     expect(container.querySelector('video track')).toHaveAttribute('src','/primary-care-fil.vtt');
   });
+  it('shows Lesson 1.1.6 artwork in Read and Slides and selects language-matched video and captions',()=>{
+    const clip={id:'roles-application-story',path:'/poster.jpg',alt_en:'Riza handover story',alt_fil:'Kuwento ng handover ni Riza',caption_en:'Handover',caption_fil:'Handover',videos:{en:{path:'/application-en.mp4',captions:{path:'/application-en.vtt'}},fil:{path:'/application-fil.mp4',captions:{path:'/application-fil.vtt'}}}};
+    const lesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'bhw-roles-application',revision:{...l.revision,assets:[clip],featured_asset_id:clip.id}}))} as unknown as ReferenceData;
+    const {container,rerender}=render(<ReferenceLessons {...lesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(container.querySelector('.reference-story[data-lesson="bhw-roles-application"]')).toBeInTheDocument();
+    expect(screen.getByRole('img',{name:/BHW Riza reports to the midwife/}).getAttribute('src')).toContain('roles-application-328d2317d8fd.png');
+    expect(container.querySelector('video')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:'Slides'}));
+    expect(screen.getByRole('img',{name:/BHW Riza reports to the midwife/})).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:/Watch the animated narrated story/}));
+    expect(container.querySelector('video source')).toHaveAttribute('src','/application-en.mp4');
+    expect(container.querySelector('video track')).toHaveAttribute('src','/application-en.vtt');
+    rerender(<ReferenceLessons {...lesson} modules={[]} locale="fil" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
+    expect(container.querySelector('video source')).toHaveAttribute('src','/application-fil.mp4');
+    expect(container.querySelector('video track')).toHaveAttribute('src','/application-fil.vtt');
+  });
   it('opens only the reader content and keeps mode, orientation, and paging inside it',()=>{
     const showModal = HTMLDialogElement.prototype.showModal;
     const close = HTMLDialogElement.prototype.close;
