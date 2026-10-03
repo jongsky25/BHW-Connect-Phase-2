@@ -22,26 +22,100 @@
         "m2.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "local-system-observation-art"
       ],
-      "takeaway_fil": "Ang UHC ay hindi lang nagbabago ng sistema — inaasahan din nitong may ibahagi ang BHW: obserbasyon, mungkahi, at aksyon.",
-      "takeaway_en": "UHC does not just change the system — it also expects the BHW to contribute: observation, suggestion, and action.",
+      "takeaway_fil": "Makinig, tukuyin ang tanong, at alamin kung sino ang makapagkukumpirma.",
+      "takeaway_en": "Listen, identify the question, and find out who can confirm the information.",
+      "check": null
+    },
+    {
+      "id": "local-system-board",
+      "concept_ids": [
+        "m2.health-board"
+      ],
+      "asset_ids": [
+        "local-system-observation-art"
+      ],
+      "takeaway_fil": "Unawain ang papel ng board; kumpirmahin ang lokal na paraan ng pakikipag-ugnayan.",
+      "takeaway_en": "Understand the board’s role; confirm the local coordination process.",
+      "check": null
+    },
+    {
+      "id": "local-system-observation",
+      "concept_ids": [
+        "m2.bhw-skill",
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "local-system-observation-art"
+      ],
+      "takeaway_fil": "Ibahagi ang sapat na obserbasyon, protektahan ang personal na detalye, at magtanong nang tiyak.",
+      "takeaway_en": "Share a sufficient factual observation, protect personal details, and ask a specific question.",
+      "check": null
+    },
+    {
+      "id": "local-system-promotion",
+      "concept_ids": [
+        "m2.health-promotion",
+        "m2.bhw-skill"
+      ],
+      "asset_ids": [
+        "local-system-observation-art"
+      ],
+      "takeaway_fil": "Makinig sa pangangailangan, tiyakin ang mensahe, at suriin kung naunawaan.",
+      "takeaway_en": "Listen to the need, check the message, and check understanding.",
+      "check": null
+    },
+    {
+      "id": "local-system-feedback",
+      "concept_ids": [
+        "m2.bhw-skill",
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "local-system-observation-art"
+      ],
+      "takeaway_fil": "Magpraktis kasama ang team, alamin kung sino ang may pasya, at sundan ang napagkasunduang hakbang.",
+      "takeaway_en": "Practice with the team, identify who can decide, and follow up on the agreed step.",
+      "check": null
+    },
+    {
+      "id": "local-system-check",
+      "concept_ids": [
+        "m2.health-board",
+        "m2.bhw-skill",
+        "m2.health-promotion",
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "local-system-observation-art"
+      ],
+      "takeaway_fil": "Obserbasyon, tumpak na mensahe, lokal na contact, at follow-up ang ambag ng BHW.",
+      "takeaway_en": "The BHW contributes observation, accurate messaging, a locally confirmed contact, and follow-up.",
       "check": {
-        "prompt_fil": "Paano makatutulong ang BHW sa lokal na sistema?",
-        "prompt_en": "How can the BHW help the local system?",
+        "prompt_fil": "Paulit-ulit ang tanong tungkol sa magkaibang impormasyon sa health activity. Ano ang pinakamainam na unang tugon ng BHW?",
+        "prompt_en": "Residents repeatedly ask about conflicting health-activity information. What is the BHW’s best first response?",
         "options": [
           {
-            "fil": "Ipaabot ang obserbasyon at mag-ugnay sa health team.",
-            "en": "Share observations and coordinate with the health team."
+            "fil": "Ibuod ang paulit-ulit na tanong nang walang personal na detalye; itanong sa angkop na health-team contact kung sino ang makapagkukumpirma at paano ipapasa ang mungkahi.",
+            "en": "Summarise the recurring question without personal details; ask the appropriate health-team contact who can confirm and how to share the suggestion."
           },
           {
-            "fil": "Magpasya nang mag-isa sa lahat ng serbisyong medikal.",
-            "en": "Decide every medical service alone."
+            "fil": "Magtakda agad ng bagong patakaran at ipahayag na aprubado na ito ng health board.",
+            "en": "Set a new policy immediately and announce that the health board has approved it."
+          },
+          {
+            "fil": "I-post ang pangalan at personal na usapan ng mga residente upang mapansin ang problema.",
+            "en": "Post residents’ names and private conversations so the problem gets attention."
+          },
+          {
+            "fil": "Ipangakong dadaan ang lahat ng tanong sa midwife, health office at health board, kahit hindi pa nasusuri ang lokal na proseso.",
+            "en": "Promise every question will pass through the midwife, health office and health board without checking the local process."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ipaabot ang obserbasyon at mag-ugnay sa health team. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Share observations and coordinate with the health team. Explain why using the lesson situation."
+        "feedback_fil": "Tama ang unang opsyon: sapat na obserbasyon at tiyak na tanong sa lokal na health team. Hindi tungkulin ng BHW na magtakda ng patakaran o magpahayag ng hindi pa aprubadong pasya. Hindi kailangan ang personal na detalye sa buod na ito. Hindi rin dapat mangako ng iisang ruta sa board; kumpirmahin kung sino ang tatanggap at paano ang follow-up.",
+        "feedback_en": "The first option is correct: a sufficient factual observation and a specific question for the local health team. A BHW should not set policy or announce an unapproved decision. This summary does not need personal details. Do not promise a universal route to a board; confirm who will receive the concern and how to follow up."
       }
     }
   ],
@@ -49,22 +123,36 @@
     {
       "id": "m2.health-board",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "local-system-board",
+        "local-system-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-local-system-board",
+        "slide-local-system-check"
       ],
       "source_ids": [
-        "m2.health-board-source"
+        "m2.health-board-source",
+        "local-system-uhc-law",
+        "local-system-lgu-law"
       ]
     },
     {
       "id": "m2.bhw-skill",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "local-system-observation",
+        "local-system-promotion",
+        "local-system-feedback",
+        "local-system-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-local-system-observation",
+        "slide-local-system-promotion",
+        "slide-local-system-feedback",
+        "slide-local-system-check"
       ],
       "source_ids": [
         "m2.bhw-skill-source"
@@ -73,22 +161,33 @@
     {
       "id": "m2.health-promotion",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "local-system-promotion",
+        "local-system-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-local-system-promotion",
+        "slide-local-system-check"
       ],
       "source_ids": [
-        "m2.health-promotion-source"
+        "m2.health-promotion-source",
+        "local-system-uhc-law"
       ]
     },
     {
       "id": "m2.competency",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "local-system-observation",
+        "local-system-feedback",
+        "local-system-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-local-system-observation",
+        "slide-local-system-feedback",
+        "slide-local-system-check"
       ],
       "source_ids": [
         "m2.competency-source"
@@ -98,7 +197,7 @@
   "sources": [
     {
       "id": "m2.health-board-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual — UHC changes, printed p.5 / PDF p.13 (page-labelled transcription checked)",
       "pdf_pages": [
         13
       ],
@@ -106,40 +205,54 @@
     },
     {
       "id": "m2.bhw-skill-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual — skills and local health team, printed pp.5,7 / PDF pp.13,15 (page-labelled transcription checked)",
       "pdf_pages": [
-        13
+        13,
+        15
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     },
     {
       "id": "m2.health-promotion-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "BHW Reference Manual — barangay HEPO and health promotion, printed pp.3–5 / PDF pp.11–13 (page-labelled transcription checked)",
       "pdf_pages": [
+        11,
+        12,
         13
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     },
     {
       "id": "m2.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "Facilitator Guide — workplace innovation outcomes, printed p.14 / PDF p.21; educator practice, printed p.13 / PDF p.20 (page-labelled transcription checked)",
       "pdf_pages": [
+        20,
         21
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "local-system-uhc-law",
+      "title": "Republic Act No.11223 — sections 19–20 and 30: integration, Special Health Fund and health promotion",
+      "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html"
+    },
+    {
+      "id": "local-system-lgu-law",
+      "title": "Republic Act No.7160 — section 102: local health board composition and functions",
+      "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "local-system-observation-art",
+      "path": "/training/bhw-1-2/local-system-observation-13c689fa5226.png",
+      "content_hash": "13c689fa52261c655586d7cf6bdf9bae6f028efe81c09b6f59df74958306ef1d",
+      "alt_fil": "Tinatalakay nina BHW Vlanche, Mang Ernesto at ng midwife ang paulit-ulit na tanong ng mga residente gamit ang blangkong tala sa BHS.",
+      "alt_en": "BHW Vlanche, Mang Ernesto and the midwife discuss recurring resident questions using a blank note at the BHS.",
+      "caption_fil": "Malinaw na obserbasyon at tanong sa health team. Kathang-isip na larawan; hinihintay ang pagsusuri ng may-ari.",
+      "caption_en": "A factual observation and question for the health team. Fictional illustration awaiting owner review.",
+      "provenance": "Original built-in imagegen illustration generated 2026-10-03 for lesson 1.2.3. Fictional Vlanche, Mang Ernesto and midwife identity/style reference: /training/bhw-1-2/primary-care-next-step-a67521f903c0.png, with continuity from /training/bhw-1-2/vlanche-ernesto-7e4e35141628.png. Blank note is a teaching cue, not an official record. No owner or independent policy/clinical SME approval. Exact generation prompt: Use case: illustration-story. Create a NEW landscape educational story illustration for BHW Connect lesson 1.2.3, Health boards and health promotion. Input image is solely a fictional character identity and photographic style reference from lesson 1.2.2: retain recognizable Vlanche, Ernesto and midwife but compose a different scene and camera angle. In a simple Philippine barangay health station, Vlanche, a Filipina around 40 with short softly wavy black hair wearing teal polo and dark trousers, stands beside elderly Filipino Mang Ernesto with gray hair and cream collared shirt; the Filipina midwife with tied-back hair and light blue scrubs stands across a small table. They listen attentively and discuss a BLANK observation note about recurring community questions. Vlanche holds one clean unmarked note at waist height, midwife gestures naturally with an open hand, Ernesto listens. In background a small unbranded visual poster with simple silhouettes of a community gathering and speech bubbles suggests health education, with absolutely no writing or logos. Warm daylight, natural realistic Filipino faces, candid human atmosphere matching reference. Medium-wide 16:9 frame, all three faces and natural hands clearly visible, comfortable margins at sides and top, useful for contained desktop and phone lesson framing. No identifiable health records, legible writing, real officials, board meeting, medical procedure, medicines, emblems or watermarks. Do not reproduce the prior seated clinic conversation unchanged.\n",
+      "review_status": "draft"
     }
   ]
 }

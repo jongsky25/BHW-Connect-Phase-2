@@ -231,6 +231,12 @@ body {
   object-position: 50% 50%;
 }
 
+/* Preserve all faces in the community-observation discussion, including phones. */
+.reference-story[data-lesson="uhc-local-system"] .reference-story-art img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
 .reference-story-copy {
   align-self: center;
   min-width: 0;

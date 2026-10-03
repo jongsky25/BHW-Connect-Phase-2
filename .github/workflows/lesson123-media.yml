@@ -1,0 +1,52 @@
+name: Lesson 1.2.3 draft Gemini media
+
+on:
+  push:
+    branches: [codex/lesson-123-story-gemini]
+    paths:
+      - .github/workflows/lesson123-media.yml
+      - scripts/lesson-123-media-build.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lesson123-draft-media-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  draft-media:
+    if: github.ref == 'refs/heads/codex/lesson-123-story-gemini'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Generate only lesson 1.2.3 draft media
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-123-media-build.mjs
+      - name: Keep review artifacts (including completed partial tracks on failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lesson123-draft-media
+          retention-days: 14
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/lesson.json
+            public/training/audio/02-uhc-act/uhc-local-system/
+            public/training/bhw-1-2/uhc-local-system-gemini-*
+            remotion/public/uhc-local-system/
+            remotion/src/Root.tsx
+            docs/lesson-123-media-generation.json
+          if-no-files-found: error

@@ -1,78 +1,61 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can say, in the lesson's words, what the provincial or city health board is for, trace the path a suggestion from the barangay travels — a fellow BHW, the midwife, all the way up to the health board — and describe their own part as sharing observations and coordinating with the health team, not deciding medical services alone.
+A BHW can describe a recurring resident question factually, protect personal details, give an accurate health-promotion response, and ask a specific question of the locally appropriate health-team contact. They distinguish their contribution from board governance and follow up on an agreed step.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 20 minutes in a face-to-face session — the "The health board and the BHW's part" row of the 3-hour plan in the subchapter guide. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** manila paper with a path of empty boxes drawn from left to right (the BHW at the start, the health board at the end); markers; the lesson's slide (including the "understand, verify, practice" visual, still marked draft); the "Not yet" column from the *Primary care and referral* chart, if you ran it in the same session.
+Suggested lesson practice: 30 minutes within the existing UHC module plan, not an additional mandated allocation. Allow about 8 minutes for self-study. Use the six slides, optional story, fictional scenario cards, and a blank note with **Observed / Still to confirm / Question and contact / Follow-up**. The guide assigns at least three hours to the whole workplace-innovation competency; this lesson alone does not satisfy that allocation.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides. It has one section: "The health board and the BHW's part in moving it forward".
-- Before the session, ask the RHU or midwife how a suggestion from a barangay usually reaches the municipal, city or provincial level in your area. Do not guess the route; if you cannot confirm it, teach only the path the lesson names.
-- Refresh yourself on Module 1: BHWs were designated barangay-level Health Education and Promotion Officers (HEPOs). You will only recall it here, not reteach it.
-- Scope: do not teach the local health board's make-up or its accreditation duties under RA 7883 — that belongs to the RA 7883 topic. The Local Investment Plan for Health (Reference Manual PDF 12) is background only; it is not in this lesson.
+Confirm with the local midwife or designated team contact how BHW observations and suggestions are received, who may confirm activity information, and how feedback is returned. Bring a current team-checked education material if available. If the local route or material is unknown, record it as **Still to confirm**. Do not invent a board route or use identifiable resident health records. Review Module 1’s barangay HEPO role, the manual’s UHC list and the separate statutory board functions.
 
 ## [opening] Opening
 
-In this continuing story, BHW Vlanche considers how to share a barangay observation with the health team.
-
-Ask the group: *"If you noticed something in your barangay that could work better, who would you tell first? And after that person, where would it go?"* Write the names or offices they say into the boxes on the manila paper, in order. Leave gaps where nobody knows.
+Read Vlanche and Ernesto’s fictional situation. Ask participants to name what is known and what is uncertain. Expected response: residents repeatedly ask about conflicting information; the actual activity details and the cause of confusion are not yet confirmed. Ask what could be shared without identifying anyone.
 
 ## [steps] Steps
 
-1. **A new partner (Read "The health board and the BHW's part in moving it forward", first paragraph; slide of the same name).** Read: the provincial or city health board is "tasked with helping organize and manage the health system at the provincial or city level." Then read: "This is also where suggestions and concerns from the barangay travel to, once they are raised." Say: *"The health board is not just a distant office. It is where your suggestion ends up once it is raised."*
-2. **Higher skill, more health promotion (second paragraph).** Read that a higher level of skill is expected of BHWs and health promotion is intensified. Ask: *"From Module 1 — what does a HEPO do?"* Take one or two answers; do not reteach.
-3. **The skill this calls for (third paragraph).** Fill in the path on the manila paper with the lesson's order: a fellow BHW, the midwife, all the way up to the health board. Compare it with the opening answers. Ask: *"What would you carry along this path — a complaint, or an observation and a suggestion?"*
-4. **Connect to what you noticed.** If you have the "Not yet" column from *Primary care and referral*, pick one item. Ask: *"Who is the first right person for this one?"* Point to the slide line "Share observations and improvement ideas with the health team."
-5. **Self-check.** Ask *"How can the BHW help the local system?"* and let the group discuss before revealing the answer.
+1. **Listen and distinguish facts (4 minutes).** Separate the recurring question from a guess about who caused it.
+2. **Explain roles (5 minutes).** UHC Provincial/City Health Boards oversee system integration and have fund/supervision duties. RA 7160 local boards have their own statutory composition and functions. The BHW contributes observations and checked messages; they are not automatically board members or policy decision makers.
+3. **Build the note (5 minutes).** Write what was heard, when, and what remains unknown. Remove names and personal health details unnecessary for this concern. Ask who can confirm information and receive a suggestion.
+4. **Practice health promotion (5 minutes).** Use a team-checked message, explain simply, invite questions and check understanding. If information is unconfirmed, say so and ask the team rather than repeat it.
+5. **Discuss and follow up (8 minutes).** Run the paired practice below. Confirm the locally appropriate contact, decision authority and feedback arrangement; rehearse receiving and sharing the confirmed response.
+6. **Check and feedback (3 minutes).** Answer the last-screen check and explain why the other options cross boundaries.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers
 
-- **"I'd go straight to the captain / the mayor."** Acknowledge that local leaders matter. Then ask: *"Where do your fellow BHWs and the midwife fit before that?"* The lesson's path starts with them.
-- **"Nobody listens to our suggestions anyway."** Do not argue. Ask: *"When a suggestion stalled before, was it specific? Did it pass through the midwife?"* This sets up the next lesson.
-- **"Is this the local health board that accredits us?"** Say the lesson is about the provincial or city health board under UHC; registration and accreditation with the local health board belong to the RA 7883 topic. If they are unsure which board is which in their area, it is a question for the RHU.
-- **"The BHW should decide what services the barangay gets."** Take the energy seriously, then point to the self-check: the BHW's part is observation, suggestion and action shared with the health team.
+- **Factual summary:** “Residents have asked this week where to get current activity information; they have heard different details. I have not confirmed the details.”
+- **Accurate response:** “Let us confirm the current information with the health team.” After confirmation, explain the approved material simply and check understanding.
+- **Specific team question:** “Who can confirm the information and receive a suggestion to make the message clearer? How and when should I follow up?”
+- **Role boundary:** board governance and authorised policy decisions are separate from the BHW’s observation, communication and agreed task. Local arrangements must be checked.
 
 ## [misconception] Common misconception
 
-**"The health board is a distant office that has nothing to do with the BHW."** Many BHWs have never seen a health board meeting, so it feels far away. Correct it without embarrassing anyone by using the group's own path on the manila paper: *"Look where your suggestion starts — with you. The health board is the end of this same path."* It is not an abstract agency: a BHW's suggestion can reach it, through the midwife and the municipal or city health office.
+A recurring question does not prove a policy has failed, that a resident is at fault, or that the BHW must send it through one universal chain to the health board. More skill means clearer observations, accurate education and teamwork; it does not grant automatic board membership or policy authority.
 
 ## [practice] Practice activity
 
-In pairs, each BHW picks one thing from their barangay that could work better (from the "Not yet" column, or the lesson's own example of residents who do not yet know they are PhilHealth members). They have 1 minute to tell their partner, who plays the midwife: (1) what they observed, (2) one suggestion, and (3) where it should go next on the path and what they would first confirm with the midwife. The "midwife" asks one question back. Swap roles. Two or three pairs present; the group gives one strength and one suggestion.
+In pairs, one person plays Ernesto and one Vlanche. Ernesto says: “We heard different information about the barangay health activity. Where can we confirm it?” Vlanche gives a factual summary without identifying residents, acknowledges what is unknown, and gives a careful health-promotion response. A third participant or facilitator plays the locally appropriate health-team contact; Vlanche asks who can confirm, receive the clearer-message suggestion, decide and provide feedback. Rehearse explaining a confirmed response and checking Ernesto’s understanding. Swap roles. Use fictional information unless a de-identified and current example is available. The role-play rehearses coordination; it does not prove an actual local handoff occurred.
 
 ## [answer-key] Self-check answer key
 
-The lesson has one check. It appears at the end of Read section "The health board and the BHW's part in moving it forward" and on the slide of the same name; it is the same question, so it is covered once here.
-
-- **"How can the BHW help the local system?"** → **Share observations and coordinate with the health team.** The lesson says UHC expects the BHW to contribute observation, suggestion and action, and to get the suggestion to the right person — a fellow BHW, the midwife, up to the health board.
-  - **"Decide every medical service alone."** is wrong because the health board is the partner tasked with helping organize and manage the health system, and the BHW works with the health team, not alone. In the previous lesson, the BHW supports residents "within their training and supervision."
-  - As the feedback says, ask the BHW to explain why using the lesson situation.
+Option 1 is correct: summarise the recurring question without personal details and ask the appropriate team contact who can confirm and how to share the suggestion. Option 2 invents policy and approval. Option 3 exposes private information. Option 4 invents a universal board route. A stronger response also asks how and when feedback will arrive, then shares only confirmed information.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator — *explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor* — during the pairs activity:
+- **Kaya na:** without prompting, states what was heard and what remains uncertain; protects personal details; gives an accurate or explicitly unconfirmed response; asks a specific question of a locally confirmed contact; distinguishes board/policy authority; names an agreed follow-up step.
+- **Kailangan pa ng practice:** respects privacy and knows to ask the team but needs prompts to separate facts, specify the question, check understanding or arrange follow-up.
+- **Hindi pa:** invents activity details or a board route, announces policy/approval without authority, or includes identifying resident health details in the community summary.
 
-- **Kaya na:** without prompting, the BHW states a specific observation, gives one suggestion, names the next person on the path (a fellow BHW or the midwife, then up to the health board) and says what they would first confirm with the midwife.
-- **Kailangan pa ng practice:** the BHW states the observation and a suggestion but needs your question before saying who it goes to or what to confirm.
-- **Hindi pa:** the BHW stays at complaint level with no route, skips the midwife and health team, or says they would decide or fix it alone.
-
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Record the words/actions observed and one improvement. Online completion checks understanding and is not evidence of demonstrated practical coordination. Check real local coordination separately through an authorised, confidential follow-up; do not mark it demonstrated from a classroom answer alone.
 
 ## [support] If a BHW needs more support
 
-- Give them a card with the path drawn on it (*me → fellow BHW → midwife → up to the health board*) and let them repeat the activity using the lesson's own example.
-- Help them turn one complaint into an observation plus a suggestion before they try again.
-- Pair them with a BHW rated **Kaya na** and let them present second.
-- Re-observe at the start of the practice in *One practical improvement*, which uses the same skill, or at the next session with the same example.
+Repeat using four cue cards: **Observed / Still to confirm / Question and contact / Follow-up**. Model one factual sentence and one careful response, then ask the participant to try again without cues. Bring one confirmed local contact/process or current education material to the next practice and re-observe the same criteria.
 
 ## [sources-review] Sources and review notes
 
-- BHW Reference Manual p. 5 (PDF 13): "pagtatalaga ng provincial at city health board bilang isang kaagapay sa pag-aayos at pamamahala ng health system sa probinsya", "pagpapataas ng antas ng kasanayan ng mga BHW" and "mas pinaigting na health promotion sa mga komunidad" — listed in the lesson's source list as an inherited page reference; final audit pending. Reference Manual p. 3 (PDF 11): the HEPO role under UHC. Facilitator Guide p. 14 (PDF 21): the competency and its learning outcomes (inherited reference; final audit pending). Day 1 presentation slides 17–18.
-- Timing: the module's 3 hours come from Facilitator Guide PDF 19 (PDF 21 says "at least 3 hours"). Keep the original total in the subchapter guide; do not repeat that whole allocation for each short lesson. The 20 minutes above is the module table's own row for this part. This split supports self-study and does not create a new training-hour allocation.
-- The deck (slide 18) says "provincial health board" only; the Reference Manual says "provincial at city health board"; the lesson says "provincial or city health board". September 2026: the unsourced line that barangay suggestions "travel to" the health board was softened to "can reach it, through the midwife and the municipal or city health office". The exact local route still needs SME confirmation.
-- Still to review: current legal/policy wording, bilingual parity and the observation indicator (the same generic indicator is used in all four lessons). Keep online completion separate from demonstrated competence.
+Checked 3 October 2026: page-labelled source transcriptions of the BHW Reference Manual, printed pp.3–5,7 / PDF pp.11–13,15; Facilitator Guide printed pp.12–14 / PDF pp.19–21. The latter explicitly lists workplace-innovation outcomes on PDF p.21; the table on PDF p.19 supplies the full competency time. Original PDFs were not available in the supplied checkouts; visual page verification is not claimed. RA 11223 sections 19–20 and 30, and RA 7160 section 102 were checked separately at Lawphil. See the source audit for exact supports and DOH retrieval limits.
 
-Draft for review.
+New content, original illustration, Gemini Read narration and bilingual story are a draft package awaiting owner review; no independent policy/clinical SME approval is claimed. Earlier lesson 1.2.2 approval does not apply. Confirm local processes and current material before teaching.

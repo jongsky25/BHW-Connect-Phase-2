@@ -7,32 +7,131 @@
       "m2.health-promotion",
       "m2.competency"
     ],
-    "layout": "decision",
-    "heading_fil": "Ang health board at ang papel ng BHW sa pagsulong",
-    "heading_en": "The health board and the BHW's part in moving it forward",
-    "display_fil": "Health board: katuwang sa pag-ugnay ng lokal na sistema.\nBHW: patuloy na kasanayan at health promotion.\nSi Vlanche: magbahagi ng obserbasyon at mungkahi sa health team.",
-    "display_en": "Health board: a partner in local system coordination.\nBHW: continuing skills and health promotion.\nVlanche shares observations and improvement ideas with the health team.",
+    "layout": "scene",
+    "heading_fil": "Paulit-ulit na tanong sa barangay",
+    "heading_en": "A recurring question in the barangay",
+    "display_fil": "Mang Ernesto at ibang residente: magkaibang impormasyon.\nVlanche: makinig at tukuyin ang paulit-ulit na tanong.\nHealth board, kasanayan at health promotion: magkakaugnay, magkaiba ang papel.",
+    "display_en": "Ernesto and other residents: conflicting information.\nVlanche: listen and identify the recurring question.\nHealth board, skills and health promotion: connected, with distinct roles.",
     "asset_ids": [
-      "practice-map"
+      "local-system-observation-art"
     ],
+    "narration_fil": "Sa kathang-isip na sitwasyong ito, nagtanong si Mang Ernesto kay BHW Vlanche: “Saan po malalaman ang tamang impormasyon tungkol sa health activity sa barangay?” May iba ring residenteng nalilito sa magkaibang impormasyong narinig nila.\n\nNakinig si Vlanche. Hindi niya agad sinabi na mali ang isang tao o nagtakda ng bagong patakaran. Napansin niya ang paulit-ulit na tanong at naisip: “Ano ang malinaw kong naobserbahan, at sino sa health team ang makapagkukumpirma?”\n\nIpinapakita ng manwal na kaagapay sa lokal na sistema ang provincial at city health boards, kasabay ng mas mataas na kasanayan ng BHW at mas pinaigting na health promotion. Aalamin ni Vlanche ang sarili niyang ambag at hangganan.",
+    "narration_en": "In this fictional situation, Mang Ernesto asks BHW Vlanche: “Where can we get accurate information about the barangay health activity?” Other residents are also confused by the different information they have heard.\n\nVlanche listens. She does not immediately blame anyone or announce a new policy. She notices the recurring question and asks herself: “What have I actually observed, and who in the health team can confirm the information?”\n\nThe manual describes provincial and city health boards as partners in the local system, alongside stronger BHW skills and intensified health promotion. Vlanche will identify her own contribution and its boundaries.",
+    "check": null
+  },
+  {
+    "id": "slide-local-system-board",
+    "concept_ids": [
+      "m2.health-board"
+    ],
+    "layout": "process",
+    "heading_fil": "Health board at health team: magkaibang papel",
+    "heading_en": "Health board and health team: distinct roles",
+    "display_fil": "UHC board: pangasiwaan at pag-ugnayin ang integration.\nLocal boards: may sariling tungkulin sa batas.\nBHW: kumpirmahin ang lokal na contact at proseso.",
+    "display_en": "UHC boards: oversee and coordinate integration.\nLocal boards: statutory functions at their respective levels.\nBHW: confirm the local contact and process.",
+    "asset_ids": [
+      "local-system-observation-art"
+    ],
+    "narration_fil": "Sa UHC Act, pinangangasiwaan at pinag-uugnay ng Provincial at City Health Boards ang pagsasama ng mga serbisyong pangkalusugan sa province-wide at city-wide health systems. May tungkulin din sila sa Special Health Fund at pangangasiwa sa mga pasilidad at health personnel sa saklaw ng batas.\n\nMay local health boards din sa probinsya, lungsod at munisipyo sa ilalim ng Local Government Code, na may mga tungkulin sa mungkahing budget at payo sa sanggunian. Hindi dapat pag-isahin ang lahat ng board o ipalagay na iisa ang lokal na proseso.\n\nHindi awtomatikong kasapi o namumuno sa board ang BHW. Tatanungin ni Vlanche ang midwife o ang itinalagang health-team contact kung kanino at paano dapat ipaabot ang obserbasyon.",
+    "narration_en": "Under the UHC Act, Provincial and City Health Boards oversee and coordinate integration of health services into province-wide and city-wide health systems. They also have duties for the Special Health Fund and supervision of facilities and health personnel within the law’s scope.\n\nThe Local Government Code also establishes local health boards in provinces, cities and municipalities, with budget-proposal and advisory functions for the sanggunian. Do not treat all boards as one body or assume every place follows the same process.\n\nA BHW does not automatically sit on or lead a board. Vlanche asks the midwife or designated health-team contact who should receive her observation and how to share it locally.",
+    "check": null
+  },
+  {
+    "id": "slide-local-system-observation",
+    "concept_ids": [
+      "m2.bhw-skill",
+      "m2.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Obserbasyon na malinaw at may pag-iingat",
+    "heading_en": "A clear, careful observation",
+    "display_fil": "Narinig: paulit-ulit na tanong.\nHindi pa tiyak: kasalukuyang detalye.\nTanong: sino ang makapagkukumpirma at tatanggap ng mungkahi?",
+    "display_en": "Observed: a recurring question.\nUncertain: the current details.\nAsk: who can confirm and receive the suggestion?",
+    "asset_ids": [
+      "local-system-observation-art"
+    ],
+    "narration_fil": "Inihanda ni Vlanche ang isang maikling buod: “Sa mga usapan nitong linggo, may mga residenteng nagtatanong kung saan makukuha ang kasalukuyang impormasyon sa health activity. Magkaiba ang impormasyong narinig nila. Hindi ko pa nakukumpirma ang tamang detalye.”\n\nInihiwalay niya ang aktuwal na narinig sa hinala tungkol sa dahilan. Para sa buod na ito, hindi kailangan ang pangalan, diagnosis o ibang detalye na makakakilala sa residente. Hindi niya ilalagay ang personal na usapan sa pampublikong post.\n\nTiyak ang tanong niya sa angkop na health-team contact: “Sino po ang makapagkukumpirma ng impormasyon, at paano ko maipapasa ang mungkahing gawing mas malinaw ang mensahe?”",
+    "narration_en": "Vlanche prepares a short summary: “In conversations this week, residents have asked where to get current information about the health activity. They have heard different information. I have not yet confirmed the correct details.”\n\nShe separates what she actually heard from guesses about the cause. This summary does not need names, diagnoses or other details that identify residents. She does not put a private conversation in a public post.\n\nHer question to the appropriate health-team contact is specific: “Who can confirm the information, and how can I share the suggestion to make the message clearer?”",
+    "check": null
+  },
+  {
+    "id": "slide-local-system-promotion",
+    "concept_ids": [
+      "m2.health-promotion",
+      "m2.bhw-skill"
+    ],
+    "layout": "process",
+    "heading_fil": "Health promotion na tumutugon sa tanong",
+    "heading_en": "Health promotion that responds to the question",
+    "display_fil": "HEPO: tumpak na impormasyon at pakikilahok.\nTiyakin sa health team ang kasalukuyang materyal.\nIpaliwanag nang payak; suriin ang pagkaunawa.",
+    "display_en": "HEPO: accurate information and participation.\nCheck current material with the health team.\nExplain simply; check understanding.",
+    "asset_ids": [
+      "local-system-observation-art"
+    ],
+    "narration_fil": "Balikan ang Modyul 1: bilang barangay-level Health Education and Promotion Officer o HEPO, tumutulong ang BHW na maghatid ng tamang impormasyong pangkalusugan at hikayatin ang pakikilahok ng komunidad. Mas pinaigting na health promotion ang isa sa mga pagbabagong binanggit sa manwal.\n\nSa halip na ulitin ang hindi pa tiyak na anunsiyo, hihingi si Vlanche ng kasalukuyang materyal at kumpirmasyon sa health team. Gagamit siya ng payak na paliwanag na angkop sa mga tanong at wikang naiintindihan ng residente.\n\nMaaari niyang sabihin: “Tiyakin muna natin sa health team ang kasalukuyang impormasyon.” Kapag nakumpirma na, ipaliliwanag niya ito, mag-aanyaya ng tanong, at hihilingin sa residente na sabihin sa sariling salita ang naunawaan.",
+    "narration_en": "Recall Module 1: as a barangay-level Health Education and Promotion Officer, or HEPO, a BHW helps share accurate health information and encourage community participation. Intensified health promotion is one of the changes described in the manual.\n\nInstead of repeating an unconfirmed announcement, Vlanche asks the health team for current material and confirmation. She uses a simple explanation suited to the residents’ questions and the language they understand.\n\nShe can say: “Let us first confirm the current information with the health team.” Once it is confirmed, she explains it, invites questions, and asks the resident to describe their understanding in their own words.",
+    "check": null
+  },
+  {
+    "id": "slide-local-system-feedback",
+    "concept_ids": [
+      "m2.bhw-skill",
+      "m2.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Kasanayan, mungkahi at follow-up",
+    "heading_en": "Skills, suggestions and follow-up",
+    "display_fil": "Magsanay: buod at tiyak na tanong.\nMagtanong: sino ang may pasya at paano ang tugon?\nMag-follow-up: nakumpirmang impormasyon lamang.",
+    "display_en": "Practice: summary and specific question.\nAsk: who can decide and how will feedback arrive?\nFollow up: share confirmed information.",
+    "asset_ids": [
+      "local-system-observation-art"
+    ],
+    "narration_fil": "Sa halimbawang ito, nagpraktis si Vlanche ng kanyang buod kasama ang midwife. Tinulungan siyang gawing mas malinaw ang tanong at alisin ang hinala. Iminungkahi niya ang isang mas madaling maintindihang paliwanag gamit ang impormasyong makukumpirma ng health team.\n\nTinanong niya: “Sino po ang maaaring magpasya sa mungkahi, at kailan at paano ko malalaman ang tugon?” Napag-usapan nila ang lokal na susunod na hakbang. Hindi niya ipinangakong aprubado na ang mungkahi o na umabot na ito sa board.\n\nBabalikan niya ang napagkasunduang contact at ipaaabot lamang sa mga residente ang nakumpirmang tugon. Ito ang pagsasanay sa pagtukoy ng pagkakataon, pagtalakay ng ideya sa iba, at pagsunod sa napagkasunduang pagbabago.",
+    "narration_en": "In this example, Vlanche rehearses her summary with the midwife. The midwife helps her make the question clearer and remove assumptions. Vlanche suggests a clearer explanation using information the health team can confirm.\n\nShe asks: “Who can decide on this suggestion, and when and how can I learn the response?” They discuss a locally agreed next step. She does not promise that the suggestion is approved or has reached a board.\n\nShe will follow up with the agreed contact and share only the confirmed response with residents. This practices identifying an opportunity, discussing an idea with others, and following an agreed change.",
+    "check": null
+  },
+  {
+    "id": "slide-local-system-check",
+    "concept_ids": [
+      "m2.health-board",
+      "m2.bhw-skill",
+      "m2.health-promotion",
+      "m2.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Ikaw naman: ano ang ipaaabot mo?",
+    "heading_en": "Your turn: what will you share?",
+    "display_fil": "Magkaibang impormasyon; hindi pa kumpirmado.\nAno ang malinaw at maingat na buod?\nAno ang tiyak mong itatanong sa lokal na health team?",
+    "display_en": "Conflicting information; details unconfirmed.\nWhat is a clear, careful summary?\nWhat specific question will you ask the local team?",
+    "asset_ids": [
+      "local-system-observation-art"
+    ],
+    "narration_fil": "May mga residenteng paulit-ulit na nagtatanong tungkol sa magkaibang impormasyong narinig nila sa isang health activity. Hindi mo pa nakukumpirma ang kasalukuyang detalye.\n\nBilang BHW, ano ang pinakamainam na unang tugon? Piliin ang buod at hakbang na nagpapakita ng malinaw na obserbasyon, pag-iingat sa personal na detalye, at tamang pakikipag-ugnayan.\n\nPagkatapos sumagot, subukang sabihin ang sarili mong buod at isang tiyak na tanong sa health team. Ang online na sagot ay pagsuri ng pagkaunawa; hiwalay na oobserbahan sa practice ang aktuwal na kasanayan.",
+    "narration_en": "Residents repeatedly ask about conflicting information they have heard about a health activity. You have not yet confirmed the current details.\n\nAs a BHW, what is the best first response? Choose the summary and step that show a factual observation, care with personal details, and appropriate coordination.\n\nAfter answering, try saying your own summary and one specific question for the health team. The online answer checks understanding; practical skill will be observed separately during practice.",
     "check": {
-      "prompt_fil": "Paano makatutulong ang BHW sa lokal na sistema?",
-      "prompt_en": "How can the BHW help the local system?",
+      "prompt_fil": "Paulit-ulit ang tanong tungkol sa magkaibang impormasyon sa health activity. Ano ang pinakamainam na unang tugon ng BHW?",
+      "prompt_en": "Residents repeatedly ask about conflicting health-activity information. What is the BHW’s best first response?",
       "options": [
         {
-          "fil": "Ipaabot ang obserbasyon at mag-ugnay sa health team.",
-          "en": "Share observations and coordinate with the health team."
+          "fil": "Ibuod ang paulit-ulit na tanong nang walang personal na detalye; itanong sa angkop na health-team contact kung sino ang makapagkukumpirma at paano ipapasa ang mungkahi.",
+          "en": "Summarise the recurring question without personal details; ask the appropriate health-team contact who can confirm and how to share the suggestion."
         },
         {
-          "fil": "Magpasya nang mag-isa sa lahat ng serbisyong medikal.",
-          "en": "Decide every medical service alone."
+          "fil": "Magtakda agad ng bagong patakaran at ipahayag na aprubado na ito ng health board.",
+          "en": "Set a new policy immediately and announce that the health board has approved it."
+        },
+        {
+          "fil": "I-post ang pangalan at personal na usapan ng mga residente upang mapansin ang problema.",
+          "en": "Post residents’ names and private conversations so the problem gets attention."
+        },
+        {
+          "fil": "Ipangakong dadaan ang lahat ng tanong sa midwife, health office at health board, kahit hindi pa nasusuri ang lokal na proseso.",
+          "en": "Promise every question will pass through the midwife, health office and health board without checking the local process."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ipaabot ang obserbasyon at mag-ugnay sa health team. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Share observations and coordinate with the health team. Explain why using the lesson situation."
-    },
-    "narration_fil": "May bagong kasosyo rin ang UHC: ang **provincial o city health board**, na naatasang tumulong mag-organisa at mamahala sa sistemang pangkalusugan sa antas ng probinsya o lungsod. Maaaring umabot dito ang mga mungkahi at hinaing mula sa barangay, sa pamamagitan ng midwife at ng municipal o city health office.\n\nDahil sa mga pagbabagong ito, inaasahan din ang mas mataas na antas ng kasanayan mula sa mga BHW, at mas pinaigting na health promotion sa komunidad. Ito rin ang dahilan kung bakit itinalaga ang BHW bilang HEPO — natutunan mo na ito nang detalyado sa Modyul 1.\n\nPara kay BHW Vlanche, ang kakayahang kailangan dito ay hindi lang malaman ang batas: kailangan ding matukoy ang pagkakataong mapabuti pa ang pagpapatupad nito, at maipaabot ang mungkahi sa tamang tao — sa kapwa BHW, sa midwife, hanggang sa umabot sa health board.",
-    "narration_en": "UHC also brings a new partner: the **provincial or city health board**, tasked with helping organize and manage the health system at the provincial or city level. Suggestions and concerns from the barangay can reach it, through the midwife and the municipal or city health office.\n\nBecause of these changes, a higher level of skill is also expected of BHWs, and health promotion within communities is intensified. This is also why BHWs were designated HEPOs — you already learned this in detail in Module 1.\n\nFor BHW Vlanche, the skill this calls for is not only knowing the law: it also means spotting the chance to improve how it is carried out, and getting that suggestion to the right person — a fellow BHW, the midwife, all the way up to the health board."
+      "feedback_fil": "Tama ang unang opsyon: sapat na obserbasyon at tiyak na tanong sa lokal na health team. Hindi tungkulin ng BHW na magtakda ng patakaran o magpahayag ng hindi pa aprubadong pasya. Hindi kailangan ang personal na detalye sa buod na ito. Hindi rin dapat mangako ng iisang ruta sa board; kumpirmahin kung sino ang tatanggap at paano ang follow-up.",
+      "feedback_en": "The first option is correct: a sufficient factual observation and a specific question for the local health team. A BHW should not set policy or announce an unapproved decision. This summary does not need personal details. Do not promise a universal route to a board; confirm who will receive the concern and how to follow up."
+    }
   }
 ]
