@@ -10,10 +10,11 @@
 // zone's start/end time is exact frame arithmetic rather than an estimate.
 // No I/O happens here; the CLI (scripts/training-narrate.mjs) injects it.
 
+import { applyWordPronunciations } from "./narration-pronunciation.mjs";
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
-import { geminiVoiceId, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
+import { geminiVoiceId, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
 // Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.
@@ -28,7 +29,7 @@ export const providerOfVoice = (voice) => (voice?.startsWith("gemini:") ? "gemin
 const hashVoice = (provider, voice, speechStyle) =>
   provider === "gemini" ? `${voice}|${SPEECH_RULES}|mp3-${GEMINI_NARRATION_KBPS}k-resampled${speechStyle ? `|${speechStyle}` : ""}` : `${voice}|${SPEECH_RULES}`;
 export const AUDIO_ROOT = "/training/audio";
-// Bump when spokenText changes so existing audio is re-rendered.
+// General speech rules; word exceptions are versioned separately in computeContentHash.
 export const SPEECH_RULES = "speech-v2";
 
 // English letter names spelled for the Filipino voice. Given "BHW" or
@@ -42,11 +43,12 @@ const FILIPINO_LETTER_NAMES = {
 };
 const ROMAN_NUMERALS = { II: "2", III: "3" };
 
-// Any run of two or more capitals is an acronym and is spelled letter by
+// Known spoken words (including YAKAP, Tagalog for hug) override acronym spelling.
+// Other runs of two or more capitals are spelled letter by
 // letter in both languages (BHW -> B H W, HEPO -> H E P O). A trailing
 // plural or possessive s (BHWs, BHW's, BHWs') stays attached.
 export function spellAcronyms(text, language) {
-  return text.replace(/(?<![A-Za-z])([A-Z]{2,})(s['’]?|['’]s)?(?![A-Za-z])/g, (whole, letters, suffix) => {
+  return applyWordPronunciations(text).replace(/(?<![A-Za-z])([A-Z]{2,})(s['’]?|['’]s)?(?![A-Za-z])/g, (whole, letters, suffix) => {
     if (!suffix && ROMAN_NUMERALS[letters]) return ROMAN_NUMERALS[letters];
     if (language === "fil" || language === "ceb" || language === "hil") return [...letters].map((c) => FILIPINO_LETTER_NAMES[c]).join("-") + (suffix ? "s" : "");
     return [...letters].join(" ") + (suffix ? "'s" : "");
@@ -204,6 +206,8 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
                   ? RECORDS_STORY_STYLES[language]
                   : lessonKey === "bhw-roles-application"
                     ? ROLES_APPLICATION_STORY_STYLES[language]
+                    : lessonKey === "uhc-primary-care"
+                      ? PRIMARY_CARE_STORY_STYLES[language]
                     : lessonKey === "uhc-coverage"
                     ? UHC_COVERAGE_STORY_STYLES[language]
                 : null

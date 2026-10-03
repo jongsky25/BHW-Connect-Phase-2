@@ -64,12 +64,11 @@ function Graphic({ index, language, frame }: { index: number; language: "fil" | 
   const appear = spring({ frame, fps: PRIMARY_CARE_FPS, config: { damping: 180, stiffness: 100 } });
   const slide = { transform: `translateY(${(1 - appear) * 20}px)`, opacity: appear };
   if (index === 0 || index === 5) {
-    return <div style={{ position: "absolute", right: 0, top: 0, height: 480, width: 400, display: "flex", overflow: "hidden" }}>
-      <Img src={staticFile("uhc-primary-care/scene.png")} style={{ width: 200, height: 480, objectFit: "cover", objectPosition: "31% 50%", transform: `scale(${1.02 + Math.min(frame / 4500, 0.035)})` }}/>
-      <Img src={staticFile("uhc-primary-care/scene.png")} style={{ width: 200, height: 480, objectFit: "cover", objectPosition: "85% 50%", transform: `scale(${1.02 + Math.min(frame / 4500, 0.035)})` }}/>
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg,#0c483fff 0%,#0c483f66 20%,#0c483f22 100%)" }}/>
+    return <div style={{ position: "absolute", right: 30, top: 105, height: 265, width: 395, borderRadius: 20, overflow: "hidden", transform: `translateY(${(1 - appear) * 18}px)`, opacity: appear }}>
+      <Img src={staticFile("uhc-primary-care/scene.png")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 50%", transform: `scale(${1 + Math.min(frame / 6000, 0.025)})` }}/>
     </div>;
   }
+
   if (index === 1) return <div style={{ ...slide, position: "absolute", top: 274, left: 42, display: "flex", gap: 9 }}>
     {items.map((item, i) => <div key={item} style={{ width: i === 0 ? 165 : 178, background: i === 0 ? gold : cream, color: ink, borderRadius: 16, padding: "18px 11px", boxShadow: "0 8px 24px #002c2844", textAlign: "center", fontSize: 19, fontWeight: 800 }}>
       <div style={{ color: "#468572", fontSize: 14, marginBottom: 6 }}>0{i + 1}</div>{item}
@@ -100,9 +99,9 @@ function Scene({ index, language }: { index: number; language: "fil" | "en" }) {
     <Graphic index={index} language={language} frame={frame}/>
     <div style={{ position: "absolute", top: 28, left: 42, fontSize: 16, letterSpacing: 2, fontWeight: 900, color: leaf }}>BHW CONNECT  ·  1.2.2</div>
     <div style={{ position: "absolute", top: 28, right: 40, fontSize: 16, fontWeight: 800, color: cream }}>{String(index + 1).padStart(2, "0")} / 06</div>
-    <div style={{ position: "absolute", top: 104, left: 42, width: index === 0 || index === 5 ? 560 : 760, transform: `translateY(${(1 - appear) * 22}px)`, opacity: appear }}>
+    <div style={{ position: "absolute", top: 104, left: 42, width: index === 0 || index === 5 ? 355 : 760, transform: `translateY(${(1 - appear) * 22}px)`, opacity: appear }}>
       <div style={{ color: gold, fontSize: 17, letterSpacing: 1.2, fontWeight: 900, textTransform: "uppercase", marginBottom: 13 }}>{index === 0 ? "Vlanche + Mang Ernesto" : language === "fil" ? "Susunod na hakbang" : "The next step"}</div>
-      <div style={{ fontSize: title.length > 27 ? 39 : 47, fontWeight: 900, lineHeight: 1.08, textShadow: "0 3px 12px #002d2b66" }}>{title}</div>
+      <div style={{ fontSize: index === 0 || index === 5 ? 38 : title.length > 27 ? 39 : 47, fontWeight: 900, lineHeight: 1.08, textShadow: "0 3px 12px #002d2b66" }}>{title}</div>
       <div style={{ fontSize: 22, lineHeight: 1.25, marginTop: 17, fontWeight: 600, maxWidth: 685 }}>{detail}</div>
     </div>
     {index === 5 && <div style={{ position: "absolute", bottom: 85, left: 44, display: "flex", gap: 11 }}><Pill active>{language === "fil" ? "Clinic" : "Clinic"}</Pill><Pill>{language === "fil" ? "Benepisyo" : "Benefit"}</Pill><Pill>{language === "fil" ? "Tagubilin" : "Instructions"}</Pill></div>}

@@ -225,25 +225,10 @@ body {
   object-position: 68% 50%;
 }
 
-.reference-story[data-lesson="uhc-primary-care"][data-scene="bridge"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="slide-bridge"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="check"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="slide-check"] .reference-story-art img {
+/* Keep all three people visible in the primary-care conversation at any width. */
+.reference-story[data-lesson="uhc-primary-care"] .reference-story-art img {
+  object-fit: contain;
   object-position: 50% 50%;
-}
-
-.reference-story[data-lesson="uhc-primary-care"][data-scene="outpatient"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="slide-outpatient"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="provider"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="slide-provider"] .reference-story-art img {
-  object-position: 32% 50%;
-}
-
-.reference-story[data-lesson="uhc-primary-care"][data-scene="referral"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="slide-referral"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="local"] .reference-story-art img,
-.reference-story[data-lesson="uhc-primary-care"][data-scene="slide-local"] .reference-story-art img {
-  object-position: 70% 50%;
 }
 
 .reference-story-copy {
