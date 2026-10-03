@@ -1,0 +1,52 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "a7c9152200635a445d335e133e5de9208c61ab6ea484a816224955f155309bcc",
+  "durationSeconds": 90.044,
+  "beats": [
+    {
+      "zone": "listen",
+      "index": 0,
+      "text": "Sa usa ka panaghisgot bahin sa panglawas sa barangay, dili lang basahon ni BHW Riza ang poster. Susihon una niya ang mga pangutana sa mga residente, dayon mohatag og klarong pasabot.",
+      "start_ms": 0,
+      "end_ms": 13520
+    },
+    {
+      "zone": "topics",
+      "index": 1,
+      "text": "Isip Health Educator, mahimo niyang hisgotan ang pag-atiman sa lawas, kalimpyo sa palibot, ug pagduol sa serbisyo sa panglawas. Mogamit siya og materyal nga giaprobahan sa health team.",
+      "start_ms": 13820,
+      "end_ms": 27180
+    },
+    {
+      "zone": "life-stages",
+      "index": 2,
+      "text": "Magkalahi ang mga pangutana sa tig-atiman sa masuso, kabatan-onan, mabdos, ug tigulang. Ipahiangay ni Riza sa yugto sa kinabuhi sa kaistorya ang panaghisgot bahin sa sakit, aksidente, ug risgo.",
+      "start_ms": 27480,
+      "end_ms": 44720
+    },
+    {
+      "zone": "reach",
+      "index": 3,
+      "text": "Namatikdan ni Riza nga mga ginikanan lamang ang mitambong. Nangutana siya kon kinsa pa ang wala maabot, ug kon unsang oras, lugar, pinulongan, ug pamaagi ang makatabang kanila nga moapil.",
+      "start_ms": 45020,
+      "end_ms": 58660
+    },
+    {
+      "zone": "young-people",
+      "index": 4,
+      "text": "Aron makaapil ang kabatan-onan, pangutan-on ni Riza kon kanus-a sila makaapil ug unsa ang gusto nilang makat-onan. Ipahiangay niya ang panaghisgot sa ilang mga pangutana, samtang gisiguro nga husto ug giaprobahan ang impormasyon.",
+      "start_ms": 58960,
+      "end_ms": 74840
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Ang pagtudlo sa BHW usa ka panaghisgot nga adunay tumong: maminaw, mopili og angay nga paksa ug giaprobahang materyal, mopahiangay sa yugto sa kinabuhi, ug maghimo og kahigayonan aron makaapil ang matag grupo.",
+      "start_ms": 75140,
+      "end_ms": 89980
+    }
+  ]
+}

@@ -14,19 +14,19 @@ vi.mock("next/navigation", () => ({ useRouter: () => ({ push: vi.fn() }) }));
 vi.mock("next/image", () => ({ default: (props: { src: string; alt: string }) => <img src={props.src} alt={props.alt}/> }));
 afterEach(cleanup);
 const directory = path.resolve("content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo");
-const json = (name: string) => JSON.parse(readFileSync(path.join(directory, name), "utf8"));
-const parseRead = (language: string) => readFileSync(path.join(directory, `read.${language}.md`), "utf8")
+const json = (name: string, lessonDirectory = directory) => JSON.parse(readFileSync(path.join(lessonDirectory, name), "utf8"));
+const parseRead = (language: string, lessonDirectory = directory) => readFileSync(path.join(lessonDirectory, `read.${language}.md`), "utf8")
   .split(/^## \[([^\]]+)\] (.+)\r?\n/gm).slice(1).reduce<{ id: string; heading: string; body: string }[]>((out, part, index, parts) => {
     if (index % 3 === 0) out.push({ id: part, heading: parts[index + 1], body: parts[index + 2].trim() });
     return out;
   }, []);
-function fixture(language: "ceb" | "hil" = "ceb") {
-  const authored = json("lesson.json"), fil = parseRead("fil"), en = parseRead("en");
+function fixture(language: "ceb" | "hil" = "ceb", lessonDirectory = directory) {
+  const authored = json("lesson.json", lessonDirectory), fil = parseRead("fil", lessonDirectory), en = parseRead("en", lessonDirectory);
   const lesson = { ...authored.manifest, id: "lesson", module_id: "module", published_revision_id: "revision", created_at: "2026-10-03",
     revision: { id: "revision", lesson_id: "lesson", revision_key: "source", content_hash: "source", created_by: "author", created_at: "2026-10-03",
       ...authored, read_sections: authored.sections.map((s: object, i: number) => ({ ...s, heading_fil: fil[i].heading, body_fil: fil[i].body,
-        heading_en: en[i].heading, body_en: en[i].body })), slides: json("slides.json") } } as PublishedLesson;
-  const translation = structuredClone(json(`pilot.${language}.json`)) as LessonTranslation;
+        heading_en: en[i].heading, body_en: en[i].body })), slides: json("slides.json", lessonDirectory) } } as PublishedLesson;
+  const translation = structuredClone(json(`pilot.${language}.json`, lessonDirectory)) as LessonTranslation;
   // Exercise review gating independently of the owner's release status.
   translation.review_status = "draft";
   // Deterministic audio and video fixtures exercise switching and caption selection.
@@ -158,4 +158,39 @@ describe("lesson 1.1.1 Hiligaynon pilot", () => {
     expect(container.querySelector("audio")).toHaveAttribute("src", "/fixture/morning.hil.mp3");
     expect(screen.getByRole("combobox", { name: "Pinulongan sang leksiyon" })).toHaveValue("hil");
   });
+});
+
+describe("lesson 1.1.2 translation review", () => {
+  const educatorDirectory = path.resolve(directory, "../bhw-health-educator");
+  for (const language of ["ceb", "hil"] as const) {
+    it(`keeps the ${language} draft scoped to its source and hidden from learners`, () => {
+      const { lesson, translation } = fixture(language, educatorDirectory);
+      expect(translationMatchesLesson(lesson, translation)).toBe(true);
+      expect(translationsForLesson(lesson, false)).toEqual([]);
+      expect(translationsForLesson(lesson, true).map(t => t.language)).toEqual(["ceb", "hil"]);
+      lesson.revision.read_sections[4].check!.correct_option_index = 1;
+      expect(translationsForLesson(lesson, true)).toEqual([]);
+    });
+    it(`switches ${language} reading, slides, feedback and story media`, () => {
+      const { lesson, translation } = fixture(language, educatorDirectory);
+      const { container } = render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]}
+        completed={[]} resumes={[]} modules={[]} locale="fil" initialLessonId="lesson" readOnly translations={[translation]}
+        onResume={vi.fn()} onComplete={vi.fn()}/>);
+      fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: language } });
+      expect(screen.getByRole("heading", { name: translation.read_sections[0].heading })).toBeInTheDocument();
+      expect(screen.getByAltText(translation.story_art!.alt)).toBeInTheDocument();
+      expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/educator-scene.${language}.mp3`);
+      fireEvent.click(screen.getByRole("button", { name: translation.ui.Slides }));
+      for (let i = 0; i < 4; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
+      const check = translation.slides[4].check!;
+      fireEvent.click(screen.getByRole("button", { name: check.options[1] }));
+      expect(screen.getByText(translation.ui["Hindi pa tama. Subukang muli."])).toBeInTheDocument();
+      fireEvent.click(screen.getByRole("button", { name: check.options[0] }));
+      expect(screen.getByText(translation.ui["Tama!"])).toBeInTheDocument();
+      expect(screen.getByText(check.feedback)).toBeInTheDocument();
+      fireEvent.click(screen.getByRole("button", { name: translation.ui["Kuwentong may salaysay"] }));
+      expect(container.querySelector("video source")).toHaveAttribute("src", `/fixture/story.${language}.mp4`);
+      expect(container.querySelector("track")).toHaveAttribute("srcLang", language);
+    });
+  }
 });

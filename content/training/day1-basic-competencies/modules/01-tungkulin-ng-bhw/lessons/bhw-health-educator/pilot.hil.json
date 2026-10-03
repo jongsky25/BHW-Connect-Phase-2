@@ -1,0 +1,464 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "draft",
+  "lesson_key": "bhw-health-educator",
+  "title": "Bilang Health Educator",
+  "objectives": [
+    "Matukoy ang nagakaigo nga buluhaton sa edukasyon para sa lainlain nga grupo sa komunidad kag yugto sang kabuhi."
+  ],
+  "read_sections": [
+    {
+      "id": "educator-scene",
+      "takeaway": "Ang pagtudlo isa ka paghisugilanon nga may katuyuan.",
+      "check": null,
+      "heading": "Magsugod sa imo kaistorya",
+      "body": "Sa isa ka paghisugilanon parte sa panglawas sa barangay, indi lamang ginabasa ni Riza ang poster. Ginausisa anay niya ang mga pamangkot sang mga residente, dayon nagahatag sang maathag nga pagpaathag. Bilang Health Educator, ginabuligan niya ang mga tawo nga matun-an kon paano atipanon ang ila lawas kag huptan nga matinlo ang palibot."
+    },
+    {
+      "id": "body-environment",
+      "takeaway": "Nagaangot ang panglawas sang tawo kag ang iya palibot.",
+      "check": null,
+      "heading": "Lawas kag palibot",
+      "body": "Mahimo nga talakayon sa edukasyon parte sa panglawas ang pag-atipan sang lawas kag ang katinlo sang palibot. Mahimo man nga ipaathag ni Riza kon paano makapalapit ang mga residente sa serbisyo sa panglawas. Nagagamit siya sang materyal nga gin-aprobahan sang health team. Sa sini nga leksiyon, nagatutok siya sa pagpili sang topiko kag sang kaistorya; ang detalyado nga laygay parte sa panglawas ara sa nagakaigo nga paghanas."
+    },
+    {
+      "id": "life-stages",
+      "takeaway": "Iangay sa yugto sang kabuhi ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "check": null,
+      "heading": "Nagabag-o ang kinahanglanon sa tagsa ka yugto",
+      "body": "Ginaangay sang BHW ang edukasyon parte sa panglawas sa lainlain nga yugto sang kabuhi. Mahimo nga magkalainlain ang mga pamangkot sang naga-atipan sang lapsag, pamatan-on, nagabusong, kag tigulang. Kinahanglan nga iangay sa yugto sang kabuhi sang kaistorya ang paghisugilanon parte sa balatian, aksidente, kag risgo. Halimbawa, mahimo nga magkalain ang pamangkot sang pamatan-on kag sang naga-atipan sang lapsag parte sa risgo sa panglawas."
+    },
+    {
+      "id": "all-sectors",
+      "takeaway": "Kinahanglan maghatag ang BHW sang impormasyon, ihibalo, kag kahigayunan sa paghanas sa tagsa ka grupo sang komunidad.",
+      "check": null,
+      "heading": "Lab-uta ang tagsa ka grupo",
+      "body": "Indi lamang ang mga nagatambong na sa health talk ang kinahanglan nga malab-ot. Hunahunaa kon sin-o ang wala pa makaupod: mga bata, pamatan-on, tigulang, kag iban pa nga grupo sa barangay. Magpili sang oras, lugar, pinulongan, kag pamaagi nga makabulig sa ila nga makigbahin. Maghatag sang impormasyon, ihibalo, kag kahigayunan sa paghanas."
+    },
+    {
+      "id": "check",
+      "takeaway": "Mas epektibo ang pagtudlo kon ang topiko kag pamaagi nagakaigo sa kaistorya kag may kahigayunan siya nga makigbahin.",
+      "check": {
+        "prompt": "Naghiwat si Riza sang paghisugilanon parte sa panglawas sa barangay, pero mga ginikanan lamang ang nagtambong. Ano ang mahimo niya nga bag-uhon agod makaupod ang mga pamatan-on?",
+        "options": [
+          "Pamangkuta ang mga pamatan-on kon san-o sila makaupod kag iangay ang paghisugilanon sa ila mga pamangkot.",
+          "Sulita ang pareho nga paghisugilanon sa pareho nga oras para sa mga ginikanan lamang.",
+          "Indi na pag-agdaha ang mga pamatan-on kay bastante na ang ila ihibalo."
+        ],
+        "feedback": "Ang pag-angay sa kaistorya nagabulig nga malab-ot ang tagsa ka grupo. Siguruhon nga husto kag gin-aprobahan ang impormasyon nga ginapaambit."
+      },
+      "heading": "Gamita ang imo natun-an",
+      "body": "Naghiwat si Riza sang paghisugilanon parte sa panglawas sa barangay, pero mga ginikanan lamang ang nagtambong. Ano ang mahimo niya nga bag-uhon agod makaupod ang mga pamatan-on?"
+    }
+  ],
+  "slides": [
+    {
+      "id": "educator-scene-slide",
+      "heading": "Magsugod sa imo kaistorya",
+      "display": "Magpamati sa pamangkot\nMagpaathag sing maathag\nAng pagtudlo isa ka paghisugilanon nga may katuyuan.",
+      "check": null
+    },
+    {
+      "id": "body-environment-slide",
+      "heading": "Lawas kag palibot",
+      "display": "Lawas · pag-atipan sang kaugalingon\nPalibot · matinlo nga palibot\nNagaangot ang panglawas sang tawo kag ang iya palibot.",
+      "check": null
+    },
+    {
+      "id": "life-stages-slide",
+      "heading": "Nagabag-o ang kinahanglanon sa tagsa ka yugto",
+      "display": "Lapsag kag naga-atipan\nPamatan-on\nNagabusong\nTigulang\nIangay sa yugto sang kabuhi ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "check": null
+    },
+    {
+      "id": "all-sectors-slide",
+      "heading": "Lab-uta ang tagsa ka grupo",
+      "display": "Sin-o ang wala pa malab-ot?\nAno nga pamaagi ang nagakaigo?\nKinahanglan malab-ot sang edukasyon parte sa panglawas ang tagsa ka grupo.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imo natun-an",
+      "display": "Ang epektibo nga pagtudlo nagakaigo sa kaistorya kag bukas sa tanan.",
+      "check": {
+        "prompt": "Naghiwat si Riza sang paghisugilanon parte sa panglawas sa barangay, pero mga ginikanan lamang ang nagtambong. Ano ang mahimo niya nga bag-uhon agod makaupod ang mga pamatan-on?",
+        "options": [
+          "Pamangkuta ang mga pamatan-on kon san-o sila makaupod kag iangay ang paghisugilanon sa ila mga pamangkot.",
+          "Sulita ang pareho nga paghisugilanon sa pareho nga oras para sa mga ginikanan lamang.",
+          "Indi na pag-agdaha ang mga pamatan-on kay bastante na ang ila ihibalo."
+        ],
+        "feedback": "Ang pag-angay sa kaistorya nagabulig nga malab-ot ang tagsa ka grupo. Siguruhon nga husto kag gin-aprobahan ang impormasyon nga ginapaambit."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, paghisugilanon upod sa komunidad, kag paggiya sa residente.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A03",
+      "alt": "Lainlain nga kaistorya kag yugto sang kabuhi.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "health-educator-story",
+      "alt": "Sa paghisugilanon parte sa panglawas, nagapamati anay si Riza sa mga pamangkot, nagagamit sang gin-aprobahan nga materyal, ginaangay ang paghisugilanon sa lainlain nga yugto sang kabuhi, kag nagapangita sang pamaagi agod makaupod man ang mga pamatan-on kag iban nga grupo.",
+      "caption": "Hinimo nga halimbawa sang pagtudlo ni Riza bilang BHW. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Si BHW Riza nagapamati sa isa ka pamatan-on, isa ka ginikanan nga may lapsag, kag isa ka tigulang sa paghisugilanon sa barangay.",
+    "caption": "Magpamati anay, dayon magtudlo"
+  },
+  "story_beats": [
+    {
+      "id": "listen",
+      "text": "Sa isa ka paghisugilanon parte sa panglawas sa barangay, indi lamang ginabasa ni BHW Riza ang poster. Ginausisa anay niya ang mga pamangkot sang mga residente, dayon nagahatag sang maathag nga pagpaathag.",
+      "title": "Magsugod sa imo kaistorya",
+      "detail": "Magpamati anay sa pamangkot."
+    },
+    {
+      "id": "topics",
+      "text": "Bilang Health Educator, mahimo niya nga talakayon ang pag-atipan sang lawas, katinlo sang palibot, kag pagpalapit sa serbisyo sa panglawas. Nagagamit siya sang materyal nga gin-aprobahan sang health team.",
+      "title": "Lawas kag palibot",
+      "detail": "Gamita ang gin-aprobahan nga materyal."
+    },
+    {
+      "id": "life-stages",
+      "text": "Nagakalainlain ang mga pamangkot sang naga-atipan sang lapsag, pamatan-on, nagabusong, kag tigulang. Ginaangay ni Riza sa yugto sang kabuhi sang kaistorya ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "title": "Lainlain nga yugto sang kabuhi",
+      "detail": "Iangay ang paghisugilanon sa kaistorya."
+    },
+    {
+      "id": "reach",
+      "text": "Natalupangdan ni Riza nga mga ginikanan lamang ang nagtambong. Namangkot siya kon sin-o pa ang wala malab-ot, kag kon ano nga oras, lugar, pinulongan, kag pamaagi ang makabulig sa ila nga makigbahin.",
+      "title": "Sin-o ang wala diri?",
+      "detail": "Lab-uta ang tagsa ka grupo."
+    },
+    {
+      "id": "young-people",
+      "text": "Agod makaupod ang mga pamatan-on, pamangkuton ni Riza kon san-o sila makaupod kag ano ang gusto nila nga matun-an. Iangay niya ang paghisugilanon sa ila mga pamangkot, samtang ginasiguro nga husto kag gin-aprobahan ang impormasyon.",
+      "title": "Agdaha ang mga pamatan-on",
+      "detail": "Magpamati · Iangay · Iupod"
+    },
+    {
+      "id": "summary",
+      "text": "Ang pagtudlo sang BHW isa ka paghisugilanon nga may katuyuan: magpamati, magpili sang nagakaigo nga topiko kag gin-aprobahan nga materyal, mag-angay sa yugto sang kabuhi, kag maghatag sang kahigayunan nga makigbahin ang tagsa ka grupo.",
+      "title": "Magpamati · Iangay · Iupod",
+      "detail": "Nagakaigo nga pagtuon para sa tagsa ka grupo"
+    }
+  ],
+  "summary_steps": [
+    "Magpamati",
+    "Gin-aprobahan nga aral",
+    "Iangay",
+    "Iupod ang tanan"
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "source_text": "[\"bhw-health-educator\",\"Bilang Health Educator\",\"As a Health Educator\",[\"Matukoy ang angkop na gawaing pang-edukasyon para sa iba’t ibang sektor at yugto ng buhay.\"],[\"Identify education suited to different community groups and life stages.\"],[[\"educator-scene\",[\"m1.role.educator\"],\"Magsimula sa kausap\",\"Start with your audience\",\"Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni Riza ang poster. Inaalam niya muna ang mga tanong ng mga residente, saka nagbibigay ng malinaw na paliwanag. Bilang Health Educator, tinutulungan niya ang mga tao na matutuhan kung paano pangalagaan ang kanilang katawan at panatilihing malinis ang paligid.\",\"At a barangay health discussion, Riza does more than read a poster. She first learns what residents are asking, then explains clearly. As a Health Educator, she helps people learn how to care for their bodies and keep their surroundings healthy.\",\"Ang pagtuturo ay pag-uusap na may layunin.\",\"Teaching is a purposeful conversation.\",null],[\"body-environment\",[\"m1.role.educator\"],\"Katawan at kapaligiran\",\"Body and environment\",\"Maaaring talakayin sa edukasyong pangkalusugan ang pangangalaga sa katawan at ang kalinisan ng paligid. Maaari ring ipaliwanag ni Riza kung paano makalalapit ang mga residente sa serbisyong pangkalusugan. Gumagamit siya ng materyal na aprubado ng health team. Sa araling ito, nakatuon siya sa pagpili ng paksa at kausap; ang detalyadong payong pangkalusugan ay nasa kaukulang pagsasanay.\",\"Health education can cover care for the body and cleanliness of the surroundings. Riza may also explain how residents can reach health services. She uses materials approved by the health team. In this lesson, she focuses on choosing a topic and audience; detailed health advice belongs in the relevant training.\",\"Magkaugnay ang kalusugan ng tao at ng kanyang paligid.\",\"People’s health and their surroundings are connected.\",null],[\"life-stages\",[\"m1.educator.lifestages\"],\"Iba ang pangangailangan sa bawat yugto\",\"Needs change through life\",\"Iniaangkop ng BHW ang edukasyong pangkalusugan sa iba’t ibang yugto ng buhay. Maaaring magkakaiba ang tanong ng tagapag-alaga ng sanggol, kabataan, buntis, at nakatatanda. Dapat umangkop sa yugto ng buhay ng kausap ang usapan tungkol sa sakit, aksidente, at panganib. Halimbawa, maaaring magkaiba ang itanong ng kabataan at ng tagapag-alaga ng sanggol tungkol sa panganib sa kalusugan.\",\"A BHW adapts health education to people at different life stages. An infant’s caregiver, a young person, a pregnant resident, and an older adult may have different questions. Discussions of illness, accidents, and risks should fit the listener’s life stage. For example, a young person may ask different questions about health risks than an infant’s caregiver.\",\"Iangkop ang usapan tungkol sa sakit, aksidente, at panganib sa yugto ng buhay.\",\"Adapt discussion of illness, accidents, and risks to each life stage.\",null],[\"all-sectors\",[\"m1.educator.allsectors\"],\"Abutin ang bawat sektor\",\"Reach every community group\",\"Hindi lamang ang mga dumadalo na sa health talk ang kailangang maabot. Pag-isipan kung sino ang hindi nakakasali: mga bata, kabataan, nakatatanda, at iba pang grupo sa barangay. Pumili ng oras, lugar, wika, at paraan na makatutulong sa kanila na makilahok. Magbigay ng impormasyon, kaalaman, at pagkakataong magsanay.\",\"Education must reach beyond people who already attend a health talk. Consider who is missing: children, young people, older adults, and other groups in the barangay. Choose a time, place, language, and format that support participation. Offer information, knowledge, and opportunities to practise.\",\"Dapat magbigay ang BHW ng impormasyon, kaalaman, at pagkakataong magsanay sa bawat sektor ng komunidad.\",\"A BHW should offer information, knowledge, and opportunities to practise to every community group.\",null],[\"check\",[\"m1.role.educator\",\"m1.educator.lifestages\",\"m1.educator.allsectors\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Nagsagawa si Riza ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?\",\"Riza holds a barangay health discussion, but only parents attend. What could she change to help young people take part?\",\"Nagiging mabisa ang pagtuturo kapag ang paksa at paraan ay angkop sa kausap at may pagkakataon siyang makilahok.\",\"Health education works better when its topic and approach fit the audience and everyone has a chance to take part.\",[\"Nagsagawa si Riza ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?\",\"Riza holds a barangay health discussion, but only parents attend. What could she change to help young people take part?\",[[\"Tanungin ang mga kabataan kung kailan sila makakasali at iangkop ang talakayan sa kanilang mga tanong.\",\"Ask young people when they can join and adapt the discussion to their questions.\"],[\"Ulitin ang parehong talakayan sa parehong oras para sa mga magulang lamang.\",\"Repeat the same discussion at the same time for parents only.\"],[\"Huwag nang anyayahan ang mga kabataan dahil sapat na ang alam nila.\",\"Do not invite young people because they already know enough.\"]],0,\"Ang pag-angkop sa kausap ay tumutulong maabot ang bawat sektor. Panatilihing aprubado at tama ang impormasyong ibinabahagi.\",\"Adapting to the audience helps reach each group. Keep the information accurate and approved.\"]]],[[\"educator-scene-slide\",[\"m1.role.educator\"],\"Magsimula sa kausap\",\"Start with your audience\",\"Makinig sa tanong\\nIpaliwanag nang malinaw\\nAng pagtuturo ay pag-uusap na may layunin.\",\"Listen to the question\\nExplain clearly\\nTeaching is a purposeful conversation.\",null],[\"body-environment-slide\",[\"m1.role.educator\"],\"Katawan at kapaligiran\",\"Body and environment\",\"Katawan · pangangalaga sa sarili\\nKapaligiran · malinis na paligid\\nMagkaugnay ang kalusugan ng tao at ng kanyang paligid.\",\"Body · personal health\\nEnvironment · clean surroundings\\nPeople’s health and their surroundings are connected.\",null],[\"life-stages-slide\",[\"m1.educator.lifestages\"],\"Iba ang pangangailangan sa bawat yugto\",\"Needs change through life\",\"Sanggol at tagapag-alaga\\nKabataan\\nBuntis\\nNakatatanda\\nIangkop ang usapan tungkol sa sakit, aksidente, at panganib sa yugto ng buhay.\",\"Infant and caregiver\\nYoung people\\nPregnant residents\\nOlder adults\\nAdapt discussion of illness, accidents, and risks to each life stage.\",null],[\"all-sectors-slide\",[\"m1.educator.allsectors\"],\"Abutin ang bawat sektor\",\"Reach every community group\",\"Sino ang hindi pa naaabot?\\nAnong paraan ang angkop?\\nDapat maabot ng edukasyong pangkalusugan ang bawat sektor.\",\"Who is not yet reached?\\nWhat approach will work?\\nA BHW should make learning possible for every community group.\",null],[\"check-slide\",[\"m1.role.educator\",\"m1.educator.lifestages\",\"m1.educator.allsectors\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Ang mabisang pagtuturo ay angkop sa kausap at bukas sa lahat.\",\"Good teaching fits its audience and invites everyone to take part.\",[\"Nagsagawa si Riza ng talakayang pangkalusugan sa barangay, pero mga magulang lamang ang dumalo. Ano ang maaari niyang baguhin upang makasali ang mga kabataan?\",\"Riza holds a barangay health discussion, but only parents attend. What could she change to help young people take part?\",[[\"Tanungin ang mga kabataan kung kailan sila makakasali at iangkop ang talakayan sa kanilang mga tanong.\",\"Ask young people when they can join and adapt the discussion to their questions.\"],[\"Ulitin ang parehong talakayan sa parehong oras para sa mga magulang lamang.\",\"Repeat the same discussion at the same time for parents only.\"],[\"Huwag nang anyayahan ang mga kabataan dahil sapat na ang alam nila.\",\"Do not invite young people because they already know enough.\"]],0,\"Ang pag-angkop sa kausap ay tumutulong maabot ang bawat sektor. Panatilihing aprubado at tama ang impormasyong ibinabahagi.\",\"Adapting to the audience helps reach each group. Keep the information accurate and approved.\"]]]]",
+  "narration": {
+    "educator-scene": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-health-educator/educator-scene.hil.ee3fd911d7dd.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "ee3fd911d7dd41d549ec448aa5e1666ec990b4b1781c83f8150538af0fd154ad",
+      "sha256": "6307c30cf91af8c9ba0e9dd9e631a18344722856e04dec693d05d972488d33ef",
+      "duration_seconds": 33.25387755102041,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Magsugod sa imo kaistorya",
+          "start_ms": 0,
+          "end_ms": 2600
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Sa isa ka paghisugilanon parte sa panglawas sa barangay, indi lamang ginabasa ni Riza ang poster.",
+          "start_ms": 2900,
+          "end_ms": 9900
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ginausisa anay niya ang mga pamangkot sang mga residente, dayon nagahatag sang maathag nga pagpaathag.",
+          "start_ms": 10200,
+          "end_ms": 18320
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Bilang Health Educator, ginabuligan niya ang mga tawo nga matun-an kon paano atipanon ang ila lawas kag huptan nga matinlo ang palibot.",
+          "start_ms": 18620,
+          "end_ms": 28940
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang pagtudlo isa ka paghisugilanon nga may katuyuan.",
+          "start_ms": 29240,
+          "end_ms": 33200
+        }
+      ]
+    },
+    "body-environment": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-health-educator/body-environment.hil.32cc2f439e41.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "32cc2f439e41dacc9bbd7c18e9af8a3b991645415af2e0396bac17b7b2366836",
+      "sha256": "97ef8f422550bd6d3197842d03bf471d664bc6a75bc2ee4ccc4251f9ebccdb58",
+      "duration_seconds": 40.202448979591836,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Lawas kag palibot",
+          "start_ms": 0,
+          "end_ms": 2480
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Mahimo nga talakayon sa edukasyon parte sa panglawas ang pag-atipan sang lawas kag ang katinlo sang palibot.",
+          "start_ms": 2780,
+          "end_ms": 11340
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Mahimo man nga ipaathag ni Riza kon paano makapalapit ang mga residente sa serbisyo sa panglawas.",
+          "start_ms": 11640,
+          "end_ms": 18880
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Nagagamit siya sang materyal nga gin-aprobahan sang health team.",
+          "start_ms": 19180,
+          "end_ms": 23380
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sa sini nga leksiyon, nagatutok siya sa pagpili sang topiko kag sang kaistorya; ang detalyado nga laygay parte sa panglawas ara sa nagakaigo nga paghanas.",
+          "start_ms": 23680,
+          "end_ms": 35880
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Nagaangot ang panglawas sang tawo kag ang iya palibot.",
+          "start_ms": 36180,
+          "end_ms": 40140
+        }
+      ]
+    },
+    "life-stages": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-health-educator/life-stages.hil.d65e4bf98848.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "d65e4bf988482ce7470a57c1566d6244d794c491e21cc22542d69258201b46f8",
+      "sha256": "f2c1ac51f5a6f22d1e19dd8a8ffaeabcc857deb82148e8d8790b678622212561",
+      "duration_seconds": 46.81142857142857,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Nagabag-o ang kinahanglanon sa tagsa ka yugto",
+          "start_ms": 0,
+          "end_ms": 3720
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ginaangay sang BHW ang edukasyon parte sa panglawas sa lainlain nga yugto sang kabuhi.",
+          "start_ms": 4020,
+          "end_ms": 10780
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Mahimo nga magkalainlain ang mga pamangkot sang naga-atipan sang lapsag, pamatan-on, nagabusong, kag tigulang.",
+          "start_ms": 11080,
+          "end_ms": 19720
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Kinahanglan nga iangay sa yugto sang kabuhi sang kaistorya ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+          "start_ms": 20020,
+          "end_ms": 28580
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Halimbawa, mahimo nga magkalain ang pamangkot sang pamatan-on kag sang naga-atipan sang lapsag parte sa risgo sa panglawas.",
+          "start_ms": 28880,
+          "end_ms": 38680
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Iangay sa yugto sang kabuhi ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+          "start_ms": 38980,
+          "end_ms": 46740
+        }
+      ]
+    },
+    "all-sectors": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-health-educator/all-sectors.hil.0d9ce149b29c.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "0d9ce149b29cb6ecfbc49bd696d1046c3759eed3921a34533bd636d96446edcd",
+      "sha256": "590b365bfd258da35c0ffb5ae9da4730917e1ef5030bdf44077d013a1204387e",
+      "duration_seconds": 41.48244897959184,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Lab-uta ang tagsa ka grupo",
+          "start_ms": 0,
+          "end_ms": 2720
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Indi lamang ang mga nagatambong na sa health talk ang kinahanglan nga malab-ot.",
+          "start_ms": 3020,
+          "end_ms": 8060
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Hunahunaa kon sin-o ang wala pa makaupod: mga bata, pamatan-on, tigulang, kag iban pa nga grupo sa barangay.",
+          "start_ms": 8360,
+          "end_ms": 17320
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Magpili sang oras, lugar, pinulongan, kag pamaagi nga makabulig sa ila nga makigbahin.",
+          "start_ms": 17620,
+          "end_ms": 25220
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Maghatag sang impormasyon, ihibalo, kag kahigayunan sa paghanas.",
+          "start_ms": 25520,
+          "end_ms": 31240
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Kinahanglan maghatag ang BHW sang impormasyon, ihibalo, kag kahigayunan sa paghanas sa tagsa ka grupo sang komunidad.",
+          "start_ms": 31540,
+          "end_ms": 41420
+        }
+      ]
+    },
+    "check": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-health-educator/check.hil.affb810ad8d9.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "affb810ad8d963dd48a86dbe73f25613a13bb1681855b58c4a9db2b8123c297b",
+      "sha256": "40bd7418156c4a0da717d909f9b05a9ce118d5de18e16b20085af20132fe7e01",
+      "duration_seconds": 25.808979591836735,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Gamita ang imo natun-an",
+          "start_ms": 0,
+          "end_ms": 2600
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Naghiwat si Riza sang paghisugilanon parte sa panglawas sa barangay, pero mga ginikanan lamang ang nagtambong.",
+          "start_ms": 2900,
+          "end_ms": 10540
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ano ang mahimo niya nga bag-uhon agod makaupod ang mga pamatan-on?",
+          "start_ms": 10840,
+          "end_ms": 16080
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Mas epektibo ang pagtudlo kon ang topiko kag pamaagi nagakaigo sa kaistorya kag may kahigayunan siya nga makigbahin.",
+          "start_ms": 16380,
+          "end_ms": 25740
+        }
+      ]
+    }
+  },
+  "poster": "/training/bhw-1-1/health-educator-riza-gemini-hil-ea5fb0746ca2-poster.jpg",
+  "video": {
+    "path": "/training/bhw-1-1/health-educator-riza-gemini-hil-c5f4cac667cf.mp4",
+    "content_hash": "c5f4cac667cfcfe34a4429249d25e5bb77131001c298e5df5304b2b54d83c27f",
+    "duration_s": 95,
+    "captions": {
+      "path": "/training/bhw-1-1/health-educator-riza-gemini-hil-ecc0e0b54f41.vtt",
+      "content_hash": "ecc0e0b54f4174c3e85fa9c5fbad8b6c8d4e0d85dec63708fb70537284913523"
+    }
+  },
+  "story_content_hash": "5fd34d3d16b1d96b58ad151d39b561c52c4c77adebfc07a65dfce56e712337d1"
+}

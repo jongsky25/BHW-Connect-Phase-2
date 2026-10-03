@@ -42,6 +42,8 @@ export const ORGANIZER_STORY_STYLES = {
 };
 
 export const HEALTH_EDUCATOR_STORY_STYLES = {
+  ceb: "Speak in natural Cebuano (Bisaya), as spoken in the Philippines, as a warm, expressive community health educator. Use Cebuano pronunciation and sentence intonation. Sound curious as Riza listens to residents, then encouraging as she includes different ages and groups. Use gentle changes in pitch and pace. Preserve English technical role names and read the exact text. Do not switch to Tagalog or add words.",
+  hil: "Speak in natural Hiligaynon (Ilonggo), as spoken in Iloilo and Western Visayas in the Philippines, as a warm, expressive community health educator. Use Hiligaynon pronunciation, word stress, and gently melodic sentence intonation. Sound curious as Riza listens to residents, then encouraging as she includes different ages and groups. Use gentle changes in pitch and pace. Preserve English technical role names and read the exact text. Do not switch to Cebuano or Tagalog, translate, or add words.",
   fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health educator. Sound curious as Marites listens to residents, then encouraging as she includes different ages and groups. Use gentle changes in pitch and pace. Keep the guidance clear and respectful. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, expressive community health educator. Sound curious as Marites listens to residents, then encouraging as she includes different ages and groups. Use gentle changes in pitch and pace. Keep the guidance clear and respectful. Do not add or change words.",
 };
