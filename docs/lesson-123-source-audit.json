@@ -7,13 +7,39 @@
       "id": "manual-uhc",
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
       "repository_file": "docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
-      "printed_pages": [3, 4, 5, 7],
-      "pdf_pages": [11, 12, 13, 15],
+      "printed_pages": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "pdf_pages": [
+        11,
+        12,
+        13,
+        15
+      ],
       "verified_passages": [
-        {"pdf_page": 13, "printed_page": 5, "support": "The UHC list includes higher BHW skills, intensified community health promotion and provincial/city boards as partners in organising/managing the health system."},
-        {"pdf_page": 11, "printed_page": 3, "support": "Barangay-level HEPO role: health information, community learning and programme knowledge."},
-        {"pdf_page": 12, "printed_page": 4, "support": "Community organiser communication and participation in local planning; BHW contribution does not itself confer board membership."},
-        {"pdf_page": 15, "printed_page": 7, "support": "MHO/CHO supervision and midwife technical supervision, assignment of BHW tasks and receipt of community health concerns. This is a basis for asking the team, not a mandatory chain to every board."}
+        {
+          "pdf_page": 13,
+          "printed_page": 5,
+          "support": "The UHC list includes higher BHW skills, intensified community health promotion and provincial/city boards as partners in organising/managing the health system."
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 3,
+          "support": "Barangay-level HEPO role: health information, community learning and programme knowledge."
+        },
+        {
+          "pdf_page": 12,
+          "printed_page": 4,
+          "support": "Community organiser communication and participation in local planning; BHW contribution does not itself confer board membership."
+        },
+        {
+          "pdf_page": 15,
+          "printed_page": 7,
+          "support": "MHO/CHO supervision and midwife technical supervision, assignment of BHW tasks and receipt of community health concerns. This is a basis for asking the team, not a mandatory chain to every board."
+        }
       ],
       "method": "Read the original page-labelled Markdown extraction in the audited checkout.",
       "limits": "Original manual PDF not found in the supplied checkout/workspace source material. No visual verification of the original PDF is claimed. Printed page numbers are those at the ends of the extracted pages."
@@ -22,12 +48,32 @@
       "id": "facilitator-innovation",
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md",
       "repository_file": "docs/source-material/day1-basic-competencies/facilitator-guide.md",
-      "printed_pages": [12, 13, 14],
-      "pdf_pages": [19, 20, 21],
+      "printed_pages": [
+        12,
+        13,
+        14
+      ],
+      "pdf_pages": [
+        19,
+        20,
+        21
+      ],
       "verified_passages": [
-        {"pdf_page": 19, "printed_page": 12, "support": "Competency table maps UHC Law to Contribute to workplace innovation, three hours. The extraction labels this table as visually transcribed; this chat did not independently inspect the PDF image."},
-        {"pdf_page": 20, "printed_page": 13, "support": "Training recommendations discuss health promotion and community organising, ask BHWs what skills they need and how they can expand educator/organiser contributions."},
-        {"pdf_page": 21, "printed_page": 14, "support": "Training outcomes explicitly identify opportunities to do things better, discuss and develop ideas with others, and integrate ideas for change. This is the actual competency passage, not an unverified inherited citation."}
+        {
+          "pdf_page": 19,
+          "printed_page": 12,
+          "support": "Competency table maps UHC Law to Contribute to workplace innovation, three hours. The extraction labels this table as visually transcribed; this chat did not independently inspect the PDF image."
+        },
+        {
+          "pdf_page": 20,
+          "printed_page": 13,
+          "support": "Training recommendations discuss health promotion and community organising, ask BHWs what skills they need and how they can expand educator/organiser contributions."
+        },
+        {
+          "pdf_page": 21,
+          "printed_page": 14,
+          "support": "Training outcomes explicitly identify opportunities to do things better, discuss and develop ideas with others, and integrate ideas for change. This is the actual competency passage, not an unverified inherited citation."
+        }
       ],
       "method": "Read page-labelled repository transcription, including actual recommendations and competency outcomes.",
       "limits": "Original facilitator PDF not found locally; no new visual page verification. Thirty-minute lesson practice is an authored suggestion inside the module, not a source-prescribed lesson allocation."
@@ -35,7 +81,11 @@
     {
       "id": "ra11223",
       "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html",
-      "sections": [19, 20, 30],
+      "sections": [
+        19,
+        20,
+        30
+      ],
       "method": "Full statute HTML retrieved and relevant sections checked through web browsing.",
       "support": "Section 19: Provincial/City Health Boards oversee and coordinate integration; supervision and fund responsibilities. Section 20: pooled Special Health Fund. Section 30: coordinated health promotion, literacy and preventive care. Province-wide systems include municipal/component-city systems; city-wide systems concern highly urbanised/independent component cities.",
       "limits": "No claim that every locality has completed integration, every BHW sits on a board, or every community question must reach a board. No universal local routing, entitlement or service promise."
@@ -43,25 +93,63 @@
     {
       "id": "ra7160",
       "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
-      "sections": [102],
+      "sections": [
+        102
+      ],
       "method": "Full statute HTML retrieved; section 102 read separately from UHC governance.",
       "support": "Local health boards exist at provincial, city and municipal levels, with statutory composition, budget proposal, advisory and committee functions.",
       "limits": "This does not justify collapsing all boards into one body or automatically assigning a BHW a statutory seat. Local coordination and decision authority must be confirmed."
     }
   ],
   "current_doh_retrievals": [
-    {"url": "https://ro1.doh.gov.ph/region-1-lgus-seal-uhc-integration-deal-to-bring-healthcare-closer-to-every-ilocano/", "date": "2026-05-21", "result": "Search index exposed the official DOH integration announcement; direct page open failed. Used as a retrieval lead only; no additional learner claim relies on the index."},
-    {"url": "https://bicol.doh.gov.ph/news-releases/doh-bicol-chd-kicks-off-first-leg-of-healthy-learning-institutions-onboarding-sessions/", "result": "Official search index links health promotion settings to HPFS 2030; direct page returned 403. No exact policy passage/page verification claimed."},
-    {"url": "https://doh.gov.ph/wp-content/uploads/2024/01/National-Objectives-for-Health-2023-2028.pdf", "result": "403; exact pages not verified."},
-    {"url": "https://ncroffice.doh.gov.ph/Content/Public/BidsAndAwards/2024-105%20Hiring%20of%20Event%20Organizer%20reshaping%20%20May%2011%2C%202024.pdf", "result": "502; exact HPFS passage not verified."},
-    {"url": "https://www.philhealth.gov.ph/about_us/IRR_RA11223.pdf", "result": "Unavailable via web tool; no IRR paragraph claimed as verified."}
+    {
+      "url": "https://ro1.doh.gov.ph/region-1-lgus-seal-uhc-integration-deal-to-bring-healthcare-closer-to-every-ilocano/",
+      "date": "2026-05-21",
+      "result": "Search index exposed the official DOH integration announcement; direct page open failed. Used as a retrieval lead only; no additional learner claim relies on the index."
+    },
+    {
+      "url": "https://bicol.doh.gov.ph/news-releases/doh-bicol-chd-kicks-off-first-leg-of-healthy-learning-institutions-onboarding-sessions/",
+      "result": "Official search index links health promotion settings to HPFS 2030; direct page returned 403. No exact policy passage/page verification claimed."
+    },
+    {
+      "url": "https://doh.gov.ph/wp-content/uploads/2024/01/National-Objectives-for-Health-2023-2028.pdf",
+      "result": "403; exact pages not verified."
+    },
+    {
+      "url": "https://ncroffice.doh.gov.ph/Content/Public/BidsAndAwards/2024-105%20Hiring%20of%20Event%20Organizer%20reshaping%20%20May%2011%2C%202024.pdf",
+      "result": "502; exact HPFS passage not verified."
+    },
+    {
+      "url": "https://www.philhealth.gov.ph/about_us/IRR_RA11223.pdf",
+      "result": "Unavailable via web tool; no IRR paragraph claimed as verified."
+    },
+    {
+      "url": "https://ro4a.doh.gov.ph/wp-content/uploads/2025/01/HEPU-Website-Content-2024.pdf",
+      "result": "Official search retrieval lead checked again 2026-10-03; direct page returned 403. No additional claim or exact policy page inferred from search snippet."
+    },
+    {
+      "url": "https://ro4a.doh.gov.ph/wp-content/uploads/2025/01/Website-Content-2024-UHC.docx.pdf",
+      "result": "Official search retrieval lead checked again 2026-10-03; direct page returned 403. No additional claim or exact policy page inferred from search snippet."
+    },
+    {
+      "url": "https://ro11.doh.gov.ph/region-wide-health-promotion-program-implementation-review-and-2027-strategic-alignment-of-activities/",
+      "result": "Official search retrieval lead checked again 2026-10-03; direct page returned 403. No additional claim or exact policy page inferred from search snippet."
+    },
+    {
+      "url": "https://ro1.doh.gov.ph/?p=3894",
+      "result": "Official search retrieval lead checked again 2026-10-03; direct page returned 403. No additional claim or exact policy page inferred from search snippet."
+    },
+    {
+      "url": "https://cfermtc.doh.gov.ph/capacity-building-and-technical-assistance-on-the-implementation-of-health-promotion-framework-strategy-and-local-health-system-health-promotion-playbook/",
+      "result": "Official search retrieval lead checked again 2026-10-03; direct page returned 403. No additional claim or exact policy page inferred from search snippet."
+    }
   ],
   "content_decisions": [
     "The resident-question/activity example is explicitly fictional and teaches communication, not service eligibility or a clinical recommendation.",
     "Replace the inherited universal midwife-to-health-office-to-board sequence with a question to the locally appropriate team contact.",
     "Keep all immutable manifest wording and four required concept IDs; put specific practice outcomes in authored content.",
     "Remove the contradictory approved/draft process-map teaching asset from this new revision; preserve its historical public SVG. No evidence of owner approval for that map was found.",
-    "Original illustration and future generated audio/video belong to this draft package; approval of 1.2.2 is not reused.",
+    "Original illustration and generated audio/video belong to this draft package; approval of 1.2.2 is not reused.",
     "Do not introduce YAKAP where this topic does not require it. Shared pronunciation regression remains required.",
     "Original PDF and current DOH policy retrieval limits remain visible for owner review and must not be relabelled as completed verification."
   ]

@@ -18,7 +18,7 @@ Basahin ang kathang-isip na sitwasyon nina Vlanche at Ernesto. Ipatukoy ang alam
 
 1. **Makinig at ihiwalay ang fakta (4 minuto).** Ihiwalay ang paulit-ulit na tanong sa hinala kung sino ang sanhi nito.
 2. **Linawin ang papel (5 minuto).** Pinangangasiwaan ng UHC Provincial/City Health Boards ang integration at may tungkulin sa fund at supervision. May sariling komposisyon at tungkulin ang local boards sa RA 7160. Nag-aambag ang BHW ng obserbasyon at nasuring mensahe; hindi awtomatikong kasapi ng board o nagpapasya sa patakaran.
-3. **Buuin ang tala (5 minuto).** Isulat ang narinig, kailan at hindi pa tiyak. Alisin ang pangalang at personal na health detail na hindi kailangan. Itanong kung sino ang makapagkukumpirma at tatanggap ng mungkahi.
+3. **Buuin ang tala (5 minuto).** Isulat ang narinig, kailan at hindi pa tiyak. Alisin ang pangalan at personal na health detail na hindi kailangan. Itanong kung sino ang makapagkukumpirma at tatanggap ng mungkahi.
 4. **Magsanay sa health promotion (5 minuto).** Gumamit ng mensaheng sinuri ng team; ipaliwanag nang payak, mag-anyaya ng tanong at suriin ang pagkaunawa. Sabihin kung hindi pa kumpirmado at itanong sa team sa halip na ulitin.
 5. **Talakayin at mag-follow-up (8 minuto).** Gawin ang practice sa ibaba. Kumpirmahin ang lokal na contact, may kapangyarihang magpasya at paraan ng tugon; magsanay sa pagtanggap at pagbabahagi ng nakumpirmang sagot.
 6. **Check at feedback (3 minuto).** Sagutin ang huling screen at ipaliwanag ang hangganang nilalabag ng ibang opsyon.
