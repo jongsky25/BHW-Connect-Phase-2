@@ -160,13 +160,13 @@ describe("lesson 1.1.1 Hiligaynon pilot", () => {
   });
 });
 
-describe("lesson 1.1.2 translation review", () => {
+describe("lesson 1.1.2 approved translations", () => {
   const educatorDirectory = path.resolve(directory, "../bhw-health-educator");
   for (const language of ["ceb", "hil"] as const) {
-    it(`keeps the ${language} draft scoped to its source and hidden from learners`, () => {
+    it(`offers the owner-approved ${language} package only for its matching source`, () => {
       const { lesson, translation } = fixture(language, educatorDirectory);
       expect(translationMatchesLesson(lesson, translation)).toBe(true);
-      expect(translationsForLesson(lesson, false)).toEqual([]);
+      expect(translationsForLesson(lesson, false).map(t => t.language)).toEqual(["ceb", "hil"]);
       expect(translationsForLesson(lesson, true).map(t => t.language)).toEqual(["ceb", "hil"]);
       lesson.revision.read_sections[4].check!.correct_option_index = 1;
       expect(translationsForLesson(lesson, true)).toEqual([]);
