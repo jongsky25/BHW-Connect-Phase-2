@@ -8,5 +8,11 @@ Gemini generates reading and story narration with natural Cebuano or Hiligaynon 
 
 Each package is bound to the complete source text. Drafts appear in staff review only; learner access requires owner approval. No database migration or source content load is included.
 
-Validation and owner pronunciation review are pending.
+Gemini uses `gemini-3.8-flash-tts`, voice `Kore`. Reading totals are about 305 seconds in both languages. The videos are 86 seconds in Cebuano and 92 seconds in Hiligaynon, rendered at 854 × 480 with matching captions and localized handover cards.
+
+Validation: all 58 relevant tests passed after merging the latest main once, covering every translated package from 1.1.1 through 1.1.6, source matching, staff draft access, learner exclusion, preserved answer order, translated Read/Slides/feedback/media, whole-course narration, Gemini, WebVTT and rendering arguments. App and Remotion typechecks, changed-file lint and diff checks passed. Audio/video/caption hashes, reading timings, six caption cues per video, video size budgets and both portable exports passed.
+
+Browser checks covered every Read section and slide in both languages, incorrect/correct feedback, progressing reading audio and video playback, matching caption tracks loaded and displayed, language switching, 390-pixel mobile layouts without horizontal overflow, and opening and closing full-screen Read and video with landscape controls. Both posters and the full-screen reading views were visually inspected. No browser console errors were captured.
+
+The owner still needs to review meaning, natural wording, pronunciation and pacing. No separate native-speaker certification is claimed. This draft is based on main after approved lessons 1.1.4 and 1.1.5 were merged as PRs #237 then #238 and verified live. Production signed-in smoke remains unverified because no authenticated production session is available in this workspace; no draft lesson was deployed.
 
