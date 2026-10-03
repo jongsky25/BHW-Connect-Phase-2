@@ -1,6 +1,6 @@
 # Lesson 1.1.3 — Cebuano and Hiligaynon review
 
-Both language packages are drafts for owner review. The owner approved lessons 1.1.1 and 1.1.2; those approvals do not apply to this lesson.
+The owner approved both language packages and requested deployment on 3 October 2026. Both packages are approved for learners and staff when the complete published source matches the translation snapshot.
 
 The packages include all six Read sections, objectives and takeaways, six slides, the formative question, options and feedback, image descriptions, learner controls, and the six-beat animated Community Organizer story. Source section IDs and answer order are preserved. The original correct answer is at index 2. Filipino and English content and progress remain on their existing revisions.
 
@@ -8,9 +8,9 @@ The translations retain the distinction between an observation and an unverified
 
 Gemini generates section reading audio and story narration using `gemini-3.8-flash-tts`, voice `Kore`. Speech prompts request natural Cebuano or Hiligaynon pronunciation and intonation, a conversational teaching pace, and exact reading of the authored text. Story prompts ask for LIPH to be pronounced letter by letter. Audio, video, captions and on-screen labels are matched to the selected language.
 
-Each package is bound to the complete source text. Draft packages appear in staff reviews only and remain unavailable to learners until the owner approves them. Source changes hide a stale translation. This draft includes no database migration or content load.
+Each package is bound to the complete source text. Owner-approved packages appear for learners and staff. Source changes hide a stale translation. This draft includes no database migration or content load.
 
-Owner review should check meaning, natural word choice, pronunciation and pacing. No native-speaker certification is claimed.
+Owner approval covers the translated content and narration. No separate native-speaker certification is claimed.
 
 The translation build, narration, preview and finalization scripts accept `--lesson 1.1.3 --language ceb` (or `hil`). Registered Remotion compositions use the matching narration files, measured beat timings and captions. Gemini credentials and temporary caches stay outside Git.
 

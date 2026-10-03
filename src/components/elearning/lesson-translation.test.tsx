@@ -195,13 +195,13 @@ describe("lesson 1.1.2 approved translations", () => {
   }
 });
 
-describe("lesson 1.1.3 translation review", () => {
+describe("lesson 1.1.3 approved translations", () => {
   const organizerDirectory = path.resolve(directory, "../bhw-community-organizer");
   for (const language of ["ceb", "hil"] as const) {
-    it(`keeps the ${language} draft hidden from learners and rejects stale source text`, () => {
+    it(`offers the approved ${language} source while keeping unapproved fixtures hidden`, () => {
       const { lesson, translation } = fixture(language, organizerDirectory);
       expect(translationMatchesLesson(lesson, translation)).toBe(true);
-      expect(translationsForLesson(lesson, false)).toEqual([]);
+      expect(translationsForLesson(lesson, false).map(t => t.language)).toEqual(["ceb", "hil"]);
       expect(translationsForLesson(lesson, true).map(t => t.language)).toEqual(["ceb", "hil"]);
       render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]} completed={[]}
         resumes={[]} modules={[]} locale="fil" initialLessonId="lesson" readOnly={false} translations={[translation]}
