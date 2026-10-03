@@ -28,6 +28,12 @@ concurrency:
 
 jobs:
   render:
+    # Split the growing composition list across two runners. A serial run
+    # rendered all 18 clips but hit the 20-minute limit during final packaging.
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -52,13 +58,19 @@ jobs:
         run: npx remotion browser ensure
 
       - name: Render every composition
+        env:
+          RENDER_SHARD: ${{ matrix.shard }}
         run: |
           set -euo pipefail
           # `--quiet` ends with the IDs space-separated on one line; split
           # that line and keep only ID-shaped words.
           ids=$(cd remotion && npx remotion compositions --quiet | tail -n 1 | tr -s ' \t' '\n' | grep -E '^[A-Za-z0-9-]+$')
+          index=0
           for id in $ids; do
-            node scripts/remotion-render.mjs "$id" 2>&1 | tee -a render.log
+            if [ "$((index % 2))" -eq "$RENDER_SHARD" ]; then
+              node scripts/remotion-render.mjs "$id" 2>&1 | tee -a render.log
+            fi
+            index=$((index + 1))
           done
           if grep -q "warn .* exceeds" render.log; then
             echo "::error::A clip exceeds the INC-28 size budget (see log above)"
@@ -67,6 +79,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: remotion-renders
+          name: remotion-renders-${{ matrix.shard }}
           path: remotion/out/
           retention-days: 14
