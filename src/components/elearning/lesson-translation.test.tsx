@@ -196,9 +196,10 @@ describe("lesson 1.1.2 approved translations", () => {
 });
 
 describe.each([
-  { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true },
-  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true },
-])("lesson $number translated content", ({ folder, firstId, approved }) => {
+  { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true, correctIndex: 2 },
+  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2 },
+  { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1 },
+])("lesson $number translated content", ({ folder, firstId, approved, correctIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {
     it(`offers matching ${language} content to authorized viewers and hides unapproved fixtures`, () => {
@@ -213,7 +214,7 @@ describe.each([
       lesson.revision.read_sections[2].body_en += " Changed observation guidance.";
       expect(translationsForLesson(lesson, true)).toEqual([]);
     });
-    it(`preserves answer index 2 and the ${language} Read, slide and video language`, () => {
+    it(`preserves answer index ${correctIndex} and the ${language} Read, slide and video language`, () => {
       const { lesson, translation } = fixture(language, organizerDirectory);
       const { container } = render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]}
         completed={[]} resumes={[]} modules={[]} locale="fil" initialLessonId="lesson" readOnly translations={[translation]}
@@ -224,17 +225,17 @@ describe.each([
       expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/${firstId}.${language}.mp3`);
       for (let i = 0; i < 5; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
       expect(container.querySelector("audio")).not.toBeInTheDocument();
-      expect(lesson.revision.read_sections[5].check?.correct_option_index).toBe(2);
+      expect(lesson.revision.read_sections[5].check?.correct_option_index).toBe(correctIndex);
       const readCheck = translation.read_sections[5].check!;
       fireEvent.click(screen.getByRole("button", { name: readCheck.options[0] }));
       expect(screen.getByText(translation.ui["Hindi pa tama. Subukang muli."])).toBeInTheDocument();
-      fireEvent.click(screen.getByRole("button", { name: readCheck.options[2] }));
+      fireEvent.click(screen.getByRole("button", { name: readCheck.options[correctIndex] }));
       expect(screen.getByText(translation.ui["Tama!"])).toBeInTheDocument();
       expect(screen.getByText(readCheck.feedback)).toBeInTheDocument();
       expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/check.${language}.mp3`);
       fireEvent.click(screen.getByRole("button", { name: translation.ui.Slides }));
       for (let i = 0; i < 5; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
-      fireEvent.click(screen.getByRole("button", { name: translation.slides[5].check!.options[2] }));
+      fireEvent.click(screen.getByRole("button", { name: translation.slides[5].check!.options[correctIndex] }));
       expect(screen.getByText(translation.ui["Tama!"])).toBeInTheDocument();
       fireEvent.click(screen.getByRole("button", { name: translation.ui["Kuwentong may salaysay"] }));
       expect(container.querySelector("video source")).toHaveAttribute("src", `/fixture/story.${language}.mp4`);
