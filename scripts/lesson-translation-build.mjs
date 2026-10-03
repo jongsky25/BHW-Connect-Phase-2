@@ -10,11 +10,12 @@ const translatedLessons = {
   "1.1.3": { key: "bhw-community-organizer", story: "community-organizer", mediaBase: "community-organizer-riza-gemini", port: 4315 },
   "1.1.4": { key: "bhw-service-provider", story: "service-provider", mediaBase: "service-provider-riza-gemini", port: 4317 },
   "1.1.5": { key: "bhw-records", story: "records", mediaBase: "records-riza-gemini", port: 4319 },
+  "1.1.6": { key: "bhw-roles-application", story: "roles-application", mediaBase: "roles-application-riza-gemini", port: 4321 },
 };
 export function translationLesson(args = process.argv.slice(2)) {
   const index = args.indexOf("--lesson");
   const number = index === -1 ? "1.1.1" : args[index + 1];
-  if (!Object.hasOwn(translatedLessons, number)) throw new Error("Use --lesson 1.1.1, --lesson 1.1.2, --lesson 1.1.3, --lesson 1.1.4, or --lesson 1.1.5");
+  if (!Object.hasOwn(translatedLessons, number)) throw new Error("Use --lesson 1.1.1, --lesson 1.1.2, --lesson 1.1.3, --lesson 1.1.4, --lesson 1.1.5, or --lesson 1.1.6");
   return { number, ...translatedLessons[number] };
 }
 export const lessonConfig = translationLesson();

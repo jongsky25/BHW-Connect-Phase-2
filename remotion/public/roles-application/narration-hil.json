@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "9667d1817ddb616d010aed957567685c5f7b9242cd96e64e9b872db5e03fa8e0",
+  "durationSeconds": 90.854,
+  "beats": [
+    {
+      "zone": "observation",
+      "index": 0,
+      "text": "May tubig nga nagtipon sa tatlo ka lagwerta nga ginbisitahan ni Riza. Tagubilin sang midwife: irekord ang nakita, mamangkot kon may gusto makaistorya ang health team, kag ireport ang aksyon nga kinahanglan pa.",
+      "start_ms": 0,
+      "end_ms": 15640
+    },
+    {
+      "zone": "educate",
+      "index": 1,
+      "text": "Bilang Health Educator, nagapamati anay si Riza sa pamangkot sang pamilya. Nagagamit siya sang aprubado nga mensahe kag nagapamangkot sa health team parte sa sabat nga indi niya sigurado.",
+      "start_ms": 15940,
+      "end_ms": 29740
+    },
+    {
+      "zone": "organize",
+      "index": 2,
+      "text": "Bilang Community Organizer, ginaagda ni Riza ang mga residente, lokal nga lider, kag health staff. Ginapamatian niya ang ila mga panugyan antes magkasugot sa tion kag buluhaton.",
+      "start_ms": 30040,
+      "end_ms": 43320
+    },
+    {
+      "zone": "provider",
+      "index": 3,
+      "text": "May residente nga gusto makaistorya ang health team. Bilang Health Service Provider, ginakumpirma ni Riza ang contact, ginapaathag ang tikang, kag ginarekord ang aktwal nga ginhimo sa sakop sang iya paghanas.",
+      "start_ms": 43620,
+      "end_ms": 59380
+    },
+    {
+      "zone": "handover",
+      "index": 4,
+      "text": "Nagreport si Riza sa midwife: may tubig sa tatlo ka lagwerta; ginrekord ko, nagpamati, kag nakig-angot; kinahanglan ko pa sang giya sa masunod nga tikang. Dapat magtakdo ang rekord kag report.",
+      "start_ms": 59680,
+      "end_ms": 75640
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Isa ka sitwasyon, tatlo ka katungdanan. Sundon ang tagubilin kag ihambal ang imo kaugalingon nga handover. Ipaathag ang mga katungdanan nga imo gingamit. Separado nga obserbahan ang praktikal nga ikasarang.",
+      "start_ms": 75940,
+      "end_ms": 90780
+    }
+  ]
+}
