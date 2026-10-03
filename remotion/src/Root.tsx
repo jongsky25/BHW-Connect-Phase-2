@@ -227,10 +227,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
+      {(["fil", "en", "ceb", "hil"] as const).map((language) => (
         <Composition
           key={`roles-application-${language}`}
-          id={language === "fil" ? "RolesApplicationStoryFil" : "RolesApplicationStoryEn"}
+          id={({ fil: "RolesApplicationStoryFil", en: "RolesApplicationStoryEn", ceb: "RolesApplicationStoryCeb", hil: "RolesApplicationStoryHil" })[language]}
           component={RolesApplicationStory}
           calculateMetadata={calculateRolesApplicationMetadata}
           durationInFrames={ROLES_APPLICATION_FALLBACK_DURATION}

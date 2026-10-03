@@ -196,10 +196,11 @@ describe("lesson 1.1.2 approved translations", () => {
 });
 
 describe.each([
-  { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true, correctIndex: 2 },
-  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2 },
-  { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1 },
-])("lesson $number translated content", ({ folder, firstId, approved, correctIndex }) => {
+  { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true, correctIndex: 2, wrongIndex: 0 },
+  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2, wrongIndex: 0 },
+  { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1, wrongIndex: 0 },
+  { number: "1.1.6", folder: "bhw-roles-application", firstId: "applied-observation", approved: true, correctIndex: 0, wrongIndex: 1 },
+])("lesson $number translated content", ({ folder, firstId, approved, correctIndex, wrongIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {
     it(`offers matching ${language} content to authorized viewers and hides unapproved fixtures`, () => {
@@ -227,7 +228,7 @@ describe.each([
       expect(container.querySelector("audio")).not.toBeInTheDocument();
       expect(lesson.revision.read_sections[5].check?.correct_option_index).toBe(correctIndex);
       const readCheck = translation.read_sections[5].check!;
-      fireEvent.click(screen.getByRole("button", { name: readCheck.options[0] }));
+      fireEvent.click(screen.getByRole("button", { name: readCheck.options[wrongIndex] }));
       expect(screen.getByText(translation.ui["Hindi pa tama. Subukang muli."])).toBeInTheDocument();
       fireEvent.click(screen.getByRole("button", { name: readCheck.options[correctIndex] }));
       expect(screen.getByText(translation.ui["Tama!"])).toBeInTheDocument();
