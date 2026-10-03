@@ -1,0 +1,215 @@
+{
+  "language": "ceb",
+  "label": "Bisaya (Cebuano)",
+  "review_status": "draft",
+  "lesson_key": "bhw-service-provider",
+  "title": "Isip Health Service Provider",
+  "objectives": [
+    "Kon adunay residente nga mangayo og tabang, makapangutana bahin sa iyang panginahanglan, matino ang angay nga health worker ug tin-aw nga sunod nga lakang, magpabilin sulod sa sakop sa pagsasanay, ug mapasabot ang follow-up sumala sa tagubilin sa health team."
+  ],
+  "read_sections": [
+    {
+      "id": "first-contact",
+      "takeaway": "Mahimong ang BHW ang unang duolan; kaabag siya sa midwife ug health team.",
+      "check": null
+    },
+    {
+      "id": "clarify-need",
+      "takeaway": "Paminaw ug klaroha ang panginahanglan sa dili pa mogiya.",
+      "check": null
+    },
+    {
+      "id": "boundaries",
+      "takeaway": "Mga pananglitan lamang ang unang serbisyo; sunda ang pagsasanay, lokal nga patakaran, ug pagdumala.",
+      "check": null
+    },
+    {
+      "id": "guide",
+      "takeaway": "Kumpirmaha kon kinsa ang duolan ug ipasabot ang tin-aw nga sunod nga lakang.",
+      "check": null
+    },
+    {
+      "id": "follow-up",
+      "takeaway": "Kumpirmaha kon unsa, kanus-a, ug kang kinsa moreport sumala sa health team.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Paminaw, pagpabilin sulod sa imong sakop, paggiya, ug pag-follow-up uban sa health team.",
+      "check": {
+        "prompt": "Gipangutana ni Aling Nena si Riza kon unsang tambal ang ihatag sa iyang anak. Dili sakop sa pagsasanay ni Riza ang paghatag nianang tambaga. Unsa ang labing angay niyang buhaton?",
+        "options": [
+          "Mosugyot og tambal base sa kasagarang buhaton sa silingan.",
+          "Moingon nga moadto sa health center ug tapuson na ang panag-istorya.",
+          "Maminaw, mangayo og giya sa health team, mopasabot sa sunod nga lakang, ug mokumpirma sa follow-up."
+        ],
+        "feedback": "Dili mohatag si Riza og tambag nga lapas sa iyang pagsasanay. Tabangan niya si Aling Nena nga makaistorya ang angay nga health worker ug sundon ang tagubilin sa team alang sa follow-up."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "first-contact-slide",
+      "heading": "Si Riza ang unang giduolan",
+      "display": "Miduol si Aling Nena bahin sa panginahanglan sa iyang anak.\nKaabag si Riza sa midwife sulod sa primary care team.\nDili kinahanglan nga tubagon o tambalan niya ang tanan.",
+      "check": null
+    },
+    {
+      "id": "clarify-need-slide",
+      "heading": "Paminaw sa dili pa mogiya",
+      "display": "Nangutana si Riza kon unsang tabang ang gikinahanglan.\nGipaminaw niya ang tubag ug giklaro ang iyang nasabtan.\nWala siya mangagpas bahin sa sakit o pagtambal.",
+      "check": null
+    },
+    {
+      "id": "boundaries-slide",
+      "heading": "Hibaloa ang sakop sa imong buluhaton",
+      "display": "Mga pananglitan: pagpangutana, vital signs, pagrekord, household profile, unang tabang.\nBuhata lamang sumala sa pagsasanay, lokal nga patakaran, ug pagdumala.\nKon lapas sa imong sakop, pangayo og giya.",
+      "check": null
+    },
+    {
+      "id": "guide-slide",
+      "heading": "Isulti ang tin-aw nga sunod nga lakang",
+      "display": "Kumpirmaha ang angay nga health worker o pasilidad.\nIsulti kon kinsa ang makaistorya ug unsaon pag-adto didto.\nSiguroha nga nasabtan ni Aling Nena.",
+      "check": null
+    },
+    {
+      "id": "follow-up-slide",
+      "heading": "Mag-follow-up uban sa health team",
+      "display": "Kumpirmaha ang tagubilin sa health team.\nHibaloa kon unsa ang irekord ug kanus-a mag-follow-up.\nIpaabot ang update ngadto sa hustong tawo.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imong nakat-onan",
+      "display": "Paminaw, pagpabilin sulod sa imong sakop, paggiya, ug pag-follow-up.",
+      "check": {
+        "prompt": "Gipangutana ni Aling Nena si Riza kon unsang tambal ang ihatag sa iyang anak. Dili sakop sa pagsasanay ni Riza ang paghatag nianang tambaga. Unsa ang labing angay niyang buhaton?",
+        "options": [
+          "Mosugyot og tambal base sa kasagarang buhaton sa silingan.",
+          "Moingon nga moadto sa health center ug tapuson na ang panag-istorya.",
+          "Maminaw, mangayo og giya sa health team, mopasabot sa sunod nga lakang, ug mokumpirma sa follow-up."
+        ],
+        "feedback": "Dili mohatag si Riza og tambag nga lapas sa iyang pagsasanay. Tabangan niya si Aling Nena nga makaistorya ang angay nga health worker ug sundon ang tagubilin sa team alang sa follow-up."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, panaghisgot uban sa komunidad, ug paggiya sa residente.",
+      "caption": "Hulagway alang sa pagkat-on; ang mga label sa leksiyon nagpasabot sa kahulogan niini."
+    },
+    {
+      "id": "A05",
+      "alt": "Panginahanglan, angay nga tabang, ug follow-up.",
+      "caption": "Hulagway alang sa pagkat-on; ang mga label sa leksiyon nagpasabot sa kahulogan niini."
+    },
+    {
+      "id": "service-provider-story",
+      "alt": "Miduol si Aling Nena kang Riza bahin sa iyang anak. Nangutana ug naminaw si Riza, nagpabilin sulod sa sakop sa iyang pagsasanay, nangayo og giya sa midwife kon dili sigurado, gipasabot ang sunod nga lakang, ug nag-follow-up sumala sa tagubilin sa health team.",
+      "caption": "Hinimo nga pananglitan nila Riza ug Aling Nena. Ang animadong video adunay salaysay ug mga caption sa Bisaya (Cebuano)."
+    }
+  ],
+  "story_art": {
+    "alt": "Maminaw si BHW Riza kang Aling Nena ug mogiya kaniya bahin sa angay nga tabang gikan sa health team.",
+    "caption": "Pagpaminaw ug paggiya kang Aling Nena"
+  },
+  "story_beats": [
+    {
+      "id": "first-contact",
+      "text": "Miduol si Aling Nena kang Riza bahin sa iyang anak. Isip BHW, kaabag si Riza sa midwife sulod sa health team.",
+      "title": "Unang giduolan",
+      "detail": "Paminaw sa panginahanglan."
+    },
+    {
+      "id": "listen",
+      "text": "Nangutana si Riza kon unsang tabang ang gikinahanglan. Gipaminaw niya si Aling Nena ug giklaro ang iyang nasabtan, imbes mangagpas kon unsa ang sakit.",
+      "title": "Paminaw una",
+      "detail": "Pangutana · Paminaw · Klaroha"
+    },
+    {
+      "id": "scope",
+      "text": "Buhaton lamang ni Riza ang sakop sa iyang pagsasanay, lokal nga patakaran, ug pagdumala. Kon dili siya sigurado, mangayo siya og giya sa midwife.",
+      "title": "Hibaloa ang imong sakop",
+      "detail": "Kon dili sigurado, pangayo og giya."
+    },
+    {
+      "id": "guide",
+      "text": "Gikumpirma niya ang angay nga health worker o pasilidad. Gipasabot niya kon kinsa ang makaistorya ug unsaon pag-adto didto.",
+      "title": "Tin-aw nga sunod nga lakang",
+      "detail": "Kinsa ang makaistorya? Unsaon pag-adto?"
+    },
+    {
+      "id": "follow-up",
+      "text": "Sumala sa tagubilin sa health team, gikumpirma ni Riza kon unsa ang irekord, kanus-a mag-follow-up, ug kang kinsa moreport.",
+      "title": "Mag-follow-up",
+      "detail": "Unsa · Kanus-a · Kang kinsa"
+    },
+    {
+      "id": "summary",
+      "text": "Kon mangayo si Aling Nena og tambag sa tambal nga lapas sa pagsasanay ni Riza, maminaw siya, mangayo og giya, mopasabot sa sunod nga lakang, ug mag-follow-up.",
+      "title": "Paminaw · Pangayo og giya",
+      "detail": "Ipasabot ang lakang · Mag-follow-up"
+    }
+  ],
+  "summary_steps": [
+    "Paminaw",
+    "Pangayo og giya",
+    "Ipasabot",
+    "Mag-follow-up"
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanong adunay salaysay",
+    "Buong screen": "Tibuok screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Gibanabanang 3–7 ka minuto alang sa kaugalingong pagtuon; lahi ang pagpraktis uban sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animadong sugilanon nga adunay salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pislita ang Play aron madungog ang salaysay sa piniling pinulongan.",
+    "Pumili ng sagot": "Pagpili og tubag",
+    "Tama!": "Sakto!",
+    "Hindi pa tama. Subukang muli.": "Dili pa sakto. Sulayi pag-usab.",
+    "Nakaraan": "Miaging bahin",
+    "Susunod": "Sunod nga bahin",
+    "Puwesto sa aralin": "Bahin sa leksiyon",
+    "Uri ng nilalaman": "Matang sa sulod",
+    "Pakinggan ang bahaging ito": "Paminawa kining bahina",
+    "Pakinggan": "Paminawa",
+    "I-pause": "Hunonga kadiyot",
+    "Bilis": "Kapaspas",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Dili mapatukar ang audio. Basaha una ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Tubaga una ang pangutana aron mapaminaw ang audio nga adunay sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo na nimong markahan nga nahuman ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Humanon ang mga bahin ug tubagon ang matag pangutana sa Basaha o Mga slide. Dili kinahanglan nga sakto ang unang tubag. Kon i-reload, tubaga pag-usab ang mga pangutana.",
+    "Natapos": "Nahuman",
+    "Markahang tapos ang aralin": "Markahi nga nahuman ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Nahuman nimo ang leksiyon. Na-save ang imong progreso.",
+    "Susunod na aralin →": "Sunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sa mga leksiyon →",
+    "Nakaraang aralin": "Miaging leksiyon",
+    "Susunod na aralin": "Sunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkahuman sa leksiyon dili pamatuod sa praktikal nga kahanas.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala ma-save ang imong puwesto. Sulayi pag-usab.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala ma-save ang pagkahuman. Sulayi pag-usab o i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Isira",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft alang sa pagsusi sa hubad ug paglitok.",
+    "Buong screen na aralin": "Leksiyon sa tibuok screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sa leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda aron mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog aron mabasa ang sulod.",
+    "Subukang i-save muli": "Sulayi pag-save pag-usab",
+    "Wika ng aralin": "Pinulongan sa leksiyon"
+  }
+}

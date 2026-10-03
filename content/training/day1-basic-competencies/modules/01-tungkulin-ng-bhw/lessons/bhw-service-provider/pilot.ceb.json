@@ -1,0 +1,547 @@
+{
+  "language": "ceb",
+  "label": "Bisaya (Cebuano)",
+  "review_status": "draft",
+  "lesson_key": "bhw-service-provider",
+  "title": "Isip Health Service Provider",
+  "objectives": [
+    "Kon adunay residente nga mangayo og tabang, makapangutana bahin sa iyang panginahanglan, matino ang angay nga health worker ug tin-aw nga sunod nga lakang, magpabilin sulod sa sakop sa pagsasanay, ug mapasabot ang follow-up sumala sa tagubilin sa health team."
+  ],
+  "read_sections": [
+    {
+      "id": "first-contact",
+      "takeaway": "Mahimong ang BHW ang unang duolan; kaabag siya sa midwife ug health team.",
+      "check": null,
+      "heading": "Si Riza ang unang giduolan",
+      "body": "Miduol si Aling Nena kang BHW Riza. Gusto niyang mahibaloan kon kinsa ang iyang makaistorya bahin sa panginahanglan sa iyang anak. Isip kabahin sa primary care team sa siyudad o munisipyo, kaabag si Riza sa midwife sa barangay. Mahimong siya ang unang duolan ni Aling Nena, apan dili kinahanglan nga tubagon o tambalan niya ang tanan."
+    },
+    {
+      "id": "clarify-need",
+      "takeaway": "Paminaw ug klaroha ang panginahanglan sa dili pa mogiya.",
+      "check": null,
+      "heading": "Paminaw sa dili pa mogiya",
+      "body": "Nangutana si Riza: “Unsa nga tabang ang inyong gikinahanglan, ug nakig-istorya na ba kamo sa health worker?” Gihatagan niya og panahon si Aling Nena nga mopasabot ug gisubli ang iyang nasabtan. Wala siya mangagpas kon unsa ang sakit o ang gikinahanglan nga pagtambal. Ang tin-aw nga panginahanglan makatabang sa health team sa paghatag og angay nga giya."
+    },
+    {
+      "id": "boundaries",
+      "takeaway": "Mga pananglitan lamang ang unang serbisyo; sunda ang pagsasanay, lokal nga patakaran, ug pagdumala.",
+      "check": null,
+      "heading": "Hibaloa ang sakop sa imong buluhaton",
+      "body": "Mga pananglitan sa unang serbisyo ang pagpangutana sa residente, pagsukod sa vital signs, pagrekord, paghimo og household profile, ug unang tabang. Buhata lamang ang sakop sa imong pagsasanay, lokal nga patakaran, ug gikinahanglang pagdumala. Dili kini nga leksiyon motudlo sa pagsukod, unang tabang, o pagtambal. Kon lapas kini sa imong sakop o dili ka sigurado, pangayo og giya sa midwife o health team."
+    },
+    {
+      "id": "guide",
+      "takeaway": "Kumpirmaha kon kinsa ang duolan ug ipasabot ang tin-aw nga sunod nga lakang.",
+      "check": null,
+      "heading": "Isulti ang tin-aw nga sunod nga lakang",
+      "body": "Gikumpirma ni Riza kon unsang health worker o pasilidad ang angay duolan sumala sa lokal nga kahikayan. Gipasabot niya kang Aling Nena kon kinsa ang iyang makaistorya ug unsaon pag-adto didto. Mahimo niyang isulti: “Mangutana ako sa health team kon kinsa ang inyong makaistorya ug unsaon ninyo pag-adto didto.” Gisiguro niya nga nasabtan ni Aling Nena ang sunod nga lakang. Sunda ang lokal nga referral ug emergency procedures kon angay; dili pareho ang agianan sa tanang lugar o sitwasyon."
+    },
+    {
+      "id": "follow-up",
+      "takeaway": "Kumpirmaha kon unsa, kanus-a, ug kang kinsa moreport sumala sa health team.",
+      "check": null,
+      "heading": "Mag-follow-up uban sa health team",
+      "body": "Dili matapos ang pagtabang sa pagtudlo kon asa moadto. Sumala sa tagubilin sa health team, gikumpirma ni Riza kon unsa ang angay bantayan o irekord, kanus-a siya mag-follow-up, ug kang kinsa siya moreport. Wala siya mag-imbento og resulta o mosaad nga wala nay kinahanglan buhaton. Hisgotan sa sunod nga leksiyon ang piho nga mga rekord ug form."
+    },
+    {
+      "id": "check",
+      "takeaway": "Paminaw, pagpabilin sulod sa imong sakop, paggiya, ug pag-follow-up uban sa health team.",
+      "check": {
+        "prompt": "Gipangutana ni Aling Nena si Riza kon unsang tambal ang ihatag sa iyang anak. Dili sakop sa pagsasanay ni Riza ang paghatag nianang tambaga. Unsa ang labing angay niyang buhaton?",
+        "options": [
+          "Mosugyot og tambal base sa kasagarang buhaton sa silingan.",
+          "Moingon nga moadto sa health center ug tapuson na ang panag-istorya.",
+          "Maminaw, mangayo og giya sa health team, mopasabot sa sunod nga lakang, ug mokumpirma sa follow-up."
+        ],
+        "feedback": "Dili mohatag si Riza og tambag nga lapas sa iyang pagsasanay. Tabangan niya si Aling Nena nga makaistorya ang angay nga health worker ug sundon ang tagubilin sa team alang sa follow-up."
+      },
+      "heading": "Gamita ang imong nakat-onan",
+      "body": "Gipangutana ni Aling Nena si Riza kon unsang tambal ang ihatag sa iyang anak. Dili sakop sa pagsasanay ni Riza ang paghatag nianang tambaga. Unsa ang labing angay niyang buhaton?"
+    }
+  ],
+  "slides": [
+    {
+      "id": "first-contact-slide",
+      "heading": "Si Riza ang unang giduolan",
+      "display": "Miduol si Aling Nena bahin sa panginahanglan sa iyang anak.\nKaabag si Riza sa midwife sulod sa primary care team.\nDili kinahanglan nga tubagon o tambalan niya ang tanan.",
+      "check": null
+    },
+    {
+      "id": "clarify-need-slide",
+      "heading": "Paminaw sa dili pa mogiya",
+      "display": "Nangutana si Riza kon unsang tabang ang gikinahanglan.\nGipaminaw niya ang tubag ug giklaro ang iyang nasabtan.\nWala siya mangagpas bahin sa sakit o pagtambal.",
+      "check": null
+    },
+    {
+      "id": "boundaries-slide",
+      "heading": "Hibaloa ang sakop sa imong buluhaton",
+      "display": "Mga pananglitan: pagpangutana, vital signs, pagrekord, household profile, unang tabang.\nBuhata lamang sumala sa pagsasanay, lokal nga patakaran, ug pagdumala.\nKon lapas sa imong sakop, pangayo og giya.",
+      "check": null
+    },
+    {
+      "id": "guide-slide",
+      "heading": "Isulti ang tin-aw nga sunod nga lakang",
+      "display": "Kumpirmaha ang angay nga health worker o pasilidad.\nIsulti kon kinsa ang makaistorya ug unsaon pag-adto didto.\nSiguroha nga nasabtan ni Aling Nena.",
+      "check": null
+    },
+    {
+      "id": "follow-up-slide",
+      "heading": "Mag-follow-up uban sa health team",
+      "display": "Kumpirmaha ang tagubilin sa health team.\nHibaloa kon unsa ang irekord ug kanus-a mag-follow-up.\nIpaabot ang update ngadto sa hustong tawo.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imong nakat-onan",
+      "display": "Paminaw, pagpabilin sulod sa imong sakop, paggiya, ug pag-follow-up.",
+      "check": {
+        "prompt": "Gipangutana ni Aling Nena si Riza kon unsang tambal ang ihatag sa iyang anak. Dili sakop sa pagsasanay ni Riza ang paghatag nianang tambaga. Unsa ang labing angay niyang buhaton?",
+        "options": [
+          "Mosugyot og tambal base sa kasagarang buhaton sa silingan.",
+          "Moingon nga moadto sa health center ug tapuson na ang panag-istorya.",
+          "Maminaw, mangayo og giya sa health team, mopasabot sa sunod nga lakang, ug mokumpirma sa follow-up."
+        ],
+        "feedback": "Dili mohatag si Riza og tambag nga lapas sa iyang pagsasanay. Tabangan niya si Aling Nena nga makaistorya ang angay nga health worker ug sundon ang tagubilin sa team alang sa follow-up."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, panaghisgot uban sa komunidad, ug paggiya sa residente.",
+      "caption": "Hulagway alang sa pagkat-on; ang mga label sa leksiyon nagpasabot sa kahulogan niini."
+    },
+    {
+      "id": "A05",
+      "alt": "Panginahanglan, angay nga tabang, ug follow-up.",
+      "caption": "Hulagway alang sa pagkat-on; ang mga label sa leksiyon nagpasabot sa kahulogan niini."
+    },
+    {
+      "id": "service-provider-story",
+      "alt": "Miduol si Aling Nena kang Riza bahin sa iyang anak. Nangutana ug naminaw si Riza, nagpabilin sulod sa sakop sa iyang pagsasanay, nangayo og giya sa midwife kon dili sigurado, gipasabot ang sunod nga lakang, ug nag-follow-up sumala sa tagubilin sa health team.",
+      "caption": "Hinimo nga pananglitan nila Riza ug Aling Nena. Ang animadong video adunay salaysay ug mga caption sa Bisaya (Cebuano)."
+    }
+  ],
+  "story_art": {
+    "alt": "Maminaw si BHW Riza kang Aling Nena ug mogiya kaniya bahin sa angay nga tabang gikan sa health team.",
+    "caption": "Pagpaminaw ug paggiya kang Aling Nena"
+  },
+  "story_beats": [
+    {
+      "id": "first-contact",
+      "text": "Miduol si Aling Nena kang Riza bahin sa iyang anak. Isip BHW, kaabag si Riza sa midwife sulod sa health team.",
+      "title": "Unang giduolan",
+      "detail": "Paminaw sa panginahanglan."
+    },
+    {
+      "id": "listen",
+      "text": "Nangutana si Riza kon unsang tabang ang gikinahanglan. Gipaminaw niya si Aling Nena ug giklaro ang iyang nasabtan, imbes mangagpas kon unsa ang sakit.",
+      "title": "Paminaw una",
+      "detail": "Pangutana · Paminaw · Klaroha"
+    },
+    {
+      "id": "scope",
+      "text": "Buhaton lamang ni Riza ang sakop sa iyang pagsasanay, lokal nga patakaran, ug pagdumala. Kon dili siya sigurado, mangayo siya og giya sa midwife.",
+      "title": "Hibaloa ang imong sakop",
+      "detail": "Kon dili sigurado, pangayo og giya."
+    },
+    {
+      "id": "guide",
+      "text": "Gikumpirma niya ang angay nga health worker o pasilidad. Gipasabot niya kon kinsa ang makaistorya ug unsaon pag-adto didto.",
+      "title": "Tin-aw nga sunod nga lakang",
+      "detail": "Kinsa ang makaistorya? Unsaon pag-adto?"
+    },
+    {
+      "id": "follow-up",
+      "text": "Sumala sa tagubilin sa health team, gikumpirma ni Riza kon unsa ang irekord, kanus-a mag-follow-up, ug kang kinsa moreport.",
+      "title": "Mag-follow-up",
+      "detail": "Unsa · Kanus-a · Kang kinsa"
+    },
+    {
+      "id": "summary",
+      "text": "Kon mangayo si Aling Nena og tambag sa tambal nga lapas sa pagsasanay ni Riza, maminaw siya, mangayo og giya, mopasabot sa sunod nga lakang, ug mag-follow-up.",
+      "title": "Paminaw · Pangayo og giya",
+      "detail": "Ipasabot ang lakang · Mag-follow-up"
+    }
+  ],
+  "summary_steps": [
+    "Paminaw",
+    "Pangayo og giya",
+    "Ipasabot",
+    "Mag-follow-up"
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanong adunay salaysay",
+    "Buong screen": "Tibuok screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Gibanabanang 3–7 ka minuto alang sa kaugalingong pagtuon; lahi ang pagpraktis uban sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animadong sugilanon nga adunay salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pislita ang Play aron madungog ang salaysay sa piniling pinulongan.",
+    "Pumili ng sagot": "Pagpili og tubag",
+    "Tama!": "Sakto!",
+    "Hindi pa tama. Subukang muli.": "Dili pa sakto. Sulayi pag-usab.",
+    "Nakaraan": "Miaging bahin",
+    "Susunod": "Sunod nga bahin",
+    "Puwesto sa aralin": "Bahin sa leksiyon",
+    "Uri ng nilalaman": "Matang sa sulod",
+    "Pakinggan ang bahaging ito": "Paminawa kining bahina",
+    "Pakinggan": "Paminawa",
+    "I-pause": "Hunonga kadiyot",
+    "Bilis": "Kapaspas",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Dili mapatukar ang audio. Basaha una ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Tubaga una ang pangutana aron mapaminaw ang audio nga adunay sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo na nimong markahan nga nahuman ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Humanon ang mga bahin ug tubagon ang matag pangutana sa Basaha o Mga slide. Dili kinahanglan nga sakto ang unang tubag. Kon i-reload, tubaga pag-usab ang mga pangutana.",
+    "Natapos": "Nahuman",
+    "Markahang tapos ang aralin": "Markahi nga nahuman ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Nahuman nimo ang leksiyon. Na-save ang imong progreso.",
+    "Susunod na aralin →": "Sunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sa mga leksiyon →",
+    "Nakaraang aralin": "Miaging leksiyon",
+    "Susunod na aralin": "Sunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkahuman sa leksiyon dili pamatuod sa praktikal nga kahanas.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala ma-save ang imong puwesto. Sulayi pag-usab.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala ma-save ang pagkahuman. Sulayi pag-usab o i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Isira",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft alang sa pagsusi sa hubad ug paglitok.",
+    "Buong screen na aralin": "Leksiyon sa tibuok screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sa leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda aron mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog aron mabasa ang sulod.",
+    "Subukang i-save muli": "Sulayi pag-save pag-usab",
+    "Wika ng aralin": "Pinulongan sa leksiyon"
+  },
+  "source_text": "[\"bhw-service-provider\",\"Bilang Health Service Provider\",\"As a Health Service Provider\",[\"Sa residenteng humihingi ng tulong, matanong ang pangangailangan, maituro ang angkop na health worker at malinaw na susunod na hakbang, manatili sa loob ng pagsasanay, at masabi ang follow-up ayon sa tagubilin ng health team.\"],[\"Given a resident seeking help, ask about the need, identify an appropriate health worker and clear next step, stay within training, and state the follow-up directed by the health team.\"],[[\"first-contact\",[\"m1.role.provider\",\"m1.provider.firstcontact\"],\"Si Riza ang unang nilapitan\",\"Riza is the first person approached\",\"Lumapit si Aling Nena kay BHW Riza. Gusto niyang malaman kung sino ang makakausap tungkol sa pangangailangan ng anak niya. Bilang bahagi ng primary care team ng lungsod o munisipyo, katuwang si Riza ng midwife sa barangay. Maaari siyang maging unang contact ni Aling Nena, ngunit hindi niya kailangang sagutin o gamutin ang lahat.\",\"Aling Nena approaches BHW Riza. She wants to know whom to speak with about her child's needs. As part of the city or municipal primary care team, Riza assists the barangay midwife. She may be Aling Nena's first contact, but she does not have to answer every question or provide every treatment.\",\"Maaaring unang lapitan ang BHW; katuwang siya ng midwife at health team.\",\"A BHW may be the first contact and works with the midwife and health team.\",null],[\"clarify-need\",[\"m1.provider.firstcontact\"],\"Makinig bago gumabay\",\"Listen before guiding\",\"Tinanong ni Riza: “Ano po ang kailangan ninyong tulong, at may nakausap na po ba kayong health worker?” Hinayaan niyang magpaliwanag si Aling Nena at inulit ang naunawaan niya. Hindi siya nanghula ng sakit o ng kailangan nitong paggamot. Ang malinaw na pangangailangan ang tutulong sa health team na magbigay ng angkop na gabay.\",\"Riza asks, “What help do you need, and have you spoken with a health worker?” She gives Aling Nena time to explain and repeats what she understood. She does not guess at an illness or its treatment. Understanding the need helps the health team provide appropriate guidance.\",\"Makinig at linawin ang pangangailangan bago gumabay.\",\"Listen and clarify the need before guiding someone.\",null],[\"boundaries\",[\"m1.provider.initialservices\"],\"Alamin ang saklaw ng sariling gawain\",\"Know the limits of your role\",\"Kabilang sa mga halimbawa ng paunang serbisyo ang pakikipanayam, pagsukat ng vital signs, pagtatala, paggawa ng household profile, at paunang lunas. Gawin lamang ang saklaw ng iyong pagsasanay, lokal na patakaran, at kinakailangang pangangasiwa. Hindi itinuturo ng araling ito ang pagsukat, paunang lunas, o paggamot. Kung lampas sa saklaw o hindi ka tiyak, humingi ng gabay sa midwife o health team.\",\"Examples of initial services include interviewing, taking vital signs, recording, preparing a household profile, and first aid. Perform only tasks covered by your training, local policy, and required supervision. This lesson does not teach measurement, first aid, or treatment. If a request is beyond your scope or you are unsure, seek guidance from the midwife or health team.\",\"Mga halimbawa lamang ang paunang serbisyo; sundin ang pagsasanay, lokal na patakaran, at pangangasiwa.\",\"Initial services are examples; follow training, local policy, and supervision.\",null],[\"guide\",[\"m1.provider.guide\"],\"Sabihin ang malinaw na susunod na hakbang\",\"Give a clear next step\",\"Kinumpirma ni Riza kung aling health worker o pasilidad ang angkop lapitan ayon sa lokal na kaayusan. Ipinaliwanag niya kay Aling Nena kung sino ang kakausapin at paano makakarating doon. Maaari niyang sabihin: “Titingnan ko po sa health team kung sino ang maaari ninyong makausap at kung paano kayo makakapunta.” Tiniyak niyang naunawaan ni Aling Nena ang susunod na hakbang. Sundin ang lokal na referral at emergency procedures kapag naaangkop; hindi iisa ang ruta sa lahat ng lugar o sitwasyon.\",\"Riza confirms which health worker or facility Aling Nena should approach under local arrangements. She explains whom to contact and how to get there. She might say, “I will check with the health team who can speak with you and how you can reach them.” She checks that Aling Nena understands the next step. Follow local referral and emergency procedures when applicable; there is no single route for every place or situation.\",\"Kumpirmahin kung sino ang lalapitan at ipaliwanag ang malinaw na susunod na hakbang.\",\"Confirm whom to approach and explain a clear next step.\",null],[\"follow-up\",[\"m1.provider.monitoring\"],\"Mag-follow-up kasama ang health team\",\"Follow through with the health team\",\"Hindi nagtatapos ang pagtulong sa pagturo kung saan pupunta. Ayon sa tagubilin ng health team, kinumpirma ni Riza kung ano ang dapat subaybayan o itala, kailan siya magfo-follow-up, at kanino siya mag-uulat. Hindi siya nag-imbento ng resulta o nangako na wala nang kailangang gawin. Tatalakayin sa susunod na aralin ang mga partikular na talaan at form.\",\"Helping does not end with directions. Following the health team's instructions, Riza confirms what to monitor or record, when to follow up, and whom to update. She does not invent an outcome or promise that nothing further is needed. The next lesson covers specific records and forms.\",\"Kumpirmahin kung ano, kailan, at kanino mag-uulat ayon sa health team.\",\"Confirm what to report, when, and to whom under the health team’s instructions.\",null],[\"check\",[\"m1.role.provider\",\"m1.provider.firstcontact\",\"m1.provider.guide\",\"m1.provider.initialservices\",\"m1.provider.monitoring\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Tinanong ni Aling Nena si Riza kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Riza ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?\",\"Aling Nena asks Riza what medicine to give her child. Giving that advice is outside Riza's training. What is her best response?\",\"Makinig, manatili sa saklaw, gumabay, at mag-follow-up kasama ang health team.\",\"Listen, stay within scope, guide, and follow through with the health team.\",[\"Tinanong ni Aling Nena si Riza kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Riza ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?\",\"Aling Nena asks Riza what medicine to give her child. Giving that advice is outside Riza's training. What is her best response?\",[[\"Magmungkahi ng gamot batay sa karaniwang ginagawa ng kapitbahay.\",\"Suggest a medicine based on what neighbors usually do.\"],[\"Sabihing pumunta sa health center at tapusin na ang usapan.\",\"Tell her to go to the health center and end the conversation.\"],[\"Makinig, humingi ng gabay sa health team, ipaliwanag ang susunod na hakbang, at kumpirmahin ang follow-up.\",\"Listen, seek health-team guidance, explain the next step, and confirm the follow-up.\"]],2,\"Hindi nagbibigay si Riza ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.\",\"Riza does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions.\"]]],[[\"first-contact-slide\",[\"m1.role.provider\",\"m1.provider.firstcontact\"],\"Si Riza ang unang nilapitan\",\"Riza is the first contact\",\"Lumapit si Aling Nena tungkol sa pangangailangan ng anak niya.\\nKatuwang si Riza ng midwife sa primary care team.\\nHindi niya kailangang sagutin o gamutin ang lahat.\",\"Aling Nena asks for help for her child.\\nRiza works with the midwife in the primary care team.\\nShe need not answer or treat everything.\",null],[\"clarify-need-slide\",[\"m1.provider.firstcontact\"],\"Makinig bago gumabay\",\"Listen before guiding\",\"Tinanong ni Riza kung anong tulong ang kailangan.\\nPinakinggan niya ang sagot at nilinaw ang naunawaan.\\nHindi siya nanghula ng sakit o paggamot.\",\"Riza asks what help is needed.\\nShe listens and checks what she understood.\\nShe does not guess at illness or treatment.\",null],[\"boundaries-slide\",[\"m1.provider.initialservices\"],\"Alamin ang saklaw\",\"Know your limits\",\"Mga halimbawa: pakikipanayam, vital signs, pagtatala, household profile, paunang lunas.\\nGawin lamang ayon sa pagsasanay, lokal na patakaran, at pangangasiwa.\\nKapag lampas sa saklaw, humingi ng gabay.\",\"Examples: interviewing, vital signs, recording, household profiles, first aid.\\nAct only within training, local policy, and supervision.\\nWhen beyond scope, seek guidance.\",null],[\"guide-slide\",[\"m1.provider.guide\"],\"Sabihin ang susunod na hakbang\",\"Explain the next step\",\"Kumpirmahin ang angkop na health worker o pasilidad.\\nSabihin kung sino ang kakausapin at paano makakarating.\\nTiyaking naunawaan ni Aling Nena.\",\"Confirm the appropriate health worker or facility.\\nExplain whom to contact and how to reach them.\\nCheck that Aling Nena understands.\",null],[\"follow-up-slide\",[\"m1.provider.monitoring\"],\"Mag-follow-up kasama ang team\",\"Follow through with the team\",\"Kumpirmahin ang tagubilin ng health team.\\nAlamin kung ano ang itatala at kailan magfo-follow-up.\\nIpaabot ang update sa tamang tao.\",\"Confirm the health team’s instruction.\\nKnow what to record and when to follow up.\\nUpdate the right person.\",null],[\"check-slide\",[\"m1.role.provider\",\"m1.provider.firstcontact\",\"m1.provider.guide\",\"m1.provider.initialservices\",\"m1.provider.monitoring\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Makinig, manatili sa saklaw, gumabay, at mag-follow-up.\",\"Listen, stay within scope, guide, and follow through.\",[\"Tinanong ni Aling Nena si Riza kung anong gamot ang ibibigay sa anak niya. Hindi saklaw ng pagsasanay ni Riza ang pagbibigay ng payong iyon. Ano ang pinakamainam niyang gawin?\",\"Aling Nena asks Riza what medicine to give her child. Giving that advice is outside Riza's training. What is her best response?\",[[\"Magmungkahi ng gamot batay sa karaniwang ginagawa ng kapitbahay.\",\"Suggest a medicine based on what neighbors usually do.\"],[\"Sabihing pumunta sa health center at tapusin na ang usapan.\",\"Tell her to go to the health center and end the conversation.\"],[\"Makinig, humingi ng gabay sa health team, ipaliwanag ang susunod na hakbang, at kumpirmahin ang follow-up.\",\"Listen, seek health-team guidance, explain the next step, and confirm the follow-up.\"]],2,\"Hindi nagbibigay si Riza ng payong lampas sa kanyang pagsasanay. Tinutulungan niya si Aling Nena na makausap ang angkop na health worker at sinusunod ang tagubilin ng team sa follow-up.\",\"Riza does not give advice beyond her training. She helps Aling Nena reach the appropriate health worker and follows the team’s follow-up instructions.\"]]]]",
+  "narration": {
+    "first-contact": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/first-contact.ceb.d7d42780c308.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "d7d42780c3083b99b485a7e4ebd63c4ece8a9b41561d1fcba0903d24b2304065",
+      "sha256": "8632e37cd5784a571d95be83961cf51dbdbeffd5e7821f725159580460cddfa9",
+      "duration_seconds": 38.89632653061224,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Si Riza ang unang giduolan",
+          "start_ms": 0,
+          "end_ms": 2840
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Miduol si Aling Nena kang BHW Riza.",
+          "start_ms": 3140,
+          "end_ms": 7100
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Gusto niyang mahibaloan kon kinsa ang iyang makaistorya bahin sa panginahanglan sa iyang anak.",
+          "start_ms": 7400,
+          "end_ms": 14120
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Isip kabahin sa primary care team sa siyudad o munisipyo, kaabag si Riza sa midwife sa barangay.",
+          "start_ms": 14420,
+          "end_ms": 22380
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Mahimong siya ang unang duolan ni Aling Nena, apan dili kinahanglan nga tubagon o tambalan niya ang tanan.",
+          "start_ms": 22680,
+          "end_ms": 31680
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Mahimong ang BHW ang unang duolan; kaabag siya sa midwife ug health team.",
+          "start_ms": 31980,
+          "end_ms": 38820
+        }
+      ]
+    },
+    "clarify-need": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/clarify-need.ceb.220688519dc1.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "220688519dc1091da480cfbde8e6d506807f61521057aeb1fb8727b53f08b450",
+      "sha256": "3e9dff926e441d600b3d7fc659abb2367b97bbd58687ef472a1035cee4035464",
+      "duration_seconds": 33.72408163265306,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Paminaw sa dili pa mogiya",
+          "start_ms": 0,
+          "end_ms": 2080
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Nangutana si Riza: “Unsa nga tabang ang inyong gikinahanglan, ug nakig-istorya na ba kamo sa health worker?”",
+          "start_ms": 2380,
+          "end_ms": 9980
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Gihatagan niya og panahon si Aling Nena nga mopasabot ug gisubli ang iyang nasabtan.",
+          "start_ms": 10280,
+          "end_ms": 16680
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Wala siya mangagpas kon unsa ang sakit o ang gikinahanglan nga pagtambal.",
+          "start_ms": 16980,
+          "end_ms": 22740
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ang tin-aw nga panginahanglan makatabang sa health team sa paghatag og angay nga giya.",
+          "start_ms": 23040,
+          "end_ms": 29520
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Paminaw ug klaroha ang panginahanglan sa dili pa mogiya.",
+          "start_ms": 29820,
+          "end_ms": 33660
+        }
+      ]
+    },
+    "boundaries": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/boundaries.ceb.bc4be4576b01.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "bc4be4576b015ed9b3b9e5d1a092d315bd195e147e77b0cfd31858fc033c5930",
+      "sha256": "19a2158dc19264ff5e4b2f6260743b39ce3197f377ca9fb23bf0ff36e5437902",
+      "duration_seconds": 43.12816326530612,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Hibaloa ang sakop sa imong buluhaton",
+          "start_ms": 0,
+          "end_ms": 2960
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Mga pananglitan sa unang serbisyo ang pagpangutana sa residente, pagsukod sa vital signs, pagrekord, paghimo og household profile, ug unang tabang.",
+          "start_ms": 3260,
+          "end_ms": 14540
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Buhata lamang ang sakop sa imong pagsasanay, lokal nga patakaran, ug gikinahanglang pagdumala.",
+          "start_ms": 14840,
+          "end_ms": 21960
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Dili kini nga leksiyon motudlo sa pagsukod, unang tabang, o pagtambal.",
+          "start_ms": 22260,
+          "end_ms": 28060
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Kon lapas kini sa imong sakop o dili ka sigurado, pangayo og giya sa midwife o health team.",
+          "start_ms": 28360,
+          "end_ms": 35120
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Mga pananglitan lamang ang unang serbisyo; sunda ang pagsasanay, lokal nga patakaran, ug pagdumala.",
+          "start_ms": 35420,
+          "end_ms": 43060
+        }
+      ]
+    },
+    "guide": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/guide.ceb.006a314db19a.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "006a314db19a8feb7e58d3fd304814031b612c9f1f57aa6a7a85566e2955f83d",
+      "sha256": "5352c80d5bf1363b5c1b7df67b5adf7b604eee6351f1e7e572968d09c9032e09",
+      "duration_seconds": 46.65469387755102,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Isulti ang tin-aw nga sunod nga lakang",
+          "start_ms": 0,
+          "end_ms": 3760
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gikumpirma ni Riza kon unsang health worker o pasilidad ang angay duolan sumala sa lokal nga kahikayan.",
+          "start_ms": 4060,
+          "end_ms": 11060
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Gipasabot niya kang Aling Nena kon kinsa ang iyang makaistorya ug unsaon pag-adto didto.",
+          "start_ms": 11360,
+          "end_ms": 18360
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Mahimo niyang isulti: “Mangutana ako sa health team kon kinsa ang inyong makaistorya ug unsaon ninyo pag-adto didto.”",
+          "start_ms": 18660,
+          "end_ms": 27420
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Gisiguro niya nga nasabtan ni Aling Nena ang sunod nga lakang.",
+          "start_ms": 27720,
+          "end_ms": 31520
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sunda ang lokal nga referral ug emergency procedures kon angay; dili pareho ang agianan sa tanang lugar o sitwasyon.",
+          "start_ms": 31820,
+          "end_ms": 40580
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Kumpirmaha kon kinsa ang duolan ug ipasabot ang tin-aw nga sunod nga lakang.",
+          "start_ms": 40880,
+          "end_ms": 46600
+        }
+      ]
+    },
+    "follow-up": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/follow-up.ceb.9e80d3c47cd9.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "9e80d3c47cd944ac71b77a4c44fd5615fddd0c8076fb5276713691f3e8dd669e",
+      "sha256": "6fec37375a112e2d882bf339759cbe1e36b5ac38b646ddf889322a27ada25fa1",
+      "duration_seconds": 37.64244897959183,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Mag-follow-up uban sa health team",
+          "start_ms": 0,
+          "end_ms": 2920
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Dili matapos ang pagtabang sa pagtudlo kon asa moadto.",
+          "start_ms": 3220,
+          "end_ms": 7780
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sumala sa tagubilin sa health team, gikumpirma ni Riza kon unsa ang angay bantayan o irekord, kanus-a siya mag-follow-up, ug kang kinsa siya moreport.",
+          "start_ms": 8080,
+          "end_ms": 19200
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Wala siya mag-imbento og resulta o mosaad nga wala nay kinahanglan buhaton.",
+          "start_ms": 19500,
+          "end_ms": 25340
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Hisgotan sa sunod nga leksiyon ang piho nga mga rekord ug form.",
+          "start_ms": 25640,
+          "end_ms": 30480
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Kumpirmaha kon unsa, kanus-a, ug kang kinsa moreport sumala sa health team.",
+          "start_ms": 30780,
+          "end_ms": 37580
+        }
+      ]
+    },
+    "check": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-service-provider/check.ceb.edcd06a1e419.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "edcd06a1e419c175980d77415c48f4b41ec4d9528504bf190a3069adae0dddb5",
+      "sha256": "ff4d83b9958a184cf828b4df47d5f3b8b72008339f35fe5964f262717be3bb47",
+      "duration_seconds": 25.33877551020408,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Gamita ang imong nakat-onan",
+          "start_ms": 0,
+          "end_ms": 2360
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gipangutana ni Aling Nena si Riza kon unsang tambal ang ihatag sa iyang anak.",
+          "start_ms": 2660,
+          "end_ms": 8820
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Dili sakop sa pagsasanay ni Riza ang paghatag nianang tambaga.",
+          "start_ms": 9120,
+          "end_ms": 14280
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Unsa ang labing angay niyang buhaton?",
+          "start_ms": 14580,
+          "end_ms": 17660
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Paminaw, pagpabilin sulod sa imong sakop, paggiya, ug pag-follow-up uban sa health team.",
+          "start_ms": 17960,
+          "end_ms": 25280
+        }
+      ]
+    }
+  },
+  "poster": "/training/bhw-1-1/service-provider-riza-gemini-ceb-066add2e3526-poster.jpg",
+  "video": {
+    "path": "/training/bhw-1-1/service-provider-riza-gemini-ceb-1a204c4fb925.mp4",
+    "content_hash": "1a204c4fb925a6df0482b4c69f3f2c3589ec55675bbd6afb5c1bc80d5788689b",
+    "duration_s": 66,
+    "captions": {
+      "path": "/training/bhw-1-1/service-provider-riza-gemini-ceb-5a267fc28f26.vtt",
+      "content_hash": "5a267fc28f2608e6340528fedecccee080d267fb15770e4382c1988c7a48ecb8"
+    }
+  },
+  "story_content_hash": "0342408d5bea88f2211fc136a79e0b2b14a5883b869011e707a11dc429647add"
+}

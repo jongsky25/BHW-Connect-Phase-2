@@ -86,6 +86,19 @@ export const RemotionRoot: React.FC = () => {
       />
       {(["ceb", "hil"] as const).map((language) => (
         <Composition
+          key={`service-provider-${language}`}
+          id={language === "ceb" ? "ServiceProviderStoryCeb" : "ServiceProviderStoryHil"}
+          component={ServiceProviderStory}
+          calculateMetadata={calculateServiceProviderMetadata}
+          durationInFrames={SERVICE_PROVIDER_FALLBACK_DURATION}
+          fps={SERVICE_PROVIDER_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["ceb", "hil"] as const).map((language) => (
+        <Composition
           key={`community-organizer-${language}`}
           id={language === "ceb" ? "CommunityOrganizerStoryCeb" : "CommunityOrganizerStoryHil"}
           component={CommunityOrganizerStory}

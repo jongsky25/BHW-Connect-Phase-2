@@ -195,13 +195,16 @@ describe("lesson 1.1.2 approved translations", () => {
   }
 });
 
-describe("lesson 1.1.3 approved translations", () => {
-  const organizerDirectory = path.resolve(directory, "../bhw-community-organizer");
+describe.each([
+  { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true },
+  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: false },
+])("lesson $number translated content", ({ folder, firstId, approved }) => {
+  const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {
-    it(`offers the approved ${language} source while keeping unapproved fixtures hidden`, () => {
+    it(`offers matching ${language} content to authorized viewers and hides unapproved fixtures`, () => {
       const { lesson, translation } = fixture(language, organizerDirectory);
       expect(translationMatchesLesson(lesson, translation)).toBe(true);
-      expect(translationsForLesson(lesson, false).map(t => t.language)).toEqual(["ceb", "hil"]);
+      expect(translationsForLesson(lesson, false).map(t => t.language)).toEqual(approved ? ["ceb", "hil"] : []);
       expect(translationsForLesson(lesson, true).map(t => t.language)).toEqual(["ceb", "hil"]);
       render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]} completed={[]}
         resumes={[]} modules={[]} locale="fil" initialLessonId="lesson" readOnly={false} translations={[translation]}
@@ -218,7 +221,7 @@ describe("lesson 1.1.3 approved translations", () => {
       fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: language } });
       expect(screen.getByRole("heading", { name: translation.read_sections[0].heading })).toBeInTheDocument();
       expect(screen.getByAltText(translation.story_art.alt)).toBeInTheDocument();
-      expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/organizer-scene.${language}.mp3`);
+      expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/${firstId}.${language}.mp3`);
       for (let i = 0; i < 5; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
       expect(container.querySelector("audio")).not.toBeInTheDocument();
       expect(lesson.revision.read_sections[5].check?.correct_option_index).toBe(2);

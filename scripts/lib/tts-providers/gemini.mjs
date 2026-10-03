@@ -61,6 +61,8 @@ export const ROLES_HEPO_STORY_STYLES = {
 };
 
 export const SERVICE_PROVIDER_STORY_STYLES = {
+  ceb: "Speak in natural Cebuano (Bisaya), as spoken in the Philippines, as a warm community health storyteller. Use Cebuano pronunciation, word stress, and sentence intonation. Make Riza's listening and Aling Nena's concern feel human with gentle changes in pitch and pace. Sound calm and clear when explaining training limits, seeking the midwife's guidance, and following the health team's instructions. Preserve English role and health-service terms. Read the exact text. Do not switch to Tagalog, translate, or add words.",
+  hil: "Speak in natural Hiligaynon (Ilonggo), as spoken in Iloilo and Western Visayas in the Philippines, as a warm community health storyteller. Use Hiligaynon pronunciation, word stress, and gently melodic sentence intonation. Make Riza's listening and Aling Nena's concern feel human with gentle changes in pitch and pace. Sound calm and clear when explaining training limits, seeking the midwife's guidance, and following the health team's instructions. Preserve English role and health-service terms. Read the exact text. Do not switch to Cebuano or Tagalog, translate, or add words.",
   fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health storyteller. Make Marites's listening and Aling Nena's concern feel human, with gentle changes in pitch and pace. Keep the guidance calm, clear, and respectful. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, expressive community health storyteller. Make Marites's listening and Aling Nena's concern feel human, with gentle changes in pitch and pace. Keep the guidance calm, clear, and respectful. Do not add or change words.",
 };
