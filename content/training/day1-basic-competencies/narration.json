@@ -11915,610 +11915,750 @@
       "sections": {
         "applied-education": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-education.en.853e59b0f3ca.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "853e59b0f3ca5437489a261f27db49f350b0f553d4fd57d3145cc7036709365a",
-            "sha256": "5f6ad4319c8a95d849fd8c312a8b85c6cda12523a5af20ea7895188eb18d164d",
-            "duration_seconds": 28.824,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-education.en.74ced2f5d230.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "74ced2f5d230fc1d7339453df044ff9e8cc9f23dcde93bbd85dcce3396826b6a",
+            "sha256": "3a39c0e56875a7d63f962fef619338f04958591ccdfc37d0d5193b876f5f6941",
+            "duration_seconds": 37.538,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Choose the education needed",
+                "text": "Listen before explaining",
                 "start_ms": 0,
-                "end_ms": 2544
+                "end_ms": 2640
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Riza asks what the family wants to clarify about their surroundings.",
-                "start_ms": 2544,
-                "end_ms": 7656
+                "text": "Riza asks the family: “What have you noticed about the water collecting here?",
+                "start_ms": 2940,
+                "end_ms": 7780
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "She uses approved materials and an explanation suited to the audience.",
-                "start_ms": 7656,
-                "end_ms": 12936
+                "text": "Is there anything you would like to ask the health team?”",
+                "start_ms": 8080,
+                "end_ms": 10680
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Say in your own words how you would open the conversation.",
-                "start_ms": 12936,
-                "end_ms": 17232
+                "text": "She listens first, then uses a health team approved message and an explanation suited to the audience.",
+                "start_ms": 10980,
+                "end_ms": 18620
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "For example: “What have you noticed about the water collecting here?”",
-                "start_ms": 17232,
-                "end_ms": 21816
+                "text": "If she is unsure of an answer, she asks the health team.",
+                "start_ms": 18920,
+                "end_ms": 22560
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Listen before explaining.",
-                "start_ms": 21816,
-                "end_ms": 24288
+                "text": "This is the Health Educator role: help the family understand the message and find out what still needs clarification.",
+                "start_ms": 22860,
+                "end_ms": 30180
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Health Educator: a clear conversation suited to the family.",
-                "start_ms": 24288,
-                "end_ms": 28824
+                "text": "Health Educator: listen, use an approved message, and clarify questions.",
+                "start_ms": 30480,
+                "end_ms": 37480
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-education.fil.6ee410ab9c35.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "6ee410ab9c356b2bf4de5fc90b354887bef2237d96da69749b67b1b9f2bba1aa",
-            "sha256": "0a53facee96d53904b9a7a58d70a364ec142e4b741aa82174cd95c49f71daaf1",
-            "duration_seconds": 28.944,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-education.fil.dc97cc883324.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "dc97cc883324641b9b5b368ececea630363082db12d6c7ab1343c4b0eb70cfcd",
+            "sha256": "b6bd9fc211364f876306d3dceb63eb9b9b78b88e6ab329271d86e54981d918fc",
+            "duration_seconds": 43.468,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Piliin ang pagtuturong kailangan",
+                "text": "Makinig bago magpaliwanag",
                 "start_ms": 0,
-                "end_ms": 2808
+                "end_ms": 3160
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Tatanungin ni Riza kung ano ang gustong linawin ng pamilya tungkol sa kanilang paligid.",
-                "start_ms": 2808,
-                "end_ms": 8280
+                "text": "Tinanong ni Riza ang pamilya: “Ano po ang napapansin ninyo sa tubig na naiipon dito?",
+                "start_ms": 3460,
+                "end_ms": 9140
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Gagamit siya ng aprubadong materyal at paliwanag na angkop sa kausap.",
-                "start_ms": 8280,
-                "end_ms": 12912
+                "text": "May gusto po ba kayong itanong sa health team?”",
+                "start_ms": 9440,
+                "end_ms": 13080
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Sabihin sa sarili mong salita kung paano mo bubuksan ang usapan.",
-                "start_ms": 12912,
-                "end_ms": 17520
+                "text": "Nakinig muna siya, saka gumamit ng mensaheng aprubado ng health team at paliwanag na angkop sa kausap.",
+                "start_ms": 13380,
+                "end_ms": 22020
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Halimbawa: “Ano po ang napapansin ninyo sa tubig na naiipon dito?”",
-                "start_ms": 17520,
-                "end_ms": 22176
+                "text": "Kapag hindi niya tiyak ang sagot, itatanong niya ito sa health team.",
+                "start_ms": 22320,
+                "end_ms": 26840
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Makinig bago magpaliwanag.",
-                "start_ms": 22176,
-                "end_ms": 24672
+                "text": "Ito ang Health Educator na tungkulin: tulungang maunawaan ng pamilya ang mensahe, at alamin kung ano pa ang kailangang linawin.",
+                "start_ms": 27140,
+                "end_ms": 35900
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Health Educator: malinaw na usapang angkop sa pamilya.",
-                "start_ms": 24672,
-                "end_ms": 28944
+                "text": "Health Educator: makinig, gumamit ng aprubadong mensahe, at linawin ang tanong.",
+                "start_ms": 36200,
+                "end_ms": 43400
               }
             ]
           }
         },
         "applied-observation": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-observation.en.aa5fdb48e0fd.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "aa5fdb48e0fd60677f8d6435b7a11474a5b6d9d25f41459be65f01a3e3926ec2",
-            "sha256": "11bac50f553289de3886f24f6805799c13412fc79948abd9291b69c22065d1b9",
-            "duration_seconds": 34.2,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-observation.en.bf29fe907abf.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "bf29fe907abfe01796bc5421b4b83cb488f1953d9b8a649a87784ab25c4a14de",
+            "sha256": "4aea5ce3b668b98aa72a1ea71e9f1cc0f314ed05d729628264cab64d808c010c",
+            "duration_seconds": 40.829,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "One observation, several actions",
+                "text": "One observation, three roles",
                 "start_ms": 0,
-                "end_ms": 3504
+                "end_ms": 2960
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "In this fictional situation, Riza sees standing water in three yards.",
-                "start_ms": 3504,
-                "end_ms": 8976
+                "text": "During a neighborhood visit, BHW Riza notices standing water in three yards.",
+                "start_ms": 3260,
+                "end_ms": 10340
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "The midwife instructs: “Record what you saw, ask whether anyone wants to speak with the health team, and report the actions still needed to me.”",
-                "start_ms": 8976,
-                "end_ms": 18024
+                "start_ms": 10640,
+                "end_ms": 20480
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Read the instruction, clarify uncertainty, and separate observations from assumptions.",
-                "start_ms": 18024,
-                "end_ms": 24504
+                "text": "Riza reads the instruction and clarifies uncertainty.",
+                "start_ms": 20780,
+                "end_ms": 25300
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Do not diagnose from an environmental observation.",
-                "start_ms": 24504,
-                "end_ms": 28704
+                "text": "Standing water is an observation; it does not establish that residents are ill.",
+                "start_ms": 25600,
+                "end_ms": 30600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Which roles will she need to follow the whole instruction?",
+                "start_ms": 30900,
+                "end_ms": 34700
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "This is an observation, not a diagnosis or a proven cause of illness.",
-                "start_ms": 28704,
-                "end_ms": 34200
+                "text": "Read and clarify the instruction; separate observation from assumption.",
+                "start_ms": 35000,
+                "end_ms": 40760
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-observation.fil.00e6a48dd725.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "00e6a48dd7258099f94b274ceb4e4aa4061b059f152bddd10817db2f70a88e2a",
-            "sha256": "6d2a9829f9b4cec44ff2f20cec2c8b79e759befbc43587d68d291edecbd9b403",
-            "duration_seconds": 32.208,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-observation.fil.b3f59eb39de0.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b3f59eb39de01fcc46c862fae94228cfca4d01e46730dc47a43bbc33d2cfbb30",
+            "sha256": "d9dd809f50914e3edd85eb46bdb6de09c15dcb42aed0ee94263925ebb0c381f3",
+            "duration_seconds": 44.304,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Isang obserbasyon, maraming hakbang",
+                "text": "Isang obserbasyon, tatlong tungkulin",
                 "start_ms": 0,
-                "end_ms": 3192
+                "end_ms": 3400
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Sa kathang-isip na sitwasyon, may naipong tubig sa tatlong bakuran na napuntahan ni Riza.",
-                "start_ms": 3192,
-                "end_ms": 8880
+                "text": "Sa pagbisita sa purok, napansin ni BHW Riza ang naipong tubig sa tatlong bakuran.",
+                "start_ms": 3700,
+                "end_ms": 11140
               },
               {
                 "zone": "body",
                 "index": 1,
                 "text": "Tagubilin ng midwife: “Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon.”",
-                "start_ms": 8880,
-                "end_ms": 17688
+                "start_ms": 11440,
+                "end_ms": 21960
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Basahin ang tagubilin, linawin ang hindi tiyak, at ihiwalay ang naobserbahan sa hinala.",
-                "start_ms": 17688,
-                "end_ms": 23616
+                "text": "Binasa ni Riza ang tagubilin at nilinaw ang hindi tiyak.",
+                "start_ms": 22260,
+                "end_ms": 27020
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Huwag magbigay ng diagnosis mula sa obserbasyon sa paligid.",
-                "start_ms": 23616,
-                "end_ms": 27600
+                "text": "Ang naipong tubig ay obserbasyon; hindi nito pinatutunayang may sakit ang mga residente.",
+                "start_ms": 27320,
+                "end_ms": 33560
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Aling mga tungkulin ang kailangan upang masunod ang buong tagubilin?",
+                "start_ms": 33860,
+                "end_ms": 38900
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Obserbasyon ito; hindi diagnosis o napatunayang sanhi ng sakit.",
-                "start_ms": 27600,
-                "end_ms": 32208
+                "text": "Basahin at linawin ang tagubilin; ihiwalay ang nakita sa hinala.",
+                "start_ms": 39200,
+                "end_ms": 44240
               }
             ]
           }
         },
         "applied-organizing": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-organizing.en.5c8ed6b712d5.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "5c8ed6b712d5277477b0da682d3de2addd0670d43722fef557f5f9da13bef964",
-            "sha256": "a7f81c148593e9dde467b595bf936b260ed4aab690cdf9e33786c103fa3aad2e",
-            "duration_seconds": 28.368,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-organizing.en.136db19b8822.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "136db19b88226a015be8e007d690e7f8d40e0d1b675540421329072138326709",
+            "sha256": "938522275e2afe266201e2a1c6b597c825b3f596010e34a049a3c5a2e0842d6b",
+            "duration_seconds": 42.449,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Identify potential partners",
+                "text": "Invite people to take part",
                 "start_ms": 0,
-                "end_ms": 2904
+                "end_ms": 2400
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "For a shared activity, talk with residents and the purok leader, together with the council member and health staff.",
-                "start_ms": 2904,
-                "end_ms": 10632
+                "text": "For a shared discussion, Riza speaks with residents, the purok leader, the council member, and health staff.",
+                "start_ms": 2700,
+                "end_ms": 10700
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Propose a clear discussion about the activity and schedule, then listen to responses.",
-                "start_ms": 10632,
-                "end_ms": 16680
+                "text": "“When could we discuss what we observed and what we might do?”",
+                "start_ms": 11000,
+                "end_ms": 14640
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Explain why their participation matters; the BHW should not decide for everyone without discussion.",
-                "start_ms": 16680,
-                "end_ms": 24072
+                "text": "she asks.",
+                "start_ms": 14940,
+                "end_ms": 16180
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She listens to suggestions about the time and activity before they agree.",
+                "start_ms": 16480,
+                "end_ms": 23000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "This is the Community Organizer role: connect people and encourage participation.",
+                "start_ms": 23300,
+                "end_ms": 29420
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "She does not present an activity as agreed before people have discussed it.",
+                "start_ms": 29720,
+                "end_ms": 34840
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Community Organizer: invite people to plan and act.",
-                "start_ms": 24072,
-                "end_ms": 28368
+                "text": "Community Organizer: invite, listen, and agree with the people involved.",
+                "start_ms": 35140,
+                "end_ms": 42380
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-organizing.fil.161643df1619.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "161643df1619f237e796031666d0cde5b2a148c17215c5cb789b0f6a5d38e6cf",
-            "sha256": "c2cca929ec58357a09724f00dd4a5d9c01c268e99a641f3b33ea81ccd69e9c13",
-            "duration_seconds": 30.384,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/applied-organizing.fil.dccbf0199ac9.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "dccbf0199ac9c5535486007b3cd31c02fc3d21c70c477da8d3dc64a9c777a9d7",
+            "sha256": "9cdc90bf251dfc4d73b9ee3d7880b10a9e9deb0b56141141956762765a870cae",
+            "duration_seconds": 46.132,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Tukuyin ang mga makakatuwang",
+                "text": "Anyayahan ang mga makakatuwang",
                 "start_ms": 0,
-                "end_ms": 2592
+                "end_ms": 2360
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Para sa sama-samang gawain, maaaring kausapin ang mga residente at purok leader, kasama ang kagawad at health staff.",
-                "start_ms": 2592,
-                "end_ms": 10128
+                "text": "Para sa sama-samang pagtalakay, kinausap ni Riza ang mga residente, purok leader, kagawad, at health staff.",
+                "start_ms": 2660,
+                "end_ms": 10180
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Magmungkahi ng malinaw na pag-uusap tungkol sa gawain at iskedyul, pagkatapos ay pakinggan ang tugon.",
-                "start_ms": 10128,
-                "end_ms": 16728
+                "text": "“Kailan po tayo maaaring mag-usap tungkol sa nakita natin at sa maaaring gawin?”",
+                "start_ms": 10480,
+                "end_ms": 17600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ipaliwanag kung bakit kailangan ang kanilang pakikilahok; ang BHW ay hindi dapat magpasya para sa lahat nang walang usapan.",
-                "start_ms": 16728,
-                "end_ms": 25272
+                "text": "tanong niya.",
+                "start_ms": 17900,
+                "end_ms": 19460
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Pinakinggan niya ang kanilang mungkahi sa oras at gawain bago magkasundo.",
+                "start_ms": 19760,
+                "end_ms": 24560
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ito ang Community Organizer na tungkulin: pag-ugnayin ang mga tao at hikayatin ang kanilang pakikilahok.",
+                "start_ms": 24860,
+                "end_ms": 32020
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi niya itinuturing na napagkasunduan ang isang gawain hangga’t hindi pa ito napag-uusapan.",
+                "start_ms": 32320,
+                "end_ms": 38440
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Community Organizer: anyayahan ang mga tao na magplano at kumilos.",
-                "start_ms": 25272,
-                "end_ms": 30384
+                "text": "Community Organizer: mag-anyaya, makinig, at magkasundo kasama ang mga tao.",
+                "start_ms": 38740,
+                "end_ms": 46060
               }
             ]
           }
         },
         "check": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/check.en.7fbee73b314a.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "7fbee73b314a65935fbc9b7d10d63b5e7523f74385ff99b7276d51a045db1451",
-            "sha256": "3f211341d1414d5d10f8fe879e975c4b1daded600c1605d2c1f1e654030af239",
-            "duration_seconds": 13.032,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/check.en.32fc2e746bb1.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "32fc2e746bb18995c0977aaa7e89c3435038d6058a9cd970cf802192a084e794",
+            "sha256": "e4d0ae521723579bc40d851fa2782cac6273eeb32eef67f3a4a17a60e03424ac",
+            "duration_seconds": 38.583,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Apply your learning",
+                "text": "Apply and explain the roles",
                 "start_ms": 0,
-                "end_ms": 2040
+                "end_ms": 2640
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Which report follows the instruction without inventing a conclusion?",
-                "start_ms": 2040,
-                "end_ms": 6576
+                "text": "Now it is your turn.",
+                "start_ms": 2940,
+                "end_ms": 4740
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Choose the report that addresses the whole instruction, then speak your own handover using observed, done, and needed.",
+                "start_ms": 5040,
+                "end_ms": 13160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Explain which actions used the Health Educator, Community Organizer, and Health Service Provider roles.",
+                "start_ms": 13460,
+                "end_ms": 20940
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "The online question prepares you for practice.",
+                "start_ms": 21240,
+                "end_ms": 24400
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "The facilitator observes your actual performance separately; lesson completion does not establish practical competence.",
+                "start_ms": 24700,
+                "end_ms": 32140
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Sound action: choose the role, follow instructions, record, and communicate.",
-                "start_ms": 6576,
-                "end_ms": 13032
+                "text": "Choose the role, follow the instruction, record, and report what is needed.",
+                "start_ms": 32440,
+                "end_ms": 38520
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/check.fil.fc052a4f87ed.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "fc052a4f87ed3e3c74812e7562a1a35686607a0edcc287e0edd7b421578d319c",
-            "sha256": "d52fc7d34a53253ea5de508511d8b2d39d6dfb49cd1c904355ebcd9cfdea0a37",
-            "duration_seconds": 13.344,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/check.fil.76af0317b89f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "76af0317b89fde3ebcafdb2e56e616278ca95fb5d37c203743bd45c1165c414e",
+            "sha256": "ab9bd0a0db9872fcbb9932c5883ff3e40f4578a0abd6b4f71c69e68b2c577210",
+            "duration_seconds": 47.151,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Gamitin ang natutuhan",
+                "text": "Gamitin at ipaliwanag ang mga tungkulin",
                 "start_ms": 0,
-                "end_ms": 2352
+                "end_ms": 2760
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Aling ulat ang sumusunod sa tagubilin nang walang imbentong konklusyon?",
-                "start_ms": 2352,
-                "end_ms": 6888
+                "text": "Ngayon, ikaw naman.",
+                "start_ms": 3060,
+                "end_ms": 4980
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Piliin ang ulat na tumutugon sa buong tagubilin, saka bigkasin ang sarili mong handover gamit ang nakita, ginawa, at kailangan.",
+                "start_ms": 5280,
+                "end_ms": 16160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ipaliwanag kung alin ang Health Educator, Community Organizer, at Health Service Provider na gawain.",
+                "start_ms": 16460,
+                "end_ms": 24780
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ang online na tanong ay paghahanda para sa pagsasanay.",
+                "start_ms": 25080,
+                "end_ms": 29040
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hiwalay na oobserbahan ng facilitator ang aktwal mong pagganap; ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.",
+                "start_ms": 29340,
+                "end_ms": 38980
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Maayos na pagkilos: piliin ang papel, sundin ang tagubilin, itala, at makipag-ugnayan.",
-                "start_ms": 6888,
-                "end_ms": 13344
+                "text": "Piliin ang tungkulin, sundin ang tagubilin, itala, at iulat ang kailangan.",
+                "start_ms": 39280,
+                "end_ms": 47080
               }
             ]
           }
         },
         "handover": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/handover.en.86ad51075432.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "86ad51075432b1de156b594cec1943ccdefeb4fc507dff3e11a208f9a7a5ebaf",
-            "sha256": "6f20c2424df016ee17abb51b81c71f71cc5bca8a2baf273e260c36f7209cd307",
-            "duration_seconds": 36.12,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/handover.en.4fa8ca13dee1.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "4fa8ca13dee1ea97af4382a81c2268f9b7ef808c4845cbd41103157ab9dda06b",
+            "sha256": "9fdea43486871df5c59ed6eaf7002786ab20130124627023393ec959a65dd178",
+            "duration_seconds": 42.867,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Prepare a short handover",
+                "text": "Observed, done, and needed",
                 "start_ms": 0,
-                "end_ms": 2544
+                "end_ms": 2800
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Practise reporting to the midwife: what you observed, what you did, and what action is still needed.",
-                "start_ms": 2544,
-                "end_ms": 9480
+                "text": "Riza reports to the midwife: “There is standing water in three yards.",
+                "start_ms": 3100,
+                "end_ms": 7940
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "For example: “There is standing water in three yards.",
-                "start_ms": 9480,
-                "end_ms": 13560
+                "text": "I recorded the observation, listened to questions, and spoke with potential partners.",
+                "start_ms": 8240,
+                "end_ms": 14360
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "I recorded the observation and listened to residents’ questions.",
-                "start_ms": 13560,
-                "end_ms": 18144
+                "text": "A resident wants to speak with the health team; I explained the contact you confirmed.",
+                "start_ms": 14660,
+                "end_ms": 19180
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "I need to confirm the appropriate message and next step with you.”",
-                "start_ms": 18144,
-                "end_ms": 22488
+                "text": "I still need guidance on the next step.”",
+                "start_ms": 19480,
+                "end_ms": 21880
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Keep the record and report consistent, follow the instruction, and share only relevant information with the appropriate recipient.",
-                "start_ms": 22488,
-                "end_ms": 30912
+                "text": "Compare the report with the record and the instruction.",
+                "start_ms": 22180,
+                "end_ms": 25980
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Share only relevant information with the appropriate recipient.",
+                "start_ms": 26280,
+                "end_ms": 30760
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Explain where she used each role and what remains unfinished.",
+                "start_ms": 31060,
+                "end_ms": 35780
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Report to the midwife: observation + action taken + next need.",
-                "start_ms": 30912,
-                "end_ms": 36120
+                "text": "Short handover: observed + actual action taken + action still needed.",
+                "start_ms": 36080,
+                "end_ms": 42800
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/handover.fil.fa2263dab317.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "fa2263dab31777505e7a5fac2596a321eb26932b46bba3fb70338f3b18ca06f5",
-            "sha256": "f6624d44c8db8bbe2c9ec3066f559fdc46ce00605b246f3e2e8987c7f4930c63",
-            "duration_seconds": 35.952,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/handover.fil.aa3782d47ef0.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "aa3782d47ef0b20fce8b874004d049bd34966bd9df4c591e0d376b11a392cb0a",
+            "sha256": "9df425713483d1dabc8efad2f91c3e6c172d068bc923daede8362f8bcdb30312",
+            "duration_seconds": 47.02,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Ihanda ang maikling handover",
+                "text": "Nakita, ginawa, at kailangan",
                 "start_ms": 0,
-                "end_ms": 2568
+                "end_ms": 4080
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Subukan mong iulat sa midwife: ano ang nakita, ano ang ginawa, at ano ang kailangan pang aksyon.",
-                "start_ms": 2568,
-                "end_ms": 9480
+                "text": "Iniulat ni Riza sa midwife: “May naipong tubig sa tatlong bakuran.",
+                "start_ms": 4380,
+                "end_ms": 9420
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Halimbawa: “May naipong tubig sa tatlong bakuran.",
-                "start_ms": 9480,
-                "end_ms": 13176
+                "text": "Naitala ko ang obserbasyon, nakinig sa mga tanong, at kinausap ang mga makakatuwang.",
+                "start_ms": 9720,
+                "end_ms": 15720
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Naitala ko ang obserbasyon at nakinig sa tanong ng mga residente.",
-                "start_ms": 13176,
-                "end_ms": 17664
+                "text": "May residenteng gustong makausap ang health team; ipinaliwanag ko ang contact na kinumpirma ninyo.",
+                "start_ms": 16020,
+                "end_ms": 21900
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Kailangan kong kumpirmahin sa inyo ang angkop na mensahe at susunod na hakbang.”",
-                "start_ms": 17664,
-                "end_ms": 22752
+                "text": "Kailangan ko pa ng gabay sa susunod na hakbang.”",
+                "start_ms": 22200,
+                "end_ms": 25360
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Itugma ang tala at ulat, sundin ang tagubilin, at ibahagi lamang ang kaugnay na impormasyon sa tamang tatanggap.",
-                "start_ms": 22752,
-                "end_ms": 29976
+                "text": "Ihambing ang ulat sa tala at sa tagubilin.",
+                "start_ms": 25660,
+                "end_ms": 29260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ibahagi lamang ang kaugnay na impormasyon sa tamang tatanggap.",
+                "start_ms": 29560,
+                "end_ms": 34080
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Ipaliwanag kung saan niya ginamit ang bawat tungkulin at kung ano pa ang hindi tapos.",
+                "start_ms": 34380,
+                "end_ms": 40380
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ulat sa midwife: obserbasyon + ginawa + kailangan.",
-                "start_ms": 29976,
-                "end_ms": 35952
+                "text": "Maikling handover: nakita + aktwal na ginawa + kailangan pang aksyon.",
+                "start_ms": 40680,
+                "end_ms": 46960
               }
             ]
           }
         },
         "next-learning": {
           "en": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/next-learning.en.89a5042fc5e2.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "89a5042fc5e24bc80287c973b93e953fd92b24e45a7334c667e4c92b531a9e67",
-            "sha256": "566a74d24ba102eb6406342280e9cb8f2d58aa8ac394b6d9d7f2f9a002afb1d8",
-            "duration_seconds": 40.176,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/next-learning.en.6b84c29e396f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "6b84c29e396f40a0405d15969fa238df99f049dbc88a40c0746c3a7557497745",
+            "sha256": "e30561e4c8dc02e094aa3efb166e9f889a48dfd3de0c1c0f9139d3652da23949",
+            "duration_seconds": 53.995,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Continue developing your skills",
+                "text": "Guide and record the action",
                 "start_ms": 0,
-                "end_ms": 2904
+                "end_ms": 2440
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Subchapter 1.1 introduces the roles; it does not establish competence in every task.",
-                "start_ms": 2904,
-                "end_ms": 9864
+                "text": "A resident wants to speak with the health team.",
+                "start_ms": 2740,
+                "end_ms": 5340
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Subchapter 1.6 develops communication.",
-                "start_ms": 9864,
-                "end_ms": 13944
+                "text": "Riza confirms the appropriate contact and local communication route with the midwife, then explains the next step to the resident.",
+                "start_ms": 5640,
+                "end_ms": 14280
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "The facilitator guide links community mobilization to common competencies and health-promotion teaching to core competencies.",
-                "start_ms": 13944,
-                "end_ms": 22032
+                "text": "Following the instruction, she records what she observed, the question, and what she actually did; she does not record a service as delivered when it was not.",
+                "start_ms": 14580,
+                "end_ms": 26060
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "These skills belong in later chapters; Chapters II and III are not available in this prototype.",
-                "start_ms": 22032,
-                "end_ms": 28824
+                "text": "This is the Health Service Provider role: guide residents and support the health team within her training.",
+                "start_ms": 26360,
+                "end_ms": 32880
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Practical competence must be observed separately from reading or viewing slides.",
-                "start_ms": 28824,
-                "end_ms": 34320
+                "text": "Record selection connects to lesson 1.1.5; communication, community mobilization, and health-promotion teaching are developed further in later lessons.",
+                "start_ms": 33180,
+                "end_ms": 45820
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Future learning. Practical competence requires separate observation.",
-                "start_ms": 34320,
-                "end_ms": 40176
+                "text": "Health Service Provider: confirm the contact, explain the next step, and record the actual action.",
+                "start_ms": 46120,
+                "end_ms": 53920
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/next-learning.fil.467a3dc83f94.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "467a3dc83f94322369d5ca6f68eb7c25985bd1b7cd299013844b2e89fa43b8e1",
-            "sha256": "4407572079ac22dd4dbcc69dc3a457aa4a42fe366a4f19c6bb30dc4d43d7385d",
-            "duration_seconds": 40.392,
+            "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-application/next-learning.fil.3b989656a71a.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "3b989656a71a66e5082a31df45dbd9e9876d0bc2a887f3c3484092c85dbda099",
+            "sha256": "98847de775334c734842c5b6a1551a9bf7498adb232de13522615c1094ba0855",
+            "duration_seconds": 56.189,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Ituloy ang paglinang ng kasanayan",
+                "text": "Gumabay at itala ang ginawa",
                 "start_ms": 0,
-                "end_ms": 2856
+                "end_ms": 3520
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Ang 1.1 ay pagpapakilala sa mga papel, hindi patunay na kaya na ang lahat ng gawain.",
-                "start_ms": 2856,
-                "end_ms": 9048
+                "text": "May residenteng gustong makausap ang health team.",
+                "start_ms": 3820,
+                "end_ms": 7020
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Palalalimin sa 1.6 ang pakikipagkomunikasyon.",
-                "start_ms": 9048,
-                "end_ms": 13200
+                "text": "Kinumpirma ni Riza sa midwife ang angkop na contact at lokal na paraan ng pakikipag-ugnayan, saka ipinaliwanag ang susunod na hakbang sa residente.",
+                "start_ms": 7320,
+                "end_ms": 17160
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Iniuugnay ng facilitator guide ang community mobilization sa common competencies at health-promotion teaching sa core competencies.",
-                "start_ms": 13200,
-                "end_ms": 21528
+                "text": "Itinala niya ang nakita, ang tanong, at ang aktwal na ginawa ayon sa tagubilin; hindi niya isinulat na may serbisyong naibigay kung wala naman.",
+                "start_ms": 17460,
+                "end_ms": 27300
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Nasa mga susunod na kabanata ang mga kasanayang iyon; hindi pa available ang Chapters II at III sa prototype.",
-                "start_ms": 21528,
-                "end_ms": 28968
+                "text": "Ito ang Health Service Provider na tungkulin: gumabay at tumulong sa health team sa loob ng kanyang pagsasanay.",
+                "start_ms": 27600,
+                "end_ms": 35600
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Hiwalay ang obserbasyon ng praktikal na kakayahan sa pagbasa o pagtingin sa slides.",
-                "start_ms": 28968,
-                "end_ms": 34392
+                "text": "Ang pagpili ng tala ay kaugnay ng aralin 1.1.5; mas malalim na komunikasyon, community mobilization, at health-promotion teaching ay pag-aaralan sa mga susunod na aralin.",
+                "start_ms": 35900,
+                "end_ms": 48700
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Mga susunod na pag-aaral. Hiwalay na obserbasyon ang praktikal na kakayahan.",
-                "start_ms": 34392,
-                "end_ms": 40392
+                "text": "Health Service Provider: tiyakin ang contact, ipaliwanag ang hakbang, at itala ang aktwal na ginawa.",
+                "start_ms": 49000,
+                "end_ms": 56120
               }
             ]
           }

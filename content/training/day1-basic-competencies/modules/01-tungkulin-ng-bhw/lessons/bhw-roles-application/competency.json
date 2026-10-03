@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Maipaliwanag ang mga papel na kailangan sa sitwasyon at makapagbigay ng maikling handover ayon sa tagubilin.",
-      "observable_en": "Explain the roles needed in a situation and give a short handover following an instruction.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang sagot sa sitwasyon.",
-      "not_yet_en": "Cannot yet explain the response to the scenario.",
+      "observable_fil": "Naipapaliwanag ang tatlong tungkuling ginamit, nasusunod ang tagubilin, at naibibigay ang handover na may nakita, aktwal na ginawa, at kailangan pang aksyon nang walang imbentong konklusyon.",
+      "observable_en": "Explains the three roles used, follows the instruction, and gives a handover with observation, actual action, and remaining need without an invented conclusion.",
+      "not_yet_fil": "Nagdaragdag ng hindi napatunayang sanhi o diagnosis, o hindi maihiwalay ang nakita, ginawa, at kailangan kahit may gabay.",
+      "not_yet_en": "Adds an unverified cause or diagnosis, or cannot separate observation, action, and need even with support.",
       "levels": {
-        "kaya_na_fil": "Naipaliwanag nang wasto at walang gabay.",
-        "kaya_na_en": "Explains accurately without prompting.",
-        "kailangan_practice_fil": "Naipaliwanag sa tulong ng tanong.",
-        "kailangan_practice_en": "Explains with prompts.",
-        "hindi_pa_fil": "Kailangan pang ipakita at pagsanayan.",
-        "hindi_pa_en": "Needs further demonstration and practice."
+        "kaya_na_fil": "Walang gabay naipapaliwanag ang tatlong tungkulin at pagsunod sa tagubilin; tugma ang tala at kumpletong handover, at tama ang tatanggap.",
+        "kaya_na_en": "Without prompts, explains the three roles and how the instruction was followed; the record and complete handover agree and reach the appropriate recipient.",
+        "kailangan_practice_fil": "Wasto ang pangunahing ulat ngunit may kulang na bahagi o tungkulin; nakukumpleto matapos ang tanong o gabay.",
+        "kailangan_practice_en": "The report is sound but misses a part or role; completes it after a question or prompt.",
+        "hindi_pa_fil": "Hindi maihiwalay ang obserbasyon sa hinala, o hindi masunod ang tagubilin kahit may gabay; kailangan ng demonstrasyon at muling pagsasanay.",
+        "hindi_pa_en": "Cannot separate observation from assumption or follow the instruction even with prompts; needs demonstration and further practice."
       }
     }
   ]
