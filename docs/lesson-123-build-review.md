@@ -60,3 +60,9 @@ Local normal Turbopack production build, typecheck, Remotion lint/typecheck and 
 Bilingual facilitation follows the fixed twelve-part outline. A single observation indicator maps to immutable objective index 0 (schema prohibits duplicate objective indexes) and combines factual/confidential summary, checked message/understanding, local contact/authority and follow-up. Online completion explicitly does not establish practical competence. Independent clinical/policy SME review remains unclaimed.
 
 Owner package includes a standalone HTML with embedded actual component/media and labeled callback stubs, all final MP3s/timings, both MP4s/VTTs/posters, original illustration/prompt, authored bilingual learner/facilitator files, representative screenshots and source/technical/listening evidence. All new assets stay draft. PR #239 remains draft, with no merge/deployment/publication or previous-owner-approval reuse.
+
+## Owner approval and release gates — 4 October 2026
+
+The program owner replied “approve” in this chat after the completed bilingual review package and explicit scoped live-release question. The reviewed head is e5c58d649f5b0556d82c92aefa3120307e2fbbfb. The immutable review ZIP SHA-256 is 6bfa3c5433ed003660f43602da0805afe9b09694a1c41f4dff4d6a6e0d72db36. All 19 reviewed media bytes are unchanged; the record is `docs/lesson-123-owner-approval.json`. Only this target’s original illustration and story assets are now approved; captions/provenance and bilingual facilitator review notes agree. No independent policy/clinical SME approval is claimed.
+
+Latest main 3d02c48d93ffb6d975a58a421bef3c0184afc05a was merged additively before the approval edits. Fresh exact final-head CI/E2E, both Remotion shards/artifacts and one-lesson Linux dry run are required before merge. Exact merged production READY/alias precedes scoped database publication. Draft-stage evidence above remains historical; final release evidence will be saved separately.

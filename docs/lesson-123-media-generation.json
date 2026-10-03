@@ -1,7 +1,7 @@
 {
   "generated_date": "2026-10-03",
   "source_commit": "2b4a582ebaced17e25ce4a326a3e3d96a0a7c6c8",
-  "owner_review": "pending",
+  "owner_review": "approved",
   "read_tracks": 12,
   "historical_audio_restored": [
     "public/training/audio/02-uhc-act/uhc-coverage/benefit.en.86284040e421.mp3",
@@ -174,5 +174,11 @@
         "content_hash": "d284144ffa23207f348f7ca0131dff01d18384c48c269f27acb069a52af15bd1"
       }
     }
-  ]
+  ],
+  "owner_approval": {
+    "date": "2026-10-04",
+    "reviewed_head": "e5c58d649f5b0556d82c92aefa3120307e2fbbfb",
+    "record": "docs/lesson-123-owner-approval.json",
+    "independent_sme_approval": "not claimed"
+  }
 }

@@ -34,7 +34,7 @@ describe('lesson 1.2.3 health boards and health promotion',()=>{
       expect(track.timings.every(t=>t.end_ms>t.start_ms&&t.end_ms<=track.duration_seconds*1000+2)).toBe(true);
     }
     const story=source.assets.find(a=>a.id===source.featured_asset_id);
-    expect(story.id).toBe('local-system-story');expect(story.review_status).toBe('draft');
+    expect(story.id).toBe('local-system-story');expect(story.review_status).toBe('approved');
     expect(fileHash(story.path)).toBe(story.content_hash);
     for(const language of ['fil','en']){
       const video=story.videos[language];const timing=JSON.parse(readFileSync(path.join(root,`remotion/public/uhc-local-system/narration-${language}.json`),'utf8'));
@@ -105,12 +105,17 @@ describe('lesson 1.2.3 health boards and health promotion',()=>{
     expect(lessonPosition(lesson,'read',{position_key:'removed-position',concept_id:'m2.health-board'}).id).toBe('section-5');
   });
 
-  it('integrates draft original art without inheriting false approval or deleting historical art',()=>{
+  it('integrates owner-approved original art and preserves reviewed media and historical art',()=>{
+    const approval=JSON.parse(readFileSync(path.join(root,'docs/lesson-123-owner-approval.json'),'utf8'));
+    expect(approval.owner_instruction).toBe('approve');
+    expect(approval.reviewed_head).toBe('e5c58d649f5b0556d82c92aefa3120307e2fbbfb');
+    expect(approval.media).toHaveLength(19);
+    for(const media of approval.media)expect(fileHash(media.path)).toBe(media.sha256);
     const art=source.assets.find(a=>a.id==='local-system-observation-art');
     expect(fileHash(art.path)).toBe(art.content_hash);
     expect(sha(readFileSync(path.join(root,'remotion/public/uhc-local-system/scene.png')))).toBe(art.content_hash);
     expect(art.provenance).toMatch(/built-in imagegen.*2026-10-03.*Vlanche.*Ernesto/);
-    expect(art.review_status).toBe('draft');
+    expect(art.review_status).toBe('approved');
     expect(source.assets.some(a=>a.id==='practice-map')).toBe(false);
     expect(existsSync(path.join(root,'public/training/bhw-next-draft/process-e56e73f832d7.svg'))).toBe(true);
     const viewer=readFileSync(path.join(root,'src/components/elearning/reference-lessons.tsx'),'utf8');
