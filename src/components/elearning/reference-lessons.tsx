@@ -206,6 +206,15 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Pagpili at paglinaw ng tala kasama ang health team", "Choosing and checking a record with the health team"),
           }
+      : lesson?.lesson_key === "bhw-roles-application"
+        ? {
+            src: "/training/bhw-1-1/roles-application-328d2317d8fd.png",
+            alt: ui(
+              "Si BHW Riza ay nag-uulat sa midwife gamit ang blangkong notebook habang nakikinig ang isang residente.",
+              "BHW Riza reports to the midwife using a blank notebook while a resident listens.",
+            ),
+            caption: ui("Nakita · Ginawa · Kailangan", "Observed · Done · Needed"),
+          }
       : lesson?.lesson_key === "uhc-coverage"
         ? {
             src: "/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png",

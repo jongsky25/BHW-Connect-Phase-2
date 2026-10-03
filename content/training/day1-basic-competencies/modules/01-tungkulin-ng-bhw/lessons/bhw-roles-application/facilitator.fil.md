@@ -1,81 +1,61 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na pangalanan ang mga tungkuling kailangan sa iisang sitwasyon sa barangay, at makapagbigay ng maikling handover sa midwife nang pasalita — ano ang nakita, ano ang ginawa, ano pa ang kailangan — na sumusunod sa tagubilin niya at walang idinadagdag na konklusyong hindi masusuportahan.
+Maipaliwanag ng BHW ang tatlong tungkuling kailangan sa isang sitwasyon, masunod ang tagubilin ng midwife, at maibigay ang maikling handover: nakita, aktwal na ginawa, at kailangan pang aksyon.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 60 minuto sa harapang sesyon (bahagi ng "Pagsasanay: aling tungkulin ito + sariling halimbawa" sa 6 na oras na nakatakda sa gabay ng subchapter). Hindi kasama sa 60 minutong ito ang hiwalay na 30 minuto ng module para sa buod at retrieval. Mga 10–15 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** manila paper at marker; ang slides ng aralin (ang sitwasyon ng naipong tubig at ang tatlong linya ng handover: *Nakita · Nagawa · Kailangan*); ang tagubilin ng midwife mula sa aralin, nakasulat nang malaki sa manila paper; ang tatlong role card mula sa naunang aralin (*Magturo*, *Mag-organisa*, *Gumabay*) kung ginamit ninyo.
+Mga 60 minuto para sa talakayan at role-play; 10–15 minuto para sa sariling pag-aaral. Ihanda ang anim na slides, blangkong practice notebook, tatlong role card, at tagubilin ng midwife. Opsyonal ang animadong kuwento sa Filipino o English; hindi ito kailangang panoorin upang makumpleto ang online na aralin.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Pinagsasama ng araling ito ang mga aralin sa Health Educator, Community Organizer, Health Service Provider, at mga talaan. Silipin ang kanilang facilitator guide para maituro mo pabalik ang mga ito.
-- Alamin kung paano talaga nagha-handover sa midwife sa inyong lugar (harapan, sa telepono, sa logbook) para tugma sa totoong buhay ang pagsasanay.
-- Saklaw: pagpapakilala ito, hindi patunay na kaya na ang lahat ng gawain. **Huwag magbigay o hayaang magbigay ang grupo ng diagnosis mula sa obserbasyon sa paligid** — obserbasyon ang naipong tubig, hindi napatunayang sanhi ng sakit. Huwag ituro nang malalim ang kasanayan sa health promotion o mobilization; itinuturo ng aralin ang mga ito sa mga susunod na kabanata (komunikasyon sa subchapter 1.6 (Module 6, Epektibong Komunikasyon); community mobilization sa Common Competencies; health-promotion teaching sa Core Competencies), at hindi pa available ang Chapters II at III sa prototype.
+Basahin ang parehong wika at balikan ang 1.1.1–1.1.5. Kumpirmahin ang lokal na contact, tala, at paraan ng handover kasama ang health team. Ang sitwasyon ay kathang-isip; gumamit lamang ng kathang-isip na detalye. Huwag magbigay ng diagnosis mula sa obserbasyon sa paligid.
 
-## [opening] Pambungad
+## [opening] Simulan sa tagubilin
 
-Basahin nang malakas ang tagubilin ng midwife mula sa manila paper: *"Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon."* Saka itanong: *"Ilang magkakaibang bagay ang ipinapagawa niya kay Riza? Bilangin natin."* Salungguhitan ang bawat isa habang binabanggit ng grupo.
+Basahin: “Itala ang nakita, itanong kung may gustong kausapin ang health team, at iulat sa akin ang kailangan pang aksyon.” Ipatukoy ang tatlong hinihinging gawain. Ano ang kailangang linawin bago kumilos?
 
-## [steps] Mga hakbang
+## [steps] Talakayin ang anim na screen
 
-1. **Isang obserbasyon (Read "Isang obserbasyon, maraming hakbang", unang slide).** May naipong tubig sa tatlong bakuran na nakita ni Riza. Itanong: *"Ano ang nakita niya? Ano ang hindi pa niya alam?"* Idiin: basahin ang tagubilin, linawin ang hindi tiyak, at ihiwalay ang nakita sa hinala. Walang diagnosis mula sa obserbasyon sa paligid.
-2. **Pagtuturo (Read "Piliin ang pagtuturong kailangan", ikalawang slide).** Itanong: *"Paano mo bubuksan ang usapan sa pamilya, sa sarili mong salita?"* Kumuha ng dalawa o tatlong pambungad. Ituro ang halimbawa ng aralin: *"Ano po ang napapansin ninyo sa tubig na naiipon dito?"* — makinig bago magpaliwanag. Itanong kung anong tungkulin ito (Health Educator).
-3. **Pag-oorganisa (Read "Tukuyin ang mga makakatuwang", ikatlong slide).** Itanong: *"Sino pa ang kakausapin mo para sa sama-samang gawain?"* → mga residente, purok leader, kagawad, health staff. Itanong: *"Bakit hindi dapat ang BHW na lang ang magpasya para sa lahat?"* Itanong kung anong tungkulin ito (Community Organizer).
-4. **Handover (Read "Ihanda ang maikling handover", ikaapat na slide).** Ipakita ang tatlong linya: *Nakita · Nagawa · Kailangan.* Basahin nang malakas ang halimbawang handover ng aralin. Itanong: *"Aling bahagi ang obserbasyon? Alin ang ginawa niya? Alin ang kailangan pa?"* Ipakita na kaugnay na impormasyon lang ang ibinabahagi sa tamang tao at tugma ito sa naitala.
-5. **Sariling halimbawa.** Humingi sa dalawa o tatlong kalahok ng sitwasyon mula sa sarili nilang barangay kung saan ang isang obserbasyon ay nangailangan ng higit sa isang tungkulin. Itanong sa grupo: *"Anong mga tungkulin ang nagamit?"*
-6. **Susunod na pag-aaral (Read "Ituloy ang paglinang ng kasanayan", ikalimang slide).** Sabihin nang malinaw na ipinapakilala lang ng subchapter na ito ang mga tungkulin at hindi ito patunay na kaya na ang lahat ng gawain; sa susunod pa lilinangin ang mga kasanayan, at hiwalay na inoobserbahan ang praktikal na kakayahan.
-7. **Self-check.** Basahin ang tanong ng check at hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. **Obserbasyon:** Ano ang nakita ni Riza, at ano ang hindi pa niya alam? Ihiwalay ang naipong tubig sa hindi napatunayang sanhi ng sakit.
+2. **Educator:** Ibigkas ang pambungad na tanong sa pamilya. Makinig muna at gumamit ng mensaheng aprubado ng health team.
+3. **Organizer:** Mag-anyaya ng talakayan. Kapag hindi maaari ang iminungkahing oras, makinig at magtanong ng ibang oras; huwag sabihing napagkasunduan na ang gawain.
+4. **Provider at tala:** Kumpirmahin ang contact at lokal na paraan, ipaliwanag ang hakbang, at itala lamang ang aktwal na ginawa. Balikan ang pagpili ng tala sa 1.1.5.
+5. **Handover:** Ipakita ang tatlong bahagi: nakita, ginawa, at kailangan. Ihambing ang notebook, tagubilin, at ulat; tama ba ang tatanggap?
+6. **Sariling pagganap:** Sagutin ang online na tanong, saka ipaliwanag ang mga tungkulin at bigkasin ang sariling handover.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Tugon sa karaniwang sagot
 
-- **May sanhi sa handover** ("ang tubig ang nagpapasakit sa mga bata"). Kilalanin ang malasakit sa mga bata, saka itanong: *"Nakita mo ba iyon, o iyon ang sa tingin mo? Ano ang aktuwal mong nakita?"* Ilipat ang pag-aalala sa linyang "Kailangan" bilang tanong sa midwife.
-- **"Service Provider lang ang sitwasyong iyan."** Tanggapin, saka itanong: *"May pagtuturo ba roon? May iba ka bang isinama?"* Maaaring maraming tungkulin sa iisang sitwasyon.
-- **Napakahabang ulat.** Pasalamatan sa pagiging masinsin, saka ipaulit sa tatlong linya: nakita, nagawa, kailangan.
-- **"Wala nang gagawin — nasabihan ko na ang pamilya."** Itanong: *"Ano ang ipinapaulat sa iyo ng midwife?"* Kasama sa tagubilin ang pag-uulat ng kailangan pang aksyon.
+- **Tala lamang ang ulat:** Itanong kung natugunan ang pagtanong at kung ano pa ang kailangan.
+- **May inaangking diagnosis:** Itanong: “Nakita ba iyon, o hinala lamang?” Ilagay ang alalahanin bilang tanong para sa health team.
+- **BHW lamang ang nagpasiya:** Ibalik sa pakikinig sa oras at mungkahi ng mga residente.
+- **Mahaba ang handover:** Gamitin muna ang nakita, ginawa, at kailangan bilang gabay, saka subukan nang wala ang card.
 
-## [misconception] Karaniwang maling akala
+## [misconception] Karaniwang maling pagkaunawa
 
-**"Magandang ulat ang nagsasabi sa midwife kung ano ang problema — mas marami akong konklusyon, mas nakatutulong ako."** Gusto ng BHW na maging kapaki-pakinabang, at mas parang nakatutulong ang pagbibigay ng sagot kaysa obserbasyon. Itama ito nang hindi napapahiya ang sinuman gamit ang maling sagot sa check ("Tiyak na may sakit na ang lahat doon"), hindi ang salita ng isang kalahok: itanong sa grupo kung ano ang magagawa ng midwife sa pangungusap na iyon kumpara sa "May tubig sa tatlong bakuran; naitala ko; kailangan ko ng gabay sa susunod na hakbang." Ang kapaki-pakinabang na handover ay naghihiwalay sa nakita, ginawa, at kailangan, at iniiwan sa health team ang konklusyon.
+Hindi sapat na matapos ang isang tungkulin lamang upang matugunan ang buong tagubilin. Kailangang ipaliwanag ang tatlong tungkulin at kung ano pa ang hindi tapos.
 
-## [practice] Gawaing pagsasanay
+## [practice] Role-play at maikling ulat
 
-Magkapares, gaganap ang isang BHW bilang midwife at ang isa bilang Riza. Magbibigay si "Riza" ng pasalitang handover tungkol sa naipong tubig sa tatlong linya — nakita, nagawa, kailangan pa — saka sasabihin kung anong mga tungkulin ang ginamit niya at paano niya sinunod ang tagubilin. Maaaring magtanong ng isang paglilinaw ang "midwife", at dapat itong sagutin ni "Riza" nang walang iniimbento. Magpalit ng papel, at sa pagkakataong ito gumamit ng sitwasyon mula sa sariling barangay ng BHW (walang pangalan ng residente). Panoorin ang pasalitang handover ng bawat BHW; huwag umasa sa nakasulat na tala.
+Maggrupo ng tatlo: BHW, residente, at midwife/tagamasid. May naipong tubig sa tatlong bakuran; may tanong ang residente at gusto niyang makausap ang health team. Ibigay ng midwife ang tagubilin at kathang-isip na contact. Hilingin sa BHW na makinig, mag-anyaya ng mga makakatuwang, ipaliwanag ang kinumpirmang hakbang, gumawa ng maikling practice note, at mag-ulat. Pagpalitin ang mga papel. Itanong: “Aling tungkulin ang ginamit mo sa bawat hakbang?”
 
-## [answer-key] Susi sa self-check
+## [answer-key] Gabay sa sagot
 
-Iisa ang check sa aralin. Nasa dulo ito ng Read ("Gamitin ang natutuhan") at nasa huling slide rin; iisang tanong ito, kaya isang beses lang itong sinasagot dito.
+Unang option ang kumpletong ulat: may nakita, ginawa, at kailangan. Ang ikalawa ay hindi kumpleto; ang ikatlo ay may hindi napatunayang konklusyon. Sa role-play, tiyaking tugma ang tala at ulat at maipaliwanag ang tatlong tungkulin.
 
-- **"Aling ulat ang sumusunod sa tagubilin nang walang imbentong konklusyon?"** → **May tubig sa tatlong bakuran; naitala ko; kailangan ko ng gabay sa susunod na hakbang.** Naihihiwalay nito ang obserbasyon, nagawa, at kailangan.
-  - Mali ang *Tiyak na may sakit na ang lahat doon*: nag-iimbento ito ng konklusyon mula sa obserbasyon sa paligid. Hindi diagnosis o napatunayang sanhi ng sakit ang naipong tubig.
-  - Mali ang *Wala nang kailangang gawin*: ipinaulat ng midwife ang kailangan pang aksyon, at hindi puwedeng isara ng BHW nang mag-isa ang sitwasyon.
-- Paalalahanan ang grupo sa feedback: hindi praktikal na assessment ang pagpili ng sagot. Ang pasalitang handover sa gawaing pagsasanay ang praktikal na assessment.
+## [observe] Obserbahan ang praktikal na kakayahan
 
-## [observe] Ano ang oobserbahan
+- **Kaya na:** walang gabay naipapaliwanag ang tatlong tungkulin at pagsunod sa tagubilin, kumpleto ang tatlong bahagi ng handover, tugma sa tala, at tama ang tatanggap; walang imbentong konklusyon.
+- **Kailangan pa ng practice:** wasto ang pangunahing ulat ngunit may kulang na bahagi o tungkulin; nakukumpleto matapos ang tanong.
+- **Hindi pa:** may hindi napatunayang sanhi o diagnosis, o hindi maihiwalay ang nakita, ginawa, at kailangan kahit may gabay.
 
-Gamitin ang observation indicator ng aralin — *maipaliwanag ang mga papel na kailangan sa sitwasyon at makapagbigay ng maikling handover ayon sa tagubilin* — habang ginagawa ang gawaing pagsasanay:
+Itala ang naobserbahang pagganap nang hiwalay sa online na pagkumpleto. Ang tamang sagot at panonood ng video ay hindi praktikal na assessment.
 
-- **Kaya na:** nang walang gabay, nagbibigay ang BHW ng handover na may tatlong bahagi (nakita, nagawa, kailangan), walang imbentong konklusyon, napapangalanan ang mga tungkuling ginamit, at naipapaliwanag kung paano sinunod ang tagubilin ng midwife.
-- **Kailangan pa ng practice:** maayos ang handover ng BHW pero may kulang na isang bahagi o hindi nabanggit ang mga tungkulin, at nabubuo lang matapos mong magtanong (halimbawa, *"At ano pa ang kailangan?"* o *"Anong mga tungkulin ang ginamit mo?"*).
-- **Hindi pa:** sinasabi ng BHW ang sanhi o diagnosis na parang tiyak, o iniuulat na wala nang kailangan, at hindi maihiwalay ang nakita, ginawa, at kailangan kahit may gabay.
+## [support] Suporta at susunod na pag-aaral
 
-Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Ipakita muna ang halimbawang handover at ipatukoy ang tatlong bahagi. Subukan muli na may card, saka wala. Balikan ang 1.1.2–1.1.5 ayon sa kailangan. Ituloy ang komunikasyon sa 1.6, community mobilization sa Common Competencies, at health-promotion teaching sa Core Competencies. Kumpirmahin ang kasalukuyang available na mga aralin bago magbigay ng link.
 
-## [support] Kung kailangan ng dagdag na suporta
+## [sources-review] Sanggunian at pagsusuri
 
-- Ibigay ang halimbawang handover ng aralin at ipaturo kung aling bahagi ang nakita, nagawa, at kailangan bago subukan ang sarili nila.
-- Hayaang gamitin ang tatlong salitang *Nakita · Nagawa · Kailangan* sa isang card para sa isa pang subok, saka wala na.
-- Kung napagpapalit nila ang mga tungkulin, ibalik sila sa halimbawang "Isang umaga, maraming gawain" sa araling Ang BHW at ang HEPO.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong sitwasyon ng naipong tubig, pasalita, hindi nakasulat.
-
-## [sources-review] Sanggunian at tala sa pagrepaso
-
-- Day 1 presentation pp. 5, 9, 10, 11, 12; BHW Reference Manual pp. 11–12; Facilitator Guide PDF 19–20.
-- Ang talahanayan sa Facilitator Guide PDF 19 ay naglalaan ng anim na oras sa module; hindi bababa sa tatlong oras ang nasa salaysay sa PDF 20. Ang 60 minuto sa itaas ay bahagi ng araling ito sa plano ng module.
-- Kathang-isip ang sitwasyon ng naipong tubig at ang tagubilin ng midwife.
-- Ugnayan sa kasanayan: komunikasyon sa subchapter 1.6 (Module 6, Epektibong Komunikasyon); community mobilization sa Common Competencies; health-promotion teaching sa Core Competencies (Facilitator Guide PDF 20). Hindi pa available ang Chapters II at III sa prototype.
-- Hindi patunay ng praktikal na kakayahan ang tamang sagot sa self-check. Hiwalay ang pagtatasa sa self-check.
-- **Status ng pagrepaso:** kailangan pa ng pagrepaso ng eksperto sa nilalaman, visual, at gabay na ito bago ilathala.
+Day 1 presentation PDF pp. 5, 9–12; BHW Reference Manual PDF pp. 11–12; Facilitator Guide PDF pp. 19–20. Ang tagubilin, dialogue, at sitwasyon ay mga kathang-isip na halimbawa. Suriin ang bilingual copy, lokal na contact/handover, larawan, Gemini Read audio, at parehong animadong video bago publication. Ang review status ay authoring information.
 
 Draft for review

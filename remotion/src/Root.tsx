@@ -1,4 +1,5 @@
 import "./index.css";
+import { RolesApplicationStory, calculateRolesApplicationMetadata, ROLES_APPLICATION_FPS, ROLES_APPLICATION_FALLBACK_DURATION } from "./roles-application/RolesApplicationStory";
 import { Composition } from "remotion";
 import {
   HANDRUB_FALLBACK_DURATION,
@@ -182,6 +183,19 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={calculatePrimaryCareMetadata}
           durationInFrames={PRIMARY_CARE_FALLBACK_DURATION}
           fps={PRIMARY_CARE_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition
+          key={`roles-application-${language}`}
+          id={language === "fil" ? "RolesApplicationStoryFil" : "RolesApplicationStoryEn"}
+          component={RolesApplicationStory}
+          calculateMetadata={calculateRolesApplicationMetadata}
+          durationInFrames={ROLES_APPLICATION_FALLBACK_DURATION}
+          fps={ROLES_APPLICATION_FPS}
           width={854}
           height={480}
           defaultProps={{ language }}
