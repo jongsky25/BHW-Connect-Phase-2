@@ -253,6 +253,38 @@
       "caption_en": "A factual observation and question for the health team. Fictional illustration awaiting owner review.",
       "provenance": "Original built-in imagegen illustration generated 2026-10-03 for lesson 1.2.3. Fictional Vlanche, Mang Ernesto and midwife identity/style reference: /training/bhw-1-2/primary-care-next-step-a67521f903c0.png, with continuity from /training/bhw-1-2/vlanche-ernesto-7e4e35141628.png. Blank note is a teaching cue, not an official record. No owner or independent policy/clinical SME approval. Exact generation prompt: Use case: illustration-story. Create a NEW landscape educational story illustration for BHW Connect lesson 1.2.3, Health boards and health promotion. Input image is solely a fictional character identity and photographic style reference from lesson 1.2.2: retain recognizable Vlanche, Ernesto and midwife but compose a different scene and camera angle. In a simple Philippine barangay health station, Vlanche, a Filipina around 40 with short softly wavy black hair wearing teal polo and dark trousers, stands beside elderly Filipino Mang Ernesto with gray hair and cream collared shirt; the Filipina midwife with tied-back hair and light blue scrubs stands across a small table. They listen attentively and discuss a BLANK observation note about recurring community questions. Vlanche holds one clean unmarked note at waist height, midwife gestures naturally with an open hand, Ernesto listens. In background a small unbranded visual poster with simple silhouettes of a community gathering and speech bubbles suggests health education, with absolutely no writing or logos. Warm daylight, natural realistic Filipino faces, candid human atmosphere matching reference. Medium-wide 16:9 frame, all three faces and natural hands clearly visible, comfortable margins at sides and top, useful for contained desktop and phone lesson framing. No identifiable health records, legible writing, real officials, board meeting, medical procedure, medicines, emblems or watermarks. Do not reproduce the prior seated clinic conversation unchanged.\n",
       "review_status": "draft"
+    },
+    {
+      "id": "local-system-story",
+      "alt_fil": "Kuwentong may salaysay: mula sa tanong ng residente hanggang sa lokal na feedback.",
+      "alt_en": "Narrated story: from a resident question to local feedback.",
+      "caption_fil": "Kathang-isip na anim na tagpo na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.2.3; original built-in imagegen illustration generated 2026-10-03 with fictional Vlanche/Mang Ernesto/midwife continuity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Boundaries measured from decoded PCM sample counts; authored script/timing text preserved and captions derived from timings. New media are draft; no owner or independent policy/clinical SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-eb5fd594c7fe.mp4",
+          "content_hash": "eb5fd594c7fee161e9a687c6c90bcbf31617efb5db33fd52524b3d2bf3748b5e",
+          "duration_s": 78,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-9b2a873284ec.vtt",
+            "content_hash": "9b2a873284ec39287eec4b61cd79eeafb517b6682c9b906805936413e3793404"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-2/uhc-local-system-gemini-en-25d3c2f16e2f.mp4",
+          "content_hash": "25d3c2f16e2fe3e7678c2bc197b89c0893407e86fb18db6d154d6bb5a0846df2",
+          "duration_s": 72,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-local-system-gemini-en-c18fa4b452ef.vtt",
+            "content_hash": "c18fa4b452efe419c4d8c866846d1005a36f1a8f8fd8afe2e70078ffe8ea3da9"
+          }
+        }
+      },
+      "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-d02e2b385c81-poster.jpg",
+      "content_hash": "d02e2b385c81d9ac31629feb13a5a1e503f25f81a56d4b6f08e844cb6851892e"
     }
-  ]
+  ],
+  "featured_asset_id": "local-system-story"
 }

@@ -21,6 +21,31 @@ const fileHash=src=>existsSync(path.join(root,'public',src.slice(1)))?sha(readFi
 const ids=['section-5','local-system-board','local-system-observation','local-system-promotion','local-system-feedback','local-system-check'];
 
 describe('lesson 1.2.3 health boards and health promotion',()=>{
+  it('ships twelve current Gemini recordings and measured bilingual story assets',()=>{
+    for(const options of [{},{provider:'gemini'}])expect(planReferenceNarration(modules,manifest,fileHash,options).every(item=>item.action==='skip')).toBe(true);
+    for(const id of ids)for(const language of ['fil','en']){
+      const track=manifest.lessons['uhc-local-system'].sections[id][language];
+      expect(track.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');
+      expect(fileHash(track.src)).toBe(track.sha256);
+      expect(track.duration_seconds).toBeGreaterThan(15);
+      expect(track.timings.some(t=>t.zone==='heading')).toBe(true);
+      expect(track.timings.some(t=>t.zone==='body')).toBe(true);
+      expect(track.timings.some(t=>t.zone==='takeaway')).toBe(true);
+      expect(track.timings.every(t=>t.end_ms>t.start_ms&&t.end_ms<=track.duration_seconds*1000+2)).toBe(true);
+    }
+    const story=source.assets.find(a=>a.id===source.featured_asset_id);
+    expect(story.id).toBe('local-system-story');expect(story.review_status).toBe('draft');
+    expect(fileHash(story.path)).toBe(story.content_hash);
+    for(const language of ['fil','en']){
+      const video=story.videos[language];const timing=JSON.parse(readFileSync(path.join(root,`remotion/public/uhc-local-system/narration-${language}.json`),'utf8'));
+      expect(fileHash(video.path)).toBe(video.content_hash);expect(fileHash(video.captions.path)).toBe(video.captions.content_hash);
+      expect(video.duration_s).toBeLessThanOrEqual(90);expect(timing.provider).toBe('gemini');expect(timing.voice).toBe('Kore');
+      expect(timing.beats.map(b=>b.text)).toEqual(LOCAL_SYSTEM_BEATS.map(b=>b[language]));
+      const vtt=readFileSync(path.join(root,'public',video.captions.path.slice(1)),'utf8');
+      for(const b of timing.beats){expect(vtt).toContain(b.text);expect(b.end_ms).toBeGreaterThan(b.start_ms);}
+      expect(timing.beats.at(-1).end_ms).toBeLessThanOrEqual(timing.durationSeconds*1000+2);
+    }
+  });
   it('preserves immutable metadata and the surviving anchor while expanding bilingual coverage',()=>{
     expect(source.manifest).toEqual({lesson_key:'uhc-local-system',position:2,title_fil:'Health board at health promotion',title_en:'Health boards and health promotion',objectives_fil:['Maipaliwanag at mailapat sa isang sitwasyon: health board at health promotion.'],objectives_en:['Explain and apply in a situation: health boards and health promotion.'],required:true});
     expect(source.sections.map(s=>s.id)).toEqual(ids);
