@@ -5,15 +5,12 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { synthesizeWithGemini, GEMINI_TTS_MODEL, GEMINI_VOICE } from "./lib/tts-providers/gemini.mjs";
+import { synthesizeWithGemini, GEMINI_TTS_MODEL, GEMINI_VOICE, PRIMARY_CARE_STORY_STYLES } from "./lib/tts-providers/gemini.mjs";
 import { mp3AudioFrames, spokenText } from "./lib/reference-narration.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "remotion", "public", "uhc-primary-care");
-const styles = {
-  fil: "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give Mang Ernesto's question sincere curiosity. Let Vlanche's calm care come through clearly. Use a lively, hopeful rhythm for the four changes; slow slightly and emphasize the practical checks for benefit, chosen clinic, and local referral instructions. Stress that the clinician makes the referral decision. Vary pitch, emphasis, and pace naturally between scenes. Do not add or change words.",
-  en: "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto's question sincere curiosity. Let Vlanche's calm care come through clearly. Use a lively, hopeful rhythm for the four changes; slow slightly and emphasize the practical checks for benefit, chosen clinic, and local referral instructions. Stress that the clinician makes the referral decision. Vary pitch, emphasis, and pace naturally between scenes. Do not add or change words.",
-};
+const styles = PRIMARY_CARE_STORY_STYLES;
 
 async function main() {
   const language = process.argv[2];

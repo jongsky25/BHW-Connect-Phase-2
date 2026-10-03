@@ -20,7 +20,9 @@
         "m2.primary-care-provider",
         "m2.referral-system"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "primary-care-next-step"
+      ],
       "takeaway_fil": "Ang awtomatikong pagsama sa PhilHealth ang panimulang punto; tatlo pang hakbang ang kailangang unawain.",
       "takeaway_en": "Automatic PhilHealth inclusion is the starting point; three more changes shape the next step.",
       "check": null
@@ -30,7 +32,9 @@
       "concept_ids": [
         "m2.outpatient"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "primary-care-next-step"
+      ],
       "takeaway_fil": "Benepisyo ang outpatient care na may tuntunin; tiyakin ang partikular na serbisyo at pasilidad.",
       "takeaway_en": "Outpatient care is a benefit with rules; check the specific service and facility.",
       "check": null
@@ -40,7 +44,9 @@
       "concept_ids": [
         "m2.primary-care-provider"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "primary-care-next-step"
+      ],
       "takeaway_fil": "Tiyakin kung may napiling clinic at paano makapipili; igalang ang pagpili ng residente.",
       "takeaway_en": "Check whether a clinic was selected and how to choose; respect the resident’s choice.",
       "check": null
@@ -51,7 +57,9 @@
         "m2.referral-system",
         "m2.program-integration"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "primary-care-next-step"
+      ],
       "takeaway_fil": "Ang health professional ang nagpapasya sa klinikal na referral; ang BHW ay umaalalay ayon sa lokal na tagubilin.",
       "takeaway_en": "A health professional makes clinical referral decisions; the BHW supports the local instructions.",
       "check": null
@@ -63,7 +71,9 @@
         "m2.primary-care-provider",
         "m2.referral-system"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "primary-care-next-step"
+      ],
       "takeaway_fil": "Magtanong, kumpirmahin ang lokal na detalye, at tulungan ang residente sa susunod na hakbang.",
       "takeaway_en": "Ask, confirm local details, and help the resident take the next step.",
       "check": null
@@ -74,7 +84,9 @@
         "m2.primary-care-provider",
         "m2.referral-system"
       ],
-      "asset_ids": [],
+      "asset_ids": [
+        "primary-care-next-step"
+      ],
       "takeaway_fil": "Tiyakin ang napiling clinic at lokal na proseso; ipaubaya sa clinician ang referral decision.",
       "takeaway_en": "Confirm the chosen clinic and local process; leave the referral decision to the clinician.",
       "check": {
@@ -135,7 +147,10 @@
       "source_ids": [
         "manual-uhc",
         "ra11223",
-        "philhealth-selection"
+        "philhealth-selection",
+        "philhealth-yakap-rights",
+        "philhealth-yakap-clinics",
+        "philhealth-digital-yes"
       ]
     },
     {
@@ -185,7 +200,7 @@
     {
       "id": "ra11223",
       "title": "Republic Act No. 11223 — UHC Act, sections 4, 6 and 18",
-      "url": "https://www.philhealth.gov.ph/about_us/RA11223_UHC.pdf"
+      "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html"
     },
     {
       "id": "philhealth-yakap",
@@ -199,25 +214,51 @@
     },
     {
       "id": "doh-networks",
-      "title": "DOH National Objectives for Health 2023–2028 — primary care networks and patient navigation",
-      "url": "https://doh.gov.ph/wp-content/uploads/2024/01/National-Objectives-for-Health-2023-2028.pdf"
+      "title": "DOH official release, 24 January 2023 — UHC implementation, provider networks and patient navigation",
+      "url": "https://cfermtc.doh.gov.ph/doh-vows-strengthened-implementation-of-universal-health-care-in-accordance-with-the-philippine-development-plan-for-2023-2028/"
+    },
+    {
+      "id": "philhealth-digital-yes",
+      "title": "PhilHealth Advisory 2026-0029 — Digital YAKAP Empanelment Slip, signed 5 May 2026",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0029.pdf",
+      "pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "philhealth-yakap-rights",
+      "title": "PhilHealth Advisory 2026-0003 — Member rights under YAKAP",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0003.pdf",
+      "pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "philhealth-yakap-clinics",
+      "title": "PhilHealth Advisory 2026-0023 — Fixed clinic and mobile/telemedicine empanelment requirements",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0023.pdf",
+      "pdf_pages": [
+        1,
+        2,
+        3
+      ]
     }
   ],
   "assets": [
     {
       "id": "uhc-primary-care-story",
-      "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-dd4f64832ebc-poster.jpg",
-      "content_hash": "dd4f64832ebca39197e0defa7ba4e99e275572d31f65a0b29dc00609d8cd042c",
+      "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-1256e7284882-poster.jpg",
+      "content_hash": "1256e72848828ece13a4ceb537e6c30d9083d8dcb38b708830d4d204f06b1610",
       "alt_fil": "Animadong kuwento nina BHW Vlanche at Mang Ernesto tungkol sa outpatient benefit, pagpili ng primary care clinic, at lokal na referral pathway.",
       "alt_en": "Animated story of BHW Vlanche and Mang Ernesto about an outpatient benefit, choosing a primary care clinic, and the local referral pathway.",
-      "caption_fil": "Kathang-isip na halimbawa; Filipino at English na may Gemini narration at captions. Inaprubahan ng may-ari matapos mapakinggan ang dalawang preview noong 2026-10-02.",
-      "caption_en": "A fictional example; Filipino and English with Gemini narration and captions. Owner approved both previews after listening on 2026-10-02.",
-      "provenance": "Original code-authored Remotion animation (remotion/src/uhc-primary-care) for lesson 1.2.2. Reuses the owner-approved 1.2.1 fictional Vlanche and Mang Ernesto illustration for character continuity; no logos, forms, provider name, or benefit guarantee. Filipino and English expressive narration generated scene by scene with Gemini 3.8 Flash TTS (Kore), measured from audio samples; timing manifests in remotion/public/uhc-primary-care. Owner approved both previews on 2026-10-02. No independent policy or clinical SME approval recorded.",
-      "review_status": "approved",
+      "caption_fil": "Kathang-isip na halimbawa na may Gemini narration at captions. Bagong larawan at render: hinihintay ang pagsusuri ng may-ari.",
+      "caption_en": "Fictional example with Gemini narration and captions. New illustration and render await owner review.",
+      "provenance": "Original Remotion animation for lesson 1.2.2. New lesson-specific image generated with built-in imagegen on 2026-10-03, referencing the 1.2.1 fictional Vlanche/Mang Ernesto image. Gemini TTS model gemini-3.8-flash-tts, voice Kore; existing expressive scene audio and measured timings retained because the bilingual scripts are unchanged. Captions use those measured boundaries. Earlier owner approval on 2026-10-02 applies to the prior renders only; revised illustration, posters and videos remain draft pending owner review. No independent policy or clinical SME approval recorded.",
+      "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-2c1ace75bb0f.mp4",
-          "content_hash": "2c1ace75bb0fefb8265e2c01fe14b2968dc03c2254cc295fe7cce2893c9e842e",
+          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-c13af8ecc16e.mp4",
+          "content_hash": "c13af8ecc16ea74d6e9ac0f732b682474fe003176216cde0a48eb55230f1a08f",
           "duration_s": 76,
           "captions": {
             "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-33488b566944.vtt",
@@ -225,8 +266,8 @@
           }
         },
         "en": {
-          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-d9ff53ab0ae2.mp4",
-          "content_hash": "d9ff53ab0ae2da226f6cd911844a27b747d9a4850608db117f7ea3862eb95713",
+          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-4f155cfa1a4c.mp4",
+          "content_hash": "4f155cfa1a4c87cc3de457cf466d7f3d9e1b42bcdda9bb3e0dc9c7b112ecd4e5",
           "duration_s": 83,
           "captions": {
             "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-db7f831ea66a.vtt",
@@ -234,6 +275,17 @@
           }
         }
       }
+    },
+    {
+      "id": "primary-care-next-step",
+      "path": "/training/bhw-1-2/primary-care-next-step-a67521f903c0.png",
+      "content_hash": "a67521f903c040e83eccc4be8a6c97a4b5eaac37887ccbd2950b5eb705d67cb3",
+      "alt_fil": "Kinukumpirma nina BHW Vlanche at Mang Ernesto ang susunod na hakbang kasama ang midwife sa health station, gamit ang isang blangkong tala.",
+      "alt_en": "BHW Vlanche and Mang Ernesto confirm the next step with a midwife at the health station, using a blank note.",
+      "caption_fil": "Clinic · benepisyo · lokal na tagubilin — tiyakin kasama ang health team.",
+      "caption_en": "Clinic · benefit · local instructions — confirm with the health team.",
+      "review_status": "draft",
+      "provenance": "Original built-in imagegen image generated 2026-10-03, Asia/Manila. Fictional Vlanche and Mang Ernesto identity/style reference: /training/bhw-1-2/vlanche-ernesto-7e4e35141628.png. Blank note and midwife support a primary-care next-step conversation; no clinical procedure or provider guarantee. Newly generated package awaits owner review. Generation prompt: Original landscape educational story image for lesson 1.2.2, Primary care and referral. Reference: vlanche-ernesto-7e4e35141628.png for fictional character identity and natural visual style. Preserve Vlanche: Filipina around 40, short softly wavy black hair, teal polo and dark trousers. Preserve Ernesto: elderly Filipino man with gray hair, warm weathered face and cream short-sleeved collared shirt. New scene: they sit with a Filipina midwife in plain light-blue scrubs at a small table in an airy unbranded barangay health station. Vlanche listens supportively with a blank notebook; the midwife gestures to a blank sheet; Ernesto asks a question. Warm Philippine daylight, leafy background, realistic photographic illustrative style, medium waist-up landscape framing. Group all three near the center for desktop and phone views. Natural hands and bodies. No legible text, personal data, logos, provider names, medicine, clinical procedure, treatment equipment, guarantees or watermarks. Prompt: Use case: illustration-story. Create an original landscape 1536x1024 educational story image for BHW Connect lesson 1.2.2, Primary care and referral. Input image is ONLY a character identity and natural visual-style reference: preserve fictional BHW Vlanche's appearance (Filipina woman around 40, short softly wavy black hair, teal polo, dark trousers) and Mang Ernesto's appearance (elderly Filipino man, gray hair, warm weathered face, cream short-sleeved collared shirt). New scene: Vlanche and Mang Ernesto sit with a Filipina midwife/health-team member in plain light-blue scrubs at a small table in an airy unbranded barangay health station. They are calmly confirming the next step for his primary care consultation. Vlanche listens supportively and holds a small blank notebook while the midwife gestures gently to a blank sheet on the table, Ernesto is engaged and asking a question. Warm natural Philippine daylight, leafy background, realistic photographic illustrative style matching reference, respectful and reassuring. Composition: tightly group all three people near the central 65% of the landscape with every face inside the middle 60%, useful for desktop wide and phone crops, faces prominent, medium waist-up framing, no disconnected composite panels. The blank paper is a simple visual cue for clinic choice, applicable benefit, and locally confirmed instructions; no legible text. Keep hands and bodies natural. No personal data, no official logos, no provider or hospital names, no medication, no clinical procedure, no medical equipment suggesting treatment, no guarantees, no watermarks. This is a new image, not an edit of the reference scene."
     }
   ],
   "featured_asset_id": "uhc-primary-care-story"

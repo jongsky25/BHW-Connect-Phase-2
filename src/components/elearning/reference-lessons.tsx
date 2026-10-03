@@ -226,10 +226,10 @@ export function ReferenceLessons(props: Props) {
           }
       : lesson?.lesson_key === "uhc-primary-care"
         ? {
-            src: "/training/bhw-1-2/vlanche-ernesto-7e4e35141628.png",
+            src: "/training/bhw-1-2/primary-care-next-step-a67521f903c0.png",
             alt: ui(
-              "Nakikinig si BHW Vlanche kay Mang Ernesto sa labas ng barangay health station habang pinag-uusapan nila ang susunod na hakbang.",
-              "BHW Vlanche listens to Mang Ernesto outside a barangay health station as they discuss his next step.",
+              "Kinukumpirma nina BHW Vlanche at Mang Ernesto ang susunod na hakbang kasama ang midwife sa health station, gamit ang isang blangkong tala.",
+              "BHW Vlanche and Mang Ernesto confirm the next step with a midwife at the health station, using a blank note.",
             ),
             caption: ui("Tiyakin ang susunod na hakbang", "Confirm the next step"),
           }

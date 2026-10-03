@@ -58,3 +58,8 @@ three roles together in an instruction, record, and handover. Its expressive
 Gemini Read narration and both captioned animations were approved by the
 owner for live publication on 2026-10-03; see
 `docs/lesson-116-layout-review.md`. Publish only `bhw-roles-application`.
+
+
+## Primary-care follow-through (lesson 1.2.2)
+
+For `uhc-primary-care`, Read and video share `PRIMARY_CARE_STORY_STYLES`: Ernesto's curious question, Vlanche's calm support, practical benefit/clinic/referral checks and an explicit clinician role boundary. The Read planner hashes the style as well as model, voice and wording; default regeneration preserves Gemini after edits. A new illustration can retain existing verified video voice/scripts/timings when they are unchanged, but both visual renders and their posters require new content-hashed paths and renewed owner review. A blank learning note must not be presented as an official PhilHealth form. Use contained lesson framing where a portrait crop would hide participants. Scoped narration `--apply` may prune historical audio across the module: inspect deletions and restore public files used by earlier published revisions before committing.
