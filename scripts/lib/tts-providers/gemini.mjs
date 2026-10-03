@@ -28,6 +28,7 @@ const DEFAULT_MP3_KBPS = 48;
 const MAX_ATTEMPTS = 6;
 
 const STYLES = {
+  hil: "Speak in natural Hiligaynon (Ilonggo), as spoken in Iloilo and Western Visayas in the Philippines. Use Hiligaynon pronunciation, word stress, and gently melodic sentence intonation, in a warm, clear voice at a steady teaching pace. Keep the exact words and English technical role names. Do not switch to Cebuano or Tagalog, translate, or add words.",
   ceb: "Speak in natural Cebuano (Bisaya), as spoken in the Philippines, in a warm, clear voice at a steady teaching pace. Keep the exact words and English technical role names. Do not switch to Tagalog or add words.",
   fil: "Speak in Filipino (Tagalog) in a warm, clear voice at a steady teaching pace, like a community health trainer.",
   en: "Speak in clear, warm English at a steady teaching pace, like a community health trainer.",
@@ -46,6 +47,7 @@ export const HEALTH_EDUCATOR_STORY_STYLES = {
 };
 
 export const ROLES_HEPO_STORY_STYLES = {
+  hil: "Speak in natural Hiligaynon (Ilonggo), as spoken in Iloilo and Western Visayas in the Philippines, as a warm, expressive community health storyteller. Use Hiligaynon pronunciation, word stress, and gently melodic sentence intonation. Give Riza's busy morning a lively rhythm, with gentle changes in pitch and pace, and slow slightly for the HEPO explanation. Preserve English technical role names. Read the exact text; do not switch to Cebuano or Tagalog, translate, or add words.",
   ceb: "Speak in natural Cebuano (Bisaya), as spoken in the Philippines, as a warm, expressive community health storyteller. Give Riza's busy morning a lively rhythm. Use gentle changes in pitch and pace, and slow slightly for the HEPO explanation. Preserve English technical role names. Read the exact text; do not switch to Tagalog, translate, or add words.",
   fil: "Speak in natural Filipino (Tagalog) as a warm, animated community health storyteller. Give Marites's busy morning a lively rhythm, then distinguish education, organizing, and service support with gentle changes in pitch and pace. Slow slightly for the HEPO explanation and end with an encouraging summary. Keep the guidance clear and respectful. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, animated community health storyteller. Give Marites's busy morning a lively rhythm, then distinguish education, organizing, and service support with gentle changes in pitch and pace. Slow slightly for the HEPO explanation and end with an encouraging summary. Keep the guidance clear and respectful. Do not add or change words.",

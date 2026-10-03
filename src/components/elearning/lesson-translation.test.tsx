@@ -20,24 +20,24 @@ const parseRead = (language: string) => readFileSync(path.join(directory, `read.
     if (index % 3 === 0) out.push({ id: part, heading: parts[index + 1], body: parts[index + 2].trim() });
     return out;
   }, []);
-function fixture() {
+function fixture(language: "ceb" | "hil" = "ceb") {
   const authored = json("lesson.json"), fil = parseRead("fil"), en = parseRead("en");
   const lesson = { ...authored.manifest, id: "lesson", module_id: "module", published_revision_id: "revision", created_at: "2026-10-03",
     revision: { id: "revision", lesson_id: "lesson", revision_key: "source", content_hash: "source", created_by: "author", created_at: "2026-10-03",
       ...authored, read_sections: authored.sections.map((s: object, i: number) => ({ ...s, heading_fil: fil[i].heading, body_fil: fil[i].body,
         heading_en: en[i].heading, body_en: en[i].body })), slides: json("slides.json") } } as PublishedLesson;
-  const translation = structuredClone(json("pilot.ceb.json")) as LessonTranslation;
+  const translation = structuredClone(json(`pilot.${language}.json`)) as LessonTranslation;
   // Deterministic audio and video fixtures exercise switching and caption selection.
   translation.narration = Object.fromEntries(translation.read_sections.map(section => [section.id, {
-    src: `/fixture/${section.id}.ceb.mp3`, duration_seconds: 30,
+    src: `/fixture/${section.id}.${language}.mp3`, duration_seconds: 30,
     timings: buildNarrationZones(section).map((zone, i) => ({ ...zone, start_ms: i * 1000, end_ms: (i + 1) * 1000 })),
   }]));
-  translation.video = { path: "/fixture/story.ceb.mp4", content_hash: "ceb", duration_s: 90,
-    captions: { path: "/fixture/story.ceb.vtt", content_hash: "ceb-vtt" } };
+  translation.video = { path: `/fixture/story.${language}.mp4`, content_hash: language, duration_s: 90,
+    captions: { path: `/fixture/story.${language}.vtt`, content_hash: `${language}-vtt` } };
   return { lesson, translation };
 }
-function view(preview = true, approved = false) {
-  const { lesson, translation } = fixture();
+function view(preview = true, approved = false, language: "ceb" | "hil" = "ceb") {
+  const { lesson, translation } = fixture(language);
   if (approved) translation.review_status = "approved";
   const resume = vi.fn().mockResolvedValue(undefined);
   const result = render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]} completed={[]} resumes={[]}
@@ -101,5 +101,59 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
     unmount(); // Flush the normal trailing resume debounce.
     await vi.waitFor(() => expect(resume).toHaveBeenCalled());
     expect(resume.mock.calls[0][0]).toMatchObject({ lesson_id: "lesson", revision_id: "revision", language: "fil", modality: "slides" });
+  });
+});
+
+describe("lesson 1.1.1 Hiligaynon pilot", () => {
+  const selectHiligaynon = () => fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: "hil" } });
+  it("offers both complete draft languages only in staff preview", () => {
+    const { lesson, translation } = fixture("hil");
+    expect(translationMatchesLesson(lesson, translation)).toBe(true);
+    expect(translationsForLesson(lesson, true).map(t => t.language)).toEqual(["ceb", "hil"]);
+    expect(translationsForLesson(lesson, false)).toEqual([]);
+    lesson.revision.slides[0].display_fil += " Revised.";
+    expect(translationsForLesson(lesson, true)).toEqual([]);
+  });
+  it("loads Hiligaynon reading, controls and audio, and restores Filipino", () => {
+    const { container } = view(true, false, "hil"); selectHiligaynon();
+    expect(screen.getByRole("heading", { name: "Isa ka aga, madamo nga buluhaton" })).toBeInTheDocument();
+    expect(screen.getByText("Mapaathag kon paano nagaangot ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo sa papel sang BHW.")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Pamatii/ })).toBeInTheDocument();
+    expect(container.querySelector("audio")).toHaveAttribute("src", "/fixture/morning.hil.mp3");
+    expect(container.querySelector("article")).toHaveAttribute("lang", "hil");
+    fireEvent.change(screen.getByRole("combobox", { name: "Pinulongan sang leksiyon" }), { target: { value: "" } });
+    expect(screen.getByRole("heading", { name: "Isang umaga, maraming gawain" })).toBeInTheDocument();
+    expect(container.querySelector("audio")).not.toBeInTheDocument();
+  });
+  it("uses Hiligaynon slides and feedback with the original correct answer", () => {
+    view(true, false, "hil"); selectHiligaynon();
+    fireEvent.click(screen.getByRole("button", { name: "Mga slide" }));
+    expect(screen.getByText("11:00 · Maggiya")).toBeInTheDocument();
+    for (let i = 0; i < 4; i++) fireEvent.click(screen.getByRole("button", { name: "Masunod nga bahin" }));
+    fireEvent.click(screen.getByRole("button", { name: "Health Educator lamang" }));
+    expect(screen.getByText("Indi pa husto. Tilawi liwat.")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Community Organizer" }));
+    expect(screen.getByText("Husto!")).toBeInTheDocument();
+    expect(screen.getByText(/^Community Organizer: gin-angot/)).toBeInTheDocument();
+  });
+  it("uses Hiligaynon video, captions and its text alternative", () => {
+    const { container } = view(true, false, "hil"); selectHiligaynon();
+    fireEvent.click(screen.getByRole("button", { name: "Sugilanon nga may salaysay" }));
+    expect(container.querySelector("video source")).toHaveAttribute("src", "/fixture/story.hil.mp4");
+    expect(container.querySelector("track")).toHaveAttribute("srcLang", "hil");
+    expect(container.querySelector("track")).toHaveAttribute("label", "Hiligaynon (Ilonggo)");
+    expect(screen.getByText("Mga tikang bilang teksto")).toBeInTheDocument();
+  });
+  it("replaces Cebuano media when switching directly to Hiligaynon", () => {
+    const { lesson, translation: cebuano } = fixture();
+    const { translation: hiligaynon } = fixture("hil");
+    const { container } = render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]} lessons={[lesson]} completed={[]}
+      resumes={[]} modules={[]} locale="fil" initialLessonId="lesson" readOnly translations={[cebuano, hiligaynon]}
+      onResume={vi.fn()} onComplete={vi.fn()}/>);
+    selectCebuano();
+    expect(container.querySelector("audio")).toHaveAttribute("src", "/fixture/morning.ceb.mp3");
+    fireEvent.change(screen.getByRole("combobox", { name: "Pinulongan sa leksiyon" }), { target: { value: "hil" } });
+    expect(container.querySelector("audio")).toHaveAttribute("src", "/fixture/morning.hil.mp3");
+    expect(screen.getByRole("combobox", { name: "Pinulongan sang leksiyon" })).toHaveValue("hil");
   });
 });

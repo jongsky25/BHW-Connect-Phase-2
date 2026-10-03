@@ -2,6 +2,7 @@
 // The three duties are connected examples, not an appointment or org chart.
 
 import translation from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo/translation.hil.json" with { type: "json" };
 
 type BaseRolesHepoBeat = {
   id: string;
@@ -70,9 +71,12 @@ const baseBeats: BaseRolesHepoBeat[] = [
   },
 ];
 
-export type RolesHepoBeat = BaseRolesHepoBeat & { ceb: string; title_ceb: string; detail_ceb: string };
+export type RolesHepoBeat = BaseRolesHepoBeat & { ceb: string; title_ceb: string; detail_ceb: string; hil: string; title_hil: string; detail_hil: string };
 export const ROLES_HEPO_BEATS: RolesHepoBeat[] = baseBeats.map((beat, index) => {
   const localized = translation.story_beats[index];
   if (localized.id !== beat.id) throw new Error("Cebuano story beat order does not match lesson 1.1.1");
-  return { ...beat, ceb: localized.text, title_ceb: localized.title, detail_ceb: localized.detail };
+  const ilonggo = hiligaynon.story_beats[index];
+  if (ilonggo.id !== beat.id) throw new Error("Hiligaynon story beat order does not match lesson 1.1.1");
+  return { ...beat, ceb: localized.text, title_ceb: localized.title, detail_ceb: localized.detail,
+    hil: ilonggo.text, title_hil: ilonggo.title, detail_hil: ilonggo.detail };
 });

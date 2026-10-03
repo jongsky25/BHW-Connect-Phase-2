@@ -3,9 +3,10 @@ import type { LessonNarration } from "./reference-narration";
 import type { LessonAssetVideo, LessonCheck } from "./types";
 
 export type LessonText = (fil: string, en: string) => string;
+export type LessonTranslationLanguage = "ceb" | "hil";
 type TranslatedCheck = { prompt: string; options: string[]; feedback: string };
 export type LessonTranslation = {
-  language: "ceb";
+  language: LessonTranslationLanguage;
   label: string;
   lesson_key: string;
   review_status: "draft" | "approved";

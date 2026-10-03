@@ -678,7 +678,7 @@ export function ReferenceLessons(props: Props) {
               ))}
             </ul>
             {availableTranslations.length > 0 && <label className="flex flex-wrap items-center gap-2 text-sm font-medium">
-              {translation ? "Pinulongan sa leksiyon" : ui("Wika ng aralin", "Lesson language")}
+              {ui("Wika ng aralin", "Lesson language")}
               <select className="min-h-[44px] rounded border border-ink/20 bg-canvas px-3"
                 value={translation?.language ?? ""} onChange={event => setTranslationLanguage(event.target.value || null)}>
                 <option value="">{en ? "English" : "Filipino"}</option>

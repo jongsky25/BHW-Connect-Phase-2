@@ -1,0 +1,477 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "draft",
+  "lesson_key": "bhw-roles-hepo",
+  "title": "Ang BHW kag ang HEPO",
+  "objectives": [
+    "Mapaathag kon paano nagaangot ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo sa papel sang BHW."
+  ],
+  "read_sections": [
+    {
+      "id": "morning",
+      "takeaway": "Kabahin sang buluhaton sang BHW ang pagtudlo kag paghulag upod sa komunidad, dugang sa pagbulig sa serbisyo.",
+      "check": null,
+      "heading": "Isa ka aga, madamo nga buluhaton",
+      "body": "Alas-otso sang aga, may paghisugilanon parte sa panglawas si BHW Riza sa purok. Alas-diyes, nakighambal siya sa kagawad parte sa clean-up drive. Alas-onse, ginbuligan niya si Aling Nena nga makighambal sa midwife parte sa kinahanglanon sang iya bata. Isa lang ka BHW ang naghimo sining tatlo ka buluhaton. Sa kurikulum, ang katuyuan sang UHC amo ang pagpalig-on sang primary care kag pagpauswag sang panglawas; gani mas malapad ang papel sang BHW kaysa sa pagbulig lamang sa serbisyo."
+    },
+    {
+      "id": "prevention",
+      "takeaway": "Ang pagtudlo kag pag-organisa nagabulig sa pagpauswag sang panglawas.",
+      "check": null,
+      "heading": "Maghulag upod sa komunidad",
+      "body": "Kon nagakinahanglan sang pag-atipan ang mga residente, ginabuligan sila sang BHW nga makapalapit sa serbisyo sa panglawas. Nagatudlo man ang BHW kag nagadasig sa mga tawo nga mag-upod sa mga hilikuton para sa panglawas. Sa pagpaninlo sang barangay, nagapaambit si Riza sang impormasyon kag nagaagda sa mga residente nga magplano kag maghulag upod sa iya. Sa sini nga mga buluhaton, nagaangot ang edukasyon, pagpakigbahin sang komunidad, kag pagpalapit sa serbisyo."
+    },
+    {
+      "id": "hepo",
+      "takeaway": "Ang HEPO nagakahulugan sang Health Education and Promotion Officer. Ginapaathag sini ang nagaangot nga mga buluhaton sang BHW sa pagtudlo, pag-organisa, kag pagbulig sa serbisyo.",
+      "check": null,
+      "heading": "HEPO: pagpauswag sang panglawas",
+      "body": "Ginagamit sang Reference Manual ang tawag nga barangay-level Health Education and Promotion Officer ukon HEPO. Ginapaathag sini ang papel sang BHW sa pagpaambit sang impormasyon parte sa panglawas. Makita ini sa iya mga papel bilang Health Educator, Community Organizer, kag Health Service Provider. Ang koneksiyon nga ginapakita sa laragway nagakahulugan sang nagaangot nga mga buluhaton; indi ini opisyal nga organizational chart ukon pamatuod sang pormal nga pagtangdo sa posisyon."
+    },
+    {
+      "id": "knowledge",
+      "takeaway": "Ang bastante nga ihibalo amo ang pundasyon sang tatlo ka papel.",
+      "check": null,
+      "heading": "Antes magpaambit, maghanda",
+      "body": "Kinahanglan ni Riza sang bastante nga ihibalo parte sa mga prayoridad nga programa kag mga problema sa panglawas sa barangay. Antes magtudlo, ginasiguro niya nga maathag sa iya ang impormasyon nga iya ipaambit. Kon may detalye nga indi siya sigurado, ginakumpirma niya ini sa nagakaigo nga health worker kag ginagamit ang gin-aprobahan nga materyal. Indi kinahanglan magpakot sang sabat agod makabulig."
+    },
+    {
+      "id": "check",
+      "takeaway": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa sang komunidad, kag pagbulig sa serbisyo agod mapauswag ang panglawas.",
+      "check": {
+        "prompt": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
+        "options": [
+          "Health Service Provider",
+          "Community Organizer",
+          "Health Educator lamang"
+        ],
+        "feedback": "Community Organizer: gin-angot niya ang mga tawo kag gindasig sila nga maghulag. Mahimo man nga may pagtudlo sa amo nga buluhaton; mahimo nga magdungan ang mga papel."
+      },
+      "heading": "Gamita ang imo natun-an",
+      "body": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?"
+    }
+  ],
+  "slides": [
+    {
+      "id": "morning-slide",
+      "heading": "Isa ka aga, madamo nga buluhaton",
+      "display": "08:00 · Magtudlo\n10:00 · Mag-organisa\n11:00 · Maggiya\nAng BHW nagatudlo, nagaorganisa, kag nagabulig sa mga tawo nga makapalapit sa serbisyo.",
+      "check": null
+    },
+    {
+      "id": "prevention-slide",
+      "heading": "Maghulag upod sa komunidad",
+      "display": "Magpaambit sang ihibalo\nMag-agda sa mga tawo nga mag-upod\nMaghulag nga nagabuligay\nAng pagtudlo kag pag-organisa nagabulig sa pagpauswag sang panglawas.",
+      "check": null
+    },
+    {
+      "id": "hepo-slide",
+      "heading": "HEPO: pagpauswag sang panglawas",
+      "display": "Health Educator\nCommunity Organizer\nHealth Service Provider\nAng HEPO nagakahulugan sang Health Education and Promotion Officer.",
+      "check": null
+    },
+    {
+      "id": "knowledge-slide",
+      "heading": "Antes magpaambit, maghanda",
+      "display": "Mga prayoridad nga programa\nMga problema sa panglawas\nHusto nga impormasyon nga ipaambit\nAng bastante nga ihibalo amo ang pundasyon sang tatlo ka papel.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imo natun-an",
+      "display": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo.",
+      "check": {
+        "prompt": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
+        "options": [
+          "Health Service Provider",
+          "Community Organizer",
+          "Health Educator lamang"
+        ],
+        "feedback": "Community Organizer: gin-angot niya ang mga tawo kag gindasig sila nga maghulag. Mahimo man nga may pagtudlo sa amo nga buluhaton; mahimo nga magdungan ang mga papel."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, paghisugilanon upod sa komunidad, kag paggiya sa residente.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A04",
+      "alt": "Pag-obserbar, pagpakigbahin, kag pagbulig sa pagplano.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A02",
+      "alt": "Tatlo ka nagaangot nga papel sa pagpauswag sang panglawas.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "roles-hepo-story",
+      "alt": "Sa isa ka aga, nagatudlo si Riza, nagaagda sa mga residente nga magplano, kag nagagiya kay Aling Nena nga makighambal sa midwife. Nagaangot ining tatlo ka buluhaton sa papel sang BHW kag HEPO.",
+      "caption": "Hinimo nga halimbawa sang nagaangot nga mga papel sang BHW. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Si BHW Riza nagapakighambal sa mga residente; sa iya tupad, isa ka iloy kag bata nagapakighambal sa midwife.",
+    "caption": "Isa ka aga sa barangay"
+  },
+  "story_beats": [
+    {
+      "id": "morning",
+      "text": "Isa ka aga, tatlo ka buluhaton ang atubangon ni BHW Riza. Magatudlo siya sa purok, magapakigplano sa mga residente, kag magabulig kay Aling Nena nga makighambal sa midwife.",
+      "title": "Isa ka aga, tatlo ka buluhaton",
+      "detail": "08:00 · 10:00 · 11:00"
+    },
+    {
+      "id": "educate",
+      "text": "Sa paghisugilanon, nagapamati si Riza sa mga pamangkot sang mga tawo kag nagapaambit sang maathag kag gin-aprobahan nga impormasyon parte sa panglawas. Amo ini ang iya papel bilang Health Educator.",
+      "title": "Magtudlo",
+      "detail": "Magpamati kag magpaambit sang husto nga ihibalo."
+    },
+    {
+      "id": "organize",
+      "text": "Sa pagpaninlo sang barangay, ginaagda ni Riza ang mga residente nga magplano kag maghulag upod sa iya. Bilang Community Organizer, ginaangot niya ang mga tawo.",
+      "title": "Mag-organisa",
+      "detail": "Mag-agda sa mga tawo nga mag-upod."
+    },
+    {
+      "id": "guide",
+      "text": "Kon nagakinahanglan si Aling Nena sang bulig para sa iya bata, ginabuligan siya ni Riza nga makighambal sa midwife. Bilang Health Service Provider, ginagiyahan niya ang pamilya agod makapalapit sa serbisyo sa panglawas.",
+      "title": "Maggiya sa serbisyo",
+      "detail": "Magbulig nga makapalapit sa health worker."
+    },
+    {
+      "id": "hepo",
+      "text": "Ginagamit sang Reference Manual ang tawag nga barangay-level Health Education and Promotion Officer, ukon HEPO. Nagaangot diri ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo; indi ini pamatuod sang pormal nga pagtangdo sa posisyon.",
+      "title": "Nagaangot nga mga papel",
+      "detail": "HEPO · Pagpauswag sang panglawas"
+    },
+    {
+      "id": "summary",
+      "text": "Antes magpaambit, ginatun-an ni Riza ang mga prayoridad sang barangay kag ginakumpirma sa health worker ang detalye nga indi sigurado. Dumduma: magtudlo, mag-angot sang mga tawo, kag maggiya sa serbisyo gamit ang husto nga ihibalo.",
+      "title": "Magtudlo · Mag-angot · Maggiya",
+      "detail": "Ang husto nga ihibalo amo ang pundasyon."
+    }
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "source_text": "[\"bhw-roles-hepo\",\"Ang BHW at ang HEPO\",\"The BHW and HEPO\",[\"Maipaliwanag kung paano nagsasama ang pagtuturo, pag-oorganisa, at pagtulong sa serbisyo sa papel ng BHW.\"],[\"Explain how education, organizing, and service support work together in the BHW role.\"],[[\"morning\",[\"m1.uhc.shift\"],\"Isang umaga, maraming gawain\",\"One morning, many tasks\",\"Alas-otso, may talakayang pangkalusugan si BHW Riza sa purok. Alas-diyes, kausap niya ang kagawad tungkol sa clean-up drive. Alas-onse, tinutulungan niya si Aling Nena na makausap ang midwife tungkol sa pangangailangan ng anak nito. Iisang BHW ang gumagawa ng tatlo. Sa curriculum, ang direksyon ng UHC ay mas matibay na primary care at health promotion; kaya mas malawak ang papel kaysa pagtulong sa serbisyo lamang.\",\"At 8:00 a.m., BHW Riza leads a health discussion in the purok. At 10:00 a.m., she talks with the council member about a clean-up drive. At 11:00 a.m., she helps Aling Nena contact the midwife about her child’s needs. One BHW does all three. The curriculum describes UHC as strengthening primary care and health promotion, so the role extends beyond service support.\",\"Kasama sa gawain ng BHW ang pagtuturo at pagkilos kasama ang komunidad, bukod sa pagtulong sa serbisyo.\",\"A BHW teaches and acts with the community as well as helping people reach services.\",null],[\"prevention\",[\"m1.uhc.organizing\"],\"Kumilos kasama ang komunidad\",\"Act with the community\",\"Kapag nangangailangan ng pangangalaga ang mga residente, tinutulungan sila ng BHW na makalapit sa serbisyong pangkalusugan. Nagtuturo rin ang BHW at hinihikayat ang mga tao na makilahok sa mga gawaing pangkalusugan. Para sa paglilinis ng barangay, nagbabahagi si Riza ng impormasyon at inaanyayahan ang mga residente na makipagplano at kumilos. Magkaugnay sa mga gawaing ito ang edukasyon, pakikilahok ng komunidad, at paglapit sa serbisyo.\",\"When residents need care, the BHW helps them reach health services. The BHW also teaches and encourages people to join health activities. For Riza’s clean-up drive, she shares information and invites residents to plan and act with her. These tasks connect education, community participation, and access to services.\",\"Kasama ang pagtuturo at pag-oorganisa sa pagsulong ng kalusugan.\",\"Education and organizing contribute to health promotion.\",null],[\"hepo\",[\"m1.hepo.umbrella\"],\"HEPO: pagsusulong ng kalusugan\",\"HEPO: promoting health\",\"Ginagamit ng Reference Manual ang katawagang barangay-level Health Education and Promotion Officer o HEPO. Inilalarawan nito ang papel ng BHW sa pagbabahagi ng impormasyong pangkalusugan. Makikita ang papel na ito sa pagiging Health Educator, Community Organizer, at Health Service Provider. Ang ugnayan sa larawan ay paliwanag ng magkakaugnay na gawain; hindi ito opisyal na organizational chart o patunay ng appointment.\",\"The Reference Manual uses the term barangay-level Health Education and Promotion Officer, or HEPO. It describes the BHW’s role in sharing health information. This role is expressed through being a Health Educator, Community Organizer, and Health Service Provider. The visual connects related tasks; it is not an official organizational chart or proof of an appointment.\",\"Ang HEPO ay Health Education and Promotion Officer. Inilalarawan nito ang magkakaugnay na gawain ng BHW sa pagtuturo, pag-oorganisa, at pagtulong sa serbisyo.\",\"HEPO means Health Education and Promotion Officer. It describes the BHW’s connected work in education, organizing, and service support.\",null],[\"knowledge\",[\"m1.hepo.knowledge\"],\"Bago magbahagi, maghanda\",\"Prepare before sharing\",\"Kailangan ni Riza ng sapat na kaalaman sa mga prayoridad na programa at problemang pangkalusugan sa barangay. Bago magturo, sinisiguro niyang malinaw sa kanya ang impormasyong ibabahagi. Kapag may detalyeng hindi tiyak, kinukumpirma niya ito sa kaukulang health worker at ginagamit ang aprubadong materyal. Hindi kailangang hulaan ang sagot para makatulong.\",\"Riza needs adequate knowledge of the barangay’s priority health programs and problems. Before teaching, she makes sure she understands the information. When a detail is uncertain, she confirms it with the appropriate health worker and uses approved materials. Helping does not require guessing an answer.\",\"Sapat na kaalaman ang pundasyon ng tatlong tungkulin.\",\"Adequate knowledge supports all three roles.\",null],[\"check\",[\"m1.uhc.shift\",\"m1.uhc.organizing\",\"m1.hepo.umbrella\",\"m1.hepo.knowledge\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Tinipon ni Riza ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?\",\"Riza brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?\",\"Maaaring pagsamahin ng BHW ang pagtuturo, pag-oorganisa, at pagtulong sa serbisyo upang isulong ang kalusugan.\",\"A BHW can combine education, community organizing, and service support to promote health.\",[\"Tinipon ni Riza ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?\",\"Riza brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?\",[[\"Health Service Provider\",\"Health Service Provider\"],[\"Community Organizer\",\"Community Organizer\"],[\"Health Educator lamang\",\"Health Educator only\"]],1,\"Community Organizer: nag-uugnay siya ng mga tao at humihikayat ng pagkilos. Maaari ring may pagtuturo sa parehong gawain; hindi eksklusibo ang mga papel.\",\"Community Organizer: she connects people and encourages action. Education can also occur in the same activity; the roles are not exclusive.\"]]],[[\"morning-slide\",[\"m1.uhc.shift\"],\"Isang umaga, maraming gawain\",\"One morning, many tasks\",\"08:00 · Magturo\\n10:00 · Mag-organisa\\n11:00 · Gumabay\\nAng BHW ay nagtuturo, nag-oorganisa, at gumagabay sa serbisyo.\",\"08:00 · Educate\\n10:00 · Organize\\n11:00 · Guide\\nA BHW teaches, organizes, and helps people reach services.\",null],[\"prevention-slide\",[\"m1.uhc.organizing\"],\"Kumilos kasama ang komunidad\",\"Act with the community\",\"Magbahagi ng kaalaman\\nMag-anyaya ng pakikilahok\\nMagkatuwang na kumilos\\nKasama ang pagtuturo at pag-oorganisa sa pagsulong ng kalusugan.\",\"Share knowledge\\nInvite participation\\nAct together\\nEducation and organizing contribute to health promotion.\",null],[\"hepo-slide\",[\"m1.hepo.umbrella\"],\"HEPO: pagsusulong ng kalusugan\",\"HEPO: promoting health\",\"Health Educator\\nCommunity Organizer\\nHealth Service Provider\\nAng HEPO ay Health Education and Promotion Officer.\",\"Health Educator\\nCommunity Organizer\\nHealth Service Provider\\nHEPO means Health Education and Promotion Officer.\",null],[\"knowledge-slide\",[\"m1.hepo.knowledge\"],\"Bago magbahagi, maghanda\",\"Prepare before sharing\",\"Mga prayoridad na programa\\nMga problemang pangkalusugan\\nTamang impormasyong ibabahagi\\nSapat na kaalaman ang pundasyon ng tatlong tungkulin.\",\"Priority programs\\nHealth problems\\nAccurate information to share\\nAdequate knowledge supports all three roles.\",null],[\"check-slide\",[\"m1.uhc.shift\",\"m1.uhc.organizing\",\"m1.hepo.umbrella\",\"m1.hepo.knowledge\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Maaaring pagsamahin ng BHW ang pagtuturo, pag-oorganisa, at serbisyo.\",\"A BHW can combine teaching, organizing, and service support.\",[\"Tinipon ni Riza ang mga residente upang planuhin ang paglilinis ng barangay. Aling tungkulin ng BHW ang pinakakitang-kita sa gawaing ito?\",\"Riza brings residents together to plan a barangay clean-up drive. Which BHW role is most visible in this activity?\",[[\"Health Service Provider\",\"Health Service Provider\"],[\"Community Organizer\",\"Community Organizer\"],[\"Health Educator lamang\",\"Health Educator only\"]],1,\"Community Organizer: nag-uugnay siya ng mga tao at humihikayat ng pagkilos. Maaari ring may pagtuturo sa parehong gawain; hindi eksklusibo ang mga papel.\",\"Community Organizer: she connects people and encourages action. Education can also occur in the same activity; the roles are not exclusive.\"]]]]",
+  "narration": {
+    "morning": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/morning.hil.c6c9da67cf07.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "c6c9da67cf07dc7777380d3dfa33cc196eb24bcc320bec8352380a09e1127314",
+      "sha256": "40724510e5368833d2b315e3c483430021c7ad4f7cb46ac5c89d24945622cfae",
+      "duration_seconds": 51.5134693877551,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Isa ka aga, madamo nga buluhaton",
+          "start_ms": 0,
+          "end_ms": 3240
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Alas-otso sang aga, may paghisugilanon parte sa panglawas si BHW Riza sa purok.",
+          "start_ms": 3540,
+          "end_ms": 10820
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Alas-diyes, nakighambal siya sa kagawad parte sa clean-up drive.",
+          "start_ms": 11120,
+          "end_ms": 15720
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Alas-onse, ginbuligan niya si Aling Nena nga makighambal sa midwife parte sa kinahanglanon sang iya bata.",
+          "start_ms": 16020,
+          "end_ms": 23700
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Isa lang ka BHW ang naghimo sining tatlo ka buluhaton.",
+          "start_ms": 24000,
+          "end_ms": 28720
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sa kurikulum, ang katuyuan sang UHC amo ang pagpalig-on sang primary care kag pagpauswag sang panglawas; gani mas malapad ang papel sang BHW kaysa sa pagbulig lamang sa serbisyo.",
+          "start_ms": 29020,
+          "end_ms": 42260
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Kabahin sang buluhaton sang BHW ang pagtudlo kag paghulag upod sa komunidad, dugang sa pagbulig sa serbisyo.",
+          "start_ms": 42560,
+          "end_ms": 51440
+        }
+      ]
+    },
+    "prevention": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/prevention.hil.598ee6180ed0.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "598ee6180ed09462e08fe5a292724975a047f24a1674383591ea89818668e610",
+      "sha256": "6c8f34d87d59bbc7109843f8cac8047f1e98a3223fa9425eacb10b178d66ce00",
+      "duration_seconds": 44.773877551020405,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Maghulag upod sa komunidad",
+          "start_ms": 0,
+          "end_ms": 2760
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kon nagakinahanglan sang pag-atipan ang mga residente, ginabuligan sila sang BHW nga makapalapit sa serbisyo sa panglawas.",
+          "start_ms": 3060,
+          "end_ms": 12220
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Nagatudlo man ang BHW kag nagadasig sa mga tawo nga mag-upod sa mga hilikuton para sa panglawas.",
+          "start_ms": 12520,
+          "end_ms": 20240
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sa pagpaninlo sang barangay, nagapaambit si Riza sang impormasyon kag nagaagda sa mga residente nga magplano kag maghulag upod sa iya.",
+          "start_ms": 20540,
+          "end_ms": 30540
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Sa sini nga mga buluhaton, nagaangot ang edukasyon, pagpakigbahin sang komunidad, kag pagpalapit sa serbisyo.",
+          "start_ms": 30840,
+          "end_ms": 38480
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang pagtudlo kag pag-organisa nagabulig sa pagpauswag sang panglawas.",
+          "start_ms": 38780,
+          "end_ms": 44700
+        }
+      ]
+    },
+    "hepo": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/hepo.hil.49bfb6ef3e53.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "49bfb6ef3e53cc1f0caf1f1b3c6db281a1922325a556a9af4dde587b2bdcbb88",
+      "sha256": "6302e090d9788f970d287b1147af35e25e933c6af791f5a70ff5dc230f669458",
+      "duration_seconds": 58.331428571428575,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "HEPO: pagpauswag sang panglawas",
+          "start_ms": 0,
+          "end_ms": 4280
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ginagamit sang Reference Manual ang tawag nga barangay-level Health Education and Promotion Officer ukon HEPO.",
+          "start_ms": 4580,
+          "end_ms": 13540
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ginapaathag sini ang papel sang BHW sa pagpaambit sang impormasyon parte sa panglawas.",
+          "start_ms": 13840,
+          "end_ms": 21240
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Makita ini sa iya mga papel bilang Health Educator, Community Organizer, kag Health Service Provider.",
+          "start_ms": 21540,
+          "end_ms": 29620
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ang koneksiyon nga ginapakita sa laragway nagakahulugan sang nagaangot nga mga buluhaton; indi ini opisyal nga organizational chart ukon pamatuod sang pormal nga pagtangdo sa posisyon.",
+          "start_ms": 29920,
+          "end_ms": 43000
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang HEPO nagakahulugan sang Health Education and Promotion Officer. Ginapaathag sini ang nagaangot nga mga buluhaton sang BHW sa pagtudlo, pag-organisa, kag pagbulig sa serbisyo.",
+          "start_ms": 43300,
+          "end_ms": 58260
+        }
+      ]
+    },
+    "knowledge": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/knowledge.hil.2e25e20e3662.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "2e25e20e36621cba87d0658a94eb9fb0eabb8c4121551bdb5454195e8cce3d9b",
+      "sha256": "fd59288f641ec01a5e3eb478b9e29d1728f0f773ccdf8f0b8371b6e80181fde8",
+      "duration_seconds": 35.91836734693877,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Antes magpaambit, maghanda",
+          "start_ms": 0,
+          "end_ms": 2480
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kinahanglan ni Riza sang bastante nga ihibalo parte sa mga prayoridad nga programa kag mga problema sa panglawas sa barangay.",
+          "start_ms": 2780,
+          "end_ms": 10700
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Antes magtudlo, ginasiguro niya nga maathag sa iya ang impormasyon nga iya ipaambit.",
+          "start_ms": 11000,
+          "end_ms": 17040
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Kon may detalye nga indi siya sigurado, ginakumpirma niya ini sa nagakaigo nga health worker kag ginagamit ang gin-aprobahan nga materyal.",
+          "start_ms": 17340,
+          "end_ms": 26620
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Indi kinahanglan magpakot sang sabat agod makabulig.",
+          "start_ms": 26920,
+          "end_ms": 30720
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang bastante nga ihibalo amo ang pundasyon sang tatlo ka papel.",
+          "start_ms": 31020,
+          "end_ms": 35860
+        }
+      ]
+    },
+    "check": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/check.hil.6c59faeddf83.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "6c59faeddf83aeddf64c2c56a3c3ddb010c610a58da9bb1845650aec62a0934e",
+      "sha256": "6a6b5359532897e036a1e141b68851683eaf90dc9d26688b0e288d6f397573af",
+      "duration_seconds": 24.76408163265306,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Gamita ang imo natun-an",
+          "start_ms": 0,
+          "end_ms": 2600
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay.",
+          "start_ms": 2900,
+          "end_ms": 9100
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
+          "start_ms": 9400,
+          "end_ms": 14400
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa sang komunidad, kag pagbulig sa serbisyo agod mapauswag ang panglawas.",
+          "start_ms": 14700,
+          "end_ms": 24700
+        }
+      ]
+    }
+  },
+  "poster": "/training/bhw-1-1/roles-hepo-riza-gemini-hil-a7954658bb57-poster.jpg",
+  "video": {
+    "path": "/training/bhw-1-1/roles-hepo-riza-gemini-hil-48de41e75124.mp4",
+    "content_hash": "48de41e7512470f58bbccbce77e00e046c7af377a552aa74851e8264e35104cb",
+    "duration_s": 91,
+    "captions": {
+      "path": "/training/bhw-1-1/roles-hepo-riza-gemini-hil-5a673690fabc.vtt",
+      "content_hash": "5a673690fabcff27d9309a6fc6e08115290fa988f772678e708aff4578541301"
+    }
+  },
+  "story_content_hash": "73123b5010082e203f27fdc1993f97fb25608e4b74f5f15cab332e2601d9539a"
+}

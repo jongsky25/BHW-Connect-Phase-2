@@ -64,6 +64,16 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
+        id="RolesHepoStoryHil"
+        component={RolesHepoStory}
+        calculateMetadata={calculateRolesHepoMetadata}
+        durationInFrames={ROLES_HEPO_FALLBACK_DURATION}
+        fps={ROLES_HEPO_FPS}
+        width={854}
+        height={480}
+        defaultProps={{ language: "hil" }}
+      />
+      <Composition
         id="RolesHepoStoryCeb"
         component={RolesHepoStory}
         calculateMetadata={calculateRolesHepoMetadata}
