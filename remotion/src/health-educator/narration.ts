@@ -1,7 +1,9 @@
 // Companion animation for the approved 1.1.2 Health Educator lesson.
 // It teaches audience choice and inclusion, not detailed clinical advice.
+import cebuano from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-health-educator/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-health-educator/translation.hil.json" with { type: "json" };
 
-export type HealthEducatorBeat = {
+type BaseHealthEducatorBeat = {
   id: string;
   fil: string;
   en: string;
@@ -11,7 +13,7 @@ export type HealthEducatorBeat = {
   detail_en: string;
 };
 
-export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = [
+const baseBeats: BaseHealthEducatorBeat[] = [
   {
     id: "listen",
     fil: "Sa isang talakayang pangkalusugan sa barangay, hindi lang binabasa ni BHW Riza ang poster. Inaalam muna niya ang mga tanong ng mga residente, saka nagpapaliwanag nang malinaw.",
@@ -67,3 +69,17 @@ export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = [
     detail_en: "Learning that reaches every group",
   },
 ];
+
+export type HealthEducatorBeat = BaseHealthEducatorBeat & {
+  ceb: string; title_ceb: string; detail_ceb: string;
+  hil: string; title_hil: string; detail_hil: string;
+};
+export const HEALTH_EDUCATOR_BEATS: HealthEducatorBeat[] = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("Lesson 1.1.2 translated story beats are misordered");
+  return { ...beat, ceb: ceb.text, title_ceb: ceb.title, detail_ceb: ceb.detail,
+    hil: hil.text, title_hil: hil.title, detail_hil: hil.detail };
+});
+export const HEALTH_EDUCATOR_SUMMARY = { ceb: cebuano.summary_steps, hil: hiligaynon.summary_steps };
+if (cebuano.summary_steps.length !== 4 || hiligaynon.summary_steps.length !== 4)
+  throw new Error("Lesson 1.1.2 needs four translated summary cards");

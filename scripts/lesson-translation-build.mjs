@@ -4,7 +4,18 @@ import { createHash } from "node:crypto";
 import { parseReferenceRead } from "./lib/reference-content.mjs";
 import { lessonTranslationSource } from "../src/lib/elearning/lesson-translation.ts";
 
-export const lessonDirectory = path.resolve(import.meta.dirname, "../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo");
+const translatedLessons = {
+  "1.1.1": { key: "bhw-roles-hepo", story: "roles-hepo", mediaBase: "roles-hepo-riza-gemini", port: 4311 },
+  "1.1.2": { key: "bhw-health-educator", story: "health-educator", mediaBase: "health-educator-riza-gemini", port: 4313 },
+};
+export function translationLesson(args = process.argv.slice(2)) {
+  const index = args.indexOf("--lesson");
+  const number = index === -1 ? "1.1.1" : args[index + 1];
+  if (!Object.hasOwn(translatedLessons, number)) throw new Error("Use --lesson 1.1.1 or --lesson 1.1.2");
+  return { number, ...translatedLessons[number] };
+}
+export const lessonConfig = translationLesson();
+export const lessonDirectory = path.resolve(import.meta.dirname, `../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/${lessonConfig.key}`);
 export const pilotLanguages = {
   ceb: { name: "Cebuano", slug: "bisaya", preview: "cebuano" },
   hil: { name: "Hiligaynon", slug: "hiligaynon", preview: "hiligaynon" },
@@ -29,7 +40,7 @@ export function buildLessonPilot(language = "ceb") {
     heading_fil: fil[i].heading, body_fil: fil[i].body, heading_en: en[i].heading, body_en: en[i].body })), slides: json("slides.json") } };
   const sameIds = (a, b) => JSON.stringify(a.map(s => s.id)) === JSON.stringify(b.map(s => s.id));
   if (!sameIds(localizedRead, source.revision.read_sections) || !sameIds(translated.read_sections, localizedRead) || !sameIds(translated.slides, source.revision.slides))
-    throw new Error(`${name} section/slide IDs do not match lesson 1.1.1`);
+    throw new Error(`${name} section/slide IDs do not match lesson ${lessonConfig.number}`);
   if (translated.objectives.length !== source.objectives_fil.length) throw new Error("Missing translated objective");
   for (const [sourceItems, localizedItems] of [[source.revision.read_sections, translated.read_sections], [source.revision.slides, translated.slides]]) {
     sourceItems.forEach((s, i) => {

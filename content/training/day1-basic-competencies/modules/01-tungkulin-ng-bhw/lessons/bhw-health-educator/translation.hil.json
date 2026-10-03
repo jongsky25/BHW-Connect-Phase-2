@@ -1,0 +1,211 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "approved",
+  "lesson_key": "bhw-health-educator",
+  "title": "Bilang Health Educator",
+  "objectives": [
+    "Matukoy ang nagakaigo nga buluhaton sa edukasyon para sa lainlain nga grupo sa komunidad kag yugto sang kabuhi."
+  ],
+  "read_sections": [
+    {
+      "id": "educator-scene",
+      "takeaway": "Ang pagtudlo isa ka paghisugilanon nga may katuyuan.",
+      "check": null
+    },
+    {
+      "id": "body-environment",
+      "takeaway": "Nagaangot ang panglawas sang tawo kag ang iya palibot.",
+      "check": null
+    },
+    {
+      "id": "life-stages",
+      "takeaway": "Iangay sa yugto sang kabuhi ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "check": null
+    },
+    {
+      "id": "all-sectors",
+      "takeaway": "Kinahanglan maghatag ang BHW sang impormasyon, ihibalo, kag kahigayunan sa paghanas sa tagsa ka grupo sang komunidad.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Mas epektibo ang pagtudlo kon ang topiko kag pamaagi nagakaigo sa kaistorya kag may kahigayunan siya nga makigbahin.",
+      "check": {
+        "prompt": "Naghiwat si Riza sang paghisugilanon parte sa panglawas sa barangay, pero mga ginikanan lamang ang nagtambong. Ano ang mahimo niya nga bag-uhon agod makaupod ang mga pamatan-on?",
+        "options": [
+          "Pamangkuta ang mga pamatan-on kon san-o sila makaupod kag iangay ang paghisugilanon sa ila mga pamangkot.",
+          "Sulita ang pareho nga paghisugilanon sa pareho nga oras para sa mga ginikanan lamang.",
+          "Indi na pag-agdaha ang mga pamatan-on kay bastante na ang ila ihibalo."
+        ],
+        "feedback": "Ang pag-angay sa kaistorya nagabulig nga malab-ot ang tagsa ka grupo. Siguruhon nga husto kag gin-aprobahan ang impormasyon nga ginapaambit."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "educator-scene-slide",
+      "heading": "Magsugod sa imo kaistorya",
+      "display": "Magpamati sa pamangkot\nMagpaathag sing maathag\nAng pagtudlo isa ka paghisugilanon nga may katuyuan.",
+      "check": null
+    },
+    {
+      "id": "body-environment-slide",
+      "heading": "Lawas kag palibot",
+      "display": "Lawas · pag-atipan sang kaugalingon\nPalibot · matinlo nga palibot\nNagaangot ang panglawas sang tawo kag ang iya palibot.",
+      "check": null
+    },
+    {
+      "id": "life-stages-slide",
+      "heading": "Nagabag-o ang kinahanglanon sa tagsa ka yugto",
+      "display": "Lapsag kag naga-atipan\nPamatan-on\nNagabusong\nTigulang\nIangay sa yugto sang kabuhi ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "check": null
+    },
+    {
+      "id": "all-sectors-slide",
+      "heading": "Lab-uta ang tagsa ka grupo",
+      "display": "Sin-o ang wala pa malab-ot?\nAno nga pamaagi ang nagakaigo?\nKinahanglan malab-ot sang edukasyon parte sa panglawas ang tagsa ka grupo.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imo natun-an",
+      "display": "Ang epektibo nga pagtudlo nagakaigo sa kaistorya kag bukas sa tanan.",
+      "check": {
+        "prompt": "Naghiwat si Riza sang paghisugilanon parte sa panglawas sa barangay, pero mga ginikanan lamang ang nagtambong. Ano ang mahimo niya nga bag-uhon agod makaupod ang mga pamatan-on?",
+        "options": [
+          "Pamangkuta ang mga pamatan-on kon san-o sila makaupod kag iangay ang paghisugilanon sa ila mga pamangkot.",
+          "Sulita ang pareho nga paghisugilanon sa pareho nga oras para sa mga ginikanan lamang.",
+          "Indi na pag-agdaha ang mga pamatan-on kay bastante na ang ila ihibalo."
+        ],
+        "feedback": "Ang pag-angay sa kaistorya nagabulig nga malab-ot ang tagsa ka grupo. Siguruhon nga husto kag gin-aprobahan ang impormasyon nga ginapaambit."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, paghisugilanon upod sa komunidad, kag paggiya sa residente.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A03",
+      "alt": "Lainlain nga kaistorya kag yugto sang kabuhi.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "health-educator-story",
+      "alt": "Sa paghisugilanon parte sa panglawas, nagapamati anay si Riza sa mga pamangkot, nagagamit sang gin-aprobahan nga materyal, ginaangay ang paghisugilanon sa lainlain nga yugto sang kabuhi, kag nagapangita sang pamaagi agod makaupod man ang mga pamatan-on kag iban nga grupo.",
+      "caption": "Hinimo nga halimbawa sang pagtudlo ni Riza bilang BHW. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Si BHW Riza nagapamati sa isa ka pamatan-on, isa ka ginikanan nga may lapsag, kag isa ka tigulang sa paghisugilanon sa barangay.",
+    "caption": "Magpamati anay, dayon magtudlo"
+  },
+  "story_beats": [
+    {
+      "id": "listen",
+      "text": "Sa isa ka paghisugilanon parte sa panglawas sa barangay, indi lamang ginabasa ni BHW Riza ang poster. Ginausisa anay niya ang mga pamangkot sang mga residente, dayon nagahatag sang maathag nga pagpaathag.",
+      "title": "Magsugod sa imo kaistorya",
+      "detail": "Magpamati anay sa pamangkot."
+    },
+    {
+      "id": "topics",
+      "text": "Bilang Health Educator, mahimo niya nga talakayon ang pag-atipan sang lawas, katinlo sang palibot, kag pagpalapit sa serbisyo sa panglawas. Nagagamit siya sang materyal nga gin-aprobahan sang health team.",
+      "title": "Lawas kag palibot",
+      "detail": "Gamita ang gin-aprobahan nga materyal."
+    },
+    {
+      "id": "life-stages",
+      "text": "Nagakalainlain ang mga pamangkot sang naga-atipan sang lapsag, pamatan-on, nagabusong, kag tigulang. Ginaangay ni Riza sa yugto sang kabuhi sang kaistorya ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "title": "Lainlain nga yugto sang kabuhi",
+      "detail": "Iangay ang paghisugilanon sa kaistorya."
+    },
+    {
+      "id": "reach",
+      "text": "Natalupangdan ni Riza nga mga ginikanan lamang ang nagtambong. Namangkot siya kon sin-o pa ang wala malab-ot, kag kon ano nga oras, lugar, pinulongan, kag pamaagi ang makabulig sa ila nga makigbahin.",
+      "title": "Sin-o ang wala diri?",
+      "detail": "Lab-uta ang tagsa ka grupo."
+    },
+    {
+      "id": "young-people",
+      "text": "Agod makaupod ang mga pamatan-on, pamangkuton ni Riza kon san-o sila makaupod kag ano ang gusto nila nga matun-an. Iangay niya ang paghisugilanon sa ila mga pamangkot, samtang ginasiguro nga husto kag gin-aprobahan ang impormasyon.",
+      "title": "Agdaha ang mga pamatan-on",
+      "detail": "Magpamati · Iangay · Iupod"
+    },
+    {
+      "id": "summary",
+      "text": "Ang pagtudlo sang BHW isa ka paghisugilanon nga may katuyuan: magpamati, magpili sang nagakaigo nga topiko kag gin-aprobahan nga materyal, mag-angay sa yugto sang kabuhi, kag maghatag sang kahigayunan nga makigbahin ang tagsa ka grupo.",
+      "title": "Magpamati · Iangay · Iupod",
+      "detail": "Nagakaigo nga pagtuon para sa tagsa ka grupo"
+    }
+  ],
+  "summary_steps": [
+    "Magpamati",
+    "Gin-aprobahan nga aral",
+    "Iangay",
+    "Iupod ang tanan"
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.2 translated text, reading narration, animated video and captions",
+    "approval": "Owner approved lesson 1.1.2 in both languages in the Codex conversation and requested merge and deployment."
+  }
+}
