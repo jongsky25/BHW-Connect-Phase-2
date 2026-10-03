@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "2c086f2a60606b61ee6e995236bab38b2aa648f35761f92ac2872fbd37d5ce16",
+  "durationSeconds": 81.371,
+  "beats": [
+    {
+      "zone": "observe",
+      "index": 0,
+      "text": "Natalupangdan ni BHW Riza ang natipon nga tubig sa tatlo ka lagwerta. Nakighambal siya sa mga residente kag namangkot kon ano man ang ila natalupangdan.",
+      "start_ms": 0,
+      "end_ms": 11080
+    },
+    {
+      "zone": "invite",
+      "index": 1,
+      "text": "Gin-agda ni Riza ang mga residente, purok leader, kag health staff sa paghisugilanon. May nagsugyot sang lain nga oras; ginpamatian niya ini antes sila magpili sang oras nga mag-upod.",
+      "start_ms": 11380,
+      "end_ms": 24780
+    },
+    {
+      "zone": "verify",
+      "index": 2,
+      "text": "Gintala ni Riza ang iya nakita: may natipon nga tubig sa tatlo ka lagwerta. Wala niya ginsiling nga amo ini ang kabangdanan sang pagkabalatian sang mga bata, kay wala pa ina napamatud-an.",
+      "start_ms": 25080,
+      "end_ms": 37560
+    },
+    {
+      "zone": "plan",
+      "index": 3,
+      "text": "Upod sa mga residente kag health staff, gintukoy niya kon sin-o ang magadala sang isyu sa barangay planning team for health kag kon sin-o ang magabalik sang sabat. Kumpirmaha sa lokal nga health team ang aktuwal nga proseso.",
+      "start_ms": 37860,
+      "end_ms": 53300
+    },
+    {
+      "zone": "liph",
+      "index": 4,
+      "text": "Mahimo nga makabulig ang amot sang barangay sa paghisugilanon para sa Local Investment Plan for Health, ukon LIPH. Nagaagi ini sa nagaluntad nga lokal nga proseso; indi garantisado ang pondo.",
+      "start_ms": 53600,
+      "end_ms": 67320
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Bilang Community Organizer, nagapamati si Riza, ginaangot ang mga tawo, ginareport ang nakita imbes ang pangagpas, kag nagasunod sa lokal nga proseso hasta may sabat nga mabalik sa mga residente.",
+      "start_ms": 67620,
+      "end_ms": 81300
+    }
+  ]
+}

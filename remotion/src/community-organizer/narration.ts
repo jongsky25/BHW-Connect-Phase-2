@@ -2,7 +2,10 @@
 // The story distinguishes observation from an unverified cause and shows
 // participation and the local planning route without promising funding.
 
-export type CommunityOrganizerBeat = {
+import cebuano from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-community-organizer/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-community-organizer/translation.hil.json" with { type: "json" };
+
+type BaseCommunityOrganizerBeat = {
   id: string;
   fil: string;
   en: string;
@@ -12,7 +15,7 @@ export type CommunityOrganizerBeat = {
   detail_en: string;
 };
 
-export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = [
+const baseBeats: BaseCommunityOrganizerBeat[] = [
   {
     id: "observe",
     fil: "Napansin ni BHW Riza ang naipong tubig sa tatlong bakuran. Kinausap niya ang mga residente at nagtanong kung ano rin ang napansin nila.",
@@ -68,3 +71,17 @@ export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = [
     detail_en: "Report what was seen · Report back",
   },
 ];
+
+export type CommunityOrganizerBeat = BaseCommunityOrganizerBeat & {
+  ceb: string; title_ceb: string; detail_ceb: string;
+  hil: string; title_hil: string; detail_hil: string;
+};
+export const COMMUNITY_ORGANIZER_BEATS: CommunityOrganizerBeat[] = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("Lesson 1.1.3 translated story beats are misordered");
+  return { ...beat, ceb: ceb.text, title_ceb: ceb.title, detail_ceb: ceb.detail,
+    hil: hil.text, title_hil: hil.title, detail_hil: hil.detail };
+});
+export const COMMUNITY_ORGANIZER_SUMMARY = { ceb: cebuano.summary_steps, hil: hiligaynon.summary_steps };
+if (cebuano.summary_steps.length !== 4 || hiligaynon.summary_steps.length !== 4)
+  throw new Error("Lesson 1.1.3 needs four translated summary cards");
