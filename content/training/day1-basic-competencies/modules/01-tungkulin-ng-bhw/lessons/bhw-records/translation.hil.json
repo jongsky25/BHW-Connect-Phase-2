@@ -1,0 +1,211 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "approved",
+  "lesson_key": "bhw-records",
+  "title": "Mga rekord kag impormasyon",
+  "objectives": [
+    "Maitakdo ang apat ka klase sang rekord sa ila gamit kag mapaathag kon kay sin-o ihatag ang may kaangtanan nga impormasyon."
+  ],
+  "read_sections": [
+    {
+      "id": "record-purpose",
+      "takeaway": "Ang rekord may pamangkot nga ginasabat kag tawo nga magagamit sini.",
+      "check": null
+    },
+    {
+      "id": "household-profile",
+      "takeaway": "Household profile: laragway sang isa ka panimalay, indi pamatuod nga may serbisyo nga nahatag.",
+      "check": null
+    },
+    {
+      "id": "master-list",
+      "takeaway": "Master list: sin-o ang kabahin sang isa ka grupo.",
+      "check": null
+    },
+    {
+      "id": "registry",
+      "takeaway": "Registry: sin-o ang nakabaton sang serbisyo, suno sa napamatud-an nga mga entry.",
+      "check": null
+    },
+    {
+      "id": "assigned-form",
+      "takeaway": "Antes ipasa: siguroha ang ginapangayo nga detalye, magabaton, kag aprubado nga paagi.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Pilia ang rekord suno sa pamangkot; siguroha ang detalye antes ipasa.",
+      "check": {
+        "prompt": "Ginpangayo sang midwife kay Riza ang rekord kon sin-o ang nakabaton na sang health teaching. May master list siya sang mga tigulang kag registry sang mga serbisyo nga nahatag, pero may isa ka entry sa registry nga indi maathag. Ano ang pinakamaayo niya nga himuon?",
+        "options": [
+          "Gamita ang master list bilang pamatuod nga nakabaton na sang health teaching ang tanan nga tigulang.",
+          "Gamita ang registry, klaruhon anay ang entry nga indi sigurado, kag ihatag ang napamatud-an nga impormasyon sa midwife paagi sa aprubado nga paagi.",
+          "Kopyaha ang mga ngalan sa ginsugo nga form kag tag-anaa ang kulang nga detalye agod mapasa dayon."
+        ],
+        "feedback": "Ang registry amo ang rekord sang mga nakabaton sang serbisyo suno sa manwal. Indi pamatuod sang serbisyo ang master list. Klaruhon ang entry nga indi sigurado kag sundon ang aprubado nga lokal nga paagi sang pagpasa sa midwife."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "record-purpose-slide",
+      "heading": "Pagkatapos sang pagbisita",
+      "display": "Ipamangkot anay kon diin gamiton ang rekord.\nNagkalain-lain ang pamangkot nga ginasabat sang kada klase.\nHinimo lamang ang mga halimbawa.",
+      "check": null
+    },
+    {
+      "id": "household-profile-slide",
+      "heading": "Ano ang laragway sang panimalay?",
+      "display": "Household profile: isa ka panimalay.\nHalimbawa: HH-014 · apat ka miyembro.\nIndi ini rekord sang serbisyo nga nahatag.",
+      "check": null
+    },
+    {
+      "id": "master-list-slide",
+      "heading": "Sin-o ang kabahin sang grupo?",
+      "display": "Master list: sin-o ang kabahin sang grupo?\nHalimbawa: mga tigulang.\nIndi ini pamatuod nga may serbisyo nga nahatag.",
+      "check": null
+    },
+    {
+      "id": "registry-slide",
+      "heading": "Sin-o ang nakabaton sang serbisyo?",
+      "display": "Registry: sin-o ang nakabaton sang serbisyo?\nUsisaa ang ginrekord nga serbisyo.\nKlaruhon ang indi sigurado; indi magpangagpas.",
+      "check": null
+    },
+    {
+      "id": "assigned-form-slide",
+      "heading": "Klaruhon antes ipasa",
+      "display": "Klaruhon ang ginapangayo nga impormasyon.\nSiguroha ang magabaton kag aprubado nga paagi.\nIndi pagpun-i sang pagpangagpas ang kulang.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imo natun-an",
+      "display": "Pilia ang rekord suno sa pamangkot.\nUsisaa ang entry nga indi maathag.\nIpasa lamang sa husto nga magabaton paagi sa aprubado nga paagi.",
+      "check": {
+        "prompt": "Ginpangayo sang midwife kay Riza ang rekord kon sin-o ang nakabaton na sang health teaching. May master list siya sang mga tigulang kag registry sang mga serbisyo nga nahatag, pero may isa ka entry sa registry nga indi maathag. Ano ang pinakamaayo niya nga himuon?",
+        "options": [
+          "Gamita ang master list bilang pamatuod nga nakabaton na sang health teaching ang tanan nga tigulang.",
+          "Gamita ang registry, klaruhon anay ang entry nga indi sigurado, kag ihatag ang napamatud-an nga impormasyon sa midwife paagi sa aprubado nga paagi.",
+          "Kopyaha ang mga ngalan sa ginsugo nga form kag tag-anaa ang kulang nga detalye agod mapasa dayon."
+        ],
+        "feedback": "Ang registry amo ang rekord sang mga nakabaton sang serbisyo suno sa manwal. Indi pamatuod sang serbisyo ang master list. Klaruhon ang entry nga indi sigurado kag sundon ang aprubado nga lokal nga paagi sang pagpasa sa midwife."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A06",
+      "alt": "Mga halimbawa sang household profile, master list, registry, kag ginsugo nga form.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "records-story",
+      "alt": "Pilia ang rekord suno sa pamangkot: household profile para sa isa ka panimalay; master list para sa mga miyembro sang grupo; registry para sa serbisyo nga nahatag; ginsugo nga form para sa ginapangayo nga detalye. Klaruhon ang entry nga indi sigurado kag siguroha ang magabaton kag aprubado nga paagi sang pagpasa.",
+      "caption": "Hinimo nga halimbawa ni Riza. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Magkaupod nga nagatan-aw si BHW Riza kag ang midwife sa mga wala sang sulod nga folder sa health station; wala sang makita nga personal nga datos.",
+    "caption": "Pagpili kag pagklaro sang rekord upod sa health team"
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Pagkatapos makaistorya si Aling Nena, ginpamangkot ni Riza ang midwife kon ano nga impormasyon ang kinahanglan.",
+      "title": "Ano nga rekord ang kinahanglan?",
+      "detail": "Hibalua anay ang pamangkot."
+    },
+    {
+      "id": "household",
+      "text": "Ang household profile nagalaragway sang isa ka panimalay. Indi ini pamatuod nga may serbisyo nga nahatag.",
+      "title": "Household profile",
+      "detail": "Ano ang laragway sang panimalay?"
+    },
+    {
+      "id": "master-list",
+      "text": "Ang master list nagasugid kon sin-o ang kabahin sang isa ka grupo. Indi ini rekord sang serbisyo nga nahatag.",
+      "title": "Master list",
+      "detail": "Sin-o ang kabahin sang grupo?"
+    },
+    {
+      "id": "registry",
+      "text": "Ang registry ang tan-awon kon sin-o ang nakabaton sang health teaching. Klaruhon anay ang entry nga indi sigurado.",
+      "title": "Registry",
+      "detail": "Sin-o ang nakabaton sang serbisyo?"
+    },
+    {
+      "id": "assigned-form",
+      "text": "Sa ginsugo nga form, siguroha ang ginapangayo nga detalye kag ang magabaton. Sundon ang aprubado nga lokal nga paagi sang pagpasa.",
+      "title": "Ginsugo nga form",
+      "detail": "Ano ang kinahanglan, kag sin-o ang magabaton?"
+    },
+    {
+      "id": "summary",
+      "text": "Pilia ang rekord suno sa pamangkot, usisaa ang impormasyon, kag indi magpangagpas.",
+      "title": "Pilia · Usisaa · Ipasa",
+      "detail": "Hinimo lamang nga mga halimbawa."
+    }
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.5 translated text, reading narration, animated video and captions",
+    "approval": "Owner requested merging and deploying PRs #237 then #238 in the Codex conversation, approving this lesson in both languages."
+  }
+}

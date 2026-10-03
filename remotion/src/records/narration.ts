@@ -2,7 +2,10 @@
 // examples, not official forms or instructions for handling real records.
 // Narration is rendered once per language and committed with beat timings.
 
-export type RecordsBeat = {
+import cebuano from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-records/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-records/translation.hil.json" with { type: "json" };
+
+type BaseRecordsBeat = {
   id: string;
   fil: string;
   en: string;
@@ -12,7 +15,7 @@ export type RecordsBeat = {
   detail_en: string;
 };
 
-export const RECORDS_BEATS: RecordsBeat[] = [
+const baseBeats: BaseRecordsBeat[] = [
   {
     id: "question",
     fil: "Pagkatapos kausapin si Aling Nena, tinanong ni Riza ang midwife kung anong impormasyong kailangan.",
@@ -68,3 +71,14 @@ export const RECORDS_BEATS: RecordsBeat[] = [
     detail_en: "Fictional examples only.",
   },
 ];
+
+export type RecordsBeat = BaseRecordsBeat & {
+  ceb: string; title_ceb: string; detail_ceb: string;
+  hil: string; title_hil: string; detail_hil: string;
+};
+export const RECORDS_BEATS: RecordsBeat[] = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("Lesson 1.1.5 translated story beats are misordered");
+  return { ...beat, ceb: ceb.text, title_ceb: ceb.title, detail_ceb: ceb.detail,
+    hil: hil.text, title_hil: hil.title, detail_hil: hil.detail };
+});
