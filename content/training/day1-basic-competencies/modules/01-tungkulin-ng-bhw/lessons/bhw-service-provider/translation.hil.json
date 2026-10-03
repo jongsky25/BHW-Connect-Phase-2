@@ -1,7 +1,7 @@
 {
   "language": "hil",
   "label": "Hiligaynon (Ilonggo)",
-  "review_status": "draft",
+  "review_status": "approved",
   "lesson_key": "bhw-service-provider",
   "title": "Bilang Health Service Provider",
   "objectives": [
@@ -213,5 +213,10 @@
     "Wika ng aralin": "Pinulongan sang leksiyon",
     "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
     "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.4 translated text, reading narration, animated video and captions",
+    "approval": "Owner requested merging and deploying PRs #237 then #238 in the Codex conversation, approving this lesson in both languages."
   }
 }

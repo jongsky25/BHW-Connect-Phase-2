@@ -197,7 +197,7 @@ describe("lesson 1.1.2 approved translations", () => {
 
 describe.each([
   { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true },
-  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: false },
+  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true },
 ])("lesson $number translated content", ({ folder, firstId, approved }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {
