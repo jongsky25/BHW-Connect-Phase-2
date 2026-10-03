@@ -1,3 +1,4 @@
+import {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from "./uhc-local-system/LocalSystemStory";
 import "./index.css";
 import { RolesApplicationStory, calculateRolesApplicationMetadata, ROLES_APPLICATION_FPS, ROLES_APPLICATION_FALLBACK_DURATION } from "./roles-application/RolesApplicationStory";
 import { Composition } from "remotion";
@@ -239,6 +240,12 @@ export const RemotionRoot: React.FC = () => {
           height={480}
           defaultProps={{ language }}
         />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`uhc-local-system-${language}`} id={language === "fil" ? "LocalSystemStoryFil" : "LocalSystemStoryEn"}
+          component={LocalSystemStory} calculateMetadata={calculateLocalSystemMetadata}
+          durationInFrames={LOCAL_SYSTEM_FALLBACK_DURATION} fps={LOCAL_SYSTEM_FPS} width={854} height={480}
+          defaultProps={{language}}/>
       ))}
     </>
   );

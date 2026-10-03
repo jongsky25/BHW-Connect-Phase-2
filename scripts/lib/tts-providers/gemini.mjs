@@ -92,6 +92,11 @@ export const PRIMARY_CARE_STORY_STYLES = {
   en: "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto's question sincere curiosity. Let Vlanche's calm care come through clearly. Use a lively, hopeful rhythm for the four changes; slow slightly and emphasize the practical checks for benefit, chosen clinic, and local referral instructions. Stress that the clinician makes the referral decision. Vary pitch, emphasis, and pace naturally between scenes. Do not add or change words.",
 };
 
+export const LOCAL_SYSTEM_STORY_STYLES = {
+  "fil": "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give Mang Ernesto’s recurring question sincere curiosity, Vlanche’s observation an attentive and calm tone, and the midwife’s feedback a supportive tone. Vary pitch, emphasis and pace naturally. Slow slightly for factual observation, confidentiality and locally confirmed coordination. Emphasize accurate health promotion, the BHW role boundary and agreed follow-up. Use natural pauses and an encouraging ending. Do not add or change words.",
+  "en": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto’s recurring question sincere curiosity, Vlanche’s observation an attentive and calm tone, and the midwife’s feedback a supportive tone. Vary pitch, emphasis and pace naturally. Slow slightly for factual observation, confidentiality and locally confirmed coordination. Emphasize accurate health promotion, the BHW role boundary and agreed follow-up. Use natural pauses and an encouraging ending. Do not add or change words."
+};
+
 // The voice string recorded in content_hash for Gemini renders, so switching
 // provider re-renders a section instead of skipping it as unchanged.
 export function geminiVoiceId(model = GEMINI_TTS_MODEL, voice = GEMINI_VOICE) {

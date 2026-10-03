@@ -1,0 +1,184 @@
+{
+  "generated_date": "2026-10-03",
+  "source_commit": "2b4a582ebaced17e25ce4a326a3e3d96a0a7c6c8",
+  "owner_review": "approved",
+  "read_tracks": 12,
+  "historical_audio_restored": [
+    "public/training/audio/02-uhc-act/uhc-coverage/benefit.en.86284040e421.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/benefit.fil.3e96ab3c9d5b.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/check.en.5782302b77ec.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/check.fil.4cc35d62b22c.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/included.en.3f74dd823f03.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/included.fil.3175dfa8b06a.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-1.en.44de2f29226c.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-1.en.b0298ef67955.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-1.fil.62d534ec5918.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-1.fil.b7f329f026f5.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-2.en.4cd4ec5cfed3.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-2.en.c98ee4bb141a.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-2.fil.2dd137c7d981.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/section-2.fil.90fdf4b7bd03.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/verify.en.b94fbc993ab3.mp3",
+    "public/training/audio/02-uhc-act/uhc-coverage/verify.fil.901df4f8962b.mp3",
+    "public/training/audio/02-uhc-act/uhc-improvement/section-6.en.702359347739.mp3",
+    "public/training/audio/02-uhc-act/uhc-improvement/section-6.fil.f73463e9676f.mp3",
+    "public/training/audio/02-uhc-act/uhc-improvement/section-7.en.5eb5edddf029.mp3",
+    "public/training/audio/02-uhc-act/uhc-improvement/section-7.fil.eb39ead836b9.mp3",
+    "public/training/audio/02-uhc-act/uhc-local-system/section-5.en.291bdad71c01.mp3",
+    "public/training/audio/02-uhc-act/uhc-local-system/section-5.en.e88ac23fb5d9.mp3",
+    "public/training/audio/02-uhc-act/uhc-local-system/section-5.fil.069c93b1294f.mp3",
+    "public/training/audio/02-uhc-act/uhc-local-system/section-5.fil.a4345e63e0b0.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/bridge.en.b0e7551183b0.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/bridge.fil.779c303aa3da.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/check.en.4cdb0d2a7f8c.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/check.fil.7878057f37cd.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/local.en.245ae9f96583.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/local.fil.60e801bb48e4.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/outpatient.en.94b582b3d007.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/outpatient.en.e0f675d9d51e.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/outpatient.fil.623b6e177373.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/outpatient.fil.7b6bf52ff407.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/provider.en.bbaaf41398d8.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/provider.en.c01f43bf98f1.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/provider.fil.25d223cf8532.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/provider.fil.3bd50ad7e1b1.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/referral.en.bf97fccf73e2.mp3",
+    "public/training/audio/02-uhc-act/uhc-primary-care/referral.fil.a599d08ada06.mp3"
+  ],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 77.009,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Tanong ni Mang Ernesto: Saan po makukumpirma ang impormasyon sa health activity? Narinig din ito ni Vlanche sa ibang residente. Nakinig muna siya.",
+          "start_ms": 0,
+          "end_ms": 9720
+        },
+        {
+          "zone": "roles",
+          "index": 1,
+          "text": "Pinangangasiwaan ng Provincial at City Health Boards ang UHC integration. Hindi awtomatikong kasapi ang BHW. Kukunin ni Vlanche sa health team ang angkop na lokal na contact.",
+          "start_ms": 10020,
+          "end_ms": 23300
+        },
+        {
+          "zone": "observation",
+          "index": 2,
+          "text": "Ibinubuod niya ang narinig: Paulit-ulit ang tanong, magkaiba ang impormasyon, at kailangan pang kumpirmahin ang detalye. Walang pangalan o personal na health detail sa buod.",
+          "start_ms": 23600,
+          "end_ms": 36680
+        },
+        {
+          "zone": "promotion",
+          "index": 3,
+          "text": "Bilang barangay HEPO, titiyakin ni Vlanche sa team ang mensahe. Ipaliliwanag niya ito nang payak, mag-aanyaya ng tanong, at susuriin ang pagkaunawa ng residente.",
+          "start_ms": 36980,
+          "end_ms": 49900
+        },
+        {
+          "zone": "discussion",
+          "index": 4,
+          "text": "Nagpraktis siya kasama ang midwife. Sino po ang makapagkukumpirma at tatanggap ng mungkahi? Sino ang may pasya? Hindi niya ipinangakong aprubado na ang ideya.",
+          "start_ms": 50200,
+          "end_ms": 61800
+        },
+        {
+          "zone": "feedback",
+          "index": 5,
+          "text": "Napagkasunduan nila kung kailan at paano mag-follow-up. Nakumpirmang tugon lamang ang ibabahagi niya. Obserbasyon, tumpak na mensahe, pakikipag-ugnayan at follow-up ang ambag ng BHW.",
+          "start_ms": 62100,
+          "end_ms": 76940
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-eb5fd594c7fe.mp4",
+        "content_hash": "eb5fd594c7fee161e9a687c6c90bcbf31617efb5db33fd52524b3d2bf3748b5e",
+        "duration_s": 78,
+        "captions": {
+          "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-9b2a873284ec.vtt",
+          "content_hash": "9b2a873284ec39287eec4b61cd79eeafb517b6682c9b906805936413e3793404"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-2/uhc-local-system-gemini-fil-d02e2b385c81-poster.jpg",
+        "content_hash": "d02e2b385c81d9ac31629feb13a5a1e503f25f81a56d4b6f08e844cb6851892e"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 70.818,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Mang Ernesto asks: Where can we confirm the health activity information? Vlanche has heard the same question from other residents. First, she listens.",
+          "start_ms": 0,
+          "end_ms": 10360
+        },
+        {
+          "zone": "roles",
+          "index": 1,
+          "text": "Provincial and City Health Boards oversee UHC integration. A BHW is not automatically a member. Vlanche asks the health team for the appropriate local contact.",
+          "start_ms": 10660,
+          "end_ms": 22340
+        },
+        {
+          "zone": "observation",
+          "index": 2,
+          "text": "She summarises what she heard: a recurring question, conflicting information, and details still to confirm. The summary has no names or personal health details.",
+          "start_ms": 22640,
+          "end_ms": 35120
+        },
+        {
+          "zone": "promotion",
+          "index": 3,
+          "text": "As a barangay HEPO, Vlanche checks the message with the team. She explains it simply, invites questions, and checks the resident’s understanding.",
+          "start_ms": 35420,
+          "end_ms": 46540
+        },
+        {
+          "zone": "discussion",
+          "index": 4,
+          "text": "She practises with the midwife: Who can confirm and receive the suggestion? Who can decide? She does not promise that her idea is approved.",
+          "start_ms": 46840,
+          "end_ms": 58000
+        },
+        {
+          "zone": "feedback",
+          "index": 5,
+          "text": "They agree when and how to follow up. She will share only confirmed feedback. The BHW contributes observation, accurate messaging, coordination and follow-up.",
+          "start_ms": 58300,
+          "end_ms": 70740
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-2/uhc-local-system-gemini-en-25d3c2f16e2f.mp4",
+        "content_hash": "25d3c2f16e2fe3e7678c2bc197b89c0893407e86fb18db6d154d6bb5a0846df2",
+        "duration_s": 72,
+        "captions": {
+          "path": "/training/bhw-1-2/uhc-local-system-gemini-en-c18fa4b452ef.vtt",
+          "content_hash": "c18fa4b452efe419c4d8c866846d1005a36f1a8f8fd8afe2e70078ffe8ea3da9"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-2/uhc-local-system-gemini-en-d284144ffa23-poster.jpg",
+        "content_hash": "d284144ffa23207f348f7ca0131dff01d18384c48c269f27acb069a52af15bd1"
+      }
+    }
+  ],
+  "owner_approval": {
+    "date": "2026-10-04",
+    "reviewed_head": "e5c58d649f5b0556d82c92aefa3120307e2fbbfb",
+    "record": "docs/lesson-123-owner-approval.json",
+    "independent_sme_approval": "not claimed"
+  }
+}

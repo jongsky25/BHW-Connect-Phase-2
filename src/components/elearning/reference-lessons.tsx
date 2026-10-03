@@ -233,6 +233,8 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Tiyakin ang susunod na hakbang", "Confirm the next step"),
           }
+      : lesson?.lesson_key === "uhc-local-system"
+        ? { src: "/training/bhw-1-2/local-system-observation-13c689fa5226.png", alt: ui("Tinatalakay nina BHW Vlanche, Mang Ernesto at ng midwife ang paulit-ulit na tanong ng mga residente gamit ang blangkong tala sa BHS.", "BHW Vlanche, Mang Ernesto and the midwife discuss recurring resident questions using a blank note at the BHS."), caption: ui("Obserbasyon · mensahe · follow-up", "Observation · message · follow-up") }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
