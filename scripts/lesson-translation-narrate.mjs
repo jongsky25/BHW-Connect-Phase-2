@@ -51,7 +51,7 @@ if (!process.argv.includes("--apply")) {
   if (includeStory) {
     const zones = pilot.story_beats.map((beat, index) => ({ zone: beat.id, index, text: beat.text }));
     const styles = { "roles-hepo": ROLES_HEPO_STORY_STYLES, "health-educator": HEALTH_EDUCATOR_STORY_STYLES,
-  const storyStyles = { "roles-hepo": ROLES_HEPO_STORY_STYLES, "health-educator": HEALTH_EDUCATOR_STORY_STYLES, "community-organizer": COMMUNITY_ORGANIZER_STORY_STYLES, "service-provider": SERVICE_PROVIDER_STORY_STYLES, "records": RECORDS_STORY_STYLES }[lessonConfig.story];
+      "community-organizer": COMMUNITY_ORGANIZER_STORY_STYLES, "service-provider": SERVICE_PROVIDER_STORY_STYLES, "records": RECORDS_STORY_STYLES }[lessonConfig.story];
     const rendered = await synthesizeWithGemini(zones, language, { ...options, style: styles[language] });
     const out = path.join(root, "remotion", "public", lessonConfig.story);
     const frames = mp3AudioFrames(rendered.audioBytes);
