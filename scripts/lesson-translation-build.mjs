@@ -7,11 +7,12 @@ import { lessonTranslationSource } from "../src/lib/elearning/lesson-translation
 const translatedLessons = {
   "1.1.1": { key: "bhw-roles-hepo", story: "roles-hepo", mediaBase: "roles-hepo-riza-gemini", port: 4311 },
   "1.1.2": { key: "bhw-health-educator", story: "health-educator", mediaBase: "health-educator-riza-gemini", port: 4313 },
+  "1.1.3": { key: "bhw-community-organizer", story: "community-organizer", mediaBase: "community-organizer-riza-gemini", port: 4315 },
 };
 export function translationLesson(args = process.argv.slice(2)) {
   const index = args.indexOf("--lesson");
   const number = index === -1 ? "1.1.1" : args[index + 1];
-  if (!Object.hasOwn(translatedLessons, number)) throw new Error("Use --lesson 1.1.1 or --lesson 1.1.2");
+  if (!Object.hasOwn(translatedLessons, number)) throw new Error("Use --lesson 1.1.1, --lesson 1.1.2, or --lesson 1.1.3");
   return { number, ...translatedLessons[number] };
 }
 export const lessonConfig = translationLesson();

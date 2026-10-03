@@ -1,0 +1,52 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "b4f3c37b06f2fa76e2b367885083d467a637d31da4af7033ae629ddbd0b8a444",
+  "durationSeconds": 82.965,
+  "beats": [
+    {
+      "zone": "observe",
+      "index": 0,
+      "text": "Namatikdan ni BHW Riza ang natigom nga tubig sa tulo ka nataran. Nakig-istorya siya sa mga residente ug nangutana kon unsa usab ang ilang namatikdan.",
+      "start_ms": 0,
+      "end_ms": 11160
+    },
+    {
+      "zone": "invite",
+      "index": 1,
+      "text": "Gidapit ni Riza ang mga residente, purok leader, ug health staff sa panaghisgot. Adunay misugyot og laing oras; gipaminaw niya kini sa dili pa sila mopili og oras nga magkauban.",
+      "start_ms": 11460,
+      "end_ms": 25020
+    },
+    {
+      "zone": "verify",
+      "index": 2,
+      "text": "Gitala ni Riza ang iyang nakita: adunay natigom nga tubig sa tulo ka nataran. Wala niya isulti nga mao kini ang hinungdan sa pagkasakit sa mga bata, kay wala pa kana mapamatud-i.",
+      "start_ms": 25320,
+      "end_ms": 38600
+    },
+    {
+      "zone": "plan",
+      "index": 3,
+      "text": "Uban sa mga residente ug health staff, gitino niya kon kinsa ang modala sa isyu ngadto sa barangay planning team for health ug kon kinsa ang mopaabot sa tubag. Kumpirmaha sa lokal nga health team ang aktuwal nga proseso.",
+      "start_ms": 38900,
+      "end_ms": 53660
+    },
+    {
+      "zone": "liph",
+      "index": 4,
+      "text": "Mahimong makatabang ang kontribusyon sa barangay sa paghisgot alang sa Local Investment Plan for Health, o LIPH. Moagi kini sa kasamtangang lokal nga proseso; dili garantisado ang pondo.",
+      "start_ms": 53960,
+      "end_ms": 67960
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Isip Community Organizer, maminaw si Riza, ikonektar ang mga tawo, ireport ang nakita imbes ang pangagpas, ug sundon ang lokal nga proseso hangtod adunay tubag nga mapaabot sa mga residente.",
+      "start_ms": 68260,
+      "end_ms": 82900
+    }
+  ]
+}
