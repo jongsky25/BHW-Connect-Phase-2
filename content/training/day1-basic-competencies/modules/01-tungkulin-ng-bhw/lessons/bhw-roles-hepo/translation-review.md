@@ -1,8 +1,9 @@
 # Lesson 1.1.1 language pilots
 
-Both translations remain `draft` for owner review of wording and pronunciation.
-Staff preview offers Bisaya (Cebuano, `ceb`) and Hiligaynon (Ilonggo, `hil`)
-only when the complete source lesson matches the translation snapshot.
+The owner approved both language pilots and requested merge on 3 October 2026.
+Both packages are `approved`. Learners and staff can select Bisaya (Cebuano,
+`ceb`) and Hiligaynon (Ilonggo, `hil`) when the complete published source lesson
+matches the translation snapshot.
 
 Each pilot covers the objective, five Read sections and takeaways, five slides,
 practice prompt/options/feedback, image descriptions, lesson controls, and six
@@ -51,6 +52,6 @@ node scripts/lesson-translation-finalize.mjs <output-directory> --language hil
 node scripts/lesson-translation-preview.mjs --language hil
 ```
 
-These scripts do not access the database or publish lesson content. After owner
-review, follow the repository's normal release process. Any source-text change
+These scripts do not access the database or publish lesson content. The approved
+packages are released through the repository's normal merge/deploy process. Any source-text change
 hides the translation until its text and snapshot are reconciled.

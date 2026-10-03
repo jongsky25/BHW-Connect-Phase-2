@@ -27,6 +27,8 @@ function fixture(language: "ceb" | "hil" = "ceb") {
       ...authored, read_sections: authored.sections.map((s: object, i: number) => ({ ...s, heading_fil: fil[i].heading, body_fil: fil[i].body,
         heading_en: en[i].heading, body_en: en[i].body })), slides: json("slides.json") } } as PublishedLesson;
   const translation = structuredClone(json(`pilot.${language}.json`)) as LessonTranslation;
+  // Exercise review gating independently of the owner's release status.
+  translation.review_status = "draft";
   // Deterministic audio and video fixtures exercise switching and caption selection.
   translation.narration = Object.fromEntries(translation.read_sections.map(section => [section.id, {
     src: `/fixture/${section.id}.${language}.mp3`, duration_seconds: 30,
@@ -58,7 +60,7 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
   it("does not offer draft translations to learners or an unrelated lesson", () => {
     const { lesson } = view(false);
     expect(screen.queryByRole("combobox")).not.toBeInTheDocument();
-    expect(translationsForLesson(lesson, false)).toEqual([]);
+    expect(translationsForLesson(lesson, false).map(t => t.language)).toEqual(["ceb", "hil"]);
     expect(translationsForLesson({ ...lesson, lesson_key: "bhw-health-educator" }, true)).toEqual([]);
   });
   it("rejects missing or misordered translated sections instead of mixing languages", () => {
@@ -106,11 +108,11 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
 
 describe("lesson 1.1.1 Hiligaynon pilot", () => {
   const selectHiligaynon = () => fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: "hil" } });
-  it("offers both complete draft languages only in staff preview", () => {
+  it("offers the owner's approved languages to learners and hides stale translations", () => {
     const { lesson, translation } = fixture("hil");
     expect(translationMatchesLesson(lesson, translation)).toBe(true);
     expect(translationsForLesson(lesson, true).map(t => t.language)).toEqual(["ceb", "hil"]);
-    expect(translationsForLesson(lesson, false)).toEqual([]);
+    expect(translationsForLesson(lesson, false).map(t => t.language)).toEqual(["ceb", "hil"]);
     lesson.revision.slides[0].display_fil += " Revised.";
     expect(translationsForLesson(lesson, true)).toEqual([]);
   });

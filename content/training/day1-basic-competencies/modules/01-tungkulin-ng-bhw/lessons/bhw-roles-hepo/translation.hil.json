@@ -1,7 +1,7 @@
 {
   "language": "hil",
   "label": "Hiligaynon (Ilonggo)",
-  "review_status": "draft",
+  "review_status": "approved",
   "lesson_key": "bhw-roles-hepo",
   "title": "Ang BHW kag ang HEPO",
   "objectives": [
@@ -33,7 +33,11 @@
       "takeaway": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa sang komunidad, kag pagbulig sa serbisyo agod mapauswag ang panglawas.",
       "check": {
         "prompt": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
-        "options": ["Health Service Provider", "Community Organizer", "Health Educator lamang"],
+        "options": [
+          "Health Service Provider",
+          "Community Organizer",
+          "Health Educator lamang"
+        ],
         "feedback": "Community Organizer: gin-angot niya ang mga tawo kag gindasig sila nga maghulag. Mahimo man nga may pagtudlo sa amo nga buluhaton; mahimo nga magdungan ang mga papel."
       }
     }
@@ -69,7 +73,11 @@
       "display": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo.",
       "check": {
         "prompt": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
-        "options": ["Health Service Provider", "Community Organizer", "Health Educator lamang"],
+        "options": [
+          "Health Service Provider",
+          "Community Organizer",
+          "Health Educator lamang"
+        ],
         "feedback": "Community Organizer: gin-angot niya ang mga tawo kag gindasig sila nga maghulag. Mahimo man nga may pagtudlo sa amo nga buluhaton; mahimo nga magdungan ang mga papel."
       }
     }
@@ -193,5 +201,10 @@
     "Wika ng aralin": "Pinulongan sang leksiyon",
     "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
     "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.1 translated text, reading narration, animated video and captions",
+    "approval": "Owner approved both language pilots in the Codex conversation and requested merge."
   }
 }
