@@ -1,0 +1,52 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "27743fef31aee6cd2a6df5d12f09cd7143f329e60cbcd9043ee926fa987ada53",
+  "durationSeconds": 64.836,
+  "beats": [
+    {
+      "zone": "first-contact",
+      "index": 0,
+      "text": "Miduol si Aling Nena kang Riza bahin sa iyang anak. Isip BHW, kaabag si Riza sa midwife sulod sa health team.",
+      "start_ms": 0,
+      "end_ms": 8960
+    },
+    {
+      "zone": "listen",
+      "index": 1,
+      "text": "Nangutana si Riza kon unsang tabang ang gikinahanglan. Gipaminaw niya si Aling Nena ug giklaro ang iyang nasabtan, imbes mangagpas kon unsa ang sakit.",
+      "start_ms": 9260,
+      "end_ms": 20740
+    },
+    {
+      "zone": "scope",
+      "index": 2,
+      "text": "Buhaton lamang ni Riza ang sakop sa iyang pagsasanay, lokal nga patakaran, ug pagdumala. Kon dili siya sigurado, mangayo siya og giya sa midwife.",
+      "start_ms": 21040,
+      "end_ms": 31680
+    },
+    {
+      "zone": "guide",
+      "index": 3,
+      "text": "Gikumpirma niya ang angay nga health worker o pasilidad. Gipasabot niya kon kinsa ang makaistorya ug unsaon pag-adto didto.",
+      "start_ms": 31980,
+      "end_ms": 40860
+    },
+    {
+      "zone": "follow-up",
+      "index": 4,
+      "text": "Sumala sa tagubilin sa health team, gikumpirma ni Riza kon unsa ang irekord, kanus-a mag-follow-up, ug kang kinsa moreport.",
+      "start_ms": 41160,
+      "end_ms": 51880
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Kon mangayo si Aling Nena og tambag sa tambal nga lapas sa pagsasanay ni Riza, maminaw siya, mangayo og giya, mopasabot sa sunod nga lakang, ug mag-follow-up.",
+      "start_ms": 52180,
+      "end_ms": 64780
+    }
+  ]
+}

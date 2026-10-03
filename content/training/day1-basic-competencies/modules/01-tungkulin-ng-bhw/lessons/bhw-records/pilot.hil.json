@@ -1,0 +1,564 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "approved",
+  "lesson_key": "bhw-records",
+  "title": "Mga rekord kag impormasyon",
+  "objectives": [
+    "Maitakdo ang apat ka klase sang rekord sa ila gamit kag mapaathag kon kay sin-o ihatag ang may kaangtanan nga impormasyon."
+  ],
+  "read_sections": [
+    {
+      "id": "record-purpose",
+      "takeaway": "Ang rekord may pamangkot nga ginasabat kag tawo nga magagamit sini.",
+      "check": null,
+      "heading": "Pagkatapos sang pagbisita",
+      "body": "Pagkatapos makaistorya si Aling Nena, nagbalik si BHW Riza sa health station. May hinimo siya nga rekord sang ila ginhisugilan, pero indi niya ini basta ibutang sa bisan diin nga listahan. Ginpamangkot niya ang midwife: “Ano nga impormasyon ang kinahanglan, kag diin ini gamiton?” Importante ang husto nga rekord sa paghangop sang mga kinahanglanon sang komunidad kag sa pagplano sang programa. Hinimo lamang ang tanan nga halimbawa sa sini nga leksiyon; wala ini sang matuod nga personal nga datos ukon opisyal nga form."
+    },
+    {
+      "id": "household-profile",
+      "takeaway": "Household profile: laragway sang isa ka panimalay, indi pamatuod nga may serbisyo nga nahatag.",
+      "check": null,
+      "heading": "Ano ang laragway sang panimalay?",
+      "body": "Una nga gintan-aw ni Riza ang household profile. Sa hinimo nga halimbawa, ang code nga HH-014 nagatumod sa isa ka panimalay nga may apat ka miyembro. Makabulig ini agod makita ang laragway sang panimalay. Indi sini masabat kon sin-o ang nakabaton na sang serbisyo. Ang matuod nga mga field kag paagi sang pagtipig nagasunod sa aprubado nga lokal nga form kag tagubilin."
+    },
+    {
+      "id": "master-list",
+      "takeaway": "Master list: sin-o ang kabahin sang isa ka grupo.",
+      "check": null,
+      "heading": "Sin-o ang kabahin sang grupo?",
+      "body": "Masunod, nakita ni Riza ang master list para sa isa ka grupo, pareho sang mga tigulang sa purok. Suno sa manwal, ginatipon sang master list ang mga tawo suno sa grupo. Magamit ini kon ang pamangkot amo kon sin-o ang kabahin sang amo nga grupo. Indi igo ang pagkakalista diri agod masiling nga nakabaton na sila sang health teaching ukon iban nga serbisyo."
+    },
+    {
+      "id": "registry",
+      "takeaway": "Registry: sin-o ang nakabaton sang serbisyo, suno sa napamatud-an nga mga entry.",
+      "check": null,
+      "heading": "Sin-o ang nakabaton sang serbisyo?",
+      "body": "“Sin-o na ang nakabaton sang health teaching?” pamangkot sang midwife. Ang registry ang tan-awon ni Riza: suno sa manwal, amo ini ang rekord sang mga tawo nga nakabaton sang serbisyo. Usisaon niya ang ginrekord nga serbisyo antes magsabat. Kon may detalye nga indi maathag, klaruhon anay niya ini sa health team; indi niya pagkuhaon ang sabat halin sa master list ukon magdugang sang entry suno sa pagpangagpas."
+    },
+    {
+      "id": "assigned-form",
+      "takeaway": "Antes ipasa: siguroha ang ginapangayo nga detalye, magabaton, kag aprubado nga paagi.",
+      "check": null,
+      "heading": "Klaruhon antes ipasa",
+      "body": "May ginsugo man nga form nga may hinimo nga label nga “magabaton: midwife.” Mahimo nga magpahimo ang nurse, midwife, ukon doktor sang form sang gobyerno, DOH, ukon lokal nga panguluhan. Antes ini ipasa, ginasiguro ni Riza kon ano nga impormasyon ang ginapangayo, kon nagatakdo ini sa napamatud-an nga rekord, kag kon sin-o ang magabaton. Indi niya pagpun-on sang pagpangagpas ang kulang. Sundon niya ang aprubado nga lokal nga paagi sang pagtipig kag pagpasa; ang halimbawa indi matuod nga form ukon pangkabilugan nga pagsulundan kon diin ipadala ang tanan nga rekord."
+    },
+    {
+      "id": "check",
+      "takeaway": "Pilia ang rekord suno sa pamangkot; siguroha ang detalye antes ipasa.",
+      "check": {
+        "prompt": "Ginpangayo sang midwife kay Riza ang rekord kon sin-o ang nakabaton na sang health teaching. May master list siya sang mga tigulang kag registry sang mga serbisyo nga nahatag, pero may isa ka entry sa registry nga indi maathag. Ano ang pinakamaayo niya nga himuon?",
+        "options": [
+          "Gamita ang master list bilang pamatuod nga nakabaton na sang health teaching ang tanan nga tigulang.",
+          "Gamita ang registry, klaruhon anay ang entry nga indi sigurado, kag ihatag ang napamatud-an nga impormasyon sa midwife paagi sa aprubado nga paagi.",
+          "Kopyaha ang mga ngalan sa ginsugo nga form kag tag-anaa ang kulang nga detalye agod mapasa dayon."
+        ],
+        "feedback": "Ang registry amo ang rekord sang mga nakabaton sang serbisyo suno sa manwal. Indi pamatuod sang serbisyo ang master list. Klaruhon ang entry nga indi sigurado kag sundon ang aprubado nga lokal nga paagi sang pagpasa sa midwife."
+      },
+      "heading": "Gamita ang imo natun-an",
+      "body": "Ginpangayo sang midwife kay Riza ang rekord kon sin-o ang nakabaton na sang health teaching. May master list siya sang mga tigulang kag registry sang mga serbisyo nga nahatag, pero may isa ka entry sa registry nga indi maathag. Ano ang pinakamaayo niya nga himuon?"
+    }
+  ],
+  "slides": [
+    {
+      "id": "record-purpose-slide",
+      "heading": "Pagkatapos sang pagbisita",
+      "display": "Ipamangkot anay kon diin gamiton ang rekord.\nNagkalain-lain ang pamangkot nga ginasabat sang kada klase.\nHinimo lamang ang mga halimbawa.",
+      "check": null
+    },
+    {
+      "id": "household-profile-slide",
+      "heading": "Ano ang laragway sang panimalay?",
+      "display": "Household profile: isa ka panimalay.\nHalimbawa: HH-014 · apat ka miyembro.\nIndi ini rekord sang serbisyo nga nahatag.",
+      "check": null
+    },
+    {
+      "id": "master-list-slide",
+      "heading": "Sin-o ang kabahin sang grupo?",
+      "display": "Master list: sin-o ang kabahin sang grupo?\nHalimbawa: mga tigulang.\nIndi ini pamatuod nga may serbisyo nga nahatag.",
+      "check": null
+    },
+    {
+      "id": "registry-slide",
+      "heading": "Sin-o ang nakabaton sang serbisyo?",
+      "display": "Registry: sin-o ang nakabaton sang serbisyo?\nUsisaa ang ginrekord nga serbisyo.\nKlaruhon ang indi sigurado; indi magpangagpas.",
+      "check": null
+    },
+    {
+      "id": "assigned-form-slide",
+      "heading": "Klaruhon antes ipasa",
+      "display": "Klaruhon ang ginapangayo nga impormasyon.\nSiguroha ang magabaton kag aprubado nga paagi.\nIndi pagpun-i sang pagpangagpas ang kulang.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imo natun-an",
+      "display": "Pilia ang rekord suno sa pamangkot.\nUsisaa ang entry nga indi maathag.\nIpasa lamang sa husto nga magabaton paagi sa aprubado nga paagi.",
+      "check": {
+        "prompt": "Ginpangayo sang midwife kay Riza ang rekord kon sin-o ang nakabaton na sang health teaching. May master list siya sang mga tigulang kag registry sang mga serbisyo nga nahatag, pero may isa ka entry sa registry nga indi maathag. Ano ang pinakamaayo niya nga himuon?",
+        "options": [
+          "Gamita ang master list bilang pamatuod nga nakabaton na sang health teaching ang tanan nga tigulang.",
+          "Gamita ang registry, klaruhon anay ang entry nga indi sigurado, kag ihatag ang napamatud-an nga impormasyon sa midwife paagi sa aprubado nga paagi.",
+          "Kopyaha ang mga ngalan sa ginsugo nga form kag tag-anaa ang kulang nga detalye agod mapasa dayon."
+        ],
+        "feedback": "Ang registry amo ang rekord sang mga nakabaton sang serbisyo suno sa manwal. Indi pamatuod sang serbisyo ang master list. Klaruhon ang entry nga indi sigurado kag sundon ang aprubado nga lokal nga paagi sang pagpasa sa midwife."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A06",
+      "alt": "Mga halimbawa sang household profile, master list, registry, kag ginsugo nga form.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "records-story",
+      "alt": "Pilia ang rekord suno sa pamangkot: household profile para sa isa ka panimalay; master list para sa mga miyembro sang grupo; registry para sa serbisyo nga nahatag; ginsugo nga form para sa ginapangayo nga detalye. Klaruhon ang entry nga indi sigurado kag siguroha ang magabaton kag aprubado nga paagi sang pagpasa.",
+      "caption": "Hinimo nga halimbawa ni Riza. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Magkaupod nga nagatan-aw si BHW Riza kag ang midwife sa mga wala sang sulod nga folder sa health station; wala sang makita nga personal nga datos.",
+    "caption": "Pagpili kag pagklaro sang rekord upod sa health team"
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Pagkatapos makaistorya si Aling Nena, ginpamangkot ni Riza ang midwife kon ano nga impormasyon ang kinahanglan.",
+      "title": "Ano nga rekord ang kinahanglan?",
+      "detail": "Hibalua anay ang pamangkot."
+    },
+    {
+      "id": "household",
+      "text": "Ang household profile nagalaragway sang isa ka panimalay. Indi ini pamatuod nga may serbisyo nga nahatag.",
+      "title": "Household profile",
+      "detail": "Ano ang laragway sang panimalay?"
+    },
+    {
+      "id": "master-list",
+      "text": "Ang master list nagasugid kon sin-o ang kabahin sang isa ka grupo. Indi ini rekord sang serbisyo nga nahatag.",
+      "title": "Master list",
+      "detail": "Sin-o ang kabahin sang grupo?"
+    },
+    {
+      "id": "registry",
+      "text": "Ang registry ang tan-awon kon sin-o ang nakabaton sang health teaching. Klaruhon anay ang entry nga indi sigurado.",
+      "title": "Registry",
+      "detail": "Sin-o ang nakabaton sang serbisyo?"
+    },
+    {
+      "id": "assigned-form",
+      "text": "Sa ginsugo nga form, siguroha ang ginapangayo nga detalye kag ang magabaton. Sundon ang aprubado nga lokal nga paagi sang pagpasa.",
+      "title": "Ginsugo nga form",
+      "detail": "Ano ang kinahanglan, kag sin-o ang magabaton?"
+    },
+    {
+      "id": "summary",
+      "text": "Pilia ang rekord suno sa pamangkot, usisaa ang impormasyon, kag indi magpangagpas.",
+      "title": "Pilia · Usisaa · Ipasa",
+      "detail": "Hinimo lamang nga mga halimbawa."
+    }
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.5 translated text, reading narration, animated video and captions",
+    "approval": "Owner requested merging and deploying PRs #237 then #238 in the Codex conversation, approving this lesson in both languages."
+  },
+  "source_text": "[\"bhw-records\",\"Mga talaan at impormasyon\",\"Records and Information\",[\"Maitugma ang apat na uri ng talaan sa gamit nito at maipaliwanag kung kanino ihahatid ang kaugnay na impormasyon.\"],[\"Match four record types to their purposes and explain who should receive relevant information.\"],[[\"record-purpose\",[\"m1.provider.records\"],\"Pagkatapos ng pagbisita\",\"After the visit\",\"Pagkatapos kausapin si Aling Nena, bumalik si BHW Riza sa health station. May kathang-isip siyang tala ng napag-usapan, ngunit hindi niya ito basta ilalagay sa kahit aling listahan. Tinanong niya ang midwife: “Anong impormasyon ang kailangan, at para saan ito gagamitin?” Mahalaga ang wastong tala sa pag-unawa sa pangangailangan ng komunidad at sa pagpaplano ng programa. Ang lahat ng halimbawa sa araling ito ay kathang-isip; wala itong tunay na personal na datos o opisyal na form.\",\"After speaking with Aling Nena, BHW Riza returns to the health station. She has a fictional note about the conversation, but she will not put it into just any list. She asks the midwife, “What information is needed, and what will it be used for?” Accurate records help the health team understand community needs and plan programs. Every example in this lesson is fictional; it contains no real personal data or official form.\",\"Ang tala ay may tanong na sinasagot at taong gagamit nito.\",\"A record answers a question for someone who will use it.\",null],[\"household-profile\",[\"m1.provider.documents\"],\"Ano ang larawan ng kabahayan?\",\"What describes the household?\",\"Unang tiningnan ni Riza ang household profile. Sa kathang-isip na halimbawa, ang code na HH-014 ay tumutukoy sa isang kabahayang may apat na miyembro. Makakatulong ito upang makita ang larawan ng kabahayan. Hindi nito sinasagot kung sino ang nabigyan na ng serbisyo. Ang tunay na fields at paraan ng pag-iingat ay ayon sa aprubadong lokal na form at tagubilin.\",\"Riza first looks at the household profile. In the fictional example, code HH-014 stands for one household with four members. This helps describe the household. It does not answer who has already received a service. Use the approved local form and instructions for actual fields and safekeeping.\",\"Household profile: larawan ng isang kabahayan, hindi patunay ng serbisyong naibigay.\",\"A household profile describes one household; it does not prove a service was given.\",null],[\"master-list\",[\"m1.provider.documents\"],\"Sino ang kabilang sa grupo?\",\"Who belongs to the group?\",\"Sumunod, nakita ni Riza ang master list para sa isang grupo, gaya ng mga nakatatanda sa purok. Ayon sa manual, pinagsasama ng master list ang mga tao ayon sa grupo. Magagamit ito kung ang tanong ay kung sino ang kabilang sa grupong iyon. Hindi sapat ang pagkakalista rito upang sabihing nabigyan na sila ng health teaching o ibang serbisyo.\",\"Next, Riza looks at a master list for a group, such as older residents in the neighborhood. The manual describes a master list as grouping people by category. It helps answer who belongs to that group. Being listed there does not establish that someone received health teaching or another service.\",\"Master list: sino ang kabilang sa isang grupo.\",\"A master list shows who belongs to a group.\",null],[\"registry\",[\"m1.provider.documents\"],\"Sino ang nabigyan ng serbisyo?\",\"Who received a service?\",\"“Sino na ang nabigyan ng health teaching?” tanong ng midwife. Ang registry ang titingnan ni Riza: ayon sa manual, ito ang tala ng mga taong nabigyan ng serbisyo. Susuriin niya ang nakatalang serbisyo bago sumagot. Kung may detalyeng hindi malinaw, lilinawin muna niya ito sa health team; hindi niya hahanguin ang sagot mula sa master list o magdaragdag ng entry batay sa hula.\",\"“Who has received health teaching?” asks the midwife. Riza checks the registry: the manual describes it as the record of people who received a service. She checks the recorded service before answering. If an entry is unclear, she clarifies it with the health team rather than inferring an answer from the master list or adding a guessed entry.\",\"Registry: sino ang nabigyan ng serbisyo, batay sa natiyak na tala.\",\"A registry shows who received a service, based on verified entries.\",null],[\"assigned-form\",[\"m1.provider.documents\",\"m1.competency\"],\"Linawin bago ihatid\",\"Clarify before handing it over\",\"May iniatas ding form na may kathang-isip na label na “tatanggap: midwife.” Maaaring magpagawa ang nurse, midwife, o doktor ng form ng gobyerno, DOH, o lokal na pamahalaan. Bago ito ihatid, tinitiyak ni Riza kung anong impormasyon ang hinihingi, kung tugma ito sa natiyak na tala, at kung sino ang tatanggap. Hindi niya pupunan ng hula ang kulang. Susundin niya ang aprubadong lokal na paraan ng pag-iingat at pagpapasa; ang halimbawa ay hindi tunay na form o pangkalahatang tuntunin kung saan dapat ipadala ang lahat ng tala.\",\"There is also an assigned form with the fictional label “recipient: midwife.” A nurse, midwife, or doctor may assign a government, DOH, or local-government form. Before handing it over, Riza checks what information is requested, whether it matches the verified record, and who should receive it. She does not guess missing details. She follows the approved local method for safeguarding and submitting it; this example is neither a real form nor a universal rule for where every record goes.\",\"Bago ipasa: tiyakin ang hinihinging detalye, tatanggap, at aprubadong paraan.\",\"Before handoff, confirm the requested details, recipient, and approved route.\",null],[\"check\",[\"m1.provider.records\",\"m1.provider.documents\",\"m1.competency\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Hiniling ng midwife kay Riza ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?\",\"The midwife asks Riza for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?\",\"Piliin ang tala ayon sa tanong; tiyakin ang detalye bago magpasa.\",\"Choose the record by the question; verify details before handoff.\",[\"Hiniling ng midwife kay Riza ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?\",\"The midwife asks Riza for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?\",[[\"Gamitin ang master list bilang patunay na nabigyan na ng health teaching ang lahat ng nakatatanda.\",\"Use the master list as proof that all older residents received health teaching.\"],[\"Gamitin ang registry, linawin muna ang hindi tiyak na entry, at ihatid ang natiyak na impormasyon sa midwife sa aprubadong paraan.\",\"Use the registry, clarify the uncertain entry, and give the verified information to the midwife through the approved route.\"],[\"Kopyahin ang mga pangalan sa iniatas na form at hulaan ang kulang na detalye para maipasa agad.\",\"Copy the names into the assigned form and guess the missing detail so it can be submitted immediately.\"]],1,\"Ang registry ang tala ng mga nabigyan ng serbisyo ayon sa manual. Hindi patunay ng serbisyo ang master list. Linawin ang hindi tiyak na entry at sundin ang aprubadong lokal na paraan ng pagpapasa sa midwife.\",\"The manual describes the registry as the record of people who received a service. The master list does not prove service delivery. Clarify the uncertain entry and follow the approved local route to the midwife.\"]]],[[\"record-purpose-slide\",[\"m1.provider.records\"],\"Pagkatapos ng pagbisita\",\"After the visit\",\"Itanong muna kung para saan ang tala.\\nMagkakaiba ang tanong na sinasagot ng bawat uri.\\nKathang-isip lamang ang mga halimbawa.\",\"Ask what the record is for.\\nEach kind answers a different question.\\nAll examples are fictional.\",null],[\"household-profile-slide\",[\"m1.provider.documents\"],\"Ano ang larawan ng kabahayan?\",\"What describes the household?\",\"Household profile: isang kabahayan.\\nHalimbawa: HH-014 · apat na miyembro.\\nHindi ito tala ng serbisyong naibigay.\",\"Household profile: one household.\\nExample: HH-014 · four members.\\nIt is not a record of services given.\",null],[\"master-list-slide\",[\"m1.provider.documents\"],\"Sino ang kabilang sa grupo?\",\"Who belongs to the group?\",\"Master list: sino ang nasa grupo?\\nHalimbawa: mga nakatatanda.\\nHindi nito pinatutunayan na may serbisyong naibigay.\",\"Master list: who belongs to the group?\\nExample: older residents.\\nIt does not prove a service was given.\",null],[\"registry-slide\",[\"m1.provider.documents\"],\"Sino ang nabigyan ng serbisyo?\",\"Who received a service?\",\"Registry: sino ang nabigyan ng serbisyo?\\nSuriin ang nakatalang serbisyo.\\nLinawin ang hindi tiyak; huwag manghula.\",\"Registry: who received a service?\\nCheck the service recorded.\\nClarify uncertainty; do not guess.\",null],[\"assigned-form-slide\",[\"m1.provider.documents\",\"m1.competency\"],\"Linawin bago ihatid\",\"Clarify before handing it over\",\"Linawin ang hinihinging impormasyon.\\nTiyakin ang tatanggap at aprubadong paraan.\\nHuwag punan ng hula ang kulang.\",\"Clarify the information requested.\\nConfirm the recipient and approved route.\\nDo not guess missing details.\",null],[\"check-slide\",[\"m1.provider.records\",\"m1.provider.documents\",\"m1.competency\"],\"Gamitin ang natutuhan\",\"Apply your learning\",\"Piliin ang tala ayon sa tanong.\\nSuriin ang hindi malinaw na entry.\\nIhatid lamang sa tamang tatanggap sa aprubadong paraan.\",\"Choose the record by the question.\\nCheck the unclear entry.\\nUse the approved route to the right recipient.\",[\"Hiniling ng midwife kay Riza ang tala kung sino ang nabigyan na ng health teaching. May master list siya ng mga nakatatanda at registry ng mga serbisyong naibigay, ngunit may isang entry sa registry na hindi malinaw. Ano ang pinakamainam niyang gawin?\",\"The midwife asks Riza for the record of who has received health teaching. She has a master list of older residents and a registry of services given, but one registry entry is unclear. What should she do?\",[[\"Gamitin ang master list bilang patunay na nabigyan na ng health teaching ang lahat ng nakatatanda.\",\"Use the master list as proof that all older residents received health teaching.\"],[\"Gamitin ang registry, linawin muna ang hindi tiyak na entry, at ihatid ang natiyak na impormasyon sa midwife sa aprubadong paraan.\",\"Use the registry, clarify the uncertain entry, and give the verified information to the midwife through the approved route.\"],[\"Kopyahin ang mga pangalan sa iniatas na form at hulaan ang kulang na detalye para maipasa agad.\",\"Copy the names into the assigned form and guess the missing detail so it can be submitted immediately.\"]],1,\"Ang registry ang tala ng mga nabigyan ng serbisyo ayon sa manual. Hindi patunay ng serbisyo ang master list. Linawin ang hindi tiyak na entry at sundin ang aprubadong lokal na paraan ng pagpapasa sa midwife.\",\"The manual describes the registry as the record of people who received a service. The master list does not prove service delivery. Clarify the uncertain entry and follow the approved local route to the midwife.\"]]]]",
+  "narration": {
+    "record-purpose": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/record-purpose.hil.50b26a9d9f19.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "50b26a9d9f19540cdc86927c52d1a172d9894a531cd5e62550a3132cbd3cc994",
+      "sha256": "1e271912cf079ce0079c81fb88ac557f831475f93bdd25f70b579693f1883db4",
+      "duration_seconds": 46.78530612244898,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Pagkatapos sang pagbisita",
+          "start_ms": 0,
+          "end_ms": 2560
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Pagkatapos makaistorya si Aling Nena, nagbalik si BHW Riza sa health station.",
+          "start_ms": 2860,
+          "end_ms": 9300
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "May hinimo siya nga rekord sang ila ginhisugilan, pero indi niya ini basta ibutang sa bisan diin nga listahan.",
+          "start_ms": 9600,
+          "end_ms": 17480
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ginpamangkot niya ang midwife: “Ano nga impormasyon ang kinahanglan, kag diin ini gamiton?”",
+          "start_ms": 17780,
+          "end_ms": 24620
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Importante ang husto nga rekord sa paghangop sang mga kinahanglanon sang komunidad kag sa pagplano sang programa.",
+          "start_ms": 24920,
+          "end_ms": 32920
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Hinimo lamang ang tanan nga halimbawa sa sini nga leksiyon; wala ini sang matuod nga personal nga datos ukon opisyal nga form.",
+          "start_ms": 33220,
+          "end_ms": 41540
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang rekord may pamangkot nga ginasabat kag tawo nga magagamit sini.",
+          "start_ms": 41840,
+          "end_ms": 46720
+        }
+      ]
+    },
+    "household-profile": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/household-profile.hil.30b7bab93b91.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "30b7bab93b915498d33898acf005a66680da189246eb223cb8c56beee9976fbb",
+      "sha256": "457f064a42638d0f0dc18b930c4c0e2388a4bb7496e600e0a06161a4372a29fa",
+      "duration_seconds": 42.39673469387755,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Ano ang laragway sang panimalay?",
+          "start_ms": 0,
+          "end_ms": 2760
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Una nga gintan-aw ni Riza ang household profile.",
+          "start_ms": 3060,
+          "end_ms": 6740
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa hinimo nga halimbawa, ang code nga HH-014 nagatumod sa isa ka panimalay nga may apat ka miyembro.",
+          "start_ms": 7040,
+          "end_ms": 17080
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Makabulig ini agod makita ang laragway sang panimalay.",
+          "start_ms": 17380,
+          "end_ms": 21740
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Indi sini masabat kon sin-o ang nakabaton na sang serbisyo.",
+          "start_ms": 22040,
+          "end_ms": 26560
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Ang matuod nga mga field kag paagi sang pagtipig nagasunod sa aprubado nga lokal nga form kag tagubilin.",
+          "start_ms": 26860,
+          "end_ms": 34300
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Household profile: laragway sang isa ka panimalay, indi pamatuod nga may serbisyo nga nahatag.",
+          "start_ms": 34600,
+          "end_ms": 42320
+        }
+      ]
+    },
+    "master-list": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/master-list.hil.17e97043b03d.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "17e97043b03ddfedaa10ef3cc6e397056586ab6032d7a973c4a4e8891fd54078",
+      "sha256": "e70470ce82ca0eefd11dc960908c1c80f658b1863eba3553d2bced7634347088",
+      "duration_seconds": 35.00408163265306,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Sin-o ang kabahin sang grupo?",
+          "start_ms": 0,
+          "end_ms": 2440
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Masunod, nakita ni Riza ang master list para sa isa ka grupo, pareho sang mga tigulang sa purok.",
+          "start_ms": 2740,
+          "end_ms": 10780
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Suno sa manwal, ginatipon sang master list ang mga tawo suno sa grupo.",
+          "start_ms": 11080,
+          "end_ms": 16600
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Magamit ini kon ang pamangkot amo kon sin-o ang kabahin sang amo nga grupo.",
+          "start_ms": 16900,
+          "end_ms": 22820
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Indi igo ang pagkakalista diri agod masiling nga nakabaton na sila sang health teaching ukon iban nga serbisyo.",
+          "start_ms": 23120,
+          "end_ms": 30360
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Master list: sin-o ang kabahin sang isa ka grupo.",
+          "start_ms": 30660,
+          "end_ms": 34940
+        }
+      ]
+    },
+    "registry": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/registry.hil.b91877cccce2.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "b91877cccce255157c4359cd47202e1ecc6b16ca4aa35b4a8d0bab146ae294c1",
+      "sha256": "488bab82d9c78be5a121ebaa3ef8ff676db866f2baceb4fc4554a7cf75c2f257",
+      "duration_seconds": 40.51591836734694,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Sin-o ang nakabaton sang serbisyo?",
+          "start_ms": 0,
+          "end_ms": 2680
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "“Sin-o na ang nakabaton sang health teaching?”",
+          "start_ms": 2980,
+          "end_ms": 6180
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "pamangkot sang midwife.",
+          "start_ms": 6480,
+          "end_ms": 8560
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ang registry ang tan-awon ni Riza: suno sa manwal, amo ini ang rekord sang mga tawo nga nakabaton sang serbisyo.",
+          "start_ms": 8860,
+          "end_ms": 17340
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Usisaon niya ang ginrekord nga serbisyo antes magsabat.",
+          "start_ms": 17640,
+          "end_ms": 21600
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Kon may detalye nga indi maathag, klaruhon anay niya ini sa health team; indi niya pagkuhaon ang sabat halin sa master list ukon magdugang sang entry suno sa pagpangagpas.",
+          "start_ms": 21900,
+          "end_ms": 33580
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Registry: sin-o ang nakabaton sang serbisyo, suno sa napamatud-an nga mga entry.",
+          "start_ms": 33880,
+          "end_ms": 40440
+        }
+      ]
+    },
+    "assigned-form": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/assigned-form.hil.e566769adae1.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "e566769adae10a653a0387c388caa4bae9c843de663b4c2b159d70638509db22",
+      "sha256": "196e2440a99e29942de88abdecb99ad81133d3baffd80d2937b75db5e035cc89",
+      "duration_seconds": 55.666938775510204,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Klaruhon antes ipasa",
+          "start_ms": 0,
+          "end_ms": 2880
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "May ginsugo man nga form nga may hinimo nga label nga “magabaton: midwife.”",
+          "start_ms": 3180,
+          "end_ms": 9260
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Mahimo nga magpahimo ang nurse, midwife, ukon doktor sang form sang gobyerno, DOH, ukon lokal nga panguluhan.",
+          "start_ms": 9560,
+          "end_ms": 18800
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Antes ini ipasa, ginasiguro ni Riza kon ano nga impormasyon ang ginapangayo, kon nagatakdo ini sa napamatud-an nga rekord, kag kon sin-o ang magabaton.",
+          "start_ms": 19100,
+          "end_ms": 30220
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Indi niya pagpun-on sang pagpangagpas ang kulang.",
+          "start_ms": 30520,
+          "end_ms": 33640
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sundon niya ang aprubado nga lokal nga paagi sang pagtipig kag pagpasa; ang halimbawa indi matuod nga form ukon pangkabilugan nga pagsulundan kon diin ipadala ang tanan nga rekord.",
+          "start_ms": 33940,
+          "end_ms": 47940
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Antes ipasa: siguroha ang ginapangayo nga detalye, magabaton, kag aprubado nga paagi.",
+          "start_ms": 48240,
+          "end_ms": 55600
+        }
+      ]
+    },
+    "check": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-records/check.hil.bf7e4c87644b.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "bf7e4c87644bbc27f23a929f09e061b76287f4491dce24f1c7197dc98cd24985",
+      "sha256": "8d70dc10c132121574f6308d01d889d470ab31b62be1fb77d997e48b79d54c92",
+      "duration_seconds": 28.708571428571428,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Gamita ang imo natun-an",
+          "start_ms": 0,
+          "end_ms": 2480
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Ginpangayo sang midwife kay Riza ang rekord kon sin-o ang nakabaton na sang health teaching.",
+          "start_ms": 2780,
+          "end_ms": 8420
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "May master list siya sang mga tigulang kag registry sang mga serbisyo nga nahatag, pero may isa ka entry sa registry nga indi maathag.",
+          "start_ms": 8720,
+          "end_ms": 19200
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Ano ang pinakamaayo niya nga himuon?",
+          "start_ms": 19500,
+          "end_ms": 22700
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Pilia ang rekord suno sa pamangkot; siguroha ang detalye antes ipasa.",
+          "start_ms": 23000,
+          "end_ms": 28640
+        }
+      ]
+    }
+  },
+  "poster": "/training/bhw-1-1/records-riza-gemini-hil-0229b503beff-poster.jpg",
+  "video": {
+    "path": "/training/bhw-1-1/records-riza-gemini-hil-8a335908ae3c.mp4",
+    "content_hash": "8a335908ae3c96021673a7a4556ce5a7de5595d3177bad3c46e8fff98c881131",
+    "duration_s": 48,
+    "captions": {
+      "path": "/training/bhw-1-1/records-riza-gemini-hil-251e6fb44572.vtt",
+      "content_hash": "251e6fb445725a319e9e47052f2551b563a379a1896d90c85328852e571c415b"
+    }
+  },
+  "story_content_hash": "88f096664e7a5836985779cd4a9a759ef90dbaa42c11b3fe207abc9a93434b12"
+}

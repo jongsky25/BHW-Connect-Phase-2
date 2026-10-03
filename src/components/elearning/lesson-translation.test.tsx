@@ -197,6 +197,8 @@ describe("lesson 1.1.2 approved translations", () => {
 
 describe.each([
   { number: "1.1.3", folder: "bhw-community-organizer", firstId: "organizer-scene", approved: true, correctIndex: 2, wrongIndex: 0 },
+  { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2, wrongIndex: 0 },
+  { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1, wrongIndex: 0 },
   { number: "1.1.6", folder: "bhw-roles-application", firstId: "applied-observation", approved: false, correctIndex: 0, wrongIndex: 1 },
 ])("lesson $number translated content", ({ folder, firstId, approved, correctIndex, wrongIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);

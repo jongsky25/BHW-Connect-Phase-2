@@ -86,6 +86,19 @@ export const RemotionRoot: React.FC = () => {
       />
       {(["ceb", "hil"] as const).map((language) => (
         <Composition
+          key={`service-provider-${language}`}
+          id={language === "ceb" ? "ServiceProviderStoryCeb" : "ServiceProviderStoryHil"}
+          component={ServiceProviderStory}
+          calculateMetadata={calculateServiceProviderMetadata}
+          durationInFrames={SERVICE_PROVIDER_FALLBACK_DURATION}
+          fps={SERVICE_PROVIDER_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
+      {(["ceb", "hil"] as const).map((language) => (
+        <Composition
           key={`community-organizer-${language}`}
           id={language === "ceb" ? "CommunityOrganizerStoryCeb" : "CommunityOrganizerStoryHil"}
           component={CommunityOrganizerStory}
@@ -175,10 +188,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
+      {(["fil", "en", "ceb", "hil"] as const).map((language) => (
         <Composition
           key={`records-${language}`}
-          id={language === "fil" ? "RecordsStoryFil" : "RecordsStoryEn"}
+          id={{ fil: "RecordsStoryFil", en: "RecordsStoryEn", ceb: "RecordsStoryCeb", hil: "RecordsStoryHil" }[language]}
           component={RecordsStory}
           calculateMetadata={calculateRecordsMetadata}
           durationInFrames={RECORDS_FALLBACK_DURATION}
