@@ -55,6 +55,6 @@ approved by the owner on 2026-10-02.
 
 Lesson 1.1.6 follows in `remotion/src/roles-application/`, bringing Riza's
 three roles together in an instruction, record, and handover. Its expressive
-Gemini Read narration and both captioned animations are a review draft;
-see `docs/lesson-116-layout-review.md`. Keep its new assets draft until
-reviewed, and publish only `bhw-roles-application` after approval.
+Gemini Read narration and both captioned animations were approved by the
+owner for live publication on 2026-10-03; see
+`docs/lesson-116-layout-review.md`. Publish only `bhw-roles-application`.

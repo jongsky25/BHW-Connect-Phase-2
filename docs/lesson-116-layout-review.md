@@ -71,19 +71,16 @@ Read or Slides checks allows completion without watching the video.
 
 ## Review and release
 
-This lesson and new media are a review draft. Implementation authorization
-does not record approval of the new copy, image, or audio. Review both
-languages for pronunciation, pacing, exact narration matching, caption
-timing, phone/tablet/full-screen readability, answer feedback, and the
-local contact/handover language. The facilitator confirms local contacts,
-record requirements, and route with the health team.
+The owner approved lesson 1.1.6 and instructed live publication on
+2026-10-03. Approval covers the bilingual lesson copy, new illustration,
+12 Gemini Read recordings, both narrated animations, and matching captions.
+The two new assets are marked approved. The facilitator confirms local
+contacts, record requirements, and route with the health team.
 
-After review approval, mark the new assets approved, run repository CI
-and a scoped loader dry run, merge, verify production deployment, then
-publish only `bhw-roles-application` with the reviewed source revision.
-Retain existing published metadata, identity, and learner progress;
-check the adjacent five lessons' pointers and media after publication.
-Technical verification evidence is recorded with the draft PR.
+Release uses repository CI and a scoped loader dry run, then production
+deployment and publication of only `bhw-roles-application`. Retain existing
+published metadata, identity, and learner progress; verify the adjacent five
+lessons' published pointers after publication.
 
 ## Implementation verification — 2026-10-03
 
@@ -106,8 +103,8 @@ Technical verification evidence is recorded with the draft PR.
 - Inspected the original image, a rendered story scene, summary poster, and
   desktop/phone/full-screen screenshots. Saved both narrated video previews,
   caption files, Read samples, all 12 Read tracks, and browser check reports
-  for owner review. Pronunciation and delivery still need owner listening
-  review in both languages.
+  for owner review. Owner approval and live release authorization were
+  recorded on 2026-10-03.
 
 Browser checks used the actual lesson component and authored lesson/media in
 an isolated local fixture. Next image/link/navigation were adapted for the
