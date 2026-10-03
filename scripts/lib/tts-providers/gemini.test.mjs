@@ -52,6 +52,18 @@ describe("decodePcm", () => {
 });
 
 describe("synthesizeWithGemini", () => {
+  it("pronounces YAKAP as the Tagalog word even with custom story delivery", async () => {
+    for (const language of ["fil", "en", "ceb", "hil"]) {
+      const fetchImpl = vi.fn(async () => audioResponse(wav(0.2)));
+      const rendered = await synthesizeWithGemini([{ zone: "body", index: 0, text: "PhilHealth YAKAP." }], language, { apiKey: "k", style: "Warm storyteller.", fetchImpl });
+      const content = JSON.parse(fetchImpl.mock.calls[0][1].body).input[0].content[0];
+      expect(content.text).toBe("PhilHealth yakap.");
+      expect(content.annotations[0].style).toContain("Warm storyteller.");
+      expect(content.annotations[0].style).toMatch(/Tagalog word meaning hug.*YAH-kap/);
+      expect(content.annotations[0].style).toContain("Never spell its letters");
+      expect(rendered.timings[0].text).toBe("PhilHealth YAKAP.");
+    }
+  });
   it("requests Hiligaynon pronunciation and intonation while preserving the script", async () => {
     const fetchImpl = vi.fn(async () => audioResponse(wav(0.2)));
     await synthesizeWithGemini([{ zone: "body", index: 0, text: "Ang BHW kag ang HEPO." }], "hil", { apiKey: "k", fetchImpl });

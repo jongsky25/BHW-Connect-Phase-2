@@ -4,6 +4,7 @@
 // than hardwired. Nothing here makes a network call or touches Supabase
 // directly; every I/O boundary is a parameter.
 
+import { pronunciationCacheKey } from "./narration-pronunciation.mjs";
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 
@@ -15,11 +16,10 @@ export const VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-US-JennyNeural" };
 // Changing the voice is deliberately also a cache-buster: a different
 // voice is a different audio file even over identical text.
 export function computeContentHash(zones, voice) {
-  return createHash("sha256")
-    .update(JSON.stringify(zones))
-    .update("\u0000")
-    .update(voice)
-    .digest("hex");
+  const hash = createHash("sha256").update(JSON.stringify(zones)).update("\u0000").update(voice);
+  const pronunciationKey = pronunciationCacheKey(zones);
+  if (pronunciationKey) hash.update("\u0000").update(pronunciationKey);
+  return hash.digest("hex");
 }
 
 /**

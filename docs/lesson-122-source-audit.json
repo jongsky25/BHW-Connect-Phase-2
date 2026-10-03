@@ -1,0 +1,78 @@
+{
+  "checked_date": "2026-10-03",
+  "sources": [
+    {
+      "id": "manual-uhc",
+      "title": "BHW Reference Manual — UHC changes, printed p. 5 / PDF p. 13; BHW referral role, printed p. 50 / PDF p. 65",
+      "pdf_pages": [
+        13,
+        65
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+      "checked_date": "2026-10-03",
+      "claim_coverage": "Printed p.5/PDF p.13: nine changes; printed p.50/PDF p.65: BHW support and locally confirmed referral protocols."
+    },
+    {
+      "id": "ra11223",
+      "title": "Republic Act No. 11223 — UHC Act, sections 4, 6 and 18",
+      "url": "https://www.philhealth.gov.ph/about_us/RA11223_UHC.pdf",
+      "checked_date": "2026-10-03",
+      "verification_url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html",
+      "claim_coverage": "Sections 5, 6(c)-(d), 4(l), 18: NHIP inclusion, chosen primary care provider, coordination and networks."
+    },
+    {
+      "id": "philhealth-yakap",
+      "title": "PhilHealth — YAKAP primary and outpatient benefit announcement, 25 July 2025",
+      "url": "https://www.philhealth.gov.ph/news/up/article/2025/news_6889cbf12d887.php",
+      "checked_date": "2026-10-03",
+      "claim_coverage": "Announcement describes primary/outpatient care; no universal service, cost or availability promise is derived."
+    },
+    {
+      "id": "philhealth-selection",
+      "title": "PhilHealth Circular 2025-0017 — Selection and Empanelment for the Primary Care Benefit Package",
+      "url": "https://www.philhealth.gov.ph/circulars/2025/PC2025-0017.pdf",
+      "checked_date": "2026-10-03",
+      "claim_coverage": "PDF pp.1-6, 9: resident choice, selection channels, first patient encounter and empanelment. Specific local steps must be confirmed."
+    },
+    {
+      "id": "doh-networks",
+      "title": "DOH National Objectives for Health 2023–2028 — primary care networks and patient navigation",
+      "url": "https://doh.gov.ph/wp-content/uploads/2024/01/National-Objectives-for-Health-2023-2028.pdf",
+      "checked_date": "2026-10-03",
+      "verification_url": "https://cfermtc.doh.gov.ph/doh-vows-strengthened-implementation-of-universal-health-care-in-accordance-with-the-philippine-development-plan-for-2023-2028/",
+      "claim_coverage": "Network/navigation goal verified using the official DOH release; NOH PDF retrieval returned 403 and exact NOH page verification is not claimed."
+    },
+    {
+      "id": "philhealth-digital-yes",
+      "title": "PhilHealth Advisory 2026-0029 — Digital YAKAP Empanelment Slip, signed 5 May 2026",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0029.pdf",
+      "pdf_pages": [
+        1
+      ],
+      "checked_date": "2026-10-03",
+      "claim_coverage": "Current empanelment uses a digital YES process; confirms the need to obtain current instructions, without adding provider workflow detail to learner copy."
+    },
+    {
+      "id": "philhealth-yakap-rights",
+      "title": "PhilHealth Advisory 2026-0003 — Member rights under YAKAP",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0003.pdf",
+      "pdf_pages": [
+        1
+      ],
+      "checked_date": "2026-10-03",
+      "claim_coverage": "Resident choice and care rights; no BHW selection on behalf of the resident."
+    },
+    {
+      "id": "philhealth-yakap-clinics",
+      "title": "PhilHealth Advisory 2026-0023 — Fixed clinic and mobile/telemedicine empanelment requirements",
+      "url": "https://www.philhealth.gov.ph/advisories/2026/PA2026-0023.pdf",
+      "pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "checked_date": "2026-10-03",
+      "claim_coverage": "Accredited clinic capacity and access limits support confirmation of the provider; no assumption that every barangay outreach is an empanelment event."
+    }
+  ]
+}

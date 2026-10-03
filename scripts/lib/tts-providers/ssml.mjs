@@ -1,3 +1,5 @@
+import { applyWordPronunciations } from "../narration-pronunciation.mjs";
+
 // Shared SSML builder for both TTS providers (INC-27,
 // docs/training-modules-plan.md). A <bookmark mark="..."/> is placed right
 // after each narration zone's text — this is what gives exact per-zone
@@ -22,7 +24,7 @@ const LANG_TAG = { fil: "fil-PH", en: "en-US" };
 
 export function buildSsml(zones, { voice, language }) {
   const body = zones
-    .map((zone, i) => `${escapeXml(zone.text)}<bookmark mark="zone-${i}"/>`)
+    .map((zone, i) => `${escapeXml(applyWordPronunciations(zone.text))}<bookmark mark="zone-${i}"/>`)
     .join(" ");
   return (
     `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="${LANG_TAG[language]}">` +

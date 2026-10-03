@@ -1,3 +1,4 @@
+import { applyWordPronunciations } from "../narration-pronunciation.mjs";
 // Microsoft Edge "Read Aloud" voice service, one plain-text utterance per
 // request, returned as 24 kHz / 48 kbps mono MP3. Used by
 // scripts/training-narrate.mjs for Reference Manual lesson narration.
@@ -133,7 +134,7 @@ export async function synthesizeUtterance(
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
     try {
-      return await once(text, voice, openConnection, timeoutMs);
+      return await once(applyWordPronunciations(text), voice, openConnection, timeoutMs);
     } catch (error) {
       lastError = error;
       if (attempt < attempts - 1) await wait(1000 * 2 ** attempt);
