@@ -161,7 +161,7 @@ export function ReferenceLessons(props: Props) {
   const lesson = sourceLesson && translation ? translateLesson(sourceLesson, translation) : sourceLesson;
   const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (en ? eng : fil);
   const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);
-  const storyArt = lesson?.lesson_key === "bhw-roles-hepo"
+  const sourceStoryArt = lesson?.lesson_key === "bhw-roles-hepo"
     ? {
         src: "/training/bhw-1-1/scene-8cdb1498a723.png",
         alt: translation?.story_art.alt ?? ui(
@@ -234,6 +234,7 @@ export function ReferenceLessons(props: Props) {
             caption: ui("Tiyakin ang susunod na hakbang", "Confirm the next step"),
           }
       : null;
+  const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
   const items = lesson
     ? mode === "read"

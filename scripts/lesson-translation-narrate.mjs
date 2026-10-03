@@ -1,12 +1,12 @@
-// Scoped, resumable Gemini narration for the lesson 1.1.1 language pilots.
+// Scoped, resumable Gemini narration for the selected lesson language pilot.
 // Dry run by default. No database access and no cleanup of existing audio.
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { buildLessonPilot, lessonDirectory, translationLanguage, pilotLanguages } from "./lesson-translation-build.mjs";
+import { buildLessonPilot, lessonDirectory, lessonConfig, translationLanguage, pilotLanguages } from "./lesson-translation-build.mjs";
 import { buildNarrationZones } from "./lib/narration-zones.mjs";
 import { spokenText, mp3AudioFrames } from "./lib/reference-narration.mjs";
-import { synthesizeWithGemini, geminiVoiceId, GEMINI_TTS_MODEL, GEMINI_VOICE, ROLES_HEPO_STORY_STYLES } from "./lib/tts-providers/gemini.mjs";
+import { synthesizeWithGemini, geminiVoiceId, GEMINI_TTS_MODEL, GEMINI_VOICE, ROLES_HEPO_STORY_STYLES, HEALTH_EDUCATOR_STORY_STYLES, COMMUNITY_ORGANIZER_STORY_STYLES } from "./lib/tts-providers/gemini.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const language = translationLanguage();
@@ -37,7 +37,7 @@ if (!process.argv.includes("--apply")) {
   if (includeRead) for (const group of groups) {
     const rendered = await synthesizeWithGemini(group.zones, language, options);
     const identity = hash(JSON.stringify([geminiVoiceId(), language, group.zones, hash(rendered.audioBytes)]));
-    const relative = `training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/${group.id}.${language}.${identity.slice(0, 12)}.mp3`;
+    const relative = `training/audio/01-tungkulin-ng-bhw/${lessonConfig.key}/${group.id}.${language}.${identity.slice(0, 12)}.mp3`;
     mkdirSync(path.dirname(path.join(root, "public", relative)), { recursive: true });
     writeFileSync(path.join(root, "public", relative), rendered.audioBytes);
     const frames = mp3AudioFrames(rendered.audioBytes);
@@ -50,8 +50,10 @@ if (!process.argv.includes("--apply")) {
   }
   if (includeStory) {
     const zones = pilot.story_beats.map((beat, index) => ({ zone: beat.id, index, text: beat.text }));
-    const rendered = await synthesizeWithGemini(zones, language, { ...options, style: ROLES_HEPO_STORY_STYLES[language] });
-    const out = path.join(root, "remotion", "public", "roles-hepo");
+    const styles = { "roles-hepo": ROLES_HEPO_STORY_STYLES, "health-educator": HEALTH_EDUCATOR_STORY_STYLES,
+      "community-organizer": COMMUNITY_ORGANIZER_STORY_STYLES }[lessonConfig.story];
+    const rendered = await synthesizeWithGemini(zones, language, { ...options, style: styles[language] });
+    const out = path.join(root, "remotion", "public", lessonConfig.story);
     const frames = mp3AudioFrames(rendered.audioBytes);
     const durationSeconds = frames.reduce((sum, f) => sum + f.samples, 0) / frames[0].sampleRate;
     if (durationSeconds > 125) throw new Error(`${pilot.label} story exceeds 125 seconds: ${durationSeconds}`);

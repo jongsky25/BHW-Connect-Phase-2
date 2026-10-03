@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "82eb8b22972e7e7c67f58b601b81161a0427c479f6f9b969d1ebb18458646924",
+  "durationSeconds": 94.119,
+  "beats": [
+    {
+      "zone": "listen",
+      "index": 0,
+      "text": "Sa isa ka paghisugilanon parte sa panglawas sa barangay, indi lamang ginabasa ni BHW Riza ang poster. Ginausisa anay niya ang mga pamangkot sang mga residente, dayon nagahatag sang maathag nga pagpaathag.",
+      "start_ms": 0,
+      "end_ms": 14680
+    },
+    {
+      "zone": "topics",
+      "index": 1,
+      "text": "Bilang Health Educator, mahimo niya nga talakayon ang pag-atipan sang lawas, katinlo sang palibot, kag pagpalapit sa serbisyo sa panglawas. Nagagamit siya sang materyal nga gin-aprobahan sang health team.",
+      "start_ms": 14980,
+      "end_ms": 28740
+    },
+    {
+      "zone": "life-stages",
+      "index": 2,
+      "text": "Nagakalainlain ang mga pamangkot sang naga-atipan sang lapsag, pamatan-on, nagabusong, kag tigulang. Ginaangay ni Riza sa yugto sang kabuhi sang kaistorya ang paghisugilanon parte sa balatian, aksidente, kag risgo.",
+      "start_ms": 29040,
+      "end_ms": 44360
+    },
+    {
+      "zone": "reach",
+      "index": 3,
+      "text": "Natalupangdan ni Riza nga mga ginikanan lamang ang nagtambong. Namangkot siya kon sin-o pa ang wala malab-ot, kag kon ano nga oras, lugar, pinulongan, kag pamaagi ang makabulig sa ila nga makigbahin.",
+      "start_ms": 44660,
+      "end_ms": 59340
+    },
+    {
+      "zone": "young-people",
+      "index": 4,
+      "text": "Agod makaupod ang mga pamatan-on, pamangkuton ni Riza kon san-o sila makaupod kag ano ang gusto nila nga matun-an. Iangay niya ang paghisugilanon sa ila mga pamangkot, samtang ginasiguro nga husto kag gin-aprobahan ang impormasyon.",
+      "start_ms": 59640,
+      "end_ms": 74720
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Ang pagtudlo sang BHW isa ka paghisugilanon nga may katuyuan: magpamati, magpili sang nagakaigo nga topiko kag gin-aprobahan nga materyal, mag-angay sa yugto sang kabuhi, kag maghatag sang kahigayunan nga makigbahin ang tagsa ka grupo.",
+      "start_ms": 75020,
+      "end_ms": 94060
+    }
+  ]
+}

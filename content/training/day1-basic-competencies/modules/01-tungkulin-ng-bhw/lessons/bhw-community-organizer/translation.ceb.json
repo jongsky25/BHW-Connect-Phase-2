@@ -1,0 +1,220 @@
+{
+  "language": "ceb",
+  "label": "Bisaya (Cebuano)",
+  "review_status": "approved",
+  "lesson_key": "bhw-community-organizer",
+  "title": "Isip Community Organizer",
+  "objectives": [
+    "Kon adunay namatikdang problema sa purok, makadapit og pag-apil, mailahi ang nakita gikan sa pangagpas, ug mapasabot kon unsaon pagdala niini sa lokal nga pagplano."
+  ],
+  "read_sections": [
+    {
+      "id": "organizer-scene",
+      "takeaway": "Paminaw ug ikonektar una ang mga tawo sa dili pa magdesisyon sa buluhaton.",
+      "check": null
+    },
+    {
+      "id": "participation",
+      "takeaway": "Adunay kahigayonan ang mga residente nga mopahiangay sa plano.",
+      "check": null
+    },
+    {
+      "id": "observation",
+      "takeaway": "Ipaambit ang nakita ug ang kabalaka; ayaw ipahayag ang hinungdan nga wala pa mapamatud-i.",
+      "check": null
+    },
+    {
+      "id": "planning-team",
+      "takeaway": "Tinoa kon kinsa ang modala sa isyu ug mopaabot sa tubag.",
+      "check": null
+    },
+    {
+      "id": "liph",
+      "takeaway": "Mahimong makatabang sa LIPH ang kontribusyon sa barangay; walay garantiya sa pondo.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Paminaw sa tubag, ireport ang nakita, ug dad-a ang isyu sa hustong lokal nga proseso.",
+      "check": {
+        "prompt": "Misugyot og laing oras ang mga residente alang sa panaghisgot. Miingon usab ang usa nga ang natigom nga tubig mao ang hinungdan sa pagkasakit sa mga bata. Unsa ang labing angay nga sunod buhaton ni Riza?",
+        "options": [
+          "Ipadayon ang unang oras ug isulti nga napamatud-an na ang hinungdan sa sakit.",
+          "Ipalangan ang panaghisgot hangtod adunay saad nga pondo alang sa buluhaton.",
+          "Paminawa ang gisugyot nga oras, ireport ang nakita, ug hisgoti uban sa health staff ang sunod nga lakang."
+        ],
+        "feedback": "Husto ang pagpaminaw sa residente ug ang pagpaambit sa tin-aw nga obserbasyon ngadto sa health staff. Wala pa mapamatud-i ang hinungdan sa sakit, ug dili mahimong mosaad og pondo ang BHW."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "organizer-scene-slide",
+      "heading": "Gikan sa nakita, padulong sa panaghisgot",
+      "display": "Namatikdan ni Riza ang natigom nga tubig sa tulo ka nataran.\nGipangutana niya ang mga residente kon unsa ang ilang nakita.\nNakig-istorya usab siya sa purok leader ug health staff.",
+      "check": null
+    },
+    {
+      "id": "participation-slide",
+      "heading": "Dapita ang mga tawo nga moapil",
+      "display": "Gidapit ni Riza ang mga residente sa panaghisgot.\nGipangutana niya kon kinsa ang makaapil ug kanus-a sila mahimo.\nGipaminaw niya ang sugyot nga laing oras.",
+      "check": null
+    },
+    {
+      "id": "observation-slide",
+      "heading": "Isulti ang nakita, dili ang pangagpas",
+      "display": "Nakita: Adunay natigom nga tubig sa tulo ka nataran.\nWala pa mapamatud-i: Mao kini ang hinungdan sa sakit.\nGipaambit ni Riza ang obserbasyon sa health staff.",
+      "check": null
+    },
+    {
+      "id": "planning-team-slide",
+      "heading": "Dad-a ang nakita sa pagplano",
+      "display": "Ang grupo mopili kon kinsa ang modala sa isyu.\nMoapil ang representante sa lokal nga pagplano uban sa health team.\nAdunay mopaabot sa tubag ngadto sa mga residente.",
+      "check": null
+    },
+    {
+      "id": "liph-slide",
+      "heading": "Makatampo sa mas lapad nga plano",
+      "display": "Mahimong makatabang sa LIPH ang kontribusyon sa barangay.\nMoagi kini sa kasamtangang lokal nga proseso.\nDili garantisado ang pondo alang sa sugyot.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imong nakat-onan",
+      "display": "Paminaw sa tubag, ireport ang nakita, ug sunda ang lokal nga proseso.",
+      "check": {
+        "prompt": "Misugyot og laing oras ang mga residente alang sa panaghisgot. Miingon usab ang usa nga ang natigom nga tubig mao ang hinungdan sa pagkasakit sa mga bata. Unsa ang labing angay nga sunod buhaton ni Riza?",
+        "options": [
+          "Ipadayon ang unang oras ug isulti nga napamatud-an na ang hinungdan sa sakit.",
+          "Ipalangan ang panaghisgot hangtod adunay saad nga pondo alang sa buluhaton.",
+          "Paminawa ang gisugyot nga oras, ireport ang nakita, ug hisgoti uban sa health staff ang sunod nga lakang."
+        ],
+        "feedback": "Husto ang pagpaminaw sa residente ug ang pagpaambit sa tin-aw nga obserbasyon ngadto sa health staff. Wala pa mapamatud-i ang hinungdan sa sakit, ug dili mahimong mosaad og pondo ang BHW."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, panaghisgot uban sa komunidad, ug paggiya sa residente.",
+      "caption": "Hulagway alang sa pagkat-on; ang mga label sa leksiyon nagpasabot sa kahulogan niini."
+    },
+    {
+      "id": "A04",
+      "alt": "Obserbasyon, pag-apil, ug kontribusyon sa pagplano.",
+      "caption": "Hulagway alang sa pagkat-on; ang mga label sa leksiyon nagpasabot sa kahulogan niini."
+    },
+    {
+      "id": "community-organizer-story",
+      "alt": "Namatikdan ni Riza ang natigom nga tubig sa tulo ka nataran. Gidapit niya ang mga residente, purok leader, ug health staff; gipaambit ang nakita nga wala magpahayag og hinungdan nga wala pa mapamatud-i; ug gitino kon kinsa ang modala sa isyu ngadto sa pagplano ug mopaabot sa tubag.",
+      "caption": "Hinimo nga pananglitan sa pag-organisa ni Riza. Ang animadong video adunay salaysay ug mga caption sa Bisaya (Cebuano)."
+    }
+  ],
+  "story_art": {
+    "alt": "Maminaw si BHW Riza samtang maghisgot ang mga residente ug health staff bahin sa mapa sa ilang purok.",
+    "caption": "Magkaubang paghisgot sa barangay"
+  },
+  "story_beats": [
+    {
+      "id": "observe",
+      "text": "Namatikdan ni BHW Riza ang natigom nga tubig sa tulo ka nataran. Nakig-istorya siya sa mga residente ug nangutana kon unsa usab ang ilang namatikdan.",
+      "title": "Sugdi sa imong nakita",
+      "detail": "Paminaw sa mga residente."
+    },
+    {
+      "id": "invite",
+      "text": "Gidapit ni Riza ang mga residente, purok leader, ug health staff sa panaghisgot. Adunay misugyot og laing oras; gipaminaw niya kini sa dili pa sila mopili og oras nga magkauban.",
+      "title": "Dapita ang mga tawo nga moapil",
+      "detail": "Paminawa ang sugyot sa residente."
+    },
+    {
+      "id": "verify",
+      "text": "Gitala ni Riza ang iyang nakita: adunay natigom nga tubig sa tulo ka nataran. Wala niya isulti nga mao kini ang hinungdan sa pagkasakit sa mga bata, kay wala pa kana mapamatud-i.",
+      "title": "Nakita, dili pangagpas",
+      "detail": "Ipaambit ang tin-aw nga obserbasyon."
+    },
+    {
+      "id": "plan",
+      "text": "Uban sa mga residente ug health staff, gitino niya kon kinsa ang modala sa isyu ngadto sa barangay planning team for health ug kon kinsa ang mopaabot sa tubag. Kumpirmaha sa lokal nga health team ang aktuwal nga proseso.",
+      "title": "Dad-a sa pagplano",
+      "detail": "Adunay modala ug mopaabot sa tubag."
+    },
+    {
+      "id": "liph",
+      "text": "Mahimong makatabang ang kontribusyon sa barangay sa paghisgot alang sa Local Investment Plan for Health, o LIPH. Moagi kini sa kasamtangang lokal nga proseso; dili garantisado ang pondo.",
+      "title": "Mas lapad nga plano",
+      "detail": "Kontribusyon sa LIPH; walay saad nga pondo."
+    },
+    {
+      "id": "summary",
+      "text": "Isip Community Organizer, maminaw si Riza, ikonektar ang mga tawo, ireport ang nakita imbes ang pangagpas, ug sundon ang lokal nga proseso hangtod adunay tubag nga mapaabot sa mga residente.",
+      "title": "Paminaw · Ikonektar",
+      "detail": "Ireport ang nakita · Ipaabot ang tubag"
+    }
+  ],
+  "summary_steps": [
+    "Paminaw",
+    "Ireport ang nakita",
+    "Magplano nga magkauban",
+    "Ipaabot ang tubag"
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanong adunay salaysay",
+    "Buong screen": "Tibuok screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Gibanabanang 3–7 ka minuto alang sa kaugalingong pagtuon; lahi ang pagpraktis uban sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animadong sugilanon nga adunay salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pislita ang Play aron madungog ang salaysay sa piniling pinulongan.",
+    "Pumili ng sagot": "Pagpili og tubag",
+    "Tama!": "Sakto!",
+    "Hindi pa tama. Subukang muli.": "Dili pa sakto. Sulayi pag-usab.",
+    "Nakaraan": "Miaging bahin",
+    "Susunod": "Sunod nga bahin",
+    "Puwesto sa aralin": "Bahin sa leksiyon",
+    "Uri ng nilalaman": "Matang sa sulod",
+    "Pakinggan ang bahaging ito": "Paminawa kining bahina",
+    "Pakinggan": "Paminawa",
+    "I-pause": "Hunonga kadiyot",
+    "Bilis": "Kapaspas",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Dili mapatukar ang audio. Basaha una ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Tubaga una ang pangutana aron mapaminaw ang audio nga adunay sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo na nimong markahan nga nahuman ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Humanon ang mga bahin ug tubagon ang matag pangutana sa Basaha o Mga slide. Dili kinahanglan nga sakto ang unang tubag. Kon i-reload, tubaga pag-usab ang mga pangutana.",
+    "Natapos": "Nahuman",
+    "Markahang tapos ang aralin": "Markahi nga nahuman ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Nahuman nimo ang leksiyon. Na-save ang imong progreso.",
+    "Susunod na aralin →": "Sunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sa mga leksiyon →",
+    "Nakaraang aralin": "Miaging leksiyon",
+    "Susunod na aralin": "Sunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkahuman sa leksiyon dili pamatuod sa praktikal nga kahanas.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala ma-save ang imong puwesto. Sulayi pag-usab.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala ma-save ang pagkahuman. Sulayi pag-usab o i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Isira",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft alang sa pagsusi sa hubad ug paglitok.",
+    "Buong screen na aralin": "Leksiyon sa tibuok screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sa leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda aron mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog aron mabasa ang sulod.",
+    "Subukang i-save muli": "Sulayi pag-save pag-usab",
+    "Wika ng aralin": "Pinulongan sa leksiyon"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.3 translated text, reading narration, animated video and captions",
+    "approval": "Owner approved lesson 1.1.3 in both languages in the Codex conversation and requested deployment."
+  }
+}
