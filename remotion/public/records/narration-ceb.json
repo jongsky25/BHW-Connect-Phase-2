@@ -1,0 +1,52 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "082aef1a8a037c63b763189c6b53514bd9ab31da1e5b5584f83cc062104ee33f",
+  "durationSeconds": 61.205,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Human makig-istorya kang Aling Nena, gipangutana ni Riza ang midwife kon unsang impormasyon ang gikinahanglan.",
+      "start_ms": 0,
+      "end_ms": 7720
+    },
+    {
+      "zone": "household",
+      "index": 1,
+      "text": "Ang household profile naghulagway sa usa ka panimalay. Dili kini pamatuod nga adunay serbisyo nga nahatag.",
+      "start_ms": 8020,
+      "end_ms": 29820
+    },
+    {
+      "zone": "master-list",
+      "index": 2,
+      "text": "Ang master list nagsulti kon kinsa ang kabahin sa usa ka grupo. Dili kini rekord sa serbisyo nga nahatag.",
+      "start_ms": 30120,
+      "end_ms": 36840
+    },
+    {
+      "zone": "registry",
+      "index": 3,
+      "text": "Ang registry ang tan-awon kon kinsa ang nakadawat og health teaching. Klaroha una ang entry nga dili sigurado.",
+      "start_ms": 37140,
+      "end_ms": 45100
+    },
+    {
+      "zone": "assigned-form",
+      "index": 4,
+      "text": "Sa gisugo nga form, siguroha ang gipangayong detalye ug ang modawat. Sunda ang aprubadong lokal nga paagi sa pagpasa.",
+      "start_ms": 45400,
+      "end_ms": 54000
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Pilia ang rekord sumala sa pangutana, susiha ang impormasyon, ug ayaw pangagpas.",
+      "start_ms": 54300,
+      "end_ms": 61140
+    }
+  ]
+}
