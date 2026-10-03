@@ -1,0 +1,232 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "draft",
+  "lesson_key": "bhw-roles-application",
+  "title": "Gamita ang mga katungdanan",
+  "objectives": [
+    "Mapaathag ang mga katungdanan nga kinahanglan sa sitwasyon kag makahatag sang malip-ot nga handover suno sa tagubilin."
+  ],
+  "read_sections": [
+    {
+      "id": "applied-observation",
+      "takeaway": "Basaha kag klaruhon ang tagubilin; ilain ang nakita sa pagpangagpas.",
+      "check": null
+    },
+    {
+      "id": "applied-education",
+      "takeaway": "Health Educator: magpamati, gamita ang aprubado nga mensahe, kag klaruhon ang mga pamangkot.",
+      "check": null
+    },
+    {
+      "id": "applied-organizing",
+      "takeaway": "Community Organizer: mag-agda, magpamati, kag magkasugot upod sa mga tawo.",
+      "check": null
+    },
+    {
+      "id": "next-learning",
+      "takeaway": "Health Service Provider: siguroha ang contact, ipaathag ang tikang, kag irekord ang aktwal nga ginhimo.",
+      "check": null
+    },
+    {
+      "id": "handover",
+      "takeaway": "Malip-ot nga handover: nakita + aktwal nga ginhimo + aksyon nga kinahanglan pa.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Pilia ang katungdanan, sundon ang tagubilin, irekord, kag ireport ang kinahanglan.",
+      "check": {
+        "prompt": "Diin nga report ang nagasabat sa bug-os nga tagubilin kag nagasugid sang aksyon nga kinahanglan pa?",
+        "options": [
+          "May tubig sa tatlo ka lagwerta. Ginrekord ko, nagpamati sa mga pamangkot, kag ginpaabot ang pangabay sang residente nga gusto makaistorya ang health team. Kinahanglan ko pa sang giya sa masunod nga tikang.",
+          "May tubig sa tatlo ka lagwerta. Ginrekord ko na ini, gani natapos na ang bug-os nga tagubilin.",
+          "May tubig sa tatlo ka lagwerta. Sigurado nga amo ini ang kabangdanan sang balatian sang mga residente; ginsugid ko na nga amo ina ang diagnosis."
+        ],
+        "feedback": "Ang una nga report may nakita, aktwal nga ginhimo, kag aksyon nga kinahanglan pa. Ang ikaduha nagarekord lamang; wala sini ginasabat ang pagpamangkot kag pagreport. Ang ikatlo nagaangkon sang kabangdanan kag diagnosis nga wala napamatud-an. Tilawi ang imo kaugalingon nga handover kag ipaathag ang tatlo ka katungdanan; separado ang praktikal nga assessment."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "applied-observation-slide",
+      "heading": "Isa ka obserbasyon, tatlo ka katungdanan",
+      "display": "Tubig sa tatlo ka lagwerta\nIrekord · Mamangkot · Magreport\nNakita ang tubig; wala napamatud-an ang balatian.",
+      "check": null
+    },
+    {
+      "id": "applied-education-slide",
+      "heading": "Magpamati antes magpaathag",
+      "display": "“Ano ang inyo natalupangdan?”\nMagpamati antes magpaathag\nGamita ang aprubado nga mensahe.",
+      "check": null
+    },
+    {
+      "id": "applied-organizing-slide",
+      "heading": "Agdaha ang mga mahimo nga kabulig",
+      "display": "Residente · Purok leader · Kagawad · Health staff\n“Ano nga oras ang mahimo sa inyo?”\nMagpamati antes magkasugot.",
+      "check": null
+    },
+    {
+      "id": "next-learning-slide",
+      "heading": "Maggiya kag irekord ang ginhimo",
+      "display": "Siguroha ang contact kag lokal nga paagi\nIpaathag ang masunod nga tikang\nIrekord ang aktwal nga ginhimo\nBalika ang 1.1.5; palaparon ang ikasarang sa masunod nga mga leksiyon.",
+      "check": null
+    },
+    {
+      "id": "handover-slide",
+      "heading": "Nakita, ginhimo, kag kinahanglan",
+      "display": "Nakita · Tubig sa tatlo ka lagwerta\nGinhimo · Ginrekord, nagpamati, nakig-angot\nKinahanglan · Giya sa masunod nga tikang",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita kag ipaathag ang mga katungdanan",
+      "display": "Pilia ang kompleto nga report\nIhambal ang kaugalingon nga handover\nIpaathag ang tatlo ka katungdanan\nSeparado ang praktikal nga assessment.",
+      "check": {
+        "prompt": "Diin nga report ang nagasabat sa bug-os nga tagubilin kag nagasugid sang aksyon nga kinahanglan pa?",
+        "options": [
+          "May tubig sa tatlo ka lagwerta. Ginrekord ko, nagpamati sa mga pamangkot, kag ginpaabot ang pangabay sang residente nga gusto makaistorya ang health team. Kinahanglan ko pa sang giya sa masunod nga tikang.",
+          "May tubig sa tatlo ka lagwerta. Ginrekord ko na ini, gani natapos na ang bug-os nga tagubilin.",
+          "May tubig sa tatlo ka lagwerta. Sigurado nga amo ini ang kabangdanan sang balatian sang mga residente; ginsugid ko na nga amo ina ang diagnosis."
+        ],
+        "feedback": "Ang una nga report may nakita, aktwal nga ginhimo, kag aksyon nga kinahanglan pa. Ang ikaduha nagarekord lamang; wala sini ginasabat ang pagpamangkot kag pagreport. Ang ikatlo nagaangkon sang kabangdanan kag diagnosis nga wala napamatud-an. Tilawi ang imo kaugalingon nga handover kag ipaathag ang tatlo ka katungdanan; separado ang praktikal nga assessment."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A07",
+      "alt": "Nakita, ginhimo, kag aksyon nga kinahanglan pa sa hinimo nga sitwasyon.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A02",
+      "alt": "Tatlo ka nagaangot nga katungdanan sa pagpauswag sang panglawas.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "roles-application-illustration",
+      "alt": "Nagareport si BHW Riza sa midwife gamit ang wala sang sulod nga notebook samtang nagapamati ang isa ka tigulang nga residente.",
+      "caption": "Nakita · Ginhimo · Kinahanglan: pagreport upod sa health team."
+    },
+    {
+      "id": "roles-application-story",
+      "alt": "Isa ka sitwasyon, tatlo ka katungdanan: Health Educator, Community Organizer, kag Health Service Provider. Handover: nakita, ginhimo, kag kinahanglan.",
+      "caption": "Hinimo nga halimbawa ni Riza. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Nagareport si BHW Riza sa midwife gamit ang wala sang sulod nga notebook samtang nagapamati ang isa ka residente.",
+    "caption": "Nakita · Ginhimo · Kinahanglan"
+  },
+  "story_beats": [
+    {
+      "id": "observation",
+      "text": "May tubig nga nagtipon sa tatlo ka lagwerta nga ginbisitahan ni Riza. Tagubilin sang midwife: irekord ang nakita, mamangkot kon may gusto makaistorya ang health team, kag ireport ang aksyon nga kinahanglan pa.",
+      "title": "Isa ka obserbasyon",
+      "detail": "Irekord · Mamangkot · Magreport\nObserbasyon lamang; indi mag-imbento sang diagnosis."
+    },
+    {
+      "id": "educate",
+      "text": "Bilang Health Educator, nagapamati anay si Riza sa pamangkot sang pamilya. Nagagamit siya sang aprubado nga mensahe kag nagapamangkot sa health team parte sa sabat nga indi niya sigurado.",
+      "title": "Magpamati kag magpaathag",
+      "detail": "Health Educator\n“May gusto bala kamo ipamangkot?”"
+    },
+    {
+      "id": "organize",
+      "text": "Bilang Community Organizer, ginaagda ni Riza ang mga residente, lokal nga lider, kag health staff. Ginapamatian niya ang ila mga panugyan antes magkasugot sa tion kag buluhaton.",
+      "title": "Mag-agda kag magpamati",
+      "detail": "Community Organizer\nMagkasugot upod sa mga tawo."
+    },
+    {
+      "id": "provider",
+      "text": "May residente nga gusto makaistorya ang health team. Bilang Health Service Provider, ginakumpirma ni Riza ang contact, ginapaathag ang tikang, kag ginarekord ang aktwal nga ginhimo sa sakop sang iya paghanas.",
+      "title": "Maggiya kag magrekord",
+      "detail": "Health Service Provider\nSiguroha ang contact kag lokal nga paagi."
+    },
+    {
+      "id": "handover",
+      "text": "Nagreport si Riza sa midwife: may tubig sa tatlo ka lagwerta; ginrekord ko, nagpamati, kag nakig-angot; kinahanglan ko pa sang giya sa masunod nga tikang. Dapat magtakdo ang rekord kag report.",
+      "title": "Malip-ot nga handover",
+      "detail": "Nakita · Ginhimo · Kinahanglan\nMay kaangtanan nga impormasyon, husto nga magabaton."
+    },
+    {
+      "id": "summary",
+      "text": "Isa ka sitwasyon, tatlo ka katungdanan. Sundon ang tagubilin kag ihambal ang imo kaugalingon nga handover. Ipaathag ang mga katungdanan nga imo gingamit. Separado nga obserbahan ang praktikal nga ikasarang.",
+      "title": "Isa ka sitwasyon, tatlo ka katungdanan",
+      "detail": "Ihambal ang kaugalingon nga handover. Separado ang praktikal nga assessment."
+    }
+  ],
+  "handover_cards": {
+    "labels": [
+      "Nakita",
+      "Ginhimo",
+      "Kinahanglan"
+    ],
+    "lines": [
+      "Tubig sa 3 ka lagwerta",
+      "Ginrekord kag nagpamati",
+      "Giya sa masunod nga tikang"
+    ]
+  },
+  "scene_labels": {
+    "observation": "Nakita ang tubig. Klaruhon ang indi sigurado.",
+    "handover": "Itakdo ang report sa rekord."
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  }
+}

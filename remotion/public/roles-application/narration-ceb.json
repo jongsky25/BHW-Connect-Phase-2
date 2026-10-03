@@ -1,0 +1,52 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "4fa081d68e7a329409aff2acc410309978df074316ba15304d0c6b2266bd77ea",
+  "durationSeconds": 84.715,
+  "beats": [
+    {
+      "zone": "observation",
+      "index": 0,
+      "text": "Adunay tubig nga natigom sa tulo ka nataran nga gibisita ni Riza. Tagubilin sa midwife: irekord ang nakita, pangutana kon adunay gustong makig-istorya sa health team, ug ireport ang aksyon nga gikinahanglan pa.",
+      "start_ms": 0,
+      "end_ms": 14560
+    },
+    {
+      "zone": "educate",
+      "index": 1,
+      "text": "Isip Health Educator, maminaw una si Riza sa pangutana sa pamilya. Mogamit siya og aprubadong mensahe ug mangutana sa health team bahin sa tubag nga dili niya sigurado.",
+      "start_ms": 14860,
+      "end_ms": 27940
+    },
+    {
+      "zone": "organize",
+      "index": 2,
+      "text": "Isip Community Organizer, dapiton ni Riza ang mga residente, lokal nga lider, ug health staff. Maminaw siya sa ilang mga sugyot sa dili pa magkauyon sa oras ug buluhaton.",
+      "start_ms": 28240,
+      "end_ms": 41200
+    },
+    {
+      "zone": "provider",
+      "index": 3,
+      "text": "Adunay residente nga gustong makig-istorya sa health team. Isip Health Service Provider, kumpirmahon ni Riza ang contact, ipasabot ang lakang, ug irekord ang aktwal nga gibuhat sulod sa iyang pagsasanay.",
+      "start_ms": 41500,
+      "end_ms": 54780
+    },
+    {
+      "zone": "handover",
+      "index": 4,
+      "text": "Mireport si Riza sa midwife: adunay tubig sa tulo ka nataran; girekord nako, naminaw, ug nakig-ugnayan; kinahanglan pa nako og giya sa sunod nga lakang. Kinahanglan nga takdo ang rekord ug report.",
+      "start_ms": 55080,
+      "end_ms": 70600
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Usa ka sitwasyon, tulo ka tahas. Sunda ang tagubilin ug isulti ang imong kaugalingong handover. Ipasabot ang mga tahas nga imong gigamit. Lahi nga obserbahan ang praktikal nga kahanas.",
+      "start_ms": 70900,
+      "end_ms": 84660
+    }
+  ]
+}
