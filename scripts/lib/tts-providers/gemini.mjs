@@ -13,6 +13,7 @@
 // fetch and sleep are injected so the request/retry/assembly logic is
 // testable without a network call (gemini.test.mjs).
 
+import { applyWordPronunciations, pronunciationDirections } from "../narration-pronunciation.mjs";
 import { Mp3Encoder } from "@breezystack/lamejs";
 
 export const GEMINI_TTS_MODEL = "gemini-3.8-flash-tts";
@@ -61,6 +62,8 @@ export const ROLES_HEPO_STORY_STYLES = {
 };
 
 export const SERVICE_PROVIDER_STORY_STYLES = {
+  ceb: "Speak in natural Cebuano (Bisaya), as spoken in the Philippines, as a warm community health storyteller. Use Cebuano pronunciation, word stress, and sentence intonation. Make Riza's listening and Aling Nena's concern feel human with gentle changes in pitch and pace. Sound calm and clear when explaining training limits, seeking the midwife's guidance, and following the health team's instructions. Preserve English role and health-service terms. Read the exact text. Do not switch to Tagalog, translate, or add words.",
+  hil: "Speak in natural Hiligaynon (Ilonggo), as spoken in Iloilo and Western Visayas in the Philippines, as a warm community health storyteller. Use Hiligaynon pronunciation, word stress, and gently melodic sentence intonation. Make Riza's listening and Aling Nena's concern feel human with gentle changes in pitch and pace. Sound calm and clear when explaining training limits, seeking the midwife's guidance, and following the health team's instructions. Preserve English role and health-service terms. Read the exact text. Do not switch to Cebuano or Tagalog, translate, or add words.",
   fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health storyteller. Make Marites's listening and Aling Nena's concern feel human, with gentle changes in pitch and pace. Keep the guidance calm, clear, and respectful. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, expressive community health storyteller. Make Marites's listening and Aling Nena's concern feel human, with gentle changes in pitch and pace. Keep the guidance calm, clear, and respectful. Do not add or change words.",
 };
@@ -80,6 +83,11 @@ export const ROLES_APPLICATION_STORY_STYLES = {
 export const UHC_COVERAGE_STORY_STYLES = {
   fil: "Speak in natural Filipino (Tagalog) as a warm, expressive community health storyteller. Give Mang Ernesto's question genuine curiosity and Vlanche's response a calm, reassuring tone. Use gentle changes in pitch and pace to distinguish the promise of UHC from the practical details she must check. Keep every benefit statement careful and clear. Do not add or change words.",
   en: "Speak in natural Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto's question genuine curiosity and Vlanche's response a calm, reassuring tone. Use gentle changes in pitch and pace to distinguish the promise of UHC from the practical details she must check. Keep every benefit statement careful and clear. Do not add or change words.",
+};
+
+export const PRIMARY_CARE_STORY_STYLES = {
+  fil: "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give Mang Ernesto's question sincere curiosity. Let Vlanche's calm care come through clearly. Use a lively, hopeful rhythm for the four changes; slow slightly and emphasize the practical checks for benefit, chosen clinic, and local referral instructions. Stress that the clinician makes the referral decision. Vary pitch, emphasis, and pace naturally between scenes. Do not add or change words.",
+  en: "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give Mang Ernesto's question sincere curiosity. Let Vlanche's calm care come through clearly. Use a lively, hopeful rhythm for the four changes; slow slightly and emphasize the practical checks for benefit, chosen clinic, and local referral instructions. Stress that the clinician makes the referral decision. Vary pitch, emphasis, and pace naturally between scenes. Do not add or change words.",
 };
 
 // The voice string recorded in content_hash for Gemini renders, so switching
@@ -183,6 +191,8 @@ export function encodeMp3(samples, sampleRate, kbps) {
 }
 
 async function synthesizeZoneText(text, language, { apiKey, model, voice, style, fetchImpl, sleep }) {
+  const directions = pronunciationDirections(text);
+  const deliveryStyle = [style ?? STYLES[language] ?? STYLES.en, directions].filter(Boolean).join(" ");
   const body = {
     model,
     input: [
@@ -191,8 +201,8 @@ async function synthesizeZoneText(text, language, { apiKey, model, voice, style,
         content: [
           {
             type: "text",
-            text,
-            annotations: [{ type: "speech_metadata", style: style ?? STYLES[language] ?? STYLES.en }],
+            text: applyWordPronunciations(text),
+            annotations: [{ type: "speech_metadata", style: deliveryStyle }],
           },
         ],
       },

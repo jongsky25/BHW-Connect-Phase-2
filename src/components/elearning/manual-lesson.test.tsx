@@ -128,18 +128,21 @@ describe('route lesson viewer',()=>{
     const lesson={...data,lessons:data.lessons.map(l=>({...l,lesson_key:'uhc-primary-care',revision:{...l.revision,read_sections:[{...part('bridge'),heading_en:'Four changes, one journey'}],slides:[{...part('slide-bridge'),display_en:'Outpatient consultation',display_fil:'Outpatient consultation',layout:'process'}],assets:[clip],featured_asset_id:clip.id}}))} as unknown as ReferenceData;
     const {container,rerender}=render(<ReferenceLessons {...lesson} modules={[]} locale="en" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
     expect(container.querySelector('.reference-story[data-lesson="uhc-primary-care"]')).toBeInTheDocument();
-    expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/}).getAttribute('src')).toContain('vlanche-ernesto-7e4e35141628.png');
+    expect(screen.getByRole('img',{name:/BHW Vlanche and Mang Ernesto confirm/}).getAttribute('src')).toContain('primary-care-next-step-a67521f903c0.png');
     fireEvent.click(screen.getByRole('button',{name:'Slides'}));
-    expect(screen.getByRole('img',{name:/BHW Vlanche listens to Mang Ernesto/})).toBeInTheDocument();
+    expect(screen.getByRole('img',{name:/BHW Vlanche and Mang Ernesto confirm/})).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button',{name:/Watch the animated narrated story/}));
     const video=container.querySelector('video')!;
     expect(video).toBeInTheDocument();
+      expect(container.querySelectorAll('video')).toHaveLength(1);
     expect(video.muted).toBe(false);
     expect(video.querySelector('source')).toHaveAttribute('src','/primary-care-en.mp4');
     expect(video.querySelector('track')).toHaveAttribute('src','/primary-care-en.vtt');
     rerender(<ReferenceLessons {...lesson} modules={[]} locale="fil" initialLessonId="lesson" readOnly onResume={vi.fn()} onComplete={vi.fn()}/>);
     expect(container.querySelector('video source')).toHaveAttribute('src','/primary-care-fil.mp4');
     expect(container.querySelector('video track')).toHaveAttribute('src','/primary-care-fil.vtt');
+      fireEvent.click(screen.getByRole('button',{name:'Basahin'}));
+      expect(container.querySelector('video')).not.toBeInTheDocument();
   });
   it('shows Lesson 1.1.6 artwork in Read and Slides and selects language-matched video and captions',()=>{
     const clip={id:'roles-application-story',path:'/poster.jpg',alt_en:'Riza handover story',alt_fil:'Kuwento ng handover ni Riza',caption_en:'Handover',caption_fil:'Handover',videos:{en:{path:'/application-en.mp4',captions:{path:'/application-en.vtt'}},fil:{path:'/application-fil.mp4',captions:{path:'/application-fil.vtt'}}}};
