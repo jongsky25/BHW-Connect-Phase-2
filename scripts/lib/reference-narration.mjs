@@ -48,7 +48,7 @@ const ROMAN_NUMERALS = { II: "2", III: "3" };
 export function spellAcronyms(text, language) {
   return text.replace(/(?<![A-Za-z])([A-Z]{2,})(s['’]?|['’]s)?(?![A-Za-z])/g, (whole, letters, suffix) => {
     if (!suffix && ROMAN_NUMERALS[letters]) return ROMAN_NUMERALS[letters];
-    if (language === "fil") return [...letters].map((c) => FILIPINO_LETTER_NAMES[c]).join("-") + (suffix ? "s" : "");
+    if (language === "fil" || language === "ceb") return [...letters].map((c) => FILIPINO_LETTER_NAMES[c]).join("-") + (suffix ? "s" : "");
     return [...letters].join(" ") + (suffix ? "'s" : "");
   });
 }

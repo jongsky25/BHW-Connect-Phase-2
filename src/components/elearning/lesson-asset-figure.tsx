@@ -13,10 +13,12 @@ import type { LessonAsset } from "@/lib/elearning/types";
 export function LessonAssetFigure({
   asset: a,
   en,
+  language,
   onEnded,
 }: {
   asset: LessonAsset;
   en: boolean;
+  language?: "ceb";
   // Optional callback for a caller that needs to react when playback ends.
   onEnded?: () => void;
 }) {
@@ -55,15 +57,15 @@ export function LessonAssetFigure({
           <track
             kind="captions"
             src={video.captions.path}
-            srcLang={en ? "en" : "fil"}
-            label={en ? "English" : "Filipino"}
+            srcLang={language ?? (en ? "en" : "fil")}
+            label={language === "ceb" ? "Bisaya (Cebuano)" : en ? "English" : "Filipino"}
             default
           />
         )}
       </video>
       <figcaption className="text-sm">{caption}</figcaption>
       <details className="mt-1 text-sm">
-        <summary className="cursor-pointer">{en ? "Steps as text" : "Mga hakbang bilang teksto"}</summary>
+        <summary className="cursor-pointer">{language === "ceb" ? "Mga lakang isip teksto" : en ? "Steps as text" : "Mga hakbang bilang teksto"}</summary>
         <p id={textId}>{alt}</p>
       </details>
     </figure>

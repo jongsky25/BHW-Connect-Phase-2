@@ -1,0 +1,263 @@
+{
+  "narration": {
+    "morning": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/morning.ceb.916831366490.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "916831366490a057a70e753a947075807cfe55e1819499a0b77f284c52e8a17b",
+      "sha256": "dff7575961d722663b54052ac5bf3531177c45236eb04edf0404361aac27cfe8",
+      "duration_seconds": 51.95755102040816,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Usa ka buntag, daghang buluhaton",
+          "start_ms": 0,
+          "end_ms": 3560
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Alas-otso sa buntag, adunay panaghisgot bahin sa panglawas si BHW Riza sa purok.",
+          "start_ms": 3860,
+          "end_ms": 11100
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Alas-diyes, nakigsulti siya sa kagawad bahin sa clean-up drive.",
+          "start_ms": 11400,
+          "end_ms": 16440
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Alas-onse, gitabangan niya si Aling Nena nga makigsulti sa midwife bahin sa panginahanglan sa anak niini.",
+          "start_ms": 16740,
+          "end_ms": 24620
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Usa ra ka BHW ang nagbuhat niining tulo ka buluhaton.",
+          "start_ms": 24920,
+          "end_ms": 29800
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "text": "Sa kurikulum, ang tumong sa UHC mao ang pagpalig-on sa primary care ug pagpalambo sa panglawas; busa mas lapad ang papel sa BHW kaysa pagtabang lamang sa serbisyo.",
+          "start_ms": 30100,
+          "end_ms": 43940
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Apil sa buluhaton sa BHW ang pagtudlo ug paglihok uban sa komunidad, dugang sa pagtabang sa serbisyo.",
+          "start_ms": 44240,
+          "end_ms": 51880
+        }
+      ]
+    },
+    "prevention": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/prevention.ceb.7f6e3adb89c4.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "7f6e3adb89c4bbfec0ede4d74d62fafb855cfcb53f855616b9d51648d01bc1b9",
+      "sha256": "f8559028fecc4e43bf027916510b35246d62195f747f5057cf2f36f438af8ae6",
+      "duration_seconds": 46.733061224489795,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Molihok uban sa komunidad",
+          "start_ms": 0,
+          "end_ms": 2480
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kon nagkinahanglan og pag-atiman ang mga residente, tabangan sila sa BHW nga makaadto sa serbisyo sa panglawas.",
+          "start_ms": 2780,
+          "end_ms": 11540
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Magtudlo usab ang BHW ug magdasig sa mga tawo nga moapil sa mga kalihokan alang sa panglawas.",
+          "start_ms": 11840,
+          "end_ms": 21200
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Sa paglimpyo sa barangay, mopaambit si Riza og impormasyon ug modapit sa mga residente nga magplano ug molihok uban kaniya.",
+          "start_ms": 21500,
+          "end_ms": 31940
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Niining mga buluhaton, magkakonektar ang edukasyon, pag-apil sa komunidad, ug pagduol sa serbisyo.",
+          "start_ms": 32240,
+          "end_ms": 40480
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang pagtudlo ug pag-organisa makatampo sa pagpalambo sa panglawas.",
+          "start_ms": 40780,
+          "end_ms": 46660
+        }
+      ]
+    },
+    "hepo": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/hepo.ceb.89f7c89ad6fe.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "89f7c89ad6fe5553d7ad7901896e37dfcac4396ab4d9c386920adbb128b38670",
+      "sha256": "0dcca9c034d61a7f3c88ad7cc00b7a51f9733c0846b25e817722f61048434b67",
+      "duration_seconds": 58.200816326530614,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "HEPO: pagpalambo sa panglawas",
+          "start_ms": 0,
+          "end_ms": 4200
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gigamit sa Reference Manual ang tawag nga barangay-level Health Education and Promotion Officer o HEPO.",
+          "start_ms": 4500,
+          "end_ms": 14060
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Gihulagway niini ang papel sa BHW sa pagpaambit og impormasyon bahin sa panglawas.",
+          "start_ms": 14360,
+          "end_ms": 22240
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Makita kini sa iyang mga papel isip Health Educator, Community Organizer, ug Health Service Provider.",
+          "start_ms": 22540,
+          "end_ms": 30740
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Ang koneksiyon nga gipakita sa hulagway nagpasabot sa magkakonektar nga buluhaton; dili kini opisyal nga organizational chart o pamatuod sa pormal nga pagtudlo sa posisyon.",
+          "start_ms": 31040,
+          "end_ms": 42880
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang HEPO nagpasabot og Health Education and Promotion Officer. Gihulagway niini ang magkakonektar nga buluhaton sa BHW sa pagtudlo, pag-organisa, ug pagtabang sa serbisyo.",
+          "start_ms": 43180,
+          "end_ms": 58140
+        }
+      ]
+    },
+    "knowledge": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/knowledge.ceb.20fcc0f28fc7.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "20fcc0f28fc7765bd85ad8832245cfb44e313be688a3ff548c51cd76f48eda77",
+      "sha256": "1e80303fc0217988583d538093ba116519acad1715acbd0429d6960dba04c9be",
+      "duration_seconds": 39.44489795918367,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Sa dili pa mopaambit, mangandam",
+          "start_ms": 0,
+          "end_ms": 3040
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Kinahanglan ni Riza og igong kahibalo bahin sa mga prayoridad nga programa ug mga problema sa panglawas sa barangay.",
+          "start_ms": 3340,
+          "end_ms": 13260
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Sa dili pa magtudlo, iyang sigurohon nga klaro kaniya ang impormasyong iyang ipaambit.",
+          "start_ms": 13560,
+          "end_ms": 20960
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "text": "Kon adunay detalye nga dili sigurado, iyang kumpirmahon kini sa angay nga health worker ug gamiton ang giaprobahang materyal.",
+          "start_ms": 21260,
+          "end_ms": 30660
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "text": "Dili kinahanglan magtag-an sa tubag aron makatabang.",
+          "start_ms": 30960,
+          "end_ms": 34880
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Ang igong kahibalo mao ang pundasyon sa tulo ka papel.",
+          "start_ms": 35180,
+          "end_ms": 39380
+        }
+      ]
+    },
+    "check": {
+      "src": "/training/audio/01-tungkulin-ng-bhw/bhw-roles-hepo/check.ceb.87c84b7a731c.mp3",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "content_hash": "87c84b7a731c67303a2623cf7863f21ff8bc03f47699b6d2a6446b87646fd993",
+      "sha256": "9425428f877e370f59e66c8b710f547188abed74b0cd7ec15c60c8dd9ed6cbf0",
+      "duration_seconds": 24.60734693877551,
+      "timings": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "text": "Gamita ang imong nakat-onan",
+          "start_ms": 0,
+          "end_ms": 2360
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "text": "Gitigom ni Riza ang mga residente aron magplano sa paglimpyo sa barangay.",
+          "start_ms": 2660,
+          "end_ms": 8020
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "text": "Unsang papel sa BHW ang labing klarong makita niining buluhaton?",
+          "start_ms": 8320,
+          "end_ms": 13840
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "text": "Mahimong ihiusa sa BHW ang pagtudlo, pag-organisa sa komunidad, ug pagtabang sa serbisyo aron mapalambo ang panglawas.",
+          "start_ms": 14140,
+          "end_ms": 24540
+        }
+      ]
+    }
+  },
+  "poster": "/training/bhw-1-1/roles-hepo-riza-gemini-ceb-78975d400e7c-poster.jpg",
+  "video": {
+    "path": "/training/bhw-1-1/roles-hepo-riza-gemini-ceb-3c2c3022e8c7.mp4",
+    "content_hash": "3c2c3022e8c721b2bce9e896de5118fb97b625d2717eb4eb40bb49266578b413",
+    "duration_s": 95,
+    "captions": {
+      "path": "/training/bhw-1-1/roles-hepo-riza-gemini-ceb-2c9019c55cfe.vtt",
+      "content_hash": "2c9019c55cfe7a2258f225d2bade73cdc2a9f79d3ded8e202cd44c0f68e3c6cb"
+    }
+  },
+  "story_content_hash": "d51e58cea5909e730e390835b0f040898fecb08379ece7a84c719bcc6897e662"
+}
