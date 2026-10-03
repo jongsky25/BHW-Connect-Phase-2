@@ -26,6 +26,7 @@ import safety from '../../../../../content/training/day1-basic-competencies/modu
 import practices from '../../../../../content/training/day1-basic-competencies/modules/09-sustainable-practices/module.json';
 import narrationManifest from '../../../../../content/training/day1-basic-competencies/narration.json';
 import {narrationForLesson,type ReferenceNarrationManifest} from '@/lib/elearning/reference-narration';
+import {translationsForLesson} from '@/lib/elearning/lesson-translations';
 
 const card='block rounded-xl border border-ink/15 p-5 hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-primary';
 
@@ -240,6 +241,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           initialMode={facilitator && mode==='slides'?'slides':undefined}
           nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
           completionMilestone={completionMilestone}
+          translations={program.content_key==='bhw-reference-manual'?translationsForLesson({...lesson,revision},readOnly):undefined}
           narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}

@@ -52,6 +52,15 @@ describe("decodePcm", () => {
 });
 
 describe("synthesizeWithGemini", () => {
+  it("requests Hiligaynon pronunciation and intonation while preserving the script", async () => {
+    const fetchImpl = vi.fn(async () => audioResponse(wav(0.2)));
+    await synthesizeWithGemini([{ zone: "body", index: 0, text: "Ang BHW kag ang HEPO." }], "hil", { apiKey: "k", fetchImpl });
+    const content = JSON.parse(fetchImpl.mock.calls[0][1].body).input[0].content[0];
+    expect(content.text).toBe("Ang BHW kag ang HEPO.");
+    expect(content.annotations[0].style).toMatch(/Hiligaynon \(Ilonggo\)/);
+    expect(content.annotations[0].style).toMatch(/pronunciation, word stress/);
+    expect(content.annotations[0].style).toMatch(/Do not switch to Cebuano or Tagalog/);
+  });
   it("renders one request per zone and derives timings from clip lengths plus a 300ms gap", async () => {
     const fetchImpl = vi
       .fn()

@@ -1,7 +1,10 @@
 // Companion animation for the approved 1.1.1 BHW and HEPO lesson.
 // The three duties are connected examples, not an appointment or org chart.
 
-export type RolesHepoBeat = {
+import translation from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-hepo/translation.hil.json" with { type: "json" };
+
+type BaseRolesHepoBeat = {
   id: string;
   fil: string;
   en: string;
@@ -11,7 +14,7 @@ export type RolesHepoBeat = {
   detail_en: string;
 };
 
-export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
+const baseBeats: BaseRolesHepoBeat[] = [
   {
     id: "morning",
     fil: "Isang umaga, tatlong gawain ang haharapin ni BHW Riza. Magtuturo siya sa purok, makikipagplano sa mga residente, at tutulong kay Aling Nena na makausap ang midwife.",
@@ -67,3 +70,13 @@ export const ROLES_HEPO_BEATS: RolesHepoBeat[] = [
     detail_en: "Accurate knowledge is the foundation.",
   },
 ];
+
+export type RolesHepoBeat = BaseRolesHepoBeat & { ceb: string; title_ceb: string; detail_ceb: string; hil: string; title_hil: string; detail_hil: string };
+export const ROLES_HEPO_BEATS: RolesHepoBeat[] = baseBeats.map((beat, index) => {
+  const localized = translation.story_beats[index];
+  if (localized.id !== beat.id) throw new Error("Cebuano story beat order does not match lesson 1.1.1");
+  const ilonggo = hiligaynon.story_beats[index];
+  if (ilonggo.id !== beat.id) throw new Error("Hiligaynon story beat order does not match lesson 1.1.1");
+  return { ...beat, ceb: localized.text, title_ceb: localized.title, detail_ceb: localized.detail,
+    hil: ilonggo.text, title_hil: ilonggo.title, detail_hil: ilonggo.detail };
+});

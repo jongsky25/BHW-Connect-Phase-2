@@ -1,0 +1,210 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "approved",
+  "lesson_key": "bhw-roles-hepo",
+  "title": "Ang BHW kag ang HEPO",
+  "objectives": [
+    "Mapaathag kon paano nagaangot ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo sa papel sang BHW."
+  ],
+  "read_sections": [
+    {
+      "id": "morning",
+      "takeaway": "Kabahin sang buluhaton sang BHW ang pagtudlo kag paghulag upod sa komunidad, dugang sa pagbulig sa serbisyo.",
+      "check": null
+    },
+    {
+      "id": "prevention",
+      "takeaway": "Ang pagtudlo kag pag-organisa nagabulig sa pagpauswag sang panglawas.",
+      "check": null
+    },
+    {
+      "id": "hepo",
+      "takeaway": "Ang HEPO nagakahulugan sang Health Education and Promotion Officer. Ginapaathag sini ang nagaangot nga mga buluhaton sang BHW sa pagtudlo, pag-organisa, kag pagbulig sa serbisyo.",
+      "check": null
+    },
+    {
+      "id": "knowledge",
+      "takeaway": "Ang bastante nga ihibalo amo ang pundasyon sang tatlo ka papel.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa sang komunidad, kag pagbulig sa serbisyo agod mapauswag ang panglawas.",
+      "check": {
+        "prompt": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
+        "options": [
+          "Health Service Provider",
+          "Community Organizer",
+          "Health Educator lamang"
+        ],
+        "feedback": "Community Organizer: gin-angot niya ang mga tawo kag gindasig sila nga maghulag. Mahimo man nga may pagtudlo sa amo nga buluhaton; mahimo nga magdungan ang mga papel."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "morning-slide",
+      "heading": "Isa ka aga, madamo nga buluhaton",
+      "display": "08:00 · Magtudlo\n10:00 · Mag-organisa\n11:00 · Maggiya\nAng BHW nagatudlo, nagaorganisa, kag nagabulig sa mga tawo nga makapalapit sa serbisyo.",
+      "check": null
+    },
+    {
+      "id": "prevention-slide",
+      "heading": "Maghulag upod sa komunidad",
+      "display": "Magpaambit sang ihibalo\nMag-agda sa mga tawo nga mag-upod\nMaghulag nga nagabuligay\nAng pagtudlo kag pag-organisa nagabulig sa pagpauswag sang panglawas.",
+      "check": null
+    },
+    {
+      "id": "hepo-slide",
+      "heading": "HEPO: pagpauswag sang panglawas",
+      "display": "Health Educator\nCommunity Organizer\nHealth Service Provider\nAng HEPO nagakahulugan sang Health Education and Promotion Officer.",
+      "check": null
+    },
+    {
+      "id": "knowledge-slide",
+      "heading": "Antes magpaambit, maghanda",
+      "display": "Mga prayoridad nga programa\nMga problema sa panglawas\nHusto nga impormasyon nga ipaambit\nAng bastante nga ihibalo amo ang pundasyon sang tatlo ka papel.",
+      "check": null
+    },
+    {
+      "id": "check-slide",
+      "heading": "Gamita ang imo natun-an",
+      "display": "Mahimo nga iupod sang BHW ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo.",
+      "check": {
+        "prompt": "Gintipon ni Riza ang mga residente agod magplano sang pagpaninlo sang barangay. Ano nga papel sang BHW ang pinakamaathag nga makita sa sini nga buluhaton?",
+        "options": [
+          "Health Service Provider",
+          "Community Organizer",
+          "Health Educator lamang"
+        ],
+        "feedback": "Community Organizer: gin-angot niya ang mga tawo kag gindasig sila nga maghulag. Mahimo man nga may pagtudlo sa amo nga buluhaton; mahimo nga magdungan ang mga papel."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "alt": "Pagtudlo, paghisugilanon upod sa komunidad, kag paggiya sa residente.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A04",
+      "alt": "Pag-obserbar, pagpakigbahin, kag pagbulig sa pagplano.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "A02",
+      "alt": "Tatlo ka nagaangot nga papel sa pagpauswag sang panglawas.",
+      "caption": "Laragway para sa pagtuon; ang mga label sang leksiyon nagapaathag sang kahulugan sini."
+    },
+    {
+      "id": "roles-hepo-story",
+      "alt": "Sa isa ka aga, nagatudlo si Riza, nagaagda sa mga residente nga magplano, kag nagagiya kay Aling Nena nga makighambal sa midwife. Nagaangot ining tatlo ka buluhaton sa papel sang BHW kag HEPO.",
+      "caption": "Hinimo nga halimbawa sang nagaangot nga mga papel sang BHW. Ang animado nga video may salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Si BHW Riza nagapakighambal sa mga residente; sa iya tupad, isa ka iloy kag bata nagapakighambal sa midwife.",
+    "caption": "Isa ka aga sa barangay"
+  },
+  "story_beats": [
+    {
+      "id": "morning",
+      "text": "Isa ka aga, tatlo ka buluhaton ang atubangon ni BHW Riza. Magatudlo siya sa purok, magapakigplano sa mga residente, kag magabulig kay Aling Nena nga makighambal sa midwife.",
+      "title": "Isa ka aga, tatlo ka buluhaton",
+      "detail": "08:00 · 10:00 · 11:00"
+    },
+    {
+      "id": "educate",
+      "text": "Sa paghisugilanon, nagapamati si Riza sa mga pamangkot sang mga tawo kag nagapaambit sang maathag kag gin-aprobahan nga impormasyon parte sa panglawas. Amo ini ang iya papel bilang Health Educator.",
+      "title": "Magtudlo",
+      "detail": "Magpamati kag magpaambit sang husto nga ihibalo."
+    },
+    {
+      "id": "organize",
+      "text": "Sa pagpaninlo sang barangay, ginaagda ni Riza ang mga residente nga magplano kag maghulag upod sa iya. Bilang Community Organizer, ginaangot niya ang mga tawo.",
+      "title": "Mag-organisa",
+      "detail": "Mag-agda sa mga tawo nga mag-upod."
+    },
+    {
+      "id": "guide",
+      "text": "Kon nagakinahanglan si Aling Nena sang bulig para sa iya bata, ginabuligan siya ni Riza nga makighambal sa midwife. Bilang Health Service Provider, ginagiyahan niya ang pamilya agod makapalapit sa serbisyo sa panglawas.",
+      "title": "Maggiya sa serbisyo",
+      "detail": "Magbulig nga makapalapit sa health worker."
+    },
+    {
+      "id": "hepo",
+      "text": "Ginagamit sang Reference Manual ang tawag nga barangay-level Health Education and Promotion Officer, ukon HEPO. Nagaangot diri ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo; indi ini pamatuod sang pormal nga pagtangdo sa posisyon.",
+      "title": "Nagaangot nga mga papel",
+      "detail": "HEPO · Pagpauswag sang panglawas"
+    },
+    {
+      "id": "summary",
+      "text": "Antes magpaambit, ginatun-an ni Riza ang mga prayoridad sang barangay kag ginakumpirma sa health worker ang detalye nga indi sigurado. Dumduma: magtudlo, mag-angot sang mga tawo, kag maggiya sa serbisyo gamit ang husto nga ihibalo.",
+      "title": "Magtudlo · Mag-angot · Maggiya",
+      "detail": "Ang husto nga ihibalo amo ang pundasyon."
+    }
+  ],
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-03",
+    "scope": "Lesson 1.1.1 translated text, reading narration, animated video and captions",
+    "approval": "Owner approved both language pilots in the Codex conversation and requested merge."
+  }
+}

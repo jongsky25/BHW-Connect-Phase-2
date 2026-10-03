@@ -22,6 +22,7 @@ import { prefersReducedMotion } from "@/lib/elearning/reduced-motion";
 import { ReferenceReadSection } from "./reference-read-section";
 import { LessonAssetFigure } from "./lesson-asset-figure";
 import { FittedLessonPage } from "./fitted-lesson-page";
+import { translateLesson, translationMatchesLesson, type LessonTranslation, type LessonText } from "@/lib/elearning/lesson-translation";
 
 type ResumeValue = Omit<CourseLessonResume, "course_progress_id" | "updated_at">;
 const RESUME_SAVE_DELAY_MS = 3000;
@@ -58,6 +59,7 @@ type Props = ReferenceData & {
   completionMilestone?: { scope: "subchapter" | "chapter"; number: string };
   // Lesson ID -> Read-mode narration in the current language (optional).
   narration?: Record<string, LessonNarration>;
+  translations?: LessonTranslation[];
   locale: string;
   onResume: (
     resume: ResumeValue,
@@ -71,11 +73,11 @@ function repeatsCheckPrompt(body: string, prompt: string) {
   return normalize(lastParagraph) === normalize(prompt);
 }
 
-function Practice({ check, en, promptShownInBody, answer, onAnswer }: { check: LessonCheck; en: boolean; promptShownInBody: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {
+function Practice({ check, en, ui, promptShownInBody, answer, onAnswer }: { check: LessonCheck; en: boolean; ui: LessonText; promptShownInBody: boolean; answer: number | undefined; onAnswer: (answer: number) => void }) {
   return (
     <fieldset className="mt-5 rounded-lg border border-ink/20 p-4">
       <legend className="font-semibold">
-        {promptShownInBody ? (en ? "Choose an answer" : "Pumili ng sagot") : en ? check.prompt_en : check.prompt_fil}
+        {promptShownInBody ? ui("Pumili ng sagot", "Choose an answer") : en ? check.prompt_en : check.prompt_fil}
       </legend>
       <div className="flex flex-col gap-2">
         {check.options.map((o, i) => (
@@ -100,8 +102,8 @@ function Practice({ check, en, promptShownInBody, answer, onAnswer }: { check: L
           <strong className="reference-check-feedback-label">
             <span aria-hidden="true">{answer === check.correct_option_index ? "✓" : "↺"}</span>{" "}
             {answer === check.correct_option_index
-              ? en ? "Correct!" : "Tama!"
-              : en ? "Not quite. Try again." : "Hindi pa tama. Subukang muli."}
+              ? ui("Tama!", "Correct!")
+              : ui("Hindi pa tama. Subukang muli.", "Not quite. Try again.")}
           </strong>
           <p className="reference-check-feedback-detail">{en ? check.feedback_en : check.feedback_fil}</p>
         </div>
@@ -113,7 +115,7 @@ function Practice({ check, en, promptShownInBody, answer, onAnswer }: { check: L
 export function ReferenceLessons(props: Props) {
   const { lessons, modules, onResume, onComplete } = props,
     en = props.locale === "en";
-  const ui = (fil: string, eng: string) => (en ? eng : fil);
+  const [translationLanguage, setTranslationLanguage] = useState<string | null>(null);
   const router=useRouter();
   const initial=lessons.find(l=>l.id===props.initialLessonId);
   const initialResume=props.resumes.filter(r=>r.lesson_id===initial?.id).sort((a,b)=>b.updated_at.localeCompare(a.updated_at))[0];
@@ -152,15 +154,21 @@ export function ReferenceLessons(props: Props) {
   const pendingResume = useRef<ResumeValue | null>(null);
   const resumeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const flushResumeRef = useRef<() => Promise<void>>(() => writes.current);
-  const lesson = lessons.find((l) => l.id === selected);
+  const sourceLesson = lessons.find((l) => l.id === selected);
+  const availableTranslations = sourceLesson ? (props.translations ?? []).filter(translation =>
+    (props.readOnly || translation.review_status === "approved") && translationMatchesLesson(sourceLesson, translation)) : [];
+  const translation = availableTranslations.find(value => value.language === translationLanguage);
+  const lesson = sourceLesson && translation ? translateLesson(sourceLesson, translation) : sourceLesson;
+  const ui: LessonText = (fil, eng) => translation?.ui[fil] ?? (en ? eng : fil);
+  const lessonNarration = translation ? translation.narration : (lesson ? props.narration?.[lesson.id] : undefined);
   const storyArt = lesson?.lesson_key === "bhw-roles-hepo"
     ? {
         src: "/training/bhw-1-1/scene-8cdb1498a723.png",
-        alt: ui(
+        alt: translation?.story_art.alt ?? ui(
           "Si BHW Riza ay nakikipag-usap sa mga residente; sa tabi niya, isang ina at anak ang kausap ang midwife.",
           "BHW Riza talks with residents; nearby, a mother and child speak with a midwife.",
         ),
-        caption: ui("Isang umaga sa barangay", "One morning in the barangay"),
+        caption: translation?.story_art.caption ?? ui("Isang umaga sa barangay", "One morning in the barangay"),
       }
     : lesson?.lesson_key === "bhw-health-educator"
       ? {
@@ -255,13 +263,13 @@ export function ReferenceLessons(props: Props) {
   const promptShownInBody = item && "body_fil" in item && item.check
     ? repeatsCheckPrompt(en ? item.body_en : item.body_fil, en ? item.check.prompt_en : item.check.prompt_fil)
     : false;
-  const practice = item?.check ? <Practice check={item.check} en={en} promptShownInBody={Boolean(promptShownInBody)} answer={answer}
+  const practice = item?.check ? <Practice check={item.check} en={en} ui={ui} promptShownInBody={Boolean(promptShownInBody)} answer={answer}
     onAnswer={value => setAnswers(old => ({...old, [answerKey(item.id)]: value}))}/> : null;
   const figures =
     lesson && item
       ? item.asset_ids.map((id) => {
           const a = lesson.revision.assets.find((a) => a.id === id);
-          return a ? <LessonAssetFigure key={a.id} asset={a} en={en} /> : null;
+          return a ? <LessonAssetFigure key={a.id} asset={a} en={en} language={translation?.language} /> : null;
         })
       : null;
 
@@ -468,6 +476,7 @@ export function ReferenceLessons(props: Props) {
         data-layout={"layout" in item ? item.layout : "read"}
         data-scene={item.id}
         data-lesson={lesson.lesson_key}
+        lang={translation?.language ?? (en ? "en" : "fil")}
       >
         {storyArt && <figure className="reference-story-art">
           <Image
@@ -516,17 +525,18 @@ export function ReferenceLessons(props: Props) {
           </>
         ) : (
           <ReferenceReadSection
-            key={lesson.id + item.id + props.locale}
+            key={lesson.id + item.id + props.locale + (translation?.language ?? "")}
             heading={en ? item.heading_en : item.heading_fil}
             body={en ? (storyLayout && item.id === "morning" ? clarifyMorningTimes(item.body_en) : item.body_en) : item.body_fil}
             takeaway={revealSummary ? ((en ? item.takeaway_en : item.takeaway_fil) ?? "") : ""}
-            narration={revealSummary ? props.narration?.[lesson.id]?.[item.id] : undefined}
+            narration={revealSummary ? lessonNarration?.[item.id] : undefined}
             en={en}
+            text={ui}
             headingRef={heading}
           >
             {!storyLayout && figures}
             {practice}
-            {!revealSummary && props.narration?.[lesson.id]?.[item.id] && <p className="mt-3 text-sm">
+            {!revealSummary && lessonNarration?.[item.id] && <p className="mt-3 text-sm">
               {ui("Sagutin muna ang tanong para mapakinggan ang audio na may buod.", "Answer the check to unlock this section’s audio, which includes the takeaway.")}
             </p>}
           </ReferenceReadSection>
@@ -569,6 +579,7 @@ export function ReferenceLessons(props: Props) {
       <LessonAssetFigure
         asset={featuredVideo}
         en={en}
+        language={translation?.language}
       />
     </div>
   );
@@ -576,6 +587,7 @@ export function ReferenceLessons(props: Props) {
   return (
     <section
       className="flex flex-col gap-4"
+      lang={translation?.language ?? (en ? "en" : "fil")}
       aria-label={ui("Mga aralin sa Kabanata I", "Chapter I lessons")}
     >
       {!props.lessonBaseHref && <p>
@@ -674,6 +686,17 @@ export function ReferenceLessons(props: Props) {
                 <li key={o}>{o}</li>
               ))}
             </ul>
+            {availableTranslations.length > 0 && <label className="flex flex-wrap items-center gap-2 text-sm font-medium">
+              {ui("Wika ng aralin", "Lesson language")}
+              <select className="min-h-[44px] rounded border border-ink/20 bg-canvas px-3"
+                value={translation?.language ?? ""} onChange={event => setTranslationLanguage(event.target.value || null)}>
+                <option value="">{en ? "English" : "Filipino"}</option>
+                {availableTranslations.map(value => <option key={value.language} value={value.language}>{value.label}</option>)}
+              </select>
+            </label>}
+            {translation?.review_status === "draft" && <p role="status" className="rounded border border-ink/20 px-3 py-2 text-sm">
+              {ui("Draft para sa pagsusuri ng salin at pagbigkas.", "Draft for translation and pronunciation review.")}
+            </p>}
             <div className="flex flex-wrap gap-2" role="group" aria-label={ui("Uri ng nilalaman", "Content mode")}>
               {(["read", "slides"] as const).map((m) => (
                 <button
@@ -683,7 +706,7 @@ export function ReferenceLessons(props: Props) {
                   aria-pressed={!videoSelected && mode === m}
                   onClick={() => changeMode(m)}
                 >
-                  {m === "read" ? ui("Basahin", "Read") : "Slides"}
+                  {m === "read" ? ui("Basahin", "Read") : ui("Slides", "Slides")}
                 </button>
               ))}
               {featuredVideo && <button type="button"
@@ -821,7 +844,7 @@ export function ReferenceLessons(props: Props) {
               {(["read", "slides"] as const).map((m) => (
                 <button key={m} type="button" aria-pressed={!videoSelected && mode === m} onClick={() => changeMode(m)}
                   className="rounded border border-ink/25 px-3 py-2 text-sm aria-pressed:bg-primary aria-pressed:text-on-primary">
-                  {m === "read" ? ui("Basahin", "Read") : "Slides"}
+                  {m === "read" ? ui("Basahin", "Read") : ui("Slides", "Slides")}
                 </button>
               ))}
               {featuredVideo && <button type="button" aria-pressed={videoSelected} onClick={() => setVideoSelected(true)}

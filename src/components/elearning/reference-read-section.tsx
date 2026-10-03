@@ -65,13 +65,14 @@ type Props = {
   takeaway: string;
   narration?: ReferenceNarrationEntry;
   en: boolean;
+  text?: (fil: string, en: string) => string;
   headingRef?: Ref<HTMLHeadingElement>;
   // Rendered between the body and the takeaway (the section's figures).
   children?: ReactNode;
 };
 
-export function ReferenceReadSection({ heading, body, takeaway, narration, en, headingRef, children }: Props) {
-  const ui = (fil: string, eng: string) => (en ? eng : fil);
+export function ReferenceReadSection({ heading, body, takeaway, narration, en, text, headingRef, children }: Props) {
+  const ui = text ?? ((fil: string, eng: string) => (en ? eng : fil));
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const frame = useRef<number | null>(null);
   const [playing, setPlaying] = useState(false);

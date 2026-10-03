@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "c22d49f67b42d3169ef9b74fca246aaee72f907c722f48c945c69061a8817b0f",
+  "durationSeconds": 89.809,
+  "beats": [
+    {
+      "zone": "morning",
+      "index": 0,
+      "text": "Isa ka aga, tatlo ka buluhaton ang atubangon ni BHW Riza. Magatudlo siya sa purok, magapakigplano sa mga residente, kag magabulig kay Aling Nena nga makighambal sa midwife.",
+      "start_ms": 0,
+      "end_ms": 12840
+    },
+    {
+      "zone": "educate",
+      "index": 1,
+      "text": "Sa paghisugilanon, nagapamati si Riza sa mga pamangkot sang mga tawo kag nagapaambit sang maathag kag gin-aprobahan nga impormasyon parte sa panglawas. Amo ini ang iya papel bilang Health Educator.",
+      "start_ms": 13140,
+      "end_ms": 27580
+    },
+    {
+      "zone": "organize",
+      "index": 2,
+      "text": "Sa pagpaninlo sang barangay, ginaagda ni Riza ang mga residente nga magplano kag maghulag upod sa iya. Bilang Community Organizer, ginaangot niya ang mga tawo.",
+      "start_ms": 27880,
+      "end_ms": 38960
+    },
+    {
+      "zone": "guide",
+      "index": 3,
+      "text": "Kon nagakinahanglan si Aling Nena sang bulig para sa iya bata, ginabuligan siya ni Riza nga makighambal sa midwife. Bilang Health Service Provider, ginagiyahan niya ang pamilya agod makapalapit sa serbisyo sa panglawas.",
+      "start_ms": 39260,
+      "end_ms": 53500
+    },
+    {
+      "zone": "hepo",
+      "index": 4,
+      "text": "Ginagamit sang Reference Manual ang tawag nga barangay-level Health Education and Promotion Officer, ukon HEPO. Nagaangot diri ang pagtudlo, pag-organisa, kag pagbulig sa serbisyo; indi ini pamatuod sang pormal nga pagtangdo sa posisyon.",
+      "start_ms": 53800,
+      "end_ms": 71360
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Antes magpaambit, ginatun-an ni Riza ang mga prayoridad sang barangay kag ginakumpirma sa health worker ang detalye nga indi sigurado. Dumduma: magtudlo, mag-angot sang mga tawo, kag maggiya sa serbisyo gamit ang husto nga ihibalo.",
+      "start_ms": 71660,
+      "end_ms": 89740
+    }
+  ]
+}
