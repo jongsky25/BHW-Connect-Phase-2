@@ -5,7 +5,7 @@ Base audited: `d50fb0bb9e973e1d4ff5444e5408f38a0a47f8cd`; isolated branch `codex
 
 ## Scope and acceptance plan
 
-Upgrade against released 1.1.6, preserving the primary-care journey, Vlanche and Mang Ernesto, required/position/objectives metadata, all six Read and slide IDs, and progress identity. No publication or merge is authorized by this implementation request. Prior approval covers prior media only.
+Upgrade against released 1.1.6, preserving the primary-care journey, Vlanche and Mang Ernesto, required/position/objectives metadata, all six Read and slide IDs, and progress identity. On 3 October 2026 the owner approved the revised package and explicitly requested live publication. Approval covers the YAKAP word-pronunciation correction, Read narration, illustration, posters and videos reviewed at e0c10d4025f3788db17852da9092dc95613e6dfc. Main was synchronized through 932a060a before final release checks.
 
 | Area | Audit finding | Implementation and verification |
 | --- | --- | --- |
@@ -15,7 +15,7 @@ Upgrade against released 1.1.6, preserving the primary-care journey, Vlanche and
 | Video | Two expressive Gemini videos, six timed beats | Retain authored scripts; regenerate audio with the shared YAKAP word pronunciation, measured timings, exact VTT and summary posters; verify H.264/AAC and every beat |
 | Controls | Read, Slides, on-demand story and full screen present | Actual-component language selection, single player/unmount, audio highlighting, scroll/return and completion without video |
 | Facilitation | Twelve ordered sections and observable criteria present | Refresh source/review notes; retain role-play and separate practical observation from online completion |
-| Release | Prior media approved | Newly revised illustration/video assets remain draft; owner review followed by exact-commit CI, scoped loader and production gates |
+| Release | Prior media approved | Owner-approved illustration/video assets; exact-commit CI, scoped loader and production gates before publication |
 
 ## Six-screen storyboard
 
@@ -46,7 +46,7 @@ SHA-256: `a67521f903c040e83eccc4be8a6c97a4b5eaac37887ccbd2950b5eb705d67cb3`.
 
 Vlanche, Ernesto and a midwife confirm the next step at a small table using a blank note. No clinic name, logo, personal information, medicine or clinical procedure. The blank note is a learning cue, not an empanelment form. Bilingual alt/caption and generation prompt are recorded in `lesson.json`. Read/Slides use a contained image to preserve all three faces in narrow and full-screen views. The video uses a single framed image and meaningful animated benefit/choice/referral graphics; it no longer uses separate character slices.
 
-New image and revised videos/posters remain `draft`. Regenerated Gemini scene audio and captions use fresh measured boundaries; earlier immutable public media remain available. Owner approval has not been recorded for this revision. No independent policy/clinical SME review is claimed.
+New image and revised videos/posters are `approved` by the owner on 3 October 2026. Regenerated Gemini scene audio and captions use fresh measured boundaries; earlier immutable public media remain available. Owner instruction: “approve the content and publish to live”. No independent policy/clinical SME review is claimed.
 
 ## Verification and review package
 
@@ -60,17 +60,52 @@ The local review fixture uses the actual component and authored lesson with Next
 - Shipped videos: H.264 854x480 plus AAC; initial revision Filipino 76.288 s, English 83.221333 s (superseded by the YAKAP correction below), both under 90 s and 1.4 MB. Exact beat/script/VTT parity and content hashes passed. Decoded audio was non-silent in all twelve video beats and every Read timing zone. Schema duration fields are rounded integer seconds; media reports preserve exact measurements.
 - Reviewed original image, desktop/phone/tablet/full-screen captures, both posters and six-frame contact sheets for each language. The fixture captures await image decoding. All three faces remain visible.
 - Automated listening used Gemini 3.8 Flash audio understanding on all twelve Read tracks and both retained video audio tracks. This is model-mediated review, not human listening or owner approval. Reports found clear delivery overall, flagged Vlanche's initial V/B sound, the former letter-by-letter YAKAP pronunciation (corrected below) and one Filipino referral pause for owner review. Exact authored text is preserved in synthesis/timing inputs; automated transcription is not proof of word-perfect speech.
-- Original identity/objectives, section/slide IDs, learner wording, practical criteria and published media retained. Narration manifest changes are scoped to this lesson; no media deletions. Revised illustration/video assets stay draft. No merge, deployment, loader apply or publication was performed.
+- Original identity/objectives, section/slide IDs, learner wording, practical criteria and published media retained. Narration manifest changes are scoped to this lesson; no media deletions. These implementation checks preceded owner approval. Live release is now authorized and requires the final release gates below.
 
-Review outputs include both playable MP4s, VTT files, posters, illustration and exact prompt, twelve Read tracks with timing manifest, responsive screenshots, source audit and media/listening reports. CI/E2E and both Remotion shards are checked on the PR; the final release still requires owner approval and fresh scoped publication gates.
+Review outputs include both playable MP4s, VTT files, posters, illustration and exact prompt, twelve Read tracks with timing manifest, responsive screenshots, source audit and media/listening reports. CI/E2E and both Remotion shards are checked on the PR; the owner approved the package on 3 October 2026; fresh scoped publication gates remain required.
 
 ## Shared YAKAP pronunciation correction
 
 The owner requested YAKAP to be pronounced as the Tagalog word for hug throughout audio narration. The shared rule now says **YAH-kap**, with first-syllable stress, in every narration language, and takes precedence over acronym spelling. It applies to Read/video speech and Gemini/Microsoft provider entry points. Displayed lesson text, authored timing text and captions retain YAKAP. Pronunciation metadata participates in content hashes only for affected audio; all unrelated legacy hashes remain stable.
 
-Four Read tracks (outpatient/provider, Filipino/English) and both six-beat story audio tracks are regenerated. Their exact measured timings drive the new caption cues and video renders. Other Read audio and all historical public assets remain available. New previews still require owner review; previous CI evidence for fcbe95ef is superseded for this changed head. Updated media/listening/browser/CI evidence is included in the review package.
+Four Read tracks (outpatient/provider, Filipino/English) and both six-beat story audio tracks are regenerated. Their exact measured timings drive the new caption cues and video renders. Other Read audio and all historical public assets remain available. The owner approved the corrected previews on 3 October 2026; previous CI evidence for fcbe95ef is superseded for this changed head. Updated media/listening/browser/CI evidence is included in the review package.
 
 The pronunciation stress agrees with the [Tagalog dictionary entry](https://en.wiktionary.org/wiki/yakap), checked 3 October 2026. Regression coverage checks all four supported languages, provider payloads with custom styles, unchanged authored timing text, affected cache invalidation and stable unrelated hashes.
+
+## Approved release baseline — 3 October 2026
+
+Only `02-uhc-act/uhc-primary-care` may be promoted. Fresh database pointers captured before publication:
+
+```json
+[
+  {
+    "lesson_key": "uhc-coverage",
+    "id": "9dfa3c3d-ec75-4143-8fa2-302e4273f829",
+    "published_revision_id": "5d28c239-c4a2-4cda-a719-e8959a19ae91",
+    "content_hash": "4b82aa20c75ff944adf326932408fd64ca126ac0dea951d53da264f00a639326"
+  },
+  {
+    "lesson_key": "uhc-primary-care",
+    "id": "e3abb325-3ccc-47e4-95de-94be7d9735ac",
+    "published_revision_id": "596fb1bd-2895-4ebf-9ebd-eb7cbb232979",
+    "content_hash": "1ed3abce1591670188f101dc3c56f0922504828c35651885c11b409a8fde554d"
+  },
+  {
+    "lesson_key": "uhc-local-system",
+    "id": "def4612a-a2af-4764-a735-7c2dec8a20c4",
+    "published_revision_id": "ae2c2f10-95ac-435f-bf35-c425d20ec7d5",
+    "content_hash": "1fe6aea29809dde3bd03a27f23b8abca91e385ae27a471f87f014bec5af9c9ab"
+  },
+  {
+    "lesson_key": "uhc-improvement",
+    "id": "d23d3ff0-64b0-4823-8c23-710b728a59d2",
+    "published_revision_id": "06e30fd6-0dc5-441c-8835-443c31b274bc",
+    "content_hash": "d22dae844a28d08ff70163f370cd898e172e0d354d26ba48e75223e1e8998c75"
+  }
+]
+```
+
+Final evidence must establish CI/E2E, both Remotion shard artifacts, a Linux scoped loader dry run, exact merged-commit Production readiness, and scoped publication with the other three pointers retained.
 
 ## Historical release record
 
