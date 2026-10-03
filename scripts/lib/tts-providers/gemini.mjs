@@ -13,6 +13,7 @@
 // fetch and sleep are injected so the request/retry/assembly logic is
 // testable without a network call (gemini.test.mjs).
 
+import { applyWordPronunciations, pronunciationDirections } from "../narration-pronunciation.mjs";
 import { Mp3Encoder } from "@breezystack/lamejs";
 
 export const GEMINI_TTS_MODEL = "gemini-3.8-flash-tts";
@@ -179,6 +180,8 @@ export function encodeMp3(samples, sampleRate, kbps) {
 }
 
 async function synthesizeZoneText(text, language, { apiKey, model, voice, style, fetchImpl, sleep }) {
+  const directions = pronunciationDirections(text);
+  const deliveryStyle = [style ?? STYLES[language] ?? STYLES.en, directions].filter(Boolean).join(" ");
   const body = {
     model,
     input: [
@@ -187,8 +190,8 @@ async function synthesizeZoneText(text, language, { apiKey, model, voice, style,
         content: [
           {
             type: "text",
-            text,
-            annotations: [{ type: "speech_metadata", style: style ?? STYLES[language] ?? STYLES.en }],
+            text: applyWordPronunciations(text),
+            annotations: [{ type: "speech_metadata", style: deliveryStyle }],
           },
         ],
       },

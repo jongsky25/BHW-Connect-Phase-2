@@ -12,7 +12,7 @@ Upgrade against released 1.1.6, preserving the primary-care journey, Vlanche and
 | Content | Six bilingual screens, aligned slides/takeaways, distinct check already present | Retain authored learner wording; check source claims, parity and stable IDs |
 | Read | Twelve Edge tracks | Generate twelve Gemini 3.8 Flash TTS/Kore tracks; shared expressive style participates in content hash; measured sentence timings; explicit and default dry runs |
 | Illustration | Reused 1.2.1 art | Generate original health-team conversation; integrate in viewer, assets and Remotion; verify all three faces remain visible |
-| Video | Two expressive Gemini videos, six timed beats | Retain correct scripts/audio/timings; rerender new visuals with audio, exact VTT and summary posters; verify H.264/AAC and every beat |
+| Video | Two expressive Gemini videos, six timed beats | Retain authored scripts; regenerate audio with the shared YAKAP word pronunciation, measured timings, exact VTT and summary posters; verify H.264/AAC and every beat |
 | Controls | Read, Slides, on-demand story and full screen present | Actual-component language selection, single player/unmount, audio highlighting, scroll/return and completion without video |
 | Facilitation | Twelve ordered sections and observable criteria present | Refresh source/review notes; retain role-play and separate practical observation from online completion |
 | Release | Prior media approved | Newly revised illustration/video assets remain draft; owner review followed by exact-commit CI, scoped loader and production gates |
@@ -26,7 +26,7 @@ Upgrade against released 1.1.6, preserving the primary-care journey, Vlanche and
 5. `local`: Vlanche records clinic/selection, benefit/access and referral instructions if needed; unknown details go to the midwife/RHU.
 6. `check`: apply these steps to Ernesto's uncertainty; plausible alternatives wrongly remove choice or make a clinical decision.
 
-Read delivery: conversational Filipino/Philippine English, curious Ernesto, calm supportive Vlanche, varied pitch/pace and emphasis, pauses for practical checks, clear clinician/BHW boundary, exact authored spoken words. The shared `PRIMARY_CARE_STORY_STYLES` copies the already-reviewed video directions exactly. Existing video beats remain question, four-changes, outpatient, provider, referral and next-step; no voice regeneration is needed for a visual-only revision.
+Read delivery: conversational Filipino/Philippine English, curious Ernesto, calm supportive Vlanche, varied pitch/pace and emphasis, pauses for practical checks, clear clinician/BHW boundary, exact authored spoken words. The shared `PRIMARY_CARE_STORY_STYLES` copies the already-reviewed video directions exactly. Existing authored video beats remain question, four-changes, outpatient, provider, referral and next-step; video audio and timings are regenerated for the shared YAKAP word pronunciation correction.
 
 ## Source audit — checked 3 October 2026
 
@@ -46,7 +46,7 @@ SHA-256: `a67521f903c040e83eccc4be8a6c97a4b5eaac37887ccbd2950b5eb705d67cb3`.
 
 Vlanche, Ernesto and a midwife confirm the next step at a small table using a blank note. No clinic name, logo, personal information, medicine or clinical procedure. The blank note is a learning cue, not an empanelment form. Bilingual alt/caption and generation prompt are recorded in `lesson.json`. Read/Slides use a contained image to preserve all three faces in narrow and full-screen views. The video uses a single framed image and meaningful animated benefit/choice/referral graphics; it no longer uses separate character slices.
 
-New image and revised videos/posters remain `draft`. Existing Gemini scene audio and captions retain their measured boundaries; earlier immutable public media remain available. Owner approval has not been recorded for this revision. No independent policy/clinical SME review is claimed.
+New image and revised videos/posters remain `draft`. Regenerated Gemini scene audio and captions use fresh measured boundaries; earlier immutable public media remain available. Owner approval has not been recorded for this revision. No independent policy/clinical SME review is claimed.
 
 ## Verification and review package
 
@@ -57,12 +57,20 @@ The local review fixture uses the actual component and authored lesson with Next
 - TypeScript, repository lint, Remotion lint/typecheck and production Webpack build passed. Normal Turbopack build rejected this Windows dependency junction outside its checkout root; the documented Webpack fallback passed. Normal production builds remain in CI.
 - Nine focused suites / 134 tests passed: lesson 1.2.2 and 1.1.6, Gemini story continuity, reference content/narration/loader, provider/training validation and actual lesson viewer behavior. Both explicit Gemini and default narration dry runs selected twelve current tracks and rendered zero.
 - Actual-component browser checks passed at 1280x900, 390x844, 844x390 and 768x1024: all six Read and Slides screens, no horizontal overflow, audio playback/highlighting, feedback, full-screen scrolling/navigation and completion without video. Filipino and English story playback used one player, correct six-cue VTT tracks, full-screen behavior and unmounted on returning to Read. Resume/completion/navigation are fixture stubs; persisted authenticated progress was not verified.
-- Shipped videos: H.264 854x480 plus AAC; Filipino 76.288 s, English 83.221333 s, both under 90 s and 1.4 MB. Exact beat/script/VTT parity and content hashes passed. Decoded audio was non-silent in all twelve video beats and every Read timing zone. Schema duration fields are rounded integer seconds; media reports preserve exact measurements.
+- Shipped videos: H.264 854x480 plus AAC; initial revision Filipino 76.288 s, English 83.221333 s (superseded by the YAKAP correction below), both under 90 s and 1.4 MB. Exact beat/script/VTT parity and content hashes passed. Decoded audio was non-silent in all twelve video beats and every Read timing zone. Schema duration fields are rounded integer seconds; media reports preserve exact measurements.
 - Reviewed original image, desktop/phone/tablet/full-screen captures, both posters and six-frame contact sheets for each language. The fixture captures await image decoding. All three faces remain visible.
-- Automated listening used Gemini 3.8 Flash audio understanding on all twelve Read tracks and both retained video audio tracks. This is model-mediated review, not human listening or owner approval. Reports found clear delivery overall, flagged Vlanche's initial V/B sound, letter-by-letter YAKAP pronunciation and one Filipino referral pause for owner review. Exact authored text is preserved in synthesis/timing inputs; automated transcription is not proof of word-perfect speech.
+- Automated listening used Gemini 3.8 Flash audio understanding on all twelve Read tracks and both retained video audio tracks. This is model-mediated review, not human listening or owner approval. Reports found clear delivery overall, flagged Vlanche's initial V/B sound, the former letter-by-letter YAKAP pronunciation (corrected below) and one Filipino referral pause for owner review. Exact authored text is preserved in synthesis/timing inputs; automated transcription is not proof of word-perfect speech.
 - Original identity/objectives, section/slide IDs, learner wording, practical criteria and published media retained. Narration manifest changes are scoped to this lesson; no media deletions. Revised illustration/video assets stay draft. No merge, deployment, loader apply or publication was performed.
 
 Review outputs include both playable MP4s, VTT files, posters, illustration and exact prompt, twelve Read tracks with timing manifest, responsive screenshots, source audit and media/listening reports. CI/E2E and both Remotion shards are checked on the PR; the final release still requires owner approval and fresh scoped publication gates.
+
+## Shared YAKAP pronunciation correction
+
+The owner requested YAKAP to be pronounced as the Tagalog word for hug throughout audio narration. The shared rule now says **YAH-kap**, with first-syllable stress, in every narration language, and takes precedence over acronym spelling. It applies to Read/video speech and Gemini/Microsoft provider entry points. Displayed lesson text, authored timing text and captions retain YAKAP. Pronunciation metadata participates in content hashes only for affected audio; all unrelated legacy hashes remain stable.
+
+Four Read tracks (outpatient/provider, Filipino/English) and both six-beat story audio tracks are regenerated. Their exact measured timings drive the new caption cues and video renders. Other Read audio and all historical public assets remain available. New previews still require owner review; previous CI evidence for fcbe95ef is superseded for this changed head. Updated media/listening/browser/CI evidence is included in the review package.
+
+The pronunciation stress agrees with the [Tagalog dictionary entry](https://en.wiktionary.org/wiki/yakap), checked 3 October 2026. Regression coverage checks all four supported languages, provider payloads with custom styles, unchanged authored timing text, affected cache invalidation and stable unrelated hashes.
 
 ## Historical release record
 

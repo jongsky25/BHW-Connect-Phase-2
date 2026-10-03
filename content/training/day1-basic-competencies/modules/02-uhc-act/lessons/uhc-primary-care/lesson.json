@@ -253,25 +253,25 @@
       "alt_en": "Animated story of BHW Vlanche and Mang Ernesto about an outpatient benefit, choosing a primary care clinic, and the local referral pathway.",
       "caption_fil": "Kathang-isip na halimbawa na may Gemini narration at captions. Bagong larawan at render: hinihintay ang pagsusuri ng may-ari.",
       "caption_en": "Fictional example with Gemini narration and captions. New illustration and render await owner review.",
-      "provenance": "Original Remotion animation for lesson 1.2.2. New lesson-specific image generated with built-in imagegen on 2026-10-03, referencing the 1.2.1 fictional Vlanche/Mang Ernesto image. Gemini TTS model gemini-3.8-flash-tts, voice Kore; existing expressive scene audio and measured timings retained because the bilingual scripts are unchanged. Captions use those measured boundaries. Earlier owner approval on 2026-10-02 applies to the prior renders only; revised illustration, posters and videos remain draft pending owner review. No independent policy or clinical SME approval recorded.",
+      "provenance": "Original Remotion animation for lesson 1.2.2. New lesson-specific image generated with built-in imagegen on 2026-10-03, referencing the 1.2.1 fictional Vlanche/Mang Ernesto image. Gemini TTS model gemini-3.8-flash-tts, voice Kore; expressive scene audio regenerated on 2026-10-03 under the shared YAKAP pronunciation rule: speak the Tagalog word for hug, never its letters. Authored bilingual scripts unchanged; captions and scene durations use newly measured audio boundaries. Earlier owner approval on 2026-10-02 applies to the prior renders only; revised illustration, posters and videos remain draft pending owner review. No independent policy or clinical SME approval recorded.",
       "review_status": "draft",
       "videos": {
         "fil": {
-          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-c13af8ecc16e.mp4",
-          "content_hash": "c13af8ecc16ea74d6e9ac0f732b682474fe003176216cde0a48eb55230f1a08f",
-          "duration_s": 76,
+          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-819da2d7e8f0.mp4",
+          "content_hash": "819da2d7e8f01f50edf6f3683ce127226cee2c4372ce2853d612a64b2373371c",
+          "duration_s": 75,
           "captions": {
-            "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-33488b566944.vtt",
-            "content_hash": "33488b566944efd4181605ac23ee414220af7add89c9bf0508ab2024c64ad735"
+            "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-fil-f4c2358a2fa6.vtt",
+            "content_hash": "f4c2358a2fa6354a7263a980a18ba9f16964eb7407adf2f563d2e7269349024f"
           }
         },
         "en": {
-          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-4f155cfa1a4c.mp4",
-          "content_hash": "4f155cfa1a4c87cc3de457cf466d7f3d9e1b42bcdda9bb3e0dc9c7b112ecd4e5",
-          "duration_s": 83,
+          "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-899a61fd78fb.mp4",
+          "content_hash": "899a61fd78fbc0b098c0c2078f5af72c83a3c920c9b66265ffee7a3be8cbf895",
+          "duration_s": 85,
           "captions": {
-            "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-db7f831ea66a.vtt",
-            "content_hash": "db7f831ea66a663c944a7d6fee928feceab0c0c41f425fa63f7a893f8a72ed56"
+            "path": "/training/bhw-1-2/uhc-primary-care-vlanche-gemini-en-8691c09c7afb.vtt",
+            "content_hash": "8691c09c7afbd6a72dda5cc449944d2063a85248e2f8ff2a130421ab776a19c1"
           }
         }
       }
