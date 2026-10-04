@@ -10,7 +10,7 @@ import {
   useVideoConfig,
   type CalculateMetadataFunction,
 } from "remotion";
-import { PRIMARY_CARE_BEATS } from "./narration";
+import { PRIMARY_CARE_BEATS, PRIMARY_CARE_LABELS } from "./narration";
 
 export const PRIMARY_CARE_FPS = 30;
 export const PRIMARY_CARE_FALLBACK_DURATION = PRIMARY_CARE_FPS * 72;
@@ -18,7 +18,7 @@ const TAIL_MS = 1100;
 const ease = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 export type PrimaryCareStoryProps = {
-  language: "fil" | "en";
+  language: "fil" | "en" | "ceb" | "hil";
   beatFrames?: number[];
   audioSrc?: string;
 };
@@ -57,10 +57,8 @@ function Pill({ children, active = false }: { children: React.ReactNode; active?
   return <span style={{ display: "inline-block", background: active ? gold : "#dcefe7", color: ink, borderRadius: 12, padding: "10px 14px", fontSize: 18, fontWeight: 800, whiteSpace: "nowrap" }}>{children}</span>;
 }
 
-function Graphic({ index, language, frame }: { index: number; language: "fil" | "en"; frame: number }) {
-  const items = language === "fil"
-    ? ["PhilHealth", "Outpatient", "Primary care", "Referral"]
-    : ["PhilHealth", "Outpatient", "Primary care", "Referral"];
+function Graphic({ index, language, frame }: { index: number; language: "fil" | "en" | "ceb" | "hil"; frame: number }) {
+  const items = PRIMARY_CARE_LABELS[language].items;
   const appear = spring({ frame, fps: PRIMARY_CARE_FPS, config: { damping: 180, stiffness: 100 } });
   const slide = { transform: `translateY(${(1 - appear) * 20}px)`, opacity: appear };
   if (index === 0 || index === 5) {
@@ -75,22 +73,22 @@ function Graphic({ index, language, frame }: { index: number; language: "fil" | 
     </div>)}
   </div>;
   if (index === 2) return <div style={{ ...slide, position: "absolute", top: 276, left: 60, display: "flex", gap: 16 }}>
-    <Pill active>{language === "fil" ? "Konsulta" : "Consultation"}</Pill><Pill>{language === "fil" ? "Tuntunin" : "Rules"}</Pill><Pill>{language === "fil" ? "Accredited clinic" : "Accredited clinic"}</Pill>
+    {PRIMARY_CARE_LABELS[language].outpatient.map((label, i) => <Pill key={label} active={i === 0}>{label}</Pill>)}
   </div>;
   if (index === 3) return <div style={{ ...slide, position: "absolute", top: 274, left: 60, display: "flex", gap: 16 }}>
-    <Pill active>{language === "fil" ? "Pagpili" : "Choice"}</Pill><Pill>{language === "fil" ? "Unang pagbisita" : "First encounter"}</Pill><Pill>{language === "fil" ? "Kumpirmasyon" : "Confirmation"}</Pill>
+    {PRIMARY_CARE_LABELS[language].provider.map((label, i) => <Pill key={label} active={i === 0}>{label}</Pill>)}
   </div>;
   return <div style={{ ...slide, position: "absolute", top: 266, left: 60, display: "flex", gap: 14 }}>
-    <Pill active>{language === "fil" ? "Clinician: pasya" : "Clinician: decision"}</Pill><Pill>{language === "fil" ? "Health team: proseso" : "Health team: pathway"}</Pill><Pill>{language === "fil" ? "BHW: alalay" : "BHW: support"}</Pill>
+    {PRIMARY_CARE_LABELS[language].referral.map((label, i) => <Pill key={label} active={i === 0}>{label}</Pill>)}
   </div>;
 }
 
-function Scene({ index, language }: { index: number; language: "fil" | "en" }) {
+function Scene({ index, language }: { index: number; language: "fil" | "en" | "ceb" | "hil" }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const beat = PRIMARY_CARE_BEATS[index];
-  const title = language === "fil" ? beat.title_fil : beat.title_en;
-  const detail = language === "fil" ? beat.detail_fil : beat.detail_en;
+  const title = beat[`title_${language}`];
+  const detail = beat[`detail_${language}`];
   const appear = spring({ frame, fps, config: { damping: 180, stiffness: 95 } });
   const progress = interpolate(frame, [0, fps * 10], [0, 1], ease);
   return <AbsoluteFill style={{ background: `linear-gradient(135deg, ${forest}, #246e61)`, color: cream, overflow: "hidden", fontFamily: "Arial, 'Noto Sans', sans-serif" }}>
@@ -100,11 +98,11 @@ function Scene({ index, language }: { index: number; language: "fil" | "en" }) {
     <div style={{ position: "absolute", top: 28, left: 42, fontSize: 16, letterSpacing: 2, fontWeight: 900, color: leaf }}>BHW CONNECT  ·  1.2.2</div>
     <div style={{ position: "absolute", top: 28, right: 40, fontSize: 16, fontWeight: 800, color: cream }}>{String(index + 1).padStart(2, "0")} / 06</div>
     <div style={{ position: "absolute", top: 104, left: 42, width: index === 0 || index === 5 ? 355 : 760, transform: `translateY(${(1 - appear) * 22}px)`, opacity: appear }}>
-      <div style={{ color: gold, fontSize: 17, letterSpacing: 1.2, fontWeight: 900, textTransform: "uppercase", marginBottom: 13 }}>{index === 0 ? "Vlanche + Mang Ernesto" : language === "fil" ? "Susunod na hakbang" : "The next step"}</div>
+      <div style={{ color: gold, fontSize: 17, letterSpacing: 1.2, fontWeight: 900, textTransform: "uppercase", marginBottom: 13 }}>{index === 0 ? "Vlanche + Mang Ernesto" : PRIMARY_CARE_LABELS[language].next_step}</div>
       <div style={{ fontSize: index === 0 || index === 5 ? 38 : title.length > 27 ? 39 : 47, fontWeight: 900, lineHeight: 1.08, textShadow: "0 3px 12px #002d2b66" }}>{title}</div>
       <div style={{ fontSize: 22, lineHeight: 1.25, marginTop: 17, fontWeight: 600, maxWidth: 685 }}>{detail}</div>
     </div>
-    {index === 5 && <div style={{ position: "absolute", bottom: 85, left: 44, display: "flex", gap: 11 }}><Pill active>{language === "fil" ? "Clinic" : "Clinic"}</Pill><Pill>{language === "fil" ? "Benepisyo" : "Benefit"}</Pill><Pill>{language === "fil" ? "Tagubilin" : "Instructions"}</Pill></div>}
+    {index === 5 && <div style={{ position: "absolute", bottom: 85, left: 44, display: "flex", gap: 11 }}>{PRIMARY_CARE_LABELS[language].summary.map((label, i) => <Pill key={label} active={i === 0}>{label}</Pill>)}</div>}
     <div style={{ position: "absolute", bottom: 22, left: 42, width: 770, height: 4, borderRadius: 3, background: "#d0ecde55" }}>
       <div style={{ height: "100%", width: `${Math.min(100, progress * 100)}%`, background: gold, borderRadius: 3 }}/>
     </div>

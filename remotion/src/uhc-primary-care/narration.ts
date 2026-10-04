@@ -1,3 +1,5 @@
+import cebuano from "../../../content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/translation.ceb.json";
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-primary-care/translation.hil.json";
 // The two scripts carry the same actions and claims. One Gemini request per
 // scene makes the measured audio boundaries the scene and caption boundaries.
 export type PrimaryCareBeat = {
@@ -10,7 +12,7 @@ export type PrimaryCareBeat = {
   detail_en: string;
 };
 
-export const PRIMARY_CARE_BEATS: PrimaryCareBeat[] = [
+const baseBeats: PrimaryCareBeat[] = [
   {
     id: "question",
     fil: "Muling tanong ni Mang Ernesto kay BHW Vlanche: Saan po ako magpapacheckup? At kung may referral, saan? Hindi nanghula si Vlanche.",
@@ -66,3 +68,14 @@ export const PRIMARY_CARE_BEATS: PrimaryCareBeat[] = [
     detail_en: "Clinic · benefit · local instructions",
   },
 ];
+
+export const PRIMARY_CARE_BEATS = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("Primary-care translated beat order mismatch");
+  return {...beat, ceb: ceb.text, hil: hil.text, title_ceb: ceb.title, title_hil: hil.title, detail_ceb: ceb.detail, detail_hil: hil.detail};
+});
+export const PRIMARY_CARE_LABELS = {
+  fil: {items: ["PhilHealth", "Outpatient", "Primary care", "Referral"], outpatient: ["Konsulta", "Tuntunin", "Accredited clinic"], provider: ["Pagpili", "Unang pagbisita", "Kumpirmasyon"], referral: ["Clinician: pasya", "Health team: proseso", "BHW: alalay"], next_step: "Susunod na hakbang", summary: ["Clinic", "Benepisyo", "Tagubilin"]},
+  en: {items: ["PhilHealth", "Outpatient", "Primary care", "Referral"], outpatient: ["Consultation", "Rules", "Accredited clinic"], provider: ["Choice", "First encounter", "Confirmation"], referral: ["Clinician: decision", "Health team: pathway", "BHW: support"], next_step: "The next step", summary: ["Clinic", "Benefit", "Instructions"]},
+  ceb: cebuano.scene_labels, hil: hiligaynon.scene_labels,
+};
