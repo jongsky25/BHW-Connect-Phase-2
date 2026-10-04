@@ -1,0 +1,52 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "473c74c57711e572db68a127b63ae7151239575f0c5be0d8971dc80a723228a8",
+  "durationSeconds": 62.929,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Sa barangay health station, nangutana si Mang Ernesto kang BHW Vlanche: Libre na ba ang konsulta? Naminaw una siya sa dili pa motubag.",
+      "start_ms": 0,
+      "end_ms": 10320
+    },
+    {
+      "zone": "purpose",
+      "index": 1,
+      "text": "Tumong sa UHC Act nga mas dali maduolan ang dekalidad ug makaya sa bulsa nga pag-atiman ug mapanalipdan ang mga tawo batok sa bug-at nga gasto.",
+      "start_ms": 10620,
+      "end_ms": 20620
+    },
+    {
+      "zone": "included",
+      "index": 2,
+      "text": "Ubos sa balaod, awtomatikong apil ang matag Pilipinong lungsoranon sa National Health Insurance Program sa PhilHealth.",
+      "start_ms": 20920,
+      "end_ms": 29320
+    },
+    {
+      "zone": "benefit",
+      "index": 3,
+      "text": "Ang pagkaapil sa programa wala magpasabot nga libre ang matag serbisyo sa matag pasilidad. Lahi ang pangutana kon sakop ba ang partikular nga konsulta.",
+      "start_ms": 29620,
+      "end_ms": 40700
+    },
+    {
+      "zone": "verify",
+      "index": 4,
+      "text": "Susihon ni Vlanche sa PhilHealth o RHU ang benepisyo, giila nga provider o pasilidad, ug gikinahanglang mga lakang alang sa kining konsulta.",
+      "start_ms": 41000,
+      "end_ms": 50920
+    },
+    {
+      "zone": "answer",
+      "index": 5,
+      "text": "Miingon si Vlanche: Apil kamo sa PhilHealth. Aron mahibalo kon sakop ba kining konsulta dinhi, sigurohon nato ang benepisyo, provider, ug ang angay buhaton.",
+      "start_ms": 51220,
+      "end_ms": 62860
+    }
+  ]
+}

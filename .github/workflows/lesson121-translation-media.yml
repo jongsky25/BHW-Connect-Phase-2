@@ -1,0 +1,56 @@
+name: Lesson 1.2.1 draft translated media review
+on:
+  push:
+    branches: [codex/lesson-121-translations]
+    paths:
+      - .github/workflows/lesson121-translation-media.yml
+      - scripts/lesson121-translation-audio-review.mjs
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lesson121-translation-media-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  draft-media:
+    if: github.ref == 'refs/heads/codex/lesson-121-translations'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ceb, hil]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Review actual audio with the configured provider
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson121-translation-audio-review.mjs ${{ matrix.language }}
+      - run: npm ci
+        working-directory: remotion
+      - run: npx remotion browser ensure
+        working-directory: remotion
+      - name: Render only this translated story
+        env:
+          COMPOSITION: ${{ matrix.language == 'ceb' && 'UhcPurposeStoryCeb' || 'UhcPurposeStoryHil' }}
+        run: node scripts/remotion-render.mjs "$COMPOSITION" uhc-purpose-vlanche-gemini-${{ matrix.language }} --public training/bhw-1-2 --with-audio --captions uhc-purpose/narration-${{ matrix.language }}.json
+      - name: Export draft review package
+        run: node scripts/lesson-translation-finalize.mjs --lesson 1.2.1 --language ${{ matrix.language }} review-exports
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson121-translation-media-${{ matrix.language }}
+          retention-days: 14
+          path: |
+            content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/audio-review.${{ matrix.language }}.json
+            content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/media.${{ matrix.language }}.json
+            content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/pilot.${{ matrix.language }}.json
+            public/training/bhw-1-2/uhc-purpose-vlanche-gemini-${{ matrix.language }}-*
+            remotion/out/uhc-purpose-vlanche-gemini-${{ matrix.language }}*
+            review-exports/
+          if-no-files-found: error
