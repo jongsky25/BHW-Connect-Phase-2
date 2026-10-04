@@ -67,3 +67,8 @@ For `uhc-primary-care`, Read and video share `PRIMARY_CARE_STORY_STYLES`: Ernest
 ### Shared pronunciation rule: YAKAP
 
 YAKAP is also the Tagalog word for hug. In every narration language, say the word naturally as **YAH-kap**, never its individual letters. Preserve authored uppercase YAKAP in lesson text, timing text and captions. `scripts/lib/narration-pronunciation.mjs` holds the shared exception, applied before acronym expansion and at Gemini/Microsoft provider boundaries. Gemini adds an explicit pronunciation direction even with a custom story style. Pronunciation rules participate in content hashes only for recordings containing the term, so unrelated audio stays current. Regenerate affected Read recordings and video audio, then derive new timings/captions and rerender both language previews; historical public files remain available.
+
+
+## Small improvement planning (lesson 1.2.4)
+
+`uhc-improvement` uses six stable Read/slide positions: observed gap, proposal, fact/team check, feasible plan, trial/feedback and application. Read and video share `UHC_IMPROVEMENT_STORY_STYLES`. Newly added sections resolve to Gemini by default, as do `uhc-local-system` sections; explicit provider overrides remain supported. Keep the original immutable manifest and stable `section-6`/`section-7` anchors. The locally agreed plan is fictional, and the practical rubric is an instructional adaptation. New content/media remain draft until this lesson package receives owner approval. See `docs/lesson-124-build-review.md` and its source audit.

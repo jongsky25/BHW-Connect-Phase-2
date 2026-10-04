@@ -45,7 +45,7 @@ export function LessonAssetFigure({
         muted={!a.videos}
         playsInline
         preload="none"
-        poster={a.path}
+        poster={video.poster?.path ?? a.path}
         width={854}
         height={480}
         aria-label={alt}

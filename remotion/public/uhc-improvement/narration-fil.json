@@ -1,0 +1,52 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "style": "Speak in natural conversational Filipino (Tagalog) as a warm community health storyteller. Sound curious as Mang Ernesto asks and Vlanche notices a gap, then calm and supportive during the midwife's discussion. Use purposeful changes in pitch, pace and emphasis; pause naturally at the proposal, agreement, plan and feedback. Make role boundaries clear, without sounding scolding. Keep the exact authored words; do not translate, add words or promises.",
+  "durationSeconds": 81.241,
+  "beats": [
+    {
+      "zone": "observed",
+      "index": 0,
+      "text": "Sino po ang tatanungin ko? tanong ni Mang Ernesto. Magkaiba ang sagot na narinig ni Vlanche sa dalawang pagbisita. Itinala niya ang tanong, hindi ang pangalan.",
+      "start_ms": 0,
+      "end_ms": 11520
+    },
+    {
+      "zone": "proposal",
+      "index": 1,
+      "text": "Mungkahi ni Vlanche: isang maikling mensahe sa nakatakdang pagbisita sa susunod na linggo. Panukala pa lamang ito; kailangan munang pag-usapan at tiyakin.",
+      "start_ms": 11820,
+      "end_ms": 21860
+    },
+    {
+      "zone": "confirm",
+      "index": 2,
+      "text": "Tinanong niya ang midwife tungkol sa kasalukuyang contact, mensahe at patakaran. Nakinig siya. Hindi niya ipapakalat ang hindi kumpirmado o babaguhin ang serbisyo nang mag-isa.",
+      "start_ms": 22160,
+      "end_ms": 34680
+    },
+    {
+      "zone": "plan",
+      "index": 3,
+      "text": "Sa halimbawa, nakumpirma ang mensahe at napagkasunduan ang plano. Si Vlanche ang gagamit ng sinuring gabay sa kanyang pagbisita. Kayang oras at gamit lamang. Babalikan sa Biyernes.",
+      "start_ms": 34980,
+      "end_ms": 47860
+    },
+    {
+      "zone": "trial",
+      "index": 4,
+      "text": "Pagkatapos magpaliwanag, itatanong niya kung sino ang lalapitan. Itatala ang bilang ng nakasagot at natitirang tanong, walang personal na detalye. Maliit na palatandaan ito, hindi garantisadong epekto.",
+      "start_ms": 48160,
+      "end_ms": 64080
+    },
+    {
+      "zone": "review",
+      "index": 5,
+      "text": "Sa Biyernes, babalikan nila ng midwife ang feedback at aayusin ang mensahe kung kailangan. Napansin, tiniyak at napag-usapan, maliit na plano, sinubukan at binalikan. Ano ang iyong unang hakbang?",
+      "start_ms": 64380,
+      "end_ms": 81180
+    }
+  ]
+}

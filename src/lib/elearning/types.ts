@@ -49,6 +49,7 @@ export type LessonAsset = {
 export type LessonAssetVideo = {
   path: string; content_hash: string; duration_s: number;
   captions?: { path: string; content_hash: string };
+  poster?: { path: string; content_hash: string };
 };
 export type LessonConceptCoverage = { id: string; read_ids: string[]; slide_ids: string[]; source_ids: string[] };
 export type CourseLessonRevision = {

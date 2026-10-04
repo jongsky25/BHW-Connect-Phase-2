@@ -235,6 +235,12 @@ export function ReferenceLessons(props: Props) {
           }
       : lesson?.lesson_key === "uhc-local-system"
         ? { src: "/training/bhw-1-2/local-system-observation-13c689fa5226.png", alt: ui("Tinatalakay nina BHW Vlanche, Mang Ernesto at ng midwife ang paulit-ulit na tanong ng mga residente gamit ang blangkong tala sa BHS.", "BHW Vlanche, Mang Ernesto and the midwife discuss recurring resident questions using a blank note at the BHS."), caption: ui("Obserbasyon · mensahe · follow-up", "Observation · message · follow-up") }
+      : lesson?.lesson_key === "uhc-improvement"
+        ? {
+            src: "/training/bhw-1-2/improvement-planning-f1afe0f4a1e5.png",
+            alt: ui("Inaayos ni BHW Vlanche ang tatlong blangkong card kasama ang midwife at si Mang Ernesto para sa isang maliit na plano.", "BHW Vlanche arranges three blank cards with the midwife and Mang Ernesto for a small plan."),
+            caption: ui("Isang maliit na plano, pinag-uusapan", "One small plan, discussed together"),
+          }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
