@@ -61,7 +61,12 @@ if (!process.argv.includes("--apply")) {
     mkdirSync(out, { recursive: true });
     writeFileSync(path.join(out, `narration-${language}.mp3`), rendered.audioBytes);
     writeFileSync(path.join(out, `narration-${language}.json`), JSON.stringify({ language, provider: "gemini", model: GEMINI_TTS_MODEL, voice: GEMINI_VOICE,
-      script_hash: hash(JSON.stringify(zones)), durationSeconds: Number(durationSeconds.toFixed(3)), beats: rendered.timings }, null, 2) + "\n");
+      delivery_style: styles[language], audio_sha256: hash(rendered.audioBytes), script_hash: hash(JSON.stringify(zones)), durationSeconds: Number(durationSeconds.toFixed(3)), beats: rendered.timings }, null, 2) + "\n");
+    // Fresh story audio always requires a fresh video, even when only delivery changed.
+    delete media.video;
+    delete media.poster;
+    delete media.story_content_hash;
+    writeFileSync(mediaFile, JSON.stringify(media, null, 2) + "\n");
     console.log(`Story ${language}: ${durationSeconds.toFixed(1)} s, ${rendered.timings.length} beats`);
   }
   buildLessonPilot(language);
