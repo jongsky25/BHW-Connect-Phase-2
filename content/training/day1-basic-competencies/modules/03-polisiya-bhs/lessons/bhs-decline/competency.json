@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
-      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
-      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "observable_fil": "1. Gumagamit ng magalang na tono at malinaw na tinutukoy ang hindi tatanggapin, ipapaskil o ipamimigay. 2. Itinutugma ang dahilan sa formula o prescription samples at inuulit ang hangganan nang walang workaround o pangakong exception. 3. Nagbibigay ng factual na handover sa natiyak na namamahala, kasama ang sariling tugon, walang datos ng pasyente.",
+      "observable_en": "1. Uses a respectful tone and explicitly names what will not be accepted, displayed or distributed. 2. Matches the reason to formula or prescription samples and repeats the boundary without a workaround or promised exception. 3. Gives a factual handover to the confirmed supervisor, including their response, without patient data.",
+      "not_yet_fil": "1. Malabo ang pagtanggi o tinatanggap pa rin ang mga bagay. 2. Maling polisiya ang gamit o pumapayag sa alternatibong promosyon. 3. Walang pag-ulat o haka-haka at personal na datos ang ulat.",
+      "not_yet_en": "1. Refusal is ambiguous or the items are still accepted. 2. Uses the wrong policy or agrees to alternative promotion. 3. Omits reporting or includes speculation and patient data.",
       "levels": {
-        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
-        "kaya_na_en": "Accurate explanation and action without prompting.",
-        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
-        "kailangan_practice_en": "Correct direction but needs guidance on details.",
-        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
-        "hindi_pa_en": "Explanation or action is not yet appropriate."
+        "kaya_na_fil": "Naipapakita ang tatlong kilos nang walang prompt: malinaw na pagtanggi, tamang dahilan/matatag na hangganan, factual na ulat.",
+        "kaya_na_en": "Demonstrates all three without prompting: clear refusal, accurate reason/firm boundary, factual report.",
+        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng prompt sa isa o higit pang kilos.",
+        "kailangan_practice_en": "Correct direction but needs a prompt for one or more actions.",
+        "hindi_pa_fil": "Tumatanggap, may workaround, maling dahilan, o walang factual na ulat.",
+        "hindi_pa_en": "Accepts, arranges a workaround, gives a wrong reason, or omits factual reporting."
       }
     }
   ]

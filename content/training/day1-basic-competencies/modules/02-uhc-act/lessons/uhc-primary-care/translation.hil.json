@@ -1,7 +1,7 @@
 {
   "language": "hil",
   "label": "Hiligaynon (Ilonggo)",
-  "review_status": "draft",
+  "review_status": "approved",
   "lesson_key": "uhc-primary-care",
   "title": "Primary care kag referral",
   "objectives": [
@@ -231,5 +231,15 @@
     "Wika ng aralin": "Pinulongan sang leksiyon",
     "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
     "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-04",
+    "timezone": "Asia/Manila",
+    "scope": "Lesson 1.2.2 prepared translations, reading narration, story, captions and poster",
+    "approval": "approved content for 1.2.1 to 1.2.4. merge one by one and deploy live one by one.",
+    "reviewed_head": "e3e016b8566fc735cd0c85ad0e034d6231a2a358",
+    "independent_native_speaker_certification": false,
+    "independent_sme_approval": false,
+    "release_animation_verification": "Every composition, poster, size-budget check and artifact; four render jobs."
   }
 }

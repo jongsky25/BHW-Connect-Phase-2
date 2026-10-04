@@ -1,0 +1,1159 @@
+{
+  "method": "Decoded PCM per-zone signal and exact committed bytes; not human listening",
+  "read": [
+    {
+      "lesson": "bhs-resources",
+      "section": "check-before-change",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/check-before-change.en.fc4c079fd46f.mp3",
+      "sha256": "afcde707b745e4c9e8b12af72e2cc81e09245cb5d26ea658324a6127af37f650",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 64.653,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2240,
+          "rms_dbfs": -15.17,
+          "peak_dbfs": -0.67
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2540,
+          "end_ms": 10580,
+          "rms_dbfs": -19.06,
+          "peak_dbfs": -2.39
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10880,
+          "end_ms": 13160,
+          "rms_dbfs": -20.64,
+          "peak_dbfs": -3.49
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13460,
+          "end_ms": 17300,
+          "rms_dbfs": -18.18,
+          "peak_dbfs": -3.17
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 17600,
+          "end_ms": 25400,
+          "rms_dbfs": -16.85,
+          "peak_dbfs": -1.46
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 25700,
+          "end_ms": 33020,
+          "rms_dbfs": -16.85,
+          "peak_dbfs": -1.91
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 33320,
+          "end_ms": 38880,
+          "rms_dbfs": -16.58,
+          "peak_dbfs": -1.43
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 39180,
+          "end_ms": 43740,
+          "rms_dbfs": -18.02,
+          "peak_dbfs": -1.24
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 44040,
+          "end_ms": 50080,
+          "rms_dbfs": -16.42,
+          "peak_dbfs": -1.35
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 50380,
+          "end_ms": 58620,
+          "rms_dbfs": -17.72,
+          "peak_dbfs": -0.8
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 58920,
+          "end_ms": 64600,
+          "rms_dbfs": -19.91,
+          "peak_dbfs": -3.37
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "check-before-change",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/check-before-change.fil.6b5081767a81.mp3",
+      "sha256": "7a1b569ac3b9bc75dac43f1f28ac0184bd7645d4cf4ba756982a55a1b8d8fba4",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 68.075,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2720,
+          "rms_dbfs": -19.19,
+          "peak_dbfs": -3.45
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3020,
+          "end_ms": 11100,
+          "rms_dbfs": -16.74,
+          "peak_dbfs": -1.13
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 11400,
+          "end_ms": 13400,
+          "rms_dbfs": -15.82,
+          "peak_dbfs": -1.67
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13700,
+          "end_ms": 18940,
+          "rms_dbfs": -17.9,
+          "peak_dbfs": -2.63
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19240,
+          "end_ms": 26160,
+          "rms_dbfs": -17.37,
+          "peak_dbfs": -1.17
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26460,
+          "end_ms": 34620,
+          "rms_dbfs": -17.55,
+          "peak_dbfs": -2.51
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 34920,
+          "end_ms": 40840,
+          "rms_dbfs": -16.3,
+          "peak_dbfs": -1.19
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 41140,
+          "end_ms": 45140,
+          "rms_dbfs": -18.41,
+          "peak_dbfs": -1.9
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 45440,
+          "end_ms": 52520,
+          "rms_dbfs": -16.11,
+          "peak_dbfs": -1.7
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 52820,
+          "end_ms": 61860,
+          "rms_dbfs": -18.51,
+          "peak_dbfs": -2.39
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 62160,
+          "end_ms": 68000,
+          "rms_dbfs": -17.78,
+          "peak_dbfs": -1.86
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "know-responsibilities",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/know-responsibilities.en.eaa7226fc3db.mp3",
+      "sha256": "05a60cd8116d0d5d282f5c699b7b2b292a0c13e77994243da426111b04109c57",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 54.988,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3560,
+          "rms_dbfs": -20.17,
+          "peak_dbfs": -3.86
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3860,
+          "end_ms": 9460,
+          "rms_dbfs": -17.68,
+          "peak_dbfs": -2.49
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9760,
+          "end_ms": 16760,
+          "rms_dbfs": -16.61,
+          "peak_dbfs": -0.86
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 17060,
+          "end_ms": 22180,
+          "rms_dbfs": -16.7,
+          "peak_dbfs": -0.7
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 22480,
+          "end_ms": 35920,
+          "rms_dbfs": -16.44,
+          "peak_dbfs": -1.26
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 36220,
+          "end_ms": 41340,
+          "rms_dbfs": -19.14,
+          "peak_dbfs": -1.66
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 41640,
+          "end_ms": 46640,
+          "rms_dbfs": -16.96,
+          "peak_dbfs": -0.89
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 46940,
+          "end_ms": 51300,
+          "rms_dbfs": -19.27,
+          "peak_dbfs": -2.62
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 51600,
+          "end_ms": 54920,
+          "rms_dbfs": -16.17,
+          "peak_dbfs": -1.67
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "know-responsibilities",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/know-responsibilities.fil.70009ede4d3b.mp3",
+      "sha256": "fd2153c49df65f4b1ebf0a8d48a2d1f90ea6f8c059befa8f2369eba24a5b177c",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 58.384,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3640,
+          "rms_dbfs": -16.51,
+          "peak_dbfs": -1.71
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3940,
+          "end_ms": 8700,
+          "rms_dbfs": -16.92,
+          "peak_dbfs": -2.79
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9000,
+          "end_ms": 16520,
+          "rms_dbfs": -18.65,
+          "peak_dbfs": -3.43
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16820,
+          "end_ms": 22740,
+          "rms_dbfs": -15.82,
+          "peak_dbfs": -1.29
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 23040,
+          "end_ms": 37120,
+          "rms_dbfs": -17.0,
+          "peak_dbfs": -1.59
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 37420,
+          "end_ms": 42020,
+          "rms_dbfs": -17.19,
+          "peak_dbfs": -2.25
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 42320,
+          "end_ms": 48680,
+          "rms_dbfs": -19.17,
+          "peak_dbfs": -2.49
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 48980,
+          "end_ms": 53700,
+          "rms_dbfs": -18.03,
+          "peak_dbfs": -1.52
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 54000,
+          "end_ms": 58320,
+          "rms_dbfs": -15.15,
+          "peak_dbfs": -0.62
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "observe-resource-use",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/observe-resource-use.en.20a90d9e06d7.mp3",
+      "sha256": "9cf32c504eba5e9a15e24bb601ef33ab85008185fc77444c332f2d9f99787acf",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 54.491,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2360,
+          "rms_dbfs": -17.76,
+          "peak_dbfs": -1.39
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2660,
+          "end_ms": 12300,
+          "rms_dbfs": -17.61,
+          "peak_dbfs": -1.78
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 12600,
+          "end_ms": 20880,
+          "rms_dbfs": -19.14,
+          "peak_dbfs": -2.12
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 21180,
+          "end_ms": 27060,
+          "rms_dbfs": -16.33,
+          "peak_dbfs": -2.31
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 27360,
+          "end_ms": 35920,
+          "rms_dbfs": -17.38,
+          "peak_dbfs": -1.37
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 36220,
+          "end_ms": 43060,
+          "rms_dbfs": -17.89,
+          "peak_dbfs": -2.65
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 43360,
+          "end_ms": 50520,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -1.7
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 50820,
+          "end_ms": 54420,
+          "rms_dbfs": -18.87,
+          "peak_dbfs": -1.68
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "observe-resource-use",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/observe-resource-use.fil.d745e9469524.mp3",
+      "sha256": "c47ce375795c15487b8cbe17e02fc3c2e53bed6bc31dd571f7efa192ee948768",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 55.928,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 1920,
+          "rms_dbfs": -18.4,
+          "peak_dbfs": -2.59
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2220,
+          "end_ms": 14420,
+          "rms_dbfs": -17.59,
+          "peak_dbfs": -1.8
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 14720,
+          "end_ms": 21920,
+          "rms_dbfs": -18.61,
+          "peak_dbfs": -1.24
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 22220,
+          "end_ms": 26660,
+          "rms_dbfs": -18.12,
+          "peak_dbfs": -0.25
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 26960,
+          "end_ms": 34600,
+          "rms_dbfs": -15.62,
+          "peak_dbfs": -0.85
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 34900,
+          "end_ms": 43380,
+          "rms_dbfs": -18.01,
+          "peak_dbfs": -1.28
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 43680,
+          "end_ms": 50600,
+          "rms_dbfs": -17.08,
+          "peak_dbfs": -0.08
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 50900,
+          "end_ms": 55860,
+          "rms_dbfs": -18.7,
+          "peak_dbfs": -1.65
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "protect-service",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/protect-service.en.6faccbea258d.mp3",
+      "sha256": "a831b3d3d56b3090db7fc3e2d6bff7981fb58e89b2716f83b7904c0413424f1d",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 58.018,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2240,
+          "rms_dbfs": -16.05,
+          "peak_dbfs": -1.3
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2540,
+          "end_ms": 8100,
+          "rms_dbfs": -18.79,
+          "peak_dbfs": -1.11
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8400,
+          "end_ms": 11120,
+          "rms_dbfs": -17.92,
+          "peak_dbfs": -3.55
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 11420,
+          "end_ms": 19780,
+          "rms_dbfs": -18.82,
+          "peak_dbfs": -1.47
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 20080,
+          "end_ms": 29200,
+          "rms_dbfs": -17.31,
+          "peak_dbfs": -0.05
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 29500,
+          "end_ms": 39900,
+          "rms_dbfs": -17.34,
+          "peak_dbfs": -0.81
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 40200,
+          "end_ms": 48080,
+          "rms_dbfs": -18.61,
+          "peak_dbfs": -1.61
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 48380,
+          "end_ms": 53340,
+          "rms_dbfs": -16.67,
+          "peak_dbfs": -0.44
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 53640,
+          "end_ms": 57960,
+          "rms_dbfs": -16.1,
+          "peak_dbfs": -1.7
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "protect-service",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/protect-service.fil.19fa1616e5de.mp3",
+      "sha256": "7e5fceecf394a8e06fe51b644a42b36e07c66f4b896cc313fee1df8eedbaa864",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 64.104,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2920,
+          "rms_dbfs": -19.06,
+          "peak_dbfs": -1.83
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3220,
+          "end_ms": 9180,
+          "rms_dbfs": -17.52,
+          "peak_dbfs": -0.83
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9480,
+          "end_ms": 12280,
+          "rms_dbfs": -18.16,
+          "peak_dbfs": -1.58
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 12580,
+          "end_ms": 22700,
+          "rms_dbfs": -17.86,
+          "peak_dbfs": -1.25
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 23000,
+          "end_ms": 34240,
+          "rms_dbfs": -17.77,
+          "peak_dbfs": -0.98
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 34540,
+          "end_ms": 45740,
+          "rms_dbfs": -16.57,
+          "peak_dbfs": -1.76
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 46040,
+          "end_ms": 53880,
+          "rms_dbfs": -16.06,
+          "peak_dbfs": -1.37
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 54180,
+          "end_ms": 59980,
+          "rms_dbfs": -18.07,
+          "peak_dbfs": -2.24
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 60280,
+          "end_ms": 64040,
+          "rms_dbfs": -16.32,
+          "peak_dbfs": -0.77
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "resource-check",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/resource-check.en.9f200f222363.mp3",
+      "sha256": "c0682e15f22dffd69e4611f3d6a7cb1bcb10fb63e8808a42bdcdb55ed5917b51",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 33.541,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 1720,
+          "rms_dbfs": -17.64,
+          "peak_dbfs": -1.27
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2020,
+          "end_ms": 7900,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -1.74
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8200,
+          "end_ms": 12720,
+          "rms_dbfs": -19.99,
+          "peak_dbfs": -2.83
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13020,
+          "end_ms": 17180,
+          "rms_dbfs": -16.37,
+          "peak_dbfs": -0.48
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 17480,
+          "end_ms": 21400,
+          "rms_dbfs": -17.28,
+          "peak_dbfs": -1.4
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 21700,
+          "end_ms": 27900,
+          "rms_dbfs": -18.43,
+          "peak_dbfs": -1.47
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 28200,
+          "end_ms": 33480,
+          "rms_dbfs": -16.36,
+          "peak_dbfs": -0.65
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "resource-check",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/resource-check.fil.af44af166c9b.mp3",
+      "sha256": "90194ab9acb6571423da239697aa250a713dbea84ed2443ffe8f1f325af91b20",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 40.751,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3160,
+          "rms_dbfs": -18.62,
+          "peak_dbfs": -3.28
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3460,
+          "end_ms": 11020,
+          "rms_dbfs": -18.69,
+          "peak_dbfs": -2.12
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 11320,
+          "end_ms": 15600,
+          "rms_dbfs": -18.48,
+          "peak_dbfs": -2.34
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 15900,
+          "end_ms": 20300,
+          "rms_dbfs": -18.02,
+          "peak_dbfs": -1.34
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 20600,
+          "end_ms": 25720,
+          "rms_dbfs": -15.68,
+          "peak_dbfs": -1.21
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26020,
+          "end_ms": 33500,
+          "rms_dbfs": -17.3,
+          "peak_dbfs": -1.29
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 33800,
+          "end_ms": 40680,
+          "rms_dbfs": -19.32,
+          "peak_dbfs": -2.64
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "section-5",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.en.57c21804b85e.mp3",
+      "sha256": "09496782900df00b8fd76dac87ee7292c8bafb87cca24d32621627188bc00837",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 64.888,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2720,
+          "rms_dbfs": -18.78,
+          "peak_dbfs": -0.92
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3020,
+          "end_ms": 11860,
+          "rms_dbfs": -17.42,
+          "peak_dbfs": -1.02
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 12160,
+          "end_ms": 15360,
+          "rms_dbfs": -17.61,
+          "peak_dbfs": -1.39
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 15660,
+          "end_ms": 18660,
+          "rms_dbfs": -17.68,
+          "peak_dbfs": -2.85
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 18960,
+          "end_ms": 30240,
+          "rms_dbfs": -16.51,
+          "peak_dbfs": -1.36
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 30540,
+          "end_ms": 34660,
+          "rms_dbfs": -18.86,
+          "peak_dbfs": -0.94
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 34960,
+          "end_ms": 42600,
+          "rms_dbfs": -16.58,
+          "peak_dbfs": -1.71
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 42900,
+          "end_ms": 54980,
+          "rms_dbfs": -17.84,
+          "peak_dbfs": -1.16
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 55280,
+          "end_ms": 61040,
+          "rms_dbfs": -16.58,
+          "peak_dbfs": -0.02
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 61340,
+          "end_ms": 64820,
+          "rms_dbfs": -16.56,
+          "peak_dbfs": -1.49
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "section-5",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.fil.9d041a95f44c.mp3",
+      "sha256": "ca0d7bc81f4c7397d0d29e26eabffc225498bc824d7c074b766f77a1881e230d",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 68.519,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2880,
+          "rms_dbfs": -16.06,
+          "peak_dbfs": -0.82
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3180,
+          "end_ms": 12300,
+          "rms_dbfs": -18.86,
+          "peak_dbfs": -1.35
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 12600,
+          "end_ms": 15480,
+          "rms_dbfs": -16.09,
+          "peak_dbfs": -0.97
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 15780,
+          "end_ms": 20220,
+          "rms_dbfs": -15.49,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 20520,
+          "end_ms": 31720,
+          "rms_dbfs": -19.81,
+          "peak_dbfs": -1.67
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 32020,
+          "end_ms": 35980,
+          "rms_dbfs": -18.81,
+          "peak_dbfs": -1.34
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 36280,
+          "end_ms": 44880,
+          "rms_dbfs": -16.78,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 45180,
+          "end_ms": 56700,
+          "rms_dbfs": -16.14,
+          "peak_dbfs": -1.4
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 57000,
+          "end_ms": 63120,
+          "rms_dbfs": -18.37,
+          "peak_dbfs": -1.88
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 63420,
+          "end_ms": 68460,
+          "rms_dbfs": -16.56,
+          "peak_dbfs": -2.76
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "language": "fil",
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-9483de3945f4.mp4",
+      "sha256": "9483de3945f44e1e36a5289ca4fff4e8ed864663fa17a3c8ea320b04906c4d99",
+      "bytes": 1273698,
+      "duration_seconds": 82.112,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-3/bhs-resources-gemini-fil-0a179ccb4cf1.vtt",
+      "caption_hash": "0a179ccb4cf16e8a5ecdbf8e04f65af7cbf57e85b432afcd224e0fd58a720580",
+      "decoded_duration_seconds": 82.112,
+      "zones": [
+        {
+          "zone": "notice",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 11920,
+          "rms_dbfs": -20.61,
+          "peak_dbfs": -4.95
+        },
+        {
+          "zone": "responsibility",
+          "index": 1,
+          "start_ms": 12220,
+          "end_ms": 23540,
+          "rms_dbfs": -19.0,
+          "peak_dbfs": -4.23
+        },
+        {
+          "zone": "facts",
+          "index": 2,
+          "start_ms": 23840,
+          "end_ms": 36840,
+          "rms_dbfs": -21.72,
+          "peak_dbfs": -4.43
+        },
+        {
+          "zone": "service",
+          "index": 3,
+          "start_ms": 37140,
+          "end_ms": 50140,
+          "rms_dbfs": -20.63,
+          "peak_dbfs": -4.7
+        },
+        {
+          "zone": "coordinate",
+          "index": 4,
+          "start_ms": 50440,
+          "end_ms": 63280,
+          "rms_dbfs": -21.55,
+          "peak_dbfs": -5.5
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 63580,
+          "end_ms": 80900,
+          "rms_dbfs": -20.48,
+          "peak_dbfs": -4.39
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "path": "/training/bhw-1-3/bhs-resources-gemini-en-74ab02f554cf.mp4",
+      "sha256": "74ab02f554cf953077bb8911530ec451cb43938855fbf9fefb4234379e7db9b0",
+      "bytes": 1147826,
+      "duration_seconds": 75.328,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-3/bhs-resources-gemini-en-9792ee89d386.vtt",
+      "caption_hash": "9792ee89d38646444b1e321963d52c7d0ebc5a9864f12404c1cc7fe3751ae134",
+      "decoded_duration_seconds": 75.328,
+      "zones": [
+        {
+          "zone": "notice",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 11520,
+          "rms_dbfs": -21.86,
+          "peak_dbfs": -4.79
+        },
+        {
+          "zone": "responsibility",
+          "index": 1,
+          "start_ms": 11820,
+          "end_ms": 23340,
+          "rms_dbfs": -21.13,
+          "peak_dbfs": -3.76
+        },
+        {
+          "zone": "facts",
+          "index": 2,
+          "start_ms": 23640,
+          "end_ms": 33080,
+          "rms_dbfs": -21.1,
+          "peak_dbfs": -4.22
+        },
+        {
+          "zone": "service",
+          "index": 3,
+          "start_ms": 33380,
+          "end_ms": 45420,
+          "rms_dbfs": -20.14,
+          "peak_dbfs": -4.21
+        },
+        {
+          "zone": "coordinate",
+          "index": 4,
+          "start_ms": 45720,
+          "end_ms": 58840,
+          "rms_dbfs": -20.63,
+          "peak_dbfs": -4.12
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 59140,
+          "end_ms": 74100,
+          "rms_dbfs": -21.22,
+          "peak_dbfs": -3.57
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "mimi-resource-use",
+      "path": "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png",
+      "sha256": "86ce5a9071e0416f069e74ed8d4c1fbdcf4613dd6ff9c5d4ea953a59b7a976d4",
+      "review_status": "draft"
+    },
+    {
+      "id": "bhs-resources-story",
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+      "sha256": "072d3a1c54250b9a8fdfa8b92167bc00dbc9719decb1aa1c065712948f2679c0",
+      "review_status": "draft"
+    }
+  ]
+}

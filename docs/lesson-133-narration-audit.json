@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-04",
+  "method": "Actual secure Gemini workflow, exact file hashes and authored measured zone parity; no voice inferred from filenames",
+  "current_tracks": [
+    {
+      "section": "section-4",
+      "language": "fil",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.dda983cbd882.mp3",
+      "sha256": "66fe9d0663ac5ad622ca2ed91b3412ad70af9a0fd970cb359ea571580359f6ff",
+      "zones": 12,
+      "duration_seconds": 68.728
+    },
+    {
+      "section": "section-4",
+      "language": "en",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.d072d01cdd2c.mp3",
+      "sha256": "2623ce414c7e32f986d6a0bf3bc46912ed15492259704e3ae1c20625a156d7ab",
+      "zones": 11,
+      "duration_seconds": 60.813
+    },
+    {
+      "section": "match-policy",
+      "language": "fil",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/match-policy.fil.2ded5507efc7.mp3",
+      "sha256": "f34e118f999698b87223e0e7c51579c4b86e7be7a894afd5bfdebc984357ab03",
+      "zones": 11,
+      "duration_seconds": 80.744
+    },
+    {
+      "section": "match-policy",
+      "language": "en",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/match-policy.en.cf0493403f5d.mp3",
+      "sha256": "933ee842dc39c3f85cd496f789715edf306781f736b5e67190826b6b55f1829d",
+      "zones": 11,
+      "duration_seconds": 75.624
+    },
+    {
+      "section": "hold-boundary",
+      "language": "fil",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/hold-boundary.fil.54fbfa1d34b6.mp3",
+      "sha256": "7f2f69bcb3f683178d2f0cc9178a5b565f6565f95bbb81a06e4b991a02a15653",
+      "zones": 12,
+      "duration_seconds": 63.974
+    },
+    {
+      "section": "hold-boundary",
+      "language": "en",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/hold-boundary.en.97ec7a9d2b44.mp3",
+      "sha256": "edad1c6b97b874669900b2b8f4a9cde29bc531c3fc33acf023a4d35d90341c5b",
+      "zones": 12,
+      "duration_seconds": 59.324
+    },
+    {
+      "section": "report-facts",
+      "language": "fil",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/report-facts.fil.5fffc6a0fd04.mp3",
+      "sha256": "57c28e65eeef075a09d6aa8ccb106ec04cb212cedb1759426b674e8f136d6eb5",
+      "zones": 12,
+      "duration_seconds": 75.128
+    },
+    {
+      "section": "report-facts",
+      "language": "en",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/report-facts.en.fabcb91ce467.mp3",
+      "sha256": "6391b8a46f548bf68ff118e4361bd0f3d0cb3d3a0447bf6bf3660e934bba1fea",
+      "zones": 12,
+      "duration_seconds": 64.679
+    },
+    {
+      "section": "section-7",
+      "language": "fil",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.3e2046bba5f6.mp3",
+      "sha256": "92102df83248bfb97d856e9418126221694db256e61bba6397d71b17362d4746",
+      "zones": 10,
+      "duration_seconds": 63.478
+    },
+    {
+      "section": "section-7",
+      "language": "en",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.611351ff6c6b.mp3",
+      "sha256": "7c73b0730e338c0ae98710b8b04ca142c380618086dac261ac3095afbf919949",
+      "zones": 10,
+      "duration_seconds": 58.802
+    },
+    {
+      "section": "refusal-check",
+      "language": "fil",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/refusal-check.fil.81dd6a33a4c6.mp3",
+      "sha256": "03a45390826c864550d125894fedf6942678ebb7e2deb9096c244aaf7b084d8f",
+      "zones": 7,
+      "duration_seconds": 40.229
+    },
+    {
+      "section": "refusal-check",
+      "language": "en",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/refusal-check.en.5a4d0e0de768.mp3",
+      "sha256": "1ee3a4b2e566e7ed31d3218c38c949880e247b833c2f39000cf273daf5e23c64",
+      "zones": 7,
+      "duration_seconds": 33.254
+    }
+  ],
+  "current_sibling_entries": "Identical to released main",
+  "history": "All tracked historical files retained; old published Corazon text selects matching historical recordings. Older Mimi drafts also retained.",
+  "explicit_and_default_plan": "Twelve current tracks, zero render",
+  "provider_style_copy_edit_regression": "Passed"
+}
