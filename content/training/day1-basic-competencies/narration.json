@@ -81733,224 +81733,745 @@
     "uhc-improvement": {
       "module": "02-uhc-act",
       "sections": {
+        "improvement-check": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-check.en.05b62ca458cd.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "05b62ca458cd3544af964e2f682cd10b54bd2c75f4705ae957fa0341ca93f552",
+            "sha256": "64b83dc6b7a247e4cbbe7fd7f94054916b52ca4c39443fa6c9833ba80df0a574",
+            "duration_seconds": 39.576,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Choose a workable plan",
+                "start_ms": 0,
+                "end_ms": 2120
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "You have an idea to make information clearer during visits.",
+                "start_ms": 2420,
+                "end_ms": 6380
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Before starting, you need a confirmed contact and message, the right agreement, and feasible time and materials.",
+                "start_ms": 6680,
+                "end_ms": 14200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Afterwards, you need to check whether people understood it and what still needs adjustment.",
+                "start_ms": 14500,
+                "end_ms": 19820
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Choose the plan with a small first step and a clear review with the health team.",
+                "start_ms": 20120,
+                "end_ms": 25280
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "In your barangay, what is one real gap, whom should you discuss it with, and what would you clarify first?",
+                "start_ms": 25580,
+                "end_ms": 33180
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Observed → Confirmed and discussed → Small plan → Tried and reviewed.",
+                "start_ms": 33480,
+                "end_ms": 39520
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-check.fil.bc27f8772a9a.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "bc27f8772a9a4326cbfc75f30f30c71e368ca0a9fb12a7176caf6b496325f768",
+            "sha256": "1365115f24bcfd08014bd16980190eb8764cd673204db6200f541f1f58653b29",
+            "duration_seconds": 50.416,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Piliin ang maisasagawang plano",
+                "start_ms": 0,
+                "end_ms": 3080
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "May mungkahi kang gawing mas malinaw ang impormasyon sa mga pagbisita.",
+                "start_ms": 3380,
+                "end_ms": 8540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Bago magsimula, kailangan ng kumpirmadong contact at mensahe, tamang pahintulot, at kayang oras at gamit.",
+                "start_ms": 8840,
+                "end_ms": 17640
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Pagkatapos, kailangan mong malaman kung naunawaan ito at kung ano pa ang dapat ayusin.",
+                "start_ms": 17940,
+                "end_ms": 24340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Piliin ang plano na may maliit na unang hakbang at malinaw na pagbabalik sa health team.",
+                "start_ms": 24640,
+                "end_ms": 30920
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sa iyong barangay, ano ang isang totoong puwang, sino ang dapat mong kausapin, at ano ang una mong ipapalinaw?",
+                "start_ms": 31220,
+                "end_ms": 40980
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Napansin → Tiniyak at napag-usapan → Maliit na plano → Sinubukan at binalikan.",
+                "start_ms": 41280,
+                "end_ms": 50360
+              }
+            ]
+          }
+        },
+        "improvement-confirm": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-confirm.en.18f1ce3d44db.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "18f1ce3d44dbced1bd9b15a5ec80888b772898590ca6d1452762af3da9366d1b",
+            "sha256": "ffec9d5d4ba32c3ac5a201c79b74eaaaa1693b2a435d973b9e2ed467ccb7087d",
+            "duration_seconds": 40.882,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Confirm the facts and listen",
+                "start_ms": 0,
+                "end_ms": 2920
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Vlanche asks the midwife: “Who is the current contact for this kind of question?",
+                "start_ms": 3220,
+                "end_ms": 9460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Do we already have a message?”",
+                "start_ms": 9760,
+                "end_ms": 11760
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "There may be a new schedule or local policy she does not yet know about.",
+                "start_ms": 12060,
+                "end_ms": 17140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She listens to the explanation and her fellow BHW’s suggestion.",
+                "start_ms": 17440,
+                "end_ms": 22520
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "If the contact or message is unconfirmed, she holds it back and asks the responsible person to clarify it.",
+                "start_ms": 22820,
+                "end_ms": 30140
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "A BHW does not change services or policy on their own.",
+                "start_ms": 30440,
+                "end_ms": 35080
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Confirm current information and permission with the right person before acting.",
+                "start_ms": 35380,
+                "end_ms": 40820
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-confirm.fil.f1175f6f98d1.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "f1175f6f98d1d20110d065feb25ea92ec0f1192e50ab590d4071e988b6c5ee38",
+            "sha256": "a869b4313871557ba125b0c0debbc43e897797e6841d5a03d12c4134cab53e52",
+            "duration_seconds": 43.755,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Tiyakin ang datos at makinig",
+                "start_ms": 0,
+                "end_ms": 3080
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Tinanong ni Vlanche ang midwife: “Sino ang kasalukuyang contact para sa ganitong tanong?",
+                "start_ms": 3380,
+                "end_ms": 8700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May mensahe na ba tayong ginagamit?”",
+                "start_ms": 9000,
+                "end_ms": 11240
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Maaaring may bagong iskedyul o lokal na patakaran na hindi pa niya alam.",
+                "start_ms": 11540,
+                "end_ms": 16700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Pinakinggan niya ang paliwanag at mungkahi ng kapwa BHW.",
+                "start_ms": 17000,
+                "end_ms": 21800
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Kung hindi pa kumpirmado ang contact o mensahe, hindi muna niya ito ipapakalat.",
+                "start_ms": 22100,
+                "end_ms": 27620
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ipapalinaw muna sa taong may pananagutan.",
+                "start_ms": 27920,
+                "end_ms": 31120
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi binabago ng BHW ang serbisyo o patakaran sa sariling pasya.",
+                "start_ms": 31420,
+                "end_ms": 36980
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin ang kasalukuyang impormasyon at pahintulot sa tamang tao bago kumilos.",
+                "start_ms": 37280,
+                "end_ms": 43680
+              }
+            ]
+          }
+        },
+        "improvement-feedback": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-feedback.en.e8d6a3868e2d.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e8d6a3868e2d377fdbb9be580a518c16f900a4d73f92f13f9b4517d4c08bc520",
+            "sha256": "e01d9dc8010c7f0de549f160731b4cefa86a3ac05cfb71c907a3a0683a0cc0b8",
+            "duration_seconds": 39.837,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Try it and review what happened",
+                "start_ms": 0,
+                "end_ms": 2800
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "During the agreed trial, Vlanche asks after explaining: “Who would you approach with this kind of question?”",
+                "start_ms": 3100,
+                "end_ms": 10700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She notes how many people can name the correct contact and what questions remain, without personal details.",
+                "start_ms": 11000,
+                "end_ms": 17560
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "On Friday, she and the midwife review the notes and feedback.",
+                "start_ms": 17860,
+                "end_ms": 21620
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "If the message is unclear, they revise it before trying again.",
+                "start_ms": 21920,
+                "end_ms": 26320
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "A few answers are a small indicator; they do not prove that the whole system or everyone’s health has improved.",
+                "start_ms": 26620,
+                "end_ms": 33780
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Review a small indicator and feedback; adjust the plan based on what happened.",
+                "start_ms": 34080,
+                "end_ms": 39760
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-feedback.fil.d5c5bb310af9.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "d5c5bb310af92b20930e1f4393e5ee526a217ea3b9e828a7595a288351003fb3",
+            "sha256": "423e260af46871fd18287bb24e7d2e3432d2bf75ab07e082548fbc5264dbdf78",
+            "duration_seconds": 45.14,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Subukan at balikan ang nangyari",
+                "start_ms": 0,
+                "end_ms": 2680
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa napagkasunduang pagsubok, tinanong ni Vlanche pagkatapos ng paliwanag: “Sino po ang lalapitan ninyo para sa ganitong tanong?”",
+                "start_ms": 2980,
+                "end_ms": 12060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Itinala niya kung ilang nakausap ang nakapagsabi ng tamang contact at kung anong tanong ang nanatili, nang walang personal na detalye.",
+                "start_ms": 12360,
+                "end_ms": 21200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Sa Biyernes, tiningnan nila ng midwife ang tala at feedback.",
+                "start_ms": 21500,
+                "end_ms": 25900
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung hindi malinaw ang mensahe, aayusin nila ito bago muling subukan.",
+                "start_ms": 26200,
+                "end_ms": 31080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang ilang sagot ay palatandaan lamang; hindi patunay na gumanda na ang buong sistema o kalusugan ng lahat.",
+                "start_ms": 31380,
+                "end_ms": 38740
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tingnan ang maliit na palatandaan at feedback; baguhin ang plano ayon sa nakita.",
+                "start_ms": 39040,
+                "end_ms": 45080
+              }
+            ]
+          }
+        },
+        "improvement-plan": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-plan.en.7dbd3cefd3c4.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "7dbd3cefd3c46490c7652bd83e4ad61fba774cb91a854a5317127dbb253f08d8",
+            "sha256": "f11c80462e1657c1d1097c1e6b8f78bae3b6aff6a2b05f920e9bc2e9296f5aed",
+            "duration_seconds": 41.456,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Make the plan concrete",
+                "start_ms": 0,
+                "end_ms": 2240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "In this example, they agree on a plan after the midwife confirms the contact and message.",
+                "start_ms": 2540,
+                "end_ms": 7820
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Vlanche will explain it during her scheduled visits next week.",
+                "start_ms": 8120,
+                "end_ms": 11680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She will use a small guide checked by the midwife; the plan needs no new campaign or unagreed service.",
+                "start_ms": 11980,
+                "end_ms": 18740
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "On Friday, they will review questions that remain unclear.",
+                "start_ms": 19040,
+                "end_ms": 22880
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Write down the action, the responsible person and required agreement, the time and materials available, and when to review the result.",
+                "start_ms": 23180,
+                "end_ms": 32660
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "One action, clear responsibility and agreement, feasible time and materials, and a review date.",
+                "start_ms": 32960,
+                "end_ms": 41400
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-improvement/improvement-plan.fil.067c36c1f3fc.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "067c36c1f3fc7f7a424c933c9ef6381f5af0a6f60798aab31fa18103ca1dd441",
+            "sha256": "dd1fd29658cef3cfb1412a7a8f4d0e0f67724a3464da9c0ee833b1f2a9838fd8",
+            "duration_seconds": 50.338,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Gawing konkretong plano",
+                "start_ms": 0,
+                "end_ms": 2320
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa halimbawang ito, napagkasunduan nila ang plano matapos kumpirmahin ng midwife ang contact at mensahe.",
+                "start_ms": 2620,
+                "end_ms": 10740
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Si Vlanche ang magsasabi nito sa kanyang nakatakdang pagbisita sa susunod na linggo.",
+                "start_ms": 11040,
+                "end_ms": 16280
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Gagamit siya ng maliit na gabay na sinuri ng midwife; hindi kailangan ng bagong kampanya o dagdag na serbisyong hindi napagkasunduan.",
+                "start_ms": 16580,
+                "end_ms": 24860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa Biyernes, babalikan nila ang mga tanong na hindi pa malinaw.",
+                "start_ms": 25160,
+                "end_ms": 29480
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Isulat: ano ang gagawin, sino ang responsable at kailangang pumayag, anong oras at materyales ang kaya, at kailan susuriin ang resulta.",
+                "start_ms": 29780,
+                "end_ms": 40980
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Isang gawain, malinaw na pananagutan at pahintulot, kayang oras at gamit, at takdang pagbabalik.",
+                "start_ms": 41280,
+                "end_ms": 50280
+              }
+            ]
+          }
+        },
         "section-6": {
           "en": {
-            "src": "/training/audio/02-uhc-act/uhc-improvement/section-6.en.773e22124255.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "773e22124255002f9cd9bdabb32acbe7f1dddef5a89f74eee8bbc7a0be079561",
-            "sha256": "351ff519e608a9bdc8ce352d305d542474b5c5ca098995202d17f122cfd4093a",
-            "duration_seconds": 50.304,
+            "src": "/training/audio/02-uhc-act/uhc-improvement/section-6.en.b8beb8d68254.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b8beb8d68254083659e1653d4aa9c21cab72c429f05025f848e90b542de4ee60",
+            "sha256": "435816ea59a5597b3a5e1739f250d64bd8683f9332f151b7df8116a28ffd3169",
+            "duration_seconds": 40.124,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Propose it, and talk it through first",
                 "start_ms": 0,
-                "end_ms": 3336
+                "end_ms": 3280
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Now try connecting it all with BHW Vlanche.",
-                "start_ms": 3336,
-                "end_ms": 7584
+                "text": "On two visits, BHW Vlanche hears residents give different answers about whom to approach with a health station question.",
+                "start_ms": 3580,
+                "end_ms": 13260
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Have you noticed something in your own barangay that does not yet fully follow UHC's direction — for example, it is still unclear who to approach before a referral, or a resident does not yet know they are already a PhilHealth member?",
-                "start_ms": 7584,
-                "end_ms": 22152
+                "text": "“Who should I ask?”",
+                "start_ms": 13560,
+                "end_ms": 15320
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Before acting on your own, talk it through with a fellow BHW or the midwife first.",
-                "start_ms": 22152,
-                "end_ms": 28632
+                "text": "says Mang Ernesto.",
+                "start_ms": 15620,
+                "end_ms": 17260
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "There may be a reason things are still done that way, or there may be another approach you had not thought of.",
-                "start_ms": 28632,
-                "end_ms": 35688
+                "text": "Vlanche notes the question without names or personal details.",
+                "start_ms": 17560,
+                "end_ms": 22200
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "The point is not to immediately change everything — the point is to start the conversation openly.",
-                "start_ms": 35688,
-                "end_ms": 42000
+                "text": "This does not establish that the whole system is wrong.",
+                "start_ms": 22500,
+                "end_ms": 26140
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "It identifies something to clarify with a fellow BHW and the midwife before proposing a change.",
+                "start_ms": 26440,
+                "end_ms": 33600
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "A suggestion that was never discussed is unlikely to ever be carried out — it needs to pass through discussion before it becomes action.",
-                "start_ms": 42000,
-                "end_ms": 50304
+                "text": "Describe what you saw or heard; do not blame people or treat an assumption as fact.",
+                "start_ms": 33900,
+                "end_ms": 40060
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/02-uhc-act/uhc-improvement/section-6.fil.d0318258a0e8.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "d0318258a0e86964b702a510260550c70316125cf6845d735211a682646a804d",
-            "sha256": "30ce5fa2d57e24f19bb77fa33cbaa0f823b55b8562a7c20f2eb02fb02cd6edd3",
-            "duration_seconds": 49.68,
+            "src": "/training/audio/02-uhc-act/uhc-improvement/section-6.fil.48c0d9010792.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "48c0d90107927ceb7b3e2bf2893203b393697a888c1ede53860bf35c80b99f7e",
+            "sha256": "000d9f07ceed3bb373c59a5e08ff6f3bfe92a82138073d487c5ae84846602042",
+            "duration_seconds": 43.128,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Magmungkahi at pag-usapan muna",
                 "start_ms": 0,
-                "end_ms": 2808
+                "end_ms": 2720
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Ngayon, subukan mong ikonekta ang lahat kasama si BHW Vlanche.",
-                "start_ms": 2808,
-                "end_ms": 8088
+                "text": "Sa dalawang pagbisita, magkaiba ang narinig ni BHW Vlanche sa mga residente tungkol sa kung sino ang lalapitan para sa tanong sa health station.",
+                "start_ms": 3020,
+                "end_ms": 13780
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "May napansin ka bang isang bagay sa iyong barangay na hindi pa lubos na sumusunod sa direksyon ng UHC — halimbawa, hindi pa lubos malinaw kung sino ang lalapitan bago i-refer, o may residenteng hindi pa alam na kasapi na pala sila ng PhilHealth?",
-                "start_ms": 8088,
-                "end_ms": 22272
+                "text": "“Sino po ba ang dapat kong tanungin?”",
+                "start_ms": 14080,
+                "end_ms": 16600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Bago ka kumilos nang mag-isa, pag-usapan muna ito sa kapwa BHW o sa midwife.",
-                "start_ms": 22272,
-                "end_ms": 28512
+                "text": "sabi ni Mang Ernesto.",
+                "start_ms": 16900,
+                "end_ms": 18900
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Marahil may dahilan kung bakit ganoon pa rin ang takbo, o marahil may ibang paraan na hindi mo pa naisip.",
-                "start_ms": 28512,
-                "end_ms": 34776
+                "text": "Itinala ni Vlanche ang tanong nang walang pangalan o personal na detalye.",
+                "start_ms": 19200,
+                "end_ms": 24520
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Ang punto ay hindi ang agad na baguhin ang lahat — ang punto ay ang magsimulang pag-usapan ito nang bukas.",
-                "start_ms": 34776,
-                "end_ms": 41448
+                "text": "Hindi pa nito pinatutunayang mali ang buong sistema.",
+                "start_ms": 24820,
+                "end_ms": 28220
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "May puwang na dapat linawin kasama ang kapwa BHW at midwife bago magmungkahi ng pagbabago.",
+                "start_ms": 28520,
+                "end_ms": 36480
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang mungkahi na hindi napag-usapan ay malamang na hindi rin maisasakatuparan — kailangan munang dumaan sa talakayan bago sa aksyon.",
-                "start_ms": 41448,
-                "end_ms": 49680
+                "text": "Ilarawan ang nakita o narinig; huwag sisihin ang tao o gawing tiyak ang hinala.",
+                "start_ms": 36780,
+                "end_ms": 43060
               }
             ]
           }
         },
         "section-7": {
           "en": {
-            "src": "/training/audio/02-uhc-act/uhc-improvement/section-7.en.26a2bb1295a7.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "26a2bb1295a7b1005577357a303b621ebf4f77a9189cd5e1ab56d84cd806eb13",
-            "sha256": "fff0723756b0c3b21a6225d450a89e6b93cb9b58194a544b0f601c2e58106357",
-            "duration_seconds": 51.312,
+            "src": "/training/audio/02-uhc-act/uhc-improvement/section-7.en.837f838f84a9.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "837f838f84a9b1707a81b5f43bcddf3b6b4989c30a1b6f55f7c1dfb695e84b2c",
+            "sha256": "aa1cccf4a1147acab82695fe8824590f4b0061597b3f8d4075a133e7f705928f",
+            "duration_seconds": 37.172,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "The first small step",
                 "start_ms": 0,
-                "end_ms": 2184
+                "end_ms": 1840
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "With Vlanche, think again about the gap you noticed.",
-                "start_ms": 2184,
-                "end_ms": 6192
+                "text": "Vlanche proposes: “On my visits next week, could we use one short message about whom to ask?”",
+                "start_ms": 2140,
+                "end_ms": 8460
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Instead of waiting for a big change to come from above, what is one small, concrete thing you could do starting next week?",
-                "start_ms": 6192,
-                "end_ms": 14016
+                "text": "The starting point is small: one message during scheduled visits, rather than a whole campaign.",
+                "start_ms": 8760,
+                "end_ms": 15840
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "For example: if you noticed residents don't yet know they're automatically covered by PhilHealth, you could start with a short reminder on your next household visit — it doesn't need to be a full campaign right away, just a consistent mention until it becomes something everyone knows.",
-                "start_ms": 14016,
-                "end_ms": 30720
+                "text": "It is still a proposal.",
+                "start_ms": 16140,
+                "end_ms": 17860
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Big changes in a system usually start with a small change in habit — and the BHW who makes that change first, within their own reach, is the one who speeds it up for everyone else.",
-                "start_ms": 30720,
-                "end_ms": 43032
+                "text": "Before using it, she needs to confirm the information, discuss it with the midwife, and check that the task fits her role and time.",
+                "start_ms": 18160,
+                "end_ms": 27080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "The proposal may change after that discussion.",
+                "start_ms": 27380,
+                "end_ms": 30460
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "You don't need to wait for a big change from above — the small step you start today is what speeds up the change's arrival in the barangay.",
-                "start_ms": 43032,
-                "end_ms": 51312
+                "text": "Choose a small first step to discuss, rather than a change to impose alone.",
+                "start_ms": 30760,
+                "end_ms": 37120
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/02-uhc-act/uhc-improvement/section-7.fil.b59a3759c1bf.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "b59a3759c1bf98b5b91efb54037ca7f3b92fa4dbb7554d7ab6d3a26388d74216",
-            "sha256": "c5c6a555a9f996459bdbc8a1482920bb6b3a71044dff5d95f1b3271b259f033f",
-            "duration_seconds": 56.304,
+            "src": "/training/audio/02-uhc-act/uhc-improvement/section-7.fil.1223acb9c451.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "1223acb9c451b4ec8cff1e98cfb02b7e4902ace9d9fda28a23d485db6196a3bc",
+            "sha256": "4e1ddfdd0ac86a370d7e0597086f5832ec92b60dfccccfaba87b62c7dcc2ea63",
+            "duration_seconds": 46.576,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
                 "text": "Ang unang maliit na hakbang",
                 "start_ms": 0,
-                "end_ms": 2520
+                "end_ms": 2360
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Kasama si Vlanche, isipin muli ang napansin mong pagkakataon.",
-                "start_ms": 2520,
-                "end_ms": 7176
+                "text": "Mungkahi ni Vlanche: “Sa mga pagbisita ko sa susunod na linggo, maaari kaya tayong gumamit ng isang maikling mensahe tungkol sa kung sino ang tatanungin?”",
+                "start_ms": 2660,
+                "end_ms": 14540
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Sa halip na hintayin ang malaking pagbabago mula sa itaas, ano ang isang maliit, konkretong bagay na magagawa mo simula sa susunod na linggo?",
-                "start_ms": 7176,
-                "end_ms": 16104
+                "text": "Maliit ang simula: isang mensahe sa mga nakatakdang pagbisita, hindi isang buong kampanya.",
+                "start_ms": 14840,
+                "end_ms": 21960
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Halimbawa: kung napansin mong hindi pa alam ng mga residente na awtomatiko na silang saklaw ng PhilHealth, maaari kang magsimula sa isang maikling paalala sa susunod na pagbisita sa bahay-bahay — hindi kailangang buong-buong kampanya agad, kundi isang konsistenteng pagbanggit hanggang sa maging kaalaman ito ng lahat.",
-                "start_ms": 16104,
-                "end_ms": 34200
+                "text": "Panukala pa lamang ito.",
+                "start_ms": 22260,
+                "end_ms": 24500
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang malaking pagbabago sa sistema ay kadalasang nagsisimula sa maliit na pagbabago sa ugali — at ang BHW na unang gumagawa nito sa sariling saklaw ang siyang nagpapabilis dito para sa lahat.",
-                "start_ms": 34200,
-                "end_ms": 46512
+                "text": "Bago gamitin, kailangan niyang tiyakin ang impormasyon, kausapin ang midwife, at alamin kung pasok ang gawain sa kanyang papel at oras.",
+                "start_ms": 24800,
+                "end_ms": 34600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Maaaring baguhin ang mungkahi pagkatapos ng usapan.",
+                "start_ms": 34900,
+                "end_ms": 39020
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Hindi kailangang hintayin ang malaking pagbabago mula sa itaas — ang maliit na hakbang na sinimulan ngayon ang siyang nagpapabilis ng pagdating ng pagbabago sa barangay.",
-                "start_ms": 46512,
-                "end_ms": 56304
+                "text": "Pumili ng maliit na unang hakbang na pag-uusapan, hindi ng pagbabagong ipapatupad nang mag-isa.",
+                "start_ms": 39320,
+                "end_ms": 46520
               }
             ]
           }
@@ -81960,120 +82481,850 @@
     "uhc-local-system": {
       "module": "02-uhc-act",
       "sections": {
-        "section-5": {
+        "local-system-board": {
           "en": {
-            "src": "/training/audio/02-uhc-act/uhc-local-system/section-5.en.291bdad71c01.mp3",
-            "voice": "en-PH-RosaNeural",
-            "content_hash": "291bdad71c01e9453c5ea9c82cbbb78297b1d3fef58d5f59273cd6c12028f30d",
-            "sha256": "c918b7d044765572a7f9add6fac5f9814565703b4f0c50def4b4dc9392315068",
-            "duration_seconds": 68.016,
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-board.en.a84149054e3f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "a84149054e3f927443a211b892224b49f92236cfdd1a76aeb429172205537231",
+            "sha256": "c2a3dbbb3f81f5e7cb9278db94a572146ea19c6e16673f225a07ff447999d171",
+            "duration_seconds": 61.414,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "The health board and the BHW's part in moving it forward",
+                "text": "Health board and health team: distinct roles",
                 "start_ms": 0,
-                "end_ms": 4920
+                "end_ms": 4120
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "UHC also brings a new partner: the **provincial or city health board**, tasked with helping organize and manage the health system at the provincial or city level.",
-                "start_ms": 4920,
-                "end_ms": 15672
+                "text": "Under the UHC Act, Provincial and City Health Boards oversee and coordinate integration of health services into province-wide and city-wide health systems.",
+                "start_ms": 4420,
+                "end_ms": 16340
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Suggestions and concerns from the barangay can reach it, through the midwife and the municipal or city health office.",
-                "start_ms": 15672,
-                "end_ms": 23448
+                "text": "They also have duties for the Special Health Fund and supervision of facilities and health personnel within the law’s scope.",
+                "start_ms": 16640,
+                "end_ms": 24440
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Because of these changes, a higher level of skill is also expected of BHWs, and health promotion within communities is intensified.",
-                "start_ms": 23448,
-                "end_ms": 33792
+                "text": "The Local Government Code also establishes local health boards in provinces, cities and municipalities, with budget-proposal and advisory functions for the sanggunian.",
+                "start_ms": 24740,
+                "end_ms": 35300
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "This is also why BHWs were designated HEPOs — you already learned this in detail in Module 1.",
-                "start_ms": 33792,
-                "end_ms": 41712
+                "text": "Do not treat all boards as one body or assume every place follows the same process.",
+                "start_ms": 35600,
+                "end_ms": 42600
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "For BHW Vlanche, the skill this calls for is not only knowing the law: it also means spotting the chance to improve how it is carried out, and getting that suggestion to the right person — a fellow BHW, the midwife, all the way up to the health board.",
-                "start_ms": 41712,
-                "end_ms": 58680
+                "text": "A BHW does not automatically sit on or lead a board.",
+                "start_ms": 42900,
+                "end_ms": 47940
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Vlanche asks the midwife or designated health-team contact who should receive her observation and how to share it locally.",
+                "start_ms": 48240,
+                "end_ms": 56360
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "UHC does not just change the system — it also expects the BHW to contribute: observation, suggestion, and action.",
-                "start_ms": 58680,
-                "end_ms": 68016
+                "text": "Understand the board’s role; confirm the local coordination process.",
+                "start_ms": 56660,
+                "end_ms": 61340
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/02-uhc-act/uhc-local-system/section-5.fil.a4345e63e0b0.mp3",
-            "voice": "fil-PH-BlessicaNeural",
-            "content_hash": "a4345e63e0b0f1f167348ea0a18eb887901294ef6597139de053f6b29f0b0ed5",
-            "sha256": "352a98e8227159648f8c85468ff2b8261cfbf1996a999bbd81b2545ee0568138",
-            "duration_seconds": 69.36,
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-board.fil.e46ae9f828c0.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e46ae9f828c0bd7ac17501e1e04045a415f43c3245d6639810e0bf27fce8cd25",
+            "sha256": "47aca58aea30eb9566a71b807e31825e113c515076f9d635d54104fe5f36ba38",
+            "duration_seconds": 66.873,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Ang health board at ang papel ng BHW sa pagsulong",
+                "text": "Health board at health team: magkaibang papel",
                 "start_ms": 0,
-                "end_ms": 4392
+                "end_ms": 3920
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "May bagong kasosyo rin ang UHC: ang **provincial o city health board**, na naatasang tumulong mag-organisa at mamahala sa sistemang pangkalusugan sa antas ng probinsya o lungsod.",
-                "start_ms": 4392,
-                "end_ms": 15600
+                "text": "Sa UHC Act, pinangangasiwaan at pinag-uugnay ng Provincial at City Health Boards ang pagsasama ng mga serbisyong pangkalusugan sa province-wide at city-wide health systems.",
+                "start_ms": 4220,
+                "end_ms": 17540
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Maaaring umabot dito ang mga mungkahi at hinaing mula sa barangay, sa pamamagitan ng midwife at ng municipal o city health office.",
-                "start_ms": 15600,
-                "end_ms": 24264
+                "text": "May tungkulin din sila sa Special Health Fund at pangangasiwa sa mga pasilidad at health personnel sa saklaw ng batas.",
+                "start_ms": 17840,
+                "end_ms": 25640
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Dahil sa mga pagbabagong ito, inaasahan din ang mas mataas na antas ng kasanayan mula sa mga BHW, at mas pinaigting na health promotion sa komunidad.",
-                "start_ms": 24264,
-                "end_ms": 34320
+                "text": "May local health boards din sa probinsya, lungsod at munisipyo sa ilalim ng Local Government Code, na may mga tungkulin sa mungkahing budget at payo sa sanggunian.",
+                "start_ms": 25940,
+                "end_ms": 38500
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ito rin ang dahilan kung bakit itinalaga ang BHW bilang HEPO — natutunan mo na ito nang detalyado sa Modyul 1.",
-                "start_ms": 34320,
-                "end_ms": 42576
+                "text": "Hindi dapat pag-isahin ang lahat ng board o ipalagay na iisa ang lokal na proseso.",
+                "start_ms": 38800,
+                "end_ms": 45240
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Para kay BHW Vlanche, ang kakayahang kailangan dito ay hindi lang malaman ang batas: kailangan ding matukoy ang pagkakataong mapabuti pa ang pagpapatupad nito, at maipaabot ang mungkahi sa tamang tao — sa kapwa BHW, sa midwife, hanggang sa umabot sa health board.",
-                "start_ms": 42576,
-                "end_ms": 59880
+                "text": "Hindi awtomatikong kasapi o namumuno sa board ang BHW.",
+                "start_ms": 45540,
+                "end_ms": 50540
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Tatanungin ni Vlanche ang midwife o ang itinalagang health-team contact kung kanino at paano dapat ipaabot ang obserbasyon.",
+                "start_ms": 50840,
+                "end_ms": 60120
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang UHC ay hindi lang nagbabago ng sistema — inaasahan din nitong may ibahagi ang BHW: obserbasyon, mungkahi, at aksyon.",
-                "start_ms": 59880,
-                "end_ms": 69360
+                "text": "Unawain ang papel ng board; kumpirmahin ang lokal na paraan ng pakikipag-ugnayan.",
+                "start_ms": 60420,
+                "end_ms": 66820
+              }
+            ]
+          }
+        },
+        "local-system-check": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-check.en.c63caedebd45.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "c63caedebd4519d18111befc19185cc10713aa1525ecacc736008fe6b77082ce",
+            "sha256": "7e5f9a20e14fc35ae23d3ed5fe1be8c0bbfa8469e762ae22304be24fcfbd9c0c",
+            "duration_seconds": 49.894,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Your turn: what will you share?",
+                "start_ms": 0,
+                "end_ms": 2440
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Residents repeatedly ask about conflicting information they have heard about a health activity.",
+                "start_ms": 2740,
+                "end_ms": 9260
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "You have not yet confirmed the current details.",
+                "start_ms": 9560,
+                "end_ms": 12960
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "As a BHW, what is the best first response?",
+                "start_ms": 13260,
+                "end_ms": 17780
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Choose the summary and step that show a factual observation, care with personal details, and appropriate coordination.",
+                "start_ms": 18080,
+                "end_ms": 26240
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "After answering, try saying your own summary and one specific question for the health team.",
+                "start_ms": 26540,
+                "end_ms": 33140
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "The online answer checks understanding; practical skill will be observed separately during practice.",
+                "start_ms": 33440,
+                "end_ms": 40040
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "The BHW contributes observation, accurate messaging, a locally confirmed contact, and follow-up.",
+                "start_ms": 40340,
+                "end_ms": 49820
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-check.fil.b403066f01e2.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b403066f01e25ccf3f95f158d27b889386c5c21fe5f41ff387f7b4f9f9965105",
+            "sha256": "8736dcfbf15f538e125a9c60bed923f8be039e950a6157a2fe0e2bd37d795c0f",
+            "duration_seconds": 55.484,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ikaw naman: ano ang ipaaabot mo?",
+                "start_ms": 0,
+                "end_ms": 3240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "May mga residenteng paulit-ulit na nagtatanong tungkol sa magkaibang impormasyong narinig nila sa isang health activity.",
+                "start_ms": 3540,
+                "end_ms": 11860
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Hindi mo pa nakukumpirma ang kasalukuyang detalye.",
+                "start_ms": 12160,
+                "end_ms": 15800
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Bilang BHW, ano ang pinakamainam na unang tugon?",
+                "start_ms": 16100,
+                "end_ms": 21780
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Piliin ang buod at hakbang na nagpapakita ng malinaw na obserbasyon, pag-iingat sa personal na detalye, at tamang pakikipag-ugnayan.",
+                "start_ms": 22080,
+                "end_ms": 33400
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Pagkatapos sumagot, subukang sabihin ang sarili mong buod at isang tiyak na tanong sa health team.",
+                "start_ms": 33700,
+                "end_ms": 39940
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ang online na sagot ay pagsuri ng pagkaunawa; hiwalay na oobserbahan sa practice ang aktuwal na kasanayan.",
+                "start_ms": 40240,
+                "end_ms": 47640
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Obserbasyon, tumpak na mensahe, lokal na contact, at follow-up ang ambag ng BHW.",
+                "start_ms": 47940,
+                "end_ms": 55420
+              }
+            ]
+          }
+        },
+        "local-system-feedback": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-feedback.en.968e0b6c54aa.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "968e0b6c54aaa4984e38abb0dce35a9339794a83327e1d4403fda926b0bb79b4",
+            "sha256": "6c9ea1a37a423162f44bbb2480606a8a58be79c2befd9f44906682cecadba008",
+            "duration_seconds": 59.115,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Skills, suggestions and follow-up",
+                "start_ms": 0,
+                "end_ms": 3560
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "In this example, Vlanche rehearses her summary with the midwife.",
+                "start_ms": 3860,
+                "end_ms": 9340
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "The midwife helps her make the question clearer and remove assumptions.",
+                "start_ms": 9640,
+                "end_ms": 14560
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Vlanche suggests a clearer explanation using information the health team can confirm.",
+                "start_ms": 14860,
+                "end_ms": 21420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She asks: “Who can decide on this suggestion, and when and how can I learn the response?”",
+                "start_ms": 21720,
+                "end_ms": 28320
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "They discuss a locally agreed next step.",
+                "start_ms": 28620,
+                "end_ms": 32060
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "She does not promise that the suggestion is approved or has reached a board.",
+                "start_ms": 32360,
+                "end_ms": 37600
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "She will follow up with the agreed contact and share only the confirmed response with residents.",
+                "start_ms": 37900,
+                "end_ms": 43740
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "This practices identifying an opportunity, discussing an idea with others, and following an agreed change.",
+                "start_ms": 44040,
+                "end_ms": 52360
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Practice with the team, identify who can decide, and follow up on the agreed step.",
+                "start_ms": 52660,
+                "end_ms": 59060
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-feedback.fil.e43899ef0044.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e43899ef0044e0b93d75528cf0e03a98f7dfdffa081ab037f531bd5f5b766ed5",
+            "sha256": "aba72dce8d2c04ba101aed6e7b0071d3e9bbf9eae5c3c7f6c4be414de13e67eb",
+            "duration_seconds": 65.933,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Kasanayan, mungkahi at follow-up",
+                "start_ms": 0,
+                "end_ms": 4200
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa halimbawang ito, nagpraktis si Vlanche ng kanyang buod kasama ang midwife.",
+                "start_ms": 4500,
+                "end_ms": 10660
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Tinulungan siyang gawing mas malinaw ang tanong at alisin ang hinala.",
+                "start_ms": 10960,
+                "end_ms": 15360
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Iminungkahi niya ang isang mas madaling maintindihang paliwanag gamit ang impormasyong makukumpirma ng health team.",
+                "start_ms": 15660,
+                "end_ms": 22940
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Tinanong niya: “Sino po ang maaaring magpasya sa mungkahi, at kailan at paano ko malalaman ang tugon?”",
+                "start_ms": 23240,
+                "end_ms": 32200
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Napag-usapan nila ang lokal na susunod na hakbang.",
+                "start_ms": 32500,
+                "end_ms": 36020
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi niya ipinangakong aprubado na ang mungkahi o na umabot na ito sa board.",
+                "start_ms": 36320,
+                "end_ms": 41360
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Babalikan niya ang napagkasunduang contact at ipaaabot lamang sa mga residente ang nakumpirmang tugon.",
+                "start_ms": 41660,
+                "end_ms": 48340
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ito ang pagsasanay sa pagtukoy ng pagkakataon, pagtalakay ng ideya sa iba, at pagsunod sa napagkasunduang pagbabago.",
+                "start_ms": 48640,
+                "end_ms": 58360
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Magpraktis kasama ang team, alamin kung sino ang may pasya, at sundan ang napagkasunduang hakbang.",
+                "start_ms": 58660,
+                "end_ms": 65860
+              }
+            ]
+          }
+        },
+        "local-system-observation": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-observation.en.e2c1d3f988b3.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e2c1d3f988b315637fcc1cf95ca0295b39124dd0a52d37f7710719209cc45c72",
+            "sha256": "2e2006dada2601d378ca99a4c6876d5b825466f9589cffbaa29e23e89b1c0bb9",
+            "duration_seconds": 55.38,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "A clear, careful observation",
+                "start_ms": 0,
+                "end_ms": 3160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Vlanche prepares a short summary: “In conversations this week, residents have asked where to get current information about the health activity.",
+                "start_ms": 3460,
+                "end_ms": 13140
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "They have heard different information.",
+                "start_ms": 13440,
+                "end_ms": 16200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "I have not yet confirmed the correct details.”",
+                "start_ms": 16500,
+                "end_ms": 19580
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She separates what she actually heard from guesses about the cause.",
+                "start_ms": 19880,
+                "end_ms": 25240
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "This summary does not need names, diagnoses or other details that identify residents.",
+                "start_ms": 25540,
+                "end_ms": 32060
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "She does not put a private conversation in a public post.",
+                "start_ms": 32360,
+                "end_ms": 36560
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Her question to the appropriate health-team contact is specific: “Who can confirm the information, and how can I share the suggestion to make the message clearer?”",
+                "start_ms": 36860,
+                "end_ms": 47740
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Share a sufficient factual observation, protect personal details, and ask a specific question.",
+                "start_ms": 48040,
+                "end_ms": 55320
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-observation.fil.2ff9c160f94b.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "2ff9c160f94bf971aad8d9689dda780592f35694adcb6abc40d3d10853703f77",
+            "sha256": "2ac6f58f92a400bdf3f54231c7e552e0068a2167afb3d367f5adddc6fddadd3e",
+            "duration_seconds": 61.466,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Obserbasyon na malinaw at may pag-iingat",
+                "start_ms": 0,
+                "end_ms": 3040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Inihanda ni Vlanche ang isang maikling buod: “Sa mga usapan nitong linggo, may mga residenteng nagtatanong kung saan makukuha ang kasalukuyang impormasyon sa health activity.",
+                "start_ms": 3340,
+                "end_ms": 15460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Magkaiba ang impormasyong narinig nila.",
+                "start_ms": 15760,
+                "end_ms": 18480
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi ko pa nakukumpirma ang tamang detalye.”",
+                "start_ms": 18780,
+                "end_ms": 22100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Inihiwalay niya ang aktuwal na narinig sa hinala tungkol sa dahilan.",
+                "start_ms": 22400,
+                "end_ms": 27160
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Para sa buod na ito, hindi kailangan ang pangalan, diagnosis o ibang detalye na makakakilala sa residente.",
+                "start_ms": 27460,
+                "end_ms": 37020
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi niya ilalagay ang personal na usapan sa pampublikong post.",
+                "start_ms": 37320,
+                "end_ms": 41760
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Tiyak ang tanong niya sa angkop na health-team contact: “Sino po ang makapagkukumpirma ng impormasyon, at paano ko maipapasa ang mungkahing gawing mas malinaw ang mensahe?”",
+                "start_ms": 42060,
+                "end_ms": 54380
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ibahagi ang sapat na obserbasyon, protektahan ang personal na detalye, at magtanong nang tiyak.",
+                "start_ms": 54680,
+                "end_ms": 61400
+              }
+            ]
+          }
+        },
+        "local-system-promotion": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-promotion.en.69f73450044c.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "69f73450044ca5de657612a30af02312d50dff0444c96691850f3a89410d6a86",
+            "sha256": "71762d7b02623424d63cd31bca9b45d9b1555d0847b33af50bcce799ac76dbad",
+            "duration_seconds": 60.447,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Health promotion that responds to the question",
+                "start_ms": 0,
+                "end_ms": 3240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Recall Module 1: as a barangay-level Health Education and Promotion Officer, or HEPO, a BHW helps share accurate health information and encourage community participation.",
+                "start_ms": 3540,
+                "end_ms": 17220
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Intensified health promotion is one of the changes described in the manual.",
+                "start_ms": 17520,
+                "end_ms": 21920
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Instead of repeating an unconfirmed announcement, Vlanche asks the health team for current material and confirmation.",
+                "start_ms": 22220,
+                "end_ms": 31980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She uses a simple explanation suited to the residents’ questions and the language they understand.",
+                "start_ms": 32280,
+                "end_ms": 38800
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "She can say: “Let us first confirm the current information with the health team.”",
+                "start_ms": 39100,
+                "end_ms": 44620
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Once it is confirmed, she explains it, invites questions, and asks the resident to describe their understanding in their own words.",
+                "start_ms": 44920,
+                "end_ms": 54920
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Listen to the need, check the message, and check understanding.",
+                "start_ms": 55220,
+                "end_ms": 60380
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/local-system-promotion.fil.ac39546694ba.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ac39546694ba70f5093d3713b8e63284f54ca70001b60df2004b524fbe1b38ab",
+            "sha256": "6074aac64484df252214206192000c1d62bef693cc68cd1a6b233284655b6282",
+            "duration_seconds": 65.097,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Health promotion na tumutugon sa tanong",
+                "start_ms": 0,
+                "end_ms": 3080
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Balikan ang Modyul 1: bilang barangay-level Health Education and Promotion Officer o HEPO, tumutulong ang BHW na maghatid ng tamang impormasyong pangkalusugan at hikayatin ang pakikilahok ng komunidad.",
+                "start_ms": 3380,
+                "end_ms": 19100
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Mas pinaigting na health promotion ang isa sa mga pagbabagong binanggit sa manwal.",
+                "start_ms": 19400,
+                "end_ms": 24840
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Sa halip na ulitin ang hindi pa tiyak na anunsiyo, hihingi si Vlanche ng kasalukuyang materyal at kumpirmasyon sa health team.",
+                "start_ms": 25140,
+                "end_ms": 33540
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Gagamit siya ng payak na paliwanag na angkop sa mga tanong at wikang naiintindihan ng residente.",
+                "start_ms": 33840,
+                "end_ms": 40400
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Maaari niyang sabihin: “Tiyakin muna natin sa health team ang kasalukuyang impormasyon.”",
+                "start_ms": 40700,
+                "end_ms": 47380
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Kapag nakumpirma na, ipaliliwanag niya ito, mag-aanyaya ng tanong, at hihilingin sa residente na sabihin sa sariling salita ang naunawaan.",
+                "start_ms": 47680,
+                "end_ms": 58240
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Makinig sa pangangailangan, tiyakin ang mensahe, at suriin kung naunawaan.",
+                "start_ms": 58540,
+                "end_ms": 65020
+              }
+            ]
+          }
+        },
+        "section-5": {
+          "en": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/section-5.en.b5b0fa8343c4.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b5b0fa8343c4b3dd7d52b75efbd8a9be8c0b26853db1e52d9179d5c201f97190",
+            "sha256": "2f4333d1bf40abfd1b54bcedf6518d390476f68ba7a915046828b79a0bc85666",
+            "duration_seconds": 59.141,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "A recurring question in the barangay",
+                "start_ms": 0,
+                "end_ms": 2360
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "In this fictional situation, Mang Ernesto asks BHW Vlanche: “Where can we get accurate information about the barangay health activity?”",
+                "start_ms": 2660,
+                "end_ms": 12260
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Other residents are also confused by the different information they have heard.",
+                "start_ms": 12560,
+                "end_ms": 17680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Vlanche listens.",
+                "start_ms": 17980,
+                "end_ms": 20260
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She does not immediately blame anyone or announce a new policy.",
+                "start_ms": 20560,
+                "end_ms": 25680
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "She notices the recurring question and asks herself: “What have I actually observed, and who in the health team can confirm the information?”",
+                "start_ms": 25980,
+                "end_ms": 35460
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "The manual describes provincial and city health boards as partners in the local system, alongside stronger BHW skills and intensified health promotion.",
+                "start_ms": 35760,
+                "end_ms": 48120
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Vlanche will identify her own contribution and its boundaries.",
+                "start_ms": 48420,
+                "end_ms": 53300
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Listen, identify the question, and find out who can confirm the information.",
+                "start_ms": 53600,
+                "end_ms": 59080
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/02-uhc-act/uhc-local-system/section-5.fil.4578531666d0.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "4578531666d0957d98e4ca5a94c456d16c316612f1518f20335f7129626a3f4d",
+            "sha256": "ef5328807ded3158791961cb533e137fc782b8d3bc8fd9971016192d8e98a6eb",
+            "duration_seconds": 60.5,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Paulit-ulit na tanong sa barangay",
+                "start_ms": 0,
+                "end_ms": 2680
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa kathang-isip na sitwasyong ito, nagtanong si Mang Ernesto kay BHW Vlanche: “Saan po malalaman ang tamang impormasyon tungkol sa health activity sa barangay?”",
+                "start_ms": 2980,
+                "end_ms": 15020
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May iba ring residenteng nalilito sa magkaibang impormasyong narinig nila.",
+                "start_ms": 15320,
+                "end_ms": 20200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Nakinig si Vlanche.",
+                "start_ms": 20500,
+                "end_ms": 22500
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Hindi niya agad sinabi na mali ang isang tao o nagtakda ng bagong patakaran.",
+                "start_ms": 22800,
+                "end_ms": 27720
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Napansin niya ang paulit-ulit na tanong at naisip: “Ano ang malinaw kong naobserbahan, at sino sa health team ang makapagkukumpirma?”",
+                "start_ms": 28020,
+                "end_ms": 37300
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ipinapakita ng manwal na kaagapay sa lokal na sistema ang provincial at city health boards, kasabay ng mas mataas na kasanayan ng BHW at mas pinaigting na health promotion.",
+                "start_ms": 37600,
+                "end_ms": 50000
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Aalamin ni Vlanche ang sarili niyang ambag at hangganan.",
+                "start_ms": 50300,
+                "end_ms": 54100
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Makinig, tukuyin ang tanong, at alamin kung sino ang makapagkukumpirma.",
+                "start_ms": 54400,
+                "end_ms": 60440
               }
             ]
           }

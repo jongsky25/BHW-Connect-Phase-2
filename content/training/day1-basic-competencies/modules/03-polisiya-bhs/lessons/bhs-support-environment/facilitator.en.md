@@ -67,3 +67,5 @@ Checked 3 October 2026: BHW Reference Manual printed p.6 / PDF p.14; Facilitator
 DC phase starts: 1 January 2022 for DOH offices’ personnel/visitors; 1 July 2022 for health workers/personnel in government hospitals, treatment/rehabilitation centers and other health facilities; 1 January 2023 for patients/companions/other clients in those settings. Confirm current local directives. The clinical-supply boundary is a safe BHW-role safeguard, not an asserted legal exemption list. The EMB IRR PDF returned 403, so no unverified IRR-only provision is added. See docs/lesson-132-source-audit.json for retrieval limits.
 
 Mimi’s story and illustration are fictional. New media and content await owner review; no independent clinical/policy SME approval is recorded. Prior lesson 1.2.2 approval does not cover this package.
+
+Source update, 4 October 2026: the retrieved DOH-authored facilitator mirror has the policy passage on printed p.15 / PDF p.24; the repository extraction labels the same passage PDF p.22. Both were checked.

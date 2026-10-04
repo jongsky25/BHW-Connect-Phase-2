@@ -1,5 +1,8 @@
 // Companion to lesson 1.1.6; fictional environmental observation and handover.
-export type RolesApplicationBeat = {
+import cebuano from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-application/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-roles-application/translation.hil.json" with { type: "json" };
+
+type BaseRolesApplicationBeat = {
   id: string;
   fil: string;
   en: string;
@@ -9,7 +12,7 @@ export type RolesApplicationBeat = {
   detail_en: string;
 };
 
-export const ROLES_APPLICATION_BEATS: RolesApplicationBeat[] = [
+const baseBeats: BaseRolesApplicationBeat[] = [
   {
     id: "observation",
     fil: "May naipong tubig sa tatlong bakuran na napuntahan ni Riza. Tagubilin ng midwife: itala ang nakita, magtanong kung may gustong makausap ang health team, at iulat ang kailangan pang aksyon.",
@@ -65,3 +68,19 @@ export const ROLES_APPLICATION_BEATS: RolesApplicationBeat[] = [
     detail_en: "Speak your own handover. Practical assessment is separate.",
   },
 ];
+
+export type RolesApplicationBeat = BaseRolesApplicationBeat & {
+  ceb: string; title_ceb: string; detail_ceb: string;
+  hil: string; title_hil: string; detail_hil: string;
+};
+export const ROLES_APPLICATION_BEATS: RolesApplicationBeat[] = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("Lesson 1.1.6 translated story beats are misordered");
+  return { ...beat, ceb: ceb.text, title_ceb: ceb.title, detail_ceb: ceb.detail,
+    hil: hil.text, title_hil: hil.title, detail_hil: hil.detail };
+});
+export const HANDOVER_TRANSLATIONS = { ceb: cebuano.handover_cards, hil: hiligaynon.handover_cards };
+export const APPLICATION_SCENE_LABELS = { ceb: cebuano.scene_labels, hil: hiligaynon.scene_labels };
+for (const cards of Object.values(HANDOVER_TRANSLATIONS)) {
+  if (cards.labels.length !== 3 || cards.lines.length !== 3) throw new Error("Lesson 1.1.6 needs three translated handover cards");
+}

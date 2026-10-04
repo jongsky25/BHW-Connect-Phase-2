@@ -231,6 +231,12 @@ body {
   object-position: 50% 50%;
 }
 
+/* Preserve all faces in the community-observation discussion, including phones. */
+.reference-story[data-lesson="uhc-local-system"] .reference-story-art img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
 .reference-story-copy {
   align-self: center;
   min-width: 0;
@@ -611,6 +617,12 @@ body {
 /* Keep Riza and the midwife together in narrow lesson crops. */
 .reference-story[data-lesson="bhw-roles-application"] .reference-story-art img {
   object-position: 68% 45%;
+}
+
+/* Preserve the planning participants in every lesson 1.2.4 viewport. */
+.reference-story[data-lesson="uhc-improvement"] .reference-story-art img {
+  object-fit: contain;
+  object-position: 50% 50%;
 }
 
 /* Mimi: contain the full scene so every face stays visible. */

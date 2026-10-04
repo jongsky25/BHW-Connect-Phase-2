@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "4d29fd08a6f71fe6f026302ebbbd9eb0329d499a173dd26b93398375584f1929",
+  "durationSeconds": 63.843,
+  "beats": [
+    {
+      "zone": "first-contact",
+      "index": 0,
+      "text": "Nagpalapit si Aling Nena kay Riza parte sa iya anak. Bilang BHW, kabulig si Riza sang midwife sa health team.",
+      "start_ms": 0,
+      "end_ms": 8960
+    },
+    {
+      "zone": "listen",
+      "index": 1,
+      "text": "Namangkot si Riza kon ano nga bulig ang kinahanglan. Ginpamatian niya si Aling Nena kag ginklaro ang iya nahangpan, imbes mangagpas sang balatian.",
+      "start_ms": 9260,
+      "end_ms": 19980
+    },
+    {
+      "zone": "scope",
+      "index": 2,
+      "text": "Himuon lamang ni Riza ang sakop sang iya paghanas, lokal nga patakaran, kag pagdumala. Kon indi siya sigurado, magapangayo siya sang giya sa midwife.",
+      "start_ms": 20280,
+      "end_ms": 30640
+    },
+    {
+      "zone": "guide",
+      "index": 3,
+      "text": "Ginkumpirma niya ang nagakaigo nga health worker ukon pasilidad. Ginpaathag niya kon sin-o ang makaistorya kag paano makakadto didto.",
+      "start_ms": 30940,
+      "end_ms": 40660
+    },
+    {
+      "zone": "follow-up",
+      "index": 4,
+      "text": "Suno sa tagubilin sang health team, ginkumpirma ni Riza kon ano ang irekord, san-o mag-follow-up, kag kay sin-o magareport.",
+      "start_ms": 40960,
+      "end_ms": 50040
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Kon magpangayo si Aling Nena sang laygay sa bulong nga lampas sa paghanas ni Riza, magapamati siya, magapangayo sang giya, magapaathag sang masunod nga tikang, kag mag-follow-up.",
+      "start_ms": 50340,
+      "end_ms": 63780
+    }
+  ]
+}

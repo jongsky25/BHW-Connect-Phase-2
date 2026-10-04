@@ -1,0 +1,52 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "style": "Pronounce the fictional name Vlanche consistently as one syllable, vlanch, with an initial v followed by l and a final nch; never fee-lanche. Give the opening question an interested upward pitch, the proposal a hopeful lilt, the agreement clear firm emphasis, and the final reflection a thoughtful inviting cadence. Speak in natural conversational Philippine English as a warm community health storyteller. Sound curious as Mang Ernesto asks and Vlanche notices a gap, then calm and supportive during the midwife's discussion. Use purposeful changes in pitch, pace and emphasis; pause naturally at the proposal, agreement, plan and feedback. Make role boundaries clear, without sounding scolding. Keep the exact authored words; do not translate, add words or promises. Perform an expressive miniature story for fellow BHWs: an animated curious opening question, a hopeful proposal, a deliberate fact-check pause, a bright concrete plan, and a warm invitation to reflect. Smile in the voice. Use audible pitch rises and falls and varied phrase speed, avoiding a uniform instructional cadence. Keep the exact authored wording.",
+  "durationSeconds": 73.038,
+  "beats": [
+    {
+      "zone": "observed",
+      "index": 0,
+      "text": "Who should I ask? says Mang Ernesto. Vlanche heard different answers on two visits. She notes the question without names, and avoids blaming anyone.",
+      "start_ms": 0,
+      "end_ms": 10600
+    },
+    {
+      "zone": "proposal",
+      "index": 1,
+      "text": "Vlanche proposes one short message during scheduled visits next week. It is still a proposal: discuss it and confirm the information before using it.",
+      "start_ms": 10900,
+      "end_ms": 20820
+    },
+    {
+      "zone": "confirm",
+      "index": 2,
+      "text": "She asks the midwife about the current contact, message and policy, and listens. She holds back unconfirmed information and does not change services on her own.",
+      "start_ms": 21120,
+      "end_ms": 32520
+    },
+    {
+      "zone": "plan",
+      "index": 3,
+      "text": "In the example, the message is confirmed and the plan agreed. Vlanche uses the checked guide during her visits, with feasible time and materials. They will review on Friday.",
+      "start_ms": 32820,
+      "end_ms": 44700
+    },
+    {
+      "zone": "trial",
+      "index": 4,
+      "text": "After explaining, she asks whom people would approach. She notes how many can answer and what questions remain, without personal details. This is a small indicator, not guaranteed impact.",
+      "start_ms": 45000,
+      "end_ms": 59000
+    },
+    {
+      "zone": "review",
+      "index": 5,
+      "text": "On Friday, she and the midwife review feedback and revise the message if needed. Observe, confirm and discuss, make a small plan, try and review. What is your first step?",
+      "start_ms": 59300,
+      "end_ms": 72980
+    }
+  ]
+}

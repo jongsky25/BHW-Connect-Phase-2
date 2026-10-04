@@ -1,79 +1,63 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na tukuyin ang isang bagay sa sariling barangay na hindi pa lubos na sumusunod sa direksyon ng UHC, pag-usapan muna ito sa kapwa BHW o midwife bago kumilos, at sabihin ang isang maliit at konkretong unang hakbang — may isang taong makakatuwang at isang takdang oras para balikan ang resulta.
+Makapagmungkahi ang kalahok ng isang kayang lokal na pagpapabuti: ilarawan ang napansing puwang, talakayin at tiyakin ito sa tamang contact, magkasundo sa unang hakbang sa papel ng BHW, at balikan ang maliit na palatandaan at feedback. Para ito sa workplace innovation; hindi pahintulot na baguhin ang klinikal na gawain o patakaran.
 
-## [time-materials] Oras at kagamitan
+## [time-materials] Oras at materyales
 
-- **Oras:** mga 45 minuto sa harapang sesyon — ang bahaging "Pagsasanay: magmungkahi, pag-usapan, unang hakbang" sa 3 oras na nakatakda sa gabay ng subchapter. Mga 5 minuto ang sariling pag-aaral ng aralin.
-- **Kagamitan:** isang card o kalahating papel bawat BHW na may tatlong linyang kinopya mula sa huling slide — **Isang maliit na hakbang / Isang taong makakatuwang / Isang takdang oras para balikan ang resulta**; ballpen; manila paper at marker; ang slides ng aralin (kasama ang visual na "unawain, tiyakin, at isagawa," na draft pa); ang hanay na "Hindi pa" mula sa chart ng *Primary care at referral*, kung mayroon.
+- **Oras:** 45 minuto para sa umiiral na ehersisyo sa module plan, hindi dagdag na training allocation. 45 minuto ang kabuuan ng mungkahing sequence; mga 7 minuto ang self-study.
+- **Materyales:** tatlong blangkong card o papel na may **Napansin / Napagkasunduang gawain / Pagbabalik**; panulat; anim na slide; kasalukuyang lokal na contact/mensahe kung kumpirmado. Opsyonal ang video. Walang pangalan o detalye ng kalusugan ng residente.
 
 ## [prepare] Paghahanda
 
-- Basahin ang aralin sa Read at Slides. Dalawa ang seksyon: "Magmungkahi at pag-usapan muna" at "Ang unang maliit na hakbang."
-- Alamin kung kailan available ang midwife. Kung makadadalo siya sa bahaging ito ng sesyon, imbitahan siyang makinig sa mga mungkahi — nagiging totoo ang hakbang na "pag-usapan muna."
-- Dalhin ang listahang "Hindi pa" mula sa mga naunang aralin para hindi magsimula sa wala ang mga BHW.
-- Saklaw: hindi ito ang lugar para aprubahan o baguhin ang isang proseso. Dapat nasa sariling abot at pagsasanay ng BHW ang mga hakbang; anumang may kinalaman sa klinikal na pangangalaga, tuntunin sa referral, o patakaran ay dadaan sa midwife. Huwag mangakong aabot o tatanggapin ng health board ang isang mungkahi.
+Basahin ang dalawang wika at feedback sa check. Tiyakin kung sino ang makapagpapatunay ng impormasyon at makapagbibigay ng pahintulot sa gawain, ang kayang oras/gamit, at umiiral na mensahe o patakaran. Kung wala ang contact, panukala na may tanong pang dapat tiyakin ang resulta, hindi pahintulot na kumilos. Pantulong sa pagkatuto ang blangkong card sa larawan. Maaaring anyayahan ang midwife; hindi makapagbibigay ng tunay na pahintulot ang kaparehang gumaganap bilang midwife.
 
-## [opening] Pambungad
+## [opening] Panimula
 
-Sa kasunod na kuwento, pinag-iisipan ni BHW Vlanche ang isang maliit na pagpapabuting maaari niyang talakayin sa health team.
-
-Itanong sa grupo: *"May naisip na ba kayong ideya sa trabaho na hindi natuloy? Ano ang pumigil dito?"* Kumuha ng dalawa o tatlong sagot. Pakinggan ang mga sagot na gaya ng "hindi ko sinabi kahit kanino" o "sinubukan kong gawin lahat nang sabay" — babalikan mo ang mga ito sa hakbang 2 at 3.
+Gamitin ang unang screen nina Vlanche at Ernesto. Itanong: “Ano ang narinig niya, at ano pa ang hinala?” Inaasahan: magkaibang sagot kung sino ang tatanungin; hindi nito pinatutunayang mali ang buong serbisyo. Humingi ng lokal na halimbawang walang personal na detalye at paninisi.
 
 ## [steps] Mga hakbang
 
-1. **Pumili ng isang napansin (Read "Magmungkahi at pag-usapan muna," slide na may parehong pamagat).** Itanong: *"May napansin ba kayong isang bagay sa barangay n'yo na hindi pa lubos na sumusunod sa direksyon ng UHC?"* Ibigay ang dalawang halimbawa ng aralin kung nahihirapan sila: hindi pa lubos malinaw kung sino ang lalapitan bago i-refer, o may residenteng hindi pa alam na kasapi na pala sila ng PhilHealth. Isusulat ng bawat BHW ang isang napansin sa itaas ng kanilang card.
-2. **Pag-usapan muna.** Basahin: "Bago ka kumilos nang mag-isa, pag-usapan muna ito sa kapwa BHW o sa midwife." Magkapares, bigyan ang bawat BHW ng mga 5 minuto para pag-usapan ang napansin nila bago sila hingan ng hakbang. Itatanong ng kapares: *"Bakit kaya ganoon pa rin ang takbo?"* Ituro ang linya sa slide: "Makinig bago baguhin ang proseso."
-3. **Ang unang maliit na hakbang (Read "Ang unang maliit na hakbang," slide na may parehong pamagat).** Itanong nang eksakto ang tanong ng aralin: *"Sa halip na hintayin ang malaking pagbabago mula sa itaas, ano ang isang maliit, konkretong bagay na magagawa mo simula sa susunod na linggo?"* Gamitin ang halimbawa ng aralin: maikling paalala sa susunod na pagbisita sa bahay-bahay na awtomatiko na silang saklaw ng PhilHealth — hindi buong kampanya, kundi konsistenteng pagbanggit.
-4. **Isang hakbang, isang tao, isang oras.** Pupunan ng bawat BHW ang tatlong linya sa card. Umikot at itanong sa sinumang malaki ang hakbang: *"Aling bahagi niyan ang kaya mong gawin sa susunod na linggo, ikaw mismo?"*
-5. **Self-check.** Itanong ang *"Aling mungkahi ang maisasagawa?"* at hayaang mag-usap ang grupo bago ibigay ang sagot.
+1. **Napansin (5 minuto):** ilarawan ang isang pangyayari o paulit-ulit na tanong. Ihiwalay ang ebidensya sa hindi pa kumpirmadong paliwanag.
+2. **Mungkahi (5 minuto):** pumili ng unang hakbang na kaya sa susunod na linggo. Itanong kung bakit kaya ito at kaninong pahintulot ang kailangan.
+3. **Tiyakin at talakayin (7 minuto):** itanong ng kapareha ang kasalukuyang contact, umiiral na mensahe/patakaran at pahintulot. Itala ang hindi pa tiyak; makinig at baguhin ang panukala.
+4. **Plano (8 minuto):** tukuyin ang gawain, responsable, kailangang pumayag, oras/gamit, petsa at maliit na palatandaang babalikan. Gamitin ang mensahe sa susunod na linggo at pagbabalik sa Biyernes. Huwag magpalagay ng dagdag na serbisyo o badyet.
+5. **Role-play at pagsasaayos (15 minuto):** gawin ang practice, magpalit ng papel, at baguhin ang bawat plano ayon sa feedback. Obserbahan ang pamantayan, pati ang tugon kung wala ang contact.
+6. **Paglalapat at pag-alala (5 minuto):** sagutin ang huling check, ipaliwanag ang kakulangan ng bawat opsyon, at alalahanin ang mga hakbang. Magkahiwalay ang online completion at obserbasyon ng kasanayan.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot at tugon
 
-- **Malaking plano ("Aayusin ko ang buong referral system").** Tanggapin ang sigla, saka paliitin: *"Ano ang unang piraso na kaya mong gawin sa susunod na linggo, sa sarili mong abot?"*
-- **Reklamo ("Wala namang sinasabi sa amin ang RHU").** Kilalanin ang pagkadismaya. Saka gawing mungkahi: *"Ano mismo ang hihilingin mo sa midwife?"*
-- **"Trabaho iyan ng mga opisyal, hindi namin."** Balikan ang salita ng aralin: hindi kailangang hintayin ang malaking pagbabago mula sa itaas — ang maliit na hakbang na sinimulan ngayon ang nagpapabilis ng pagbabago.
-- **Malabong hakbang ("Sasabihan ko ang mga tao").** Itanong: *"Sinong mga tao? Kailan? Saan?"* hanggang maging tulad ng "sa pagbisita ko sa bahay-bahay sa susunod na linggo."
-- **Hakbang na lampas sa papel ng BHW.** Sabihing magandang ideya itong dalhin muna sa midwife, at tulungan silang hanapin ang bahaging sila ang gagawa.
+- **“Dalawang contact ang narinig ko.”** Obserbasyong dapat tiyakin; itanong kung may iskedyul o umiiral na kaayusang nagpapaliwanag dito.
+- **“Sasabihin ko sa lahat bukas.”** Sino ang nagkumpirma ng mensahe at pahintulot? Huwag muna ipakalat ang hindi tiyak.
+- **“Pagbubutihin ko ang lahat.”** Humingi ng isang gawain sa susunod na linggo, responsable, oras/gamit at pagbabalik.
+- **“Wala ang contact.”** Isulat ang tiyak na tanong at ayusin ang kumpirmasyon; hindi pahintulot ang plano sa klase.
+- **“Nasabi ang contact, kaya maayos na ang buong sistema.”** Maliit na palatandaan ito ng pag-unawa. Balikan ang tanong at huwag mag-angkin ng malawak na epekto.
 
 ## [misconception] Karaniwang maling akala
 
-**"Hindi mahalaga ang pagpapabuti kung hindi ito malaki."** Madalas maliitin ng BHW ang sariling ideya dahil maliit ito, o maghintay sila ng pagbabago mula sa itaas. Itama ito nang hindi napapahiya ang sinuman sa pamamagitan ng pagbasa nang malakas sa halimbawa ng aralin — maikli at konsistenteng paalala sa pagbisita sa bahay-bahay — at itanong: *"Makatutulong kaya ito kay Mang Ernesto?"* Saka basahin: "Ang malaking pagbabago sa sistema ay kadalasang nagsisimula sa maliit na pagbabago sa ugali." Mas may halaga ang maliit na hakbang na talagang nagawa kaysa sa malaking planong hindi nasimulan.
+“Masyadong maliit ang pagpapabuti, kaya dapat baguhin ko agad ang proseso.” Maaaring makatulong ang tiyak at lokal na napagkasunduang gawain. Kailangan pa rin ng tamang impormasyon, pahintulot at feedback kahit maliit ito. Hindi binabago ng BHW ang serbisyo o patakaran nang mag-isa.
 
-## [practice] Gawaing pagsasanay
+## [practice] Praktikal na gawain
 
-Ipiprisinta ng bawat BHW ang kanyang card sa kapares na gaganap bilang midwife, sa loob ng 2 minuto: ang napansin, ang mungkahi, ang unang maliit na hakbang, sino ang makakatuwang, at kailan babalikan ang resulta. Magbibigay ang "midwife" ng isang puna o isang posibleng dahilan kung bakit ganoon pa rin ang takbo. Sasagot ang BHW at saka ibubuod sa isang pangungusap kung ano ang napagkasunduan. Magpalit. Dalawa o tatlong BHW ang magpiprisinta ng card sa buong grupo. Itatago ng bawat BHW ang card para iulat sa susunod na sesyon.
+Sa pares, pumili ng tunay na lokal na puwang na walang personal na detalye. Sa dalawang minuto, ilahad ng BHW ang obserbasyon, hindi pa tiyak, tamang contact, unang gawain, pahintulot, oras/gamit, petsa at palatandaang babalikan. Gaganap ang kapareha bilang midwife at magdadagdag ng limitasyon: kailangang suriin ang umiiral na mensahe, walang dagdag na badyet sa pag-print, o wala ang responsableng contact. Tutugon ang BHW, babaguhin ang plano, at sasabihin kung ano ang maaaring ituloy at ano ang dapat maghintay ng tunay na kumpirmasyon. Magpalit ng papel. Dalhin ang card sa tunay na responsableng contact; walang tunay na pahintulot mula sa role-play.
 
 ## [answer-key] Susi sa self-check
 
-Iisa ang check ng aralin. Lumalabas ito sa dulo ng Read na seksyong "Ang unang maliit na hakbang" at sa slide na may parehong pamagat; iisang tanong ito, kaya isang beses lang ito tinatalakay dito.
+Tama ang **ikalawang opsyon**. Tiyakin sa midwife ang contact/mensahe; magkasundo sa kayang pagbisita sa susunod na linggo at gamit; sa Biyernes, balikan kung masabi ng mga nakausap ang contact at anong tanong ang nanatili. Walang batayan ang pangakong benepisyo sa unang opsyon. Binabago ng ikatlo ang proseso bago magkasundo. Walang konkretong unang hakbang, responsable at pagbabalik ang ikaapat. Ipatukoy ang kulang at ipaayos ang isang opsyon.
 
-- **"Aling mungkahi ang maisasagawa?"** → **Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife.** Sinusunod nito ang dalawang seksyon: pag-usapan muna, saka magsimula sa isang maliit at konkretong hakbang.
-  - Mali ang **"Baguhin agad ang buong sistema nang walang talakayan."** sa dalawang dahilan. Sinasabi ng aralin na ang mungkahing hindi napag-usapan ay malamang na hindi maisasakatuparan, at maaaring may dahilan kung bakit ganoon pa rin ang takbo; at "ang punto ay hindi ang agad na baguhin ang lahat" — ang punto ay magsimulang pag-usapan ito nang bukas at magsimula sa maliit na hakbang.
-  - Gaya ng sinasabi ng feedback, ipaliwanag sa BHW ang dahilan gamit ang sitwasyon sa aralin.
+## [observe] Mga dapat obserbahan
 
-## [observe] Ano ang oobserbahan
+- **Kaya na:** walang prompt, inilalarawan ang ebidensya, tinitiyak ang impormasyon at pahintulot sa tamang contact, nagsasaad ng maliit na gawain, responsable, kayang oras/gamit, petsa at palatandaang babalikan, at binabago ito ayon sa feedback.
+- **Kailangan pa ng practice:** tama ang direksyon at usapan, ngunit kailangan ng prompt sa pahintulot, responsable, oras/gamit o palatandaang babalikan.
+- **Hindi pa:** nangangako ng hindi kumpirmadong benepisyo, nagpapalit ng serbisyo/patakaran nang mag-isa, o hindi makapagsabi ng konkretong unang hakbang at pagbabalik.
 
-Gamitin ang observation indicator ng aralin — *naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor* — habang ipinipresenta ang card. Dito, ang "pangunahing punto" ay ang napansin at ang mungkahi, ang "unang hakbang" ay ang maliit na hakbang, at ang "dapat tiyakin sa supervisor" ay ang una nilang pag-uusapan kasama ang midwife.
+Obserbahan ang panukala at pagbabago nito, hindi lang ang card. Hindi ebidensya ng praktikal na kasanayan ang online completion.
 
-- **Kaya na:** nang walang untag, nasasabi ng BHW ang tiyak na napansin, isang maliit na hakbang na magagawa sa susunod na linggo na may makakatuwang at oras ng pagbabalik, at kung ano ang una niyang pag-uusapan sa midwife; matapos sumagot ang "midwife," naibubuod niya ang napagkasunduan.
-- **Kailangan pa ng practice:** tama ang direksiyon, pero malabo pa ang hakbang o kulang kung sino o kailan hanggang magtanong ka.
-- **Hindi pa:** nananatili sa reklamo, o nagmumungkahing baguhin ang buong sistema nang mag-isa o nang walang anumang talakayan.
+## [support] Kung kailangan pa ng tulong
 
-Mas detalyadong inilalarawan ng mga indicator ng kakayahan ng subchapter para sa layunin 3 at 4 ang parehong kasanayan, at magagamit mo itong gabay. Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Gamitin ang tatlong card: **Napansin ko / Dapat tiyakin at gawin / Babalikan natin**. Paliitin ang gawain, sanayin ang tanong sa tunay na responsableng contact, at muling obserbahan ang plano pagkatapos ng feedback. Kung hindi pa tiyak ang pahintulot o gamit, panatilihing nakabinbin ang panukala.
 
-## [support] Kung kailangan ng dagdag na suporta
+## [sources-review] Mga sanggunian at tala sa pagsusuri
 
-- Magsimula sa sariling halimbawa ng aralin (mga residenteng hindi pa alam na kasapi sila ng PhilHealth) at sabay na punan ang card, isang linya bawat pagkakataon.
-- Kung reklamo lang ang mayroon sila, tulungan silang isulat ito bilang "Napansin ko na ___; mungkahi ko na ___" bago pumili ng hakbang.
-- Ipares sila sa BHW na **Kaya na** at hayaang sila ang pangalawang magpresenta.
-- Obserbahan muli sa susunod na sesyon sa pamamagitan ng pagpapaulat tungkol sa card: nagawa ba nila ang hakbang, ano ang sinabi ng midwife, at ano ang susunod na hakbang.
+Sinuri noong 3 Oktubre 2026: DOH Facilitator Guide printed p.14 / PDF p.21 ang tatlong workplace-innovation outcomes; printed p.12 / PDF p.19 ang UHC mapping. Para sa hiwalay na policies topic ang entrepreneurial skills sa printed p.15 / PDF p.22; hindi ito ginamit na mapping. Walang partikular na improvement activity o evaluation rubric sa p.21. Adaptasyong panturo ang 45-minutong ehersisyo at konkretong pamantayan mula sa outcomes at umiiral na module plan, hindi kinopyang DOH/TESDA assessment instrument.
 
-## [sources-review] Sanggunian at tala sa pagrepaso
-
-- Facilitator Guide p. 14 (PDF 21): ang mga TESDA learning outcome para sa *Contribute to Workplace Innovation* — identify opportunities to do things better; discuss and develop ideas with others; integrate ideas for change in the workplace — nakalista sa listahan ng sanggunian ng aralin bilang minanang page reference; hinihintay pa ang final audit. Day 1 presentation slide 15 (expected learning outcomes).
-- Oras: galing sa Facilitator Guide PDF 19 ang 3 oras ng module ("at least 3 hours" naman sa PDF 21). Panatilihin ang orihinal na kabuuang oras sa gabay ng subchapter; huwag idagdag muli ang buong oras sa bawat maikling aralin. Ang 45 minuto sa itaas ay ang sariling hanay ng talahanayan ng module para sa pagsasanay na ito. Para sa self-study ang hating ito, hindi bagong training-hour allocation.
-- Nilalaman ng aralin, hindi galing sa mga source page, ang mga halimbawa (hindi malinaw kung sino ang lalapitan bago i-refer; mga residenteng hindi alam na kasapi sila ng PhilHealth; paalala sa pagbisita sa bahay-bahay).
-- Kailangan pang repasuhin: kasalukuyang legal/policy wording, bilingual parity, at observation indicator (iisang pangkalahatang indicator ang gamit sa apat na aralin). Ihiwalay ang online completion sa aktuwal na demonstrasyon.
-
-Draft for review — draft pa ito at kailangang repasuhin bago ilathala.
+BHW Reference Manual printed pp.3–4 / PDF pp.11–12 ang papel sa edukasyon, pag-oorganisa at pag-alalay sa serbisyo; printed p.5 / PDF p.13 ang direksyon ng UHC. Nasa docs/lesson-124-source-audit.json ang aktuwal na PDF retrieval at limitasyon. Kathang-isip ang kuwento, usapan tungkol sa contact, pagsubok sa susunod na linggo at pagbabalik sa Biyernes; hindi kumpirmadong lokal na kaayusan o epekto. Inaprubahan ng may-ari ang lesson package, bagong larawan, audio at video para sa live release noong 4 Oktubre 2026; walang inaangking independent clinical/policy SME approval. Hindi binago ang immutable objectives; objective index 0 ang indicator.

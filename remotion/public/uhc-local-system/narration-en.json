@@ -1,0 +1,51 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 70.818,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Mang Ernesto asks: Where can we confirm the health activity information? Vlanche has heard the same question from other residents. First, she listens.",
+      "start_ms": 0,
+      "end_ms": 10360
+    },
+    {
+      "zone": "roles",
+      "index": 1,
+      "text": "Provincial and City Health Boards oversee UHC integration. A BHW is not automatically a member. Vlanche asks the health team for the appropriate local contact.",
+      "start_ms": 10660,
+      "end_ms": 22340
+    },
+    {
+      "zone": "observation",
+      "index": 2,
+      "text": "She summarises what she heard: a recurring question, conflicting information, and details still to confirm. The summary has no names or personal health details.",
+      "start_ms": 22640,
+      "end_ms": 35120
+    },
+    {
+      "zone": "promotion",
+      "index": 3,
+      "text": "As a barangay HEPO, Vlanche checks the message with the team. She explains it simply, invites questions, and checks the resident’s understanding.",
+      "start_ms": 35420,
+      "end_ms": 46540
+    },
+    {
+      "zone": "discussion",
+      "index": 4,
+      "text": "She practises with the midwife: Who can confirm and receive the suggestion? Who can decide? She does not promise that her idea is approved.",
+      "start_ms": 46840,
+      "end_ms": 58000
+    },
+    {
+      "zone": "feedback",
+      "index": 5,
+      "text": "They agree when and how to follow up. She will share only confirmed feedback. The BHW contributes observation, accurate messaging, coordination and follow-up.",
+      "start_ms": 58300,
+      "end_ms": 70740
+    }
+  ]
+}
