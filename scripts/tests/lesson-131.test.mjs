@@ -94,6 +94,21 @@ describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
     other[0].lessons[0].manifest.lesson_key='bhs-decline';
     expect(planReferenceNarration(other,{lessons:{}},()=>null).every(i=>i.provider==='edge')).toBe(true);
   });
+  it('selects twelve current real Gemini files with authored zone timings on default and explicit reruns',()=>{
+    const manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
+    const fileHash=src=>createHash('sha256').update(readFileSync(path.join(root,'public',src.slice(1)))).digest('hex');
+    for(const options of [{},{provider:'gemini'}]){
+      const plan=planReferenceNarration(modules,manifest,fileHash,options);
+      expect(plan).toHaveLength(12);
+      plan.forEach(item=>{
+        expect(item.action).toBe('skip');
+        expect(item.existing.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');
+        expect(item.existing.timings.map(({zone,index,text})=>({zone,index,text}))).toEqual(item.zones);
+        expect(item.existing.timings.every(t=>t.end_ms>t.start_ms)).toBe(true);
+        expect(item.existing.duration_seconds).toBeGreaterThan(20);
+      });
+    }
+  });
   it('uses original content-hashed art and retains the historical SVG',()=>{
     const art=source.assets.find(a=>a.id==='mimi-company-offer');
     const bytes=readFileSync(path.join(root,'public',art.path.slice(1)));

@@ -215,6 +215,38 @@
       "caption_en": "Recognize the offer; pause and refer to the supervisor. Draft illustration for owner review.",
       "provenance": "Original built-in imagegen illustration, generated 2026-10-03 Asia/Manila. Proposed fictional Mimi identity; no existing approved target-specific reference found on main 7ce98d68. Owner renamed the fictional character to Mimi throughout 1.3 on 2026-10-04; unchanged illustration pixels contain no name. Exact original generation prompt (character was then called Corazon): Use case: illustration-story. Asset type: original landscape educational illustration for BHW Connect lesson 1.3.1, Recognizing a company offer. Create a realistic photographic illustrative scene in warm Philippine daylight at the entrance/table of an airy, modest, unbranded barangay health station with leafy background. Fictional BHW Corazon is a Filipina woman around 50, shoulder-length straight black hair, light lavender polo, navy trousers; calm, respectful, attentive. A generic Filipino company representative in a plain beige collared shirt carries a CLOSED plain blank sample box and a rolled blank promotional sheet. Corazon is listening and gently raises one relaxed open hand to pause acceptance; she does not take the box or gift. Place a small blank gift bag beside the representative. Both adults are ordinary, respectful people, no villain caricature. Medium waist-up landscape framing, both faces within the central 60%, natural anatomically correct hands, all main props visible, useful for desktop and contained phone framing. No text, letters, logos, actual formula or medicine brands, exposed products, clinical procedure, patient, personal data, watermark or official seal. This is a proposed Corazon identity for owner review, not a previously approved character.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhs-promotions-story",
+      "alt_fil": "Kuwentong may salaysay: kinikilala ni Mimi ang alok at idinudulog sa namamahala.",
+      "alt_en": "Narrated story: Mimi recognizes the offer and refers it to the supervisor.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.3.1; original built-in imagegen illustration generated 2026-10-03, with fictional Mimi identity renamed by owner on 2026-10-04. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-8f681dc6ec46.mp4",
+          "content_hash": "8f681dc6ec46fb0622d91ccbb29f906668494ea89f2cf33273a9307591ee2372",
+          "duration_s": 82,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-c20b7e1d732e.vtt",
+            "content_hash": "c20b7e1d732e80b132ffea8baf68005382b7132d1c58f0b4b0ce95b357129ac0"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-3/bhs-promotions-gemini-en-3a44e77c4551.mp4",
+          "content_hash": "3a44e77c4551f327045a8ad00e7a8fd9fcb6fce8646eab30cf380399072b377b",
+          "duration_s": 81,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-promotions-gemini-en-69980c908c31.vtt",
+            "content_hash": "69980c908c3186289cd4e40f04fe98dd048620bb4b71f2bd077469b75a37e953"
+          }
+        }
+      },
+      "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-ae41b39cf61b-poster.jpg",
+      "content_hash": "ae41b39cf61ba8c32a3cd6cae1eff7dff5b0d3a93836f255dd39a1f7d944d82e"
     }
-  ]
+  ],
+  "featured_asset_id": "bhs-promotions-story"
 }

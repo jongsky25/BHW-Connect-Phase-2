@@ -1,0 +1,152 @@
+{
+  "generated_date": "2026-10-04T03:30:56.823Z",
+  "source_commit": "27bf5dd53392af8aeaf5191ec6db2c4992335248",
+  "owner_review": "pending",
+  "target_read_tracks": 12,
+  "rename_tracks": 6,
+  "pending_read_tracks": [
+    "bhs-decline/section-4/en"
+  ],
+  "read_generation_error": "Command failed: /opt/hostedtoolcache/node/22.23.3/x64/bin/node /home/runner/work/BHW-Connect-Phase-2/BHW-Connect-Phase-2/scripts/training-narrate.mjs --modules 03-polisiya-bhs --lessons bhs-promotions,bhs-decline,bhs-resources --provider gemini --max-requests 300 --apply",
+  "historical_audio_restored": [
+    "public/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.73e34c01d32b.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.338717f48153.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.9df7b5551c65.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-1.en.a954d19a28be.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-1.fil.8758509c59c2.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.en.755128e1ba35.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.3163de642f23.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-resources/section-5.en.cf26520623c3.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-resources/section-5.fil.23a79bbf85e6.mp3"
+  ],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 80.771,
+      "beats": [
+        {
+          "zone": "offer",
+          "index": 0,
+          "text": "May sample, poster, at regalong alok sa BHS. Tanong ni Mimi: Ano po ang produkto at kapalit? Hindi muna siya tumanggap.",
+          "start_ms": 0,
+          "end_ms": 11760
+        },
+        {
+          "zone": "policy-topics",
+          "index": 1,
+          "text": "Magkaiba ang saklaw: milk substitutes at kaugnay na produkto sa Milk Code; prescription products at medical devices sa pharmaceutical order. Tiyakin ang polisiya.",
+          "start_ms": 12060,
+          "end_ms": 24300
+        },
+        {
+          "zone": "identify",
+          "index": 2,
+          "text": "Apat ang tinitingnan ni Mimi: produkto, promosyon, lugar at kausap, at insentibo. Hindi pahintulot ang libre. Bawal ipamigay sa publiko ang prescription samples.",
+          "start_ms": 24600,
+          "end_ms": 38560
+        },
+        {
+          "zone": "pause",
+          "index": 3,
+          "text": "Sabi ni Mimi: Hindi ko po tatanggapin o ipamamahagi ito. Idudulog ko sa namamahala. Hindi siya nagpasya tungkol sa exception nang mag-isa.",
+          "start_ms": 38860,
+          "end_ms": 49500
+        },
+        {
+          "zone": "information",
+          "index": 4,
+          "text": "Aprubadong impormasyon, hindi brand endorsement, ang ginagamit ni Mimi. Factual ang ulat, walang datos ng pasyente. Huwag sisihin ang pamilya; health professional ang sasagot sa clinical questions.",
+          "start_ms": 49800,
+          "end_ms": 63360
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Regalong kapalit ng promosyon at educational model: magkaibang alok, may tuntunin. Kilalanin, huminto, at idulog. Hindi sapat ang educational label; hindi nag-aapruba nang mag-isa ang BHW.",
+          "start_ms": 63660,
+          "end_ms": 80700
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-8f681dc6ec46.mp4",
+        "content_hash": "8f681dc6ec46fb0622d91ccbb29f906668494ea89f2cf33273a9307591ee2372",
+        "duration_s": 82,
+        "captions": {
+          "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-c20b7e1d732e.vtt",
+          "content_hash": "c20b7e1d732e80b132ffea8baf68005382b7132d1c58f0b4b0ce95b357129ac0"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-3/bhs-promotions-gemini-fil-ae41b39cf61b-poster.jpg",
+        "content_hash": "ae41b39cf61ba8c32a3cd6cae1eff7dff5b0d3a93836f255dd39a1f7d944d82e"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 80.274,
+      "beats": [
+        {
+          "zone": "offer",
+          "index": 0,
+          "text": "A visitor offers samples, a poster, and a gift at the BHS. Mimi asks: What is the product and expected return? She pauses acceptance.",
+          "start_ms": 0,
+          "end_ms": 13200
+        },
+        {
+          "zone": "policy-topics",
+          "index": 1,
+          "text": "The two policies have different scopes: covered breastmilk substitutes and related products under the Milk Code; prescription products and medical devices under the pharmaceutical order.",
+          "start_ms": 13500,
+          "end_ms": 25060
+        },
+        {
+          "zone": "identify",
+          "index": 2,
+          "text": "Mimi checks four details: product, promotion, place and audience, and inducement. Free is not authorization. Prescription samples cannot be distributed to the public.",
+          "start_ms": 25360,
+          "end_ms": 39080
+        },
+        {
+          "zone": "pause",
+          "index": 3,
+          "text": "Mimi says: I will not accept or distribute these items. I will refer the details to the supervisor. She cannot approve an exception independently.",
+          "start_ms": 39380,
+          "end_ms": 49580
+        },
+        {
+          "zone": "information",
+          "index": 4,
+          "text": "Mimi uses approved information without brand endorsement. Reports contain facts, without patient data. Do not blame families; refer clinical questions to a health professional.",
+          "start_ms": 49880,
+          "end_ms": 64360
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "A promotional gift and an educational model differ. Verify the rules: recognize, pause, and refer. An educational label is insufficient; the BHW does not approve independently.",
+          "start_ms": 64660,
+          "end_ms": 80220
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-3/bhs-promotions-gemini-en-3a44e77c4551.mp4",
+        "content_hash": "3a44e77c4551f327045a8ad00e7a8fd9fcb6fce8646eab30cf380399072b377b",
+        "duration_s": 81,
+        "captions": {
+          "path": "/training/bhw-1-3/bhs-promotions-gemini-en-69980c908c31.vtt",
+          "content_hash": "69980c908c3186289cd4e40f04fe98dd048620bb4b71f2bd077469b75a37e953"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-3/bhs-promotions-gemini-en-55ecd27c596d-poster.jpg",
+        "content_hash": "55ecd27c596de61b9b915edf39507d3e67e192b5d68ee8e5d8bb11a6f015f675"
+      }
+    }
+  ]
+}

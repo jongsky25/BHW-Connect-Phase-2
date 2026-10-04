@@ -1,0 +1,41 @@
+name: Lesson 1.3.1 remaining Read and audio review
+on:
+  push:
+    branches: [codex/lesson-131-story-gemini]
+    paths:
+      - .github/workflows/lesson131-finish-read.yml
+      - scripts/lesson-131-finish-read.mjs
+      - scripts/lesson-131-audio-review.mjs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  finish-read:
+    if: github.ref == 'refs/heads/codex/lesson-131-story-gemini'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Finish current Mimi Read tracks
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-131-finish-read.mjs
+      - name: Review actual audio with Gemini, without claiming human listening
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-131-audio-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson131-read-and-review
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/03-polisiya-bhs/bhs-decline/
+            docs/lesson-131-read-completion.json
+            docs/lesson-131-audio-review.json
