@@ -287,8 +287,12 @@ export function validateReferenceLesson(
       assert(assetExists(f.path, f.content_hash), `missing asset ${f.path}`);
     };
     const checkVideo = (v, label, narrated) => {
-      fields(v, ["path", "content_hash", "duration_s", "captions"], label);
+      fields(v, ["path", "content_hash", "duration_s", "captions", "poster"], label);
       hashedFile(v, "mp4", label);
+      if (v.poster !== undefined) {
+        fields(v.poster, ["path", "content_hash"], `${label} poster`);
+        hashedFile(v.poster, "jpg", `${label} poster`);
+      }
       assert(
         Number.isInteger(v.duration_s) && v.duration_s > 0 && v.duration_s <= 90,
         "asset video duration must be 1-90 seconds",

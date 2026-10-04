@@ -623,3 +623,9 @@ body {
 .reference-story[data-lesson="bhw-roles-application"] .reference-story-art img {
   object-position: 68% 45%;
 }
+
+/* Preserve the planning participants in every lesson 1.2.4 viewport. */
+.reference-story[data-lesson="uhc-improvement"] .reference-story-art img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}

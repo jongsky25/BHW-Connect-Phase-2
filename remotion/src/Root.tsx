@@ -1,6 +1,7 @@
 import {BhsPromotionsStory, calculateBhsPromotionsMetadata, BHS_PROMOTIONS_FPS, BHS_PROMOTIONS_FALLBACK_DURATION} from "./bhs-promotions/BhsPromotionsStory";
 import {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from "./uhc-local-system/LocalSystemStory";
 import "./index.css";
+import { ImprovementStory, calculateImprovementMetadata, UHC_IMPROVEMENT_FPS, UHC_IMPROVEMENT_FALLBACK_DURATION } from "./uhc-improvement/ImprovementStory";
 import { RolesApplicationStory, calculateRolesApplicationMetadata, ROLES_APPLICATION_FPS, ROLES_APPLICATION_FALLBACK_DURATION } from "./roles-application/RolesApplicationStory";
 import { Composition } from "remotion";
 import {
@@ -253,6 +254,12 @@ export const RemotionRoot: React.FC = () => {
           component={BhsPromotionsStory} calculateMetadata={calculateBhsPromotionsMetadata}
           durationInFrames={BHS_PROMOTIONS_FALLBACK_DURATION} fps={BHS_PROMOTIONS_FPS} width={854} height={480}
           defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`uhc-improvement-${language}`} id={language === "fil" ? "UhcImprovementStoryFil" : "UhcImprovementStoryEn"}
+          component={ImprovementStory} calculateMetadata={calculateImprovementMetadata}
+          durationInFrames={UHC_IMPROVEMENT_FALLBACK_DURATION} fps={UHC_IMPROVEMENT_FPS}
+          width={854} height={480} defaultProps={{ language }} />
       ))}
     </>
   );

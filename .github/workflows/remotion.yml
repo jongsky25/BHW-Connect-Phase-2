@@ -35,9 +35,10 @@ jobs:
       matrix:
         shard: [0, 1]
     runs-on: ubuntu-latest
-    # The prior successful main library used 19.1 minutes on shard 0.
-    # New narrated lesson stories need rendering and artifact-upload headroom.
-    timeout-minutes: 25
+    # The 34-composition library reached its last English story at 20 minutes
+    # on lesson 1.2.4's first review run. Keep both shards and every render;
+    # allow room for the final clip, poster and artifact upload.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
