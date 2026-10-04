@@ -1,0 +1,166 @@
+{
+  "status": "draft",
+  "owner_review": "pending",
+  "sme_review": "none recorded",
+  "generation_date": "2026-10-04",
+  "assets": {
+    "id": "uhc-improvement-story",
+    "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-5f255ee7327c-poster.jpg",
+    "content_hash": "5f255ee7327c51eb0d2a9710555a07e7aa6c8ecb258e0efee71a593ebce64848",
+    "alt_fil": "Animadong kuwento nina Vlanche, Ernesto at midwife: isang maliit na plano mula sa obserbasyon hanggang sa feedback.",
+    "alt_en": "Animated story of Vlanche, Ernesto and the midwife: one small plan from observation to feedback.",
+    "caption_fil": "Kathang-isip na halimbawa na may Gemini narration at captions. Draft para sa pagsusuri ng may-ari.",
+    "caption_en": "Fictional example with Gemini narration and captions. Draft for owner review.",
+    "review_status": "draft",
+    "provenance": "Original six-beat Remotion animation for lesson 1.2.4, rendered 2026-10-04. Original built-in imagegen art generated 2026-10-03. Gemini TTS model gemini-3.8-flash-tts, voice Kore; shared UHC_IMPROVEMENT_STORY_STYLES with adapted English video performance directions. Actual decoded sample counts determine speech/scene timings; authored words preserved in captions. New media await owner approval; no clinical or policy SME approval recorded.",
+    "videos": {
+      "fil": {
+        "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-eb5043d15b96.mp4",
+        "content_hash": "eb5043d15b96c6cfe70bfb381d655ff13e244d3b21370c3af90ee1be9e020841",
+        "duration_s": 82,
+        "captions": {
+          "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-f94383012c24.vtt",
+          "content_hash": "f94383012c2423fe7a065096e9d68ccf293def3797c1a5295a678918187039fb"
+        },
+        "poster": {
+          "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-5f255ee7327c-poster.jpg",
+          "content_hash": "5f255ee7327c51eb0d2a9710555a07e7aa6c8ecb258e0efee71a593ebce64848"
+        }
+      },
+      "en": {
+        "path": "/training/bhw-1-2/uhc-improvement-gemini-en-a871bc107619.mp4",
+        "content_hash": "a871bc107619f478ade3a328729996796292101baa10a1d4f957cbb0f05241e2",
+        "duration_s": 74,
+        "captions": {
+          "path": "/training/bhw-1-2/uhc-improvement-gemini-en-b514f219bd5b.vtt",
+          "content_hash": "b514f219bd5b7832e1a9193819f0c22fd74deae600b7e31c5cd0ababc2d75373"
+        },
+        "poster": {
+          "path": "/training/bhw-1-2/uhc-improvement-gemini-en-db732679a77b-poster.jpg",
+          "content_hash": "db732679a77ba6f56adf6f7152a1fd2e5119ad87937269231ef7b06bdea900d8"
+        }
+      }
+    }
+  },
+  "art": {
+    "id": "improvement-planning",
+    "path": "/training/bhw-1-2/improvement-planning-f1afe0f4a1e5.png",
+    "content_hash": "f1afe0f4a1e536d549b769ed804cce3cefde2c368580f2a1f08beca2a2b24601",
+    "alt_fil": "Inaayos ni BHW Vlanche ang tatlong blangkong card habang nakikinig ang midwife at si Mang Ernesto sa isang talakayan tungkol sa maliit na pagpapabuti.",
+    "alt_en": "BHW Vlanche arranges three blank cards while the midwife and Mang Ernesto take part in a discussion about a small improvement.",
+    "caption_fil": "Isang maliit na plano, pinag-uusapan kasama ang mga makakatuwang. Draft para sa pagsusuri.",
+    "caption_en": "One small plan, discussed with the people involved. Draft for review.",
+    "provenance": "Original built-in imagegen illustration, 2026-10-03. Fictional Vlanche, midwife and Ernesto; identity/style references: vlanche-ernesto-7e4e35141628.png and primary-care-next-step-a67521f903c0.png. Blank cards are learning cues, not official forms. New media await owner review; no SME approval. Prompt: Use case: illustration-story. Asset type: original landscape learning illustration for lesson 1.2.4, One practical improvement. Input images: the two attached images are character identity and visual style references only, not edit targets. Create a NEW photorealistic educational scene of BHW Vlanche, the midwife, and Mang Ernesto planning one small next-week improvement around an unbranded wooden table in a modest Filipino barangay community room. Preserve their recognizable identities: Vlanche is a Filipina around 40 with short softly wavy black hair, teal polo and dark trousers; midwife has tied-back black hair and light blue scrubs; elderly Filipino Ernesto has gray hair and a cream collared shirt. Vlanche thoughtfully arranges THREE blank cream note cards, midwife calmly contributes with one open hand, Ernesto listens and asks a question. Natural anatomically correct hands, relaxed respectful expressions, warm daylight, lived-in Philippine surroundings. Frame all three faces and the table clearly with comfortable margin, landscape composition suited to contained mobile and desktop display. No readable text, no personal information, no logos, no official-looking forms or campaign material, no medical procedure, no benefit promise. Keep the reference's natural photographic warmth and skin tones, but use a distinct composition and planning action; do not recreate the primary-care encounter.\n",
+    "review_status": "draft"
+  },
+  "narration": {
+    "fil": {
+      "timing_sha256": "4b11c93abb626852b0e45db3509240a126c001a283824d58c128267706e28926",
+      "mp3_sha256": "8712509f0fc788b8d5a98d44e1968305607bf8ade1ab3ec99be92a2264cec56a",
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "style": "Speak in natural conversational Filipino (Tagalog) as a warm community health storyteller. Sound curious as Mang Ernesto asks and Vlanche notices a gap, then calm and supportive during the midwife's discussion. Use purposeful changes in pitch, pace and emphasis; pause naturally at the proposal, agreement, plan and feedback. Make role boundaries clear, without sounding scolding. Keep the exact authored words; do not translate, add words or promises.",
+      "durationSeconds": 81.241,
+      "beats": [
+        {
+          "zone": "observed",
+          "index": 0,
+          "text": "Sino po ang tatanungin ko? tanong ni Mang Ernesto. Magkaiba ang sagot na narinig ni Vlanche sa dalawang pagbisita. Itinala niya ang tanong, hindi ang pangalan.",
+          "start_ms": 0,
+          "end_ms": 11520
+        },
+        {
+          "zone": "proposal",
+          "index": 1,
+          "text": "Mungkahi ni Vlanche: isang maikling mensahe sa nakatakdang pagbisita sa susunod na linggo. Panukala pa lamang ito; kailangan munang pag-usapan at tiyakin.",
+          "start_ms": 11820,
+          "end_ms": 21860
+        },
+        {
+          "zone": "confirm",
+          "index": 2,
+          "text": "Tinanong niya ang midwife tungkol sa kasalukuyang contact, mensahe at patakaran. Nakinig siya. Hindi niya ipapakalat ang hindi kumpirmado o babaguhin ang serbisyo nang mag-isa.",
+          "start_ms": 22160,
+          "end_ms": 34680
+        },
+        {
+          "zone": "plan",
+          "index": 3,
+          "text": "Sa halimbawa, nakumpirma ang mensahe at napagkasunduan ang plano. Si Vlanche ang gagamit ng sinuring gabay sa kanyang pagbisita. Kayang oras at gamit lamang. Babalikan sa Biyernes.",
+          "start_ms": 34980,
+          "end_ms": 47860
+        },
+        {
+          "zone": "trial",
+          "index": 4,
+          "text": "Pagkatapos magpaliwanag, itatanong niya kung sino ang lalapitan. Itatala ang bilang ng nakasagot at natitirang tanong, walang personal na detalye. Maliit na palatandaan ito, hindi garantisadong epekto.",
+          "start_ms": 48160,
+          "end_ms": 64080
+        },
+        {
+          "zone": "review",
+          "index": 5,
+          "text": "Sa Biyernes, babalikan nila ng midwife ang feedback at aayusin ang mensahe kung kailangan. Napansin, tiniyak at napag-usapan, maliit na plano, sinubukan at binalikan. Ano ang iyong unang hakbang?",
+          "start_ms": 64380,
+          "end_ms": 81180
+        }
+      ]
+    },
+    "en": {
+      "timing_sha256": "7bbd4f4010fa23dffb903edb0b1b3a32afd325af6b83740cb0228e20698010c5",
+      "mp3_sha256": "304765373bd30256857b0c3a2098916a24b3f8477f1665729a71c32d9bd7f35a",
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "style": "Pronounce the fictional name Vlanche consistently as one syllable, vlanch, with an initial v followed by l and a final nch; never fee-lanche. Give the opening question an interested upward pitch, the proposal a hopeful lilt, the agreement clear firm emphasis, and the final reflection a thoughtful inviting cadence. Speak in natural conversational Philippine English as a warm community health storyteller. Sound curious as Mang Ernesto asks and Vlanche notices a gap, then calm and supportive during the midwife's discussion. Use purposeful changes in pitch, pace and emphasis; pause naturally at the proposal, agreement, plan and feedback. Make role boundaries clear, without sounding scolding. Keep the exact authored words; do not translate, add words or promises. Perform an expressive miniature story for fellow BHWs: an animated curious opening question, a hopeful proposal, a deliberate fact-check pause, a bright concrete plan, and a warm invitation to reflect. Smile in the voice. Use audible pitch rises and falls and varied phrase speed, avoiding a uniform instructional cadence. Keep the exact authored wording.",
+      "durationSeconds": 73.038,
+      "beats": [
+        {
+          "zone": "observed",
+          "index": 0,
+          "text": "Who should I ask? says Mang Ernesto. Vlanche heard different answers on two visits. She notes the question without names, and avoids blaming anyone.",
+          "start_ms": 0,
+          "end_ms": 10600
+        },
+        {
+          "zone": "proposal",
+          "index": 1,
+          "text": "Vlanche proposes one short message during scheduled visits next week. It is still a proposal: discuss it and confirm the information before using it.",
+          "start_ms": 10900,
+          "end_ms": 20820
+        },
+        {
+          "zone": "confirm",
+          "index": 2,
+          "text": "She asks the midwife about the current contact, message and policy, and listens. She holds back unconfirmed information and does not change services on her own.",
+          "start_ms": 21120,
+          "end_ms": 32520
+        },
+        {
+          "zone": "plan",
+          "index": 3,
+          "text": "In the example, the message is confirmed and the plan agreed. Vlanche uses the checked guide during her visits, with feasible time and materials. They will review on Friday.",
+          "start_ms": 32820,
+          "end_ms": 44700
+        },
+        {
+          "zone": "trial",
+          "index": 4,
+          "text": "After explaining, she asks whom people would approach. She notes how many can answer and what questions remain, without personal details. This is a small indicator, not guaranteed impact.",
+          "start_ms": 45000,
+          "end_ms": 59000
+        },
+        {
+          "zone": "review",
+          "index": 5,
+          "text": "On Friday, she and the midwife review feedback and revise the message if needed. Observe, confirm and discuss, make a small plan, try and review. What is your first step?",
+          "start_ms": 59300,
+          "end_ms": 72980
+        }
+      ]
+    }
+  }
+}

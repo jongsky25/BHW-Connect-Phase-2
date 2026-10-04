@@ -99,6 +99,12 @@ export const LOCAL_SYSTEM_STORY_STYLES = {
 
 // The voice string recorded in content_hash for Gemini renders, so switching
 // provider re-renders a section instead of skipping it as unchanged.
+// Shared expressive delivery for lesson 1.2.4 Read and animated story.
+export const UHC_IMPROVEMENT_STORY_STYLES = {
+  "fil": "Speak in natural conversational Filipino (Tagalog) as a warm community health storyteller. Sound curious as Mang Ernesto asks and Vlanche notices a gap, then calm and supportive during the midwife's discussion. Use purposeful changes in pitch, pace and emphasis; pause naturally at the proposal, agreement, plan and feedback. Make role boundaries clear, without sounding scolding. Keep the exact authored words; do not translate, add words or promises.",
+  "en": "Pronounce the fictional name Vlanche consistently as one syllable, vlanch, with an initial v followed by l and a final nch; never fee-lanche. Give the opening question an interested upward pitch, the proposal a hopeful lilt, the agreement clear firm emphasis, and the final reflection a thoughtful inviting cadence. Speak in natural conversational Philippine English as a warm community health storyteller. Sound curious as Mang Ernesto asks and Vlanche notices a gap, then calm and supportive during the midwife's discussion. Use purposeful changes in pitch, pace and emphasis; pause naturally at the proposal, agreement, plan and feedback. Make role boundaries clear, without sounding scolding. Keep the exact authored words; do not translate, add words or promises."
+};
+
 export function geminiVoiceId(model = GEMINI_TTS_MODEL, voice = GEMINI_VOICE) {
   return `gemini:${model}:${voice}`;
 }

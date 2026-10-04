@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
-      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
-      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "observable_fil": "Sa hindi nagpapakilalang lokal na halimbawa, nagmumungkahi ang BHW ng isang maliit na pagpapabuti: obserbasyon, kumpirmasyon at pahintulot, konkretong unang hakbang, kayang oras/gamit, at pagbabalik gamit ang feedback.",
+      "observable_en": "In a non-identifying local example, the BHW proposes a small improvement with an observation, confirmation and agreement, a concrete first step, feasible time/materials, and a review using feedback.",
+      "not_yet_fil": "Nangangako ng hindi kumpirmadong benepisyo, nagpapalit ng serbisyo/patakaran nang mag-isa, o walang konkretong unang hakbang at paraan ng pagbabalik.",
+      "not_yet_en": "Promises an unconfirmed benefit, changes services/policy alone, or gives no concrete first step and review method.",
       "levels": {
-        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
-        "kaya_na_en": "Accurate explanation and action without prompting.",
-        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
-        "kailangan_practice_en": "Correct direction but needs guidance on details.",
-        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
-        "hindi_pa_en": "Explanation or action is not yet appropriate."
+        "kaya_na_fil": "Walang prompt: inilalarawan ang obserbasyon, pinatutunayan sa tamang contact ang impormasyon at pahintulot, at nagsasaad ng maliit na gawain, responsable, kayang oras/gamit, petsa at palatandaang babalikan; binabago ang plano ayon sa feedback.",
+        "kaya_na_en": "Without prompting: describes the observation, checks information and agreement with the responsible contact, and states a small action, owner, feasible time/materials, review date and indicator; revises the plan using feedback.",
+        "kailangan_practice_fil": "Nais makipag-usap at maliit ang mungkahi, ngunit kailangan ng prompt upang tukuyin ang pahintulot, responsable, oras/gamit o palatandaang babalikan.",
+        "kailangan_practice_en": "Wants to discuss a small proposal but needs prompts to specify agreement, responsibility, time/materials or the review indicator.",
+        "hindi_pa_fil": "Nangangako ng hindi kumpirmadong benepisyo, nagpapalit ng serbisyo/patakaran nang mag-isa, o walang konkretong unang hakbang at paraan ng pagbabalik.",
+        "hindi_pa_en": "Promises an unconfirmed benefit, changes services/policy alone, or gives no concrete first step and review method."
       }
     }
   ]

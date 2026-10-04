@@ -1,79 +1,63 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can name one gap in their own barangay where UHC is not yet fully carried out, talk it through with a fellow BHW or the midwife before acting, and state one small, concrete first step — with one person to work with and one agreed time to review the result.
+The participant proposes one feasible local improvement: describe an observed gap, discuss and verify it with the appropriate contact, agree on a first step within the BHW role, and review a small indicator and feedback. This develops workplace innovation; it does not authorize clinical or policy changes.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 45 minutes in a face-to-face session — the "Exercise: propose, discuss, first step" row of the 3-hour plan in the subchapter guide. Self-study of the lesson alone takes about 5 minutes.
-- **Materials:** one card or half-sheet of paper per BHW with three lines copied from the last slide — **One small step / One person to work with / One agreed time to review the result**; pens; manila paper and markers; the lesson's slides (including the "understand, verify, practice" visual, still marked draft); the "Not yet" column from the *Primary care and referral* chart, if you have it.
+- **Time:** 45 minutes for the existing module-plan exercise, not an additional training allocation. Suggested sequence below totals 45 minutes; self-study about 7 minutes.
+- **Materials:** three blank cards or a sheet divided into **Observed / Agreed action / Review**; pens; the six slides; current locally confirmed contact/message if available. Video is optional. No resident names or health details.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides. The two sections are "Propose it, and talk it through first" and "The first small step".
-- Know when the midwife is available. If she can attend this part of the session, invite her to listen to the suggestions — it makes the "talk it through" step real.
-- Bring the "Not yet" list from the earlier lessons so BHWs do not have to start from nothing.
-- Scope: this is not the place to approve or change a process. Steps must be within the BHW's own reach and training; anything that touches clinical care, referral rules or policy goes through the midwife. Do not promise that a suggestion will reach or be adopted by the health board.
+Read both languages and the application feedback. Confirm who can validate the proposed information and authorize the activity, available time/materials and any existing local message or policy. If the contact is unavailable, the outcome is a proposal with questions still to check, not approval to act. The blank illustration cards are learning cues. Invite the midwife if appropriate; a partner playing the midwife cannot give real authorization.
 
 ## [opening] Opening
 
-In this continuing story, BHW Vlanche considers one small improvement to discuss with the health team.
-
-Ask the group: *"Have you ever had an idea at work that never happened? What stopped it?"* Take two or three answers. Listen for "I never told anyone" or "I tried to do it all at once" — you will come back to these in steps 2 and 3.
+Use Vlanche and Ernesto’s first screen. Ask: “What did she hear, and what is still an assumption?” Expect: different answers about whom to ask; this does not establish that the whole service is wrong. Ask participants for a non-identifying local example, without blame.
 
 ## [steps] Steps
 
-1. **Pick one gap (Read "Propose it, and talk it through first", slide of the same name).** Ask: *"Have you noticed something in your own barangay that does not yet fully follow UHC's direction?"* Offer the lesson's two examples if they are stuck: it is still unclear who to approach before a referral, or a resident does not yet know they are already a PhilHealth member. Each BHW writes one gap at the top of their card.
-2. **Talk it through first.** Read: "Before acting on your own, talk it through with a fellow BHW or the midwife first." In pairs, give each BHW about 5 minutes to discuss what they noticed with a partner before asking them for a step. The partner asks: *"Why might it still be done this way?"* Point to the slide line "Listen before changing a process."
-3. **The first small step (Read "The first small step", slide of the same name).** Ask the lesson's question word for word: *"Instead of waiting for a big change to come from above, what is one small, concrete thing you could do starting next week?"* Use the lesson's example: a short reminder on the next household visit that residents are automatically covered by PhilHealth — not a full campaign, just a consistent mention.
-4. **One step, one person, one time.** Each BHW fills in the three lines on the card. Walk around and ask anyone whose step is large: *"What part of that could you do next week, yourself?"*
-5. **Self-check.** Ask *"Which suggestion is workable?"* and let the group discuss before revealing the answer.
+1. **Observe (5 minutes):** describe one event or recurring question. Separate evidence from an explanation you have not confirmed.
+2. **Propose (5 minutes):** choose a first step small enough for next week. Ask what makes it feasible and whose agreement it needs.
+3. **Confirm and discuss (7 minutes):** a partner asks about the current contact, existing message/policy and required permission. Note unresolved facts; listen and revise the proposal.
+4. **Plan (8 minutes):** name the action, responsible person, required agreement, time/materials, review date and small indicator. Use the worked next-week message/Friday review example. No additional service or budget may be assumed.
+5. **Role-play and refine (15 minutes):** use the practice below, swap roles, then revise each plan after feedback. Observe the criteria, including the response to an unavailable contact.
+6. **Application and recall (5 minutes):** answer the final check, explain why each alternative falls short, and recall the planning cycle. Online completion and practical observation are recorded separately.
 
 ## [expected-answers] Expected answers and how to respond
 
-- **A big plan ("I'll fix the whole referral system").** Welcome the ambition, then shrink it: *"What is the first piece you could do next week, within your own reach?"*
-- **A complaint ("The RHU never tells us anything").** Acknowledge the frustration. Then turn it into a suggestion: *"What would you ask the midwife for, specifically?"*
-- **"That's for the officials to change, not us."** Go back to the lesson's words: you don't need to wait for a big change from above — the small step started today is what speeds up the change.
-- **A vague step ("I'll inform people").** Ask: *"Which people? When? Where?"* until it becomes something like "on my household visits next week."
-- **A step that goes beyond the BHW's role.** Say it is a good idea to bring to the midwife first, and help them find the part that is theirs to do.
+- **“I heard two different contacts.”** An observation worth checking; ask whether a schedule or existing arrangement explains it.
+- **“I will tell everyone tomorrow.”** Ask who confirmed the message and permission. Hold unconfirmed information back.
+- **“I will improve everything.”** Ask for one next-week action, responsibility, time/materials and review.
+- **“The contact is unavailable.”** Write the specific question and arrange confirmation; do not treat the classroom plan as permission.
+- **“People repeated the contact, so the whole system is fixed.”** It is a small understanding indicator. Review remaining questions and avoid claiming broad impact.
 
 ## [misconception] Common misconception
 
-**"An improvement only counts if it is big."** BHWs often dismiss their own ideas because they are small, or wait for a change to come from above. Correct it without embarrassing anyone by reading the lesson's example aloud — a short, consistent reminder at household visits — and asking: *"Would that help Mang Ernesto?"* Then read: "Big changes in a system usually start with a small change in habit." A small step that is actually done is worth more than a big plan that is never started.
+“A small improvement is too minor to count, so I should change the process immediately.” A specific, locally agreed action can be useful. Its size does not remove the need for accurate information, permission and feedback. The BHW does not unilaterally change a service or policy.
 
 ## [practice] Practice activity
 
-Each BHW presents their card to a partner playing the midwife, in 2 minutes: the gap they noticed, their suggestion, their first small step, who they will work with and when they will review the result. The "midwife" gives one piece of feedback or one reason things might still be done that way. The BHW responds and then sums up in one sentence what was agreed. Swap roles. Two or three BHWs present their card to the whole group. Each BHW keeps their card to report back on at the next session.
+In pairs, choose one real but non-identifying local gap. The BHW gives a two-minute proposal: observation, what remains unknown, appropriate contact, first action, agreement needed, time/materials, review date and indicator. The partner plays the midwife and adds a constraint: an existing message needs checking, no extra printing budget, or the responsible contact is unavailable. The BHW responds, revises the plan and states what can proceed and what must wait for actual confirmation. Swap roles. Keep the card to discuss with the real responsible contact; the role-play provides no real authorization.
 
 ## [answer-key] Self-check answer key
 
-The lesson has one check. It appears at the end of Read section "The first small step" and on the slide of the same name; it is the same question, so it is covered once here.
-
-- **"Which suggestion is workable?"** → **Discuss one problem and agree on a first step with the midwife.** This follows both sections: talk it through first, then start with one small, concrete step.
-  - **"Change the whole system without discussion."** is wrong on both counts. The lesson says a suggestion that was never discussed is unlikely to ever be carried out, and there may be a reason things are done that way; and "the point is not to immediately change everything" — the point is to start the conversation openly and begin with a small step.
-  - As the feedback says, ask the BHW to explain why using the lesson situation.
+The **second option** is correct. Confirm the contact/message with the midwife; agree on feasible next-week visits and materials; review on Friday whether people can name the contact and what questions remain. The first option makes an unsupported universal benefit promise. The third changes a service process before agreement. The fourth has no concrete first action, responsibility or review. Ask participants to explain the missing element and repair one alternative.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator — *explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor* — during the card presentation. Here the "main point" is the gap and the suggestion, the "first action" is the small step, and "what must be checked with the supervisor" is what they will first talk through with the midwife.
+- **Kaya na:** without prompting, describes evidence, checks information and authority with the right contact, states a small action with an owner, feasible time/materials, review date and indicator, and revises it after feedback.
+- **Kailangan pa ng practice:** the direction and discussion are appropriate, but prompts are needed for agreement, responsibility, time/materials or the review indicator.
+- **Hindi pa:** promises an unconfirmed benefit, changes services/policy alone, or cannot state a concrete first step and review method.
 
-- **Kaya na:** without prompting, the BHW names a specific gap, a small step doable next week with a person and a review time, and what they will first discuss with the midwife; after the "midwife" responds, they can sum up what was agreed.
-- **Kailangan pa ng practice:** the direction is right, but the step stays vague or is missing who or when until you ask.
-- **Hindi pa:** the BHW stays at complaint level, or proposes changing the whole system alone or without any discussion.
-
-The subchapter's competency indicators for objectives 3 and 4 describe this same skill in more detail and can guide your judgement. Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Observe the proposal and revision, not just a completed card. Finishing the online lesson is not evidence of observed planning skill.
 
 ## [support] If a BHW needs more support
 
-- Start from the lesson's own example (residents not knowing they are PhilHealth members) and fill in the card together, one line at a time.
-- If they only have a complaint, help them write it as "I noticed ___; I suggest ___" before choosing a step.
-- Pair them with a BHW rated **Kaya na** and let them present second.
-- Re-observe at the next session by asking them to report on their card: did they take the step, what did the midwife say, and what is the next step.
+Use three cards: **What I noticed / What we need to confirm and do / What we will review**. Narrow the action together, rehearse the question to the actual responsible contact, and re-observe the plan after feedback. If authority or resources are still unknown, retain the proposal as pending.
 
 ## [sources-review] Sources and review notes
 
-- Facilitator Guide p. 14 (PDF 21): the TESDA learning outcomes for *Contribute to Workplace Innovation* — identify opportunities to do things better; discuss and develop ideas with others; integrate ideas for change in the workplace — listed in the lesson's source list as an inherited page reference; final audit pending. Day 1 presentation slide 15 (expected learning outcomes).
-- Timing: the module's 3 hours come from Facilitator Guide PDF 19 (PDF 21 says "at least 3 hours"). Keep the original total in the subchapter guide; do not repeat that whole allocation for each short lesson. The 45 minutes above is the module table's own row for this exercise. This split supports self-study and does not create a new training-hour allocation.
-- The lesson's examples (unclear who to approach before a referral; residents not knowing they are PhilHealth members; a reminder at household visits) are lesson content, not taken from the source pages.
-- Still to review: current legal/policy wording, bilingual parity and the observation indicator (the same generic indicator is used in all four lessons). Keep online completion separate from demonstrated competence.
+Audited 3 October 2026: DOH Facilitator Guide printed p.14 / PDF p.21 gives the three workplace-innovation outcomes; printed p.12 / PDF p.19 maps them to UHC. Printed p.15 / PDF p.22 covers entrepreneurial skills for the separate policies topic, so that mapping is not used here. No topic-specific improvement activity or evaluation rubric was found on p.21; the 45-minute exercise and concrete observation rubric are instructional adaptations based on those outcomes and the existing module plan, not verbatim DOH/TESDA assessment instruments.
 
-Draft for review.
+BHW Reference Manual printed pp.3–4 / PDF pp.11–12 covers education, organizing and service-support roles; printed p.5 / PDF p.13 gives the UHC direction. Exact PDF retrieval and limits are recorded in docs/lesson-124-source-audit.json. The story, contact discussion, next-week trial and Friday review are fictional examples, not confirmed local arrangements or impact claims. New illustration, narration and videos are draft for owner review; no independent clinical/policy SME approval is claimed. Original immutable objectives remain unchanged; competency indicator uses objective index 0.

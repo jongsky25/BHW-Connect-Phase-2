@@ -1,0 +1,95 @@
+{
+  "checked_date": "2026-10-03",
+  "timezone": "Asia/Manila",
+  "target": "02-uhc-act/uhc-improvement",
+  "sources": [
+    {
+      "id": "m2.competency-source",
+      "title": "DOH Barangay Health Workers Facilitator Guide, 2022",
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view",
+      "pdf_sha256": "6765d4e56db2be20409b0788f364f53a7c85906441c6cd059181c3aa529617bc",
+      "pdf_pages": [
+        19,
+        21
+      ],
+      "printed_pages": [
+        12,
+        14
+      ],
+      "checked_date": "2026-10-03",
+      "retrieval": "Original project Drive PDF downloaded successfully; 126 pages. PDF pp.19 and 21 rendered and visually inspected; original printed page labels confirmed.",
+      "claim_coverage": "UHC maps to Contribute to workplace innovation (three-hour module), with outcomes to identify opportunities, discuss/develop ideas with others, and integrate change.",
+      "exact_evidence": [
+        {
+          "pdf_page": 21,
+          "printed_page": 14,
+          "passage": "Identify opportunities to do things better; Discuss and develop ideas with others; Integrate ideas for change in the workplace."
+        }
+      ],
+      "limits": "PDF p.22 / printed p.15 maps entrepreneurial skills to the separate workplace-policies topic. No improvement-specific activity or evaluation rubric is printed on p.21. Full-text search found no rubric; evaluation appears in introductory p.8. The lesson practice/rubric is a clearly labeled instructional adaptation; existing module notes supply the 45-minute exercise. The web PDF mirror exceeded tool size limits; the Drive original was used."
+    },
+    {
+      "id": "manual-roles",
+      "title": "DOH Barangay Health Workers Reference Manual, 2022 — BHW roles",
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view",
+      "pdf_sha256": "e79248b6be4c6a5f871cb338f54fd867210d599302075d9650bc5aa04ba82296",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "printed_pages": [
+        3,
+        4
+      ],
+      "checked_date": "2026-10-03",
+      "retrieval": "Original project Drive PDF downloaded successfully; 150 pages. Text extracted and page renders checked.",
+      "claim_coverage": "BHWs support information, community participation and primary care teams; maintain communication with local health staff; contribute to local planning.",
+      "exact_evidence": [
+        {
+          "pdf_page": 12,
+          "printed_page": 4,
+          "passage": "Pinapanatili ng mga BHW ang magandang relasyon at komunikasyon sa mga lider at miyembro ng komunidad, pati na din sa mga health staff ng lungsod/munisipyo."
+        }
+      ],
+      "limits": "This supports collaborative information work, not independent authority to approve a service, policy, clinic or benefit. Locally agreed next-week visits are fictional examples."
+    },
+    {
+      "id": "manual-uhc",
+      "title": "DOH BHW Reference Manual — UHC direction",
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view",
+      "pdf_pages": [
+        13
+      ],
+      "printed_pages": [
+        5
+      ],
+      "checked_date": "2026-10-03",
+      "retrieval": "Original PDF text and rendered printed page verified.",
+      "claim_coverage": "UHC direction includes stronger BHW skills and community health promotion and coordination.",
+      "limits": "No universal local contact, service availability, benefit entitlement, free-care or measured-impact claim is derived. The original PhilHealth-reminder example is replaced with a contact/message example to avoid repeating 1.2.1 and adding entitlement detail."
+    },
+    {
+      "id": "ra11223-context",
+      "title": "Republic Act No.11223 — UHC principles and objectives",
+      "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11223_2019.html",
+      "checked_date": "2026-10-03",
+      "sections": [
+        "2",
+        "3"
+      ],
+      "retrieval": "Current statute text opened with web tool.",
+      "claim_coverage": "People-oriented delivery, coordinated implementation and clear roles are background context.",
+      "limits": "No new statutory authority is assigned to a BHW; benefits or provider selection are not taught in this improvement story. YAKAP is not needed or inserted. Its shared pronunciation rule is preserved unchanged."
+    }
+  ],
+  "instructional_adaptations": [
+    "Vlanche/Ernesto scenario; two-visit observation; current contact and short message; agreement; next-week trial; Friday review; non-identifying count and questions.",
+    "Six-screen planning cycle and 45-minute facilitation split within the existing module plan.",
+    "Topic-specific application alternatives and observable kaya na / kailangan pa ng practice / hindi pa rubric."
+  ],
+  "review_status": "draft",
+  "owner_approval": null,
+  "independent_sme_approval": null,
+  "supplemental_visual_check_date": "2026-10-04",
+  "supplemental_visual_check": "Original Manual PDF pp.11–12 / printed pp.3–4 and Guide PDF p.22 / printed p.15 inspected; confirms role/context and the separate entrepreneurial-skills topic."
+}

@@ -19,10 +19,10 @@
         "m2.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "improvement-planning"
       ],
-      "takeaway_fil": "Ang mungkahi na hindi napag-usapan ay malamang na hindi rin maisasakatuparan — kailangan munang dumaan sa talakayan bago sa aksyon.",
-      "takeaway_en": "A suggestion that was never discussed is unlikely to ever be carried out — it needs to pass through discussion before it becomes action.",
+      "takeaway_fil": "Ilarawan ang nakita o narinig; huwag sisihin ang tao o gawing tiyak ang hinala.",
+      "takeaway_en": "Describe what you saw or heard; do not blame people or treat an assumption as fact.",
       "check": null
     },
     {
@@ -30,25 +30,83 @@
       "concept_ids": [
         "m2.competency"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Hindi kailangang hintayin ang malaking pagbabago mula sa itaas — ang maliit na hakbang na sinimulan ngayon ang siyang nagpapabilis ng pagdating ng pagbabago sa barangay.",
-      "takeaway_en": "You don't need to wait for a big change from above — the small step you start today is what speeds up the change's arrival in the barangay.",
+      "asset_ids": [
+        "improvement-planning"
+      ],
+      "takeaway_fil": "Pumili ng maliit na unang hakbang na pag-uusapan, hindi ng pagbabagong ipapatupad nang mag-isa.",
+      "takeaway_en": "Choose a small first step to discuss, rather than a change to impose alone.",
+      "check": null
+    },
+    {
+      "id": "improvement-confirm",
+      "concept_ids": [
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "improvement-planning"
+      ],
+      "takeaway_fil": "Tiyakin ang kasalukuyang impormasyon at pahintulot sa tamang tao bago kumilos.",
+      "takeaway_en": "Confirm current information and permission with the right person before acting.",
+      "check": null
+    },
+    {
+      "id": "improvement-plan",
+      "concept_ids": [
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "improvement-planning"
+      ],
+      "takeaway_fil": "Isang gawain, malinaw na pananagutan at pahintulot, kayang oras at gamit, at takdang pagbabalik.",
+      "takeaway_en": "One action, clear responsibility and agreement, feasible time and materials, and a review date.",
+      "check": null
+    },
+    {
+      "id": "improvement-feedback",
+      "concept_ids": [
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "improvement-planning"
+      ],
+      "takeaway_fil": "Tingnan ang maliit na palatandaan at feedback; baguhin ang plano ayon sa nakita.",
+      "takeaway_en": "Review a small indicator and feedback; adjust the plan based on what happened.",
+      "check": null
+    },
+    {
+      "id": "improvement-check",
+      "concept_ids": [
+        "m2.competency"
+      ],
+      "asset_ids": [
+        "improvement-planning"
+      ],
+      "takeaway_fil": "Napansin → Tiniyak at napag-usapan → Maliit na plano → Sinubukan at binalikan.",
+      "takeaway_en": "Observed → Confirmed and discussed → Small plan → Tried and reviewed.",
       "check": {
-        "prompt_fil": "Aling mungkahi ang maisasagawa?",
-        "prompt_en": "Which suggestion is workable?",
+        "prompt_fil": "Magkaiba ang sagot ng mga residente kung sino ang tatanungin sa health station. Aling plano ang dapat munang ihanda ni Vlanche?",
+        "prompt_en": "Residents give different answers about whom to ask at the health station. Which plan should Vlanche prepare first?",
         "options": [
           {
-            "fil": "Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife.",
-            "en": "Discuss one problem and agree on a first step with the midwife."
+            "fil": "Gumawa ng paalalang may pangakong libre ang lahat ng serbisyo upang mahikayat ang mga residente.",
+            "en": "Prepare a reminder promising every service is free to encourage residents."
           },
           {
-            "fil": "Baguhin agad ang buong sistema nang walang talakayan.",
-            "en": "Change the whole system without discussion."
+            "fil": "Tiyakin sa midwife ang contact at mensahe, magkasundo sa kayang pagbisita sa susunod na linggo at gamit, saka balikan sa Biyernes kung masabi ng mga nakausap ang contact at kung may tanong pa.",
+            "en": "Confirm the contact and message with the midwife, agree on feasible visits next week and materials, then review on Friday whether people can name the contact and what questions remain."
+          },
+          {
+            "fil": "Palitan agad ang proseso ng health station at ipaalam na lamang ito sa midwife pagkatapos.",
+            "en": "Change the health station process immediately and inform the midwife afterwards."
+          },
+          {
+            "fil": "Ipanukalang pagbutihin ang lahat ng gawain, saka na isipin kung sino, kailan, at paano susuriin.",
+            "en": "Propose improving all activities and decide who, when, and how to review later."
           }
         ],
-        "correct_option_index": 0,
-        "feedback_fil": "Talakayin ang isang problema at magtakda ng unang hakbang kasama ang midwife. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Discuss one problem and agree on a first step with the midwife. Explain why using the lesson situation."
+        "correct_option_index": 1,
+        "feedback_fil": "Ang ikalawang plano ang maisasagawa: may kumpirmadong impormasyon at pahintulot, maliit na gawain, kayang oras at gamit, at palatandaang babalikan. Walang batayan ang pangakong lahat ay libre; ang pagpapalit ng proseso nang mag-isa ay lampas sa napagkasunduan; ang “pagbutihin ang lahat” ay kulang sa konkretong hakbang.",
+        "feedback_en": "The second plan is workable: it has confirmed information and agreement, a small action, feasible time and materials, and an indicator to review. The blanket free-service promise is unsupported; changing the process alone exceeds the agreement; “improve everything” lacks a concrete first step."
       }
     }
   ],
@@ -57,38 +115,106 @@
       "id": "m2.competency",
       "read_ids": [
         "section-6",
-        "section-7"
+        "section-7",
+        "improvement-confirm",
+        "improvement-plan",
+        "improvement-feedback",
+        "improvement-check"
       ],
       "slide_ids": [
         "slide-section-6",
-        "slide-section-7"
+        "slide-section-7",
+        "slide-improvement-confirm",
+        "slide-improvement-plan",
+        "slide-improvement-feedback",
+        "slide-improvement-check"
       ],
       "source_ids": [
-        "m2.competency-source"
+        "m2.competency-source",
+        "manual-uhc",
+        "manual-roles"
       ]
     }
   ],
   "sources": [
     {
       "id": "m2.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "DOH BHW Facilitator Guide — workplace innovation, printed p.14 / PDF p.21; competency map printed p.12 / PDF p.19",
       "pdf_pages": [
+        19,
         21
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://drive.google.com/file/d/1FJNtduA8gDDDvW3WtNR5f-ai4f0izD0W/view"
+    },
+    {
+      "id": "manual-uhc",
+      "title": "DOH BHW Reference Manual — UHC direction, printed p.5 / PDF p.13",
+      "pdf_pages": [
+        13
+      ],
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view"
+    },
+    {
+      "id": "manual-roles",
+      "title": "DOH BHW Reference Manual — BHW roles, printed pp.3–4 / PDF pp.11–12",
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "url": "https://drive.google.com/file/d/13auqmQNRLevwxTm3lkMRHX13U1_d0TYs/view"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "uhc-improvement-story",
+      "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-5f255ee7327c-poster.jpg",
+      "content_hash": "5f255ee7327c51eb0d2a9710555a07e7aa6c8ecb258e0efee71a593ebce64848",
+      "alt_fil": "Animadong kuwento nina Vlanche, Ernesto at midwife: isang maliit na plano mula sa obserbasyon hanggang sa feedback.",
+      "alt_en": "Animated story of Vlanche, Ernesto and the midwife: one small plan from observation to feedback.",
+      "caption_fil": "Kathang-isip na halimbawa na may Gemini narration at captions. Draft para sa pagsusuri ng may-ari.",
+      "caption_en": "Fictional example with Gemini narration and captions. Draft for owner review.",
+      "review_status": "draft",
+      "provenance": "Original six-beat Remotion animation for lesson 1.2.4, rendered 2026-10-04. Original built-in imagegen art generated 2026-10-03. Gemini TTS model gemini-3.8-flash-tts, voice Kore; shared UHC_IMPROVEMENT_STORY_STYLES with adapted English video performance directions. Actual decoded sample counts determine speech/scene timings; authored words preserved in captions. New media await owner approval; no clinical or policy SME approval recorded.",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-eb5043d15b96.mp4",
+          "content_hash": "eb5043d15b96c6cfe70bfb381d655ff13e244d3b21370c3af90ee1be9e020841",
+          "duration_s": 82,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-f94383012c24.vtt",
+            "content_hash": "f94383012c2423fe7a065096e9d68ccf293def3797c1a5295a678918187039fb"
+          },
+          "poster": {
+            "path": "/training/bhw-1-2/uhc-improvement-gemini-fil-5f255ee7327c-poster.jpg",
+            "content_hash": "5f255ee7327c51eb0d2a9710555a07e7aa6c8ecb258e0efee71a593ebce64848"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-2/uhc-improvement-gemini-en-a871bc107619.mp4",
+          "content_hash": "a871bc107619f478ade3a328729996796292101baa10a1d4f957cbb0f05241e2",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-2/uhc-improvement-gemini-en-b514f219bd5b.vtt",
+            "content_hash": "b514f219bd5b7832e1a9193819f0c22fd74deae600b7e31c5cd0ababc2d75373"
+          },
+          "poster": {
+            "path": "/training/bhw-1-2/uhc-improvement-gemini-en-db732679a77b-poster.jpg",
+            "content_hash": "db732679a77ba6f56adf6f7152a1fd2e5119ad87937269231ef7b06bdea900d8"
+          }
+        }
+      }
+    },
+    {
+      "id": "improvement-planning",
+      "path": "/training/bhw-1-2/improvement-planning-f1afe0f4a1e5.png",
+      "content_hash": "f1afe0f4a1e536d549b769ed804cce3cefde2c368580f2a1f08beca2a2b24601",
+      "alt_fil": "Inaayos ni BHW Vlanche ang tatlong blangkong card habang nakikinig ang midwife at si Mang Ernesto sa isang talakayan tungkol sa maliit na pagpapabuti.",
+      "alt_en": "BHW Vlanche arranges three blank cards while the midwife and Mang Ernesto take part in a discussion about a small improvement.",
+      "caption_fil": "Isang maliit na plano, pinag-uusapan kasama ang mga makakatuwang. Draft para sa pagsusuri.",
+      "caption_en": "One small plan, discussed with the people involved. Draft for review.",
+      "provenance": "Original built-in imagegen illustration, 2026-10-03. Fictional Vlanche, midwife and Ernesto; identity/style references: vlanche-ernesto-7e4e35141628.png and primary-care-next-step-a67521f903c0.png. Blank cards are learning cues, not official forms. New media await owner review; no SME approval. Prompt: Use case: illustration-story. Asset type: original landscape learning illustration for lesson 1.2.4, One practical improvement. Input images: the two attached images are character identity and visual style references only, not edit targets. Create a NEW photorealistic educational scene of BHW Vlanche, the midwife, and Mang Ernesto planning one small next-week improvement around an unbranded wooden table in a modest Filipino barangay community room. Preserve their recognizable identities: Vlanche is a Filipina around 40 with short softly wavy black hair, teal polo and dark trousers; midwife has tied-back black hair and light blue scrubs; elderly Filipino Ernesto has gray hair and a cream collared shirt. Vlanche thoughtfully arranges THREE blank cream note cards, midwife calmly contributes with one open hand, Ernesto listens and asks a question. Natural anatomically correct hands, relaxed respectful expressions, warm daylight, lived-in Philippine surroundings. Frame all three faces and the table clearly with comfortable margin, landscape composition suited to contained mobile and desktop display. No readable text, no personal information, no logos, no official-looking forms or campaign material, no medical procedure, no benefit promise. Keep the reference's natural photographic warmth and skin tones, but use a distinct composition and planning action; do not recreate the primary-care encounter.\n",
+      "review_status": "draft"
     }
-  ]
+  ],
+  "featured_asset_id": "uhc-improvement-story"
 }

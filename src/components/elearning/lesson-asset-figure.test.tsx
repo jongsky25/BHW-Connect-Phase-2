@@ -83,3 +83,17 @@ describe("LessonAssetFigure", () => {
     expect(track).toHaveAttribute("label", label);
   });
 });
+
+it('selects the language poster with its narrated video and retains the historical fallback',()=>{
+  const asset:LessonAsset={id:'story',path:'/training/default-poster.jpg',content_hash:'poster-hash',alt_fil:'Kuwento',alt_en:'Story',caption_fil:'Buod',caption_en:'Summary',provenance:'Test fixture',review_status:'draft',videos:{
+    fil:{path:'/training/story-fil.mp4',content_hash:'fil-video',duration_s:82,captions:{path:'/training/fil.vtt',content_hash:'fil-vtt'}},
+    en:{path:'/training/story-en.mp4',content_hash:'en-video',duration_s:75,poster:{path:'/training/en-poster.jpg',content_hash:'en-poster'},captions:{path:'/training/en.vtt',content_hash:'en-vtt'}}}};
+  const {container,rerender}=render(<LessonAssetFigure asset={asset} en/>);
+  expect(container.querySelector('video')).toHaveAttribute('poster','/training/en-poster.jpg');
+  expect(container.querySelector('source')).toHaveAttribute('src','/training/story-en.mp4');
+  expect(container.querySelector('track')).toHaveAttribute('src','/training/en.vtt');
+  rerender(<LessonAssetFigure asset={asset} en={false}/>);
+  expect(container.querySelector('video')).toHaveAttribute('poster','/training/default-poster.jpg');
+  expect(container.querySelector('source')).toHaveAttribute('src','/training/story-fil.mp4');
+  expect(container.querySelector('track')).toHaveAttribute('src','/training/fil.vtt');
+});
