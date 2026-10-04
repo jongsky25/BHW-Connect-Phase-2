@@ -1,0 +1,38 @@
+# Lesson 1.3.3: Mimi declines respectfully
+
+Implementation started 4 October 2026 from released main `6adfe8383998e791f92665db3c91ca3fc7d665dc`, isolated branch `codex/lesson-133-story-gemini`. Target: `03-polisiya-bhs/bhs-decline`, position 2, lesson UUID `986cf9f0-bea2-4ff6-91b4-bfdb0bfca86e`. Original titles, objective strings, required flag, concept `m3.competency`, and learner identity remain unchanged. No progress writes or database publication.
+
+| Area | Present | Change and verification |
+|---|---|---|
+| Learner content | Two screens, generic two-choice check | Six equivalent bilingual Read/Slides screens; product-matched refusal, pressure, factual reporting, plausible application alternatives |
+| Policy scope | Medicine example incorrectly paired with Milk Code | Same formula example for comparison; separate prescription example grounded in pharmaceutical order |
+| Media | Four Gemini Read tracks; generic SVG with contradictory draft/approval | New original refusal image with approved Mimi reference; twelve expressive Gemini/Kore tracks; two measured six-scene animations; all new assets draft |
+| Facilitation | Generic criterion | Fixed twelve-part outline, two-product role-play, three concrete observed actions grouped under preserved objective 0 |
+| Release evidence | Prior 1.3.1 only | New target-specific tests, media verification, actual-component fixture and final-head CI/artifacts; new review package and approval required |
+
+Six-screen bilingual storyboard: `section-4` clear refusal / malinaw na pagtanggi; `match-policy` accurate product-specific reason / tamang batayan; `hold-boundary` pressure / pangungulit; `report-facts` factual handover / pag-ulat; `section-7` compare responses / paghahambing; `refusal-check` prescription-sample application / pagsasanay. Original second screen moves from position 1 to 4; saved resume uses stable screen IDs. Original slide IDs survive. Completion identity remains lesson UUID; no equivalence/backfill/reset.
+
+Illustration: new later moment, Mimi speaking with a respectful open hand and indicating a blank clipboard, visitor retaining his lowered box/sheet. Approved Mimi appearance from 1.3.1 is the identity reference; the new scene is draft. Exact prompt and hashes are in `lesson-133-art-provenance.json`.
+
+Read and animation voice plan: actual `gemini-3.8-flash-tts`, Kore, natural Filipino/Philippine English, calm firm refusal, questioning visitor pressure, purposeful pace and pauses for the reason and report. Shared target style participates in cache invalidation; shared pronunciation normalization remains intact. YAKAP is not needed and is not added. Historical current and published narration mappings/files must remain retained.
+
+Six animation beats: refusal → accurate reason → repeat boundary → factual handover → words/actions comparison → practical summary. Actual encoded narration sample counts and zone timings determine scene boundaries, captions and duration. Register only after required media exist. H.264/AAC, 854×480, captions in matching language and final-summary posters.
+
+Acceptance: twelve real current Gemini tracks, zero render in default/explicit reruns, unchanged sibling entries and historical bytes; bilingual source/Read/Slides/facilitation parity; non-silent zones and beats, correct hashes/streams/VTT; contained art with visible faces; actual Read/Slides optional-story/single-player/fullscreen/feedback/completion/resume behavior at four viewport sizes; relevant tests/lint/typecheck, normal Linux build/E2E and both final-head Remotion shards/artifacts. Model-mediated audio review is not human listening, owner approval or SME approval. A local actual-component fixture must clearly identify progress/navigation adapters as stubs. Authenticated production behavior is untested without an authorized session.
+
+Completed draft: six equivalent bilingual Read/Slides screens, original Mimi refusal art, twelve expressive Gemini/Kore Read tracks, both measured animations/captions/posters, role-play and three observed actions. Source audit distinguishes TCI original guide PDF page 24 from repository transcription page 22, both printed page 15.
+
+Verified locally: 7 relevant suites / 95 tests; app lint/typecheck; Remotion lint/typecheck; intermediate Windows Webpack production build (normal Linux final build is authoritative). Actual-component fixture imports the current component, authored data and compiled application CSS on dedicated port 3133. The package contains final rerun evidence for all 96 Read/Slides viewport/language/screen cases, no horizontal overflow and contained visible faces. Feedback, optional-video completion and old-ID resume/fullscreen navigation/scroll/close use explicitly stubbed callbacks. All twelve actual Read files advance playback/highlighting with one audio player. Both native videos play with six correct-language caption cues, one player, fullscreen and unmount on returning to Read/Slides at desktop, phone, landscape and tablet sizes.
+
+Decoded verification: 127 non-silent Read zones and twelve non-silent story beats; H.264/AAC 854×480, exact hashes and VTT parity. Filipino video about 82 seconds; English video about 88 seconds. Posters and interior animated frames visually inspected. Precise durations and generation provenance are in the decoded-media and generation records.
+
+Model-mediated audio review uses actual bytes, with speech throughout and no clipped endings. The flagged Filipino comparison wording was clarified and its Read track regenerated; the new review transcribes it correctly without a concern. Some model responses still flag timbre changes at sentence joins. All synthesis requests use the documented Gemini/Kore configuration; those subjective observations remain visible for owner listening, without claiming human review, perfect delivery or independent SME approval.
+
+Default and explicit Gemini narration reruns select twelve current tracks and render zero. Current sibling narration entries match released main; historical media and exact-text lookup are retained. No learner-progress or publication writes.
+
+Final reviewed-head CI, normal Linux production build/E2E, both full-library Remotion shards/artifact integrity and scoped Linux loader dry-run are recorded in the self-contained package’s final-reviewed-head-verification.json and PR checks. This external evidence binds to the final commit without recursively changing its hash. All must pass before presenting the complete package. New media remain draft; prior 1.3.1 approval does not approve this new 1.3.3 package. Authenticated production playback/resume/completion was not tested. Publication awaits approval of this package, then fresh release checks and one-lesson deployment/publication verification.
+
+
+## Owner approval and release reconciliation
+
+On 4 October 2026 (Asia/Manila), the owner approved the completed 1.3.3 package and instructed “approved. merge and deploy to live”. Approval binds to the reviewed head/media in lesson-133-owner-approval.json. Shared helper/viewer/CSS conflicts with the 1.3.2 release are resolved additively, preserving both lessons. Reviewed media are unchanged; only approval metadata and reconciliation change source. Earlier draft status/limits above describe the review snapshot. Fresh final-head CI/E2E, both full-library Remotion artifacts and Linux one-lesson dry run are required before merge; exact READY production before bhs-decline publication. Final evidence is recorded externally in the release report.

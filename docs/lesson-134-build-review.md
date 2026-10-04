@@ -26,3 +26,8 @@ Completed media: twelve current expressive Gemini/Kore Read tracks; default and 
 Audio review is two model-mediated passes over actual bytes, not human listening. Rule/role and connector concerns were addressed. Remaining subjective timbre observations and the model’s misunderstanding of UI names Read/Slides are documented in lesson-134-audio-review-notes.json and retained raw responses for owner listening; no inference of mixed synthesis providers or perfect delivery.
 
 Local verification: app lint and TypeScript passed; intermediate Windows Webpack production build passed; Remotion lint/typecheck passed. Focused final tests, actual-component responsive/playback/controls and offline package results are recorded in the external final reviewed-head evidence. All final Linux CI/E2E, both full-library Remotion artifacts and scoped Linux dry run must succeed at the final reviewed source head before presenting this package as complete.
+
+
+Release reconciliation: main advanced to `64c9406599da2214915d0b4b7b76cb198b0ab2d6` with approved lesson 1.3.3. Reconciled additively: both Gemini styles/default maps, both story registrations, both art mappings and full existing CSS retained. All current sibling narration entries match this refreshed main. Target audio/art/video bytes unchanged. Final checks repeat on the reconciled reviewed head; no release action is performed here.
+
+Target-specific UI checks before reconciliation passed: 96 Read/Slides cases, 24 control cases, 8 story playback cases and twelve Read tracks/highlights; all callbacks explicitly stubbed. Fresh fixture/CSS checks repeat after shared reconciliation and are recorded externally.

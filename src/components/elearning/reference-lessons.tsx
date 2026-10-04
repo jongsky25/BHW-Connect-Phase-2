@@ -247,6 +247,8 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Inaayos ni BHW Vlanche ang tatlong blangkong card kasama ang midwife at si Mang Ernesto para sa isang maliit na plano.", "BHW Vlanche arranges three blank cards with the midwife and Mang Ernesto for a small plan."),
             caption: ui("Isang maliit na plano, pinag-uusapan", "One small plan, discussed together"),
           }
+      : lesson?.lesson_key === "bhs-decline"
+        ? {src: "/training/bhw-1-3/mimi-respectful-refusal-7f71c23bc4bb.png", alt: ui("Malinaw at magalang na tumatanggi si Mimi sa alok.", "Mimi clearly and respectfully declines the offer."), caption: ui("Tumanggi · Ipaliwanag · Iulat", "Decline · Explain · Report")}
       : lesson?.lesson_key === "bhs-support-environment"
         ? {
             src: "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
