@@ -20,26 +20,91 @@
         "m3.plastics-ban"
       ],
       "asset_ids": [
-        "practice-map"
+        "mimi-support-environment"
       ],
-      "takeaway_fil": "Ang mga polisiyang ito ay hindi lang tungkol sa pagbabawal — may aktibong inaasahan din: isulong ang breastfeeding, bawasan ang plastic.",
-      "takeaway_en": "These policies aren't just about prohibition — they also expect active follow-through: promote breastfeeding, cut down on plastic.",
+      "takeaway_fil": "Dalawang paksa: magalang na suporta sa breastfeeding at ligtas na pagbabawas ng hindi kailangang basura.",
+      "takeaway_en": "Two topics: respectful breastfeeding support and safe reduction of unnecessary waste.",
+      "check": null
+    },
+    {
+      "id": "facility-roles",
+      "concept_ids": [
+        "m3.breastfeeding-act"
+      ],
+      "asset_ids": [
+        "mimi-support-environment"
+      ],
+      "takeaway_fil": "Institusyon ang responsable sa pasilidad; BHW ang nagtatanong, umaalalay at nag-uulat ng kakulangan.",
+      "takeaway_en": "The institution is responsible for facilities; the BHW checks, supports and reports gaps.",
+      "check": null
+    },
+    {
+      "id": "listen-connect",
+      "concept_ids": [
+        "m3.breastfeeding-act"
+      ],
+      "asset_ids": [
+        "mimi-support-environment"
+      ],
+      "takeaway_fil": "Makinig nang magalang, pangalagaan ang privacy, at iugnay sa nakumpirmang sinanay na suporta.",
+      "takeaway_en": "Listen respectfully, protect privacy, and connect to confirmed trained support.",
+      "check": null
+    },
+    {
+      "id": "unnecessary-plastic",
+      "concept_ids": [
+        "m3.plastics-ban"
+      ],
+      "asset_ids": [
+        "mimi-support-environment"
+      ],
+      "takeaway_fil": "Tiyakin ang saklaw at kasalukuyang direktiba; hindi blanket ban sa lahat ng plastic ang aralin.",
+      "takeaway_en": "Check the scope and current directive; this lesson does not treat every plastic item as banned.",
+      "check": null
+    },
+    {
+      "id": "safe-alternative",
+      "concept_ids": [
+        "m3.plastics-ban"
+      ],
+      "asset_ids": [
+        "mimi-support-environment"
+      ],
+      "takeaway_fil": "Kumpirmahin ang non-clinical na alternatibo; protektahan ang kinakailangang ligtas na clinical supplies.",
+      "takeaway_en": "Confirm the non-clinical alternative; protect supplies needed for safe clinical care.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "concept_ids": [
+        "m3.breastfeeding-act",
+        "m3.plastics-ban"
+      ],
+      "asset_ids": [
+        "mimi-support-environment"
+      ],
+      "takeaway_fil": "Magalang na suporta at ligtas na pagbabawas ng basura: makinig, kumpirmahin, saka umalalay.",
+      "takeaway_en": "Respectful support and safe waste reduction: listen, confirm, then help.",
       "check": {
-        "prompt_fil": "Aling gawain ang angkop sa pasilidad?",
-        "prompt_en": "Which facility action is appropriate?",
+        "prompt_fil": "Ano ang pinakamainam na susunod na hakbang ni Mimi?",
+        "prompt_en": "What is Mimi’s best next step?",
         "options": [
           {
-            "fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya.",
-            "en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy."
+            "fil": "Makinig nang pribado at may paggalang; kumpirmahin ang sinanay na suporta at lugar, at itanong sa supervisor ang reusable na lalagyan sa break area habang pinoprotektahan ang clinical supplies.",
+            "en": "Listen privately and respectfully; confirm trained support and the space, and ask the supervisor about reusable containers in the break area while protecting clinical supplies."
           },
           {
-            "fil": "Alisin ang lahat ng sterile na gamit kahit kailangan sa ligtas na pangangalaga.",
-            "en": "Remove all sterile supplies even when necessary for safe care."
+            "fil": "Ipangako agad na may kumpletong lactation station at palaging available na tagasuporta, kahit hindi pa ito nakumpirma.",
+            "en": "Promise a fully equipped lactation station and an always-available support worker before confirming them."
+          },
+          {
+            "fil": "Pilitin ang feeding choice ng magulang para masabing nasunod ang polisiya, saka palitan nang kusa ang sterile na gamit ng reusable na kagamitan.",
+            "en": "Impose a feeding choice to show policy compliance, then independently replace sterile supplies with reusable items."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy. Explain why using the lesson situation."
+        "feedback_fil": "Ang unang sagot ay umaalalay nang may paggalang at kumpirmasyon: hindi pinipilit ang magulang, at hindi nangangako ng hindi pa tiyak na pasilidad o contact. Supervisor ang magpapatibay sa non-clinical na alternatibo. Hindi dahilan ang pagbabawas ng basura para alisin o i-reuse nang kusa ang sterile o kinakailangang clinical supplies.",
+        "feedback_en": "The first response supports the parent with respect and confirmation: it imposes no choice and promises no unverified facility or contact. The supervisor confirms the non-clinical alternative. Reducing waste is not a reason to independently remove or reuse sterile or necessary clinical supplies."
       }
     }
   ],
@@ -47,57 +112,87 @@
     {
       "id": "m3.breastfeeding-act",
       "read_ids": [
-        "section-3"
+        "section-3",
+        "facility-roles",
+        "listen-connect",
+        "check"
       ],
       "slide_ids": [
-        "slide-section-3"
+        "slide-section-3",
+        "slide-facility-roles",
+        "slide-listen-connect",
+        "slide-check"
       ],
       "source_ids": [
-        "m3.breastfeeding-act-source"
+        "manual-policy",
+        "ra10028",
+        "facilitator-policy"
       ]
     },
     {
       "id": "m3.plastics-ban",
       "read_ids": [
-        "section-3"
+        "section-3",
+        "unnecessary-plastic",
+        "safe-alternative",
+        "check"
       ],
       "slide_ids": [
-        "slide-section-3"
+        "slide-section-3",
+        "slide-unnecessary-plastic",
+        "slide-safe-alternative",
+        "slide-check"
       ],
       "source_ids": [
-        "m3.plastics-ban-source"
+        "manual-policy",
+        "dc2021-0486",
+        "facilitator-policy"
       ]
     }
   ],
   "sources": [
     {
-      "id": "m3.breastfeeding-act-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "id": "manual-policy",
+      "title": "DOH BHW Reference Manual (2022), printed p. 6 / PDF p. 14 — breastfeeding facilities and unnecessary plastic",
       "pdf_pages": [
         14
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     },
     {
-      "id": "m3.plastics-ban-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "id": "ra10028",
+      "title": "Republic Act No. 10028, sections 3, 4, 6 and 8 — lactation stations, institutional duties, exemptions and training",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/18122"
+    },
+    {
+      "id": "dc2021-0486",
+      "title": "DOH Department Circular 2021-0486, 6 October 2021, PDF pp. 1–2 — listed unnecessary items, infection control and phased coverage",
       "pdf_pages": [
-        14
+        1,
+        2
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://drive.google.com/file/d/1qZLnjIkqHxrJEbMkOawrznwkeMqRvB-y/view"
+    },
+    {
+      "id": "facilitator-policy",
+      "title": "DOH BHW Facilitator Manual (2022), printed p. 15 / PDF p. 22 — workplace-policy training scope",
+      "pdf_pages": [
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "mimi-support-environment",
+      "path": "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
+      "content_hash": "d1e6bcec984656959b07b8bc32f50b902e2039740a105d8e34502418cfe1d3e3",
+      "alt_fil": "Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol; may hiwalay na upuang may screen at reusable na lalagyan sa mesa.",
+      "alt_en": "BHW Mimi respectfully listens to a parent holding an infant; screened seating and a reusable container on a separate table appear behind them.",
+      "caption_fil": "Makinig, tiyakin ang lokal na suporta, at pangalagaan ang ligtas na kapaligiran.",
+      "caption_en": "Listen, confirm local support, and protect a safe environment.",
+      "review_status": "draft",
+      "provenance": "Original built-in imagegen generation, 2026-10-03, Asia/Manila. Fictional proposed Mimi design: Filipina around 50, shoulder-length straight black hair, lavender polo and navy trousers. No approved Mimi visual reference found on audited main 7ce98d68. All people clothed; screened seating and reusable lunch container are illustrative, not confirmed local facilities. Owner and clinical/policy SME review not recorded. SHA-256 d1e6bcec984656959b07b8bc32f50b902e2039740a105d8e34502418cfe1d3e3. Owner requested character name Mimi on 2026-10-04. The existing no-text image is retained; its original prompt used the proposed name Corazon. Exact original generation prompt: Use case: illustration-story. Create an original landscape educational image for BHW Connect lesson 1.3.2, Breastfeeding and the environment. Natural photographic illustrative style, warm Philippine daylight in an airy, modest, unbranded barangay health station. Main character: fictional BHW Corazon, Filipina around 50, shoulder-length straight black hair, light lavender polo shirt and navy trousers, calm, respectful and attentive. She gently welcomes and listens to a fully clothed Filipina parent around 30 holding a fully clothed infant in a safe natural supported hold. Both adults' faces and the baby's face are visible. Behind them is a simple discreet screened seating nook, an illustrative support-area cue rather than a guarantee of any local facility. A separate modest table to one side has one plain reusable lunch container as a non-clinical waste-reduction cue; no medical supplies. Frame the two adults and infant together centrally, waist-up, with principal faces in central 60 percent; landscape 1536x1024. Natural anatomically correct hands, warm but realistic expressions, clean composition. No exposed feeding, no clinical procedure, no branding, no official signage, no readable text or personal forms, no milk or medicine products, no unsafe medical reuse, no shaming contrasts, no logos or watermark. Proposed Corazon identity for owner review; no existing approved visual reference was found on audited main.\n"
     }
   ]
 }

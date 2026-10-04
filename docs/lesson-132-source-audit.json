@@ -1,0 +1,46 @@
+{
+  "checked_date": "2026-10-03",
+  "base_commit": "7ce98d683d551e9afb13a86acb198d5a4b810409",
+  "sources": [
+    {
+      "id": "manual-policy",
+      "title": "DOH BHW Reference Manual (2022), printed p. 6 / PDF p. 14 — breastfeeding facilities and unnecessary plastic",
+      "pdf_pages": [
+        14
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md",
+      "checked_evidence": "Repository source Markdown PDF page 14; original DOH-distributed PDF retrieved through DOH FOI link. Printed p.6 is shown at the page foot. Lactation-station and single-use-plastic paragraphs checked.",
+      "retrieval_url": "https://drive.google.com/uc?export=download&id=12pvh0MvzhWdHe9XIapXYs3kDAXzcF2RA"
+    },
+    {
+      "id": "ra10028",
+      "title": "Republic Act No. 10028, sections 3, 4, 6 and 8 — lactation stations, institutional duties, exemptions and training",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/18122",
+      "verification_url": "https://lawphil.net/statutes/repacts/ra2010/ra_10028_2010.html",
+      "checked_evidence": "Statute text checked: amended definitions section 3(p), applicability/exemption section 4, new section 11 via section 6, and continuing training via section 8. Institutional requirements do not establish any specific BHS actual capacity.",
+      "limits": "Supreme Court page timed out; Lawphil statute used for exact text. EMB IRR PDF returned HTTP 403; no added IRR-only claim."
+    },
+    {
+      "id": "dc2021-0486",
+      "title": "DOH Department Circular 2021-0486, 6 October 2021, PDF pp. 1–2 — listed unnecessary items, infection control and phased coverage",
+      "pdf_pages": [
+        1,
+        2
+      ],
+      "url": "https://drive.google.com/file/d/1qZLnjIkqHxrJEbMkOawrznwkeMqRvB-y/view",
+      "official_landing_url": "https://sites.google.com/view/doh-hfdb/updates/dc-2021-0486",
+      "checked_evidence": "Original two-page signed circular retrieved from HFDB official linked Drive PDF. Page 1: named items and thickness thresholds; COVID-era infection-control context, three-phase transition. Page 2: phase 1 1 January 2022 DOH offices personnel/visitors; phase 2 1 July 2022 healthcare workers/personnel in government hospitals/TRCs/other health facilities; phase 3 1 January 2023 patients/companions/other clients in those settings; facility directives encouraged.",
+      "limits": "No clinical-supply exception list is asserted: the safety boundary is a BHW role safeguard, not an invented exemption. Targeted official-source search found no later amendment; absence of a search result does not prove none exists. Confirm current local directives."
+    },
+    {
+      "id": "facilitator-policy",
+      "title": "DOH BHW Facilitator Manual (2022), printed p. 15 / PDF p. 22 — workplace-policy training scope",
+      "pdf_pages": [
+        22
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md",
+      "checked_evidence": "Repository source Markdown PDF p.22 / printed p.15: at least four hours for the whole competency; three workplace outcomes and unnecessary-plastics topic. No specific parent-support role-play or observation rubric is prescribed there.",
+      "limits": "Mirror PDF initially returned 403; authored activities here are adaptations, not quotations or prescribed official exercises. Supplemental PDF retrieval audit will record actual result."
+    }
+  ]
+}

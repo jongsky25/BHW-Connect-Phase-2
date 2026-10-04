@@ -612,3 +612,6 @@ body {
 .reference-story[data-lesson="bhw-roles-application"] .reference-story-art img {
   object-position: 68% 45%;
 }
+
+/* Mimi: contain the full scene so every face stays visible. */
+.reference-story-art img[src*="mimi-support-environment"] { object-fit: contain; object-position: center; background: #f1ebe2; }

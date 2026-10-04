@@ -1,0 +1,50 @@
+name: Lesson 1.3.2 draft Gemini audio
+
+# Temporary draft build: uses the existing repository key without exposing it.
+# No database or release operations. Remove after importing the verified media.
+on:
+  push:
+    branches: [codex/lesson-132-story-gemini]
+    paths:
+      - .github/workflows/lesson-132-draft-audio.yml
+      - content/training/day1-basic-competencies/modules/03-polisiya-bhs/lessons/bhs-support-environment/read.*.md
+      - scripts/remotion-bhs-support-environment-narrate.mjs
+      - remotion/src/bhs-support-environment/narration.ts
+
+permissions:
+  contents: read
+
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Generate only the target Read tracks
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run training:narrate -- --modules 03-polisiya-bhs --lessons bhs-support-environment --provider gemini --apply --concurrency 2
+      - name: Generate measured bilingual story speech
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/remotion-bhs-support-environment-narrate.mjs fil
+          node scripts/remotion-bhs-support-environment-narrate.mjs en
+      - name: Verify explicit and default reruns are current
+        run: |
+          npm run training:narrate -- --modules 03-polisiya-bhs --lessons bhs-support-environment --provider gemini
+          npm run training:narrate -- --modules 03-polisiya-bhs --lessons bhs-support-environment
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson-132-draft-audio
+          retention-days: 7
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/03-polisiya-bhs/bhs-support-environment/
+            remotion/public/bhs-support-environment/narration-*

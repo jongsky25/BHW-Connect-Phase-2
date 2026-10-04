@@ -233,6 +233,12 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Tiyakin ang susunod na hakbang", "Confirm the next step"),
           }
+      : lesson?.lesson_key === "bhs-support-environment"
+        ? {
+            src: "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
+            alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
+            caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
+          }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
