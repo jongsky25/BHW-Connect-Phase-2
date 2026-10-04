@@ -1,0 +1,52 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Pronounce Mimi MEE-mee. Let her proposal sound curious and practical; emphasize one small review step, service needs and agreed follow-up with deliberate gentle pauses. Vary pitch and pace naturally while keeping one consistent narrator timbre. Read exactly the authored words, without fillers, invented approval or promises. End clearly and encouragingly.",
+  "durationSeconds": 76.617,
+  "beats": [
+    {
+      "zone": "continuation",
+      "index": 0,
+      "text": "Mimi confirms another activity is planned in the meeting area. The reminder of who checks the schedule is unclear. How could one small suggestion help?",
+      "start_ms": 0,
+      "end_ms": 11480
+    },
+    {
+      "zone": "concern",
+      "index": 1,
+      "text": "State the factual concern and confirmed schedule. No blame, patient data or invented savings. Separate what is known from what is still unknown.",
+      "start_ms": 11780,
+      "end_ms": 21980
+    },
+    {
+      "zone": "proposal",
+      "index": 2,
+      "text": "Mimi proposes reviewing whether a short meeting-end checklist is needed. Check the existing process first. This is a proposal, not an instruction to implement immediately.",
+      "start_ms": 22280,
+      "end_ms": 35520
+    },
+    {
+      "zone": "reason",
+      "index": 3,
+      "text": "The reason: clearer schedule checks and handover. Verify time, materials and service needs. Mimi does not promise approval, repairs or a savings amount.",
+      "start_ms": 35820,
+      "end_ms": 49380
+    },
+    {
+      "zone": "followup",
+      "index": 4,
+      "text": "Confirm responsibility and authority. Agree who will review, what to check and when to speak again. Review first; no new checklist while a decision is pending.",
+      "start_ms": 49680,
+      "end_ms": 62840
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Practice: a concern, one proposal and reason, local checks and follow-up. Protect service. Workplace skill is observed separately; online completion alone is insufficient.",
+      "start_ms": 63140,
+      "end_ms": 76540
+    }
+  ]
+}

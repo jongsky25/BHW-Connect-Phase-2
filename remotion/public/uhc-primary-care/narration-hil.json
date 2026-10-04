@@ -1,0 +1,54 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "delivery_style": "Speak in natural Iloilo and Western Visayas Hiligaynon (Ilonggo) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and gently melodic sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s support warmth. Use purposeful pitch and pace changes, slowing for benefit, the resident’s chosen or available clinic and locally confirmed instructions. Emphasize that the clinician decides the clinical referral. Say YAKAP as YAH-kap, the Tagalog word for hug, never individual letters. Keep one consistent female Kore narrator voice in headings and every quoted line, including Mang Ernesto; vary intonation without male voice acting. This is one female teacher reading a text, not a cast performing dialogue. Keep the same feminine voice timbre and comfortable register from the first word to the last word of each individual utterance; never switch speaker or portray a male character. Say Vlanche as one syllable vlanch. Articulate every supplied consonant and syllable clearly. Use Hiligaynon kag and sang exactly where written. Clearly articulate idalom with a d, never ilalom; sadto with its dt consonants; dal-on with l, never dar-on; and iya dal-on as two separate words. Never replace sang with sa or contract words. Avoid fillers, false starts, inserted connectors and repeated syllables. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+  "audio_sha256": "e89e9a512ee0a30688f5e27449ac6cebcc92e7acb670cc1b045558afa22b524f",
+  "script_hash": "1d2716b240c186432072a2025555812a51766d42fdd78ad0aed0b7f13fff571c",
+  "durationSeconds": 99.213,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Nagpamangkot liwat si Mang Ernesto kay BHW Vlanche: Diin ako magsugod para sa checkup? Kag kon may referral, diin ako magkadto? Wala nagpakot si Vlanche.",
+      "start_ms": 0,
+      "end_ms": 11280
+    },
+    {
+      "zone": "four-changes",
+      "index": 1,
+      "text": "Gindumdom nila ang apat ka pagbag-o sa giya: pagkalakip sa PhilHealth, konsultang outpatient, pagpili sang primary care provider, kag mas maayo nga sistema sang referral. Natalakay na ang una; subong sundan nila ang tatlo pa.",
+      "start_ms": 11580,
+      "end_ms": 27980
+    },
+    {
+      "zone": "outpatient",
+      "index": 2,
+      "text": "May outpatient kag primary care nga mga benepisyo ang PhilHealth YAKAP, pero may mga pagsulundan ang tagsa ka serbisyo. Mamangkot si Vlanche sa health team kon ano nga benepisyo ang nagakaigo sa konsulta ni Mang Ernesto kag sa diin nga accredited clinic ini makuha.",
+      "start_ms": 28280,
+      "end_ms": 44720
+    },
+    {
+      "zone": "provider",
+      "index": 3,
+      "text": "Makapili si Mang Ernesto sang primary care clinic. Ang pagkalakip sa PhilHealth wala nagakahulugan nga nakapili na siya. Buligan siya ni Vlanche sa pag-usisa sa RHU ukon PhilHealth sang kasamtangan nga mga pilian kag paagi sang pagpili.",
+      "start_ms": 45020,
+      "end_ms": 61180
+    },
+    {
+      "zone": "referral",
+      "index": 4,
+      "text": "Kon kinahanglan sang iban nga lebel sang pag-atipan, ang clinician ang nagadesisyon sang referral. Mahimo nga maglainlain ang lokal nga mga proseso. Mamangkot si Vlanche sa health team sang nagakaigo nga contact kag mga panudlo; indi siya magpili sang ospital paagi sa pagpakot.",
+      "start_ms": 61480,
+      "end_ms": 81600
+    },
+    {
+      "zone": "next-step",
+      "index": 5,
+      "text": "Nagsiling si Vlanche: Siguruhon naton ang inyo clinic, ang benepisyo para sa sini nga konsulta, kag ang masunod nga tikang. Kon magrekomenda sang referral ang clinician, kuhaon naton ang lokal nga proseso. Buligan ko kamo nga mamangkot sa health team.",
+      "start_ms": 81900,
+      "end_ms": 99140
+    }
+  ]
+}

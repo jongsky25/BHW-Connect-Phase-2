@@ -5,46 +5,120 @@
       "m3.competency"
     ],
     "layout": "scene",
-    "heading_fil": "Paano tumanggi nang magalang",
-    "heading_en": "How to decline respectfully",
-    "display_fil": "Kilalanin ang alok.\nIpaliwanag ang polisiya.\nHuwag mangako ng kapalit.\nIdulog sa namamahala ang susunod na hakbang.",
-    "display_en": "Acknowledge the offer.\nExplain the policy.\nDo not promise an exchange.\nRefer the next step to the supervisor.",
+    "heading_fil": "Malinaw at magalang",
+    "heading_en": "Clear and respectful",
+    "display_fil": "Salamat po sa pagpunta\nHindi ko po tatanggapin o ipapaskil\nIpapaalam ko sa namamahala",
+    "display_en": "Thank you for coming\nI will not accept or display these\nI will inform the supervisor",
     "asset_ids": [
-      "practice-map"
+      "mimi-respectful-refusal"
     ],
     "check": null,
-    "narration_fil": "Bumalik tayo kay BHW Mimi. Ngayong alam na niya ang batayan, paano niya sasabihin ito sa kinatawan ng kumpanya nang hindi nagmukhang personal na pag-atake?\n\nAng tamang paraan: kilalanin muna ang mabuting intensyon ng bisita, saka ipaliwanag ang polisiya nang direkta at malinaw — hindi pagpapaliban, hindi pagpapanggap na hindi alam. \"Naiintindihan ko po ang gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng milk substitute sa loob ng BHS, ayon sa Milk Code. Hindi rin po kami puwedeng tumanggap ng sample, regalo, o iba pang alok mula sa kumpanya ng gatas. Sasabihin ko po sa aming midwife na dumaan kayo.\" Hindi nagmumungkahi si Mimi ng ibang paraan para tumulong ang kumpanya, at wala siyang ipinapangakong kapalit. Sa araw ding iyon, sinasabihan niya ang midwife tungkol sa pagbisita.",
-    "narration_en": "Mimi knows the policy. She needs to explain it politely to the company representative. How can she give a clear, respectful response?\n\nThe right approach: first acknowledge the visitor's good intention, then explain the policy directly and clearly — not stalling, not pretending not to know. \"I understand you want to help, but we're not allowed to promote milk substitutes inside the BHS, under the Milk Code. We also can't take samples, gifts or other offers from milk companies. I'll let our midwife know you came by.\" Mimi does not suggest any other way for the company to help, and she promises nothing in return. That same day she tells the midwife about the visit."
+    "narration_fil": "Bumalik ang kinatawan ng kumpanya sa BHS. May infant-formula samples para sa mga nanay, product poster, at personal na regalong kapalit ng tulong sa promosyon. Alam ni Mimi na hindi niya tatanggapin ang alok na ito. Paano niya sasabihin ang hindi nang may paggalang?\n\nSinabi ni Mimi: “Salamat po sa pagpunta. Hindi ko po tatanggapin ang mga sample at regalo o ipapaskil ang product poster. Saklaw ito ng Milk Code: hindi ginagamit ang pasilidad para sa ganitong promosyon, at hindi tinatanggap ang insentibong kapalit ng pagpromote. Ipapaalam ko ang detalye sa aming midwife o namamahala.” Hindi niya kinukuha ang mga bagay, ipinapalagay ang motibo ng bisita, o nangangakong may pahintulot mamaya. Opsyonal ang kuwento; maaari mong tapusin ang Read o Slides nang hindi nanonood.",
+    "narration_en": "The company representative returns to the BHS with infant-formula samples for mothers, a product poster, and a personal gift in return for promotion. Mimi knows she will decline this offer. How can she say no respectfully?\n\nMimi says: “Thank you for coming. I will not accept the samples or gift, or display the product poster. This falls under the Milk Code: the facility cannot be used for this promotion, and an inducement for promotion cannot be accepted. I will tell our midwife or facility supervisor the details.” She does not take the items, assume the visitor’s motives, or promise permission later. The story is optional; you can complete Read or Slides without watching it."
+  },
+  {
+    "id": "slide-match-policy",
+    "concept_ids": [
+      "m3.competency"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Itugma ang paliwanag sa produkto",
+    "heading_en": "Match the reason to the product",
+    "display_fil": "Formula promotion: Milk Code\nPrescription samples: pharmaceutical order\nHindi tiyak? Huminto at magpatulong",
+    "display_en": "Formula promotion: Milk Code\nPrescription samples: pharmaceutical order\nUncertain? Pause and ask for guidance",
+    "asset_ids": [
+      "mimi-respectful-refusal"
+    ],
+    "check": null,
+    "narration_fil": "Hindi iisang polisiya ang ginagamit sa lahat ng produkto. Para sa infant-formula samples para sa mga nanay, product poster sa BHS, at regalong kapalit ng promosyon sa unang sitwasyon, Milk Code ang batayan.\n\nKung prescription-medicine samples naman ang hinihiling na ipamigay ni Mimi sa mga pamilya, ibang paliwanag ang kailangan: “Hindi ko po maaaring ipamigay ang prescription samples sa publiko. Sa pharmaceutical order, para sa licensed physicians at dentists ang mga sample sa ilalim ng mga tuntunin nito. Idudulog ko ang detalye sa namamahala.” Saklaw ng order ang prescription pharmaceutical products at medical devices. May kondisyong pinapayagang educational items at scientific activities; hindi ito awtomatikong pahintulot sa BHW. Kung hindi tiyak ang produkto o kondisyon, sabihin ang hindi pa alam, huwag tumanggap habang tinitiyak, at humingi ng gabay. Hindi ginagawang legal ng pagdulog ang ipinagbabawal na promosyon.",
+    "narration_en": "Different products need different policy explanations. The first situation involves infant-formula samples for mothers, a BHS product poster, and a gift for promotion; the Milk Code is the relevant basis.\n\nIf Mimi is asked to give prescription-medicine samples to families instead, she needs a different explanation: “I cannot distribute prescription samples to the public. Under the pharmaceutical order, samples are for licensed physicians and dentists under its rules. I will refer the details to the supervisor.” That order covers prescription pharmaceutical products and medical devices. Some educational items and scientific activities are permitted under conditions; this is not automatic permission for a BHW. If the product or conditions are uncertain, state what is unknown, pause acceptance while checking, and ask for guidance. Referral cannot make prohibited promotion lawful."
+  },
+  {
+    "id": "slide-hold-boundary",
+    "concept_ids": [
+      "m3.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Kapag nagpumilit ang bisita",
+    "heading_en": "When the visitor presses",
+    "display_fil": "Libre ≠ pahintulot\nHuwag iwan ang mga bagay\nWalang lihim o alternatibong promosyon",
+    "display_en": "Free ≠ permission\nPlease do not leave the items\nNo secret or alternative promotion",
+    "asset_ids": [
+      "mimi-respectful-refusal"
+    ],
+    "check": null,
+    "narration_fil": "“Libre naman. Iwan ko na lang, tapos kayo na ang bahala,” sabi ng bisita. Hindi kailangang makipagtalo o magbigay ng palusot si Mimi. Inuulit niya ang hangganan sa mahinahong boses: “Nauunawaan ko po ang alok, pero hindi ko po tatanggapin o ipamimigay ang mga ito. Mangyaring huwag po itong iwan sa amin. Ipapaalam ko ang pagbisita sa namamahala.”\n\nHindi siya nakikipagkasundo na sa labas na lang ipamigay, tanggapin nang lihim, o ipaskil muna habang hinihintay ang midwife. Hindi rin niya sinasabing siguradong maaaprubahan ang ibang alok. Kung hindi maayos ang usapan, humingi ng tulong sa namamahala ayon sa lokal na proseso. Ang paggalang ay nasa paraan ng pagsasalita; hindi ito nangangahulugang pagsang-ayon.",
+    "narration_en": "“It is free. I will just leave it, and you can decide later,” the visitor says. Mimi does not need to argue or invent an excuse. She calmly repeats the boundary: “I understand the offer, but I will not accept or distribute these items. Please do not leave them with us. I will inform the supervisor about your visit.”\n\nShe does not arrange distribution outside the facility, accept secretly, or display the poster while waiting for the midwife. She does not promise that another offer will be approved. If the conversation becomes difficult, she asks the supervisor for help through the local process. Respect is expressed in how she speaks; it does not require agreement."
+  },
+  {
+    "id": "slide-report-facts",
+    "concept_ids": [
+      "m3.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Ipabatid ang nangyari",
+    "heading_en": "Report what happened",
+    "display_fil": "Produkto · alok · hinihinging gawain\nSariling tugon · oras · lugar\nLokal na proseso; walang datos ng pasyente",
+    "display_en": "Product · offer · requested activity\nYour response · time · place\nLocal process; no patient data",
+    "asset_ids": [
+      "mimi-respectful-refusal"
+    ],
+    "check": null,
+    "narration_fil": "Pagkatapos ng usapan, ipinaalam ni Mimi sa midwife o namamahala ang pagbisita ayon sa lokal na proseso. Sa kathang-isip na halimbawang ito, nag-ulat siya sa araw ding iyon. Hindi ito bagong legal na deadline.\n\nSinabi niya: “May kinatawang nag-alok ng infant-formula samples para sa mga nanay, poster sa BHS, at regalo kapalit ng promosyon. Tumanggi ako at walang tinanggap, ipinaskil, o ipinamahagi. Sinabi kong ipapaalam ko ang detalye sa inyo.” Kung kailangan ng tala, ilagay ang oras, lugar, produkto, alok, hinihinging gawain, at sariling tugon. Sundin ang lokal na patakaran sa paghawak ng tala; huwag isama ang datos ng pasyente o haka-haka sa motibo. Ipatukoy ang susunod na hakbang sa namamahala. Huwag sisihin ang mga pamilya sa feeding choices; health professional ang sasagot sa feeding o clinical questions.",
+    "narration_en": "After the conversation, Mimi informs the midwife or facility supervisor through the local process. In this fictional example, she reports that day. This is not a new legal deadline.\n\nShe says: “A representative offered infant-formula samples for mothers, a BHS poster, and a gift for promotion. I declined and accepted, displayed, and distributed nothing. I said I would tell you the details.” If a record is required, include the time, place, product, offer, requested activity, and her response. Follow local rules for handling records; omit patient data and guesses about motives. Ask the supervisor to determine the next step. Do not blame families for feeding choices; a health professional handles feeding or clinical questions."
   },
   {
     "id": "slide-section-7",
     "concept_ids": [
       "m3.competency"
     ],
+    "layout": "comparison",
+    "heading_fil": "Ihambing ang dalawang tugon",
+    "heading_en": "Compare two responses",
+    "display_fil": "Danilo: tumanggap + alternatibong pamimigay\nMimi: malinaw na hindi + tamang dahilan\nWalang kasunduan; factual na ulat",
+    "display_en": "Danilo: accepts + alternative distribution\nMimi: clear refusal + accurate reason\nNo deal; factual report",
+    "asset_ids": [
+      "mimi-respectful-refusal"
+    ],
+    "check": null,
+    "narration_fil": "Parehong infant-formula offer ang pinag-uusapan. Tinanggap ni Danilo ang mga sample para sa mga nanay at regalo dahil “baka bastos ang tumanggi.” Sinabi niyang puwedeng sa labas na lang ipamigay. Nalampasan ang hangganan sa mismong pagtanggap at kasunduan; hindi ito naitatama ng magalang na tono.\n\nSi Mimi ay nagpasalamat sa pagbisita, malinaw na tumanggi sa mga sample, regalo, at poster, ipinaliwanag ang Milk Code na naaangkop sa alok, at walang iminungkahing kapalit na promosyon. Ipinaalam niya ang katotohanan sa namamahala. Sa medicine-sample situation, pharmaceutical order ang ipapaliwanag niya, hindi Milk Code. Ang magandang tugon ay may paggalang, tamang dahilan, at kilos na tugma sa sinabi.",
+    "narration_en": "Both responses concern the same infant-formula offer. Danilo accepts the samples for mothers and gift because “saying no might be rude.” He suggests distributing them outside instead. Accepting and arranging an alternative cross the boundary; a polite tone does not correct that.\n\nMimi thanks the visitor, clearly declines the samples, gift, and poster, explains the Milk Code as it applies to the offer, and makes no alternative promotional arrangement. She informs the supervisor of the facts. In the medicine-sample situation, she would use the pharmaceutical explanation, not the Milk Code. A good response combines respect, an accurate reason, and actions consistent with the refusal."
+  },
+  {
+    "id": "slide-refusal-check",
+    "concept_ids": [
+      "m3.competency"
+    ],
     "layout": "decision",
-    "heading_fil": "Mali kumpara sa tama: ang alok ng kumpanya",
-    "heading_en": "Wrong versus right: the company's offer",
-    "display_fil": "Hindi angkop: tumanggap ng regalo kapalit ng promosyon.\nAngkop: ipaliwanag ang polisiya at idulog ang alok sa namamahala.",
-    "display_en": "Not appropriate: accept a gift in exchange for promotion.\nAppropriate: explain policy and refer the offer to the supervisor.",
-    "asset_ids": [],
+    "heading_fil": "Isagawa ang malinaw na pagtanggi",
+    "heading_en": "Practice a clear refusal",
+    "display_fil": "Prescription samples para sa mga pamilya\nRegalo + “iwan muna ang box”\nAno ang sasabihin at gagawin mo?",
+    "display_en": "Prescription samples for families\nGift + “leave the box for now”\nWhat will you say and do?",
+    "asset_ids": [
+      "mimi-respectful-refusal"
+    ],
     "check": {
-      "prompt_fil": "Paano tatanggi nang magalang?",
-      "prompt_en": "How can you decline respectfully?",
+      "prompt_fil": "Alin ang pinakamalinaw na tugon sa alok ng prescription samples?",
+      "prompt_en": "Which is the clearest response to the prescription-sample offer?",
       "options": [
         {
-          "fil": "Ipaliwanag ang polisiya at idulog ang alok sa namamahala.",
-          "en": "Explain the policy and refer the offer to the supervisor."
+          "fil": "“Salamat po sa pagpunta. Hindi ko po tatanggapin o ipamimigay ang prescription samples o regalo. Hindi para sa pamimigay sa publiko ang mga sample sa pharmaceutical order. Huwag po munang iwan ang box; ipapaalam ko ang detalye sa namamahala.”",
+          "en": "“Thank you for coming. I will not accept or distribute the prescription samples or gift. The pharmaceutical order does not permit samples for distribution to the public. Please do not leave the box; I will inform the supervisor of the details.”"
         },
         {
-          "fil": "Pumayag muna para hindi mapahiya ang bisita.",
-          "en": "Agree first to avoid embarrassing the visitor."
+          "fil": "“Salamat po. Iwan muna ang box; wala pa namang pamimigay hangga’t hindi bumabalik ang midwife.”",
+          "en": "“Thank you. Leave the box for now; nothing will be distributed until the midwife returns.”"
+        },
+        {
+          "fil": "“Bawal po sa Milk Code ang lahat ng medicine samples, pero puwede kong itanong kung papayag sila sa labas ng BHS.”",
+          "en": "“The Milk Code bans all medicine samples, but I can ask whether they will allow distribution outside the BHS.”"
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Ipaliwanag ang polisiya at idulog ang alok sa namamahala. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Explain the policy and refer the offer to the supervisor. Explain why using the lesson situation."
+      "feedback_fil": "Tamang pharmaceutical explanation ang gamit ng unang tugon. Walang pagtanggap, pamimigay, o pangakong exception. Ang pag-iwan ng box ay pagtanggap pa rin; ang Milk Code ay maling batayan para sa prescription samples. Hindi lunas ang paglipat sa labas. Mag-ulat ng katotohanan ayon sa lokal na proseso.",
+      "feedback_en": "The first response uses the correct pharmaceutical explanation, without acceptance, distribution, or a promised exception. Keeping the box still accepts the offer; the Milk Code is the wrong basis for prescription samples. Moving outside does not fix the problem. Report facts through the local process."
     },
-    "narration_fil": "**Mali**: Tinanggap ni BHW Danilo ang mga sample at regalo mula sa kinatawan ng kumpanya ng gamot, dahil \"libre naman, at baka magkasala pa ako kung tatanggihan ko.\" Ipinamigay niya ang mga sample sa mga pasyente nang walang paliwanag kung bakit ito ang inirekomenda.\n\n**Tama**: Magalang na tumanggi si Mimi, ipinaliwanag ang batayan mula sa Milk Code, walang pinasok na anumang kasunduan sa kumpanya, at sinabihan ang midwife tungkol sa pagbisita sa araw ding iyon.\n\nAng pagkakaiba ay hindi kabaitan o kawalan nito — ang pagkakaiba ay kung sino ang nagpapasya kung ano ang mabuti para sa pasyente: ang BHS batay sa polisiya, o ang kumpanya batay sa benepisyo nito.",
-    "narration_en": "**Wrong**: BHW Danilo accepted the samples and gifts from the medicine company's representative, because \"it's free anyway, and maybe it's rude to say no.\" He handed the samples out to patients with no explanation of why they were being recommended.\n\n**Right**: Mimi respectfully declined, explained the basis in the Milk Code, made no deal of any kind with the company, and told the midwife about the visit that same day.\n\nThe difference isn't kindness or its absence — the difference is who gets to decide what's good for the patient: the BHS, guided by policy, or the company, guided by its own benefit."
+    "narration_fil": "Isang kinatawan ang humihiling na ipamigay mo sa mga pamilya ang prescription-medicine samples. May personal na regalo at sinasabing puwedeng iwan ang box habang wala ang midwife. Piliin ang tugong malinaw, magalang, at nasa tungkulin ng BHW. Pagkatapos, sabihin ito sa sariling pananalita nang hindi kumukuha ng mga bagay. Hindi kailangang kabisaduhin ang numero ng batas.",
+    "narration_en": "A representative asks you to give prescription-medicine samples to families. There is a personal gift, and the visitor offers to leave the box while the midwife is away. Choose a clear, respectful response within the BHW role. Then practice it in your own words without taking the items. You do not need to memorize a law number."
   }
 ]
