@@ -125,7 +125,7 @@ test("committed narration is current for every converted subchapter", () => {
   const items = planReferenceNarration(modules, manifest, (src) => (existsSync(file(src)) ? sha256(readFileSync(file(src))) : null));
   const stale = items.filter((i) => i.action !== "skip").map((i) => `${i.lessonKey}/${i.sectionId}/${i.language}`);
   assert.deepEqual(stale, [], "run `npm run training:narrate -- --apply`");
-  assert.equal(referencedSources(manifest).size, items.length, "no manifest entries beyond the converted lessons");
+  assert.equal(referencedSources({ lessons: manifest.lessons }).size, items.length, "no current manifest entries beyond the converted lessons");
   for (const item of items) {
     const frames = mp3AudioFrames(readFileSync(file(item.src)));
     const seconds = frames.reduce((n, f) => n + f.samples / f.sampleRate, 0);

@@ -85,7 +85,7 @@ export default async function AssessorStudyPage({params}:{params:Promise<{progra
       modules={[subchapter as CourseModule]} lessonId={lesson.id} baseHref={`${base}/${subchapter.id}`} returnHref={`${base}/${subchapter.id}`}
       locale={en?'en':'fil'} readOnly={false} assessorChapterId={chapter.id} lessonNumber={study.entries.findIndex(e=>e.lesson?.id===lesson.id)+1} lessonCount={study.total}
       nextLessonHref={next?href(next):undefined}
-      narration={narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil')}/>;
+      narration={narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil',revision.read_sections)}/>;
   }
   return <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-10 sm:px-6">
     <Breadcrumbs items={crumbs}/>

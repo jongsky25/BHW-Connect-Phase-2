@@ -226,6 +226,11 @@ body {
 }
 
 /* Keep all three people visible in the primary-care conversation at any width. */
+.reference-story[data-lesson="bhs-promotions"] .reference-story-art img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
 .reference-story[data-lesson="uhc-primary-care"] .reference-story-art img {
   object-fit: contain;
   object-position: 50% 50%;

@@ -1,84 +1,64 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na tingnan ang alok ng isang kumpanya sa BHS (sample, tarpaulin, regalo), sabihin kung aling polisiya ang saklaw nito, at banggitin ang unang hakbang. Ang polisiya ay ang Milk Code (EO 51) kung milk substitute, o ang etikang tuntunin sa pharmaceutical promotion kung gamot. Ang unang hakbang ay huwag tanggapin ang kapalit at idulog ang alok sa namamahala para matiyak ang kasalukuyang polisiya.
+Makilala ng BHW ang alok ng kumpanya: produkto, hinihinging promosyon, lugar/kausap, at insentibo; maihiwalay ang Milk Code sa tuntunin para sa prescription products at medical devices; huminto sa pagtanggap, pagpaskil, at pamimigay at makipag-ugnayan sa namamahala. Pagkilala at pagdulog ang inoobserbahan. Para sa aralin 1.3.3 ang detalyadong pagtanggi.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 50 minuto sa harapang sesyon. Ito ang 20 minutong pambungad na role-play ng bisita sa BHS at mga kalahati ng 60 minuto para sa "apat na polisiya" (ang dalawang bawal sa promosyon), ayon sa talahanayan ng oras sa gabay ng subchapter. Ang kabilang kalahati ay para sa "Breastfeeding at kapaligiran". Mga 5 minuto ang sariling pag-aaral ng aralin (dalawang maikling seksyon at isang self-check).
-- **Kagamitan:** manila paper at marker; ang slides ng aralin ("Ang bisita sa BHS" at "Dalawang bawal sa promosyon"); simpleng props para sa role-play (walang lamang kahon bilang "sample", isang papel bilang "tarpaulin"); mga offer card para sa gawaing pagsasanay: isa para sa kumpanya ng gatas at isa para sa kumpanya ng gamot.
+Mungkahing 35 minutong gawain sa loob ng umiiral na apat na oras na module sa polisiya ng BHS; hindi bagong sapilitang dagdag-oras. Self-study: mga 8 minuto.
 
-## [prepare] Paghahanda
+Gamitin ang anim na screen, opsyonal na kuwento, worksheet ng apat na detalye, dalawang unbranded offer card, at kasalukuyang lokal na gabay. Huwag magdala ng totoong promotional samples o records ng pasyente.
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Alamin kung sino ang namamahala sa BHS ng mga kalahok (kadalasan ang midwife o taga-RHU) at paano nakararating sa kanila ang alok ng kumpanya.
-- Kabisaduhin ang pananalita ng aralin: nililimitahan ng Milk Code (EO 51) ang promosyon ng saklaw na breastmilk substitutes sa health-care system at mga insentibo sa health workers. Sa pharmaceutical promotion, may etikang tuntunin din; binabanggit ng pinagmulang materyal ang DOH AO 2015-0053.
-- Ang araling ito ay tungkol sa **pagkilala sa alok at sa unang hakbang**. Ang pananalita ng pagtanggi ay nasa susunod na aralin, "Magalang na pagtanggi". Huwag pa itong buong pagsanayan dito. Huwag ipaliwanag ang detalye o exceptions ng AO 2015-0053: sinasabi mismo ng aralin na kailangan pang repasuhin ang eksaktong saklaw nito. Huwag ituro na bawal ang lahat ng pakikipag-ugnayan sa kumpanya.
+## [prepare] Maghanda
 
-## [opening] Pambungad
+Tiyakin kung sino ang namamahala sa alok sa pasilidad at paano nag-uulat ang BHW ng mga detalye. Markahan ang hindi alam na contact o proseso bilang “kailangang tiyakin.” Basahin ang source audit at kaugnay na polisiya. Ihanda ang A (formula samples para sa mga nanay, BHS poster, regalong kapalit ng promosyon) at B (anatomical model para sa scientific activity na iniugnay ng namamahala, walang endorsement). Hindi awtomatikong aprubado ang B; kailangang tiyakin ang mga kondisyon. Walang feeding o prescribing exercise.
 
-Itanong sa grupo ang pambungad na tanong ng module: *"May nangyari na ba sa inyo na inalok kayo ng regalo ng isang kumpanya kapalit ng promosyon? Ano ang ginawa ninyo?"* Isulat ang mga sagot sa manila paper nang hindi hinuhusgahan. Pagkatapos, gampanan mo mismo ang kinatawan ng kumpanya ng gatas, hawakan ang props, at sabihin: *"Puwede po bang ilagay namin ito sa loob, at ipamigay ninyo sa mga nanay? May konting regalo din po kami para sa inyo."* Tanungin ang isang boluntaryo: *"Ano ang sasabihin mo ngayon mismo?"* Huwag munang itama ang sagot.
+## [opening] Panimula
+
+Basahin ang eksena ng bisita ni Mimi o patugtugin ang opsyonal na kuwento (3 minuto). Ipaulit kung ano ang ipinagagawa ng bisita kay Mimi. Ilagay sa board ang nasabing katotohanan lamang; huwag hulaan ang motibo ng kinatawan.
 
 ## [steps] Mga hakbang
 
-1. **Eksena (Read "Ang bisita sa BHS", unang slide).** Ikuwento ang nangyari kay Corazon. Itanong: *"Ano mismo ang inaalok, at ano ang hinihingi kapalit nito?"* Ilista pareho sa manila paper: sample, tarpaulin, regalo, kapalit ng promosyon sa mga nanay. Basahin nang malakas ang slide: may alok na regalo kapalit ng promosyon; huwag tanggapin agad; idulog sa namamahala at tingnan ang polisiya.
-2. **Bakit kailangan ng batayan ang pagtanggi.** Itanong: *"Kung 'ayaw ko' lang ang sinabi ni Corazon, ano kaya ang isasagot ng bisita?"* Ipakita na mas malakas ang pagtanggi kapag alam mo ang polisiyang nasa likod nito.
-3. **Dalawang bawal sa promosyon (Read "Dalawang bawal sa promosyon", ikalawang slide).** Ipakita ang dalawa bilang isang grupo, gaya ng mungkahi ng script ng module: gatas sa isa, gamot sa isa. Nililimitahan ng Milk Code (EO 51) ang promosyon ng saklaw na breastmilk substitutes sa health-care system at mga insentibo sa health workers, kaya huwag tumanggap ng regalo kapalit ng pagpromote ng mga produktong ito. May etikang tuntunin din sa pharmaceutical promotion; binabanggit ng pinagmulang materyal ang DOH AO 2015-0053. Itanong: *"Ano ang pareho sa dalawang ito?"* Gabayan ang grupo sa prinsipyo: walang kumpanya ang dapat makaimpluwensya sa serbisyong ibinibigay sa loob ng barangay health station.
-4. **Ang hindi dapat gawin nang mag-isa.** Ituro ang huling linya ng slide: tiyakin ang saklaw; huwag mag-apruba nang mag-isa. Itanong: *"Sa BHS ninyo, kanino ninyo dadalhin ang alok na ito?"* Idiin na hindi itinuturing ng aralin na magkakapareho ang lahat ng pakikipag-ugnayan sa kumpanya. Ang unang hakbang ay idulog at tiyakin, hindi magpasya nang mag-isa, pumayag man o itaboy ang bisita.
-5. **Self-check.** Basahin nang malakas ang tanong ng check at hayaang mag-usap ang grupo bago ibigay ang sagot. Ipaliwanag sa isang BHW ang sagot gamit ang sitwasyon ni Corazon.
+1. **Kilalanin ang alok (6 minuto).** Punan ang apat na kolum: produkto, promosyon, lugar/kausap, regalo/insentibo. Ano ang alam at dapat pang tiyakin?
+2. **Ihiwalay ang paksa ng polisiya (6 minuto).** Saklaw na milk substitutes at kaugnay na produkto sa Milk Code; prescription products at medical devices sa pharmaceutical order. Ipaliwanag ang facility promotion at insentibo. Hindi nag-aapruba ng exception ang BHW.
+3. **Unang hakbang (5 minuto).** Huminto si Mimi sa pagtanggap, pagpaskil at pamimigay at idinulog ang mga detalye sa namamahala. Magsanay ng maikling pangungusap sa koordinasyon.
+4. **Ihambing ang A at B (5 minuto).** Tukuyin ang problema sa A. Ibang educational offer ang B, na may kondisyong dapat tiyakin. Hindi pahintulot ang “libre” o “educational.”
+5. **Paresang practice (7 minuto).** Gamitin ang sitwasyon sa ibaba, magpalitan, at obserbahan ang pagkilala at pagdulog.
+6. **Check at feedback (3 minuto).** Sagutin nang mag-isa ang huling screen at ipaliwanag kung bakit mali ang ibang pagpipilian.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot
 
-- **"Tatanggapin ko ang sample, pero hindi ang regalo."** Kilalanin na iniisip nila ang mga nanay. Saka itanong: *"Ano ang hinihingi sa iyo kapalit ng mga sample?"* Ibalik sa aralin: nakatali ang alok sa promosyon sa loob ng BHS, kaya idudulog ito sa namamahala.
-- **"Paaalisin ko sila — bawal ang lahat ng kumpanya."** Tama ang hangaring protektahan ang BHS. Pero sinasabi ng aralin na huwag ituring na magkakapareho ang lahat ng pakikipag-ugnayan sa industriya. Ang unang hakbang ay idulog ang alok at tiyakin ang kasalukuyang polisiya sa namamahala.
-- **"Hindi ko alam na may ganitong tuntunin."** Tapat at karaniwan ito. Pasalamatan sila: iyan mismo ang dahilan ng araling ito. Mas malakas ang pagtanggi kapag alam mo ang batayan.
-- **May binabanggit silang detalye ng AO 2015-0053 na wala sa aralin.** Kilalanin ang alam nila, saka sabihing nirerepaso pa ang eksaktong saklaw ng order. Sa anumang tiyak na kaso, tinitiyak nila ang kasalukuyang polisiya sa namamahala.
+- **Ano ang insentibo?** Personal na regalong kasabay ng pagtulong ni Mimi sa pagpromote ng produkto.
+- **Ano ang dapat tiyakin?** Saklaw ng produkto, kausap at gawain, facility policy, kinakailangang awtorisasyon, at tamang namamahala/proseso.
+- **Puwede bang mamigay ang BHW ng prescription samples sa pamilya?** Hindi. Sa tuntunin ng order, licensed physicians/dentists lamang ang maaaring tumanggap ng ganitong samples.
+- **Pareho ba sa A ang lahat ng educational contact?** Hindi. May kondisyong pinapayagang educational items; kailangan pa ring makipag-ugnayan at hindi mag-apruba nang mag-isa.
+- **Bakit malayang impormasyon?** Pangangailangan ng pasyente at wastong aprubadong impormasyon ang batayan ng care at education, hindi gantimpala sa promosyon.
 
 ## [misconception] Karaniwang maling akala
 
-**"Maliit na regalo lang naman, at wala namang makakaalam."** Hindi tungkol sa pagkahuli ang tuntunin. Tungkol ito sa kung sino ang humuhubog sa serbisyong ibinibigay sa loob ng BHS. Itama ito nang walang itinuturong tao: itanong sa buong grupo, *"Kung malaman ng mga nanay na may natanggap na regalo ang BHW mula sa kumpanya, ganoon pa rin ba ang tiwala nila sa payo?"* May kaugnay na dahilang madalas ibigay ng BHW, "libre naman, at baka masaktan pa ang loob niya kung tatanggihan ko". Ito ang naipangalanang maling akala ng module, at tinatalakay ito sa susunod na aralin, "Magalang na pagtanggi".
+Hindi awtomatikong walang problema ang maliit o libreng regalo, at hindi patunay ng awtorisasyon ang “educational” na label. Hindi rin magkakapareho ang lahat ng pakikipag-ugnayan sa industriya. Tiyakin ang aktuwal na saklaw ng government-facility promotion restriction at scientific activities na may kondisyon. Hindi napapahintulutan ng pagdulog sa namamahala ang ipinagbabawal na promosyon.
 
-## [practice] Gawaing pagsasanay
+## [practice] Practice activity
 
-Magkapares, bigyan ang bawat pares ng offer card: kumpanya ng gatas o kumpanya ng gamot, may sample o tarpaulin at konting regalo. Gaganap na bisita ang isang BHW at babasahin ang alok. Sasagot ang isa pang BHW sa sariling salita, sa loob ng mga isang minuto:
+Sa pares, ilalarawan ng isa ang unbranded offer: “May sample para sa mga nanay, product poster sa BHS, at regalo kung tutulong kayo.” Tutukuyin ng BHW ang apat na detalye, paksa ng polisiya at hindi pa alam; hihinto sa pagtanggap/pagpaskil/pamimigay; at idudulog sa natiyak na namamahala. Idagdag ang sitwasyon B at itanong ang mga kondisyong dapat tiyakin. Magpalitan. Obserbahan ang paliwanag; huwag gawing batayan ang eksaktong numero ng batas o detalyadong pagtanggi.
 
-1. Ano ang inaalok, at ano ang hinihingi kapalit nito?
-2. Aling polisiya ang saklaw nito: ang Milk Code o ang tuntunin sa pharmaceutical promotion?
-3. Ano ang unang hakbang?
-4. Ano ang kailangang tiyakin sa midwife, RHU, o namamahala?
+## [answer-key] Susi sa sagot
 
-Saka sila magpapalit ng papel at card. Umikot at makinig. Dito ka mag-oobserba.
-
-## [answer-key] Susi sa self-check
-
-Isa ang check ng aralin. Lumalabas ito sa seksyong "Dalawang bawal sa promosyon" sa Read at muli sa slide na "Dalawang bawal sa promosyon", pareho ang tanong at pagpipilian, kaya minsan lang ito tinatalakay dito.
-
-- **"Ano ang gagawin sa alok na regalo kapalit ng pagpromote?"** → **Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya.** Nililimitahan ng Milk Code ang insentibo sa health workers, at sinasabi ng aralin na huwag mag-apruba nang mag-isa. Kapag idinulog, natitiyak ng namamahala ang kasalukuyang polisiya.
-  - **"Tanggapin basta walang makaalam"** ay mali. Hindi nagbabago kung ano ang regalo dahil lang walang nakaalam: insentibo pa rin ito kapalit ng promosyon. Kapag itinago, nakaiimpluwensya ang kumpanya sa serbisyo ng BHS, at nilalampasan pa ang namamahala.
-
-Hinihiling ng feedback na ipaliwanag ng BHW ang dahilan gamit ang sitwasyon sa aralin. Ipagamit sa kanila si Corazon at ang bisita mula sa kumpanya ng gatas.
+Tama ang unang pagpipilian. May formula samples para sa mga nanay, BHS product promotion at regalong kapalit ng promosyon sa A. Huwag tanggapin, ipaskil o ipamigay. Iba ang layunin ng B, ngunit kailangang tiyakin ng namamahala ang kondisyon at awtorisasyon. Mali ang ikalawa: ginagawang pahintulot ang libre/educational na label. Mali ang ikatlo: binubura ang pagkakaiba at tamang pagkilala/pagdulog.
 
 ## [observe] Ano ang oobserbahan
 
-Gamitin ang observation indicator ng aralin habang ginagawa ang gawaing pagsasanay: naipapaliwanag ng BHW ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa namamahala.
+- **Kaya na:** walang tulong na natutukoy ang produkto, promosyon, lugar/kausap at insentibo; naihihiwalay ang paksa ng polisiya; humihinto at nasasabi ang pagtiyak sa namamahala; factual at walang personal na datos ang paliwanag.
+- **Kailangan pa ng practice:** nakikilala ang problema sa regalo/promosyon at humihingi ng tulong, ngunit kailangan ng prompt sa saklaw, kausap o koordinasyon.
+- **Hindi pa:** tumatanggap/nagpapaskil/namimigay, nag-aapruba ng exception nang mag-isa, o itinuturing na pareho ang lahat ng contact nang hindi tinitingnan ang detalye.
 
-- **Kaya na:** nang walang untag, nasasabi ng BHW kung ano ang inaalok at ano ang hinihingi kapalit nito, natutukoy ang tamang polisiya para sa produkto, nasasabing hindi niya tatanggapin ang kapalit at idudulog ang alok, at nasasabi kung ano ang dapat tiyakin sa namamahala.
-- **Kailangan pa ng practice:** tama ang direksiyon (hindi tatanggapin, idudulog), pero kailangan mo pang magtanong para sa detalye. Halimbawa, napagpapalit niya kung aling polisiya ang para sa gatas at alin ang para sa gamot, o nakakalimutan niya kung ano ang titiyakin sa namamahala.
-- **Hindi pa:** tinatanggap ng BHW ang alok, nangangako sa bisita (halimbawa, na ididikit ang tarpaulin "ngayon lang") nang hindi tinitiyak sa namamahala, o hindi masabi ang pangunahing punto.
+Hindi patunay ng praktikal na kasanayan ang online completion. Hiwalay na itala ang obserbasyon sa role-play, objective index 0.
 
-Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+## [support] Kung kailangan pa ng suporta
 
-## [support] Kung kailangan ng dagdag na suporta
+Magbigay ng cue card ng apat na detalye at ipauling ang sitwasyon. Magsanay sa “Hindi pa alam ang detalyeng ito; itatanong ko sa namamahala.” Tiyakin sa health team ang lokal na contact, saka muling obserbahan ang pagkilala at pagdulog. Huwag palitan ito ng pagsasaulo ng numero ng batas.
 
-- Ibigay sa kanila ang apat na tanong ng pagsasanay sa isang card, at pasagutin sila pagkatapos ng pares na **Kaya na**.
-- Paliitin ang gawain: card ng kumpanya ng gatas muna, dahil tungkol sa gatas ang eksena ni Corazon. Idagdag ang card ng gamot kapag nasagot na nila ang sa gatas nang walang tulong.
-- Obserbahan muli sa susunod na sesyon gamit ang parehong offer card, hindi bago. Nagsisimula rin sa parehong eksena ang role-play sa "Magalang na pagtanggi", kaya natural na pangalawang pagkakataon iyon para mag-obserba.
+## [sources-review] Mga sanggunian at tala sa pagsusuri
 
-## [sources-review] Sanggunian at tala sa pagrepaso
+Sinuri noong 3 Oktubre 2026: BHW Reference Manual printed p.6 / PDF p.14 at Facilitator’s Guide printed p.15 / PDF p.22. EO 51 sections 3,4(g),7–8; Joint AO 2012-0027 sections 13–14,20; DOH DC 2008-0064 tungkol sa pinawalang-bisang RIRR 4(f),11,46. Sinuri sa signed DOH scan na nasa APEC ang AO 2015-0053 III at V.B.2,7,9. Inuulit ng HFDB notice noong 2024 ang order. Nasa docs/lesson-131-source-audit.json ang lokasyon at limitasyon ng retrieval.
 
-- Sanggunian ng aralin: BHW Reference Manual p. 14 para sa Milk Code at sa pharmaceutical promotion. Minanang page reference ito; nakabinbin pa ang huling audit. Dagdag na batayan: Day 1 presentation slides 21 (EO 51) at 23 (DOH AO 2015-0053); Facilitator Guide PDF 22, na naglilista ng pagbabawal sa promosyon ng milk substitutes, sa pagtanggap ng anumang insentibo o regalo mula sa kumpanya ng gatas, at sa promosyon ng pharmaceutical products sa health facilities.
-- Oras: sinasabi ng Facilitator Guide PDF 22 na hindi bababa sa 4 na oras ang kailangan ng competency na ito. Hinahati ito ng talahanayan ng oras sa gabay ng subchapter sa mga bahaging umaabot sa 200 minuto; ang 20 minuto para sa CSC Form 101-H ay "kung may oras" at walang kinabibilangang aralin. Panatilihin ang orihinal na kabuuang oras ng competency sa gabay ng subchapter. Huwag idagdag muli ang buong oras sa bawat maikling aralin. Ang 50 minuto sa itaas ay bahagi ng araling ito sa plano ng module, at para sa self-study ang hating ito; hindi ito bagong training-hour allocation. Tantiya lamang ang 5 minutong self-study, hindi galing sa sanggunian.
-- Sinasabi mismo ng aralin na kailangan pang repasuhin sa pangunahing sanggunian ang eksaktong saklaw at exceptions ng AO 2015-0053 bago ilathala. Nakalista ang "AO 2015-0083" sa role-play list ng Day 1 presentation slide 25, pero 2015-0053 ang nasa ibang sanggunian. Tiyakin ang numero.
-- Pangkalahatan ang observation indicator ng araling ito; pareho ang pananalita sa limang aralin ng module. Repasuhin kung dapat itong gawing tiyak sa araling ito.
-- Repasuhin pa bago ilathala: ang kasalukuyang legal at policy wording, bilingual parity, at ang observation indicator.
-
-Draft para sa pagrepaso
+Kathang-isip si Mimi at ang alok. Inaprubahan ng may-ari ang sinuring package, bagong larawan, Read narration at animation para sa live release noong 4 Oktubre 2026 (Asia/Manila); nasa docs/lesson-131-owner-approval.json ang mga hash. Walang independent policy/clinical SME approval na naitala. May salungat na approval notes ang lumang practice-map at inalis ito sa revision; nananatili ang historical public file. Blangkong box/sheet ang gamit upang walang totoong brand. Walang inaangking lokal na awtorisasyon o lubos na legal review.

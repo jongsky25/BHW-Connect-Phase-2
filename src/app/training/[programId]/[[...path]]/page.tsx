@@ -242,7 +242,7 @@ export default async function TrainingPage({params,searchParams}:{params:Promise
           nextLessonHref={own[lessonIndex+1]?adjacentHref(own[lessonIndex+1].id):undefined}
           completionMilestone={completionMilestone}
           translations={program.content_key==='bhw-reference-manual'?translationsForLesson({...lesson,revision},readOnly):undefined}
-          narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil'):undefined}/>}
+          narration={program.content_key==='bhw-reference-manual'?narrationForLesson(narrationManifest as ReferenceNarrationManifest,lesson.lesson_key,en?'en':'fil',revision.read_sections):undefined}/>}
           <nav className="flex flex-wrap justify-between gap-4" aria-label={text('Mga aralin sa subchapter','Subchapter navigation')}>
             {own[lessonIndex-1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex-1].id)}>{text('← Nakaraang aralin','← Previous lesson')}</Link>}
             {own[lessonIndex+1] && <Link prefetch={false} className="rounded border p-3" href={adjacentHref(own[lessonIndex+1].id)}>{text('Susunod na aralin →','Next lesson →')}</Link>}

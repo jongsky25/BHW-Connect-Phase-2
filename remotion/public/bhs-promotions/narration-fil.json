@@ -1,0 +1,51 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 80.771,
+  "beats": [
+    {
+      "zone": "offer",
+      "index": 0,
+      "text": "May sample, poster, at regalong alok sa BHS. Tanong ni Mimi: Ano po ang produkto at kapalit? Hindi muna siya tumanggap.",
+      "start_ms": 0,
+      "end_ms": 11760
+    },
+    {
+      "zone": "policy-topics",
+      "index": 1,
+      "text": "Magkaiba ang saklaw: milk substitutes at kaugnay na produkto sa Milk Code; prescription products at medical devices sa pharmaceutical order. Tiyakin ang polisiya.",
+      "start_ms": 12060,
+      "end_ms": 24300
+    },
+    {
+      "zone": "identify",
+      "index": 2,
+      "text": "Apat ang tinitingnan ni Mimi: produkto, promosyon, lugar at kausap, at insentibo. Hindi pahintulot ang libre. Bawal ipamigay sa publiko ang prescription samples.",
+      "start_ms": 24600,
+      "end_ms": 38560
+    },
+    {
+      "zone": "pause",
+      "index": 3,
+      "text": "Sabi ni Mimi: Hindi ko po tatanggapin o ipamamahagi ito. Idudulog ko sa namamahala. Hindi siya nagpasya tungkol sa exception nang mag-isa.",
+      "start_ms": 38860,
+      "end_ms": 49500
+    },
+    {
+      "zone": "information",
+      "index": 4,
+      "text": "Aprubadong impormasyon, hindi brand endorsement, ang ginagamit ni Mimi. Factual ang ulat, walang datos ng pasyente. Huwag sisihin ang pamilya; health professional ang sasagot sa clinical questions.",
+      "start_ms": 49800,
+      "end_ms": 63360
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Regalong kapalit ng promosyon at educational model: magkaibang alok, may tuntunin. Kilalanin, huminto, at idulog. Hindi sapat ang educational label; hindi nag-aapruba nang mag-isa ang BHW.",
+      "start_ms": 63660,
+      "end_ms": 80700
+    }
+  ]
+}
