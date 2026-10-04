@@ -270,6 +270,11 @@ describe.each([
       fireEvent.click(screen.getByRole("button", { name: translation.ui["Kuwentong may salaysay"] }));
       expect(container.querySelector("video source")).toHaveAttribute("src", `/fixture/story.${language}.mp4`);
       expect(container.querySelector("track")).toHaveAttribute("srcLang", language);
+      if (lesson.lesson_key === "uhc-local-system") {
+        const transcript = translation.assets.find(asset => asset.id === lesson.revision.featured_asset_id)!.text_steps!;
+        expect(transcript).toHaveLength(6);
+        transcript.forEach(step => expect(screen.getByText(step.text)).toBeInTheDocument());
+      }
     });
   }
 });

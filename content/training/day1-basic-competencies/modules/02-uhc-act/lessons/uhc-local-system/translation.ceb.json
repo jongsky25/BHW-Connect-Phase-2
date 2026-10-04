@@ -104,7 +104,39 @@
     {
       "id": "local-system-story",
       "alt": "Sugilanon nga adunay salaysay: gikan sa pangutana sa residente ngadto sa lokal nga tubag.",
-      "caption": "Unom ka hinimo nga tagpo nga adunay Gemini nga salaysay ug mga caption sa Bisaya (Cebuano)."
+      "caption": "Unom ka hinimo nga tagpo nga adunay Gemini nga salaysay ug mga caption sa Bisaya (Cebuano).",
+      "text_steps": [
+        {
+          "id": "question",
+          "title": "Balikbalik nga pangutana",
+          "text": "Nangutana si Mang Ernesto kang BHW Vlanche kon asa makumpirma ang impormasyon bahin sa kalihokan sa panglawas sa barangay. Nadungog usab ni Vlanche ang susamang pangutana gikan sa uban. Maminaw siya una."
+        },
+        {
+          "id": "roles",
+          "title": "Lahi nga mga tahas",
+          "text": "Ang Provincial ug City Health Boards nagdumala sa paghiusa sa mga serbisyo ubos sa UHC. Dili awtomatikong miyembro ang BHW. Pangutan-on ni Vlanche ang health team sa angay nga lokal nga contact."
+        },
+        {
+          "id": "observation",
+          "title": "Aktuwal nga obserbasyon",
+          "text": "Isumada ni Vlanche: balikbalik ang pangutana sa mga residente, nagkalahi ang ilang nadungog nga impormasyon, ug kinahanglan pa kumpirmahon ang mga detalye. Dili kinahanglan sa sumada ang mga ngalan o personal nga mga detalye."
+        },
+        {
+          "id": "promotion",
+          "title": "Hustong mensahe",
+          "text": "Isip barangay-level HEPO, susihon ni Vlanche ang mensahe uban sa health team. Ipasabot niya kini sa yano, dapiton ang mga pangutana, ug susihon ang pagsabot sa residente."
+        },
+        {
+          "id": "discussion",
+          "title": "Hisgoti uban sa team",
+          "text": "Magpraktis si Vlanche sa iyang sumada uban sa midwife. Mangutana siya kon kinsa ang makakumpirma, kinsa ang modawat sa sugyot, ug kinsa ang makadesisyon. Dili siya mosaad nga giaprobahan na ang ideya."
+        },
+        {
+          "id": "feedback",
+          "title": "Sunda ang gikasabotan",
+          "text": "Magkasabot sila kon kanus-a ug unsaon ang follow-up. Ang nakumpirmang tubag lamang ang ipaabot ni Vlanche. Ang iyang ikatampo: obserbasyon, hustong mensahe, lokal nga koordinasyon, ug pagsunod sa gikasabotang lakang."
+        }
+      ]
     }
   ],
   "story_art": {
