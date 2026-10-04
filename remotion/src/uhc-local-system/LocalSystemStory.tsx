@@ -1,3 +1,5 @@
+import cebuano from "../../../content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/translation.ceb.json";
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/translation.hil.json";
 import {
   AbsoluteFill, Audio, Img, Series, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig, type CalculateMetadataFunction,
@@ -7,7 +9,7 @@ import { LOCAL_SYSTEM_BEATS } from "./narration";
 export const LOCAL_SYSTEM_FPS = 30;
 export const LOCAL_SYSTEM_FALLBACK_DURATION = LOCAL_SYSTEM_FPS * 80;
 const TAIL_MS = 1100;
-export type LocalSystemStoryProps = {language: "fil" | "en"; beatFrames?: number[]; audioSrc?: string};
+export type LocalSystemStoryProps = {language: "fil" | "en" | "ceb" | "hil"; beatFrames?: number[]; audioSrc?: string};
 type Timings = {language: string; durationSeconds: number; beats: {zone: string; start_ms: number; end_ms: number}[]};
 
 export const calculateLocalSystemMetadata: CalculateMetadataFunction<LocalSystemStoryProps> = async ({props}) => {
@@ -42,14 +44,17 @@ function Cards({items, frame}: {items: string[]; frame: number}) {
   </div>;
 }
 
-function Scene({index, language}: {index: number; language: "fil" | "en"}) {
+function Scene({index, language}: {index: number; language: "fil" | "en" | "ceb" | "hil"}) {
   const frame = useCurrentFrame();
   const {fps, durationInFrames} = useVideoConfig();
   const fil = language === "fil";
   const beat = LOCAL_SYSTEM_BEATS[index];
+  const translated = language === "ceb" ? cebuano : language === "hil" ? hiligaynon : null;
+  const localizedBeat = translated?.story_beats[index];
+  const sceneLabels = translated?.scene_labels;
   const appear = spring({frame, fps, config: {damping: 180, stiffness: 95}});
   const hasArt = index === 0 || index === 5;
-  const labels = index === 1
+  const labels = sceneLabels ? (index === 1 ? sceneLabels.roles : index === 2 ? sceneLabels.observation : index === 3 ? sceneLabels.promotion : sceneLabels.discussion) : index === 1
     ? (fil ? ["Board: integration", "Team: lokal na proseso", "BHW: ambag"] : ["Board: integration", "Team: local process", "BHW: contribution"])
     : index === 2
       ? (fil ? ["Narinig", "Hindi pa tiyak", "Walang personal na detalye"] : ["Observed", "Still uncertain", "No personal details"])
@@ -62,16 +67,16 @@ function Scene({index, language}: {index: number; language: "fil" | "en"}) {
     <div style={{position: "absolute", top: 27, right: 40, fontSize: 16}}>{index + 1} / 6</div>
     <div style={{position: "absolute", top: 98, left: 40, width: hasArt ? 335 : 760,
       transform: `translateY(${(1 - appear) * 20}px)`, opacity: appear}}>
-      <div style={{fontSize: 16, fontWeight: 900, color: gold, marginBottom: 12}}>{fil ? "KOMUNIDAD AT HEALTH TEAM" : "COMMUNITY AND HEALTH TEAM"}</div>
-      <div style={{fontSize: hasArt ? 36 : 43, lineHeight: 1.1, fontWeight: 900}}>{fil ? beat.title_fil : beat.title_en}</div>
-      <div style={{fontSize: 22, lineHeight: 1.3, marginTop: 18}}>{fil ? beat.detail_fil : beat.detail_en}</div>
+      <div style={{fontSize: 16, fontWeight: 900, color: gold, marginBottom: 12}}>{sceneLabels?.eyebrow ?? (fil ? "KOMUNIDAD AT HEALTH TEAM" : "COMMUNITY AND HEALTH TEAM")}</div>
+      <div style={{fontSize: hasArt ? 36 : 43, lineHeight: 1.1, fontWeight: 900}}>{localizedBeat?.title ?? (fil ? beat.title_fil : beat.title_en)}</div>
+      <div style={{fontSize: 22, lineHeight: 1.3, marginTop: 18}}>{localizedBeat?.detail ?? (fil ? beat.detail_fil : beat.detail_en)}</div>
     </div>
     {hasArt ? <div style={{position: "absolute", right: 28, top: 110, width: 420, height: 245,
       background: cream, borderRadius: 18, padding: 7, opacity: appear, transform: `translateX(${(1 - appear) * 25}px)`}}>
       <Img src={staticFile("uhc-local-system/scene.png")} style={{width: "100%", height: "100%", objectFit: "contain", borderRadius: 12}}/>
     </div> : <div style={{position: "absolute", top: 275, left: 42, width: 770}}><Cards items={labels} frame={frame}/></div>}
     {index === 5 && <div style={{position: "absolute", bottom: 83, left: 40, display: "flex", gap: 12}}>
-      {(fil ? ["Obserbasyon", "Mensahe", "Follow-up"] : ["Observation", "Message", "Follow-up"]).map((label,i) =>
+      {(sceneLabels?.summary ?? (fil ? ["Obserbasyon", "Mensahe", "Follow-up"] : ["Observation", "Message", "Follow-up"])).map((label,i) =>
         <div key={label} style={{background: i === 0 ? gold : cream, color: ink, fontSize: 20, fontWeight: 800,
           padding: "11px 16px", borderRadius: 12, opacity: spring({frame: frame - i * 12, fps, config: {damping: 180}})}}>{label}</div>)}
     </div>}

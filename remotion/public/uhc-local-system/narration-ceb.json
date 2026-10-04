@@ -1,0 +1,54 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "delivery_style": "Speak in natural Philippine Cebuano (Bisaya) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and sentence intonation. Give Mang Ernesto’s recurring question curiosity, Vlanche’s factual observations an attentive tone and the midwife’s feedback supportive warmth. Vary pitch and pace, slowing for confidentiality, locally verified contacts, distinct board and health-team roles, checked health-promotion messages and agreed follow-up. Keep one consistent female Kore narrator voice, with no character voice switching. Articulate Cebuano and Hiligaynon consonants clearly, especially ng, nga, kag and ug. Say Vlanche in one syllable, vlanch. Read HEPO as its individual letters. Finish every phrase cleanly, preserving the exact wording. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+  "audio_sha256": "0a4d1a7bc400c9b81e2a5cc598d0466941d0540e93a326b4b304bebfae2a5035",
+  "script_hash": "f2db78598063c823936259db4915781bd6bce2e07e45f90162f21712162037cc",
+  "durationSeconds": 88.033,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Nangutana si Mang Ernesto kang BHW Vlanche kon asa makumpirma ang impormasyon bahin sa kalihokan sa panglawas sa barangay. Nadungog usab ni Vlanche ang susamang pangutana gikan sa uban. Maminaw siya una.",
+      "start_ms": 0,
+      "end_ms": 14960
+    },
+    {
+      "zone": "roles",
+      "index": 1,
+      "text": "Ang Provincial ug City Health Boards nagdumala sa paghiusa sa mga serbisyo ubos sa UHC. Dili awtomatikong miyembro ang BHW. Pangutan-on ni Vlanche ang health team sa angay nga lokal nga contact.",
+      "start_ms": 15260,
+      "end_ms": 29340
+    },
+    {
+      "zone": "observation",
+      "index": 2,
+      "text": "Isumada ni Vlanche: balikbalik ang pangutana sa mga residente, nagkalahi ang ilang nadungog nga impormasyon, ug kinahanglan pa kumpirmahon ang mga detalye. Dili kinahanglan sa sumada ang mga ngalan o personal nga mga detalye.",
+      "start_ms": 29640,
+      "end_ms": 44600
+    },
+    {
+      "zone": "promotion",
+      "index": 3,
+      "text": "Isip barangay-level HEPO, susihon ni Vlanche ang mensahe uban sa health team. Ipasabot niya kini sa yano, dapiton ang mga pangutana, ug susihon ang pagsabot sa residente.",
+      "start_ms": 44900,
+      "end_ms": 57780
+    },
+    {
+      "zone": "discussion",
+      "index": 4,
+      "text": "Magpraktis si Vlanche sa iyang sumada uban sa midwife. Mangutana siya kon kinsa ang makakumpirma, kinsa ang modawat sa sugyot, ug kinsa ang makadesisyon. Dili siya mosaad nga giaprobahan na ang ideya.",
+      "start_ms": 58080,
+      "end_ms": 71640
+    },
+    {
+      "zone": "feedback",
+      "index": 5,
+      "text": "Magkasabot sila kon kanus-a ug unsaon ang follow-up. Ang nakumpirmang tubag lamang ang ipaabot ni Vlanche. Ang iyang ikatampo: obserbasyon, hustong mensahe, lokal nga koordinasyon, ug pagsunod sa gikasabotang lakang.",
+      "start_ms": 71940,
+      "end_ms": 87980
+    }
+  ]
+}
