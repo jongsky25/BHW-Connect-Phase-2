@@ -185,8 +185,40 @@
       "alt_en": "Mimi gives a clear respectful refusal; the representative retains the box and sheet while she indicates a blank clipboard.",
       "caption_fil": "Malinaw na hindi · Tamang dahilan · Factual na ulat. Draft para sa owner review.",
       "caption_en": "Clear refusal · Accurate reason · Factual report. Draft for owner review.",
-      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila; model identifier not returned by tool. Identity/style reference: approved lesson 1.3.1 Mimi image b9623263a1881f26b6eb4aeb5b153ceb68b003c61d861f87636e3d2c1c96cc01. New scene is draft, no new owner or SME approval. Exact prompt: Use case: illustration-story. Asset type: new original landscape educational illustration for BHW Connect lesson 1.3.3, Declining respectfully. The attached image is an identity and visual-style REFERENCE only, not an edit target. Preserve the fictional Filipina BHW Mimi’s recognizable face, approximately 50 years old, straight shoulder-length black hair, lavender polo and navy trousers. Create a distinct later moment at the same modest unbranded airy Philippine barangay health station: Mimi is speaking a clear respectful refusal to the generic beige-shirt Filipino visitor. Mimi stands upright with one relaxed open hand near her chest and her other hand indicating a blank clipboard on the table, conveying a firm boundary and factual reporting. The visitor has lowered the CLOSED unbranded blank box and rolled blank sheet to his own side, is listening respectfully, and is not handing anything to Mimi. No gift exchange. New composition and poses; medium waist-up landscape, both faces inside central 60 percent, main gestures clearly visible, natural anatomy and hands. Warm daylight and leafy background, realistic photographic illustrative style consistent with reference. No patient, clinical procedure, text, letters, logos, brands, exposed medicines/formula, personal data, official seal, watermark, threat, or villain caricature. This new lesson-specific scene is draft for owner review; Mimi’s identity was previously approved.",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila; model identifier not returned by tool. Identity/style reference: approved lesson 1.3.1 Mimi image b9623263a1881f26b6eb4aeb5b153ceb68b003c61d861f87636e3d2c1c96cc01. New scene is draft, no new owner or SME approval. Exact prompt: Use case: illustration-story. Asset type: new original landscape educational illustration for BHW Connect lesson 1.3.3, Declining respectfully. The attached image is an identity and visual-style REFERENCE only, not an edit target. Preserve the fictional Filipina BHW Mimi's recognizable face, approximately 50 years old, straight shoulder-length black hair, lavender polo and navy trousers. Create a distinct later moment at the same modest unbranded airy Philippine barangay health station: Mimi is speaking a clear respectful refusal to the generic beige-shirt Filipino visitor. Mimi stands upright with one relaxed open hand near her chest and her other hand indicating a blank clipboard on the table, conveying a firm boundary and factual reporting. The visitor has lowered the CLOSED unbranded blank box and rolled blank sheet to his own side, is listening respectfully, and is not handing anything to Mimi. No gift exchange. New composition and poses; medium waist-up landscape, both faces inside central 60 percent, main gestures clearly visible, natural anatomy and hands. Warm daylight and leafy background, realistic photographic illustrative style consistent with reference. No patient, clinical procedure, text, letters, logos, brands, exposed medicines/formula, personal data, official seal, watermark, threat, or villain caricature. This new lesson-specific scene is draft for owner review; Mimi's identity was previously approved.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhs-decline-story",
+      "alt_fil": "Kuwentong may salaysay: malinaw na tumatanggi si Mimi at nag-uulat sa namamahala.",
+      "alt_en": "Narrated story: Mimi clearly declines the offer and reports to the supervisor.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.3.3; original built-in imagegen illustration generated 2026-10-04, using the previously approved fictional Mimi identity as reference. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-3/bhs-decline-gemini-fil-86a81fbbac4f.mp4",
+          "content_hash": "86a81fbbac4fe1ceced8f5eec3ad9b06812c16a310ddccc5732b16a061ce222b",
+          "duration_s": 82,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-decline-gemini-fil-083c26147c39.vtt",
+            "content_hash": "083c26147c390c7a25ad0dd81c0910a2a4c7f698c212acb2ad2fed32f253bed0"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-3/bhs-decline-gemini-en-3d335806777f.mp4",
+          "content_hash": "3d335806777f054f91bd5078bc90a21518e082927489d536b75727729952af7b",
+          "duration_s": 88,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-decline-gemini-en-fad6e385a38e.vtt",
+            "content_hash": "fad6e385a38e7b68ea82ed71d142fe0bf567155342506ac3c499f4236403771f"
+          }
+        }
+      },
+      "path": "/training/bhw-1-3/bhs-decline-gemini-fil-626a300cfbbb-poster.jpg",
+      "content_hash": "626a300cfbbb1b25bcc202a2cead5f8ed3aa73fd38a4666011d7c6cc090fcbcb"
     }
-  ]
+  ],
+  "featured_asset_id": "bhs-decline-story"
 }

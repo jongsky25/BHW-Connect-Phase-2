@@ -1,0 +1,1311 @@
+{
+  "method": "Decoded PCM per-zone signal and exact committed bytes; not human listening",
+  "read": [
+    {
+      "lesson": "bhs-decline",
+      "section": "hold-boundary",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/hold-boundary.en.97ec7a9d2b44.mp3",
+      "sha256": "edad1c6b97b874669900b2b8f4a9cde29bc531c3fc33acf023a4d35d90341c5b",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 59.324,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2040,
+          "rms_dbfs": -15.98,
+          "peak_dbfs": -2.56
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2340,
+          "end_ms": 3900,
+          "rms_dbfs": -18.44,
+          "peak_dbfs": -2.34
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 4200,
+          "end_ms": 9240,
+          "rms_dbfs": -19.57,
+          "peak_dbfs": -2.99
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 9540,
+          "end_ms": 13620,
+          "rms_dbfs": -19.49,
+          "peak_dbfs": -2.43
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 13920,
+          "end_ms": 21920,
+          "rms_dbfs": -19.38,
+          "peak_dbfs": -3.11
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 22220,
+          "end_ms": 24580,
+          "rms_dbfs": -18.46,
+          "peak_dbfs": -2.93
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 24880,
+          "end_ms": 28160,
+          "rms_dbfs": -18.53,
+          "peak_dbfs": -1.65
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 28460,
+          "end_ms": 36980,
+          "rms_dbfs": -17.37,
+          "peak_dbfs": -0.38
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 37280,
+          "end_ms": 40920,
+          "rms_dbfs": -18.73,
+          "peak_dbfs": -3.21
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 41220,
+          "end_ms": 47820,
+          "rms_dbfs": -16.67,
+          "peak_dbfs": -1.27
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 48120,
+          "end_ms": 53760,
+          "rms_dbfs": -19.41,
+          "peak_dbfs": -2.45
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 54060,
+          "end_ms": 59260,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -1.59
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "hold-boundary",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/hold-boundary.fil.54fbfa1d34b6.mp3",
+      "sha256": "7f2f69bcb3f683178d2f0cc9178a5b565f6565f95bbb81a06e4b991a02a15653",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 63.974,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2480,
+          "rms_dbfs": -17.33,
+          "peak_dbfs": -1.95
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2780,
+          "end_ms": 4420,
+          "rms_dbfs": -19.65,
+          "peak_dbfs": -5.94
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 4720,
+          "end_ms": 9280,
+          "rms_dbfs": -17.05,
+          "peak_dbfs": -0.01
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 9580,
+          "end_ms": 13660,
+          "rms_dbfs": -16.45,
+          "peak_dbfs": -1.35
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 13960,
+          "end_ms": 23520,
+          "rms_dbfs": -19.28,
+          "peak_dbfs": -3.06
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 23820,
+          "end_ms": 27020,
+          "rms_dbfs": -15.02,
+          "peak_dbfs": -1.77
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 27320,
+          "end_ms": 30640,
+          "rms_dbfs": -17.47,
+          "peak_dbfs": -1.6
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 30940,
+          "end_ms": 39700,
+          "rms_dbfs": -16.48,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 40000,
+          "end_ms": 44040,
+          "rms_dbfs": -17.38,
+          "peak_dbfs": -0.51
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 44340,
+          "end_ms": 50540,
+          "rms_dbfs": -17.37,
+          "peak_dbfs": -2.59
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 50840,
+          "end_ms": 57280,
+          "rms_dbfs": -17.73,
+          "peak_dbfs": -1.63
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 57580,
+          "end_ms": 63900,
+          "rms_dbfs": -17.0,
+          "peak_dbfs": -2.4
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "match-policy",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/match-policy.en.cf0493403f5d.mp3",
+      "sha256": "933ee842dc39c3f85cd496f789715edf306781f736b5e67190826b6b55f1829d",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 75.624,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3400,
+          "rms_dbfs": -17.71,
+          "peak_dbfs": -0.87
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3700,
+          "end_ms": 7300,
+          "rms_dbfs": -17.92,
+          "peak_dbfs": -1.43
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 7600,
+          "end_ms": 20520,
+          "rms_dbfs": -20.46,
+          "peak_dbfs": -2.16
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 20820,
+          "end_ms": 32100,
+          "rms_dbfs": -18.84,
+          "peak_dbfs": -1.05
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 32400,
+          "end_ms": 38680,
+          "rms_dbfs": -18.25,
+          "peak_dbfs": -2.0
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 38980,
+          "end_ms": 42060,
+          "rms_dbfs": -18.62,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 42360,
+          "end_ms": 48240,
+          "rms_dbfs": -18.11,
+          "peak_dbfs": -1.28
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 48540,
+          "end_ms": 57300,
+          "rms_dbfs": -17.05,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 57600,
+          "end_ms": 65960,
+          "rms_dbfs": -18.9,
+          "peak_dbfs": -2.56
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 66260,
+          "end_ms": 70340,
+          "rms_dbfs": -20.01,
+          "peak_dbfs": -3.95
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 70640,
+          "end_ms": 75560,
+          "rms_dbfs": -17.83,
+          "peak_dbfs": -1.1
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "match-policy",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/match-policy.fil.2ded5507efc7.mp3",
+      "sha256": "f34e118f999698b87223e0e7c51579c4b86e7be7a894afd5bfdebc984357ab03",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 80.744,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2480,
+          "rms_dbfs": -17.41,
+          "peak_dbfs": -1.04
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2780,
+          "end_ms": 7180,
+          "rms_dbfs": -16.14,
+          "peak_dbfs": -2.12
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 7480,
+          "end_ms": 20880,
+          "rms_dbfs": -17.3,
+          "peak_dbfs": -0.74
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 21180,
+          "end_ms": 33140,
+          "rms_dbfs": -19.59,
+          "peak_dbfs": -1.59
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 33440,
+          "end_ms": 41560,
+          "rms_dbfs": -17.46,
+          "peak_dbfs": -0.63
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 41860,
+          "end_ms": 44860,
+          "rms_dbfs": -16.69,
+          "peak_dbfs": -1.23
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 45160,
+          "end_ms": 51000,
+          "rms_dbfs": -17.79,
+          "peak_dbfs": -1.87
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 51300,
+          "end_ms": 60020,
+          "rms_dbfs": -15.29,
+          "peak_dbfs": -1.0
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 60320,
+          "end_ms": 69600,
+          "rms_dbfs": -16.53,
+          "peak_dbfs": -1.7
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 69900,
+          "end_ms": 74980,
+          "rms_dbfs": -17.79,
+          "peak_dbfs": -3.31
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 75280,
+          "end_ms": 80680,
+          "rms_dbfs": -17.18,
+          "peak_dbfs": -1.93
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "refusal-check",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/refusal-check.en.5a4d0e0de768.mp3",
+      "sha256": "1ee3a4b2e566e7ed31d3218c38c949880e247b833c2f39000cf273daf5e23c64",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 33.254,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2440,
+          "rms_dbfs": -19.01,
+          "peak_dbfs": -1.41
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2740,
+          "end_ms": 7700,
+          "rms_dbfs": -18.31,
+          "peak_dbfs": -2.84
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8000,
+          "end_ms": 14160,
+          "rms_dbfs": -16.75,
+          "peak_dbfs": -0.64
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 14460,
+          "end_ms": 19300,
+          "rms_dbfs": -16.95,
+          "peak_dbfs": -1.07
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19600,
+          "end_ms": 23920,
+          "rms_dbfs": -19.52,
+          "peak_dbfs": -3.16
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 24220,
+          "end_ms": 27180,
+          "rms_dbfs": -15.19,
+          "peak_dbfs": -0.3
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 27480,
+          "end_ms": 33200,
+          "rms_dbfs": -19.51,
+          "peak_dbfs": -3.34
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "refusal-check",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/refusal-check.fil.81dd6a33a4c6.mp3",
+      "sha256": "03a45390826c864550d125894fedf6942678ebb7e2deb9096c244aaf7b084d8f",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 40.229,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2560,
+          "rms_dbfs": -16.4,
+          "peak_dbfs": -2.62
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2860,
+          "end_ms": 9500,
+          "rms_dbfs": -16.91,
+          "peak_dbfs": -2.23
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9800,
+          "end_ms": 16760,
+          "rms_dbfs": -18.06,
+          "peak_dbfs": -2.64
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 17060,
+          "end_ms": 23340,
+          "rms_dbfs": -16.3,
+          "peak_dbfs": -1.49
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 23640,
+          "end_ms": 29680,
+          "rms_dbfs": -17.01,
+          "peak_dbfs": -1.89
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 29980,
+          "end_ms": 33700,
+          "rms_dbfs": -17.08,
+          "peak_dbfs": -1.72
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 34000,
+          "end_ms": 40160,
+          "rms_dbfs": -16.63,
+          "peak_dbfs": -0.43
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "report-facts",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/report-facts.en.fabcb91ce467.mp3",
+      "sha256": "6391b8a46f548bf68ff118e4361bd0f3d0cb3d3a0447bf6bf3660e934bba1fea",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 64.679,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 1880,
+          "rms_dbfs": -18.58,
+          "peak_dbfs": -2.38
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2180,
+          "end_ms": 8820,
+          "rms_dbfs": -17.68,
+          "peak_dbfs": -1.76
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9120,
+          "end_ms": 12640,
+          "rms_dbfs": -16.84,
+          "peak_dbfs": -1.37
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 12940,
+          "end_ms": 15900,
+          "rms_dbfs": -16.35,
+          "peak_dbfs": -2.13
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 16200,
+          "end_ms": 25080,
+          "rms_dbfs": -19.03,
+          "peak_dbfs": -1.59
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 25380,
+          "end_ms": 31100,
+          "rms_dbfs": -19.45,
+          "peak_dbfs": -2.3
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 31400,
+          "end_ms": 34080,
+          "rms_dbfs": -18.03,
+          "peak_dbfs": -4.36
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 34380,
+          "end_ms": 42940,
+          "rms_dbfs": -18.05,
+          "peak_dbfs": -0.25
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 43240,
+          "end_ms": 49240,
+          "rms_dbfs": -16.35,
+          "peak_dbfs": -0.93
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 49540,
+          "end_ms": 52580,
+          "rms_dbfs": -17.97,
+          "peak_dbfs": -1.78
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 52880,
+          "end_ms": 60280,
+          "rms_dbfs": -19.78,
+          "peak_dbfs": -2.08
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 60580,
+          "end_ms": 64620,
+          "rms_dbfs": -15.38,
+          "peak_dbfs": -0.88
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "report-facts",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/report-facts.fil.5fffc6a0fd04.mp3",
+      "sha256": "57c28e65eeef075a09d6aa8ccb106ec04cb212cedb1759426b674e8f136d6eb5",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 75.128,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 1840,
+          "rms_dbfs": -18.06,
+          "peak_dbfs": -2.24
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2140,
+          "end_ms": 9860,
+          "rms_dbfs": -16.69,
+          "peak_dbfs": -1.12
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10160,
+          "end_ms": 16120,
+          "rms_dbfs": -18.57,
+          "peak_dbfs": -3.01
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16420,
+          "end_ms": 19580,
+          "rms_dbfs": -21.1,
+          "peak_dbfs": -1.8
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19880,
+          "end_ms": 30720,
+          "rms_dbfs": -17.47,
+          "peak_dbfs": -2.17
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 31020,
+          "end_ms": 36860,
+          "rms_dbfs": -18.41,
+          "peak_dbfs": -0.55
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 37160,
+          "end_ms": 40760,
+          "rms_dbfs": -16.04,
+          "peak_dbfs": -1.8
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 41060,
+          "end_ms": 50100,
+          "rms_dbfs": -17.6,
+          "peak_dbfs": -2.29
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 50400,
+          "end_ms": 58080,
+          "rms_dbfs": -18.23,
+          "peak_dbfs": -0.79
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 58380,
+          "end_ms": 61780,
+          "rms_dbfs": -18.0,
+          "peak_dbfs": -2.14
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 62080,
+          "end_ms": 69680,
+          "rms_dbfs": -17.13,
+          "peak_dbfs": -1.64
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 69980,
+          "end_ms": 75060,
+          "rms_dbfs": -18.02,
+          "peak_dbfs": -1.84
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-4",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.d072d01cdd2c.mp3",
+      "sha256": "2623ce414c7e32f986d6a0bf3bc46912ed15492259704e3ae1c20625a156d7ab",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 60.813,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2240,
+          "rms_dbfs": -18.09,
+          "peak_dbfs": -2.78
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2540,
+          "end_ms": 14420,
+          "rms_dbfs": -18.41,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 14720,
+          "end_ms": 17880,
+          "rms_dbfs": -17.68,
+          "peak_dbfs": -2.99
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 18180,
+          "end_ms": 21060,
+          "rms_dbfs": -16.67,
+          "peak_dbfs": -3.41
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 21360,
+          "end_ms": 24320,
+          "rms_dbfs": -19.1,
+          "peak_dbfs": -2.58
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 24620,
+          "end_ms": 30100,
+          "rms_dbfs": -16.29,
+          "peak_dbfs": -0.78
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 30400,
+          "end_ms": 39440,
+          "rms_dbfs": -18.57,
+          "peak_dbfs": -1.79
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 39740,
+          "end_ms": 43780,
+          "rms_dbfs": -16.34,
+          "peak_dbfs": -1.75
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 44080,
+          "end_ms": 49960,
+          "rms_dbfs": -17.42,
+          "peak_dbfs": -2.14
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 50260,
+          "end_ms": 54660,
+          "rms_dbfs": -16.57,
+          "peak_dbfs": -1.02
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 54960,
+          "end_ms": 60760,
+          "rms_dbfs": -18.85,
+          "peak_dbfs": -1.49
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-4",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.dda983cbd882.mp3",
+      "sha256": "66fe9d0663ac5ad622ca2ed91b3412ad70af9a0fd970cb359ea571580359f6ff",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 68.728,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2200,
+          "rms_dbfs": -15.26,
+          "peak_dbfs": -0.52
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2500,
+          "end_ms": 6140,
+          "rms_dbfs": -16.67,
+          "peak_dbfs": -0.37
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 6440,
+          "end_ms": 16040,
+          "rms_dbfs": -19.95,
+          "peak_dbfs": -1.21
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16340,
+          "end_ms": 20100,
+          "rms_dbfs": -18.21,
+          "peak_dbfs": -4.12
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 20400,
+          "end_ms": 24400,
+          "rms_dbfs": -17.09,
+          "peak_dbfs": -1.55
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 24700,
+          "end_ms": 28460,
+          "rms_dbfs": -18.77,
+          "peak_dbfs": -1.95
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 28760,
+          "end_ms": 33880,
+          "rms_dbfs": -18.43,
+          "peak_dbfs": -2.33
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 34180,
+          "end_ms": 43660,
+          "rms_dbfs": -17.74,
+          "peak_dbfs": -1.95
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 43960,
+          "end_ms": 48560,
+          "rms_dbfs": -15.74,
+          "peak_dbfs": -1.32
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 48860,
+          "end_ms": 57300,
+          "rms_dbfs": -15.45,
+          "peak_dbfs": -1.4
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 57600,
+          "end_ms": 63120,
+          "rms_dbfs": -17.67,
+          "peak_dbfs": -2.7
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 63420,
+          "end_ms": 68660,
+          "rms_dbfs": -16.9,
+          "peak_dbfs": -2.33
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-7",
+      "language": "en",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.611351ff6c6b.mp3",
+      "sha256": "7c73b0730e338c0ae98710b8b04ca142c380618086dac261ac3095afbf919949",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 58.802,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 1960,
+          "rms_dbfs": -17.17,
+          "peak_dbfs": -1.77
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2260,
+          "end_ms": 6700,
+          "rms_dbfs": -18.33,
+          "peak_dbfs": -1.57
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 7000,
+          "end_ms": 12080,
+          "rms_dbfs": -17.93,
+          "peak_dbfs": -1.35
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 12380,
+          "end_ms": 16780,
+          "rms_dbfs": -19.42,
+          "peak_dbfs": -3.55
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 17080,
+          "end_ms": 22920,
+          "rms_dbfs": -17.58,
+          "peak_dbfs": -2.2
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 23220,
+          "end_ms": 35940,
+          "rms_dbfs": -17.84,
+          "peak_dbfs": -0.3
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 36240,
+          "end_ms": 39200,
+          "rms_dbfs": -17.4,
+          "peak_dbfs": -1.92
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 39500,
+          "end_ms": 46460,
+          "rms_dbfs": -15.88,
+          "peak_dbfs": -1.28
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 46760,
+          "end_ms": 54160,
+          "rms_dbfs": -19.04,
+          "peak_dbfs": -1.07
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 54460,
+          "end_ms": 58740,
+          "rms_dbfs": -18.36,
+          "peak_dbfs": -2.15
+        }
+      ]
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-7",
+      "language": "fil",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.c32dbc7a35d1.mp3",
+      "sha256": "23e7775ab4d3b2cd2e8c0e6bb9b0bd682a337f6b266b876e83944d2195525036",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "decoded_duration_seconds": 62.433,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2240,
+          "rms_dbfs": -13.61,
+          "peak_dbfs": -1.15
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2540,
+          "end_ms": 5940,
+          "rms_dbfs": -16.16,
+          "peak_dbfs": -1.55
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 6240,
+          "end_ms": 13080,
+          "rms_dbfs": -18.77,
+          "peak_dbfs": -1.3
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13380,
+          "end_ms": 16740,
+          "rms_dbfs": -18.2,
+          "peak_dbfs": -1.49
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 17040,
+          "end_ms": 25000,
+          "rms_dbfs": -18.53,
+          "peak_dbfs": -2.5
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 25300,
+          "end_ms": 38860,
+          "rms_dbfs": -18.15,
+          "peak_dbfs": -0.82
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 39160,
+          "end_ms": 42520,
+          "rms_dbfs": -17.6,
+          "peak_dbfs": -2.73
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 42820,
+          "end_ms": 50020,
+          "rms_dbfs": -16.33,
+          "peak_dbfs": -0.49
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 50320,
+          "end_ms": 57440,
+          "rms_dbfs": -14.39,
+          "peak_dbfs": -0.15
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 57740,
+          "end_ms": 62380,
+          "rms_dbfs": -21.33,
+          "peak_dbfs": -3.09
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "language": "fil",
+      "path": "/training/bhw-1-3/bhs-decline-gemini-fil-86a81fbbac4f.mp4",
+      "sha256": "86a81fbbac4fe1ceced8f5eec3ad9b06812c16a310ddccc5732b16a061ce222b",
+      "bytes": 1232104,
+      "duration_seconds": 82.090667,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-3/bhs-decline-gemini-fil-083c26147c39.vtt",
+      "caption_hash": "083c26147c390c7a25ad0dd81c0910a2a4c7f698c212acb2ad2fed32f253bed0",
+      "decoded_duration_seconds": 82.091,
+      "zones": [
+        {
+          "zone": "refusal",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 11920,
+          "rms_dbfs": -21.99,
+          "peak_dbfs": -5.16
+        },
+        {
+          "zone": "reason",
+          "index": 1,
+          "start_ms": 12220,
+          "end_ms": 25580,
+          "rms_dbfs": -21.09,
+          "peak_dbfs": -4.14
+        },
+        {
+          "zone": "pressure",
+          "index": 2,
+          "start_ms": 25880,
+          "end_ms": 38160,
+          "rms_dbfs": -21.04,
+          "peak_dbfs": -4.33
+        },
+        {
+          "zone": "report",
+          "index": 3,
+          "start_ms": 38460,
+          "end_ms": 51700,
+          "rms_dbfs": -21.39,
+          "peak_dbfs": -4.85
+        },
+        {
+          "zone": "compare",
+          "index": 4,
+          "start_ms": 52000,
+          "end_ms": 64760,
+          "rms_dbfs": -22.79,
+          "peak_dbfs": -4.91
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 65060,
+          "end_ms": 80860,
+          "rms_dbfs": -20.13,
+          "peak_dbfs": -2.04
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "path": "/training/bhw-1-3/bhs-decline-gemini-en-3d335806777f.mp4",
+      "sha256": "3d335806777f054f91bd5078bc90a21518e082927489d536b75727729952af7b",
+      "bytes": 1276472,
+      "duration_seconds": 87.914667,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-3/bhs-decline-gemini-en-fad6e385a38e.vtt",
+      "caption_hash": "fad6e385a38e7b68ea82ed71d142fe0bf567155342506ac3c499f4236403771f",
+      "decoded_duration_seconds": 87.915,
+      "zones": [
+        {
+          "zone": "refusal",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 10920,
+          "rms_dbfs": -21.2,
+          "peak_dbfs": -4.53
+        },
+        {
+          "zone": "reason",
+          "index": 1,
+          "start_ms": 11220,
+          "end_ms": 26340,
+          "rms_dbfs": -20.71,
+          "peak_dbfs": -3.74
+        },
+        {
+          "zone": "pressure",
+          "index": 2,
+          "start_ms": 26640,
+          "end_ms": 40880,
+          "rms_dbfs": -20.64,
+          "peak_dbfs": -4.74
+        },
+        {
+          "zone": "report",
+          "index": 3,
+          "start_ms": 41180,
+          "end_ms": 53780,
+          "rms_dbfs": -20.67,
+          "peak_dbfs": -4.5
+        },
+        {
+          "zone": "compare",
+          "index": 4,
+          "start_ms": 54080,
+          "end_ms": 69720,
+          "rms_dbfs": -22.07,
+          "peak_dbfs": -5.07
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 70020,
+          "end_ms": 86700,
+          "rms_dbfs": -22.87,
+          "peak_dbfs": -4.15
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "mimi-respectful-refusal",
+      "path": "/training/bhw-1-3/mimi-respectful-refusal-7f71c23bc4bb.png",
+      "sha256": "7f71c23bc4bb2aa19989beb79fbaa5926101203b09fdb0a7a13953c887d4befb",
+      "review_status": "draft"
+    },
+    {
+      "id": "bhs-decline-story",
+      "path": "/training/bhw-1-3/bhs-decline-gemini-fil-626a300cfbbb-poster.jpg",
+      "sha256": "626a300cfbbb1b25bcc202a2cead5f8ed3aa73fd38a4666011d7c6cc090fcbcb",
+      "review_status": "draft"
+    }
+  ]
+}

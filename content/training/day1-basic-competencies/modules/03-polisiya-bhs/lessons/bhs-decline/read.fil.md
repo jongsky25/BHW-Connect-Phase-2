@@ -26,7 +26,7 @@ Sinabi niya: “May kinatawang nag-alok ng infant-formula samples para sa mga na
 
 Parehong infant-formula offer ang pinag-uusapan. Tinanggap ni Danilo ang mga sample para sa mga nanay at regalo dahil “baka bastos ang tumanggi.” Sinabi niyang puwedeng sa labas na lang ipamigay. Nalampasan ang hangganan sa mismong pagtanggap at kasunduan; hindi ito naitatama ng magalang na tono.
 
-Si Mimi ay nagpasalamat sa pagbisita, malinaw na tumanggi sa mga sample, regalo, at poster, ipinaliwanag ang Milk Code na naaangkop sa alok, at walang iminungkahing kapalit na promosyon. Ipinaalam niya ang katotohanan sa namamahala. Sa medicine-sample situation, gagamit siya ng pharmaceutical explanation, hindi Milk Code. Ang magandang tugon ay may paggalang, tamang dahilan, at kilos na tugma sa sinabi.
+Si Mimi ay nagpasalamat sa pagbisita, malinaw na tumanggi sa mga sample, regalo, at poster, ipinaliwanag ang Milk Code na naaangkop sa alok, at walang iminungkahing kapalit na promosyon. Ipinaalam niya ang katotohanan sa namamahala. Sa medicine-sample situation, pharmaceutical order ang ipapaliwanag niya, hindi Milk Code. Ang magandang tugon ay may paggalang, tamang dahilan, at kilos na tugma sa sinabi.
 
 ## [refusal-check] Isagawa ang malinaw na pagtanggi
 
