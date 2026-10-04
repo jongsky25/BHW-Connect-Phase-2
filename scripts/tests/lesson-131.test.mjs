@@ -4,7 +4,9 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {loadReferenceModule, parseReferenceRead, FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
-import {planReferenceNarration} from '../lib/reference-narration.mjs';
+import {planReferenceNarration, buildManifest, referencedSources} from '../lib/reference-narration.mjs';
+import {narrationForLesson} from '../../src/lib/elearning/reference-narration.ts';
+import {timingsMatchSection} from '../../src/lib/elearning/narration-zones.ts';
 import {BHS_PROMOTIONS_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
 import {BHS_PROMOTIONS_BEATS} from '../../remotion/src/bhs-promotions/narration.ts';
 import {lessonPosition, continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
@@ -18,6 +20,34 @@ const authored=loadReferenceModule(folder,path.join(root,'public')).lessons.find
 const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
 const ids=['section-1','section-2','identify-offer','pause-route','independent-information','recognition-check'];
 describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
+  it('keeps exact-text audio for published siblings and selects Mimi after their revision changes',()=>{
+    const manifest=json(path.join(root,'content/training/day1-basic-competencies/narration.json'));
+    const published=json(path.join(root,'scripts/tests/fixtures/lesson-131-published-siblings.json'));
+    const current=loadReferenceModule(folder,path.join(root,'public')).lessons;
+    for(const sibling of published)for(const lang of ['fil','en']){
+      const oldAudio=narrationForLesson(manifest,sibling.lesson_key,lang,sibling.read_sections);
+      for(const section of sibling.read_sections){
+        const track=oldAudio[section.id];
+        expect(track.src).toBe(manifest.history[sibling.lesson_key][0].sections[section.id][lang].src);
+        expect(timingsMatchSection(track.timings,{heading:section[`heading_${lang}`],body:section[`body_${lang}`],takeaway:section[`takeaway_${lang}`]})).toBe(true);
+      }
+      const next=current.find(l=>l.manifest.lesson_key===sibling.lesson_key);
+      const newAudio=narrationForLesson(manifest,sibling.lesson_key,lang,next.revision.read_sections);
+      for(const section of next.revision.read_sections){
+        expect(newAudio[section.id].src).toBe(manifest.lessons[sibling.lesson_key].sections[section.id][lang].src);
+        expect(newAudio[section.id].src).not.toBe(oldAudio[section.id].src);
+      }
+      const unknown=structuredClone(sibling.read_sections);unknown[0][`body_${lang}`]+=' An unrecorded revision.';
+      expect(narrationForLesson(manifest,sibling.lesson_key,lang,unknown)[unknown[0].id]).toBeUndefined();
+    }
+    const rebuilt=buildManifest(manifest,[],[]);
+    expect(rebuilt.history).toEqual(manifest.history);
+    const keep=referencedSources(rebuilt);
+    for(const versions of Object.values(manifest.history))for(const version of versions)for(const tracks of Object.values(version.sections))for(const track of Object.values(tracks)){
+      expect(keep.has(track.src)).toBe(true);
+      expect(createHash('sha256').update(readFileSync(path.join(root,'public',track.src))).digest('hex')).toBe(track.sha256);
+    }
+  });
   it('binds owner release approval to the exact reviewed media bytes',()=>{
     const approval=json(path.join(root,'docs/lesson-131-owner-approval.json'));
     expect(approval.status).toBe('owner_approved_for_live_release');

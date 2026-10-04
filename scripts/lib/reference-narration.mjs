@@ -273,12 +273,12 @@ export function buildManifest(previous, modules, results) {
     for (const section of Object.values(lesson.sections))
       for (const [language, entry] of Object.entries(section)) voices[language]?.add(entry.voice);
   const summary = Object.fromEntries(Object.entries(voices).map(([l, set]) => [l, [...set].sort().join(", ")]));
-  return { format: "mp3", voices: summary, lessons: sorted };
+  return { format: "mp3", voices: summary, lessons: sorted, ...(previous.history ? { history: previous.history } : {}) };
 }
 
 export function referencedSources(manifest) {
   const sources = new Set();
-  for (const lesson of Object.values(manifest.lessons ?? {}))
+  for (const lesson of [...Object.values(manifest.lessons ?? {}), ...Object.values(manifest.history ?? {}).flat()])
     for (const section of Object.values(lesson.sections))
       for (const entry of Object.values(section)) sources.add(entry.src);
   return sources;
