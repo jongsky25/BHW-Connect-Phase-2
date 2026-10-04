@@ -1,0 +1,234 @@
+{
+  "language": "ceb",
+  "label": "Bisaya (Cebuano)",
+  "review_status": "draft",
+  "lesson_key": "uhc-primary-care",
+  "title": "Primary care ug referral",
+  "objectives": [
+    "Mapasabot ug magamit sa usa ka sitwasyon: primary care ug referral."
+  ],
+  "read_sections": [
+    {
+      "id": "bridge",
+      "takeaway": "Ang awtomatikong pagkaapil sa PhilHealth mao ang sinugdanan; tulo pa ka kausaban ang maggiya sa sunod nga lakang.",
+      "check": null
+    },
+    {
+      "id": "outpatient",
+      "takeaway": "Adunay mga lagda ang outpatient nga benepisyo; siguroha ang partikular nga serbisyo ug pasilidad.",
+      "check": null
+    },
+    {
+      "id": "provider",
+      "takeaway": "Susihon kon adunay napiling clinic ug unsaon pagpili; tahora ang pagpili sa residente.",
+      "check": null
+    },
+    {
+      "id": "referral",
+      "takeaway": "Ang health professional ang modesisyon sa klinikal nga referral; ang BHW motabang sumala sa lokal nga mga panudlo.",
+      "check": null
+    },
+    {
+      "id": "local",
+      "takeaway": "Pangutana, kumpirmaha ang lokal nga detalye, ug tabangi ang residente sa sunod nga lakang.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Siguroha ang napiling clinic ug lokal nga proseso; ipaubaya sa clinician ang desisyon sa referral.",
+      "check": {
+        "prompt": "Wala mahibalo si Mang Ernesto kon unsang primary care clinic ang iyang napili ug nangutana siya bahin sa posibleng referral. Unsa ang labing angay nga sunod nga lakang ni Vlanche?",
+        "options": [
+          "Tabangi siya sa pagsiguro sa RHU o PhilHealth sa napili o mapiling clinic ug outpatient nga proseso; kon morekomenda og referral ang clinician, kuhaa sa health team ang lokal nga mga panudlo.",
+          "Pili og clinic alang kaniya ug ingna siya nga didto moadto bisan wala pa makumpirma ang kahimtang niini.",
+          "Desisyoni kon kinahanglan ba siyang i-refer ug pili dayon og ospital base sa pagtag-an ni Vlanche."
+        ],
+        "feedback": "Tabangan sa BHW ang residente sa pagpili og clinic ug paggamit sa benepisyo human makumpirma ang lokal nga impormasyon. Ang clinician ang modesisyon sa referral; ang health team ang mohatag sa lokal nga mga panudlo."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide-bridge",
+      "heading": "Upat ka kausaban, usa ka panaw",
+      "display": "Pagkaapil sa PhilHealth (leksiyon 1.2.1)\nKonsultang outpatient\nNapiling primary care clinic\nMas maayong referral",
+      "check": null
+    },
+    {
+      "id": "slide-outpatient",
+      "heading": "Unsa ang outpatient nga benepisyo?",
+      "display": "Outpatient ≠ pag-admit sa ospital.\nAdunay partikular nga benepisyo ug mga lagda ang YAKAP.\nSiguroha ang serbisyo, clinic, ug mga lakang.",
+      "check": null
+    },
+    {
+      "id": "slide-provider",
+      "heading": "Unsang primary care clinic ang napili?",
+      "display": "Ang residente ang mopili og primary care clinic.\nApil sa PhilHealth ≠ napili na ang clinic.\nTabangi siya sa pagsiguro sa mga kapilian.",
+      "check": null
+    },
+    {
+      "id": "slide-referral",
+      "heading": "Kinsa ang modesisyon sa referral?",
+      "display": "Clinician → klinikal nga desisyon.\nHealth team → lokal nga proseso ug contact.\nBHW → pagpakig-ugnayan ug pagsunod sa panudlo.",
+      "check": null
+    },
+    {
+      "id": "slide-local",
+      "heading": "Ang sunod nga lakang ni Vlanche",
+      "display": "Siguroha: napiling clinic.\nSiguroha: outpatient nga benepisyo ug mga lakang.\nKon adunay referral: kuhaa ang lokal nga mga panudlo.",
+      "check": null
+    },
+    {
+      "id": "slide-check",
+      "heading": "Pilia ang angay nga sunod nga lakang",
+      "display": "Wala mahibaloi ang clinic? Siguroha ang pagpili.\nPangutana sa referral? Ipaubaya ang desisyon sa clinician.\nKuhaa ang lokal nga mga panudlo.",
+      "check": {
+        "prompt": "Wala mahibalo si Mang Ernesto kon unsang primary care clinic ang iyang napili ug nangutana siya bahin sa posibleng referral. Unsa ang labing angay nga sunod nga lakang ni Vlanche?",
+        "options": [
+          "Tabangi siya sa pagsiguro sa RHU o PhilHealth sa napili o mapiling clinic ug outpatient nga proseso; kon morekomenda og referral ang clinician, kuhaa sa health team ang lokal nga mga panudlo.",
+          "Pili og clinic alang kaniya ug ingna siya nga didto moadto bisan wala pa makumpirma ang kahimtang niini.",
+          "Desisyoni kon kinahanglan ba siyang i-refer ug pili dayon og ospital base sa pagtag-an ni Vlanche."
+        ],
+        "feedback": "Tabangan sa BHW ang residente sa pagpili og clinic ug paggamit sa benepisyo human makumpirma ang lokal nga impormasyon. Ang clinician ang modesisyon sa referral; ang health team ang mohatag sa lokal nga mga panudlo."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "primary-care-next-step",
+      "alt": "Gikumpirma nina BHW Vlanche ug Mang Ernesto ang sunod nga lakang uban sa midwife sa health station, gamit ang blangkong tala.",
+      "caption": "Clinic · benepisyo · lokal nga mga panudlo — siguroha uban sa health team."
+    },
+    {
+      "id": "uhc-primary-care-story",
+      "alt": "Animadong sugilanon nina BHW Vlanche ug Mang Ernesto bahin sa outpatient nga benepisyo, pagpili og primary care clinic, ug lokal nga proseso sa referral.",
+      "caption": "Hinimo nga pananglitan nina Vlanche ug Mang Ernesto, nga adunay Gemini nga salaysay ug mga caption sa Bisaya (Cebuano)."
+    }
+  ],
+  "story_art": {
+    "alt": "Gikumpirma nina BHW Vlanche ug Mang Ernesto ang sunod nga lakang uban sa midwife sa health station, gamit ang blangkong tala.",
+    "caption": "Clinic · benepisyo · lokal nga mga panudlo — siguroha uban sa health team."
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Nangutana pag-usab si Mang Ernesto kang BHW Vlanche: Asa ako magsugod alang sa checkup? Ug kon adunay referral, asa ako moadto? Wala magtag-an si Vlanche.",
+      "title": "Unsa ang sunod nga lakang?",
+      "detail": "Paminaw una. Ayaw pagtag-an."
+    },
+    {
+      "id": "four-changes",
+      "text": "Gihinumdoman nila ang upat ka kausaban sa giya: pagkaapil sa PhilHealth, konsultang outpatient, pagpili og primary care provider, ug mas maayong sistema sa referral. Nahisgutan na ang una; sundan nila karon ang tulo pa.",
+      "title": "Upat ka kausaban",
+      "detail": "PhilHealth → outpatient → provider → referral"
+    },
+    {
+      "id": "outpatient",
+      "text": "Adunay outpatient ug primary care nga mga benepisyo ang PhilHealth YAKAP, apan adunay mga lagda ang matag serbisyo. Mangutana si Vlanche sa health team kon unsang benepisyo ang angay sa konsulta ni Mang Ernesto ug sa unsang accredited clinic kini makuha.",
+      "title": "Siguroha ang benepisyo",
+      "detail": "Serbisyo · sakop · clinic"
+    },
+    {
+      "id": "provider",
+      "text": "Makapili si Mang Ernesto og primary care clinic. Ang pagkaapil sa PhilHealth wala magpasabot nga nakapili na siya. Tabangan siya ni Vlanche sa pagsusi sa RHU o PhilHealth sa kasamtangang mga kapilian ug paagi sa pagpili.",
+      "title": "Clinic nga iyang pilion",
+      "detail": "Susihon ang napili o mapiling clinic."
+    },
+    {
+      "id": "referral",
+      "text": "Kon kinahanglan og laing lebel sa pag-atiman, ang clinician ang modesisyon sa referral. Mahimong magkalahi ang lokal nga mga proseso. Mangutana si Vlanche sa health team sa angay nga contact ug mga panudlo; dili siya mopili og ospital pinaagi sa pagtag-an.",
+      "title": "Sunda ang lokal nga referral",
+      "detail": "Clinician ang modesisyon. BHW ang motabang."
+    },
+    {
+      "id": "next-step",
+      "text": "Miingon si Vlanche: Sigurohon nato ang inyong clinic, ang benepisyo alang sa kining konsulta, ug ang sunod nga lakang. Kon morekomenda og referral ang clinician, kuhaon nato ang lokal nga proseso. Tabangan ko kamong mangutana sa health team.",
+      "title": "Siguroha, dayon tabang",
+      "detail": "Clinic · benepisyo · lokal nga mga panudlo"
+    }
+  ],
+  "scene_labels": {
+    "items": [
+      "PhilHealth",
+      "Outpatient",
+      "Primary care",
+      "Referral"
+    ],
+    "outpatient": [
+      "Konsulta",
+      "Mga lagda",
+      "Accredited clinic"
+    ],
+    "provider": [
+      "Pagpili",
+      "Unang pagbisita",
+      "Pagkumpirma"
+    ],
+    "referral": [
+      "Clinician: desisyon",
+      "Health team: proseso",
+      "BHW: tabang"
+    ],
+    "next_step": "Sunod nga lakang",
+    "summary": [
+      "Clinic",
+      "Benepisyo",
+      "Mga panudlo"
+    ]
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanong adunay salaysay",
+    "Buong screen": "Tibuok screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Gibanabanang 3–7 ka minuto alang sa kaugalingong pagtuon; lahi ang pagpraktis uban sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animadong sugilanon nga adunay salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pislita ang Play aron madungog ang salaysay sa piniling pinulongan.",
+    "Pumili ng sagot": "Pagpili og tubag",
+    "Tama!": "Sakto!",
+    "Hindi pa tama. Subukang muli.": "Dili pa sakto. Sulayi pag-usab.",
+    "Nakaraan": "Miaging bahin",
+    "Susunod": "Sunod nga bahin",
+    "Puwesto sa aralin": "Bahin sa leksiyon",
+    "Uri ng nilalaman": "Matang sa sulod",
+    "Pakinggan ang bahaging ito": "Paminawa kining bahina",
+    "Pakinggan": "Paminawa",
+    "I-pause": "Hunonga kadiyot",
+    "Bilis": "Kapaspas",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Dili mapatukar ang audio. Basaha una ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Tubaga una ang pangutana aron mapaminaw ang audio nga adunay sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo na nimong markahan nga nahuman ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Humanon ang mga bahin ug tubagon ang matag pangutana sa Basaha o Mga slide. Dili kinahanglan nga sakto ang unang tubag. Kon i-reload, tubaga pag-usab ang mga pangutana.",
+    "Natapos": "Nahuman",
+    "Markahang tapos ang aralin": "Markahi nga nahuman ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Nahuman nimo ang leksiyon. Na-save ang imong progreso.",
+    "Susunod na aralin →": "Sunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sa mga leksiyon →",
+    "Nakaraang aralin": "Miaging leksiyon",
+    "Susunod na aralin": "Sunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkahuman sa leksiyon dili pamatuod sa praktikal nga kahanas.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala ma-save ang imong puwesto. Sulayi pag-usab.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala ma-save ang pagkahuman. Sulayi pag-usab o i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Isira",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft alang sa pagsusi sa hubad ug paglitok.",
+    "Buong screen na aralin": "Leksiyon sa tibuok screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sa leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda aron mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog aron mabasa ang sulod.",
+    "Subukang i-save muli": "Sulayi pag-save pag-usab",
+    "Wika ng aralin": "Pinulongan sa leksiyon",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang tubag ug pasabot"
+  }
+}
