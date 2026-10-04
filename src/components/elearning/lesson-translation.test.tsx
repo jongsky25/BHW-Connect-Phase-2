@@ -224,7 +224,7 @@ describe.each([
   { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2, wrongIndex: 0 },
   { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1, wrongIndex: 0 },
   { number: "1.1.6", folder: "bhw-roles-application", firstId: "applied-observation", approved: true, correctIndex: 0, wrongIndex: 1 },
-  { number: "1.2.1", folder: "../../02-uhc-act/lessons/uhc-coverage", firstId: "section-1", approved: false, correctIndex: 0, wrongIndex: 1 },
+  { number: "1.2.1", folder: "../../02-uhc-act/lessons/uhc-coverage", firstId: "section-1", approved: true, correctIndex: 0, wrongIndex: 1 },
 ])("lesson $number translated content", ({ folder, firstId, approved, correctIndex, wrongIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {

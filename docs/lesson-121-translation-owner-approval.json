@@ -1,0 +1,36 @@
+{
+  "status": "owner_approved_for_live_release",
+  "date": "2026-10-04",
+  "timezone": "Asia/Manila",
+  "user_instruction": "approved content for 1.2.1 to 1.2.4. merge one by one and deploy live one by one.",
+  "lesson": "1.2.1",
+  "lesson_key": "uhc-coverage",
+  "languages": [
+    "ceb",
+    "hil"
+  ],
+  "reviewed_head": "7133bc3e6d0efc65ddb4a3c7b17edb4d4c183a51",
+  "scope": "Complete prepared Bisaya/Cebuano and Hiligaynon/Ilonggo content, Read narration, localized animated stories, captions, posters and review exports. Release each lesson sequentially after its final checks and live verification.",
+  "independent_native_speaker_certification": false,
+  "independent_sme_approval": false,
+  "media_sha256": {
+    "/training/audio/02-uhc-act/uhc-coverage/section-1.ceb.34b2dcee9385.mp3": "0630975ea8256ab141361e53a5b50b57ea9af369786acd27033525aa583c2094",
+    "/training/audio/02-uhc-act/uhc-coverage/section-2.ceb.a722333b7db6.mp3": "93b083bbff8e8bf61e1350fcfd570a7e4609fb005dade96cc14da648c8caab08",
+    "/training/audio/02-uhc-act/uhc-coverage/included.ceb.a811cc0aff69.mp3": "77954de19ae68304f5d588f127d6b5ea0f3185e85181ba81144514c2d0225845",
+    "/training/audio/02-uhc-act/uhc-coverage/benefit.ceb.b19354c3d409.mp3": "267621128b95926a9aeb3e00bc6465f0d7ce25d116c97709dac2fc42f5fce631",
+    "/training/audio/02-uhc-act/uhc-coverage/verify.ceb.9b4f14fcbf59.mp3": "7bc20b2ce167667621b16e6dbab434c0a213097bde74779ac57434a11fbed18f",
+    "/training/audio/02-uhc-act/uhc-coverage/check.ceb.7a88b040c210.mp3": "bca521be214a92a097e069931c030e0f9c7db0dedfb32df84dbfa28b7d4531f0",
+    "/training/bhw-1-2/uhc-purpose-vlanche-gemini-ceb-ee0f3d5b59bb.mp4": "ee0f3d5b59bbdcc2723060b92bde894f04f10215c9b919ad8ac3750c99bff70c",
+    "/training/bhw-1-2/uhc-purpose-vlanche-gemini-ceb-0795bd3d4466.vtt": "0795bd3d44668e873b4b0a061a4a7a9ecd26b0ad505fe09c0cabd12324ce967c",
+    "/training/bhw-1-2/uhc-purpose-vlanche-gemini-ceb-1fb59d01fe34-poster.jpg": "1fb59d01fe3437378961e002a21ada741f0fc831c4fe98baf31683e1acbf6506",
+    "/training/audio/02-uhc-act/uhc-coverage/section-1.hil.df29aab7d494.mp3": "79735e0aaebbfdf09bb32a420d9230b4080d5ed6f36d5a33baf2d57d504eb91b",
+    "/training/audio/02-uhc-act/uhc-coverage/section-2.hil.f3f02f54838e.mp3": "a068a11673e961898d6a115956e950893dc21b75ef4e1ddff1dd00a50440117f",
+    "/training/audio/02-uhc-act/uhc-coverage/included.hil.b52fba8fd523.mp3": "66998b880131fbf3559b178d2f243bb2219a0b31dfce32395965929883c20733",
+    "/training/audio/02-uhc-act/uhc-coverage/benefit.hil.7c57137df05e.mp3": "01d4c1a80da0480bf4f734578987dcbbd6b60facc499d64a6f0dd3c85bbe8331",
+    "/training/audio/02-uhc-act/uhc-coverage/verify.hil.5a5c34f3d700.mp3": "48e2f5c9320aa502143d65115ef0fb0258bb955da92ad2af3bf1fe138396042e",
+    "/training/audio/02-uhc-act/uhc-coverage/check.hil.f7eaebf73835.mp3": "c5cb4a5f7dc019317840fb3c65a252279b6cc55f0355580388a014778bf936ec",
+    "/training/bhw-1-2/uhc-purpose-vlanche-gemini-hil-93c4dd71a61b.mp4": "93c4dd71a61b7cb79d31bc414bded3c8aba00e11b8a4d903f0412643c19f58e0",
+    "/training/bhw-1-2/uhc-purpose-vlanche-gemini-hil-3dc2dd404843.vtt": "3dc2dd40484348603ea2e41a79c12b2475eea71f656fbe939506e8293cbdd237",
+    "/training/bhw-1-2/uhc-purpose-vlanche-gemini-hil-96eafc9f0dc8-poster.jpg": "96eafc9f0dc8d096a59139aa5e8a3089deaf20e281064b873483bf9b642ca7dd"
+  }
+}

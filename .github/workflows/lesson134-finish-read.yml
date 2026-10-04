@@ -1,0 +1,41 @@
+name: Lesson 1.3.4 remaining Read and audio review
+on:
+  push:
+    branches: [codex/lesson-134-story-gemini]
+    paths:
+      - .github/workflows/lesson134-finish-read.yml
+      - scripts/lesson-134-finish-read.mjs
+      - scripts/lesson-134-audio-review.mjs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  finish-read:
+    if: github.ref == 'refs/heads/codex/lesson-134-story-gemini'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Finish target Read correction
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-134-finish-read.mjs
+      - name: Review actual audio with Gemini, without claiming human listening
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-134-audio-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lesson134-read-and-review
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/03-polisiya-bhs/bhs-resources/
+            docs/lesson-134-read-completion.json
+            docs/lesson-134-audio-review.json

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-04",
+  "method": "Model-mediated review of actual encoded MP3 bytes, followed by agent review of transcripts and findings; decoded signal/end-tail checks recorded separately. Not human listening or approval.",
+  "source": "lesson-135-audio-review.json",
+  "tracks_reviewed": 14,
+  "read_tracks": 12,
+  "story_tracks": 2,
+  "summary": "Model reports speech present and no clipped ending for all fourteen tracks. Most delivery is described as clear with natural phrasing or question intonation. These judgments are model-mediated and do not establish consistent timbre or exact pronunciation.",
+  "owner_listening_flags": [
+    {"track": "section-6/en", "location": "00:00–00:03 heading", "concern": "Model reports a possible neutral/male title voice followed by a Philippine English female body voice. Review the actual player; no human confirmation claimed."},
+    {"track": "reason-service-checks/fil", "location": "whole track", "concern": "Model describes alternating female/male timbre and slightly rigid pitch. Meaning is described as clear; owner listening remains pending."},
+    {"track": "reason-service-checks/en", "location": "00:26–00:32", "concern": "Model reports noticeably slow, deliberate phrasing in the service/safety sentence."},
+    {"track": "story/fil", "location": "checklist proposal beat", "concern": "Model transcript writes meeting and checklist for the authored meeting-end checklist. Could be pronunciation or transcription uncertainty; review the actual audio and caption wording."}
+  ],
+  "transcription_limits": "Transcripts contain normalization and occasional homophones (for example kong/kung). Their apparent exactness is not proof of flawless pronunciation. The Read/Slides zones and VTT text match authored content and measured timing in tests.",
+  "decision": "Retain concrete flags in this draft owner package rather than claim perfection. No approved sibling media regenerated. All new media remain draft pending explicit 1.3.5 approval."
+}

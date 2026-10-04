@@ -1,0 +1,52 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in clear conversational Philippine English as a warm, expressive community health storyteller. Pronounce Mimi MEE-mee. Use a reflective question as Mimi notices the concern, a calm practical explanation of responsibility, and deliberate emphasis on service needs and checking before action. Vary pitch and pace naturally, with brief pauses between observation and questions. Preserve every authored word; no fillers or invented permission.",
+  "durationSeconds": 74.162,
+  "beats": [
+    {
+      "zone": "notice",
+      "index": 0,
+      "text": "Mimi notices lights and a fan in an empty meeting area. How can limited resources be used while protecting service? Understand before changing.",
+      "start_ms": 0,
+      "end_ms": 11520
+    },
+    {
+      "zone": "responsibility",
+      "index": 1,
+      "text": "She asks about the closing rule and who is responsible. Confirm the right contact at the BHS. A colleague agreeing does not automatically authorize a change.",
+      "start_ms": 11820,
+      "end_ms": 23340
+    },
+    {
+      "zone": "facts",
+      "index": 2,
+      "text": "She saw the lights and fan on, with no one there when she checked. The next schedule is unknown. No blame, patient data or invented savings.",
+      "start_ms": 23640,
+      "end_ms": 33080
+    },
+    {
+      "zone": "service",
+      "index": 3,
+      "text": "Do not independently reduce supplies. Check service needs and the safety process. No clinical rationing, reuse or electrical repairs beyond the role.",
+      "start_ms": 33380,
+      "end_ms": 45420
+    },
+    {
+      "zone": "coordinate",
+      "index": 4,
+      "text": "Mimi shares the observation with the confirmed responsible person. What are the schedule and closing rule? First agreement: review the schedule and checklist, without an immediate change.",
+      "start_ms": 45720,
+      "end_ms": 58840
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Practice: describe the concern, check the rule and responsibility, and coordinate before acting. Protect service. Skill is observed separately; online completion alone is insufficient.",
+      "start_ms": 59140,
+      "end_ms": 74100
+    }
+  ]
+}

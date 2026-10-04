@@ -1,78 +1,51 @@
 ## [purpose] Purpose
 
-By the end of this short lesson the BHW can say one specific, workable suggestion for using water, electricity or supplies more efficiently at their own BHS. They say it in one sentence they could actually tell the midwife or a fellow BHW: exactly what to change, why it would help, who needs to approve it, and how they will follow up.
+Practice one workable proposal: describe a factual concern and reason, propose a feasible first step with policy, responsibility and service checks, and communicate who to ask and an agreed follow-up. These actions belong to the one preserved objective, index 0.
 
 ## [time-materials] Time and materials
 
-- **Time:** about 20 minutes in a face-to-face session: about half of the module's 40-minute "Discussion: other policies and efficient resource use" block, from the timing table in the subchapter guide. The other half goes to "Policies and resource use". Self-study of the lesson alone takes about 5 minutes (one short section, writing one sentence, and one self-check).
-- **Materials:** manila paper and markers; the "most wasted resource" list from "Policies and resource use", if you ran it; the lesson's slide ("One efficient suggestion"); small cards or paper for each BHW to write their sentence on; the sentence frame from the support section, written on manila paper.
+Suggested facilitated activity: 20 minutes including proposal sharing and feedback. Independent study: about 10 minutes for six screens and the check; optional story additional. Both are authored estimates. The manual recommends at least four hours for the whole workplace competency; the inherited module table totals 200 minutes, leaving a 40-minute organizer gap. Do not allocate four hours to each lesson or silently change sibling timing. Use blank proposal cards and fictional scenarios; no patient records, repairs or equipment demonstrations.
 
 ## [prepare] Prepare
 
-- Read the lesson in both Read and Slides so you know exactly what the BHW has seen.
-- Know who at the participants' BHS approves a change (usually the midwife or RHU staff), so you can ask *"Who would you say this to?"* with real names or roles.
-- In the practice activity you will play the midwife. Prepare one follow-up question to ask every BHW: *"Why would that help?"*
-- This lesson is about **turning a problem into one clear suggestion**. Do not solve the problems yourself (for example, how to repair a tap). Do not encourage suggestions to reduce clinical supplies; those go to the supervisor, as taught in "Breastfeeding and the environment".
+Confirm the local responsible contact, authority for the proposed process and existing room-use procedure with the health team. Mark unknowns for confirmation. Check that the nonclinical meeting-area example fits the setting. Read docs/lesson-135-source-audit.json. A supervisor title alone does not establish authority for every change.
 
 ## [opening] Opening
 
-Point to the "most wasted resource" list from the previous lesson. If you did not run it, write the list now. Ask the module's discussion question: *"What is one thing at your BHS you could make more efficient starting next week?"* Let three or four BHWs answer in a few words. Do not correct the answers yet; you will come back to them.
+Use 2 minutes: recall Mimi checking the meeting area in 1.3.4. In this fictional continuation, another use is confirmed but the reminder of who checks the schedule is unclear. Ask learners to separate the factual concern from a general complaint.
 
 ## [steps] Steps
 
-1. **Choose a specific problem (Read "One efficient suggestion", the slide's first line).** Read the lesson's examples: a light left on with no one around, water dripping unnoticed, plastics that shouldn't be used any more under DC 2021-0486. Ask: *"Which of the answers from the opening names a specific thing, and which is still general?"*
-2. **State the proposal and the reason (the slide's second line).** Show the difference between "we should change" and a sentence that says exactly what to change and why. Model one sentence yourself using the lesson's dripping-water example. Ask: *"What makes my sentence easier for the midwife to act on?"*
-3. **Authorization and follow-up (the slide's third line).** Ask: *"Who needs to say yes? How will you know it actually got done?"* Stress that a BHW seeks the appropriate authorization and follows up; they do not make the change alone.
-4. **Write it.** Each BHW writes their own sentence on a card (this is the practice activity).
-5. **Self-check.** Read the check question aloud and let the group discuss before you reveal the answer. Ask one BHW to explain the answer using their own sentence.
+1. State the factual concern and what remains unknown (3 minutes).
+2. Draft one feasible proposal and its reason; check for an existing process (3 minutes).
+3. Identify policy, authority, time, materials and service needs (3 minutes).
+4. Pair practice, share proposals and swap roles; agree who reviews what and when to speak again (6 minutes).
+5. Explain all three application choices and give feedback (3 minutes). Together with the 2-minute opening this totals 20 minutes. The optional video is not required for online completion.
 
-## [expected-answers] Expected answers and how to respond
+## [expected-answers] Expected answers
 
-- **"We should save water."** This is a good start but still general. Ask: *"Where exactly is water being wasted at your BHS? What would you change?"*
-- **"The whole BHS needs fixing."** Acknowledge that the BHS may really have many problems. Then ask: *"If you could fix only one thing first, which would it be?"*
-- **"I'd just fix it myself."** The willingness is good. Point to the slide's third line: seek the appropriate authorization and follow up. Ask who they would tell first.
-- **They name a clinical supply to cut.** Acknowledge the intention, then remind them that necessary clinical supplies are not removed on your own. Help them choose a problem involving water, electricity or unnecessary plastic instead.
+Concern: no clear reminder of who checks the schedule after meetings; another activity is confirmed. Proposal: review whether a short meeting-end checklist is needed, or clarify an existing reminder. Reason: reduce confusion in schedule checking and handover, without claiming measured savings. Checks: existing process, local rule, authority, responsible person, available time/materials and service/safety needs. Follow-up: confirmed contact and Mimi review the process at the next meeting; record who, what and when. This is agreement to review, not permission to implement.
 
 ## [misconception] Common misconception
 
-**"Saying there's a problem is the same as suggesting a fix."** A BHW may think that telling the midwife "a lot is being wasted here" is already a suggestion. The lesson says a specific suggestion with a reason is far more likely to be believed and actually carried out than a general complaint. Correct it without embarrassing anyone: take one general answer from the opening, without naming who said it, and turn it into a specific sentence with the whole group.
+“A trial is small, so we can start before permission.” Ask what duties or service needs could change. Even a checklist may assign work or conflict with an existing procedure. A colleague agreeing is not authorization. “Fix everything” is not one feasible proposal; help the learner choose a specific concern, a first step and an agreed follow-up.
 
 ## [practice] Practice activity
 
-Each BHW writes one sentence on a card: what to change, why it would help, and who they would ask to approve it. Then, one at a time or in small groups, each BHW says the sentence out loud to you. You play the midwife and ask one follow-up question: *"Why would that help?"* Then ask: *"And how will you follow up?"* Two or three BHWs can present to the whole group; the group gives one strength and one suggestion. Listening to the answers to your two questions is where you observe.
+Card A: the meeting-area schedule check has no clear reminder. Draft four lines: observation; one proposed review step and reason; what to verify with the confirmed responsible person; agreed follow-up. Card B: a colleague suggests posting the checklist immediately and assigning everyone a duty. Explain why that needs local review and permission first, then make a bounded proposal. Share aloud, receive feedback, swap roles and repeat. Do not use real patient data or perform changes.
 
 ## [answer-key] Self-check answer key
 
-The lesson has one check. It appears in the Read section "One efficient suggestion" and again on the slide of the same name with the same wording and options, so it is covered once here.
-
-- **"Which suggestion is specific?"** → **Report a leaking tap and arrange a repair follow-up.** It names one specific problem, a first action (reporting it) and a follow-up, which is what the slide asks for.
-  - **"Say to fix everything without a first step"** is wrong. It names no specific problem and no first step, so nobody can act on it. This is the "general complaint" the lesson warns about.
-
-The feedback asks the BHW to explain why using the lesson situation. Ask them to compare the leaking-tap answer with their own sentence.
+Choice 1 is correct: specific concern, one proposed checklist review and reason, checks of the existing process, authority and service needs, and an agreed review contact/time. Choice 2 implements before authorization; a trial and good intentions do not give permission. Choice 3 is a general demand, assumes unmeasured money waste and has no clear first step or agreed follow-up. Ask the learner to explain each rationale in their own words.
 
 ## [observe] What to observe
 
-Use the lesson's observation indicator during the practice activity: the BHW explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.
-
-- **Kaya na:** without prompting, the BHW states a specific problem, the change they propose, a clear reason, who needs to approve it, and how they will follow up.
-- **Kailangan pa ng practice:** the BHW has something specific in mind, but you have to ask follow-up questions for the details. For example, they cannot yet clearly say why it would help, or they forget authorization or follow-up until you ask.
-- **Hindi pa:** the BHW stays at a general suggestion ("we should save"), plans to make the change alone without authorization, or promises a result they cannot arrange themselves.
-
-Observing this in the room is separate from the BHW finishing the online self-check. A correct self-check answer is not evidence of the skill.
+Use one indicator for objective 0, grouping three actions: factual concern/reason; feasible proposal with policy/responsibility/service checks; communication of who to ask and agreed follow-up without acting or promising beyond authority. Kaya na: all three on both cards without prompts. Kailangan practice: sound proposal but checks or follow-up need prompts. Hindi pa: acts first, promises approval/savings or cannot state a specific proposal. Record observed practice separately from online completion.
 
 ## [support] If a BHW needs more support
 
-- Give them a sentence frame to fill in: *"At our BHS, ___ (specific problem). I suggest ___ (change), because ___ (reason). I will ask ___ (midwife or supervisor) and check back on ___ (follow-up)."*
-- Narrow the task: let them choose one of the lesson's own examples (the light, the dripping water, or unnecessary plastic) instead of a new problem.
-- Pair them with a BHW rated **Kaya na** and let them say their sentence second.
-- Re-observe at the next session using the same sentence. Ask whether they actually told the midwife and what happened. That is the follow-up the lesson asks for.
+Use a four-line cue card: observation → proposal and reason → checks/contact → agreed follow-up. Model one proposal. Have the learner replace a general complaint with a specific concern, then identify any unauthorized action or unsupported promise. Let them repeat in their preferred language, fade prompts, and re-observe both cards after feedback. If a local contact is unknown, help confirm it through the health team and agree a practice follow-up; do not invent authority.
 
 ## [sources-review] Sources and review notes
 
-- Lesson source: Facilitator Guide PDF 22. This is an inherited page reference; the final audit is pending. PDF 22 lists the expected outcomes of this competency, including "implement cost-effective operations", and lists efficient resource utilization (for example, how to save electricity or water) as a topic. The discussion question in the opening comes from the subchapter guide.
-- The lesson's example about plastics refers to DOH DC 2021-0486, taught in "Breastfeeding and the environment"; its wording is under review there.
-- Timing: Facilitator Guide PDF 22 says this competency needs at least 4 hours. The timing table in the subchapter guide splits it into parts that add up to 200 minutes. Keep the original total competency time in the subchapter guide. Do not repeat that whole allocation for each short lesson. The 20 minutes above is this lesson's share of the module plan, and this split supports self-study; it does not create a new training-hour allocation. The 5-minute self-study figure is an estimate, not a source figure.
-- This lesson's observation indicator is generic; the same wording is used by all five lessons in this module. The module-level indicator for a specific suggestion with a specific reason fits this lesson more closely. Review whether it should be used here.
-- Still to review before publication: the current legal and policy wording, bilingual parity, and the observation indicator.
-
-Draft for review
+Audited 4 October 2026: DOH BHW Facilitator Manual (2022), printed p.15 / original PDF p.24, Recommendations on Training. Cached original freshly reopened and rendered after fresh web retrieval exceeded the size limit. The repository transcription calls this Page 22; do not use it as the original PDF page. Supports workplace best practices, communication, efficient resources and whole-competency minimum timing. Mimi, the checklist, local questions and follow-up are authored fictional applications. No plastics legal claim, universal approval chain, guaranteed savings, repair or clinical cuts are taught. Contradictory old practice-map omitted from new revision; historical file retained. The owner approved the reviewed 1.3.5 package on 4 October 2026; see docs/lesson-135-owner-approval.json. No independent SME approval or human listening claim. See docs/lesson-135-source-audit.json.

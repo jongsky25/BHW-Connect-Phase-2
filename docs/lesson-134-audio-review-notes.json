@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-04",
+  "method": "Two Gemini model-mediated passes over actual MP3 bytes; not human listening, owner approval or independent SME review",
+  "reviewed_files": 14,
+  "first_pass": "Retained in lesson-134-audio-review-first.json with original hashes",
+  "corrected": "Four affected Read tracks regenerated; final responses transcribe policy heading and Filipino closing question correctly and no longer flag dropped connector",
+  "remaining": [
+    {
+      "file": "section-5/en",
+      "observation": "Model interprets Read or Slides as possible phrasing anomaly; these are the actual two UI mode names, accurately read, not a requested instruction to watch video."
+    },
+    {
+      "file": "observe-resource-use/en",
+      "observation": "Mimi clearly pronounced but model notes cadence preference."
+    },
+    {
+      "file": "protect-service/en and resource-check/fil",
+      "observation": "Second pass subjectively flags timbre/pitch or gender changes at sentence joins. All synthesis calls used documented Gemini/Kore. This is not evidence of mixed providers; retained for owner listening, no claim of perfect delivery."
+    },
+    {
+      "file": "resource-check/en",
+      "observation": "Model hears rule, the intended authored word; its suggestion that role might be intended is not a source correction."
+    }
+  ],
+  "limits": [
+    "Transcription is probabilistic, not an exhaustive exact-word speech audit",
+    "Final responses report speech present and no clipped endings for all fourteen files",
+    "Decoded per-zone signal and timing/hash checks complement model review"
+  ],
+  "decoded_read_zones": 108,
+  "decoded_story_beats": 12
+}

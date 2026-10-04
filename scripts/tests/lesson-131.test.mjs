@@ -35,7 +35,7 @@ describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
       const newAudio=narrationForLesson(manifest,sibling.lesson_key,lang,next.revision.read_sections);
       for(const section of next.revision.read_sections){
         expect(newAudio[section.id].src).toBe(manifest.lessons[sibling.lesson_key].sections[section.id][lang].src);
-        expect(newAudio[section.id].src).not.toBe(oldAudio[section.id].src);
+        expect(newAudio[section.id].src).not.toBe(oldAudio[section.id]?.src);
       }
       const unknown=structuredClone(sibling.read_sections);unknown[0][`body_${lang}`]+=' An unrecorded revision.';
       expect(narrationForLesson(manifest,sibling.lesson_key,lang,unknown)[unknown[0].id]).toBeUndefined();
@@ -154,7 +154,7 @@ describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
       expect(planReferenceNarration(modules,manifest,()=> 'fixture').find(i=>i.language==='en').action).toBe('render');
     }finally{BHS_PROMOTIONS_STORY_STYLES.en=old;}
     const other=structuredClone(modules);
-    other[0].lessons[0].manifest.lesson_key='bhs-decline';
+    other[0].lessons[0].manifest.lesson_key='unconfigured-lesson';
     expect(planReferenceNarration(other,{lessons:{}},()=>null).every(i=>i.provider==='edge')).toBe(true);
   });
   it('selects twelve current real Gemini files with authored zone timings on default and explicit reruns',()=>{
