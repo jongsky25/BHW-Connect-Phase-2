@@ -10,7 +10,7 @@ import {
   useVideoConfig,
   type CalculateMetadataFunction,
 } from "remotion";
-import { UHC_PURPOSE_BEATS } from "./narration";
+import { UHC_PURPOSE_BEATS, UHC_PURPOSE_LABELS } from "./narration";
 
 export const UHC_PURPOSE_FPS = 30;
 export const UHC_PURPOSE_FALLBACK_DURATION = UHC_PURPOSE_FPS * 65;
@@ -18,7 +18,7 @@ const TAIL_SECONDS = 1.2;
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 export type UhcPurposeStoryProps = {
-  language: "fil" | "en";
+  language: "fil" | "en" | "ceb" | "hil";
   beatFrames?: number[];
   audioSrc?: string;
 };
@@ -59,12 +59,12 @@ function LabelCard({ title, detail, frame, number }: { title: string; detail: st
   </div>;
 }
 
-function BeatScene({ index, language }: { index: number; language: "fil" | "en" }) {
+function BeatScene({ index, language }: { index: number; language: "fil" | "en" | "ceb" | "hil" }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const beat = UHC_PURPOSE_BEATS[index];
-  const title = language === "fil" ? beat.title_fil : beat.title_en;
-  const detail = language === "fil" ? beat.detail_fil : beat.detail_en;
+  const title = beat[`title_${language}`];
+  const detail = beat[`detail_${language}`];
   const opacity = interpolate(frame, [0, 12], [0, 1], clamp);
   const photo = index === 0 || index === 5;
   return <AbsoluteFill style={{ background: "linear-gradient(135deg, #0b4c3c, #28775c)", overflow: "hidden", fontFamily: "Arial, 'Noto Sans', sans-serif" }}>
@@ -80,11 +80,11 @@ function BeatScene({ index, language }: { index: number; language: "fil" | "en" 
       <div style={{ color: white, fontSize: 51, fontWeight: 850, lineHeight: 1.04, textShadow: "0 4px 18px #0a3029" }}>{title}</div>
       <div style={{ color: white, fontSize: 25, marginTop: 18, fontWeight: 600 }}>{detail}</div>
     </div> : index === 5 ? <div style={{ position: "absolute", left: 58, top: 123, maxWidth: 740, opacity }}>
-      <div style={{ color: mint, fontSize: 19, fontWeight: 800, marginBottom: 17 }}>Vlanche's answer</div>
+      <div style={{ color: mint, fontSize: 19, fontWeight: 800, marginBottom: 17 }}>{UHC_PURPOSE_LABELS[language].answer}</div>
       <div style={{ color: white, fontSize: 42, fontWeight: 850, lineHeight: 1.1, textShadow: "0 4px 18px #0a3029" }}>{title}</div>
       <div style={{ color: white, fontSize: 23, marginTop: 20, fontWeight: 600 }}>{detail}</div>
       <div style={{ display: "flex", gap: 12, marginTop: 31 }}>
-        {(language === "fil" ? ["Kasama", "Benepisyo", "Provider", "Hakbang"] : ["Included", "Benefit", "Provider", "Steps"]).map((word) =>
+        {UHC_PURPOSE_LABELS[language].summary.map((word) =>
           <span key={word} style={{ background: white, color: ink, borderRadius: 12, padding: "9px 13px", fontSize: 17, fontWeight: 800 }}>{word}</span>) }
       </div>
     </div> : <div style={{ position: "absolute", left: 72, top: 120 }}><LabelCard title={title} detail={detail} frame={frame} number={index + 1}/></div>}

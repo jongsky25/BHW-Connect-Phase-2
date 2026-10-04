@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "9432dee0806c9ed849bf437b0be133336366980f32b6d24c685dcd597b58ee25",
+  "durationSeconds": 66.56,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Sa barangay health station, ginpamangkot ni Mang Ernesto si BHW Vlanche: Libre na bala ang konsulta? Namati anay siya antes magsabat.",
+      "start_ms": 0,
+      "end_ms": 9840
+    },
+    {
+      "zone": "purpose",
+      "index": 1,
+      "text": "Katuyuan sang UHC Act nga mas mahapos malab-ot ang dekalidad kag masarangan nga pag-atipan kag maprotektahan ang mga tawo batok sa mabug-at nga gasto.",
+      "start_ms": 10140,
+      "end_ms": 22060
+    },
+    {
+      "zone": "included",
+      "index": 2,
+      "text": "Sa idalom sang balaod, awtomatikong lakip ang tagsa ka Pilipino nga lungsuranon sa National Health Insurance Program sang PhilHealth.",
+      "start_ms": 22360,
+      "end_ms": 30200
+    },
+    {
+      "zone": "benefit",
+      "index": 3,
+      "text": "Ang pagkalakip sa programa wala nagakahulugan nga libre ang tagsa ka serbisyo sa tagsa ka pasilidad. Lain ang pamangkot kon sakop ang partikular nga konsulta.",
+      "start_ms": 30500,
+      "end_ms": 42100
+    },
+    {
+      "zone": "verify",
+      "index": 4,
+      "text": "Usisaon ni Vlanche sa PhilHealth ukon RHU ang benepisyo, ginakilala nga provider ukon pasilidad, kag kinahanglan nga mga tikang para sa sini nga konsulta.",
+      "start_ms": 42400,
+      "end_ms": 54360
+    },
+    {
+      "zone": "answer",
+      "index": 5,
+      "text": "Nagsiling si Vlanche: Lakip kamo sa PhilHealth. Agod mahibaluan kon sakop ini nga konsulta diri, siguruhon naton ang benepisyo, provider, kag ang dapat himuon.",
+      "start_ms": 54660,
+      "end_ms": 66500
+    }
+  ]
+}

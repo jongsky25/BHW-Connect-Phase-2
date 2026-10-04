@@ -214,10 +214,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
+      {(["fil", "en", "ceb", "hil"] as const).map((language) => (
         <Composition
           key={`uhc-purpose-${language}`}
-          id={language === "fil" ? "UhcPurposeStoryFil" : "UhcPurposeStoryEn"}
+          id={`UhcPurposeStory${{ fil: "Fil", en: "En", ceb: "Ceb", hil: "Hil" }[language]}`}
           component={UhcPurposeStory}
           calculateMetadata={calculateUhcPurposeMetadata}
           durationInFrames={UHC_PURPOSE_FALLBACK_DURATION}

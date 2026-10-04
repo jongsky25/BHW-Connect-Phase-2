@@ -1,7 +1,9 @@
+import cebuano from "../../../content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-coverage/translation.hil.json" with { type: "json" };
 // Companion animation for lesson 1.2.1. The fictional conversation illustrates
 // a distinction in the UHC Act, not a promise about one facility or benefit.
 
-export type UhcPurposeBeat = {
+type BaseUhcPurposeBeat = {
   id: string;
   fil: string;
   en: string;
@@ -11,7 +13,7 @@ export type UhcPurposeBeat = {
   detail_en: string;
 };
 
-export const UHC_PURPOSE_BEATS: UhcPurposeBeat[] = [
+const baseBeats: BaseUhcPurposeBeat[] = [
   {
     id: "question",
     fil: "Sa barangay health station, tinanong ni Mang Ernesto si BHW Vlanche: Libre na ba ang konsulta? Nakinig muna siya bago sumagot.",
@@ -67,3 +69,10 @@ export const UHC_PURPOSE_BEATS: UhcPurposeBeat[] = [
     detail_en: "No promise of a free visit without checking.",
   },
 ];
+
+export const UHC_PURPOSE_BEATS = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("UHC translated story beat order mismatch");
+  return {...beat, ceb: ceb.text, hil: hil.text, title_ceb: ceb.title, title_hil: hil.title, detail_ceb: ceb.detail, detail_hil: hil.detail};
+});
+export const UHC_PURPOSE_LABELS = {fil: {answer: "Vlanche's answer", summary: ["Kasama", "Benepisyo", "Provider", "Hakbang"]}, en: {answer: "Vlanche's answer", summary: ["Included", "Benefit", "Provider", "Steps"]}, ceb: cebuano.scene_labels, hil: hiligaynon.scene_labels};

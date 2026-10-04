@@ -106,6 +106,30 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
   });
 });
 
+describe("lesson 1.2.1 completion preserves identity without the optional story", () => {
+  const coverageDirectory = path.resolve(directory, "../../../02-uhc-act/lessons/uhc-coverage");
+  for (const language of ["ceb", "hil"] as const) {
+    it(`completes ${language} with the original lesson and revision identity`, async () => {
+      const { lesson, translation } = fixture(language, coverageDirectory);
+      // Simulated approval only in this test; committed packages stay draft.
+      translation.review_status = "approved";
+      const onComplete = vi.fn().mockResolvedValue(undefined);
+      const { container } = render(<ReferenceLessons title_fil="Manual" title_en="Manual" chapters={[]}
+        lessons={[lesson]} completed={[]} resumes={[]} modules={[]} locale="fil" initialLessonId="lesson"
+        translations={[translation]} onResume={vi.fn().mockResolvedValue(undefined)} onComplete={onComplete}/>);
+      fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: language } });
+      for (let i = 0; i < 5; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
+      fireEvent.click(screen.getByRole("button", { name: translation.read_sections[5].check!.options[0] }));
+      expect(container.querySelector("video")).not.toBeInTheDocument();
+      fireEvent.click(screen.getByRole("button", { name: translation.ui["Markahang tapos ang aralin"] }));
+      expect(await screen.findByText(translation.ui["Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso."])).toBeInTheDocument();
+      expect(onComplete).toHaveBeenCalledOnce();
+      expect(onComplete.mock.calls[0][0].id).toBe(lesson.id);
+      expect(onComplete.mock.calls[0][0].published_revision_id).toBe(lesson.published_revision_id);
+    });
+  }
+});
+
 describe("lesson 1.1.1 Hiligaynon pilot", () => {
   const selectHiligaynon = () => fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: "hil" } });
   it("offers the owner's approved languages to learners and hides stale translations", () => {
@@ -200,6 +224,7 @@ describe.each([
   { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2, wrongIndex: 0 },
   { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1, wrongIndex: 0 },
   { number: "1.1.6", folder: "bhw-roles-application", firstId: "applied-observation", approved: true, correctIndex: 0, wrongIndex: 1 },
+  { number: "1.2.1", folder: "../../02-uhc-act/lessons/uhc-coverage", firstId: "section-1", approved: true, correctIndex: 0, wrongIndex: 1 },
 ])("lesson $number translated content", ({ folder, firstId, approved, correctIndex, wrongIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {

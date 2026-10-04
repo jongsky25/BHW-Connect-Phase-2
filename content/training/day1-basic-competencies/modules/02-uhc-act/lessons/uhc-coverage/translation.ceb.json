@@ -1,0 +1,224 @@
+{
+  "language": "ceb",
+  "label": "Bisaya (Cebuano)",
+  "review_status": "approved",
+  "lesson_key": "uhc-coverage",
+  "title": "Tumong ug sakop sa UHC",
+  "objectives": [
+    "Mapasabot ug magamit sa usa ka sitwasyon: tumong ug sakop sa UHC."
+  ],
+  "read_sections": [
+    {
+      "id": "section-1",
+      "takeaway": "Paminaw una sa pangutana sa dili pa mopasabot o mosaad.",
+      "check": null
+    },
+    {
+      "id": "section-2",
+      "takeaway": "Tumong sa UHC ang mas sayon nga pagduol sa dekalidad nga serbisyo ug pagpanalipod batok sa bug-at nga gasto.",
+      "check": null
+    },
+    {
+      "id": "included",
+      "takeaway": "Awtomatikong apil sa NHIP ang matag Pilipinong lungsoranon.",
+      "check": null
+    },
+    {
+      "id": "benefit",
+      "takeaway": "Ang pagkaapil sa programa dili saad nga libre ang matag serbisyo bisan asa.",
+      "check": null
+    },
+    {
+      "id": "verify",
+      "takeaway": "Siguroha ang benepisyo, provider, ug gikinahanglang lakang alang sa partikular nga konsulta.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Ipasabot ang nahibaloan na, ug ilhon ang kinahanglan pang sigurohon.",
+      "check": {
+        "prompt": "Kon apil na si Mang Ernesto sa PhilHealth, libre na ba ang iyang konsulta sa bisan unsang pasilidad? Unsa ang angay isulti ni Vlanche?",
+        "options": [
+          "Apil kamo sa PhilHealth. Sigurohon nato kon sakop ba kining konsulta dinhi, kon kinsa ang provider, ug ang gikinahanglang lakang.",
+          "Oo. Kay apil kamo, libre ang tanang konsulta sa bisan unsang pasilidad.",
+          "Walay kalabotan ang UHC; walay konsulta nga mahimong sakop."
+        ],
+        "feedback": "Awtomatikong apil si Mang Ernesto sa NHIP, apan dili kana makatubag kon sakop ba ang partikular nga konsulta. Siguroha ang benepisyo, provider, ug proseso sa dili pa mosaad nga walay bayad."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide-section-1",
+      "heading": "Ang pangutana ni Mang Ernesto",
+      "display": "Nangutana si Mang Ernesto bahin sa bayad sa konsulta.\nMaminaw una si Vlanche.\nWalay saad sa dili pa magsiguro.",
+      "check": null
+    },
+    {
+      "id": "slide-section-2",
+      "heading": "Unsa ang tumong sa UHC?",
+      "display": "Dekalidad nga serbisyo nga makaya sa bulsa.\nPagpanalipod batok sa bug-at nga gasto.\nTumong alang sa sistema sa panglawas.",
+      "check": null
+    },
+    {
+      "id": "slide-included",
+      "heading": "Unsay kahulogan sa awtomatikong pagkaapil?",
+      "display": "Awtomatikong apil sa NHIP ang matag Pilipinong lungsoranon.\nKini nagtubag kon kinsa ang apil sa programa.",
+      "check": null
+    },
+    {
+      "id": "slide-benefit",
+      "heading": "Apil, apan unsang serbisyo ang sakop?",
+      "display": "Apil sa programa ≠ libre ang matag serbisyo.\nSiguroha kining benepisyo sa kining pasilidad.",
+      "check": null
+    },
+    {
+      "id": "slide-verify",
+      "heading": "Unsa ang sunod nga buhaton ni Vlanche?",
+      "display": "Siguroha ang benepisyo.\nSiguroha ang provider o pasilidad.\nSiguroha ang lakang alang sa kining konsulta.",
+      "check": null
+    },
+    {
+      "id": "slide-check",
+      "heading": "Tubaga ang residente",
+      "display": "Isulti ang nahibaloan na.\nIlhon ang kinahanglan pang sigurohon.\nAyaw mosaad nga libre ang pagbisita.",
+      "check": {
+        "prompt": "Kon apil na si Mang Ernesto sa PhilHealth, libre na ba ang iyang konsulta sa bisan unsang pasilidad? Unsa ang angay isulti ni Vlanche?",
+        "options": [
+          "Apil kamo sa PhilHealth. Sigurohon nato kon sakop ba kining konsulta dinhi, kon kinsa ang provider, ug ang gikinahanglang lakang.",
+          "Oo. Kay apil kamo, libre ang tanang konsulta sa bisan unsang pasilidad.",
+          "Walay kalabotan ang UHC; walay konsulta nga mahimong sakop."
+        ],
+        "feedback": "Awtomatikong apil si Mang Ernesto sa NHIP, apan dili kana makatubag kon sakop ba ang partikular nga konsulta. Siguroha ang benepisyo, provider, ug proseso sa dili pa mosaad nga walay bayad."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "vlanche-ernesto",
+      "alt": "Maminaw si BHW Vlanche kang Mang Ernesto sa gawas sa barangay health station samtang nangutana siya bahin sa konsulta.",
+      "caption": "Hinimo nga panag-istorya bahin sa UHC; wala ipakita ang partikular nga benepisyo o bayad."
+    },
+    {
+      "id": "uhc-purpose-story",
+      "alt": "Animadong pagpasabot ni BHW Vlanche kang Mang Ernesto: tumong sa UHC, awtomatikong pagkaapil sa NHIP, ug pagsiguro sa partikular nga benepisyo, provider, ug lakang sa dili pa mosaad nga walay bayad.",
+      "caption": "Hinimo nga pananglitan nina Vlanche ug Mang Ernesto; adunay salaysay ug mga caption sa Bisaya (Cebuano)."
+    }
+  ],
+  "story_art": {
+    "alt": "Maminaw si BHW Vlanche kang Mang Ernesto sa gawas sa barangay health station samtang nangutana siya bahin sa konsulta.",
+    "caption": "Hinimo nga panag-istorya bahin sa UHC; wala ipakita ang partikular nga benepisyo o bayad."
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Sa barangay health station, nangutana si Mang Ernesto kang BHW Vlanche: Libre na ba ang konsulta? Naminaw una siya sa dili pa motubag.",
+      "title": "Libre na ba ang konsulta?",
+      "detail": "Paminaw una sa pangutana."
+    },
+    {
+      "id": "purpose",
+      "text": "Tumong sa UHC Act nga mas dali maduolan ang dekalidad ug makaya sa bulsa nga pag-atiman ug mapanalipdan ang mga tawo batok sa bug-at nga gasto.",
+      "title": "Tumong sa UHC",
+      "detail": "Mas sayon nga pagduol sa serbisyo · pagpanalipod sa gasto"
+    },
+    {
+      "id": "included",
+      "text": "Ubos sa balaod, awtomatikong apil ang matag Pilipinong lungsoranon sa National Health Insurance Program sa PhilHealth.",
+      "title": "Awtomatikong apil",
+      "detail": "Kinsa ang apil sa programa?"
+    },
+    {
+      "id": "benefit",
+      "text": "Ang pagkaapil sa programa wala magpasabot nga libre ang matag serbisyo sa matag pasilidad. Lahi ang pangutana kon sakop ba ang partikular nga konsulta.",
+      "title": "Apil ≠ libre ang tanan",
+      "detail": "Siguroha ang partikular nga serbisyo."
+    },
+    {
+      "id": "verify",
+      "text": "Susihon ni Vlanche sa PhilHealth o RHU ang benepisyo, giila nga provider o pasilidad, ug gikinahanglang mga lakang alang sa kining konsulta.",
+      "title": "Benepisyo · provider · mga lakang",
+      "detail": "Kumpirmaha ang kasamtangang lokal nga proseso."
+    },
+    {
+      "id": "answer",
+      "text": "Miingon si Vlanche: Apil kamo sa PhilHealth. Aron mahibalo kon sakop ba kining konsulta dinhi, sigurohon nato ang benepisyo, provider, ug ang angay buhaton.",
+      "title": "Isulti ang nahibaloan · siguroha ang detalye",
+      "detail": "Walay saad nga libre kon wala pa masiguro."
+    }
+  ],
+  "scene_labels": {
+    "answer": "Tubag ni Vlanche",
+    "summary": [
+      "Apil",
+      "Benepisyo",
+      "Provider",
+      "Mga lakang"
+    ]
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanong adunay salaysay",
+    "Buong screen": "Tibuok screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Gibanabanang 3–7 ka minuto alang sa kaugalingong pagtuon; lahi ang pagpraktis uban sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animadong sugilanon nga adunay salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pislita ang Play aron madungog ang salaysay sa piniling pinulongan.",
+    "Pumili ng sagot": "Pagpili og tubag",
+    "Tama!": "Sakto!",
+    "Hindi pa tama. Subukang muli.": "Dili pa sakto. Sulayi pag-usab.",
+    "Nakaraan": "Miaging bahin",
+    "Susunod": "Sunod nga bahin",
+    "Puwesto sa aralin": "Bahin sa leksiyon",
+    "Uri ng nilalaman": "Matang sa sulod",
+    "Pakinggan ang bahaging ito": "Paminawa kining bahina",
+    "Pakinggan": "Paminawa",
+    "I-pause": "Hunonga kadiyot",
+    "Bilis": "Kapaspas",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Dili mapatukar ang audio. Basaha una ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Tubaga una ang pangutana aron mapaminaw ang audio nga adunay sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo na nimong markahan nga nahuman ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Humanon ang mga bahin ug tubagon ang matag pangutana sa Basaha o Mga slide. Dili kinahanglan nga sakto ang unang tubag. Kon i-reload, tubaga pag-usab ang mga pangutana.",
+    "Natapos": "Nahuman",
+    "Markahang tapos ang aralin": "Markahi nga nahuman ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Nahuman nimo ang leksiyon. Na-save ang imong progreso.",
+    "Susunod na aralin →": "Sunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sa mga leksiyon →",
+    "Nakaraang aralin": "Miaging leksiyon",
+    "Susunod na aralin": "Sunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkahuman sa leksiyon dili pamatuod sa praktikal nga kahanas.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala ma-save ang imong puwesto. Sulayi pag-usab.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala ma-save ang pagkahuman. Sulayi pag-usab o i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Isira",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft alang sa pagsusi sa hubad ug paglitok.",
+    "Buong screen na aralin": "Leksiyon sa tibuok screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sa leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda aron mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog aron mabasa ang sulod.",
+    "Subukang i-save muli": "Sulayi pag-save pag-usab",
+    "Wika ng aralin": "Pinulongan sa leksiyon",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang tubag ug pasabot"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-04",
+    "timezone": "Asia/Manila",
+    "scope": "Lesson 1.2.1 prepared translations, reading narration, story, captions and poster",
+    "approval": "approved content for 1.2.1 to 1.2.4. merge one by one and deploy live one by one.",
+    "reviewed_head": "7133bc3e6d0efc65ddb4a3c7b17edb4d4c183a51",
+    "independent_native_speaker_certification": false,
+    "independent_sme_approval": false,
+    "release_animation_verification": "Every composition, poster, size-budget check and artifact; four render jobs."
+  }
+}

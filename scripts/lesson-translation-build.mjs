@@ -11,15 +11,19 @@ const translatedLessons = {
   "1.1.4": { key: "bhw-service-provider", story: "service-provider", mediaBase: "service-provider-riza-gemini", port: 4317 },
   "1.1.5": { key: "bhw-records", story: "records", mediaBase: "records-riza-gemini", port: 4319 },
   "1.1.6": { key: "bhw-roles-application", story: "roles-application", mediaBase: "roles-application-riza-gemini", port: 4321 },
+  "1.2.1": { key: "uhc-coverage", story: "uhc-purpose", mediaBase: "uhc-purpose-vlanche-gemini", port: 4323, module: "02-uhc-act", moduleKey: "bhw-1-2", lessonCount: 4 },
+  "1.2.2": { key: "uhc-primary-care", story: "uhc-primary-care", mediaBase: "primary-care-vlanche-gemini", port: 4325, module: "02-uhc-act", moduleKey: "bhw-1-2", lessonCount: 4 },
+  "1.2.3": { key: "uhc-local-system", story: "uhc-local-system", mediaBase: "local-system-vlanche-gemini", port: 4327, module: "02-uhc-act", moduleKey: "bhw-1-2", lessonCount: 4 },
+  "1.2.4": { key: "uhc-improvement", story: "uhc-improvement", mediaBase: "uhc-improvement-vlanche-gemini", port: 4329, module: "02-uhc-act", moduleKey: "bhw-1-2", lessonCount: 4 },
 };
 export function translationLesson(args = process.argv.slice(2)) {
   const index = args.indexOf("--lesson");
   const number = index === -1 ? "1.1.1" : args[index + 1];
-  if (!Object.hasOwn(translatedLessons, number)) throw new Error("Use --lesson 1.1.1, --lesson 1.1.2, --lesson 1.1.3, --lesson 1.1.4, --lesson 1.1.5, or --lesson 1.1.6");
-  return { number, ...translatedLessons[number] };
+  if (!Object.hasOwn(translatedLessons, number)) throw new Error(`Use --lesson ${Object.keys(translatedLessons).join(", ")}`);
+  return { number, module: "01-tungkulin-ng-bhw", moduleKey: "bhw-1-1", lessonCount: 6, ...translatedLessons[number] };
 }
 export const lessonConfig = translationLesson();
-export const lessonDirectory = path.resolve(import.meta.dirname, `../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/${lessonConfig.key}`);
+export const lessonDirectory = path.resolve(import.meta.dirname, `../content/training/day1-basic-competencies/modules/${lessonConfig.module}/lessons/${lessonConfig.key}`);
 export const pilotLanguages = {
   ceb: { name: "Cebuano", slug: "bisaya", preview: "cebuano" },
   hil: { name: "Hiligaynon", slug: "hiligaynon", preview: "hiligaynon" },
@@ -37,9 +41,12 @@ export function buildLessonPilot(language = "ceb") {
   const authored = json("lesson.json");
   const fil = parseReferenceRead(readFileSync(path.join(lessonDirectory, "read.fil.md"), "utf8"));
   const en = parseReferenceRead(readFileSync(path.join(lessonDirectory, "read.en.md"), "utf8"));
+  const sameSourceIds = items => JSON.stringify(items.map(s => s.id)) === JSON.stringify(authored.sections.map(s => s.id));
+  if (!sameSourceIds(fil) || !sameSourceIds(en)) throw new Error("Bilingual Read IDs do not match authored sections");
   const localizedRead = parseReferenceRead(readFileSync(path.join(lessonDirectory, `read.${language}.md`), "utf8"));
   const translated = json(`translation.${language}.json`);
   if (translated.language !== language) throw new Error("Translated language code does not match requested language");
+  if (translated.lesson_key !== lessonConfig.key) throw new Error("Translated lesson key does not match selected lesson");
   const source = { ...authored.manifest, revision: { read_sections: authored.sections.map((section, i) => ({ ...section,
     heading_fil: fil[i].heading, body_fil: fil[i].body, heading_en: en[i].heading, body_en: en[i].body })), slides: json("slides.json") } };
   const sameIds = (a, b) => JSON.stringify(a.map(s => s.id)) === JSON.stringify(b.map(s => s.id));
