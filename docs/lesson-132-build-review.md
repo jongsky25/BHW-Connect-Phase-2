@@ -65,3 +65,7 @@ The React quality review is scoped to the viewer mapping, CSS and new animation.
 ## Final landscape player correction
 
 Actual full-screen caption playback exposed a vertical-fit issue at 844×390: the full-width video extended below the viewport. The target's full-screen player now removes redundant surrounding copy and caps the video height while preserving its 16:9 frame, native captions/controls and accessible video label. The regular player retains its instructions, captions and text alternative. Opening this lesson's presenter chooses the current viewport orientation; Portrait/Landscape controls remain available. Both languages are checked with the complete video rectangle inside each required viewport, actual six-cue caption playback, Read/Slides scrolling and navigation, and single-player return. A viewer regression verifies landscape initialization and return to Read. Media bytes, timings and scripts are unchanged. Final CI is rerun after this correction.
+
+## Latest main reconciliation
+
+Reconciled the released lesson 1.3.1 commit 6adfe8383998e791f92665db3c91ca3fc7d665dc before final review checks. Retained its Mimi artwork, narration entries, composition pair, provider/style directions including AO-number clarification, viewer mapping and sibling updates. This lesson's six-screen facilitator sequence already uses Mimi and replaces the old single-screen sequence. Final-head CI and both shards cover the combined composition library. Approval and publication remain pending for lesson 1.3.2 only.

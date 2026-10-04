@@ -1,11 +1,11 @@
 ## [scenario/core] The visitor at the BHS
 
-A representative from a milk company arrived at BHW Corazon's barangay
+A representative from a milk company arrived at BHW Mimi's barangay
 health station — carrying samples and a tarpaulin showing their new
 product. "Could we leave these inside, for you to give out to the
 mothers? We also have a small gift for you."
 
-Corazon knew she had to decline — but how could she do it without
+Mimi knew she had to decline — but how could she do it without
 offending the visitor, and with the right reasoning behind her refusal?
 
 :::takeaway
@@ -15,7 +15,7 @@ it, and the refusal is stronger once you know what that basis is.
 
 ## [concept/core] Two bans on promotion {m3.milk-code, m3.pharma-ban}
 
-Two policies apply to the situation Corazon faced.
+Two policies apply to the situation Mimi faced.
 
 Under **Executive Order 51, the Philippine Milk Code of 1986**,
 advertising milk formula or milk substitutes inside health facilities is
@@ -74,7 +74,7 @@ follow-through: promote breastfeeding, cut down on plastic.
 
 ## [practice/core] How to decline respectfully
 
-Back to BHW Corazon. Now that she knows the basis, how should she tell
+Back to BHW Mimi. Now that she knows the basis, how should she tell
 the company representative, without it sounding like a personal
 attack?
 
@@ -83,7 +83,7 @@ then explain the policy directly and clearly — not stalling, not
 pretending not to know. "I understand you want to help, but we're not
 allowed to promote milk substitutes inside the BHS, under the Milk Code.
 We also can't take samples, gifts or other offers from milk companies.
-I'll let our midwife know you came by." Corazon does not suggest any
+I'll let our midwife know you came by." Mimi does not suggest any
 other way for the company to help, and she promises nothing in return.
 That same day she tells the midwife about the visit.
 
@@ -102,7 +102,7 @@ resourceful in the face of limited resources.
 
 This isn't separate from the four policies — it's the same skill: the
 ability to look at a situation, spot a better way, and explain it
-clearly to others. Declining the offer to Corazon is one way of using
+clearly to others. Declining the offer to Mimi is one way of using
 it; proposing a more efficient way to use resources is another.
 
 :::takeaway
@@ -134,7 +134,7 @@ company's representative, because "it's free anyway, and maybe it's
 rude to say no." He handed the samples out to patients with no
 explanation of why they were being recommended.
 
-**Right**: Corazon respectfully declined, explained the basis in the
+**Right**: Mimi respectfully declined, explained the basis in the
 Milk Code, made no deal of any kind with the company, and told the
 midwife about the visit that same day.
 

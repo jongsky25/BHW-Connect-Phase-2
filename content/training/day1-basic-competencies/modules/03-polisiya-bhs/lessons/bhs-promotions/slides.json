@@ -8,14 +8,14 @@
     "layout": "scene",
     "heading_fil": "Ang bisita sa BHS",
     "heading_en": "The visitor at the BHS",
-    "display_fil": "May alok na regalo kapalit ng promosyon.\nHuwag tanggapin agad.\nIdulog sa namamahala at tingnan ang polisiya.",
-    "display_en": "A gift is offered in exchange for promotion.\nDo not accept it on the spot.\nRefer it to the supervisor and check policy.",
+    "display_fil": "Mga sample · tarpaulin · regalo\nAno ang produkto? Ano ang kapalit?",
+    "display_en": "Samples · tarpaulin · gift\nWhat is the product? What is expected in return?",
     "asset_ids": [
-      "practice-map"
+      "mimi-company-offer"
     ],
     "check": null,
-    "narration_fil": "May dumating na kinatawan ng isang kumpanya ng gatas sa barangay health station ni BHW Corazon — may dalang mga sample at tarpaulin na nagpapakita ng kanilang bagong produkto. \"Puwede po bang ilagay namin ito sa loob, at ipamigay ninyo sa mga nanay? May konting regalo din po kami para sa inyo.\"\n\nAlam ni Corazon na kailangan niyang tumanggi — pero paano niya ito gagawin nang hindi masamang loob ang bisita, at nang tama ang dahilan niya sa pagtanggi?",
-    "narration_en": "A representative from a milk company arrived at BHW Corazon's barangay health station — carrying samples and a tarpaulin showing their new product. \"Could we leave these inside, for you to give out to the mothers? We also have a small gift for you.\"\n\nCorazon knew she had to decline — but how could she do it without offending the visitor, and with the right reasoning behind her refusal?"
+    "narration_fil": "May dumating na kinatawan ng kumpanya ng gatas sa barangay health station ni BHW Mimi. May dala siyang mga sample, tarpaulin, at maliit na regalo. “Ipamigay po ninyo sa mga nanay ang mga sample at isabit ang tarpaulin. Para po sa inyo ang regalo.” Nakinig si Mimi: ano ang produktong iniaalok, at ano ang hinihinging kapalit? Hindi niya tinanggap, ipinaskil, o ipinamahagi ang mga ito.",
+    "narration_en": "A milk-company representative arrives at BHW Mimi’s barangay health station with samples, a tarpaulin, and a small gift. “Please give the samples to mothers and hang the tarpaulin. The gift is for you.” Mimi listens: what product is being offered, and what is expected in return? She does not accept, display, or distribute the items."
   },
   {
     "id": "slide-section-2",
@@ -23,30 +23,108 @@
       "m3.milk-code",
       "m3.pharma-ban"
     ],
+    "layout": "comparison",
+    "heading_fil": "Dalawang paksa ng polisiya",
+    "heading_en": "Two policy topics",
+    "display_fil": "Milk Code: saklaw na milk substitutes at kaugnay na produkto\nAO 2015-0053: prescription products at medical devices",
+    "display_en": "Milk Code: covered substitutes and related products\nAO 2015-0053: prescription products and medical devices",
+    "asset_ids": [
+      "mimi-company-offer"
+    ],
+    "check": null,
+    "narration_fil": "Saklaw ng Milk Code ang infant formula, iba pang produktong ipinakikilalang pamalit sa gatas ng ina, at feeding bottles at teats. Ipinagbabawal nito ang promosyon at product posters sa health-care facilities at insentibo sa health workers para magpromote. May hiwalay na tuntunin ang DOH AO 2015-0053 para sa prescription pharmaceutical products at medical devices. May mga ipinagbabawal at may kondisyong pinapayagang gawain; hindi pareho ang saklaw ng dalawang polisiya.",
+    "narration_en": "The Milk Code covers infant formula, other products marketed as breastmilk replacements, and feeding bottles and teats. It prohibits promotion and product posters in health-care facilities and inducements to health workers to promote covered products. DOH AO 2015-0053 has separate rules for prescription pharmaceutical products and medical devices. It includes prohibitions and activities allowed under conditions; the two policies have different scopes."
+  },
+  {
+    "id": "slide-identify-offer",
+    "concept_ids": [
+      "m3.milk-code",
+      "m3.pharma-ban"
+    ],
+    "layout": "process",
+    "heading_fil": "Ano mismo ang alok?",
+    "heading_en": "What exactly is being offered?",
+    "display_fil": "Produkto · promosyon · lugar/kausap · insentibo\nTiyakin kung prescription product ang gamot.",
+    "display_en": "Product · promotion · place/audience · inducement\nCheck whether the medicine is a prescription product.",
+    "asset_ids": [
+      "mimi-company-offer"
+    ],
+    "check": null,
+    "narration_fil": "Tinutukoy ni Mimi ang apat na detalye: produkto, hinihinging promosyon, lugar at kausap, at regalo o insentibo. Sa bisitang ito: sample ng produktong kailangang tiyakin ang saklaw, tarpaulin sa BHS, pamimigay sa mga nanay, at regalo kasabay ng promosyon. Kung gamot ang alok, itanong kung prescription product ito at para kanino ang sample. Sa AO 2015-0053, hindi maaaring ipamigay ang prescription samples sa pangkalahatang publiko; licensed physicians at dentists lamang ang maaaring tumanggap ng ganitong sample ayon sa tuntunin.",
+    "narration_en": "Mimi identifies four details: the product, requested promotion, place and audience, and gift or inducement. Here she sees samples whose scope must be checked, a BHS tarpaulin, distribution to mothers, and a gift alongside the promotion. For a medicine offer, ask whether it is a prescription product and who would receive the sample. Under AO 2015-0053, prescription samples cannot be distributed to the general public; only licensed physicians and dentists may receive these samples under its rules."
+  },
+  {
+    "id": "slide-pause-route",
+    "concept_ids": [
+      "m3.milk-code",
+      "m3.pharma-ban"
+    ],
     "layout": "decision",
-    "heading_fil": "Dalawang bawal sa promosyon",
-    "heading_en": "Two bans on promotion",
-    "display_fil": "Milk Code: may limitasyon sa promosyon at insentibo.\nPharmaceutical promotion: may etikang tuntunin.\nTiyakin ang saklaw; huwag mag-apruba nang mag-isa.",
-    "display_en": "Milk Code: restrictions on promotion and inducements.\nPharmaceutical promotion: ethical rules apply.\nCheck the scope; do not approve an offer alone.",
-    "asset_ids": [],
+    "heading_fil": "Huminto at makipag-ugnayan",
+    "heading_en": "Pause and coordinate",
+    "display_fil": "Huwag tumanggap, magpaskil, o mamigay\nIdulog ang detalye sa namamahala\nHuwag gumawa ng sariling exception",
+    "display_en": "Do not accept, display, or distribute\nRefer the details to the supervisor\nDo not create your own exception",
+    "asset_ids": [
+      "mimi-company-offer"
+    ],
+    "check": null,
+    "narration_fil": "Sinabi ni Mimi: “Salamat po sa paglapit. Hindi ko po tatanggapin o ipamamahagi ang mga ito. Idudulog ko ang detalye sa namamahala ng pasilidad.” Hindi niya ipinaskil ang tarpaulin o ipinasa ang sample sa mga pamilya. Sa government facility, ipinagbabawal ng AO 2015-0053 ang paggamit nito para sa pharmaceutical o medical-device promotion; may nakasaad na exception para sa scientific conventions. Ang namamahala ang magtitiyak ng naaangkop na proseso at kinakailangang awtorisasyon; hindi maaaring gumawa ang BHW ng sariling exception.",
+    "narration_en": "Mimi says: “Thank you for approaching us. I will not accept or distribute these items. I will refer the details to the facility supervisor.” She does not hang the tarpaulin or pass samples to families. AO 2015-0053 prohibits using a government facility for pharmaceutical or medical-device promotion, with a stated exception for scientific conventions. The supervisor checks the applicable process and required authorization; a BHW cannot create an exception independently."
+  },
+  {
+    "id": "slide-independent-information",
+    "concept_ids": [
+      "m3.milk-code",
+      "m3.pharma-ban"
+    ],
+    "layout": "takeaway",
+    "heading_fil": "Impormasyong hiwalay sa promosyon",
+    "heading_en": "Information independent of promotion",
+    "display_fil": "Gamitin ang aprubadong health information\nMag-ulat ng detalye, walang datos ng pasyente\nHealth professional: feeding at clinical advice",
+    "display_en": "Use approved health information\nReport details without patient data\nHealth professional: feeding and clinical advice",
+    "asset_ids": [
+      "mimi-company-offer"
+    ],
+    "check": null,
+    "narration_fil": "Hindi nag-eendorso si Mimi ng brand. Ginagamit niya ang impormasyong inaprubahan para sa health education ng pasilidad at ipinapatingin sa health team ang materyal ng kumpanya. Itinatala o iniuulat niya ang produkto, alok, hinihinging gawain, at oras at lugar ayon sa lokal na gabay, nang walang datos ng pasyente. Walang sisihin sa paraan ng pagpapakain ng pamilya. Ang tanong sa pagpapakain, gamot, o paggamot ay idulog sa trained health professional.",
+    "narration_en": "Mimi does not endorse a brand. She uses information approved for the facility’s health education and asks the health team to review company materials. Following local guidance, she records or reports the product, offer, requested activity, time and place, without patient data. Do not blame families for their feeding choices. Refer feeding, medicine, or treatment questions to a trained health professional."
+  },
+  {
+    "id": "slide-recognition-check",
+    "concept_ids": [
+      "m3.milk-code",
+      "m3.pharma-ban"
+    ],
+    "layout": "decision",
+    "heading_fil": "Kilalanin bago magpasya",
+    "heading_en": "Recognize before deciding",
+    "display_fil": "A: formula · poster · regalo kapalit ng promosyon\nB: educational model · walang endorsement\nPareho bang alok? Sino ang dapat magtiyak?",
+    "display_en": "A: formula · poster · gift for promotion\nB: educational model · no endorsement\nAre the offers identical? Who must check?",
+    "asset_ids": [
+      "mimi-company-offer"
+    ],
     "check": {
-      "prompt_fil": "Ano ang gagawin sa alok na regalo kapalit ng pagpromote?",
-      "prompt_en": "What should you do about a gift offered in exchange for promotion?",
+      "prompt_fil": "Paano kikilalanin ni Mimi ang Alok A at B, at ano ang unang hakbang?",
+      "prompt_en": "How should Mimi recognize Offers A and B, and what is her first step?",
       "options": [
         {
-          "fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya.",
-          "en": "Do not accept the inducement; refer it to the supervisor under facility policy."
+          "fil": "May promosyon at insentibo ang A: huwag tanggapin, ipaskil, o ipamigay. Iba ang layunin ng B, ngunit ipatiyak pa rin sa namamahala ang kondisyon at awtorisasyon bago kumilos.",
+          "en": "A has promotion and an inducement: do not accept, display, or distribute it. B has a different purpose, but still ask the supervisor to verify conditions and authorization before acting."
         },
         {
-          "fil": "Tanggapin basta walang makaalam.",
-          "en": "Accept it as long as nobody knows."
+          "fil": "Tanggapin ang A dahil libre; tanggapin ang B dahil may educational label.",
+          "en": "Accept A because it is free; accept B because it has an educational label."
+        },
+        {
+          "fil": "Ituring na pareho at bawal ang anumang paglapit ng kumpanya; hindi na kailangang alamin ang produkto o gawain.",
+          "en": "Treat every company contact as identical and prohibited; there is no need to identify the product or activity."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Do not accept the inducement; refer it to the supervisor under facility policy. Explain why using the lesson situation."
+      "feedback_fil": "Ang formula samples para sa mga nanay, BHS poster, at regalong kapalit ng promosyon ang tiyak na problema sa A. Ang educational model ay ibang uri ng alok na may kondisyong kailangang tiyakin. Hindi sapat ang “libre” o “educational”; hindi nag-aapruba ang BHW nang mag-isa.",
+      "feedback_en": "The formula samples for mothers, BHS poster, and gift for promotion identify the problems in A. An educational model is a different offer with conditions to verify. “Free” or “educational” is insufficient; the BHW does not approve independently."
     },
-    "narration_fil": "Nililimitahan ng Milk Code (EO 51) ang promosyon ng saklaw na breastmilk substitutes sa health-care system at mga insentibo sa health workers. Huwag tumanggap ng regalo kapalit ng pagpromote ng mga produktong ito. May etikang tuntunin din sa pharmaceutical promotion: binabanggit ng pinagmulang materyal ang DOH AO 2015-0053. Huwag ituring na magkakapareho ang lahat ng pakikipag-ugnayan sa industriya o mag-apruba ng promosyon nang mag-isa. Idulog ang alok sa namamahala at tiyakin ang kasalukuyang polisiya. Kailangan pang repasuhin ang eksaktong saklaw at exceptions sa pangunahing sanggunian bago ilathala ang draft na ito.",
-    "narration_en": "The Milk Code (EO 51) restricts promotion of covered breastmilk substitutes in the health-care system and inducements to health workers. Do not accept gifts in exchange for promoting such products. Pharmaceutical promotion also has ethical rules: the source training material cites DOH AO 2015-0053. Do not treat all industry interactions as identical or independently approve a promotion. Refer the offer to the facility supervisor and check the current policy. The exact scope and exceptions of this order still require primary-source review before this draft is published."
+    "narration_fil": "Dalawang alok ang dumating. Alok A: sample ng infant formula para sa mga nanay, product poster sa BHS, at regalo kay Mimi kung tutulong siyang magpromote. Alok B: anatomical model para sa scientific activity na iniugnay na ng namamahala, walang kapalit na pag-endorso. Hindi awtomatikong magkakapareho ang dalawa. May mga kondisyong pinapayagang educational items sa pharmaceutical order, ngunit hindi ito pahintulot para tumanggap ang BHW nang mag-isa. Ano ang tamang pagkilala at unang hakbang?",
+    "narration_en": "Two offers arrive. Offer A: infant-formula samples for mothers, a BHS product poster, and a gift if Mimi helps promote. Offer B: an anatomical model for a scientific activity already coordinated by the supervisor, with no endorsement in return. The two are not automatically identical. The pharmaceutical order permits certain educational items under conditions, but that does not authorize a BHW to accept independently. What is the correct recognition and first step?"
   }
 ]

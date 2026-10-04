@@ -6,7 +6,8 @@
 // still matches the published revision's text (timingsMatchSection), so an
 // edited revision never plays stale audio against different words.
 
-import type { LessonAudioTiming, NarrationLanguage } from "./types";
+import type { LessonAudioTiming, NarrationLanguage, StableLessonSection } from "./types";
+import { timingsMatchSection } from "./narration-zones";
 
 export type ReferenceNarrationEntry = {
   src: string;
@@ -18,8 +19,11 @@ export type ReferenceNarrationEntry = {
 export type LessonNarration = Record<string, ReferenceNarrationEntry>;
 
 type ManifestEntry = ReferenceNarrationEntry & { voice?: string; content_hash?: string; sha256?: string };
+type ManifestSections = Record<string, Partial<Record<NarrationLanguage, ManifestEntry>>>;
 export type ReferenceNarrationManifest = {
-  lessons: Record<string, { module: string; sections: Record<string, Partial<Record<NarrationLanguage, ManifestEntry>>> }>;
+  lessons: Record<string, { module: string; sections: ManifestSections }>;
+  // Retain recordings for revisions that remain published while source changes.
+  history?: Record<string, Array<{ module: string; sections: ManifestSections }>>;
 };
 
 // Only what one lesson page needs, in one language: keeps the client payload
@@ -28,11 +32,18 @@ export function narrationForLesson(
   manifest: ReferenceNarrationManifest,
   lessonKey: string,
   language: NarrationLanguage,
+  publishedSections?: StableLessonSection[],
 ): LessonNarration {
   const sections = manifest.lessons[lessonKey]?.sections ?? {};
   const out: LessonNarration = {};
-  for (const [sectionId, languages] of Object.entries(sections)) {
-    const entry = languages[language];
+  const ids = publishedSections?.map(section => section.id) ?? Object.keys(sections);
+  for (const sectionId of ids) {
+    const current = sections[sectionId]?.[language];
+    const published = publishedSections?.find(section => section.id === sectionId);
+    const candidates = [current, ...(manifest.history?.[lessonKey] ?? []).map(version => version.sections[sectionId]?.[language])];
+    const entry = published ? candidates.find(candidate => candidate && timingsMatchSection(candidate.timings, {
+      heading: published[`heading_${language}`], body: published[`body_${language}`], takeaway: published[`takeaway_${language}`],
+    })) : current;
     if (entry) out[sectionId] = { src: entry.src, duration_seconds: entry.duration_seconds, timings: entry.timings };
   }
   return out;

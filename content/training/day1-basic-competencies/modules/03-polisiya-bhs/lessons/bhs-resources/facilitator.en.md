@@ -22,7 +22,7 @@ Ask the group the module's question: *"What's the most wasted resource at your b
 
 1. **Beyond the four policies (Read "Other policies and using resources efficiently", the slide's first line).** Say that the competency also covers knowing the workplace's policies and structure. Ask: *"At your BHS, who decides about supplies? Who would you tell about a water or electricity problem?"* Let them answer from their own BHS.
 2. **Efficient and resourceful (the slide's second line).** Point to the opening list. Say the competency means finding ways to use electricity, water and supplies more efficiently, and being resourceful when resources are limited. Pick one item from the list and ask: *"What would be a safe way to use this more efficiently?"* Stress the word *safe*.
-3. **The same skill.** Ask: *"What do Corazon declining the milk company and a BHW proposing to save water have in common?"* Guide them to the lesson's answer: it is the same skill, looking at a situation, spotting a better way, and explaining it clearly to others.
+3. **The same skill.** Ask: *"What do Mimi declining the milk company and a BHW proposing to save water have in common?"* Guide them to the lesson's answer: it is the same skill, looking at a situation, spotting a better way, and explaining it clearly to others.
 4. **Explain before acting (the slide's third line).** Ask: *"Why explain your proposal to the supervisor before you do it?"* Guide them to see that the supervisor knows the policies and what the BHS needs, and that a change made alone can cause new problems.
 5. **Self-check.** Read the check question aloud and let the group discuss before you reveal the answer. Ask one BHW to explain the answer using one item from the opening list.
 

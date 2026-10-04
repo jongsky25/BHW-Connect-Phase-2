@@ -1,12 +1,12 @@
 ## [scenario/core] Ang bisita sa BHS
 
 May dumating na kinatawan ng isang kumpanya ng gatas sa barangay health
-station ni BHW Corazon — may dalang mga sample at tarpaulin na
+station ni BHW Mimi — may dalang mga sample at tarpaulin na
 nagpapakita ng kanilang bagong produkto. "Puwede po bang ilagay namin
 ito sa loob, at ipamigay ninyo sa mga nanay? May konting regalo din po
 kami para sa inyo."
 
-Alam ni Corazon na kailangan niyang tumanggi — pero paano niya ito
+Alam ni Mimi na kailangan niyang tumanggi — pero paano niya ito
 gagawin nang hindi masamang loob ang bisita, at nang tama ang dahilan
 niya sa pagtanggi?
 
@@ -18,7 +18,7 @@ polisiya, at mas malakas ito kapag alam mo ang batayang iyon.
 ## [concept/core] Dalawang bawal sa promosyon {m3.milk-code, m3.pharma-ban}
 
 May dalawang polisiya ang tumutukoy sa sitwasyong kinaharap ni
-Corazon.
+Mimi.
 
 Ayon sa **Executive Order 51, ang Philippine Milk Code of 1986**,
 ipinagbabawal ang pag-a-advertise ng milk formula o milk substitute sa
@@ -81,7 +81,7 @@ aktibong inaasahan din: isulong ang breastfeeding, bawasan ang plastic.
 
 ## [practice/core] Paano tumanggi nang magalang
 
-Bumalik tayo kay BHW Corazon. Ngayong alam na niya ang batayan, paano
+Bumalik tayo kay BHW Mimi. Ngayong alam na niya ang batayan, paano
 niya sasabihin ito sa kinatawan ng kumpanya nang hindi nagmukhang
 personal na pag-atake?
 
@@ -92,7 +92,7 @@ gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng milk
 substitute sa loob ng BHS, ayon sa Milk Code. Hindi rin po kami puwedeng
 tumanggap ng sample, regalo, o iba pang alok mula sa kumpanya ng gatas.
 Sasabihin ko po sa aming midwife na dumaan kayo." Hindi nagmumungkahi si
-Corazon ng ibang paraan para tumulong ang kumpanya, at wala siyang
+Mimi ng ibang paraan para tumulong ang kumpanya, at wala siyang
 ipinapangakong kapalit. Sa araw ding iyon, sinasabihan niya ang midwife
 tungkol sa pagbisita.
 
@@ -113,7 +113,7 @@ rekurso.
 Hindi ito hiwalay sa apat na polisiya — kaparehong kasanayan ito:
 ang kakayahang tumingin sa isang sitwasyon, tumukoy ng mas mahusay na
 paraan, at maipaliwanag ito nang malinaw sa iba. Ang pagtanggi kay
-Corazon ay isang paraan ng paggamit nito; ang pagmungkahi ng mas
+Mimi ay isang paraan ng paggamit nito; ang pagmungkahi ng mas
 episyenteng paraan ng paggamit ng resources ay isa pang paraan.
 
 :::takeaway
@@ -145,7 +145,7 @@ kinatawan ng kumpanya ng gamot, dahil "libre naman, at baka
 magkasala pa ako kung tatanggihan ko." Ipinamigay niya ang mga sample
 sa mga pasyente nang walang paliwanag kung bakit ito ang inirekomenda.
 
-**Tama**: Magalang na tumanggi si Corazon, ipinaliwanag ang batayan mula
+**Tama**: Magalang na tumanggi si Mimi, ipinaliwanag ang batayan mula
 sa Milk Code, walang pinasok na anumang kasunduan sa kumpanya, at
 sinabihan ang midwife tungkol sa pagbisita sa araw ding iyon.
 
