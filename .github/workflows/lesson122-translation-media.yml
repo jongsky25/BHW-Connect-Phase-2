@@ -27,7 +27,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Review regenerated audio with the configured provider
+      - name: Review final second-pass audio with the configured provider
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-translation-audio-review.mjs --lesson 1.2.2 --language ${{ matrix.language }}
