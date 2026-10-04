@@ -233,6 +233,12 @@ export function ReferenceLessons(props: Props) {
             ),
             caption: ui("Tiyakin ang susunod na hakbang", "Confirm the next step"),
           }
+      : lesson?.lesson_key === "bhs-promotions"
+        ? {
+            src: "/training/bhw-1-3/mimi-company-offer-b9623263a188.png",
+            alt: ui("Nakikinig si BHW Mimi sa kinatawan ng kumpanya at mahinahong ipinapahinto ang pagtanggap ng blangkong sample box at promotional sheet sa BHS.", "BHW Mimi listens to a company representative and calmly pauses acceptance of a blank sample box and promotional sheet at the BHS."),
+            caption: ui("Kilalanin · Huminto · Idulog", "Recognize · Pause · Refer"),
+          }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;

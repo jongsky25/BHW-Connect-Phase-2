@@ -20,10 +20,10 @@
         "m3.pharma-ban"
       ],
       "asset_ids": [
-        "practice-map"
+        "mimi-company-offer"
       ],
-      "takeaway_fil": "Ang pagtanggi ay hindi lang tungkol sa \"ayaw ko\" — may batayan itong polisiya, at mas malakas ito kapag alam mo ang batayang iyon.",
-      "takeaway_en": "Declining isn't just about \"I don't want to\" — there's a policy behind it, and the refusal is stronger once you know what that basis is.",
+      "takeaway_fil": "Kilalanin muna ang alok at hinihinging kapalit bago kumilos.",
+      "takeaway_en": "First recognize the offer and what is expected in return.",
       "check": null
     },
     {
@@ -32,25 +32,83 @@
         "m3.milk-code",
         "m3.pharma-ban"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Magkaiba ang produkto — gatas sa isa, gamot sa isa — pero iisa ang prinsipyo: walang kumpanya ang dapat makaimpluwensya sa serbisyong ibinibigay sa loob ng barangay health station.",
-      "takeaway_en": "The product differs — milk on one side, medicine on the other — but the principle is the same: no company should be able to influence the service given inside a barangay health station.",
+      "asset_ids": [
+        "mimi-company-offer"
+      ],
+      "takeaway_fil": "Tiyakin ang produkto at naaangkop na polisiya; hindi magkakapareho ang lahat ng alok.",
+      "takeaway_en": "Check the product and applicable policy; offers are not all identical.",
+      "check": null
+    },
+    {
+      "id": "identify-offer",
+      "concept_ids": [
+        "m3.milk-code",
+        "m3.pharma-ban"
+      ],
+      "asset_ids": [
+        "mimi-company-offer"
+      ],
+      "takeaway_fil": "Ang salitang “libre” ay hindi patunay na puwedeng tanggapin o ipamigay.",
+      "takeaway_en": "The word “free” does not establish permission to accept or distribute.",
+      "check": null
+    },
+    {
+      "id": "pause-route",
+      "concept_ids": [
+        "m3.milk-code",
+        "m3.pharma-ban"
+      ],
+      "asset_ids": [
+        "mimi-company-offer"
+      ],
+      "takeaway_fil": "Huwag tanggapin ang insentibo para magpromote; idulog ang alok sa namamahala.",
+      "takeaway_en": "Do not accept an inducement to promote; route the offer to the supervisor.",
+      "check": null
+    },
+    {
+      "id": "independent-information",
+      "concept_ids": [
+        "m3.milk-code",
+        "m3.pharma-ban"
+      ],
+      "asset_ids": [
+        "mimi-company-offer"
+      ],
+      "takeaway_fil": "Ihiwalay ang kalusugang impormasyon sa impluwensya ng kumpanya; mag-ulat ng katotohanan.",
+      "takeaway_en": "Keep health information independent of company influence; report facts.",
+      "check": null
+    },
+    {
+      "id": "recognition-check",
+      "concept_ids": [
+        "m3.milk-code",
+        "m3.pharma-ban"
+      ],
+      "asset_ids": [
+        "mimi-company-offer"
+      ],
+      "takeaway_fil": "Kilalanin ang promosyon at insentibo, huminto, at tiyakin sa namamahala ang saklaw at awtorisasyon.",
+      "takeaway_en": "Recognize promotion and inducement, pause, and confirm scope and authorization with the supervisor.",
       "check": {
-        "prompt_fil": "Ano ang gagawin sa alok na regalo kapalit ng pagpromote?",
-        "prompt_en": "What should you do about a gift offered in exchange for promotion?",
+        "prompt_fil": "Paano kikilalanin ni Mimi ang Alok A at B, at ano ang unang hakbang?",
+        "prompt_en": "How should Mimi recognize Offers A and B, and what is her first step?",
         "options": [
           {
-            "fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya.",
-            "en": "Do not accept the inducement; refer it to the supervisor under facility policy."
+            "fil": "May promosyon at insentibo ang A: huwag tanggapin, ipaskil, o ipamigay. Iba ang layunin ng B, ngunit ipatiyak pa rin sa namamahala ang kondisyon at awtorisasyon bago kumilos.",
+            "en": "A has promotion and an inducement: do not accept, display, or distribute it. B has a different purpose, but still ask the supervisor to verify conditions and authorization before acting."
           },
           {
-            "fil": "Tanggapin basta walang makaalam.",
-            "en": "Accept it as long as nobody knows."
+            "fil": "Tanggapin ang A dahil libre; tanggapin ang B dahil may educational label.",
+            "en": "Accept A because it is free; accept B because it has an educational label."
+          },
+          {
+            "fil": "Ituring na pareho at bawal ang anumang paglapit ng kumpanya; hindi na kailangang alamin ang produkto o gawain.",
+            "en": "Treat every company contact as identical and prohibited; there is no need to identify the product or activity."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Huwag tanggapin ang kapalit; idulog sa namamahala ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Do not accept the inducement; refer it to the supervisor under facility policy. Explain why using the lesson situation."
+        "feedback_fil": "Ang formula samples para sa mga nanay, BHS poster, at regalong kapalit ng promosyon ang tiyak na problema sa A. Ang educational model ay ibang uri ng alok na may kondisyong kailangang tiyakin. Hindi sapat ang “libre” o “educational”; hindi nag-aapruba ang BHW nang mag-isa.",
+        "feedback_en": "The formula samples for mothers, BHS poster, and gift for promotion identify the problems in A. An educational model is a different offer with conditions to verify. “Free” or “educational” is insufficient; the BHW does not approve independently."
       }
     }
   ],
@@ -59,60 +117,104 @@
       "id": "m3.milk-code",
       "read_ids": [
         "section-1",
-        "section-2"
+        "section-2",
+        "identify-offer",
+        "pause-route",
+        "independent-information",
+        "recognition-check"
       ],
       "slide_ids": [
         "slide-section-1",
-        "slide-section-2"
+        "slide-section-2",
+        "slide-identify-offer",
+        "slide-pause-route",
+        "slide-independent-information",
+        "slide-recognition-check"
       ],
       "source_ids": [
-        "m3.milk-code-source"
+        "m3.milk-code-source",
+        "milk-rirr",
+        "milk-decision",
+        "manual-policies"
       ]
     },
     {
       "id": "m3.pharma-ban",
       "read_ids": [
         "section-1",
-        "section-2"
+        "section-2",
+        "identify-offer",
+        "pause-route",
+        "independent-information",
+        "recognition-check"
       ],
       "slide_ids": [
         "slide-section-1",
-        "slide-section-2"
+        "slide-section-2",
+        "slide-identify-offer",
+        "slide-pause-route",
+        "slide-independent-information",
+        "slide-recognition-check"
       ],
       "source_ids": [
-        "m3.pharma-ban-source"
+        "m3.pharma-ban-source",
+        "pharma-reiteration",
+        "manual-policies"
       ]
     }
   ],
   "sources": [
     {
-      "id": "m3.milk-code-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "id": "manual-policies",
+      "title": "BHW Reference Manual 2022 — printed p. 6 / PDF p. 14; policy teaching topics",
       "pdf_pages": [
         14
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
     },
     {
+      "id": "m3.milk-code-source",
+      "title": "EO 51 (1986), sections 3, 4(g), 7(b)-(c), 8(c)-(e): scope, health workers, promotion and inducements",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/5/8516"
+    },
+    {
+      "id": "milk-rirr",
+      "title": "Joint AO 2012-0027 — Milk Code IAC guidelines, sections 13–14 and 20",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/69023"
+    },
+    {
+      "id": "milk-decision",
+      "title": "DOH DC 2008-0064 — Supreme Court G.R. 173034 invalidated RIRR sections 4(f), 11 and 46; other provisions sustained",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/55273"
+    },
+    {
       "id": "m3.pharma-ban-source",
-      "title": "BHW Reference Manual — inherited page reference; final audit pending",
+      "title": "DOH AO 2015-0053 — scope III; V.B.2(e)-(i), 7, 9: promotion, facility limits, educational items and samples",
       "pdf_pages": [
-        14
+        3,
+        6,
+        8,
+        10
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+      "url": "https://mcprinciples.apec.org/wp-content/uploads/2020/01/AO20150053.pdf"
+    },
+    {
+      "id": "pharma-reiteration",
+      "title": "DOH HFDB — DC 2024-0141, 22 April 2024, reiteration of AO 2015-0053 and ethical standards",
+      "url": "https://sites.google.com/view/doh-hfdb/2024-q2-updates/dc-2024-0141"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "mimi-company-offer",
+      "path": "/training/bhw-1-3/mimi-company-offer-b9623263a188.png",
+      "content_hash": "b9623263a1881f26b6eb4aeb5b153ceb68b003c61d861f87636e3d2c1c96cc01",
+      "alt_fil": "Nakikinig si BHW Mimi sa kinatawan ng kumpanya at mahinahong ipinapahinto ang pagtanggap ng blangkong sample box at promotional sheet sa BHS.",
+      "alt_en": "BHW Mimi listens to a company representative and calmly pauses acceptance of a blank sample box and promotional sheet at the BHS.",
+      "caption_fil": "Kilalanin ang alok; huminto at idulog sa namamahala. Draft na larawan para sa pagsusuri ng may-ari.",
+      "caption_en": "Recognize the offer; pause and refer to the supervisor. Draft illustration for owner review.",
+      "provenance": "Original built-in imagegen illustration, generated 2026-10-03 Asia/Manila. Proposed fictional Mimi identity; no existing approved target-specific reference found on main 7ce98d68. Owner renamed the fictional character to Mimi throughout 1.3 on 2026-10-04; unchanged illustration pixels contain no name. Exact original generation prompt (character was then called Corazon): Use case: illustration-story. Asset type: original landscape educational illustration for BHW Connect lesson 1.3.1, Recognizing a company offer. Create a realistic photographic illustrative scene in warm Philippine daylight at the entrance/table of an airy, modest, unbranded barangay health station with leafy background. Fictional BHW Corazon is a Filipina woman around 50, shoulder-length straight black hair, light lavender polo, navy trousers; calm, respectful, attentive. A generic Filipino company representative in a plain beige collared shirt carries a CLOSED plain blank sample box and a rolled blank promotional sheet. Corazon is listening and gently raises one relaxed open hand to pause acceptance; she does not take the box or gift. Place a small blank gift bag beside the representative. Both adults are ordinary, respectful people, no villain caricature. Medium waist-up landscape framing, both faces within the central 60%, natural anatomically correct hands, all main props visible, useful for desktop and contained phone framing. No text, letters, logos, actual formula or medicine brands, exposed products, clinical procedure, patient, personal data, watermark or official seal. This is a proposed Corazon identity for owner review, not a previously approved character.",
+      "review_status": "draft"
     }
   ]
 }

@@ -1,0 +1,100 @@
+// @vitest-environment node
+import {describe, expect, it} from 'vitest';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+import {loadReferenceModule, parseReferenceRead, FACILITATOR_SECTION_IDS} from '../lib/reference-content.mjs';
+import {planReferenceNarration} from '../lib/reference-narration.mjs';
+import {BHS_PROMOTIONS_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
+import {BHS_PROMOTIONS_BEATS} from '../../remotion/src/bhs-promotions/narration.ts';
+const root=path.resolve(import.meta.dirname,'../..');
+const folder=path.join(root,'content/training/day1-basic-competencies/modules/03-polisiya-bhs');
+const dir=path.join(folder,'lessons/bhs-promotions');
+const json=p=>JSON.parse(readFileSync(p,'utf8'));
+const source=json(path.join(dir,'lesson.json'));
+const authored=loadReferenceModule(folder,path.join(root,'public')).lessons.find(l=>l.manifest.lesson_key==='bhs-promotions');
+const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
+const ids=['section-1','section-2','identify-offer','pause-route','independent-information','recognition-check'];
+describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
+  it('preserves published metadata, original positions and bilingual screen alignment',()=>{
+    expect(source.manifest).toEqual({lesson_key:'bhs-promotions',position:0,title_fil:'Pagkilala sa alok ng kumpanya',title_en:'Recognizing a company offer',objectives_fil:['Maipaliwanag at mailapat sa isang sitwasyon: pagkilala sa alok ng kumpanya.'],objectives_en:['Explain and apply in a situation: recognizing a company offer.'],required:true});
+    expect(source.sections.map(s=>s.id)).toEqual(ids);
+    expect(authored.revision.slides.map(s=>s.id)).toEqual(ids.map(id=>'slide-'+id));
+    for(const lang of ['fil','en']){
+      const read=parseReferenceRead(readFileSync(path.join(dir,`read.${lang}.md`),'utf8'));
+      expect(read.map(s=>s.id)).toEqual(ids);
+      read.forEach((section,i)=>expect(authored.revision.slides[i][`narration_${lang}`]).toBe(section.body));
+      expect(read[0].body).toContain('Mimi');
+      expect(read.map(s=>s.body).join(' ')).not.toMatch(/Vlanche|Ernesto|Riza|YAKAP|audit pending|require primary-source review/);
+    }
+  });
+  it('retains both required concepts with audited sources and a distinct two-offer check',()=>{
+    expect(source.coverage.map(c=>c.id)).toEqual(['m3.milk-code','m3.pharma-ban']);
+    for(const c of source.coverage){
+      expect(c.read_ids).toEqual(ids);
+      expect(c.slide_ids).toEqual(ids.map(id=>'slide-'+id));
+      c.source_ids.forEach(id=>expect(source.sources.some(s=>s.id===id)).toBe(true));
+    }
+    const check=source.sections.at(-1).check;
+    expect(check.prompt_en).toMatch(/Offers A and B/);
+    expect(check.options).toHaveLength(3);
+    expect(check.options[check.correct_option_index].en).toMatch(/supervisor.*conditions.*authorization/);
+    expect(check.feedback_en).toMatch(/formula samples.*BHS.*gift/);
+    expect(authored.revision.slides.at(-1).check).toEqual(check);
+    const policy=authored.revision.read_sections.map(s=>s.body_en).join(' ');
+    expect(policy).toMatch(/prescription pharmaceutical products and medical devices/);
+    expect(policy).toMatch(/exception for scientific conventions/);
+    expect(policy).toMatch(/only licensed physicians and dentists/);
+    expect(policy).toMatch(/Do not blame families/);
+    expect(policy).toMatch(/cannot create an exception independently/);
+  });
+  it('defaults every new target track to expressive Gemini and retains it after copy edits',()=>{
+    const plan=planReferenceNarration(modules,{lessons:{}},()=>null);
+    expect(plan).toHaveLength(12);
+    plan.forEach(item=>{
+      expect(item.provider).toBe('gemini');
+      expect(item.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');
+      expect(item.speechStyle).toBe(BHS_PROMOTIONS_STORY_STYLES[item.language]);
+      expect(item.speechStyle).toMatch(/Mimi.*calm.*supervisor/);
+    });
+    const manifest={lessons:{'bhs-promotions':{sections:{}}}};
+    for(const item of plan)(manifest.lessons['bhs-promotions'].sections[item.sectionId]??={})[item.language]={voice:item.voice,content_hash:item.contentHash,src:item.src,sha256:'fixture'};
+    const changed=structuredClone(modules);
+    changed[0].lessons[0].revision.read_sections[2].body_en+=' Ask who can confirm the audience.';
+    const altered=planReferenceNarration(changed,manifest,()=> 'fixture').find(i=>i.sectionId==='identify-offer'&&i.language==='en');
+    expect(altered.provider).toBe('gemini');
+    expect(altered.action).toBe('render');
+    expect(altered.contentHash).not.toBe(plan.find(i=>i.sectionId==='identify-offer'&&i.language==='en').contentHash);
+    const old=BHS_PROMOTIONS_STORY_STYLES.en;
+    try{
+      BHS_PROMOTIONS_STORY_STYLES.en+=' Pause before the decision.';
+      expect(planReferenceNarration(modules,manifest,()=> 'fixture').find(i=>i.language==='en').action).toBe('render');
+    }finally{BHS_PROMOTIONS_STORY_STYLES.en=old;}
+    const other=structuredClone(modules);
+    other[0].lessons[0].manifest.lesson_key='bhs-decline';
+    expect(planReferenceNarration(other,{lessons:{}},()=>null).every(i=>i.provider==='edge')).toBe(true);
+  });
+  it('uses original content-hashed art and retains the historical SVG',()=>{
+    const art=source.assets.find(a=>a.id==='mimi-company-offer');
+    const bytes=readFileSync(path.join(root,'public',art.path.slice(1)));
+    expect(createHash('sha256').update(bytes).digest('hex')).toBe(art.content_hash);
+    expect(bytes.subarray(1,4).toString()).toBe('PNG');
+    expect(createHash('sha256').update(readFileSync(path.join(root,'remotion/public/bhs-promotions/scene.png'))).digest('hex')).toBe(art.content_hash);
+    expect(art.review_status).toBe('draft');
+    expect(art.provenance).toMatch(/built-in imagegen.*2026-10-03.*Proposed fictional Mimi/);
+    expect(source.assets.some(a=>a.id==='practice-map')).toBe(false);
+    expect(readFileSync(path.join(root,'public/training/bhw-next-draft/process-e56e73f832d7.svg')).length).toBeGreaterThan(0);
+    expect(readFileSync(path.join(root,'src/components/elearning/reference-lessons.tsx'),'utf8')).toContain(art.path);
+  });
+  it('aligns facilitation, observable role limits and the animation with this topic',()=>{
+    for(const lang of ['fil','en']){
+      const headings=parseReferenceRead(readFileSync(path.join(dir,`facilitator.${lang}.md`),'utf8'));
+      expect(headings.map(s=>s.id)).toEqual(FACILITATOR_SECTION_IDS);
+    }
+    const competency=json(path.join(dir,'competency.json'));
+    expect(competency.observation_indicators[0].objective_index).toBe(0);
+    expect(competency.observation_indicators[0].levels.kaya_na_en).toMatch(/four details.*coordination.*role boundary/);
+    expect(BHS_PROMOTIONS_BEATS.map(b=>b.id)).toEqual(['offer','policy-topics','identify','pause','information','summary']);
+    expect(BHS_PROMOTIONS_BEATS.map(b=>b.en).join(' ')).toMatch(/Mimi.*different scopes.*four details.*supervisor.*patient data.*does not approve independently/);
+  });
+});

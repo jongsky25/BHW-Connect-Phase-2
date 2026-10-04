@@ -1,0 +1,104 @@
+{
+  "checked": "2026-10-03",
+  "base": "7ce98d683d551e9afb13a86acb198d5a4b810409",
+  "lesson": "bhs-promotions",
+  "sources": [
+    {
+      "id": "manual-policies",
+      "title": "BHW Reference Manual 2022 — printed p. 6 / PDF p. 14; policy teaching topics",
+      "pdf_pages": [
+        14
+      ],
+      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/bhw-reference-manual.md"
+    },
+    {
+      "id": "m3.milk-code-source",
+      "title": "EO 51 (1986), sections 3, 4(g), 7(b)-(c), 8(c)-(e): scope, health workers, promotion and inducements",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/5/8516"
+    },
+    {
+      "id": "milk-rirr",
+      "title": "Joint AO 2012-0027 — Milk Code IAC guidelines, sections 13–14 and 20",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/69023"
+    },
+    {
+      "id": "milk-decision",
+      "title": "DOH DC 2008-0064 — Supreme Court G.R. 173034 invalidated RIRR sections 4(f), 11 and 46; other provisions sustained",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/55273"
+    },
+    {
+      "id": "m3.pharma-ban-source",
+      "title": "DOH AO 2015-0053 — scope III; V.B.2(e)-(i), 7, 9: promotion, facility limits, educational items and samples",
+      "pdf_pages": [
+        3,
+        6,
+        8,
+        10
+      ],
+      "url": "https://mcprinciples.apec.org/wp-content/uploads/2020/01/AO20150053.pdf"
+    },
+    {
+      "id": "pharma-reiteration",
+      "title": "DOH HFDB — DC 2024-0141, 22 April 2024, reiteration of AO 2015-0053 and ethical standards",
+      "url": "https://sites.google.com/view/doh-hfdb/2024-q2-updates/dc-2024-0141"
+    }
+  ],
+  "findings": [
+    {
+      "source": "manual-policies",
+      "location": "printed p.6 / PDF p.14",
+      "supports": "Milk and pharmaceutical promotion are teaching topics.",
+      "limit": "Original 150-page DOH manual downloaded from TCI; PDF p.14 (printed p.6) rendered and visually checked. Broad summary narrowed against original issuances."
+    },
+    {
+      "source": "m3.milk-code-source",
+      "location": "sections 3,4(g),7(b)-(c),8(c)-(e)",
+      "supports": "Product scope, non-professional/volunteer workers, facility promotion/posters, inducements, regulated research exceptions."
+    },
+    {
+      "source": "milk-rirr",
+      "location": "sections 13,14,20",
+      "supports": "IAC oversight and distinct sponsorship/donation restrictions; no general BHW permission."
+    },
+    {
+      "source": "milk-decision",
+      "location": "DC 2008-0064; G.R.173034 disposition",
+      "supports": "RIRR 4(f),11,46 invalidated; do not infer universal advertising ban from those provisions."
+    },
+    {
+      "source": "m3.pharma-ban-source",
+      "location": "PDF pp.3,6,8,10 (printed pp.3,6,8,10)",
+      "supports": "Prescription pharmaceutical products/medical devices; no company-paid worker endorsements/direct prescription promotion to families; government-facility promotion restriction with scientific-convention exception; conditional educational items; prescription samples only to licensed physicians/dentists.",
+      "limit": "Original signed DOH scan hosted by APEC. Ambiguous OCR at V.B.2(h) checked visually; lesson uses first facility prohibition and stated convention exception, without generalizing its display clause."
+    },
+    {
+      "source": "pharma-reiteration",
+      "location": "DOH HFDB notice, 22 April 2024",
+      "supports": "Official reiteration of AO 2015-0053 and ethical standards.",
+      "limit": "Notice checked; linked circular PDF not yet retrieved. No claim of exhaustive current legal review or local authorization."
+    }
+  ],
+  "review": {
+    "owner": "pending",
+    "policySME": "not recorded"
+  },
+  "decisions": [
+    "Preserve immutable objectives and first two screen IDs in their original positions.",
+    "Retire contradictory practice-map mapping; preserve historical public SVG bytes.",
+    "No YAKAP term needed in this lesson; shared pronunciation rule unchanged.",
+    "Application check recognizes and routes offers; detailed refusal competency remains lesson 1.3.3."
+  ],
+  "originalPDF": {
+    "url": "https://tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022.pdf",
+    "pages": 150,
+    "verifiedPDFPage": 14,
+    "printedPage": 6
+  },
+  "character": {
+    "name": "Mimi",
+    "renamedByOwner": "2026-10-04",
+    "scope": "All authored 1.3 character references formerly named Corazon",
+    "appearance": "Filipina around 50, shoulder-length straight black hair, lavender polo, navy trousers",
+    "approval": "Character name instruction only; new media package review remains pending"
+  }
+}
