@@ -1,0 +1,311 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "approved",
+  "lesson_key": "uhc-improvement",
+  "title": "Isa ka gamay nga pagpauswag",
+  "objectives": [
+    "Mapaathag kag magamit sa isa ka sitwasyon: isa ka gamay nga pagpauswag."
+  ],
+  "read_sections": [
+    {
+      "id": "section-6",
+      "takeaway": "Ilaragway ang nakita ukon nabatian; indi pagbasola ang tawo ukon himua nga kamatuoran ang pagpakot.",
+      "check": null
+    },
+    {
+      "id": "section-7",
+      "takeaway": "Pilia ang gamay nga una nga tikang nga hisgutan, sa baylo sang pagbag-o nga ipatuman nga ikaw lang.",
+      "check": null
+    },
+    {
+      "id": "improvement-confirm",
+      "takeaway": "Kumpirmaha ang kasamtangan nga impormasyon kag pagtugot sa husto nga tawo antes maghulag.",
+      "check": null
+    },
+    {
+      "id": "improvement-plan",
+      "takeaway": "Isa ka buluhaton, maathag nga responsibilidad kag pagtugot, masarangan nga oras kag materyales, kag petsa sang pagbalik.",
+      "check": null
+    },
+    {
+      "id": "improvement-feedback",
+      "takeaway": "Usisaa ang gamay nga palatandaan kag mga panugyan; bag-uha ang plano suno sa natabo.",
+      "check": null
+    },
+    {
+      "id": "improvement-check",
+      "takeaway": "Naobserbahan → Nakumpirma kag nahisgutan → Gamay nga plano → Gintilawan kag ginbalikan.",
+      "check": {
+        "prompt": "Nagakalainlain ang sabat sang mga residente kon sin-o ang pamangkuton sa health station. Ano nga plano ang dapat ihanda anay ni Vlanche?",
+        "options": [
+          "Maghimo sang pahanumdom nga nagasaad nga libre ang tanan nga serbisyo agod madasig ang mga residente.",
+          "Kumpirmaha sa midwife ang contact kag mensahe, kasugti ang masarangan nga mga pagbisita sa masunod nga semana kag materyales, dayon baliki sa Biyernes kon makasiling bala ang mga nakaistorya sang contact kag ano nga mga pamangkot ang nabilin.",
+          "Bag-uha dayon ang proseso sang health station kag pahibalua na lamang ang midwife pagkatapos sini.",
+          "Ipanugyan nga pauswagon ang tanan nga buluhaton kag sa ulihi na hunahunaa kon sin-o, san-o, kag paano usisaon."
+        ],
+        "feedback": "Ang ikaduha nga plano mahimo: may nakumpirma nga impormasyon kag pagtugot, gamay nga buluhaton, masarangan nga oras kag materyales, kag palatandaan nga balikon. Wala sang basihan ang saad nga libre ang tanan nga serbisyo; ang pagbag-o sang proseso nga ikaw lang labaw sa ginkasugtan; ang “pauswagon ang tanan” kulang sang tiyak nga una nga tikang."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide-section-6",
+      "heading": "Ipanugyan kag hisguti anay",
+      "display": "Nagakalainlain nga sabat sa duha ka pagbisita\nIsa ka pamangkot nga dapat ipaathag\nHisguti antes magbag-o.",
+      "check": null
+    },
+    {
+      "id": "slide-section-7",
+      "heading": "Ang una nga gamay nga tikang",
+      "display": "Isa ka malip-ot nga mensahe\nNatalana nga mga pagbisita sa masunod nga semana\nIpanugyan anay; kumpirmaha antes gamiton.",
+      "check": null
+    },
+    {
+      "id": "slide-improvement-confirm",
+      "heading": "Kumpirmaha ang mga kamatuoran kag pamati",
+      "display": "Kasamtangan nga contact?\nMay mensahe ukon patakaran na?\nIpaathag ang wala pa masiguro.",
+      "check": null
+    },
+    {
+      "id": "slide-improvement-plan",
+      "heading": "Himua nga tiyak ang plano",
+      "display": "Buluhaton: nakumpirma nga malip-ot nga mensahe\nTawo kag materyal: Vlanche; giya nga gin-usisa sang midwife\nBalikan: Biyernes; nabilin nga mga pamangkot.",
+      "check": null
+    },
+    {
+      "id": "slide-improvement-feedback",
+      "heading": "Tilawi kag baliki ang natabo",
+      "display": "Makasiling bala ang mga tawo sang husto nga contact?\nAno nga mga pamangkot ang nabilin?\nBaliki upod sa midwife; bag-uha kon kinahanglan.",
+      "check": null
+    },
+    {
+      "id": "slide-improvement-check",
+      "heading": "Pilia ang mahimo nga plano",
+      "display": "Naobserbahan\nNakumpirma kag nahisgutan\nGamay nga plano; tilawi kag baliki.",
+      "check": {
+        "prompt": "Nagakalainlain ang sabat sang mga residente kon sin-o ang pamangkuton sa health station. Ano nga plano ang dapat ihanda anay ni Vlanche?",
+        "options": [
+          "Maghimo sang pahanumdom nga nagasaad nga libre ang tanan nga serbisyo agod madasig ang mga residente.",
+          "Kumpirmaha sa midwife ang contact kag mensahe, kasugti ang masarangan nga mga pagbisita sa masunod nga semana kag materyales, dayon baliki sa Biyernes kon makasiling bala ang mga nakaistorya sang contact kag ano nga mga pamangkot ang nabilin.",
+          "Bag-uha dayon ang proseso sang health station kag pahibalua na lamang ang midwife pagkatapos sini.",
+          "Ipanugyan nga pauswagon ang tanan nga buluhaton kag sa ulihi na hunahunaa kon sin-o, san-o, kag paano usisaon."
+        ],
+        "feedback": "Ang ikaduha nga plano mahimo: may nakumpirma nga impormasyon kag pagtugot, gamay nga buluhaton, masarangan nga oras kag materyales, kag palatandaan nga balikon. Wala sang basihan ang saad nga libre ang tanan nga serbisyo; ang pagbag-o sang proseso nga ikaw lang labaw sa ginkasugtan; ang “pauswagon ang tanan” kulang sang tiyak nga una nga tikang."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "improvement-planning",
+      "alt": "Si BHW Vlanche, ang midwife kag si Mang Ernesto nagaplano sa isa ka lamesa nga may tatlo ka blangko nga kard para sa obserbasyon, ginkasugtan nga buluhaton kag pagbalik.",
+      "caption": "Hinimo nga sitwasyon sang gamay nga pagpauswag. Ang blangko nga mga kard giya sa pagtuon; wala sang personal nga detalye."
+    },
+    {
+      "id": "uhc-improvement-story",
+      "alt": "Sugilanon nga may salaysay: isa ka naobserbahan nga kakulangan, panugyan, kumpirmasyon, gamay nga plano, pagtilaw kag pagbalik.",
+      "caption": "Anom ka hinimo nga tagpo nga may Gemini nga salaysay kag mga caption sa Hiligaynon (Ilonggo).",
+      "text_steps": [
+        {
+          "id": "observed",
+          "title": "Isa ka naobserbahan nga kakulangan",
+          "text": "“Sin-o bala ang akon pamangkuton?” siling ni Mang Ernesto. Nagakalainlain ang sabat nga nabatian ni Vlanche sa duha ka pagbisita. Gintala niya ang pamangkot nga wala sang mga ngalan kag wala siya magbasol sang tawo."
+        },
+        {
+          "id": "proposal",
+          "title": "Gamay nga una nga tikang",
+          "text": "Nagapanugyan si Vlanche sang isa ka malip-ot nga mensahe sa natalana nga mga pagbisita sa masunod nga semana. Panugyan pa lamang ini: hisguti kag kumpirmaha ang impormasyon antes gamiton."
+        },
+        {
+          "id": "confirm",
+          "title": "Kumpirmaha kag hisguti",
+          "text": "Nagapamangkot siya sa midwife parte sa kasamtangan nga contact, mensahe kag patakaran, kag nagapamati. Indi niya ipalapnag ang wala pa makumpirma nga impormasyon kag indi niya bag-uhon ang serbisyo nga siya lang."
+        },
+        {
+          "id": "plan",
+          "title": "Buluhaton · tawo · oras kag gamit",
+          "text": "Sa sini nga halimbawa, nakumpirma ang mensahe kag nagkasugot sa plano. Magagamit si Vlanche sang gin-usisa nga giya sa mga pagbisita, upod sa masarangan nga oras kag materyales. Balikon nila ini sa Biyernes."
+        },
+        {
+          "id": "trial",
+          "title": "Tilawi kag pamati",
+          "text": "Pagkatapos sang pagpaathag, nagapamangkot siya kon sin-o ang palapitan. Itala niya kon pila ang makasabat kag ano nga mga pamangkot ang nabilin, nga wala sang personal nga detalye. Gamay nga palatandaan lamang ini, indi garantiya sang epekto."
+        },
+        {
+          "id": "review",
+          "title": "Isa ka gamay nga pagpauswag",
+          "text": "Sa Biyernes, usisaon nila sang midwife ang mga panugyan kag bag-uhon ang mensahe kon kinahanglan. Obserbahi, kumpirmaha kag hisguti, maghimo sang gamay nga plano, tilawi kag baliki. Ano ang imo una nga tikang?"
+        }
+      ]
+    }
+  ],
+  "story_art": {
+    "alt": "Si BHW Vlanche, ang midwife kag si Mang Ernesto nagaplano sa isa ka lamesa nga may tatlo ka blangko nga kard para sa obserbasyon, ginkasugtan nga buluhaton kag pagbalik.",
+    "caption": "Hinimo nga sitwasyon sang gamay nga pagpauswag. Ang blangko nga mga kard giya sa pagtuon; wala sang personal nga detalye."
+  },
+  "story_beats": [
+    {
+      "id": "observed",
+      "text": "“Sin-o bala ang akon pamangkuton?” siling ni Mang Ernesto. Nagakalainlain ang sabat nga nabatian ni Vlanche sa duha ka pagbisita. Gintala niya ang pamangkot nga wala sang mga ngalan kag wala siya magbasol sang tawo.",
+      "title": "Isa ka naobserbahan nga kakulangan",
+      "detail": "Nabatian, indi pagpakot"
+    },
+    {
+      "id": "proposal",
+      "text": "Nagapanugyan si Vlanche sang isa ka malip-ot nga mensahe sa natalana nga mga pagbisita sa masunod nga semana. Panugyan pa lamang ini: hisguti kag kumpirmaha ang impormasyon antes gamiton.",
+      "title": "Gamay nga una nga tikang",
+      "detail": "Isa ka mensahe · masunod nga semana"
+    },
+    {
+      "id": "confirm",
+      "text": "Nagapamangkot siya sa midwife parte sa kasamtangan nga contact, mensahe kag patakaran, kag nagapamati. Indi niya ipalapnag ang wala pa makumpirma nga impormasyon kag indi niya bag-uhon ang serbisyo nga siya lang.",
+      "title": "Kumpirmaha kag hisguti",
+      "detail": "Contact · mensahe · pagtugot"
+    },
+    {
+      "id": "plan",
+      "text": "Sa sini nga halimbawa, nakumpirma ang mensahe kag nagkasugot sa plano. Magagamit si Vlanche sang gin-usisa nga giya sa mga pagbisita, upod sa masarangan nga oras kag materyales. Balikon nila ini sa Biyernes.",
+      "title": "Buluhaton · tawo · oras kag gamit",
+      "detail": "Ginkasugtan nga plano; balikan sa Biyernes"
+    },
+    {
+      "id": "trial",
+      "text": "Pagkatapos sang pagpaathag, nagapamangkot siya kon sin-o ang palapitan. Itala niya kon pila ang makasabat kag ano nga mga pamangkot ang nabilin, nga wala sang personal nga detalye. Gamay nga palatandaan lamang ini, indi garantiya sang epekto.",
+      "title": "Tilawi kag pamati",
+      "detail": "Makasiling sang contact? May pamangkot pa?"
+    },
+    {
+      "id": "review",
+      "text": "Sa Biyernes, usisaon nila sang midwife ang mga panugyan kag bag-uhon ang mensahe kon kinahanglan. Obserbahi, kumpirmaha kag hisguti, maghimo sang gamay nga plano, tilawi kag baliki. Ano ang imo una nga tikang?",
+      "title": "Isa ka gamay nga pagpauswag",
+      "detail": "Naobserbahan → Nakumpirma → Plano → Ginbalikan"
+    }
+  ],
+  "scene_labels": {
+    "proposal": [
+      [
+        "Ano?",
+        "Malip-ot nga mensahe"
+      ],
+      [
+        "San-o?",
+        "Masunod nga semana"
+      ],
+      [
+        "Kahimtangan",
+        "Panugyan pa lamang"
+      ]
+    ],
+    "confirm": [
+      [
+        "Kumpirmaha",
+        "Contact kag mensahe"
+      ],
+      [
+        "Pamati",
+        "Kasamtangan nga patakaran"
+      ],
+      [
+        "Kasugti",
+        "Husto nga pagtugot"
+      ]
+    ],
+    "plan": [
+      [
+        "Buluhaton",
+        "Gin-usisa nga mensahe"
+      ],
+      [
+        "Responsable",
+        "Vlanche; masarangan nga gamit"
+      ],
+      [
+        "Balikan",
+        "Biyernes"
+      ]
+    ],
+    "trial": [
+      [
+        "Mamangkot",
+        "Sin-o ang palapitan?"
+      ],
+      [
+        "Itala",
+        "Ihap kag mga pamangkot"
+      ],
+      [
+        "Likawi",
+        "Personal nga detalye"
+      ]
+    ],
+    "opening": "“Sin-o bala ang akon pamangkuton?”\nPamati. Itala. Ipaathag.",
+    "summary": "Isa ka buluhaton\nHusto nga pagtugot\nMga panugyan kag pagbag-o",
+    "footer": "Halimbawa; kumpirmaha ang lokal nga kahikayan."
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  },
+  "owner_review": {
+    "approved_on": "2026-10-04",
+    "timezone": "Asia/Manila",
+    "scope": "Lesson 1.2.4 prepared translations, reading narration, story, captions and poster",
+    "approval": "approved content for 1.2.1 to 1.2.4. merge one by one and deploy live one by one.",
+    "reviewed_head": "ca496c8b5facd83c3354a365a1c686d65ffb110c",
+    "independent_native_speaker_certification": false,
+    "independent_sme_approval": false,
+    "release_animation_verification": "Every composition, poster, size-budget check and artifact; four render jobs."
+  }
+}
