@@ -28,16 +28,15 @@ concurrency:
 
 jobs:
   render:
-    # Split the growing composition list across two runners. A serial run
-    # rendered all 18 clips but hit the 20-minute limit during final packaging.
+    # Split the growing library across four runners. At 46 compositions,
+    # two runners completed every clip but hit 30 minutes during upload.
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1]
+        shard: [0, 1, 2, 3]
     runs-on: ubuntu-latest
-    # The 34-composition library reached its last English story at 20 minutes
-    # on lesson 1.2.4's first review run. Keep both shards and every render;
-    # allow room for the final clip, poster and artifact upload.
+    # Preserve every clip, poster, size-budget check and downloadable artifact.
+    # Four shards leave room for packaging as new lesson languages are added.
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
@@ -70,7 +69,7 @@ jobs:
           ids=$(cd remotion && npx remotion compositions --quiet | tail -n 1 | tr -s ' \t' '\n' | grep -E '^[A-Za-z0-9-]+$')
           index=0
           for id in $ids; do
-            if [ "$((index % 2))" -eq "$RENDER_SHARD" ]; then
+            if [ "$((index % 4))" -eq "$RENDER_SHARD" ]; then
               node scripts/remotion-render.mjs "$id" 2>&1 | tee -a render.log
             fi
             index=$((index + 1))
