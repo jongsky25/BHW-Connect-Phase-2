@@ -30,7 +30,7 @@ type Timings = {
 };
 
 export const calculateBhsPromotionsMetadata: CalculateMetadataFunction<BhsPromotionsStoryProps> = async ({ props }) => {
-  const response = await fetch(staticFile(`uhc-bhs-promotions/narration-${props.language}.json`)).catch(() => null);
+  const response = await fetch(staticFile(`bhs-promotions/narration-${props.language}.json`)).catch(() => null);
   if (!response?.ok) throw new Error("BHS promotions requires measured Gemini narration timings");
   const timing: Timings = await response.json();
   if (timing.language !== props.language || timing.beats.length !== BHS_PROMOTIONS_BEATS.length ||
@@ -43,7 +43,7 @@ export const calculateBhsPromotionsMetadata: CalculateMetadataFunction<BhsPromot
   if (beatFrames.some((n) => n < 1)) throw new Error("BHS promotions narration has an empty scene");
   return {
     durationInFrames: beatFrames.reduce((sum, n) => sum + n, 0),
-    props: { ...props, beatFrames, audioSrc: staticFile(`uhc-bhs-promotions/narration-${props.language}.mp3`) },
+    props: { ...props, beatFrames, audioSrc: staticFile(`bhs-promotions/narration-${props.language}.mp3`) },
   };
 };
 

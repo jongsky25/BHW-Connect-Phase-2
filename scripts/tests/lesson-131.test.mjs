@@ -7,6 +7,7 @@ import {loadReferenceModule, parseReferenceRead, FACILITATOR_SECTION_IDS} from '
 import {planReferenceNarration} from '../lib/reference-narration.mjs';
 import {BHS_PROMOTIONS_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
 import {BHS_PROMOTIONS_BEATS} from '../../remotion/src/bhs-promotions/narration.ts';
+import {lessonPosition, continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
 const root=path.resolve(import.meta.dirname,'../..');
 const folder=path.join(root,'content/training/day1-basic-competencies/modules/03-polisiya-bhs');
 const dir=path.join(folder,'lessons/bhs-promotions');
@@ -16,6 +17,25 @@ const authored=loadReferenceModule(folder,path.join(root,'public')).lessons.find
 const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
 const ids=['section-1','section-2','identify-offer','pause-route','independent-information','recognition-check'];
 describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
+  it('retains old Read/Slides resume positions and saved lesson completion across expansion',()=>{
+    const lesson={...authored.manifest,id:'03132db5-003e-409c-986a-0361c83219d0',revision:{...authored.revision,id:'new-draft-revision'}};
+    for(const [mode,id] of [['read','section-2'],['slides','slide-section-2']]){
+      const saved={lesson_id:lesson.id,revision_id:'old-published-revision',modality:mode,position_key:id,concept_id:'m3.pharma-ban',updated_at:'2026-10-03'};
+      expect(lessonPosition(lesson,mode,saved).id).toBe(id);
+      expect(continueLesson([lesson],[],[saved])).toBe(lesson);
+      expect(continueLesson([lesson],[{lesson_id:lesson.id,revision_id:'old-published-revision'}],[saved])).toBeNull();
+      expect(saved.revision_id).toBe('old-published-revision');
+    }
+  });
+  it('uses Mimi throughout all authored 1.3 learner and facilitator references',()=>{
+    const module=loadReferenceModule(folder,path.join(root,'public'));
+    for(const lesson of module.lessons){
+      const teaching=JSON.stringify({read:lesson.revision.read_sections,slides:lesson.revision.slides,facilitator:lesson.revision.facilitator_notes,competency:lesson.revision.observation_indicators});
+      expect(teaching).not.toMatch(/Corazon/i);
+    }
+    for(const lang of ['fil','en'])expect(readFileSync(path.join(folder,`lesson.${lang}.md`),'utf8')).not.toMatch(/Corazon/i);
+    for(const key of ['bhs-promotions','bhs-decline','bhs-resources'])expect(readFileSync(path.join(folder,'lessons',key,'read.en.md'),'utf8')).toContain('Mimi');
+  });
   it('preserves published metadata, original positions and bilingual screen alignment',()=>{
     expect(source.manifest).toEqual({lesson_key:'bhs-promotions',position:0,title_fil:'Pagkilala sa alok ng kumpanya',title_en:'Recognizing a company offer',objectives_fil:['Maipaliwanag at mailapat sa isang sitwasyon: pagkilala sa alok ng kumpanya.'],objectives_en:['Explain and apply in a situation: recognizing a company offer.'],required:true});
     expect(source.sections.map(s=>s.id)).toEqual(ids);

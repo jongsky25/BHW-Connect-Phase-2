@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Usage: GEMINI_API_KEY=... node scripts/remotion-bhs-promotions-narrate.mjs fil|en
-// Each story scene is synthesized separately, then timed by PCM sample count.
+// Each story scene is synthesized separately; encoded MP3 sample counts set duration.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";

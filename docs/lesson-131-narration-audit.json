@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-04",
+  "credentialConfigured": false,
+  "actualSynthesis": "blocked: GEMINI_API_KEY is not set",
+  "lessonReleaseScope": [
+    "bhs-promotions"
+  ],
+  "nameChangeScope": "All authored 1.3 character references are Mimi; historical recordings and original image prompt retain truthful provenance.",
+  "tracks": [
+    {
+      "lesson": "bhs-promotions",
+      "section": "section-1",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-1.fil.8758509c59c2.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-1.fil.547de947c69e.mp3",
+      "contentHash": "547de947c69e68a03d0e437d5f1bb8d6462ec255665896bfc328bfe40be188a5",
+      "zoneCount": 8
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "section-1",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-1.en.a954d19a28be.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-1.en.2b107ad834f8.mp3",
+      "contentHash": "2b107ad834f811b92ea57e1fe7d428b6792c89bbcb63b3c9caff9a8f96a86200",
+      "zoneCount": 7
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "section-2",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.3163de642f23.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.cecc83f8ab7a.mp3",
+      "contentHash": "cecc83f8ab7aa1cb13205cb7843cdc582607c748e6158e5bd8f544c424e6795f",
+      "zoneCount": 6
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "section-2",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-2.en.755128e1ba35.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/section-2.en.5da497ea5a5f.mp3",
+      "contentHash": "5da497ea5a5f267e9c68bba8059ab5a0f963e5eaed6fb272188864e7a785879c",
+      "zoneCount": 6
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "identify-offer",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/identify-offer.fil.d214ba912027.mp3",
+      "contentHash": "d214ba91202728ac9c5fdc9c558314af7cd59cb2ffa062dc4236993a40412f94",
+      "zoneCount": 6
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "identify-offer",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/identify-offer.en.5f4f737cc901.mp3",
+      "contentHash": "5f4f737cc90108e0fea4f52bf18bd207493c3c6cf37279f0cea2ee8aaa32c95d",
+      "zoneCount": 6
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "pause-route",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/pause-route.fil.4df99ce68ae7.mp3",
+      "contentHash": "4df99ce68ae74ae6427aae8307e45ded79b0478da822a8dbee1f025a5ee295ea",
+      "zoneCount": 8
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "pause-route",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/pause-route.en.76d53bad6dae.mp3",
+      "contentHash": "76d53bad6daeaca4af87b95316f3c230c963c9b3c42d20b0e4f7a2c778242985",
+      "zoneCount": 8
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "independent-information",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/independent-information.fil.a1315e1f3c96.mp3",
+      "contentHash": "a1315e1f3c965d94c1f3c1ebefe63842b9c80e3e207e996f41902ed8f8c27e6f",
+      "zoneCount": 7
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "independent-information",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/independent-information.en.3ae50596dd3f.mp3",
+      "contentHash": "3ae50596dd3f2be66a13c659fbb3ce5de119703fa114cb5fabdd790c4f672e32",
+      "zoneCount": 7
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "recognition-check",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/recognition-check.fil.fe00228add06.mp3",
+      "contentHash": "fe00228add062ed748cfc9d43d3e8b6d4bd805278692a6fc65077c261bc184af",
+      "zoneCount": 8
+    },
+    {
+      "lesson": "bhs-promotions",
+      "section": "recognition-check",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": null,
+      "existingSource": null,
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-promotions/recognition-check.en.b779d63ae4de.mp3",
+      "contentHash": "b779d63ae4def03cf0ddb59be0742e1b9bae8ee76af80f24b2c6a5d63687676d",
+      "zoneCount": 8
+    },
+    {
+      "lesson": "bhs-support-environment",
+      "section": "section-3",
+      "language": "fil",
+      "action": "skip",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.d384713ab75e.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.d384713ab75e.mp3",
+      "contentHash": "d384713ab75e3f150177baa2a401b953e3542eb31fb5da864fb662a912035107",
+      "zoneCount": 7
+    },
+    {
+      "lesson": "bhs-support-environment",
+      "section": "section-3",
+      "language": "en",
+      "action": "skip",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.fc655dc3863e.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.fc655dc3863e.mp3",
+      "contentHash": "fc655dc3863e2d525468a49ac0b87e43c497acc026f7c68907a773f7072f37ae",
+      "zoneCount": 7
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-4",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.73e34c01d32b.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.e6fe03dc36f4.mp3",
+      "contentHash": "e6fe03dc36f429b8bb01987a67d02dd60566e71e71d86d723e070b367d78ec50",
+      "zoneCount": 10
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-4",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.cd89f2b3b65d.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.61e1e991ca62.mp3",
+      "contentHash": "61e1e991ca62d8b2d8a4b5c680e93e398883bacfe5871a720a19ab8a6c89bb4b",
+      "zoneCount": 10
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-7",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.9df7b5551c65.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.6d4dd5c93b52.mp3",
+      "contentHash": "6d4dd5c93b52e2ccf4b789c4e9d4d9b1343a94d87ca8a48fcff79266d98a4939",
+      "zoneCount": 6
+    },
+    {
+      "lesson": "bhs-decline",
+      "section": "section-7",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.338717f48153.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.fc81549bfd06.mp3",
+      "contentHash": "fc81549bfd06785ad6e601f4fb2e66fcdd7f9ac9c0162b85d6b2bad1a642d85a",
+      "zoneCount": 6
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "section-5",
+      "language": "fil",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.fil.23a79bbf85e6.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.fil.5864011094dc.mp3",
+      "contentHash": "5864011094dceee579afaa4e4a2405eeb97d3c3bdcb720e22f8898f2a5902e95",
+      "zoneCount": 5
+    },
+    {
+      "lesson": "bhs-resources",
+      "section": "section-5",
+      "language": "en",
+      "action": "render",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.en.cf26520623c3.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.en.a29ef2d462eb.mp3",
+      "contentHash": "a29ef2d462eb139d8a2b937d8204728eb946adbc5c25450ae6d5dcb0851aa508",
+      "zoneCount": 5
+    },
+    {
+      "lesson": "bhs-improvement",
+      "section": "section-6",
+      "language": "fil",
+      "action": "skip",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.fil.e26c2c989eca.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.fil.e26c2c989eca.mp3",
+      "contentHash": "e26c2c989ecafb9bc1e50ed2cb702c4c18e4ea67625342df8e2b6233a72dfc34",
+      "zoneCount": 4
+    },
+    {
+      "lesson": "bhs-improvement",
+      "section": "section-6",
+      "language": "en",
+      "action": "skip",
+      "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.en.57fae1b4f6a8.mp3",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.en.57fae1b4f6a8.mp3",
+      "contentHash": "57fae1b4f6a84be3e86c067b42c6133e0a9f57b1a5da67bd7dca92d78996e8ea",
+      "zoneCount": 4
+    }
+  ],
+  "summary": [
+    {
+      "lesson": "bhs-promotions",
+      "current": 0,
+      "requiresGeneration": 12
+    },
+    {
+      "lesson": "bhs-support-environment",
+      "current": 2,
+      "requiresGeneration": 0
+    },
+    {
+      "lesson": "bhs-decline",
+      "current": 0,
+      "requiresGeneration": 4
+    },
+    {
+      "lesson": "bhs-resources",
+      "current": 0,
+      "requiresGeneration": 2
+    },
+    {
+      "lesson": "bhs-improvement",
+      "current": 2,
+      "requiresGeneration": 0
+    }
+  ]
+}
