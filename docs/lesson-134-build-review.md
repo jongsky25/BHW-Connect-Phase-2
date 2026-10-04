@@ -1,0 +1,21 @@
+# Lesson 1.3.4: policies and resource use
+
+Started 4 October 2026 (Asia/Manila) from main `4ee8b0a9c7ff9b4f7ee7a7db98c90a8beb45e526`, isolated branch `codex/lesson-134-story-gemini`. Target `03-polisiya-bhs/bhs-resources`, lesson UUID `39ab9754-1714-4126-a83e-6f9185e6e39b`, position 3. Original manifest, objective strings, required flag and both required concepts remain unchanged. No learner-progress writes or publication.
+
+The sparse single-screen lesson becomes six equivalent bilingual Read/Slides screens: policies before changes; local rule and responsibility; factual observation; protecting service; coordination before action; application check. Original `section-5` and `slide-section-5` remain first, preserving old-ID resume. Additions use stable named IDs. Mimi is the observing BHW; the inherited phrase implying she was the person refused is corrected.
+
+Distinct fictional situation: lights and fan remain on in an empty nonclinical meeting area, with next use unknown. Mimi describes facts and asks the confirmed responsible person about schedule, closing rule and authority. The agreed first step is to review schedule/checklist, rather than immediately shut down or reduce supplies. No invented savings, universal approval chain, clinical rationing, reuse or repair procedure. Detailed proposal writing remains lesson 1.3.5.
+
+Source audit confirms printed page 15 / original PDF page 24 against the actual 150-page manual; repository transcription Page 22 omits two front pages. The source supports workplace policies, resources and whole-competency training guidance, not the fictional local permissions. The inherited module table totals 200 minutes versus the manual's at-least-four-hour recommendation: training organizers must resolve that 40-minute gap across the competency. Retain a suggested 20-minute lesson activity; expanded self-study is estimated at ten minutes. These estimates are not official requirements.
+
+Original resource-use Mimi illustration uses approved 1.3.1 identity/style reference; both faces and gestures are contained in Read, Slides and animation. New scene is draft. The inconsistent approval label on the older generic SVG is not inherited; historical file retained. Exact prompt/hash/reference and inspection are recorded separately.
+
+Gemini/Kore Read plan: six sections × two languages, expressive reflective questions and practical explanations, deliberate emphasis on service needs and checks before action. Style/model/voice/pronunciation participate in hashes. Historical target mappings/media and current siblings are retained; runtime exact-published-text lookup is preserved. Default and explicit dry reruns must both render zero.
+
+Animation: six changing beats, measured actual MP3 durations, H.264/AAC 854×480, matching captions and final-summary posters. Full-library CI render budget and two shards remain intact. Committed narrated media require separate stream/hash verification.
+
+Facilitation uses twelve aligned headings, two practical cards, all three answer rationales and supported re-practice. Three actions are grouped under one unique objective index 0. Practical observed skill is distinct from online completion.
+
+Acceptance gates: target/content/narration/loader/viewer/pronunciation tests, app and Remotion lint/typecheck; final normal Linux build/E2E; both full-library artifact inventories/integrity; scoped one-lesson Linux loader dry run; 96 Read/Slides responsive cases plus actual playback/highlighting/feedback/fullscreen/optional completion/old-ID resume. A component fixture must import current data/CSS and label adapters as stubs. Offline embedded media/package hashes/CRC are independently checked.
+
+New package/media remain draft pending owner review. Model-mediated audio review is not human listening or approval. No independent policy SME approval is recorded. Authenticated production learner playback/resume/completion is untested without an authorized session. Final exact-head evidence is kept externally in the package to avoid recursively changing the source commit. No merge/deployment/publication is authorized before review approval of this package.

@@ -253,6 +253,8 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
             caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
           }
+      : lesson?.lesson_key === "bhs-resources"
+        ? {src: "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png", alt: ui("Tinatalakay ni Mimi ang resource concern sa namamahala.", "Mimi discusses the resource concern with the supervisor."), caption: ui("Obserbasyon · Tuntunin · Pakikipag-ugnayan", "Observation · Rule · Coordination")}
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;

@@ -20,26 +20,95 @@
         "m3.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "mimi-resource-use"
       ],
-      "takeaway_fil": "Ang parehong kasanayan — pagtukoy ng mas mahusay na paraan at pagpapaliwanag nito nang malinaw — ang gamit sa pagtanggi sa isang alok at sa pagmumungkahi ng pagbabago sa lugar ng trabaho.",
-      "takeaway_en": "The same skill — spotting a better way and explaining it clearly — is what's used both to decline an offer and to propose a change at the workplace.",
+      "takeaway_fil": "Protektahan ang serbisyo habang naghahanap ng mas mahusay na paraan.",
+      "takeaway_en": "Protect service while looking for a better way.",
+      "check": null
+    },
+    {
+      "id": "know-responsibilities",
+      "concept_ids": [
+        "m3.other-topics",
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-resource-use"
+      ],
+      "takeaway_fil": "Tiyakin ang lokal na responsibilidad at pahintulot.",
+      "takeaway_en": "Confirm local responsibility and permission.",
+      "check": null
+    },
+    {
+      "id": "observe-resource-use",
+      "concept_ids": [
+        "m3.other-topics",
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-resource-use"
+      ],
+      "takeaway_fil": "Katotohanan muna; sabihin din ang hindi pa alam.",
+      "takeaway_en": "State the facts and what is still unknown.",
+      "check": null
+    },
+    {
+      "id": "protect-service",
+      "concept_ids": [
+        "m3.other-topics",
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-resource-use"
+      ],
+      "takeaway_fil": "Walang sariling pagbawas na maaaring makasira sa serbisyo.",
+      "takeaway_en": "Do not independently make cuts that may compromise service.",
+      "check": null
+    },
+    {
+      "id": "check-before-change",
+      "concept_ids": [
+        "m3.other-topics",
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-resource-use"
+      ],
+      "takeaway_fil": "Ipaalam ang obserbasyon, tiyakin ang tuntunin, at linawin ang unang hakbang.",
+      "takeaway_en": "Share the observation, check the rule, and clarify the first step.",
+      "check": null
+    },
+    {
+      "id": "resource-check",
+      "concept_ids": [
+        "m3.other-topics",
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-resource-use"
+      ],
+      "takeaway_fil": "Obserbasyon → Tuntunin at responsibilidad → Pakikipag-ugnayan.",
+      "takeaway_en": "Observation → Rule and responsibility → Coordination.",
       "check": {
-        "prompt_fil": "Bakit aalamin ang polisiya sa rekurso?",
-        "prompt_en": "Why learn resource-use policy?",
+        "prompt_fil": "Ano ang angkop na unang hakbang?",
+        "prompt_en": "What is the appropriate first step?",
         "options": [
           {
-            "fil": "Upang makapagmungkahi ng ligtas at mas episyenteng gawain.",
-            "en": "To suggest safe and more efficient work."
+            "fil": "Itala ang nakita at itanong sa kinumpirmang responsable ang schedule, closing rule at pahintulot bago may baguhin; huwag munang magbawas ng supplies nang kusa.",
+            "en": "Record the observation and ask the confirmed responsible person about the schedule, closing rule and authority before changing anything; do not independently reduce supplies."
           },
           {
-            "fil": "Upang makapagbawas ng anumang gamit nang walang pahintulot.",
-            "en": "To remove any supplies without authorization."
+            "fil": "Patayin muna ang ilaw at fan dahil bakante ang lugar, saka ipaalam sa namamahala bukas.",
+            "en": "Turn off the lights and fan because the area is empty, then tell the supervisor tomorrow."
+          },
+          {
+            "fil": "Ipatabi muna sa kasamahan ang ilang supplies bilang pansamantalang tipid habang hinihintay ang pahintulot.",
+            "en": "Ask the colleague to set some supplies aside as a temporary saving while waiting for permission."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Upang makapagmungkahi ng ligtas at mas episyenteng gawain. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "To suggest safe and more efficient work. Explain why using the lesson situation."
+        "feedback_fil": "Tama ang una: may factual na obserbasyon at pagsusuri ng schedule, tuntunin, responsibilidad at pahintulot bago kumilos. Sa ikalawa, may pagbabago nang hindi alam ang service needs o closing rule; hindi sapat ang pag-ulat pagkatapos. Sa ikatlo, nabawasan na ang available supplies bago maaprubahan at maaaring maapektuhan ang serbisyo. Hindi awtomatikong pahintulot ang magandang intensiyon.",
+        "feedback_en": "The first choice records facts and checks the schedule, rule, responsibility and authority before acting. The second changes things without knowing service needs or the closing rule; reporting afterwards is insufficient. The third reduces available supplies before authorization and may affect service. Good intentions do not automatically authorize a change."
       }
     }
   ],
@@ -47,10 +116,20 @@
     {
       "id": "m3.other-topics",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "know-responsibilities",
+        "observe-resource-use",
+        "protect-service",
+        "check-before-change",
+        "resource-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-know-responsibilities",
+        "slide-observe-resource-use",
+        "slide-protect-service",
+        "slide-check-before-change",
+        "slide-resource-check"
       ],
       "source_ids": [
         "m3.other-topics-source"
@@ -59,10 +138,20 @@
     {
       "id": "m3.competency",
       "read_ids": [
-        "section-5"
+        "section-5",
+        "know-responsibilities",
+        "observe-resource-use",
+        "protect-service",
+        "check-before-change",
+        "resource-check"
       ],
       "slide_ids": [
-        "slide-section-5"
+        "slide-section-5",
+        "slide-know-responsibilities",
+        "slide-observe-resource-use",
+        "slide-protect-service",
+        "slide-check-before-change",
+        "slide-resource-check"
       ],
       "source_ids": [
         "m3.competency-source"
@@ -72,32 +161,32 @@
   "sources": [
     {
       "id": "m3.other-topics-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "DOH BHW Facilitator Manual (2022), printed p.15 / original PDF p.24: workplace policies, efficient resources and resourcefulness",
       "pdf_pages": [
-        22
+        24
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
     },
     {
       "id": "m3.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "DOH BHW Facilitator Manual (2022), printed p.15 / original PDF p.24: workplace competency and training recommendation",
       "pdf_pages": [
-        22
+        24
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "mimi-resource-use",
+      "path": "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png",
+      "content_hash": "86ce5a9071e0416f069e74ed8d4c1fbdcf4613dd6ff9c5d4ea953a59b7a976d4",
+      "alt_fil": "Pinag-uusapan nina BHW Mimi at isang namamahala ang resource-use concern gamit ang blangkong clipboard.",
+      "alt_en": "BHW Mimi discusses a resource-use concern with a supervisor using a blank clipboard.",
+      "caption_fil": "Obserbasyon · Tuntunin · Pakikipag-ugnayan. Draft para sa owner review.",
+      "caption_en": "Observation · Rule · Coordination. Draft for owner review.",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila. Approved 1.3.1 Mimi identity/style reference; new scene is draft. Model identifier not returned by tool. Exact prompt: Use case: illustration-story. Create a NEW original landscape educational illustration for BHW Connect lesson 1.3.4 Policies and resource use. The supplied image is an approved identity/style reference ONLY. Preserve Mimi, fictional Filipina BHW about 50, straight shoulder-length black hair, lavender polo, navy trousers, recognizable face. At an unbranded airy barangay health station, Mimi holds a blank clipboard and calmly discusses a resource-use concern with a generic female facility supervisor in a plain teal blouse. An orderly nonclinical stationery shelf is behind them; a sunlit empty meeting corner is visible. Mimi is observing and communicating, supervisor listens and indicates the blank clipboard. Distinct composition from reference: medium waist-up landscape, both faces and gestures inside central 60 percent, natural hands/anatomy. Warm daylight, realistic photographic illustrative style matching reference. No boxes being offered, gift, patient, clinical procedure, hazardous material, equipment controls or repairs, discarding supplies, text, letters, brands, seals or personal information. Draft new artwork for owner review.",
+      "review_status": "draft"
     }
   ]
 }
