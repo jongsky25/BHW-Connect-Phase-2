@@ -1,0 +1,52 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in clear conversational Filipino as a warm, expressive Philippine community health storyteller. Pronounce Mimi MEE-mee. Use a reflective question as Mimi notices the concern, a calm practical explanation of responsibility, and deliberate emphasis on service needs and checking before action. Vary pitch and pace naturally, with brief pauses between observation and questions. Preserve every authored word; no fillers or invented permission.",
+  "durationSeconds": 80.953,
+  "beats": [
+    {
+      "zone": "notice",
+      "index": 0,
+      "text": "Napansin ni Mimi ang ilaw at fan sa bakanteng meeting area. Paano gagamit ng limitadong rekurso nang protektado ang serbisyo? Unawain muna bago baguhin.",
+      "start_ms": 0,
+      "end_ms": 11920
+    },
+    {
+      "zone": "responsibility",
+      "index": 1,
+      "text": "Itatanong niya ang closing rule at sino ang responsable. Kumpirmahin ang tamang contact sa BHS. Hindi awtomatikong pahintulot ang pagsang-ayon ng kasamahan.",
+      "start_ms": 12220,
+      "end_ms": 23540
+    },
+    {
+      "zone": "facts",
+      "index": 2,
+      "text": "Nakita niyang nakabukas ang ilaw at fan, walang tao sa oras ng pagtingin. Hindi pa alam ang susunod na schedule. Walang sisi, datos ng pasyente o imbentong savings.",
+      "start_ms": 23840,
+      "end_ms": 36840
+    },
+    {
+      "zone": "service",
+      "index": 3,
+      "text": "Huwag magbawas ng supplies nang kusa. Tiyakin ang service needs at safety process. Walang clinical rationing, reuse o electrical repair na lampas sa tungkulin.",
+      "start_ms": 37140,
+      "end_ms": 50140
+    },
+    {
+      "zone": "coordinate",
+      "index": 4,
+      "text": "Ipinaalam ni Mimi ang obserbasyon sa kinumpirmang responsable. Ano ang schedule at closing rule? Unang kasunduan: suriin ang schedule at checklist, hindi agad magbago.",
+      "start_ms": 50440,
+      "end_ms": 63280
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Magsanay: ilarawan ang concern, alamin ang tuntunin at responsibilidad, at makipag-ugnayan bago kumilos. Protektahan ang serbisyo. Hiwalay na inoobserbahan ang kasanayan; hindi sapat ang online completion.",
+      "start_ms": 63580,
+      "end_ms": 80900
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "generated_date": "2026-10-04T08:11:11.935Z",
+  "source_commit": "3bc93ab586c4230effcc21f4064b6ece50a4c31b",
+  "owner_review": "pending",
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-1.en.a954d19a28be.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-1.fil.8758509c59c2.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.en.755128e1ba35.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.3163de642f23.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.cecc83f8ab7a.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/check.en.e940e5ee3973.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/check.fil.9ca33a94a858.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.en.52605118bdcb.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.fil.1aa8b7339246.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.en.bb716c00324e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.fil.e27857afef37.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.en.91a574bb2ad5.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.fil.c25cf7ffe0e8.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.9e2c4320610a.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.fc655dc3863e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.d384713ab75e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.ec20345c1e1e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.en.d7c51f7af4b0.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.fil.d215d40f643d.mp3"
+  ],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 80.953,
+      "beats": [
+        {
+          "zone": "notice",
+          "index": 0,
+          "text": "Napansin ni Mimi ang ilaw at fan sa bakanteng meeting area. Paano gagamit ng limitadong rekurso nang protektado ang serbisyo? Unawain muna bago baguhin.",
+          "start_ms": 0,
+          "end_ms": 11920
+        },
+        {
+          "zone": "responsibility",
+          "index": 1,
+          "text": "Itatanong niya ang closing rule at sino ang responsable. Kumpirmahin ang tamang contact sa BHS. Hindi awtomatikong pahintulot ang pagsang-ayon ng kasamahan.",
+          "start_ms": 12220,
+          "end_ms": 23540
+        },
+        {
+          "zone": "facts",
+          "index": 2,
+          "text": "Nakita niyang nakabukas ang ilaw at fan, walang tao sa oras ng pagtingin. Hindi pa alam ang susunod na schedule. Walang sisi, datos ng pasyente o imbentong savings.",
+          "start_ms": 23840,
+          "end_ms": 36840
+        },
+        {
+          "zone": "service",
+          "index": 3,
+          "text": "Huwag magbawas ng supplies nang kusa. Tiyakin ang service needs at safety process. Walang clinical rationing, reuse o electrical repair na lampas sa tungkulin.",
+          "start_ms": 37140,
+          "end_ms": 50140
+        },
+        {
+          "zone": "coordinate",
+          "index": 4,
+          "text": "Ipinaalam ni Mimi ang obserbasyon sa kinumpirmang responsable. Ano ang schedule at closing rule? Unang kasunduan: suriin ang schedule at checklist, hindi agad magbago.",
+          "start_ms": 50440,
+          "end_ms": 63280
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Magsanay: ilarawan ang concern, alamin ang tuntunin at responsibilidad, at makipag-ugnayan bago kumilos. Protektahan ang serbisyo. Hiwalay na inoobserbahan ang kasanayan; hindi sapat ang online completion.",
+          "start_ms": 63580,
+          "end_ms": 80900
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-3/bhs-resources-gemini-fil-9483de3945f4.mp4",
+        "content_hash": "9483de3945f44e1e36a5289ca4fff4e8ed864663fa17a3c8ea320b04906c4d99",
+        "duration_s": 82,
+        "captions": {
+          "path": "/training/bhw-1-3/bhs-resources-gemini-fil-0a179ccb4cf1.vtt",
+          "content_hash": "0a179ccb4cf16e8a5ecdbf8e04f65af7cbf57e85b432afcd224e0fd58a720580"
+        },
+        "poster": {
+          "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+          "content_hash": "072d3a1c54250b9a8fdfa8b92167bc00dbc9719decb1aa1c065712948f2679c0"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+        "content_hash": "072d3a1c54250b9a8fdfa8b92167bc00dbc9719decb1aa1c065712948f2679c0"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 74.162,
+      "beats": [
+        {
+          "zone": "notice",
+          "index": 0,
+          "text": "Mimi notices lights and a fan in an empty meeting area. How can limited resources be used while protecting service? Understand before changing.",
+          "start_ms": 0,
+          "end_ms": 11520
+        },
+        {
+          "zone": "responsibility",
+          "index": 1,
+          "text": "She asks about the closing rule and who is responsible. Confirm the right contact at the BHS. A colleague agreeing does not automatically authorize a change.",
+          "start_ms": 11820,
+          "end_ms": 23340
+        },
+        {
+          "zone": "facts",
+          "index": 2,
+          "text": "She saw the lights and fan on, with no one there when she checked. The next schedule is unknown. No blame, patient data or invented savings.",
+          "start_ms": 23640,
+          "end_ms": 33080
+        },
+        {
+          "zone": "service",
+          "index": 3,
+          "text": "Do not independently reduce supplies. Check service needs and the safety process. No clinical rationing, reuse or electrical repairs beyond the role.",
+          "start_ms": 33380,
+          "end_ms": 45420
+        },
+        {
+          "zone": "coordinate",
+          "index": 4,
+          "text": "Mimi shares the observation with the confirmed responsible person. What are the schedule and closing rule? First agreement: review the schedule and checklist, without an immediate change.",
+          "start_ms": 45720,
+          "end_ms": 58840
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Practice: describe the concern, check the rule and responsibility, and coordinate before acting. Protect service. Skill is observed separately; online completion alone is insufficient.",
+          "start_ms": 59140,
+          "end_ms": 74100
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-3/bhs-resources-gemini-en-74ab02f554cf.mp4",
+        "content_hash": "74ab02f554cf953077bb8911530ec451cb43938855fbf9fefb4234379e7db9b0",
+        "duration_s": 75,
+        "captions": {
+          "path": "/training/bhw-1-3/bhs-resources-gemini-en-9792ee89d386.vtt",
+          "content_hash": "9792ee89d38646444b1e321963d52c7d0ebc5a9864f12404c1cc7fe3751ae134"
+        },
+        "poster": {
+          "path": "/training/bhw-1-3/bhs-resources-gemini-en-74376812517d-poster.jpg",
+          "content_hash": "74376812517d4841028292c99a2be92806d5770c499ee7e89a0609eafadb791d"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-3/bhs-resources-gemini-en-74376812517d-poster.jpg",
+        "content_hash": "74376812517d4841028292c99a2be92806d5770c499ee7e89a0609eafadb791d"
+      }
+    }
+  ]
+}

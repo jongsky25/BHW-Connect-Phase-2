@@ -187,6 +187,46 @@
       "caption_en": "Observation · Rule · Coordination. Draft for owner review.",
       "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila. Approved 1.3.1 Mimi identity/style reference; new scene is draft. Model identifier not returned by tool. Exact prompt: Use case: illustration-story. Create a NEW original landscape educational illustration for BHW Connect lesson 1.3.4 Policies and resource use. The supplied image is an approved identity/style reference ONLY. Preserve Mimi, fictional Filipina BHW about 50, straight shoulder-length black hair, lavender polo, navy trousers, recognizable face. At an unbranded airy barangay health station, Mimi holds a blank clipboard and calmly discusses a resource-use concern with a generic female facility supervisor in a plain teal blouse. An orderly nonclinical stationery shelf is behind them; a sunlit empty meeting corner is visible. Mimi is observing and communicating, supervisor listens and indicates the blank clipboard. Distinct composition from reference: medium waist-up landscape, both faces and gestures inside central 60 percent, natural hands/anatomy. Warm daylight, realistic photographic illustrative style matching reference. No boxes being offered, gift, patient, clinical procedure, hazardous material, equipment controls or repairs, discarding supplies, text, letters, brands, seals or personal information. Draft new artwork for owner review.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhs-resources-story",
+      "alt_fil": "Kuwentong may salaysay: sinusuri ni Mimi ang resource concern at nakikipag-ugnayan bago kumilos.",
+      "alt_en": "Narrated story: Mimi checks a resource concern and coordinates before acting.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.3.4; original built-in imagegen illustration generated 2026-10-04, using the previously approved fictional Mimi identity as reference. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-3/bhs-resources-gemini-fil-9483de3945f4.mp4",
+          "content_hash": "9483de3945f44e1e36a5289ca4fff4e8ed864663fa17a3c8ea320b04906c4d99",
+          "duration_s": 82,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-resources-gemini-fil-0a179ccb4cf1.vtt",
+            "content_hash": "0a179ccb4cf16e8a5ecdbf8e04f65af7cbf57e85b432afcd224e0fd58a720580"
+          },
+          "poster": {
+            "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+            "content_hash": "072d3a1c54250b9a8fdfa8b92167bc00dbc9719decb1aa1c065712948f2679c0"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-3/bhs-resources-gemini-en-74ab02f554cf.mp4",
+          "content_hash": "74ab02f554cf953077bb8911530ec451cb43938855fbf9fefb4234379e7db9b0",
+          "duration_s": 75,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-resources-gemini-en-9792ee89d386.vtt",
+            "content_hash": "9792ee89d38646444b1e321963d52c7d0ebc5a9864f12404c1cc7fe3751ae134"
+          },
+          "poster": {
+            "path": "/training/bhw-1-3/bhs-resources-gemini-en-74376812517d-poster.jpg",
+            "content_hash": "74376812517d4841028292c99a2be92806d5770c499ee7e89a0609eafadb791d"
+          }
+        }
+      },
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+      "content_hash": "072d3a1c54250b9a8fdfa8b92167bc00dbc9719decb1aa1c065712948f2679c0"
     }
-  ]
+  ],
+  "featured_asset_id": "bhs-resources-story"
 }

@@ -4,7 +4,7 @@ Mimi, a BHW, notices that the lights and electric fan are on in an empty meeting
 
 The workplace competency includes understanding policies and responsibilities, using electricity, water and supplies efficiently, and being resourceful. Efficiency does not mean simply reducing everything. First, Mimi will check the rule, who is responsible, and whether the area is still needed for service. Mimi is also the BHW who declined the company offer in the previous lesson; here she applies the same understanding and clear communication to a different situation. The story is optional; you can complete Read or Slides without watching it.
 
-## [know-responsibilities] Know the rule and responsibility
+## [know-responsibilities] Check the policy and responsibility
 
 Mimi does not assume she makes the decision because she noticed the concern. She asks the confirmed responsible person: “Who is responsible for the meeting area after use? Is there a closing checklist, and who may authorize a change?”
 

@@ -421,7 +421,7 @@ export function ReferenceLessons(props: Props) {
     );
   }
   function openReader() {
-    if (lesson?.lesson_key === "bhs-support-environment") {
+    if (lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources") {
       setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
     }
     setReaderOpen(true);
@@ -702,7 +702,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {ui(
+              {lesson.lesson_key === "bhs-resources" ? ui(
+                "Tinatayang 10 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at hiwalay ang gabay na pagsasanay.",
+                "Estimated 10 minutes for independent study; the optional story is additional and facilitated practice is separate.",
+              ) : ui(
                 "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.",
                 "Estimated 3–7 minutes for independent study; facilitated practice is separate.",
               )}

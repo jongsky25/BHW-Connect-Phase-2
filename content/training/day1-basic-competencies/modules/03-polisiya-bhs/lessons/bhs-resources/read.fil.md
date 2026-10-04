@@ -2,7 +2,7 @@
 
 Napansin ni Mimi, isang BHW, na nakabukas ang ilaw at electric fan sa bakanteng meeting area matapos ang isang gawain. Limitado ang rekurso sa BHS. Paano siya makatutulong nang hindi naaapektuhan ang serbisyo?
 
-Saklaw ng workplace competency ang pag-unawa sa polisiya at responsibilidad, mahusay na paggamit ng kuryente, tubig at gamit, at pagiging maparaan. Hindi simpleng pagbawas sa lahat ang efficiency. Una, aalamin ni Mimi ang tuntunin, sino ang responsable, at kung kailangan pa ang lugar para sa serbisyo. Si Mimi rin ang BHW na tumanggi sa alok ng kumpanya sa naunang aralin; dito, ibang sitwasyon ng parehong pag-unawa at malinaw na pakikipag-usap ang gagamitin niya. Opsyonal ang kuwento; maaaring tapusin ang Read o Slides nang hindi nanonood.
+Saklaw ng workplace competency ang pag-unawa sa polisiya at responsibilidad, mahusay na paggamit ng kuryente, tubig at gamit, at pagiging maparaan. Hindi simpleng pagbawas sa lahat ang efficiency. Una, aalamin ni Mimi ang tuntunin, sino ang responsable, at kung kailangan pa ang lugar para sa serbisyo. Si Mimi rin ang BHW na tumanggi sa alok ng kumpanya sa naunang aralin; sa bagong sitwasyong ito, gagamitin niya ang parehong pag-unawa at malinaw na pakikipag-usap. Opsyonal ang kuwento; maaaring tapusin ang Read o Slides nang hindi nanonood.
 
 ## [know-responsibilities] Alamin ang tuntunin at tungkulin
 
@@ -18,13 +18,13 @@ Kung kailangan ng lokal na tala, ilagay lamang ang petsa, oras, lugar at tiyak n
 
 ## [protect-service] Unahin ang kailangan ng serbisyo
 
-May kasamahang nagsabing: “Bawasan na lang natin ang gamit sa shelf para makatipid.” Hindi ito ginagawa ni Mimi nang kusa. Maaaring kailangan ang mga gamit para sa serbisyo; hindi pareho ang napansing ilaw sa meeting area at pagpapasya kung aling supply ang babawasan.
+Sinabi ng isang kasamahan: “Bawasan na lang natin ang gamit sa shelf para makatipid.” Hindi ito ginagawa ni Mimi nang kusa. Maaaring kailangan ang mga gamit para sa serbisyo; hindi pareho ang napansing ilaw sa meeting area at pagpapasya kung aling supply ang babawasan.
 
 Sa meeting area, aalamin muna kung may susunod na gawain, kung may requirement sa lugar, at kung sino ang may responsibilidad sa closing procedure. Hindi siya nagkukumpuni ng kuryente, humahawak ng controls ng clinical equipment, nagre-reuse ng clinical supplies o nagrarasyon ng serbisyo. Kung may posibleng panganib, idulog ayon sa lokal na safety process; huwag subukang ayusin nang lampas sa pagsasanay. Kahit nonclinical ang halimbawa, hindi awtomatikong walang safety risk.
 
 ## [check-before-change] Makipag-ugnayan bago kumilos
 
-Sinabi ni Mimi sa kinumpirmang namamahala: “Napansin ko pong nakabukas ang ilaw at fan sa meeting area matapos ang meeting. May susunod po bang gagamit? Ano po ang closing rule, at sino ang responsable?” Ipinapaliwanag niya ang tiyak na obserbasyon at mga tanong, hindi nag-aanunsiyo ng ginawa nang pagbabago.
+Sinabi ni Mimi sa kinumpirmang namamahala: “Napansin ko pong nakabukas ang ilaw at fan sa meeting area matapos ang meeting. May susunod po bang gagamit? Ano po ang tuntunin sa pagsasara, at sino ang responsable?” Ipinapaliwanag niya ang tiyak na obserbasyon at mga tanong, hindi nag-aanunsiyo ng ginawa nang pagbabago.
 
 Sa halimbawa, pinagkasunduan nilang suriin muna ang schedule at umiiral na checklist kasama ang taong responsable. Itatala ni Mimi ang napagkasunduang unang hakbang kung kailangan sa lokal na proseso. Walang awtomatikong approval sa pagsara o pagbabawas. Kung hindi pa malinaw ang tuntunin o saklaw ng pahintulot, magpatulong bago magbago. Sa 1.3.5, gagawa ng isang detalyadong mungkahi; dito, mahalaga ang tamang unang pakikipag-ugnayan.
 
