@@ -2,6 +2,7 @@ import {BhsDeclineStory, calculateBhsDeclineMetadata, BHS_DECLINE_FPS, BHS_DECLI
 import {BhsPromotionsStory, calculateBhsPromotionsMetadata, BHS_PROMOTIONS_FPS, BHS_PROMOTIONS_FALLBACK_DURATION} from "./bhs-promotions/BhsPromotionsStory";
 import {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from "./uhc-local-system/LocalSystemStory";
 import "./index.css";
+import {EnvironmentStory, calculateEnvironmentMetadata, ENVIRONMENT_FPS, ENVIRONMENT_FALLBACK_DURATION} from "./bhs-support-environment/EnvironmentStory";
 import { ImprovementStory, calculateImprovementMetadata, UHC_IMPROVEMENT_FPS, UHC_IMPROVEMENT_FALLBACK_DURATION } from "./uhc-improvement/ImprovementStory";
 import { RolesApplicationStory, calculateRolesApplicationMetadata, ROLES_APPLICATION_FPS, ROLES_APPLICATION_FALLBACK_DURATION } from "./roles-application/RolesApplicationStory";
 import { Composition } from "remotion";
@@ -68,6 +69,12 @@ import {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhs-support-environment-${language}`} id={language === "fil" ? "BhsSupportEnvironmentStoryFil" : "BhsSupportEnvironmentStoryEn"}
+          component={EnvironmentStory} calculateMetadata={calculateEnvironmentMetadata}
+          durationInFrames={ENVIRONMENT_FALLBACK_DURATION} fps={ENVIRONMENT_FPS}
+          width={854} height={480} defaultProps={{language}} />
+      ))}
       <Composition
         id="RolesHepoStoryHil"
         component={RolesHepoStory}

@@ -5,32 +5,122 @@
       "m3.breastfeeding-act",
       "m3.plastics-ban"
     ],
-    "layout": "decision",
-    "heading_fil": "Pagsusulong sa breastfeeding at pagbabawal sa plastic",
-    "heading_en": "Promoting breastfeeding, and the ban on plastic",
-    "display_fil": "RA 10028: suporta sa breastfeeding at lactation facilities ayon sa tuntunin.\nDC 2021-0486: bawasan ang hindi kailangang single-use plastics.\nPanatilihin ang kinakailangang ligtas na clinical supplies.",
-    "display_en": "RA 10028: breastfeeding support and lactation facilities under its rules.\nDC 2021-0486: reduce unnecessary single-use plastics.\nRetain supplies necessary for safe clinical care.",
+    "layout": "scene",
+    "heading_fil": "Suportadong BHS",
+    "heading_en": "A supportive BHS",
+    "display_fil": "RA 10028: suporta sa breastfeeding.\nDC 2021-0486: hindi kailangang single-use plastic.\nMimi: makinig at tiyakin ang lokal na gabay.",
+    "display_en": "RA 10028: breastfeeding support.\nDC 2021-0486: unnecessary single-use plastic.\nMimi: listen and confirm local guidance.",
     "asset_ids": [
-      "practice-map"
+      "mimi-support-environment"
+    ],
+    "check": null,
+    "narration_fil": "Dumating sa barangay health station ang isang magulang na may kargang sanggol. “May makakausap po ba ako tungkol sa breastfeeding?” tanong niya kay BHW Mimi. Nakinig muna si Mimi.\n\nDalawang magkaibang polisiya ang mahalaga rito: suporta sa breastfeeding sa ilalim ng RA 10028, at pagbabawas ng hindi kailangang single-use plastic sa ilalim ng DOH DC 2021-0486. Magkaugnay ang mga ito sa isang magalang at ligtas na kapaligiran. Tutulong si Mimi na tiyakin ang lokal na suporta at ligtas na gawain, nang walang ipinapangakong serbisyong hindi pa nakumpirma.",
+    "narration_en": "A parent carrying an infant arrives at the barangay health station. “Is there someone I can talk to about breastfeeding?” the parent asks BHW Mimi. Mimi listens first.\n\nTwo distinct policies matter here: breastfeeding support under RA 10028, and reducing unnecessary single-use plastic under DOH DC 2021-0486. They meet in a respectful, safe environment. Mimi can help confirm local support and safe practices without promising a service that has not been verified."
+  },
+  {
+    "id": "slide-facility-roles",
+    "concept_ids": [
+      "m3.breastfeeding-act"
+    ],
+    "layout": "process",
+    "heading_fil": "Pasilidad at papel",
+    "heading_en": "Facilities and roles",
+    "display_fil": "Lactation station: pribado, malinis, maaliwalas; hindi toilet.\nInstitusyon: pagsunod sa tuntunin.\nBHW: kumpirmahin ang lugar at sinanay na contact.",
+    "display_en": "Lactation station: private, clean, ventilated; outside a toilet.\nInstitution: compliance with requirements.\nBHW: confirm the space and trained contact.",
+    "asset_ids": [
+      "mimi-support-environment"
+    ],
+    "check": null,
+    "narration_fil": "Pinalalakas ng RA 10028 ang suporta sa breastfeeding. Itinatakda nito ang lactation stations: pribado, malinis at maaliwalas na lugar para sa pagpapasuso o pag-express ng gatas. Hindi ito dapat nasa toilet. May mga tuntunin sa kagamitan at pasilidad; may pormal ding proseso para sa mga exemption.\n\nPananagutan ng institusyon ang pagsunod sa mga tuntunin. Hindi ang BHW ang nagpapasya sa exemption o nagtatatag mag-isa ng pasilidad. Itatanong ni Mimi sa midwife o supervisor: “Sino ang sinanay na makakausap, at anong angkop na lugar at gabay ang mayroon dito?” Kung may kulang, ipaaalam niya sa supervisor sa halip na mangako.",
+    "narration_en": "RA 10028 strengthens breastfeeding support. It requires lactation stations: private, clean and well-ventilated spaces for breastfeeding or expressing milk. A station must not be in a toilet. Equipment and facility requirements apply, and exemptions have a formal process.\n\nThe institution is responsible for complying with the requirements. A BHW does not decide an exemption or establish a facility alone. Mimi asks the midwife or supervisor: “Who is trained to help, and what suitable space and guidance are available here?” If something is missing, she raises it with the supervisor rather than making a promise."
+  },
+  {
+    "id": "slide-listen-connect",
+    "concept_ids": [
+      "m3.breastfeeding-act"
+    ],
+    "layout": "process",
+    "heading_fil": "Makinig at iugnay",
+    "heading_en": "Listen and connect",
+    "display_fil": "Tanungin ang pangangailangan at pahintulot.\nPangalagaan ang privacy at pagpili.\nKumpirmahin at iugnay ang sinanay na suporta.",
+    "display_en": "Ask about the request and permission.\nProtect privacy and choice.\nConfirm and connect to trained support.",
+    "asset_ids": [
+      "mimi-support-environment"
+    ],
+    "check": null,
+    "narration_fil": "“Ano po ang gusto ninyong itanong, at nais po ba ninyong makausap ang sinanay na tagasuporta?” mahinahong tanong ni Mimi. Iginagalang niya ang magulang at iniiwasang talakayin ang personal na concern sa harap ng ibang tao. Hindi niya ipinipilit ang isang feeding choice o pinapahiya ang magulang.\n\nKukumpirmahin niya kung sino ang makatutulong at kung saan maaaring mag-usap nang may privacy. Sa pahintulot ng magulang, tutulong siyang makaugnay sa sinanay na health worker ayon sa lokal na gabay. Hindi siya magbibigay ng diagnosis, paggamot o sariling clinical feeding instructions. Kung hindi pa alam ang sagot, sasabihin niyang aalamin niya sa health team.",
+    "narration_en": "“What would you like to ask, and would you like to speak with someone trained to support you?” Mimi asks calmly. She respects the parent and avoids discussing personal concerns in front of other people. She does not impose a feeding choice or shame the parent.\n\nShe confirms who can help and where a private conversation can take place. With the parent’s permission, she helps make the connection to a trained health worker under local guidance. She does not give a diagnosis, treatment or her own clinical feeding instructions. If the answer is not yet known, she says she will check with the health team."
+  },
+  {
+    "id": "slide-unnecessary-plastic",
+    "concept_ids": [
+      "m3.plastics-ban"
+    ],
+    "layout": "process",
+    "heading_fil": "Hindi kailangang plastic",
+    "heading_en": "Unnecessary plastic",
+    "display_fil": "Tinukoy na hindi kailangang single-use items.\nPhased policy: nagsimula noong 2022 at 2023.\nTiyakin ang kasalukuyang gabay ng pasilidad.",
+    "display_en": "Specified unnecessary single-use items.\nPhased policy: began in 2022 and 2023.\nConfirm current facility guidance.",
+    "asset_ids": [
+      "mimi-support-environment"
+    ],
+    "check": null,
+    "narration_fil": "Napansin din ni Mimi ang mga disposable na gamit sa lugar ng pahinga ng staff. Tungkol ang DOH DC 2021-0486 sa hindi kailangang single-use plastics sa mga ospital, ibang health facilities at DOH offices. Kabilang sa listahan nito ang manipis na plastic cups, drinking straws, coffee stirrers, plastic cutlery at ilang manipis na plastic bags.\n\nItinakda ng circular ang magkakasunod na yugto simula 2022 at 2023 para sa mga tinukoy na lugar at grupo. Hindi nito sinasabing ilegal ang lahat ng plastic sa lahat ng lugar. Titingnan ni Mimi ang kasalukuyang direktiba ng pasilidad kasama ang supervisor: ano ang hindi kailangang gamit, at anong ligtas na alternatibo ang pinapayagan?",
+    "narration_en": "Mimi also notices disposable items in the staff break area. DOH DC 2021-0486 addresses unnecessary single-use plastics in hospitals, other health facilities and DOH offices. Its list includes thin plastic cups, drinking straws, coffee stirrers, plastic cutlery and certain thin plastic bags.\n\nThe circular set successive phases beginning in 2022 and 2023 for specified settings and groups. It does not say that all plastic is illegal everywhere. Mimi checks the facility’s current directive with the supervisor: which items are unnecessary, and which safe alternatives are allowed?"
+  },
+  {
+    "id": "slide-safe-alternative",
+    "concept_ids": [
+      "m3.plastics-ban"
+    ],
+    "layout": "process",
+    "heading_fil": "Ligtas na alternatibo",
+    "heading_en": "A safe alternative",
+    "display_fil": "Halimbawa: reusable na lalagyan ng baon.\nSupervisor muna: pinapayagan at ligtas ba?\nClinical supplies at healthcare waste: gabay ng sinanay na staff.",
+    "display_en": "Example: a reusable lunch container.\nSupervisor first: is it allowed and safe?\nClinical supplies and healthcare waste: trained staff guidance.",
+    "asset_ids": [
+      "mimi-support-environment"
+    ],
+    "check": null,
+    "narration_fil": "Mungkahi ni Mimi: “Maaari po bang gumamit ng sariling reusable na lalagyan para sa baon sa staff break area, ayon sa gabay dito?” Isa itong non-clinical na halimbawa na kailangan munang kumpirmahin sa supervisor. Hindi ito mungkahing mag-reuse ng gamit na panggamot.\n\nIsinaalang-alang ng circular ang infection prevention at control sa phased implementation nito. Hindi dapat alisin o muling gamitin ng BHW nang mag-isa ang sterile o kinakailangang clinical supplies. Mananatili sa gabay ng sinanay na staff ang infection control at paghawak ng healthcare waste. Kung hindi tiyak kung ligtas ang isang pagbabago, magtanong muna. Hindi dapat manaig ang pagtitipid sa ligtas na pangangalaga.",
+    "narration_en": "Mimi suggests: “Could staff use their own reusable lunch containers in the break area, under the guidance here?” This is a non-clinical example that needs the supervisor’s confirmation. It is not a suggestion to reuse medical supplies.\n\nThe circular considered infection prevention and control in its phased implementation. A BHW must not independently remove or reuse sterile or necessary clinical supplies. Trained staff guidance governs infection control and handling healthcare waste. If the safety of a change is uncertain, ask first. Saving resources must not override safe care."
+  },
+  {
+    "id": "slide-check",
+    "concept_ids": [
+      "m3.breastfeeding-act",
+      "m3.plastics-ban"
+    ],
+    "layout": "decision",
+    "heading_fil": "Pasya ni Mimi",
+    "heading_en": "Mimi’s decision",
+    "display_fil": "Magulang: makinig at pangalagaan ang privacy.\nSuporta: kumpirmahin ang contact at lugar.\nBasura: supervisor muna; protektahan ang clinical supplies.",
+    "display_en": "Parent: listen and protect privacy.\nSupport: confirm the contact and space.\nWaste: supervisor first; protect clinical supplies.",
+    "asset_ids": [
+      "mimi-support-environment"
     ],
     "check": {
-      "prompt_fil": "Aling gawain ang angkop sa pasilidad?",
-      "prompt_en": "Which facility action is appropriate?",
+      "prompt_fil": "Ano ang pinakamainam na susunod na hakbang ni Mimi?",
+      "prompt_en": "What is Mimi’s best next step?",
       "options": [
         {
-          "fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya.",
-          "en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy."
+          "fil": "Makinig nang pribado at may paggalang; kumpirmahin ang sinanay na suporta at lugar, at itanong sa supervisor ang reusable na lalagyan sa break area habang pinoprotektahan ang clinical supplies.",
+          "en": "Listen privately and respectfully; confirm trained support and the space, and ask the supervisor about reusable containers in the break area while protecting clinical supplies."
         },
         {
-          "fil": "Alisin ang lahat ng sterile na gamit kahit kailangan sa ligtas na pangangalaga.",
-          "en": "Remove all sterile supplies even when necessary for safe care."
+          "fil": "Ipangako agad na may kumpletong lactation station at palaging available na tagasuporta, kahit hindi pa ito nakumpirma.",
+          "en": "Promise a fully equipped lactation station and an always-available support worker before confirming them."
+        },
+        {
+          "fil": "Pilitin ang feeding choice ng magulang para masabing nasunod ang polisiya, saka palitan nang kusa ang sterile na gamit ng reusable na kagamitan.",
+          "en": "Impose a feeding choice to show policy compliance, then independently replace sterile supplies with reusable items."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Suportahan ang breastfeeding at bawasan ang hindi kailangang single-use plastic ayon sa polisiya. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "Support breastfeeding and reduce unnecessary single-use plastic under facility policy. Explain why using the lesson situation."
+      "feedback_fil": "Ang unang sagot ay umaalalay nang may paggalang at kumpirmasyon: hindi pinipilit ang magulang, at hindi nangangako ng hindi pa tiyak na pasilidad o contact. Supervisor ang magpapatibay sa non-clinical na alternatibo. Hindi dahilan ang pagbabawas ng basura para alisin o i-reuse nang kusa ang sterile o kinakailangang clinical supplies.",
+      "feedback_en": "The first response supports the parent with respect and confirmation: it imposes no choice and promises no unverified facility or contact. The supervisor confirms the non-clinical alternative. Reducing waste is not a reason to independently remove or reuse sterile or necessary clinical supplies."
     },
-    "narration_fil": "Pinalalakas ng RA 10028 ang suporta sa breastfeeding, kasama ang lactation stations ayon sa mga tuntunin nito. Maaaring ituro ng BHW ang magulang sa sinanay na tagasuporta at tumulong sa magalang at suportadong kapaligiran. Tungkol ang DOH DC 2021-0486 sa phased restrictions sa hindi kailangang single-use plastics sa health facilities at DOH offices. Sundin ang gabay ng pasilidad sa ligtas na alternatibo. Huwag mag-alis nang mag-isa ng sterile o kinakailangang clinical supplies; hindi dapat makompromiso ang ligtas na pangangalaga sa pagbabawas ng basura.",
-    "narration_en": "RA 10028 strengthens breastfeeding support, including lactation stations under its requirements. A BHW can direct a parent to trained support and help maintain a respectful, supportive environment. DOH DC 2021-0486 concerns phased restrictions on unnecessary single-use plastics in health facilities and DOH offices. Follow facility guidance on safe alternatives. Do not remove sterile or otherwise necessary clinical supplies on your own; reducing unnecessary waste must not compromise safe care."
+    "narration_fil": "Nais ng magulang ng kausap tungkol sa breastfeeding, pero hindi pa kumpirmado ni Mimi ang contact o lugar. Nais din ng staff na mabawasan ang disposable na gamit sa kanilang break area.\n\nPipili si Mimi ng susunod na hakbang na may paggalang, lokal na kumpirmasyon at proteksiyon sa ligtas na pangangalaga. Unahin ang pakikinig at privacy; tiyakin ang sinanay na suporta at ang non-clinical na alternatibo kasama ang supervisor. Alin sa mga sagot ang maisasagawa niya nang hindi lumalampas sa kanyang papel?",
+    "narration_en": "The parent wants someone to talk to about breastfeeding, but Mimi has not yet confirmed the contact or space. Staff also want to reduce disposable items in their break area.\n\nMimi needs a next step that respects the parent, checks local arrangements and protects safe care. Start with listening and privacy; confirm trained support and the non-clinical alternative with the supervisor. Which response can she carry out within her role?"
   }
 ]

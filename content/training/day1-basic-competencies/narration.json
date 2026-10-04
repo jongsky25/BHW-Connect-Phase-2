@@ -9382,120 +9382,878 @@
     "bhs-support-environment": {
       "module": "03-polisiya-bhs",
       "sections": {
-        "section-3": {
+        "check": {
           "en": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.fc655dc3863e.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/check.en.657e24972ee0.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "fc655dc3863e2d525468a49ac0b87e43c497acc026f7c68907a773f7072f37ae",
-            "sha256": "247c79bedbb8b21fc8e2781d504c510f61b10004bd5e54635cb2e5cad1e21f0f",
-            "duration_seconds": 57.861,
+            "content_hash": "657e24972ee018f0f9a7646d966bd73f10080314a74cbd4fa0dd17b9d0459ffc",
+            "sha256": "189bb9a540b5599fabb678e1e5d35f728f64e2ed44e1147a2d2c4bdb85e2a511",
+            "duration_seconds": 40.751,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Promoting breastfeeding, and the ban on plastic",
+                "text": "Mimi’s decision",
                 "start_ms": 0,
-                "end_ms": 3720
+                "end_ms": 1800
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "RA 10028 strengthens breastfeeding support, including lactation stations under its requirements.",
-                "start_ms": 4020,
-                "end_ms": 12460
+                "text": "The parent wants someone to talk to about breastfeeding, but Mimi has not yet confirmed the contact or space.",
+                "start_ms": 2100,
+                "end_ms": 9740
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "A BHW can direct a parent to trained support and help maintain a respectful, supportive environment.",
-                "start_ms": 12760,
-                "end_ms": 20880
+                "text": "Staff also want to reduce disposable items in their break area.",
+                "start_ms": 10040,
+                "end_ms": 14480
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "DOH DC 2021-0486 concerns phased restrictions on unnecessary single-use plastics in health facilities and DOH offices.",
-                "start_ms": 21180,
-                "end_ms": 33340
+                "text": "Mimi needs a next step that respects the parent, checks local arrangements and protects safe care.",
+                "start_ms": 14780,
+                "end_ms": 21940
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Follow facility guidance on safe alternatives.",
-                "start_ms": 33640,
-                "end_ms": 37120
+                "text": "Start with listening and privacy; confirm trained support and the non-clinical alternative with the supervisor.",
+                "start_ms": 22240,
+                "end_ms": 29440
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Do not remove sterile or otherwise necessary clinical supplies on your own; reducing unnecessary waste must not compromise safe care.",
-                "start_ms": 37420,
-                "end_ms": 48100
+                "text": "Which response can she carry out within her role?",
+                "start_ms": 29740,
+                "end_ms": 33300
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "These policies aren't just about prohibition — they also expect active follow-through: promote breastfeeding, cut down on plastic.",
-                "start_ms": 48400,
-                "end_ms": 57800
+                "text": "Respectful support and safe waste reduction: listen, confirm, then help.",
+                "start_ms": 33600,
+                "end_ms": 40680
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.d384713ab75e.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/check.fil.d45fcac0dcaa.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "d384713ab75e3f150177baa2a401b953e3542eb31fb5da864fb662a912035107",
-            "sha256": "4ca084a3071b310a0198b8d5cac4524399e57df834b4bc404527f8f2a432a841",
-            "duration_seconds": 64.418,
+            "content_hash": "d45fcac0dcaa01495b39805c2035cbc9023303083159e4066c20950f1dcc2426",
+            "sha256": "4f4b63d94083550ce01c73ee48b3e434fe26309893b5c24ba171888a8d260591",
+            "duration_seconds": 47.673,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Pagsusulong sa breastfeeding at pagbabawal sa plastic",
+                "text": "Pasya ni Mimi",
                 "start_ms": 0,
-                "end_ms": 4600
+                "end_ms": 1720
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Pinalalakas ng RA 10028 ang suporta sa breastfeeding, kasama ang lactation stations ayon sa mga tuntunin nito.",
-                "start_ms": 4900,
-                "end_ms": 14460
+                "text": "Nais ng magulang ng kausap tungkol sa breastfeeding, pero hindi pa kumpirmado ni Mimi ang contact o lugar.",
+                "start_ms": 2020,
+                "end_ms": 9220
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Maaaring ituro ng BHW ang magulang sa sinanay na tagasuporta at tumulong sa magalang at suportadong kapaligiran.",
-                "start_ms": 14760,
-                "end_ms": 24040
+                "text": "Nais din ng staff na mabawasan ang disposable na gamit sa kanilang break area.",
+                "start_ms": 9520,
+                "end_ms": 14760
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Tungkol ang DOH DC 2021-0486 sa phased restrictions sa hindi kailangang single-use plastics sa health facilities at DOH offices.",
-                "start_ms": 24340,
-                "end_ms": 38380
+                "text": "Pipili si Mimi ng susunod na hakbang na may paggalang, lokal na kumpirmasyon at proteksiyon sa ligtas na pangangalaga.",
+                "start_ms": 15060,
+                "end_ms": 23860
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Sundin ang gabay ng pasilidad sa ligtas na alternatibo.",
-                "start_ms": 38680,
-                "end_ms": 42960
+                "text": "Unahin ang pakikinig at privacy; tiyakin ang sinanay na suporta at ang non-clinical na alternatibo kasama ang supervisor.",
+                "start_ms": 24160,
+                "end_ms": 33520
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Huwag mag-alis nang mag-isa ng sterile o kinakailangang clinical supplies; hindi dapat makompromiso ang ligtas na pangangalaga sa pagbabawas ng basura.",
-                "start_ms": 43260,
-                "end_ms": 54300
+                "text": "Alin sa mga sagot ang maisasagawa niya nang hindi lumalampas sa kanyang papel?",
+                "start_ms": 33820,
+                "end_ms": 39260
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang mga polisiyang ito ay hindi lang tungkol sa pagbabawal — may aktibong inaasahan din: isulong ang breastfeeding, bawasan ang plastic.",
-                "start_ms": 54600,
-                "end_ms": 64360
+                "text": "Magalang na suporta at ligtas na pagbabawas ng basura: makinig, kumpirmahin, saka umalalay.",
+                "start_ms": 39560,
+                "end_ms": 47600
+              }
+            ]
+          }
+        },
+        "facility-roles": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.en.aff4ba6a514f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "aff4ba6a514f2081dc32a48886bad907c0524de82bcab1e22721e69b721edd28",
+            "sha256": "bdf4507dee0c88cc0760db1e714bb54b29fffb9e6a23dabb2ae00d5644aca92d",
+            "duration_seconds": 59.481,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Facilities and roles",
+                "start_ms": 0,
+                "end_ms": 2120
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "RA 10028 strengthens breastfeeding support.",
+                "start_ms": 2420,
+                "end_ms": 6980
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "It requires lactation stations: private, clean and well-ventilated spaces for breastfeeding or expressing milk.",
+                "start_ms": 7280,
+                "end_ms": 15840
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "A station must not be in a toilet.",
+                "start_ms": 16140,
+                "end_ms": 19340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Equipment and facility requirements apply, and exemptions have a formal process.",
+                "start_ms": 19640,
+                "end_ms": 25480
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "The institution is responsible for complying with the requirements.",
+                "start_ms": 25780,
+                "end_ms": 30260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "A BHW does not decide an exemption or establish a facility alone.",
+                "start_ms": 30560,
+                "end_ms": 36760
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Mimi asks the midwife or supervisor: “Who is trained to help, and what suitable space and guidance are available here?”",
+                "start_ms": 37060,
+                "end_ms": 45220
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "If something is missing, she raises it with the supervisor rather than making a promise.",
+                "start_ms": 45520,
+                "end_ms": 51200
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "The institution is responsible for facilities; the BHW checks, supports and reports gaps.",
+                "start_ms": 51500,
+                "end_ms": 59420
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.fil.36f6d2e57883.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "36f6d2e57883cc6fda2913ecbb912c068af4f3278b91b56c67d75e18988e9d4e",
+            "sha256": "7f2dfa549d22d78be80b38d795ce526605b2a765e08b343f61cbd85339ac95b7",
+            "duration_seconds": 63.53,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Pasilidad at papel",
+                "start_ms": 0,
+                "end_ms": 2160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Pinalalakas ng RA 10028 ang suporta sa breastfeeding.",
+                "start_ms": 2460,
+                "end_ms": 7740
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Itinatakda nito ang lactation stations: pribado, malinis at maaliwalas na lugar para sa pagpapasuso o pag-express ng gatas.",
+                "start_ms": 8040,
+                "end_ms": 19040
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi ito dapat nasa toilet.",
+                "start_ms": 19340,
+                "end_ms": 21940
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "May mga tuntunin sa kagamitan at pasilidad; may pormal ding proseso para sa mga exemption.",
+                "start_ms": 22240,
+                "end_ms": 29160
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Pananagutan ng institusyon ang pagsunod sa mga tuntunin.",
+                "start_ms": 29460,
+                "end_ms": 33260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi ang BHW ang nagpapasya sa exemption o nagtatatag mag-isa ng pasilidad.",
+                "start_ms": 33560,
+                "end_ms": 39640
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Itatanong ni Mimi sa midwife o supervisor: “Sino ang sinanay na makakausap, at anong angkop na lugar at gabay ang mayroon dito?”",
+                "start_ms": 39940,
+                "end_ms": 49060
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Kung may kulang, ipaaalam niya sa supervisor sa halip na mangako.",
+                "start_ms": 49360,
+                "end_ms": 54000
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Institusyon ang responsable sa pasilidad; BHW ang nagtatanong, umaalalay at nag-uulat ng kakulangan.",
+                "start_ms": 54300,
+                "end_ms": 63460
+              }
+            ]
+          }
+        },
+        "listen-connect": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.en.ab196f75cb91.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ab196f75cb915d411c5d2519e578149e091b1474b459cfe6e70e6966f53d58b4",
+            "sha256": "d071e054869de3e5c6907386f1cf72dcdcc8b21f9dd80f2acc8af2eae4f6d6d5",
+            "duration_seconds": 51.122,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Listen and connect",
+                "start_ms": 0,
+                "end_ms": 2040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“What would you like to ask, and would you like to speak with someone trained to support you?”",
+                "start_ms": 2340,
+                "end_ms": 7620
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Mimi asks calmly.",
+                "start_ms": 7920,
+                "end_ms": 9840
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She respects the parent and avoids discussing personal concerns in front of other people.",
+                "start_ms": 10140,
+                "end_ms": 16380
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She does not impose a feeding choice or shame the parent.",
+                "start_ms": 16680,
+                "end_ms": 20800
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "She confirms who can help and where a private conversation can take place.",
+                "start_ms": 21100,
+                "end_ms": 26220
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "With the parent’s permission, she helps make the connection to a trained health worker under local guidance.",
+                "start_ms": 26520,
+                "end_ms": 32760
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "She does not give a diagnosis, treatment or her own clinical feeding instructions.",
+                "start_ms": 33060,
+                "end_ms": 39380
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "If the answer is not yet known, she says she will check with the health team.",
+                "start_ms": 39680,
+                "end_ms": 44200
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Listen respectfully, protect privacy, and connect to confirmed trained support.",
+                "start_ms": 44500,
+                "end_ms": 51060
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.fil.b9d21e4feb1c.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b9d21e4feb1c51a76d0bd1f9bc27eb70307f97efe25ca1e08105f4bc5908396c",
+            "sha256": "389911e40d4fd6ee10f1c37c2606ceffd631aecd898655a87a3d1d50e129ff9f",
+            "duration_seconds": 56.921,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Makinig at iugnay",
+                "start_ms": 0,
+                "end_ms": 1800
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“Ano po ang gusto ninyong itanong, at nais po ba ninyong makausap ang sinanay na tagasuporta?”",
+                "start_ms": 2100,
+                "end_ms": 8060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "mahinahong tanong ni Mimi.",
+                "start_ms": 8360,
+                "end_ms": 10440
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Iginagalang niya ang magulang at iniiwasang talakayin ang personal na concern sa harap ng ibang tao.",
+                "start_ms": 10740,
+                "end_ms": 17260
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Hindi niya ipinipilit ang isang feeding choice o pinapahiya ang magulang.",
+                "start_ms": 17560,
+                "end_ms": 22760
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Kukumpirmahin niya kung sino ang makatutulong at kung saan maaaring mag-usap nang may privacy.",
+                "start_ms": 23060,
+                "end_ms": 29580
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Sa pahintulot ng magulang, tutulong siyang makaugnay sa sinanay na health worker ayon sa lokal na gabay.",
+                "start_ms": 29880,
+                "end_ms": 36920
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi siya magbibigay ng diagnosis, paggamot o sariling clinical feeding instructions.",
+                "start_ms": 37220,
+                "end_ms": 44180
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Kung hindi pa alam ang sagot, sasabihin niyang aalamin niya sa health team.",
+                "start_ms": 44480,
+                "end_ms": 49080
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Makinig nang magalang, pangalagaan ang privacy, at iugnay sa nakumpirmang sinanay na suporta.",
+                "start_ms": 49380,
+                "end_ms": 56860
+              }
+            ]
+          }
+        },
+        "safe-alternative": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.en.356da90846a8.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "356da90846a863fcede81436a38596f49ae30ac4259d01d8d8afa061b27d44af",
+            "sha256": "3a38a7971a3b0522e29f0defce591cf40c8a372fbeadbc5907c44d94c20163ae",
+            "duration_seconds": 54.361,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "A safe alternative",
+                "start_ms": 0,
+                "end_ms": 1960
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mimi suggests: “Could staff use their own reusable lunch containers in the break area, under the guidance here?”",
+                "start_ms": 2260,
+                "end_ms": 9380
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "This is a non-clinical example that needs the supervisor’s confirmation.",
+                "start_ms": 9680,
+                "end_ms": 14440
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "It is not a suggestion to reuse medical supplies.",
+                "start_ms": 14740,
+                "end_ms": 18940
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "The circular considered infection prevention and control in its phased implementation.",
+                "start_ms": 19240,
+                "end_ms": 25520
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "A BHW must not independently remove or reuse sterile or necessary clinical supplies.",
+                "start_ms": 25820,
+                "end_ms": 33980
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Trained staff guidance governs infection control and handling healthcare waste.",
+                "start_ms": 34280,
+                "end_ms": 39800
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "If the safety of a change is uncertain, ask first.",
+                "start_ms": 40100,
+                "end_ms": 43780
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Saving resources must not override safe care.",
+                "start_ms": 44080,
+                "end_ms": 48200
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Confirm the non-clinical alternative; protect supplies needed for safe clinical care.",
+                "start_ms": 48500,
+                "end_ms": 54300
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.fil.08269badd990.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "08269badd990abf9b0dc0d86140822fa86c4cabd65506bf4632b64d9895a7357",
+            "sha256": "a918202523e1dd222d91d3002d34114dd776eef438d26f2faf7a04e7f4f2a042",
+            "duration_seconds": 63.843,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ligtas na alternatibo",
+                "start_ms": 0,
+                "end_ms": 2120
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mungkahi ni Mimi: “Maaari po bang gumamit ng sariling reusable na lalagyan para sa baon sa staff break area, ayon sa gabay dito?”",
+                "start_ms": 2420,
+                "end_ms": 13180
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Isa itong non-clinical na halimbawa na kailangan munang kumpirmahin sa supervisor.",
+                "start_ms": 13480,
+                "end_ms": 19080
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi ito mungkahing mag-reuse ng gamit na panggamot.",
+                "start_ms": 19380,
+                "end_ms": 23140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Isinaalang-alang ng circular ang infection prevention at control sa phased implementation nito.",
+                "start_ms": 23440,
+                "end_ms": 29840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi dapat alisin o muling gamitin ng BHW nang mag-isa ang sterile o kinakailangang clinical supplies.",
+                "start_ms": 30140,
+                "end_ms": 39100
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Mananatili sa gabay ng sinanay na staff ang infection control at paghawak ng healthcare waste.",
+                "start_ms": 39400,
+                "end_ms": 46160
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Kung hindi tiyak kung ligtas ang isang pagbabago, magtanong muna.",
+                "start_ms": 46460,
+                "end_ms": 50900
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi dapat manaig ang pagtitipid sa ligtas na pangangalaga.",
+                "start_ms": 51200,
+                "end_ms": 55280
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Kumpirmahin ang non-clinical na alternatibo; protektahan ang kinakailangang ligtas na clinical supplies.",
+                "start_ms": 55580,
+                "end_ms": 63780
+              }
+            ]
+          }
+        },
+        "section-3": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.712869b1d454.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "712869b1d454241662fe9956a100b020ffa056d841036471abeff21e5f58a4bf",
+            "sha256": "27175a5cb2d35da5f9258f43c3d9fe8d274b1662d17ab1bf97302e4954571417",
+            "duration_seconds": 52.376,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "A supportive BHS",
+                "start_ms": 0,
+                "end_ms": 2240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "A parent carrying an infant arrives at the barangay health station.",
+                "start_ms": 2540,
+                "end_ms": 6700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“Is there someone I can talk to about breastfeeding?”",
+                "start_ms": 7000,
+                "end_ms": 10520
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "the parent asks BHW Mimi.",
+                "start_ms": 10820,
+                "end_ms": 13820
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Mimi listens first.",
+                "start_ms": 14120,
+                "end_ms": 16280
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Two distinct policies matter here: breastfeeding support under RA 10028, and reducing unnecessary single-use plastic under DOH DC 2021-0486.",
+                "start_ms": 16580,
+                "end_ms": 32780
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "They meet in a respectful, safe environment.",
+                "start_ms": 33080,
+                "end_ms": 36480
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Mimi can help confirm local support and safe practices without promising a service that has not been verified.",
+                "start_ms": 36780,
+                "end_ms": 44580
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Two topics: respectful breastfeeding support and safe reduction of unnecessary waste.",
+                "start_ms": 44880,
+                "end_ms": 52320
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.aa1eff5fe4ff.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "aa1eff5fe4ffc49a7f51518ec22788877fb72f2d9c00b39a8597c4e0e5d48089",
+            "sha256": "1af67e1fabe430545b6f90433c3bcbb6c88eec2dadc3471bfee5d25b849e240b",
+            "duration_seconds": 55.301,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Suportadong BHS",
+                "start_ms": 0,
+                "end_ms": 2240
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Dumating sa barangay health station ang isang magulang na may kargang sanggol.",
+                "start_ms": 2540,
+                "end_ms": 7580
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "“May makakausap po ba ako tungkol sa breastfeeding?”",
+                "start_ms": 7880,
+                "end_ms": 11400
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "tanong niya kay BHW Mimi.",
+                "start_ms": 11700,
+                "end_ms": 14180
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Nakinig muna si Mimi.",
+                "start_ms": 14480,
+                "end_ms": 16400
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Dalawang magkaibang polisiya ang mahalaga rito: suporta sa breastfeeding sa ilalim ng RA 10028, at pagbabawas ng hindi kailangang single-use plastic sa ilalim ng DOH DC 2021-0486.",
+                "start_ms": 16700,
+                "end_ms": 32860
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Magkaugnay ang mga ito sa isang magalang at ligtas na kapaligiran.",
+                "start_ms": 33160,
+                "end_ms": 38480
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Tutulong si Mimi na tiyakin ang lokal na suporta at ligtas na gawain, nang walang ipinapangakong serbisyong hindi pa nakumpirma.",
+                "start_ms": 38780,
+                "end_ms": 47380
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Dalawang paksa: magalang na suporta sa breastfeeding at ligtas na pagbabawas ng hindi kailangang basura.",
+                "start_ms": 47680,
+                "end_ms": 55240
+              }
+            ]
+          }
+        },
+        "unnecessary-plastic": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.en.a9020183029f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "a9020183029f45ef871e1ec6c5361bb5878a5598338d9ae77453bf75daa9fd29",
+            "sha256": "887776dc4017eaba9bf0f585204546c6ed91c136543ee9533bbaf379da633283",
+            "duration_seconds": 59.873,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Unnecessary plastic",
+                "start_ms": 0,
+                "end_ms": 2280
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mimi also notices disposable items in the staff break area.",
+                "start_ms": 2580,
+                "end_ms": 7180
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "DOH DC 2021-0486 addresses unnecessary single-use plastics in hospitals, other health facilities and DOH offices.",
+                "start_ms": 7480,
+                "end_ms": 19680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Its list includes thin plastic cups, drinking straws, coffee stirrers, plastic cutlery and certain thin plastic bags.",
+                "start_ms": 19980,
+                "end_ms": 30020
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "The circular set successive phases beginning in 2022 and 2023 for specified settings and groups.",
+                "start_ms": 30320,
+                "end_ms": 39120
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "It does not say that all plastic is illegal everywhere.",
+                "start_ms": 39420,
+                "end_ms": 43620
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Mimi checks the facility’s current directive with the supervisor: which items are unnecessary, and which safe alternatives are allowed?",
+                "start_ms": 43920,
+                "end_ms": 52600
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Check the scope and current directive; this lesson does not treat every plastic item as banned.",
+                "start_ms": 52900,
+                "end_ms": 59820
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.fil.4ce153b289f6.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "4ce153b289f6a00da5954cbde3744a79c3e72494dec1bd85046ffb57fbc0062e",
+            "sha256": "25f1af2047f1fda75d483324af5612edb5cce9a7435d196fc0eeec022687b40d",
+            "duration_seconds": 63.843,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Hindi kailangang plastic",
+                "start_ms": 0,
+                "end_ms": 2120
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Napansin din ni Mimi ang mga disposable na gamit sa lugar ng pahinga ng staff.",
+                "start_ms": 2420,
+                "end_ms": 7700
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Tungkol ang DOH DC 2021-0486 sa hindi kailangang single-use plastics sa mga ospital, ibang health facilities at DOH offices.",
+                "start_ms": 8000,
+                "end_ms": 20200
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Kabilang sa listahan nito ang manipis na plastic cups, drinking straws, coffee stirrers, plastic cutlery at ilang manipis na plastic bags.",
+                "start_ms": 20500,
+                "end_ms": 30620
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Itinakda ng circular ang magkakasunod na yugto simula 2022 at 2023 para sa mga tinukoy na lugar at grupo.",
+                "start_ms": 30920,
+                "end_ms": 39600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi nito sinasabing ilegal ang lahat ng plastic sa lahat ng lugar.",
+                "start_ms": 39900,
+                "end_ms": 44220
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Titingnan ni Mimi ang kasalukuyang direktiba ng pasilidad kasama ang supervisor: ano ang hindi kailangang gamit, at anong ligtas na alternatibo ang pinapayagan?",
+                "start_ms": 44520,
+                "end_ms": 55480
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin ang saklaw at kasalukuyang direktiba; hindi blanket ban sa lahat ng plastic ang aralin.",
+                "start_ms": 55780,
+                "end_ms": 63780
               }
             ]
           }

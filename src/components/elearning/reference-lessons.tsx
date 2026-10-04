@@ -249,6 +249,12 @@ export function ReferenceLessons(props: Props) {
           }
       : lesson?.lesson_key === "bhs-decline"
         ? {src: "/training/bhw-1-3/mimi-respectful-refusal-7f71c23bc4bb.png", alt: ui("Malinaw at magalang na tumatanggi si Mimi sa alok.", "Mimi clearly and respectfully declines the offer."), caption: ui("Tumanggi · Ipaliwanag · Iulat", "Decline · Explain · Report")}
+      : lesson?.lesson_key === "bhs-support-environment"
+        ? {
+            src: "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
+            alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
+            caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
+          }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
@@ -415,6 +421,9 @@ export function ReferenceLessons(props: Props) {
     );
   }
   function openReader() {
+    if (lesson?.lesson_key === "bhs-support-environment") {
+      setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
+    }
     setReaderOpen(true);
     setOrientationHelp(false);
     readerDialog.current?.showModal();
@@ -588,7 +597,7 @@ export function ReferenceLessons(props: Props) {
       </nav>
   );
   const videoContent = featuredVideo && lesson && (
-    <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
+    <div className="reference-story-player rounded-xl border border-ink/15 p-4 sm:p-6" data-lesson={lesson.lesson_key}>
       <p className="mb-1 text-sm font-semibold">{narratedStory ? videoLabel : ui("Panoorin", "Watch")}</p>
       {narratedStory && <p className="text-sm">
         {ui("Pindutin ang Play para marinig ang salaysay sa napiling wika.", "Press Play to hear the story in your selected language.")}

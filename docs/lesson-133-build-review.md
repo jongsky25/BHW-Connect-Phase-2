@@ -31,3 +31,8 @@ Model-mediated audio review uses actual bytes, with speech throughout and no cli
 Default and explicit Gemini narration reruns select twelve current tracks and render zero. Current sibling narration entries match released main; historical media and exact-text lookup are retained. No learner-progress or publication writes.
 
 Final reviewed-head CI, normal Linux production build/E2E, both full-library Remotion shards/artifact integrity and scoped Linux loader dry-run are recorded in the self-contained package’s final-reviewed-head-verification.json and PR checks. This external evidence binds to the final commit without recursively changing its hash. All must pass before presenting the complete package. New media remain draft; prior 1.3.1 approval does not approve this new 1.3.3 package. Authenticated production playback/resume/completion was not tested. Publication awaits approval of this package, then fresh release checks and one-lesson deployment/publication verification.
+
+
+## Owner approval and release reconciliation
+
+On 4 October 2026 (Asia/Manila), the owner approved the completed 1.3.3 package and instructed “approved. merge and deploy to live”. Approval binds to the reviewed head/media in lesson-133-owner-approval.json. Shared helper/viewer/CSS conflicts with the 1.3.2 release are resolved additively, preserving both lessons. Reviewed media are unchanged; only approval metadata and reconciliation change source. Earlier draft status/limits above describe the review snapshot. Fresh final-head CI/E2E, both full-library Remotion artifacts and Linux one-lesson dry run are required before merge; exact READY production before bhs-decline publication. Final evidence is recorded externally in the release report.
