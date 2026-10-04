@@ -1,0 +1,50 @@
+name: Lesson 1.2.3 draft translation audio
+
+on:
+  push:
+    branches: [codex/lesson-123-translations]
+    paths:
+      - .github/workflows/lesson123-translation-audio.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lesson123-translation-audio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  draft-audio:
+    if: github.ref == 'refs/heads/codex/lesson-123-translations'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ceb, hil]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Generate six complete Read tracks and a six-beat draft story
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-translation-narrate.mjs --lesson 1.2.3 --language ${{ matrix.language }} --apply
+      - name: Save narration and completed partial tracks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lesson123-translation-audio-${{ matrix.language }}
+          retention-days: 14
+          path: |
+            content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/media.${{ matrix.language }}.json
+            content/training/day1-basic-competencies/modules/02-uhc-act/lessons/uhc-local-system/pilot.${{ matrix.language }}.json
+            public/training/audio/02-uhc-act/uhc-local-system/*.${{ matrix.language }}.*.mp3
+            remotion/public/uhc-local-system/narration-${{ matrix.language }}.*
+            .preview/*-tts-cache/
+          include-hidden-files: true
+          if-no-files-found: error

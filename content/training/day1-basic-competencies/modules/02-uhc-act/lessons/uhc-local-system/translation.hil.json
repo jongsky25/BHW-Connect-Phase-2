@@ -1,0 +1,236 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "draft",
+  "lesson_key": "uhc-local-system",
+  "title": "Health board kag pagpauswag sang panglawas",
+  "objectives": [
+    "Mapaathag kag magamit sa isa ka sitwasyon: health board kag pagpauswag sang panglawas."
+  ],
+  "read_sections": [
+    {
+      "id": "section-5",
+      "takeaway": "Pamati, kilalaha ang pamangkot, kag usisaa kon sin-o ang makakumpirma sang impormasyon.",
+      "check": null
+    },
+    {
+      "id": "local-system-board",
+      "takeaway": "Hangpa ang papel sang board; kumpirmaha ang lokal nga proseso sang pagpakig-angot.",
+      "check": null
+    },
+    {
+      "id": "local-system-observation",
+      "takeaway": "Ipaambit ang bastante kag aktuwal nga obserbasyon, protektahi ang personal nga mga detalye, kag maghatag sang tiyak nga pamangkot.",
+      "check": null
+    },
+    {
+      "id": "local-system-promotion",
+      "takeaway": "Pamati sa kinahanglanon, usisaa ang mensahe, kag usisaa ang paghangop.",
+      "check": null
+    },
+    {
+      "id": "local-system-feedback",
+      "takeaway": "Magpraktis upod sa team, kilalaha kon sin-o ang makadesisyon, kag sundi ang ginkasugtan nga tikang.",
+      "check": null
+    },
+    {
+      "id": "local-system-check",
+      "takeaway": "Ang BHW nagaamot sang obserbasyon, husto nga mensahe, contact nga nakumpirma sa lokal nga lugar, kag follow-up.",
+      "check": {
+        "prompt": "Sulitsulit nga nagapamangkot ang mga residente parte sa nagakalainlain nga impormasyon sa aktibidad sa panglawas. Ano ang pinakamainam nga una nga sabat sang BHW?",
+        "options": [
+          "Isumada ang sulitsulit nga pamangkot nga wala sang personal nga mga detalye; pamangkuta ang nagakaigo nga contact sa health team kon sin-o ang makakumpirma kag paano ipaabot ang panugyan.",
+          "Maghimo dayon sang bag-o nga patakaran kag ipahibalo nga naaprubahan na ini sang health board.",
+          "I-post ang mga ngalan kag pribado nga pag-istoryahanay sang mga residente agod matalupangdan ang problema.",
+          "Magsaad nga ang tagsa ka pamangkot magaagi sa midwife, health office kag health board bisan wala pa mausisa ang lokal nga proseso."
+        ],
+        "feedback": "Husto ang una nga pilian: bastante kag aktuwal nga obserbasyon kag tiyak nga pamangkot para sa lokal nga health team. Indi ang BHW ang maghimo sang patakaran ukon magpahibalo sang desisyon nga wala pa maaprubahan. Indi kinahanglan sa sini nga sumada ang personal nga mga detalye. Indi magsaad sang isa ka ruta pakadto sa board nga para sa tanan; kumpirmaha kon sin-o ang magbaton sang kabalaka kag paano ang follow-up."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide-section-5",
+      "heading": "Sulitsulit nga pamangkot sa barangay",
+      "display": "Ernesto kag iban nga residente: nagakalainlain nga impormasyon.\nVlanche: pamati kag kilalaha ang sulitsulit nga pamangkot.\nHealth board, kahanas kag pagpauswag sang panglawas: naangot, lain ang mga papel.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-board",
+      "heading": "Health board kag health team: lain nga mga papel",
+      "display": "UHC boards: pagdumala kag pagkoordinar sang paghiusa.\nLocal boards: mga katungdanan sa layi sa ila tagsa ka lebel.\nBHW: kumpirmaha ang lokal nga contact kag proseso.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-observation",
+      "heading": "Maathag kag maampingon nga obserbasyon",
+      "display": "Naobserbahan: sulitsulit nga pamangkot.\nWala pa masiguro: kasamtangan nga mga detalye.\nPamangkot: sin-o ang makakumpirma kag magbaton sang panugyan?",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-promotion",
+      "heading": "Pagpauswag sang panglawas nga nagasabat sa pamangkot",
+      "display": "HEPO: husto nga impormasyon kag pagpakigbahin.\nUsisaa sa health team ang kasamtangan nga materyal.\nIpaathag sing simple; usisaa ang paghangop.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-feedback",
+      "heading": "Kahanas, panugyan kag follow-up",
+      "display": "Magpraktis: sumada kag tiyak nga pamangkot.\nMamangkot: sin-o ang makadesisyon kag paano mabaton ang sabat?\nFollow-up: ipaambit ang nakumpirma nga impormasyon.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-check",
+      "heading": "Ikaw naman: ano ang imo ipaabot?",
+      "display": "Nagakalainlain nga impormasyon; wala pa makumpirma ang mga detalye.\nAno ang maathag kag maampingon nga sumada?\nAno nga tiyak nga pamangkot ang imo ihatag sa lokal nga team?",
+      "check": {
+        "prompt": "Sulitsulit nga nagapamangkot ang mga residente parte sa nagakalainlain nga impormasyon sa aktibidad sa panglawas. Ano ang pinakamainam nga una nga sabat sang BHW?",
+        "options": [
+          "Isumada ang sulitsulit nga pamangkot nga wala sang personal nga mga detalye; pamangkuta ang nagakaigo nga contact sa health team kon sin-o ang makakumpirma kag paano ipaabot ang panugyan.",
+          "Maghimo dayon sang bag-o nga patakaran kag ipahibalo nga naaprubahan na ini sang health board.",
+          "I-post ang mga ngalan kag pribado nga pag-istoryahanay sang mga residente agod matalupangdan ang problema.",
+          "Magsaad nga ang tagsa ka pamangkot magaagi sa midwife, health office kag health board bisan wala pa mausisa ang lokal nga proseso."
+        ],
+        "feedback": "Husto ang una nga pilian: bastante kag aktuwal nga obserbasyon kag tiyak nga pamangkot para sa lokal nga health team. Indi ang BHW ang maghimo sang patakaran ukon magpahibalo sang desisyon nga wala pa maaprubahan. Indi kinahanglan sa sini nga sumada ang personal nga mga detalye. Indi magsaad sang isa ka ruta pakadto sa board nga para sa tanan; kumpirmaha kon sin-o ang magbaton sang kabalaka kag paano ang follow-up."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "local-system-observation-art",
+      "alt": "Ginahisgutan nila BHW Vlanche, Mang Ernesto kag sang midwife ang sulitsulit nga mga pamangkot sang mga residente gamit ang blangko nga tala sa BHS.",
+      "caption": "Aktuwal nga obserbasyon kag pamangkot para sa health team. Hinimo nga laragway."
+    },
+    {
+      "id": "local-system-story",
+      "alt": "Sugilanon nga may salaysay: halin sa pamangkot sang residente pakadto sa lokal nga sabat.",
+      "caption": "Anom ka hinimo nga tagpo nga may Gemini nga salaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Ginahisgutan nila BHW Vlanche, Mang Ernesto kag sang midwife ang sulitsulit nga mga pamangkot sang mga residente gamit ang blangko nga tala sa BHS.",
+    "caption": "Aktuwal nga obserbasyon kag pamangkot para sa health team. Hinimo nga laragway."
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Nagapamangkot si Mang Ernesto kay BHW Vlanche kon diin makumpirma ang impormasyon parte sa aktibidad sa panglawas sa barangay. Nabatian man ni Vlanche ang pareho nga pamangkot halin sa iban. Nagapamati siya anay.",
+      "title": "Sulitsulit nga pamangkot",
+      "detail": "Pamati. Kilalaha ang wala pa masiguro."
+    },
+    {
+      "id": "roles",
+      "text": "Ang Provincial kag City Health Boards nagadumala sang paghiusa sang mga serbisyo sa idalom sang UHC. Indi awtomatikong miyembro ang BHW. Pamangkuton ni Vlanche ang health team sang nagakaigo nga lokal nga contact.",
+      "title": "Lain nga mga papel",
+      "detail": "Board: paghiusa. BHW: obserbasyon kag koordinasyon."
+    },
+    {
+      "id": "observation",
+      "text": "Isumada ni Vlanche: sulitsulit ang pamangkot sang mga residente, nagakalainlain ang ila nabatian nga impormasyon, kag kinahanglan pa kumpirmahon ang mga detalye. Indi kinahanglan sa sumada ang mga ngalan ukon personal nga mga detalye.",
+      "title": "Aktuwal nga obserbasyon",
+      "detail": "Naobserbahan · wala pa masiguro · pamangkot"
+    },
+    {
+      "id": "promotion",
+      "text": "Bilang barangay-level HEPO, usisaon ni Vlanche ang mensahe upod sa health team. Ipaathag niya ini sing simple, agdahon ang mga pamangkot, kag usisaon ang paghangop sang residente.",
+      "title": "Husto nga mensahe",
+      "detail": "Usisaa · ipaathag · usisaa ang paghangop"
+    },
+    {
+      "id": "discussion",
+      "text": "Magpraktis si Vlanche sang iya sumada upod sa midwife. Magapamangkot siya kon sin-o ang makakumpirma, sin-o ang magbaton sang panugyan, kag sin-o ang makadesisyon. Indi siya magsaad nga naaprubahan na ang ideya.",
+      "title": "Hisguti upod sa team",
+      "detail": "Tiyak nga pamangkot. Maathag nga dulunan."
+    },
+    {
+      "id": "feedback",
+      "text": "Magakasugot sila kon san-o kag paano ang follow-up. Ang nakumpirma nga sabat lamang ang ipaabot ni Vlanche. Ang iya maamot: obserbasyon, husto nga mensahe, lokal nga koordinasyon, kag pagsunod sa ginkasugtan nga tikang.",
+      "title": "Sunda ang ginkasugtan",
+      "detail": "Obserbasyon · mensahe · follow-up"
+    }
+  ],
+  "scene_labels": {
+    "eyebrow": "KOMUNIDAD KAG HEALTH TEAM",
+    "roles": [
+      "Board: paghiusa",
+      "Team: lokal nga proseso",
+      "BHW: maamot"
+    ],
+    "observation": [
+      "Naobserbahan",
+      "Wala pa masiguro",
+      "Wala personal nga detalye"
+    ],
+    "promotion": [
+      "Usisaa sa team",
+      "Ipaathag sing simple",
+      "Usisaa ang paghangop"
+    ],
+    "discussion": [
+      "Sin-o ang contact?",
+      "Sin-o ang makadesisyon?",
+      "Paano mabaton ang sabat?"
+    ],
+    "summary": [
+      "Obserbasyon",
+      "Mensahe",
+      "Follow-up"
+    ]
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  }
+}

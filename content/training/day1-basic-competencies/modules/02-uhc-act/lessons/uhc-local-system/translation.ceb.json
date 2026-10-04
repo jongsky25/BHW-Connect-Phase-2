@@ -1,0 +1,235 @@
+{
+  "language": "ceb",
+  "label": "Bisaya (Cebuano)",
+  "review_status": "draft",
+  "lesson_key": "uhc-local-system",
+  "title": "Health board ug pagpalambo sa panglawas",
+  "objectives": [
+    "Mapasabot ug magamit sa usa ka sitwasyon: health board ug pagpalambo sa panglawas."
+  ],
+  "read_sections": [
+    {
+      "id": "section-5",
+      "takeaway": "Paminaw, ilha ang pangutana, ug susiha kon kinsa ang makakumpirma sa impormasyon.",
+      "check": null
+    },
+    {
+      "id": "local-system-board",
+      "takeaway": "Sabta ang tahas sa board; kumpirmaha ang lokal nga proseso sa pagpakig-ugnayan.",
+      "check": null
+    },
+    {
+      "id": "local-system-observation",
+      "takeaway": "Ipaambit ang igo ug aktuwal nga obserbasyon, panalipdi ang personal nga mga detalye, ug paghatag og tino nga pangutana.",
+      "check": null
+    },
+    {
+      "id": "local-system-promotion",
+      "takeaway": "Paminaw sa panginahanglan, susiha ang mensahe, ug susiha ang pagsabot.",
+      "check": null
+    },
+    {
+      "id": "local-system-feedback",
+      "takeaway": "Pagpraktis uban sa team, ilha kon kinsa ang makadesisyon, ug sundi ang gikasabotang lakang.",
+      "check": null
+    },
+    {
+      "id": "local-system-check",
+      "takeaway": "Ang BHW motampo og obserbasyon, hustong mensahe, contact nga nakumpirma sa lokal nga lugar, ug follow-up.",
+      "check": {
+        "prompt": "Balikbalik nga nangutana ang mga residente bahin sa nagkalahi nga impormasyon sa kalihokan sa panglawas. Unsa ang labing angay nga unang tubag sa BHW?",
+        "options": [
+          "Isumada ang balikbalik nga pangutana nga walay personal nga mga detalye; pangutan-a ang angay nga contact sa health team kon kinsa ang makakumpirma ug unsaon pagpaabot sa sugyot.",
+          "Paghimo dayon og bag-ong patakaran ug ipahibalo nga giaprobahan na kini sa health board.",
+          "I-post ang mga ngalan ug pribadong panag-istorya sa mga residente aron matagad ang problema.",
+          "Isaad nga ang matag pangutana moagi sa midwife, health office ug health board bisan wala pa susiha ang lokal nga proseso."
+        ],
+        "feedback": "Husto ang unang kapilian: igo ug aktuwal nga obserbasyon ug tino nga pangutana alang sa lokal nga health team. Dili ang BHW ang maghimo og patakaran o mopahibalo og desisyon nga wala pa maaprobahi. Dili kinahanglan sa kining sumada ang personal nga mga detalye. Ayaw pagsaad og usa ka ruta ngadto sa board nga para sa tanan; kumpirmaha kon kinsa ang modawat sa kabalaka ug unsaon ang follow-up."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide-section-5",
+      "heading": "Balikbalik nga pangutana sa barangay",
+      "display": "Ernesto ug ubang residente: nagkalahi nga impormasyon.\nVlanche: paminaw ug ilha ang balikbalik nga pangutana.\nHealth board, kahanas ug pagpalambo sa panglawas: konektado, lahi ang mga tahas.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-board",
+      "heading": "Health board ug health team: lahi nga mga tahas",
+      "display": "UHC boards: pagdumala ug pagkoordinar sa paghiusa.\nLocal boards: mga tahas sa balaod sa ilang tagsa ka lebel.\nBHW: kumpirmaha ang lokal nga contact ug proseso.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-observation",
+      "heading": "Tin-aw ug maampingong obserbasyon",
+      "display": "Naobserbahan: balikbalik nga pangutana.\nWala pa masiguro: kasamtangang mga detalye.\nPangutana: kinsa ang makakumpirma ug modawat sa sugyot?",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-promotion",
+      "heading": "Pagpalambo sa panglawas nga motubag sa pangutana",
+      "display": "HEPO: hustong impormasyon ug pag-apil.\nSusiha sa health team ang kasamtangang materyal.\nIpasabot sa yano; susiha ang pagsabot.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-feedback",
+      "heading": "Kahanas, sugyot ug follow-up",
+      "display": "Pagpraktis: sumada ug tino nga pangutana.\nPangutana: kinsa ang makadesisyon ug unsaon pagdawat sa tubag?\nFollow-up: ipaambit ang nakumpirmang impormasyon.",
+      "check": null
+    },
+    {
+      "id": "slide-local-system-check",
+      "heading": "Imong higayon: unsa ang imong ipaabot?",
+      "display": "Nagkalahi nga impormasyon; wala pa makumpirma ang mga detalye.\nUnsa ang tin-aw ug maampingong sumada?\nUnsang tino nga pangutana ang imong ihatag sa lokal nga team?",
+      "check": {
+        "prompt": "Balikbalik nga nangutana ang mga residente bahin sa nagkalahi nga impormasyon sa kalihokan sa panglawas. Unsa ang labing angay nga unang tubag sa BHW?",
+        "options": [
+          "Isumada ang balikbalik nga pangutana nga walay personal nga mga detalye; pangutan-a ang angay nga contact sa health team kon kinsa ang makakumpirma ug unsaon pagpaabot sa sugyot.",
+          "Paghimo dayon og bag-ong patakaran ug ipahibalo nga giaprobahan na kini sa health board.",
+          "I-post ang mga ngalan ug pribadong panag-istorya sa mga residente aron matagad ang problema.",
+          "Isaad nga ang matag pangutana moagi sa midwife, health office ug health board bisan wala pa susiha ang lokal nga proseso."
+        ],
+        "feedback": "Husto ang unang kapilian: igo ug aktuwal nga obserbasyon ug tino nga pangutana alang sa lokal nga health team. Dili ang BHW ang maghimo og patakaran o mopahibalo og desisyon nga wala pa maaprobahi. Dili kinahanglan sa kining sumada ang personal nga mga detalye. Ayaw pagsaad og usa ka ruta ngadto sa board nga para sa tanan; kumpirmaha kon kinsa ang modawat sa kabalaka ug unsaon ang follow-up."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "local-system-observation-art",
+      "alt": "Gihisgotan nina BHW Vlanche, Mang Ernesto ug sa midwife ang balikbalik nga mga pangutana sa mga residente gamit ang blangkong tala sa BHS.",
+      "caption": "Aktuwal nga obserbasyon ug pangutana alang sa health team. Hinimo nga hulagway."
+    },
+    {
+      "id": "local-system-story",
+      "alt": "Sugilanon nga adunay salaysay: gikan sa pangutana sa residente ngadto sa lokal nga tubag.",
+      "caption": "Unom ka hinimo nga tagpo nga adunay Gemini nga salaysay ug mga caption sa Bisaya (Cebuano)."
+    }
+  ],
+  "story_art": {
+    "alt": "Gihisgotan nina BHW Vlanche, Mang Ernesto ug sa midwife ang balikbalik nga mga pangutana sa mga residente gamit ang blangkong tala sa BHS.",
+    "caption": "Aktuwal nga obserbasyon ug pangutana alang sa health team. Hinimo nga hulagway."
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Nangutana si Mang Ernesto kang BHW Vlanche kon asa makumpirma ang impormasyon bahin sa kalihokan sa panglawas sa barangay. Nadungog usab ni Vlanche ang susamang pangutana gikan sa uban. Maminaw siya una.",
+      "title": "Balikbalik nga pangutana",
+      "detail": "Paminaw. Ilha ang wala pa masiguro."
+    },
+    {
+      "id": "roles",
+      "text": "Ang Provincial ug City Health Boards nagdumala sa paghiusa sa mga serbisyo ubos sa UHC. Dili awtomatikong miyembro ang BHW. Pangutan-on ni Vlanche ang health team sa angay nga lokal nga contact.",
+      "title": "Lahi nga mga tahas",
+      "detail": "Board: paghiusa. BHW: obserbasyon ug koordinasyon."
+    },
+    {
+      "id": "observation",
+      "text": "Isumada ni Vlanche: balikbalik ang pangutana sa mga residente, nagkalahi ang ilang nadungog nga impormasyon, ug kinahanglan pa kumpirmahon ang mga detalye. Dili kinahanglan sa sumada ang mga ngalan o personal nga mga detalye.",
+      "title": "Aktuwal nga obserbasyon",
+      "detail": "Naobserbahan · wala pa masiguro · pangutana"
+    },
+    {
+      "id": "promotion",
+      "text": "Isip barangay-level HEPO, susihon ni Vlanche ang mensahe uban sa health team. Ipasabot niya kini sa yano, dapiton ang mga pangutana, ug susihon ang pagsabot sa residente.",
+      "title": "Hustong mensahe",
+      "detail": "Susiha · ipasabot · susiha ang pagsabot"
+    },
+    {
+      "id": "discussion",
+      "text": "Magpraktis si Vlanche sa iyang sumada uban sa midwife. Mangutana siya kon kinsa ang makakumpirma, kinsa ang modawat sa sugyot, ug kinsa ang makadesisyon. Dili siya mosaad nga giaprobahan na ang ideya.",
+      "title": "Hisgoti uban sa team",
+      "detail": "Tino nga pangutana. Tin-aw nga utlanan."
+    },
+    {
+      "id": "feedback",
+      "text": "Magkasabot sila kon kanus-a ug unsaon ang follow-up. Ang nakumpirmang tubag lamang ang ipaabot ni Vlanche. Ang iyang ikatampo: obserbasyon, hustong mensahe, lokal nga koordinasyon, ug pagsunod sa gikasabotang lakang.",
+      "title": "Sunda ang gikasabotan",
+      "detail": "Obserbasyon · mensahe · follow-up"
+    }
+  ],
+  "scene_labels": {
+    "eyebrow": "KOMUNIDAD UG HEALTH TEAM",
+    "roles": [
+      "Board: paghiusa",
+      "Team: lokal nga proseso",
+      "BHW: ikatampo"
+    ],
+    "observation": [
+      "Naobserbahan",
+      "Wala pa masiguro",
+      "Walay personal nga detalye"
+    ],
+    "promotion": [
+      "Susiha sa team",
+      "Ipasabot sa yano",
+      "Susiha ang pagsabot"
+    ],
+    "discussion": [
+      "Kinsa ang contact?",
+      "Kinsa ang makadesisyon?",
+      "Unsaon pagdawat sa tubag?"
+    ],
+    "summary": [
+      "Obserbasyon",
+      "Mensahe",
+      "Follow-up"
+    ]
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanong adunay salaysay",
+    "Buong screen": "Tibuok screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Gibanabanang 3–7 ka minuto alang sa kaugalingong pagtuon; lahi ang pagpraktis uban sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animadong sugilanon nga adunay salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pislita ang Play aron madungog ang salaysay sa piniling pinulongan.",
+    "Pumili ng sagot": "Pagpili og tubag",
+    "Tama!": "Sakto!",
+    "Hindi pa tama. Subukang muli.": "Dili pa sakto. Sulayi pag-usab.",
+    "Nakaraan": "Miaging bahin",
+    "Susunod": "Sunod nga bahin",
+    "Puwesto sa aralin": "Bahin sa leksiyon",
+    "Uri ng nilalaman": "Matang sa sulod",
+    "Pakinggan ang bahaging ito": "Paminawa kining bahina",
+    "Pakinggan": "Paminawa",
+    "I-pause": "Hunonga kadiyot",
+    "Bilis": "Kapaspas",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Dili mapatukar ang audio. Basaha una ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Tubaga una ang pangutana aron mapaminaw ang audio nga adunay sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo na nimong markahan nga nahuman ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Humanon ang mga bahin ug tubagon ang matag pangutana sa Basaha o Mga slide. Dili kinahanglan nga sakto ang unang tubag. Kon i-reload, tubaga pag-usab ang mga pangutana.",
+    "Natapos": "Nahuman",
+    "Markahang tapos ang aralin": "Markahi nga nahuman ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Nahuman nimo ang leksiyon. Na-save ang imong progreso.",
+    "Susunod na aralin →": "Sunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sa mga leksiyon →",
+    "Nakaraang aralin": "Miaging leksiyon",
+    "Susunod na aralin": "Sunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkahuman sa leksiyon dili pamatuod sa praktikal nga kahanas.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala ma-save ang imong puwesto. Sulayi pag-usab.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala ma-save ang pagkahuman. Sulayi pag-usab o i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Isira",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft alang sa pagsusi sa hubad ug paglitok.",
+    "Buong screen na aralin": "Leksiyon sa tibuok screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sa leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda aron mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog aron mabasa ang sulod.",
+    "Subukang i-save muli": "Sulayi pag-save pag-usab",
+    "Wika ng aralin": "Pinulongan sa leksiyon",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang tubag ug pasabot"
+  }
+}
