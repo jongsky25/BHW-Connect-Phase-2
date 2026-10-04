@@ -662,3 +662,29 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Mimi resource-use scene: preserve the full image and both faces. */
+.reference-story-art img[src*="mimi-resource-use"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] {
+  border: 0;
+  padding: 0;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] details {
+  display: none;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] figure {
+  margin: 0;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

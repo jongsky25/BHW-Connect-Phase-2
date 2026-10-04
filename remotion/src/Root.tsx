@@ -1,3 +1,4 @@
+import {BhsResourcesStory, calculateBhsResourcesMetadata, RESOURCES_FPS, RESOURCES_FALLBACK_DURATION} from "./bhs-resources/BhsResourcesStory";
 import {BhsDeclineStory, calculateBhsDeclineMetadata, BHS_DECLINE_FPS, BHS_DECLINE_FALLBACK_DURATION} from "./bhs-decline/BhsDeclineStory";
 import {BhsPromotionsStory, calculateBhsPromotionsMetadata, BHS_PROMOTIONS_FPS, BHS_PROMOTIONS_FALLBACK_DURATION} from "./bhs-promotions/BhsPromotionsStory";
 import {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from "./uhc-local-system/LocalSystemStory";
@@ -273,6 +274,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhs-decline-${language}`} id={language === "fil" ? "BhsDeclineStoryFil" : "BhsDeclineStoryEn"}
           component={BhsDeclineStory} calculateMetadata={calculateBhsDeclineMetadata}
           durationInFrames={BHS_DECLINE_FALLBACK_DURATION} fps={BHS_DECLINE_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhs-resources-${language}`} id={language === "fil" ? "BhsResourcesStoryFil" : "BhsResourcesStoryEn"}
+          component={BhsResourcesStory} calculateMetadata={calculateBhsResourcesMetadata}
+          durationInFrames={RESOURCES_FALLBACK_DURATION} fps={RESOURCES_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

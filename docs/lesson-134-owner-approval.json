@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Manila",
+  "recorded_at_utc": "2026-10-04T09:06:55Z",
+  "authorization": "approved. merge and deploy to live.",
+  "reviewed_head": "691887821038c0f1f004401b2b24affb8100e57a",
+  "reviewed_package_hashes": {
+    "lesson-1.3.4-mimi-review.html": "43daacc6e2dfb459e07d01b7fe4e1fb7614523eba0de342db790cd8d4b6c0c33",
+    "lesson-1.3.4-mimi-review.zip": "28635b1ece6a24f22fbafd5ad663ba7dddd594f0359137391087d8200ceddbb1"
+  },
+  "pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/245",
+  "scope": "Only lesson 1.3.4 / bhs-resources and its two reviewed new assets",
+  "approved_asset_ids": [
+    "mimi-resource-use",
+    "bhs-resources-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/check-before-change.fil.6b5081767a81.mp3",
+      "sha256": "7a1b569ac3b9bc75dac43f1f28ac0184bd7645d4cf4ba756982a55a1b8d8fba4"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/know-responsibilities.fil.70009ede4d3b.mp3",
+      "sha256": "fd2153c49df65f4b1ebf0a8d48a2d1f90ea6f8c059befa8f2369eba24a5b177c"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/observe-resource-use.fil.d745e9469524.mp3",
+      "sha256": "c47ce375795c15487b8cbe17e02fc3c2e53bed6bc31dd571f7efa192ee948768"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/protect-service.fil.19fa1616e5de.mp3",
+      "sha256": "7e5fceecf394a8e06fe51b644a42b36e07c66f4b896cc313fee1df8eedbaa864"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/resource-check.fil.af44af166c9b.mp3",
+      "sha256": "90194ab9acb6571423da239697aa250a713dbea84ed2443ffe8f1f325af91b20"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.fil.9d041a95f44c.mp3",
+      "sha256": "ca0d7bc81f4c7397d0d29e26eabffc225498bc824d7c074b766f77a1881e230d"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/check-before-change.en.fc4c079fd46f.mp3",
+      "sha256": "afcde707b745e4c9e8b12af72e2cc81e09245cb5d26ea658324a6127af37f650"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/know-responsibilities.en.eaa7226fc3db.mp3",
+      "sha256": "05a60cd8116d0d5d282f5c699b7b2b292a0c13e77994243da426111b04109c57"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/observe-resource-use.en.20a90d9e06d7.mp3",
+      "sha256": "9cf32c504eba5e9a15e24bb601ef33ab85008185fc77444c332f2d9f99787acf"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/protect-service.en.6faccbea258d.mp3",
+      "sha256": "a831b3d3d56b3090db7fc3e2d6bff7981fb58e89b2716f83b7904c0413424f1d"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/resource-check.en.9f200f222363.mp3",
+      "sha256": "c0682e15f22dffd69e4611f3d6a7cb1bcb10fb63e8808a42bdcdb55ed5917b51"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-resources/section-5.en.57c21804b85e.mp3",
+      "sha256": "09496782900df00b8fd76dac87ee7292c8bafb87cca24d32621627188bc00837"
+    },
+    {
+      "path": "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png",
+      "sha256": "86ce5a9071e0416f069e74ed8d4c1fbdcf4613dd6ff9c5d4ea953a59b7a976d4"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-072d3a1c5425-poster.jpg",
+      "sha256": "072d3a1c54250b9a8fdfa8b92167bc00dbc9719decb1aa1c065712948f2679c0"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-9483de3945f4.mp4",
+      "sha256": "9483de3945f44e1e36a5289ca4fff4e8ed864663fa17a3c8ea320b04906c4d99"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-fil-0a179ccb4cf1.vtt",
+      "sha256": "0a179ccb4cf16e8a5ecdbf8e04f65af7cbf57e85b432afcd224e0fd58a720580"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-en-74ab02f554cf.mp4",
+      "sha256": "74ab02f554cf953077bb8911530ec451cb43938855fbf9fefb4234379e7db9b0"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-en-9792ee89d386.vtt",
+      "sha256": "9792ee89d38646444b1e321963d52c7d0ebc5a9864f12404c1cc7fe3751ae134"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-resources-gemini-en-74376812517d-poster.jpg",
+      "sha256": "74376812517d4841028292c99a2be92806d5770c499ee7e89a0609eafadb791d"
+    }
+  ],
+  "limits": "Owner approval does not assert independent SME review or authenticated production learner testing. Existing model-mediated audio notes are retained. Approved media are not regenerated."
+}

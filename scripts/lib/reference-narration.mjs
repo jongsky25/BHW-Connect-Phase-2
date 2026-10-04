@@ -14,7 +14,7 @@ import { applyWordPronunciations } from "./narration-pronunciation.mjs";
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
-import { geminiVoiceId, BHS_DECLINE_STORY_STYLES, BHS_SUPPORT_ENVIRONMENT_STORY_STYLES, BHS_PROMOTIONS_STORY_STYLES, LOCAL_SYSTEM_STORY_STYLES, UHC_IMPROVEMENT_STORY_STYLES, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
+import { geminiVoiceId, BHS_RESOURCES_STORY_STYLES, BHS_DECLINE_STORY_STYLES, BHS_SUPPORT_ENVIRONMENT_STORY_STYLES, BHS_PROMOTIONS_STORY_STYLES, LOCAL_SYSTEM_STORY_STYLES, UHC_IMPROVEMENT_STORY_STYLES, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
 // Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.
@@ -196,10 +196,12 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           if (!zones.length) continue;
           const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];
           // New sections of these Gemini stories must preserve their target provider.
-          const provider = chosen ?? (["bhs-decline", "bhs-support-environment", "bhs-promotions", "uhc-local-system", "uhc-improvement"].includes(lessonKey) ? "gemini" : providerOfVoice(existing?.voice));
+          const provider = chosen ?? (["bhs-resources", "bhs-decline", "bhs-support-environment", "bhs-promotions", "uhc-local-system", "uhc-improvement"].includes(lessonKey) ? "gemini" : providerOfVoice(existing?.voice));
           const voice = PROVIDER_VOICES[provider][language];
           const speechStyle = provider === "gemini"
-            ? lessonKey === "bhs-decline"
+            ? lessonKey === "bhs-resources"
+              ? BHS_RESOURCES_STORY_STYLES[language]
+              : lessonKey === "bhs-decline"
               ? BHS_DECLINE_STORY_STYLES[language]
               : lessonKey === "bhs-support-environment"
                 ? BHS_SUPPORT_ENVIRONMENT_STORY_STYLES[language]

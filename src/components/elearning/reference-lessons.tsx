@@ -255,6 +255,8 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
             caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
           }
+      : lesson?.lesson_key === "bhs-resources"
+        ? {src: "/training/bhw-1-3/mimi-resource-use-86ce5a9071e0.png", alt: ui("Tinatalakay ni Mimi ang resource concern sa namamahala.", "Mimi discusses the resource concern with the supervisor."), caption: ui("Obserbasyon · Tuntunin · Pakikipag-ugnayan", "Observation · Rule · Coordination")}
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
@@ -421,7 +423,7 @@ export function ReferenceLessons(props: Props) {
     );
   }
   function openReader() {
-    if (lesson?.lesson_key === "bhs-support-environment") {
+    if (lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources") {
       setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
     }
     setReaderOpen(true);
@@ -702,7 +704,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {ui(
+              {lesson.lesson_key === "bhs-resources" ? ui(
+                "Tinatayang 10 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at hiwalay ang gabay na pagsasanay.",
+                "Estimated 10 minutes for independent study; the optional story is additional and facilitated practice is separate.",
+              ) : ui(
                 "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.",
                 "Estimated 3–7 minutes for independent study; facilitated practice is separate.",
               )}
