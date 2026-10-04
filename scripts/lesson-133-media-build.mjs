@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Draft review artifacts only, with the existing repository Gemini secret.
-// Final concise bilingual story scripts preserve scope within the duration budget.
+// Revised concise bilingual story scripts preserve scope within the duration budget.
 // No database, deployment, approval, commit or publication operations.
 import {execFileSync} from 'node:child_process';
 import {existsSync, readFileSync, writeFileSync, readdirSync} from 'node:fs';

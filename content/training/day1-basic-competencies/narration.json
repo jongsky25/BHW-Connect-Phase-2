@@ -6258,273 +6258,1011 @@
     "bhs-decline": {
       "module": "03-polisiya-bhs",
       "sections": {
-        "section-4": {
+        "hold-boundary": {
           "en": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.913fcb8ef30d.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/hold-boundary.en.480bf18c4b0e.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "913fcb8ef30d849d624bec9303b4a19fd6eb3a39fe208cdaa1d41fd171a3bc6d",
-            "sha256": "3d8e119d27410bb847c20a5c92021333fb3cb933ce699b48c01626d6f0a523aa",
-            "duration_seconds": 66.142,
+            "content_hash": "480bf18c4b0e07757fd002f1cf51d995b06bfe2557e76f189a1580f3043c094e",
+            "sha256": "614992dc0c88ac404297008d8cc92efe5ccc1e42ed51b08548d9a0e912ea2d5c",
+            "duration_seconds": 60.839,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "How to decline respectfully",
+                "text": "When the visitor presses",
+                "start_ms": 0,
+                "end_ms": 2160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“It is free.",
+                "start_ms": 2460,
+                "end_ms": 4260
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "I will just leave it, and you can decide later,” the visitor says.",
+                "start_ms": 4560,
+                "end_ms": 9000
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Mimi does not need to argue or invent an excuse.",
+                "start_ms": 9300,
+                "end_ms": 13620
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She calmly repeats the boundary: “I understand the offer, but I will not accept or distribute these items.",
+                "start_ms": 13920,
+                "end_ms": 21760
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Please do not leave them with us.",
+                "start_ms": 22060,
+                "end_ms": 25860
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "I will inform the supervisor about your visit.”",
+                "start_ms": 26160,
+                "end_ms": 29080
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "She does not arrange distribution outside the facility, accept secretly, or display the poster while waiting for the midwife.",
+                "start_ms": 29380,
+                "end_ms": 38100
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "She does not promise that another offer will be approved.",
+                "start_ms": 38400,
+                "end_ms": 42200
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "If the conversation becomes difficult, she asks the supervisor for help through the local process.",
+                "start_ms": 42500,
+                "end_ms": 48980
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Respect is expressed in how she speaks; it does not require agreement.",
+                "start_ms": 49280,
+                "end_ms": 54760
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Repeat the boundary calmly; make no arrangement to bypass policy.",
+                "start_ms": 55060,
+                "end_ms": 60780
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/hold-boundary.fil.9f7876a73dd4.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "9f7876a73dd47d2887ba4a228606c96a6f4e5b8f953012ce593570bc60bb2fd4",
+            "sha256": "2cb03e03d190b6ba1654144920f14605c8bd6fd8bcccbf34c3ef80387ec76f32",
+            "duration_seconds": 64.522,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Kapag nagpumilit ang bisita",
+                "start_ms": 0,
+                "end_ms": 2040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "“Libre naman.",
+                "start_ms": 2340,
+                "end_ms": 4260
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Iwan ko na lang, tapos kayo na ang bahala,” sabi ng bisita.",
+                "start_ms": 4560,
+                "end_ms": 9080
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi kailangang makipagtalo o magbigay ng palusot si Mimi.",
+                "start_ms": 9380,
+                "end_ms": 13660
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Inuulit niya ang hangganan sa mahinahong boses: “Nauunawaan ko po ang alok, pero hindi ko po tatanggapin o ipamimigay ang mga ito.",
+                "start_ms": 13960,
+                "end_ms": 23960
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Mangyaring huwag po itong iwan sa amin.",
+                "start_ms": 24260,
+                "end_ms": 27820
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ipapaalam ko ang pagbisita sa namamahala.”",
+                "start_ms": 28120,
+                "end_ms": 31480
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi siya nakikipagkasundo na sa labas na lang ipamigay, tanggapin nang lihim, o ipaskil muna habang hinihintay ang midwife.",
+                "start_ms": 31780,
+                "end_ms": 40660
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi rin niya sinasabing siguradong maaaprubahan ang ibang alok.",
+                "start_ms": 40960,
+                "end_ms": 45040
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Kung hindi maayos ang usapan, humingi ng tulong sa namamahala ayon sa lokal na proseso.",
+                "start_ms": 45340,
+                "end_ms": 51540
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Ang paggalang ay nasa paraan ng pagsasalita; hindi ito nangangahulugang pagsang-ayon.",
+                "start_ms": 51840,
+                "end_ms": 58400
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ulitin ang hangganan nang mahinahon; walang kasunduang umiikot sa polisiya.",
+                "start_ms": 58700,
+                "end_ms": 64460
+              }
+            ]
+          }
+        },
+        "match-policy": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/match-policy.en.b2387eba2587.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b2387eba2587b15cde350bb5ed704946fe7d8a471435f8e0eec9e4bffd35d5df",
+            "sha256": "2fe60009d0e44817da7d1f6f79420f9ce77519317c7aa972c6dc2f704d0cd242",
+            "duration_seconds": 71.863,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Match the reason to the product",
+                "start_ms": 0,
+                "end_ms": 2800
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Different products need different policy explanations.",
+                "start_ms": 3100,
+                "end_ms": 6780
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "The first situation involves infant-formula samples for mothers, a BHS product poster, and a gift for promotion; the Milk Code is the relevant basis.",
+                "start_ms": 7080,
+                "end_ms": 18160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "If Mimi is asked to give prescription-medicine samples to families instead, she needs a different explanation: “I cannot distribute prescription samples to the public.",
+                "start_ms": 18460,
+                "end_ms": 28980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Under the pharmaceutical order, samples are for licensed physicians and dentists under its rules.",
+                "start_ms": 29280,
+                "end_ms": 36000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "I will refer the details to the supervisor.”",
+                "start_ms": 36300,
+                "end_ms": 39460
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "That order covers prescription pharmaceutical products and medical devices.",
+                "start_ms": 39760,
+                "end_ms": 44960
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Some educational items and scientific activities are permitted under conditions; this is not automatic permission for a BHW.",
+                "start_ms": 45260,
+                "end_ms": 54660
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "If the product or conditions are uncertain, state what is unknown, pause acceptance while checking, and ask for guidance.",
+                "start_ms": 54960,
+                "end_ms": 63760
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Referral cannot make prohibited promotion lawful.",
+                "start_ms": 64060,
+                "end_ms": 67780
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Match the policy to the product; do not invent permission.",
+                "start_ms": 68080,
+                "end_ms": 71800
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/match-policy.fil.72b21d66f26a.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "72b21d66f26ad9c2721d7e2b21cb1559121a56008cff965b184143591fcddee8",
+            "sha256": "3fd4c22da62913e5097ef22ba593da2d852f4d42b9a94200a2d520106d95d480",
+            "duration_seconds": 81.502,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Itugma ang paliwanag sa produkto",
                 "start_ms": 0,
                 "end_ms": 2640
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Mimi knows the policy.",
+                "text": "Hindi iisang polisiya ang ginagamit sa lahat ng produkto.",
                 "start_ms": 2940,
-                "end_ms": 5300
+                "end_ms": 7500
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "She needs to explain it politely to the company representative.",
-                "start_ms": 5600,
-                "end_ms": 10080
+                "text": "Para sa infant-formula samples para sa mga nanay, product poster sa BHS, at regalong kapalit ng promosyon sa unang sitwasyon, Milk Code ang batayan.",
+                "start_ms": 7800,
+                "end_ms": 21080
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "How can she give a clear, respectful response?",
-                "start_ms": 10380,
-                "end_ms": 14260
+                "text": "Kung prescription-medicine samples naman ang hinihiling na ipamigay ni Mimi sa mga pamilya, ibang paliwanag ang kailangan: “Hindi ko po maaaring ipamigay ang prescription samples sa publiko.",
+                "start_ms": 21380,
+                "end_ms": 34620
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "The right approach: first acknowledge the visitor's good intention, then explain the policy directly and clearly — not stalling, not pretending not to know.",
-                "start_ms": 14560,
-                "end_ms": 26160
+                "text": "Sa pharmaceutical order, para sa licensed physicians at dentists ang mga sample sa ilalim ng mga tuntunin nito.",
+                "start_ms": 34920,
+                "end_ms": 43400
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "\"I understand you want to help, but we're not allowed to promote milk substitutes inside the BHS, under the Milk Code.",
-                "start_ms": 26460,
-                "end_ms": 34700
+                "text": "Idudulog ko ang detalye sa namamahala.”",
+                "start_ms": 43700,
+                "end_ms": 46700
               },
               {
                 "zone": "body",
                 "index": 5,
-                "text": "We also can't take samples, gifts or other offers from milk companies.",
-                "start_ms": 35000,
-                "end_ms": 40960
+                "text": "Saklaw ng order ang prescription pharmaceutical products at medical devices.",
+                "start_ms": 47000,
+                "end_ms": 52200
               },
               {
                 "zone": "body",
                 "index": 6,
-                "text": "I'll let our midwife know you came by.\"",
-                "start_ms": 41260,
-                "end_ms": 43820
+                "text": "May kondisyong pinapayagang educational items at scientific activities; hindi ito awtomatikong pahintulot sa BHW.",
+                "start_ms": 52500,
+                "end_ms": 61980
               },
               {
                 "zone": "body",
                 "index": 7,
-                "text": "Mimi does not suggest any other way for the company to help, and she promises nothing in return.",
-                "start_ms": 44120,
-                "end_ms": 51080
+                "text": "Kung hindi tiyak ang produkto o kondisyon, sabihin ang hindi pa alam, huwag tumanggap habang tinitiyak, at humingi ng gabay.",
+                "start_ms": 62280,
+                "end_ms": 71400
               },
               {
                 "zone": "body",
                 "index": 8,
-                "text": "That same day she tells the midwife about the visit.",
-                "start_ms": 51380,
-                "end_ms": 55420
+                "text": "Hindi ginagawang legal ng pagdulog ang ipinagbabawal na promosyon.",
+                "start_ms": 71700,
+                "end_ms": 76260
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "The strongest refusal isn't an angry one — it's clear, has a basis, makes no deal, and is reported to the midwife.",
-                "start_ms": 55720,
-                "end_ms": 66080
+                "text": "Tamang produkto, tamang batayan; huwag mag-imbento ng pahintulot.",
+                "start_ms": 76560,
+                "end_ms": 81440
               }
             ]
-          },
-          "fil": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.e6fe03dc36f4.mp3",
+          }
+        },
+        "refusal-check": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/refusal-check.en.f819baed3bb5.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e6fe03dc36f429b8bb01987a67d02dd60566e71e71d86d723e070b367d78ec50",
-            "sha256": "675b4650305e85718ef2b44bdbc3718358dd45831400e468389069f5143b1c42",
-            "duration_seconds": 75.938,
+            "content_hash": "f819baed3bb590b893448a0a7b5150f8bc1f515308a00a8ba32a2b9e6f052a42",
+            "sha256": "d393173c23f9525f305cea56e773e0f867ba484e0539c376217919c1568b42bc",
+            "duration_seconds": 33.593,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Paano tumanggi nang magalang",
+                "text": "Practice a clear refusal",
                 "start_ms": 0,
-                "end_ms": 2480
+                "end_ms": 2600
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Bumalik tayo kay BHW Mimi.",
-                "start_ms": 2780,
-                "end_ms": 6100
+                "text": "A representative asks you to give prescription-medicine samples to families.",
+                "start_ms": 2900,
+                "end_ms": 8060
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ngayong alam na niya ang batayan, paano niya sasabihin ito sa kinatawan ng kumpanya nang hindi nagmukhang personal na pag-atake?",
-                "start_ms": 6400,
-                "end_ms": 15120
+                "text": "There is a personal gift, and the visitor offers to leave the box while the midwife is away.",
+                "start_ms": 8360,
+                "end_ms": 14600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "Ang tamang paraan: kilalanin muna ang mabuting intensyon ng bisita, saka ipaliwanag ang polisiya nang direkta at malinaw — hindi pagpapaliban, hindi pagpapanggap na hindi alam.",
-                "start_ms": 15420,
-                "end_ms": 29340
+                "text": "Choose a clear, respectful response within the BHW role.",
+                "start_ms": 14900,
+                "end_ms": 19940
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "\"Naiintindihan ko po ang gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng milk substitute sa loob ng BHS, ayon sa Milk Code.",
-                "start_ms": 29640,
-                "end_ms": 39880
+                "text": "Then practice it in your own words without taking the items.",
+                "start_ms": 20240,
+                "end_ms": 25240
               },
               {
                 "zone": "body",
                 "index": 4,
-                "text": "Hindi rin po kami puwedeng tumanggap ng sample, regalo, o iba pang alok mula sa kumpanya ng gatas.",
-                "start_ms": 40180,
-                "end_ms": 47380
-              },
-              {
-                "zone": "body",
-                "index": 5,
-                "text": "Sasabihin ko po sa aming midwife na dumaan kayo.\"",
-                "start_ms": 47680,
-                "end_ms": 51200
-              },
-              {
-                "zone": "body",
-                "index": 6,
-                "text": "Hindi nagmumungkahi si Mimi ng ibang paraan para tumulong ang kumpanya, at wala siyang ipinapangakong kapalit.",
-                "start_ms": 51500,
-                "end_ms": 59620
-              },
-              {
-                "zone": "body",
-                "index": 7,
-                "text": "Sa araw ding iyon, sinasabihan niya ang midwife tungkol sa pagbisita.",
-                "start_ms": 59920,
-                "end_ms": 65320
+                "text": "You do not need to memorize a law number.",
+                "start_ms": 25540,
+                "end_ms": 28340
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang pinakamalakas na pagtanggi ay hindi galit — ito ay malinaw, may batayan, walang kasunduan, at ipinaaalam sa midwife.",
-                "start_ms": 65620,
-                "end_ms": 75860
+                "text": "Acknowledge, decline, explain the correct basis, and report.",
+                "start_ms": 28640,
+                "end_ms": 33520
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/refusal-check.fil.4284a76191b4.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "4284a76191b48587b0ca62f75ceca325980b9c1a19944a1425ce7c39dceb5530",
+            "sha256": "910617b8e7661a4c8232a83d9dee1df0adf834e74028250e2222eea4f1814c8d",
+            "duration_seconds": 40.986,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Isagawa ang malinaw na pagtanggi",
+                "start_ms": 0,
+                "end_ms": 2680
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Isang kinatawan ang humihiling na ipamigay mo sa mga pamilya ang prescription-medicine samples.",
+                "start_ms": 2980,
+                "end_ms": 9540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May personal na regalo at sinasabing puwedeng iwan ang box habang wala ang midwife.",
+                "start_ms": 9840,
+                "end_ms": 16160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Piliin ang tugong malinaw, magalang, at nasa tungkulin ng BHW.",
+                "start_ms": 16460,
+                "end_ms": 23020
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Pagkatapos, sabihin ito sa sariling pananalita nang hindi kumukuha ng mga bagay.",
+                "start_ms": 23320,
+                "end_ms": 29120
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi kailangang kabisaduhin ang numero ng batas.",
+                "start_ms": 29420,
+                "end_ms": 33380
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Magpasalamat, tumanggi, ipaliwanag ang tamang batayan, at mag-ulat.",
+                "start_ms": 33680,
+                "end_ms": 40920
+              }
+            ]
+          }
+        },
+        "report-facts": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/report-facts.en.42e26b87d29a.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "42e26b87d29abfcafe113c99801d3e8dc061dd1357fd46fe2c49ed2f61169212",
+            "sha256": "388ffc198ebef44fe001e7f929cd9323daf21cffe2ba9bd8079b4a9c634b8477",
+            "duration_seconds": 64.131,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Report what happened",
+                "start_ms": 0,
+                "end_ms": 1600
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "After the conversation, Mimi informs the midwife or facility supervisor through the local process.",
+                "start_ms": 1900,
+                "end_ms": 9340
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "In this fictional example, she reports that day.",
+                "start_ms": 9640,
+                "end_ms": 13080
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "This is not a new legal deadline.",
+                "start_ms": 13380,
+                "end_ms": 16100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She says: “A representative offered infant-formula samples for mothers, a BHS poster, and a gift for promotion.",
+                "start_ms": 16400,
+                "end_ms": 25760
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "I declined and accepted, displayed, and distributed nothing.",
+                "start_ms": 26060,
+                "end_ms": 31220
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "I said I would tell you the details.”",
+                "start_ms": 31520,
+                "end_ms": 34120
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "If a record is required, include the time, place, product, offer, requested activity, and her response.",
+                "start_ms": 34420,
+                "end_ms": 42340
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Follow local rules for handling records; omit patient data and guesses about motives.",
+                "start_ms": 42640,
+                "end_ms": 49000
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Ask the supervisor to determine the next step.",
+                "start_ms": 49300,
+                "end_ms": 52500
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Do not blame families for feeding choices; a health professional handles feeding or clinical questions.",
+                "start_ms": 52800,
+                "end_ms": 59400
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Report the facts and your response, without speculation.",
+                "start_ms": 59700,
+                "end_ms": 64060
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/report-facts.fil.f055f270b7a6.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "f055f270b7a6fbcc433d048a573af5d17e237d1e773abda15036ffa2aea1a86a",
+            "sha256": "8240e63d2794378ee97c1e2243701c1bb75e0e6f1638a62441cc2dedc05ca73d",
+            "duration_seconds": 72.777,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ipabatid ang nangyari",
+                "start_ms": 0,
+                "end_ms": 1920
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Pagkatapos ng usapan, ipinaalam ni Mimi sa midwife o namamahala ang pagbisita ayon sa lokal na proseso.",
+                "start_ms": 2220,
+                "end_ms": 9860
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sa kathang-isip na halimbawang ito, nag-ulat siya sa araw ding iyon.",
+                "start_ms": 10160,
+                "end_ms": 14800
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi ito bagong legal na deadline.",
+                "start_ms": 15100,
+                "end_ms": 17580
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sinabi niya: “May kinatawang nag-alok ng infant-formula samples para sa mga nanay, poster sa BHS, at regalo kapalit ng promosyon.",
+                "start_ms": 17880,
+                "end_ms": 28600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Tumanggi ako at walang tinanggap, ipinaskil, o ipinamahagi.",
+                "start_ms": 28900,
+                "end_ms": 34260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Sinabi kong ipapaalam ko ang detalye sa inyo.”",
+                "start_ms": 34560,
+                "end_ms": 38160
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Kung kailangan ng tala, ilagay ang oras, lugar, produkto, alok, hinihinging gawain, at sariling tugon.",
+                "start_ms": 38460,
+                "end_ms": 48340
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Sundin ang lokal na patakaran sa paghawak ng tala; huwag isama ang datos ng pasyente o haka-haka sa motibo.",
+                "start_ms": 48640,
+                "end_ms": 56240
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Ipatukoy ang susunod na hakbang sa namamahala.",
+                "start_ms": 56540,
+                "end_ms": 59540
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Huwag sisihin ang mga pamilya sa feeding choices; health professional ang sasagot sa feeding o clinical questions.",
+                "start_ms": 59840,
+                "end_ms": 66920
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Mag-ulat ng katotohanan at sariling tugon, hindi haka-haka.",
+                "start_ms": 67220,
+                "end_ms": 72700
+              }
+            ]
+          }
+        },
+        "section-4": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.9df9a1639547.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "9df9a16395478fc69ad869ad0e6a17108211002c483d46442b1253fb25965f77",
+            "sha256": "13042c87e399cc1333b1e12a0125fafe135087277ff7e75b444be3acd7cb1466",
+            "duration_seconds": 60.5,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Clear and respectful",
+                "start_ms": 0,
+                "end_ms": 1920
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "The company representative returns to the BHS with infant-formula samples for mothers, a product poster, and a personal gift in return for promotion.",
+                "start_ms": 2220,
+                "end_ms": 13300
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Mimi knows she will decline this offer.",
+                "start_ms": 13600,
+                "end_ms": 17680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "How can she say no respectfully?",
+                "start_ms": 17980,
+                "end_ms": 20820
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Mimi says: “Thank you for coming.",
+                "start_ms": 21120,
+                "end_ms": 23640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "I will not accept the samples or gift, or display the product poster.",
+                "start_ms": 23940,
+                "end_ms": 29500
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "This falls under the Milk Code: the facility cannot be used for this promotion, and an inducement for promotion cannot be accepted.",
+                "start_ms": 29800,
+                "end_ms": 38160
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "I will tell our midwife or facility supervisor the details.”",
+                "start_ms": 38460,
+                "end_ms": 42540
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "She does not take the items, assume the visitor’s motives, or promise permission later.",
+                "start_ms": 42840,
+                "end_ms": 48800
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "The story is optional; you can complete Read or Slides without watching it.",
+                "start_ms": 49100,
+                "end_ms": 54260
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Use a respectful tone, a clear refusal, and a specific reason.",
+                "start_ms": 54560,
+                "end_ms": 60440
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.e70ad9d921eb.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e70ad9d921ebf3a1ae02819f20c014844e558cc1aac70149252b964f35b638b4",
+            "sha256": "18dff9133223cbf7fec3d1e899c65952418022acd450300e442f8553bce34d63",
+            "duration_seconds": 70.296,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Malinaw at magalang",
+                "start_ms": 0,
+                "end_ms": 2080
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Bumalik ang kinatawan ng kumpanya sa BHS.",
+                "start_ms": 2380,
+                "end_ms": 5460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May infant-formula samples para sa mga nanay, product poster, at personal na regalong kapalit ng tulong sa promosyon.",
+                "start_ms": 5760,
+                "end_ms": 15840
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Alam ni Mimi na hindi niya tatanggapin ang alok na ito.",
+                "start_ms": 16140,
+                "end_ms": 20100
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Paano niya sasabihin ang hindi nang may paggalang?",
+                "start_ms": 20400,
+                "end_ms": 24640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sinabi ni Mimi: “Salamat po sa pagpunta.",
+                "start_ms": 24940,
+                "end_ms": 28620
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Hindi ko po tatanggapin ang mga sample at regalo o ipapaskil ang product poster.",
+                "start_ms": 28920,
+                "end_ms": 35080
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Saklaw ito ng Milk Code: hindi ginagamit ang pasilidad para sa ganitong promosyon, at hindi tinatanggap ang insentibong kapalit ng pagpromote.",
+                "start_ms": 35380,
+                "end_ms": 45660
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ipapaalam ko ang detalye sa aming midwife o namamahala.”",
+                "start_ms": 45960,
+                "end_ms": 50120
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Hindi niya kinukuha ang mga bagay, ipinapalagay ang motibo ng bisita, o nangangakong may pahintulot mamaya.",
+                "start_ms": 50420,
+                "end_ms": 57980
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Opsyonal ang kuwento; maaari mong tapusin ang Read o Slides nang hindi nanonood.",
+                "start_ms": 58280,
+                "end_ms": 64400
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Magalang na tono, malinaw na hindi, at tiyak na dahilan.",
+                "start_ms": 64700,
+                "end_ms": 70220
               }
             ]
           }
         },
         "section-7": {
           "en": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.fc81549bfd06.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.a48b9265a2a8.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "fc81549bfd06785ad6e601f4fb2e66fcdd7f9ac9c0162b85d6b2bad1a642d85a",
-            "sha256": "419484cd5ea1d919a2bf9482ae4d211d0251a407d0e444c10072d5338be47aa0",
-            "duration_seconds": 59.481,
+            "content_hash": "a48b9265a2a827e7b2be3f5ba7c003e561542462dc9e367405152b93d9f4c130",
+            "sha256": "5dc3c563139b7aef8ae3a9ece51de44d34d3dc0c0b5016733a8be3afaed24280",
+            "duration_seconds": 62.616,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Wrong versus right: the company's offer",
+                "text": "Compare two responses",
                 "start_ms": 0,
-                "end_ms": 3440
+                "end_ms": 2200
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "**Wrong**: BHW Danilo accepted the samples and gifts from the medicine company's representative, because \"it's free anyway, and maybe it's rude to say no.\"",
-                "start_ms": 3740,
-                "end_ms": 15700
+                "text": "Both responses concern the same infant-formula offer.",
+                "start_ms": 2500,
+                "end_ms": 7260
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "He handed the samples out to patients with no explanation of why they were being recommended.",
-                "start_ms": 16000,
-                "end_ms": 22600
+                "text": "Danilo accepts the samples for mothers and gift because “saying no might be rude.”",
+                "start_ms": 7560,
+                "end_ms": 13600
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "**Right**: Mimi respectfully declined, explained the basis in the Milk Code, made no deal of any kind with the company, and told the midwife about the visit that same day.",
-                "start_ms": 22900,
-                "end_ms": 35620
+                "text": "He suggests distributing them outside instead.",
+                "start_ms": 13900,
+                "end_ms": 17700
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "The difference isn't kindness or its absence — the difference is who gets to decide what's good for the patient: the BHS, guided by policy, or the company, guided by its own benefit.",
-                "start_ms": 35920,
-                "end_ms": 49800
+                "text": "Accepting and arranging an alternative cross the boundary; a polite tone does not correct that.",
+                "start_ms": 18000,
+                "end_ms": 25640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Mimi thanks the visitor, clearly declines the samples, gift, and poster, explains the Milk Code as it applies to the offer, and makes no alternative promotional arrangement.",
+                "start_ms": 25940,
+                "end_ms": 39180
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "She informs the supervisor of the facts.",
+                "start_ms": 39480,
+                "end_ms": 42280
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "In the medicine-sample situation, she would use the pharmaceutical explanation, not the Milk Code.",
+                "start_ms": 42580,
+                "end_ms": 49060
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "A good response combines respect, an accurate reason, and actions consistent with the refusal.",
+                "start_ms": 49360,
+                "end_ms": 57400
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "When an offer is accepted with no basis behind it, it is the company, not the BHS, that ends up deciding what's good for the patient.",
-                "start_ms": 50100,
-                "end_ms": 59420
+                "text": "Polite words are insufficient if the offer is still accepted.",
+                "start_ms": 57700,
+                "end_ms": 62540
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.6d4dd5c93b52.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.a01200b3dd32.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "6d4dd5c93b52e2ccf4b789c4e9d4d9b1343a94d87ca8a48fcff79266d98a4939",
-            "sha256": "c038fd8f8c2408abc8b1a99d904b5517d855adb2b6423c774c578030870c6188",
-            "duration_seconds": 65.698,
+            "content_hash": "a01200b3dd323ea1956bb3349064237622dd519b6da07e7bd47b439fc345ab94",
+            "sha256": "196d5975a4d761c662c5540c2c479b666641d1f4da2fd40b470757c0d524cbaf",
+            "duration_seconds": 62.328,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Mali kumpara sa tama: ang alok ng kumpanya",
+                "text": "Ihambing ang dalawang tugon",
                 "start_ms": 0,
-                "end_ms": 4120
+                "end_ms": 2160
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "**Mali**: Tinanggap ni BHW Danilo ang mga sample at regalo mula sa kinatawan ng kumpanya ng gamot, dahil \"libre naman, at baka magkasala pa ako kung tatanggihan ko.\"",
-                "start_ms": 4420,
-                "end_ms": 17300
+                "text": "Parehong infant-formula offer ang pinag-uusapan.",
+                "start_ms": 2460,
+                "end_ms": 6060
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ipinamigay niya ang mga sample sa mga pasyente nang walang paliwanag kung bakit ito ang inirekomenda.",
-                "start_ms": 17600,
-                "end_ms": 24600
+                "text": "Tinanggap ni Danilo ang mga sample para sa mga nanay at regalo dahil “baka bastos ang tumanggi.”",
+                "start_ms": 6360,
+                "end_ms": 13320
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "**Tama**: Magalang na tumanggi si Mimi, ipinaliwanag ang batayan mula sa Milk Code, walang pinasok na anumang kasunduan sa kumpanya, at sinabihan ang midwife tungkol sa pagbisita sa araw ding iyon.",
-                "start_ms": 24900,
-                "end_ms": 39500
+                "text": "Sinabi niyang puwedeng sa labas na lang ipamigay.",
+                "start_ms": 13620,
+                "end_ms": 17300
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang pagkakaiba ay hindi kabaitan o kawalan nito — ang pagkakaiba ay kung sino ang nagpapasya kung ano ang mabuti para sa pasyente: ang BHS batay sa polisiya, o ang kumpanya batay sa benepisyo nito.",
-                "start_ms": 39800,
-                "end_ms": 55720
+                "text": "Nalampasan ang hangganan sa mismong pagtanggap at kasunduan; hindi ito naitatama ng magalang na tono.",
+                "start_ms": 17600,
+                "end_ms": 25720
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Si Mimi ay nagpasalamat sa pagbisita, malinaw na tumanggi sa mga sample, regalo, at poster, ipinaliwanag ang Milk Code na naaangkop sa alok, at walang iminungkahing kapalit na promosyon.",
+                "start_ms": 26020,
+                "end_ms": 38540
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Ipinaalam niya ang katotohanan sa namamahala.",
+                "start_ms": 38840,
+                "end_ms": 42400
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Sa medicine-sample situation, gagamit siya ng pharmaceutical explanation, hindi Milk Code.",
+                "start_ms": 42700,
+                "end_ms": 49580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Ang magandang tugon ay may paggalang, tamang dahilan, at kilos na tugma sa sinabi.",
+                "start_ms": 49880,
+                "end_ms": 56960
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Kapag tinanggap ang alok nang walang batayan, ang kumpanya na, hindi ang BHS, ang nagpapasya kung ano ang mabuti para sa pasyente.",
-                "start_ms": 56020,
-                "end_ms": 65620
+                "text": "Hindi sapat ang magalang na salita kung tinatanggap pa rin ang alok.",
+                "start_ms": 57260,
+                "end_ms": 62260
               }
             ]
           }
@@ -87656,6 +88394,282 @@
                   "text": "Kapag tinanggap ang alok nang walang batayan, ang kumpanya na, hindi ang BHS, ang nagpapasya kung ano ang mabuti para sa pasyente.",
                   "start_ms": 57660,
                   "end_ms": 68620
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "module": "03-polisiya-bhs",
+        "sections": {
+          "section-4": {
+            "en": {
+              "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.913fcb8ef30d.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "913fcb8ef30d849d624bec9303b4a19fd6eb3a39fe208cdaa1d41fd171a3bc6d",
+              "sha256": "3d8e119d27410bb847c20a5c92021333fb3cb933ce699b48c01626d6f0a523aa",
+              "duration_seconds": 66.142,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "How to decline respectfully",
+                  "start_ms": 0,
+                  "end_ms": 2640
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Mimi knows the policy.",
+                  "start_ms": 2940,
+                  "end_ms": 5300
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "She needs to explain it politely to the company representative.",
+                  "start_ms": 5600,
+                  "end_ms": 10080
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "How can she give a clear, respectful response?",
+                  "start_ms": 10380,
+                  "end_ms": 14260
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The right approach: first acknowledge the visitor's good intention, then explain the policy directly and clearly — not stalling, not pretending not to know.",
+                  "start_ms": 14560,
+                  "end_ms": 26160
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "\"I understand you want to help, but we're not allowed to promote milk substitutes inside the BHS, under the Milk Code.",
+                  "start_ms": 26460,
+                  "end_ms": 34700
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "We also can't take samples, gifts or other offers from milk companies.",
+                  "start_ms": 35000,
+                  "end_ms": 40960
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "I'll let our midwife know you came by.\"",
+                  "start_ms": 41260,
+                  "end_ms": 43820
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Mimi does not suggest any other way for the company to help, and she promises nothing in return.",
+                  "start_ms": 44120,
+                  "end_ms": 51080
+                },
+                {
+                  "zone": "body",
+                  "index": 8,
+                  "text": "That same day she tells the midwife about the visit.",
+                  "start_ms": 51380,
+                  "end_ms": 55420
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "The strongest refusal isn't an angry one — it's clear, has a basis, makes no deal, and is reported to the midwife.",
+                  "start_ms": 55720,
+                  "end_ms": 66080
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.fil.e6fe03dc36f4.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "e6fe03dc36f429b8bb01987a67d02dd60566e71e71d86d723e070b367d78ec50",
+              "sha256": "675b4650305e85718ef2b44bdbc3718358dd45831400e468389069f5143b1c42",
+              "duration_seconds": 75.938,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Paano tumanggi nang magalang",
+                  "start_ms": 0,
+                  "end_ms": 2480
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Bumalik tayo kay BHW Mimi.",
+                  "start_ms": 2780,
+                  "end_ms": 6100
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ngayong alam na niya ang batayan, paano niya sasabihin ito sa kinatawan ng kumpanya nang hindi nagmukhang personal na pag-atake?",
+                  "start_ms": 6400,
+                  "end_ms": 15120
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "Ang tamang paraan: kilalanin muna ang mabuting intensyon ng bisita, saka ipaliwanag ang polisiya nang direkta at malinaw — hindi pagpapaliban, hindi pagpapanggap na hindi alam.",
+                  "start_ms": 15420,
+                  "end_ms": 29340
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "\"Naiintindihan ko po ang gusto ninyong tumulong, pero bawal po sa amin ang mag-promote ng milk substitute sa loob ng BHS, ayon sa Milk Code.",
+                  "start_ms": 29640,
+                  "end_ms": 39880
+                },
+                {
+                  "zone": "body",
+                  "index": 4,
+                  "text": "Hindi rin po kami puwedeng tumanggap ng sample, regalo, o iba pang alok mula sa kumpanya ng gatas.",
+                  "start_ms": 40180,
+                  "end_ms": 47380
+                },
+                {
+                  "zone": "body",
+                  "index": 5,
+                  "text": "Sasabihin ko po sa aming midwife na dumaan kayo.\"",
+                  "start_ms": 47680,
+                  "end_ms": 51200
+                },
+                {
+                  "zone": "body",
+                  "index": 6,
+                  "text": "Hindi nagmumungkahi si Mimi ng ibang paraan para tumulong ang kumpanya, at wala siyang ipinapangakong kapalit.",
+                  "start_ms": 51500,
+                  "end_ms": 59620
+                },
+                {
+                  "zone": "body",
+                  "index": 7,
+                  "text": "Sa araw ding iyon, sinasabihan niya ang midwife tungkol sa pagbisita.",
+                  "start_ms": 59920,
+                  "end_ms": 65320
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang pinakamalakas na pagtanggi ay hindi galit — ito ay malinaw, may batayan, walang kasunduan, at ipinaaalam sa midwife.",
+                  "start_ms": 65620,
+                  "end_ms": 75860
+                }
+              ]
+            }
+          },
+          "section-7": {
+            "en": {
+              "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.fc81549bfd06.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "fc81549bfd06785ad6e601f4fb2e66fcdd7f9ac9c0162b85d6b2bad1a642d85a",
+              "sha256": "419484cd5ea1d919a2bf9482ae4d211d0251a407d0e444c10072d5338be47aa0",
+              "duration_seconds": 59.481,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Wrong versus right: the company's offer",
+                  "start_ms": 0,
+                  "end_ms": 3440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "**Wrong**: BHW Danilo accepted the samples and gifts from the medicine company's representative, because \"it's free anyway, and maybe it's rude to say no.\"",
+                  "start_ms": 3740,
+                  "end_ms": 15700
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "He handed the samples out to patients with no explanation of why they were being recommended.",
+                  "start_ms": 16000,
+                  "end_ms": 22600
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "**Right**: Mimi respectfully declined, explained the basis in the Milk Code, made no deal of any kind with the company, and told the midwife about the visit that same day.",
+                  "start_ms": 22900,
+                  "end_ms": 35620
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "The difference isn't kindness or its absence — the difference is who gets to decide what's good for the patient: the BHS, guided by policy, or the company, guided by its own benefit.",
+                  "start_ms": 35920,
+                  "end_ms": 49800
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "When an offer is accepted with no basis behind it, it is the company, not the BHS, that ends up deciding what's good for the patient.",
+                  "start_ms": 50100,
+                  "end_ms": 59420
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.fil.6d4dd5c93b52.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "6d4dd5c93b52e2ccf4b789c4e9d4d9b1343a94d87ca8a48fcff79266d98a4939",
+              "sha256": "c038fd8f8c2408abc8b1a99d904b5517d855adb2b6423c774c578030870c6188",
+              "duration_seconds": 65.698,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mali kumpara sa tama: ang alok ng kumpanya",
+                  "start_ms": 0,
+                  "end_ms": 4120
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "**Mali**: Tinanggap ni BHW Danilo ang mga sample at regalo mula sa kinatawan ng kumpanya ng gamot, dahil \"libre naman, at baka magkasala pa ako kung tatanggihan ko.\"",
+                  "start_ms": 4420,
+                  "end_ms": 17300
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ipinamigay niya ang mga sample sa mga pasyente nang walang paliwanag kung bakit ito ang inirekomenda.",
+                  "start_ms": 17600,
+                  "end_ms": 24600
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "**Tama**: Magalang na tumanggi si Mimi, ipinaliwanag ang batayan mula sa Milk Code, walang pinasok na anumang kasunduan sa kumpanya, at sinabihan ang midwife tungkol sa pagbisita sa araw ding iyon.",
+                  "start_ms": 24900,
+                  "end_ms": 39500
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang pagkakaiba ay hindi kabaitan o kawalan nito — ang pagkakaiba ay kung sino ang nagpapasya kung ano ang mabuti para sa pasyente: ang BHS batay sa polisiya, o ang kumpanya batay sa benepisyo nito.",
+                  "start_ms": 39800,
+                  "end_ms": 55720
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Kapag tinanggap ang alok nang walang batayan, ang kumpanya na, hindi ang BHS, ang nagpapasya kung ano ang mabuti para sa pasyente.",
+                  "start_ms": 56020,
+                  "end_ms": 65620
                 }
               ]
             }

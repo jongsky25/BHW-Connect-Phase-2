@@ -5,11 +5,11 @@
   "sources": [
     {
       "id": "m3.competency-source",
-      "title": "BHW Facilitator Guide — printed p.15 / PDF p.22: communicating workplace policy and training outcomes",
+      "title": "BHW Facilitator Guide — printed p.15 / TCI PDF p.24 (repository transcription p.22): policy communication",
       "pdf_pages": [
-        22
+        24
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
     },
     {
       "id": "m3.milk-code-source",
@@ -46,9 +46,9 @@
   "findings": [
     {
       "source": "m3.competency-source",
-      "location": "printed p.15 / PDF p.22",
-      "supports": "Communicate workplace best practices; BHS policy topics and primary policy references.",
-      "limit": "Full relevant repository transcription inspected. Original PDF visual check still pending; do not present the page as verified original yet."
+      "location": "printed p.15 / TCI original PDF p.24; repository transcription p.22",
+      "supports": "Policy communication, four-hour training context and policy references.",
+      "limit": "Original 150-page Facilitator Manual downloaded from TCI, exact policy page extracted and visually inspected. Repository transcription has two fewer front pages. FOI official attachment redirected to missing-document page; TCI hosts original DOH document."
     },
     {
       "source": "m3.milk-code-source",
@@ -87,5 +87,10 @@
   "review": {
     "owner": "pending for new 1.3.3 package",
     "policySME": "not recorded"
-  }
+  },
+  "retrieval_limits": [
+    "E-Library direct fetch returned 502 for EO51 and implementing materials on 4 October; fresh indexed EO51 passage supports inducement restriction; full primary-source scope audit retained from verified 1.3.1.",
+    "APEC pharmaceutical scan timed out; original DOH scan retrieved afresh from FDA, screenshots of pages 6 and 10 inspected.",
+    "No exhaustive legal amendment search or independent SME approval claimed."
+  ]
 }
