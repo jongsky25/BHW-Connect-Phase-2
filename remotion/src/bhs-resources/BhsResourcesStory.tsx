@@ -1,6 +1,8 @@
 import {AbsoluteFill, Audio, Img, Series, spring, staticFile, useCurrentFrame, useVideoConfig, type CalculateMetadataFunction} from "remotion";
 import {BHS_RESOURCES_BEATS} from "./narration";
 
+// Owner-approved media: 4 October 2026; exact hashes in docs/lesson-134-owner-approval.json.
+
 export const RESOURCES_FPS = 30;
 export const RESOURCES_FALLBACK_DURATION = 75 * RESOURCES_FPS;
 export type BhsResourcesStoryProps = {language: "fil" | "en"; beatFrames?: number[]; audioSrc?: string};

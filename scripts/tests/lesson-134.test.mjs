@@ -83,12 +83,12 @@ describe('lesson 1.3.4 checks before changing resource use',()=>{
   expect(fileHash('/training/audio/03-polisiya-bhs/bhs-resources/section-5.fil.5864011094dc.mp3')).toBe('e0764b36c79609619098c4f873a631576f8f97d4f9b5d95de01839f720000e53');
   expect(manifest.history['bhs-resources'].some(h=>h.sections['section-5']?.en?.src.endsWith('a29ef2d462eb.mp3'))).toBe(true);
  });
- it('integrates original draft Mimi art with recorded provenance and matching animation bytes',()=>{
+ it('integrates original owner-approved Mimi art with recorded provenance and matching animation bytes',()=>{
   const art=source.assets.find(a=>a.id==='mimi-resource-use');
   expect(fileHash(art.path)).toBe(art.content_hash);
   expect(sha(readFileSync(path.join(root,'remotion/public/bhs-resources/scene.png')))).toBe(art.content_hash);
   expect(art.provenance).toContain('Exact prompt:');expect(art.provenance).toContain('Approved 1.3.1');
-  expect(art.review_status).toBe('draft');for(const s of source.sections)expect(s.asset_ids).toContain(art.id);
+  expect(art.review_status).toBe('approved');for(const s of source.sections)expect(s.asset_ids).toContain(art.id);
  });
  it('has measured bilingual story media with exact captions, posters and six distinct resource-use beats',()=>{
   const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset).toBeDefined();
