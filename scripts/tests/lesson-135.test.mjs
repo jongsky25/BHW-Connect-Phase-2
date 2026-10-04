@@ -73,11 +73,11 @@ describe('lesson 1.3.5 one workable proposal',()=>{
   }
   for(const [src,hash] of Object.entries(baseline.historical_target_hashes))expect(fileHash(src)).toBe(hash);
  });
- it('uses new original draft art with exact prompt/reference and matching animation bytes',()=>{
-  const art=source.assets.find(a=>a.id==='mimi-workable-suggestion');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(readFileSync(path.join(root,'remotion/public/bhs-improvement/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('draft');expect(art.provenance).toContain('Exact prompt:');expect(art.path).not.toContain('resource-use');for(const s of source.sections)expect(s.asset_ids).toContain(art.id);
+ it('uses new original owner-approved art with exact prompt/reference and matching animation bytes',()=>{
+  const art=source.assets.find(a=>a.id==='mimi-workable-suggestion');expect(fileHash(art.path)).toBe(art.content_hash);expect(sha(readFileSync(path.join(root,'remotion/public/bhs-improvement/scene.png')))).toBe(art.content_hash);expect(art.review_status).toBe('approved');expect(art.provenance).toContain('Exact prompt:');const approval=json(path.join(root,'docs/lesson-135-owner-approval.json'));expect(approval.authorization).toBe('approved. merge and deploy live');expect(approval.approved_asset_ids).toEqual(['mimi-workable-suggestion','bhs-improvement-story']);for(const media of approval.approved_media)expect(fileHash(media.path)).toBe(media.sha256);expect(art.path).not.toContain('resource-use');for(const s of source.sections)expect(s.asset_ids).toContain(art.id);
  });
  it('has two measured six-beat stories with exact media hashes and VTT text/timing',()=>{
-  const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset).toBeDefined();expect(asset.review_status).toBe('draft');expect(fileHash(asset.path)).toBe(asset.content_hash);
+  const asset=source.assets.find(a=>a.id===source.featured_asset_id);expect(asset).toBeDefined();expect(asset.review_status).toBe('approved');expect(fileHash(asset.path)).toBe(asset.content_hash);
   for(const lang of ['fil','en']){const v=asset.videos[lang];expect(fileHash(v.path)).toBe(v.content_hash);expect(fileHash(v.poster.path)).toBe(v.poster.content_hash);expect(fileHash(v.captions.path)).toBe(v.captions.content_hash);
    const t=json(path.join(root,`remotion/public/bhs-improvement/narration-${lang}.json`));expect(t).toMatchObject({language:lang,provider:'gemini',model:'gemini-3.8-flash-tts',voice:'Kore'});expect(t.beats.map(b=>b.zone)).toEqual(BHS_IMPROVEMENT_BEATS.map(b=>b.id));expect(t.beats.map(b=>b.text)).toEqual(BHS_IMPROVEMENT_BEATS.map(b=>b[lang]));expect(bytes(v.captions.path).toString('utf8').replaceAll('\r','')).toBe(toWebVtt(t));expect(v.duration_s).toBeGreaterThan(t.durationSeconds);expect(v.duration_s).toBeLessThanOrEqual(90);
   }
