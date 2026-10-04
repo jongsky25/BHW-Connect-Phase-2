@@ -18,9 +18,23 @@ const authored=loadReferenceModule(folder,path.join(root,'public')).lessons.find
 const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
 const ids=['section-1','section-2','identify-offer','pause-route','independent-information','recognition-check'];
 describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
+  it('binds owner release approval to the exact reviewed media bytes',()=>{
+    const approval=json(path.join(root,'docs/lesson-131-owner-approval.json'));
+    expect(approval.status).toBe('owner_approved_for_live_release');
+    expect(approval.lesson_key).toBe('bhs-promotions');
+    expect(approval.independent_sme_approval).toBeNull();
+    for(const [media,hash] of Object.entries(approval.approved_media_sha256)){
+      expect(createHash('sha256').update(readFileSync(path.join(root,'public',media))).digest('hex')).toBe(hash);
+    }
+    for(const asset of source.assets){
+      expect(asset.review_status).toBe('approved');
+      expect(asset.caption_en).not.toMatch(/draft|awaiting/i);
+      expect(asset.provenance).toContain('2026-10-04');
+    }
+  });
   it('ships both language stories with exact script, timing, caption and media hash parity',()=>{
     const story=source.assets.find(a=>a.id===source.featured_asset_id);
-    expect(story.review_status).toBe('draft');
+    expect(story.review_status).toBe('approved');
     for(const lang of ['fil','en']){
       const timing=json(path.join(root,`remotion/public/bhs-promotions/narration-${lang}.json`));
       expect(timing.provider).toBe('gemini');
@@ -134,8 +148,8 @@ describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
     expect(createHash('sha256').update(bytes).digest('hex')).toBe(art.content_hash);
     expect(bytes.subarray(1,4).toString()).toBe('PNG');
     expect(createHash('sha256').update(readFileSync(path.join(root,'remotion/public/bhs-promotions/scene.png'))).digest('hex')).toBe(art.content_hash);
-    expect(art.review_status).toBe('draft');
-    expect(art.provenance).toMatch(/built-in imagegen.*2026-10-03.*Proposed fictional Mimi/);
+    expect(art.review_status).toBe('approved');
+    expect(art.provenance).toMatch(/built-in imagegen.*2026-10-03.*Owner-approved fictional Mimi/);
     expect(source.assets.some(a=>a.id==='practice-map')).toBe(false);
     expect(readFileSync(path.join(root,'public/training/bhw-next-draft/process-e56e73f832d7.svg')).length).toBeGreaterThan(0);
     expect(readFileSync(path.join(root,'src/components/elearning/reference-lessons.tsx'),'utf8')).toContain(art.path);
