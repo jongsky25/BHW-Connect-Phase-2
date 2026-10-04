@@ -1,6 +1,6 @@
 ## [section-4] How to decline respectfully
 
-Back to BHW Mimi. Now that she knows the basis, how should she tell the company representative, without it sounding like a personal attack?
+Back to BHW Mimi. Now that she knows the basis, how should she tell the company representative, without it sounding like a personal criticism?
 
 The right approach: first acknowledge the visitor's good intention, then explain the policy directly and clearly — not stalling, not pretending not to know. "I understand you want to help, but we're not allowed to promote milk substitutes inside the BHS, under the Milk Code. We also can't take samples, gifts or other offers from milk companies. I'll let our midwife know you came by." Mimi does not suggest any other way for the company to help, and she promises nothing in return. That same day she tells the midwife about the visit.
 

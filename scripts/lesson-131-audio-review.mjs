@@ -17,7 +17,7 @@ const plan=planReferenceNarration([{key,lessons}],manifest,src=>{const p=path.jo
 const records=plan.filter(i=>['bhs-promotions','bhs-decline','bhs-resources'].includes(i.lessonKey)&&i.action==='skip').map(i=>({id:`read-${i.lessonKey}-${i.sectionId}-${i.language}`,language:i.language,file:path.join(root,'public',i.src.slice(1)),expected:i.zones.map(z=>z.text).join(' ')}));
 for(const language of ['fil','en']){
  const folder=path.join(root,'remotion/public/bhs-promotions');
- if(existsSync(path.join(folder,`narration-${language}.mp3`))&&existsSync(path.join(folder,`narration-${language}.json`)){
+ if(existsSync(path.join(folder,`narration-${language}.mp3`))&&existsSync(path.join(folder,`narration-${language}.json`))){
   const timing=JSON.parse(readFileSync(path.join(folder,`narration-${language}.json`),'utf8'));
   records.push({id:`story-${language}`,language,file:path.join(folder,`narration-${language}.mp3`),expected:timing.beats.map(b=>b.text).join(' ')});
  }
