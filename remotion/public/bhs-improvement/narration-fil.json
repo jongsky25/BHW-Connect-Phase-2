@@ -1,0 +1,52 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in conversational Filipino as a warm, expressive Philippine community health storyteller. Pronounce Mimi MEE-mee. Let her proposal sound curious and practical; emphasize one small review step, service needs and agreed follow-up with deliberate gentle pauses. Vary pitch and pace naturally while keeping one consistent narrator timbre. Read exactly the authored words, without fillers, invented approval or promises. End clearly and encouragingly.",
+  "durationSeconds": 80.013,
+  "beats": [
+    {
+      "zone": "continuation",
+      "index": 0,
+      "text": "Nakumpirma ni Mimi na may susunod na gawain sa meeting area. Hindi malinaw ang paalala kung sino ang titingin sa schedule. Paano makatutulong ang isang maliit na mungkahi?",
+      "start_ms": 0,
+      "end_ms": 13480
+    },
+    {
+      "zone": "concern",
+      "index": 1,
+      "text": "Sabihin ang factual na concern at nakumpirmang schedule. Walang sisi sa kasamahan, datos ng pasyente o imbentong savings. Ihiwalay ang alam sa hindi pa alam.",
+      "start_ms": 13780,
+      "end_ms": 26140
+    },
+    {
+      "zone": "proposal",
+      "index": 2,
+      "text": "Mungkahi ni Mimi: suriin kung kailangan ng maikling meeting-end checklist. Tingnan muna ang umiiral na paraan. Panukala ito, hindi utos na ipatupad agad.",
+      "start_ms": 26440,
+      "end_ms": 38640
+    },
+    {
+      "zone": "reason",
+      "index": 3,
+      "text": "Dahilan: mas malinaw na schedule check at handover. Tiyakin ang oras, materyales at service needs. Hindi nangangako si Mimi ng approval, repair o halagang matitipid.",
+      "start_ms": 38940,
+      "end_ms": 51660
+    },
+    {
+      "zone": "followup",
+      "index": 4,
+      "text": "Kumpirmahin ang responsable at saklaw ng pahintulot. Magkasundo kung sino ang susuri, ano at kailan muling mag-uusap. Review muna, walang bagong checklist habang wala pang desisyon.",
+      "start_ms": 51960,
+      "end_ms": 65360
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Magsanay: concern, isang panukala at dahilan, lokal na checks at follow-up. Protektahan ang serbisyo. Hiwalay na inoobserbahan ang workplace skill; hindi sapat ang online completion.",
+      "start_ms": 65660,
+      "end_ms": 79940
+    }
+  ]
+}

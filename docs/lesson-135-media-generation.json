@@ -1,0 +1,167 @@
+{
+  "generated_date": "2026-10-04T10:19:35.571Z",
+  "source_commit": "6ef3ba6bc40f9e37faf77d86cbd031b34fb86385",
+  "owner_review": "pending",
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-1.en.a954d19a28be.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-1.fil.8758509c59c2.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.en.755128e1ba35.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.3163de642f23.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.cecc83f8ab7a.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/check.en.e940e5ee3973.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/check.fil.9ca33a94a858.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.en.52605118bdcb.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.fil.1aa8b7339246.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.en.bb716c00324e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.fil.e27857afef37.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.en.91a574bb2ad5.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.fil.c25cf7ffe0e8.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.9e2c4320610a.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.fc655dc3863e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.d384713ab75e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.ec20345c1e1e.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.en.d7c51f7af4b0.mp3",
+    "public/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.fil.d215d40f643d.mp3"
+  ],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 80.013,
+      "beats": [
+        {
+          "zone": "continuation",
+          "index": 0,
+          "text": "Nakumpirma ni Mimi na may susunod na gawain sa meeting area. Hindi malinaw ang paalala kung sino ang titingin sa schedule. Paano makatutulong ang isang maliit na mungkahi?",
+          "start_ms": 0,
+          "end_ms": 13480
+        },
+        {
+          "zone": "concern",
+          "index": 1,
+          "text": "Sabihin ang factual na concern at nakumpirmang schedule. Walang sisi sa kasamahan, datos ng pasyente o imbentong savings. Ihiwalay ang alam sa hindi pa alam.",
+          "start_ms": 13780,
+          "end_ms": 26140
+        },
+        {
+          "zone": "proposal",
+          "index": 2,
+          "text": "Mungkahi ni Mimi: suriin kung kailangan ng maikling meeting-end checklist. Tingnan muna ang umiiral na paraan. Panukala ito, hindi utos na ipatupad agad.",
+          "start_ms": 26440,
+          "end_ms": 38640
+        },
+        {
+          "zone": "reason",
+          "index": 3,
+          "text": "Dahilan: mas malinaw na schedule check at handover. Tiyakin ang oras, materyales at service needs. Hindi nangangako si Mimi ng approval, repair o halagang matitipid.",
+          "start_ms": 38940,
+          "end_ms": 51660
+        },
+        {
+          "zone": "followup",
+          "index": 4,
+          "text": "Kumpirmahin ang responsable at saklaw ng pahintulot. Magkasundo kung sino ang susuri, ano at kailan muling mag-uusap. Review muna, walang bagong checklist habang wala pang desisyon.",
+          "start_ms": 51960,
+          "end_ms": 65360
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Magsanay: concern, isang panukala at dahilan, lokal na checks at follow-up. Protektahan ang serbisyo. Hiwalay na inoobserbahan ang workplace skill; hindi sapat ang online completion.",
+          "start_ms": 65660,
+          "end_ms": 79940
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3fd62b564aa4.mp4",
+        "content_hash": "3fd62b564aa424635d92101784ef07aa1e1fdcea4d868252657d8a30ac079da6",
+        "duration_s": 81,
+        "captions": {
+          "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-2f27b7021768.vtt",
+          "content_hash": "2f27b7021768b77bb32da546b7e72eed5f61e0d66f8fe965fce99ba7e4b5a7f7"
+        },
+        "poster": {
+          "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3810cde3e1d2-poster.jpg",
+          "content_hash": "3810cde3e1d28fc3378ad2dcbc963ad4ad81ace10b907d3acbf9b77f7ad3bdbb"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3810cde3e1d2-poster.jpg",
+        "content_hash": "3810cde3e1d28fc3378ad2dcbc963ad4ad81ace10b907d3acbf9b77f7ad3bdbb"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 76.617,
+      "beats": [
+        {
+          "zone": "continuation",
+          "index": 0,
+          "text": "Mimi confirms another activity is planned in the meeting area. The reminder of who checks the schedule is unclear. How could one small suggestion help?",
+          "start_ms": 0,
+          "end_ms": 11480
+        },
+        {
+          "zone": "concern",
+          "index": 1,
+          "text": "State the factual concern and confirmed schedule. No blame, patient data or invented savings. Separate what is known from what is still unknown.",
+          "start_ms": 11780,
+          "end_ms": 21980
+        },
+        {
+          "zone": "proposal",
+          "index": 2,
+          "text": "Mimi proposes reviewing whether a short meeting-end checklist is needed. Check the existing process first. This is a proposal, not an instruction to implement immediately.",
+          "start_ms": 22280,
+          "end_ms": 35520
+        },
+        {
+          "zone": "reason",
+          "index": 3,
+          "text": "The reason: clearer schedule checks and handover. Verify time, materials and service needs. Mimi does not promise approval, repairs or a savings amount.",
+          "start_ms": 35820,
+          "end_ms": 49380
+        },
+        {
+          "zone": "followup",
+          "index": 4,
+          "text": "Confirm responsibility and authority. Agree who will review, what to check and when to speak again. Review first; no new checklist while a decision is pending.",
+          "start_ms": 49680,
+          "end_ms": 62840
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Practice: a concern, one proposal and reason, local checks and follow-up. Protect service. Workplace skill is observed separately; online completion alone is insufficient.",
+          "start_ms": 63140,
+          "end_ms": 76540
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-3/bhs-improvement-gemini-en-a2c321cfcdbc.mp4",
+        "content_hash": "a2c321cfcdbc4f1aecd9684c73483e971c8249f5a883891e452b516db8d168a1",
+        "duration_s": 78,
+        "captions": {
+          "path": "/training/bhw-1-3/bhs-improvement-gemini-en-d502f161a277.vtt",
+          "content_hash": "d502f161a2776e73bffce7766efef5a781496893eeff11904767128a25e9f28a"
+        },
+        "poster": {
+          "path": "/training/bhw-1-3/bhs-improvement-gemini-en-7002cf542dc6-poster.jpg",
+          "content_hash": "7002cf542dc6cfd87ff36e06369022c514026f83bd875cf236667d1a42baee67"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-3/bhs-improvement-gemini-en-7002cf542dc6-poster.jpg",
+        "content_hash": "7002cf542dc6cfd87ff36e06369022c514026f83bd875cf236667d1a42baee67"
+      }
+    }
+  ]
+}
