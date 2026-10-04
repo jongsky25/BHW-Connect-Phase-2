@@ -30,7 +30,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Generate only the lesson 1.2.1 draft language
+      - name: Generate lesson 1.2.1 with corrected exact-word pronunciation directions
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-translation-narrate.mjs --lesson 1.2.1 --language ${{ matrix.language }} --apply
