@@ -30,7 +30,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Generate six complete Read tracks and a six-beat draft story
+      - name: Generate second-pass audio with full governance verbs and one narrator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-translation-narrate.mjs --lesson 1.2.3 --language ${{ matrix.language }} --apply
