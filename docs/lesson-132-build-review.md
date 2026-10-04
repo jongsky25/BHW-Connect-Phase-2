@@ -69,3 +69,7 @@ Actual full-screen caption playback exposed a vertical-fit issue at 844×390: th
 ## Latest main reconciliation
 
 Reconciled the released lesson 1.3.1 commit 6adfe8383998e791f92665db3c91ca3fc7d665dc before final review checks. Retained its Mimi artwork, narration entries, composition pair, provider/style directions including AO-number clarification, viewer mapping and sibling updates. This lesson's six-screen facilitator sequence already uses Mimi and replaces the old single-screen sequence. Final-head CI and both shards cover the combined composition library. Approval and publication remain pending for lesson 1.3.2 only.
+
+## Owner approval — 4 October 2026
+
+The owner approved the presented Mimi bilingual package and explicitly instructed: “approved. merge and publish”. Reviewed head bc9ea2f0bcc44f0083f50332364824e7c0c9015c; ZIP SHA-256 ef4753da5a5838354f5c2107e341c23a9400a9e5c4fb9fd6d33e81e1edd8f92c. The nineteen reviewed media hashes are recorded in lesson-132-owner-approval.json. Only the reviewed new illustration/story assets are marked approved; draft caption/provenance and facilitator review notes are updated. No speech, captions, art, timing or video bytes are regenerated. Independent clinical/policy SME approval remains unrecorded. Publication is authorized for bhs-support-environment only, following fresh exact-head checks and production/sibling verification.

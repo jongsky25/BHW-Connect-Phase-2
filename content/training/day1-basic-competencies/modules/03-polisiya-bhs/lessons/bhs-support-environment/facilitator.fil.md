@@ -66,6 +66,6 @@ Sinuri noong 3 Oktubre 2026: BHW Reference Manual printed p.6 / PDF p.14; Facili
 
 Mga yugto sa DC: 1 Enero 2022 para sa personnel/visitors ng DOH offices; 1 Hulyo 2022 para sa healthcare workers/personnel sa government hospitals, treatment/rehabilitation centers at ibang health facilities; 1 Enero 2023 para sa patients/companions/ibang clients sa mga tinukoy na lugar. Tiyakin ang kasalukuyang lokal na direktiba. BHW safety safeguard ang clinical-supply boundary, hindi inaangking legal exemption list. HTTP 403 ang EMB IRR PDF; walang dagdag na claim na nakabatay lamang sa hindi nabasang IRR. Nasa docs/lesson-132-source-audit.json ang retrieval limits.
 
-Kathang-isip ang kuwento at larawan ni Mimi. Draft pa ang bagong package at kailangan ng owner review; walang independent clinical/policy SME approval. Hindi sakop ng dating 1.2.2 approval ang araling ito.
+Kathang-isip ang kuwento at larawan ni Mimi. Inaprubahan ng owner ang bilingual na nilalaman at nirepasong media ng araling ito at pinahintulutan ang merge/publication noong 4 Oktubre 2026 (Asia/Manila). Walang independent clinical/policy SME approval. Para sa package na ito ang approval; hiwalay ang dating approval ng 1.2.2.
 
 Source update, 4 Oktubre 2026: nasa printed p.15 / PDF p.24 ng nakuha na DOH-authored facilitator mirror ang policy passage; PDF p.22 ang label ng kaparehong passage sa repository extraction. Sinuri ang dalawa.

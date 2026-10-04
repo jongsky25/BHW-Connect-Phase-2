@@ -1,0 +1,91 @@
+{
+  "lesson_key": "bhs-support-environment",
+  "date": "2026-10-04",
+  "timezone": "Asia/Manila",
+  "recorded_at": "2026-10-04T07:10:16.752Z",
+  "owner_statement": "approved. merge and publish",
+  "authorization": "Approve the presented bilingual lesson 1.3.2 Mimi package; merge PR #243 and publish only bhs-support-environment after exact-head release gates.",
+  "reviewed_head": "bc9ea2f0bcc44f0083f50332364824e7c0c9015c",
+  "reviewed_zip_sha256": "ef4753da5a5838354f5c2107e341c23a9400a9e5c4fb9fd6d33e81e1edd8f92c",
+  "reviewed_zip_bytes": 55589855,
+  "media": [
+    {
+      "path": "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
+      "sha256": "d1e6bcec984656959b07b8bc32f50b902e2039740a105d8e34502418cfe1d3e3"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-326f2479b875-poster.jpg",
+      "sha256": "326f2479b875c3b5ddd63f5767668d48b6f6102ce0b962ce7639ca8d19e43e72"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-3c1b05c119ec.mp4",
+      "sha256": "3c1b05c119ec8612816e9a01289abab73181779ab4d3511e504d35d3289c2628"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-05ee9753977c.vtt",
+      "sha256": "05ee9753977cf92e78e82b6e4bfb56b745f0022db711b16a010d4a081fbf2db2"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-en-b78e5dd7463e.mp4",
+      "sha256": "b78e5dd7463ef47b089224a0548d43deef7a356436dea3434ccb6a6d03a0104b"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-en-d04a71aab24f-poster.jpg",
+      "sha256": "d04a71aab24fcb7dca0d3ef4a6e5979e3b769df6b02876d6650665526b5255ac"
+    },
+    {
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-en-71ffa9cc5a61.vtt",
+      "sha256": "71ffa9cc5a61a125bea05c28ce688e6744dbda3506f16e38db78bc2f3fe7b454"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/check.en.657e24972ee0.mp3",
+      "sha256": "189bb9a540b5599fabb678e1e5d35f728f64e2ed44e1147a2d2c4bdb85e2a511"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/check.fil.d45fcac0dcaa.mp3",
+      "sha256": "4f4b63d94083550ce01c73ee48b3e434fe26309893b5c24ba171888a8d260591"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.en.aff4ba6a514f.mp3",
+      "sha256": "bdf4507dee0c88cc0760db1e714bb54b29fffb9e6a23dabb2ae00d5644aca92d"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/facility-roles.fil.36f6d2e57883.mp3",
+      "sha256": "7f2dfa549d22d78be80b38d795ce526605b2a765e08b343f61cbd85339ac95b7"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.en.ab196f75cb91.mp3",
+      "sha256": "d071e054869de3e5c6907386f1cf72dcdcc8b21f9dd80f2acc8af2eae4f6d6d5"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/listen-connect.fil.b9d21e4feb1c.mp3",
+      "sha256": "389911e40d4fd6ee10f1c37c2606ceffd631aecd898655a87a3d1d50e129ff9f"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.en.356da90846a8.mp3",
+      "sha256": "3a38a7971a3b0522e29f0defce591cf40c8a372fbeadbc5907c44d94c20163ae"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/safe-alternative.fil.08269badd990.mp3",
+      "sha256": "a918202523e1dd222d91d3002d34114dd776eef438d26f2faf7a04e7f4f2a042"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.en.712869b1d454.mp3",
+      "sha256": "27175a5cb2d35da5f9258f43c3d9fe8d274b1662d17ab1bf97302e4954571417"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/section-3.fil.aa1eff5fe4ff.mp3",
+      "sha256": "1af67e1fabe430545b6f90433c3bcbb6c88eec2dadc3471bfee5d25b849e240b"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.en.a9020183029f.mp3",
+      "sha256": "887776dc4017eaba9bf0f585204546c6ed91c136543ee9533bbaf379da633283"
+    },
+    {
+      "path": "/training/audio/03-polisiya-bhs/bhs-support-environment/unnecessary-plastic.fil.4ce153b289f6.mp3",
+      "sha256": "25f1af2047f1fda75d483324af5612edb5cce9a7435d196fc0eeec022687b40d"
+    }
+  ],
+  "independent_clinical_policy_sme_approval": "not recorded",
+  "release_requirements": "Fresh exact-head CI/E2E, both Remotion shards/artifacts, scoped Linux dry run and five-lesson baseline, exact merged commit READY in Production, then target-only loader publication and post-publication verification."
+}
