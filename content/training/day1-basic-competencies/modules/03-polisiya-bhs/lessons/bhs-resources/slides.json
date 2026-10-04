@@ -5,32 +5,126 @@
       "m3.other-topics",
       "m3.competency"
     ],
-    "layout": "decision",
-    "heading_fil": "Iba pang polisiya at episyenteng paggamit ng resources",
-    "heading_en": "Other policies and using resources efficiently",
-    "display_fil": "Alamin ang polisiya at istruktura ng lugar ng trabaho.\nTukuyin ang ligtas na paraan upang makatipid sa rekurso.\nIpaliwanag ang mungkahi bago isagawa.",
-    "display_en": "Learn workplace policies and responsibilities.\nIdentify a safe way to use resources efficiently.\nExplain the proposal before acting.",
+    "layout": "scene",
+    "heading_fil": "Polisiya bago pagbabago",
+    "heading_en": "Policies before changes",
+    "display_fil": "Bakanteng meeting area · Ilaw at fan\nAno ang tuntunin at kailangan ng serbisyo?\nUnawain muna bago baguhin",
+    "display_en": "Empty meeting area · Lights and fan\nWhat do the rule and service require?\nUnderstand before changing",
     "asset_ids": [
-      "practice-map"
+      "mimi-resource-use"
+    ],
+    "check": null,
+    "narration_fil": "Napansin ni Mimi, isang BHW, na nakabukas ang ilaw at electric fan sa bakanteng meeting area matapos ang isang gawain. Limitado ang rekurso sa BHS. Paano siya makatutulong nang hindi naaapektuhan ang serbisyo?\n\nSaklaw ng workplace competency ang pag-unawa sa polisiya at responsibilidad, mahusay na paggamit ng kuryente, tubig at gamit, at pagiging maparaan. Hindi simpleng pagbawas sa lahat ang efficiency. Una, aalamin ni Mimi ang tuntunin, sino ang responsable, at kung kailangan pa ang lugar para sa serbisyo. Si Mimi rin ang BHW na tumanggi sa alok ng kumpanya sa naunang aralin; sa bagong sitwasyong ito, gagamitin niya ang parehong pag-unawa at malinaw na pakikipag-usap. Opsyonal ang kuwento; maaaring tapusin ang Read o Slides nang hindi nanonood.",
+    "narration_en": "Mimi, a BHW, notices that the lights and electric fan are on in an empty meeting area after an activity. Resources at the BHS are limited. How can she help without affecting service?\n\nThe workplace competency includes understanding policies and responsibilities, using electricity, water and supplies efficiently, and being resourceful. Efficiency does not mean simply reducing everything. First, Mimi will check the rule, who is responsible, and whether the area is still needed for service. Mimi is also the BHW who declined the company offer in the previous lesson; here she applies the same understanding and clear communication to a different situation. The story is optional; you can complete Read or Slides without watching it."
+  },
+  {
+    "id": "slide-know-responsibilities",
+    "concept_ids": [
+      "m3.other-topics",
+      "m3.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Alamin ang tuntunin at tungkulin",
+    "heading_en": "Check the policy and responsibility",
+    "display_fil": "Anong tuntunin?\nSino ang responsable?\nSino ang may saklaw ng pahintulot?",
+    "display_en": "Which rule?\nWho is responsible?\nWho has authority for this action?",
+    "asset_ids": [
+      "mimi-resource-use"
+    ],
+    "check": null,
+    "narration_fil": "Hindi ipinapalagay ni Mimi na siya ang magdedesisyon dahil siya ang nakapansin. Itatanong niya sa kinumpirmang namamahala: “Sino po ang responsable sa meeting area pagkatapos gamitin? May closing checklist po ba, at sino ang maaaring magpahintulot ng pagbabago?”\n\nMaaaring midwife, facility supervisor o ibang itinalagang tao ang tamang contact sa kanilang BHS; tiyakin ang lokal na tungkulin, huwag manghula ng iisang chain of command para sa lahat. Kung wala ang contact, sundin ang lokal na proseso para sa pagdulog. Hindi awtomatikong may pahintulot ang isang mungkahi dahil may pumayag na kasamahan. Kailangang naaayon ito sa polisiya at saklaw ng tungkulin.",
+    "narration_en": "Mimi does not assume she makes the decision because she noticed the concern. She asks the confirmed responsible person: “Who is responsible for the meeting area after use? Is there a closing checklist, and who may authorize a change?”\n\nThe right contact may be the midwife, facility supervisor or another designated person at their BHS; confirm local responsibilities rather than assuming one universal chain of command. If the contact is absent, follow the local referral process. A colleague agreeing with an idea does not automatically authorize it. The action must comply with policy and the limits of the role."
+  },
+  {
+    "id": "slide-observe-resource-use",
+    "concept_ids": [
+      "m3.other-topics",
+      "m3.competency"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Ilarawan ang nakita",
+    "heading_en": "Describe what you observed",
+    "display_fil": "Oras · Lugar · Napansin\nMay susunod bang gamit? Hindi pa alam\nWalang sisi o imbentong savings",
+    "display_en": "Time · Place · Observation\nAnother use planned? Still unknown\nNo blame or invented savings",
+    "asset_ids": [
+      "mimi-resource-use"
+    ],
+    "check": null,
+    "narration_fil": "Sa fictional na halimbawa, itinala ni Mimi: “Pagkatapos ng meeting, nakabukas ang ilaw at fan sa meeting area; wala akong nakitang tao roon sa oras ng pagtingin.” Hindi niya isinulat na pabaya ang kasamahan o tiyak na nasasayang ang isang halaga ng pera. Hindi pa niya alam kung may susunod na gawain o ibang dahilan.\n\nKung kailangan ng lokal na tala, ilagay lamang ang petsa, oras, lugar at tiyak na napansin. Walang pangalan o datos ng pasyente, haka-haka sa motibo, o imbentong sukat ng konsumo at savings. Ang obserbasyon ay simula ng pag-uusap, hindi pa hatol o pahintulot na magbago.",
+    "narration_en": "In this fictional example, Mimi records: “After the meeting, the lights and fan were on in the meeting area; I saw no one there when I checked.” She does not write that a colleague is careless or that a particular amount of money is definitely being wasted. She does not yet know whether another activity is planned or there is another reason.\n\nIf a local record is needed, include only the date, time, place and specific observation. Omit patient names or data, guesses about motives, and invented consumption or savings measurements. An observation starts a conversation; it is not a conclusion or permission to change something."
+  },
+  {
+    "id": "slide-protect-service",
+    "concept_ids": [
+      "m3.other-topics",
+      "m3.competency"
+    ],
+    "layout": "comparison",
+    "heading_fil": "Unahin ang kailangan ng serbisyo",
+    "heading_en": "Protect service needs",
+    "display_fil": "Meeting area: tiyakin ang susunod na gamit\nSupply cut: huwag gawin nang kusa\nSerbisyo · Kaligtasan · Tungkulin",
+    "display_en": "Meeting area: check the next use\nSupply cut: do not act independently\nService · Safety · Role",
+    "asset_ids": [
+      "mimi-resource-use"
+    ],
+    "check": null,
+    "narration_fil": "Sinabi ng isang kasamahan: “Bawasan na lang natin ang gamit sa shelf para makatipid.” Hindi ito ginagawa ni Mimi nang kusa. Maaaring kailangan ang mga gamit para sa serbisyo; hindi pareho ang napansing ilaw sa meeting area at pagpapasya kung aling supply ang babawasan.\n\nSa meeting area, aalamin muna kung may susunod na gawain, kung may requirement sa lugar, at kung sino ang may responsibilidad sa closing procedure. Hindi siya nagkukumpuni ng kuryente, humahawak ng controls ng clinical equipment, nagre-reuse ng clinical supplies o nagrarasyon ng serbisyo. Kung may posibleng panganib, idulog ayon sa lokal na safety process; huwag subukang ayusin nang lampas sa pagsasanay. Kahit nonclinical ang halimbawa, hindi awtomatikong walang safety risk.",
+    "narration_en": "A colleague says: “Let us reduce the supplies on the shelf to save resources.” Mimi does not do this independently. Those supplies may be needed for service; noticing lights in a meeting area is different from deciding which supplies to reduce.\n\nFor the meeting area, she first checks the next planned use, requirements for the area, and who is responsible for the closing procedure. She does not repair electrical systems, operate clinical equipment controls, reuse clinical supplies or ration services. If there is a possible hazard, refer it through the local safety process; do not attempt repairs beyond training. A nonclinical example is not automatically free of safety risks."
+  },
+  {
+    "id": "slide-check-before-change",
+    "concept_ids": [
+      "m3.other-topics",
+      "m3.competency"
+    ],
+    "layout": "process",
+    "heading_fil": "Makipag-ugnayan bago kumilos",
+    "heading_en": "Coordinate before acting",
+    "display_fil": "Tiyak na obserbasyon\nSchedule · Checklist · Responsable\nNapagkasunduang unang hakbang",
+    "display_en": "Specific observation\nSchedule · Checklist · Responsibility\nAgreed first step",
+    "asset_ids": [
+      "mimi-resource-use"
+    ],
+    "check": null,
+    "narration_fil": "Sinabi ni Mimi sa kinumpirmang namamahala: “Napansin ko pong nakabukas ang ilaw at fan sa meeting area matapos ang meeting. May susunod po bang gagamit? Ano po ang tuntunin sa pagsasara, at sino ang responsable?” Ipinapaliwanag niya ang tiyak na obserbasyon at mga tanong, hindi nag-aanunsiyo ng ginawa nang pagbabago.\n\nSa halimbawa, pinagkasunduan nilang suriin muna ang schedule at umiiral na checklist kasama ang taong responsable. Itatala ni Mimi ang napagkasunduang unang hakbang kung kailangan sa lokal na proseso. Walang awtomatikong approval sa pagsara o pagbabawas. Kung hindi pa malinaw ang tuntunin o saklaw ng pahintulot, magpatulong bago magbago. Sa 1.3.5, gagawa ng isang detalyadong mungkahi; dito, mahalaga ang tamang unang pakikipag-ugnayan.",
+    "narration_en": "Mimi tells the confirmed responsible person: “I noticed the lights and fan were on in the meeting area after the meeting. Is another activity planned? What is the closing rule, and who is responsible?” She explains the specific observation and her questions instead of announcing a change she has already made.\n\nIn this example, they agree first to review the schedule and existing checklist with the person responsible. Mimi records that agreed first step if the local process requires it. This does not automatically approve shutdowns or cuts. If the rule or authority is unclear, ask for guidance before changing anything. Lesson 1.3.5 develops one detailed suggestion; here the focus is appropriate first coordination."
+  },
+  {
+    "id": "slide-resource-check",
+    "concept_ids": [
+      "m3.other-topics",
+      "m3.competency"
+    ],
+    "layout": "decision",
+    "heading_fil": "Piliin ang unang hakbang",
+    "heading_en": "Choose the first step",
+    "display_fil": "Ilaw at fan; hindi pa alam ang schedule\nMay mungkahing supply cut\nAno ang unang gagawin at itatanong?",
+    "display_en": "Lights and fan; schedule unknown\nA suggested supply cut\nWhat will you do and ask first?",
+    "asset_ids": [
+      "mimi-resource-use"
     ],
     "check": {
-      "prompt_fil": "Bakit aalamin ang polisiya sa rekurso?",
-      "prompt_en": "Why learn resource-use policy?",
+      "prompt_fil": "Ano ang angkop na unang hakbang?",
+      "prompt_en": "What is the appropriate first step?",
       "options": [
         {
-          "fil": "Upang makapagmungkahi ng ligtas at mas episyenteng gawain.",
-          "en": "To suggest safe and more efficient work."
+          "fil": "Itala ang nakita at itanong sa kinumpirmang responsable ang schedule, closing rule at pahintulot bago may baguhin; huwag munang magbawas ng supplies nang kusa.",
+          "en": "Record the observation and ask the confirmed responsible person about the schedule, closing rule and authority before changing anything; do not independently reduce supplies."
         },
         {
-          "fil": "Upang makapagbawas ng anumang gamit nang walang pahintulot.",
-          "en": "To remove any supplies without authorization."
+          "fil": "Patayin muna ang ilaw at fan dahil bakante ang lugar, saka ipaalam sa namamahala bukas.",
+          "en": "Turn off the lights and fan because the area is empty, then tell the supervisor tomorrow."
+        },
+        {
+          "fil": "Ipatabi muna sa kasamahan ang ilang supplies bilang pansamantalang tipid habang hinihintay ang pahintulot.",
+          "en": "Ask the colleague to set some supplies aside as a temporary saving while waiting for permission."
         }
       ],
       "correct_option_index": 0,
-      "feedback_fil": "Upang makapagmungkahi ng ligtas at mas episyenteng gawain. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-      "feedback_en": "To suggest safe and more efficient work. Explain why using the lesson situation."
+      "feedback_fil": "Tama ang una: may factual na obserbasyon at pagsusuri ng schedule, tuntunin, responsibilidad at pahintulot bago kumilos. Sa ikalawa, may pagbabago nang hindi alam ang service needs o closing rule; hindi sapat ang pag-ulat pagkatapos. Sa ikatlo, nabawasan na ang available supplies bago maaprubahan at maaaring maapektuhan ang serbisyo. Hindi awtomatikong pahintulot ang magandang intensiyon.",
+      "feedback_en": "The first choice records facts and checks the schedule, rule, responsibility and authority before acting. The second changes things without knowing service needs or the closing rule; reporting afterwards is insufficient. The third reduces available supplies before authorization and may affect service. Good intentions do not automatically authorize a change."
     },
-    "narration_fil": "Bukod sa apat na polisiyang natutunan mo, saklaw din ng kakayahang ito — *practice entrepreneurial skills in the workplace* — ang mas malawak na kasanayan: alamin ang mga polisiya at istruktura ng lugar ng trabaho, tumukoy ng paraan para gawing mas episyente ang paggamit ng kuryente, tubig, at gamit, at maging mapamaraan sa harap ng limitadong rekurso.\n\nHindi ito hiwalay sa apat na polisiya — kaparehong kasanayan ito: ang kakayahang tumingin sa isang sitwasyon, tumukoy ng mas mahusay na paraan, at maipaliwanag ito nang malinaw sa iba. Ang pagtanggi kay Mimi ay isang paraan ng paggamit nito; ang pagmungkahi ng mas episyenteng paraan ng paggamit ng resources ay isa pang paraan.",
-    "narration_en": "Beyond the four policies you just learned, this competency — *practice entrepreneurial skills in the workplace* — also covers a broader skill: knowing the workplace's policies and structure, finding ways to make electricity, water, and supplies use more efficient, and being resourceful in the face of limited resources.\n\nThis isn't separate from the four policies — it's the same skill: the ability to look at a situation, spot a better way, and explain it clearly to others. Declining the offer to Mimi is one way of using it; proposing a more efficient way to use resources is another."
+    "narration_fil": "Pagkatapos ng isang gawain, nakita mong nakabukas ang ilaw at fan sa bakanteng meeting area. Hindi mo pa alam ang susunod na schedule o closing procedure. May kasamahang gustong magbawas ng supplies para makatipid. Ano ang angkop mong unang hakbang bilang BHW? Piliin at ipaliwanag ang sagot, saka sabihin sa sariling pananalita ang iuulat at itatanong mo.",
+    "narration_en": "After an activity, you see the lights and fan on in an empty meeting area. You do not yet know the next scheduled use or closing procedure. A colleague wants to reduce supplies to save resources. What is your appropriate first step as a BHW? Choose and explain your answer, then practice stating what you would report and ask."
   }
 ]

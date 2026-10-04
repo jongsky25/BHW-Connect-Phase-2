@@ -630,6 +630,10 @@ body {
   object-position: 50% 50%;
 }
 
+.reference-story[data-lesson="bhs-decline"] .reference-story-art img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
 /* Mimi: contain the full scene so every face stays visible. */
 .reference-story-art img[src*="mimi-support-environment"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
 
@@ -651,6 +655,53 @@ body {
 }
 
 .lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+/* Mimi resource-use scene: preserve the full image and both faces. */
+.reference-story-art img[src*="mimi-resource-use"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] {
+  border: 0;
+  padding: 0;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] details {
+  display: none;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] figure {
+  margin: 0;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-resources"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+/* Mimi proposal scene and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="mimi-workable-suggestion"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] video {
   display: block;
   width: auto;
   max-width: 100%;

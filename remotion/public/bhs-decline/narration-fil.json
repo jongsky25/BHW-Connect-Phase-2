@@ -1,0 +1,51 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 80.927,
+  "beats": [
+    {
+      "zone": "refusal",
+      "index": 0,
+      "text": "May infant-formula samples, poster, at regalo para sa promosyon ang bisita. Sabi ni Mimi: Salamat. Hindi ko po tatanggapin o ipapaskil ang mga ito.",
+      "start_ms": 0,
+      "end_ms": 11920
+    },
+    {
+      "zone": "reason",
+      "index": 1,
+      "text": "Milk Code ang batayan sa formula promotion. Prescription samples: bawal ang pamimigay sa publiko sa pharmaceutical order. Itugma ang dahilan; hindi nag-aapruba ang BHW.",
+      "start_ms": 12220,
+      "end_ms": 25580
+    },
+    {
+      "zone": "pressure",
+      "index": 2,
+      "text": "Libre naman; iwan ko na lang, sabi ng bisita. Sagot ni Mimi: Hindi ko po tatanggapin o ipamimigay. Huwag po itong iwan. Walang lihim na kasunduan.",
+      "start_ms": 25880,
+      "end_ms": 38160
+    },
+    {
+      "zone": "report",
+      "index": 3,
+      "text": "Ipinaalam ni Mimi ang produkto, alok, hinihinging gawain, at sariling pagtanggi sa namamahala. Lokal na proseso ang sundin; walang datos ng pasyente o haka-haka.",
+      "start_ms": 38460,
+      "end_ms": 51700
+    },
+    {
+      "zone": "compare",
+      "index": 4,
+      "text": "Tumanggap si Danilo dahil nahiyang tumanggi. Si Mimi ay magalang pero malinaw na hindi. Tugma ang kilos sa sinabi, walang pagtanggap o pangakong exception.",
+      "start_ms": 52000,
+      "end_ms": 64760
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Magsanay: magpasalamat, malinaw na tumanggi, ipaliwanag ang tamang batayan, at mag-ulat. Ulitin ang hangganan nang mahinahon. Hiwalay ang praktikal na obserbasyon sa online completion.",
+      "start_ms": 65060,
+      "end_ms": 80860
+    }
+  ]
+}

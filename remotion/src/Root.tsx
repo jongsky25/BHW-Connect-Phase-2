@@ -1,3 +1,6 @@
+import {BhsImprovementStory, calculateBhsImprovementMetadata, IMPROVEMENT_FPS, IMPROVEMENT_FALLBACK_DURATION} from "./bhs-improvement/BhsImprovementStory";
+import {BhsResourcesStory, calculateBhsResourcesMetadata, RESOURCES_FPS, RESOURCES_FALLBACK_DURATION} from "./bhs-resources/BhsResourcesStory";
+import {BhsDeclineStory, calculateBhsDeclineMetadata, BHS_DECLINE_FPS, BHS_DECLINE_FALLBACK_DURATION} from "./bhs-decline/BhsDeclineStory";
 import {BhsPromotionsStory, calculateBhsPromotionsMetadata, BHS_PROMOTIONS_FPS, BHS_PROMOTIONS_FALLBACK_DURATION} from "./bhs-promotions/BhsPromotionsStory";
 import {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from "./uhc-local-system/LocalSystemStory";
 import "./index.css";
@@ -224,10 +227,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
-        <Composition
-          key={`uhc-primary-care-${language}`}
-          id={language === "fil" ? "PrimaryCareStoryFil" : "PrimaryCareStoryEn"}
+        {(["fil", "en", "ceb", "hil"] as const).map((language) => (
+          <Composition
+            key={`uhc-primary-care-${language}`}
+            id={({ fil: "PrimaryCareStoryFil", en: "PrimaryCareStoryEn", ceb: "PrimaryCareStoryCeb", hil: "PrimaryCareStoryHil" })[language]}
           component={PrimaryCareStory}
           calculateMetadata={calculatePrimaryCareMetadata}
           durationInFrames={PRIMARY_CARE_FALLBACK_DURATION}
@@ -250,8 +253,8 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
-        <Composition key={`uhc-local-system-${language}`} id={language === "fil" ? "LocalSystemStoryFil" : "LocalSystemStoryEn"}
+        {(["fil", "en", "ceb", "hil"] as const).map((language) => (
+          <Composition key={`uhc-local-system-${language}`} id={{fil: "LocalSystemStoryFil", en: "LocalSystemStoryEn", ceb: "LocalSystemStoryCeb", hil: "LocalSystemStoryHil"}[language]}
           component={LocalSystemStory} calculateMetadata={calculateLocalSystemMetadata}
           durationInFrames={LOCAL_SYSTEM_FALLBACK_DURATION} fps={LOCAL_SYSTEM_FPS} width={854} height={480}
           defaultProps={{language}}/>
@@ -267,6 +270,24 @@ export const RemotionRoot: React.FC = () => {
           component={ImprovementStory} calculateMetadata={calculateImprovementMetadata}
           durationInFrames={UHC_IMPROVEMENT_FALLBACK_DURATION} fps={UHC_IMPROVEMENT_FPS}
           width={854} height={480} defaultProps={{ language }} />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhs-decline-${language}`} id={language === "fil" ? "BhsDeclineStoryFil" : "BhsDeclineStoryEn"}
+          component={BhsDeclineStory} calculateMetadata={calculateBhsDeclineMetadata}
+          durationInFrames={BHS_DECLINE_FALLBACK_DURATION} fps={BHS_DECLINE_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhs-resources-${language}`} id={language === "fil" ? "BhsResourcesStoryFil" : "BhsResourcesStoryEn"}
+          component={BhsResourcesStory} calculateMetadata={calculateBhsResourcesMetadata}
+          durationInFrames={RESOURCES_FALLBACK_DURATION} fps={RESOURCES_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhs-improvement-${language}`} id={language === "fil" ? "BhsImprovementStoryFil" : "BhsImprovementStoryEn"}
+          component={BhsImprovementStory} calculateMetadata={calculateBhsImprovementMetadata}
+          durationInFrames={IMPROVEMENT_FALLBACK_DURATION} fps={IMPROVEMENT_FPS} width={854} height={480}
+          defaultProps={{language}}/>
       ))}
     </>
   );

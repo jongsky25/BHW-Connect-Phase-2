@@ -19,26 +19,90 @@
         "m3.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "mimi-workable-suggestion"
       ],
-      "takeaway_fil": "Ang mungkahing tiyak at may dahilan ang mas malamang na paniwalaan at tuluyang maisagawa kaysa sa pangkalahatang reklamo.",
-      "takeaway_en": "A suggestion that's specific and has a reason is far more likely to be believed and actually carried out than a general complaint.",
+      "takeaway_fil": "Ihiwalay ang nakita, mungkahi, dapat tiyakin at follow-up.",
+      "takeaway_en": "Separate the observation, proposal, checks and follow-up.",
+      "check": null
+    },
+    {
+      "id": "factual-concern",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-workable-suggestion"
+      ],
+      "takeaway_fil": "Tiyak na concern, walang sisi o imbentong savings.",
+      "takeaway_en": "A specific concern, without blame or invented savings.",
+      "check": null
+    },
+    {
+      "id": "one-feasible-proposal",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-workable-suggestion"
+      ],
+      "takeaway_fil": "Isang maliit at malinaw na panukala muna.",
+      "takeaway_en": "Start with one small, clear proposal.",
+      "check": null
+    },
+    {
+      "id": "reason-service-checks",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-workable-suggestion"
+      ],
+      "takeaway_fil": "May dahilan at service checks, walang garantisadong resulta.",
+      "takeaway_en": "Give a reason and service checks, without guaranteeing a result.",
+      "check": null
+    },
+    {
+      "id": "responsibility-followup",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-workable-suggestion"
+      ],
+      "takeaway_fil": "Magkasundo sa susunod na pag-uusap; hindi pa sa resulta.",
+      "takeaway_en": "Agree on the next conversation, without promising an outcome.",
+      "check": null
+    },
+    {
+      "id": "proposal-check",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-workable-suggestion"
+      ],
+      "takeaway_fil": "Pansin → Panukala → Pagsusuri → Follow-up.",
+      "takeaway_en": "Observation → Proposal → Checks → Follow-up.",
       "check": {
-        "prompt_fil": "Aling mungkahi ang tiyak?",
-        "prompt_en": "Which suggestion is specific?",
+        "prompt_fil": "Aling tugon ang angkop bago ipatupad ang checklist?",
+        "prompt_en": "Which response is appropriate before implementing the checklist?",
         "options": [
           {
-            "fil": "Iulat ang tumutulong gripo at magtakda ng follow-up sa pagkumpuni.",
-            "en": "Report a leaking tap and arrange a repair follow-up."
+            "fil": "Ipa-review sa kinumpirmang responsable ang maikling checklist dahil hindi malinaw ang pagtingin sa schedule; tiyakin ang umiiral na paraan, saklaw ng pahintulot at service needs, at magkasundo kung sino ang titingin at kailan muling mag-uusap.",
+            "en": "Ask the confirmed responsible person to review a short checklist because schedule checks are unclear; verify the existing process, authority and service needs, and agree who will review it and when to speak again."
           },
           {
-            "fil": "Sabihing ayusin ang lahat pero walang unang hakbang.",
-            "en": "Say to fix everything without a first step."
+            "fil": "Ilagay muna ang checklist at sundin ito sa susunod na meeting para may konkretong resulta bago humingi ng approval.",
+            "en": "Post the checklist and use it at the next meeting to show a concrete result before asking for approval."
+          },
+          {
+            "fil": "Hilinging ayusin ng namamahala ang lahat ng problema sa paggamit ng rekurso dahil sayang ang pera, at hintaying may magbalita.",
+            "en": "Ask the supervisor to fix every resource-use problem because money is being wasted, and wait for someone to report back."
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Iulat ang tumutulong gripo at magtakda ng follow-up sa pagkumpuni. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Report a leaking tap and arrange a repair follow-up. Explain why using the lesson situation."
+        "feedback_fil": "Una: tiyak ang concern, may isang panukala at dahilan, at sinusuri ang proseso, pahintulot at serbisyo bago magkasundo sa follow-up. Ikalawa: nagpapatupad na bago maaprubahan; ang magandang intensiyon at trial ay hindi pahintulot. Ikatlo: pangkalahatan ang hiling, may hindi nasukat na claim sa pera, at walang malinaw na unang hakbang o napagkasunduang follow-up.",
+        "feedback_en": "First: it states a specific concern, one proposal and a reason, checks the process, authority and service, and agrees on follow-up. Second: it implements a change before authorization; good intentions and a trial do not give permission. Third: the request is general, claims unmeasured money waste and lacks a clear first step or agreed follow-up."
       }
     }
   ],
@@ -46,10 +110,20 @@
     {
       "id": "m3.competency",
       "read_ids": [
-        "section-6"
+        "section-6",
+        "factual-concern",
+        "one-feasible-proposal",
+        "reason-service-checks",
+        "responsibility-followup",
+        "proposal-check"
       ],
       "slide_ids": [
-        "slide-section-6"
+        "slide-section-6",
+        "slide-factual-concern",
+        "slide-one-feasible-proposal",
+        "slide-reason-service-checks",
+        "slide-responsibility-followup",
+        "slide-proposal-check"
       ],
       "source_ids": [
         "m3.competency-source"
@@ -59,24 +133,64 @@
   "sources": [
     {
       "id": "m3.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "DOH BHW Facilitator Manual (2022), printed p.15 / original PDF p.24: workplace best practices, communication and efficient resource use",
       "pdf_pages": [
-        22
+        24
       ],
-      "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+      "url": "https://www.tciurbanhealth.org/wp-content/uploads/2023/03/BHW-Reference-Manual-2022-Facilitator-Guide.pdf"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
+      "id": "mimi-workable-suggestion",
+      "path": "/training/bhw-1-3/mimi-workable-suggestion-8e880add36c1.png",
+      "content_hash": "8e880add36c14bbcffd0633c0e7b31d0c0bbccb9c8b8f3d88a86d2c82ebd7c74",
+      "alt_fil": "Tinatalakay ni BHW Mimi ang isang mungkahing checklist kasama ang lokal na responsable sa meeting area.",
+      "alt_en": "BHW Mimi discusses a proposed checklist with the local person responsible for the meeting area.",
+      "caption_fil": "Isang mungkahi · Tiyakin ang saklaw · Magkasundo sa follow-up",
+      "caption_en": "One proposal · Check authority · Agree on follow-up",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila. Approved fictional Mimi identity used only as reference; new scene approved by owner on 2026-10-04; exact reviewed package/media hashes: docs/lesson-135-owner-approval.json. Model identifier not returned. Exact prompt: Create an ORIGINAL photorealistic training illustration, landscape 3:2, continuation scene for lesson 1.3.5 One workable suggestion. Use the referenced image ONLY for fictional Mimi's identity: Filipina barangay health worker about 50, identical recognizable face, shoulder-length straight black hair, lavender polo, navy trousers. NEW scene: Mimi sits at a simple wooden desk in the nonclinical meeting area of a modest Philippine barangay health station, calmly discussing ONE proposed meeting-end room checklist with a Filipino female local room coordinator about 40 in a plain muted teal blouse. Both seated, friendly attentive expressions, Mimi gestures gently with an open hand toward a blank single-page checklist on the desk; coordinator listens with a pen resting on the table. Wall clock, simple chairs and a fan in background, daytime warm natural light, subtle local plants. No clinical equipment, no patients, no repair work, no switching electrical controls, no promises of savings, no company representative or gifts. Keep both complete heads and all visible hands clearly inside frame, anatomically realistic fingers, clean uncluttered desk with only notebook paper and pen; no phones. No text, logos, badges, captions, or watermarks. Comfortable centered composition suitable for contained responsive display with room around the faces. This depicts discussing a proposal before authorization, not carrying out an approved change.",
       "review_status": "approved"
+    },
+    {
+      "id": "bhs-improvement-story",
+      "alt_fil": "Kuwentong may salaysay: nagmumungkahi si Mimi ng isang checklist review na may lokal na checks at follow-up.",
+      "alt_en": "Narrated story: Mimi proposes one feasible checklist review with local checks and agreed follow-up.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions.",
+      "provenance": "Original Remotion animation for lesson 1.3.5; original built-in imagegen illustration generated 2026-10-04, using the previously approved fictional Mimi identity as reference. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. Owner approved the reviewed package on 2026-10-04; exact hashes: docs/lesson-135-owner-approval.json. No independent policy SME approval is claimed.",
+      "review_status": "approved",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3fd62b564aa4.mp4",
+          "content_hash": "3fd62b564aa424635d92101784ef07aa1e1fdcea4d868252657d8a30ac079da6",
+          "duration_s": 81,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-2f27b7021768.vtt",
+            "content_hash": "2f27b7021768b77bb32da546b7e72eed5f61e0d66f8fe965fce99ba7e4b5a7f7"
+          },
+          "poster": {
+            "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3810cde3e1d2-poster.jpg",
+            "content_hash": "3810cde3e1d28fc3378ad2dcbc963ad4ad81ace10b907d3acbf9b77f7ad3bdbb"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-3/bhs-improvement-gemini-en-a2c321cfcdbc.mp4",
+          "content_hash": "a2c321cfcdbc4f1aecd9684c73483e971c8249f5a883891e452b516db8d168a1",
+          "duration_s": 78,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-improvement-gemini-en-d502f161a277.vtt",
+            "content_hash": "d502f161a2776e73bffce7766efef5a781496893eeff11904767128a25e9f28a"
+          },
+          "poster": {
+            "path": "/training/bhw-1-3/bhs-improvement-gemini-en-7002cf542dc6-poster.jpg",
+            "content_hash": "7002cf542dc6cfd87ff36e06369022c514026f83bd875cf236667d1a42baee67"
+          }
+        }
+      },
+      "path": "/training/bhw-1-3/bhs-improvement-gemini-fil-3810cde3e1d2-poster.jpg",
+      "content_hash": "3810cde3e1d28fc3378ad2dcbc963ad4ad81ace10b907d3acbf9b77f7ad3bdbb"
     }
-  ]
+  ],
+  "featured_asset_id": "bhs-improvement-story"
 }

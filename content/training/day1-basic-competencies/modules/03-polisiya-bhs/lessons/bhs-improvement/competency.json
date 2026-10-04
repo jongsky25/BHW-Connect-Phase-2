@@ -2,17 +2,17 @@
   "observation_indicators": [
     {
       "objective_index": 0,
-      "observable_fil": "Naipapaliwanag ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa supervisor.",
-      "observable_en": "Explains the main point and an appropriate first action in the situation, including what must be checked with the supervisor.",
-      "not_yet_fil": "Hindi pa maipaliwanag ang punto o nangangako nang hindi tinitiyak ang kondisyon.",
-      "not_yet_en": "Cannot yet explain the point or makes promises without checking conditions.",
+      "observable_fil": "Gamitin ang apat na linyang cue card: obserbasyon → panukala at dahilan → checks/contact → napagkasunduang follow-up. Magmodelo ng panukala. Palitan ang pangkalahatang reklamo ng tiyak na concern, saka tukuyin ang kilos na walang pahintulot o unsupported promise. Ulitin sa gustong wika, bawasan ang prompt, at muling obserbahan ang dalawang card matapos ang feedback. Kung hindi alam ang contact, kumpirmahin sa health team at magkasundo sa practice follow-up; huwag mag-imbento ng pahintulot.",
+      "observable_en": "Use a four-line cue card: observation → proposal and reason → checks/contact → agreed follow-up. Model one proposal. Have the learner replace a general complaint with a specific concern, then identify any unauthorized action or unsupported promise. Let them repeat in their preferred language, fade prompts, and re-observe both cards after feedback. If a local contact is unknown, help confirm it through the health team and agree a practice follow-up; do not invent authority.",
+      "not_yet_fil": "Nagpapatupad bago may pahintulot, nangangako ng approval o savings, o walang tiyak na panukala at follow-up.",
+      "not_yet_en": "Implements before permission, promises approval or savings, or cannot state a specific proposal and follow-up.",
       "levels": {
-        "kaya_na_fil": "Tamang paliwanag at hakbang, nang walang untag.",
-        "kaya_na_en": "Accurate explanation and action without prompting.",
-        "kailangan_practice_fil": "Tamang direksiyon ngunit kailangan ng gabay sa detalye.",
-        "kailangan_practice_en": "Correct direction but needs guidance on details.",
-        "hindi_pa_fil": "Hindi pa angkop ang paliwanag o hakbang.",
-        "hindi_pa_en": "Explanation or action is not yet appropriate."
+        "kaya_na_fil": "Naipapakita ang tatlong kilos sa dalawang card nang walang prompt at malinaw ang hangganan ng tungkulin.",
+        "kaya_na_en": "Demonstrates all three actions on both cards without prompts and explains role limits.",
+        "kailangan_practice_fil": "Praktikal ang panukala ngunit kailangan ng prompt sa concern, checks o napagkasunduang follow-up.",
+        "kailangan_practice_en": "Proposal is feasible but needs prompts for the concern, checks or agreed follow-up.",
+        "hindi_pa_fil": "May kilos na walang pahintulot o unsupported promise, o hindi makabuo ng tiyak na panukala; itama at ulitin.",
+        "hindi_pa_en": "Makes an unauthorized change or unsupported promise, or cannot form a specific proposal; correct and repeat."
       }
     }
   ]

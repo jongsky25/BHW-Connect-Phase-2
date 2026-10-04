@@ -1,82 +1,52 @@
 ## [purpose] Layunin
 
-Sa pagtatapos ng maikling araling ito, kaya ng BHW na ipaliwanag na lampas sa apat na polisiya ang competency na ito, *practice entrepreneurial skills in the workplace*. Kasama rin dito ang pag-alam sa mga polisiya at istruktura ng lugar ng trabaho, at ang paghahanap ng ligtas na paraan para maging mas episyente ang paggamit ng kuryente, tubig, at gamit. Kapag may problema sa resources sa BHS, nasasabi ng BHW ang unang hakbang: ipaliwanag muna ang mungkahi sa namamahala bago kumilos, at huwag magbawas ng gamit nang mag-isa.
+Magsanay sa tatlong kilos: factual na paglalarawan ng tiyak na resource concern; pagtukoy sa polisiya, responsibilidad at service needs na dapat tiyakin; at pakikipag-ugnayan para sa unang hakbang nang hindi nagbabawas o naglilipat ng rekurso nang kusa. Preserved objective 0 ang batayan. Sa 1.3.5 ang detalyadong mungkahi.
 
 ## [time-materials] Oras at kagamitan
 
-- **Oras:** mga 20 minuto sa harapang sesyon: mga kalahati ng 40 minuto ng module para sa "Talakayan: iba pang polisiya at episyenteng paggamit ng resources", ayon sa talahanayan ng oras sa gabay ng subchapter. Ang kabilang kalahati ay para sa "Isang mungkahing maisasagawa". Mga 5 minuto ang sariling pag-aaral ng aralin (isang maikling seksyon at isang self-check).
-- **Kagamitan:** manila paper at marker; ang slide ng aralin ("Iba pang polisiya at episyenteng paggamit ng resources"); dalawang situation card para sa gawaing pagsasanay (nasa ibaba).
+Mungkahing 20 minuto face-to-face, kalahati ng 40 minutong resource discussion sa module plan. Tinatayang 10 minuto self-study sa anim na screen at check; dagdag ang opsyonal na video. Authored estimates ang mga ito. Hindi bababa sa apat na oras para sa buong competency ang rekomendasyon ng original manual; 200 minuto lamang ang inherited module table, kaya may 40 minutong planning gap na dapat ayusin ng training organizer sa buong competency. Hindi sapat ang table para sa minimum at hindi inuulit ang apat na oras sa bawat lesson. Anim na screen, blangkong observation cards at fictional cards; walang datos ng pasyente, totoong repair o equipment demonstration.
 
-## [prepare] Paghahanda
+## [prepare] Maghanda
 
-- Basahin ang aralin sa Read at Slides para alam mo mismo ang nakita ng BHW.
-- Alamin, para sa BHS ng mga kalahok, kung sino ang may pananagutan sa ano: kanino nila dinadala ang mungkahi (kadalasan ang midwife o taga-RHU) at sino ang humahawak ng mga gamit. Huwag mag-assume; itanong sa kanila habang nag-aaral.
-- Alamin ang saklaw: inililista ng Facilitator Guide ang iba pang paksa sa ilalim ng competency na ito: workplace best practices, workplace policies, episyenteng paggamit ng resources (halimbawa, pagtitipid sa kuryente o tubig), pagiging mapamaraan, at workplace productivity. Puwede ka ring magpakita ng iba pang angkop na pambansa at lokal na polisiya, pero iyon lang na kaya mong pangalanan mula sa opisyal na sanggunian.
-- Ang araling ito ay tungkol sa **kung bakit inuuna ang pag-alam sa polisiya at istruktura ng lugar ng trabaho bago baguhin ang anuman**. Ang pagsulat ng tiyak na mungkahi ay nasa susunod na aralin, "Isang mungkahing maisasagawa". Huwag magturo kung aling clinical supplies ang puwedeng bawasan; ang pasilidad ang magpapasya roon.
+Tiyakin sa health team ang tunay na contact at lokal na closing procedure. Alamin kung angkop ang nonclinical meeting-area example; palitan ng ibang observation-only nonclinical example kung kailangan. Markahan ang hindi alam na rule/contact bilang kailangang kumpirmahin. Basahin ang source audit. Huwag ipalagay na may pahintulot ang supervisor sa lahat o walang risk ang kuryente.
 
-## [opening] Pambungad
+## [opening] Panimula
 
-Itanong sa grupo ang tanong ng module: *"Ano ang pinaka-nasasayang na resource sa inyong barangay health station?"* Isulat ang bawat sagot sa manila paper sa ilalim ng tatlong heading: kuryente, tubig, gamit. Iwanang nakadikit ang listahan; gagamitin din ito sa susunod na aralin.
+Basahin ang obserbasyon ni Mimi (2 minuto). Ano ang nakita at hindi pa alam? Inaasahan: nakabukas ang ilaw at fan, walang nakitang tao sa oras na iyon; hindi pa alam ang susunod na gamit, dahilan at closing rule. Walang sisi o imbentong savings.
 
 ## [steps] Mga hakbang
 
-1. **Lampas sa apat na polisiya (Read "Iba pang polisiya at episyenteng paggamit ng resources", unang linya ng slide).** Sabihing saklaw din ng competency ang pag-alam sa mga polisiya at istruktura ng lugar ng trabaho. Itanong: *"Sa BHS ninyo, sino ang nagpapasya tungkol sa mga gamit? Kanino ninyo sasabihin ang problema sa tubig o kuryente?"* Hayaan silang sumagot mula sa sarili nilang BHS.
-2. **Episyente at mapamaraan (ikalawang linya ng slide).** Ituro ang listahan mula sa pambungad. Sabihing ang ibig sabihin ng competency ay maghanap ng paraan para maging mas episyente ang paggamit ng kuryente, tubig, at gamit, at maging mapamaraan kapag limitado ang rekurso. Pumili ng isa sa listahan at itanong: *"Ano ang ligtas na paraan para magamit ito nang mas episyente?"* Idiin ang salitang *ligtas*.
-3. **Iisang kasanayan.** Itanong: *"Ano ang pagkakapareho ng pagtanggi ni Mimi sa kumpanya ng gatas at ng BHW na nagmumungkahing magtipid sa tubig?"* Gabayan sila sa sagot ng aralin: iisang kasanayan ito, ang pagtingin sa sitwasyon, pagtukoy ng mas mahusay na paraan, at pagpapaliwanag nito nang malinaw sa iba.
-4. **Ipaliwanag bago kumilos (ikatlong linya ng slide).** Itanong: *"Bakit kailangang ipaliwanag muna ang mungkahi sa namamahala bago ito gawin?"* Gabayan sila na alam ng namamahala ang polisiya at ang pangangailangan ng BHS, at na puwedeng magdulot ng bagong problema ang pagbabagong ginawa nang mag-isa.
-5. **Self-check.** Basahin nang malakas ang tanong ng check at hayaang mag-usap ang grupo bago ibigay ang sagot. Ipaliwanag sa isang BHW ang sagot gamit ang isang item mula sa listahan sa pambungad.
+1. Talakayin ang polisiya bago pagbabago at mga tanong sa contact (3 minuto).
+2. Ihiwalay ang obserbasyon sa haka-haka; gumawa ng non-identifying na tala (3 minuto).
+3. Ihambing ang pagsusuri sa meeting area at kusang pagtatabi ng supplies; tukuyin ang serbisyo at safety requirements (3 minuto).
+4. Ipakita ang factual na mensahe at mga tanong ni Mimi (3 minuto).
+5. Paresang practice sa dalawang card, palitan ang papel (4 minuto).
+6. Sagutin ang check at ipaliwanag ang lahat ng pagpipilian (2 minuto). Hindi kailangan ang video para sa online completion.
 
-## [expected-answers] Inaasahang sagot at paano tumugon
+## [expected-answers] Inaasahang sagot
 
-- **"Walang masasayang — kulang na nga kami sa simula pa lang."** Tapat at karaniwan ito. Tumugon: *"Iyan mismo ang dahilan kung bakit mahalaga ang pagiging mapamaraan. Sa ganito kakaunti, ano ang pinakakailangan nating protektahan?"*
-- **"Hindi naman kami ang nagbabayad ng bill, kaya hindi namin problema."** Huwag makipagtalo. Itanong: *"Kapag kinulang ang pera para sa kuryente o tubig, ano ang nawawala sa BHS?"* Iugnay ito pabalik sa serbisyo sa mga residente.
-- **"Sisimulan ko na lang bukas."** Maganda ang sigla. Ituro ang ikatlong linya ng slide: ipaliwanag ang mungkahi bago isagawa. Itanong kung kanino nila ito unang ipapaliwanag.
-- **Nagmumungkahi silang bawasan ang clinical supplies** (halimbawa, gumamit ng mas kaunti ng isang gamit para makatipid). Kilalanin ang intensyon, saka ipaalala ang "Breastfeeding at kapaligiran": huwag mag-alis nang mag-isa ng kinakailangang clinical supplies. Sa namamahala ang desisyong iyon.
+Ano ang iuulat? Tiyak na nakita sa ilaw/fan, oras at lugar; hindi pa alam ang susunod na gamit. Ano ang itatanong? Schedule, closing rule, responsable, pahintulot at service/safety needs. Kanino? Sa lokal na kinumpirmang responsable, hindi iisang chain para sa lahat. Unang kilos? Ipaalam at magtanong bago baguhin ang resource use. Sapat bang bakante para patayin ang fan? Hindi; tiyakin ang requirements. Puwede bang magtabi ng supplies habang naghihintay ng approval? Hindi; pagbabago na iyon sa availability. Kayang payagan ng supervisor ang ipinagbabawal? Huwag ipalagay; tiyakin ang polisiya at saklaw.
 
 ## [misconception] Karaniwang maling akala
 
-**"Ang pagiging episyente ay pagbabawas nang mag-isa."** Maaaring tahimik na gumamit o mamigay nang mas kaunti ng isang gamit ang BHW na gustong tumulong, sa akalang nakakatipid ito. Itama ito nang hindi napapahiya ang sinuman: itanong sa grupo, *"Kung hindi alam ng midwife na may gamit na itinatabi, ano ang puwedeng mangyari kapag kailangan na ito?"* Ang pagiging episyente ay pagtukoy ng mas mahusay na paraan at pagpapaliwanag muna nito. Hindi ito pagpapasya nang mag-isa kung ano ang puwedeng mawala sa BHS.
+“Maparaan kung magbawas muna at saka mag-ulat.” Itanong kung anong serbisyo ang nangangailangan ng lugar o supplies. Pinoprotektahan ng efficiency ang serbisyo, sumusunod sa polisiya at tungkulin. Hindi pahintulot ang magandang intensiyon, pagsang-ayon ng kasamahan o bakanteng lugar. May posibleng safety implications kahit nonclinical ang halimbawa.
 
-## [practice] Gawaing pagsasanay
+## [practice] Practice activity
 
-Magkapares, bubunot ang bawat BHW ng isang card at may mga isang minuto para sabihin sa sariling salita: ang pangunahing punto, ang unang hakbang, at ang kailangang tiyakin sa midwife, RHU, o namamahala.
+Card A: matapos ang meeting, bukas pa ang ilaw at fan sa bakanteng nonclinical meeting area; hindi alam ang susunod na schedule o closing rule. Ilarawan lamang ang nakita at itanong sa kinumpirmang responsable ang gamit, proseso at pahintulot. Ang angkop na unang kasunduan ay suriin ang schedule at checklist kasama siya, hindi agad patayin o kumpunihin. Card B: gusto ng kasamahan na magtabi ng supplies nang walang pahintulot para makatipid. Ipaliwanag na dapat tiyakin ang availability at service needs; huwag gawin ang sariling cut, at idulog ang concern sa lokal na proseso. Maikling factual na mensahe sa bawat card, palitan ang papel, itala ang tatlong kilos.
 
-- **Card A:** Pagkatapos ng clinic hours, madalas naiiwang bukas ang ilaw at electric fan sa kuwartong walang tao. Sabi ng kapwa BHW, *"Hindi naman tayo ang nagbabayad, hayaan mo na."*
-- **Card B:** Sabi ng kapwa BHW, *"Para makatipid, kunin natin ang ilang gamit sa estante at itabi, nang hindi na nagpapaalam."*
+## [answer-key] Susi sa sagot
 
-Inaasahang direksiyon: sa A, pangalanan ang tiyak na nasasayang, magmungkahi ng ligtas na pagbabago (patayin kapag walang tao sa kuwarto), at idulog ito sa namamahala. Sa B, huwag mag-alis ng gamit nang walang pahintulot; idulog sa namamahala ang alalahanin tungkol sa pagkaubos at itanong kung ano ang polisiya. Umikot at makinig. Dito ka mag-oobserba.
-
-## [answer-key] Susi sa self-check
-
-Isa ang check ng aralin. Lumalabas ito sa seksyong "Iba pang polisiya at episyenteng paggamit ng resources" sa Read at muli sa slide na may parehong pangalan, pareho ang tanong at pagpipilian, kaya minsan lang ito tinatalakay dito.
-
-- **"Bakit aalamin ang polisiya sa rekurso?"** → **Upang makapagmungkahi ng ligtas at mas episyenteng gawain.** Kapag alam ng BHW ang polisiya at istruktura ng lugar ng trabaho, nakikita niya ang mas mahusay na paraan at nadadala ito sa tamang tao, nang ligtas.
-  - **"Upang makapagbawas ng anumang gamit nang walang pahintulot"** ay mali. Sinasabi ng slide na ipaliwanag ang mungkahi bago isagawa. Nilalampasan ng pagbabawas nang walang pahintulot ang namamahala, at baka maalis pa ang gamit na kailangan sa ligtas na pangangalaga. Hindi iyon pagiging episyente.
-
-Hinihiling ng feedback na ipaliwanag ng BHW ang dahilan gamit ang sitwasyon sa aralin. Magandang paraan dito ang Card B mula sa gawaing pagsasanay.
+Tama ang unang sagot: factual na tala at pagtiyak ng schedule, tuntunin, responsibilidad at pahintulot bago pagbabago; walang sariling supply cut. Sa ikalawa, may pagbabago bago malaman ang service needs at closing rule; hindi retrospective approval ang pag-ulat mamaya. Sa ikatlo, nabawasan na ang availability bago may pahintulot at maaaring maapektuhan ang serbisyo. Ipaipaliwanag sa sariling pananalita.
 
 ## [observe] Ano ang oobserbahan
 
-Gamitin ang observation indicator ng aralin habang ginagawa ang gawaing pagsasanay: naipapaliwanag ng BHW ang pangunahing punto at angkop na unang hakbang sa sitwasyon, kasama ang dapat tiyakin sa namamahala.
+Tatlong kilos sa objective index 0: (1) factual na tiyak na concern, walang sisi, imbentong sukat o datos ng pasyente; (2) pagtukoy sa polisiya, responsable at service/safety requirements na dapat tiyakin; (3) pakikipag-ugnayan bago pagbabago, walang sariling cut, paglilipat o repair. Kaya na: tatlo sa dalawang card nang walang prompt. Kailangan practice: angkop ang direksiyon pero may tanong o hangganang kailangang i-prompt. Hindi pa: kumikilos muna, nag-aapruba ng unsupported cut o hindi matukoy ang dapat tiyakin. Hiwalay ang praktikal na obserbasyon; hindi patunay ng workplace skill ang online completion.
 
-- **Kaya na:** nang walang untag, napapangalanan ng BHW ang problema sa resources, nagbibigay ng ligtas na unang hakbang, nasasabing ipapaliwanag muna niya ito sa namamahala bago kumilos, at nasasabi ang dapat tiyakin (ang polisiya, sino ang may pananagutan, kung kailangan ang gamit sa pangangalaga).
-- **Kailangan pa ng practice:** tama ang direksiyon, pero kailangan mo pang magtanong para sa detalye. Halimbawa, may mungkahi siyang solusyon pero nakakalimutang idulog muna sa namamahala, o hindi masabi kung ano ang titiyakin.
-- **Hindi pa:** pumapayag ang BHW na mag-alis ng gamit nang walang pinagpapaalaman, nangangako ng pagbabagong hindi niya kayang pagpasyahan nang mag-isa, o hindi masabi ang pangunahing punto.
+## [support] Kung kailangan pa ng suporta
 
-Hiwalay ang pag-obserba nito sa silid sa pagtatapos ng BHW sa online self-check. Hindi patunay ng kasanayan ang tamang sagot sa self-check.
+Cue card: katotohanan → tuntunin at responsable → service needs → idulog muna. Ipakita ang mensahe sa Card A nang walang paghawak sa controls. Ipaulit sa sariling salita, saka bawasan ang prompts. Ulitin ang Card B at itanong kung bakit pagbabago na ang pagtatabi. Magkasamang tiyakin ang contact at rule. Muling obserbahan ang dalawang card pagkatapos ng feedback at itala ang resulta.
 
-## [support] Kung kailangan ng dagdag na suporta
+## [sources-review] Mga sanggunian at tala sa pagsusuri
 
-- Ipares sila sa BHW na **Kaya na** at hayaan silang sumagot sa parehong card nang pangalawa.
-- Paliitin ang gawain: Card A muna (kuryente), dahil walang panganib sa kaligtasan. Ibigay ang Card B kapag nasasabi na nila nang walang tulong ang "ipaliwanag muna sa namamahala".
-- Obserbahan muli sa susunod na sesyon gamit ang parehong card, hindi bago. Isa pang pagkakataon para makita ang parehong kasanayan ang susunod na aralin, "Isang mungkahing maisasagawa".
-
-## [sources-review] Sanggunian at tala sa pagrepaso
-
-- Sanggunian ng aralin: Facilitator Guide PDF 22, para sa iba pang paksa sa ilalim ng competency na ito at para sa mismong competency. Minanang page reference ito; nakabinbin pa ang huling audit. Sinasabi ng PDF 22 item 4 na puwedeng magpakita ang trainer ng iba pang angkop na pambansa at lokal na polisiya; inililista ng item 5 ang workplace best practices, workplace policies, efficient resource utilization (halimbawa, paano magtipid sa kuryente o tubig), paano maging mapamaraan, at workplace productivity. Dagdag na batayan: ang slide ng competency sa Day 1 presentation, na naglilista ng mga outcome: apply entrepreneurial workplace best practices, communicate entrepreneurial workplace best practices, at implement cost-effective operations.
-- Oras: sinasabi ng Facilitator Guide PDF 22 na hindi bababa sa 4 na oras ang kailangan ng competency na ito. Hinahati ito ng talahanayan ng oras sa gabay ng subchapter sa mga bahaging umaabot sa 200 minuto. Panatilihin ang orihinal na kabuuang oras ng competency sa gabay ng subchapter. Huwag idagdag muli ang buong oras sa bawat maikling aralin. Ang 20 minuto sa itaas ay bahagi ng araling ito sa plano ng module, at para sa self-study ang hating ito; hindi ito bagong training-hour allocation. Tantiya lamang ang 5 minutong self-study, hindi galing sa sanggunian.
-- Walang aralin sa module na ito na sumasaklaw sa opsyonal na 20 minuto para sa CSC Form 101-H ("kung may oras").
-- Pangkalahatan ang observation indicator ng araling ito; pareho ang pananalita sa limang aralin ng module. Repasuhin kung dapat itong gawing tiyak sa araling ito.
-- Repasuhin pa bago ilathala: ang kasalukuyang legal at policy wording, bilingual parity, at ang observation indicator.
-
-Draft para sa pagrepaso
+Sinuri 4 Oktubre 2026: original DOH BHW Facilitator Manual (2022), printed p.15 / original PDF p.24, Recommendations on Training items 1–5. Page 22 sa repository transcription dahil kulang ang dalawang front page. Batayan sa workplace policies/best practices, efficient electricity/water use, resourcefulness/productivity at hindi bababa sa apat na oras sa buong competency. Inuulit ng Day 1 presentation ang outcomes, hindi lokal na pahintulot. Tingnan ang docs/lesson-134-source-audit.json. Fictional authored application si Mimi, meeting area, paraan ng obserbasyon/koordinasyon, choices at tanong; hindi quotation, legal deadline o verified local permission. Walang bagong clinical, repair, measured-savings o hindi kaugnay na Milk Code claim. Inaprubahan ng owner ang aralin at reviewed media noong 4 Oktubre 2026; tingnan ang docs/lesson-134-owner-approval.json. Walang independent SME approval o authenticated production learner test. Hindi minana ang contradictory SVG approval sa bagong asset; retained ang historical file.

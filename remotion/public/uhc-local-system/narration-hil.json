@@ -1,0 +1,54 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "delivery_style": "Speak in natural Iloilo and Western Visayas Hiligaynon (Ilonggo) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and gently melodic sentence intonation. Give Mang Ernesto’s recurring question curiosity, Vlanche’s factual observations an attentive tone and the midwife’s feedback supportive warmth. Vary pitch and pace, slowing for confidentiality, locally verified contacts, distinct board and health-team roles, checked health-promotion messages and agreed follow-up. Keep one consistent female Kore narrator voice, with no character voice switching. Articulate Cebuano and Hiligaynon consonants clearly, especially ng, nga, kag and ug. Say Vlanche in one syllable, vlanch. Read HEPO as its individual letters. Finish every phrase cleanly, preserving the exact wording. Keep exactly one warm female voice from the first word to the last, including quotations: no male voices, character acting or speaker changes. Articulate the complete word nagdumala as nag-du-ma-la and nagadumala as na-ga-du-ma-la; never shorten these governance verbs to nagdula or nagadula. Pronounce the full nasal ng in nga and panglawas, the final consonants in mabakod and ginpabakod, and every syllable of gihulagway. Do not paraphrase or replace small words such as kon, Tino, Ilain, protektahi or gikasabotang. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+  "audio_sha256": "5bb4ee3440969e09e5a93c42cc01b6c1efa68e8d28c5a3b7a93af670768c67e1",
+  "script_hash": "991b441bdae437d2e43fd64242117fee6b1ae8ff945442aa42a2ef2898ec02b9",
+  "durationSeconds": 92.238,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Nagapamangkot si Mang Ernesto kay BHW Vlanche kon diin makumpirma ang impormasyon parte sa aktibidad sa panglawas sa barangay. Nabatian man ni Vlanche ang pareho nga pamangkot halin sa iban. Nagapamati siya anay.",
+      "start_ms": 0,
+      "end_ms": 14280
+    },
+    {
+      "zone": "roles",
+      "index": 1,
+      "text": "Ang Provincial kag City Health Boards nagadumala sang paghiusa sang mga serbisyo sa idalom sang UHC. Indi awtomatikong miyembro ang BHW. Pamangkuton ni Vlanche ang health team sang nagakaigo nga lokal nga contact.",
+      "start_ms": 14580,
+      "end_ms": 30060
+    },
+    {
+      "zone": "observation",
+      "index": 2,
+      "text": "Isumada ni Vlanche: sulitsulit ang pamangkot sang mga residente, nagakalainlain ang ila nabatian nga impormasyon, kag kinahanglan pa kumpirmahon ang mga detalye. Indi kinahanglan sa sumada ang mga ngalan ukon personal nga mga detalye.",
+      "start_ms": 30360,
+      "end_ms": 45600
+    },
+    {
+      "zone": "promotion",
+      "index": 3,
+      "text": "Bilang barangay-level HEPO, usisaon ni Vlanche ang mensahe upod sa health team. Ipaathag niya ini sing simple, agdahon ang mga pamangkot, kag usisaon ang paghangop sang residente.",
+      "start_ms": 45900,
+      "end_ms": 58500
+    },
+    {
+      "zone": "discussion",
+      "index": 4,
+      "text": "Magpraktis si Vlanche sang iya sumada upod sa midwife. Magapamangkot siya kon sin-o ang makakumpirma, sin-o ang magbaton sang panugyan, kag sin-o ang makadesisyon. Indi siya magsaad nga naaprubahan na ang ideya.",
+      "start_ms": 58800,
+      "end_ms": 73480
+    },
+    {
+      "zone": "feedback",
+      "index": 5,
+      "text": "Magakasugot sila kon san-o kag paano ang follow-up. Ang nakumpirma nga sabat lamang ang ipaabot ni Vlanche. Ang iya maamot: obserbasyon, husto nga mensahe, lokal nga koordinasyon, kag pagsunod sa ginkasugtan nga tikang.",
+      "start_ms": 73780,
+      "end_ms": 92180
+    }
+  ]
+}

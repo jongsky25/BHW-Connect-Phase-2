@@ -108,6 +108,8 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
 
 describe.each([
   { number: "1.2.1", folder: "uhc-coverage" },
+  { number: "1.2.2", folder: "uhc-primary-care" },
+  { number: "1.2.3", folder: "uhc-local-system" },
   { number: "1.2.4", folder: "uhc-improvement" },
 ])("lesson $number completion preserves identity without the optional story", ({ folder }) => {
   const coverageDirectory = path.resolve(directory, `../../../02-uhc-act/lessons/${folder}`);
@@ -227,8 +229,10 @@ describe.each([
   { number: "1.1.4", folder: "bhw-service-provider", firstId: "first-contact", approved: true, correctIndex: 2, wrongIndex: 0 },
   { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1, wrongIndex: 0 },
   { number: "1.1.6", folder: "bhw-roles-application", firstId: "applied-observation", approved: true, correctIndex: 0, wrongIndex: 1 },
-  { number: "1.2.1", folder: "../../02-uhc-act/lessons/uhc-coverage", firstId: "section-1", approved: false, correctIndex: 0, wrongIndex: 1 },
-  { number: "1.2.4", folder: "../../02-uhc-act/lessons/uhc-improvement", firstId: "section-6", approved: false, correctIndex: 1, wrongIndex: 0 },
+  { number: "1.2.1", folder: "../../02-uhc-act/lessons/uhc-coverage", firstId: "section-1", approved: true, correctIndex: 0, wrongIndex: 1 },
+  { number: "1.2.2", folder: "../../02-uhc-act/lessons/uhc-primary-care", firstId: "bridge", approved: true, correctIndex: 0, wrongIndex: 2 },
+  { number: "1.2.3", folder: "../../02-uhc-act/lessons/uhc-local-system", firstId: "section-5", approved: true, correctIndex: 0, wrongIndex: 2 },
+  { number: "1.2.4", folder: "../../02-uhc-act/lessons/uhc-improvement", firstId: "section-6", approved: true, correctIndex: 1, wrongIndex: 0 },
 ])("lesson $number translated content", ({ folder, firstId, approved, correctIndex, wrongIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {
@@ -270,7 +274,7 @@ describe.each([
       fireEvent.click(screen.getByRole("button", { name: translation.ui["Kuwentong may salaysay"] }));
       expect(container.querySelector("video source")).toHaveAttribute("src", `/fixture/story.${language}.mp4`);
       expect(container.querySelector("track")).toHaveAttribute("srcLang", language);
-      if (lesson.lesson_key === "uhc-improvement") {
+      if (["uhc-local-system", "uhc-improvement"].includes(lesson.lesson_key)) {
         const transcript = translation.assets.find(asset => asset.id === lesson.revision.featured_asset_id)!.text_steps!;
         expect(transcript).toHaveLength(6);
         transcript.forEach(step => expect(screen.getByText(step.text)).toBeInTheDocument());
