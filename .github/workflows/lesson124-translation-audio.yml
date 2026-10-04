@@ -30,7 +30,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Generate six complete Read recordings and six story beats
+      - name: Regenerate with explicit proposal consonants and exact grammatical forms
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-translation-narrate.mjs --lesson 1.2.4 --language ${{ matrix.language }} --apply
