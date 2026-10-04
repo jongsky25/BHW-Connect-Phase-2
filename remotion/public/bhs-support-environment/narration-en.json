@@ -1,0 +1,52 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Read the exact words; do not add, translate or change words.",
+  "durationSeconds": 66.717,
+  "beats": [
+    {
+      "zone": "welcome",
+      "index": 0,
+      "text": "A parent asks about breastfeeding. BHW Mimi listens. Two topics: respectful support and safe reduction of unnecessary waste.",
+      "start_ms": 0,
+      "end_ms": 11440
+    },
+    {
+      "zone": "roles",
+      "index": 1,
+      "text": "RA 10028 sets rules for lactation stations. The institution is responsible. Mimi confirms the local space and trained contact.",
+      "start_ms": 11740,
+      "end_ms": 22180
+    },
+    {
+      "zone": "connect",
+      "index": 2,
+      "text": "Respect the parent's privacy and choice. With permission, connect them to confirmed support. Do not offer personal clinical advice.",
+      "start_ms": 22480,
+      "end_ms": 32880
+    },
+    {
+      "zone": "waste",
+      "index": 3,
+      "text": "The DOH circular limits unnecessary single-use plastics in specified settings, with phased coverage. Confirm the current directive.",
+      "start_ms": 33180,
+      "end_ms": 42660
+    },
+    {
+      "zone": "alternative",
+      "index": 4,
+      "text": "Ask the supervisor about reusable lunch containers in the break area. Never independently remove or reuse sterile or necessary clinical supplies.",
+      "start_ms": 42960,
+      "end_ms": 54200
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Listen, confirm, support. Respect the parent and confirm local support. Reduce unnecessary waste according to guidance. Safe care comes first.",
+      "start_ms": 54500,
+      "end_ms": 66660
+    }
+  ]
+}
