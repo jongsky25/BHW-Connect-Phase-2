@@ -195,8 +195,8 @@
       "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
       "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
       "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.cd89f2b3b65d.mp3",
-      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.2732846f430c.mp3",
-      "contentHash": "2732846f430c124695a08b2646c9269d5f48fa4506dc1b2ea71194c1040cd074",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.913fcb8ef30d.mp3",
+      "contentHash": "913fcb8ef30d849d624bec9303b4a19fd6eb3a39fe208cdaa1d41fd171a3bc6d",
       "zoneCount": 11
     },
     {
@@ -215,12 +215,12 @@
       "lesson": "bhs-decline",
       "section": "section-7",
       "language": "en",
-      "action": "render",
+      "action": "skip",
       "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
       "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
       "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.fc81549bfd06.mp3",
-      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.99c301726a62.mp3",
-      "contentHash": "99c301726a62baa3793000952b916a73ca3f8829d437894fcf2f9442fc399e82",
+      "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-7.en.fc81549bfd06.mp3",
+      "contentHash": "fc81549bfd06785ad6e601f4fb2e66fcdd7f9ac9c0162b85d6b2bad1a642d85a",
       "zoneCount": 6
     },
     {
@@ -285,8 +285,8 @@
     },
     {
       "lesson": "bhs-decline",
-      "current": 2,
-      "requiresGeneration": 2
+      "current": 3,
+      "requiresGeneration": 1
     },
     {
       "lesson": "bhs-resources",

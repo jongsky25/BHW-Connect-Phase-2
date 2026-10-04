@@ -1,15 +1,15 @@
 ## [scenario/core] The visitor at the BHS
 
 A representative from a milk company arrived at BHW Mimi's barangay
-health station â€” carrying samples and a tarpaulin showing their new
+health station — carrying samples and a tarpaulin showing their new
 product. "Could we leave these inside, for you to give out to the
 mothers? We also have a small gift for you."
 
-Mimi knew she had to decline â€” but how could she do it without
+Mimi knew she had to decline — but how could she do it without
 offending the visitor, and with the right reasoning behind her refusal?
 
 :::takeaway
-Declining isn't just about "I don't want to" â€” there's a policy behind
+Declining isn't just about "I don't want to" — there's a policy behind
 it, and the refusal is stronger once you know what that basis is.
 :::
 
@@ -21,18 +21,18 @@ Under **Executive Order 51, the Philippine Milk Code of 1986**,
 advertising milk formula or milk substitutes inside health facilities is
 prohibited. Health workers also may not accept money, gifts or samples
 from milk companies, and a BHW never arranges any donation or support
-from one â€” any such offer goes to the midwife or supervisor. Instead,
+from one — any such offer goes to the midwife or supervisor. Instead,
 BHWs are expected to protect and promote breastfeeding.
 
 The same principle applies under **DOH Administrative Order No.
 2015-0053**: promotion, sponsorship, and other marketing activities by
 pharmaceutical companies are likewise prohibited inside health
 facilities. A health worker themselves also may not promote any
-medicine or curative product â€” so that a company cannot influence how
+medicine or curative product — so that a company cannot influence how
 the health center treats or serves people.
 
 :::takeaway
-The product differs â€” milk on one side, medicine on the other â€” but the
+The product differs — milk on one side, medicine on the other — but the
 principle is the same: no company should be able to influence the
 service given inside a barangay health station.
 :::
@@ -45,13 +45,13 @@ service given inside a barangay health station.
   receive at the health facility
 - Because a permit must first be applied for before accepting a gift
 > Correct! The point of EO 51 and AO 2015-0053 is protecting the
-  integrity of the service â€” a company's interest should never be what
+  integrity of the service — a company's interest should never be what
   decides which advice or product gets recommended to people.
 :::
 
 ## [concept/core] Promoting breastfeeding, and the ban on plastic {m3.breastfeeding-act, m3.plastics-ban}
 
-These policies are not only about prohibition â€” some also require
+These policies are not only about prohibition — some also require
 active action.
 
 Under **Republic Act 10028, the Expanded Breastfeeding Promotion Act of
@@ -63,12 +63,12 @@ must be actively promoted.
 
 **DOH Department Circular 2021-0486** points the same direction:
 health facilities are called to stop using single-use plastics starting
-2022 â€” thin plastic cups, straws, stirrers, cutlery, and bags â€” to
+2022 — thin plastic cups, straws, stirrers, cutlery, and bags — to
 reduce the waste that causes pollution, illness, and disaster.
 
 :::visual 1
 :::takeaway
-These policies aren't just about prohibition â€” they also expect active
+These policies aren't just about prohibition — they also expect active
 follow-through: promote breastfeeding, cut down on plastic.
 :::
 
@@ -79,7 +79,7 @@ the company representative, without it sounding like a personal
 attack?
 
 The right approach: first acknowledge the visitor's good intention,
-then explain the policy directly and clearly â€” not stalling, not
+then explain the policy directly and clearly — not stalling, not
 pretending not to know. "I understand you want to help, but we're not
 allowed to promote milk substitutes inside the BHS, under the Milk Code.
 We also can't take samples, gifts or other offers from milk companies.
@@ -88,25 +88,25 @@ other way for the company to help, and she promises nothing in return.
 That same day she tells the midwife about the visit.
 
 :::takeaway
-The strongest refusal isn't an angry one â€” it's clear, has a basis,
+The strongest refusal isn't an angry one — it's clear, has a basis,
 makes no deal, and is reported to the midwife.
 :::
 
 ## [concept/standard] Other policies and using resources efficiently {m3.other-topics, m3.competency}
 
-Beyond the four policies you just learned, this competency â€” *practice
-entrepreneurial skills in the workplace* â€” also covers a broader skill:
+Beyond the four policies you just learned, this competency — *practice
+entrepreneurial skills in the workplace* — also covers a broader skill:
 knowing the workplace's policies and structure, finding ways to make
 electricity, water, and supplies use more efficient, and being
 resourceful in the face of limited resources.
 
-This isn't separate from the four policies â€” it's the same skill: the
+This isn't separate from the four policies — it's the same skill: the
 ability to look at a situation, spot a better way, and explain it
 clearly to others. Declining the offer to Mimi is one way of using
 it; proposing a more efficient way to use resources is another.
 
 :::takeaway
-The same skill â€” spotting a better way and explaining it clearly â€” is
+The same skill — spotting a better way and explaining it clearly — is
 what's used both to decline an offer and to propose a change at the
 workplace.
 :::
@@ -114,12 +114,12 @@ workplace.
 ## [practice/standard] One efficient suggestion
 
 Try it: think of one thing at your own barangay health station that
-could be made more efficient â€” for example, a light left on with no
+could be made more efficient — for example, a light left on with no
 one around, water dripping unnoticed, or plastics that shouldn't be
 used any more under DC 2021-0486.
 
 Write your suggestion as one sentence you could actually say to the
-midwife or a fellow BHW â€” not just "we should change," but exactly what
+midwife or a fellow BHW — not just "we should change," but exactly what
 to change and why it would help.
 
 :::takeaway
@@ -138,7 +138,7 @@ explanation of why they were being recommended.
 Milk Code, made no deal of any kind with the company, and told the
 midwife about the visit that same day.
 
-The difference isn't kindness or its absence â€” the difference is who
+The difference isn't kindness or its absence — the difference is who
 gets to decide what's good for the patient: the BHS, guided by policy,
 or the company, guided by its own benefit.
 
