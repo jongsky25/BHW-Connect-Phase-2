@@ -27,7 +27,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Listen to the second-pass actual audio with the configured provider
+      - name: Review regenerated audio and render matching captions
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-translation-audio-review.mjs --lesson 1.2.4 --language ${{ matrix.language }}
@@ -54,3 +54,4 @@ jobs:
             remotion/out/uhc-improvement-vlanche-gemini-${{ matrix.language }}*
             review-exports/
           if-no-files-found: error
+

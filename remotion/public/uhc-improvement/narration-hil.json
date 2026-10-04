@@ -3,52 +3,52 @@
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
   "voice": "Kore",
-  "delivery_style": "Speak in natural Iloilo and Western Visayas Hiligaynon (Ilonggo) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and gently melodic sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s proposal a hopeful lilt. Vary pitch and pace; pause at proposal, confirmed facts and permission, feasible plan, trial and feedback. Keep the fictional local plan and role boundaries clear. Counts and answers are indicators, not proof of system-wide improvement. Keep one consistent female Kore narrator voice with no character acting or voice changes. Articulate ng, nga, ug and kag clearly, finishing every phrase. Say Vlanche as one syllable, vlanch. Keep every authored negation and permission boundary audible. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
-  "audio_sha256": "e3b7d69ce58c2a7b62c2f4d3d6d05e15a8858a037d651f5a353ddf1ee1821df6",
+  "delivery_style": "Speak in natural Iloilo and Western Visayas Hiligaynon (Ilonggo) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and gently melodic sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s proposal a hopeful lilt. Vary pitch and pace; pause at proposal, confirmed facts and permission, feasible plan, trial and feedback. Keep the fictional local plan and role boundaries clear. Counts and answers are indicators, not proof of system-wide improvement. Keep one consistent female Kore narrator voice with no character acting or voice changes. Articulate ng, nga, ug and kag clearly, finishing every phrase. Say Vlanche as one syllable, vlanch. Keep every authored negation and permission boundary audible. Speak Cebuano sugyot and mosugyot with the complete gy consonant cluster: proposal, never sugot or musugot meaning consent. Clearly say ipakaylap, Himoang tino, Kumpirmaha and ug exactly. In Hiligaynon retain the initial s in sang, the final s in Antes, and the h in ipaathag. No paraphrase or grammatical substitutions. Use exactly one warm adult female narrator for every heading, paragraph, quote and takeaway; never switch gender or voice. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+  "audio_sha256": "16f3efd02f9ea7f53ffe38bee58c33bd67cec46ceb066ffdde66e576c8175f74",
   "script_hash": "0fbffdbb21a38e4c176b259dec73eb399b2dc42f093e2098e442a43cc7f1d225",
-  "durationSeconds": 92.447,
+  "durationSeconds": 90.044,
   "beats": [
     {
       "zone": "observed",
       "index": 0,
       "text": "“Sin-o bala ang akon pamangkuton?” siling ni Mang Ernesto. Nagakalainlain ang sabat nga nabatian ni Vlanche sa duha ka pagbisita. Gintala niya ang pamangkot nga wala sang mga ngalan kag wala siya magbasol sang tawo.",
       "start_ms": 0,
-      "end_ms": 14120
+      "end_ms": 15520
     },
     {
       "zone": "proposal",
       "index": 1,
       "text": "Nagapanugyan si Vlanche sang isa ka malip-ot nga mensahe sa natalana nga mga pagbisita sa masunod nga semana. Panugyan pa lamang ini: hisguti kag kumpirmaha ang impormasyon antes gamiton.",
-      "start_ms": 14420,
-      "end_ms": 27620
+      "start_ms": 15820,
+      "end_ms": 28660
     },
     {
       "zone": "confirm",
       "index": 2,
       "text": "Nagapamangkot siya sa midwife parte sa kasamtangan nga contact, mensahe kag patakaran, kag nagapamati. Indi niya ipalapnag ang wala pa makumpirma nga impormasyon kag indi niya bag-uhon ang serbisyo nga siya lang.",
-      "start_ms": 27920,
-      "end_ms": 41080
+      "start_ms": 28960,
+      "end_ms": 42680
     },
     {
       "zone": "plan",
       "index": 3,
       "text": "Sa sini nga halimbawa, nakumpirma ang mensahe kag nagkasugot sa plano. Magagamit si Vlanche sang gin-usisa nga giya sa mga pagbisita, upod sa masarangan nga oras kag materyales. Balikon nila ini sa Biyernes.",
-      "start_ms": 41380,
-      "end_ms": 56660
+      "start_ms": 42980,
+      "end_ms": 56220
     },
     {
       "zone": "trial",
       "index": 4,
       "text": "Pagkatapos sang pagpaathag, nagapamangkot siya kon sin-o ang palapitan. Itala niya kon pila ang makasabat kag ano nga mga pamangkot ang nabilin, nga wala sang personal nga detalye. Gamay nga palatandaan lamang ini, indi garantiya sang epekto.",
-      "start_ms": 56960,
-      "end_ms": 73520
+      "start_ms": 56520,
+      "end_ms": 72480
     },
     {
       "zone": "review",
       "index": 5,
       "text": "Sa Biyernes, usisaon nila sang midwife ang mga panugyan kag bag-uhon ang mensahe kon kinahanglan. Obserbahi, kumpirmaha kag hisguti, maghimo sang gamay nga plano, tilawi kag baliki. Ano ang imo una nga tikang?",
-      "start_ms": 73820,
-      "end_ms": 92380
+      "start_ms": 72780,
+      "end_ms": 89980
     }
   ]
 }
