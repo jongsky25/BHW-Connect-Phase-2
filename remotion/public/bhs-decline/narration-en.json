@@ -1,0 +1,51 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 86.753,
+  "beats": [
+    {
+      "zone": "refusal",
+      "index": 0,
+      "text": "A visitor offers infant-formula samples, a poster, and a gift for promotion. Mimi says: Thank you. I will not accept or display these items.",
+      "start_ms": 0,
+      "end_ms": 10920
+    },
+    {
+      "zone": "reason",
+      "index": 1,
+      "text": "The Milk Code applies to formula promotion. Prescription samples have a different basis: the pharmaceutical order prohibits public distribution. Match the reason; the BHW does not approve independently.",
+      "start_ms": 11220,
+      "end_ms": 26340
+    },
+    {
+      "zone": "pressure",
+      "index": 2,
+      "text": "It is free; I will leave it here, says the visitor. Mimi responds: I will not accept or distribute it. Please do not leave it. No secret agreement or alternative promotion.",
+      "start_ms": 26640,
+      "end_ms": 40880
+    },
+    {
+      "zone": "report",
+      "index": 3,
+      "text": "Mimi tells the supervisor the product, offer, requested activity, and her refusal. Report facts through the local process, without patient data or guesses about motives.",
+      "start_ms": 41180,
+      "end_ms": 53780
+    },
+    {
+      "zone": "compare",
+      "index": 4,
+      "text": "Danilo accepts because he feels embarrassed to refuse. Mimi is respectful but clearly says no. Tone is insufficient if there is acceptance or a promised exception. Actions must match the words.",
+      "start_ms": 54080,
+      "end_ms": 69720
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Practice: acknowledge, clearly decline, explain the correct basis, and report. Repeat the boundary calmly. Practical role-play is observed separately; online completion alone is insufficient.",
+      "start_ms": 70020,
+      "end_ms": 86700
+    }
+  ]
+}
