@@ -253,8 +253,8 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
-        <Composition key={`uhc-local-system-${language}`} id={language === "fil" ? "LocalSystemStoryFil" : "LocalSystemStoryEn"}
+        {(["fil", "en", "ceb", "hil"] as const).map((language) => (
+          <Composition key={`uhc-local-system-${language}`} id={{fil: "LocalSystemStoryFil", en: "LocalSystemStoryEn", ceb: "LocalSystemStoryCeb", hil: "LocalSystemStoryHil"}[language]}
           component={LocalSystemStory} calculateMetadata={calculateLocalSystemMetadata}
           durationInFrames={LOCAL_SYSTEM_FALLBACK_DURATION} fps={LOCAL_SYSTEM_FPS} width={854} height={480}
           defaultProps={{language}}/>

@@ -15,7 +15,7 @@ export type LessonTranslation = {
   objectives: string[];
   read_sections: { id: string; heading: string; body: string; takeaway: string; check: TranslatedCheck | null }[];
   slides: { id: string; heading: string; display: string; check: TranslatedCheck | null }[];
-  assets: { id: string; alt: string; caption: string }[];
+  assets: { id: string; alt: string; caption: string; text_steps?: { id: string; title: string; text: string }[] }[];
   story_art: { alt: string; caption: string };
   ui: Record<string, string>;
   narration?: LessonNarration;
@@ -69,7 +69,7 @@ export function translateLesson(lesson: PublishedLesson, translation: LessonTran
       }),
       assets: lesson.revision.assets.map(asset => {
         const translated = translation.assets.find(value => value.id === asset.id);
-        return { ...asset, ...(translated ? { alt_fil: translated.alt, alt_en: translated.alt, caption_fil: translated.caption, caption_en: translated.caption } : {}),
+        return { ...asset, ...(translated ? { alt_fil: translated.alt, alt_en: translated.alt, caption_fil: translated.caption, caption_en: translated.caption, text_steps: translated.text_steps } : {}),
           ...(asset.id === lesson.revision.featured_asset_id ? {
             path: translation.poster ?? asset.path, video: undefined,
             // Do not fall back to a different spoken language when missing.
