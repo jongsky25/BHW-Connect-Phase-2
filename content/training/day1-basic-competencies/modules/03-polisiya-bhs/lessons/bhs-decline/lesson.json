@@ -19,10 +19,46 @@
         "m3.competency"
       ],
       "asset_ids": [
-        "practice-map"
+        "mimi-respectful-refusal"
       ],
-      "takeaway_fil": "Ang pinakamalakas na pagtanggi ay hindi galit — ito ay malinaw, may batayan, walang kasunduan, at ipinaaalam sa midwife.",
-      "takeaway_en": "The strongest refusal isn't an angry one — it's clear, has a basis, makes no deal, and is reported to the midwife.",
+      "takeaway_fil": "Magalang na tono, malinaw na hindi, at tiyak na dahilan.",
+      "takeaway_en": "Use a respectful tone, a clear refusal, and a specific reason.",
+      "check": null
+    },
+    {
+      "id": "match-policy",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-respectful-refusal"
+      ],
+      "takeaway_fil": "Tamang produkto, tamang batayan; huwag mag-imbento ng pahintulot.",
+      "takeaway_en": "Match the policy to the product; do not invent permission.",
+      "check": null
+    },
+    {
+      "id": "hold-boundary",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-respectful-refusal"
+      ],
+      "takeaway_fil": "Ulitin ang hangganan nang mahinahon; walang kasunduang umiikot sa polisiya.",
+      "takeaway_en": "Repeat the boundary calmly; make no arrangement to bypass policy.",
+      "check": null
+    },
+    {
+      "id": "report-facts",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-respectful-refusal"
+      ],
+      "takeaway_fil": "Mag-ulat ng katotohanan at sariling tugon, hindi haka-haka.",
+      "takeaway_en": "Report the facts and your response, without speculation.",
       "check": null
     },
     {
@@ -30,25 +66,43 @@
       "concept_ids": [
         "m3.competency"
       ],
-      "asset_ids": [],
-      "takeaway_fil": "Kapag tinanggap ang alok nang walang batayan, ang kumpanya na, hindi ang BHS, ang nagpapasya kung ano ang mabuti para sa pasyente.",
-      "takeaway_en": "When an offer is accepted with no basis behind it, it is the company, not the BHS, that ends up deciding what's good for the patient.",
+      "asset_ids": [
+        "mimi-respectful-refusal"
+      ],
+      "takeaway_fil": "Hindi sapat ang magalang na salita kung tinatanggap pa rin ang alok.",
+      "takeaway_en": "Polite words are insufficient if the offer is still accepted.",
+      "check": null
+    },
+    {
+      "id": "refusal-check",
+      "concept_ids": [
+        "m3.competency"
+      ],
+      "asset_ids": [
+        "mimi-respectful-refusal"
+      ],
+      "takeaway_fil": "Magpasalamat, tumanggi, ipaliwanag ang tamang batayan, at mag-ulat.",
+      "takeaway_en": "Acknowledge, decline, explain the correct basis, and report.",
       "check": {
-        "prompt_fil": "Paano tatanggi nang magalang?",
-        "prompt_en": "How can you decline respectfully?",
+        "prompt_fil": "Alin ang pinakamalinaw na tugon sa alok ng prescription samples?",
+        "prompt_en": "Which is the clearest response to the prescription-sample offer?",
         "options": [
           {
-            "fil": "Ipaliwanag ang polisiya at idulog ang alok sa namamahala.",
-            "en": "Explain the policy and refer the offer to the supervisor."
+            "fil": "“Salamat po sa pagpunta. Hindi ko po tatanggapin o ipamimigay ang prescription samples o regalo. Hindi para sa pamimigay sa publiko ang mga sample sa pharmaceutical order. Huwag po munang iwan ang box; ipapaalam ko ang detalye sa namamahala.”",
+            "en": "“Thank you for coming. I will not accept or distribute the prescription samples or gift. The pharmaceutical order does not permit samples for distribution to the public. Please do not leave the box; I will inform the supervisor of the details.”"
           },
           {
-            "fil": "Pumayag muna para hindi mapahiya ang bisita.",
-            "en": "Agree first to avoid embarrassing the visitor."
+            "fil": "“Salamat po. Iwan muna ang box; wala pa namang pamimigay hangga’t hindi bumabalik ang midwife.”",
+            "en": "“Thank you. Leave the box for now; nothing will be distributed until the midwife returns.”"
+          },
+          {
+            "fil": "“Bawal po sa Milk Code ang lahat ng medicine samples, pero puwede kong itanong kung papayag sila sa labas ng BHS.”",
+            "en": "“The Milk Code bans all medicine samples, but I can ask whether they will allow distribution outside the BHS.”"
           }
         ],
         "correct_option_index": 0,
-        "feedback_fil": "Ipaliwanag ang polisiya at idulog ang alok sa namamahala. Ipaliwanag ang dahilan gamit ang sitwasyon sa aralin.",
-        "feedback_en": "Explain the policy and refer the offer to the supervisor. Explain why using the lesson situation."
+        "feedback_fil": "Tamang pharmaceutical explanation ang gamit ng unang tugon. Walang pagtanggap, pamimigay, o pangakong exception. Ang pag-iwan ng box ay pagtanggap pa rin; ang Milk Code ay maling batayan para sa prescription samples. Hindi lunas ang paglipat sa labas. Mag-ulat ng katotohanan ayon sa lokal na proseso.",
+        "feedback_en": "The first response uses the correct pharmaceutical explanation, without acceptance, distribution, or a promised exception. Keeping the box still accepts the offer; the Milk Code is the wrong basis for prescription samples. Moving outside does not fix the problem. Report facts through the local process."
       }
     }
   ],
@@ -57,38 +111,82 @@
       "id": "m3.competency",
       "read_ids": [
         "section-4",
-        "section-7"
+        "match-policy",
+        "hold-boundary",
+        "report-facts",
+        "section-7",
+        "refusal-check"
       ],
       "slide_ids": [
         "slide-section-4",
-        "slide-section-7"
+        "slide-match-policy",
+        "slide-hold-boundary",
+        "slide-report-facts",
+        "slide-section-7",
+        "slide-refusal-check"
       ],
       "source_ids": [
-        "m3.competency-source"
+        "m3.competency-source",
+        "m3.milk-code-source",
+        "milk-rirr",
+        "milk-decision",
+        "m3.pharma-ban-source",
+        "pharma-reiteration"
       ]
     }
   ],
   "sources": [
     {
       "id": "m3.competency-source",
-      "title": "Facilitator Guide — inherited page reference; final audit pending",
+      "title": "BHW Facilitator Guide — printed p.15 / PDF p.22: communicating workplace policy and training outcomes",
       "pdf_pages": [
         22
       ],
       "url": "https://github.com/jongsky25/BHW-Connect-Phase-2/blob/main/docs/source-material/day1-basic-competencies/facilitator-guide.md"
+    },
+    {
+      "id": "m3.milk-code-source",
+      "title": "EO 51 (1986), sections 3, 4(g), 7(b)-(c), 8(c)-(e): scope, health workers, promotion and inducements",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/5/8516"
+    },
+    {
+      "id": "milk-rirr",
+      "title": "Joint AO 2012-0027 — Milk Code IAC guidelines, sections 13–14 and 20",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/69023"
+    },
+    {
+      "id": "milk-decision",
+      "title": "DOH DC 2008-0064 — Supreme Court G.R. 173034 invalidated RIRR sections 4(f), 11 and 46; other provisions sustained",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/55273"
+    },
+    {
+      "id": "m3.pharma-ban-source",
+      "title": "DOH AO 2015-0053 — scope III; V.B.2(e)-(i), 7, 9: promotion, facility limits, educational items and samples",
+      "pdf_pages": [
+        3,
+        6,
+        8,
+        10
+      ],
+      "url": "https://www.fda.gov.ph/wp-content/uploads/2024/01/A.O-2015-0053.pdf"
+    },
+    {
+      "id": "pharma-reiteration",
+      "title": "DOH HFDB — DC 2024-0141, 22 April 2024, reiteration of AO 2015-0053 and ethical standards",
+      "url": "https://sites.google.com/view/doh-hfdb/2024-q2-updates/dc-2024-0141"
     }
   ],
   "assets": [
     {
-      "id": "practice-map",
-      "path": "/training/bhw-next-draft/process-e56e73f832d7.svg",
-      "content_hash": "e56e73f832d719597d2e8462671901c5beb0ed07b6b386724b02be6a7f6bf02a",
-      "alt_fil": "Tatlong hakbang: unawain, tiyakin, at isagawa.",
-      "alt_en": "Three steps: understand, verify and practice.",
-      "caption_fil": "Draft na gabay sa talakayan; kailangan ng pagsusuri.",
-      "caption_en": "Draft discussion guide; review required.",
-      "provenance": "Original code-authored SVG for the 1.2–1.5 conversion draft, 2026-09-24. No external imagery. Not owner-approved.",
-      "review_status": "approved"
+      "id": "mimi-respectful-refusal",
+      "path": "/training/bhw-1-3/mimi-respectful-refusal-7f71c23bc4bb.png",
+      "content_hash": "7f71c23bc4bb2aa19989beb79fbaa5926101203b09fdb0a7a13953c887d4befb",
+      "alt_fil": "Malinaw at magalang na tumatanggi si Mimi; hawak pa rin ng kinatawan ang box at sheet habang itinuturo niya ang blangkong talaan.",
+      "alt_en": "Mimi gives a clear respectful refusal; the representative retains the box and sheet while she indicates a blank clipboard.",
+      "caption_fil": "Malinaw na hindi · Tamang dahilan · Factual na ulat. Draft para sa owner review.",
+      "caption_en": "Clear refusal · Accurate reason · Factual report. Draft for owner review.",
+      "provenance": "Original built-in imagegen, 2026-10-04 Asia/Manila; model identifier not returned by tool. Identity/style reference: approved lesson 1.3.1 Mimi image b9623263a1881f26b6eb4aeb5b153ceb68b003c61d861f87636e3d2c1c96cc01. New scene is draft, no new owner or SME approval. Exact prompt: Use case: illustration-story. Asset type: new original landscape educational illustration for BHW Connect lesson 1.3.3, Declining respectfully. The attached image is an identity and visual-style REFERENCE only, not an edit target. Preserve the fictional Filipina BHW Mimi’s recognizable face, approximately 50 years old, straight shoulder-length black hair, lavender polo and navy trousers. Create a distinct later moment at the same modest unbranded airy Philippine barangay health station: Mimi is speaking a clear respectful refusal to the generic beige-shirt Filipino visitor. Mimi stands upright with one relaxed open hand near her chest and her other hand indicating a blank clipboard on the table, conveying a firm boundary and factual reporting. The visitor has lowered the CLOSED unbranded blank box and rolled blank sheet to his own side, is listening respectfully, and is not handing anything to Mimi. No gift exchange. New composition and poses; medium waist-up landscape, both faces inside central 60 percent, main gestures clearly visible, natural anatomy and hands. Warm daylight and leafy background, realistic photographic illustrative style consistent with reference. No patient, clinical procedure, text, letters, logos, brands, exposed medicines/formula, personal data, official seal, watermark, threat, or villain caricature. This new lesson-specific scene is draft for owner review; Mimi’s identity was previously approved.",
+      "review_status": "draft"
     }
   ]
 }
