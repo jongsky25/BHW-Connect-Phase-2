@@ -2,7 +2,7 @@ import {
   AbsoluteFill, Audio, Img, Series, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig, type CalculateMetadataFunction,
 } from "remotion";
-import { ROLES_APPLICATION_BEATS } from "./narration";
+import { ROLES_APPLICATION_BEATS, HANDOVER_TRANSLATIONS, APPLICATION_SCENE_LABELS } from "./narration";
 
 export const ROLES_APPLICATION_FPS = 30;
 export const ROLES_APPLICATION_FALLBACK_DURATION = ROLES_APPLICATION_FPS * 100;
@@ -12,7 +12,7 @@ const mint = "#a7e3c4";
 const ink = "#173630";
 
 export type RolesApplicationStoryProps = {
-  language: "fil" | "en";
+  language: "fil" | "en" | "ceb" | "hil";
   beatFrames?: number[];
   audioSrc?: string;
 };
@@ -49,9 +49,9 @@ function RoleIcon({ kind }: { kind: string }) {
   </svg>;
 }
 
-function HandoverCards({ language, frame }: { language: "fil" | "en"; frame: number }) {
-  const labels = language === "fil" ? ["Nakita", "Ginawa", "Kailangan"] : ["Observed", "Done", "Needed"];
-  const lines = language === "fil" ? ["Tubig sa 3 bakuran", "Naitala at nakinig", "Gabay sa hakbang"] : ["Water in 3 yards", "Recorded and listened", "Guidance on the step"];
+function HandoverCards({ language, frame }: { language: RolesApplicationStoryProps["language"]; frame: number }) {
+  const labels = language === "ceb" || language === "hil" ? HANDOVER_TRANSLATIONS[language].labels : language === "fil" ? ["Nakita", "Ginawa", "Kailangan"] : ["Observed", "Done", "Needed"];
+  const lines = language === "ceb" || language === "hil" ? HANDOVER_TRANSLATIONS[language].lines : language === "fil" ? ["Tubig sa 3 bakuran", "Naitala at nakinig", "Gabay sa hakbang"] : ["Water in 3 yards", "Recorded and listened", "Guidance on the step"];
   return <div style={{ display: "flex", gap: 10, width: "100%" }}>
     {labels.map((label, i) => <div key={label} style={{ flex: 1, borderRadius: 15, background: cream, color: ink, padding: "16px 12px", opacity: interpolate(frame, [i * 12, i * 12 + 15], [0, 1], clamp), transform: `translateY(${interpolate(frame, [i * 12, i * 12 + 15], [16, 0], clamp)}px)` }}>
       <div style={{ fontSize: 22, fontWeight: 800 }}>{label}</div>
@@ -60,7 +60,7 @@ function HandoverCards({ language, frame }: { language: "fil" | "en"; frame: num
   </div>;
 }
 
-function Scene({ index, language }: { index: number; language: "fil" | "en" }) {
+function Scene({ index, language }: { index: number; language: RolesApplicationStoryProps["language"] }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const beat = ROLES_APPLICATION_BEATS[index];
@@ -74,17 +74,17 @@ function Scene({ index, language }: { index: number; language: "fil" | "en" }) {
     <div style={{ position: "absolute", top: 26, left: 36, color: mint, fontSize: 16, fontWeight: 700, letterSpacing: 2 }}>BHW CONNECT · 1.1.6</div>
     <div style={{ position: "absolute", top: 27, right: 36, color: mint, fontSize: 16 }}>{index + 1} / 6</div>
     {summary ? <div style={{ margin: "69px 36px 0", opacity }}>
-      <h1 style={{ margin: 0, fontSize: 29, lineHeight: 1.2, color: cream }}>{beat.title_fil}<br/>{beat.title_en}</h1>
+      <h1 style={{ margin: 0, fontSize: 29, lineHeight: 1.2, color: cream }}>{language === "ceb" || language === "hil" ? beat[`title_${language}`] : <>{beat.title_fil}<br/>{beat.title_en}</>}</h1>
       <div style={{ display: "flex", gap: 12, marginTop: 20 }}>
         {roles.map((role, i) => <div key={role} style={{ flex: 1, background: cream, borderRadius: 17, padding: 13, display: "flex", alignItems: "center", gap: 12, opacity: interpolate(frame,[i * 10,i * 10 + 12],[0,1],clamp) }}>
           <RoleIcon kind={role}/><strong style={{ fontSize: 17, lineHeight: 1.15, color: ink }}>{["Health Educator", "Community Organizer", "Health Service Provider"][i]}</strong>
         </div>)}
       </div>
       <div style={{ marginTop: 17 }}><HandoverCards language={language} frame={frame}/></div>
-      <p style={{ color: mint, fontSize: 18, marginTop: 15, lineHeight: 1.2 }}>{beat.detail_fil}<br/>{beat.detail_en}</p>
+      <p style={{ color: mint, fontSize: 18, marginTop: 15, lineHeight: 1.2 }}>{language === "ceb" || language === "hil" ? beat[`detail_${language}`] : <>{beat.detail_fil}<br/>{beat.detail_en}</>}</p>
     </div> : <>
       <div style={{ position: "absolute", left: 36, top: 101, width: 365, opacity, transform: `translateY(${(1-enter)*22}px)` }}>
-        <h1 style={{ margin: 0, color: cream, fontSize: 38, lineHeight: 1.08 }}>{beat[`title_${language}`]}</h1>
+        <h1 style={{ margin: 0, color: cream, fontSize: language === "ceb" || language === "hil" ? 35 : 38, lineHeight: 1.08 }}>{beat[`title_${language}`]}</h1>
         <p style={{ color: mint, fontSize: 23, lineHeight: 1.28, whiteSpace: "pre-line", marginTop: 22 }}>{beat[`detail_${language}`]}</p>
       </div>
       <div style={{ position: "absolute", right: 36, top: 89, width: 365, height: 244, borderRadius: 22, overflow: "hidden", opacity: enter, transform: `translateX(${(1-enter)*45}px)`, boxShadow: "0 15px 30px #06251d66" }}>
@@ -92,7 +92,7 @@ function Scene({ index, language }: { index: number; language: "fil" | "en" }) {
       </div>
       <div style={{ position: "absolute", right: 36, top: 349, width: 365, color: ink, background: cream, borderRadius: 16, padding: "13px 16px", display: "flex", alignItems: "center", gap: 12, opacity }}>
         <RoleIcon kind={beat.id}/>
-        <span style={{ fontSize: 19, fontWeight: 700, lineHeight: 1.2 }}>{beat.id === "observation" ? (language === "fil" ? "Nakita ang tubig. Linawin ang hindi tiyak." : "Water was observed. Clarify uncertainty.") : handover ? (language === "fil" ? "Itugma ang ulat sa tala." : "Match the report to the record.") : beat[`detail_${language}`].split("\n")[0]}</span>
+        <span style={{ fontSize: 19, fontWeight: 700, lineHeight: 1.2 }}>{beat.id === "observation" ? (language === "ceb" || language === "hil" ? APPLICATION_SCENE_LABELS[language].observation : language === "fil" ? "Nakita ang tubig. Linawin ang hindi tiyak." : "Water was observed. Clarify uncertainty.") : handover ? (language === "ceb" || language === "hil" ? APPLICATION_SCENE_LABELS[language].handover : language === "fil" ? "Itugma ang ulat sa tala." : "Match the report to the record.") : beat[`detail_${language}`].split("\n")[0]}</span>
       </div>
     </>}
     <div style={{ position: "absolute", left: 36, bottom: 17, display: "flex", gap: 7 }} aria-hidden="true">{ROLES_APPLICATION_BEATS.map((b,i)=><div key={b.id} style={{ width: i === index ? 28 : 8, height: 7, borderRadius: 9, background: mint, opacity: i === index ? 1 : .45 }}/>)}</div>

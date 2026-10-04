@@ -1,0 +1,52 @@
+{
+  "language": "hil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "script_hash": "c56dd49f0c7a0946e4dac8c5109886ac0b6a4f8f493e4249aed0a49c0f5e2e12",
+  "durationSeconds": 47.073,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Pagkatapos makaistorya si Aling Nena, ginpamangkot ni Riza ang midwife kon ano nga impormasyon ang kinahanglan.",
+      "start_ms": 0,
+      "end_ms": 6920
+    },
+    {
+      "zone": "household",
+      "index": 1,
+      "text": "Ang household profile nagalaragway sang isa ka panimalay. Indi ini pamatuod nga may serbisyo nga nahatag.",
+      "start_ms": 7220,
+      "end_ms": 14660
+    },
+    {
+      "zone": "master-list",
+      "index": 2,
+      "text": "Ang master list nagasugid kon sin-o ang kabahin sang isa ka grupo. Indi ini rekord sang serbisyo nga nahatag.",
+      "start_ms": 14960,
+      "end_ms": 22280
+    },
+    {
+      "zone": "registry",
+      "index": 3,
+      "text": "Ang registry ang tan-awon kon sin-o ang nakabaton sang health teaching. Klaruhon anay ang entry nga indi sigurado.",
+      "start_ms": 22580,
+      "end_ms": 30740
+    },
+    {
+      "zone": "assigned-form",
+      "index": 4,
+      "text": "Sa ginsugo nga form, siguroha ang ginapangayo nga detalye kag ang magabaton. Sundon ang aprubado nga lokal nga paagi sang pagpasa.",
+      "start_ms": 31040,
+      "end_ms": 40440
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Pilia ang rekord suno sa pamangkot, usisaa ang impormasyon, kag indi magpangagpas.",
+      "start_ms": 40740,
+      "end_ms": 47020
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {LocalSystemStory, calculateLocalSystemMetadata, LOCAL_SYSTEM_FPS, LOCAL_SYSTEM_FALLBACK_DURATION} from "./uhc-local-system/LocalSystemStory";
 import "./index.css";
 import { RolesApplicationStory, calculateRolesApplicationMetadata, ROLES_APPLICATION_FPS, ROLES_APPLICATION_FALLBACK_DURATION } from "./roles-application/RolesApplicationStory";
 import { Composition } from "remotion";
@@ -84,6 +85,19 @@ export const RemotionRoot: React.FC = () => {
         height={480}
         defaultProps={{ language: "ceb" }}
       />
+      {(["ceb", "hil"] as const).map((language) => (
+        <Composition
+          key={`service-provider-${language}`}
+          id={language === "ceb" ? "ServiceProviderStoryCeb" : "ServiceProviderStoryHil"}
+          component={ServiceProviderStory}
+          calculateMetadata={calculateServiceProviderMetadata}
+          durationInFrames={SERVICE_PROVIDER_FALLBACK_DURATION}
+          fps={SERVICE_PROVIDER_FPS}
+          width={854}
+          height={480}
+          defaultProps={{ language }}
+        />
+      ))}
       {(["ceb", "hil"] as const).map((language) => (
         <Composition
           key={`community-organizer-${language}`}
@@ -175,10 +189,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
+      {(["fil", "en", "ceb", "hil"] as const).map((language) => (
         <Composition
           key={`records-${language}`}
-          id={language === "fil" ? "RecordsStoryFil" : "RecordsStoryEn"}
+          id={{ fil: "RecordsStoryFil", en: "RecordsStoryEn", ceb: "RecordsStoryCeb", hil: "RecordsStoryHil" }[language]}
           component={RecordsStory}
           calculateMetadata={calculateRecordsMetadata}
           durationInFrames={RECORDS_FALLBACK_DURATION}
@@ -214,10 +228,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
+      {(["fil", "en", "ceb", "hil"] as const).map((language) => (
         <Composition
           key={`roles-application-${language}`}
-          id={language === "fil" ? "RolesApplicationStoryFil" : "RolesApplicationStoryEn"}
+          id={({ fil: "RolesApplicationStoryFil", en: "RolesApplicationStoryEn", ceb: "RolesApplicationStoryCeb", hil: "RolesApplicationStoryHil" })[language]}
           component={RolesApplicationStory}
           calculateMetadata={calculateRolesApplicationMetadata}
           durationInFrames={ROLES_APPLICATION_FALLBACK_DURATION}
@@ -226,6 +240,12 @@ export const RemotionRoot: React.FC = () => {
           height={480}
           defaultProps={{ language }}
         />
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`uhc-local-system-${language}`} id={language === "fil" ? "LocalSystemStoryFil" : "LocalSystemStoryEn"}
+          component={LocalSystemStory} calculateMetadata={calculateLocalSystemMetadata}
+          durationInFrames={LOCAL_SYSTEM_FALLBACK_DURATION} fps={LOCAL_SYSTEM_FPS} width={854} height={480}
+          defaultProps={{language}}/>
       ))}
     </>
   );

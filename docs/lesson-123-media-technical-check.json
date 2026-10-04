@@ -1,0 +1,1071 @@
+{
+  "method": "ffprobe streams and actual ffmpeg PCM decode; RMS checked in every Read sentence/zone and video beat. Non-silence is not proof of correct pronunciation.",
+  "reports": [
+    {
+      "id": "local-system-board-en",
+      "sha256": "c2a3dbbb3f81f5e7cb9278db94a572146ea19c6e16673f225a07ff447999d171",
+      "duration_seconds": 61.414,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 4120,
+          "rms": 4085.42
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 4420,
+          "end_ms": 16340,
+          "rms": 4225.2
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 16640,
+          "end_ms": 24440,
+          "rms": 4237.25
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 24740,
+          "end_ms": 35300,
+          "rms": 4027.2
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 35600,
+          "end_ms": 42600,
+          "rms": 4392.07
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 42900,
+          "end_ms": 47940,
+          "rms": 4297.49
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 48240,
+          "end_ms": 56360,
+          "rms": 4338.81
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 56660,
+          "end_ms": 61340,
+          "rms": 4705.77
+        }
+      ]
+    },
+    {
+      "id": "local-system-board-fil",
+      "sha256": "47aca58aea30eb9566a71b807e31825e113c515076f9d635d54104fe5f36ba38",
+      "duration_seconds": 66.8735,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3920,
+          "rms": 3761.21
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 4220,
+          "end_ms": 17540,
+          "rms": 3933.21
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 17840,
+          "end_ms": 25640,
+          "rms": 4473.15
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 25940,
+          "end_ms": 38500,
+          "rms": 6105.51
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 38800,
+          "end_ms": 45240,
+          "rms": 4139.21
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 45540,
+          "end_ms": 50540,
+          "rms": 3896.37
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 50840,
+          "end_ms": 60120,
+          "rms": 4561.98
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 60420,
+          "end_ms": 66820,
+          "rms": 4585.86
+        }
+      ]
+    },
+    {
+      "id": "local-system-check-en",
+      "sha256": "7e5f9a20e14fc35ae23d3ed5fe1be8c0bbfa8469e762ae22304be24fcfbd9c0c",
+      "duration_seconds": 49.894,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2440,
+          "rms": 3767.89
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2740,
+          "end_ms": 9260,
+          "rms": 4107.31
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9560,
+          "end_ms": 12960,
+          "rms": 5118.79
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13260,
+          "end_ms": 17780,
+          "rms": 3424.42
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 18080,
+          "end_ms": 26240,
+          "rms": 4065.21
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26540,
+          "end_ms": 33140,
+          "rms": 4876.67
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 33440,
+          "end_ms": 40040,
+          "rms": 3907.11
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 40340,
+          "end_ms": 49820,
+          "rms": 4275.58
+        }
+      ]
+    },
+    {
+      "id": "local-system-check-fil",
+      "sha256": "8736dcfbf15f538e125a9c60bed923f8be039e950a6157a2fe0e2bd37d795c0f",
+      "duration_seconds": 55.484,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3240,
+          "rms": 4385.51
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3540,
+          "end_ms": 11860,
+          "rms": 4606.8
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 12160,
+          "end_ms": 15800,
+          "rms": 5429.39
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16100,
+          "end_ms": 21780,
+          "rms": 4678.49
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 22080,
+          "end_ms": 33400,
+          "rms": 4469.59
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 33700,
+          "end_ms": 39940,
+          "rms": 4765.43
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 40240,
+          "end_ms": 47640,
+          "rms": 5102.84
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 47940,
+          "end_ms": 55420,
+          "rms": 4743.38
+        }
+      ]
+    },
+    {
+      "id": "local-system-feedback-en",
+      "sha256": "6c9ea1a37a423162f44bbb2480606a8a58be79c2befd9f44906682cecadba008",
+      "duration_seconds": 59.115,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3560,
+          "rms": 4422.17
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3860,
+          "end_ms": 9340,
+          "rms": 3601.22
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9640,
+          "end_ms": 14560,
+          "rms": 4041.21
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 14860,
+          "end_ms": 21420,
+          "rms": 3755.24
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 21720,
+          "end_ms": 28320,
+          "rms": 4558.23
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 28620,
+          "end_ms": 32060,
+          "rms": 4432.54
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 32360,
+          "end_ms": 37600,
+          "rms": 3853.76
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 37900,
+          "end_ms": 43740,
+          "rms": 4628.7
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 44040,
+          "end_ms": 52360,
+          "rms": 4602.1
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 52660,
+          "end_ms": 59060,
+          "rms": 4173.86
+        }
+      ]
+    },
+    {
+      "id": "local-system-feedback-fil",
+      "sha256": "aba72dce8d2c04ba101aed6e7b0071d3e9bbf9eae5c3c7f6c4be414de13e67eb",
+      "duration_seconds": 65.933,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 4200,
+          "rms": 4201.74
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 4500,
+          "end_ms": 10660,
+          "rms": 3887.64
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10960,
+          "end_ms": 15360,
+          "rms": 5156.87
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 15660,
+          "end_ms": 22940,
+          "rms": 4524.33
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 23240,
+          "end_ms": 32200,
+          "rms": 4221.49
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 32500,
+          "end_ms": 36020,
+          "rms": 4193.24
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 36320,
+          "end_ms": 41360,
+          "rms": 5780.49
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 41660,
+          "end_ms": 48340,
+          "rms": 4495.98
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 48640,
+          "end_ms": 58360,
+          "rms": 4844.38
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 58660,
+          "end_ms": 65860,
+          "rms": 4636.17
+        }
+      ]
+    },
+    {
+      "id": "local-system-observation-en",
+      "sha256": "2e2006dada2601d378ca99a4c6876d5b825466f9589cffbaa29e23e89b1c0bb9",
+      "duration_seconds": 55.3795,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3160,
+          "rms": 5188.33
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3460,
+          "end_ms": 13140,
+          "rms": 4371.19
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 13440,
+          "end_ms": 16200,
+          "rms": 4144.63
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16500,
+          "end_ms": 19580,
+          "rms": 4078.88
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19880,
+          "end_ms": 25240,
+          "rms": 3838.75
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 25540,
+          "end_ms": 32060,
+          "rms": 4518.4
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 32360,
+          "end_ms": 36560,
+          "rms": 5028.49
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 36860,
+          "end_ms": 47740,
+          "rms": 4567.75
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 48040,
+          "end_ms": 55320,
+          "rms": 4520.34
+        }
+      ]
+    },
+    {
+      "id": "local-system-observation-fil",
+      "sha256": "2ac6f58f92a400bdf3f54231c7e552e0068a2167afb3d367f5adddc6fddadd3e",
+      "duration_seconds": 61.466,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3040,
+          "rms": 3202.11
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3340,
+          "end_ms": 15460,
+          "rms": 5180.93
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 15760,
+          "end_ms": 18480,
+          "rms": 5265.9
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 18780,
+          "end_ms": 22100,
+          "rms": 4194.89
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 22400,
+          "end_ms": 27160,
+          "rms": 4032.42
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 27460,
+          "end_ms": 37020,
+          "rms": 4463.0
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 37320,
+          "end_ms": 41760,
+          "rms": 5913.79
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 42060,
+          "end_ms": 54380,
+          "rms": 4539.73
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 54680,
+          "end_ms": 61400,
+          "rms": 4375.54
+        }
+      ]
+    },
+    {
+      "id": "local-system-promotion-en",
+      "sha256": "71762d7b02623424d63cd31bca9b45d9b1555d0847b33af50bcce799ac76dbad",
+      "duration_seconds": 60.44725,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3240,
+          "rms": 4613.62
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3540,
+          "end_ms": 17220,
+          "rms": 4414.87
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 17520,
+          "end_ms": 21920,
+          "rms": 3649.15
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 22220,
+          "end_ms": 31980,
+          "rms": 4120.84
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 32280,
+          "end_ms": 38800,
+          "rms": 3845.21
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 39100,
+          "end_ms": 44620,
+          "rms": 3673.74
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 44920,
+          "end_ms": 54920,
+          "rms": 4158.9
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 55220,
+          "end_ms": 60380,
+          "rms": 2626.51
+        }
+      ]
+    },
+    {
+      "id": "local-system-promotion-fil",
+      "sha256": "6074aac64484df252214206192000c1d62bef693cc68cd1a6b233284655b6282",
+      "duration_seconds": 65.09725,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3080,
+          "rms": 5370.79
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3380,
+          "end_ms": 19100,
+          "rms": 4247.63
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 19400,
+          "end_ms": 24840,
+          "rms": 4764.93
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 25140,
+          "end_ms": 33540,
+          "rms": 3958.16
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 33840,
+          "end_ms": 40400,
+          "rms": 4729.94
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 40700,
+          "end_ms": 47380,
+          "rms": 3604.86
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 47680,
+          "end_ms": 58240,
+          "rms": 5602.25
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 58540,
+          "end_ms": 65020,
+          "rms": 3878.48
+        }
+      ]
+    },
+    {
+      "id": "section-5-en",
+      "sha256": "2f4333d1bf40abfd1b54bcedf6518d390476f68ba7a915046828b79a0bc85666",
+      "duration_seconds": 59.14125,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2360,
+          "rms": 3561.76
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2660,
+          "end_ms": 12260,
+          "rms": 4797.42
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 12560,
+          "end_ms": 17680,
+          "rms": 3882.08
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 17980,
+          "end_ms": 20260,
+          "rms": 3674.58
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 20560,
+          "end_ms": 25680,
+          "rms": 3766.46
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 25980,
+          "end_ms": 35460,
+          "rms": 3867.47
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 35760,
+          "end_ms": 48120,
+          "rms": 4352.48
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 48420,
+          "end_ms": 53300,
+          "rms": 3597.02
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 53600,
+          "end_ms": 59080,
+          "rms": 4316.49
+        }
+      ]
+    },
+    {
+      "id": "section-5-fil",
+      "sha256": "ef5328807ded3158791961cb533e137fc782b8d3bc8fd9971016192d8e98a6eb",
+      "duration_seconds": 60.4995,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "mp3",
+          "width": null,
+          "height": null,
+          "sample_rate": "22050",
+          "channels": 1
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2680,
+          "rms": 2806.17
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2980,
+          "end_ms": 15020,
+          "rms": 3819.74
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 15320,
+          "end_ms": 20200,
+          "rms": 6018.01
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 20500,
+          "end_ms": 22500,
+          "rms": 4596.1
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 22800,
+          "end_ms": 27720,
+          "rms": 3698.97
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 28020,
+          "end_ms": 37300,
+          "rms": 4770.23
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 37600,
+          "end_ms": 50000,
+          "rms": 4744.08
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 50300,
+          "end_ms": 54100,
+          "rms": 4499.49
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 54400,
+          "end_ms": 60440,
+          "rms": 5140.95
+        }
+      ]
+    },
+    {
+      "id": "video-fil",
+      "sha256": "eb5fd594c7fee161e9a687c6c90bcbf31617efb5db33fd52524b3d2bf3748b5e",
+      "duration_seconds": 78.144,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 854,
+          "height": 480,
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "question",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 9720,
+          "rms": 2629.79
+        },
+        {
+          "zone": "roles",
+          "index": 1,
+          "start_ms": 10020,
+          "end_ms": 23300,
+          "rms": 2649.24
+        },
+        {
+          "zone": "observation",
+          "index": 2,
+          "start_ms": 23600,
+          "end_ms": 36680,
+          "rms": 3086.39
+        },
+        {
+          "zone": "promotion",
+          "index": 3,
+          "start_ms": 36980,
+          "end_ms": 49900,
+          "rms": 3305.85
+        },
+        {
+          "zone": "discussion",
+          "index": 4,
+          "start_ms": 50200,
+          "end_ms": 61800,
+          "rms": 3171.24
+        },
+        {
+          "zone": "feedback",
+          "index": 5,
+          "start_ms": 62100,
+          "end_ms": 76940,
+          "rms": 2582.2
+        }
+      ]
+    },
+    {
+      "id": "video-en",
+      "sha256": "25d3c2f16e2fe3e7678c2bc197b89c0893407e86fb18db6d154d6bb5a0846df2",
+      "duration_seconds": 71.978667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 854,
+          "height": 480,
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "measured_zones": [
+        {
+          "zone": "question",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 10360,
+          "rms": 2574.34
+        },
+        {
+          "zone": "roles",
+          "index": 1,
+          "start_ms": 10660,
+          "end_ms": 22340,
+          "rms": 3279.57
+        },
+        {
+          "zone": "observation",
+          "index": 2,
+          "start_ms": 22640,
+          "end_ms": 35120,
+          "rms": 2451.47
+        },
+        {
+          "zone": "promotion",
+          "index": 3,
+          "start_ms": 35420,
+          "end_ms": 46540,
+          "rms": 3011.44
+        },
+        {
+          "zone": "discussion",
+          "index": 4,
+          "start_ms": 46840,
+          "end_ms": 58000,
+          "rms": 2668.36
+        },
+        {
+          "zone": "feedback",
+          "index": 5,
+          "start_ms": 58300,
+          "end_ms": 70740,
+          "rms": 3097.08
+        }
+      ]
+    }
+  ]
+}

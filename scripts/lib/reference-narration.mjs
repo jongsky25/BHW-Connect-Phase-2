@@ -14,7 +14,7 @@ import { applyWordPronunciations } from "./narration-pronunciation.mjs";
 import { createHash } from "node:crypto";
 import { buildNarrationZones } from "./narration-zones.mjs";
 import { computeContentHash } from "./tts-render-core.mjs";
-import { geminiVoiceId, BHS_PROMOTIONS_STORY_STYLES, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
+import { geminiVoiceId, BHS_PROMOTIONS_STORY_STYLES, LOCAL_SYSTEM_STORY_STYLES, PRIMARY_CARE_STORY_STYLES, ROLES_APPLICATION_STORY_STYLES, ORGANIZER_STORY_STYLES, RECORDS_STORY_STYLES, SERVICE_PROVIDER_STORY_STYLES, UHC_COVERAGE_STORY_STYLES } from "./tts-providers/gemini.mjs";
 
 export const NARRATION_VOICES = { fil: "fil-PH-BlessicaNeural", en: "en-PH-RosaNeural" };
 // Gemini narration is re-encoded to 32 kbps mono, the content standard's cap.
@@ -195,11 +195,13 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           });
           if (!zones.length) continue;
           const existing = manifest.lessons?.[lessonKey]?.sections?.[section.id]?.[language];
-          const provider = chosen ?? (existing ? providerOfVoice(existing.voice) : lessonKey === "bhs-promotions" ? "gemini" : "edge");
+          const provider = chosen ?? (["bhs-promotions", "uhc-local-system"].includes(lessonKey) ? "gemini" : providerOfVoice(existing?.voice));
           const voice = PROVIDER_VOICES[provider][language];
           const speechStyle = provider === "gemini"
             ? lessonKey === "bhs-promotions"
               ? BHS_PROMOTIONS_STORY_STYLES[language]
+              : lessonKey === "uhc-local-system"
+                ? LOCAL_SYSTEM_STORY_STYLES[language]
               : lessonKey === "bhw-community-organizer"
               ? ORGANIZER_STORY_STYLES[language]
               : lessonKey === "bhw-service-provider"

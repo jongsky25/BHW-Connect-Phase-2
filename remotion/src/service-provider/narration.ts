@@ -1,7 +1,10 @@
 // Companion video for the approved lesson 1.1.4 story. It illustrates the
 // BHW's listening, scope, guidance, and follow-up without teaching treatment.
 
-export type ServiceProviderBeat = {
+import cebuano from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-service-provider/translation.ceb.json" with { type: "json" };
+import hiligaynon from "../../../content/training/day1-basic-competencies/modules/01-tungkulin-ng-bhw/lessons/bhw-service-provider/translation.hil.json" with { type: "json" };
+
+type BaseServiceProviderBeat = {
   id: string;
   fil: string;
   en: string;
@@ -11,7 +14,7 @@ export type ServiceProviderBeat = {
   detail_en: string;
 };
 
-export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
+const baseBeats: BaseServiceProviderBeat[] = [
   {
     id: "first-contact",
     fil: "Lumapit si Aling Nena kay Riza tungkol sa anak niya. Bilang BHW, katuwang si Riza ng midwife sa health team.",
@@ -67,3 +70,17 @@ export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = [
     detail_en: "Explain the step · Follow through",
   },
 ];
+
+export type ServiceProviderBeat = BaseServiceProviderBeat & {
+  ceb: string; title_ceb: string; detail_ceb: string;
+  hil: string; title_hil: string; detail_hil: string;
+};
+export const SERVICE_PROVIDER_BEATS: ServiceProviderBeat[] = baseBeats.map((beat, index) => {
+  const ceb = cebuano.story_beats[index], hil = hiligaynon.story_beats[index];
+  if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("Lesson 1.1.4 translated story beats are misordered");
+  return { ...beat, ceb: ceb.text, title_ceb: ceb.title, detail_ceb: ceb.detail,
+    hil: hil.text, title_hil: hil.title, detail_hil: hil.detail };
+});
+export const SERVICE_PROVIDER_SUMMARY = { ceb: cebuano.summary_steps, hil: hiligaynon.summary_steps };
+if (cebuano.summary_steps.length !== 4 || hiligaynon.summary_steps.length !== 4)
+  throw new Error("Lesson 1.1.4 needs four translated summary cards");

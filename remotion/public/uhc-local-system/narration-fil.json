@@ -1,0 +1,51 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "durationSeconds": 77.009,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Tanong ni Mang Ernesto: Saan po makukumpirma ang impormasyon sa health activity? Narinig din ito ni Vlanche sa ibang residente. Nakinig muna siya.",
+      "start_ms": 0,
+      "end_ms": 9720
+    },
+    {
+      "zone": "roles",
+      "index": 1,
+      "text": "Pinangangasiwaan ng Provincial at City Health Boards ang UHC integration. Hindi awtomatikong kasapi ang BHW. Kukunin ni Vlanche sa health team ang angkop na lokal na contact.",
+      "start_ms": 10020,
+      "end_ms": 23300
+    },
+    {
+      "zone": "observation",
+      "index": 2,
+      "text": "Ibinubuod niya ang narinig: Paulit-ulit ang tanong, magkaiba ang impormasyon, at kailangan pang kumpirmahin ang detalye. Walang pangalan o personal na health detail sa buod.",
+      "start_ms": 23600,
+      "end_ms": 36680
+    },
+    {
+      "zone": "promotion",
+      "index": 3,
+      "text": "Bilang barangay HEPO, titiyakin ni Vlanche sa team ang mensahe. Ipaliliwanag niya ito nang payak, mag-aanyaya ng tanong, at susuriin ang pagkaunawa ng residente.",
+      "start_ms": 36980,
+      "end_ms": 49900
+    },
+    {
+      "zone": "discussion",
+      "index": 4,
+      "text": "Nagpraktis siya kasama ang midwife. Sino po ang makapagkukumpirma at tatanggap ng mungkahi? Sino ang may pasya? Hindi niya ipinangakong aprubado na ang ideya.",
+      "start_ms": 50200,
+      "end_ms": 61800
+    },
+    {
+      "zone": "feedback",
+      "index": 5,
+      "text": "Napagkasunduan nila kung kailan at paano mag-follow-up. Nakumpirmang tugon lamang ang ibabahagi niya. Obserbasyon, tumpak na mensahe, pakikipag-ugnayan at follow-up ang ambag ng BHW.",
+      "start_ms": 62100,
+      "end_ms": 76940
+    }
+  ]
+}

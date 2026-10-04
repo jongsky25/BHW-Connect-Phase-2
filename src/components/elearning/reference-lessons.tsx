@@ -239,6 +239,8 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Nakikinig si BHW Mimi sa kinatawan ng kumpanya at mahinahong ipinapahinto ang pagtanggap ng blangkong sample box at promotional sheet sa BHS.", "BHW Mimi listens to a company representative and calmly pauses acceptance of a blank sample box and promotional sheet at the BHS."),
             caption: ui("Kilalanin · Huminto · Idulog", "Recognize · Pause · Refer"),
           }
+      : lesson?.lesson_key === "uhc-local-system"
+        ? { src: "/training/bhw-1-2/local-system-observation-13c689fa5226.png", alt: ui("Tinatalakay nina BHW Vlanche, Mang Ernesto at ng midwife ang paulit-ulit na tanong ng mga residente gamit ang blangkong tala sa BHS.", "BHW Vlanche, Mang Ernesto and the midwife discuss recurring resident questions using a blank note at the BHS."), caption: ui("Obserbasyon · mensahe · follow-up", "Observation · message · follow-up") }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
