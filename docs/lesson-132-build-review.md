@@ -1,8 +1,8 @@
 # Lesson 1.3.2 build and owner review
 
-Prepared 3 October 2026, Asia/Manila. Target: `03-polisiya-bhs/bhs-support-environment`.
-Audited main: `7ce98d683d551e9afb13a86acb198d5a4b810409`. Isolated branch: `codex/lesson-132-story-gemini`.
-Status: implementation in progress; new package is draft. No owner or independent clinical/policy SME approval is claimed.
+Prepared 3 October and completed for draft review 4 October 2026, Asia/Manila. Target: `03-polisiya-bhs/bhs-support-environment`.
+Initial main audit: `7ce98d683d551e9afb13a86acb198d5a4b810409`; reconciled and rechecked main: `81a84f581a85657d61f119b329c34ac440f790c7`. Isolated branch: `codex/lesson-132-story-gemini`.
+Status: implementation and local verification complete; draft PR #243 awaits final-head CI and owner review. No owner or independent clinical/policy SME approval is claimed. Final run/artifact results and reviewed head are recorded in the owner package's verification.json.
 
 ## Gap and verification plan
 
@@ -38,7 +38,7 @@ Animated beats: welcome → facility/BHW responsibilities → respectful support
 
 Preserve immutable titles/objectives/position/required/key, required concepts and historical media. Align six Read screens, slides, takeaways, check, scripts, facilitator activities and objective-index-zero observation criteria. Verify twelve current Gemini tracks, both AAC narrated animations, exact VTT timing, contained face-visible illustration and posters; default/explicit reruns render zero. Verify actual-component controls at desktop, phone, landscape and tablet, optional-video completion, one language-correct player and full-screen return. Run typecheck/lint/build, focused regressions, E2E and both Remotion shards. Record all limitations; owner review and clinical/policy SME review are separate.
 
-Source audit and concrete implementation/check results will be appended after verification. Publication is not authorized until explicit approval of this revised package.
+Source audit and concrete implementation/check results are recorded below and in the owner package. Publication is not authorized until explicit approval of this revised package.
 
 ## Owner character-name update — 4 October 2026
 
