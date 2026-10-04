@@ -37,7 +37,7 @@ async function main() {
   writeFileSync(path.join(outDir, `narration-${language}.mp3`), rendered.audioBytes);
   writeFileSync(path.join(outDir, `narration-${language}.json`), JSON.stringify({
     language, provider: "gemini", model: GEMINI_TTS_MODEL, voice: GEMINI_VOICE,
-    durationSeconds: Number(durationSeconds.toFixed(3)), beats: rendered.timings,
+    speech_style: styles[language], durationSeconds: Number(durationSeconds.toFixed(3)), beats: rendered.timings,
   }, null, 2) + "\n");
   console.log(`${language}: ${durationSeconds.toFixed(1)} s; ${rendered.audioBytes.length} bytes; ${rendered.timings.length} scenes`);
 }
