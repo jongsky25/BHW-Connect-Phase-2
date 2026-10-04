@@ -35,7 +35,7 @@ jobs:
       matrix:
         shard: [0, 1]
     runs-on: ubuntu-latest
-    # The 32-composition library reached its last English story at 20 minutes
+    # The 34-composition library reached its last English story at 20 minutes
     # on lesson 1.2.4's first review run. Keep both shards and every render;
     # allow room for the final clip, poster and artifact upload.
     timeout-minutes: 30
