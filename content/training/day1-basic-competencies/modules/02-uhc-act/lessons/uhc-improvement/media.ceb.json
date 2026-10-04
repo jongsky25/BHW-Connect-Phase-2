@@ -1,68 +1,68 @@
 {
   "narration": {
     "section-6": {
-      "src": "/training/audio/02-uhc-act/uhc-improvement/section-6.ceb.115ceb0b9bce.mp3",
+      "src": "/training/audio/02-uhc-act/uhc-improvement/section-6.ceb.26be5a2ebae6.mp3",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
-      "content_hash": "115ceb0b9bce6369347194cd84ce0998aa08b05fa7ec37928791bbd0b5e29377",
-      "sha256": "8f7d8f341ed72223fc62d242c796c2508eb6aede7a1f2d2b063829a74c54c1ff",
-      "delivery_style": "Speak in natural Philippine Cebuano (Bisaya) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s proposal a hopeful lilt. Vary pitch and pace; pause at proposal, confirmed facts and permission, feasible plan, trial and feedback. Keep the fictional local plan and role boundaries clear. Counts and answers are indicators, not proof of system-wide improvement. Keep one consistent female Kore narrator voice with no character acting or voice changes. Articulate ng, nga, ug and kag clearly, finishing every phrase. Say Vlanche as one syllable, vlanch. Keep every authored negation and permission boundary audible. Speak Cebuano sugyot and mosugyot with the complete gy consonant cluster: proposal, never sugot or musugot meaning consent. Clearly say ipakaylap, Himoang tino, Kumpirmaha and ug exactly. In Hiligaynon retain the initial s in sang, the final s in Antes, and the h in ipaathag. No paraphrase or grammatical substitutions. Use exactly one warm adult female narrator for every heading, paragraph, quote and takeaway; never switch gender or voice. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
-      "duration_seconds": 42.840816326530614,
+      "content_hash": "26be5a2ebae64620989f980cbffcb03f5791ef4c6f0c6b06e5ea79526e082ebf",
+      "sha256": "55c1ff6d4b741112ab6f911fa29472cf7d82690f40424539527fc45df6cca16c",
+      "delivery_style": "Speak in natural Philippine Cebuano (Bisaya) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s proposal a hopeful lilt. Vary pitch and pace; pause at proposal, confirmed facts and permission, feasible plan, trial and feedback. Keep the fictional local plan and role boundaries clear. Counts and answers are indicators, not proof of system-wide improvement. Keep one consistent female Kore narrator voice with no character acting or voice changes. Articulate ng, nga, ug and kag clearly, finishing every phrase. Say Vlanche as one syllable, vlanch. Keep every authored negation and permission boundary audible. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+      "duration_seconds": 46.23673469387755,
       "timings": [
         {
           "zone": "heading",
           "index": 0,
           "text": "Isugyot ug hisgoti una",
           "start_ms": 0,
-          "end_ms": 2640
+          "end_ms": 2320
         },
         {
           "zone": "body",
           "index": 0,
           "text": "Sa duha ka pagbisita, lahi-lahi ang nadungog ni BHW Vlanche nga tubag sa mga residente bahin sa kon kinsa ang duolon alang sa pangutana sa health station.",
-          "start_ms": 2940,
-          "end_ms": 14900
+          "start_ms": 2620,
+          "end_ms": 13820
         },
         {
           "zone": "body",
           "index": 1,
           "text": "“Kinsa man ang akong pangutan-on?”",
-          "start_ms": 15200,
-          "end_ms": 17400
+          "start_ms": 14120,
+          "end_ms": 16480
         },
         {
           "zone": "body",
           "index": 2,
           "text": "matod ni Mang Ernesto.",
-          "start_ms": 17700,
-          "end_ms": 19300
+          "start_ms": 16780,
+          "end_ms": 19020
         },
         {
           "zone": "body",
           "index": 3,
           "text": "Gitala ni Vlanche ang pangutana nga walay ngalan o personal nga detalye.",
-          "start_ms": 19600,
-          "end_ms": 24160
+          "start_ms": 19320,
+          "end_ms": 25080
         },
         {
           "zone": "body",
           "index": 4,
           "text": "Dili pa kini pamatuod nga sayop ang tibuok sistema.",
-          "start_ms": 24460,
-          "end_ms": 28180
+          "start_ms": 25380,
+          "end_ms": 29300
         },
         {
           "zone": "body",
           "index": 5,
           "text": "Adunay butang nga angay paklarohon uban sa kaubang BHW ug sa midwife sa dili pa mosugyot og kausaban.",
-          "start_ms": 28480,
-          "end_ms": 35880
+          "start_ms": 29600,
+          "end_ms": 38160
         },
         {
           "zone": "takeaway",
           "index": 0,
           "text": "Ihulagway ang nakita o nadungog; ayaw basola ang tawo o himoa nga kamatuoran ang pagtag-an.",
-          "start_ms": 36180,
-          "end_ms": 42780
+          "start_ms": 38460,
+          "end_ms": 46180
         }
       ]
     },
@@ -368,5 +368,16 @@
         }
       ]
     }
-  }
+  },
+  "poster": "/training/bhw-1-2/uhc-improvement-vlanche-gemini-ceb-cfba58328424-poster.jpg",
+  "video": {
+    "path": "/training/bhw-1-2/uhc-improvement-vlanche-gemini-ceb-7bba9c8e9010.mp4",
+    "content_hash": "7bba9c8e90109a3aa8c990166fe81d66770a1d67a8d7c72287dde0ab1b18c01a",
+    "duration_s": 88,
+    "captions": {
+      "path": "/training/bhw-1-2/uhc-improvement-vlanche-gemini-ceb-1f2560e47738.vtt",
+      "content_hash": "1f2560e47738aaaeaa6929051c46133e59df38e698e2dcf0d66a825433b9e2ec"
+    }
+  },
+  "story_content_hash": "e4285c571c41fd3efe7fd03b7dd867aeb50be4f766d041b4baa50abd354bde6e"
 }
