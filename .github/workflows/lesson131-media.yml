@@ -35,6 +35,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-131-media-build.mjs
+      - name: Model-mediated audio review of actual completed tracks
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/lesson-131-audio-review.mjs
       - name: Save review artifacts, including completed partial tracks on failure
         if: always()
         uses: actions/upload-artifact@v4
@@ -51,4 +56,5 @@ jobs:
             remotion/public/bhs-promotions/
             remotion/src/Root.tsx
             docs/lesson-131-media-generation.json
+            docs/lesson-131-audio-review.json
           if-no-files-found: error

@@ -19,9 +19,13 @@ const allowed=['bhs-promotions','bhs-decline','bhs-resources'];
 const original=json(narrationPath);
 const args=['--modules','03-polisiya-bhs','--lessons',allowed.join(',')];
 let deleted=[];
+let readGenerationError=null;
 try{
   run('scripts/training-narrate.mjs',[...args,'--provider','gemini']);
   run('scripts/training-narrate.mjs',[...args,'--provider','gemini','--max-requests','300','--apply']);
+}catch(error){
+  readGenerationError=String(error.message).split('\n')[0];
+  console.error('Some renamed sibling Read tracks may be incomplete; continuing independently completed target media.');
 }finally{
   // Restore ALL tracked historical files pruned by the module-wide cleanup.
   deleted=execFileSync('git',['ls-files','--deleted','-z','--','public/training/audio'],{cwd:root,encoding:'utf8'}).split('\0').filter(Boolean);
@@ -32,7 +36,8 @@ for(const key of Object.keys(original.lessons))if(!allowed.includes(key)&&JSON.s
 const moduleKey='03-polisiya-bhs';
 const {lessons}=loadReferenceModule(path.join(root,'content/training/day1-basic-competencies/modules',moduleKey),path.join(root,'public'));
 const plan=planReferenceNarration([{key:moduleKey,lessons}],current,src=>{const p=path.join(root,'public',src.slice(1));return existsSync(p)?sha(p):null;});
-if(plan.some(i=>i.action!=='skip'))throw new Error('Current narration acceptance failed after generation');
+const pending=plan.filter(i=>i.action!=='skip').map(i=>`${i.lessonKey}/${i.sectionId}/${i.language}`);
+if(plan.some(i=>i.lessonKey==='bhs-promotions'&&i.action!=='skip'))throw new Error('Target current narration acceptance failed after generation');
 for(const item of plan.filter(i=>allowed.includes(i.lessonKey)))if(item.voice!=='gemini:gemini-3.8-flash-tts:Kore')throw new Error('Unexpected synthesis provider');
 run('scripts/training-narrate.mjs',[...args,'--provider','gemini']);
 run('scripts/training-narrate.mjs',args);
@@ -67,5 +72,6 @@ for(const lang of ['fil','en']){
 lesson.featured_asset_id=story.id;
 lesson.assets=lesson.assets.filter(a=>a.id!==story.id).concat(story);
 save(lessonPath,lesson);
-save('docs/lesson-131-media-generation.json',{generated_date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,owner_review:'pending',target_read_tracks:12,rename_tracks:6,historical_audio_restored:deleted,reports});
+save('docs/lesson-131-media-generation.json',{generated_date:new Date().toISOString(),source_commit:process.env.GITHUB_SHA??null,owner_review:'pending',target_read_tracks:12,rename_tracks:6,pending_read_tracks:pending,read_generation_error:readGenerationError,historical_audio_restored:deleted,reports});
 console.log('Completed draft lesson media; sibling recordings changed only for the authorized Mimi rename.');
+if(pending.length)process.exitCode=1;
