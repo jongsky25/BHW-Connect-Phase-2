@@ -758,58 +758,58 @@
       "lesson": "bhs-promotions",
       "section": "section-2",
       "language": "fil",
-      "src": "/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.cecc83f8ab7a.mp3",
-      "sha256": "7230ba09103d916a24990896ca87aa9dd5d6e2e2a6d8fee599757b7c3cc2c4fd",
+      "src": "/training/audio/03-polisiya-bhs/bhs-promotions/section-2.fil.4d662554b95e.mp3",
+      "sha256": "8c06f1244532f584f3b0e6114d01da450d44a0f64d65884291a4d3a4a86c42cb",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
-      "decoded_duration_seconds": 49.737,
+      "decoded_duration_seconds": 50.887,
       "zones": [
         {
           "zone": "heading",
           "index": 0,
           "start_ms": 0,
-          "end_ms": 2400,
-          "rms_dbfs": -15.77,
-          "peak_dbfs": -0.93
+          "end_ms": 2520,
+          "rms_dbfs": -17.87,
+          "peak_dbfs": -0.83
         },
         {
           "zone": "body",
           "index": 0,
-          "start_ms": 2700,
-          "end_ms": 13140,
-          "rms_dbfs": -19.05,
-          "peak_dbfs": -1.63
+          "start_ms": 2820,
+          "end_ms": 13260,
+          "rms_dbfs": -19.04,
+          "peak_dbfs": -1.47
         },
         {
           "zone": "body",
           "index": 1,
-          "start_ms": 13440,
-          "end_ms": 22120,
-          "rms_dbfs": -15.68,
-          "peak_dbfs": -1.26
+          "start_ms": 13560,
+          "end_ms": 22880,
+          "rms_dbfs": -16.27,
+          "peak_dbfs": -1.63
         },
         {
           "zone": "body",
           "index": 2,
-          "start_ms": 22420,
-          "end_ms": 32820,
-          "rms_dbfs": -18.02,
-          "peak_dbfs": -1.41
+          "start_ms": 23180,
+          "end_ms": 35540,
+          "rms_dbfs": -17.07,
+          "peak_dbfs": -0.07
         },
         {
           "zone": "body",
           "index": 3,
-          "start_ms": 33120,
-          "end_ms": 42200,
-          "rms_dbfs": -15.88,
+          "start_ms": 35840,
+          "end_ms": 44000,
+          "rms_dbfs": -16.4,
           "peak_dbfs": -1.42
         },
         {
           "zone": "takeaway",
           "index": 0,
-          "start_ms": 42500,
-          "end_ms": 49660,
-          "rms_dbfs": -16.68,
-          "peak_dbfs": -0.74
+          "start_ms": 44300,
+          "end_ms": 50820,
+          "rms_dbfs": -17.06,
+          "peak_dbfs": -1.61
         }
       ]
     },
@@ -817,90 +817,98 @@
       "lesson": "bhs-decline",
       "section": "section-4",
       "language": "en",
-      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.cd89f2b3b65d.mp3",
-      "sha256": "86ccf1e2b0e6509905e440e7fbd79e146539f116cf853383648ba8e54c17cb6c",
+      "src": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.913fcb8ef30d.mp3",
+      "sha256": "3d8e119d27410bb847c20a5c92021333fb3cb933ce699b48c01626d6f0a523aa",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
-      "decoded_duration_seconds": 65.332,
+      "decoded_duration_seconds": 66.142,
       "zones": [
         {
           "zone": "heading",
           "index": 0,
           "start_ms": 0,
-          "end_ms": 2560,
-          "rms_dbfs": -17.18,
-          "peak_dbfs": -1.39
+          "end_ms": 2640,
+          "rms_dbfs": -18.61,
+          "peak_dbfs": -2.02
         },
         {
           "zone": "body",
           "index": 0,
-          "start_ms": 2860,
-          "end_ms": 5980,
-          "rms_dbfs": -16.91,
-          "peak_dbfs": -1.29
+          "start_ms": 2940,
+          "end_ms": 5300,
+          "rms_dbfs": -16.26,
+          "peak_dbfs": -2.12
         },
         {
           "zone": "body",
           "index": 1,
-          "start_ms": 6280,
-          "end_ms": 14280,
-          "rms_dbfs": -16.69,
-          "peak_dbfs": -1.21
+          "start_ms": 5600,
+          "end_ms": 10080,
+          "rms_dbfs": -17.97,
+          "peak_dbfs": -2.89
         },
         {
           "zone": "body",
           "index": 2,
-          "start_ms": 14580,
-          "end_ms": 25460,
-          "rms_dbfs": -17.74,
-          "peak_dbfs": -1.11
+          "start_ms": 10380,
+          "end_ms": 14260,
+          "rms_dbfs": -19.82,
+          "peak_dbfs": -3.27
         },
         {
           "zone": "body",
           "index": 3,
-          "start_ms": 25760,
-          "end_ms": 33800,
-          "rms_dbfs": -18.18,
-          "peak_dbfs": -2.31
+          "start_ms": 14560,
+          "end_ms": 26160,
+          "rms_dbfs": -18.31,
+          "peak_dbfs": -2.06
         },
         {
           "zone": "body",
           "index": 4,
-          "start_ms": 34100,
-          "end_ms": 40180,
-          "rms_dbfs": -17.48,
-          "peak_dbfs": -2.25
+          "start_ms": 26460,
+          "end_ms": 34700,
+          "rms_dbfs": -17.98,
+          "peak_dbfs": -2.35
         },
         {
           "zone": "body",
           "index": 5,
-          "start_ms": 40480,
-          "end_ms": 43320,
-          "rms_dbfs": -16.57,
-          "peak_dbfs": -1.03
+          "start_ms": 35000,
+          "end_ms": 40960,
+          "rms_dbfs": -17.55,
+          "peak_dbfs": -1.9
         },
         {
           "zone": "body",
           "index": 6,
-          "start_ms": 43620,
-          "end_ms": 50780,
-          "rms_dbfs": -16.93,
-          "peak_dbfs": -1.58
+          "start_ms": 41260,
+          "end_ms": 43820,
+          "rms_dbfs": -16.66,
+          "peak_dbfs": -1.8
         },
         {
           "zone": "body",
           "index": 7,
-          "start_ms": 51080,
-          "end_ms": 54840,
-          "rms_dbfs": -16.22,
-          "peak_dbfs": -1.33
+          "start_ms": 44120,
+          "end_ms": 51080,
+          "rms_dbfs": -17.88,
+          "peak_dbfs": -1.52
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 51380,
+          "end_ms": 55420,
+          "rms_dbfs": -17.52,
+          "peak_dbfs": -1.97
         },
         {
           "zone": "takeaway",
           "index": 0,
-          "start_ms": 55140,
-          "end_ms": 65260,
-          "rms_dbfs": -18.4,
-          "peak_dbfs": -2.42
+          "start_ms": 55720,
+          "end_ms": 66080,
+          "rms_dbfs": -17.79,
+          "peak_dbfs": -2.0
         }
       ]
     },
