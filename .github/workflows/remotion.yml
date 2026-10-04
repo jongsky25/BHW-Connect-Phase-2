@@ -35,7 +35,9 @@ jobs:
       matrix:
         shard: [0, 1]
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # The prior successful main library used 19.1 minutes on shard 0.
+    # New narrated lesson stories need rendering and artifact-upload headroom.
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 

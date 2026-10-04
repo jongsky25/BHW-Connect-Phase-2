@@ -47,6 +47,8 @@ The completed-media build record preserves its historical partial-run error. `le
 
 Final-head CI/E2E and both Remotion shard statuses/artifacts are recorded separately in the owner package after the final source commit. They must pass on that exact head; older successful or cancelled runs are not substitutes. No production database query, publication or learner progress write was performed.
 
+The most recent successful main Remotion library run used 17.9 and 19.1 minutes on its two shards (run 37134196684). The expanded library retains both shards and all composition/size checks; the job budget is extended from 20 to 25 minutes to allow the new stories and artifact uploads. This changes no review media.
+
 ## Owner review and release gates
 
 The self-contained HTML and ZIP include the illustration/provenance, all target Read MP3s and timings, affected sibling recordings/content, both playable videos, captions, posters, animation source, source/audio audits, screenshots and verification logs. Open the HTML to review Filipino and English Read, Slides, story and facilitator notes. All new assets are still draft.
