@@ -262,8 +262,8 @@ export const RemotionRoot: React.FC = () => {
           durationInFrames={BHS_PROMOTIONS_FALLBACK_DURATION} fps={BHS_PROMOTIONS_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
-      {(["fil", "en"] as const).map((language) => (
-        <Composition key={`uhc-improvement-${language}`} id={language === "fil" ? "UhcImprovementStoryFil" : "UhcImprovementStoryEn"}
+      {(["fil", "en", "ceb", "hil"] as const).map((language) => (
+        <Composition key={`uhc-improvement-${language}`} id={language === "fil" ? "UhcImprovementStoryFil" : language === "ceb" ? "UhcImprovementStoryCeb" : language === "hil" ? "UhcImprovementStoryHil" : "UhcImprovementStoryEn"}
           component={ImprovementStory} calculateMetadata={calculateImprovementMetadata}
           durationInFrames={UHC_IMPROVEMENT_FALLBACK_DURATION} fps={UHC_IMPROVEMENT_FPS}
           width={854} height={480} defaultProps={{ language }} />

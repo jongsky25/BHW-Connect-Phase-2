@@ -106,8 +106,11 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
   });
 });
 
-describe("lesson 1.2.1 completion preserves identity without the optional story", () => {
-  const coverageDirectory = path.resolve(directory, "../../../02-uhc-act/lessons/uhc-coverage");
+describe.each([
+  { number: "1.2.1", folder: "uhc-coverage" },
+  { number: "1.2.4", folder: "uhc-improvement" },
+])("lesson $number completion preserves identity without the optional story", ({ folder }) => {
+  const coverageDirectory = path.resolve(directory, `../../../02-uhc-act/lessons/${folder}`);
   for (const language of ["ceb", "hil"] as const) {
     it(`completes ${language} with the original lesson and revision identity`, async () => {
       const { lesson, translation } = fixture(language, coverageDirectory);
@@ -119,7 +122,7 @@ describe("lesson 1.2.1 completion preserves identity without the optional story"
         translations={[translation]} onResume={vi.fn().mockResolvedValue(undefined)} onComplete={onComplete}/>);
       fireEvent.change(screen.getByRole("combobox", { name: "Wika ng aralin" }), { target: { value: language } });
       for (let i = 0; i < 5; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
-      fireEvent.click(screen.getByRole("button", { name: translation.read_sections[5].check!.options[0] }));
+      fireEvent.click(screen.getByRole("button", { name: translation.read_sections[5].check!.options[lesson.revision.read_sections[5].check!.correct_option_index] }));
       expect(container.querySelector("video")).not.toBeInTheDocument();
       fireEvent.click(screen.getByRole("button", { name: translation.ui["Markahang tapos ang aralin"] }));
       expect(await screen.findByText(translation.ui["Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso."])).toBeInTheDocument();
@@ -225,6 +228,7 @@ describe.each([
   { number: "1.1.5", folder: "bhw-records", firstId: "record-purpose", approved: true, correctIndex: 1, wrongIndex: 0 },
   { number: "1.1.6", folder: "bhw-roles-application", firstId: "applied-observation", approved: true, correctIndex: 0, wrongIndex: 1 },
   { number: "1.2.1", folder: "../../02-uhc-act/lessons/uhc-coverage", firstId: "section-1", approved: false, correctIndex: 0, wrongIndex: 1 },
+  { number: "1.2.4", folder: "../../02-uhc-act/lessons/uhc-improvement", firstId: "section-6", approved: false, correctIndex: 1, wrongIndex: 0 },
 ])("lesson $number translated content", ({ folder, firstId, approved, correctIndex, wrongIndex }) => {
   const organizerDirectory = path.resolve(directory, `../${folder}`);
   for (const language of ["ceb", "hil"] as const) {
@@ -258,7 +262,7 @@ describe.each([
       fireEvent.click(screen.getByRole("button", { name: readCheck.options[correctIndex] }));
       expect(screen.getByText(translation.ui["Tama!"])).toBeInTheDocument();
       expect(screen.getByText(readCheck.feedback)).toBeInTheDocument();
-      expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/check.${language}.mp3`);
+      expect(container.querySelector("audio")).toHaveAttribute("src", `/fixture/${translation.read_sections[5].id}.${language}.mp3`);
       fireEvent.click(screen.getByRole("button", { name: translation.ui.Slides }));
       for (let i = 0; i < 5; i++) fireEvent.click(screen.getByRole("button", { name: translation.ui.Susunod }));
       fireEvent.click(screen.getByRole("button", { name: translation.slides[5].check!.options[correctIndex] }));
@@ -266,6 +270,11 @@ describe.each([
       fireEvent.click(screen.getByRole("button", { name: translation.ui["Kuwentong may salaysay"] }));
       expect(container.querySelector("video source")).toHaveAttribute("src", `/fixture/story.${language}.mp4`);
       expect(container.querySelector("track")).toHaveAttribute("srcLang", language);
+      if (lesson.lesson_key === "uhc-improvement") {
+        const transcript = translation.assets.find(asset => asset.id === lesson.revision.featured_asset_id)!.text_steps!;
+        expect(transcript).toHaveLength(6);
+        transcript.forEach(step => expect(screen.getByText(step.text)).toBeInTheDocument());
+      }
     });
   }
 });

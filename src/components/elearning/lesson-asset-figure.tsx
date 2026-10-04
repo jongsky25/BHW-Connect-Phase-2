@@ -10,7 +10,7 @@ import type { LessonTranslationLanguage } from "@/lib/elearning/lesson-translati
 // autoplays and preloads nothing until the learner presses play, so it
 // costs no mobile data unasked and shows only the static poster under
 // prefers-reduced-motion unless the learner chooses to play it. The alt
-// text doubles as the clip's text version, shown on request.
+// text is the fallback text version; translated stories can supply a transcript.
 export function LessonAssetFigure({
   asset: a,
   en,
@@ -67,7 +67,12 @@ export function LessonAssetFigure({
       <figcaption className="text-sm">{caption}</figcaption>
       <details className="mt-1 text-sm">
         <summary className="cursor-pointer">{language === "hil" ? "Mga tikang bilang teksto" : language === "ceb" ? "Mga lakang isip teksto" : en ? "Steps as text" : "Mga hakbang bilang teksto"}</summary>
-        <p id={textId}>{alt}</p>
+        {a.text_steps?.length ? <div id={textId}>
+          <p>{alt}</p>
+          <ol className="mt-3 space-y-3">
+            {a.text_steps.map(step => <li key={step.id}><h3 className="font-semibold">{step.title}</h3><p>{step.text}</p></li>)}
+          </ol>
+        </div> : <p id={textId}>{alt}</p>}
       </details>
     </figure>
   );

@@ -45,6 +45,8 @@ export type LessonAsset = {
   // A narrated clip, one render per narration language, each with its own
   // captions; takes the place of `video` (docs/handrub-clip-enhancement-handoff.md §3).
   videos?: { fil: LessonAssetVideo; en: LessonAssetVideo };
+  // Optional translated story transcript, supplied by the selected translation.
+  text_steps?: { id: string; title: string; text: string }[];
 };
 export type LessonAssetVideo = {
   path: string; content_hash: string; duration_s: number;

@@ -1,0 +1,54 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "delivery_style": "Speak in natural Philippine Cebuano (Bisaya) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s proposal a hopeful lilt. Vary pitch and pace; pause at proposal, confirmed facts and permission, feasible plan, trial and feedback. Keep the fictional local plan and role boundaries clear. Counts and answers are indicators, not proof of system-wide improvement. Keep one consistent female Kore narrator voice with no character acting or voice changes. Articulate ng, nga, ug and kag clearly, finishing every phrase. Say Vlanche as one syllable, vlanch. Keep every authored negation and permission boundary audible. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+  "audio_sha256": "4982ee61ddd13b944ad6e6af7deed521330e0a211a2b21bba3cd9984792dc12d",
+  "script_hash": "eb6f52fbdf557b51bea9c4cc4b086e853174a46ae429922b5354622dee6d8184",
+  "durationSeconds": 84.689,
+  "beats": [
+    {
+      "zone": "observed",
+      "index": 0,
+      "text": "“Kinsa man ang akong pangutan-on?” matod ni Mang Ernesto. Lahi-lahi ang tubag nga nadungog ni Vlanche sa duha ka pagbisita. Gitala niya ang pangutana nga walay mga ngalan ug wala siya mobasol og tawo.",
+      "start_ms": 0,
+      "end_ms": 13440
+    },
+    {
+      "zone": "proposal",
+      "index": 1,
+      "text": "Mosugyot si Vlanche og usa ka mubo nga mensahe sa nakatakdang mga pagbisita sunod semana. Sugyot pa lamang kini: hisgoti ug kumpirmaha ang impormasyon sa dili pa gamiton.",
+      "start_ms": 13740,
+      "end_ms": 25660
+    },
+    {
+      "zone": "confirm",
+      "index": 2,
+      "text": "Mangutana siya sa midwife bahin sa kasamtangang contact, mensahe ug patakaran, ug maminaw. Dili niya ipakaylap ang wala pa makumpirmang impormasyon ug dili niya usbon ang serbisyo nga siya ra.",
+      "start_ms": 25960,
+      "end_ms": 38880
+    },
+    {
+      "zone": "plan",
+      "index": 3,
+      "text": "Sa kining pananglitan, nakumpirma ang mensahe ug nagkasabot sa plano. Mogamit si Vlanche sa gisusing giya sa mga pagbisita, uban sa makayang oras ug materyales. Balikon nila kini sa Biyernes.",
+      "start_ms": 39180,
+      "end_ms": 52820
+    },
+    {
+      "zone": "trial",
+      "index": 4,
+      "text": "Human sa pagpasabot, mangutana siya kon kinsa ang duolon. Itala niya kon pila ang makatubag ug unsang mga pangutana ang nahibilin, nga walay personal nga detalye. Gamay nga timailhan lamang kini, dili garantiya sa epekto.",
+      "start_ms": 53120,
+      "end_ms": 67480
+    },
+    {
+      "zone": "review",
+      "index": 5,
+      "text": "Sa Biyernes, susihon nila sa midwife ang mga sugyot ug usbon ang mensahe kon kinahanglan. Obserbahi, kumpirmaha ug hisgoti, paghimo og gamay nga plano, sulayi ug baliki. Unsa ang imong unang lakang?",
+      "start_ms": 67780,
+      "end_ms": 84620
+    }
+  ]
+}
