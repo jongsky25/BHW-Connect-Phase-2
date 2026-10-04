@@ -1,3 +1,4 @@
+import {BhsImprovementStory, calculateBhsImprovementMetadata, IMPROVEMENT_FPS, IMPROVEMENT_FALLBACK_DURATION} from "./bhs-improvement/BhsImprovementStory";
 import {BhsResourcesStory, calculateBhsResourcesMetadata, RESOURCES_FPS, RESOURCES_FALLBACK_DURATION} from "./bhs-resources/BhsResourcesStory";
 import {BhsDeclineStory, calculateBhsDeclineMetadata, BHS_DECLINE_FPS, BHS_DECLINE_FALLBACK_DURATION} from "./bhs-decline/BhsDeclineStory";
 import {BhsPromotionsStory, calculateBhsPromotionsMetadata, BHS_PROMOTIONS_FPS, BHS_PROMOTIONS_FALLBACK_DURATION} from "./bhs-promotions/BhsPromotionsStory";
@@ -280,6 +281,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhs-resources-${language}`} id={language === "fil" ? "BhsResourcesStoryFil" : "BhsResourcesStoryEn"}
           component={BhsResourcesStory} calculateMetadata={calculateBhsResourcesMetadata}
           durationInFrames={RESOURCES_FALLBACK_DURATION} fps={RESOURCES_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhs-improvement-${language}`} id={language === "fil" ? "BhsImprovementStoryFil" : "BhsImprovementStoryEn"}
+          component={BhsImprovementStory} calculateMetadata={calculateBhsImprovementMetadata}
+          durationInFrames={IMPROVEMENT_FALLBACK_DURATION} fps={IMPROVEMENT_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

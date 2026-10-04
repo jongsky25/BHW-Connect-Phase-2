@@ -688,3 +688,24 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Mimi proposal scene and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="mimi-workable-suggestion"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-improvement"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

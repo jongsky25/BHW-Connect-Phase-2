@@ -7272,78 +7272,780 @@
     "bhs-improvement": {
       "module": "03-polisiya-bhs",
       "sections": {
-        "section-6": {
+        "factual-concern": {
           "en": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.en.57fae1b4f6a8.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/factual-concern.en.5c8469e0b441.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "57fae1b4f6a84be3e86c067b42c6133e0a9f57b1a5da67bd7dca92d78996e8ea",
-            "sha256": "1a2e50d619612064f60560b4d2181a343471e234acb6dae855058b657f474432",
-            "duration_seconds": 47.517,
+            "content_hash": "5c8469e0b44133fdfc69aefc98558dd358b6475d4ceaf8af388092e68968d614",
+            "sha256": "bc197a73cc7e323d5355e2b5455560c17d66c80d2092387023fdf9517c8d73db",
+            "duration_seconds": 48.274,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "One efficient suggestion",
+                "text": "State the factual concern",
                 "start_ms": 0,
-                "end_ms": 2400
+                "end_ms": 2320
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Try it: think of one thing at your own barangay health station that could be made more efficient — for example, a light left on with no one around, water dripping unnoticed, or plastics that shouldn't be used any more under DC 2021-0486.",
-                "start_ms": 2700,
-                "end_ms": 23660
+                "text": "Mimi says: “After the meeting, the lights and fan were on in the meeting area.",
+                "start_ms": 2620,
+                "end_ms": 8260
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Write your suggestion as one sentence you could actually say to the midwife or a fellow BHW — not just \"we should change,\" but exactly what to change and why it would help.",
-                "start_ms": 23960,
-                "end_ms": 37360
+                "text": "I confirmed another activity was scheduled, but there was no clear reminder of who checks the schedule.”",
+                "start_ms": 8560,
+                "end_ms": 15880
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "This is the concern to discuss, without accusing anyone of carelessness.",
+                "start_ms": 16180,
+                "end_ms": 21220
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "If a record is needed, include the date, time, place and observation using the local process.",
+                "start_ms": 21520,
+                "end_ms": 29600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "State what remains unknown, such as an existing checklist or assigned duty.",
+                "start_ms": 29900,
+                "end_ms": 35580
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Omit patient data, guesses about motives and savings amounts that have not been measured.",
+                "start_ms": 35880,
+                "end_ms": 43400
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "A suggestion that's specific and has a reason is far more likely to be believed and actually carried out than a general complaint.",
-                "start_ms": 37660,
-                "end_ms": 47460
+                "text": "A specific concern, without blame or invented savings.",
+                "start_ms": 43700,
+                "end_ms": 48220
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.fil.e26c2c989eca.mp3",
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/factual-concern.fil.2e029df9b990.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e26c2c989ecafb9bc1e50ed2cb702c4c18e4ea67625342df8e2b6233a72dfc34",
-            "sha256": "36b51245d45b81925a46b3ae609d076a24bbc92aa865d934d65e6269d550b400",
-            "duration_seconds": 53.734,
+            "content_hash": "2e029df9b990b20fa6dfee43af46ad22cbf475eec8bbd5994b0e9f7183971459",
+            "sha256": "6cab099cdcc245c0af454cd69ef3e2346a1525902c6609439062c1e2520f725c",
+            "duration_seconds": 49.972,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Isang mungkahing episyente",
+                "text": "Sabihin ang tiyak na concern",
                 "start_ms": 0,
-                "end_ms": 2880
+                "end_ms": 2560
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Subukan mo: mag-isip ng isang bagay sa iyong barangay health station na kayang gawing mas episyente — halimbawa, ang ilaw na naiiwang bukas kahit walang tao, o ang tubig na tumutulo nang hindi napapansin, o ang mga plastic na hindi na dapat ginagamit ayon sa DC 2021-0486.",
-                "start_ms": 3180,
-                "end_ms": 29340
+                "text": "Sinabi ni Mimi: “Pagkatapos ng meeting, nakabukas ang ilaw at fan sa meeting area.",
+                "start_ms": 2860,
+                "end_ms": 9460
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Isulat ang mungkahi mo sa isang pangungusap na kaya mong sabihin sa midwife o sa kapwa BHW — hindi lang \"dapat magbago,\" kundi tiyak na kung ano ang babaguhin at bakit ito makakatulong.",
-                "start_ms": 29640,
-                "end_ms": 43880
+                "text": "Nakumpirma kong may susunod na gawain, pero wala pang malinaw na paalala kung sino ang titingin sa schedule.”",
+                "start_ms": 9760,
+                "end_ms": 17480
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ito ang concern na tatalakayin, hindi paratang na may pabaya.",
+                "start_ms": 17780,
+                "end_ms": 22980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung gagawa ng tala, ilagay ang petsa, oras, lugar at napansin ayon sa lokal na proseso.",
+                "start_ms": 23280,
+                "end_ms": 31120
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sabihin ang hindi pa alam, gaya ng umiiral na checklist o itinalagang tungkulin.",
+                "start_ms": 31420,
+                "end_ms": 37140
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Huwag maglagay ng datos ng pasyente, hula sa motibo o halagang matitipid na hindi nasukat.",
+                "start_ms": 37440,
+                "end_ms": 45240
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang mungkahing tiyak at may dahilan ang mas malamang na paniwalaan at tuluyang maisagawa kaysa sa pangkalahatang reklamo.",
-                "start_ms": 44180,
-                "end_ms": 53660
+                "text": "Tiyak na concern, walang sisi o imbentong savings.",
+                "start_ms": 45540,
+                "end_ms": 49900
+              }
+            ]
+          }
+        },
+        "one-feasible-proposal": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/one-feasible-proposal.en.b0a1e86c30d0.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "b0a1e86c30d0e315c35499a5b4c639dd2beb03ee3518e86cc128a64f3cff8d56",
+            "sha256": "0606622e9f4c634b9f4dc3caf7169b497f922f6037135e05ffc2a688d53e4797",
+            "duration_seconds": 52.297,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Propose one feasible first step",
+                "start_ms": 0,
+                "end_ms": 3040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mimi proposes: “Could we review whether a short meeting-end checklist is needed, so the designated person checks the next scheduled use and shares concerns with the right contact?”",
+                "start_ms": 3340,
+                "end_ms": 15620
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "It is one proposal; she does not claim the duty or tell everyone to use the checklist immediately.",
+                "start_ms": 15920,
+                "end_ms": 23960
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Check for an existing process before creating another.",
+                "start_ms": 24260,
+                "end_ms": 28140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "If one exists, clarifying its reminder may be enough.",
+                "start_ms": 28440,
+                "end_ms": 33000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "If a change is needed, check the time, materials and person who could carry it out.",
+                "start_ms": 33300,
+                "end_ms": 39540
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Do not include independent repairs, reductions in clinical supplies or new tasks beyond the role.",
+                "start_ms": 39840,
+                "end_ms": 48240
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Start with one small, clear proposal.",
+                "start_ms": 48540,
+                "end_ms": 52220
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/one-feasible-proposal.fil.c277b2ee8b92.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "c277b2ee8b926223e35ba023b104a209fabfed1a107acb8a5ce01c0855da2546",
+            "sha256": "201d16ec0ddeb92af6a25be23e04144ead4d2e28defa461e1f514d0b80ee9116",
+            "duration_seconds": 55.771,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Magmungkahi ng isang unang hakbang",
+                "start_ms": 0,
+                "end_ms": 2920
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Iminungkahi ni Mimi: “Maaari po bang suriin natin kung kailangan ng maikling meeting-end checklist para matingnan ng itinalagang tao ang susunod na schedule at maipaalam ang concern sa tamang contact?”",
+                "start_ms": 3220,
+                "end_ms": 18580
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Isang panukala lamang ito; hindi niya inaangkin ang tungkulin o nag-uutos na sundin agad ang checklist.",
+                "start_ms": 18880,
+                "end_ms": 26320
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Tiyakin kung may umiiral nang paraan bago gumawa ng bago.",
+                "start_ms": 26620,
+                "end_ms": 30980
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Kung mayroon, maaaring linawin lamang ang paalala.",
+                "start_ms": 31280,
+                "end_ms": 35040
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Kung kailangan ng pagbabago, alamin ang oras, materyales at taong maaaring gumawa nito.",
+                "start_ms": 35340,
+                "end_ms": 43060
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Huwag isama ang sariling pagkumpuni, pagbawas ng clinical supplies o bagong gawain na lampas sa tungkulin.",
+                "start_ms": 43360,
+                "end_ms": 51600
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Isang maliit at malinaw na panukala muna.",
+                "start_ms": 51900,
+                "end_ms": 55700
+              }
+            ]
+          }
+        },
+        "proposal-check": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/proposal-check.en.5090f6c77807.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "5090f6c778072a6e922da4a1b9f836a36bc6fc5a5b10c7a7cf1be069cb5dc2a5",
+            "sha256": "33a4331bb157aac2719bab9d096f575c7e93b698013ed8eba515c7c86ca69206",
+            "duration_seconds": 47.334,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Choose the workable suggestion",
+                "start_ms": 0,
+                "end_ms": 2440
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "A colleague wants to post a new checklist immediately and tell everyone to follow it.",
+                "start_ms": 2740,
+                "end_ms": 8620
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Which response from Mimi is appropriate?",
+                "start_ms": 8920,
+                "end_ms": 12520
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Choose the suggestion with a specific concern, practical first step, reason, local checks and an agreed follow-up.",
+                "start_ms": 12820,
+                "end_ms": 22220
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "For your own situation, state four things: what you observed; one proposal; what to check and with whom; and the follow-up you agreed.",
+                "start_ms": 22520,
+                "end_ms": 34160
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Online completion does not demonstrate observed workplace skill; practice and feedback are still needed.",
+                "start_ms": 34460,
+                "end_ms": 41580
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Observation → Proposal → Checks → Follow-up.",
+                "start_ms": 41880,
+                "end_ms": 47280
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/proposal-check.fil.5e61df66728b.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "5e61df66728b7089422152793a36d9594e11fdb28b54478dfbdfe975463d19c1",
+            "sha256": "c24e10d9240701ad87e34516bd95e379828cb16bbde960e335f1bbafd495d65e",
+            "duration_seconds": 51.461,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Piliin ang mungkahing maisasagawa",
+                "start_ms": 0,
+                "end_ms": 3280
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Gusto ng isang kasamahan na agad maglagay ng bagong checklist at atasan ang lahat na sundin ito.",
+                "start_ms": 3580,
+                "end_ms": 9860
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Aling tugon ni Mimi ang angkop?",
+                "start_ms": 10160,
+                "end_ms": 12880
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Piliin ang mungkahing may tiyak na concern, praktikal na unang hakbang, dahilan, lokal na pagsusuri at napagkasunduang follow-up.",
+                "start_ms": 13180,
+                "end_ms": 25140
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa sariling sitwasyon, sabihin ang apat: ano ang nakita; ano ang isang panukala; ano ang dapat tiyakin at kanino; at ano ang follow-up na napagkasunduan.",
+                "start_ms": 25440,
+                "end_ms": 37840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ang online completion ay hindi katumbas ng naobserbahang workplace skill; kailangan pa ng pagsasanay at feedback.",
+                "start_ms": 38140,
+                "end_ms": 45540
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Pansin → Panukala → Pagsusuri → Follow-up.",
+                "start_ms": 45840,
+                "end_ms": 51400
+              }
+            ]
+          }
+        },
+        "reason-service-checks": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/reason-service-checks.en.56c65bccb8ee.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "56c65bccb8ee325a2956496f77cc29f55cbe40c23ddfeaa525ae2e9087e3d217",
+            "sha256": "9d63ac12c4736e0ad7318af13fd2b8b08f4cef7755f6f63c4473d7cbb7be2610",
+            "duration_seconds": 46.629,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Explain the reason and limits",
+                "start_ms": 0,
+                "end_ms": 3360
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mimi explains: “A clear reminder could help people remember to check the schedule and coordinate after a meeting.”",
+                "start_ms": 3660,
+                "end_ms": 10900
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "The purpose is to reduce confusion about responsibility; electricity or money savings have not been measured.",
+                "start_ms": 11200,
+                "end_ms": 18640
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She asks whether the checklist is practical, who has time for it and whether another group needs the area.",
+                "start_ms": 18940,
+                "end_ms": 26340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "It must follow the rules and protect service and safety.",
+                "start_ms": 26640,
+                "end_ms": 32520
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "If a possible hazard is present, use the local safety process; a checklist does not replace a repair or clinical procedure.",
+                "start_ms": 32820,
+                "end_ms": 41660
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Give a reason and service checks, without guaranteeing a result.",
+                "start_ms": 41960,
+                "end_ms": 46560
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/reason-service-checks.fil.ee7630596c55.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ee7630596c5519778320e6e7e0aceaaa47bd3d1744c2a1c56e6ca0c116ee27d6",
+            "sha256": "ba798a62d4ec72bc52e9a2473b20df8f2a24b10ae33ffe1ecc5639a23efe7968",
+            "duration_seconds": 53.055,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ipaliwanag ang dahilan at limitasyon",
+                "start_ms": 0,
+                "end_ms": 3160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Dahilan ni Mimi: “Makakatulong ang malinaw na paalala upang hindi malimutan ang pagtingin sa schedule at pag-ugnayan pagkatapos ng meeting.”",
+                "start_ms": 3460,
+                "end_ms": 14060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Layunin nitong bawasan ang kalituhan sa responsibilidad; hindi pa nasusukat kung may matitipid na kuryente o pera.",
+                "start_ms": 14360,
+                "end_ms": 23120
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Itatanong niya kung praktikal ang checklist, sino ang may oras para rito, at kung may susunod na gumagamit ng lugar.",
+                "start_ms": 23420,
+                "end_ms": 31700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Dapat naaayon ito sa tuntunin at hindi nakaaabala sa serbisyo o kaligtasan.",
+                "start_ms": 32000,
+                "end_ms": 38240
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Kung may posibleng panganib, idulog sa lokal na safety process; hindi kapalit ng repair o clinical procedure ang checklist.",
+                "start_ms": 38540,
+                "end_ms": 48060
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "May dahilan at service checks, walang garantisadong resulta.",
+                "start_ms": 48360,
+                "end_ms": 53000
+              }
+            ]
+          }
+        },
+        "responsibility-followup": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/responsibility-followup.en.48ab2b42f519.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "48ab2b42f519f9736e7af79273f191d69ff7234b04c7922814cb5d7364f677e7",
+            "sha256": "dfe3f56862d40be067785085f0f45acaa6cd71712e381b1e749927ca087cf4f4",
+            "duration_seconds": 58.436,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Confirm responsibility and follow-up",
+                "start_ms": 0,
+                "end_ms": 3160
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Mimi first confirms who is responsible for the area and who has authority to approve a change.",
+                "start_ms": 3460,
+                "end_ms": 10220
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "It may be the midwife, facility supervisor or another designated person, depending on local roles and the proposal.",
+                "start_ms": 10520,
+                "end_ms": 19920
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "A colleague agreeing does not automatically give permission.",
+                "start_ms": 20220,
+                "end_ms": 24780
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "In the fictional conversation, the contact agrees to review the existing process with Mimi at the next meeting.",
+                "start_ms": 25080,
+                "end_ms": 32080
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "They record who will check, what will be reviewed and when they will speak again.",
+                "start_ms": 32380,
+                "end_ms": 38300
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "If there is no decision, Mimi reports the status and follows the local referral process.",
+                "start_ms": 38600,
+                "end_ms": 44800
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "She does not promise approval, repairs or savings, and does not implement a new checklist yet.",
+                "start_ms": 45100,
+                "end_ms": 53380
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Agree on the next conversation, without promising an outcome.",
+                "start_ms": 53680,
+                "end_ms": 58360
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/responsibility-followup.fil.064aeb15a8ab.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "064aeb15a8ab40221bc75448bfc5935e6f73b582fda5907616b18313770a4073",
+            "sha256": "c04ccbffa767ac64deb072d17b00261042616705202b781cebd93b7594dcf29c",
+            "duration_seconds": 63.504,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Tiyakin ang responsable at follow-up",
+                "start_ms": 0,
+                "end_ms": 2960
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Kinumpirma muna ni Mimi kung sino ang responsable sa lugar at sino ang may saklaw na magpahintulot ng pagbabago.",
+                "start_ms": 3260,
+                "end_ms": 10940
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Maaaring midwife, facility supervisor o ibang itinalagang tao; depende ito sa lokal na tungkulin at uri ng panukala.",
+                "start_ms": 11240,
+                "end_ms": 22280
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Ang pagsang-ayon ng kasamahan ay hindi awtomatikong pahintulot.",
+                "start_ms": 22580,
+                "end_ms": 27700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa fictional na usapan, pumayag ang contact na suriin ang umiiral na proseso kasama ni Mimi sa susunod na meeting.",
+                "start_ms": 28000,
+                "end_ms": 36520
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Itinala nila kung sino ang titingin, ano ang susuriin at kailan sila mag-uusap muli.",
+                "start_ms": 36820,
+                "end_ms": 43580
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Kung walang desisyon, iuulat ni Mimi ang status at susundin ang lokal na pagdulog.",
+                "start_ms": 43880,
+                "end_ms": 51040
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hindi siya nangangako ng approval, repair o savings, at hindi muna nagpapatupad ng bagong checklist.",
+                "start_ms": 51340,
+                "end_ms": 58540
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Magkasundo sa susunod na pag-uusap; hindi pa sa resulta.",
+                "start_ms": 58840,
+                "end_ms": 63440
+              }
+            ]
+          }
+        },
+        "section-6": {
+          "en": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.en.31acf4fca6cb.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "31acf4fca6cb4bb089d7d245ede67fb305b8052dd2654d8d5e1a07c1b973f64f",
+            "sha256": "9cbc757fd55b30a9ebe1ff5dd4a4fa0b1a3853c7099e3307fa1a0b60ac26480f",
+            "duration_seconds": 48.875,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "From concern to proposal",
+                "start_ms": 0,
+                "end_ms": 2480
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "In the previous lesson, BHW Mimi checked why the lights and fan were on in an empty meeting area.",
+                "start_ms": 2780,
+                "end_ms": 9780
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "In this fictional continuation, she confirms another activity is scheduled there; she does not simply turn them off.",
+                "start_ms": 10080,
+                "end_ms": 17400
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She also learns there is no clear reminder of who checks the schedule after a meeting.",
+                "start_ms": 17700,
+                "end_ms": 22700
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Now she will form one workable suggestion: a small first step with a reason, consistent with local rules and service needs.",
+                "start_ms": 23000,
+                "end_ms": 32320
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "It is not yet permission to act or a promise of savings.",
+                "start_ms": 32620,
+                "end_ms": 37140
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "The story is optional; you can complete Read or Slides without watching it.",
+                "start_ms": 37440,
+                "end_ms": 43080
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Separate the observation, proposal, checks and follow-up.",
+                "start_ms": 43380,
+                "end_ms": 48820
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.fil.9f29625e0483.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "9f29625e048368b75478a215106f5415ccafdf2ac80878fdec1ec24002944969",
+            "sha256": "b1ef4aedb779e94ca75331647b019bfdd3a5e7100ca7a57d36affe98b685a63a",
+            "duration_seconds": 56.085,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Mula sa pansin, tungo sa mungkahi",
+                "start_ms": 0,
+                "end_ms": 3600
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa naunang aralin, sinuri ni BHW Mimi ang nakabukas na ilaw at fan sa bakanteng meeting area.",
+                "start_ms": 3900,
+                "end_ms": 11540
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Sa pagpapatuloy ng kathang-isip na kuwento, nakumpirma niyang may susunod na gawain doon; hindi niya ito basta pinatay.",
+                "start_ms": 11840,
+                "end_ms": 20080
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Napag-alaman ding walang malinaw na paalala kung sino ang titingin sa schedule pagkatapos ng meeting.",
+                "start_ms": 20380,
+                "end_ms": 26860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Ngayon, bubuo siya ng isang mungkahing maisasagawa: isang maliit na unang hakbang na may dahilan, naaayon sa lokal na tuntunin at hindi nakasasagabal sa serbisyo.",
+                "start_ms": 27160,
+                "end_ms": 39760
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Hindi pa ito pahintulot na kumilos o pangakong makatitipid.",
+                "start_ms": 40060,
+                "end_ms": 44380
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Opsyonal ang kuwento; maaaring tapusin ang Read o Slides nang hindi nanonood.",
+                "start_ms": 44680,
+                "end_ms": 49960
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ihiwalay ang nakita, mungkahi, dapat tiyakin at follow-up.",
+                "start_ms": 50260,
+                "end_ms": 56020
               }
             ]
           }
@@ -93315,6 +94017,89 @@
                   "text": "Protektahan ang serbisyo habang naghahanap ng mas mahusay na paraan.",
                   "start_ms": 63660,
                   "end_ms": 68580
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "bhs-improvement": [
+      {
+        "module": "03-polisiya-bhs",
+        "sections": {
+          "section-6": {
+            "en": {
+              "src": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.en.57fae1b4f6a8.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "57fae1b4f6a84be3e86c067b42c6133e0a9f57b1a5da67bd7dca92d78996e8ea",
+              "sha256": "1a2e50d619612064f60560b4d2181a343471e234acb6dae855058b657f474432",
+              "duration_seconds": 47.517,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "One efficient suggestion",
+                  "start_ms": 0,
+                  "end_ms": 2400
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Try it: think of one thing at your own barangay health station that could be made more efficient — for example, a light left on with no one around, water dripping unnoticed, or plastics that shouldn't be used any more under DC 2021-0486.",
+                  "start_ms": 2700,
+                  "end_ms": 23660
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Write your suggestion as one sentence you could actually say to the midwife or a fellow BHW — not just \"we should change,\" but exactly what to change and why it would help.",
+                  "start_ms": 23960,
+                  "end_ms": 37360
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "A suggestion that's specific and has a reason is far more likely to be believed and actually carried out than a general complaint.",
+                  "start_ms": 37660,
+                  "end_ms": 47460
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/03-polisiya-bhs/bhs-improvement/section-6.fil.e26c2c989eca.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "e26c2c989ecafb9bc1e50ed2cb702c4c18e4ea67625342df8e2b6233a72dfc34",
+              "sha256": "36b51245d45b81925a46b3ae609d076a24bbc92aa865d934d65e6269d550b400",
+              "duration_seconds": 53.734,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Isang mungkahing episyente",
+                  "start_ms": 0,
+                  "end_ms": 2880
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Subukan mo: mag-isip ng isang bagay sa iyong barangay health station na kayang gawing mas episyente — halimbawa, ang ilaw na naiiwang bukas kahit walang tao, o ang tubig na tumutulo nang hindi napapansin, o ang mga plastic na hindi na dapat ginagamit ayon sa DC 2021-0486.",
+                  "start_ms": 3180,
+                  "end_ms": 29340
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Isulat ang mungkahi mo sa isang pangungusap na kaya mong sabihin sa midwife o sa kapwa BHW — hindi lang \"dapat magbago,\" kundi tiyak na kung ano ang babaguhin at bakit ito makakatulong.",
+                  "start_ms": 29640,
+                  "end_ms": 43880
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang mungkahing tiyak at may dahilan ang mas malamang na paniwalaan at tuluyang maisagawa kaysa sa pangkalahatang reklamo.",
+                  "start_ms": 44180,
+                  "end_ms": 53660
                 }
               ]
             }
