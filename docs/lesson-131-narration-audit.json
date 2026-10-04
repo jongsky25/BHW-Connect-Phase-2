@@ -191,10 +191,10 @@
       "lesson": "bhs-decline",
       "section": "section-4",
       "language": "en",
-      "action": "render",
+      "action": "skip",
       "plannedVoice": "gemini:gemini-3.8-flash-tts:Kore",
       "existingVoice": "gemini:gemini-3.8-flash-tts:Kore",
-      "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.cd89f2b3b65d.mp3",
+      "existingSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.913fcb8ef30d.mp3",
       "plannedSource": "/training/audio/03-polisiya-bhs/bhs-decline/section-4.en.913fcb8ef30d.mp3",
       "contentHash": "913fcb8ef30d849d624bec9303b4a19fd6eb3a39fe208cdaa1d41fd171a3bc6d",
       "zoneCount": 11
@@ -285,8 +285,8 @@
     },
     {
       "lesson": "bhs-decline",
-      "current": 3,
-      "requiresGeneration": 1
+      "current": 4,
+      "requiresGeneration": 0
     },
     {
       "lesson": "bhs-resources",

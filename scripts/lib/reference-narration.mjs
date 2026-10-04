@@ -199,7 +199,7 @@ export function planReferenceNarration(modules, manifest, fileHash, { provider: 
           const voice = PROVIDER_VOICES[provider][language];
           const speechStyle = provider === "gemini"
             ? lessonKey === "bhs-promotions"
-              ? BHS_PROMOTIONS_STORY_STYLES[language]
+              ? BHS_PROMOTIONS_STORY_STYLES[language] + (section.id === 'section-2' && language === 'fil' ? ' Say the order number 2015-0053 as twenty fifteen, zero zero five three. Preserve both leading zeros and do not say five five three. Keep DOH and AO as clear individual letters.' : '')
               : lessonKey === "uhc-local-system"
                 ? LOCAL_SYSTEM_STORY_STYLES[language]
               : lessonKey === "bhw-community-organizer"

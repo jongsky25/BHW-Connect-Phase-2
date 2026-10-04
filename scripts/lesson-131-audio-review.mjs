@@ -29,6 +29,8 @@ for(const record of records){
  const prompt=`Analyze the attached actual ${record.language==='fil'?'Filipino (Tagalog)':'Philippine English'} educational narration. First transcribe what you hear completely, without inventing words. Report whether speech is audible throughout, any truncated words or clipped ending, awkward initialism/name pronunciation (Mimi, BHW, BHS, Milk Code), pacing, natural pitch/pace variation and whether visitor dialogue is distinguishable from a calm BHW. Flag concrete timestamps for concerns and uncertainty. Return a JSON object with transcript, speech_present, clipped_ending, delivery, pronunciation_concerns, other_concerns. Do not claim human listening or approval. This audio is fictional training material with no real patient data.`;
  let reviewed;
  for(let attempt=0;attempt<3;attempt++){
+  // Build-time review of fictional, admin-authored training media only; follows the existing TTS provider exception. Never learner input or patient data.
+  // eslint-disable-next-line no-restricted-syntax
   const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:prompt},{type:'audio',data:readFileSync(record.file).toString('base64'),mime_type:'audio/mp3'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
   if(response.ok){const result=await response.json();reviewed=outputText(result);if(!reviewed)throw new Error('No model review text');break;}
   if(attempt<2&&(response.status===429||response.status>=500)){await new Promise(r=>setTimeout(r,4000*(attempt+1)));continue;}

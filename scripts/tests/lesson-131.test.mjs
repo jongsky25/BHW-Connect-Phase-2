@@ -8,6 +8,7 @@ import {planReferenceNarration} from '../lib/reference-narration.mjs';
 import {BHS_PROMOTIONS_STORY_STYLES} from '../lib/tts-providers/gemini.mjs';
 import {BHS_PROMOTIONS_BEATS} from '../../remotion/src/bhs-promotions/narration.ts';
 import {lessonPosition, continueLesson} from '../../src/lib/elearning/reference-navigation.ts';
+import {toWebVtt} from '../lib/webvtt.mjs';
 const root=path.resolve(import.meta.dirname,'../..');
 const folder=path.join(root,'content/training/day1-basic-competencies/modules/03-polisiya-bhs');
 const dir=path.join(folder,'lessons/bhs-promotions');
@@ -17,6 +18,23 @@ const authored=loadReferenceModule(folder,path.join(root,'public')).lessons.find
 const modules=[{key:'03-polisiya-bhs',lessons:[authored]}];
 const ids=['section-1','section-2','identify-offer','pause-route','independent-information','recognition-check'];
 describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
+  it('ships both language stories with exact script, timing, caption and media hash parity',()=>{
+    const story=source.assets.find(a=>a.id===source.featured_asset_id);
+    expect(story.review_status).toBe('draft');
+    for(const lang of ['fil','en']){
+      const timing=json(path.join(root,`remotion/public/bhs-promotions/narration-${lang}.json`));
+      expect(timing.provider).toBe('gemini');
+      expect(timing.model).toBe('gemini-3.8-flash-tts');
+      expect(timing.voice).toBe('Kore');
+      expect(timing.durationSeconds).toBeGreaterThan(60);
+      expect(timing.durationSeconds).toBeLessThan(89);
+      expect(timing.beats.map(b=>b.text)).toEqual(BHS_PROMOTIONS_BEATS.map(b=>b[lang]));
+      const video=story.videos[lang];
+      for(const media of [video,video.captions])expect(createHash('sha256').update(readFileSync(path.join(root,'public',media.path.slice(1)))).digest('hex')).toBe(media.content_hash);
+      expect(readFileSync(path.join(root,'public',video.captions.path.slice(1)),'utf8')).toBe(toWebVtt(timing));
+      expect(readFileSync(path.join(root,'remotion/src/Root.tsx'),'utf8')).toContain('BhsPromotionsStoryEn');
+    }
+  });
   it('retains old Read/Slides resume positions and saved lesson completion across expansion',()=>{
     const lesson={...authored.manifest,id:'03132db5-003e-409c-986a-0361c83219d0',revision:{...authored.revision,id:'new-draft-revision'}};
     for(const [mode,id] of [['read','section-2'],['slides','slide-section-2']]){
@@ -28,8 +46,8 @@ describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
     }
   });
   it('uses Mimi throughout all authored 1.3 learner and facilitator references',()=>{
-    const module=loadReferenceModule(folder,path.join(root,'public'));
-    for(const lesson of module.lessons){
+    const referenceModule=loadReferenceModule(folder,path.join(root,'public'));
+    for(const lesson of referenceModule.lessons){
       const teaching=JSON.stringify({read:lesson.revision.read_sections,slides:lesson.revision.slides,facilitator:lesson.revision.facilitator_notes,competency:lesson.revision.observation_indicators});
       expect(teaching).not.toMatch(/Corazon/i);
     }
@@ -74,7 +92,8 @@ describe('lesson 1.3.1 recognizing and routing a company offer',()=>{
     plan.forEach(item=>{
       expect(item.provider).toBe('gemini');
       expect(item.voice).toBe('gemini:gemini-3.8-flash-tts:Kore');
-      expect(item.speechStyle).toBe(BHS_PROMOTIONS_STORY_STYLES[item.language]);
+      expect(item.speechStyle).toContain(BHS_PROMOTIONS_STORY_STYLES[item.language]);
+      if(item.sectionId==='section-2'&&item.language==='fil')expect(item.speechStyle).toContain('zero zero five three');
       expect(item.speechStyle).toMatch(/Mimi.*calm.*supervisor/);
     });
     const manifest={lessons:{'bhs-promotions':{sections:{}}}};

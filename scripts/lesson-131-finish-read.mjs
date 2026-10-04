@@ -1,4 +1,5 @@
-// Preserve UTF-8 authored wording. Complete authorized Mimi rename tracks without regenerating completed story media.
+// Preserve UTF-8 authored wording and audited order-number pronunciation.
+// Complete authorized Mimi rename tracks without regenerating completed story media.
 import {execFileSync} from 'node:child_process';
 import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {createHash} from 'node:crypto';
