@@ -75,4 +75,4 @@ export const UHC_PURPOSE_BEATS = baseBeats.map((beat, index) => {
   if (ceb.id !== beat.id || hil.id !== beat.id) throw new Error("UHC translated story beat order mismatch");
   return {...beat, ceb: ceb.text, hil: hil.text, title_ceb: ceb.title, title_hil: hil.title, detail_ceb: ceb.detail, detail_hil: hil.detail};
 });
-export const UHC_PURPOSE_LABELS = {fil: {answer: "Sagot ni Vlanche", summary: ["Kasama", "Benepisyo", "Provider", "Hakbang"]}, en: {answer: "Vlanche's answer", summary: ["Included", "Benefit", "Provider", "Steps"]}, ceb: cebuano.scene_labels, hil: hiligaynon.scene_labels};
+export const UHC_PURPOSE_LABELS = {fil: {answer: "Vlanche's answer", summary: ["Kasama", "Benepisyo", "Provider", "Hakbang"]}, en: {answer: "Vlanche's answer", summary: ["Included", "Benefit", "Provider", "Steps"]}, ceb: cebuano.scene_labels, hil: hiligaynon.scene_labels};
