@@ -1,28 +1,39 @@
-name: Lesson 1.3.2 draft audio review
+name: Lesson 1.3.2 refined Gemini audio
 on:
   push:
     branches: [codex/lesson-132-story-gemini]
     paths:
       - .github/workflows/lesson-132-draft-audio.yml
-      - scripts/lesson-132-audio-review.mjs
 permissions:
   contents: read
 jobs:
-  review:
+  synthesize-review:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Model-mediated listening of final Read and story speech
+          cache: npm
+      - run: npm ci
+      - name: Refine target tracks only and review actual speech
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/lesson-132-audio-review.mjs
+        run: |
+          npm run training:narrate -- --modules 03-polisiya-bhs --lessons bhs-support-environment --provider gemini --apply --concurrency 2
+          node scripts/remotion-bhs-support-environment-narrate.mjs fil
+          node scripts/remotion-bhs-support-environment-narrate.mjs en
+          node scripts/lesson-132-audio-review.mjs
+          npm run training:narrate -- --modules 03-polisiya-bhs --lessons bhs-support-environment --provider gemini
+          npm run training:narrate -- --modules 03-polisiya-bhs --lessons bhs-support-environment
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: lesson-132-audio-review
-          path: remotion/public/bhs-support-environment/audio-review.json
+          name: lesson-132-refined-audio
+          path: |
+            content/training/day1-basic-competencies/narration.json
+            public/training/audio/03-polisiya-bhs/bhs-support-environment/
+            remotion/public/bhs-support-environment/narration-*
+            remotion/public/bhs-support-environment/audio-review.json
           retention-days: 7

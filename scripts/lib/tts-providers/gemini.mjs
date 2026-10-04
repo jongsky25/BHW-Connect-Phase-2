@@ -98,8 +98,8 @@ export const LOCAL_SYSTEM_STORY_STYLES = {
 };
 
 export const BHS_SUPPORT_ENVIRONMENT_STORY_STYLES = {
-  "fil": "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Read the exact words; do not add, translate or change words.",
-  "en": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Read the exact words; do not add, translate or change words."
+  "fil": "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Keep one consistent female Kore narrator voice for every sentence and quoted line; never switch speaker gender. Say RA 10028 as R A ten thousand twenty-eight; never one thousand twenty-eight. Avoid filler sounds, extra words, mid-word pauses or clipped word endings. Read the exact words; do not add, translate or change words.",
+  "en": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Keep one consistent female Kore narrator voice for every sentence and quoted line; never switch speaker gender. Say RA 10028 as R A ten thousand twenty-eight; never one thousand twenty-eight. Avoid filler sounds, extra words, mid-word pauses or clipped word endings. Read the exact words; do not add, translate or change words."
 };
 
 // The voice string recorded in content_hash for Gemini renders, so switching
@@ -306,3 +306,4 @@ export async function synthesizeWithGemini(zones, language, options) {
     charCount: zones.reduce((sum, zone) => sum + zone.text.length, 0),
   };
 }
+
