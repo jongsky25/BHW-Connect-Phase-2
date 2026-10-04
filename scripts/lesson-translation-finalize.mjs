@@ -15,7 +15,7 @@ const out = path.join(root, "remotion/out");
 const publicAsset = (suffix, extension) => {
   const bytes = readFileSync(path.join(out, base + suffix + extension));
   const digest = hash(bytes);
-  const publicPath = `/training/bhw-1-1/${base}-${digest.slice(0, 12)}${suffix}${extension}`;
+  const publicPath = `/training/${lessonConfig.moduleKey}/${base}-${digest.slice(0, 12)}${suffix}${extension}`;
   if (!existsSync(path.join(root, "public", publicPath.slice(1)))) throw new Error(`Missing rendered public media: ${publicPath}`);
   return { path: publicPath, content_hash: digest };
 };

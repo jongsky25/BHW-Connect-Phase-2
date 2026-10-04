@@ -1,0 +1,215 @@
+{
+  "language": "hil",
+  "label": "Hiligaynon (Ilonggo)",
+  "review_status": "draft",
+  "lesson_key": "uhc-coverage",
+  "title": "Katuyuan kag sakop sang UHC",
+  "objectives": [
+    "Mapaathag kag magamit sa isa ka sitwasyon: katuyuan kag sakop sang UHC."
+  ],
+  "read_sections": [
+    {
+      "id": "section-1",
+      "takeaway": "Pamati anay sa pamangkot antes magpaathag ukon magsaad.",
+      "check": null
+    },
+    {
+      "id": "section-2",
+      "takeaway": "Katuyuan sang UHC ang mas mahapos nga paglab-ot sa dekalidad nga serbisyo kag proteksiyon batok sa mabug-at nga gasto.",
+      "check": null
+    },
+    {
+      "id": "included",
+      "takeaway": "Awtomatikong lakip sa NHIP ang tagsa ka Pilipino nga lungsuranon.",
+      "check": null
+    },
+    {
+      "id": "benefit",
+      "takeaway": "Ang pagkalakip sa programa indi saad nga libre ang tagsa ka serbisyo bisan diin.",
+      "check": null
+    },
+    {
+      "id": "verify",
+      "takeaway": "Siguruhon ang benepisyo, provider, kag kinahanglan nga tikang para sa partikular nga konsulta.",
+      "check": null
+    },
+    {
+      "id": "check",
+      "takeaway": "Ipaathag ang nahibaluan na, kag tukuyon ang kinahanglan pa siguruhon.",
+      "check": {
+        "prompt": "Kon lakip na si Mang Ernesto sa PhilHealth, libre na bala ang iya konsulta sa bisan diin nga pasilidad? Ano ang dapat isiling ni Vlanche?",
+        "options": [
+          "Lakip kamo sa PhilHealth. Siguruhon naton kon sakop ini nga konsulta diri, kon sin-o ang provider, kag ang kinahanglan nga tikang.",
+          "Huo. Bangod lakip kamo, libre ang tanan nga konsulta sa bisan diin nga pasilidad.",
+          "Wala sang pulos ang UHC; wala sang konsulta nga mahimo masakop."
+        ],
+        "feedback": "Awtomatikong lakip si Mang Ernesto sa NHIP, pero indi ina ang sabat kon sakop ang partikular nga konsulta. Siguruhon ang benepisyo, provider, kag proseso antes magsaad nga wala sang bayad."
+      }
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide-section-1",
+      "heading": "Ang pamangkot ni Mang Ernesto",
+      "display": "May pamangkot si Mang Ernesto sa bayad sa konsulta.\nNagapamati anay si Vlanche.\nWala sang saad antes magsiguro.",
+      "check": null
+    },
+    {
+      "id": "slide-section-2",
+      "heading": "Ano ang katuyuan sang UHC?",
+      "display": "Dekalidad nga serbisyo nga masarangan.\nProteksiyon batok sa mabug-at nga gasto.\nKatuyuan para sa sistema sang panglawas.",
+      "check": null
+    },
+    {
+      "id": "slide-included",
+      "heading": "Ano ang buot silingon sang awtomatikong pagkalakip?",
+      "display": "Awtomatikong lakip sa NHIP ang tagsa ka Pilipino nga lungsuranon.\nGinasabat sini kon sin-o ang lakip sa programa.",
+      "check": null
+    },
+    {
+      "id": "slide-benefit",
+      "heading": "Lakip, pero ano nga serbisyo ang sakop?",
+      "display": "Lakip sa programa ≠ libre ang tagsa ka serbisyo.\nSiguruhon ini nga benepisyo sa sini nga pasilidad.",
+      "check": null
+    },
+    {
+      "id": "slide-verify",
+      "heading": "Ano ang masunod nga himuon ni Vlanche?",
+      "display": "Siguruhon ang benepisyo.\nSiguruhon ang provider ukon pasilidad.\nSiguruhon ang tikang para sa sini nga konsulta.",
+      "check": null
+    },
+    {
+      "id": "slide-check",
+      "heading": "Sabata ang residente",
+      "display": "Isiling ang nahibaluan na.\nTukuyon ang kinahanglan pa siguruhon.\nIndi magsaad nga libre ang pagbisita.",
+      "check": {
+        "prompt": "Kon lakip na si Mang Ernesto sa PhilHealth, libre na bala ang iya konsulta sa bisan diin nga pasilidad? Ano ang dapat isiling ni Vlanche?",
+        "options": [
+          "Lakip kamo sa PhilHealth. Siguruhon naton kon sakop ini nga konsulta diri, kon sin-o ang provider, kag ang kinahanglan nga tikang.",
+          "Huo. Bangod lakip kamo, libre ang tanan nga konsulta sa bisan diin nga pasilidad.",
+          "Wala sang pulos ang UHC; wala sang konsulta nga mahimo masakop."
+        ],
+        "feedback": "Awtomatikong lakip si Mang Ernesto sa NHIP, pero indi ina ang sabat kon sakop ang partikular nga konsulta. Siguruhon ang benepisyo, provider, kag proseso antes magsaad nga wala sang bayad."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "vlanche-ernesto",
+      "alt": "Nagapamati si BHW Vlanche kay Mang Ernesto sa guwa sang barangay health station samtang nagapamangkot siya parte sa konsulta.",
+      "caption": "Hinimo nga pag-istoryahanay parte sa UHC; wala ginapakita ang partikular nga benepisyo ukon bayad."
+    },
+    {
+      "id": "uhc-purpose-story",
+      "alt": "Animadong pagpaathag ni BHW Vlanche kay Mang Ernesto: katuyuan sang UHC, awtomatikong pagkalakip sa NHIP, kag pagsiguro sang partikular nga benepisyo, provider, kag tikang antes magsaad nga wala sang bayad.",
+      "caption": "Hinimo nga halimbawa nila Vlanche kag Mang Ernesto; may pagsaysay kag mga caption sa Hiligaynon (Ilonggo)."
+    }
+  ],
+  "story_art": {
+    "alt": "Nagapamati si BHW Vlanche kay Mang Ernesto sa guwa sang barangay health station samtang nagapamangkot siya parte sa konsulta.",
+    "caption": "Hinimo nga pag-istoryahanay parte sa UHC; wala ginapakita ang partikular nga benepisyo ukon bayad."
+  },
+  "story_beats": [
+    {
+      "id": "question",
+      "text": "Sa barangay health station, ginpamangkot ni Mang Ernesto si BHW Vlanche: Libre na bala ang konsulta? Namati anay siya antes magsabat.",
+      "title": "Libre na bala ang konsulta?",
+      "detail": "Pamati anay sa pamangkot."
+    },
+    {
+      "id": "purpose",
+      "text": "Katuyuan sang UHC Act nga mas mahapos malab-ot ang dekalidad kag masarangan nga pag-atipan kag maprotektahan ang mga tawo batok sa mabug-at nga gasto.",
+      "title": "Katuyuan sang UHC",
+      "detail": "Paglab-ot sa serbisyo · proteksiyon sa gasto"
+    },
+    {
+      "id": "included",
+      "text": "Sa idalom sang balaod, awtomatikong lakip ang tagsa ka Pilipino nga lungsuranon sa National Health Insurance Program sang PhilHealth.",
+      "title": "Awtomatikong lakip",
+      "detail": "Sin-o ang lakip sa programa?"
+    },
+    {
+      "id": "benefit",
+      "text": "Ang pagkalakip sa programa wala nagakahulugan nga libre ang tagsa ka serbisyo sa tagsa ka pasilidad. Lain ang pamangkot kon sakop ang partikular nga konsulta.",
+      "title": "Lakip ≠ libre ang tanan",
+      "detail": "Siguruhon ang partikular nga serbisyo."
+    },
+    {
+      "id": "verify",
+      "text": "Usisaon ni Vlanche sa PhilHealth ukon RHU ang benepisyo, ginakilala nga provider ukon pasilidad, kag kinahanglan nga mga tikang para sa sini nga konsulta.",
+      "title": "Benepisyo · provider · mga tikang",
+      "detail": "Kumpirmahon ang lokal nga proseso subong."
+    },
+    {
+      "id": "answer",
+      "text": "Nagsiling si Vlanche: Lakip kamo sa PhilHealth. Agod mahibaluan kon sakop ini nga konsulta diri, siguruhon naton ang benepisyo, provider, kag ang dapat himuon.",
+      "title": "Isiling ang nahibaluan · siguruhon ang detalye",
+      "detail": "Wala sang saad nga libre kon wala pa nasiguro."
+    }
+  ],
+  "scene_labels": {
+    "answer": "Sabat ni Vlanche",
+    "summary": [
+      "Lakip",
+      "Benepisyo",
+      "Provider",
+      "Mga tikang"
+    ]
+  },
+  "ui": {
+    "Aralin": "Leksiyon",
+    "Basahin": "Basaha",
+    "Slides": "Mga slide",
+    "Kuwentong may salaysay": "Sugilanon nga may salaysay",
+    "Buong screen": "Bug-os nga screen",
+    "← Bumalik sa mga aralin": "← Balik sa mga leksiyon",
+    "← Bumalik sa mga subchapter": "← Balik sa mga subchapter",
+    "Tinatayang 3–7 minuto para sa sariling pag-aaral; hiwalay ang gabay na pagsasanay.": "Ginabulubanta nga 3–7 ka minuto para sa kaugalingon nga pagtuon; separado ang paghanas upod sa facilitator.",
+    "▶ Panoorin ang animadong kuwento na may salaysay": "▶ Tan-awa ang animado nga sugilanon nga may salaysay",
+    "Pindutin ang Play para marinig ang salaysay sa napiling wika.": "Pinduta ang Play agod mabatian ang salaysay sa ginpili nga pinulongan.",
+    "Pumili ng sagot": "Magpili sang sabat",
+    "Tama!": "Husto!",
+    "Hindi pa tama. Subukang muli.": "Indi pa husto. Tilawi liwat.",
+    "Nakaraan": "Nagligad nga bahin",
+    "Susunod": "Masunod nga bahin",
+    "Puwesto sa aralin": "Bahin sang leksiyon",
+    "Uri ng nilalaman": "Klase sang sulod",
+    "Pakinggan ang bahaging ito": "Pamatii ini nga bahin",
+    "Pakinggan": "Pamatii",
+    "I-pause": "Untati anay",
+    "Bilis": "Kadasigon",
+    "Hindi ma-play ang audio. Basahin muna ang teksto.": "Indi mapatukar ang audio. Basaha anay ang teksto.",
+    "Sagutin muna ang tanong para mapakinggan ang audio na may buod.": "Sabta anay ang pamangkot agod mapamatian ang audio nga may sumaryo.",
+    "Maaari mo nang markahang tapos ang aralin.": "Mahimo mo na markahan nga natapos ang leksiyon.",
+    "Tapusin ang mga bahagi at sagutin ang bawat tanong sa Basahin o Slides. Hindi kailangang tama ang unang sagot. Kapag ni-reload, sagutin muli ang mga tanong.": "Tapusa ang mga bahin kag sabta ang tagsa ka pamangkot sa Basaha ukon Mga slide. Indi kinahanglan nga husto ang una nga sabat. Kon i-reload, sabta liwat ang mga pamangkot.",
+    "Natapos": "Natapos",
+    "Markahang tapos ang aralin": "Markahi nga natapos ang leksiyon",
+    "Magaling! Natapos mo ang aralin. Naka-save ang iyong progreso.": "Maayo! Natapos mo ang leksiyon. Na-save ang imo progreso.",
+    "Susunod na aralin →": "Masunod nga leksiyon →",
+    "Bumalik sa listahan ng mga aralin →": "Balik sa listahan sang mga leksiyon →",
+    "Nakaraang aralin": "Nagligad nga leksiyon",
+    "Susunod na aralin": "Masunod nga leksiyon",
+    "Ang pagkumpleto ng aralin ay hindi katibayan ng praktikal na kakayahan.": "Ang pagkompleto sang leksiyon indi pamatuod sang praktikal nga ikasarang.",
+    "Mga sanggunian": "Mga reperensiya",
+    "Mga aralin sa subchapter": "Mga leksiyon sa subchapter",
+    "Mga aralin sa Kabanata I": "Mga leksiyon sa Kapitulo I",
+    "Hindi nai-save ang puwesto. Subukang muli.": "Wala na-save ang imo puwesto. Tilawi liwat.",
+    "Hindi nai-save ang pagkumpleto. Subukang muli o i-reload ang aralin.": "Wala na-save ang pagkompleto. Tilawi liwat ukon i-reload ang leksiyon.",
+    "Panoorin": "Tan-awa",
+    "Isara": "Sirad-i",
+    "Portrait": "Patindog",
+    "Landscape": "Pahigda",
+    "Draft para sa pagsusuri ng salin at pagbigkas.": "Draft para sa pag-usisa sang hubad kag paglitok.",
+    "Buong screen na aralin": "Leksiyon sa bug-os nga screen",
+    "Patayo": "Patindog",
+    "Pahiga": "Pahigda",
+    "Oryentasyon": "Oryentasyon",
+    "Nilalaman ng aralin": "Sulod sang leksiyon",
+    "I-rotate ang device nang pahiga para mabasa ang nilalaman.": "Ipatuyok ang device nga pahigda agod mabasa ang sulod.",
+    "I-rotate ang device nang patayo para mabasa ang nilalaman.": "Ipatuyok ang device nga patindog agod mabasa ang sulod.",
+    "Subukang i-save muli": "Tilawi nga i-save liwat",
+    "Wika ng aralin": "Pinulongan sang leksiyon",
+    "Mga hakbang bilang teksto": "Mga tikang bilang teksto",
+    "Tan-awa ang tubag ug pasabot": "Tan-awa ang sabat kag pagpaathag"
+  }
+}
