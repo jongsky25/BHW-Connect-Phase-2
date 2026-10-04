@@ -413,6 +413,9 @@ export function ReferenceLessons(props: Props) {
     );
   }
   function openReader() {
+    if (lesson?.lesson_key === "bhs-support-environment") {
+      setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
+    }
     setReaderOpen(true);
     setOrientationHelp(false);
     readerDialog.current?.showModal();
@@ -586,7 +589,7 @@ export function ReferenceLessons(props: Props) {
       </nav>
   );
   const videoContent = featuredVideo && lesson && (
-    <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
+    <div className="reference-story-player rounded-xl border border-ink/15 p-4 sm:p-6" data-lesson={lesson.lesson_key}>
       <p className="mb-1 text-sm font-semibold">{narratedStory ? videoLabel : ui("Panoorin", "Watch")}</p>
       {narratedStory && <p className="text-sm">
         {ui("Pindutin ang Play para marinig ang salaysay sa napiling wika.", "Press Play to hear the story in your selected language.")}

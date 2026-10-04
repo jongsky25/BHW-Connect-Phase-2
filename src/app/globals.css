@@ -627,3 +627,29 @@ body {
 
 /* Mimi: contain the full scene so every face stays visible. */
 .reference-story-art img[src*="mimi-support-environment"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+
+/* Keep the narrated frame and native captions inside short full-screen views.
+   The regular player retains its instructions and text alternative. */
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] {
+  border: 0;
+  padding: 0;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] details {
+  display: none;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] figure {
+  margin: 0;
+}
+
+.lesson-reader-surface .reference-story-player[data-lesson="bhs-support-environment"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}
