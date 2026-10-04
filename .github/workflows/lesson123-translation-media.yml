@@ -27,7 +27,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Listen to the actual draft audio with the configured provider
+      - name: Listen to the second-pass actual audio with the configured provider
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/lesson-translation-audio-review.mjs --lesson 1.2.3 --language ${{ matrix.language }}
