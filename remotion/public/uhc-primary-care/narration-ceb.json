@@ -1,0 +1,54 @@
+{
+  "language": "ceb",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "delivery_style": "Speak in natural Philippine Cebuano (Bisaya) as a warm, expressive community health teacher and storyteller. Use natural pronunciation, word stress and sentence intonation. Give Mang Ernesto’s question curiosity and Vlanche’s support warmth. Use purposeful pitch and pace changes, slowing for benefit, the resident’s chosen or available clinic and locally confirmed instructions. Emphasize that the clinician decides the clinical referral. Say YAKAP as YAH-kap, the Tagalog word for hug, never individual letters. Keep one consistent female Kore narrator voice in headings and every quoted line, including Mang Ernesto; vary intonation without male voice acting. Say Vlanche as one syllable vlanch. Articulate every supplied consonant and syllable clearly. Keep Cebuano nga and Hiligaynon kag distinct; follow the selected language, not Tagalog grammar. Avoid fillers, false starts, inserted connectors and repeated syllables. Preserve official and technical terms and the exact authored words. Do not translate, add words, make promises or switch languages.",
+  "audio_sha256": "e1c165ca1b54b6c2eba57cf3cde034a1bacefc5601da078fcb146b494c76c73f",
+  "script_hash": "89dd5e793299461702f06832b5c6192bb125f0ed9e1b131e32e440fff4b98cf5",
+  "durationSeconds": 96.679,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Nangutana pag-usab si Mang Ernesto kang BHW Vlanche: Asa ako magsugod alang sa checkup? Ug kon adunay referral, asa ako moadto? Wala magtag-an si Vlanche.",
+      "start_ms": 0,
+      "end_ms": 13080
+    },
+    {
+      "zone": "four-changes",
+      "index": 1,
+      "text": "Gihinumdoman nila ang upat ka kausaban sa giya: pagkaapil sa PhilHealth, konsultang outpatient, pagpili og primary care provider, ug mas maayong sistema sa referral. Nahisgutan na ang una; sundan nila karon ang tulo pa.",
+      "start_ms": 13380,
+      "end_ms": 30700
+    },
+    {
+      "zone": "outpatient",
+      "index": 2,
+      "text": "Adunay outpatient ug primary care nga mga benepisyo ang PhilHealth YAKAP, apan adunay mga lagda ang matag serbisyo. Mangutana si Vlanche sa health team kon unsang benepisyo ang angay sa konsulta ni Mang Ernesto ug sa unsang accredited clinic kini makuha.",
+      "start_ms": 31000,
+      "end_ms": 46160
+    },
+    {
+      "zone": "provider",
+      "index": 3,
+      "text": "Makapili si Mang Ernesto og primary care clinic. Ang pagkaapil sa PhilHealth wala magpasabot nga nakapili na siya. Tabangan siya ni Vlanche sa pagsusi sa RHU o PhilHealth sa kasamtangang mga kapilian ug paagi sa pagpili.",
+      "start_ms": 46460,
+      "end_ms": 62220
+    },
+    {
+      "zone": "referral",
+      "index": 4,
+      "text": "Kon kinahanglan og laing lebel sa pag-atiman, ang clinician ang modesisyon sa referral. Mahimong magkalahi ang lokal nga mga proseso. Mangutana si Vlanche sa health team sa angay nga contact ug mga panudlo; dili siya mopili og ospital pinaagi sa pagtag-an.",
+      "start_ms": 62520,
+      "end_ms": 79640
+    },
+    {
+      "zone": "next-step",
+      "index": 5,
+      "text": "Miingon si Vlanche: Sigurohon nato ang inyong clinic, ang benepisyo alang sa kining konsulta, ug ang sunod nga lakang. Kon morekomenda og referral ang clinician, kuhaon nato ang lokal nga proseso. Tabangan ko kamong mangutana sa health team.",
+      "start_ms": 79940,
+      "end_ms": 96620
+    }
+  ]
+}

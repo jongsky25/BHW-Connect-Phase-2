@@ -224,10 +224,10 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{ language }}
         />
       ))}
-      {(["fil", "en"] as const).map((language) => (
-        <Composition
-          key={`uhc-primary-care-${language}`}
-          id={language === "fil" ? "PrimaryCareStoryFil" : "PrimaryCareStoryEn"}
+        {(["fil", "en", "ceb", "hil"] as const).map((language) => (
+          <Composition
+            key={`uhc-primary-care-${language}`}
+            id={({ fil: "PrimaryCareStoryFil", en: "PrimaryCareStoryEn", ceb: "PrimaryCareStoryCeb", hil: "PrimaryCareStoryHil" })[language]}
           component={PrimaryCareStory}
           calculateMetadata={calculatePrimaryCareMetadata}
           durationInFrames={PRIMARY_CARE_FALLBACK_DURATION}

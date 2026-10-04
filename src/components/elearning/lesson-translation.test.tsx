@@ -106,8 +106,11 @@ describe("lesson 1.1.1 Cebuano pilot", () => {
   });
 });
 
-describe("lesson 1.2.1 completion preserves identity without the optional story", () => {
-  const coverageDirectory = path.resolve(directory, "../../../02-uhc-act/lessons/uhc-coverage");
+describe.each([
+  { number: "1.2.1", folder: "uhc-coverage" },
+  { number: "1.2.2", folder: "uhc-primary-care" },
+])("lesson $number completion preserves identity without the optional story", ({ folder }) => {
+  const coverageDirectory = path.resolve(directory, `../../../02-uhc-act/lessons/${folder}`);
   for (const language of ["ceb", "hil"] as const) {
     it(`completes ${language} with the original lesson and revision identity`, async () => {
       const { lesson, translation } = fixture(language, coverageDirectory);
