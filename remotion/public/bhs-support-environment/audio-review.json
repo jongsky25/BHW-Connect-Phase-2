@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-04T05:39:28.675Z",
+  "method": "Gemini 3.8 Flash audio understanding; model-mediated, not human listening or owner approval",
+  "model": "gemini-3.8-flash",
+  "api_documentation": "https://ai.google.dev/gemini-api/docs/generate-content/audio",
+  "reports": [
+    {
+      "id": "read-check-en",
+      "language": "en",
+      "sha256": "189bb9a540b5599fabb678e1e5d35f728f64e2ed44e1147a2d2c4bdb85e2a511",
+      "report": {
+        "transcription": "Mimi's decision. The parent wants someone to talk to about breastfeeding, but Mimi has not yet confirmed the contact or space. Staff also want to reduce disposable items in their break area. Mimi needs a next step that respects the parent, checks local arrangements, and protects safe care. Start with listening and privacy; confirm trained support and the non-clinical alternative with the supervisor. Which response can she carry out within her role? Respectful support and safe waste reduction: listen, confirm, then help.",
+        "intelligibility": "Clear and fully intelligible throughout with clean enunciation.",
+        "delivery": "Measured, calm, and articulate instructional delivery with consistent pacing, though showing characteristic synthetic/TTS cadence.",
+        "issues": [],
+        "owner_listening_focus": "The reading fully matches the authored script without omissions or additions. The name 'Mimi' is pronounced consistently and clearly as /ˈmiːmiː/."
+      }
+    },
+    {
+      "id": "read-check-fil",
+      "language": "fil",
+      "sha256": "4f4b63d94083550ce01c73ee48b3e434fe26309893b5c24ba171888a8d260591",
+      "report": {
+        "transcription": "Pasya ni Mimi. Nais ng magulang ng kausap tungkol sa breastfeeding, pero hindi pa kumpirmado ni Mimi ang contact o lugar. Nais din ng staff na mabawasan ang disposable na gamit sa kanilang break area. Pipili si Mimi ng susunod na hakbang na may paggalang, lokal na kumpirmasyon at proteksiyon sa ligtas na pangangalaga. Unahin ang pakikinig at privacy; tiyakin ang sinanay na suporta at ang non-clinical na alternatibo kasama ang supervisor. Alin sa mga sagot ang maisasagawa niya nang hindi lumalampas sa kanyang papel? Magalang na suporta at ligtas na pagbabawas ng basura: makinig, kumpirmahin, saka umalalay.",
+        "intelligibility": "Clear and easily understandable throughout. The text matches the authored script precisely with no omissions or added words.",
+        "delivery": "The narration alternates between female and male voices across sentences/sections, maintaining a calm, clear, and measured educational delivery. English loan words ('breastfeeding', 'disposable', 'break area', 'privacy', 'non-clinical', 'supervisor') are pronounced naturally.",
+        "issues": [
+          {
+            "type": "voice switching",
+            "description": "The audio alternates between distinct female and male narrator voices across paragraphs rather than using a single continuous voice."
+          }
+        ],
+        "owner_listening_focus": "Verify whether the alternating male/female voices across sentences is intentional design for modular lesson components or if a single voice narrator is preferred."
+      }
+    },
+    {
+      "id": "read-facility-roles-en",
+      "language": "en",
+      "sha256": "bdf4507dee0c88cc0760db1e714bb54b29fffb9e6a23dabb2ae00d5644aca92d",
+      "report": {
+        "transcription": "Facilities and roles. RA 10,028 strengthens breastfeeding support. It requires lactation stations: private, clean, and well-ventilated spaces for breastfeeding or expressing milk. A station must not be in a toilet. Equipment and facility requirements apply, and exemptions have a formal process. The institution is responsible for complying with the requirements. A BHW does not decide an exemption or establish a facility alone. Mimi asks the midwife or supervisor: “Who is trained to help, and what suitable space and guidance are available here?” If something is missing, she raises it with the supervisor rather than making a promise. The institution is responsible for facilities; the BHW checks, supports, and reports gaps.",
+        "intelligibility": "Clear and easily understandable throughout. Each sentence is articulated distinctly.",
+        "delivery": "Warm, measured, and instructional delivery with a Filipino accent. Phrasing is deliberately paced, though slightly segmented between lines due to pausing.",
+        "issues": [
+          {
+            "type": "pronunciation",
+            "detail": "RA 10028 is spoken as 'R-A ten thousand twenty-eight' rather than the customary statutory reading 'R-A ten-zero-twenty-eight'."
+          }
+        ],
+        "owner_listening_focus": "Confirm whether reading Republic Act 10028 as 'ten thousand twenty-eight' aligns with institutional preference over 'ten-zero-twenty-eight'."
+      }
+    },
+    {
+      "id": "read-facility-roles-fil",
+      "language": "fil",
+      "sha256": "7f2dfa549d22d78be80b38d795ce526605b2a765e08b343f61cbd85339ac95b7",
+      "report": {
+        "transcription": "Pasilidad at papel. Pinalalakas ng RA 10,028 ang suporta sa breastfeeding. Itinatakda nito ang lactation stations: pribado, malinis at maaliwalas na lugar para sa pagpapasuso o pag-express ng gatas. Hindi ito dapat nasa toilet. May mga tuntunin sa kagamitan at pasilidad; may pormal ding proseso para sa mga exemption. Pananagutan ng institusyon ang pagsunod sa mga tuntunin. Hindi ang BHW ang nagpapasya sa exemption o nagtatatag mag-isa ng pasilidad. Itatanong ni Mimi sa midwife o supervisor: “Sino ang sinanay na makakausap, at anong angkop na lugar at gabay ang mayroon dito?” Kung may kulang, ipapaalam niya sa supervisor sa halip na mangako. Institusyon ang responsable sa pasilidad; BHW ang nagtatanong, umaalalay at nag-uulat ng kakulangan.",
+        "intelligibility": "Clear and easily understandable throughout. Articulation is deliberate with a calm educational tone.",
+        "delivery": "Measured, instructional pacing with warm and empathetic inflection suited for community health education.",
+        "issues": [
+          {
+            "type": "pronunciation",
+            "timestamp": "00:03 - 00:06",
+            "detail": "RA 10028 is pronounced as 'R-A ten thousand twenty-eight' in English phrasing rather than digit-by-digit ('one-zero-zero-two-eight') or Tagalog numbering."
+          },
+          {
+            "type": "word substitution",
+            "timestamp": "00:50 - 00:52",
+            "detail": "Spoke 'ipapaalam' instead of the scripted 'ipaaalam'."
+          }
+        ],
+        "owner_listening_focus": "Verify whether 'RA 10028' read as 'R-A ten thousand twenty-eight' matches local curriculum guidance or if a digit-by-digit reading ('R-A one-zero-zero-two-eight') is preferred."
+      }
+    },
+    {
+      "id": "read-listen-connect-en",
+      "language": "en",
+      "sha256": "d071e054869de3e5c6907386f1cf72dcdcc8b21f9dd80f2acc8af2eae4f6d6d5",
+      "report": {
+        "transcription": "Listen and connect. \"What would you like to ask, and would you like to speak with someone trained support you?\" Mimi asks calmly. She respects the parent and avoids discussing personal concerns in front of other people. She does not impose a feeding choice or shame the parent. She confirms who can help and where a private conversation can take place. With the parent's permission, she helps make the connection to a trained health worker under local guidance. She does not give a diagnosis, treatment or her own clinical feeding instructions. If the answer is not yet known, she says she will check with the health team. Listen respectfully, protect privacy, and connect to confirmed, trained support.",
+        "intelligibility": "Clear, crisp, and fully intelligible across all sentences.",
+        "delivery": "Warm, measured, empathetic, and professional instructional tone with appropriate pauses and expressive inflection.",
+        "issues": [
+          {
+            "type": "omission",
+            "expected": "trained to support you",
+            "actual": "trained support you",
+            "timestamp": "00:06 - 00:07",
+            "description": "The preposition 'to' was omitted in the phrase 'trained to support you'."
+          }
+        ],
+        "owner_listening_focus": "Listen closely at 00:06 to verify whether the missing 'to' in 'trained to support you' is acceptable for the instructional standard."
+      }
+    },
+    {
+      "id": "read-listen-connect-fil",
+      "language": "fil",
+      "sha256": "389911e40d4fd6ee10f1c37c2606ceffd631aecd898655a87a3d1d50e129ff9f",
+      "report": {
+        "transcription": "Makinig at iugnay. “Ano po ang gusto ninyong itanong, at nais po ba ninyong makausap ang sinanay na tagasuporta?” mahinahong tanong ni Mimi. Iginagalang niya ang magulang at iniiwasang talakayin ang personal na concern sa harap ng ibang tao. Hindi niya ipinipilit ang isang feeding choice o pinapahiya ang magulang. Kukumpirmahin niya kung sino ang makatutulong at kung saan maaaring mag-usap nang may privacy. Sa pahintulot ng magulang, tutulong siyang makaugnay sa sinanay na health worker ayon sa lokal na gabay. Hindi siya magbibigay ng diagnosis, panggamot o sariling clinical feeding instructions. Kung hindi pa alam ang sagot, sasabihin niyang aalamin niya sa health team. Makinig nang magalang, pangalagaan ang privacy, at iugnay sa nakumpirmang sinanay na suporta.",
+        "intelligibility": "Clear and easily intelligible throughout with crisp diction and well-paced delivery.",
+        "delivery": "Warm, gentle, and instructional tone fitting for health counseling guidelines; natural pauses between sentences.",
+        "issues": [
+          {
+            "type": "word_substitution",
+            "timestamp": "00:40",
+            "expected": "paggamot",
+            "heard": "panggamot",
+            "severity": "minor"
+          }
+        ],
+        "owner_listening_focus": "Listen closely around 00:40 where the speaker narrates 'panggamot' instead of the authored 'paggamot'. Check whether this slight morphological difference meets recording standards or requires a retake."
+      }
+    },
+    {
+      "id": "read-safe-alternative-en",
+      "language": "en",
+      "sha256": "3a38a7971a3b0522e29f0defce591cf40c8a372fbeadbc5907c44d94c20163ae",
+      "report": {
+        "transcription": "A safe alternative Mimi suggests: “Could staff use their own reusable lunch containers in the break area, under the guidance here?” This is a non-clinical example that needs the supervisor's confirmation. It is not a suggestion to reuse medical supplies. The circular considered infection prevention and control in its phased implementation. A BHW must not independently remove or reuse sterile or necessary clinical supplies. Trained staff guidance governs infection control and handling healthcare waste. If the safety of a change is uncertain, ask first. Saving resources must not override safe care. Confirm the non-clinical alternative; protect supplies needed for safe clinical care.",
+        "intelligibility": "High",
+        "delivery": "The narration appears to be generated via synthetic text-to-speech (TTS). Pronunciation and diction are distinct and clear throughout, but the rhythm is noticeably segmented with unnatural, stilted pauses between clauses.",
+        "issues": [
+          {
+            "type": "pacing",
+            "timestamp": "00:01 - 00:04",
+            "description": "Noticeable robotic or disjointed pause between 'A safe alternative' and 'Mimi suggests'."
+          },
+          {
+            "type": "pacing",
+            "timestamp": "00:21 - 00:24",
+            "description": "Fragmented phrasing around 'infection prevention' and 'and control'."
+          },
+          {
+            "type": "intonation",
+            "timestamp": "00:28 - 00:32",
+            "description": "Slightly flat, artificial pitch contour and abrupt cadence around 'remove or reuse sterile'."
+          }
+        ],
+        "owner_listening_focus": "Check if the synthetic/TTS delivery style meets your brand standards for warmth and engagement, as the cadence sounds somewhat disjointed despite the text being read accurately. Acronym 'BHW' is pronounced cleanly as individual letters."
+      }
+    },
+    {
+      "id": "read-safe-alternative-fil",
+      "language": "fil",
+      "sha256": "a918202523e1dd222d91d3002d34114dd776eef438d26f2faf7a04e7f4f2a042",
+      "report": {
+        "transcription": "Ligtas na alternatibo. Mungkahi ni Mimi: “Maaari po bang gumamit ng sariling reusable na lalagyan para sa baon sa staff break area, ayon sa gabay dito?” Isa itong non-clinical na halimbawa na kailangan munang kumpirmahin sa supervisor. Hindi ito mungkahing mag-reuse ng gamit na panggamot. Isinaalang-alang ng circular ang infection prevention at control sa phased implementation nito. Hindi dapat alisin o muling gamitin ng BHW nang mag-isa ang sterile o kinakailangang clinical supplies. Mananatili sa gabay ng sinanay na staff ang infection control at paghawak ng healthcare waste. Kung hindi tiyak kung ligtas ang isang pagbabago, magtanong muna. Hindi dapat manaig ang pagtitipid sa ligtas na pangangalaga. Kumpirmahin ang non-clinical na alternatibo; protektahan ang kinakailangang ligtas na clinical supplies.",
+        "intelligibility": "Clear and fully intelligible throughout. Both Tagalog phrases and English/technical loanwords are clearly articulated.",
+        "delivery": "Warm, measured, and conversational instructional delivery. The quoted speech segment adopts an appropriate inquisitive dialogue inflection, and transitions smoothly back to informative exposition.",
+        "issues": [],
+        "owner_listening_focus": "Verify that acronym 'BHW' is articulated distinctly as individual English letter names ('B-H-W') and that loan phrases such as 'phased implementation' and 'infection control' sound natural and clear to clinical audiences."
+      }
+    },
+    {
+      "id": "read-section-3-en",
+      "language": "en",
+      "sha256": "27175a5cb2d35da5f9258f43c3d9fe8d274b1662d17ab1bf97302e4954571417",
+      "report": {
+        "transcription": "A supportive BHS. A parent carrying an infant arrives at the barangay health station. \"Is there someone I can talk to about breastfeeding?\" the parent asks BHW Mimi. Mimi listens first. Two distinct policies matter here: breastfeeding support under RA 10028, and reducing unnecessary single-use plastic under DOH DC 2021-0486. They meet in a respectful, safe environment. Mimi can help confirm local support and safe practices without promising a service that has not been verified. Two topics: respectful breastfeeding support and safe reduction of unnecessary waste.",
+        "intelligibility": "Clear and easily intelligible throughout. Every word and acronym is enunciated with clean separation.",
+        "delivery": "Warm, measured, and instructional delivery with an audible character inflection for the parent's spoken question. The policy alphanumeric codes are read out slowly digit-by-digit ('one zero zero two eight', 'dash zero four eight six'), which aids clarity but slightly slows the narrative momentum.",
+        "issues": [
+          {
+            "type": "pronunciation",
+            "detail": "RA 10028 is recited strictly digit by digit ('R-A one zero zero two eight') rather than grouped (e.g., 'ten thousand twenty-eight')."
+          },
+          {
+            "type": "pronunciation",
+            "detail": "DOH DC 2021-0486 explicitly vocalizes the hyphen as 'dash' ('two zero two one dash zero four eight six')."
+          }
+        ],
+        "owner_listening_focus": "Listen to whether the policy identifiers ('RA 10028' read as 'one zero zero two eight' and the audible 'dash' in '2021-0486') fit standard training guidelines or if colloquial/grouped phrasing is preferred."
+      }
+    },
+    {
+      "id": "read-section-3-fil",
+      "language": "fil",
+      "sha256": "1af67e1fabe430545b6f90433c3bcbb6c88eec2dadc3471bfee5d25b849e240b",
+      "report": {
+        "transcription": "Suportadong BHS. Dumating sa barangay health station ang isang magulang na may kargang sanggol. \"May makakausap po ba ako tungkol sa breastfeeding?\" tanong niya kay BHW Mimi. Nakinig muna si Mimi. Dalawang magkaibang polisiya ang mahalaga rito: suporta sa breastfeeding sa ilalim ng RA 10,028, at pagbabawas ng hindi kailangang single-use plastic sa ilalim ng DOH DC 2021-0486. Magkaugnay ang mga ito sa isang magalang at ligtas na kapaligiran. Tutulong si Mimi na tiyakin ang lokal na suporta at ligtas na gawain, nang walang ipinapangakong serbisyong hindi pa nakumpirma. Dalawang paksa: magalang na suporta sa breastfeeding at ligtas na pagbabawas ng hindi kailangang basura.",
+        "intelligibility": "Clear and easily understandable throughout. Acronyms and policy numbers are articulated distinctly.",
+        "delivery": "Engaging and warm delivery featuring character voice acting for the dialogue (\"May makakausap po ba ako...\") followed by an informative narrative tone. Natural pacing with clear phrasing.",
+        "issues": [],
+        "owner_listening_focus": "The speaker reads all numbers and acronyms clearly: 'RA 10028' as 'RA ten thousand twenty-eight' (in English), and 'DOH DC 2021-0486' as 'D-O-H D-C twenty twenty-one dash zero four eight six'. The dialogue line is delivered in an expressive, gentle persona before returning to clear narration."
+      }
+    },
+    {
+      "id": "read-unnecessary-plastic-en",
+      "language": "en",
+      "sha256": "887776dc4017eaba9bf0f585204546c6ed91c136543ee9533bbaf379da633283",
+      "report": {
+        "transcription": "Unnecessary plastic? Mimi also notices disposable items in the staff break area. DOH DC 2021-0486 addresses unnecessary single-use plastics in hospitals, other health facilities, and DOH offices. Its list includes thin plastic cups, drinking straws, coffee stirrers, plastic cutlery, and certain thin plastic bags. The circular sets successive phases beginning in 2022 and 2023 for specified settings and groups. It does not say that all plastic is illegal everywhere. Mimi checks the facility's current directive with the supervisor: which items are unnecessary, and which safe alternatives are allowed? Check the scope and current directive; this lesson does not treat every plastic item as banned.",
+        "intelligibility": "Clear and easily understandable throughout. Acronyms, numbers, and circular references ('DOH DC 2021-0486') are articulated precisely.",
+        "delivery": "The narration appears assembled from multiple synthetic voice profiles or tonal shifts between sentences, causing abrupt changes in timbre and pacing. The opening title is delivered with an unexpected questioning inflection ('Unnecessary plastic?'), but subsequent sentences are paced instructional lines.",
+        "issues": [
+          {
+            "type": "intonation",
+            "description": "'Unnecessary plastic' is spoken with a rising question pitch rather than a declarative heading tone."
+          },
+          {
+            "type": "voice_consistency",
+            "description": "Noticeable shifts in vocal timbre/speaker voice across different segments across the track."
+          }
+        ],
+        "owner_listening_focus": "Listen to the rising question inflection on the opening heading 'Unnecessary plastic?' and verify if the multi-voice alternating delivery across segments is intentional."
+      }
+    },
+    {
+      "id": "read-unnecessary-plastic-fil",
+      "language": "fil",
+      "sha256": "25f1af2047f1fda75d483324af5612edb5cce9a7435d196fc0eeec022687b40d",
+      "report": {
+        "transcription": "Hindi kailangang plastic. Napansin din ni Mimi ang mga disposable na gamit sa lugar ng pahinga ng staff. Tungkol ang DOH DC 2021-0486 sa hindi kailangang single-use plastics sa mga ospital, ibang health facilities at DOH offices. Kabilang sa listahan nito ang manipis na plastic cups, drinking straws, coffee stirrers, plastic cutlery at ilang manipis na plastic bags. Itinakda ng circular ang magkakasunod na yugto simula 2022 at 2023 para sa mga tinukoy na lugar at grupo. Hindi nito sinasabing ilegal ang lahat ng plastic sa lahat ng lugar. Titingnan ni Mimi ang kasalukuyang direktiba ng pasilidad kasama ang supervisor: ano ang hindi kailangang gamit, at anong ligtas na alternatibo ang pinapayagan? Tiyakin ang saklaw at kasalukuyang direktiba; hindi blanket ban sa lahat ng plastic ang aralin.",
+        "intelligibility": "Clear and easily intelligible throughout. Words and policy references are cleanly articulated.",
+        "delivery": "Engaging and clear educational delivery featuring alternating speakers (female title, male for the first sentence, female for the remainder). Pacing is measured with natural phrasing.",
+        "issues": [],
+        "owner_listening_focus": "Listen to the voice transition between the first sentence (male narrator) and the rest of the text (female narrator) to ensure it fits lesson continuity requirements, as well as the deliberate pause before 'blanket ban' at ~01:00."
+      }
+    },
+    {
+      "id": "story-fil",
+      "language": "fil",
+      "sha256": "bc7f38e20a0fa7c1e12a02f5b1d154f83ec8fbbd2ad7b14ec02168201a02ee71",
+      "report": {
+        "transcription": "May tanong sa breastfeeding ang magulang. Nakikinig si BHW Mimi. Dalawang paksa: magalang na suporta at ligtas na pagbabawas ng basura. May mga tuntunin sa lactation stations ang RA 10,028. Institusyon ang responsable. Kukumpirmahin ni Mimi ang lokal na lugar at sinanay na contact. Igalang ang privacy at pasya ng magulang. Sa pahintulot niya, iugnay sa nakumpirmang suporta. Huwag magbigay ng sariling clinical advice. Nililimitahan ng DOH circular ang hindi kailangang single-use plastics sa tinukoy na mga lugar. May phased coverage. Tiyakin ang kasalukuyang direktiba. Itanong sa supervisor ang reusable na lalagyan ng baon sa break area. Huwag kusang mag-alis o mag-reuse ng sterile o kinakailangang clinical supplies. Makinig, kumpirmahin, umalalay. Igalang ang magulang; tiyakin ang lokal na suporta. Bawasan ang hindi kailangang basura ayon sa gabay. Ligtas na pangangalaga muna.",
+        "intelligibility": "Clear and easily understandable throughout. The speaker articulates both Tagalog terms and English loan phrases cleanly.",
+        "delivery": "Warm, measured, and supportive healthcare/instructional tone. Pacing is unhurried with natural phrasing and appropriate pauses between guidance points.",
+        "issues": [
+          {
+            "type": "pronunciation / numeral reading",
+            "timestamp": "00:14 - 00:16",
+            "details": "'RA 10028' is read aloud as 'RA ten thousand twenty-eight' rather than digit-by-digit or 'ten-zero-twenty-eight'."
+          }
+        ],
+        "owner_listening_focus": "Confirm whether reading 'RA 10028' as 'ten thousand twenty-eight' aligns with organizational style conventions or if a digit-by-digit reading ('one-zero-zero-two-eight' or 'sampung libo dalawampu't walo') is preferred."
+      }
+    },
+    {
+      "id": "story-en",
+      "language": "en",
+      "sha256": "e183ff7ceb992bfee56e5b9877e031883468f458df3d071f5a5a4d760d61ec39",
+      "report": {
+        "transcription": "A parent asks about breastfeeding. BHW Mimi listens. Two topics: respectful support and safe reduction of unnecessary waste. RA 10028 sets rules for lactation stations. The institution is responsible. Mimi confirms the local space and trained contact. Respect the parent's privacy and choice. With permission, connect them to confirmed support. Do not offer personal clinical advice. The DOH circular limits unnecessary single-use plastics in specified settings, with phased coverage. Confirm the current directive. Ask the supervisor about reusable lunch containers in the break area. Never independently remove or reuse sterile or necessary clinical supplies. Listen, confirm, support. Respect the parent and confirm local support. Reduce unnecessary waste according to guidance. Safe care comes first.",
+        "intelligibility": "Clear and fully intelligible throughout. Every word is distinct, well-enunciated, and easy to follow.",
+        "delivery": "Warm, measured, and pedagogical delivery with natural pauses between sentences and consistent pacing suitable for an educational lesson.",
+        "issues": [
+          {
+            "type": "pronunciation",
+            "detail": "'RA 10028' is read as 'RA ten thousand twenty-eight' rather than digit-by-digit or standard legislative format, though intelligible."
+          }
+        ],
+        "owner_listening_focus": "Listen to the reading of 'RA 10028' at 00:11–00:14 ('RA ten thousand twenty-eight') to ensure it matches project-specific pronunciation guidelines for Republic Act numbers."
+      }
+    }
+  ]
+}

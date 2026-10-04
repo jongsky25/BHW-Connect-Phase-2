@@ -247,6 +247,12 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Inaayos ni BHW Vlanche ang tatlong blangkong card kasama ang midwife at si Mang Ernesto para sa isang maliit na plano.", "BHW Vlanche arranges three blank cards with the midwife and Mang Ernesto for a small plan."),
             caption: ui("Isang maliit na plano, pinag-uusapan", "One small plan, discussed together"),
           }
+      : lesson?.lesson_key === "bhs-support-environment"
+        ? {
+            src: "/training/bhw-1-3/mimi-support-environment-d1e6bcec9846.png",
+            alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
+            caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
+          }
       : null;
   const storyArt = sourceStoryArt && translation ? { ...sourceStoryArt, ...translation.story_art } : sourceStoryArt;
   const storyLayout = storyArt !== null;
@@ -413,6 +419,9 @@ export function ReferenceLessons(props: Props) {
     );
   }
   function openReader() {
+    if (lesson?.lesson_key === "bhs-support-environment") {
+      setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
+    }
     setReaderOpen(true);
     setOrientationHelp(false);
     readerDialog.current?.showModal();
@@ -586,7 +595,7 @@ export function ReferenceLessons(props: Props) {
       </nav>
   );
   const videoContent = featuredVideo && lesson && (
-    <div className="rounded-xl border border-ink/15 p-4 sm:p-6">
+    <div className="reference-story-player rounded-xl border border-ink/15 p-4 sm:p-6" data-lesson={lesson.lesson_key}>
       <p className="mb-1 text-sm font-semibold">{narratedStory ? videoLabel : ui("Panoorin", "Watch")}</p>
       {narratedStory && <p className="text-sm">
         {ui("Pindutin ang Play para marinig ang salaysay sa napiling wika.", "Press Play to hear the story in your selected language.")}
