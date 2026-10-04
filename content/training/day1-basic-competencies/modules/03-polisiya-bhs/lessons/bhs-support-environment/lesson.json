@@ -193,6 +193,46 @@
       "caption_en": "Listen, confirm local support, and protect a safe environment.",
       "review_status": "draft",
       "provenance": "Original built-in imagegen generation, 2026-10-03, Asia/Manila. Fictional proposed Mimi design: Filipina around 50, shoulder-length straight black hair, lavender polo and navy trousers. No approved Mimi visual reference found on audited main 7ce98d68. All people clothed; screened seating and reusable lunch container are illustrative, not confirmed local facilities. Owner and clinical/policy SME review not recorded. SHA-256 d1e6bcec984656959b07b8bc32f50b902e2039740a105d8e34502418cfe1d3e3. Owner requested character name Mimi on 2026-10-04. The existing no-text image is retained; its original prompt used the proposed name Corazon. Exact original generation prompt: Use case: illustration-story. Create an original landscape educational image for BHW Connect lesson 1.3.2, Breastfeeding and the environment. Natural photographic illustrative style, warm Philippine daylight in an airy, modest, unbranded barangay health station. Main character: fictional BHW Corazon, Filipina around 50, shoulder-length straight black hair, light lavender polo shirt and navy trousers, calm, respectful and attentive. She gently welcomes and listens to a fully clothed Filipina parent around 30 holding a fully clothed infant in a safe natural supported hold. Both adults' faces and the baby's face are visible. Behind them is a simple discreet screened seating nook, an illustrative support-area cue rather than a guarantee of any local facility. A separate modest table to one side has one plain reusable lunch container as a non-clinical waste-reduction cue; no medical supplies. Frame the two adults and infant together centrally, waist-up, with principal faces in central 60 percent; landscape 1536x1024. Natural anatomically correct hands, warm but realistic expressions, clean composition. No exposed feeding, no clinical procedure, no branding, no official signage, no readable text or personal forms, no milk or medicine products, no unsafe medical reuse, no shaming contrasts, no logos or watermark. Proposed Corazon identity for owner review; no existing approved visual reference was found on audited main.\n"
+    },
+    {
+      "id": "bhs-support-environment-story",
+      "alt_fil": "Kuwentong may salaysay: si Mimi, magalang na suporta at ligtas na pagbabawas ng basura.",
+      "alt_en": "Narrated story: Mimi, respectful support and safe waste reduction.",
+      "caption_fil": "Anim na kathang-isip na tagpo na may Gemini narration at captions. Draft para sa owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft for owner review.",
+      "provenance": "Original lesson 1.3.2 Remotion animation generated 2026-10-04; original built-in imagegen illustration generated 2026-10-03, renamed Mimi by owner on 2026-10-04. Gemini gemini-3.8-flash-tts / Kore with shared expressive style. Scene boundaries measured from real audio samples; authored bilingual scripts and exact timing-derived WebVTT. No owner or independent clinical/policy SME approval recorded.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-3c1b05c119ec.mp4",
+          "content_hash": "3c1b05c119ec8612816e9a01289abab73181779ab4d3511e504d35d3289c2628",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-05ee9753977c.vtt",
+            "content_hash": "05ee9753977cf92e78e82b6e4bfb56b745f0022db711b16a010d4a081fbf2db2"
+          },
+          "poster": {
+            "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-326f2479b875-poster.jpg",
+            "content_hash": "326f2479b875c3b5ddd63f5767668d48b6f6102ce0b962ce7639ca8d19e43e72"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-3/bhs-support-environment-gemini-en-b78e5dd7463e.mp4",
+          "content_hash": "b78e5dd7463ef47b089224a0548d43deef7a356436dea3434ccb6a6d03a0104b",
+          "duration_s": 71,
+          "captions": {
+            "path": "/training/bhw-1-3/bhs-support-environment-gemini-en-71ffa9cc5a61.vtt",
+            "content_hash": "71ffa9cc5a61a125bea05c28ce688e6744dbda3506f16e38db78bc2f3fe7b454"
+          },
+          "poster": {
+            "path": "/training/bhw-1-3/bhs-support-environment-gemini-en-d04a71aab24f-poster.jpg",
+            "content_hash": "d04a71aab24fcb7dca0d3ef4a6e5979e3b769df6b02876d6650665526b5255ac"
+          }
+        }
+      },
+      "path": "/training/bhw-1-3/bhs-support-environment-gemini-fil-326f2479b875-poster.jpg",
+      "content_hash": "326f2479b875c3b5ddd63f5767668d48b6f6102ce0b962ce7639ca8d19e43e72"
     }
-  ]
+  ],
+  "featured_asset_id": "bhs-support-environment-story"
 }

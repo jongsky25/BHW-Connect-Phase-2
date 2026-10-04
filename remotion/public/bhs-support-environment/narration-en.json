@@ -3,50 +3,50 @@
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
   "voice": "Kore",
-  "speech_style": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Read the exact words; do not add, translate or change words.",
-  "durationSeconds": 66.717,
+  "speech_style": "Speak in conversational Philippine English as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Keep one consistent female Kore narrator voice for every sentence and quoted line; never switch speaker gender. Say RA 10028 as R A ten thousand twenty-eight; never one thousand twenty-eight. Avoid filler sounds, extra words, mid-word pauses or clipped word endings. Read the exact words; do not add, translate or change words.",
+  "durationSeconds": 69.198,
   "beats": [
     {
       "zone": "welcome",
       "index": 0,
       "text": "A parent asks about breastfeeding. BHW Mimi listens. Two topics: respectful support and safe reduction of unnecessary waste.",
       "start_ms": 0,
-      "end_ms": 11440
+      "end_ms": 11040
     },
     {
       "zone": "roles",
       "index": 1,
       "text": "RA 10028 sets rules for lactation stations. The institution is responsible. Mimi confirms the local space and trained contact.",
-      "start_ms": 11740,
-      "end_ms": 22180
+      "start_ms": 11340,
+      "end_ms": 23100
     },
     {
       "zone": "connect",
       "index": 2,
       "text": "Respect the parent's privacy and choice. With permission, connect them to confirmed support. Do not offer personal clinical advice.",
-      "start_ms": 22480,
-      "end_ms": 32880
+      "start_ms": 23400,
+      "end_ms": 34000
     },
     {
       "zone": "waste",
       "index": 3,
       "text": "The DOH circular limits unnecessary single-use plastics in specified settings, with phased coverage. Confirm the current directive.",
-      "start_ms": 33180,
-      "end_ms": 42660
+      "start_ms": 34300,
+      "end_ms": 44740
     },
     {
       "zone": "alternative",
       "index": 4,
       "text": "Ask the supervisor about reusable lunch containers in the break area. Never independently remove or reuse sterile or necessary clinical supplies.",
-      "start_ms": 42960,
-      "end_ms": 54200
+      "start_ms": 45040,
+      "end_ms": 55560
     },
     {
       "zone": "summary",
       "index": 5,
       "text": "Listen, confirm, support. Respect the parent and confirm local support. Reduce unnecessary waste according to guidance. Safe care comes first.",
-      "start_ms": 54500,
-      "end_ms": 66660
+      "start_ms": 55860,
+      "end_ms": 69140
     }
   ]
 }

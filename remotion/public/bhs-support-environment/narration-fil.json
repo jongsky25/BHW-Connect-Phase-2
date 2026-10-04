@@ -3,50 +3,50 @@
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
   "voice": "Kore",
-  "speech_style": "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Read the exact words; do not add, translate or change words.",
-  "durationSeconds": 75.886,
+  "speech_style": "Speak in conversational Filipino (Tagalog) as a warm, expressive community health storyteller. Give the parent's question gentle curiosity and Mimi's response calm, attentive care. Vary pitch and pace naturally. Pause and emphasize privacy, confirmed local support, institution and BHW responsibilities, and supervisor confirmation. Slow slightly for the boundary protecting sterile and necessary clinical supplies. End with an encouraging two-topic summary. Keep one consistent female Kore narrator voice for every sentence and quoted line; never switch speaker gender. Say RA 10028 as R A ten thousand twenty-eight; never one thousand twenty-eight. Avoid filler sounds, extra words, mid-word pauses or clipped word endings. Read the exact words; do not add, translate or change words.",
+  "durationSeconds": 72.438,
   "beats": [
     {
       "zone": "welcome",
       "index": 0,
       "text": "May tanong sa breastfeeding ang magulang. Nakikinig si BHW Mimi. Dalawang paksa: magalang na suporta at ligtas na pagbabawas ng basura.",
       "start_ms": 0,
-      "end_ms": 11080
+      "end_ms": 10960
     },
     {
       "zone": "roles",
       "index": 1,
       "text": "May mga tuntunin sa lactation stations ang RA 10028. Institusyon ang responsable. Kukumpirmahin ni Mimi ang lokal na lugar at sinanay na contact.",
-      "start_ms": 11380,
-      "end_ms": 24820
+      "start_ms": 11260,
+      "end_ms": 22460
     },
     {
       "zone": "connect",
       "index": 2,
       "text": "Igalang ang privacy at pasya ng magulang. Sa pahintulot niya, iugnay sa nakumpirmang suporta. Huwag magbigay ng sariling clinical advice.",
-      "start_ms": 25120,
-      "end_ms": 35200
+      "start_ms": 22760,
+      "end_ms": 32120
     },
     {
       "zone": "waste",
       "index": 3,
       "text": "Nililimitahan ng DOH circular ang hindi kailangang single-use plastics sa tinukoy na mga lugar. May phased coverage. Tiyakin ang kasalukuyang direktiba.",
-      "start_ms": 35500,
-      "end_ms": 47540
+      "start_ms": 32420,
+      "end_ms": 44020
     },
     {
       "zone": "alternative",
       "index": 4,
       "text": "Itanong sa supervisor ang reusable na lalagyan ng baon sa break area. Huwag kusang mag-alis o mag-reuse ng sterile o kinakailangang clinical supplies.",
-      "start_ms": 47840,
-      "end_ms": 59760
+      "start_ms": 44320,
+      "end_ms": 56480
     },
     {
       "zone": "summary",
       "index": 5,
       "text": "Makinig, kumpirmahin, umalalay. Igalang ang magulang; tiyakin ang lokal na suporta. Bawasan ang hindi kailangang basura ayon sa gabay. Ligtas na pangangalaga muna.",
-      "start_ms": 60060,
-      "end_ms": 75820
+      "start_ms": 56780,
+      "end_ms": 72380
     }
   ]
 }

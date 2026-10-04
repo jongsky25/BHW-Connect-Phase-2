@@ -626,4 +626,4 @@ body {
 }
 
 /* Mimi: contain the full scene so every face stays visible. */
-.reference-story-art img[src*="mimi-support-environment"] { object-fit: contain; object-position: center; background: #f1ebe2; }
+.reference-story-art img[src*="mimi-support-environment"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
