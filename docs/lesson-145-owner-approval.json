@@ -1,0 +1,95 @@
+{
+  "recorded_at_utc": "2026-10-05T14:40:24.075Z",
+  "authorization": "approved. merge and deploy to live",
+  "reviewed_head": "c40d584977ceb17d19c4d75e1042e474ba0df159",
+  "reviewed_package_hashes": {
+    "lesson-1.4.5-demi-review.html": "fb469abeb37a26c432f437f8bcc01c59c64db39ab6a18eaa9ad32deb12a0e30b",
+    "lesson-1.4.5-demi-review.zip": "9af3a8771707aaa28080c300a3579c44591bd2333e3cd732824c0d9df4a47a3e"
+  },
+  "pr": "https://github.com/jongsky25/BHW-Connect-Phase-2/pull/256",
+  "scope": "Only lesson 1.4.5 / bhw-follow-up and its reviewed media; merge, production deployment and scoped lesson publication.",
+  "approved_asset_ids": [
+    "demi-follow-up",
+    "bhw-follow-up-story"
+  ],
+  "approved_media": [
+    {
+      "path": "/training/bhw-1-4/demi-follow-up-d1babc774185.png",
+      "sha256": "d1babc7741852c3bf59153f3590a10dc778b4a6010d9e629ae98f071cb8cdca9"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+      "sha256": "64fc42b84db7ffb9dca04f52e1a35501985adcb90ea79d313f2d164380f297d6"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-90ef9593dc61.mp4",
+      "sha256": "90ef9593dc61e2db39a7ad8865d67f8039aef7fe0904a18b6a98588d13f75932"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-328f561f04ce.vtt",
+      "sha256": "328f561f04ce2a6238189edd0e17aa7199fb0516293486b1b31188481db02221"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-a0ed3d8374ea.mp4",
+      "sha256": "a0ed3d8374eaaf49d39f6a12482e893b13e5d704cf5898bb5cfa1d488ef53db7"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-f893bb961205-poster.jpg",
+      "sha256": "f893bb96120528788200c3b340656ab18df06bc8791c36a4f19dd48a2c21200b"
+    },
+    {
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-07b0de2e5d23.vtt",
+      "sha256": "07b0de2e5d23d07f229f00cdf95643f79482fa30b1c31d5bcf4c8a071a710a30"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.en.a7cb42d2b0b9.mp3",
+      "sha256": "0dd3134740e87652d60488076eabb793b1118c260812183030d11285934c1bd5"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.fil.33bda731e8d7.mp3",
+      "sha256": "4e48d9b6527a13853482a05085dcde25716ef7b59c3179594ccb12427aedff4c"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-question.en.a5fa9283ab2f.mp3",
+      "sha256": "99ddf012606c33349d9b99d58c075e6dee581b9d654eb2cdb76a179b92725180"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-question.fil.81952e31be5b.mp3",
+      "sha256": "7d40c57bc64cf4b1d5b84104bd4de8301292aefdd4e7333821723947ac7953da"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/known-and-unknown.en.d1899fb8b926.mp3",
+      "sha256": "788838ce48d5859c7080842c23538126cfefd34d7244a1f85d7181b0a0bfaf79"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/known-and-unknown.fil.d09098c4fa21.mp3",
+      "sha256": "c8e9fd31c7ce0a0cc874f89d6affd2995c8d16853f875406f90105f7beb8bf98"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.en.bc5fec8475e3.mp3",
+      "sha256": "46dc4f45f57187f1b9f4d175e60155cfa42b2aa3fc012a205a452ace4e91ad93"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.fil.dbb375011118.mp3",
+      "sha256": "99fc5ce60d53ecc7be9da5fb8533772d134aa5b7a3e743cfcd9eddc51396ba20"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e383406435bc.mp3",
+      "sha256": "b14382833c709c6595f562320e9458c8589d9b8faef5501993e77bb74ded1da8"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.ce75753b6d9d.mp3",
+      "sha256": "1d5dbb229cf0dcbaf73df8b05a90d09d72efdbdf73ddd0bafa388ed873320c08"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.0159d16deb3e.mp3",
+      "sha256": "d4f9d2434e07b4391c74ada75b59cc3298750793eff6a5574a1e536b88901a3a"
+    },
+    {
+      "path": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.b75a20ed2590.mp3",
+      "sha256": "f6c0b095276b909bf5e6934a2c7ba7fd2c5c6a2618b3395a9b69c190ded2182d"
+    }
+  ],
+  "limits": "Original review notes, source gaps and model audio assessments remain preserved. Owner approval does not establish human listening, independent policy SME review or authenticated production playback.",
+  "release_metadata_changes": "Only approval status, removal of awaiting-review caption labels, provenance approval statements, this receipt and approval tests. Reviewed teaching and media bytes preserved."
+}

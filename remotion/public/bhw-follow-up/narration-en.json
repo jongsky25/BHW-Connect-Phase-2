@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Philippine English, as one calm, confident community health narrator. Read exact words with respectful firmness, curious question intonation, measured clarity for unknown facts and negation, and a complete encouraging ending. Maintain one consistent vocal timbre throughout. Pronounce Demi naturally. Do not add, omit, translate or change words.",
+  "durationSeconds": 65.776,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Demi provided an application. Receipt and completeness are unconfirmed. She does not know its status or the cause of delay.",
+      "start_ms": 0,
+      "end_ms": 8840
+    },
+    {
+      "zone": "specific",
+      "index": 1,
+      "text": "Pause if helpful, then ask: has the application been received? What is its status, who is the appropriate contact and what comes next?",
+      "start_ms": 9140,
+      "end_ms": 19100
+    },
+    {
+      "zone": "cards",
+      "index": 2,
+      "text": "Card A is vague. Card B asks specifically. Card C guesses a lost document. Verify information before acting.",
+      "start_ms": 19400,
+      "end_ms": 29960
+    },
+    {
+      "zone": "clarify",
+      "index": 3,
+      "text": "In the fictional response, review continues with no date. Demi repeats what she understood and asks what remains unclear. This is not approval.",
+      "start_ms": 30260,
+      "end_ms": 41300
+    },
+    {
+      "zone": "plan",
+      "index": 4,
+      "text": "Confirm the appropriate contact and agreed next step. Make a fictional practice note and seek support if needed. No single follow-up interval applies.",
+      "start_ms": 41600,
+      "end_ms": 52600
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Facts, a specific question, listening and clarification, then an appropriate next step. Be respectful and firm. No response, approval or benefit is guaranteed.",
+      "start_ms": 52900,
+      "end_ms": 65700
+    }
+  ],
+  "audio_sha256": "4efdd1e92899aa61a9f2580484dad52ccef713cd114bb897c7950776c569c00e"
+}

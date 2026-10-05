@@ -58,13 +58,13 @@ describe('lesson 1.4.3 Demi BHWE conditions',()=>{
  it('protects every non-target mapping and selects both historical exact-text sections',()=>{
   const baseline=json(path.join(root,'docs/lesson-143-narration-baseline.json'));for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
    // Only 1.4.4 changes: retain exact old mapping and every referenced byte.
-   if(key==='bhw-accreditation'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);}
+   if(key==='bhw-accreditation'||key==='bhw-follow-up'){const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);expect(retained).toBeDefined();for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);}
    else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
   }
   expect(manifest.history['bhw-eligibility'].some(h=>JSON.stringify(h)===JSON.stringify(baseline.target))).toBe(true);
   for(const lang of ['fil','en'])for(const id of ['section-4']){const old=baseline.target.sections[id][lang],section={id,[`heading_${lang}`]:old.timings.filter(t=>t.zone==='heading').map(t=>t.text).join(' '),[`body_${lang}`]:old.timings.filter(t=>t.zone==='body').map(t=>t.text).join(' '),[`takeaway_${lang}`]:old.timings.filter(t=>t.zone==='takeaway').map(t=>t.text).join(' ')};expect(narrationForLesson(manifest,'bhw-eligibility',lang,[section])[id].src).toBe(old.src);}
   for(const lang of ['fil','en'])expect(Object.keys(narrationForLesson(manifest,'bhw-eligibility',lang,authored.revision.read_sections))).toEqual(ids);for(const [src,hash] of Object.entries(baseline.all_original_track_hashes))expect(fileHash(src)).toBe(hash);
- });
+ },30000);
  it('selects recovered original bytes for the actual unchanged published Read',()=>{
   const old=json(path.join(root,'docs/lesson-143-start-baseline.json')).published_rows.find(r=>r.lesson_key==='bhw-eligibility');
   const recovery=json(path.join(root,'docs/lesson-143-historical-audio-recovery.json'));

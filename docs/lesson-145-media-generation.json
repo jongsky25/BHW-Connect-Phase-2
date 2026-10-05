@@ -1,0 +1,147 @@
+{
+  "generated_date": "2026-10-05T13:36:12.787Z",
+  "source_commit": "256b6865527c3ba4e3498a13aaca1e97834a3cda",
+  "owner_review": "pending",
+  "target_read_tracks": 12,
+  "pending_read_tracks": [],
+  "read_generation_error": null,
+  "historical_audio_restored": [],
+  "reports": [
+    {
+      "language": "fil",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 72.49,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Nagbigay si Demi ng aplikasyon. Hindi pa niya alam kung natanggap o kumpleto ito. Hindi pa tiyak ang status o sanhi ng pagkaantala.",
+          "start_ms": 0,
+          "end_ms": 10160
+        },
+        {
+          "zone": "specific",
+          "index": 1,
+          "text": "Huminto kung makatutulong, saka magtanong: natanggap na po ba ang aplikasyon? Ano ang status, sino ang tamang contact at susunod na hakbang?",
+          "start_ms": 10460,
+          "end_ms": 20700
+        },
+        {
+          "zone": "cards",
+          "index": 2,
+          "text": "Malabo ang Card A. Nagtatanong nang tiyak ang Card B. Hula sa nawawalang dokumento ang Card C. Tiyakin muna ang impormasyon bago kumilos.",
+          "start_ms": 21000,
+          "end_ms": 32760
+        },
+        {
+          "zone": "clarify",
+          "index": 3,
+          "text": "Sa kathang-isip na sagot, sinusuri pa at walang petsa. Uulitin ni Demi ang naunawaan, at itatanong ang hindi pa malinaw. Hindi ito approval.",
+          "start_ms": 33060,
+          "end_ms": 44980
+        },
+        {
+          "zone": "plan",
+          "index": 4,
+          "text": "Tiyakin ang tamang contact at napagkasunduang susunod na hakbang. Gumawa ng fictional practice note at humingi ng suporta kung kailangan. Walang iisang follow-up interval.",
+          "start_ms": 45280,
+          "end_ms": 58280
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Alam, tiyak na tanong, pakikinig at paglilinaw, saka angkop na susunod na hakbang. Puwedeng magalang at matatag. Walang garantiya ng sagot, approval o benepisyo.",
+          "start_ms": 58580,
+          "end_ms": 72420
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-90ef9593dc61.mp4",
+        "content_hash": "90ef9593dc61e2db39a7ad8865d67f8039aef7fe0904a18b6a98588d13f75932",
+        "duration_s": 74,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-328f561f04ce.vtt",
+          "content_hash": "328f561f04ce2a6238189edd0e17aa7199fb0516293486b1b31188481db02221"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+          "content_hash": "64fc42b84db7ffb9dca04f52e1a35501985adcb90ea79d313f2d164380f297d6"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+        "content_hash": "64fc42b84db7ffb9dca04f52e1a35501985adcb90ea79d313f2d164380f297d6"
+      }
+    },
+    {
+      "language": "en",
+      "provider": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Kore",
+      "narration_duration_seconds": 65.776,
+      "beats": [
+        {
+          "zone": "question",
+          "index": 0,
+          "text": "Demi provided an application. Receipt and completeness are unconfirmed. She does not know its status or the cause of delay.",
+          "start_ms": 0,
+          "end_ms": 8840
+        },
+        {
+          "zone": "specific",
+          "index": 1,
+          "text": "Pause if helpful, then ask: has the application been received? What is its status, who is the appropriate contact and what comes next?",
+          "start_ms": 9140,
+          "end_ms": 19100
+        },
+        {
+          "zone": "cards",
+          "index": 2,
+          "text": "Card A is vague. Card B asks specifically. Card C guesses a lost document. Verify information before acting.",
+          "start_ms": 19400,
+          "end_ms": 29960
+        },
+        {
+          "zone": "clarify",
+          "index": 3,
+          "text": "In the fictional response, review continues with no date. Demi repeats what she understood and asks what remains unclear. This is not approval.",
+          "start_ms": 30260,
+          "end_ms": 41300
+        },
+        {
+          "zone": "plan",
+          "index": 4,
+          "text": "Confirm the appropriate contact and agreed next step. Make a fictional practice note and seek support if needed. No single follow-up interval applies.",
+          "start_ms": 41600,
+          "end_ms": 52600
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "text": "Facts, a specific question, listening and clarification, then an appropriate next step. Be respectful and firm. No response, approval or benefit is guaranteed.",
+          "start_ms": 52900,
+          "end_ms": 65700
+        }
+      ],
+      "video": {
+        "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-a0ed3d8374ea.mp4",
+        "content_hash": "a0ed3d8374eaaf49d39f6a12482e893b13e5d704cf5898bb5cfa1d488ef53db7",
+        "duration_s": 67,
+        "captions": {
+          "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-07b0de2e5d23.vtt",
+          "content_hash": "07b0de2e5d23d07f229f00cdf95643f79482fa30b1c31d5bcf4c8a071a710a30"
+        },
+        "poster": {
+          "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-f893bb961205-poster.jpg",
+          "content_hash": "f893bb96120528788200c3b340656ab18df06bc8791c36a4f19dd48a2c21200b"
+        }
+      },
+      "poster": {
+        "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-f893bb961205-poster.jpg",
+        "content_hash": "f893bb96120528788200c3b340656ab18df06bc8791c36a4f19dd48a2c21200b"
+      }
+    }
+  ]
+}

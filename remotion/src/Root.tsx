@@ -1,3 +1,4 @@
+import {BhwFollowUpStory, calculateBhwFollowUpMetadata, FOLLOW_UP_FPS, FOLLOW_UP_FALLBACK_DURATION} from "./bhw-follow-up/BhwFollowUpStory";
 import {BhwAccreditationStory, calculateBhwAccreditationMetadata, ACCREDITATION_FPS, ACCREDITATION_FALLBACK_DURATION} from "./bhw-accreditation/BhwAccreditationStory";
 import {BhwEligibilityStory, calculateBhwEligibilityMetadata, ELIGIBILITY_FPS, ELIGIBILITY_FALLBACK_DURATION} from "./bhw-eligibility/BhwEligibilityStory";
 import {BhwBenefitsStory, calculateBhwBenefitsMetadata, BENEFITS_FPS, BENEFITS_FALLBACK_DURATION} from "./bhw-benefits/BhwBenefitsStory";
@@ -315,6 +316,12 @@ export const RemotionRoot: React.FC = () => {
         <Composition key={`bhw-accreditation-${language}`} id={language === "fil" ? "BhwAccreditationStoryFil" : "BhwAccreditationStoryEn"}
           component={BhwAccreditationStory} calculateMetadata={calculateBhwAccreditationMetadata}
           durationInFrames={ACCREDITATION_FALLBACK_DURATION} fps={ACCREDITATION_FPS} width={854} height={480}
+          defaultProps={{language}}/>
+      ))}
+      {(["fil", "en"] as const).map((language) => (
+        <Composition key={`bhw-follow-up-${language}`} id={language === "fil" ? "BhwFollowUpStoryFil" : "BhwFollowUpStoryEn"}
+          component={BhwFollowUpStory} calculateMetadata={calculateBhwFollowUpMetadata}
+          durationInFrames={FOLLOW_UP_FALLBACK_DURATION} fps={FOLLOW_UP_FPS} width={854} height={480}
           defaultProps={{language}}/>
       ))}
     </>

@@ -1,0 +1,80 @@
+{
+  "checked_date": "2026-10-05",
+  "current_files": [
+    {
+      "id": "read-bhw-follow-up-follow-up-question-fil",
+      "sha256": "7d40c57bc64cf4b1d5b84104bd4de8301292aefdd4e7333821723947ac7953da"
+    },
+    {
+      "id": "read-bhw-follow-up-follow-up-question-en",
+      "sha256": "99ddf012606c33349d9b99d58c075e6dee581b9d654eb2cdb76a179b92725180"
+    },
+    {
+      "id": "read-bhw-follow-up-section-6-fil",
+      "sha256": "1d5dbb229cf0dcbaf73df8b05a90d09d72efdbdf73ddd0bafa388ed873320c08"
+    },
+    {
+      "id": "read-bhw-follow-up-section-6-en",
+      "sha256": "b14382833c709c6595f562320e9458c8589d9b8faef5501993e77bb74ded1da8"
+    },
+    {
+      "id": "read-bhw-follow-up-known-and-unknown-fil",
+      "sha256": "c8e9fd31c7ce0a0cc874f89d6affd2995c8d16853f875406f90105f7beb8bf98"
+    },
+    {
+      "id": "read-bhw-follow-up-known-and-unknown-en",
+      "sha256": "788838ce48d5859c7080842c23538126cfefd34d7244a1f85d7181b0a0bfaf79"
+    },
+    {
+      "id": "read-bhw-follow-up-section-7-fil",
+      "sha256": "f6c0b095276b909bf5e6934a2c7ba7fd2c5c6a2618b3395a9b69c190ded2182d"
+    },
+    {
+      "id": "read-bhw-follow-up-section-7-en",
+      "sha256": "d4f9d2434e07b4391c74ada75b59cc3298750793eff6a5574a1e536b88901a3a"
+    },
+    {
+      "id": "read-bhw-follow-up-next-contact-plan-fil",
+      "sha256": "99fc5ce60d53ecc7be9da5fb8533772d134aa5b7a3e743cfcd9eddc51396ba20"
+    },
+    {
+      "id": "read-bhw-follow-up-next-contact-plan-en",
+      "sha256": "46dc4f45f57187f1b9f4d175e60155cfa42b2aa3fc012a205a452ace4e91ad93"
+    },
+    {
+      "id": "read-bhw-follow-up-follow-up-application-check-fil",
+      "sha256": "4e48d9b6527a13853482a05085dcde25716ef7b59c3179594ccb12427aedff4c"
+    },
+    {
+      "id": "read-bhw-follow-up-follow-up-application-check-en",
+      "sha256": "0dd3134740e87652d60488076eabb793b1118c260812183030d11285934c1bd5"
+    },
+    {
+      "id": "story-fil",
+      "sha256": "4c7d6c63de75f88c9abc578e4cf3c1960308969ff469581e74117907491ae345"
+    },
+    {
+      "id": "story-en",
+      "sha256": "4efdd1e92899aa61a9f2580484dad52ccef713cd114bb897c7950776c569c00e"
+    }
+  ],
+  "full_review_records": 14,
+  "focused_initial_records": 16,
+  "focused_final_records": 16,
+  "audio_bytes_changed_after_review": false,
+  "established_intelligibility_defects": [],
+  "assessment": "Full reviews transcribe complete speech and no clipped endings. Initial tiny section-7 Filipino question produced a conflicting Chinese transcription. Final language-context review includes adjacent whole measured zones and clearly transcribes the Tagalog question/negation/next step. Initial ending excerpt cuts arose from a fixed16s excerpt start, not the actual file; final excerpts start at measured zone boundaries and retain complete endings. No established intelligibility defect requiring resynthesis.",
+  "uncertainty": [
+    "Some full/focused responses infer alternating timbre or speakers; others describe a consistent narrator. These are conflicting model observations, not verified second speakers or human listening.",
+    "Final Filipino application-ending reviewer notes a possible nasal pronunciation difference in clarification; full file and focused excerpt remain intelligible.",
+    "English Read/Slides wording refers to the actual product mode labels."
+  ],
+  "provenance": {
+    "full": "lesson-145-audio-review.json",
+    "initial_focus": "lesson-145-audio-focus-initial.json",
+    "final_focus": "lesson-145-audio-focus.json",
+    "generation_run": 37316938175,
+    "final_focus_run": 37319951474
+  },
+  "limits": "Model-mediated audio review only; no owner listening, independent SME review or natural/stable speaker identity assurance."
+}

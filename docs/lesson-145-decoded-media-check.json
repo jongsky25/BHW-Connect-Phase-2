@@ -1,0 +1,1355 @@
+{
+  "method": "Decoded PCM per-zone signal and exact committed bytes; not human listening",
+  "read": [
+    {
+      "lesson": "bhw-follow-up",
+      "section": "follow-up-application-check",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.en.a7cb42d2b0b9.mp3",
+      "sha256": "0dd3134740e87652d60488076eabb793b1118c260812183030d11285934c1bd5",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 42.736,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3200,
+          "rms_dbfs": -18.61,
+          "peak_dbfs": -2.13
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3500,
+          "end_ms": 11780,
+          "rms_dbfs": -18.73,
+          "peak_dbfs": -1.68
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 12080,
+          "end_ms": 14360,
+          "rms_dbfs": -15.49,
+          "peak_dbfs": -1.27
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 14660,
+          "end_ms": 25500,
+          "rms_dbfs": -18.23,
+          "peak_dbfs": -1.51
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 25800,
+          "end_ms": 29360,
+          "rms_dbfs": -18.83,
+          "peak_dbfs": -2.04
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 29660,
+          "end_ms": 36020,
+          "rms_dbfs": -18.06,
+          "peak_dbfs": -1.33
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 36320,
+          "end_ms": 42680,
+          "rms_dbfs": -18.58,
+          "peak_dbfs": -1.59
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "follow-up-application-check",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.fil.33bda731e8d7.mp3",
+      "sha256": "4e48d9b6527a13853482a05085dcde25716ef7b59c3179594ccb12427aedff4c",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 46.576,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2560,
+          "rms_dbfs": -15.34,
+          "peak_dbfs": -1.34
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2860,
+          "end_ms": 13260,
+          "rms_dbfs": -17.72,
+          "peak_dbfs": -1.29
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 13560,
+          "end_ms": 15800,
+          "rms_dbfs": -15.67,
+          "peak_dbfs": -1.25
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 16100,
+          "end_ms": 27980,
+          "rms_dbfs": -16.37,
+          "peak_dbfs": -0.38
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 28280,
+          "end_ms": 33320,
+          "rms_dbfs": -16.8,
+          "peak_dbfs": -0.74
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 33620,
+          "end_ms": 40620,
+          "rms_dbfs": -17.52,
+          "peak_dbfs": -1.95
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 40920,
+          "end_ms": 46520,
+          "rms_dbfs": -16.05,
+          "peak_dbfs": -0.95
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "follow-up-question",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-question.en.a5fa9283ab2f.mp3",
+      "sha256": "99ddf012606c33349d9b99d58c075e6dee581b9d654eb2cdb76a179b92725180",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 48.405,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2040,
+          "rms_dbfs": -18.05,
+          "peak_dbfs": -3.0
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2340,
+          "end_ms": 8460,
+          "rms_dbfs": -16.54,
+          "peak_dbfs": -0.95
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8760,
+          "end_ms": 11520,
+          "rms_dbfs": -19.16,
+          "peak_dbfs": -1.34
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 11820,
+          "end_ms": 19660,
+          "rms_dbfs": -15.29,
+          "peak_dbfs": -0.86
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19960,
+          "end_ms": 22640,
+          "rms_dbfs": -15.55,
+          "peak_dbfs": -1.86
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 22940,
+          "end_ms": 27020,
+          "rms_dbfs": -18.45,
+          "peak_dbfs": -0.54
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 27320,
+          "end_ms": 33240,
+          "rms_dbfs": -15.08,
+          "peak_dbfs": -0.34
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 33540,
+          "end_ms": 37580,
+          "rms_dbfs": -18.19,
+          "peak_dbfs": -1.01
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 37880,
+          "end_ms": 44320,
+          "rms_dbfs": -17.57,
+          "peak_dbfs": -1.23
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 44620,
+          "end_ms": 48340,
+          "rms_dbfs": -17.08,
+          "peak_dbfs": -0.8
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "follow-up-question",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-question.fil.81952e31be5b.mp3",
+      "sha256": "7d40c57bc64cf4b1d5b84104bd4de8301292aefdd4e7333821723947ac7953da",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 48.64,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 1880,
+          "rms_dbfs": -15.34,
+          "peak_dbfs": -2.24
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2180,
+          "end_ms": 9060,
+          "rms_dbfs": -17.16,
+          "peak_dbfs": -1.6
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9360,
+          "end_ms": 11680,
+          "rms_dbfs": -18.51,
+          "peak_dbfs": -3.7
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 11980,
+          "end_ms": 18860,
+          "rms_dbfs": -16.85,
+          "peak_dbfs": -1.15
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19160,
+          "end_ms": 22040,
+          "rms_dbfs": -17.36,
+          "peak_dbfs": -1.87
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 22340,
+          "end_ms": 26540,
+          "rms_dbfs": -17.96,
+          "peak_dbfs": -1.2
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 26840,
+          "end_ms": 32960,
+          "rms_dbfs": -18.5,
+          "peak_dbfs": -2.42
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 33260,
+          "end_ms": 37980,
+          "rms_dbfs": -16.06,
+          "peak_dbfs": -1.05
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 38280,
+          "end_ms": 44680,
+          "rms_dbfs": -16.41,
+          "peak_dbfs": -0.53
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 44980,
+          "end_ms": 48580,
+          "rms_dbfs": -15.91,
+          "peak_dbfs": -3.14
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "known-and-unknown",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/known-and-unknown.en.d1899fb8b926.mp3",
+      "sha256": "788838ce48d5859c7080842c23538126cfefd34d7244a1f85d7181b0a0bfaf79",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 57.287,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2480,
+          "rms_dbfs": -16.53,
+          "peak_dbfs": -1.33
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2780,
+          "end_ms": 5660,
+          "rms_dbfs": -17.19,
+          "peak_dbfs": -0.73
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 5960,
+          "end_ms": 12320,
+          "rms_dbfs": -17.74,
+          "peak_dbfs": -1.71
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 12620,
+          "end_ms": 14820,
+          "rms_dbfs": -18.14,
+          "peak_dbfs": -1.38
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 15120,
+          "end_ms": 23800,
+          "rms_dbfs": -18.48,
+          "peak_dbfs": -0.9
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 24100,
+          "end_ms": 28260,
+          "rms_dbfs": -15.22,
+          "peak_dbfs": 0.0
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 28560,
+          "end_ms": 33720,
+          "rms_dbfs": -16.37,
+          "peak_dbfs": -1.11
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 34020,
+          "end_ms": 36700,
+          "rms_dbfs": -16.62,
+          "peak_dbfs": -1.28
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 37000,
+          "end_ms": 39680,
+          "rms_dbfs": -18.87,
+          "peak_dbfs": -2.51
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 39980,
+          "end_ms": 48820,
+          "rms_dbfs": -17.23,
+          "peak_dbfs": -1.49
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 49120,
+          "end_ms": 52320,
+          "rms_dbfs": -16.36,
+          "peak_dbfs": -0.57
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 52620,
+          "end_ms": 57220,
+          "rms_dbfs": -17.44,
+          "peak_dbfs": -1.76
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "known-and-unknown",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/known-and-unknown.fil.d09098c4fa21.mp3",
+      "sha256": "c8e9fd31c7ce0a0cc874f89d6affd2995c8d16853f875406f90105f7beb8bf98",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 62.877,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2600,
+          "rms_dbfs": -15.51,
+          "peak_dbfs": -0.44
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 2900,
+          "end_ms": 5780,
+          "rms_dbfs": -17.48,
+          "peak_dbfs": -1.58
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 6080,
+          "end_ms": 13120,
+          "rms_dbfs": -15.79,
+          "peak_dbfs": -0.54
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13420,
+          "end_ms": 16020,
+          "rms_dbfs": -14.33,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 16320,
+          "end_ms": 27840,
+          "rms_dbfs": -19.37,
+          "peak_dbfs": -1.76
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 28140,
+          "end_ms": 33980,
+          "rms_dbfs": -16.04,
+          "peak_dbfs": -0.8
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 34280,
+          "end_ms": 40160,
+          "rms_dbfs": -16.6,
+          "peak_dbfs": -0.99
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 40460,
+          "end_ms": 43060,
+          "rms_dbfs": -16.84,
+          "peak_dbfs": -1.53
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 43360,
+          "end_ms": 46360,
+          "rms_dbfs": -16.89,
+          "peak_dbfs": -1.65
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 46660,
+          "end_ms": 54140,
+          "rms_dbfs": -17.77,
+          "peak_dbfs": -1.47
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 54440,
+          "end_ms": 57960,
+          "rms_dbfs": -17.58,
+          "peak_dbfs": -0.54
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 58260,
+          "end_ms": 62820,
+          "rms_dbfs": -17.62,
+          "peak_dbfs": -1.23
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "next-contact-plan",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.en.bc5fec8475e3.mp3",
+      "sha256": "46dc4f45f57187f1b9f4d175e60155cfa42b2aa3fc012a205a452ace4e91ad93",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 60.578,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2960,
+          "rms_dbfs": -16.23,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3260,
+          "end_ms": 8620,
+          "rms_dbfs": -18.33,
+          "peak_dbfs": -1.77
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8920,
+          "end_ms": 15640,
+          "rms_dbfs": -16.8,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 15940,
+          "end_ms": 22180,
+          "rms_dbfs": -16.46,
+          "peak_dbfs": -0.74
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 22480,
+          "end_ms": 26240,
+          "rms_dbfs": -15.71,
+          "peak_dbfs": -1.45
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26540,
+          "end_ms": 36260,
+          "rms_dbfs": -15.71,
+          "peak_dbfs": -1.26
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 36560,
+          "end_ms": 39960,
+          "rms_dbfs": -19.51,
+          "peak_dbfs": -3.99
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 40260,
+          "end_ms": 45860,
+          "rms_dbfs": -14.73,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 46160,
+          "end_ms": 50520,
+          "rms_dbfs": -17.47,
+          "peak_dbfs": -2.25
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 50820,
+          "end_ms": 55220,
+          "rms_dbfs": -15.02,
+          "peak_dbfs": -0.84
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 55520,
+          "end_ms": 60520,
+          "rms_dbfs": -17.22,
+          "peak_dbfs": -1.32
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "next-contact-plan",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.fil.dbb375011118.mp3",
+      "sha256": "99fc5ce60d53ecc7be9da5fb8533772d134aa5b7a3e743cfcd9eddc51396ba20",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 65.933,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3560,
+          "rms_dbfs": -19.06,
+          "peak_dbfs": -4.76
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3860,
+          "end_ms": 9860,
+          "rms_dbfs": -16.9,
+          "peak_dbfs": -0.09
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 10160,
+          "end_ms": 16760,
+          "rms_dbfs": -16.2,
+          "peak_dbfs": -0.61
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 17060,
+          "end_ms": 24340,
+          "rms_dbfs": -16.35,
+          "peak_dbfs": -0.19
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 24640,
+          "end_ms": 27680,
+          "rms_dbfs": -16.96,
+          "peak_dbfs": -0.86
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 27980,
+          "end_ms": 38500,
+          "rms_dbfs": -18.07,
+          "peak_dbfs": -1.0
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 38800,
+          "end_ms": 42240,
+          "rms_dbfs": -15.95,
+          "peak_dbfs": -1.48
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 42540,
+          "end_ms": 48500,
+          "rms_dbfs": -16.47,
+          "peak_dbfs": -1.33
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 48800,
+          "end_ms": 54280,
+          "rms_dbfs": -17.03,
+          "peak_dbfs": -0.21
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 54580,
+          "end_ms": 60340,
+          "rms_dbfs": -15.57,
+          "peak_dbfs": -1.02
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 60640,
+          "end_ms": 65880,
+          "rms_dbfs": -16.57,
+          "peak_dbfs": -1.83
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "section-6",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e383406435bc.mp3",
+      "sha256": "b14382833c709c6595f562320e9458c8589d9b8faef5501993e77bb74ded1da8",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 52.532,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2960,
+          "rms_dbfs": -14.97,
+          "peak_dbfs": -0.87
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3260,
+          "end_ms": 7140,
+          "rms_dbfs": -18.0,
+          "peak_dbfs": -1.24
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 7440,
+          "end_ms": 13160,
+          "rms_dbfs": -16.88,
+          "peak_dbfs": -1.31
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 13460,
+          "end_ms": 17260,
+          "rms_dbfs": -16.99,
+          "peak_dbfs": -1.09
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 17560,
+          "end_ms": 21920,
+          "rms_dbfs": -16.23,
+          "peak_dbfs": -1.12
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 22220,
+          "end_ms": 25740,
+          "rms_dbfs": -16.55,
+          "peak_dbfs": -0.51
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 26040,
+          "end_ms": 31600,
+          "rms_dbfs": -17.93,
+          "peak_dbfs": -1.25
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 31900,
+          "end_ms": 36420,
+          "rms_dbfs": -16.49,
+          "peak_dbfs": -2.28
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 36720,
+          "end_ms": 38880,
+          "rms_dbfs": -17.48,
+          "peak_dbfs": -1.65
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 39180,
+          "end_ms": 46540,
+          "rms_dbfs": -17.29,
+          "peak_dbfs": -1.98
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 46840,
+          "end_ms": 52480,
+          "rms_dbfs": -17.02,
+          "peak_dbfs": -0.0
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "section-6",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.ce75753b6d9d.mp3",
+      "sha256": "1d5dbb229cf0dcbaf73df8b05a90d09d72efdbdf73ddd0bafa388ed873320c08",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 57.94,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 2920,
+          "rms_dbfs": -15.59,
+          "peak_dbfs": -1.02
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3220,
+          "end_ms": 7980,
+          "rms_dbfs": -16.58,
+          "peak_dbfs": -1.91
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 8280,
+          "end_ms": 14400,
+          "rms_dbfs": -17.1,
+          "peak_dbfs": -2.31
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 14700,
+          "end_ms": 19420,
+          "rms_dbfs": -17.01,
+          "peak_dbfs": -2.02
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 19720,
+          "end_ms": 25840,
+          "rms_dbfs": -18.22,
+          "peak_dbfs": -1.09
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26140,
+          "end_ms": 30180,
+          "rms_dbfs": -18.24,
+          "peak_dbfs": -1.65
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 30480,
+          "end_ms": 36320,
+          "rms_dbfs": -17.46,
+          "peak_dbfs": -2.99
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 36620,
+          "end_ms": 41060,
+          "rms_dbfs": -18.77,
+          "peak_dbfs": -0.53
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 41360,
+          "end_ms": 43600,
+          "rms_dbfs": -16.26,
+          "peak_dbfs": -1.97
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 43900,
+          "end_ms": 51820,
+          "rms_dbfs": -16.34,
+          "peak_dbfs": -1.11
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 52120,
+          "end_ms": 57880,
+          "rms_dbfs": -17.23,
+          "peak_dbfs": -2.39
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "section-7",
+      "language": "en",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.0159d16deb3e.mp3",
+      "sha256": "d4f9d2434e07b4391c74ada75b59cc3298750793eff6a5574a1e536b88901a3a",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 62.772,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3360,
+          "rms_dbfs": -18.16,
+          "peak_dbfs": -0.91
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 3660,
+          "end_ms": 9340,
+          "rms_dbfs": -18.16,
+          "peak_dbfs": -0.88
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9640,
+          "end_ms": 11760,
+          "rms_dbfs": -19.03,
+          "peak_dbfs": -1.26
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 12060,
+          "end_ms": 20580,
+          "rms_dbfs": -18.02,
+          "peak_dbfs": -1.51
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 20880,
+          "end_ms": 26000,
+          "rms_dbfs": -16.92,
+          "peak_dbfs": -1.92
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26300,
+          "end_ms": 31820,
+          "rms_dbfs": -16.82,
+          "peak_dbfs": -3.23
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 32120,
+          "end_ms": 33480,
+          "rms_dbfs": -21.46,
+          "peak_dbfs": -2.62
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 33780,
+          "end_ms": 35940,
+          "rms_dbfs": -18.61,
+          "peak_dbfs": -3.78
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 36240,
+          "end_ms": 40560,
+          "rms_dbfs": -16.09,
+          "peak_dbfs": -0.81
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 40860,
+          "end_ms": 45460,
+          "rms_dbfs": -17.03,
+          "peak_dbfs": -0.99
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 45760,
+          "end_ms": 50560,
+          "rms_dbfs": -16.53,
+          "peak_dbfs": -0.63
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "start_ms": 50860,
+          "end_ms": 58340,
+          "rms_dbfs": -17.15,
+          "peak_dbfs": -1.14
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 58640,
+          "end_ms": 62720,
+          "rms_dbfs": -18.38,
+          "peak_dbfs": -2.63
+        }
+      ]
+    },
+    {
+      "lesson": "bhw-follow-up",
+      "section": "section-7",
+      "language": "fil",
+      "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.b75a20ed2590.mp3",
+      "sha256": "f6c0b095276b909bf5e6934a2c7ba7fd2c5c6a2618b3395a9b69c190ded2182d",
+      "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 65.306,
+      "zones": [
+        {
+          "zone": "heading",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 3880,
+          "rms_dbfs": -18.87,
+          "peak_dbfs": -2.45
+        },
+        {
+          "zone": "body",
+          "index": 0,
+          "start_ms": 4180,
+          "end_ms": 8820,
+          "rms_dbfs": -16.32,
+          "peak_dbfs": -0.0
+        },
+        {
+          "zone": "body",
+          "index": 1,
+          "start_ms": 9120,
+          "end_ms": 11440,
+          "rms_dbfs": -18.12,
+          "peak_dbfs": -3.87
+        },
+        {
+          "zone": "body",
+          "index": 2,
+          "start_ms": 11740,
+          "end_ms": 20900,
+          "rms_dbfs": -18.58,
+          "peak_dbfs": -1.68
+        },
+        {
+          "zone": "body",
+          "index": 3,
+          "start_ms": 21200,
+          "end_ms": 26600,
+          "rms_dbfs": -17.5,
+          "peak_dbfs": -2.37
+        },
+        {
+          "zone": "body",
+          "index": 4,
+          "start_ms": 26900,
+          "end_ms": 33500,
+          "rms_dbfs": -17.22,
+          "peak_dbfs": -0.95
+        },
+        {
+          "zone": "body",
+          "index": 5,
+          "start_ms": 33800,
+          "end_ms": 35040,
+          "rms_dbfs": -19.22,
+          "peak_dbfs": -2.61
+        },
+        {
+          "zone": "body",
+          "index": 6,
+          "start_ms": 35340,
+          "end_ms": 37780,
+          "rms_dbfs": -16.03,
+          "peak_dbfs": -1.05
+        },
+        {
+          "zone": "body",
+          "index": 7,
+          "start_ms": 38080,
+          "end_ms": 43280,
+          "rms_dbfs": -16.8,
+          "peak_dbfs": -1.33
+        },
+        {
+          "zone": "body",
+          "index": 8,
+          "start_ms": 43580,
+          "end_ms": 48420,
+          "rms_dbfs": -15.4,
+          "peak_dbfs": -0.52
+        },
+        {
+          "zone": "body",
+          "index": 9,
+          "start_ms": 48720,
+          "end_ms": 52960,
+          "rms_dbfs": -14.67,
+          "peak_dbfs": -1.64
+        },
+        {
+          "zone": "body",
+          "index": 10,
+          "start_ms": 53260,
+          "end_ms": 60220,
+          "rms_dbfs": -17.02,
+          "peak_dbfs": -1.43
+        },
+        {
+          "zone": "takeaway",
+          "index": 0,
+          "start_ms": 60520,
+          "end_ms": 65240,
+          "rms_dbfs": -17.07,
+          "peak_dbfs": -1.79
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "language": "fil",
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-90ef9593dc61.mp4",
+      "sha256": "90ef9593dc61e2db39a7ad8865d67f8039aef7fe0904a18b6a98588d13f75932",
+      "bytes": 983936,
+      "duration_seconds": 73.642667,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-328f561f04ce.vtt",
+      "caption_hash": "328f561f04ce2a6238189edd0e17aa7199fb0516293486b1b31188481db02221",
+      "decoded_duration_seconds": 73.643,
+      "zones": [
+        {
+          "zone": "question",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 10160,
+          "rms_dbfs": -19.43,
+          "peak_dbfs": -2.96
+        },
+        {
+          "zone": "specific",
+          "index": 1,
+          "start_ms": 10460,
+          "end_ms": 20700,
+          "rms_dbfs": -19.88,
+          "peak_dbfs": -4.04
+        },
+        {
+          "zone": "cards",
+          "index": 2,
+          "start_ms": 21000,
+          "end_ms": 32760,
+          "rms_dbfs": -20.6,
+          "peak_dbfs": -5.42
+        },
+        {
+          "zone": "clarify",
+          "index": 3,
+          "start_ms": 33060,
+          "end_ms": 44980,
+          "rms_dbfs": -21.88,
+          "peak_dbfs": -4.92
+        },
+        {
+          "zone": "plan",
+          "index": 4,
+          "start_ms": 45280,
+          "end_ms": 58280,
+          "rms_dbfs": -20.03,
+          "peak_dbfs": -3.34
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 58580,
+          "end_ms": 72420,
+          "rms_dbfs": -21.0,
+          "peak_dbfs": -5.0
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-a0ed3d8374ea.mp4",
+      "sha256": "a0ed3d8374eaaf49d39f6a12482e893b13e5d704cf5898bb5cfa1d488ef53db7",
+      "bytes": 922131,
+      "duration_seconds": 66.922667,
+      "stream_video": {
+        "codec_name": "h264",
+        "width": 854,
+        "height": 480,
+        "r_frame_rate": "30/1"
+      },
+      "stream_audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "caption_path": "/training/bhw-1-4/bhw-follow-up-gemini-en-07b0de2e5d23.vtt",
+      "caption_hash": "07b0de2e5d23d07f229f00cdf95643f79482fa30b1c31d5bcf4c8a071a710a30",
+      "decoded_duration_seconds": 66.923,
+      "zones": [
+        {
+          "zone": "question",
+          "index": 0,
+          "start_ms": 0,
+          "end_ms": 8840,
+          "rms_dbfs": -19.83,
+          "peak_dbfs": -3.37
+        },
+        {
+          "zone": "specific",
+          "index": 1,
+          "start_ms": 9140,
+          "end_ms": 19100,
+          "rms_dbfs": -20.35,
+          "peak_dbfs": -4.19
+        },
+        {
+          "zone": "cards",
+          "index": 2,
+          "start_ms": 19400,
+          "end_ms": 29960,
+          "rms_dbfs": -20.5,
+          "peak_dbfs": -3.06
+        },
+        {
+          "zone": "clarify",
+          "index": 3,
+          "start_ms": 30260,
+          "end_ms": 41300,
+          "rms_dbfs": -19.07,
+          "peak_dbfs": -4.17
+        },
+        {
+          "zone": "plan",
+          "index": 4,
+          "start_ms": 41600,
+          "end_ms": 52600,
+          "rms_dbfs": -20.56,
+          "peak_dbfs": -3.85
+        },
+        {
+          "zone": "summary",
+          "index": 5,
+          "start_ms": 52900,
+          "end_ms": 65700,
+          "rms_dbfs": -21.5,
+          "peak_dbfs": -3.85
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "demi-follow-up",
+      "path": "/training/bhw-1-4/demi-follow-up-d1babc774185.png",
+      "sha256": "d1babc7741852c3bf59153f3590a10dc778b4a6010d9e629ae98f071cb8cdca9",
+      "review_status": "draft"
+    },
+    {
+      "id": "bhw-follow-up-story",
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+      "sha256": "64fc42b84db7ffb9dca04f52e1a35501985adcb90ea79d313f2d164380f297d6",
+      "review_status": "draft"
+    }
+  ]
+}
