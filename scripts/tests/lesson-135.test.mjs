@@ -63,7 +63,15 @@ describe('lesson 1.3.5 one workable proposal',()=>{
  });
  it('retains old published exact-text history and all tracked sibling media',()=>{
   const baseline=json(path.join(root,'docs/lesson-135-narration-baseline.json'));
-  for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes))expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
+  for(const [key,hash] of Object.entries(baseline.sibling_mapping_hashes)){
+   // The 1.4.1 draft adds new narration while preserving the exact old mapping
+   // for the still-published revision. Every other sibling remains current.
+   if(key==='bhw-legal-role'){
+    const retained=manifest.history[key].find(h=>sha(JSON.stringify(h))===hash);
+    expect(retained).toBeDefined();
+    for(const languages of Object.values(retained.sections))for(const track of Object.values(languages))expect(fileHash(track.src)).toBe(track.sha256);
+   }else expect(sha(JSON.stringify(manifest.lessons[key]))).toBe(hash);
+  }
   expect(manifest.history['bhs-improvement'].some(h=>JSON.stringify(h)===JSON.stringify(baseline.target))).toBe(true);
   for(const lang of ['fil','en']){
    const old=baseline.target.sections['section-6'][lang];

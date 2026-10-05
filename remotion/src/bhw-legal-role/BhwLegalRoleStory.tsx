@@ -2,6 +2,7 @@ import {AbsoluteFill, Audio, Img, Series, spring, staticFile, useCurrentFrame, u
 import {BHW_LEGAL_ROLE_BEATS} from "./narration";
 
 // New lesson 1.4.1 draft; explicit owner approval pending.
+// Each language uses measured narration boundaries, including its final summary.
 
 export const LEGAL_ROLE_FPS = 30;
 export const LEGAL_ROLE_FALLBACK_DURATION = 75 * LEGAL_ROLE_FPS;
