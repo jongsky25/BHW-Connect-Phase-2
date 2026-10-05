@@ -1,0 +1,53 @@
+{
+  "language": "fil",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "speech_style": "Speak in natural Filipino (Tagalog), as one calm, confident community health narrator. Read exact words with respectful firmness, curious rising intonation for questions, measured clarity for unknown facts and negation, and a complete encouraging ending. Maintain one consistent vocal timbre throughout. Pronounce Demi naturally. Do not add, omit, translate or change words.",
+  "durationSeconds": 72.49,
+  "beats": [
+    {
+      "zone": "question",
+      "index": 0,
+      "text": "Nagbigay si Demi ng aplikasyon. Hindi pa niya alam kung natanggap o kumpleto ito. Hindi pa tiyak ang status o sanhi ng pagkaantala.",
+      "start_ms": 0,
+      "end_ms": 10160
+    },
+    {
+      "zone": "specific",
+      "index": 1,
+      "text": "Huminto kung makatutulong, saka magtanong: natanggap na po ba ang aplikasyon? Ano ang status, sino ang tamang contact at susunod na hakbang?",
+      "start_ms": 10460,
+      "end_ms": 20700
+    },
+    {
+      "zone": "cards",
+      "index": 2,
+      "text": "Malabo ang Card A. Nagtatanong nang tiyak ang Card B. Hula sa nawawalang dokumento ang Card C. Tiyakin muna ang impormasyon bago kumilos.",
+      "start_ms": 21000,
+      "end_ms": 32760
+    },
+    {
+      "zone": "clarify",
+      "index": 3,
+      "text": "Sa kathang-isip na sagot, sinusuri pa at walang petsa. Uulitin ni Demi ang naunawaan, at itatanong ang hindi pa malinaw. Hindi ito approval.",
+      "start_ms": 33060,
+      "end_ms": 44980
+    },
+    {
+      "zone": "plan",
+      "index": 4,
+      "text": "Tiyakin ang tamang contact at napagkasunduang susunod na hakbang. Gumawa ng fictional practice note at humingi ng suporta kung kailangan. Walang iisang follow-up interval.",
+      "start_ms": 45280,
+      "end_ms": 58280
+    },
+    {
+      "zone": "summary",
+      "index": 5,
+      "text": "Alam, tiyak na tanong, pakikinig at paglilinaw, saka angkop na susunod na hakbang. Puwedeng magalang at matatag. Walang garantiya ng sagot, approval o benepisyo.",
+      "start_ms": 58580,
+      "end_ms": 72420
+    }
+  ],
+  "audio_sha256": "4c7d6c63de75f88c9abc578e4cf3c1960308969ff469581e74117907491ae345"
+}

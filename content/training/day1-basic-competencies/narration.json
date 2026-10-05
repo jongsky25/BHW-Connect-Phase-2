@@ -15152,210 +15152,1018 @@
     "bhw-follow-up": {
       "module": "04-ra7883",
       "sections": {
-        "section-6": {
+        "follow-up-application-check": {
           "en": {
-            "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e5a75df83aad.mp3",
+            "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.en.a7cb42d2b0b9.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "e5a75df83aada2f3cd39806e736ca74605c2831408bd9d33595b2fff38f26f03",
-            "sha256": "2aba5121834adc590635b233ed3a0f4bf8d7168344745a65ab5fbda75b73a7a6",
-            "duration_seconds": 43.442,
+            "content_hash": "a7cb42d2b0b9b68d6eb005cef9ad433064e2a4d6ea55ea4ef6243ff0a5499beb",
+            "sha256": "0dd3134740e87652d60488076eabb793b1118c260812183030d11285934c1bd5",
+            "duration_seconds": 42.736,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "When the process is slow",
+                "text": "What response fits Demi’s situation?",
                 "start_ms": 0,
-                "end_ms": 2440
+                "end_ms": 3200
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "You now know the whole process — but what do you do if months pass with no word?",
-                "start_ms": 2740,
-                "end_ms": 8980
+                "text": "In the fictional case, Demi provided an application but receipt, status and the cause of delay are unconfirmed.",
+                "start_ms": 3500,
+                "end_ms": 11780
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "The best move: calm yourself first before frustration takes over, then follow up with a specific question — not \"when will this be done?\"",
-                "start_ms": 9280,
-                "end_ms": 20440
+                "text": "What is a constructive follow-up?",
+                "start_ms": 12080,
+                "end_ms": 14360
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "but \"what's the status of my application, and is there anything else I need to submit?\"",
-                "start_ms": 20740,
-                "end_ms": 27220
+                "text": "Choose the response that separates facts from guesses, asks a specific question through a locally confirmed contact, and plans to clarify the answer and next step.",
+                "start_ms": 14660,
+                "end_ms": 25500
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "A clear, calm question is more likely to get answered than a complaint with no specific ask.",
-                "start_ms": 27520,
-                "end_ms": 35200
+                "text": "Explain why the other two options are insufficient.",
+                "start_ms": 25800,
+                "end_ms": 29360
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "This is an online self-check; observed practice and administrative outcomes are separate.",
+                "start_ms": 29660,
+                "end_ms": 36020
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Following up calmly and with a specific question works better than a complaint with no specific ask.",
-                "start_ms": 35500,
-                "end_ms": 43380
+                "text": "Facts · specific question · clarification · appropriate next step.",
+                "start_ms": 36320,
+                "end_ms": 42680
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.cb0586faccf0.mp3",
+            "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.fil.33bda731e8d7.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "cb0586faccf0408db0c98d916a26c05fa5c92b9b47e650efad1060c935f876cc",
-            "sha256": "81255b6d9f0b9f8e18d387b0b2f4ef5eb18a7667515f5099749ffecdc61ceff7",
-            "duration_seconds": 47.804,
+            "content_hash": "33bda731e8d713c986b2ed132d1950f82771f8755c6b5a86d01f0f70f2889f2a",
+            "sha256": "4e48d9b6527a13853482a05085dcde25716ef7b59c3179594ccb12427aedff4c",
+            "duration_seconds": 46.576,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Kapag mabagal ang proseso",
+                "text": "Ano ang angkop na tugon ni Demi?",
                 "start_ms": 0,
-                "end_ms": 2360
+                "end_ms": 2560
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "Alam mo na ngayon ang buong proseso — pero ano ang gagawin mo kung inabot ito ng ilang buwan nang walang balita?",
-                "start_ms": 2660,
-                "end_ms": 10740
+                "text": "Sa kathang-isip na kaso, nagbigay si Demi ng aplikasyon ngunit hindi pa nakukumpirma ang pagtanggap, status o sanhi ng pagkaantala.",
+                "start_ms": 2860,
+                "end_ms": 13260
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Ang pinakamahusay na hakbang: pakalmahin muna ang sarili bago sumulpot sa galit, saka mag-follow-up nang may tiyak na tanong — hindi \"kailan pa ba ito matatapos?\"",
-                "start_ms": 11040,
-                "end_ms": 23800
+                "text": "Ano ang maayos na follow-up?",
+                "start_ms": 13560,
+                "end_ms": 15800
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "kundi \"ano pong status ng aking aplikasyon, at may kailangan pa po ba akong ibigay?\"",
-                "start_ms": 24100,
-                "end_ms": 30900
+                "text": "Piliin ang tugon na naghihiwalay ng alam sa hula, nagtatanong nang tiyak sa locally confirmed na contact, at nagpaplanong linawin ang sagot at susunod na hakbang.",
+                "start_ms": 16100,
+                "end_ms": 27980
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Ang malinaw at kalmadong tanong ay mas malamang na masagot kaysa sa reklamong walang tiyak na hinihingi.",
-                "start_ms": 31200,
-                "end_ms": 38640
+                "text": "Ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian.",
+                "start_ms": 28280,
+                "end_ms": 33320
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Online self-check ito; hiwalay ang aktuwal na observed practice at administratibong resulta.",
+                "start_ms": 33620,
+                "end_ms": 40620
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang pag-follow-up nang kalmado at may tiyak na tanong ay mas epektibo kaysa sa reklamong walang tiyak na hinihingi.",
-                "start_ms": 38940,
-                "end_ms": 47740
+                "text": "Alam · tiyak na tanong · paglilinaw · angkop na susunod na hakbang.",
+                "start_ms": 40920,
+                "end_ms": 46520
+              }
+            ]
+          }
+        },
+        "follow-up-question": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-question.en.a5fa9283ab2f.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "a5fa9283ab2fb95b035a463bb5069db7d432cff1db958b7d88de64ee7f062092",
+            "sha256": "99ddf012606c33349d9b99d58c075e6dee581b9d654eb2cdb76a179b92725180",
+            "duration_seconds": 48.405,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "What does Demi know?",
+                "start_ms": 0,
+                "end_ms": 2040
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "In this fictional continuation, Demi is waiting for news about her accreditation application.",
+                "start_ms": 2340,
+                "end_ms": 8460
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "She knows she provided an application.",
+                "start_ms": 8760,
+                "end_ms": 11520
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "She has not confirmed whether it was received and complete, who is handling it, or whether a decision exists.",
+                "start_ms": 11820,
+                "end_ms": 19660
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "She does not know the cause of the delay.",
+                "start_ms": 19960,
+                "end_ms": 22640
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "At the planning corner, a colleague helps her prepare a question.",
+                "start_ms": 22940,
+                "end_ms": 27020
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Fear, cost or difficulty travelling and communicating may be barriers.",
+                "start_ms": 27320,
+                "end_ms": 33240
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "She can seek support and choose an appropriate way to ask.",
+                "start_ms": 33540,
+                "end_ms": 37580
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "The story video is optional; you can complete Read or Slides without watching it.",
+                "start_ms": 37880,
+                "end_ms": 44320
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Separate known facts from what is unconfirmed.",
+                "start_ms": 44620,
+                "end_ms": 48340
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/follow-up-question.fil.81952e31be5b.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "81952e31be5b23ee335a4bf572237ef807e7be7d2a940b7e8f5ed7a4f1af9483",
+            "sha256": "7d40c57bc64cf4b1d5b84104bd4de8301292aefdd4e7333821723947ac7953da",
+            "duration_seconds": 48.64,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Ano ang alam ni Demi?",
+                "start_ms": 0,
+                "end_ms": 1880
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Sa kathang-isip na pagpapatuloy, naghihintay si Demi ng balita tungkol sa kaniyang aplikasyon sa akreditasyon.",
+                "start_ms": 2180,
+                "end_ms": 9060
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Alam niyang nagbigay siya ng aplikasyon.",
+                "start_ms": 9360,
+                "end_ms": 11680
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi pa niya nakukumpirma kung natanggap at kumpleto ito, sino ang humahawak, o kung may pasya na.",
+                "start_ms": 11980,
+                "end_ms": 18860
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Hindi niya alam ang dahilan ng pagkaantala.",
+                "start_ms": 19160,
+                "end_ms": 22040
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sa planning corner, tinutulungan siya ng kasamahan na ihanda ang tanong.",
+                "start_ms": 22340,
+                "end_ms": 26540
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Maaaring may pangamba, gastos o hirap sa pagpunta at pakikipag-usap.",
+                "start_ms": 26840,
+                "end_ms": 32960
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Puwedeng humingi ng suporta at pumili ng angkop na paraan.",
+                "start_ms": 33260,
+                "end_ms": 37980
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Opsyonal ang kuwentong video; maaaring tapusin ang Read o Slides nang hindi ito pinapanood.",
+                "start_ms": 38280,
+                "end_ms": 44680
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Ihiwalay ang alam sa hindi pa nakukumpirma.",
+                "start_ms": 44980,
+                "end_ms": 48580
+              }
+            ]
+          }
+        },
+        "known-and-unknown": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/known-and-unknown.en.d1899fb8b926.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "d1899fb8b926d74270be97f1dfd838828a94e3e4dc7323d5f7a3b008f1327315",
+            "sha256": "788838ce48d5859c7080842c23538126cfefd34d7244a1f85d7181b0a0bfaf79",
+            "duration_seconds": 57.287,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Which card asks clearly?",
+                "start_ms": 0,
+                "end_ms": 2480
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Card A: “When will this happen?”",
+                "start_ms": 2780,
+                "end_ms": 5660
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "It expresses concern but does not identify the application or information requested.",
+                "start_ms": 5960,
+                "end_ms": 12320
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Help make the purpose specific.",
+                "start_ms": 12620,
+                "end_ms": 14820
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Card B: “About my fictional accreditation application: has it been received, and how can I verify the status and next step?”",
+                "start_ms": 15120,
+                "end_ms": 23800
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "It names the purpose and asks for unconfirmed information.",
+                "start_ms": 24100,
+                "end_ms": 28260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Card C: “A document must be lost; I will submit everything again.”",
+                "start_ms": 28560,
+                "end_ms": 33720
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "It guesses the cause and requirement.",
+                "start_ms": 34020,
+                "end_ms": 36700
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Waiting does not prove loss.",
+                "start_ms": 37000,
+                "end_ms": 39680
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "First ask whether an item needs verification, exactly which item and how to provide it safely through the appropriate channel.",
+                "start_ms": 39980,
+                "end_ms": 48820
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Practice uses no real documents.",
+                "start_ms": 49120,
+                "end_ms": 52320
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Card B asks; it does not turn a guess into a fact.",
+                "start_ms": 52620,
+                "end_ms": 57220
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/known-and-unknown.fil.d09098c4fa21.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "d09098c4fa21a343457c59113d579a3455dd47e8a1c14624028f1165a73db310",
+            "sha256": "c8e9fd31c7ce0a0cc874f89d6affd2995c8d16853f875406f90105f7beb8bf98",
+            "duration_seconds": 62.877,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Aling card ang may malinaw na tanong?",
+                "start_ms": 0,
+                "end_ms": 2600
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Card A: “Kailan pa ba ito?”",
+                "start_ms": 2900,
+                "end_ms": 5780
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "May pag-aalala, ngunit hindi malinaw kung aling aplikasyon o impormasyon ang hinihingi.",
+                "start_ms": 6080,
+                "end_ms": 13120
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Tulungang tukuyin ang pakay.",
+                "start_ms": 13420,
+                "end_ms": 16020
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Card B: “Tungkol po sa kathang-isip na aplikasyon ko sa akreditasyon: natanggap na po ba ito, at paano ko matitiyak ang status at susunod na hakbang?”",
+                "start_ms": 16320,
+                "end_ms": 27840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Tiyak ang pakay at humihingi ng impormasyong hindi pa nakukumpirma.",
+                "start_ms": 28140,
+                "end_ms": 33980
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Card C: “Tiyak na may nawawalang dokumento; ipapasa ko na lang muli lahat.”",
+                "start_ms": 34280,
+                "end_ms": 40160
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Hula ang sanhi at requirement.",
+                "start_ms": 40460,
+                "end_ms": 43060
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Hindi patunay ng pagkawala ang paghihintay.",
+                "start_ms": 43360,
+                "end_ms": 46360
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Itanong muna kung may item na kailangang tiyakin, ano mismo iyon at paano ligtas na magbigay sa tamang channel.",
+                "start_ms": 46660,
+                "end_ms": 54140
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Walang totoong dokumentong gagamitin sa pagsasanay.",
+                "start_ms": 54440,
+                "end_ms": 57960
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Card B ay nagtatanong; hindi nito ginagawang fact ang hula.",
+                "start_ms": 58260,
+                "end_ms": 62820
+              }
+            ]
+          }
+        },
+        "next-contact-plan": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.en.bc5fec8475e3.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "bc5fec8475e3f756721a480d6b0e14e6b86494b18dd1638be9969114ec33d18d",
+            "sha256": "46dc4f45f57187f1b9f4d175e60155cfa42b2aa3fc012a205a452ace4e91ad93",
+            "duration_seconds": 60.578,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Plan a realistic next contact",
+                "start_ms": 0,
+                "end_ms": 2960
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "If there is no date, ask how to agree on an appropriate next contact.",
+                "start_ms": 3260,
+                "end_ms": 8620
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "If an item needs verification, clarify the exact item and proper method before acting.",
+                "start_ms": 8920,
+                "end_ms": 15640
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "If responsibility is unclear, ask the local health team to help identify the contact.",
+                "start_ms": 15940,
+                "end_ms": 22180
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "There is no single prescribed interval for everyone.",
+                "start_ms": 22480,
+                "end_ms": 26240
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "In a practice note, write only the fictional purpose, confirmed response, remaining question and agreed next contact or channel.",
+                "start_ms": 26540,
+                "end_ms": 36260
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Use no private details or patient record.",
+                "start_ms": 36560,
+                "end_ms": 39960
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "A support person, written question or another accessible method may help.",
+                "start_ms": 40260,
+                "end_ms": 45860
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Reflect on whether the question was clear and try again after feedback.",
+                "start_ms": 46160,
+                "end_ms": 50520
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "A confirmed next question is useful even without an outcome.",
+                "start_ms": 50820,
+                "end_ms": 55220
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Confirm the contact and arrangement; do not invent a deadline.",
+                "start_ms": 55520,
+                "end_ms": 60520
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.fil.dbb375011118.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "dbb375011118920aee1ddf2f04fd9c24993112b34fc6ec8ca8bdee3432a77d90",
+            "sha256": "99fc5ce60d53ecc7be9da5fb8533772d134aa5b7a3e743cfcd9eddc51396ba20",
+            "duration_seconds": 65.933,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Pumili ng makatotohanang susunod na contact",
+                "start_ms": 0,
+                "end_ms": 3560
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Kung walang petsa, itanong kung paano magkakasundo sa angkop na susunod na contact.",
+                "start_ms": 3860,
+                "end_ms": 9860
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Kung may item na kailangang tiyakin, linawin ang eksaktong item at tamang paraan bago kumilos.",
+                "start_ms": 10160,
+                "end_ms": 16760
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Kung hindi malinaw kung sino ang responsable, humingi ng tulong sa lokal na health team upang matukoy ang contact.",
+                "start_ms": 17060,
+                "end_ms": 24340
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Walang iisang itinakdang pagitan para sa lahat.",
+                "start_ms": 24640,
+                "end_ms": 27680
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Sa practice note, isulat lamang ang kathang-isip na pakay, nakumpirmang sagot, natitirang tanong at napagkasunduang susunod na contact o channel.",
+                "start_ms": 27980,
+                "end_ms": 38500
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Walang pribadong detalye o patient record.",
+                "start_ms": 38800,
+                "end_ms": 42240
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Maaaring humingi ng katuwang, written question o iba pang accessible na paraan.",
+                "start_ms": 42540,
+                "end_ms": 48500
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Balikan kung naging malinaw ang tanong at subukang muli matapos ang feedback.",
+                "start_ms": 48800,
+                "end_ms": 54280
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Kapaki-pakinabang ang nakumpirmang susunod na tanong kahit wala pang resulta.",
+                "start_ms": 54580,
+                "end_ms": 60340
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Tiyakin ang contact at napagkasunduan; huwag mag-imbento ng deadline.",
+                "start_ms": 60640,
+                "end_ms": 65880
+              }
+            ]
+          }
+        },
+        "section-6": {
+          "en": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e383406435bc.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "e383406435bc38bcfc62c93e26f36a2b399034b0c6cd789291f3f0555cea949b",
+            "sha256": "b14382833c709c6595f562320e9458c8589d9b8faef5501993e77bb74ded1da8",
+            "duration_seconds": 52.532,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Pause and ask a specific question",
+                "start_ms": 0,
+                "end_ms": 2960
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "If helpful, pause and breathe before asking.",
+                "start_ms": 3260,
+                "end_ms": 7140
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Follow-up can be respectful and firm even when you feel worried or frustrated.",
+                "start_ms": 7440,
+                "end_ms": 13160
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "You do not need to hide your feelings to form a clear question.",
+                "start_ms": 13460,
+                "end_ms": 17260
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "With a locally confirmed contact, Demi might say: “Good day.",
+                "start_ms": 17560,
+                "end_ms": 21920
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "I would like to ask about my accreditation application.",
+                "start_ms": 22220,
+                "end_ms": 25740
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Has it been received, and is anything still unclear when checking completeness?",
+                "start_ms": 26040,
+                "end_ms": 31600
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Who is the appropriate person to ask, and what is the next step?”",
+                "start_ms": 31900,
+                "end_ms": 36420
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "This is a fictional example.",
+                "start_ms": 36720,
+                "end_ms": 38880
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Confirm the office and channel with the local health team; do not assume every staff member has the same responsibility.",
+                "start_ms": 39180,
+                "end_ms": 46540
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "State your purpose, ask about status and clarify the next step.",
+                "start_ms": 46840,
+                "end_ms": 52480
+              }
+            ]
+          },
+          "fil": {
+            "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.ce75753b6d9d.mp3",
+            "voice": "gemini:gemini-3.8-flash-tts:Kore",
+            "content_hash": "ce75753b6d9db14227fb073f38d2a0890b1815c07f2e567f82982c5c9df9fb68",
+            "sha256": "1d5dbb229cf0dcbaf73df8b05a90d09d72efdbdf73ddd0bafa388ed873320c08",
+            "duration_seconds": 57.94,
+            "timings": [
+              {
+                "zone": "heading",
+                "index": 0,
+                "text": "Huminto sandali at magtanong nang tiyak",
+                "start_ms": 0,
+                "end_ms": 2920
+              },
+              {
+                "zone": "body",
+                "index": 0,
+                "text": "Kung makatutulong, huminto sandali at huminga bago magtanong.",
+                "start_ms": 3220,
+                "end_ms": 7980
+              },
+              {
+                "zone": "body",
+                "index": 1,
+                "text": "Maaaring magalang at matatag ang follow-up kahit nakakaramdam ng pagkabahala o inis.",
+                "start_ms": 8280,
+                "end_ms": 14400
+              },
+              {
+                "zone": "body",
+                "index": 2,
+                "text": "Hindi kailangang itago ang damdamin upang makabuo ng malinaw na tanong.",
+                "start_ms": 14700,
+                "end_ms": 19420
+              },
+              {
+                "zone": "body",
+                "index": 3,
+                "text": "Sa locally confirmed na contact, maaaring sabihin ni Demi: “Magandang araw po.",
+                "start_ms": 19720,
+                "end_ms": 25840
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Nais ko pong magtanong tungkol sa aplikasyon ko sa akreditasyon.",
+                "start_ms": 26140,
+                "end_ms": 30180
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Natanggap na po ba ito, at may kailangan pa bang linawin upang matiyak kung kumpleto?",
+                "start_ms": 30480,
+                "end_ms": 36320
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Sino po ang tamang kausap, at ano ang susunod na hakbang?”",
+                "start_ms": 36620,
+                "end_ms": 41060
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Kathang-isip na halimbawa ito.",
+                "start_ms": 41360,
+                "end_ms": 43600
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Tiyakin ang tamang opisina at channel sa lokal na health team; huwag ipagpalagay na lahat ng staff ay may parehong tungkulin.",
+                "start_ms": 43900,
+                "end_ms": 51820
+              },
+              {
+                "zone": "takeaway",
+                "index": 0,
+                "text": "Sabihin ang pakay, itanong ang status at linawin ang susunod na hakbang.",
+                "start_ms": 52120,
+                "end_ms": 57880
               }
             ]
           }
         },
         "section-7": {
           "en": {
-            "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.35e054814efd.mp3",
+            "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.0159d16deb3e.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "35e054814efd1b3d8b77a6bdbdd2f8bad61c8384eba853fb4d6d69e42b069cb5",
-            "sha256": "e56ca1e16b8372b8ce1cb1b945ae52bd8275dbf3e9f70d70215817d65104efcd",
-            "duration_seconds": 48.771,
+            "content_hash": "0159d16deb3ef87033ed76becb44ce6504b24c48b938b66a7fb273f7cd7132bc",
+            "sha256": "d4f9d2434e07b4391c74ada75b59cc3298750793eff6a5574a1e536b88901a3a",
+            "duration_seconds": 62.772,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Wrong versus right: following up on a benefit",
+                "text": "Listen, repeat and clarify",
                 "start_ms": 0,
-                "end_ms": 3760
+                "end_ms": 3360
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "**Wrong**: Josie waited six months for her accreditation but never asked, because \"maybe I'll look impatient.\"",
-                "start_ms": 4060,
-                "end_ms": 13220
+                "text": "Before: Demi thinks, “Perhaps it is approved because it has been a long time.”",
+                "start_ms": 3660,
+                "end_ms": 9340
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "She eventually found out one of her documents had gone missing at the office — a six-month delay that could have been avoided with an earlier follow-up.",
-                "start_ms": 13520,
-                "end_ms": 23920
+                "text": "She has not confirmed this.",
+                "start_ms": 9640,
+                "end_ms": 11760
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "**Right**: Josie followed up every two months, with a specific question about her application's status, and reminded them calmly whenever needed.",
-                "start_ms": 24220,
-                "end_ms": 34180
+                "text": "After: in the fictional conversation, the appropriate contact says the application is still being reviewed and no date can be given.",
+                "start_ms": 12060,
+                "end_ms": 20580
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "When the missing document was discovered, it was resubmitted right away.",
-                "start_ms": 34480,
-                "end_ms": 39240
+                "text": "This is the example’s response, not a national procedure or timetable.",
+                "start_ms": 20880,
+                "end_ms": 26000
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Demi repeats: “I understand it is still under review and there is no date yet.",
+                "start_ms": 26300,
+                "end_ms": 31820
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Is that right?",
+                "start_ms": 32120,
+                "end_ms": 33480
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "Is there anything I should do now?",
+                "start_ms": 33780,
+                "end_ms": 35940
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Through which channel and with whom can I ask for the next update?”",
+                "start_ms": 36240,
+                "end_ms": 40560
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "She listens to clarification and names any remaining uncertainty.",
+                "start_ms": 40860,
+                "end_ms": 45460
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "The response establishes neither approval nor a missing document.",
+                "start_ms": 45760,
+                "end_ms": 50560
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Constructive follow-up does not guarantee an answer, accreditation, a benefit or an appointment.",
+                "start_ms": 50860,
+                "end_ms": 58340
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Staying silent in the face of a delay isn't politeness — it often just lets a problem drag on that could have been fixed much sooner.",
-                "start_ms": 39540,
-                "end_ms": 48700
+                "text": "Repeat what you understood and ask about what remains unclear.",
+                "start_ms": 58640,
+                "end_ms": 62720
               }
             ]
           },
           "fil": {
-            "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.21df6ae4e4cc.mp3",
+            "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.b75a20ed2590.mp3",
             "voice": "gemini:gemini-3.8-flash-tts:Kore",
-            "content_hash": "21df6ae4e4cc4a2eb5256feefc378accaed2f1c7d849f7288546676ebbb9a223",
-            "sha256": "dfe5c7fe77e7bd95283da7b2dda890f952023f1fb23712944f54062c5d25e390",
-            "duration_seconds": 54.674,
+            "content_hash": "b75a20ed2590f1d55b998141b5f6391b8567b8b90285889f98382f61e6e02158",
+            "sha256": "f6c0b095276b909bf5e6934a2c7ba7fd2c5c6a2618b3395a9b69c190ded2182d",
+            "duration_seconds": 65.306,
             "timings": [
               {
                 "zone": "heading",
                 "index": 0,
-                "text": "Mali kumpara sa tama: humingi ng nararapat",
+                "text": "Makinig, ulitin at linawin",
                 "start_ms": 0,
-                "end_ms": 4720
+                "end_ms": 3880
               },
               {
                 "zone": "body",
                 "index": 0,
-                "text": "**Mali**: Anim na buwan nang naghihintay si Josie sa kanyang akreditasyon, pero hindi siya nagtanong kahit kailan dahil \"baka mukhang naiinip ako.\"",
-                "start_ms": 5020,
-                "end_ms": 15460
+                "text": "Bago: iniisip ni Demi na “baka aprubado na dahil matagal na.”",
+                "start_ms": 4180,
+                "end_ms": 8820
               },
               {
                 "zone": "body",
                 "index": 1,
-                "text": "Sa kalaunan, nalaman niyang nawala pala ang isa sa kanyang mga dokumento sa opisina — anim na buwang pagkaantala na naiwasan sana kung nag-follow-up siya nang maaga.",
-                "start_ms": 15760,
-                "end_ms": 27840
+                "text": "Hindi niya pa ito nakukumpirma.",
+                "start_ms": 9120,
+                "end_ms": 11440
               },
               {
                 "zone": "body",
                 "index": 2,
-                "text": "**Tama**: Nag-follow-up si Josie tuwing dalawang buwan, may tiyak na tanong tungkol sa status ng aplikasyon, at kalmadong nagpaalala tuwing kailangan.",
-                "start_ms": 28140,
-                "end_ms": 38300
+                "text": "Pagkatapos: sa kathang-isip na usapan, sinabi ng tamang contact na sinusuri pa ang aplikasyon at wala pang petsang maibibigay.",
+                "start_ms": 11740,
+                "end_ms": 20900
               },
               {
                 "zone": "body",
                 "index": 3,
-                "text": "Nang matuklasan ang nawawalang dokumento, agad itong naibigay muli.",
-                "start_ms": 38600,
-                "end_ms": 43800
+                "text": "Ito ang sagot sa halimbawa, hindi pambansang proseso o takdang oras.",
+                "start_ms": 21200,
+                "end_ms": 26600
+              },
+              {
+                "zone": "body",
+                "index": 4,
+                "text": "Ulit ni Demi: “Ang pagkaunawa ko po ay sinusuri pa at wala pang petsa.",
+                "start_ms": 26900,
+                "end_ms": 33500
+              },
+              {
+                "zone": "body",
+                "index": 5,
+                "text": "Tama po ba?",
+                "start_ms": 33800,
+                "end_ms": 35040
+              },
+              {
+                "zone": "body",
+                "index": 6,
+                "text": "May kailangan po ba akong gawin ngayon?",
+                "start_ms": 35340,
+                "end_ms": 37780
+              },
+              {
+                "zone": "body",
+                "index": 7,
+                "text": "Saang channel at kanino ko maaaring itanong ang susunod na update?”",
+                "start_ms": 38080,
+                "end_ms": 43280
+              },
+              {
+                "zone": "body",
+                "index": 8,
+                "text": "Pinakikinggan niya ang paglilinaw at sinasabi kung may hindi pa malinaw.",
+                "start_ms": 43580,
+                "end_ms": 48420
+              },
+              {
+                "zone": "body",
+                "index": 9,
+                "text": "Walang natiyak na approval o kulang na dokumento sa sagot.",
+                "start_ms": 48720,
+                "end_ms": 52960
+              },
+              {
+                "zone": "body",
+                "index": 10,
+                "text": "Ang maayos na follow-up ay hindi garantiya ng sagot, akreditasyon, benepisyo o appointment.",
+                "start_ms": 53260,
+                "end_ms": 60220
               },
               {
                 "zone": "takeaway",
                 "index": 0,
-                "text": "Ang katahimikan sa harap ng pagkaantala ay hindi pagiging magalang — madalas itong nagpapahaba lang ng problemang kaya sanang naayos nang maaga.",
-                "start_ms": 44100,
-                "end_ms": 54620
+                "text": "Ulitin ang naunawaan at itanong ang hindi pa malinaw.",
+                "start_ms": 60520,
+                "end_ms": 65240
               }
             ]
           }
@@ -102439,6 +103247,221 @@
                   "text": "May pananagutan ang board; pantulong ang komite at may opisyal na tala ang pasya.",
                   "start_ms": 71620,
                   "end_ms": 77820
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "bhw-follow-up": [
+      {
+        "module": "04-ra7883",
+        "sections": {
+          "section-6": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e5a75df83aad.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "e5a75df83aada2f3cd39806e736ca74605c2831408bd9d33595b2fff38f26f03",
+              "sha256": "2aba5121834adc590635b233ed3a0f4bf8d7168344745a65ab5fbda75b73a7a6",
+              "duration_seconds": 43.442,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "When the process is slow",
+                  "start_ms": 0,
+                  "end_ms": 2440
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "You now know the whole process — but what do you do if months pass with no word?",
+                  "start_ms": 2740,
+                  "end_ms": 8980
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "The best move: calm yourself first before frustration takes over, then follow up with a specific question — not \"when will this be done?\"",
+                  "start_ms": 9280,
+                  "end_ms": 20440
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "but \"what's the status of my application, and is there anything else I need to submit?\"",
+                  "start_ms": 20740,
+                  "end_ms": 27220
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "A clear, calm question is more likely to get answered than a complaint with no specific ask.",
+                  "start_ms": 27520,
+                  "end_ms": 35200
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Following up calmly and with a specific question works better than a complaint with no specific ask.",
+                  "start_ms": 35500,
+                  "end_ms": 43380
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.cb0586faccf0.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "cb0586faccf0408db0c98d916a26c05fa5c92b9b47e650efad1060c935f876cc",
+              "sha256": "81255b6d9f0b9f8e18d387b0b2f4ef5eb18a7667515f5099749ffecdc61ceff7",
+              "duration_seconds": 47.804,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Kapag mabagal ang proseso",
+                  "start_ms": 0,
+                  "end_ms": 2360
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "Alam mo na ngayon ang buong proseso — pero ano ang gagawin mo kung inabot ito ng ilang buwan nang walang balita?",
+                  "start_ms": 2660,
+                  "end_ms": 10740
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Ang pinakamahusay na hakbang: pakalmahin muna ang sarili bago sumulpot sa galit, saka mag-follow-up nang may tiyak na tanong — hindi \"kailan pa ba ito matatapos?\"",
+                  "start_ms": 11040,
+                  "end_ms": 23800
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "kundi \"ano pong status ng aking aplikasyon, at may kailangan pa po ba akong ibigay?\"",
+                  "start_ms": 24100,
+                  "end_ms": 30900
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Ang malinaw at kalmadong tanong ay mas malamang na masagot kaysa sa reklamong walang tiyak na hinihingi.",
+                  "start_ms": 31200,
+                  "end_ms": 38640
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang pag-follow-up nang kalmado at may tiyak na tanong ay mas epektibo kaysa sa reklamong walang tiyak na hinihingi.",
+                  "start_ms": 38940,
+                  "end_ms": 47740
+                }
+              ]
+            }
+          },
+          "section-7": {
+            "en": {
+              "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.35e054814efd.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "35e054814efd1b3d8b77a6bdbdd2f8bad61c8384eba853fb4d6d69e42b069cb5",
+              "sha256": "e56ca1e16b8372b8ce1cb1b945ae52bd8275dbf3e9f70d70215817d65104efcd",
+              "duration_seconds": 48.771,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Wrong versus right: following up on a benefit",
+                  "start_ms": 0,
+                  "end_ms": 3760
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "**Wrong**: Josie waited six months for her accreditation but never asked, because \"maybe I'll look impatient.\"",
+                  "start_ms": 4060,
+                  "end_ms": 13220
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "She eventually found out one of her documents had gone missing at the office — a six-month delay that could have been avoided with an earlier follow-up.",
+                  "start_ms": 13520,
+                  "end_ms": 23920
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "**Right**: Josie followed up every two months, with a specific question about her application's status, and reminded them calmly whenever needed.",
+                  "start_ms": 24220,
+                  "end_ms": 34180
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "When the missing document was discovered, it was resubmitted right away.",
+                  "start_ms": 34480,
+                  "end_ms": 39240
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Staying silent in the face of a delay isn't politeness — it often just lets a problem drag on that could have been fixed much sooner.",
+                  "start_ms": 39540,
+                  "end_ms": 48700
+                }
+              ]
+            },
+            "fil": {
+              "src": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.21df6ae4e4cc.mp3",
+              "voice": "gemini:gemini-3.8-flash-tts:Kore",
+              "content_hash": "21df6ae4e4cc4a2eb5256feefc378accaed2f1c7d849f7288546676ebbb9a223",
+              "sha256": "dfe5c7fe77e7bd95283da7b2dda890f952023f1fb23712944f54062c5d25e390",
+              "duration_seconds": 54.674,
+              "timings": [
+                {
+                  "zone": "heading",
+                  "index": 0,
+                  "text": "Mali kumpara sa tama: humingi ng nararapat",
+                  "start_ms": 0,
+                  "end_ms": 4720
+                },
+                {
+                  "zone": "body",
+                  "index": 0,
+                  "text": "**Mali**: Anim na buwan nang naghihintay si Josie sa kanyang akreditasyon, pero hindi siya nagtanong kahit kailan dahil \"baka mukhang naiinip ako.\"",
+                  "start_ms": 5020,
+                  "end_ms": 15460
+                },
+                {
+                  "zone": "body",
+                  "index": 1,
+                  "text": "Sa kalaunan, nalaman niyang nawala pala ang isa sa kanyang mga dokumento sa opisina — anim na buwang pagkaantala na naiwasan sana kung nag-follow-up siya nang maaga.",
+                  "start_ms": 15760,
+                  "end_ms": 27840
+                },
+                {
+                  "zone": "body",
+                  "index": 2,
+                  "text": "**Tama**: Nag-follow-up si Josie tuwing dalawang buwan, may tiyak na tanong tungkol sa status ng aplikasyon, at kalmadong nagpaalala tuwing kailangan.",
+                  "start_ms": 28140,
+                  "end_ms": 38300
+                },
+                {
+                  "zone": "body",
+                  "index": 3,
+                  "text": "Nang matuklasan ang nawawalang dokumento, agad itong naibigay muli.",
+                  "start_ms": 38600,
+                  "end_ms": 43800
+                },
+                {
+                  "zone": "takeaway",
+                  "index": 0,
+                  "text": "Ang katahimikan sa harap ng pagkaantala ay hindi pagiging magalang — madalas itong nagpapahaba lang ng problemang kaya sanang naayos nang maaga.",
+                  "start_ms": 44100,
+                  "end_ms": 54620
                 }
               ]
             }

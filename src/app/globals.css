@@ -793,3 +793,24 @@ body {
   margin-inline: auto;
   object-fit: contain;
 }
+
+/* Demi follow-up preparation and optional story: keep faces and the whole video visible. */
+.reference-story-art img[src*="demi-follow-up"] { object-fit: contain; object-position: center; background: var(--color-canvas); }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-follow-up"] {
+  border: 0;
+  padding: 0;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-follow-up"] > p,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-follow-up"] figcaption,
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-follow-up"] details {
+  display: none;
+}
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-follow-up"] figure { margin: 0; }
+.lesson-reader-surface .reference-story-player[data-lesson="bhw-follow-up"] video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  margin-inline: auto;
+  object-fit: contain;
+}

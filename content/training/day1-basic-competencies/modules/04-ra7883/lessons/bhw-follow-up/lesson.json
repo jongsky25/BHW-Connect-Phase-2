@@ -163,6 +163,46 @@
       "caption_en": "Fictional preparation: facts, question and next contact. Draft for review.",
       "provenance": "Original built-in imagegen, 5 October 2026. Supplied approved 1.4.1 Demi identity reference SHA256 032a985f9c336b745a99d284e2143d7559f070f76f6e85e64dbdaf4c7f9a89b2. New scene; model identifier not returned. Exact prompt/input/output evidence: docs/lesson-145-art-provenance.json. No owner approval of new media.",
       "review_status": "draft"
+    },
+    {
+      "id": "bhw-follow-up-story",
+      "alt_fil": "Kuwentong may salaysay: inihahanda ni Demi ang tanong, nililinaw ang sagot at ang susunod na contact.",
+      "alt_en": "Narrated story: Demi prepares a question, clarifies the response and next contact.",
+      "caption_fil": "Anim na tagpong kathang-isip na may Gemini narration at captions. Draft; hinihintay ang owner review.",
+      "caption_en": "Six fictional scenes with Gemini narration and captions. Draft awaiting owner review.",
+      "provenance": "Original Remotion animation for lesson 1.4.5; original built-in imagegen illustration generated 2026-10-05, derived from the owner-approved fictional Demi reference identity. Gemini TTS model gemini-3.8-flash-tts, voice Kore. Encoded MP3 sample counts set duration; scene boundaries come from the synthesis timings, authored script/timing text is preserved and captions derive from those timings. New media are draft; no owner or independent policy SME approval.",
+      "review_status": "draft",
+      "videos": {
+        "fil": {
+          "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-90ef9593dc61.mp4",
+          "content_hash": "90ef9593dc61e2db39a7ad8865d67f8039aef7fe0904a18b6a98588d13f75932",
+          "duration_s": 74,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-328f561f04ce.vtt",
+            "content_hash": "328f561f04ce2a6238189edd0e17aa7199fb0516293486b1b31188481db02221"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+            "content_hash": "64fc42b84db7ffb9dca04f52e1a35501985adcb90ea79d313f2d164380f297d6"
+          }
+        },
+        "en": {
+          "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-a0ed3d8374ea.mp4",
+          "content_hash": "a0ed3d8374eaaf49d39f6a12482e893b13e5d704cf5898bb5cfa1d488ef53db7",
+          "duration_s": 67,
+          "captions": {
+            "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-07b0de2e5d23.vtt",
+            "content_hash": "07b0de2e5d23d07f229f00cdf95643f79482fa30b1c31d5bcf4c8a071a710a30"
+          },
+          "poster": {
+            "path": "/training/bhw-1-4/bhw-follow-up-gemini-en-f893bb961205-poster.jpg",
+            "content_hash": "f893bb96120528788200c3b340656ab18df06bc8791c36a4f19dd48a2c21200b"
+          }
+        }
+      },
+      "path": "/training/bhw-1-4/bhw-follow-up-gemini-fil-64fc42b84db7-poster.jpg",
+      "content_hash": "64fc42b84db7ffb9dca04f52e1a35501985adcb90ea79d313f2d164380f297d6"
     }
-  ]
+  ],
+  "featured_asset_id": "bhw-follow-up-story"
 }

@@ -255,6 +255,8 @@ export function ReferenceLessons(props: Props) {
             alt: ui("Magalang na nakikinig si BHW Mimi sa magulang na may kargang sanggol sa health station.", "BHW Mimi respectfully listens to a parent holding an infant at the health station."),
             caption: ui("Makinig · kumpirmahin · umalalay", "Listen · confirm · support"),
           }
+      : lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")
+        ? {src: lesson.revision.assets.find(asset => asset.id === "demi-follow-up")!.path, alt: ui("Inihahanda ni Demi at ng kasamahan ang follow-up question gamit ang blangkong card at notebook.", "Demi and a colleague prepare a follow-up question using a blank card and notebook."), caption: ui("Alam · Tanong · Paglilinaw · Next contact", "Facts · Question · Clarification · Next contact")}
       : lesson?.lesson_key === "bhw-accreditation" && lesson.revision.assets.some(asset => asset.id === "demi-accreditation-question")
         ? {src: "/training/bhw-1-4/demi-accreditation-question-b2dfcb212dff.png", alt: ui("Nagtatanong si Demi sa staff sa RHU tungkol sa proseso gamit ang blankong folder at cards.", "Demi asks RHU staff about the process using a blank folder and cards."), caption: ui("Papel · Opisyal na tala · Susunod na hakbang", "Roles · Official record · Next step")}
       : lesson?.lesson_key === "bhw-eligibility" && lesson.revision.assets.some(asset => asset.id === "demi-bhwe-discussion")
@@ -433,7 +435,7 @@ export function ReferenceLessons(props: Props) {
     );
   }
   function openReader() {
-    if (lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
+    if ((lesson?.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up")) || lesson?.lesson_key === "bhw-accreditation" || lesson?.lesson_key === "bhw-eligibility" || lesson?.lesson_key === "bhw-benefits" || lesson?.lesson_key === "bhw-legal-role" || lesson?.lesson_key === "bhs-support-environment" || lesson?.lesson_key === "bhs-resources" || lesson?.lesson_key === "bhs-improvement") {
       setOrientation(window.matchMedia?.("(orientation: landscape)")?.matches ? "landscape" : "portrait");
     }
     setReaderOpen(true);
@@ -714,7 +716,10 @@ export function ReferenceLessons(props: Props) {
               {props.lessonCount ?? siblings.length} · {en ? lesson.title_en : lesson.title_fil}
             </p>
             <p className="text-sm">
-              {lesson.lesson_key === "bhw-accreditation" && lesson.revision.assets.some(asset => asset.id === "demi-accreditation-question") ? ui(
+              {lesson.lesson_key === "bhw-follow-up" && lesson.revision.assets.some(asset => asset.id === "demi-follow-up") ? ui(
+                "Tinatayang 10–12 minuto para sa sariling pag-aaral; dagdag ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.",
+                "Estimated 10–12 minutes for independent study; optional stories and audio replay are additional. Guided practice is separate.",
+              ) : lesson.lesson_key === "bhw-accreditation" && lesson.revision.assets.some(asset => asset.id === "demi-accreditation-question") ? ui(
                 "Tinatayang 8–10 minuto para sa sariling pag-aaral; hindi kasama ang opsyonal na kuwento at audio replay. Hiwalay ang guided practice.",
                 "Estimated 8–10 minutes for independent study, excluding the optional story and audio replay. Guided practice is separate.",
               ) : lesson.lesson_key === "bhw-eligibility" ? ui(
