@@ -21,6 +21,8 @@ for(const q of requests){const t=tracks[q.section][q.language],file=root+'/publi
  const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({model,input:[{type:'text',text:q.question+' Return JSON with transcript, observations and uncertainty. Timestamps are relative to this excerpt. Do not presume an earlier analysis was correct.'},{type:'audio',data:excerpt.toString('base64'),mime_type:'audio/wav'}],generation_config:{temperature:0}}),signal:AbortSignal.timeout(180000)});
  if(!response.ok)throw Error('Focused review HTTP '+response.status);
  const result=await response.json();
- report.records.push({...q,source_path:t.src,source_sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),excerpt_sha256:crypto.createHash('sha256').update(excerpt).digest('hex'),model_response:result.outputs??result.output??result});
+ const responseText=(result.steps??[]).filter(s=>s.type==='model_output').flatMap(s=>s.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n');
+ if(!responseText)throw Error('Focused model response contains no text');
+ report.records.push({...q,source_path:t.src,source_sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),excerpt_sha256:crypto.createHash('sha256').update(excerpt).digest('hex'),model_response:responseText});
  fs.writeFileSync(root+'/docs/lesson-143-audio-focus.json',JSON.stringify(report,null,2)+'\n');console.log('Focused review '+q.id);
 }

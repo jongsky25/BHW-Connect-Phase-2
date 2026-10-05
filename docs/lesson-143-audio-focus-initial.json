@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-05T06:54:59.665Z",
+  "source_commit": "4f1c8284d04d860c1543d8a9d4fa1e307bef27af",
+  "model": "gemini-3.8-flash",
+  "method": "Focused model review of decoded actual MP3 excerpts; first-pass responses retained separately. No human listening or owner approval.",
+  "records": [
+    {
+      "id": "citation-en",
+      "section": "section-4",
+      "language": "en",
+      "start": 0,
+      "end": 14,
+      "question": "Transcribe the exact legal citation. Is the letter d audible, and is it read as paragraph d, subscript d, or something else? Distinguish awkwardness from a changed legal reference.",
+      "source_path": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.6c14f7da5fe8.mp3",
+      "source_sha256": "2f497b7f62a7ae214df88ae0dfcf669b0f11e504499b5b6eff64672fdfb8dc92",
+      "excerpt_sha256": "89b51bbbb37a401aa7c5b1e581cf50675ccac81aaa1abcfb1020a295167ab9b4",
+      "model_response": "```json\n{\n  \"transcript\": \"RA 7883, section 6 subscript D\",\n  \"observations\": {\n    \"letter_d_audible\": true,\n    \"phrasing\": \"subscript D\",\n    \"details\": \"Between 00:03 and 00:07, the speaker clearly articulates 'RA 7883, section 6 subscript D'. The letter 'd' is distinctly audible. Rather than reading standard statutory notation such as 'subsection (d)' or 'paragraph (d)', the reader verbatim pronounces the word 'subscript', likely reflecting a literal reading of typographic subscript formatting (or text-to-speech rendering of subscript markup/notation) rather than an intentional citation change.\"\n  },\n  \"uncertainty\": \"Low; the phonetic pronunciation of 'subscript D' (/sʌb.skrɪpt diː/) is clear and unmistakable.\"\n}\n```"
+    },
+    {
+      "id": "card-a-en",
+      "section": "bhwe-application-check",
+      "language": "en",
+      "start": 0,
+      "end": 11,
+      "question": "Transcribe the words naming the fictional practice card and its two service numbers. Do you hear Card A, cadre, or an ambiguous boundary? Describe audible evidence and uncertainty.",
+      "source_path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.en.2256997127b1.mp3",
+      "source_sha256": "b0da820707db768147f1211a753ab11fe10d6eca458b814676f637ac7e3f80e5",
+      "excerpt_sha256": "2c57433bde214b4fbce7cf887f40882b688b5a0818c51c348c37bfdf5e8e7f10",
+      "model_response": "```json\n{\n  \"transcript\": \"Fictional Carder A reports 8 years of service, but only 3 years under accreditation\",\n  \"observations\": {\n    \"target_entity\": \"Fictional Carder A (or Carter A / cadre A / Card A)\",\n    \"service_numbers\": [\n      \"8 years of service\",\n      \"3 years under accreditation\"\n    ],\n    \"phonetic_analysis\": \"Following the word 'Fictional', the noun phrase is pronounced with two full syllables before the letter name: an initial rhotic syllable [kɑːr], an alveolar flap/tap [ɾ] or voiced stop [d], and an unstressed r-colored vowel [ɚ], followed by the distinct vowel [eɪ] for the letter 'A' ([ˈkɑːrdɚ eɪ] or [ˈkɑːrtɚ eɪ]).\",\n    \"comparison\": {\n      \"Card_A\": \"A standard pronunciation of 'Card A' would be monosyllabic [kɑːrd] followed directly by [eɪ]. Here, an additional unstressed rhotic syllable ([ɚ]) is clearly audible between the dental/alveolar stop and 'A'.\",\n      \"cadre\": \"Standard English pronunciations of 'cadre' are typically /ˈkɑːdreɪ/, /ˈkædri/, or /ˈkɑːdrə/. However, metathesis of the rhotic consonant (rendering /ˈkɑːrdɚ/) is a common reading mispronunciation that matches the audible acoustic profile exactly.\",\n      \"boundary\": \"The transition between [dɚ] and [eɪ] is smooth with a brief vocalic transition, clearly presenting as a disyllabic word ('carder'/'Carter') followed by the isolated letter 'A'.\"\n    }\n  },\n  \"uncertainty\": \"Acoustically, the audio unambiguously contains an additional unstressed rhotic syllable, producing 'carder A' / 'Carter A' rather than a standard 'Card A'. Uncertainty remains regarding the underlying written prompt: it could be a TTS/speaker artifact for 'Card A', a metathesized reading of 'cadre A', or an intended proper noun 'Carter A'.\"\n}\n```"
+    },
+    {
+      "id": "check-voice-fil-opening",
+      "section": "bhwe-application-check",
+      "language": "fil",
+      "start": 0,
+      "end": 12,
+      "question": "Transcribe all speech and assess whether the heading and following sentence differ in pitch/register or are clearly different speakers. Do not infer speaker gender solely from pitch; state uncertainty.",
+      "source_path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
+      "source_sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
+      "excerpt_sha256": "041f89001187747bd7f00b98802534c4f167172e1f15f69b338b9a01883d05af",
+      "model_response": "```json\n{\n  \"transcript\": [\n    {\n      \"start\": \"00:00.000\",\n      \"end\": \"00:02.500\",\n      \"text\": \"Piliin ang maingat na paliwanag.\"\n    },\n    {\n      \"start\": \"00:03.100\",\n      \"end\": \"00:10.500\",\n      \"text\": \"Sinabi sa kathang-isip na Card A na walong taon na ang serbisyo at tatlong taon pa lamang ang akreditasyon.\"\n    },\n    {\n      \"start\": \"00:10.600\",\n      \"end\": \"00:11.800\",\n      \"text\": \"Aling pali...\"\n    }\n  ],\n  \"observations\": \"The heading ('Piliin ang maingat na paliwanag') and the subsequent sentence share consistent vocal qualities, pitch range, pacing, and acoustic profile. Both segments appear to be generated by the same text-to-speech voice model (or spoken by the same individual) without any discernible shift in register or speaker identity.\",\n  \"uncertainty\": \"Because the audio exhibits mechanical cadence and synthetic text-to-speech characteristics, definitive real-world speaker demographics (such as biological gender) cannot be reliably determined from pitch alone.\"\n}\n```"
+    },
+    {
+      "id": "check-voice-fil-middle",
+      "section": "bhwe-application-check",
+      "language": "fil",
+      "start": 20,
+      "end": 30,
+      "question": "Transcribe all speech and assess whether vocal changes are pitch/register variation or clearly different speakers. Do not infer speaker gender solely from pitch; state uncertainty.",
+      "source_path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
+      "source_sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
+      "excerpt_sha256": "b16ea64705e57419a78c4b6d7930b4b7dc1271448514d16a3c4d576172b484d7",
+      "model_response": "```json\n{\n  \"transcript\": \"service conditions at bumuo ng tiyak na tanong sa CSC. Hindi dapat mangako si Demi ng BHW o trabaho. Pag-\",\n  \"observations\": \"The audio features a single, consistent voice (likely synthesized/text-to-speech) throughout the entire excerpt. Pitch, timbre, cadence, and acoustic quality remain uniform across both sentences.\",\n  \"uncertainty\": \"Low. There is no indication of multiple speakers.\"\n}\n```"
+    },
+    {
+      "id": "check-voice-fil-ending",
+      "section": "bhwe-application-check",
+      "language": "fil",
+      "start": 35,
+      "end": 45,
+      "question": "Transcribe all speech and assess vocal consistency and whether the last syllable is complete. Do not infer speaker gender solely from pitch; state uncertainty.",
+      "source_path": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
+      "source_sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
+      "excerpt_sha256": "685fb3cd2f089ba54642a6da45961a1abe7869fdfcf242ba4431ef4fa0c4801e",
+      "model_response": "```json\n{\n \"transcript\": \"Ipaliwanag sa kapareha kung ano ang dapat tiyakin. Ipaliwanag ang kondisyon at ebidensya. Sa katiyakin sa CSC.\",\n \"observations\": \"The speaker delivers instructional speech in Tagalog with a clear, steady, and consistent tone throughout. The pitch indicates a female-sounding voice, though gender cannot be determined with certainty based on pitch alone. The final syllable 'C' in 'CSC' is fully enunciated before the recording ends.\",\n \"uncertainty\": \"Low, though exact capitalization/acronym interpretation ('CSC' vs. 'CSE') relies on audio phonetics ('see-ess-see').\"\n}\n```"
+    }
+  ]
+}

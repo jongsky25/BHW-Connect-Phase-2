@@ -4,7 +4,7 @@ Demi hears that accreditation or long BHW service automatically brings BHWE and 
 
 ## [section-4] BHWE conditions
 
-RA 7883 section 6(d) provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.
+RA 7883 section six, paragraph d, provides the statutory basis for second-grade eligibility after five years of continuous service. CSC implementing conditions are more detailed. Use these four teaching groups: Local Health Board accreditation; at least two years of college education leading to a degree; at least five years of continuous, active, full-time voluntary service as an accredited BHW; and a satisfactory service record. Accreditation must precede the qualifying service. Service before 20 February 1995 is not counted. Accreditation alone is insufficient: applicable conditions must be met and supported by evidence, and CSC decides the application.
 
 ## [service-count] Which service can be counted?
 
@@ -20,4 +20,4 @@ Using a blank planning sheet, Demi asks, ‘For this fictional record, which acc
 
 ## [bhwe-application-check] Choose a careful explanation
 
-Fictional Card A reports eight years of service but only three years under accreditation. Which explanation is best? Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question. Demi should promise neither BHWE nor a job. After choosing, read the reasons for all three answers and explain to a partner what needs verification.
+In fictional example A, the worker has eight years of service but only three years under accreditation. Which explanation is best? Connect the count to accredited status, check education and the other service conditions, and form a specific CSC question. Demi should promise neither BHWE nor a job. After choosing, read the reasons for all three answers and explain to a partner what needs verification.

@@ -2,7 +2,8 @@
 // Usage: GEMINI_API_KEY=... node scripts/remotion-bhw-eligibility-narrate.mjs fil|en
 // Each story scene is synthesized separately, then timed by PCM sample count.
 
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
+import {createHash} from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { synthesizeWithGemini, GEMINI_TTS_MODEL, GEMINI_VOICE, BHW_ELIGIBILITY_STORY_STYLES } from "./lib/tts-providers/gemini.mjs";
@@ -18,6 +19,14 @@ async function main() {
   if (!process.env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY is not set");
   const { BHW_ELIGIBILITY_BEATS } = await import(pathToFileURL(path.join(root, "remotion", "src", "bhw-eligibility", "narration.ts")).href);
   const zones = BHW_ELIGIBILITY_BEATS.map((beat, index) => ({ zone: beat.id, index, text: beat[language] }));
+  const timingPath=path.join(outDir, `narration-${language}.json`),audioPath=path.join(outDir, `narration-${language}.mp3`);
+  const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+  if(existsSync(timingPath)&&existsSync(audioPath)){
+    const saved=JSON.parse(readFileSync(timingPath,'utf8')),bytes=readFileSync(audioPath);
+    if(saved.language===language&&saved.model===GEMINI_TTS_MODEL&&saved.voice===GEMINI_VOICE&&saved.speech_style===styles[language]&&saved.audio_sha256===sha(bytes)&&JSON.stringify(saved.beats.map(({zone,index,text})=>({zone,index,text})))===JSON.stringify(zones)){
+      console.log(`${language}: exact authored story/style/MP3 hash cache hit`);return;
+    }
+  }
   const rendered = await synthesizeWithGemini(zones, language, {
     apiKey: process.env.GEMINI_API_KEY,
     kbps: 32,
@@ -38,6 +47,7 @@ async function main() {
   writeFileSync(path.join(outDir, `narration-${language}.json`), JSON.stringify({
     language, provider: "gemini", model: GEMINI_TTS_MODEL, voice: GEMINI_VOICE,
     speech_style: styles[language], durationSeconds: Number(durationSeconds.toFixed(3)), beats: rendered.timings,
+    audio_sha256: sha(rendered.audioBytes),
   }, null, 2) + "\n");
   console.log(`${language}: ${durationSeconds.toFixed(1)} s; ${rendered.audioBytes.length} bytes; ${rendered.timings.length} scenes`);
 }
