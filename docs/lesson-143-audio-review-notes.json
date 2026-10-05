@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-05T07:12:13.203Z",
+  "method": "Model-mediated listening of actual MP3s, decoded signal/timing checks and focused excerpts; no human listening, owner approval or policy SME review.",
+  "current_model_review": "28a8af5f448afc451bf371a116477511addb84ca",
+  "current_files": [
+    {
+      "id": "read-bhw-eligibility-bhwe-question-fil",
+      "sha256": "362fb276e59091c0d40c74289c4337025b3d44da287a64de088e2a0ead358487"
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-question-en",
+      "sha256": "91535175a0afeb33348c14ded73dee1abdc2932607f9b18dbb5690a8436fed59"
+    },
+    {
+      "id": "read-bhw-eligibility-section-4-fil",
+      "sha256": "b80ff04f41f97891d7654c40527bc3895df4c054262d8cfc545a421a4aa9a65b"
+    },
+    {
+      "id": "read-bhw-eligibility-section-4-en",
+      "sha256": "7e949e3510358d3fe451882c3c75074ecd0bdb065ee2603426ea11582b3e4ee0"
+    },
+    {
+      "id": "read-bhw-eligibility-service-count-fil",
+      "sha256": "fb1e541b3bb46ca041b7a0c9ff48bb292c6cf747da47d5301afa1297d0fc0457"
+    },
+    {
+      "id": "read-bhw-eligibility-service-count-en",
+      "sha256": "6c74d9f51ce93006c4de1d55a14f92aa3780df8b5771340b9928b29c91a98836"
+    },
+    {
+      "id": "read-bhw-eligibility-evidence-and-scope-fil",
+      "sha256": "ba53fc181fa90e2d25aff354f106795119a0b69d8ffb2f8432b4809a6c48da63"
+    },
+    {
+      "id": "read-bhw-eligibility-evidence-and-scope-en",
+      "sha256": "b2450bb259910d576c990deab3f5e79d3db0454751b3dc2e134183fd1f5e9d06"
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-verification-fil",
+      "sha256": "896b97ab205fec27a3c86de9b02ab94f6c80e73fd08133f31460d82c98d8bfa0"
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-verification-en",
+      "sha256": "21c3ab0b13f10322b77483eddc693ccfa9ad98e97bc044c634fafce354400535"
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-application-check-fil",
+      "sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b"
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-application-check-en",
+      "sha256": "6dcf16b91634ec231b5bf2c84a517d1c4ff13dd5cc6095b7274b0088c6a48373"
+    },
+    {
+      "id": "story-fil",
+      "sha256": "2c778e02d52a6a9cd772593d9ea37e017eba6346ad4a916f43cf240ae40d27ff"
+    },
+    {
+      "id": "story-en",
+      "sha256": "7f6d6c0d4564c91de4c9f1c54ecab04e8313895cf2678f6acab88fa98c33744a"
+    }
+  ],
+  "repairs": [
+    {
+      "id": "read-bhw-eligibility-section-4-en",
+      "initial_sha256": "2f497b7f62a7ae214df88ae0dfcf669b0f11e504499b5b6eff64672fdfb8dc92",
+      "current_sha256": "7e949e3510358d3fe451882c3c75074ecd0bdb065ee2603426ea11582b3e4ee0",
+      "action": "Authored English Read/Slide full narration now says section six, paragraph d; current actual-audio transcript confirms the intended citation without subscript."
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-application-check-en",
+      "initial_sha256": "b0da820707db768147f1211a753ab11fe10d6eca458b814676f637ac7e3f80e5",
+      "current_sha256": "6dcf16b91634ec231b5bf2c84a517d1c4ff13dd5cc6095b7274b0088c6a48373",
+      "action": "Authored English Read/Slide full narration now uses fictional example A; current actual-audio transcript confirms the phrase and eight-versus-three service count."
+    }
+  ],
+  "retained_media": "Ten other Read tracks and both story MP3/MP4/VTT/posters are exact original generation bytes. Initial recordings, reports and focused responses retained in history/Git for traceability.",
+  "remaining_review_points": [
+    {
+      "id": "read-bhw-eligibility-bhwe-application-check-fil",
+      "timestamps": [
+        "00:00–00:02",
+        "00:03–00:10",
+        "00:11–00:23",
+        "00:24–00:28",
+        "00:29–00:38",
+        "00:39–00:44"
+      ],
+      "observation": "Full-file model review claims alternating female/male timbre; focused excerpts instead report a consistent voice and complete final syllable. These assessments conflict. Every synthesis request used Kore; a second speaker is not independently established. Preserve both reports and seek owner listening."
+    },
+    {
+      "id": "read-bhw-eligibility-service-count-en",
+      "timestamps": [
+        "00:08",
+        "00:20",
+        "00:36",
+        "00:40",
+        "00:49"
+      ],
+      "observation": "Second review flags sentence-level timbre variation on identical bytes; first review reported consistency. Numbers and negations were transcribed correctly. Speaker identity remains uncertain."
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-verification-en",
+      "timestamps": [
+        "00:03–00:04",
+        "00:34–00:41"
+      ],
+      "observation": "Heading/body tonal transition and segmented pitch/resonance flagged. Current transcript preserves conditions and negations; all requests used Kore."
+    },
+    {
+      "id": "read-bhw-eligibility-bhwe-application-check-en",
+      "timestamps": [
+        "00:12–00:21",
+        "00:22–00:27",
+        "00:28–00:35",
+        "00:36–00:40"
+      ],
+      "observation": "Repaired clip transcribes correctly; model describes brighter/lower female timbre variation across independently synthesized zones. No independently established second speaker."
+    },
+    {
+      "id": "read-bhw-eligibility-evidence-and-scope-fil",
+      "timestamps": [
+        "00:49–00:51"
+      ],
+      "observation": "TESDA is spelled letter-by-letter instead of the usual acronym pronunciation. It remains identifiable; owner pronunciation review pending."
+    },
+    {
+      "id": "read-bhw-eligibility-evidence-and-scope-en",
+      "timestamps": [
+        "00:22–00:23"
+      ],
+      "observation": "Initial review noted slightly anglicized plantilla pronunciation; same MP3 retained. Later review did not repeat the concern."
+    },
+    {
+      "id": "story-fil",
+      "timestamps": [
+        "00:00–00:02"
+      ],
+      "observation": "Second review hears a mildly awkward BHWE transition, possibly BHW-o or an extra conjunction; first review transcribed BHWE. Identical audio bytes; uncertainty retained rather than asserting a changed word."
+    }
+  ],
+  "artifacts": [
+    "lesson-143-audio-review.json",
+    "lesson-143-audio-review-initial.json",
+    "lesson-143-audio-focus-initial.json",
+    "lesson-143-decoded-media-check.json"
+  ],
+  "owner_listening": "pending",
+  "independent_policy_sme_review": "not claimed"
+}

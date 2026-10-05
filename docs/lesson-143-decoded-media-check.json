@@ -5,66 +5,69 @@
       "lesson": "bhw-eligibility",
       "section": "bhwe-application-check",
       "language": "en",
-      "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.en.2256997127b1.mp3",
-      "sha256": "b0da820707db768147f1211a753ab11fe10d6eca458b814676f637ac7e3f80e5",
+      "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.en.03c8abe269ad.mp3",
+      "sha256": "6dcf16b91634ec231b5bf2c84a517d1c4ff13dd5cc6095b7274b0088c6a48373",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
-      "decoded_duration_seconds": 40.542,
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 40.229,
       "zones": [
         {
           "zone": "heading",
           "index": 0,
           "start_ms": 0,
-          "end_ms": 2360,
-          "rms_dbfs": -19.67,
-          "peak_dbfs": -3.18
+          "end_ms": 2520,
+          "rms_dbfs": -18.83,
+          "peak_dbfs": -2.83
         },
         {
           "zone": "body",
           "index": 0,
-          "start_ms": 2660,
-          "end_ms": 9060,
-          "rms_dbfs": -16.71,
-          "peak_dbfs": -1.6
+          "start_ms": 2820,
+          "end_ms": 9500,
+          "rms_dbfs": -17.34,
+          "peak_dbfs": -1.87
         },
         {
           "zone": "body",
           "index": 1,
-          "start_ms": 9360,
-          "end_ms": 11840,
-          "rms_dbfs": -18.59,
-          "peak_dbfs": -2.78
+          "start_ms": 9800,
+          "end_ms": 11880,
+          "rms_dbfs": -16.63,
+          "peak_dbfs": -2.87
         },
         {
           "zone": "body",
           "index": 2,
-          "start_ms": 12140,
-          "end_ms": 21460,
-          "rms_dbfs": -18.4,
-          "peak_dbfs": -2.03
+          "start_ms": 12180,
+          "end_ms": 21900,
+          "rms_dbfs": -16.32,
+          "peak_dbfs": -1.28
         },
         {
           "zone": "body",
           "index": 3,
-          "start_ms": 21760,
-          "end_ms": 26680,
-          "rms_dbfs": -17.5,
-          "peak_dbfs": -1.15
+          "start_ms": 22200,
+          "end_ms": 27280,
+          "rms_dbfs": -18.16,
+          "peak_dbfs": -1.26
         },
         {
           "zone": "body",
           "index": 4,
-          "start_ms": 26980,
-          "end_ms": 34340,
-          "rms_dbfs": -16.68,
-          "peak_dbfs": -1.2
+          "start_ms": 27580,
+          "end_ms": 35740,
+          "rms_dbfs": -18.98,
+          "peak_dbfs": -1.07
         },
         {
           "zone": "takeaway",
           "index": 0,
-          "start_ms": 34640,
-          "end_ms": 40480,
-          "rms_dbfs": -16.55,
-          "peak_dbfs": -0.84
+          "start_ms": 36040,
+          "end_ms": 40160,
+          "rms_dbfs": -16.56,
+          "peak_dbfs": -0.87
         }
       ]
     },
@@ -75,6 +78,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-application-check.fil.6a7358ba3748.mp3",
       "sha256": "75762cb30c08452efe7d483b3b6ad3cd051134896da62092fff3198e936a309b",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 44.513,
       "zones": [
         {
@@ -142,6 +148,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.en.ccebf4e77f16.mp3",
       "sha256": "91535175a0afeb33348c14ded73dee1abdc2932607f9b18dbb5690a8436fed59",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 39.262,
       "zones": [
         {
@@ -209,6 +218,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-question.fil.c1bc7e73a262.mp3",
       "sha256": "362fb276e59091c0d40c74289c4337025b3d44da287a64de088e2a0ead358487",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 39.549,
       "zones": [
         {
@@ -276,6 +288,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.en.f0d27a0c7131.mp3",
       "sha256": "21c3ab0b13f10322b77483eddc693ccfa9ad98e97bc044c634fafce354400535",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 55.536,
       "zones": [
         {
@@ -343,6 +358,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/bhwe-verification.fil.6672b25a27c6.mp3",
       "sha256": "896b97ab205fec27a3c86de9b02ab94f6c80e73fd08133f31460d82c98d8bfa0",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 57.783,
       "zones": [
         {
@@ -410,6 +428,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.en.eb3242833134.mp3",
       "sha256": "b2450bb259910d576c990deab3f5e79d3db0454751b3dc2e134183fd1f5e9d06",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 74.58,
       "zones": [
         {
@@ -493,6 +514,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/evidence-and-scope.fil.5f0b5df3be44.mp3",
       "sha256": "ba53fc181fa90e2d25aff354f106795119a0b69d8ffb2f8432b4809a6c48da63",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 72.542,
       "zones": [
         {
@@ -573,74 +597,77 @@
       "lesson": "bhw-eligibility",
       "section": "section-4",
       "language": "en",
-      "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.6c14f7da5fe8.mp3",
-      "sha256": "2f497b7f62a7ae214df88ae0dfcf669b0f11e504499b5b6eff64672fdfb8dc92",
+      "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.en.26782f2dfc22.mp3",
+      "sha256": "7e949e3510358d3fe451882c3c75074ecd0bdb065ee2603426ea11582b3e4ee0",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
-      "decoded_duration_seconds": 69.538,
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
+      "decoded_duration_seconds": 68.65,
       "zones": [
         {
           "zone": "heading",
           "index": 0,
           "start_ms": 0,
-          "end_ms": 2960,
-          "rms_dbfs": -18.83,
-          "peak_dbfs": -2.76
+          "end_ms": 2680,
+          "rms_dbfs": -20.57,
+          "peak_dbfs": -2.71
         },
         {
           "zone": "body",
           "index": 0,
-          "start_ms": 3260,
-          "end_ms": 15180,
-          "rms_dbfs": -17.78,
-          "peak_dbfs": -1.12
+          "start_ms": 2980,
+          "end_ms": 15100,
+          "rms_dbfs": -18.3,
+          "peak_dbfs": -0.6
         },
         {
           "zone": "body",
           "index": 1,
-          "start_ms": 15480,
-          "end_ms": 19320,
-          "rms_dbfs": -18.12,
-          "peak_dbfs": -1.82
+          "start_ms": 15400,
+          "end_ms": 19280,
+          "rms_dbfs": -19.25,
+          "peak_dbfs": -4.0
         },
         {
           "zone": "body",
           "index": 2,
-          "start_ms": 19620,
-          "end_ms": 42260,
-          "rms_dbfs": -19.0,
-          "peak_dbfs": -1.29
+          "start_ms": 19580,
+          "end_ms": 41100,
+          "rms_dbfs": -18.44,
+          "peak_dbfs": -0.02
         },
         {
           "zone": "body",
           "index": 3,
-          "start_ms": 42560,
-          "end_ms": 46320,
-          "rms_dbfs": -18.03,
-          "peak_dbfs": -1.37
+          "start_ms": 41400,
+          "end_ms": 45040,
+          "rms_dbfs": -18.52,
+          "peak_dbfs": -1.76
         },
         {
           "zone": "body",
           "index": 4,
-          "start_ms": 46620,
-          "end_ms": 51180,
-          "rms_dbfs": -16.2,
-          "peak_dbfs": 0.0
+          "start_ms": 45340,
+          "end_ms": 50660,
+          "rms_dbfs": -17.63,
+          "peak_dbfs": -2.73
         },
         {
           "zone": "body",
           "index": 5,
-          "start_ms": 51480,
-          "end_ms": 60560,
-          "rms_dbfs": -18.55,
-          "peak_dbfs": -1.89
+          "start_ms": 50960,
+          "end_ms": 61000,
+          "rms_dbfs": -17.29,
+          "peak_dbfs": -0.95
         },
         {
           "zone": "takeaway",
           "index": 0,
-          "start_ms": 60860,
-          "end_ms": 69460,
-          "rms_dbfs": -19.4,
-          "peak_dbfs": -1.82
+          "start_ms": 61300,
+          "end_ms": 68580,
+          "rms_dbfs": -18.27,
+          "peak_dbfs": -1.15
         }
       ]
     },
@@ -651,6 +678,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/section-4.fil.2dcc5bce3636.mp3",
       "sha256": "b80ff04f41f97891d7654c40527bc3895df4c054262d8cfc545a421a4aa9a65b",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 72.96,
       "zones": [
         {
@@ -726,6 +756,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/service-count.en.77dec67ecd61.mp3",
       "sha256": "6c74d9f51ce93006c4de1d55a14f92aa3780df8b5771340b9928b29c91a98836",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 56.111,
       "zones": [
         {
@@ -793,6 +826,9 @@
       "src": "/training/audio/04-ra7883/bhw-eligibility/service-count.fil.df122545f599.mp3",
       "sha256": "fb1e541b3bb46ca041b7a0c9ff48bb292c6cf747da47d5301afa1297d0fc0457",
       "voice": "gemini:gemini-3.8-flash-tts:Kore",
+      "codec": "mp3",
+      "channels": 1,
+      "bit_rate": 32000,
       "decoded_duration_seconds": 60.212,
       "zones": [
         {

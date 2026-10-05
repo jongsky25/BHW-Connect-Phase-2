@@ -23,7 +23,9 @@ async function main() {
   const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
   if(existsSync(timingPath)&&existsSync(audioPath)){
     const saved=JSON.parse(readFileSync(timingPath,'utf8')),bytes=readFileSync(audioPath);
-    if(saved.language===language&&saved.model===GEMINI_TTS_MODEL&&saved.voice===GEMINI_VOICE&&saved.speech_style===styles[language]&&saved.audio_sha256===sha(bytes)&&JSON.stringify(saved.beats.map(({zone,index,text})=>({zone,index,text})))===JSON.stringify(zones)){
+    const frames=mp3AudioFrames(bytes),seconds=frames.reduce((sum,f)=>sum+f.samples/f.sampleRate,0);
+    const validTiming=Array.isArray(saved.beats)&&saved.beats.length===zones.length&&saved.beats.every((b,i)=>b.end_ms>b.start_ms&&b.start_ms>=0&&(i===0||b.start_ms>=saved.beats[i-1].end_ms))&&saved.beats.at(-1).end_ms<=seconds*1000+50&&Math.abs(saved.durationSeconds-seconds)<0.001&&seconds<=88;
+    if(validTiming&&saved.provider==='gemini'&&saved.language===language&&saved.model===GEMINI_TTS_MODEL&&saved.voice===GEMINI_VOICE&&saved.speech_style===styles[language]&&saved.audio_sha256===sha(bytes)&&JSON.stringify(saved.beats.map(({zone,index,text})=>({zone,index,text})))===JSON.stringify(zones)){
       console.log(`${language}: exact authored story/style/MP3 hash cache hit`);return;
     }
   }
