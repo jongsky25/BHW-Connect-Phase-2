@@ -4,7 +4,7 @@ Mailapat ang iisang objective, index 0: ipaliwanag at isagawa ang maayos na foll
 
 ## [time-materials] Oras at kagamitan
 
-45 minutong authored facilitated share: pambungad 5; question demonstration 5; Card A/B/C analysis 5; rotating role-play 15; observer feedback at re-practice 10; application check at reflection 5. Kabuuan 45. Ang optional form-and-follow-up activity na 30 minuto ay nasa loob ng huling 30 minuto, hindi dagdag na compulsory time. Panatilihin ang module 180 minuto: 15 + apat na 30 + 45. Hindi hiwalay na TESDA minimum para sa follow-up ang 45 minuto. Self-study estimate: ilalapat mula sa aktuwal na encoded narration duration bago final delivery; dagdag ang optional stories at replay. Gumamit ng anim na screen, fictional cards, blangkong notebook at panulat; walang pribadong dokumento.
+45 minutong authored facilitated share: pambungad 5; question demonstration 5; Card A/B/C analysis 5; rotating role-play 15; observer feedback at re-practice 10; application check at reflection 5. Kabuuan 45. Ang optional form-and-follow-up activity na 30 minuto ay nasa loob ng huling 30 minuto, hindi dagdag na compulsory time. Panatilihin ang module 180 minuto: 15 + apat na 30 + 45. Hindi hiwalay na TESDA minimum para sa follow-up ang 45 minuto. Authored self-study estimate: 10–12 minuto batay sa anim na screen, 324.31 segundo ng English o 347.27 segundo ng Filipino encoded narration, at humigit-kumulang 4–6 minuto para sa pagbasa/check/reflection; dagdag ang optional stories at replay. Gumamit ng anim na screen, fictional cards, blangkong notebook at panulat; walang pribadong dokumento.
 
 ## [prepare] Maghanda
 

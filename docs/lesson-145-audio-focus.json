@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-05T13:37:48.083Z",
-  "source_commit": "256b6865527c3ba4e3498a13aaca1e97834a3cda",
+  "date": "2026-10-05T13:52:23.237Z",
+  "source_commit": "0b0c709cd45aec853b1d2e8fabce6ad2e128cfe4",
   "model": "gemini-3.8-flash",
   "method": "Focused model review of decoded actual MP3 excerpts; first-pass responses retained separately. No human listening or owner approval.",
   "records": [
@@ -8,13 +8,13 @@
       "id": "section-6-decisive-fil",
       "section": "section-6",
       "language": "fil",
-      "start": 30.48,
-      "end": 36.32,
+      "start": 26.14,
+      "end": 41.06,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.ce75753b6d9d.mp3",
       "source_sha256": "1d5dbb229cf0dcbaf73df8b05a90d09d72efdbdf73ddd0bafa388ed873320c08",
-      "excerpt_sha256": "ca9fb0d50b01c5e6eabb957067dc4cdcc35a21e56fe7b02613cee9a1bd89643c",
-      "model_response": "```json\n{\n  \"transcript\": \"Natanggap na po ba ito at may kailangan pa bang linawin upang matiyak kung kumpleto?\",\n  \"observations\": {\n    \"intelligibility\": \"The speech is completely clear and intelligible throughout. The two-part question inquiring about whether an item has been received and whether anything needs to be clarified to ensure completeness is fully understandable.\",\n    \"question\": \"Intelligible. The utterance consists of questions ('Natanggap na po ba ito...' and '...may kailangan pa bang linawin upang matiyak kung kumpleto?').\",\n    \"unknown_facts\": \"Intelligible. The speaker directly asks about unknown factual statuses (whether something was received and whether clarifications are required).\",\n    \"negation\": \"No negative particles or words (such as 'hindi' or 'wala') are present in this excerpt.\",\n    \"next_step_distinction\": \"Intelligible. The phrase 'may kailangan pa bang linawin upang matiyak kung kumpleto' clearly distinguishes potential next actions/steps regarding clarification.\"\n  },\n  \"defects\": \"None detected. The recording has clear studio-quality audio with no audible background noise, distortion, or clipping.\",\n  \"uncertainty\": \"None.\"\n}\n```"
+      "excerpt_sha256": "642de0951f657ce75a16d97350a4559460536074573f251fd26aafc9b4d207fd",
+      "model_response": "```json\n{\n  \"transcript\": \"Nais ko pong magtanong tungkol sa aplikasyon ko sa akreditasyon. Natanggap na po ba ito? At may kailangan pa bang linawin upang matiyak kung kumpleto? Sino po ang tamang kausap? At ano ang susunod na hakbang?\",\n  \"observations\": \"The audio is very clear and clean with no audible background noise or acoustic distortion. Pronunciation and pacing are consistent with high-quality text-to-speech or a clear studio voice recording. All elements—including the introductory intent, status inquiries, request for needed clarifications, proper point of contact, and next steps—are fully intelligible.\",\n  \"uncertainty\": \"None.\"\n}\n```"
     },
     {
       "id": "section-6-ending-fil",
@@ -22,24 +22,24 @@
       "language": "fil",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 41.94,
+      "start": 41.36,
       "end": 57.94,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-6.fil.ce75753b6d9d.mp3",
       "source_sha256": "1d5dbb229cf0dcbaf73df8b05a90d09d72efdbdf73ddd0bafa388ed873320c08",
-      "excerpt_sha256": "a2cfcaf69519616497f6a78e455da562d9962ea1f41352f768cd4f81ad794fcc",
-      "model_response": "```json\n{\n \"transcript\": \"ng isip na halimbawa ito. Tiyakin ang tamang opisina at channel sa lokal na health team. Huwag ipagpalagay na lahat ng staff ay may parehong tungkulin. Sabihin ang pakay, itanong ang status, at linawin ang susunod na hakbang.\",\n \"observations\": \"The initial word appears clipped at the very start of the audio clip (starts abruptly on 'ng isip'). The remainder of the speech is clean, clear, and complete with no false starts or clipping at the end.\",\n \"uncertainty\": \"Slight uncertainty about the exact clipped initial syllable/word (likely '[Isa]ng naisip' or '[Isang] isip').\"\n}\n```"
+      "excerpt_sha256": "1fccdc924bb259e585be0e229526f1d5596e4e35ef6b86f4e00e592fe6f02b8e",
+      "model_response": "```json\n{\n \"transcript\": \"Kathang-isip na halimbawa ito. Tiyakin ang tamang opisina at channel sa lokal na health team. Huwag ipagpalagay na lahat ng staff ay may parehong tungkulin. Sabihin ang pakay, itanong ang status, at linawin ang susunod na hakbang.\",\n \"observations\": \"Clear and natural speech delivery without audible background noise, false starts, or clipping. The negation ('Huwag') and final phrasing are cleanly rendered and fully intelligible.\",\n \"uncertainty\": \"none\"\n}\n```"
     },
     {
       "id": "section-7-decisive-fil",
       "section": "section-7",
       "language": "fil",
-      "start": 33.8,
-      "end": 35.04,
+      "start": 26.9,
+      "end": 37.78,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.b75a20ed2590.mp3",
       "source_sha256": "f6c0b095276b909bf5e6934a2c7ba7fd2c5c6a2618b3395a9b69c190ded2182d",
-      "excerpt_sha256": "12d59e1e23ff1b80ee40f49b89aca2a9406ccd1b12907e301595ff13a90cfe92",
-      "model_response": "```json\n{\n  \"transcript\": \"他妈播吧\",\n  \"observations\": {\n    \"question\": \"Not intelligible or absent; the utterance has a flat/imperative or exclamatory intonation rather than an interrogative tone.\",\n    \"unknown_facts\": \"Not intelligible; lacking surrounding context to convey specific factual claims.\",\n    \"negation\": \"Absent; no negative markers detected.\",\n    \"next_step_distinction\": \"Not intelligible or absent; while '播吧' suggests an action to broadcast/play, there is no structured next-step comparison or distinction provided in this isolated fragment.\",\n    \"defects\": \"Extremely brief audio clip (around 1.2 seconds) cut off from larger discourse, presenting slang/colloquial phrasing without conversational context.\"\n  },\n  \"uncertainty\": \"The exact characters could alternatively represent phonetically similar phrasing (e.g., '踏马播吧'), though '他妈播吧' is the most direct phonetic and colloquial rendering.\"\n}\n```"
+      "excerpt_sha256": "444ed09e293203f7f584994f511a5c379ccd479383256b899d3c79b3613f1b23",
+      "model_response": "```json\n{\n  \"transcript\": \"Ulitin Demi. Ang pagkaunawa ko po ay sinusuri pa at wala pang petsa. Tama po ba? May kailangan po ba akong gawin ngayon?\",\n  \"observations\": {\n    \"question_intelligibility\": \"Both confirmation questions ('Tama po ba?' and 'May kailangan po ba akong gawin ngayon?') are fully clear, grammatically intact, and easily understood.\",\n    \"unknown_facts_intelligibility\": \"The statement of pending/unknown information ('sinusuri pa' - still being evaluated) is clearly enunciated.\",\n    \"negation_intelligibility\": \"The negation ('wala pang petsa' - no date yet) is crisp, unambiguous, and intelligible.\",\n    \"next_step_distinction\": \"The distinction regarding next actionable steps ('May kailangan po ba akong gawin ngayon?' - asking whether any immediate action is required) is distinct and intelligible.\",\n    \"defects\": [\n      \"The introductory phrase 'Ulitin Demi' sounds like a script direction, speaker tag, or prompt artifact that was inadvertently vocalized by the synthesized/read voice before the conversational message begins.\"\n    ]\n  },\n  \"uncertainty\": \"Low. The audio is synthetic/clean speech with standard Tagalog phonology, leaving little ambiguity aside from the semantic role of the opening prompt artifact ('Ulitin Demi').\"\n}\n```"
     },
     {
       "id": "section-7-ending-fil",
@@ -47,24 +47,24 @@
       "language": "fil",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 49.306,
+      "start": 48.72,
       "end": 65.306,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-7.fil.b75a20ed2590.mp3",
       "source_sha256": "f6c0b095276b909bf5e6934a2c7ba7fd2c5c6a2618b3395a9b69c190ded2182d",
-      "excerpt_sha256": "abb1736d4ffbacc014f73ba6d8a567d0982a5549e00bb123913771a26e5ba1de",
-      "model_response": "```json\n{\n  \"transcript\": \"na tiyak na approval, o kulang na dokumento sa sagot. Ang maayos na follow-up ay hindi garantiya ng sagot, akreditasyon, benepisyo, o appointment. Ulitin ang naunawaan, at itanong ang hindi pa malinaw.\",\n  \"observations\": \"The audio begins mid-sentence ('na tiyak na approval...'), indicating clipping at the start. Both instances of negation ('hindi garantiya' and 'hindi pa malinaw') as well as the final wording are complete, clear, and free of false starts or trailing clipping.\",\n  \"uncertainty\": \"\"\n}\n```"
+      "excerpt_sha256": "756a940b378eaf10f53667dab69752e4db8c1b336b0e1890ca963995ddd3b1fd",
+      "model_response": "```json\n{\n  \"transcript\": \"Walang natitiyak na approval o kulang na dokumento sa sagot. Ang maayos na follow-up ay hindi garantiya ng sagot, akreditasyon, benepisyo, o appointment. Ulitin ang naunawaan at itanong ang hindi pa malinaw.\",\n  \"observations\": \"The audio is clear and fully intelligible with studio-like quality and alternating speakers. The negation phrasing ('hindi pa malinaw', 'Walang natitiyak', 'hindi garantiya') and all final wordings are complete, with no clipping, interruptions, or false starts.\",\n  \"uncertainty\": \"None\"\n}\n```"
     },
     {
       "id": "next-contact-plan-decisive-fil",
       "section": "next-contact-plan",
       "language": "fil",
-      "start": 3.86,
-      "end": 9.86,
+      "start": 0,
+      "end": 16.76,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.fil.dbb375011118.mp3",
       "source_sha256": "99fc5ce60d53ecc7be9da5fb8533772d134aa5b7a3e743cfcd9eddc51396ba20",
-      "excerpt_sha256": "694b851dc27e23423a2b2511954035d8d0e494f4e12e89543a191d63f82c6e57",
-      "model_response": "```json\n{\n  \"transcript\": \"Kung walang petsa, itanong kung paano magkakasundo sa angkop na susunod na contact.\",\n  \"observations\": {\n    \"intelligibility\": {\n      \"question\": \"Intelligible ('itanong kung paano magkakasundo').\",\n      \"unknown_facts\": \"Intelligible (conditional absence of a date: 'Kung walang petsa').\",\n      \"negation\": \"Intelligible ('walang').\",\n      \"next_step_distinction\": \"Intelligible ('susunod na contact').\"\n    },\n    \"defects\": \"The audio has a slightly synthetic or automated cadence typical of text-to-speech, but there is no distortion, clipping, or background noise affecting intelligibility.\"\n  },\n  \"uncertainty\": \"None; all words are clearly spoken and unambiguous.\"\n}\n```"
+      "excerpt_sha256": "43a9791bdf649ac1642b4374146f8ee3bf693287aea56bfdc6a807396685c975",
+      "model_response": "```json\n{\n  \"transcript\": \"Pumili ng makatotohanang susunod na contact. Kung walang petsa, itanong kung paano magkakasundo sa angkop na susunod na contact. Kung may item na kailangang tiyakin, linawin ang eksaktong item at tamang paraan bago kumilos.\",\n  \"observations\": {\n    \"question\": \"Intelligible ('itanong kung paano magkakasundo...').\",\n    \"unknown_facts\": \"Intelligible through the conditional clauses ('Kung walang petsa', 'Kung may item na kailangang tiyakin').\",\n    \"negation\": \"Intelligible ('walang petsa').\",\n    \"next_step_distinction\": \"Intelligible ('susunod na contact', 'bago kumilos').\",\n    \"defects\": \"No acoustic defects or overlapping speech detected; clear speech with consistent pacing.\"\n  },\n  \"uncertainty\": \"None; all words and grammatical markers are clearly audible.\"\n}\n```"
     },
     {
       "id": "next-contact-plan-ending-fil",
@@ -72,24 +72,24 @@
       "language": "fil",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 49.93300000000001,
+      "start": 48.8,
       "end": 65.933,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.fil.dbb375011118.mp3",
       "source_sha256": "99fc5ce60d53ecc7be9da5fb8533772d134aa5b7a3e743cfcd9eddc51396ba20",
-      "excerpt_sha256": "f05aa488a85a13af0fbfa511d35aad5dccd0409fecab4583f2358334c1843800",
-      "model_response": "```json\n{\n  \"transcript\": \"laging malinaw ang tanong, at subukang muli matapos ang feedback. Kapakipakinabang ang nakumpirmang susunod na tanong, kahit wala pang resulta. Tiyakin ang kontak at napagkasunduan. Huwag mag-imbento ng deadline.\",\n  \"observations\": \"The recording is clear and spoken at a measured pace. The negation (\\\"Huwag\\\") and final wording (\\\"deadline\\\") are fully articulated without clipping or false starts.\",\n  \"uncertainty\": \"None\"\n}\n```"
+      "excerpt_sha256": "25627b58852ec09469ce28478c1fe652ab3dbefaeaef024d7c3a47a588ecab12",
+      "model_response": "```json\n{\n  \"transcript\": \"Balikan kung naging malinaw ang tanong at subukang muli matapos ang feedback. Kapakipakinabang ang nakumpirmang susunod na tanong kahit wala pang resulta. Tiyakin ang kontak at napagkasunduan. Wag mag-imbento ng deadline.\",\n  \"observations\": \"The audio consists of clear, studio-recorded prompts (alternating between speakers). The negation ('Wag') and the final phrase ('mag-imbento ng deadline') are fully articulated without any clipping, cutoffs, or false starts.\",\n  \"uncertainty\": \"none\"\n}\n```"
     },
     {
       "id": "follow-up-application-check-decisive-fil",
       "section": "follow-up-application-check",
       "language": "fil",
-      "start": 13.56,
-      "end": 15.8,
+      "start": 2.86,
+      "end": 27.98,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.fil.33bda731e8d7.mp3",
       "source_sha256": "4e48d9b6527a13853482a05085dcde25716ef7b59c3179594ccb12427aedff4c",
-      "excerpt_sha256": "d51377c5fb15e4dbd68f7ce295b1284d34450c3c9633be58f6da1209d4ebb53a",
-      "model_response": "```json\n{\n  \"transcript\": \"Ano ang maayos na follow-up?\",\n  \"observations\": {\n    \"question\": \"Intelligible. The speaker clearly asks an interrogative question ('Ano ang maayos na follow-up?').\",\n    \"unknown_facts\": \"Intelligible/Not applicable. The question itself asks what constitutes a proper follow-up, but introduces no separate complex factual claims.\",\n    \"negation\": \"Not present in the audio.\",\n    \"next_step_distinction\": \"Intelligible in concept as the query asks about the nature/manner of a 'follow-up' (next step), though no specific procedural distinction is articulated.\",\n    \"defects\": \"None detected; speech is clean, clear, and free of background noise or distortion.\"\n  },\n  \"uncertainty\": \"None.\"\n}\n```"
+      "excerpt_sha256": "52a5ded5d56484937adebaee5924d101fe88c0c76fb12803d585224303fc7c5e",
+      "model_response": "```json\n{\n  \"transcript\": \"Sa kathang-isip na kaso. Nagbigay si Demi ng aplikasyon, ngunit hindi pa nakukumpirma ang pagtanggap, status, o sanhi ng pagkaantala. Ano ang maayos na follow-up? Piliin ang tugon na naghihiwalay ng alam sa hula, nagtatanong nang tiyak sa locally confirmed na contact, at nagpaplanong linawin ang sagot at susunod na hakbang.\",\n  \"observations\": {\n    \"question\": \"The question ('Ano ang maayos na follow-up?') is fully intelligible and clearly enunciated.\",\n    \"unknown_facts\": \"The unknown elements ('hindi pa nakukumpirma ang pagtanggap, status, o sanhi ng pagkaantala' and 'naghihiwalay ng alam sa hula') are clearly articulated without ambiguity.\",\n    \"negation\": \"The negation ('hindi pa nakukumpirma') is distinct and clearly heard.\",\n    \"next_step_distinction\": \"The distinction regarding subsequent actions ('linawin ang sagot at susunod na hakbang') is readily intelligible.\",\n    \"defects\": \"No acoustic defects, background noise, distortion, or clipping are present; the speech resembles clear synthesized or professional voiceover narration.\"\n  },\n  \"uncertainty\": \"None.\"\n}\n```"
     },
     {
       "id": "follow-up-application-check-ending-fil",
@@ -97,24 +97,24 @@
       "language": "fil",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 30.576,
+      "start": 28.28,
       "end": 46.576,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.fil.33bda731e8d7.mp3",
       "source_sha256": "4e48d9b6527a13853482a05085dcde25716ef7b59c3179594ccb12427aedff4c",
-      "excerpt_sha256": "48a0b53cfffba69a5fa5ac0e621b4ee8b5f1579759b3450a79de5f06dfb31cba",
-      "model_response": "```json\n{\n \"transcript\": \"pat ang dalawang ibang pagpipilian. Online self-check ito. Hiwalay ang aktwal na observed practice at administratibong resulta. Lalim, tiyak na tanong, paglilinaw, angkop na susunod na hakbang.\",\n \"observations\": [\n  {\n   \"start\": \"00:00\",\n   \"end\": \"00:00.5\",\n   \"type\": \"Defect\",\n   \"description\": \"The first word is clipped at the start (e.g. fragment of 'apat' or 'dapat' cut off as 'pat').\"\n  }\n ],\n \"uncertainty\": \"Low\"\n}\n```"
+      "excerpt_sha256": "edec5f0102dafa71d68b600fc415d83b5569c7dd24398ec14953c9022d001da9",
+      "model_response": "```json\n{\n  \"transcript\": \"Ipaliwanag kung bakit hindi sapat ang dalawang ibang pagpipilian. Online self-check ito. Hiwalay ang aktwal na observed practice at administratibong resulta. Alam, tiyak na tanong, panglilinaw, angkop na susunod na hakbang.\",\n  \"observations\": \"The audio is clear and fully intelligible. The negation ('hindi sapat') is complete without clipping, hesitation, or false starts. The final wording ('angkop na susunod na hakbang') concludes naturally without being cut off.\",\n  \"uncertainty\": \"At 00:15, the speaker says 'panglilinaw', which phonetically uses a velar nasal /ŋ/ before the lateral consonant rather than the standardized assimilatory spelling 'panlilinaw'.\"\n}\n```"
     },
     {
       "id": "section-6-decisive-en",
       "section": "section-6",
       "language": "en",
-      "start": 26.04,
-      "end": 31.6,
+      "start": 22.22,
+      "end": 36.42,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e383406435bc.mp3",
       "source_sha256": "b14382833c709c6595f562320e9458c8589d9b8faef5501993e77bb74ded1da8",
-      "excerpt_sha256": "0add0090081920554f31f041743525e44f98a8e2e9a2975ebf306b7a3747e943",
-      "model_response": "```json\n{\n  \"transcript\": \"Has it been received, and is anything still unclear when checking completeness?\",\n  \"observations\": \"The audio is a clear, synthesized female voice with standard pronunciation and pacing. The two distinct interrogative clauses ('Has it been received' and 'is anything still unclear when checking completeness?'), the negative/unknown aspect ('unclear'), and the procedural condition/next-step distinction ('when checking completeness') are all fully intelligible without ambiguity.\",\n  \"uncertainty\": \"None.\"\n}\n```"
+      "excerpt_sha256": "82cf85ea828f79258f3fd4482d2824ed0fc8d79473bbaa8f574616823666d4ae",
+      "model_response": "```json\n{\n  \"transcript\": \"I would like to ask about my accreditation application. Has it been received, and is anything still unclear when checking completeness? Who is the appropriate person to ask, and what is the next step?\",\n  \"observations\": {\n    \"question\": \"Fully intelligible. The speaker poses several distinct inquiries: 'Has it been received...?', '...is anything still unclear...?', 'Who is the appropriate person to ask...?', and '...what is the next step?'\",\n    \"unknown_facts\": \"Intelligible ('is anything still unclear', 'Who is the appropriate person', 'what is the next step').\",\n    \"negation\": \"Intelligible via the morphological negation in 'unclear'.\",\n    \"next_step_distinction\": \"Intelligible. The phrasing explicitly separates inquiring about contact ownership ('appropriate person to ask') and procedural progression ('what is the next step').\",\n    \"defects\": \"No significant acoustic defects. Speech appears to be synthesized text-to-speech with two alternating voices, clear pronunciation, and no background noise or distortion.\"\n  },\n  \"uncertainty\": \"None.\"\n}\n```"
     },
     {
       "id": "section-6-ending-en",
@@ -122,24 +122,24 @@
       "language": "en",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 36.532,
+      "start": 36.72,
       "end": 52.532,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-6.en.e383406435bc.mp3",
       "source_sha256": "b14382833c709c6595f562320e9458c8589d9b8faef5501993e77bb74ded1da8",
-      "excerpt_sha256": "1d036d271eeea51edbdc8b377ab5f617b1a702e954a3326628e8d80c2749f3f8",
-      "model_response": "```json\n{\n  \"transcript\": \"This is a fictional example. Confirm the office and channel with the local health team. Do not assume every staff member has the same responsibility. State your purpose, ask about status, and clarify the next step.\",\n  \"observations\": \"Clear and natural narration without any audible defects, false starts, or clipping; the negation ('Do not assume') and the final phrase ('the next step') are fully and cleanly enunciated.\",\n  \"uncertainty\": \"None\"\n}\n```"
+      "excerpt_sha256": "ac9603f820f1bfaac150fd32b66f88d0f2fae6596d8422fa366a2f217853119b",
+      "model_response": "```json\n{\n  \"transcript\": \"This is a fictional example. Confirm the office and channel with the local health team. Do not assume every staff member has the same responsibility. State your purpose, ask about status, and clarify the next step.\",\n  \"observations\": \"The excerpt features clear, fluent speech with no audible background noise, false starts, or clipping. The negation ('Do not assume') and the concluding phrase ('clarify the next step') are fully enunciated.\",\n  \"uncertainty\": \"None\"\n}\n```"
     },
     {
       "id": "section-7-decisive-en",
       "section": "section-7",
       "language": "en",
-      "start": 32.12,
-      "end": 33.48,
+      "start": 26.3,
+      "end": 35.94,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.0159d16deb3e.mp3",
       "source_sha256": "d4f9d2434e07b4391c74ada75b59cc3298750793eff6a5574a1e536b88901a3a",
-      "excerpt_sha256": "737b40e78bae93892267ab77a4b3bc5a20a94c52811919a25296413ada431aae",
-      "model_response": "```json\n{\n \"transcript\": \"Is that right?\",\n \"observations\": \"The question is spoken clearly and completely, with rising intonation and no background noise or acoustic defects. The intent of asking a question is fully intelligible.\",\n \"uncertainty\": \"None\"\n}\n```"
+      "excerpt_sha256": "37883d48fee5f52f454f308680b211ee5d1529157567c0638c8b16ca67b393c3",
+      "model_response": "```json\n{\n  \"transcript\": \"Demi repeats, \\\"I understand it is still under review, and there is no date yet. Is that right? Is there anything I should do now?\\\"\",\n  \"observations\": {\n    \"question_intelligibility\": \"Both questions ('Is that right?' and 'Is there anything I should do now?') are clearly spoken and fully intelligible.\",\n    \"negation_and_unknowns\": \"The negation ('no date yet') and statement of incomplete status ('still under review') are crisp and distinct.\",\n    \"next_step_distinction\": \"The distinction regarding actionable next steps ('Is there anything I should do now?') is articulated cleanly without ambiguity.\",\n    \"audio_defects\": \"None detected; the voice is synthesized/clean text-to-speech with no audible background noise, distortion, or clipping.\"\n  },\n  \"uncertainty\": \"None.\"\n}\n```"
     },
     {
       "id": "section-7-ending-en",
@@ -147,24 +147,24 @@
       "language": "en",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 46.772,
+      "start": 45.76,
       "end": 62.772,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/section-7.en.0159d16deb3e.mp3",
       "source_sha256": "d4f9d2434e07b4391c74ada75b59cc3298750793eff6a5574a1e536b88901a3a",
-      "excerpt_sha256": "843a0dc9e330885219639d13ed9f3148f46c4988bc2c7bd85a5ae2a96bb60cd6",
-      "model_response": "```json\n{\n  \"transcript\": \"establishes neither approval nor a missing document. Constructive follow-up does not guarantee an answer, accreditation, a benefit, or an appointment. Repeat what you understood, and ask about what remains unclear.\",\n  \"observations\": \"The audio begins mid-word/mid-syllable with the tail end of a preceding word before 'establishes' ('...s establishes'). Following this clipped start, the rest of the speech across two speakers is fully articulated and cleanly delivered, with complete negations ('neither... nor', 'does not guarantee') and no subsequent clipping or false starts.\",\n  \"uncertainty\": \"Low. The leading sound before 'establishes' is abruptly truncated.\"\n}\n```"
+      "excerpt_sha256": "7026d39f4c7581da38b6e424b51bc23fe23c12dcc6ec2d8e6be97111102ccddc",
+      "model_response": "```json\n{\n  \"transcript\": \"The response establishes neither approval nor a missing document. Constructive follow-up does not guarantee an answer, accreditation, a benefit, or an appointment. Repeat what you understood and ask about what remains unclear.\",\n  \"observations\": \"The audio is clearly enunciated synthesized speech with complete phrases, correct negations, and no clipping, false starts, or background noise.\",\n  \"uncertainty\": false\n}\n```"
     },
     {
       "id": "next-contact-plan-decisive-en",
       "section": "next-contact-plan",
       "language": "en",
-      "start": 3.26,
-      "end": 8.62,
+      "start": 0,
+      "end": 15.64,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.en.bc5fec8475e3.mp3",
       "source_sha256": "46dc4f45f57187f1b9f4d175e60155cfa42b2aa3fc012a205a452ace4e91ad93",
-      "excerpt_sha256": "32c7f78c283fd65d1c8d289281b3fcd0d99eddd0db5d2584030d1df467bec046",
-      "model_response": "```json\n{\n  \"transcript\": \"If there is no date, ask how to agree on an appropriate next contact.\",\n  \"observations\": {\n    \"question\": \"Intelligible; the prompt conveys an instruction to ask a question ('ask how to agree on an appropriate next contact').\",\n    \"unknown_facts\": \"Intelligible; framed as a conditional unknown circumstance ('If there is no date').\",\n    \"negation\": \"Intelligible; the negative quantifier 'no' in 'no date' is clearly articulated.\",\n    \"next_step_distinction\": \"Intelligible; clearly distinct as 'next contact'.\",\n    \"defects\": \"No acoustic defects detected; speech appears to be clear synthetic text-to-speech audio with standard pacing and clean pronunciation.\"\n  },\n  \"uncertainty\": \"None.\"\n}\n```"
+      "excerpt_sha256": "e3ff938758b6af63703ffc6eda84480cf6c63dac5cdbbc5dd5492a96fc2e4d0b",
+      "model_response": "```json\n{\n \"transcript\": \"Plan a realistic next contact. If there is no date, ask how to agree on an appropriate next contact. If an item needs verification, clarify the exact item and proper method before acting.\",\n \"observations\": \"The audio is clear and fully intelligible, delivered in a clear instructional tone (likely synthetic speech/TTS). The negation ('no date'), the directive to ask/question ('ask how to agree...'), and the distinct conditional next steps are all easily distinguishable with no acoustic masking or distortion.\",\n \"uncertainty\": \"None\"\n}\n```"
     },
     {
       "id": "next-contact-plan-ending-en",
@@ -172,24 +172,24 @@
       "language": "en",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 44.578,
+      "start": 40.26,
       "end": 60.578,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/next-contact-plan.en.bc5fec8475e3.mp3",
       "source_sha256": "46dc4f45f57187f1b9f4d175e60155cfa42b2aa3fc012a205a452ace4e91ad93",
-      "excerpt_sha256": "be432c41f8d059415b14a6e7a2aa685c6d9c040f041ebac6fd46a07f8bf3dc47",
-      "model_response": "```json\n{\n \"transcript\": \"method may help. Reflect on whether the question was clear and try again after feedback. A confirmed next question is useful, even without an outcome. Confirm the contact and arrangement. Do not invent a deadline.\",\n \"observations\": \"The audio begins with an abrupt start on 'method', likely clipped from 'A method may help'. The rest of the speech is clean synthesized speech with clear pronunciation and no false starts or clipped endings. The negation 'Do not invent a deadline' is fully audible and intact.\",\n \"uncertainty\": \"Low\"\n}\n```"
+      "excerpt_sha256": "49bf9b75757d31716b7662deb3d693825766189823f2eca4da3c3eeacf747b10",
+      "model_response": "```json\n{\n  \"transcript\": \"A support person, written question, or another accessible method may help. Reflect on whether the question was clear, and try again after feedback. A confirmed next action is useful, even without an outcome. Confirm the contact and arrangement. Do not invent a deadline.\",\n  \"observations\": \"The excerpt features a clear synthesized or studio-recorded voice reading instructional text with pauses between sentences. The phrasing, including the negation 'Do not invent a deadline', is complete and free of clipping or false starts.\",\n  \"uncertainty\": \"\"\n}\n```"
     },
     {
       "id": "follow-up-application-check-decisive-en",
       "section": "follow-up-application-check",
       "language": "en",
-      "start": 12.08,
-      "end": 14.36,
+      "start": 3.5,
+      "end": 25.5,
       "question": "Transcribe all speech exactly without guessing from context. Are the question, unknown facts, negation and next-step distinction intelligible? Describe concrete defects and uncertainty.",
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.en.a7cb42d2b0b9.mp3",
       "source_sha256": "0dd3134740e87652d60488076eabb793b1118c260812183030d11285934c1bd5",
-      "excerpt_sha256": "e9d6b39a2d6e5d3527224d34ee54fd5fd1e6af8c7512517d959f13d77225d549",
-      "model_response": "```json\n{\n  \"transcript\": \"What is a constructive follow-up?\",\n  \"observations\": \"The question is spoken clearly and is fully intelligible with clean audio quality and no significant background noise or distortion. Elements such as unknown facts, negation, and a next-step distinction are not present in this brief utterance.\",\n  \"uncertainty\": \"None\"\n}\n```"
+      "excerpt_sha256": "78b253c901a2d0db4368d75335aee0093d833837e136a640c37e725ed90fef51",
+      "model_response": "```json\n{\n  \"transcript\": \"In the fictional case, Demi provided an application, but receipt, status, and the cause of delay are unconfirmed. What is a constructive follow-up? Choose the response that separates facts from guesses, asks a specific question through a locally confirmed contact, and plans to clarify the answer and next step.\",\n  \"observations\": \"The recording is clear, synthesized speech with distinct pronunciation and consistent pacing. The question, the unknown facts ('receipt, status, and the cause of delay are unconfirmed'), the negative prefix ('unconfirmed'), and the distinction between the answer and the next step are all fully intelligible without notable acoustic defects.\",\n  \"uncertainty\": null\n}\n```"
     },
     {
       "id": "follow-up-application-check-ending-en",
@@ -197,12 +197,12 @@
       "language": "en",
       "ending": true,
       "question": "Transcribe all final speech exactly. Is the negation and final wording complete without clipping or false starts? Describe concrete defects and uncertainty.",
-      "start": 26.735999999999997,
+      "start": 25.8,
       "end": 42.736,
       "source_path": "/training/audio/04-ra7883/bhw-follow-up/follow-up-application-check.en.a7cb42d2b0b9.mp3",
       "source_sha256": "0dd3134740e87652d60488076eabb793b1118c260812183030d11285934c1bd5",
-      "excerpt_sha256": "d462de2e800f243514750c8307af8a734b0c3be4e3a66da364688ae621ba0f7b",
-      "model_response": "```json\n{\n \"transcript\": \"why the other two options are insufficient. This is an online self-check. Observed practice and administrative outcomes are separate. Facts, specific question, clarification, appropriate next step.\",\n \"observations\": \"The audio begins abruptly on the word 'why', indicating possible front clipping of preceding speech.\",\n \"uncertainty\": \"Low\"\n}\n```"
+      "excerpt_sha256": "d5c9af6c0d0c30157d5251d8a1f45e81ee9d59c2d59a39114d26005ec4da523e",
+      "model_response": "```json\n{\n  \"transcript\": \"Explain why the other two options are insufficient. This is an online self-check. Observed practice and administrative outcomes are separate. Facts, specific question, clarification, appropriate next step.\",\n  \"observations\": \"The audio is clear and consists of distinct instructional and bullet-like list statements separated by brief pauses. There are no false starts or clipped speech.\",\n  \"uncertainty\": \"\"\n}\n```"
     }
   ]
 }

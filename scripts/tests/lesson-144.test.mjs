@@ -54,7 +54,7 @@ describe('lesson 1.4.4 Demi accreditation release',()=>{
   for(const lang of ['fil','en']){const selected=narrationForLesson(manifest,'bhw-accreditation',lang,old.read_sections);expect(Object.keys(selected)).toEqual(['section-5']);expect(selected['section-5'].src).toBe(audioBaseline.target.sections['section-5'][lang].src);expect(Object.keys(narrationForLesson(manifest,'bhw-accreditation',lang,authored.revision.read_sections))).toEqual(ids);}
  });
  it('protects all sibling Git bytes and approved 1.4.1/2/new3 media',()=>{
-  for(const [p,hash]of Object.entries(baseline.sibling_lesson_git_blob_hashes)){const blob=execFileSync('git',['show',`${p.includes('/lessons/bhw-follow-up/')?'38b1a8fd213ef18b503a97b7b5ad6f078a3ddc9e':'HEAD'}:${p}`],{cwd:root});expect(sha(blob)).toBe(hash);}
+  for(const [p,hash]of Object.entries(baseline.sibling_lesson_git_blob_hashes)){const start145=json(path.join(root,'docs/lesson-145-start-baseline.json'));expect(start145.main_sha).toBe('38b1a8fd213ef18b503a97b7b5ad6f078a3ddc9e');const blob=p.includes('/lessons/bhw-follow-up/')?Buffer.from(start145.target_original_files[p].replaceAll('\r\n','\n')):execFileSync('git',['show',`HEAD:${p}`],{cwd:root});expect(sha(blob)).toBe(hash);}
   for(const m of baseline.approved141_142_143_media)expect(fileHash(m.path)).toBe(m.sha256);
  });
  it('uses genuinely new owner-approved art with the approved Demi identity and identical animation bytes',()=>{

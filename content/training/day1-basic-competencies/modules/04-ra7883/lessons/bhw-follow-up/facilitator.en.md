@@ -4,7 +4,7 @@ Apply the one objective, index 0: explain and demonstrate constructive follow-up
 
 ## [time-materials] Time and materials
 
-Authored facilitated share, 45 minutes: opening 5; question demonstration 5; Card A/B/C analysis 5; rotating role-play 15; observer feedback and re-practice 10; application check and reflection 5. Total 45. The optional 30-minute form-and-follow-up activity fits inside the final 30 minutes; it adds no compulsory time. Retain the module’s 180 minutes: 15 + four 30-minute parts + 45. The 45 minutes is not a separate TESDA follow-up minimum. Independent-study estimate will be derived from actual encoded narration duration before final delivery; optional stories and replay are additional. Use six screens, fictional cards, blank notebook and pens; no private documents.
+Authored facilitated share, 45 minutes: opening 5; question demonstration 5; Card A/B/C analysis 5; rotating role-play 15; observer feedback and re-practice 10; application check and reflection 5. Total 45. The optional 30-minute form-and-follow-up activity fits inside the final 30 minutes; it adds no compulsory time. Retain the module’s 180 minutes: 15 + four 30-minute parts + 45. The 45 minutes is not a separate TESDA follow-up minimum. Authored independent study estimate: 10–12 minutes, based on six screens with 324.31 seconds of English or 347.27 seconds of Filipino encoded narration, plus about 4–6 minutes for reading/check/reflection; optional stories and replay are additional. Use six screens, fictional cards, blank notebook and pens; no private documents.
 
 ## [prepare] Prepare
 
